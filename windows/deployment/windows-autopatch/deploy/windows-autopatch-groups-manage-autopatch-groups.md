@@ -1,7 +1,7 @@
 ---
 title: Manage Windows Autopatch groups
 description: This article explains how to manage Autopatch groups
-ms.date: 05/11/2023
+ms.date: 07/25/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: how-to
@@ -10,12 +10,12 @@ author: tiaraquan
 ms.author: tiaraquan
 manager: dougeby
 ms.reviewer: andredm7
+ms.collection:
+  - highpri
+  - tier1
 ---
 
-# Manage Windows Autopatch groups (public preview)
-
-> [!IMPORTANT]
-> Windows Autopatch groups is in **public preview**. This feature is being actively developed and might not be complete. You can test and use these features in production environments and provide feedback.<p>The Windows Autopatch group experience only applies if you’ve opted-in to use Windows Autopatch groups.</p><br>**To opt-in to use Windows Autopatch groups:**<ol><li>Go to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and select **Devices** from the left navigation menu.</li><li>Under **Windows Autopatch**, select **Release Management**, then select **Autopatch groups (preview)**.</li><li>Review the **[Microsoft Privacy Statement](../overview/windows-autopatch-privacy.md)** and the **[Autopatch groups Public Preview Addendum](../references/windows-autopatch-groups-public-preview-addendum.md)**. If you agree, select the **I have reviewed and agree to the Autopatch groups Public Preview Addendum** checkbox. Then, select **Use preview** to test out Windows Autopatch groups and its bundled feature set. If the **Use preview** option is greyed out, ensure you meet all the [Autopatch group prerequisites](../deploy/windows-autopatch-groups-manage-autopatch-groups.md#autopatch-groups-prerequisites).</li></ol>
+# Manage Windows Autopatch groups
 
 Autopatch groups help Microsoft Cloud-Managed services meet organizations where they are in their update management journey.
 
@@ -58,9 +58,6 @@ Before you start managing Autopatch groups, ensure you’ve met the following pr
 > [!TIP]
 > [Update rings](/mem/intune/protect/windows-10-update-rings) and [feature updates](/mem/intune/protect/windows-10-feature-updates) for Windows 10 and later policies that are created and managed by Windows Autopatch can be restored using the [Policy health](../operate/windows-autopatch-policy-health-and-remediation.md) feature. For more information on remediation actions, see [restore Windows update policies](../operate/windows-autopatch-policy-health-and-remediation.md#restore-windows-update-policies).
 
-> [!NOTE]
-> During the public preview, Autopatch groups opt-in page will show a banner to let you know when one or more prerequisites are failing. Once you remediate the issue to meet the prerequisites, it can take up to an hour for your tenant to have the "Use preview" button available.
-
 ## Create a Custom Autopatch group
 
 > [!NOTE]
@@ -71,10 +68,7 @@ Before you start managing Autopatch groups, ensure you’ve met the following pr
 1. Go to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 1. Select **Devices** from the left navigation menu.
 1. Under the **Windows Autopatch** section, select **Release management**.
-1. In the **Release management** blade, select **Autopatch groups (preview)**.
-1. Only during the public preview:
-    1. Review the [Microsoft Privacy Statement](../overview/windows-autopatch-privacy.md) and the [Autopatch groups Public Preview Addendum](../references/windows-autopatch-groups-public-preview-addendum.md).
-    1. Select the **I have reviewed and agree to the Autopatch groups Public Preview Addendum** checkbox. Then, select **Use preview** to test out Autopatch groups. If the **Use preview** option is greyed out, ensure you meet all the [Autopatch group prerequisites](../deploy/windows-autopatch-groups-manage-autopatch-groups.md#autopatch-groups-prerequisites).
+1. In the **Release management** blade, select **Autopatch groups**.
 1. In the **Autopatch groups** blade, select **Create**.
 1. In **Basics** page, enter a **name** and a **description** then select **Next: Deployment rings**.
     1. Enter up to 64 characters for the Autopatch group name and 150 characters maximum for the description. The Autopatch group name is appended to both the update rings and the DSS policy names that get created once the Custom Autopatch group is created.
@@ -99,6 +93,10 @@ Before you start managing Autopatch groups, ensure you’ve met the following pr
 
 ## Edit the Default or a Custom Autopatch group
 
+> [!TIP]
+> You can't edit an Autopatch group when there's one or more Windows feature update releases targeted to it. If you try to edit an Autopatch group with one or more ongoing Windows feature update releases targeted to it, you get the following informational banner message: "**Some settings are not allowed to be modified as there’s one or more on-going Windows feature update release targeted to this Autopatch group.**"
+> See [Manage Windows feature update releases](../operate/windows-autopatch-groups-manage-windows-feature-update-release.md) for more information on release and phase statuses.
+
 **To edit either the Default or a Custom Autopatch group:**
 
 1. Select the **horizontal ellipses (…)** > **Edit** for the Autopatch group you want to edit.
@@ -110,6 +108,18 @@ Before you start managing Autopatch groups, ensure you’ve met the following pr
 
 > [!IMPORTANT]
 > Windows Autopatch creates the device-based Azure AD assigned groups based on the choices made in the deployment ring composition page. Additionally, the service assigns the update ring policies for each deployment ring created in the Autopatch group based on the choices made in the Windows Update settings page as part of the Autopatch group guided end-user experience.
+
+## Rename a Custom Autopatch group
+
+You **can’t** rename the Default Autopatch group. However, you can rename a Custom Autopatch group.
+
+**To rename a Custom Autopatch group:**
+
+1. Select the **horizontal ellipses (…)** > **Rename** for the Custom Autopatch group you want to rename. The **Rename Autopatch group** fly-in opens.
+1. In the **New Autopatch group name**, enter the new Autopatch group name of your choice, then click **Rename group**.
+
+> [!IMPORTANT]
+> Autopatch supports up to 64 characters for the custom Autopatch group name. Additionally, when you rename a custom Autopatch group all [update rings for Windows 10 and later policy in Intune](/mem/intune/protect/windows-10-update-rings) and [feature updates for Windows 10 and later policy in Intune](/mem/intune/protect/windows-10-feature-updates) associated with the custom Autopatch group are renamed to include the new Autopatch group name you define in its name string. Also, when renaming a custom Autopatch group all Azure AD groups representing the custom Autopatch group's deployment rings are renamed to include the new Autopatch group name you define in its name string.
 
 ## Delete a Custom Autopatch group
 
@@ -124,10 +134,6 @@ You **can’t** delete the Default Autopatch group. However, you can delete a Cu
 > You can’t delete a Custom Autopatch group when it’s being used as part of one or more active or paused feature update releases. However, you can delete a Custom Autopatch group when the release for either Windows quality or feature updates have either the **Scheduled** or **Paused** statuses.
 
 ## Manage device conflict scenarios when using Autopatch groups
-
-> [!IMPORTANT]
-> The Windows Autopatch groups functionaliy is in **public preview**. This feature is being actively developed and not all device conflict detection and resolution scenarios are working as expected.
-> For more information on what to expect for this scenario during public preview, see [Known issues](#known-issues).
 
 Overlap in device membership is a common scenario when working with device-based Azure AD groups since sometimes dynamic queries can be large in scope or the same assigned device membership can be used across different Azure AD groups.
 
@@ -164,7 +170,7 @@ Device conflict across different deployment rings in different Autopatch groups 
 | -----  | ----- |
 | You, the IT admin at Contoso Ltd., are using several Custom Autopatch groups. While navigating through devices in the Windows Autopatch Devices blade (**Not ready** tab), you notice that the same device is part of different deployment rings across several different Custom Autopatch groups. | You must resolve this conflict.<p>Autopatch groups informs you about the device conflict in the **Devices** > **Not ready** tab. You’re required to manually indicate which of the existing Custom Autopatch groups the device should exclusively belong to.</p> |
 
-#### Device conflict prior device registration
+#### Device conflict prior to device registration
 
 When you create or edit the Custom or Default Autopatch group, Windows Autopatch checks if the devices that are part of the Azure AD groups, used in Autopatch groups’ deployment rings, are registered with the service.
 
@@ -175,56 +181,3 @@ When you create or edit the Custom or Default Autopatch group, Windows Autopatch
 #### Device conflict post device registration
 
 Autopatch groups will keep monitoring for all device conflict scenarios listed in the [Manage device conflict scenarios when using Autopatch groups](../deploy/windows-autopatch-groups-manage-autopatch-groups.md#manage-device-conflict-scenarios-when-using-autopatch-groups) section even after devices were successfully registered with the service.
-
-## Known issues
-
-This section lists known issues with Autopatch groups during its public preview.
-
-### Device conflict scenarios when using Autopatch groups
-
-- **Status: Active**
-
-The Windows Autopatch team is aware that all device conflict scenarios listed below are currently being evaluated during the device registration process to make sure devices are properly registered with the service, and not evaluated post-device registration. The Windows Autopatch team is currently developing detection and resolution for the followin device conflict scenarios, and plan to make them available during public preview.
-
-- Default to Custom Autopatch device conflict detection and resolution.
-- Device conflict detection and resolution within an Autopatch group.
-- Custom to Custom Autopatch group device conflict detection.
-
-> [!TIP]
-> Use the following two best practices to help minimize device conflict scenarios when using Autopatch groups during the public preview:
-> 
-> - Review your software update deployment requirements thoroughly. If your deployment requirements allow, try using the Default Autopatch group as much as possible, instead of start creating Custom Autopatch groups. You can customize the Default Autopatch to have up to 15 deployment rings, and you can use your existing device-based Azure AD groups with custom update deployment cadences.
-> - If creating Custom Autopatch groups, try to avoid using device-based Azure AD groups that have device membership overlaps with the devices that are already registered with Windows Autopatch, and already belong to the Default Autopatch group.
-
-### Autopatch group Azure AD group remediator
-
-- **Status: Active**
-
-The Windows Autopatch team is aware that the Windows Autopatch service isn't automatically restoring the Azure AD groups that get created during the Autopatch groups creation/editing process. If the following Azure AD groups, that belong to the Default Autopatch group and other Azure AD groups that get created with Custom Autopatch groups, are deleted or renamed, they won't be automatically remediated on your behalf yet:
-
-- Windows Autopatch – Test
-- Windows Autopatch – Ring1
-- Windows Autopatch – Ring2
-- Windows Autopatch – Ring3
-- Windows Autopatch – Last
-
-The Windows Autopatch team is currently developing the Autopatch group Azure AD group remediator feature and plan to make it available during public preview.
-
-> [!NOTE]
-> The Autopatch group remediator won't remediate the service-based deployment rings:
-> 
-> - Modern Workplace Devices-Windows Autopatch-Test
-> - Modern Workplace Devices-Windows Autopatch-First
-> - Modern Workplace Devices-Windows Autopatch-Fast
-> - Modern Workplace Devices-Windows Autopatch-Broad
-> 
-> Use the [Policy health feature](../operate/windows-autopatch-policy-health-and-remediation.md) to restore these groups, if needed. For more information, see [restore deployment groups](../operate/windows-autopatch-policy-health-and-remediation.md#restore-deployment-groups).
-
-### Rename an Autopatch group 
-
-- **Status: Active**
-
-You can't rename an Autopatch group yet. The Autopatch group name is appended to all deployment ring names in the Autopatch group. Windows Autopatch is currently developing the rename feature.
-
-> [!IMPORTANT]
-> During the public preview, if you try to rename either the [Update rings](/mem/intune/protect/windows-10-update-rings) or [feature updates](/mem/intune/protect/windows-10-feature-updates) for Windows 10 and later policies directly in the Microsoft Intune end-user experience, the policy names are reverted back to the name defined by the Autopatch group end-user experience interface.

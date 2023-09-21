@@ -2,7 +2,8 @@
 title: Windows Hello for Business cloud-only deployment
 description: Learn how to configure Windows Hello for Business in a cloud-only deployment scenario.
 ms.date: 06/23/2021
-ms.topic: article
+ms.topic: how-to
+ms.custom: has-azure-ad-ps-ref
 ---
 # Cloud-only deployment
 
@@ -10,7 +11,7 @@ ms.topic: article
 
 ## Introduction
 
-When you Azure Active Directory (Azure AD) join a Windows device, the system prompts you to enroll in Windows Hello for Business by default. If you want to use Windows Hello for Business in your cloud-only environment, then there's no additional configuration needed.
+When you Azure Active Directory (Azure AD) join a Windows device, the system prompts you to enroll in Windows Hello for Business by default. If you want to use Windows Hello for Business in your cloud-only environment, there's no additional configuration needed.
 
 You may wish to disable the automatic Windows Hello for Business enrollment prompts if you aren't ready to use it in your environment. Instructions on how to disable Windows Hello for Business enrollment in a cloud only environment are included below.
 
@@ -27,7 +28,7 @@ Also note that it's possible for federated domains to enable the *Supports MFA* 
 
 Check and view this setting with the following MSOnline PowerShell command:
 
-`Get-MsolDomainFederationSettings –DomainName <your federated domain name>`
+`Get-MsolDomainFederationSettings -DomainName <your federated domain name>`
 
 To disable this setting, run the following command. This change impacts ALL Azure AD MFA scenarios for this federated domain.
 
@@ -62,7 +63,7 @@ If you don't use Intune in your organization, then you can disable Windows Hello
 
 Intune uses the following registry keys: **`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Policies\PassportForWork\<Tenant-ID>\Device\Policies`**
 
-To look up your Tenant ID, see [How to find your Azure Active Directory tenant ID](/azure/active-directory/fundamentals/active-directory-how-to-find-tenant) or try the following, ensuring to sign-in with your organization's account:
+To look up your Tenant ID, see [How to find your Azure Active Directory tenant ID](/azure/active-directory/fundamentals/how-to-find-tenant) or try the following, ensuring to sign-in with your organization's account:
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/organization?$select=id

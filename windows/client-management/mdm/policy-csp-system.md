@@ -4,7 +4,7 @@ description: Learn more about the System Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/11/2023
+ms.date: 08/30/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -30,7 +30,7 @@ ms.topic: reference
 <!-- AllowBuildPreview-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowBuildPreview-Applicability-End -->
 
 <!-- AllowBuildPreview-OmaUri-Begin -->
@@ -100,7 +100,7 @@ This policy is only supported up to Windows 10, Version 1703. Please use 'Manage
 <!-- AllowCommercialDataPipeline-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- AllowCommercialDataPipeline-Applicability-End -->
 
 <!-- AllowCommercialDataPipeline-OmaUri-Begin -->
@@ -111,6 +111,8 @@ This policy is only supported up to Windows 10, Version 1703. Please use 'Manage
 
 <!-- AllowCommercialDataPipeline-Description-Begin -->
 <!-- Description-Source-ADMX -->
+This policy is deprecated and will only work on Windows 10 version 1809. Setting this policy will have no effect for other supported versions of Windows.
+
 AllowCommercialDataPipeline configures an Azure Active Directory joined device so that Microsoft is the processor of the Windows diagnostic data collected from the device, subject to the Product Terms at< https://go.microsoft.com/fwlink/?linkid=2185086>.
 
 To enable this behavior:
@@ -120,7 +122,7 @@ To enable this behavior:
 
 Windows diagnostic data is collected when the Allow Telemetry policy setting is set to value 1 - Required or above. Configuring this setting doesn't change the Windows diagnostic data collection level set for the device.
 
-If you disable or don't configure this setting, Microsoft will be the controller of the Windows diagnostic data collected from the device and processed in accordance with Microsoft's privacy statement at <https://go.microsoft.com/fwlink/?LinkId=521839> unless you have enabled policies like 'Allow Update Compliance Processing' or 'Allow Desktop Analytics Processing".
+If you disable or don't configure this setting, Microsoft will be the controller of the Windows diagnostic data collected from the device and processed in accordance with Microsoft's privacy statement at <https://go.microsoft.com/fwlink/?LinkId=521839> unless you have enabled policies like 'Allow Update Compliance Processing' or 'Allow Desktop Analytics Processing'.
 
 See the documentation at <https://go.microsoft.com/fwlink/?linkid=2011107> for information on this and other policies that will result in Microsoft being the processor of Windows diagnostic data.
 <!-- AllowCommercialDataPipeline-Description-End -->
@@ -130,8 +132,8 @@ See the documentation at <https://go.microsoft.com/fwlink/?linkid=2011107> for i
 > [!NOTE]
 > Configuring this setting doesn't affect the operation of optional analytics processor services like Desktop Analytics and Windows Update for Business reports.
 
-> [!IMPORTANT]
-> Starting with the January 2023 preview cumulative update, this policy is no longer supported to configure the processor option. For more information, see [Changes to Windows diagnostic data collection](/windows/privacy/changes-to-windows-diagnostic-data-collection#significant-changes-coming-to-the-windows-diagnostic-data-processor-configuration).
+> [!NOTE]
+> Starting with the January 2023 preview cumulative update, this policy is no longer supported to configure the processor option. For more information, see [Enable Windows diagnostic data processor configuration](/windows/privacy/configure-windows-diagnostic-data-in-your-organization#enable-windows-diagnostic-data-processor-configuration).
 <!-- AllowCommercialDataPipeline-Editable-End -->
 
 <!-- AllowCommercialDataPipeline-DFProperties-Begin -->
@@ -178,7 +180,7 @@ See the documentation at <https://go.microsoft.com/fwlink/?linkid=2011107> for i
 <!-- AllowDesktopAnalyticsProcessing-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763.1217] and later <br> ✅ Windows 10, version 1903 [10.0.18362.836] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763.1217] and later <br> ✅ Windows 10, version 1903 [10.0.18362.836] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AllowDesktopAnalyticsProcessing-Applicability-End -->
 
 <!-- AllowDesktopAnalyticsProcessing-OmaUri-Begin -->
@@ -189,6 +191,8 @@ See the documentation at <https://go.microsoft.com/fwlink/?linkid=2011107> for i
 
 <!-- AllowDesktopAnalyticsProcessing-Description-Begin -->
 <!-- Description-Source-ADMX -->
+This policy is deprecated and will only work on Windows 10 version 1809. Setting this policy will have no effect for other supported versions of Windows.
+
 This policy setting, in combination with the Allow Telemetry and Configure the Commercial ID, enables organizations to configure the device so that Microsoft is the processor for Windows diagnostic data collected from the device, subject to the Product Terms at< https://go.microsoft.com/fwlink/?linkid=2185086>.
 
 To enable this behavior:
@@ -206,8 +210,8 @@ This setting has no effect on devices unless they're properly enrolled in Deskto
 
 <!-- AllowDesktopAnalyticsProcessing-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-> [!IMPORTANT]
-> Starting with the January 2023 preview cumulative update, this policy is no longer supported to configure the processor option. For more information, see [Changes to Windows diagnostic data collection](/windows/privacy/changes-to-windows-diagnostic-data-collection#significant-changes-coming-to-the-windows-diagnostic-data-processor-configuration).
+> [!NOTE]
+> Starting with the January 2023 preview cumulative update, this policy is no longer supported to configure the processor option. For more information, see [Enable Windows diagnostic data processor configuration](/windows/privacy/configure-windows-diagnostic-data-in-your-organization#enable-windows-diagnostic-data-processor-configuration).
 <!-- AllowDesktopAnalyticsProcessing-Editable-End -->
 
 <!-- AllowDesktopAnalyticsProcessing-DFProperties-Begin -->
@@ -254,7 +258,7 @@ This setting has no effect on devices unless they're properly enrolled in Deskto
 <!-- AllowDeviceNameInDiagnosticData-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- AllowDeviceNameInDiagnosticData-Applicability-End -->
 
 <!-- AllowDeviceNameInDiagnosticData-OmaUri-Begin -->
@@ -318,7 +322,7 @@ If you disable or don't configure this policy setting, then device name won't be
 <!-- AllowEmbeddedMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowEmbeddedMode-Applicability-End -->
 
 <!-- AllowEmbeddedMode-OmaUri-Begin -->
@@ -367,7 +371,7 @@ Specifies whether set general purpose device to be in embedded mode. Most restri
 <!-- AllowExperimentation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowExperimentation-Applicability-End -->
 
 <!-- AllowExperimentation-OmaUri-Begin -->
@@ -419,7 +423,7 @@ Specifies whether set general purpose device to be in embedded mode. Most restri
 <!-- AllowFontProviders-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowFontProviders-Applicability-End -->
 
 <!-- AllowFontProviders-OmaUri-Begin -->
@@ -494,7 +498,7 @@ This setting is used by lower-level components for text display and fond handlin
 <!-- AllowLocation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowLocation-Applicability-End -->
 
 <!-- AllowLocation-OmaUri-Begin -->
@@ -558,7 +562,7 @@ Specifies whether to allow app access to the Location service. Most restricted v
 <!-- AllowMicrosoftManagedDesktopProcessing-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763.1217] and later <br> ✅ Windows 10, version 1903 [10.0.18362.836] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763.1217] and later <br> ✅ Windows 10, version 1903 [10.0.18362.836] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AllowMicrosoftManagedDesktopProcessing-Applicability-End -->
 
 <!-- AllowMicrosoftManagedDesktopProcessing-OmaUri-Begin -->
@@ -578,8 +582,8 @@ This setting has no effect on devices unless they're properly enrolled in Micros
 
 <!-- AllowMicrosoftManagedDesktopProcessing-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-> [!IMPORTANT]
-> Starting with the January 2023 preview cumulative update, this policy is no longer supported to configure the processor option. For more information, see [Changes to Windows diagnostic data collection](/windows/privacy/changes-to-windows-diagnostic-data-collection#significant-changes-coming-to-the-windows-diagnostic-data-processor-configuration).
+> [!NOTE]
+> Starting with the January 2023 preview cumulative update, this policy is no longer supported to configure the processor option. For more information, see [Enable Windows diagnostic data processor configuration](/windows/privacy/configure-windows-diagnostic-data-in-your-organization#enable-windows-diagnostic-data-processor-configuration).
 <!-- AllowMicrosoftManagedDesktopProcessing-Editable-End -->
 
 <!-- AllowMicrosoftManagedDesktopProcessing-DFProperties-Begin -->
@@ -613,7 +617,7 @@ This setting has no effect on devices unless they're properly enrolled in Micros
 <!-- AllowStorageCard-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowStorageCard-Applicability-End -->
 
 <!-- AllowStorageCard-OmaUri-Begin -->
@@ -662,7 +666,7 @@ Controls whether the user is allowed to use the storage card for device storage.
 <!-- AllowTelemetry-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowTelemetry-Applicability-End -->
 
 <!-- AllowTelemetry-OmaUri-Begin -->
@@ -687,9 +691,8 @@ By configuring this policy setting you can adjust what diagnostic data is collec
 
 If you disable or don't configure this policy setting, the device will send required diagnostic data and the end user can choose whether to send optional diagnostic data from the Settings app.
 
-Note:
-
-The "Configure diagnostic data opt-in settings user interface" group policy can be used to prevent end users from changing their data collection settings.
+> [!NOTE]
+> The "Configure diagnostic data opt-in settings user interface" group policy can be used to prevent end users from changing their data collection settings.
 <!-- AllowTelemetry-Description-End -->
 
 <!-- AllowTelemetry-Editable-Begin -->
@@ -741,7 +744,7 @@ The "Configure diagnostic data opt-in settings user interface" group policy can 
 <!-- AllowUpdateComplianceProcessing-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763.1217] and later <br> ✅ Windows 10, version 1903 [10.0.18362.836] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763.1217] and later <br> ✅ Windows 10, version 1903 [10.0.18362.836] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AllowUpdateComplianceProcessing-Applicability-End -->
 
 <!-- AllowUpdateComplianceProcessing-OmaUri-Begin -->
@@ -752,6 +755,8 @@ The "Configure diagnostic data opt-in settings user interface" group policy can 
 
 <!-- AllowUpdateComplianceProcessing-Description-Begin -->
 <!-- Description-Source-ADMX -->
+This policy is deprecated and will only work on Windows 10 version 1809. Setting this policy will have no effect for other supported versions of Windows.
+
 This policy setting, in combination with the Allow Telemetry and Configure the Commercial ID, enables organizations to configure the device so that Microsoft is the processor of the Windows diagnostic data collected from the device, subject to the Product Terms at< https://go.microsoft.com/fwlink/?linkid=2185086>.
 
 To enable this behavior:
@@ -769,8 +774,8 @@ If you disable or don't configure this policy setting, devices won't appear in U
 
 <!-- AllowUpdateComplianceProcessing-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-> [!IMPORTANT]
-> Starting with the January 2023 preview cumulative update, this policy is no longer supported to configure the processor option. For more information, see [Changes to Windows diagnostic data collection](/windows/privacy/changes-to-windows-diagnostic-data-collection#significant-changes-coming-to-the-windows-diagnostic-data-processor-configuration).
+> [!NOTE]
+> Starting with the January 2023 preview cumulative update, this policy is no longer supported to configure the processor option. For more information, see [Enable Windows diagnostic data processor configuration](/windows/privacy/configure-windows-diagnostic-data-in-your-organization#enable-windows-diagnostic-data-processor-configuration).
 <!-- AllowUpdateComplianceProcessing-Editable-End -->
 
 <!-- AllowUpdateComplianceProcessing-DFProperties-Begin -->
@@ -817,7 +822,7 @@ If you disable or don't configure this policy setting, devices won't appear in U
 <!-- AllowUserToResetPhone-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowUserToResetPhone-Applicability-End -->
 
 <!-- AllowUserToResetPhone-OmaUri-Begin -->
@@ -866,7 +871,7 @@ Specifies whether to allow the user to factory reset the device by using control
 <!-- AllowWUfBCloudProcessing-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763.1217] and later <br> ✅ Windows 10, version 1903 [10.0.18362.836] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763.1217] and later <br> ✅ Windows 10, version 1903 [10.0.18362.836] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AllowWUfBCloudProcessing-Applicability-End -->
 
 <!-- AllowWUfBCloudProcessing-OmaUri-Begin -->
@@ -877,6 +882,8 @@ Specifies whether to allow the user to factory reset the device by using control
 
 <!-- AllowWUfBCloudProcessing-Description-Begin -->
 <!-- Description-Source-ADMX -->
+This policy is deprecated and will only work on Windows 10 version 1809. Setting this policy will have no effect for other supported versions of Windows.
+
 This policy setting configures an Azure Active Directory joined device so that Microsoft is the processor of the Windows diagnostic data collected from the device, subject to the Product Terms at< https://go.microsoft.com/fwlink/?linkid=2185086>.
 
 To enable this behavior:
@@ -893,8 +900,8 @@ If you disable or don't configure this policy setting, devices enrolled to the W
 
 <!-- AllowWUfBCloudProcessing-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-> [!IMPORTANT]
-> Starting with the January 2023 preview cumulative update, this policy is no longer supported to configure the processor option. For more information, see [Changes to Windows diagnostic data collection](/windows/privacy/changes-to-windows-diagnostic-data-collection#significant-changes-coming-to-the-windows-diagnostic-data-processor-configuration).
+> [!NOTE]
+> Starting with the January 2023 preview cumulative update, this policy is no longer supported to configure the processor option. For more information, see [Enable Windows diagnostic data processor configuration](/windows/privacy/configure-windows-diagnostic-data-in-your-organization#enable-windows-diagnostic-data-processor-configuration).
 <!-- AllowWUfBCloudProcessing-Editable-End -->
 
 <!-- AllowWUfBCloudProcessing-DFProperties-Begin -->
@@ -941,7 +948,7 @@ If you disable or don't configure this policy setting, devices enrolled to the W
 <!-- BootStartDriverInitialization-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- BootStartDriverInitialization-Applicability-End -->
 
 <!-- BootStartDriverInitialization-OmaUri-Begin -->
@@ -1010,7 +1017,7 @@ If your malware detection application doesn't include an Early Launch Antimalwar
 <!-- ConfigureMicrosoft365UploadEndpoint-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- ConfigureMicrosoft365UploadEndpoint-Applicability-End -->
 
 <!-- ConfigureMicrosoft365UploadEndpoint-OmaUri-Begin -->
@@ -1067,7 +1074,7 @@ The value for this setting will be provided by Microsoft as part of the onboardi
 <!-- ConfigureTelemetryOptInChangeNotification-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- ConfigureTelemetryOptInChangeNotification-Applicability-End -->
 
 <!-- ConfigureTelemetryOptInChangeNotification-OmaUri-Begin -->
@@ -1133,7 +1140,7 @@ If you set this policy setting to "Enable diagnostic data change notifications" 
 <!-- ConfigureTelemetryOptInSettingsUx-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- ConfigureTelemetryOptInSettingsUx-Applicability-End -->
 
 <!-- ConfigureTelemetryOptInSettingsUx-OmaUri-Begin -->
@@ -1150,9 +1157,8 @@ If you set this policy setting to "Disable diagnostic data opt-in settings", dia
 
 If you don't configure this policy setting, or you set it to "Enable diagnostic data opt-in settings", end users can change the device diagnostic settings in the Settings app.
 
-Note:
-
-To set a limit on the amount of diagnostic data that's sent to Microsoft by your organization, use the "Allow Diagnostic Data" policy setting.
+> [!NOTE]
+> To set a limit on the amount of diagnostic data that's sent to Microsoft by your organization, use the "Allow Diagnostic Data" policy setting.
 <!-- ConfigureTelemetryOptInSettingsUx-Description-End -->
 
 <!-- ConfigureTelemetryOptInSettingsUx-Editable-Begin -->
@@ -1203,7 +1209,7 @@ To set a limit on the amount of diagnostic data that's sent to Microsoft by your
 <!-- DisableDeviceDelete-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- DisableDeviceDelete-Applicability-End -->
 
 <!-- DisableDeviceDelete-OmaUri-Begin -->
@@ -1269,7 +1275,7 @@ This policy setting controls whether the Delete diagnostic data button is enable
 <!-- DisableDiagnosticDataViewer-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- DisableDiagnosticDataViewer-Applicability-End -->
 
 <!-- DisableDiagnosticDataViewer-OmaUri-Begin -->
@@ -1335,7 +1341,7 @@ This policy setting controls whether users can enable and launch the Diagnostic 
 <!-- DisableDirectXDatabaseUpdate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- DisableDirectXDatabaseUpdate-Applicability-End -->
 
 <!-- DisableDirectXDatabaseUpdate-OmaUri-Begin -->
@@ -1393,7 +1399,7 @@ This group policy allows control over whether the DirectX Database Updater task 
 <!-- DisableEnterpriseAuthProxy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- DisableEnterpriseAuthProxy-Applicability-End -->
 
 <!-- DisableEnterpriseAuthProxy-OmaUri-Begin -->
@@ -1455,7 +1461,7 @@ This policy setting blocks the Connected User Experience and Telemetry service f
 <!-- DisableOneDriveFileSync-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DisableOneDriveFileSync-Applicability-End -->
 
 <!-- DisableOneDriveFileSync-OmaUri-Begin -->
@@ -1532,7 +1538,7 @@ This policy setting lets you prevent apps and features from working with files o
 <!-- DisableOneSettingsDownloads-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DisableOneSettingsDownloads-Applicability-End -->
 
 <!-- DisableOneSettingsDownloads-OmaUri-Begin -->
@@ -1598,7 +1604,7 @@ This policy setting controls whether Windows attempts to connect with the OneSet
 <!-- DisableSystemRestore-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DisableSystemRestore-Applicability-End -->
 
 <!-- DisableSystemRestore-OmaUri-Begin -->
@@ -1663,7 +1669,7 @@ Also, see the "Turn off System Restore configuration" policy setting. If the "Tu
 <!-- EnableOneSettingsAuditing-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- EnableOneSettingsAuditing-Applicability-End -->
 
 <!-- EnableOneSettingsAuditing-OmaUri-Begin -->
@@ -1729,7 +1735,7 @@ This policy setting controls whether Windows records attempts to connect with th
 <!-- FeedbackHubAlwaysSaveDiagnosticsLocally-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- FeedbackHubAlwaysSaveDiagnosticsLocally-Applicability-End -->
 
 <!-- FeedbackHubAlwaysSaveDiagnosticsLocally-OmaUri-Begin -->
@@ -1778,7 +1784,7 @@ Diagnostic files created when a feedback is filed in the Feedback Hub app will a
 <!-- HideUnsupportedHardwareNotifications-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- HideUnsupportedHardwareNotifications-Applicability-End -->
 
 <!-- HideUnsupportedHardwareNotifications-OmaUri-Begin -->
@@ -1845,7 +1851,7 @@ This policy controls messages which are shown when Windows is running on a devic
 <!-- LimitDiagnosticLogCollection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- LimitDiagnosticLogCollection-Applicability-End -->
 
 <!-- LimitDiagnosticLogCollection-OmaUri-Begin -->
@@ -1911,7 +1917,7 @@ If you disable or don't configure this policy setting, we may occasionally colle
 <!-- LimitDumpCollection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- LimitDumpCollection-Applicability-End -->
 
 <!-- LimitDumpCollection-OmaUri-Begin -->
@@ -1977,7 +1983,7 @@ If you disable or don't configure this policy setting, we may occasionally colle
 <!-- LimitEnhancedDiagnosticDataWindowsAnalytics-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- LimitEnhancedDiagnosticDataWindowsAnalytics-Applicability-End -->
 
 <!-- LimitEnhancedDiagnosticDataWindowsAnalytics-OmaUri-Begin -->
@@ -2051,7 +2057,7 @@ If you disable or don't configure this policy setting, diagnostic data collectio
 <!-- TelemetryProxy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- TelemetryProxy-Applicability-End -->
 
 <!-- TelemetryProxy-OmaUri-Begin -->
@@ -2108,7 +2114,7 @@ The format for this setting is `<server>`:`<port>`
 <!-- TurnOffFileHistory-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- TurnOffFileHistory-Applicability-End -->
 
 <!-- TurnOffFileHistory-OmaUri-Begin -->

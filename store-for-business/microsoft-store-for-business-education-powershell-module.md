@@ -9,6 +9,7 @@ author: cmcatee-MSFT
 manager: scotv
 ms.topic: conceptual
 ms.localizationpriority: medium
+ms.custom: has-azure-ad-ps-ref
 ms.date: 05/24/2023
 ms.reviewer: 
 ---

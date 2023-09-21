@@ -3,30 +3,27 @@ title: Windows Update for Business
 manager: aaroncz
 description: Learn how Windows Update for Business lets you manage when devices receive updates from Windows Update.
 ms.prod: windows-client
-author: mestew
-ms.localizationpriority: medium
-ms.author: mstewart
 ms.topic: overview
+author: mestew
+ms.author: mstewart
 ms.collection:
   - highpri
   - tier2
-ms.technology: itpro-updates
+ms.localizationpriority: medium
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
 ms.date: 12/31/2017
 ---
 
 # What is Windows Update for Business?
 
-
-**Applies to**
-
-- Windows 10
-- Windows 11
-
-
-Windows Update for Business is a free service that is available for all premium editions including Windows 10 and Windows 11 Pro, Enterprise, Pro for Workstation, and Education editions. 
-
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
 
+Windows Update for Business is a free service that is available for the following editions of Windows 10 and Windows 11:
+- Pro, including Pro for Workstations
+- Education
+- Enterprise, including Enterprise LTSC, IoT Enterprise, and IoT Enterprise LTSC
 
 Windows Update for Business enables IT administrators to keep the Windows client devices in their organization always up to date with the latest security defenses and Windows features by directly connecting these systems to Windows Update service. You can use Group Policy or Mobile Device Management (MDM) solutions such as Microsoft Intune to configure the Windows Update for Business settings that control how and when devices are updated.
   
@@ -36,7 +33,7 @@ Specifically, Windows Update for Business lets you control update offerings and 
 
 Windows Update for Business enables commercial customers to manage which Windows Updates are received when as well as the experience a device has when it receives them.
 
-You can control Windows Update for Business policies by using either Mobile Device Management (MDM) tools such as Microsoft Intune or Group Policy management tools such as local group policy or the Group Policy Management Console (GPMC), as well as a variety of other non-Microsoft management tools. MDMs use Configuration Service Provider (CSP) policies instead of Group Policy. Intune additionally uses Cloud Policies. Not all policies are available in all formats (CSP, Group Policy, or Cloud policy).
+You can control Windows Update for Business policies by using either Mobile Device Management (MDM) tools such as Microsoft Intune or Group Policy management tools such as local group policy or the Group Policy Management Console (GPMC), as well as various other non-Microsoft management tools. MDMs use Configuration Service Provider (CSP) policies instead of Group Policy. Intune additionally uses Cloud Policies. Not all policies are available in all formats (CSP, Group Policy, or Cloud policy).
 
 
 ### Manage deployment of Windows Updates 
@@ -49,7 +46,7 @@ Windows Update for Business enables an IT administrator to receive and manage a 
 
 Windows Update for Business provides management policies for several types of updates to Windows 10 devices:
 
-- **Feature updates:** Previously referred to as "upgrades," feature updates contain not only security and quality revisions, but also significant feature additions and changes. Feature updates are released as soon as they become available.
+- **Feature updates:** Previously referred to as "upgrades," feature updates contain not only security and quality revisions, but also significant feature additions and changes. Feature updates are released as soon as they become available. Feature updates aren't available for LTSC devices.
 - **Quality updates:** Quality updates are traditional operating system updates, typically released on the second Tuesday of each month (though they can be released at any time). These include security, critical, and driver updates.
 - **Driver updates:** Updates for non-Microsoft drivers that are relevant to your devices. Driver updates are on by default, but you can use Windows Update for Business policies to turn them off if you prefer. 
 - **Microsoft product updates**: Updates for other Microsoft products, such as versions of Office that are installed by using Windows Installer (MSI). Versions of Office that are installed by using Click-to-Run can't be updated by using Windows Update for Business. Product updates are off by default. You can turn them on by using Windows Update for Business policies.
@@ -61,10 +58,11 @@ You can control when updates are applied, for example by deferring when an updat
 ### Manage when updates are offered
 You can defer or pause the installation of updates for a set period of time.
 
-#### Enroll in pre-release updates
+#### Enroll in prerelease updates
 
-The branch readiness level enables administrators to specify which channel of feature updates they want to receive. Today there are branch readiness level options for both pre-release and released updates:
+The branch readiness level enables administrators to specify which channel of feature updates they want to receive. Today there are branch readiness level options for both prerelease and released updates:
 
+- Windows Insider Canary
 - Windows Insider Dev
 - Windows Insider Beta
 - Windows Insider Preview
@@ -73,14 +71,14 @@ The branch readiness level enables administrators to specify which channel of fe
 
 #### Defer an update
 
-A Windows Update for Business administrator can defer the installation of both feature and quality updates from deploying to devices within a bounded range of time from when those updates are first made available on the Windows Update service. You can use this deferral to allow time to validate deployments as they are pushed to devices. Deferrals work by allowing you to specify the number of days after an update is released before it is offered to a device. That is, if you set a feature update deferral period of 365 days, the device will not install a feature update that has been released for less than 365 days. To defer feature updates, use the **Select when Preview Builds and feature updates are Received** policy.
+A Windows Update for Business administrator can defer the installation of both feature and quality updates from deploying to devices within a bounded range of time from when those updates are first made available on the Windows Update service. You can use this deferral to allow time to validate deployments as they're pushed to devices. Deferrals work by allowing you to specify the number of days after an update is released before it's offered to a device. That is, if you set a feature update deferral period of 365 days, the device won't install a feature update that has been released for less than 365 days. To defer feature updates, use the **Select when Preview Builds and feature updates are Received** policy.
 
 
 |Category  |Maximum deferral period  |
 |---------|---------|
 |Feature updates     |  365 days       |
 |Quality updates     | 30 days        |
-|Non-deferrable     |   none      |
+|Nondeferrable     |   none      |
 
 <!--Example: Using deferrals to deploy in waves
       [Insert graphic with the deferrals set to different values showing a feature update rollout)--> 
@@ -106,7 +104,7 @@ For the best experience with Windows Update, follow these guidelines:
 
 ### Manage the end-user experience when receiving Windows Updates
 
-Windows Update for Business provides controls to help meet your organization’s security standards as well as provide a great end-user experience. We do this by enabling you to set automatic updates at times that work well for people in your organization and set deadlines for quality and feature updates. Because Windows Update includes built-in intelligence, it's better to use fewer controls to manage the user experience. 
+Windows Update for Business provides controls to help meet your organization's security standards as well as provide a great end-user experience. We do this by enabling you to set automatic updates at times that work well for people in your organization and set deadlines for quality and feature updates. Because Windows Update includes built-in intelligence, it's better to use fewer controls to manage the user experience. 
 
 #### Recommended experience settings
 

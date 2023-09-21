@@ -4,7 +4,7 @@ description: Learn more about the Settings Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/11/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -26,7 +26,7 @@ ms.topic: reference
 <!-- AllowAutoPlay-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowAutoPlay-Applicability-End -->
 
 <!-- AllowAutoPlay-OmaUri-Begin -->
@@ -78,7 +78,7 @@ Allows the user to change Auto Play settings.
 <!-- AllowDataSense-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowDataSense-Applicability-End -->
 
 <!-- AllowDataSense-OmaUri-Begin -->
@@ -130,7 +130,7 @@ Allows the user to change Data Sense settings.
 <!-- AllowDateTime-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowDateTime-Applicability-End -->
 
 <!-- AllowDateTime-OmaUri-Begin -->
@@ -179,7 +179,7 @@ Allows the user to change date and time settings.
 <!-- AllowEditDeviceName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowEditDeviceName-Applicability-End -->
 
 <!-- AllowEditDeviceName-OmaUri-Begin -->
@@ -228,7 +228,7 @@ Allows the user to edit the device name.
 <!-- AllowLanguage-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowLanguage-Applicability-End -->
 
 <!-- AllowLanguage-OmaUri-Begin -->
@@ -277,7 +277,7 @@ Allows the user to change the language settings.
 <!-- AllowOnlineTips-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- AllowOnlineTips-Applicability-End -->
 
 <!-- AllowOnlineTips-OmaUri-Begin -->
@@ -342,7 +342,7 @@ If disabled, Settings won't contact Microsoft content services to retrieve tips 
 <!-- AllowPowerSleep-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowPowerSleep-Applicability-End -->
 
 <!-- AllowPowerSleep-OmaUri-Begin -->
@@ -391,7 +391,7 @@ Allows the user to change power and sleep settings.
 <!-- AllowRegion-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowRegion-Applicability-End -->
 
 <!-- AllowRegion-OmaUri-Begin -->
@@ -440,7 +440,7 @@ Allows the user to change the region settings.
 <!-- AllowSignInOptions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowSignInOptions-Applicability-End -->
 
 <!-- AllowSignInOptions-OmaUri-Begin -->
@@ -489,7 +489,7 @@ Allows the user to change sign-in options.
 <!-- AllowVPN-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowVPN-Applicability-End -->
 
 <!-- AllowVPN-OmaUri-Begin -->
@@ -538,7 +538,7 @@ Allows the user to change VPN settings.
 <!-- AllowWorkplace-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowWorkplace-Applicability-End -->
 
 <!-- AllowWorkplace-OmaUri-Begin -->
@@ -587,7 +587,7 @@ Allows user to change workplace settings.
 <!-- AllowYourAccount-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowYourAccount-Applicability-End -->
 
 <!-- AllowYourAccount-OmaUri-Begin -->
@@ -636,7 +636,7 @@ Allows user to change account settings.
 <!-- ConfigureTaskbarCalendar-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- ConfigureTaskbarCalendar-Applicability-End -->
 
 <!-- ConfigureTaskbarCalendar-OmaUri-Begin -->
@@ -707,7 +707,7 @@ By default, the calendar is set according to the locale of the operating system,
 <!-- PageVisibilityList-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- PageVisibilityList-Applicability-End -->
 
 <!-- PageVisibilityList-OmaUri-Begin -->
@@ -735,14 +735,14 @@ showonly:about;bluetooth.
 Example: to specify that only the Bluetooth page (which has URI ms-settings:bluetooth) should be hidden:
 
 hide:bluetooth.
-
-The availability of per-user support is documented here: <https://go.microsoft.com/fwlink/?linkid=2102995>
 <!-- PageVisibilityList-Description-End -->
 
 <!-- PageVisibilityList-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-
 For more information on the URI reference scheme used for the various pages of the System Settings app, see [ms-settings: URI scheme reference](/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference).
+
+> [!WARNING]
+> In Windows 11, version 22H2 and later, when you configure this policy to hide any pages that contain `quietmoments` in the URI (for example, `ms-settings:quietmomentsgame`), the Notifications page under System category is hidden.
 
 To validate this policy, use the following steps:
 

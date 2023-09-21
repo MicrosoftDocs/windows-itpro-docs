@@ -2,7 +2,7 @@
 title: How Windows Hello for Business works - technology and terms
 description: Explore technology and terms associated with Windows Hello for Business. Learn how Windows Hello for Business works.
 ms.date: 10/08/2018
-ms.topic: article
+ms.topic: glossary
 ---
 
 # Technology and terms
@@ -94,8 +94,8 @@ In Windows 10 and Windows 11, cloud experience host is an application used while
 
 ### Related to cloud experience host
 
-- [Windows Hello for Business](./hello-identity-verification.md)
-- [Managed Windows Hello in organization](./hello-manage-in-organization.md)
+- [Windows Hello for Business](hello-identity-verification.md)
+- [Managed Windows Hello in organization](hello-manage-in-organization.md)
 
 ### More information on cloud experience host
 
@@ -359,7 +359,7 @@ A TPM implements controls that meet the specification described by the Trusted C
 - The first TPM specification, version 1.2, was published in February 2005 by the TCG and standardized under ISO / IEC 11889 standard.
 - The latest TPM specification, referred to as TPM 2.0, was released in April 2014 and has been approved by the ISO/IEC Joint Technical Committee (JTC) as ISO/IEC 11889:2015.
 
-Windows 10 and Windows 11 use the TPM for cryptographic calculations as part of health attestation and to protect the keys for BitLocker, Windows Hello, virtual smart cards, and other public key certificates. For more information, see [TPM requirements in Windows](../../information-protection/tpm/tpm-recommendations.md).
+Windows 10 and Windows 11 use the TPM for cryptographic calculations as part of health attestation and to protect the keys for BitLocker, Windows Hello, virtual smart cards, and other public key certificates. For more information, see [TPM requirements in Windows](../../hardware-security/tpm/tpm-recommendations.md).
 
 Windows recognizes versions 1.2 and 2.0 TPM specifications produced by the TCG. For the most recent and modern security features, Windows 10 and Windows 11 support only TPM 2.0.
 

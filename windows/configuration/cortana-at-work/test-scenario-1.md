@@ -8,11 +8,13 @@ ms.localizationpriority: medium
 ms.author: aaroncz
 ms.date: 10/05/2017
 ms.reviewer: 
-manager: dougeby
+manager: aaroncz
 ms.technology: itpro-configure
 ---
 
 # Test scenario 1 – Sign in with your work or school account and use Cortana to manage the notebook
+<!--Using include for Cortana in Windows deprecation -->
+[!INCLUDE [Deprecation of Cortana in Windows](./includes/cortana-deprecation.md)]
 
 This scenario turns on Azure AD and lets your employee use Cortana to manage an entry in the notebook.
 

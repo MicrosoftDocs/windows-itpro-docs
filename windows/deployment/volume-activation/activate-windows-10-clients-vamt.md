@@ -16,10 +16,14 @@ ms.technology: itpro-fundamentals
 
 **Applies to:**
 
+- Windows 11
 - Windows 10
 - Windows 8.1
 - Windows 8
 - Windows 7
+- Windows Server 2022
+- Windows Server 2019
+- Windows Server 2016
 - Windows Server 2012 R2
 - Windows Server 2012
 - Windows Server 2008 R2
@@ -81,7 +85,7 @@ The KMS uses service (SRV) resource records in DNS to store and communicate the 
 
 By default, KMS client computers query DNS for KMS information. The first time a KMS client computer queries DNS for KMS information, it randomly chooses a KMS host from the list of service (SRV) resource records that DNS returns. The address of a DNS server that contains the service (SRV) resource records can be listed as a suffixed entry on KMS client computers, which allows one DNS server to advertise the service (SRV) resource records for KMS, and KMS client computers with other primary DNS servers to find it.
 
-Priority and weight parameters can be added to the DnsDomainPublishList registry value for KMS. Establishing KMS host priority groupings and weighting within each group allows you to specify which KMS host the client computers should try first and balances traffic among multiple KMS hosts. Only Windows 10, Windows 8.1, Windows 8, Windows 7, Windows Server 2012 R2, Windows Server 2012, and Windows Server 2008 R2 provide these priority and weight parameters.
+Priority and weight parameters can be added to the DnsDomainPublishList registry value for KMS. Establishing KMS host priority groupings and weighting within each group allows you to specify which KMS host the client computers should try first and balances traffic among multiple KMS hosts. All currently supported versions of Windows and Windows Server provide these priority and weight parameters.
 
 If the KMS host that a client computer selects doesn't respond, the KMS client computer removes that KMS host from its list of service (SRV) resource records and randomly selects another KMS host from the list. When a KMS host responds, the KMS client computer caches the name of the KMS host and uses it for subsequent activation and renewal attempts. If the cached KMS host doesn't respond on a subsequent renewal, the KMS client computer discovers a new KMS host by querying DNS for KMS service (SRV) resource records.
 

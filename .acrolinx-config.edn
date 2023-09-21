@@ -1,4 +1,5 @@
-{:allowed-branchname-matches ["main" "release-.*"]
+{:changed-files-limit 60
+ :allowed-branchname-matches ["main" "release-.*"]
  :allowed-filename-matches ["windows/"]
  
   :targets 

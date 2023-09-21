@@ -1,13 +1,13 @@
 items:
 - name: Overview
-  href: ../operating-system.md
+  href: index.md
 - name: System security
   href: system-security/toc.yml
-- name: Virus and threat protection
-  href: virus-and-threat-protection/toc.yml
-- name: Network security
-  href: network-security/toc.yml
-- name: Data protection
+- name: Encryption and data protection
   href: data-protection/toc.yml
 - name: Device management
   href: device-management/toc.yml
+- name: Network security
+  href: network-security/toc.yml
+- name: Virus and threat protection
+  href: virus-and-threat-protection/toc.yml

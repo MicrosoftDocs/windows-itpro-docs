@@ -10,12 +10,14 @@ ms.localizationpriority: medium
 ms.author: aaroncz
 ms.date: 10/05/2017
 ms.reviewer: 
-manager: dougeby
+manager: aaroncz
 ms.technology: itpro-configure
 ---
 
 # Set up and test Cortana in Windows 10, versions 1909 and earlier, with Microsoft 365 in your organization
 
+<!--Using include for Cortana in Windows deprecation -->
+[!INCLUDE [Deprecation of Cortana in Windows](./includes/cortana-deprecation.md)]
 
 ## What can you do with in Windows 10, versions 1909 and earlier?
 Your employees can use Cortana to help manage their day and be more productive by getting quick answers to common questions, setting reminders, adding tasks to their To-Do lists, and find out where their next meeting is.

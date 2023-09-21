@@ -1,7 +1,7 @@
 ---
 title: Enroll your tenant
 description: This article details how to enroll your tenant
-ms.date: 07/11/2022
+ms.date: 09/15/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: how-to
@@ -10,6 +10,9 @@ author: tiaraquan
 ms.author: tiaraquan
 manager: dougeby
 ms.reviewer: hathind
+ms.collection:
+  - highpri
+  - tier1
 ---
 
 # Enroll your tenant
@@ -30,7 +33,7 @@ To start using the Windows Autopatch service, ensure you meet the [Windows Autop
 > [!IMPORTANT]
 > The online Readiness assessment tool helps you check your readiness to enroll in Windows Autopatch for the first time. Once you enroll, you'll no longer be able to access the  tool again.
 
-The Readiness assessment tool checks the settings in [Microsoft Intune](#microsoft-intune-settings) and [Azure Active Directory](#azure-active-directory-settings) (Azure AD) to ensure they'll work with Windows Autopatch. We aren't, however, checking the workloads in Configuration Manager necessary for Windows Autopatch. For more information about workload prerequisites, see [Configuration Manager co-management requirements](../prepare/windows-autopatch-prerequisites.md#configuration-manager-co-management-requirements).
+The Readiness assessment tool checks the settings in [Microsoft Intune](#microsoft-intune-settings) and [Azure Active Directory](#azure-active-directory-settings) (Azure AD) to ensure the settings work with Windows Autopatch. We aren't, however, checking the workloads in Configuration Manager necessary for Windows Autopatch. For more information about workload prerequisites, see [Configuration Manager co-management requirements](../prepare/windows-autopatch-prerequisites.md#configuration-manager-co-management-requirements).
 
 **To access and run the Readiness assessment tool:**
 
@@ -64,13 +67,13 @@ The following are the Azure Active Directory settings:
 
 ### Check results
 
-For each check, the tool will report one of four possible results:  
+For each check, the tool reports one of four possible results:  
 
 | Result | Meaning |
 | ----- | ----- |
 | Ready | No action is required before completing enrollment. |
 | Advisory | Follow the steps in the tool or this article for the best experience with enrollment and for users.<p><p>You can complete enrollment, but you must fix these issues before you deploy your first device. |
-| Not ready | You must fix these issues before enrollment. You won’t be able to enroll into Windows Autopatch if you don't fix these issues. Follow the steps in the tool or this article to resolve them.  |
+| Not ready | You must fix these issues before enrollment. You can't enroll into Windows Autopatch if you don't fix these issues. Follow the steps in the tool or this article to resolve them.  |
 | Error | The Azure Active Directory (AD) role you're using doesn't have sufficient permissions to run this check. |
 
 ## Step 3: Fix issues with your tenant
@@ -86,11 +89,11 @@ Once the Readiness assessment tool provides you with a "Ready" result, you're re
 
 **To enroll your tenant:**
 
-Within the Readiness assessment tool, you'll now see the **Enroll** button. By selecting **Enroll**, you'll kick off the enrollment of your tenant to the Windows Autopatch service. During the enrollment workflow, you'll see the following:
+Within the Readiness assessment tool, you can see the **Enroll** button. By selecting **Enroll**, you start the enrollment process of your tenant into the Windows Autopatch service. During the enrollment workflow, you see the following:
 
 - Consent workflow to manage your tenant.
 - Provide Windows Autopatch with IT admin contacts.
-- Setup of the Windows Autopatch service on your tenant. This step is where we'll create the policies, groups and accounts necessary to run the service.
+- Setup of the Windows Autopatch service on your tenant. This step is where we create the policies, groups and accounts necessary to run the service.
 
 Once these actions are complete, you've now successfully enrolled your tenant.
 
@@ -101,7 +104,7 @@ Once these actions are complete, you've now successfully enrolled your tenant.
 
 You can choose to delete the data we collect directly within the Readiness assessment tool.
 
-Windows Autopatch retains the data associated with these checks for 12 months after the last time you ran a check in your Azure Active Directory organization (tenant). After 12 months, we retain the data in a de-identified form.
+Windows Autopatch retains the data associated with these checks for 12 months after the last time you ran a check in your Azure Active Directory organization (tenant). After 12 months, we retain the data in a deidentified form.
 
 > [!NOTE]
 > Windows Autopatch will only delete the results we collect within the Readiness assessment tool; Autopatch won't delete any other tenant-level data.

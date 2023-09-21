@@ -4,7 +4,7 @@ description: Learn more about the ADMX_DCOM Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -28,7 +28,7 @@ ms.topic: reference
 <!-- DCOMActivationSecurityCheckAllowLocalList-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DCOMActivationSecurityCheckAllowLocalList-Applicability-End -->
 
 <!-- DCOMActivationSecurityCheckAllowLocalList-OmaUri-Begin -->
@@ -90,7 +90,7 @@ Allows you to specify that local computer administrators can supplement the "Def
 <!-- DCOMActivationSecurityCheckExemptionList-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DCOMActivationSecurityCheckExemptionList-Applicability-End -->
 
 <!-- DCOMActivationSecurityCheckExemptionList-OmaUri-Begin -->
@@ -111,9 +111,8 @@ DCOM server appids added to this policy must be listed in curly-brace format. Fo
 
 - If you don't configure this policy setting, the appid exemption list defined by local computer administrators is used.
 
-Note:
-
-The DCOM Activation security check is done after a DCOM server process is started, but before an object activation request is dispatched to the server process. This access check is done against the DCOM server's custom launch permission security descriptor if it exists, or otherwise against the configured defaults.
+> [!NOTE]
+> The DCOM Activation security check is done after a DCOM server process is started, but before an object activation request is dispatched to the server process. This access check is done against the DCOM server's custom launch permission security descriptor if it exists, or otherwise against the configured defaults.
 
 If the DCOM server's custom launch permission contains explicit DENY entries this may mean that object activations that would've previously succeeded for such specified users, once the DCOM server process was up and running, might now fail instead. The proper action in this situation is to re-configure the DCOM server's custom launch permission settings for correct security settings, but this policy setting may be used in the short-term as an application compatibility deployment aid.
 
@@ -122,7 +121,8 @@ DCOM servers added to this exemption list are only exempted if their custom laun
 
 <!-- DCOMActivationSecurityCheckExemptionList-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-**NOTE** This policy setting applies to all sites in Trusted zones.
+> [!NOTE]
+> This policy setting applies to all sites in Trusted zones.
 <!-- DCOMActivationSecurityCheckExemptionList-Editable-End -->
 
 <!-- DCOMActivationSecurityCheckExemptionList-DFProperties-Begin -->

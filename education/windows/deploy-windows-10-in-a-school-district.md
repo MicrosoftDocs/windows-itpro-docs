@@ -113,7 +113,7 @@ Office 365 Education allows:
 
 * Students and faculty to use Office 365 Video to manage videos.
 
-* Students and faculty to use Yammer to collaborate through private social networking.
+* Students and faculty to use Viva Engage to collaborate through private social networking.
 
 * Students and faculty to access classroom resources from anywhere on any device (including iOS and Android devices).
 

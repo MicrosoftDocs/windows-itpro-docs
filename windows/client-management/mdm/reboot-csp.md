@@ -4,7 +4,7 @@ description: Learn more about the Reboot CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -15,6 +15,8 @@ ms.topic: reference
 
 <!-- Reboot-Begin -->
 # Reboot CSP
+
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- Reboot-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -38,7 +40,7 @@ The following list shows the Reboot configuration service provider nodes:
 <!-- Device-RebootNow-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-RebootNow-Applicability-End -->
 
 <!-- Device-RebootNow-OmaUri-Begin -->
@@ -77,7 +79,7 @@ This node executes a reboot of the device. RebootNow triggers a reboot within 5 
 <!-- Device-Schedule-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Schedule-Applicability-End -->
 
 <!-- Device-Schedule-OmaUri-Begin -->
@@ -116,7 +118,7 @@ The supported operation is Get.
 <!-- Device-Schedule-DailyRecurrent-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Schedule-DailyRecurrent-Applicability-End -->
 
 <!-- Device-Schedule-DailyRecurrent-OmaUri-Begin -->
@@ -155,7 +157,7 @@ Value in ISO8601, time is required. Either setting DailyRecurrent or WeeklyRecur
 <!-- Device-Schedule-Single-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Schedule-Single-Applicability-End -->
 
 <!-- Device-Schedule-Single-OmaUri-Begin -->
@@ -194,7 +196,7 @@ Value in ISO8601, both the date and time are required. A reboot will be schedule
 <!-- Device-Schedule-WeeklyRecurrent-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-Schedule-WeeklyRecurrent-Applicability-End -->
 
 <!-- Device-Schedule-WeeklyRecurrent-OmaUri-Begin -->

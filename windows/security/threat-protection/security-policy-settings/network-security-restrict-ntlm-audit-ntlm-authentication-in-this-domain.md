@@ -90,7 +90,7 @@ There are no security audit event policies that can be configured to view output
 
 This section describes how an attacker might exploit a feature or its configuration, how to implement the countermeasure, and the possible negative consequences of countermeasure implementation.
 
-NTLM and NTLMv2 authentication is vulnerable to various malicious attacks, including SMB replay, man-in-the-middle attacks, and brute force attacks. Reducing and eliminating NTLM authentication from your environment forces the Windows operating system to use more secure protocols, such as the 
+NTLM and NTLMv2 authentication is vulnerable to various malicious attacks, including SMB relay, man-in-the-middle attacks, and brute force attacks. Reducing and eliminating NTLM authentication from your environment forces the Windows operating system to use more secure protocols, such as the 
 Kerberos version 5 protocol, or different authentication mechanisms, such as smart cards.
 
 ### Vulnerability

@@ -4,7 +4,7 @@ description: Learn more about the Browser Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/11/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -28,7 +28,7 @@ ms.topic: reference
 <!-- AllowAddressBarDropdown-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowAddressBarDropdown-Applicability-End -->
 
 <!-- AllowAddressBarDropdown-OmaUri-Begin -->
@@ -102,7 +102,7 @@ This policy setting lets you decide whether the Address bar drop-down functional
 <!-- AllowAutofill-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowAutofill-Applicability-End -->
 
 <!-- AllowAutofill-OmaUri-Begin -->
@@ -185,7 +185,7 @@ To verify AllowAutofill is set to 0 (not allowed):
 <!-- AllowBrowser-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowBrowser-Applicability-End -->
 
 <!-- AllowBrowser-OmaUri-Begin -->
@@ -238,7 +238,7 @@ This policy is deprecated.
 <!-- AllowConfigurationUpdateForBooksLibrary-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- AllowConfigurationUpdateForBooksLibrary-Applicability-End -->
 
 <!-- AllowConfigurationUpdateForBooksLibrary-OmaUri-Begin -->
@@ -291,7 +291,7 @@ This policy setting lets you decide whether Microsoft Edge can automatically upd
 <!-- AllowCookies-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowCookies-Applicability-End -->
 
 <!-- AllowCookies-OmaUri-Begin -->
@@ -376,7 +376,7 @@ To verify AllowCookies is set to 0 (not allowed):
 <!-- AllowDeveloperTools-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- AllowDeveloperTools-Applicability-End -->
 
 <!-- AllowDeveloperTools-OmaUri-Begin -->
@@ -447,7 +447,7 @@ This policy setting lets you decide whether F12 Developer Tools are available on
 <!-- AllowDoNotTrack-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowDoNotTrack-Applicability-End -->
 
 <!-- AllowDoNotTrack-OmaUri-Begin -->
@@ -527,7 +527,7 @@ To verify AllowDoNotTrack is set to 0 (not allowed):
 <!-- AllowExtensions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowExtensions-Applicability-End -->
 
 <!-- AllowExtensions-OmaUri-Begin -->
@@ -598,7 +598,7 @@ This setting lets you decide whether employees can load extensions in Microsoft 
 <!-- AllowFlash-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowFlash-Applicability-End -->
 
 <!-- AllowFlash-OmaUri-Begin -->
@@ -669,7 +669,7 @@ This setting lets you decide whether employees can run Adobe Flash in Microsoft 
 <!-- AllowFlashClickToRun-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowFlashClickToRun-Applicability-End -->
 
 <!-- AllowFlashClickToRun-OmaUri-Begin -->
@@ -738,7 +738,7 @@ Sites get onto the auto-allowed list based on user feedback, specifically by how
 <!-- AllowFullScreenMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- AllowFullScreenMode-Applicability-End -->
 
 <!-- AllowFullScreenMode-OmaUri-Begin -->
@@ -809,7 +809,7 @@ If disabled, full-screen mode is unavailable for use in Microsoft Edge.
 <!-- AllowInPrivate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- AllowInPrivate-Applicability-End -->
 
 <!-- AllowInPrivate-OmaUri-Begin -->
@@ -880,7 +880,7 @@ This policy setting lets you decide whether employees can browse using InPrivate
 <!-- AllowMicrosoftCompatibilityList-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowMicrosoftCompatibilityList-Applicability-End -->
 
 <!-- AllowMicrosoftCompatibilityList-OmaUri-Begin -->
@@ -951,7 +951,7 @@ This policy setting lets you decide whether to use the Microsoft Compatibility L
 <!-- AllowPasswordManager-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- AllowPasswordManager-Applicability-End -->
 
 <!-- AllowPasswordManager-OmaUri-Begin -->
@@ -1029,7 +1029,7 @@ To verify AllowPasswordManager is set to 0 (not allowed):
 <!-- AllowPopups-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowPopups-Applicability-End -->
 
 <!-- AllowPopups-OmaUri-Begin -->
@@ -1107,7 +1107,7 @@ To verify AllowPopups is set to 0 (not allowed):
 <!-- AllowPrelaunch-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- AllowPrelaunch-Applicability-End -->
 
 <!-- AllowPrelaunch-OmaUri-Begin -->
@@ -1177,7 +1177,7 @@ If you prevent pre-launch, Microsoft Edge won't pre-launch during Windows sign i
 <!-- AllowPrinting-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- AllowPrinting-Applicability-End -->
 
 <!-- AllowPrinting-OmaUri-Begin -->
@@ -1248,7 +1248,7 @@ If disabled, printing isn't allowed.
 <!-- AllowSavingHistory-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- AllowSavingHistory-Applicability-End -->
 
 <!-- AllowSavingHistory-OmaUri-Begin -->
@@ -1319,7 +1319,7 @@ If disabled, the browsing history stops saving and isn't visible in the History 
 <!-- AllowSearchEngineCustomization-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowSearchEngineCustomization-Applicability-End -->
 
 <!-- AllowSearchEngineCustomization-OmaUri-Begin -->
@@ -1396,7 +1396,7 @@ This setting can only be used with domain-joined or MDM-enrolled devices. For mo
 <!-- AllowSearchSuggestionsinAddressBar-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowSearchSuggestionsinAddressBar-Applicability-End -->
 
 <!-- AllowSearchSuggestionsinAddressBar-OmaUri-Begin -->
@@ -1469,7 +1469,7 @@ This policy setting lets you decide whether search suggestions appear in the Add
 <!-- AllowSideloadingOfExtensions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- AllowSideloadingOfExtensions-Applicability-End -->
 
 <!-- AllowSideloadingOfExtensions-OmaUri-Begin -->
@@ -1550,7 +1550,7 @@ Related policies:
 <!-- AllowSmartScreen-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowSmartScreen-Applicability-End -->
 
 <!-- AllowSmartScreen-OmaUri-Begin -->
@@ -1628,7 +1628,7 @@ To verify AllowSmartScreen is set to 0 (not allowed):
 <!-- AllowTabPreloading-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- AllowTabPreloading-Applicability-End -->
 
 <!-- AllowTabPreloading-OmaUri-Begin -->
@@ -1698,7 +1698,7 @@ If you prevent preloading, Microsoft Edge won't load the Start or New Tab page d
 <!-- AllowWebContentOnNewTabPage-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- AllowWebContentOnNewTabPage-Applicability-End -->
 
 <!-- AllowWebContentOnNewTabPage-OmaUri-Begin -->
@@ -1771,7 +1771,7 @@ This policy setting lets you configure what appears when Microsoft Edge opens a 
 <!-- AlwaysEnableBooksLibrary-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- AlwaysEnableBooksLibrary-Applicability-End -->
 
 <!-- AlwaysEnableBooksLibrary-OmaUri-Begin -->
@@ -1842,7 +1842,7 @@ This policy setting helps you to decide whether to make the Books tab visible, r
 <!-- ClearBrowsingDataOnExit-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- ClearBrowsingDataOnExit-Applicability-End -->
 
 <!-- ClearBrowsingDataOnExit-OmaUri-Begin -->
@@ -1920,7 +1920,7 @@ To verify whether browsing data is cleared on exit (ClearBrowsingDataOnExit is s
 <!-- ConfigureAdditionalSearchEngines-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- ConfigureAdditionalSearchEngines-Applicability-End -->
 
 <!-- ConfigureAdditionalSearchEngines-OmaUri-Begin -->
@@ -1987,7 +1987,7 @@ This setting can only be used with domain-joined or MDM-enrolled devices. For mo
 <!-- ConfigureFavoritesBar-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- ConfigureFavoritesBar-Applicability-End -->
 
 <!-- ConfigureFavoritesBar-OmaUri-Begin -->
@@ -2060,7 +2060,7 @@ If not configured, the favorites bar is hidden but is visible on the Start and N
 <!-- ConfigureHomeButton-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- ConfigureHomeButton-Applicability-End -->
 
 <!-- ConfigureHomeButton-OmaUri-Begin -->
@@ -2152,7 +2152,7 @@ Related policies:
 <!-- ConfigureKioskMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- ConfigureKioskMode-Applicability-End -->
 
 <!-- ConfigureKioskMode-OmaUri-Begin -->
@@ -2232,7 +2232,7 @@ If enabled and set to 1:
 <!-- ConfigureKioskResetAfterIdleTimeout-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- ConfigureKioskResetAfterIdleTimeout-Applicability-End -->
 
 <!-- ConfigureKioskResetAfterIdleTimeout-OmaUri-Begin -->
@@ -2299,7 +2299,7 @@ If you don't configure Microsoft Edge in assigned access, then this policy doesn
 <!-- ConfigureOpenMicrosoftEdgeWith-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- ConfigureOpenMicrosoftEdgeWith-Applicability-End -->
 
 <!-- ConfigureOpenMicrosoftEdgeWith-OmaUri-Begin -->
@@ -2393,7 +2393,7 @@ Related policies:
 <!-- ConfigureTelemetryForMicrosoft365Analytics-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- ConfigureTelemetryForMicrosoft365Analytics-Applicability-End -->
 
 <!-- ConfigureTelemetryForMicrosoft365Analytics-OmaUri-Begin -->
@@ -2465,7 +2465,7 @@ Default setting: Disabled or not configured (no data collected or sent)
 <!-- DisableLockdownOfStartPages-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DisableLockdownOfStartPages-Applicability-End -->
 
 <!-- DisableLockdownOfStartPages-OmaUri-Begin -->
@@ -2545,7 +2545,7 @@ Related policy:
 <!-- EnableExtendedBooksTelemetry-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- EnableExtendedBooksTelemetry-Applicability-End -->
 
 <!-- EnableExtendedBooksTelemetry-OmaUri-Begin -->
@@ -2616,7 +2616,7 @@ This policy setting lets you decide how much data to send to Microsoft about the
 <!-- EnterpriseModeSiteList-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- EnterpriseModeSiteList-Applicability-End -->
 
 <!-- EnterpriseModeSiteList-OmaUri-Begin -->
@@ -2677,7 +2677,7 @@ This policy setting lets you configure whether to use Enterprise Mode and the En
 <!-- EnterpriseSiteListServiceUrl-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- EnterpriseSiteListServiceUrl-Applicability-End -->
 
 <!-- EnterpriseSiteListServiceUrl-OmaUri-Begin -->
@@ -2720,7 +2720,7 @@ Important. Discontinued in Windows 10, version 1511. Use the Browser/EnterpriseM
 <!-- FirstRunURL-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- FirstRunURL-Applicability-End -->
 
 <!-- FirstRunURL-OmaUri-Begin -->
@@ -2764,7 +2764,7 @@ Configure first run URL.
 <!-- HomePages-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- HomePages-Applicability-End -->
 
 <!-- HomePages-OmaUri-Begin -->
@@ -2842,7 +2842,7 @@ Related policy:
 <!-- LockdownFavorites-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- LockdownFavorites-Applicability-End -->
 
 <!-- LockdownFavorites-OmaUri-Begin -->
@@ -2917,7 +2917,7 @@ Don't enable both this setting and the Keep favorites in sync between Internet E
 <!-- PreventAccessToAboutFlagsInMicrosoftEdge-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- PreventAccessToAboutFlagsInMicrosoftEdge-Applicability-End -->
 
 <!-- PreventAccessToAboutFlagsInMicrosoftEdge-OmaUri-Begin -->
@@ -2988,7 +2988,7 @@ This policy setting lets you decide whether employees can access the about:flags
 <!-- PreventCertErrorOverrides-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- PreventCertErrorOverrides-Applicability-End -->
 
 <!-- PreventCertErrorOverrides-OmaUri-Begin -->
@@ -3059,7 +3059,7 @@ If disabled or not configured, overriding certificate errors are allowed.
 <!-- PreventFirstRunPage-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- PreventFirstRunPage-Applicability-End -->
 
 <!-- PreventFirstRunPage-OmaUri-Begin -->
@@ -3130,7 +3130,7 @@ This policy setting lets you decide whether employees see Microsoft's First Run 
 <!-- PreventLiveTileDataCollection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- PreventLiveTileDataCollection-Applicability-End -->
 
 <!-- PreventLiveTileDataCollection-OmaUri-Begin -->
@@ -3201,7 +3201,7 @@ This policy lets you decide whether Microsoft Edge can gather Live Tile metadata
 <!-- PreventSmartScreenPromptOverride-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- PreventSmartScreenPromptOverride-Applicability-End -->
 
 <!-- PreventSmartScreenPromptOverride-OmaUri-Begin -->
@@ -3272,7 +3272,7 @@ This policy setting lets you decide whether employees can override the Windows D
 <!-- PreventSmartScreenPromptOverrideForFiles-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- PreventSmartScreenPromptOverrideForFiles-Applicability-End -->
 
 <!-- PreventSmartScreenPromptOverrideForFiles-OmaUri-Begin -->
@@ -3343,7 +3343,7 @@ This policy setting lets you decide whether employees can override the Windows D
 <!-- PreventTurningOffRequiredExtensions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- PreventTurningOffRequiredExtensions-Applicability-End -->
 
 <!-- PreventTurningOffRequiredExtensions-OmaUri-Begin -->
@@ -3413,7 +3413,7 @@ Related Documents:
 <!-- PreventUsingLocalHostIPAddressForWebRTC-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- PreventUsingLocalHostIPAddressForWebRTC-Applicability-End -->
 
 <!-- PreventUsingLocalHostIPAddressForWebRTC-OmaUri-Begin -->
@@ -3484,7 +3484,7 @@ This policy setting lets you decide whether an employee's LocalHost IP address s
 <!-- ProvisionFavorites-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- ProvisionFavorites-Applicability-End -->
 
 <!-- ProvisionFavorites-OmaUri-Begin -->
@@ -3556,7 +3556,7 @@ To define a default list of favorites:
 <!-- SendIntranetTraffictoInternetExplorer-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- SendIntranetTraffictoInternetExplorer-Applicability-End -->
 
 <!-- SendIntranetTraffictoInternetExplorer-OmaUri-Begin -->
@@ -3627,7 +3627,7 @@ This policy setting lets you decide whether your intranet sites should all open 
 <!-- SetDefaultSearchEngine-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- SetDefaultSearchEngine-Applicability-End -->
 
 <!-- SetDefaultSearchEngine-OmaUri-Begin -->
@@ -3702,7 +3702,7 @@ Employees can change the default search engine at any time, unless you disable t
 <!-- SetHomeButtonURL-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- SetHomeButtonURL-Applicability-End -->
 
 <!-- SetHomeButtonURL-OmaUri-Begin -->
@@ -3765,7 +3765,7 @@ Related policy: Configure Home Button.
 <!-- SetNewTabPageURL-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- SetNewTabPageURL-Applicability-End -->
 
 <!-- SetNewTabPageURL-OmaUri-Begin -->
@@ -3830,7 +3830,7 @@ Related policy: Allow web content on New Tab page.
 <!-- ShowMessageWhenOpeningSitesInInternetExplorer-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- ShowMessageWhenOpeningSitesInInternetExplorer-Applicability-End -->
 
 <!-- ShowMessageWhenOpeningSitesInInternetExplorer-OmaUri-Begin -->
@@ -3909,7 +3909,7 @@ Related policies:
 <!-- SyncFavoritesBetweenIEAndMicrosoftEdge-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- SyncFavoritesBetweenIEAndMicrosoftEdge-Applicability-End -->
 
 <!-- SyncFavoritesBetweenIEAndMicrosoftEdge-OmaUri-Begin -->
@@ -3988,7 +3988,7 @@ To verify that favorites are in synchronized between Internet Explorer and Micro
 <!-- UnlockHomeButton-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- UnlockHomeButton-Applicability-End -->
 
 <!-- UnlockHomeButton-OmaUri-Begin -->
@@ -4066,7 +4066,7 @@ Related policy:
 <!-- UseSharedFolderForBooks-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- UseSharedFolderForBooks-Applicability-End -->
 
 <!-- UseSharedFolderForBooks-OmaUri-Begin -->

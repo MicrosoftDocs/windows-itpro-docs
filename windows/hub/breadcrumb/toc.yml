@@ -37,21 +37,31 @@ items:
             tocHref: /windows/security/
             topicHref: /windows/security/
             items:
-              - name: Windows Hello for Business
-                tocHref: /windows/security/identity-protection/hello-for-business/
-                topicHref: /windows/security/identity-protection/hello-for-business/
+              - name: Hardware security
+                tocHref: /windows/security/hardware-security/
+                topicHref: /windows/security/hardware-security/
+              - name: Operating system security
+                tocHref: /windows/security/operating-system-security/
+                topicHref: /windows/security/operating-system-security/
+              - name: Identity protection
+                tocHref: /windows/security/identity-protection/
+                topicHref: /windows/security/identity-protection/
+              - name: Application security
+                tocHref: /windows/security/application-security/
+                topicHref: /windows/security/application-security/
+                items:
+                  - name: Application Control for Windows
+                    tocHref: /windows/security/application-security/application-control/windows-defender-application-control/
+                    topicHref: /windows/security/application-security/application-control/windows-defender-application-control/
+                  - name: Microsoft Defender Application Guard
+                    tocHref: /windows/security/application-security/application-isolation/microsoft-defender-application-guard/
+                    topicHref: /windows/security/application-security/application-isolation/microsoft-defender-application-guard/md-app-guard-overview
+              - name: Security foundations
+                tocHref: /windows/security/security-foundations/
+                topicHref: /windows/security/security-foundations/
               - name: Security auditing
                 tocHref: /windows/security/threat-protection/auditing/
                 topicHref: /windows/security/threat-protection/auditing/security-auditing-overview
-              - name: Microsoft Defender Application Guard
-                tocHref: /windows/security/threat-protection/microsoft-defender-application-guard/
-                topicHref: /windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview
               - name: Security policy settings
                 tocHref: /windows/security/threat-protection/security-policy-settings/
                 topicHref: /windows/security/threat-protection/security-policy-settings/security-policy-settings
-              - name: Application Control for Windows
-                tocHref: /windows/security/threat-protection/windows-defender-application-control/
-                topicHref: /windows/security/threat-protection/windows-defender-application-control/
-              - name: Windows Defender Firewall
-                tocHref: /windows/security/threat-protection/windows-firewall/
-                topicHref: /windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security

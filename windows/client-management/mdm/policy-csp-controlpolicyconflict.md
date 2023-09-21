@@ -4,7 +4,7 @@ description: Learn more about the ControlPolicyConflict Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -26,7 +26,7 @@ ms.topic: reference
 <!-- MDMWinsOverGP-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- MDMWinsOverGP-Applicability-End -->
 
 <!-- MDMWinsOverGP-OmaUri-Begin -->
@@ -44,7 +44,7 @@ If set to 1 then any MDM policy that's set that has an equivalent GP policy will
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
 > [!NOTE]
-> MDMWinsOverGP only applies to policies in Policy CSP. MDM policies win over Group Policies where applicable; not all Group Policies are available via MDM or CSP. It does not apply to other MDM settings with equivalent GP settings that are defined in other CSPs such as the [Defender CSP](defender-csp.md).
+> MDMWinsOverGP only applies to policies in Policy CSP. MDM policies win over Group Policies where applicable; not all Group Policies are available via MDM or CSP. It does not apply to other MDM settings with equivalent GP settings that are defined in other CSPs such as the [Defender CSP](defender-csp.md). Nor does it apply to the [Update Policy CSP](policy-csp-update.md) for managing Windows updates. 
 
 This policy is used to ensure that MDM policy wins over GP when policy is configured on MDM channel. The default value is 0. The MDM policies in Policy CSP will behave as described if this policy value is set 1.
 

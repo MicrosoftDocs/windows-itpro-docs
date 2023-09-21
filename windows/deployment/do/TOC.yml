@@ -13,6 +13,8 @@
     items:
     - name: Set up Delivery Optimization for Windows
       href: waas-delivery-optimization-setup.md
+    - name: Monitor Delivery Optimization for Windows
+      href: waas-delivery-optimization-monitor.md
     - name: Configure Delivery Optimization settings using Microsoft Intune
       href: /mem/intune/configuration/delivery-optimization-windows
   - name: Resources for Delivery Optimization
@@ -65,7 +67,7 @@
           href: mcc-isp-support.md
         - name: MCC for ISPs (early preview)
           href: mcc-isp.md
-- name: Content endpoints for Delivery Optimization and Microsoft Connected Cache
+- name: Endpoints for Microsoft Connected Cache content and services
   href: delivery-optimization-endpoints.md 
 
   

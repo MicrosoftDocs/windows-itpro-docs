@@ -1,12 +1,10 @@
 items:
   - name: Overview
-    href: ../identity.md
-  - name: Windows credential theft mitigation guide
-    href: windows-credential-theft-mitigation-guide-abstract.md
+    href: index.md
   - name: Passwordless sign-in
     items:
     - name: Windows Hello for Business 🔗
-      href: hello-for-business/index.yml
+      href: hello-for-business/index.md
     - name: Windows presence sensing
       href: https://support.microsoft.com/windows/wake-your-windows-11-pc-when-you-approach-82285c93-440c-4e15-9081-c9e38c1290bb
     - name: Windows Hello for Business Enhanced Security Sign-in (ESS) 🔗
@@ -24,26 +22,22 @@ items:
       href: enterprise-certificate-pinning.md
   - name: Advanced credential protection
     items:
-    - name: Account Lockout Policy 🔗
-      href: ../threat-protection/security-policy-settings/account-lockout-policy.md
-    - name: Technical support policy for lost or forgotten passwords
-      href: password-support-policy.md
     - name: Windows LAPS (Local Administrator Password Solution) 🔗
       displayName: LAPS
       href: /windows-server/identity/laps/laps-overview
-    - name: Enhanced Phishing Protection in Microsoft Defender SmartScreen
-      href: ../threat-protection/microsoft-defender-smartscreen/phishing-protection-microsoft-defender-smartscreen.md
+    - name: Account Lockout Policy 🔗
+      href: ../threat-protection/security-policy-settings/account-lockout-policy.md
+    - name: Enhanced phishing protection with SmartScreen
+      href: ../operating-system-security/virus-and-threat-protection/microsoft-defender-smartscreen/enhanced-phishing-protection.md
       displayName: EPP
     - name: Access Control
-      items:
-      - name: Overview
-        href: access-control/access-control.md
-        displayName: ACL
-      - name: Local Accounts
-        href: access-control/local-accounts.md
-    - name: Security policy settings 🔗
-      href: ../threat-protection/security-policy-settings/security-policy-settings.md
-    - name: Windows Defender Credential Guard
+      href: access-control/access-control.md
+      displayName: ACL/SACL
+    - name: Credential Guard
       href: credential-guard/toc.yml
-  - name: Windows Defender Remote Credential Guard
-    href: remote-credential-guard.md
+    - name: Remote Credential Guard
+      href: remote-credential-guard.md
+  - name: LSA Protection 🔗
+    href: /windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection
+  - name: Local Accounts
+    href: access-control/local-accounts.md

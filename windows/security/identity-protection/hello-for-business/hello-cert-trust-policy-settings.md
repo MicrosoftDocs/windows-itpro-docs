@@ -4,7 +4,7 @@ description: Configure Windows Hello for Business Policy settings for Windows He
 ms.collection: 
 - highpri
 - tier1
-ms.date: 12/12/2022
+ms.date: 09/07/2023
 ms.topic: tutorial
 ---
 # Configure Windows Hello for Business group policy settings - on-premises certificate Trust

@@ -4,7 +4,7 @@ description: Learn more about the Connectivity Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -28,7 +28,7 @@ ms.topic: reference
 <!-- AllowBluetooth-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowBluetooth-Applicability-End -->
 
 <!-- AllowBluetooth-OmaUri-Begin -->
@@ -65,7 +65,6 @@ Allows the user to enable Bluetooth or restrict access.
 | Value | Description |
 |:--|:--|
 | 0 | Disallow Bluetooth. If this is set to 0, the radio in the Bluetooth control panel will be grayed out and the user won't be able to turn Bluetooth on. |
-| 1 | Reserved. If this is set to 1, the radio in the Bluetooth control panel will be functional and the user will be able to turn Bluetooth on. |
 | 2 (Default) | Allow Bluetooth. If this is set to 2, the radio in the Bluetooth control panel will be functional and the user will be able to turn Bluetooth on. |
 <!-- AllowBluetooth-AllowedValues-End -->
 
@@ -81,7 +80,7 @@ Allows the user to enable Bluetooth or restrict access.
 <!-- AllowCellularData-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowCellularData-Applicability-End -->
 
 <!-- AllowCellularData-OmaUri-Begin -->
@@ -131,7 +130,7 @@ Allows the cellular data channel on the device. Device reboot isn't required to 
 <!-- AllowCellularDataRoaming-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowCellularDataRoaming-Applicability-End -->
 
 <!-- AllowCellularDataRoaming-OmaUri-Begin -->
@@ -206,7 +205,7 @@ To validate, the enterprise can confirm by observing the roaming enable switch i
 <!-- AllowConnectedDevices-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowConnectedDevices-Applicability-End -->
 
 <!-- AllowConnectedDevices-OmaUri-Begin -->
@@ -260,7 +259,7 @@ To validate, the enterprise can confirm by observing the roaming enable switch i
 <!-- AllowNFC-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowNFC-Applicability-End -->
 
 <!-- AllowNFC-OmaUri-Begin -->
@@ -309,7 +308,7 @@ This policy is deprecated.
 <!-- AllowPhonePCLinking-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- AllowPhonePCLinking-Applicability-End -->
 
 <!-- AllowPhonePCLinking-OmaUri-Begin -->
@@ -383,7 +382,7 @@ Device that has previously opt-in to MMX will also stop showing on the device li
 <!-- AllowUSBConnection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowUSBConnection-Applicability-End -->
 
 <!-- AllowUSBConnection-OmaUri-Begin -->
@@ -434,7 +433,7 @@ Device that has previously opt-in to MMX will also stop showing on the device li
 <!-- AllowVPNOverCellular-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowVPNOverCellular-Applicability-End -->
 
 <!-- AllowVPNOverCellular-OmaUri-Begin -->
@@ -483,7 +482,7 @@ Specifies what type of underlying connections VPN is allowed to use. Most restri
 <!-- AllowVPNRoamingOverCellular-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowVPNRoamingOverCellular-Applicability-End -->
 
 <!-- AllowVPNRoamingOverCellular-OmaUri-Begin -->
@@ -532,7 +531,7 @@ Prevents the device from connecting to VPN when the device roams over cellular n
 <!-- DiablePrintingOverHTTP-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- DiablePrintingOverHTTP-Applicability-End -->
 
 <!-- DiablePrintingOverHTTP-OmaUri-Begin -->
@@ -598,7 +597,7 @@ Also, see the "Web-based printing" policy setting in Computer Configuration/Admi
 <!-- DisableDownloadingOfPrintDriversOverHTTP-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- DisableDownloadingOfPrintDriversOverHTTP-Applicability-End -->
 
 <!-- DisableDownloadingOfPrintDriversOverHTTP-OmaUri-Begin -->
@@ -662,7 +661,7 @@ To set up HTTP printing, non-inbox drivers need to be downloaded over HTTP.
 <!-- DisableInternetDownloadForWebPublishingAndOnlineOrderingWizards-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- DisableInternetDownloadForWebPublishingAndOnlineOrderingWizards-Applicability-End -->
 
 <!-- DisableInternetDownloadForWebPublishingAndOnlineOrderingWizards-OmaUri-Begin -->
@@ -725,7 +724,7 @@ See the documentation for the web publishing and online ordering wizards for mor
 <!-- DisallowNetworkConnectivityActiveTests-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DisallowNetworkConnectivityActiveTests-Applicability-End -->
 
 <!-- DisallowNetworkConnectivityActiveTests-OmaUri-Begin -->
@@ -794,7 +793,7 @@ As part of determining the connectivity level, NCSI performs one of two active t
 <!-- HardenedUNCPaths-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- HardenedUNCPaths-Applicability-End -->
 
 <!-- HardenedUNCPaths-OmaUri-Begin -->
@@ -851,7 +850,7 @@ For more information, see [MS15-011: Vulnerability in Group Policy could allow r
 <!-- ProhibitInstallationAndConfigurationOfNetworkBridge-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- ProhibitInstallationAndConfigurationOfNetworkBridge-Applicability-End -->
 
 <!-- ProhibitInstallationAndConfigurationOfNetworkBridge-OmaUri-Begin -->

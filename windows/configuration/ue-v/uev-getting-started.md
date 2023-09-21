@@ -3,10 +3,12 @@ title: Get Started with UE-V
 description: Use the steps in this article to deploy User Experience Virtualization (UE-V) for the first time in a test environment.
 author: aczechowski
 ms.prod: windows-client
-ms.collection: tier3
+ms.collection:
+ - tier3
+ - must-keep
 ms.date: 03/08/2018
 ms.reviewer: 
-manager: dougeby
+manager: aaroncz
 ms.author: aaroncz
 ms.technology: itpro-configure
 ---

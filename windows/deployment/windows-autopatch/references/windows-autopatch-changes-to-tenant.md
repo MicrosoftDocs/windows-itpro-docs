@@ -1,7 +1,7 @@
 ---
 title: Changes made at tenant enrollment
 description: This reference article details the changes made to your tenant when enrolling into Windows Autopatch
-ms.date: 01/24/2023
+ms.date: 06/23/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: reference
@@ -10,6 +10,9 @@ author: tiaraquan
 ms.author: tiaraquan
 manager: dougeby
 ms.reviewer: hathind
+ms.collection:
+  - highpri
+  - tier1
 ---
 
 # Changes made at tenant enrollment
@@ -63,7 +66,7 @@ The following groups target Windows Autopatch configurations to devices and mana
 | Policy name | Policy description | Properties | Value |
 | ----- | ----- | ----- | ----- |
 | Windows Autopatch - Set MDM to Win Over GPO | Sets mobile device management (MDM) to win over GPO<p>Assigned to:<ul><li>Modern Workplace Devices-Windows Autopatch-Test</li><li>Modern Workplace Devices-Windows Autopatch-First</li><li>Modern Workplace Devices-Windows Autopatch-Fast</li><li>Modern Workplace Devices-Windows Autopatch-Broad</li></ul>| [MDM Wins Over GP](/windows/client-management/mdm/policy-csp-controlpolicyconflict#controlpolicyconflict-MDMWinsOverGP) | <ul><li>MDM policy is used</li><li>GP policy is blocked</li></ul> |
-| Windows Autopatch - Data Collection | Windows Autopatch and Telemetry settings processes diagnostic data from the Windows device.<p>Assigned to:<ul><li>Modern Workplace Devices-Windows Autopatch-Test</li><li>Modern Workplace Devices-Windows Autopatch-First</li><li>Modern Workplace Devices-Windows Autopatch-Fast</li><li>Modern Workplace Devices-Windows Autopatch-Broad</li></ul>|<ol><li>[Configure Telemetry Opt In Change Notification](/windows/client-management/mdm/policy-csp-system#system-configuretelemetryoptinchangenotification)</li><li>[Configure Telemetry Opt In Settings UX](/windows/client-management/mdm/policy-csp-system#system-configuretelemetryoptinsettingsux)</li><li>[Allow Telemetry](/windows/client-management/mdm/policy-csp-system#system-allowtelemetry)</li><li>[Limit Enhanced Diagnostic Data Windows Analytics](/windows/client-management/mdm/policy-csp-system#system-limitenhanceddiagnosticdatawindowsanalytics)</li><li>[Limit Dump Collection](/windows/client-management/mdm/policy-csp-system#system-limitdumpcollection)</li><li>[Limit Diagnostic Log Collection](/windows/client-management/mdm/policy-csp-system#system-limitdiagnosticlogcollection)</li></ol>|<ol><li>Enable telemetry change notifications</li><li>Enable Telemetry opt-in Settings</li><li>Full</li><li>Enabled</li><li>Enabled</li><li>Enabled</li></ol> |
+| Windows Autopatch - Data Collection | Windows Autopatch and Telemetry settings processes diagnostic data from the Windows device.<p>Assigned to:<ul><li>Modern Workplace Devices-Windows Autopatch-Test</li><li>Modern Workplace Devices-Windows Autopatch-First</li><li>Modern Workplace Devices-Windows Autopatch-Fast</li><li>Modern Workplace Devices-Windows Autopatch-Broad</li></ul>|<ol><li>[Allow Telemetry](/windows/client-management/mdm/policy-csp-system#system-allowtelemetry)</li><li>[Limit Enhanced Diagnostic Data Windows Analytics](/windows/client-management/mdm/policy-csp-system#system-limitenhanceddiagnosticdatawindowsanalytics)</li><li>[Limit Dump Collection](/windows/client-management/mdm/policy-csp-system#system-limitdumpcollection)</li><li>[Limit Diagnostic Log Collection](/windows/client-management/mdm/policy-csp-system#system-limitdiagnosticlogcollection)</li></ol>|<ol><li>Full</li><li>Enabled</li><li>Enabled</li><li>Enabled</li></ol> |
 
 ## Deployment rings for Windows 10 and later
 
@@ -105,7 +108,7 @@ The following groups target Windows Autopatch configurations to devices and mana
 
 | Policy name | Policy description | Properties | Value |
 | ----- | ----- | ----- | ----- |
-| Windows Autopatch - Office Configuration | Sets Office Update Channel to the Monthly Enterprise servicing branch.<p>Assigned to:<ol><li>Modern Workplace Devices-Windows Autopatch-Test</li><li>Modern Workplace Devices-Windows Autopatch-First</li><li>Modern Workplace Devices-Windows Autopatch-Fast</li><li>Modern Workplace Devices-Windows Autopatch-Broad</li></ol>|<ol><li>Enable Automatic Updates</li><li>Hide option to enable or disable updates</li><li>Update Channel</li><li>Channel Name (Device)</li><li>Hide Update Notifications</li><li>Update Path</li></ol> |<ol><li>Enabled</li><li>Enabled</li><li>Enabled</li><li>Monthly Enterprise Channel</li><li>Disabled</li><li>Enabled</li></ol> |
+| Windows Autopatch - Office Configuration | Sets Office Update Channel to the Monthly Enterprise servicing branch.<p>Assigned to:<ol><li>Modern Workplace Devices-Windows Autopatch-Test</li><li>Modern Workplace Devices-Windows Autopatch-First</li><li>Modern Workplace Devices-Windows Autopatch-Fast</li><li>Modern Workplace Devices-Windows Autopatch-Broad</li></ol>|<ol><li>Enable Automatic Updates</li><li>Hide option to enable or disable updates</li><li>Update Channel</li><li>Channel Name (Device)</li><li>Hide Update Notifications</li><li>Update Path</li><li>Location for updates (Device)</li></ol> |<ol><li>Enabled</li><li>Enabled</li><li>Enabled</li><li>Monthly Enterprise Channel</li><li>Disabled</li><li>Enabled</li><li>`http://officecdn.microsoft.com/pr/55336b82-a18d-4dd6-b5f6-9e5095c314a6`</li></ol> |
 | Windows Autopatch - Office Update Configuration [Test] | Sets the Office update deadline<p>Assigned to:<ol><li>Modern Workplace Devices-Windows Autopatch-Test</li></ol> |<ol><li>Delay downloading and installing updates for Office</li><li>Update Deadline</li></ol>|<ol><li>Enabled; `Days(Device) == 0 days`</li></li><li>Enabled; `Update Deadline(Device) == 7 days`</li></ol>|
 | Windows Autopatch - Office Update Configuration [First] | Sets the Office update deadline<p>Assigned to:<ol><li>Modern Workplace Devices-Windows Autopatch-First</li></ol> |<ol><li>Delay downloading and installing updates for Office</li><li>Update Deadline</li></ol> | <ol><li>Enabled; `Days(Device) == 0 days`</li><li>Enabled; `Update Deadline(Device) == 7 days`</li></ol>|
 | Windows Autopatch - Office Update Configuration [Fast] | Sets the Office update deadline<p>Assigned to:<ol><li>Modern Workplace Devices-Windows Autopatch-Fast</li></ol>|<ol><li>Delay downloading and installing updates for Office</li><li>Update Deadline</li></ol>| <ol><li>Enabled; `Days(Device) == 3 days`</li><li>Enabled; `Update Deadline(Device) == 7 days`</li></ol>|

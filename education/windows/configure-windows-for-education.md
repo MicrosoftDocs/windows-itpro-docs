@@ -139,7 +139,7 @@ Provide an ad-free experience that is a safer, more private search option for Kâ
 #### Azure AD and Office 365 Education tenant
 To suppress ads when searching with Bing on Microsoft Edge on any network, follow these steps:
 
-1. Ensure your Office 365 tenant is registered as an education tenant. For more information, see [Verify your Office 365 domain to prove education status](https://support.office.com/article/Verify-your-Office-365-domain-to-prove-ownership-nonprofit-or-education-status-or-to-activate-Yammer-87d1844e-aa47-4dc0-a61b-1b773fd4e590).
+1. Ensure your Office 365 tenant is registered as an education tenant. For more information, see [Verify your Office 365 domain to prove education status](https://support.office.com/article/Verify-your-Office-365-domain-to-prove-ownership-nonprofit-or-education-status-or-to-activate-viva-engage-87d1844e-aa47-4dc0-a61b-1b773fd4e590).
 2. Domain join the Windows 10 PCs to your Azure AD tenant (this tenant is the same as your Office 365 tenant).
 3. Configure **SetEduPolicies** according to one of the methods described in the previous sections in this topic.
 4. Have students sign in with their Azure AD identity, which is the same as your Office 365 identity, to use the PC.

@@ -317,7 +317,7 @@ The following image shows the SCRIL setting for a user in Active Directory Admin
 > 1. Enable the setting.
 > 1. Save changes again.
 >
-> When you upgrade the domain to Windows Server 2016 domain forest functional level or later, the domain controller automatically does this action for you.
+> When you upgrade the domain functional level to Windows Server 2016 or later, the domain controller automatically does this action for you.
 
 The following image shows the SCRIL setting for a user in Active Directory Administrative Center on Windows Server 2016:
 
@@ -337,6 +337,3 @@ In this configuration, passwords for SCRIL-configured users expire based on Acti
 > [!NOTE]
 > Some components within Windows 10, such as Data Protection APIs and NTLM authentication, still need artifacts of a user possessing a password. This configuration provides interoperability by reducing the usage surface while Microsoft continues to close the gaps to remove the password completely.
 
-## The road ahead
-
-The information presented here is just the beginning. We'll update this guide with improved tools, methods, and scenarios, like Azure AD joined and MDM managed environments. As we continue to invest in a password-less future, we would love to hear from you. Your feedback is important. Send us an email at [pwdlessQA@microsoft.com](mailto:pwdlessQA@microsoft.com?subject=Passwordless%20Feedback).

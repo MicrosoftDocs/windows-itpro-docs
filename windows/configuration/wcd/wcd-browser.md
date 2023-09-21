@@ -5,10 +5,11 @@ ms.prod: windows-client
 author: aczechowski
 ms.localizationpriority: medium
 ms.author: aaroncz
-ms.topic: article
+ms.topic: reference
+ms.collection: must-keep
 ms.date: 10/02/2018
 ms.reviewer: 
-manager: dougeby
+manager: aaroncz
 ms.technology: itpro-configure
 ---
 
@@ -81,7 +82,7 @@ Use *Default* to specify a name that matches one of the search providers you ent
 
 #### Specific region guidance
 
-Some countries require specific, default search providers. The following table lists the applicable countries and information for configuring the necessary search provider.
+Some countries/regions require specific, default search providers. The following table lists the applicable countries/regions and information for configuring the necessary search provider.
 
 >[!NOTE]
 >For Russia + Commonwealth of Independent States (CIS), the independent states consist of Russia, Ukraine, Georgia, The Republic of Azerbaijan, Republic Of Belarus, The Republic of Kazakhstan, The Kyrgyz Republic, The Republic of Moldova, The Republic of Tajikistan, The Republic of Armenia, Turkmenistan, The Republic of Uzbekistan, and Turkey.
