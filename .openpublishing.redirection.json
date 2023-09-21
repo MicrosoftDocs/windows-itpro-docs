@@ -12789,7 +12789,7 @@
         "source_path":  "windows/deployment/deploy-windows-mdt/simulate-a-windows-10-deployment-in-a-test-environment.md",
         "redirect_url":  "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/simulate-a-windows-10-deployment-in-a-test-environment",
         "redirect_document_id":  false
-     -},
+      },
       {
         "source_path":  "windows/deployment/deploy-windows-mdt/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit.md",
         "redirect_url":  "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-mdt/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit",
