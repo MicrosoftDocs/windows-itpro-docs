@@ -2,7 +2,6 @@
 title: BitLocker settings list 
 description: Learn about the settings to configure BitLocker.
 ms.collection: 
-  - highpri
   - tier1
 ms.topic: reference
 ms.date: 09/19/2023
@@ -10,91 +9,91 @@ ms.date: 09/19/2023
 
 # BitLocker settings list
 
-## TEST 1
-
-### Allow devices with Secure Boot and protected DMA ports to opt out of preboot PIN
-
-With this policy setting, it can be configured whether BitLocker requires additional authentication each time the computer starts and whether BitLocker will be used with a Trusted Platform Module (TPM). This policy setting is applied when BitLocker is turned on.
-
-|                  | Setting                                                                                                          |
-|------------------|------------------------------------------------------------------------------------------------------------------|
-| **CSP**          | ./[Device/User]/Vendor/MSFT/Policy/Config/Start/[HideCopilotButton](mdm/policy-csp-start.md#hidecopilotbutton)   |
-| **Group policy** | Computer or User Configuration > Administrative Templates > Start Menu and Taskbar > **Hide the Copilot button** |
-
-### Allow network unlock at startup
-
-With this policy setting, it can be configured whether BitLocker requires additional authentication each time the computer starts and whether BitLocker will be used with a Trusted Platform Module (TPM). This policy setting is applied when BitLocker is turned on.
-
-|                  | Setting                                                                                                          |
-|------------------|------------------------------------------------------------------------------------------------------------------|
-| **CSP**          | ./[Device/User]/Vendor/MSFT/Policy/Config/Start/[HideCopilotButton](mdm/policy-csp-start.md#hidecopilotbutton)   |
-| **Group policy** | Computer or User Configuration > Administrative Templates > Start Menu and Taskbar > **Hide the Copilot button** |
-
-### Require additional authentication at startup
-
-With this policy setting, it can be configured whether BitLocker requires additional authentication each time the computer starts and whether BitLocker will be used with a Trusted Platform Module (TPM). This policy setting is applied when BitLocker is turned on.
-
-|                  | Setting                                                                                                          |
-|------------------|------------------------------------------------------------------------------------------------------------------|
-| **CSP**          | ./[Device/User]/Vendor/MSFT/Policy/Config/Start/[HideCopilotButton](mdm/policy-csp-start.md#hidecopilotbutton)   |
-| **Group policy** | Computer or User Configuration > Administrative Templates > Start Menu and Taskbar > **Hide the Copilot button** |
-
-## TEST 2
-
-### Allow devices with Secure Boot and protected DMA ports to opt out of preboot PIN 1
-
-With this policy setting, it can be configured whether BitLocker requires additional authentication each time the computer starts and whether BitLocker will be used with a Trusted Platform Module (TPM). This policy setting is applied when BitLocker is turned on.
-
-#### [:::image type="icon" source="../../../images/icons/intune.svg"::: **Intune**](#tab/intune) 
-
-./[Device/User]/Vendor/MSFT/Policy/Config/Start/[HideCopilotButton](mdm/policy-csp-start.md#hidecopilotbutton)
-
-#### [:::image type="icon" source="../../../images/icons/group-policy.svg"::: **CSP**](#tab/csp)
-
-Computer or User Configuration > Administrative Templates > Start Menu and Taskbar > **Hide the Copilot button**
-
----
-
-### Allow network unlock at startup 1
-
-With this policy setting, it can be configured whether BitLocker requires additional authentication each time the computer starts and whether BitLocker will be used with a Trusted Platform Module (TPM). This policy setting is applied when BitLocker is turned on.
-
-#### [:::image type="icon" source="../../../images/icons/intune.svg"::: **Intune**](#tab/intune) 
-
-./[Device/User]/Vendor/MSFT/Policy/Config/Start/[HideCopilotButton](mdm/policy-csp-start.md#hidecopilotbutton)
-
-#### [:::image type="icon" source="../../../images/icons/group-policy.svg"::: **CSP**](#tab/csp)
-
-Computer or User Configuration > Administrative Templates > Start Menu and Taskbar > **Hide the Copilot button**
-
----
-
-### Require additional authentication at startup 1
-
-With this policy setting, it can be configured whether BitLocker requires additional authentication each time the computer starts and whether BitLocker will be used with a Trusted Platform Module (TPM). This policy setting is applied when BitLocker is turned on.
-
-#### [:::image type="icon" source="../../../images/icons/intune.svg"::: **Intune**](#tab/intune) 
-
-./[Device/User]/Vendor/MSFT/Policy/Config/Start/[HideCopilotButton](mdm/policy-csp-start.md#hidecopilotbutton)
-
-#### [:::image type="icon" source="../../../images/icons/group-policy.svg"::: **CSP**](#tab/csp)
-
-Computer or User Configuration > Administrative Templates > Start Menu and Taskbar > **Hide the Copilot button**
-
----
+This reference article describes the available settings to configure BitLocker via Microsoft Intune, CSP or group policies.
 
 ## TEST 3
 
 #### [:::image type="icon" source="images/locked-drive.svg"::: **Common settings**](#tab/common) 
 
-| Title | Description |
-|-|-|
-|Choose default folder for recovery password| This policy setting allows you to specify the default path that is displayed when the BitLocker Drive Encryption setup wizard prompts the user to enter the location of a folder in which to save the recovery password. This policy setting is applied when you turn on BitLocker.  If you enable this policy setting, you can specify the path that will be used as the default folder location when the user chooses the option to save the recovery password in a folder. You can specify either a fully qualified path or include the target computer's environment variables in the path. If the path is not valid, the BitLocker setup wizard will display the computer's top-level folder view.  If you disable or do not configure this policy setting, the BitLocker setup wizard will display the computer's top-level folder view when the user chooses the option to save the recovery password in a folder.  Note: This policy setting does not prevent the user from saving the recovery password in another folder.|
-|Choose drive encryption method and cipher strength| This policy setting allows you to configure the algorithm and cipher strength used by BitLocker Drive Encryption. This policy setting is applied when you turn on BitLocker. Changing the encryption method has no effect if the drive is already encrypted, or if encryption is in progress.  If you enable this policy setting you will be able to configure an encryption algorithm and key cipher strength for fixed data drives, operating system drives, and removable data drives individually. For fixed and operating system drives, we recommend that you use the XTS-AES algorithm. For removable drives, you should use AES-CBC 128-bit or AES-CBC 256-bit if the drive will be used in other devices that are not running Windows 10 (Version 1511).  If you disable or do not configure this policy setting, BitLocker will use AES with the same bit strength (128-bit or 256-bit) as the "Choose drive encryption method and cipher strength (Windows Vista, Windows Server 2008, Windows 7)" and "Choose drive encryption method and cipher strength" policy settings (in that order), if they are set. If none of the policies are set, BitLocker will use the default encryption method of XTS-AES 128-bit or the encryption method specified by the setup script." |
+- [Choose default folder for recovery password](#choose-default-folder-for-recovery-password)
+- [Choose drive encryption method and cipher strength](#choose-drive-encryption-method-and-cipher-strength)
+- [Disable new DMA devices when this computer is locked](#disable-new-dma-devices-when-this-computer-is-locked)
+- [Prevent memory overwrite on restart](#prevent-memory-overwrite-on-restart)
+- [Provide the unique identifiers for your organization](#provide-the-unique-identifiers-for-your-organization)
+- [Validate smart card certificate usage rule compliance](#validate-smart-card-certificate-usage-rule-compliance)
+
+### Choose default folder for recovery password
+
+Specify the default path that is displayed when the *BitLocker Drive Encryption setup wizard* prompts the user to enter the location of a folder in which to save the recovery password. You can specify either a fully qualified path or include the target computer's environment variables in the path:
+
+- If the path is not valid, the BitLocker setup wizard will display the computer's top-level folder view
+- If you disable or do not configure this policy setting, the BitLocker setup wizard will display the computer's top-level folder view when the user chooses the option to save the recovery password in a folder
+
+> [!NOTE]
+> This policy setting does not prevent the user from saving the recovery password in another folder.
+
+| Configuration tool | Path |
+|--|--|
+| Intune settings catalog | Not available |
+| CSP | Not available |
+| Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** |
+
+### Choose drive encryption method and cipher strength 🟢
+
+With this policy you can configure an encryption algorithm and key cipher strength for fixed data drives, operating system drives, and removable data drives individually.
+Recommended settings:
+
+- For fixed and operating system drives: XTS-AES algorithm
+- For removable drives: AES-CBC 128-bit or AES-CBC 256-bit
+
+> [!NOTE]
+> This policy setting is applied when you turn on BitLocker. Changing the encryption method has no effect if the drive is already encrypted, or if encryption is in progress.
+
+If you disable or do not configure this policy setting, BitLocker uses the default encryption method of XTS-AES 128-bit.
+
+| Configuration tool | Path |
+|--|--|
+| Intune settings catalog | Not available |
+| CSP | Not available |
+| Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** |
+
+### Disable new DMA devices when this computer is locked
+This policy setting allows you to block direct memory access (DMA) for all Thunderbolt hot pluggable PCI downstream ports until a user logs into Windows. Once a user logs in, Windows will enumerate the PCI devices connected to the host Thunderbolt PCI ports. Every time the user locks the machine, DMA will be blocked on hot plug Thunderbolt PCI ports with no children devices, until the user logs in again. Devices which were already enumerated when the machine was unlocked will continue to function until unplugged or the system is rebooted or hibernated. This policy setting is only enforced when BitLocker or device encryption is enabled.  Note: Some PCs may not be compatible with this policy if the system firmware enables DMA for newly attached Thunderbolt devices before exposing the new devices to Windows.
+
+| Configuration tool | Path |
+|--|--|
+| Intune settings catalog | Not available |
+| CSP | Not available |
+| Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** |
+
+### Prevent memory overwrite on restart
+This policy setting controls computer restart performance at the risk of exposing BitLocker secrets. This policy setting is applied when you turn on BitLocker. BitLocker secrets include key material used to encrypt data. This policy setting applies only when BitLocker protection is enabled.  If you enable this policy setting, memory will not be overwritten when the computer restarts. Preventing memory overwrite may improve restart performance but will increase the risk of exposing BitLocker secrets.  If you disable or do not configure this policy setting, BitLocker secrets are removed from memory when the computer restarts.
+
+| Configuration tool | Path |
+|--|--|
+| Intune settings catalog | Not available |
+| CSP | Not available |
+| Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** |
+
+### Provide the unique identifiers for your organization
+This policy setting allows you to associate unique organizational identifiers to a new drive that is enabled with BitLocker. These identifiers are stored as the identification field and allowed identification field. The identification field allows you to associate a unique organizational identifier to BitLocker-protected drives. This identifier is automatically added to new BitLocker-protected drives and can be updated on existing BitLocker-protected drives using the manage-bde command-line tool. An identification field is required for management of certificate-based data recovery agents on BitLocker-protected drives and for potential updates to the BitLocker To Go Reader. BitLocker will only manage and update data recovery agents when the identification field on the drive matches the value configured in the identification field. In a similar manner, BitLocker will only update the BitLocker To Go Reader when the identification field on the drive matches the value configured for the identification field.  The allowed identification field is used in combination with the "Deny write access to removable drives not protected by BitLocker" policy setting to help control the use of removable drives in your organization. It is a comma separated list of identification fields from your organization or other external organizations.  You can configure the identification fields on existing drives by using manage-bde.exe.  If you enable this policy setting, you can configure the identification field on the BitLocker-protected drive and any allowed identification field used by your organization.  When a BitLocker-protected drive is mounted on another BitLocker-enabled computer the identification field and allowed identification field will be used to determine whether the drive is from an outside organization.  If you disable or do not configure this policy setting, the identification field is not required.  Note: Identification fields are required for management of certificate-based data recovery agents on BitLocker-protected drives. BitLocker will only manage and update certificate-based data recovery agents when the identification field is present on a drive and is identical to the value configured on the computer. The identification field can be any value of 260 characters or fewer.
+
+| Configuration tool | Path |
+|--|--|
+| Intune settings catalog | Not available |
+| CSP | Not available |
+| Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** |
+
+### Validate smart card certificate usage rule compliance
+This policy setting allows you to associate an object identifier from a smart card certificate to a BitLocker-protected drive. This policy setting is applied when you turn on BitLocker.  The object identifier is specified in the enhanced key usage (EKU) of a certificate.  BitLocker can identify which certificates may be used to authenticate a user certificate to a BitLocker-protected drive by matching the object identifier in the certificate with the object identifier that is defined by this policy setting.  Default object identifier is 1.3.6.1.4.1.311.67.1.1  Note:  BitLocker does not require that a certificate have an EKU attribute, but if one is configured for the certificate it must be set to an object identifier (OID) that matches the OID configured for BitLocker.  If you enable this policy setting, the object identifier specified in the "Object identifier" box must match the object identifier in the smart card certificate.  If you disable or do not configure this policy setting, a default object identifier is used.
+
+| Configuration tool | Path |
+|--|--|
+| Intune settings catalog | Not available |
+| CSP | Not available |
+| Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** |
 
 #### [:::image type="icon" source="images/os-drive.svg"::: **OS data drive**](#tab/os)
-
-## OS data drive policies
 
 Here's a list of BitLocker policies applicable to the OS data drive:
 
@@ -118,7 +117,7 @@ Here's a list of BitLocker policies applicable to the OS data drive:
 
 | Title | Description |
 |-|-|
-|Choose default folder for recovery password| This policy setting allows you to specify the default path that is displayed when the BitLocker Drive Encryption setup wizard prompts the user to enter the location of a folder in which to save the recovery password. This policy setting is applied when you turn on BitLocker.  If you enable this policy setting, you can specify the path that will be used as the default folder location when the user chooses the option to save the recovery password in a folder. You can specify either a fully qualified path or include the target computer's environment variables in the path. If the path is not valid, the BitLocker setup wizard will display the computer's top-level folder view.  If you disable or do not configure this policy setting, the BitLocker setup wizard will display the computer's top-level folder view when the user chooses the option to save the recovery password in a folder.  Note: This policy setting does not prevent the user from saving the recovery password in another folder.|
+|### Choose default folder for recovery password| This policy setting allows you to specify the default path that is displayed when the BitLocker Drive Encryption setup wizard prompts the user to enter the location of a folder in which to save the recovery password. This policy setting is applied when you turn on BitLocker.  If you enable this policy setting, you can specify the path that will be used as the default folder location when the user chooses the option to save the recovery password in a folder. You can specify either a fully qualified path or include the target computer's environment variables in the path. If the path is not valid, the BitLocker setup wizard will display the computer's top-level folder view.  If you disable or do not configure this policy setting, the BitLocker setup wizard will display the computer's top-level folder view when the user chooses the option to save the recovery password in a folder.  Note: This policy setting does not prevent the user from saving the recovery password in another folder.|
 |Choose drive encryption method and cipher strength| This policy setting allows you to configure the algorithm and cipher strength used by BitLocker Drive Encryption. This policy setting is applied when you turn on BitLocker. Changing the encryption method has no effect if the drive is already encrypted, or if encryption is in progress.  If you enable this policy setting you will be able to configure an encryption algorithm and key cipher strength for fixed data drives, operating system drives, and removable data drives individually. For fixed and operating system drives, we recommend that you use the XTS-AES algorithm. For removable drives, you should use AES-CBC 128-bit or AES-CBC 256-bit if the drive will be used in other devices that are not running Windows 10 (Version 1511).  If you disable or do not configure this policy setting, BitLocker will use AES with the same bit strength (128-bit or 256-bit) as the "Choose drive encryption method and cipher strength (Windows Vista, Windows Server 2008, Windows 7)" and "Choose drive encryption method and cipher strength" policy settings (in that order), if they are set. If none of the policies are set, BitLocker will use the default encryption method of XTS-AES 128-bit or the encryption method specified by the setup script." |
 
 #### [:::image type="icon" source="images/unlocked-drive.svg"::: **Fixed data drive**](#tab/fixed)
@@ -761,20 +760,6 @@ The options for choosing property settings that control how users can configure 
 - **Allow users to apply BitLocker protection on removable data drives**   Enables the user to run the BitLocker Setup Wizard on a removable data drive.
 
 - **Allow users to suspend and decrypt BitLocker on removable data drives**   Enables the user to remove BitLocker from the drive or to suspend the encryption while performing maintenance.
-
-### Choose drive encryption method and cipher strength
-
-This policy setting is used to control the encryption method and cipher strength.
-
-|  Item  | Info |
-|:---|:---|
-|**Policy description**|With this policy setting, it can be controlled the encryption method and strength for drives.|
-|**Introduced**|Windows Server 2012 and Windows 8|
-|**Drive type**|All drives|
-|**Policy path**|*Computer Configuration* > *Administrative Templates* > *Windows Components* > *BitLocker Drive Encryption*|
-|**Conflicts**|None|
-|**When enabled**|An encryption algorithm and key cipher strength for BitLocker can be chosen to use to encrypt drives.|
-|**When disabled or not configured**|Beginning with Windows 10, version 1511,  BitLocker uses the default encryption method of XTS-AES 128-bit or the encryption method that is specified by the setup script.
 
 #### Reference: Choose drive encryption method and cipher strength
 
