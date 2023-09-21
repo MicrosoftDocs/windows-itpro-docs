@@ -10,6 +10,7 @@ manager: laurawi
 ms.date: 09/20/2023
 ms.topic: conceptual
 hideEdit: true
+layout: ContentPage
 ---
 
 # COPILOT IN WINDOWS (PREVIEW) SUPPLEMENTAL TERMS
