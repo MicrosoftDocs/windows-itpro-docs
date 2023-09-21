@@ -1926,9 +1926,9 @@ For more information about AllowNewsAndInterests and the “Allow widgets” pol
 
 ### 33. Recommendations
 
-The Recommended section on the Start menu shows apps and files that were recently added or opened.
+The Recommended section on the Start menu displays a list of recommended apps and files.
 
-To turn off Recommendations, you can use any of the following methods:
+To turn off these recommendations, you can use any of the following methods:
 
 - In Group Policy, set the "Remove Recommended from Start menu" policy to Enabled under **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar**
 - In an MDM solution, such as Microsoft Intune, you can use the [HideRecentJumplists](/windows/client-management/mdm/policy-csp-start#hiderecentjumplists) setting in the Start Policy configuration service provider (CSP).
