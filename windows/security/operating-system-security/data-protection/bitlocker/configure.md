@@ -14,18 +14,23 @@ This reference article describes the available settings to configure BitLocker v
 The list of settings is sorted alphabetically and organized in four tabs:
 
 - **Common settings** lists the settings that apply to all BitLocker-protected drives
-- **OS data drive** lists the settings applicable to the drive where Windows is installed
-- **Fixed data drive** lists the settings applicable to any local drives, except the operating system drive
-- **Removable data drive** lists the settings applicable to any removable drives
+- **Operating system drive** lists the settings applicable to the drive where Windows is installed
+- **Fixed data drives** lists the settings applicable to any local drives, except the operating system drive
+- **Removable data drives** lists the settings applicable to any removable drives
+
+> [!NOTE]
+> Settings are enforced only at the time encryption is started. Encryption isn't restarted with settings changes.
 
 #### [:::image type="icon" source="images/locked-drive.svg"::: **Common settings**](#tab/common)
 
-- [Choose default folder for recovery password](#choose-default-folder-for-recovery-password)
-- [Choose drive encryption method and cipher strength](#choose-drive-encryption-method-and-cipher-strength)
-- [Disable new DMA devices when this computer is locked](#disable-new-dma-devices-when-this-computer-is-locked)
-- [Prevent memory overwrite on restart](#prevent-memory-overwrite-on-restart)
-- [Provide the unique identifiers for your organization](#provide-the-unique-identifiers-for-your-organization)
-- [Validate smart card certificate usage rule compliance](#validate-smart-card-certificate-usage-rule-compliance)
+|Policy name| CSP | GPO |
+|-|-|-|
+|[Choose default folder for recovery password](#choose-default-folder-for-recovery-password)|✅|✅|
+|[Choose drive encryption method and cipher strength](#choose-drive-encryption-method-and-cipher-strength)|✅|✅|
+|[Disable new DMA devices when this computer is locked](#disable-new-dma-devices-when-this-computer-is-locked)|✅|✅|
+|[Prevent memory overwrite on restart](#prevent-memory-overwrite-on-restart)|✅|✅|
+|[Provide the unique identifiers for your organization](#provide-the-unique-identifiers-for-your-organization)|❌|✅|
+|[Validate smart card certificate usage rule compliance](#validate-smart-card-certificate-usage-rule-compliance)|✅|❌|
 
 ### Choose default folder for recovery password
 
@@ -98,7 +103,7 @@ This policy setting allows you to associate an object identifier from a smart ca
 | CSP | Not available |
 | Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** |
 
-#### [:::image type="icon" source="images/os-drive.svg"::: **OS data drive**](#tab/os)
+#### [:::image type="icon" source="images/os-drive.svg"::: **Operating system drive**](#tab/os)
 
 - Allow devices compliant with InstantGo or HSTI to opt out of pre-boot PIN.
 - Allow enhanced PINs for startup
@@ -254,7 +259,7 @@ This policy setting allows you to associate an object identifier from a smart ca
 | CSP | Not available |
 | Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Operating Sytem Drives** |
 
-#### [:::image type="icon" source="images/unlocked-drive.svg"::: **Fixed data drive**](#tab/fixed)
+#### [:::image type="icon" source="images/unlocked-drive.svg"::: **Fixed data drives**](#tab/fixed)
 
 - Choose how BitLocker-protected fixed drives can be recovered
 - Configure use of hardware-based encryption for fixed data drives
@@ -312,7 +317,7 @@ This policy setting allows you to associate an object identifier from a smart ca
 | CSP | Not available |
 | Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Fixed Data Drives** |
 
-#### [:::image type="icon" source="images/unlocked-drive.svg"::: **Removable data drive**](#tab/removable)
+#### [:::image type="icon" source="images/unlocked-drive.svg"::: **Removable data drives**](#tab/removable)
 
 - Choose how BitLocker-protected removable drives can be recovered
 - Configure use of hardware-based encryption for removable data drives
