@@ -63,7 +63,7 @@ A reboot isn't required for changes to this setting to take effect.
 
 Note to avoid unexpected disruptions this setting shouldn't be set to Block until appropriate mitigations have been performed, for example, patching of vulnerable TPMs.
 
-More information is available at [Update your (TPM) firmware](https://support.microsoft.com/windows/update-your-security-processor-tpm-firmware-94205cbc-a492-8d79-cc55-1ecd6b0a8022)
+For more information, see [Update your (TPM) firmware](https://support.microsoft.com/windows/update-your-security-processor-tpm-firmware-94205cbc-a492-8d79-cc55-1ecd6b0a8022).
 <!-- SamNGCKeyROCAValidation-Description-End -->
 
 <!-- SamNGCKeyROCAValidation-Editable-Begin -->
