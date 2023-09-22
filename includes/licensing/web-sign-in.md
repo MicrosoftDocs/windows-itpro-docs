@@ -1,19 +1,19 @@
 ---
 author: paolomatarazzo
 ms.author: paoloma
-ms.date: 08/02/2023
+ms.date: 09/18/2023
 ms.topic: include
 ---
 
 ## Windows edition and licensing requirements
 
-The following table lists the Windows editions that support Fast Identity Online (FIDO2) security key:
+The following table lists the Windows editions that support Web sign-in:
 
 |Windows Pro|Windows Enterprise|Windows Pro Education/SE|Windows Education|
 |:---:|:---:|:---:|:---:|
 |Yes|Yes|Yes|Yes|
 
-Fast Identity Online (FIDO2) security key license entitlements are granted by the following licenses:
+Web sign-in license entitlements are granted by the following licenses:
 
 |Windows Pro/Pro Education/SE|Windows Enterprise E3|Windows Enterprise E5|Windows Education A3|Windows Education A5|
 |:---:|:---:|:---:|:---:|:---:|

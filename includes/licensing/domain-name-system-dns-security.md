@@ -1,19 +1,19 @@
 ---
 author: paolomatarazzo
 ms.author: paoloma
-ms.date: 08/02/2023
+ms.date: 09/18/2023
 ms.topic: include
 ---
 
 ## Windows edition and licensing requirements
 
-The following table lists the Windows editions that support Azure AD join, Active Directory domain join, and Hybrid Azure AD join with single sign-on (SSO):
+The following table lists the Windows editions that support Domain Name System (DNS) security:
 
 |Windows Pro|Windows Enterprise|Windows Pro Education/SE|Windows Education|
 |:---:|:---:|:---:|:---:|
 |Yes|Yes|Yes|Yes|
 
-Azure AD join, Active Directory domain join, and Hybrid Azure AD join with single sign-on (SSO) license entitlements are granted by the following licenses:
+Domain Name System (DNS) security license entitlements are granted by the following licenses:
 
 |Windows Pro/Pro Education/SE|Windows Enterprise E3|Windows Enterprise E5|Windows Education A3|Windows Education A5|
 |:---:|:---:|:---:|:---:|:---:|
