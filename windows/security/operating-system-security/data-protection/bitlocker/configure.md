@@ -23,6 +23,8 @@ The list of settings is sorted alphabetically and organized in four tabs:
 
 #### [:::image type="icon" source="images/locked-drive.svg"::: **Common settings**](#tab/common)
 
+The following table lists the BitLocker policies applicable to all drive types, indicating if they're applicable via configuration service provider (CSP) and/or group policy (GPO). Select the policy name for more details.
+
 |Policy name| CSP | GPO |
 |-|-|-|
 |[Choose default folder for recovery password](#choose-default-folder-for-recovery-password)|✅|✅|
@@ -44,11 +46,10 @@ Specify the default path that is displayed when the *BitLocker Drive Encryption 
 
 | Configuration tool | Path |
 |--|--|
-| Intune settings catalog | Not available |
 | CSP | Not available |
 | Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** |
 
-### Choose drive encryption method and cipher strength 🟢
+### Choose drive encryption method and cipher strength
 
 With this policy you can configure an encryption algorithm and key cipher strength for fixed data drives, operating system drives, and removable data drives individually.
 Recommended settings:
@@ -63,7 +64,6 @@ If you disable or do not configure this policy setting, BitLocker uses the defau
 
 | Configuration tool | Path |
 |--|--|
-| Intune settings catalog | Not available |
 | CSP | Not available |
 | Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** |
 
@@ -72,7 +72,6 @@ This policy setting allows you to block direct memory access (DMA) for all Thun
 
 | Configuration tool | Path |
 |--|--|
-| Intune settings catalog | Not available |
 | CSP | Not available |
 | Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** |
 
@@ -81,7 +80,6 @@ This policy setting controls computer restart performance at the risk of exposin
 
 | Configuration tool | Path |
 |--|--|
-| Intune settings catalog | Not available |
 | CSP | Not available |
 | Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** |
 
@@ -90,7 +88,6 @@ This policy setting allows you to associate unique organizational identifiers to
 
 | Configuration tool | Path |
 |--|--|
-| Intune settings catalog | Not available |
 | CSP | Not available |
 | Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** |
 
@@ -99,35 +96,35 @@ This policy setting allows you to associate an object identifier from a smart ca
 
 | Configuration tool | Path |
 |--|--|
-| Intune settings catalog | Not available |
 | CSP | Not available |
 | Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** |
 
 #### [:::image type="icon" source="images/os-drive.svg"::: **Operating system drive**](#tab/os)
 
-- Allow devices compliant with InstantGo or HSTI to opt out of pre-boot PIN.
-- Allow enhanced PINs for startup
-- Allow network unlock at startup
-- Allow Secure Boot for integrity validation
-- Choose how BitLocker-protected operating system drives can be recovered
-- Configure minimum PIN length for startup
-- Configure pre-boot recovery message and URL
-- Configure TPM platform validation profile for BIOS-based firmware configurations
-- Configure TPM platform validation profile for native UEFI firmware configurations
-- Configure use of hardware-based encryption for operating system drives
-- Configure use of passwords for operating system drives
-- Disallow standard users from changing the PIN or password
-- Enable use of BitLocker authentication requiring preboot keyboard input on slates
-- Enforce drive encryption type on operating system drives
-- Require additional authentication at startup
-- Reset platform validation data after BitLocker recovery
-- Use enhanced Boot Configuration Data validation profile
+|Policy name| CSP | GPO |
+|-|-|-|
+|Allow devices compliant with InstantGo or HSTI to opt out of pre-boot PIN|||
+|Allow enhanced PINs for startup|||
+|Allow network unlock at startup|||
+|Allow Secure Boot for integrity validation|||
+|Choose how BitLocker-protected operating system drives can be recovered|||
+|Configure minimum PIN length for startup|||
+|Configure pre-boot recovery message and URL|||
+|Configure TPM platform validation profile for BIOS-based firmware configurations|||
+|Configure TPM platform validation profile for native UEFI firmware configurations|||
+|Configure use of hardware-based encryption for operating system drives|||
+|Configure use of passwords for operating system drives|||
+|Disallow standard users from changing the PIN or password|||
+|Enable use of BitLocker authentication requiring preboot keyboard input on slates|||
+|Enforce drive encryption type on operating system drives|||
+|Require additional authentication at startup|||
+|Reset platform validation data after BitLocker recovery|||
+|Use enhanced Boot Configuration Data validation profile|||
 
 ### Allow devices compliant with InstantGo or HSTI to opt out of pre-boot PIN
 
 | Configuration tool | Path |
 |--|--|
-| Intune settings catalog | Not available |
 | CSP | Not available |
 | Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Operating Sytem Drives** |
 
@@ -135,7 +132,6 @@ This policy setting allows you to associate an object identifier from a smart ca
 
 | Configuration tool | Path |
 |--|--|
-| Intune settings catalog | Not available |
 | CSP | Not available |
 | Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Operating Sytem Drives** |
 
@@ -143,7 +139,6 @@ This policy setting allows you to associate an object identifier from a smart ca
 
 | Configuration tool | Path |
 |--|--|
-| Intune settings catalog | Not available |
 | CSP | Not available |
 | Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Operating Sytem Drives** |
 
@@ -151,7 +146,6 @@ This policy setting allows you to associate an object identifier from a smart ca
 
 | Configuration tool | Path |
 |--|--|
-| Intune settings catalog | Not available |
 | CSP | Not available |
 | Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Operating Sytem Drives** |
 
@@ -159,7 +153,6 @@ This policy setting allows you to associate an object identifier from a smart ca
 
 | Configuration tool | Path |
 |--|--|
-| Intune settings catalog | Not available |
 | CSP | Not available |
 | Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Operating Sytem Drives** |
 
@@ -167,7 +160,6 @@ This policy setting allows you to associate an object identifier from a smart ca
 
 | Configuration tool | Path |
 |--|--|
-| Intune settings catalog | Not available |
 | CSP | Not available |
 | Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Operating Sytem Drives** |
 
@@ -175,7 +167,6 @@ This policy setting allows you to associate an object identifier from a smart ca
 
 | Configuration tool | Path |
 |--|--|
-| Intune settings catalog | Not available |
 | CSP | Not available |
 | Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Operating Sytem Drives** |
 
@@ -183,7 +174,6 @@ This policy setting allows you to associate an object identifier from a smart ca
 
 | Configuration tool | Path |
 |--|--|
-| Intune settings catalog | Not available |
 | CSP | Not available |
 | Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Operating Sytem Drives** |
 
@@ -191,7 +181,6 @@ This policy setting allows you to associate an object identifier from a smart ca
 
 | Configuration tool | Path |
 |--|--|
-| Intune settings catalog | Not available |
 | CSP | Not available |
 | Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Operating Sytem Drives** |
 
@@ -199,7 +188,6 @@ This policy setting allows you to associate an object identifier from a smart ca
 
 | Configuration tool | Path |
 |--|--|
-| Intune settings catalog | Not available |
 | CSP | Not available |
 | Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Operating Sytem Drives** |
 
@@ -207,7 +195,6 @@ This policy setting allows you to associate an object identifier from a smart ca
 
 | Configuration tool | Path |
 |--|--|
-| Intune settings catalog | Not available |
 | CSP | Not available |
 | Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Operating Sytem Drives** |
 
@@ -215,7 +202,6 @@ This policy setting allows you to associate an object identifier from a smart ca
 
 | Configuration tool | Path |
 |--|--|
-| Intune settings catalog | Not available |
 | CSP | Not available |
 | Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Operating Sytem Drives** |
 
@@ -223,7 +209,6 @@ This policy setting allows you to associate an object identifier from a smart ca
 
 | Configuration tool | Path |
 |--|--|
-| Intune settings catalog | Not available |
 | CSP | Not available |
 | Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Operating Sytem Drives** |
 
@@ -231,7 +216,6 @@ This policy setting allows you to associate an object identifier from a smart ca
 
 | Configuration tool | Path |
 |--|--|
-| Intune settings catalog | Not available |
 | CSP | Not available |
 | Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Operating Sytem Drives** |
 
@@ -239,7 +223,6 @@ This policy setting allows you to associate an object identifier from a smart ca
 
 | Configuration tool | Path |
 |--|--|
-| Intune settings catalog | Not available |
 | CSP | Not available |
 | Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Operating Sytem Drives** |
 
@@ -247,7 +230,6 @@ This policy setting allows you to associate an object identifier from a smart ca
 
 | Configuration tool | Path |
 |--|--|
-| Intune settings catalog | Not available |
 | CSP | Not available |
 | Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Operating Sytem Drives** |
 
@@ -255,25 +237,25 @@ This policy setting allows you to associate an object identifier from a smart ca
 
 | Configuration tool | Path |
 |--|--|
-| Intune settings catalog | Not available |
 | CSP | Not available |
 | Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Operating Sytem Drives** |
 
 #### [:::image type="icon" source="images/unlocked-drive.svg"::: **Fixed data drives**](#tab/fixed)
 
-- Choose how BitLocker-protected fixed drives can be recovered
-- Configure use of hardware-based encryption for fixed data drives
-- Configure use of passwords for fixed data drives
-- Configure use of smart cards on fixed data drives
-- Deny write access to fixed drives not protected by BitLocker
-- Enforce drive encryption type on fixed data drives
+|Policy name| CSP | GPO |
+|-|-|-|
+|Choose how BitLocker-protected fixed drives can be recovered|||
+|Configure use of hardware-based encryption for fixed data drives|||
+|Configure use of passwords for fixed data drives|||
+|Configure use of smart cards on fixed data drives|||
+|Deny write access to fixed drives not protected by BitLocker|||
+|Enforce drive encryption type on fixed data drives|||
 
 
 ### Choose how BitLocker-protected fixed drives can be recovered
 
 | Configuration tool | Path |
 |--|--|
-| Intune settings catalog | Not available |
 | CSP | Not available |
 | Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Fixed Data Drives** |
 
@@ -281,7 +263,6 @@ This policy setting allows you to associate an object identifier from a smart ca
 
 | Configuration tool | Path |
 |--|--|
-| Intune settings catalog | Not available |
 | CSP | Not available |
 | Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Fixed Data Drives** |
 
@@ -289,7 +270,6 @@ This policy setting allows you to associate an object identifier from a smart ca
 
 | Configuration tool | Path |
 |--|--|
-| Intune settings catalog | Not available |
 | CSP | Not available |
 | Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Fixed Data Drives** |
 
@@ -297,7 +277,6 @@ This policy setting allows you to associate an object identifier from a smart ca
 
 | Configuration tool | Path |
 |--|--|
-| Intune settings catalog | Not available |
 | CSP | Not available |
 | Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Fixed Data Drives** |
 
@@ -305,7 +284,6 @@ This policy setting allows you to associate an object identifier from a smart ca
 
 | Configuration tool | Path |
 |--|--|
-| Intune settings catalog | Not available |
 | CSP | Not available |
 | Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Fixed Data Drives** |
 
@@ -313,25 +291,25 @@ This policy setting allows you to associate an object identifier from a smart ca
 
 | Configuration tool | Path |
 |--|--|
-| Intune settings catalog | Not available |
 | CSP | Not available |
 | Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Fixed Data Drives** |
 
 #### [:::image type="icon" source="images/unlocked-drive.svg"::: **Removable data drives**](#tab/removable)
 
-- Choose how BitLocker-protected removable drives can be recovered
-- Configure use of hardware-based encryption for removable data drives
-- Configure use of passwords for removable data drives
-- Configure use of smart cards on removable data drives
-- Control use of BitLocker on removable drives
-- Deny write access to removable drives not protected by BitLocker
-- Enforce drive encryption type on removable data drives
+|Policy name| CSP | GPO |
+|-|-|-|
+|Choose how BitLocker-protected removable drives can be recovered|||
+|Configure use of hardware-based encryption for removable data drives|||
+|Configure use of passwords for removable data drives|||
+|Configure use of smart cards on removable data drives|||
+|Control use of BitLocker on removable drives|||
+|Deny write access to removable drives not protected by BitLocker|||
+|Enforce drive encryption type on removable data drives|||
 
 ### Choose how BitLocker-protected removable drives can be recovered
 
 | Configuration tool | Path |
 |--|--|
-| Intune settings catalog | Not available |
 | CSP | Not available |
 | Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Removable Data Drives** |
 
@@ -339,7 +317,6 @@ This policy setting allows you to associate an object identifier from a smart ca
 
 | Configuration tool | Path |
 |--|--|
-| Intune settings catalog | Not available |
 | CSP | Not available |
 | Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Removable Data Drives** |
 
@@ -347,7 +324,6 @@ This policy setting allows you to associate an object identifier from a smart ca
 
 | Configuration tool | Path |
 |--|--|
-| Intune settings catalog | Not available |
 | CSP | Not available |
 | Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Removable Data Drives** |
 
@@ -355,7 +331,6 @@ This policy setting allows you to associate an object identifier from a smart ca
 
 | Configuration tool | Path |
 |--|--|
-| Intune settings catalog | Not available |
 | CSP | Not available |
 | Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Removable Data Drives** |
 
@@ -363,7 +338,6 @@ This policy setting allows you to associate an object identifier from a smart ca
 
 | Configuration tool | Path |
 |--|--|
-| Intune settings catalog | Not available |
 | CSP | Not available |
 | Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Removable Data Drives** |
 
@@ -371,7 +345,6 @@ This policy setting allows you to associate an object identifier from a smart ca
 
 | Configuration tool | Path |
 |--|--|
-| Intune settings catalog | Not available |
 | CSP | Not available |
 | Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Removable Data Drives** |
 
@@ -379,7 +352,6 @@ This policy setting allows you to associate an object identifier from a smart ca
 
 | Configuration tool | Path |
 |--|--|
-| Intune settings catalog | Not available |
 | CSP | Not available |
 | Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Removable Data Drives** |
 
