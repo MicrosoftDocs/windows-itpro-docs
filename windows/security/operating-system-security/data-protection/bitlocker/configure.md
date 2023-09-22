@@ -9,6 +9,10 @@ ms.date: 09/19/2023
 
 # BitLocker settings list
 
+[Allow enhanced PINs for startup](#allow-enhanced-pins-for-startup)
+[Allow network unlock at startup](#allow-network-unlock-at-startup)
+[Allow Secure Boot for integrity validation](#allow-secure-boot-for-integrity-validation)
+
 This reference article describes the available settings to configure BitLocker via Microsoft Intune, CSP, and group policies.
 
 The list of settings is sorted alphabetically and organized in four tabs:
@@ -104,9 +108,9 @@ This policy setting allows you to associate an object identifier from a smart ca
 |Policy name| CSP | GPO |
 |-|-|-|
 |Allow devices compliant with InstantGo or HSTI to opt out of pre-boot PIN|||
-|Allow enhanced PINs for startup|||
-|Allow network unlock at startup|||
-|Allow Secure Boot for integrity validation|||
+|[Allow enhanced PINs for startup](#allow-enhanced-pins-for-startup)|||
+|[Allow network unlock at startup](#allow-network-unlock-at-startup)|||
+|[Allow Secure Boot for integrity validation](#allow-secure-boot-for-integrity-validation)|||
 |Choose how BitLocker-protected operating system drives can be recovered|||
 |Configure minimum PIN length for startup|||
 |Configure pre-boot recovery message and URL|||
