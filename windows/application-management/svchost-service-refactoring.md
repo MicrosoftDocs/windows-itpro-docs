@@ -1,23 +1,20 @@
 ---
-title: Service Host service refactoring in Windows 10 version 1703
-description: Learn about the SvcHost Service Refactoring introduced in Windows 10 version 1703.
+title: Service host grouping in Windows 10
+description: Learn about the Service Host (SvcHost) service refactoring introduced in Windows 10 version 1703.
 author: aczechowski
 ms.author: aaroncz
 manager: aaroncz
 ms.date: 07/20/2017
-ms.topic: article
+ms.topic: concept-article
 ms.prod: windows-client
 ms.technology: itpro-apps
 ms.localizationpriority: medium
-ms.colletion: tier1
-ms.reviewer:
+ms.colletion: tier2
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
-# Changes to Service Host grouping in Windows 10
-
-**Applies to**:
-
-- Windows 10
+# Service host grouping in Windows 10
 
 The **Service Host (svchost.exe)** is a shared-service process that serves as a shell for loading services from DLL files. Services are organized into related host groups, and each group runs inside a different instance of the Service Host process. In this way, a problem in one instance doesn't affect other instances. Service Host groups are determined by combining the services with matching security requirements. For example:
 

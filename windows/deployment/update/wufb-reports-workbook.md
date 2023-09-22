@@ -1,20 +1,21 @@
 ---
 title: Use the workbook for Windows Update for Business reports
-manager: aaroncz
-description: How to use the Windows Update for Business reports workbook.
+titleSuffix: Windows Update for Business reports
+description: How to use the Windows Update for Business reports workbook from the Azure portal.
 ms.prod: windows-client
+ms.technology: itpro-updates
+ms.topic: conceptual
 author: mestew
 ms.author: mstewart
-ms.topic: article
+manager: aaroncz
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 ms.date: 06/23/2023
-ms.technology: itpro-updates
 ---
 
 # Windows Update for Business reports workbook
 <!-- MAX6325272, OS33771278 -->
-***(Applies to: Windows 11 & Windows 10)***
-
-
 [Windows Update for Business reports](wufb-reports-overview.md) presents information commonly needed by updates administrators in an easy-to-use format. Windows Update for Business reports uses [Azure Workbooks](/azure/azure-monitor/visualize/workbooks-getting-started) to give you a visual representation of your compliance data. The workbook is broken down into tab sections:
 
 - [Summary](#summary-tab)
