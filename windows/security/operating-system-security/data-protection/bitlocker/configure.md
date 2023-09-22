@@ -9,11 +9,16 @@ ms.date: 09/19/2023
 
 # BitLocker settings list
 
-This reference article describes the available settings to configure BitLocker via Microsoft Intune, CSP or group policies.
+This reference article describes the available settings to configure BitLocker via Microsoft Intune, CSP, and group policies.
 
-## TEST 3
+The list of settings is sorted alphabetically and organized in four tabs:
 
-#### [:::image type="icon" source="images/locked-drive.svg"::: **Common settings**](#tab/common) 
+- **Common settings** lists the settings that apply to all BitLocker-protected drives
+- **OS data drive** lists the settings applicable to the drive where Windows is installed
+- **Fixed data drive** lists the settings applicable to any local drives, except the operating system drive
+- **Removable data drive** lists the settings applicable to any removable drives
+
+#### [:::image type="icon" source="images/locked-drive.svg"::: **Common settings**](#tab/common)
 
 - [Choose default folder for recovery password](#choose-default-folder-for-recovery-password)
 - [Choose drive encryption method and cipher strength](#choose-drive-encryption-method-and-cipher-strength)
@@ -95,124 +100,288 @@ This policy setting allows you to associate an object identifier from a smart ca
 
 #### [:::image type="icon" source="images/os-drive.svg"::: **OS data drive**](#tab/os)
 
-Here's a list of BitLocker policies applicable to the OS data drive:
+- Allow devices compliant with InstantGo or HSTI to opt out of pre-boot PIN.
+- Allow enhanced PINs for startup
+- Allow network unlock at startup
+- Allow Secure Boot for integrity validation
+- Choose how BitLocker-protected operating system drives can be recovered
+- Configure minimum PIN length for startup
+- Configure pre-boot recovery message and URL
+- Configure TPM platform validation profile for BIOS-based firmware configurations
+- Configure TPM platform validation profile for native UEFI firmware configurations
+- Configure use of hardware-based encryption for operating system drives
+- Configure use of passwords for operating system drives
+- Disallow standard users from changing the PIN or password
+- Enable use of BitLocker authentication requiring preboot keyboard input on slates
+- Enforce drive encryption type on operating system drives
+- Require additional authentication at startup
+- Reset platform validation data after BitLocker recovery
+- Use enhanced Boot Configuration Data validation profile
 
-- [Allow devices compliant with InstantGo or HSTI to opt out of pre-boot PIN](#choose-how-bitlocker-protected-removable-drives-can-be-recovered)
-- [Allow enhanced PINs for startup](#choose-how-bitlocker-protected-removable-drives-can-be-recovered)
-- [Allow network unlock at startup](#choose-how-bitlocker-protected-removable-drives-can-be-recovered)
-- [Allow Secure Boot for integrity validation](#choose-how-bitlocker-protected-removable-drives-can-be-recovered)
-- [Choose how BitLocker-protected operating system drives can be recovered](#choose-how-bitlocker-protected-removable-drives-can-be-recovered)
-- [Configure minimum PIN length for startup](#choose-how-bitlocker-protected-removable-drives-can-be-recovered)
-- [Configure pre-boot recovery message and URL](#choose-how-bitlocker-protected-removable-drives-can-be-recovered)
-- [Configure TPM platform validation profile for BIOS-based firmware configurations](#choose-how-bitlocker-protected-removable-drives-can-be-recovered)
-- [Configure TPM platform validation profile for native UEFI firmware configurations](#choose-how-bitlocker-protected-removable-drives-can-be-recovered)
-- [Configure use of hardware-based encryption for operating system drives](#choose-how-bitlocker-protected-removable-drives-can-be-recovered)
-- [Configure use of passwords for operating system drives](#choose-how-bitlocker-protected-removable-drives-can-be-recovered)
-- [Disallow standard users from changing the PIN or password](#choose-how-bitlocker-protected-removable-drives-can-be-recovered)
-- [Enable use of BitLocker authentication requiring preboot keyboard input on slates](#choose-how-bitlocker-protected-removable-drives-can-be-recovered)
-- [Enforce drive encryption type on operating system drives](#choose-how-bitlocker-protected-removable-drives-can-be-recovered)
-- [Require additional authentication at startup](#choose-how-bitlocker-protected-removable-drives-can-be-recovered)
-- [Reset platform validation data after BitLocker recovery](#choose-how-bitlocker-protected-removable-drives-can-be-recovered)
-- [Use enhanced Boot Configuration Data validation profile](#choose-how-bitlocker-protected-removable-drives-can-be-recovered)
+### Allow devices compliant with InstantGo or HSTI to opt out of pre-boot PIN
 
-| Title | Description |
-|-|-|
-|### Choose default folder for recovery password| This policy setting allows you to specify the default path that is displayed when the BitLocker Drive Encryption setup wizard prompts the user to enter the location of a folder in which to save the recovery password. This policy setting is applied when you turn on BitLocker.  If you enable this policy setting, you can specify the path that will be used as the default folder location when the user chooses the option to save the recovery password in a folder. You can specify either a fully qualified path or include the target computer's environment variables in the path. If the path is not valid, the BitLocker setup wizard will display the computer's top-level folder view.  If you disable or do not configure this policy setting, the BitLocker setup wizard will display the computer's top-level folder view when the user chooses the option to save the recovery password in a folder.  Note: This policy setting does not prevent the user from saving the recovery password in another folder.|
-|Choose drive encryption method and cipher strength| This policy setting allows you to configure the algorithm and cipher strength used by BitLocker Drive Encryption. This policy setting is applied when you turn on BitLocker. Changing the encryption method has no effect if the drive is already encrypted, or if encryption is in progress.  If you enable this policy setting you will be able to configure an encryption algorithm and key cipher strength for fixed data drives, operating system drives, and removable data drives individually. For fixed and operating system drives, we recommend that you use the XTS-AES algorithm. For removable drives, you should use AES-CBC 128-bit or AES-CBC 256-bit if the drive will be used in other devices that are not running Windows 10 (Version 1511).  If you disable or do not configure this policy setting, BitLocker will use AES with the same bit strength (128-bit or 256-bit) as the "Choose drive encryption method and cipher strength (Windows Vista, Windows Server 2008, Windows 7)" and "Choose drive encryption method and cipher strength" policy settings (in that order), if they are set. If none of the policies are set, BitLocker will use the default encryption method of XTS-AES 128-bit or the encryption method specified by the setup script." |
+| Configuration tool | Path |
+|--|--|
+| Intune settings catalog | Not available |
+| CSP | Not available |
+| Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Operating Sytem Drives** |
+
+### Allow enhanced PINs for startup
+
+| Configuration tool | Path |
+|--|--|
+| Intune settings catalog | Not available |
+| CSP | Not available |
+| Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Operating Sytem Drives** |
+
+### Allow network unlock at startup
+
+| Configuration tool | Path |
+|--|--|
+| Intune settings catalog | Not available |
+| CSP | Not available |
+| Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Operating Sytem Drives** |
+
+### Allow Secure Boot for integrity validation
+
+| Configuration tool | Path |
+|--|--|
+| Intune settings catalog | Not available |
+| CSP | Not available |
+| Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Operating Sytem Drives** |
+
+### Choose how BitLocker-protected operating system drives can be recovered
+
+| Configuration tool | Path |
+|--|--|
+| Intune settings catalog | Not available |
+| CSP | Not available |
+| Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Operating Sytem Drives** |
+
+### Configure minimum PIN length for startup
+
+| Configuration tool | Path |
+|--|--|
+| Intune settings catalog | Not available |
+| CSP | Not available |
+| Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Operating Sytem Drives** |
+
+### Configure pre-boot recovery message and URL
+
+| Configuration tool | Path |
+|--|--|
+| Intune settings catalog | Not available |
+| CSP | Not available |
+| Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Operating Sytem Drives** |
+
+### Configure TPM platform validation profile for BIOS-based firmware configurations
+
+| Configuration tool | Path |
+|--|--|
+| Intune settings catalog | Not available |
+| CSP | Not available |
+| Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Operating Sytem Drives** |
+
+### Configure TPM platform validation profile for native UEFI firmware configurations
+
+| Configuration tool | Path |
+|--|--|
+| Intune settings catalog | Not available |
+| CSP | Not available |
+| Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Operating Sytem Drives** |
+
+### Configure use of hardware-based encryption for operating system drives
+
+| Configuration tool | Path |
+|--|--|
+| Intune settings catalog | Not available |
+| CSP | Not available |
+| Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Operating Sytem Drives** |
+
+### Configure use of passwords for operating system drives
+
+| Configuration tool | Path |
+|--|--|
+| Intune settings catalog | Not available |
+| CSP | Not available |
+| Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Operating Sytem Drives** |
+
+### Disallow standard users from changing the PIN or password
+
+| Configuration tool | Path |
+|--|--|
+| Intune settings catalog | Not available |
+| CSP | Not available |
+| Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Operating Sytem Drives** |
+
+### Enable use of BitLocker authentication requiring preboot keyboard input on slates
+
+| Configuration tool | Path |
+|--|--|
+| Intune settings catalog | Not available |
+| CSP | Not available |
+| Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Operating Sytem Drives** |
+
+### Enforce drive encryption type on operating system drives
+
+| Configuration tool | Path |
+|--|--|
+| Intune settings catalog | Not available |
+| CSP | Not available |
+| Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Operating Sytem Drives** |
+
+### Require additional authentication at startup
+
+| Configuration tool | Path |
+|--|--|
+| Intune settings catalog | Not available |
+| CSP | Not available |
+| Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Operating Sytem Drives** |
+
+### Reset platform validation data after BitLocker recovery
+
+| Configuration tool | Path |
+|--|--|
+| Intune settings catalog | Not available |
+| CSP | Not available |
+| Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Operating Sytem Drives** |
+
+### Use enhanced Boot Configuration Data validation profile
+
+| Configuration tool | Path |
+|--|--|
+| Intune settings catalog | Not available |
+| CSP | Not available |
+| Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Operating Sytem Drives** |
 
 #### [:::image type="icon" source="images/unlocked-drive.svg"::: **Fixed data drive**](#tab/fixed)
 
-Here's a list of BitLocker policies applicable to  fixed data drives:
+- Choose how BitLocker-protected fixed drives can be recovered
+- Configure use of hardware-based encryption for fixed data drives
+- Configure use of passwords for fixed data drives
+- Configure use of smart cards on fixed data drives
+- Deny write access to fixed drives not protected by BitLocker
+- Enforce drive encryption type on fixed data drives
 
-- [Choose how BitLocker-protected removable drives can be recovered](#choose-how-bitlocker-protected-removable-drives-can-be-recovered)
-- [Configure use of hardware-based encryption for removable data drives](#choose-how-bitlocker-protected-removable-drives-can-be-recovered)
-- [Configure use of passwords for removable data drives](#choose-how-bitlocker-protected-removable-drives-can-be-recovered)
-- [Configure use of smart cards on removable data drives](#choose-how-bitlocker-protected-removable-drives-can-be-recovered)
-- [Control use of BitLocker on removable drives](#choose-how-bitlocker-protected-removable-drives-can-be-recovered)
-- [Deny write access to removable drives not protected by BitLocker](#choose-how-bitlocker-protected-removable-drives-can-be-recovered)
-- [Enforce drive encryption type on removable data drives](#choose-how-bitlocker-protected-removable-drives-can-be-recovered)
 
-### Choose how BitLocker-protected removable drives can be recovered
+### Choose how BitLocker-protected fixed drives can be recovered
 
-This policy setting allows you to control how BitLocker-protected removable data drives are recovered in the absence of the required credentials. This policy setting is applied when you turn on BitLocker.  The "Allow data recovery agent" check box is used to specify whether a data recovery agent can be used with BitLocker-protected removable data drives. Before a data recovery agent can be used it must be added from the Public Key Policies item in either the Group Policy Management Console or the Local Group Policy Editor. Consult the BitLocker Drive Encryption Deployment Guide on Microsoft TechNet for more information about adding data recovery agents.  In "Configure user storage of BitLocker recovery information" select whether users are allowed, required, or not allowed to generate a 48-digit recovery password or a 256-bit recovery key.  Select "Omit recovery options from the BitLocker setup wizard" to prevent users from specifying recovery options when they turn on BitLocker on a drive. This means that you will not be able to specify which recovery option to use when you turn on BitLocker, instead BitLocker recovery options for the drive are determined by the policy setting.  In "Save BitLocker recovery information to Active Directory Domain Services" choose which BitLocker recovery information to store in AD DS for removable data drives. If you select "Backup recovery password and key package", both the BitLocker recovery password and key package are stored in AD DS. If you select "Backup recovery password only" only the recovery password is stored in AD DS.  Select the "Do not enable BitLocker until recovery information is stored in AD DS for removable data drives" check box if you want to prevent users from enabling BitLocker unless the computer is connected to the domain and the backup of BitLocker recovery information to AD DS succeeds.  Note: If the "Do not enable BitLocker until recovery information is stored in AD DS for fixed data drives" check box is selected, a recovery password is automatically generated.  If you enable this policy setting, you can control the methods available to users to recover data from BitLocker-protected removable data drives.  If this policy setting is not configured or disabled, the default recovery options are supported for BitLocker recovery. By default a DRA is allowed, the recovery options can be specified by the user including the recovery password and recovery key, and recovery information is not backed up to AD DS
-
-| Configuration option | Setting |
+| Configuration tool | Path |
 |--|--|
-| **Intune settings catalog** | Computer or User Configuration > Administrative Templates > Start Menu and Taskbar > **Hide the Copilot button** |
-| **CSP** | ./[Device/User]/Vendor/MSFT/Policy/Config/Start/[HideCopilotButton](mdm/policy-csp-start.md#hidecopilotbutton) |
-| **Group policy** | Computer or User Configuration > Administrative Templates > Start Menu and Taskbar > **Hide the Copilot button** |
+| Intune settings catalog | Not available |
+| CSP | Not available |
+| Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Fixed Data Drives** |
 
-### Configure use of hardware-based encryption for removable data drives
+### Configure use of hardware-based encryption for fixed data drives
 
-This policy setting allows you to control how BitLocker-protected removable data drives are recovered in the absence of the required credentials. This policy setting is applied when you turn on BitLocker.  The "Allow data recovery agent" check box is used to specify whether a data recovery agent can be used with BitLocker-protected removable data drives. Before a data recovery agent can be used it must be added from the Public Key Policies item in either the Group Policy Management Console or the Local Group Policy Editor. Consult the BitLocker Drive Encryption Deployment Guide on Microsoft TechNet for more information about adding data recovery agents.  In "Configure user storage of BitLocker recovery information" select whether users are allowed, required, or not allowed to generate a 48-digit recovery password or a 256-bit recovery key.  Select "Omit recovery options from the BitLocker setup wizard" to prevent users from specifying recovery options when they turn on BitLocker on a drive. This means that you will not be able to specify which recovery option to use when you turn on BitLocker, instead BitLocker recovery options for the drive are determined by the policy setting.  In "Save BitLocker recovery information to Active Directory Domain Services" choose which BitLocker recovery information to store in AD DS for removable data drives. If you select "Backup recovery password and key package", both the BitLocker recovery password and key package are stored in AD DS. If you select "Backup recovery password only" only the recovery password is stored in AD DS.  Select the "Do not enable BitLocker until recovery information is stored in AD DS for removable data drives" check box if you want to prevent users from enabling BitLocker unless the computer is connected to the domain and the backup of BitLocker recovery information to AD DS succeeds.  Note: If the "Do not enable BitLocker until recovery information is stored in AD DS for fixed data drives" check box is selected, a recovery password is automatically generated.  If you enable this policy setting, you can control the methods available to users to recover data from BitLocker-protected removable data drives.  If this policy setting is not configured or disabled, the default recovery options are supported for BitLocker recovery. By default a DRA is allowed, the recovery options can be specified by the user including the recovery password and recovery key, and recovery information is not backed up to AD DS
-
-| Configuration option | Setting |
+| Configuration tool | Path |
 |--|--|
-| **Intune settings catalog** | Computer or User Configuration > Administrative Templates > Start Menu and Taskbar > **Hide the Copilot button** |
-| **CSP** | ./[Device/User]/Vendor/MSFT/Policy/Config/Start/[HideCopilotButton](mdm/policy-csp-start.md#hidecopilotbutton) |
-| **Group policy** | Computer or User Configuration > Administrative Templates > Start Menu and Taskbar > **Hide the Copilot button** |
+| Intune settings catalog | Not available |
+| CSP | Not available |
+| Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Fixed Data Drives** |
 
-### Configure use of passwords for removable data drives
+### Configure use of passwords for fixed data drives
 
-This policy setting allows you to control how BitLocker-protected removable data drives are recovered in the absence of the required credentials. This policy setting is applied when you turn on BitLocker.  The "Allow data recovery agent" check box is used to specify whether a data recovery agent can be used with BitLocker-protected removable data drives. Before a data recovery agent can be used it must be added from the Public Key Policies item in either the Group Policy Management Console or the Local Group Policy Editor. Consult the BitLocker Drive Encryption Deployment Guide on Microsoft TechNet for more information about adding data recovery agents.  In "Configure user storage of BitLocker recovery information" select whether users are allowed, required, or not allowed to generate a 48-digit recovery password or a 256-bit recovery key.  Select "Omit recovery options from the BitLocker setup wizard" to prevent users from specifying recovery options when they turn on BitLocker on a drive. This means that you will not be able to specify which recovery option to use when you turn on BitLocker, instead BitLocker recovery options for the drive are determined by the policy setting.  In "Save BitLocker recovery information to Active Directory Domain Services" choose which BitLocker recovery information to store in AD DS for removable data drives. If you select "Backup recovery password and key package", both the BitLocker recovery password and key package are stored in AD DS. If you select "Backup recovery password only" only the recovery password is stored in AD DS.  Select the "Do not enable BitLocker until recovery information is stored in AD DS for removable data drives" check box if you want to prevent users from enabling BitLocker unless the computer is connected to the domain and the backup of BitLocker recovery information to AD DS succeeds.  Note: If the "Do not enable BitLocker until recovery information is stored in AD DS for fixed data drives" check box is selected, a recovery password is automatically generated.  If you enable this policy setting, you can control the methods available to users to recover data from BitLocker-protected removable data drives.  If this policy setting is not configured or disabled, the default recovery options are supported for BitLocker recovery. By default a DRA is allowed, the recovery options can be specified by the user including the recovery password and recovery key, and recovery information is not backed up to AD DS
-
-| Configuration option | Setting |
+| Configuration tool | Path |
 |--|--|
-| **Intune settings catalog** | Computer or User Configuration > Administrative Templates > Start Menu and Taskbar > **Hide the Copilot button** |
-| **CSP** | ./[Device/User]/Vendor/MSFT/Policy/Config/Start/[HideCopilotButton](mdm/policy-csp-start.md#hidecopilotbutton) |
-| **Group policy** | Computer or User Configuration > Administrative Templates > Start Menu and Taskbar > **Hide the Copilot button** |
+| Intune settings catalog | Not available |
+| CSP | Not available |
+| Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Fixed Data Drives** |
+
+### Configure use of smart cards on fixed data drives
+
+| Configuration tool | Path |
+|--|--|
+| Intune settings catalog | Not available |
+| CSP | Not available |
+| Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Fixed Data Drives** |
+
+### Deny write access to fixed drives not protected by BitLocker
+
+| Configuration tool | Path |
+|--|--|
+| Intune settings catalog | Not available |
+| CSP | Not available |
+| Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Fixed Data Drives** |
+
+### Enforce drive encryption type on fixed data drives
+
+| Configuration tool | Path |
+|--|--|
+| Intune settings catalog | Not available |
+| CSP | Not available |
+| Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Fixed Data Drives** |
 
 #### [:::image type="icon" source="images/unlocked-drive.svg"::: **Removable data drive**](#tab/removable)
 
-## Removable data drive policies
+- Choose how BitLocker-protected removable drives can be recovered
+- Configure use of hardware-based encryption for removable data drives
+- Configure use of passwords for removable data drives
+- Configure use of smart cards on removable data drives
+- Control use of BitLocker on removable drives
+- Deny write access to removable drives not protected by BitLocker
+- Enforce drive encryption type on removable data drives
 
-Here's a list of BitLocker policies applicable to removable drives, and the paths for Intune settings catalog, CSP and group policy.
+### Choose how BitLocker-protected removable drives can be recovered
 
-| Title | Description |
-|-|-|
-|**Choose how BitLocker-protected removable drives can be recovered**|This policy setting allows you to control how BitLocker-protected removable data drives are recovered in the absence of the required credentials. This policy setting is applied when you turn on BitLocker.  The "Allow data recovery agent" check box is used to specify whether a data recovery agent can be used with BitLocker-protected removable data drives. Before a data recovery agent can be used it must be added from the Public Key Policies item in either the Group Policy Management Console or the Local Group Policy Editor. Consult the BitLocker Drive Encryption Deployment Guide on Microsoft TechNet for more information about adding data recovery agents.  In "Configure user storage of BitLocker recovery information" select whether users are allowed, required, or not allowed to generate a 48-digit recovery password or a 256-bit recovery key.  Select "Omit recovery options from the BitLocker setup wizard" to prevent users from specifying recovery options when they turn on BitLocker on a drive. This means that you will not be able to specify which recovery option to use when you turn on BitLocker, instead BitLocker recovery options for the drive are determined by the policy setting.  In "Save BitLocker recovery information to Active Directory Domain Services" choose which BitLocker recovery information to store in AD DS for removable data drives. If you select "Backup recovery password and key package", both the BitLocker recovery password and key package are stored in AD DS. If you select "Backup recovery password only" only the recovery password is stored in AD DS.  Select the "Do not enable BitLocker until recovery information is stored in AD DS for removable data drives" check box if you want to prevent users from enabling BitLocker unless the computer is connected to the domain and the backup of BitLocker recovery information to AD DS succeeds.  Note: If the "Do not enable BitLocker until recovery information is stored in AD DS for fixed data drives" check box is selected, a recovery password is automatically generated.  If you enable this policy setting, you can control the methods available to users to recover data from BitLocker-protected removable data drives.  If this policy setting is not configured or disabled, the default recovery options are supported for BitLocker recovery. By default a DRA is allowed, the recovery options can be specified by the user including the recovery password and recovery key, and recovery information is not backed up to AD DS <br><br>- **GPO**: Windows Components\BitLocker Drive Encryption\Removable Data Drives<br>- **CSP**: ./[Device/User]/Vendor/MSFT/Policy/Config/BitLocker/[test](mdm/policy-csp-start.md#hidecopilotbutton) <br>- **Intune settings catalog**: Administrative Templates > Windows Components > BitLocker Drive Encryption |
-|Choose how BitLocker-protected removable drives can be recovered|This policy setting allows you to control how BitLocker-protected removable data drives are recovered in the absence of the required credentials. This policy setting is applied when you turn on BitLocker.  The "Allow data recovery agent" check box is used to specify whether a data recovery agent can be used with BitLocker-protected removable data drives. Before a data recovery agent can be used it must be added from the Public Key Policies item in either the Group Policy Management Console or the Local Group Policy Editor. Consult the BitLocker Drive Encryption Deployment Guide on Microsoft TechNet for more information about adding data recovery agents.  In "Configure user storage of BitLocker recovery information" select whether users are allowed, required, or not allowed to generate a 48-digit recovery password or a 256-bit recovery key.  Select "Omit recovery options from the BitLocker setup wizard" to prevent users from specifying recovery options when they turn on BitLocker on a drive. This means that you will not be able to specify which recovery option to use when you turn on BitLocker, instead BitLocker recovery options for the drive are determined by the policy setting.  In "Save BitLocker recovery information to Active Directory Domain Services" choose which BitLocker recovery information to store in AD DS for removable data drives. If you select "Backup recovery password and key package", both the BitLocker recovery password and key package are stored in AD DS. If you select "Backup recovery password only" only the recovery password is stored in AD DS.  Select the "Do not enable BitLocker until recovery information is stored in AD DS for removable data drives" check box if you want to prevent users from enabling BitLocker unless the computer is connected to the domain and the backup of BitLocker recovery information to AD DS succeeds.  Note: If the "Do not enable BitLocker until recovery information is stored in AD DS for fixed data drives" check box is selected, a recovery password is automatically generated.  If you enable this policy setting, you can control the methods available to users to recover data from BitLocker-protected removable data drives.  If this policy setting is not configured or disabled, the default recovery options are supported for BitLocker recovery. By default a DRA is allowed, the recovery options can be specified by the user including the recovery password and recovery key, and recovery information is not backed up to AD DS <br><br>- **GPO**: Windows Components\BitLocker Drive Encryption\Removable Data Drives<br>- **CSP**: ./[Device/User]/Vendor/MSFT/Policy/Config/BitLocker/[test](mdm/policy-csp-start.md#hidecopilotbutton) <br>- **Intune settings catalog**: Administrative Templates > Windows Components > BitLocker Drive Encryption|
-|**Configure use of hardware-based encryption for removable data drives**|This policy setting allows you to manage BitLocker's use of hardware-based encryption on removable data drives and specify which encryption algorithms it can use with hardware-based encryption. Using hardware-based encryption can improve performance of drive operations that involve frequent reading or writing of data to the drive.  If you enable this policy setting, you can specify additional options that control whether BitLocker software-based encryption is used instead of hardware-based encryption on computers that do not support hardware-based encryption and whether you want to restrict the encryption algorithms and cipher suites used with hardware-based encryption.  If you disable this policy setting, BitLocker cannot use hardware-based encryption with operating system drives and BitLocker software-based encryption will be used by default when the drive is encrypted.  If you do not configure this policy setting, BitLocker will use software-based encryption irrespective of hardware-based encryption availability.  Note: The "Choose drive encryption method and cipher strength" policy setting does not apply to hardware-based encryption. The encryption algorithm used by hardware-based encryption is set when the drive is partitioned. By default, BitLocker uses the algorithm configured on the drive to encrypt the drive. The "Restrict encryption algorithms and cipher suites allowed for hardware-based encryption" option enables you to restrict the encryption algorithms that BitLocker can use with hardware encryption. If the algorithm set for the drive is not available, BitLocker will disable the use of hardware-based encryption.  Encryption algorithms are specified by object identifiers (OID). For example:  - AES 128 in CBC mode OID: `2.16.840.1.101.3.4.1.2`  - AES 256 in CBC mode OID: `2.16.840.1.101.3.4.1.42` <br><br>- **GPO**: Windows Components\BitLocker Drive Encryption\Removable Data Drives<br>- **CSP**: ./[Device/User]/Vendor/MSFT/Policy/Config/BitLocker/[test](mdm/policy-csp-start.md#hidecopilotbutton) <br>- **Intune settings catalog**: not available|
+| Configuration tool | Path |
+|--|--|
+| Intune settings catalog | Not available |
+| CSP | Not available |
+| Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Removable Data Drives** |
 
----
+### Configure use of hardware-based encryption for removable data drives
 
-## TEST 4
+| Configuration tool | Path |
+|--|--|
+| Intune settings catalog | Not available |
+| CSP | Not available |
+| Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Removable Data Drives** |
 
-### Common settings
+### Configure use of passwords for removable data drives
 
-| Title | Description |
-|-|-|
-|Choose default folder for recovery password| This policy setting allows you to specify the default path that is displayed when the BitLocker Drive Encryption setup wizard prompts the user to enter the location of a folder in which to save the recovery password. This policy setting is applied when you turn on BitLocker.  If you enable this policy setting, you can specify the path that will be used as the default folder location when the user chooses the option to save the recovery password in a folder. You can specify either a fully qualified path or include the target computer's environment variables in the path. If the path is not valid, the BitLocker setup wizard will display the computer's top-level folder view.  If you disable or do not configure this policy setting, the BitLocker setup wizard will display the computer's top-level folder view when the user chooses the option to save the recovery password in a folder.  Note: This policy setting does not prevent the user from saving the recovery password in another folder.|
-|Choose drive encryption method and cipher strength| This policy setting allows you to configure the algorithm and cipher strength used by BitLocker Drive Encryption. This policy setting is applied when you turn on BitLocker. Changing the encryption method has no effect if the drive is already encrypted, or if encryption is in progress.  If you enable this policy setting you will be able to configure an encryption algorithm and key cipher strength for fixed data drives, operating system drives, and removable data drives individually. For fixed and operating system drives, we recommend that you use the XTS-AES algorithm. For removable drives, you should use AES-CBC 128-bit or AES-CBC 256-bit if the drive will be used in other devices that are not running Windows 10 (Version 1511).  If you disable or do not configure this policy setting, BitLocker will use AES with the same bit strength (128-bit or 256-bit) as the "Choose drive encryption method and cipher strength (Windows Vista, Windows Server 2008, Windows 7)" and "Choose drive encryption method and cipher strength" policy settings (in that order), if they are set. If none of the policies are set, BitLocker will use the default encryption method of XTS-AES 128-bit or the encryption method specified by the setup script." |
+| Configuration tool | Path |
+|--|--|
+| Intune settings catalog | Not available |
+| CSP | Not available |
+| Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Removable Data Drives** |
 
+### Configure use of smart cards on removable data drives
 
-### OS data drive settings
+| Configuration tool | Path |
+|--|--|
+| Intune settings catalog | Not available |
+| CSP | Not available |
+| Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Removable Data Drives** |
 
-| Title | Description |
-|-|-|
-|Choose default folder for recovery password| This policy setting allows you to specify the default path that is displayed when the BitLocker Drive Encryption setup wizard prompts the user to enter the location of a folder in which to save the recovery password. This policy setting is applied when you turn on BitLocker.  If you enable this policy setting, you can specify the path that will be used as the default folder location when the user chooses the option to save the recovery password in a folder. You can specify either a fully qualified path or include the target computer's environment variables in the path. If the path is not valid, the BitLocker setup wizard will display the computer's top-level folder view.  If you disable or do not configure this policy setting, the BitLocker setup wizard will display the computer's top-level folder view when the user chooses the option to save the recovery password in a folder.  Note: This policy setting does not prevent the user from saving the recovery password in another folder.|
-|Choose drive encryption method and cipher strength| This policy setting allows you to configure the algorithm and cipher strength used by BitLocker Drive Encryption. This policy setting is applied when you turn on BitLocker. Changing the encryption method has no effect if the drive is already encrypted, or if encryption is in progress.  If you enable this policy setting you will be able to configure an encryption algorithm and key cipher strength for fixed data drives, operating system drives, and removable data drives individually. For fixed and operating system drives, we recommend that you use the XTS-AES algorithm. For removable drives, you should use AES-CBC 128-bit or AES-CBC 256-bit if the drive will be used in other devices that are not running Windows 10 (Version 1511).  If you disable or do not configure this policy setting, BitLocker will use AES with the same bit strength (128-bit or 256-bit) as the "Choose drive encryption method and cipher strength (Windows Vista, Windows Server 2008, Windows 7)" and "Choose drive encryption method and cipher strength" policy settings (in that order), if they are set. If none of the policies are set, BitLocker will use the default encryption method of XTS-AES 128-bit or the encryption method specified by the setup script." |
+### Control use of BitLocker on removable drives
 
-### Fixed data drive settings
+| Configuration tool | Path |
+|--|--|
+| Intune settings catalog | Not available |
+| CSP | Not available |
+| Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Removable Data Drives** |
 
-| Title | Description |
-|-|-|
-|Choose default folder for recovery password| This policy setting allows you to specify the default path that is displayed when the BitLocker Drive Encryption setup wizard prompts the user to enter the location of a folder in which to save the recovery password. This policy setting is applied when you turn on BitLocker.  If you enable this policy setting, you can specify the path that will be used as the default folder location when the user chooses the option to save the recovery password in a folder. You can specify either a fully qualified path or include the target computer's environment variables in the path. If the path is not valid, the BitLocker setup wizard will display the computer's top-level folder view.  If you disable or do not configure this policy setting, the BitLocker setup wizard will display the computer's top-level folder view when the user chooses the option to save the recovery password in a folder.  Note: This policy setting does not prevent the user from saving the recovery password in another folder.|
-|Choose drive encryption method and cipher strength| This policy setting allows you to configure the algorithm and cipher strength used by BitLocker Drive Encryption. This policy setting is applied when you turn on BitLocker. Changing the encryption method has no effect if the drive is already encrypted, or if encryption is in progress.  If you enable this policy setting you will be able to configure an encryption algorithm and key cipher strength for fixed data drives, operating system drives, and removable data drives individually. For fixed and operating system drives, we recommend that you use the XTS-AES algorithm. For removable drives, you should use AES-CBC 128-bit or AES-CBC 256-bit if the drive will be used in other devices that are not running Windows 10 (Version 1511).  If you disable or do not configure this policy setting, BitLocker will use AES with the same bit strength (128-bit or 256-bit) as the "Choose drive encryption method and cipher strength (Windows Vista, Windows Server 2008, Windows 7)" and "Choose drive encryption method and cipher strength" policy settings (in that order), if they are set. If none of the policies are set, BitLocker will use the default encryption method of XTS-AES 128-bit or the encryption method specified by the setup script." |
+### Deny write access to removable drives not protected by BitLocker
 
-### Removable data drive settings
+| Configuration tool | Path |
+|--|--|
+| Intune settings catalog | Not available |
+| CSP | Not available |
+| Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Removable Data Drives** |
 
-| Title | Description |
-|-|-|
-|Choose default folder for recovery password| This policy setting allows you to specify the default path that is displayed when the BitLocker Drive Encryption setup wizard prompts the user to enter the location of a folder in which to save the recovery password. This policy setting is applied when you turn on BitLocker.  If you enable this policy setting, you can specify the path that will be used as the default folder location when the user chooses the option to save the recovery password in a folder. You can specify either a fully qualified path or include the target computer's environment variables in the path. If the path is not valid, the BitLocker setup wizard will display the computer's top-level folder view.  If you disable or do not configure this policy setting, the BitLocker setup wizard will display the computer's top-level folder view when the user chooses the option to save the recovery password in a folder.  Note: This policy setting does not prevent the user from saving the recovery password in another folder.|
-|Choose drive encryption method and cipher strength| This policy setting allows you to configure the algorithm and cipher strength used by BitLocker Drive Encryption. This policy setting is applied when you turn on BitLocker. Changing the encryption method has no effect if the drive is already encrypted, or if encryption is in progress.  If you enable this policy setting you will be able to configure an encryption algorithm and key cipher strength for fixed data drives, operating system drives, and removable data drives individually. For fixed and operating system drives, we recommend that you use the XTS-AES algorithm. For removable drives, you should use AES-CBC 128-bit or AES-CBC 256-bit if the drive will be used in other devices that are not running Windows 10 (Version 1511).  If you disable or do not configure this policy setting, BitLocker will use AES with the same bit strength (128-bit or 256-bit) as the "Choose drive encryption method and cipher strength (Windows Vista, Windows Server 2008, Windows 7)" and "Choose drive encryption method and cipher strength" policy settings (in that order), if they are set. If none of the policies are set, BitLocker will use the default encryption method of XTS-AES 128-bit or the encryption method specified by the setup script." |
+### Enforce drive encryption type on removable data drives
+
+| Configuration tool | Path |
+|--|--|
+| Intune settings catalog | Not available |
+| CSP | Not available |
+| Group policy | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Removable Data Drives** |
 
 ---
 
 ## Old
 
-
-The following sections provide a comprehensive list of BitLocker group policy settings that are organized by usage. BitLocker group policy settings include settings for specific drive types (operating system drives, fixed data drives, and removable data drives) and settings that are applied to all drives.
 
 The following policy settings can be used to determine how a BitLocker-protected drive can be unlocked.
 
