@@ -35,7 +35,7 @@ The following table shows the methods and paths available to change the edition 
 >
 > Although it isn't displayed yet in the table, edition upgrade is also possible using edition upgrade policy in Microsoft Configuration Manager. For more information, see [Upgrade Windows devices to a new edition with Configuration Manager](/mem/configmgr/compliance/deploy-use/upgrade-windows-version).
 
-| Edition upgrade | Using mobile device management (MDM) | Using a provisioning package | Using a command-line tool | Entering a product key manually |
+| Edition upgrade | MDM | Provisioning package | Command-line tool | Manually entering product key |
 |-----------------| ------------------------------------ | --------------------------- | ------------------------- | ----------------------------------- |
 | **Home > Pro** | ❌ | ❌ | ❌ | Yes w/ reboot |
 | **Home > Pro for Workstations** | ❌ | ❌ | ❌ | Yes w/ reboot |
@@ -54,6 +54,7 @@ The following table shows the methods and paths available to change the edition 
 - Yes w/ reboot = supported, but reboot required.
 - Yes = supported, no reboot required.
 - ❌ = not supported.
+- MDM = Modern device management.
 
 > [!NOTE]
 >
@@ -83,11 +84,15 @@ For more info about Windows Configuration Designer, see the following articles:
 
 You can run the `changepk.exe` command-line tool to upgrade devices to a supported edition of Windows 10:
 
-`changepk.exe /ProductKey <enter your new product key here>`
+```cmd
+changepk.exe /ProductKey <product_key>`
+```
 
 You can also upgrade using `slmgr.vbs` and a [KMS client setup key](/windows-server/get-started/kmsclientkeys).  For example, the following command upgrades to Windows 10 Enterprise.
 
-`Cscript.exe c:\windows\system32\slmgr.vbs /ipk NPPR9-FWDCX-D2C8J-H872K-2YT43`
+```cmd
+cscript.exe c:\windows\system32\slmgr.vbs /ipk <product_key>
+```
 
 ## Upgrade by manually entering a product key
 
