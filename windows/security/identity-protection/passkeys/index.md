@@ -66,7 +66,7 @@ Follow these steps to create a passkey from a Windows device:
 
 - **This Windows device**: the passkey is saved locally on your Windows device, and protected by Windows Hello (biometrics and PIN)
 - **iPhone, iPad or Android device**: the passkey is saved on a phone or tablet, protected by the device's biometrics, if offered by the device. This option requires you to scan a QR code with your phone or tablet, which must be in proximity of the Windows device
-- **Linked device**: the passkey is saved on a device paired via Bluetooth with the Windows device, protected by the device's biometrics or a PIN. This option is only supported for Android devices
+- **Linked device**: the passkey is saved on a phone or tablet, protected by the device's biometrics, if offered by the device. This option requires the linked device to be in proximity of the Windows device, and it's only supported for Android devices
 - **Security key**: the passkey is saved to a FIDO2 security key, protected by the key's unlock mechanism (for example, biometrics or PIN)
 
   :::column-end:::
@@ -204,7 +204,7 @@ Follow these steps to use a passkey:
   :::column span="3":::
 - **This Windows device**: use this option to use a passkey that is stored locally on your Windows device, and protected by Windows Hello
 - **iPhone, iPad or Android device**: use this option if you want to sign in with a passkey stored on a phone or tablet. This option requires you to scan a QR code with your phone or tablet, which must be in proximity of the Windows device
-- **Linked device**: use this option if you want to sign in with a passkey stored on a device paired via Bluetooth with the Windows device. This option is only supported for Android devices
+- **Linked device**: use this option if you want to sign in with a passkey stored on a device that is in proximity of the Windows device. This option is only supported for Android devices
 - **Security key**: use this option if you want to sign in with a passkey stored on a FIDO2 security key
   :::column-end:::
   :::column span="1":::
@@ -308,7 +308,7 @@ Starting in Windows 11, version 22H2 with [KB5030310][KB-1], you can use the Set
 
 > [!div class="nextstepaction"]
 >
-> [Manage passkeys](ms-settings:savedpasskeys)
+> [Manage passkeys][MSS-1]
 
 - A list of saved passkeys is displayed and you can filter them by name
 - To delete a passkey, select **... > Delete passkey** next to the passkey name
@@ -326,4 +326,4 @@ To provide feedback for passkeys, open [**Feedback Hub**][FHUB] and use the cate
 
 [FHUB]: feedback-hub:?tabid=2&newFeedback=true
 [KB-1]: https://support.microsoft.com/kb/5030310
-[EXT-1]: https://passkeys.dev
+[MSS-1]: ms-settings:savedpasskeys
