@@ -157,7 +157,7 @@ For Windows 10 and Windows 11, the following MDM policies are available in the [
    1. Windows Update Service URL - [Update/UpdateServiceUrl](/windows/client-management/mdm/policy-csp-update#update-updateserviceurl). Allows the device to check for updates from a WSUS server instead of Microsoft Update. **Set to String** with the Value:
       1. **\<Replace>\<CmdID>$CmdID$</CmdID>\<Item>\<Meta>\<Format>chr</Format>\<Type>text/plain</Type>\</Meta>\<Target> \<LocURI>./Vendor/MSFT/Policy/Config/Update/UpdateServiceUrl</LocURI>\</Target>\<Data>http://abcd-srv:8530</Data>\</Item>\</Replace>**
 28. **Recommendations**
-   a. [HideRecentJumplists](/windows/client-management/mdm/policy-csp-start#hiderecentjumplists) setting in the Start Policy configuration service provider (CSP). To hide a list of recommended apps and files in the Recommended section on the Start menu.
+   1. [HideRecentJumplists](/windows/client-management/mdm/policy-csp-start#hiderecentjumplists) setting in the Start Policy configuration service provider (CSP). To hide a list of recommended apps and files in the Recommended section on the Start menu.
 
 ### <a href="" id="bkmk-mdm-allowedtraffic"></a> Allowed traffic for Microsoft Intune / MDM configurations
 
