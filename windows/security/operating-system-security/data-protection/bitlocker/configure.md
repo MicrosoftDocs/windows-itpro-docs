@@ -88,7 +88,7 @@ If you disable or do not configure this policy setting, BitLocker uses the defau
 | **GPO** | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** |
 
 ### Disable new DMA devices when this computer is locked
-This policy setting allows you to block direct memory access (DMA) for all Thunderbolt hot pluggable PCI downstream ports until a user logs into Windows. Once a user logs in, Windows will enumerate the PCI devices connected to the host Thunderbolt PCI ports. Every time the user locks the machine, DMA will be blocked on hot plug Thunderbolt PCI ports with no children devices, until the user logs in again. Devices which were already enumerated when the machine was unlocked will continue to function until unplugged or the system is rebooted or hibernated. This policy setting is only enforced when BitLocker or device encryption is enabled.  Note: Some PCs may not be compatible with this policy if the system firmware enables DMA for newly attached Thunderbolt devices before exposing the new devices to Windows.
+This policy setting allows you to block direct memory access (DMA) for all Thunderbolt hot pluggable PCI downstream ports until a user logs into Windows. Once a user logs in, Windows will enumerate the PCI devices connected to the host Thunderbolt PCI ports. Every time the user locks the machine, DMA will be blocked on hot plug Thunderbolt PCI ports with no children devices, until the user logs in again. Devices which were already enumerated when the machine was unlocked will continue to function until unplugged or the system is rebooted or hibernated. This policy setting is only enforced when BitLocker or device encryption is enabled.  Note: Some PCs may not be compatible with this policy if the system firmware enables DMA for newly attached Thunderbolt devices before exposing the new devices to Windows.
 
 |  | Path |
 |--|--|
@@ -123,26 +123,26 @@ This policy setting allows you to associate an object identifier from a smart ca
 
 |Policy name| CSP | GPO |
 |-|-|-|
-|[Allow devices compliant with InstantGo or HSTI to opt out of pre-boot PIN](#allow-devices-compliant-with-instantgo-or-hsti-to-opt-out-of-pre-boot-pin)|||
-|[Allow enhanced PINs for startup](#allow-enhanced-pins-for-startup)|||
-|[Allow network unlock at startup](#allow-network-unlock-at-startup)|||
-|[Allow Secure Boot for integrity validation](#allow-secure-boot-for-integrity-validation)|||
+|[Allow devices compliant with InstantGo or HSTI to opt out of pre-boot PIN](#allow-devices-compliant-with-instantgo-or-hsti-to-opt-out-of-pre-boot-pin)|✅|✅|
+|[Allow enhanced PINs for startup](#allow-enhanced-pins-for-startup)|✅|✅|
+|[Allow network unlock at startup](#allow-network-unlock-at-startup)|❌|✅|
+|[Allow Secure Boot for integrity validation](#allow-secure-boot-for-integrity-validation)|❌|✅|
 |[Allow Warning For Other Disk Encryption](#allow-warning-for-other-disk-encryption)|✅|❌|
-|[Choose how BitLocker-protected operating system drives can be recovered](#choose-how-bitlocker-protected-operating-system-drives-can-be-recovered)|||
-|[Configure minimum PIN length for startup](#configure-minimum-pin-length-for-startup)|||
-|[Configure pre-boot recovery message and URL](#configure-pre-boot-recovery-message-and-url)|||
+|[Choose how BitLocker-protected operating system drives can be recovered](#choose-how-bitlocker-protected-operating-system-drives-can-be-recovered)|✅|✅|
+|[Configure minimum PIN length for startup](#configure-minimum-pin-length-for-startup)|✅|✅|
+|[Configure pre-boot recovery message and URL](#configure-pre-boot-recovery-message-and-url)|✅|✅|
 |[Configure Recovery Password Rotation](#configure-recovery-password-rotation)|✅|❌|
-|[Configure TPM platform validation profile for BIOS-based firmware configurations](#configure-tpm-platform-validation-profile-for-bios-based-firmware-configurations)|||
-|[Configure TPM platform validation profile for native UEFI firmware configurations](#configure-tpm-platform-validation-profile-for-native-uefi-firmware-configurations)|||
-|[Configure use of hardware-based encryption for operating system drives](#configure-use-of-hardware-based-encryption-for-operating-system-drives)|||
-|[Configure use of passwords for operating system drives](#configure-use-of-passwords-for-operating-system-drives)|||
-|[Disallow standard users from changing the PIN or password](#disallow-standard-users-from-changing-the-pin-or-password)|||
-|[Enable use of BitLocker authentication requiring preboot keyboard input on slates](#enable-use-of-bitlocker-authentication-requiring-preboot-keyboard-input-on-slates)|||
-|[Enforce drive encryption type on operating system drives](#enforce-drive-encryption-type-on-operating-system-drives)|||
-|[Require additional authentication at startup](#require-additional-authentication-at-startup)|||
+|[Configure TPM platform validation profile for BIOS-based firmware configurations](#configure-tpm-platform-validation-profile-for-bios-based-firmware-configurations)|❌|✅|
+|[Configure TPM platform validation profile for native UEFI firmware configurations](#configure-tpm-platform-validation-profile-for-native-uefi-firmware-configurations)|❌|✅|
+|[Configure use of hardware-based encryption for operating system drives](#configure-use-of-hardware-based-encryption-for-operating-system-drives)|❌|✅|
+|[Configure use of passwords for operating system drives](#configure-use-of-passwords-for-operating-system-drives)|❌|✅|
+|[Disallow standard users from changing the PIN or password](#disallow-standard-users-from-changing-the-pin-or-password)|✅|✅|
+|[Enable use of BitLocker authentication requiring preboot keyboard input on slates](#enable-use-of-bitlocker-authentication-requiring-preboot-keyboard-input-on-slates)|✅|✅|
+|[Enforce drive encryption type on operating system drives](#enforce-drive-encryption-type-on-operating-system-drives)|✅|✅|
+|[Require additional authentication at startup](#require-additional-authentication-at-startup)|✅|✅|
 |[Require Device Encryption](#require-device-encryption)|✅|❌|
-|[Reset platform validation data after BitLocker recovery](#reset-platform-validation-data-after-bitlocker-recovery)|||
-|[Use enhanced Boot Configuration Data validation profile](#use-enhanced-boot-configuration-data-validation-profile)|||
+|[Reset platform validation data after BitLocker recovery](#reset-platform-validation-data-after-bitlocker-recovery)|❌|✅|
+|[Use enhanced Boot Configuration Data validation profile](#use-enhanced-boot-configuration-data-validation-profile)|❌|✅|
 
 ### Allow devices compliant with InstantGo or HSTI to opt out of pre-boot PIN
 
@@ -288,12 +288,12 @@ This policy setting allows you to associate an object identifier from a smart ca
 
 |Policy name| CSP | GPO |
 |-|-|-|
-|[Choose how BitLocker-protected fixed drives can be recovered](#choose-how-bitlocker-protected-fixed-drives-can-be-recovered)|||
-|[Configure use of hardware-based encryption for fixed data drives](#configure-use-of-hardware-based-encryption-for-fixed-data-drives)|||
-|[Configure use of passwords for fixed data drives](#configure-use-of-passwords-for-fixed-data-drives)|||
-|[Configure use of smart cards on fixed data drives](#configure-use-of-smart-cards-on-fixed-data-drives)|||
-|[Deny write access to fixed drives not protected by BitLocker](#deny-write-access-to-fixed-drives-not-protected-by-bitlocker)|||
-|[Enforce drive encryption type on fixed data drives](#enforce-drive-encryption-type-on-fixed-data-drives)|||
+|[Choose how BitLocker-protected fixed drives can be recovered](#choose-how-bitlocker-protected-fixed-drives-can-be-recovered)|✅|✅|
+|[Configure use of hardware-based encryption for fixed data drives](#configure-use-of-hardware-based-encryption-for-fixed-data-drives)|❌|✅|
+|[Configure use of passwords for fixed data drives](#configure-use-of-passwords-for-fixed-data-drives)❌|✅|
+|[Configure use of smart cards on fixed data drives](#configure-use-of-smart-cards-on-fixed-data-drives)|❌|✅|
+|[Deny write access to fixed drives not protected by BitLocker](#deny-write-access-to-fixed-drives-not-protected-by-bitlocker)|✅|✅|
+|[Enforce drive encryption type on fixed data drives](#enforce-drive-encryption-type-on-fixed-data-drives)|✅|✅|
 
 
 ### Choose how BitLocker-protected fixed drives can be recovered
@@ -342,13 +342,13 @@ This policy setting allows you to associate an object identifier from a smart ca
 
 |Policy name| CSP | GPO |
 |-|-|-|
-|[Choose how BitLocker-protected removable drives can be recovered](#choose-how-bitlocker-protected-removable-drives-can-be-recovered)|||
-|[Configure use of hardware-based encryption for removable data drives](#configure-use-of-hardware-based-encryption-for-removable-data-drives)|||
-|[Configure use of passwords for removable data drives](#configure-use-of-passwords-for-removable-data-drives)|||
-|[Configure use of smart cards on removable data drives](#configure-use-of-smart-cards-on-removable-data-drives)|||
-|[Control use of BitLocker on removable drives](#control-use-of-bitlocker-on-removable-drives)|||
-|[Deny write access to removable drives not protected by BitLocker](#deny-write-access-to-removable-drives-not-protected-by-bitlocker)|||
-|[Enforce drive encryption type on removable data drives](#enforce-drive-encryption-type-on-removable-data-drives)|||
+|[Choose how BitLocker-protected removable drives can be recovered](#choose-how-bitlocker-protected-removable-drives-can-be-recovered)|❌|✅|
+|[Configure use of hardware-based encryption for removable data drives](#configure-use-of-hardware-based-encryption-for-removable-data-drives)|❌|✅|
+|[Configure use of passwords for removable data drives](#configure-use-of-passwords-for-removable-data-drives)|❌|✅|
+|[Configure use of smart cards on removable data drives](#configure-use-of-smart-cards-on-removable-data-drives)|❌|✅|
+|[Control use of BitLocker on removable drives](#control-use-of-bitlocker-on-removable-drives)|✅|✅|
+|[Deny write access to removable drives not protected by BitLocker](#deny-write-access-to-removable-drives-not-protected-by-bitlocker)|✅|✅|
+|[Enforce drive encryption type on removable data drives](#enforce-drive-encryption-type-on-removable-data-drives)|✅|✅|
 
 ### Choose how BitLocker-protected removable drives can be recovered
 
