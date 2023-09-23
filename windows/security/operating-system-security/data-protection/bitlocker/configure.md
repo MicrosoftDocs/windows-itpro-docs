@@ -35,6 +35,7 @@ The following table lists the BitLocker policies applicable to all drive types, 
 |[Allow Suspension Of BitLocker Protection](#allow-suspension-of-bitlocker-protection)|✅|❌|
 |[Choose default folder for recovery password](#choose-default-folder-for-recovery-password)|❌|✅|
 |[Choose drive encryption method and cipher strength](#choose-drive-encryption-method-and-cipher-strength)|✅|✅|
+|[Configure Recovery Password Rotation](#configure-recovery-password-rotation)|✅|❌|
 |[Disable new DMA devices when this computer is locked](#disable-new-dma-devices-when-this-computer-is-locked)|❌|✅|
 |[Prevent memory overwrite on restart](#prevent-memory-overwrite-on-restart)|❌|✅|
 |[Provide the unique identifiers for your organization](#provide-the-unique-identifiers-for-your-organization)|✅|✅|
@@ -87,7 +88,15 @@ If you disable or do not configure this policy setting, BitLocker uses the defau
 | **CSP** | Not available |
 | **GPO** | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** |
 
+### Configure Recovery Password Rotation
+
+|  | Path |
+|--|--|
+| **CSP** | `./Device/Vendor/MSFT/BitLocker/`[AllowWarningForOtherDiskEncryption](/windows/client-management/mdm/bitlocker-csp#configurerecoverypasswordrotation)|
+| **GPO** | Not available |
+
 ### Disable new DMA devices when this computer is locked
+
 This policy setting allows you to block direct memory access (DMA) for all Thunderbolt hot pluggable PCI downstream ports until a user logs into Windows. Once a user logs in, Windows will enumerate the PCI devices connected to the host Thunderbolt PCI ports. Every time the user locks the machine, DMA will be blocked on hot plug Thunderbolt PCI ports with no children devices, until the user logs in again. Devices which were already enumerated when the machine was unlocked will continue to function until unplugged or the system is rebooted or hibernated. This policy setting is only enforced when BitLocker or device encryption is enabled.  Note: Some PCs may not be compatible with this policy if the system firmware enables DMA for newly attached Thunderbolt devices before exposing the new devices to Windows.
 
 |  | Path |
@@ -131,7 +140,6 @@ This policy setting allows you to associate an object identifier from a smart ca
 |[Choose how BitLocker-protected operating system drives can be recovered](#choose-how-bitlocker-protected-operating-system-drives-can-be-recovered)|✅|✅|
 |[Configure minimum PIN length for startup](#configure-minimum-pin-length-for-startup)|✅|✅|
 |[Configure pre-boot recovery message and URL](#configure-pre-boot-recovery-message-and-url)|✅|✅|
-|[Configure Recovery Password Rotation](#configure-recovery-password-rotation)|✅|❌|
 |[Configure TPM platform validation profile for BIOS-based firmware configurations](#configure-tpm-platform-validation-profile-for-bios-based-firmware-configurations)|❌|✅|
 |[Configure TPM platform validation profile for native UEFI firmware configurations](#configure-tpm-platform-validation-profile-for-native-uefi-firmware-configurations)|❌|✅|
 |[Configure use of hardware-based encryption for operating system drives](#configure-use-of-hardware-based-encryption-for-operating-system-drives)|❌|✅|
@@ -214,13 +222,6 @@ This policy setting lets you configure the entire recovery message or replace th
 | **CSP** | Not available |
 | **GPO** | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Operating Sytem Drives** |
 
-### Configure Recovery Password Rotation
-
-|  | Path |
-|--|--|
-| **CSP** | `./Device/Vendor/MSFT/BitLocker/`[AllowWarningForOtherDiskEncryption](/windows/client-management/mdm/bitlocker-csp#allowwarningforotherdiskencryption)|
-| **GPO** | Not available |
-
 ### Configure TPM platform validation profile for BIOS-based firmware configurations
 
 This policy setting allows you to configure how the computer's Trusted Platform Module (TPM) security hardware secures the BitLocker encryption key. This policy setting does not apply if the computer does not have a compatible TPM or if BitLocker has already been turned on with TPM protection.  Important: This group policy only applies to computers with BIOS configurations or to computers with UEFI firmware with a Compatibility Service Module (CSM) enabled.  Computers using a native UEFI firmware configuration store different values into the Platform Configuration Registers (PCRs).  Use the "Configure TPM platform validation profile for native UEFI firmware configurations" group policy setting to configure the TPM PCR profile for computers using native UEFI firmware.  If you enable this policy setting before turning on BitLocker, you can configure the boot components that the TPM will validate before unlocking access to the BitLocker-encrypted operating system drive. If any of these components change while BitLocker protection is in effect, the TPM will not release the encryption key to unlock the drive and the computer will instead display the BitLocker Recovery console and require that either the recovery password or recovery key be provided to unlock the drive.  If you disable or do not configure this policy setting, BitLocker uses the default platform validation profile or the platform validation profile specified by the setup script. A platform validation profile consists of a set of Platform Configuration Register (PCR) indices ranging from 0 to 23. The default platform validation profile secures the encryption key against changes to the Core Root of Trust of Measurement (CRTM), BIOS, and Platform Extensions (PCR 0), the Option ROM Code (PCR 2), the Master Boot Record (MBR) Code (PCR 4), the NTFS Boot Sector (PCR 8), the NTFS Boot Block (PCR 9), the Boot Manager (PCR 10), and the BitLocker Access Control (PCR 11).  Warning: Changing from the default platform validation profile affects the security and manageability of your computer. BitLocker's sensitivity to platform modifications (malicious or authorized) is increased or decreased depending upon inclusion or exclusion (respectively) of the PCRs.
@@ -297,7 +298,7 @@ This policy setting allows you to configure whether BitLocker requires additiona
 
 |  | Path |
 |--|--|
-| **CSP** | ``./Device/Vendor/MSFT/BitLocker/`[ConfigureRecoveryPasswordRotation](/windows/client-management/mdm/bitlocker-csp#configurerecoverypasswordrotation) |
+| **CSP** | `./Device/Vendor/MSFT/BitLocker/`[RequireDeviceEncryption](/windows/client-management/mdm/bitlocker-csp#requiredeviceencryption) |
 | **GPO** | Not available |
 
 ### Reset platform validation data after BitLocker recovery
@@ -394,6 +395,8 @@ This policy setting allows you to configure the encryption type used by BitLocke
 |[Control use of BitLocker on removable drives](#control-use-of-bitlocker-on-removable-drives)|✅|✅|
 |[Deny write access to removable drives not protected by BitLocker](#deny-write-access-to-removable-drives-not-protected-by-bitlocker)|✅|✅|
 |[Enforce drive encryption type on removable data drives](#enforce-drive-encryption-type-on-removable-data-drives)|✅|✅|
+|[Removable Drives Excluded From Encryption](#removable-drives-excluded-from-encryption)|✅|❌|
+
 
 ### Choose how BitLocker-protected removable drives can be recovered
 
@@ -449,7 +452,6 @@ This policy setting configures whether BitLocker protection is required for a co
 | **CSP** | `./Device/Vendor/MSFT/BitLocker/`[RemovableDrivesRequireEncryption](/windows/client-management/mdm/bitlocker-csp#removabledrivesrequireencryption) |
 | **GPO** | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Removable Data Drives** |
 
-
 ### Enforce drive encryption type on removable data drives
 
 This policy setting allows you to configure the encryption type used by BitLocker Drive Encryption. This policy setting is applied when you turn on BitLocker. Changing the encryption type has no effect if the drive is already encrypted or if encryption is in progress. Choose full encryption to require that the entire drive be encrypted when BitLocker is turned on. Choose used space only encryption to require that only the portion of the drive used to store data is encrypted when BitLocker is turned on.  If you enable this policy setting the encryption type that BitLocker will use to encrypt drives is defined by this policy and the encryption type option will not be presented in the BitLocker setup wizard.  If you disable or do not configure this policy setting, the BitLocker setup wizard will ask the user to select the encryption type before turning on BitLocker.
@@ -458,5 +460,12 @@ This policy setting allows you to configure the encryption type used by BitLocke
 |--|--|
 | **CSP** | `./Device/Vendor/MSFT/BitLocker/`[RemovableDrivesEncryptionType](/windows/client-management/mdm/bitlocker-csp#removabledrivesencryptiontype) |
 | **GPO** | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Removable Data Drives** |
+
+### Removable Drives Excluded From Encryption
+
+|  | Path |
+|--|--|
+| **CSP** | `./Device/Vendor/MSFT/BitLocker/`[RemovableDrivesExcludedFromEncryption](/windows/client-management/mdm/bitlocker-csp#removabledrivesexcludedfromencryption) |
+| **GPO** | Not available |
 
 ---
