@@ -9,10 +9,6 @@ ms.date: 09/19/2023
 
 # BitLocker settings list
 
-[Allow enhanced PINs for startup](#allow-enhanced-pins-for-startup)
-[Allow network unlock at startup](#allow-network-unlock-at-startup)
-[Allow Secure Boot for integrity validation](#allow-secure-boot-for-integrity-validation)
-
 This reference article describes the available settings to configure BitLocker via configuration service provider (CSP) and group policy (GPO).
 
 The list of settings is sorted alphabetically and organized in four tabs:
