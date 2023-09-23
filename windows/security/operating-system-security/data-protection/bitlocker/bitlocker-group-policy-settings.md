@@ -10,96 +10,13 @@ ms.date: 11/08/2022
 
 # BitLocker group policy settings
 
-This article for IT professionals describes the function, location, and effect of each Group Policy setting that is used to manage BitLocker Drive Encryption.
-
-Group Policy administrative templates or local computer policy settings can be used to control what BitLocker drive encryption tasks and configurations can be performed by users, for example through the **BitLocker Drive Encryption** control panel. Which of these policies are configured and how they're configured depends on how BitLocker is implemented and what level of interaction is desired for end users.
-
-> [!NOTE]
-> A separate set of Group Policy settings supports the use of the Trusted Platform Module (TPM). For details about those settings, see [TPM Group Policy settings](../../../hardware-security/tpm/trusted-platform-module-services-group-policy-settings.md).
-
-BitLocker Group Policy settings can be accessed using the Local Group Policy Editor and the Group Policy Management Console (GPMC) under **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption**.
-
-Most of the BitLocker Group Policy settings are applied when BitLocker is initially turned on for a drive. If a computer isn't compliant with existing Group Policy settings, BitLocker may not be turned on, or BitLocker configuration may be modified until the computer is in a compliant state. When a drive becomes out of compliance with Group Policy settings, only changes to the BitLocker configuration that will bring it into compliance are allowed. This scenario could occur, for example, if a previously encrypted drive was brought out of compliance by change in Group Policy settings.
+If a device isn't compliant with existing settings, BitLocker may not be turned on, or BitLocker configuration may be modified until the computer is in a compliant state. When a drive becomes out of compliance with policy settings, only changes to the BitLocker configuration that will bring it into compliance are allowed. This scenario could occur, for example, if a previously encrypted drive was brought out of compliance by change in Group Policy settings.
 
 If multiple changes are necessary to bring the drive into compliance, BitLocker protection may need to be suspended, the necessary changes made, and then protection resumed. This situation could occur, for example, if a removable drive is initially configured for unlock with a password but then Group Policy settings are changed to disallow passwords and require smart cards. In this situation, BitLocker protection needs to be suspended by using the [Manage-bde](/windows-server/administration/windows-commands/manage-bde) command-line tool, delete the password unlock method, and add the smart card method. After this process is complete, BitLocker is compliant with the Group Policy setting, and BitLocker protection on the drive can be resumed.
 
 In other scenarios, to bring the drive into compliance with a change in Group Policy settings, BitLocker may need to be disabled and the drive decrypted followed by reenabling BitLocker and then re-encrypting the drive. An example of this scenario is when the BitLocker encryption method or cipher strength is changed. The [Manage-bde](/windows-server/administration/windows-commands/manage-bde) command-line can also be used in this scenario to help bring the device into compliance.
 
 ## BitLocker group policy settings details
-
-> [!NOTE]
-> For more details about Active Directory configuration related to BitLocker enablement, please see [Set up MDT for BitLocker](/windows/deployment/deploy-windows-mdt/set-up-mdt-for-bitlocker).
-
-The following sections provide a comprehensive list of BitLocker group policy settings that are organized by usage. BitLocker group policy settings include settings for specific drive types (operating system drives, fixed data drives, and removable data drives) and settings that are applied to all drives.
-
-The following policy settings can be used to determine how a BitLocker-protected drive can be unlocked.
-
-- [Allow devices with Secure Boot and protected DMA ports to opt out of preboot PIN](#allow-devices-with-secure-boot-and-protected-dma-ports-to-opt-out-of-preboot-pin)
-- [Allow network unlock at startup](#allow-network-unlock-at-startup)
-- [Require additional authentication at startup](#require-additional-authentication-at-startup)
-- [Allow enhanced PINs for startup](#allow-enhanced-pins-for-startup)
-- [Configure minimum PIN length for startup](#configure-minimum-pin-length-for-startup)
-- [Disable new DMA devices when this computer is locked](#disable-new-dma-devices-when-this-computer-is-locked)
-- [Disallow standard users from changing the PIN or password](#disallow-standard-users-from-changing-the-pin-or-password)
-- [Configure use of passwords for operating system drives](#configure-use-of-passwords-for-operating-system-drives)
-- [Require additional authentication at startup (Windows Server 2008 and Windows Vista)](#require-additional-authentication-at-startup-windows-server-2008-and-windows-vista)
-- [Configure use of smart cards on fixed data drives](#configure-use-of-smart-cards-on-fixed-data-drives)
-- [Configure use of passwords on fixed data drives](#configure-use-of-passwords-on-fixed-data-drives)
-- [Configure use of smart cards on removable data drives](#configure-use-of-smart-cards-on-removable-data-drives)
-- [Configure use of passwords on removable data drives](#configure-use-of-passwords-on-removable-data-drives)
-- [Validate smart card certificate usage rule compliance](#validate-smart-card-certificate-usage-rule-compliance)
-- [Enable use of BitLocker authentication requiring preboot keyboard input on slates](#enable-use-of-bitlocker-authentication-requiring-preboot-keyboard-input-on-slates)
-
-The following policy settings are used to control how users can access drives and how they can use BitLocker on their computers.
-
-- [Deny write access to fixed drives not protected by BitLocker](#deny-write-access-to-fixed-drives-not-protected-by-bitlocker)
-- [Deny write access to removable drives not protected by BitLocker](#deny-write-access-to-removable-drives-not-protected-by-bitlocker)
-- [Control use of BitLocker on removable drives](#control-use-of-bitlocker-on-removable-drives)
-
-The following policy settings determine the encryption methods and encryption types that are used with BitLocker.
-
-- [Choose drive encryption method and cipher strength](#choose-drive-encryption-method-and-cipher-strength)
-- [Configure use of hardware-based encryption for fixed data drives](#configure-use-of-hardware-based-encryption-for-fixed-data-drives)
-- [Configure use of hardware-based encryption for operating system drives](#configure-use-of-hardware-based-encryption-for-operating-system-drives)
-- [Configure use of hardware-based encryption for removable data drives](#configure-use-of-hardware-based-encryption-for-removable-data-drives)
-- [Enforce drive encryption type on fixed data drives](#enforce-drive-encryption-type-on-fixed-data-drives)
-- [Enforce drive encryption type on operating system drives](#enforce-drive-encryption-type-on-operating-system-drives)
-- [Enforce drive encryption type on removable data drives](#enforce-drive-encryption-type-on-removable-data-drives)
-
-The following policy settings define the recovery methods that can be used to restore access to a BitLocker-protected drive if an authentication method fails or is unable to be used.
-
-- [Choose how BitLocker-protected operating system drives can be recovered](#choose-how-bitlocker-protected-operating-system-drives-can-be-recovered)
-- [Choose how users can recover BitLocker-protected drives (Windows Server 2008 and Windows Vista)](#choose-how-users-can-recover-bitlocker-protected-drives-windows-server-2008-and-windows-vista)
-- [Store BitLocker recovery information in Active Directory Domain Services (Windows Server 2008 and Windows Vista)](#store-bitlocker-recovery-information-in-active-directory-domain-services-windows-server-2008-and-windows-vista)
-- [Choose default folder for recovery password](#choose-default-folder-for-recovery-password)
-- [Choose how BitLocker-protected fixed drives can be recovered](#choose-how-bitlocker-protected-fixed-drives-can-be-recovered)
-- [Choose how BitLocker-protected removable drives can be recovered](#choose-how-bitlocker-protected-removable-drives-can-be-recovered)
-- [Configure the pre-boot recovery message and URL](#configure-the-pre-boot-recovery-message-and-url)
-
-The following policies are used to support customized deployment scenarios in an organization.
-
-- [Allow Secure Boot for integrity validation](#allow-secure-boot-for-integrity-validation)
-- [Provide the unique identifiers for your organization](#provide-the-unique-identifiers-for-your-organization)
-- [Prevent memory overwrite on restart](#prevent-memory-overwrite-on-restart)
-- [Configure TPM platform validation profile for BIOS-based firmware configurations](#configure-tpm-platform-validation-profile-for-bios-based-firmware-configurations)
-- [Configure TPM platform validation profile (Windows Vista, Windows Server 2008, Windows 7, Windows Server 2008 R2)](#configure-tpm-platform-validation-profile-windows-vista-windows-server-2008-windows-7-windows-server-2008-r2)
-- [Configure TPM platform validation profile for native UEFI firmware configurations](#configure-tpm-platform-validation-profile-for-native-uefi-firmware-configurations)
-- [Reset platform validation data after BitLocker recovery](#reset-platform-validation-data-after-bitlocker-recovery)
-- [Use enhanced Boot Configuration Data validation profile](#use-enhanced-boot-configuration-data-validation-profile)
-- [Allow access to BitLocker-protected fixed data drives from earlier versions of Windows](#allow-access-to-bitlocker-protected-fixed-data-drives-from-earlier-versions-of-windows)
-- [Allow access to BitLocker-protected removable data drives from earlier versions of Windows](#allow-access-to-bitlocker-protected-removable-data-drives-from-earlier-versions-of-windows)
-
-### Allow devices with secure boot and protected DMA ports to opt out of preboot PIN
-
-|  Item  | Info |
-|:---|:---|
-|**Policy description**|With this policy setting, TPM-only protection can be allowed for newer, more secure devices, such as devices that support Modern Standby or HSTI, while requiring PIN on older devices.|
-|**Introduced**|Windows 10, version 1703|
-|**Drive type**|Operating system drives|
-|**Policy path**|*Computer Configuration* > *Administrative Templates* > *Windows Components* > *BitLocker Drive Encryption* > *Operating System Drives*|
-|**Conflicts**|This setting overrides the **Require startup PIN with TPM** option of the [Require additional authentication at startup](#require-additional-authentication-at-startup) policy on compliant hardware.|
-|**When enabled**|Users on Modern Standby and HSTI compliant devices will have the choice to turn on BitLocker without preboot authentication.|
-|**When disabled or not configured**|The options of the [Require additional authentication at startup](#require-additional-authentication-at-startup) policy apply.|
 
 #### Reference: Allow devices with secure boot and protected DMA ports to opt out of preboot PIN
 
@@ -1000,12 +917,8 @@ This policy setting is used to establish an identifier that is applied to all dr
 |  Item  | Info |
 |:---|:---|
 |**Policy description**|With this policy setting, unique organizational identifiers can be associated to a new drive that is enabled with BitLocker.|
-|**Introduced**|Windows Server 2008 R2 and Windows 7|
-|**Drive type**|All drives|
-|**Policy path**|*Computer Configuration* > *Administrative Templates* > *Windows Components* > *BitLocker Drive Encryption*|
 |**Conflicts**|Identification fields are required to manage certificate-based data recovery agents on BitLocker-protected drives. BitLocker manages and updates certificate-based data recovery agents only when the identification field is present on a drive and it's identical to the value that is configured on the computer.|
 |**When enabled**|The identification field on the BitLocker-protected drive and any allowed identification field that is used by an organization can be configured.|
-|**When disabled or not configured**|The identification field isn't required.|
 
 #### Reference: Provide the unique identifiers for your organization
 
@@ -1228,48 +1141,6 @@ This policy setting determines specific Boot Configuration Data (BCD) settings t
 > [!NOTE]
 > The setting that controls boot debugging (0x16000010) is always validated, and it has no effect if it's included in the inclusion or the exclusion list.
 
-### Allow access to BitLocker-protected fixed data drives from earlier versions of Windows
-
-This policy setting is used to control whether access to drives is allowed by using the BitLocker To Go Reader, and whether BitLocker To Go Reader can be installed on the drive.
-
-|  Item  | Info |
-|:---|:---|
-|**Policy description**|With this policy setting, it can be configured whether fixed data drives that are formatted with the FAT file system can be unlocked and viewed on computers running Windows Vista, Windows XP with Service Pack 3 (SP3), or Windows XP with Service Pack 2 (SP2).|
-|**Introduced**|Windows Server 2008 R2 and Windows 7|
-|**Drive type**|Fixed data drives|
-|**Policy path**|*Computer Configuration* > *Administrative Templates* > *Windows Components* > *BitLocker Drive Encryption* > *Fixed Data Drives*|
-|**Conflicts**|None|
-|**When enabled and When not configured**|Fixed data drives that are formatted with the FAT file system can be unlocked on computers running Windows Server 2008, Windows Vista, Windows XP with SP3, or Windows XP with SP2, and their content can be viewed. These operating systems have Read-only access to BitLocker-protected drives.|
-|**When disabled**|Fixed data drives that are formatted with the FAT file system and are BitLocker-protected can't be unlocked on computers running Windows Vista, Windows XP with SP3, or Windows XP with SP2. BitLocker To Go Reader (bitlockertogo.exe) isn't installed.|
-
-#### Reference: Allow access to BitLocker-protected fixed data drives from earlier versions of Windows
-
-> [!NOTE]
-> This policy setting doesn't apply to drives that are formatted with the NTFS file system.
-
-When this policy setting is enabled, select the **Do not install BitLocker To Go Reader on FAT formatted fixed drives** check box to help prevent users from running BitLocker To Go Reader from their fixed drives. If BitLocker To Go Reader (bitlockertogo.exe) is present on a drive that doesn't have an identification field specified, or if the drive has the same identification field as specified in the **Provide unique identifiers for your organization** policy setting, the user is prompted to update BitLocker, and BitLocker To Go Reader is deleted from the drive. In this situation, for the fixed drive to be unlocked on computers running Windows Vista, Windows XP with SP3, or Windows XP with SP2, BitLocker To Go Reader must be installed on the computer. If this check box isn't selected, then BitLocker To Go Reader will be installed on the fixed drive to enable users to unlock the drive on computers running Windows Vista, Windows XP with SP3, or Windows XP with SP2.
-
-### Allow access to BitLocker-protected removable data drives from earlier versions of Windows
-
-This policy setting controls access to removable data drives that are using the BitLocker To Go Reader and whether the BitLocker To Go Reader can be installed on the drive.
-
-|  Item  | Info |
-|:---|:---|
-|**Policy description**|With this policy setting, it can be configured whether removable data drives that are formatted with the FAT file system can be unlocked and viewed on computers running Windows Vista, Windows XP with SP3, or Windows XP with SP2.|
-|**Introduced**|Windows Server 2008 R2 and Windows 7|
-|**Drive type**|Removable data drives|
-|**Policy path**|*Computer Configuration* > *Administrative Templates* > *Windows Components* > *BitLocker Drive Encryption* > *Removable Data Drives*|
-|**Conflicts**|None|
-|**When enabled and When not configured**|Removable data drives that are formatted with the FAT file system can be unlocked on computers running Windows Vista, Windows XP with SP3, or Windows XP with SP2, and their content can be viewed. These operating systems have Read-only access to BitLocker-protected drives.|
-|**When disabled**|Removable data drives that are formatted with the FAT file system that are BitLocker-protected can't be unlocked on computers running Windows Vista, Windows XP with SP3, or Windows XP with SP2. BitLocker To Go Reader (bitlockertogo.exe) isn't installed.|
-
-#### Reference: Allow access to BitLocker-protected removable data drives from earlier versions of Windows
-
-> [!NOTE]
-> This policy setting doesn't apply to drives that are formatted with the NTFS file system.
-
-When this policy setting is enabled, select the **Do not install BitLocker To Go Reader on FAT formatted removable drives** check box to help prevent users from running BitLocker To Go Reader from their removable drives. If BitLocker To Go Reader (bitlockertogo.exe) is present on a drive that doesn't have an identification field specified, or if the drive has the same identification field as specified in the **Provide unique identifiers for your organization** policy setting, the user will be prompted to update BitLocker, and BitLocker To Go Reader is deleted from the drive. In this situation, for the removable drive to be unlocked on computers running Windows Vista, Windows XP with SP3, or Windows XP with SP2, BitLocker To Go Reader must be installed on the computer. If this check box isn't selected, then BitLocker To Go Reader will be installed on the removable drive to enable users to unlock the drive on computers running Windows Vista or Windows XP that don't have BitLocker To Go Reader installed.
-
 ## FIPS setting
 
 The Federal Information Processing Standard (FIPS) setting for FIPS compliance can be configured. As an effect of FIPS compliance, users can't create or save a BitLocker password for recovery or as a key protector. The use of a recovery key is permitted.
@@ -1318,11 +1189,3 @@ PCR 7 measures the state of Secure Boot. With PCR 7, BitLocker can use Secure Bo
 PCR 7 measurements must follow the guidance that is described in [Appendix A Trusted Execution Environment EFI Protocol](/windows-hardware/test/hlk/testref/trusted-execution-environment-efi-protocol).
 
 PCR 7 measurements are a mandatory logo requirement for systems that support Modern Standby (also known as Always On, Always Connected PCs), such as the Microsoft Surface RT. On such systems, if the TPM with PCR 7 measurement and secure boot are correctly configured, BitLocker binds to PCR 7 and PCR 11 by default.
-
-## Related articles
-
-- [Trusted Platform Module](/windows/device-security/tpm/trusted-platform-module-overview)
-- [TPM Group Policy settings](/windows/device-security/tpm/trusted-platform-module-services-group-policy-settings)
-- [BitLocker frequently asked questions (FAQ)](faq.yml)
-- [BitLocker overview](index.md)
-- [Prepare your organization for BitLocker: Planning and policies](prepare-your-organization-for-bitlocker-planning-and-policies.md)
