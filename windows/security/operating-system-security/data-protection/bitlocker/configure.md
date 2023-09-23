@@ -29,7 +29,7 @@ The list of settings is sorted alphabetically and organized in four tabs:
 
 The following table lists the BitLocker policies applicable to all drive types, indicating if they're applicable via configuration service provider (CSP) and/or group policy (GPO). Select the policy name for more details.
 
-|Policy name| **CSP** | GPO |
+|Policy name| CSP | GPO |
 |-|-|-|
 |[Allow Standard User Encryption](#allow-standard-user-encryption)|✅|❌|
 |[Allow Suspension Of BitLocker Protection](#allow-suspension-of-bitlocker-protection)|✅|❌|
@@ -44,14 +44,14 @@ The following table lists the BitLocker policies applicable to all drive types, 
 
 |  | Path |
 |--|--|
-| **CSP** | `./Device/Vendor/MSFT/BitLocker/[AllowStandardUserEncryption](/windows/client-management/mdm/bitlocker-csp#allowstandarduserencryption)`|
+| **CSP** | `./Device/Vendor/MSFT/BitLocker/`[AllowStandardUserEncryption](/windows/client-management/mdm/bitlocker-csp#allowstandarduserencryption)|
 | **GPO** | Not available |
 
 ### Allow Suspension Of BitLocker Protection
 
 |  | Path |
 |--|--|
-| **CSP** | `./Device/Vendor/MSFT/BitLocker/[AllowSuspensionOfBitLockerProtection](/windows/client-management/mdm/bitlocker-csp#allowsuspensionofbitlockerprotection)`|
+| **CSP** | `./Device/Vendor/MSFT/BitLocker/`[AllowSuspensionOfBitLockerProtection](/windows/client-management/mdm/bitlocker-csp#allowsuspensionofbitlockerprotection)|
 | **GPO** | Not available |
 
 ### Choose default folder for recovery password
@@ -121,7 +121,7 @@ This policy setting allows you to associate an object identifier from a smart ca
 
 #### [:::image type="icon" source="images/os-drive.svg"::: **Operating system drive**](#tab/os)
 
-|Policy name| **CSP** | GPO |
+|Policy name| CSP | GPO |
 |-|-|-|
 |Allow devices compliant with InstantGo or HSTI to opt out of pre-boot PIN|||
 |[Allow enhanced PINs for startup](#allow-enhanced-pins-for-startup)|||
@@ -262,7 +262,7 @@ This policy setting allows you to associate an object identifier from a smart ca
 
 #### [:::image type="icon" source="images/unlocked-drive.svg"::: **Fixed data drives**](#tab/fixed)
 
-|Policy name| **CSP** | GPO |
+|Policy name| CSP | GPO |
 |-|-|-|
 |Choose how BitLocker-protected fixed drives can be recovered|||
 |Configure use of hardware-based encryption for fixed data drives|||
@@ -316,7 +316,7 @@ This policy setting allows you to associate an object identifier from a smart ca
 
 #### [:::image type="icon" source="images/unlocked-drive.svg"::: **Removable data drives**](#tab/removable)
 
-|Policy name| **CSP** | GPO |
+|Policy name| CSP | GPO |
 |-|-|-|
 |Choose how BitLocker-protected removable drives can be recovered|||
 |Configure use of hardware-based encryption for removable data drives|||
