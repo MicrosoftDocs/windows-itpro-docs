@@ -31,12 +31,28 @@ The following table lists the BitLocker policies applicable to all drive types, 
 
 |Policy name| CSP | GPO |
 |-|-|-|
-|[Choose default folder for recovery password](#choose-default-folder-for-recovery-password)|✅|✅|
+|[[Allow Standard User Encryption](#allow-standard-user-encryption)]|✅|❌|
+|[[Allow Suspension Of BitLocker Protection](#allow-suspension-of-bitlocker-protection)]|✅|❌|
+|[Choose default folder for recovery password](#choose-default-folder-for-recovery-password)|❌|✅|
 |[Choose drive encryption method and cipher strength](#choose-drive-encryption-method-and-cipher-strength)|✅|✅|
-|[Disable new DMA devices when this computer is locked](#disable-new-dma-devices-when-this-computer-is-locked)|✅|✅|
-|[Prevent memory overwrite on restart](#prevent-memory-overwrite-on-restart)|✅|✅|
-|[Provide the unique identifiers for your organization](#provide-the-unique-identifiers-for-your-organization)|❌|✅|
-|[Validate smart card certificate usage rule compliance](#validate-smart-card-certificate-usage-rule-compliance)|✅|❌|
+|[Disable new DMA devices when this computer is locked](#disable-new-dma-devices-when-this-computer-is-locked)|❌|✅|
+|[Prevent memory overwrite on restart](#prevent-memory-overwrite-on-restart)|❌|✅|
+|[Provide the unique identifiers for your organization](#provide-the-unique-identifiers-for-your-organization)|✅|✅|
+|[Validate smart card certificate usage rule compliance](#validate-smart-card-certificate-usage-rule-compliance)|❌|✅|
+
+### Allow Standard User Encryption
+
+| Configuration tool | Path |
+|--|--|
+| CSP | ./Device/Vendor/MSFT/BitLocker/[AllowStandardUserEncryption](/windows/client-management/mdm/bitlocker-csp#allowstandarduserencryption)|
+| Group policy | Not available |
+
+### Allow Suspension Of BitLocker Protection
+
+| Configuration tool | Path |
+|--|--|
+| CSP | ./Device/Vendor/MSFT/BitLocker/[AllowSuspensionOfBitLockerProtection](/windows/client-management/mdm/bitlocker-csp#allowsuspensionofbitlockerprotection) |
+| Group policy | Not available |
 
 ### Choose default folder for recovery password
 
