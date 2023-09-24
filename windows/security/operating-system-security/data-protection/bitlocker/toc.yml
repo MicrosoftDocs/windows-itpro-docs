@@ -36,7 +36,7 @@ items:
     - name: BitLocker policy settings
       href: policy-settings.md
     - name: BitLocker Group Policy settings
-      href: bitlocker-group-policy-settings.md
+      href: _bitlocker-group-policy-settings.md
     - name: BCD settings
       href: bcd-settings-and-bitlocker.md
     - name: BitLocker frequently asked questions (FAQ)
