@@ -496,37 +496,6 @@ The options for choosing property settings that control how users can configure 
 
 - **Allow users to suspend and decrypt BitLocker on removable data drives**   Enables the user to remove BitLocker from the drive or to suspend the encryption while performing maintenance.
 
-### Choose drive encryption method and cipher strength
-
-This policy setting is used to control the encryption method and cipher strength.
-
-|  Item  | Info |
-|:---|:---|
-|**Policy description**|With this policy setting, it can be controlled the encryption method and strength for drives.|
-|**Introduced**|Windows Server 2012 and Windows 8|
-|**Drive type**|All drives|
-|**Policy path**|*Computer Configuration* > *Administrative Templates* > *Windows Components* > *BitLocker Drive Encryption*|
-|**Conflicts**|None|
-|**When enabled**|An encryption algorithm and key cipher strength for BitLocker can be chosen to use to encrypt drives.|
-|**When disabled or not configured**|Beginning with Windows 10, version 1511,  BitLocker uses the default encryption method of XTS-AES 128-bit or the encryption method that is specified by the setup script.
-
-#### Reference: Choose drive encryption method and cipher strength
-
-The values of this policy determine the strength of the cipher that BitLocker uses for encryption. Enterprises may want to control the encryption level for increased security (AES-256 is stronger than AES-128).
-
-If this setting is enabled, it can be configured an encryption algorithm and key cipher strength for fixed data drives, operating system drives, and removable data drives individually.
-
-- For fixed and operating system drives, it's recommended to use the XTS-AES algorithm.
-
-- For removable drives, AES-CBC 128-bit or AES-CBC 256-bit should be used if the drive will be used in other devices that aren't running Windows 10, version 1511 or later.
-
-Changing the encryption method has no effect if the drive is already encrypted or if encryption is in progress. In these cases, this policy setting is ignored.
-
-> [!WARNING]
-> This policy doesn't apply to encrypted drives. Encrypted drives utilize their own algorithm, which is set by the drive during partitioning.
-
-When this policy setting is disabled or not configured, BitLocker will use the default encryption method of XTS-AES 128-bit or the encryption method that is specified in the setup script.
-
 ### Configure use of hardware-based encryption for fixed data drives
 
 This policy controls how BitLocker reacts to systems that are equipped with encrypted drives when they're used as fixed data volumes. Using hardware-based encryption can improve the performance of drive operations that involve frequent reading or writing of data to the drive.
@@ -771,27 +740,6 @@ If the **Require BitLocker backup to AD DS** option isn't selected, AD DS backup
 TPM initialization might be needed during the BitLocker setup. Enable the **Turn on TPM backup to Active Directory Domain Services** policy setting in **Computer Configuration** > **Administrative Templates** > **System** > **Trusted Platform Module Services** to ensure that TPM information is also backed up.
 
 For more information about this setting, see [TPM Group Policy settings](/windows/device-security/tpm/trusted-platform-module-services-group-policy-settings).
-
-### Choose default folder for recovery password
-
-This policy setting is used to configure the default folder for recovery passwords.
-
-|  Item  | Info |
-|:---|:---|
-|**Policy description**|With this policy setting, the default path that is displayed when the BitLocker Setup Wizard prompts the user to enter the location of a folder in which to save the recovery password can be specified.|
-|**Introduced**|Windows Vista|
-|**Drive type**|All drives|
-|**Policy path**|*Computer Configuration* > *Administrative Templates* > *Windows Components* > *BitLocker Drive Encryption*|
-|**Conflicts**|None|
-|**When enabled**|The path that will be used as the default folder location when the user chooses the option to save the recovery password in a folder can be specified. A fully qualified path can be specified. The target computer's environment variables can also be included in the path. If the path isn't valid, the BitLocker Setup Wizard displays the computer's top-level folder view.|
-|**When disabled or not configured**|The BitLocker Setup Wizard displays the computer's top-level folder view when the user chooses the option to save the recovery password in a folder.|
-
-#### Reference: Choose default folder for recovery password
-
-This policy setting is applied when BitLocker is turned on.
-
-> [!NOTE]
-> This policy setting doesn't prevent the user from saving the recovery password in another folder.
 
 ### Choose how BitLocker-protected fixed drives can be recovered
 

@@ -1,22 +1,22 @@
 ---
-title: BitLocker settings 
-description: Learn about the available settings to configure BitLocker.
+title: BitLocker policy settings 
+description: Learn about the policy settings to configure BitLocker.
 ms.collection: 
   - tier1
 ms.topic: reference
 ms.date: 09/19/2023
 ---
 
-# BitLocker settings list
+# BitLocker policy settings
 
-This reference article describes the available settings to configure BitLocker via configuration service provider (CSP) and group policy (GPO).
+This reference article describes the policy settings to configure BitLocker via configuration service provider (CSP) and group policy (GPO).
 
 The list of settings is sorted alphabetically and organized in four tabs:
 
-- **Common settings** lists the settings that apply to all BitLocker-protected drives
-- **Operating system drive** lists the settings applicable to the drive where Windows is installed
-- **Fixed data drives** lists the settings applicable to any local drives, except the operating system drive
-- **Removable data drives** lists the settings applicable to any removable drives
+- **Common settings**: settings applicable to all BitLocker-protected drives
+- **Operating system drive**: settings applicable to the drive where Windows is installed
+- **Fixed data drives**: settings applicable to any local drives, except the operating system drive
+- **Removable data drives**: settings applicable to any removable drives
 
 > [!IMPORTANT]
 > Most of the BitLocker settings are applied when BitLocker is initially turned on for a drive. Encryption isn't restarted if settings change.
@@ -37,34 +37,11 @@ The following table lists the BitLocker policies applicable to all drive types, 
 |[Provide the unique identifiers for your organization](#provide-the-unique-identifiers-for-your-organization)|✅|✅|
 |[Validate smart card certificate usage rule compliance](#validate-smart-card-certificate-usage-rule-compliance)|❌|✅|
 
-### Allow Standard User Encryption
+[!INCLUDE [allow-standard-user-encryption](includes/allow-standard-user-encryption.md)]
 
-|  | Path |
-|--|--|
-| **CSP** | `./Device/Vendor/MSFT/BitLocker/`[AllowStandardUserEncryption](/windows/client-management/mdm/bitlocker-csp#allowstandarduserencryption)|
-| **GPO** | Not available |
+[!INCLUDE [allow-suspension-of-bitlocker-protection](includes/allow-suspension-of-bitlocker-protection.md)]
 
-### Allow Suspension Of BitLocker Protection
-
-|  | Path |
-|--|--|
-| **CSP** | `./Device/Vendor/MSFT/BitLocker/`[AllowSuspensionOfBitLockerProtection](/windows/client-management/mdm/bitlocker-csp#allowsuspensionofbitlockerprotection)|
-| **GPO** | Not available |
-
-### Choose default folder for recovery password
-
-Specify the default path that is displayed when the *BitLocker Drive Encryption setup wizard* prompts the user to enter the location of a folder in which to save the recovery password. You can specify either a fully qualified path or include the target computer's environment variables in the path:
-
-- If the path is not valid, the BitLocker setup wizard will display the computer's top-level folder view
-- If you disable or do not configure this policy setting, the BitLocker setup wizard will display the computer's top-level folder view when the user chooses the option to save the recovery password in a folder
-
-> [!NOTE]
-> This policy setting does not prevent the user from saving the recovery password in another folder.
-
-|  | Path |
-|--|--|
-| **CSP** | Not available |
-| **GPO** | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** |
+[!INCLUDE [choose-default-folder-for-recovery-password](includes/choose-default-folder-for-recovery-password.md)]
 
 ### Choose drive encryption method and cipher strength
 
@@ -76,6 +53,9 @@ Recommended settings:
 
 If you disable or do not configure this policy setting, BitLocker uses the default encryption method of XTS-AES 128-bit.
 
+> [!WARNING]
+> This policy doesn't apply to encrypted drives. Encrypted drives utilize their own algorithm, which is set by the drive during partitioning.
+
 |  | Path |
 |--|--|
 | **CSP** | `./Device/Vendor/MSFT/BitLocker/`[EncryptionMethodByDriveType](/windows/client-management/mdm/bitlocker-csp#encryptionmethodbydrivetype)|
@@ -85,7 +65,7 @@ If you disable or do not configure this policy setting, BitLocker uses the defau
 
 |  | Path |
 |--|--|
-| **CSP** | `./Device/Vendor/MSFT/BitLocker/`[AllowWarningForOtherDiskEncryption](/windows/client-management/mdm/bitlocker-csp#configurerecoverypasswordrotation)|
+| **CSP** | `./Device/Vendor/MSFT/BitLocker/`[ConfigureRecoveryPasswordRotation](/windows/client-management/mdm/bitlocker-csp#configurerecoverypasswordrotation)|
 | **GPO** | Not available |
 
 ### Disable new DMA devices when this computer is locked
