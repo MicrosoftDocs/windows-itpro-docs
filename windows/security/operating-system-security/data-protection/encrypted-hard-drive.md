@@ -68,13 +68,13 @@ Configuration of encrypted hard drives as startup drives is done using the same 
 - **Deploy from server**: This deployment method involves PXE booting a client with Encrypted Hard Drives present. Configuration of Encrypted Hard Drives happens automatically in this environment when the Enhanced Storage component is added to the PXE boot image. During deployment, the [TCGSecurityActivationDisabled](/windows-hardware/customize/desktop/unattend/microsoft-windows-enhancedstorage-adm-tcgsecurityactivationdisabled) setting in unattend.xml controls the encryption behavior of Encrypted Hard Drives.
 - **Disk Duplication**: This deployment method involves use of a previously configured device and disk duplication tools to apply a Windows image to an Encrypted Hard Drive. Disks must be partitioned using at least Windows 8 or Windows Server 2012 for this configuration to work. Images made using disk duplicators won't work.
 
-## Configuring hardware-based encryption with group policy
+## Configuring hardware-based encryption with policy settings
 
-There are three related Group Policy settings that help you manage how BitLocker uses hardware-based encryption and which encryption algorithms to use. If these settings aren't configured or disabled on systems that are equipped with encrypted drives, BitLocker uses software-based encryption:
+There are three related policy settings that help you manage how BitLocker uses hardware-based encryption and which encryption algorithms to use. If these settings aren't configured or disabled on systems that are equipped with encrypted drives, BitLocker uses software-based encryption:
 
-- [Configure use of hardware-based encryption for fixed data drives](bitlocker/bitlocker-group-policy-settings.md#configure-use-of-hardware-based-encryption-for-fixed-data-drives)  
-- [Configure use of hardware-based encryption for removable data drives](bitlocker/bitlocker-group-policy-settings.md#configure-use-of-hardware-based-encryption-for-removable-data-drives)
-- [Configure use of hardware-based encryption for operating system drives](bitlocker/bitlocker-group-policy-settings.md#configure-use-of-hardware-based-encryption-for-operating-system-drives)
+- [Configure use of hardware-based encryption for fixed data drives](bitlocker/policy-settings.md#configure-use-of-hardware-based-encryption-for-fixed-data-drives)  
+- [Configure use of hardware-based encryption for removable data drives](bitlocker/policy-settings.md#configure-use-of-hardware-based-encryption-for-removable-data-drives)
+- [Configure use of hardware-based encryption for operating system drives](bitlocker/policy-settings.md#configure-use-of-hardware-based-encryption-for-operating-system-drives)
 
 ## Encrypted hard drive architecture
 
