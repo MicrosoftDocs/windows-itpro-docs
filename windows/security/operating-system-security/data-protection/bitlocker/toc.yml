@@ -33,6 +33,8 @@ items:
       href: bitlocker-how-to-enable-network-unlock.md
 - name: Reference
   items:
+    - name: BitLocker policy settings
+      href: policy-settings.md
     - name: BitLocker Group Policy settings
       href: bitlocker-group-policy-settings.md
     - name: BCD settings
