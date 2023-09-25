@@ -591,3 +591,5 @@
 
         - name: Install fonts in Windows client
           href: windows-10-missing-fonts.md
+        - name: Customize Windows PE boot images
+          href: customize-boot-image.md

@@ -5,7 +5,7 @@ ms.collection:
   - highpri
   - tier1
 ms.date: 2/15/2022
-ms.topic: article
+ms.topic: how-to
 ---
 
 # Manage Windows Hello for Business in your organization

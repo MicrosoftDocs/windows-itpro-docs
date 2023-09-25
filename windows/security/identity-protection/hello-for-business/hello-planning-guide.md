@@ -2,7 +2,7 @@
 title: Planning a Windows Hello for Business Deployment
 description: Learn about the role of each component within Windows Hello for Business and how certain deployment decisions affect other aspects of your infrastructure.
 ms.date: 09/16/2020
-ms.topic: article
+ms.topic: overview
 ---
 # Planning a Windows Hello for Business Deployment
 
@@ -88,7 +88,7 @@ The key trust type does not require issuing authentication certificates to end u
 The certificate trust type issues authentication certificates to end users.  Users authenticate using a certificate requested using a hardware-bound key created during the built-in provisioning experience.  Unlike key trust, certificate trust does not require Windows Server 2016 domain controllers (but still requires [Windows Server 2016 or later Active Directory schema](/windows/security/identity-protection/hello-for-business/hello-hybrid-cert-trust#directories)).  Users can use their certificate to authenticate to any Windows Server 2008 R2, or later, domain controller.
 
 > [!NOTE]
-> RDP does not support authentication with Windows Hello for Business key trust deployments as a supplied credential. RDP is only supported with certificate trust deployments as a supplied credential at this time. Windows Hello for Business key trust can be used with [Windows Defender Remote Credential Guard](../remote-credential-guard.md).
+> RDP does not support authentication with Windows Hello for Business key trust deployments as a supplied credential. RDP is only supported with certificate trust deployments as a supplied credential at this time. Windows Hello for Business key trust can be used with [Remote Credential Guard](../remote-credential-guard.md).
 
 #### Device registration
 

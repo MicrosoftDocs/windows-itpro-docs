@@ -1,35 +1,26 @@
 ---
 title: Create mandatory user profiles
 description: A mandatory user profile is a special type of pre-configured roaming user profile that administrators can use to specify settings for users.
-ms.prod: windows-client
-author: vinaypamnani-msft
-ms.author: vinpa
-ms.date: 04/11/2023
-ms.reviewer:
-manager: aaroncz
+ms.date: 08/10/2023
 ms.topic: article
 ms.collection:
 - highpri
 - tier2
-ms.technology: itpro-manage
-appliesto:
-- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
-- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
 # Create mandatory user profiles
 
-A mandatory user profile is a roaming user profile that has been pre-configured by an administrator to specify settings for users. Settings commonly defined in a mandatory profile include (but are not limited to) icons that appear on the desktop, desktop backgrounds, user preferences in Control Panel, printer selections, and more. Configuration changes made during a user's session that are normally saved to a roaming user profile are not saved when a mandatory user profile is assigned.
+A mandatory user profile is a roaming user profile that has been pre-configured by an administrator to specify settings for users. Settings commonly defined in a mandatory profile include (but aren't limited to) icons that appear on the desktop, desktop backgrounds, user preferences in Control Panel, printer selections, and more. Configuration changes made during a user's session that are normally saved to a roaming user profile aren't saved when a mandatory user profile is assigned.
 
 Mandatory user profiles are useful when standardization is important, such as on a kiosk device or in educational settings. Only system administrators can make changes to mandatory user profiles.
 
-When the server that stores the mandatory profile is unavailable, such as when the user is not connected to the corporate network, users with mandatory profiles can sign in with the locally cached copy of the mandatory profile, if one exists. Otherwise, the user will be signed in with a temporary profile.
+When the server that stores the mandatory profile is unavailable, such as when the user isn't connected to the corporate network, users with mandatory profiles can sign in with the locally cached copy of the mandatory profile, if one exists. Otherwise, the user is signed in with a temporary profile.
 
 User profiles become mandatory profiles when the administrator renames the `NTuser.dat` file (the registry hive) of each user's profile in the file system of the profile server from `NTuser.dat` to `NTuser.man`. The `.man` extension causes the user profile to be a read-only profile.
 
 ## Profile extension for each Windows version
 
-The name of the folder in which you store the mandatory profile must use the correct extension for the operating system it will be applied to. The following table lists the correct extension for each operating system version.
+The name of the folder in which you store the mandatory profile must use the correct extension for the operating system it applies to. The following table lists the correct extension for each operating system version.
 
 | Client operating system version     | Server operating system version                 | Profile extension |
 |-------------------------------------|-------------------------------------------------|-------------------|
@@ -48,7 +39,7 @@ First, you create a default user profile with the customizations that you want, 
 
 ### How to create a default user profile
 
-1. Sign in to a computer running Windows as a member of the local Administrator group. Do not use a domain account.
+1. Sign in to a computer running Windows as a member of the local Administrator group. Don't use a domain account.
 
    > [!NOTE]
    > Use a lab or extra computer running a clean installation of Windows to create a default user profile. Do not use a computer that is required for business (that is, a production computer). This process removes all domain accounts from the computer, including user profile folders.
@@ -56,11 +47,11 @@ First, you create a default user profile with the customizations that you want, 
 1. Configure the computer settings that you want to include in the user profile. For example, you can configure settings for the desktop background, uninstall default apps, install line-of-business apps, and so on.
 
    > [!NOTE]
-   > Unlike previous versions of Windows, you cannot apply a Start and taskbar layout using a mandatory profile. For alternative methods for customizing the Start menu and taskbar, see [Related topics](#related-topics).
+   > Unlike previous versions of Windows, you cannot apply a Start and taskbar layout using a mandatory profile. For alternative methods for customizing the Start menu and taskbar, see [Related topics](#related-articles).
 
 1. [Create an answer file (Unattend.xml)](/windows-hardware/customize/desktop/wsim/create-or-open-an-answer-file) that sets the [CopyProfile](/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup-copyprofile) parameter to **True**. The CopyProfile parameter causes Sysprep to copy the currently signed-on user's profile folder to the default user profile. You can use [Windows System Image Manager](/windows-hardware/customize/desktop/wsim/windows-system-image-manager-technical-reference), which is part of the Windows Assessment and Deployment Kit (ADK) to create the Unattend.xml file.
 
-1. Uninstall any application you do not need or want from the PC. For examples on how to uninstall Windows Application see [Remove-AppxProvisionedPackage](/powershell/module/dism/remove-appxprovisionedpackage?view=win10-ps&preserve-view=true). For a list of uninstallable applications, see [Understand the different apps included in Windows](/windows/application-management/apps-in-windows-10).
+1. Uninstall any application you don't need or want from the PC. For examples on how to uninstall Windows Application see [Remove-AppxProvisionedPackage](/powershell/module/dism/remove-appxprovisionedpackage?view=win10-ps&preserve-view=true). For a list of uninstallable applications, see [Understand the different apps included in Windows](/windows/application-management/overview-windows-apps).
 
    > [!NOTE]
    > It is highly recommended to uninstall unwanted or unneeded apps as it will speed up user sign-in times.
@@ -82,27 +73,27 @@ First, you create a default user profile with the customizations that you want, 
 
 1. The sysprep process reboots the PC and starts at the first-run experience screen. Complete the setup, and then sign in to the computer using an account that has local administrator privileges.
 
-1. Right-click Start, go to **Control Panel** (view by large or small icons) > **System** > **Advanced system settings**, and click **Settings** in the **User Profiles** section.
+1. Right-click Start, go to **Control Panel** (view by large or small icons) > **System** > **Advanced system settings**, and select **Settings** in the **User Profiles** section.
 
-1. In **User Profiles**, click **Default Profile**, and then click **Copy To**.
+1. In **User Profiles**, select **Default Profile**, and then select **Copy To**.
 
    ![Example of User Profiles UI.](images/copy-to.png)
 
-1. In **Copy To**, under **Permitted to use**, click **Change**.
+1. In **Copy To**, under **Permitted to use**, select **Change**.
 
    ![Example of Copy To UI.](images/copy-to-change.png)
 
-1. In **Select User or Group**, in the **Enter the object name to select** field, type `everyone`, click **Check Names**, and then click **OK**.
+1. In **Select User or Group**, in the **Enter the object name to select** field, type `everyone`, select **Check Names**, and then select **OK**.
 
 1. In **Copy To**, in the **Copy profile to** field, enter the path and folder name where you want to store the mandatory profile. The folder name must use the correct [extension](#profile-extension-for-each-windows-version) for the operating system version. For example, the folder name must end with `.v6` to identify it as a user profile folder for Windows 10, version 1607 or later.
 
-   - If the device is joined to the domain and you are signed in with an account that has permissions to write to a shared folder on the network, you can enter the shared folder path.
+   - If the device is joined to the domain and you're signed in with an account that has permissions to write to a shared folder on the network, you can enter the shared folder path.
 
      ![Example of Copy profile to.](images/copy-to-path.png)
 
-   - If the device is not joined to the domain, you can save the profile locally and then copy it to the shared folder location.
+   - If the device isn't joined to the domain, you can save the profile locally, and then copy it to the shared folder location.
 
-1. Click **OK** to copy the default user profile.
+1. Select **OK** to copy the default user profile.
 
 ### How to make the user profile mandatory
 
@@ -118,7 +109,7 @@ First, you create a default user profile with the customizations that you want, 
 1. Open the properties of the "profile.v6" folder.
 1. Select the **Security** tab and then select **Advanced**.
 1. Verify the **Owner** of the folder. It must be the builtin **Administrators** group. To change the owner, you must be a member of the Administrators group on the file server, or have "Set owner" privilege on the server.
-1. When you set the owner, select **Replace owner on subcontainers and objects** before you click OK.
+1. When you set the owner, select **Replace owner on subcontainers and objects** before you select OK.
 
 ## Apply a mandatory user profile to users
 
@@ -127,14 +118,10 @@ In a domain, you modify properties for the user account to point to the mandator
 ### How to apply a mandatory user profile to users
 
 1. Open **Active Directory Users and Computers** (dsa.msc).
-
-1. Navigate to the user account that you will assign the mandatory profile to.
-
+1. Navigate to the user account that you'll assign the mandatory profile to.
 1. Right-click the user name and open **Properties**.
-
 1. On the **Profile** tab, in the **Profile path** field, enter the path to the shared folder without the extension. For example, if the folder name is `\\server\share\profile.v6`, you would enter `\\server\share\profile`.
-
-1. Click **OK**.
+1. Select **OK**.
 
 It may take some time for this change to replicate to all domain controllers.
 
@@ -149,9 +136,9 @@ When a user is configured with a mandatory profile, Windows starts as though it 
 | Computer Configuration > Administrative Templates > Windows Components > Cloud Content > **Turn off Microsoft consumer experience** = Enabled | ✅         | ❌                 |
 
 > [!NOTE]
-> The Group Policy settings above can be applied in Windows Professional edition.
+> These Group Policy settings can be applied in Windows Professional edition.
 
-## Related topics
+## Related articles
 
 - [Manage Windows 10 Start layout and taskbar options](/windows/configuration/windows-10-start-layout-options-and-policies)
 - [Lock down Windows 10 to specific apps](/windows/configuration/lock-down-windows-10-to-specific-apps)

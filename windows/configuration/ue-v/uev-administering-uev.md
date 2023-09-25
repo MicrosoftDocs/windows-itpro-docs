@@ -3,10 +3,12 @@ title: Administering UE-V
 description: Learn how to perform administrative tasks for User Experience Virtualization (UE-V). These tasks include configuring the UE-V service and recovering lost settings.
 author: aczechowski
 ms.prod: windows-client
-ms.collection: tier3
+ms.collection:
+ - tier3
+ - must-keep
 ms.date: 04/19/2017
 ms.reviewer: 
-manager: dougeby
+manager: aaroncz
 ms.author: aaroncz
 ms.topic: article
 ms.technology: itpro-configure

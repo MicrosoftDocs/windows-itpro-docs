@@ -16,7 +16,7 @@ There are two levels to hiding notifications:
 1. Hide non-critical notifications, such as regular updates about the number of scans Microsoft Defender Antivirus ran in the past week
 2. Hide all notifications
 
-If you set **Hide all notifications** to **Enabled**, changing the **Hide non-critical notifications** setting will have no effect.
+If you set **Hide all notifications** to **Enabled**, changing the **Hide non-critical notifications** setting has no effect.
 
 You can only use Group Policy to change these settings.
 
@@ -30,10 +30,10 @@ These notifications can be hidden only by using Group Policy.
 > You must have Windows 10, version 1903 or higher. The ADMX/ADML template files for earlier versions of Windows do not include these Group Policy settings.
 
 1. Download the latest [Administrative Templates (.admx) for Windows 10, v2004](https://www.microsoft.com/download/101445).
-1. On your Group Policy management machine, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object you want to configure and click **Edit**.
-1. In **Group Policy Management Editor**, go to **Computer configuration** and click **Administrative templates**.
+1. On your Group Policy management machine, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object you want to configure and select **Edit**.
+1. In **Group Policy Management Editor**, go to **Computer configuration** and select **Administrative templates**.
 1. Expand the tree to **Windows components > Windows Security > Notifications**. For Windows 10 version 1803 and below, the path would be **Windows components > Windows Defender Security Center > Notifications**
-1. Open the **Hide non-critical notifications** setting and set it to **Enabled**. Click **OK**.
+1. Open the **Hide non-critical notifications** setting and set it to **Enabled**. Select **OK**.
 1. [Deploy the updated GPO as you normally do](/windows/win32/srvnodes/group-policy).
 
 ## Use Group Policy to hide all notifications
@@ -45,14 +45,14 @@ These notifications can be hidden only by using Group Policy.
 > [!IMPORTANT]
 > You must have Windows 10, version 1903 or higher. The ADMX/ADML template files for earlier versions of Windows do not include these Group Policy settings.
 
-1. On your Group Policy management machine, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object you want to configure and click **Edit**.
-1. In **Group Policy Management Editor**, go to **Computer configuration** and click **Administrative templates**.
+1. On your Group Policy management machine, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object you want to configure and select **Edit**.
+1. In **Group Policy Management Editor**, go to **Computer configuration** and select **Administrative templates**.
 1. Expand the tree to **Windows components > Windows Security > Notifications**. For Windows 10 version 1803 and below, the path would be **Windows components > Windows Defender Security Center > Notifications**.
 
     > [!NOTE]
     > For Windows 10 version 2004 and above the path would be **Windows components > Windows Security > Notifications**.
 
-1. Open the **Hide all notifications** setting and set it to **Enabled**. Click **OK**.
+1. Open the **Hide all notifications** setting and set it to **Enabled**. Select **OK**.
 1. [Deploy the updated GPO as you normally do](/windows/win32/srvnodes/group-policy).
 
 > [!NOTE]

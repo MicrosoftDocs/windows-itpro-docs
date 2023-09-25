@@ -33,11 +33,11 @@ items:
     - name: Access Control
       href: access-control/access-control.md
       displayName: ACL/SACL
-    - name: Windows Defender Credential Guard
+    - name: Credential Guard
       href: credential-guard/toc.yml
-    - name: Windows Defender Remote Credential Guard
+    - name: Remote Credential Guard
       href: remote-credential-guard.md
-  - name: LSA Protection
+  - name: LSA Protection 🔗
     href: /windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection
   - name: Local Accounts
     href: access-control/local-accounts.md

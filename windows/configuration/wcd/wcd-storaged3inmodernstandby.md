@@ -5,8 +5,9 @@ ms.prod: windows-client
 author: aczechowski
 ms.localizationpriority: medium
 ms.author: aaroncz
-ms.topic: article
-manager: dougeby
+ms.topic: reference
+ms.collection: must-keep
+manager: aaroncz
 ms.technology: itpro-configure
 ms.date: 12/31/2017
 ---

@@ -6,8 +6,9 @@ ms.prod: windows-client
 ms.technology: itpro-apps
 ms.date: 05/02/2022
 ms.reviewer: 
-manager: dougeby
+manager: aaroncz
 ms.author: aaroncz
+ms.collection: must-keep
 ms.topic: how-to
 ---
 

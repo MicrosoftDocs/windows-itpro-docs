@@ -5,14 +5,14 @@ manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
 author: frankroj
-ms.date: 11/01/2022
+ms.date: 09/18/2023
 ms.topic: article
 ms.technology: itpro-deploy
 ---
 
 # Exclude files and settings
 
-When you specify the migration .xml files, `MigApp.xml`, `MigDocs.xml`, and `MigUser.xml`, the User State Migration Tool (USMT) 10.0 migrates the settings and components listed, as discussed in [What does USMT migrate?](usmt-what-does-usmt-migrate.md) You can create a custom .xml file to further specify what to include or exclude in the migration. In addition you can create a `Config.xml` file to exclude an entire component from a migration. You can't, however, exclude users by using the migration .xml files or the `Config.xml` file. The only way to specify which users to include and exclude is by using the user options on the command line in the ScanState tool. For more information, see the [User options](usmt-scanstate-syntax.md#user-options) section of the [ScanState syntax](usmt-scanstate-syntax.md) article.
+When you specify the migration .xml files, `MigApp.xml`, `MigDocs.xml`, and `MigUser.xml`, the User State Migration Tool (USMT) 10.0 migrates the settings and components listed, as discussed in [What does USMT migrate?](usmt-what-does-usmt-migrate.md) You can create a custom .xml file to further specify what to include or exclude in the migration. In addition, you can create a `Config.xml` file to exclude an entire component from a migration. You can't, however, exclude users by using the migration .xml files or the `Config.xml` file. The only way to specify which users to include and exclude is by using the user options on the command line in the ScanState tool. For more information, see the [User options](usmt-scanstate-syntax.md#user-options) section of the [ScanState syntax](usmt-scanstate-syntax.md) article.
 
 Methods to customize the migration and include and exclude files and settings include:
 
@@ -33,7 +33,8 @@ We recommend that you create a custom .xml file instead of modifying the default
 The migration .xml files, `MigApp.xml`, `MigDocs.xml`, and `MigUser.xml`, contain the **&lt;component&gt;** element, which typically represents a self-contained component or an application such as Microsoft® Office Outlook® and Word. To exclude the files and registry settings that are associated with these components, use the **&lt;include&gt;** and **&lt;exclude&gt;** elements. For example, you can use these elements to migrate all files and settings with pattern X except files and settings with pattern Y, where Y is more specific than X. For the syntax of these elements, see [USMT XML Reference](usmt-xml-reference.md).
 
 > [!NOTE]
-> If you specify an **&lt;exclude&gt;** rule, always specify a corresponding **&lt;include&gt;** rule. Otherwise, if you do not specify an **&lt;include&gt;** rule, the specific files or settings will not be included. They will already be excluded from the migration. Thus, an unaccompanied **&lt;exclude&gt;** rule is unnecessary.
+>
+> If you specify an **&lt;exclude&gt;** rule, always specify a corresponding **&lt;include&gt;** rule. Otherwise, if you don't specify an **&lt;include&gt;** rule, the specific files or settings aren't included. They're already excluded from the migration. Thus, an unaccompanied **&lt;exclude&gt;** rule is unnecessary.
 
 - [Example 1: How to migrate all files from C:\\ except .mp3 files](#example-1-how-to-migrate-all-files-from-c-except-mp3-files)
 
@@ -82,16 +83,16 @@ The following .xml file migrates all files and subfolders in `C:\Data`, except t
         <displayName _locID="miguser.sharedvideo">Test component</displayName>
         <role role="Data">
             <rules>
-         <include>
-            <objectSet>
-                 <pattern type="File">C:\Data\* [*]</pattern>
-            </objectSet>
-          </include>
-         <exclude>
-             <objectSet>
-                   <pattern type="File"> C:\Data\temp\* [*]</pattern>
-             </objectSet>
-         </exclude>  
+                <include>
+                    <objectSet>
+                        <pattern type="File">C:\Data\* [*]</pattern>
+                    </objectSet>
+                </include>
+                <exclude>
+                    <objectSet>
+                        <pattern type="File"> C:\Data\temp\* [*]</pattern>
+                    </objectSet>
+                </exclude>
             </rules>
         </role>
     </component>
@@ -104,23 +105,23 @@ The following .xml file migrates any subfolders in `C:\`EngineeringDrafts`, but 
 
 ```xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/test">
-<component type="Documents" context="System">
-  <displayName>Component to migrate all Engineering Drafts Documents without subfolders</displayName>
-  <role role="Data">
-    <rules>
-         <include>
-            <objectSet>
-                 <pattern type="File"> C:\EngineeringDrafts\* [*]</pattern>
-            </objectSet>
-          </include>
-      <exclude>
-        <objectSet>
-          <pattern type="File"> C:\EngineeringDrafts\ [*]</pattern>
-        </objectSet>
-      </exclude>
-    </rules>
-  </role>
-</component>
+    <component type="Documents" context="System">
+        <displayName>Component to migrate all Engineering Drafts Documents without subfolders</displayName>
+        <role role="Data">
+            <rules>
+                <include>
+                    <objectSet>
+                        <pattern type="File"> C:\EngineeringDrafts\* [*]</pattern>
+                    </objectSet>
+                </include>
+                <exclude>
+                    <objectSet>
+                        <pattern type="File"> C:\EngineeringDrafts\ [*]</pattern>
+                    </objectSet>
+                </exclude>
+            </rules>
+        </role>
+    </component>
 </migration>
 ```
 
@@ -130,35 +131,35 @@ The following .xml file migrates all files and subfolders in `C:\EngineeringDraf
 
 ```xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/test">
-<component type="Documents" context="System">
-  <displayName>Component to migrate all Engineering Drafts Documents except Sample.doc</displayName>
-  <role role="Data">
-    <rules>
-         <include>
-            <objectSet>
-                 <pattern type="File"> C:\EngineeringDrafts\* [*]</pattern>
-            </objectSet>
-          </include>
-      <exclude>
-        <objectSet>
-          <pattern type="File"> C:\EngineeringDrafts\ [Sample.doc]</pattern>
-        </objectSet>
-      </exclude>
-    </rules>
-  </role>
-</component>
+    <component type="Documents" context="System">
+        <displayName>Component to migrate all Engineering Drafts Documents except Sample.doc</displayName>
+        <role role="Data">
+            <rules>
+                <include>
+                    <objectSet>
+                        <pattern type="File"> C:\EngineeringDrafts\* [*]</pattern>
+                    </objectSet>
+                </include>
+                <exclude>
+                    <objectSet>
+                        <pattern type="File"> C:\EngineeringDrafts\ [Sample.doc]</pattern>
+                    </objectSet>
+                </exclude>
+            </rules>
+        </role>
+    </component>
 </migration>
 ```
 
 ### Example 5: How to exclude a file from any location
 
-To exclude a Sample.doc file from any location on the C: drive, use the **&lt;pattern&gt;** element. If multiple files exist with the same name on the C: drive, all of these files will be excluded.
+To exclude a Sample.doc file from any location on the C: drive, use the **&lt;pattern&gt;** element. If multiple files exist with the same name on the C: drive, all of these files are excluded.
 
 ```xml
 <pattern type="File"> C:\* [Sample.doc] </pattern>
 ```
 
-To exclude a Sample.doc file from any drive on the computer, use the **&lt;script&gt;** element. If multiple files exist with the same name, all of these files will be excluded.
+To exclude a Sample.doc file from any drive on the computer, use the **&lt;script&gt;** element. If multiple files exist with the same name, all of these files are excluded.
 
 ```xml
 <script>MigXmlHelper.GenerateDrivePatterns("* [sample.doc]", "Fixed")</script>
@@ -174,15 +175,15 @@ The following .xml file excludes all `.mp3` files from the migration:
 
 ```xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/excludefiles">
-  <component context="System" type="Documents">
+    <component context="System" type="Documents">
         <displayName>Test</displayName>
         <role role="Data">
             <rules>
-             <unconditionalExclude>
-                        <objectSet>
-    <script>MigXmlHelper.GenerateDrivePatterns ("* [*.mp3]", "Fixed")</script>
-                        </objectSet> 
-             </unconditionalExclude>
+                <unconditionalExclude>
+                    <objectSet>
+                        <script>MigXmlHelper.GenerateDrivePatterns ("* [*.mp3]", "Fixed")</script>
+                    </objectSet>
+                </unconditionalExclude>
             </rules>
         </role>
     </component>
@@ -199,11 +200,11 @@ The following .xml file excludes only the files located on the C: drive.
         <displayName>Test</displayName>
         <role role="Data">
             <rules>
-  <unconditionalExclude>
+                <unconditionalExclude>
                     <objectSet>
-      <pattern type="File">c:\*[*]</pattern>
+                        <pattern type="File">c:\*[*]</pattern>
                     </objectSet>
-  </unconditionalExclude>
+                </unconditionalExclude>
             </rules>
         </role>
     </component>
@@ -217,53 +218,53 @@ The following .xml file unconditionally excludes the `HKEY_CURRENT_USER` registr
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/miguser">
-   <component type="Documents" context="User">
-      <displayName>Test</displayName>
-      <role role="Data">
-         <rules>
-            <include>
-               <objectSet>
-                  <pattern type="Registry">HKCU\testReg[*]</pattern>
-               </objectSet>
-            </include>
-            <unconditionalExclude>
-               <objectSet>
-                  <pattern type="Registry">HKCU\*[*]</pattern>
-               </objectSet>
-            </unconditionalExclude>
-         </rules>
-      </role>
-   </component>
+    <component type="Documents" context="User">
+        <displayName>Test</displayName>
+        <role role="Data">
+            <rules>
+                <include>
+                    <objectSet>
+                        <pattern type="Registry">HKCU\testReg[*]</pattern>
+                    </objectSet>
+                </include>
+                <unconditionalExclude>
+                    <objectSet>
+                        <pattern type="Registry">HKCU\*[*]</pattern>
+                    </objectSet>
+                </unconditionalExclude>
+            </rules>
+        </role>
+    </component>
 </migration>
 ```
 
 ##### Example 4: How to Exclude `C:\Windows` and `C:\Program Files`
 
-The following .xml file unconditionally excludes the system folders of `C:\Windows` and `C:\Program Files`. Note that all `*.docx`, `*.xls` and `*.ppt` files won't be migrated because the **&lt;unconditionalExclude&gt;** element takes precedence over the **&lt;include&gt;** element.
+The following .xml file unconditionally excludes the system folders of `C:\Windows` and `C:\Program Files`. All `*.docx`, `*.xls` and `*.ppt` files aren't migrated because the **&lt;unconditionalExclude&gt;** element takes precedence over the **&lt;include&gt;** element.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/miguser">
-   <component type="Documents" context="System">
-      <displayName>Test</displayName>
-      <role role="Data">
-         <rules>
-            <include>
-               <objectSet>
-    <script>MigXmlHelper.GenerateDrivePatterns ("* [*.doc]", "Fixed")</script>
-    <script>MigXmlHelper.GenerateDrivePatterns ("* [*.xls]", "Fixed")</script>
-    <script>MigXmlHelper.GenerateDrivePatterns ("* [*.ppt]", "Fixed")</script>
-               </objectSet>
-            </include>
-            <unconditionalExclude>
-               <objectSet>
-                  <pattern type="File">C:\Program Files\* [*]</pattern>
-<pattern type="File">C:\Windows\* [*]</pattern>
-               </objectSet>
-            </unconditionalExclude>
-         </rules>
-      </role>
-   </component>
+    <component type="Documents" context="System">
+        <displayName>Test</displayName>
+        <role role="Data">
+            <rules>
+                <include>
+                    <objectSet>
+                        <script>MigXmlHelper.GenerateDrivePatterns ("* [*.doc]", "Fixed")</script>
+                        <script>MigXmlHelper.GenerateDrivePatterns ("* [*.xls]", "Fixed")</script>
+                        <script>MigXmlHelper.GenerateDrivePatterns ("* [*.ppt]", "Fixed")</script>
+                    </objectSet>
+                </include>
+                <unconditionalExclude>
+                    <objectSet>
+                        <pattern type="File">C:\Program Files\* [*]</pattern>
+                        <pattern type="File">C:\Windows\* [*]</pattern>
+                    </objectSet>
+                </unconditionalExclude>
+            </rules>
+        </role>
+    </component>
 </migration>
 ```
 
@@ -275,12 +276,13 @@ You can create and modify a `Config.xml` file if you want to exclude components 
 
 - **To exclude an operating system setting:** Specify `migrate="no"` for the setting under the **&lt;WindowsComponents&gt;** section.
 
-- **To exclude My Documents:** Specify `migrate="no"` for **My Documents** under the **&lt;Documents&gt;** section. Note that any **&lt;include&gt;** rules in the .xml files will still apply. For example, if you have a rule that includes all the .docx files in My Documents, then only the .docx files will be migrated, but the rest of the files won't.
+- **To exclude My Documents:** Specify `migrate="no"` for **My Documents** under the **&lt;Documents&gt;** section. Any **&lt;include&gt;** rules in the .xml files are still applied. For example, if you have a rule that includes all the .docx files in My Documents, then .docx files are still migrated. However, any additional files that aren't .docx aren't migrated.
 
 For more information, see [Config.xml File](usmt-configxml-file.md).
 
 > [!NOTE]
-> To exclude a component from the `Config.xml` file, set the **migrate** value to **"no"**. Deleting the XML tag for the component from the `Config.xml` file will not exclude the component from your migration.
+>
+> To exclude a component from the `Config.xml` file, set the **migrate** value to **"no"**. Deleting the XML tag for the component from the `Config.xml` file doesn't exclude the component from your migration.
 
 ## Related articles
 
