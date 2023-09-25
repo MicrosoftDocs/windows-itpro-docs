@@ -70,7 +70,7 @@ The following table lists the MDM policy settings that you can configure for Win
 |Policy|Scope|Default|Options|
 |--- |--- |--- |--- |
 |UseBiometrics|Device |False|- True: Biometrics can be used as a gesture in place of a PIN for domain sign-in.<br>- False: Only a PIN can be used as a gesture for domain sign-in.|
-|- FacialFeaturesUser<br>- EnhancedAntiSpoofing|Device|Not configured|- Not configured: users can choose whether to turn on enhanced anti-spoofing.<br>- True: Enhanced anti-spoofing is required on devices which support it.<br>- False: Users can't turn on enhanced anti-spoofing.|
+|- FacialFeaturesUser<br>-&nbsp;EnhancedAntiSpoofing|Device|Not configured|- Not configured: users can choose whether to turn on enhanced anti-spoofing.<br>- True: Enhanced anti-spoofing is required on devices which support it.<br>- False: Users can't turn on enhanced anti-spoofing.|
 
 ### PINComplexity
 
