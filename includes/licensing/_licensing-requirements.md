@@ -21,6 +21,7 @@ ms.topic: include
 |**Bluetooth pairing and connection protection**|Yes|Yes|Yes|Yes|Yes|
 |**[Common Criteria certifications](/windows/security/threat-protection/windows-platform-common-criteria)**|Yes|Yes|Yes|Yes|Yes|
 |**[Controlled folder access](/microsoft-365/security/defender-endpoint/controlled-folders)**|Yes|Yes|Yes|Yes|Yes|
+|**[Credential Guard](/windows/security/identity-protection/credential-guard/credential-guard)**|❌|Yes|Yes|Yes|Yes|
 |**[Device health attestation service](/windows/security/threat-protection/protect-high-value-assets-by-controlling-the-health-of-windows-10-based-devices)**|Yes|Yes|Yes|Yes|Yes|
 |**[Direct Access](/windows-server/remote/remote-access/directaccess/directaccess)**|❌|Yes|Yes|Yes|Yes|
 |**[Email Encryption (S/MIME)](/windows/security/identity-protection/configure-s-mime)**|Yes|Yes|Yes|Yes|Yes|
@@ -53,6 +54,7 @@ ms.topic: include
 |**[Personal data encryption (PDE)](/windows/security/information-protection/personal-data-encryption/overview-pde)**|❌|Yes|Yes|Yes|Yes|
 |**Privacy Resource Usage**|Yes|Yes|Yes|Yes|Yes|
 |**Privacy Transparency and Controls**|Yes|Yes|Yes|Yes|Yes|
+|**[Remote Credential Guard](/windows/security/identity-protection/remote-credential-guard)**|Yes|Yes|Yes|Yes|Yes|
 |**[Remote wipe](/windows/client-management/mdm/remotewipe-csp)**|Yes|Yes|Yes|Yes|Yes|
 |**[Secure Boot and Trusted Boot](/windows/security/trusted-boot)**|Yes|Yes|Yes|Yes|Yes|
 |**[Secured-core configuration lock](/windows/client-management/config-lock)**|Yes|Yes|Yes|Yes|Yes|
@@ -75,8 +77,6 @@ ms.topic: include
 |**[Windows Autopatch](/windows/deployment/windows-autopatch/)**|❌|Yes|Yes|❌|❌|
 |**[Windows Autopilot](/windows/deployment/windows-autopilot)**|Yes|Yes|Yes|Yes|Yes|
 |**[Windows Defender Application Control (WDAC)](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)**|Yes|Yes|Yes|Yes|Yes|
-|**[Windows Defender Credential Guard](/windows/security/identity-protection/credential-guard/credential-guard)**|❌|Yes|Yes|Yes|Yes|
-|**[Windows Defender Remote Credential Guard](/windows/security/identity-protection/remote-credential-guard)**|Yes|Yes|Yes|Yes|Yes|
 |**[Windows Defender System Guard](/windows/security/hardware-security/how-hardware-based-root-of-trust-helps-protect-windows)**|Yes|Yes|Yes|Yes|Yes|
 |**[Windows Firewall](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)**|Yes|Yes|Yes|Yes|Yes|
 |**[Windows Hello for Business](/windows/security/identity-protection/hello-for-business)**|Yes|Yes|Yes|Yes|Yes|

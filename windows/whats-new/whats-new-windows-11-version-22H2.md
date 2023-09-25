@@ -50,9 +50,9 @@ For more information, see [Smart App Control](/windows/security/threat-protectio
 
 ## Credential Guard
 <!--6289166-->
-Compatible Windows 11 Enterprise version 22H2 devices will have **Windows Defender Credential Guard** turned on by default. This changes the default state of the feature in Windows, though system administrators can still modify this enablement state.
+Compatible Windows 11 Enterprise version 22H2 devices will have **Credential Guard** turned on by default. This changes the default state of the feature in Windows, though system administrators can still modify this enablement state.
 
-For more information, see [Manage Windows Defender Credential Guard](/windows/security/identity-protection/credential-guard/credential-guard-manage).
+For more information, see [Manage Credential Guard](/windows/security/identity-protection/credential-guard/credential-guard-manage).
 
 ## Malicious and vulnerable driver blocking
 <!--6286432-->
