@@ -69,7 +69,7 @@ Enhanced Phishing Protection can be configured using the [WebThreatDefense CSP][
 
 | Setting                 | OMA-URI                                                                   | Data type |
 |-------------------------|---------------------------------------------------------------------------|-----------|
-| **AutomaticDataCollection** | ./Device/Vendor/MSFT/Policy/Config/WebThreatDefense/AutomaticDataCollection | Integer |
+| **AutomaticDataCollection** | `./Device/Vendor/MSFT/Policy/Config/WebThreatDefense/AutomaticDataCollection` | Integer |
 | **NotifyMalicious**     | `./Device/Vendor/MSFT/Policy/Config/WebThreatDefense/NotifyMalicious`     | Integer   |
 | **NotifyPasswordReuse** | `./Device/Vendor/MSFT/Policy/Config/WebThreatDefense/NotifyPasswordReuse` | Integer   |
 | **NotifyUnsafeApp**     | `./Device/Vendor/MSFT/Policy/Config/WebThreatDefense/NotifyUnsafeApp`     | Integer   |
