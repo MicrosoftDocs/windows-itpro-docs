@@ -4,7 +4,7 @@ description: Learn more about the ADMX_MicrosoftDefenderAntivirus Area in Policy
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 08/10/2023
+ms.date: 08/30/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -3239,7 +3239,12 @@ This policy setting allows you to configure heuristics. Suspicious detections wi
 <!-- Scan_DisablePackedExeScanning-OmaUri-End -->
 
 <!-- Scan_DisablePackedExeScanning-Description-Begin -->
-<!-- Description-Source-Not-Found -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to configure scanning for packed executables. It's recommended that this type of scanning remain enabled.
+
+- If you enable or don't configure this setting, packed executables will be scanned.
+
+- If you disable this setting, packed executables won't be scanned.
 <!-- Scan_DisablePackedExeScanning-Description-End -->
 
 <!-- Scan_DisablePackedExeScanning-Editable-Begin -->
@@ -3256,7 +3261,6 @@ This policy setting allows you to configure heuristics. Suspicious detections wi
 <!-- Scan_DisablePackedExeScanning-DFProperties-End -->
 
 <!-- Scan_DisablePackedExeScanning-AdmxBacked-Begin -->
-<!-- ADMX-Not-Found -->
 [!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
@@ -3264,6 +3268,11 @@ This policy setting allows you to configure heuristics. Suspicious detections wi
 | Name | Value |
 |:--|:--|
 | Name | Scan_DisablePackedExeScanning |
+| Friendly Name | Scan packed executables |
+| Location | Computer Configuration |
+| Path | Windows Components > Microsoft Defender Antivirus > Scan |
+| Registry Key Name | Software\Policies\Microsoft\Windows Defender\Scan |
+| Registry Value Name | DisablePackedExeScanning |
 | ADMX File Name | WindowsDefender.admx |
 <!-- Scan_DisablePackedExeScanning-AdmxBacked-End -->
 

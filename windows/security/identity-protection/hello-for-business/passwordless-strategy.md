@@ -13,7 +13,7 @@ This article describes Windows' password-less strategy and how Windows Hello for
 
 Over the past few years, Microsoft has continued their commitment to enabling a world without passwords.
 
-:::image type="content" source="images/passwordless/four-steps-passwordless-strategy.png" alt-text="Diagram of stair-step strategy with four steps.":::
+:::image type="content" source="images/passwordless-strategy/four-steps-passwordless-strategy.png" alt-text="Diagram of stair-step strategy with four steps.":::
 
 ### 1. Develop a password replacement offering
 
@@ -224,17 +224,17 @@ Windows provides two ways to prevent your users from using passwords. You can us
 
 You can use Group Policy to deploy an interactive logon security policy setting to the computer. This policy setting is found under **Computer Configuration > Policies > Windows Settings > Local Policy > Security Options**.  The name of the policy setting depends on the version of the operating systems you use to configure Group Policy.
 
-:::image type="content" source="images/passwordless/gpmc-security-options.png" alt-text="The Group Policy Management Editor displaying the location of the Security Options node.":::
+:::image type="content" source="images/passwordless-strategy/gpmc-security-options.png" alt-text="The Group Policy Management Editor displaying the location of the Security Options node.":::
 
 **Windows Server 2016 and earlier**
 The policy name for these operating systems is **Interactive logon: Require smart card**.
 
-:::image type="content" source="images/passwordless/gpmc-require-smart-card-policy.png" alt-text="The Group Policy Management Editor displaying the location of the policy 'Interactive logon: Require smart card'.":::
+:::image type="content" source="images/passwordless-strategy/gpmc-require-smart-card-policy.png" alt-text="The Group Policy Management Editor displaying the location of the policy 'Interactive logon: Require smart card'.":::
 
 **Windows 10, version 1703 or later using Remote Server Administrator Tools**
 The policy name for these operating systems is **Interactive logon: Require Windows Hello for Business or smart card**.
 
-:::image type="content" source="images/passwordless/require-whfb-smart-card-policy.png" alt-text="Highlighting the security policy 'Interactive logon: Require Windows Hello for Business or smart card'.":::
+:::image type="content" source="images/passwordless-strategy/require-whfb-smart-card-policy.png" alt-text="Highlighting the security policy 'Interactive logon: Require Windows Hello for Business or smart card'.":::
 
 When you enable this security policy setting, Windows prevents users from signing in or unlocking with a password. The password credential provider remains visible to the user. If a user tries to use a password, Windows informs the user they must use Windows Hello for Business or a smart card.
 
@@ -242,11 +242,11 @@ When you enable this security policy setting, Windows prevents users from signin
 
 You can use Group Policy to deploy an administrative template policy setting to the computer. This policy setting is found under **Computer Configuration > Policies > Administrative Templates > System > Logon**:
 
-:::image type="content" source="images/passwordless/gpmc-exclude-credential-providers.png" alt-text="The Group Policy Management Editor displaying the location of 'Logon' node and the policy setting 'Exclude credential providers'.":::
+:::image type="content" source="images/passwordless-strategy/gpmc-exclude-credential-providers.png" alt-text="The Group Policy Management Editor displaying the location of 'Logon' node and the policy setting 'Exclude credential providers'.":::
 
 The name of the policy setting is **Exclude credential providers**. The value to enter in the policy to hide the password credential provider is `{60b78e88-ead8-445c-9cfd-0b87f74ea6cd}`.
 
-:::image type="content" source="images/passwordless/exclude-credential-providers-properties.png" alt-text="Properties of the policy setting 'Exclude credential providers'.":::
+:::image type="content" source="images/passwordless-strategy/exclude-credential-providers-properties.png" alt-text="Properties of the policy setting 'Exclude credential providers'.":::
 
 Excluding the password credential provider hides the password credential provider from Windows and any application that attempts to load it. This configuration prevents the user from entering a password using the credential provider. However, this change doesn't prevent applications from creating their own password collection dialogs and prompting the user for a password using custom dialogs.
 
@@ -296,7 +296,7 @@ The account options on a user account include the option **Smart card is require
 
 The following image shows the SCRIL setting for a user in Active Directory Users and Computers:
 
-:::image type="content" source="images/passwordless/aduc-account-scril.png" alt-text="Example user properties in Active Directory that shows the SCRIL setting on Account options.":::
+:::image type="content" source="images/passwordless-strategy/aduc-account-scril.png" alt-text="Example user properties in Active Directory that shows the SCRIL setting on Account options.":::
 
 When you configure a user account for SCRIL, Active Directory changes the affected user's password to a random 128 bits of data. Additionally, domain controllers hosting the user account don't allow the user to sign-in interactively with a password. Users will no longer need to change their password when it expires, because passwords for SCRIL users don't expire. The users are effectively password-less because:
 
@@ -307,7 +307,7 @@ When you configure a user account for SCRIL, Active Directory changes the affect
 
 The following image shows the SCRIL setting for a user in Active Directory Administrative Center on Windows Server 2012:
 
-:::image type="content" source="images/passwordless/server-2012-adac-user-scril.png" alt-text="Example user properties in Windows Server 2012 Active Directory Administrative Center that shows the SCRIL setting.":::
+:::image type="content" source="images/passwordless-strategy/server-2012-adac-user-scril.png" alt-text="Example user properties in Windows Server 2012 Active Directory Administrative Center that shows the SCRIL setting.":::
 
 > [!NOTE]
 > Although a SCRIL user's password never expires in early domains, you can toggle the SCRIL configuration on a user account to generate a new random 128 bit password. Use the following process to toggle this configuration:
@@ -317,11 +317,11 @@ The following image shows the SCRIL setting for a user in Active Directory Admin
 > 1. Enable the setting.
 > 1. Save changes again.
 >
-> When you upgrade the domain to Windows Server 2016 domain forest functional level or later, the domain controller automatically does this action for you.
+> When you upgrade the domain functional level to Windows Server 2016 or later, the domain controller automatically does this action for you.
 
 The following image shows the SCRIL setting for a user in Active Directory Administrative Center on Windows Server 2016:
 
-:::image type="content" source="images/passwordless/server-2016-adac-user-scril.png" alt-text="Example user properties in Windows Server 2016 Active Directory Administrative Center that shows the SCRIL setting.":::
+:::image type="content" source="images/passwordless-strategy/server-2016-adac-user-scril.png" alt-text="Example user properties in Windows Server 2016 Active Directory Administrative Center that shows the SCRIL setting.":::
 
 > [!TIP]
 > Windows Hello for Business was formerly known as Microsoft Passport.
@@ -332,8 +332,7 @@ Domains configured for Windows Server 2016 or later domain functional level can 
 
 In this configuration, passwords for SCRIL-configured users expire based on Active Directory password policy settings. When the SCRIL user authenticates from a domain controller, the domain controller recognizes the password has expired, and automatically generates a new random 128-bit password for the user as part of the authentication. This feature is great because your users don't experience any change password notifications or any authentication outages.
 
-:::image type="content" source="images/passwordless/server-2016-adac-domain-scril.png" alt-text="The Active Directory Administrative Center on Windows Server 2016 showing the domain setting for SCRIL.":::
+:::image type="content" source="images/passwordless-strategy/server-2016-adac-domain-scril.png" alt-text="The Active Directory Administrative Center on Windows Server 2016 showing the domain setting for SCRIL.":::
 
 > [!NOTE]
 > Some components within Windows 10, such as Data Protection APIs and NTLM authentication, still need artifacts of a user possessing a password. This configuration provides interoperability by reducing the usage surface while Microsoft continues to close the gaps to remove the password completely.
-

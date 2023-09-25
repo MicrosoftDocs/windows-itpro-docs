@@ -123,10 +123,10 @@
               href: references/windows-autopatch-windows-update-unsupported-policies.md
             - name: Microsoft 365 Apps for enterprise update policies
               href: references/windows-autopatch-microsoft-365-policies.md
+            - name: Conflicting configurations
+              href: references/windows-autopatch-conflicting-configurations.md
         - name: Changes made at tenant enrollment
           href: references/windows-autopatch-changes-to-tenant.md
-        - name: Driver and firmware updates public preview addendum
-          href: references/windows-autopatch-driver-and-firmware-updates-public-preview-addendum.md
     - name: What's new
       href:
       items: 

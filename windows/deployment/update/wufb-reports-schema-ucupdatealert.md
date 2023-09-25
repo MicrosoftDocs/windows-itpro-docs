@@ -1,20 +1,24 @@
 ---
-title: Windows Update for Business reports Data Schema - UCUpdateAlert
-manager: aaroncz
-description: UCUpdateAlert schema
+title: UCUpdateAlert data schema
+titleSuffix: Windows Update for Business reports
+description: UCUpdateAlert schema for Windows Update for Business reports. UCUpdateAlert is an alert for both client and service updates.
 ms.prod: windows-client
+ms.technology: itpro-updates
+ms.topic: reference
 author: mestew
 ms.author: mstewart
-ms.topic: reference
+manager: aaroncz
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
 ms.date: 06/06/2022
-ms.technology: itpro-updates
 ---
 
 # UCUpdateAlert
 <!--37063317, 30141258, 37063041-->
-***(Applies to: Windows 11 & Windows 10)***
-
 Alert for both client and service updates. Contains information that needs attention, relative to one device (client), one update, and one deployment (if relevant). Certain fields may be blank depending on the UpdateAlert's AlertType field; for example, ServiceUpdateAlert won't necessarily contain client-side statuses.
+
+## Schema for UCUpdateAlert
 
 |Field |Type |Example |Description |
 |---|---|---|---|

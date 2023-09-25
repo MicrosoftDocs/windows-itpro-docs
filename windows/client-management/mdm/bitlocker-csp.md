@@ -1406,7 +1406,9 @@ This value represents a bitmask with each bit and the corresponding error code d
 | 13 |A TPM isn't available for BitLocker, either because it isn't present, it has been made unavailable in the Registry, or the OS is on a removable drive. |
 | 14 |The TPM isn't ready for BitLocker.|
 | 15 |The network isn't available, which is required for recovery key backup. |
-| 16-31 |For future use.|
+| 16 |The encryption type of the OS volume for full disk versus used space only encryption doesn't match the BitLocker policy.|
+| 17 |The encryption type of the fixed drive for full disk versus used space only encryption doesn't match the BitLocker policy.|
+| 18-31 |For future use.|
 <!-- Device-Status-DeviceEncryptionStatus-Editable-End -->
 
 <!-- Device-Status-DeviceEncryptionStatus-DFProperties-Begin -->

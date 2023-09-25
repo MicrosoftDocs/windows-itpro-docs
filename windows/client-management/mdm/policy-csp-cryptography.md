@@ -4,7 +4,7 @@ description: Learn more about the Cryptography Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 08/10/2023
+ms.date: 08/29/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -228,7 +228,6 @@ Override minimal enabled TLS version for client role. Last write wins.
 |:--|:--|
 | Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
-| Default Value  | 1.0 |
 <!-- OverrideMinimumEnabledDTLSVersionClient-DFProperties-End -->
 
 <!-- OverrideMinimumEnabledDTLSVersionClient-Examples-Begin -->
@@ -268,7 +267,6 @@ Override minimal enabled TLS version for server role. Last write wins.
 |:--|:--|
 | Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
-| Default Value  | 1.0 |
 <!-- OverrideMinimumEnabledDTLSVersionServer-DFProperties-End -->
 
 <!-- OverrideMinimumEnabledDTLSVersionServer-Examples-Begin -->
@@ -308,7 +306,6 @@ Override minimal enabled TLS version for client role. Last write wins.
 |:--|:--|
 | Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
-| Default Value  | 1.0 |
 <!-- OverrideMinimumEnabledTLSVersionClient-DFProperties-End -->
 
 <!-- OverrideMinimumEnabledTLSVersionClient-Examples-Begin -->
@@ -348,7 +345,6 @@ Override minimal enabled TLS version for server role. Last write wins.
 |:--|:--|
 | Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
-| Default Value  | 1.0 |
 <!-- OverrideMinimumEnabledTLSVersionServer-DFProperties-End -->
 
 <!-- OverrideMinimumEnabledTLSVersionServer-Examples-Begin -->
