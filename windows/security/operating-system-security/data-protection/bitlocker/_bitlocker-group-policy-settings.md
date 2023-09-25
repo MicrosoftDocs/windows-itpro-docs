@@ -24,23 +24,6 @@ The Dictionary Attack Prevention Parameters provide a way to balance security ne
 
 Increasing the PIN length requires a greater number of guesses for an attacker. In that case, the lockout duration between each guess can be shortened to allow legitimate users to retry a failed attempt sooner, while maintaining a similar level of protection.
 
-### Disable new DMA devices when this computer is locked
-
-This policy setting allows blocking of direct memory access (DMA) for all hot pluggable PCI ports until a user signs in to Windows.
-
-|  Item  | Info |
-|:---|:---|
-|**Policy description**|This setting helps prevent attacks that use external PCI-based devices to access BitLocker keys.|
-|**Drive type**|Operating system drives|
-|**Policy path**|*Computer Configuration* > *Administrative Templates* > *Windows Components* > *BitLocker Drive Encryption*|
-|**Conflicts**|None|
-|**When enabled**|Every time the user locks the screen, DMA will be blocked on hot pluggable PCI ports until the user signs in again.|
-|**When disabled or not configured**|DMA is available on hot pluggable PCI devices if the device is turned on, regardless of whether a user is signed in.|
-
-#### Reference: Disable new DMA devices when this computer is locked
-
-This policy setting is only enforced when BitLocker or device encryption is enabled. As explained in the [Microsoft Security Guidance blog](/archive/blogs/secguide/issue-with-bitlockerdma-setting-in-windows-10-fall-creators-update-v1709), in some cases when this setting is enabled, internal, PCI-based peripherals can fail, including wireless network drivers and input and audio peripherals. This problem is fixed in the [April 2018 quality update](https://support.microsoft.com/help/4093105).
-
 ### Configure use of smart cards on fixed data drives
 
 This policy setting is used to require, allow, or deny the use of smart cards with fixed data drives.
@@ -146,30 +129,6 @@ When set to **Do not allow complexity**, no password complexity validation is do
 > Passwords can't be used if FIPS compliance is enabled. The **System cryptography: Use FIPS-compliant algorithms for encryption, hashing, and signing** policy setting in **Computer Configuration** > **Windows Settings** > **Security Settings** > **Local Policies** > **Security Options** specifies whether FIPS compliance is enabled.
 
 For information about this setting, see [System cryptography: Use FIPS-compliant algorithms for encryption, hashing, and signing](../../../threat-protection/security-policy-settings/system-cryptography-use-fips-compliant-algorithms-for-encryption-hashing-and-signing.md).
-
-### Validate smart card certificate usage rule compliance
-
-This policy setting is used to determine what certificate to use with BitLocker.
-
-|  Item  | Info |
-|:---|:---|
-|**Policy description**|With this policy setting, an object identifier from a smart card certificate can be associated to a BitLocker-protected drive.|
-|**Drive type**|Fixed and removable data drives|
-|**Policy path**|*Computer Configuration* > *Administrative Templates* > *Windows Components* > *BitLocker Drive Encryption*|
-|**Conflicts**|None|
-|**When enabled**|The object identifier that is specified in the **Object identifier** setting must match the object identifier in the smart card certificate.|
-|**When disabled or not configured**|The default object identifier is used.|
-
-#### Reference: Validate smart card certificate usage rule compliance
-
-This policy setting is applied when BitLocker is turned on.
-
-The object identifier is specified in the extended key usage (EKU) of a certificate. BitLocker can identify which certificates can be used to authenticate a user certificate to a BitLocker-protected drive by matching the object identifier in the certificate with the object identifier that is defined by this policy setting.
-
-The default object identifier is 1.3.6.1.4.1.311.67.1.1.
-
-> [!NOTE]
-> BitLocker doesn't require that a certificate have an EKU attribute; however, if one is configured for the certificate, it must be set to an object identifier that matches the object identifier configured for BitLocker.
 
 ### Enable use of BitLocker authentication requiring preboot keyboard input on slates
 
@@ -696,9 +655,6 @@ The following list identifies all of the available PCRs:
 - PCR 5: GPT/Partition Table
 - PCR 6: Resume from S4 and S5 Power State Events
 - PCR 7: Secure Boot State
-
-    For more information about this PCR, see [About the Platform Configuration Register (PCR)](#about-the-platform-configuration-register-pcr) in this article.
-
 - PCR 8: Initialized to 0 with no Extends (reserved for future use)
 - PCR 9: Initialized to 0 with no Extends (reserved for future use)
 - PCR 10: Initialized to 0 with no Extends (reserved for future use)

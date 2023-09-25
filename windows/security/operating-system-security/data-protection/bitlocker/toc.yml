@@ -27,16 +27,12 @@ items:
       href: bitlocker-recovery-guide-plan.md
     - name: Protect cluster shared volumes and storage area networks with BitLocker
       href: protecting-cluster-shared-volumes-and-storage-area-networks-with-bitlocker.md
-- name: BitLocker features
-  items:
     - name: Network Unlock
       href: bitlocker-how-to-enable-network-unlock.md
 - name: Reference
   items:
     - name: BitLocker policy settings
       href: policy-settings.md
-    - name: BitLocker Group Policy settings
-      href: _bitlocker-group-policy-settings.md
     - name: BCD settings
       href: bcd-settings-and-bitlocker.md
     - name: BitLocker frequently asked questions (FAQ)
