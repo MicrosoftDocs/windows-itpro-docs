@@ -1,7 +1,7 @@
 ---
 title: Enhanced Phishing Protection in Microsoft Defender SmartScreen
 description: Learn how Enhanced Phishing Protection for Microsoft Defender SmartScreen helps protect Microsoft school or work passwords against phishing and unsafe usage on sites and apps.
-ms.date: 08/11/2023
+ms.date: 09/25/2023
 ms.topic: conceptual
 appliesto:
 - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11, version 22H2</a>
@@ -16,7 +16,7 @@ If a user signs into Windows using a password, Enhanced Phishing Protection work
 - If users type or paste their work or school password on any browser, into a site deemed malicious by Microsoft Defender SmartScreen, Enhanced Phishing Protection alerts them. It also alerts them to change their password so attackers can't gain access to their account.
 - Reusing work or school passwords makes it easy for attackers who compromise a user's password to gain access to their other accounts. Enhanced Phishing Protection can warn users if they reuse their work or school Microsoft account password on sites and apps and alert them to change their password.
 - Since it's unsafe to store plaintext passwords in text editors, Enhanced Phishing Protection can warn users if they store their work or school password in Notepad, Word, or any Microsoft 365 Office app, and recommends they delete their password from the file.
-- If users type their work or school password into a website or app that SmartScreen finds suspicious, Enhanced Phishing Protection can automatically collect information - such as content displayed, sounds played, and application memory - from that website or app to help identify security threats
+- If users type their work or school password into a website or app that SmartScreen finds suspicious, Enhanced Phishing Protection can automatically collect information from that website or app to help identify security threats. For example, the content displayed, sounds played, and application memory.
 
 > [!NOTE]
 > When a user signs-in to a device using a Windows Hello for Business PIN or biometric, Enhanced Phishing Protection does not alert the user or send events to Microsoft Defender for Endpoint.
@@ -66,13 +66,14 @@ Enhanced Phishing Protection can be configured using the following Administrativ
 #### [:::image type="icon" source="images/icons/windows-os.svg"::: **CSP**](#tab/csp)
 
 Enhanced Phishing Protection can be configured using the [WebThreatDefense CSP][WIN-1].
+
 | Setting                 | OMA-URI                                                                   | Data type |
 |-------------------------|---------------------------------------------------------------------------|-----------|
-| **ServiceEnabled**      | `./Device/Vendor/MSFT/Policy/Config/WebThreatDefense/ServiceEnabled`      | Integer   |
+| **AutomaticDataCollection** | ./Device/Vendor/MSFT/Policy/Config/WebThreatDefense/AutomaticDataCollection | Integer |
 | **NotifyMalicious**     | `./Device/Vendor/MSFT/Policy/Config/WebThreatDefense/NotifyMalicious`     | Integer   |
 | **NotifyPasswordReuse** | `./Device/Vendor/MSFT/Policy/Config/WebThreatDefense/NotifyPasswordReuse` | Integer   |
 | **NotifyUnsafeApp**     | `./Device/Vendor/MSFT/Policy/Config/WebThreatDefense/NotifyUnsafeApp`     | Integer   |
-
+| **ServiceEnabled**      | `./Device/Vendor/MSFT/Policy/Config/WebThreatDefense/ServiceEnabled`      | Integer   |
 
 ---
 
@@ -113,7 +114,7 @@ To better help you protect your organization, we recommend turning on and using 
 
 ## Related articles
 
-- [SmartScreen Frequently Asked Questions](https://fb.smartscreen.microsoft.com/smartscreenfaq.aspx)
+- [SmartScreen frequently asked questions](https://fb.smartscreen.microsoft.com/smartscreenfaq.aspx)
 - [WebThreatDefense CSP][WIN-1]
 - [Threat protection](index.md)
 
