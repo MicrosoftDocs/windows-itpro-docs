@@ -7,9 +7,12 @@ ms.topic: include
 
 ### Allow suspension of BitLocker protection
 
-When enabled, this policy allows suspending BitLocker protection. When disabled, it prevents suspending BitLocker protection.
+When enabled, this policy allows the suspension of BitLocker protection. When disabled, it prevents suspending BitLocker protection.
 
 The default value is *enabled*.
+
+> [!NOTE]
+> This policy is applicable to Windows insider builds.
 
 |  | Path |
 |--|--|

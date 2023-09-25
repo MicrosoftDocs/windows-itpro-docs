@@ -7,7 +7,12 @@ ms.topic: include
 
 ### Allow enhanced PINs for startup
 
-This policy setting allows you to configure whether or not enhanced startup PINs are used with BitLocker. Enhanced startup PINs permit the use of characters including uppercase and lowercase letters, symbols, numbers, and spaces. If you enable this policy setting, all new BitLocker startup PINs set will be enhanced PINs. Note:   Not all computers may support enhanced PINs in the pre-boot environment. It is strongly recommended that users perform a system check during BitLocker setup. If you disable or do not configure this policy setting, enhanced PINs will not be used.
+This setting permits the use of enhanced PINs when an unlock method that includes a PIN is used.
+
+Enhanced startup PINs permit the use of characters (including uppercase and lowercase letters, symbols, numbers, and spaces).
+
+> [!IMPORTANT]
+> Not all computers support enhanced PIN characters in the preboot environment. It's strongly recommended that users perform a system check during the BitLocker setup to verify that enhanced PIN characters can be used.
 
 |  | Path |
 |--|--|

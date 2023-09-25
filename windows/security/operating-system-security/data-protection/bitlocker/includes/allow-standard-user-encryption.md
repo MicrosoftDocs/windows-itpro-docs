@@ -5,13 +5,12 @@ ms.date: 09/24/2023
 ms.topic: include
 ---
 
-### Allow Standard User Encryption
+### Allow standard user encryption
 
-With this policy you can enforce the [*RequireDeviceEncryption*](../policy-settings.md?tabs=os#require-device-encryption) policy for scenarios where policy is applied while current logged-on user is non-admin/standard user.
+With this policy you can enforce the [*Require device encryption*](../policy-settings.md?tabs=os#require-device-encryption) policy for scenarios where the policy is applied while the current logged-on user doesn't have administrative rights.
 
-*AllowStandardUserEncryption* policy is tied to [Allow warning for other disk encryption](../policy-settings.md?tabs=os#allow-warning-for-other-disk-encryption) policy being disabled (value `0`).
-
-If *AllowWarningForOtherDiskEncryption* isn't set, or is set to `1`, *RequireDeviceEncryption* policy doesn't try to encrypt drive(s) if a standard user is logged-on.
+> [!IMPORTANT]
+> The [Allow warning for other disk encryption](../policy-settings.md?tabs=os#allow-warning-for-other-disk-encryption) policy must be disabled to allow standard user encryption.
 
 |  | Path |
 |--|--|

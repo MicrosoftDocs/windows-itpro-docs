@@ -11,6 +11,16 @@ ms.date: 09/19/2023
 
 This reference article describes the policy settings to configure BitLocker via configuration service provider (CSP) and group policy (GPO).
 
+## BitLocker and policies compliance
+
+If a device isn't compliant with the existing policies, BitLocker may not be turned on, or BitLocker configuration may be modified until the computer is in a compliant state. When a drive becomes out of compliance with policy settings, only changes to the BitLocker configuration that will bring it into compliance are allowed. Such scenario could occur, for example, if a previously encrypted drive was brought out of compliance by change in policy settings.
+
+If multiple changes are necessary to bring the drive into compliance, BitLocker protection may need to be suspended, the necessary changes made, and then protection resumed. Such situation could occur, for example, if a removable drive is initially configured for unlock with a password but then policy settings are changed to disallow passwords and require smart cards. In this situation, BitLocker protection needs to be suspended by using the [`manage-bde`](/windows-server/administration/windows-commands/manage-bde) command-line tool, delete the password unlock method, and add the smart card method. After this process is complete, BitLocker is compliant with the policy setting, and BitLocker protection on the drive can be resumed.
+
+In other scenarios, to bring the drive into compliance with a change in policy settings, BitLocker may need to be disabled and the drive decrypted followed by re-enabling BitLocker and then re-encrypting the drive. An example of this scenario is when the BitLocker encryption method or cipher strength is changed. The [`manage-bde`](/windows-server/administration/windows-commands/manage-bde) command-line can also be used in this scenario to help bring the device into compliance.
+
+## Settings list
+
 The list of settings is sorted alphabetically and organized in four tabs:
 
 - **Common settings**: settings applicable to all BitLocker-protected drives

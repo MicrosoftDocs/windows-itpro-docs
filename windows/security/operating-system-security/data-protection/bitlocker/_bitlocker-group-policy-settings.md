@@ -10,55 +10,9 @@ ms.date: 11/08/2022
 
 # BitLocker group policy settings
 
-If a device isn't compliant with existing settings, BitLocker may not be turned on, or BitLocker configuration may be modified until the computer is in a compliant state. When a drive becomes out of compliance with policy settings, only changes to the BitLocker configuration that will bring it into compliance are allowed. This scenario could occur, for example, if a previously encrypted drive was brought out of compliance by change in Group Policy settings.
-
-If multiple changes are necessary to bring the drive into compliance, BitLocker protection may need to be suspended, the necessary changes made, and then protection resumed. This situation could occur, for example, if a removable drive is initially configured for unlock with a password but then Group Policy settings are changed to disallow passwords and require smart cards. In this situation, BitLocker protection needs to be suspended by using the [Manage-bde](/windows-server/administration/windows-commands/manage-bde) command-line tool, delete the password unlock method, and add the smart card method. After this process is complete, BitLocker is compliant with the Group Policy setting, and BitLocker protection on the drive can be resumed.
-
-In other scenarios, to bring the drive into compliance with a change in Group Policy settings, BitLocker may need to be disabled and the drive decrypted followed by reenabling BitLocker and then re-encrypting the drive. An example of this scenario is when the BitLocker encryption method or cipher strength is changed. The [Manage-bde](/windows-server/administration/windows-commands/manage-bde) command-line can also be used in this scenario to help bring the device into compliance.
-
-## BitLocker group policy settings details
-
-#### Reference: Allow devices with secure boot and protected DMA ports to opt out of preboot PIN
-
-The preboot authentication option **Require startup PIN with TPM** of the [Require additional authentication at startup](#require-additional-authentication-at-startup) policy is often enabled to help ensure security for older devices that don't support Modern Standby. But visually impaired users have no audible way to know when to enter a PIN.
-This setting enables an exception to the PIN-required policy on secure hardware.
-
-### Allow enhanced PINs for startup
-
-This policy setting permits the use of enhanced PINs when an unlock method that includes a PIN is used.
-
-|  Item  | Info |
-|:---|:---|
-|**Policy description**|With this policy setting, it can be configured whether enhanced startup PINs are used with BitLocker.|
-|**Introduced**|Windows Server 2008 R2 and Windows 7|
-|**Drive type**|Operating system drives|
-|**Policy path**|*Computer Configuration* > *Administrative Templates* > *Windows Components* > *BitLocker Drive Encryption* > *Operating System Drives*|
-|**Conflicts**|None|
-|**When enabled**|All new BitLocker startup PINs that are set will be enhanced PINs. Existing drives that were protected by using standard startup PINs aren't affected.|
-|**When disabled or not configured**|Enhanced PINs won't be used.|
-
-#### Reference: Allow enhanced PINs for startup
-
-Enhanced startup PINs permit the use of characters (including uppercase and lowercase letters, symbols, numbers, and spaces). This policy setting is applied when BitLocker is turned on.
-
-> [!IMPORTANT]
-> Not all computers support enhanced PIN characters in the preboot environment. It's strongly recommended that users perform a system check during the BitLocker setup to verify that enhanced PIN characters can be used.
-
 ### Configure minimum PIN length for startup
 
-This policy setting is used to set a minimum PIN length when an unlock method that includes a PIN is used.
 
-|  Item  | Info |
-|:---|:---|
-|**Policy description**|With this policy setting, it can be configured a minimum length for a TPM startup PIN. This policy setting is applied when BitLocker is turned on. The startup PIN must have a minimum length of four digits, and it can have a maximum length of 20 digits. By default, the minimum PIN length is 6.|
-|**Introduced**|Windows Server 2008 R2 and Windows 7|
-|**Drive type**|Operating system drives|
-|**Policy path**|*Computer Configuration* > *Administrative Templates* > *Windows Components* > *BitLocker Drive Encryption* > *Operating System Drives*|
-|**Conflicts**|None|
-|**When enabled**|The required minimum length of startup PINs set by users can be set between 4 and 20 digits.|
-|**When disabled or not configured**|Users can configure a startup PIN of any length between 6 and 20 digits.|
-
-#### Reference: Configure minimum PIN length for startup
 
 This policy setting is applied when BitLocker is turned on. The startup PIN must have a minimum length of four digits and can have a maximum length of 20 digits.
 
@@ -70,8 +24,6 @@ The Dictionary Attack Prevention Parameters provide a way to balance security ne
 
 Increasing the PIN length requires a greater number of guesses for an attacker. In that case, the lockout duration between each guess can be shortened to allow legitimate users to retry a failed attempt sooner, while maintaining a similar level of protection.
 
-Beginning with Windows 10, version 1703, the minimum length for the BitLocker PIN was increased to six characters to better align with other Windows features that use TPM 2.0, including Windows Hello. To help organizations with the transition, beginning with Windows 10, version 1709 and Windows 10, version 1703 with the October 2017 [cumulative update](https://support.microsoft.com/help/4018124) installed, the BitLocker PIN length is six characters by default, but it can be reduced to four characters. If the minimum PIN length is reduced from the default of six characters, then the TPM 2.0 lockout period will be extended.
-
 ### Disable new DMA devices when this computer is locked
 
 This policy setting allows blocking of direct memory access (DMA) for all hot pluggable PCI ports until a user signs in to Windows.
@@ -79,7 +31,6 @@ This policy setting allows blocking of direct memory access (DMA) for all hot pl
 |  Item  | Info |
 |:---|:---|
 |**Policy description**|This setting helps prevent attacks that use external PCI-based devices to access BitLocker keys.|
-|**Introduced**|Windows 10, version 1703|
 |**Drive type**|Operating system drives|
 |**Policy path**|*Computer Configuration* > *Administrative Templates* > *Windows Components* > *BitLocker Drive Encryption*|
 |**Conflicts**|None|
@@ -90,91 +41,6 @@ This policy setting allows blocking of direct memory access (DMA) for all hot pl
 
 This policy setting is only enforced when BitLocker or device encryption is enabled. As explained in the [Microsoft Security Guidance blog](/archive/blogs/secguide/issue-with-bitlockerdma-setting-in-windows-10-fall-creators-update-v1709), in some cases when this setting is enabled, internal, PCI-based peripherals can fail, including wireless network drivers and input and audio peripherals. This problem is fixed in the [April 2018 quality update](https://support.microsoft.com/help/4093105).
 
-### Disallow standard users from changing the PIN or password
-
-This policy setting allows configuration of whether standard users are allowed to change the PIN or password that is used to protect the operating system drive.
-
-|  Item  | Info |
-|:---|:---|
-|**Policy description**|With this policy setting, it can be configured whether standard users are allowed to change the PIN or password used to protect the operating system drive.|
-|**Introduced**|Windows Server 2012 and Windows 8|
-|**Drive type**|Operating system drives|
-|**Policy path**|*Computer Configuration* > *Administrative Templates* > *Windows Components* > *BitLocker Drive Encryption* > *Operating System Drives*|
-|**Conflicts**|None|
-|**When enabled**|Standard users aren't allowed to change BitLocker PINs or passwords.|
-|**When disabled or not configured**|Standard users are permitted to change BitLocker PINs or passwords.|
-
-#### Reference: Disallow standard users from changing the PIN or password
-
-To change the PIN or password, the user must be able to provide the current PIN or password. This policy setting is applied when BitLocker is turned on.
-
-### Configure use of passwords for operating system drives
-
-This policy controls how non-TPM based systems utilize the password protector. Used with the **Password must meet complexity requirements** policy, this policy allows administrators to require password length and complexity for using the password protector. By default, passwords must be eight characters in length. Complexity configuration options determine how important domain connectivity is for the client. For the strongest password security, administrators should choose **Require password complexity** because it requires domain connectivity, and it requires that the BitLocker password meets the same password complexity requirements as domain sign-in passwords.
-
-|  Item  | Info |
-|:---|:---|
-|**Policy description**|With this policy setting, the constraints for passwords that are used to unlock operating system drives that are protected with BitLocker can be specified.|
-|**Introduced**|Windows Server 2012 and Windows 8|
-|**Drive type**|Operating system drives|
-|**Policy path**|*Computer Configuration* > *Administrative Templates* > *Windows Components* > *BitLocker Drive Encryption* > *Operating System Drives*|
-|**Conflicts**|Passwords can't be used if FIPS-compliance is enabled.<br/><div class="alert"> **NOTE:** The **System cryptography: Use FIPS-compliant algorithms for encryption, hashing, and signing** policy setting, which is located at *Computer Configuration* > *Windows Settings* > *Security Settings* > *Local Policies* > *Security Options* specifies whether FIPS-compliance is enabled.</div>|
-|**When enabled**|Users can configure a password that meets the defined requirements. To enforce complexity requirements for the password, select **Require complexity**.|
-|**When disabled or not configured**|The default length constraint of eight characters will apply to operating system drive passwords and no complexity checks will occur.|
-
-#### Reference: Configure use of passwords for operating system drives
-
-If non-TPM protectors are allowed on operating system drives, a password, enforcement of complexity requirements on the password, and configuration of a minimum length for the password can all be provisioned. For the complexity requirement setting to be effective, the group policy setting **Password must meet complexity requirements**, which is located at *Computer Configuration* > *Windows Settings* > *Security Settings* > *Account Policies* > *Password Policy*, must be also enabled.
-
-> [!NOTE]
-> These settings are enforced when turning on BitLocker, not when unlocking a volume. BitLocker allows unlocking a drive with any of the protectors that are available on the drive.
-
-When set to **Require complexity**, a connection to a domain controller is necessary when BitLocker is enabled to validate the complexity the password. When set to **Allow complexity**, a connection to a domain controller is attempted to validate that the complexity adheres to the rules set by the policy. If no domain controllers are found, the password will be accepted regardless of actual password complexity, and the drive will be encrypted by using that password as a protector. When set to **Do not allow complexity**, there's no password complexity validation.
-
-Passwords must be at least eight characters. To configure a greater minimum length for the password, enter the desired number of characters in the **Minimum password length** box.
-
-When this policy setting is enabled, the option **Configure password complexity for operating system drives** can be set to:
-
-- Allow password complexity
-- Deny password complexity
-- Require password complexity
-
-### Require additional authentication at startup (Windows Server 2008 and Windows Vista)
-
-This policy setting is used to control what unlock options are available for computers running Windows Server 2008 or Windows Vista.
-
-|  Item  | Info |
-|:---|:---|
-|**Policy description**|With this policy setting, it can be controlled whether the BitLocker Setup Wizard on computers running Windows Vista or Windows Server 2008 can set up an additional authentication method that is required each time the computer starts.|
-|**Introduced**|Windows Server 2008 and Windows Vista|
-|**Drive type**|Operating system drives (Windows Server 2008 and Windows Vista)|
-|**Policy path**|*Computer Configuration* > *Administrative Templates* > *Windows Components* > *BitLocker Drive Encryption* > *Operating System Drives*|
-|**Conflicts**|If an additional authentication method is chosen, other authentication methods can't be allowed.|
-|**When enabled**|The BitLocker Setup Wizard displays the page that allows the user to configure advanced startup options for BitLocker. Setting options can be further configured for computers with or without a TPM.|
-|**When disabled or not configured**|The BitLocker Setup Wizard displays basic steps that allow users to enable BitLocker on computers with a TPM. In this basic wizard, no additional startup key or startup PIN can be configured.|
-
-#### Reference: Require additional authentication at startup (Windows Server 2008 and Windows Vista)
-
-On a computer with a compatible TPM, two authentication methods can be used at startup to provide added protection for encrypted data. When the computer starts, it can prompt users to insert a USB drive that contains a startup key. It can also prompt users to enter a startup PIN with a length between 6 and 20 digits.
-
-A USB drive that contains a startup key is needed on computers without a compatible TPM. Without a TPM, BitLocker-encrypted data is protected solely by the key material that is on this USB drive.
-
-There are two options for TPM-enabled computers or devices:
-
-- Configure TPM startup PIN
-  - Allow startup PIN with TPM
-  - Require startup PIN with TPM
-  - Do not allow startup PIN with TPM
-
-- Configure TPM startup key
-  - Allow startup key with TPM
-  - Require startup key with TPM
-  - Do not allow startup key with TPM
-
-These options are mutually exclusive. If a startup key is required, a startup PIN isn't allowed. If startup PIN is required, startup key isn't allowed. If these policies are in conflict, a policy error will occur.
-
-To hide the advanced page on a TPM-enabled computer or device, set these options to **Do not allow** for the startup key and for the startup PIN.
-
 ### Configure use of smart cards on fixed data drives
 
 This policy setting is used to require, allow, or deny the use of smart cards with fixed data drives.
@@ -182,7 +48,6 @@ This policy setting is used to require, allow, or deny the use of smart cards wi
 |  Item  | Info |
 |:---|:---|
 |**Policy description**|This policy setting can be used to specify whether smart cards can be used to authenticate user access to the BitLocker-protected fixed data drives on a computer.|
-|**Introduced**|Windows Server 2008 R2 and Windows 7|
 |**Drive type**|Fixed data drives|
 |**Policy path**|*Computer Configuration* > *Administrative Templates* > *Windows Components* > *BitLocker Drive Encryption* > *Fixed Data Drives*|
 |**Conflicts**|To use smart cards with BitLocker, the object identifier setting in the **Computer Configuration\Administrative Templates\BitLocker Drive Encryption\Validate smart card certificate usage rule compliance** policy setting may need to be modified to match the object identifier of the smart card certificates.|
@@ -202,7 +67,6 @@ This policy setting is used to require, allow, or deny the use of passwords with
 |  Item  | Info |
 |:---|:---|
 |**Policy description**|With this policy setting, it can be specified whether a password is required to unlock BitLocker-protected fixed data drives.|
-|**Introduced**|Windows Server 2008 R2 and Windows 7|
 |**Drive type**|Fixed data drives|
 |**Policy path**|*Computer Configuration* > *Administrative Templates* > *Windows Components* > *BitLocker Drive Encryption* > *Fixed Data Drives*|
 |**Conflicts**|To use password complexity, the **Computer Configuration\Windows Settings\Security Settings\Account Policies\Password Policy\Password must meet complexity requirements** policy setting must also be enabled.|
@@ -237,7 +101,6 @@ This policy setting is used to require, allow, or deny the use of smart cards wi
 |  Item  | Info |
 |:---|:---|
 |**Policy description**|This policy setting can be used to specify whether smart cards can be used to authenticate user access to BitLocker-protected removable data drives on a computer.|
-|**Introduced**|Windows Server 2008 R2 and Windows 7|
 |**Drive type**|Removable data drives|
 |**Policy path**|*Computer Configuration* > *Administrative Templates* > *Windows Components* > *BitLocker Drive Encryption* > *Removable Data Drives*|
 |**Conflicts**|To use smart cards with BitLocker, the object identifier setting in the **Computer Configuration** > **Administrative Templates** > **BitLocker Drive Encryption** > **Validate smart card certificate usage rule compliance** policy setting may also need to be modified to match the object identifier of the smart card certificates.|
@@ -257,7 +120,6 @@ This policy setting is used to require, allow, or deny the use of passwords with
 |  Item  | Info |
 |:---|:---|
 |**Policy description**|With this policy setting, it can be specified whether a password is required to unlock BitLocker-protected removable data drives.|
-|**Introduced**|Windows Server 2008 R2 and Windows 7|
 |**Drive type**|Removable data drives|
 |**Policy path**|*Computer Configuration* > *Administrative Templates* > *Windows Components* > *BitLocker Drive Encryption* > *Removable Data Drives*|
 |**Conflicts**|To use password complexity, the **Password must meet complexity requirements** policy setting, which is located at **Computer Configuration\Windows Settings\Security Settings\Account Policies\Password Policy** must also be enabled.|
@@ -292,7 +154,6 @@ This policy setting is used to determine what certificate to use with BitLocker.
 |  Item  | Info |
 |:---|:---|
 |**Policy description**|With this policy setting, an object identifier from a smart card certificate can be associated to a BitLocker-protected drive.|
-|**Introduced**|Windows Server 2008 R2 and Windows 7|
 |**Drive type**|Fixed and removable data drives|
 |**Policy path**|*Computer Configuration* > *Administrative Templates* > *Windows Components* > *BitLocker Drive Encryption*|
 |**Conflicts**|None|
@@ -315,7 +176,6 @@ The default object identifier is 1.3.6.1.4.1.311.67.1.1.
 |  Item  | Info |
 |:---|:---|
 |**Policy description**|With this policy setting, users can be allowed to enable authentication options that require user input from the preboot environment, even if the platform indicates a lack of preboot input capability.|
-|**Introduced**|Windows Server 2012 and Windows 8|
 |**Drive type**|Operating system drive|
 |**Policy path**|*Computer Configuration* > *Administrative Templates* > *Windows Components* > *BitLocker Drive Encryption* > *Operating System Drives*|
 |**Conflicts**|None|
@@ -343,7 +203,6 @@ This policy setting is used to require encryption of fixed drives prior to grant
 |  Item  | Info |
 |:---|:---|
 |**Policy description**|With this policy setting, it can be set whether BitLocker protection is required for fixed data drives to be writable on a computer.|
-|**Introduced**|Windows Server 2008 R2 and Windows 7|
 |**Drive type**|Fixed data drives|
 |**Policy path**|*Computer Configuration* > *Administrative Templates* > *Windows Components* > *BitLocker Drive Encryption* > *Fixed Data Drives*|
 |**Conflicts**|See the Reference section for a description of conflicts.|
@@ -375,7 +234,6 @@ This policy setting is used to require that removable drives are encrypted prior
 |  Item  | Info |
 |:---|:---|
 |**Policy description**|With this policy setting, it can be configured whether BitLocker protection is required for a computer to be able to write data to a removable data drive.|
-|**Introduced**|Windows Server 2008 R2 and Windows 7|
 |**Drive type**|Removable data drives|
 |**Policy path**|*Computer Configuration* > *Administrative Templates* > *Windows Components* > *BitLocker Drive Encryption* > *Removable Data Drives*|
 |**Conflicts**|See the Reference section for a description of conflicts.|
@@ -404,7 +262,6 @@ This policy setting is used to prevent users from turning BitLocker on or off on
 |  Item  | Info |
 |:---|:---|
 |**Policy description**|With this policy setting, it can be controlled the use of BitLocker on removable data drives.|
-|**Introduced**|Windows Server 2008 R2 and Windows 7|
 |**Drive type**|Removable data drives|
 |**Policy path**|*Computer Configuration* > *Administrative Templates* > *Windows Components* > *BitLocker Drive Encryption* > *Removable Data Drives*|
 |**Conflicts**|None|
@@ -431,7 +288,6 @@ This policy controls how BitLocker reacts to systems that are equipped with encr
 |  Item  | Info |
 |:---|:---|
 |**Policy description**|This policy setting allows management of BitLocker's use of hardware-based encryption on fixed data drives and to specify which encryption algorithms BitLocker can use with hardware-based encryption.|
-|**Introduced**|Windows Server 2012 and Windows 8|
 |**Drive type**|Fixed data drives|
 |**Policy path**|*Computer Configuration* > *Administrative Templates* > *Windows Components* > *BitLocker Drive Encryption* > *Fixed Data Drives*|
 |**Conflicts**|None|
@@ -456,7 +312,6 @@ This policy controls how BitLocker reacts when encrypted drives are used as oper
 |  Item  | Info |
 |:---|:---|
 |**Policy description**|This policy setting allows management of BitLocker's use of hardware-based encryption on operating system drives and specifies which encryption algorithms it can use with hardware-based encryption.|
-|**Introduced**|Windows Server 2012 and Windows 8|
 |**Drive type**|Operating system drives|
 |**Policy path**|*Computer Configuration* > *Administrative Templates* > *Windows Components* > *BitLocker Drive Encryption* > *Operating System Drives*|
 |**Conflicts**|None|
@@ -483,7 +338,6 @@ This policy controls how BitLocker reacts to encrypted drives when they're used 
 |  Item  | Info |
 |:---|:---|
 |**Policy description**|This policy setting allows management of BitLocker's use of hardware-based encryption on removable data drives and specifies which encryption algorithms it can use with hardware-based encryption.|
-|**Introduced**|Windows Server 2012 and Windows 8|
 |**Drive type**|Removable data drive|
 |**Policy path**|*Computer Configuration* > *Administrative Templates* > *Windows Components* > *BitLocker Drive Encryption* > *Removable Data Drives*|
 |**Conflicts**|None|
@@ -510,7 +364,6 @@ This policy controls whether fixed data drives utilize Used Space Only encryptio
 |  Item  | Info |
 |:---|:---|
 |**Policy description**|With this policy setting, it can be configured the encryption type that is used by BitLocker.|
-|**Introduced**|Windows Server 2012 and Windows 8|
 |**Drive type**|Fixed data drive|
 |**Policy path**|*Computer Configuration* > *Administrative Templates* > *Windows Components* > *BitLocker Drive Encryption* > *Fixed Data Drives*|
 |**Conflicts**|None|
@@ -533,7 +386,6 @@ This policy controls whether operating system drives utilize Full encryption or 
 |  Item  | Info |
 |:---|:---|
 |**Policy description**|With this policy setting, it can be configured the encryption type that is used by BitLocker.|
-|**Introduced**|Windows Server 2012 and Windows 8|
 |**Drive type**|Operating system drive|
 |**Policy path**|*Computer Configuration* > *Administrative Templates* > *Windows Components* > *BitLocker Drive Encryption* > *Operating System Drives*|
 |**Conflicts**|None|
@@ -556,7 +408,6 @@ This policy controls whether fixed data drives utilize Full encryption or Used S
 |  Item  | Info |
 |:---|:---|
 |**Policy description**|With this policy setting, it can be configured the encryption type that is used by BitLocker.|
-|**Introduced**|Windows Server 2012 and Windows 8|
 |**Drive type**|Removable data drive|
 |**Policy path**|*Computer Configuration* > *Administrative Templates* > *Windows Components* > *BitLocker Drive Encryption* > *Removable Data Drives*|
 |**Conflicts**|None|
@@ -579,7 +430,6 @@ This policy setting is used to configure recovery methods for operating system d
 |  Item  | Info |
 |:---|:---|
 |**Policy description**|With this policy setting, it can be controlled how BitLocker-protected operating system drives are recovered in the absence of the required startup key information.|
-|**Introduced**|Windows Server 2008 R2 and Windows 7|
 |**Drive type**|Operating system drives|
 |**Policy path**|*Computer Configuration* > *Administrative Templates* > *Windows Components* > *BitLocker Drive Encryption* > *Operating System Drives*|
 |**Conflicts**|The use of recovery keys must be disallowed if the **Deny write access to removable drives not protected by BitLocker** policy setting is enabled. </br> </br>When using data recovery agents, the **Provide the unique identifiers for your organization** policy setting must be enabled.|
@@ -605,69 +455,7 @@ Select the **Do not enable BitLocker until recovery information is stored in AD 
 > [!NOTE]
 > If the **Do not enable BitLocker until recovery information is stored in AD DS for operating system drives** check box is selected, a recovery password is automatically generated.
 
-### Choose how users can recover BitLocker-protected drives (Windows Server 2008 and Windows Vista)
 
-This policy setting is used to configure recovery methods for BitLocker-protected drives on computers running Windows Server 2008 or Windows Vista.
-
-|  Item  | Info |
-|:---|:---|
-|**Policy description**|With this policy setting, it can be controlled whether the BitLocker Setup Wizard can display and specify BitLocker recovery options.|
-|**Introduced**|Windows Server 2008 and Windows Vista|
-|**Drive type**|Operating system drives and fixed data drives on computers running Windows Server 2008 and Windows Vista|
-|**Policy path**|*Computer Configuration* > *Administrative Templates* > *Windows Components* > *BitLocker Drive Encryption*|
-|**Conflicts**|This policy setting provides an administrative method of recovering data that is encrypted by BitLocker to prevent data loss due to lack of key information. If the **Do not allow** option is chosen for both user recovery options, the **Store BitLocker recovery information in Active Directory Domain Services (Windows Server 2008 and Windows Vista)** policy setting must be enabled to prevent a policy error.|
-|**When enabled**|The options that the BitLocker Setup Wizard displays to users for recovering BitLocker encrypted data can be configured.|
-|**When disabled or not configured**|The BitLocker Setup Wizard presents users with ways to store recovery options.|
-
-#### Reference: Choose how users can recover BitLocker-protected drives (Windows Server 2008 and Windows Vista)
-
-This policy is only applicable to computers running Windows Server 2008 or Windows Vista. This policy setting is applied when BitLocker is turned on.
-
-Two recovery options can be used to unlock BitLocker-encrypted data in the absence of the required startup key information. Users can type a 48-digit numerical recovery password, or they can insert a USB drive that contains a 256-bit recovery key.
-
-- Saving the recovery password to a USB drive stores the 48-digit recovery password as a text file and the 256-bit recovery key as a hidden file.
-- Saving the recovery password to a folder stores the 48-digit recovery password as a text file.
-- Printing the recovery password sends the 48-digit recovery password to the default printer.
-
-For example, not allowing the 48-digit recovery password prevents users from printing or saving recovery information to a folder.
-
-> [!IMPORTANT]
-> If TPM initialization is performed during the BitLocker setup, TPM owner information is saved or printed with the BitLocker recovery information.
-> The 48-digit recovery password isn't available in FIPS-compliance mode.
-
-> [!IMPORTANT]
-> To prevent data loss, there must be a way to recover BitLocker encryption keys. If both recovery options are not allowed, backup of BitLocker recovery information to AD DS must be enabled. Otherwise, a policy error occurs.
-
-### Store BitLocker recovery information in Active Directory Domain Services (Windows Server 2008 and Windows Vista)
-
-This policy setting is used to configure the storage of BitLocker recovery information in AD DS. This policy setting provides an administrative method of recovering data that is encrypted by BitLocker to prevent data loss due to lack of key information.
-
-|  Item  | Info |
-|:---|:---|
-|**Policy description**|This policy setting allows management of the AD DS backup of BitLocker Drive Encryption recovery information.|
-|**Introduced**|Windows Server 2008 and Windows Vista|
-|**Drive type**|Operating system drives and fixed data drives on computers running Windows Server 2008 and Windows Vista.|
-|**Policy path**|*Computer Configuration* > *Administrative Templates* > *Windows Components* > *BitLocker Drive Encryption*|
-|**Conflicts**|None|
-|**When enabled**|BitLocker recovery information is automatically and silently backed up to AD DS when BitLocker is turned on for a computer.|
-|**When disabled or not configured**|BitLocker recovery information isn't backed up to AD DS.|
-
-#### Reference: Store BitLocker recovery information in Active Directory Domain Services (Windows Server 2008 and Windows Vista)
-
-This policy is only applicable to computers running Windows Server 2008 or Windows Vista.
-
-This policy setting is applied when BitLocker is turned on.
-
-BitLocker recovery information includes the recovery password and unique identifier data. A package that contains an encryption key for a BitLocker-protected drive can also be included. This key package is secured by one or more recovery passwords, and it can help perform specialized recovery when the disk is damaged or corrupted.
-
-If **Require BitLocker backup to AD DS** is selected, BitLocker can't be turned on unless the computer is connected to the domain, and the backup of BitLocker recovery information to AD DS succeeds. This option is selected by default to help ensure that BitLocker recovery is possible.
-
-A recovery password is a 48-digit number that unlocks access to a BitLocker-protected drive. A key package contains a drive's BitLocker encryption key, which is secured by one or more recovery passwords. Key packages may help perform specialized recovery when the disk is damaged or corrupted.
-
-If the **Require BitLocker backup to AD DS** option isn't selected, AD DS backup is attempted, but network or other backup failures don't prevent the BitLocker setup. The Backup process isn't automatically retried, and the recovery password might not be stored in AD DS during BitLocker setup.
-TPM initialization might be needed during the BitLocker setup. Enable the **Turn on TPM backup to Active Directory Domain Services** policy setting in **Computer Configuration** > **Administrative Templates** > **System** > **Trusted Platform Module Services** to ensure that TPM information is also backed up.
-
-For more information about this setting, see [TPM Group Policy settings](/windows/device-security/tpm/trusted-platform-module-services-group-policy-settings).
 
 ### Choose how BitLocker-protected fixed drives can be recovered
 
@@ -676,7 +464,6 @@ This policy setting is used to configure recovery methods for fixed data drives.
 |  Item  | Info |
 |:---|:---|
 |**Policy description**|With this policy setting, it can be controlled how BitLocker-protected fixed data drives are recovered in the absence of the required credentials.|
-|**Introduced**|Windows Server 2008 R2 and Windows 7|
 |**Drive type**|Fixed data drives|
 |**Policy path**|*Computer Configuration* > *Administrative Templates* > *Windows Components* > *BitLocker Drive Encryption* > *Fixed Data Drives*|
 |**Conflicts**|The use of recovery keys must be disallowed if the **Deny write access to removable drives not protected by BitLocker** policy setting is enabled. </br> </br>When using data recovery agents, the **Provide the unique identifiers for your organization** policy setting must be enabled.|
@@ -709,7 +496,6 @@ This policy setting is used to configure recovery methods for removable data dri
 |  Item  | Info |
 |:---|:---|
 |**Policy description**|With this policy setting, it can be controlled how BitLocker-protected removable data drives are recovered in the absence of the required credentials.|
-|**Introduced**|Windows Server 2008 R2 and Windows 7|
 |**Drive type**|Removable data drives|
 |**Policy path**|*Computer Configuration* > *Administrative Templates* > *Windows Components* > *BitLocker Drive Encryption* > *Removable Data Drives*|
 |**Conflicts**|The use of recovery keys must be disallowed if the **Deny write access to removable drives not protected by BitLocker** policy setting is enabled. </br> </br>When using data recovery agents, the **Provide the unique identifiers for your organization** policy setting must be enabled.|
@@ -770,7 +556,6 @@ This policy controls how BitLocker-enabled system volumes are handled with the S
 |  Item  | Info |
 |:---|:---|
 |**Policy description**|With this policy setting, it can be configured whether Secure Boot will be allowed as the platform integrity provider for BitLocker operating system drives.|
-|**Introduced**|Windows Server 2012 and Windows 8|
 |**Drive type**|All drives|
 |**Policy path**|*Computer Configuration* > *Administrative Templates* > *Windows Components* > *BitLocker Drive Encryption* > *Operating System Drives*|
 |**Conflicts**|If **Allow Secure Boot for integrity validation** is enabled, make sure the Configure TPM platform validation profile for native UEFI firmware configurations Group Policy setting isn't enabled, or include PCR 7 to allow BitLocker to use Secure Boot for platform or BCD integrity validation. <BR><BR> For more information about PCR 7, see [About the Platform Configuration Register (PCR)](#about-the-platform-configuration-register-pcr) in this article.|
@@ -779,7 +564,7 @@ This policy controls how BitLocker-enabled system volumes are handled with the S
 
 #### Reference: Allow Secure Boot for integrity validation
 
-Secure boot ensures that the computer's pre-boot environment loads only firmware that is digitally signed by authorized software publishers. Secure boot also started providing more flexibility for managing pre-boot configurations than BitLocker integrity checks prior to Windows Server 2012 and Windows 8.
+Secure boot ensures that the computer's pre-boot environment loads only firmware that is digitally signed by authorized software publishers.
 
 When this policy is enabled and the hardware is capable of using secure boot for BitLocker scenarios, the **Use enhanced Boot Configuration Data validation profile** group policy setting is ignored, and secure boot verifies BCD settings according to the secure boot policy setting, which is configured separately from BitLocker.
 
@@ -837,7 +622,6 @@ This policy setting determines what values the TPM measures when it validates ea
 |  Item  | Info |
 |:---|:---|
 |**Policy description**|With this policy setting, it can be configured how the computer's TPM security hardware secures the BitLocker encryption key.|
-|**Introduced**|Windows Server 2012 and Windows 8|
 |**Drive type**|Operating system drives|
 |**Policy path**|*Computer Configuration* > *Administrative Templates* > *Windows Components* > *BitLocker Drive Encryption* > *Operating System Drives*|
 |**Conflicts**|None|
@@ -880,56 +664,6 @@ The following list identifies all of the available PCRs:
 - PCR 11: BitLocker access control
 - PCR 12-23: Reserved for future use
 
-### Configure TPM platform validation profile (Windows Vista, Windows Server 2008, Windows 7, Windows Server 2008 R2)
-
-This policy setting determines what values the TPM measures when it validates early boot components before unlocking a drive on a computer running Windows Vista, Windows Server 2008, or Windows 7.
-
-|  Item  | Info |
-|:---|:---|
-|**Policy description**|With this policy setting, it can be configured how the computer's TPM security hardware secures the BitLocker encryption key.|
-|**Introduced**|Windows Server 2008 and Windows Vista|
-|**Drive type**|Operating system drives|
-|**Policy path**|*Computer Configuration* > *Administrative Templates* > *Windows Components* > *BitLocker Drive Encryption* > *Operating System Drives*|
-|**Conflicts**|None|
-|**When enabled**|The boot components that the TPM validates before unlocking access to the BitLocker-encrypted operating system drive can be configured. If any of these components change while BitLocker protection is in effect, the TPM doesn't release the encryption key to unlock the drive. Instead, the computer displays the BitLocker Recovery console and requires that the recovery password or the recovery key is provided to unlock the drive.|
-|**When disabled or not configured**|The TPM uses the default platform validation profile or the platform validation profile that is specified by the setup script.|
-
-#### Reference: Configure TPM platform validation profile (Windows Vista, Windows Server 2008, Windows 7, Windows Server 2008 R2)
-
-This policy setting doesn't apply if the computer doesn't have a compatible TPM or if BitLocker is already turned on with TPM protection.
-
-A platform validation profile consists of a set of PCR indices that range from 0 to 23. The default platform validation profile secures the encryption key against changes to the following PCRs:
-
-- Core Root of Trust of Measurement (CRTM), BIOS, and Platform Extensions (PCR 0)
-- Option ROM Code (PCR 2)
-- Master Boot Record (MBR) Code (PCR 4)
-- NTFS Boot Sector (PCR 8)
-- NTFS Boot Block (PCR 9)
-- Boot Manager (PCR 10)
-- BitLocker Access Control (PCR 11)
-
-> [!NOTE]
-> The default TPM validation profile PCR settings for computers that use an Extensible Firmware Interface (EFI) are the PCRs 0, 2, 4, and 11 only.
-
-The following list identifies all of the available PCRs:
-
-- PCR 0: Core root-of-trust for measurement, EFI boot and run-time services, EFI drivers embedded in system ROM, ACPI static tables, embedded SMM code, and BIOS code
-- PCR 1: Platform and motherboard configuration and data. Hand-off tables and EFI variables that affect system configuration
-- PCR 2: Option ROM code
-- PCR 3: Option ROM data and configuration
-- PCR 4: Master Boot Record (MBR) code or code from other boot devices
-- PCR 5: Master Boot Record (MBR) partition table. Various EFI variables and the GPT table
-- PCR 6: State transition and wake events
-- PCR 7: Computer manufacturer-specific
-- PCR 8: NTFS boot sector
-- PCR 9: NTFS boot block
-- PCR 10: Boot manager
-- PCR 11: BitLocker access control
-- PCR 12 - 23: Reserved for future use
-
-> [!WARNING]
-> Changing from the default platform validation profile affects the security and manageability of a computer. BitLocker's sensitivity to platform modifications (malicious or authorized) is increased or decreased depending on inclusion or exclusion (respectively) of the PCRs.
-
 ### Configure TPM platform validation profile for native UEFI firmware configurations
 
 This policy setting determines what values the TPM measures when it validates early boot components before unlocking an operating system drive on a computer with native UEFI firmware configurations.
@@ -937,7 +671,6 @@ This policy setting determines what values the TPM measures when it validates ea
 |  Item  | Info |
 |:---|:---|
 |**Policy description**|With this policy setting, it can be configured how the computer's Trusted Platform Module (TPM) security hardware secures the BitLocker encryption key.|
-|**Introduced**|Windows Server 2012 and Windows 8|
 |**Drive type**|Operating system drives|
 |**Policy path**|*Computer Configuration* > *Administrative Templates* > *Windows Components* > *BitLocker Drive Encryption* > *Operating System Drives*|
 |**Conflicts**|Setting this policy with PCR 7 omitted overrides the **Allow Secure Boot for integrity validation** Group Policy setting, and it prevents BitLocker from using Secure Boot for platform or Boot Configuration Data (BCD) integrity validation. <BR><BR> If an environment uses TPM and Secure Boot for platform integrity checks, this policy is configured. <BR><BR> For more information about PCR 7, see [About the Platform Configuration Register (PCR)](#about-the-platform-configuration-register-pcr) in this article.|
@@ -985,7 +718,6 @@ This policy setting determines if platform validation data should refresh when W
 |  Item  | Info |
 |:---|:---|
 |**Policy description**|With this policy setting, it can be controlled whether platform validation data is refreshed when Windows is started following a BitLocker recovery.|
-|**Introduced**|Windows Server 2012 and Windows 8|
 |**Drive type**|Operating system drives|
 |**Policy path**|*Computer Configuration* > *Administrative Templates* > *Windows Components* > *BitLocker Drive Encryption* > *Operating System Drives*|
 |**Conflicts**|None|
@@ -1004,12 +736,11 @@ This policy setting determines specific Boot Configuration Data (BCD) settings t
 |  Item  | Info |
 |:---|:---|
 |**Policy description**|With this policy setting, Boot Configuration Data (BCD) settings to verify during platform validation can be specified.|
-|**Introduced**|Windows Server 2012 and Windows 8|
 |**Drive type**|Operating system drives|
 |**Policy path**|*Computer Configuration* > *Administrative Templates* > *Windows Components* > *BitLocker Drive Encryption* > *Operating System Drives*|
 |**Conflicts**|When BitLocker is using Secure Boot for platform and Boot Configuration Data integrity validation, the **Use enhanced Boot Configuration Data validation profile** Group Policy setting is ignored (as defined by the **Allow Secure Boot for integrity validation** Group Policy setting).|
 |**When enabled**|Additional BCD settings can be added and specified BCD settings can be excluded. Also a customized BCD validation profile can be created by combining inclusion and exclusion lists. The customized BCD validation profile gives the ability to verify BCD settings.|
-|**When disabled**|The computer reverts to a BCD profile validation similar to the default BCD profile that is used by Windows 7.|
+|**When disabled**|The computer reverts to a BCD profile validation.|
 |**When not configured**|The computer verifies the default BCD settings in Windows.|
 
 #### Reference: Use enhanced Boot Configuration Data validation profile
@@ -1024,7 +755,6 @@ The Federal Information Processing Standard (FIPS) setting for FIPS compliance c
 |  Item  | Info |
 |:---|:---|
 |**Policy description**|Notes|
-|**Introduced**|Windows Server 2003 with SP1|
 |**Drive type**|System-wide|
 |**Policy path**|*Local Policies* > *Security Options* > *System cryptography*: **Use FIPS compliant algorithms for encryption, hashing, and signing**|
 |**Conflicts**|Some applications, such as Terminal Services, don't support FIPS-140 on all operating systems.|
