@@ -7,7 +7,12 @@ ms.topic: include
 
 ### Use enhanced Boot Configuration Data validation profile
 
-This policy setting allows you to choose specific Boot Configuration Data (BCD) settings to verify during platform validation. If you enable this policy setting, you will be able to add additional settings, remove the default settings, or both. If you disable this policy setting, the computer will revert to a BCD profile similar to the default BCD profile used by Windows 7. If you do not configure this policy setting, the computer will verify the default Windows BCD settings. Note: When BitLocker is using Secure Boot for platform and Boot Configuration Data (BCD) integrity validation, as defined by the "Allow Secure Boot for integrity validation" group policy, the "Use enhanced Boot Configuration Data validation profile" group policy is ignored. The setting that controls boot debugging (0x16000010) will always be validated and will have no effect if it is included in the provided fields.
+This policy setting determines specific Boot Configuration Data (BCD) settings to verify during platform validation. A platform validation uses the data in the platform validation profile, which consists of a set of Platform Configuration Register (PCR) indices that range from 0 to 23.
+
+If you don't configure this policy setting, the device will verify the default Windows BCD settings.
+
+> [!NOTE]
+> When BitLocker is using Secure Boot for platform and BCD integrity validation, as defined by the *Allow Secure Boot for integrity validation* GPO, this policy setting is ignored. The setting that controls boot debugging `0x16000010` is always validated, and it has no effect if it's included in the inclusion or exclusion list.
 
 |  | Path |
 |--|--|

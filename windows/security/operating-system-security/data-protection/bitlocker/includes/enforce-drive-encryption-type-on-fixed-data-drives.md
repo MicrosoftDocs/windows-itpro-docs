@@ -11,5 +11,5 @@ This policy setting allows you to configure the encryption type used by BitLocke
 
 |  | Path |
 |--|--|
-| **CSP** | ``./Device/Vendor/MSFT/BitLocker/`[FixedDrivesEncryptionType](/windows/client-management/mdm/bitlocker-csp#fixeddrivesencryptiontype) |
+| **CSP** | `./Device/Vendor/MSFT/BitLocker/`[FixedDrivesEncryptionType](/windows/client-management/mdm/bitlocker-csp#fixeddrivesencryptiontype) |
 | **GPO** | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Fixed Data Drives** |

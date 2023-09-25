@@ -7,7 +7,12 @@ ms.topic: include
 
 ### Reset platform validation data after BitLocker recovery
 
-This policy setting allows you to control whether or not platform validation data is refreshed when Windows is started following BitLocker recovery. If you enable this policy setting, platform validation data will be refreshed when Windows is started following BitLocker recovery. If you disable this policy setting, platform validation data will not be refreshed when Windows is started following BitLocker recovery. If you do not configure this policy setting, platform validation data will be refreshed when Windows is started following BitLocker recovery.
+This policy setting determines if platform validation data should refresh when Windows is started following a BitLocker recovery. A platform validation data profile consists of the values in a set of Platform Configuration Register (PCR) indices that range from 0 to 23.
+
+If you enable this policy setting, platform validation data will be refreshed when Windows is started following BitLocker recovery. This is the default behavior.\
+If you disable this policy setting, platform validation data will not be refreshed when Windows is started following BitLocker recovery.
+
+For more information about the recovery process, see the [BitLocker recovery guide](bitlocker-recovery-guide-plan.md).
 
 |  | Path |
 |--|--|

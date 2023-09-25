@@ -19,6 +19,9 @@ If multiple changes are necessary to bring the drive into compliance, BitLocker 
 
 In other scenarios, to bring the drive into compliance with a change in policy settings, BitLocker may need to be disabled and the drive decrypted followed by re-enabling BitLocker and then re-encrypting the drive. An example of this scenario is when the BitLocker encryption method or cipher strength is changed. The [`manage-bde`](/windows-server/administration/windows-commands/manage-bde) command-line can also be used in this scenario to help bring the device into compliance.
 
+> [!IMPORTANT]
+> Most of the BitLocker settings are applied when BitLocker is initially turned on for a drive. Encryption isn't restarted if settings change.
+
 ## Settings list
 
 The list of settings is sorted alphabetically and organized in four tabs:
@@ -27,9 +30,6 @@ The list of settings is sorted alphabetically and organized in four tabs:
 - **Operating system drive**: settings applicable to the drive where Windows is installed
 - **Fixed data drives**: settings applicable to any local drives, except the operating system drive
 - **Removable data drives**: settings applicable to any removable drives
-
-> [!IMPORTANT]
-> Most of the BitLocker settings are applied when BitLocker is initially turned on for a drive. Encryption isn't restarted if settings change.
 
 #### [:::image type="icon" source="images/locked-drive.svg"::: **Common settings**](#tab/common)
 
@@ -142,3 +142,17 @@ The following table lists the BitLocker policies applicable to all drive types, 
 [!INCLUDE [removable-drives-excluded-from-encryption](includes/removable-drives-excluded-from-encryption.md)]
 
 ---
+
+## Platform Configuration Register (PCR)
+
+A platform validation profile consists of a set of PCR indices that range from 0 to 23. The scope of the values can be specific to the version of the operating system.
+
+Changing from the default platform validation profile affects the security and manageability of a computer. BitLocker's sensitivity to platform modifications (malicious or authorized) is increased or decreased depending on inclusion or exclusion (respectively) of the PCRs.
+
+### About PCR 7
+
+PCR 7 measures the state of Secure Boot. With PCR 7, BitLocker can use Secure Boot for integrity validation. Secure Boot ensures that the computer's preboot environment loads only firmware that is digitally signed by authorized software publishers. PCR 7 measurements indicate whether Secure Boot is on and which keys are trusted on the platform. If Secure Boot is on and the firmware measures PCR 7 correctly per the UEFI specification, BitLocker can bind to this information rather than to PCRs 0, 2, and 4, which have the measurements of the exact firmware and Bootmgr images loaded. This process reduces the likelihood of BitLocker starting in recovery mode as a result of firmware and image updates, and it provides with greater flexibility to manage the preboot configuration.
+
+PCR 7 measurements must follow the guidance that is described in [Appendix A Trusted Execution Environment EFI Protocol](/windows-hardware/test/hlk/testref/trusted-execution-environment-efi-protocol).
+
+PCR 7 measurements are a mandatory logo requirement for systems that support Modern Standby (also known as Always On, Always Connected PCs), such as the Microsoft Surface RT. On such systems, if the TPM with PCR 7 measurement and secure boot are correctly configured, BitLocker binds to PCR 7 and PCR 11 by default.

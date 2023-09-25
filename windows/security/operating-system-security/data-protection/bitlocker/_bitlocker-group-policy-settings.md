@@ -711,43 +711,6 @@ The following list identifies all of the available PCRs:
 > [!WARNING]
 > Changing from the default platform validation profile affects the security and manageability of a computer. BitLocker's sensitivity to platform modifications (malicious or authorized) is increased or decreased depending on inclusion or exclusion (respectively) of the PCRs.
 
-### Reset platform validation data after BitLocker recovery
-
-This policy setting determines if platform validation data should refresh when Windows is started following a BitLocker recovery. A platform validation data profile consists of the values in a set of Platform Configuration Register (PCR) indices that range from 0 to 23.
-
-|  Item  | Info |
-|:---|:---|
-|**Policy description**|With this policy setting, it can be controlled whether platform validation data is refreshed when Windows is started following a BitLocker recovery.|
-|**Drive type**|Operating system drives|
-|**Policy path**|*Computer Configuration* > *Administrative Templates* > *Windows Components* > *BitLocker Drive Encryption* > *Operating System Drives*|
-|**Conflicts**|None|
-|**When enabled**|Platform validation data is refreshed when Windows is started following a BitLocker recovery.|
-|**When disabled**|Platform validation data isn't refreshed when Windows is started following a BitLocker recovery.|
-|**When not configured**|Platform validation data is refreshed when Windows is started following a BitLocker recovery.|
-
-#### Reference: Reset platform validation data after BitLocker recovery
-
-For more information about the recovery process, see the [BitLocker recovery guide](bitlocker-recovery-guide-plan.md).
-
-### Use enhanced Boot Configuration Data validation profile
-
-This policy setting determines specific Boot Configuration Data (BCD) settings to verify during platform validation. A platform validation uses the data in the platform validation profile, which consists of a set of Platform Configuration Register (PCR) indices that range from 0 to 23.
-
-|  Item  | Info |
-|:---|:---|
-|**Policy description**|With this policy setting, Boot Configuration Data (BCD) settings to verify during platform validation can be specified.|
-|**Drive type**|Operating system drives|
-|**Policy path**|*Computer Configuration* > *Administrative Templates* > *Windows Components* > *BitLocker Drive Encryption* > *Operating System Drives*|
-|**Conflicts**|When BitLocker is using Secure Boot for platform and Boot Configuration Data integrity validation, the **Use enhanced Boot Configuration Data validation profile** Group Policy setting is ignored (as defined by the **Allow Secure Boot for integrity validation** Group Policy setting).|
-|**When enabled**|Additional BCD settings can be added and specified BCD settings can be excluded. Also a customized BCD validation profile can be created by combining inclusion and exclusion lists. The customized BCD validation profile gives the ability to verify BCD settings.|
-|**When disabled**|The computer reverts to a BCD profile validation.|
-|**When not configured**|The computer verifies the default BCD settings in Windows.|
-
-#### Reference: Use enhanced Boot Configuration Data validation profile
-
-> [!NOTE]
-> The setting that controls boot debugging (0x16000010) is always validated, and it has no effect if it's included in the inclusion or the exclusion list.
-
 ## FIPS setting
 
 The Federal Information Processing Standard (FIPS) setting for FIPS compliance can be configured. As an effect of FIPS compliance, users can't create or save a BitLocker password for recovery or as a key protector. The use of a recovery key is permitted.
@@ -782,16 +745,3 @@ To disable all available sleep states, disable the Group Policy settings located
 - **Allow Standby States (S1-S3) When Sleeping (Plugged In)**
 - **Allow Standby States (S1-S3) When Sleeping (Battery)**
 
-## About the Platform Configuration Register (PCR)
-
-A platform validation profile consists of a set of PCR indices that range from 0 to 23. The scope of the values can be specific to the version of the operating system.
-
-Changing from the default platform validation profile affects the security and manageability of a computer. BitLocker's sensitivity to platform modifications (malicious or authorized) is increased or decreased depending on inclusion or exclusion (respectively) of the PCRs.
-
-### About PCR 7
-
-PCR 7 measures the state of Secure Boot. With PCR 7, BitLocker can use Secure Boot for integrity validation. Secure Boot ensures that the computer's preboot environment loads only firmware that is digitally signed by authorized software publishers. PCR 7 measurements indicate whether Secure Boot is on and which keys are trusted on the platform. If Secure Boot is on and the firmware measures PCR 7 correctly per the UEFI specification, BitLocker can bind to this information rather than to PCRs 0, 2, and 4, which have the measurements of the exact firmware and Bootmgr images loaded. This process reduces the likelihood of BitLocker starting in recovery mode as a result of firmware and image updates, and it provides with greater flexibility to manage the preboot configuration.
-
-PCR 7 measurements must follow the guidance that is described in [Appendix A Trusted Execution Environment EFI Protocol](/windows-hardware/test/hlk/testref/trusted-execution-environment-efi-protocol).
-
-PCR 7 measurements are a mandatory logo requirement for systems that support Modern Standby (also known as Always On, Always Connected PCs), such as the Microsoft Surface RT. On such systems, if the TPM with PCR 7 measurement and secure boot are correctly configured, BitLocker binds to PCR 7 and PCR 11 by default.
