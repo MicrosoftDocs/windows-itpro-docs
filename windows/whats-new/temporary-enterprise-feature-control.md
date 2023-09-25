@@ -18,10 +18,6 @@ appliesto:
 
 # Enterprise feature control in Windows 11
 <!--7790977-->
-
-> [!WARNING]
-> THIS IS AN IN-PROGRESS ROUGH DRAFT. The wording and feature list may change before publishing. Last updated: 08/28/2023
-
 New features and enhancements are introduced through the monthly cumulative update to provide continuous innovation for Windows 11. To give organizations time to plan and prepare, some of these new features might be:
 
 - Temporarily turned off by default using [temporary enterprise feature control](#temporary-enterprise-feature-control)
