@@ -2,7 +2,7 @@
 title: Manage Windows Copilot
 description: Learn how to manage Windows Copilot using MDM and group policy.
 ms.topic: article
-ms.date: 08/14/2023
+ms.date: 09/26/2023
 appliesto:
 - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
 ---
@@ -22,14 +22,7 @@ This policy setting allows you to turn off Windows Copilot. If you enable this p
 | **CSP**          | ./User/Vendor/MSFT/WindowsAI/[TurnOffWindowsCopilot](mdm/policy-csp-windowsai.md#turnoffwindowscopilot) |
 | **Group policy** | User Configuration > Administrative Templates > Windows Copilot > **Turn off Windows Copilot**          |
 
-## Hide the Copilot button from the taskbar
 
-This policy setting allows you to hide the Copilot button. If you enable this policy setting, the Copilot button is hidden and the Settings toggle is disabled. You can still open Copilot in other ways such as the `Win + C` keyboard shortcut.
-
-|                  | Setting                                                                                                          |
-|------------------|------------------------------------------------------------------------------------------------------------------|
-| **CSP**          | ./[Device/User]/Vendor/MSFT/Policy/Config/Start/[HideCopilotButton](mdm/policy-csp-start.md#hidecopilotbutton)   |
-| **Group policy** | Computer or User Configuration > Administrative Templates > Start Menu and Taskbar > **Hide the Copilot button** |
 
 ## Related articles
 
