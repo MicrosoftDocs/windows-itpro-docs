@@ -7,7 +7,7 @@ localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
 manager: laurawi
-ms.date: 05/23/2023
+ms.date: 09/26/2023
 ms.collection: highpri
 ms.topic: reference
 ---
@@ -36,7 +36,6 @@ You can learn more about Windows functional and diagnostic data through these ar
 - [Windows 10, version 1703 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1703.md)
 - [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md)
 - [Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization.md)
-
 
 ## AppPlatform events
 
@@ -157,7 +156,7 @@ This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedevic
 
 The following fields are available:
 
-- **AppraiserVersion**  The version of the appraiser binary generating the events.
+- **AppraiserVersion** The version of the appraiser binary generating the events.
 - **SdbEntries**  Indicates if any matching compat Sdb entries are associated with this application
 
 
@@ -1182,6 +1181,19 @@ The following fields are available:
 - **AppraiserVersion**  The version of the Appraiser file that is generating the events.
 
 
+### Microsoft.Windows.Appraiser.General.SystemProcessorPopCntAdd
+
+This event sends data indicating whether the system supports the PopCnt CPU requirement for newer versions of Windows, to help keep Windows up-to-date.
+
+This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
+
+The following fields are available:
+
+- **AppraiserVersion**  Appraiser version
+- **Blocking**  Is the upgrade blocked due to the processor missing the PopCnt instruction?
+- **PopCntPassed**  Whether the machine passes the latest OS hardware requirements or not for the PopCnt instruction.
+
+
 ### Microsoft.Windows.Appraiser.General.SystemProcessorPrefetchWAdd
 
 This event sends data indicating whether the system supports the PrefetchW CPU requirement, to help keep Windows up to date.
@@ -1462,7 +1474,7 @@ This event sends data about Azure presence, type, and cloud domain use in order 
 
 The following fields are available:
 
-- **AADDeviceId**  Azure Active Directory device ID.
+- **AADDeviceId**  Microsoft Entra ID device ID.
 - **AzureOSIDPresent**  Represents the field used to identify an Azure machine.
 - **AzureVMType**  Represents whether the instance is Azure VM PAAS, Azure VM IAAS or any other VMs.
 - **CDJType**  Represents the type of cloud domain joined for the machine.
@@ -1470,7 +1482,7 @@ The following fields are available:
 - **ContainerType**  The type of container, such as process or virtual machine hosted.
 - **EnrollmentType**  Defines the type of MDM enrollment on the device.
 - **HashedDomain**  The hashed representation of the user domain used for login.
-- **IsCloudDomainJoined**  Is this device joined to an Azure Active Directory (AAD) tenant? true/false
+- **IsCloudDomainJoined**  Is this device joined to a Microsoft Entra tenant? true/false
 - **IsDERequirementMet**  Represents if the device can do device encryption.
 - **IsDeviceProtected**  Represents if Device protected by BitLocker/Device Encryption
 - **IsEDPEnabled**  Represents if Enterprise data protected on the device.
@@ -1478,7 +1490,7 @@ The following fields are available:
 - **MDMServiceProvider**  A hash of the specific MDM authority, such as Microsoft Intune, that is managing the device.
 - **MPNId**  Returns the Partner ID/MPN ID from Regkey. HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\DeployID
 - **SCCMClientId**  This ID correlate systems that send data to Compat Analytics (OMS) and other OMS based systems with systems in an enterprise Configuration Manager environment.
-- **ServerFeatures**  Represents the features installed on a Windows Server. This can be used by developers and administrators who need to automate the process of determining the features installed on a set of server computers.
+- **ServerFeatures**  Represents the features installed on a Windows Server. This can be used by developers and administrators who need to automate the process of determining the features installed on a set of server computers.
 - **SystemCenterID**  The Configuration Manager ID is an anonymized one-way hash of the Active Directory Organization identifier
 
 
@@ -1941,6 +1953,7 @@ The following fields are available:
 
 - **wilActivity**  Contains the thread ID used to match the begin and end events, and for the end event also a HResult indicating sucess or failure.
 
+
 ### Microsoft.Windows.Security.CodeIntegrity.HVCISysprep.HvciAlreadyEnabled
 
 Fires when HVCI is already enabled so no need to continue auto-enablement.
@@ -2370,6 +2383,78 @@ The following fields are available:
 
 
 ## Diagnostic data events
+
+### TelClientSynthetic.AbnormalShutdown_0
+
+This event sends data about boot IDs for which a normal clean shutdown was not observed. The data collected with this event is used to help keep Windows up to date, secure, and performing properly.
+
+The following fields are available:
+
+- **AbnormalShutdownBootId**  BootId of the abnormal shutdown being reported by this event.
+- **AbsCausedbyAutoChk**  This flag is set when AutoCheck forces a device restart to indicate that the shutdown was not an abnormal shutdown.
+- **AcDcStateAtLastShutdown**  Identifies if the device was on battery or plugged in.
+- **BatteryLevelAtLastShutdown**  The last recorded battery level.
+- **BatteryPercentageAtLastShutdown**  The battery percentage at the last shutdown.
+- **CrashDumpEnabled**  Are crash dumps enabled?
+- **CumulativeCrashCount**  Cumulative count of operating system crashes since the BootId reset.
+- **CurrentBootId**  BootId at the time the abnormal shutdown event was being reported.
+- **Firmwaredata->ResetReasonEmbeddedController**  The reset reason that was supplied by the firmware.
+- **Firmwaredata->ResetReasonEmbeddedControllerAdditional**  Additional data related to reset reason provided by the firmware.
+- **Firmwaredata->ResetReasonPch**  The reset reason that was supplied by the hardware.
+- **Firmwaredata->ResetReasonPchAdditional**  Additional data related to the reset reason supplied by the hardware.
+- **Firmwaredata->ResetReasonSupplied**  Indicates whether the firmware supplied any reset reason or not.
+- **FirmwareType**  ID of the FirmwareType as enumerated in DimFirmwareType.
+- **HardwareWatchdogTimerGeneratedLastReset**  Indicates whether the hardware watchdog timer caused the last reset.
+- **HardwareWatchdogTimerPresent**  Indicates whether hardware watchdog timer was present or not.
+- **InvalidBootStat**  This is a sanity check flag that ensures the validity of the bootstat file.
+- **LastBugCheckBootId**  bootId of the last captured crash.
+- **LastBugCheckCode**  Code that indicates the type of error.
+- **LastBugCheckContextFlags**  Additional crash dump settings.
+- **LastBugCheckOriginalDumpType**  The type of crash dump the system intended to save.
+- **LastBugCheckOtherSettings**  Other crash dump settings.
+- **LastBugCheckParameter1**  The first parameter with additional info on the type of the error.
+- **LastBugCheckProgress**  Progress towards writing out the last crash dump.
+- **LastBugCheckVersion**  The version of the information struct written during the crash.
+- **LastSuccessfullyShutdownBootId**  BootId of the last fully successful shutdown.
+- **LongPowerButtonPressDetected**  Identifies if the user was pressing and holding power button.
+- **LongPowerButtonPressInstanceGuid**  The Instance GUID for the user state of pressing and holding the power button.
+- **OOBEInProgress**  Identifies if OOBE is running.
+- **OSSetupInProgress**  Identifies if the operating system setup is running.
+- **PowerButtonCumulativePressCount**  How many times has the power button been pressed?
+- **PowerButtonCumulativeReleaseCount**  How many times has the power button been released?
+- **PowerButtonErrorCount**  Indicates the number of times there was an error attempting to record power button metrics.
+- **PowerButtonLastPressBootId**  BootId of the last time the power button was pressed.
+- **PowerButtonLastPressTime**  Date and time of the last time the power button was pressed.
+- **PowerButtonLastReleaseBootId**  BootId of the last time the power button was released.
+- **PowerButtonLastReleaseTime**  Date and time of the last time the power button was released.
+- **PowerButtonPressCurrentCsPhase**  Represents the phase of Connected Standby exit when the power button was pressed.
+- **PowerButtonPressIsShutdownInProgress**  Indicates whether a system shutdown was in progress at the last time the power button was pressed.
+- **PowerButtonPressLastPowerWatchdogStage**  Progress while the monitor is being turned on.
+- **PowerButtonPressPowerWatchdogArmed**  Indicates whether or not the watchdog for the monitor was active at the time of the last power button press.
+- **ShutdownDeviceType**  Identifies who triggered a shutdown. Is it because of battery, thermal zones, or through a Kernel API.
+- **SleepCheckpoint**  Provides the last checkpoint when there is a failure during a sleep transition.
+- **SleepCheckpointSource**  Indicates whether the source is the EFI variable or bootstat file.
+- **SleepCheckpointStatus**  Indicates whether the checkpoint information is valid.
+- **StaleBootStatData**  Identifies if the data from bootstat is stale.
+- **TransitionInfoBootId**  BootId of the captured transition info.
+- **TransitionInfoCSCount**  l number of times the system transitioned from Connected Standby mode.
+- **TransitionInfoCSEntryReason**  Indicates the reason the device last entered Connected Standby mode.
+- **TransitionInfoCSExitReason**  Indicates the reason the device last exited Connected Standby mode.
+- **TransitionInfoCSInProgress**  At the time the last marker was saved, the system was in or entering Connected Standby mode.
+- **TransitionInfoLastReferenceTimeChecksum**  The checksum of TransitionInfoLastReferenceTimestamp,
+- **TransitionInfoLastReferenceTimestamp**  The date and time that the marker was last saved.
+- **TransitionInfoLidState**  Describes the state of the laptop lid.
+- **TransitionInfoPowerButtonTimestamp**  The date and time of the last time the power button was pressed.
+- **TransitionInfoSleepInProgress**  At the time the last marker was saved, the system was in or entering sleep mode.
+- **TransitionInfoSleepTranstionsToOn**  Total number of times the device transitioned from sleep mode.
+- **TransitionInfoSystemRunning**  At the time the last marker was saved, the device was running.
+- **TransitionInfoSystemShutdownInProgress**  Indicates whether a device shutdown was in progress when the power button was pressed.
+- **TransitionInfoUserShutdownInProgress**  Indicates whether a user shutdown was in progress when the power button was pressed.
+- **TransitionLatestCheckpointId**  Represents a unique identifier for a checkpoint during the device state transition.
+- **TransitionLatestCheckpointSeqNumber**  Represents the chronological sequence number of the checkpoint.
+- **TransitionLatestCheckpointType**  Represents the type of the checkpoint, which can be the start of a phase, end of a phase, or just informational.
+- **VirtualMachineId**  If the operating system is on a virtual Machine, it gives the virtual Machine ID (GUID) that can be used to correlate events on the host.
+
 
 ### TelClientSynthetic.AuthorizationInfo_RuntimeTransition
 
@@ -3375,7 +3460,7 @@ The following fields are available:
 - **DriverIsKernelMode**  Is it a kernel mode driver?
 - **DriverName**  The file name of the driver.
 - **DriverPackageStrongName**  The strong name of the driver package
-- **DriverSigned**  Is the driver signed?
+- **DriverSigned** Is the driver signed?
 - **DriverTimeStamp**  The low 32 bits of the time stamp of the driver file.
 - **DriverType**  A bitfield of driver attributes: 1. define DRIVER_MAP_DRIVER_TYPE_PRINTER 0x0001. 2. define DRIVER_MAP_DRIVER_TYPE_KERNEL 0x0002. 3. define DRIVER_MAP_DRIVER_TYPE_USER 0x0004. 4. define DRIVER_MAP_DRIVER_IS_SIGNED 0x0008. 5. define DRIVER_MAP_DRIVER_IS_INBOX 0x0010. 6. define DRIVER_MAP_DRIVER_IS_WINQUAL 0x0040. 7. define DRIVER_MAP_DRIVER_IS_SELF_SIGNED 0x0020. 8. define DRIVER_MAP_DRIVER_IS_CI_SIGNED 0x0080. 9. define DRIVER_MAP_DRIVER_HAS_BOOT_SERVICE 0x0100. 10. define DRIVER_MAP_DRIVER_TYPE_I386 0x10000. 11. define DRIVER_MAP_DRIVER_TYPE_IA64 0x20000. 12. define DRIVER_MAP_DRIVER_TYPE_AMD64 0x40000. 13. define DRIVER_MAP_DRIVER_TYPE_ARM 0x100000. 14. define DRIVER_MAP_DRIVER_TYPE_THUMB 0x200000. 15. define DRIVER_MAP_DRIVER_TYPE_ARMNT 0x400000. 16. define DRIVER_MAP_DRIVER_IS_TIME_STAMPED 0x800000.
 - **DriverVersion**  The version of the driver file.
@@ -3689,7 +3774,7 @@ The following fields are available:
 - **appNextVersion**  The version of the app that the update flow to which this event belongs attempted to reach, regardless of the success or failure of the update operation. Please see the wiki for additional information. Default: '0.0.0.0'.
 - **appPingEventAppSize**  The total number of bytes of all downloaded packages. Default: '0'.
 - **appPingEventDoneBeforeOOBEComplete**  Indicates whether the install or update was completed before Windows Out of the Box Experience ends. 1 means event completed before OOBE finishes; 0 means event was not completed before OOBE finishes; -1 means the field does not apply.
-- **appPingEventDownloadMetricsCdnCCC**  ISO 2 character country code that matches to the country updated binaries are delivered from. E.g.: US.
+- **appPingEventDownloadMetricsCdnCCC**  ISO 2 character country or region code that matches to the country or region updated binaries are delivered from. E.g.: US.
 - **appPingEventDownloadMetricsCdnCID**  Numeric value used to internally track the origins of the updated binaries. For example, 2.
 - **appPingEventDownloadMetricsDownloadedBytes**  For events representing a download, the number of bytes expected to be downloaded. For events representing an entire update flow, the sum of all such expected bytes over the course of the update flow. Default: '0'.
 - **appPingEventDownloadMetricsDownloader**  A string identifying the download algorithm and/or stack. Example values include: 'bits', 'direct', 'winhttp', 'p2p'. Sent in events that have an event type of '14' only. Default: ''.
@@ -3876,6 +3961,33 @@ The following fields are available:
 - **resultCode**  HR result of operation.
 
 
+## Other events
+
+### Microsoft.Windows.Defender.Engine.Maps.Heartbeat
+
+Heartbeat is sent once a day to indicate Defender is running and functional. Event includes necessary information to understand health of Defender on the device.
+
+The following fields are available:
+
+- **AppVersion**  Version of the Defender platform
+- **CampRing**  Camp ring used for monthly deployment
+- **CfaMode**  State of Controlled Folder Access
+- **ConsumerAsrMode**  State of Attack Surface Reduction
+- **CountAsrRules**  Number of Attack Surface Reduction rules in place
+- **EngineRing**  Engine ring used for monthly deployment
+- **EngineVersion**  Version of the AntiMalware Engine
+- **IsAsrAnyAudit**  Flag to indicate if any Attack Surface Reduction rules are running in Audit mode
+- **IsAsrAnyBlock**  Flag to indicate if any Attack Surface Reduction rules are running in Block mode
+- **IsBeta**  Flag to indicate if the user has opted in for Beta updates for Defender.
+- **IsManaged**  Flag to indicate if Defender is running in manage mode
+- **IsPassiveMode**  Flag to indicate if Defender is in Passive mode for ATP
+- **IsSxsPassiveMode**  Flag to indicate if Defender is in Passive mode for Limited periodic scanning
+- **ProductGuid**  Defender Product Guid (static for Defender).
+- **PusMode**  Mode for blocking potentially unwanted software
+- **ShouldHashIds**  Do we have ISO Compliance requirement to hash IDs for e5
+- **SignatureRing**  Signature ring used for deployments
+- **SigVersion**  Version of signature VDMs
+
 ## Privacy consent logging events
 
 ### Microsoft.Windows.Shell.PrivacyConsentLogging.PrivacyConsentCompleted
@@ -3962,6 +4074,18 @@ The following fields are available:
 - **Path**  Path to the file or the directory which is being moved or deleted.
 - **Process**  Path to the process which is requesting the move or the deletion.
 - **TargetPath**  (Optional) If the operation is a move, the target path to which the file or directory is being moved.
+
+
+### Microsoft.Windows.Setup.WinSetupMon.TraceErrorVolume
+
+Provides details about error in the functioning of upgrade data safety monitoring filter driver, related to a specific volume (drive).
+
+The following fields are available:
+
+- **Message**  Text string describing the error condition.
+- **SessionId**  Identifier to correlate this component's telemetry with that of others.
+- **Status**  NTSTATUS code related to the error.
+- **Volume**  Path of the volume on which the error occurs
 
 
 ### SetupPlatformTel.SetupPlatformTelActivityEvent
@@ -6223,6 +6347,17 @@ The following fields are available:
 - **HRESULT**  The result code (HResult) of the operation.
 - **VelocityEnabled**  A flag that indicates if velocity is enabled.
 - **WorkCompleted**  A flag that indicates if work is completed.
+
+
+### Microsoft.Windows.Update.Orchestrator.UpdatePolicyCacheRefresh
+
+This event sends data on whether Update Management Policies were enabled on a device, to help keep Windows secure and up to date.
+
+The following fields are available:
+
+- **configuredPoliciescount**  Number of policies on the device.
+- **policiesNamevaluesource**  Policy name and source of policy (group policy, MDM or flight).
+- **updateInstalluxsetting**  Indicates whether a user has set policies via a user experience option.
 
 
 ### Microsoft.Windows.Update.Orchestrator.UX.InitiatingReboot

@@ -8,7 +8,7 @@ localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
 manager: laurawi
-ms.date: 05/23/2023
+ms.date: 09/26/2023
 ms.topic: reference
 ---
 
@@ -757,6 +757,30 @@ The following fields are available:
 - **AppraiserVersion**  The version of the Appraiser file that is generating the events.
 
 
+### Microsoft.Windows.Appraiser.General.SystemProcessorPopCntAdd
+
+This event sends data indicating whether the system supports the PopCnt CPU requirement for newer versions of Windows, to help keep Windows up-to-date.
+
+This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
+
+The following fields are available:
+
+- **AppraiserVersion**  Appraiser version
+- **Blocking**  Is the upgrade blocked due to the processor missing the PopCnt instruction?
+- **PopCntPassed**  Whether the machine passes the latest OS hardware requirements or not for the PopCnt instruction.
+
+
+### Microsoft.Windows.Appraiser.General.SystemProcessorPopCntStartSync
+
+The SystemProcessorPopCntStartSync event indicates that a new set of SystemProcessorPopCntAdd events will be sent. This event is used to understand if the system supports the PopCnt CPU requirement for newer versions of Windows.
+
+This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
+
+The following fields are available:
+
+- **AppraiserVersion**  Appraiser version.
+
+
 ### Microsoft.Windows.Appraiser.General.SystemProcessorPrefetchWAdd
 
 This event sends data indicating whether the system supports the PrefetchW CPU requirement, to help keep Windows up to date.
@@ -967,7 +991,7 @@ This event sends data about Azure presence, type, and cloud domain use in order 
 
 The following fields are available:
 
-- **AADDeviceId**  Azure Active Directory device ID.
+- **AADDeviceId**  Microsoft Entra ID device ID.
 - **AzureOSIDPresent**  Represents the field used to identify an Azure machine.
 - **AzureVMType**  Represents whether the instance is Azure VM PAAS, Azure VM IAAS or any other VMs.
 - **CDJType**  Represents the type of cloud domain joined for the machine.
@@ -975,7 +999,7 @@ The following fields are available:
 - **ContainerType**  The type of container, such as process or virtual machine hosted.
 - **EnrollmentType**  Defines the type of MDM enrollment on the device.
 - **HashedDomain**  The hashed representation of the user domain used for login.
-- **IsCloudDomainJoined**  Is this device joined to an Azure Active Directory (AAD) tenant? true/false
+- **IsCloudDomainJoined**  Is this device joined to a Microsoft Entra tenant? true/false
 - **IsDERequirementMet**  Represents if the device can do device encryption.
 - **IsDeviceProtected**  Represents if Device protected by BitLocker/Device Encryption
 - **IsEDPEnabled**  Represents if Enterprise data protected on the device.
@@ -2126,7 +2150,7 @@ The following fields are available:
 - **appNextVersion**  The version of the app that the update flow to which this event belongs attempted to reach, regardless of the success or failure of the update operation. Please see the wiki for additional information. Default: '0.0.0.0'.
 - **appPingEventAppSize**  The total number of bytes of all downloaded packages. Default: '0'.
 - **appPingEventDoneBeforeOOBEComplete**  Indicates whether the install or update was completed before Windows Out of the Box Experience ends. 1 means event completed before OOBE finishes; 0 means event was not completed before OOBE finishes; -1 means the field does not apply.
-- **appPingEventDownloadMetricsCdnCCC**  ISO 2 character country code that matches to the country updated binaries are delivered from. E.g.: US.
+- **appPingEventDownloadMetricsCdnCCC**  ISO 2 character country or region code that matches to the country or region updated binaries are delivered from. E.g.: US.
 - **appPingEventDownloadMetricsCdnCID**  Numeric value used to internally track the origins of the updated binaries. For example, 2.
 - **appPingEventDownloadMetricsDownloadedBytes**  For events representing a download, the number of bytes expected to be downloaded. For events representing an entire update flow, the sum of all such expected bytes over the course of the update flow. Default: '0'.
 - **appPingEventDownloadMetricsDownloader**  A string identifying the download algorithm and/or stack. Example values include: 'bits', 'direct', 'winhttp', 'p2p'. Sent in events that have an event type of '14' only. Default: ''.
@@ -2253,6 +2277,31 @@ The following fields are available:
 - **windowInstanceId**  Unique value for each window instance.
 
 
+### Microsoft.Windows.Defender.Engine.Maps.Heartbeat
+
+Heartbeat is sent once a day to indicate Defender is running and functional. Event includes necessary information to understand health of Defender on the device.
+
+The following fields are available:
+
+- **AppVersion**  Version of the Defender platform
+- **CampRing**  Camp ring used for monthly deployment
+- **CfaMode**  State of Controlled Folder Access
+- **ConsumerAsrMode**  State of Attack Surface Reduction
+- **CountAsrRules**  Number of Attack Surface Reduction rules in place
+- **EngineRing**  Engine ring used for monthly deployment
+- **EngineVersion**  Version of the AntiMalware Engine
+- **IsAsrAnyAudit**  Flag to indicate if any Attack Surface Reduction rules are running in Audit mode
+- **IsAsrAnyBlock**  Flag to indicate if any Attack Surface Reduction rules are running in Block mode
+- **IsBeta**  Flag to indicate if the user has opted in for Beta updates for Defender.
+- **IsManaged**  Flag to indicate if Defender is running in manage mode
+- **IsPassiveMode**  Flag to indicate if Defender is in Passive mode for ATP
+- **IsSxsPassiveMode**  Flag to indicate if Defender is in Passive mode for Limited periodic scanning
+- **ProductGuid**  Defender Product Guid (static for Defender).
+- **PusMode**  Mode for blocking potentially unwanted software
+- **ShouldHashIds**  Do we have ISO Compliance requirement to hash IDs for e5
+- **SignatureRing**  Signature ring used for deployments
+- **SigVersion**  Version of signature VDMs
+
 ## Privacy consent logging events
 
 ### Microsoft.Windows.Shell.PrivacyConsentLogging.PrivacyConsentCompleted
@@ -2279,6 +2328,29 @@ The following fields are available:
 - **Process**  Path to the process which is requesting the move or the deletion.
 - **SessionId**  Identifier to correlate this component's telemetry with that of others.
 - **TargetPath**  (Optional) If the operation is a move, the target path to which the file or directory is being moved.
+
+
+### Microsoft.Windows.Setup.WinSetupMon.TraceError
+
+Provides details about error in the functioning of upgrade data safety monitoring filter driver.
+
+The following fields are available:
+
+- **Message**  Text string describing the error condition.
+- **SessionId**  Identifier to correlate this component's telemetry with that of others.
+- **Status**  	NTSTATUS code related to the error.
+
+
+### Microsoft.Windows.Setup.WinSetupMon.TraceErrorVolume
+
+Provides details about error in the functioning of upgrade data safety monitoring filter driver, related to a specific volume (drive).
+
+The following fields are available:
+
+- **Message**  Text string describing the error condition.
+- **SessionId**  Identifier to correlate this component's telemetry with that of others.
+- **Status**  NTSTATUS code related to the error.
+- **Volume**  Path of the volume on which the error occurs
 
 
 ### SetupPlatformTel.SetupPlatformTelEvent
@@ -3374,6 +3446,26 @@ The following fields are available:
 - **updateId**  Unique identifier for each update.
 
 
+### Microsoft.Windows.Update.Orchestrator.ScheduledScanBeforeInitialLogon
+
+Indicates that a scan before an initial logon is being scheduled
+
+The following fields are available:
+
+- **deferDurationInMinutes**  The delay in minutes until the scan for updates is performed.
+
+
+### Microsoft.Windows.Update.Orchestrator.UpdatePolicyCacheRefresh
+
+This event sends data on whether Update Management Policies were enabled on a device, to help keep Windows secure and up to date.
+
+The following fields are available:
+
+- **configuredPoliciescount**  Number of policies on the device.
+- **policiesNamevaluesource**  Policy name and source of policy (group policy, MDM or flight).
+- **updateInstalluxsetting**  Indicates whether a user has set policies via a user experience option.
+
+
 ### Microsoft.Windows.Update.SIHClient.TaskRunCompleted
 
 This event is a launch event for Server Initiated Healing client.
@@ -3430,6 +3522,23 @@ The following fields are available:
 - **UusVersion**  The version of the Update Undocked Stack.
 
 
+### Microsoft.Windows.Update.WUClientExt.UpdateMetadataIntegrityGeneral
+
+Ensures Windows Updates are secure and complete. Event helps to identify whether update content has been tampered with and protects against man-in-the-middle attack
+
+The following fields are available:
+
+- **CallerName**  Name of the application making the Windows Update Request. Used to identify context of the request.
+- **EndpointUrl**  Ensures Windows Updates are secure and complete. Event helps to identify whether update content has been tampered with and protects against man-in-the-middle attack.
+- **ExtendedStatusCode**  Secondary status code for certain scenarios where StatusCode was not specific enough.
+- **MetadataIntegrityMode**  Mode of update transport metadata integrity check. 0-Unknown, 1-Ignoe, 2-Audit, 3-Enforce
+- **RawMode**  Raw unparsed mode string from the SLS response. May be null if not applicable.
+- **ServiceGuid**  Identifier for the service to which the software distribution client is connecting (Windows Update, Windows Store, etc)
+- **SLSPrograms**  A test program a machine may be opted in. Examples include "Canary" and "Insider Fast".
+- **StatusCode**  Result code of the event (success, cancellation, failure code HResult)
+- **UusVersion**  The version of the Update Undocked Stack
+
+
 ### Microsoft.Windows.WindowsUpdate.RUXIM.ICSExit
 
 This event is generated when the RUXIM Interaction Campaign Scheduler (RUXIMICS) exits. The data collected with this event is used to help keep Windows up to date and performing properly.
@@ -3483,6 +3592,3 @@ The following fields are available:
 - **SessionId**  The UpdateAgent “SessionId” value.
 - **UpdateId**  Unique identifier for the Update.
 - **WuId**  Unique identifier for the Windows Update client.
-
-
-
