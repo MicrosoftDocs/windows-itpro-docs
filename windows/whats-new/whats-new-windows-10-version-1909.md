@@ -41,9 +41,9 @@ If you're using Windows Update for Business, you'll receive the Windows 10, vers
 
 ## Security
 
-### Windows Defender Credential Guard
+### Credential Guard
 
-[Windows Defender Credential Guard](/windows/security/identity-protection/credential-guard/credential-guard) is now available for ARM64 devices, for extra protection against credential theft for enterprises deploying ARM64 devices in their organizations, such as Surface Pro X.
+[Credential Guard](/windows/security/identity-protection/credential-guard/credential-guard) is now available for ARM64 devices, for extra protection against credential theft for enterprises deploying ARM64 devices in their organizations, such as Surface Pro X.
 
 ### Microsoft BitLocker
 

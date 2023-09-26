@@ -9037,7 +9037,7 @@ Profile example
         <NativeProtocol>
           <Type>Sstp</Type>
         </NativeProtocol>
-        <RetryTimeinHours>168</RetryTimeinHours>
+        <RetryTimeInHours>168</RetryTimeInHours>
       </ProtocolList>
     <Authentication>
       <UserMethod>Eap</UserMethod>
