@@ -106,7 +106,7 @@ productDirectory:
         - url: /windows/client-management/administrative-tools-in-windows-10
           text: Windows administrative tools
         - url: /windows/client-management/manage-windows-copilot
-          text: Manage Windows Copilot
+          text: Manage Copilot in Windows
         - url: /windows/application-management/index
           text: Learn more about application management >
         - url: /windows/client-management
