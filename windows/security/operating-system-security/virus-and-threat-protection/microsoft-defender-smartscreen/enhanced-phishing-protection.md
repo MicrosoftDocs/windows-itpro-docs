@@ -1,7 +1,7 @@
 ---
 title: Enhanced Phishing Protection in Microsoft Defender SmartScreen
 description: Learn how Enhanced Phishing Protection for Microsoft Defender SmartScreen helps protect Microsoft school or work passwords against phishing and unsafe usage on sites and apps.
-ms.date: 05/31/2023
+ms.date: 09/25/2023
 ms.topic: conceptual
 appliesto:
 - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11, version 22H2</a>
@@ -13,9 +13,10 @@ Starting in Windows 11, version 22H2, Enhanced Phishing Protection in Microsoft 
 
 If a user signs into Windows using a password, Enhanced Phishing Protection works alongside Windows security protections, and helps protect typed work or school password used to sign into Windows 11 in these ways:
 
-- If users type their work or school password on any Chromium browser, into a site deemed malicious by Microsoft Defender SmartScreen, Enhanced Phishing Protection alerts them. It also prompts them to change their password so attackers can't gain access to their account.
-- Reusing work or school passwords makes it easy for attackers who compromise a user's password to gain access to their other accounts. Enhanced Phishing Protection can warn users if they reuse their work or school Microsoft account password on sites and apps and prompt them to change their password.
+- If users type or paste their work or school password on any browser, into a site deemed malicious by Microsoft Defender SmartScreen, Enhanced Phishing Protection alerts them. It also alerts them to change their password so attackers can't gain access to their account.
+- Reusing work or school passwords makes it easy for attackers who compromise a user's password to gain access to their other accounts. Enhanced Phishing Protection can warn users if they reuse their work or school Microsoft account password on sites and apps and alert them to change their password.
 - Since it's unsafe to store plaintext passwords in text editors, Enhanced Phishing Protection can warn users if they store their work or school password in Notepad, Word, or any Microsoft 365 Office app, and recommends they delete their password from the file.
+- If users type their work or school password into a website or app that SmartScreen finds suspicious, Enhanced Phishing Protection can automatically collect information from that website or app to help identify security threats. For example, the content displayed, sounds played, and application memory.
 
 > [!NOTE]
 > When a user signs-in to a device using a Windows Hello for Business PIN or biometric, Enhanced Phishing Protection does not alert the user or send events to Microsoft Defender for Endpoint.
@@ -46,7 +47,7 @@ To configure devices using Microsoft Intune, create a [**Settings catalog** poli
 |---------|---------|
 |Service Enabled |This policy setting determines whether Enhanced Phishing Protection is in audit mode or off. Users don't see any notifications for any protection scenarios when Enhanced Phishing Protection is in audit mode. In audit mode, Enhanced Phishing Protection captures unsafe password entry events and sends diagnostic data through Microsoft Defender.<li> If you enable or don't configure this setting, Enhanced Phishing Protection is enabled in audit mode, preventing users to turn it off.</li><li> If you disable this policy setting, Enhanced Phishing Protection is off. When off, Enhanced Phishing Protection doesn't capture events, send data, or notify users. Additionally, your users are unable to turn it on.</li>|
 |Notify Malicious|This policy setting determines whether Enhanced Phishing Protection warns your users if they type their work or school password into one of the following malicious scenarios: into a reported phishing site, into a sign-in URL with an invalid certificate, or into an application connecting to either a reported phishing site or a sign-in URL with an invalid certificate<li> If you enable this policy setting, Enhanced Phishing Protection warns your users if they type their work or school password into one of the malicious scenarios described above and encourages them to change their password.</li><li> If you disable or don't configure this policy setting, Enhanced Phishing Protection doesn't warn users if they type their work or school password into one of the malicious scenarios described above.|
-|Notify Password Reuse |This policy setting determines whether Enhanced Phishing Protection warns your users if they reuse their work or school password.<li> If you enable this policy setting, Enhanced Phishing Protection warns users if they reuse their work or school password and encourages them to change it.</li><li> If you disable or don't configure this policy setting, Enhanced Phishing Protection doesn't warn users if they reuse their work or school password.|
+|Notify Password Reuse |This policy setting determines whether Enhanced Phishing Protection warns your users if they reuse their work or school password.<li> If you enable this policy setting, Enhanced Phishing Protection warns users if they reuse their work, or school password and encourages them to change it.</li><li> If you disable or don't configure this policy setting, Enhanced Phishing Protection doesn't warn users if they reuse their work or school password.|
 |Notify Unsafe App|This policy setting determines whether Enhanced Phishing Protection warns your users if they type their work or school passwords in Notepad or Microsoft 365 Office Apps.<li> If you enable this policy setting, Enhanced Phishing Protection warns your users if they store their password in Notepad or Microsoft 365 Office Apps.</li><li> If you disable or don't configure this policy setting, Enhanced Phishing Protection doesn't warn users if they store their password in Notepad or Microsoft 365 Office Apps.|
 
 Assign the policy to a security group that contains as members the devices or users that you want to configure.
@@ -59,7 +60,7 @@ Enhanced Phishing Protection can be configured using the following Administrativ
 |---------|---------|
 |Administrative Templates\Windows Components\Windows Defender SmartScreen\Enhanced Phishing Protection\Service Enabled |This policy setting determines whether Enhanced Phishing Protection is in audit mode or off. Users don't see any notifications for any protection scenarios when Enhanced Phishing Protection is in audit mode. In audit mode, Enhanced Phishing Protection captures unsafe password entry events and sends diagnostic data through Microsoft Defender.<li> If you enable or don't configure this setting, Enhanced Phishing Protection is enabled in audit mode, preventing users to turn it off.</li><li> If you disable this policy setting, Enhanced Phishing Protection is off. When off, Enhanced Phishing Protection doesn't capture events, send data, or notify users. Additionally, your users are unable to turn it on.</li>|
 |Administrative Templates\Windows Components\Windows Defender SmartScreen\Enhanced Phishing Protection\Notify Malicious|This policy setting determines whether Enhanced Phishing Protection warns your users if they type their work or school password into one of the following malicious scenarios: into a reported phishing site, into a sign-in URL with an invalid certificate, or into an application connecting to either a reported phishing site or a sign-in URL with an invalid certificate<li> If you enable this policy setting, Enhanced Phishing Protection warns your users if they type their work or school password into one of the malicious scenarios described above and encourages them to change their password.</li><li> If you disable or don't configure this policy setting, Enhanced Phishing Protection doesn't warn users if they type their work or school password into one of the malicious scenarios described above.|
-|Administrative Templates\Windows Components\Windows Defender SmartScreen\Enhanced Phishing Protection\Notify Password Reuse |This policy setting determines whether Enhanced Phishing Protection warns your users if they reuse their work or school password.<li> If you enable this policy setting, Enhanced Phishing Protection warns users if they reuse their work or school password and encourages them to change it.</li><li> If you disable or don't configure this policy setting, Enhanced Phishing Protection doesn't warn users if they reuse their work or school password.|
+|Administrative Templates\Windows Components\Windows Defender SmartScreen\Enhanced Phishing Protection\Notify Password Reuse |This policy setting determines whether Enhanced Phishing Protection warns your users if they reuse their work or school password.<li> If you enable this policy setting, Enhanced Phishing Protection warns users if they reuse their work, or school password and encourages them to change it.</li><li> If you disable or don't configure this policy setting, Enhanced Phishing Protection doesn't warn users if they reuse their work or school password.|
 |Administrative Templates\Windows Components\Windows Defender SmartScreen\Enhanced Phishing Protection\Notify Unsafe App|This policy setting determines whether Enhanced Phishing Protection warns your users if they type their work or school passwords in Notepad or Microsoft 365 Office Apps.<li> If you enable this policy setting, Enhanced Phishing Protection warns your users if they store their password in Notepad or Microsoft 365 Office Apps.</li><li> If you disable or don't configure this policy setting, Enhanced Phishing Protection doesn't warn users if they store their password in Notepad or Microsoft 365 Office Apps.|
 
 #### [:::image type="icon" source="images/icons/windows-os.svg"::: **CSP**](#tab/csp)
@@ -68,10 +69,11 @@ Enhanced Phishing Protection can be configured using the [WebThreatDefense CSP][
 
 | Setting                 | OMA-URI                                                                   | Data type |
 |-------------------------|---------------------------------------------------------------------------|-----------|
-| **ServiceEnabled**      | `./Device/Vendor/MSFT/Policy/Config/WebThreatDefense/ServiceEnabled`      | Integer   |
+| **AutomaticDataCollection** | `./Device/Vendor/MSFT/Policy/Config/WebThreatDefense/AutomaticDataCollection` | Integer |
 | **NotifyMalicious**     | `./Device/Vendor/MSFT/Policy/Config/WebThreatDefense/NotifyMalicious`     | Integer   |
 | **NotifyPasswordReuse** | `./Device/Vendor/MSFT/Policy/Config/WebThreatDefense/NotifyPasswordReuse` | Integer   |
 | **NotifyUnsafeApp**     | `./Device/Vendor/MSFT/Policy/Config/WebThreatDefense/NotifyUnsafeApp`     | Integer   |
+| **ServiceEnabled**      | `./Device/Vendor/MSFT/Policy/Config/WebThreatDefense/ServiceEnabled`      | Integer   |
 
 ---
 
@@ -80,7 +82,6 @@ Enhanced Phishing Protection can be configured using the [WebThreatDefense CSP][
 By default, Enhanced Phishing Protection is deployed in audit mode, preventing notifications to the users for any protection scenarios. In audit mode, Enhanced Phishing Protection captures unsafe password entry events and sends diagnostic data through Microsoft Defender. Users aren't warned if they enter their work or school password into a phishing site, if they reuse their password, or if they unsafely store their password in applications. Because of this possibility, it's recommended that you configure Enhanced Phishing Protection to warn users during all protection scenarios.
 
 To better help you protect your organization, we recommend turning on and using these specific Microsoft Defender SmartScreen settings.
-
 #### [:::image type="icon" source="images/icons/intune.svg"::: **Intune**](#tab/intune)
 
 |Settings catalog element|Recommendation|
@@ -108,15 +109,19 @@ To better help you protect your organization, we recommend turning on and using 
 |NotifyPasswordReuse|**1**: Turns on Enhanced Phishing Protection notifications when users reuse their work or school password and encourages them to change their password.|
 |NotifyUnsafeApp|**1**: Turns on Enhanced Phishing Protection notifications when users type their work or school passwords in Notepad and Microsoft 365 Office Apps.|
 
+
 ---
 
 ## Related articles
 
-- [SmartScreen Frequently Asked Questions](https://fb.smartscreen.microsoft.com/smartscreenfaq.aspx)
+- [SmartScreen frequently asked questions](https://fb.smartscreen.microsoft.com/smartscreenfaq.aspx)
 - [WebThreatDefense CSP][WIN-1]
 - [Threat protection](index.md)
 
 <!-- Links -->
 
 [WIN-1]: /windows/client-management/mdm/policy-csp-webthreatdefense
+
 [MEM-2]: /mem/intune/configuration/settings-catalog
+
+

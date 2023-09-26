@@ -1,7 +1,7 @@
 ---
 title: Windows quality update communications for Autopatch groups
 description: This article explains Windows quality update communications for Autopatch groups
-ms.date: 05/01/2023
+ms.date: 07/25/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: conceptual
@@ -15,11 +15,7 @@ ms.collection:
   - tier1
 ---
 
-# Windows quality update communications: Windows Autopatch groups experience (public preview) 
-
-> [!IMPORTANT]
-> Windows Autopatch groups is in **public preview**. This feature is being actively developed and might not be complete. You can test and use these features in production environments and provide feedback.<p>The Windows Autopatch group experience only applies if you’ve opted-in to use Windows Autopatch groups.</p><br>**To opt-in to use Windows Autopatch groups:**<ol><li>Go to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and select **Devices** from the left navigation menu.</li><li>Under **Windows Autopatch**, select **Release Management**, then select **Autopatch groups (preview)**.</li><li>Review the **[Microsoft Privacy Statement](../overview/windows-autopatch-privacy.md)** and the **[Autopatch groups Public Preview Addendum](../references/windows-autopatch-groups-public-preview-addendum.md)**. If you agree, select the **I have reviewed and agree to the Autopatch groups Public Preview Addendum** checkbox. Then, select **Use preview** to test out Windows Autopatch groups and its bundled feature set. If the **Use preview** option is greyed out, ensure you meet all the [Autopatch group prerequisites](../deploy/windows-autopatch-groups-manage-autopatch-groups.md#autopatch-groups-prerequisites).</li></ol>
-
+# Windows quality update communications
 
 There are three categories of communication that are sent out during a Windows quality and feature update:
 
@@ -44,9 +40,6 @@ Communications are posted to, as appropriate for the type of communication, to t
 | Release summary | Same as release schedule | The fourth Tuesday of every month. | Informs you of the percentage of eligible devices that were patched during the release. |
 
 ### Opt out of receiving emails for standard communications
-
-> [!IMPORTANT]
-> This feature is in **public preview**. This feature is being actively developed and may not be complete. You can test and use these features in production environments and provide feedback.
 
 If you don't want to receive standard communications for Windows Updates releases via email, you can choose to opt out.
 

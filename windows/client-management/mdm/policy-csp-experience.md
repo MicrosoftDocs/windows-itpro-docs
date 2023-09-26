@@ -4,7 +4,7 @@ description: Learn more about the Experience Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 07/06/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -28,7 +28,7 @@ ms.topic: reference
 <!-- AllowClipboardHistory-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- AllowClipboardHistory-Applicability-End -->
 
 <!-- AllowClipboardHistory-OmaUri-Begin -->
@@ -107,7 +107,7 @@ Policy change takes effect immediately.
 <!-- AllowCopyPaste-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowCopyPaste-Applicability-End -->
 
 <!-- AllowCopyPaste-OmaUri-Begin -->
@@ -156,7 +156,7 @@ This policy is deprecated.
 <!-- AllowCortana-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowCortana-Applicability-End -->
 
 <!-- AllowCortana-OmaUri-Begin -->
@@ -225,7 +225,7 @@ When Cortana is off, users will still be able to use search to find things on th
 <!-- AllowDeviceDiscovery-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowDeviceDiscovery-Applicability-End -->
 
 <!-- AllowDeviceDiscovery-OmaUri-Begin -->
@@ -274,7 +274,7 @@ Allows users to turn on/off device discovery UX. When set to 0 , the projection 
 <!-- AllowFindMyDevice-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowFindMyDevice-Applicability-End -->
 
 <!-- AllowFindMyDevice-OmaUri-Begin -->
@@ -341,7 +341,7 @@ When Find My Device is off, the device and its location aren't registered and th
 <!-- AllowManualMDMUnenrollment-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowManualMDMUnenrollment-Applicability-End -->
 
 <!-- AllowManualMDMUnenrollment-OmaUri-Begin -->
@@ -393,7 +393,7 @@ Specifies whether to allow the user to delete the workplace account using the wo
 <!-- AllowSaveAsOfOfficeFiles-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowSaveAsOfOfficeFiles-Applicability-End -->
 
 <!-- AllowSaveAsOfOfficeFiles-OmaUri-Begin -->
@@ -442,7 +442,7 @@ This policy is deprecated.
 <!-- AllowScreenCapture-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowScreenCapture-Applicability-End -->
 
 <!-- AllowScreenCapture-OmaUri-Begin -->
@@ -491,7 +491,7 @@ Allow screen capture.
 <!-- AllowScreenRecorder-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows Insider Preview |
+| ❌ Device <br> ✅ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- AllowScreenRecorder-Applicability-End -->
 
 <!-- AllowScreenRecorder-OmaUri-Begin -->
@@ -556,7 +556,7 @@ This policy setting allows you to control whether screen recording functionality
 <!-- AllowSharingOfOfficeFiles-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowSharingOfOfficeFiles-Applicability-End -->
 
 <!-- AllowSharingOfOfficeFiles-OmaUri-Begin -->
@@ -605,7 +605,7 @@ This policy is deprecated.
 <!-- AllowSIMErrorDialogPromptWhenNoSIM-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowSIMErrorDialogPromptWhenNoSIM-Applicability-End -->
 
 <!-- AllowSIMErrorDialogPromptWhenNoSIM-OmaUri-Begin -->
@@ -654,7 +654,7 @@ Allow SIM error dialog prompts when no SIM is inserted.
 <!-- AllowSpotlightCollection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AllowSpotlightCollection-Applicability-End -->
 
 <!-- AllowSpotlightCollection-OmaUri-Begin -->
@@ -717,7 +717,7 @@ The following list shows the supported values:
 <!-- AllowSyncMySettings-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowSyncMySettings-Applicability-End -->
 
 <!-- AllowSyncMySettings-OmaUri-Begin -->
@@ -766,7 +766,7 @@ Allows or disallows all Windows sync settings on the device. For information abo
 <!-- AllowTailoredExperiencesWithDiagnosticData-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowTailoredExperiencesWithDiagnosticData-Applicability-End -->
 
 <!-- AllowTailoredExperiencesWithDiagnosticData-OmaUri-Begin -->
@@ -840,7 +840,7 @@ This policy allows you to prevent Windows from using diagnostic data to provide 
 <!-- AllowTaskSwitcher-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowTaskSwitcher-Applicability-End -->
 
 <!-- AllowTaskSwitcher-OmaUri-Begin -->
@@ -889,7 +889,7 @@ This policy is deprecated.
 <!-- AllowThirdPartySuggestionsInWindowsSpotlight-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowThirdPartySuggestionsInWindowsSpotlight-Applicability-End -->
 
 <!-- AllowThirdPartySuggestionsInWindowsSpotlight-OmaUri-Begin -->
@@ -956,7 +956,7 @@ Specifies whether to allow app and content suggestions from third-party software
 <!-- AllowVoiceRecording-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowVoiceRecording-Applicability-End -->
 
 <!-- AllowVoiceRecording-OmaUri-Begin -->
@@ -1005,7 +1005,7 @@ This policy is deprecated.
 <!-- AllowWindowsConsumerFeatures-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowWindowsConsumerFeatures-Applicability-End -->
 
 <!-- AllowWindowsConsumerFeatures-OmaUri-Begin -->
@@ -1069,7 +1069,7 @@ Prior to Windows 10, version 1803, this policy had User scope. This policy allow
 <!-- AllowWindowsSpotlight-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ❌ Device <br> ✅ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowWindowsSpotlight-Applicability-End -->
 
 <!-- AllowWindowsSpotlight-OmaUri-Begin -->
@@ -1136,7 +1136,7 @@ Specifies whether to turn off all Windows spotlight features at once.
 <!-- AllowWindowsSpotlightOnActionCenter-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ❌ Device <br> ✅ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowWindowsSpotlightOnActionCenter-Applicability-End -->
 
 <!-- AllowWindowsSpotlightOnActionCenter-OmaUri-Begin -->
@@ -1204,7 +1204,7 @@ This policy allows administrators to prevent Windows spotlight notifications fro
 <!-- AllowWindowsSpotlightOnSettings-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ❌ Device <br> ✅ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- AllowWindowsSpotlightOnSettings-Applicability-End -->
 
 <!-- AllowWindowsSpotlightOnSettings-OmaUri-Begin -->
@@ -1267,7 +1267,7 @@ This policy allows IT admins to turn off Suggestions in Settings app. These sugg
 <!-- AllowWindowsSpotlightWindowsWelcomeExperience-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ❌ Device <br> ✅ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowWindowsSpotlightWindowsWelcomeExperience-Applicability-End -->
 
 <!-- AllowWindowsSpotlightWindowsWelcomeExperience-OmaUri-Begin -->
@@ -1335,7 +1335,7 @@ This policy setting lets you turn off the Windows spotlight Windows welcome expe
 <!-- AllowWindowsTips-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowWindowsTips-Applicability-End -->
 
 <!-- AllowWindowsTips-OmaUri-Begin -->
@@ -1402,7 +1402,7 @@ Enables or disables Windows Tips / soft landing.
 <!-- ConfigureChatIcon-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ConfigureChatIcon-Applicability-End -->
 
 <!-- ConfigureChatIcon-OmaUri-Begin -->
@@ -1477,7 +1477,7 @@ This policy setting allows you to configure the Chat icon on the taskbar.
 <!-- ConfigureWindowsSpotlightOnLockScreen-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ❌ Device <br> ✅ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- ConfigureWindowsSpotlightOnLockScreen-Applicability-End -->
 
 <!-- ConfigureWindowsSpotlightOnLockScreen-OmaUri-Begin -->
@@ -1554,7 +1554,7 @@ Additionally, if you check the "Include content from Enterprise spotlight" check
 <!-- DisableCloudOptimizedContent-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DisableCloudOptimizedContent-Applicability-End -->
 
 <!-- DisableCloudOptimizedContent-OmaUri-Begin -->
@@ -1621,7 +1621,7 @@ This policy setting lets you turn off cloud optimized content in all Windows exp
 <!-- DisableConsumerAccountStateContent-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DisableConsumerAccountStateContent-Applicability-End -->
 
 <!-- DisableConsumerAccountStateContent-OmaUri-Begin -->
@@ -1688,7 +1688,7 @@ This policy setting lets you turn off cloud consumer account state content in al
 <!-- DisableTextTranslation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- DisableTextTranslation-Applicability-End -->
 
 <!-- DisableTextTranslation-OmaUri-Begin -->
@@ -1737,7 +1737,7 @@ Allows Text Translation feature to be enabled/disabled.
 <!-- DoNotShowFeedbackNotifications-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- DoNotShowFeedbackNotifications-Applicability-End -->
 
 <!-- DoNotShowFeedbackNotifications-OmaUri-Begin -->
@@ -1807,7 +1807,7 @@ This policy setting allows an organization to prevent its devices from showing f
 <!-- DoNotSyncBrowserSettings-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- DoNotSyncBrowserSettings-Applicability-End -->
 
 <!-- DoNotSyncBrowserSettings-OmaUri-Begin -->
@@ -1894,7 +1894,7 @@ _**Turn syncing off by default but don’t disable**_
 <!-- EnableOrganizationalMessages-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows Insider Preview |
+| ❌ Device <br> ✅ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- EnableOrganizationalMessages-Applicability-End -->
 
 <!-- EnableOrganizationalMessages-OmaUri-Begin -->
@@ -1943,7 +1943,7 @@ Organizational messages allow Administrators to deliver messages to their end us
 <!-- PreventUsersFromTurningOnBrowserSyncing-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- PreventUsersFromTurningOnBrowserSyncing-Applicability-End -->
 
 <!-- PreventUsersFromTurningOnBrowserSyncing-OmaUri-Begin -->
@@ -2026,7 +2026,7 @@ _**Prevent syncing of browser settings and let users turn on syncing**_
 <!-- ShowLockOnUserTile-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- ShowLockOnUserTile-Applicability-End -->
 
 <!-- ShowLockOnUserTile-OmaUri-Begin -->

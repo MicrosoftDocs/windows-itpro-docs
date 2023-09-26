@@ -19,8 +19,6 @@
           href: update/waas-servicing-strategy-windows-10-updates.md
         - name: Deployment proof of concept
           items: 
-            - name: Demonstrate Autopilot deployment on a VM
-              href: windows-autopilot/demonstrate-deployment-on-vm.md
             - name: Deploy Windows 10 with MDT and Configuration Manager
               items:
                 - name: 'Step by step guide: Configure a test lab to deploy Windows 10'
@@ -103,7 +101,9 @@
         - name: Deploy Windows client
           items:
             - name: Deploy Windows client with Autopilot
-              href: windows-autopilot/index.yml
+              href: /autopilot/
+            - name: Windows deployment scenarios and tools
+              href: windows-deployment-scenarios-and-tools.md
             - name: Deploy Windows client with Configuration Manager
               items:
                 - name: Deploy to a new device
@@ -138,10 +138,6 @@
           items:
             - name: Assign devices to servicing channels
               href: update/waas-servicing-channels-windows-10-updates.md
-            - name: Deploy updates with Configuration Manager
-              href: update/deploy-updates-configmgr.md
-            - name: Deploy updates with Intune
-              href: update/deploy-updates-intune.md
             - name: Deploy updates with WSUS
               href: update/waas-manage-updates-wsus.md
             - name: Deploy updates with Group Policy
@@ -172,8 +168,6 @@
               href: update/waas-integrate-wufb.md
             - name: 'Walkthrough: use Group Policy to configure Windows Update for Business'
               href: update/waas-wufb-group-policy.md
-            - name: 'Walkupdatesthrough: use Intune to configure Windows Update for Business'
-              href: update/deploy-updates-intune.md
         - name: Windows Update for Business deployment service
           items:
           - name: Windows Update for Business deployment service overview
@@ -597,3 +591,5 @@
 
         - name: Install fonts in Windows client
           href: windows-10-missing-fonts.md
+        - name: Customize Windows PE boot images
+          href: customize-boot-image.md

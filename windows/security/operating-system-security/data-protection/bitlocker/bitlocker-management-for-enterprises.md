@@ -15,7 +15,7 @@ Though much Windows [BitLocker documentation](index.md) has been published, cust
 
 ## Managing domain-joined computers and moving to cloud  
 
-Companies that image their own computers using Configuration Manager can use an existing task sequence to [pre-provision BitLocker](/configmgr/osd/understand/task-sequence-steps#BKMK_PreProvisionBitLocker) encryption while in Windows Preinstallation Environment (WinPE) and can then [enable protection](/configmgr/osd/understand/task-sequence-steps#BKMK_EnableBitLocker). These steps during an operating system deployment can help ensure that computers are encrypted from the start, even before users receive them. As part of the imaging process, a company could also decide to use Configuration Manager to pre-set any desired [BitLocker Group Policy](./bitlocker-group-policy-settings.md).
+Companies that image their own computers using Configuration Manager can use an existing task sequence to [pre-provision BitLocker](/configmgr/osd/understand/task-sequence-steps#BKMK_PreProvisionBitLocker) encryption while in Windows Preinstallation Environment (WinPE) and can then [enable protection](/configmgr/osd/understand/task-sequence-steps#BKMK_EnableBitLocker). These steps during an operating system deployment can help ensure that computers are encrypted from the start, even before users receive them. As part of the imaging process, a company could also decide to use Configuration Manager to pre-set any desired [BitLocker Group Policy](bitlocker-group-policy-settings.md).
 
 Enterprises can use [Microsoft BitLocker Administration and Monitoring (MBAM)](/microsoft-desktop-optimization-pack/mbam-v25/) to manage client computers with BitLocker that are domain-joined on-premises until [mainstream support ends in July 2019](/lifecycle/products/?alpha=Microsoft%20BitLocker%20Administration%20and%20Monitoring%202.5%20Service%20Pack%201%2F) or they can receive extended support until April 2026. Thus, over the next few years, a good strategy for enterprises will be to plan and move to cloud-based management for BitLocker. Refer to the [PowerShell examples](#powershell-examples) to see how to store recovery keys in Azure Active Directory (Azure AD).
 
@@ -89,10 +89,10 @@ Enable-BitLocker -MountPoint "C:" -EncryptionMethod XtsAes256 -UsedSpaceOnly -Pi
 
 ## Related Articles
 
-- [BitLocker: FAQs](bitlocker-frequently-asked-questions.yml)
+- [BitLocker: FAQs](faq.yml)
 - [Microsoft BitLocker Administration and Management (MBAM)](/microsoft-desktop-optimization-pack/mbam-v25/)
 - [Overview of BitLocker Device Encryption in Windows](bitlocker-device-encryption-overview-windows-10.md#bitlocker-device-encryption)
-- [BitLocker Group Policy Reference](./bitlocker-group-policy-settings.md)
+- [BitLocker Group Policy Reference](bitlocker-group-policy-settings.md)
 - [Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune/)
 *(Overview)*
 - [Configuration Settings Providers](/windows/client-management/mdm/policy-configuration-service-provider)
@@ -104,11 +104,10 @@ Enable-BitLocker -MountPoint "C:" -EncryptionMethod XtsAes256 -UsedSpaceOnly -Pi
 - [Windows Server Installation Options](/windows-server/get-started-19/install-upgrade-migrate-19/)
 - [How to update local source media to add roles and features](/archive/blogs/joscon/how-to-update-local-source-media-to-add-roles-and-features)
 - [How to add or remove optional components on Server Core](/archive/blogs/server_core/using-features-on-demand-with-updated-systems-and-patched-images) *(Features on Demand)*
-- [BitLocker: How to deploy on Windows Server 2012 and newer](bitlocker-how-to-deploy-on-windows-server.md)  
-- [BitLocker: How to enable Network Unlock](bitlocker-how-to-enable-network-unlock.md)
+- [How to deploy BitLocker on Windows Server](bitlocker-how-to-deploy-on-windows-server.md)  
+- [How to enable Network Unlock](bitlocker-how-to-enable-network-unlock.md)
 - [Shielded VMs and Guarded Fabric](https://blogs.technet.microsoft.com/windowsserver/2016/05/10/a-closer-look-at-shielded-vms-in-windows-server-2016/)
 
 ### PowerShell
 
 - [BitLocker cmdlets for Windows PowerShell](bitlocker-use-bitlocker-drive-encryption-tools-to-manage-bitlocker.md#bitlocker-cmdlets-for-windows-powershell)
-- [Surface Pro Specifications](https://www.microsoft.com/surface/support/surface-pro-specs/)

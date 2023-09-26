@@ -130,6 +130,26 @@ additionalContent:
             url: mbr-to-gpt.md
           - text: Resolve Windows upgrade errors
             url: upgrade/resolve-windows-10-upgrade-errors.md
+          - text: Deploy Windows 10 with Autopilot
+            url: /mem/autopilot
+          - text: Assign devices to servicing channels
+            url: update/waas-servicing-channels-windows-10-updates.md
+ 
+  # Card
+  - title: Overview
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What's new in Windows deployment
+            url: deploy-whats-new.md
+          - text: Windows 11 overview
+            url: /windows/whats-new/windows-11
+          - text: Windows client deployment scenarios
+            url: windows-10-deployment-scenarios.md
+          - text: Basics of Windows updates, channels, and tools
+            url:  update/get-started-updates-channels-tools.md
+          - text: Overview of Windows Autopilot
+            url:  /mem/autopilot/windows-autopilot
 
       - title: Licensing and activation
         links:

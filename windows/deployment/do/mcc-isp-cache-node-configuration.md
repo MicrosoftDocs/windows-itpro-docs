@@ -1,19 +1,22 @@
 ---
 title: Cache node configuration
 manager: aaroncz
-description: Configuring a cache node on Azure portal
+description: Configuring a cache node on Azure portal.
 ms.prod: windows-client
-author: amyzhou
-ms.author: amyzhou
-ms.topic: article
+ms.author: carmenf
+author: cmknox
+ms.reviewer: mstewart
+ms.topic: reference
 ms.date: 12/31/2017
 ms.technology: itpro-updates
-ms.collection: tier3
+ms.collection:
+  - tier3
+  - must-keep
 ---
 
 # Cache node configuration
 
-All cache node configuration will take place within Azure portal. This article outlines all of the settings that you'll be able to configure. 
+All cache node configuration takes place within Azure portal. This article outlines all of the settings that you're able to configure. 
 
 ## Settings
 

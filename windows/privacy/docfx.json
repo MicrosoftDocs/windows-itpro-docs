@@ -36,9 +36,8 @@
       "recommendations": true,
       "adobe-target": true,
       "breadcrumb_path": "/windows/resources/breadcrumb/toc.json",
-      "uhfHeaderId": "MSDocsHeader-M365-IT",
-      "ms.technology": "windows",
-      "audience": "ITPro",
+      "uhfHeaderId": "MSDocsHeader-Windows",
+      "ms.technology": "itpro-privacy",
       "ms.topic": "article",
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/windows-itpro-docs",
@@ -58,11 +57,11 @@
         "jborsecnik",
         "tiburd",
         "garycentric",
-	"beccarobins"
+        "beccarobins"
       ]
     },
       "searchScope": ["Windows 10"]
-	},
+  },
     "fileMetadata": {},
     "template": [],
     "dest": "privacy",

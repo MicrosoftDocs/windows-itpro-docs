@@ -2,25 +2,22 @@
 title: Overview of Windows as a service
 description: Windows as a service is a way to build, deploy, and service Windows. Learn how Windows as a service works.
 ms.prod: windows-client
+ms.technology: itpro-updates
+ms.topic: overview
 author: mestew
-ms.localizationpriority: medium
 ms.author: mstewart
 manager: aaroncz
-ms.topic: overview
+ms.localizationpriority: medium
 ms.collection:
   - highpri
   - tier2
-ms.technology: itpro-updates
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
 ms.date: 12/31/2017
 ---
 
 # Overview of Windows as a service
-
-
-**Applies to**
-
-- Windows 10
-- Windows 11
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
 
@@ -28,13 +25,13 @@ Windows as a service is a way to simplify the lives of IT pros and maintain a co
 
 ## Building
 
-Prior to Windows 10, Microsoft released new versions of Windows every few years. This traditional deployment schedule imposed a training burden on users because the feature revisions were often significant. That schedule also meant waiting long periods without new features — a scenario that doesn’t work in today’s rapidly changing world, a world in which new security, management, and deployment capabilities are necessary to address challenges. Windows as a service will deliver smaller feature updates two times per year, around March and September, to help address these issues.
+Prior to Windows 10, Microsoft released new versions of Windows every few years. This traditional deployment schedule imposed a training burden on users because the feature revisions were often significant. That schedule also meant waiting long periods without new features — a scenario that doesn't work in today's rapidly changing world, a world in which new security, management, and deployment capabilities are necessary to address challenges. 
 
-In the past, when Microsoft developed new versions of Windows, it typically released technical previews near the end of the process, when Windows was nearly ready to ship. With Windows 10, new features will be delivered to the [Windows Insider community](https://insider.windows.com/) as soon as possible — during the development cycle, through a process called *flighting* — so that organizations can see exactly what Microsoft is developing and start their testing as soon as possible. 
+In the past, when Microsoft developed new versions of Windows, it typically released technical previews near the end of the process, when Windows was nearly ready to ship. With Windows 10, new features are delivered to the [Windows Insider community](/windows-insider/business/register) as soon as possible, during the development cycle, through a process called *flighting*. Organizations can see exactly what Microsoft is developing and start their testing as soon as possible. 
 
 Microsoft also depends on receiving feedback from organizations throughout the development process so that it can make adjustments as quickly as possible rather than waiting until after release. For more information about the Windows Insider Program and how to sign up, see the section [Windows Insider](#windows-insider).
 
-Of course Microsoft also performs extensive internal testing, with engineering teams installing new builds daily, and larger groups of employees installing builds frequently, all before those builds are ever released to the Windows Insider Program. 
+Of course, Microsoft also performs extensive internal testing, with engineering teams installing new builds daily, and larger groups of employees installing builds frequently, all before those builds are ever released to the Windows Insider Program. 
 
 ## Deploying
 
@@ -43,13 +40,13 @@ Deploying Windows 10 and Windows 11 is simpler than with previous versions of Wi
 
 ### Application compatibility
 
-Application compatibility testing has historically been a burden when approaching a Windows deployment or upgrade. Application compatibility from the perspective of desktop applications, websites, and apps built on the Universal Windows Platform (UWP) has improved tremendously over older versions of Windows. For the most important business-critical applications, organizations should still perform testing on a regular basis to validate compatibility with new builds. 
+Application compatibility testing has historically been a burden when approaching a Windows deployment or upgrade. Application compatibility from the perspective of desktop applications, websites, and apps built on the Universal Windows Platform (UWP) has improved tremendously over older versions of Windows. For the most important business-critical applications, organizations should still perform testing regularly to validate compatibility with new builds. 
 
 ## Servicing
 
 Traditional Windows servicing has included several release types: major revisions (for example, the Windows 8.1, Windows 8, and Windows 7 operating systems), service packs, and monthly updates. With Windows 10 and Windows 11, there are two release types: feature updates that add new functionality and quality updates that provide security and reliability fixes. 
 
-Servicing channels are the first way to separate users into deployment groups for feature and quality updates. For more information about developing a deployment strategy that leverages servicing channels, see [Plan servicing strategy for Windows client updates](waas-servicing-strategy-windows-10-updates.md). 
+Servicing channels are the first way to separate users into deployment groups for feature and quality updates. For more information about developing a deployment strategy that uses servicing channels, see [Plan servicing strategy for Windows client updates](waas-servicing-strategy-windows-10-updates.md). 
 
 For information about each servicing tool, see [Servicing tools](#servicing-tools).
 
@@ -58,7 +55,7 @@ There are three servicing channels, each of which provides different levels of f
 
 There are currently three release channels for Windows clients:
 
-- The **General Availability Channel** receives feature updates as soon as they are available. 
+- The **General Availability Channel** receives feature updates as soon as they're available. 
 - The **Long-Term Servicing Channel**, which is designed to be used only for specialized devices (which typically don't run Office) such as those that control medical equipment or ATM machines, receives new feature releases every two to three years.
 - The **Windows Insider Program** provides organizations with the opportunity to test and provide feedback on features that will be shipped in the next feature update.
 
@@ -75,9 +72,9 @@ New features are packaged into feature updates that you can deploy using existin
 
 ### Quality updates
 
-Monthly updates in previous Windows versions were often overwhelming because of the sheer number of updates available each month. Many organizations selectively chose which updates they wanted to install and which they didn’t, and this created countless scenarios in which organizations deployed essential security updates but picked only a subset of non-security fixes.
+Monthly updates in previous Windows versions were often overwhelming because of the sheer number of updates available each month. Many organizations selectively chose which updates they wanted to install and which they didn't, and this created countless scenarios in which organizations deployed essential security updates but picked only a subset of nonsecurity fixes.
 
-Rather than receiving several updates each month and trying to figure out which the organization needs, which ultimately causes platform fragmentation, administrators see one cumulative monthly update that supersedes the previous month’s update, containing both security and non-security fixes. This approach makes updating simpler and ensures that devices are more closely aligned with the testing done at Microsoft, reducing unexpected issues resulting from updates.
+Rather than receiving several updates each month and trying to figure out which the organization needs, which ultimately causes platform fragmentation, administrators see one cumulative monthly update that supersedes the previous month's update, containing both security and non-security fixes. This approach makes updating simpler and ensures that devices are more closely aligned with the testing done at Microsoft, reducing unexpected issues resulting from updates.
 
 ## Servicing channels 
 
@@ -88,9 +85,9 @@ There are three servicing channels. The [Windows Insider Program](#windows-insid
 
 ### General Availability Channel
 
-In the General Availability Channel, feature updates are available annually. This servicing model is ideal for pilot deployments and testing of feature updates and for users such as developers who need to work with the latest features. Once the latest release has gone through pilot deployment and testing, you will be able to choose the timing at which it goes into broad deployment.
+In the General Availability Channel, feature updates are available annually. This servicing model is ideal for pilot deployments and testing of feature updates and for users such as developers who need to work with the latest features. Once the latest release has gone through pilot deployment and testing, you'll be able to choose the timing at which it goes into broad deployment.
 
-When Microsoft officially releases a feature update, we make it available to any device not configured to defer feature updates so that those devices can immediately install it. Organizations that use Windows Server Update Services (WSUS), Microsoft Configuration Manager, or Windows Update for Business, however, can defer feature updates to selective devices by withholding their approval and deployment. In this scenario, the content available for the General Availability Channel will be available but not necessarily immediately mandatory, depending on the policy of the management system. For more details about servicing tools, see [Servicing tools](#servicing-tools).
+When Microsoft officially releases a feature update, we make it available to any device not configured to defer feature updates so that those devices can immediately install it. Organizations that use Windows Server Update Services (WSUS), Microsoft Configuration Manager, or Windows Update for Business, however, can defer feature updates to selective devices by withholding their approval and deployment. In this scenario, the content available for the General Availability Channel is available but not necessarily immediately mandatory, depending on the policy of the management system. For more information about servicing tools, see [Servicing tools](#servicing-tools).
 
 
 > [!NOTE]
@@ -102,7 +99,7 @@ When Microsoft officially releases a feature update, we make it available to any
 
 ### Long-term Servicing Channel
 
-Specialized systems—such as devices that control medical equipment, point-of-sale systems, and ATMs—often require a longer servicing option because of their purpose. These devices typically perform a single important task and don’t need feature updates as frequently as other devices in the organization. It’s more important that these devices be kept as stable and secure as possible than up to date with user interface changes. The LTSC servicing model prevents Enterprise LTSC devices from receiving the usual feature updates and provides only quality updates to ensure that device security stays up to date. With this in mind, quality updates are still immediately available to Windows 10 Enterprise LTSC clients, but customers can choose to defer them by using one of the servicing tools mentioned in the section Servicing tools.
+Specialized systems—such as devices that control medical equipment, point-of-sale systems, and ATMs—often require a longer servicing option because of their purpose. These devices typically perform a single important task and don't need feature updates as frequently as other devices in the organization. It's more important that these devices be kept as stable and secure as possible than up to date with user interface changes. The LTSC servicing model prevents Enterprise LTSC devices from receiving the usual feature updates and provides only quality updates to ensure that device security stays up to date. With this in mind, quality updates are still immediately available to Windows 10 Enterprise LTSC clients, but customers can choose to defer them by using one of the servicing tools mentioned in the section Servicing tools.
 
 > [!NOTE]
 >
@@ -113,12 +110,12 @@ Microsoft never publishes feature updates through Windows Update on devices that
 > [!NOTE]
 > LTSC releases will support the currently released processors and chipsets at the time of release of the LTSC. As future CPU generations are released, support will be created through future LTSC releases that customers can deploy for those systems. For more information, see **Supporting the latest processor and chipsets on Windows** in [Lifecycle support policy FAQ - Windows Products](/lifecycle/faq/windows).
 
-The Long-term Servicing Channel is available only in the Windows 10 Enterprise LTSC editions. This edition of Windows doesn’t include a number of applications, such as Microsoft Edge, Microsoft Store, Cortana (though limited search capabilities remain available), Microsoft Mail, Calendar, OneNote, Weather, News, Sports, Money, Photos, Camera, Music, and Clock. These apps are not supported in the Enterprise LTSC editions, even if you install by using sideloading.
+The Long-term Servicing Channel is available only in the Windows 10 Enterprise LTSC editions. This edition of Windows doesn't include some applications, such as Microsoft Edge, Microsoft Store, Cortana (though limited search capabilities remain available), Microsoft Mail, Calendar, OneNote, Weather, News, Sports, Money, Photos, Camera, Music, and Clock. These apps aren't supported in the Enterprise LTSC editions, even if you install by using sideloading.
 
 
 ### Windows Insider
 
-For many IT pros, gaining visibility into feature updates early--before they’re available to the General Availability Channel — can be both intriguing and valuable for future end user communications as well as provide the means to test for any issues on the next General Availability release. Windows Insiders can consume and deploy preproduction code to their test machines, gaining early visibility into the next build. Testing the early builds helps both Microsoft and its customers because they have the opportunity to discover possible issues before the update is ever publicly available and can report it to Microsoft.
+For many IT pros, gaining visibility into feature updates early can be both intriguing and valuable for future end user communications as well as provide the means to test for any issues on the next General Availability release. Windows Insiders can consume and deploy preproduction code to their test machines, gaining early visibility into the next build. Testing the early builds helps both Microsoft and its customers because they have the opportunity to discover possible issues before the update is ever publicly available and can report it to Microsoft.
 
 Microsoft recommends that all organizations have at least a few devices enrolled in the Windows Insider Program and provide feedback on any issues they encounter. For information about the Windows Insider Program for Business, go to [Windows Insider Program for Business](/windows-insider/business/register).
 

@@ -4,7 +4,7 @@ description: Learn about User Account Control (UAC) components and how it intera
 ms.collection: 
   - highpri
   - tier2
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 05/24/2023
 ---
 
@@ -92,6 +92,9 @@ The shield icon on the **Change date and time...** button indicates that the pro
 The elevation process is further secured by directing the prompt to the *secure desktop*. The consent and credential prompts are displayed on the secure desktop by default. Only Windows processes can access the secure desktop. For higher levels of security, we recommend keeping the **User Account Control: Switch to the secure desktop when prompting for elevation** policy setting enabled.
 
 When an executable file requests elevation, the *interactive desktop*, also called the *user desktop*, is switched to the secure desktop. The secure desktop dims the user desktop and displays an elevation prompt that must be responded to before continuing. When the user selects **Yes** or **No**, the desktop switches back to the user desktop.
+
+> [!NOTE]
+> Starting in **Windows Server 2019**, it's not possible to paste the content of the clipboard on the secure desktop. This is the same behavior of the currently supported Windows client OS versions. 
 
 Malware can present an imitation of the secure desktop, but when the **User Account Control: Behavior of the elevation prompt for administrators in Admin Approval Mode** policy setting is set to **Prompt for consent**, the malware doesn't gain elevation if the user selects **Yes** on the imitation. If the policy setting is set to **Prompt for credentials**, malware imitating the credential prompt may be able to gather the credentials from the user. However, the malware doesn't gain elevated privilege and the system has other protections that mitigate malware from taking control of the user interface even with a harvested password.
 

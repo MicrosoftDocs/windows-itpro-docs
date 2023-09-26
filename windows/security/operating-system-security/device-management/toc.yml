@@ -1,12 +1,4 @@
 items:
-  - name: Security policy settings
-    href: ../../threat-protection/security-policy-settings/security-policy-settings.md
-  - name: Security auditing
-    href: ../../threat-protection/auditing/security-auditing-overview.md
-  - name: Secured-core configuration lock
-    href: /windows/client-management/config-lock
-  - name: Assigned Access (kiosk mode)
-    href: /windows/configuration/kiosk-methods
   - name: Security baselines
     href: windows-security-configuration-framework/windows-security-baselines.md
     items:

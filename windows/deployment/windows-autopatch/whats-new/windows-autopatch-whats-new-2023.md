@@ -1,7 +1,7 @@
 ---
 title: What's new 2023
 description: This article lists the 2023 feature releases and any corresponding Message center post numbers.
-ms.date: 07/10/2023 
+ms.date: 09/11/2023 
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: whats-new
@@ -21,7 +21,54 @@ This article lists new and updated feature releases, and service releases, with 
 
 Minor corrections such as typos, style, or formatting issues aren't listed.
 
+## September 2023
+
+### September feature releases or updates
+
+| Article | Description |
+| ----- | ----- |
+| [Conflicting configurations](../references/windows-autopatch-conflicting-configurations.md) | New feature. This article explains how to remediate conflicting configurations<ul><li>[MC671811](https://admin.microsoft.com/adminportal/home#/MessageCenter)</li></ul> |
+
+### September service releases
+
+| Message center post number | Description |
+| ----- | ----- |
+| [MC674422](https://admin.microsoft.com/adminportal/home#/MessageCenter) | Public Preview: Windows Autopatch Reliability Report |
+| [MC672750](https://admin.microsoft.com/adminportal/home#/MessageCenter) | August 2023 Windows Autopatch baseline configuration update |
+
+## August 2023
+
+### August feature releases or updates
+
+| Article | Description |
+| ----- | ----- |
+| [Deployment guide](../overview/windows-autopatch-deployment-guide.md) | New guide. This guide explains how to successfully deploy Windows Autopatch in your environment |
+| [Windows quality updates](../operate/windows-autopatch-groups-windows-quality-update-overview.md) | Added the **This pause is related to Windows Update** option to the [Pause and resume a release feature](../operate/windows-autopatch-groups-windows-quality-update-overview.md#pause-and-resume-a-release) |
+| [Manage driver and firmware updates](../operate/windows-autopatch-manage-driver-and-firmware-updates.md)| Added [policy settings](../operate/windows-autopatch-manage-driver-and-firmware-updates.md#view-driver-and-firmware-policies-created-by-windows-autopatch) for all deployment rings |
+| [Manage driver and firmware updates](../operate/windows-autopatch-manage-driver-and-firmware-updates.md) | General Availability<ul><li>[MC661218](https://admin.microsoft.com/adminportal/home#/MessageCenter)</li></ul> |
+| [Exclude a device](../operate/windows-autopatch-exclude-device.md) | Renamed Deregister a device to [Exclude a device](../operate/windows-autopatch-exclude-device.md). Added the [Restore device](../operate/windows-autopatch-exclude-device.md#restore-a-device-or-multiple-devices-previously-excluded) feature <ul><li>[MC667662](https://admin.microsoft.com/adminportal/home#/MessageCenter)</li></ul> |
+| [Device alerts](../operate/windows-autopatch-device-alerts.md) | Added `'InstallSetupBlock'` to the [Alert resolutions section](../operate/windows-autopatch-device-alerts.md#alert-resolutions) |
+
+### August service releases
+
+| Message center post number | Description |
+| ----- | ----- |
+| [MC671811](https://admin.microsoft.com/adminportal/home#/MessageCenter) | Windows Autopatch Service Improvements |
+
 ## July 2023
+
+### July feature releases or updates
+
+| Article | Description |
+| ----- | ----- |
+| [Roles and responsibilities](../overview/windows-autopatch-roles-responsibilities.md) | Updated article to include Windows Autopatch groups |
+| [Windows Autopatch groups overview](../deploy/windows-autopatch-groups-overview.md) | General Availability<ul><li>[MC628172](https://admin.microsoft.com/adminportal/home#/MessageCenter)</li></ul> |
+| [Manage Windows Autopatch groups](../deploy/windows-autopatch-groups-manage-autopatch-groups.md) | General Availability<ul><li>[MC628172](https://admin.microsoft.com/adminportal/home#/MessageCenter)</li></ul> |
+| [Customize Windows Update settings](../operate/windows-autopatch-groups-windows-update.md) | General Availability<ul><li>[MC628172](https://admin.microsoft.com/adminportal/home#/MessageCenter)</li></ul> |
+| [Windows quality updates](../operate/windows-autopatch-groups-windows-quality-update-overview.md) | General Availability<ul><li>[MC628172](https://admin.microsoft.com/adminportal/home#/MessageCenter)</li></ul> |
+| [Windows feature updates](../operate/windows-autopatch-groups-windows-feature-update-overview.md) | General Availability<ul><li>[MC628172](https://admin.microsoft.com/adminportal/home#/MessageCenter)</li></ul> |
+| [Windows quality and feature update reports](../operate/windows-autopatch-groups-windows-quality-and-feature-update-reports-overview.md) | General Availability<ul><li>[MC628172](https://admin.microsoft.com/adminportal/home#/MessageCenter)</li></ul> |
+| [Policy health and remediation](../operate/windows-autopatch-policy-health-and-remediation.md) | General Availability<ul><li>[MC628172](https://admin.microsoft.com/adminportal/home#/MessageCenter)</li></ul> |
 
 ### July service releases
 

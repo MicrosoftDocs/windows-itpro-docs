@@ -1,7 +1,7 @@
 ---
 title: Azure AD Join with Set up School PCs app
 description: Learn how Azure AD Join is configured in the Set up School PCs app.
-ms.topic: article
+ms.topic: reference
 ms.date: 08/10/2022
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
