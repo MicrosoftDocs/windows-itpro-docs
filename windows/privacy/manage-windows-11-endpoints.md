@@ -151,7 +151,7 @@ To view endpoints for non-Enterprise Windows 11 editions, see [Windows 11 connec
 ||The following endpoints are used for Microsoft Teams application.|TLSv1.2/HTTPS/HTTP|config.teams.microsoft.com|
 |||HTTP|teams.live.com|
 |||TLSv1.2/HTTP|teams.events.data.microsoft.com|
-|||TLSv1.2|statics.teams.cdn.live.net|
+|||HTTP|statics.teams.cdn.live.net|
 |Windows Spotlight|||[Learn how to turn off traffic to all of the following endpoint(s) for Windows Spotlight.](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-spotlight)|
 ||The following endpoints are used to retrieve Windows Spotlight metadata that describes content, such as references to image locations, as well as suggested apps, Microsoft account notifications, and Windows tips. If you turn off traffic for these endpoints, Windows Spotlight will still try to deliver new lock screen images and updated content but it will fail; suggested apps, Microsoft account notifications, and Windows tips won't be downloaded. |TLSv1.2/HTTPS/HTTP|arc.msn.com|
 |||HTTPS|ris.api.iris.microsoft.com|
