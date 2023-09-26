@@ -1,163 +1,164 @@
 {
-  "redirections": [
-    {
-      "source_path": "windows/whats-new/applocker.md",
-      "redirect_url": "/windows/whats-new/whats-new-windows-10-version-1507-and-1511",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "windows/whats-new/bitlocker.md",
-      "redirect_url": "/windows/whats-new/whats-new-windows-10-version-1507-and-1511",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "windows/whats-new/change-history-for-what-s-new-in-windows-10.md",
-      "redirect_url": "/windows/whats-new/index",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "windows/whats-new/contribute-to-a-topic.md",
-      "redirect_url": "https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/CONTRIBUTING.md#editing-windows-it-professional-documentation",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "windows/whats-new/credential-guard.md",
-      "redirect_url": "/windows/whats-new/whats-new-windows-10-version-1507-and-1511",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "windows/whats-new/device-guard-overview.md",
-      "redirect_url": "/windows/security/threat-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "windows/whats-new/device-management.md",
-      "redirect_url": "/windows/client-management/index",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "windows/whats-new/edge-ie11-whats-new-overview.md",
-      "redirect_url": "/microsoft-edge/deploy/emie-to-improve-compatibility",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "windows/whats-new/edp-whats-new-overview.md",
-      "redirect_url": "/windows/threat-protection/windows-information-protection/protect-enterprise-data-using-wip",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "windows/whats-new/lockdown-features-windows-10.md",
-      "redirect_url": "/windows/configuration/lockdown-features-windows-10",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "windows/whats-new/microsoft-passport.md",
-      "redirect_url": "/windows/access-protection/hello-for-business/hello-identity-verification",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "windows/whats-new/new-provisioning-packages.md",
-      "redirect_url": "/windows/configuration/provisioning-packages/provisioning-packages",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "windows/whats-new/security-auditing.md",
-      "redirect_url": "/windows/whats-new/whats-new-windows-10-version-1507-and-1511",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "windows/whats-new/security.md",
-      "redirect_url": "/windows/threat-protection/overview-of-threat-mitigations-in-windows-10",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "windows/whats-new/trusted-platform-module.md",
-      "redirect_url": "/windows/device-security/tpm/trusted-platform-module-overview",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "windows/whats-new/user-account-control.md",
-      "redirect_url": "/windows/whats-new/whats-new-windows-10-version-1507-and-1511",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "windows/whats-new/windows-10-insider-preview.md",
-      "redirect_url": "/windows/whats-new",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "windows/whats-new/windows-11-whats-new.md",
-      "redirect_url": "/windows/whats-new/windows-11-overview",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "windows/whats-new/windows-11.md",
-      "redirect_url": "/windows/whats-new/windows-11-whats-new",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "windows/whats-new/windows-spotlight.md",
-      "redirect_url": "/windows/configuration/windows-spotlight",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "windows/whats-new/windows-store-for-business-overview.md",
-      "redirect_url": "/microsoft-store/windows-store-for-business-overview",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "windows/whats-new/windows-update-for-business.md",
-      "redirect_url": "/windows/whats-new/whats-new-windows-10-version-1507-and-1511",
-      "redirect_document_id": false
+   "redirections":[
       {
-       "source_path":  "whats-new-windows-10-version-1507-and-1511.md",
-       "redirect_url":  "/previous-versions/whats-new-windows-10-version-1507-and-1511",
-       "redirect_document_id":  false
-    },
-    {
-       "source_path":  "whats-new-windows-10-version-1607.md",
-       "redirect_url":  "/previous-versions/whats-new-windows-10-version-1607",
-       "redirect_document_id":  false
-    },
-    {
-       "source_path":  "whats-new-windows-10-version-1703.md",
-       "redirect_url":  "/previous-versions/whats-new-windows-10-version-1703",
-       "redirect_document_id":  false
-    },
-    {
-       "source_path":  "whats-new-windows-10-version-1709.md",
-       "redirect_url":  "/previous-versions/whats-new-windows-10-version-1709",
-       "redirect_document_id":  false
-    },
-    {
-       "source_path":  "whats-new-windows-10-version-1803.md",
-       "redirect_url":  "/previous-versions/whats-new-windows-10-version-1803",
-       "redirect_document_id":  false
-    },
-    {
-       "source_path":  "whats-new-windows-10-version-1809.md",
-       "redirect_url":  "/previous-versions/whats-new-windows-10-version-1809",
-       "redirect_document_id":  false
-    },
-    {
-       "source_path":  "whats-new-windows-10-version-1903.md",
-       "redirect_url":  "/previous-versions/whats-new-windows-10-version-1903",
-       "redirect_document_id":  false
-    },
-    {
-       "source_path":  "whats-new-windows-10-version-1909.md",
-       "redirect_url":  "/previous-versions/whats-new-windows-10-version-1909",
-       "redirect_document_id":  false
-    },
-    {
-       "source_path":  "whats-new-windows-10-version-2004.md",
-       "redirect_url":  "/previous-versions/whats-new-windows-10-version-2004",
-       "redirect_document_id":  false
-    },
-    { 
-       "source_path":  "whats-new-windows-10-version-21H1.md",
-       "redirect_url":  "/previous-versions/whats-new-windows-10-version-21H1",
-       "redirect_document_id":  false
-    }
-  ]
-}
+         "source_path":"windows/whats-new/applocker.md",
+         "redirect_url":"/windows/whats-new/whats-new-windows-10-version-1507-and-1511",
+         "redirect_document_id":false
+      },
+      {
+         "source_path":"windows/whats-new/bitlocker.md",
+         "redirect_url":"/windows/whats-new/whats-new-windows-10-version-1507-and-1511",
+         "redirect_document_id":false
+      },
+      {
+         "source_path":"windows/whats-new/change-history-for-what-s-new-in-windows-10.md",
+         "redirect_url":"/windows/whats-new/index",
+         "redirect_document_id":false
+      },
+      {
+         "source_path":"windows/whats-new/contribute-to-a-topic.md",
+         "redirect_url":"https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/CONTRIBUTING.md#editing-windows-it-professional-documentation",
+         "redirect_document_id":false
+      },
+      {
+         "source_path":"windows/whats-new/credential-guard.md",
+         "redirect_url":"/windows/whats-new/whats-new-windows-10-version-1507-and-1511",
+         "redirect_document_id":false
+      },
+      {
+         "source_path":"windows/whats-new/device-guard-overview.md",
+         "redirect_url":"/windows/security/threat-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control",
+         "redirect_document_id":false
+      },
+      {
+         "source_path":"windows/whats-new/device-management.md",
+         "redirect_url":"/windows/client-management/index",
+         "redirect_document_id":false
+      },
+      {
+         "source_path":"windows/whats-new/edge-ie11-whats-new-overview.md",
+         "redirect_url":"/microsoft-edge/deploy/emie-to-improve-compatibility",
+         "redirect_document_id":false
+      },
+      {
+         "source_path":"windows/whats-new/edp-whats-new-overview.md",
+         "redirect_url":"/windows/threat-protection/windows-information-protection/protect-enterprise-data-using-wip",
+         "redirect_document_id":false
+      },
+      {
+         "source_path":"windows/whats-new/lockdown-features-windows-10.md",
+         "redirect_url":"/windows/configuration/lockdown-features-windows-10",
+         "redirect_document_id":false
+      },
+      {
+         "source_path":"windows/whats-new/microsoft-passport.md",
+         "redirect_url":"/windows/access-protection/hello-for-business/hello-identity-verification",
+         "redirect_document_id":false
+      },
+      {
+         "source_path":"windows/whats-new/new-provisioning-packages.md",
+         "redirect_url":"/windows/configuration/provisioning-packages/provisioning-packages",
+         "redirect_document_id":false
+      },
+      {
+         "source_path":"windows/whats-new/security-auditing.md",
+         "redirect_url":"/windows/whats-new/whats-new-windows-10-version-1507-and-1511",
+         "redirect_document_id":false
+      },
+      {
+         "source_path":"windows/whats-new/security.md",
+         "redirect_url":"/windows/threat-protection/overview-of-threat-mitigations-in-windows-10",
+         "redirect_document_id":false
+      },
+      {
+         "source_path":"windows/whats-new/trusted-platform-module.md",
+         "redirect_url":"/windows/device-security/tpm/trusted-platform-module-overview",
+         "redirect_document_id":false
+      },
+      {
+         "source_path":"windows/whats-new/user-account-control.md",
+         "redirect_url":"/windows/whats-new/whats-new-windows-10-version-1507-and-1511",
+         "redirect_document_id":false
+      },
+      {
+         "source_path":"windows/whats-new/windows-10-insider-preview.md",
+         "redirect_url":"/windows/whats-new",
+         "redirect_document_id":false
+      },
+      {
+         "source_path":"windows/whats-new/windows-11-whats-new.md",
+         "redirect_url":"/windows/whats-new/windows-11-overview",
+         "redirect_document_id":false
+      },
+      {
+         "source_path":"windows/whats-new/windows-11.md",
+         "redirect_url":"/windows/whats-new/windows-11-whats-new",
+         "redirect_document_id":false
+      },
+      {
+         "source_path":"windows/whats-new/windows-spotlight.md",
+         "redirect_url":"/windows/configuration/windows-spotlight",
+         "redirect_document_id":false
+      },
+      {
+         "source_path":"windows/whats-new/windows-store-for-business-overview.md",
+         "redirect_url":"/microsoft-store/windows-store-for-business-overview",
+         "redirect_document_id":false
+      },
+      {
+         "source_path":"windows/whats-new/windows-update-for-business.md",
+         "redirect_url":"/windows/whats-new/whats-new-windows-10-version-1507-and-1511",
+         "redirect_document_id":false
+      },
+      {
+        "source_path":"whats-new-windows-10-version-1507-and-1511.md",
+        "redirect_url":"/previous-versions/whats-new-windows-10-version-1507-and-1511",
+        "redirect_document_id":false
+      },
+      {
+        "source_path":"whats-new-windows-10-version-1607.md",
+        "redirect_url":"/previous-versions/whats-new-windows-10-version-1607",
+        "redirect_document_id":false
+      },
+      {
+        "source_path":"whats-new-windows-10-version-1703.md",
+        "redirect_url":"/previous-versions/whats-new-windows-10-version-1703",
+        "redirect_document_id":false
+      },
+      {
+        "source_path":"whats-new-windows-10-version-1709.md",
+        "redirect_url":"/previous-versions/whats-new-windows-10-version-1709",
+        "redirect_document_id":false
+      },
+      {
+        "source_path":"whats-new-windows-10-version-1803.md",
+        "redirect_url":"/previous-versions/whats-new-windows-10-version-1803",
+        "redirect_document_id":false
+      },
+      {
+        "source_path":"whats-new-windows-10-version-1809.md",
+        "redirect_url":"/previous-versions/whats-new-windows-10-version-1809",
+        "redirect_document_id":false
+      },
+      {
+        "source_path":"whats-new-windows-10-version-1903.md",
+        "redirect_url":"/previous-versions/whats-new-windows-10-version-1903",
+        "redirect_document_id":false
+      },
+      {
+        "source_path":"whats-new-windows-10-version-1909.md",
+        "redirect_url":"/previous-versions/whats-new-windows-10-version-1909",
+        "redirect_document_id":false
+      },
+      {
+        "source_path":"whats-new-windows-10-version-2004.md",
+        "redirect_url":"/previous-versions/whats-new-windows-10-version-2004",
+        "redirect_document_id":false
+      },
+      {
+        "source_path":"whats-new-windows-10-version-21H1.md",
+        "redirect_url":"/previous-versions/whats-new-windows-10-version-21H1",
+        "redirect_document_id":false
+         }
+      ]
+   }
