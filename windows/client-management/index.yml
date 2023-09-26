@@ -38,7 +38,7 @@ landingContent:
             url: device-update-management.md
           - text: Manage apps
             url: enterprise-app-management.md
-          - text: Manage Windows Copilot
+          - text: Manage Copilot in Windows
             url: manage-windows-copilot.md
 
   - title: Device enrollment
