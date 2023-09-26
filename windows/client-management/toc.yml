@@ -48,6 +48,8 @@ items:
                 href: enterprise-app-management.md
               - name: Manage updates
                 href: device-update-management.md
+              - name: Manage Copilot in Windows
+                href: manage-windows-copilot.md
               - name: Secured-Core PC Configuration Lock
                 href: config-lock.md
               - name: Certificate renewal

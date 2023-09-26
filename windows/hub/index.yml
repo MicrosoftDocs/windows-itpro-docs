@@ -15,7 +15,7 @@ metadata:
   author: paolomatarazzo
   ms.author: paoloma
   manager: aaroncz
-  ms.date: 06/20/2023
+  ms.date: 09/18/2023
 
 highlightedContent:
   items:
@@ -69,10 +69,10 @@ productDirectory:
       links:
         - url: /windows/security/threat-protection/windows-security-configuration-framework/windows-security-baselines
           text: Windows security baselines
-        - url: /windows/security/identity-protection/credential-guard/credential-guard-how-it-works
-          text: Credential Guard
-        - url: /windows/security/identity-protection/hello-for-business/hello-hybrid-cloud-kerberos-trust
-          text: Windows Hello for Business cloud Kerberos trust
+        - url: /windows/security/identity-protection/hello-for-business
+          text: Windows Hello for Business
+        - url: /windows/security/identity-protection/web-sign-in
+          text: Web sign-in for Windows
         - url: /windows/security/threat-protection/windows-defender-application-control
           text: Windows Defender Application Control (WDAC)
         - url: /windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview
@@ -105,8 +105,8 @@ productDirectory:
           text: Configuration Service Provider (CSP)
         - url: /windows/client-management/administrative-tools-in-windows-10
           text: Windows administrative tools
-        - url: /windows/client-management/client-tools/quick-assist
-          text: Use Quick Assist to help users
+        - url: /windows/client-management/manage-windows-copilot
+          text: Manage Copilot in Windows
         - url: /windows/application-management/index
           text: Learn more about application management >
         - url: /windows/client-management

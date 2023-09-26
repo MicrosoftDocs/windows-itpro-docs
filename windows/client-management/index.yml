@@ -12,10 +12,10 @@ metadata:
   ms.collection:
     - highpri
     - tier1
-  author: aczechowski
-  ms.author: aaroncz
+  author: vinaypamnani-msft
+  ms.author: vinpa
   manager: aaroncz
-  ms.date: 09/18/2023
+  ms.date: 09/26/2023
   localization_priority: medium
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -32,14 +32,14 @@ landingContent:
             url: mdm-overview.md
       - linkListType: concept
         links:
-          - text: MDM for device updates
-            url: device-update-management.md
-          - text: Enterprise settings, policies, and app management
+          - text: Manage settings
             url: windows-mdm-enterprise-settings.md
-          - text: Windows Tools/Administrative Tools
-            url: client-tools/administrative-tools-in-windows.md
-          - text: Create mandatory user profiles
-            url: client-tools/mandatory-user-profile.md
+          - text: Manage updates
+            url: device-update-management.md
+          - text: Manage apps
+            url: enterprise-app-management.md
+          - text: Manage Copilot in Windows
+            url: manage-windows-copilot.md
 
   - title: Copilot in Windows
     linkLists:
@@ -93,6 +93,19 @@ landingContent:
             url: enroll-a-windows-10-device-automatically-using-group-policy.md
           - text: Bulk enrollment
             url: bulk-enrollment-using-windows-provisioning-tool.md
+
+  - title: Client management tools
+    linkLists:
+      - linkListType: learn
+        links:
+          - text: Windows Tools/Administrative Tools
+            url: client-tools/administrative-tools-in-windows.md
+          - text: Use Quick assist
+            url: client-tools/quick-assist.md
+          - text: Connect to Azure AD devices
+            url: client-tools/connect-to-remote-aadj-pc.md
+          - text: Create mandatory user profiles
+            url: client-tools/mandatory-user-profile.md
 
   - title: Troubleshoot Windows clients
     linkLists:
