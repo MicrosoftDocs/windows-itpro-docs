@@ -29,7 +29,6 @@ The declared configuration device management model requires the server to delive
 - On the client, if there are any requests in process or completed, it sends a [generic alert](#declared-configuration-generic-alert) to the server. This alert summarizes each document's status, state, and progress. Every client HTTPS request to the declared configuration OMA-DM server includes this summary.
 
 - The declared configuration server uses the generic alert to determine which requests are completed successfully or with errors. The server can then synchronously retrieve the declared configuration document process results through the [Declared Configuration CSP URI](#declared-configuration-oma-uri).
-
 <!-- DeclaredConfiguration-Editable-End -->
 
 <!-- DeclaredConfiguration-Tree-Begin -->
@@ -53,10 +52,6 @@ The following list shows the DeclaredConfiguration configuration service provide
       - [Results](#hostinventoryresults)
         - [{DocID}](#hostinventoryresultsdocid)
           - [Document](#hostinventoryresultsdociddocument)
-  - [ManagementServiceConfiguration](#managementserviceconfiguration)
-    - [CertificateExpirationThreshold](#managementserviceconfigurationcertificateexpirationthreshold)
-    - [RefreshInterval](#managementserviceconfigurationrefreshinterval)
-    - [StartSyncSessionOnFailure](#managementserviceconfigurationstartsyncsessiononfailure)
 <!-- DeclaredConfiguration-Tree-End -->
 
 <!-- Device-Host-Begin -->
@@ -75,7 +70,8 @@ The following list shows the DeclaredConfiguration configuration service provide
 <!-- Device-Host-OmaUri-End -->
 
 <!-- Device-Host-Description-Begin -->
-<!-- Description-Source-Not-Found -->
+<!-- Description-Source-DDF -->
+The Host internal node indicates that the target of the configuration request or inventory request is the host OS. This node is for scope in case enclaves are ever targeted for configuration.
 <!-- Device-Host-Description-End -->
 
 <!-- Device-Host-Editable-Begin -->
@@ -113,7 +109,8 @@ The following list shows the DeclaredConfiguration configuration service provide
 <!-- Device-Host-Complete-OmaUri-End -->
 
 <!-- Device-Host-Complete-Description-Begin -->
-<!-- Description-Source-Not-Found -->
+<!-- Description-Source-DDF -->
+This internal node indicates that the configuration has discrete settings values and is self-contained with complete setting and value pairs that don't contain placeholders that the need to be resolved later with additional data. The request is ready to be processed as is.
 <!-- Device-Host-Complete-Description-End -->
 
 <!-- Device-Host-Complete-Editable-Begin -->
@@ -152,7 +149,8 @@ The server to client flow of the **Complete** request is the same as an **Invent
 <!-- Device-Host-Complete-Documents-OmaUri-End -->
 
 <!-- Device-Host-Complete-Documents-Description-Begin -->
-<!-- Description-Source-Not-Found -->
+<!-- Description-Source-DDF -->
+The Documents node indicates that the configuration is in the form of a document, which is a collection of settings used to configure a scenario by the Declared Configuration stack.
 <!-- Device-Host-Complete-Documents-Description-End -->
 
 <!-- Device-Host-Complete-Documents-Editable-Begin -->
@@ -190,7 +188,8 @@ The server to client flow of the **Complete** request is the same as an **Invent
 <!-- Device-Host-Complete-Documents-{DocID}-OmaUri-End -->
 
 <!-- Device-Host-Complete-Documents-{DocID}-Description-Begin -->
-<!-- Description-Source-Not-Found -->
+<!-- Description-Source-DDF -->
+Uniquely identifies the configuration document. No other document can have this id. The Id should be a GUID.
 <!-- Device-Host-Complete-Documents-{DocID}-Description-End -->
 
 <!-- Device-Host-Complete-Documents-{DocID}-Editable-Begin -->
@@ -230,7 +229,8 @@ The server to client flow of the **Complete** request is the same as an **Invent
 <!-- Device-Host-Complete-Documents-{DocID}-Document-OmaUri-End -->
 
 <!-- Device-Host-Complete-Documents-{DocID}-Document-Description-Begin -->
-<!-- Description-Source-Not-Found -->
+<!-- Description-Source-DDF -->
+The Document node's value is an XML based document containing a collection of settings and values to configure the specified scenario. The Declared Configuration stack verifies the syntax of the document, the stack marks the document to be processed asynchronously by the client. The stack then returns control back to the OMA-DM service. The stack, in turn, asynchronously processes the request. Below is an example of a specified desired state configuration using the Declared Configuration URI ./Device/Vendor/MSFT/DeclaredConfiguration/Host/Complete/Documents/27FEA311-68. B9-4320-9. FC4-296. F6FDFAFE2/Document.
 <!-- Device-Host-Complete-Documents-{DocID}-Document-Description-End -->
 
 <!-- Device-Host-Complete-Documents-{DocID}-Document-Editable-Begin -->
@@ -268,7 +268,8 @@ The server to client flow of the **Complete** request is the same as an **Invent
 <!-- Device-Host-Complete-Documents-{DocID}-Properties-OmaUri-End -->
 
 <!-- Device-Host-Complete-Documents-{DocID}-Properties-Description-Begin -->
-<!-- Description-Source-Not-Found -->
+<!-- Description-Source-DDF -->
+The Properties node encapsulates the list of properties that apply to the specified document referenced by [DocID].
 <!-- Device-Host-Complete-Documents-{DocID}-Properties-Description-End -->
 
 <!-- Device-Host-Complete-Documents-{DocID}-Properties-Editable-Begin -->
@@ -306,7 +307,8 @@ The server to client flow of the **Complete** request is the same as an **Invent
 <!-- Device-Host-Complete-Documents-{DocID}-Properties-Abandoned-OmaUri-End -->
 
 <!-- Device-Host-Complete-Documents-{DocID}-Properties-Abandoned-Description-Begin -->
-<!-- Description-Source-Not-Found -->
+<!-- Description-Source-DDF -->
+The Abandoned node allows the OMA-DM server to indicate that the document is no longer managed.
 <!-- Device-Host-Complete-Documents-{DocID}-Properties-Abandoned-Description-End -->
 
 <!-- Device-Host-Complete-Documents-{DocID}-Properties-Abandoned-Editable-Begin -->
@@ -328,8 +330,8 @@ The server to client flow of the **Complete** request is the same as an **Invent
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Insert Description Here. |
-| 1 | Insert Description Here. |
+| 0 (Default) | The document is no longer managed. |
+| 1 | The document is managed. |
 <!-- Device-Host-Complete-Documents-{DocID}-Properties-Abandoned-AllowedValues-End -->
 
 <!-- Device-Host-Complete-Documents-{DocID}-Properties-Abandoned-Examples-Begin -->
@@ -354,7 +356,8 @@ The server to client flow of the **Complete** request is the same as an **Invent
 <!-- Device-Host-Complete-Results-OmaUri-End -->
 
 <!-- Device-Host-Complete-Results-Description-Begin -->
-<!-- Description-Source-Not-Found -->
+<!-- Description-Source-DDF -->
+The Results node indicates that this is part of the URI path that will return an XML document containing the results of the configuration request.
 <!-- Device-Host-Complete-Results-Description-End -->
 
 <!-- Device-Host-Complete-Results-Editable-Begin -->
@@ -392,7 +395,8 @@ The server to client flow of the **Complete** request is the same as an **Invent
 <!-- Device-Host-Complete-Results-{DocID}-OmaUri-End -->
 
 <!-- Device-Host-Complete-Results-{DocID}-Description-Begin -->
-<!-- Description-Source-Not-Found -->
+<!-- Description-Source-DDF -->
+Uniquely identifies the configuration document in which results of the configuration request will be returned.
 <!-- Device-Host-Complete-Results-{DocID}-Description-End -->
 
 <!-- Device-Host-Complete-Results-{DocID}-Editable-Begin -->
@@ -431,7 +435,8 @@ The server to client flow of the **Complete** request is the same as an **Invent
 <!-- Device-Host-Complete-Results-{DocID}-Document-OmaUri-End -->
 
 <!-- Device-Host-Complete-Results-{DocID}-Document-Description-Begin -->
-<!-- Description-Source-Not-Found -->
+<!-- Description-Source-DDF -->
+The Document node's value is an XML based document containing a collection of setting results from the configuration request specified by [DocId].
 <!-- Device-Host-Complete-Results-{DocID}-Document-Description-End -->
 
 <!-- Device-Host-Complete-Results-{DocID}-Document-Editable-Begin -->
@@ -469,7 +474,8 @@ The server to client flow of the **Complete** request is the same as an **Invent
 <!-- Device-Host-Inventory-OmaUri-End -->
 
 <!-- Device-Host-Inventory-Description-Begin -->
-<!-- Description-Source-Not-Found -->
+<!-- Description-Source-DDF -->
+The Inventory internal node indicates that this is an inventory request. The setting values to be retrieved are specified in an XML document through the Document leaf node.
 <!-- Device-Host-Inventory-Description-End -->
 
 <!-- Device-Host-Inventory-Editable-Begin -->
@@ -508,7 +514,8 @@ The server to client flow of the **Inventory** request is the same as the **Comp
 <!-- Device-Host-Inventory-Documents-OmaUri-End -->
 
 <!-- Device-Host-Inventory-Documents-Description-Begin -->
-<!-- Description-Source-Not-Found -->
+<!-- Description-Source-DDF -->
+The Documents node indicates that the inventory request is in the form of a document, which is a collection of settings used to retrieve their values.
 <!-- Device-Host-Inventory-Documents-Description-End -->
 
 <!-- Device-Host-Inventory-Documents-Editable-Begin -->
@@ -546,7 +553,8 @@ The server to client flow of the **Inventory** request is the same as the **Comp
 <!-- Device-Host-Inventory-Documents-{DocID}-OmaUri-End -->
 
 <!-- Device-Host-Inventory-Documents-{DocID}-Description-Begin -->
-<!-- Description-Source-Not-Found -->
+<!-- Description-Source-DDF -->
+Uniquely identifies the inventory document. No other document can have this id. The Id should be a GUID.
 <!-- Device-Host-Inventory-Documents-{DocID}-Description-End -->
 
 <!-- Device-Host-Inventory-Documents-{DocID}-Editable-Begin -->
@@ -586,7 +594,8 @@ The server to client flow of the **Inventory** request is the same as the **Comp
 <!-- Device-Host-Inventory-Documents-{DocID}-Document-OmaUri-End -->
 
 <!-- Device-Host-Inventory-Documents-{DocID}-Document-Description-Begin -->
-<!-- Description-Source-Not-Found -->
+<!-- Description-Source-DDF -->
+The Document node's value is an XML based document containing a collection of settings that will be used to retrieve their values. The Declared Configuration stack verifies the syntax of the document, the stack marks the document to be processed asynchronously by the client. The stack then returns control back to the OMA-DM service. The stack, in turn, asynchronously processes the request. Below is an example of a specified desired state configuration using the Declared Configuration URI ./Device/Vendor/MSFT/DeclaredConfiguration/Host/Inventory/Documents/27FEA311-68. B9-4320-9. FC4-296. F6FDFAFE2/Document.
 <!-- Device-Host-Inventory-Documents-{DocID}-Document-Description-End -->
 
 <!-- Device-Host-Inventory-Documents-{DocID}-Document-Editable-Begin -->
@@ -624,7 +633,8 @@ The server to client flow of the **Inventory** request is the same as the **Comp
 <!-- Device-Host-Inventory-Results-OmaUri-End -->
 
 <!-- Device-Host-Inventory-Results-Description-Begin -->
-<!-- Description-Source-Not-Found -->
+<!-- Description-Source-DDF -->
+The Results node indicates that this is part of the URI path that will return an XML document containing the results of the inventory request.
 <!-- Device-Host-Inventory-Results-Description-End -->
 
 <!-- Device-Host-Inventory-Results-Editable-Begin -->
@@ -662,7 +672,8 @@ The server to client flow of the **Inventory** request is the same as the **Comp
 <!-- Device-Host-Inventory-Results-{DocID}-OmaUri-End -->
 
 <!-- Device-Host-Inventory-Results-{DocID}-Description-Begin -->
-<!-- Description-Source-Not-Found -->
+<!-- Description-Source-DDF -->
+Uniquely identifies the inventory document. No other document can have this id. The Id should be a GUID.
 <!-- Device-Host-Inventory-Results-{DocID}-Description-End -->
 
 <!-- Device-Host-Inventory-Results-{DocID}-Editable-Begin -->
@@ -701,7 +712,8 @@ The server to client flow of the **Inventory** request is the same as the **Comp
 <!-- Device-Host-Inventory-Results-{DocID}-Document-OmaUri-End -->
 
 <!-- Device-Host-Inventory-Results-{DocID}-Document-Description-Begin -->
-<!-- Description-Source-Not-Found -->
+<!-- Description-Source-DDF -->
+The Document node's value is an XML based document containing a collection of setting results from the inventory request specified by [DocId].
 <!-- Device-Host-Inventory-Results-{DocID}-Document-Description-End -->
 
 <!-- Device-Host-Inventory-Results-{DocID}-Document-Editable-Begin -->
@@ -722,176 +734,6 @@ The server to client flow of the **Inventory** request is the same as the **Comp
 <!-- Device-Host-Inventory-Results-{DocID}-Document-Examples-End -->
 
 <!-- Device-Host-Inventory-Results-{DocID}-Document-End -->
-
-<!-- Device-ManagementServiceConfiguration-Begin -->
-## ManagementServiceConfiguration
-
-<!-- Device-ManagementServiceConfiguration-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
-<!-- Device-ManagementServiceConfiguration-Applicability-End -->
-
-<!-- Device-ManagementServiceConfiguration-OmaUri-Begin -->
-```Device
-./Device/Vendor/MSFT/DeclaredConfiguration/ManagementServiceConfiguration
-```
-<!-- Device-ManagementServiceConfiguration-OmaUri-End -->
-
-<!-- Device-ManagementServiceConfiguration-Description-Begin -->
-<!-- Description-Source-DDF -->
-Configuration settings for WinDC behavior.
-<!-- Device-ManagementServiceConfiguration-Description-End -->
-
-<!-- Device-ManagementServiceConfiguration-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- Device-ManagementServiceConfiguration-Editable-End -->
-
-<!-- Device-ManagementServiceConfiguration-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | `node` |
-| Access Type | Get |
-<!-- Device-ManagementServiceConfiguration-DFProperties-End -->
-
-<!-- Device-ManagementServiceConfiguration-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- Device-ManagementServiceConfiguration-Examples-End -->
-
-<!-- Device-ManagementServiceConfiguration-End -->
-
-<!-- Device-ManagementServiceConfiguration-CertificateExpirationThreshold-Begin -->
-### ManagementServiceConfiguration/CertificateExpirationThreshold
-
-<!-- Device-ManagementServiceConfiguration-CertificateExpirationThreshold-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
-<!-- Device-ManagementServiceConfiguration-CertificateExpirationThreshold-Applicability-End -->
-
-<!-- Device-ManagementServiceConfiguration-CertificateExpirationThreshold-OmaUri-Begin -->
-```Device
-./Device/Vendor/MSFT/DeclaredConfiguration/ManagementServiceConfiguration/CertificateExpirationThreshold
-```
-<!-- Device-ManagementServiceConfiguration-CertificateExpirationThreshold-OmaUri-End -->
-
-<!-- Device-ManagementServiceConfiguration-CertificateExpirationThreshold-Description-Begin -->
-<!-- Description-Source-DDF -->
-This node determines the number of minutes as near expiration check for certificate.
-<!-- Device-ManagementServiceConfiguration-CertificateExpirationThreshold-Description-End -->
-
-<!-- Device-ManagementServiceConfiguration-CertificateExpirationThreshold-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- Device-ManagementServiceConfiguration-CertificateExpirationThreshold-Editable-End -->
-
-<!-- Device-ManagementServiceConfiguration-CertificateExpirationThreshold-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | `int` |
-| Access Type | Add, Delete, Get, Replace |
-| Allowed Values | Range: `[0-4294967295]` |
-| Default Value  | 2880 |
-<!-- Device-ManagementServiceConfiguration-CertificateExpirationThreshold-DFProperties-End -->
-
-<!-- Device-ManagementServiceConfiguration-CertificateExpirationThreshold-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- Device-ManagementServiceConfiguration-CertificateExpirationThreshold-Examples-End -->
-
-<!-- Device-ManagementServiceConfiguration-CertificateExpirationThreshold-End -->
-
-<!-- Device-ManagementServiceConfiguration-RefreshInterval-Begin -->
-### ManagementServiceConfiguration/RefreshInterval
-
-<!-- Device-ManagementServiceConfiguration-RefreshInterval-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
-<!-- Device-ManagementServiceConfiguration-RefreshInterval-Applicability-End -->
-
-<!-- Device-ManagementServiceConfiguration-RefreshInterval-OmaUri-Begin -->
-```Device
-./Device/Vendor/MSFT/DeclaredConfiguration/ManagementServiceConfiguration/RefreshInterval
-```
-<!-- Device-ManagementServiceConfiguration-RefreshInterval-OmaUri-End -->
-
-<!-- Device-ManagementServiceConfiguration-RefreshInterval-Description-Begin -->
-<!-- Description-Source-DDF -->
-This node determines the number of minutes between refreshes.
-<!-- Device-ManagementServiceConfiguration-RefreshInterval-Description-End -->
-
-<!-- Device-ManagementServiceConfiguration-RefreshInterval-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- Device-ManagementServiceConfiguration-RefreshInterval-Editable-End -->
-
-<!-- Device-ManagementServiceConfiguration-RefreshInterval-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | `int` |
-| Access Type | Add, Delete, Get, Replace |
-| Allowed Values | Range: `[30-4294967295]` |
-| Default Value  | 240 |
-<!-- Device-ManagementServiceConfiguration-RefreshInterval-DFProperties-End -->
-
-<!-- Device-ManagementServiceConfiguration-RefreshInterval-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- Device-ManagementServiceConfiguration-RefreshInterval-Examples-End -->
-
-<!-- Device-ManagementServiceConfiguration-RefreshInterval-End -->
-
-<!-- Device-ManagementServiceConfiguration-StartSyncSessionOnFailure-Begin -->
-### ManagementServiceConfiguration/StartSyncSessionOnFailure
-
-<!-- Device-ManagementServiceConfiguration-StartSyncSessionOnFailure-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
-<!-- Device-ManagementServiceConfiguration-StartSyncSessionOnFailure-Applicability-End -->
-
-<!-- Device-ManagementServiceConfiguration-StartSyncSessionOnFailure-OmaUri-Begin -->
-```Device
-./Device/Vendor/MSFT/DeclaredConfiguration/ManagementServiceConfiguration/StartSyncSessionOnFailure
-```
-<!-- Device-ManagementServiceConfiguration-StartSyncSessionOnFailure-OmaUri-End -->
-
-<!-- Device-ManagementServiceConfiguration-StartSyncSessionOnFailure-Description-Begin -->
-<!-- Description-Source-DDF -->
-This node determines whether or not to start a sync session when failed to refresh.
-<!-- Device-ManagementServiceConfiguration-StartSyncSessionOnFailure-Description-End -->
-
-<!-- Device-ManagementServiceConfiguration-StartSyncSessionOnFailure-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- Device-ManagementServiceConfiguration-StartSyncSessionOnFailure-Editable-End -->
-
-<!-- Device-ManagementServiceConfiguration-StartSyncSessionOnFailure-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | `bool` |
-| Access Type | Add, Delete, Get, Replace |
-| Default Value  | false |
-<!-- Device-ManagementServiceConfiguration-StartSyncSessionOnFailure-DFProperties-End -->
-
-<!-- Device-ManagementServiceConfiguration-StartSyncSessionOnFailure-AllowedValues-Begin -->
-**Allowed values**:
-
-| Value | Description |
-|:--|:--|
-| true | Start a sync session when failed to refresh. |
-| false (Default) | Don't start a sync session when failed to refresh. |
-<!-- Device-ManagementServiceConfiguration-StartSyncSessionOnFailure-AllowedValues-End -->
-
-<!-- Device-ManagementServiceConfiguration-StartSyncSessionOnFailure-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- Device-ManagementServiceConfiguration-StartSyncSessionOnFailure-Examples-End -->
-
-<!-- Device-ManagementServiceConfiguration-StartSyncSessionOnFailure-End -->
 
 <!-- DeclaredConfiguration-CspMoreInfo-Begin -->
 <!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->

@@ -4,7 +4,7 @@ description: View the XML file containing the device description framework (DDF)
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 09/13/2023
+ms.date: 09/27/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -31,7 +31,7 @@ The following XML file contains the device description framework (DDF) for the D
       <AccessType>
         <Get />
       </AccessType>
-      <Description>Insert Description Here</Description>
+      <Description>The Declared Configuration CSP (Configuration Service Provider) allows the OMA-DM server to provide the device with the complete collection of setting names and associated values based on a specified scenario. The Declared Configuration stack on the device is responsible for handling the configuration request along with maintaining its state including updates to the scenario. It also provides the means to retrieve a scenario’s settings from the device. The configuration request and settings retrieval request are performed asynchronously, freeing up the server’s worker thread to do other useful work. The subsequent results can be retrieved through Declared Configuration’s result nodes.</Description>
       <DFFormat>
         <node />
       </DFFormat>
@@ -58,7 +58,7 @@ The following XML file contains the device description framework (DDF) for the D
           <Delete />
           <Get />
         </AccessType>
-        <Description>Insert Description Here</Description>
+        <Description>The Host internal node indicates that the target of the configuration request or inventory request is the host OS. This node is for scope in case enclaves are ever targeted for configuration.</Description>
         <DFFormat>
           <node />
         </DFFormat>
@@ -80,7 +80,7 @@ The following XML file contains the device description framework (DDF) for the D
             <Delete />
             <Get />
           </AccessType>
-          <Description>Insert Description Here</Description>
+          <Description>This internal node indicates that the configuration has discrete settings values and is self-contained with complete setting and value pairs that do not contain placeholders that the need to be resolved later with additional data. The request is ready to be processed as is.</Description>
           <DFFormat>
             <node />
           </DFFormat>
@@ -102,7 +102,7 @@ The following XML file contains the device description framework (DDF) for the D
               <Delete />
               <Get />
             </AccessType>
-            <Description>Insert Description Here</Description>
+            <Description>The Documents node indicates that the configuration is in the form of a document, which is a collection of settings used to configure a scenario by the Declared Configuration stack.</Description>
             <DFFormat>
               <node />
             </DFFormat>
@@ -125,7 +125,7 @@ The following XML file contains the device description framework (DDF) for the D
                 <Delete />
                 <Get />
               </AccessType>
-              <Description>Insert Description Here</Description>
+              <Description>Uniquely identifies the configuration document. No other document can have this id. The Id should be a GUID.</Description>
               <DFFormat>
                 <node />
               </DFFormat>
@@ -155,7 +155,7 @@ The following XML file contains the device description framework (DDF) for the D
                   <Get />
                   <Replace />
                 </AccessType>
-                <Description>Insert Description Here</Description>
+                <Description>The Document node's value is an XML based document containing a collection of settings and values to configure the specified scenario. The Declared Configuration stack verifies the syntax of the document, the stack marks the document to be processed asynchronously by the client. The stack then returns control back to the OMA-DM service. The stack, in turn, asynchronously processes the request. Below is an example of a specified desired state configuration using the Declared Configuration URI ./Device/Vendor/MSFT/DeclaredConfiguration/Host/Complete/Documents/27FEA311-68B9-4320-9FC4-296F6FDFAFE2/Document</Description>
                 <DFFormat>
                   <chr />
                 </DFFormat>
@@ -180,7 +180,7 @@ The following XML file contains the device description framework (DDF) for the D
                   <Delete />
                   <Get />
                 </AccessType>
-                <Description>Insert Description Here</Description>
+                <Description>The Properties node encapsulates the list of properties that apply to the specified document referenced by [DocID].</Description>
                 <DFFormat>
                   <node />
                 </DFFormat>
@@ -204,7 +204,7 @@ The following XML file contains the device description framework (DDF) for the D
                     <Replace />
                   </AccessType>
                   <DefaultValue>0</DefaultValue>
-                  <Description>Insert Description Here</Description>
+                  <Description>The Abandoned node allows the OMA-DM server to indicate that the document is no longer managed.</Description>
                   <DFFormat>
                     <int />
                   </DFFormat>
@@ -220,11 +220,11 @@ The following XML file contains the device description framework (DDF) for the D
                   <MSFT:AllowedValues ValueType="ENUM">
                     <MSFT:Enum>
                       <MSFT:Value>0</MSFT:Value>
-                      <MSFT:ValueDescription>Insert Description Here</MSFT:ValueDescription>
+                      <MSFT:ValueDescription>The document is no longer managed.</MSFT:ValueDescription>
                     </MSFT:Enum>
                     <MSFT:Enum>
                       <MSFT:Value>1</MSFT:Value>
-                      <MSFT:ValueDescription>Insert Description Here</MSFT:ValueDescription>
+                      <MSFT:ValueDescription>The document is managed.</MSFT:ValueDescription>
                     </MSFT:Enum>
                   </MSFT:AllowedValues>
                 </DFProperties>
@@ -238,7 +238,7 @@ The following XML file contains the device description framework (DDF) for the D
             <AccessType>
               <Get />
             </AccessType>
-            <Description>Insert Description Here</Description>
+            <Description>The Results node indicates that this is part of the URI path that will return an XML document containing the results of the configuration request.</Description>
             <DFFormat>
               <node />
             </DFFormat>
@@ -259,7 +259,7 @@ The following XML file contains the device description framework (DDF) for the D
               <AccessType>
                 <Get />
               </AccessType>
-              <Description>Insert Description Here</Description>
+              <Description>Uniquely identifies the configuration document in which results of the configuration request will be returned.</Description>
               <DFFormat>
                 <node />
               </DFFormat>
@@ -283,7 +283,7 @@ The following XML file contains the device description framework (DDF) for the D
                 <AccessType>
                   <Get />
                 </AccessType>
-                <Description>Insert Description Here</Description>
+                <Description>The Document node's value is an XML based document containing a collection of setting results from the configuration request specified by [DocId].</Description>
                 <DFFormat>
                   <chr />
                 </DFFormat>
@@ -309,7 +309,7 @@ The following XML file contains the device description framework (DDF) for the D
             <Delete />
             <Get />
           </AccessType>
-          <Description>Insert Description Here</Description>
+          <Description>The Inventory internal node indicates that this is an inventory request. The setting values to be retrieved are specified in an XML document through the Document leaf node.</Description>
           <DFFormat>
             <node />
           </DFFormat>
@@ -331,7 +331,7 @@ The following XML file contains the device description framework (DDF) for the D
               <Delete />
               <Get />
             </AccessType>
-            <Description>Insert Description Here</Description>
+            <Description>The Documents node indicates that the inventory request is in the form of a document, which is a collection of settings used to retrieve their values.</Description>
             <DFFormat>
               <node />
             </DFFormat>
@@ -354,7 +354,7 @@ The following XML file contains the device description framework (DDF) for the D
                 <Delete />
                 <Get />
               </AccessType>
-              <Description>Insert Description Here</Description>
+              <Description>Uniquely identifies the inventory document. No other document can have this id. The Id should be a GUID.</Description>
               <DFFormat>
                 <node />
               </DFFormat>
@@ -384,7 +384,7 @@ The following XML file contains the device description framework (DDF) for the D
                   <Get />
                   <Replace />
                 </AccessType>
-                <Description>Insert Description Here</Description>
+                <Description>The Document node's value is an XML based document containing a collection of settings that will be used to retrieve their values. The Declared Configuration stack verifies the syntax of the document, the stack marks the document to be processed asynchronously by the client. The stack then returns control back to the OMA-DM service. The stack, in turn, asynchronously processes the request. Below is an example of a specified desired state configuration using the Declared Configuration URI ./Device/Vendor/MSFT/DeclaredConfiguration/Host/Inventory/Documents/27FEA311-68B9-4320-9FC4-296F6FDFAFE2/Document</Description>
                 <DFFormat>
                   <chr />
                 </DFFormat>
@@ -409,7 +409,7 @@ The following XML file contains the device description framework (DDF) for the D
             <AccessType>
               <Get />
             </AccessType>
-            <Description>Insert Description Here</Description>
+            <Description>The Results node indicates that this is part of the URI path that will return an XML document containing the results of the inventory request.</Description>
             <DFFormat>
               <node />
             </DFFormat>
@@ -430,7 +430,7 @@ The following XML file contains the device description framework (DDF) for the D
               <AccessType>
                 <Get />
               </AccessType>
-              <Description>Insert Description Here</Description>
+              <Description>Uniquely identifies the inventory document. No other document can have this id. The Id should be a GUID.</Description>
               <DFFormat>
                 <node />
               </DFFormat>
@@ -454,7 +454,7 @@ The following XML file contains the device description framework (DDF) for the D
                 <AccessType>
                   <Get />
                 </AccessType>
-                <Description>Insert Description Here</Description>
+                <Description>The Document node's value is an XML based document containing a collection of setting results from the inventory request specified by [DocId].</Description>
                 <DFFormat>
                   <chr />
                 </DFFormat>
@@ -471,119 +471,6 @@ The following XML file contains the device description framework (DDF) for the D
             </Node>
           </Node>
         </Node>
-      </Node>
-    </Node>
-    <Node>
-      <NodeName>ManagementServiceConfiguration</NodeName>
-      <DFProperties>
-        <AccessType>
-          <Get />
-        </AccessType>
-        <Description>Configuration settings for WinDC behavior</Description>
-        <DFFormat>
-          <node />
-        </DFFormat>
-        <Occurrence>
-          <One />
-        </Occurrence>
-        <Scope>
-          <Permanent />
-        </Scope>
-        <DFType>
-          <DDFName />
-        </DFType>
-      </DFProperties>
-      <Node>
-        <NodeName>RefreshInterval</NodeName>
-        <DFProperties>
-          <AccessType>
-            <Add />
-            <Delete />
-            <Get />
-            <Replace />
-          </AccessType>
-          <DefaultValue>240</DefaultValue>
-          <Description>This node determines the number of minutes between refreshes.</Description>
-          <DFFormat>
-            <int />
-          </DFFormat>
-          <Occurrence>
-            <One />
-          </Occurrence>
-          <Scope>
-            <Dynamic />
-          </Scope>
-          <DFType>
-            <MIME />
-          </DFType>
-          <MSFT:AllowedValues ValueType="Range">
-            <MSFT:Value>[30-4294967295]</MSFT:Value>
-          </MSFT:AllowedValues>
-        </DFProperties>
-      </Node>
-      <Node>
-        <NodeName>StartSyncSessionOnFailure</NodeName>
-        <DFProperties>
-          <AccessType>
-            <Add />
-            <Delete />
-            <Get />
-            <Replace />
-          </AccessType>
-          <DefaultValue>false</DefaultValue>
-          <Description>This node determines whether or not to start a sync session when failed to refresh.</Description>
-          <DFFormat>
-            <bool />
-          </DFFormat>
-          <Occurrence>
-            <One />
-          </Occurrence>
-          <Scope>
-            <Dynamic />
-          </Scope>
-          <DFType>
-            <MIME />
-          </DFType>
-          <MSFT:AllowedValues ValueType="ENUM">
-            <MSFT:Enum>
-              <MSFT:Value>true</MSFT:Value>
-              <MSFT:ValueDescription>Start a sync session when failed to refresh.</MSFT:ValueDescription>
-            </MSFT:Enum>
-            <MSFT:Enum>
-              <MSFT:Value>false</MSFT:Value>
-              <MSFT:ValueDescription>Do not start a sync session when failed to refresh.</MSFT:ValueDescription>
-            </MSFT:Enum>
-          </MSFT:AllowedValues>
-          <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
-        </DFProperties>
-      </Node>
-      <Node>
-        <NodeName>CertificateExpirationThreshold</NodeName>
-        <DFProperties>
-          <AccessType>
-            <Add />
-            <Delete />
-            <Get />
-            <Replace />
-          </AccessType>
-          <DefaultValue>2880</DefaultValue>
-          <Description>This node determines the number of minutes as near expiration check for certificate.</Description>
-          <DFFormat>
-            <int />
-          </DFFormat>
-          <Occurrence>
-            <One />
-          </Occurrence>
-          <Scope>
-            <Dynamic />
-          </Scope>
-          <DFType>
-            <MIME />
-          </DFType>
-          <MSFT:AllowedValues ValueType="Range">
-            <MSFT:Value>[0-4294967295]</MSFT:Value>
-          </MSFT:AllowedValues>
-        </DFProperties>
       </Node>
     </Node>
   </Node>
