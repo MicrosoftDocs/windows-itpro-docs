@@ -1,16 +1,16 @@
 ---
-title: Declared Configuration Extensibility
-description: Learn more about Declared Configuration extensibility through native WMI providers.
-ms.date: 09/11/2023
+title: Declared configuration extensibility
+description: Learn more about declared configuration extensibility through native WMI providers.
+ms.date: 09/26/2023
 ms.topic: how-to
 ---
 
-# Declared Configuration Extensibility Providers
+# Declared configuration extensibility providers
 
-The Declared Configuration enrollment supporting the Declared Configuration client stack, offers Extensibility through native WMI providers. This feature instantiates and interfaces with a Windows Management Instrumentation (WMI) provider that has implemented an MI interface. The interface must implement GetTargetResource, TestTargetResource, and SetTargetResource methods, and may implement any number of string properties.
+The declared configuration enrollment, which supports the declared configuration client stack, offers extensibility through native WMI providers. This feature instantiates and interfaces with a Windows Management Instrumentation (WMI) provider that has implemented a management infrastructure (MI) interface. The interface must implement GetTargetResource, TestTargetResource, and SetTargetResource methods, and may implement any number of string properties.
 
 > [!NOTE]
-> Only string properties are currently supported by Extensibility providers.
+> Only string properties are currently supported by extensibility providers.
 
 ```mof
 [static, Description ("Get resource state based on input configuration file." )]
@@ -47,14 +47,14 @@ uint32 SetTargetResource(
 );
 ```
 
-## Author DSC resources
+## Author desired state configuration resources
 
-To create a native WMI provider, follow the steps outlined in [How to Implement an MI Provider](/previous-versions/windows/desktop/wmi_v2/how-to-implement-an-mi-provider). These steps include generating the source code for MI interface using `Convert-MofToProvider.exe` tool to generate the DLL and prepare it for placement.
+To create a native WMI provider, follow the steps outlined in [How to implement an MI provider](/previous-versions/windows/desktop/wmi_v2/how-to-implement-an-mi-provider). These steps include how to generate the source code for an MI interface using the `Convert-MofToProvider.exe` tool to generate the DLL and prepare it for placement.
 
-1. Create a MOF file that defines the schema for DSC resource including parameters and methods. This file includes the required parameters for the resource.
+1. Create a MOF file that defines the schema for the desired state configuration resource including parameters and methods. This file includes the required parameters for the resource.
 2. Copy the schema MOF file along with any required files into the provider tools directory, for example: ProviderGenerationTool.
 3. Edit the required files and include the correct file names and class names.
-4. Invoke the provider generator tool to generate provider's project files.
+4. Invoke the provider generator tool to generate the provider's project files.
 5. Copy the generated files into the provider's project folder.
 6. Start the development process.
 
@@ -64,7 +64,7 @@ This example provides more details about each step to demonstrate how to impleme
 
 ### Step 1: Create the resource schema MOF file
 
-Create a sample schema MOF file used to generate the initial source code for the `MSFT_FileDirectoryConfiguration` native resource and place it in the project directory named `MSFT_FileDirectoryConfiguration`.
+Create a sample schema MOF file used to generate the initial source code for the `MSFT_FileDirectoryConfiguration` native resource. Place it in the project directory named `MSFT_FileDirectoryConfiguration`.
 
 ```mof
 #pragma include ("cim_schema_2.26.0.mof")
@@ -126,11 +126,11 @@ class MSFT_FileDirectoryConfiguration : OMI_BaseResource
 
 > [!NOTE]
 >
-> - Class name and DLL file name should be the same; as defined in `Provider.DEF` file.
-> - The type qualifier, `[Key]`, on a property indicates that this property will uniquely identify the resource instance. At least one `[Key]` property is required.
-> - The `[Required]` qualifier indicates that the property is required (a value must be specified in any configuration script that uses this resource).
-> - The `[write]` qualifier indicates that this property is optional when using the custom resource in a configuration script. The `[read]` qualifier indicates that a property cannot be set by a configuration, and is for reporting purposes only.
-> - `[Values]` qualifier restricts the values that can be assigned to the property to the list of values defined in `[ValueMap]`. For more information, see [ValueMap and Value Qualifiers](/windows/win32/wmisdk/value-map).
+> - The class name and DLL file name should be the same, as defined in the `Provider.DEF` file.
+> - The type qualifier `[Key]` on a property indicates that it uniquely identifies the resource instance. At least one `[Key]` property is required.
+> - The `[Required]` qualifier indicates that the property is required. In other words, a value must be specified in any configuration script that uses this resource.
+> - The `[write]` qualifier indicates that the property is optional when using the custom resource in a configuration script. The `[read]` qualifier indicates that a property can't be set by a configuration, and is for reporting purposes only.
+> - The `[Values]` qualifier restricts the values that can be assigned to the property. Define the list of allowed values in `[ValueMap]`. For more information, see [ValueMap and value qualifiers](/windows/win32/wmisdk/value-map).
 > - Any new MOF file should include the following lines at the top of the file:
 >
 >     ```mof
@@ -145,25 +145,25 @@ class MSFT_FileDirectoryConfiguration : OMI_BaseResource
 
 Copy these required files and folders to the project directory you created in step 1:
 
-- CIM-2.26.0
-- codegen.cmd
-- Convert-MofToProvider.exe
-- MSFT_Credential.mof
-- MSFT_DSCResource.mof
-- OMI_BaseResource.mof
-- OMI_Errors.mof
-- Provider.DEF
-- wmicodegen.dll
+- `CIM-2.26.0`
+- `codegen.cmd`
+- `Convert-MofToProvider.exe`
+- `MSFT_Credential.mof`
+- `MSFT_DSCResource.mof`
+- `OMI_BaseResource.mof`
+- `OMI_Errors.mof`
+- `Provider.DEF`
+- `wmicodegen.dll`
 
-For more information on how to obtain the required files, see [How to Implement an MI Provider](/previous-versions/windows/desktop/wmi_v2/how-to-implement-an-mi-provider).
+For more information on how to obtain the required files, see [How to implement an MI provider](/previous-versions/windows/desktop/wmi_v2/how-to-implement-an-mi-provider).
 
 ### Step 3: Edit the required files
 
 Modify the following files in the project directory:
 
-- MSFT_FileDirectoryConfiguration.mof: This is the file that was created in step 1.
-- Provider.DEF: This file contains the DLL name, for example, `MSFT_FileDirectoryConfiguration.dll`.
-- codegen.cmd: This file contains the command to invoke `convert-moftoprovider.exe`.
+- `MSFT_FileDirectoryConfiguration.mof`: You created this file in step 1.
+- `Provider.DEF`: This file contains the DLL name, for example, `MSFT_FileDirectoryConfiguration.dll`.
+- `codegen.cmd`: This file contains the command to invoke `convert-moftoprovider.exe`.
 
     ```cmd
     "convert-moftoprovider.exe" ^
@@ -177,73 +177,75 @@ Modify the following files in the project directory:
        -OutPath temp
     ```
 
-### Step 4: Invoke the provider generator tool
+### Step 4: Run the provider generator tool
 
-Run `codegen.cmd`, which invokes the `convert-moftoprovider.exe` command. Alternatively, you can run the command directly.
+Run `codegen.cmd`, which runs the `convert-moftoprovider.exe` command. Alternatively, you can run the command directly.
 
-### Step 5: Copy generated source files
+### Step 5: Copy the generated source files
 
-Copy the generated files from the `temp` folder that was specified with `-OutPath` parameter in the command from step 3 to the project directory you created in step 1.
+The command in step 3 specifies the `-OutPath` parameter, which in this example is a folder named `temp`. When you run the tool in step 4, it creates new files in this folder. Copy the generated files from this `temp` folder to the project directory. You created the project directory in step 1, which in this example is `MSFT_FileDirectoryConfiguration`.
 
 > [!NOTE]
-> With each update to the schema MOF file, `codegen.cmd` script to regenerate the source files must be executed again, which overwrites the source files if they exist. To prevent this, this example uses a temporary folder. It is best to minimize the updates to the schema MOF file since the main implementation should be merged with the most recent auto-generated source files.
+> Any time you update the schema MOF file, run the `codegen.cmd` script to regenerate the source files. Rerunning the generator tool overwrites any existing the source files. To prevent this behavior, this example uses a temporary folder. Minimize updates to the schema MOF file since the main implementation should be merged with the most recent auto-generated source files.
 
-### About MSFT_FileDirectoryConfiguration resource
+### About the `MSFT_FileDirectoryConfiguration` resource
 
-After you run the provider generator tool, several source and header files are created, including:
+After you run the provider generator tool, it creates several source and header files:
 
-- MSFT_FileDirectoryConfiguration.c
-- MSFT_FileDirectoryConfiguration.h
-- module.c
-- schema.c
-- WMIAdapter.c
+- `MSFT_FileDirectoryConfiguration.c`
+- `MSFT_FileDirectoryConfiguration.h`
+- `module.c`
+- `schema.c`
+- `WMIAdapter.c`
 
-From this list, only `MSFT_FileDirectoryConfiguration.c` and `MSFT_FileDirectoryConfiguration.h` need modifications. The extension for the source files can be changed from `c` to `cpp` too (which is the case for this resource). The business logic for this resource is implemented in `MSFT_FileDirectoryConfigurationImp.cpp` and `MSFT_FileDirectoryConfigurationImp.h`. These new files are added to the MSFT_FileDirectoryConfiguration directory after the provider generator tool was invoked.
+From this list, you only need to modify `MSFT_FileDirectoryConfiguration.c` and `MSFT_FileDirectoryConfiguration.h`. You can also change the extension for the source files from `.c` to `.cpp`, which is the case for this resource. The business logic for this resource is implemented in `MSFT_FileDirectoryConfigurationImp.cpp` and `MSFT_FileDirectoryConfigurationImp.h`. These new files are added to the `MSFT_FileDirectoryConfiguration` project directory after you run the provider generator tool.
 
-There are three auto-generated functions in MSFT_FileDirectoryConfiguration.cpp that must be implemented for a native DSC resource:
+For a native desired state configuration resource, you have to implement three autogenerated functions in `MSFT_FileDirectoryConfiguration.cpp`:
 
-- MSFT_FileDirectoryConfiguration_Invoke_GetTargetResource
-- MSFT_FileDirectoryConfiguration_Invoke_TestTargetResource
-- MSFT_FileDirectoryConfiguration_Invoke_SetTargetResource
+- `MSFT_FileDirectoryConfiguration_Invoke_GetTargetResource`
+- `MSFT_FileDirectoryConfiguration_Invoke_TestTargetResource`
+- `MSFT_FileDirectoryConfiguration_Invoke_SetTargetResource`
 
-From these three functions, only MSFT_FileDirectoryConfiguration_Invoke_GetTargetResource is required for a Get scenario. MSFT_FileDirectoryConfiguration_Invoke_TestTargetResource and MSFT_FileDirectoryConfiguration_Invoke_SetTargetResource are used when remediation is needed. Besides these three functions, there are several other auto-generated functions in MSFT_FileDirectoryConfiguration.cpp that don't need implementation for a native DSC resource and should be left as-is.
+From these three functions, only `MSFT_FileDirectoryConfiguration_Invoke_GetTargetResource` is required for a Get scenario. `MSFT_FileDirectoryConfiguration_Invoke_TestTargetResource` and `MSFT_FileDirectoryConfiguration_Invoke_SetTargetResource` are used when remediation is needed.
 
-- MSFT_FileDirectoryConfiguration_Load
-- MSFT_FileDirectoryConfiguration_Unload
-- MSFT_FileDirectoryConfiguration_EnumerateInstances
-- MSFT_FileDirectoryConfiguration_GetInstance
-- MSFT_FileDirectoryConfiguration_CreateInstance
-- MSFT_FileDirectoryConfiguration_ModifyInstance
-- MSFT_FileDirectoryConfiguration_DeleteInstance
+There are several other autogenerated functions in `MSFT_FileDirectoryConfiguration.cpp` that don't need implementation for a native desired state configuration resource. You don't need to modify the following functions:
 
-### About MSFT_FileDirectoryConfiguration_Invoke_GetTargetResource
+- `MSFT_FileDirectoryConfiguration_Load`
+- `MSFT_FileDirectoryConfiguration_Unload`
+- `MSFT_FileDirectoryConfiguration_EnumerateInstances`
+- `MSFT_FileDirectoryConfiguration_GetInstance`
+- `MSFT_FileDirectoryConfiguration_CreateInstance`
+- `MSFT_FileDirectoryConfiguration_ModifyInstance`
+- `MSFT_FileDirectoryConfiguration_DeleteInstance`
 
-MSFT_FileDirectoryConfiguration_Invoke_GetTargetResource function performs these steps to complete its task:
+### About `MSFT_FileDirectoryConfiguration_Invoke_GetTargetResource`
+
+The `MSFT_FileDirectoryConfiguration_Invoke_GetTargetResource` function does the following steps to complete its task:
 
 1. Validate the input resource.
 1. Ensure the keys and required parameters are present.
-1. Create a resource instance that is used as the output of the Get method. This instance is of type **MSFT_FileDirectoryConfiguration**, which is derived from **MI_Instance**.
+1. Create a resource instance that is used as the output of the Get method. This instance is of type `MSFT_FileDirectoryConfiguration`, which is derived from `MI_Instance`.
 1. Create the output resource instance from the modified resource instance and return it to the MI client by calling these functions:
 
-    - MSFT_FileDirectoryConfiguration_GetTargetResource_Construct
-    - MSFT_FileDirectoryConfiguration_GetTargetResource_SetPtr_OutputResource
-    - MSFT_FileDirectoryConfiguration_GetTargetResource_Set_MIReturn
-    - MSFT_FileDirectoryConfiguration_GetTargetResource_Post
-    - MSFT_FileDirectoryConfiguration_GetTargetResource_Destruct
+    - `MSFT_FileDirectoryConfiguration_GetTargetResource_Construct`
+    - `MSFT_FileDirectoryConfiguration_GetTargetResource_SetPtr_OutputResource`
+    - `MSFT_FileDirectoryConfiguration_GetTargetResource_Set_MIReturn`
+    - `MSFT_FileDirectoryConfiguration_GetTargetResource_Post`
+    - `MSFT_FileDirectoryConfiguration_GetTargetResource_Destruct`
 
 1. Clean up resources, for example, free allocated memory.
 
 ## MI implementation references
 
-- [Introducing new Management Infrastructure (MI) API](https://blogs.msdn.microsoft.com/wmi/2013/05/16/introducing-new-management-infrastructure-mi-api/)
-- [Implementing MI Provider (1) - Overview](https://blogs.msdn.microsoft.com/wmi/2013/05/08/implementing-mi-provider-1-overview/)
-- [Implementing MI Provider (2) - Define Schema](https://blogs.msdn.microsoft.com/wmi/2013/05/08/implementing-mi-provider-2-define-schema/)
-- [Implementing MI Provider (3) - Generate Code](https://blogs.msdn.microsoft.com/wmi/2013/05/11/implementing-mi-provider-3-generate-code/)
-- [Implementing MI Provider (4) - Generate Code (continue)](https://blogs.msdn.microsoft.com/wmi/2013/12/28/implementing-mi-provider-4-generate-code-continute/)
-- [Implementing MI Provider (5) - Implement](https://blogs.msdn.microsoft.com/wmi/2013/12/28/implementing-mi-provider-5-implement/)
-- [Implementing MI Provider (6) - Build, Register, and Debug](https://blogs.msdn.microsoft.com/wmi/2013/12/28/implementing-mi-provider-6-build-register-and-debug/)
-- [MI Interfaces](/previous-versions/windows/desktop/wmi_v2/mi-interfaces)
-- [MI Datatypes](/previous-versions/windows/desktop/wmi_v2/mi-datatypes)
-- [MI Structures and Unions](/previous-versions/windows/desktop/wmi_v2/mi-structures-and-unions)
-- [MI_Result Enumeration](/windows/win32/api/mi/ne-mi-mi_result)
-- [MI_Type Enumeration](/windows/win32/api/mi/ne-mi-mi_type)
+- [Introducing the management infrastructure (MI) API](/archive/blogs/wmi/introducing-new-management-infrastructure-mi-api)
+- [Implementing MI provider (1) - Overview](/archive/blogs/wmi/implementing-mi-provider-1-overview)
+- [Implementing MI provider (2) - Define schema](/archive/blogs/wmi/implementing-mi-provider-2-define-schema)
+- [Implementing MI provider (3) - Generate code](/archive/blogs/wmi/implementing-mi-provider-3-generate-code)
+- [Implementing MI provider (4) - Generate code (continue)](/archive/blogs/wmi/implementing-mi-provider-4-generate-code-continute)
+- [Implementing MI provider (5) - Implement](/archive/blogs/wmi/implementing-mi-provider-5-implement)
+- [Implementing MI provider (6) - Build, register, and debug](/archive/blogs/wmi/implementing-mi-provider-6-build-register-and-debug)
+- [MI interfaces](/previous-versions/windows/desktop/wmi_v2/mi-interfaces)
+- [MI datatypes](/previous-versions/windows/desktop/wmi_v2/mi-datatypes)
+- [MI structures and unions](/previous-versions/windows/desktop/wmi_v2/mi-structures-and-unions)
+- [MI_Result enumeration (mi.h)](/windows/win32/api/mi/ne-mi-mi_result)
+- [MI_Type enumeration (mi.h)](/windows/win32/api/mi/ne-mi-mi_type)

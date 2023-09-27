@@ -4,7 +4,7 @@ description: Learn more about the DeclaredConfiguration CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 09/13/2023
+ms.date: 09/27/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -20,13 +20,16 @@ ms.topic: reference
 
 <!-- DeclaredConfiguration-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-The Primary MDM Management device management model is one where the MDM server is solely responsible for orchestration and continuous maintenance of the state of the device for configuration scenarios. This results in intensive network traffic and high network latency due to the synchronous configuration model based on the OMA-DM Syncml standard. It's also error-prone given that the server needs intimate knowledge of client handling of configuration.
+The primary MDM model is one where the MDM server is solely responsible for orchestration and continuous maintenance of the state of the device for configuration scenarios. This behavior results in intensive network traffic and high network latency due to the synchronous configuration model based on the OMA-DM Syncml standard. It's also error-prone given that the server needs deep knowledge of the client.
 
-The new Declared Configuration device management model requires the server to deliver all the setting values to the device for the scenario configuration, in batch, asynchronously through the client Declared Configuration CSP.
+The declared configuration device management model requires the server to deliver all the setting values to the device for the scenario configuration. The server sends them asynchronously in batches through the client declared configuration CSP.
 
-- During the client initiated OMA-DM session, the Declared Configuration server sends a configuration or an inventory Declared Configuration document to the client through the [Declared Configuration CSP URI](#declared-configuration-oma-uri). If the device verifies the syntax of the document is correct, the client stack pushes the request to its orchestrator to be processed asynchronously. The client stack then exits, returning control back to Declared Configuration service allowing the device to asynchronously process the request.
-- On the client, if there are any requests in process or completed, a [generic alert](#declared-configuration-generic-alert) is sent to the server summing up each document status, state, progress. This summation is sent on every client HTTP request to the Declared Configuration OMA-DM server.
-- The Declared Configuration server uses the Alert to determine which requests are completed successfully or with errors. The server can then synchronously retrieve the Declared Configuration document process results through the [Declared Configuration CSP URI](#declared-configuration-oma-uri).
+- During the client-initiated OMA-DM session, the declared configuration server sends a configuration or an inventory declared configuration document to the client through the [Declared Configuration CSP URI](#declared-configuration-oma-uri). If the device verifies the syntax of the document is correct, the client stack pushes the request to its orchestrator to process the request asynchronously. The client stack then exits, and returns control back to the declared configuration service. This behavior allows the device to asynchronously process the request.
+
+- On the client, if there are any requests in process or completed, it sends a [generic alert](#declared-configuration-generic-alert) to the server. This alert summarizes each document's status, state, and progress. Every client HTTPS request to the declared configuration OMA-DM server includes this summary.
+
+- The declared configuration server uses the generic alert to determine which requests are completed successfully or with errors. The server can then synchronously retrieve the declared configuration document process results through the [Declared Configuration CSP URI](#declared-configuration-oma-uri).
+
 <!-- DeclaredConfiguration-Editable-End -->
 
 <!-- DeclaredConfiguration-Tree-Begin -->
@@ -115,7 +118,7 @@ The following list shows the DeclaredConfiguration configuration service provide
 
 <!-- Device-Host-Complete-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-The Server to Client flow of the Complete request, is the same as an Inventory request.
+The server to client flow of the **Complete** request is the same as an **Inventory** request.
 <!-- Device-Host-Complete-Editable-End -->
 
 <!-- Device-Host-Complete-DFProperties-Begin -->
@@ -471,7 +474,7 @@ The Server to Client flow of the Complete request, is the same as an Inventory r
 
 <!-- Device-Host-Inventory-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-The Server to Client flow of the Inventory request, is the same as the Complete request.
+The server to client flow of the **Inventory** request is the same as the **Complete** request.
 <!-- Device-Host-Inventory-Editable-End -->
 
 <!-- Device-Host-Inventory-DFProperties-Begin -->
@@ -892,26 +895,26 @@ This node determines whether or not to start a sync session when failed to refre
 
 <!-- DeclaredConfiguration-CspMoreInfo-Begin -->
 <!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
-## Declared Configuration OMA URI
+## Declared configuration OMA URI
 
-A Declared Configuration request is sent using an OMA-URI similar to `./Device/Vendor/MSFT/DeclaredConfiguration/Host/[Complete|Inventory]/Documents/{DocID}/Document`.
+A declared configuration request is sent using an OMA-URI similar to `./Device/Vendor/MSFT/DeclaredConfiguration/Host/[Complete|Inventory]/Documents/{DocID}/Document`.
 
-- The URI is prefixed with a targeted scope. The target of the scenario settings can only be device wide for Extensibility. The scope should be "Device".
-- `{DocID}` is a unique identifier for the desired state of the configuration scenario. Every document must have a ID, which must be a GUID.
-- The request can be a Configuration request, Inventory or Complete.
+- The URI is prefixed with a targeted scope. The target of the scenario settings can only be device wide for extensibility. The scope should be `Device`.
+- `{DocID}` is a unique identifier for the desired state of the configuration scenario. Every document must have an ID, which must be a GUID.
+- The request can be a **Configuration**, **Inventory**, or **Complete** request.
 
-Example URI for a Complete request: `./Device/Vendor/MSFT/DeclaredConfiguration/Host/Complete/Documents/27FEA311-68B9-4320-9FC4-296F6FDFAFE2/Document`
+The following URI is an example of a **Complete** request: `./Device/Vendor/MSFT/DeclaredConfiguration/Host/Complete/Documents/27FEA311-68B9-4320-9FC4-296F6FDFAFE2/Document`
 
-## DeclaredConfiguration Document XML
+## DeclaredConfiguration document XML
 
-The value of the leaf node Document is an XML document describing the request. The actual processing of the request pivots around the `osdefinedscenario` tag:
+The value of the leaf node `Document` is an XML document that describes the request. The actual processing of the request pivots around the `osdefinedscenario` tag:
 
-- **MSFTExtensibilityMIProviderConfig**: Used to configure MI Provider settings.
-- **MSFTExtensibilityMIProviderInventory**:  Used to retrieve MI Provider setting values.
+- `MSFTExtensibilityMIProviderConfig`: Used to configure MI provider settings.
+- `MSFTExtensibilityMIProviderInventory`:  Used to retrieve MI provider setting values.
 
-The DeclaredConfiguration CSP will synchronously validate the batch of settings described by the `<DeclaredConfiguration>` element, which represents the Declared Configuration document. It checks for correct syntax based on the Declared Configuration XML schema. If there's a syntax error, the CSP returns an error immediately back to the server as part of the current OMA-DM session. If the syntax check passes, then the request is passed on to a Windows service to attempt the desired state configuration of the specified scenario, asynchronously, freeing up the server to do other work thus the low latency of the new Declared Configuration protocol. The Windows client service, the orchestrator, is responsible for driving the configuration of the device based on the server supplied desire state, and to maintain it throughout its lifetime, until it's removed or modified by the server.
+The DeclaredConfiguration CSP synchronously validates the batch of settings described by the `<DeclaredConfiguration>` element, which represents the declared configuration document. It checks for correct syntax based on the declared configuration XML schema. If there's a syntax error, the CSP returns an error immediately back to the server as part of the current OMA-DM session. If the syntax check passes, then the request is passed on to a Windows service. The Windows service asynchronously attempts the desired state configuration of the specified scenario. This process frees up the server to do other work thus the low latency of this  declared configuration protocol. The Windows client service, the orchestrator, is responsible for driving the configuration of the device based on the server supplied desire state. The service also maintains this state throughout its lifetime, until the server removes or modifies it.
 
-Here's an example that uses the built-in native MI provider **MSFT_FileDirectoryConfiguration** with the OS defined scenario **MSFTExtensibilityMIProviderConfig**.
+The following example uses the built-in, native MI provider `MSFT_FileDirectoryConfiguration` with the OS-defined scenario `MSFTExtensibilityMIProviderConfig`:
 
 ```xml
 <DeclaredConfiguration schema="1.0" context="Device" id="27FEA311-68B9-4320-9FC4-296F6FDFAFE2" checksum="99925209110918B67FE962460137AA3440AFF4DB6ABBE15C8F499682457B9999" osdefinedscenario="MSFTExtensibilityMIProviderConfig">
@@ -922,7 +925,7 @@ Here's an example that uses the built-in native MI provider **MSFT_FileDirectory
 </DeclaredConfiguration>
 ```
 
-The standard OMA-DM SyncML syntax is used to specify the DeclaredConfiguration CSP operations such as Replace, Set, and Delete. The payload of the SyncML's `<Data>` element must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use [CDATA Section](http://www.w3.org/TR/REC-xml/#sec-cdata-sect) as shown in this example.
+The standard OMA-DM SyncML syntax is used to specify the DeclaredConfiguration CSP operations such as **Replace**, **Set**, and **Delete**. The payload of the SyncML's `<Data>` element must be XML-encoded. For this XML encoding, there are various online encoders that you can use. To avoid encoding the payload, you can use [CDATA Section](https://www.w3.org/TR/REC-xml/#sec-cdata-sect) as shown in the following example:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -951,48 +954,48 @@ The standard OMA-DM SyncML syntax is used to specify the DeclaredConfiguration C
 
 ### DeclaredConfiguration XML document tags
 
-Both MSFTExtensibilityMIProviderConfig and MSFTExtensibilityMIProviderInventory OS defined scenarios require the same tags and attributes.
+Both `MSFTExtensibilityMIProviderConfig` and `MSFTExtensibilityMIProviderInventory` are OS-defined scenarios that require the same tags and attributes.
 
-- `<DeclaredConfiguration>` XML tag specifies the details of the Declared Configuration document to process. The document could be part of a configuration request or an inventory request. The Declared Configuration CSP has two URIs to allow the specification of a configuration or an inventory request.
-
-    This tag has the following attributes:
-
-    | Attribute | Description |
-    |--|--|
-    | schema | The schema version of the xml. Currently `1.0`. |
-    | context | States that this document is targeting the device. The value should be `Device`. |
-    | id | The unique identifier of the document set by the server. This should be a GUID. |
-    | checksum | This is the server supplied version of the document. |
-    | osdefinedscenario | The named scenario that is to be configured with the given configuration data. In case of Extensibility, the scenario is either MSFTExtensibilityMIProviderConfig or MSFTExtensibilityMIProviderInventory. |
-
-- `<DSC>` XML tag describes the targeted WMI provider expressed by a namespace and classname along with the values either to be applied to the device or queried by the MI provider.
+- The `<DeclaredConfiguration>` XML tag specifies the details of the declared configuration document to process. The document could be part of a configuration request or an inventory request. The DeclaredConfiguration CSP has two URIs to allow the specification of a configuration or an inventory request.
 
     This tag has the following attributes:
 
     | Attribute | Description |
     |--|--|
-    | namespace | Specifies the targeted MI Provider namespace. |
-    | classname | The targeted MI provider. |
+    | `schema` | The schema version of the xml. Currently `1.0`. |
+    | `context` | States that this document is targeting the device. The value should be `Device`. |
+    | `id` | The unique identifier of the document set by the server. This value should be a GUID. |
+    | `checksum` | This value is the server-supplied version of the document. |
+    | `osdefinedscenario` | The named scenario that the client should configure with the given configuration data. For  extensibility, the scenario is either `MSFTExtensibilityMIProviderConfig` or `MSFTExtensibilityMIProviderInventory`. |
 
-- `<Key>` XML tag describes the required parameter name and value (only need value for configuration). The name is an attribute and the value is `<Key>` content.
-
-    This tag has the following attributes:
-
-    | Attribute | Description |
-    |--|--|
-    | name | Specifies the name of a MI Provider parameter. |
-
-- `<Value>` XML tag describes the non-required parameter name and value (only need value for configuration). The name is an attribute and the value is `<Value>` content.
+- The `<DSC>` XML tag describes the targeted WMI provider expressed by a namespace and class name along with the values either to be applied to the device or queried by the MI provider.
 
     This tag has the following attributes:
 
     | Attribute | Description |
     |--|--|
-    | name | Specifies the name of a MI Provider parameter. |
+    | `namespace` | Specifies the targeted MI provider namespace. |
+    | `classname` | The targeted MI provider. |
 
-## Declared Configuration generic alert
+- The `<Key>` XML tag describes the required parameter name and value. It only needs a value for configuration. The name is an attribute and the value is `<Key>` content.
 
-On every client response to the server's request, the client constructs a Declared Configuration alert summing up the state of each of the documents that the Windows service has processed. Here's an example alert:
+    This tag has the following attributes:
+
+    | Attribute | Description |
+    |--|--|
+    | `name` | Specifies the name of an MI provider parameter. |
+
+- The `<Value>` XML tag describes the optional parameter name and value. It only needs a value for configuration. The name is an attribute and the value is `<Value>` content.
+
+    This tag has the following attributes:
+
+    | Attribute | Description |
+    |--|--|
+    | `name` | Specifies the name of an MI provider parameter. |
+
+## Declared configuration generic alert
+
+On every client response to the server's request, the client constructs a declared configuration alert. This alert summarizes the state of each of the documents that the Windows service has processed. The following XML is an example alert:
 
 ```xml
 <Alert>
@@ -1015,7 +1018,9 @@ On every client response to the server's request, the client constructs a Declar
 </Alert>
 ```
 
-In this example, there's one Declared Configuration document listed in the Alert summary. The Alert summary lists every document that is being processed by the client stack be it a configuration or inventory request. It describes the context of the document that specifies the scope of how the document is applied. The value should be "Device". The "state" attribute has a value of 60, which indicates that the document was processed successfully. Other state values are:
+In this example, there's one declared configuration document listed in the alert summary. The alert summary lists every document that the client stack is processing, either a configuration or inventory request. It describes the context of the document that specifies the scope of how the document is applied. The **context** value should be `Device`.
+
+The **state** attribute has a value of `60`, which indicates that the document was processed successfully. The following class defines the other state values:
 
 ```csharp
 enum class DCCSPURIState :unsigned long
@@ -1049,7 +1054,7 @@ enum class DCCSPURIState :unsigned long
 
 ## SyncML examples
 
-- Retrieve the results of Configuration or Inventory Request:
+- Retrieve the results of a configuration or inventory request:
 
     ```xml
     <SyncML xmlns="SYNCML:SYNCML1.1">
@@ -1099,7 +1104,7 @@ enum class DCCSPURIState :unsigned long
     </Results>
     ```
 
-- Replace a Configuration or Inventory Request
+- Replace a configuration or inventory request
 
     ```xml
     <SyncML xmlns="SYNCML:SYNCML1.1">
@@ -1152,7 +1157,7 @@ enum class DCCSPURIState :unsigned long
     </Results>
     ```
 
-- Abandon a Configuration or Inventory Request: This results in the document being tracked but not be reapplied. The Alert has the "Abandoned" property set to 1 to indicate that the document is no longer managed by the Declared Configuration server.
+- Abandon a configuration or inventory request. This process results in the client tracking the document but not reapplying it. The alert has the `Abandoned` property set to `1`, which indicates that the document is no longer managed by the declared configuration server.
 
     ```xml
     <SyncML xmlns="SYNCML:SYNCML1.1">
@@ -1175,7 +1180,7 @@ enum class DCCSPURIState :unsigned long
     </SyncML>
     ```
 
-- Deletion of Configuration or Inventory Request: The SyncML deletion of the document will only remove the document but the Extensibility settings remain tattooed.
+- Deletion of configuration or inventory request. The SyncML deletion of the document only removes the document but any extensibility settings persist on the device (tattoo).
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
