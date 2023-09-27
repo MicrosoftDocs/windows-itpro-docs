@@ -4,8 +4,10 @@ description: Learn how Windows passwordless experience enables your organization
 ms.collection: 
   - highpri
   - tier1
-ms.date: 09/11/2023
+ms.date: 09/27/2023
 ms.topic: how-to
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
 ---
 
 # Windows passwordless experience
@@ -36,7 +38,7 @@ Windows passwordless experience has the following requirements:
 
 - Windows 11, version 22H2 with [KB5030310][KB-1] or later
 - Microsoft Entra joined
-- Windows Hello for Busines credentials enrolled for the user, or a FIDO2 security key
+- Windows Hello for Business credentials enrolled for the user, or a FIDO2 security key
 - MDM-managed: Microsoft Intune or other MDM solution
 
 >[!NOTE]

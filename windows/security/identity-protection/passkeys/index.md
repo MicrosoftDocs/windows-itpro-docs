@@ -5,7 +5,7 @@ ms.collection:
 - highpri
 - tier1
 ms.topic: article
-ms.date: 09/06/2023
+ms.date: 09/27/2023
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
@@ -26,7 +26,7 @@ This article describes how to create and use passkeys on Windows devices.
 
 Microsoft has long been a founding member of the FIDO Alliance and has helped to define and use passkeys natively within a platform authenticator like Windows Hello. Passkeys utilize the FIDO industry security standard, which is adopted by all major platforms. Leading technology companies like Microsoft are backing passkeys as part of the FIDO Alliance, and numerous websites and apps are integrating support for passkeys.
 
-The FIDO protocols rely on standard public/private key cryptography techniques to offer more secure authentication. When a user registers with an online service, their client device generates a new key pair. The private key is stored securely on the users device, while the public key is registered with the service. To authenticate, the client device must prove that it possesses the private key by signing a challenge. The private keys can only be used after they're unlocked by the user using the Windows Hello unlock factor (biometrics or PIN).
+The FIDO protocols rely on standard public/private key cryptography techniques to offer more secure authentication. When a user registers with an online service, their client device generates a new key pair. The private key is stored securely on the user's device, while the public key is registered with the service. To authenticate, the client device must prove that it possesses the private key by signing a challenge. The private keys can only be used after they're unlocked by the user using the Windows Hello unlock factor (biometrics or PIN).
 
 FIDO protocols prioritize user privacy, as they're designed to prevent online services from sharing information or tracking users across different services. Additionally, any biometric information used in the authentication process remains on the user's device and isn't transmitted across the network or to the service.
 
