@@ -38,7 +38,7 @@ Windows passwordless experience has the following requirements:
 
 - Windows 11, version 22H2 with [KB5030310][KB-1] or later
 - Microsoft Entra joined
-- Windows Hello for Busines credentials enrolled for the user, or a FIDO2 security key
+- Windows Hello for Business credentials enrolled for the user, or a FIDO2 security key
 - MDM-managed: Microsoft Intune or other MDM solution
 
 >[!NOTE]
