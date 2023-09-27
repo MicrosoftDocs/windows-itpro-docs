@@ -4,8 +4,10 @@ description: Learn how Windows passwordless experience enables your organization
 ms.collection: 
   - highpri
   - tier1
-ms.date: 09/11/2023
+ms.date: 09/27/2023
 ms.topic: how-to
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
 ---
 
 # Windows passwordless experience
