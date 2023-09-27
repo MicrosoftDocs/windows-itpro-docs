@@ -37,11 +37,11 @@ The following table lists the BitLocker policies applicable to all drive types, 
 
 |Policy name| CSP | GPO |
 |-|-|-|
-|[Allow Standard User Encryption](#allow-standard-user-encryption)|✅|❌|
-|[Allow Suspension Of BitLocker Protection](#allow-suspension-of-bitlocker-protection)|✅|❌|
+|[Allow standard user encryption](#allow-standard-user-encryption)|✅|❌|
+|[Allow suspension of BitLocker protection](#allow-suspension-of-bitlocker-protection)|✅|❌|
 |[Choose default folder for recovery password](#choose-default-folder-for-recovery-password)|❌|✅|
 |[Choose drive encryption method and cipher strength](#choose-drive-encryption-method-and-cipher-strength)|✅|✅|
-|[Configure Recovery Password Rotation](#configure-recovery-password-rotation)|✅|❌|
+|[Configure recovery password rotation](#configure-recovery-password-rotation)|✅|❌|
 |[Disable new DMA devices when this computer is locked](#disable-new-dma-devices-when-this-computer-is-locked)|❌|✅|
 |[Prevent memory overwrite on restart](#prevent-memory-overwrite-on-restart)|❌|✅|
 |[Provide the unique identifiers for your organization](#provide-the-unique-identifiers-for-your-organization)|✅|✅|

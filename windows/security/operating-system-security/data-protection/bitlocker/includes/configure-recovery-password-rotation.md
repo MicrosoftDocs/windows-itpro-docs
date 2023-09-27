@@ -16,10 +16,10 @@ Possible values are:
 - `2`: numeric recovery password rotation upon use is *on* for both Microsoft Entra joined devices and Microsoft Entra hybrid joined devices
 
 > [!NOTE]
-> The Policy is effective only when Micropsoft Entra ID or Active Directory back up for recovery password is configured to *required*
+> The Policy is effective only when Micropsoft Entra ID or Active Directory backup for recovery password is configured to *required*
 >
-> - For OS drive: enable "Do not enable BitLocker until recovery information is stored to AD DS for operating system drives"
-> - For Fixed drives: enable "Do not enable BitLocker until recovery information is stored to AD DS for fixed data drives"
+> - For OS drive: enable *Do not enable BitLocker until recovery information is stored to AD DS for operating system drives*
+> - For fixed drives: enable "*Do not enable BitLocker until recovery information is stored to AD DS for fixed data drives*
 
 |  | Path |
 |--|--|
