@@ -21,7 +21,6 @@ The benefit of the declared configuration desired state model is that it's effic
 
 [Mobile Device Enrollment Protocol version 2](/openspecs/windows_protocols/ms-mde2/4d7eadd5-3951-4f1c-8159-c39e07cbe692) describes enrollment including discovery, which covers the primary and declared configuration enrollments. The device uses the following new [DMClient CSP](mdm/dmclient-csp.md) policies for declared configuration dual enrollment:
 
-- [LinkedEnrollment/Priority](mdm/dmclient-csp.md#deviceproviderprovideridlinkedenrollmentpriority) <!-- should be removed in final DDF -->
 - [LinkedEnrollment/Enroll](mdm/dmclient-csp.md#deviceproviderprovideridlinkedenrollmentenroll)
 - [LinkedEnrollment/Unenroll](mdm/dmclient-csp.md#deviceproviderprovideridlinkedenrollmentunenroll)
 - [LinkedEnrollment/EnrollStatus](mdm/dmclient-csp.md#deviceproviderprovideridlinkedenrollmentenrollstatus)
