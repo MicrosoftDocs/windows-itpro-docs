@@ -7,10 +7,15 @@ ms.topic: include
 
 ### Require device encryption
 
-This policy setting determines whether BitLocker is required on a drive.\
-If you disable the policy, BitLocker isn't turned off for the system drive, but it stops prompting the user to turn BitLocker on.
+This policy setting determines whether BitLocker is required:
 
-Encryptable fixed data volumes are treated similarly to OS volumes. However, fixed data volumes must meet other criteria to be considered encryptable:
+- If enabled, encryption is triggered on all drives silently or non-silently based on [Allow warning for other disk encryption](../policy-settings.md?tabs=os#allow-warning-for-other-disk-encryption) policy
+- If disabled, BitLocker isn't turned off for the system drive, but it stops prompting the user to turn BitLocker on.
+
+> [!NOTE]
+> Typically, BitLocker follows the [Choose drive encryption method and cipher strength](../policy-settings.md?tabs=os#choose-drive-encryption-method-and-cipher-strength) policy configuration. However, this policy setting will be ignored for self-encrypting fixed drives and self-encrypting OS drives.
+
+Encryptable fixed data volumes are treated similarly to OS volumes, but they must meet other criteria to be encryptable:
 
 - It must not be a dynamic volume
 - It must not be a recovery partition

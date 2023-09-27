@@ -77,7 +77,7 @@ The following table lists the BitLocker policies applicable to all drive types, 
 |[Enable use of BitLocker authentication requiring preboot keyboard input on slates](#enable-use-of-bitlocker-authentication-requiring-preboot-keyboard-input-on-slates)|✅|✅|
 |[Enforce drive encryption type on operating system drives](#enforce-drive-encryption-type-on-operating-system-drives)|✅|✅|
 |[Require additional authentication at startup](#require-additional-authentication-at-startup)|✅|✅|
-|[Require Device Encryption](#require-device-encryption)|✅|❌|
+|[Require device encryption](#require-device-encryption)|✅|❌|
 |[Reset platform validation data after BitLocker recovery](#reset-platform-validation-data-after-bitlocker-recovery)|❌|✅|
 |[Use enhanced Boot Configuration Data validation profile](#use-enhanced-boot-configuration-data-validation-profile)|❌|✅|
 
