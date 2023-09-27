@@ -27,3 +27,5 @@ This policy setting allows you to turn off Copilot in Windows. If you enable thi
 ## Related articles
 
 - [Welcome to Copilot in Windows](https://support.microsoft.com/windows/welcome-to-copilot-in-windows-675708af-8c16-4675-afeb-85a5a476ccb0)
+
+- [Copilot in Windows: Your data and privacy](https://support.microsoft.com/windows/copilot-in-windows-your-data-and-privacy-3e265e82-fc76-4d0a-afc0-4a0de528b73a)
