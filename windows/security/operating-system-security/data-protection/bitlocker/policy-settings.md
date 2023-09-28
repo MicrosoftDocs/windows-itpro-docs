@@ -20,7 +20,7 @@ If multiple changes are necessary to bring the drive into compliance, BitLocker 
 In other scenarios, to bring the drive into compliance with a change in policy settings, BitLocker may need to be disabled and the drive decrypted followed by re-enabling BitLocker and then re-encrypting the drive. An example of this scenario is when the BitLocker encryption method or cipher strength is changed. The [`manage-bde`](/windows-server/administration/windows-commands/manage-bde) command-line can also be used in this scenario to help bring the device into compliance.
 
 > [!IMPORTANT]
-> Most of the BitLocker settings are applied when BitLocker is initially turned on for a drive. Encryption isn't restarted if settings change.
+> Most of the BitLocker policy settings are enforced when BitLocker is initially turned on for a drive. Encryption isn't restarted if settings change.
 
 ## Settings list
 
