@@ -60,7 +60,7 @@ An Active Directory Domain Services (AD DS) protector can also be used for prote
 
 BitLocker encryption is available for disks before these disks are added to a cluster storage pool.
 > [!NOTE]
-> The advantage of The Bitlocker encryption can even be made available for disks after they are added to a cluster storage pool.
+> The advantage of The BitLocker encryption can even be made available for disks after they are added to a cluster storage pool.
 The advantage of encrypting volumes prior to adding them to a cluster is that the disk resource need not be suspended to complete the operation.
 To turn on BitLocker for a disk before adding it to a cluster:
 

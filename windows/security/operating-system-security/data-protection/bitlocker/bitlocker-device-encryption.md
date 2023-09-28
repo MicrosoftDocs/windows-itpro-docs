@@ -1,5 +1,5 @@
 ---
-title: Overview of BitLocker Device Encryption in Windows
+title: Overview of BitLocker Device Encryption
 description: This article provides an overview of how BitLocker Device Encryption can help protect data on devices running Windows.
 ms.collection: 
   - highpri
