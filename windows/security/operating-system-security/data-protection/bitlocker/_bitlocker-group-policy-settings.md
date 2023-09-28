@@ -12,8 +12,6 @@ ms.date: 11/08/2022
 
 ### Configure minimum PIN length for startup
 
-
-
 This policy setting is applied when BitLocker is turned on. The startup PIN must have a minimum length of four digits and can have a maximum length of 20 digits.
 
 Originally, BitLocker allowed a length from 4 to 20 characters for a PIN. Windows Hello has its own PIN for sign-in, length of which can be 4 to 127 characters. Both BitLocker and Windows Hello use the TPM to prevent PIN brute-force attacks.
@@ -62,39 +60,7 @@ This policy setting is used to require, allow, or deny the use of smart cards wi
 > [!NOTE]
 > These settings are enforced when turning on BitLocker, not when unlocking a drive. BitLocker allows unlocking a drive with any of the protectors that are available on the drive.
 
-### Configure use of passwords on removable data drives
 
-This policy setting is used to require, allow, or deny the use of passwords with removable data drives.
-
-|  Item  | Info |
-|:---|:---|
-|**Policy description**|With this policy setting, it can be specified whether a password is required to unlock BitLocker-protected removable data drives.|
-|**Drive type**|Removable data drives|
-|**Policy path**|*Computer Configuration* > *Administrative Templates* > *Windows Components* > *BitLocker Drive Encryption* > *Removable Data Drives*|
-|**Conflicts**|To use password complexity, the **Password must meet complexity requirements** policy setting, which is located at **Computer Configuration\Windows Settings\Security Settings\Account Policies\Password Policy** must also be enabled.|
-|**When enabled**|Users can configure a password that meets the defined requirements. To require the use of a password, select **Require password for removable data drive**. To enforce complexity requirements on the password, select **Require complexity**.|
-|**When disabled**|The user isn't allowed to use a password.|
-|**When not configured**|Passwords are supported with the default settings, which don't include password complexity requirements and require only eight characters.|
-
-#### Reference: Configure use of passwords on removable data drives
-
-If use of passwords is allowed, requiring a password to be used, enforcement of password complexity requirements, and password minimum length can all be configured. For the complexity requirement setting to be effective, the group policy setting **Password must meet complexity requirements**, which is located at *Computer Configuration* > *Windows Settings* > *Security Settings* > *Account Policies* > *Password Policy*, must also be enabled.
-
-> [!NOTE]
-> These settings are enforced when turning on BitLocker, not when unlocking a drive. BitLocker allows unlocking a drive with any of the protectors that are available on the drive.
-
-Passwords must be at least eight characters. To configure a greater minimum length for the password, enter the wanted number of characters in the **Minimum password length** box.
-
-When set to **Require complexity**, a connection to a domain controller is necessary when BitLocker is enabled to validate the complexity of the password.
-
-When set to **Allow complexity**, a connection to a domain controller is attempted to validate that the complexity adheres to the rules set by the policy. However, if no domain controllers are found, the password is still be accepted regardless of actual password complexity and the drive is encrypted by using that password as a protector.
-
-When set to **Do not allow complexity**, no password complexity validation is done.
-
-> [!NOTE]
-> Passwords can't be used if FIPS compliance is enabled. The **System cryptography: Use FIPS-compliant algorithms for encryption, hashing, and signing** policy setting in **Computer Configuration** > **Windows Settings** > **Security Settings** > **Local Policies** > **Security Options** specifies whether FIPS compliance is enabled.
-
-For information about this setting, see [System cryptography: Use FIPS-compliant algorithms for encryption, hashing, and signing](../../../threat-protection/security-policy-settings/system-cryptography-use-fips-compliant-algorithms-for-encryption-hashing-and-signing.md).
 
 ### Enable use of BitLocker authentication requiring preboot keyboard input on slates
 

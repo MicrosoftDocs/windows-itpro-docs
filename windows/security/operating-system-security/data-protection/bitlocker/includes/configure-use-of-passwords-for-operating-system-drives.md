@@ -7,22 +7,20 @@ ms.topic: include
 
 ### Configure use of passwords for operating system drives
 
-This policy controls how non-TPM based systems utilize the password protector. Used with the **Password must meet complexity requirements** policy, this policy allows administrators to require password length and complexity for using the password protector. By default, passwords must be eight characters in length. Complexity configuration options determine how important domain connectivity is for the client. For the strongest password security, administrators should choose **Require password complexity** because it requires domain connectivity, and it requires that the BitLocker password meets the same password complexity requirements as domain sign-in passwords.
+This policy setting specifies the constraints for passwords used to unlock BitLocker-protected operating system drives. If non-TPM protectors are allowed on operating system drives, you can provision a password, enforce complexity requirements, and configure a minimum length.
 
-For the complexity requirement setting to be effective, the policy *Password must meet complexity requirements*, which is located at **Computer Configuration** > **Windows Settings** > **Security Settings** > **Account Policies** > **Password Policy**, must be also enabled.
+> [!IMPORTANT]
+> For the complexity requirement setting to be effective, the group policy setting **Password must meet complexity requirements*** located in **Computer Configuration** > **Windows Settings** > **Security Settings** > **Account Policies** > **Password Policy**, must be also enabled.
 
-> [!NOTE]
-> These settings are enforced when turning on BitLocker, not when unlocking a volume. BitLocker allows unlocking a drive with any of the protectors that are available on the drive.
+If you enable this policy setting, users can configure a password that meets the requirements you define. To enforce complexity requirements on the password, select **Require complexity**:
 
-When set to **Require complexity**, a connection to a domain controller is necessary when BitLocker is enabled to validate the complexity the password. When set to **Allow complexity**, a connection to a domain controller is attempted to validate that the complexity adheres to the rules set by the policy. If no domain controllers are found, the password will be accepted regardless of actual password complexity, and the drive will be encrypted by using that password as a protector. When set to **Do not allow complexity**, there's no password complexity validation.
+- When set to **Require complexity** a connection to a domain controller is necessary when BitLocker is enabled to validate the complexity the password
+- When set to **Allow complexity** connection to a domain controller will be attempted to validate the complexity adheres to the rules set by the policy, but if no domain controllers are found the password will still be accepted regardless of actual password complexity and the drive will be encrypted using that password as a protector
+- When set to **Do not allow complexity**, password complexity isn't validated
 
-Passwords must be at least eight characters. To configure a greater minimum length for the password, enter the desired number of characters in the **Minimum password length** box.
+Passwords must be at least 8 characters. To configure a greater minimum length for the password, specify the desired number of characters under **Minimum password length**
 
-When this policy setting is enabled, the option **Configure password complexity for operating system drives** can be set to:
-
-- Allow password complexity
-- Deny password complexity
-- Require password complexity
+If you disable or do not configure this policy setting, the default length constraint of 8 characters applies to operating system drive passwords and no complexity checks occur.
 
 > [!IMPORTANT]
 > Passwords can't be used if FIPS-compliance is enabled.
