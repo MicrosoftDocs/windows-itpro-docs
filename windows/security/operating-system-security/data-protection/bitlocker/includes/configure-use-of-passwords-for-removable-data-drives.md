@@ -10,7 +10,7 @@ ms.topic: include
 This policy setting specifies whether a password is required to unlock BitLocker-protected removable data drives. If you choose to allow the use of a password, you can require that a password be used, enforce complexity requirements, and configure a minimum length.
 
 > [!IMPORTANT]
-> For the complexity requirement setting to be effective, the group policy setting **Password must meet complexity requirements*** located in **Computer Configuration** > **Windows Settings** > **Security Settings** > **Account Policies** > **Password Policy**, must be also enabled.
+> For the complexity requirement setting to be effective, the group policy setting **Password must meet complexity requirements** located in **Computer Configuration** > **Windows Settings** > **Security Settings** > **Account Policies** > **Password Policy**, must be also enabled.
 
 If you enable this policy setting, users can configure a password that meets the requirements you define. To enforce complexity requirements on the password, select **Require complexity**:
 

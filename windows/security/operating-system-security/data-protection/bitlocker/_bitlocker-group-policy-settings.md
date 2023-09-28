@@ -196,32 +196,6 @@ The encryption algorithm that is used by hardware-based encryption is set when t
 - Advanced Encryption Standard (AES) 128 in Cipher Block Chaining (CBC) mode OID: 2.16.840.1.101.3.4.1.2
 - AES 256 in CBC mode OID: 2.16.840.1.101.3.4.1.42
 
-### Configure use of hardware-based encryption for operating system drives
-
-This policy controls how BitLocker reacts when encrypted drives are used as operating system drives. Using hardware-based encryption can improve the performance of drive operations that involve frequent reading or writing of data to the drive.
-
-|  Item  | Info |
-|:---|:---|
-|**Policy description**|This policy setting allows management of BitLocker's use of hardware-based encryption on operating system drives and specifies which encryption algorithms it can use with hardware-based encryption.|
-|**Drive type**|Operating system drives|
-|**Policy path**|*Computer Configuration* > *Administrative Templates* > *Windows Components* > *BitLocker Drive Encryption* > *Operating System Drives*|
-|**Conflicts**|None|
-|**When enabled**|Additional options can be specified that control whether BitLocker software-based encryption is used instead of hardware-based encryption on computers that don't support hardware-based encryption. It can also be specified to restrict the encryption algorithms and cipher suites that are used with hardware-based encryption.|
-|**When disabled**|BitLocker can't use hardware-based encryption with operating system drives, and BitLocker software-based encryption is used by default when the drive in encrypted.|
-|**When not configured**|BitLocker software-based encryption is used irrespective of hardware-based encryption ability.|
-
-#### Reference: Configure use of hardware-based encryption for operating system drives
-
-If hardware-based encryption isn't available, BitLocker software-based encryption is used instead.
-
-> [!NOTE]
-> The **Choose drive encryption method and cipher strength** policy setting doesn't apply to hardware-based encryption.
-
-The encryption algorithm that is used by hardware-based encryption is set when the drive is partitioned. By default, BitLocker uses the algorithm that is configured on the drive to encrypt the drive. The **Restrict encryption algorithms and cipher suites allowed for hardware-based encryption** option of this setting enables restriction of the encryption algorithms that BitLocker can use with hardware encryption. If the algorithm that is set for the drive isn't available, BitLocker disables the use of hardware-based encryption. Encryption algorithms are specified by object identifiers (OID), for example:
-
-- Advanced Encryption Standard (AES) 128 in Cipher Block Chaining (CBC) mode OID: 2.16.840.1.101.3.4.1.2
-- AES 256 in CBC mode OID: 2.16.840.1.101.3.4.1.42
-
 ### Configure use of hardware-based encryption for removable data drives
 
 This policy controls how BitLocker reacts to encrypted drives when they're used as removable data drives. Using hardware-based encryption can improve the performance of drive operations that involve frequent reading or writing of data to the drive.
