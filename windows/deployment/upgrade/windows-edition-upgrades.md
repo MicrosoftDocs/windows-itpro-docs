@@ -78,7 +78,29 @@ Use Windows Configuration Designer to create a provisioning package to upgrade a
   > [!div class="nextstepaction"]
   > [Download Windows Configuration Designer from the Microsoft Store](ms-windows-store://pdp/?ProductId=9NBLGGH4TX22)
 
-- To create a provisioning package for upgrading desktop editions of Windows 10, go to **Runtime settings &gt; EditionUpgrade &gt; UpgradeEditionWithProductKey** in the **Available customizations** panel in Windows ICD and enter the product key for the upgraded edition.
+To create a provisioning package for upgrading desktop editions of Windows:
+
+1. Open Windows Configuration Designer.
+
+1. Select **Advanced provisioning**.
+
+1. In the **New project** window that opens:
+
+    1. Under **Enter project details**, give the project a name and then select the **Next** button.
+
+    1. Under **Choose which settings to view and configure**, select **All Windows desktop editions** and then select the **Next** button.
+
+    1. Under **Import a provisioning package (optional)**, select the **Finish** button.
+
+1. Under **Available customizations**, expand **Runtime settings** > **EditionUpgrade** and then select **ChangeProductKey**.
+
+1. In the **EditionUpgrade/ChangeProductKey** pane, next to **ChangeProductKey**, enter the product key for the upgraded edition.
+
+1. Under the **File** menu, select **Save**.
+
+1. Under the **Export** menu, select **Provisioning package**.
+
+1. Step through the **Build** wizard to create the provisioning package, making sure to save the provisioning package to a known location.
 
 For more info about Windows Configuration Designer, see the following articles:
 
