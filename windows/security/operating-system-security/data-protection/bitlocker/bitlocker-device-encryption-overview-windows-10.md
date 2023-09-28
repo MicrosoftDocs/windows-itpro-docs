@@ -10,47 +10,17 @@ ms.date: 11/08/2022
 
 # Overview of BitLocker device encryption
 
-
-## Data Protection in Windows 11, Windows 10, and Windows 7
-
-The below table lists specific data-protection concerns and how they're addressed in Windows 11, Windows 10, and Windows 7.
-
-| Windows 7 | Windows 11 and Windows 10 |
-|---|---|
-| When BitLocker is used with a PIN to protect startup, PCs such as kiosks can't be restarted remotely. | Modern Windows devices are increasingly protected with BitLocker Device Encryption out of the box and support SSO to seamlessly protect the BitLocker encryption keys from cold boot attacks.<br><br>Network Unlock allows PCs to start automatically when connected to the internal network. |
-| When BitLocker is enabled, the provisioning process can take several hours. | BitLocker pre-provisioning, encrypting hard drives, and Used Space Only encryption allow administrators to enable BitLocker quickly on new computers. |
-| There's no support for using BitLocker with self-encrypting drives (SEDs). | BitLocker supports offloading encryption to encrypted hard drives. |
-| Administrators have to use separate tools to manage encrypted hard drives. | BitLocker supports encrypted hard drives with onboard encryption hardware built in, which allows administrators to use the familiar BitLocker administrative tools to manage them. |
-| Encrypting a new flash drive can take more than 20 minutes. | Used Space Only encryption in BitLocker To Go allows users to encrypt removable data drives in seconds. |
-| BitLocker could require users to enter a recovery key when system configuration changes occur. | BitLocker requires the user to enter a recovery key only when disk corruption occurs or when the PIN or password is lost. |
-| Users need to enter a PIN to start the PC, and then their password to sign in to Windows. | Modern Windows devices are increasingly protected with BitLocker Device Encryption out of the box and support SSO to help protect the BitLocker encryption keys from cold boot attacks. |
-
 ## Prepare for drive and file encryption
 
 The best type of security measures is transparent to the user during implementation and use. Every time there's a possible delay or difficulty because of a security feature, there's a strong likelihood that users will try to bypass security. This situation is especially true for data protection, and that's a scenario that organizations need to avoid. Whether planning to encrypt entire volumes, removable devices, or individual files, Windows 11 and Windows 10 meet these needs by providing streamlined, usable solutions. In fact, several steps can be taken in advance to prepare for data encryption and make the deployment quick and smooth.
 
-### TPM pre-provisioning
-
-In Windows 7, preparing the TPM offered a few challenges:
-
-- Turning on the TPM required going into the BIOS or UEFI firmware of the device. Turning on the TPM at the device requires someone to either physically go into the BIOS or UEFI firmware settings of the device to turn on the TPM, or to install a driver in Windows to turn on the TPM from within Windows.
-- When the TPM is enabled, it may require one or more restarts.
-
-This made preparing the TPM in Windows 7 problematic. If IT staff are provisioning new PCs, they can handle the required steps for preparing a TPM. However, if BitLocker needed to be enabled on devices that are already in users' hands, those users would probably struggle with the technical challenges. The user would then either call to IT for support or leave BitLocker disabled.
-
-Microsoft includes instrumentation in Windows 11 and Windows 10 that enable the operating system to fully manage the TPM. There's no need to go into the BIOS, and all scenarios that required a restart have been eliminated.
-
 ## Deploy hard drive encryption
 
-BitLocker is capable of encrypting entire hard drives, including both system and data drives. BitLocker pre-provisioning can drastically reduce the time required to provision new PCs with BitLocker enabled. With Windows 11 and Windows 10, administrators can turn on BitLocker and the TPM from within the Windows Pre-installation Environment before they install Windows or as part of an automated deployment task sequence without any user interaction. Combined with Used Disk Space Only encryption and a mostly empty drive (because Windows isn't yet installed), it takes only a few seconds to enable BitLocker.
-
-With earlier versions of Windows, administrators had to enable BitLocker after Windows had been installed. Although this process could be automated, BitLocker would need to encrypt the entire drive, a process that could take anywhere from several hours to more than a day depending on drive size and performance, which delayed deployment. Microsoft has improved this process through multiple features in Windows 11 and Windows 10.
+BitLocker is capable of encrypting entire hard drives, including both system and data drives. BitLocker pre-provisioning can drastically reduce the time required to provision new PCs with BitLocker enabled. Administrators can turn on BitLocker and the TPM from within the Windows Pre-installation Environment before they install Windows or as part of an automated deployment task sequence without any user interaction. Combined with Used Disk Space Only encryption and a mostly empty drive (because Windows isn't yet installed), it takes only a few seconds to enable BitLocker.
 
 ## BitLocker Device Encryption
 
-Beginning in Windows 8.1, Windows automatically enables BitLocker Device Encryption on devices that support Modern Standby. With Windows 11 and Windows 10, Microsoft offers BitLocker Device Encryption support on a much broader range of devices, including those devices that are Modern Standby, and devices that run Home edition of Windows 10 or Windows 11.
-
-Microsoft expects that most devices in the future will pass the requirements for BitLocker Device Encryption that will make BitLocker Device Encryption pervasive across modern Windows devices. BitLocker Device Encryption further protects the system by transparently implementing device-wide data encryption.
+Windows automatically enables BitLocker Device Encryption on devices that support Modern Standby.
 
 Unlike a standard BitLocker implementation, BitLocker Device Encryption is enabled automatically so that the device is always protected. The following list outlines how BitLocker Device Encryption is enabled automatically:
 
@@ -128,33 +98,4 @@ For more information about how to configure Network unlock feature, see [BitLock
 
 ## Microsoft BitLocker administration and monitoring
 
-Part of the Microsoft Desktop Optimization Pack, Microsoft BitLocker Administration and Monitoring (MBAM) makes it easier to manage and support BitLocker and BitLocker To Go. MBAM 2.5 with Service Pack 1, the latest version, has the following key features:
-
-- Enables administrators to automate the process of encrypting volumes on client computers across the enterprise.
-
-- Enables security officers to quickly determine the compliance state of individual computers or even of the enterprise itself.
-
-- Provides centralized reporting and hardware management with Microsoft Configuration Manager.
-
-- Reduces the workload on the help desk to assist end users with BitLocker recovery requests.
-
-- Enables end users to recover encrypted devices independently by using the Self-Service Portal.
-
-- Enables security officers to easily audit access to recovery key information.
-
-- Empowers Windows Enterprise users to continue working anywhere with the assurance that their corporate data is protected.
-
-- Enforces the BitLocker encryption policy options that are set for the enterprise.
-
-- Integrates with existing management tools, such as Microsoft Configuration Manager.
-
-- Offers an IT-customizable recovery user experience.
-
-- Supports Windows 11 and Windows 10.
-
-> [!IMPORTANT]
-> Enterprises could use MBAM to manage client computers with BitLocker that are domain-joined on-premises until mainstream support ended in July 2019, or they could receive extended support until April 2026.
-
-Going forward, the functionality of MBAM will be incorporated into Configuration Manager. For more information, see [Plan for BitLocker management](/mem/configmgr/protect/plan-design/bitlocker-management).
-
-Enterprises not using Configuration Manager can use the built-in features of Azure AD and Microsoft Intune for administration and monitoring. For more information, see [Monitor device encryption with Intune](/mem/intune/protect/encryption-monitor).
+Enterprises can use Configuration Manager or the built-in features of Azure AD and Microsoft Intune for BitLocker administration and monitoring. For more information, see [Monitor device encryption with Intune](/mem/intune/protect/encryption-monitor).
