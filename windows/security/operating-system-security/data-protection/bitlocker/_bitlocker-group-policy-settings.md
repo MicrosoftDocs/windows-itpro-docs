@@ -10,19 +10,6 @@ ms.date: 11/08/2022
 
 # BitLocker group policy settings
 
-### Configure minimum PIN length for startup
-
-This policy setting is applied when BitLocker is turned on. The startup PIN must have a minimum length of four digits and can have a maximum length of 20 digits.
-
-Originally, BitLocker allowed a length from 4 to 20 characters for a PIN. Windows Hello has its own PIN for sign-in, length of which can be 4 to 127 characters. Both BitLocker and Windows Hello use the TPM to prevent PIN brute-force attacks.
-
-The TPM can be configured to use Dictionary Attack Prevention parameters ([lockout threshold and lockout duration](../../../hardware-security/tpm/trusted-platform-module-services-group-policy-settings.md) to control how many failed authorizations attempts are allowed before the TPM is locked out, and how much time must elapse before another attempt can be made.
-
-The Dictionary Attack Prevention Parameters provide a way to balance security needs with usability. For example, when BitLocker is used with a TPM + PIN configuration, the number of PIN guesses is limited over time. A TPM 2.0 in this example could be configured to allow only 32 PIN guesses immediately, and then only one more guess every two hours. This number of attempts totals to a maximum of about 4415 guesses per year. If the PIN is four digits, all 9999 possible PIN combinations could be attempted in a little over two years.
-
-Increasing the PIN length requires a greater number of guesses for an attacker. In that case, the lockout duration between each guess can be shortened to allow legitimate users to retry a failed attempt sooner, while maintaining a similar level of protection.
-
-
 ### Enable use of BitLocker authentication requiring preboot keyboard input on slates
 
 |  Item  | Info |
@@ -47,65 +34,6 @@ If this policy setting isn't enabled, the following options in the **Require add
 - Configure TPM startup PIN: Required and Allowed
 - Configure TPM startup key and PIN: Required and Allowed
 - Configure use of passwords for operating system drives
-
-### Deny write access to fixed drives not protected by BitLocker
-
-This policy setting is used to require encryption of fixed drives prior to granting Write access.
-
-|  Item  | Info |
-|:---|:---|
-|**Policy description**|With this policy setting, it can be set whether BitLocker protection is required for fixed data drives to be writable on a computer.|
-|**Drive type**|Fixed data drives|
-|**Policy path**|*Computer Configuration* > *Administrative Templates* > *Windows Components* > *BitLocker Drive Encryption* > *Fixed Data Drives*|
-|**Conflicts**|See the Reference section for a description of conflicts.|
-|**When enabled**|All fixed data drives that aren't BitLocker-protected are mounted as Read-only. If the drive is protected by BitLocker, it's mounted with Read and Write access.|
-|**When disabled or not configured**|All fixed data drives on the computer are mounted with Read and Write access.|
-
-#### Reference: Deny write access to fixed drives not protected by BitLocker
-
-This policy setting is applied when BitLocker is turned on.
-
-Conflict considerations include:
-
-1. When this policy setting is enabled, users receive **Access denied** error messages when they try to save data to unencrypted fixed data drives. See the Reference section for additional conflicts.
-
-2. If `BdeHdCfg.exe` is run on a computer when this policy setting is enabled, the following issues could be encountered:
-
-    - If it was attempted to shrink a drive to create the system drive, the drive size is successfully reduced, and a raw partition is created. However, the raw partition isn't formatted. The following error message is displayed: **The new active drive cannot be formatted. You may need to manually prepare your drive for BitLocker.**
-
-    - If it was attempted to use unallocated space to create the system drive, a raw partition will be created. However, the raw partition won't be formatted. The following error message is displayed: **The new active drive cannot be formatted. You may need to manually prepare your drive for BitLocker.**
-
-    - If it was attempted to merge an existing drive into the system drive, the tool fails to copy the required boot file onto the target drive to create the system drive. The following error message is displayed: **BitLocker setup failed to copy boot files. You may need to manually prepare your drive for BitLocker.**
-
-3. If this policy setting is enforced, a hard drive can't be repartitioned because the drive is protected. If computers are being upgrading in an organization from a previous version of Windows, and those computers were configured with a single partition, the required BitLocker system partition should be created before applying this policy setting to the computers.
-
-### Deny write access to removable drives not protected by BitLocker
-
-This policy setting is used to require that removable drives are encrypted prior to granting Write access, and to control whether BitLocker-protected removable drives that were configured in another organization can be opened with Write access.
-
-|  Item  | Info |
-|:---|:---|
-|**Policy description**|With this policy setting, it can be configured whether BitLocker protection is required for a computer to be able to write data to a removable data drive.|
-|**Drive type**|Removable data drives|
-|**Policy path**|*Computer Configuration* > *Administrative Templates* > *Windows Components* > *BitLocker Drive Encryption* > *Removable Data Drives*|
-|**Conflicts**|See the Reference section for a description of conflicts.|
-|**When enabled**|All removable data drives that aren't BitLocker-protected are mounted as Read-only. If the drive is protected by BitLocker, it's mounted with Read and Write access.|
-|**When disabled or not configured**|All removable data drives on the computer are mounted with Read and Write access.|
-
-#### Reference: Deny write access to removable drives not protected by BitLocker
-
-If the **Deny write access to devices configured in another organization** option is selected, only drives with identification fields that match the computer's identification fields are given Write access. When a removable data drive is accessed, it's checked for a valid identification field and allowed identification fields. These fields are defined by the **Provide the unique identifiers for your organization** policy setting.
-
-> [!NOTE]
-> This policy setting can be overridden with the policy settings under **User Configuration** > **Administrative Templates** > **System** > **Removable Storage Access**. If the **Removable Disks: Deny write access** policy setting is enabled, this policy setting will be ignored.
-
-Conflict considerations include:
-
-1. Use of BitLocker with the TPM plus a startup key or with the TPM plus a PIN and startup key must be disallowed if the **Deny write access to removable drives not protected by BitLocker** policy setting is enabled.
-
-2. Use of recovery keys must be disallowed if the **Deny write access to removable drives not protected by BitLocker** policy setting is enabled.
-
-3. The **Provide the unique identifiers for your organization** policy setting must be enabled if Write access needs to be denied to drives that were configured in another organization.
 
 ### Configure the pre-boot recovery message and URL
 
