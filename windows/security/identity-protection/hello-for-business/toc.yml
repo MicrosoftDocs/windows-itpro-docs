@@ -4,8 +4,6 @@ items:
 - name: Concepts
   expanded: true
   items:
-  - name: Passwordless strategy
-    href: passwordless-strategy.md
   - name: Why a PIN is better than a password
     href: hello-why-pin-is-better-than-password.md
   - name: Windows Hello biometrics in the enterprise
@@ -112,6 +110,8 @@ items:
   items:
   - name: PIN reset
     href: hello-feature-pin-reset.md
+  - name: Windows Hello Enhanced Security Sign-in (ESS) 🔗
+    href: /windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security
   - name: Dual enrollment
     href: hello-feature-dual-enrollment.md  
   - name: Dynamic Lock
