@@ -7,14 +7,14 @@ ms.topic: include
 
 ### Enable use of BitLocker authentication requiring preboot keyboard input on slates
 
-This policy setting allows users to turn on authentication options that require user input from the pre-boot environment, even if the platform lacks pre-boot input capability. The Windows touch keyboard (such as that used by tablets) isn't available in the pre-boot environment where BitLocker requires additional information such as a PIN or Password.
+This policy setting allows users to turn on authentication options that require user input from the preboot environment, even if the platform lacks preboot input capability. The Windows touch keyboard (such as that used by tablets) isn't available in the preboot environment where BitLocker requires additional information such as a PIN or Password.
 
-- If you enable this policy setting, devices must have an alternative means of pre-boot input (such as an attached USB keyboard).
+- If you enable this policy setting, devices must have an alternative means of preboot input (such as an attached USB keyboard).
 - If this policy isn't enabled, the Windows Recovery Environment must be enabled on tablets to support the entry of the BitLocker recovery password.
 
 It's recommended that administrators enable this policy only for devices that are verified to have an alternative means of preboot input, such as attaching a USB keyboard.
 
-When the Windows Recovery Environment (WinRE) isn't enabled and this policy isn't enabled, BitLocker can't be turned on a device that uses the Windows touch keyboard.
+When the Windows Recovery Environment (WinRE) isn't enabled and this policy isn't enabled, BitLocker can't be turned on a device that uses a touch keyboard.
 
 If this policy setting isn't enabled, the following options in the **Require additional authentication at startup** policy might not be available:
 

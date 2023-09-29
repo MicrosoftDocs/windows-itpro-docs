@@ -9,10 +9,10 @@ ms.topic: include
 
 This policy setting allows you to configure whether Secure Boot is allowed as the platform integrity provider for BitLocker operating system drives.
 
-Secure Boot ensures that the device's pre-boot environment only loads firmware that is digitally signed by authorized software publishers.
+Secure Boot ensures that the device's preboot environment only loads firmware that is digitally signed by authorized software publishers.
 
 - If you enable or don't configure this policy setting, BitLocker uses Secure Boot for platform integrity if the platform is capable of Secure Boot-based integrity validation
-- If you disable this policy setting, BitLocker will use legacy platform integrity validation, even on systems capable of Secure Boot-based integrity validation
+- If you disable this policy setting, BitLocker uses legacy platform integrity validation, even on systems capable of Secure Boot-based integrity validation
 
 When this policy is enabled and the hardware is capable of using Secure Boot for BitLocker scenarios, the *[Use enhanced Boot Configuration Data validation profile](../policy-settings.md?tabs=os#use-enhanced-boot-configuration-data-validation-profile)* policy setting is ignored and Secure Boot verifies BCD settings according to the Secure Boot policy setting, which is configured separately from BitLocker.
 

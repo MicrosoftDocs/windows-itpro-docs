@@ -14,13 +14,13 @@ This policy setting specifies whether a password is required to unlock BitLocker
 
 If you enable this policy setting, users can configure a password that meets the requirements you define. To enforce complexity requirements on the password, select **Require complexity**:
 
-- When set to **Require complexity** a connection to a domain controller is necessary when BitLocker is enabled to validate the complexity the password
-- When set to **Allow complexity** connection to a domain controller will be attempted to validate the complexity adheres to the rules set by the policy, but if no domain controllers are found the password will still be accepted regardless of actual password complexity and the drive will be encrypted using that password as a protector
+- When set to **Require complexity**, a connection to a domain controller is necessary when BitLocker is enabled to validate the complexity the password
+- When set to **Allow complexity**, a connection to a domain controller is attempted to validate that the complexity adheres to the rules set by the policy. If no domain controllers are found, the password is accepted regardless of actual password complexity and the drive will be encrypted using that password as a protector
 - When set to **Do not allow complexity**, password complexity isn't validated
 
-Passwords must be at least 8 characters. To configure a greater minimum length for the password, specify the desired number of characters under **Minimum password length**
+Passwords must be at least eight characters. To configure a greater minimum length for the password, specify the desired number of characters under **Minimum password length**
 
-If you disable or do not configure this policy setting, the default length constraint of 8 characters applies to operating system drive passwords and no complexity checks occur.
+If you disable or don't configure this policy setting, the default length constraint of eight characters applies to operating system drive passwords, and no complexity checks occur.
 
 > [!IMPORTANT]
 > Passwords can't be used if FIPS-compliance is enabled.

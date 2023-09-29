@@ -7414,6 +7414,16 @@
       "source_path": "windows/security/operating-system-security/data-protection/personal-data-encryption/faq-pde.yml",
       "redirect_url": "/windows/security/operating-system-security/data-protection/personal-data-encryption/faq",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/data-protection/bitlocker/bitlocker-device-encryption-overview-windows-10.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/bitlocker-device-encryption",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/data-protection/bitlocker/bitlocker-group-policy-settings.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/policy-settings",
+      "redirect_document_id": false
     }
   ]
 }
