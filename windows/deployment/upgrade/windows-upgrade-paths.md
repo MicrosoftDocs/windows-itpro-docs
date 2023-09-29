@@ -11,7 +11,7 @@ ms.collection:
   - highpri
   - tier2
 ms.technology: itpro-deploy
-ms.date: 09/15/2023
+ms.date: 10/02/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
