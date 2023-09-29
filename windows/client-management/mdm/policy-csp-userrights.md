@@ -920,7 +920,7 @@ This security setting determines which service accounts are prevented from regis
 
 | Name | Value |
 |:--|:--|
-| Name | Deny log on as a service |
+| Name | Deny log on locally |
 | Path | Windows Settings > Security Settings > Local Policies > User Rights Assignment |
 <!-- DenyLocalLogOn-GpMapping-End -->
 
