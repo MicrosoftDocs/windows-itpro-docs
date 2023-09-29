@@ -4,7 +4,7 @@ description: Learn more about the Start Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 08/30/2023
+ms.date: 09/25/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -974,68 +974,6 @@ Enabling this policy hides "Change account settings" from appearing in the user 
 
 <!-- HideChangeAccountSettings-End -->
 
-<!-- HideCopilotButton-Begin -->
-## HideCopilotButton
-
-<!-- HideCopilotButton-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
-<!-- HideCopilotButton-Applicability-End -->
-
-<!-- HideCopilotButton-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/Policy/Config/Start/HideCopilotButton
-```
-
-```Device
-./Device/Vendor/MSFT/Policy/Config/Start/HideCopilotButton
-```
-<!-- HideCopilotButton-OmaUri-End -->
-
-<!-- HideCopilotButton-Description-Begin -->
-<!-- Description-Source-DDF -->
-This policy setting allows you to hide the Copilot button on the Taskbar. If you enable this policy setting, the Copilot button will be hidden and the Settings toggle will be disabled.
-<!-- HideCopilotButton-Description-End -->
-
-<!-- HideCopilotButton-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- HideCopilotButton-Editable-End -->
-
-<!-- HideCopilotButton-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | `int` |
-| Access Type | Add, Delete, Get, Replace |
-| Default Value  | 0 |
-<!-- HideCopilotButton-DFProperties-End -->
-
-<!-- HideCopilotButton-AllowedValues-Begin -->
-**Allowed values**:
-
-| Value | Description |
-|:--|:--|
-| 0 (Default) | Copilot button shown. |
-| 1 | Copilot button hidden. |
-<!-- HideCopilotButton-AllowedValues-End -->
-
-<!-- HideCopilotButton-GpMapping-Begin -->
-**Group policy mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | HideCopilotButton |
-| Path | Taskbar > AT > StartMenu |
-<!-- HideCopilotButton-GpMapping-End -->
-
-<!-- HideCopilotButton-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- HideCopilotButton-Examples-End -->
-
-<!-- HideCopilotButton-End -->
-
 <!-- HideFrequentlyUsedApps-Begin -->
 ## HideFrequentlyUsedApps
 
@@ -1492,7 +1430,7 @@ To validate this policy, do the following steps:
 <!-- HideRecommendedPersonalizedSites-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.1928] and later |
 <!-- HideRecommendedPersonalizedSites-Applicability-End -->
 
 <!-- HideRecommendedPersonalizedSites-OmaUri-Begin -->

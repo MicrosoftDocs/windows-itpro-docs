@@ -47,10 +47,11 @@ Windows Sandbox has the following properties:
 2. Enable virtualization on the machine.
 
    - If you're using a physical machine, make sure virtualization capabilities are enabled in the BIOS.
-   - If you're using a virtual machine, run the following PowerShell command to enable nested virtualization:
+   - If you're using a virtual machine, you need to enable nested virtualization. If needed, also update the VM to support nested virtualization. Run the following PowerShell commands on the host:
 
      ```powershell
      Set-VMProcessor -VMName <VMName> -ExposeVirtualizationExtensions $true
+     Update-VMVersion -VMName <VMName>
      ```
 
 3. Use the search bar on the task bar and type **Turn Windows Features on or off** to access the Windows Optional Features tool. Select **Windows Sandbox** and then **OK**. Restart the computer if you're prompted.

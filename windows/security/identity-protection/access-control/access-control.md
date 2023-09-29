@@ -39,7 +39,7 @@ This content set contains:
   - [Service Accounts](/windows-server/identity/ad-ds/manage/understand-service-accounts)
   - [Active Directory Security Groups](/windows-server/identity/ad-ds/manage/understand-security-groups)
 
-[!INCLUDE [access-control-aclsscals](../../../../includes/licensing/access-control-aclsscals.md)]
+[!INCLUDE [access-control-aclsacl](../../../../includes/licensing/access-control-aclsacl.md)]
 
 ## Practical applications
 
