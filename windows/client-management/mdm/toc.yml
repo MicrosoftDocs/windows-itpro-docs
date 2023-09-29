@@ -29,6 +29,15 @@ items:
       href: ../structure-of-oma-dm-provisioning-files.md
     - name: Server requirements for OMA DM
       href: ../server-requirements-windows-mdm.md
+  - name: Declared Configuration protocol
+    href: ../declared-configuration.md
+    items:
+    - name: Declared Configuration extensibility
+      href: ../declared-configuration-extensibility.md
+    - name: DeclaredConfiguration CSP
+      href: declaredconfiguration-csp.md
+    - name: DMClient CSP
+      href: dmclient-csp.md
   - name: Configuration service providers (CSPs)
     expanded: true
     items:
@@ -652,6 +661,11 @@ items:
       items:
       - name: CustomDeviceUI DDF file
         href: customdeviceui-ddf.md
+    - name: DeclaredConfiguration
+      href: declaredconfiguration-csp.md
+      items:
+      - name: DeclaredConfiguration DDF file
+        href: declaredconfiguration-ddf-file.md
     - name: Defender
       href: defender-csp.md
       items:
