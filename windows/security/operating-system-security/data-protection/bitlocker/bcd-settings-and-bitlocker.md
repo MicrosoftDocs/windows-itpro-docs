@@ -15,13 +15,13 @@ If it's believed that there's a risk in excluding a particular BCD setting from 
 If the default BCD setting persistently triggers a recovery for benign changes, you can exclude that BCD setting from the validation coverage.
 
 > [!IMPORTANT]
-> Devices with UEFI firmware can use secure boot to provide enhanced boot security. When BitLocker is able to use secure boot for platform and BCD integrity validation, as defined by the **[Allow Secure Boot for integrity validation](policy-settings.md?tabs=os#allow-secure-boot-for-integrity-validation)** policy setting, the **[Use enhanced Boot Configuration Data validation profile](../policy-settings.md?tabs=os#use-enhanced-boot-configuration-data-validation-profile)** policy is ignored.
+> Devices with UEFI firmware can use secure boot to provide enhanced boot security. When BitLocker is able to use secure boot for platform and BCD integrity validation, as defined by the **[Allow Secure Boot for integrity validation](policy-settings.md?tabs=os#allow-secure-boot-for-integrity-validation)** policy setting, the **[Use enhanced Boot Configuration Data validation profile](policy-settings.md?tabs=os#use-enhanced-boot-configuration-data-validation-profile)** policy is ignored.
 
 One of the benefits of using secure boot is that it can correct BCD settings during boot without triggering recovery events. Secure boot enforces the same BCD settings as BitLocker. Secure boot BCD enforcement isn't configurable from within the operating system.
 
 ## Customizing BCD validation settings
 
-To modify the BCD settings that are validated by BitLocker, the administrator will add or exclude BCD settings from the platform validation profile by enabling and configuring the **[Use enhanced Boot Configuration Data validation profile](../policy-settings.md?tabs=os#use-enhanced-boot-configuration-data-validation-profile)** policy setting.
+To modify the BCD settings that are validated by BitLocker, the administrator will add or exclude BCD settings from the platform validation profile by enabling and configuring the **[Use enhanced Boot Configuration Data validation profile](policy-settings.md?tabs=os#use-enhanced-boot-configuration-data-validation-profile)** policy setting.
 
 For the purposes of BitLocker validation, BCD settings are associated with a specific set of Microsoft boot applications. These BCD settings can also be applied to the other Microsoft boot applications that aren't part of the set to which the BCD settings are already applicable for. This setting can be done by attaching any of the following prefixes to the BCD settings that are being entered in the group policy settings dialog:
 
@@ -38,7 +38,7 @@ You can quickly obtain the friendly name for the BCD settings on a computer by u
 
 Not all BCD settings have friendly names. For those settings without a friendly name, the hex value is the only way to configure an exclusion policy.
 
-When specifying BCD values in the **[Use enhanced Boot Configuration Data validation profile](../policy-settings.md?tabs=os#use-enhanced-boot-configuration-data-validation-profile)** policy setting, use the following syntax:
+When specifying BCD values in the **[Use enhanced Boot Configuration Data validation profile](policy-settings.md?tabs=os#use-enhanced-boot-configuration-data-validation-profile)** policy setting, use the following syntax:
 
 - Prefix the setting with the boot application prefix
 - Append a colon `:`
