@@ -1,10 +1,10 @@
 ---
 title: BitLocker policy settings 
-description: Learn about the policy settings to configure BitLocker.
+description: Learn about the policy settings to configure BitLocker
 ms.collection: 
   - tier1
 ms.topic: reference
-ms.date: 09/19/2023
+ms.date: 09/29/2023
 ---
 
 # BitLocker policy settings
@@ -24,12 +24,14 @@ In other scenarios, to bring the drive into compliance with a change in policy s
 
 ## Settings list
 
-The list of settings is sorted alphabetically and organized in four tabs:
+The list of settings is sorted alphabetically and organized in four categories:
 
 - **Common settings**: settings applicable to all BitLocker-protected drives
 - **Operating system drive**: settings applicable to the drive where Windows is installed
 - **Fixed data drives**: settings applicable to any local drives, except the operating system drive
 - **Removable data drives**: settings applicable to any removable drives
+
+Select one of the tabs to see the list of available settings:
 
 #### [:::image type="icon" source="images/locked-drive.svg"::: **Common settings**](#tab/common)
 
@@ -142,52 +144,3 @@ The following table lists the BitLocker policies applicable to all drive types, 
 [!INCLUDE [removable-drives-excluded-from-encryption](includes/removable-drives-excluded-from-encryption.md)]
 
 ---
-
-## Platform Configuration Register (PCR)
-
-A platform validation profile consists of a set of PCR indices that range from 0 to 23. The scope of the values can be specific to the version of the operating system.
-
-Changing from the default platform validation profile affects the security and manageability of a computer. BitLocker's sensitivity to platform modifications (malicious or authorized) is increased or decreased depending on inclusion or exclusion (respectively) of the PCRs.
-
-### About PCR 7
-
-PCR 7 measures the state of Secure Boot. With PCR 7, BitLocker can use Secure Boot for integrity validation. Secure Boot ensures that the computer's preboot environment loads only firmware that is digitally signed by authorized software publishers. PCR 7 measurements indicate whether Secure Boot is on and which keys are trusted on the platform. If Secure Boot is on and the firmware measures PCR 7 correctly per the UEFI specification, BitLocker can bind to this information rather than to PCRs 0, 2, and 4, which have the measurements of the exact firmware and Bootmgr images loaded. This process reduces the likelihood of BitLocker starting in recovery mode as a result of firmware and image updates, and it provides with greater flexibility to manage the preboot configuration.
-
-PCR 7 measurements must follow the guidance that is described in [Appendix A Trusted Execution Environment EFI Protocol](/windows-hardware/test/hlk/testref/trusted-execution-environment-efi-protocol).
-
-PCR 7 measurements are a mandatory logo requirement for systems that support Modern Standby (also known as Always On, Always Connected PCs), such as the Microsoft Surface RT. On such systems, if the TPM with PCR 7 measurement and secure boot are correctly configured, BitLocker binds to PCR 7 and PCR 11 by default.
-
-## FIPS setting
-
-The Federal Information Processing Standard (FIPS) setting for FIPS compliance can be configured. As an effect of FIPS compliance, users can't create or save a BitLocker password for recovery or as a key protector. The use of a recovery key is permitted.
-
-|  Item  | Info |
-|:---|:---|
-|**Policy description**|Notes|
-|**Drive type**|System-wide|
-|**Policy path**|*Local Policies* > *Security Options* > *System cryptography*: **Use FIPS compliant algorithms for encryption, hashing, and signing**|
-|**Conflicts**|Some applications, such as Terminal Services, don't support FIPS-140 on all operating systems.|
-|**When enabled**|Users will be unable to save a recovery password to any location. This policy setting includes AD DS and network folders. Also, WMI or the BitLocker Drive Encryption Setup wizard can't be used to create a recovery password.|
-|**When disabled or not configured**|No BitLocker encryption key is generated|
-
-### Reference: FIPS setting
-
-This policy must be enabled before any encryption key is generated for BitLocker. When this policy is enabled, BitLocker prevents creating or using recovery passwords, so recovery keys should be used instead.
-
-The optional recovery key can be saved to a USB drive. Because recovery passwords can't be saved to AD DS when FIPS is enabled, an error is caused if AD DS backup is required by Group Policy.
-
-The FIPS setting can be edited by using the Security Policy Editor (`Secpol.msc`) or by editing the Windows registry. Only administrators can perform these procedures.
-
-For more information about setting this policy, see [System cryptography: Use FIPS compliant algorithms for encryption, hashing, and signing](../../../threat-protection/security-policy-settings/system-cryptography-use-fips-compliant-algorithms-for-encryption-hashing-and-signing.md).
-
-## Power management group policy settings: Sleep and Hibernate
-
-PCs default power settings for a computer will cause the computer to enter Sleep mode frequently to conserve power when idle and to help extend the system's battery life. When a computer transitions to Sleep, open programs and documents are persisted in memory. When a computer resumes from Sleep, users aren't required to reauthenticate with a PIN or USB startup key to access encrypted data. Not needing to reauthenticate when resuming from Sleep might lead to conditions where data security is compromised.
-
-However, when a computer hibernates the drive is locked, and when it resumes from hibernation the drive is unlocked, which means that users will need to provide a PIN or a startup key if using multifactor authentication with BitLocker. Therefore, organizations that use BitLocker may want to use Hibernate instead of Sleep for improved security. This setting doesn't have an impact on TPM-only mode, because it provides a transparent user experience at startup and when resuming from the Hibernate states.
-
-To disable all available sleep states, disable the Group Policy settings located in **Computer Configuration** > **Administrative Templates** > **System** > **Power Management** :
-
-- **Allow Standby States (S1-S3) When Sleeping (Plugged In)**
-- **Allow Standby States (S1-S3) When Sleeping (Battery)**
-

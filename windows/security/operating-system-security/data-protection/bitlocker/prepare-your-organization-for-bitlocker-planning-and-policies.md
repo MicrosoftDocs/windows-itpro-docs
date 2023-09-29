@@ -183,6 +183,31 @@ The BitLocker Group Policy settings for recovery passwords work the same for all
 
 On Windows Server 2012 R2 and Windows 8.1 and older, recovery passwords generated on a system in FIPS mode can't be used. Recovery passwords created on Windows Server 2012 R2 and Windows 8.1 are incompatible with BitLocker on operating systems older than Windows Server 2012 R2 and Windows 8.1. So, recovery keys should be used instead.
 
+<!--
+## FIPS setting and BitLocker
+
+The Federal Information Processing Standard (FIPS) setting for FIPS compliance can be configured. As an effect of FIPS compliance, users can't create or save a BitLocker password for recovery or as a key protector. The use of a recovery key is permitted.
+
+|  Item  | Info |
+|:---|:---|
+|**Policy path**|*Local Policies* > *Security Options* > *System cryptography*: **Use FIPS compliant algorithms for encryption, hashing, and signing**|
+|**When enabled**|Users will be unable to save a recovery password to any location. This policy setting includes AD DS and network folders. Also, WMI or the BitLocker Drive Encryption Setup wizard can't be used to create a recovery password.|
+|**When disabled or not configured**|No BitLocker encryption key is generated|
+
+### Reference: FIPS setting
+
+This policy must be enabled before any encryption key is generated for BitLocker. When this policy is enabled, BitLocker prevents creating or using recovery passwords, so recovery keys should be used instead.
+
+The optional recovery key can be saved to a USB drive. Because recovery passwords can't be saved to AD DS when FIPS is enabled, an error is caused if AD DS backup is required by Group Policy.
+
+The FIPS setting can be edited by using the Security Policy Editor (`Secpol.msc`) or by editing the Windows registry. Only administrators can perform these procedures.
+
+For more information about setting this policy, see [System cryptography: Use FIPS compliant algorithms for encryption, hashing, and signing](../../../threat-protection/security-policy-settings/system-cryptography-use-fips-compliant-algorithms-for-encryption-hashing-and-signing.md).
+
+
+-->
+
+
 ## Related articles
 
 - [BitLocker frequently asked questions (FAQ)](faq.yml)
