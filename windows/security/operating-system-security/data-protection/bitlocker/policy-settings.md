@@ -55,14 +55,14 @@ The following table lists the BitLocker policies applicable to all drive types, 
 
 |Policy name| CSP | GPO |
 |-|-|-|
-|[Allow devices compliant with InstantGo or HSTI to opt out of pre-boot PIN](#allow-devices-compliant-with-instantgo-or-hsti-to-opt-out-of-pre-boot-pin)|✅|✅|
+|[Allow devices compliant with InstantGo or HSTI to opt out of pre-boot PIN](#allow-devices-compliant-with-instantgo-or-hsti-to-opt-out-of-preboot-pin)|✅|✅|
 |[Allow enhanced PINs for startup](#allow-enhanced-pins-for-startup)|✅|✅|
 |[Allow network unlock at startup](#allow-network-unlock-at-startup)|❌|✅|
 |[Allow Secure Boot for integrity validation](#allow-secure-boot-for-integrity-validation)|❌|✅|
 |[Allow Warning For Other Disk Encryption](#allow-warning-for-other-disk-encryption)|✅|❌|
 |[Choose how BitLocker-protected operating system drives can be recovered](#choose-how-bitlocker-protected-operating-system-drives-can-be-recovered)|✅|✅|
 |[Configure minimum PIN length for startup](#configure-minimum-pin-length-for-startup)|✅|✅|
-|[Configure pre-boot recovery message and URL](#configure-pre-boot-recovery-message-and-url)|✅|✅|
+|[Configure pre-boot recovery message and URL](#configure-preboot-recovery-message-and-url)|✅|✅|
 |[Configure TPM platform validation profile for BIOS-based firmware configurations](#configure-tpm-platform-validation-profile-for-bios-based-firmware-configurations)|❌|✅|
 |[Configure TPM platform validation profile for native UEFI firmware configurations](#configure-tpm-platform-validation-profile-for-native-uefi-firmware-configurations)|❌|✅|
 |[Configure use of hardware-based encryption for operating system drives](#configure-use-of-hardware-based-encryption-for-operating-system-drives)|❌|✅|
