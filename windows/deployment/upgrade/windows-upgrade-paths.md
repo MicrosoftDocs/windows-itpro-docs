@@ -53,18 +53,16 @@ This article provides a summary of available upgrade paths to currently supporte
 
 ## Supported Windows upgrade paths
 
-✔ = Full upgrade is supported including personal data, settings, and applications.
-
-D = Edition downgrade; personal data is maintained, applications and settings are removed.
-
 | Windows Edition | **Windows Home** | **Windows Pro** | **Windows Pro Education** | **Windows Education** | **Windows Enterprise** |
 |---|---|---|---|---|---|
-| **Windows Home**  | | ✔  | ✔  | ✔  | |
-| **Windows Pro**   | D | | ✔   | ✔  | ✔  |
-| **Windows Education**  | | | | | D  |
-| **Windows Enterprise**  | | | | ✔ | |
+| **Windows Home**  | ❌ | ✅  | ✅  | ✅  | ❌ |
+| **Windows Pro**   | ⬇️ | | ✅   | ✅  | ✅  |
+| **Windows Education**  | ❌ | ❌ | ❌ | ❌ | ⬇️  |
+| **Windows Enterprise**  | ❌ | ❌ | ❌ | ✅ | ❌ |
 
----
+✅ = Full upgrade is supported including personal data, settings, and applications.
+❌ = Upgrade isn't supported or not applicable.
+⬇️ = Edition downgrade; personal data is maintained, applications and settings are removed.
 
 ## Related articles
 
