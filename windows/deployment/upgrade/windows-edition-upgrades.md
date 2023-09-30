@@ -32,24 +32,24 @@ For a comprehensive list of all possible upgrade paths to Windows, see [Windows 
 The following table shows the methods and paths available to change the edition of Windows that is running on your computer.
 
 | Edition upgrade | MDM | Provisioning package | Command-line tool | Manually entering product key |
-|-----------------| ------------------------------------ | --------------------------- | ------------------------- | ----------------------------------- |
-| **Home > Pro** | ❌ | ❌ | ❌ | Yes w/ reboot |
-| **Home > Pro for Workstations** | ❌ | ❌ | ❌ | Yes w/ reboot |
-| **Home > Pro Education** | Yes w/ reboot | Yes w/ reboot | Yes w/ reboot | Yes w/ reboot |
-| **Home > Education** | Yes w/ reboot | Yes w/ reboot | Yes w/ reboot | Yes w/ reboot |
-| **Pro > Pro for Workstations** | Yes | Yes | Yes | Yes |
-| **Pro > Pro Education** | Yes | Yes | Yes | Yes |
-| **Pro > Education** | Yes w/ reboot | Yes w/ reboot | Yes w/ reboot | Yes w/ reboot |
-| **Pro > Enterprise** | Yes | Yes | Yes | Yes |
-| **Pro for Workstations > Pro Education** | Yes | Yes | Yes | Yes |
-| **Pro for Workstations > Education** | Yes w/ reboot | Yes w/ reboot | Yes w/ reboot | Yes w/ reboot |
-| **Pro for Workstations > Enterprise** | Yes | Yes | Yes | Yes |
-| **Pro Education > Education** | Yes w/ reboot | Yes w/ reboot | Yes w/ reboot | Yes w/ reboot |
-| **Enterprise > Education** | Yes w/ reboot | Yes w/ reboot | Yes w/ reboot | Yes w/ reboot |
+|-----| ----- | ----- | ----- | ----- |
+| **Home > Pro** | ❌ | ❌ | ❌ | ☑️ |
+| **Home > Pro for Workstations** | ❌ | ❌ | ❌ | ☑️|
+| **Home > Pro Education** | ☑️ | ☑️ | ☑️ | ☑️ |
+| **Home > Education** | ☑️ | ☑️ | ☑️ | ☑️ |
+| **Pro > Pro for Workstations** | ✅ | ✅ | ✅ | ✅ |
+| **Pro > Pro Education** | ✅ | ✅ | ✅ | ✅ |
+| **Pro > Education** | ☑️ | ☑️ | ☑️ | ☑️ |
+| **Pro > Enterprise** | ✅ | ✅ | ✅ | ✅ |
+| **Pro for Workstations > Pro Education** | ✅ | ✅ | ✅ | ✅ |
+| **Pro for Workstations > Education** | ☑️ | ☑️ | ☑️ | ☑️ |
+| **Pro for Workstations > Enterprise** | ✅ | ✅ | ✅ | ✅ |
+| **Pro Education > Education** | ☑️ | ☑️ | ☑️ | ☑️ |
+| **Enterprise > Education** | ☑️ | ☑️ | ☑️ | ☑️ |
 
-- Yes w/ reboot = supported, but reboot required.
-- Yes = supported, no reboot required.
-- ❌ = not supported.
+- ✅ = Supported, no reboot required.
+- ☑️ = Supported, but reboot required.
+- ❌ = Not supported.
 - MDM = Modern device management.
 - Each desktop edition in the table also has an N and KN SKU. These editions have had media-related functionality removed. Devices with N or KN SKUs installed can be upgraded to corresponding N or KN SKUs using the same methods.
 
@@ -188,9 +188,9 @@ The following scenarios aren't supported:
 | **Pro** | ❌ | - | ❌ | ❌ | ❌ | ❌ | ❌ |
 | **Pro for Workstations** | ❌ | ❌ | - | ❌ | ❌ | ❌ | ❌ |
 | **Pro Education** | ❌ | ❌ | ❌ | - | ❌ | ❌ | ❌ |
-| **Education** | ❌ | Yes | Yes | Yes | - | ❌ | - |
+| **Education** | ❌ | ✅ | ✅ | ✅ | - | ❌ | - |
 | **Enterprise LTSC** | ❌ | ❌ | ❌ | ❌ | ❌ | - | ❌ |
-| **Enterprise** | ❌ | Yes | Yes | Yes | - | ❌ | - |
+| **Enterprise** | ❌ | ✅ | ✅ | ✅ | - | ❌ | - |
 
 **Windows N/KN**: Windows **N** and **KN** SKUs follow the same rules shown in the table.
 
