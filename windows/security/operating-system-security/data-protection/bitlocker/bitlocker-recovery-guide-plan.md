@@ -1,16 +1,16 @@
 ---
 title: BitLocker recovery guide
-description: This article for IT professionals describes how to recover BitLocker keys from Active Directory Domain Services (AD DS).
+description: Learn how to recover BitLocker keys from Microsoft Entra ID and Active Directory Domain Services (AD DS).
 ms.collection: 
   - highpri
   - tier1
-ms.topic: conceptual
-ms.date: 11/08/2022
+ms.topic: howto
+ms.date: 09/29/2023
 ---
 
 # BitLocker recovery guide
 
-This article describes how to recover BitLocker keys from AD DS.
+This article describes how to recover BitLocker keys from Microsoft Entra ID and Active Directory Domain Services (AD DS).
 
 Organizations can use BitLocker recovery information saved in Active Directory Domain Services (AD DS) to access BitLocker-protected data. It's recommended to create a recovery model for BitLocker while planning for BitLocker deployment.
 
@@ -368,13 +368,13 @@ There are rules governing which hint is shown during the recovery (in the order 
 
 #### Example 1 (single recovery key with single backup)
 
-|     Custom URL       |     Yes    |
-|----------------------|------------|
-|     Saved to Microsoft Account     |     Yes    |
-|     Saved to Azure AD     |     No     |
-|     Saved to Active Directory      |     No     |
-|     Printed          |     No     |
-|     Saved to file    |     No     |
+| Custom URL                 | Yes |
+|----------------------------|-----|
+| Saved to Microsoft Account | Yes |
+| Saved to Azure AD          | No  |
+| Saved to Active Directory  | No  |
+| Printed                    | No  |
+| Saved to file              | No  |
 
 **Result:** The hints for the Microsoft account and custom URL are displayed.
 
@@ -382,13 +382,13 @@ There are rules governing which hint is shown during the recovery (in the order 
 
 #### Example 2 (single recovery key with single backup)
 
-|     Custom URL       |     Yes    |
-|----------------------|------------|
-|     Saved to Microsoft Account     |     No     |
-|     Saved to Azure AD     |     No     |
-|     Saved to Active Directory      |     Yes    |
-|     Printed          |     No     |
-|     Saved to file    |     No     |
+| Custom URL                 | Yes |
+|----------------------------|-----|
+| Saved to Microsoft Account | No  |
+| Saved to Azure AD          | No  |
+| Saved to Active Directory  | Yes |
+| Printed                    | No  |
+| Saved to file              | No  |
 
 **Result:** Only the custom URL is displayed.
 
@@ -396,13 +396,13 @@ There are rules governing which hint is shown during the recovery (in the order 
 
 #### Example 3 (single recovery key with multiple backups)
 
-|     Custom URL       |     No     |
-|----------------------|------------|
-|     Saved to Microsoft Account     |     Yes    |
-|     Saved to Azure AD     |     Yes    |
-|     Saved to Active Directory      |     No     |
-|     Printed          |     Yes    |
-|     Saved to file    |     Yes    |
+| Custom URL                 | No  |
+|----------------------------|-----|
+| Saved to Microsoft Account | Yes |
+| Saved to Azure AD          | Yes |
+| Saved to Active Directory  | No  |
+| Printed                    | Yes |
+| Saved to file              | Yes |
 
 **Result:** Only the Microsoft Account hint is displayed.
 
@@ -410,28 +410,26 @@ There are rules governing which hint is shown during the recovery (in the order 
 
 #### Example 4  (multiple recovery passwords)
 
-|     Custom URL       |     No          |
-|----------------------|-----------------|
-|     Saved to Microsoft Account     |     No          |
-|     Saved to Azure AD     |     No          |
-|     Saved to Active Directory      |     No          |
-|     Printed          |     No          |
-|     Saved to file    |     Yes         |
-|     Creation time    |     **1PM**     |
-|     Key ID           |     A564F193    |
+| Custom URL                 | No       |
+|----------------------------|----------|
+| Saved to Microsoft Account | No       |
+| Saved to Azure AD          | No       |
+| Saved to Active Directory  | No       |
+| Printed                    | No       |
+| Saved to file              | Yes      |
+| Creation time              | **1PM**  |
+| Key ID                     | A564F193 |
 
-<br>
-<br>
 
-|     Custom URL       |     No          |
-|----------------------|-----------------|
-|     Saved to Microsoft Account     |     No          |
-|     Saved to Azure AD     |     No          |
-|     Saved to Active Directory      |     No          |
-|     Printed          |     No          |
-|     Saved to file    |     No          |
-|     Creation time    |     **3PM**     |
-|     Key ID           |     T4521ER5    |
+| Custom URL                 | No       |
+|----------------------------|----------|
+| Saved to Microsoft Account | No       |
+| Saved to Azure AD          | No       |
+| Saved to Active Directory  | No       |
+| Printed                    | No       |
+| Saved to file              | No       |
+| Creation time              | **3PM**  |
+| Key ID                     | T4521ER5 |
 
 **Result:** Only the hint for a successfully backed up key is displayed, even if it isn't the most recent key.
 
@@ -439,25 +437,25 @@ There are rules governing which hint is shown during the recovery (in the order 
 
 #### Example 5  (multiple recovery passwords)
 
-|     Custom URL       |     No          |
-|----------------------|-----------------|
-|     Saved to Microsoft Account     |     Yes         |
-|     Saved to Azure AD     |     Yes         |
-|     Saved to Active Directory      |     No          |
-|     Printed          |     No          |
-|     Saved to file    |     No          |
-|     Creation time    |     **1PM**     |
-|     Key ID           |     99631A34    |
+| Custom URL                 | No       |
+|----------------------------|----------|
+| Saved to Microsoft Account | Yes      |
+| Saved to Azure AD          | Yes      |
+| Saved to Active Directory  | No       |
+| Printed                    | No       |
+| Saved to file              | No       |
+| Creation time              | **1PM**  |
+| Key ID                     | 99631A34 |
 
-|     Custom URL       |     No        |
-|----------------------|-----------------|
-|     Saved to Microsoft Account     |     No          |
-|     Saved to Azure AD     |     Yes         |
-|     Saved to Active Directory      |     No          |
-|     Printed          |     No          |
-|     Saved to file    |     No          |
-|     Creation time    |     **3PM**     |
-|     Key ID           |     9DF70931    |
+| Custom URL                 | No       |
+|----------------------------|----------|
+| Saved to Microsoft Account | No       |
+| Saved to Azure AD          | Yes      |
+| Saved to Active Directory  | No       |
+| Printed                    | No       |
+| Saved to file              | No       |
+| Creation time              | **3PM**  |
+| Key ID                     | 9DF70931 |
 
 **Result:** The hint for the most recent key is displayed.
 
@@ -483,8 +481,6 @@ It's recommended to invalidate a recovery password after it has been provided an
 The recovery password and be invalidated and reset in two ways:
 
 - **Use `manage-bde.exe`**: `manage-bde.exe` can be used to remove the old recovery password and add a new recovery password. The procedure identifies the command and the syntax for this method.
-
-- **Run a script**: A script can be run to reset the password without decrypting the volume. The sample script in the procedure illustrates this functionality. The sample script creates a new recovery password and invalidates all other passwords.
 
 ### Resetting a recovery password using `manage-bde.exe`
 
@@ -514,466 +510,3 @@ The recovery password and be invalidated and reset in two ways:
 
     > [!WARNING]
     > The braces `{}` must be included in the ID string.
-
-### Running the sample recovery password script to reset the recovery passwords
-
-1. Save the following sample script in a VBScript file. For example:
-
-    `ResetPassword.vbs`.
-
-2. At the command prompt, enter the following command::
-
-    ```cmd
-    cscript.exe ResetPassword.vbs
-    ```
-
-    > [!IMPORTANT]
-    > This sample script is configured to work only for the C volume. If necessary, customize the script to match the volume where the password reset needs to be tested.
-
-> [!NOTE]
-> To manage a remote computer, specify the remote computer name rather than the local computer name.
-
-The following sample VBScript can be used to reset the recovery passwords:
-
-<br>
-<details>
-  <summary>Expand to view sample recovery password VBscript to reset the recovery passwords</summary>
-
-```vb
-' Target drive letter
-strDriveLetter = "c:"
-' Target computer name
-' Use "." to connect to the local computer
-strComputerName = "."
-' --------------------------------------------------------------------------------
-' Connect to the BitLocker WMI provider class
-' --------------------------------------------------------------------------------
-strConnectionStr = "winmgmts:" _
-                 & "{impersonationLevel=impersonate,authenticationLevel=pktPrivacy}!\\" _
-                 & strComputerName _
-                 & "\root\cimv2\Security\MicrosoftVolumeEncryption"
-
-
-On Error Resume Next 'handle permission errors
-Set objWMIService = GetObject(strConnectionStr)
-If Err.Number <> 0 Then
-     WScript.Echo "Failed to connect to the BitLocker interface (Error 0x" & Hex(Err.Number) & ")."
-     Wscript.Echo "Ensure that you are running with administrative privileges."
-     WScript.Quit -1
-End If
-On Error GoTo 0
-strQuery = "Select * from Win32_EncryptableVolume where DriveLetter='" & strDriveLetter & "'"
-Set colTargetVolumes = objWMIService.ExecQuery(strQuery)
-If colTargetVolumes.Count = 0 Then
-    WScript.Echo "FAILURE: Unable to find BitLocker-capable drive " &  strDriveLetter & " on computer " & strComputerName & "."
-    WScript.Quit -1
-End If
-' there should only be one volume found
-For Each objFoundVolume in colTargetVolumes
-    set objVolume = objFoundVolume
-Next
-' objVolume is now our found BitLocker-capable disk volume
-' --------------------------------------------------------------------------------
-' Perform BitLocker WMI provider functionality
-' --------------------------------------------------------------------------------
-' Add a new recovery password, keeping the ID around so it doesn't get deleted later
-' ----------------------------------------------------------------------------------
-nRC = objVolume.ProtectKeyWithNumericalPassword("Recovery Password Refreshed By Script", , sNewKeyProtectorID)
-If nRC <> 0 Then
-WScript.Echo "FAILURE: ProtectKeyWithNumericalPassword failed with return code 0x" & Hex(nRC)
-WScript.Quit -1
-End If
-' Removes the other, "stale", recovery passwords
-' ----------------------------------------------------------------------------------
-nKeyProtectorTypeIn = 3 ' type associated with "Numerical Password" protector
-nRC = objVolume.GetKeyProtectors(nKeyProtectorTypeIn, aKeyProtectorIDs)
-If nRC <> 0 Then
-WScript.Echo "FAILURE: GetKeyProtectors failed with return code 0x" & Hex(nRC)
-WScript.Quit -1
-End If
-' Delete those key protectors other than the one we just added.
-For Each sKeyProtectorID In aKeyProtectorIDs
-If sKeyProtectorID <> sNewKeyProtectorID Then
-nRC = objVolume.DeleteKeyProtector(sKeyProtectorID)
-If nRC <> 0 Then
-WScript.Echo "FAILURE: DeleteKeyProtector on ID " & sKeyProtectorID & " failed with return code 0x" & Hex(nRC)
-WScript.Quit -1
-Else
-' no output
-'WScript.Echo "SUCCESS: Key protector with ID " & sKeyProtectorID & " deleted"
-End If
-End If
-Next
-WScript.Echo "A new recovery password has been added. Old passwords have been removed."
-' - some advanced output (hidden)
-'WScript.Echo ""
-'WScript.Echo "Type ""manage-bde.exe -protectors -get " & strDriveLetter & " -type recoverypassword"" to view existing passwords."
-```
-
-</details>
-
-## Retrieving the BitLocker key package
-
-Two methods can be used to retrieve the key package as described in [Using Additional Recovery Information](#using-additional-recovery-information):
-
-- **Export a previously saved key package from AD DS.** Read access is required to BitLocker recovery passwords that are stored in AD DS.
-
-- **Export a new key package from an unlocked, BitLocker-protected volume.** Local administrator access to the working volume is required before any damage occurred to the volume.
-
-### Running the sample key package retrieval script that exports all previously saved key packages from AD DS
-
-The following steps and sample script exports all previously saved key packages from AD DS.
-
-1. Save the following sample script in a VBScript file. For example: `GetBitLockerKeyPackageADDS.vbs`.
-
-2. At the command prompt, enter a command similar to the following sample script:
-
-    ```cmd
-    cscript.exe GetBitLockerKeyPackageADDS.vbs -?
-    ```
-
-The following sample script can be used to create a VBScript file to retrieve the BitLocker key package from AD DS:
-
-<br>
-<details>
-  <summary>Expand to view sample key package retrieval VBscript that exports all previously saved key packages from AD DS</summary>
-
-```vb
-' --------------------------------------------------------------------------------
-' Usage
-' --------------------------------------------------------------------------------
-Sub ShowUsage
-   Wscript.Echo "USAGE: GetBitLockerKeyPackageADDS [Path To Save Key Package] [Optional Computer Name]"
-   Wscript.Echo "If no computer name is specified, the local computer is assumed."
-   Wscript.Echo
-   Wscript.Echo "Example: GetBitLockerKeyPackageADDS E:\bitlocker-ad-key-package mycomputer"
-   WScript.Quit
-End Sub
-' --------------------------------------------------------------------------------
-' Parse Arguments
-' --------------------------------------------------------------------------------
-Set args = WScript.Arguments
-Select Case args.Count
-  Case 1
-    If args(0) = "/?" Or args(0) = "-?" Then
-    ShowUsage
-    Else
-      strFilePath = args(0)
-      ' Get the name of the local computer
-      Set objNetwork = CreateObject("WScript.Network")
-      strComputerName = objNetwork.ComputerName
-    End If
-
-  Case 2
-    If args(0) = "/?" Or args(0) = "-?" Then
-      ShowUsage
-    Else
-      strFilePath = args(0)
-      strComputerName = args(1)
-    End If
-  Case Else
-    ShowUsage
-End Select
-' --------------------------------------------------------------------------------
-' Get path to Active Directory computer object associated with the computer name
-' --------------------------------------------------------------------------------
-Function GetStrPathToComputer(strComputerName)
-    ' Uses the global catalog to find the computer in the forest
-    ' Search also includes deleted computers in the tombstone
-    Set objRootLDAP = GetObject("LDAP://rootDSE")
-    namingContext = objRootLDAP.Get("defaultNamingContext") ' e.g. string dc=fabrikam,dc=com
-    strBase = "<GC://" & namingContext & ">"
-
-    Set objConnection = CreateObject("ADODB.Connection")
-    Set objCommand = CreateObject("ADODB.Command")
-    objConnection.Provider = "ADsDSOOBject"
-    objConnection.Open "Active Directory Provider"
-    Set objCommand.ActiveConnection = objConnection
-    strFilter = "(&(objectCategory=Computer)(cn=" &  strComputerName & "))"
-    strQuery = strBase & ";" & strFilter  & ";distinguishedName;subtree"
-    objCommand.CommandText = strQuery
-    objCommand.Properties("Page Size") = 100
-    objCommand.Properties("Timeout") = 100
-    objCommand.Properties("Cache Results") = False
-    ' Enumerate all objects found.
-    Set objRecordSet = objCommand.Execute
-    If objRecordSet.EOF Then
-      WScript.echo "The computer name '" &  strComputerName & "' cannot be found."
-      WScript.Quit 1
-    End If
-    ' Found object matching name
-    Do Until objRecordSet.EOF
-      dnFound = objRecordSet.Fields("distinguishedName")
-      GetStrPathToComputer = "LDAP://" & dnFound
-      objRecordSet.MoveNext
-    Loop
-    ' Clean up.
-    Set objConnection = Nothing
-    Set objCommand = Nothing
-    Set objRecordSet = Nothing
-End Function
-' --------------------------------------------------------------------------------
-' Securely access the Active Directory computer object using Kerberos
-' --------------------------------------------------------------------------------
-Set objDSO = GetObject("LDAP:")
-strPathToComputer = GetStrPathToComputer(strComputerName)
-WScript.Echo "Accessing object: " + strPathToComputer
-Const ADS_SECURE_AUTHENTICATION = 1
-Const ADS_USE_SEALING = 64 '0x40
-Const ADS_USE_SIGNING = 128 '0x80
-' --------------------------------------------------------------------------------
-' Get all BitLocker recovery information from the Active Directory computer object
-' --------------------------------------------------------------------------------
-' Get all the recovery information child objects of the computer object
-Set objFveInfos = objDSO.OpenDSObject(strPathToComputer, vbNullString, vbNullString, _
-                                   ADS_SECURE_AUTHENTICATION + ADS_USE_SEALING + ADS_USE_SIGNING)
-objFveInfos.Filter = Array("msFVE-RecoveryInformation")
-' Iterate through each recovery information object and saves any existing key packages
-nCount = 1
-strFilePathCurrent = strFilePath & nCount
-For Each objFveInfo in objFveInfos
-   strName = objFveInfo.Get("name")
-   strRecoveryPassword = objFveInfo.Get("msFVE-RecoveryPassword")
-   strKeyPackage = objFveInfo.Get("msFVE-KeyPackage")
-   WScript.echo
-   WScript.echo "Recovery Object Name: " + strName
-   WScript.echo "Recovery Password: " + strRecoveryPassword
-   ' Validate file path
-   Set fso = CreateObject("Scripting.FileSystemObject")
-   If (fso.FileExists(strFilePathCurrent)) Then
- WScript.Echo "The file " & strFilePathCurrent & " already exists. Please use a different path."
-WScript.Quit -1
-   End If
-   ' Save binary data to the file
-   SaveBinaryDataText strFilePathCurrent, strKeyPackage
-
-   WScript.echo "Related key package successfully saved to " + strFilePathCurrent
-   ' Update next file path using base name
-   nCount = nCount + 1
-   strFilePathCurrent = strFilePath & nCount
-Next
-'----------------------------------------------------------------------------------------
-' Utility functions to save binary data
-'----------------------------------------------------------------------------------------
-Function SaveBinaryDataText(FileName, ByteArray)
-  'Create FileSystemObject object
-  Dim FS: Set FS = CreateObject("Scripting.FileSystemObject")
-
-  'Create text stream object
-  Dim TextStream
-  Set TextStream = FS.CreateTextFile(FileName)
-
-  'Convert binary data To text And write them To the file
-  TextStream.Write BinaryToString(ByteArray)
-End Function
-Function BinaryToString(Binary)
-  Dim I, S
-  For I = 1 To LenB(Binary)
-    S = S & Chr(AscB(MidB(Binary, I, 1)))
-  Next
-  BinaryToString = S
-End Function
-WScript.Quit
-```
-
-</details>
-
-### Running the sample key package retrieval script that exports a new key package from an unlocked, encrypted volume
-
-The following steps and sample script exports a new key package from an unlocked, encrypted volume.
-
-1. Save the following sample script in a VBScript file. For example: `GetBitLockerKeyPackage.vbs`
-
-2. Open an administrator command prompt, and then enter a command similar to the following sample script:
-
-    ```cmd
-    cscript.exe GetBitLockerKeyPackage.vbs  -?
-    ```
-
-<br>
-<details>
-  <summary>Expand to view sample VBscript that exports a new key package from an unlocked, encrypted volume</summary>
-
-```vb
-' --------------------------------------------------------------------------------
-' Usage
-' --------------------------------------------------------------------------------
-Sub ShowUsage
-   Wscript.Echo "USAGE: GetBitLockerKeyPackage [VolumeLetter/DriveLetter:] [Path To Save Key Package]"
-   Wscript.Echo
-   Wscript.Echo "Example: GetBitLockerKeyPackage C: E:\bitlocker-backup-key-package"
-   WScript.Quit
-End Sub
-' --------------------------------------------------------------------------------
-' Parse Arguments
-' --------------------------------------------------------------------------------
-Set args = WScript.Arguments
-Select Case args.Count
-  Case 2
-    If args(0) = "/?" Or args(0) = "-?" Then
-      ShowUsage
-    Else
-      strDriveLetter = args(0)
-      strFilePath = args(1)
-    End If
-  Case Else
-    ShowUsage
-End Select
-' --------------------------------------------------------------------------------
-' Other Inputs
-' --------------------------------------------------------------------------------
-' Target computer name
-' Use "." to connect to the local computer
-strComputerName = "."
-' Default key protector ID to use. Specify "" to let the script choose.
-strDefaultKeyProtectorID = ""
-' strDefaultKeyProtectorID = "{001298E0-870E-4BA0-A2FF-FC74758D5720}"  ' sample
-' --------------------------------------------------------------------------------
-' Connect to the BitLocker WMI provider class
-' --------------------------------------------------------------------------------
-strConnectionStr = "winmgmts:" _
-                 & "{impersonationLevel=impersonate,authenticationLevel=pktPrivacy}!\\" _
-                 & strComputerName _
-                 & "\root\cimv2\Security\MicrosoftVolumeEncryption"
-
-
-On Error Resume Next 'handle permission errors
-Set objWMIService = GetObject(strConnectionStr)
-If Err.Number <> 0 Then
-     WScript.Echo "Failed to connect to the BitLocker interface (Error 0x" & Hex(Err.Number) & ")."
-     Wscript.Echo "Ensure that you are running with administrative privileges."
-     WScript.Quit -1
-End If
-On Error GoTo 0
-strQuery = "Select * from Win32_EncryptableVolume where DriveLetter='" & strDriveLetter & "'"
-Set colTargetVolumes = objWMIService.ExecQuery(strQuery)
-If colTargetVolumes.Count = 0 Then
-    WScript.Echo "FAILURE: Unable to find BitLocker-capable drive " &  strDriveLetter & " on computer " & strComputerName & "."
-    WScript.Quit -1
-End If
-' there should only be one volume found
-For Each objFoundVolume in colTargetVolumes
-    set objVolume = objFoundVolume
-Next
-' objVolume is now our found BitLocker-capable disk volume
-' --------------------------------------------------------------------------------
-' Perform BitLocker WMI provider functionality
-' --------------------------------------------------------------------------------
-' Collect all possible valid key protector ID's that can be used to get the package
-' ----------------------------------------------------------------------------------
-nNumericalKeyProtectorType = 3 ' type associated with "Numerical Password" protector
-nRC = objVolume.GetKeyProtectors(nNumericalKeyProtectorType, aNumericalKeyProtectorIDs)
-If nRC <> 0 Then
-WScript.Echo "FAILURE: GetKeyProtectors failed with return code 0x" & Hex(nRC)
-WScript.Quit -1
-End If
-nExternalKeyProtectorType = 2 ' type associated with "External Key" protector
-nRC = objVolume.GetKeyProtectors(nExternalKeyProtectorType, aExternalKeyProtectorIDs)
-If nRC <> 0 Then
-WScript.Echo "FAILURE: GetKeyProtectors failed with return code 0x" & Hex(nRC)
-WScript.Quit -1
-End If
-' Get first key protector of the type "Numerical Password" or "External Key", if any
-' ----------------------------------------------------------------------------------
-if strDefaultKeyProtectorID = "" Then
-' Save first numerical password, if exists
-If UBound(aNumericalKeyProtectorIDs) <> -1 Then
-strDefaultKeyProtectorID = aNumericalKeyProtectorIDs(0)
-End If
-' No numerical passwords exist, save the first external key
-If strDefaultKeyProtectorID = "" and UBound(aExternalKeyProtectorIDs) <> -1 Then
-strDefaultKeyProtectorID = aExternalKeyProtectorIDs(0)
-End If
-' Fail case: no recovery key protectors exist.
-If strDefaultKeyProtectorID = "" Then
-WScript.Echo "FAILURE: Cannot create backup key package because no recovery passwords or recovery keys exist. Check that BitLocker protection is on for this drive."
-WScript.Echo "For help adding recovery passwords or recovery keys, enter ""manage-bde.exe -protectors -add -?""."
-WScript.Quit -1
-End If
-End If
-' Get some information about the chosen key protector ID
-' ----------------------------------------------------------------------------------
-' is the type valid?
-nRC = objVolume.GetKeyProtectorType(strDefaultKeyProtectorID, nDefaultKeyProtectorType)
-If Hex(nRC) = "80070057" Then
-WScript.Echo "The key protector ID " & strDefaultKeyProtectorID & " is not valid."
-WScript.Echo "This ID value may have been provided by the script writer."
-ElseIf nRC <> 0 Then
-WScript.Echo "FAILURE: GetKeyProtectorType failed with return code 0x" & Hex(nRC)
-WScript.Quit -1
-End If
-' what's a string that can be used to describe it?
-strDefaultKeyProtectorType = ""
-Select Case nDefaultKeyProtectorType
-  Case nNumericalKeyProtectorType
-      strDefaultKeyProtectorType = "recovery password"
-  Case nExternalKeyProtectorType
-      strDefaultKeyProtectorType = "recovery key"
-  Case Else
-      WScript.Echo "The key protector ID " & strDefaultKeyProtectorID & " does not refer to a valid recovery password or recovery key."
-      WScript.Echo "This ID value may have been provided by the script writer."
-End Select
-' Save the backup key package using the chosen key protector ID
-' ----------------------------------------------------------------------------------
-nRC = objVolume.GetKeyPackage(strDefaultKeyProtectorID, oKeyPackage)
-If nRC <> 0 Then
-WScript.Echo "FAILURE: GetKeyPackage failed with return code 0x" & Hex(nRC)
-WScript.Quit -1
-End If
-' Validate file path
-Set fso = CreateObject("Scripting.FileSystemObject")
-If (fso.FileExists(strFilePath)) Then
-WScript.Echo "The file " & strFilePath & " already exists. Please use a different path."
-WScript.Quit -1
-End If
-Dim oKeyPackageByte, bKeyPackage
-For Each oKeyPackageByte in oKeyPackage
-  'WScript.echo "key package byte: " & oKeyPackageByte
-  bKeyPackage = bKeyPackage & ChrB(oKeyPackageByte)
-Next
-' Save binary data to the file
-SaveBinaryDataText strFilePath, bKeyPackage
-' Display helpful information
-' ----------------------------------------------------------------------------------
-WScript.Echo "The backup key package has been saved to " & strFilePath & "."
-WScript.Echo "IMPORTANT: To use this key package, the " & strDefaultKeyProtectorType & " must also be saved."
-' Display the recovery password or a note about saving the recovery key file
-If nDefaultKeyProtectorType = nNumericalKeyProtectorType Then
-nRC = objVolume.GetKeyProtectorNumericalPassword(strDefaultKeyProtectorID, sNumericalPassword)
-If nRC <> 0 Then
-WScript.Echo "FAILURE: GetKeyProtectorNumericalPassword failed with return code 0x" & Hex(nRC)
-WScript.Quit -1
-End If
-WScript.Echo "Save this recovery password: " & sNumericalPassword
-ElseIf nDefaultKeyProtectorType = nExternalKeyProtectorType Then
-WScript.Echo "The saved key file is named " & strDefaultKeyProtectorID & ".BEK"
-WScript.Echo "For help re-saving this external key file, enter ""manage-bde.exe -protectors -get -?"""
-End If
-'----------------------------------------------------------------------------------------
-' Utility functions to save binary data
-'----------------------------------------------------------------------------------------
-Function SaveBinaryDataText(FileName, ByteArray)
-  'Create FileSystemObject object
-  Dim FS: Set FS = CreateObject("Scripting.FileSystemObject")
-
-  'Create text stream object
-  Dim TextStream
-  Set TextStream = FS.CreateTextFile(FileName)
-
-  'Convert binary data To text And write them To the file
-  TextStream.Write BinaryToString(ByteArray)
-End Function
-Function BinaryToString(Binary)
-  Dim I, S
-  For I = 1 To LenB(Binary)
-    S = S & Chr(AscB(MidB(Binary, I, 1)))
-  Next
-  BinaryToString = S
-End Function
-```
-
-</details>
-
-## Related articles
-
-- [BitLocker overview](index.md)
