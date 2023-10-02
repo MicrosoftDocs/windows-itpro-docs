@@ -62,9 +62,9 @@ CiTool makes Windows Defender Application Control (WDAC) policy management easie
 | Friendly Name | Value listed in `<Setting Provider="PolicyInfo" Key="Information" ValueName="Name">` | `Microsoft Windows Driver Policy` |
 | Version | Version of the policy listed in `<VersionEx>` | `2814751463178240` |
 | Platform Policy | Whether the policy is provided by Microsoft, for example in the vulnerable driver blocklist policy. | `true` |
-| Policy is Signed | Whether the policy has a valid signature. | `true` |
-| Has File on Disk | Whether the policy file is currently on the disk. | `false` |
-| Is Currently Enforced | Whether the policy file is active. | `true` |
+| Policy is Signed | Indicates whether the policy has a valid signature. | `true` |
+| Has File on Disk | Indicates whether the policy file is currently on the disk. | `false` |
+| Is Currently Enforced | Indicates whether the policy file is active. | `true` |
 | Is Authorized | If the policy requires a token to be activated, this value is the state of authorization for the token. If the policy doesn't require a token, this value matches the value for the **Is Currently Enforced** property. | `true` |
 
 ## Examples
