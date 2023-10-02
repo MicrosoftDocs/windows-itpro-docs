@@ -1,29 +1,29 @@
 ---
-title: Support for mobile application management on Windows
-description: Learn about implementing the Windows version of mobile application management (MAM), which is a lightweight solution for managing company data access and security on personal devices.
+title: Support for Windows Information Protection (WIP) on Windows
+description: Learn about implementing the Windows version of Windows Information Protection (WIP), which is a lightweight solution for managing company data access and security on personal devices.
 ms.topic: article
 ms.date: 08/10/2023
 ---
 
-# Support for mobile application management on Windows
+# Support for Windows Information Protection (WIP) on Windows
 
-The Windows version of mobile application management (MAM) is a lightweight solution for managing company data access and security on personal devices. MAM support is built into Windows on top of Windows Information Protection (WIP).
+Windows Information Protection (WIP) is a lightweight solution for managing company data access and security on personal devices. WIP support is built into Windows.
 
 [!INCLUDE [Deprecate Windows Information Protection](../security/information-protection/windows-information-protection/includes/wip-deprecation.md)]
 
 ## Integration with Azure AD
 
-MAM on Windows is integrated with Azure Active Directory (Azure AD) identity service. The MAM service supports Azure AD-integrated authentication for the user and the device during enrollment and the downloading of MAM policies. MAM integration with Azure AD is similar to mobile device management (MDM) integration. See [Azure Active Directory integration with MDM](azure-active-directory-integration-with-mdm.md).
+WIP is integrated with Azure Active Directory (Azure AD) identity service. The WIP service supports Azure AD-integrated authentication for the user and the device during enrollment and the downloading of WIP policies. WIP integration with Azure AD is similar to mobile device management (MDM) integration. See [Azure Active Directory integration with MDM](azure-active-directory-integration-with-mdm.md).
 
-MAM enrollment is integrated with adding a work account flow to a personal device. If both MAM and Azure AD-integrated MDM services are provided in an organization, a user's personal devices are enrolled to MAM or MDM, depending on the user's actions. If a user adds their work or school Azure AD account as a secondary account to the machine, their device is enrolled to MAM. If a user joins their device to Azure AD, it's enrolled to MDM. In general, a device that has a personal account as its primary account is considered a personal device and should be enrolled to MAM. An Azure AD join, and enrollment to MDM, should be used to manage corporate devices.
+WIP uses Mobile Application Management (MAM). MAM enrollment is integrated with adding a work account flow to a personal device. If both MAM and Azure AD-integrated MDM services are provided in an organization, a user's personal devices are enrolled to MAM or MDM, depending on the user's actions. If a user adds their work or school Azure AD account as a secondary account to the machine, their device is enrolled to MAM. If a user joins their device to Azure AD, it's enrolled to MDM. In general, a device that has a personal account as its primary account is considered a personal device and should be enrolled to MAM. An Azure AD join, and enrollment to MDM, should be used to manage corporate devices.
 
 On personal devices, users can add an Azure AD account as a secondary account to the device while keeping their personal account as primary. Users can add an Azure AD account to the device from a supported Azure AD-integrated application, such as the next update of Microsoft 365 apps. Alternatively, users can add an Azure AD account from **Settings > Accounts > Access work or school**.
 
 Regular non administrator users can enroll to MAM.
 
-## Integration with Windows Information Protection
+## Understand Windows Information Protection
 
-MAM on Windows takes advantage of [built-in Windows Information Protection (WIP) policies](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip) to protect company data on the device. To protect user-owned applications on personal devices, MAM limits enforcement of WIP policies to [enlightened apps](/windows/security/information-protection/windows-information-protection/enlightened-microsoft-apps-and-wip) and WIP-aware apps. Enlightened apps can differentiate between corporate and personal data, correctly determining which to protect based on WIP policies. WIP-aware apps indicate to Windows that they don't handle personal data, and therefore, it's safe for Windows to protect data on their behalf.
+WIP takes advantage of [built-in policies](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip) to protect company data on the device. To protect user-owned applications on personal devices, MAM limits enforcement of WIP policies to [enlightened apps](/windows/security/information-protection/windows-information-protection/enlightened-microsoft-apps-and-wip) and WIP-aware apps. Enlightened apps can differentiate between corporate and personal data, correctly determining which to protect based on WIP policies. WIP-aware apps indicate to Windows that they don't handle personal data, and therefore, it's safe for Windows to protect data on their behalf.
 
 To make applications WIP-aware, app developers need to include the following data in the app resource file.
 
@@ -74,7 +74,7 @@ Since the [Poll](mdm/dmclient-csp.md#deviceproviderprovideridpoll) node isn't pr
 
 ## Supported CSPs
 
-MAM on Windows supports the following configuration service providers (CSPs). All other CSPs are blocked. Note the list may change later based on customer feedback:
+WIP supports the following configuration service providers (CSPs). All other CSPs are blocked. Note the list may change later based on customer feedback:
 
 - [AppLocker CSP](mdm/applocker-csp.md) for configuration of Windows Information Protection enterprise allowed apps.
 - [ClientCertificateInstall CSP](mdm/clientcertificateinstall-csp.md) for installing VPN and Wi-Fi certs.
