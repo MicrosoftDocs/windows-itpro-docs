@@ -23,15 +23,15 @@ To defend against malicious reset attacks, BitLocker uses the TCG Reset Attack M
 
 ## Security policies
 
-Pre-boot authentication and DMA policies provide additional protection for BitLocker.
+Preboot authentication and DMA policies provide extra protection for BitLocker.
 
-### Pre-boot authentication
+### Preboot authentication
 
-Pre-boot authentication with BitLocker can require the use of either user input, such as a PIN, a startup key, or both to authenticate prior to making the contents of the system drive accessible.
+Preboot authentication with BitLocker can require the use of either user input, such as a PIN, a startup key, or both to authenticate prior to making the contents of the system drive accessible.
 
-BitLocker accesses and stores the encryption keys in memory only after pre-boot authentication is completed. If Windows can't access the encryption keys, the device can't read or edit the files on the system drive. The only option for bypassing pre-boot authentication is entering the *recovery key*.
+BitLocker accesses and stores the encryption keys in memory only after preboot authentication is completed. If Windows can't access the encryption keys, the device can't read or edit the files on the system drive. The only option for bypassing preboot authentication is entering the *recovery key*.
 
-Pre-boot authentication is designed to prevent the encryption keys from being loaded to system memory without the trusted user supplying another authentication factor. This feature helps mitigate DMA and memory remanence attacks.
+Preboot authentication is designed to prevent the encryption keys from being loaded to system memory without the trusted user supplying another authentication factor. This feature helps mitigate DMA and memory remanence attacks.
 
 On devices with a compatible TPM, operating system drives that are BitLocker-protected can be unlocked in four ways:
 
@@ -40,11 +40,13 @@ On devices with a compatible TPM, operating system drives that are BitLocker-pro
 - **TPM with PIN**: in addition to the protection that the TPM provides, BitLocker requires that the user enters a PIN. Data on the encrypted volume can't be accessed without entering the PIN. TPMs also have [anti-hammering protection](/windows/security/hardware-protection/tpm/tpm-fundamentals#anti-hammering) that is designed to prevent brute force attacks that attempt to determine the PIN
 - **TPM with startup key and PIN**: in addition to the protection that the TPM provides, part of the encryption key is stored on a USB flash drive, and a PIN is required to authenticate the user to the TPM. This configuration provides multifactor authentication so that if the USB key is lost or stolen, it can't be used for access to the drive, because the PIN is also required
 
-Pre-boot authentication with a PIN can mitigate an attack vector for devices that use a bootable eDrive because an exposed eDrive bus can allow an attacker to capture the BitLocker encryption key during startup. Pre-boot authentication with a PIN can also mitigate DMA port attacks during the window of time between when BitLocker unlocks the drive and Windows boots to the point that Windows can set any port-related policies that have been configured.
+Preboot authentication with a PIN can mitigate an attack vector for devices that use a bootable eDrive because an exposed eDrive bus can allow an attacker to capture the BitLocker encryption key during startup. Preboot authentication with a PIN can also mitigate DMA port attacks during the window of time between when BitLocker unlocks the drive and Windows boots to the point that Windows can set any port-related policies that have been configured.
 
-On the other hand, Pre-boot authentication-prompts can be inconvenient to users. In addition, users who forget their PIN or lose their startup key are denied access to their data until they can contact their organization's support team to obtain a recovery key. Pre-boot authentication can also make it more difficult to update unattended or remotely administered devices because a PIN must be entered when a device reboots or resumes from hibernation.
+On the other hand, Preboot authentication-prompts can be inconvenient to users. In addition, users who forget their PIN or lose their startup key are denied access to their data until they can contact their organization's support team to obtain a recovery key. Preboot authentication can also make it more difficult to update unattended or remotely administered devices because a PIN must be entered when a device reboots or resumes from hibernation.
 
 To address these issues, [BitLocker Network Unlock](network-unlock.md) can be deployed. Network Unlock allows systems that meet the hardware requirements and have BitLocker enabled with TPM+PIN to boot into Windows without user intervention. It requires direct ethernet connectivity to a Windows Deployment Services (WDS) server.
+
+To learn more, see the policy setting [Require additional authentication at startup](policy-settings.md?tabs=os#require-additional-authentication-at-startup).
 
 ### Protect DMA ports
 
@@ -90,9 +92,9 @@ Therefore, organizations that use BitLocker may want to use Hibernate instead of
 
 ### Tricking BitLocker to pass the key to a rogue operating system
 
-An attacker might modify the boot manager configuration database (BCD), which is stored on a non-encrypted partition and add an entry point to a rogue operating system on a different partition. During the boot process, BitLocker code makes sure that the operating system that the encryption key obtained from the TPM is given to, is cryptographically verified to be the intended recipient. Because this strong cryptographic verification already exists, we don't recommend storing a hash of a disk partition table in Platform Configuration Register (PCR) 5.
+An attacker might modify the boot manager configuration database (BCD), which is stored on a nonencrypted partition and add an entry point to a rogue operating system on a different partition. During the boot process, BitLocker code makes sure that the operating system that the encryption key obtained from the TPM is given to, is cryptographically verified to be the intended recipient. Because this strong cryptographic verification already exists, we don't recommend storing a hash of a disk partition table in Platform Configuration Register (PCR) 5.
 
-An attacker might also replace the entire operating system disk while preserving the platform hardware and firmware and could then extract a protected BitLocker key blob from the metadata of the victim OS partition. The attacker could then attempt to unseal that BitLocker key blob by calling the TPM API from an operating system under their control. This won't succeed because when Windows seals the BitLocker key to the TPM, it does it with a PCR 11 value of 0, and to successfully unseal the blob, PCR 11 in the TPM must have a value of 0. However, when the boot manager passes the control to any boot loader (legitimate or rogue) it always changes PCR 11 to a value of 1. Since the PCR 11 value is guaranteed to be different after exiting the boot manager, the attacker can't unlock the BitLocker key.
+An attacker might also replace the entire operating system disk while preserving the platform hardware and firmware and could then extract a protected BitLocker key blob from the metadata of the victim OS partition. The attacker could then attempt to unseal that BitLocker key blob by calling the TPM API from an operating system under their control. This can't succeed because when Windows seals the BitLocker key to the TPM, it does it with a PCR 11 value of 0, and to successfully unseal the blob, PCR 11 in the TPM must have a value of 0. However, when the boot manager passes the control to any boot loader (legitimate or rogue) it always changes PCR 11 to a value of 1. Since the PCR 11 value is guaranteed to be different after exiting the boot manager, the attacker can't unlock the BitLocker key.
 
 ## Attacker countermeasures
 
@@ -106,15 +108,15 @@ This attacker of opportunity doesn't use destructive methods or sophisticated fo
 
 Mitigation:
 
-- Pre-boot authentication set to TPM only (the default)
+- Preboot authentication set to TPM only (the default)
 
 ### Attacker with skill and lengthy physical access
 
-Targeted attack with plenty of time; this attacker will open the case, will solder, and will use sophisticated hardware or software.
+Targeted attack with plenty of time; the attacker opens the case, solder, and uses sophisticated hardware or software.
 
 Mitigation:
 
-- Pre-boot authentication set to TPM with a PIN protector (with a sophisticated alphanumeric PIN [enhanced pin] to help the TPM anti-hammering mitigation).
+- Preboot authentication set to TPM with a PIN protector (with a sophisticated alphanumeric PIN [enhanced pin] to help the TPM anti-hammering mitigation).
 
   -And-
 
@@ -128,7 +130,7 @@ Mitigation:
 > [!IMPORTANT]
 > These settings are **not configured** by default.
 
-For some systems, bypassing TPM-only may require opening the case, and may require soldering, but could possibly be done for a reasonable cost. Bypassing a TPM with a PIN protector would cost much more, and require brute forcing the PIN. With a sophisticated enhanced PIN, it could be nearly impossible. To learn more about the policy setting, see [Allow enhanced PINs for startup](policy-settings.md?tabs=os#allow-enhanced-pins-for-startup).
+For some systems, bypassing TPM-only may require opening the case, and may require soldering, but could possibly be done for a reasonable cost. Bypassing a TPM with a PIN protector would cost more, and require brute forcing the PIN. With a sophisticated enhanced PIN, it could be nearly impossible. To learn more about the policy setting, see [Allow enhanced PINs for startup](policy-settings.md?tabs=os#allow-enhanced-pins-for-startup).
 
 For secure administrative workstations, it's recommended to:
 

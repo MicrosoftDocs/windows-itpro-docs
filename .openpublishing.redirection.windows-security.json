@@ -7424,6 +7424,16 @@
       "source_path": "windows/security/operating-system-security/data-protection/bitlocker/bitlocker-group-policy-settings.md",
       "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/policy-settings",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/data-protection/bitlocker/bitlocker-countermeasures.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/countermeasures",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/data-protection/bitlocker/bitlocker-recovery-guide-plan.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/recovery",
+      "redirect_document_id": false
     }
   ]
 }

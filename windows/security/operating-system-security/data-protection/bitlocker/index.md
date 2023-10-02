@@ -58,3 +58,9 @@ BitLocker has the following requirements:
 
 > [!NOTE]
 > Licensing requirements for BitLocker enablement are different from the licensing requirements for BitLocker management. To learn more, see [Configure BitLocker](configure.md).
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> Learn about technologies and features to protect against attacks on the BitLocker encryption key:
+> [BitLocker countermeasures >](countermeasures.md)
