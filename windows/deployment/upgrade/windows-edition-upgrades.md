@@ -128,9 +128,9 @@ If only a few devices are being upgraded devices, a product key for the upgraded
 
 1. In the **Run** window, next to **Open**, enter
 
-  `ms-settings:activation`
+   `ms-settings:activation`
   
-  and then select **OK**.
+   and then select **OK**.
 
 1. Select **Change product key**.
 
@@ -151,9 +151,9 @@ If you don't have a product key, you can upgrade your edition of Windows through
 
 1. In the **Run** window, next to **Open**, enter
 
-  `ms-windows-store://windowsupgrade/`
+   `ms-windows-store://windowsupgrade/`
   
-  and then select **OK**.
+   and then select **OK**.
 
 1. Follow the on-screen instructions.
 
