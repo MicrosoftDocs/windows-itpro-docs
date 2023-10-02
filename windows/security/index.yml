@@ -7,13 +7,14 @@ brand: windows
 metadata:
   ms.topic: hub-page
   ms.prod: windows-client
+  ms.technology: itpro-security
   ms.collection:
     - highpri
     - tier1
   author: paolomatarazzo
   ms.author: paoloma
   manager: aaroncz
-  ms.date: 08/11/2023
+  ms.date: 09/18/2023
 
 highlightedContent:
   items:
@@ -72,14 +73,14 @@ productDirectory:
       links:
         - url: /windows/security/identity-protection/hello-for-business
           text: Windows Hello for Business
-        - url: /windows/security/identity-protection/credential-guard/credential-guard
-          text: Windows Defender Credential Guard
-        - url: /windows-server/identity/laps/laps-overview
-          text: Windows LAPS (Local Administrator Password Solution)
+        - url: /windows/security/identity-protection/passwordless-experience
+          text: Windows passwordless experience
+        - url: /windows/security/identity-protection/web-sign-in
+          text: Web sign-in for Windows
+        - url: /windows/security/identity-protection/passkeys
+          text: Support for passkeys in Windows
         - url: /windows/security/operating-system-security/virus-and-threat-protection/microsoft-defender-smartscreen/enhanced-phishing-protection
           text: Enhanced phishing protection with SmartScreen
-        - url: /education/windows/federated-sign-in
-          text: Federated sign-in (EDU)
         - url: /windows/security/identity-protection
           text: Learn more about identity protection >
 

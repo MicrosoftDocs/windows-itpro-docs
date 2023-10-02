@@ -113,7 +113,7 @@ Alternatively, you can configure devices using a [custom policy][INT-1] with the
 
 | OMA-URI |Data type| Value|
 |-|-|-|
-| `./Vendor/MSFT/Policy/PassportForWork/`*TenantId*`/Policies/EnablePinRecovery`| Boolean | Tue |
+| `./Vendor/MSFT/Policy/PassportForWork/`*TenantId*`/Policies/EnablePinRecovery`| Boolean | True |
 
 >[!NOTE]
 > You must replace `TenantId` with the identifier of your Azure Active Directory tenant. To look up your Tenant ID, see [How to find your Azure Active Directory tenant ID](/azure/active-directory/fundamentals/how-to-find-tenant) or try the following, ensuring to sign-in with your organization's account::
@@ -124,11 +124,12 @@ GET https://graph.microsoft.com/v1.0/organization?$select=id
 
 #### [:::image type="icon" source="../../images/icons/group-policy.svg"::: **GPO**](#tab/gpo)
 
-[!INCLUDE [gpo-settings-1](../../../../includes/configure/gpo-settings-1.md)] **Computer Configuration > Administrative Templates > Windows Components > Windows Hello for Business**:
+[!INCLUDE [gpo-settings-1](../../../../includes/configure/gpo-settings-1.md)]
+[!INCLUDE [gpo-settings-1](../../../../includes/configure/gpo-settings-1.md)]
 
-| Group policy setting | Value |
-| - | - |
-| **Use PIN Recovery** | **Enabled** |
+| Group policy path | Group policy setting | Value |
+| - | - | - |
+|**Computer Configuration > Administrative Templates > Windows Components > Windows Hello for Business**| Use PIN Recovery | Enabled |
 
 [!INCLUDE [gpo-settings-2](../../../../includes/configure/gpo-settings-2.md)]
 
