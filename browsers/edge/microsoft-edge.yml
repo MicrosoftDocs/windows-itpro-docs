@@ -7,13 +7,12 @@ metadata:
   title: Microsoft Edge Legacy # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Find the tools and resources you need to help deploy and use Microsoft Edge in your organization. # Required; article description that is displayed in search results. < 160 chars.
   keywords: Microsoft Edge, issues, fixes, announcements, Windows Server, advisories
-  ms.prod: edge
+  ms.prod: microsoft-edge
   ms.localizationpriority: medium
-  author: lizap
-  ms.author: elizapo
-  manager: dougkim
+  author: aczechowski
+  ms.author: aaroncz
+  manager: dansimp
   ms.topic: landing-page
-  ms.devlang: na
   ms.date: 08/19/2020 #Required; mm/dd/yyyy format.
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
@@ -106,10 +105,6 @@ landingContent:
   # Card (optional)
   - title: End user readiness
     linkLists:
-      - linkListType: video
-        links:
-          - text: Microsoft Edge tips and tricks (video, 20:26)
-            url: https://myignite.microsoft.com/sessions/56630?source=sessions
       - linkListType: download
         links:
           - text: Quick Start - Microsoft Edge (PDF, .98 MB)

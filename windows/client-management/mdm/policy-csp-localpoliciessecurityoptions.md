@@ -4,7 +4,7 @@ description: Learn more about the LocalPoliciesSecurityOptions Area in Policy CS
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -15,6 +15,8 @@ ms.topic: reference
 
 <!-- LocalPoliciesSecurityOptions-Begin -->
 # Policy CSP - LocalPoliciesSecurityOptions
+
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- LocalPoliciesSecurityOptions-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -28,7 +30,7 @@ ms.topic: reference
 <!-- Accounts_BlockMicrosoftAccounts-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Accounts_BlockMicrosoftAccounts-Applicability-End -->
 
 <!-- Accounts_BlockMicrosoftAccounts-OmaUri-Begin -->
@@ -39,8 +41,7 @@ ms.topic: reference
 
 <!-- Accounts_BlockMicrosoftAccounts-Description-Begin -->
 <!-- Description-Source-DDF -->
-This policy setting prevents users from adding new Microsoft accounts on this computer. If you select the "Users can't add Microsoft accounts" option, users will not be able to create new Microsoft accounts on this computer, switch a local account to a Microsoft account, or connect a domain account to a Microsoft account. This is the preferred option if you need to limit the use of Microsoft accounts in your enterprise. If you select the "Users can't add or log on with Microsoft accounts" option, existing Microsoft account users will not be able to log on to Windows. Selecting this option might make it impossible for an existing administrator on this computer to log on and manage the system.
-- If you disable or do not configure this policy (recommended), users will be able to use Microsoft accounts with Windows.
+This policy setting prevents users from adding new Microsoft accounts on this computer. If you select the "Users can't add Microsoft accounts" option, users won't be able to create new Microsoft accounts on this computer, switch a local account to a Microsoft account, or connect a domain account to a Microsoft account. This is the preferred option if you need to limit the use of Microsoft accounts in your enterprise. If you select the "Users can't add or log on with Microsoft accounts" option, existing Microsoft account users won't be able to log on to Windows. Selecting this option might make it impossible for an existing administrator on this computer to log on and manage the system. If you disable or don't configure this policy (recommended), users will be able to use Microsoft accounts with Windows.
 <!-- Accounts_BlockMicrosoftAccounts-Description-End -->
 
 <!-- Accounts_BlockMicrosoftAccounts-Editable-Begin -->
@@ -52,7 +53,7 @@ This policy setting prevents users from adding new Microsoft accounts on this co
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- Accounts_BlockMicrosoftAccounts-DFProperties-End -->
@@ -88,7 +89,7 @@ This policy setting prevents users from adding new Microsoft accounts on this co
 <!-- Accounts_EnableAdministratorAccountStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Accounts_EnableAdministratorAccountStatus-Applicability-End -->
 
 <!-- Accounts_EnableAdministratorAccountStatus-OmaUri-Begin -->
@@ -99,10 +100,10 @@ This policy setting prevents users from adding new Microsoft accounts on this co
 
 <!-- Accounts_EnableAdministratorAccountStatus-Description-Begin -->
 <!-- Description-Source-DDF -->
-This security setting determines whether the local Administrator account is enabled or disabled
+This security setting determines whether the local Administrator account is enabled or disabled.
 
 > [!NOTE]
-> If you try to reenable the Administrator account after it has been disabled, and if the current Administrator password does not meet the password requirements, you cannot reenable the account. In this case, an alternative member of the Administrators group must reset the password on the Administrator account. For information about how to reset a password, see To reset a password. Disabling the Administrator account can become a maintenance issue under certain circumstances. Under Safe Mode boot, the disabled Administrator account will only be enabled if the machine is non-domain joined and there are no other local active administrator accounts. If the computer is domain joined the disabled administrator will not be enabled. Default Disabled.
+> If you try to reenable the Administrator account after it has been disabled, and if the current Administrator password doesn't meet the password requirements, you can't reenable the account. In this case, an alternative member of the Administrators group must reset the password on the Administrator account. For information about how to reset a password, see To reset a password. Disabling the Administrator account can become a maintenance issue under certain circumstances. Under Safe Mode boot, the disabled Administrator account will only be enabled if the machine is non-domain joined and there are no other local active administrator accounts. If the computer is domain joined the disabled administrator won't be enabled. Default: Disabled.
 <!-- Accounts_EnableAdministratorAccountStatus-Description-End -->
 
 <!-- Accounts_EnableAdministratorAccountStatus-Editable-Begin -->
@@ -114,7 +115,7 @@ This security setting determines whether the local Administrator account is enab
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- Accounts_EnableAdministratorAccountStatus-DFProperties-End -->
@@ -149,7 +150,7 @@ This security setting determines whether the local Administrator account is enab
 <!-- Accounts_EnableGuestAccountStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Accounts_EnableGuestAccountStatus-Applicability-End -->
 
 <!-- Accounts_EnableGuestAccountStatus-OmaUri-Begin -->
@@ -160,10 +161,10 @@ This security setting determines whether the local Administrator account is enab
 
 <!-- Accounts_EnableGuestAccountStatus-Description-Begin -->
 <!-- Description-Source-DDF -->
-This security setting determines if the Guest account is enabled or disabled. Default Disabled
+This security setting determines if the Guest account is enabled or disabled. Default: Disabled.
 
 > [!NOTE]
-> If the Guest account is disabled and the security option Network Access Sharing and Security Model for local accounts is set to Guest Only, network logons, such as those performed by the Microsoft Network Server (SMB Service), will fail.
+> If the Guest account is disabled and the security option Network Access: Sharing and Security Model for local accounts is set to Guest Only, network logons, such as those performed by the Microsoft Network Server (SMB Service), will fail.
 <!-- Accounts_EnableGuestAccountStatus-Description-End -->
 
 <!-- Accounts_EnableGuestAccountStatus-Editable-Begin -->
@@ -175,7 +176,7 @@ This security setting determines if the Guest account is enabled or disabled. De
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- Accounts_EnableGuestAccountStatus-DFProperties-End -->
@@ -210,7 +211,7 @@ This security setting determines if the Guest account is enabled or disabled. De
 <!-- Accounts_LimitLocalAccountUseOfBlankPasswordsToConsoleLogonOnly-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Accounts_LimitLocalAccountUseOfBlankPasswordsToConsoleLogonOnly-Applicability-End -->
 
 <!-- Accounts_LimitLocalAccountUseOfBlankPasswordsToConsoleLogonOnly-OmaUri-Begin -->
@@ -221,13 +222,13 @@ This security setting determines if the Guest account is enabled or disabled. De
 
 <!-- Accounts_LimitLocalAccountUseOfBlankPasswordsToConsoleLogonOnly-Description-Begin -->
 <!-- Description-Source-DDF -->
-Accounts Limit local account use of blank passwords to console logon only This security setting determines whether local accounts that are not password protected can be used to log on from locations other than the physical computer console. If enabled, local accounts that are not password protected will only be able to log on at the computer's keyboard. Default Enabled
+Accounts: Limit local account use of blank passwords to console logon only This security setting determines whether local accounts that aren't password protected can be used to log on from locations other than the physical computer console. If enabled, local accounts that aren't password protected will only be able to log on at the computer's keyboard. Default: Enabled.
 
 > [!WARNING]
-> Computers that are not in physically secure locations should always enforce strong password policies for all local user accounts. Otherwise, anyone with physical access to the computer can log on by using a user account that does not have a password. This is especially important for portable computers. If you apply this security policy to the Everyone group, no one will be able to log on through Remote Desktop Services
+> Computers that aren't in physically secure locations should always enforce strong password policies for all local user accounts. Otherwise, anyone with physical access to the computer can log on by using a user account that doesn't have a password. This is especially important for portable computers. If you apply this security policy to the Everyone group, no one will be able to log on through Remote Desktop Services.
 
 > [!NOTE]
-> This setting does not affect logons that use domain accounts. It is possible for applications that use remote interactive logons to bypass this setting.
+> This setting doesn't affect logons that use domain accounts. It's possible for applications that use remote interactive logons to bypass this setting.
 <!-- Accounts_LimitLocalAccountUseOfBlankPasswordsToConsoleLogonOnly-Description-End -->
 
 <!-- Accounts_LimitLocalAccountUseOfBlankPasswordsToConsoleLogonOnly-Editable-Begin -->
@@ -239,7 +240,7 @@ Accounts Limit local account use of blank passwords to console logon only This s
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- Accounts_LimitLocalAccountUseOfBlankPasswordsToConsoleLogonOnly-DFProperties-End -->
@@ -274,7 +275,7 @@ Accounts Limit local account use of blank passwords to console logon only This s
 <!-- Accounts_RenameAdministratorAccount-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Accounts_RenameAdministratorAccount-Applicability-End -->
 
 <!-- Accounts_RenameAdministratorAccount-OmaUri-Begin -->
@@ -297,7 +298,7 @@ Accounts: Rename administrator account This security setting determines whether 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | Administrator |
 <!-- Accounts_RenameAdministratorAccount-DFProperties-End -->
@@ -323,7 +324,7 @@ Accounts: Rename administrator account This security setting determines whether 
 <!-- Accounts_RenameGuestAccount-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Accounts_RenameGuestAccount-Applicability-End -->
 
 <!-- Accounts_RenameGuestAccount-OmaUri-Begin -->
@@ -334,7 +335,7 @@ Accounts: Rename administrator account This security setting determines whether 
 
 <!-- Accounts_RenameGuestAccount-Description-Begin -->
 <!-- Description-Source-DDF -->
-Accounts: Rename guest account This security setting determines whether a different account name is associated with the security identifier (SID) for the account "Guest." Renaming the well-known Guest account makes it slightly more difficult for unauthorized persons to guess this user name and password combination. Default: Guest.
+Accounts: Rename guest account This security setting determines whether a different account name is associated with the security identifier (SID) for the account "Guest". Renaming the well-known Guest account makes it slightly more difficult for unauthorized persons to guess this user name and password combination. Default: Guest.
 <!-- Accounts_RenameGuestAccount-Description-End -->
 
 <!-- Accounts_RenameGuestAccount-Editable-Begin -->
@@ -346,7 +347,7 @@ Accounts: Rename guest account This security setting determines whether a differ
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | Guest |
 <!-- Accounts_RenameGuestAccount-DFProperties-End -->
@@ -372,7 +373,7 @@ Accounts: Rename guest account This security setting determines whether a differ
 <!-- Devices_AllowedToFormatAndEjectRemovableMedia-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Devices_AllowedToFormatAndEjectRemovableMedia-Applicability-End -->
 
 <!-- Devices_AllowedToFormatAndEjectRemovableMedia-OmaUri-Begin -->
@@ -383,7 +384,7 @@ Accounts: Rename guest account This security setting determines whether a differ
 
 <!-- Devices_AllowedToFormatAndEjectRemovableMedia-Description-Begin -->
 <!-- Description-Source-DDF -->
-Devices: Allowed to format and eject removable media This security setting determines who is allowed to format and eject removable NTFS media. This capability can be given to: Administrators Administrators and Interactive Users Default: This policy is not defined and only Administrators have this ability.
+Devices: Allowed to format and eject removable media This security setting determines who is allowed to format and eject removable NTFS media. This capability can be given to: Administrators Administrators and Interactive Users Default: This policy isn't defined and only Administrators have this ability.
 <!-- Devices_AllowedToFormatAndEjectRemovableMedia-Description-End -->
 
 <!-- Devices_AllowedToFormatAndEjectRemovableMedia-Editable-Begin -->
@@ -395,7 +396,7 @@ Devices: Allowed to format and eject removable media This security setting deter
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- Devices_AllowedToFormatAndEjectRemovableMedia-DFProperties-End -->
@@ -421,7 +422,7 @@ Devices: Allowed to format and eject removable media This security setting deter
 <!-- Devices_AllowUndockWithoutHavingToLogon-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Devices_AllowUndockWithoutHavingToLogon-Applicability-End -->
 
 <!-- Devices_AllowUndockWithoutHavingToLogon-OmaUri-Begin -->
@@ -432,7 +433,7 @@ Devices: Allowed to format and eject removable media This security setting deter
 
 <!-- Devices_AllowUndockWithoutHavingToLogon-Description-Begin -->
 <!-- Description-Source-DDF -->
-Devices Allow undock without having to log on This security setting determines whether a portable computer can be undocked without having to log on. If this policy is enabled, logon is not required and an external hardware eject button can be used to undock the computer. If disabled, a user must log on and have the Remove computer from docking station privilege to undock the computer. Default Enabled
+Devices: Allow undock without having to log on This security setting determines whether a portable computer can be undocked without having to log on. If this policy is enabled, logon isn't required and an external hardware eject button can be used to undock the computer. If disabled, a user must log on and have the Remove computer from docking station privilege to undock the computer. Default: Enabled.
 
 > [!CAUTION]
 > Disabling this policy may tempt users to try and physically remove the laptop from its docking station using methods other than the external hardware eject button. Since this may cause damage to the hardware, this setting, in general, should only be disabled on laptop configurations that are physically securable.
@@ -447,7 +448,7 @@ Devices Allow undock without having to log on This security setting determines w
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- Devices_AllowUndockWithoutHavingToLogon-DFProperties-End -->
@@ -482,7 +483,7 @@ Devices Allow undock without having to log on This security setting determines w
 <!-- Devices_PreventUsersFromInstallingPrinterDriversWhenConnectingToSharedPrinters-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Devices_PreventUsersFromInstallingPrinterDriversWhenConnectingToSharedPrinters-Applicability-End -->
 
 <!-- Devices_PreventUsersFromInstallingPrinterDriversWhenConnectingToSharedPrinters-OmaUri-Begin -->
@@ -494,8 +495,10 @@ Devices Allow undock without having to log on This security setting determines w
 <!-- Devices_PreventUsersFromInstallingPrinterDriversWhenConnectingToSharedPrinters-Description-Begin -->
 <!-- Description-Source-DDF -->
 Devices: Prevent users from installing printer drivers when connecting to shared printers For a computer to print to a shared printer, the driver for that shared printer must be installed on the local computer. This security setting determines who is allowed to install a printer driver as part of connecting to a shared printer.
+
 - If this setting is enabled, only Administrators can install a printer driver as part of connecting to a shared printer.
-- If this setting is disabled, any user can install a printer driver as part of connecting to a shared printer. Default on servers: Enabled. Default on workstations: Disabled Notes This setting does not affect the ability to add a local printer. This setting does not affect Administrators.
+
+- If this setting is disabled, any user can install a printer driver as part of connecting to a shared printer. Default on servers: Enabled. Default on workstations: Disabled Notes This setting doesn't affect the ability to add a local printer. This setting doesn't affect Administrators.
 <!-- Devices_PreventUsersFromInstallingPrinterDriversWhenConnectingToSharedPrinters-Description-End -->
 
 <!-- Devices_PreventUsersFromInstallingPrinterDriversWhenConnectingToSharedPrinters-Editable-Begin -->
@@ -507,7 +510,7 @@ Devices: Prevent users from installing printer drivers when connecting to shared
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- Devices_PreventUsersFromInstallingPrinterDriversWhenConnectingToSharedPrinters-DFProperties-End -->
@@ -542,7 +545,7 @@ Devices: Prevent users from installing printer drivers when connecting to shared
 <!-- Devices_RestrictCDROMAccessToLocallyLoggedOnUserOnly-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Devices_RestrictCDROMAccessToLocallyLoggedOnUserOnly-Applicability-End -->
 
 <!-- Devices_RestrictCDROMAccessToLocallyLoggedOnUserOnly-OmaUri-Begin -->
@@ -553,7 +556,7 @@ Devices: Prevent users from installing printer drivers when connecting to shared
 
 <!-- Devices_RestrictCDROMAccessToLocallyLoggedOnUserOnly-Description-Begin -->
 <!-- Description-Source-DDF -->
-Devices: Restrict CD-ROM access to locally logged-on user only This security setting determines whether a CD-ROM is accessible to both local and remote users simultaneously. If this policy is enabled, it allows only the interactively logged-on user to access removable CD-ROM media. If this policy is enabled and no one is logged on interactively, the CD-ROM can be accessed over the network. Default: This policy is not defined and CD-ROM access is not restricted to the locally logged-on user.
+Devices: Restrict CD-ROM access to locally logged-on user only This security setting determines whether a CD-ROM is accessible to both local and remote users simultaneously. If this policy is enabled, it allows only the interactively logged-on user to access removable CD-ROM media. If this policy is enabled and no one is logged-on interactively, the CD-ROM can be accessed over the network. Default: This policy isn't defined and CD-ROM access isn't restricted to the locally logged-on user.
 <!-- Devices_RestrictCDROMAccessToLocallyLoggedOnUserOnly-Description-End -->
 
 <!-- Devices_RestrictCDROMAccessToLocallyLoggedOnUserOnly-Editable-Begin -->
@@ -565,7 +568,7 @@ Devices: Restrict CD-ROM access to locally logged-on user only This security set
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- Devices_RestrictCDROMAccessToLocallyLoggedOnUserOnly-DFProperties-End -->
@@ -591,7 +594,7 @@ Devices: Restrict CD-ROM access to locally logged-on user only This security set
 <!-- InteractiveLogon_DisplayUserInformationWhenTheSessionIsLocked-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- InteractiveLogon_DisplayUserInformationWhenTheSessionIsLocked-Applicability-End -->
 
 <!-- InteractiveLogon_DisplayUserInformationWhenTheSessionIsLocked-OmaUri-Begin -->
@@ -602,7 +605,7 @@ Devices: Restrict CD-ROM access to locally logged-on user only This security set
 
 <!-- InteractiveLogon_DisplayUserInformationWhenTheSessionIsLocked-Description-Begin -->
 <!-- Description-Source-DDF -->
-Interactive Logon:Display user information when the session is locked User display name, domain and user names (1) User display name only (2) Do not display user information (3) Domain and user names only (4)
+Interactive Logon:Display user information when the session is locked User display name, domain and user names (1) User display name only (2) Don't display user information (3) Domain and user names only (4)
 <!-- InteractiveLogon_DisplayUserInformationWhenTheSessionIsLocked-Description-End -->
 
 <!-- InteractiveLogon_DisplayUserInformationWhenTheSessionIsLocked-Editable-Begin -->
@@ -614,7 +617,7 @@ Interactive Logon:Display user information when the session is locked User displ
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- InteractiveLogon_DisplayUserInformationWhenTheSessionIsLocked-DFProperties-End -->
@@ -626,7 +629,7 @@ Interactive Logon:Display user information when the session is locked User displ
 |:--|:--|
 | 1 (Default) | User display name, domain and user names. |
 | 2 | User display name only. |
-| 3 | Do not display user information. |
+| 3 | Don't display user information. |
 | 4 | Domain and user names only. |
 <!-- InteractiveLogon_DisplayUserInformationWhenTheSessionIsLocked-AllowedValues-End -->
 
@@ -651,7 +654,7 @@ Interactive Logon:Display user information when the session is locked User displ
 <!-- InteractiveLogon_DoNotDisplayLastSignedIn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- InteractiveLogon_DoNotDisplayLastSignedIn-Applicability-End -->
 
 <!-- InteractiveLogon_DoNotDisplayLastSignedIn-OmaUri-Begin -->
@@ -662,7 +665,7 @@ Interactive Logon:Display user information when the session is locked User displ
 
 <!-- InteractiveLogon_DoNotDisplayLastSignedIn-Description-Begin -->
 <!-- Description-Source-DDF -->
-Interactive logon: Don't display last signed-in This security setting determines whether the Windows sign-in screen will show the username of the last person who signed in on this PC. If this policy is enabled, the username will not be shown. If this policy is disabled, the username will be shown. Default: Disabled.
+Interactive logon: Don't display last signed-in This security setting determines whether the Windows sign-in screen will show the username of the last person who signed in on this PC. If this policy is enabled, the username won't be shown. If this policy is disabled, the username will be shown. Default: Disabled.
 <!-- InteractiveLogon_DoNotDisplayLastSignedIn-Description-End -->
 
 <!-- InteractiveLogon_DoNotDisplayLastSignedIn-Editable-Begin -->
@@ -674,7 +677,7 @@ Interactive logon: Don't display last signed-in This security setting determines
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- InteractiveLogon_DoNotDisplayLastSignedIn-DFProperties-End -->
@@ -685,7 +688,7 @@ Interactive logon: Don't display last signed-in This security setting determines
 | Value | Description |
 |:--|:--|
 | 0 (Default) | Disabled (username will be shown). |
-| 1 | Enabled (username will not be shown). |
+| 1 | Enabled (username won't be shown). |
 <!-- InteractiveLogon_DoNotDisplayLastSignedIn-AllowedValues-End -->
 
 <!-- InteractiveLogon_DoNotDisplayLastSignedIn-GpMapping-Begin -->
@@ -709,7 +712,7 @@ Interactive logon: Don't display last signed-in This security setting determines
 <!-- InteractiveLogon_DoNotDisplayUsernameAtSignIn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- InteractiveLogon_DoNotDisplayUsernameAtSignIn-Applicability-End -->
 
 <!-- InteractiveLogon_DoNotDisplayUsernameAtSignIn-OmaUri-Begin -->
@@ -720,7 +723,7 @@ Interactive logon: Don't display last signed-in This security setting determines
 
 <!-- InteractiveLogon_DoNotDisplayUsernameAtSignIn-Description-Begin -->
 <!-- Description-Source-DDF -->
-Interactive logon: Don't display username at sign-in This security setting determines whether the username of the person signing in to this PC appears at Windows sign-in, after credentials are entered, and before the PC desktop is shown. If this policy is enabled, the username will not be shown. If this policy is disabled, the username will be shown. Default: Disabled.
+Interactive logon: Don't display username at sign-in This security setting determines whether the username of the person signing in to this PC appears at Windows sign-in, after credentials are entered, and before the PC desktop is shown. If this policy is enabled, the username won't be shown. If this policy is disabled, the username will be shown. Default: Disabled.
 <!-- InteractiveLogon_DoNotDisplayUsernameAtSignIn-Description-End -->
 
 <!-- InteractiveLogon_DoNotDisplayUsernameAtSignIn-Editable-Begin -->
@@ -732,7 +735,7 @@ Interactive logon: Don't display username at sign-in This security setting deter
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- InteractiveLogon_DoNotDisplayUsernameAtSignIn-DFProperties-End -->
@@ -743,7 +746,7 @@ Interactive logon: Don't display username at sign-in This security setting deter
 | Value | Description |
 |:--|:--|
 | 0 | Disabled (username will be shown). |
-| 1 (Default) | Enabled (username will not be shown). |
+| 1 (Default) | Enabled (username won't be shown). |
 <!-- InteractiveLogon_DoNotDisplayUsernameAtSignIn-AllowedValues-End -->
 
 <!-- InteractiveLogon_DoNotDisplayUsernameAtSignIn-GpMapping-Begin -->
@@ -767,7 +770,7 @@ Interactive logon: Don't display username at sign-in This security setting deter
 <!-- InteractiveLogon_DoNotRequireCTRLALTDEL-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- InteractiveLogon_DoNotRequireCTRLALTDEL-Applicability-End -->
 
 <!-- InteractiveLogon_DoNotRequireCTRLALTDEL-OmaUri-Begin -->
@@ -778,7 +781,7 @@ Interactive logon: Don't display username at sign-in This security setting deter
 
 <!-- InteractiveLogon_DoNotRequireCTRLALTDEL-Description-Begin -->
 <!-- Description-Source-DDF -->
-Interactive logon: Do not require CTRL+ALT+DEL This security setting determines whether pressing CTRL+ALT+DEL is required before a user can log on. If this policy is enabled on a computer, a user is not required to press CTRL+ALT+DEL to log on. Not having to press CTRL+ALT+DEL leaves users susceptible to attacks that attempt to intercept the users' passwords. Requiring CTRL+ALT+DEL before users log on ensures that users are communicating by means of a trusted path when entering their passwords. If this policy is disabled, any user is required to press CTRL+ALT+DEL before logging on to Windows. Default on domain-computers: Enabled: At least Windows 8/Disabled: Windows 7 or earlier. Default on stand-alone computers: Enabled.
+Interactive logon: Don't require CTRL+ALT+DEL This security setting determines whether pressing CTRL+ALT+DEL is required before a user can log on. If this policy is enabled on a computer, a user isn't required to press CTRL+ALT+DEL to log on. Not having to press CTRL+ALT+DEL leaves users susceptible to attacks that attempt to intercept the users' passwords. Requiring CTRL+ALT+DEL before users log on ensures that users are communicating by means of a trusted path when entering their passwords. If this policy is disabled, any user is required to press CTRL+ALT+DEL before logging on to Windows. Default on domain-computers: Enabled: At least Windows 8/Disabled: Windows 7 or earlier. Default on stand-alone computers: Enabled.
 <!-- InteractiveLogon_DoNotRequireCTRLALTDEL-Description-End -->
 
 <!-- InteractiveLogon_DoNotRequireCTRLALTDEL-Editable-Begin -->
@@ -790,7 +793,7 @@ Interactive logon: Do not require CTRL+ALT+DEL This security setting determines 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- InteractiveLogon_DoNotRequireCTRLALTDEL-DFProperties-End -->
@@ -801,7 +804,7 @@ Interactive logon: Do not require CTRL+ALT+DEL This security setting determines 
 | Value | Description |
 |:--|:--|
 | 0 | Disabled. |
-| 1 (Default) | Enabled (a user is not required to press CTRL+ALT+DEL to log on). |
+| 1 (Default) | Enabled (a user isn't required to press CTRL+ALT+DEL to log on). |
 <!-- InteractiveLogon_DoNotRequireCTRLALTDEL-AllowedValues-End -->
 
 <!-- InteractiveLogon_DoNotRequireCTRLALTDEL-GpMapping-Begin -->
@@ -809,7 +812,7 @@ Interactive logon: Do not require CTRL+ALT+DEL This security setting determines 
 
 | Name | Value |
 |:--|:--|
-| Name | Interactive logon: Do not require CTRL+ALT+DEL |
+| Name | Interactive logon: Don't require CTRL+ALT+DEL |
 | Path | Windows Settings > Security Settings > Local Policies > Security Options |
 <!-- InteractiveLogon_DoNotRequireCTRLALTDEL-GpMapping-End -->
 
@@ -825,7 +828,7 @@ Interactive logon: Do not require CTRL+ALT+DEL This security setting determines 
 <!-- InteractiveLogon_MachineInactivityLimit-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- InteractiveLogon_MachineInactivityLimit-Applicability-End -->
 
 <!-- InteractiveLogon_MachineInactivityLimit-OmaUri-Begin -->
@@ -848,7 +851,7 @@ Interactive logon: Machine inactivity limit. Windows notices inactivity of a log
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-599940]` |
 | Default Value  | 0 |
@@ -878,7 +881,7 @@ Valid values: From 0 to 599940, where the value is the amount of inactivity time
 <!-- InteractiveLogon_MessageTextForUsersAttemptingToLogOn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- InteractiveLogon_MessageTextForUsersAttemptingToLogOn-Applicability-End -->
 
 <!-- InteractiveLogon_MessageTextForUsersAttemptingToLogOn-OmaUri-Begin -->
@@ -889,7 +892,7 @@ Valid values: From 0 to 599940, where the value is the amount of inactivity time
 
 <!-- InteractiveLogon_MessageTextForUsersAttemptingToLogOn-Description-Begin -->
 <!-- Description-Source-DDF -->
-Interactive logon: Message text for users attempting to log on This security setting specifies a text message that is displayed to users when they log on. This text is often used for legal reasons, for example, to warn users about the ramifications of misusing company information or to warn them that their actions may be audited. Default: No message.
+Interactive logon: Message text for users attempting to log on This security setting specifies a text message that's displayed to users when they log on. This text is often used for legal reasons, for example, to warn users about the ramifications of misusing company information or to warn them that their actions may be audited. Default: No message.
 <!-- InteractiveLogon_MessageTextForUsersAttemptingToLogOn-Description-End -->
 
 <!-- InteractiveLogon_MessageTextForUsersAttemptingToLogOn-Editable-Begin -->
@@ -901,7 +904,7 @@ Interactive logon: Message text for users attempting to log on This security set
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `0xF000`) |
 <!-- InteractiveLogon_MessageTextForUsersAttemptingToLogOn-DFProperties-End -->
@@ -927,7 +930,7 @@ Interactive logon: Message text for users attempting to log on This security set
 <!-- InteractiveLogon_MessageTitleForUsersAttemptingToLogOn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- InteractiveLogon_MessageTitleForUsersAttemptingToLogOn-Applicability-End -->
 
 <!-- InteractiveLogon_MessageTitleForUsersAttemptingToLogOn-OmaUri-Begin -->
@@ -950,7 +953,7 @@ Interactive logon: Message title for users attempting to log on This security se
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- InteractiveLogon_MessageTitleForUsersAttemptingToLogOn-DFProperties-End -->
 
@@ -975,7 +978,7 @@ Interactive logon: Message title for users attempting to log on This security se
 <!-- InteractiveLogon_SmartCardRemovalBehavior-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- InteractiveLogon_SmartCardRemovalBehavior-Applicability-End -->
 
 <!-- InteractiveLogon_SmartCardRemovalBehavior-OmaUri-Begin -->
@@ -986,10 +989,10 @@ Interactive logon: Message title for users attempting to log on This security se
 
 <!-- InteractiveLogon_SmartCardRemovalBehavior-Description-Begin -->
 <!-- Description-Source-DDF -->
-Interactive logon Smart card removal behavior This security setting determines what happens when the smart card for a logged-on user is removed from the smart card reader. The options are No Action Lock Workstation Force Logoff Disconnect if a Remote Desktop Services session If you click Lock Workstation in the Properties dialog box for this policy, the workstation is locked when the smart card is removed, allowing users to leave the area, take their smart card with them, and still maintain a protected session. If you click Force Logoff in the Properties dialog box for this policy, the user is automatically logged off when the smart card is removed. If you click Disconnect if a Remote Desktop Services session, removal of the smart card disconnects the session without logging the user off. This allows the user to insert the smart card and resume the session later, or at another smart card reader-equipped computer, without having to log on again. If the session is local, this policy functions identically to Lock Workstation
+Interactive logon: Smart card removal behavior This security setting determines what happens when the smart card for a logged-on user is removed from the smart card reader. The options are: No Action Lock Workstation Force Logoff Disconnect if a Remote Desktop Services session If you click Lock Workstation in the Properties dialog box for this policy, the workstation is locked when the smart card is removed, allowing users to leave the area, take their smart card with them, and still maintain a protected session. If you click Force Logoff in the Properties dialog box for this policy, the user is automatically logged off when the smart card is removed. If you click Disconnect if a Remote Desktop Services session, removal of the smart card disconnects the session without logging the user off. This allows the user to insert the smart card and resume the session later, or at another smart card reader-equipped computer, without having to log on again. If the session is local, this policy functions identically to Lock Workstation.
 
 > [!NOTE]
-> Remote Desktop Services was called Terminal Services in previous versions of Windows Server. Default This policy is not defined, which means that the system treats it as No action. On Windows Vista and above For this setting to work, the Smart Card Removal Policy service must be started.
+> Remote Desktop Services was called Terminal Services in previous versions of Windows Server. Default: This policy isn't defined, which means that the system treats it as No action. On Windows Vista and above: For this setting to work, the Smart Card Removal Policy service must be started.
 <!-- InteractiveLogon_SmartCardRemovalBehavior-Description-End -->
 
 <!-- InteractiveLogon_SmartCardRemovalBehavior-Editable-Begin -->
@@ -1001,7 +1004,7 @@ Interactive logon Smart card removal behavior This security setting determines w
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- InteractiveLogon_SmartCardRemovalBehavior-DFProperties-End -->
@@ -1038,7 +1041,7 @@ Interactive logon Smart card removal behavior This security setting determines w
 <!-- MicrosoftNetworkClient_DigitallySignCommunicationsAlways-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- MicrosoftNetworkClient_DigitallySignCommunicationsAlways-Applicability-End -->
 
 <!-- MicrosoftNetworkClient_DigitallySignCommunicationsAlways-OmaUri-Begin -->
@@ -1049,14 +1052,17 @@ Interactive logon Smart card removal behavior This security setting determines w
 
 <!-- MicrosoftNetworkClient_DigitallySignCommunicationsAlways-Description-Begin -->
 <!-- Description-Source-DDF -->
-Microsoft network client Digitally sign communications (always) This security setting determines whether packet signing is required by the SMB client component. The server message block (SMB) protocol provides the basis for Microsoft file and print sharing and many other networking operations, such as remote Windows administration. To prevent man-in-the-middle attacks that modify SMB packets in transit, the SMB protocol supports the digital signing of SMB packets. This policy setting determines whether SMB packet signing must be negotiated before further communication with an SMB server is permitted.
-- If this setting is enabled, the Microsoft network client will not communicate with a Microsoft network server unless that server agrees to perform SMB packet signing. If this policy is disabled, SMB packet signing is negotiated between the client and server. Default Disabled
+Microsoft network client: Digitally sign communications (always) This security setting determines whether packet signing is required by the SMB client component. The server message block (SMB) protocol provides the basis for Microsoft file and print sharing and many other networking operations, such as remote Windows administration. To prevent man-in-the-middle attacks that modify SMB packets in transit, the SMB protocol supports the digital signing of SMB packets. This policy setting determines whether SMB packet signing must be negotiated before further communication with an SMB server is permitted.
+
+- If this setting is enabled, the Microsoft network client won't communicate with a Microsoft network server unless that server agrees to perform SMB packet signing.
+
+- If this policy is disabled, SMB packet signing is negotiated between the client and server. Default: Disabled.
 
 > [!IMPORTANT]
-> For this policy to take effect on computers running Windows 2000, client-side packet signing must also be enabled. To enable client-side SMB packet signing, set Microsoft network client Digitally sign communications (if server agrees)
+> For this policy to take effect on computers running Windows 2000, client-side packet signing must also be enabled. To enable client-side SMB packet signing, set Microsoft network client: Digitally sign communications (if server agrees).
 
 > [!NOTE]
-> All Windows operating systems support both a client-side SMB component and a server-side SMB component. On Windows 2000 and later operating systems, enabling or requiring packet signing for client and server-side SMB components is controlled by the following four policy settings Microsoft network client Digitally sign communications (always) - Controls whether or not the client-side SMB component requires packet signing. Microsoft network client Digitally sign communications (if server agrees) - Controls whether or not the client-side SMB component has packet signing enabled. Microsoft network server Digitally sign communications (always) - Controls whether or not the server-side SMB component requires packet signing. Microsoft network server Digitally sign communications (if client agrees) - Controls whether or not the server-side SMB component has packet signing enabled. SMB packet signing can significantly degrade SMB performance, depending on dialect version, OS version, file sizes, processor offloading capabilities, and application IO behaviors. For more information, reference <https//go.microsoft.com/fwlink/?LinkID=787136>.
+> All Windows operating systems support both a client-side SMB component and a server-side SMB component. On Windows 2000 and later operating systems, enabling or requiring packet signing for client and server-side SMB components is controlled by the following four policy settings: Microsoft network client: Digitally sign communications (always) - Controls whether or not the client-side SMB component requires packet signing. Microsoft network client: Digitally sign communications (if server agrees) - Controls whether or not the client-side SMB component has packet signing enabled. Microsoft network server: Digitally sign communications (always) - Controls whether or not the server-side SMB component requires packet signing. Microsoft network server: Digitally sign communications (if client agrees) - Controls whether or not the server-side SMB component has packet signing enabled. SMB packet signing can significantly degrade SMB performance, depending on dialect version, OS version, file sizes, processor offloading capabilities, and application IO behaviors. For more information, reference:< https://go.microsoft.com/fwlink/?LinkID=787136>.
 <!-- MicrosoftNetworkClient_DigitallySignCommunicationsAlways-Description-End -->
 
 <!-- MicrosoftNetworkClient_DigitallySignCommunicationsAlways-Editable-Begin -->
@@ -1068,7 +1074,7 @@ Microsoft network client Digitally sign communications (always) This security se
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- MicrosoftNetworkClient_DigitallySignCommunicationsAlways-DFProperties-End -->
@@ -1103,7 +1109,7 @@ Microsoft network client Digitally sign communications (always) This security se
 <!-- MicrosoftNetworkClient_DigitallySignCommunicationsIfServerAgrees-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- MicrosoftNetworkClient_DigitallySignCommunicationsIfServerAgrees-Applicability-End -->
 
 <!-- MicrosoftNetworkClient_DigitallySignCommunicationsIfServerAgrees-OmaUri-Begin -->
@@ -1114,11 +1120,14 @@ Microsoft network client Digitally sign communications (always) This security se
 
 <!-- MicrosoftNetworkClient_DigitallySignCommunicationsIfServerAgrees-Description-Begin -->
 <!-- Description-Source-DDF -->
-Microsoft network client Digitally sign communications (if server agrees) This security setting determines whether the SMB client attempts to negotiate SMB packet signing. The server message block (SMB) protocol provides the basis for Microsoft file and print sharing and many other networking operations, such as remote Windows administration. To prevent man-in-the-middle attacks that modify SMB packets in transit, the SMB protocol supports the digital signing of SMB packets. This policy setting determines whether the SMB client component attempts to negotiate SMB packet signing when it connects to an SMB server.
-- If this setting is enabled, the Microsoft network client will ask the server to perform SMB packet signing upon session setup. If packet signing has been enabled on the server, packet signing will be negotiated. If this policy is disabled, the SMB client will never negotiate SMB packet signing. Default Enabled
+Microsoft network client: Digitally sign communications (if server agrees) This security setting determines whether the SMB client attempts to negotiate SMB packet signing. The server message block (SMB) protocol provides the basis for Microsoft file and print sharing and many other networking operations, such as remote Windows administration. To prevent man-in-the-middle attacks that modify SMB packets in transit, the SMB protocol supports the digital signing of SMB packets. This policy setting determines whether the SMB client component attempts to negotiate SMB packet signing when it connects to an SMB server.
+
+- If this setting is enabled, the Microsoft network client will ask the server to perform SMB packet signing upon session setup. If packet signing has been enabled on the server, packet signing will be negotiated.
+
+- If this policy is disabled, the SMB client will never negotiate SMB packet signing. Default: Enabled.
 
 > [!NOTE]
-> All Windows operating systems support both a client-side SMB component and a server-side SMB component. On Windows 2000 and later, enabling or requiring packet signing for client and server-side SMB components is controlled by the following four policy settings Microsoft network client Digitally sign communications (always) - Controls whether or not the client-side SMB component requires packet signing. Microsoft network client Digitally sign communications (if server agrees) - Controls whether or not the client-side SMB component has packet signing enabled. Microsoft network server Digitally sign communications (always) - Controls whether or not the server-side SMB component requires packet signing. Microsoft network server Digitally sign communications (if client agrees) - Controls whether or not the server-side SMB component has packet signing enabled. If both client-side and server-side SMB signing is enabled and the client establishes an SMB 1.0 connection to the server, SMB signing will be attempted. SMB packet signing can significantly degrade SMB performance, depending on dialect version, OS version, file sizes, processor offloading capabilities, and application IO behaviors. This setting only applies to SMB 1.0 connections. For more information, reference <https//go.microsoft.com/fwlink/?LinkID=787136>.
+> All Windows operating systems support both a client-side SMB component and a server-side SMB component. On Windows 2000 and later, enabling or requiring packet signing for client and server-side SMB components is controlled by the following four policy settings: Microsoft network client: Digitally sign communications (always) - Controls whether or not the client-side SMB component requires packet signing. Microsoft network client: Digitally sign communications (if server agrees) - Controls whether or not the client-side SMB component has packet signing enabled. Microsoft network server: Digitally sign communications (always) - Controls whether or not the server-side SMB component requires packet signing. Microsoft network server: Digitally sign communications (if client agrees) - Controls whether or not the server-side SMB component has packet signing enabled. If both client-side and server-side SMB signing is enabled and the client establishes an SMB 1.0 connection to the server, SMB signing will be attempted. SMB packet signing can significantly degrade SMB performance, depending on dialect version, OS version, file sizes, processor offloading capabilities, and application IO behaviors. This setting only applies to SMB 1.0 connections. For more information, reference:< https://go.microsoft.com/fwlink/?LinkID=787136>.
 <!-- MicrosoftNetworkClient_DigitallySignCommunicationsIfServerAgrees-Description-End -->
 
 <!-- MicrosoftNetworkClient_DigitallySignCommunicationsIfServerAgrees-Editable-Begin -->
@@ -1130,7 +1139,7 @@ Microsoft network client Digitally sign communications (if server agrees) This s
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- MicrosoftNetworkClient_DigitallySignCommunicationsIfServerAgrees-DFProperties-End -->
@@ -1165,7 +1174,7 @@ Microsoft network client Digitally sign communications (if server agrees) This s
 <!-- MicrosoftNetworkClient_SendUnencryptedPasswordToThirdPartySMBServers-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- MicrosoftNetworkClient_SendUnencryptedPasswordToThirdPartySMBServers-Applicability-End -->
 
 <!-- MicrosoftNetworkClient_SendUnencryptedPasswordToThirdPartySMBServers-OmaUri-Begin -->
@@ -1176,7 +1185,7 @@ Microsoft network client Digitally sign communications (if server agrees) This s
 
 <!-- MicrosoftNetworkClient_SendUnencryptedPasswordToThirdPartySMBServers-Description-Begin -->
 <!-- Description-Source-DDF -->
-Microsoft network client: Send unencrypted password to connect to third-party SMB servers If this security setting is enabled, the Server Message Block (SMB) redirector is allowed to send plaintext passwords to non-Microsoft SMB servers that do not support password encryption during authentication. Sending unencrypted passwords is a security risk. Default: Disabled.
+Microsoft network client: Send unencrypted password to connect to third-party SMB servers If this security setting is enabled, the Server Message Block (SMB) redirector is allowed to send plaintext passwords to non-Microsoft SMB servers that don't support password encryption during authentication. Sending unencrypted passwords is a security risk. Default: Disabled.
 <!-- MicrosoftNetworkClient_SendUnencryptedPasswordToThirdPartySMBServers-Description-End -->
 
 <!-- MicrosoftNetworkClient_SendUnencryptedPasswordToThirdPartySMBServers-Editable-Begin -->
@@ -1188,7 +1197,7 @@ Microsoft network client: Send unencrypted password to connect to third-party SM
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- MicrosoftNetworkClient_SendUnencryptedPasswordToThirdPartySMBServers-DFProperties-End -->
@@ -1223,7 +1232,7 @@ Microsoft network client: Send unencrypted password to connect to third-party SM
 <!-- MicrosoftNetworkServer_DigitallySignCommunicationsAlways-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- MicrosoftNetworkServer_DigitallySignCommunicationsAlways-Applicability-End -->
 
 <!-- MicrosoftNetworkServer_DigitallySignCommunicationsAlways-OmaUri-Begin -->
@@ -1234,15 +1243,17 @@ Microsoft network client: Send unencrypted password to connect to third-party SM
 
 <!-- MicrosoftNetworkServer_DigitallySignCommunicationsAlways-Description-Begin -->
 <!-- Description-Source-DDF -->
-Microsoft network server Digitally sign communications (always) This security setting determines whether packet signing is required by the SMB server component. The server message block (SMB) protocol provides the basis for Microsoft file and print sharing and many other networking operations, such as remote Windows administration. To prevent man-in-the-middle attacks that modify SMB packets in transit, the SMB protocol supports the digital signing of SMB packets. This policy setting determines whether SMB packet signing must be negotiated before further communication with an SMB client is permitted.
-- If this setting is enabled, the Microsoft network server will not communicate with a Microsoft network client unless that client agrees to perform SMB packet signing.
-- If this setting is disabled, SMB packet signing is negotiated between the client and server. Default Disabled for member servers. Enabled for domain controllers
+Microsoft network server: Digitally sign communications (always) This security setting determines whether packet signing is required by the SMB server component. The server message block (SMB) protocol provides the basis for Microsoft file and print sharing and many other networking operations, such as remote Windows administration. To prevent man-in-the-middle attacks that modify SMB packets in transit, the SMB protocol supports the digital signing of SMB packets. This policy setting determines whether SMB packet signing must be negotiated before further communication with an SMB client is permitted.
+
+- If this setting is enabled, the Microsoft network server won't communicate with a Microsoft network client unless that client agrees to perform SMB packet signing.
+
+- If this setting is disabled, SMB packet signing is negotiated between the client and server. Default: Disabled for member servers. Enabled for domain controllers.
 
 > [!NOTE]
-> All Windows operating systems support both a client-side SMB component and a server-side SMB component. On Windows 2000 and later, enabling or requiring packet signing for client and server-side SMB components is controlled by the following four policy settings Microsoft network client Digitally sign communications (always) - Controls whether or not the client-side SMB component requires packet signing. Microsoft network client Digitally sign communications (if server agrees) - Controls whether or not the client-side SMB component has packet signing enabled. Microsoft network server Digitally sign communications (always) - Controls whether or not the server-side SMB component requires packet signing. Microsoft network server Digitally sign communications (if client agrees) - Controls whether or not the server-side SMB component has packet signing enabled. Similarly, if client-side SMB signing is required, that client will not be able to establish a session with servers that do not have packet signing enabled. By default, server-side SMB signing is enabled only on domain controllers. If server-side SMB signing is enabled, SMB packet signing will be negotiated with clients that have client-side SMB signing enabled. SMB packet signing can significantly degrade SMB performance, depending on dialect version, OS version, file sizes, processor offloading capabilities, and application IO behaviors
+> All Windows operating systems support both a client-side SMB component and a server-side SMB component. On Windows 2000 and later, enabling or requiring packet signing for client and server-side SMB components is controlled by the following four policy settings: Microsoft network client: Digitally sign communications (always) - Controls whether or not the client-side SMB component requires packet signing. Microsoft network client: Digitally sign communications (if server agrees) - Controls whether or not the client-side SMB component has packet signing enabled. Microsoft network server: Digitally sign communications (always) - Controls whether or not the server-side SMB component requires packet signing. Microsoft network server: Digitally sign communications (if client agrees) - Controls whether or not the server-side SMB component has packet signing enabled. Similarly, if client-side SMB signing is required, that client won't be able to establish a session with servers that don't have packet signing enabled. By default, server-side SMB signing is enabled only on domain controllers. If server-side SMB signing is enabled, SMB packet signing will be negotiated with clients that have client-side SMB signing enabled. SMB packet signing can significantly degrade SMB performance, depending on dialect version, OS version, file sizes, processor offloading capabilities, and application IO behaviors.
 
 > [!IMPORTANT]
-> For this policy to take effect on computers running Windows 2000, server-side packet signing must also be enabled. To enable server-side SMB packet signing, set the following policy Microsoft network server Digitally sign communications (if server agrees) For Windows 2000 servers to negotiate signing with Windows NT 4.0 clients, the following registry value must be set to 1 on the Windows 2000 server HKLM\System\CurrentControlSet\Services\lanmanserver\parameters\enableW9xsecuritysignature For more information, reference <https//go.microsoft.com/fwlink/?LinkID=787136>.
+> For this policy to take effect on computers running Windows 2000, server-side packet signing must also be enabled. To enable server-side SMB packet signing, set the following policy: Microsoft network server: Digitally sign communications (if server agrees) For Windows 2000 servers to negotiate signing with Windows NT 4.0 clients, the following registry value must be set to 1 on the Windows 2000 server: HKLM\System\CurrentControlSet\Services\lanmanserver\parameters\enableW9xsecuritysignature For more information, reference:< https://go.microsoft.com/fwlink/?LinkID=787136>.
 <!-- MicrosoftNetworkServer_DigitallySignCommunicationsAlways-Description-End -->
 
 <!-- MicrosoftNetworkServer_DigitallySignCommunicationsAlways-Editable-Begin -->
@@ -1254,7 +1265,7 @@ Microsoft network server Digitally sign communications (always) This security se
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- MicrosoftNetworkServer_DigitallySignCommunicationsAlways-DFProperties-End -->
@@ -1289,7 +1300,7 @@ Microsoft network server Digitally sign communications (always) This security se
 <!-- MicrosoftNetworkServer_DigitallySignCommunicationsIfClientAgrees-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- MicrosoftNetworkServer_DigitallySignCommunicationsIfClientAgrees-Applicability-End -->
 
 <!-- MicrosoftNetworkServer_DigitallySignCommunicationsIfClientAgrees-OmaUri-Begin -->
@@ -1300,11 +1311,14 @@ Microsoft network server Digitally sign communications (always) This security se
 
 <!-- MicrosoftNetworkServer_DigitallySignCommunicationsIfClientAgrees-Description-Begin -->
 <!-- Description-Source-DDF -->
-Microsoft network server Digitally sign communications (if client agrees) This security setting determines whether the SMB server will negotiate SMB packet signing with clients that request it. The server message block (SMB) protocol provides the basis for Microsoft file and print sharing and many other networking operations, such as remote Windows administration. To prevent man-in-the-middle attacks that modify SMB packets in transit, the SMB protocol supports the digital signing of SMB packets. This policy setting determines whether the SMB server will negotiate SMB packet signing when an SMB client requests it.
-- If this setting is enabled, the Microsoft network server will negotiate SMB packet signing as requested by the client. That is, if packet signing has been enabled on the client, packet signing will be negotiated. If this policy is disabled, the SMB client will never negotiate SMB packet signing. Default Enabled on domain controllers only
+Microsoft network server: Digitally sign communications (if client agrees) This security setting determines whether the SMB server will negotiate SMB packet signing with clients that request it. The server message block (SMB) protocol provides the basis for Microsoft file and print sharing and many other networking operations, such as remote Windows administration. To prevent man-in-the-middle attacks that modify SMB packets in transit, the SMB protocol supports the digital signing of SMB packets. This policy setting determines whether the SMB server will negotiate SMB packet signing when an SMB client requests it.
+
+- If this setting is enabled, the Microsoft network server will negotiate SMB packet signing as requested by the client. That is, if packet signing has been enabled on the client, packet signing will be negotiated.
+
+- If this policy is disabled, the SMB client will never negotiate SMB packet signing. Default: Enabled on domain controllers only.
 
 > [!IMPORTANT]
-> For Windows 2000 servers to negotiate signing with Windows NT 4.0 clients, the following registry value must be set to 1 on the server running Windows 2000 HKLM\System\CurrentControlSet\Services\lanmanserver\parameters\enableW9xsecuritysignature Notes All Windows operating systems support both a client-side SMB component and a server-side SMB component. For Windows 2000 and above, enabling or requiring packet signing for client and server-side SMB components is controlled by the following four policy settings Microsoft network client Digitally sign communications (always) - Controls whether or not the client-side SMB component requires packet signing. Microsoft network client Digitally sign communications (if server agrees) - Controls whether or not the client-side SMB component has packet signing enabled. Microsoft network server Digitally sign communications (always) - Controls whether or not the server-side SMB component requires packet signing. Microsoft network server Digitally sign communications (if client agrees) - Controls whether or not the server-side SMB component has packet signing enabled. If both client-side and server-side SMB signing is enabled and the client establishes an SMB 1.0 connection to the server, SMB signing will be attempted. SMB packet signing can significantly degrade SMB performance, depending on dialect version, OS version, file sizes, processor offloading capabilities, and application IO behaviors. This setting only applies to SMB 1.0 connections. For more information, reference <https//go.microsoft.com/fwlink/?LinkID=787136>.
+> For Windows 2000 servers to negotiate signing with Windows NT 4.0 clients, the following registry value must be set to 1 on the server running Windows 2000: HKLM\System\CurrentControlSet\Services\lanmanserver\parameters\enableW9xsecuritysignature Notes All Windows operating systems support both a client-side SMB component and a server-side SMB component. For Windows 2000 and above, enabling or requiring packet signing for client and server-side SMB components is controlled by the following four policy settings: Microsoft network client: Digitally sign communications (always) - Controls whether or not the client-side SMB component requires packet signing. Microsoft network client: Digitally sign communications (if server agrees) - Controls whether or not the client-side SMB component has packet signing enabled. Microsoft network server: Digitally sign communications (always) - Controls whether or not the server-side SMB component requires packet signing. Microsoft network server: Digitally sign communications (if client agrees) - Controls whether or not the server-side SMB component has packet signing enabled. If both client-side and server-side SMB signing is enabled and the client establishes an SMB 1.0 connection to the server, SMB signing will be attempted. SMB packet signing can significantly degrade SMB performance, depending on dialect version, OS version, file sizes, processor offloading capabilities, and application IO behaviors. This setting only applies to SMB 1.0 connections. For more information, reference:< https://go.microsoft.com/fwlink/?LinkID=787136>.
 <!-- MicrosoftNetworkServer_DigitallySignCommunicationsIfClientAgrees-Description-End -->
 
 <!-- MicrosoftNetworkServer_DigitallySignCommunicationsIfClientAgrees-Editable-Begin -->
@@ -1316,7 +1330,7 @@ Microsoft network server Digitally sign communications (if client agrees) This s
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- MicrosoftNetworkServer_DigitallySignCommunicationsIfClientAgrees-DFProperties-End -->
@@ -1351,7 +1365,7 @@ Microsoft network server Digitally sign communications (if client agrees) This s
 <!-- NetworkAccess_AllowAnonymousSIDOrNameTranslation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- NetworkAccess_AllowAnonymousSIDOrNameTranslation-Applicability-End -->
 
 <!-- NetworkAccess_AllowAnonymousSIDOrNameTranslation-OmaUri-Begin -->
@@ -1362,8 +1376,11 @@ Microsoft network server Digitally sign communications (if client agrees) This s
 
 <!-- NetworkAccess_AllowAnonymousSIDOrNameTranslation-Description-Begin -->
 <!-- Description-Source-DDF -->
-Network access: Allow anonymous SID/name translation This policy setting determines whether an anonymous user can request security identifier (SID) attributes for another user. If this policy is enabled, an anonymous user can request the SID attribute for another user. An anonymous user with knowledge of an administrator's SID could contact a computer that has this policy enabled and use the SID to get the administrator's name. This setting affects both the SID-to-name translation as well as the name-to-SID translation.
-- If this policy setting is disabled, an anonymous user cannot request the SID attribute for another user. Default on workstations and member servers: Disabled. Default on domain controllers running Windows Server 2008 or later: Disabled. Default on domain controllers running Windows Server 2003 R2 or earlier: Enabled.
+Network access: Allow anonymous SID/name translation This policy setting determines whether an anonymous user can request security identifier (SID) attributes for another user.
+
+- If this policy is enabled, an anonymous user can request the SID attribute for another user. An anonymous user with knowledge of an administrator's SID could contact a computer that has this policy enabled and use the SID to get the administrator's name. This setting affects both the SID-to-name translation as well as the name-to-SID translation.
+
+- If this policy setting is disabled, an anonymous user can't request the SID attribute for another user. Default on workstations and member servers: Disabled. Default on domain controllers running Windows Server 2008 or later: Disabled. Default on domain controllers running Windows Server 2003 R2 or earlier: Enabled.
 <!-- NetworkAccess_AllowAnonymousSIDOrNameTranslation-Description-End -->
 
 <!-- NetworkAccess_AllowAnonymousSIDOrNameTranslation-Editable-Begin -->
@@ -1375,7 +1392,7 @@ Network access: Allow anonymous SID/name translation This policy setting determi
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- NetworkAccess_AllowAnonymousSIDOrNameTranslation-DFProperties-End -->
@@ -1410,7 +1427,7 @@ Network access: Allow anonymous SID/name translation This policy setting determi
 <!-- NetworkAccess_DoNotAllowAnonymousEnumerationOfSAMAccounts-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- NetworkAccess_DoNotAllowAnonymousEnumerationOfSAMAccounts-Applicability-End -->
 
 <!-- NetworkAccess_DoNotAllowAnonymousEnumerationOfSAMAccounts-OmaUri-Begin -->
@@ -1421,7 +1438,7 @@ Network access: Allow anonymous SID/name translation This policy setting determi
 
 <!-- NetworkAccess_DoNotAllowAnonymousEnumerationOfSAMAccounts-Description-Begin -->
 <!-- Description-Source-DDF -->
-Network access Do not allow anonymous enumeration of SAM accounts This security setting determines what additional permissions will be granted for anonymous connections to the computer. Windows allows anonymous users to perform certain activities, such as enumerating the names of domain accounts and network shares. This is convenient, for example, when an administrator wants to grant access to users in a trusted domain that does not maintain a reciprocal trust. This security option allows additional restrictions to be placed on anonymous connections as follows Enabled Do not allow enumeration of SAM accounts. This option replaces Everyone with Authenticated Users in the security permissions for resources. Disabled No additional restrictions. Rely on default permissions. Default on workstations Enabled. Default on serverEnabled
+Network access: Don't allow anonymous enumeration of SAM accounts This security setting determines what additional permissions will be granted for anonymous connections to the computer. Windows allows anonymous users to perform certain activities, such as enumerating the names of domain accounts and network shares. This is convenient, for example, when an administrator wants to grant access to users in a trusted domain that doesn't maintain a reciprocal trust. This security option allows additional restrictions to be placed on anonymous connections as follows: Enabled: Don't allow enumeration of SAM accounts. This option replaces Everyone with Authenticated Users in the security permissions for resources. Disabled: No additional restrictions. Rely on default permissions. Default on workstations: Enabled. Default on server:Enabled.
 
 > [!IMPORTANT]
 > This policy has no impact on domain controllers.
@@ -1436,7 +1453,7 @@ Network access Do not allow anonymous enumeration of SAM accounts This security 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- NetworkAccess_DoNotAllowAnonymousEnumerationOfSAMAccounts-DFProperties-End -->
@@ -1455,7 +1472,7 @@ Network access Do not allow anonymous enumeration of SAM accounts This security 
 
 | Name | Value |
 |:--|:--|
-| Name | Network access: Do not allow anonymous enumeration of SAM accounts |
+| Name | Network access: Don't allow anonymous enumeration of SAM accounts |
 | Path | Windows Settings > Security Settings > Local Policies > Security Options |
 <!-- NetworkAccess_DoNotAllowAnonymousEnumerationOfSAMAccounts-GpMapping-End -->
 
@@ -1471,7 +1488,7 @@ Network access Do not allow anonymous enumeration of SAM accounts This security 
 <!-- NetworkAccess_DoNotAllowAnonymousEnumerationOfSamAccountsAndShares-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- NetworkAccess_DoNotAllowAnonymousEnumerationOfSamAccountsAndShares-Applicability-End -->
 
 <!-- NetworkAccess_DoNotAllowAnonymousEnumerationOfSamAccountsAndShares-OmaUri-Begin -->
@@ -1482,7 +1499,7 @@ Network access Do not allow anonymous enumeration of SAM accounts This security 
 
 <!-- NetworkAccess_DoNotAllowAnonymousEnumerationOfSamAccountsAndShares-Description-Begin -->
 <!-- Description-Source-DDF -->
-Network access: Do not allow anonymous enumeration of SAM accounts and shares This security setting determines whether anonymous enumeration of SAM accounts and shares is allowed. Windows allows anonymous users to perform certain activities, such as enumerating the names of domain accounts and network shares. This is convenient, for example, when an administrator wants to grant access to users in a trusted domain that does not maintain a reciprocal trust. If you do not want to allow anonymous enumeration of SAM accounts and shares, then enable this policy. Default: Disabled.
+Network access: Don't allow anonymous enumeration of SAM accounts and shares This security setting determines whether anonymous enumeration of SAM accounts and shares is allowed. Windows allows anonymous users to perform certain activities, such as enumerating the names of domain accounts and network shares. This is convenient, for example, when an administrator wants to grant access to users in a trusted domain that doesn't maintain a reciprocal trust. If you don't want to allow anonymous enumeration of SAM accounts and shares, then enable this policy. Default: Disabled.
 <!-- NetworkAccess_DoNotAllowAnonymousEnumerationOfSamAccountsAndShares-Description-End -->
 
 <!-- NetworkAccess_DoNotAllowAnonymousEnumerationOfSamAccountsAndShares-Editable-Begin -->
@@ -1494,7 +1511,7 @@ Network access: Do not allow anonymous enumeration of SAM accounts and shares Th
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- NetworkAccess_DoNotAllowAnonymousEnumerationOfSamAccountsAndShares-DFProperties-End -->
@@ -1513,7 +1530,7 @@ Network access: Do not allow anonymous enumeration of SAM accounts and shares Th
 
 | Name | Value |
 |:--|:--|
-| Name | Network access: Do not allow anonymous enumeration of SAM accounts and shares |
+| Name | Network access: Don't allow anonymous enumeration of SAM accounts and shares |
 | Path | Windows Settings > Security Settings > Local Policies > Security Options |
 <!-- NetworkAccess_DoNotAllowAnonymousEnumerationOfSamAccountsAndShares-GpMapping-End -->
 
@@ -1529,7 +1546,7 @@ Network access: Do not allow anonymous enumeration of SAM accounts and shares Th
 <!-- NetworkAccess_RestrictAnonymousAccessToNamedPipesAndShares-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- NetworkAccess_RestrictAnonymousAccessToNamedPipesAndShares-Applicability-End -->
 
 <!-- NetworkAccess_RestrictAnonymousAccessToNamedPipesAndShares-OmaUri-Begin -->
@@ -1552,7 +1569,7 @@ Network access: Restrict anonymous access to Named Pipes and Shares When enabled
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- NetworkAccess_RestrictAnonymousAccessToNamedPipesAndShares-DFProperties-End -->
@@ -1587,7 +1604,7 @@ Network access: Restrict anonymous access to Named Pipes and Shares When enabled
 <!-- NetworkAccess_RestrictClientsAllowedToMakeRemoteCallsToSAM-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- NetworkAccess_RestrictClientsAllowedToMakeRemoteCallsToSAM-Applicability-End -->
 
 <!-- NetworkAccess_RestrictClientsAllowedToMakeRemoteCallsToSAM-OmaUri-Begin -->
@@ -1610,7 +1627,7 @@ Network access: Restrict clients allowed to make remote calls to SAM This policy
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- NetworkAccess_RestrictClientsAllowedToMakeRemoteCallsToSAM-DFProperties-End -->
 
@@ -1635,7 +1652,7 @@ Network access: Restrict clients allowed to make remote calls to SAM This policy
 <!-- NetworkSecurity_AllowLocalSystemToUseComputerIdentityForNTLM-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- NetworkSecurity_AllowLocalSystemToUseComputerIdentityForNTLM-Applicability-End -->
 
 <!-- NetworkSecurity_AllowLocalSystemToUseComputerIdentityForNTLM-OmaUri-Begin -->
@@ -1646,12 +1663,14 @@ Network access: Restrict clients allowed to make remote calls to SAM This policy
 
 <!-- NetworkSecurity_AllowLocalSystemToUseComputerIdentityForNTLM-Description-Begin -->
 <!-- Description-Source-DDF -->
-Network security Allow Local System to use computer identity for NTLM This policy setting allows Local System services that use Negotiate to use the computer identity when reverting to NTLM authentication.
+Network security: Allow Local System to use computer identity for NTLM This policy setting allows Local System services that use Negotiate to use the computer identity when reverting to NTLM authentication.
+
 - If you enable this policy setting, services running as Local System that use Negotiate will use the computer identity. This might cause some authentication requests between Windows operating systems to fail and log an error.
-- If you disable this policy setting, services running as Local System that use Negotiate when reverting to NTLM authentication will authenticate anonymously. By default, this policy is enabled on Windows 7 and above. By default, this policy is disabled on Windows Vista. This policy is supported on at least Windows Vista or Windows Server 2008
+
+- If you disable this policy setting, services running as Local System that use Negotiate when reverting to NTLM authentication will authenticate anonymously. By default, this policy is enabled on Windows 7 and above. By default, this policy is disabled on Windows Vista. This policy is supported on at least Windows Vista or Windows Server 2008.
 
 > [!NOTE]
-> Windows Vista or Windows Server 2008 do not expose this setting in Group Policy.
+> Windows Vista or Windows Server 2008 don't expose this setting in Group Policy.
 <!-- NetworkSecurity_AllowLocalSystemToUseComputerIdentityForNTLM-Description-End -->
 
 <!-- NetworkSecurity_AllowLocalSystemToUseComputerIdentityForNTLM-Editable-Begin -->
@@ -1665,7 +1684,7 @@ Network security Allow Local System to use computer identity for NTLM This polic
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- NetworkSecurity_AllowLocalSystemToUseComputerIdentityForNTLM-DFProperties-End -->
@@ -1700,7 +1719,7 @@ Network security Allow Local System to use computer identity for NTLM This polic
 <!-- NetworkSecurity_AllowPKU2UAuthenticationRequests-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- NetworkSecurity_AllowPKU2UAuthenticationRequests-Applicability-End -->
 
 <!-- NetworkSecurity_AllowPKU2UAuthenticationRequests-OmaUri-Begin -->
@@ -1723,7 +1742,7 @@ Network security: Allow PKU2U authentication requests to this computer to use on
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- NetworkSecurity_AllowPKU2UAuthenticationRequests-DFProperties-End -->
@@ -1761,7 +1780,7 @@ Network security: Allow PKU2U authentication requests to this computer to use on
 <!-- NetworkSecurity_DoNotStoreLANManagerHashValueOnNextPasswordChange-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- NetworkSecurity_DoNotStoreLANManagerHashValueOnNextPasswordChange-Applicability-End -->
 
 <!-- NetworkSecurity_DoNotStoreLANManagerHashValueOnNextPasswordChange-OmaUri-Begin -->
@@ -1772,7 +1791,7 @@ Network security: Allow PKU2U authentication requests to this computer to use on
 
 <!-- NetworkSecurity_DoNotStoreLANManagerHashValueOnNextPasswordChange-Description-Begin -->
 <!-- Description-Source-DDF -->
-Network security Do not store LAN Manager hash value on next password change This security setting determines if, at the next password change, the LAN Manager (LM) hash value for the new password is stored. The LM hash is relatively weak and prone to attack, as compared with the cryptographically stronger Windows NT hash. Since the LM hash is stored on the local computer in the security database the passwords can be compromised if the security database is attacked. Default on Windows Vista and above Enabled Default on Windows XP Disabled
+Network security: Don't store LAN Manager hash value on next password change This security setting determines if, at the next password change, the LAN Manager (LM) hash value for the new password is stored. The LM hash is relatively weak and prone to attack, as compared with the cryptographically stronger Windows NT hash. Since the LM hash is stored on the local computer in the security database the passwords can be compromised if the security database is attacked. Default on Windows Vista and above: Enabled Default on Windows XP: Disabled.
 
 > [!IMPORTANT]
 > Windows 2000 Service Pack 2 (SP2) and above offer compatibility with authentication to previous versions of Windows, such as Microsoft Windows NT 4.0. This setting can affect the ability of computers running Windows 2000 Server, Windows 2000 Professional, Windows XP, and the Windows Server 2003 family to communicate with computers running Windows 95 and Windows 98.
@@ -1787,7 +1806,7 @@ Network security Do not store LAN Manager hash value on next password change Thi
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- NetworkSecurity_DoNotStoreLANManagerHashValueOnNextPasswordChange-DFProperties-End -->
@@ -1806,7 +1825,7 @@ Network security Do not store LAN Manager hash value on next password change Thi
 
 | Name | Value |
 |:--|:--|
-| Name | Network security: Do not store LAN Manager hash value on next password change |
+| Name | Network security: Don't store LAN Manager hash value on next password change |
 | Path | Windows Settings > Security Settings > Local Policies > Security Options |
 <!-- NetworkSecurity_DoNotStoreLANManagerHashValueOnNextPasswordChange-GpMapping-End -->
 
@@ -1822,7 +1841,7 @@ Network security Do not store LAN Manager hash value on next password change Thi
 <!-- NetworkSecurity_ForceLogoffWhenLogonHoursExpire-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- NetworkSecurity_ForceLogoffWhenLogonHoursExpire-Applicability-End -->
 
 <!-- NetworkSecurity_ForceLogoffWhenLogonHoursExpire-OmaUri-Begin -->
@@ -1833,10 +1852,10 @@ Network security Do not store LAN Manager hash value on next password change Thi
 
 <!-- NetworkSecurity_ForceLogoffWhenLogonHoursExpire-Description-Begin -->
 <!-- Description-Source-DDF -->
-Network security Force logoff when logon hours expire This security setting determines whether to disconnect users who are connected to the local computer outside their user account's valid logon hours. This setting affects the Server Message Block (SMB) component. When this policy is enabled, it causes client sessions with the SMB server to be forcibly disconnected when the client's logon hours expire. If this policy is disabled, an established client session is allowed to be maintained after the client's logon hours have expired. Default Enabled
+Network security: Force logoff when logon hours expire This security setting determines whether to disconnect users who are connected to the local computer outside their user account's valid logon hours. This setting affects the Server Message Block (SMB) component. When this policy is enabled, it causes client sessions with the SMB server to be forcibly disconnected when the client's logon hours expire. If this policy is disabled, an established client session is allowed to be maintained after the client's logon hours have expired. Default: Enabled.
 
 > [!NOTE]
-> This security setting behaves as an account policy. For domain accounts, there can be only one account policy. The account policy must be defined in the Default Domain Policy, and it is enforced by the domain controllers that make up the domain. A domain controller always pulls the account policy from the Default Domain Policy Group Policy object (GPO), even if there is a different account policy applied to the organizational unit that contains the domain controller. By default, workstations and servers that are joined to a domain (for example, member computers) also receive the same account policy for their local accounts. However, local account policies for member computers can be different from the domain account policy by defining an account policy for the organizational unit that contains the member computers. Kerberos settings are not applied to member computers.
+> This security setting behaves as an account policy. For domain accounts, there can be only one account policy. The account policy must be defined in the Default Domain Policy, and it's enforced by the domain controllers that make up the domain. A domain controller always pulls the account policy from the Default Domain Policy Group Policy object (GPO), even if there is a different account policy applied to the organizational unit that contains the domain controller. By default, workstations and servers that are joined to a domain (for example, member computers) also receive the same account policy for their local accounts. However, local account policies for member computers can be different from the domain account policy by defining an account policy for the organizational unit that contains the member computers. Kerberos settings aren't applied to member computers.
 <!-- NetworkSecurity_ForceLogoffWhenLogonHoursExpire-Description-End -->
 
 <!-- NetworkSecurity_ForceLogoffWhenLogonHoursExpire-Editable-Begin -->
@@ -1848,7 +1867,7 @@ Network security Force logoff when logon hours expire This security setting dete
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- NetworkSecurity_ForceLogoffWhenLogonHoursExpire-DFProperties-End -->
@@ -1883,7 +1902,7 @@ Network security Force logoff when logon hours expire This security setting dete
 <!-- NetworkSecurity_LANManagerAuthenticationLevel-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- NetworkSecurity_LANManagerAuthenticationLevel-Applicability-End -->
 
 <!-- NetworkSecurity_LANManagerAuthenticationLevel-OmaUri-Begin -->
@@ -1894,10 +1913,10 @@ Network security Force logoff when logon hours expire This security setting dete
 
 <!-- NetworkSecurity_LANManagerAuthenticationLevel-Description-Begin -->
 <!-- Description-Source-DDF -->
-Network security LAN Manager authentication level This security setting determines which challenge/response authentication protocol is used for network logons. This choice affects the level of authentication protocol used by clients, the level of session security negotiated, and the level of authentication accepted by servers as follows Send LM and NTLM responses Clients use LM and NTLM authentication and never use NTLMv2 session security; domain controllers accept LM, NTLM, and NTLMv2 authentication. Send LM and NTLM - use NTLMv2 session security if negotiated Clients use LM and NTLM authentication and use NTLMv2 session security if the server supports it; domain controllers accept LM, NTLM, and NTLMv2 authentication. Send NTLM response only Clients use NTLM authentication only and use NTLMv2 session security if the server supports it; domain controllers accept LM, NTLM, and NTLMv2 authentication. Send NTLMv2 response only Clients use NTLMv2 authentication only and use NTLMv2 session security if the server supports it; domain controllers accept LM, NTLM, and NTLMv2 authentication. Send NTLMv2 response only\refuse LM Clients use NTLMv2 authentication only and use NTLMv2 session security if the server supports it; domain controllers refuse LM (accept only NTLM and NTLMv2 authentication). Send NTLMv2 response only\refuse LM and NTLM Clients use NTLMv2 authentication only and use NTLMv2 session security if the server supports it; domain controllers refuse LM and NTLM (accept only NTLMv2 authentication)
+Network security LAN Manager authentication level This security setting determines which challenge/response authentication protocol is used for network logons. This choice affects the level of authentication protocol used by clients, the level of session security negotiated, and the level of authentication accepted by servers as follows: Send LM and NTLM responses: Clients use LM and NTLM authentication and never use NTLMv2 session security; domain controllers accept LM, NTLM, and NTLMv2 authentication. Send LM and NTLM - use NTLMv2 session security if negotiated: Clients use LM and NTLM authentication and use NTLMv2 session security if the server supports it; domain controllers accept LM, NTLM, and NTLMv2 authentication. Send NTLM response only: Clients use NTLM authentication only and use NTLMv2 session security if the server supports it; domain controllers accept LM, NTLM, and NTLMv2 authentication. Send NTLMv2 response only: Clients use NTLMv2 authentication only and use NTLMv2 session security if the server supports it; domain controllers accept LM, NTLM, and NTLMv2 authentication. Send NTLMv2 response only\refuse LM: Clients use NTLMv2 authentication only and use NTLMv2 session security if the server supports it; domain controllers refuse LM (accept only NTLM and NTLMv2 authentication). Send NTLMv2 response only\refuse LM and NTLM: Clients use NTLMv2 authentication only and use NTLMv2 session security if the server supports it; domain controllers refuse LM and NTLM (accept only NTLMv2 authentication).
 
 > [!IMPORTANT]
-> This setting can affect the ability of computers running Windows 2000 Server, Windows 2000 Professional, Windows XP Professional, and the Windows Server 2003 family to communicate with computers running Windows NT 4.0 and earlier over the network. For example, at the time of this writing, computers running Windows NT 4.0 SP4 and earlier did not support NTLMv2. Computers running Windows 95 and Windows 98 did not support NTLM. Default Windows 2000 and windows XP send LM and NTLM responses Windows Server 2003 Send NTLM response only Windows Vista, Windows Server 2008, Windows 7, and Windows Server 2008 R2 Send NTLMv2 response only
+> This setting can affect the ability of computers running Windows 2000 Server, Windows 2000 Professional, Windows XP Professional, and the Windows Server 2003 family to communicate with computers running Windows NT 4.0 and earlier over the network. For example, at the time of this writing, computers running Windows NT 4.0 SP4 and earlier didn't support NTLMv2. Computers running Windows 95 and Windows 98 didn't support NTLM. Default: Windows 2000 and windows XP: send LM and NTLM responses Windows Server 2003: Send NTLM response only Windows Vista, Windows Server 2008, Windows 7, and Windows Server 2008 R2: Send NTLMv2 response only.
 <!-- NetworkSecurity_LANManagerAuthenticationLevel-Description-End -->
 
 <!-- NetworkSecurity_LANManagerAuthenticationLevel-Editable-Begin -->
@@ -1909,7 +1928,7 @@ Network security LAN Manager authentication level This security setting determin
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 3 |
 <!-- NetworkSecurity_LANManagerAuthenticationLevel-DFProperties-End -->
@@ -1948,7 +1967,7 @@ Network security LAN Manager authentication level This security setting determin
 <!-- NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedClients-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedClients-Applicability-End -->
 
 <!-- NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedClients-OmaUri-Begin -->
@@ -1959,7 +1978,7 @@ Network security LAN Manager authentication level This security setting determin
 
 <!-- NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedClients-Description-Begin -->
 <!-- Description-Source-DDF -->
-Network security: Minimum session security for NTLM SSP based (including secure RPC) clients This security setting allows a client to require the negotiation of 128-bit encryption and/or NTLMv2 session security. These values are dependent on the LAN Manager Authentication Level security setting value. The options are: Require NTLMv2 session security: The connection will fail if NTLMv2 protocol is not negotiated. Require 128-bit encryption: The connection will fail if strong encryption (128-bit) is not negotiated. Default: Windows XP, Windows Vista, Windows 2000 Server, Windows Server 2003, and Windows Server 2008: No requirements. Windows 7 and Windows Server 2008 R2: Require 128-bit encryption
+Network security: Minimum session security for NTLM SSP based (including secure RPC) clients This security setting allows a client to require the negotiation of 128-bit encryption and/or NTLMv2 session security. These values are dependent on the LAN Manager Authentication Level security setting value. The options are: Require NTLMv2 session security: The connection will fail if NTLMv2 protocol isn't negotiated. Require 128-bit encryption: The connection will fail if strong encryption (128-bit) isn't negotiated. Default: Windows XP, Windows Vista, Windows 2000 Server, Windows Server 2003, and Windows Server 2008: No requirements. Windows 7 and Windows Server 2008 R2: Require 128-bit encryption.
 <!-- NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedClients-Description-End -->
 
 <!-- NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedClients-Editable-Begin -->
@@ -1971,7 +1990,7 @@ Network security: Minimum session security for NTLM SSP based (including secure 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 536870912 |
 <!-- NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedClients-DFProperties-End -->
@@ -2008,7 +2027,7 @@ Network security: Minimum session security for NTLM SSP based (including secure 
 <!-- NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedServers-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedServers-Applicability-End -->
 
 <!-- NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedServers-OmaUri-Begin -->
@@ -2019,7 +2038,7 @@ Network security: Minimum session security for NTLM SSP based (including secure 
 
 <!-- NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedServers-Description-Begin -->
 <!-- Description-Source-DDF -->
-Network security: Minimum session security for NTLM SSP based (including secure RPC) servers This security setting allows a server to require the negotiation of 128-bit encryption and/or NTLMv2 session security. These values are dependent on the LAN Manager Authentication Level security setting value. The options are: Require NTLMv2 session security: The connection will fail if message integrity is not negotiated. Require 128-bit encryption. The connection will fail if strong encryption (128-bit) is not negotiated. Default: Windows XP, Windows Vista, Windows 2000 Server, Windows Server 2003, and Windows Server 2008: No requirements. Windows 7 and Windows Server 2008 R2: Require 128-bit encryption
+Network security: Minimum session security for NTLM SSP based (including secure RPC) servers This security setting allows a server to require the negotiation of 128-bit encryption and/or NTLMv2 session security. These values are dependent on the LAN Manager Authentication Level security setting value. The options are: Require NTLMv2 session security: The connection will fail if message integrity isn't negotiated. Require 128-bit encryption. The connection will fail if strong encryption (128-bit) isn't negotiated. Default: Windows XP, Windows Vista, Windows 2000 Server, Windows Server 2003, and Windows Server 2008: No requirements. Windows 7 and Windows Server 2008 R2: Require 128-bit encryption.
 <!-- NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedServers-Description-End -->
 
 <!-- NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedServers-Editable-Begin -->
@@ -2031,7 +2050,7 @@ Network security: Minimum session security for NTLM SSP based (including secure 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 536870912 |
 <!-- NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedServers-DFProperties-End -->
@@ -2068,7 +2087,7 @@ Network security: Minimum session security for NTLM SSP based (including secure 
 <!-- NetworkSecurity_RestrictNTLM_AddRemoteServerExceptionsForNTLMAuthentication-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- NetworkSecurity_RestrictNTLM_AddRemoteServerExceptionsForNTLMAuthentication-Applicability-End -->
 
 <!-- NetworkSecurity_RestrictNTLM_AddRemoteServerExceptionsForNTLMAuthentication-OmaUri-Begin -->
@@ -2079,8 +2098,11 @@ Network security: Minimum session security for NTLM SSP based (including secure 
 
 <!-- NetworkSecurity_RestrictNTLM_AddRemoteServerExceptionsForNTLMAuthentication-Description-Begin -->
 <!-- Description-Source-DDF -->
-Network security: Restrict NTLM: Add remote server exceptions for NTLM authentication This policy setting allows you to create an exception list of remote servers to which clients are allowed to use NTLM authentication if the "Network Security: Restrict NTLM: Outgoing NTLM traffic to remote servers" policy setting is configured. If you configure this policy setting, you can define a list of remote servers to which clients are allowed to use NTLM authentication.
-- If you do not configure this policy setting, no exceptions will be applied. The naming format for servers on this exception list is the fully qualified domain name (FQDN) or NetBIOS server name used by the application, listed one per line. To ensure exceptions the name used by all applications needs to be in the list, and to ensure an exception is accurate, the server name should be listed in both naming formats . A single asterisk (*) can be used anywhere in the string as a wildcard character.
+Network security: Restrict NTLM: Add remote server exceptions for NTLM authentication This policy setting allows you to create an exception list of remote servers to which clients are allowed to use NTLM authentication if the "Network Security: Restrict NTLM: Outgoing NTLM traffic to remote servers" policy setting is configured.
+
+- If you configure this policy setting, you can define a list of remote servers to which clients are allowed to use NTLM authentication.
+
+- If you don't configure this policy setting, no exceptions will be applied. The naming format for servers on this exception list is the fully qualified domain name (FQDN) or NetBIOS server name used by the application, listed one per line. To ensure exceptions the name used by all applications needs to be in the list, and to ensure an exception is accurate, the server name should be listed in both naming formats . A single asterisk (*) can be used anywhere in the string as a wildcard character.
 <!-- NetworkSecurity_RestrictNTLM_AddRemoteServerExceptionsForNTLMAuthentication-Description-End -->
 
 <!-- NetworkSecurity_RestrictNTLM_AddRemoteServerExceptionsForNTLMAuthentication-Editable-Begin -->
@@ -2092,7 +2114,7 @@ Network security: Restrict NTLM: Add remote server exceptions for NTLM authentic
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `0xF000`) |
 <!-- NetworkSecurity_RestrictNTLM_AddRemoteServerExceptionsForNTLMAuthentication-DFProperties-End -->
@@ -2118,7 +2140,7 @@ Network security: Restrict NTLM: Add remote server exceptions for NTLM authentic
 <!-- NetworkSecurity_RestrictNTLM_AuditIncomingNTLMTraffic-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- NetworkSecurity_RestrictNTLM_AuditIncomingNTLMTraffic-Applicability-End -->
 
 <!-- NetworkSecurity_RestrictNTLM_AuditIncomingNTLMTraffic-OmaUri-Begin -->
@@ -2129,7 +2151,7 @@ Network security: Restrict NTLM: Add remote server exceptions for NTLM authentic
 
 <!-- NetworkSecurity_RestrictNTLM_AuditIncomingNTLMTraffic-Description-Begin -->
 <!-- Description-Source-DDF -->
-Network security Restrict NTLM Audit Incoming NTLM Traffic This policy setting allows you to audit incoming NTLM traffic. If you select "Disable", or do not configure this policy setting, the server will not log events for incoming NTLM traffic. If you select "Enable auditing for domain accounts", the server will log events for NTLM pass-through authentication requests that would be blocked when the "Network Security Restrict NTLM Incoming NTLM traffic" policy setting is set to the "Deny all domain accounts" option. If you select "Enable auditing for all accounts", the server will log events for all NTLM authentication requests that would be blocked when the "Network Security Restrict NTLM Incoming NTLM traffic" policy setting is set to the "Deny all accounts" option. This policy is supported on at least Windows 7 or Windows Server 2008 R2
+Network security: Restrict NTLM: Audit Incoming NTLM Traffic This policy setting allows you to audit incoming NTLM traffic. If you select "Disable", or don't configure this policy setting, the server won't log events for incoming NTLM traffic. If you select "Enable auditing for domain accounts", the server will log events for NTLM pass-through authentication requests that would be blocked when the "Network Security: Restrict NTLM: Incoming NTLM traffic" policy setting is set to the "Deny all domain accounts" option. If you select "Enable auditing for all accounts", the server will log events for all NTLM authentication requests that would be blocked when the "Network Security: Restrict NTLM: Incoming NTLM traffic" policy setting is set to the "Deny all accounts" option. This policy is supported on at least Windows 7 or Windows Server 2008 R2.
 
 > [!NOTE]
 > Audit events are recorded on this computer in the "Operational" Log located under the Applications and Services Log/Microsoft/Windows/NTLM.
@@ -2144,7 +2166,7 @@ Network security Restrict NTLM Audit Incoming NTLM Traffic This policy setting a
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- NetworkSecurity_RestrictNTLM_AuditIncomingNTLMTraffic-DFProperties-End -->
@@ -2180,7 +2202,7 @@ Network security Restrict NTLM Audit Incoming NTLM Traffic This policy setting a
 <!-- NetworkSecurity_RestrictNTLM_IncomingNTLMTraffic-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- NetworkSecurity_RestrictNTLM_IncomingNTLMTraffic-Applicability-End -->
 
 <!-- NetworkSecurity_RestrictNTLM_IncomingNTLMTraffic-OmaUri-Begin -->
@@ -2191,7 +2213,7 @@ Network security Restrict NTLM Audit Incoming NTLM Traffic This policy setting a
 
 <!-- NetworkSecurity_RestrictNTLM_IncomingNTLMTraffic-Description-Begin -->
 <!-- Description-Source-DDF -->
-Network security Restrict NTLM Incoming NTLM traffic This policy setting allows you to deny or allow incoming NTLM traffic. If you select "Allow all" or do not configure this policy setting, the server will allow all NTLM authentication requests. If you select "Deny all domain accounts," the server will deny NTLM authentication requests for domain logon and display an NTLM blocked error, but allow local account logon. If you select "Deny all accounts," the server will deny NTLM authentication requests from incoming traffic and display an NTLM blocked error. This policy is supported on at least Windows 7 or Windows Server 2008 R2
+Network security: Restrict NTLM: Incoming NTLM traffic This policy setting allows you to deny or allow incoming NTLM traffic. If you select "Allow all" or don't configure this policy setting, the server will allow all NTLM authentication requests. If you select "Deny all domain accounts," the server will deny NTLM authentication requests for domain logon and display an NTLM blocked error, but allow local account logon. If you select "Deny all accounts," the server will deny NTLM authentication requests from incoming traffic and display an NTLM blocked error. This policy is supported on at least Windows 7 or Windows Server 2008 R2.
 
 > [!NOTE]
 > Block events are recorded on this computer in the "Operational" Log located under the Applications and Services Log/Microsoft/Windows/NTLM.
@@ -2206,7 +2228,7 @@ Network security Restrict NTLM Incoming NTLM traffic This policy setting allows 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- NetworkSecurity_RestrictNTLM_IncomingNTLMTraffic-DFProperties-End -->
@@ -2242,7 +2264,7 @@ Network security Restrict NTLM Incoming NTLM traffic This policy setting allows 
 <!-- NetworkSecurity_RestrictNTLM_OutgoingNTLMTrafficToRemoteServers-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- NetworkSecurity_RestrictNTLM_OutgoingNTLMTrafficToRemoteServers-Applicability-End -->
 
 <!-- NetworkSecurity_RestrictNTLM_OutgoingNTLMTrafficToRemoteServers-OmaUri-Begin -->
@@ -2253,7 +2275,7 @@ Network security Restrict NTLM Incoming NTLM traffic This policy setting allows 
 
 <!-- NetworkSecurity_RestrictNTLM_OutgoingNTLMTrafficToRemoteServers-Description-Begin -->
 <!-- Description-Source-DDF -->
-Network security Restrict NTLM Outgoing NTLM traffic to remote servers This policy setting allows you to deny or audit outgoing NTLM traffic from this Windows 7 or this Windows Server 2008 R2 computer to any Windows remote server. If you select "Allow all" or do not configure this policy setting, the client computer can authenticate identities to a remote server by using NTLM authentication. If you select "Audit all," the client computer logs an event for each NTLM authentication request to a remote server. This allows you to identify those servers receiving NTLM authentication requests from the client computer. If you select "Deny all," the client computer cannot authenticate identities to a remote server by using NTLM authentication. You can use the "Network security Restrict NTLM Add remote server exceptions for NTLM authentication" policy setting to define a list of remote servers to which clients are allowed to use NTLM authentication. This policy is supported on at least Windows 7 or Windows Server 2008 R2
+Network security: Restrict NTLM: Outgoing NTLM traffic to remote servers This policy setting allows you to deny or audit outgoing NTLM traffic from this Windows 7 or this Windows Server 2008 R2 computer to any Windows remote server. If you select "Allow all" or don't configure this policy setting, the client computer can authenticate identities to a remote server by using NTLM authentication. If you select "Audit all," the client computer logs an event for each NTLM authentication request to a remote server. This allows you to identify those servers receiving NTLM authentication requests from the client computer. If you select "Deny all," the client computer can't authenticate identities to a remote server by using NTLM authentication. You can use the "Network security: Restrict NTLM: Add remote server exceptions for NTLM authentication" policy setting to define a list of remote servers to which clients are allowed to use NTLM authentication. This policy is supported on at least Windows 7 or Windows Server 2008 R2.
 
 > [!NOTE]
 > Audit and block events are recorded on this computer in the "Operational" Log located under the Applications and Services Log/Microsoft/Windows/NTLM.
@@ -2268,7 +2290,7 @@ Network security Restrict NTLM Outgoing NTLM traffic to remote servers This poli
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- NetworkSecurity_RestrictNTLM_OutgoingNTLMTrafficToRemoteServers-DFProperties-End -->
@@ -2304,7 +2326,7 @@ Network security Restrict NTLM Outgoing NTLM traffic to remote servers This poli
 <!-- Shutdown_AllowSystemToBeShutDownWithoutHavingToLogOn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Shutdown_AllowSystemToBeShutDownWithoutHavingToLogOn-Applicability-End -->
 
 <!-- Shutdown_AllowSystemToBeShutDownWithoutHavingToLogOn-OmaUri-Begin -->
@@ -2315,7 +2337,7 @@ Network security Restrict NTLM Outgoing NTLM traffic to remote servers This poli
 
 <!-- Shutdown_AllowSystemToBeShutDownWithoutHavingToLogOn-Description-Begin -->
 <!-- Description-Source-DDF -->
-Shutdown: Allow system to be shut down without having to log on This security setting determines whether a computer can be shut down without having to log on to Windows. When this policy is enabled, the Shut Down command is available on the Windows logon screen. When this policy is disabled, the option to shut down the computer does not appear on the Windows logon screen. In this case, users must be able to log on to the computer successfully and have the Shut down the system user right before they can perform a system shutdown. Default on workstations: Enabled. Default on servers: Disabled.
+Shutdown: Allow system to be shut down without having to log on This security setting determines whether a computer can be shut down without having to log on to Windows. When this policy is enabled, the Shut Down command is available on the Windows logon screen. When this policy is disabled, the option to shut down the computer doesn't appear on the Windows logon screen. In this case, users must be able to log on to the computer successfully and have the Shut down the system user right before they can perform a system shutdown. Default on workstations: Enabled. Default on servers: Disabled.
 <!-- Shutdown_AllowSystemToBeShutDownWithoutHavingToLogOn-Description-End -->
 
 <!-- Shutdown_AllowSystemToBeShutDownWithoutHavingToLogOn-Editable-Begin -->
@@ -2327,7 +2349,7 @@ Shutdown: Allow system to be shut down without having to log on This security se
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- Shutdown_AllowSystemToBeShutDownWithoutHavingToLogOn-DFProperties-End -->
@@ -2362,7 +2384,7 @@ Shutdown: Allow system to be shut down without having to log on This security se
 <!-- Shutdown_ClearVirtualMemoryPageFile-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Shutdown_ClearVirtualMemoryPageFile-Applicability-End -->
 
 <!-- Shutdown_ClearVirtualMemoryPageFile-OmaUri-Begin -->
@@ -2373,8 +2395,7 @@ Shutdown: Allow system to be shut down without having to log on This security se
 
 <!-- Shutdown_ClearVirtualMemoryPageFile-Description-Begin -->
 <!-- Description-Source-DDF -->
-Shutdown: Clear virtual memory pagefile This security setting determines whether the virtual memory pagefile is cleared when the system is shut down. Virtual memory support uses a system pagefile to swap pages of memory to disk when they are not used. On a running system, this pagefile is opened exclusively by the operating system, and it is well protected. However, systems that are configured to allow booting to other operating systems might have to make sure that the system pagefile is wiped clean when this system shuts down. This ensures that sensitive information from process memory that might go into the pagefile is not available to an unauthorized user who manages to directly access the pagefile. When this policy is enabled, it causes the system pagefile to be cleared upon clean shutdown.
-- If you enable this security option, the hibernation file (hiberfil.sys) is also zeroed out when hibernation is disabled. Default: Disabled.
+Shutdown: Clear virtual memory pagefile This security setting determines whether the virtual memory pagefile is cleared when the system is shut down. Virtual memory support uses a system pagefile to swap pages of memory to disk when they aren't used. On a running system, this pagefile is opened exclusively by the operating system, and it's well protected. However, systems that are configured to allow booting to other operating systems might have to make sure that the system pagefile is wiped clean when this system shuts down. This ensures that sensitive information from process memory that might go into the pagefile isn't available to an unauthorized user who manages to directly access the pagefile. When this policy is enabled, it causes the system pagefile to be cleared upon clean shutdown. If you enable this security option, the hibernation file (hiberfil.sys) is also zeroed out when hibernation is disabled. Default: Disabled.
 <!-- Shutdown_ClearVirtualMemoryPageFile-Description-End -->
 
 <!-- Shutdown_ClearVirtualMemoryPageFile-Editable-Begin -->
@@ -2386,7 +2407,7 @@ Shutdown: Clear virtual memory pagefile This security setting determines whether
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- Shutdown_ClearVirtualMemoryPageFile-DFProperties-End -->
@@ -2421,7 +2442,7 @@ Shutdown: Clear virtual memory pagefile This security setting determines whether
 <!-- UserAccountControl_AllowUIAccessApplicationsToPromptForElevation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- UserAccountControl_AllowUIAccessApplicationsToPromptForElevation-Applicability-End -->
 
 <!-- UserAccountControl_AllowUIAccessApplicationsToPromptForElevation-OmaUri-Begin -->
@@ -2432,7 +2453,7 @@ Shutdown: Clear virtual memory pagefile This security setting determines whether
 
 <!-- UserAccountControl_AllowUIAccessApplicationsToPromptForElevation-Description-Begin -->
 <!-- Description-Source-DDF -->
-User Account Control: Allow UIAccess applications to prompt for elevation without using the secure desktop. This policy setting controls whether User Interface Accessibility (UIAccess or UIA) programs can automatically disable the secure desktop for elevation prompts used by a standard user. - Enabled: UIA programs, including Windows Remote Assistance, automatically disable the secure desktop for elevation prompts. If you do not disable the "User Account Control: Switch to the secure desktop when prompting for elevation" policy setting, the prompts appear on the interactive user's desktop instead of the secure desktop. - Disabled: (Default) The secure desktop can be disabled only by the user of the interactive desktop or by disabling the "User Account Control: Switch to the secure desktop when prompting for elevation" policy setting.
+User Account Control: Allow UIAccess applications to prompt for elevation without using the secure desktop. This policy setting controls whether User Interface Accessibility (UIAccess or UIA) programs can automatically disable the secure desktop for elevation prompts used by a standard user. - Enabled: UIA programs, including Windows Remote Assistance, automatically disable the secure desktop for elevation prompts. If you don't disable the "User Account Control: Switch to the secure desktop when prompting for elevation" policy setting, the prompts appear on the interactive user's desktop instead of the secure desktop. - Disabled: (Default) The secure desktop can be disabled only by the user of the interactive desktop or by disabling the "User Account Control: Switch to the secure desktop when prompting for elevation" policy setting.
 <!-- UserAccountControl_AllowUIAccessApplicationsToPromptForElevation-Description-End -->
 
 <!-- UserAccountControl_AllowUIAccessApplicationsToPromptForElevation-Editable-Begin -->
@@ -2444,7 +2465,7 @@ User Account Control: Allow UIAccess applications to prompt for elevation withou
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- UserAccountControl_AllowUIAccessApplicationsToPromptForElevation-DFProperties-End -->
@@ -2479,7 +2500,7 @@ User Account Control: Allow UIAccess applications to prompt for elevation withou
 <!-- UserAccountControl_BehaviorOfTheElevationPromptForAdministrators-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- UserAccountControl_BehaviorOfTheElevationPromptForAdministrators-Applicability-End -->
 
 <!-- UserAccountControl_BehaviorOfTheElevationPromptForAdministrators-OmaUri-Begin -->
@@ -2490,10 +2511,10 @@ User Account Control: Allow UIAccess applications to prompt for elevation withou
 
 <!-- UserAccountControl_BehaviorOfTheElevationPromptForAdministrators-Description-Begin -->
 <!-- Description-Source-DDF -->
-User Account Control Behavior of the elevation prompt for administrators in Admin Approval Mode This policy setting controls the behavior of the elevation prompt for administrators. The options are - Elevate without prompting Allows privileged accounts to perform an operation that requires elevation without requiring consent or credentials
+User Account Control: Behavior of the elevation prompt for administrators in Admin Approval Mode This policy setting controls the behavior of the elevation prompt for administrators. The options are: - Elevate without prompting: Allows privileged accounts to perform an operation that requires elevation without requiring consent or credentials.
 
 > [!NOTE]
-> Use this option only in the most constrained environments. - Prompt for credentials on the secure desktop When an operation requires elevation of privilege, the user is prompted on the secure desktop to enter a privileged user name and password. If the user enters valid credentials, the operation continues with the user's highest available privilege. - Prompt for consent on the secure desktop When an operation requires elevation of privilege, the user is prompted on the secure desktop to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege. - Prompt for credentials When an operation requires elevation of privilege, the user is prompted to enter an administrative user name and password. If the user enters valid credentials, the operation continues with the applicable privilege. - Prompt for consent When an operation requires elevation of privilege, the user is prompted to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege. - Prompt for consent for non-Windows binaries (Default) When an operation for a non-Microsoft application requires elevation of privilege, the user is prompted on the secure desktop to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege.
+> Use this option only in the most constrained environments. - Prompt for credentials on the secure desktop: When an operation requires elevation of privilege, the user is prompted on the secure desktop to enter a privileged user name and password. If the user enters valid credentials, the operation continues with the user's highest available privilege. - Prompt for consent on the secure desktop: When an operation requires elevation of privilege, the user is prompted on the secure desktop to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege. - Prompt for credentials: When an operation requires elevation of privilege, the user is prompted to enter an administrative user name and password. If the user enters valid credentials, the operation continues with the applicable privilege. - Prompt for consent: When an operation requires elevation of privilege, the user is prompted to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege. - Prompt for consent for non-Windows binaries: (Default) When an operation for a non-Microsoft application requires elevation of privilege, the user is prompted on the secure desktop to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege.
 <!-- UserAccountControl_BehaviorOfTheElevationPromptForAdministrators-Description-End -->
 
 <!-- UserAccountControl_BehaviorOfTheElevationPromptForAdministrators-Editable-Begin -->
@@ -2505,7 +2526,7 @@ User Account Control Behavior of the elevation prompt for administrators in Admi
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 5 |
 <!-- UserAccountControl_BehaviorOfTheElevationPromptForAdministrators-DFProperties-End -->
@@ -2544,7 +2565,7 @@ User Account Control Behavior of the elevation prompt for administrators in Admi
 <!-- UserAccountControl_BehaviorOfTheElevationPromptForStandardUsers-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- UserAccountControl_BehaviorOfTheElevationPromptForStandardUsers-Applicability-End -->
 
 <!-- UserAccountControl_BehaviorOfTheElevationPromptForStandardUsers-OmaUri-Begin -->
@@ -2555,7 +2576,7 @@ User Account Control Behavior of the elevation prompt for administrators in Admi
 
 <!-- UserAccountControl_BehaviorOfTheElevationPromptForStandardUsers-Description-Begin -->
 <!-- Description-Source-DDF -->
-User Account Control: Behavior of the elevation prompt for standard users This policy setting controls the behavior of the elevation prompt for standard users. The options are: - Prompt for credentials: (Default) When an operation requires elevation of privilege, the user is prompted to enter an administrative user name and password. If the user enters valid credentials, the operation continues with the applicable privilege. - Automatically deny elevation requests: When an operation requires elevation of privilege, a configurable access denied error message is displayed. An enterprise that is running desktops as standard user may choose this setting to reduce help desk calls. - Prompt for credentials on the secure desktop: When an operation requires elevation of privilege, the user is prompted on the secure desktop to enter a different user name and password. If the user enters valid credentials, the operation continues with the applicable privilege.
+User Account Control: Behavior of the elevation prompt for standard users This policy setting controls the behavior of the elevation prompt for standard users. The options are: - Prompt for credentials: (Default) When an operation requires elevation of privilege, the user is prompted to enter an administrative user name and password. If the user enters valid credentials, the operation continues with the applicable privilege. - Automatically deny elevation requests: When an operation requires elevation of privilege, a configurable access denied error message is displayed. An enterprise that's running desktops as standard user may choose this setting to reduce help desk calls. - Prompt for credentials on the secure desktop: When an operation requires elevation of privilege, the user is prompted on the secure desktop to enter a different user name and password. If the user enters valid credentials, the operation continues with the applicable privilege.
 <!-- UserAccountControl_BehaviorOfTheElevationPromptForStandardUsers-Description-End -->
 
 <!-- UserAccountControl_BehaviorOfTheElevationPromptForStandardUsers-Editable-Begin -->
@@ -2567,7 +2588,7 @@ User Account Control: Behavior of the elevation prompt for standard users This p
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 3 |
 <!-- UserAccountControl_BehaviorOfTheElevationPromptForStandardUsers-DFProperties-End -->
@@ -2603,7 +2624,7 @@ User Account Control: Behavior of the elevation prompt for standard users This p
 <!-- UserAccountControl_DetectApplicationInstallationsAndPromptForElevation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- UserAccountControl_DetectApplicationInstallationsAndPromptForElevation-Applicability-End -->
 
 <!-- UserAccountControl_DetectApplicationInstallationsAndPromptForElevation-OmaUri-Begin -->
@@ -2614,7 +2635,7 @@ User Account Control: Behavior of the elevation prompt for standard users This p
 
 <!-- UserAccountControl_DetectApplicationInstallationsAndPromptForElevation-Description-Begin -->
 <!-- Description-Source-DDF -->
-User Account Control: Detect application installations and prompt for elevation This policy setting controls the behavior of application installation detection for the computer. The options are: Enabled: (Default) When an application installation package is detected that requires elevation of privilege, the user is prompted to enter an administrative user name and password. If the user enters valid credentials, the operation continues with the applicable privilege. Disabled: Application installation packages are not detected and prompted for elevation. Enterprises that are running standard user desktops and use delegated installation technologies such as Group Policy Software Installation or Systems Management Server (SMS) should disable this policy setting. In this case, installer detection is unnecessary.
+User Account Control: Detect application installations and prompt for elevation This policy setting controls the behavior of application installation detection for the computer. The options are: Enabled: (Default) When an application installation package is detected that requires elevation of privilege, the user is prompted to enter an administrative user name and password. If the user enters valid credentials, the operation continues with the applicable privilege. Disabled: Application installation packages aren't detected and prompted for elevation. Enterprises that are running standard user desktops and use delegated installation technologies such as Group Policy Software Installation or Systems Management Server (SMS) should disable this policy setting. In this case, installer detection is unnecessary.
 <!-- UserAccountControl_DetectApplicationInstallationsAndPromptForElevation-Description-End -->
 
 <!-- UserAccountControl_DetectApplicationInstallationsAndPromptForElevation-Editable-Begin -->
@@ -2626,7 +2647,7 @@ User Account Control: Detect application installations and prompt for elevation 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- UserAccountControl_DetectApplicationInstallationsAndPromptForElevation-DFProperties-End -->
@@ -2661,7 +2682,7 @@ User Account Control: Detect application installations and prompt for elevation 
 <!-- UserAccountControl_OnlyElevateExecutableFilesThatAreSignedAndValidated-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- UserAccountControl_OnlyElevateExecutableFilesThatAreSignedAndValidated-Applicability-End -->
 
 <!-- UserAccountControl_OnlyElevateExecutableFilesThatAreSignedAndValidated-OmaUri-Begin -->
@@ -2672,7 +2693,7 @@ User Account Control: Detect application installations and prompt for elevation 
 
 <!-- UserAccountControl_OnlyElevateExecutableFilesThatAreSignedAndValidated-Description-Begin -->
 <!-- Description-Source-DDF -->
-User Account Control: Only elevate executable files that are signed and validated This policy setting enforces public key infrastructure (PKI) signature checks for any interactive applications that request elevation of privilege. Enterprise administrators can control which applications are allowed to run by adding certificates to the Trusted Publishers certificate store on local computers. The options are: - Enabled: Enforces the PKI certification path validation for a given executable file before it is permitted to run. - Disabled: (Default) Does not enforce PKI certification path validation before a given executable file is permitted to run.
+User Account Control: Only elevate executable files that are signed and validated This policy setting enforces public key infrastructure (PKI) signature checks for any interactive applications that request elevation of privilege. Enterprise administrators can control which applications are allowed to run by adding certificates to the Trusted Publishers certificate store on local computers. The options are: - Enabled: Enforces the PKI certification path validation for a given executable file before it's permitted to run. - Disabled: (Default) Does not enforce PKI certification path validation before a given executable file is permitted to run.
 <!-- UserAccountControl_OnlyElevateExecutableFilesThatAreSignedAndValidated-Description-End -->
 
 <!-- UserAccountControl_OnlyElevateExecutableFilesThatAreSignedAndValidated-Editable-Begin -->
@@ -2684,7 +2705,7 @@ User Account Control: Only elevate executable files that are signed and validate
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- UserAccountControl_OnlyElevateExecutableFilesThatAreSignedAndValidated-DFProperties-End -->
@@ -2719,7 +2740,7 @@ User Account Control: Only elevate executable files that are signed and validate
 <!-- UserAccountControl_OnlyElevateUIAccessApplicationsThatAreInstalledInSecureLocations-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- UserAccountControl_OnlyElevateUIAccessApplicationsThatAreInstalledInSecureLocations-Applicability-End -->
 
 <!-- UserAccountControl_OnlyElevateUIAccessApplicationsThatAreInstalledInSecureLocations-OmaUri-Begin -->
@@ -2730,7 +2751,7 @@ User Account Control: Only elevate executable files that are signed and validate
 
 <!-- UserAccountControl_OnlyElevateUIAccessApplicationsThatAreInstalledInSecureLocations-Description-Begin -->
 <!-- Description-Source-DDF -->
-User Account Control: Only elevate UIAccess applications that are installed in secure locations This policy setting controls whether applications that request to run with a User Interface Accessibility (UIAccess) integrity level must reside in a secure location in the file system. Secure locations are limited to the following: - ...\Program Files\, including subfolders - ...\Windows\system32\ - ...\Program Files (x86)\, including subfolders for 64-bit versions of Windows Note: Windows enforces a public key infrastructure (PKI) signature check on any interactive application that requests to run with a UIAccess integrity level regardless of the state of this security setting. The options are: - Enabled: (Default) If an application resides in a secure location in the file system, it runs only with UIAccess integrity. - Disabled: An application runs with UIAccess integrity even if it does not reside in a secure location in the file system.
+User Account Control: Only elevate UIAccess applications that are installed in secure locations This policy setting controls whether applications that request to run with a User Interface Accessibility (UIAccess) integrity level must reside in a secure location in the file system. Secure locations are limited to the following: - ...\Program Files\, including subfolders - ...\Windows\system32\ - ...\Program Files (x86)\, including subfolders for 64-bit versions of Windows Note: Windows enforces a public key infrastructure (PKI) signature check on any interactive application that requests to run with a UIAccess integrity level regardless of the state of this security setting. The options are: - Enabled: (Default) If an application resides in a secure location in the file system, it runs only with UIAccess integrity. - Disabled: An application runs with UIAccess integrity even if it doesn't reside in a secure location in the file system.
 <!-- UserAccountControl_OnlyElevateUIAccessApplicationsThatAreInstalledInSecureLocations-Description-End -->
 
 <!-- UserAccountControl_OnlyElevateUIAccessApplicationsThatAreInstalledInSecureLocations-Editable-Begin -->
@@ -2742,7 +2763,7 @@ User Account Control: Only elevate UIAccess applications that are installed in s
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- UserAccountControl_OnlyElevateUIAccessApplicationsThatAreInstalledInSecureLocations-DFProperties-End -->
@@ -2752,7 +2773,7 @@ User Account Control: Only elevate UIAccess applications that are installed in s
 
 | Value | Description |
 |:--|:--|
-| 0 | Disabled: Application runs with UIAccess integrity even if it does not reside in a secure location. |
+| 0 | Disabled: Application runs with UIAccess integrity even if it doesn't reside in a secure location. |
 | 1 (Default) | Enabled: Application runs with UIAccess integrity only if it resides in secure location. |
 <!-- UserAccountControl_OnlyElevateUIAccessApplicationsThatAreInstalledInSecureLocations-AllowedValues-End -->
 
@@ -2777,7 +2798,7 @@ User Account Control: Only elevate UIAccess applications that are installed in s
 <!-- UserAccountControl_RunAllAdministratorsInAdminApprovalMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- UserAccountControl_RunAllAdministratorsInAdminApprovalMode-Applicability-End -->
 
 <!-- UserAccountControl_RunAllAdministratorsInAdminApprovalMode-OmaUri-Begin -->
@@ -2788,7 +2809,7 @@ User Account Control: Only elevate UIAccess applications that are installed in s
 
 <!-- UserAccountControl_RunAllAdministratorsInAdminApprovalMode-Description-Begin -->
 <!-- Description-Source-DDF -->
-User Account Control Turn on Admin Approval Mode This policy setting controls the behavior of all User Account Control (UAC) policy settings for the computer. If you change this policy setting, you must restart your computer. The options are - Enabled (Default) Admin Approval Mode is enabled. This policy must be enabled and related UAC policy settings must also be set appropriately to allow the built-in Administrator account and all other users who are members of the Administrators group to run in Admin Approval Mode. - Disabled Admin Approval Mode and all related UAC policy settings are disabled
+User Account Control: Turn on Admin Approval Mode This policy setting controls the behavior of all User Account Control (UAC) policy settings for the computer. If you change this policy setting, you must restart your computer. The options are: - Enabled: (Default) Admin Approval Mode is enabled. This policy must be enabled and related UAC policy settings must also be set appropriately to allow the built-in Administrator account and all other users who are members of the Administrators group to run in Admin Approval Mode. - Disabled: Admin Approval Mode and all related UAC policy settings are disabled.
 
 > [!NOTE]
 > If this policy setting is disabled, the Security Center notifies you that the overall security of the operating system has been reduced.
@@ -2803,7 +2824,7 @@ User Account Control Turn on Admin Approval Mode This policy setting controls th
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- UserAccountControl_RunAllAdministratorsInAdminApprovalMode-DFProperties-End -->
@@ -2838,7 +2859,7 @@ User Account Control Turn on Admin Approval Mode This policy setting controls th
 <!-- UserAccountControl_SwitchToTheSecureDesktopWhenPromptingForElevation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- UserAccountControl_SwitchToTheSecureDesktopWhenPromptingForElevation-Applicability-End -->
 
 <!-- UserAccountControl_SwitchToTheSecureDesktopWhenPromptingForElevation-OmaUri-Begin -->
@@ -2861,7 +2882,7 @@ User Account Control: Switch to the secure desktop when prompting for elevation 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- UserAccountControl_SwitchToTheSecureDesktopWhenPromptingForElevation-DFProperties-End -->
@@ -2896,7 +2917,7 @@ User Account Control: Switch to the secure desktop when prompting for elevation 
 <!-- UserAccountControl_UseAdminApprovalMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- UserAccountControl_UseAdminApprovalMode-Applicability-End -->
 
 <!-- UserAccountControl_UseAdminApprovalMode-OmaUri-Begin -->
@@ -2919,7 +2940,7 @@ User Account Control: Use Admin Approval Mode for the built-in Administrator acc
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- UserAccountControl_UseAdminApprovalMode-DFProperties-End -->
@@ -2954,7 +2975,7 @@ User Account Control: Use Admin Approval Mode for the built-in Administrator acc
 <!-- UserAccountControl_VirtualizeFileAndRegistryWriteFailuresToPerUserLocations-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- UserAccountControl_VirtualizeFileAndRegistryWriteFailuresToPerUserLocations-Applicability-End -->
 
 <!-- UserAccountControl_VirtualizeFileAndRegistryWriteFailuresToPerUserLocations-OmaUri-Begin -->
@@ -2977,7 +2998,7 @@ User Account Control: Virtualize file and registry write failures to per-user lo
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- UserAccountControl_VirtualizeFileAndRegistryWriteFailuresToPerUserLocations-DFProperties-End -->

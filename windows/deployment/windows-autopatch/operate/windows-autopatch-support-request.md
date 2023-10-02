@@ -10,6 +10,9 @@ author: tiaraquan
 ms.author: tiaraquan
 manager: dougeby
 ms.reviewer: hathind
+ms.collection:
+  - highpri
+  - tier1
 ---
 
 # Submit a support request
@@ -38,9 +41,6 @@ If you have a **Premier** or **Unified** support contract, when you submit a new
 - Schedule a support callback for a specific day and time
 
 Depending on your support contract, the following severity options are available:
-
-> [!NOTE]
-> Selecting either severity **A** or **Critical** issue limits you to a phone support case. This is the fastest support option.
 
 | Support contract | Severity options |
 | ----- | ----- |

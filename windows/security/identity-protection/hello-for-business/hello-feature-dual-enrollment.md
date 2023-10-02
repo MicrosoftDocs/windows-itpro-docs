@@ -1,22 +1,17 @@
 ---
 title: Dual Enrollment
-description: Learn how to configure Windows Hello for Business dual enrollment. Also, learn how to configure Active Directory to support Domain Administrator enrollment.
-ms.date: 09/09/2019
-appliesto: 
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
-ms.topic: article
+description: Learn how to configure Windows Hello for Business dual enrollment and how to configure Active Directory to support Domain Administrator enrollment.
+ms.date: 07/05/2023
+ms.topic: conceptual
 ---
 
 # Dual Enrollment
 
 **Requirements**
 
-* Hybrid and On-premises Windows Hello for Business deployments
-* Enterprise joined or Hybrid Azure joined devices
-* Certificate trust
-
-> [!NOTE]
-> This feature was previously known as **Privileged Credential** but was renamed to **Dual Enrollment** to prevent any confusion with the **Privileged Access Workstation** feature.
+- Hybrid and On-premises Windows Hello for Business deployments
+- Enterprise joined or Hybrid Azure joined devices
+- Certificate trust
 
 > [!IMPORTANT]
 > Dual enrollment does not replace or provide the same security as Privileged Access Workstations feature.  Microsoft encourages enterprises to use the Privileged Access Workstations for their privileged credential users.  Enterprises can consider Windows Hello for Business dual enrollment in situations where the Privileged Access feature cannot be used.  Read [Privileged Access Workstations](/windows-server/identity/securing-privileged-access/privileged-access-workstations) for more information.
@@ -67,14 +62,3 @@ You configure Windows 10 or Windows 11 to support dual enrollment using the comp
 5. Restart computers targeted by this Group Policy object.
 
 The computer is ready for dual enrollment.  Sign in as the privileged user first and enroll for Windows Hello for Business. Once completed, sign out and sign in as the non-privileged user and enroll for Windows Hello for Business.  You can now use your privileged credential to perform privileged tasks without using your password and without needing to switch users.
-
-## Related topics
-
-* [Windows Hello for Business](hello-identity-verification.md)
-* [Manage Windows Hello for Business in your organization](hello-manage-in-organization.md)
-* [Why a PIN is better than a password](hello-why-pin-is-better-than-password.md)
-* [Prepare people to use Windows Hello](hello-prepare-people-to-use.md)
-* [Windows Hello and password changes](hello-and-password-changes.md)
-* [Windows Hello errors during PIN creation](hello-errors-during-pin-creation.md)
-* [Event ID 300 - Windows Hello successfully created](/windows/security/identity-protection/hello-for-business/hello-faq)
-* [Windows Hello biometrics in the enterprise](hello-biometrics-in-enterprise.md)

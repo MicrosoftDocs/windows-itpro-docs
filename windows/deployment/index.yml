@@ -5,15 +5,17 @@ summary: Learn about deploying and keeping Windows client devices up to date.  #
 
 metadata:
   title: Windows client deployment resources and documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Learn about deploying Windows 10 and keeping it up to date in your organization. # Required; article description that is displayed in search results. < 160 chars.
+  description: Learn about deploying Windows and keeping it up to date in your organization. # Required; article description that is displayed in search results. < 160 chars.
   ms.topic: landing-page
-  ms.technology: itpro-apps
+  ms.technology: itpro-deploy
   ms.prod: windows-client
-  ms.collection: highpri, tier1
+  ms.collection:
+    - highpri
+    - tier1
   author: frankroj
   ms.author: frankroj
   manager: aaroncz
-  ms.date: 10/31/2022 #Required; mm/dd/yyyy format.
+  ms.date: 10/31/2022
   localization_priority: medium
     
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -58,8 +60,6 @@ landingContent:
             url: /mem/autopilot
           - text: Assign devices to servicing channels
             url: update/waas-servicing-channels-windows-10-updates.md
-          - text: Deploy Windows updates with Configuration Manager
-            url: update/deploy-updates-configmgr.md
  
   # Card
   - title: Overview

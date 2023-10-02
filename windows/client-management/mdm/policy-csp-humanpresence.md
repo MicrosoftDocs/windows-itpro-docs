@@ -4,7 +4,7 @@ description: Learn more about the HumanPresence Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 08/30/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,9 +16,267 @@ ms.topic: reference
 <!-- HumanPresence-Begin -->
 # Policy CSP - HumanPresence
 
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
+
 <!-- HumanPresence-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 <!-- HumanPresence-Editable-End -->
+
+<!-- ForceAllowDimWhenExternalDisplayConnected-Begin -->
+## ForceAllowDimWhenExternalDisplayConnected
+
+<!-- ForceAllowDimWhenExternalDisplayConnected-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- ForceAllowDimWhenExternalDisplayConnected-Applicability-End -->
+
+<!-- ForceAllowDimWhenExternalDisplayConnected-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/HumanPresence/ForceAllowDimWhenExternalDisplayConnected
+```
+<!-- ForceAllowDimWhenExternalDisplayConnected-OmaUri-End -->
+
+<!-- ForceAllowDimWhenExternalDisplayConnected-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Determines whether Allow Adaptive Dimming When Battery Saver On checkbox is forced checked/unchecked by the MDM policy. The user won't be able to change this setting and the checkbox in the UI will be greyed out.
+<!-- ForceAllowDimWhenExternalDisplayConnected-Description-End -->
+
+<!-- ForceAllowDimWhenExternalDisplayConnected-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ForceAllowDimWhenExternalDisplayConnected-Editable-End -->
+
+<!-- ForceAllowDimWhenExternalDisplayConnected-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- ForceAllowDimWhenExternalDisplayConnected-DFProperties-End -->
+
+<!-- ForceAllowDimWhenExternalDisplayConnected-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 2 | ForcedUnchecked. |
+| 1 | ForcedChecked. |
+| 0 (Default) | DefaultToUserChoice. |
+<!-- ForceAllowDimWhenExternalDisplayConnected-AllowedValues-End -->
+
+<!-- ForceAllowDimWhenExternalDisplayConnected-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | ForceAllowDimWhenExternalDisplayConnected |
+| Friendly Name | Force Allow Dim When External Display Connected |
+| Location | Computer Configuration |
+| Path | Windows Components > Human Presence |
+| Registry Key Name | Software\Policies\Microsoft\HumanPresence |
+| Registry Value Name | ForceAllowDimWhenExternalDisplayConnected |
+| ADMX File Name | Sensors.admx |
+<!-- ForceAllowDimWhenExternalDisplayConnected-GpMapping-End -->
+
+<!-- ForceAllowDimWhenExternalDisplayConnected-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ForceAllowDimWhenExternalDisplayConnected-Examples-End -->
+
+<!-- ForceAllowDimWhenExternalDisplayConnected-End -->
+
+<!-- ForceAllowLockWhenExternalDisplayConnected-Begin -->
+## ForceAllowLockWhenExternalDisplayConnected
+
+<!-- ForceAllowLockWhenExternalDisplayConnected-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- ForceAllowLockWhenExternalDisplayConnected-Applicability-End -->
+
+<!-- ForceAllowLockWhenExternalDisplayConnected-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/HumanPresence/ForceAllowLockWhenExternalDisplayConnected
+```
+<!-- ForceAllowLockWhenExternalDisplayConnected-OmaUri-End -->
+
+<!-- ForceAllowLockWhenExternalDisplayConnected-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Determines whether Allow Lock on Leave When Battery Saver On checkbox is forced checked/unchecked by the MDM policy. The user won't be able to change this setting and the checkbox in the UI will be greyed out.
+<!-- ForceAllowLockWhenExternalDisplayConnected-Description-End -->
+
+<!-- ForceAllowLockWhenExternalDisplayConnected-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ForceAllowLockWhenExternalDisplayConnected-Editable-End -->
+
+<!-- ForceAllowLockWhenExternalDisplayConnected-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- ForceAllowLockWhenExternalDisplayConnected-DFProperties-End -->
+
+<!-- ForceAllowLockWhenExternalDisplayConnected-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 2 | ForcedUnchecked. |
+| 1 | ForcedChecked. |
+| 0 (Default) | DefaultToUserChoice. |
+<!-- ForceAllowLockWhenExternalDisplayConnected-AllowedValues-End -->
+
+<!-- ForceAllowLockWhenExternalDisplayConnected-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | ForceAllowLockWhenExternalDisplayConnected |
+| Friendly Name | Force Allow Lock When External Display Connected |
+| Location | Computer Configuration |
+| Path | Windows Components > Human Presence |
+| Registry Key Name | Software\Policies\Microsoft\HumanPresence |
+| Registry Value Name | ForceAllowLockWhenExternalDisplayConnected |
+| ADMX File Name | Sensors.admx |
+<!-- ForceAllowLockWhenExternalDisplayConnected-GpMapping-End -->
+
+<!-- ForceAllowLockWhenExternalDisplayConnected-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ForceAllowLockWhenExternalDisplayConnected-Examples-End -->
+
+<!-- ForceAllowLockWhenExternalDisplayConnected-End -->
+
+<!-- ForceAllowWakeWhenExternalDisplayConnected-Begin -->
+## ForceAllowWakeWhenExternalDisplayConnected
+
+<!-- ForceAllowWakeWhenExternalDisplayConnected-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- ForceAllowWakeWhenExternalDisplayConnected-Applicability-End -->
+
+<!-- ForceAllowWakeWhenExternalDisplayConnected-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/HumanPresence/ForceAllowWakeWhenExternalDisplayConnected
+```
+<!-- ForceAllowWakeWhenExternalDisplayConnected-OmaUri-End -->
+
+<!-- ForceAllowWakeWhenExternalDisplayConnected-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Determines whether Allow Wake on Approach When External Display Connected checkbox is forced checked/unchecked by the MDM policy. The user won't be able to change this setting and the checkbox in the UI will be greyed out.
+<!-- ForceAllowWakeWhenExternalDisplayConnected-Description-End -->
+
+<!-- ForceAllowWakeWhenExternalDisplayConnected-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ForceAllowWakeWhenExternalDisplayConnected-Editable-End -->
+
+<!-- ForceAllowWakeWhenExternalDisplayConnected-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- ForceAllowWakeWhenExternalDisplayConnected-DFProperties-End -->
+
+<!-- ForceAllowWakeWhenExternalDisplayConnected-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 2 | ForcedUnchecked. |
+| 1 | ForcedChecked. |
+| 0 (Default) | DefaultToUserChoice. |
+<!-- ForceAllowWakeWhenExternalDisplayConnected-AllowedValues-End -->
+
+<!-- ForceAllowWakeWhenExternalDisplayConnected-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | ForceAllowWakeWhenExternalDisplayConnected |
+| Friendly Name | Force Allow Wake When External Display Connected |
+| Location | Computer Configuration |
+| Path | Windows Components > Human Presence |
+| Registry Key Name | Software\Policies\Microsoft\HumanPresence |
+| Registry Value Name | ForceAllowWakeWhenExternalDisplayConnected |
+| ADMX File Name | Sensors.admx |
+<!-- ForceAllowWakeWhenExternalDisplayConnected-GpMapping-End -->
+
+<!-- ForceAllowWakeWhenExternalDisplayConnected-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ForceAllowWakeWhenExternalDisplayConnected-Examples-End -->
+
+<!-- ForceAllowWakeWhenExternalDisplayConnected-End -->
+
+<!-- ForceDisableWakeWhenBatterySaverOn-Begin -->
+## ForceDisableWakeWhenBatterySaverOn
+
+<!-- ForceDisableWakeWhenBatterySaverOn-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- ForceDisableWakeWhenBatterySaverOn-Applicability-End -->
+
+<!-- ForceDisableWakeWhenBatterySaverOn-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/HumanPresence/ForceDisableWakeWhenBatterySaverOn
+```
+<!-- ForceDisableWakeWhenBatterySaverOn-OmaUri-End -->
+
+<!-- ForceDisableWakeWhenBatterySaverOn-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Determines whether Disable Wake on Approach When Battery Saver On checkbox is forced checked/unchecked by the MDM policy. The user won't be able to change this setting and the checkbox in the UI will be greyed out.
+<!-- ForceDisableWakeWhenBatterySaverOn-Description-End -->
+
+<!-- ForceDisableWakeWhenBatterySaverOn-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ForceDisableWakeWhenBatterySaverOn-Editable-End -->
+
+<!-- ForceDisableWakeWhenBatterySaverOn-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- ForceDisableWakeWhenBatterySaverOn-DFProperties-End -->
+
+<!-- ForceDisableWakeWhenBatterySaverOn-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 2 | ForcedUnchecked. |
+| 1 | ForcedChecked. |
+| 0 (Default) | DefaultToUserChoice. |
+<!-- ForceDisableWakeWhenBatterySaverOn-AllowedValues-End -->
+
+<!-- ForceDisableWakeWhenBatterySaverOn-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | ForceDisableWakeWhenBatterySaverOn |
+| Friendly Name | Force Disable Wake When Battery Saver On |
+| Location | Computer Configuration |
+| Path | Windows Components > Human Presence |
+| Registry Key Name | Software\Policies\Microsoft\HumanPresence |
+| Registry Value Name | ForceDisableWakeWhenBatterySaverOn |
+| ADMX File Name | Sensors.admx |
+<!-- ForceDisableWakeWhenBatterySaverOn-GpMapping-End -->
+
+<!-- ForceDisableWakeWhenBatterySaverOn-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ForceDisableWakeWhenBatterySaverOn-Examples-End -->
+
+<!-- ForceDisableWakeWhenBatterySaverOn-End -->
 
 <!-- ForceInstantDim-Begin -->
 ## ForceInstantDim
@@ -26,7 +284,7 @@ ms.topic: reference
 <!-- ForceInstantDim-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ForceInstantDim-Applicability-End -->
 
 <!-- ForceInstantDim-OmaUri-Begin -->
@@ -37,7 +295,7 @@ ms.topic: reference
 
 <!-- ForceInstantDim-Description-Begin -->
 <!-- Description-Source-ADMX -->
-Determines whether Attention Based Display Dimming is forced on/off by the MDM policy. The user will not be able to change this setting and the toggle in the UI will be greyed out.
+Determines whether Attention Based Display Dimming is forced on/off by the MDM policy. The user won't be able to change this setting and the toggle in the UI will be greyed out.
 <!-- ForceInstantDim-Description-End -->
 
 <!-- ForceInstantDim-Editable-Begin -->
@@ -50,7 +308,7 @@ This is a power saving feature that prolongs battery charge.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- ForceInstantDim-DFProperties-End -->
@@ -90,7 +348,7 @@ This is a power saving feature that prolongs battery charge.
 <!-- ForceInstantLock-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ForceInstantLock-Applicability-End -->
 
 <!-- ForceInstantLock-OmaUri-Begin -->
@@ -101,7 +359,7 @@ This is a power saving feature that prolongs battery charge.
 
 <!-- ForceInstantLock-Description-Begin -->
 <!-- Description-Source-ADMX -->
-Determines whether Lock on Leave is forced on/off by the MDM policy. The user will not be able to change this setting and the toggle in the UI will be greyed out.
+Determines whether Lock on Leave is forced on/off by the MDM policy. The user won't be able to change this setting and the toggle in the UI will be greyed out.
 <!-- ForceInstantLock-Description-End -->
 
 <!-- ForceInstantLock-Editable-Begin -->
@@ -113,7 +371,7 @@ Determines whether Lock on Leave is forced on/off by the MDM policy. The user wi
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- ForceInstantLock-DFProperties-End -->
@@ -154,7 +412,7 @@ Determines whether Lock on Leave is forced on/off by the MDM policy. The user wi
 <!-- ForceInstantWake-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ForceInstantWake-Applicability-End -->
 
 <!-- ForceInstantWake-OmaUri-Begin -->
@@ -165,7 +423,7 @@ Determines whether Lock on Leave is forced on/off by the MDM policy. The user wi
 
 <!-- ForceInstantWake-Description-Begin -->
 <!-- Description-Source-ADMX -->
-Determines whether Wake On Arrival is forced on/off by the MDM policy. The user will not be able to change this setting and the toggle in the UI will be greyed out.
+Determines whether Wake On Arrival is forced on/off by the MDM policy. The user won't be able to change this setting and the toggle in the UI will be greyed out.
 <!-- ForceInstantWake-Description-End -->
 
 <!-- ForceInstantWake-Editable-Begin -->
@@ -177,7 +435,7 @@ Determines whether Wake On Arrival is forced on/off by the MDM policy. The user 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- ForceInstantWake-DFProperties-End -->
@@ -218,7 +476,7 @@ Determines whether Wake On Arrival is forced on/off by the MDM policy. The user 
 <!-- ForceLockTimeout-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ForceLockTimeout-Applicability-End -->
 
 <!-- ForceLockTimeout-OmaUri-Begin -->
@@ -241,7 +499,7 @@ Determines the timeout for Lock on Leave forced by the MDM policy. The user will
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- ForceLockTimeout-DFProperties-End -->
@@ -254,6 +512,7 @@ Determines the timeout for Lock on Leave forced by the MDM policy. The user will
 | 120 | TwoMinutes. |
 | 30 | ThirtySeconds. |
 | 10 | TenSeconds. |
+| 1 | Immediate. |
 | 0 (Default) | DefaultToUserChoice. |
 <!-- ForceLockTimeout-AllowedValues-End -->
 

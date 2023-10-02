@@ -4,7 +4,7 @@ description: Learn more about the ADMX_Logon Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- ADMX_Logon-Begin -->
 # Policy CSP - ADMX_Logon
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- ADMX_Logon-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -31,7 +28,7 @@ ms.topic: reference
 <!-- BlockUserFromShowingAccountDetailsOnSignin-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- BlockUserFromShowingAccountDetailsOnSignin-Applicability-End -->
 
 <!-- BlockUserFromShowingAccountDetailsOnSignin-OmaUri-Begin -->
@@ -44,9 +41,9 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy prevents the user from showing account details (email address or user name) on the sign-in screen.
 
-- If you enable this policy setting, the user cannot choose to show account details on the sign-in screen.
+- If you enable this policy setting, the user can't choose to show account details on the sign-in screen.
 
-- If you disable or do not configure this policy setting, the user may choose to show account details on the sign-in screen.
+- If you disable or don't configure this policy setting, the user may choose to show account details on the sign-in screen.
 <!-- BlockUserFromShowingAccountDetailsOnSignin-Description-End -->
 
 <!-- BlockUserFromShowingAccountDetailsOnSignin-Editable-Begin -->
@@ -58,13 +55,12 @@ This policy prevents the user from showing account details (email address or use
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- BlockUserFromShowingAccountDetailsOnSignin-DFProperties-End -->
 
 <!-- BlockUserFromShowingAccountDetailsOnSignin-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -91,7 +87,7 @@ This policy prevents the user from showing account details (email address or use
 <!-- DisableAcrylicBackgroundOnLogon-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DisableAcrylicBackgroundOnLogon-Applicability-End -->
 
 <!-- DisableAcrylicBackgroundOnLogon-OmaUri-Begin -->
@@ -105,7 +101,8 @@ This policy prevents the user from showing account details (email address or use
 This policy setting disables the acrylic blur effect on logon background image.
 
 - If you enable this policy, the logon background image shows without blur.
-- If you disable or do not configure this policy, the logon background image adopts the acrylic blur effect.
+
+- If you disable or don't configure this policy, the logon background image adopts the acrylic blur effect.
 <!-- DisableAcrylicBackgroundOnLogon-Description-End -->
 
 <!-- DisableAcrylicBackgroundOnLogon-Editable-Begin -->
@@ -117,13 +114,12 @@ This policy setting disables the acrylic blur effect on logon background image.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableAcrylicBackgroundOnLogon-DFProperties-End -->
 
 <!-- DisableAcrylicBackgroundOnLogon-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -150,7 +146,7 @@ This policy setting disables the acrylic blur effect on logon background image.
 <!-- DisableExplorerRunLegacy_1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DisableExplorerRunLegacy_1-Applicability-End -->
 
 <!-- DisableExplorerRunLegacy_1-OmaUri-Begin -->
@@ -167,7 +163,7 @@ You can create a customized list of additional programs and documents that the s
 
 - If you enable this policy setting, the system ignores the run list for Windows Vista, Windows XP Professional, and Windows 2000 Professional.
 
-- If you disable or do not configure this policy setting, Windows Vista adds any customized run list configured to its run list.
+- If you disable or don't configure this policy setting, Windows Vista adds any customized run list configured to its run list.
 
 This policy setting appears in the Computer Configuration and User Configuration folders. If both policy settings are configured, the policy setting in Computer Configuration takes precedence over the policy setting in User Configuration.
 
@@ -186,13 +182,12 @@ Also, see the "Do not process the run once list" policy setting.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableExplorerRunLegacy_1-DFProperties-End -->
 
 <!-- DisableExplorerRunLegacy_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -219,7 +214,7 @@ Also, see the "Do not process the run once list" policy setting.
 <!-- DisableExplorerRunLegacy_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DisableExplorerRunLegacy_2-Applicability-End -->
 
 <!-- DisableExplorerRunLegacy_2-OmaUri-Begin -->
@@ -236,7 +231,7 @@ You can create a customized list of additional programs and documents that the s
 
 - If you enable this policy setting, the system ignores the run list for Windows Vista, Windows XP Professional, and Windows 2000 Professional.
 
-- If you disable or do not configure this policy setting, Windows Vista adds any customized run list configured to its run list.
+- If you disable or don't configure this policy setting, Windows Vista adds any customized run list configured to its run list.
 
 This policy setting appears in the Computer Configuration and User Configuration folders. If both policy settings are configured, the policy setting in Computer Configuration takes precedence over the policy setting in User Configuration.
 
@@ -255,13 +250,12 @@ Also, see the "Do not process the run once list" policy setting.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableExplorerRunLegacy_2-DFProperties-End -->
 
 <!-- DisableExplorerRunLegacy_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -288,7 +282,7 @@ Also, see the "Do not process the run once list" policy setting.
 <!-- DisableExplorerRunOnceLegacy_1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DisableExplorerRunOnceLegacy_1-Applicability-End -->
 
 <!-- DisableExplorerRunOnceLegacy_1-OmaUri-Begin -->
@@ -305,7 +299,7 @@ You can create a customized list of additional programs and documents that are s
 
 - If you enable this policy setting, the system ignores the run-once list.
 
-- If you disable or do not configure this policy setting, the system runs the programs in the run-once list.
+- If you disable or don't configure this policy setting, the system runs the programs in the run-once list.
 
 This policy setting appears in the Computer Configuration and User Configuration folders. If both policy settings are configured, the policy setting in Computer Configuration takes precedence over the policy setting in User Configuration.
 
@@ -324,13 +318,12 @@ Also, see the "Do not process the legacy run list" policy setting.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableExplorerRunOnceLegacy_1-DFProperties-End -->
 
 <!-- DisableExplorerRunOnceLegacy_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -357,7 +350,7 @@ Also, see the "Do not process the legacy run list" policy setting.
 <!-- DisableExplorerRunOnceLegacy_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DisableExplorerRunOnceLegacy_2-Applicability-End -->
 
 <!-- DisableExplorerRunOnceLegacy_2-OmaUri-Begin -->
@@ -374,7 +367,7 @@ You can create a customized list of additional programs and documents that are s
 
 - If you enable this policy setting, the system ignores the run-once list.
 
-- If you disable or do not configure this policy setting, the system runs the programs in the run-once list.
+- If you disable or don't configure this policy setting, the system runs the programs in the run-once list.
 
 This policy setting appears in the Computer Configuration and User Configuration folders. If both policy settings are configured, the policy setting in Computer Configuration takes precedence over the policy setting in User Configuration.
 
@@ -393,13 +386,12 @@ Also, see the "Do not process the legacy run list" policy setting.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableExplorerRunOnceLegacy_2-DFProperties-End -->
 
 <!-- DisableExplorerRunOnceLegacy_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -426,7 +418,7 @@ Also, see the "Do not process the legacy run list" policy setting.
 <!-- DisableStatusMessages-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DisableStatusMessages-Applicability-End -->
 
 <!-- DisableStatusMessages-OmaUri-Begin -->
@@ -439,9 +431,9 @@ Also, see the "Do not process the legacy run list" policy setting.
 <!-- Description-Source-ADMX -->
 This policy setting suppresses system status messages.
 
-- If you enable this setting, the system does not display a message reminding users to wait while their system starts or shuts down, or while users log on or off.
+- If you enable this setting, the system doesn't display a message reminding users to wait while their system starts or shuts down, or while users log on or off.
 
-- If you disable or do not configure this policy setting, the system displays the message reminding users to wait while their system starts or shuts down, or while users log on or off.
+- If you disable or don't configure this policy setting, the system displays the message reminding users to wait while their system starts or shuts down, or while users log on or off.
 <!-- DisableStatusMessages-Description-End -->
 
 <!-- DisableStatusMessages-Editable-Begin -->
@@ -453,13 +445,12 @@ This policy setting suppresses system status messages.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableStatusMessages-DFProperties-End -->
 
 <!-- DisableStatusMessages-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -486,7 +477,7 @@ This policy setting suppresses system status messages.
 <!-- DontEnumerateConnectedUsers-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DontEnumerateConnectedUsers-Applicability-End -->
 
 <!-- DontEnumerateConnectedUsers-OmaUri-Begin -->
@@ -499,9 +490,9 @@ This policy setting suppresses system status messages.
 <!-- Description-Source-ADMX -->
 This policy setting prevents connected users from being enumerated on domain-joined computers.
 
-- If you enable this policy setting, the Logon UI will not enumerate any connected users on domain-joined computers.
+- If you enable this policy setting, the Logon UI won't enumerate any connected users on domain-joined computers.
 
-- If you disable or do not configure this policy setting, connected users will be enumerated on domain-joined computers.
+- If you disable or don't configure this policy setting, connected users will be enumerated on domain-joined computers.
 <!-- DontEnumerateConnectedUsers-Description-End -->
 
 <!-- DontEnumerateConnectedUsers-Editable-Begin -->
@@ -513,13 +504,12 @@ This policy setting prevents connected users from being enumerated on domain-joi
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DontEnumerateConnectedUsers-DFProperties-End -->
 
 <!-- DontEnumerateConnectedUsers-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -546,7 +536,7 @@ This policy setting prevents connected users from being enumerated on domain-joi
 <!-- NoWelcomeTips_1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- NoWelcomeTips_1-Applicability-End -->
 
 <!-- NoWelcomeTips_1-OmaUri-Begin -->
@@ -557,21 +547,21 @@ This policy setting prevents connected users from being enumerated on domain-joi
 
 <!-- NoWelcomeTips_1-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting hides the welcome screen that is displayed on Windows 2000 Professional each time the user logs on.
+This policy setting hides the welcome screen that's displayed on Windows 2000 Professional each time the user logs on.
 
 - If you enable this policy setting, the welcome screen is hidden from the user logging on to a computer where this policy is applied.
 
 Users can still display the welcome screen by selecting it on the Start menu or by typing "Welcome" in the Run dialog box.
 
-- If you disable or do not configure this policy, the welcome screen is displayed each time a user logs on to the computer.
+- If you disable or don't configure this policy, the welcome screen is displayed each time a user logs on to the computer.
 
-This setting applies only to Windows 2000 Professional. It does not affect the "Configure Your Server on a Windows 2000 Server" screen on Windows 2000 Server.
+This setting applies only to Windows 2000 Professional. It doesn't affect the "Configure Your Server on a Windows 2000 Server" screen on Windows 2000 Server.
 
 > [!NOTE]
 > This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the setting in Computer Configuration takes precedence over the setting in User Configuration.
 
 > [!TIP]
-> To display the welcome screen, click Start, point to Programs, point to Accessories, point to System Tools, and then click "Getting Started." To suppress the welcome screen without specifying a setting, clear the "Show this screen at startup" check box on the welcome screen.
+> To display the welcome screen, click Start, point to Programs, point to Accessories, point to System Tools, and then click "Getting Started". To suppress the welcome screen without specifying a setting, clear the "Show this screen at startup" check box on the welcome screen.
 <!-- NoWelcomeTips_1-Description-End -->
 
 <!-- NoWelcomeTips_1-Editable-Begin -->
@@ -583,13 +573,12 @@ This setting applies only to Windows 2000 Professional. It does not affect the "
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- NoWelcomeTips_1-DFProperties-End -->
 
 <!-- NoWelcomeTips_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -616,7 +605,7 @@ This setting applies only to Windows 2000 Professional. It does not affect the "
 <!-- NoWelcomeTips_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- NoWelcomeTips_2-Applicability-End -->
 
 <!-- NoWelcomeTips_2-OmaUri-Begin -->
@@ -627,21 +616,21 @@ This setting applies only to Windows 2000 Professional. It does not affect the "
 
 <!-- NoWelcomeTips_2-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting hides the welcome screen that is displayed on Windows 2000 Professional each time the user logs on.
+This policy setting hides the welcome screen that's displayed on Windows 2000 Professional each time the user logs on.
 
 - If you enable this policy setting, the welcome screen is hidden from the user logging on to a computer where this policy is applied.
 
 Users can still display the welcome screen by selecting it on the Start menu or by typing "Welcome" in the Run dialog box.
 
-- If you disable or do not configure this policy, the welcome screen is displayed each time a user logs on to the computer.
+- If you disable or don't configure this policy, the welcome screen is displayed each time a user logs on to the computer.
 
-This setting applies only to Windows 2000 Professional. It does not affect the "Configure Your Server on a Windows 2000 Server" screen on Windows 2000 Server.
+This setting applies only to Windows 2000 Professional. It doesn't affect the "Configure Your Server on a Windows 2000 Server" screen on Windows 2000 Server.
 
 > [!NOTE]
 > This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the setting in Computer Configuration takes precedence over the setting in User Configuration.
 
 > [!TIP]
-> To display the welcome screen, click Start, point to Programs, point to Accessories, point to System Tools, and then click "Getting Started." To suppress the welcome screen without specifying a setting, clear the "Show this screen at startup" check box on the welcome screen.
+> To display the welcome screen, click Start, point to Programs, point to Accessories, point to System Tools, and then click "Getting Started". To suppress the welcome screen without specifying a setting, clear the "Show this screen at startup" check box on the welcome screen.
 <!-- NoWelcomeTips_2-Description-End -->
 
 <!-- NoWelcomeTips_2-Editable-Begin -->
@@ -653,13 +642,12 @@ This setting applies only to Windows 2000 Professional. It does not affect the "
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- NoWelcomeTips_2-DFProperties-End -->
 
 <!-- NoWelcomeTips_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -686,7 +674,7 @@ This setting applies only to Windows 2000 Professional. It does not affect the "
 <!-- Run_1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Run_1-Applicability-End -->
 
 <!-- Run_1-OmaUri-Begin -->
@@ -703,7 +691,7 @@ This policy setting specifies additional programs or documents that Windows star
 
 To specify values for this policy setting, click Show. In the Show Contents dialog box in the Value column, type the name of the executable program (.exe) file or document file. To specify another name, press ENTER, and type the name. Unless the file is located in the %Systemroot% directory, you must specify the fully qualified path to the file.
 
-- If you disable or do not configure this policy setting, the user will have to start the appropriate programs after logon.
+- If you disable or don't configure this policy setting, the user will have to start the appropriate programs after logon.
 
 > [!NOTE]
 > This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the system starts the programs specified in the Computer Configuration setting just before it starts the programs specified in the User Configuration setting.
@@ -720,13 +708,12 @@ Also, see the "Do not process the legacy run list" and the "Do not process the r
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Run_1-DFProperties-End -->
 
 <!-- Run_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -752,7 +739,7 @@ Also, see the "Do not process the legacy run list" and the "Do not process the r
 <!-- Run_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Run_2-Applicability-End -->
 
 <!-- Run_2-OmaUri-Begin -->
@@ -769,7 +756,7 @@ This policy setting specifies additional programs or documents that Windows star
 
 To specify values for this policy setting, click Show. In the Show Contents dialog box in the Value column, type the name of the executable program (.exe) file or document file. To specify another name, press ENTER, and type the name. Unless the file is located in the %Systemroot% directory, you must specify the fully qualified path to the file.
 
-- If you disable or do not configure this policy setting, the user will have to start the appropriate programs after logon.
+- If you disable or don't configure this policy setting, the user will have to start the appropriate programs after logon.
 
 > [!NOTE]
 > This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the system starts the programs specified in the Computer Configuration setting just before it starts the programs specified in the User Configuration setting.
@@ -786,13 +773,12 @@ Also, see the "Do not process the legacy run list" and the "Do not process the r
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Run_2-DFProperties-End -->
 
 <!-- Run_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -818,7 +804,7 @@ Also, see the "Do not process the legacy run list" and the "Do not process the r
 <!-- SyncForegroundPolicy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- SyncForegroundPolicy-Applicability-End -->
 
 <!-- SyncForegroundPolicy-OmaUri-Begin -->
@@ -829,26 +815,29 @@ Also, see the "Do not process the legacy run list" and the "Do not process the r
 
 <!-- SyncForegroundPolicy-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting determines whether Group Policy processing is synchronous (that is, whether computers wait for the network to be fully initialized during computer startup and user logon). By default, on client computers, Group Policy processing is not synchronous; client computers typically do not wait for the network to be fully initialized at startup and logon. Existing users are logged on using cached credentials, which results in shorter logon times. Group Policy is applied in the background after the network becomes available.
+This policy setting determines whether Group Policy processing is synchronous (that is, whether computers wait for the network to be fully initialized during computer startup and user logon). By default, on client computers, Group Policy processing isn't synchronous; client computers typically don't wait for the network to be fully initialized at startup and logon. Existing users are logged-on using cached credentials, which results in shorter logon times. Group Policy is applied in the background after the network becomes available.
 
-**Note** that because this is a background refresh, extensions such as Software Installation and Folder Redirection take two logons to apply changes. To be able to operate safely, these extensions require that no users be logged on. Therefore, they must be processed in the foreground before users are actively using the computer. In addition, changes that are made to the user object, such as adding a roaming profile path, home directory, or user object logon script, may take up to two logons to be detected.
+Note that because this is a background refresh, extensions such as Software Installation and Folder Redirection take two logons to apply changes. To be able to operate safely, these extensions require that no users be logged on. Therefore, they must be processed in the foreground before users are actively using the computer. In addition, changes that are made to the user object, such as adding a roaming profile path, home directory, or user object logon script, may take up to two logons to be detected.
 
-If a user with a roaming profile, home directory, or user object logon script logs on to a computer, computers always wait for the network to be initialized before logging the user on. If a user has never logged on to this computer before, computers always wait for the network to be initialized.
+If a user with a roaming profile, home directory, or user object logon script logs on to a computer, computers always wait for the network to be initialized before logging the user on. If a user has never logged-on to this computer before, computers always wait for the network to be initialized.
 
 - If you enable this policy setting, computers wait for the network to be fully initialized before users are logged on. Group Policy is applied in the foreground, synchronously.
 
 On servers running Windows Server 2008 or later, this policy setting is ignored during Group Policy processing at computer startup and Group Policy processing will be synchronous (these servers wait for the network to be initialized during computer startup).
 
-If the server is configured as follows, this policy setting takes effect during Group Policy processing at user logon
+If the server is configured as follows, this policy setting takes effect during Group Policy processing at user logon:
+
 - The server is configured as a terminal server (that is, the Terminal Server role service is installed and configured on the server); and
 - The "Allow asynchronous user Group Policy processing when logging on through Terminal Services" policy setting is enabled. This policy setting is located under Computer Configuration\Policies\Administrative templates\System\Group Policy\.
 
-If this configuration is not implemented on the server, this policy setting is ignored. In this case, Group Policy processing at user logon is synchronous (these servers wait for the network to be initialized during user logon).
+If this configuration isn't implemented on the server, this policy setting is ignored. In this case, Group Policy processing at user logon is synchronous (these servers wait for the network to be initialized during user logon).
 
-- If you disable or do not configure this policy setting and users log on to a client computer or a server running Windows Server 2008 or later and that is configured as described earlier, the computer typically does not wait for the network to be fully initialized. In this case, users are logged on with cached credentials. Group Policy is applied asynchronously in the background.
+- If you disable or don't configure this policy setting and users log on to a client computer or a server running Windows Server 2008 or later and that's configured as described earlier, the computer typically doesn't wait for the network to be fully initialized. In this case, users are logged-on with cached credentials. Group Policy is applied asynchronously in the background.
 
-**Note**
+Note
+
 -If you want to guarantee the application of Folder Redirection, Software Installation, or roaming user profile settings in just one logon, enable this policy setting to ensure that Windows waits for the network to be available before applying policy.
+
 -If Folder Redirection policy will apply during the next logon, security policies will be applied asynchronously during the next update cycle, if network connectivity is available.
 <!-- SyncForegroundPolicy-Description-End -->
 
@@ -861,13 +850,12 @@ If this configuration is not implemented on the server, this policy setting is i
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- SyncForegroundPolicy-DFProperties-End -->
 
 <!-- SyncForegroundPolicy-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -894,7 +882,7 @@ If this configuration is not implemented on the server, this policy setting is i
 <!-- UseOEMBackground-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- UseOEMBackground-Applicability-End -->
 
 <!-- UseOEMBackground-OmaUri-Begin -->
@@ -911,7 +899,7 @@ This policy setting may be used to make Windows give preference to a custom logo
 
 - If you enable this policy setting, the logon screen always attempts to load a custom background instead of the Windows-branded logon background.
 
-- If you disable or do not configure this policy setting, Windows uses the default Windows logon background or custom background.
+- If you disable or don't configure this policy setting, Windows uses the default Windows logon background or custom background.
 <!-- UseOEMBackground-Description-End -->
 
 <!-- UseOEMBackground-Editable-Begin -->
@@ -923,13 +911,12 @@ This policy setting may be used to make Windows give preference to a custom logo
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- UseOEMBackground-DFProperties-End -->
 
 <!-- UseOEMBackground-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -956,7 +943,7 @@ This policy setting may be used to make Windows give preference to a custom logo
 <!-- VerboseStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- VerboseStatus-Applicability-End -->
 
 <!-- VerboseStatus-OmaUri-Begin -->
@@ -973,7 +960,7 @@ This policy setting is designed for advanced users who require this information.
 
 - If you enable this policy setting, the system displays status messages that reflect each step in the process of starting, shutting down, logging on, or logging off the system.
 
-- If you disable or do not configure this policy setting, only the default status messages are displayed to the user during these processes.
+- If you disable or don't configure this policy setting, only the default status messages are displayed to the user during these processes.
 
 > [!NOTE]
 > This policy setting is ignored if the "Remove Boot/Shutdown/Logon/Logoff status messages" policy setting is enabled.
@@ -988,13 +975,12 @@ This policy setting is designed for advanced users who require this information.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- VerboseStatus-DFProperties-End -->
 
 <!-- VerboseStatus-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

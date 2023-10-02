@@ -1,10 +1,10 @@
 ---
 title: DeveloperSetup CSP
 description: The DeveloperSetup configuration service provider (CSP) is used to configure developer mode on the device. This CSP was added in the Windows 10, version 1703.
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
-ms.topic: article
+ms.topic: reference
 ms.prod: windows-client
 ms.technology: itpro-manage
 author: vinaypamnani-msft

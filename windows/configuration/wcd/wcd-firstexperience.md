@@ -5,10 +5,11 @@ ms.prod: windows-client
 author: aczechowski
 ms.localizationpriority: medium
 ms.author: aaroncz
-ms.topic: article
+ms.topic: reference
+ms.collection: must-keep
 ms.date: 08/08/2018
 ms.reviewer: 
-manager: dougeby
+manager: aaroncz
 ms.technology: itpro-configure
 ---
 

@@ -4,7 +4,7 @@ description: View the XML file containing the device description framework (DDF)
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/17/2023
+ms.date: 06/02/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -47,7 +47,7 @@ The following XML file contains the device description framework (DDF) for the D
       <MSFT:Applicability>
         <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
         <MSFT:CspVersion>1.0</MSFT:CspVersion>
-        <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x62;0x63;0x64;0x65;0x77;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x87;0x88;0x88*;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xB4;0xBC;0xBF;0xCA;0xCB;0xCD;</MSFT:EditionAllowList>
+        <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x62;0x63;0x64;0x65;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x88;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;</MSFT:EditionAllowList>
       </MSFT:Applicability>
     </DFProperties>
     <Node>
@@ -89,7 +89,7 @@ The following XML file contains the device description framework (DDF) for the D
         <AccessType>
           <Get />
         </AccessType>
-        <Description>This node provides status of the Device Preparation page.  Values are an enum: 0 = Disabled; 1 = Enabled;  2 = InProgress; 3 = Succeeded; 4 = Failed.</Description>
+        <Description>This node provides status of the Device Preparation page.  Values are an enum: 0 = Disabled; 1 = Enabled;  2 = InProgress; 3 = ExitedOnSuccess; 4 = ExitedOnFailure.</Description>
         <DFFormat>
           <int />
         </DFFormat>
@@ -242,6 +242,72 @@ The following XML file contains the device description framework (DDF) for the D
           </MSFT:AllowedValues>
         </DFProperties>
       </Node>
+    </Node>
+    <Node>
+      <NodeName>MDMProvider</NodeName>
+      <DFProperties>
+        <AccessType>
+          <Get />
+        </AccessType>
+        <Description>The subnode configures the settings for the MDMProvider.</Description>
+        <DFFormat>
+          <node />
+        </DFFormat>
+        <Occurrence>
+          <One />
+        </Occurrence>
+        <Scope>
+          <Permanent />
+        </Scope>
+        <DFType>
+          <DDFName />
+        </DFType>
+      </DFProperties>
+      <Node>
+        <NodeName>Progress</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Get />
+            <Replace />
+          </AccessType>
+          <Description>Noode for reporting progress status as opaque data.</Description>
+          <DFFormat>
+            <chr />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Permanent />
+          </Scope>
+          <DFType>
+            <MIME />
+          </DFType>
+        </DFProperties>
+      </Node>
+    </Node>
+    <Node>
+      <NodeName>MdmAgentInstalled</NodeName>
+      <DFProperties>
+        <AccessType>
+          <Get />
+          <Replace />
+        </AccessType>
+        <DefaultValue>false</DefaultValue>
+        <Description>This node indicates whether the MDM agent was installed or not. When set to true sets the AUTOPILOT_MDM_AGENT_REGISTERED WNF event.</Description>
+        <DFFormat>
+          <bool />
+        </DFFormat>
+        <Occurrence>
+          <One />
+        </Occurrence>
+        <Scope>
+          <Permanent />
+        </Scope>
+        <DFType>
+          <MIME />
+        </DFType>
+      </DFProperties>
     </Node>
   </Node>
 </MgmtTree>

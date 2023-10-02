@@ -6,7 +6,7 @@ ms.technology: itpro-privacy
 ms.localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
-manager: dougeby
+manager: laurawi
 ms.date: 12/17/2020
 ms.topic: reference
 ---
@@ -204,7 +204,7 @@ The following methodology was used to derive the network endpoints:
 |Apps|The following endpoints are used for the Weather app.|TLSv1.2/HTTPS/HTTP|tile-service.weather.microsoft.com|
 ||The following endpoint is used by the Photos app to download configuration files, and to connect to the Office 365 portal's shared infrastructure, including Office in a browser.|TLSv1.2/HTTPS/HTTP|evoke-windowsservices-tas.msedge.net|
 ||The following endpoint is used for OneNote Live Tile.|HTTPS/HTTP|cdn.onenote.net|
-|Bing Search|The following endpoint is used by Microsoft Search in Bing enabling users to search across files, SharePoint sites, OneDrive content, Teams and Yammer conversations, and other shared data sources in an organization, as well as the web.|HTTPS|business.bing.com|
+|Bing Search|The following endpoint is used by Microsoft Search in Bing enabling users to search across files, SharePoint sites, OneDrive content, Teams and Viva Engage conversations, and other shared data sources in an organization, as well as the web.|HTTPS|business.bing.com|
 |Certificates|The following endpoint is used by the Automatic Root Certificates Update component to automatically check the list of trusted authorities on Windows Update to see if an update is available.|TLSv1.2/HTTPS/HTTP|ctldl.windowsupdate.com/*|
 |Cortana and Live Tiles|The following endpoints are related to Cortana and Live Tiles|TLSv1.2/HTTPS/HTTP|www.bing.com*|
 |||HTTPS/HTTP|fp.msedge.net|

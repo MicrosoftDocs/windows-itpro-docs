@@ -2,9 +2,6 @@
 title: Windows Hello for Business deployment guide for the on-premises key trust model
 description: Learn how to deploy Windows Hello for Business in an on-premises, key trust model.
 ms.date: 12/12/2022
-appliesto: 
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016 and later</a>
 ms.topic: tutorial
 ---
 # Deployment guide overview - on-premises key trust

@@ -1,10 +1,10 @@
 ---
 title: Storage CSP
 description: Learn how the Storage enterprise configuration service provider (CSP) is used to configure the storage card settings.
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
-ms.topic: article
+ms.topic: reference
 ms.prod: windows-client
 ms.technology: itpro-manage
 author: vinaypamnani-msft

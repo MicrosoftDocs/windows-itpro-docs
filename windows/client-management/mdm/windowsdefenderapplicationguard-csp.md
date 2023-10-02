@@ -4,7 +4,7 @@ description: Learn more about the WindowsDefenderApplicationGuard CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/28/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -19,6 +19,8 @@ ms.topic: reference
 <!-- WindowsDefenderApplicationGuard-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 The WindowsDefenderApplicationGuard configuration service provider (CSP) is used by the enterprise to configure the settings in Microsoft Defender Application Guard. This CSP was added in Windows 10, version 1709.
+
+[!INCLUDE [microsoft-defender-application-guard-mdag-configure-via-mdm](../../../includes/licensing/microsoft-defender-application-guard-mdag-configure-via-mdm.md)]
 <!-- WindowsDefenderApplicationGuard-Editable-End -->
 
 <!-- WindowsDefenderApplicationGuard-Tree-Begin -->
@@ -49,7 +51,7 @@ The following list shows the WindowsDefenderApplicationGuard configuration servi
 <!-- Device-Audit-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-Audit-Applicability-End -->
 
 <!-- Device-Audit-OmaUri-Begin -->
@@ -72,7 +74,7 @@ Interior node for Audit.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-Audit-DFProperties-End -->
 
@@ -88,7 +90,7 @@ Interior node for Audit.
 <!-- Device-Audit-AuditApplicationGuard-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-Audit-AuditApplicationGuard-Applicability-End -->
 
 <!-- Device-Audit-AuditApplicationGuard-OmaUri-Begin -->
@@ -111,7 +113,7 @@ This policy setting allows you to decide whether auditing events can be collecte
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- Device-Audit-AuditApplicationGuard-DFProperties-End -->
@@ -151,7 +153,7 @@ This policy setting allows you to decide whether auditing events can be collecte
 <!-- Device-InstallWindowsDefenderApplicationGuard-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-InstallWindowsDefenderApplicationGuard-Applicability-End -->
 
 <!-- Device-InstallWindowsDefenderApplicationGuard-OmaUri-Begin -->
@@ -174,7 +176,7 @@ Initiates remote installation of Application Guard feature.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Exec, Get |
 <!-- Device-InstallWindowsDefenderApplicationGuard-DFProperties-End -->
 
@@ -199,7 +201,7 @@ Initiates remote installation of Application Guard feature.
 <!-- Device-PlatformStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- Device-PlatformStatus-Applicability-End -->
 
 <!-- Device-PlatformStatus-OmaUri-Begin -->
@@ -222,7 +224,7 @@ Returns bitmask that indicates status of Application Guard platform installation
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-PlatformStatus-DFProperties-End -->
 
@@ -238,7 +240,7 @@ Returns bitmask that indicates status of Application Guard platform installation
 <!-- Device-Settings-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-Settings-Applicability-End -->
 
 <!-- Device-Settings-OmaUri-Begin -->
@@ -261,7 +263,7 @@ Interior Node for Settings.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-Settings-DFProperties-End -->
 
@@ -277,7 +279,7 @@ Interior Node for Settings.
 <!-- Device-Settings-AllowCameraMicrophoneRedirection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-Settings-AllowCameraMicrophoneRedirection-Applicability-End -->
 
 <!-- Device-Settings-AllowCameraMicrophoneRedirection-OmaUri-Begin -->
@@ -291,6 +293,7 @@ Interior Node for Settings.
 This policy setting allows you to determine whether applications inside Microsoft Defender Application Guard can access the device's camera and microphone when these settings are enabled on the user's device.
 
 - If you enable this policy setting, applications inside Microsoft Defender Application Guard will be able to access the camera and microphone on the user's device.
+
 - If you disable or don't configure this policy setting, applications inside Microsoft Defender Application Guard will be unable to access the camera and microphone on the user's device.
 <!-- Device-Settings-AllowCameraMicrophoneRedirection-Description-End -->
 
@@ -303,7 +306,7 @@ This policy setting allows you to determine whether applications inside Microsof
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- Device-Settings-AllowCameraMicrophoneRedirection-DFProperties-End -->
@@ -313,7 +316,7 @@ This policy setting allows you to determine whether applications inside Microsof
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Microsoft Defender Application Guard cannot access the device’s camera and microphone. When the policy is not configured, it is the same as disabled (0). |
+| 0 (Default) | Microsoft Defender Application Guard can't access the device’s camera and microphone. When the policy isn't configured, it's the same as disabled (0). |
 | 1 | Turns on the functionality to allow Microsoft Defender Application Guard to access the device’s camera and microphone. |
 <!-- Device-Settings-AllowCameraMicrophoneRedirection-AllowedValues-End -->
 
@@ -343,7 +346,7 @@ This policy setting allows you to determine whether applications inside Microsof
 <!-- Device-Settings-AllowPersistence-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-Settings-AllowPersistence-Applicability-End -->
 
 <!-- Device-Settings-AllowPersistence-OmaUri-Begin -->
@@ -366,7 +369,7 @@ This policy setting allows you to decide whether data should persist across diff
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-Settings-AllowPersistence-DFProperties-End -->
 
@@ -405,7 +408,7 @@ This policy setting allows you to decide whether data should persist across diff
 <!-- Device-Settings-AllowVirtualGPU-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- Device-Settings-AllowVirtualGPU-Applicability-End -->
 
 <!-- Device-Settings-AllowVirtualGPU-OmaUri-Begin -->
@@ -430,7 +433,7 @@ This policy setting allows you to determine whether Application Guard can use th
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- Device-Settings-AllowVirtualGPU-DFProperties-End -->
@@ -440,7 +443,7 @@ This policy setting allows you to determine whether Application Guard can use th
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Cannot access the vGPU and uses the CPU to support rendering graphics. When the policy is not configured, it is the same as disabled (0). |
+| 0 (Default) | Cannot access the vGPU and uses the CPU to support rendering graphics. When the policy isn't configured, it's the same as disabled (0). |
 | 1 | Turns on the functionality to access the vGPU offloading graphics rendering from the CPU. This can create a faster experience when working with graphics intense websites or watching video within the container. |
 <!-- Device-Settings-AllowVirtualGPU-AllowedValues-End -->
 
@@ -470,7 +473,7 @@ This policy setting allows you to determine whether Application Guard can use th
 <!-- Device-Settings-AllowWindowsDefenderApplicationGuard-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-Settings-AllowWindowsDefenderApplicationGuard-Applicability-End -->
 
 <!-- Device-Settings-AllowWindowsDefenderApplicationGuard-OmaUri-Begin -->
@@ -493,7 +496,7 @@ Turn on Microsoft Defender Application Guard in Enterprise Mode.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-Settings-AllowWindowsDefenderApplicationGuard-DFProperties-End -->
 
@@ -532,7 +535,7 @@ Turn on Microsoft Defender Application Guard in Enterprise Mode.
 <!-- Device-Settings-BlockNonEnterpriseContent-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-Settings-BlockNonEnterpriseContent-Applicability-End -->
 
 <!-- Device-Settings-BlockNonEnterpriseContent-OmaUri-Begin -->
@@ -557,7 +560,7 @@ This policy setting allows you to decide whether websites can load non-enterpris
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- Device-Settings-BlockNonEnterpriseContent-DFProperties-End -->
@@ -597,7 +600,7 @@ This policy setting allows you to decide whether websites can load non-enterpris
 <!-- Device-Settings-CertificateThumbprints-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-Settings-CertificateThumbprints-Applicability-End -->
 
 <!-- Device-Settings-CertificateThumbprints-OmaUri-Begin -->
@@ -611,7 +614,8 @@ This policy setting allows you to decide whether websites can load non-enterpris
 This policy setting allows certain device level Root Certificates to be shared with the Microsoft Defender Application Guard container.
 
 - If you enable this setting, certificates with a thumbprint matching the ones specified will be transferred into the container. Multiple certificates can be specified by using a comma to separate the thumbprints for each certificate you want to transfer. Here's an example: b4e72779a8a362c860c36a6461f31e3aa7e58c14,1b1d49f06d2a697a544a1059bd59a7b058cda924.
-- If you disable or don't configure this setting, certificates are not shared with the Microsoft Defender Application Guard container.
+
+- If you disable or don't configure this setting, certificates aren't shared with the Microsoft Defender Application Guard container.
 <!-- Device-Settings-CertificateThumbprints-Description-End -->
 
 <!-- Device-Settings-CertificateThumbprints-Editable-Begin -->
@@ -625,7 +629,7 @@ This policy setting allows certain device level Root Certificates to be shared w
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `,`) |
 <!-- Device-Settings-CertificateThumbprints-DFProperties-End -->
@@ -655,7 +659,7 @@ This policy setting allows certain device level Root Certificates to be shared w
 <!-- Device-Settings-ClipboardFileType-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-Settings-ClipboardFileType-Applicability-End -->
 
 <!-- Device-Settings-ClipboardFileType-OmaUri-Begin -->
@@ -678,7 +682,7 @@ Determines the type of content that can be copied from the host to Application G
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-Settings-ClipboardFileType-DFProperties-End -->
 
@@ -717,7 +721,7 @@ Determines the type of content that can be copied from the host to Application G
 <!-- Device-Settings-ClipboardSettings-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-Settings-ClipboardSettings-Applicability-End -->
 
 <!-- Device-Settings-ClipboardSettings-OmaUri-Begin -->
@@ -740,7 +744,7 @@ This policy setting allows you to decide how the clipboard behaves while in Appl
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- Device-Settings-ClipboardSettings-DFProperties-End -->
@@ -781,7 +785,7 @@ This policy setting allows you to decide how the clipboard behaves while in Appl
 <!-- Device-Settings-PrintingSettings-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-Settings-PrintingSettings-Applicability-End -->
 
 <!-- Device-Settings-PrintingSettings-OmaUri-Begin -->
@@ -804,7 +808,7 @@ This policy setting allows you to decide how the print functionality behaves whi
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- Device-Settings-PrintingSettings-DFProperties-End -->
@@ -857,7 +861,7 @@ This policy setting allows you to decide how the print functionality behaves whi
 <!-- Device-Settings-SaveFilesToHost-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- Device-Settings-SaveFilesToHost-Applicability-End -->
 
 <!-- Device-Settings-SaveFilesToHost-OmaUri-Begin -->
@@ -880,7 +884,7 @@ This policy setting allows you to determine whether users can elect to download 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- Device-Settings-SaveFilesToHost-DFProperties-End -->
@@ -890,7 +894,7 @@ This policy setting allows you to determine whether users can elect to download 
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | The user cannot download files from Edge in the container to the host file system. When the policy is not configured, it is the same as disabled (0). |
+| 0 (Default) | The user can't download files from Edge in the container to the host file system. When the policy isn't configured, it's the same as disabled (0). |
 | 1 | Turns on the functionality to allow users to download files from Edge in the container to the host file system. |
 <!-- Device-Settings-SaveFilesToHost-AllowedValues-End -->
 
@@ -920,7 +924,7 @@ This policy setting allows you to determine whether users can elect to download 
 <!-- Device-Status-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-Status-Applicability-End -->
 
 <!-- Device-Status-OmaUri-Begin -->
@@ -943,7 +947,7 @@ Returns bitmask that indicates status of Application Guard installation and pre-
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-Status-DFProperties-End -->
 

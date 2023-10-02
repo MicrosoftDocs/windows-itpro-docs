@@ -1,11 +1,11 @@
 ---
-title: 6406(-) %1 registered to Windows Firewall to control filtering for the following %2. (Windows 10)
+title: 6406(-) %1 registered to Windows Firewall to control filtering for the following %2. 
 description: Describes security event 6406(-) %1 registered to Windows Firewall to control filtering for the following %2.
 ms.pagetype: security
 ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
+ms.localizationpriority: low
 author: vinaypamnani-msft
 ms.date: 09/09/2021
 ms.reviewer: 

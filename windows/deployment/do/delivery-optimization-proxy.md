@@ -10,6 +10,7 @@ ms.topic: article
 ms.technology: itpro-updates
 ms.date: 12/31/2017
 ms.collection: tier3
+ms.reviewer: mstewart
 ---
 
 # Using a proxy with Delivery Optimization
@@ -34,7 +35,7 @@ If a user is signed in, the system uses the Internet Explorer proxy.
 
 If no user is signed in, even if both the Internet Explorer proxy and netsh configuration are set, the netsh configuration will take precedence over the Internet Explorer proxy. This can result in download failures. For example, you might receive HTTP_E_STATUS_PROXY_AUTH_REQ or HTTP_E_STATUS_DENIED errors.
 
-You can still use netsh to import the proxy setting from Internet Explorer (`netsh winhttp import proxy source=ie `) if your proxy configuration is a static *proxyServerName:Port*. However, the same limitations mentioned previously apply.
+You can still use netsh to import the proxy setting from Internet Explorer (`netsh winhttp import proxy source=ie`) if your proxy configuration is a static *proxyServerName:Port*. However, the same limitations mentioned previously apply.
 
 ### Summary of settings behavior
 

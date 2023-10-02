@@ -9,13 +9,14 @@ ms.author: mstewart
 ms.topic: article
 ms.technology: itpro-fundamentals
 ms.date: 10/28/2022
-ms.collection: highpri, tier2
+ms.collection:
+  - highpri
+  - tier2
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 # Windows client features lifecycle
-
-Applies to: 
-- Windows 10
-- Windows 11
 
 Each release of Windows 10 and Windows 11 contains many new and improved features. Occasionally we also remove features and functionality, usually because there is a better option.
 

@@ -1,30 +1,19 @@
 ---
 title: Certificate authentication device enrollment
 description: This section provides an example of the mobile device enrollment protocol using certificate authentication policy.
-ms.reviewer: 
-manager: aaroncz
-ms.author: vinpa
 ms.topic: article
-ms.prod: windows-client
-ms.technology: itpro-manage
-author: vinaypamnani-msft
-ms.date: 06/26/2017
+ms.date: 08/10/2023
 ---
 
 # Certificate authentication device enrollment
 
-This section provides an example of the mobile device enrollment protocol using certificate authentication policy. For details about the Microsoft mobile device enrollment protocol for Windows 10, see [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2](https://go.microsoft.com/fwlink/p/?LinkId=619347).
+This section provides an example of the mobile device enrollment protocol using certificate authentication policy. For details about the Microsoft mobile device enrollment protocol for Windows devices, see [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2](https://go.microsoft.com/fwlink/p/?LinkId=619347).
 
-> [!Note]
+> [!NOTE]
 > To set up devices to use certificate authentication for enrollment, you should create a provisioning package. For more information about provisioning packages, see [Build and apply a provisioning package](/windows/configuration/provisioning-packages/provisioning-create-package).
 
-## In this topic
-
--   [Discovery service](#discovery-service)
--   [Enrollment policy web service](#enrollment-policy-web-service)
--   [Enrollment web service](#enrollment-web-service)
-
-For the list of enrollment scenarios not supported in Windows 10, see [Enrollment scenarios not supported](mobile-device-enrollment.md#enrollment-scenarios-not-supported).
+> [!NOTE]
+> For the list of enrollment scenarios not supported in Windows, see [Enrollment scenarios not supported](mobile-device-enrollment.md#enrollment-scenarios-not-supported).
 
 ## Discovery Service
 
@@ -37,34 +26,33 @@ User-Agent: Windows Enrollment Client
 Host: EnterpriseEnrollment.Contoso.com
 Content-Length: xxx
 Cache-Control: no-cache
-
 <?xml version="1.0"?>
-<s:Envelope xmlns:a="http://www.w3.org/2005/08/addressing" 
-   xmlns:s="http://www.w3.org/2003/05/soap-envelope"> 
-   <s:Header> 
+<s:Envelope xmlns:a="http://www.w3.org/2005/08/addressing"
+   xmlns:s="http://www.w3.org/2003/05/soap-envelope">
+   <s:Header>
       <a:Action s:mustUnderstand="1">
  http://schemas.microsoft.com/windows/management/2012/01/enrollment/IDiscoveryService/Discover
-      </a:Action> 
-      <a:MessageID>urn:uuid: 748132ec-a575-4329-b01b-6171a9cf8478</a:MessageID> 
-      <a:ReplyTo> 
-         <a:Address>http://www.w3.org/2005/08/addressing/anonymous</a:Address> 
-      </a:ReplyTo> 
+      </a:Action>
+      <a:MessageID>urn:uuid: 748132ec-a575-4329-b01b-6171a9cf8478</a:MessageID>
+      <a:ReplyTo>
+         <a:Address>http://www.w3.org/2005/08/addressing/anonymous</a:Address>
+      </a:ReplyTo>
       <a:To s:mustUnderstand="1">
          https://ENROLLTEST.CONTOSO.COM/EnrollmentServer/Discovery.svc
-      </a:To> 
-   </s:Header> 
-   <s:Body> 
-      <Discover xmlns="http://schemas.microsoft.com/windows/management/2012/01/enrollment/"> 
-         <request xmlns:i="http://www.w3.org/2001/XMLSchema-instance"> 
+      </a:To>
+   </s:Header>
+   <s:Body>
+      <Discover xmlns="http://schemas.microsoft.com/windows/management/2012/01/enrollment/">
+         <request xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
             <EmailAddress>user@contoso.com</EmailAddress>
             <OSEdition>101</OSEdition> <!--New in Windows 10-->
             <OSVersion>10.0.0.0</OSVersion> <!--New in Windows 10-->
-            <RequestVersion>3.0</RequestVersion> <!--Updated in Windows 10-->   
+            <RequestVersion>3.0</RequestVersion> <!--Updated in Windows 10-->
             <ApplicationVersion>10.0.0.0</ApplicationVersion>
             <AuthPolicies>Certificate</AuthPolicies> <!--New in Windows 10-->
-         </request> 
-      </Discover> 
-   </s:Body> 
+         </request>
+      </Discover>
+   </s:Body>
 </s:Envelope>
 ```
 
@@ -76,7 +64,7 @@ Content-Length: 865
 Content-Type: application/soap+xml; charset=utf-8
 Server: EnterpriseEnrollment.Contoso.com
 Date: Tue, 02 Aug 2012 00:32:56 GMT
-<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" 
+<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope"
    xmlns:a="http://www.w3.org/2005/08/addressing">
    <s:Header>
       <a:Action s:mustUnderstand="1">
@@ -87,9 +75,9 @@ http://schemas.microsoft.com/windows/management/2012/01/enrollment/IDiscoverySer
       </ActivityId>
       <a:RelatesTo>urn:uuid: 748132ec-a575-4329-b01b-6171a9cf8478</a:RelatesTo>
    </s:Header>
-   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-      <DiscoverResponse 
+      <DiscoverResponse
          xmlns="http://schemas.microsoft.com/windows/management/2012/01/enrollment">
          <DiscoverResult>
             <AuthPolicy>Certificate</AuthPolicy>
@@ -117,11 +105,11 @@ User-Agent: Windows Enrollment Client
 Host: enrolltest.contoso.com
 Content-Length: xxxx
 Cache-Control: no-cache
-<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" 
-   xmlns:a="http://www.w3.org/2005/08/addressing"  
+<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope"
+   xmlns:a="http://www.w3.org/2005/08/addressing"
    xmlns:u="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
    xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"
-   xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512" 
+   xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512"
    xmlns:ac="http://schemas.xmlsoap.org/ws/2006/12/authorization">
    <s:Header>
       <a:Action s:mustUnderstand="1">
@@ -135,16 +123,16 @@ Cache-Control: no-cache
          https://enrolltest.contoso.com/ENROLLMENTSERVER/DEVICEENROLLMENTWEBSERVICE.SVC
       </a:To>
       <wsse:Security s:mustUnderstand="1">
-         <wsse:BinarySecurityToken  wsse:ValueType="X509v3” wsse:Id="mytoken” wsse:EncodingType=
+         <wsse:BinarySecurityToken  wsse:ValueType="X509v3" wsse:Id="mytoken" wsse:EncodingType=
    http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd#base64binary"
            xmlns="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
                   B64EncodedSampleBinarySecurityToken
-         </wsse:BinarySecurityToken>  
+         </wsse:BinarySecurityToken>
       </wsse:Security>
    </s:Header>
-   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-      <GetPolicies 
+      <GetPolicies
          xmlns="http://schemas.microsoft.com/windows/pki/2009/01/enrollmentpolicy">
          <client>
             <lastUpdate xsi:nil="true"/>
@@ -190,29 +178,29 @@ Content-Type: application/soap+xml
 Content-Length: xxxx
 
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<s:Envelope 
+<s:Envelope
    xmlns:u="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
-   xmlns:s="http://www.w3.org/2003/05/soap-envelope" 
+   xmlns:s="http://www.w3.org/2003/05/soap-envelope"
    xmlns:a="http://www.w3.org/2005/08/addressing">
    <s:Header>
       <a:Action s:mustUnderstand="1">
    http://schemas.microsoft.com/windows/pki/2009/01/enrollmentpolicy/IPolicy/GetPoliciesResponse
       </a:Action>
-      <ActivityId CorrelationId="08d2997e-e8ac-4c97-a4ce-d263e62186ab" 
+      <ActivityId CorrelationId="08d2997e-e8ac-4c97-a4ce-d263e62186ab"
          xmlns="http://schemas.microsoft.com/2004/09/ServiceModel/Diagnostics">
          d4335d7c-e192-402d-b0e7-f5d550467e3c</ActivityId>
       <a:RelatesTo>urn:uuid: 69960163-adad-4a72-82d2-bb0e5cff5598</a:RelatesTo>
    </s:Header>
-   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-      <GetPoliciesResponse 
+      <GetPoliciesResponse
          xmlns="http://schemas.microsoft.com/windows/pki/2009/01/enrollmentpolicy">
-         <response>   
-            <policyFriendlyName xsi:nil="true" 
+         <response>
+            <policyFriendlyName xsi:nil="true"
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-            <nextUpdateHours xsi:nil="true" 
+            <nextUpdateHours xsi:nil="true"
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-            <policiesNotChanged xsi:nil="true" 
+            <policiesNotChanged xsi:nil="true"
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
             <policies>
                <policy>
@@ -268,11 +256,11 @@ Host: enrolltest.contoso.com
 Content-Length: 3242
 Cache-Control: no-cache
 
-<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" 
-   xmlns:a="http://www.w3.org/2005/08/addressing" 
+<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope"
+   xmlns:a="http://www.w3.org/2005/08/addressing"
    xmlns:u="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
    xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"
-   xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512" 
+   xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512"
    xmlns:ac="http://schemas.xmlsoap.org/ws/2006/12/authorization">
    <s:Header>
       <a:Action s:mustUnderstand="1">
@@ -289,36 +277,35 @@ Cache-Control: no-cache
          <wsu:Timestamp>
             <wsu:Created>2014-10-16T17:55:13Z</wsu:Created> <!-- Start time in UTC -->
             <wsu:Expires>2014-10-16T17:57:13Z </wsu:Expires> <!-- Expiration time in UTC -->
-        </wsu:Timestamp> 
+        </wsu:Timestamp>
         <wsse:BinarySecurityToken  wsse:ValueType=
 http://schemas.microsoft.com/5.0.0.0/ConfigurationManager/Enrollment/DeviceEnrollmentUserToken
                   wsse:EncodingType=
    http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd#base64binary"
                   xmlns=
           http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd
-                  wsu:Id=”29801C2F-F26B-46AD-984B-AFAEFB545FF8”>
+                  wsu:Id="29801C2F-F26B-46AD-984B-AFAEFB545FF8">
                   B64EncodedSampleBinarySecurityToken
-         </wsse:BinarySecurityToken> <!—X509v3 Exported Public Cert, B64 Encoded, includes ID reference value to reference  -->
+         </wsse:BinarySecurityToken> <!-X509v3 Exported Public Cert, B64 Encoded, includes ID reference value to reference  -->
          <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
-            <ds:SignedInfo xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" 
-                 xmlns:ds="http://www.w3.org/2000/09/xmldsig#" 
-                 xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-
-                            1.0.xsd”>
+            <ds:SignedInfo xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+                 xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+                 xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility- 1.0.xsd">
                <ds:SignatureMethodAlgorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1/>
                <ds:Reference URI="#envelop">
-                  <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256"/> 
+                  <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256"/>
                   <ds:DigestValue>MessageDigestValue</ds:DigestValue>
                      <!-- Digest value of message using digest method -->
                </ds:Reference>
             </ds:SignedInfo>
-            <ds:SignatureValue>SignedMessageBlob/ds:SignatureValue> 
-                <!-- Digest value of message signed with the user’s private key using RSA-SHA256 -->
+            <ds:SignatureValue>SignedMessageBlob/ds:SignatureValue>
+                <!-- Digest value of message signed with the user's private key using RSA-SHA256 -->
             <ds:KeyInfo>
-               <wsse:SecurityTokenReference> 
-                  <wsse:Reference URI="29801C2F-F26B-46AD-984B-AFAEFB545FF8" 
+               <wsse:SecurityTokenReference>
+                  <wsse:Reference URI="29801C2F-F26B-46AD-984B-AFAEFB545FF8"
                                   ValueType="http://docs.oasis-open.org/wss/2004/01/
                                   oasis-200401-wss-x509-token-profile-1.0#X509"/>
-                  <!-— References BinarySecurityToken that contains public key to verify signature -->
+                  <!-- References BinarySecurityToken that contains public key to verify signature -->
                </wsse:SecurityTokenReference>
             </ds:KeyInfo>
          </ds:Signature>
@@ -331,8 +318,8 @@ http://schemas.microsoft.com/5.0.0.0/ConfigurationManager/Enrollment/DeviceEnrol
          </wst:TokenType>
          <wst:RequestType>
             http://docs.oasis-open.org/ws-sx/ws-trust/200512/Issue</wst:RequestType>
-         <wsse:BinarySecurityToken 
-            ValueType="http://schemas.microsoft.com/windows/pki/2009/01/enrollment#PKCS10" 
+         <wsse:BinarySecurityToken
+            ValueType="http://schemas.microsoft.com/windows/pki/2009/01/enrollment#PKCS10"
             EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd#base64binary">
             DER format PKCS#10 certificate request in Base64 encoding Insterted Here
          </wsse:BinarySecurityToken>
@@ -354,7 +341,7 @@ http://schemas.microsoft.com/5.0.0.0/ConfigurationManager/Enrollment/DeviceEnrol
               </ac:ContextItem>
                      </ac:ContextItem>
             <ac:ContextItem Name="DeviceID"> <!--From Handheld 8.1 -->
-               <ac:Value>7BA748C8-703E-4DF2-A74A-92984117346A</ac:Value> 
+               <ac:Value>7BA748C8-703E-4DF2-A74A-92984117346A</ac:Value>
                <ac:ContextItem Name="EnrollmentData">
                <ac:Value>3J4KLJ9SDJFAL93JLAKHJSDFJHAO83HAKSHFLAHSKFNHNPA2934342</ac:Value>
                <ac:ContextItem Name="TargetedUserLoggedIn">
@@ -376,8 +363,8 @@ Content-Type: application/soap+xml; charset=utf-8
 Server: Microsoft-IIS/7.0
 Date: Fri, 03 Aug 2012 00:32:59 GMT
 
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" 
-   xmlns:a="http://www.w3.org/2005/08/addressing" 
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"
+   xmlns:a="http://www.w3.org/2005/08/addressing"
    xmlns:u="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
    <s:Header>
       <Action s:mustUnderstand="1" >
@@ -393,14 +380,14 @@ Date: Fri, 03 Aug 2012 00:32:59 GMT
       </o:Security>
    </s:Header>
    <s:Body>
-      <RequestSecurityTokenResponseCollection 
+      <RequestSecurityTokenResponseCollection
          xmlns="http://docs.oasis-open.org/ws-sx/ws-trust/200512">
          <RequestSecurityTokenResponse>
             <TokenType>
     http://schemas.microsoft.com/5.0.0.0/ConfigurationManager/Enrollment/DeviceEnrollmentToken
             </TokenType>
             <RequestedSecurityToken>
-               <BinarySecurityToken 
+               <BinarySecurityToken
                   ValueType=
 "http://schemas.microsoft.com/5.0.0.0/ConfigurationManager/Enrollment/DeviceEnrollmentProvisionDoc"
                   EncodingType=
@@ -433,17 +420,17 @@ The following example shows the encoded provisioning XML.
       </characteristic>
    </characteristic>
    <characteristic type="CertificateStore">
-      <characteristic type="My" >      
+      <characteristic type="My" >
          <characteristic type="User">
             <characteristic type="F9A4F20FC50D990FDD0E3DB9AFCBF401818D5462">
                <parm name="EncodedCertificate" value="B64EncodedCertInsertedHere" />
             </characteristic>
-            <characteristic type="PrivateKeyContainer"/> 
-            <!-- This tag must be present for XML syntax correctness. -->            
+            <characteristic type="PrivateKeyContainer"/>
+            <!-- This tag must be present for XML syntax correctness. -->
          </characteristic>
          <characteristic type="WSTEP">
             <characteristic type="Renew">
-             <!—If the datatype for ROBOSupport, RenewPeriod, and RetryInterval tags exist, they must be set explicitly. -->
+             <!--If the datatype for ROBOSupport, RenewPeriod, and RetryInterval tags exist, they must be set explicitly. -->
                <parm name="ROBOSupport" value="true" datatype="boolean"/>
                <parm name="RenewPeriod" value="60" datatype="integer"/>
                <parm name="RetryInterval" value="4" datatype="integer"/>
@@ -480,14 +467,14 @@ The following example shows the encoded provisioning XML.
       <characteristic type="Provider">
 <!-- ProviderID in DMClient CSP must match to PROVIDER-ID in w7 APPLICATION characteristics -->
     <characteristic type="TestMDMServer">
-          <parm name="UPN" value="UserPrincipalName" datatype="string" /> 
+          <parm name="UPN" value="UserPrincipalName" datatype="string" />
              <characteristic type="Poll">
                 <parm name="NumberOfFirstRetries" value="8" datatype="integer" />
                 <parm name="IntervalForFirstSetOfRetries" value="15" datatype="integer" />
                 <parm name="NumberOfSecondRetries" value="5" datatype="integer" />
                 <parm name="IntervalForSecondSetOfRetries" value="3" datatype="integer" />
                 <parm name="NumberOfRemainingScheduledRetries" value="0" datatype="integer" />
-<!-- Windows 10 supports MDM push for real-time communication. The DM client long term polling schedule’s retry waiting interval should be more than 24 hours (1440) to reduce the impact to data consumption and battery life. Refer to the DMClient Configuration Service Provider section for information about polling schedule parameters.-->
+<!-- Windows 10 supports MDM push for real-time communication. The DM client long term polling schedule's retry waiting interval should be more than 24 hours (1440) to reduce the impact to data consumption and battery life. Refer to the DMClient Configuration Service Provider section for information about polling schedule parameters.-->
          <parm name="IntervalForRemainingScheduledRetries" value="1560" datatype="integer" />
          <parm name="PollOnLogin" value="true" datatype="boolean" />
  </characteristic>
@@ -495,7 +482,7 @@ The following example shows the encoded provisioning XML.
 </characteristic>
       </characteristic>
    </characteristic>
-   <!-- For Windows 10, we have removed EnterpriseAppManagement from the enrollment 
+   <!-- For Windows 10, we have removed EnterpriseAppManagement from the enrollment
         protocol. This configuration service provider is being deprecated for Windows 10. -->
 </wap-provisioningdoc>
 ```

@@ -1,20 +1,13 @@
 ---
 title: Using PowerShell scripting with the WMI Bridge Provider
-description: This topic covers using PowerShell Cmdlet scripts to configure per-user and per-device policy settings, and how to invoke methods through the WMI Bridge Provider.
-ms.reviewer: 
-manager: aaroncz
-ms.author: vinpa
+description: This article covers using PowerShell Cmdlet scripts to configure per-user and per-device policy settings, and how to invoke methods through the WMI Bridge Provider.
 ms.topic: article
-ms.prod: windows-client
-ms.technology: itpro-manage
-author: vinaypamnani-msft
-ms.date: 06/26/2017
+ms.date: 08/10/2023
 ---
 
 # Using PowerShell scripting with the WMI Bridge Provider
 
-This topic covers using PowerShell Cmdlet scripts to configure per-user and per-device policy settings, and how to invoke methods through the [WMI Bridge Provider](/windows/win32/dmwmibridgeprov/mdm-bridge-wmi-provider-portal).
-
+This article covers using PowerShell Cmdlet scripts to configure per-user and per-device policy settings, and how to invoke methods through the [WMI Bridge Provider](/windows/win32/dmwmibridgeprov/mdm-bridge-wmi-provider-portal).
 
 ## Configuring per-device policy settings
 
@@ -42,7 +35,7 @@ The following script describes how to create, enumerate, query, modify, and dele
 $namespaceName = "root\cimv2\mdm\dmmap"
 $className = "MDM_Policy_Config01_WiFi02"
 
-# Create a new instance for MDM_Policy_Config01_WiFi02 
+# Create a new instance for MDM_Policy_Config01_WiFi02
 New-CimInstance -Namespace $namespaceName -ClassName $className -Property @{ParentID="./Vendor/MSFT/Policy/Config";InstanceID="WiFi";AllowInternetSharing=1;AllowAutoConnectToWiFiSenseHotspots=0;WLANScanMode=100}
 
 # Enumerate all instances available for MDM_Policy_Config01_WiFi02
@@ -84,17 +77,15 @@ class MDM_Policy_User_Config01_Authentication02
 };
 ```
 
-> **Note**  If the currently logged on user is trying to access or modify user settings for themselves, it is much easier to use the per-device settings script from the previous section. All PowerShell cmdlets must be executed under an elevated admin command prompt.
-
- 
+> [!NOTE]
+> If the currently logged on user is trying to access or modify user settings for themselves, it is much easier to use the per-device settings script from the previous section. All PowerShell cmdlets must be executed under an elevated admin command prompt.
 
 If accessing or modifying settings for a different user, then the PowerShell script is more complicated because the WMI Bridge expects the user SID to be set in MI Custom Context, which isn't supported in native PowerShell cmdlets.
 
-> **Note**   All commands must executed under local system.
+> [!NOTE]
+> All commands must executed under local system.
 
- 
-
-A user SID can be obtained by Windows command `wmic useraccount get name, sid`. The following script example assumes the user SID is S-1-5-21-4017247134-4237859428-3008104844-1001.
+Windows command `wmic useraccount get name, sid` can be used to obtain the user SID. The following script example assumes the user SID is` S-1-5-21-4017247134-4237859428-3008104844-1001`.
 
 ```PowerShell
 $namespaceName = "root\cimv2\mdm\dmmap"
@@ -217,8 +208,6 @@ catch [Exception]
 }
 ```
 
-## Related topics
+## Related articles
 
 [WMI Bridge Provider](/windows/win32/dmwmibridgeprov/mdm-bridge-wmi-provider-portal)
-
- 

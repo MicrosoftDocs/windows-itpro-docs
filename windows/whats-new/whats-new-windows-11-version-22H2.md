@@ -6,15 +6,17 @@ ms.prod: windows-client
 ms.author: mstewart
 author: mestew
 ms.localizationpriority: medium
-ms.topic: article
-ms.collection: highpri, tier1
+ms.topic: conceptual
+ms.collection:
+  - highpri
+  - tier2
 ms.technology: itpro-fundamentals
-ms.date: 12/31/2017
+ms.date: 08/11/2023
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11, version 22H2</a>
 ---
 
 # What's new in Windows 11, version 22H2
-
-**Applies to**: Windows 11, version 22H2
 <!--6681501-->
 Windows 11, version 22H2 is a feature update for Windows 11. It includes all features and fixes in previous cumulative updates to Windows 11, version 21H2, the original Windows 11 release version. This article lists the new and updated features IT Pros should know.
 
@@ -38,7 +40,7 @@ For more information, see [Microsoft Pluton security processor](/windows/securit
 <!--6286059, 6063796-->
 **Enhanced Phishing Protection** in **Microsoft Defender SmartScreen** helps protect Microsoft school or work passwords against phishing and unsafe usage on websites and in applications. Enhanced Phishing Protection works alongside Windows security protections to help protect Windows 11 work or school sign-in passwords.
 
-For more information, see [Enhanced Phishing Protection in Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/phishing-protection-microsoft-defender-smartscreen) and [Protect passwords with enhanced phishing protection](https://aka.ms/EnhancedPhishingProtectionBlog) in the Windows IT Pro blog.
+For more information, see [Enhanced Phishing Protection in Microsoft Defender SmartScreen](/windows/security/operating-system-security/virus-and-threat-protection/microsoft-defender-smartscreen/enhanced-phishing-protection) and [Protect passwords with enhanced phishing protection](https://aka.ms/EnhancedPhishingProtectionBlog) in the Windows IT Pro blog.
 
 ## Smart App Control
 <!-- 6286281-->
@@ -48,9 +50,9 @@ For more information, see [Smart App Control](/windows/security/threat-protectio
 
 ## Credential Guard
 <!--6289166-->
-Compatible Windows 11 Enterprise version 22H2 devices will have **Windows Defender Credential Guard** turned on by default. This changes the default state of the feature in Windows, though system administrators can still modify this enablement state.
+Compatible Windows 11 Enterprise version 22H2 devices will have **Credential Guard** turned on by default. This changes the default state of the feature in Windows, though system administrators can still modify this enablement state.
 
-For more information, see [Manage Windows Defender Credential Guard](/windows/security/identity-protection/credential-guard/credential-guard-manage).
+For more information, see [Manage Credential Guard](/windows/security/identity-protection/credential-guard/credential-guard-manage).
 
 ## Malicious and vulnerable driver blocking
 <!--6286432-->

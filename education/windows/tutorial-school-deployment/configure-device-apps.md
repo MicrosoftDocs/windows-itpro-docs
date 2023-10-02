@@ -1,10 +1,8 @@
 ---
 title: Configure applications with Microsoft Intune
 description: Learn how to configure applications with Microsoft Intune in preparation for device deployment.
-ms.date: 08/31/2022
+ms.date: 03/08/2023
 ms.topic: tutorial
-appliesto:
-  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
 ---
 
 # Configure applications with Microsoft Intune
@@ -56,21 +54,10 @@ To assign applications to a group of users or devices:
 
 ## Considerations for Windows 11 SE
 
-Windows 11 SE supports all web applications and a *curated list* of desktop applications.
-You can prepare and add a desktop app to Microsoft Intune as a Win32 app from the [approved app list][EDU-1].
+Windows 11 SE prevents the installation and execution of third party applications with a technology called **Windows Defender Application Control** (WDAC).
+WDAC applies an *allowlist* policy, which ensures that unwanted apps don't run or get installed. However, it also prevents IT admins from deploying apps to Windows 11 SE devices, unless they're included in the E Mode policy.
 
-The process to add Win32 applications to Intune is described in the article [Add, assign, and monitor a Win32 app in Microsoft Intune][MEM-1].
-
-> [!NOTE]
-> If the applications you need aren't included in the list, anyone in your school district can submit an application request at <a href="https://edusupport.microsoft.com/support?product_id=win11se" target="_blank"><u>Microsoft Education Support</u></a>.
-
-> [!CAUTION]
-> If you assign an app to a device running **Windows 11 SE** and receive the **0x87D300D9** error code with a **Failed** state:
-> - Be sure the app is on the [<u>approved app list</u>][EDU-1]
-> - If you submitted a request to add your own app and it was approved, check that the app meets package requirements
-> - If the app is not approved, it will not run on Windows 11 SE. In this case, you will have to verify if the app can run in a web browser, such as a web app or PWA
-
-________________________________________________________
+To learn more about which apps are supported in Windows 11 SE, and how to deploy them, see the tutorial [Deploy applications to Windows 11 SE with Intune][EDU-1].
 
 ## Next steps
 
@@ -81,7 +68,7 @@ With the applications configured, you can now deploy students' and teachers' dev
 
 <!-- Reference links in article -->
 
-[EDU-1]: /education/windows/windows-11-se-overview
+[EDU-1]: ../tutorial-deploy-apps-winse/index.md
 
 [MEM-1]: /mem/intune/apps/apps-win32-add
 

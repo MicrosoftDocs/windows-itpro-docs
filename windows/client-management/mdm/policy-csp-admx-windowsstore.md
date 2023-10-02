@@ -4,7 +4,7 @@ description: Learn more about the ADMX_WindowsStore Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- ADMX_WindowsStore-Begin -->
 # Policy CSP - ADMX_WindowsStore
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- ADMX_WindowsStore-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -31,7 +28,7 @@ ms.topic: reference
 <!-- DisableAutoDownloadWin8-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DisableAutoDownloadWin8-Applicability-End -->
 
 <!-- DisableAutoDownloadWin8-OmaUri-Begin -->
@@ -60,13 +57,12 @@ Enables or disables the automatic download of app updates on PCs running Windows
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableAutoDownloadWin8-DFProperties-End -->
 
 <!-- DisableAutoDownloadWin8-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -93,7 +89,7 @@ Enables or disables the automatic download of app updates on PCs running Windows
 <!-- DisableOSUpgrade_1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DisableOSUpgrade_1-Applicability-End -->
 
 <!-- DisableOSUpgrade_1-OmaUri-Begin -->
@@ -106,9 +102,9 @@ Enables or disables the automatic download of app updates on PCs running Windows
 <!-- Description-Source-ADMX -->
 Enables or disables the Store offer to update to the latest version of Windows.
 
-- If you enable this setting, the Store application will not offer updates to the latest version of Windows.
+- If you enable this setting, the Store application won't offer updates to the latest version of Windows.
 
-- If you disable or do not configure this setting the Store application will offer updates to the latest version of Windows.
+- If you disable or don't configure this setting the Store application will offer updates to the latest version of Windows.
 <!-- DisableOSUpgrade_1-Description-End -->
 
 <!-- DisableOSUpgrade_1-Editable-Begin -->
@@ -120,13 +116,12 @@ Enables or disables the Store offer to update to the latest version of Windows.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableOSUpgrade_1-DFProperties-End -->
 
 <!-- DisableOSUpgrade_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -153,7 +148,7 @@ Enables or disables the Store offer to update to the latest version of Windows.
 <!-- DisableOSUpgrade_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DisableOSUpgrade_2-Applicability-End -->
 
 <!-- DisableOSUpgrade_2-OmaUri-Begin -->
@@ -166,9 +161,9 @@ Enables or disables the Store offer to update to the latest version of Windows.
 <!-- Description-Source-ADMX -->
 Enables or disables the Store offer to update to the latest version of Windows.
 
-- If you enable this setting, the Store application will not offer updates to the latest version of Windows.
+- If you enable this setting, the Store application won't offer updates to the latest version of Windows.
 
-- If you disable or do not configure this setting the Store application will offer updates to the latest version of Windows.
+- If you disable or don't configure this setting the Store application will offer updates to the latest version of Windows.
 <!-- DisableOSUpgrade_2-Description-End -->
 
 <!-- DisableOSUpgrade_2-Editable-Begin -->
@@ -180,13 +175,12 @@ Enables or disables the Store offer to update to the latest version of Windows.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableOSUpgrade_2-DFProperties-End -->
 
 <!-- DisableOSUpgrade_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -213,7 +207,7 @@ Enables or disables the Store offer to update to the latest version of Windows.
 <!-- RemoveWindowsStore_1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- RemoveWindowsStore_1-Applicability-End -->
 
 <!-- RemoveWindowsStore_1-OmaUri-Begin -->
@@ -233,6 +227,8 @@ Denies or allows access to the Store application.
 
 <!-- RemoveWindowsStore_1-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> This policy is not supported on Windows Professional edition, and requires Windows Enterprise or Windows Education to function. For more information, see [Can't disable Microsoft Store in Windows Pro through Group Policy](/troubleshoot/windows-client/group-policy/cannot-disable-microsoft-store).
 <!-- RemoveWindowsStore_1-Editable-End -->
 
 <!-- RemoveWindowsStore_1-DFProperties-Begin -->
@@ -240,13 +236,12 @@ Denies or allows access to the Store application.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RemoveWindowsStore_1-DFProperties-End -->
 
 <!-- RemoveWindowsStore_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -273,7 +268,7 @@ Denies or allows access to the Store application.
 <!-- RemoveWindowsStore_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- RemoveWindowsStore_2-Applicability-End -->
 
 <!-- RemoveWindowsStore_2-OmaUri-Begin -->
@@ -293,6 +288,8 @@ Denies or allows access to the Store application.
 
 <!-- RemoveWindowsStore_2-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> This policy is not supported on Windows Professional edition, and requires Windows Enterprise or Windows Education to function. For more information, see [Can't disable Microsoft Store in Windows Pro through Group Policy](/troubleshoot/windows-client/group-policy/cannot-disable-microsoft-store).
 <!-- RemoveWindowsStore_2-Editable-End -->
 
 <!-- RemoveWindowsStore_2-DFProperties-Begin -->
@@ -300,13 +297,12 @@ Denies or allows access to the Store application.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RemoveWindowsStore_2-DFProperties-End -->
 
 <!-- RemoveWindowsStore_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

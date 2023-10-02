@@ -6,7 +6,7 @@ ms.technology: itpro-privacy
 ms.localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
-manager: dougeby
+manager: laurawi
 ms.date: 03/11/2016
 ms.collection: highpri
 ms.topic: conceptual
@@ -84,7 +84,7 @@ The following table lists the endpoints related to how you can manage the collec
 | [Windows Error Reporting](/windows/win32/wer/windows-error-reporting) | watson.telemetry.microsoft.com <br></br> umwatsonc.events.data.microsoft.com <br></br> *-umwatsonc.events.data.microsoft.com <br></br> ceuswatcab01.blob.core.windows.net <br></br> ceuswatcab02.blob.core.windows.net <br></br> eaus2watcab01.blob.core.windows.net <br></br> eaus2watcab02.blob.core.windows.net <br></br> weus2watcab01.blob.core.windows.net <br></br> weus2watcab02.blob.core.windows.net |
 |Authentication | login.live.com <br></br> <br></br> IMPORTANT: This endpoint is used for device authentication. We do not recommend disabling this endpoint.|
 | [Online Crash Analysis](/windows/win32/dxtecharts/crash-dump-analysis) | oca.telemetry.microsoft.com <br></br> oca.microsoft.com <br></br> kmwatsonc.events.data.microsoft.com <br></br> *-kmwatsonc.events.data.microsoft.com |
-|Settings | settings-win.data.microsoft.com <br></br> <br></br> IMPORTANT: This endpoint is used to remotely configure diagnostics-related settings and data collection. For example, we use the settings endpoint to remotely block an event from being sent back to Microsoft. We do not recommend disabling this endpoint. This endpoint does not upload Windows diagnostic data. |
+|Settings | settings-win.data.microsoft.com <br></br> <br></br> IMPORTANT: This endpoint is required to remotely configure diagnostics-related settings and data collection. For example, we use the settings endpoint to remotely block an event from being sent back to Microsoft, or to enroll a device in the Windows diagnostic data processor configuration. Do not block access to this endpoint. This endpoint does not upload Windows diagnostic data. |
 
 ### Proxy server authentication
 
@@ -321,9 +321,11 @@ For the best experience, use the most current build of any operating system spec
 The diagnostic data setting on the device should be set to Required diagnostic data or higher, and the following endpoints need to be reachable:
 
 - us-v10c.events.data.microsoft.com (eu-v10c.events.data.microsoft.com for tenants with billing address in the [EU Data Boundary](/privacy/eudb/eu-data-boundary-learn#eu-data-boundary-countries-and-datacenter-locations))
-- umwatsonc.events.data.microsoft.com (eu-watsonc.events.data.microsoft.com for tenants with billing address in the [EU Data Boundary](/privacy/eudb/eu-data-boundary-learn#eu-data-boundary-countries-and-datacenter-locations))
+- watsonc.events.data.microsoft.com (eu-watsonc.events.data.microsoft.com for tenants with billing address in the [EU Data Boundary](/privacy/eudb/eu-data-boundary-learn#eu-data-boundary-countries-and-datacenter-locations))
 - settings-win.data.microsoft.com
 - *.blob.core.windows.net
+
+Tenants with billing addresses in countries or regions in the Middle East and Africa, as well as European countries or regions not in the EU, also use the eu-v10c.events.data.microsoft.com and eu-watsonc.events.data.microsoft.com endpoints. Their diagnostic data is processed initially in Europe, but those tenants aren't considered part of the [EU Data Boundary](/privacy/eudb/eu-data-boundary-learn).
 
 >[!Note]
 > - Windows diagnostic data collected from a device before it was enabled with Windows diagnostic data processor configuration will be deleted when this configuration is enabled.
@@ -342,20 +344,16 @@ Starting with the January 2023 preview cumulative update, how you enable the pro
 
 For Windows devices with diagnostic data turned on and that are joined to an [Azure AD tenant with billing address](/azure/cost-management-billing/manage/change-azure-account-profile) in the EU or EFTA, the Windows diagnostic data for that device will be automatically configured for the processor option. The Windows diagnostic data for those devices will be processed in Europe.
 
-> [!NOTE]
-> The Windows diagnostic data processor configuration has components for which work is in progress to be included in the EU Data Boundary, but completion of this work is delayed beyond January 1, 2023. These components will be included in the EU Data Boundary in the coming months. In the meantime, Microsoft will temporarily transfer data out of the EU Data Boundary as part of service operations to ensure uninterrupted operation of the services customers signed up for.
-
 From a compliance standpoint, this change means that Microsoft will be the processor and the organization will be the controller of the Windows diagnostic data. IT admins for those organizations will become responsible for responding to their users’ [data subject requests](/compliance/regulatory/gdpr-dsr-windows).
 
 #### Devices in Azure AD tenants with a billing address outside of the EU and EFTA
 
 For Windows devices with diagnostic data turned on and that are joined to an [Azure AD tenant with billing address](/azure/cost-management-billing/manage/change-azure-account-profile) outside of the EU and EFTA, to enable the processor configuration option, the organization must sign up for any of the following enterprise services, which rely on diagnostic data:
 
-- [Update Compliance](/windows/deployment/update/update-compliance-monitor)
 - [Windows Update for Business reports](/windows/deployment/update/wufb-reports-overview)
 - [Windows Update for Business deployment service](/windows/deployment/update/deployment-service-overview)
-- [Microsoft Managed Desktop](/managed-desktop/intro/)
-- [Endpoint analytics (in Microsoft Intune)](/mem/analytics/overview)
+- [Windows Autopatch](/windows/deployment/windows-autopatch/overview/windows-autopatch-overview)
+- [Windows updates reports (in Microsoft Intune)](/mem/intune/protect/data-enable-windows-data#windows-data)
 
 *(Additional licensing requirements may apply to use these services.)*
 
@@ -368,21 +366,12 @@ If you don’t sign up for any of these enterprise services, Microsoft will act 
 > - Windows 10, versions 1809, 1903, 1909, and 2004.
 > - Newer versions of Windows 10 and Windows 11 that have not updated yet to at least the January 2023 preview cumulative update.
 
-Use the instructions below to enable Windows diagnostic data processor configuration using a single setting, through Group Policy, or an MDM solution.
+To enable Windows diagnostic data processor configuration, you can use Group Policy or a custom setting in an MDM solution, such as Microsoft Intune.
 
-In Group Policy, to enable Windows diagnostic data processor configuration, go to **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Data Collection and Preview Builds** and switch the **Allow commercial data pipeline** setting to **enabled**.
+- For Group Policy, you can use the “Allow commercial data pipeline” policy, which is also available in the Intune [settings catalog](/mem/intune/configuration/settings-catalog).
+- For an MDM solution, you can use the AllowCommercialDataPipeline setting in the System Policy configuration service provider (CSP).
 
-If you wish to disable, at any time, switch the same setting to **disabled**. The default state of the above setting is **disabled**.
-
-To use an MDM solution, such as [Microsoft Intune](/mem/intune/configuration/custom-settings-windows-10), to deploy the Windows diagnostic data processor configuration to your supported devices, use the following custom OMA-URI setting configuration:
-
- - **Name:** System/AllowCommercialDataPipeline
- - **OMA-URI:** ./Vendor/MSFT/Policy/Config/System/AllowCommercialDataPipeline
- - **Data type:** Integer
-
-Under **Value**, use **1** to enable the service.
-
-If you wish to disable, at any time, switch the same setting to **0**. The default value is **0**.
+For more information about AllowCommercialDataPipeline and the “Allow commercial data pipeline” policy, [review this information](/windows/client-management/mdm/policy-csp-system#allowcommercialdatapipeline).
 
 ## Change privacy settings on a single server
 

@@ -1,13 +1,14 @@
 ---
+ms.date: 11/22/2022
 title: Access Control Overview
 description: Description of the access controls in Windows, which is the process of authorizing users, groups, and computers to access objects on the network or computer.
-ms.prod: windows-client
-ms.topic: article
-ms.date: 11/22/2022
+ms.topic: overview
 appliesto: 
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016 and later</a>
-ms.technology: itpro-security
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2022</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2019</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016</a>
 ---
 
 # Access Control Overview
@@ -37,6 +38,8 @@ This content set contains:
   - [Microsoft Accounts](/windows-server/identity/ad-ds/manage/understand-microsoft-accounts)
   - [Service Accounts](/windows-server/identity/ad-ds/manage/understand-service-accounts)
   - [Active Directory Security Groups](/windows-server/identity/ad-ds/manage/understand-security-groups)
+
+[!INCLUDE [access-control-aclsacl](../../../../includes/licensing/access-control-aclsacl.md)]
 
 ## Practical applications
 

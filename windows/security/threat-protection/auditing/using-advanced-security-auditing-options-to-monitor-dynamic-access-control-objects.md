@@ -1,5 +1,5 @@
 ---
-title: Using advanced security auditing options to monitor dynamic access control objects (Windows 10)
+title: Using advanced security auditing options to monitor dynamic access control objects 
 description: Domain admins can set up advanced security audit options in Windows 10 to target specific users, or monitor potentially significant activity on multiple devices
 ms.assetid: 0d2c28ea-bdaf-47fd-bca2-a07dce5fed37
 ms.reviewer: 

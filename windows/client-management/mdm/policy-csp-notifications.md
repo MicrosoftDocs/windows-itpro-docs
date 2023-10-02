@@ -4,7 +4,7 @@ description: Learn more about the Notifications Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 08/30/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,9 +16,82 @@ ms.topic: reference
 <!-- Notifications-Begin -->
 # Policy CSP - Notifications
 
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
+
 <!-- Notifications-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 <!-- Notifications-Editable-End -->
+
+<!-- DisableAccountNotifications-Begin -->
+## DisableAccountNotifications
+
+<!-- DisableAccountNotifications-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- DisableAccountNotifications-Applicability-End -->
+
+<!-- DisableAccountNotifications-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/Notifications/DisableAccountNotifications
+```
+<!-- DisableAccountNotifications-OmaUri-End -->
+
+<!-- DisableAccountNotifications-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy allows you to prevent Windows from displaying notifications to Microsoft account (MSA) and local users in Start (user tile).
+
+Notifications include getting users to: reauthenticate; backup their device; manage cloud storage quotas as well as manage their Microsoft 365 or XBOX subscription.
+
+- If you enable this policy setting, Windows won't send account related notifications for local and MSA users to the user tile in Start.
+
+- If you disable or don't configure this policy setting, Windows will send account related notifications for local and MSA users to the user tile in Start.
+
+No reboots or service restarts are required for this policy setting to take effect.
+<!-- DisableAccountNotifications-Description-End -->
+
+<!-- DisableAccountNotifications-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableAccountNotifications-Editable-End -->
+
+<!-- DisableAccountNotifications-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- DisableAccountNotifications-DFProperties-End -->
+
+<!-- DisableAccountNotifications-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Disabled. |
+| 1 | Enabled. |
+<!-- DisableAccountNotifications-AllowedValues-End -->
+
+<!-- DisableAccountNotifications-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | DisableAccountNotifications |
+| Friendly Name | Turn off account notifications in Start |
+| Location | User Configuration |
+| Path | Windows Components > Account Notifications |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\AccountNotifications |
+| Registry Value Name | DisableAccountNotifications |
+| ADMX File Name | AccountNotifications.admx |
+<!-- DisableAccountNotifications-GpMapping-End -->
+
+<!-- DisableAccountNotifications-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableAccountNotifications-Examples-End -->
+
+<!-- DisableAccountNotifications-End -->
 
 <!-- DisallowCloudNotification-Begin -->
 ## DisallowCloudNotification
@@ -26,7 +99,7 @@ ms.topic: reference
 <!-- DisallowCloudNotification-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- DisallowCloudNotification-Applicability-End -->
 
 <!-- DisallowCloudNotification-OmaUri-Begin -->
@@ -39,11 +112,11 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting blocks applications from using the network to send notifications to update tiles, tile badges, toast, or raw notifications. This policy setting turns off the connection between Windows and the Windows Push Notification Service (WNS). This policy setting also stops applications from being able to poll application services to update tiles.
 
-- If you enable this policy setting, applications and system features will not be able receive notifications from the network from WNS or via notification polling APIs.
+- If you enable this policy setting, applications and system features won't be able receive notifications from the network from WNS or via notification polling APIs.
 
 - If you enable this policy setting, notifications can still be raised by applications running on the machine via local API calls from within the application.
 
-- If you disable or do not configure this policy setting, the client computer will connect to WNS at user login and applications will be allowed to poll for tile notification updates in the background.
+- If you disable or don't configure this policy setting, the client computer will connect to WNS at user login and applications will be allowed to poll for tile notification updates in the background.
 
 No reboots or service restarts are required for this policy setting to take effect.
 <!-- DisallowCloudNotification-Description-End -->
@@ -68,7 +141,7 @@ To validate the configuration:
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DisallowCloudNotification-DFProperties-End -->
@@ -108,7 +181,7 @@ To validate the configuration:
 <!-- DisallowNotificationMirroring-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- DisallowNotificationMirroring-Applicability-End -->
 
 <!-- DisallowNotificationMirroring-OmaUri-Begin -->
@@ -121,9 +194,9 @@ To validate the configuration:
 <!-- Description-Source-ADMX -->
 This policy setting turns off notification mirroring.
 
-- If you enable this policy setting, notifications from applications and system will not be mirrored to your other devices.
+- If you enable this policy setting, notifications from applications and system won't be mirrored to your other devices.
 
-- If you disable or do not configure this policy setting, notifications will be mirrored, and can be turned off by the administrator or user.
+- If you disable or don't configure this policy setting, notifications will be mirrored, and can be turned off by the administrator or user.
 
 No reboots or service restarts are required for this policy setting to take effect.
 <!-- DisallowNotificationMirroring-Description-End -->
@@ -139,7 +212,7 @@ This feature can be turned off by apps that don't want to participate in notific
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DisallowNotificationMirroring-DFProperties-End -->
@@ -179,7 +252,7 @@ This feature can be turned off by apps that don't want to participate in notific
 <!-- DisallowTileNotification-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- DisallowTileNotification-Applicability-End -->
 
 <!-- DisallowTileNotification-OmaUri-Begin -->
@@ -192,9 +265,9 @@ This feature can be turned off by apps that don't want to participate in notific
 <!-- Description-Source-ADMX -->
 This policy setting turns off tile notifications.
 
-- If you enable this policy setting, applications and system features will not be able to update their tiles and tile badges in the Start screen.
+- If you enable this policy setting, applications and system features won't be able to update their tiles and tile badges in the Start screen.
 
-- If you disable or do not configure this policy setting, tile and badge notifications are enabled and can be turned off by the administrator or user.
+- If you disable or don't configure this policy setting, tile and badge notifications are enabled and can be turned off by the administrator or user.
 
 No reboots or service restarts are required for this policy setting to take effect.
 <!-- DisallowTileNotification-Description-End -->
@@ -208,7 +281,7 @@ No reboots or service restarts are required for this policy setting to take effe
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DisallowTileNotification-DFProperties-End -->
@@ -242,13 +315,84 @@ No reboots or service restarts are required for this policy setting to take effe
 
 <!-- DisallowTileNotification-End -->
 
+<!-- EnableExpandedToastNotifications-Begin -->
+## EnableExpandedToastNotifications
+
+<!-- EnableExpandedToastNotifications-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1620] and later |
+<!-- EnableExpandedToastNotifications-Applicability-End -->
+
+<!-- EnableExpandedToastNotifications-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/Notifications/EnableExpandedToastNotifications
+```
+<!-- EnableExpandedToastNotifications-OmaUri-End -->
+
+<!-- EnableExpandedToastNotifications-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting turns on multiple expanded toast notifications in action center.
+
+- If you enable this policy setting, the first three notifications of each application will be expanded by default in action center.
+
+- If you disable or don't configure this policy setting, only the first notification of each application will be expanded by default in action center.
+
+Windows 10 only. This will be immediately deprecated for Windows 11.
+
+No reboots or service restarts are required for this policy setting to take effect.
+<!-- EnableExpandedToastNotifications-Description-End -->
+
+<!-- EnableExpandedToastNotifications-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- EnableExpandedToastNotifications-Editable-End -->
+
+<!-- EnableExpandedToastNotifications-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- EnableExpandedToastNotifications-DFProperties-End -->
+
+<!-- EnableExpandedToastNotifications-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Disable multiple expanded toasts in action center. |
+| 1 | Enable multiple expanded toasts in action center. |
+<!-- EnableExpandedToastNotifications-AllowedValues-End -->
+
+<!-- EnableExpandedToastNotifications-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | ExpandedToastNotifications |
+| Friendly Name | Turn on multiple expanded toast notifications in action center |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar > Notifications |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\PushNotifications |
+| Registry Value Name | EnableExpandedToastNotifications |
+| ADMX File Name | WPN.admx |
+<!-- EnableExpandedToastNotifications-GpMapping-End -->
+
+<!-- EnableExpandedToastNotifications-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- EnableExpandedToastNotifications-Examples-End -->
+
+<!-- EnableExpandedToastNotifications-End -->
+
 <!-- WnsEndpoint-Begin -->
 ## WnsEndpoint
 
 <!-- WnsEndpoint-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- WnsEndpoint-Applicability-End -->
 
 <!-- WnsEndpoint-OmaUri-Begin -->
@@ -258,8 +402,8 @@ No reboots or service restarts are required for this policy setting to take effe
 <!-- WnsEndpoint-OmaUri-End -->
 
 <!-- WnsEndpoint-Description-Begin -->
-<!-- Description-Source-DDF -->
-FQDN for the WNS endpoint
+<!-- Description-Source-ADMX -->
+This policy sets a special WNS FQDN for specific environments.
 <!-- WnsEndpoint-Description-End -->
 
 <!-- WnsEndpoint-Editable-Begin -->
@@ -278,7 +422,7 @@ If you disable or don't configure this setting, the push notifications will conn
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- WnsEndpoint-DFProperties-End -->
 
@@ -289,7 +433,7 @@ If you disable or don't configure this setting, the push notifications will conn
 |:--|:--|
 | Name | WnsEndpoint_Policy |
 | Friendly Name | Enables group policy for the WNS FQDN |
-| Element Name | FQDN for WNS |
+| Element Name | FQDN for WNS. |
 | Location | Computer Configuration |
 | Path | Start Menu and Taskbar > Notifications |
 | Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\PushNotifications |

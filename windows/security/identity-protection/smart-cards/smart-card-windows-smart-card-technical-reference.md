@@ -1,13 +1,9 @@
 ---
-title: Smart Card Technical Reference (Windows)
+title: Smart Card Technical Reference 
 description: Learn about the Windows smart card infrastructure for physical smart cards, and how smart card-related components work in Windows.
 ms.reviewer: ardenw
-ms.topic: article
+ms.topic: reference
 ms.date: 09/24/2021
-appliesto:
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016 and later</a>
-ms.technology: itpro-security
 ---
 
 # Smart Card Technical Reference

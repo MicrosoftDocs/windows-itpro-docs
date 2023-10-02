@@ -2,8 +2,6 @@
 title: Windows Hello for Business hybrid key trust clients configuration and enrollment
 description: Learn how to configure devices and enroll them in Windows Hello for Business in a hybrid key trust scenario.
 ms.date: 01/03/2023
-appliesto: 
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
 ms.topic: tutorial
 ---
 
@@ -74,7 +72,7 @@ It's suggested to create a security group (for example, *Windows Hello for Busin
 The Windows Hello for Business Group Policy object delivers the correct Group Policy settings to the user, which enables them to enroll and use Windows Hello for Business to authenticate to Azure and Active Directory
 
 > [!NOTE]
-> If you deployed Windows Hello for Business configuration using both Group Policy and Intune, Group Policy settings will take precedence and Intune settings will be ignored. For more information about policy conflicts, see [Policy conflicts from multiple policy sources](./hello-manage-in-organization.md#policy-conflicts-from-multiple-policy-sources)
+> If you deployed Windows Hello for Business configuration using both Group Policy and Intune, Group Policy settings will take precedence and Intune settings will be ignored. For more information about policy conflicts, see [Policy conflicts from multiple policy sources](hello-manage-in-organization.md#policy-conflicts-from-multiple-policy-sources)
 
 ### Enable Windows Hello for Business group policy setting
 

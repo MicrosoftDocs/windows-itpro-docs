@@ -2,9 +2,7 @@
 title: Configure single sign-on (SSO) for Azure AD joined devices
 description: Learn how to configure single sign-on to on-premises resources for Azure AD-joined devices, using Windows Hello for Business.
 ms.date: 12/30/2022
-appliesto: 
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
-ms.topic: article
+ms.topic: how-to
 ---
 # Configure single sign-on for Azure AD joined devices
 
@@ -205,7 +203,7 @@ With the CA properly configured with a valid HTTP-based CRL distribution point, 
 1. Repeat this procedure on all your domain controllers
 
 > [!NOTE]
-> You can configure domain controllers to automatically enroll and renew their certificates. Automatic certificate enrollment helps prevent authentication outages due to expired certificates. Refer to the [Windows Hello Deployment Guides](./hello-deployment-guide.md) to learn how to deploy automatic certificate enrollment for domain controllers.
+> You can configure domain controllers to automatically enroll and renew their certificates. Automatic certificate enrollment helps prevent authentication outages due to expired certificates. Refer to the [Windows Hello Deployment Guides](hello-deployment-guide.md) to learn how to deploy automatic certificate enrollment for domain controllers.
 
 > [!IMPORTANT]
 > If you are not using automatic certificate enrollment, create a calendar reminder to alert you two months before the certificate expiration date. Send the reminder to multiple people in the organization to ensure more than one or two people know when these certificates expire.

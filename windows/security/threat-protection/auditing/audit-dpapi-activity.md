@@ -1,5 +1,5 @@
 ---
-title: Audit DPAPI Activity (Windows 10)
+title: Audit DPAPI Activity 
 description: The policy setting, Audit DPAPI Activity, decides if encryption/decryption calls  to the data protection application interface (DPAPI) generate audit events.
 ms.assetid: be4d4c83-c857-4e3d-a84e-8bcc3f2c99cd
 ms.reviewer: 
@@ -9,7 +9,7 @@ ms.pagetype: security
 ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
+ms.localizationpriority: low
 author: vinaypamnani-msft
 ms.date: 09/06/2021
 ms.technology: itpro-security

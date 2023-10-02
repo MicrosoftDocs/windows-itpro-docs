@@ -6,18 +6,18 @@ ms.localizationpriority: medium
 author: mestew
 ms.author: mstewart
 manager: aaroncz
-ms.topic: article
+ms.topic: conceptual
 ms.technology: itpro-fundamentals
 ms.date: 01/05/2023
-ms.collection: highpri, tier1
+ms.collection:
+  - highpri
+  - tier1
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
 # Features and functionality removed in Windows client
-
-**Applies to**
-
-- Windows 10
-- Windows 11
 
 Each version of Windows client adds new features and functionality. Occasionally, new versions also remove features and functionality, often because they've added a newer option. This article provides details about the features and functionality that have been removed in Windows client.
 
@@ -38,6 +38,7 @@ The following features and functionalities have been removed from the installed 
 
 |Feature    |  Details and mitigation  | Support removed |
 | ----------- | --------------------- | ------ |
+| Update Compliance | Update Compliance, a cloud-based service for the Windows client, is retired. This service has been replaced with [Windows Update for Business reports](/windows/deployment/update/wufb-reports-overview), which provides reporting on client compliance with Microsoft updates from the Azure portal.<!--7748874--> | March 31, 2023 |
 | Store uploader tool <!--7297297-->| Support has been removed for the store uploader tool. This tool is included in the Windows SDK only. The endpoint for the tool has been removed from service and the files will be removed from the SDK in the next release. | November, 2022 | 
 | Internet Explorer 11 | The Internet Explorer 11 desktop application is [retired and out of support](https://aka.ms/IEJune15Blog) as of June 15, 2022 for certain versions of Windows 10. You can still access older, legacy sites that require Internet Explorer with Internet Explorer mode in Microsoft Edge. [Learn how](https://aka.ms/IEmodewebsite). The Internet Explorer 11 desktop application will progressively redirect to the faster, more secure Microsoft Edge browser, and will ultimately be disabled via Windows Update. [Disable IE today](/deployedge/edge-ie-disable-ie11). | June 15, 2022 |
 | XDDM-based remote display driver  | Support for Windows 2000 Display Driver Model (XDDM) based remote display drivers is removed in this release. Independent Software Vendors that use an XDDM-based remote display driver should plan a migration to the WDDM driver model. For more information on implementing remote display indirect display driver, see [Updates for IddCx versions 1.4 and later](/windows-hardware/drivers/display/iddcx1.4-updates). | 21H1 |

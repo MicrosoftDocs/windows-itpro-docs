@@ -27,7 +27,7 @@ ms.technology: itpro-fundamentals
 > [!TIP]
 > Are you looking for volume licensing information?
 >
-> - [Download the Volume Licensing Reference Guide for Windows 10 Desktop Operating System](https://go.microsoft.com/fwlink/p/?LinkId=620104)
+> - [Download the Volume Licensing Reference Guide for Windows 10 Desktop Operating System](https://www.microsoft.com/download/details.aspx?id=11091)
 
 > [!TIP]
 > Are you looking for information on retail activation?

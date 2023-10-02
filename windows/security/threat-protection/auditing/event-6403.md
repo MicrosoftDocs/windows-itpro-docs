@@ -1,11 +1,11 @@
 ---
-title: 6403(-) BranchCache The hosted cache sent an incorrectly formatted response to the client. (Windows 10)
+title: 6403(-) BranchCache The hosted cache sent an incorrectly formatted response to the client. 
 description: Describes security event 6403(-) BranchCache The hosted cache sent an incorrectly formatted response to the client.
 ms.pagetype: security
 ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
+ms.localizationpriority: low
 author: vinaypamnani-msft
 ms.date: 09/09/2021
 ms.reviewer: 

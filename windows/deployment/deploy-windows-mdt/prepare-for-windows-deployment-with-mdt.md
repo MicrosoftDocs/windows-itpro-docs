@@ -8,7 +8,9 @@ ms.localizationpriority: medium
 author: frankroj
 ms.topic: article
 ms.technology: itpro-deploy
-ms.collection: highpri, tier2
+ms.collection:
+  - highpri
+  - tier3
 ms.date: 11/28/2022
 ---
 
@@ -264,7 +266,8 @@ See the following example:
 
 ## Use CMTrace to read log files (optional)
 
-The log files in MDT Lite Touch are formatted to be read by Configuration Manager Trace ([CMTrace](/sccm/core/support/cmtrace)), which is available as part of the [Microsoft System 2012 R2 Center Configuration Manager Toolkit](https://go.microsoft.com/fwlink/p/?LinkId=734717). You should also download this tool.
+The log files in MDT Lite Touch are formatted to be read by Configuration Manager Trace ([CMTrace](/mem/configmgr/core/support/cmtrace)).
+
 You can use Notepad (example below):
 
 ![figure 8.](../images/mdt-05-fig09.png)

@@ -1,5 +1,5 @@
 ---
-title: Minimum password age (Windows 10)
+title: Minimum password age 
 description: Describes the best practices, location, values, policy management, and security considerations for the Minimum password age security policy setting.
 ms.assetid: 91915cb2-1b3f-4fb7-afa0-d03df95e8161
 ms.reviewer: 
@@ -35,7 +35,7 @@ The **Minimum password age** policy setting determines the period of time (in da
 
 ### Best practices
 
-[Windows security baselines](/windows/security/threat-protection/windows-security-configuration-framework/windows-security-baselines) recommend setting **Minimum password age** to one day. 
+[Windows security baselines](../../operating-system-security/device-management/windows-security-configuration-framework/windows-security-baselines.md) recommend setting **Minimum password age** to one day. 
 
 Setting the number of days to 0 allows immediate password changes. This setting isn't recommended. 
 Combining immediate password changes with password history allows someone to change a password repeatedly until the password history requirement is met and re-establish the original password again. 

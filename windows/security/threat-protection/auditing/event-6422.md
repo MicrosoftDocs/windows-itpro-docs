@@ -1,11 +1,11 @@
 ---
-title: 6422(S) A device was enabled. (Windows 10)
+title: 6422(S) A device was enabled. 
 description: Describes security event 6422(S) A device was enabled. This event is generated when a specific device is enabled.
 ms.pagetype: security
 ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
+ms.localizationpriority: low
 author: vinaypamnani-msft
 ms.date: 09/09/2021
 ms.reviewer: 

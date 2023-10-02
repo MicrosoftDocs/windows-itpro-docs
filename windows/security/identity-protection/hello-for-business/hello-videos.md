@@ -1,10 +1,8 @@
 ---
 title: Windows Hello for Business Videos
 description: View several informative videos describing features and experiences in Windows Hello for Business in Windows 10 and Windows 11.
-ms.date: 03/09/2023
-appliesto: 
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
-ms.topic: article
+ms.date: 09/07/2023
+ms.topic: get-started
 ---
 # Windows Hello for Business Videos
 ## Overview of Windows Hello for Business and Features

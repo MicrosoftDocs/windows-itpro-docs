@@ -141,11 +141,11 @@ You can add specific rules for a WSL process in Windows Defender Firewall, just 
 
 We introduced new group policies and Modern Device Management settings to manage Microsoft Edge. The new policies include enabling and disabling full-screen mode, printing, favorites bar, and saving history; preventing certificate error overrides; configuring the Home button and startup options; setting the New Tab page and Home button URL, and managing extensions. Learn more about the [new Microsoft Edge policies](/microsoft-edge/deploy/change-history-for-microsoft-edge).
 
-### Windows Defender Credential Guard is supported by default on 10S devices that are Azure Active Directory-joined
+### Credential Guard is supported by default on 10S devices that are Azure Active Directory-joined
 
-Windows Defender Credential Guard is a security service in Windows 10 built to protect Active Directory (AD) domain credentials so that they can't be stolen or misused by malware on a user's machine. It's designed to protect against well-known threats such as Pass-the-Hash and credential harvesting.
+Credential Guard is a security service in Windows 10 built to protect Active Directory (AD) domain credentials so that they can't be stolen or misused by malware on a user's machine. It's designed to protect against well-known threats such as Pass-the-Hash and credential harvesting.
 
-Windows Defender Credential Guard has always been an optional feature, but Windows 10-S turns on this functionality by default when the machine has been Azure Active Directory-joined. This functionality provides an added level of security when connecting to domain resources not normally present on 10-S devices. Windows Defender Credential Guard is available only to S-Mode devices or Enterprise and Education Editions. 
+Credential Guard has always been an optional feature, but Windows 10-S turns on this functionality by default when the machine has been Azure Active Directory-joined. This functionality provides an added level of security when connecting to domain resources not normally present on 10-S devices. Credential Guard is available only to S-Mode devices or Enterprise and Education Editions. 
 
 ### Windows 10 Pro S Mode requires a network connection
 

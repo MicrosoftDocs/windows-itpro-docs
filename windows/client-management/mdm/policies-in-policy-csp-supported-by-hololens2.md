@@ -4,7 +4,7 @@ description: Learn about the policies in Policy CSP supported by HoloLens 2.
 ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
-ms.topic: article
+ms.topic: reference
 ms.prod: windows-client
 ms.technology: itpro-manage
 author: vinaypamnani-msft
@@ -24,14 +24,15 @@ ms.date: 02/03/2023
 - [Authentication/PreferredAadTenantDomainName](policy-csp-authentication.md#preferredaadtenantdomainname)
 - [Bluetooth/AllowDiscoverableMode](policy-csp-bluetooth.md#allowdiscoverablemode)
 - [Bluetooth/LocalDeviceName](policy-csp-bluetooth.md#localdevicename)
-- [Browser/AllowAutofill](policy-csp-browser.md#allowautofill)
-- [Browser/AllowCookies](policy-csp-browser.md#allowcookies)
-- [Browser/AllowDoNotTrack](policy-csp-browser.md#allowdonottrack)
-- [Browser/AllowPasswordManager](policy-csp-browser.md#allowpasswordmanager)
-- [Browser/AllowPopups](policy-csp-browser.md#allowpopups)
-- [Browser/AllowSearchSuggestionsinAddressBar](policy-csp-browser.md#allowsearchsuggestionsinaddressbar)
-- [Browser/AllowSmartScreen](policy-csp-browser.md#allowsmartscreen)
+- [Browser/AllowAutofill](policy-csp-browser.md#allowautofill) <sup>13</sup>
+- [Browser/AllowCookies](policy-csp-browser.md#allowcookies) <sup>13</sup>
+- [Browser/AllowDoNotTrack](policy-csp-browser.md#allowdonottrack) <sup>13</sup>
+- [Browser/AllowPasswordManager](policy-csp-browser.md#allowpasswordmanager) <sup>13</sup>
+- [Browser/AllowPopups](policy-csp-browser.md#allowpopups) <sup>13</sup>
+- [Browser/AllowSearchSuggestionsinAddressBar](policy-csp-browser.md#allowsearchsuggestionsinaddressbar) <sup>13</sup>
+- [Browser/AllowSmartScreen](policy-csp-browser.md#allowsmartscreen) <sup>13</sup>
 - [Connectivity/AllowBluetooth](policy-csp-connectivity.md#allowbluetooth)
+- [Connectivity/AllowConnectedDevices](policy-csp-connectivity.md#allowconnecteddevices) <sup>12</sup>
 - [Connectivity/AllowUSBConnection](policy-csp-connectivity.md#allowusbconnection)
 - [DeliveryOptimization/DOCacheHost](policy-csp-deliveryoptimization.md#docachehost) <sup>10</sup>
 - [DeliveryOptimization/DOCacheHostSource](policy-csp-deliveryoptimization.md#docachehostsource) <sup>10</sup>
@@ -66,7 +67,6 @@ ms.date: 02/03/2023
 - [MixedReality/ConfigureNtpClient](./policy-csp-mixedreality.md#configurentpclient) <sup>12</sup>
 - [MixedReality/DisallowNetworkConnectivityPassivePolling](./policy-csp-mixedreality.md#disallownetworkconnectivitypassivepolling) <sup>12</sup>
 - [MixedReality/FallbackDiagnostics](./policy-csp-mixedreality.md#fallbackdiagnostics) <sup>9</sup>
-- [MixedReality/HeadTrackingMode](policy-csp-mixedreality.md#headtrackingmode) <sup>9</sup>
 - [MixedReality/ManualDownDirectionDisabled](policy-csp-mixedreality.md#manualdowndirectiondisabled) <sup>*[Feb. 2022 Servicing release](/hololens/hololens-release-notes#windows-holographic-version-21h2---february-2022-update)</sup>
 - [MixedReality/MicrophoneDisabled](./policy-csp-mixedreality.md#microphonedisabled) <sup>9</sup>
 - [MixedReality/NtpClientEnabled](./policy-csp-mixedreality.md#ntpclientenabled) <sup>12</sup>
@@ -74,14 +74,13 @@ ms.date: 02/03/2023
 - [MixedReality/SkipTrainingDuringSetup](./policy-csp-mixedreality.md#skiptrainingduringsetup) <sup>12</sup>
 - [MixedReality/VisitorAutoLogon](policy-csp-mixedreality.md#visitorautologon) <sup>10</sup>
 - [MixedReality/VolumeButtonDisabled](./policy-csp-mixedreality.md#volumebuttondisabled) <sup>9</sup>
-- [Power/DisplayOffTimeoutOnBattery](./policy-csp-power.md#displayofftimeoutonbattery) <sup>9</sup>
-- [Power/DisplayOffTimeoutPluggedIn](./policy-csp-power.md#displayofftimeoutpluggedin) <sup>9</sup>
-- [Power/EnergySaverBatteryThresholdOnBattery](./policy-csp-power.md#energysaverbatterythresholdonbattery) <sup>9</sup>
-- [Power/EnergySaverBatteryThresholdPluggedIn](./policy-csp-power.md#energysaverbatterythresholdpluggedin) <sup>9</sup>
-- [Power/StandbyTimeoutOnBattery](./policy-csp-power.md#standbytimeoutonbattery) <sup>9</sup>
-- [Power/StandbyTimeoutPluggedIn](./policy-csp-power.md#standbytimeoutpluggedin) <sup>9</sup>
+- [Power/DisplayOffTimeoutOnBattery](./policy-csp-power.md#displayofftimeoutonbattery) <sup>9, 14</sup>
+- [Power/DisplayOffTimeoutPluggedIn](./policy-csp-power.md#displayofftimeoutpluggedin) <sup>9, 14</sup>
+- [Power/EnergySaverBatteryThresholdOnBattery](./policy-csp-power.md#energysaverbatterythresholdonbattery) <sup>9, 14</sup>
+- [Power/EnergySaverBatteryThresholdPluggedIn](./policy-csp-power.md#energysaverbatterythresholdpluggedin) <sup>9, 14</sup>
+- [Power/StandbyTimeoutOnBattery](./policy-csp-power.md#standbytimeoutonbattery) <sup>9, 14</sup>
+- [Power/StandbyTimeoutPluggedIn](./policy-csp-power.md#standbytimeoutpluggedin) <sup>9, 14</sup>
 - [Privacy/AllowInputPersonalization](policy-csp-privacy.md#allowinputpersonalization)
-- [Privacy/DisablePrivacyExperience](./policy-csp-privacy.md#disableprivacyexperience) <sup>Insider</sup>
 - [Privacy/LetAppsAccessAccountInfo](policy-csp-privacy.md#letappsaccessaccountinfo)
 - [Privacy/LetAppsAccessAccountInfo_ForceAllowTheseApps](policy-csp-privacy.md#letappsaccessaccountinfo_forceallowtheseapps)
 - [Privacy/LetAppsAccessAccountInfo_ForceDenyTheseApps](policy-csp-privacy.md#letappsaccessaccountinfo_forcedenytheseapps)
@@ -99,6 +98,9 @@ ms.date: 02/03/2023
 - [Privacy/LetAppsAccessGazeInput_ForceDenyTheseApps](policy-csp-privacy.md#letappsaccessgazeinput_forcedenytheseapps) <sup>8</sup>
 - [Privacy/LetAppsAccessGazeInput_UserInControlOfTheseApps](policy-csp-privacy.md#letappsaccessgazeinput_userincontroloftheseapps) <sup>8</sup>
 - [Privacy/LetAppsAccessLocation](policy-csp-privacy.md#letappsaccesslocation)
+- [Privacy/LetAppsAccessLocation_ForceAllowTheseApps](/windows/client-management/mdm/policy-csp-privacy) <sup>12</sup>
+- [Privacy/LetAppsAccessLocation_ForceDenyTheseApps](/windows/client-management/mdm/policy-csp-privacy) <sup>12</sup>
+- [Privacy/LetAppsAccessLocation_UserInControlOfTheseApps](/windows/client-management/mdm/policy-csp-privacy) <sup>12</sup>
 - [Privacy/LetAppsAccessMicrophone](policy-csp-privacy.md#letappsaccessmicrophone)
 - [Privacy/LetAppsAccessMicrophone_ForceAllowTheseApps](policy-csp-privacy.md#letappsaccessmicrophone_forceallowtheseapps) <sup>8</sup>
 - [Privacy/LetAppsAccessMicrophone_ForceDenyTheseApps](policy-csp-privacy.md#letappsaccessmicrophone_forcedenytheseapps) <sup>8</sup>
@@ -115,10 +117,11 @@ ms.date: 02/03/2023
 - [Storage/ConfigStorageSenseCloudContentDehydrationThreshold](policy-csp-storage.md#configstoragesensecloudcontentdehydrationthreshold) <sup>12</sup>
 - [Storage/ConfigStorageSenseDownloadsCleanupThreshold](policy-csp-storage.md#configstoragesensedownloadscleanupthreshold) <sup>12</sup>
 - [Storage/ConfigStorageSenseGlobalCadence](policy-csp-storage.md#configstoragesenseglobalcadence) <sup>12</sup>
-- [System/AllowCommercialDataPipeline](policy-csp-system.md#allowcommercialdatapipeline)
 - [System/AllowLocation](policy-csp-system.md#allowlocation)
 - [System/AllowStorageCard](policy-csp-system.md#allowstoragecard)
 - [System/AllowTelemetry](policy-csp-system.md#allowtelemetry)
+- [System/ConfigureTelemetryOptInSettingsUx](/windows/client-management/mdm/policy-csp-system) <sup>12</sup>
+- [System/DisableDeviceDelete](/windows/client-management/mdm/policy-csp-system) <sup>12</sup>
 - [TimeLanguageSettings/ConfigureTimeZone](./policy-csp-timelanguagesettings.md#configuretimezone) <sup>9</sup>
 - [Update/ActiveHoursEnd](./policy-csp-update.md#activehoursend) <sup>9</sup>
 - [Update/ActiveHoursMaxRange](./policy-csp-update.md#activehoursmaxrange) <sup>9</sup>
@@ -160,8 +163,15 @@ Footnotes:
 - 10 - Available in [Windows Holographic, version 21H1](/hololens/hololens-release-notes#windows-holographic-version-21h1)
 - 11 - Available in [Windows Holographic, version 21H2](/hololens/hololens-release-notes#windows-holographic-version-21h2)
 - 12 - Available in [Windows Holographic, version 22H2](/hololens/hololens-release-notes#windows-holographic-version-22h2)
+- 13 - Refer to [Configuring Policy Settings for the New Microsoft Edge](/hololens/hololens-new-edge#configuring-policy-settings-for-the-new-microsoft-edge)
+- 14 - Refer to [New Power Policies for Hololens 2](/hololens/hololens-release-notes-2004#new-power-policies-for-hololens-2)
 - Insider - Available in our current [HoloLens Insider builds](/hololens/hololens-insider).
 
 ## Related topics
 
 [Policy CSP](policy-configuration-service-provider.md)
+
+[Full HoloLens CSP Details](/windows/client-management/mdm/configuration-service-provider-support)
+
+
+

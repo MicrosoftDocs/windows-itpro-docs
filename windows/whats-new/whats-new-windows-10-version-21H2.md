@@ -7,16 +7,16 @@ ms.author: mstewart
 author: mestew
 ms.localizationpriority: medium
 ms.topic: article
-ms.collection: highpri, tier2
+ms.collection:
+  - highpri
+  - tier2
 ms.technology: itpro-fundamentals
 ms.date: 12/31/2017
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10, version 21H2</a>
 ---
 
 # What's new in Windows 10, version 21H2
-
-**Applies to**:
-
-- Windows 10, version 21H2
 
 Windows 10, version 21H2 is the next feature update. This article lists the new and updated features IT Pros should know. Windows 10, version 21H2 is also known as the Windows 10 November 2021 Update. It includes all features and fixes in previous cumulative updates to Windows 10, version 21H1.
 

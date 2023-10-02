@@ -3,6 +3,7 @@ title: Set up device management
 description: Learn how to configure the Intune service and set up the environment for education.
 ms.date: 08/31/2022
 ms.topic: tutorial
+appliesto:
 ---
 
 # Set up Microsoft Intune

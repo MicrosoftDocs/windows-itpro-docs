@@ -2,12 +2,12 @@
 title: DMSessionActions CSP
 description: Learn how the DMSessionActions configuration service provider (CSP) is used to manage the number of sessions the client skips if the device is in a low-power state.
 ms.author: vinpa
-ms.topic: article
+ms.topic: reference
 ms.prod: windows-client
 ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 06/26/2017
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ---
 

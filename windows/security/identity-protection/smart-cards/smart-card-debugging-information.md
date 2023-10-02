@@ -1,24 +1,12 @@
 ---
-title: Smart Card Troubleshooting (Windows)
+title: Smart Card Troubleshooting 
 description: Describes the tools and services that smart card developers can use to help identify certificate issues with the smart card deployment.
-ms.prod: windows-client
-author: paolomatarazzo
-ms.author: paoloma
 ms.reviewer: ardenw
-manager: aaroncz
 ms.collection: 
   - highpri
   - tier2
-ms.topic: article
-ms.localizationpriority: medium
+ms.topic: troubleshooting
 ms.date: 09/24/2021
-appliesto: 
-  - ✅ <b>Windows 10</b>
-  - ✅ <b>Windows 11</b>
-  - ✅ <b>Windows Server 2016</b>
-  - ✅ <b>Windows Server 2019</b>
-  - ✅ <b>Windows Server 2022</b>
-ms.technology: itpro-security
 ---
 
 # Smart Card Troubleshooting

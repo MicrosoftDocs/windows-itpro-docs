@@ -4,7 +4,7 @@ description: View the XML file containing the device description framework (DDF)
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/22/2023
+ms.date: 06/02/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -46,7 +46,7 @@ The following XML file contains the device description framework (DDF) for the B
       <MSFT:Applicability>
         <MSFT:OsBuildVersion>10.0.15063</MSFT:OsBuildVersion>
         <MSFT:CspVersion>1.0</MSFT:CspVersion>
-        <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x77;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xB4;0xBC;0xBF;0xCA;0xCB;0xCD;</MSFT:EditionAllowList>
+        <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;</MSFT:EditionAllowList>
       </MSFT:Applicability>
     </DFProperties>
     <Node>
@@ -149,7 +149,7 @@ The following XML file contains the device description framework (DDF) for the B
                          If you disable or do not configure this policy setting, BitLocker will use the default encryption method of XTS-AES 128-bit or the encryption method specified by any setup script.”
                          The format is string.
                          Sample value for this node to enable this policy and set the encryption methods is:
-
+                         
 
                          EncryptionMethodWithXtsOsDropDown_Name = Select the encryption method for operating system drives.
                          EncryptionMethodWithXtsFdvDropDown_Name = Select the encryption method for fixed data drives.
@@ -179,7 +179,7 @@ The following XML file contains the device description framework (DDF) for the B
           <MIME />
         </DFType>
         <MSFT:AllowedValues ValueType="ADMX">
-          <MSFT:AdmxBacked Area="VolumeEncryption~AT~WindowsComponents~FVECategory~FVERDVCategory" Name="EncryptionMethodWithXts_Name" File="VolumeEncryption.admx" />
+          <MSFT:AdmxBacked Area="VolumeEncryption~AT~WindowsComponents~FVECategory~FVERDVCategory" Name="RDVDenyWriteAccess_Name" File="VolumeEncryption.admx" />
         </MSFT:AllowedValues>
       </DFProperties>
     </Node>
@@ -201,7 +201,7 @@ The following XML file contains the device description framework (DDF) for the B
                          Note: If you want to require the use of a startup PIN and a USB flash drive, you must configure BitLocker settings using the command-line tool manage-bde instead of the BitLocker Drive Encryption setup wizard.
                          The format is string.
                          Sample value for this node to enable this policy is:
-
+                         
 
                          ConfigureNonTPMStartupKeyUsage_Name = Allow BitLocker without a compatible TPM (requires a password or a startup key on a USB flash drive)
                          All of the below settings are for computers with a TPM.
@@ -257,7 +257,7 @@ The following XML file contains the device description framework (DDF) for the B
                          NOTE: If minimum PIN length is set below 6 digits, Windows will attempt to update the TPM 2.0 lockout period to be greater than the default when a PIN is changed. If successful, Windows will only reset the TPM lockout period back to default if the TPM is reset.
                          The format is string.
                          Sample value for this node to enable this policy is:
-
+                         
 
                          Disabling the policy will let the system choose the default behaviors.
                          If you want to disable this policy use the following SyncML:
@@ -298,7 +298,7 @@ The following XML file contains the device description framework (DDF) for the B
                          Note: Not all characters and languages are supported in pre-boot. It is strongly recommended that you test that the characters you use for the custom message or URL appear correctly on the pre-boot recovery screen.
                          The format is string.
                          Sample value for this node to enable this policy is:
-
+                         
 
                          The possible values for 'xx' are:
                          0 = Empty
@@ -351,7 +351,7 @@ The following XML file contains the device description framework (DDF) for the B
                          If this policy setting is disabled or not configured, the default recovery options are supported for BitLocker recovery. By default a DRA is allowed, the recovery options can be specified by the user including the recovery password and recovery key, and recovery information is not backed up to AD DS.
                          The format is string.
                          Sample value for this node to enable this policy is:
-
+                         
 
                          The possible values for 'xx' are:
                          true = Explicitly allow
@@ -409,7 +409,7 @@ The following XML file contains the device description framework (DDF) for the B
                          If you enable this policy setting, you can control the methods available to users to recover data from BitLocker-protected fixed data drives.
                          The format is string.
                          Sample value for this node to enable this policy is:
-
+                         
 
                          The possible values for 'xx' are:
                          true = Explicitly allow
@@ -461,7 +461,7 @@ The following XML file contains the device description framework (DDF) for the B
                          If you disable or do not configure this policy setting, all fixed data drives on the computer will be mounted with read and write access.
                          The format is string.
                          Sample value for this node to enable this policy is:
-
+                         
 
                          Disabling the policy will let the system choose the default behaviors.
                          If you want to disable this policy use the following SyncML:
@@ -502,7 +502,7 @@ The following XML file contains the device description framework (DDF) for the B
                          Note: This policy setting can be overridden by the group policy settings under User Configuration\Administrative Templates\System\Removable Storage Access. If the "Removable Disks: Deny write access" group policy setting is enabled this policy setting will be ignored.
                          The format is string.
                          Sample value for this node to enable this policy is:
-
+                         
 
                          The possible values for 'xx' are:
                          true = Explicitly allow
@@ -582,11 +582,11 @@ The following XML file contains the device description framework (DDF) for the B
                          require reinstallation of Windows.
                          Note: This policy takes effect only if "RequireDeviceEncryption" policy is set to 1.
                          The format is integer.
-                         The expected values for this policy are:
+                         The expected values for this policy are: 
 
                          1 = This is the default, when the policy is not set. Warning prompt and encryption notification is allowed.
-                         0 = Disables the warning prompt and encryption notification. Starting in Windows 10, next major update,
-                             the value 0 only takes affect on Azure Active Directory joined devices.
+                         0 = Disables the warning prompt and encryption notification. Starting in Windows 10, next major update, 
+                             the value 0 only takes affect on Azure Active Directory joined devices. 
                              Windows will attempt to silently enable BitLocker for value 0.
 
                          If you want to disable this policy use the following SyncML:
@@ -630,7 +630,7 @@ The following XML file contains the device description framework (DDF) for the B
                          If "AllowWarningForOtherDiskEncryption" is not set, or is set to "1", "RequireDeviceEncryption" policy will not try to encrypt drive(s) if a standard user
                          is the current logged on user in the system.
 
-                         The expected values for this policy are:
+                         The expected values for this policy are: 
 
                          1 = "RequireDeviceEncryption" policy will try to enable encryption on all fixed drives even if a current logged in user is standard user.
                          0 = This is the default, when the policy is not set. If current logged on user is a standard user, "RequireDeviceEncryption" policy
@@ -687,17 +687,17 @@ The following XML file contains the device description framework (DDF) for the B
         </AccessType>
         <DefaultValue>0</DefaultValue>
         <Description> Allows Admin to configure Numeric Recovery Password Rotation upon use for OS and fixed drives on AAD and Hybrid domain joined devices.
-                          When not configured, Rotation is turned on by default for AAD only and off on Hybrid. The Policy will be effective only when
+                          When not configured, Rotation is turned on by default for AAD only and off on Hybrid. The Policy will be effective only when 
                           Active Directory back up for recovery password is configured to required.
                           For OS drive: Turn on "Do not enable Bitlocker until recovery information is stored to AD DS for operating system drives"
                           For Fixed drives: Turn on "Do not enable Bitlocker until recovery information is stored to AD DS for fixed data drives"
-
+                       
                           Supported Values: 0 - Numeric Recovery Passwords rotation OFF.
                                             1 - Numeric Recovery Passwords Rotation upon use ON for AAD joined devices. Default value
                                             2 - Numeric Recovery Passwords Rotation upon use ON for both AAD and Hybrid devices
-
+                         
                          If you want to disable this policy use the following SyncML:
-
+ 
                          112./Device/Vendor/MSFT/BitLocker/ConfigureRecoveryPasswordRotationint0</Description>
         <DFFormat>
           <int />
@@ -739,20 +739,20 @@ The following XML file contains the device description framework (DDF) for the B
         </AccessType>
         <Description> Allows admin to push one-time rotation of all numeric recovery passwords for OS and Fixed Data drives on an Azure Active Directory or hybrid-joined device.
                           This policy is Execute type and rotates all numeric passwords when issued from MDM tools.
-
+                          
 The policy only comes into effect when Active Directory backup for a recovery password is configured to "required."
                               * For OS drives, enable "Do not enable BitLocker until recovery information is stored to Active Directory Domain Services for operating system drives."
                               *For fixed drives, enable "Do not enable BitLocker until recovery information is stored to Active Directory Domain Services for fixed data drives."
-
-                          Client returns status DM_S_ACCEPTED_FOR_PROCESSING to indicate the rotation has started. Server can query status with the following status nodes:
-
-* status\RotateRecoveryPasswordsStatus
+                       
+                          Client returns status DM_S_ACCEPTED_FOR_PROCESSING to indicate the rotation has started. Server can query status with the following status nodes: 
+                              
+* status\RotateRecoveryPasswordsStatus 
                               * status\RotateRecoveryPasswordsRequestID
+                          
 
-
-
+                          
 Supported Values: String form of request ID. Example format of request ID is GUID. Server can choose the format as needed according to the management tools.\
-
+                         
                          113./Device/Vendor/MSFT/BitLocker/RotateRecoveryPasswordschr</Description>
         <DFFormat>
           <chr />
@@ -770,6 +770,52 @@ Supported Values: String form of request ID. Example format of request ID is GUI
           <MSFT:OsBuildVersion>10.0.18363</MSFT:OsBuildVersion>
           <MSFT:CspVersion>5.0</MSFT:CspVersion>
         </MSFT:Applicability>
+      </DFProperties>
+    </Node>
+    <Node>
+      <NodeName>AllowSuspensionOfBitLockerProtection</NodeName>
+      <DFProperties>
+        <AccessType>
+          <Add />
+          <Delete />
+          <Get />
+          <Replace />
+        </AccessType>
+        <DefaultValue>1</DefaultValue>
+        <Description>This policy setting allows suspending protection for BitLocker Drive Encryption when enabled and prevents suspending protection when disabled.
+                         Warning: When policy is disabled, some scenarios will be blocked and prevent those scenarios from behaving normally.
+                         The format is integer.
+                         The expected values for this policy are:
+
+                         0 = Prevent BitLocker Drive Encryption protection from being suspended.
+                         1 = This is the default, when the policy is not set. Allows suspending BitLocker Drive Encryption protection.
+                         </Description>
+        <DFFormat>
+          <int />
+        </DFFormat>
+        <Occurrence>
+          <ZeroOrOne />
+        </Occurrence>
+        <Scope>
+          <Dynamic />
+        </Scope>
+        <DFType>
+          <MIME />
+        </DFType>
+        <MSFT:Applicability>
+          <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>9.9</MSFT:CspVersion>
+        </MSFT:Applicability>
+        <MSFT:AllowedValues ValueType="ENUM">
+          <MSFT:Enum>
+            <MSFT:Value>0</MSFT:Value>
+            <MSFT:ValueDescription>Prevent BitLocker Drive Encryption protection from being suspended.</MSFT:ValueDescription>
+          </MSFT:Enum>
+          <MSFT:Enum>
+            <MSFT:Value>1</MSFT:Value>
+            <MSFT:ValueDescription>This is the default, when the policy is not set. Allows suspending BitLocker Drive Encryption protection.</MSFT:ValueDescription>
+          </MSFT:Enum>
+        </MSFT:AllowedValues>
       </DFProperties>
     </Node>
     <Node>
@@ -824,10 +870,10 @@ Supported Values: String form of request ID. Example format of request ID is GUI
           <AccessType>
             <Get />
           </AccessType>
-          <Description> This Node reports the status of RotateRecoveryPasswords request.
+          <Description> This Node reports the status of RotateRecoveryPasswords request. 
                                 Status code can be one of the following:
-                                NotStarted(2), Pending (1), Pass (0), Other error codes in case of failure
-
+                                NotStarted(2), Pending (1), Pass (0), Other error codes in case of failure 
+  
                   </Description>
           <DFFormat>
             <int />
@@ -853,10 +899,10 @@ Supported Values: String form of request ID. Example format of request ID is GUI
           <AccessType>
             <Get />
           </AccessType>
-          <Description> This Node reports the RequestID corresponding to RotateRecoveryPasswordsStatus.
+          <Description> This Node reports the RequestID corresponding to RotateRecoveryPasswordsStatus. 
                                 This node needs to be queried in synchronization with RotateRecoveryPasswordsStatus
-                                To ensure the status is correctly matched to the request ID.
-
+                                To ensure the status is correctly matched to the request ID.                        
+                    
                   </Description>
           <DFFormat>
             <chr />

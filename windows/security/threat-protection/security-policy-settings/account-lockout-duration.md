@@ -1,5 +1,5 @@
 ---
-title: Account lockout duration (Windows 10)
+title: Account lockout duration 
 description: Describes the best practices, location, values, and security considerations for the Account lockout duration security policy setting.
 ms.assetid: a4167bf4-27c3-4a9b-8ef0-04e3c6ec3aa4
 ms.reviewer: 
@@ -44,7 +44,7 @@ It's advisable to set **Account lockout duration** to approximately 15 minutes.
 
 ### Location
 
-**Computer Configuration\\Windows Settings\\Security Settings\\Account Policies\\Password Policy**
+**Computer Configuration\\Windows Settings\\Security Settings\\Account Policies\\Account Lockout Policy**
 
 ### Default values
 

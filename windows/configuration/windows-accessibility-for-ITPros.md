@@ -5,6 +5,7 @@ ms.prod: windows-client
 ms.technology: itpro-configure
 ms.author: lizlong
 author: lizgt2000
+ms.date: 08/11/2023
 ms.reviewer: 
 manager: aaroncz
 ms.localizationpriority: medium
@@ -14,6 +15,9 @@ appliesto:
   - ✅ <b>Windows 10</b>
   - ✅ <b>Windows 11</b>
 ---
+
+<!-- MAXADO-8138357 -->
+<!-- MAXADO-8138352 -->
 
 # Accessibility information for IT professionals
 
@@ -33,7 +37,7 @@ Windows 11, version 22H2, includes improvements for people with disabilities: sy
 
 ## Vision
 
-- [Use Narrator to use devices without a screen](https://support.microsoft.com/windows/complete-guide-to-narrator-e4397a0d-ef4f-b386-d8ae-c172f109bdb1). Narrator describes Windows and apps and enables you to control devices by using a keyboard, controller, or with a range of gestures on touch-supported devices. Starting in Windows 11, version 22H2, Narrator includes more natural voices.
+- [Use Narrator to use devices without a screen](https://support.microsoft.com/windows/complete-guide-to-narrator-e4397a0d-ef4f-b386-d8ae-c172f109bdb1). Narrator describes Windows and apps and enables you to control devices by using a keyboard, controller, or with a range of gestures on touch-supported devices. Now the user is able to download and install 10 more natural languages.
 
 - [Create accessible apps](/windows/apps/develop/accessibility). You can develop accessible apps just like Mail, Groove, and Store that work well with Narrator and other leading screen readers.
 
@@ -66,6 +70,8 @@ Windows 11, version 22H2, includes improvements for people with disabilities: sy
 ## Hearing
 
 - [Use live captions to better understand audio](https://support.microsoft.com/windows/use-live-captions-to-better-understand-audio-b52da59c-14b8-4031-aeeb-f6a47e6055df). Use Windows 11, version 22H2 or later to better understand any spoken audio with real time captions.
+
+- Starting with Windows 11, version 22H2 with [KB5026446](https://support.microsoft.com/kb/5026446), live captions now supports additional languages.
 
 - [View live transcription in a Teams meeting](https://support.microsoft.com/office/view-live-transcription-in-a-teams-meeting-dc1a8f23-2e20-4684-885e-2152e06a4a8b). During any Teams meeting, view a live transcription so you don't miss what's being said.
 
@@ -106,9 +112,16 @@ Windows 11, version 22H2, includes improvements for people with disabilities: sy
 
 - [Hear text read aloud with Narrator](https://support.microsoft.com/windows/hear-text-read-aloud-with-narrator-040f16c1-4632-b64e-110a-da4a0ac56917). Narrator reads text on your PC screen aloud and describes events, such as notifications or calendar appointments, so you can use your PC without a display.
 
+- Scripting functionality has been added to Narrator. There is store delivery of Narrator extension scripts which currently include an Outlook script and an Excel script.
+
 - [Use voice recognition](https://support.microsoft.com/windows/use-voice-recognition-in-windows-83ff75bd-63eb-0b6c-18d4-6fae94050571).
 
+<!-- MAXADO-8138354 -->
+- With spellings experience in voice access, you can dictate a complex or non-standard word letter-by-letter and add it to Windows dictionary. The next time you try to dictate the same word, voice access improves its recognition.
+
 - [Save time with keyboard shortcuts](https://support.microsoft.com/windows/keyboard-shortcuts-in-windows-dcc61a57-8ff0-cffe-9796-cb9706c75eec).
+
+- [Use voice access to control your PC and author text with your voice](https://support.microsoft.com/en-us/topic/use-voice-access-to-control-your-pc-author-text-with-your-voice-4dcd23ee-f1b9-4fd1-bacc-862ab611f55d).
 
 ## Other resources
 

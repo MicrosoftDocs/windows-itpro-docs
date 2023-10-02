@@ -4,7 +4,7 @@ description: Learn more about the EnterpriseModernAppManagement CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/28/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,6 +17,7 @@ ms.topic: reference
 # EnterpriseModernAppManagement CSP
 
 <!-- EnterpriseModernAppManagement-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 The EnterpriseModernAppManagement configuration service provider (CSP) is used for the provisioning and reporting of modern enterprise apps. For details about how to use this CSP to for reporting apps inventory, installation and removal of apps for users, provisioning apps to devices, and managing app licenses, see [Enterprise app management](../enterprise-app-management.md).
 
 > [!NOTE]
@@ -258,7 +259,7 @@ The following list shows the EnterpriseModernAppManagement configuration service
 <!-- Device-AppInstallation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppInstallation-Applicability-End -->
 
 <!-- Device-AppInstallation-OmaUri-Begin -->
@@ -273,6 +274,7 @@ Used to perform app installation.
 <!-- Device-AppInstallation-Description-End -->
 
 <!-- Device-AppInstallation-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node.
 <!-- Device-AppInstallation-Editable-End -->
 
@@ -281,7 +283,7 @@ This is a required node.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-AppInstallation-DFProperties-End -->
 
@@ -297,7 +299,7 @@ This is a required node.
 <!-- Device-AppInstallation-{PackageFamilyName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppInstallation-{PackageFamilyName}-Applicability-End -->
 
 <!-- Device-AppInstallation-{PackageFamilyName}-OmaUri-Begin -->
@@ -312,6 +314,7 @@ Package family name (PFN) of the app. There is one for each PFN on the device wh
 <!-- Device-AppInstallation-{PackageFamilyName}-Description-End -->
 
 <!-- Device-AppInstallation-{PackageFamilyName}-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is an optional node.
 
 > [!NOTE]
@@ -323,12 +326,13 @@ This is an optional node.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get, Replace |
 | Dynamic Node Naming | UniqueName: Package family name (PFN) of the app. |
 <!-- Device-AppInstallation-{PackageFamilyName}-DFProperties-End -->
 
 <!-- Device-AppInstallation-{PackageFamilyName}-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
 **Example**:
 
 Here's an example for uninstalling an app:
@@ -359,7 +363,7 @@ Here's an example for uninstalling an app:
 <!-- Device-AppInstallation-{PackageFamilyName}-HostedInstall-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppInstallation-{PackageFamilyName}-HostedInstall-Applicability-End -->
 
 <!-- Device-AppInstallation-{PackageFamilyName}-HostedInstall-OmaUri-Begin -->
@@ -374,6 +378,7 @@ Command to perform an install of an app package from a hosted location (this can
 <!-- Device-AppInstallation-{PackageFamilyName}-HostedInstall-Description-End -->
 
 <!-- Device-AppInstallation-{PackageFamilyName}-HostedInstall-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node. The following list shows the supported deployment options:
 
 - ForceApplicationShutdown
@@ -393,7 +398,7 @@ This is a required node. The following list shows the supported deployment optio
 
 | Property name | Property value |
 |:--|:--|
-| Format | xml |
+| Format | `xml` |
 | Access Type | Add, Delete, Exec, Get |
 <!-- Device-AppInstallation-{PackageFamilyName}-HostedInstall-DFProperties-End -->
 
@@ -409,7 +414,7 @@ This is a required node. The following list shows the supported deployment optio
 <!-- Device-AppInstallation-{PackageFamilyName}-LastError-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppInstallation-{PackageFamilyName}-LastError-Applicability-End -->
 
 <!-- Device-AppInstallation-{PackageFamilyName}-LastError-OmaUri-Begin -->
@@ -424,6 +429,7 @@ Last error relating to the app installation.
 <!-- Device-AppInstallation-{PackageFamilyName}-LastError-Description-End -->
 
 <!-- Device-AppInstallation-{PackageFamilyName}-LastError-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > This element isn't present after the app is installed.
 <!-- Device-AppInstallation-{PackageFamilyName}-LastError-Editable-End -->
@@ -433,7 +439,7 @@ Last error relating to the app installation.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-AppInstallation-{PackageFamilyName}-LastError-DFProperties-End -->
 
@@ -449,7 +455,7 @@ Last error relating to the app installation.
 <!-- Device-AppInstallation-{PackageFamilyName}-LastErrorDesc-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppInstallation-{PackageFamilyName}-LastErrorDesc-Applicability-End -->
 
 <!-- Device-AppInstallation-{PackageFamilyName}-LastErrorDesc-OmaUri-Begin -->
@@ -464,6 +470,7 @@ Description of last error relating to the app installation.
 <!-- Device-AppInstallation-{PackageFamilyName}-LastErrorDesc-Description-End -->
 
 <!-- Device-AppInstallation-{PackageFamilyName}-LastErrorDesc-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > This element isn't present after the app is installed.
 <!-- Device-AppInstallation-{PackageFamilyName}-LastErrorDesc-Editable-End -->
@@ -473,7 +480,7 @@ Description of last error relating to the app installation.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-AppInstallation-{PackageFamilyName}-LastErrorDesc-DFProperties-End -->
 
@@ -489,7 +496,7 @@ Description of last error relating to the app installation.
 <!-- Device-AppInstallation-{PackageFamilyName}-ProgressStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppInstallation-{PackageFamilyName}-ProgressStatus-Applicability-End -->
 
 <!-- Device-AppInstallation-{PackageFamilyName}-ProgressStatus-OmaUri-Begin -->
@@ -500,10 +507,11 @@ Description of last error relating to the app installation.
 
 <!-- Device-AppInstallation-{PackageFamilyName}-ProgressStatus-Description-Begin -->
 <!-- Description-Source-DDF -->
-An integer the indicates the progress of the app installation. For https locations, this indicates the download progress. ProgressStatus is not available for provisioning and it is only for user-based installations. In provisioning, the value is always 0 (zero).
+An integer that indicates the progress of the app installation. For https locations, this indicates the download progress. ProgressStatus isn't available for provisioning and it's only for user-based installations. In provisioning, the value is always 0 (zero).
 <!-- Device-AppInstallation-{PackageFamilyName}-ProgressStatus-Description-End -->
 
 <!-- Device-AppInstallation-{PackageFamilyName}-ProgressStatus-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > This element isn't present after the app is installed.
 <!-- Device-AppInstallation-{PackageFamilyName}-ProgressStatus-Editable-End -->
@@ -513,7 +521,7 @@ An integer the indicates the progress of the app installation. For https locatio
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-AppInstallation-{PackageFamilyName}-ProgressStatus-DFProperties-End -->
 
@@ -529,7 +537,7 @@ An integer the indicates the progress of the app installation. For https locatio
 <!-- Device-AppInstallation-{PackageFamilyName}-Status-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppInstallation-{PackageFamilyName}-Status-Applicability-End -->
 
 <!-- Device-AppInstallation-{PackageFamilyName}-Status-OmaUri-Begin -->
@@ -540,10 +548,11 @@ An integer the indicates the progress of the app installation. For https locatio
 
 <!-- Device-AppInstallation-{PackageFamilyName}-Status-Description-Begin -->
 <!-- Description-Source-DDF -->
-Status of app installation. The following values are returned: NOT_INSTALLED (0) - The node was added, but the execution has not completed. INSTALLING (1) - Execution has started, but the deployment has not completed. If the deployment completes regardless of success, this value is updated. FAILED (2) - Installation failed. The details of the error can be found under LastError and LastErrorDescription. INSTALLED (3) - Once an install is successful this node is cleaned up, however in the event the clean up action has not completed, this state may briefly appear.
+Status of app installation. The following values are returned: NOT_INSTALLED (0) - The node was added, but the execution hasn't completed. INSTALLING (1) - Execution has started, but the deployment hasn't completed. If the deployment completes regardless of success, this value is updated. FAILED (2) - Installation failed. The details of the error can be found under LastError and LastErrorDescription. INSTALLED (3) - Once an install is successful this node is cleaned up, however in the event the clean up action hasn't completed, this state may briefly appear.
 <!-- Device-AppInstallation-{PackageFamilyName}-Status-Description-End -->
 
 <!-- Device-AppInstallation-{PackageFamilyName}-Status-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > This element isn't present after the app is installed.
 <!-- Device-AppInstallation-{PackageFamilyName}-Status-Editable-End -->
@@ -553,7 +562,7 @@ Status of app installation. The following values are returned: NOT_INSTALLED (0)
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-AppInstallation-{PackageFamilyName}-Status-DFProperties-End -->
 
@@ -569,7 +578,7 @@ Status of app installation. The following values are returned: NOT_INSTALLED (0)
 <!-- Device-AppInstallation-{PackageFamilyName}-StoreInstall-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppInstallation-{PackageFamilyName}-StoreInstall-Applicability-End -->
 
 <!-- Device-AppInstallation-{PackageFamilyName}-StoreInstall-OmaUri-Begin -->
@@ -592,7 +601,7 @@ Command to perform an install of an app and a license from the Microsoft Store.
 
 | Property name | Property value |
 |:--|:--|
-| Format | xml |
+| Format | `xml` |
 | Access Type | Add, Delete, Exec, Get |
 <!-- Device-AppInstallation-{PackageFamilyName}-StoreInstall-DFProperties-End -->
 
@@ -608,7 +617,7 @@ Command to perform an install of an app and a license from the Microsoft Store.
 <!-- Device-AppLicenses-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppLicenses-Applicability-End -->
 
 <!-- Device-AppLicenses-OmaUri-Begin -->
@@ -631,7 +640,7 @@ Used to manage licenses for app scenarios.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-AppLicenses-DFProperties-End -->
 
@@ -647,7 +656,7 @@ Used to manage licenses for app scenarios.
 <!-- Device-AppLicenses-StoreLicenses-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppLicenses-StoreLicenses-Applicability-End -->
 
 <!-- Device-AppLicenses-StoreLicenses-OmaUri-Begin -->
@@ -662,6 +671,7 @@ Used to manage licenses for store apps.
 <!-- Device-AppLicenses-StoreLicenses-Description-End -->
 
 <!-- Device-AppLicenses-StoreLicenses-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node.
 <!-- Device-AppLicenses-StoreLicenses-Editable-End -->
 
@@ -670,7 +680,7 @@ This is a required node.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-AppLicenses-StoreLicenses-DFProperties-End -->
 
@@ -686,7 +696,7 @@ This is a required node.
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-Applicability-End -->
 
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-OmaUri-Begin -->
@@ -701,6 +711,7 @@ License ID for a store installed app. The license ID is generally the PFN of the
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-Description-End -->
 
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is an optional node.
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-Editable-End -->
 
@@ -709,7 +720,7 @@ This is an optional node.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 | Dynamic Node Naming | UniqueName: License ID for a store installed app. The license ID is generally the PFN of the app. |
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-DFProperties-End -->
@@ -726,7 +737,7 @@ This is an optional node.
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-AddLicense-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-AddLicense-Applicability-End -->
 
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-AddLicense-OmaUri-Begin -->
@@ -741,6 +752,7 @@ Command to add license.
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-AddLicense-Description-End -->
 
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-AddLicense-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node.
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-AddLicense-Editable-End -->
 
@@ -749,7 +761,7 @@ This is a required node.
 
 | Property name | Property value |
 |:--|:--|
-| Format | xml |
+| Format | `xml` |
 | Access Type | Exec |
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-AddLicense-DFProperties-End -->
 
@@ -765,7 +777,7 @@ This is a required node.
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-GetLicenseFromStore-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-GetLicenseFromStore-Applicability-End -->
 
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-GetLicenseFromStore-OmaUri-Begin -->
@@ -780,6 +792,7 @@ Command to get license from the store.
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-GetLicenseFromStore-Description-End -->
 
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-GetLicenseFromStore-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node.
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-GetLicenseFromStore-Editable-End -->
 
@@ -788,7 +801,7 @@ This is a required node.
 
 | Property name | Property value |
 |:--|:--|
-| Format | xml |
+| Format | `xml` |
 | Access Type | Exec |
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-GetLicenseFromStore-DFProperties-End -->
 
@@ -804,7 +817,7 @@ This is a required node.
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-LicenseCategory-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-LicenseCategory-Applicability-End -->
 
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-LicenseCategory-OmaUri-Begin -->
@@ -815,7 +828,7 @@ This is a required node.
 
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-LicenseCategory-Description-Begin -->
 <!-- Description-Source-DDF -->
-Category of license that is used to classify various license sources. Valid value: Unknown - unknown license category. Retail - license sold through retail channels, typically from the Microsoft Store. Enterprise - license sold through the enterprise sales channel, typically from the Store for Business. OEM - license issued to an OEM. Developer - developer license, typically installed during the app development or side-loading scenarios.
+Category of license that's used to classify various license sources. Valid value: Unknown - unknown license category. Retail - license sold through retail channels, typically from the Microsoft Store. Enterprise - license sold through the enterprise sales channel, typically from the Store for Business. OEM - license issued to an OEM. Developer - developer license, typically installed during the app development or side-loading scenarios.
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-LicenseCategory-Description-End -->
 
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-LicenseCategory-Editable-Begin -->
@@ -827,7 +840,7 @@ Category of license that is used to classify various license sources. Valid valu
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-LicenseCategory-DFProperties-End -->
 
@@ -843,7 +856,7 @@ Category of license that is used to classify various license sources. Valid valu
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-LicenseUsage-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-LicenseUsage-Applicability-End -->
 
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-LicenseUsage-OmaUri-Begin -->
@@ -866,7 +879,7 @@ Indicates the allowed usage for the license. Valid values: Unknown - usage is un
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-LicenseUsage-DFProperties-End -->
 
@@ -882,7 +895,7 @@ Indicates the allowed usage for the license. Valid values: Unknown - usage is un
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-RequesterID-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-RequesterID-Applicability-End -->
 
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-RequesterID-OmaUri-Begin -->
@@ -905,7 +918,7 @@ Identifier for the entity that requested the license, such as the client who acq
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-RequesterID-DFProperties-End -->
 
@@ -921,7 +934,7 @@ Identifier for the entity that requested the license, such as the client who acq
 <!-- Device-AppManagement-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-Applicability-End -->
 
 <!-- Device-AppManagement-OmaUri-Begin -->
@@ -936,6 +949,7 @@ Used for inventory and app management (post-install).
 <!-- Device-AppManagement-Description-End -->
 
 <!-- Device-AppManagement-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node.
 <!-- Device-AppManagement-Editable-End -->
 
@@ -944,7 +958,7 @@ This is a required node.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-AppManagement-DFProperties-End -->
 
@@ -960,7 +974,7 @@ This is a required node.
 <!-- Device-AppManagement-AppInventoryQuery-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-AppInventoryQuery-Applicability-End -->
 
 <!-- Device-AppManagement-AppInventoryQuery-OmaUri-Begin -->
@@ -975,6 +989,7 @@ Specifies the query for app inventory.
 <!-- Device-AppManagement-AppInventoryQuery-Description-End -->
 
 <!-- Device-AppManagement-AppInventoryQuery-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node. Query parameters:
 
 - Output - Specifies the parameters for the information returned in AppInventoryResults operation. Multiple value must be separate by |. Valid values are:
@@ -1011,11 +1026,12 @@ This is a required node. Query parameters:
 
 | Property name | Property value |
 |:--|:--|
-| Format | xml |
+| Format | `xml` |
 | Access Type | Get, Replace |
 <!-- Device-AppManagement-AppInventoryQuery-DFProperties-End -->
 
 <!-- Device-AppManagement-AppInventoryQuery-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
 **Example**:
 
 The following example sets the inventory query for the package names and checks the status for reinstallation for all main packages that are nonStore apps.
@@ -1042,7 +1058,7 @@ The following example sets the inventory query for the package names and checks 
 <!-- Device-AppManagement-AppInventoryResults-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-AppInventoryResults-Applicability-End -->
 
 <!-- Device-AppManagement-AppInventoryResults-OmaUri-Begin -->
@@ -1057,6 +1073,7 @@ Returns the results for app inventory that was created after the AppInventoryQue
 <!-- Device-AppManagement-AppInventoryResults-Description-End -->
 
 <!-- Device-AppManagement-AppInventoryResults-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node.
 <!-- Device-AppManagement-AppInventoryResults-Editable-End -->
 
@@ -1065,11 +1082,12 @@ This is a required node.
 
 | Property name | Property value |
 |:--|:--|
-| Format | xml |
+| Format | `xml` |
 | Access Type | Get |
 <!-- Device-AppManagement-AppInventoryResults-DFProperties-End -->
 
 <!-- Device-AppManagement-AppInventoryResults-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
 **Example**:
 
 Here's an example of AppInventoryResults operation.
@@ -1094,7 +1112,7 @@ Here's an example of AppInventoryResults operation.
 <!-- Device-AppManagement-AppStore-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-AppStore-Applicability-End -->
 
 <!-- Device-AppManagement-AppStore-OmaUri-Begin -->
@@ -1108,6 +1126,7 @@ Here's an example of AppInventoryResults operation.
 <!-- Device-AppManagement-AppStore-Description-End -->
 
 <!-- Device-AppManagement-AppStore-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node. Used for managing apps from the Microsoft Store.
 <!-- Device-AppManagement-AppStore-Editable-End -->
 
@@ -1116,7 +1135,7 @@ This is a required node. Used for managing apps from the Microsoft Store.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 <!-- Device-AppManagement-AppStore-DFProperties-End -->
 
@@ -1132,7 +1151,7 @@ This is a required node. Used for managing apps from the Microsoft Store.
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-Applicability-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-OmaUri-Begin -->
@@ -1147,6 +1166,7 @@ Package family name (PFN) of the app. There is one for each PFN on the device wh
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-Description-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > XAP files use a product ID in place of PackageFamilyName. Here's an example of XAP product ID (including the braces), {12345678-9012-3456-7890-123456789012}.
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-Editable-End -->
@@ -1156,12 +1176,13 @@ Package family name (PFN) of the app. There is one for each PFN on the device wh
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 | Dynamic Node Naming | ClientInventory |
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-DFProperties-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
 **Example**:
 
 Here's an example for uninstalling an app:
@@ -1192,7 +1213,7 @@ Here's an example for uninstalling an app:
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Applicability-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-OmaUri-Begin -->
@@ -1215,7 +1236,7 @@ Full name of the package installed.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 | Dynamic Node Naming | ClientInventory |
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-DFProperties-End -->
@@ -1232,7 +1253,7 @@ Full name of the package installed.
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Architecture-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Architecture-Applicability-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Architecture-OmaUri-Begin -->
@@ -1247,6 +1268,7 @@ Architecture of installed package. Value type is string.
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Architecture-Description-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Architecture-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > Not applicable to XAP files.
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Architecture-Editable-End -->
@@ -1256,7 +1278,7 @@ Architecture of installed package. Value type is string.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Architecture-DFProperties-End -->
 
@@ -1272,7 +1294,7 @@ Architecture of installed package. Value type is string.
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-InstallDate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-InstallDate-Applicability-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-InstallDate-OmaUri-Begin -->
@@ -1287,6 +1309,7 @@ Date the app was installed. Value type is string.
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-InstallDate-Description-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-InstallDate-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node.
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-InstallDate-Editable-End -->
 
@@ -1295,7 +1318,7 @@ This is a required node.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-InstallDate-DFProperties-End -->
 
@@ -1311,7 +1334,7 @@ This is a required node.
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-InstallLocation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-InstallLocation-Applicability-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-InstallLocation-OmaUri-Begin -->
@@ -1326,6 +1349,7 @@ Install location of the app on the device. Value type is string.
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-InstallLocation-Description-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-InstallLocation-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > Not applicable to XAP files.
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-InstallLocation-Editable-End -->
@@ -1335,7 +1359,7 @@ Install location of the app on the device. Value type is string.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-InstallLocation-DFProperties-End -->
 
@@ -1351,7 +1375,7 @@ Install location of the app on the device. Value type is string.
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsBundle-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsBundle-Applicability-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsBundle-OmaUri-Begin -->
@@ -1374,7 +1398,7 @@ The value is 1 if the package is an app bundle and 0 (zero) for all other cases.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsBundle-DFProperties-End -->
 
@@ -1390,7 +1414,7 @@ The value is 1 if the package is an app bundle and 0 (zero) for all other cases.
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsFramework-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsFramework-Applicability-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsFramework-OmaUri-Begin -->
@@ -1405,6 +1429,7 @@ Whether or not the app is a framework package. Value type is int. The value is 1
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsFramework-Description-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsFramework-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > Not applicable to XAP files.
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsFramework-Editable-End -->
@@ -1414,7 +1439,7 @@ Whether or not the app is a framework package. Value type is int. The value is 1
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsFramework-DFProperties-End -->
 
@@ -1430,7 +1455,7 @@ Whether or not the app is a framework package. Value type is int. The value is 1
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsProvisioned-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsProvisioned-Applicability-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsProvisioned-OmaUri-Begin -->
@@ -1453,7 +1478,7 @@ The value is 0 or 1 that indicates if the app is provisioned on the device. The 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsProvisioned-DFProperties-End -->
 
@@ -1469,7 +1494,7 @@ The value is 0 or 1 that indicates if the app is provisioned on the device. The 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsStub-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsStub-Applicability-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsStub-OmaUri-Begin -->
@@ -1484,6 +1509,7 @@ This node is used to identify whether the package is a stub package. A stub pack
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsStub-Description-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsStub-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 The value is 1 if the package is a stub package and 0 (zero) for all other cases.
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsStub-Editable-End -->
 
@@ -1492,7 +1518,7 @@ The value is 1 if the package is a stub package and 0 (zero) for all other cases
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsStub-DFProperties-End -->
 
@@ -1508,7 +1534,7 @@ The value is 1 if the package is a stub package and 0 (zero) for all other cases
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Name-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Name-Applicability-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Name-OmaUri-Begin -->
@@ -1531,7 +1557,7 @@ Name of the app. Value type is string.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Name-DFProperties-End -->
 
@@ -1547,7 +1573,7 @@ Name of the app. Value type is string.
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-Applicability-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-OmaUri-Begin -->
@@ -1558,10 +1584,11 @@ Name of the app. Value type is string.
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-Description-Begin -->
 <!-- Description-Source-DDF -->
-Provides information about the status of the package. Value type is int. Valid values are: OK (0) - The package is usable. LicenseIssue (1) - The license of the package is not valid. Modified (2) - The package payload was modified by an unknown source. Tampered (4) - The package payload was tampered intentionally. Disabled (8) - The package is not available for use. It can still be serviced.
+Provides information about the status of the package. Value type is int. Valid values are: OK (0) - The package is usable. LicenseIssue (1) - The license of the package isn't valid. Modified (2) - The package payload was modified by an unknown source. Tampered (4) - The package payload was tampered intentionally. Disabled (8) - The package isn't available for use. It can still be serviced.
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-Description-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > Not applicable to XAP files.
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-Editable-End -->
@@ -1571,7 +1598,7 @@ Provides information about the status of the package. Value type is int. Valid v
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-DFProperties-End -->
 
@@ -1587,7 +1614,7 @@ Provides information about the status of the package. Value type is int. Valid v
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Publisher-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Publisher-Applicability-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Publisher-OmaUri-Begin -->
@@ -1610,7 +1637,7 @@ Publisher name of the app. Value type is string.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Publisher-DFProperties-End -->
 
@@ -1626,7 +1653,7 @@ Publisher name of the app. Value type is string.
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-Applicability-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-OmaUri-Begin -->
@@ -1641,6 +1668,7 @@ Specifies whether the package state has changed and requires a reinstallation of
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-Description-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node.
 
 > [!NOTE]
@@ -1652,7 +1680,7 @@ This is a required node.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-DFProperties-End -->
 
@@ -1668,7 +1696,7 @@ This is a required node.
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-ResourceID-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-ResourceID-Applicability-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-ResourceID-OmaUri-Begin -->
@@ -1683,6 +1711,7 @@ Resource ID of the app. This is null for the main app, ~ for a bundle, and conta
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-ResourceID-Description-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-ResourceID-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > Not applicable to XAP files.
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-ResourceID-Editable-End -->
@@ -1692,7 +1721,7 @@ Resource ID of the app. This is null for the main app, ~ for a bundle, and conta
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-ResourceID-DFProperties-End -->
 
@@ -1708,7 +1737,7 @@ Resource ID of the app. This is null for the main app, ~ for a bundle, and conta
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Users-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Users-Applicability-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Users-OmaUri-Begin -->
@@ -1723,6 +1752,7 @@ Registered users of the app and the package install state. If the query is at th
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Users-Description-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Users-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node. Possible values:
 
 - 0 = Not Installed
@@ -1736,7 +1766,7 @@ This is a required node. Possible values:
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Users-DFProperties-End -->
 
@@ -1752,7 +1782,7 @@ This is a required node. Possible values:
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Version-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Version-Applicability-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Version-OmaUri-Begin -->
@@ -1775,7 +1805,7 @@ Version of the app. Value type is string.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Version-DFProperties-End -->
 
@@ -1791,7 +1821,7 @@ Version of the app. Value type is string.
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-DoNotUpdate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-DoNotUpdate-Applicability-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-DoNotUpdate-OmaUri-Begin -->
@@ -1806,6 +1836,7 @@ Specifies whether you want to block a specific app from being updated via auto-u
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-DoNotUpdate-Description-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-DoNotUpdate-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node.
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-DoNotUpdate-Editable-End -->
 
@@ -1814,7 +1845,7 @@ This is a required node.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-DoNotUpdate-DFProperties-End -->
 
@@ -1839,7 +1870,7 @@ This is a required node.
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Applicability-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-OmaUri-Begin -->
@@ -1850,10 +1881,11 @@ This is a required node.
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specify whether on a AMD64 device, across an app update, the architecture of the installed app must not change. For example if you have the x86 flavor of a Windows app installed, with this setting enabled, across an update, the x86 flavor will be installed even when x64 flavor is available.
+Specify whether on a AMD64 device, across an app update, the architecture of the installed app mustn't change. For example if you have the x86 flavor of a Windows app installed, with this setting enabled, across an update, the x86 flavor will be installed even when x64 flavor is available.
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Description-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 Expected Behavior on an AMD64 machine that has x86 flavor of an app installed (Most restrictive wins).
 
 | Applicability Setting | CSP state      | Result               |
@@ -1869,7 +1901,7 @@ Expected Behavior on an AMD64 machine that has x86 flavor of an app installed (M
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-DFProperties-End -->
 
@@ -1894,7 +1926,7 @@ Expected Behavior on an AMD64 machine that has x86 flavor of an app installed (M
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-NonRemovable-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-NonRemovable-Applicability-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-NonRemovable-OmaUri-Begin -->
@@ -1909,6 +1941,7 @@ This setting allows the IT admin to set an app to be nonremovable, or unable to 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-NonRemovable-Description-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-NonRemovable-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 NonRemovable requires admin permission. This setting can only be defined per device, not per user. You can query the setting using AppInventoryQuery or AppInventoryResults.
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-NonRemovable-Editable-End -->
 
@@ -1917,7 +1950,7 @@ NonRemovable requires admin permission. This setting can only be defined per dev
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Get, Replace |
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-NonRemovable-DFProperties-End -->
 
@@ -1926,11 +1959,12 @@ NonRemovable requires admin permission. This setting can only be defined per dev
 
 | Value | Description |
 |:--|:--|
-| 0 | App is not in the nonremovable app policy list. |
+| 0 | App isn't in the nonremovable app policy list. |
 | 1 | App is included in the nonremovable app policy list. |
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-NonRemovable-AllowedValues-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-NonRemovable-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
 **Examples**:
 
 - Add an app to the nonremovable app policy list
@@ -2004,7 +2038,7 @@ NonRemovable requires admin permission. This setting can only be defined per dev
 <!-- Device-AppManagement-AppStore-ReleaseManagement-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-AppStore-ReleaseManagement-Applicability-End -->
 
 <!-- Device-AppManagement-AppStore-ReleaseManagement-OmaUri-Begin -->
@@ -2019,6 +2053,7 @@ Interior node for the managing updates through the Microsoft Store. These settin
 <!-- Device-AppManagement-AppStore-ReleaseManagement-Description-End -->
 
 <!-- Device-AppManagement-AppStore-ReleaseManagement-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > ReleaseManagement settings only apply to updates through the Microsoft Store.
 <!-- Device-AppManagement-AppStore-ReleaseManagement-Editable-End -->
@@ -2028,7 +2063,7 @@ Interior node for the managing updates through the Microsoft Store. These settin
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get, Replace |
 <!-- Device-AppManagement-AppStore-ReleaseManagement-DFProperties-End -->
 
@@ -2044,7 +2079,7 @@ Interior node for the managing updates through the Microsoft Store. These settin
 <!-- Device-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-Applicability-End -->
 
 <!-- Device-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-OmaUri-Begin -->
@@ -2055,7 +2090,7 @@ Interior node for the managing updates through the Microsoft Store. These settin
 
 <!-- Device-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-Description-Begin -->
 <!-- Description-Source-DDF -->
-Identifier for the app or set of apps. If there is only one app, it is the PackageFamilyName. If it is for a set of apps, it is the PackageFamilyName of the main app.
+Identifier for the app or set of apps. If there is only one app, it's the PackageFamilyName. If it's for a set of apps, it's the PackageFamilyName of the main app.
 <!-- Device-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-Description-End -->
 
 <!-- Device-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-Editable-Begin -->
@@ -2067,7 +2102,7 @@ Identifier for the app or set of apps. If there is only one app, it is the Packa
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get, Replace |
 | Dynamic Node Naming | UniqueName: If there is only one app, the name is the PackageFamilyName. If it is for a set of apps, the name is the PackageFamilyName of the main app. |
 <!-- Device-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-DFProperties-End -->
@@ -2084,7 +2119,7 @@ Identifier for the app or set of apps. If there is only one app, it is the Packa
 <!-- Device-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-ChannelId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-ChannelId-Applicability-End -->
 
 <!-- Device-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-ChannelId-OmaUri-Begin -->
@@ -2107,7 +2142,7 @@ Specifies the app channel ID.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-ChannelId-DFProperties-End -->
 
@@ -2123,7 +2158,7 @@ Specifies the app channel ID.
 <!-- Device-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-Applicability-End -->
 
 <!-- Device-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-OmaUri-Begin -->
@@ -2146,7 +2181,7 @@ Interior node used to specify the effective app release to use when multiple use
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-DFProperties-End -->
 
@@ -2162,7 +2197,7 @@ Interior node used to specify the effective app release to use when multiple use
 <!-- Device-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ChannelId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ChannelId-Applicability-End -->
 
 <!-- Device-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ChannelId-OmaUri-Begin -->
@@ -2185,7 +2220,7 @@ Returns the last user channel ID on the device.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ChannelId-DFProperties-End -->
 
@@ -2201,7 +2236,7 @@ Returns the last user channel ID on the device.
 <!-- Device-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ReleaseManagementId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ReleaseManagementId-Applicability-End -->
 
 <!-- Device-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ReleaseManagementId-OmaUri-Begin -->
@@ -2224,7 +2259,7 @@ Returns the last user release ID on the device.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ReleaseManagementId-DFProperties-End -->
 
@@ -2240,7 +2275,7 @@ Returns the last user release ID on the device.
 <!-- Device-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-ReleaseManagementId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-ReleaseManagementId-Applicability-End -->
 
 <!-- Device-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-ReleaseManagementId-OmaUri-Begin -->
@@ -2263,7 +2298,7 @@ The IT admin can specify a release ID to indicate a specific release that they w
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-ReleaseManagementId-DFProperties-End -->
 
@@ -2279,7 +2314,7 @@ The IT admin can specify a release ID to indicate a specific release that they w
 <!-- Device-AppManagement-LastScanError-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-LastScanError-Applicability-End -->
 
 <!-- Device-AppManagement-LastScanError-OmaUri-Begin -->
@@ -2294,6 +2329,7 @@ Reports the last error code returned by the update scan.
 <!-- Device-AppManagement-LastScanError-Description-End -->
 
 <!-- Device-AppManagement-LastScanError-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node.
 <!-- Device-AppManagement-LastScanError-Editable-End -->
 
@@ -2302,7 +2338,7 @@ This is a required node.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-AppManagement-LastScanError-DFProperties-End -->
 
@@ -2318,7 +2354,7 @@ This is a required node.
 <!-- Device-AppManagement-nonStore-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-nonStore-Applicability-End -->
 
 <!-- Device-AppManagement-nonStore-OmaUri-Begin -->
@@ -2332,6 +2368,7 @@ This is a required node.
 <!-- Device-AppManagement-nonStore-Description-End -->
 
 <!-- Device-AppManagement-nonStore-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 Used to manage enterprise apps or developer apps that weren't acquired from the Microsoft Store.
 <!-- Device-AppManagement-nonStore-Editable-End -->
 
@@ -2340,7 +2377,7 @@ Used to manage enterprise apps or developer apps that weren't acquired from the 
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 <!-- Device-AppManagement-nonStore-DFProperties-End -->
 
@@ -2356,7 +2393,7 @@ Used to manage enterprise apps or developer apps that weren't acquired from the 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-Applicability-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-OmaUri-Begin -->
@@ -2371,6 +2408,7 @@ Package family name (PFN) of the app. There is one for each PFN on the device wh
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-Description-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > XAP files use a product ID in place of PackageFamilyName. Here's an example of XAP product ID (including the braces), {12345678-9012-3456-7890-123456789012}.
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-Editable-End -->
@@ -2380,12 +2418,13 @@ Package family name (PFN) of the app. There is one for each PFN on the device wh
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 | Dynamic Node Naming | ClientInventory |
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-DFProperties-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
 **Example**:
 
 Here's an example for uninstalling an app:
@@ -2416,7 +2455,7 @@ Here's an example for uninstalling an app:
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Applicability-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-OmaUri-Begin -->
@@ -2439,7 +2478,7 @@ Full name of the package installed.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 | Dynamic Node Naming | ClientInventory |
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-DFProperties-End -->
@@ -2456,7 +2495,7 @@ Full name of the package installed.
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Architecture-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Architecture-Applicability-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Architecture-OmaUri-Begin -->
@@ -2471,6 +2510,7 @@ Architecture of installed package. Value type is string.
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Architecture-Description-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Architecture-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > Not applicable to XAP files.
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Architecture-Editable-End -->
@@ -2480,7 +2520,7 @@ Architecture of installed package. Value type is string.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Architecture-DFProperties-End -->
 
@@ -2496,7 +2536,7 @@ Architecture of installed package. Value type is string.
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-InstallDate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-InstallDate-Applicability-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-InstallDate-OmaUri-Begin -->
@@ -2511,6 +2551,7 @@ Date the app was installed. Value type is string.
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-InstallDate-Description-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-InstallDate-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node.
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-InstallDate-Editable-End -->
 
@@ -2519,7 +2560,7 @@ This is a required node.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-InstallDate-DFProperties-End -->
 
@@ -2535,7 +2576,7 @@ This is a required node.
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-InstallLocation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-InstallLocation-Applicability-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-InstallLocation-OmaUri-Begin -->
@@ -2550,6 +2591,7 @@ Install location of the app on the device. Value type is string.
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-InstallLocation-Description-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-InstallLocation-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > Not applicable to XAP files.
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-InstallLocation-Editable-End -->
@@ -2559,7 +2601,7 @@ Install location of the app on the device. Value type is string.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-InstallLocation-DFProperties-End -->
 
@@ -2575,7 +2617,7 @@ Install location of the app on the device. Value type is string.
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsBundle-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsBundle-Applicability-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsBundle-OmaUri-Begin -->
@@ -2598,7 +2640,7 @@ The value is 1 if the package is an app bundle and 0 (zero) for all other cases.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsBundle-DFProperties-End -->
 
@@ -2614,7 +2656,7 @@ The value is 1 if the package is an app bundle and 0 (zero) for all other cases.
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsFramework-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsFramework-Applicability-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsFramework-OmaUri-Begin -->
@@ -2629,6 +2671,7 @@ Whether or not the app is a framework package. Value type is int. The value is 1
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsFramework-Description-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsFramework-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > Not applicable to XAP files.
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsFramework-Editable-End -->
@@ -2638,7 +2681,7 @@ Whether or not the app is a framework package. Value type is int. The value is 1
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsFramework-DFProperties-End -->
 
@@ -2654,7 +2697,7 @@ Whether or not the app is a framework package. Value type is int. The value is 1
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsProvisioned-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsProvisioned-Applicability-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsProvisioned-OmaUri-Begin -->
@@ -2677,7 +2720,7 @@ The value is 0 or 1 that indicates if the app is provisioned on the device. The 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsProvisioned-DFProperties-End -->
 
@@ -2693,7 +2736,7 @@ The value is 0 or 1 that indicates if the app is provisioned on the device. The 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsStub-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsStub-Applicability-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsStub-OmaUri-Begin -->
@@ -2708,6 +2751,7 @@ This node is used to identify whether the package is a stub package. A stub pack
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsStub-Description-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsStub-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 The value is 1 if the package is a stub package and 0 (zero) for all other cases.
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsStub-Editable-End -->
 
@@ -2716,7 +2760,7 @@ The value is 1 if the package is a stub package and 0 (zero) for all other cases
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsStub-DFProperties-End -->
 
@@ -2732,7 +2776,7 @@ The value is 1 if the package is a stub package and 0 (zero) for all other cases
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Name-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Name-Applicability-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Name-OmaUri-Begin -->
@@ -2755,7 +2799,7 @@ Name of the app. Value type is string.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Name-DFProperties-End -->
 
@@ -2771,7 +2815,7 @@ Name of the app. Value type is string.
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-Applicability-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-OmaUri-Begin -->
@@ -2782,10 +2826,11 @@ Name of the app. Value type is string.
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-Description-Begin -->
 <!-- Description-Source-DDF -->
-Provides information about the status of the package. Value type is int. Valid values are: OK (0) - The package is usable. LicenseIssue (1) - The license of the package is not valid. Modified (2) - The package payload was modified by an unknown source. Tampered (4) - The package payload was tampered intentionally. Disabled (8) - The package is not available for use. It can still be serviced.
+Provides information about the status of the package. Value type is int. Valid values are: OK (0) - The package is usable. LicenseIssue (1) - The license of the package isn't valid. Modified (2) - The package payload was modified by an unknown source. Tampered (4) - The package payload was tampered intentionally. Disabled (8) - The package isn't available for use. It can still be serviced.
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-Description-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > Not applicable to XAP files.
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-Editable-End -->
@@ -2795,7 +2840,7 @@ Provides information about the status of the package. Value type is int. Valid v
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-DFProperties-End -->
 
@@ -2811,7 +2856,7 @@ Provides information about the status of the package. Value type is int. Valid v
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Publisher-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Publisher-Applicability-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Publisher-OmaUri-Begin -->
@@ -2834,7 +2879,7 @@ Publisher name of the app. Value type is string.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Publisher-DFProperties-End -->
 
@@ -2850,7 +2895,7 @@ Publisher name of the app. Value type is string.
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-Applicability-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-OmaUri-Begin -->
@@ -2865,6 +2910,7 @@ Specifies whether the package state has changed and requires a reinstallation of
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-Description-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node.
 
 > [!NOTE]
@@ -2876,7 +2922,7 @@ This is a required node.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-DFProperties-End -->
 
@@ -2892,7 +2938,7 @@ This is a required node.
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-ResourceID-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-ResourceID-Applicability-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-ResourceID-OmaUri-Begin -->
@@ -2907,6 +2953,7 @@ Resource ID of the app. This is null for the main app, ~ for a bundle, and conta
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-ResourceID-Description-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-ResourceID-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > Not applicable to XAP files.
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-ResourceID-Editable-End -->
@@ -2916,7 +2963,7 @@ Resource ID of the app. This is null for the main app, ~ for a bundle, and conta
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-ResourceID-DFProperties-End -->
 
@@ -2932,7 +2979,7 @@ Resource ID of the app. This is null for the main app, ~ for a bundle, and conta
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Users-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Users-Applicability-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Users-OmaUri-Begin -->
@@ -2947,6 +2994,7 @@ Registered users of the app and the package install state. If the query is at th
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Users-Description-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Users-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node. Possible values:
 
 - 0 = Not Installed
@@ -2960,7 +3008,7 @@ This is a required node. Possible values:
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Users-DFProperties-End -->
 
@@ -2976,7 +3024,7 @@ This is a required node. Possible values:
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Version-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Version-Applicability-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Version-OmaUri-Begin -->
@@ -2999,7 +3047,7 @@ Version of the app. Value type is string.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Version-DFProperties-End -->
 
@@ -3015,7 +3063,7 @@ Version of the app. Value type is string.
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-DoNotUpdate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-DoNotUpdate-Applicability-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-DoNotUpdate-OmaUri-Begin -->
@@ -3030,6 +3078,7 @@ Specifies whether you want to block a specific app from being updated via auto-u
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-DoNotUpdate-Description-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-DoNotUpdate-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node.
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-DoNotUpdate-Editable-End -->
 
@@ -3038,7 +3087,7 @@ This is a required node.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-DoNotUpdate-DFProperties-End -->
 
@@ -3063,7 +3112,7 @@ This is a required node.
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Applicability-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-OmaUri-Begin -->
@@ -3074,10 +3123,11 @@ This is a required node.
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specify whether on a AMD64 device, across an app update, the architecture of the installed app must not change. For example if you have the x86 flavor of a Windows app installed, with this setting enabled, across an update, the x86 flavor will be installed even when x64 flavor is available.
+Specify whether on a AMD64 device, across an app update, the architecture of the installed app mustn't change. For example if you have the x86 flavor of a Windows app installed, with this setting enabled, across an update, the x86 flavor will be installed even when x64 flavor is available.
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Description-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 Expected Behavior on an AMD64 machine that has x86 flavor of an app installed (Most restrictive wins).
 
 | Applicability Setting | CSP state      | Result               |
@@ -3093,7 +3143,7 @@ Expected Behavior on an AMD64 machine that has x86 flavor of an app installed (M
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-DFProperties-End -->
 
@@ -3118,7 +3168,7 @@ Expected Behavior on an AMD64 machine that has x86 flavor of an app installed (M
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-NonRemovable-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-NonRemovable-Applicability-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-NonRemovable-OmaUri-Begin -->
@@ -3133,6 +3183,7 @@ This setting allows the IT admin to set an app to be nonremovable, or unable to 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-NonRemovable-Description-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-NonRemovable-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 NonRemovable requires admin permission. This setting can only be defined per device, not per user. You can query the setting using AppInventoryQuery or AppInventoryResults.
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-NonRemovable-Editable-End -->
 
@@ -3141,7 +3192,7 @@ NonRemovable requires admin permission. This setting can only be defined per dev
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Get, Replace |
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-NonRemovable-DFProperties-End -->
 
@@ -3150,11 +3201,12 @@ NonRemovable requires admin permission. This setting can only be defined per dev
 
 | Value | Description |
 |:--|:--|
-| 0 | App is not in the nonremovable app policy list. |
+| 0 | App isn't in the nonremovable app policy list. |
 | 1 | App is included in the nonremovable app policy list. |
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-NonRemovable-AllowedValues-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-NonRemovable-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
 **Examples**:
 
 - Add an app to the nonremovable app policy list
@@ -3228,7 +3280,7 @@ NonRemovable requires admin permission. This setting can only be defined per dev
 <!-- Device-AppManagement-nonStore-ReleaseManagement-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-nonStore-ReleaseManagement-Applicability-End -->
 
 <!-- Device-AppManagement-nonStore-ReleaseManagement-OmaUri-Begin -->
@@ -3251,7 +3303,7 @@ Interior node for the managing updates through the Microsoft Store. These settin
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get, Replace |
 <!-- Device-AppManagement-nonStore-ReleaseManagement-DFProperties-End -->
 
@@ -3267,7 +3319,7 @@ Interior node for the managing updates through the Microsoft Store. These settin
 <!-- Device-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-Applicability-End -->
 
 <!-- Device-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-OmaUri-Begin -->
@@ -3278,7 +3330,7 @@ Interior node for the managing updates through the Microsoft Store. These settin
 
 <!-- Device-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-Description-Begin -->
 <!-- Description-Source-DDF -->
-Identifier for the app or set of apps. If there is only one app, it is the PackageFamilyName. If it is for a set of apps, it is the PackageFamilyName of the main app.
+Identifier for the app or set of apps. If there is only one app, it's the PackageFamilyName. If it's for a set of apps, it's the PackageFamilyName of the main app.
 <!-- Device-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-Description-End -->
 
 <!-- Device-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-Editable-Begin -->
@@ -3290,7 +3342,7 @@ Identifier for the app or set of apps. If there is only one app, it is the Packa
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get, Replace |
 | Dynamic Node Naming | UniqueName: If there is only one app, the name is the PackageFamilyName. If it is for a set of apps, the name is the PackageFamilyName of the main app. |
 <!-- Device-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-DFProperties-End -->
@@ -3307,7 +3359,7 @@ Identifier for the app or set of apps. If there is only one app, it is the Packa
 <!-- Device-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-ChannelId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-ChannelId-Applicability-End -->
 
 <!-- Device-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-ChannelId-OmaUri-Begin -->
@@ -3330,7 +3382,7 @@ Specifies the app channel ID.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-ChannelId-DFProperties-End -->
 
@@ -3346,7 +3398,7 @@ Specifies the app channel ID.
 <!-- Device-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-Applicability-End -->
 
 <!-- Device-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-OmaUri-Begin -->
@@ -3369,7 +3421,7 @@ Interior node used to specify the effective app release to use when multiple use
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-DFProperties-End -->
 
@@ -3385,7 +3437,7 @@ Interior node used to specify the effective app release to use when multiple use
 <!-- Device-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ChannelId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ChannelId-Applicability-End -->
 
 <!-- Device-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ChannelId-OmaUri-Begin -->
@@ -3408,7 +3460,7 @@ Returns the last user channel ID on the device.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ChannelId-DFProperties-End -->
 
@@ -3424,7 +3476,7 @@ Returns the last user channel ID on the device.
 <!-- Device-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ReleaseManagementId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ReleaseManagementId-Applicability-End -->
 
 <!-- Device-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ReleaseManagementId-OmaUri-Begin -->
@@ -3447,7 +3499,7 @@ Returns the last user release ID on the device.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ReleaseManagementId-DFProperties-End -->
 
@@ -3463,7 +3515,7 @@ Returns the last user release ID on the device.
 <!-- Device-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-ReleaseManagementId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-ReleaseManagementId-Applicability-End -->
 
 <!-- Device-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-ReleaseManagementId-OmaUri-Begin -->
@@ -3486,7 +3538,7 @@ The IT admin can specify a release ID to indicate a specific release that they w
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-ReleaseManagementId-DFProperties-End -->
 
@@ -3502,7 +3554,7 @@ The IT admin can specify a release ID to indicate a specific release that they w
 <!-- Device-AppManagement-ResetPackage-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-AppManagement-ResetPackage-Applicability-End -->
 
 <!-- Device-AppManagement-ResetPackage-OmaUri-Begin -->
@@ -3525,7 +3577,7 @@ Used to restore the Windows app to its initial configuration.
 
 | Property name | Property value |
 |:--|:--|
-| Format | xml |
+| Format | `xml` |
 | Access Type | Exec, Get |
 <!-- Device-AppManagement-ResetPackage-DFProperties-End -->
 
@@ -3541,7 +3593,7 @@ Used to restore the Windows app to its initial configuration.
 <!-- Device-AppManagement-System-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-System-Applicability-End -->
 
 <!-- Device-AppManagement-System-OmaUri-Begin -->
@@ -3555,6 +3607,7 @@ Used to restore the Windows app to its initial configuration.
 <!-- Device-AppManagement-System-Description-End -->
 
 <!-- Device-AppManagement-System-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 Reports apps installed as part of the operating system.
 <!-- Device-AppManagement-System-Editable-End -->
 
@@ -3563,7 +3616,7 @@ Reports apps installed as part of the operating system.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 <!-- Device-AppManagement-System-DFProperties-End -->
 
@@ -3579,7 +3632,7 @@ Reports apps installed as part of the operating system.
 <!-- Device-AppManagement-System-{PackageFamilyName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-System-{PackageFamilyName}-Applicability-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-OmaUri-Begin -->
@@ -3594,6 +3647,7 @@ Package family name (PFN) of the app. There is one for each PFN on the device wh
 <!-- Device-AppManagement-System-{PackageFamilyName}-Description-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > XAP files use a product ID in place of PackageFamilyName. Here's an example of XAP product ID (including the braces), {12345678-9012-3456-7890-123456789012}.
 <!-- Device-AppManagement-System-{PackageFamilyName}-Editable-End -->
@@ -3603,7 +3657,7 @@ Package family name (PFN) of the app. There is one for each PFN on the device wh
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 | Dynamic Node Naming | ClientInventory |
 <!-- Device-AppManagement-System-{PackageFamilyName}-DFProperties-End -->
@@ -3620,7 +3674,7 @@ Package family name (PFN) of the app. There is one for each PFN on the device wh
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Applicability-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-OmaUri-Begin -->
@@ -3643,7 +3697,7 @@ Full name of the package installed.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 | Dynamic Node Naming | ClientInventory |
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-DFProperties-End -->
@@ -3660,7 +3714,7 @@ Full name of the package installed.
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Architecture-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Architecture-Applicability-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Architecture-OmaUri-Begin -->
@@ -3675,6 +3729,7 @@ Architecture of installed package. Value type is string.
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Architecture-Description-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Architecture-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > Not applicable to XAP files.
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Architecture-Editable-End -->
@@ -3684,7 +3739,7 @@ Architecture of installed package. Value type is string.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Architecture-DFProperties-End -->
 
@@ -3700,7 +3755,7 @@ Architecture of installed package. Value type is string.
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-InstallDate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-InstallDate-Applicability-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-InstallDate-OmaUri-Begin -->
@@ -3715,6 +3770,7 @@ Date the app was installed. Value type is string.
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-InstallDate-Description-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-InstallDate-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node.
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-InstallDate-Editable-End -->
 
@@ -3723,7 +3779,7 @@ This is a required node.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-InstallDate-DFProperties-End -->
 
@@ -3739,7 +3795,7 @@ This is a required node.
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-InstallLocation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-InstallLocation-Applicability-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-InstallLocation-OmaUri-Begin -->
@@ -3754,6 +3810,7 @@ Install location of the app on the device. Value type is string.
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-InstallLocation-Description-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-InstallLocation-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > Not applicable to XAP files.
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-InstallLocation-Editable-End -->
@@ -3763,7 +3820,7 @@ Install location of the app on the device. Value type is string.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-InstallLocation-DFProperties-End -->
 
@@ -3779,7 +3836,7 @@ Install location of the app on the device. Value type is string.
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsBundle-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsBundle-Applicability-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsBundle-OmaUri-Begin -->
@@ -3802,7 +3859,7 @@ The value is 1 if the package is an app bundle and 0 (zero) for all other cases.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsBundle-DFProperties-End -->
 
@@ -3818,7 +3875,7 @@ The value is 1 if the package is an app bundle and 0 (zero) for all other cases.
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsFramework-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsFramework-Applicability-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsFramework-OmaUri-Begin -->
@@ -3833,6 +3890,7 @@ Whether or not the app is a framework package. Value type is int. The value is 1
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsFramework-Description-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsFramework-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > Not applicable to XAP files.
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsFramework-Editable-End -->
@@ -3842,7 +3900,7 @@ Whether or not the app is a framework package. Value type is int. The value is 1
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsFramework-DFProperties-End -->
 
@@ -3858,7 +3916,7 @@ Whether or not the app is a framework package. Value type is int. The value is 1
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsProvisioned-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsProvisioned-Applicability-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsProvisioned-OmaUri-Begin -->
@@ -3881,7 +3939,7 @@ The value is 0 or 1 that indicates if the app is provisioned on the device. The 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsProvisioned-DFProperties-End -->
 
@@ -3897,7 +3955,7 @@ The value is 0 or 1 that indicates if the app is provisioned on the device. The 
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsStub-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsStub-Applicability-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsStub-OmaUri-Begin -->
@@ -3912,6 +3970,7 @@ This node is used to identify whether the package is a stub package. A stub pack
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsStub-Description-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsStub-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 The value is 1 if the package is a stub package and 0 (zero) for all other cases.
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsStub-Editable-End -->
 
@@ -3920,7 +3979,7 @@ The value is 1 if the package is a stub package and 0 (zero) for all other cases
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsStub-DFProperties-End -->
 
@@ -3936,7 +3995,7 @@ The value is 1 if the package is a stub package and 0 (zero) for all other cases
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Name-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Name-Applicability-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Name-OmaUri-Begin -->
@@ -3959,7 +4018,7 @@ Name of the app. Value type is string.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Name-DFProperties-End -->
 
@@ -3975,7 +4034,7 @@ Name of the app. Value type is string.
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-PackageStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-PackageStatus-Applicability-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-PackageStatus-OmaUri-Begin -->
@@ -3986,10 +4045,11 @@ Name of the app. Value type is string.
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-PackageStatus-Description-Begin -->
 <!-- Description-Source-DDF -->
-Provides information about the status of the package. Value type is int. Valid values are: OK (0) - The package is usable. LicenseIssue (1) - The license of the package is not valid. Modified (2) - The package payload was modified by an unknown source. Tampered (4) - The package payload was tampered intentionally. Disabled (8) - The package is not available for use. It can still be serviced.
+Provides information about the status of the package. Value type is int. Valid values are: OK (0) - The package is usable. LicenseIssue (1) - The license of the package isn't valid. Modified (2) - The package payload was modified by an unknown source. Tampered (4) - The package payload was tampered intentionally. Disabled (8) - The package isn't available for use. It can still be serviced.
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-PackageStatus-Description-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-PackageStatus-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > Not applicable to XAP files.
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-PackageStatus-Editable-End -->
@@ -3999,7 +4059,7 @@ Provides information about the status of the package. Value type is int. Valid v
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-PackageStatus-DFProperties-End -->
 
@@ -4015,7 +4075,7 @@ Provides information about the status of the package. Value type is int. Valid v
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Publisher-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Publisher-Applicability-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Publisher-OmaUri-Begin -->
@@ -4038,7 +4098,7 @@ Publisher name of the app. Value type is string.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Publisher-DFProperties-End -->
 
@@ -4054,7 +4114,7 @@ Publisher name of the app. Value type is string.
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-Applicability-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-OmaUri-Begin -->
@@ -4069,6 +4129,7 @@ Specifies whether the package state has changed and requires a reinstallation of
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-Description-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node.
 
 > [!NOTE]
@@ -4080,7 +4141,7 @@ This is a required node.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-DFProperties-End -->
 
@@ -4096,7 +4157,7 @@ This is a required node.
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-ResourceID-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-ResourceID-Applicability-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-ResourceID-OmaUri-Begin -->
@@ -4111,6 +4172,7 @@ Resource ID of the app. This is null for the main app, ~ for a bundle, and conta
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-ResourceID-Description-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-ResourceID-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > Not applicable to XAP files.
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-ResourceID-Editable-End -->
@@ -4120,7 +4182,7 @@ Resource ID of the app. This is null for the main app, ~ for a bundle, and conta
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-ResourceID-DFProperties-End -->
 
@@ -4136,7 +4198,7 @@ Resource ID of the app. This is null for the main app, ~ for a bundle, and conta
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Users-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Users-Applicability-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Users-OmaUri-Begin -->
@@ -4151,6 +4213,7 @@ Registered users of the app and the package install state. If the query is at th
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Users-Description-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Users-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node.
 
 - 0 = Not Installed
@@ -4164,7 +4227,7 @@ This is a required node.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Users-DFProperties-End -->
 
@@ -4180,7 +4243,7 @@ This is a required node.
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Version-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Version-Applicability-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Version-OmaUri-Begin -->
@@ -4203,7 +4266,7 @@ Version of the app. Value type is string.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Version-DFProperties-End -->
 
@@ -4219,7 +4282,7 @@ Version of the app. Value type is string.
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-Applicability-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-OmaUri-Begin -->
@@ -4242,7 +4305,7 @@ AppUpdateSettings nodes to support the auto-update and auto-repair feature for a
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-DFProperties-End -->
 
@@ -4258,7 +4321,7 @@ AppUpdateSettings nodes to support the auto-update and auto-repair feature for a
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoRepair-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoRepair-Applicability-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoRepair-OmaUri-Begin -->
@@ -4281,7 +4344,7 @@ AutoRepair node to support auto-repair feature for a specific package.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoRepair-DFProperties-End -->
 
@@ -4297,7 +4360,7 @@ AutoRepair node to support auto-repair feature for a specific package.
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoRepair-PackageSource-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoRepair-PackageSource-Applicability-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoRepair-PackageSource-OmaUri-Begin -->
@@ -4320,7 +4383,7 @@ PackageSource node that points the update location for a specific package.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get, Replace |
 | Allowed Values | Regular Expression: `^(([^;]+(?i)(\.appx|\.eappx|\.appxbundle|\.eappxbundle|\.msix|\.emsix|\.msixbundle|\.emsixbundle)([;]|$)){0,10}|([^;]+(?i)(\.appinstaller)([;]|$)){0,10})$` |
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoRepair-PackageSource-DFProperties-End -->
@@ -4337,7 +4400,7 @@ PackageSource node that points the update location for a specific package.
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoUpdateSettings-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoUpdateSettings-Applicability-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoUpdateSettings-OmaUri-Begin -->
@@ -4360,7 +4423,7 @@ AutoUpdateSettings nodes to support the auto-updates for a specific package.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoUpdateSettings-DFProperties-End -->
 
@@ -4376,7 +4439,7 @@ AutoUpdateSettings nodes to support the auto-updates for a specific package.
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoUpdateSettings-AutomaticBackgroundTask-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoUpdateSettings-AutomaticBackgroundTask-Applicability-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoUpdateSettings-AutomaticBackgroundTask-OmaUri-Begin -->
@@ -4399,7 +4462,7 @@ Specifies whether AutomaticBackgroundTask is enabled/disabled for a specific pac
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get, Replace |
 | Default Value  | False |
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoUpdateSettings-AutomaticBackgroundTask-DFProperties-End -->
@@ -4425,7 +4488,7 @@ Specifies whether AutomaticBackgroundTask is enabled/disabled for a specific pac
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoUpdateSettings-Disable-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoUpdateSettings-Disable-Applicability-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoUpdateSettings-Disable-OmaUri-Begin -->
@@ -4448,7 +4511,7 @@ Specifies whether the auto-update settings is enabled/disabled for a specific pa
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get, Replace |
 | Default Value  | False |
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoUpdateSettings-Disable-DFProperties-End -->
@@ -4474,7 +4537,7 @@ Specifies whether the auto-update settings is enabled/disabled for a specific pa
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoUpdateSettings-ForceUpdateFromAnyVersion-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoUpdateSettings-ForceUpdateFromAnyVersion-Applicability-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoUpdateSettings-ForceUpdateFromAnyVersion-OmaUri-Begin -->
@@ -4497,7 +4560,7 @@ Specifies whether the auto-update setting ForceUpdateFromAnyVersion is enabled/d
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get, Replace |
 | Default Value  | False |
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoUpdateSettings-ForceUpdateFromAnyVersion-DFProperties-End -->
@@ -4523,7 +4586,7 @@ Specifies whether the auto-update setting ForceUpdateFromAnyVersion is enabled/d
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoUpdateSettings-HoursBetweenUpdateChecks-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoUpdateSettings-HoursBetweenUpdateChecks-Applicability-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoUpdateSettings-HoursBetweenUpdateChecks-OmaUri-Begin -->
@@ -4546,7 +4609,7 @@ Specifies HoursBetweenUpdateChecks for a specific package.
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get, Replace |
 | Allowed Values | Range: `[8-10000]` |
 | Default Value  | 8 |
@@ -4564,7 +4627,7 @@ Specifies HoursBetweenUpdateChecks for a specific package.
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoUpdateSettings-OnLaunchUpdateCheck-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoUpdateSettings-OnLaunchUpdateCheck-Applicability-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoUpdateSettings-OnLaunchUpdateCheck-OmaUri-Begin -->
@@ -4587,7 +4650,7 @@ Specifies whether OnLaunchUpdateCheck is enabled/disabled for a specific package
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get, Replace |
 | Default Value  | False |
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoUpdateSettings-OnLaunchUpdateCheck-DFProperties-End -->
@@ -4613,7 +4676,7 @@ Specifies whether OnLaunchUpdateCheck is enabled/disabled for a specific package
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoUpdateSettings-PackageSource-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoUpdateSettings-PackageSource-Applicability-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoUpdateSettings-PackageSource-OmaUri-Begin -->
@@ -4636,7 +4699,7 @@ PackageSource node that points the update location for a specific package.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get, Replace |
 | Allowed Values | Regular Expression: `^(([^;]+(?i)(\.appinstaller)([;]|$)){1,11})$` |
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoUpdateSettings-PackageSource-DFProperties-End -->
@@ -4653,7 +4716,7 @@ PackageSource node that points the update location for a specific package.
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoUpdateSettings-ShowPrompt-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoUpdateSettings-ShowPrompt-Applicability-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoUpdateSettings-ShowPrompt-OmaUri-Begin -->
@@ -4676,7 +4739,7 @@ Specifies whether the auto-update setting ShowPrompt is enabled/disabled for a s
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get, Replace |
 | Default Value  | False |
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoUpdateSettings-ShowPrompt-DFProperties-End -->
@@ -4702,7 +4765,7 @@ Specifies whether the auto-update setting ShowPrompt is enabled/disabled for a s
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoUpdateSettings-UpdateBlocksActivation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoUpdateSettings-UpdateBlocksActivation-Applicability-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoUpdateSettings-UpdateBlocksActivation-OmaUri-Begin -->
@@ -4725,7 +4788,7 @@ Specifies whether the auto-update setting UpdateBlocksActivation is enabled/disa
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get, Replace |
 | Default Value  | False |
 <!-- Device-AppManagement-System-{PackageFamilyName}-AppUpdateSettings-AutoUpdateSettings-UpdateBlocksActivation-DFProperties-End -->
@@ -4751,7 +4814,7 @@ Specifies whether the auto-update setting UpdateBlocksActivation is enabled/disa
 <!-- Device-AppManagement-System-{PackageFamilyName}-DoNotUpdate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-System-{PackageFamilyName}-DoNotUpdate-Applicability-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-DoNotUpdate-OmaUri-Begin -->
@@ -4766,6 +4829,7 @@ Specifies whether you want to block a specific app from being updated via auto-u
 <!-- Device-AppManagement-System-{PackageFamilyName}-DoNotUpdate-Description-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-DoNotUpdate-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node.
 <!-- Device-AppManagement-System-{PackageFamilyName}-DoNotUpdate-Editable-End -->
 
@@ -4774,7 +4838,7 @@ This is a required node.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-AppManagement-System-{PackageFamilyName}-DoNotUpdate-DFProperties-End -->
 
@@ -4799,7 +4863,7 @@ This is a required node.
 <!-- Device-AppManagement-System-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- Device-AppManagement-System-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Applicability-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-OmaUri-Begin -->
@@ -4810,10 +4874,11 @@ This is a required node.
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specify whether on a AMD64 device, across an app update, the architecture of the installed app must not change. For example if you have the x86 flavor of a Windows app installed, with this setting enabled, across an update, the x86 flavor will be installed even when x64 flavor is available.
+Specify whether on a AMD64 device, across an app update, the architecture of the installed app mustn't change. For example if you have the x86 flavor of a Windows app installed, with this setting enabled, across an update, the x86 flavor will be installed even when x64 flavor is available.
 <!-- Device-AppManagement-System-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Description-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 Expected Behavior on an AMD64 machine that has x86 flavor of an app installed (Most restrictive wins).
 
 | Applicability Setting | CSP state      | Result               |
@@ -4829,7 +4894,7 @@ Expected Behavior on an AMD64 machine that has x86 flavor of an app installed (M
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-AppManagement-System-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-DFProperties-End -->
 
@@ -4854,7 +4919,7 @@ Expected Behavior on an AMD64 machine that has x86 flavor of an app installed (M
 <!-- Device-AppManagement-System-{PackageFamilyName}-NonRemovable-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-AppManagement-System-{PackageFamilyName}-NonRemovable-Applicability-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-NonRemovable-OmaUri-Begin -->
@@ -4869,6 +4934,7 @@ This setting allows the IT admin to set an app to be nonremovable, or unable to 
 <!-- Device-AppManagement-System-{PackageFamilyName}-NonRemovable-Description-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-NonRemovable-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 NonRemovable requires admin permission. This setting can only be defined per device, not per user. You can query the setting using AppInventoryQuery or AppInventoryResults.
 <!-- Device-AppManagement-System-{PackageFamilyName}-NonRemovable-Editable-End -->
 
@@ -4877,7 +4943,7 @@ NonRemovable requires admin permission. This setting can only be defined per dev
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Get, Replace |
 <!-- Device-AppManagement-System-{PackageFamilyName}-NonRemovable-DFProperties-End -->
 
@@ -4886,11 +4952,12 @@ NonRemovable requires admin permission. This setting can only be defined per dev
 
 | Value | Description |
 |:--|:--|
-| 0 | App is not in the nonremovable app policy list. |
+| 0 | App isn't in the nonremovable app policy list. |
 | 1 | App is included in the nonremovable app policy list. |
 <!-- Device-AppManagement-System-{PackageFamilyName}-NonRemovable-AllowedValues-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-NonRemovable-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
 **Examples**:
 
 - Add an app to the nonremovable app policy list
@@ -4964,7 +5031,7 @@ NonRemovable requires admin permission. This setting can only be defined per dev
 <!-- Device-AppManagement-System-ReleaseManagement-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-System-ReleaseManagement-Applicability-End -->
 
 <!-- Device-AppManagement-System-ReleaseManagement-OmaUri-Begin -->
@@ -4987,7 +5054,7 @@ Interior node for the managing updates through the Microsoft Store. These settin
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get, Replace |
 <!-- Device-AppManagement-System-ReleaseManagement-DFProperties-End -->
 
@@ -5003,7 +5070,7 @@ Interior node for the managing updates through the Microsoft Store. These settin
 <!-- Device-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-Applicability-End -->
 
 <!-- Device-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-OmaUri-Begin -->
@@ -5014,7 +5081,7 @@ Interior node for the managing updates through the Microsoft Store. These settin
 
 <!-- Device-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-Description-Begin -->
 <!-- Description-Source-DDF -->
-Identifier for the app or set of apps. If there is only one app, it is the PackageFamilyName. If it is for a set of apps, it is the PackageFamilyName of the main app.
+Identifier for the app or set of apps. If there is only one app, it's the PackageFamilyName. If it's for a set of apps, it's the PackageFamilyName of the main app.
 <!-- Device-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-Description-End -->
 
 <!-- Device-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-Editable-Begin -->
@@ -5026,7 +5093,7 @@ Identifier for the app or set of apps. If there is only one app, it is the Packa
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get, Replace |
 | Dynamic Node Naming | UniqueName: If there is only one app, the name is the PackageFamilyName. If it is for a set of apps, the name is the PackageFamilyName of the main app. |
 <!-- Device-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-DFProperties-End -->
@@ -5043,7 +5110,7 @@ Identifier for the app or set of apps. If there is only one app, it is the Packa
 <!-- Device-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-ChannelId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-ChannelId-Applicability-End -->
 
 <!-- Device-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-ChannelId-OmaUri-Begin -->
@@ -5066,7 +5133,7 @@ Specifies the app channel ID.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-ChannelId-DFProperties-End -->
 
@@ -5082,7 +5149,7 @@ Specifies the app channel ID.
 <!-- Device-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-Applicability-End -->
 
 <!-- Device-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-OmaUri-Begin -->
@@ -5105,7 +5172,7 @@ Interior node used to specify the effective app release to use when multiple use
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-DFProperties-End -->
 
@@ -5121,7 +5188,7 @@ Interior node used to specify the effective app release to use when multiple use
 <!-- Device-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ChannelId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ChannelId-Applicability-End -->
 
 <!-- Device-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ChannelId-OmaUri-Begin -->
@@ -5144,7 +5211,7 @@ Returns the last user channel ID on the device.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ChannelId-DFProperties-End -->
 
@@ -5160,7 +5227,7 @@ Returns the last user channel ID on the device.
 <!-- Device-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ReleaseManagementId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ReleaseManagementId-Applicability-End -->
 
 <!-- Device-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ReleaseManagementId-OmaUri-Begin -->
@@ -5183,7 +5250,7 @@ Returns the last user release ID on the device.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ReleaseManagementId-DFProperties-End -->
 
@@ -5199,7 +5266,7 @@ Returns the last user release ID on the device.
 <!-- Device-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-ReleaseManagementId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-ReleaseManagementId-Applicability-End -->
 
 <!-- Device-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-ReleaseManagementId-OmaUri-Begin -->
@@ -5222,7 +5289,7 @@ The IT admin can specify a release ID to indicate a specific release that they w
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-ReleaseManagementId-DFProperties-End -->
 
@@ -5238,7 +5305,7 @@ The IT admin can specify a release ID to indicate a specific release that they w
 <!-- Device-AppManagement-UpdateScan-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-AppManagement-UpdateScan-Applicability-End -->
 
 <!-- Device-AppManagement-UpdateScan-OmaUri-Begin -->
@@ -5253,6 +5320,7 @@ Used to start the Windows Update scan.
 <!-- Device-AppManagement-UpdateScan-Description-End -->
 
 <!-- Device-AppManagement-UpdateScan-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node.
 <!-- Device-AppManagement-UpdateScan-Editable-End -->
 
@@ -5261,7 +5329,7 @@ This is a required node.
 
 | Property name | Property value |
 |:--|:--|
-| Format | null |
+| Format | `null` |
 | Access Type | Exec |
 <!-- Device-AppManagement-UpdateScan-DFProperties-End -->
 
@@ -5277,7 +5345,7 @@ This is a required node.
 <!-- User-AppInstallation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppInstallation-Applicability-End -->
 
 <!-- User-AppInstallation-OmaUri-Begin -->
@@ -5300,7 +5368,7 @@ Used to perform app installation.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- User-AppInstallation-DFProperties-End -->
 
@@ -5316,7 +5384,7 @@ Used to perform app installation.
 <!-- User-AppInstallation-{PackageFamilyName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppInstallation-{PackageFamilyName}-Applicability-End -->
 
 <!-- User-AppInstallation-{PackageFamilyName}-OmaUri-Begin -->
@@ -5331,6 +5399,7 @@ Package family name (PFN) of the app. There is one for each PFN on the device wh
 <!-- User-AppInstallation-{PackageFamilyName}-Description-End -->
 
 <!-- User-AppInstallation-{PackageFamilyName}-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > XAP files use a product ID in place of PackageFamilyName. Here's an example of XAP product ID (including the braces), {12345678-9012-3456-7890-123456789012}.
 <!-- User-AppInstallation-{PackageFamilyName}-Editable-End -->
@@ -5340,12 +5409,13 @@ Package family name (PFN) of the app. There is one for each PFN on the device wh
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get, Replace |
 | Dynamic Node Naming | UniqueName: Package family name (PFN) of the app. |
 <!-- User-AppInstallation-{PackageFamilyName}-DFProperties-End -->
 
 <!-- User-AppInstallation-{PackageFamilyName}-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
 **Example**:
 
 Here's an example for uninstalling an app:
@@ -5376,7 +5446,7 @@ Here's an example for uninstalling an app:
 <!-- User-AppInstallation-{PackageFamilyName}-HostedInstall-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppInstallation-{PackageFamilyName}-HostedInstall-Applicability-End -->
 
 <!-- User-AppInstallation-{PackageFamilyName}-HostedInstall-OmaUri-Begin -->
@@ -5391,6 +5461,7 @@ Command to perform an install of an app package from a hosted location (this can
 <!-- User-AppInstallation-{PackageFamilyName}-HostedInstall-Description-End -->
 
 <!-- User-AppInstallation-{PackageFamilyName}-HostedInstall-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node. The following list shows the supported deployment options:
 
 - ForceApplicationShutdown
@@ -5410,7 +5481,7 @@ This is a required node. The following list shows the supported deployment optio
 
 | Property name | Property value |
 |:--|:--|
-| Format | xml |
+| Format | `xml` |
 | Access Type | Add, Delete, Exec, Get |
 <!-- User-AppInstallation-{PackageFamilyName}-HostedInstall-DFProperties-End -->
 
@@ -5426,7 +5497,7 @@ This is a required node. The following list shows the supported deployment optio
 <!-- User-AppInstallation-{PackageFamilyName}-LastError-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppInstallation-{PackageFamilyName}-LastError-Applicability-End -->
 
 <!-- User-AppInstallation-{PackageFamilyName}-LastError-OmaUri-Begin -->
@@ -5441,6 +5512,7 @@ Last error relating to the app installation.
 <!-- User-AppInstallation-{PackageFamilyName}-LastError-Description-End -->
 
 <!-- User-AppInstallation-{PackageFamilyName}-LastError-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > This element isn't present after the app is installed.
 <!-- User-AppInstallation-{PackageFamilyName}-LastError-Editable-End -->
@@ -5450,7 +5522,7 @@ Last error relating to the app installation.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- User-AppInstallation-{PackageFamilyName}-LastError-DFProperties-End -->
 
@@ -5466,7 +5538,7 @@ Last error relating to the app installation.
 <!-- User-AppInstallation-{PackageFamilyName}-LastErrorDesc-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppInstallation-{PackageFamilyName}-LastErrorDesc-Applicability-End -->
 
 <!-- User-AppInstallation-{PackageFamilyName}-LastErrorDesc-OmaUri-Begin -->
@@ -5481,6 +5553,7 @@ Description of last error relating to the app installation.
 <!-- User-AppInstallation-{PackageFamilyName}-LastErrorDesc-Description-End -->
 
 <!-- User-AppInstallation-{PackageFamilyName}-LastErrorDesc-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > This element isn't present after the app is installed.
 <!-- User-AppInstallation-{PackageFamilyName}-LastErrorDesc-Editable-End -->
@@ -5490,7 +5563,7 @@ Description of last error relating to the app installation.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- User-AppInstallation-{PackageFamilyName}-LastErrorDesc-DFProperties-End -->
 
@@ -5506,7 +5579,7 @@ Description of last error relating to the app installation.
 <!-- User-AppInstallation-{PackageFamilyName}-ProgressStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppInstallation-{PackageFamilyName}-ProgressStatus-Applicability-End -->
 
 <!-- User-AppInstallation-{PackageFamilyName}-ProgressStatus-OmaUri-Begin -->
@@ -5517,10 +5590,11 @@ Description of last error relating to the app installation.
 
 <!-- User-AppInstallation-{PackageFamilyName}-ProgressStatus-Description-Begin -->
 <!-- Description-Source-DDF -->
-An integer the indicates the progress of the app installation. For https locations, this indicates the download progress. ProgressStatus is not available for provisioning and it is only for user-based installations. In provisioning, the value is always 0 (zero).
+An integer that indicates the progress of the app installation. For https locations, this indicates the download progress. ProgressStatus isn't available for provisioning and it's only for user-based installations. In provisioning, the value is always 0 (zero).
 <!-- User-AppInstallation-{PackageFamilyName}-ProgressStatus-Description-End -->
 
 <!-- User-AppInstallation-{PackageFamilyName}-ProgressStatus-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > This element isn't present after the app is installed.
 <!-- User-AppInstallation-{PackageFamilyName}-ProgressStatus-Editable-End -->
@@ -5530,7 +5604,7 @@ An integer the indicates the progress of the app installation. For https locatio
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- User-AppInstallation-{PackageFamilyName}-ProgressStatus-DFProperties-End -->
 
@@ -5546,7 +5620,7 @@ An integer the indicates the progress of the app installation. For https locatio
 <!-- User-AppInstallation-{PackageFamilyName}-Status-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppInstallation-{PackageFamilyName}-Status-Applicability-End -->
 
 <!-- User-AppInstallation-{PackageFamilyName}-Status-OmaUri-Begin -->
@@ -5557,10 +5631,11 @@ An integer the indicates the progress of the app installation. For https locatio
 
 <!-- User-AppInstallation-{PackageFamilyName}-Status-Description-Begin -->
 <!-- Description-Source-DDF -->
-Status of app installation. The following values are returned: NOT_INSTALLED (0) - The node was added, but the execution has not completed. INSTALLING (1) - Execution has started, but the deployment has not completed. If the deployment completes regardless of success, this value is updated. FAILED (2) - Installation failed. The details of the error can be found under LastError and LastErrorDescription. INSTALLED (3) - Once an install is successful this node is cleaned up, however in the event the clean up action has not completed, this state may briefly appear.
+Status of app installation. The following values are returned: NOT_INSTALLED (0) - The node was added, but the execution hasn't completed. INSTALLING (1) - Execution has started, but the deployment hasn't completed. If the deployment completes regardless of success, this value is updated. FAILED (2) - Installation failed. The details of the error can be found under LastError and LastErrorDescription. INSTALLED (3) - Once an install is successful this node is cleaned up, however in the event the clean up action hasn't completed, this state may briefly appear.
 <!-- User-AppInstallation-{PackageFamilyName}-Status-Description-End -->
 
 <!-- User-AppInstallation-{PackageFamilyName}-Status-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > This element isn't present after the app is installed.
 <!-- User-AppInstallation-{PackageFamilyName}-Status-Editable-End -->
@@ -5570,7 +5645,7 @@ Status of app installation. The following values are returned: NOT_INSTALLED (0)
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- User-AppInstallation-{PackageFamilyName}-Status-DFProperties-End -->
 
@@ -5586,7 +5661,7 @@ Status of app installation. The following values are returned: NOT_INSTALLED (0)
 <!-- User-AppInstallation-{PackageFamilyName}-StoreInstall-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppInstallation-{PackageFamilyName}-StoreInstall-Applicability-End -->
 
 <!-- User-AppInstallation-{PackageFamilyName}-StoreInstall-OmaUri-Begin -->
@@ -5609,7 +5684,7 @@ Command to perform an install of an app and a license from the Microsoft Store.
 
 | Property name | Property value |
 |:--|:--|
-| Format | xml |
+| Format | `xml` |
 | Access Type | Add, Delete, Exec, Get |
 <!-- User-AppInstallation-{PackageFamilyName}-StoreInstall-DFProperties-End -->
 
@@ -5625,7 +5700,7 @@ Command to perform an install of an app and a license from the Microsoft Store.
 <!-- User-AppLicenses-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppLicenses-Applicability-End -->
 
 <!-- User-AppLicenses-OmaUri-Begin -->
@@ -5648,7 +5723,7 @@ Used to manage licenses for app scenarios.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- User-AppLicenses-DFProperties-End -->
 
@@ -5664,7 +5739,7 @@ Used to manage licenses for app scenarios.
 <!-- User-AppLicenses-StoreLicenses-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppLicenses-StoreLicenses-Applicability-End -->
 
 <!-- User-AppLicenses-StoreLicenses-OmaUri-Begin -->
@@ -5687,7 +5762,7 @@ Used to manage licenses for store apps.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- User-AppLicenses-StoreLicenses-DFProperties-End -->
 
@@ -5703,7 +5778,7 @@ Used to manage licenses for store apps.
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-Applicability-End -->
 
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-OmaUri-Begin -->
@@ -5718,6 +5793,7 @@ License ID for a store installed app. The license ID is generally the PFN of the
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-Description-End -->
 
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is an optional node.
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-Editable-End -->
 
@@ -5726,7 +5802,7 @@ This is an optional node.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 | Dynamic Node Naming | UniqueName: License ID for a store installed app. The license ID is generally the PFN of the app. |
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-DFProperties-End -->
@@ -5743,7 +5819,7 @@ This is an optional node.
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-AddLicense-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-AddLicense-Applicability-End -->
 
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-AddLicense-OmaUri-Begin -->
@@ -5758,6 +5834,7 @@ Command to add license.
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-AddLicense-Description-End -->
 
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-AddLicense-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node.
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-AddLicense-Editable-End -->
 
@@ -5766,7 +5843,7 @@ This is a required node.
 
 | Property name | Property value |
 |:--|:--|
-| Format | xml |
+| Format | `xml` |
 | Access Type | Exec |
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-AddLicense-DFProperties-End -->
 
@@ -5782,7 +5859,7 @@ This is a required node.
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-GetLicenseFromStore-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-GetLicenseFromStore-Applicability-End -->
 
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-GetLicenseFromStore-OmaUri-Begin -->
@@ -5797,6 +5874,7 @@ Command to get license from the store.
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-GetLicenseFromStore-Description-End -->
 
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-GetLicenseFromStore-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node.
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-GetLicenseFromStore-Editable-End -->
 
@@ -5805,7 +5883,7 @@ This is a required node.
 
 | Property name | Property value |
 |:--|:--|
-| Format | xml |
+| Format | `xml` |
 | Access Type | Exec |
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-GetLicenseFromStore-DFProperties-End -->
 
@@ -5821,7 +5899,7 @@ This is a required node.
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-LicenseCategory-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-LicenseCategory-Applicability-End -->
 
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-LicenseCategory-OmaUri-Begin -->
@@ -5832,7 +5910,7 @@ This is a required node.
 
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-LicenseCategory-Description-Begin -->
 <!-- Description-Source-DDF -->
-Category of license that is used to classify various license sources. Valid value: Unknown - unknown license category. Retail - license sold through retail channels, typically from the Microsoft Store. Enterprise - license sold through the enterprise sales channel, typically from the Store for Business. OEM - license issued to an OEM. Developer - developer license, typically installed during the app development or side-loading scenarios.
+Category of license that's used to classify various license sources. Valid value: Unknown - unknown license category. Retail - license sold through retail channels, typically from the Microsoft Store. Enterprise - license sold through the enterprise sales channel, typically from the Store for Business. OEM - license issued to an OEM. Developer - developer license, typically installed during the app development or side-loading scenarios.
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-LicenseCategory-Description-End -->
 
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-LicenseCategory-Editable-Begin -->
@@ -5844,7 +5922,7 @@ Category of license that is used to classify various license sources. Valid valu
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-LicenseCategory-DFProperties-End -->
 
@@ -5860,7 +5938,7 @@ Category of license that is used to classify various license sources. Valid valu
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-LicenseUsage-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-LicenseUsage-Applicability-End -->
 
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-LicenseUsage-OmaUri-Begin -->
@@ -5883,7 +5961,7 @@ Indicates the allowed usage for the license. Valid values: Unknown - usage is un
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-LicenseUsage-DFProperties-End -->
 
@@ -5899,7 +5977,7 @@ Indicates the allowed usage for the license. Valid values: Unknown - usage is un
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-RequesterID-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-RequesterID-Applicability-End -->
 
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-RequesterID-OmaUri-Begin -->
@@ -5922,7 +6000,7 @@ Identifier for the entity that requested the license, such as the client who acq
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-RequesterID-DFProperties-End -->
 
@@ -5938,7 +6016,7 @@ Identifier for the entity that requested the license, such as the client who acq
 <!-- User-AppManagement-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-Applicability-End -->
 
 <!-- User-AppManagement-OmaUri-Begin -->
@@ -5961,7 +6039,7 @@ Used for inventory and app management (post-install).
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- User-AppManagement-DFProperties-End -->
 
@@ -5977,7 +6055,7 @@ Used for inventory and app management (post-install).
 <!-- User-AppManagement-AppInventoryQuery-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-AppInventoryQuery-Applicability-End -->
 
 <!-- User-AppManagement-AppInventoryQuery-OmaUri-Begin -->
@@ -5992,6 +6070,7 @@ Specifies the query for app inventory.
 <!-- User-AppManagement-AppInventoryQuery-Description-End -->
 
 <!-- User-AppManagement-AppInventoryQuery-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node. Query parameters:
 
 - Output - Specifies the parameters for the information returned in AppInventoryResults operation. Multiple value must be separate by |. Valid values are:
@@ -6026,11 +6105,12 @@ This is a required node. Query parameters:
 
 | Property name | Property value |
 |:--|:--|
-| Format | xml |
+| Format | `xml` |
 | Access Type | Get, Replace |
 <!-- User-AppManagement-AppInventoryQuery-DFProperties-End -->
 
 <!-- User-AppManagement-AppInventoryQuery-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
 **Example**:
 
 The following example sets the inventory query for the package names and checks the status for reinstallation for all main packages that are nonStore apps.
@@ -6057,7 +6137,7 @@ The following example sets the inventory query for the package names and checks 
 <!-- User-AppManagement-AppInventoryResults-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-AppInventoryResults-Applicability-End -->
 
 <!-- User-AppManagement-AppInventoryResults-OmaUri-Begin -->
@@ -6072,6 +6152,7 @@ Returns the results for app inventory that was created after the AppInventoryQue
 <!-- User-AppManagement-AppInventoryResults-Description-End -->
 
 <!-- User-AppManagement-AppInventoryResults-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node.
 <!-- User-AppManagement-AppInventoryResults-Editable-End -->
 
@@ -6080,11 +6161,12 @@ This is a required node.
 
 | Property name | Property value |
 |:--|:--|
-| Format | xml |
+| Format | `xml` |
 | Access Type | Get |
 <!-- User-AppManagement-AppInventoryResults-DFProperties-End -->
 
 <!-- User-AppManagement-AppInventoryResults-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
 **Example**:
 
 Here's an example of AppInventoryResults operation.
@@ -6109,7 +6191,7 @@ Here's an example of AppInventoryResults operation.
 <!-- User-AppManagement-AppStore-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-AppStore-Applicability-End -->
 
 <!-- User-AppManagement-AppStore-OmaUri-Begin -->
@@ -6123,6 +6205,7 @@ Here's an example of AppInventoryResults operation.
 <!-- User-AppManagement-AppStore-Description-End -->
 
 <!-- User-AppManagement-AppStore-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node. Used for managing apps from the Microsoft Store.
 <!-- User-AppManagement-AppStore-Editable-End -->
 
@@ -6131,7 +6214,7 @@ This is a required node. Used for managing apps from the Microsoft Store.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 <!-- User-AppManagement-AppStore-DFProperties-End -->
 
@@ -6147,7 +6230,7 @@ This is a required node. Used for managing apps from the Microsoft Store.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-Applicability-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-OmaUri-Begin -->
@@ -6162,6 +6245,7 @@ Package family name (PFN) of the app. There is one for each PFN on the device wh
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-Description-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > XAP files use a product ID in place of PackageFamilyName. Here's an example of XAP product ID (including the braces), {12345678-9012-3456-7890-123456789012}.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-Editable-End -->
@@ -6171,12 +6255,13 @@ Package family name (PFN) of the app. There is one for each PFN on the device wh
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 | Dynamic Node Naming | ClientInventory |
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-DFProperties-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
 **Example**:
 
 Here's an example for uninstalling an app:
@@ -6207,7 +6292,7 @@ Here's an example for uninstalling an app:
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Applicability-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-OmaUri-Begin -->
@@ -6230,7 +6315,7 @@ Full name of the package installed.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 | Dynamic Node Naming | ClientInventory |
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-DFProperties-End -->
@@ -6247,7 +6332,7 @@ Full name of the package installed.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Architecture-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Architecture-Applicability-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Architecture-OmaUri-Begin -->
@@ -6262,6 +6347,7 @@ Architecture of installed package. Value type is string.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Architecture-Description-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Architecture-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > Not applicable to XAP files.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Architecture-Editable-End -->
@@ -6271,7 +6357,7 @@ Architecture of installed package. Value type is string.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Architecture-DFProperties-End -->
 
@@ -6287,7 +6373,7 @@ Architecture of installed package. Value type is string.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-InstallDate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-InstallDate-Applicability-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-InstallDate-OmaUri-Begin -->
@@ -6302,6 +6388,7 @@ Date the app was installed. Value type is string.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-InstallDate-Description-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-InstallDate-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-InstallDate-Editable-End -->
 
@@ -6310,7 +6397,7 @@ This is a required node.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-InstallDate-DFProperties-End -->
 
@@ -6326,7 +6413,7 @@ This is a required node.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-InstallLocation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-InstallLocation-Applicability-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-InstallLocation-OmaUri-Begin -->
@@ -6341,6 +6428,7 @@ Install location of the app on the device. Value type is string.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-InstallLocation-Description-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-InstallLocation-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > Not applicable to XAP files.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-InstallLocation-Editable-End -->
@@ -6350,7 +6438,7 @@ Install location of the app on the device. Value type is string.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-InstallLocation-DFProperties-End -->
 
@@ -6366,7 +6454,7 @@ Install location of the app on the device. Value type is string.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsBundle-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsBundle-Applicability-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsBundle-OmaUri-Begin -->
@@ -6389,7 +6477,7 @@ The value is 1 if the package is an app bundle and 0 (zero) for all other cases.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsBundle-DFProperties-End -->
 
@@ -6405,7 +6493,7 @@ The value is 1 if the package is an app bundle and 0 (zero) for all other cases.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsFramework-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsFramework-Applicability-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsFramework-OmaUri-Begin -->
@@ -6420,6 +6508,7 @@ Whether or not the app is a framework package. Value type is int. The value is 1
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsFramework-Description-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsFramework-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > Not applicable to XAP files.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsFramework-Editable-End -->
@@ -6429,7 +6518,7 @@ Whether or not the app is a framework package. Value type is int. The value is 1
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsFramework-DFProperties-End -->
 
@@ -6445,7 +6534,7 @@ Whether or not the app is a framework package. Value type is int. The value is 1
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsProvisioned-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsProvisioned-Applicability-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsProvisioned-OmaUri-Begin -->
@@ -6468,7 +6557,7 @@ The value is 0 or 1 that indicates if the app is provisioned on the device. The 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsProvisioned-DFProperties-End -->
 
@@ -6484,7 +6573,7 @@ The value is 0 or 1 that indicates if the app is provisioned on the device. The 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsStub-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsStub-Applicability-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsStub-OmaUri-Begin -->
@@ -6499,6 +6588,7 @@ This node is used to identify whether the package is a stub package. A stub pack
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsStub-Description-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsStub-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 The value is 1 if the package is a stub package and 0 (zero) for all other cases.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsStub-Editable-End -->
 
@@ -6507,7 +6597,7 @@ The value is 1 if the package is a stub package and 0 (zero) for all other cases
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsStub-DFProperties-End -->
 
@@ -6523,7 +6613,7 @@ The value is 1 if the package is a stub package and 0 (zero) for all other cases
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Name-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Name-Applicability-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Name-OmaUri-Begin -->
@@ -6546,7 +6636,7 @@ Name of the app. Value type is string.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Name-DFProperties-End -->
 
@@ -6562,7 +6652,7 @@ Name of the app. Value type is string.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-Applicability-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-OmaUri-Begin -->
@@ -6573,10 +6663,11 @@ Name of the app. Value type is string.
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-Description-Begin -->
 <!-- Description-Source-DDF -->
-Provides information about the status of the package. Value type is int. Valid values are: OK (0) - The package is usable. LicenseIssue (1) - The license of the package is not valid. Modified (2) - The package payload was modified by an unknown source. Tampered (4) - The package payload was tampered intentionally. Disabled (8) - The package is not available for use. It can still be serviced.
+Provides information about the status of the package. Value type is int. Valid values are: OK (0) - The package is usable. LicenseIssue (1) - The license of the package isn't valid. Modified (2) - The package payload was modified by an unknown source. Tampered (4) - The package payload was tampered intentionally. Disabled (8) - The package isn't available for use. It can still be serviced.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-Description-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > Not applicable to XAP files.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-Editable-End -->
@@ -6586,7 +6677,7 @@ Provides information about the status of the package. Value type is int. Valid v
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-DFProperties-End -->
 
@@ -6602,7 +6693,7 @@ Provides information about the status of the package. Value type is int. Valid v
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Publisher-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Publisher-Applicability-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Publisher-OmaUri-Begin -->
@@ -6625,7 +6716,7 @@ Publisher name of the app. Value type is string.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Publisher-DFProperties-End -->
 
@@ -6641,7 +6732,7 @@ Publisher name of the app. Value type is string.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-Applicability-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-OmaUri-Begin -->
@@ -6656,6 +6747,7 @@ Specifies whether the package state has changed and requires a reinstallation of
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-Description-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node.
 
 > [!NOTE]
@@ -6667,7 +6759,7 @@ This is a required node.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-DFProperties-End -->
 
@@ -6683,7 +6775,7 @@ This is a required node.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-ResourceID-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-ResourceID-Applicability-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-ResourceID-OmaUri-Begin -->
@@ -6698,6 +6790,7 @@ Resource ID of the app. This is null for the main app, ~ for a bundle, and conta
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-ResourceID-Description-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-ResourceID-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > Not applicable to XAP files.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-ResourceID-Editable-End -->
@@ -6707,7 +6800,7 @@ Resource ID of the app. This is null for the main app, ~ for a bundle, and conta
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-ResourceID-DFProperties-End -->
 
@@ -6723,7 +6816,7 @@ Resource ID of the app. This is null for the main app, ~ for a bundle, and conta
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Users-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Users-Applicability-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Users-OmaUri-Begin -->
@@ -6738,6 +6831,7 @@ Registered users of the app and the package install state. If the query is at th
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Users-Description-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Users-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node. Possible values:
 
 - 0 = Not Installed
@@ -6751,7 +6845,7 @@ This is a required node. Possible values:
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Users-DFProperties-End -->
 
@@ -6767,7 +6861,7 @@ This is a required node. Possible values:
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Version-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Version-Applicability-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Version-OmaUri-Begin -->
@@ -6790,7 +6884,7 @@ Version of the app. Value type is string.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Version-DFProperties-End -->
 
@@ -6806,7 +6900,7 @@ Version of the app. Value type is string.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-AppSettingPolicy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-AppSettingPolicy-Applicability-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-AppSettingPolicy-OmaUri-Begin -->
@@ -6821,6 +6915,7 @@ Interior node for all managed app setting values.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-AppSettingPolicy-Description-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-AppSettingPolicy-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > This node is only supported in the user context.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-AppSettingPolicy-Editable-End -->
@@ -6830,7 +6925,7 @@ Interior node for all managed app setting values.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-AppSettingPolicy-DFProperties-End -->
 
@@ -6846,7 +6941,7 @@ Interior node for all managed app setting values.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-Applicability-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-OmaUri-Begin -->
@@ -6861,6 +6956,7 @@ The SettingValue and data represent a key value pair to be configured for the ap
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-Description-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This setting only works for apps that support the feature and it's only supported in the user context.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-Editable-End -->
 
@@ -6869,12 +6965,13 @@ This setting only works for apps that support the feature and it's only supporte
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Dynamic Node Naming | UniqueName: SettingValue represents a Key in a Key Value Pair.  Values can be found in LocalSettings in the Managed.App.Settings container. |
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-DFProperties-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
 **Examples**:
 
 - The following example sets the value for the 'Server'
@@ -6918,7 +7015,7 @@ This setting only works for apps that support the feature and it's only supporte
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-DoNotUpdate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-DoNotUpdate-Applicability-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-DoNotUpdate-OmaUri-Begin -->
@@ -6933,6 +7030,7 @@ Specifies whether you want to block a specific app from being updated via auto-u
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-DoNotUpdate-Description-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-DoNotUpdate-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-DoNotUpdate-Editable-End -->
 
@@ -6941,7 +7039,7 @@ This is a required node.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-DoNotUpdate-DFProperties-End -->
 
@@ -6966,7 +7064,7 @@ This is a required node.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Applicability-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-OmaUri-Begin -->
@@ -6977,10 +7075,11 @@ This is a required node.
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specify whether on a AMD64 device, across an app update, the architecture of the installed app must not change. For example if you have the x86 flavor of a Windows app installed, with this setting enabled, across an update, the x86 flavor will be installed even when x64 flavor is available.
+Specify whether on a AMD64 device, across an app update, the architecture of the installed app mustn't change. For example if you have the x86 flavor of a Windows app installed, with this setting enabled, across an update, the x86 flavor will be installed even when x64 flavor is available.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Description-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 Expected Behavior on an AMD64 machine that has x86 flavor of an app installed (Most restrictive wins).
 
 |Applicability Setting |CSP state  |Result  |
@@ -6996,7 +7095,7 @@ Expected Behavior on an AMD64 machine that has x86 flavor of an app installed (M
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-DFProperties-End -->
 
@@ -7021,7 +7120,7 @@ Expected Behavior on an AMD64 machine that has x86 flavor of an app installed (M
 <!-- User-AppManagement-AppStore-ReleaseManagement-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-AppStore-ReleaseManagement-Applicability-End -->
 
 <!-- User-AppManagement-AppStore-ReleaseManagement-OmaUri-Begin -->
@@ -7036,6 +7135,7 @@ Interior node for the managing updates through the Microsoft Store. These settin
 <!-- User-AppManagement-AppStore-ReleaseManagement-Description-End -->
 
 <!-- User-AppManagement-AppStore-ReleaseManagement-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > ReleaseManagement settings only apply to updates through the Microsoft Store.
 <!-- User-AppManagement-AppStore-ReleaseManagement-Editable-End -->
@@ -7045,7 +7145,7 @@ Interior node for the managing updates through the Microsoft Store. These settin
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get, Replace |
 <!-- User-AppManagement-AppStore-ReleaseManagement-DFProperties-End -->
 
@@ -7061,7 +7161,7 @@ Interior node for the managing updates through the Microsoft Store. These settin
 <!-- User-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-Applicability-End -->
 
 <!-- User-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-OmaUri-Begin -->
@@ -7072,7 +7172,7 @@ Interior node for the managing updates through the Microsoft Store. These settin
 
 <!-- User-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-Description-Begin -->
 <!-- Description-Source-DDF -->
-Identifier for the app or set of apps. If there is only one app, it is the PackageFamilyName. If it is for a set of apps, it is the PackageFamilyName of the main app.
+Identifier for the app or set of apps. If there is only one app, it's the PackageFamilyName. If it's for a set of apps, it's the PackageFamilyName of the main app.
 <!-- User-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-Description-End -->
 
 <!-- User-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-Editable-Begin -->
@@ -7084,7 +7184,7 @@ Identifier for the app or set of apps. If there is only one app, it is the Packa
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get, Replace |
 | Dynamic Node Naming | UniqueName: If there is only one app, the name is the PackageFamilyName. If it is for a set of apps, the name is the PackageFamilyName of the main app. |
 <!-- User-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-DFProperties-End -->
@@ -7101,7 +7201,7 @@ Identifier for the app or set of apps. If there is only one app, it is the Packa
 <!-- User-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-ChannelId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-ChannelId-Applicability-End -->
 
 <!-- User-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-ChannelId-OmaUri-Begin -->
@@ -7124,7 +7224,7 @@ Specifies the app channel ID.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-ChannelId-DFProperties-End -->
 
@@ -7140,7 +7240,7 @@ Specifies the app channel ID.
 <!-- User-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-Applicability-End -->
 
 <!-- User-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-OmaUri-Begin -->
@@ -7163,7 +7263,7 @@ Interior node used to specify the effective app release to use when multiple use
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- User-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-DFProperties-End -->
 
@@ -7179,7 +7279,7 @@ Interior node used to specify the effective app release to use when multiple use
 <!-- User-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ChannelId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ChannelId-Applicability-End -->
 
 <!-- User-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ChannelId-OmaUri-Begin -->
@@ -7202,7 +7302,7 @@ Returns the last user channel ID on the device.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- User-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ChannelId-DFProperties-End -->
 
@@ -7218,7 +7318,7 @@ Returns the last user channel ID on the device.
 <!-- User-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ReleaseManagementId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ReleaseManagementId-Applicability-End -->
 
 <!-- User-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ReleaseManagementId-OmaUri-Begin -->
@@ -7241,7 +7341,7 @@ Returns the last user release ID on the device.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- User-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ReleaseManagementId-DFProperties-End -->
 
@@ -7257,7 +7357,7 @@ Returns the last user release ID on the device.
 <!-- User-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-ReleaseManagementId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-ReleaseManagementId-Applicability-End -->
 
 <!-- User-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-ReleaseManagementId-OmaUri-Begin -->
@@ -7280,7 +7380,7 @@ The IT admin can specify a release ID to indicate a specific release that they w
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-ReleaseManagementId-DFProperties-End -->
 
@@ -7296,7 +7396,7 @@ The IT admin can specify a release ID to indicate a specific release that they w
 <!-- User-AppManagement-LastScanError-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-LastScanError-Applicability-End -->
 
 <!-- User-AppManagement-LastScanError-OmaUri-Begin -->
@@ -7311,6 +7411,7 @@ Reports the last error code returned by the update scan.
 <!-- User-AppManagement-LastScanError-Description-End -->
 
 <!-- User-AppManagement-LastScanError-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node.
 <!-- User-AppManagement-LastScanError-Editable-End -->
 
@@ -7319,7 +7420,7 @@ This is a required node.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- User-AppManagement-LastScanError-DFProperties-End -->
 
@@ -7335,7 +7436,7 @@ This is a required node.
 <!-- User-AppManagement-nonStore-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-nonStore-Applicability-End -->
 
 <!-- User-AppManagement-nonStore-OmaUri-Begin -->
@@ -7349,6 +7450,7 @@ This is a required node.
 <!-- User-AppManagement-nonStore-Description-End -->
 
 <!-- User-AppManagement-nonStore-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 Used to manage enterprise apps or developer apps that weren't acquired from the Microsoft Store.
 <!-- User-AppManagement-nonStore-Editable-End -->
 
@@ -7357,7 +7459,7 @@ Used to manage enterprise apps or developer apps that weren't acquired from the 
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 <!-- User-AppManagement-nonStore-DFProperties-End -->
 
@@ -7373,7 +7475,7 @@ Used to manage enterprise apps or developer apps that weren't acquired from the 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-Applicability-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-OmaUri-Begin -->
@@ -7388,6 +7490,7 @@ Package family name (PFN) of the app. There is one for each PFN on the device wh
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-Description-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > XAP files use a product ID in place of PackageFamilyName. Here's an example of XAP product ID (including the braces), {12345678-9012-3456-7890-123456789012}.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-Editable-End -->
@@ -7397,12 +7500,13 @@ Package family name (PFN) of the app. There is one for each PFN on the device wh
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 | Dynamic Node Naming | ClientInventory |
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-DFProperties-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
 ```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
@@ -7429,7 +7533,7 @@ Package family name (PFN) of the app. There is one for each PFN on the device wh
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Applicability-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-OmaUri-Begin -->
@@ -7452,7 +7556,7 @@ Full name of the package installed.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 | Dynamic Node Naming | ClientInventory |
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-DFProperties-End -->
@@ -7469,7 +7573,7 @@ Full name of the package installed.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Architecture-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Architecture-Applicability-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Architecture-OmaUri-Begin -->
@@ -7484,6 +7588,7 @@ Architecture of installed package. Value type is string.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Architecture-Description-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Architecture-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > Not applicable to XAP files.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Architecture-Editable-End -->
@@ -7493,7 +7598,7 @@ Architecture of installed package. Value type is string.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Architecture-DFProperties-End -->
 
@@ -7509,7 +7614,7 @@ Architecture of installed package. Value type is string.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-InstallDate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-InstallDate-Applicability-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-InstallDate-OmaUri-Begin -->
@@ -7524,6 +7629,7 @@ Date the app was installed. Value type is string.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-InstallDate-Description-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-InstallDate-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-InstallDate-Editable-End -->
 
@@ -7532,7 +7638,7 @@ This is a required node.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-InstallDate-DFProperties-End -->
 
@@ -7548,7 +7654,7 @@ This is a required node.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-InstallLocation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-InstallLocation-Applicability-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-InstallLocation-OmaUri-Begin -->
@@ -7563,6 +7669,7 @@ Install location of the app on the device. Value type is string.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-InstallLocation-Description-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-InstallLocation-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > Not applicable to XAP files.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-InstallLocation-Editable-End -->
@@ -7572,7 +7679,7 @@ Install location of the app on the device. Value type is string.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-InstallLocation-DFProperties-End -->
 
@@ -7588,7 +7695,7 @@ Install location of the app on the device. Value type is string.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsBundle-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsBundle-Applicability-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsBundle-OmaUri-Begin -->
@@ -7611,7 +7718,7 @@ The value is 1 if the package is an app bundle and 0 (zero) for all other cases.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsBundle-DFProperties-End -->
 
@@ -7627,7 +7734,7 @@ The value is 1 if the package is an app bundle and 0 (zero) for all other cases.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsFramework-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsFramework-Applicability-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsFramework-OmaUri-Begin -->
@@ -7642,6 +7749,7 @@ Whether or not the app is a framework package. Value type is int. The value is 1
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsFramework-Description-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsFramework-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > Not applicable to XAP files.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsFramework-Editable-End -->
@@ -7651,7 +7759,7 @@ Whether or not the app is a framework package. Value type is int. The value is 1
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsFramework-DFProperties-End -->
 
@@ -7667,7 +7775,7 @@ Whether or not the app is a framework package. Value type is int. The value is 1
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsProvisioned-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsProvisioned-Applicability-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsProvisioned-OmaUri-Begin -->
@@ -7690,7 +7798,7 @@ The value is 0 or 1 that indicates if the app is provisioned on the device. The 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsProvisioned-DFProperties-End -->
 
@@ -7706,7 +7814,7 @@ The value is 0 or 1 that indicates if the app is provisioned on the device. The 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsStub-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsStub-Applicability-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsStub-OmaUri-Begin -->
@@ -7721,6 +7829,7 @@ This node is used to identify whether the package is a stub package. A stub pack
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsStub-Description-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsStub-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 The value is 1 if the package is a stub package and 0 (zero) for all other cases.
 
 Value type is int.
@@ -7731,7 +7840,7 @@ Value type is int.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsStub-DFProperties-End -->
 
@@ -7747,7 +7856,7 @@ Value type is int.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Name-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Name-Applicability-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Name-OmaUri-Begin -->
@@ -7770,7 +7879,7 @@ Name of the app. Value type is string.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Name-DFProperties-End -->
 
@@ -7786,7 +7895,7 @@ Name of the app. Value type is string.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-Applicability-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-OmaUri-Begin -->
@@ -7797,10 +7906,11 @@ Name of the app. Value type is string.
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-Description-Begin -->
 <!-- Description-Source-DDF -->
-Provides information about the status of the package. Value type is int. Valid values are: OK (0) - The package is usable. LicenseIssue (1) - The license of the package is not valid. Modified (2) - The package payload was modified by an unknown source. Tampered (4) - The package payload was tampered intentionally. Disabled (8) - The package is not available for use. It can still be serviced.
+Provides information about the status of the package. Value type is int. Valid values are: OK (0) - The package is usable. LicenseIssue (1) - The license of the package isn't valid. Modified (2) - The package payload was modified by an unknown source. Tampered (4) - The package payload was tampered intentionally. Disabled (8) - The package isn't available for use. It can still be serviced.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-Description-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > Not applicable to XAP files.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-Editable-End -->
@@ -7810,7 +7920,7 @@ Provides information about the status of the package. Value type is int. Valid v
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-DFProperties-End -->
 
@@ -7826,7 +7936,7 @@ Provides information about the status of the package. Value type is int. Valid v
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Publisher-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Publisher-Applicability-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Publisher-OmaUri-Begin -->
@@ -7849,7 +7959,7 @@ Publisher name of the app. Value type is string.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Publisher-DFProperties-End -->
 
@@ -7865,7 +7975,7 @@ Publisher name of the app. Value type is string.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-Applicability-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-OmaUri-Begin -->
@@ -7880,6 +7990,7 @@ Specifies whether the package state has changed and requires a reinstallation of
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-Description-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node.
 
 > [!NOTE]
@@ -7891,7 +8002,7 @@ This is a required node.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-DFProperties-End -->
 
@@ -7907,7 +8018,7 @@ This is a required node.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-ResourceID-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-ResourceID-Applicability-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-ResourceID-OmaUri-Begin -->
@@ -7922,6 +8033,7 @@ Resource ID of the app. This is null for the main app, ~ for a bundle, and conta
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-ResourceID-Description-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-ResourceID-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > Not applicable to XAP files.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-ResourceID-Editable-End -->
@@ -7931,7 +8043,7 @@ Resource ID of the app. This is null for the main app, ~ for a bundle, and conta
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-ResourceID-DFProperties-End -->
 
@@ -7947,7 +8059,7 @@ Resource ID of the app. This is null for the main app, ~ for a bundle, and conta
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Users-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Users-Applicability-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Users-OmaUri-Begin -->
@@ -7962,6 +8074,7 @@ Registered users of the app and the package install state. If the query is at th
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Users-Description-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Users-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 Requried.
 
 - Not Installed = 0
@@ -7975,7 +8088,7 @@ Requried.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Users-DFProperties-End -->
 
@@ -7991,7 +8104,7 @@ Requried.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Version-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Version-Applicability-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Version-OmaUri-Begin -->
@@ -8014,7 +8127,7 @@ Version of the app. Value type is string.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Version-DFProperties-End -->
 
@@ -8030,7 +8143,7 @@ Version of the app. Value type is string.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-AppSettingPolicy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-AppSettingPolicy-Applicability-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-AppSettingPolicy-OmaUri-Begin -->
@@ -8045,6 +8158,7 @@ Interior node for all managed app setting values.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-AppSettingPolicy-Description-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-AppSettingPolicy-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This node is only supported in the user context.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-AppSettingPolicy-Editable-End -->
 
@@ -8053,7 +8167,7 @@ This node is only supported in the user context.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-AppSettingPolicy-DFProperties-End -->
 
@@ -8069,7 +8183,7 @@ This node is only supported in the user context.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-Applicability-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-OmaUri-Begin -->
@@ -8084,6 +8198,7 @@ The SettingValue and data represent a key value pair to be configured for the ap
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-Description-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This setting only works for apps that support the feature and it's only supported in the user context.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-Editable-End -->
 
@@ -8092,12 +8207,13 @@ This setting only works for apps that support the feature and it's only supporte
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Dynamic Node Naming | UniqueName: SettingValue represents a Key in a Key Value Pair.  Values can be found in LocalSettings in the Managed.App.Settings container. |
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-DFProperties-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
 The following example sets the value for the 'Server'
 
 ```xml
@@ -8139,7 +8255,7 @@ The following example gets all managed app settings for a specific app.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-DoNotUpdate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-DoNotUpdate-Applicability-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-DoNotUpdate-OmaUri-Begin -->
@@ -8154,6 +8270,7 @@ Specifies whether you want to block a specific app from being updated via auto-u
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-DoNotUpdate-Description-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-DoNotUpdate-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-DoNotUpdate-Editable-End -->
 
@@ -8162,7 +8279,7 @@ This is a required node.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-DoNotUpdate-DFProperties-End -->
 
@@ -8187,7 +8304,7 @@ This is a required node.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Applicability-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-OmaUri-Begin -->
@@ -8198,10 +8315,11 @@ This is a required node.
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specify whether on a AMD64 device, across an app update, the architecture of the installed app must not change. For example if you have the x86 flavor of a Windows app installed, with this setting enabled, across an update, the x86 flavor will be installed even when x64 flavor is available.
+Specify whether on a AMD64 device, across an app update, the architecture of the installed app mustn't change. For example if you have the x86 flavor of a Windows app installed, with this setting enabled, across an update, the x86 flavor will be installed even when x64 flavor is available.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Description-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 Expected Behavior on an AMD64 machine that has x86 flavor of an app installed (Most restrictive wins).
 
 | Applicability Setting | CSP state      | Result               |
@@ -8217,7 +8335,7 @@ Expected Behavior on an AMD64 machine that has x86 flavor of an app installed (M
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-DFProperties-End -->
 
@@ -8242,7 +8360,7 @@ Expected Behavior on an AMD64 machine that has x86 flavor of an app installed (M
 <!-- User-AppManagement-nonStore-ReleaseManagement-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-nonStore-ReleaseManagement-Applicability-End -->
 
 <!-- User-AppManagement-nonStore-ReleaseManagement-OmaUri-Begin -->
@@ -8265,7 +8383,7 @@ Interior node for the managing updates through the Microsoft Store. These settin
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get, Replace |
 <!-- User-AppManagement-nonStore-ReleaseManagement-DFProperties-End -->
 
@@ -8281,7 +8399,7 @@ Interior node for the managing updates through the Microsoft Store. These settin
 <!-- User-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-Applicability-End -->
 
 <!-- User-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-OmaUri-Begin -->
@@ -8292,7 +8410,7 @@ Interior node for the managing updates through the Microsoft Store. These settin
 
 <!-- User-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-Description-Begin -->
 <!-- Description-Source-DDF -->
-Identifier for the app or set of apps. If there is only one app, it is the PackageFamilyName. If it is for a set of apps, it is the PackageFamilyName of the main app.
+Identifier for the app or set of apps. If there is only one app, it's the PackageFamilyName. If it's for a set of apps, it's the PackageFamilyName of the main app.
 <!-- User-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-Description-End -->
 
 <!-- User-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-Editable-Begin -->
@@ -8304,7 +8422,7 @@ Identifier for the app or set of apps. If there is only one app, it is the Packa
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get, Replace |
 | Dynamic Node Naming | UniqueName: If there is only one app, the name is the PackageFamilyName. If it is for a set of apps, the name is the PackageFamilyName of the main app. |
 <!-- User-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-DFProperties-End -->
@@ -8321,7 +8439,7 @@ Identifier for the app or set of apps. If there is only one app, it is the Packa
 <!-- User-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-ChannelId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-ChannelId-Applicability-End -->
 
 <!-- User-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-ChannelId-OmaUri-Begin -->
@@ -8344,7 +8462,7 @@ Specifies the app channel ID.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-ChannelId-DFProperties-End -->
 
@@ -8360,7 +8478,7 @@ Specifies the app channel ID.
 <!-- User-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-Applicability-End -->
 
 <!-- User-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-OmaUri-Begin -->
@@ -8383,7 +8501,7 @@ Interior node used to specify the effective app release to use when multiple use
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- User-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-DFProperties-End -->
 
@@ -8399,7 +8517,7 @@ Interior node used to specify the effective app release to use when multiple use
 <!-- User-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ChannelId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ChannelId-Applicability-End -->
 
 <!-- User-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ChannelId-OmaUri-Begin -->
@@ -8422,7 +8540,7 @@ Returns the last user channel ID on the device.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- User-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ChannelId-DFProperties-End -->
 
@@ -8438,7 +8556,7 @@ Returns the last user channel ID on the device.
 <!-- User-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ReleaseManagementId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ReleaseManagementId-Applicability-End -->
 
 <!-- User-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ReleaseManagementId-OmaUri-Begin -->
@@ -8461,7 +8579,7 @@ Returns the last user release ID on the device.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- User-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ReleaseManagementId-DFProperties-End -->
 
@@ -8477,7 +8595,7 @@ Returns the last user release ID on the device.
 <!-- User-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-ReleaseManagementId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-ReleaseManagementId-Applicability-End -->
 
 <!-- User-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-ReleaseManagementId-OmaUri-Begin -->
@@ -8500,7 +8618,7 @@ The IT admin can specify a release ID to indicate a specific release that they w
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-ReleaseManagementId-DFProperties-End -->
 
@@ -8516,7 +8634,7 @@ The IT admin can specify a release ID to indicate a specific release that they w
 <!-- User-AppManagement-RemovePackage-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- User-AppManagement-RemovePackage-Applicability-End -->
 
 <!-- User-AppManagement-RemovePackage-OmaUri-Begin -->
@@ -8531,6 +8649,7 @@ Used to remove packages.
 <!-- User-AppManagement-RemovePackage-Description-End -->
 
 <!-- User-AppManagement-RemovePackage-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 Parameters:
 
 - Package
@@ -8546,11 +8665,12 @@ Parameters:
 
 | Property name | Property value |
 |:--|:--|
-| Format | xml |
+| Format | `xml` |
 | Access Type | Exec, Get |
 <!-- User-AppManagement-RemovePackage-DFProperties-End -->
 
 <!-- User-AppManagement-RemovePackage-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
 **Example**:
 
 The following example removes a package for all users:
@@ -8579,7 +8699,7 @@ The following example removes a package for all users:
 <!-- User-AppManagement-ResetPackage-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- User-AppManagement-ResetPackage-Applicability-End -->
 
 <!-- User-AppManagement-ResetPackage-OmaUri-Begin -->
@@ -8602,7 +8722,7 @@ Used to restore the Windows app to its initial configuration.
 
 | Property name | Property value |
 |:--|:--|
-| Format | xml |
+| Format | `xml` |
 | Access Type | Exec, Get |
 <!-- User-AppManagement-ResetPackage-DFProperties-End -->
 
@@ -8618,7 +8738,7 @@ Used to restore the Windows app to its initial configuration.
 <!-- User-AppManagement-System-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-System-Applicability-End -->
 
 <!-- User-AppManagement-System-OmaUri-Begin -->
@@ -8632,6 +8752,7 @@ Used to restore the Windows app to its initial configuration.
 <!-- User-AppManagement-System-Description-End -->
 
 <!-- User-AppManagement-System-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 Reports apps installed as part of the operating system.
 <!-- User-AppManagement-System-Editable-End -->
 
@@ -8640,7 +8761,7 @@ Reports apps installed as part of the operating system.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 <!-- User-AppManagement-System-DFProperties-End -->
 
@@ -8656,7 +8777,7 @@ Reports apps installed as part of the operating system.
 <!-- User-AppManagement-System-{PackageFamilyName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-System-{PackageFamilyName}-Applicability-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-OmaUri-Begin -->
@@ -8671,6 +8792,7 @@ Package family name (PFN) of the app. There is one for each PFN on the device wh
 <!-- User-AppManagement-System-{PackageFamilyName}-Description-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > XAP files use a product ID in place of PackageFamilyName. Here's an example of XAP product ID (including the braces), {12345678-9012-3456-7890-123456789012}.
 <!-- User-AppManagement-System-{PackageFamilyName}-Editable-End -->
@@ -8680,12 +8802,13 @@ Package family name (PFN) of the app. There is one for each PFN on the device wh
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 | Dynamic Node Naming | ClientInventory |
 <!-- User-AppManagement-System-{PackageFamilyName}-DFProperties-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
 **Example**:
 
 ```xml
@@ -8714,7 +8837,7 @@ Package family name (PFN) of the app. There is one for each PFN on the device wh
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Applicability-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-OmaUri-Begin -->
@@ -8737,7 +8860,7 @@ Full name of the package installed.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 | Dynamic Node Naming | ClientInventory |
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-DFProperties-End -->
@@ -8754,7 +8877,7 @@ Full name of the package installed.
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Architecture-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Architecture-Applicability-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Architecture-OmaUri-Begin -->
@@ -8769,6 +8892,7 @@ Architecture of installed package. Value type is string.
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Architecture-Description-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Architecture-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > Not applicable to XAP files.
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Architecture-Editable-End -->
@@ -8778,7 +8902,7 @@ Architecture of installed package. Value type is string.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Architecture-DFProperties-End -->
 
@@ -8794,7 +8918,7 @@ Architecture of installed package. Value type is string.
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-InstallDate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-InstallDate-Applicability-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-InstallDate-OmaUri-Begin -->
@@ -8809,6 +8933,7 @@ Date the app was installed. Value type is string.
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-InstallDate-Description-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-InstallDate-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node.
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-InstallDate-Editable-End -->
 
@@ -8817,7 +8942,7 @@ This is a required node.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-InstallDate-DFProperties-End -->
 
@@ -8833,7 +8958,7 @@ This is a required node.
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-InstallLocation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-InstallLocation-Applicability-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-InstallLocation-OmaUri-Begin -->
@@ -8848,6 +8973,7 @@ Install location of the app on the device. Value type is string.
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-InstallLocation-Description-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-InstallLocation-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > Not applicable to XAP files.
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-InstallLocation-Editable-End -->
@@ -8857,7 +8983,7 @@ Install location of the app on the device. Value type is string.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-InstallLocation-DFProperties-End -->
 
@@ -8873,7 +8999,7 @@ Install location of the app on the device. Value type is string.
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsBundle-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsBundle-Applicability-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsBundle-OmaUri-Begin -->
@@ -8896,7 +9022,7 @@ The value is 1 if the package is an app bundle and 0 (zero) for all other cases.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsBundle-DFProperties-End -->
 
@@ -8912,7 +9038,7 @@ The value is 1 if the package is an app bundle and 0 (zero) for all other cases.
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsFramework-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsFramework-Applicability-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsFramework-OmaUri-Begin -->
@@ -8927,6 +9053,7 @@ Whether or not the app is a framework package. Value type is int. The value is 1
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsFramework-Description-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsFramework-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > Not applicable to XAP files.
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsFramework-Editable-End -->
@@ -8936,7 +9063,7 @@ Whether or not the app is a framework package. Value type is int. The value is 1
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsFramework-DFProperties-End -->
 
@@ -8952,7 +9079,7 @@ Whether or not the app is a framework package. Value type is int. The value is 1
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsProvisioned-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsProvisioned-Applicability-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsProvisioned-OmaUri-Begin -->
@@ -8975,7 +9102,7 @@ The value is 0 or 1 that indicates if the app is provisioned on the device. The 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsProvisioned-DFProperties-End -->
 
@@ -8991,7 +9118,7 @@ The value is 0 or 1 that indicates if the app is provisioned on the device. The 
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsStub-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsStub-Applicability-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsStub-OmaUri-Begin -->
@@ -9006,6 +9133,7 @@ This node is used to identify whether the package is a stub package. A stub pack
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsStub-Description-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsStub-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 The value is 1 if the package is a stub package and 0 (zero) for all other cases.
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsStub-Editable-End -->
 
@@ -9014,7 +9142,7 @@ The value is 1 if the package is a stub package and 0 (zero) for all other cases
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsStub-DFProperties-End -->
 
@@ -9030,7 +9158,7 @@ The value is 1 if the package is a stub package and 0 (zero) for all other cases
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Name-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Name-Applicability-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Name-OmaUri-Begin -->
@@ -9053,7 +9181,7 @@ Name of the app. Value type is string.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Name-DFProperties-End -->
 
@@ -9069,7 +9197,7 @@ Name of the app. Value type is string.
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-PackageStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-PackageStatus-Applicability-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-PackageStatus-OmaUri-Begin -->
@@ -9080,10 +9208,11 @@ Name of the app. Value type is string.
 
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-PackageStatus-Description-Begin -->
 <!-- Description-Source-DDF -->
-Provides information about the status of the package. Value type is int. Valid values are: OK (0) - The package is usable. LicenseIssue (1) - The license of the package is not valid. Modified (2) - The package payload was modified by an unknown source. Tampered (4) - The package payload was tampered intentionally. Disabled (8) - The package is not available for use. It can still be serviced.
+Provides information about the status of the package. Value type is int. Valid values are: OK (0) - The package is usable. LicenseIssue (1) - The license of the package isn't valid. Modified (2) - The package payload was modified by an unknown source. Tampered (4) - The package payload was tampered intentionally. Disabled (8) - The package isn't available for use. It can still be serviced.
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-PackageStatus-Description-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-PackageStatus-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > Not applicable to XAP files.
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-PackageStatus-Editable-End -->
@@ -9093,7 +9222,7 @@ Provides information about the status of the package. Value type is int. Valid v
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-PackageStatus-DFProperties-End -->
 
@@ -9109,7 +9238,7 @@ Provides information about the status of the package. Value type is int. Valid v
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Publisher-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Publisher-Applicability-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Publisher-OmaUri-Begin -->
@@ -9132,7 +9261,7 @@ Publisher name of the app. Value type is string.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Publisher-DFProperties-End -->
 
@@ -9148,7 +9277,7 @@ Publisher name of the app. Value type is string.
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-Applicability-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-OmaUri-Begin -->
@@ -9163,6 +9292,7 @@ Specifies whether the package state has changed and requires a reinstallation of
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-Description-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node.
 
 > [!NOTE]
@@ -9174,7 +9304,7 @@ This is a required node.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-DFProperties-End -->
 
@@ -9190,7 +9320,7 @@ This is a required node.
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-ResourceID-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-ResourceID-Applicability-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-ResourceID-OmaUri-Begin -->
@@ -9205,6 +9335,7 @@ Resource ID of the app. This is null for the main app, ~ for a bundle, and conta
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-ResourceID-Description-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-ResourceID-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > Not applicable to XAP files.
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-ResourceID-Editable-End -->
@@ -9214,7 +9345,7 @@ Resource ID of the app. This is null for the main app, ~ for a bundle, and conta
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-ResourceID-DFProperties-End -->
 
@@ -9230,7 +9361,7 @@ Resource ID of the app. This is null for the main app, ~ for a bundle, and conta
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Users-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Users-Applicability-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Users-OmaUri-Begin -->
@@ -9245,6 +9376,7 @@ Registered users of the app and the package install state. If the query is at th
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Users-Description-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Users-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node.
 
 - 0 = Not Installed
@@ -9258,7 +9390,7 @@ This is a required node.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Users-DFProperties-End -->
 
@@ -9274,7 +9406,7 @@ This is a required node.
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Version-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Version-Applicability-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Version-OmaUri-Begin -->
@@ -9297,7 +9429,7 @@ Version of the app. Value type is string.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Version-DFProperties-End -->
 
@@ -9313,7 +9445,7 @@ Version of the app. Value type is string.
 <!-- User-AppManagement-System-{PackageFamilyName}-AppSettingPolicy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-System-{PackageFamilyName}-AppSettingPolicy-Applicability-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-AppSettingPolicy-OmaUri-Begin -->
@@ -9328,6 +9460,7 @@ Interior node for all managed app setting values.
 <!-- User-AppManagement-System-{PackageFamilyName}-AppSettingPolicy-Description-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-AppSettingPolicy-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This node is only supported in the user context.
 <!-- User-AppManagement-System-{PackageFamilyName}-AppSettingPolicy-Editable-End -->
 
@@ -9336,7 +9469,7 @@ This node is only supported in the user context.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-AppManagement-System-{PackageFamilyName}-AppSettingPolicy-DFProperties-End -->
 
@@ -9352,7 +9485,7 @@ This node is only supported in the user context.
 <!-- User-AppManagement-System-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-System-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-Applicability-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-OmaUri-Begin -->
@@ -9367,6 +9500,7 @@ The SettingValue and data represent a key value pair to be configured for the ap
 <!-- User-AppManagement-System-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-Description-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This setting only works for apps that support the feature and it's only supported in the user context.
 <!-- User-AppManagement-System-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-Editable-End -->
 
@@ -9375,12 +9509,13 @@ This setting only works for apps that support the feature and it's only supporte
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Dynamic Node Naming | UniqueName: SettingValue represents a Key in a Key Value Pair.  Values can be found in LocalSettings in the Managed.App.Settings container. |
 <!-- User-AppManagement-System-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-DFProperties-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
 **Examples**:
 
 - The following example sets the value for the 'Server'
@@ -9424,7 +9559,7 @@ This setting only works for apps that support the feature and it's only supporte
 <!-- User-AppManagement-System-{PackageFamilyName}-DoNotUpdate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-System-{PackageFamilyName}-DoNotUpdate-Applicability-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-DoNotUpdate-OmaUri-Begin -->
@@ -9439,6 +9574,7 @@ Specifies whether you want to block a specific app from being updated via auto-u
 <!-- User-AppManagement-System-{PackageFamilyName}-DoNotUpdate-Description-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-DoNotUpdate-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node.
 <!-- User-AppManagement-System-{PackageFamilyName}-DoNotUpdate-Editable-End -->
 
@@ -9447,7 +9583,7 @@ This is a required node.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-AppManagement-System-{PackageFamilyName}-DoNotUpdate-DFProperties-End -->
 
@@ -9472,7 +9608,7 @@ This is a required node.
 <!-- User-AppManagement-System-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- User-AppManagement-System-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Applicability-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-OmaUri-Begin -->
@@ -9483,10 +9619,11 @@ This is a required node.
 
 <!-- User-AppManagement-System-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specify whether on a AMD64 device, across an app update, the architecture of the installed app must not change. For example if you have the x86 flavor of a Windows app installed, with this setting enabled, across an update, the x86 flavor will be installed even when x64 flavor is available.
+Specify whether on a AMD64 device, across an app update, the architecture of the installed app mustn't change. For example if you have the x86 flavor of a Windows app installed, with this setting enabled, across an update, the x86 flavor will be installed even when x64 flavor is available.
 <!-- User-AppManagement-System-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Description-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 Expected Behavior on an AMD64 machine that has x86 flavor of an app installed (Most restrictive wins).
 
 | Applicability Setting | CSP state      | Result               |
@@ -9502,7 +9639,7 @@ Expected Behavior on an AMD64 machine that has x86 flavor of an app installed (M
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-AppManagement-System-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-DFProperties-End -->
 
@@ -9527,7 +9664,7 @@ Expected Behavior on an AMD64 machine that has x86 flavor of an app installed (M
 <!-- User-AppManagement-System-ReleaseManagement-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-System-ReleaseManagement-Applicability-End -->
 
 <!-- User-AppManagement-System-ReleaseManagement-OmaUri-Begin -->
@@ -9550,7 +9687,7 @@ Interior node for the managing updates through the Microsoft Store. These settin
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get, Replace |
 <!-- User-AppManagement-System-ReleaseManagement-DFProperties-End -->
 
@@ -9566,7 +9703,7 @@ Interior node for the managing updates through the Microsoft Store. These settin
 <!-- User-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-Applicability-End -->
 
 <!-- User-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-OmaUri-Begin -->
@@ -9577,7 +9714,7 @@ Interior node for the managing updates through the Microsoft Store. These settin
 
 <!-- User-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-Description-Begin -->
 <!-- Description-Source-DDF -->
-Identifier for the app or set of apps. If there is only one app, it is the PackageFamilyName. If it is for a set of apps, it is the PackageFamilyName of the main app.
+Identifier for the app or set of apps. If there is only one app, it's the PackageFamilyName. If it's for a set of apps, it's the PackageFamilyName of the main app.
 <!-- User-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-Description-End -->
 
 <!-- User-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-Editable-Begin -->
@@ -9589,7 +9726,7 @@ Identifier for the app or set of apps. If there is only one app, it is the Packa
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get, Replace |
 | Dynamic Node Naming | UniqueName: If there is only one app, the name is the PackageFamilyName. If it is for a set of apps, the name is the PackageFamilyName of the main app. |
 <!-- User-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-DFProperties-End -->
@@ -9606,7 +9743,7 @@ Identifier for the app or set of apps. If there is only one app, it is the Packa
 <!-- User-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-ChannelId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-ChannelId-Applicability-End -->
 
 <!-- User-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-ChannelId-OmaUri-Begin -->
@@ -9629,7 +9766,7 @@ Specifies the app channel ID.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-ChannelId-DFProperties-End -->
 
@@ -9645,7 +9782,7 @@ Specifies the app channel ID.
 <!-- User-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-Applicability-End -->
 
 <!-- User-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-OmaUri-Begin -->
@@ -9668,7 +9805,7 @@ Interior node used to specify the effective app release to use when multiple use
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- User-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-DFProperties-End -->
 
@@ -9684,7 +9821,7 @@ Interior node used to specify the effective app release to use when multiple use
 <!-- User-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ChannelId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ChannelId-Applicability-End -->
 
 <!-- User-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ChannelId-OmaUri-Begin -->
@@ -9707,7 +9844,7 @@ Returns the last user channel ID on the device.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- User-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ChannelId-DFProperties-End -->
 
@@ -9723,7 +9860,7 @@ Returns the last user channel ID on the device.
 <!-- User-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ReleaseManagementId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ReleaseManagementId-Applicability-End -->
 
 <!-- User-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ReleaseManagementId-OmaUri-Begin -->
@@ -9746,7 +9883,7 @@ Returns the last user release ID on the device.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- User-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-EffectiveRelease-ReleaseManagementId-DFProperties-End -->
 
@@ -9762,7 +9899,7 @@ Returns the last user release ID on the device.
 <!-- User-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-ReleaseManagementId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-ReleaseManagementId-Applicability-End -->
 
 <!-- User-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-ReleaseManagementId-OmaUri-Begin -->
@@ -9785,7 +9922,7 @@ The IT admin can specify a release ID to indicate a specific release that they w
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-ReleaseManagementId-DFProperties-End -->
 
@@ -9801,7 +9938,7 @@ The IT admin can specify a release ID to indicate a specific release that they w
 <!-- User-AppManagement-UpdateScan-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-AppManagement-UpdateScan-Applicability-End -->
 
 <!-- User-AppManagement-UpdateScan-OmaUri-Begin -->
@@ -9816,6 +9953,7 @@ Used to start the Windows Update scan.
 <!-- User-AppManagement-UpdateScan-Description-End -->
 
 <!-- User-AppManagement-UpdateScan-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node.
 <!-- User-AppManagement-UpdateScan-Editable-End -->
 
@@ -9824,7 +9962,7 @@ This is a required node.
 
 | Property name | Property value |
 |:--|:--|
-| Format | null |
+| Format | `null` |
 | Access Type | Exec |
 <!-- User-AppManagement-UpdateScan-DFProperties-End -->
 

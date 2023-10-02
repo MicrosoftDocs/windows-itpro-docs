@@ -4,7 +4,7 @@ description: Learn more about the ADMX_DeviceInstallation Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- ADMX_DeviceInstallation-Begin -->
 # Policy CSP - ADMX_DeviceInstallation
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- ADMX_DeviceInstallation-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -31,7 +28,7 @@ ms.topic: reference
 <!-- DeviceInstall_AllowAdminInstall-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DeviceInstall_AllowAdminInstall-Applicability-End -->
 
 <!-- DeviceInstall_AllowAdminInstall-OmaUri-Begin -->
@@ -45,9 +42,10 @@ ms.topic: reference
 This policy setting allows you to determine whether members of the Administrators group can install and update the drivers for any device, regardless of other policy settings.
 
 - If you enable this policy setting, members of the Administrators group can use the Add Hardware wizard or the Update Driver wizard to install and update the drivers for any device.
+
 - If you enable this policy setting on a remote desktop server, the policy setting affects redirection of the specified devices from a remote desktop client to the remote desktop server.
 
-- If you disable or do not configure this policy setting, members of the Administrators group are subject to all policy settings that restrict device installation.
+- If you disable or don't configure this policy setting, members of the Administrators group are subject to all policy settings that restrict device installation.
 <!-- DeviceInstall_AllowAdminInstall-Description-End -->
 
 <!-- DeviceInstall_AllowAdminInstall-Editable-Begin -->
@@ -59,13 +57,12 @@ This policy setting allows you to determine whether members of the Administrator
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DeviceInstall_AllowAdminInstall-DFProperties-End -->
 
 <!-- DeviceInstall_AllowAdminInstall-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -92,7 +89,7 @@ This policy setting allows you to determine whether members of the Administrator
 <!-- DeviceInstall_DeniedPolicy_DetailText-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DeviceInstall_DeniedPolicy_DetailText-Applicability-End -->
 
 <!-- DeviceInstall_DeniedPolicy_DetailText-OmaUri-Begin -->
@@ -107,7 +104,7 @@ This policy setting allows you to display a custom message to users in a notific
 
 - If you enable this policy setting, Windows displays the text you type in the Detail Text box when a policy setting prevents device installation.
 
-- If you disable or do not configure this policy setting, Windows displays a default message when a policy setting prevents device installation.
+- If you disable or don't configure this policy setting, Windows displays a default message when a policy setting prevents device installation.
 <!-- DeviceInstall_DeniedPolicy_DetailText-Description-End -->
 
 <!-- DeviceInstall_DeniedPolicy_DetailText-Editable-Begin -->
@@ -119,13 +116,12 @@ This policy setting allows you to display a custom message to users in a notific
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DeviceInstall_DeniedPolicy_DetailText-DFProperties-End -->
 
 <!-- DeviceInstall_DeniedPolicy_DetailText-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -151,7 +147,7 @@ This policy setting allows you to display a custom message to users in a notific
 <!-- DeviceInstall_DeniedPolicy_SimpleText-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DeviceInstall_DeniedPolicy_SimpleText-Applicability-End -->
 
 <!-- DeviceInstall_DeniedPolicy_SimpleText-OmaUri-Begin -->
@@ -166,7 +162,7 @@ This policy setting allows you to display a custom message title in a notificati
 
 - If you enable this policy setting, Windows displays the text you type in the Main Text box as the title text of a notification when a policy setting prevents device installation.
 
-- If you disable or do not configure this policy setting, Windows displays a default title in a notification when a policy setting prevents device installation.
+- If you disable or don't configure this policy setting, Windows displays a default title in a notification when a policy setting prevents device installation.
 <!-- DeviceInstall_DeniedPolicy_SimpleText-Description-End -->
 
 <!-- DeviceInstall_DeniedPolicy_SimpleText-Editable-Begin -->
@@ -178,13 +174,12 @@ This policy setting allows you to display a custom message title in a notificati
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DeviceInstall_DeniedPolicy_SimpleText-DFProperties-End -->
 
 <!-- DeviceInstall_DeniedPolicy_SimpleText-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -210,7 +205,7 @@ This policy setting allows you to display a custom message title in a notificati
 <!-- DeviceInstall_InstallTimeout-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DeviceInstall_InstallTimeout-Applicability-End -->
 
 <!-- DeviceInstall_InstallTimeout-OmaUri-Begin -->
@@ -225,7 +220,7 @@ This policy setting allows you to configure the number of seconds Windows waits 
 
 - If you enable this policy setting, Windows waits for the number of seconds you specify before terminating the installation.
 
-- If you disable or do not configure this policy setting, Windows waits 240 seconds for a device installation task to complete before terminating the installation.
+- If you disable or don't configure this policy setting, Windows waits 240 seconds for a device installation task to complete before terminating the installation.
 <!-- DeviceInstall_InstallTimeout-Description-End -->
 
 <!-- DeviceInstall_InstallTimeout-Editable-Begin -->
@@ -237,13 +232,12 @@ This policy setting allows you to configure the number of seconds Windows waits 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DeviceInstall_InstallTimeout-DFProperties-End -->
 
 <!-- DeviceInstall_InstallTimeout-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -269,7 +263,7 @@ This policy setting allows you to configure the number of seconds Windows waits 
 <!-- DeviceInstall_Policy_RebootTime-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DeviceInstall_Policy_RebootTime-Applicability-End -->
 
 <!-- DeviceInstall_Policy_RebootTime-OmaUri-Begin -->
@@ -284,10 +278,10 @@ This policy setting establishes the amount of time (in seconds) that the system 
 
 - If you enable this policy setting, set the amount of seconds you want the system to wait until a reboot.
 
-- If you disable or do not configure this policy setting, the system does not force a reboot.
+- If you disable or don't configure this policy setting, the system doesn't force a reboot.
 
 > [!NOTE]
-> If no reboot is forced, the device installation restriction right will not take effect until the system is restarted.
+> If no reboot is forced, the device installation restriction right won't take effect until the system is restarted.
 <!-- DeviceInstall_Policy_RebootTime-Description-End -->
 
 <!-- DeviceInstall_Policy_RebootTime-Editable-Begin -->
@@ -299,13 +293,12 @@ This policy setting establishes the amount of time (in seconds) that the system 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DeviceInstall_Policy_RebootTime-DFProperties-End -->
 
 <!-- DeviceInstall_Policy_RebootTime-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -332,7 +325,7 @@ This policy setting establishes the amount of time (in seconds) that the system 
 <!-- DeviceInstall_Removable_Deny-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DeviceInstall_Removable_Deny-Applicability-End -->
 
 <!-- DeviceInstall_Removable_Deny-OmaUri-Begin -->
@@ -343,14 +336,16 @@ This policy setting establishes the amount of time (in seconds) that the system 
 
 <!-- DeviceInstall_Removable_Deny-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to prevent Windows from installing removable devices. A device is considered removable when the driver for the device to which it is connected indicates that the device is removable. For example, a Universal Serial Bus (USB) device is reported to be removable by the drivers for the USB hub to which the device is connected. By default, this policy setting takes precedence over any other policy setting that allows Windows to install a device.
+This policy setting allows you to prevent Windows from installing removable devices. A device is considered removable when the driver for the device to which it's connected indicates that the device is removable. For example, a Universal Serial Bus (USB) device is reported to be removable by the drivers for the USB hub to which the device is connected. By default, this policy setting takes precedence over any other policy setting that allows Windows to install a device.
 
-NOTE: To enable the "Allow installation of devices using drivers that match these device setup classes", "Allow installation of devices that match any of these device IDs", and "Allow installation of devices that match any of these device instance IDs" policy settings to supersede this policy setting for applicable devices, enable the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting.
+> [!NOTE]
+> To enable the "Allow installation of devices using drivers that match these device setup classes", "Allow installation of devices that match any of these device IDs", and "Allow installation of devices that match any of these device instance IDs" policy settings to supersede this policy setting for applicable devices, enable the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting.
 
-- If you enable this policy setting, Windows is prevented from installing removable devices and existing removable devices cannot have their drivers updated.
+- If you enable this policy setting, Windows is prevented from installing removable devices and existing removable devices can't have their drivers updated.
+
 - If you enable this policy setting on a remote desktop server, the policy setting affects redirection of removable devices from a remote desktop client to the remote desktop server.
 
-- If you disable or do not configure this policy setting, Windows can install and update driver packages for removable devices as allowed or prevented by other policy settings.
+- If you disable or don't configure this policy setting, Windows can install and update driver packages for removable devices as allowed or prevented by other policy settings.
 <!-- DeviceInstall_Removable_Deny-Description-End -->
 
 <!-- DeviceInstall_Removable_Deny-Editable-Begin -->
@@ -362,13 +357,12 @@ NOTE: To enable the "Allow installation of devices using drivers that match thes
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DeviceInstall_Removable_Deny-DFProperties-End -->
 
 <!-- DeviceInstall_Removable_Deny-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -395,7 +389,7 @@ NOTE: To enable the "Allow installation of devices using drivers that match thes
 <!-- DeviceInstall_SystemRestore-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DeviceInstall_SystemRestore-Applicability-End -->
 
 <!-- DeviceInstall_SystemRestore-OmaUri-Begin -->
@@ -408,9 +402,9 @@ NOTE: To enable the "Allow installation of devices using drivers that match thes
 <!-- Description-Source-ADMX -->
 This policy setting allows you to prevent Windows from creating a system restore point during device activity that would normally prompt Windows to create a system restore point. Windows normally creates restore points for certain driver activity, such as the installation of an unsigned driver. A system restore point enables you to more easily restore your system to its state before the activity.
 
-- If you enable this policy setting, Windows does not create a system restore point when one would normally be created.
+- If you enable this policy setting, Windows doesn't create a system restore point when one would normally be created.
 
-- If you disable or do not configure this policy setting, Windows creates a system restore point as it normally would.
+- If you disable or don't configure this policy setting, Windows creates a system restore point as it normally would.
 <!-- DeviceInstall_SystemRestore-Description-End -->
 
 <!-- DeviceInstall_SystemRestore-Editable-Begin -->
@@ -422,13 +416,12 @@ This policy setting allows you to prevent Windows from creating a system restore
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DeviceInstall_SystemRestore-DFProperties-End -->
 
 <!-- DeviceInstall_SystemRestore-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -455,7 +448,7 @@ This policy setting allows you to prevent Windows from creating a system restore
 <!-- DriverInstall_Classes_AllowUser-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DriverInstall_Classes_AllowUser-Applicability-End -->
 
 <!-- DriverInstall_Classes_AllowUser-OmaUri-Begin -->
@@ -470,7 +463,7 @@ This policy setting specifies a list of device setup class GUIDs describing driv
 
 - If you enable this policy setting, members of the Users group may install new drivers for the specified device setup classes. The drivers must be signed according to Windows Driver Signing Policy, or be signed by publishers already in the TrustedPublisher store.
 
-- If you disable or do not configure this policy setting, only members of the Administrators group are allowed to install new driver packages on the system.
+- If you disable or don't configure this policy setting, only members of the Administrators group are allowed to install new driver packages on the system.
 <!-- DriverInstall_Classes_AllowUser-Description-End -->
 
 <!-- DriverInstall_Classes_AllowUser-Editable-Begin -->
@@ -482,13 +475,12 @@ This policy setting specifies a list of device setup class GUIDs describing driv
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DriverInstall_Classes_AllowUser-DFProperties-End -->
 
 <!-- DriverInstall_Classes_AllowUser-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

@@ -4,7 +4,7 @@ description: Learn more about the Storage Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- Storage-Begin -->
 # Policy CSP - Storage
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- Storage-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -31,7 +28,7 @@ ms.topic: reference
 <!-- AllowDiskHealthModelUpdates-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- AllowDiskHealthModelUpdates-Applicability-End -->
 
 <!-- AllowDiskHealthModelUpdates-OmaUri-Begin -->
@@ -45,12 +42,15 @@ ms.topic: reference
 Allows downloading new updates to ML Model parameters for predicting storage disk failure.
 
 Enabled:
+
 Updates would be downloaded for the Disk Failure Prediction Failure Model.
 
 Disabled:
-Updates would not be downloaded for the Disk Failure Prediction Failure Model.
+
+Updates wouldn't be downloaded for the Disk Failure Prediction Failure Model.
 
 Not configured:
+
 Same as Enabled.
 <!-- AllowDiskHealthModelUpdates-Description-End -->
 
@@ -63,7 +63,7 @@ Same as Enabled.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowDiskHealthModelUpdates-DFProperties-End -->
@@ -73,7 +73,7 @@ Same as Enabled.
 
 | Value | Description |
 |:--|:--|
-| 0 | Do not allow. |
+| 0 | Don't allow. |
 | 1 (Default) | Allow. |
 <!-- AllowDiskHealthModelUpdates-AllowedValues-End -->
 
@@ -103,7 +103,7 @@ Same as Enabled.
 <!-- AllowStorageSenseGlobal-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- AllowStorageSenseGlobal-Applicability-End -->
 
 <!-- AllowStorageSenseGlobal-OmaUri-Begin -->
@@ -117,12 +117,15 @@ Same as Enabled.
 Storage Sense can automatically clean some of the user's files to free up disk space. By default, Storage Sense is automatically turned on when the machine runs into low disk space and is set to run whenever the machine runs into storage pressure. This cadence can be changed in Storage settings or set with the "Configure Storage Sense cadence" group policy.
 
 Enabled:
-Storage Sense is turned on for the machine, with the default cadence as 'during low free disk space'. Users cannot disable Storage Sense, but they can adjust the cadence (unless you also configure the "Configure Storage Sense cadence" group policy).
+
+Storage Sense is turned on for the machine, with the default cadence as 'during low free disk space'. Users can't disable Storage Sense, but they can adjust the cadence (unless you also configure the "Configure Storage Sense cadence" group policy).
 
 Disabled:
-Storage Sense is turned off the machine. Users cannot enable Storage Sense.
+
+Storage Sense is turned off the machine. Users can't enable Storage Sense.
 
 Not Configured:
+
 By default, Storage Sense is turned off until the user runs into low disk space or the user enables it manually. Users can configure this setting in Storage settings.
 <!-- AllowStorageSenseGlobal-Description-End -->
 
@@ -135,7 +138,7 @@ By default, Storage Sense is turned off until the user runs into low disk space 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- AllowStorageSenseGlobal-DFProperties-End -->
@@ -175,7 +178,7 @@ By default, Storage Sense is turned off until the user runs into low disk space 
 <!-- AllowStorageSenseTemporaryFilesCleanup-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- AllowStorageSenseTemporaryFilesCleanup-Applicability-End -->
 
 <!-- AllowStorageSenseTemporaryFilesCleanup-OmaUri-Begin -->
@@ -186,17 +189,20 @@ By default, Storage Sense is turned off until the user runs into low disk space 
 
 <!-- AllowStorageSenseTemporaryFilesCleanup-Description-Begin -->
 <!-- Description-Source-ADMX -->
-When Storage Sense runs, it can delete the user's temporary files that are not in use.
+When Storage Sense runs, it can delete the user's temporary files that aren't in use.
 
-If the group policy "Allow Storage Sense" is disabled, then this policy does not have any effect.
+If the group policy "Allow Storage Sense" is disabled, then this policy doesn't have any effect.
 
 Enabled:
-Storage Sense will delete the user's temporary files that are not in use. Users cannot disable this setting in Storage settings.
+
+Storage Sense will delete the user's temporary files that aren't in use. Users can't disable this setting in Storage settings.
 
 Disabled:
-Storage Sense will not delete the user's temporary files. Users cannot enable this setting in Storage settings.
+
+Storage Sense won't delete the user's temporary files. Users can't enable this setting in Storage settings.
 
 Not Configured:
+
 By default, Storage Sense will delete the user's temporary files. Users can configure this setting in Storage settings.
 <!-- AllowStorageSenseTemporaryFilesCleanup-Description-End -->
 
@@ -209,7 +215,7 @@ By default, Storage Sense will delete the user's temporary files. Users can conf
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowStorageSenseTemporaryFilesCleanup-DFProperties-End -->
@@ -249,7 +255,7 @@ By default, Storage Sense will delete the user's temporary files. Users can conf
 <!-- ConfigStorageSenseCloudContentDehydrationThreshold-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- ConfigStorageSenseCloudContentDehydrationThreshold-Applicability-End -->
 
 <!-- ConfigStorageSenseCloudContentDehydrationThreshold-OmaUri-Begin -->
@@ -262,14 +268,17 @@ By default, Storage Sense will delete the user's temporary files. Users can conf
 <!-- Description-Source-ADMX -->
 When Storage Sense runs, it can dehydrate cloud-backed content that hasn't been opened in a certain amount of days.
 
-If the group policy "Allow Storage Sense" is disabled, then this policy does not have any effect.
+If the group policy "Allow Storage Sense" is disabled, then this policy doesn't have any effect.
 
 Enabled:
+
 You must provide the minimum number of days a cloud-backed file can remain unopened before Storage Sense dehydrates it from the sync root. Supported values are: 0 - 365.
-If you set this value to zero, Storage Sense will not dehydrate any cloud-backed content. The default value is 0, or never dehydrating cloud-backed content.
+
+If you set this value to zero, Storage Sense won't dehydrate any cloud-backed content. The default value is 0, or never dehydrating cloud-backed content.
 
 Disabled or Not Configured:
-By default, Storage Sense will not dehydrate any cloud-backed content. Users can configure this setting in Storage settings.
+
+By default, Storage Sense won't dehydrate any cloud-backed content. Users can configure this setting in Storage settings.
 <!-- ConfigStorageSenseCloudContentDehydrationThreshold-Description-End -->
 
 <!-- ConfigStorageSenseCloudContentDehydrationThreshold-Editable-Begin -->
@@ -281,7 +290,7 @@ By default, Storage Sense will not dehydrate any cloud-backed content. Users can
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-365]` |
 | Default Value  | 0 |
@@ -312,7 +321,7 @@ By default, Storage Sense will not dehydrate any cloud-backed content. Users can
 <!-- ConfigStorageSenseDownloadsCleanupThreshold-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- ConfigStorageSenseDownloadsCleanupThreshold-Applicability-End -->
 
 <!-- ConfigStorageSenseDownloadsCleanupThreshold-OmaUri-Begin -->
@@ -325,14 +334,17 @@ By default, Storage Sense will not dehydrate any cloud-backed content. Users can
 <!-- Description-Source-ADMX -->
 When Storage Sense runs, it can delete files in the user's Downloads folder if they haven't been opened for more than a certain number of days.
 
-If the group policy "Allow Storage Sense" is disabled, then this policy does not have any effect.
+If the group policy "Allow Storage Sense" is disabled, then this policy doesn't have any effect.
 
 Enabled:
+
 You must provide the minimum number of days a file can remain unopened before Storage Sense deletes it from Downloads folder. Supported values are: 0 - 365.
-If you set this value to zero, Storage Sense will not delete files in the user's Downloads folder. The default is 0, or never deleting files in the Downloads folder.
+
+If you set this value to zero, Storage Sense won't delete files in the user's Downloads folder. The default is 0, or never deleting files in the Downloads folder.
 
 Disabled or Not Configured:
-By default, Storage Sense will not delete files in the user's Downloads folder. Users can configure this setting in Storage settings.
+
+By default, Storage Sense won't delete files in the user's Downloads folder. Users can configure this setting in Storage settings.
 <!-- ConfigStorageSenseDownloadsCleanupThreshold-Description-End -->
 
 <!-- ConfigStorageSenseDownloadsCleanupThreshold-Editable-Begin -->
@@ -344,7 +356,7 @@ By default, Storage Sense will not delete files in the user's Downloads folder. 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-365]` |
 | Default Value  | 0 |
@@ -375,7 +387,7 @@ By default, Storage Sense will not delete files in the user's Downloads folder. 
 <!-- ConfigStorageSenseGlobalCadence-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- ConfigStorageSenseGlobalCadence-Applicability-End -->
 
 <!-- ConfigStorageSenseGlobalCadence-OmaUri-Begin -->
@@ -388,12 +400,14 @@ By default, Storage Sense will not delete files in the user's Downloads folder. 
 <!-- Description-Source-ADMX -->
 Storage Sense can automatically clean some of the user's files to free up disk space.
 
-If the group policy "Allow Storage Sense" is disabled, then this policy does not have any effect.
+If the group policy "Allow Storage Sense" is disabled, then this policy doesn't have any effect.
 
 Enabled:
+
 You must provide the desired Storage Sense cadence. Supported options are: daily, weekly, monthly, and during low free disk space. The default is 0 (during low free disk space).
 
 Disabled or Not Configured:
+
 By default, the Storage Sense cadence is set to "during low free disk space". Users can configure this setting in Storage settings.
 <!-- ConfigStorageSenseGlobalCadence-Description-End -->
 
@@ -413,7 +427,7 @@ Use the following integer values for the supported options:
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-4294967295]` |
 | Default Value  | 0 |
@@ -444,7 +458,7 @@ Use the following integer values for the supported options:
 <!-- ConfigStorageSenseRecycleBinCleanupThreshold-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- ConfigStorageSenseRecycleBinCleanupThreshold-Applicability-End -->
 
 <!-- ConfigStorageSenseRecycleBinCleanupThreshold-OmaUri-Begin -->
@@ -455,15 +469,18 @@ Use the following integer values for the supported options:
 
 <!-- ConfigStorageSenseRecycleBinCleanupThreshold-Description-Begin -->
 <!-- Description-Source-ADMX -->
-When Storage Sense runs, it can delete files in the user's Recycle Bin if they have been there for over a certain amount of days.
+When Storage Sense runs, it can delete files in the user's Recycle Bin if they've been there for over a certain amount of days.
 
-If the group policy "Allow Storage Sense" is disabled, then this policy does not have any effect.
+If the group policy "Allow Storage Sense" is disabled, then this policy doesn't have any effect.
 
 Enabled:
+
 You must provide the minimum age threshold (in days) of a file in the Recycle Bin before Storage Sense will delete it. Supported values are: 0 - 365.
-If you set this value to zero, Storage Sense will not delete files in the user's Recycle Bin. The default is 30 days.
+
+If you set this value to zero, Storage Sense won't delete files in the user's Recycle Bin. The default is 30 days.
 
 Disabled or Not Configured:
+
 By default, Storage Sense will delete files in the user's Recycle Bin that have been there for over 30 days. Users can configure this setting in Storage settings.
 <!-- ConfigStorageSenseRecycleBinCleanupThreshold-Description-End -->
 
@@ -476,7 +493,7 @@ By default, Storage Sense will delete files in the user's Recycle Bin that have 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-365]` |
 | Default Value  | 30 |
@@ -507,7 +524,7 @@ By default, Storage Sense will delete files in the user's Recycle Bin that have 
 <!-- EnhancedStorageDevices-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- EnhancedStorageDevices-Applicability-End -->
 
 <!-- EnhancedStorageDevices-OmaUri-Begin -->
@@ -520,9 +537,9 @@ By default, Storage Sense will delete files in the user's Recycle Bin that have 
 <!-- Description-Source-ADMX -->
 This policy setting configures whether or not Windows will activate an Enhanced Storage device.
 
-- If you enable this policy setting, Windows will not activate unactivated Enhanced Storage devices.
+- If you enable this policy setting, Windows won't activate unactivated Enhanced Storage devices.
 
-- If you disable or do not configure this policy setting, Windows will activate unactivated Enhanced Storage devices.
+- If you disable or don't configure this policy setting, Windows will activate unactivated Enhanced Storage devices.
 <!-- EnhancedStorageDevices-Description-End -->
 
 <!-- EnhancedStorageDevices-Editable-Begin -->
@@ -534,13 +551,12 @@ This policy setting configures whether or not Windows will activate an Enhanced 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- EnhancedStorageDevices-DFProperties-End -->
 
 <!-- EnhancedStorageDevices-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -567,7 +583,7 @@ This policy setting configures whether or not Windows will activate an Enhanced 
 <!-- RemovableDiskDenyWriteAccess-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- RemovableDiskDenyWriteAccess-Applicability-End -->
 
 <!-- RemovableDiskDenyWriteAccess-OmaUri-Begin -->
@@ -582,10 +598,10 @@ This policy setting denies write access to removable disks.
 
 - If you enable this policy setting, write access is denied to this removable storage class.
 
-- If you disable or do not configure this policy setting, write access is allowed to this removable storage class.
+- If you disable or don't configure this policy setting, write access is allowed to this removable storage class.
 
 > [!NOTE]
-> To require that users write data to BitLocker-protected storage, enable the policy setting "Deny write access to drives not protected by BitLocker," which is located in "Computer Configuration\Administrative Templates\Windows Components\BitLocker Drive Encryption\Removable Data Drives."
+> To require that users write data to BitLocker-protected storage, enable the policy setting "Deny write access to drives not protected by BitLocker," which is located in "Computer Configuration\Administrative Templates\Windows Components\BitLocker Drive Encryption\Removable Data Drives".
 <!-- RemovableDiskDenyWriteAccess-Description-End -->
 
 <!-- RemovableDiskDenyWriteAccess-Editable-Begin -->
@@ -597,7 +613,7 @@ This policy setting denies write access to removable disks.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- RemovableDiskDenyWriteAccess-DFProperties-End -->
@@ -636,7 +652,7 @@ This policy setting denies write access to removable disks.
 <!-- WPDDevicesDenyReadAccessPerDevice-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- WPDDevicesDenyReadAccessPerDevice-Applicability-End -->
 
 <!-- WPDDevicesDenyReadAccessPerDevice-OmaUri-Begin -->
@@ -651,7 +667,7 @@ This policy setting denies read access to removable disks, which may include med
 
 - If you enable this policy setting, read access is denied to this removable storage class.
 
-- If you disable or do not configure this policy setting, read access is allowed to this removable storage class.
+- If you disable or don't configure this policy setting, read access is allowed to this removable storage class.
 <!-- WPDDevicesDenyReadAccessPerDevice-Description-End -->
 
 <!-- WPDDevicesDenyReadAccessPerDevice-Editable-Begin -->
@@ -674,13 +690,12 @@ To enable this policy, the minimum OS requirement is Windows 10, version 1809 an
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- WPDDevicesDenyReadAccessPerDevice-DFProperties-End -->
 
 <!-- WPDDevicesDenyReadAccessPerDevice-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -707,7 +722,7 @@ To enable this policy, the minimum OS requirement is Windows 10, version 1809 an
 <!-- WPDDevicesDenyReadAccessPerUser-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- WPDDevicesDenyReadAccessPerUser-Applicability-End -->
 
 <!-- WPDDevicesDenyReadAccessPerUser-OmaUri-Begin -->
@@ -722,7 +737,7 @@ This policy setting denies read access to removable disks, which may include med
 
 - If you enable this policy setting, read access is denied to this removable storage class.
 
-- If you disable or do not configure this policy setting, read access is allowed to this removable storage class.
+- If you disable or don't configure this policy setting, read access is allowed to this removable storage class.
 <!-- WPDDevicesDenyReadAccessPerUser-Description-End -->
 
 <!-- WPDDevicesDenyReadAccessPerUser-Editable-Begin -->
@@ -745,13 +760,12 @@ To enable this policy, the minimum OS requirement is Windows 10, version 1809 an
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- WPDDevicesDenyReadAccessPerUser-DFProperties-End -->
 
 <!-- WPDDevicesDenyReadAccessPerUser-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -778,7 +792,7 @@ To enable this policy, the minimum OS requirement is Windows 10, version 1809 an
 <!-- WPDDevicesDenyWriteAccessPerDevice-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- WPDDevicesDenyWriteAccessPerDevice-Applicability-End -->
 
 <!-- WPDDevicesDenyWriteAccessPerDevice-OmaUri-Begin -->
@@ -793,7 +807,7 @@ This policy setting denies write access to removable disks, which may include me
 
 - If you enable this policy setting, write access is denied to this removable storage class.
 
-- If you disable or do not configure this policy setting, write access is allowed to this removable storage class.
+- If you disable or don't configure this policy setting, write access is allowed to this removable storage class.
 <!-- WPDDevicesDenyWriteAccessPerDevice-Description-End -->
 
 <!-- WPDDevicesDenyWriteAccessPerDevice-Editable-Begin -->
@@ -816,13 +830,12 @@ To enable this policy, the minimum OS requirement is Windows 10, version 1809 an
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- WPDDevicesDenyWriteAccessPerDevice-DFProperties-End -->
 
 <!-- WPDDevicesDenyWriteAccessPerDevice-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -849,7 +862,7 @@ To enable this policy, the minimum OS requirement is Windows 10, version 1809 an
 <!-- WPDDevicesDenyWriteAccessPerUser-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- WPDDevicesDenyWriteAccessPerUser-Applicability-End -->
 
 <!-- WPDDevicesDenyWriteAccessPerUser-OmaUri-Begin -->
@@ -864,7 +877,7 @@ This policy setting denies write access to removable disks, which may include me
 
 - If you enable this policy setting, write access is denied to this removable storage class.
 
-- If you disable or do not configure this policy setting, write access is allowed to this removable storage class.
+- If you disable or don't configure this policy setting, write access is allowed to this removable storage class.
 <!-- WPDDevicesDenyWriteAccessPerUser-Description-End -->
 
 <!-- WPDDevicesDenyWriteAccessPerUser-Editable-Begin -->
@@ -887,13 +900,12 @@ To enable this policy, the minimum OS requirement is Windows 10, version 1809 an
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- WPDDevicesDenyWriteAccessPerUser-DFProperties-End -->
 
 <!-- WPDDevicesDenyWriteAccessPerUser-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

@@ -8,7 +8,9 @@ ms.localizationpriority: medium
 author: frankroj
 ms.topic: article
 ms.technology: itpro-deploy
-ms.collection: highpri, tier2
+ms.collection:
+  - highpri
+  - tier3
 ms.date: 11/28/2022
 ---
 

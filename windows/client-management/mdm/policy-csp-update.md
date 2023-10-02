@@ -4,7 +4,7 @@ description: Learn more about the Update Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/03/2023
+ms.date: 08/28/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,8 +16,7 @@ ms.topic: reference
 <!-- Update-Begin -->
 # Policy CSP - Update
 
-> [!IMPORTANT]
-> This CSP contains preview policies that are under development and only applicable for [Windows Insider Preview builds](/windows-insider/). These policies are subject to change and may have dependencies on other features or services in preview.
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- Update-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -26,11 +25,11 @@ ms.topic: reference
 Update CSP policies are listed below based on the group policy area:
 
 - [Windows Insider Preview](#windows-insider-preview)
-  - [AllowTemporaryEnterpriseFeatureControl](#allowtemporaryenterprisefeaturecontrol)
   - [ConfigureDeadlineNoAutoRebootForFeatureUpdates](#configuredeadlinenoautorebootforfeatureupdates)
   - [ConfigureDeadlineNoAutoRebootForQualityUpdates](#configuredeadlinenoautorebootforqualityupdates)
 - [Manage updates offered from Windows Update](#manage-updates-offered-from-windows-update)
   - [AllowNonMicrosoftSignedUpdate](#allownonmicrosoftsignedupdate)
+  - [AllowOptionalContent](#allowoptionalcontent)
   - [AutomaticMaintenanceWakeUp](#automaticmaintenancewakeup)
   - [BranchReadinessLevel](#branchreadinesslevel)
   - [DeferFeatureUpdatesPeriodInDays](#deferfeatureupdatesperiodindays)
@@ -63,6 +62,7 @@ Update CSP policies are listed below based on the group policy area:
   - [AllowAutoUpdate](#allowautoupdate)
   - [AllowAutoWindowsUpdateDownloadOverMeteredNetwork](#allowautowindowsupdatedownloadovermeterednetwork)
   - [AllowMUUpdateService](#allowmuupdateservice)
+  - [AllowTemporaryEnterpriseFeatureControl](#allowtemporaryenterprisefeaturecontrol)
   - [ConfigureDeadlineForFeatureUpdates](#configuredeadlineforfeatureupdates)
   - [ConfigureDeadlineForQualityUpdates](#configuredeadlineforqualityupdates)
   - [ConfigureDeadlineGracePeriod](#configuredeadlinegraceperiod)
@@ -107,82 +107,13 @@ Update CSP policies are listed below based on the group policy area:
 
 ## Windows Insider Preview
 
-<!-- AllowTemporaryEnterpriseFeatureControl-Begin -->
-### AllowTemporaryEnterpriseFeatureControl
-
-<!-- AllowTemporaryEnterpriseFeatureControl-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
-<!-- AllowTemporaryEnterpriseFeatureControl-Applicability-End -->
-
-<!-- AllowTemporaryEnterpriseFeatureControl-OmaUri-Begin -->
-```Device
-./Device/Vendor/MSFT/Policy/Config/Update/AllowTemporaryEnterpriseFeatureControl
-```
-<!-- AllowTemporaryEnterpriseFeatureControl-OmaUri-End -->
-
-<!-- AllowTemporaryEnterpriseFeatureControl-Description-Begin -->
-<!-- Description-Source-ADMX -->
-Features introduced via servicing (outside of the annual feature update) are off by default for devices that have their Windows updates managed*.
-
-- If this policy is configured to "Enabled", then all features available in the latest monthly quality update installed will be on.
-
-- If this policy is set to "Not Configured" or "Disabled" then features that are shipped via a monthly quality update (servicing) will remain off until the feature update that includes these features is installed.
-
-*Windows update managed devices are those that have their Windows updates managed via policy; whether via the cloud using Windows Update for Business or on-premises with Windows Server Update Services (WSUS).
-<!-- AllowTemporaryEnterpriseFeatureControl-Description-End -->
-
-<!-- AllowTemporaryEnterpriseFeatureControl-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- AllowTemporaryEnterpriseFeatureControl-Editable-End -->
-
-<!-- AllowTemporaryEnterpriseFeatureControl-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | int |
-| Access Type | Add, Delete, Get, Replace |
-| Default Value  | 0 |
-<!-- AllowTemporaryEnterpriseFeatureControl-DFProperties-End -->
-
-<!-- AllowTemporaryEnterpriseFeatureControl-AllowedValues-Begin -->
-**Allowed values**:
-
-| Value | Description |
-|:--|:--|
-| 0 (Default) | Not allowed. |
-| 1 | Allowed. |
-<!-- AllowTemporaryEnterpriseFeatureControl-AllowedValues-End -->
-
-<!-- AllowTemporaryEnterpriseFeatureControl-GpMapping-Begin -->
-**Group policy mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | AllowTemporaryEnterpriseFeatureControl |
-| Friendly Name | Enable features introduced via servicing that are off by default |
-| Location | Computer Configuration |
-| Path | Windows Components > Windows Update > Manage end user experience |
-| Registry Key Name | Software\Policies\Microsoft\Windows\WindowsUpdate |
-| Registry Value Name | AllowTemporaryEnterpriseFeatureControl |
-| ADMX File Name | WindowsUpdate.admx |
-<!-- AllowTemporaryEnterpriseFeatureControl-GpMapping-End -->
-
-<!-- AllowTemporaryEnterpriseFeatureControl-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- AllowTemporaryEnterpriseFeatureControl-Examples-End -->
-
-<!-- AllowTemporaryEnterpriseFeatureControl-End -->
-
 <!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-Begin -->
 ### ConfigureDeadlineNoAutoRebootForFeatureUpdates
 
 <!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-Applicability-End -->
 
 <!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-OmaUri-Begin -->
@@ -193,7 +124,7 @@ Features introduced via servicing (outside of the annual feature update) are off
 
 <!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-Description-Begin -->
 <!-- Description-Source-DDF -->
-When enabled, devices will not automatically restart outside of active hours until the deadline and grace period have expired for feature updates, even if an update is ready for restart. When disabled, an automatic restart may be attempted outside of active hours after update is ready for restart before the deadline is reached. Takes effect only if Update/ConfigureDeadlineForFeatureUpdates is configured.
+When enabled, devices won't automatically restart outside of active hours until the deadline and grace period have expired for feature updates, even if an update is ready for restart. When disabled, an automatic restart may be attempted outside of active hours after update is ready for restart before the deadline is reached. Takes effect only if Update/ConfigureDeadlineForFeatureUpdates is configured.
 <!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-Description-End -->
 
 <!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-Editable-Begin -->
@@ -205,7 +136,7 @@ When enabled, devices will not automatically restart outside of active hours unt
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-DFProperties-End -->
@@ -241,7 +172,7 @@ When enabled, devices will not automatically restart outside of active hours unt
 <!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-Applicability-End -->
 
 <!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-OmaUri-Begin -->
@@ -252,7 +183,7 @@ When enabled, devices will not automatically restart outside of active hours unt
 
 <!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-Description-Begin -->
 <!-- Description-Source-DDF -->
-When enabled, devices will not automatically restart outside of active hours until the deadline and grace period have expired for quality updates, even if an update is ready for restart. When disabled, an automatic restart may be attempted outside of active hours after update is ready for restart before the deadline is reached. Takes effect only if Update/ConfigureDeadlineForQualityUpdates is configured.
+When enabled, devices won't automatically restart outside of active hours until the deadline and grace period have expired for quality updates, even if an update is ready for restart. When disabled, an automatic restart may be attempted outside of active hours after update is ready for restart before the deadline is reached. Takes effect only if Update/ConfigureDeadlineForQualityUpdates is configured.
 <!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-Description-End -->
 
 <!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-Editable-Begin -->
@@ -264,7 +195,7 @@ When enabled, devices will not automatically restart outside of active hours unt
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-DFProperties-End -->
@@ -302,7 +233,7 @@ When enabled, devices will not automatically restart outside of active hours unt
 <!-- AllowNonMicrosoftSignedUpdate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowNonMicrosoftSignedUpdate-Applicability-End -->
 
 <!-- AllowNonMicrosoftSignedUpdate-OmaUri-Begin -->
@@ -325,7 +256,7 @@ Allows the IT admin to manage whether Automatic Updates accepts updates signed b
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowNonMicrosoftSignedUpdate-DFProperties-End -->
@@ -336,7 +267,7 @@ Allows the IT admin to manage whether Automatic Updates accepts updates signed b
 | Value | Description |
 |:--|:--|
 | 0 | Not allowed or not configured. Updates from an intranet Microsoft update service location must be signed by Microsoft. |
-| 1 (Default) | Allowed. Accepts updates received through an intranet Microsoft update service location, if they are signed by a certificate found in the 'Trusted Publishers' certificate store of the local computer. |
+| 1 (Default) | Allowed. Accepts updates received through an intranet Microsoft update service location, if they're signed by a certificate found in the 'Trusted Publishers' certificate store of the local computer. |
 <!-- AllowNonMicrosoftSignedUpdate-AllowedValues-End -->
 
 <!-- AllowNonMicrosoftSignedUpdate-Examples-Begin -->
@@ -345,13 +276,73 @@ Allows the IT admin to manage whether Automatic Updates accepts updates signed b
 
 <!-- AllowNonMicrosoftSignedUpdate-End -->
 
+<!-- AllowOptionalContent-Begin -->
+### AllowOptionalContent
+
+<!-- AllowOptionalContent-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+<!-- AllowOptionalContent-Applicability-End -->
+
+<!-- AllowOptionalContent-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Update/AllowOptionalContent
+```
+<!-- AllowOptionalContent-OmaUri-End -->
+
+<!-- AllowOptionalContent-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy enables devices to get offered optional updates and users interact with the 'Get the latest updates as soon as they're available' toggle on the Windows Update Settings page.
+<!-- AllowOptionalContent-Description-End -->
+
+<!-- AllowOptionalContent-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowOptionalContent-Editable-End -->
+
+<!-- AllowOptionalContent-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- AllowOptionalContent-DFProperties-End -->
+
+<!-- AllowOptionalContent-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Don't receive optional updates. |
+| 1 | Automatically receive optional updates (including CFRs). |
+| 2 | Automatically receive optional updates. |
+| 3 | Users can select which optional updates to receive. |
+<!-- AllowOptionalContent-AllowedValues-End -->
+
+<!-- AllowOptionalContent-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | AllowOptionalContent |
+| Path | WindowsUpdate > AT > WindowsComponents > WindowsUpdateCat |
+<!-- AllowOptionalContent-GpMapping-End -->
+
+<!-- AllowOptionalContent-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowOptionalContent-Examples-End -->
+
+<!-- AllowOptionalContent-End -->
+
 <!-- AutomaticMaintenanceWakeUp-Begin -->
 ### AutomaticMaintenanceWakeUp
 
 <!-- AutomaticMaintenanceWakeUp-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- AutomaticMaintenanceWakeUp-Applicability-End -->
 
 <!-- AutomaticMaintenanceWakeUp-OmaUri-Begin -->
@@ -368,7 +359,7 @@ The maintenance wakeup policy specifies if Automatic Maintenance should make a w
 
 - If you enable this policy setting, Automatic Maintenance will attempt to set OS wake policy and make a wake request for the daily scheduled time, if required.
 
-- If you disable or do not configure this policy setting, the wake setting as specified in Security and Maintenance/Automatic Maintenance Control Panel will apply.
+- If you disable or don't configure this policy setting, the wake setting as specified in Security and Maintenance/Automatic Maintenance Control Panel will apply.
 <!-- AutomaticMaintenanceWakeUp-Description-End -->
 
 <!-- AutomaticMaintenanceWakeUp-Editable-Begin -->
@@ -380,7 +371,7 @@ The maintenance wakeup policy specifies if Automatic Maintenance should make a w
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AutomaticMaintenanceWakeUp-DFProperties-End -->
@@ -420,7 +411,7 @@ The maintenance wakeup policy specifies if Automatic Maintenance should make a w
 <!-- BranchReadinessLevel-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- BranchReadinessLevel-Applicability-End -->
 
 <!-- BranchReadinessLevel-OmaUri-Begin -->
@@ -430,8 +421,12 @@ The maintenance wakeup policy specifies if Automatic Maintenance should make a w
 <!-- BranchReadinessLevel-OmaUri-End -->
 
 <!-- BranchReadinessLevel-Description-Begin -->
-<!-- Description-Source-DDF -->
-Allows the IT admin to set which branch a device receives their updates from. As of 1903, the branch readiness levels of Semi-Annual Channel (Targeted) and Semi-Annual Channel have been combined into one Semi-Annual Channel set with a value of 16. For devices on 1903 and later releases, the value of 32 is not a supported value.
+<!-- Description-Source-ADMX -->
+Enable this policy to specify when to receive Feature Updates.
+
+Defer Updates | This enables devices to defer taking the next Feature Update available for their current product (or a new product if specified in the Select the target Feature Update version policy). You can defer a Feature Update for up to 14 days for all pre-release channels and up to 365 days for the General Availability Channel. To learn more about the current releases, please see aka.ms/WindowsTargetVersioninfo.
+
+Pause Updates | To prevent Feature Updates from being offered to the device, you can temporarily pause Feature Updates. This pause will remain in effect for 35 days from the specified start date or until the field is cleared. Note, Quality Updates will still be offered even if Feature Updates are paused.
 <!-- BranchReadinessLevel-Description-End -->
 
 <!-- BranchReadinessLevel-Editable-Begin -->
@@ -443,7 +438,7 @@ Allows the IT admin to set which branch a device receives their updates from. As
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 16 |
 <!-- BranchReadinessLevel-DFProperties-End -->
@@ -459,6 +454,7 @@ Allows the IT admin to set which branch a device receives their updates from. As
 | 16 (Default) | {0x10} - Semi-annual Channel (Targeted). Device gets all applicable feature updates from Semi-annual Channel (Targeted). |
 | 32 | 2 {0x20} - Semi-annual Channel. Device gets feature updates from Semi-annual Channel. (*Only applicable to releases prior to 1903, for all releases 1903 and after the Semi-annual Channel and Semi-annual Channel (Targeted) into a single Semi-annual Channel with a value of 16). |
 | 64 | {0x40} - Release Preview of Quality Updates Only. |
+| 128 | {0x80} - Canary Channel. |
 <!-- BranchReadinessLevel-AllowedValues-End -->
 
 <!-- BranchReadinessLevel-GpMapping-Begin -->
@@ -486,7 +482,7 @@ Allows the IT admin to set which branch a device receives their updates from. As
 <!-- DeferFeatureUpdatesPeriodInDays-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- DeferFeatureUpdatesPeriodInDays-Applicability-End -->
 
 <!-- DeferFeatureUpdatesPeriodInDays-OmaUri-Begin -->
@@ -496,11 +492,12 @@ Allows the IT admin to set which branch a device receives their updates from. As
 <!-- DeferFeatureUpdatesPeriodInDays-OmaUri-End -->
 
 <!-- DeferFeatureUpdatesPeriodInDays-Description-Begin -->
-<!-- Description-Source-DDF -->
-Defers Feature Updates for the specified number of days. Supported values are 0-365 days.
+<!-- Description-Source-ADMX -->
+Enable this policy to specify when to receive Feature Updates.
 
-> [!IMPORTANT]
-> The default maximum number of days to defer an update has been increased from 180 (Windows 10, version 1607) to 365 in Windows 10, version 1703.
+Defer Updates | This enables devices to defer taking the next Feature Update available for their current product (or a new product if specified in the Select the target Feature Update version policy). You can defer a Feature Update for up to 14 days for all pre-release channels and up to 365 days for the General Availability Channel. To learn more about the current releases, please see aka.ms/WindowsTargetVersioninfo.
+
+Pause Updates | To prevent Feature Updates from being offered to the device, you can temporarily pause Feature Updates. This pause will remain in effect for 35 days from the specified start date or until the field is cleared. Note, Quality Updates will still be offered even if Feature Updates are paused.
 <!-- DeferFeatureUpdatesPeriodInDays-Description-End -->
 
 <!-- DeferFeatureUpdatesPeriodInDays-Editable-Begin -->
@@ -512,7 +509,7 @@ Defers Feature Updates for the specified number of days. Supported values are 0-
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-365]` |
 | Default Value  | 0 |
@@ -525,7 +522,7 @@ Defers Feature Updates for the specified number of days. Supported values are 0-
 |:--|:--|
 | Name | DeferFeatureUpdates |
 | Friendly Name | Select when Preview Builds and Feature Updates are received |
-| Element Name | How many days after a Feature Update is released would you like to defer the update before it is offered to the device? |
+| Element Name | How many days after a Feature Update is released would you like to defer the update before it's offered to the device? |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Update > Manage updates offered from Windows Update |
 | Registry Key Name | Software\Policies\Microsoft\Windows\WindowsUpdate |
@@ -544,7 +541,7 @@ Defers Feature Updates for the specified number of days. Supported values are 0-
 <!-- DeferQualityUpdatesPeriodInDays-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- DeferQualityUpdatesPeriodInDays-Applicability-End -->
 
 <!-- DeferQualityUpdatesPeriodInDays-OmaUri-Begin -->
@@ -554,8 +551,16 @@ Defers Feature Updates for the specified number of days. Supported values are 0-
 <!-- DeferQualityUpdatesPeriodInDays-OmaUri-End -->
 
 <!-- DeferQualityUpdatesPeriodInDays-Description-Begin -->
-<!-- Description-Source-DDF -->
-Defers Quality Updates for the specified number of days. Supported values are 0-30.
+<!-- Description-Source-ADMX -->
+Enable this policy to specify when to receive quality updates.
+
+You can defer receiving quality updates for up to 30 days.
+
+To prevent quality updates from being received on their scheduled time, you can temporarily pause quality updates. The pause will remain in effect for 35 days or until you clear the start date field.
+
+To resume receiving Quality Updates which are paused, clear the start date field.
+
+If you disable or don't configure this policy, Windows Update won't alter its behavior.
 <!-- DeferQualityUpdatesPeriodInDays-Description-End -->
 
 <!-- DeferQualityUpdatesPeriodInDays-Editable-Begin -->
@@ -567,7 +572,7 @@ Defers Quality Updates for the specified number of days. Supported values are 0-
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-30]` |
 | Default Value  | 0 |
@@ -580,7 +585,7 @@ Defers Quality Updates for the specified number of days. Supported values are 0-
 |:--|:--|
 | Name | DeferQualityUpdates |
 | Friendly Name | Select when Quality Updates are received |
-| Element Name | After a quality update is released, defer receiving it for this many days |
+| Element Name | After a quality update is released, defer receiving it for this many days. |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Update > Manage updates offered from Windows Update |
 | Registry Key Name | Software\Policies\Microsoft\Windows\WindowsUpdate |
@@ -599,7 +604,7 @@ Defers Quality Updates for the specified number of days. Supported values are 0-
 <!-- DisableWUfBSafeguards-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763.1490] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.1110] and later <br> :heavy_check_mark: Windows 10, version 1909 [10.0.18363.1110] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041.546] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763.1490] and later <br> ✅ Windows 10, version 1903 [10.0.18362.1110] and later <br> ✅ Windows 10, version 1909 [10.0.18363.1110] and later <br> ✅ Windows 10, version 2004 [10.0.19041.546] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DisableWUfBSafeguards-Applicability-End -->
 
 <!-- DisableWUfBSafeguards-OmaUri-Begin -->
@@ -632,7 +637,7 @@ IT admins can, if necessary, opt devices out of safeguard protections using this
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DisableWUfBSafeguards-DFProperties-End -->
@@ -643,7 +648,7 @@ IT admins can, if necessary, opt devices out of safeguard protections using this
 | Value | Description |
 |:--|:--|
 | 0 (Default) | Safeguards are enabled and devices may be blocked for upgrades until the safeguard is cleared. |
-| 1 | Safeguards are not enabled and upgrades will be deployed without blocking on safeguards. |
+| 1 | Safeguards aren't enabled and upgrades will be deployed without blocking on safeguards. |
 <!-- DisableWUfBSafeguards-AllowedValues-End -->
 
 <!-- DisableWUfBSafeguards-Examples-Begin -->
@@ -658,7 +663,7 @@ IT admins can, if necessary, opt devices out of safeguard protections using this
 <!-- ExcludeWUDriversInQualityUpdate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- ExcludeWUDriversInQualityUpdate-Applicability-End -->
 
 <!-- ExcludeWUDriversInQualityUpdate-OmaUri-Begin -->
@@ -671,7 +676,7 @@ IT admins can, if necessary, opt devices out of safeguard protections using this
 <!-- Description-Source-ADMX -->
 Enable this policy to not include drivers with Windows quality updates.
 
-- If you disable or do not configure this policy, Windows Update will include updates that have a Driver classification.
+If you disable or don't configure this policy, Windows Update will include updates that have a Driver classification.
 <!-- ExcludeWUDriversInQualityUpdate-Description-End -->
 
 <!-- ExcludeWUDriversInQualityUpdate-Editable-Begin -->
@@ -683,7 +688,7 @@ Enable this policy to not include drivers with Windows quality updates.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- ExcludeWUDriversInQualityUpdate-DFProperties-End -->
@@ -723,7 +728,7 @@ Enable this policy to not include drivers with Windows quality updates.
 <!-- ManagePreviewBuilds-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- ManagePreviewBuilds-Applicability-End -->
 
 <!-- ManagePreviewBuilds-OmaUri-Begin -->
@@ -733,8 +738,28 @@ Enable this policy to not include drivers with Windows quality updates.
 <!-- ManagePreviewBuilds-OmaUri-End -->
 
 <!-- ManagePreviewBuilds-Description-Begin -->
-<!-- Description-Source-DDF -->
-Used to manage Windows 10 Insider Preview builds. Value type is integer.
+<!-- Description-Source-ADMX -->
+Enable this policy to manage which updates you receive prior to the update being released to the world.
+
+Dev Channel.
+
+Ideal for highly technical users. Insiders in the Dev Channel will receive builds from our active development branch that's earliest in a development cycle. These builds aren't matched to a specific Windows 10 release.
+
+Beta Channel.
+
+Ideal for feature explorers who want to see upcoming Windows 10 features. Your feedback will be especially important here as it will help our engineers ensure key issues are fixed before a major release.
+
+Release Preview Channel (default)
+Insiders in the Release Preview Channel will have access to the upcoming release of Windows 10 prior to it being released to the world. These builds are supported by Microsoft. The Release Preview Channel is where we recommend companies preview and validate upcoming Windows 10 releases before broad deployment within their organization.
+
+Release Preview Channel, Quality Updates Only.
+
+Ideal for those who want to validate the features and fixes coming soon to their current version. Note, released feature updates will continue to be offered in accordance with configured policies when this option is selected.
+
+> [!NOTE]
+> Preview Build enrollment requires a telemetry level setting of 2 or higher and your domain registered on insider.windows.com. For additional information on Preview Builds, see: <https://aka.ms/wipforbiz>
+
+If you disable or don't configure this policy, Windows Update won't offer you any pre-release updates and you'll receive such content once released to the world. Disabling this policy will cause any devices currently on a pre-release build to opt out and stay on the latest Feature Update once released.
 <!-- ManagePreviewBuilds-Description-End -->
 
 <!-- ManagePreviewBuilds-Editable-Begin -->
@@ -746,7 +771,7 @@ Used to manage Windows 10 Insider Preview builds. Value type is integer.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 3 |
 <!-- ManagePreviewBuilds-DFProperties-End -->
@@ -787,7 +812,7 @@ Used to manage Windows 10 Insider Preview builds. Value type is integer.
 <!-- PauseFeatureUpdates-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- PauseFeatureUpdates-Applicability-End -->
 
 <!-- PauseFeatureUpdates-OmaUri-Begin -->
@@ -797,8 +822,12 @@ Used to manage Windows 10 Insider Preview builds. Value type is integer.
 <!-- PauseFeatureUpdates-OmaUri-End -->
 
 <!-- PauseFeatureUpdates-Description-Begin -->
-<!-- Description-Source-DDF -->
-Allows IT Admins to pause Feature Updates for up to 60 days.
+<!-- Description-Source-ADMX -->
+Enable this policy to specify when to receive Feature Updates.
+
+Defer Updates | This enables devices to defer taking the next Feature Update available for their current product (or a new product if specified in the Select the target Feature Update version policy). You can defer a Feature Update for up to 14 days for all pre-release channels and up to 365 days for the General Availability Channel. To learn more about the current releases, please see aka.ms/WindowsTargetVersioninfo.
+
+Pause Updates | To prevent Feature Updates from being offered to the device, you can temporarily pause Feature Updates. This pause will remain in effect for 35 days from the specified start date or until the field is cleared. Note, Quality Updates will still be offered even if Feature Updates are paused.
 <!-- PauseFeatureUpdates-Description-End -->
 
 <!-- PauseFeatureUpdates-Editable-Begin -->
@@ -812,7 +841,7 @@ Allows IT Admins to pause Feature Updates for up to 60 days.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- PauseFeatureUpdates-DFProperties-End -->
@@ -822,7 +851,7 @@ Allows IT Admins to pause Feature Updates for up to 60 days.
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Feature Updates are not paused. |
+| 0 (Default) | Feature Updates aren't paused. |
 | 1 | Feature Updates are paused for 60 days or until value set to back to 0, whichever is sooner. |
 <!-- PauseFeatureUpdates-AllowedValues-End -->
 
@@ -851,7 +880,7 @@ Allows IT Admins to pause Feature Updates for up to 60 days.
 <!-- PauseFeatureUpdatesStartTime-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- PauseFeatureUpdatesStartTime-Applicability-End -->
 
 <!-- PauseFeatureUpdatesStartTime-OmaUri-Begin -->
@@ -861,7 +890,7 @@ Allows IT Admins to pause Feature Updates for up to 60 days.
 <!-- PauseFeatureUpdatesStartTime-OmaUri-End -->
 
 <!-- PauseFeatureUpdatesStartTime-Description-Begin -->
-<!-- Description-Source-DDF -->
+<!-- Description-Source-DDF-Forced -->
 Specifies the date and time when the IT admin wants to start pausing the Feature Updates. Value type is string (yyyy-mm-dd, ex. 2018-10-28).
 <!-- PauseFeatureUpdatesStartTime-Description-End -->
 
@@ -874,7 +903,7 @@ Specifies the date and time when the IT admin wants to start pausing the Feature
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- PauseFeatureUpdatesStartTime-DFProperties-End -->
 
@@ -885,7 +914,7 @@ Specifies the date and time when the IT admin wants to start pausing the Feature
 |:--|:--|
 | Name | DeferFeatureUpdates |
 | Friendly Name | Select when Preview Builds and Feature Updates are received |
-| Element Name | Pause Preview Builds or Feature Updates starting |
+| Element Name | Pause Preview Builds or Feature Updates starting. |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Update > Manage updates offered from Windows Update |
 | Registry Key Name | Software\Policies\Microsoft\Windows\WindowsUpdate |
@@ -904,7 +933,7 @@ Specifies the date and time when the IT admin wants to start pausing the Feature
 <!-- PauseQualityUpdates-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- PauseQualityUpdates-Applicability-End -->
 
 <!-- PauseQualityUpdates-OmaUri-Begin -->
@@ -914,8 +943,16 @@ Specifies the date and time when the IT admin wants to start pausing the Feature
 <!-- PauseQualityUpdates-OmaUri-End -->
 
 <!-- PauseQualityUpdates-Description-Begin -->
-<!-- Description-Source-DDF -->
-Allows IT Admins to pause Quality Updates.
+<!-- Description-Source-ADMX -->
+Enable this policy to specify when to receive quality updates.
+
+You can defer receiving quality updates for up to 30 days.
+
+To prevent quality updates from being received on their scheduled time, you can temporarily pause quality updates. The pause will remain in effect for 35 days or until you clear the start date field.
+
+To resume receiving Quality Updates which are paused, clear the start date field.
+
+If you disable or don't configure this policy, Windows Update won't alter its behavior.
 <!-- PauseQualityUpdates-Description-End -->
 
 <!-- PauseQualityUpdates-Editable-Begin -->
@@ -929,7 +966,7 @@ Allows IT Admins to pause Quality Updates.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- PauseQualityUpdates-DFProperties-End -->
@@ -939,7 +976,7 @@ Allows IT Admins to pause Quality Updates.
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Quality Updates are not paused. |
+| 0 (Default) | Quality Updates aren't paused. |
 | 1 | Quality Updates are paused for 35 days or until value set back to 0, whichever is sooner. |
 <!-- PauseQualityUpdates-AllowedValues-End -->
 
@@ -968,7 +1005,7 @@ Allows IT Admins to pause Quality Updates.
 <!-- PauseQualityUpdatesStartTime-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- PauseQualityUpdatesStartTime-Applicability-End -->
 
 <!-- PauseQualityUpdatesStartTime-OmaUri-Begin -->
@@ -978,7 +1015,7 @@ Allows IT Admins to pause Quality Updates.
 <!-- PauseQualityUpdatesStartTime-OmaUri-End -->
 
 <!-- PauseQualityUpdatesStartTime-Description-Begin -->
-<!-- Description-Source-DDF -->
+<!-- Description-Source-DDF-Forced -->
 Specifies the date and time when the IT admin wants to start pausing the Quality Updates. Value type is string (yyyy-mm-dd, ex. 2018-10-28).
 <!-- PauseQualityUpdatesStartTime-Description-End -->
 
@@ -993,7 +1030,7 @@ Specifies the date and time when the IT admin wants to start pausing the Quality
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- PauseQualityUpdatesStartTime-DFProperties-End -->
 
@@ -1004,7 +1041,7 @@ Specifies the date and time when the IT admin wants to start pausing the Quality
 |:--|:--|
 | Name | DeferQualityUpdates |
 | Friendly Name | Select when Quality Updates are received |
-| Element Name | Pause Quality Updates starting |
+| Element Name | Pause Quality Updates starting. |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Update > Manage updates offered from Windows Update |
 | Registry Key Name | Software\Policies\Microsoft\Windows\WindowsUpdate |
@@ -1023,7 +1060,7 @@ Specifies the date and time when the IT admin wants to start pausing the Quality
 <!-- ProductVersion-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ProductVersion-Applicability-End -->
 
 <!-- ProductVersion-OmaUri-Begin -->
@@ -1033,8 +1070,16 @@ Specifies the date and time when the IT admin wants to start pausing the Quality
 <!-- ProductVersion-OmaUri-End -->
 
 <!-- ProductVersion-Description-Begin -->
-<!-- Description-Source-DDF -->
-Enables IT administrators to specify the product version associated with the target feature update they would like their device(s) to move to and/or stay on until they reach end of service or reconfigure the policy. For details about different Windows 10 versions, see [Windows release information](/windows/release-health/release-information).
+<!-- Description-Source-ADMX -->
+Enter the product and version as listed on the Windows Update target version page:
+
+aka.ms/WindowsTargetVersioninfo.
+
+The device will request that Windows Update product and version in subsequent scans.
+
+Entering a target product and clicking OK or Apply means I accept the Microsoft Software License Terms for it found at aka.ms/WindowsTargetVersioninfo. If an organization is licensing the software, I am authorized to bind the organization.
+
+If you enter an invalid value, you'll remain on your current version until you correct the values to a supported product and version.
 <!-- ProductVersion-Description-End -->
 
 <!-- ProductVersion-Editable-Begin -->
@@ -1053,7 +1098,7 @@ Supported value type is a string containing a Windows product. For example, "Win
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ProductVersion-DFProperties-End -->
 
@@ -1064,7 +1109,7 @@ Supported value type is a string containing a Windows product. For example, "Win
 |:--|:--|
 | Name | TargetReleaseVersion |
 | Friendly Name | Select the target Feature Update version |
-| Element Name | Which Windows product version would you like to receive feature updates for? e.g., Windows 10 |
+| Element Name | Which Windows product version would you like to receive feature updates for? e.g., Windows 10. |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Update > Manage updates offered from Windows Update |
 | Registry Key Name | Software\Policies\Microsoft\Windows\WindowsUpdate |
@@ -1083,7 +1128,7 @@ Supported value type is a string containing a Windows product. For example, "Win
 <!-- TargetReleaseVersion-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134.1488] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.1217] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.836] and later <br> :heavy_check_mark: Windows 10, version 1909 [10.0.18363.836] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134.1488] and later <br> ✅ Windows 10, version 1809 [10.0.17763.1217] and later <br> ✅ Windows 10, version 1903 [10.0.18362.836] and later <br> ✅ Windows 10, version 1909 [10.0.18363.836] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- TargetReleaseVersion-Applicability-End -->
 
 <!-- TargetReleaseVersion-OmaUri-Begin -->
@@ -1093,8 +1138,16 @@ Supported value type is a string containing a Windows product. For example, "Win
 <!-- TargetReleaseVersion-OmaUri-End -->
 
 <!-- TargetReleaseVersion-Description-Begin -->
-<!-- Description-Source-DDF -->
-Enables IT administrators to specify which version they would like their device(s) to move to and/or stay on until they reach end of service or reconfigure the policy. For details about different Windows 10 versions, see [Windows 10 release information](/windows/release-health/release-information).
+<!-- Description-Source-ADMX -->
+Enter the product and version as listed on the Windows Update target version page:
+
+aka.ms/WindowsTargetVersioninfo.
+
+The device will request that Windows Update product and version in subsequent scans.
+
+Entering a target product and clicking OK or Apply means I accept the Microsoft Software License Terms for it found at aka.ms/WindowsTargetVersioninfo. If an organization is licensing the software, I am authorized to bind the organization.
+
+If you enter an invalid value, you'll remain on your current version until you correct the values to a supported product and version.
 <!-- TargetReleaseVersion-Description-End -->
 
 <!-- TargetReleaseVersion-Editable-Begin -->
@@ -1107,7 +1160,7 @@ Supported value type is a string containing Windows version number. For example,
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- TargetReleaseVersion-DFProperties-End -->
 
@@ -1118,7 +1171,7 @@ Supported value type is a string containing Windows version number. For example,
 |:--|:--|
 | Name | TargetReleaseVersion |
 | Friendly Name | Select the target Feature Update version |
-| Element Name | Target Version for Feature Updates |
+| Element Name | Target Version for Feature Updates. |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Update > Manage updates offered from Windows Update |
 | Registry Key Name | Software\Policies\Microsoft\Windows\WindowsUpdate |
@@ -1139,7 +1192,7 @@ Supported value type is a string containing Windows version number. For example,
 <!-- AllowUpdateService-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowUpdateService-Applicability-End -->
 
 <!-- AllowUpdateService-OmaUri-Begin -->
@@ -1165,7 +1218,7 @@ Specifies whether the device could use Microsoft Update, Windows Server Update S
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowUpdateService-DFProperties-End -->
@@ -1204,7 +1257,7 @@ Specifies whether the device could use Microsoft Update, Windows Server Update S
 <!-- DetectionFrequency-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DetectionFrequency-Applicability-End -->
 
 <!-- DetectionFrequency-OmaUri-Begin -->
@@ -1214,8 +1267,21 @@ Specifies whether the device could use Microsoft Update, Windows Server Update S
 <!-- DetectionFrequency-OmaUri-End -->
 
 <!-- DetectionFrequency-Description-Begin -->
-<!-- Description-Source-DDF -->
-Specifies the scan frequency from every 1 - 22 hours. Default is 22 hours.
+<!-- Description-Source-ADMX -->
+Specifies the hours that Windows will use to determine how long to wait before checking for available updates. The exact wait time is a sum of the specific value and a random variant of 0-4 hours.
+
+If the status is set to Enabled, Windows will check for available updates at the specified interval.
+
+If the status is set to Disabled or Not Configured, Windows will check for available updates at the default interval of 22 hours.
+
+> [!NOTE]
+> The "Specify intranet Microsoft update service location" setting must be enabled for this policy to have effect.
+
+> [!NOTE]
+> If the "Configure Automatic Updates" policy is disabled, this policy has no effect.
+
+> [!NOTE]
+> This policy isn't supported on %WINDOWS_ARM_VERSION_6_2%. Setting this policy won't have any effect on %WINDOWS_ARM_VERSION_6_2% PCs.
 <!-- DetectionFrequency-Description-End -->
 
 <!-- DetectionFrequency-Editable-Begin -->
@@ -1231,7 +1297,7 @@ This policy should be enabled only when [UpdateServiceUrl](#updateserviceurl) is
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[1-22]` |
 | Default Value  | 22 |
@@ -1263,7 +1329,7 @@ This policy should be enabled only when [UpdateServiceUrl](#updateserviceurl) is
 <!-- DoNotEnforceEnterpriseTLSCertPinningForUpdateDetection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240.18818] and later <br> :heavy_check_mark: Windows 10, version 1607 [10.0.14393.4169] and later <br> :heavy_check_mark: Windows 10, version 1703 [10.0.15063.2108] and later <br> :heavy_check_mark: Windows 10, version 1709 [10.0.16299.2166] and later <br> :heavy_check_mark: Windows 10, version 1803 [10.0.17134.1967] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.1697] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.1316] and later <br> :heavy_check_mark: Windows 10, version 1909 [10.0.18363.1316] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041.746] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.746] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240.18818] and later <br> ✅ Windows 10, version 1607 [10.0.14393.4169] and later <br> ✅ Windows 10, version 1703 [10.0.15063.2108] and later <br> ✅ Windows 10, version 1709 [10.0.16299.2166] and later <br> ✅ Windows 10, version 1803 [10.0.17134.1967] and later <br> ✅ Windows 10, version 1809 [10.0.17763.1697] and later <br> ✅ Windows 10, version 1903 [10.0.18362.1316] and later <br> ✅ Windows 10, version 1909 [10.0.18363.1316] and later <br> ✅ Windows 10, version 2004 [10.0.19041.746] and later <br> ✅ Windows 10, version 2009 [10.0.19042.746] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DoNotEnforceEnterpriseTLSCertPinningForUpdateDetection-Applicability-End -->
 
 <!-- DoNotEnforceEnterpriseTLSCertPinningForUpdateDetection-OmaUri-Begin -->
@@ -1273,8 +1339,7 @@ This policy should be enabled only when [UpdateServiceUrl](#updateserviceurl) is
 <!-- DoNotEnforceEnterpriseTLSCertPinningForUpdateDetection-OmaUri-End -->
 
 <!-- DoNotEnforceEnterpriseTLSCertPinningForUpdateDetection-Description-Begin -->
-<!-- Description-Source-ADMX-Element -->
-Do not enforce TLS certificate pinning for Windows Update client for detecting updates.
+<!-- Description-Source-Not-Found -->
 <!-- DoNotEnforceEnterpriseTLSCertPinningForUpdateDetection-Description-End -->
 
 <!-- DoNotEnforceEnterpriseTLSCertPinningForUpdateDetection-Editable-Begin -->
@@ -1288,7 +1353,7 @@ Do not enforce TLS certificate pinning for Windows Update client for detecting u
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DoNotEnforceEnterpriseTLSCertPinningForUpdateDetection-DFProperties-End -->
@@ -1309,7 +1374,7 @@ Do not enforce TLS certificate pinning for Windows Update client for detecting u
 |:--|:--|
 | Name | CorpWuURL |
 | Friendly Name | Specify intranet Microsoft update service location |
-| Element Name | Do not enforce TLS certificate pinning for Windows Update client for detecting updates. |
+| Element Name | Don't enforce TLS certificate pinning for Windows Update client for detecting updates. |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Update > Manage updates offered from Windows Server Update Service |
 | Registry Key Name | Software\Policies\Microsoft\Windows\WindowsUpdate |
@@ -1328,7 +1393,7 @@ Do not enforce TLS certificate pinning for Windows Update client for detecting u
 <!-- FillEmptyContentUrls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- FillEmptyContentUrls-Applicability-End -->
 
 <!-- FillEmptyContentUrls-OmaUri-Begin -->
@@ -1339,10 +1404,10 @@ Do not enforce TLS certificate pinning for Windows Update client for detecting u
 
 <!-- FillEmptyContentUrls-Description-Begin -->
 <!-- Description-Source-DDF -->
-Allows Windows Update Agent to determine the download URL when it is missing from the metadata. This scenario will occur when intranet update service stores the metadata files but the download contents are stored in the ISV file cache (specified as the alternate download URL).
+Allows Windows Update Agent to determine the download URL when it's missing from the metadata. This scenario will occur when intranet update service stores the metadata files but the download contents are stored in the ISV file cache (specified as the alternate download URL).
 
 > [!NOTE]
-> This setting should only be used in combination with an alternate download URL and configured to use ISV file cache. This setting is used when the intranet update service does not provide download URLs in the update metadata for files which are available on the alternate download server.
+> This setting should only be used in combination with an alternate download URL and configured to use ISV file cache. This setting is used when the intranet update service doesn't provide download URLs in the update metadata for files which are available on the alternate download server.
 <!-- FillEmptyContentUrls-Description-End -->
 
 <!-- FillEmptyContentUrls-Editable-Begin -->
@@ -1354,7 +1419,7 @@ Allows Windows Update Agent to determine the download URL when it is missing fro
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- FillEmptyContentUrls-DFProperties-End -->
@@ -1394,7 +1459,7 @@ Allows Windows Update Agent to determine the download URL when it is missing fro
 <!-- SetPolicyDrivenUpdateSourceForDriverUpdates-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- SetPolicyDrivenUpdateSourceForDriverUpdates-Applicability-End -->
 
 <!-- SetPolicyDrivenUpdateSourceForDriverUpdates-OmaUri-Begin -->
@@ -1424,7 +1489,7 @@ Configure this policy to specify whether to receive **Windows Driver Updates** f
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- SetPolicyDrivenUpdateSourceForDriverUpdates-DFProperties-End -->
@@ -1463,7 +1528,7 @@ Configure this policy to specify whether to receive **Windows Driver Updates** f
 <!-- SetPolicyDrivenUpdateSourceForFeatureUpdates-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- SetPolicyDrivenUpdateSourceForFeatureUpdates-Applicability-End -->
 
 <!-- SetPolicyDrivenUpdateSourceForFeatureUpdates-OmaUri-Begin -->
@@ -1493,7 +1558,7 @@ Configure this policy to specify whether to receive **Windows Feature Updates** 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- SetPolicyDrivenUpdateSourceForFeatureUpdates-DFProperties-End -->
@@ -1532,7 +1597,7 @@ Configure this policy to specify whether to receive **Windows Feature Updates** 
 <!-- SetPolicyDrivenUpdateSourceForOtherUpdates-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- SetPolicyDrivenUpdateSourceForOtherUpdates-Applicability-End -->
 
 <!-- SetPolicyDrivenUpdateSourceForOtherUpdates-OmaUri-Begin -->
@@ -1562,7 +1627,7 @@ Configure this policy to specify whether to receive **Other Updates** from Windo
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- SetPolicyDrivenUpdateSourceForOtherUpdates-DFProperties-End -->
@@ -1601,7 +1666,7 @@ Configure this policy to specify whether to receive **Other Updates** from Windo
 <!-- SetPolicyDrivenUpdateSourceForQualityUpdates-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- SetPolicyDrivenUpdateSourceForQualityUpdates-Applicability-End -->
 
 <!-- SetPolicyDrivenUpdateSourceForQualityUpdates-OmaUri-Begin -->
@@ -1631,7 +1696,7 @@ Configure this policy to specify whether to receive **Windows Quality Updates** 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- SetPolicyDrivenUpdateSourceForQualityUpdates-DFProperties-End -->
@@ -1670,7 +1735,7 @@ Configure this policy to specify whether to receive **Windows Quality Updates** 
 <!-- SetProxyBehaviorForUpdateDetection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240.18696] and later <br> :heavy_check_mark: Windows 10, version 1607 [10.0.14393.3930] and later <br> :heavy_check_mark: Windows 10, version 1703 [10.0.15063.2500] and later <br> :heavy_check_mark: Windows 10, version 1709 [10.0.16299.2107] and later <br> :heavy_check_mark: Windows 10, version 1803 [10.0.17134.1726] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.1457] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.1082] and later <br> :heavy_check_mark: Windows 10, version 1909 [10.0.18363.1082] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041.508] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240.18696] and later <br> ✅ Windows 10, version 1607 [10.0.14393.3930] and later <br> ✅ Windows 10, version 1703 [10.0.15063.2500] and later <br> ✅ Windows 10, version 1709 [10.0.16299.2107] and later <br> ✅ Windows 10, version 1803 [10.0.17134.1726] and later <br> ✅ Windows 10, version 1809 [10.0.17763.1457] and later <br> ✅ Windows 10, version 1903 [10.0.18362.1082] and later <br> ✅ Windows 10, version 1909 [10.0.18363.1082] and later <br> ✅ Windows 10, version 2004 [10.0.19041.508] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- SetProxyBehaviorForUpdateDetection-Applicability-End -->
 
 <!-- SetProxyBehaviorForUpdateDetection-OmaUri-Begin -->
@@ -1680,8 +1745,7 @@ Configure this policy to specify whether to receive **Windows Quality Updates** 
 <!-- SetProxyBehaviorForUpdateDetection-OmaUri-End -->
 
 <!-- SetProxyBehaviorForUpdateDetection-Description-Begin -->
-<!-- Description-Source-ADMX-Element -->
-Select the proxy behavior for Windows Update client for detecting updates
+<!-- Description-Source-Not-Found -->
 <!-- SetProxyBehaviorForUpdateDetection-Description-End -->
 
 <!-- SetProxyBehaviorForUpdateDetection-Editable-Begin -->
@@ -1699,7 +1763,7 @@ This policy setting doesn't impact those customers who have, per Microsoft recom
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- SetProxyBehaviorForUpdateDetection-DFProperties-End -->
@@ -1720,7 +1784,7 @@ This policy setting doesn't impact those customers who have, per Microsoft recom
 |:--|:--|
 | Name | CorpWuURL |
 | Friendly Name | Specify intranet Microsoft update service location |
-| Element Name | Select the proxy behavior for Windows Update client for detecting updates |
+| Element Name | Select the proxy behavior for Windows Update client for detecting updates. |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Update > Manage updates offered from Windows Server Update Service |
 | Registry Key Name | Software\Policies\Microsoft\Windows\WindowsUpdate |
@@ -1739,7 +1803,7 @@ This policy setting doesn't impact those customers who have, per Microsoft recom
 <!-- UpdateServiceUrl-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- UpdateServiceUrl-Applicability-End -->
 
 <!-- UpdateServiceUrl-OmaUri-Begin -->
@@ -1750,7 +1814,7 @@ This policy setting doesn't impact those customers who have, per Microsoft recom
 
 <!-- UpdateServiceUrl-Description-Begin -->
 <!-- Description-Source-DDF -->
-Allows the device to check for updates from a WSUS server instead of Microsoft Update. This is useful for on-premises MDMs that need to update devices that cannot connect to the Internet.
+Allows the device to check for updates from a WSUS server instead of Microsoft Update. This is useful for on-premises MDMs that need to update devices that can't connect to the Internet.
 <!-- UpdateServiceUrl-Description-End -->
 
 <!-- UpdateServiceUrl-Editable-Begin -->
@@ -1766,7 +1830,7 @@ The following list shows the supported values:
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | CorpWSUS |
 <!-- UpdateServiceUrl-DFProperties-End -->
@@ -1778,7 +1842,7 @@ The following list shows the supported values:
 |:--|:--|
 | Name | CorpWuURL |
 | Friendly Name | Specify intranet Microsoft update service location |
-| Element Name | Set the intranet update service for detecting updates |
+| Element Name | Set the intranet update service for detecting updates. |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Update > Manage updates offered from Windows Server Update Service |
 | Registry Key Name | Software\Policies\Microsoft\Windows\WindowsUpdate |
@@ -1814,7 +1878,7 @@ The following list shows the supported values:
 <!-- UpdateServiceUrlAlternate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- UpdateServiceUrlAlternate-Applicability-End -->
 
 <!-- UpdateServiceUrlAlternate-OmaUri-Begin -->
@@ -1825,10 +1889,10 @@ The following list shows the supported values:
 
 <!-- UpdateServiceUrlAlternate-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specifies an alternate intranet server to host updates from Microsoft Update. You can then use this update service to automatically update computers on your network. This setting lets you specify a server on your network to function as an internal update service. The Automatic Updates client will search this service for updates that apply to the computers on your network. To use this setting, you must set two server name values the server from which the Automatic Updates client detects and downloads updates, and the server to which updated workstations upload statistics. You can set both values to be the same server. An optional server name value can be specified to configure Windows Update agent, and download updates from an alternate download server instead of WSUS Server. Value type is string and the default value is an empty string, . If the setting is not configured, and if Automatic Updates is not disabled by policy or user preference, the Automatic Updates client connects directly to the Windows Update site on the Internet.
+Specifies an alternate intranet server to host updates from Microsoft Update. You can then use this update service to automatically update computers on your network. This setting lets you specify a server on your network to function as an internal update service. The Automatic Updates client will search this service for updates that apply to the computers on your network. To use this setting, you must set two server name values: the server from which the Automatic Updates client detects and downloads updates, and the server to which updated workstations upload statistics. You can set both values to be the same server. An optional server name value can be specified to configure Windows Update agent, and download updates from an alternate download server instead of WSUS Server. Value type is string and the default value is an empty string, . If the setting isn't configured, and if Automatic Updates isn't disabled by policy or user preference, the Automatic Updates client connects directly to the Windows Update site on the Internet.
 
 > [!NOTE]
-> If the Configure Automatic Updates Group Policy is disabled, then this policy has no effect. If the Alternate Download Server Group Policy is not set, it will use the WSUS server by default to download updates. This policy is not supported on Windows RT. Setting this policy will not have any effect on Windows RT PCs.
+> If the Configure Automatic Updates Group Policy is disabled, then this policy has no effect. If the Alternate Download Server Group Policy isn't set, it will use the WSUS server by default to download updates. This policy isn't supported on Windows RT. Setting this policy won't have any effect on Windows RT PCs.
 <!-- UpdateServiceUrlAlternate-Description-End -->
 
 <!-- UpdateServiceUrlAlternate-Editable-Begin -->
@@ -1840,7 +1904,7 @@ Specifies an alternate intranet server to host updates from Microsoft Update. Yo
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- UpdateServiceUrlAlternate-DFProperties-End -->
 
@@ -1851,7 +1915,7 @@ Specifies an alternate intranet server to host updates from Microsoft Update. Yo
 |:--|:--|
 | Name | CorpWuURL |
 | Friendly Name | Specify intranet Microsoft update service location |
-| Element Name | Set the alternate download server |
+| Element Name | Set the alternate download server. |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Update > Manage updates offered from Windows Server Update Service |
 | Registry Key Name | Software\Policies\Microsoft\Windows\WindowsUpdate |
@@ -1872,7 +1936,7 @@ Specifies an alternate intranet server to host updates from Microsoft Update. Yo
 <!-- ActiveHoursEnd-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- ActiveHoursEnd-Applicability-End -->
 
 <!-- ActiveHoursEnd-OmaUri-Begin -->
@@ -1882,11 +1946,21 @@ Specifies an alternate intranet server to host updates from Microsoft Update. Yo
 <!-- ActiveHoursEnd-OmaUri-End -->
 
 <!-- ActiveHoursEnd-Description-Begin -->
-<!-- Description-Source-DDF -->
-Allows the IT admin (when used with Update/ActiveHoursStart) to manage a range of active hours where update reboots are not scheduled. This value sets the end time. There is a 12 hour maximum from start time.
+<!-- Description-Source-ADMX -->
 
-> [!NOTE]
-> The default maximum difference from start time has been increased to 18 in Windows 10, version 1703. In this version of Windows 10, the maximum range of active hours can now be configured. See Update/ActiveHoursMaxRange below for more information. Supported values are 0-23, where 0 is 12 AM, 1 is 1 AM, etc. The default is 17 (5 PM).
+- If you enable this policy, the PC won't automatically restart after updates during active hours. The PC will attempt to restart outside of active hours.
+
+Note that the PC must restart for certain updates to take effect.
+
+- If you disable or don't configure this policy and have no other reboot group policies, the user selected active hours will be in effect.
+
+If any of the following two policies are enabled, this policy has no effect:
+
+1. No auto-restart with logged-on users for scheduled automatic updates installations.
+
+2. Always automatically restart at scheduled time.
+
+Note that the default max active hours range is 18 hours from the active hours start time unless otherwise configured via the Specify active hours range for auto-restarts policy.
 <!-- ActiveHoursEnd-Description-End -->
 
 <!-- ActiveHoursEnd-Editable-Begin -->
@@ -1898,7 +1972,7 @@ Allows the IT admin (when used with Update/ActiveHoursStart) to manage a range o
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-23]` |
 | Default Value  | 17 |
@@ -1911,7 +1985,7 @@ Allows the IT admin (when used with Update/ActiveHoursStart) to manage a range o
 |:--|:--|
 | Name | ActiveHours |
 | Friendly Name | Turn off auto-restart for updates during active hours |
-| Element Name | End |
+| Element Name | End. |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Update > Manage end user experience |
 | Registry Key Name | Software\Policies\Microsoft\Windows\WindowsUpdate |
@@ -1930,7 +2004,7 @@ Allows the IT admin (when used with Update/ActiveHoursStart) to manage a range o
 <!-- ActiveHoursMaxRange-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- ActiveHoursMaxRange-Applicability-End -->
 
 <!-- ActiveHoursMaxRange-OmaUri-Begin -->
@@ -1945,7 +2019,7 @@ Enable this policy to specify the maximum number of hours from the start time th
 
 The max active hours range can be set between 8 and 18 hours.
 
-- If you disable or do not configure this policy, the default max active hours range will be used.
+If you disable or don't configure this policy, the default max active hours range will be used.
 <!-- ActiveHoursMaxRange-Description-End -->
 
 <!-- ActiveHoursMaxRange-Editable-Begin -->
@@ -1957,7 +2031,7 @@ The max active hours range can be set between 8 and 18 hours.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[8-18]` |
 | Default Value  | 18 |
@@ -1970,7 +2044,7 @@ The max active hours range can be set between 8 and 18 hours.
 |:--|:--|
 | Name | ActiveHoursMaxRange |
 | Friendly Name | Specify active hours range for auto-restarts |
-| Element Name | Max range |
+| Element Name | Max range. |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Update > Manage end user experience |
 | Registry Key Name | Software\Policies\Microsoft\Windows\WindowsUpdate |
@@ -1989,7 +2063,7 @@ The max active hours range can be set between 8 and 18 hours.
 <!-- ActiveHoursStart-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- ActiveHoursStart-Applicability-End -->
 
 <!-- ActiveHoursStart-OmaUri-Begin -->
@@ -1999,11 +2073,21 @@ The max active hours range can be set between 8 and 18 hours.
 <!-- ActiveHoursStart-OmaUri-End -->
 
 <!-- ActiveHoursStart-Description-Begin -->
-<!-- Description-Source-DDF -->
-Allows the IT admin (when used with Update/ActiveHoursEnd) to manage a range of hours where update reboots are not scheduled. This value sets the start time. There is a 12 hour maximum from end time.
+<!-- Description-Source-ADMX -->
 
-> [!NOTE]
-> The default maximum difference from end time has been increased to 18 in Windows 10, version 1703. In this version of Windows 10, the maximum range of active hours can now be configured. See Update/ActiveHoursMaxRange above for more information. Supported values are 0-23, where 0 is 12 AM, 1 is 1 AM, etc. The default value is 8 (8 AM).
+- If you enable this policy, the PC won't automatically restart after updates during active hours. The PC will attempt to restart outside of active hours.
+
+Note that the PC must restart for certain updates to take effect.
+
+- If you disable or don't configure this policy and have no other reboot group policies, the user selected active hours will be in effect.
+
+If any of the following two policies are enabled, this policy has no effect:
+
+1. No auto-restart with logged-on users for scheduled automatic updates installations.
+
+2. Always automatically restart at scheduled time.
+
+Note that the default max active hours range is 18 hours from the active hours start time unless otherwise configured via the Specify active hours range for auto-restarts policy.
 <!-- ActiveHoursStart-Description-End -->
 
 <!-- ActiveHoursStart-Editable-Begin -->
@@ -2015,7 +2099,7 @@ Allows the IT admin (when used with Update/ActiveHoursEnd) to manage a range of 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-23]` |
 | Default Value  | 8 |
@@ -2028,7 +2112,7 @@ Allows the IT admin (when used with Update/ActiveHoursEnd) to manage a range of 
 |:--|:--|
 | Name | ActiveHours |
 | Friendly Name | Turn off auto-restart for updates during active hours |
-| Element Name | Start |
+| Element Name | Start. |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Update > Manage end user experience |
 | Registry Key Name | Software\Policies\Microsoft\Windows\WindowsUpdate |
@@ -2047,7 +2131,7 @@ Allows the IT admin (when used with Update/ActiveHoursEnd) to manage a range of 
 <!-- AllowAutoUpdate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowAutoUpdate-Applicability-End -->
 
 <!-- AllowAutoUpdate-OmaUri-Begin -->
@@ -2058,7 +2142,7 @@ Allows the IT admin (when used with Update/ActiveHoursEnd) to manage a range of 
 
 <!-- AllowAutoUpdate-Description-Begin -->
 <!-- Description-Source-DDF -->
-Enables the IT admin to manage automatic update behavior to scan, download, and install updates. Important. This option should be used only for systems under regulatory compliance, as you will not get security updates as well. If the policy is not configured, end-users get the default behavior (Auto install and restart).
+Enables the IT admin to manage automatic update behavior to scan, download, and install updates. Important. This option should be used only for systems under regulatory compliance, as you won't get security updates as well. If the policy isn't configured, end-users get the default behavior (Auto install and restart).
 <!-- AllowAutoUpdate-Description-End -->
 
 <!-- AllowAutoUpdate-Editable-Begin -->
@@ -2070,7 +2154,7 @@ Enables the IT admin to manage automatic update behavior to scan, download, and 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 2 |
 <!-- AllowAutoUpdate-DFProperties-End -->
@@ -2081,10 +2165,10 @@ Enables the IT admin to manage automatic update behavior to scan, download, and 
 | Value | Description |
 |:--|:--|
 | 0 | Notify the user before downloading the update. This policy is used by the enterprise who wants to enable the end-users to manage data usage. With this option users are notified when there are updates that apply to the device and are ready for download. Users can download and install the updates from the Windows Update control panel. |
-| 1 | Auto install the update and then notify the user to schedule a device restart. Updates are downloaded automatically on non-metered networks and installed during "Automatic Maintenance" when the device is not in use and is not running on battery power. If automatic maintenance is unable to install updates for two days, Windows Update will install updates immediately. If the installation requires a restart, the end-user is prompted to schedule the restart time. The end-user has up to seven days to schedule the restart and after that, a restart of the device is forced. Enabling the end-user to control the start time reduces the risk of accidental data loss caused by applications that do not shutdown properly on restart. |
-| 2 (Default) | Auto install and restart. Updates are downloaded automatically on non-metered networks and installed during "Automatic Maintenance" when the device is not in use and is not running on battery power. If automatic maintenance is unable to install updates for two days, Windows Update will install updates right away. If a restart is required, then the device is automatically restarted when the device is not actively being used. This is the default behavior for unmanaged devices. Devices are updated quickly, but it increases the risk of accidental data loss caused by an application that does not shutdown properly on restart. |
+| 1 | Auto install the update and then notify the user to schedule a device restart. Updates are downloaded automatically on non-metered networks and installed during "Automatic Maintenance" when the device isn't in use and isn't running on battery power. If automatic maintenance is unable to install updates for two days, Windows Update will install updates immediately. If the installation requires a restart, the end-user is prompted to schedule the restart time. The end-user has up to seven days to schedule the restart and after that, a restart of the device is forced. Enabling the end-user to control the start time reduces the risk of accidental data loss caused by applications that don't shutdown properly on restart. |
+| 2 (Default) | Auto install and restart. Updates are downloaded automatically on non-metered networks and installed during "Automatic Maintenance" when the device isn't in use and isn't running on battery power. If automatic maintenance is unable to install updates for two days, Windows Update will install updates right away. If a restart is required, then the device is automatically restarted when the device isn't actively being used. This is the default behavior for unmanaged devices. Devices are updated quickly, but it increases the risk of accidental data loss caused by an application that doesn't shutdown properly on restart. |
 | 3 | Auto install and restart at a specified time. The IT specifies the installation day and time. If no day and time are specified, the default is 3 AM daily. Automatic installation happens at this time and device restart happens after a 15-minute countdown. If the user is logged in when Windows is ready to restart, the user can interrupt the 15-minute countdown to delay the restart. |
-| 4 | Auto install and restart without end-user control. Updates are downloaded automatically on non-metered networks and installed during "Automatic Maintenance" when the device is not in use and is not running on battery power. If automatic maintenance is unable to install updates for two days, Windows Update will install updates right away. If a restart is required, then the device is automatically restarted when the device is not actively being used. This setting option also sets the end-user control panel to read-only. |
+| 4 | Auto install and restart without end-user control. Updates are downloaded automatically on non-metered networks and installed during "Automatic Maintenance" when the device isn't in use and isn't running on battery power. If automatic maintenance is unable to install updates for two days, Windows Update will install updates right away. If a restart is required, then the device is automatically restarted when the device isn't actively being used. This setting option also sets the end-user control panel to read-only. |
 | 5 | Turn off automatic updates. |
 <!-- AllowAutoUpdate-AllowedValues-End -->
 
@@ -2095,7 +2179,7 @@ Enables the IT admin to manage automatic update behavior to scan, download, and 
 |:--|:--|
 | Name | AutoUpdateCfg |
 | Friendly Name | Configure Automatic Updates |
-| Element Name | Configure automatic updating |
+| Element Name | Configure automatic updating. |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Update > Manage end user experience |
 | Registry Key Name | Software\Policies\Microsoft\Windows\WindowsUpdate\AU |
@@ -2114,7 +2198,7 @@ Enables the IT admin to manage automatic update behavior to scan, download, and 
 <!-- AllowAutoWindowsUpdateDownloadOverMeteredNetwork-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- AllowAutoWindowsUpdateDownloadOverMeteredNetwork-Applicability-End -->
 
 <!-- AllowAutoWindowsUpdateDownloadOverMeteredNetwork-OmaUri-Begin -->
@@ -2140,7 +2224,7 @@ This policy is accessible through the Update setting in the user interface or Gr
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- AllowAutoWindowsUpdateDownloadOverMeteredNetwork-DFProperties-End -->
@@ -2180,7 +2264,7 @@ This policy is accessible through the Update setting in the user interface or Gr
 <!-- AllowMUUpdateService-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowMUUpdateService-Applicability-End -->
 
 <!-- AllowMUUpdateService-OmaUri-Begin -->
@@ -2210,7 +2294,7 @@ Allows the IT admin to manage whether to scan for app updates from Microsoft Upd
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- AllowMUUpdateService-DFProperties-End -->
@@ -2231,7 +2315,7 @@ Allows the IT admin to manage whether to scan for app updates from Microsoft Upd
 |:--|:--|
 | Name | AutoUpdateCfg |
 | Friendly Name | Configure Automatic Updates |
-| Element Name | Install updates for other Microsoft products |
+| Element Name | Install updates for other Microsoft products. |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Update > Manage end user experience |
 | Registry Key Name | Software\Policies\Microsoft\Windows\WindowsUpdate\AU |
@@ -2244,13 +2328,84 @@ Allows the IT admin to manage whether to scan for app updates from Microsoft Upd
 
 <!-- AllowMUUpdateService-End -->
 
+<!-- AllowTemporaryEnterpriseFeatureControl-Begin -->
+### AllowTemporaryEnterpriseFeatureControl
+
+<!-- AllowTemporaryEnterpriseFeatureControl-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.1344] and later |
+<!-- AllowTemporaryEnterpriseFeatureControl-Applicability-End -->
+
+<!-- AllowTemporaryEnterpriseFeatureControl-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Update/AllowTemporaryEnterpriseFeatureControl
+```
+<!-- AllowTemporaryEnterpriseFeatureControl-OmaUri-End -->
+
+<!-- AllowTemporaryEnterpriseFeatureControl-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Features introduced via servicing (outside of the annual feature update) are off by default for devices that have their Windows updates managed*.
+
+- If this policy is configured to "Enabled", then all features available in the latest monthly quality update installed will be on.
+
+- If this policy is set to "Not Configured" or "Disabled" then features that are shipped via a monthly quality update (servicing) will remain off until the feature update that includes these features is installed.
+
+*Windows update managed devices are those that have their Windows updates managed via policy; whether via the cloud using Windows Update for Business or on-premises with Windows Server Update Services (WSUS).
+<!-- AllowTemporaryEnterpriseFeatureControl-Description-End -->
+
+<!-- AllowTemporaryEnterpriseFeatureControl-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> In Intune, this setting is known as **Allow Temporary Enterprise Feature Control** and is available in the Settings Catalog. By default, all features introduced via servicing that are behind the commercial control are off for Windows-Update-managed devices. When set to Allowed, these features are enabled and turned on. For more information, see [Blog: Commercial control for continuous innovation](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/commercial-control-for-continuous-innovation/ba-p/3737575).
+<!-- AllowTemporaryEnterpriseFeatureControl-Editable-End -->
+
+<!-- AllowTemporaryEnterpriseFeatureControl-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- AllowTemporaryEnterpriseFeatureControl-DFProperties-End -->
+
+<!-- AllowTemporaryEnterpriseFeatureControl-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Not allowed. |
+| 1 | Allowed. |
+<!-- AllowTemporaryEnterpriseFeatureControl-AllowedValues-End -->
+
+<!-- AllowTemporaryEnterpriseFeatureControl-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | AllowTemporaryEnterpriseFeatureControl |
+| Friendly Name | Enable features introduced via servicing that are off by default |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Update > Manage end user experience |
+| Registry Key Name | Software\Policies\Microsoft\Windows\WindowsUpdate |
+| Registry Value Name | AllowTemporaryEnterpriseFeatureControl |
+| ADMX File Name | WindowsUpdate.admx |
+<!-- AllowTemporaryEnterpriseFeatureControl-GpMapping-End -->
+
+<!-- AllowTemporaryEnterpriseFeatureControl-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowTemporaryEnterpriseFeatureControl-Examples-End -->
+
+<!-- AllowTemporaryEnterpriseFeatureControl-End -->
+
 <!-- ConfigureDeadlineForFeatureUpdates-Begin -->
 ### ConfigureDeadlineForFeatureUpdates
 
 <!-- ConfigureDeadlineForFeatureUpdates-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- ConfigureDeadlineForFeatureUpdates-Applicability-End -->
 
 <!-- ConfigureDeadlineForFeatureUpdates-OmaUri-Begin -->
@@ -2267,7 +2422,9 @@ Number of days before feature updates are installed on devices automatically reg
 <!-- ConfigureDeadlineForFeatureUpdates-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> After the deadline passes, restarts will occur regardless of active hours and users won't be able to reschedule.
+> 
+> - After the deadline passes, restarts will occur regardless of active hours and users won't be able to reschedule.
+> - When this policy is used, the download, installation, and reboot settings from [Update/AllowAutoUpdate](#allowautoupdate) are ignored.
 <!-- ConfigureDeadlineForFeatureUpdates-Editable-End -->
 
 <!-- ConfigureDeadlineForFeatureUpdates-DFProperties-Begin -->
@@ -2275,7 +2432,7 @@ Number of days before feature updates are installed on devices automatically reg
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-30]` |
 | Default Value  | 2 |
@@ -2307,7 +2464,7 @@ Number of days before feature updates are installed on devices automatically reg
 <!-- ConfigureDeadlineForQualityUpdates-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- ConfigureDeadlineForQualityUpdates-Applicability-End -->
 
 <!-- ConfigureDeadlineForQualityUpdates-OmaUri-Begin -->
@@ -2324,7 +2481,9 @@ Number of days before quality updates are installed on devices automatically reg
 <!-- ConfigureDeadlineForQualityUpdates-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> After the deadline passes, restarts will occur regardless of active hours and users won't be able to reschedule.
+> 
+> - After the deadline passes, restarts will occur regardless of active hours and users won't be able to reschedule.
+> - When this policy is used, the download, installation, and reboot settings from [Update/AllowAutoUpdate](#allowautoupdate) are ignored.
 <!-- ConfigureDeadlineForQualityUpdates-Editable-End -->
 
 <!-- ConfigureDeadlineForQualityUpdates-DFProperties-Begin -->
@@ -2332,7 +2491,7 @@ Number of days before quality updates are installed on devices automatically reg
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-30]` |
 | Default Value  | 7 |
@@ -2364,7 +2523,7 @@ Number of days before quality updates are installed on devices automatically reg
 <!-- ConfigureDeadlineGracePeriod-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- ConfigureDeadlineGracePeriod-Applicability-End -->
 
 <!-- ConfigureDeadlineGracePeriod-OmaUri-Begin -->
@@ -2387,7 +2546,7 @@ Minimum number of days from update installation until restarts occur automatical
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-7]` |
 | Default Value  | 2 |
@@ -2419,7 +2578,7 @@ Minimum number of days from update installation until restarts occur automatical
 <!-- ConfigureDeadlineGracePeriodForFeatureUpdates-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763.1852] and later <br> :heavy_check_mark: Windows 10, version 1909 [10.0.18363.1474] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041.906] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.906] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763.1852] and later <br> ✅ Windows 10, version 1909 [10.0.18363.1474] and later <br> ✅ Windows 10, version 2004 [10.0.19041.906] and later <br> ✅ Windows 10, version 2009 [10.0.19042.906] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ConfigureDeadlineGracePeriodForFeatureUpdates-Applicability-End -->
 
 <!-- ConfigureDeadlineGracePeriodForFeatureUpdates-OmaUri-Begin -->
@@ -2442,7 +2601,7 @@ Minimum number of days from update installation until restarts occur automatical
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-7]` |
 | Default Value  | 7 |
@@ -2474,7 +2633,7 @@ Minimum number of days from update installation until restarts occur automatical
 <!-- ConfigureDeadlineNoAutoReboot-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- ConfigureDeadlineNoAutoReboot-Applicability-End -->
 
 <!-- ConfigureDeadlineNoAutoReboot-OmaUri-Begin -->
@@ -2485,7 +2644,7 @@ Minimum number of days from update installation until restarts occur automatical
 
 <!-- ConfigureDeadlineNoAutoReboot-Description-Begin -->
 <!-- Description-Source-DDF-Forced -->
-When enabled, devices will not automatically restart outside of active hours until the deadline and grace period have expired, even if an update is ready for restart. When disabled, an automatic restart may be attempted outside of active hours after update is ready for restart before the deadline is reached. Takes effect only if Update/ConfigureDeadlineForQualityUpdates or Update/ConfigureDeadlineForFeatureUpdates is configured.
+When enabled, devices won't automatically restart outside of active hours until the deadline and grace period have expired, even if an update is ready for restart. When disabled, an automatic restart may be attempted outside of active hours after update is ready for restart before the deadline is reached. Takes effect only if Update/ConfigureDeadlineForQualityUpdates or Update/ConfigureDeadlineForFeatureUpdates is configured.
 <!-- ConfigureDeadlineNoAutoReboot-Description-End -->
 
 <!-- ConfigureDeadlineNoAutoReboot-Editable-Begin -->
@@ -2497,7 +2656,7 @@ When enabled, devices will not automatically restart outside of active hours unt
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- ConfigureDeadlineNoAutoReboot-DFProperties-End -->
@@ -2518,7 +2677,7 @@ When enabled, devices will not automatically restart outside of active hours unt
 |:--|:--|
 | Name | ComplianceDeadline |
 | Friendly Name | Specify deadlines for automatic updates and restarts |
-| Element Name | Don't auto-restart until end of grace period |
+| Element Name | Don't auto-restart until end of grace period. |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Update > Manage end user experience |
 | Registry Key Name | Software\Policies\Microsoft\Windows\WindowsUpdate |
@@ -2537,7 +2696,7 @@ When enabled, devices will not automatically restart outside of active hours unt
 <!-- ConfigureFeatureUpdateUninstallPeriod-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- ConfigureFeatureUpdateUninstallPeriod-Applicability-End -->
 
 <!-- ConfigureFeatureUpdateUninstallPeriod-OmaUri-Begin -->
@@ -2548,7 +2707,7 @@ When enabled, devices will not automatically restart outside of active hours unt
 
 <!-- ConfigureFeatureUpdateUninstallPeriod-Description-Begin -->
 <!-- Description-Source-DDF -->
-Enable enterprises/IT admin to configure feature update uninstall period
+Enable enterprises/IT admin to configure feature update uninstall period.
 <!-- ConfigureFeatureUpdateUninstallPeriod-Description-End -->
 
 <!-- ConfigureFeatureUpdateUninstallPeriod-Editable-Begin -->
@@ -2560,7 +2719,7 @@ Enable enterprises/IT admin to configure feature update uninstall period
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[2-60]` |
 | Default Value  | 10 |
@@ -2578,7 +2737,7 @@ Enable enterprises/IT admin to configure feature update uninstall period
 <!-- NoUpdateNotificationsDuringActiveHours-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- NoUpdateNotificationsDuringActiveHours-Applicability-End -->
 
 <!-- NoUpdateNotificationsDuringActiveHours-OmaUri-Begin -->
@@ -2591,11 +2750,11 @@ Enable enterprises/IT admin to configure feature update uninstall period
 <!-- Description-Source-ADMX -->
 0 (default) - Use the default Windows Update notifications
 1 - Turn off all notifications, excluding restart warnings
-2 - Turn off all notifications, including restart warnings
+2 - Turn off all notifications, including restart warnings.
 
 This policy allows you to define what Windows Update notifications users see. This policy doesn't control how and when updates are downloaded and installed.
 
-**Important** if you choose not to get update notifications and also define other Group policy so that devices aren't automatically getting updates, neither you nor device users will be aware of critical security, quality, or feature updates, and your devices may be at risk.
+Important if you choose not to get update notifications and also define other Group policy so that devices aren't automatically getting updates, neither you nor device users will be aware of critical security, quality, or feature updates, and your devices may be at risk.
 
 If you select "Apply only during active hours" in conjunction with Option 1 or 2, then notifications will only be disabled during active hours. You can set active hours by setting "Turn off auto-restart for updates during active hours" or allow the device to set active hours based on user behavior. To ensure that the device stays secure, a notification will still be shown if this option is selected once "Specify deadlines for automatic updates and restarts" deadline has been reached if configured, regardless of active hours.
 <!-- NoUpdateNotificationsDuringActiveHours-Description-End -->
@@ -2611,7 +2770,7 @@ If you select "Apply only during active hours" in conjunction with Option 1 or 2
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- NoUpdateNotificationsDuringActiveHours-DFProperties-End -->
@@ -2632,7 +2791,7 @@ If you select "Apply only during active hours" in conjunction with Option 1 or 2
 |:--|:--|
 | Name | UpdateNotificationLevel |
 | Friendly Name | Display options for update notifications |
-| Element Name | Apply only during active hours |
+| Element Name | Apply only during active hours. |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Update > Manage end user experience |
 | Registry Key Name | Software\Policies\Microsoft\Windows\WindowsUpdate |
@@ -2651,7 +2810,7 @@ If you select "Apply only during active hours" in conjunction with Option 1 or 2
 <!-- ScheduledInstallDay-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- ScheduledInstallDay-Applicability-End -->
 
 <!-- ScheduledInstallDay-OmaUri-Begin -->
@@ -2662,7 +2821,7 @@ If you select "Apply only during active hours" in conjunction with Option 1 or 2
 
 <!-- ScheduledInstallDay-Description-Begin -->
 <!-- Description-Source-DDF -->
-Enables the IT admin to schedule the day of the update installation. The data type is an integer.
+Enables the IT admin to schedule the day of the update installation. The data type is a integer.
 <!-- ScheduledInstallDay-Description-End -->
 
 <!-- ScheduledInstallDay-Editable-Begin -->
@@ -2676,7 +2835,7 @@ Enables the IT admin to schedule the day of the update installation. The data ty
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- ScheduledInstallDay-DFProperties-End -->
@@ -2703,7 +2862,7 @@ Enables the IT admin to schedule the day of the update installation. The data ty
 |:--|:--|
 | Name | AutoUpdateCfg |
 | Friendly Name | Configure Automatic Updates |
-| Element Name | Scheduled install day |
+| Element Name | Scheduled install day. |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Update > Manage end user experience |
 | Registry Key Name | Software\Policies\Microsoft\Windows\WindowsUpdate\AU |
@@ -2722,7 +2881,7 @@ Enables the IT admin to schedule the day of the update installation. The data ty
 <!-- ScheduledInstallEveryWeek-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- ScheduledInstallEveryWeek-Applicability-End -->
 
 <!-- ScheduledInstallEveryWeek-OmaUri-Begin -->
@@ -2733,7 +2892,7 @@ Enables the IT admin to schedule the day of the update installation. The data ty
 
 <!-- ScheduledInstallEveryWeek-Description-Begin -->
 <!-- Description-Source-DDF -->
-Enables the IT admin to schedule the update installation every week. Value type is integer.
+Enables the IT admin to schedule the update installation on the every week. Value type is integer.
 <!-- ScheduledInstallEveryWeek-Description-End -->
 
 <!-- ScheduledInstallEveryWeek-Editable-Begin -->
@@ -2747,7 +2906,7 @@ Enables the IT admin to schedule the update installation every week. Value type 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- ScheduledInstallEveryWeek-DFProperties-End -->
@@ -2768,7 +2927,7 @@ Enables the IT admin to schedule the update installation every week. Value type 
 |:--|:--|
 | Name | AutoUpdateCfg |
 | Friendly Name | Configure Automatic Updates |
-| Element Name | Every week |
+| Element Name | Every week. |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Update > Manage end user experience |
 | Registry Key Name | Software\Policies\Microsoft\Windows\WindowsUpdate\AU |
@@ -2787,7 +2946,7 @@ Enables the IT admin to schedule the update installation every week. Value type 
 <!-- ScheduledInstallFirstWeek-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- ScheduledInstallFirstWeek-Applicability-End -->
 
 <!-- ScheduledInstallFirstWeek-OmaUri-Begin -->
@@ -2803,6 +2962,15 @@ Enables the IT admin to schedule the update installation on the first week of th
 
 <!-- ScheduledInstallFirstWeek-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+The ScheduledInstall*week policies operate on numeric days.
+
+- [ScheduledInstallFirstWeek](#scheduledinstallfirstweek): First week of the month (Days 1-7).
+- [ScheduledInstallSecondWeek](#scheduledinstallsecondweek): Second week of the month (Days 8-14).
+- [ScheduledInstallThirdWeek](#scheduledinstallthirdweek): Third week of the month (Days 15-21).
+- [ScheduledInstallFourthWeek](#scheduledinstallfourthweek): Fourth week of the month (Days 22-31).
+
+These policies are not exclusive and can be used in any combination. Together with [ScheduledInstallDay](#scheduledinstallday), it defines the ordinal number of a weekday in a month. E.g. [ScheduledInstallSecondWeek](#scheduledinstallsecondweek) + [ScheduledInstallDay](#scheduledinstallday) = 3 is 2nd Tuesday of the month. If the device is unavailable at the scheduled time, it can postpone installation of updates until the next month.
+
 > [!NOTE]
 > This policy will only take effect if [Update/AllowAutoUpdate](#allowautoupdate) has been configured to option 3 or 4 for scheduled installation.
 <!-- ScheduledInstallFirstWeek-Editable-End -->
@@ -2812,7 +2980,7 @@ Enables the IT admin to schedule the update installation on the first week of th
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- ScheduledInstallFirstWeek-DFProperties-End -->
@@ -2833,7 +3001,7 @@ Enables the IT admin to schedule the update installation on the first week of th
 |:--|:--|
 | Name | AutoUpdateCfg |
 | Friendly Name | Configure Automatic Updates |
-| Element Name | First week of the month |
+| Element Name | First week of the month. |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Update > Manage end user experience |
 | Registry Key Name | Software\Policies\Microsoft\Windows\WindowsUpdate\AU |
@@ -2852,7 +3020,7 @@ Enables the IT admin to schedule the update installation on the first week of th
 <!-- ScheduledInstallFourthWeek-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- ScheduledInstallFourthWeek-Applicability-End -->
 
 <!-- ScheduledInstallFourthWeek-OmaUri-Begin -->
@@ -2868,6 +3036,15 @@ Enables the IT admin to schedule the update installation on the fourth week of t
 
 <!-- ScheduledInstallFourthWeek-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+The ScheduledInstall*week policies operate on numeric days.
+
+- [ScheduledInstallFirstWeek](#scheduledinstallfirstweek): First week of the month (Days 1-7).
+- [ScheduledInstallSecondWeek](#scheduledinstallsecondweek): Second week of the month (Days 8-14).
+- [ScheduledInstallThirdWeek](#scheduledinstallthirdweek): Third week of the month (Days 15-21).
+- [ScheduledInstallFourthWeek](#scheduledinstallfourthweek): Fourth week of the month (Days 22-31).
+
+These policies are not exclusive and can be used in any combination. Together with [ScheduledInstallDay](#scheduledinstallday), it defines the ordinal number of a weekday in a month. E.g. [ScheduledInstallSecondWeek](#scheduledinstallsecondweek) + [ScheduledInstallDay](#scheduledinstallday) = 3 is 2nd Tuesday of the month. If the device is unavailable at the scheduled time, it can postpone installation of updates until the next month.
+
 > [!NOTE]
 > This policy will only take effect if [Update/AllowAutoUpdate](#allowautoupdate) has been configured to option 3 or 4 for scheduled installation.
 <!-- ScheduledInstallFourthWeek-Editable-End -->
@@ -2877,7 +3054,7 @@ Enables the IT admin to schedule the update installation on the fourth week of t
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- ScheduledInstallFourthWeek-DFProperties-End -->
@@ -2898,7 +3075,7 @@ Enables the IT admin to schedule the update installation on the fourth week of t
 |:--|:--|
 | Name | AutoUpdateCfg |
 | Friendly Name | Configure Automatic Updates |
-| Element Name | Fourth week of the month |
+| Element Name | Fourth week of the month. |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Update > Manage end user experience |
 | Registry Key Name | Software\Policies\Microsoft\Windows\WindowsUpdate\AU |
@@ -2917,7 +3094,7 @@ Enables the IT admin to schedule the update installation on the fourth week of t
 <!-- ScheduledInstallSecondWeek-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- ScheduledInstallSecondWeek-Applicability-End -->
 
 <!-- ScheduledInstallSecondWeek-OmaUri-Begin -->
@@ -2933,6 +3110,15 @@ Enables the IT admin to schedule the update installation on the second week of t
 
 <!-- ScheduledInstallSecondWeek-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+The ScheduledInstall*week policies operate on numeric days.
+
+- [ScheduledInstallFirstWeek](#scheduledinstallfirstweek): First week of the month (Days 1-7).
+- [ScheduledInstallSecondWeek](#scheduledinstallsecondweek): Second week of the month (Days 8-14).
+- [ScheduledInstallThirdWeek](#scheduledinstallthirdweek): Third week of the month (Days 15-21).
+- [ScheduledInstallFourthWeek](#scheduledinstallfourthweek): Fourth week of the month (Days 22-31).
+
+These policies are not exclusive and can be used in any combination. Together with [ScheduledInstallDay](#scheduledinstallday), it defines the ordinal number of a weekday in a month. E.g. [ScheduledInstallSecondWeek](#scheduledinstallsecondweek) + [ScheduledInstallDay](#scheduledinstallday) = 3 is 2nd Tuesday of the month. If the device is unavailable at the scheduled time, it can postpone installation of updates until the next month.
+
 > [!NOTE]
 > This policy will only take effect if [Update/AllowAutoUpdate](#allowautoupdate) has been configured to option 3 or 4 for scheduled installation.
 <!-- ScheduledInstallSecondWeek-Editable-End -->
@@ -2942,7 +3128,7 @@ Enables the IT admin to schedule the update installation on the second week of t
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- ScheduledInstallSecondWeek-DFProperties-End -->
@@ -2963,7 +3149,7 @@ Enables the IT admin to schedule the update installation on the second week of t
 |:--|:--|
 | Name | AutoUpdateCfg |
 | Friendly Name | Configure Automatic Updates |
-| Element Name | Second week of the month |
+| Element Name | Second week of the month. |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Update > Manage end user experience |
 | Registry Key Name | Software\Policies\Microsoft\Windows\WindowsUpdate\AU |
@@ -2982,7 +3168,7 @@ Enables the IT admin to schedule the update installation on the second week of t
 <!-- ScheduledInstallThirdWeek-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- ScheduledInstallThirdWeek-Applicability-End -->
 
 <!-- ScheduledInstallThirdWeek-OmaUri-Begin -->
@@ -2998,6 +3184,15 @@ Enables the IT admin to schedule the update installation on the third week of th
 
 <!-- ScheduledInstallThirdWeek-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+The ScheduledInstall*week policies operate on numeric days.
+
+- [ScheduledInstallFirstWeek](#scheduledinstallfirstweek): First week of the month (Days 1-7).
+- [ScheduledInstallSecondWeek](#scheduledinstallsecondweek): Second week of the month (Days 8-14).
+- [ScheduledInstallThirdWeek](#scheduledinstallthirdweek): Third week of the month (Days 15-21).
+- [ScheduledInstallFourthWeek](#scheduledinstallfourthweek): Fourth week of the month (Days 22-31).
+
+These policies are not exclusive and can be used in any combination. Together with [ScheduledInstallDay](#scheduledinstallday), it defines the ordinal number of a weekday in a month. E.g. [ScheduledInstallSecondWeek](#scheduledinstallsecondweek) + [ScheduledInstallDay](#scheduledinstallday) = 3 is 2nd Tuesday of the month. If the device is unavailable at the scheduled time, it can postpone installation of updates until the next month.
+
 > [!NOTE]
 > This policy will only take effect if [Update/AllowAutoUpdate](#allowautoupdate) has been configured to option 3 or 4 for scheduled installation.
 <!-- ScheduledInstallThirdWeek-Editable-End -->
@@ -3007,7 +3202,7 @@ Enables the IT admin to schedule the update installation on the third week of th
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- ScheduledInstallThirdWeek-DFProperties-End -->
@@ -3028,7 +3223,7 @@ Enables the IT admin to schedule the update installation on the third week of th
 |:--|:--|
 | Name | AutoUpdateCfg |
 | Friendly Name | Configure Automatic Updates |
-| Element Name | Third week of the month |
+| Element Name | Third week of the month. |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Update > Manage end user experience |
 | Registry Key Name | Software\Policies\Microsoft\Windows\WindowsUpdate\AU |
@@ -3047,7 +3242,7 @@ Enables the IT admin to schedule the update installation on the third week of th
 <!-- ScheduledInstallTime-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- ScheduledInstallTime-Applicability-End -->
 
 <!-- ScheduledInstallTime-OmaUri-Begin -->
@@ -3058,7 +3253,7 @@ Enables the IT admin to schedule the update installation on the third week of th
 
 <!-- ScheduledInstallTime-Description-Begin -->
 <!-- Description-Source-DDF -->
- the IT admin to schedule the time of the update installation. The data type is an integer. Supported values are 0-23, where 0 = 12 AM and 23 = 11 PM. The default value is 3.
+ the IT admin to schedule the time of the update installation. The data type is a integer. Supported values are 0-23, where 0 = 12 AM and 23 = 11 PM. The default value is 3.
 <!-- ScheduledInstallTime-Description-End -->
 
 <!-- ScheduledInstallTime-Editable-Begin -->
@@ -3074,7 +3269,7 @@ Enables the IT admin to schedule the update installation on the third week of th
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-23]` |
 | Default Value  | 3 |
@@ -3087,7 +3282,7 @@ Enables the IT admin to schedule the update installation on the third week of th
 |:--|:--|
 | Name | AutoUpdateCfg |
 | Friendly Name | Configure Automatic Updates |
-| Element Name | Scheduled install time |
+| Element Name | Scheduled install time. |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Update > Manage end user experience |
 | Registry Key Name | Software\Policies\Microsoft\Windows\WindowsUpdate\AU |
@@ -3106,7 +3301,7 @@ Enables the IT admin to schedule the update installation on the third week of th
 <!-- SetDisablePauseUXAccess-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- SetDisablePauseUXAccess-Applicability-End -->
 
 <!-- SetDisablePauseUXAccess-OmaUri-Begin -->
@@ -3117,7 +3312,7 @@ Enables the IT admin to schedule the update installation on the third week of th
 
 <!-- SetDisablePauseUXAccess-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This setting allows removing access to "Pause updates" feature.
+This setting allows to remove access to "Pause updates" feature.
 
 Once enabled user access to pause updates is removed.
 <!-- SetDisablePauseUXAccess-Description-End -->
@@ -3131,7 +3326,7 @@ Once enabled user access to pause updates is removed.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- SetDisablePauseUXAccess-DFProperties-End -->
@@ -3171,7 +3366,7 @@ Once enabled user access to pause updates is removed.
 <!-- SetDisableUXWUAccess-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- SetDisableUXWUAccess-Applicability-End -->
 
 <!-- SetDisableUXWUAccess-OmaUri-Begin -->
@@ -3184,7 +3379,7 @@ Once enabled user access to pause updates is removed.
 <!-- Description-Source-ADMX -->
 This setting allows you to remove access to scan Windows Update.
 
-- If you enable this setting user access to Windows Update scan, download and install is removed.
+If you enable this setting user access to Windows Update scan, download and install is removed.
 <!-- SetDisableUXWUAccess-Description-End -->
 
 <!-- SetDisableUXWUAccess-Editable-Begin -->
@@ -3196,7 +3391,7 @@ This setting allows you to remove access to scan Windows Update.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- SetDisableUXWUAccess-DFProperties-End -->
@@ -3236,7 +3431,7 @@ This setting allows you to remove access to scan Windows Update.
 <!-- SetEDURestart-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- SetEDURestart-Applicability-End -->
 
 <!-- SetEDURestart-OmaUri-Begin -->
@@ -3259,10 +3454,9 @@ The following rules are followed regarding battery power:
 - Above 40% - allowed to reboot;
 - Above 20% - allowed to continue work.
 
-This setting overrides the install deferral behaviour of [AllowAutoUpdate](#allowautoupdate).
+This setting overrides the install deferral behavior of [AllowAutoUpdate](#allowautoupdate).
 
 These settings are designed for education devices that remain in carts overnight that are left in sleep mode. It is not designed for 1:1 devices.
-
 <!-- SetEDURestart-Editable-End -->
 
 <!-- SetEDURestart-DFProperties-Begin -->
@@ -3270,7 +3464,7 @@ These settings are designed for education devices that remain in carts overnight
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- SetEDURestart-DFProperties-End -->
@@ -3310,7 +3504,7 @@ These settings are designed for education devices that remain in carts overnight
 <!-- UpdateNotificationLevel-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- UpdateNotificationLevel-Applicability-End -->
 
 <!-- UpdateNotificationLevel-OmaUri-Begin -->
@@ -3323,11 +3517,11 @@ These settings are designed for education devices that remain in carts overnight
 <!-- Description-Source-ADMX -->
 0 (default) - Use the default Windows Update notifications
 1 - Turn off all notifications, excluding restart warnings
-2 - Turn off all notifications, including restart warnings
+2 - Turn off all notifications, including restart warnings.
 
 This policy allows you to define what Windows Update notifications users see. This policy doesn't control how and when updates are downloaded and installed.
 
-**Important** if you choose not to get update notifications and also define other Group policy so that devices aren't automatically getting updates, neither you nor device users will be aware of critical security, quality, or feature updates, and your devices may be at risk.
+Important if you choose not to get update notifications and also define other Group policy so that devices aren't automatically getting updates, neither you nor device users will be aware of critical security, quality, or feature updates, and your devices may be at risk.
 
 If you select "Apply only during active hours" in conjunction with Option 1 or 2, then notifications will only be disabled during active hours. You can set active hours by setting "Turn off auto-restart for updates during active hours" or allow the device to set active hours based on user behavior. To ensure that the device stays secure, a notification will still be shown if this option is selected once "Specify deadlines for automatic updates and restarts" deadline has been reached if configured, regardless of active hours.
 <!-- UpdateNotificationLevel-Description-End -->
@@ -3341,7 +3535,7 @@ If you select "Apply only during active hours" in conjunction with Option 1 or 2
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- UpdateNotificationLevel-DFProperties-End -->
@@ -3384,7 +3578,7 @@ If you select "Apply only during active hours" in conjunction with Option 1 or 2
 <!-- AutoRestartDeadlinePeriodInDays-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AutoRestartDeadlinePeriodInDays-Applicability-End -->
 
 <!-- AutoRestartDeadlinePeriodInDays-OmaUri-Begin -->
@@ -3399,11 +3593,12 @@ Specify the deadline before the PC will automatically restart to apply updates. 
 
 The restart may happen inside active hours.
 
-- If you disable or do not configure this policy, the PC will restart according to the default schedule.
+If you disable or don't configure this policy, the PC will restart according to the default schedule.
 
 Enabling either of the following two policies will override the above policy:
 
-1. No auto-restart with logged on users for scheduled automatic updates installations.
+1. No auto-restart with logged-on users for scheduled automatic updates installations.
+
 2. Always automatically restart at scheduled time.
 <!-- AutoRestartDeadlinePeriodInDays-Description-End -->
 
@@ -3416,7 +3611,7 @@ Enabling either of the following two policies will override the above policy:
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[2-30]` |
 | Default Value  | 7 |
@@ -3448,7 +3643,7 @@ Enabling either of the following two policies will override the above policy:
 <!-- AutoRestartDeadlinePeriodInDaysForFeatureUpdates-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- AutoRestartDeadlinePeriodInDaysForFeatureUpdates-Applicability-End -->
 
 <!-- AutoRestartDeadlinePeriodInDaysForFeatureUpdates-OmaUri-Begin -->
@@ -3463,11 +3658,12 @@ Specify the deadline before the PC will automatically restart to apply updates. 
 
 The restart may happen inside active hours.
 
-- If you disable or do not configure this policy, the PC will restart according to the default schedule.
+If you disable or don't configure this policy, the PC will restart according to the default schedule.
 
 Enabling either of the following two policies will override the above policy:
 
-1. No auto-restart with logged on users for scheduled automatic updates installations.
+1. No auto-restart with logged-on users for scheduled automatic updates installations.
+
 2. Always automatically restart at scheduled time.
 <!-- AutoRestartDeadlinePeriodInDaysForFeatureUpdates-Description-End -->
 
@@ -3480,7 +3676,7 @@ Enabling either of the following two policies will override the above policy:
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[2-30]` |
 | Default Value  | 7 |
@@ -3512,7 +3708,7 @@ Enabling either of the following two policies will override the above policy:
 <!-- AutoRestartNotificationSchedule-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AutoRestartNotificationSchedule-Applicability-End -->
 
 <!-- AutoRestartNotificationSchedule-OmaUri-Begin -->
@@ -3522,8 +3718,12 @@ Enabling either of the following two policies will override the above policy:
 <!-- AutoRestartNotificationSchedule-OmaUri-End -->
 
 <!-- AutoRestartNotificationSchedule-Description-Begin -->
-<!-- Description-Source-DDF -->
-Allows the IT Admin to specify the period for auto-restart reminder notifications. The default value is 15 (minutes).
+<!-- Description-Source-ADMX -->
+Enable this policy to specify when auto-restart reminders are displayed.
+
+You can specify the amount of time prior to a scheduled restart to notify the user.
+
+If you disable or don't configure this policy, the default period will be used.
 <!-- AutoRestartNotificationSchedule-Description-End -->
 
 <!-- AutoRestartNotificationSchedule-Editable-Begin -->
@@ -3535,7 +3735,7 @@ Allows the IT Admin to specify the period for auto-restart reminder notification
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 15 |
 <!-- AutoRestartNotificationSchedule-DFProperties-End -->
@@ -3578,7 +3778,7 @@ Allows the IT Admin to specify the period for auto-restart reminder notification
 <!-- AutoRestartRequiredNotificationDismissal-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AutoRestartRequiredNotificationDismissal-Applicability-End -->
 
 <!-- AutoRestartRequiredNotificationDismissal-OmaUri-Begin -->
@@ -3593,7 +3793,7 @@ Enable this policy to specify the method by which the auto-restart required noti
 
 The method can be set to require user action to dismiss the notification.
 
-- If you disable or do not configure this policy, the default method will be used.
+If you disable or don't configure this policy, the default method will be used.
 <!-- AutoRestartRequiredNotificationDismissal-Description-End -->
 
 <!-- AutoRestartRequiredNotificationDismissal-Editable-Begin -->
@@ -3605,7 +3805,7 @@ The method can be set to require user action to dismiss the notification.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AutoRestartRequiredNotificationDismissal-DFProperties-End -->
@@ -3626,7 +3826,7 @@ The method can be set to require user action to dismiss the notification.
 |:--|:--|
 | Name | AutoRestartRequiredNotificationDismissal |
 | Friendly Name | Configure auto-restart required notification for updates |
-| Element Name | Method |
+| Element Name | Method. |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Update > Legacy Policies |
 | Registry Key Name | Software\Policies\Microsoft\Windows\WindowsUpdate |
@@ -3645,7 +3845,7 @@ The method can be set to require user action to dismiss the notification.
 <!-- DeferUpdatePeriod-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- DeferUpdatePeriod-Applicability-End -->
 
 <!-- DeferUpdatePeriod-OmaUri-Begin -->
@@ -3661,7 +3861,7 @@ The method can be set to require user action to dismiss the notification.
 <!-- DeferUpdatePeriod-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](../device-update-management.md#windows10version1607forupdatemanagement). You can continue to use DeferUpdatePeriod for Windows 10, version 1511 devices.
+> Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](#changes-in-windows-10-version-1607). You can continue to use DeferUpdatePeriod for Windows 10, version 1511 devices.
 
 Allows IT Admins to specify update delays for up to four weeks. Supported values are 0-4, which refers to the number of weeks to defer updates.
 
@@ -3704,7 +3904,7 @@ Other/can't defer:
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-4]` |
 | Default Value  | 0 |
@@ -3732,7 +3932,7 @@ Other/can't defer:
 <!-- DeferUpgradePeriod-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- DeferUpgradePeriod-Applicability-End -->
 
 <!-- DeferUpgradePeriod-OmaUri-Begin -->
@@ -3753,7 +3953,7 @@ Allows IT Admins to specify additional upgrade delays for up to 8 months. Suppor
 - If the **Allow Telemetry** policy is enabled and the Options value is set to 0, then the Defer upgrades by, Defer updates by and Pause Updates and Upgrades settings have no effect.
 
 > [!NOTE]
-> Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](../device-update-management.md#windows10version1607forupdatemanagement). You can continue to use DeferUpgradePeriod for Windows 10, version 1511 devices.
+> Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](#changes-in-windows-10-version-1607). You can continue to use DeferUpgradePeriod for Windows 10, version 1511 devices.
 <!-- DeferUpgradePeriod-Editable-End -->
 
 <!-- DeferUpgradePeriod-DFProperties-Begin -->
@@ -3761,7 +3961,7 @@ Allows IT Admins to specify additional upgrade delays for up to 8 months. Suppor
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-8]` |
 | Default Value  | 0 |
@@ -3789,7 +3989,7 @@ Allows IT Admins to specify additional upgrade delays for up to 8 months. Suppor
 <!-- DisableDualScan-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- DisableDualScan-Applicability-End -->
 
 <!-- DisableDualScan-OmaUri-Begin -->
@@ -3803,6 +4003,7 @@ Allows IT Admins to specify additional upgrade delays for up to 8 months. Suppor
 Enable this policy to not allow update deferral policies to cause scans against Windows Update.
 
 If this policy is disabled or not configured, then the Windows Update client may initiate automatic scans against Windows Update while update deferral policies are enabled.
+
 > [!NOTE]
 > This policy applies only when the intranet Microsoft update service this computer is directed to is configured to support client-side targeting. If the "Specify intranet Microsoft update service location" policy is disabled or not configured, this policy has no effect.
 <!-- DisableDualScan-Description-End -->
@@ -3818,7 +4019,7 @@ If this policy is disabled or not configured, then the Windows Update client may
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DisableDualScan-DFProperties-End -->
@@ -3829,7 +4030,7 @@ If this policy is disabled or not configured, then the Windows Update client may
 | Value | Description |
 |:--|:--|
 | 0 (Default) | Allow scan against Windows Update. |
-| 1 | Do not allow update deferral policies to cause scans against Windows Update. |
+| 1 | Don't allow update deferral policies to cause scans against Windows Update. |
 <!-- DisableDualScan-AllowedValues-End -->
 
 <!-- DisableDualScan-GpMapping-Begin -->
@@ -3858,7 +4059,7 @@ If this policy is disabled or not configured, then the Windows Update client may
 <!-- EngagedRestartDeadline-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- EngagedRestartDeadline-Applicability-End -->
 
 <!-- EngagedRestartDeadline-OmaUri-Begin -->
@@ -3875,16 +4076,16 @@ You can specify the number of days a user can snooze Engaged restart reminder no
 
 You can specify the deadline in days before automatically scheduling and executing a pending restart regardless of active hours. The deadline can be set between 2 and 30 days from the time the restart becomes pending. If configured, the pending restart will transition from Auto-restart to Engaged restart (pending user schedule) to automatically executed, within the specified period.
 
-If you do not specify a deadline or if the deadline is set to 0, the PC won't automatically restart and will require the person to schedule it prior to restart.
+If you don't specify a deadline or if the deadline is set to 0, the PC won't automatically restart and will require the person to schedule it prior to restart.
 
-- If you disable or do not configure this policy, the PC will restart following the default schedule.
+If you disable or don't configure this policy, the PC will restart following the default schedule.
 
 Enabling any of the following policies will override the above policy:
 
-1. No auto-restart with logged on users for scheduled automatic updates installations
-2. Always automatically restart at scheduled time
+1. No auto-restart with logged-on users for scheduled automatic updates installations
+2. Always automatically restart at scheduled time.
 
-3. Specify deadline before auto-restart for update installation
+3. Specify deadline before auto-restart for update installation.
 <!-- EngagedRestartDeadline-Description-End -->
 
 <!-- EngagedRestartDeadline-Editable-Begin -->
@@ -3896,7 +4097,7 @@ Enabling any of the following policies will override the above policy:
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[2-30]` |
 | Default Value  | 14 |
@@ -3909,7 +4110,7 @@ Enabling any of the following policies will override the above policy:
 |:--|:--|
 | Name | EngagedRestartTransitionSchedule |
 | Friendly Name | Specify Engaged restart transition and notification schedule for updates |
-| Element Name | Deadline (days)  |
+| Element Name | Deadline (days) |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Update > Legacy Policies |
 | Registry Key Name | Software\Policies\Microsoft\Windows\WindowsUpdate |
@@ -3928,7 +4129,7 @@ Enabling any of the following policies will override the above policy:
 <!-- EngagedRestartDeadlineForFeatureUpdates-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- EngagedRestartDeadlineForFeatureUpdates-Applicability-End -->
 
 <!-- EngagedRestartDeadlineForFeatureUpdates-OmaUri-Begin -->
@@ -3945,16 +4146,16 @@ You can specify the number of days a user can snooze Engaged restart reminder no
 
 You can specify the deadline in days before automatically scheduling and executing a pending restart regardless of active hours. The deadline can be set between 2 and 30 days from the time the restart becomes pending. If configured, the pending restart will transition from Auto-restart to Engaged restart (pending user schedule) to automatically executed, within the specified period.
 
-If you do not specify a deadline or if the deadline is set to 0, the PC won't automatically restart and will require the person to schedule it prior to restart.
+If you don't specify a deadline or if the deadline is set to 0, the PC won't automatically restart and will require the person to schedule it prior to restart.
 
-- If you disable or do not configure this policy, the PC will restart following the default schedule.
+If you disable or don't configure this policy, the PC will restart following the default schedule.
 
 Enabling any of the following policies will override the above policy:
 
-1. No auto-restart with logged on users for scheduled automatic updates installations
-2. Always automatically restart at scheduled time
+1. No auto-restart with logged-on users for scheduled automatic updates installations
+2. Always automatically restart at scheduled time.
 
-3. Specify deadline before auto-restart for update installation
+3. Specify deadline before auto-restart for update installation.
 <!-- EngagedRestartDeadlineForFeatureUpdates-Description-End -->
 
 <!-- EngagedRestartDeadlineForFeatureUpdates-Editable-Begin -->
@@ -3966,7 +4167,7 @@ Enabling any of the following policies will override the above policy:
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[2-30]` |
 | Default Value  | 14 |
@@ -3979,7 +4180,7 @@ Enabling any of the following policies will override the above policy:
 |:--|:--|
 | Name | EngagedRestartTransitionSchedule |
 | Friendly Name | Specify Engaged restart transition and notification schedule for updates |
-| Element Name | Deadline (days)  |
+| Element Name | Deadline (days) |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Update > Legacy Policies |
 | Registry Key Name | Software\Policies\Microsoft\Windows\WindowsUpdate |
@@ -3998,7 +4199,7 @@ Enabling any of the following policies will override the above policy:
 <!-- EngagedRestartSnoozeSchedule-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- EngagedRestartSnoozeSchedule-Applicability-End -->
 
 <!-- EngagedRestartSnoozeSchedule-OmaUri-Begin -->
@@ -4015,16 +4216,16 @@ You can specify the number of days a user can snooze Engaged restart reminder no
 
 You can specify the deadline in days before automatically scheduling and executing a pending restart regardless of active hours. The deadline can be set between 2 and 30 days from the time the restart becomes pending. If configured, the pending restart will transition from Auto-restart to Engaged restart (pending user schedule) to automatically executed, within the specified period.
 
-If you do not specify a deadline or if the deadline is set to 0, the PC won't automatically restart and will require the person to schedule it prior to restart.
+If you don't specify a deadline or if the deadline is set to 0, the PC won't automatically restart and will require the person to schedule it prior to restart.
 
-- If you disable or do not configure this policy, the PC will restart following the default schedule.
+If you disable or don't configure this policy, the PC will restart following the default schedule.
 
 Enabling any of the following policies will override the above policy:
 
-1. No auto-restart with logged on users for scheduled automatic updates installations
-2. Always automatically restart at scheduled time
+1. No auto-restart with logged-on users for scheduled automatic updates installations
+2. Always automatically restart at scheduled time.
 
-3. Specify deadline before auto-restart for update installation
+3. Specify deadline before auto-restart for update installation.
 <!-- EngagedRestartSnoozeSchedule-Description-End -->
 
 <!-- EngagedRestartSnoozeSchedule-Editable-Begin -->
@@ -4036,7 +4237,7 @@ Enabling any of the following policies will override the above policy:
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[1-3]` |
 | Default Value  | 3 |
@@ -4049,7 +4250,7 @@ Enabling any of the following policies will override the above policy:
 |:--|:--|
 | Name | EngagedRestartTransitionSchedule |
 | Friendly Name | Specify Engaged restart transition and notification schedule for updates |
-| Element Name | Snooze (days)  |
+| Element Name | Snooze (days) |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Update > Legacy Policies |
 | Registry Key Name | Software\Policies\Microsoft\Windows\WindowsUpdate |
@@ -4068,7 +4269,7 @@ Enabling any of the following policies will override the above policy:
 <!-- EngagedRestartSnoozeScheduleForFeatureUpdates-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- EngagedRestartSnoozeScheduleForFeatureUpdates-Applicability-End -->
 
 <!-- EngagedRestartSnoozeScheduleForFeatureUpdates-OmaUri-Begin -->
@@ -4085,16 +4286,16 @@ You can specify the number of days a user can snooze Engaged restart reminder no
 
 You can specify the deadline in days before automatically scheduling and executing a pending restart regardless of active hours. The deadline can be set between 2 and 30 days from the time the restart becomes pending. If configured, the pending restart will transition from Auto-restart to Engaged restart (pending user schedule) to automatically executed, within the specified period.
 
-If you do not specify a deadline or if the deadline is set to 0, the PC won't automatically restart and will require the person to schedule it prior to restart.
+If you don't specify a deadline or if the deadline is set to 0, the PC won't automatically restart and will require the person to schedule it prior to restart.
 
-- If you disable or do not configure this policy, the PC will restart following the default schedule.
+If you disable or don't configure this policy, the PC will restart following the default schedule.
 
 Enabling any of the following policies will override the above policy:
 
-1. No auto-restart with logged on users for scheduled automatic updates installations
-2. Always automatically restart at scheduled time
+1. No auto-restart with logged-on users for scheduled automatic updates installations
+2. Always automatically restart at scheduled time.
 
-3. Specify deadline before auto-restart for update installation
+3. Specify deadline before auto-restart for update installation.
 <!-- EngagedRestartSnoozeScheduleForFeatureUpdates-Description-End -->
 
 <!-- EngagedRestartSnoozeScheduleForFeatureUpdates-Editable-Begin -->
@@ -4106,7 +4307,7 @@ Enabling any of the following policies will override the above policy:
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[1-3]` |
 | Default Value  | 3 |
@@ -4119,7 +4320,7 @@ Enabling any of the following policies will override the above policy:
 |:--|:--|
 | Name | EngagedRestartTransitionSchedule |
 | Friendly Name | Specify Engaged restart transition and notification schedule for updates |
-| Element Name | Snooze (days)  |
+| Element Name | Snooze (days) |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Update > Legacy Policies |
 | Registry Key Name | Software\Policies\Microsoft\Windows\WindowsUpdate |
@@ -4138,7 +4339,7 @@ Enabling any of the following policies will override the above policy:
 <!-- EngagedRestartTransitionSchedule-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- EngagedRestartTransitionSchedule-Applicability-End -->
 
 <!-- EngagedRestartTransitionSchedule-OmaUri-Begin -->
@@ -4155,16 +4356,16 @@ You can specify the number of days a user can snooze Engaged restart reminder no
 
 You can specify the deadline in days before automatically scheduling and executing a pending restart regardless of active hours. The deadline can be set between 2 and 30 days from the time the restart becomes pending. If configured, the pending restart will transition from Auto-restart to Engaged restart (pending user schedule) to automatically executed, within the specified period.
 
-If you do not specify a deadline or if the deadline is set to 0, the PC won't automatically restart and will require the person to schedule it prior to restart.
+If you don't specify a deadline or if the deadline is set to 0, the PC won't automatically restart and will require the person to schedule it prior to restart.
 
-- If you disable or do not configure this policy, the PC will restart following the default schedule.
+If you disable or don't configure this policy, the PC will restart following the default schedule.
 
 Enabling any of the following policies will override the above policy:
 
-1. No auto-restart with logged on users for scheduled automatic updates installations
-2. Always automatically restart at scheduled time
+1. No auto-restart with logged-on users for scheduled automatic updates installations
+2. Always automatically restart at scheduled time.
 
-3. Specify deadline before auto-restart for update installation
+3. Specify deadline before auto-restart for update installation.
 <!-- EngagedRestartTransitionSchedule-Description-End -->
 
 <!-- EngagedRestartTransitionSchedule-Editable-Begin -->
@@ -4176,7 +4377,7 @@ Enabling any of the following policies will override the above policy:
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-30]` |
 | Default Value  | 7 |
@@ -4189,7 +4390,7 @@ Enabling any of the following policies will override the above policy:
 |:--|:--|
 | Name | EngagedRestartTransitionSchedule |
 | Friendly Name | Specify Engaged restart transition and notification schedule for updates |
-| Element Name | Transition (days)  |
+| Element Name | Transition (days) |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Update > Legacy Policies |
 | Registry Key Name | Software\Policies\Microsoft\Windows\WindowsUpdate |
@@ -4208,7 +4409,7 @@ Enabling any of the following policies will override the above policy:
 <!-- EngagedRestartTransitionScheduleForFeatureUpdates-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- EngagedRestartTransitionScheduleForFeatureUpdates-Applicability-End -->
 
 <!-- EngagedRestartTransitionScheduleForFeatureUpdates-OmaUri-Begin -->
@@ -4225,16 +4426,16 @@ You can specify the number of days a user can snooze Engaged restart reminder no
 
 You can specify the deadline in days before automatically scheduling and executing a pending restart regardless of active hours. The deadline can be set between 2 and 30 days from the time the restart becomes pending. If configured, the pending restart will transition from Auto-restart to Engaged restart (pending user schedule) to automatically executed, within the specified period.
 
-If you do not specify a deadline or if the deadline is set to 0, the PC won't automatically restart and will require the person to schedule it prior to restart.
+If you don't specify a deadline or if the deadline is set to 0, the PC won't automatically restart and will require the person to schedule it prior to restart.
 
-- If you disable or do not configure this policy, the PC will restart following the default schedule.
+If you disable or don't configure this policy, the PC will restart following the default schedule.
 
 Enabling any of the following policies will override the above policy:
 
-1. No auto-restart with logged on users for scheduled automatic updates installations
-2. Always automatically restart at scheduled time
+1. No auto-restart with logged-on users for scheduled automatic updates installations
+2. Always automatically restart at scheduled time.
 
-3. Specify deadline before auto-restart for update installation
+3. Specify deadline before auto-restart for update installation.
 <!-- EngagedRestartTransitionScheduleForFeatureUpdates-Description-End -->
 
 <!-- EngagedRestartTransitionScheduleForFeatureUpdates-Editable-Begin -->
@@ -4246,7 +4447,7 @@ Enabling any of the following policies will override the above policy:
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-30]` |
 | Default Value  | 7 |
@@ -4259,7 +4460,7 @@ Enabling any of the following policies will override the above policy:
 |:--|:--|
 | Name | EngagedRestartTransitionSchedule |
 | Friendly Name | Specify Engaged restart transition and notification schedule for updates |
-| Element Name | Transition (days)  |
+| Element Name | Transition (days) |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Update > Legacy Policies |
 | Registry Key Name | Software\Policies\Microsoft\Windows\WindowsUpdate |
@@ -4278,7 +4479,7 @@ Enabling any of the following policies will override the above policy:
 <!-- IgnoreMOAppDownloadLimit-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- IgnoreMOAppDownloadLimit-Applicability-End -->
 
 <!-- IgnoreMOAppDownloadLimit-OmaUri-Begin -->
@@ -4312,7 +4513,7 @@ To validate this policy:
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- IgnoreMOAppDownloadLimit-DFProperties-End -->
@@ -4322,7 +4523,7 @@ To validate this policy:
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Do not ignore MO download limit for apps and their updates. |
+| 0 (Default) | Don't ignore MO download limit for apps and their updates. |
 | 1 | Ignore MO download limit (allow unlimited downloading) for apps and their updates. |
 <!-- IgnoreMOAppDownloadLimit-AllowedValues-End -->
 
@@ -4338,7 +4539,7 @@ To validate this policy:
 <!-- IgnoreMOUpdateDownloadLimit-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- IgnoreMOUpdateDownloadLimit-Applicability-End -->
 
 <!-- IgnoreMOUpdateDownloadLimit-OmaUri-Begin -->
@@ -4372,7 +4573,7 @@ To validate this policy:
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- IgnoreMOUpdateDownloadLimit-DFProperties-End -->
@@ -4382,7 +4583,7 @@ To validate this policy:
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Do not ignore MO download limit for OS updates. |
+| 0 (Default) | Don't ignore MO download limit for OS updates. |
 | 1 | Ignore MO download limit (allow unlimited downloading) for OS updates. |
 <!-- IgnoreMOUpdateDownloadLimit-AllowedValues-End -->
 
@@ -4398,7 +4599,7 @@ To validate this policy:
 <!-- PauseDeferrals-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- PauseDeferrals-Applicability-End -->
 
 <!-- PauseDeferrals-OmaUri-Begin -->
@@ -4409,8 +4610,9 @@ To validate this policy:
 
 <!-- PauseDeferrals-Description-Begin -->
 <!-- Description-Source-DDF -->
+
 > [!NOTE]
-> Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](../device-update-management.md#windows10version1607forupdatemanagement). You can continue to use PauseDeferrals for Windows 10, version 1511 devices. Allows IT Admins to pause updates and upgrades for up to 5 weeks. Paused deferrals will be reset after 5 weeks. If the Specify intranet Microsoft update service location policy is enabled, then the Defer upgrades by, Defer updates by and Pause Updates and Upgrades settings have no effect. If the Allow Telemetry policy is enabled and the Options value is set to 0, then the Defer upgrades by, Defer updates by and Pause Updates and Upgrades settings have no effect.
+> Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](#changes-in-windows-10-version-1607). You can continue to use PauseDeferrals for Windows 10, version 1511 devices. Allows IT Admins to pause updates and upgrades for up to 5 weeks. Paused deferrals will be reset after 5 weeks. If the Specify intranet Microsoft update service location policy is enabled, then the Defer upgrades by, Defer updates by and Pause Updates and Upgrades settings have no effect. If the Allow Telemetry policy is enabled and the Options value is set to 0, then the Defer upgrades by, Defer updates by and Pause Updates and Upgrades settings have no effect.
 <!-- PauseDeferrals-Description-End -->
 
 <!-- PauseDeferrals-Editable-Begin -->
@@ -4422,7 +4624,7 @@ To validate this policy:
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- PauseDeferrals-DFProperties-End -->
@@ -4432,7 +4634,7 @@ To validate this policy:
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Deferrals are not paused. |
+| 0 (Default) | Deferrals aren't paused. |
 | 1 | Deferrals are paused. |
 <!-- PauseDeferrals-AllowedValues-End -->
 
@@ -4458,7 +4660,7 @@ To validate this policy:
 <!-- PhoneUpdateRestrictions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- PhoneUpdateRestrictions-Applicability-End -->
 
 <!-- PhoneUpdateRestrictions-OmaUri-Begin -->
@@ -4481,7 +4683,7 @@ This policy is deprecated. Use Update/RequireUpdateApproval instead.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-4]` |
 | Default Value  | 4 |
@@ -4499,7 +4701,7 @@ This policy is deprecated. Use Update/RequireUpdateApproval instead.
 <!-- RequireDeferUpgrade-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- RequireDeferUpgrade-Applicability-End -->
 
 <!-- RequireDeferUpgrade-OmaUri-Begin -->
@@ -4510,8 +4712,9 @@ This policy is deprecated. Use Update/RequireUpdateApproval instead.
 
 <!-- RequireDeferUpgrade-Description-Begin -->
 <!-- Description-Source-DDF -->
+
 > [!NOTE]
-> Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](../device-update-management.md#windows10version1607forupdatemanagement). You can continue to use RequireDeferUpgrade for Windows 10, version 1511 devices. Allows the IT admin to set a device to Semi-Annual Channel train.
+> Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](#changes-in-windows-10-version-1607). You can continue to use RequireDeferUpgrade for Windows 10, version 1511 devices. Allows the IT admin to set a device to Semi-Annual Channel train.
 <!-- RequireDeferUpgrade-Description-End -->
 
 <!-- RequireDeferUpgrade-Editable-Begin -->
@@ -4523,7 +4726,7 @@ This policy is deprecated. Use Update/RequireUpdateApproval instead.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- RequireDeferUpgrade-DFProperties-End -->
@@ -4559,7 +4762,7 @@ This policy is deprecated. Use Update/RequireUpdateApproval instead.
 <!-- RequireUpdateApproval-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- RequireUpdateApproval-Applicability-End -->
 
 <!-- RequireUpdateApproval-OmaUri-Begin -->
@@ -4570,6 +4773,7 @@ This policy is deprecated. Use Update/RequireUpdateApproval instead.
 
 <!-- RequireUpdateApproval-Description-Begin -->
 <!-- Description-Source-DDF -->
+
 > [!NOTE]
 > If you previously used the Update/PhoneUpdateRestrictions policy in previous versions of Windows, it has been deprecated. Please use this policy instead. Allows the IT admin to restrict the updates that are installed on a device to only those on an update approval list. It enables IT to accept the End User License Agreement (EULA) associated with the approved update on behalf of the end-user. EULAs are approved once an update is approved.
 <!-- RequireUpdateApproval-Description-End -->
@@ -4583,7 +4787,7 @@ This policy is deprecated. Use Update/RequireUpdateApproval instead.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- RequireUpdateApproval-DFProperties-End -->
@@ -4609,7 +4813,7 @@ This policy is deprecated. Use Update/RequireUpdateApproval instead.
 <!-- ScheduleImminentRestartWarning-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- ScheduleImminentRestartWarning-Applicability-End -->
 
 <!-- ScheduleImminentRestartWarning-OmaUri-Begin -->
@@ -4619,8 +4823,14 @@ This policy is deprecated. Use Update/RequireUpdateApproval instead.
 <!-- ScheduleImminentRestartWarning-OmaUri-End -->
 
 <!-- ScheduleImminentRestartWarning-Description-Begin -->
-<!-- Description-Source-DDF -->
-Allows the IT Admin to specify the period for auto-restart imminent warning notifications. The default value is 15 (minutes).
+<!-- Description-Source-ADMX -->
+Enable this policy to control when notifications are displayed to warn users about a scheduled restart for the update installation deadline. Users aren't able to postpone the scheduled restart once the deadline has been reached and the restart is automatically executed.
+
+Specifies the amount of time prior to a scheduled restart to display the warning reminder to the user.
+
+You can specify the amount of time prior to a scheduled restart to notify the user that the auto restart is imminent to allow them time to save their work.
+
+If you disable or don't configure this policy, the default notification behaviors will be used.
 <!-- ScheduleImminentRestartWarning-Description-End -->
 
 <!-- ScheduleImminentRestartWarning-Editable-Begin -->
@@ -4632,7 +4842,7 @@ Allows the IT Admin to specify the period for auto-restart imminent warning noti
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 15 |
 <!-- ScheduleImminentRestartWarning-DFProperties-End -->
@@ -4673,7 +4883,7 @@ Allows the IT Admin to specify the period for auto-restart imminent warning noti
 <!-- ScheduleRestartWarning-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- ScheduleRestartWarning-Applicability-End -->
 
 <!-- ScheduleRestartWarning-OmaUri-Begin -->
@@ -4684,13 +4894,13 @@ Allows the IT Admin to specify the period for auto-restart imminent warning noti
 
 <!-- ScheduleRestartWarning-Description-Begin -->
 <!-- Description-Source-ADMX -->
-Enable this policy to control when notifications are displayed to warn users about a scheduled restart for the update installation deadline. Users are not able to postpone the scheduled restart once the deadline has been reached and the restart is automatically executed.
+Enable this policy to control when notifications are displayed to warn users about a scheduled restart for the update installation deadline. Users aren't able to postpone the scheduled restart once the deadline has been reached and the restart is automatically executed.
 
 Specifies the amount of time prior to a scheduled restart to display the warning reminder to the user.
 
 You can specify the amount of time prior to a scheduled restart to notify the user that the auto restart is imminent to allow them time to save their work.
 
-- If you disable or do not configure this policy, the default notification behaviors will be used.
+If you disable or don't configure this policy, the default notification behaviors will be used.
 <!-- ScheduleRestartWarning-Description-End -->
 
 <!-- ScheduleRestartWarning-Editable-Begin -->
@@ -4702,7 +4912,7 @@ You can specify the amount of time prior to a scheduled restart to notify the us
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 4 |
 <!-- ScheduleRestartWarning-DFProperties-End -->
@@ -4745,7 +4955,7 @@ You can specify the amount of time prior to a scheduled restart to notify the us
 <!-- SetAutoRestartNotificationDisable-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- SetAutoRestartNotificationDisable-Applicability-End -->
 
 <!-- SetAutoRestartNotificationDisable-OmaUri-Begin -->
@@ -4755,8 +4965,12 @@ You can specify the amount of time prior to a scheduled restart to notify the us
 <!-- SetAutoRestartNotificationDisable-OmaUri-End -->
 
 <!-- SetAutoRestartNotificationDisable-Description-Begin -->
-<!-- Description-Source-DDF -->
-Allows the IT Admin to disable auto-restart notifications for update installations.
+<!-- Description-Source-ADMX -->
+This policy setting allows you to control whether users receive notifications for auto restarts for update installations including reminder and warning notifications.
+
+Enable this policy to turn off all auto restart notifications.
+
+If you disable or don't configure this policy, the default notification behaviors will be unchanged.
 <!-- SetAutoRestartNotificationDisable-Description-End -->
 
 <!-- SetAutoRestartNotificationDisable-Editable-Begin -->
@@ -4768,7 +4982,7 @@ Allows the IT Admin to disable auto-restart notifications for update installatio
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- SetAutoRestartNotificationDisable-DFProperties-End -->
@@ -4803,6 +5017,27 @@ Allows the IT Admin to disable auto-restart notifications for update installatio
 
 <!-- Update-CspMoreInfo-Begin -->
 <!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+## Changes in Windows 10, version 1607
+
+Here are the new policies added in Windows 10, version 1607. Use these policies for Windows 10, version 1607 devices instead of the older policies
+
+- ActiveHoursEnd
+- ActiveHoursStart
+- AllowMUUpdateService
+- BranchReadinessLevel
+- DeferFeatureUpdatePeriodInDays
+- DeferQualityUpdatePeriodInDays
+- ExcludeWUDriversInQualityUpdate
+- PauseFeatureUpdates
+- PauseQualityUpdates
+
+Here's the list of older policies that are still supported for backward compatibility. You can use these older policies for Windows 10, version 1511 devices.
+
+- RequireDeferUpgrade
+- DeferUpgradePeriod
+- DeferUpdatePeriod
+- PauseDeferrals
+
 <!-- Update-CspMoreInfo-End -->
 
 <!-- Update-End -->

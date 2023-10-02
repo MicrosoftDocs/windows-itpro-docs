@@ -4,7 +4,7 @@ description: View the XML file containing the device description framework (DDF)
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/27/2023
+ms.date: 08/02/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -47,7 +47,7 @@ The following XML file contains the device description framework (DDF) for the F
       <MSFT:Applicability>
         <MSFT:OsBuildVersion>10.0.16299</MSFT:OsBuildVersion>
         <MSFT:CspVersion>1.0</MSFT:CspVersion>
-        <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x77;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x88;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xB4;0xBC;0xBF;0xCA;0xCB;0xCD;</MSFT:EditionAllowList>
+        <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x88;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;</MSFT:EditionAllowList>
       </MSFT:Applicability>
     </DFProperties>
     <Node>
@@ -2815,6 +2815,10 @@ The following XML file contains the device description framework (DDF) for the F
           <DFType>
             <DDFName />
           </DFType>
+          <MSFT:Applicability>
+            <MSFT:OsBuildVersion>10.0.22621</MSFT:OsBuildVersion>
+            <MSFT:CspVersion>1.0</MSFT:CspVersion>
+          </MSFT:Applicability>
         </DFProperties>
         <Node>
           <NodeName>
@@ -2855,7 +2859,7 @@ The following XML file contains the device description framework (DDF) for the F
                 <Replace />
               </AccessType>
               <DefaultValue>true</DefaultValue>
-              <Description>This value is an on/off switch for the firewall and advanced security enforcement.</Description>
+              <Description>This value is an on/off switch for the Hyper-V Firewall. This value controls the settings for all profiles. It is recommended to instead use the profile setting value under the profile subtree.</Description>
               <DFFormat>
                 <bool />
               </DFFormat>
@@ -2871,11 +2875,11 @@ The following XML file contains the device description framework (DDF) for the F
               <MSFT:AllowedValues ValueType="ENUM">
                 <MSFT:Enum>
                   <MSFT:Value>false</MSFT:Value>
-                  <MSFT:ValueDescription>Disable Firewall</MSFT:ValueDescription>
+                  <MSFT:ValueDescription>Disable Hyper-V Firewall</MSFT:ValueDescription>
                 </MSFT:Enum>
                 <MSFT:Enum>
                   <MSFT:Value>true</MSFT:Value>
-                  <MSFT:ValueDescription>Enable Firewall</MSFT:ValueDescription>
+                  <MSFT:ValueDescription>Enable Hyper-V Firewall</MSFT:ValueDescription>
                 </MSFT:Enum>
               </MSFT:AllowedValues>
             </DFProperties>
@@ -2888,7 +2892,7 @@ The following XML file contains the device description framework (DDF) for the F
                 <Replace />
               </AccessType>
               <DefaultValue>0</DefaultValue>
-              <Description>This value is the action that the firewall does by default (and evaluates at the very end) on outbound connections. The allow action is represented by 0x00000000; 0x00000001 represents a block action. Default value is 0 [Allow].</Description>
+              <Description>This value is the action that the Hyper-V Firewall does by default (and evaluates at the very end) on outbound connections. The allow action is represented by 0x00000000; 0x00000001 represents a block action. Default value is 0 [Allow]. This value controls the settings for all profiles. It is recommended to instead use the profile setting value under the profile subtree.</Description>
               <DFFormat>
                 <int />
               </DFFormat>
@@ -2918,7 +2922,7 @@ The following XML file contains the device description framework (DDF) for the F
                     <MSFT:DependencyAllowedValue ValueType="ENUM">
                       <MSFT:Enum>
                         <MSFT:Value>true</MSFT:Value>
-                        <MSFT:ValueDescription>Enable Firewall</MSFT:ValueDescription>
+                        <MSFT:ValueDescription>Enable Hyper-V Firewall</MSFT:ValueDescription>
                       </MSFT:Enum>
                     </MSFT:DependencyAllowedValue>
                   </MSFT:Dependency>
@@ -2934,7 +2938,7 @@ The following XML file contains the device description framework (DDF) for the F
                 <Replace />
               </AccessType>
               <DefaultValue>1</DefaultValue>
-              <Description>This value is the action that the firewall does by default (and evaluates at the very end) on inbound connections. The allow action is represented by 0x00000000; 0x00000001 represents a block action. Default value is 1 [Block].</Description>
+              <Description>This value is the action that the Hyper-V Firewall does by default (and evaluates at the very end) on inbound connections. The allow action is represented by 0x00000000; 0x00000001 represents a block action. Default value is 1 [Block]. This value controls the settings for all profiles. It is recommended to instead use the profile setting value under the profile subtree.</Description>
               <DFFormat>
                 <int />
               </DFFormat>
@@ -2964,7 +2968,7 @@ The following XML file contains the device description framework (DDF) for the F
                     <MSFT:DependencyAllowedValue ValueType="ENUM">
                       <MSFT:Enum>
                         <MSFT:Value>true</MSFT:Value>
-                        <MSFT:ValueDescription>Enable Firewall</MSFT:ValueDescription>
+                        <MSFT:ValueDescription>Enable Hyper-V Firewall</MSFT:ValueDescription>
                       </MSFT:Enum>
                     </MSFT:DependencyAllowedValue>
                   </MSFT:Dependency>
@@ -2979,7 +2983,7 @@ The following XML file contains the device description framework (DDF) for the F
                 <Replace />
               </AccessType>
               <DefaultValue>false</DefaultValue>
-              <Description>This value is an on/off switch for loopback traffic. This determines if this VM type is able to send/receive loopback traffic.</Description>
+              <Description>This value is an on/off switch for loopback traffic. This determines if this VM is able to send/receive loopback traffic to other VMs or the host.</Description>
               <DFFormat>
                 <bool />
               </DFFormat>
@@ -3003,6 +3007,622 @@ The following XML file contains the device description framework (DDF) for the F
                 </MSFT:Enum>
               </MSFT:AllowedValues>
             </DFProperties>
+          </Node>
+          <Node>
+            <NodeName>AllowHostPolicyMerge</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+                <Replace />
+              </AccessType>
+              <DefaultValue>true</DefaultValue>
+              <Description>This value is used as an on/off switch. If this value is true, applicable host firewall rules and settings will be applied to Hyper-V Firewall.</Description>
+              <DFFormat>
+                <bool />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Permanent />
+              </Scope>
+              <DFType>
+                <MIME />
+              </DFType>
+              <MSFT:Applicability>
+                <MSFT:OsBuildVersion>10.0.25398</MSFT:OsBuildVersion>
+                <MSFT:CspVersion>1.0</MSFT:CspVersion>
+              </MSFT:Applicability>
+              <MSFT:AllowedValues ValueType="ENUM">
+                <MSFT:Enum>
+                  <MSFT:Value>false</MSFT:Value>
+                  <MSFT:ValueDescription>AllowHostPolicyMerge Off</MSFT:ValueDescription>
+                </MSFT:Enum>
+                <MSFT:Enum>
+                  <MSFT:Value>true</MSFT:Value>
+                  <MSFT:ValueDescription>AllowHostPolicyMerge On</MSFT:ValueDescription>
+                </MSFT:Enum>
+              </MSFT:AllowedValues>
+            </DFProperties>
+          </Node>
+          <Node>
+            <NodeName>DomainProfile</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+              </AccessType>
+              <DFFormat>
+                <node />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Permanent />
+              </Scope>
+              <DFType>
+                <DDFName />
+              </DFType>
+              <MSFT:Applicability>
+                <MSFT:OsBuildVersion>10.0.25398</MSFT:OsBuildVersion>
+                <MSFT:CspVersion>1.0</MSFT:CspVersion>
+              </MSFT:Applicability>
+            </DFProperties>
+            <Node>
+              <NodeName>EnableFirewall</NodeName>
+              <DFProperties>
+                <AccessType>
+                  <Replace />
+                </AccessType>
+                <DefaultValue>true</DefaultValue>
+                <Description>This value is an on/off switch for the Hyper-V Firewall enforcement.</Description>
+                <DFFormat>
+                  <bool />
+                </DFFormat>
+                <Occurrence>
+                  <One />
+                </Occurrence>
+                <Scope>
+                  <Dynamic />
+                </Scope>
+                <DFType>
+                  <MIME />
+                </DFType>
+                <MSFT:AllowedValues ValueType="ENUM">
+                  <MSFT:Enum>
+                    <MSFT:Value>false</MSFT:Value>
+                    <MSFT:ValueDescription>Disable Firewall</MSFT:ValueDescription>
+                  </MSFT:Enum>
+                  <MSFT:Enum>
+                    <MSFT:Value>true</MSFT:Value>
+                    <MSFT:ValueDescription>Enable Firewall</MSFT:ValueDescription>
+                  </MSFT:Enum>
+                </MSFT:AllowedValues>
+              </DFProperties>
+            </Node>
+            <Node>
+              <NodeName>DefaultOutboundAction</NodeName>
+              <DFProperties>
+                <AccessType>
+                  <Get />
+                  <Replace />
+                </AccessType>
+                <DefaultValue>0</DefaultValue>
+                <Description>This value is the action that the Hyper-V Firewall does by default (and evaluates at the very end) on outbound connections. The allow action is represented by 0x00000000; 0x00000001 represents a block action. Default value is 0 [Allow].</Description>
+                <DFFormat>
+                  <int />
+                </DFFormat>
+                <Occurrence>
+                  <One />
+                </Occurrence>
+                <Scope>
+                  <Dynamic />
+                </Scope>
+                <DFType>
+                  <MIME />
+                </DFType>
+                <MSFT:AllowedValues ValueType="ENUM">
+                  <MSFT:Enum>
+                    <MSFT:Value>0</MSFT:Value>
+                    <MSFT:ValueDescription>Allow Outbound By Default</MSFT:ValueDescription>
+                  </MSFT:Enum>
+                  <MSFT:Enum>
+                    <MSFT:Value>1</MSFT:Value>
+                    <MSFT:ValueDescription>Block Outbound By Default</MSFT:ValueDescription>
+                  </MSFT:Enum>
+                </MSFT:AllowedValues>
+                <MSFT:DependencyBehavior>
+                  <MSFT:DependencyGroup FriendlyId="Enable Firewall">
+                    <MSFT:Dependency Type="DependsOn">
+                      <MSFT:DependencyUri>Vendor/MSFT/Firewall/MdmStore/HyperVVMSettings/[VMCreatorId]/DomainProfile/EnableFirewall</MSFT:DependencyUri>
+                      <MSFT:DependencyAllowedValue ValueType="ENUM">
+                        <MSFT:Enum>
+                          <MSFT:Value>true</MSFT:Value>
+                          <MSFT:ValueDescription>Enable Hyper-V Firewall</MSFT:ValueDescription>
+                        </MSFT:Enum>
+                      </MSFT:DependencyAllowedValue>
+                    </MSFT:Dependency>
+                  </MSFT:DependencyGroup>
+                </MSFT:DependencyBehavior>
+              </DFProperties>
+            </Node>
+            <Node>
+              <NodeName>DefaultInboundAction</NodeName>
+              <DFProperties>
+                <AccessType>
+                  <Get />
+                  <Replace />
+                </AccessType>
+                <DefaultValue>1</DefaultValue>
+                <Description>This value is the action that the Hyper-V Firewall does by default (and evaluates at the very end) on inbound connections. The allow action is represented by 0x00000000; 0x00000001 represents a block action. Default value is 1 [Block].</Description>
+                <DFFormat>
+                  <int />
+                </DFFormat>
+                <Occurrence>
+                  <One />
+                </Occurrence>
+                <Scope>
+                  <Dynamic />
+                </Scope>
+                <DFType>
+                  <MIME />
+                </DFType>
+                <MSFT:AllowedValues ValueType="ENUM">
+                  <MSFT:Enum>
+                    <MSFT:Value>0</MSFT:Value>
+                    <MSFT:ValueDescription>Allow Inbound By Default</MSFT:ValueDescription>
+                  </MSFT:Enum>
+                  <MSFT:Enum>
+                    <MSFT:Value>1</MSFT:Value>
+                    <MSFT:ValueDescription>Block Inbound By Default</MSFT:ValueDescription>
+                  </MSFT:Enum>
+                </MSFT:AllowedValues>
+                <MSFT:DependencyBehavior>
+                  <MSFT:DependencyGroup FriendlyId="Enable Firewall">
+                    <MSFT:Dependency Type="DependsOn">
+                      <MSFT:DependencyUri>Vendor/MSFT/Firewall/MdmStore/HyperVVMSettings/[VMCreatorId]/DomainProfile/EnableFirewall</MSFT:DependencyUri>
+                      <MSFT:DependencyAllowedValue ValueType="ENUM">
+                        <MSFT:Enum>
+                          <MSFT:Value>true</MSFT:Value>
+                          <MSFT:ValueDescription>Enable Hyper-V Firewall</MSFT:ValueDescription>
+                        </MSFT:Enum>
+                      </MSFT:DependencyAllowedValue>
+                    </MSFT:Dependency>
+                  </MSFT:DependencyGroup>
+                </MSFT:DependencyBehavior>
+              </DFProperties>
+            </Node>
+            <Node>
+              <NodeName>AllowLocalPolicyMerge</NodeName>
+              <DFProperties>
+                <AccessType>
+                  <Replace />
+                </AccessType>
+                <DefaultValue>true</DefaultValue>
+                <Description>This value is used as an on/off switch. If this value is false, Hyper-V Firewall rules from the local store are ignored and not enforced.</Description>
+                <DFFormat>
+                  <bool />
+                </DFFormat>
+                <Occurrence>
+                  <One />
+                </Occurrence>
+                <Scope>
+                  <Dynamic />
+                </Scope>
+                <DFType>
+                  <MIME />
+                </DFType>
+                <MSFT:AllowedValues ValueType="ENUM">
+                  <MSFT:Enum>
+                    <MSFT:Value>false</MSFT:Value>
+                    <MSFT:ValueDescription>AllowLocalPolicyMerge Off</MSFT:ValueDescription>
+                  </MSFT:Enum>
+                  <MSFT:Enum>
+                    <MSFT:Value>true</MSFT:Value>
+                    <MSFT:ValueDescription>AllowLocalPolicyMerge On</MSFT:ValueDescription>
+                  </MSFT:Enum>
+                </MSFT:AllowedValues>
+                <MSFT:DependencyBehavior>
+                  <MSFT:DependencyGroup FriendlyId="Enable Firewall">
+                    <MSFT:Dependency Type="DependsOn">
+                      <MSFT:DependencyUri>Vendor/MSFT/Firewall/MdmStore/HyperVVMSettings/[VMCreatorId]/DomainProfile/EnableFirewall</MSFT:DependencyUri>
+                      <MSFT:DependencyAllowedValue ValueType="ENUM">
+                        <MSFT:Enum>
+                          <MSFT:Value>true</MSFT:Value>
+                          <MSFT:ValueDescription>Enable Hyper-V Firewall</MSFT:ValueDescription>
+                        </MSFT:Enum>
+                      </MSFT:DependencyAllowedValue>
+                    </MSFT:Dependency>
+                  </MSFT:DependencyGroup>
+                </MSFT:DependencyBehavior>
+              </DFProperties>
+            </Node>
+          </Node>
+          <Node>
+            <NodeName>PrivateProfile</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+              </AccessType>
+              <DFFormat>
+                <node />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Permanent />
+              </Scope>
+              <DFType>
+                <DDFName />
+              </DFType>
+              <MSFT:Applicability>
+                <MSFT:OsBuildVersion>10.0.25398</MSFT:OsBuildVersion>
+                <MSFT:CspVersion>1.0</MSFT:CspVersion>
+              </MSFT:Applicability>
+            </DFProperties>
+            <Node>
+              <NodeName>EnableFirewall</NodeName>
+              <DFProperties>
+                <AccessType>
+                  <Replace />
+                </AccessType>
+                <DefaultValue>true</DefaultValue>
+                <Description>This value is an on/off switch for the Hyper-V Firewall enforcement.</Description>
+                <DFFormat>
+                  <bool />
+                </DFFormat>
+                <Occurrence>
+                  <One />
+                </Occurrence>
+                <Scope>
+                  <Dynamic />
+                </Scope>
+                <DFType>
+                  <MIME />
+                </DFType>
+                <MSFT:AllowedValues ValueType="ENUM">
+                  <MSFT:Enum>
+                    <MSFT:Value>false</MSFT:Value>
+                    <MSFT:ValueDescription>Disable Firewall</MSFT:ValueDescription>
+                  </MSFT:Enum>
+                  <MSFT:Enum>
+                    <MSFT:Value>true</MSFT:Value>
+                    <MSFT:ValueDescription>Enable Firewall</MSFT:ValueDescription>
+                  </MSFT:Enum>
+                </MSFT:AllowedValues>
+              </DFProperties>
+            </Node>
+            <Node>
+              <NodeName>DefaultOutboundAction</NodeName>
+              <DFProperties>
+                <AccessType>
+                  <Get />
+                  <Replace />
+                </AccessType>
+                <DefaultValue>0</DefaultValue>
+                <Description>This value is the action that the Hyper-V Firewall does by default (and evaluates at the very end) on outbound connections. The allow action is represented by 0x00000000; 0x00000001 represents a block action. Default value is 0 [Allow].</Description>
+                <DFFormat>
+                  <int />
+                </DFFormat>
+                <Occurrence>
+                  <One />
+                </Occurrence>
+                <Scope>
+                  <Dynamic />
+                </Scope>
+                <DFType>
+                  <MIME />
+                </DFType>
+                <MSFT:AllowedValues ValueType="ENUM">
+                  <MSFT:Enum>
+                    <MSFT:Value>0</MSFT:Value>
+                    <MSFT:ValueDescription>Allow Outbound By Default</MSFT:ValueDescription>
+                  </MSFT:Enum>
+                  <MSFT:Enum>
+                    <MSFT:Value>1</MSFT:Value>
+                    <MSFT:ValueDescription>Block Outbound By Default</MSFT:ValueDescription>
+                  </MSFT:Enum>
+                </MSFT:AllowedValues>
+                <MSFT:DependencyBehavior>
+                  <MSFT:DependencyGroup FriendlyId="Enable Firewall">
+                    <MSFT:Dependency Type="DependsOn">
+                      <MSFT:DependencyUri>Vendor/MSFT/Firewall/MdmStore/HyperVVMSettings/[VMCreatorId]/PrivateProfile/EnableFirewall</MSFT:DependencyUri>
+                      <MSFT:DependencyAllowedValue ValueType="ENUM">
+                        <MSFT:Enum>
+                          <MSFT:Value>true</MSFT:Value>
+                          <MSFT:ValueDescription>Enable Hyper-V Firewall</MSFT:ValueDescription>
+                        </MSFT:Enum>
+                      </MSFT:DependencyAllowedValue>
+                    </MSFT:Dependency>
+                  </MSFT:DependencyGroup>
+                </MSFT:DependencyBehavior>
+              </DFProperties>
+            </Node>
+            <Node>
+              <NodeName>DefaultInboundAction</NodeName>
+              <DFProperties>
+                <AccessType>
+                  <Get />
+                  <Replace />
+                </AccessType>
+                <DefaultValue>1</DefaultValue>
+                <Description>This value is the action that the Hyper-V Firewall does by default (and evaluates at the very end) on inbound connections. The allow action is represented by 0x00000000; 0x00000001 represents a block action. Default value is 1 [Block].</Description>
+                <DFFormat>
+                  <int />
+                </DFFormat>
+                <Occurrence>
+                  <One />
+                </Occurrence>
+                <Scope>
+                  <Dynamic />
+                </Scope>
+                <DFType>
+                  <MIME />
+                </DFType>
+                <MSFT:AllowedValues ValueType="ENUM">
+                  <MSFT:Enum>
+                    <MSFT:Value>0</MSFT:Value>
+                    <MSFT:ValueDescription>Allow Inbound By Default</MSFT:ValueDescription>
+                  </MSFT:Enum>
+                  <MSFT:Enum>
+                    <MSFT:Value>1</MSFT:Value>
+                    <MSFT:ValueDescription>Block Inbound By Default</MSFT:ValueDescription>
+                  </MSFT:Enum>
+                </MSFT:AllowedValues>
+                <MSFT:DependencyBehavior>
+                  <MSFT:DependencyGroup FriendlyId="Enable Firewall">
+                    <MSFT:Dependency Type="DependsOn">
+                      <MSFT:DependencyUri>Vendor/MSFT/Firewall/MdmStore/HyperVVMSettings/[VMCreatorId]/PrivateProfile/EnableFirewall</MSFT:DependencyUri>
+                      <MSFT:DependencyAllowedValue ValueType="ENUM">
+                        <MSFT:Enum>
+                          <MSFT:Value>true</MSFT:Value>
+                          <MSFT:ValueDescription>Enable Hyper-V Firewall</MSFT:ValueDescription>
+                        </MSFT:Enum>
+                      </MSFT:DependencyAllowedValue>
+                    </MSFT:Dependency>
+                  </MSFT:DependencyGroup>
+                </MSFT:DependencyBehavior>
+              </DFProperties>
+            </Node>
+            <Node>
+              <NodeName>AllowLocalPolicyMerge</NodeName>
+              <DFProperties>
+                <AccessType>
+                  <Replace />
+                </AccessType>
+                <DefaultValue>true</DefaultValue>
+                <Description>This value is used as an on/off switch. If this value is false, Hyper-V Firewall rules from the local store are ignored and not enforced.</Description>
+                <DFFormat>
+                  <bool />
+                </DFFormat>
+                <Occurrence>
+                  <One />
+                </Occurrence>
+                <Scope>
+                  <Dynamic />
+                </Scope>
+                <DFType>
+                  <MIME />
+                </DFType>
+                <MSFT:AllowedValues ValueType="ENUM">
+                  <MSFT:Enum>
+                    <MSFT:Value>false</MSFT:Value>
+                    <MSFT:ValueDescription>AllowLocalPolicyMerge Off</MSFT:ValueDescription>
+                  </MSFT:Enum>
+                  <MSFT:Enum>
+                    <MSFT:Value>true</MSFT:Value>
+                    <MSFT:ValueDescription>AllowLocalPolicyMerge On</MSFT:ValueDescription>
+                  </MSFT:Enum>
+                </MSFT:AllowedValues>
+                <MSFT:DependencyBehavior>
+                  <MSFT:DependencyGroup FriendlyId="Enable Firewall">
+                    <MSFT:Dependency Type="DependsOn">
+                      <MSFT:DependencyUri>Vendor/MSFT/Firewall/MdmStore/HyperVVMSettings/[VMCreatorId]/PrivateProfile/EnableFirewall</MSFT:DependencyUri>
+                      <MSFT:DependencyAllowedValue ValueType="ENUM">
+                        <MSFT:Enum>
+                          <MSFT:Value>true</MSFT:Value>
+                          <MSFT:ValueDescription>Enable Hyper-V Firewall</MSFT:ValueDescription>
+                        </MSFT:Enum>
+                      </MSFT:DependencyAllowedValue>
+                    </MSFT:Dependency>
+                  </MSFT:DependencyGroup>
+                </MSFT:DependencyBehavior>
+              </DFProperties>
+            </Node>
+          </Node>
+          <Node>
+            <NodeName>PublicProfile</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+              </AccessType>
+              <DFFormat>
+                <node />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Permanent />
+              </Scope>
+              <DFType>
+                <DDFName />
+              </DFType>
+              <MSFT:Applicability>
+                <MSFT:OsBuildVersion>10.0.25398</MSFT:OsBuildVersion>
+                <MSFT:CspVersion>1.0</MSFT:CspVersion>
+              </MSFT:Applicability>
+            </DFProperties>
+            <Node>
+              <NodeName>EnableFirewall</NodeName>
+              <DFProperties>
+                <AccessType>
+                  <Replace />
+                </AccessType>
+                <DefaultValue>true</DefaultValue>
+                <Description>This value is an on/off switch for the Hyper-V Firewall enforcement.</Description>
+                <DFFormat>
+                  <bool />
+                </DFFormat>
+                <Occurrence>
+                  <One />
+                </Occurrence>
+                <Scope>
+                  <Dynamic />
+                </Scope>
+                <DFType>
+                  <MIME />
+                </DFType>
+                <MSFT:AllowedValues ValueType="ENUM">
+                  <MSFT:Enum>
+                    <MSFT:Value>false</MSFT:Value>
+                    <MSFT:ValueDescription>Disable Hyper-V Firewall</MSFT:ValueDescription>
+                  </MSFT:Enum>
+                  <MSFT:Enum>
+                    <MSFT:Value>true</MSFT:Value>
+                    <MSFT:ValueDescription>Enable Hyper-V Firewall</MSFT:ValueDescription>
+                  </MSFT:Enum>
+                </MSFT:AllowedValues>
+              </DFProperties>
+            </Node>
+            <Node>
+              <NodeName>DefaultOutboundAction</NodeName>
+              <DFProperties>
+                <AccessType>
+                  <Get />
+                  <Replace />
+                </AccessType>
+                <DefaultValue>0</DefaultValue>
+                <Description>This value is the action that the Hyper-V Firewall does by default (and evaluates at the very end) on outbound connections. The allow action is represented by 0x00000000; 0x00000001 represents a block action. Default value is 0 [Allow].</Description>
+                <DFFormat>
+                  <int />
+                </DFFormat>
+                <Occurrence>
+                  <One />
+                </Occurrence>
+                <Scope>
+                  <Dynamic />
+                </Scope>
+                <DFType>
+                  <MIME />
+                </DFType>
+                <MSFT:AllowedValues ValueType="ENUM">
+                  <MSFT:Enum>
+                    <MSFT:Value>0</MSFT:Value>
+                    <MSFT:ValueDescription>Allow Outbound By Default</MSFT:ValueDescription>
+                  </MSFT:Enum>
+                  <MSFT:Enum>
+                    <MSFT:Value>1</MSFT:Value>
+                    <MSFT:ValueDescription>Block Outbound By Default</MSFT:ValueDescription>
+                  </MSFT:Enum>
+                </MSFT:AllowedValues>
+                <MSFT:DependencyBehavior>
+                  <MSFT:DependencyGroup FriendlyId="Enable Firewall">
+                    <MSFT:Dependency Type="DependsOn">
+                      <MSFT:DependencyUri>Vendor/MSFT/Firewall/MdmStore/HyperVVMSettings/[VMCreatorId]/PublicProfile/EnableFirewall</MSFT:DependencyUri>
+                      <MSFT:DependencyAllowedValue ValueType="ENUM">
+                        <MSFT:Enum>
+                          <MSFT:Value>true</MSFT:Value>
+                          <MSFT:ValueDescription>Enable Hyper-V Firewall</MSFT:ValueDescription>
+                        </MSFT:Enum>
+                      </MSFT:DependencyAllowedValue>
+                    </MSFT:Dependency>
+                  </MSFT:DependencyGroup>
+                </MSFT:DependencyBehavior>
+              </DFProperties>
+            </Node>
+            <Node>
+              <NodeName>DefaultInboundAction</NodeName>
+              <DFProperties>
+                <AccessType>
+                  <Get />
+                  <Replace />
+                </AccessType>
+                <DefaultValue>1</DefaultValue>
+                <Description>This value is the action that the Hyper-V Firewall does by default (and evaluates at the very end) on inbound connections. The allow action is represented by 0x00000000; 0x00000001 represents a block action. Default value is 1 [Block].</Description>
+                <DFFormat>
+                  <int />
+                </DFFormat>
+                <Occurrence>
+                  <One />
+                </Occurrence>
+                <Scope>
+                  <Dynamic />
+                </Scope>
+                <DFType>
+                  <MIME />
+                </DFType>
+                <MSFT:AllowedValues ValueType="ENUM">
+                  <MSFT:Enum>
+                    <MSFT:Value>0</MSFT:Value>
+                    <MSFT:ValueDescription>Allow Inbound By Default</MSFT:ValueDescription>
+                  </MSFT:Enum>
+                  <MSFT:Enum>
+                    <MSFT:Value>1</MSFT:Value>
+                    <MSFT:ValueDescription>Block Inbound By Default</MSFT:ValueDescription>
+                  </MSFT:Enum>
+                </MSFT:AllowedValues>
+                <MSFT:DependencyBehavior>
+                  <MSFT:DependencyGroup FriendlyId="Enable Firewall">
+                    <MSFT:Dependency Type="DependsOn">
+                      <MSFT:DependencyUri>Vendor/MSFT/Firewall/MdmStore/HyperVVMSettings/[VMCreatorId]/PublicProfile/EnableFirewall</MSFT:DependencyUri>
+                      <MSFT:DependencyAllowedValue ValueType="ENUM">
+                        <MSFT:Enum>
+                          <MSFT:Value>true</MSFT:Value>
+                          <MSFT:ValueDescription>Enable Hyper-V Firewall</MSFT:ValueDescription>
+                        </MSFT:Enum>
+                      </MSFT:DependencyAllowedValue>
+                    </MSFT:Dependency>
+                  </MSFT:DependencyGroup>
+                </MSFT:DependencyBehavior>
+              </DFProperties>
+            </Node>
+            <Node>
+              <NodeName>AllowLocalPolicyMerge</NodeName>
+              <DFProperties>
+                <AccessType>
+                  <Replace />
+                </AccessType>
+                <DefaultValue>true</DefaultValue>
+                <Description>This value is used as an on/off switch. If this value is false, Hyper-V Firewall rules from the local store are ignored and not enforced.</Description>
+                <DFFormat>
+                  <bool />
+                </DFFormat>
+                <Occurrence>
+                  <One />
+                </Occurrence>
+                <Scope>
+                  <Dynamic />
+                </Scope>
+                <DFType>
+                  <MIME />
+                </DFType>
+                <MSFT:AllowedValues ValueType="ENUM">
+                  <MSFT:Enum>
+                    <MSFT:Value>false</MSFT:Value>
+                    <MSFT:ValueDescription>AllowLocalPolicyMerge Off</MSFT:ValueDescription>
+                  </MSFT:Enum>
+                  <MSFT:Enum>
+                    <MSFT:Value>true</MSFT:Value>
+                    <MSFT:ValueDescription>AllowLocalPolicyMerge On</MSFT:ValueDescription>
+                  </MSFT:Enum>
+                </MSFT:AllowedValues>
+                <MSFT:DependencyBehavior>
+                  <MSFT:DependencyGroup FriendlyId="Enable Firewall">
+                    <MSFT:Dependency Type="DependsOn">
+                      <MSFT:DependencyUri>Vendor/MSFT/Firewall/MdmStore/HyperVVMSettings/[VMCreatorId]/PublicProfile/EnableFirewall</MSFT:DependencyUri>
+                      <MSFT:DependencyAllowedValue ValueType="ENUM">
+                        <MSFT:Enum>
+                          <MSFT:Value>true</MSFT:Value>
+                          <MSFT:ValueDescription>Enable Hyper-V Firewall</MSFT:ValueDescription>
+                        </MSFT:Enum>
+                      </MSFT:DependencyAllowedValue>
+                    </MSFT:Dependency>
+                  </MSFT:DependencyGroup>
+                </MSFT:DependencyBehavior>
+              </DFProperties>
+            </Node>
           </Node>
         </Node>
       </Node>
@@ -3218,7 +3838,10 @@ ServiceName</Description>
                 <Get />
                 <Replace />
               </AccessType>
-              <Description>Comma Separated list of ranges for eg. 100-120,200,300-320.  If not specified the default is All.</Description>
+              <Description>
+                    Comma Separated list of ranges for eg. 100-120,200,300-320.  If not specified the default is All.
+                    When setting this field in a firewall rule, the protocol field must also be set, to either 6 (TCP) or 17 (UDP).
+                  </Description>
               <DFFormat>
                 <chr />
               </DFFormat>
@@ -3231,7 +3854,8 @@ ServiceName</Description>
               <DFType>
                 <MIME />
               </DFType>
-              <MSFT:AllowedValues ValueType="None">
+              <MSFT:AllowedValues ValueType="RegEx">
+                <MSFT:Value>^[0-9,-]+$</MSFT:Value>
                 <MSFT:List Delimiter="," />
               </MSFT:AllowedValues>
             </DFProperties>
@@ -3245,7 +3869,10 @@ ServiceName</Description>
                 <Get />
                 <Replace />
               </AccessType>
-              <Description> Comma Separated list of ranges for eg. 100-120,200,300-320.  If not specified the default is All.</Description>
+              <Description>
+                    Comma Separated list of ranges for eg. 100-120,200,300-320.  If not specified the default is All.
+                    When setting this field in a firewall rule, the protocol field must also be set, to either 6 (TCP) or 17 (UDP).
+                  </Description>
               <DFFormat>
                 <chr />
               </DFFormat>
@@ -3258,7 +3885,8 @@ ServiceName</Description>
               <DFType>
                 <MIME />
               </DFType>
-              <MSFT:AllowedValues ValueType="None">
+              <MSFT:AllowedValues ValueType="RegEx">
+                <MSFT:Value>^[0-9,-]+$</MSFT:Value>
                 <MSFT:List Delimiter="," />
               </MSFT:AllowedValues>
             </DFProperties>
@@ -3276,6 +3904,8 @@ ServiceName</Description>
                     String value. Multiple ICMP type+code pairs can be included in the string by separating each value with a ",". If more than one ICMP type+code pair is specified, the strings must be separated by a comma.
                     To specify all ICMP types and codes, use the "*" character. For specific ICMP types and codes, use the ":" to separate the type and code.
                     The following are valid examples: 3:4 or 1:*. The "*" character can be used to represent any code. The "*" character can't be used to specify any type, examples such as "*:4" or "*:*" are invalid.
+
+                    When setting this field in a firewall rule, the protocol field must also be set, to either 1 (ICMP) or 58 (IPv6-ICMP).
                   </Description>
               <DFFormat>
                 <chr />
@@ -3290,7 +3920,7 @@ ServiceName</Description>
                 <MIME />
               </DFType>
               <MSFT:Applicability>
-                <MSFT:OsBuildVersion>10.0.19043</MSFT:OsBuildVersion>
+                <MSFT:OsBuildVersion>10.0.20348</MSFT:OsBuildVersion>
                 <MSFT:CspVersion>1.0</MSFT:CspVersion>
               </MSFT:Applicability>
               <MSFT:AllowedValues ValueType="None">
@@ -3307,7 +3937,7 @@ ServiceName</Description>
                 <Get />
                 <Replace />
               </AccessType>
-              <Description>Consists of one or more comma-delimited tokens specifying the local addresses covered by the rule. "*" is the default value. 
+              <Description>Consists of one or more comma-delimited tokens specifying the local addresses covered by the rule. "*" is the default value.
 Valid tokens include:
 "*" indicates any local address. If present, this must be the only token included.
 
@@ -3396,7 +4026,7 @@ An IPv6 address range in the format of "start address - end address" with no spa
                 <MIME />
               </DFType>
               <MSFT:Applicability>
-                <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
+                <MSFT:OsBuildVersion>10.0.22000, 10.0.19044.1706, 10.0.19043.1706, 10.0.19042.1706</MSFT:OsBuildVersion>
                 <MSFT:CspVersion>1.0</MSFT:CspVersion>
               </MSFT:Applicability>
               <MSFT:AllowedValues ValueType="RegEx">
@@ -3570,7 +4200,7 @@ If not specified - a new rule is disabled by default.</Description>
                 <Replace />
               </AccessType>
               <DefaultValue>OUT</DefaultValue>
-              <Description>Comma separated list.  The rule is enabled based on the traffic direction as following.
+              <Description>The rule is enabled based on the traffic direction as following.
 
 IN - the rule applies to inbound traffic.
 OUT - the rule applies to outbound traffic.
@@ -3726,7 +4356,7 @@ This is a string in Security Descriptor Definition Language (SDDL) format..</Des
                 <Get />
                 <Replace />
               </AccessType>
-              <Description> Specifies one WDAC tag. This is a string that can contain any alphanumeric character and any of the characters ":", "/", ".", and "_". </Description>
+              <Description> Specifies one WDAC tag. This is a string that can contain any alphanumeric character and any of the characters ":", "/", ".", and "_". A PolicyAppId and ServiceName cannot be specified in the same rule. </Description>
               <DFFormat>
                 <chr />
               </DFFormat>
@@ -3740,7 +4370,7 @@ This is a string in Security Descriptor Definition Language (SDDL) format..</Des
                 <MIME />
               </DFType>
               <MSFT:Applicability>
-                <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
+                <MSFT:OsBuildVersion>10.0.19045.2913, 10.0.22621.1635, 10.0.22000.1880</MSFT:OsBuildVersion>
                 <MSFT:CspVersion>1.1</MSFT:CspVersion>
               </MSFT:Applicability>
               <MSFT:AllowedValues ValueType="RegEx">
@@ -3778,6 +4408,7 @@ This is a string in Security Descriptor Definition Language (SDDL) format..</Des
                 <Get />
                 <Replace />
               </AccessType>
+              <Description>Specifies the friendly name of the firewall rule.</Description>
               <DFFormat>
                 <chr />
               </DFFormat>
@@ -3813,6 +4444,10 @@ This is a string in Security Descriptor Definition Language (SDDL) format..</Des
           <DFType>
             <DDFName />
           </DFType>
+          <MSFT:Applicability>
+            <MSFT:OsBuildVersion>10.0.22621</MSFT:OsBuildVersion>
+            <MSFT:CspVersion>1.0</MSFT:CspVersion>
+          </MSFT:Applicability>
         </DFProperties>
         <Node>
           <NodeName>
@@ -3855,7 +4490,7 @@ This is a string in Security Descriptor Definition Language (SDDL) format..</Des
                 <Get />
                 <Replace />
               </AccessType>
-              <Description>0-255 number representing the IANA Internet Protocol (TCP = 6, UDP = 17).  If not specified the default is All.</Description>
+              <Description>This value represents the order of rule enforcement. A lower priority rule is evaluated first. If not specified, block rules are evaluated before allow rules. If priority is configured, it is highly recommended to configure the value for ALL rules to ensure expected evaluation of rules.</Description>
               <DFFormat>
                 <int />
               </DFFormat>
@@ -3869,7 +4504,7 @@ This is a string in Security Descriptor Definition Language (SDDL) format..</Des
                 <MIME />
               </DFType>
               <MSFT:AllowedValues ValueType="Range">
-                <MSFT:Value>[0-255]</MSFT:Value>
+                <MSFT:Value>[0-65535]</MSFT:Value>
               </MSFT:AllowedValues>
             </DFProperties>
           </Node>
@@ -3881,7 +4516,7 @@ This is a string in Security Descriptor Definition Language (SDDL) format..</Des
                 <Replace />
               </AccessType>
               <DefaultValue>OUT</DefaultValue>
-              <Description>Comma separated list.  The rule is enabled based on the traffic direction as following.
+              <Description>The rule is enabled based on the traffic direction as following.
 
 IN - the rule applies to inbound traffic.
 OUT - the rule applies to outbound traffic.
@@ -3975,7 +4610,7 @@ If not specified the detault is OUT.</Description>
                 <Get />
                 <Replace />
               </AccessType>
-              <Description>Consists of one or more comma-delimited tokens specifying the local addresses covered by the rule. "*" is the default value. 
+              <Description>Consists of one or more comma-delimited tokens specifying the local addresses covered by the rule. "*" is the default value.
 Valid tokens include:
 "*" indicates any local address. If present, this must be the only token included.
 
@@ -4022,7 +4657,8 @@ An IPv6 address range in the format of "start address - end address" with no spa
               <DFType>
                 <MIME />
               </DFType>
-              <MSFT:AllowedValues ValueType="None">
+              <MSFT:AllowedValues ValueType="RegEx">
+                <MSFT:Value>^[0-9,-]+$</MSFT:Value>
                 <MSFT:List Delimiter="," />
               </MSFT:AllowedValues>
             </DFProperties>
@@ -4081,7 +4717,8 @@ An IPv6 address range in the format of "start address - end address" with no spa
               <DFType>
                 <MIME />
               </DFType>
-              <MSFT:AllowedValues ValueType="None">
+              <MSFT:AllowedValues ValueType="RegEx">
+                <MSFT:Value>^[0-9,-]+$</MSFT:Value>
                 <MSFT:List Delimiter="," />
               </MSFT:AllowedValues>
             </DFProperties>
@@ -4091,10 +4728,14 @@ An IPv6 address range in the format of "start address - end address" with no spa
             <DFProperties>
               <AccessType>
                 <Get />
+                <Replace />
               </AccessType>
-              <Description>Specifies the action for the rule.</Description>
+              <DefaultValue>1</DefaultValue>
+              <Description>Specifies the action the rule enforces:
+0 - Block
+1 - Allow</Description>
               <DFFormat>
-                <node />
+                <int />
               </DFFormat>
               <Occurrence>
                 <One />
@@ -4103,44 +4744,19 @@ An IPv6 address range in the format of "start address - end address" with no spa
                 <Dynamic />
               </Scope>
               <DFType>
-                <DDFName />
+                <MIME />
               </DFType>
+              <MSFT:AllowedValues ValueType="ENUM">
+                <MSFT:Enum>
+                  <MSFT:Value>0</MSFT:Value>
+                  <MSFT:ValueDescription>Block</MSFT:ValueDescription>
+                </MSFT:Enum>
+                <MSFT:Enum>
+                  <MSFT:Value>1</MSFT:Value>
+                  <MSFT:ValueDescription>Allow</MSFT:ValueDescription>
+                </MSFT:Enum>
+              </MSFT:AllowedValues>
             </DFProperties>
-            <Node>
-              <NodeName>Type</NodeName>
-              <DFProperties>
-                <AccessType>
-                  <Get />
-                  <Replace />
-                </AccessType>
-                <DefaultValue>1</DefaultValue>
-                <Description>Specifies the action the rule enforces:
-0 - Block
-1 - Allow</Description>
-                <DFFormat>
-                  <int />
-                </DFFormat>
-                <Occurrence>
-                  <One />
-                </Occurrence>
-                <Scope>
-                  <Dynamic />
-                </Scope>
-                <DFType>
-                  <MIME />
-                </DFType>
-                <MSFT:AllowedValues ValueType="ENUM">
-                  <MSFT:Enum>
-                    <MSFT:Value>0</MSFT:Value>
-                    <MSFT:ValueDescription>Block</MSFT:ValueDescription>
-                  </MSFT:Enum>
-                  <MSFT:Enum>
-                    <MSFT:Value>1</MSFT:Value>
-                    <MSFT:ValueDescription>Allow</MSFT:ValueDescription>
-                  </MSFT:Enum>
-                </MSFT:AllowedValues>
-              </DFProperties>
-            </Node>
           </Node>
           <Node>
             <NodeName>Enabled</NodeName>
@@ -4181,7 +4797,7 @@ If not specified - a new rule is disabled by default.</Description>
               <AccessType>
                 <Get />
               </AccessType>
-              <Description>Provides information about the specific verrsion of the rule in deployment for monitoring purposes.</Description>
+              <Description>Provides information about the specific version of the rule in deployment for monitoring purposes.</Description>
               <DFFormat>
                 <chr />
               </DFFormat>
@@ -4197,6 +4813,50 @@ If not specified - a new rule is disabled by default.</Description>
             </DFProperties>
           </Node>
           <Node>
+            <NodeName>Profiles</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+                <Replace />
+              </AccessType>
+              <Description>Specifies the profiles to which the rule belongs: Domain, Private, Public.  See FW_PROFILE_TYPE for the bitmasks that are used to identify profile types.  If not specified, the default is All.</Description>
+              <DFFormat>
+                <int />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <MIME />
+              </DFType>
+              <MSFT:Applicability>
+                <MSFT:OsBuildVersion>10.0.25398</MSFT:OsBuildVersion>
+                <MSFT:CspVersion>1.0</MSFT:CspVersion>
+              </MSFT:Applicability>
+              <MSFT:AllowedValues ValueType="Flag">
+                <MSFT:Enum>
+                  <MSFT:Value>0x1</MSFT:Value>
+                  <MSFT:ValueDescription>FW_PROFILE_TYPE_DOMAIN:  This value represents the profile for networks that are connected to domains.</MSFT:ValueDescription>
+                </MSFT:Enum>
+                <MSFT:Enum>
+                  <MSFT:Value>0x2</MSFT:Value>
+                  <MSFT:ValueDescription>FW_PROFILE_TYPE_STANDARD:  This value represents the standard profile for networks. These networks are classified as private by the administrators in the server host. The classification happens the first time the host connects to the network. Usually these networks are behind Network Address Translation (NAT) devices, routers, and other edge devices, and they are in a private location, such as a home or an office. AND FW_PROFILE_TYPE_PRIVATE:  This value represents the profile for private networks, which is represented by the same value as that used for FW_PROFILE_TYPE_STANDARD.</MSFT:ValueDescription>
+                </MSFT:Enum>
+                <MSFT:Enum>
+                  <MSFT:Value>0x4</MSFT:Value>
+                  <MSFT:ValueDescription>FW_PROFILE_TYPE_PUBLIC:  This value represents the profile for public networks. These networks are classified as public by the administrators in the server host. The classification happens the first time the host connects to the network. Usually these networks are those at airports, coffee shops, and other public places where the peers in the network or the network administrator are not trusted.</MSFT:ValueDescription>
+                </MSFT:Enum>
+                <MSFT:Enum>
+                  <MSFT:Value>0x7FFFFFFF</MSFT:Value>
+                  <MSFT:ValueDescription>FW_PROFILE_TYPE_ALL:  This value represents all these network sets and any future network sets.</MSFT:ValueDescription>
+                </MSFT:Enum>
+              </MSFT:AllowedValues>
+            </DFProperties>
+          </Node>
+          <Node>
             <NodeName>Name</NodeName>
             <DFProperties>
               <AccessType>
@@ -4205,6 +4865,7 @@ If not specified - a new rule is disabled by default.</Description>
                 <Get />
                 <Replace />
               </AccessType>
+              <Description>Specifies the friendly name of the Hyper-V Firewall rule.</Description>
               <DFFormat>
                 <chr />
               </DFFormat>
@@ -4240,7 +4901,7 @@ If not specified - a new rule is disabled by default.</Description>
             <DDFName />
           </DFType>
           <MSFT:Applicability>
-            <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
+            <MSFT:OsBuildVersion>10.0.22000, 10.0.19044.1706, 10.0.19043.1706, 10.0.19042.1706</MSFT:OsBuildVersion>
             <MSFT:CspVersion>1.0</MSFT:CspVersion>
           </MSFT:Applicability>
         </DFProperties>

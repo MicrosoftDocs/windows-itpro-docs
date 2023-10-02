@@ -1,27 +1,15 @@
 ---
-title: Smart Card and Remote Desktop Services (Windows)
-description: This topic for the IT professional describes the behavior of Remote Desktop Services when you implement smart card sign-in.
-ms.prod: windows-client
-author: paolomatarazzo
-ms.author: paoloma
-ms.reviewer: ardenw
-manager: aaroncz
-ms.topic: article
-ms.localizationpriority: medium
 ms.date: 09/24/2021
-appliesto: 
-  - ✅ <b>Windows 10</b>
-  - ✅ <b>Windows 11</b>
-  - ✅ <b>Windows Server 2016</b>
-  - ✅ <b>Windows Server 2019</b>
-  - ✅ <b>Windows Server 2022</b>
-ms.technology: itpro-security
+title: Smart Card and Remote Desktop Services 
+description: This topic for the IT professional describes the behavior of Remote Desktop Services when you implement smart card sign-in.
+ms.topic: conceptual
+ms.reviewer: ardenw
 ---
 # Smart Card and Remote Desktop Services
 
 This topic for the IT professional describes the behavior of Remote Desktop Services when you implement smart card sign-in.
 
-The content in this topic applies to the versions of Windows that are designated in the **Applies To** list at the beginning of this topic. In these versions, smart card redirection logic and **WinSCard** API are combined to support multiple redirected sessions into a single process.
+Smart card redirection logic and **WinSCard** API are combined to support multiple redirected sessions into a single process.
 
 Smart card support is required to enable many Remote Desktop Services scenarios. These include:
 
@@ -95,7 +83,8 @@ Where &lt;*CertFile*&gt; is the root certificate of the KDC certificate issuer.
 
 For information about this option for the command-line tool, see [-addstore](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc732443(v=ws.11)#BKMK_addstore).
 
-> **Note**&nbsp;&nbsp;If you use the credential SSP on computers running the supported versions of the operating system that are designated in the **Applies To** list at the beginning of this topic: To sign in with a smart card from a computer that is not joined to a domain, the smart card must contain the root certification of the domain controller. A public key infrastructure (PKI) secure channel cannot be established without the root certification of the domain controller.
+> [!NOTE]
+> To sign in with a smart card from a computer that is not joined to a domain, the smart card must contain the root certification of the domain controller. A public key infrastructure (PKI) secure channel cannot be established without the root certification of the domain controller.
 
 Sign-in to Remote Desktop Services across a domain works only if the UPN in the certificate uses the following form: <*ClientName*>@<*DomainDNSName*>
 

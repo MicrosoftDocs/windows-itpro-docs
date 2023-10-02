@@ -1,0 +1,11 @@
+items:
+- name: Overview
+  href: index.md
+- name: How Credential Guard works
+  href: how-it-works.md
+- name: Configure Credential Guard
+  href: configure.md
+- name: Additional mitigations
+  href: additional-mitigations.md
+- name: Considerations and known issues
+  href: considerations-known-issues.md

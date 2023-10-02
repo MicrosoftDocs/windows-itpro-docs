@@ -1,15 +1,11 @@
 ---
 title: Fine-tune Windows Information Policy (WIP) with WIP Learning
 description: How to access the WIP Learning report to monitor and apply Windows Information Protection in your company.
-ms.reviewer: 
-ms.prod: windows-client
-ms.localizationpriority: medium
 author: aczechowski
 ms.author: aaroncz
-manager: dougeby
+manager: aaroncz
 ms.topic: conceptual
 ms.date: 02/26/2019
-ms.technology: itpro-security
 ---
 
 # Fine-tune Windows Information Protection (WIP) with WIP Learning
@@ -19,7 +15,7 @@ ms.technology: itpro-security
 
 With WIP Learning, you can intelligently tune which apps and websites are included in your WIP policy to help reduce disruptive prompts and keep it accurate and relevant. WIP Learning generates two reports: The **App learning report** and the **Website learning report**. Both reports can be accessed from Microsoft Azure Intune.
 
-The **App learning report** monitors your apps, not in policy, that attempt to access work data. You can identify these apps using the report and add them to your WIP policies to avoid productivity disruption before fully enforcing WIP with [“Block”](protect-enterprise-data-using-wip.md#bkmk-modes) mode. Frequent monitoring of the report will help you continuously identify access attempts so you can update your policy accordingly.
+The **App learning report** monitors your apps, not in policy, that attempt to access work data. You can identify these apps using the report and add them to your WIP policies to avoid productivity disruption before fully enforcing WIP with ["Block"](protect-enterprise-data-using-wip.md#bkmk-modes) mode. Frequent monitoring of the report will help you continuously identify access attempts so you can update your policy accordingly.
 
 In the **Website learning report**, you can view a summary of the devices that have shared work data with websites. You can use this information to determine which websites should be added to group and user WIP policies. The summary shows which website URLs are accessed by WIP-enabled apps so you can decide which ones are cloud or personal, and add them to the resource list.
 

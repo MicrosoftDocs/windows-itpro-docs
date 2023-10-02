@@ -4,7 +4,7 @@ description: Learn more about the WindowsLicensing CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/28/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -15,6 +15,8 @@ ms.topic: reference
 
 <!-- WindowsLicensing-Begin -->
 # WindowsLicensing CSP
+
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- WindowsLicensing-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -28,12 +30,10 @@ The following list shows the WindowsLicensing configuration service provider nod
   - [ChangeProductKey](#changeproductkey)
   - [CheckApplicability](#checkapplicability)
   - [DeviceLicensingService](#devicelicensingservice)
-    - [AcquireDeviceLicense](#devicelicensingserviceacquiredevicelicense)
     - [DeviceLicensingLastError](#devicelicensingservicedevicelicensinglasterror)
     - [DeviceLicensingLastErrorDescription](#devicelicensingservicedevicelicensinglasterrordescription)
     - [DeviceLicensingStatus](#devicelicensingservicedevicelicensingstatus)
     - [LicenseType](#devicelicensingservicelicensetype)
-    - [RemoveDeviceLicense](#devicelicensingserviceremovedevicelicense)
   - [Edition](#edition)
   - [LicenseKeyType](#licensekeytype)
   - [SMode](#smode)
@@ -45,6 +45,12 @@ The following list shows the WindowsLicensing configuration service provider nod
     - [{SubscriptionId}](#subscriptionssubscriptionid)
       - [Name](#subscriptionssubscriptionidname)
       - [Status](#subscriptionssubscriptionidstatus)
+    - [DisableSubscription](#subscriptionsdisablesubscription)
+    - [RemoveSubscription](#subscriptionsremovesubscription)
+    - [SubscriptionLastError](#subscriptionssubscriptionlasterror)
+    - [SubscriptionLastErrorDescription](#subscriptionssubscriptionlasterrordescription)
+    - [SubscriptionStatus](#subscriptionssubscriptionstatus)
+    - [SubscriptionType](#subscriptionssubscriptiontype)
   - [UpgradeEditionWithLicense](#upgradeeditionwithlicense)
   - [UpgradeEditionWithProductKey](#upgradeeditionwithproductkey)
 <!-- WindowsLicensing-Tree-End -->
@@ -55,7 +61,7 @@ The following list shows the WindowsLicensing configuration service provider nod
 <!-- Device-ChangeProductKey-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-ChangeProductKey-Applicability-End -->
 
 <!-- Device-ChangeProductKey-OmaUri-Begin -->
@@ -78,7 +84,7 @@ Installs a product key for Windows 10 desktop devices. Does not reboot.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Exec |
 <!-- Device-ChangeProductKey-DFProperties-End -->
 
@@ -94,7 +100,7 @@ Installs a product key for Windows 10 desktop devices. Does not reboot.
 <!-- Device-CheckApplicability-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-CheckApplicability-Applicability-End -->
 
 <!-- Device-CheckApplicability-OmaUri-Begin -->
@@ -117,7 +123,7 @@ Returns TRUE if the entered product key can be used for an edition upgrade of Wi
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Exec |
 <!-- Device-CheckApplicability-DFProperties-End -->
 
@@ -157,7 +163,7 @@ Returns TRUE if the entered product key can be used for an edition upgrade of Wi
 <!-- Device-DeviceLicensingService-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000.1165] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-DeviceLicensingService-Applicability-End -->
 
 <!-- Device-DeviceLicensingService-OmaUri-Begin -->
@@ -167,7 +173,8 @@ Returns TRUE if the entered product key can be used for an edition upgrade of Wi
 <!-- Device-DeviceLicensingService-OmaUri-End -->
 
 <!-- Device-DeviceLicensingService-Description-Begin -->
-<!-- Description-Source-Not-Found -->
+<!-- Description-Source-DDF -->
+Device Based Subscription.
 <!-- Device-DeviceLicensingService-Description-End -->
 
 <!-- Device-DeviceLicensingService-Editable-Begin -->
@@ -179,7 +186,7 @@ Returns TRUE if the entered product key can be used for an edition upgrade of Wi
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-DeviceLicensingService-DFProperties-End -->
 
@@ -189,52 +196,13 @@ Returns TRUE if the entered product key can be used for an edition upgrade of Wi
 
 <!-- Device-DeviceLicensingService-End -->
 
-<!-- Device-DeviceLicensingService-AcquireDeviceLicense-Begin -->
-### DeviceLicensingService/AcquireDeviceLicense
-
-<!-- Device-DeviceLicensingService-AcquireDeviceLicense-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
-<!-- Device-DeviceLicensingService-AcquireDeviceLicense-Applicability-End -->
-
-<!-- Device-DeviceLicensingService-AcquireDeviceLicense-OmaUri-Begin -->
-```Device
-./Vendor/MSFT/WindowsLicensing/DeviceLicensingService/AcquireDeviceLicense
-```
-<!-- Device-DeviceLicensingService-AcquireDeviceLicense-OmaUri-End -->
-
-<!-- Device-DeviceLicensingService-AcquireDeviceLicense-Description-Begin -->
-<!-- Description-Source-DDF -->
-Acquire and Refresh Device License. Does not reboot.
-<!-- Device-DeviceLicensingService-AcquireDeviceLicense-Description-End -->
-
-<!-- Device-DeviceLicensingService-AcquireDeviceLicense-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- Device-DeviceLicensingService-AcquireDeviceLicense-Editable-End -->
-
-<!-- Device-DeviceLicensingService-AcquireDeviceLicense-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | null |
-| Access Type | Exec |
-<!-- Device-DeviceLicensingService-AcquireDeviceLicense-DFProperties-End -->
-
-<!-- Device-DeviceLicensingService-AcquireDeviceLicense-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- Device-DeviceLicensingService-AcquireDeviceLicense-Examples-End -->
-
-<!-- Device-DeviceLicensingService-AcquireDeviceLicense-End -->
-
 <!-- Device-DeviceLicensingService-DeviceLicensingLastError-Begin -->
 ### DeviceLicensingService/DeviceLicensingLastError
 
 <!-- Device-DeviceLicensingService-DeviceLicensingLastError-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000.1165] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-DeviceLicensingService-DeviceLicensingLastError-Applicability-End -->
 
 <!-- Device-DeviceLicensingService-DeviceLicensingLastError-OmaUri-Begin -->
@@ -257,7 +225,7 @@ Returns the last error code of Refresh/Remove Device License operation. Value wo
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-DeviceLicensingService-DeviceLicensingLastError-DFProperties-End -->
 
@@ -273,7 +241,7 @@ Returns the last error code of Refresh/Remove Device License operation. Value wo
 <!-- Device-DeviceLicensingService-DeviceLicensingLastErrorDescription-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000.1165] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-DeviceLicensingService-DeviceLicensingLastErrorDescription-Applicability-End -->
 
 <!-- Device-DeviceLicensingService-DeviceLicensingLastErrorDescription-OmaUri-Begin -->
@@ -284,7 +252,7 @@ Returns the last error code of Refresh/Remove Device License operation. Value wo
 
 <!-- Device-DeviceLicensingService-DeviceLicensingLastErrorDescription-Description-Begin -->
 <!-- Description-Source-DDF -->
-Returns last error description from Device Licensing. Value would be empty, if error decription can not be evaluated.
+Returns last error description from Device Licensing. Value would be empty, if error decription can't be evaluated.
 <!-- Device-DeviceLicensingService-DeviceLicensingLastErrorDescription-Description-End -->
 
 <!-- Device-DeviceLicensingService-DeviceLicensingLastErrorDescription-Editable-Begin -->
@@ -296,7 +264,7 @@ Returns last error description from Device Licensing. Value would be empty, if e
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-DeviceLicensingService-DeviceLicensingLastErrorDescription-DFProperties-End -->
 
@@ -312,7 +280,7 @@ Returns last error description from Device Licensing. Value would be empty, if e
 <!-- Device-DeviceLicensingService-DeviceLicensingStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000.1165] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-DeviceLicensingService-DeviceLicensingStatus-Applicability-End -->
 
 <!-- Device-DeviceLicensingService-DeviceLicensingStatus-OmaUri-Begin -->
@@ -335,7 +303,7 @@ Returns the status of Refresh/Remove Device License operation.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-DeviceLicensingService-DeviceLicensingStatus-DFProperties-End -->
 
@@ -351,7 +319,7 @@ Returns the status of Refresh/Remove Device License operation.
 <!-- Device-DeviceLicensingService-LicenseType-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000.1165] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-DeviceLicensingService-LicenseType-Applicability-End -->
 
 <!-- Device-DeviceLicensingService-LicenseType-OmaUri-Begin -->
@@ -374,8 +342,8 @@ License Type: User Based Subscription or Device Based Subscription.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
-| Access Type | Add, Delete, Get, Replace |
+| Format | `int` |
+| Access Type | Get, Replace |
 <!-- Device-DeviceLicensingService-LicenseType-DFProperties-End -->
 
 <!-- Device-DeviceLicensingService-LicenseType-AllowedValues-Begin -->
@@ -393,52 +361,13 @@ License Type: User Based Subscription or Device Based Subscription.
 
 <!-- Device-DeviceLicensingService-LicenseType-End -->
 
-<!-- Device-DeviceLicensingService-RemoveDeviceLicense-Begin -->
-### DeviceLicensingService/RemoveDeviceLicense
-
-<!-- Device-DeviceLicensingService-RemoveDeviceLicense-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
-<!-- Device-DeviceLicensingService-RemoveDeviceLicense-Applicability-End -->
-
-<!-- Device-DeviceLicensingService-RemoveDeviceLicense-OmaUri-Begin -->
-```Device
-./Vendor/MSFT/WindowsLicensing/DeviceLicensingService/RemoveDeviceLicense
-```
-<!-- Device-DeviceLicensingService-RemoveDeviceLicense-OmaUri-End -->
-
-<!-- Device-DeviceLicensingService-RemoveDeviceLicense-Description-Begin -->
-<!-- Description-Source-DDF -->
-Remove Device License. Device would be ready for user based license after this operation. Does not reboot.
-<!-- Device-DeviceLicensingService-RemoveDeviceLicense-Description-End -->
-
-<!-- Device-DeviceLicensingService-RemoveDeviceLicense-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- Device-DeviceLicensingService-RemoveDeviceLicense-Editable-End -->
-
-<!-- Device-DeviceLicensingService-RemoveDeviceLicense-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | null |
-| Access Type | Exec |
-<!-- Device-DeviceLicensingService-RemoveDeviceLicense-DFProperties-End -->
-
-<!-- Device-DeviceLicensingService-RemoveDeviceLicense-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- Device-DeviceLicensingService-RemoveDeviceLicense-Examples-End -->
-
-<!-- Device-DeviceLicensingService-RemoveDeviceLicense-End -->
-
 <!-- Device-Edition-Begin -->
 ## Edition
 
 <!-- Device-Edition-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Edition-Applicability-End -->
 
 <!-- Device-Edition-OmaUri-Begin -->
@@ -461,7 +390,7 @@ Returns a value that maps to the Windows 10 edition running on desktop or mobile
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-Edition-DFProperties-End -->
 
@@ -494,7 +423,7 @@ Returns a value that maps to the Windows 10 edition running on desktop or mobile
 <!-- Device-LicenseKeyType-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-LicenseKeyType-Applicability-End -->
 
 <!-- Device-LicenseKeyType-OmaUri-Begin -->
@@ -517,7 +446,7 @@ Returns the parameter type used by Windows 10 devices for an edition upgrade. Wi
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-LicenseKeyType-DFProperties-End -->
 
@@ -550,7 +479,7 @@ Returns the parameter type used by Windows 10 devices for an edition upgrade. Wi
 <!-- Device-SMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-SMode-Applicability-End -->
 
 <!-- Device-SMode-OmaUri-Begin -->
@@ -573,7 +502,7 @@ Interior node for managing S mode.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-SMode-DFProperties-End -->
 
@@ -589,7 +518,7 @@ Interior node for managing S mode.
 <!-- Device-SMode-Status-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-SMode-Status-Applicability-End -->
 
 <!-- Device-SMode-Status-OmaUri-Begin -->
@@ -619,7 +548,7 @@ Possible values:
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-SMode-Status-DFProperties-End -->
 
@@ -654,7 +583,7 @@ Possible values:
 <!-- Device-SMode-SwitchFromSMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-SMode-SwitchFromSMode-Applicability-End -->
 
 <!-- Device-SMode-SwitchFromSMode-OmaUri-Begin -->
@@ -677,7 +606,7 @@ Switches a device out of S mode if possible. Does not reboot.
 
 | Property name | Property value |
 |:--|:--|
-| Format | null |
+| Format | `null` |
 | Access Type | Exec |
 <!-- Device-SMode-SwitchFromSMode-DFProperties-End -->
 
@@ -717,7 +646,7 @@ Switches a device out of S mode if possible. Does not reboot.
 <!-- Device-SMode-SwitchingPolicy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-SMode-SwitchingPolicy-Applicability-End -->
 
 <!-- Device-SMode-SwitchingPolicy-OmaUri-Begin -->
@@ -741,7 +670,7 @@ This setting is only applicable to devices available in S mode.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-SMode-SwitchingPolicy-DFProperties-End -->
 
@@ -857,7 +786,7 @@ This setting is only applicable to devices available in S mode.
 <!-- Device-Status-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Status-Applicability-End -->
 
 <!-- Device-Status-OmaUri-Begin -->
@@ -880,7 +809,7 @@ Returns the status of an edition upgrade on Windows 10 desktop and mobile device
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-Status-DFProperties-End -->
 
@@ -913,7 +842,7 @@ Returns the status of an edition upgrade on Windows 10 desktop and mobile device
 <!-- Device-Subscriptions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Subscriptions-Applicability-End -->
 
 <!-- Device-Subscriptions-OmaUri-Begin -->
@@ -936,7 +865,7 @@ Node for subscriptions.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-Subscriptions-DFProperties-End -->
 
@@ -952,7 +881,7 @@ Node for subscriptions.
 <!-- Device-Subscriptions-{SubscriptionId}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Subscriptions-{SubscriptionId}-Applicability-End -->
 
 <!-- Device-Subscriptions-{SubscriptionId}-OmaUri-Begin -->
@@ -975,7 +904,7 @@ Node for subscription IDs.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 | Dynamic Node Naming | ClientInventory |
 <!-- Device-Subscriptions-{SubscriptionId}-DFProperties-End -->
@@ -992,7 +921,7 @@ Node for subscription IDs.
 <!-- Device-Subscriptions-{SubscriptionId}-Name-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Subscriptions-{SubscriptionId}-Name-Applicability-End -->
 
 <!-- Device-Subscriptions-{SubscriptionId}-Name-OmaUri-Begin -->
@@ -1015,7 +944,7 @@ Returns the name of the subscription.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-Subscriptions-{SubscriptionId}-Name-DFProperties-End -->
 
@@ -1031,7 +960,7 @@ Returns the name of the subscription.
 <!-- Device-Subscriptions-{SubscriptionId}-Status-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Subscriptions-{SubscriptionId}-Status-Applicability-End -->
 
 <!-- Device-Subscriptions-{SubscriptionId}-Status-OmaUri-Begin -->
@@ -1054,7 +983,7 @@ Returns the status of the subscription.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-Subscriptions-{SubscriptionId}-Status-DFProperties-End -->
 
@@ -1063,6 +992,258 @@ Returns the status of the subscription.
 <!-- Device-Subscriptions-{SubscriptionId}-Status-Examples-End -->
 
 <!-- Device-Subscriptions-{SubscriptionId}-Status-End -->
+
+<!-- Device-Subscriptions-DisableSubscription-Begin -->
+### Subscriptions/DisableSubscription
+
+<!-- Device-Subscriptions-DisableSubscription-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- Device-Subscriptions-DisableSubscription-Applicability-End -->
+
+<!-- Device-Subscriptions-DisableSubscription-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/WindowsLicensing/Subscriptions/DisableSubscription
+```
+<!-- Device-Subscriptions-DisableSubscription-OmaUri-End -->
+
+<!-- Device-Subscriptions-DisableSubscription-Description-Begin -->
+<!-- Description-Source-DDF -->
+Disable or Enable subscription activation on a device.
+<!-- Device-Subscriptions-DisableSubscription-Description-End -->
+
+<!-- Device-Subscriptions-DisableSubscription-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Subscriptions-DisableSubscription-Editable-End -->
+
+<!-- Device-Subscriptions-DisableSubscription-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Replace |
+<!-- Device-Subscriptions-DisableSubscription-DFProperties-End -->
+
+<!-- Device-Subscriptions-DisableSubscription-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Enable Subscription. |
+| 1 | Disable Subscription. It also removes any existing subscription on the device. |
+<!-- Device-Subscriptions-DisableSubscription-AllowedValues-End -->
+
+<!-- Device-Subscriptions-DisableSubscription-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Subscriptions-DisableSubscription-Examples-End -->
+
+<!-- Device-Subscriptions-DisableSubscription-End -->
+
+<!-- Device-Subscriptions-RemoveSubscription-Begin -->
+### Subscriptions/RemoveSubscription
+
+<!-- Device-Subscriptions-RemoveSubscription-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- Device-Subscriptions-RemoveSubscription-Applicability-End -->
+
+<!-- Device-Subscriptions-RemoveSubscription-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/WindowsLicensing/Subscriptions/RemoveSubscription
+```
+<!-- Device-Subscriptions-RemoveSubscription-OmaUri-End -->
+
+<!-- Device-Subscriptions-RemoveSubscription-Description-Begin -->
+<!-- Description-Source-DDF -->
+Remove subscription uninstall subscription license. It also reset subscription type to User Based Subscription.
+<!-- Device-Subscriptions-RemoveSubscription-Description-End -->
+
+<!-- Device-Subscriptions-RemoveSubscription-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Subscriptions-RemoveSubscription-Editable-End -->
+
+<!-- Device-Subscriptions-RemoveSubscription-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `null` |
+| Access Type | Exec |
+<!-- Device-Subscriptions-RemoveSubscription-DFProperties-End -->
+
+<!-- Device-Subscriptions-RemoveSubscription-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Subscriptions-RemoveSubscription-Examples-End -->
+
+<!-- Device-Subscriptions-RemoveSubscription-End -->
+
+<!-- Device-Subscriptions-SubscriptionLastError-Begin -->
+### Subscriptions/SubscriptionLastError
+
+<!-- Device-Subscriptions-SubscriptionLastError-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- Device-Subscriptions-SubscriptionLastError-Applicability-End -->
+
+<!-- Device-Subscriptions-SubscriptionLastError-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/WindowsLicensing/Subscriptions/SubscriptionLastError
+```
+<!-- Device-Subscriptions-SubscriptionLastError-OmaUri-End -->
+
+<!-- Device-Subscriptions-SubscriptionLastError-Description-Begin -->
+<!-- Description-Source-DDF -->
+Error code of last subscription operation. Value would be empty(0) in absence of error.
+<!-- Device-Subscriptions-SubscriptionLastError-Description-End -->
+
+<!-- Device-Subscriptions-SubscriptionLastError-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Subscriptions-SubscriptionLastError-Editable-End -->
+
+<!-- Device-Subscriptions-SubscriptionLastError-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Get |
+<!-- Device-Subscriptions-SubscriptionLastError-DFProperties-End -->
+
+<!-- Device-Subscriptions-SubscriptionLastError-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Subscriptions-SubscriptionLastError-Examples-End -->
+
+<!-- Device-Subscriptions-SubscriptionLastError-End -->
+
+<!-- Device-Subscriptions-SubscriptionLastErrorDescription-Begin -->
+### Subscriptions/SubscriptionLastErrorDescription
+
+<!-- Device-Subscriptions-SubscriptionLastErrorDescription-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- Device-Subscriptions-SubscriptionLastErrorDescription-Applicability-End -->
+
+<!-- Device-Subscriptions-SubscriptionLastErrorDescription-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/WindowsLicensing/Subscriptions/SubscriptionLastErrorDescription
+```
+<!-- Device-Subscriptions-SubscriptionLastErrorDescription-OmaUri-End -->
+
+<!-- Device-Subscriptions-SubscriptionLastErrorDescription-Description-Begin -->
+<!-- Description-Source-DDF -->
+Error description of last subscription operation. Value would be empty, if error description can't be evaluated.
+<!-- Device-Subscriptions-SubscriptionLastErrorDescription-Description-End -->
+
+<!-- Device-Subscriptions-SubscriptionLastErrorDescription-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Subscriptions-SubscriptionLastErrorDescription-Editable-End -->
+
+<!-- Device-Subscriptions-SubscriptionLastErrorDescription-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Get |
+<!-- Device-Subscriptions-SubscriptionLastErrorDescription-DFProperties-End -->
+
+<!-- Device-Subscriptions-SubscriptionLastErrorDescription-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Subscriptions-SubscriptionLastErrorDescription-Examples-End -->
+
+<!-- Device-Subscriptions-SubscriptionLastErrorDescription-End -->
+
+<!-- Device-Subscriptions-SubscriptionStatus-Begin -->
+### Subscriptions/SubscriptionStatus
+
+<!-- Device-Subscriptions-SubscriptionStatus-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- Device-Subscriptions-SubscriptionStatus-Applicability-End -->
+
+<!-- Device-Subscriptions-SubscriptionStatus-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/WindowsLicensing/Subscriptions/SubscriptionStatus
+```
+<!-- Device-Subscriptions-SubscriptionStatus-OmaUri-End -->
+
+<!-- Device-Subscriptions-SubscriptionStatus-Description-Begin -->
+<!-- Description-Source-DDF -->
+Status of last subscription operation.
+<!-- Device-Subscriptions-SubscriptionStatus-Description-End -->
+
+<!-- Device-Subscriptions-SubscriptionStatus-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Subscriptions-SubscriptionStatus-Editable-End -->
+
+<!-- Device-Subscriptions-SubscriptionStatus-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Get |
+<!-- Device-Subscriptions-SubscriptionStatus-DFProperties-End -->
+
+<!-- Device-Subscriptions-SubscriptionStatus-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Subscriptions-SubscriptionStatus-Examples-End -->
+
+<!-- Device-Subscriptions-SubscriptionStatus-End -->
+
+<!-- Device-Subscriptions-SubscriptionType-Begin -->
+### Subscriptions/SubscriptionType
+
+<!-- Device-Subscriptions-SubscriptionType-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- Device-Subscriptions-SubscriptionType-Applicability-End -->
+
+<!-- Device-Subscriptions-SubscriptionType-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/WindowsLicensing/Subscriptions/SubscriptionType
+```
+<!-- Device-Subscriptions-SubscriptionType-OmaUri-End -->
+
+<!-- Device-Subscriptions-SubscriptionType-Description-Begin -->
+<!-- Description-Source-DDF -->
+Set device to Device Based Subscription or User Based Subscription. For Device Based Subscription this action will automatically acquire the subscription on the device. For User Based Subscription the existing process of user logon will be required.
+<!-- Device-Subscriptions-SubscriptionType-Description-End -->
+
+<!-- Device-Subscriptions-SubscriptionType-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Subscriptions-SubscriptionType-Editable-End -->
+
+<!-- Device-Subscriptions-SubscriptionType-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Get, Replace |
+<!-- Device-Subscriptions-SubscriptionType-DFProperties-End -->
+
+<!-- Device-Subscriptions-SubscriptionType-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | User Based Subscription. |
+| 1 | Device Based Subscription. |
+<!-- Device-Subscriptions-SubscriptionType-AllowedValues-End -->
+
+<!-- Device-Subscriptions-SubscriptionType-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Subscriptions-SubscriptionType-Examples-End -->
+
+<!-- Device-Subscriptions-SubscriptionType-End -->
 
 <!-- Device-UpgradeEditionWithLicense-Begin -->
 ## UpgradeEditionWithLicense
@@ -1073,7 +1254,7 @@ Returns the status of the subscription.
 <!-- Device-UpgradeEditionWithLicense-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-UpgradeEditionWithLicense-Applicability-End -->
 
 <!-- Device-UpgradeEditionWithLicense-OmaUri-Begin -->
@@ -1096,7 +1277,7 @@ Provide a license for an edition upgrade of Windows 10 mobile devices. Does not 
 
 | Property name | Property value |
 |:--|:--|
-| Format | xml |
+| Format | `xml` |
 | Access Type | Exec |
 <!-- Device-UpgradeEditionWithLicense-DFProperties-End -->
 
@@ -1112,7 +1293,7 @@ Provide a license for an edition upgrade of Windows 10 mobile devices. Does not 
 <!-- Device-UpgradeEditionWithProductKey-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-UpgradeEditionWithProductKey-Applicability-End -->
 
 <!-- Device-UpgradeEditionWithProductKey-OmaUri-Begin -->
@@ -1164,7 +1345,7 @@ Activation or changing a product key can be carried out on the following edition
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Exec |
 | Reboot Behavior | Automatic |
 <!-- Device-UpgradeEditionWithProductKey-DFProperties-End -->

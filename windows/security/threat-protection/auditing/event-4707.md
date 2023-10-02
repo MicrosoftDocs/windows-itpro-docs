@@ -1,11 +1,11 @@
 ---
-title: 4707(S) A trust to a domain was removed. (Windows 10)
+title: 4707(S) A trust to a domain was removed. 
 description: Describes security event 4707(S) A trust to a domain was removed. This event is generated when a domain trust is removed.
 ms.pagetype: security
 ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
+ms.localizationpriority: low
 author: vinaypamnani-msft
 ms.date: 09/07/2021
 ms.reviewer: 

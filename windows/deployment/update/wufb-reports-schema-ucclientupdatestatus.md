@@ -1,20 +1,25 @@
 ---
-title: Windows Update for Business reports Data Schema - UCClientUpdateStatus
-manager: aaroncz
-description: UCClientUpdateStatus schema
+title: UCClientUpdateStatus data schema
+titleSuffix: Windows Update for Business reports
+description: UCClientUpdateStatus schema for Windows Update for Business reports. UCClientUpdateStatus combines the latest client-based data with the latest service data.
 ms.prod: windows-client
+ms.technology: itpro-updates
+ms.topic: reference
 author: mestew
 ms.author: mstewart
-ms.topic: reference
-ms.date: 06/06/2022
-ms.technology: itpro-updates
+manager: aaroncz
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
+ms.date: 06/05/2023
 ---
 
 # UCClientUpdateStatus
 <!--37063317, 30141258, 37063041-->
-***(Applies to: Windows 11 & Windows 10)***
 
 Update Event that combines the latest client-based data with the latest service-based data to create a complete picture for one device (client) and one update.
+
+## Schema for UCClientUpdateStatus
 
 | Field | Type | Example | Description |
 |---|---|---|---|
@@ -37,7 +42,7 @@ Update Event that combines the latest client-based data with the latest service-
 | **SourceSystem** | [string](/azure/kusto/query/scalar-data-types/string)|  `Azure`| |
 | **TargetBuild** |  [string](/azure/kusto/query/scalar-data-types/string) | `10.0.18363.836` | The full build of the content this DeviceUpdateEvent is tracking. For Windows 10 updates, this value would correspond to the full build (10.0.14393.385). |
 | **TargetBuildNumber** |  [int](/azure/kusto/query/scalar-data-types/int)  | `18363` | Integer of the Major portion of Build. |
-| **TargetKBNumber** |  [int](/azure/kusto/query/scalar-data-types/int)  | `4524570` | KB Article. |
+| **TargetKBNumber** |  [string](/azure/kusto/query/scalar-data-types/string)  | `KB4524570` | KB Article. |
 | **TargetRevisionNumber** |  [int](/azure/kusto/query/scalar-data-types/int)  | `836` | Integer or the minor (or revision) portion of the build. |
 | **TargetVersion** |  [int](/azure/kusto/query/scalar-data-types/int)  | `1909` | The target operating system version, such as 1909. |
 | **TimeGenerated** |  [datetime](/azure/kusto/query/scalar-data-types/datetime)  | `2020-05-14 09:26:03.478039` | The time the snapshot generated this specific record. This is to determine to which batch snapshot this record belongs. |
@@ -50,3 +55,4 @@ Update Event that combines the latest client-based data with the latest service-
 | **UpdateManufacturer** | [string](/azure/kusto/query/scalar-data-types/string) | `Microsoft` | Manufacturer of update. Microsoft for feature or quality updates, for drivers the name of driver manufacturer. |
 | **UpdateReleaseTime** |  [datetime](/azure/kusto/query/scalar-data-types/datetime)  | `2020-05-14 09:26:03.478039` | The release date of the update |
 | **UpdateSource** |  [string](/azure/kusto/query/scalar-data-types/string) | `UUP` | The source of the update such as UUP, MUv6, Media |
+ 

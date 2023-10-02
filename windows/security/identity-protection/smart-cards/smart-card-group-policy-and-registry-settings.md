@@ -1,21 +1,9 @@
 ---
-title: Smart Card Group Policy and Registry Settings (Windows)
+title: Smart Card Group Policy and Registry Settings 
 description: Discover the Group Policy, registry key, local security policy, and credential delegation policy settings that are available for configuring smart cards.
-ms.prod: windows-client
-author: paolomatarazzo
-ms.author: paoloma
 ms.reviewer: ardenw
-manager: aaroncz
-ms.topic: article
-ms.localizationpriority: medium
+ms.topic: reference
 ms.date: 11/02/2021
-appliesto: 
-  - ✅ <b>Windows 10</b>
-  - ✅ <b>Windows 11</b>
-  - ✅ <b>Windows Server 2016</b>
-  - ✅ <b>Windows Server 2019</b>
-  - ✅ <b>Windows Server 2022</b>
-ms.technology: itpro-security
 ---
 
 # Smart Card Group Policy and Registry Settings
@@ -222,7 +210,7 @@ You can use this policy setting to change the default message that a user sees i
 
 When this policy setting is turned on, you can create and manage the displayed message that the user sees when a smart card is blocked. 
 
-When this policy setting isn't turned on (and the integrated unblock feature is also enabled), the user sees the system’s default message when the smart card is blocked.
+When this policy setting isn't turned on (and the integrated unblock feature is also enabled), the user sees the system's default message when the smart card is blocked.
 
 | **Item**          | **Description**             |
 |--------------------------------------|-------------------------|
@@ -236,7 +224,7 @@ When this policy setting isn't turned on (and the integrated unblock feature is 
 You can use this policy setting to configure which valid sign-in certificates are displayed. 
 
 > [!NOTE]
-> During the certificate renewal period, a user’s smart card can have multiple valid sign-in certificates issued from the same certificate template, which can cause confusion about which certificate to select. This behavior can occur when a certificate is renewed and the old certificate has not expired yet.
+> During the certificate renewal period, a user's smart card can have multiple valid sign-in certificates issued from the same certificate template, which can cause confusion about which certificate to select. This behavior can occur when a certificate is renewed and the old certificate has not expired yet.
 > 
 > If two certificates are issued from the same template with the same major version and they are for the same user (this is determined by their UPN), they are determined to be the same.  
 
@@ -288,7 +276,7 @@ When this setting isn't turned on, the user doesn't see a smart card device driv
 You can use this policy setting to prevent Credential Manager from returning plaintext PINs. 
 
 > [!NOTE]
-> Credential Manager is controlled by the user on the local computer, and it stores credentials from supported browsers and Windows applications. Credentials are saved in special encrypted folders on the computer under the user’s profile. 
+> Credential Manager is controlled by the user on the local computer, and it stores credentials from supported browsers and Windows applications. Credentials are saved in special encrypted folders on the computer under the user's profile. 
 
 When this policy setting is turned on, Credential Manager doesn't return a plaintext PIN. 
 
@@ -310,7 +298,7 @@ You can use this policy setting to control the way the subject name appears duri
 
 When this policy setting is turned on, the subject name during sign-in appears reversed from the way that it's stored in the certificate.
 
-When this policy setting isn’t turned on, the subject name appears the same as it’s stored in the certificate.
+When this policy setting isn't turned on, the subject name appears the same as it's stored in the certificate.
 
 
 | **Item**          | **Description**                 |
@@ -346,7 +334,7 @@ You can use this policy setting to manage the root certificate propagation that 
 
 When this policy setting is turned on, root certificate propagation occurs when the user inserts the smart card.
 
-When this policy setting isn’t turned on, root certificate propagation doesn’t occur when the user inserts the smart card.
+When this policy setting isn't turned on, root certificate propagation doesn't occur when the user inserts the smart card.
 
 | **Item**          | **Description**   |
 |--------------------------------------|---------------------------------------------------------------------------------------------------------|

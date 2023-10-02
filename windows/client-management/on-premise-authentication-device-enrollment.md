@@ -1,65 +1,52 @@
 ---
 title: On-premises authentication device enrollment
 description: This section provides an example of the mobile device enrollment protocol using on-premises authentication policy.
-ms.reviewer: 
-manager: aaroncz
-ms.author: vinpa
 ms.topic: article
-ms.prod: windows-client
-ms.technology: itpro-manage
-author: vinaypamnani-msft
-ms.date: 06/26/2017
+ms.date: 08/10/2023
 ---
 
 # On-premises authentication device enrollment
 
-This section provides an example of the mobile device enrollment protocol using on-premises authentication policy. For details about the Microsoft mobile device enrollment protocol for Windows 10, see [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2]( https://go.microsoft.com/fwlink/p/?LinkId=619347).
+This section provides an example of the mobile device enrollment protocol using on-premises authentication policy. For details about the Microsoft mobile device enrollment protocol for Windows, see [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2]( https://go.microsoft.com/fwlink/p/?LinkId=619347).
 
-## In this topic
-
-- [On-premises authentication device enrollment](#on-premises-authentication-device-enrollment)
-  - [In this topic](#in-this-topic)
-  - [Discovery service](#discovery-service)
-  - [Enrollment policy web service](#enrollment-policy-web-service)
-  - [Enrollment web service](#enrollment-web-service)
-
-For the list of enrollment scenarios not supported in Windows 10, see [Enrollment scenarios not supported](mobile-device-enrollment.md#enrollment-scenarios-not-supported).
+> [!NOTE]
+> For the list of enrollment scenarios not supported in Windows, see [Enrollment scenarios not supported](mobile-device-enrollment.md#enrollment-scenarios-not-supported).
 
 ## Discovery service
 
 The discovery web service provides the configuration information necessary for a user to enroll a device with a management service. The service is a restful web service over HTTPS (server authentication only).
 
 > [!NOTE]
-> The administrator of the discovery service must create a host with the address enterpriseenrollment.*domain\_name*.com.
+> The administrator of the discovery service must create a host with the address `enterpriseenrollment.<domain_name>.com`.
 
-The device’s automatic discovery flow uses the domain name of the email address that was submitted to the Workplace settings screen during sign in. The automatic discovery system constructs a URI that uses this hostname by appending the subdomain “enterpriseenrollment” to the domain of the email address, and by appending the path “/EnrollmentServer/Discovery.svc”. For example, if the email address is “sample@contoso.com”, the resulting URI for first Get request would be: http:<span></span>//enterpriseenrollment.contoso.com/EnrollmentServer/Discovery.svc
+The automatic discovery flow of the device uses the domain name of the email address that was submitted to the Workplace settings screen during sign in. The automatic discovery system constructs a URI that uses this hostname by appending the subdomain **enterpriseenrollment** to the domain of the email address, and by appending the path `/EnrollmentServer/Discovery.svc`. For example, if the email address is `sample@contoso.com`, the resulting URI for first Get request would be: `http://enterpriseenrollment.contoso.com/EnrollmentServer/Discovery.svc`.
 
 The first request is a standard HTTP GET request.
 
 The following example shows a request via HTTP GET to the discovery server given user@contoso.com as the email address.
 
-```
+```http
 Request Full Url: http://EnterpriseEnrollment.contoso.com/EnrollmentServer/Discovery.svc
 Content Type: unknown
 Header Byte Count: 153
 Body Byte Count: 0
 ```
 
-```
+```http
 GET /EnrollmentServer/Discovery.svc HTTP/1.1
 User-Agent: Windows Phone 8 Enrollment Client
 Host: EnterpriseEnrollment.contoso.com
 Pragma: no-cache
 ```
 
-```
+```http
 Request Full Url: http://EnterpriseEnrollment.contoso.com/EnrollmentServer/Discovery.svc
 Content Type: text/html
 Header Byte Count: 248
 Body Byte Count: 0
 ```
 
-```
+```http
 HTTP/1.1 200 OK
 Connection: Keep-Alive
 Pragma: no-cache
@@ -68,18 +55,18 @@ Content-Type: text/html
 Content-Length: 0
 ```
 
-After the device gets a response from the server, the device sends a POST request to enterpriseenrollment.*domain\_name*/EnrollmentServer/Discovery.svc. After it gets another response from the server (which should tell the device where the enrollment server is), the next message sent from the device is to enterpriseenrollment.*domain\_name* to the enrollment server.
+After the device gets a response from the server, the device sends a POST request to `enterpriseenrollment.<domain_name>/EnrollmentServer/Discovery.svc`. After it gets another response from the server (which should tell the device where the enrollment server is), the next message sent from the device is to `enterpriseenrollment.<domain_name>` enrollment server.
 
 The following logic is applied:
 
-1.  The device first tries HTTPS. If the server cert is not trusted by the device, the HTTPS fails.
-2.  If that fails, the device tries HTTP to see whether it is redirected:
-    -   If the device is not redirected, it prompts the user for the server address.
-    -   If the device is redirected, it prompts the user to allow the redirect.
+1. The device first tries HTTPS. If the device doesn't trust the server certificate, the HTTPS attempt fails.
+1. If that fails, the device tries HTTP to see whether it's redirected:
+   - If the device isn't redirected, the user is prompted for the server address.
+   - If the device is redirected, the user is prompted to allow the redirect.
 
 The following example shows a request via an HTTP POST command to the discovery web service given user@contoso.com as the email address:
 
-```
+```http
 https://EnterpriseEnrollment.Contoso.com/EnrollmentServer/Discovery.svc
 ```
 
@@ -124,9 +111,9 @@ If a domain and user name are provided by the user instead of an email address, 
 
 The discovery response is in the XML format and includes the following fields:
 
--   Enrollment service URL (EnrollmentServiceUrl) – Specifies the URL of the enrollment endpoint that is exposed by the management service. The device should call this URL after the user has been authenticated. This field is mandatory.
--   Authentication policy (AuthPolicy) – Indicates what type of authentication is required. For the MDM server, OnPremise is the supported value, which means that the user will be authenticated when calling the management service URL. This field is mandatory.
--   Federated is added as another supported value. This allows the server to leverage the Web Authentication Broker to perform customized user authentication, and term of usage acceptance.
+- Enrollment service URL (EnrollmentServiceUrl) - Specifies the URL of the enrollment endpoint that is exposed by the management service. The device should call this URL after the user has been authenticated. This field is mandatory.
+- Authentication policy (AuthPolicy) - Indicates what type of authentication is required. For the MDM server, OnPremise is the supported value, which means that the user is authenticated when calling the management service URL. This field is mandatory.
+- Federated is added as another supported value. It allows the server to use the Web Authentication Broker to perform customized user authentication, and term of usage acceptance.
 
 > [!NOTE]
 > The HTTP server response must not be chunked; it must be sent as one message.
@@ -166,52 +153,50 @@ The following example shows a response received from the discovery web service f
 
 ## Enrollment policy web service
 
-For the OnPremise authentication policy, the UsernameToken in GetPolicies contains the user credential, whose value is based on the authentication policy in discovery. A sample of the request can be found on the MSDN website; the following is another sample, with "user@contoso.com" as the user name and "mypassword" as the password.
-
-The following example shows the policy web service request.
+For the OnPremise authentication policy, the UsernameToken in GetPolicies contains the user credential, whose value is based on the authentication policy in discovery. The following sample shows the policy web service request and uses `user@contoso.com` as the user name and `mypassword` as the password.
 
 ```xml
-    <s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope"
-       xmlns:a="http://www.w3.org/2005/08/addressing"
-       xmlns:u="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
-       xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"
-       xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512"
-       xmlns:ac="http://schemas.xmlsoap.org/ws/2006/12/authorization">
-      <s:Header>
-        <a:Action s:mustUnderstand="1">
-          http://schemas.microsoft.com/windows/pki/2009/01/enrollmentpolicy/IPolicy/GetPolicies
-        </a:Action>
-        <a:MessageID>urn:uuid:72048B64-0F19-448F-8C2E-B4C661860AA0</a:MessageID>
-        <a:ReplyTo>
-          <a:Address>http://www.w3.org/2005/08/addressing/anonymous</a:Address>
-        </a:ReplyTo>
-        <a:To s:mustUnderstand="1">
-          https://enrolltest.contoso.com/ENROLLMENTSERVER/DEVICEENROLLMENTWEBSERVICE.SVC
-        </a:To>
-        <wsse:Security s:mustUnderstand="1">
-          <wsse:UsernameToken u:Id="uuid-cc1ccc1f-2fba-4bcf-b063-ffc0cac77917-4">
-            <wsse:Username>user@contoso.com</wsse:Username>
-            <wsse:Password wsse:Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">mypassword</wsse:Password>
-          </wsse:UsernameToken>
-        </wsse:Security>
-      </s:Header>
-      <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-        <GetPolicies
-           xmlns="http://schemas.microsoft.com/windows/pki/2009/01/enrollmentpolicy">
-          <client>
-            <lastUpdate xsi:nil="true"/>
-            <preferredLanguage xsi:nil="true"/>
-          </client>
-          <requestFilter xsi:nil="true"/>
-        </GetPolicies>
-      </s:Body>
-    </s:Envelope>
+   <s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope"
+      xmlns:a="http://www.w3.org/2005/08/addressing"
+      xmlns:u="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+      xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"
+      xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512"
+      xmlns:ac="http://schemas.xmlsoap.org/ws/2006/12/authorization">
+   <s:Header>
+      <a:Action s:mustUnderstand="1">
+         http://schemas.microsoft.com/windows/pki/2009/01/enrollmentpolicy/IPolicy/GetPolicies
+      </a:Action>
+      <a:MessageID>urn:uuid:72048B64-0F19-448F-8C2E-B4C661860AA0</a:MessageID>
+      <a:ReplyTo>
+         <a:Address>http://www.w3.org/2005/08/addressing/anonymous</a:Address>
+      </a:ReplyTo>
+      <a:To s:mustUnderstand="1">
+         https://enrolltest.contoso.com/ENROLLMENTSERVER/DEVICEENROLLMENTWEBSERVICE.SVC
+      </a:To>
+      <wsse:Security s:mustUnderstand="1">
+         <wsse:UsernameToken u:Id="uuid-cc1ccc1f-2fba-4bcf-b063-ffc0cac77917-4">
+         <wsse:Username>user@contoso.com</wsse:Username>
+         <wsse:Password wsse:Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">mypassword</wsse:Password>
+         </wsse:UsernameToken>
+      </wsse:Security>
+   </s:Header>
+   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <GetPolicies
+         xmlns="http://schemas.microsoft.com/windows/pki/2009/01/enrollmentpolicy">
+         <client>
+         <lastUpdate xsi:nil="true"/>
+         <preferredLanguage xsi:nil="true"/>
+         </client>
+         <requestFilter xsi:nil="true"/>
+      </GetPolicies>
+   </s:Body>
+   </s:Envelope>
 ```
 
 After the user is authenticated, the web service retrieves the certificate template that the user should enroll with and creates enrollment policies based on the certificate template properties. A sample of the response can be found on MSDN.
 
-MS-XCEP supports very flexible enrollment policies using various Complex Types and Attributes. We will first support the minimalKeyLength, the hashAlgorithmOIDReference policies, and the CryptoProviders. The hashAlgorithmOIDReference has related OID and OIDReferenceID and policySchema in the GetPolicesResponse. The policySchema refers to the certificate template version. Version 3 of MS-XCEP supports hashing algorithms.
+MS-XCEP supports flexible enrollment policies using various Complex Types and Attributes that include the minimalKeyLength, the hashAlgorithmOIDReference policies, and the CryptoProviders. The hashAlgorithmOIDReference has related OID and OIDReferenceID and policySchema in the GetPolicesResponse. The policySchema refers to the certificate template version. Version 3 of MS-XCEP supports hashing algorithms.
 
 > [!NOTE]
 > The HTTP server response must not be chunked; it must be sent as one message.
@@ -299,9 +284,9 @@ The following snippet shows the policy web service response.
 
 This web service implements the MS-WSTEP protocol. It processes the RequestSecurityToken (RST) message from the client, authenticates the client, requests the certificate from the CA, and returns it in the RequestSecurityTokenResponse (RSTR) to the client. Besides the issued certificate, the response also contains configurations needed to provision the DM client.
 
-The RequestSecurityToken (RST) must have the user credential and a certificate request. The user credential in an RST SOAP envelope is the same as in GetPolicies, and can vary depending on whether the authentication policy is OnPremise or Federated. The BinarySecurityToken in an RST SOAP body contains a Base64-encoded PKCS\#10 certificate request, which is generated by the client based on the enrollment policy. The client could have requested an enrollment policy by using MS-XCEP before requesting a certificate using MS-WSTEP. If the PKCS\#10 certificate request is accepted by the certification authority (CA) (the key length, hashing algorithm, and so on match the certificate template), the client can enroll successfully.
+The RequestSecurityToken (RST) must have the user credential and a certificate request. The user credential in an RST SOAP envelope is the same as in GetPolicies, and can vary depending on whether the authentication policy is OnPremise or Federated. The BinarySecurityToken in an RST SOAP body contains a Base64-encoded PKCS\#10 certificate request, which is generated by the client based on the enrollment policy. The client could have requested an enrollment policy by using MS-XCEP before requesting a certificate using MS-WSTEP. If the PKCS\#10 certificate request is accepted by the certification authority (CA) (the key length, hashing algorithm, and so on, match the certificate template), the client can enroll successfully.
 
-The RequestSecurityToken will use a custom TokenType (http:<span></span>//schemas.microsoft.com/5.0.0.0/ConfigurationManager/Enrollment/DeviceEnrollmentToken), because our enrollment token is more than an X.509 v3 certificate. For more details, see the Response section.
+The RequestSecurityToken uses a custom TokenType (`http://schemas.microsoft.com/5.0.0.0/ConfigurationManager/Enrollment/DeviceEnrollmentToken`), because our enrollment token is more than an X.509 v3 certificate. For more information, see the Response section.
 
 The RST may also specify a number of AdditionalContext items, such as DeviceType and Version. Based on these values, for example, the web service can return device-specific and version-specific DM configuration.
 
@@ -311,11 +296,11 @@ The RST may also specify a number of AdditionalContext items, such as DeviceType
 The following example shows the enrollment web service request for OnPremise authentication.
 
 ```xml
-    <s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" 
-       xmlns:a="http://www.w3.org/2005/08/addressing" 
+    <s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope"
+       xmlns:a="http://www.w3.org/2005/08/addressing"
        xmlns:u="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
        xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"
-       xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512" 
+       xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512"
        xmlns:ac="http://schemas.xmlsoap.org/ws/2006/12/authorization">
        <s:Header>
           <a:Action s:mustUnderstand="1">
@@ -344,8 +329,8 @@ The following example shows the enrollment web service request for OnPremise aut
              </wst:TokenType>
              <wst:RequestType>
                 http://docs.oasis-open.org/ws-sx/ws-trust/200512/Issue</wst:RequestType>
-             <wsse:BinarySecurityToken 
-                ValueType="http://schemas.microsoft.com/windows/pki/2009/01/enrollment#PKCS10" 
+             <wsse:BinarySecurityToken
+                ValueType="http://schemas.microsoft.com/windows/pki/2009/01/enrollment#PKCS10"
                 EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd#base64binary">
                 DER format PKCS#10 certificate request in Base64 encoding Insterted Here
              </wsse:BinarySecurityToken>
@@ -383,7 +368,6 @@ The following example shows the enrollment web service request for OnPremise aut
                 <ac:ContextItem Name="DeviceID">
                    <ac:Value>7BA748C8-703E-4DF2-A74A-92984117346A</ac:Value>
                 </ac:ContextItem>
-                
                 <ac:ContextItem Name="TargetedUserLoggedIn">
                    <ac:Value>True</ac:Value>
                 </ac:ContextItem>
@@ -396,8 +380,8 @@ The following example shows the enrollment web service request for OnPremise aut
 The following example shows the enrollment web service response.
 
 ```xml
-    <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" 
-       xmlns:a="http://www.w3.org/2005/08/addressing" 
+    <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"
+       xmlns:a="http://www.w3.org/2005/08/addressing"
        xmlns:u="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
        <s:Header>
           <a:Action s:mustUnderstand="1" >
@@ -413,14 +397,15 @@ The following example shows the enrollment web service response.
           </o:Security>
        </s:Header>
        <s:Body>
-          <RequestSecurityTokenResponseCollection 
+          <RequestSecurityTokenResponseCollection
              xmlns="http://docs.oasis-open.org/ws-sx/ws-trust/200512">
              <RequestSecurityTokenResponse>
                 <TokenType>
         http://schemas.microsoft.com/5.0.0.0/ConfigurationManager/Enrollment/DeviceEnrollmentToken
                 </TokenType>
-                 <DispositionMessage xmlns="http://schemas.microsoft.com/windows/pki/2009/01/enrollment"/>           <RequestedSecurityToken>
-                   <BinarySecurityToken 
+                 <DispositionMessage xmlns="http://schemas.microsoft.com/windows/pki/2009/01/enrollment"/>
+                 <RequestedSecurityToken>
+                   <BinarySecurityToken
                       ValueType=
     "http://schemas.microsoft.com/5.0.0.0/ConfigurationManager/Enrollment/DeviceEnrollmentProvisionDoc"
                       EncodingType=
@@ -429,7 +414,7 @@ The following example shows the enrollment web service response.
               "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
                       B64EncodedSampleBinarySecurityToken
                    </BinarySecurityToken>
-                </RequestedSecurityToken>
+                  </RequestedSecurityToken>
                 <RequestID xmlns="http://schemas.microsoft.com/windows/pki/2009/01/enrollment">0
                 </RequestID>
              </RequestSecurityTokenResponse>
@@ -440,7 +425,7 @@ The following example shows the enrollment web service response.
 
 The following example shows the encoded provisioning XML.
 
-```
+```xml
 <wap-provisioningdoc version="1.1">
    <characteristic type="CertificateStore">
       <characteristic type="Root">
@@ -452,17 +437,17 @@ The following example shows the encoded provisioning XML.
       </characteristic>
    </characteristic>
    <characteristic type="CertificateStore">
-      <characteristic type="My" >      
+      <characteristic type="My" >
          <characteristic type="User">
             <characteristic type="F9A4F20FC50D990FDD0E3DB9AFCBF401818D5462">
                <parm name="EncodedCertificate" value="B64EncodedCertInsertedHere" />
             </characteristic>
-            <characteristic type="PrivateKeyContainer"/> 
-            <!-- This tag must be present for XML syntax correctness. -->            
+            <characteristic type="PrivateKeyContainer"/>
+            <!-- This tag must be present for XML syntax correctness. -->
          </characteristic>
          <characteristic type="WSTEP">
             <characteristic type="Renew">
-             <!—If the datatype for ROBOSupport, RenewPeriod, and RetryInterval tags exist, they must be set explicitly. -->
+             <!--If the datatype for ROBOSupport, RenewPeriod, and RetryInterval tags exist, they must be set explicitly. -->
                <parm name="ROBOSupport" value="true" datatype="boolean"/>
                <parm name="RenewPeriod" value="60" datatype="integer"/>
                <parm name="RetryInterval" value="4" datatype="integer"/>
@@ -505,7 +490,7 @@ The following example shows the encoded provisioning XML.
          <parm name="NumberOfSecondRetries" value="5" datatype="integer" />
          <parm name="IntervalForSecondSetOfRetries" value="3" datatype="integer" />
          <parm name="NumberOfRemainingScheduledRetries" value="0" datatype="integer" />
-<!-- Windows 10 supports MDM push for real-time communication. The DM client long term polling schedule’s retry waiting interval should be more than 24 hours (1440) to reduce the impact to data consumption and battery life. Refer to the DMClient Configuration Service Provider section for information about polling schedule parameters.-->
+<!-- Windows 10 supports MDM push for real-time communication. The DM client long term polling schedule's retry waiting interval should be more than 24 hours (1440) to reduce the impact to data consumption and battery life. Refer to the DMClient Configuration Service Provider section for information about polling schedule parameters.-->
          <parm name="IntervalForRemainingScheduledRetries" value="1560" datatype="integer" />
          <parm name="PollOnLogin" value="true" datatype="boolean" />
  </characteristic>
@@ -513,7 +498,7 @@ The following example shows the encoded provisioning XML.
 </characteristic>
       </characteristic>
    </characteristic>
-   <!-- For Windows 10, we removed EnterpriseAppManagement from the enrollment 
+   <!-- For Windows 10, we removed EnterpriseAppManagement from the enrollment
         protocol. This configuration service provider is being deprecated for Windows 10. -->
 </wap-provisioningdoc>
 ```

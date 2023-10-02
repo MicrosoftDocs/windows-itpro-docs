@@ -1,10 +1,10 @@
 ---
+ms.date: 09/07/2023
 title: Configure Windows Hello for Business Policy settings in an on-premises key trust
 description: Configure Windows Hello for Business Policy settings for Windows Hello for Business in an on-premises key trust scenario
-ms.date: 12/12/2022
 appliesto: 
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016 and later</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 ms.topic: tutorial
 ---
 # Configure Windows Hello for Business group policy settings - on-premises key trust
@@ -20,7 +20,7 @@ If you configure the Group Policy for computers, all users that sign-in to those
 
 The Group Policy setting determines whether users are allowed, and prompted, to enroll for Windows Hello for Business. It can be configured for computers or users.
 
-If you configure the Group Policy for computers, all users that sign-in to those computers will be allowed and prompted to enroll for Windows Hello for Business. If you configure the Group Policy for users, only those users will be allowed and prompted to enroll for Windows Hello for Business .
+If you configure the Group Policy for computers, all users that sign-in to those computers will be allowed and prompted to enroll for Windows Hello for Business. If you configure the Group Policy for users, only those users will be allowed and prompted to enroll for Windows Hello for Business.
 
 ## Create the GPO
 

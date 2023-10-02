@@ -4,7 +4,7 @@ description: Learn more about the Accounts Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -26,7 +26,7 @@ ms.topic: reference
 <!-- AllowAddingNonMicrosoftAccountsManually-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowAddingNonMicrosoftAccountsManually-Applicability-End -->
 
 <!-- AllowAddingNonMicrosoftAccountsManually-OmaUri-Begin -->
@@ -37,7 +37,7 @@ ms.topic: reference
 
 <!-- AllowAddingNonMicrosoftAccountsManually-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specifies whether user is allowed to add non-MSA email accounts. Most restricted value is 0
+Specifies whether user is allowed to add non-MSA email accounts. Most restricted value is 0.
 
 > [!NOTE]
 > This policy will only block UI/UX-based methods for adding non-Microsoft accounts. Even if this policy is enforced, you can still provision non-MSA accounts using the EMAIL2 CSP.
@@ -52,7 +52,7 @@ Specifies whether user is allowed to add non-MSA email accounts. Most restricted
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowAddingNonMicrosoftAccountsManually-DFProperties-End -->
@@ -78,7 +78,7 @@ Specifies whether user is allowed to add non-MSA email accounts. Most restricted
 <!-- AllowMicrosoftAccountConnection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowMicrosoftAccountConnection-Applicability-End -->
 
 <!-- AllowMicrosoftAccountConnection-OmaUri-Begin -->
@@ -101,7 +101,7 @@ Specifies whether the user is allowed to use an MSA account for non-email relate
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowMicrosoftAccountConnection-DFProperties-End -->
@@ -127,7 +127,7 @@ Specifies whether the user is allowed to use an MSA account for non-email relate
 <!-- AllowMicrosoftAccountSignInAssistant-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowMicrosoftAccountSignInAssistant-Applicability-End -->
 
 <!-- AllowMicrosoftAccountSignInAssistant-OmaUri-Begin -->
@@ -138,13 +138,13 @@ Specifies whether the user is allowed to use an MSA account for non-email relate
 
 <!-- AllowMicrosoftAccountSignInAssistant-Description-Begin -->
 <!-- Description-Source-DDF -->
-Allows IT Admins the ability to disable the Microsoft Account Sign-In Assistant (wlidsvc) NT service
+Allows IT Admins the ability to disable the Microsoft Account Sign-In Assistant (wlidsvc) NT service.
 
 > [!NOTE]
-> If the MSA service is disabled, Windows Update will no longer offer feature updates to devices running Windows 10 1709 or higher. See Feature updates are not being offered while other updates are
+> If the MSA service is disabled, Windows Update will no longer offer feature updates to devices running Windows 10 1709 or higher. See Feature updates aren't being offered while other updates are.
 
 > [!NOTE]
-> If the MSA service is disabled, the Subscription Activation feature will not work properly and your users will not be able to "step-up" from Windows 10 Pro to Windows 10 Enterprise, because the MSA ticket for license authentication cannot be generated. The machine will remain on Windows 10 Pro and no error will be displayed in the Activation Settings app.
+> If the MSA service is disabled, the Subscription Activation feature won't work properly and your users won't be able to "step-up" from Windows 10 Pro to Windows 10 Enterprise, because the MSA ticket for license authentication can't be generated. The machine will remain on Windows 10 Pro and no error will be displayed in the Activation Settings app.
 <!-- AllowMicrosoftAccountSignInAssistant-Description-End -->
 
 <!-- AllowMicrosoftAccountSignInAssistant-Editable-Begin -->
@@ -156,7 +156,7 @@ Allows IT Admins the ability to disable the Microsoft Account Sign-In Assistant 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowMicrosoftAccountSignInAssistant-DFProperties-End -->
@@ -182,7 +182,7 @@ Allows IT Admins the ability to disable the Microsoft Account Sign-In Assistant 
 <!-- DomainNamesForEmailSync-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- DomainNamesForEmailSync-Applicability-End -->
 
 <!-- DomainNamesForEmailSync-OmaUri-Begin -->
@@ -204,7 +204,7 @@ Allows IT Admins the ability to disable the Microsoft Account Sign-In Assistant 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DomainNamesForEmailSync-DFProperties-End -->
 
@@ -220,7 +220,7 @@ Allows IT Admins the ability to disable the Microsoft Account Sign-In Assistant 
 <!-- RestrictToEnterpriseDeviceAuthenticationOnly-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- RestrictToEnterpriseDeviceAuthenticationOnly-Applicability-End -->
 
 <!-- RestrictToEnterpriseDeviceAuthenticationOnly-OmaUri-Begin -->
@@ -244,7 +244,7 @@ Most restricted value is 1.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- RestrictToEnterpriseDeviceAuthenticationOnly-DFProperties-End -->
@@ -254,7 +254,7 @@ Most restricted value is 1.
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Allow both device and user authentication. Do not block user authentication. |
+| 0 (Default) | Allow both device and user authentication. Don't block user authentication. |
 | 1 | Only allow device authentication. Block user authentication. |
 <!-- RestrictToEnterpriseDeviceAuthenticationOnly-AllowedValues-End -->
 

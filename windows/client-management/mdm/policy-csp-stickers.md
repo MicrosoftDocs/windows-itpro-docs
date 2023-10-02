@@ -4,7 +4,7 @@ description: Learn more about the Stickers Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -26,7 +26,7 @@ ms.topic: reference
 <!-- EnableStickers-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ✅ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- EnableStickers-Applicability-End -->
 
 <!-- EnableStickers-OmaUri-Begin -->
@@ -37,7 +37,7 @@ ms.topic: reference
 
 <!-- EnableStickers-Description-Begin -->
 <!-- Description-Source-DDF -->
-This policy setting allows you to control whether you want to allow stickers to be edited and placed on Desktop
+This policy setting allows you to control whether you want to allow stickers to be edited and placed on Desktop.
 <!-- EnableStickers-Description-End -->
 
 <!-- EnableStickers-Editable-Begin -->
@@ -49,7 +49,7 @@ This policy setting allows you to control whether you want to allow stickers to 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- EnableStickers-DFProperties-End -->

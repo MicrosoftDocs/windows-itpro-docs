@@ -1,21 +1,9 @@
 ---
-title: Smart Card Tools and Settings (Windows)
+title: Smart Card Tools and Settings 
 description: This topic for the IT professional and smart card developer links to information about smart card debugging, settings, and events.
-ms.prod: windows-client
-author: paolomatarazzo
-ms.author: paoloma
 ms.reviewer: ardenw
-manager: aaroncz
-ms.topic: article
-ms.localizationpriority: medium
+ms.topic: conceptual
 ms.date: 09/24/2021
-appliesto: 
-  - ✅ <b>Windows 10</b>
-  - ✅ <b>Windows 11</b>
-  - ✅ <b>Windows Server 2016</b>
-  - ✅ <b>Windows Server 2019</b>
-  - ✅ <b>Windows Server 2022</b>
-ms.technology: itpro-security
 ---
 
 # Smart Card Tools and Settings

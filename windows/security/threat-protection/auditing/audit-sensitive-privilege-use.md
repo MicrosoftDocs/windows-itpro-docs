@@ -1,5 +1,5 @@
 ---
-title: Audit Sensitive Privilege Use (Windows 10)
+title: Audit Sensitive Privilege Use 
 description: The policy setting, Audit Sensitive Privilege Use, determines if the operating system generates audit events when sensitive privileges (user rights) are used.
 ms.assetid: 915abf50-42d2-45f6-9fd1-e7bd201b193d
 ms.reviewer: 
@@ -9,7 +9,7 @@ ms.pagetype: security
 ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
+ms.localizationpriority: low
 author: vinaypamnani-msft
 ms.date: 09/06/2021
 ms.technology: itpro-security

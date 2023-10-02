@@ -4,7 +4,7 @@ description: Learn more about the eUICCs CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/28/2023
+ms.date: 08/29/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -57,7 +57,7 @@ The following list shows the eUICCs configuration service provider nodes:
 <!-- Device-{eUICC}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-{eUICC}-Applicability-End -->
 
 <!-- Device-{eUICC}-OmaUri-Begin -->
@@ -80,7 +80,7 @@ Represents information associated with an eUICC. There is one subtree for each k
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 | Dynamic Node Naming | UniqueName: The eUICC ID (EID) associated with the device. |
 <!-- Device-{eUICC}-DFProperties-End -->
@@ -97,7 +97,7 @@ Represents information associated with an eUICC. There is one subtree for each k
 <!-- Device-{eUICC}-Actions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-{eUICC}-Actions-Applicability-End -->
 
 <!-- Device-{eUICC}-Actions-OmaUri-Begin -->
@@ -108,7 +108,7 @@ Represents information associated with an eUICC. There is one subtree for each k
 
 <!-- Device-{eUICC}-Actions-Description-Begin -->
 <!-- Description-Source-DDF -->
-Actions that can be performed on the eUICC as a whole (when it is active).
+Actions that can be performed on the eUICC as a whole.
 <!-- Device-{eUICC}-Actions-Description-End -->
 
 <!-- Device-{eUICC}-Actions-Editable-Begin -->
@@ -120,7 +120,7 @@ Actions that can be performed on the eUICC as a whole (when it is active).
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-{eUICC}-Actions-DFProperties-End -->
 
@@ -136,7 +136,7 @@ Actions that can be performed on the eUICC as a whole (when it is active).
 <!-- Device-{eUICC}-Actions-ResetToFactoryState-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-{eUICC}-Actions-ResetToFactoryState-Applicability-End -->
 
 <!-- Device-{eUICC}-Actions-ResetToFactoryState-OmaUri-Begin -->
@@ -147,7 +147,7 @@ Actions that can be performed on the eUICC as a whole (when it is active).
 
 <!-- Device-{eUICC}-Actions-ResetToFactoryState-Description-Begin -->
 <!-- Description-Source-DDF -->
-An EXECUTE on this node triggers the LPA to perform an eUICC Memory Reset.
+This triggers an eUICC Memory Reset, which erases all the eSIM profiles in the eUICC.
 <!-- Device-{eUICC}-Actions-ResetToFactoryState-Description-End -->
 
 <!-- Device-{eUICC}-Actions-ResetToFactoryState-Editable-Begin -->
@@ -159,7 +159,7 @@ An EXECUTE on this node triggers the LPA to perform an eUICC Memory Reset.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Exec |
 <!-- Device-{eUICC}-Actions-ResetToFactoryState-DFProperties-End -->
 
@@ -175,7 +175,7 @@ An EXECUTE on this node triggers the LPA to perform an eUICC Memory Reset.
 <!-- Device-{eUICC}-Actions-Status-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-{eUICC}-Actions-Status-Applicability-End -->
 
 <!-- Device-{eUICC}-Actions-Status-OmaUri-Begin -->
@@ -198,7 +198,7 @@ Status of most recent operation, as an HRESULT. S_OK indicates success, S_FALSE 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 | Default Value  | 0 |
 <!-- Device-{eUICC}-Actions-Status-DFProperties-End -->
@@ -215,7 +215,7 @@ Status of most recent operation, as an HRESULT. S_OK indicates success, S_FALSE 
 <!-- Device-{eUICC}-DownloadServers-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-{eUICC}-DownloadServers-Applicability-End -->
 
 <!-- Device-{eUICC}-DownloadServers-OmaUri-Begin -->
@@ -226,7 +226,7 @@ Status of most recent operation, as an HRESULT. S_OK indicates success, S_FALSE 
 
 <!-- Device-{eUICC}-DownloadServers-Description-Begin -->
 <!-- Description-Source-DDF -->
-Represents default SM-DP+ discovery requests.
+Represents servers used for bulk provisioning and eSIM discovery.
 <!-- Device-{eUICC}-DownloadServers-Description-End -->
 
 <!-- Device-{eUICC}-DownloadServers-Editable-Begin -->
@@ -238,7 +238,7 @@ Represents default SM-DP+ discovery requests.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-{eUICC}-DownloadServers-DFProperties-End -->
 
@@ -254,7 +254,7 @@ Represents default SM-DP+ discovery requests.
 <!-- Device-{eUICC}-DownloadServers-{ServerName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-{eUICC}-DownloadServers-{ServerName}-Applicability-End -->
 
 <!-- Device-{eUICC}-DownloadServers-{ServerName}-OmaUri-Begin -->
@@ -265,7 +265,7 @@ Represents default SM-DP+ discovery requests.
 
 <!-- Device-{eUICC}-DownloadServers-{ServerName}-Description-Begin -->
 <!-- Description-Source-DDF -->
-Node representing the discovery operation for a server name. The node name is the fully qualified domain name of the SM-DP+ server that will be used for profile discovery. Creation of this subtree triggers a discovery request.
+Node representing a bulk download/discovery server. The node name is the fully qualified domain name of the server that will be used. Creation of this subtree triggers a discovery request.
 <!-- Device-{eUICC}-DownloadServers-{ServerName}-Description-End -->
 
 <!-- Device-{eUICC}-DownloadServers-{ServerName}-Editable-Begin -->
@@ -277,7 +277,7 @@ Node representing the discovery operation for a server name. The node name is th
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get, Replace |
 | Dynamic Node Naming | UniqueName: ServerName used for the discovery operation. |
 <!-- Device-{eUICC}-DownloadServers-{ServerName}-DFProperties-End -->
@@ -294,7 +294,7 @@ Node representing the discovery operation for a server name. The node name is th
 <!-- Device-{eUICC}-DownloadServers-{ServerName}-AutoEnable-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-{eUICC}-DownloadServers-{ServerName}-AutoEnable-Applicability-End -->
 
 <!-- Device-{eUICC}-DownloadServers-{ServerName}-AutoEnable-OmaUri-Begin -->
@@ -317,7 +317,7 @@ Indicates whether the discovered profile must be enabled automatically after ins
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Get, Replace |
 <!-- Device-{eUICC}-DownloadServers-{ServerName}-AutoEnable-DFProperties-End -->
 
@@ -342,7 +342,7 @@ Indicates whether the discovered profile must be enabled automatically after ins
 <!-- Device-{eUICC}-DownloadServers-{ServerName}-DiscoveryState-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-{eUICC}-DownloadServers-{ServerName}-DiscoveryState-Applicability-End -->
 
 <!-- Device-{eUICC}-DownloadServers-{ServerName}-DiscoveryState-OmaUri-Begin -->
@@ -353,7 +353,7 @@ Indicates whether the discovered profile must be enabled automatically after ins
 
 <!-- Device-{eUICC}-DownloadServers-{ServerName}-DiscoveryState-Description-Begin -->
 <!-- Description-Source-DDF -->
-Current state of the discovery operation for the parent ServerName (Requested = 1, Executing = 2, Completed = 3, Failed = 4). Queried by the CSP and only updated by the LPA.
+Current state of the discovery operation for this server (Requested = 1, Executing = 2, Completed = 3, Failed = 4).
 <!-- Device-{eUICC}-DownloadServers-{ServerName}-DiscoveryState-Description-End -->
 
 <!-- Device-{eUICC}-DownloadServers-{ServerName}-DiscoveryState-Editable-Begin -->
@@ -365,7 +365,7 @@ Current state of the discovery operation for the parent ServerName (Requested = 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 | Default Value  | 1 |
 <!-- Device-{eUICC}-DownloadServers-{ServerName}-DiscoveryState-DFProperties-End -->
@@ -382,7 +382,7 @@ Current state of the discovery operation for the parent ServerName (Requested = 
 <!-- Device-{eUICC}-DownloadServers-{ServerName}-IsDiscoveryServer-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-{eUICC}-DownloadServers-{ServerName}-IsDiscoveryServer-Applicability-End -->
 
 <!-- Device-{eUICC}-DownloadServers-{ServerName}-IsDiscoveryServer-OmaUri-Begin -->
@@ -393,7 +393,7 @@ Current state of the discovery operation for the parent ServerName (Requested = 
 
 <!-- Device-{eUICC}-DownloadServers-{ServerName}-IsDiscoveryServer-Description-Begin -->
 <!-- Description-Source-DDF -->
-Indicates whether the server is a discovery server. Optional, default value is false.
+Indicates whether the server is a discovery server or if it's used for bulk download. A discovery server is used every time a user requests a profile discovery operation. Optional, default value is false.
 <!-- Device-{eUICC}-DownloadServers-{ServerName}-IsDiscoveryServer-Description-End -->
 
 <!-- Device-{eUICC}-DownloadServers-{ServerName}-IsDiscoveryServer-Editable-Begin -->
@@ -405,7 +405,7 @@ Indicates whether the server is a discovery server. Optional, default value is f
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Get, Replace |
 | Default Value  | false |
 <!-- Device-{eUICC}-DownloadServers-{ServerName}-IsDiscoveryServer-DFProperties-End -->
@@ -431,7 +431,7 @@ Indicates whether the server is a discovery server. Optional, default value is f
 <!-- Device-{eUICC}-Identifier-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-{eUICC}-Identifier-Applicability-End -->
 
 <!-- Device-{eUICC}-Identifier-OmaUri-Begin -->
@@ -442,7 +442,7 @@ Indicates whether the server is a discovery server. Optional, default value is f
 
 <!-- Device-{eUICC}-Identifier-Description-Begin -->
 <!-- Description-Source-DDF -->
-The EID.
+The unique eUICC identifier (EID).
 <!-- Device-{eUICC}-Identifier-Description-End -->
 
 <!-- Device-{eUICC}-Identifier-Editable-Begin -->
@@ -455,7 +455,7 @@ Identifies an eUICC in an implementation-specific manner, for example, this iden
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-{eUICC}-Identifier-DFProperties-End -->
 
@@ -471,7 +471,7 @@ Identifies an eUICC in an implementation-specific manner, for example, this iden
 <!-- Device-{eUICC}-IsActive-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-{eUICC}-IsActive-Applicability-End -->
 
 <!-- Device-{eUICC}-IsActive-OmaUri-Begin -->
@@ -494,7 +494,7 @@ Indicates whether this eUICC is physically present and active. Updated only by t
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get |
 <!-- Device-{eUICC}-IsActive-DFProperties-End -->
 
@@ -510,7 +510,7 @@ Indicates whether this eUICC is physically present and active. Updated only by t
 <!-- Device-{eUICC}-Policies-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-{eUICC}-Policies-Applicability-End -->
 
 <!-- Device-{eUICC}-Policies-OmaUri-Begin -->
@@ -533,7 +533,7 @@ Device policies associated with the eUICC as a whole (not per-profile).
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-{eUICC}-Policies-DFProperties-End -->
 
@@ -549,7 +549,7 @@ Device policies associated with the eUICC as a whole (not per-profile).
 <!-- Device-{eUICC}-Policies-LocalUIEnabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-{eUICC}-Policies-LocalUIEnabled-Applicability-End -->
 
 <!-- Device-{eUICC}-Policies-LocalUIEnabled-OmaUri-Begin -->
@@ -560,7 +560,7 @@ Device policies associated with the eUICC as a whole (not per-profile).
 
 <!-- Device-{eUICC}-Policies-LocalUIEnabled-Description-Begin -->
 <!-- Description-Source-DDF -->
-Determines whether the local user interface of the LUI is available (true if available, false otherwise). Initially populated by the LPA when the eUICC tree is created, can be queried and changed by the MDM server.
+Determines whether or not the user can make changes to the eSIM through the user interface.
 <!-- Device-{eUICC}-Policies-LocalUIEnabled-Description-End -->
 
 <!-- Device-{eUICC}-Policies-LocalUIEnabled-Editable-Begin -->
@@ -572,7 +572,7 @@ Determines whether the local user interface of the LUI is available (true if ava
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get, Replace |
 | Default Value  | true |
 <!-- Device-{eUICC}-Policies-LocalUIEnabled-DFProperties-End -->
@@ -598,7 +598,7 @@ Determines whether the local user interface of the LUI is available (true if ava
 <!-- Device-{eUICC}-PPR1Allowed-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-{eUICC}-PPR1Allowed-Applicability-End -->
 
 <!-- Device-{eUICC}-PPR1Allowed-OmaUri-Begin -->
@@ -609,7 +609,7 @@ Determines whether the local user interface of the LUI is available (true if ava
 
 <!-- Device-{eUICC}-PPR1Allowed-Description-Begin -->
 <!-- Description-Source-DDF -->
-Indicates whether the download of a profile with PPR1 is allowed. If the eUICC has already a profile (regardless of its origin and policy rules associated with it), then the download of a profile with PPR1 is not allowed.
+Indicates whether the download of a profile with Profile Policy Rule 1 (PPR1) is allowed. If the eUICC has already a profile (regardless of its origin and policy rules associated with it), then the download of a profile with PPR1 isn't allowed.
 <!-- Device-{eUICC}-PPR1Allowed-Description-End -->
 
 <!-- Device-{eUICC}-PPR1Allowed-Editable-Begin -->
@@ -621,7 +621,7 @@ Indicates whether the download of a profile with PPR1 is allowed. If the eUICC h
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get |
 <!-- Device-{eUICC}-PPR1Allowed-DFProperties-End -->
 
@@ -637,7 +637,7 @@ Indicates whether the download of a profile with PPR1 is allowed. If the eUICC h
 <!-- Device-{eUICC}-PPR1AlreadySet-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-{eUICC}-PPR1AlreadySet-Applicability-End -->
 
 <!-- Device-{eUICC}-PPR1AlreadySet-OmaUri-Begin -->
@@ -648,7 +648,7 @@ Indicates whether the download of a profile with PPR1 is allowed. If the eUICC h
 
 <!-- Device-{eUICC}-PPR1AlreadySet-Description-Begin -->
 <!-- Description-Source-DDF -->
-Indicates whether the eUICC has already a profile with PPR1.
+Indicates whether the eUICC has already a profile with Profile Policy Rule 1 (PPR1).
 <!-- Device-{eUICC}-PPR1AlreadySet-Description-End -->
 
 <!-- Device-{eUICC}-PPR1AlreadySet-Editable-Begin -->
@@ -660,7 +660,7 @@ Indicates whether the eUICC has already a profile with PPR1.
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get |
 <!-- Device-{eUICC}-PPR1AlreadySet-DFProperties-End -->
 
@@ -676,7 +676,7 @@ Indicates whether the eUICC has already a profile with PPR1.
 <!-- Device-{eUICC}-Profiles-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-{eUICC}-Profiles-Applicability-End -->
 
 <!-- Device-{eUICC}-Profiles-OmaUri-Begin -->
@@ -687,7 +687,7 @@ Indicates whether the eUICC has already a profile with PPR1.
 
 <!-- Device-{eUICC}-Profiles-Description-Begin -->
 <!-- Description-Source-DDF -->
-Represents all enterprise-owned profiles.
+Represents all enterprise-owned eSIM profiles.
 <!-- Device-{eUICC}-Profiles-Description-End -->
 
 <!-- Device-{eUICC}-Profiles-Editable-Begin -->
@@ -699,7 +699,7 @@ Represents all enterprise-owned profiles.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-{eUICC}-Profiles-DFProperties-End -->
 
@@ -715,7 +715,7 @@ Represents all enterprise-owned profiles.
 <!-- Device-{eUICC}-Profiles-{ICCID}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-{eUICC}-Profiles-{ICCID}-Applicability-End -->
 
 <!-- Device-{eUICC}-Profiles-{ICCID}-OmaUri-Begin -->
@@ -726,7 +726,7 @@ Represents all enterprise-owned profiles.
 
 <!-- Device-{eUICC}-Profiles-{ICCID}-Description-Begin -->
 <!-- Description-Source-DDF -->
-Node representing an enterprise-owned eUICC profile. The node name is the ICCID of the profile (which is a unique identifier). Creation of this subtree triggers an AddProfile request by the LPA (which installs the profile on the eUICC). Removal of this subtree triggers the LPA to delete the profile (if resident on the eUICC).
+Node representing an enterprise-owned eSIM profile. The node name is the ICCID of the profile (which is a unique identifier). Creation of this subtree triggers an AddProfile request by the LPA (which installs the profile on the eUICC). Removal of this subtree triggers the LPA to delete the profile (if resident on the eUICC).
 <!-- Device-{eUICC}-Profiles-{ICCID}-Description-End -->
 
 <!-- Device-{eUICC}-Profiles-{ICCID}-Editable-Begin -->
@@ -738,7 +738,7 @@ Node representing an enterprise-owned eUICC profile. The node name is the ICCID 
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get, Replace |
 | Dynamic Node Naming | UniqueName: ICCID of the profile. |
 <!-- Device-{eUICC}-Profiles-{ICCID}-DFProperties-End -->
@@ -755,7 +755,7 @@ Node representing an enterprise-owned eUICC profile. The node name is the ICCID 
 <!-- Device-{eUICC}-Profiles-{ICCID}-ErrorDetail-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-{eUICC}-Profiles-{ICCID}-ErrorDetail-Applicability-End -->
 
 <!-- Device-{eUICC}-Profiles-{ICCID}-ErrorDetail-OmaUri-Begin -->
@@ -778,7 +778,7 @@ Detailed error if the profile download and install procedure failed (None = 0, C
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 | Default Value  | 0 |
 <!-- Device-{eUICC}-Profiles-{ICCID}-ErrorDetail-DFProperties-End -->
@@ -795,7 +795,7 @@ Detailed error if the profile download and install procedure failed (None = 0, C
 <!-- Device-{eUICC}-Profiles-{ICCID}-IsEnabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- Device-{eUICC}-Profiles-{ICCID}-IsEnabled-Applicability-End -->
 
 <!-- Device-{eUICC}-Profiles-{ICCID}-IsEnabled-OmaUri-Begin -->
@@ -806,7 +806,7 @@ Detailed error if the profile download and install procedure failed (None = 0, C
 
 <!-- Device-{eUICC}-Profiles-{ICCID}-IsEnabled-Description-Begin -->
 <!-- Description-Source-DDF -->
-Indicates whether this profile is enabled. Can be set by the MDM when the ICCID subtree is created. Can also be queried and updated by the CSP.
+Indicates whether this eSIM profile is enabled. Can be set by both the MDM and the CSP.
 <!-- Device-{eUICC}-Profiles-{ICCID}-IsEnabled-Description-End -->
 
 <!-- Device-{eUICC}-Profiles-{ICCID}-IsEnabled-Editable-Begin -->
@@ -818,7 +818,7 @@ Indicates whether this profile is enabled. Can be set by the MDM when the ICCID 
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Get, Replace |
 <!-- Device-{eUICC}-Profiles-{ICCID}-IsEnabled-DFProperties-End -->
 
@@ -843,7 +843,7 @@ Indicates whether this profile is enabled. Can be set by the MDM when the ICCID 
 <!-- Device-{eUICC}-Profiles-{ICCID}-MatchingID-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-{eUICC}-Profiles-{ICCID}-MatchingID-Applicability-End -->
 
 <!-- Device-{eUICC}-Profiles-{ICCID}-MatchingID-OmaUri-Begin -->
@@ -854,7 +854,7 @@ Indicates whether this profile is enabled. Can be set by the MDM when the ICCID 
 
 <!-- Device-{eUICC}-Profiles-{ICCID}-MatchingID-Description-Begin -->
 <!-- Description-Source-DDF -->
-Matching ID (activation code token) for profile download. Must be set by the MDM when the ICCID subtree is created.
+Matching ID (activation code token) for eSIM profile download. Must be set by the MDM when the ICCID subtree is created.
 <!-- Device-{eUICC}-Profiles-{ICCID}-MatchingID-Description-End -->
 
 <!-- Device-{eUICC}-Profiles-{ICCID}-MatchingID-Editable-Begin -->
@@ -866,7 +866,7 @@ Matching ID (activation code token) for profile download. Must be set by the MDM
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Get, Replace |
 | Allowed Values | Regular Expression: `^([0-9a-fA-F]{5}-){3}[0-9a-fA-F]{5}$` |
 <!-- Device-{eUICC}-Profiles-{ICCID}-MatchingID-DFProperties-End -->
@@ -883,7 +883,7 @@ Matching ID (activation code token) for profile download. Must be set by the MDM
 <!-- Device-{eUICC}-Profiles-{ICCID}-PPR1Set-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-{eUICC}-Profiles-{ICCID}-PPR1Set-Applicability-End -->
 
 <!-- Device-{eUICC}-Profiles-{ICCID}-PPR1Set-OmaUri-Begin -->
@@ -894,7 +894,7 @@ Matching ID (activation code token) for profile download. Must be set by the MDM
 
 <!-- Device-{eUICC}-Profiles-{ICCID}-PPR1Set-Description-Begin -->
 <!-- Description-Source-DDF -->
-This profile policy rule indicates whether disabling of this profile is not allowed (true if not allowed, false otherwise).
+Profile Policy Rule 1 (PPR1) indicates whether disabling of this profile isn't allowed (true if not allowed, false otherwise).
 <!-- Device-{eUICC}-Profiles-{ICCID}-PPR1Set-Description-End -->
 
 <!-- Device-{eUICC}-Profiles-{ICCID}-PPR1Set-Editable-Begin -->
@@ -906,7 +906,7 @@ This profile policy rule indicates whether disabling of this profile is not allo
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get |
 <!-- Device-{eUICC}-Profiles-{ICCID}-PPR1Set-DFProperties-End -->
 
@@ -922,7 +922,7 @@ This profile policy rule indicates whether disabling of this profile is not allo
 <!-- Device-{eUICC}-Profiles-{ICCID}-PPR2Set-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-{eUICC}-Profiles-{ICCID}-PPR2Set-Applicability-End -->
 
 <!-- Device-{eUICC}-Profiles-{ICCID}-PPR2Set-OmaUri-Begin -->
@@ -933,7 +933,7 @@ This profile policy rule indicates whether disabling of this profile is not allo
 
 <!-- Device-{eUICC}-Profiles-{ICCID}-PPR2Set-Description-Begin -->
 <!-- Description-Source-DDF -->
-This profile policy rule indicates whether deletion of this profile is not allowed (true if not allowed, false otherwise).
+Profile Policy Rule 2 (PPR2) indicates whether deletion of this profile isn't allowed (true if not allowed, false otherwise).
 <!-- Device-{eUICC}-Profiles-{ICCID}-PPR2Set-Description-End -->
 
 <!-- Device-{eUICC}-Profiles-{ICCID}-PPR2Set-Editable-Begin -->
@@ -945,7 +945,7 @@ This profile policy rule indicates whether deletion of this profile is not allow
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get |
 <!-- Device-{eUICC}-Profiles-{ICCID}-PPR2Set-DFProperties-End -->
 
@@ -961,7 +961,7 @@ This profile policy rule indicates whether deletion of this profile is not allow
 <!-- Device-{eUICC}-Profiles-{ICCID}-ServerName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-{eUICC}-Profiles-{ICCID}-ServerName-Applicability-End -->
 
 <!-- Device-{eUICC}-Profiles-{ICCID}-ServerName-OmaUri-Begin -->
@@ -972,7 +972,7 @@ This profile policy rule indicates whether deletion of this profile is not allow
 
 <!-- Device-{eUICC}-Profiles-{ICCID}-ServerName-Description-Begin -->
 <!-- Description-Source-DDF -->
-Fully qualified domain name of the SM-DP+ that can download this profile. Must be set by the MDM when the ICCID subtree is created.
+Fully qualified domain name of the server that can download this eSIM profile. Must be set by the MDM when the ICCID subtree is created.
 <!-- Device-{eUICC}-Profiles-{ICCID}-ServerName-Description-End -->
 
 <!-- Device-{eUICC}-Profiles-{ICCID}-ServerName-Editable-Begin -->
@@ -984,7 +984,7 @@ Fully qualified domain name of the SM-DP+ that can download this profile. Must b
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Get, Replace |
 <!-- Device-{eUICC}-Profiles-{ICCID}-ServerName-DFProperties-End -->
 
@@ -1000,7 +1000,7 @@ Fully qualified domain name of the SM-DP+ that can download this profile. Must b
 <!-- Device-{eUICC}-Profiles-{ICCID}-State-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-{eUICC}-Profiles-{ICCID}-State-Applicability-End -->
 
 <!-- Device-{eUICC}-Profiles-{ICCID}-State-OmaUri-Begin -->
@@ -1011,7 +1011,7 @@ Fully qualified domain name of the SM-DP+ that can download this profile. Must b
 
 <!-- Device-{eUICC}-Profiles-{ICCID}-State-Description-Begin -->
 <!-- Description-Source-DDF -->
-Current state of the profile (Installing = 1, Installed = 2, Deleting = 3, Error = 4). Queried by the CSP and only updated by the LPA.
+Current state of the eSIM profile (Installing = 1, Installed = 2, Deleting = 3, Error = 4).
 <!-- Device-{eUICC}-Profiles-{ICCID}-State-Description-End -->
 
 <!-- Device-{eUICC}-Profiles-{ICCID}-State-Editable-Begin -->
@@ -1023,7 +1023,7 @@ Current state of the profile (Installing = 1, Installed = 2, Deleting = 3, Error
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 | Default Value  | 1 |
 <!-- Device-{eUICC}-Profiles-{ICCID}-State-DFProperties-End -->

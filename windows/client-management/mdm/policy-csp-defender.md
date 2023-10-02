@@ -4,7 +4,7 @@ description: Learn more about the Defender Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/08/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -26,7 +26,7 @@ ms.topic: reference
 <!-- AllowArchiveScanning-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowArchiveScanning-Applicability-End -->
 
 <!-- AllowArchiveScanning-OmaUri-Begin -->
@@ -39,13 +39,15 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure scans for malicious software and unwanted software in archive files such as . ZIP or . CAB files.
 
-- If you enable or do not configure this setting, archive files will be scanned.
+- If you enable or don't configure this setting, archive files will be scanned.
 
-- If you disable this setting, archive files will not be scanned. However, archives are always scanned during directed scans.
+- If you disable this setting, archive files won't be scanned. However, archives are always scanned during directed scans.
 <!-- AllowArchiveScanning-Description-End -->
 
 <!-- AllowArchiveScanning-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> Changes to this setting are not applied when [tamper protection][TAMPER-1] is enabled.
 <!-- AllowArchiveScanning-Editable-End -->
 
 <!-- AllowArchiveScanning-DFProperties-Begin -->
@@ -53,7 +55,7 @@ This policy setting allows you to configure scans for malicious software and unw
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowArchiveScanning-DFProperties-End -->
@@ -93,7 +95,7 @@ This policy setting allows you to configure scans for malicious software and unw
 <!-- AllowBehaviorMonitoring-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowBehaviorMonitoring-Applicability-End -->
 
 <!-- AllowBehaviorMonitoring-OmaUri-Begin -->
@@ -106,13 +108,15 @@ This policy setting allows you to configure scans for malicious software and unw
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure behavior monitoring.
 
-- If you enable or do not configure this setting, behavior monitoring will be enabled.
+- If you enable or don't configure this setting, behavior monitoring will be enabled.
 
 - If you disable this setting, behavior monitoring will be disabled.
 <!-- AllowBehaviorMonitoring-Description-End -->
 
 <!-- AllowBehaviorMonitoring-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> Changes to this setting are not applied when [tamper protection][TAMPER-1] is enabled.
 <!-- AllowBehaviorMonitoring-Editable-End -->
 
 <!-- AllowBehaviorMonitoring-DFProperties-Begin -->
@@ -120,7 +124,7 @@ This policy setting allows you to configure behavior monitoring.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowBehaviorMonitoring-DFProperties-End -->
@@ -160,7 +164,7 @@ This policy setting allows you to configure behavior monitoring.
 <!-- AllowCloudProtection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowCloudProtection-Applicability-End -->
 
 <!-- AllowCloudProtection-OmaUri-Begin -->
@@ -173,26 +177,28 @@ This policy setting allows you to configure behavior monitoring.
 <!-- Description-Source-ADMX -->
 This policy setting allows you to join Microsoft MAPS. Microsoft MAPS is the online community that helps you choose how to respond to potential threats. The community also helps stop the spread of new malicious software infections.
 
-You can choose to send basic or additional information about detected software. Additional information helps Microsoft create new security intelligence and help it to protect your computer. This information can include things like location of detected items on your computer if harmful software was removed. The information will be automatically collected and sent. In some instances, personal information might unintentionally be sent to Microsoft. However, Microsoft will not use this information to identify you or contact you.
+You can choose to send basic or additional information about detected software. Additional information helps Microsoft create new security intelligence and help it to protect your computer. This information can include things like location of detected items on your computer if harmful software was removed. The information will be automatically collected and sent. In some instances, personal information might unintentionally be sent to Microsoft. However, Microsoft won't use this information to identify you or contact you.
 
 Possible options are:
+
 (0x0) Disabled (default)
-(0x1) Basic membership
-(0x2) Advanced membership
+(0x1) Basic membership (0x2) Advanced membership.
 
 Basic membership will send basic information to Microsoft about software that has been detected, including where the software came from, the actions that you apply or that are applied automatically, and whether the actions were successful.
 
 Advanced membership, in addition to basic information, will send more information to Microsoft about malicious software, spyware, and potentially unwanted software, including the location of the software, file names, how the software operates, and how it has impacted your computer.
 
-- If you enable this setting, you will join Microsoft MAPS with the membership specified.
+- If you enable this setting, you'll join Microsoft MAPS with the membership specified.
 
-- If you disable or do not configure this setting, you will not join Microsoft MAPS.
+- If you disable or don't configure this setting, you won't join Microsoft MAPS.
 
 In Windows 10, Basic membership is no longer available, so setting the value to 1 or 2 enrolls the device into Advanced membership.
 <!-- AllowCloudProtection-Description-End -->
 
 <!-- AllowCloudProtection-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> Changes to this setting are not applied when [tamper protection][TAMPER-1] is enabled.
 <!-- AllowCloudProtection-Editable-End -->
 
 <!-- AllowCloudProtection-DFProperties-Begin -->
@@ -200,7 +206,7 @@ In Windows 10, Basic membership is no longer available, so setting the value to 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowCloudProtection-DFProperties-End -->
@@ -221,7 +227,7 @@ In Windows 10, Basic membership is no longer available, so setting the value to 
 |:--|:--|
 | Name | SpynetReporting |
 | Friendly Name | Join Microsoft MAPS |
-| Element Name | Join Microsoft MAPS |
+| Element Name | Join Microsoft MAPS. |
 | Location | Computer Configuration |
 | Path | Windows Components > Microsoft Defender Antivirus > MAPS |
 | Registry Key Name | Software\Policies\Microsoft\Windows Defender\Spynet |
@@ -240,7 +246,7 @@ In Windows 10, Basic membership is no longer available, so setting the value to 
 <!-- AllowEmailScanning-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowEmailScanning-Applicability-End -->
 
 <!-- AllowEmailScanning-OmaUri-Begin -->
@@ -251,11 +257,11 @@ In Windows 10, Basic membership is no longer available, so setting the value to 
 
 <!-- AllowEmailScanning-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to configure e-mail scanning. When e-mail scanning is enabled, the engine will parse the mailbox and mail files, according to their specific format, in order to analyze the mail bodies and attachments. Several e-mail formats are currently supported, for example: pst (Outlook), dbx, mbx, mime (Outlook Express), binhex (Mac). Email scanning is not supported on modern email clients.
+This policy setting allows you to configure e-mail scanning. When e-mail scanning is enabled, the engine will parse the mailbox and mail files, according to their specific format, in order to analyze the mail bodies and attachments. Several e-mail formats are currently supported, for example: pst (Outlook), dbx, mbx, mime (Outlook Express), binhex (Mac). Email scanning isn't supported on modern email clients.
 
 - If you enable this setting, e-mail scanning will be enabled.
 
-- If you disable or do not configure this setting, e-mail scanning will be disabled.
+- If you disable or don't configure this setting, e-mail scanning will be disabled.
 <!-- AllowEmailScanning-Description-End -->
 
 <!-- AllowEmailScanning-Editable-Begin -->
@@ -267,7 +273,7 @@ This policy setting allows you to configure e-mail scanning. When e-mail scannin
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- AllowEmailScanning-DFProperties-End -->
@@ -307,7 +313,7 @@ This policy setting allows you to configure e-mail scanning. When e-mail scannin
 <!-- AllowFullScanOnMappedNetworkDrives-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowFullScanOnMappedNetworkDrives-Applicability-End -->
 
 <!-- AllowFullScanOnMappedNetworkDrives-OmaUri-Begin -->
@@ -322,7 +328,7 @@ This policy setting allows you to configure scanning mapped network drives.
 
 - If you enable this setting, mapped network drives will be scanned.
 
-- If you disable or do not configure this setting, mapped network drives will not be scanned.
+- If you disable or don't configure this setting, mapped network drives won't be scanned.
 <!-- AllowFullScanOnMappedNetworkDrives-Description-End -->
 
 <!-- AllowFullScanOnMappedNetworkDrives-Editable-Begin -->
@@ -334,7 +340,7 @@ This policy setting allows you to configure scanning mapped network drives.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- AllowFullScanOnMappedNetworkDrives-DFProperties-End -->
@@ -374,7 +380,7 @@ This policy setting allows you to configure scanning mapped network drives.
 <!-- AllowFullScanRemovableDriveScanning-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowFullScanRemovableDriveScanning-Applicability-End -->
 
 <!-- AllowFullScanRemovableDriveScanning-OmaUri-Begin -->
@@ -389,7 +395,7 @@ This policy setting allows you to manage whether or not to scan for malicious so
 
 - If you enable this setting, removable drives will be scanned during any type of scan.
 
-- If you disable or do not configure this setting, removable drives will not be scanned during a full scan. Removable drives may still be scanned during quick scan and custom scan.
+- If you disable or don't configure this setting, removable drives won't be scanned during a full scan. Removable drives may still be scanned during quick scan and custom scan.
 <!-- AllowFullScanRemovableDriveScanning-Description-End -->
 
 <!-- AllowFullScanRemovableDriveScanning-Editable-Begin -->
@@ -401,7 +407,7 @@ This policy setting allows you to manage whether or not to scan for malicious so
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowFullScanRemovableDriveScanning-DFProperties-End -->
@@ -438,10 +444,13 @@ This policy setting allows you to manage whether or not to scan for malicious so
 <!-- AllowIntrusionPreventionSystem-Begin -->
 ## AllowIntrusionPreventionSystem
 
+> [!NOTE]
+> This policy is deprecated and may be removed in a future release.
+
 <!-- AllowIntrusionPreventionSystem-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowIntrusionPreventionSystem-Applicability-End -->
 
 <!-- AllowIntrusionPreventionSystem-OmaUri-Begin -->
@@ -457,6 +466,8 @@ Allows or disallows Windows Defender Intrusion Prevention functionality.
 
 <!-- AllowIntrusionPreventionSystem-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> Changes to this setting are not applied when [tamper protection][TAMPER-1] is enabled.
 <!-- AllowIntrusionPreventionSystem-Editable-End -->
 
 <!-- AllowIntrusionPreventionSystem-DFProperties-Begin -->
@@ -464,7 +475,7 @@ Allows or disallows Windows Defender Intrusion Prevention functionality.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowIntrusionPreventionSystem-DFProperties-End -->
@@ -490,7 +501,7 @@ Allows or disallows Windows Defender Intrusion Prevention functionality.
 <!-- AllowIOAVProtection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowIOAVProtection-Applicability-End -->
 
 <!-- AllowIOAVProtection-OmaUri-Begin -->
@@ -503,13 +514,15 @@ Allows or disallows Windows Defender Intrusion Prevention functionality.
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure scanning for all downloaded files and attachments.
 
-- If you enable or do not configure this setting, scanning for all downloaded files and attachments will be enabled.
+- If you enable or don't configure this setting, scanning for all downloaded files and attachments will be enabled.
 
 - If you disable this setting, scanning for all downloaded files and attachments will be disabled.
 <!-- AllowIOAVProtection-Description-End -->
 
 <!-- AllowIOAVProtection-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> Changes to this setting are not applied when [tamper protection][TAMPER-1] is enabled.
 <!-- AllowIOAVProtection-Editable-End -->
 
 <!-- AllowIOAVProtection-DFProperties-Begin -->
@@ -517,7 +530,7 @@ This policy setting allows you to configure scanning for all downloaded files an
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowIOAVProtection-DFProperties-End -->
@@ -557,7 +570,7 @@ This policy setting allows you to configure scanning for all downloaded files an
 <!-- AllowOnAccessProtection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowOnAccessProtection-Applicability-End -->
 
 <!-- AllowOnAccessProtection-OmaUri-Begin -->
@@ -570,13 +583,15 @@ This policy setting allows you to configure scanning for all downloaded files an
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure monitoring for file and program activity.
 
-- If you enable or do not configure this setting, monitoring for file and program activity will be enabled.
+- If you enable or don't configure this setting, monitoring for file and program activity will be enabled.
 
 - If you disable this setting, monitoring for file and program activity will be disabled.
 <!-- AllowOnAccessProtection-Description-End -->
 
 <!-- AllowOnAccessProtection-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> Changes to this setting are not applied when [tamper protection][TAMPER-1] is enabled.
 <!-- AllowOnAccessProtection-Editable-End -->
 
 <!-- AllowOnAccessProtection-DFProperties-Begin -->
@@ -584,7 +599,7 @@ This policy setting allows you to configure monitoring for file and program acti
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowOnAccessProtection-DFProperties-End -->
@@ -624,7 +639,7 @@ This policy setting allows you to configure monitoring for file and program acti
 <!-- AllowRealtimeMonitoring-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowRealtimeMonitoring-Applicability-End -->
 
 <!-- AllowRealtimeMonitoring-OmaUri-Begin -->
@@ -640,6 +655,8 @@ Allows or disallows Windows Defender Realtime Monitoring functionality.
 
 <!-- AllowRealtimeMonitoring-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> Changes to this setting are not applied when [tamper protection][TAMPER-1] is enabled.
 <!-- AllowRealtimeMonitoring-Editable-End -->
 
 <!-- AllowRealtimeMonitoring-DFProperties-Begin -->
@@ -647,7 +664,7 @@ Allows or disallows Windows Defender Realtime Monitoring functionality.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowRealtimeMonitoring-DFProperties-End -->
@@ -687,7 +704,7 @@ Allows or disallows Windows Defender Realtime Monitoring functionality.
 <!-- AllowScanningNetworkFiles-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowScanningNetworkFiles-Applicability-End -->
 
 <!-- AllowScanningNetworkFiles-OmaUri-Begin -->
@@ -697,16 +714,15 @@ Allows or disallows Windows Defender Realtime Monitoring functionality.
 <!-- AllowScanningNetworkFiles-OmaUri-End -->
 
 <!-- AllowScanningNetworkFiles-Description-Begin -->
-<!-- Description-Source-ADMX -->
-This policy setting allows you to configure scanning for network files. It is recommended that you do not enable this setting.
-
-- If you enable this setting or do not configure this setting, network files will be scanned.
-
-- If you disable this setting, network files will not be scanned.
+<!-- Description-Source-Manual-Forced -->
 <!-- AllowScanningNetworkFiles-Description-End -->
 
 <!-- AllowScanningNetworkFiles-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+This policy setting allows you to configure real-time scanning for files that are accessed over the network. It is recommended to enable this setting.
+
+- If you enable this setting or do not configure this setting, network files will be scanned.
+- If you disable this setting, network files will not be scanned.
 <!-- AllowScanningNetworkFiles-Editable-End -->
 
 <!-- AllowScanningNetworkFiles-DFProperties-Begin -->
@@ -714,7 +730,7 @@ This policy setting allows you to configure scanning for network files. It is re
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- AllowScanningNetworkFiles-DFProperties-End -->
@@ -754,7 +770,7 @@ This policy setting allows you to configure scanning for network files. It is re
 <!-- AllowScriptScanning-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowScriptScanning-Applicability-End -->
 
 <!-- AllowScriptScanning-OmaUri-Begin -->
@@ -770,6 +786,8 @@ Allows or disallows Windows Defender Script Scanning functionality.
 
 <!-- AllowScriptScanning-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> Changes to this setting are not applied when [tamper protection][TAMPER-1] is enabled.
 <!-- AllowScriptScanning-Editable-End -->
 
 <!-- AllowScriptScanning-DFProperties-Begin -->
@@ -777,7 +795,7 @@ Allows or disallows Windows Defender Script Scanning functionality.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowScriptScanning-DFProperties-End -->
@@ -803,7 +821,7 @@ Allows or disallows Windows Defender Script Scanning functionality.
 <!-- AllowUserUIAccess-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowUserUIAccess-Applicability-End -->
 
 <!-- AllowUserUIAccess-OmaUri-Begin -->
@@ -815,7 +833,8 @@ Allows or disallows Windows Defender Script Scanning functionality.
 <!-- AllowUserUIAccess-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure whether or not to display AM UI to the users.
-- If you enable this setting AM UI won't be available to users.
+
+If you enable this setting AM UI won't be available to users.
 <!-- AllowUserUIAccess-Description-End -->
 
 <!-- AllowUserUIAccess-Editable-Begin -->
@@ -827,7 +846,7 @@ This policy setting allows you to configure whether or not to display AM UI to t
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowUserUIAccess-DFProperties-End -->
@@ -867,7 +886,7 @@ This policy setting allows you to configure whether or not to display AM UI to t
 <!-- AttackSurfaceReductionOnlyExclusions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- AttackSurfaceReductionOnlyExclusions-Applicability-End -->
 
 <!-- AttackSurfaceReductionOnlyExclusions-OmaUri-Begin -->
@@ -881,15 +900,20 @@ This policy setting allows you to configure whether or not to display AM UI to t
 Exclude files and paths from Attack Surface Reduction (ASR) rules.
 
 Enabled:
+
 Specify the folders or files and resources that should be excluded from ASR rules in the Options section.
+
 Enter each rule on a new line as a name-value pair:
+
 - Name column: Enter a folder path or a fully qualified resource name. For example, "C:\Windows" will exclude all files in that directory. "C:\Windows\App.exe" will exclude only that specific file in that specific folder
-- Value column: Enter "0" for each item
+- Value column: Enter "0" for each item.
 
 Disabled:
+
 No exclusions will be applied to the ASR rules.
 
 Not configured:
+
 Same as Disabled.
 
 You can configure ASR rules in the Configure Attack Surface Reduction rules GP setting.
@@ -904,7 +928,7 @@ You can configure ASR rules in the Configure Attack Surface Reduction rules GP s
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `|`) |
 <!-- AttackSurfaceReductionOnlyExclusions-DFProperties-End -->
@@ -916,7 +940,7 @@ You can configure ASR rules in the Configure Attack Surface Reduction rules GP s
 |:--|:--|
 | Name | ExploitGuard_ASR_ASROnlyExclusions |
 | Friendly Name | Exclude files and paths from Attack Surface Reduction Rules |
-| Element Name | Exclusions from ASR rules |
+| Element Name | Exclusions from ASR rules. |
 | Location | Computer Configuration |
 | Path | Windows Components > Microsoft Defender Antivirus > Microsoft Defender Exploit Guard > Attack Surface Reduction |
 | Registry Key Name | Software\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\ASR |
@@ -935,7 +959,7 @@ You can configure ASR rules in the Configure Attack Surface Reduction rules GP s
 <!-- AttackSurfaceReductionRules-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- AttackSurfaceReductionRules-Applicability-End -->
 
 <!-- AttackSurfaceReductionRules-OmaUri-Begin -->
@@ -949,21 +973,26 @@ You can configure ASR rules in the Configure Attack Surface Reduction rules GP s
 Set the state for each Attack Surface Reduction (ASR) rule.
 
 After enabling this setting, you can set each rule to the following in the Options section:
+
 - Block: the rule will be applied
-- Audit Mode: if the rule would normally cause an event, then it will be recorded (although the rule will not actually be applied)
-- Off: the rule will not be applied
+- Audit Mode: if the rule would normally cause an event, then it will be recorded (although the rule won't actually be applied)
+- Off: the rule won't be applied
 - Not Configured: the rule is enabled with default values
-- Warn: the rule will be applied and the end-user will have the option to bypass the block
+- Warn: the rule will be applied and the end-user will have the option to bypass the block.
 
 Unless the ASR rule is disabled, a subsample of audit events are collected for ASR rules with the value of not configured.
 
 Enabled:
+
 Specify the state for each ASR rule under the Options section for this setting.
+
 Enter each rule on a new line as a name-value pair:
+
 - Name column: Enter a valid ASR rule ID
-- Value column: Enter the status ID that relates to state you want to specify for the associated rule
+- Value column: Enter the status ID that relates to state you want to specify for the associated rule.
 
 The following status IDs are permitted under the value column:
+
 - 1 (Block)
 - 0 (Off)
 - 2 (Audit)
@@ -971,6 +1000,7 @@ The following status IDs are permitted under the value column:
 - 6 (Warn)
 
 Example:
+
 xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 0
 xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
@@ -979,9 +1009,11 @@ xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 2
 
 Disabled:
+
 No ASR rules will be configured.
 
 Not configured:
+
 Same as Disabled.
 
 You can exclude folders or files in the "Exclude files and paths from Attack Surface Reduction Rules" GP setting.
@@ -996,7 +1028,7 @@ You can exclude folders or files in the "Exclude files and paths from Attack Sur
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AttackSurfaceReductionRules-DFProperties-End -->
 
@@ -1007,7 +1039,7 @@ You can exclude folders or files in the "Exclude files and paths from Attack Sur
 |:--|:--|
 | Name | ExploitGuard_ASR_Rules |
 | Friendly Name | Configure Attack Surface Reduction rules |
-| Element Name | Set the state for each ASR rule |
+| Element Name | Set the state for each ASR rule. |
 | Location | Computer Configuration |
 | Path | Windows Components > Microsoft Defender Antivirus > Microsoft Defender Exploit Guard > Attack Surface Reduction |
 | Registry Key Name | Software\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\ASR |
@@ -1026,7 +1058,7 @@ You can exclude folders or files in the "Exclude files and paths from Attack Sur
 <!-- AvgCPULoadFactor-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AvgCPULoadFactor-Applicability-End -->
 
 <!-- AvgCPULoadFactor-OmaUri-Begin -->
@@ -1039,9 +1071,9 @@ You can exclude folders or files in the "Exclude files and paths from Attack Sur
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure the maximum percentage CPU utilization permitted during a scan. Valid values for this setting are a percentage represented by the integers 5 to 100. A value of 0 indicates that there should be no throttling of CPU utilization. The default value is 50.
 
-- If you enable this setting, CPU utilization will not exceed the percentage specified.
+- If you enable this setting, CPU utilization won't exceed the percentage specified.
 
-- If you disable or do not configure this setting, CPU utilization will not exceed the default value.
+- If you disable or don't configure this setting, CPU utilization won't exceed the default value.
 <!-- AvgCPULoadFactor-Description-End -->
 
 <!-- AvgCPULoadFactor-Editable-Begin -->
@@ -1053,7 +1085,7 @@ This policy setting allows you to configure the maximum percentage CPU utilizati
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-100]` |
 | Default Value  | 50 |
@@ -1066,7 +1098,7 @@ This policy setting allows you to configure the maximum percentage CPU utilizati
 |:--|:--|
 | Name | Scan_AvgCPULoadFactor |
 | Friendly Name | Specify the maximum percentage of CPU utilization during a scan |
-| Element Name | Specify the maximum percentage of CPU utilization during a scan |
+| Element Name | Specify the maximum percentage of CPU utilization during a scan. |
 | Location | Computer Configuration |
 | Path | Windows Components > Microsoft Defender Antivirus > Scan |
 | Registry Key Name | Software\Policies\Microsoft\Windows Defender\Scan |
@@ -1085,7 +1117,7 @@ This policy setting allows you to configure the maximum percentage CPU utilizati
 <!-- CheckForSignaturesBeforeRunningScan-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- CheckForSignaturesBeforeRunningScan-Applicability-End -->
 
 <!-- CheckForSignaturesBeforeRunningScan-OmaUri-Begin -->
@@ -1102,7 +1134,7 @@ This setting applies to scheduled scans, but it has no effect on scans initiated
 
 - If you enable this setting, a check for new security intelligence will occur before running a scan.
 
-- If you disable this setting or do not configure this setting, the scan will start using the existing security intelligence.
+- If you disable this setting or don't configure this setting, the scan will start using the existing security intelligence.
 <!-- CheckForSignaturesBeforeRunningScan-Description-End -->
 
 <!-- CheckForSignaturesBeforeRunningScan-Editable-Begin -->
@@ -1114,7 +1146,7 @@ This setting applies to scheduled scans, but it has no effect on scans initiated
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- CheckForSignaturesBeforeRunningScan-DFProperties-End -->
@@ -1153,7 +1185,7 @@ This setting applies to scheduled scans, but it has no effect on scans initiated
 <!-- CloudBlockLevel-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- CloudBlockLevel-Applicability-End -->
 
 <!-- CloudBlockLevel-OmaUri-Begin -->
@@ -1163,11 +1195,21 @@ This setting applies to scheduled scans, but it has no effect on scans initiated
 <!-- CloudBlockLevel-OmaUri-End -->
 
 <!-- CloudBlockLevel-Description-Begin -->
-<!-- Description-Source-DDF -->
-This policy setting determines how aggressive Windows Defender Antivirus will be in blocking and scanning suspicious files. Value type is integer. If this setting is on, Windows Defender Antivirus will be more aggressive when identifying suspicious files to block and scan; otherwise, it will be less aggressive and therefore block and scan with less frequency. For more information about specific values that are supported, see [Specify the cloud protection level](/microsoft-365/security/defender-endpoint/specify-cloud-protection-level-microsoft-defender-antivirus).
+<!-- Description-Source-ADMX -->
+This policy setting determines how aggressive Microsoft Defender Antivirus will be in blocking and scanning suspicious files.
+
+If this setting is on, Microsoft Defender Antivirus will be more aggressive when identifying suspicious files to block and scan; otherwise, it will be less aggressive and therefore block and scan with less frequency.
+
+For more information about specific values that are supported, see the Microsoft Defender Antivirus documentation site.
 
 > [!NOTE]
-> This feature requires the Join Microsoft MAPS setting enabled in order to function.
+> This feature requires the "Join Microsoft MAPS" setting enabled in order to function.
+
+Possible options are:
+
+(0x0) Default Microsoft Defender Antivirus blocking level (0x1) Moderate Microsoft Defender Antivirus blocking level, delivers verdict only for high confidence detections (0x2) High blocking level - aggressively block unknowns while optimizing client performance (greater chance of false positives)
+(0x4) High+ blocking level - aggressively block unknowns and apply additional protection measures (may impact client performance)
+(0x6) Zero tolerance blocking level - block all unknown executables.
 <!-- CloudBlockLevel-Description-End -->
 
 <!-- CloudBlockLevel-Editable-Begin -->
@@ -1179,7 +1221,7 @@ This policy setting determines how aggressive Windows Defender Antivirus will be
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- CloudBlockLevel-DFProperties-End -->
@@ -1202,7 +1244,7 @@ This policy setting determines how aggressive Windows Defender Antivirus will be
 |:--|:--|
 | Name | MpEngine_MpCloudBlockLevel |
 | Friendly Name | Select cloud protection level |
-| Element Name | Select cloud blocking level |
+| Element Name | Select cloud blocking level. |
 | Location | Computer Configuration |
 | Path | Windows Components > Microsoft Defender Antivirus > MpEngine |
 | Registry Key Name | Software\Policies\Microsoft\Windows Defender\MpEngine |
@@ -1221,7 +1263,7 @@ This policy setting determines how aggressive Windows Defender Antivirus will be
 <!-- CloudExtendedTimeout-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- CloudExtendedTimeout-Applicability-End -->
 
 <!-- CloudExtendedTimeout-OmaUri-Begin -->
@@ -1231,11 +1273,15 @@ This policy setting determines how aggressive Windows Defender Antivirus will be
 <!-- CloudExtendedTimeout-OmaUri-End -->
 
 <!-- CloudExtendedTimeout-Description-Begin -->
-<!-- Description-Source-DDF -->
-This feature allows Windows Defender Antivirus to block a suspicious file for up to 60 seconds, and scan it in the cloud to make sure it's safe. Value type is integer, range is 0 - 50. The typical cloud check timeout is 10 seconds. To enable the extended cloud check feature, specify the extended time in seconds, up to an additional 50 seconds. For example, if the desired timeout is 60 seconds, specify 50 seconds in this setting, which will enable the extended cloud check feature, and will raise the total time to 60 seconds.
+<!-- Description-Source-ADMX -->
+This feature allows Microsoft Defender Antivirus to block a suspicious file for up to 60 seconds, and scan it in the cloud to make sure it's safe.
+
+The typical cloud check timeout is 10 seconds. To enable the extended cloud check feature, specify the extended time in seconds, up to an additional 50 seconds.
+
+For example, if the desired timeout is 60 seconds, specify 50 seconds in this setting, which will enable the extended cloud check feature, and will raise the total time to 60 seconds.
 
 > [!NOTE]
-> This feature depends on three other MAPS settings the must all be enabled- Configure the 'Block at First Sight' feature; Join Microsoft MAPS; Send file samples when further analysis is required.
+> This feature depends on three other MAPS settings - "Configure the 'Block at First Sight' feature; "Join Microsoft MAPS"; "Send file samples when further analysis is required" all need to be enabled.
 <!-- CloudExtendedTimeout-Description-End -->
 
 <!-- CloudExtendedTimeout-Editable-Begin -->
@@ -1247,7 +1293,7 @@ This feature allows Windows Defender Antivirus to block a suspicious file for up
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-50]` |
 | Default Value  | 0 |
@@ -1260,7 +1306,7 @@ This feature allows Windows Defender Antivirus to block a suspicious file for up
 |:--|:--|
 | Name | MpEngine_MpBafsExtendedTimeout |
 | Friendly Name | Configure extended cloud check |
-| Element Name | Specify the extended cloud check time in seconds |
+| Element Name | Specify the extended cloud check time in seconds. |
 | Location | Computer Configuration |
 | Path | Windows Components > Microsoft Defender Antivirus > MpEngine |
 | Registry Key Name | Software\Policies\Microsoft\Windows Defender\MpEngine |
@@ -1279,7 +1325,7 @@ This feature allows Windows Defender Antivirus to block a suspicious file for up
 <!-- ControlledFolderAccessAllowedApplications-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- ControlledFolderAccessAllowedApplications-Applicability-End -->
 
 <!-- ControlledFolderAccessAllowedApplications-OmaUri-Begin -->
@@ -1297,12 +1343,15 @@ These applications are allowed to modify or delete files in controlled folder ac
 Microsoft Defender Antivirus automatically determines which applications should be trusted. You can configure this setting to add additional applications.
 
 Enabled:
+
 Specify additional allowed applications in the Options section..
 
 Disabled:
+
 No additional applications will be added to the trusted list.
 
 Not configured:
+
 Same as Disabled.
 
 You can enable controlled folder access in the Configure controlled folder access GP setting.
@@ -1319,7 +1368,7 @@ Default system folders are automatically guarded, but you can add folders in the
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `|`) |
 <!-- ControlledFolderAccessAllowedApplications-DFProperties-End -->
@@ -1331,7 +1380,7 @@ Default system folders are automatically guarded, but you can add folders in the
 |:--|:--|
 | Name | ExploitGuard_ControlledFolderAccess_AllowedApplications |
 | Friendly Name | Configure allowed applications |
-| Element Name | Enter the applications that should be trusted |
+| Element Name | Enter the applications that should be trusted. |
 | Location | Computer Configuration |
 | Path | Windows Components > Microsoft Defender Antivirus > Microsoft Defender Exploit Guard > Controlled Folder Access |
 | Registry Key Name | Software\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\Controlled Folder Access |
@@ -1350,7 +1399,7 @@ Default system folders are automatically guarded, but you can add folders in the
 <!-- ControlledFolderAccessProtectedFolders-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- ControlledFolderAccessProtectedFolders-Applicability-End -->
 
 <!-- ControlledFolderAccessProtectedFolders-OmaUri-Begin -->
@@ -1363,18 +1412,22 @@ Default system folders are automatically guarded, but you can add folders in the
 <!-- Description-Source-ADMX -->
 Specify additional folders that should be guarded by the Controlled folder access feature.
 
-Files in these folders cannot be modified or deleted by untrusted applications.
+Files in these folders can't be modified or deleted by untrusted applications.
 
 Default system folders are automatically protected. You can configure this setting to add additional folders.
+
 The list of default system folders that are protected is shown in Windows Security.
 
 Enabled:
+
 Specify additional folders that should be protected in the Options section.
 
 Disabled:
+
 No additional folders will be protected.
 
 Not configured:
+
 Same as Disabled.
 
 You can enable controlled folder access in the Configure controlled folder access GP setting.
@@ -1391,7 +1444,7 @@ Microsoft Defender Antivirus automatically determines which applications can be 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `|`) |
 <!-- ControlledFolderAccessProtectedFolders-DFProperties-End -->
@@ -1403,7 +1456,7 @@ Microsoft Defender Antivirus automatically determines which applications can be 
 |:--|:--|
 | Name | ExploitGuard_ControlledFolderAccess_ProtectedFolders |
 | Friendly Name | Configure protected folders |
-| Element Name | Enter the folders that should be guarded |
+| Element Name | Enter the folders that should be guarded. |
 | Location | Computer Configuration |
 | Path | Windows Components > Microsoft Defender Antivirus > Microsoft Defender Exploit Guard > Controlled Folder Access |
 | Registry Key Name | Software\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\Controlled Folder Access |
@@ -1422,7 +1475,7 @@ Microsoft Defender Antivirus automatically determines which applications can be 
 <!-- DaysToRetainCleanedMalware-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- DaysToRetainCleanedMalware-Applicability-End -->
 
 <!-- DaysToRetainCleanedMalware-OmaUri-Begin -->
@@ -1437,7 +1490,7 @@ This policy setting defines the number of days items should be kept in the Quara
 
 - If you enable this setting, items will be removed from the Quarantine folder after the number of days specified.
 
-- If you disable or do not configure this setting, items will be kept in the quarantine folder indefinitely and will not be automatically removed.
+- If you disable or don't configure this setting, items will be kept in the quarantine folder indefinitely and won't be automatically removed.
 <!-- DaysToRetainCleanedMalware-Description-End -->
 
 <!-- DaysToRetainCleanedMalware-Editable-Begin -->
@@ -1449,7 +1502,7 @@ This policy setting defines the number of days items should be kept in the Quara
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-90]` |
 | Default Value  | 0 |
@@ -1462,7 +1515,7 @@ This policy setting defines the number of days items should be kept in the Quara
 |:--|:--|
 | Name | Quarantine_PurgeItemsAfterDelay |
 | Friendly Name | Configure removal of items from Quarantine folder |
-| Element Name | Configure removal of items from Quarantine folder |
+| Element Name | Configure removal of items from Quarantine folder. |
 | Location | Computer Configuration |
 | Path | Windows Components > Microsoft Defender Antivirus > Quarantine |
 | Registry Key Name | Software\Policies\Microsoft\Windows Defender\Quarantine |
@@ -1481,7 +1534,7 @@ This policy setting defines the number of days items should be kept in the Quara
 <!-- DisableCatchupFullScan-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- DisableCatchupFullScan-Applicability-End -->
 
 <!-- DisableCatchupFullScan-OmaUri-Begin -->
@@ -1492,11 +1545,11 @@ This policy setting defines the number of days items should be kept in the Quara
 
 <!-- DisableCatchupFullScan-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to configure catch-up scans for scheduled full scans. A catch-up scan is a scan that is initiated because a regularly scheduled scan was missed. Usually these scheduled scans are missed because the computer was turned off at the scheduled time.
+This policy setting allows you to configure catch-up scans for scheduled full scans. A catch-up scan is a scan that's initiated because a regularly scheduled scan was missed. Usually these scheduled scans are missed because the computer was turned off at the scheduled time.
 
 - If you enable this setting, catch-up scans for scheduled full scans will be turned on. If a computer is offline for two consecutive scheduled scans, a catch-up scan is started the next time someone logs on to the computer. If there is no scheduled scan configured, there will be no catch-up scan run.
 
-- If you disable or do not configure this setting, catch-up scans for scheduled full scans will be turned off.
+- If you disable or don't configure this setting, catch-up scans for scheduled full scans will be turned off.
 <!-- DisableCatchupFullScan-Description-End -->
 
 <!-- DisableCatchupFullScan-Editable-Begin -->
@@ -1508,7 +1561,7 @@ This policy setting allows you to configure catch-up scans for scheduled full sc
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- DisableCatchupFullScan-DFProperties-End -->
@@ -1547,7 +1600,7 @@ This policy setting allows you to configure catch-up scans for scheduled full sc
 <!-- DisableCatchupQuickScan-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- DisableCatchupQuickScan-Applicability-End -->
 
 <!-- DisableCatchupQuickScan-OmaUri-Begin -->
@@ -1558,11 +1611,11 @@ This policy setting allows you to configure catch-up scans for scheduled full sc
 
 <!-- DisableCatchupQuickScan-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to configure catch-up scans for scheduled quick scans. A catch-up scan is a scan that is initiated because a regularly scheduled scan was missed. Usually these scheduled scans are missed because the computer was turned off at the scheduled time.
+This policy setting allows you to configure catch-up scans for scheduled quick scans. A catch-up scan is a scan that's initiated because a regularly scheduled scan was missed. Usually these scheduled scans are missed because the computer was turned off at the scheduled time.
 
 - If you enable this setting, catch-up scans for scheduled quick scans will be turned on. If a computer is offline for two consecutive scheduled scans, a catch-up scan is started the next time someone logs on to the computer. If there is no scheduled scan configured, there will be no catch-up scan run.
 
-- If you disable or do not configure this setting, catch-up scans for scheduled quick scans will be turned off.
+- If you disable or don't configure this setting, catch-up scans for scheduled quick scans will be turned off.
 <!-- DisableCatchupQuickScan-Description-End -->
 
 <!-- DisableCatchupQuickScan-Editable-Begin -->
@@ -1574,7 +1627,7 @@ This policy setting allows you to configure catch-up scans for scheduled quick s
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- DisableCatchupQuickScan-DFProperties-End -->
@@ -1613,7 +1666,7 @@ This policy setting allows you to configure catch-up scans for scheduled quick s
 <!-- EnableControlledFolderAccess-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- EnableControlledFolderAccess-Applicability-End -->
 
 <!-- EnableControlledFolderAccess-OmaUri-Begin -->
@@ -1625,49 +1678,70 @@ This policy setting allows you to configure catch-up scans for scheduled quick s
 <!-- EnableControlledFolderAccess-Description-Begin -->
 <!-- Description-Source-ADMX -->
 Enable or disable controlled folder access for untrusted applications. You can choose to block, audit, or allow attempts by untrusted apps to:
+
 - Modify or delete files in protected folders, such as the Documents folder
-- Write to disk sectors
+- Write to disk sectors.
 
 You can also choose to only block or audit writes to disk sectors while still allowing the modification or deletion of files in protected folders.
 
 Microsoft Defender Antivirus automatically determines which applications can be trusted. You can add additional trusted applications in the Configure allowed applications GP setting.
+
 Default system folders are automatically protected, but you can add folders in the Configure protected folders GP setting.
 
 Block:
+
 The following will be blocked:
+
 - Attempts by untrusted apps to modify or delete files in protected folders
-- Attempts by untrusted apps to write to disk sectors
+- Attempts by untrusted apps to write to disk sectors.
+
 The Windows event log will record these blocks under Applications and Services Logs > Microsoft > Windows > Windows Defender > Operational > ID 1123.
 
 Disabled:
-The following will not be blocked and will be allowed to run:
+
+The following won't be blocked and will be allowed to run:
+
 - Attempts by untrusted apps to modify or delete files in protected folders
-- Attempts by untrusted apps to write to disk sectors
-These attempts will not be recorded in the Windows event log.
+- Attempts by untrusted apps to write to disk sectors.
+
+These attempts won't be recorded in the Windows event log.
 
 Audit Mode:
-The following will not be blocked and will be allowed to run:
+
+The following won't be blocked and will be allowed to run:
+
 - Attempts by untrusted apps to modify or delete files in protected folders
-- Attempts by untrusted apps to write to disk sectors
+- Attempts by untrusted apps to write to disk sectors.
+
 The Windows event log will record these attempts under Applications and Services Logs > Microsoft > Windows > Windows Defender > Operational > ID 1124.
 
 Block disk modification only:
+
 The following will be blocked:
-- Attempts by untrusted apps to write to disk sectors
+
+- Attempts by untrusted apps to write to disk sectors.
+
 The Windows event log will record these attempts under Applications and Services Logs > Microsoft > Windows > Windows Defender > Operational > ID 1123.
 
-The following will not be blocked and will be allowed to run:
-- Attempts by untrusted apps to modify or delete files in protected folders
-These attempts will not be recorded in the Windows event log.
+The following won't be blocked and will be allowed to run:
+
+- Attempts by untrusted apps to modify or delete files in protected folders.
+
+These attempts won't be recorded in the Windows event log.
 
 Audit disk modification only:
-The following will not be blocked and will be allowed to run:
+
+The following won't be blocked and will be allowed to run:
+
 - Attempts by untrusted apps to write to disk sectors
-- Attempts by untrusted apps to modify or delete files in protected folders
+- Attempts by untrusted apps to modify or delete files in protected folders.
+
 Only attempts to write to protected disk sectors will be recorded in the Windows event log (under Applications and Services Logs > Microsoft > Windows > Windows Defender > Operational > ID 1124).
-Attempts to modify or delete files in protected folders will not be recorded.
+
+Attempts to modify or delete files in protected folders won't be recorded.
 
 Not configured:
+
 Same as Disabled.
 <!-- EnableControlledFolderAccess-Description-End -->
 
@@ -1680,7 +1754,7 @@ Same as Disabled.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- EnableControlledFolderAccess-DFProperties-End -->
@@ -1693,6 +1767,8 @@ Same as Disabled.
 | 0 (Default) | Disabled. |
 | 1 | Enabled. |
 | 2 | Audit Mode. |
+| 3 | Block disk modification only. |
+| 4 | Audit disk modification only. |
 <!-- EnableControlledFolderAccess-AllowedValues-End -->
 
 <!-- EnableControlledFolderAccess-GpMapping-Begin -->
@@ -1702,7 +1778,7 @@ Same as Disabled.
 |:--|:--|
 | Name | ExploitGuard_ControlledFolderAccess_EnableControlledFolderAccess |
 | Friendly Name | Configure Controlled folder access |
-| Element Name | Configure the guard my folders feature |
+| Element Name | Configure the guard my folders feature. |
 | Location | Computer Configuration |
 | Path | Windows Components > Microsoft Defender Antivirus > Microsoft Defender Exploit Guard > Controlled Folder Access |
 | Registry Key Name | Software\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\Controlled Folder Access |
@@ -1721,7 +1797,7 @@ Same as Disabled.
 <!-- EnableLowCPUPriority-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- EnableLowCPUPriority-Applicability-End -->
 
 <!-- EnableLowCPUPriority-OmaUri-Begin -->
@@ -1736,7 +1812,7 @@ This policy setting allows you to enable or disable low CPU priority for schedul
 
 - If you enable this setting, low CPU priority will be used during scheduled scans.
 
-- If you disable or do not configure this setting, not changes will be made to CPU priority for scheduled scans.
+- If you disable or don't configure this setting, not changes will be made to CPU priority for scheduled scans.
 <!-- EnableLowCPUPriority-Description-End -->
 
 <!-- EnableLowCPUPriority-Editable-Begin -->
@@ -1748,7 +1824,7 @@ This policy setting allows you to enable or disable low CPU priority for schedul
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- EnableLowCPUPriority-DFProperties-End -->
@@ -1787,7 +1863,7 @@ This policy setting allows you to enable or disable low CPU priority for schedul
 <!-- EnableNetworkProtection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- EnableNetworkProtection-Applicability-End -->
 
 <!-- EnableNetworkProtection-OmaUri-Begin -->
@@ -1801,14 +1877,18 @@ This policy setting allows you to enable or disable low CPU priority for schedul
 Enable or disable Microsoft Defender Exploit Guard network protection to prevent employees from using any application to access dangerous domains that may host phishing scams, exploit-hosting sites, and other malicious content on the Internet.
 
 Enabled:
+
 Specify the mode in the Options section:
--Block: Users and applications will not be able to access dangerous domains
--Audit Mode: Users and applications can connect to dangerous domains, however if this feature would have blocked access if it were set to Block, then a record of the event will be in the event logs.
+
+-Block: Users and applications won't be able to access dangerous domains
+-Audit Mode: Users and applications can connect to dangerous domains, however if this feature would've blocked access if it were set to Block, then a record of the event will be in the event logs.
 
 Disabled:
-Users and applications will not be blocked from connecting to dangerous domains.
+
+Users and applications won't be blocked from connecting to dangerous domains.
 
 Not configured:
+
 Same as Disabled.
 <!-- EnableNetworkProtection-Description-End -->
 
@@ -1821,7 +1901,7 @@ Same as Disabled.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- EnableNetworkProtection-DFProperties-End -->
@@ -1861,7 +1941,7 @@ Same as Disabled.
 <!-- ExcludedExtensions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- ExcludedExtensions-Applicability-End -->
 
 <!-- ExcludedExtensions-OmaUri-Begin -->
@@ -1871,12 +1951,14 @@ Same as Disabled.
 <!-- ExcludedExtensions-OmaUri-End -->
 
 <!-- ExcludedExtensions-Description-Begin -->
-<!-- Description-Source-DDF -->
+<!-- Description-Source-DDF-Forced -->
 Allows an administrator to specify a list of file type extensions to ignore during a scan. Each file type in the list must be separated by a |. For example, lib|obj.
 <!-- ExcludedExtensions-Description-End -->
 
 <!-- ExcludedExtensions-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> To prevent unauthorized changes to exclusions, apply tamper protection. Tamper protection for exclusions only works when [certain conditions][TAMPER-2] are met.
 <!-- ExcludedExtensions-Editable-End -->
 
 <!-- ExcludedExtensions-DFProperties-Begin -->
@@ -1884,7 +1966,7 @@ Allows an administrator to specify a list of file type extensions to ignore duri
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `|`) |
 <!-- ExcludedExtensions-DFProperties-End -->
@@ -1896,7 +1978,7 @@ Allows an administrator to specify a list of file type extensions to ignore duri
 |:--|:--|
 | Name | Exclusions_Extensions |
 | Friendly Name | Extension Exclusions |
-| Element Name | Extension Exclusions |
+| Element Name | Extension Exclusions. |
 | Location | Computer Configuration |
 | Path | Windows Components > Microsoft Defender Antivirus > Exclusions |
 | Registry Key Name | Software\Policies\Microsoft\Windows Defender\Exclusions |
@@ -1915,7 +1997,7 @@ Allows an administrator to specify a list of file type extensions to ignore duri
 <!-- ExcludedPaths-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- ExcludedPaths-Applicability-End -->
 
 <!-- ExcludedPaths-OmaUri-Begin -->
@@ -1925,12 +2007,14 @@ Allows an administrator to specify a list of file type extensions to ignore duri
 <!-- ExcludedPaths-OmaUri-End -->
 
 <!-- ExcludedPaths-Description-Begin -->
-<!-- Description-Source-DDF -->
+<!-- Description-Source-DDF-Forced -->
 Allows an administrator to specify a list of directory paths to ignore during a scan. Each path in the list must be separated by a |. For example, C:\Example|C:\Example1.
 <!-- ExcludedPaths-Description-End -->
 
 <!-- ExcludedPaths-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> To prevent unauthorized changes to exclusions, apply tamper protection. Tamper protection for exclusions only works when [certain conditions][TAMPER-2] are met.
 <!-- ExcludedPaths-Editable-End -->
 
 <!-- ExcludedPaths-DFProperties-Begin -->
@@ -1938,7 +2022,7 @@ Allows an administrator to specify a list of directory paths to ignore during a 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `|`) |
 <!-- ExcludedPaths-DFProperties-End -->
@@ -1950,7 +2034,7 @@ Allows an administrator to specify a list of directory paths to ignore during a 
 |:--|:--|
 | Name | Exclusions_Paths |
 | Friendly Name | Path Exclusions |
-| Element Name | Path Exclusions |
+| Element Name | Path Exclusions. |
 | Location | Computer Configuration |
 | Path | Windows Components > Microsoft Defender Antivirus > Exclusions |
 | Registry Key Name | Software\Policies\Microsoft\Windows Defender\Exclusions |
@@ -1969,7 +2053,7 @@ Allows an administrator to specify a list of directory paths to ignore during a 
 <!-- ExcludedProcesses-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- ExcludedProcesses-Applicability-End -->
 
 <!-- ExcludedProcesses-OmaUri-Begin -->
@@ -1979,15 +2063,17 @@ Allows an administrator to specify a list of directory paths to ignore during a 
 <!-- ExcludedProcesses-OmaUri-End -->
 
 <!-- ExcludedProcesses-Description-Begin -->
-<!-- Description-Source-DDF -->
+<!-- Description-Source-DDF-Forced -->
 Allows an administrator to specify a list of files opened by processes to ignore during a scan.
 
 > [!IMPORTANT]
-> The process itself is not excluded from the scan, but can be by using the Defender/ExcludedPaths policy to exclude its path. Each file type must be separated by a |. For example, C\Example. exe|C\Example1.exe.
+> The process itself isn't excluded from the scan, but can be by using the Defender/ExcludedPaths policy to exclude its path. Each file type must be separated by a |. For example, C:\Example. exe|C:\Example1.exe.
 <!-- ExcludedProcesses-Description-End -->
 
 <!-- ExcludedProcesses-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> To prevent unauthorized changes to exclusions, apply tamper protection. Tamper protection for exclusions only works when [certain conditions][TAMPER-2] are met.
 <!-- ExcludedProcesses-Editable-End -->
 
 <!-- ExcludedProcesses-DFProperties-Begin -->
@@ -1995,7 +2081,7 @@ Allows an administrator to specify a list of files opened by processes to ignore
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `|`) |
 <!-- ExcludedProcesses-DFProperties-End -->
@@ -2007,7 +2093,7 @@ Allows an administrator to specify a list of files opened by processes to ignore
 |:--|:--|
 | Name | Exclusions_Processes |
 | Friendly Name | Process Exclusions |
-| Element Name | Process Exclusions |
+| Element Name | Process Exclusions. |
 | Location | Computer Configuration |
 | Path | Windows Components > Microsoft Defender Antivirus > Exclusions |
 | Registry Key Name | Software\Policies\Microsoft\Windows Defender\Exclusions |
@@ -2026,7 +2112,7 @@ Allows an administrator to specify a list of files opened by processes to ignore
 <!-- PUAProtection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- PUAProtection-Applicability-End -->
 
 <!-- PUAProtection-OmaUri-Begin -->
@@ -2040,14 +2126,19 @@ Allows an administrator to specify a list of files opened by processes to ignore
 Enable or disable detection for potentially unwanted applications. You can choose to block, audit, or allow when potentially unwanted software is being downloaded or attempts to install itself on your computer.
 
 Enabled:
+
 Specify the mode in the Options section:
+
 -Block: Potentially unwanted software will be blocked.
--Audit Mode: Potentially unwanted software will not be blocked, however if this feature would have blocked access if it were set to Block, then a record of the event will be in the event logs.
+
+-Audit Mode: Potentially unwanted software won't be blocked, however if this feature would've blocked access if it were set to Block, then a record of the event will be in the event logs.
 
 Disabled:
-Potentially unwanted software will not be blocked.
+
+Potentially unwanted software won't be blocked.
 
 Not configured:
+
 Same as Disabled.
 <!-- PUAProtection-Description-End -->
 
@@ -2060,7 +2151,7 @@ Same as Disabled.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- PUAProtection-DFProperties-End -->
@@ -2070,9 +2161,9 @@ Same as Disabled.
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | PUA Protection off. Windows Defender will not protect against potentially unwanted applications. |
+| 0 (Default) | PUA Protection off. Windows Defender won't protect against potentially unwanted applications. |
 | 1 | PUA Protection on. Detected items are blocked. They will show in history along with other threats. |
-| 2 | Audit mode. Windows Defender will detect potentially unwanted applications, but take no action. You can review information about the applications Windows Defender would have taken action against by searching for events created by Windows Defender in the Event Viewer. |
+| 2 | Audit mode. Windows Defender will detect potentially unwanted applications, but take no action. You can review information about the applications Windows Defender would've taken action against by searching for events created by Windows Defender in the Event Viewer. |
 <!-- PUAProtection-AllowedValues-End -->
 
 <!-- PUAProtection-GpMapping-Begin -->
@@ -2100,7 +2191,7 @@ Same as Disabled.
 <!-- RealTimeScanDirection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- RealTimeScanDirection-Applicability-End -->
 
 <!-- RealTimeScanDirection-OmaUri-Begin -->
@@ -2111,20 +2202,21 @@ Same as Disabled.
 
 <!-- RealTimeScanDirection-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to configure monitoring for incoming and outgoing files, without having to turn off monitoring entirely. It is recommended for use on servers where there is a lot of incoming and outgoing file activity but for performance reasons need to have scanning disabled for a particular scan direction. The appropriate configuration should be evaluated based on the server role.
+This policy setting allows you to configure monitoring for incoming and outgoing files, without having to turn off monitoring entirely. It's recommended for use on servers where there is a lot of incoming and outgoing file activity but for performance reasons need to have scanning disabled for a particular scan direction. The appropriate configuration should be evaluated based on the server role.
 
-**Note** that this configuration is only honored for NTFS volumes. For any other file system type, full monitoring of file and program activity will be present on those volumes.
+Note that this configuration is only honored for NTFS volumes. For any other file system type, full monitoring of file and program activity will be present on those volumes.
 
-The options for this setting are mutually exclusive
+The options for this setting are mutually exclusive:
+
 0 = Scan incoming and outgoing files (default)
 1 = Scan incoming files only
-2 = Scan outgoing files only
+2 = Scan outgoing files only.
 
-Any other value, or if the value does not exist, resolves to the default (0).
+Any other value, or if the value doesn't exist, resolves to the default (0).
 
 - If you enable this setting, the specified type of monitoring will be enabled.
 
-- If you disable or do not configure this setting, monitoring for incoming and outgoing files will be enabled.
+- If you disable or don't configure this setting, monitoring for incoming and outgoing files will be enabled.
 <!-- RealTimeScanDirection-Description-End -->
 
 <!-- RealTimeScanDirection-Editable-Begin -->
@@ -2136,7 +2228,7 @@ Any other value, or if the value does not exist, resolves to the default (0).
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- RealTimeScanDirection-DFProperties-End -->
@@ -2158,7 +2250,7 @@ Any other value, or if the value does not exist, resolves to the default (0).
 |:--|:--|
 | Name | RealtimeProtection_RealtimeScanDirection |
 | Friendly Name | Configure monitoring for incoming and outgoing file and program activity |
-| Element Name | Configure monitoring for incoming and outgoing file and program activity |
+| Element Name | Configure monitoring for incoming and outgoing file and program activity. |
 | Location | Computer Configuration |
 | Path | Windows Components > Microsoft Defender Antivirus > Real-time Protection |
 | Registry Key Name | Software\Policies\Microsoft\Windows Defender\Real-Time Protection |
@@ -2177,7 +2269,7 @@ Any other value, or if the value does not exist, resolves to the default (0).
 <!-- ScanParameter-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- ScanParameter-Applicability-End -->
 
 <!-- ScanParameter-OmaUri-Begin -->
@@ -2189,12 +2281,13 @@ Any other value, or if the value does not exist, resolves to the default (0).
 <!-- ScanParameter-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting allows you to specify the scan type to use during a scheduled scan. Scan type options are:
+
 1 = Quick Scan (default)
-2 = Full Scan
+2 = Full Scan.
 
 - If you enable this setting, the scan type will be set to the specified value.
 
-- If you disable or do not configure this setting, the default scan type will be used.
+- If you disable or don't configure this setting, the default scan type will be used.
 <!-- ScanParameter-Description-End -->
 
 <!-- ScanParameter-Editable-Begin -->
@@ -2206,7 +2299,7 @@ This policy setting allows you to specify the scan type to use during a schedule
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- ScanParameter-DFProperties-End -->
@@ -2227,7 +2320,7 @@ This policy setting allows you to specify the scan type to use during a schedule
 |:--|:--|
 | Name | Scan_ScanParameters |
 | Friendly Name | Specify the scan type to use for a scheduled scan |
-| Element Name | Specify the scan type to use for a scheduled scan |
+| Element Name | Specify the scan type to use for a scheduled scan. |
 | Location | Computer Configuration |
 | Path | Windows Components > Microsoft Defender Antivirus > Scan |
 | Registry Key Name | Software\Policies\Microsoft\Windows Defender\Scan |
@@ -2246,7 +2339,7 @@ This policy setting allows you to specify the scan type to use during a schedule
 <!-- ScheduleQuickScanTime-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- ScheduleQuickScanTime-Applicability-End -->
 
 <!-- ScheduleQuickScanTime-OmaUri-Begin -->
@@ -2261,7 +2354,7 @@ This policy setting allows you to specify the time of day at which to perform a 
 
 - If you enable this setting, a daily quick scan will run at the time of day specified.
 
-- If you disable or do not configure this setting, daily quick scan controlled by this config will not be run.
+- If you disable or don't configure this setting, daily quick scan controlled by this config won't be run.
 <!-- ScheduleQuickScanTime-Description-End -->
 
 <!-- ScheduleQuickScanTime-Editable-Begin -->
@@ -2273,7 +2366,7 @@ This policy setting allows you to specify the time of day at which to perform a 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-1380]` |
 | Default Value  | 120 |
@@ -2286,7 +2379,7 @@ This policy setting allows you to specify the time of day at which to perform a 
 |:--|:--|
 | Name | Scan_ScheduleQuickScantime |
 | Friendly Name | Specify the time for a daily quick scan |
-| Element Name | Specify the time for a daily quick scan |
+| Element Name | Specify the time for a daily quick scan. |
 | Location | Computer Configuration |
 | Path | Windows Components > Microsoft Defender Antivirus > Scan |
 | Registry Key Name | Software\Policies\Microsoft\Windows Defender\Scan |
@@ -2305,7 +2398,7 @@ This policy setting allows you to specify the time of day at which to perform a 
 <!-- ScheduleScanDay-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- ScheduleScanDay-Applicability-End -->
 
 <!-- ScheduleScanDay-OmaUri-Begin -->
@@ -2319,19 +2412,12 @@ This policy setting allows you to specify the time of day at which to perform a 
 This policy setting allows you to specify the day of the week on which to perform a scheduled scan. The scan can also be configured to run every day or to never run at all.
 
 This setting can be configured with the following ordinal number values:
-(0x0) Every Day
-(0x1) Sunday
-(0x2) Monday
-(0x3) Tuesday
-(0x4) Wednesday
-(0x5) Thursday
-(0x6) Friday
-(0x7) Saturday
-(0x8) Never (default)
+
+(0x0) Every Day (0x1) Sunday (0x2) Monday (0x3) Tuesday (0x4) Wednesday (0x5) Thursday (0x6) Friday (0x7) Saturday (0x8) Never (default)
 
 - If you enable this setting, a scheduled scan will run at the frequency specified.
 
-- If you disable or do not configure this setting, a scheduled scan will run at a default frequency.
+- If you disable or don't configure this setting, a scheduled scan will run at a default frequency.
 <!-- ScheduleScanDay-Description-End -->
 
 <!-- ScheduleScanDay-Editable-Begin -->
@@ -2343,7 +2429,7 @@ This setting can be configured with the following ordinal number values:
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- ScheduleScanDay-DFProperties-End -->
@@ -2371,7 +2457,7 @@ This setting can be configured with the following ordinal number values:
 |:--|:--|
 | Name | Scan_ScheduleDay |
 | Friendly Name | Specify the day of the week to run a scheduled scan |
-| Element Name | Specify the day of the week to run a scheduled scan |
+| Element Name | Specify the day of the week to run a scheduled scan. |
 | Location | Computer Configuration |
 | Path | Windows Components > Microsoft Defender Antivirus > Scan |
 | Registry Key Name | Software\Policies\Microsoft\Windows Defender\Scan |
@@ -2390,7 +2476,7 @@ This setting can be configured with the following ordinal number values:
 <!-- ScheduleScanTime-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- ScheduleScanTime-Applicability-End -->
 
 <!-- ScheduleScanTime-OmaUri-Begin -->
@@ -2405,7 +2491,7 @@ This policy setting allows you to specify the time of day at which to perform a 
 
 - If you enable this setting, a scheduled scan will run at the time of day specified.
 
-- If you disable or do not configure this setting, a scheduled scan will run at a default time.
+- If you disable or don't configure this setting, a scheduled scan will run at a default time.
 <!-- ScheduleScanTime-Description-End -->
 
 <!-- ScheduleScanTime-Editable-Begin -->
@@ -2417,7 +2503,7 @@ This policy setting allows you to specify the time of day at which to perform a 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-1380]` |
 | Default Value  | 120 |
@@ -2430,7 +2516,7 @@ This policy setting allows you to specify the time of day at which to perform a 
 |:--|:--|
 | Name | Scan_ScheduleTime |
 | Friendly Name | Specify the time of day to run a scheduled scan |
-| Element Name | Specify the time of day to run a scheduled scan |
+| Element Name | Specify the time of day to run a scheduled scan. |
 | Location | Computer Configuration |
 | Path | Windows Components > Microsoft Defender Antivirus > Scan |
 | Registry Key Name | Software\Policies\Microsoft\Windows Defender\Scan |
@@ -2449,7 +2535,7 @@ This policy setting allows you to specify the time of day at which to perform a 
 <!-- SecurityIntelligenceLocation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- SecurityIntelligenceLocation-Applicability-End -->
 
 <!-- SecurityIntelligenceLocation-OmaUri-Begin -->
@@ -2462,7 +2548,7 @@ This policy setting allows you to specify the time of day at which to perform a 
 <!-- Description-Source-ADMX -->
 This policy setting allows you to define the security intelligence location for VDI-configured computers.
 
-- If you disable or do not configure this setting, security intelligence will be referred from the default local source.
+If you disable or don't configure this setting, security intelligence will be referred from the default local source.
 <!-- SecurityIntelligenceLocation-Description-End -->
 
 <!-- SecurityIntelligenceLocation-Editable-Begin -->
@@ -2474,7 +2560,7 @@ This policy setting allows you to define the security intelligence location for 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- SecurityIntelligenceLocation-DFProperties-End -->
 
@@ -2485,7 +2571,7 @@ This policy setting allows you to define the security intelligence location for 
 |:--|:--|
 | Name | SignatureUpdate_SharedSignaturesLocation |
 | Friendly Name | Define security intelligence location for VDI clients. |
-| Element Name | Define file share for downloading security intelligence updates in virtual environments |
+| Element Name | Define file share for downloading security intelligence updates in virtual environments. |
 | Location | Computer Configuration |
 | Path | Windows Components > Microsoft Defender Antivirus > Security Intelligence Updates |
 | Registry Key Name | Software\Policies\Microsoft\Windows Defender\Signature Updates |
@@ -2504,7 +2590,7 @@ This policy setting allows you to define the security intelligence location for 
 <!-- SignatureUpdateFallbackOrder-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- SignatureUpdateFallbackOrder-Applicability-End -->
 
 <!-- SignatureUpdateFallbackOrder-OmaUri-Begin -->
@@ -2515,13 +2601,13 @@ This policy setting allows you to define the security intelligence location for 
 
 <!-- SignatureUpdateFallbackOrder-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to define the order in which different security intelligence update sources should be contacted. The value of this setting should be entered as a pipe-separated string enumerating the security intelligence update sources in order. Possible values are: "InternalDefinitionUpdateServer", "MicrosoftUpdateServer", "MMPC", and "FileShares"
+This policy setting allows you to define the order in which different security intelligence update sources should be contacted. The value of this setting should be entered as a pipe-separated string enumerating the security intelligence update sources in order. Possible values are: "InternalDefinitionUpdateServer", "MicrosoftUpdateServer", "MMPC", and "FileShares".
 
-For example: { InternalDefinitionUpdateServer | MicrosoftUpdateServer | MMPC }
+For Example: `{ InternalDefinitionUpdateServer | MicrosoftUpdateServer | MMPC }`
 
-- If you enable this setting, security intelligence update sources will be contacted in the order specified. Once security intelligence updates have been successfully downloaded from one specified source, the remaining sources in the list will not be contacted.
+- If you enable this setting, security intelligence update sources will be contacted in the order specified. Once security intelligence updates have been successfully downloaded from one specified source, the remaining sources in the list won't be contacted.
 
-- If you disable or do not configure this setting, security intelligence update sources will be contacted in a default order.
+- If you disable or don't configure this setting, security intelligence update sources will be contacted in a default order.
 <!-- SignatureUpdateFallbackOrder-Description-End -->
 
 <!-- SignatureUpdateFallbackOrder-Editable-Begin -->
@@ -2533,7 +2619,7 @@ For example: { InternalDefinitionUpdateServer | MicrosoftUpdateServer | MMPC }
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `|`) |
 <!-- SignatureUpdateFallbackOrder-DFProperties-End -->
@@ -2545,7 +2631,7 @@ For example: { InternalDefinitionUpdateServer | MicrosoftUpdateServer | MMPC }
 |:--|:--|
 | Name | SignatureUpdate_FallbackOrder |
 | Friendly Name | Define the order of sources for downloading security intelligence updates |
-| Element Name | Define the order of sources for downloading security intelligence updates |
+| Element Name | Define the order of sources for downloading security intelligence updates. |
 | Location | Computer Configuration |
 | Path | Windows Components > Microsoft Defender Antivirus > Security Intelligence Updates |
 | Registry Key Name | Software\Policies\Microsoft\Windows Defender\Signature Updates |
@@ -2564,7 +2650,7 @@ For example: { InternalDefinitionUpdateServer | MicrosoftUpdateServer | MMPC }
 <!-- SignatureUpdateFileSharesSources-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- SignatureUpdateFileSharesSources-Applicability-End -->
 
 <!-- SignatureUpdateFileSharesSources-OmaUri-Begin -->
@@ -2575,11 +2661,11 @@ For example: { InternalDefinitionUpdateServer | MicrosoftUpdateServer | MMPC }
 
 <!-- SignatureUpdateFileSharesSources-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to configure UNC file share sources for downloading security intelligence updates. Sources will be contacted in the order specified. The value of this setting should be entered as a pipe-separated string enumerating the security intelligence update sources. For example: "{\\unc1 | \\unc2 }". The list is empty by default.
+This policy setting allows you to configure UNC file share sources for downloading security intelligence updates. Sources will be contacted in the order specified. The value of this setting should be entered as a pipe-separated string enumerating the security intelligence update sources. For example: "`{\\unc1 | \\unc2 }`". The list is empty by default.
 
-- If you enable this setting, the specified sources will be contacted for security intelligence updates. Once security intelligence updates have been successfully downloaded from one specified source, the remaining sources in the list will not be contacted.
+- If you enable this setting, the specified sources will be contacted for security intelligence updates. Once security intelligence updates have been successfully downloaded from one specified source, the remaining sources in the list won't be contacted.
 
-- If you disable or do not configure this setting, the list will remain empty by default and no sources will be contacted.
+- If you disable or don't configure this setting, the list will remain empty by default and no sources will be contacted.
 <!-- SignatureUpdateFileSharesSources-Description-End -->
 
 <!-- SignatureUpdateFileSharesSources-Editable-Begin -->
@@ -2591,7 +2677,7 @@ This policy setting allows you to configure UNC file share sources for downloadi
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `|`) |
 <!-- SignatureUpdateFileSharesSources-DFProperties-End -->
@@ -2603,7 +2689,7 @@ This policy setting allows you to configure UNC file share sources for downloadi
 |:--|:--|
 | Name | SignatureUpdate_DefinitionUpdateFileSharesSources |
 | Friendly Name | Define file shares for downloading security intelligence updates |
-| Element Name | Define file shares for downloading security intelligence updates |
+| Element Name | Define file shares for downloading security intelligence updates. |
 | Location | Computer Configuration |
 | Path | Windows Components > Microsoft Defender Antivirus > Security Intelligence Updates |
 | Registry Key Name | Software\Policies\Microsoft\Windows Defender\Signature Updates |
@@ -2622,7 +2708,7 @@ This policy setting allows you to configure UNC file share sources for downloadi
 <!-- SignatureUpdateInterval-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- SignatureUpdateInterval-Applicability-End -->
 
 <!-- SignatureUpdateInterval-OmaUri-Begin -->
@@ -2637,7 +2723,7 @@ This policy setting allows you to specify an interval at which to check for secu
 
 - If you enable this setting, checks for security intelligence updates will occur at the interval specified.
 
-- If you disable or do not configure this setting, checks for security intelligence updates will occur at the default interval.
+- If you disable or don't configure this setting, checks for security intelligence updates will occur at the default interval.
 <!-- SignatureUpdateInterval-Description-End -->
 
 <!-- SignatureUpdateInterval-Editable-Begin -->
@@ -2649,7 +2735,7 @@ This policy setting allows you to specify an interval at which to check for secu
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-24]` |
 | Default Value  | 8 |
@@ -2662,7 +2748,7 @@ This policy setting allows you to specify an interval at which to check for secu
 |:--|:--|
 | Name | SignatureUpdate_SignatureUpdateInterval |
 | Friendly Name | Specify the interval to check for security intelligence updates |
-| Element Name | Specify the interval to check for security intelligence updates |
+| Element Name | Specify the interval to check for security intelligence updates. |
 | Location | Computer Configuration |
 | Path | Windows Components > Microsoft Defender Antivirus > Security Intelligence Updates |
 | Registry Key Name | Software\Policies\Microsoft\Windows Defender\Signature Updates |
@@ -2681,7 +2767,7 @@ This policy setting allows you to specify an interval at which to check for secu
 <!-- SubmitSamplesConsent-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- SubmitSamplesConsent-Applicability-End -->
 
 <!-- SubmitSamplesConsent-OmaUri-Begin -->
@@ -2695,10 +2781,8 @@ This policy setting allows you to specify an interval at which to check for secu
 This policy setting configures behavior of samples submission when opt-in for MAPS telemetry is set.
 
 Possible options are:
-(0x0) Always prompt
-(0x1) Send safe samples automatically
-(0x2) Never send
-(0x3) Send all samples automatically
+
+(0x0) Always prompt (0x1) Send safe samples automatically (0x2) Never send (0x3) Send all samples automatically.
 <!-- SubmitSamplesConsent-Description-End -->
 
 <!-- SubmitSamplesConsent-Editable-Begin -->
@@ -2710,7 +2794,7 @@ Possible options are:
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- SubmitSamplesConsent-DFProperties-End -->
@@ -2733,7 +2817,7 @@ Possible options are:
 |:--|:--|
 | Name | SubmitSamplesConsent |
 | Friendly Name | Send file samples when further analysis is required |
-| Element Name | Send file samples when further analysis is required |
+| Element Name | Send file samples when further analysis is required. |
 | Location | Computer Configuration |
 | Path | Windows Components > Microsoft Defender Antivirus > MAPS |
 | Registry Key Name | Software\Policies\Microsoft\Windows Defender\Spynet |
@@ -2752,7 +2836,7 @@ Possible options are:
 <!-- ThreatSeverityDefaultAction-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- ThreatSeverityDefaultAction-Applicability-End -->
 
 <!-- ThreatSeverityDefaultAction-OmaUri-Begin -->
@@ -2762,12 +2846,27 @@ Possible options are:
 <!-- ThreatSeverityDefaultAction-OmaUri-End -->
 
 <!-- ThreatSeverityDefaultAction-Description-Begin -->
-<!-- Description-Source-DDF -->
-Allows an administrator to specify any valid threat severity levels and the corresponding default action ID to take. This value is a list of threat severity level IDs and corresponding actions, separated by a | using the format threat level=action|threat level=action. For example, 1=6|2=2|4=10|5=3. The following list shows the supported values for threat severity levels:1 - Low severity threats2 - Moderate severity threats4 - High severity threats5 - Severe threatsThe following list shows the supported values for possible actions:2 - Quarantine. Moves files to quarantine. 3 - Remove. Removes files from system. 6 - Allow. Allows file/does none of the above actions. 8 - User defined. Requires user to make a decision on which action to take. 10 - Block. Blocks file execution.
+<!-- Description-Source-ADMX -->
+This policy setting allows you to customize which automatic remediation action will be taken for each threat alert level. Threat alert levels should be added under the Options for this setting. Each entry must be listed as a name value pair. The name defines a threat alert level. The value contains the action ID for the remediation action that should be taken.
+
+Valid threat alert levels are:
+
+1 = Low
+2 = Medium
+4 = High
+5 = Severe.
+
+Valid remediation action values are:
+
+2 = Quarantine
+3 = Remove
+6 = Ignore.
 <!-- ThreatSeverityDefaultAction-Description-End -->
 
 <!-- ThreatSeverityDefaultAction-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> Changes to this setting are not applied when [tamper protection][TAMPER-1] is enabled.
 <!-- ThreatSeverityDefaultAction-Editable-End -->
 
 <!-- ThreatSeverityDefaultAction-DFProperties-Begin -->
@@ -2775,7 +2874,7 @@ Allows an administrator to specify any valid threat severity levels and the corr
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ThreatSeverityDefaultAction-DFProperties-End -->
 
@@ -2786,7 +2885,7 @@ Allows an administrator to specify any valid threat severity levels and the corr
 |:--|:--|
 | Name | Threats_ThreatSeverityDefaultAction |
 | Friendly Name | Specify threat alert levels at which default action should not be taken when detected |
-| Element Name | Specify threat alert levels at which default action should not be taken when detected |
+| Element Name | Specify threat alert levels at which default action shouldn't be taken when detected. |
 | Location | Computer Configuration |
 | Path | Windows Components > Microsoft Defender Antivirus > Threats |
 | Registry Key Name | Software\Policies\Microsoft\Windows Defender\Threats |
@@ -2801,6 +2900,9 @@ Allows an administrator to specify any valid threat severity levels and the corr
 
 <!-- Defender-CspMoreInfo-Begin -->
 <!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- Links -->
+[TAMPER-1]: /microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection
+[TAMPER-2]: /microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection#what-about-exclusions
 <!-- Defender-CspMoreInfo-End -->
 
 <!-- Defender-End -->

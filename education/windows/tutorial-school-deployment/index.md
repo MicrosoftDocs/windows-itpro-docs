@@ -2,9 +2,7 @@
 title: Introduction to the tutorial deploy and manage Windows devices in a school
 description: Introduction to deployment and management of Windows devices in education environments.
 ms.date: 08/31/2022
-ms.topic: conceptual
-appliesto:
-  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
+ms.topic: tutorial
 ---
 
 # Tutorial: deploy and manage Windows devices in a school

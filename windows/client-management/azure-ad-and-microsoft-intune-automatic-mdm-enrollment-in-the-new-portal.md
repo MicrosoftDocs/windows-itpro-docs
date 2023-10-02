@@ -1,33 +1,18 @@
 ---
-title: Azure AD and Microsoft Intune - Automatic MDM enrollment in the new Portal
-description: Azure AD and Microsoft Intune - Automatic MDM enrollment in the new portal
-ms.author: vinpa
+title: Automatic MDM enrollment in the Intune admin center
+description: Automatic MDM enrollment in the Intune admin center
 ms.topic: article
-ms.prod: windows-client
-ms.technology: itpro-manage
-author: vinaypamnani-msft
-ms.date: 12/18/2020
-ms.reviewer: 
-manager: aaroncz
+ms.date: 08/10/2023
 ---
 
-# Azure AD and Microsoft Intune: Automatic MDM enrollment in the Intune admin center
+# Automatic MDM enrollment in the Intune admin center
 
-Microsoft Intune can be accessed directly using its own admin center. For more information, go to:
+Windows devices can be enrolled in to Intune automatically when they join or register with Azure Active Directory. Automatic enrollment can be configured in Azure portal.
 
-- [Tutorial: Walkthrough Intune in Microsoft Intune admin center](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager)
-- Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Go to your Azure AD portal.
+1. Select **Mobility (MDM and MAM)**, and find the Microsoft Intune app.
+1. Select **Microsoft Intune** and configure the enrollment options. You can specify settings to allow **All** users to enroll a device, or choose to allow **Some** users (and specify a group).
 
-If you use the Azure portal, then you can access Intune using the following steps:
+   ![Configure the Blade.](images/azure-intune-configure-scope.png)
 
-1. Go to your Azure AD Blade.
-2. Select **Mobility (MDM and MAM)**, and find the Microsoft Intune app.
-3. Select **Microsoft Intune** and configure the blade. 
-
-![How to get to the Blade.](images/azure-mdm-intune.png) 
-
-Configure the blade                                                                      
-
-![Configure the Blade.](images/azure-intune-configure-scope.png) 
-
-You can specify settings to allow all users to enroll a device and make it Intune ready, or choose to allow some users (and then add a group of users). 
+1. Select **Save** to configure MDM autoenrollment for Azure AD joined devices and bring-your-own-device scenarios.

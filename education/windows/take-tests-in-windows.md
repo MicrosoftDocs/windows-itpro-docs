@@ -1,10 +1,8 @@
 ---
 title: Take tests and assessments in Windows
 description: Learn about the built-in Take a Test app for Windows and how to use it.
-ms.date: 09/30/2022
-ms.topic: conceptual
-appliesto:
-  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
+ms.date: 03/31/2023
+ms.topic: how-to
 ---
 
 # Take tests and assessments in Windows

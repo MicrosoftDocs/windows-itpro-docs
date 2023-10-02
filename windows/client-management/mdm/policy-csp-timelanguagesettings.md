@@ -4,7 +4,7 @@ description: Learn more about the TimeLanguageSettings Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -29,7 +29,7 @@ ms.topic: reference
 <!-- AllowSet24HourClock-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowSet24HourClock-Applicability-End -->
 
 <!-- AllowSet24HourClock-OmaUri-Begin -->
@@ -52,7 +52,7 @@ This policy is deprecated.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- AllowSet24HourClock-DFProperties-End -->
@@ -78,7 +78,7 @@ This policy is deprecated.
 <!-- BlockCleanupOfUnusedPreinstalledLangPacks-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- BlockCleanupOfUnusedPreinstalledLangPacks-Applicability-End -->
 
 <!-- BlockCleanupOfUnusedPreinstalledLangPacks-OmaUri-Begin -->
@@ -89,11 +89,11 @@ This policy is deprecated.
 
 <!-- BlockCleanupOfUnusedPreinstalledLangPacks-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting controls whether the LPRemove task will run to clean up language packs installed on a machine but are not used by any users on that machine.
+This policy setting controls whether the LPRemove task will run to clean up language packs installed on a machine but aren't used by any users on that machine.
 
-- If you enable this policy setting, language packs that are installed as part of the system image will remain installed even if they are not used by any user on that system.
+- If you enable this policy setting, language packs that are installed as part of the system image will remain installed even if they aren't used by any user on that system.
 
-- If you disable or do not configure this policy setting, language packs that are installed as part of the system image but are not used by any user on that system will be removed as part of a scheduled clean up task.
+- If you disable or don't configure this policy setting, language packs that are installed as part of the system image but aren't used by any user on that system will be removed as part of a scheduled clean up task.
 <!-- BlockCleanupOfUnusedPreinstalledLangPacks-Description-End -->
 
 <!-- BlockCleanupOfUnusedPreinstalledLangPacks-Editable-Begin -->
@@ -105,7 +105,7 @@ This policy setting controls whether the LPRemove task will run to clean up lang
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- BlockCleanupOfUnusedPreinstalledLangPacks-DFProperties-End -->
@@ -145,7 +145,7 @@ This policy setting controls whether the LPRemove task will run to clean up lang
 <!-- ConfigureTimeZone-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- ConfigureTimeZone-Applicability-End -->
 
 <!-- ConfigureTimeZone-OmaUri-Begin -->
@@ -170,7 +170,7 @@ Specifies the time zone to be applied to the device. This is the standard Window
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ConfigureTimeZone-DFProperties-End -->
 
@@ -186,7 +186,7 @@ Specifies the time zone to be applied to the device. This is the standard Window
 <!-- MachineUILanguageOverwrite-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MachineUILanguageOverwrite-Applicability-End -->
 
 <!-- MachineUILanguageOverwrite-OmaUri-Begin -->
@@ -199,9 +199,9 @@ Specifies the time zone to be applied to the device. This is the standard Window
 <!-- Description-Source-ADMX -->
 This policy setting controls which UI language is used for computers with more than one UI language installed.
 
-- If you enable this policy setting, the UI language of Windows menus and dialogs for systems with more than one language is restricted to a specified language. If the specified language is not installed on the target computer or you disable this policy setting, the language selection defaults to the language selected by the local administrator.
+- If you enable this policy setting, the UI language of Windows menus and dialogs for systems with more than one language is restricted to a specified language. If the specified language isn't installed on the target computer or you disable this policy setting, the language selection defaults to the language selected by the local administrator.
 
-- If you disable or do not configure this policy setting, there is no restriction of a specific language used for the Windows menus and dialogs.
+- If you disable or don't configure this policy setting, there is no restriction of a specific language used for the Windows menus and dialogs.
 <!-- MachineUILanguageOverwrite-Description-End -->
 
 <!-- MachineUILanguageOverwrite-Editable-Begin -->
@@ -213,7 +213,7 @@ This policy setting controls which UI language is used for computers with more t
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- MachineUILanguageOverwrite-DFProperties-End -->
@@ -253,7 +253,7 @@ This policy setting controls which UI language is used for computers with more t
 <!-- RestrictLanguagePacksAndFeaturesInstall-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- RestrictLanguagePacksAndFeaturesInstall-Applicability-End -->
 
 <!-- RestrictLanguagePacksAndFeaturesInstall-OmaUri-Begin -->
@@ -280,7 +280,7 @@ This policy setting restricts the install of language packs and language feature
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- RestrictLanguagePacksAndFeaturesInstall-DFProperties-End -->

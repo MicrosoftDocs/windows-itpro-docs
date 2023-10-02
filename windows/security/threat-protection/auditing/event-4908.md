@@ -1,11 +1,11 @@
 ---
-title: 4908(S) Special Groups Logon table modified. (Windows 10)
+title: 4908(S) Special Groups Logon table modified. 
 description: Describes security event 4908(S) Special Groups Logon table modified. This event is generated when the Special Groups Logon table is modified.
 ms.pagetype: security
 ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
+ms.localizationpriority: low
 author: vinaypamnani-msft
 ms.date: 09/08/2021
 ms.reviewer: 

@@ -4,7 +4,7 @@ description: Learn more about the ADMX_Kerberos Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- ADMX_Kerberos-Begin -->
 # Policy CSP - ADMX_Kerberos
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- ADMX_Kerberos-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -31,7 +28,7 @@ ms.topic: reference
 <!-- AlwaysSendCompoundId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AlwaysSendCompoundId-Applicability-End -->
 
 <!-- AlwaysSendCompoundId-OmaUri-Begin -->
@@ -49,7 +46,7 @@ This policy setting controls whether a device always sends a compound authentica
 
 - If you enable this policy setting and the resource domain requests compound authentication, devices that support compound authentication always send a compound authentication request.
 
-- If you disable or do not configure this policy setting and the resource domain requests compound authentication, devices will send a non-compounded authentication request first then a compound authentication request when the service requests compound authentication.
+- If you disable or don't configure this policy setting and the resource domain requests compound authentication, devices will send a non-compounded authentication request first then a compound authentication request when the service requests compound authentication.
 <!-- AlwaysSendCompoundId-Description-End -->
 
 <!-- AlwaysSendCompoundId-Editable-Begin -->
@@ -61,13 +58,12 @@ This policy setting controls whether a device always sends a compound authentica
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AlwaysSendCompoundId-DFProperties-End -->
 
 <!-- AlwaysSendCompoundId-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -94,7 +90,7 @@ This policy setting controls whether a device always sends a compound authentica
 <!-- DevicePKInitEnabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DevicePKInitEnabled-Applicability-End -->
 
 <!-- DevicePKInitEnabled-OmaUri-Begin -->
@@ -111,12 +107,13 @@ This policy setting allows you to set support for Kerberos to attempt authentica
 
 - If you enable this policy setting, the devices credentials will be selected based on the following options:
 
-Automatic: Device will attempt to authenticate using its certificate. If the DC does not support computer account authentication using certificates then authentication with password will be attempted.
+Automatic: Device will attempt to authenticate using its certificate. If the DC doesn't support computer account authentication using certificates then authentication with password will be attempted.
 
-Force: Device will always authenticate using its certificate. If a DC cannot be found which support computer account authentication using certificates then authentication will fail.
+Force: Device will always authenticate using its certificate. If a DC can't be found which support computer account authentication using certificates then authentication will fail.
 
 - If you disable this policy setting, certificates will never be used.
-- If you do not configure this policy setting, Automatic will be used.
+
+- If you don't configure this policy setting, Automatic will be used.
 <!-- DevicePKInitEnabled-Description-End -->
 
 <!-- DevicePKInitEnabled-Editable-Begin -->
@@ -128,13 +125,12 @@ Force: Device will always authenticate using its certificate. If a DC cannot be 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DevicePKInitEnabled-DFProperties-End -->
 
 <!-- DevicePKInitEnabled-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -161,7 +157,7 @@ Force: Device will always authenticate using its certificate. If a DC cannot be 
 <!-- HostToRealm-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- HostToRealm-Applicability-End -->
 
 <!-- HostToRealm-OmaUri-Begin -->
@@ -178,7 +174,7 @@ This policy setting allows you to specify which DNS host names and which DNS suf
 
 - If you disable this policy setting, the host name-to-Kerberos realm mappings list defined by Group Policy is deleted.
 
-- If you do not configure this policy setting, the system uses the host name-to-Kerberos realm mappings that are defined in the local registry, if they exist.
+- If you don't configure this policy setting, the system uses the host name-to-Kerberos realm mappings that are defined in the local registry, if they exist.
 <!-- HostToRealm-Description-End -->
 
 <!-- HostToRealm-Editable-Begin -->
@@ -190,13 +186,12 @@ This policy setting allows you to specify which DNS host names and which DNS suf
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- HostToRealm-DFProperties-End -->
 
 <!-- HostToRealm-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -223,7 +218,7 @@ This policy setting allows you to specify which DNS host names and which DNS suf
 <!-- KdcProxyDisableServerRevocationCheck-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- KdcProxyDisableServerRevocationCheck-Applicability-End -->
 
 <!-- KdcProxyDisableServerRevocationCheck-OmaUri-Begin -->
@@ -237,10 +232,11 @@ This policy setting allows you to specify which DNS host names and which DNS suf
 This policy setting allows you to disable revocation check for the SSL certificate of the targeted KDC proxy server.
 
 - If you enable this policy setting, revocation check for the SSL certificate of the KDC proxy server is ignored by the Kerberos client. This policy setting should only be used in troubleshooting KDC proxy connections.
-> [!WARNING]
-> When revocation check is ignored, the server represented by the certificate is not guaranteed valid.
 
-- If you disable or do not configure this policy setting, the Kerberos client enforces the revocation check for the SSL certificate. The connection to the KDC proxy server is not established if the revocation check fails.
+> [!WARNING]
+> When revocation check is ignored, the server represented by the certificate isn't guaranteed valid.
+
+- If you disable or don't configure this policy setting, the Kerberos client enforces the revocation check for the SSL certificate. The connection to the KDC proxy server isn't established if the revocation check fails.
 <!-- KdcProxyDisableServerRevocationCheck-Description-End -->
 
 <!-- KdcProxyDisableServerRevocationCheck-Editable-Begin -->
@@ -252,13 +248,12 @@ This policy setting allows you to disable revocation check for the SSL certifica
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- KdcProxyDisableServerRevocationCheck-DFProperties-End -->
 
 <!-- KdcProxyDisableServerRevocationCheck-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -285,7 +280,7 @@ This policy setting allows you to disable revocation check for the SSL certifica
 <!-- KdcProxyServer-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- KdcProxyServer-Applicability-End -->
 
 <!-- KdcProxyServer-OmaUri-Begin -->
@@ -298,9 +293,9 @@ This policy setting allows you to disable revocation check for the SSL certifica
 <!-- Description-Source-ADMX -->
 This policy setting configures the Kerberos client's mapping to KDC proxy servers for domains based on their DNS suffix names.
 
-- If you enable this policy setting, the Kerberos client will use the KDC proxy server for a domain when a domain controller cannot be located based on the configured mappings. To map a KDC proxy server to a domain, enable the policy setting, click Show, and then map the KDC proxy server name(s) to the DNS name for the domain using the syntax described in the options pane. In the Show Contents dialog box in the Value Name column, type a DNS suffix name. In the Value column, type the list of proxy servers using the appropriate syntax format. To view the list of mappings, enable the policy setting and then click the Show button. To remove a mapping from the list, click the mapping entry to be removed, and then press the DELETE key. To edit a mapping, remove the current entry from the list and add a new one with different parameters.
+- If you enable this policy setting, the Kerberos client will use the KDC proxy server for a domain when a domain controller can't be located based on the configured mappings. To map a KDC proxy server to a domain, enable the policy setting, click Show, and then map the KDC proxy server name(s) to the DNS name for the domain using the syntax described in the options pane. In the Show Contents dialog box in the Value Name column, type a DNS suffix name. In the Value column, type the list of proxy servers using the appropriate syntax format. To view the list of mappings, enable the policy setting and then click the Show button. To remove a mapping from the list, click the mapping entry to be removed, and then press the DELETE key. To edit a mapping, remove the current entry from the list and add a new one with different parameters.
 
-- If you disable or do not configure this policy setting, the Kerberos client does not have KDC proxy servers settings defined by Group Policy.
+- If you disable or don't configure this policy setting, the Kerberos client doesn't have KDC proxy servers settings defined by Group Policy.
 <!-- KdcProxyServer-Description-End -->
 
 <!-- KdcProxyServer-Editable-Begin -->
@@ -312,13 +307,12 @@ This policy setting configures the Kerberos client's mapping to KDC proxy server
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- KdcProxyServer-DFProperties-End -->
 
 <!-- KdcProxyServer-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -345,7 +339,7 @@ This policy setting configures the Kerberos client's mapping to KDC proxy server
 <!-- MitRealms-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MitRealms-Applicability-End -->
 
 <!-- MitRealms-OmaUri-Begin -->
@@ -362,7 +356,7 @@ This policy setting configures the Kerberos client so that it can authenticate w
 
 - If you disable this policy setting, the interoperable Kerberos V5 realm settings defined by Group Policy are deleted.
 
-- If you do not configure this policy setting, the system uses the interoperable Kerberos V5 realm settings that are defined in the local registry, if they exist.
+- If you don't configure this policy setting, the system uses the interoperable Kerberos V5 realm settings that are defined in the local registry, if they exist.
 <!-- MitRealms-Description-End -->
 
 <!-- MitRealms-Editable-Begin -->
@@ -374,13 +368,12 @@ This policy setting configures the Kerberos client so that it can authenticate w
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MitRealms-DFProperties-End -->
 
 <!-- MitRealms-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -407,7 +400,7 @@ This policy setting configures the Kerberos client so that it can authenticate w
 <!-- ServerAcceptsCompound-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ServerAcceptsCompound-Applicability-End -->
 
 <!-- ServerAcceptsCompound-OmaUri-Begin -->
@@ -431,7 +424,8 @@ Automatic: Compound authentication is provided for this computer account when on
 Always: Compound authentication is always provided for this computer account.
 
 - If you disable this policy setting, Never will be used.
-- If you do not configure this policy setting, Automatic will be used.
+
+- If you don't configure this policy setting, Automatic will be used.
 <!-- ServerAcceptsCompound-Description-End -->
 
 <!-- ServerAcceptsCompound-Editable-Begin -->
@@ -443,13 +437,12 @@ Always: Compound authentication is always provided for this computer account.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ServerAcceptsCompound-DFProperties-End -->
 
 <!-- ServerAcceptsCompound-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -476,7 +469,7 @@ Always: Compound authentication is always provided for this computer account.
 <!-- StrictTarget-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- StrictTarget-Applicability-End -->
 
 <!-- StrictTarget-OmaUri-Begin -->
@@ -491,7 +484,7 @@ This policy setting allows you to configure this server so that Kerberos can dec
 
 - If you enable this policy setting, only services running as LocalSystem or NetworkService are allowed to accept these connections. Services running as identities different from LocalSystem or NetworkService might fail to authenticate.
 
-- If you disable or do not configure this policy setting, any service is allowed to accept incoming connections by using this system-generated SPN.
+- If you disable or don't configure this policy setting, any service is allowed to accept incoming connections by using this system-generated SPN.
 <!-- StrictTarget-Description-End -->
 
 <!-- StrictTarget-Editable-Begin -->
@@ -503,13 +496,12 @@ This policy setting allows you to configure this server so that Kerberos can dec
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- StrictTarget-DFProperties-End -->
 
 <!-- StrictTarget-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

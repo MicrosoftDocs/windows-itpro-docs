@@ -1,5 +1,5 @@
 ---
-title: Reset account lockout counter after (Windows 10)
+title: Reset account lockout counter after 
 description: Describes the best practices, location, values, and security considerations for the Reset account lockout counter after security policy setting.
 ms.assetid: d5ccf6dd-5ba7-44a9-8e0b-c478d8b1442c
 ms.reviewer: 
@@ -40,7 +40,7 @@ The disadvantage of a high setting is that users lock themselves out for an inco
 
 Determine the threat level for your organization and balance that against the cost of your Help Desk support for password resets. Each organization will have specific requirements. 
 
-[Windows security baselines](/windows/security/threat-protection/windows-security-configuration-framework/windows-security-baselines) recommend configuring the **Reset account lockout counter after** policy setting to 15, but as with other account lockout settings, this value is more of a guideline than a rule or best practice because there's no "one size fits all." For more information, see [Configuring Account Lockout](/archive/blogs/secguide/configuring-account-lockout).
+[Windows security baselines](../../operating-system-security/device-management/windows-security-configuration-framework/windows-security-baselines.md) recommend configuring the **Reset account lockout counter after** policy setting to 15, but as with other account lockout settings, this value is more of a guideline than a rule or best practice because there's no "one size fits all." For more information, see [Configuring Account Lockout](/archive/blogs/secguide/configuring-account-lockout).
 
 ### Location
 
@@ -69,7 +69,7 @@ Users can accidentally lock themselves out of their accounts if they mistype the
 
 ### Countermeasure
 
-[Windows security baselines](/windows/security/threat-protection/windows-security-configuration-framework/windows-security-baselines) recommend configuring the **Reset account lockout counter after** policy setting to 15.
+[Windows security baselines](../../operating-system-security/device-management/windows-security-configuration-framework/windows-security-baselines.md) recommend configuring the **Reset account lockout counter after** policy setting to 15.
 
 ### Potential impact
 

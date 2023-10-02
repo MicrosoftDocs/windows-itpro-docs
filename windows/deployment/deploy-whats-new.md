@@ -1,15 +1,17 @@
 ---
 title: What's new in Windows client deployment
-manager: aaroncz
-ms.author: frankroj
 description: Use this article to learn about new solutions and online content related to deploying Windows in your organization.
 ms.localizationpriority: medium
 ms.prod: windows-client
-author: frankroj
-ms.topic: article
-ms.collection: highpri, tier2
-ms.date: 11/23/2022
 ms.technology: itpro-deploy
+author: frankroj
+manager: aaroncz
+ms.author: frankroj
+ms.topic: conceptual
+ms.collection:
+  - highpri
+  - tier2
+ms.date: 11/23/2022
 ---
 
 # What's new in Windows client deployment

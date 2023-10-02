@@ -4,7 +4,7 @@ description: Learn more about the WindowsDefenderSecurityCenter Area in Policy C
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -26,7 +26,7 @@ ms.topic: reference
 <!-- CompanyName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- CompanyName-Applicability-End -->
 
 <!-- CompanyName-OmaUri-Begin -->
@@ -36,9 +36,20 @@ ms.topic: reference
 <!-- CompanyName-OmaUri-End -->
 
 <!-- CompanyName-Description-Begin -->
-<!-- Description-Source-DDF -->
-The company name that is displayed to the users. CompanyName is required for both EnableCustomizedToasts and EnableInAppCustomization.
-- If you disable or do not configure this setting, or do not have EnableCustomizedToasts or EnableInAppCustomization enabled, then devices will not display the contact options. Value type is string. Supported operations are Add, Get, Replace and Delete.
+<!-- Description-Source-ADMX -->
+Specify the company name that will be displayed in Windows Security and associated notifications. This setting must be enabled for any contact information to appear.
+
+Enabled:
+
+Enter the company name in the Options section.
+
+Disabled:
+
+Company information won't be shown at all in either Windows Security or any notifications that it creates.
+
+Not configured:
+
+Same as Disabled.
 <!-- CompanyName-Description-End -->
 
 <!-- CompanyName-Editable-Begin -->
@@ -50,7 +61,7 @@ The company name that is displayed to the users. CompanyName is required for bot
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- CompanyName-DFProperties-End -->
 
@@ -61,7 +72,7 @@ The company name that is displayed to the users. CompanyName is required for bot
 |:--|:--|
 | Name | EnterpriseCustomization_CompanyName |
 | Friendly Name | Specify contact company name |
-| Element Name | Company name |
+| Element Name | Company name. |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Security > Enterprise Customization |
 | Registry Key Name | SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Enterprise Customization |
@@ -80,7 +91,7 @@ The company name that is displayed to the users. CompanyName is required for bot
 <!-- DisableAccountProtectionUI-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- DisableAccountProtectionUI-Applicability-End -->
 
 <!-- DisableAccountProtectionUI-OmaUri-Begin -->
@@ -94,12 +105,15 @@ The company name that is displayed to the users. CompanyName is required for bot
 Hide the Account protection area in Windows Security.
 
 Enabled:
+
 The Account protection area will be hidden.
 
 Disabled:
+
 The Account protection area will be shown.
 
 Not configured:
+
 Same as Disabled.
 <!-- DisableAccountProtectionUI-Description-End -->
 
@@ -112,7 +126,7 @@ Same as Disabled.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DisableAccountProtectionUI-DFProperties-End -->
@@ -123,7 +137,7 @@ Same as Disabled.
 | Value | Description |
 |:--|:--|
 | 0 (Default) | (Disable) The users can see the display of the Account protection area in Windows Defender Security Center. |
-| 1 | (Enable) The users cannot see the display of the Account protection area in Windows Defender Security Center. |
+| 1 | (Enable) The users can't see the display of the Account protection area in Windows Defender Security Center. |
 <!-- DisableAccountProtectionUI-AllowedValues-End -->
 
 <!-- DisableAccountProtectionUI-GpMapping-Begin -->
@@ -152,7 +166,7 @@ Same as Disabled.
 <!-- DisableAppBrowserUI-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- DisableAppBrowserUI-Applicability-End -->
 
 <!-- DisableAppBrowserUI-OmaUri-Begin -->
@@ -166,12 +180,15 @@ Same as Disabled.
 Hide the App and browser protection area in Windows Security.
 
 Enabled:
+
 The App and browser protection area will be hidden.
 
 Disabled:
+
 The App and browser protection area will be shown.
 
 Not configured:
+
 Same as Disabled.
 <!-- DisableAppBrowserUI-Description-End -->
 
@@ -184,7 +201,7 @@ Same as Disabled.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DisableAppBrowserUI-DFProperties-End -->
@@ -195,7 +212,7 @@ Same as Disabled.
 | Value | Description |
 |:--|:--|
 | 0 (Default) | (Disable) The users can see the display of the app and browser protection area in Windows Defender Security Center. |
-| 1 | (Enable) The users cannot see the display of the app and browser protection area in Windows Defender Security Center. |
+| 1 | (Enable) The users can't see the display of the app and browser protection area in Windows Defender Security Center. |
 <!-- DisableAppBrowserUI-AllowedValues-End -->
 
 <!-- DisableAppBrowserUI-GpMapping-Begin -->
@@ -224,7 +241,7 @@ Same as Disabled.
 <!-- DisableClearTpmButton-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- DisableClearTpmButton-Applicability-End -->
 
 <!-- DisableClearTpmButton-OmaUri-Begin -->
@@ -238,12 +255,15 @@ Same as Disabled.
 Disable the Clear TPM button in Windows Security.
 
 Enabled:
+
 The Clear TPM button will be unavailable for use.
 
 Disabled:
+
 The Clear TPM button will be available for use.
 
 Not configured:
+
 Same as Disabled.
 <!-- DisableClearTpmButton-Description-End -->
 
@@ -256,7 +276,7 @@ Same as Disabled.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DisableClearTpmButton-DFProperties-End -->
@@ -267,7 +287,7 @@ Same as Disabled.
 | Value | Description |
 |:--|:--|
 | 0 (Default) | (Disabled or not configured) The security processor troubleshooting page shows a button that initiates the process to clear the security processor (TPM). |
-| 1 | (Enabled) The security processor troubleshooting page will not show a button to initiate the process to clear the security processor (TPM). |
+| 1 | (Enabled) The security processor troubleshooting page won't show a button to initiate the process to clear the security processor (TPM). |
 <!-- DisableClearTpmButton-AllowedValues-End -->
 
 <!-- DisableClearTpmButton-GpMapping-Begin -->
@@ -296,7 +316,7 @@ Same as Disabled.
 <!-- DisableDeviceSecurityUI-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- DisableDeviceSecurityUI-Applicability-End -->
 
 <!-- DisableDeviceSecurityUI-OmaUri-Begin -->
@@ -310,12 +330,15 @@ Same as Disabled.
 Hide the Device security area in Windows Security.
 
 Enabled:
+
 The Device security area will be hidden.
 
 Disabled:
+
 The Device security area will be shown.
 
 Not configured:
+
 Same as Disabled.
 <!-- DisableDeviceSecurityUI-Description-End -->
 
@@ -328,7 +351,7 @@ Same as Disabled.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DisableDeviceSecurityUI-DFProperties-End -->
@@ -339,7 +362,7 @@ Same as Disabled.
 | Value | Description |
 |:--|:--|
 | 0 (Default) | (Disable) The users can see the display of the Device security area in Windows Defender Security Center. |
-| 1 | (Enable) The users cannot see the display of the Device security area in Windows Defender Security Center. |
+| 1 | (Enable) The users can't see the display of the Device security area in Windows Defender Security Center. |
 <!-- DisableDeviceSecurityUI-AllowedValues-End -->
 
 <!-- DisableDeviceSecurityUI-GpMapping-Begin -->
@@ -368,7 +391,7 @@ Same as Disabled.
 <!-- DisableEnhancedNotifications-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- DisableEnhancedNotifications-Applicability-End -->
 
 <!-- DisableEnhancedNotifications-OmaUri-Begin -->
@@ -384,12 +407,15 @@ Only show critical notifications from Windows Security.
 If the Suppress all notifications GP setting has been enabled, this setting will have no effect.
 
 Enabled:
-Local users will only see critical notifications from Windows Security. They will not see other types of notifications, such as regular PC or device health information.
+
+Local users will only see critical notifications from Windows Security. They won't see other types of notifications, such as regular PC or device health information.
 
 Disabled:
+
 Local users will see all types of notifications from Windows Security.
 
 Not configured:
+
 Same as Disabled.
 <!-- DisableEnhancedNotifications-Description-End -->
 
@@ -402,7 +428,7 @@ Same as Disabled.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DisableEnhancedNotifications-DFProperties-End -->
@@ -442,7 +468,7 @@ Same as Disabled.
 <!-- DisableFamilyUI-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- DisableFamilyUI-Applicability-End -->
 
 <!-- DisableFamilyUI-OmaUri-Begin -->
@@ -456,12 +482,15 @@ Same as Disabled.
 Hide the Family options area in Windows Security.
 
 Enabled:
+
 The Family options area will be hidden.
 
 Disabled:
+
 The Family options area will be shown.
 
 Not configured:
+
 Same as Disabled.
 <!-- DisableFamilyUI-Description-End -->
 
@@ -474,7 +503,7 @@ Same as Disabled.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DisableFamilyUI-DFProperties-End -->
@@ -485,7 +514,7 @@ Same as Disabled.
 | Value | Description |
 |:--|:--|
 | 0 (Default) | (Disable) The users can see the display of the family options area in Windows Defender Security Center. |
-| 1 | (Enable) The users cannot see the display of the family options area in Windows Defender Security Center. |
+| 1 | (Enable) The users can't see the display of the family options area in Windows Defender Security Center. |
 <!-- DisableFamilyUI-AllowedValues-End -->
 
 <!-- DisableFamilyUI-GpMapping-Begin -->
@@ -514,7 +543,7 @@ Same as Disabled.
 <!-- DisableHealthUI-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- DisableHealthUI-Applicability-End -->
 
 <!-- DisableHealthUI-OmaUri-Begin -->
@@ -528,12 +557,15 @@ Same as Disabled.
 Hide the Device performance and health area in Windows Security.
 
 Enabled:
+
 The Device performance and health area will be hidden.
 
 Disabled:
+
 The Device performance and health area will be shown.
 
 Not configured:
+
 Same as Disabled.
 <!-- DisableHealthUI-Description-End -->
 
@@ -546,7 +578,7 @@ Same as Disabled.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DisableHealthUI-DFProperties-End -->
@@ -557,7 +589,7 @@ Same as Disabled.
 | Value | Description |
 |:--|:--|
 | 0 (Default) | (Disable) The users can see the display of the device performance and health area in Windows Defender Security Center. |
-| 1 | (Enable) The users cannot see the display of the device performance and health area in Windows Defender Security Center. |
+| 1 | (Enable) The users can't see the display of the device performance and health area in Windows Defender Security Center. |
 <!-- DisableHealthUI-AllowedValues-End -->
 
 <!-- DisableHealthUI-GpMapping-Begin -->
@@ -586,7 +618,7 @@ Same as Disabled.
 <!-- DisableNetworkUI-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- DisableNetworkUI-Applicability-End -->
 
 <!-- DisableNetworkUI-OmaUri-Begin -->
@@ -600,12 +632,15 @@ Same as Disabled.
 Hide the Firewall and network protection area in Windows Security.
 
 Enabled:
+
 The Firewall and network protection area will be hidden.
 
 Disabled:
+
 The Firewall and network protection area will be shown.
 
 Not configured:
+
 Same as Disabled.
 <!-- DisableNetworkUI-Description-End -->
 
@@ -618,7 +653,7 @@ Same as Disabled.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DisableNetworkUI-DFProperties-End -->
@@ -629,7 +664,7 @@ Same as Disabled.
 | Value | Description |
 |:--|:--|
 | 0 (Default) | (Disable) The users can see the display of the firewall and network protection area in Windows Defender Security Center. |
-| 1 | (Enable) The users cannot see the display of the firewall and network protection area in Windows Defender Security Center. |
+| 1 | (Enable) The users can't see the display of the firewall and network protection area in Windows Defender Security Center. |
 <!-- DisableNetworkUI-AllowedValues-End -->
 
 <!-- DisableNetworkUI-GpMapping-Begin -->
@@ -658,7 +693,7 @@ Same as Disabled.
 <!-- DisableNotifications-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- DisableNotifications-Applicability-End -->
 
 <!-- DisableNotifications-OmaUri-Begin -->
@@ -672,12 +707,15 @@ Same as Disabled.
 Hide notifications from Windows Security.
 
 Enabled:
-Local users will not see notifications from Windows Security.
+
+Local users won't see notifications from Windows Security.
 
 Disabled:
+
 Local users can see notifications from Windows Security.
 
 Not configured:
+
 Same as Disabled.
 <!-- DisableNotifications-Description-End -->
 
@@ -690,7 +728,7 @@ Same as Disabled.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DisableNotifications-DFProperties-End -->
@@ -701,7 +739,7 @@ Same as Disabled.
 | Value | Description |
 |:--|:--|
 | 0 (Default) | (Disable) The users can see the display of Windows Defender Security Center notifications. |
-| 1 | (Enable) The users cannot see the display of Windows Defender Security Center notifications. |
+| 1 | (Enable) The users can't see the display of Windows Defender Security Center notifications. |
 <!-- DisableNotifications-AllowedValues-End -->
 
 <!-- DisableNotifications-GpMapping-Begin -->
@@ -730,7 +768,7 @@ Same as Disabled.
 <!-- DisableTpmFirmwareUpdateWarning-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- DisableTpmFirmwareUpdateWarning-Applicability-End -->
 
 <!-- DisableTpmFirmwareUpdateWarning-OmaUri-Begin -->
@@ -744,12 +782,15 @@ Same as Disabled.
 Hide the recommendation to update TPM Firmware when a vulnerable firmware is detected.
 
 Enabled:
-Users will not be shown a recommendation to update their TPM Firmware.
+
+Users won't be shown a recommendation to update their TPM Firmware.
 
 Disabled:
+
 Users will see a recommendation to update their TPM Firmware if Windows Security detects the system contains a TPM with vulnerable firmware.
 
 Not configured:
+
 Same as Disabled.
 <!-- DisableTpmFirmwareUpdateWarning-Description-End -->
 
@@ -762,7 +803,7 @@ Same as Disabled.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DisableTpmFirmwareUpdateWarning-DFProperties-End -->
@@ -802,7 +843,7 @@ Same as Disabled.
 <!-- DisableVirusUI-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- DisableVirusUI-Applicability-End -->
 
 <!-- DisableVirusUI-OmaUri-Begin -->
@@ -816,12 +857,15 @@ Same as Disabled.
 Hide the Virus and threat protection area in Windows Security.
 
 Enabled:
+
 The Virus and threat protection area will be hidden.
 
 Disabled:
+
 The Virus and threat protection area will be shown.
 
 Not configured:
+
 Same as Disabled.
 <!-- DisableVirusUI-Description-End -->
 
@@ -834,7 +878,7 @@ Same as Disabled.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DisableVirusUI-DFProperties-End -->
@@ -845,7 +889,7 @@ Same as Disabled.
 | Value | Description |
 |:--|:--|
 | 0 (Default) | (Disable) The users can see the display of the virus and threat protection area in Windows Defender Security Center. |
-| 1 | (Enable) The users cannot see the display of the virus and threat protection area in Windows Defender Security Center. |
+| 1 | (Enable) The users can't see the display of the virus and threat protection area in Windows Defender Security Center. |
 <!-- DisableVirusUI-AllowedValues-End -->
 
 <!-- DisableVirusUI-GpMapping-Begin -->
@@ -874,7 +918,7 @@ Same as Disabled.
 <!-- DisallowExploitProtectionOverride-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- DisallowExploitProtectionOverride-Applicability-End -->
 
 <!-- DisallowExploitProtectionOverride-OmaUri-Begin -->
@@ -888,12 +932,15 @@ Same as Disabled.
 Prevent users from making changes to the Exploit protection settings area in Windows Security.
 
 Enabled:
-Local users can not make changes in the Exploit protection settings area.
+
+Local users can't make changes in the Exploit protection settings area.
 
 Disabled:
+
 Local users are allowed to make changes in the Exploit protection settings area.
 
 Not configured:
+
 Same as Disabled.
 <!-- DisallowExploitProtectionOverride-Description-End -->
 
@@ -906,7 +953,7 @@ Same as Disabled.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DisallowExploitProtectionOverride-DFProperties-End -->
@@ -917,7 +964,7 @@ Same as Disabled.
 | Value | Description |
 |:--|:--|
 | 0 (Default) | (Disable) Local users are allowed to make changes in the exploit protection settings area. |
-| 1 | (Enable) Local users cannot make changes in the exploit protection settings area. |
+| 1 | (Enable) Local users can't make changes in the exploit protection settings area. |
 <!-- DisallowExploitProtectionOverride-AllowedValues-End -->
 
 <!-- DisallowExploitProtectionOverride-GpMapping-Begin -->
@@ -946,7 +993,7 @@ Same as Disabled.
 <!-- Email-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Email-Applicability-End -->
 
 <!-- Email-OmaUri-Begin -->
@@ -956,9 +1003,22 @@ Same as Disabled.
 <!-- Email-OmaUri-End -->
 
 <!-- Email-Description-Begin -->
-<!-- Description-Source-DDF -->
-The email address that is displayed to users. The default mail application is used to initiate email actions.
-- If you disable or do not configure this setting, or do not have EnableCustomizedToasts or EnableInAppCustomization enabled, then devices will not display contact options. Value type is string. Supported operations are Add, Get, Replace and Delete.
+<!-- Description-Source-ADMX -->
+Specify the email address or email ID that will be displayed in Windows Security and associated notifications.
+
+Users can click on the contact information to create an email that will be sent to the specified address. The default email application will be used.
+
+Enabled:
+
+Enter the email address or email ID in the Options section.
+
+Disabled:
+
+A contact email address or email ID won't be shown in either Windows Security or any notifications it creates.
+
+Not configured:
+
+Same as Disabled.
 <!-- Email-Description-End -->
 
 <!-- Email-Editable-Begin -->
@@ -970,7 +1030,7 @@ The email address that is displayed to users. The default mail application is us
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Email-DFProperties-End -->
 
@@ -981,7 +1041,7 @@ The email address that is displayed to users. The default mail application is us
 |:--|:--|
 | Name | EnterpriseCustomization_Email |
 | Friendly Name | Specify contact email address or Email ID |
-| Element Name | Email address or email ID |
+| Element Name | Email address or email ID. |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Security > Enterprise Customization |
 | Registry Key Name | SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Enterprise Customization |
@@ -1000,7 +1060,7 @@ The email address that is displayed to users. The default mail application is us
 <!-- EnableCustomizedToasts-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- EnableCustomizedToasts-Applicability-End -->
 
 <!-- EnableCustomizedToasts-OmaUri-Begin -->
@@ -1014,18 +1074,23 @@ The email address that is displayed to users. The default mail application is us
 Display specified contact information to local users in Windows Security notifications.
 
 Enabled:
+
 Your company contact information will be displayed in notifications that come from Windows Security.
 
 After setting this to Enabled, you must configure the Specify contact company name GP setting and at least one of the following GP settings:
+
 -Specify contact phone number or Skype ID
 -Specify contact email number or email ID
--Specify contact website
+-Specify contact website.
+
 Please note that in some cases we will be limiting the contact options that are displayed based on the notification space available.
 
 Disabled:
+
 No contact information will be shown on notifications.
 
 Not configured:
+
 Same as Disabled.
 <!-- EnableCustomizedToasts-Description-End -->
 
@@ -1038,7 +1103,7 @@ Same as Disabled.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- EnableCustomizedToasts-DFProperties-End -->
@@ -1078,7 +1143,7 @@ Same as Disabled.
 <!-- EnableInAppCustomization-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- EnableInAppCustomization-Applicability-End -->
 
 <!-- EnableInAppCustomization-OmaUri-Begin -->
@@ -1089,20 +1154,24 @@ Same as Disabled.
 
 <!-- EnableInAppCustomization-Description-Begin -->
 <!-- Description-Source-ADMX -->
-Display specified contact information to local users in a contact card flyout menu in Windows Security
+Display specified contact information to local users in a contact card flyout menu in Windows Security.
 
 Enabled:
+
 Your company contact information will be displayed in a flyout menu in Windows Security.
 
 After setting this to Enabled, you must configure the Specify contact company name GP setting and at least one of the following GP settings:
+
 -Specify contact phone number or Skype ID
 -Specify contact email number or email ID
--Specify contact website
+-Specify contact website.
 
 Disabled:
+
 No contact information will be shown in Windows Security.
 
 Not configured:
+
 Same as Disabled.
 <!-- EnableInAppCustomization-Description-End -->
 
@@ -1115,7 +1184,7 @@ Same as Disabled.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- EnableInAppCustomization-DFProperties-End -->
@@ -1125,7 +1194,7 @@ Same as Disabled.
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | (Disable) Do not display the company name and contact options in the card fly out notification. |
+| 0 (Default) | (Disable) Don't display the company name and contact options in the card fly out notification. |
 | 1 | (Enable) Display the company name and contact options in the card fly out notification. |
 <!-- EnableInAppCustomization-AllowedValues-End -->
 
@@ -1155,7 +1224,7 @@ Same as Disabled.
 <!-- HideRansomwareDataRecovery-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- HideRansomwareDataRecovery-Applicability-End -->
 
 <!-- HideRansomwareDataRecovery-OmaUri-Begin -->
@@ -1169,12 +1238,15 @@ Same as Disabled.
 Hide the Ransomware data recovery area in Windows Security.
 
 Enabled:
+
 The Ransomware data recovery area will be hidden.
 
 Disabled:
+
 The Ransomware data recovery area will be shown.
 
 Not configured:
+
 Same as Disabled.
 <!-- HideRansomwareDataRecovery-Description-End -->
 
@@ -1187,7 +1259,7 @@ Same as Disabled.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- HideRansomwareDataRecovery-DFProperties-End -->
@@ -1227,7 +1299,7 @@ Same as Disabled.
 <!-- HideSecureBoot-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- HideSecureBoot-Applicability-End -->
 
 <!-- HideSecureBoot-OmaUri-Begin -->
@@ -1241,12 +1313,15 @@ Same as Disabled.
 Hide the Secure boot area in Windows Security.
 
 Enabled:
+
 The Secure boot area will be hidden.
 
 Disabled:
+
 The Secure boot area will be shown.
 
 Not configured:
+
 Same as Disabled.
 <!-- HideSecureBoot-Description-End -->
 
@@ -1259,7 +1334,7 @@ Same as Disabled.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- HideSecureBoot-DFProperties-End -->
@@ -1299,7 +1374,7 @@ Same as Disabled.
 <!-- HideTPMTroubleshooting-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- HideTPMTroubleshooting-Applicability-End -->
 
 <!-- HideTPMTroubleshooting-OmaUri-Begin -->
@@ -1313,12 +1388,15 @@ Same as Disabled.
 Hide the Security processor (TPM) troubleshooting area in Windows Security.
 
 Enabled:
+
 The Security processor (TPM) troubleshooting area will be hidden.
 
 Disabled:
+
 The Security processor (TPM) troubleshooting area will be shown.
 
 Not configured:
+
 Same as Disabled.
 <!-- HideTPMTroubleshooting-Description-End -->
 
@@ -1331,7 +1409,7 @@ Same as Disabled.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- HideTPMTroubleshooting-DFProperties-End -->
@@ -1371,7 +1449,7 @@ Same as Disabled.
 <!-- HideWindowsSecurityNotificationAreaControl-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- HideWindowsSecurityNotificationAreaControl-Applicability-End -->
 
 <!-- HideWindowsSecurityNotificationAreaControl-OmaUri-Begin -->
@@ -1387,12 +1465,15 @@ This policy setting hides the Windows Security notification area control.
 The user needs to either sign out and sign in or reboot the computer for this setting to take effect.
 
 Enabled:
+
 Windows Security notification area control will be hidden.
 
 Disabled:
+
 Windows Security notification area control will be shown.
 
 Not configured:
+
 Same as Disabled.
 <!-- HideWindowsSecurityNotificationAreaControl-Description-End -->
 
@@ -1405,7 +1486,7 @@ Same as Disabled.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- HideWindowsSecurityNotificationAreaControl-DFProperties-End -->
@@ -1445,7 +1526,7 @@ Same as Disabled.
 <!-- Phone-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Phone-Applicability-End -->
 
 <!-- Phone-OmaUri-Begin -->
@@ -1455,9 +1536,22 @@ Same as Disabled.
 <!-- Phone-OmaUri-End -->
 
 <!-- Phone-Description-Begin -->
-<!-- Description-Source-DDF -->
-The phone number or Skype ID that is displayed to users. Skype is used to initiate the call.
-- If you disable or do not configure this setting, or do not have EnableCustomizedToasts or EnableInAppCustomization enabled, then devices will not display contact options. Value type is string. Supported operations are Add, Get, Replace, and Delete.
+<!-- Description-Source-ADMX -->
+Specify the phone number or Skype ID that will be displayed in Windows Security and associated notifications.
+
+Users can click on the contact information to automatically call the supplied number. Skype will be used to initiate the call.
+
+Enabled:
+
+Enter the phone number or Skype ID in the Options section.
+
+Disabled:
+
+A contact phone number or Skype ID won't be shown in either Windows Security or any notifications it creates.
+
+Not configured:
+
+Same as Disabled.
 <!-- Phone-Description-End -->
 
 <!-- Phone-Editable-Begin -->
@@ -1469,7 +1563,7 @@ The phone number or Skype ID that is displayed to users. Skype is used to initia
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Phone-DFProperties-End -->
 
@@ -1480,7 +1574,7 @@ The phone number or Skype ID that is displayed to users. Skype is used to initia
 |:--|:--|
 | Name | EnterpriseCustomization_Phone |
 | Friendly Name | Specify contact phone number or Skype ID |
-| Element Name | Phone number or Skype ID |
+| Element Name | Phone number or Skype ID. |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Security > Enterprise Customization |
 | Registry Key Name | SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Enterprise Customization |
@@ -1499,7 +1593,7 @@ The phone number or Skype ID that is displayed to users. Skype is used to initia
 <!-- URL-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- URL-Applicability-End -->
 
 <!-- URL-OmaUri-Begin -->
@@ -1509,9 +1603,22 @@ The phone number or Skype ID that is displayed to users. Skype is used to initia
 <!-- URL-OmaUri-End -->
 
 <!-- URL-Description-Begin -->
-<!-- Description-Source-DDF -->
-The help portal URL this is displayed to users. The default browser is used to initiate this action.
-- If you disable or do not configure this setting, or do not have EnableCustomizedToasts or EnableInAppCustomization enabled, then the device will not display contact options. Value type is Value type is string. Supported operations are Add, Get, Replace, and Delete.
+<!-- Description-Source-ADMX -->
+Specify the URL that will be displayed in Windows Security and associated notifications.
+
+Users can click on the contact information to visit the specified website. The default web browser will be used.
+
+Enabled:
+
+Enter the URL in the Options section.
+
+Disabled:
+
+A contact website URL won't be shown in either Windows Security or any notifications it creates.
+
+Not configured:
+
+Same as Disabled.
 <!-- URL-Description-End -->
 
 <!-- URL-Editable-Begin -->
@@ -1523,7 +1630,7 @@ The help portal URL this is displayed to users. The default browser is used to i
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- URL-DFProperties-End -->
 
@@ -1534,7 +1641,7 @@ The help portal URL this is displayed to users. The default browser is used to i
 |:--|:--|
 | Name | EnterpriseCustomization_URL |
 | Friendly Name | Specify contact website |
-| Element Name | IT or support website |
+| Element Name | IT or support website. |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Security > Enterprise Customization |
 | Registry Key Name | SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Enterprise Customization |

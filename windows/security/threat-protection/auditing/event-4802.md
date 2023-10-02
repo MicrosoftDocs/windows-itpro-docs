@@ -1,11 +1,11 @@
 ---
-title: 4802(S) The screen saver was invoked. (Windows 10)
+title: 4802(S) The screen saver was invoked. 
 description: Describes security event 4802(S) The screen saver was invoked. This event is generated when screen saver is invoked.
 ms.pagetype: security
 ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
+ms.localizationpriority: low
 author: vinaypamnani-msft
 ms.date: 09/07/2021
 ms.reviewer: 

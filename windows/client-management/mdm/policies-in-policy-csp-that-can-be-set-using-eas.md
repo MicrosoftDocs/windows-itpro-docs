@@ -4,7 +4,7 @@ description: Learn about the policies in Policy CSP that can be set using Exchan
 ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
-ms.topic: article
+ms.topic: reference
 ms.prod: windows-client
 ms.technology: itpro-manage
 author: vinaypamnani-msft

@@ -1,5 +1,5 @@
 ---
-title: Network security Force logoff when logon hours expire (Windows 10)
+title: Network security Force logoff when logon hours expire 
 description: Best practices, location, values, policy management, and security considerations for the policy setting, Network security Force logoff when logon hours expire.
 ms.assetid: 64d5dde4-58e4-4217-b2c4-73bd554ec926
 ms.reviewer: 

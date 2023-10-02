@@ -1,14 +1,12 @@
 ---
 title: Create a WIP policy in Intune
 description: Learn how to use the Microsoft Intune admin center to create and deploy your Windows Information Protection (WIP) policy to protect data on your network.
-ms.prod: windows-client
 author: aczechowski
 ms.author: aaroncz
-manager: dougeby
+manager: aaroncz
 ms.reviewer: rafals
 ms.topic: how-to
 ms.date: 07/15/2022
-ms.technology: itpro-security
 ---
 
 # Create a Windows Information Protection policy in Microsoft Intune
@@ -211,7 +209,7 @@ This section covers two examples of using an AppLocker XML file to the **Protect
 - [Create a Packaged App rule for Store apps](#create-a-packaged-app-rule-for-store-apps)
 - [Create an Executable rule for unsigned apps](#create-an-executable-rule-for-unsigned-apps)
 
-For more info about AppLocker, see the [AppLocker](../../threat-protection/windows-defender-application-control/applocker/applocker-overview.md) content.
+For more info about AppLocker, see the [AppLocker](../../application-security/application-control/windows-defender-application-control/applocker/applocker-overview.md) content.
 
 #### Create a Packaged App rule for Store apps
 
@@ -600,7 +598,7 @@ You can restrict which files are protected by WIP when they're downloaded from a
 
 - [What is Azure Rights Management?](/information-protection/understand-explore/what-is-azure-rms)
 
-- [Create a Windows Information Protection (WIP) protection policy using Microsoft Intune](./overview-create-wip-policy.md)
+- [Create a Windows Information Protection (WIP) protection policy using Microsoft Intune](overview-create-wip-policy.md)
 
 - [Intune MAM Without Enrollment](/archive/blogs/configmgrdogs/intune-mam-without-enrollment)
 

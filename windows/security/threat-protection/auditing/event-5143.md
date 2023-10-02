@@ -1,11 +1,11 @@
 ---
-title: 5143(S) A network share object was modified. (Windows 10)
+title: 5143(S) A network share object was modified. 
 description: Describes security event 5143(S) A network share object was modified. This event is generated when a network share object is modified.
 ms.pagetype: security
 ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
+ms.localizationpriority: low
 author: vinaypamnani-msft
 ms.date: 09/08/2021
 ms.reviewer: 

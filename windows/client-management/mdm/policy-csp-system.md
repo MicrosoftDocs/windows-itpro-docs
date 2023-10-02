@@ -4,7 +4,7 @@ description: Learn more about the System Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 08/30/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,9 @@ ms.topic: reference
 <!-- System-Begin -->
 # Policy CSP - System
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
+
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- System-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -31,7 +30,7 @@ ms.topic: reference
 <!-- AllowBuildPreview-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowBuildPreview-Applicability-End -->
 
 <!-- AllowBuildPreview-OmaUri-Begin -->
@@ -44,7 +43,7 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting determines whether users can get preview builds of Windows, by configuring controls in Settings > Update and security > Windows Insider Program.
 
-- If you enable or do not configure this policy setting, users can download and install preview builds of Windows by configuring Windows Insider Program settings.
+- If you enable or don't configure this policy setting, users can download and install preview builds of Windows by configuring Windows Insider Program settings.
 
 - If you disable this policy setting, Windows Insider Program settings will be unavailable to users through the Settings app.
 
@@ -60,7 +59,7 @@ This policy is only supported up to Windows 10, Version 1703. Please use 'Manage
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 2 |
 <!-- AllowBuildPreview-DFProperties-End -->
@@ -101,7 +100,7 @@ This policy is only supported up to Windows 10, Version 1703. Please use 'Manage
 <!-- AllowCommercialDataPipeline-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- AllowCommercialDataPipeline-Applicability-End -->
 
 <!-- AllowCommercialDataPipeline-OmaUri-Begin -->
@@ -112,14 +111,19 @@ This policy is only supported up to Windows 10, Version 1703. Please use 'Manage
 
 <!-- AllowCommercialDataPipeline-Description-Begin -->
 <!-- Description-Source-ADMX -->
-AllowCommercialDataPipeline configures an Azure Active Directory joined device so that Microsoft is the processor of the Windows diagnostic data collected from the device, subject to the Product Terms at <https://go.microsoft.com/fwlink/?linkid=2185086>.
+This policy is deprecated and will only work on Windows 10 version 1809. Setting this policy will have no effect for other supported versions of Windows.
+
+AllowCommercialDataPipeline configures an Azure Active Directory joined device so that Microsoft is the processor of the Windows diagnostic data collected from the device, subject to the Product Terms at< https://go.microsoft.com/fwlink/?linkid=2185086>.
+
 To enable this behavior:
 
 1. Enable this policy setting
-2. Join an Azure Active Directory account to the device
+2. Join an Azure Active Directory account to the device.
 
-Windows diagnostic data is collected when the Allow Telemetry policy setting is set to value 1 - Required or above. Configuring this setting does not change the Windows diagnostic data collection level set for the device
-- If you disable or do not configure this setting, Microsoft will be the controller of the Windows diagnostic data collected from the device and processed in accordance with Microsoft's privacy statement at <https://go.microsoft.com/fwlink/?LinkId=521839> unless you have enabled policies like 'Allow Update Compliance Processing' or 'Allow Desktop Analytics Processing".
+Windows diagnostic data is collected when the Allow Telemetry policy setting is set to value 1 - Required or above. Configuring this setting doesn't change the Windows diagnostic data collection level set for the device.
+
+If you disable or don't configure this setting, Microsoft will be the controller of the Windows diagnostic data collected from the device and processed in accordance with Microsoft's privacy statement at <https://go.microsoft.com/fwlink/?LinkId=521839> unless you have enabled policies like 'Allow Update Compliance Processing' or 'Allow Desktop Analytics Processing'.
+
 See the documentation at <https://go.microsoft.com/fwlink/?linkid=2011107> for information on this and other policies that will result in Microsoft being the processor of Windows diagnostic data.
 <!-- AllowCommercialDataPipeline-Description-End -->
 
@@ -128,8 +132,8 @@ See the documentation at <https://go.microsoft.com/fwlink/?linkid=2011107> for i
 > [!NOTE]
 > Configuring this setting doesn't affect the operation of optional analytics processor services like Desktop Analytics and Windows Update for Business reports.
 
-> [!IMPORTANT]
-> Starting with the January 2023 preview cumulative update, this policy is no longer supported to configure the processor option. For more information, see [Changes to Windows diagnostic data collection](/windows/privacy/changes-to-windows-diagnostic-data-collection#significant-changes-coming-to-the-windows-diagnostic-data-processor-configuration).
+> [!NOTE]
+> Starting with the January 2023 preview cumulative update, this policy is no longer supported to configure the processor option. For more information, see [Enable Windows diagnostic data processor configuration](/windows/privacy/configure-windows-diagnostic-data-in-your-organization#enable-windows-diagnostic-data-processor-configuration).
 <!-- AllowCommercialDataPipeline-Editable-End -->
 
 <!-- AllowCommercialDataPipeline-DFProperties-Begin -->
@@ -137,7 +141,7 @@ See the documentation at <https://go.microsoft.com/fwlink/?linkid=2011107> for i
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- AllowCommercialDataPipeline-DFProperties-End -->
@@ -176,7 +180,7 @@ See the documentation at <https://go.microsoft.com/fwlink/?linkid=2011107> for i
 <!-- AllowDesktopAnalyticsProcessing-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763.1217] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.836] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763.1217] and later <br> ✅ Windows 10, version 1903 [10.0.18362.836] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AllowDesktopAnalyticsProcessing-Applicability-End -->
 
 <!-- AllowDesktopAnalyticsProcessing-OmaUri-Begin -->
@@ -187,24 +191,27 @@ See the documentation at <https://go.microsoft.com/fwlink/?linkid=2011107> for i
 
 <!-- AllowDesktopAnalyticsProcessing-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting, in combination with the Allow Telemetry and Configure the Commercial ID, enables organizations to configure the device so that Microsoft is the processor for Windows diagnostic data collected from the device, subject to the Product Terms at <https://go.microsoft.com/fwlink/?linkid=2185086>.
+This policy is deprecated and will only work on Windows 10 version 1809. Setting this policy will have no effect for other supported versions of Windows.
+
+This policy setting, in combination with the Allow Telemetry and Configure the Commercial ID, enables organizations to configure the device so that Microsoft is the processor for Windows diagnostic data collected from the device, subject to the Product Terms at< https://go.microsoft.com/fwlink/?linkid=2185086>.
+
 To enable this behavior:
 
 1. Enable this policy setting
-2. Join an Azure Active Directory account to the device
+2. Join an Azure Active Directory account to the device.
 
 3. Set Allow Telemetry to value 1 - Required, or higher
-4. Set the Configure the Commercial ID setting for your Desktop Analytics workspace
+4. Set the Configure the Commercial ID setting for your Desktop Analytics workspace.
 
 When these policies are configured, Windows diagnostic data collected from the device will be subject to Microsoft processor commitments.
-This setting has no effect on devices unless they are properly enrolled in Desktop Analytics.
-- If you disable this policy setting, devices will not appear in Desktop Analytics.
+
+This setting has no effect on devices unless they're properly enrolled in Desktop Analytics. If you disable this policy setting, devices won't appear in Desktop Analytics.
 <!-- AllowDesktopAnalyticsProcessing-Description-End -->
 
 <!-- AllowDesktopAnalyticsProcessing-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-> [!IMPORTANT]
-> Starting with the January 2023 preview cumulative update, this policy is no longer supported to configure the processor option. For more information, see [Changes to Windows diagnostic data collection](/windows/privacy/changes-to-windows-diagnostic-data-collection#significant-changes-coming-to-the-windows-diagnostic-data-processor-configuration).
+> [!NOTE]
+> Starting with the January 2023 preview cumulative update, this policy is no longer supported to configure the processor option. For more information, see [Enable Windows diagnostic data processor configuration](/windows/privacy/configure-windows-diagnostic-data-in-your-organization#enable-windows-diagnostic-data-processor-configuration).
 <!-- AllowDesktopAnalyticsProcessing-Editable-End -->
 
 <!-- AllowDesktopAnalyticsProcessing-DFProperties-Begin -->
@@ -212,7 +219,7 @@ This setting has no effect on devices unless they are properly enrolled in Deskt
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- AllowDesktopAnalyticsProcessing-DFProperties-End -->
@@ -251,7 +258,7 @@ This setting has no effect on devices unless they are properly enrolled in Deskt
 <!-- AllowDeviceNameInDiagnosticData-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- AllowDeviceNameInDiagnosticData-Applicability-End -->
 
 <!-- AllowDeviceNameInDiagnosticData-OmaUri-Begin -->
@@ -264,7 +271,7 @@ This setting has no effect on devices unless they are properly enrolled in Deskt
 <!-- Description-Source-ADMX -->
 This policy allows the device name to be sent to Microsoft as part of Windows diagnostic data.
 
-- If you disable or do not configure this policy setting, then device name will not be sent to Microsoft as part of Windows diagnostic data.
+If you disable or don't configure this policy setting, then device name won't be sent to Microsoft as part of Windows diagnostic data.
 <!-- AllowDeviceNameInDiagnosticData-Description-End -->
 
 <!-- AllowDeviceNameInDiagnosticData-Editable-Begin -->
@@ -276,7 +283,7 @@ This policy allows the device name to be sent to Microsoft as part of Windows di
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- AllowDeviceNameInDiagnosticData-DFProperties-End -->
@@ -315,7 +322,7 @@ This policy allows the device name to be sent to Microsoft as part of Windows di
 <!-- AllowEmbeddedMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowEmbeddedMode-Applicability-End -->
 
 <!-- AllowEmbeddedMode-OmaUri-Begin -->
@@ -338,7 +345,7 @@ Specifies whether set general purpose device to be in embedded mode. Most restri
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- AllowEmbeddedMode-DFProperties-End -->
@@ -364,7 +371,7 @@ Specifies whether set general purpose device to be in embedded mode. Most restri
 <!-- AllowExperimentation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowExperimentation-Applicability-End -->
 
 <!-- AllowExperimentation-OmaUri-Begin -->
@@ -375,8 +382,9 @@ Specifies whether set general purpose device to be in embedded mode. Most restri
 
 <!-- AllowExperimentation-Description-Begin -->
 <!-- Description-Source-DDF -->
+
 > [!NOTE]
-> This policy is not supported in Windows 10, version 1607. This policy setting determines the level that Microsoft can experiment with the product to study user preferences or device behavior. Most restricted value is 0.
+> This policy isn't supported in Windows 10, version 1607. This policy setting determines the level that Microsoft can experiment with the product to study user preferences or device behavior. Most restricted value is 0.
 <!-- AllowExperimentation-Description-End -->
 
 <!-- AllowExperimentation-Editable-Begin -->
@@ -388,7 +396,7 @@ Specifies whether set general purpose device to be in embedded mode. Most restri
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowExperimentation-DFProperties-End -->
@@ -415,7 +423,7 @@ Specifies whether set general purpose device to be in embedded mode. Most restri
 <!-- AllowFontProviders-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowFontProviders-Applicability-End -->
 
 <!-- AllowFontProviders-OmaUri-Begin -->
@@ -430,9 +438,9 @@ This policy setting determines whether Windows is allowed to download fonts and 
 
 - If you enable this policy setting, Windows periodically queries an online font provider to determine whether a new font catalog is available. Windows may also download font data if needed to format or render text.
 
-- If you disable this policy setting, Windows does not connect to an online font provider and only enumerates locally-installed fonts.
+- If you disable this policy setting, Windows doesn't connect to an online font provider and only enumerates locally-installed fonts.
 
-- If you do not configure this policy setting, the default behavior depends on the Windows edition. Changes to this policy take effect on reboot.
+- If you don't configure this policy setting, the default behavior depends on the Windows edition. Changes to this policy take effect on reboot.
 <!-- AllowFontProviders-Description-End -->
 
 <!-- AllowFontProviders-Editable-Begin -->
@@ -450,7 +458,7 @@ This setting is used by lower-level components for text display and fond handlin
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowFontProviders-DFProperties-End -->
@@ -490,7 +498,7 @@ This setting is used by lower-level components for text display and fond handlin
 <!-- AllowLocation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowLocation-Applicability-End -->
 
 <!-- AllowLocation-OmaUri-Begin -->
@@ -513,7 +521,7 @@ Specifies whether to allow app access to the Location service. Most restricted v
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowLocation-DFProperties-End -->
@@ -523,9 +531,9 @@ Specifies whether to allow app access to the Location service. Most restricted v
 
 | Value | Description |
 |:--|:--|
-| 0 | Force Location Off. All Location Privacy settings are toggled off and grayed out. Users cannot change the settings, and no apps are allowed access to the Location service, including Cortana and Search. |
+| 0 | Force Location Off. All Location Privacy settings are toggled off and grayed out. Users can't change the settings, and no apps are allowed access to the Location service, including Cortana and Search. |
 | 1 (Default) | Location service is allowed. The user has control and can change Location Privacy settings on or off. |
-| 2 | Force Location On. All Location Privacy settings are toggled on and grayed out. Users cannot change the settings and all consent permissions will be automatically suppressed. |
+| 2 | Force Location On. All Location Privacy settings are toggled on and grayed out. Users can't change the settings and all consent permissions will be automatically suppressed. |
 <!-- AllowLocation-AllowedValues-End -->
 
 <!-- AllowLocation-GpMapping-Begin -->
@@ -554,7 +562,7 @@ Specifies whether to allow app access to the Location service. Most restricted v
 <!-- AllowMicrosoftManagedDesktopProcessing-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763.1217] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.836] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763.1217] and later <br> ✅ Windows 10, version 1903 [10.0.18362.836] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AllowMicrosoftManagedDesktopProcessing-Applicability-End -->
 
 <!-- AllowMicrosoftManagedDesktopProcessing-OmaUri-Begin -->
@@ -566,17 +574,16 @@ Specifies whether to allow app access to the Location service. Most restricted v
 <!-- AllowMicrosoftManagedDesktopProcessing-Description-Begin -->
 <!-- Description-Source-DDF -->
 This policy is deprecated and will only work on Windows 10 version 1809. Setting this policy will have no effect for other supported versions of Windows.
-This policy setting configures an Azure Active Directory joined device so that Microsoft is the processor of the Windows diagnostic data collected from the device, subject to the Product Terms at <https://go.microsoft.com/fwlink/?linkid=2185086>.
+This policy setting configures an Azure Active Directory joined device so that Microsoft is the processor of the Windows diagnostic data collected from the device, subject to the Product Terms at< https://go.microsoft.com/fwlink/?linkid=2185086>.
 For customers who enroll into the Microsoft Managed Desktop service, enabling this policy is required to allow Microsoft to process data for operational and analytic needs. See <https://go.microsoft.com/fwlink/?linkid=2184944> for more information.
 hen these policies are configured, Windows diagnostic data collected from the device will be subject to Microsoft processor commitments.
-This setting has no effect on devices unless they are properly enrolled in Microsoft Managed Desktop.
-- If you disable this policy setting, devices may not appear in Microsoft Managed Desktop.
+This setting has no effect on devices unless they're properly enrolled in Microsoft Managed Desktop. If you disable this policy setting, devices may not appear in Microsoft Managed Desktop.
 <!-- AllowMicrosoftManagedDesktopProcessing-Description-End -->
 
 <!-- AllowMicrosoftManagedDesktopProcessing-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-> [!IMPORTANT]
-> Starting with the January 2023 preview cumulative update, this policy is no longer supported to configure the processor option. For more information, see [Changes to Windows diagnostic data collection](/windows/privacy/changes-to-windows-diagnostic-data-collection#significant-changes-coming-to-the-windows-diagnostic-data-processor-configuration).
+> [!NOTE]
+> Starting with the January 2023 preview cumulative update, this policy is no longer supported to configure the processor option. For more information, see [Enable Windows diagnostic data processor configuration](/windows/privacy/configure-windows-diagnostic-data-in-your-organization#enable-windows-diagnostic-data-processor-configuration).
 <!-- AllowMicrosoftManagedDesktopProcessing-Editable-End -->
 
 <!-- AllowMicrosoftManagedDesktopProcessing-DFProperties-Begin -->
@@ -584,7 +591,7 @@ This setting has no effect on devices unless they are properly enrolled in Micro
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- AllowMicrosoftManagedDesktopProcessing-DFProperties-End -->
@@ -610,7 +617,7 @@ This setting has no effect on devices unless they are properly enrolled in Micro
 <!-- AllowStorageCard-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowStorageCard-Applicability-End -->
 
 <!-- AllowStorageCard-OmaUri-Begin -->
@@ -633,7 +640,7 @@ Controls whether the user is allowed to use the storage card for device storage.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowStorageCard-DFProperties-End -->
@@ -643,7 +650,7 @@ Controls whether the user is allowed to use the storage card for device storage.
 
 | Value | Description |
 |:--|:--|
-| 0 | SD card use is not allowed and USB drives are disabled. This setting does not prevent programmatic access to the storage card. |
+| 0 | SD card use isn't allowed and USB drives are disabled. This setting doesn't prevent programmatic access to the storage card. |
 | 1 (Default) | Allow a storage card. |
 <!-- AllowStorageCard-AllowedValues-End -->
 
@@ -659,7 +666,7 @@ Controls whether the user is allowed to use the storage card for device storage.
 <!-- AllowTelemetry-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowTelemetry-Applicability-End -->
 
 <!-- AllowTelemetry-OmaUri-Begin -->
@@ -674,16 +681,18 @@ Controls whether the user is allowed to use the storage card for device storage.
 
 <!-- AllowTelemetry-Description-Begin -->
 <!-- Description-Source-ADMX -->
-By configuring this policy setting you can adjust what diagnostic data is collected from Windows. This policy setting also restricts the user from increasing the amount of diagnostic data collection via the Settings app. The diagnostic data collected under this policy impacts the operating system and apps that are considered part of Windows and does not apply to any additional apps installed by your organization.
+By configuring this policy setting you can adjust what diagnostic data is collected from Windows. This policy setting also restricts the user from increasing the amount of diagnostic data collection via the Settings app. The diagnostic data collected under this policy impacts the operating system and apps that are considered part of Windows and doesn't apply to any additional apps installed by your organization.
 
 - Diagnostic data off (not recommended). Using this value, no diagnostic data is sent from the device. This value is only supported on Enterprise, Education, and Server editions.
+
 - Send required diagnostic data. This is the minimum diagnostic data necessary to keep Windows secure, up to date, and performing as expected. Using this value disables the "Optional diagnostic data" control in the Settings app.
+
 - Send optional diagnostic data. Additional diagnostic data is collected that helps us to detect, diagnose and fix issues, as well as make product improvements. Required diagnostic data will always be included when you choose to send optional diagnostic data. Optional diagnostic data can also include diagnostic log files and crash dumps. Use the "Limit Dump Collection" and the "Limit Diagnostic Log Collection" policies for more granular control of what optional diagnostic data is sent.
 
-- If you disable or do not configure this policy setting, the device will send required diagnostic data and the end user can choose whether to send optional diagnostic data from the Settings app.
+If you disable or don't configure this policy setting, the device will send required diagnostic data and the end user can choose whether to send optional diagnostic data from the Settings app.
 
-**Note**:
-The "Configure diagnostic data opt-in settings user interface" group policy can be used to prevent end users from changing their data collection settings.
+> [!NOTE]
+> The "Configure diagnostic data opt-in settings user interface" group policy can be used to prevent end users from changing their data collection settings.
 <!-- AllowTelemetry-Description-End -->
 
 <!-- AllowTelemetry-Editable-Begin -->
@@ -695,7 +704,7 @@ The "Configure diagnostic data opt-in settings user interface" group policy can 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowTelemetry-DFProperties-End -->
@@ -703,7 +712,12 @@ The "Configure diagnostic data opt-in settings user interface" group policy can 
 <!-- AllowTelemetry-AllowedValues-Begin -->
 **Allowed values**:
 
-<hr/>
+| Value | Description |
+|:--|:--|
+| 0 | Security. Information that's required to help keep Windows more secure, including data about the Connected User Experience and Telemetry component settings, the Malicious Software Removal Tool, and Windows Defender.<br>Note: This value is only applicable to Windows 10 Enterprise, Windows 10 Education, Windows 10 Mobile Enterprise, Windows 10 IoT Core (IoT Core), and Windows Server 2016. Using this setting on other devices is equivalent to setting the value of 1. |
+| 1 (Default) | Basic. Basic device info, including: quality-related data, app compatibility, app usage data, and data from the Security level. |
+| 3 | Full. All data necessary to identify and help to fix problems, plus data from the Security, Basic, and Enhanced levels. |
+<!-- AllowTelemetry-AllowedValues-End -->
 
 <!-- AllowTelemetry-GpMapping-Begin -->
 **Group policy mapping**:
@@ -730,7 +744,7 @@ The "Configure diagnostic data opt-in settings user interface" group policy can 
 <!-- AllowUpdateComplianceProcessing-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763.1217] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.836] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763.1217] and later <br> ✅ Windows 10, version 1903 [10.0.18362.836] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AllowUpdateComplianceProcessing-Applicability-End -->
 
 <!-- AllowUpdateComplianceProcessing-OmaUri-Begin -->
@@ -741,23 +755,27 @@ The "Configure diagnostic data opt-in settings user interface" group policy can 
 
 <!-- AllowUpdateComplianceProcessing-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting, in combination with the Allow Telemetry and Configure the Commercial ID, enables organizations to configure the device so that Microsoft is the processor of the Windows diagnostic data collected from the device, subject to the Product Terms at <https://go.microsoft.com/fwlink/?linkid=2185086>.
+This policy is deprecated and will only work on Windows 10 version 1809. Setting this policy will have no effect for other supported versions of Windows.
+
+This policy setting, in combination with the Allow Telemetry and Configure the Commercial ID, enables organizations to configure the device so that Microsoft is the processor of the Windows diagnostic data collected from the device, subject to the Product Terms at< https://go.microsoft.com/fwlink/?linkid=2185086>.
+
 To enable this behavior:
 
 1. Enable this policy setting
-2. Join an Azure Active Directory account to the device
+2. Join an Azure Active Directory account to the device.
 
 3. Set Allow Telemetry to value 1 - Required, or higher
-4. Set the Configure the Commercial ID setting for your Update Compliance workspace
+4. Set the Configure the Commercial ID setting for your Update Compliance workspace.
 
 When these policies are configured, Windows diagnostic data collected from the device will be subject to Microsoft processor commitments.
-- If you disable or do not configure this policy setting, devices will not appear in Update Compliance.
+
+If you disable or don't configure this policy setting, devices won't appear in Update Compliance.
 <!-- AllowUpdateComplianceProcessing-Description-End -->
 
 <!-- AllowUpdateComplianceProcessing-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-> [!IMPORTANT]
-> Starting with the January 2023 preview cumulative update, this policy is no longer supported to configure the processor option. For more information, see [Changes to Windows diagnostic data collection](/windows/privacy/changes-to-windows-diagnostic-data-collection#significant-changes-coming-to-the-windows-diagnostic-data-processor-configuration).
+> [!NOTE]
+> Starting with the January 2023 preview cumulative update, this policy is no longer supported to configure the processor option. For more information, see [Enable Windows diagnostic data processor configuration](/windows/privacy/configure-windows-diagnostic-data-in-your-organization#enable-windows-diagnostic-data-processor-configuration).
 <!-- AllowUpdateComplianceProcessing-Editable-End -->
 
 <!-- AllowUpdateComplianceProcessing-DFProperties-Begin -->
@@ -765,7 +783,7 @@ When these policies are configured, Windows diagnostic data collected from the d
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- AllowUpdateComplianceProcessing-DFProperties-End -->
@@ -804,7 +822,7 @@ When these policies are configured, Windows diagnostic data collected from the d
 <!-- AllowUserToResetPhone-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowUserToResetPhone-Applicability-End -->
 
 <!-- AllowUserToResetPhone-OmaUri-Begin -->
@@ -827,7 +845,7 @@ Specifies whether to allow the user to factory reset the device by using control
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowUserToResetPhone-DFProperties-End -->
@@ -853,7 +871,7 @@ Specifies whether to allow the user to factory reset the device by using control
 <!-- AllowWUfBCloudProcessing-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763.1217] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.836] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763.1217] and later <br> ✅ Windows 10, version 1903 [10.0.18362.836] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AllowWUfBCloudProcessing-Applicability-End -->
 
 <!-- AllowWUfBCloudProcessing-OmaUri-Begin -->
@@ -864,22 +882,26 @@ Specifies whether to allow the user to factory reset the device by using control
 
 <!-- AllowWUfBCloudProcessing-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting configures an Azure Active Directory joined device so that Microsoft is the processor of the Windows diagnostic data collected from the device, subject to the Product Terms at <https://go.microsoft.com/fwlink/?linkid=2185086>.
+This policy is deprecated and will only work on Windows 10 version 1809. Setting this policy will have no effect for other supported versions of Windows.
+
+This policy setting configures an Azure Active Directory joined device so that Microsoft is the processor of the Windows diagnostic data collected from the device, subject to the Product Terms at< https://go.microsoft.com/fwlink/?linkid=2185086>.
+
 To enable this behavior:
 
 1. Enable this policy setting
-2. Join an Azure Active Directory account to the device
+2. Join an Azure Active Directory account to the device.
 
-3. Set Allow Telemetry to value 1 - Required, or higher
+3. Set Allow Telemetry to value 1 - Required, or higher.
 
 When these policies are configured, Windows diagnostic data collected from the device will be subject to Microsoft processor commitments.
-- If you disable or do not configure this policy setting, devices enrolled to the Windows Update for Business deployment service will not be able to take advantage of some deployment service features.
+
+If you disable or don't configure this policy setting, devices enrolled to the Windows Update for Business deployment service won't be able to take advantage of some deployment service features.
 <!-- AllowWUfBCloudProcessing-Description-End -->
 
 <!-- AllowWUfBCloudProcessing-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-> [!IMPORTANT]
-> Starting with the January 2023 preview cumulative update, this policy is no longer supported to configure the processor option. For more information, see [Changes to Windows diagnostic data collection](/windows/privacy/changes-to-windows-diagnostic-data-collection#significant-changes-coming-to-the-windows-diagnostic-data-processor-configuration).
+> [!NOTE]
+> Starting with the January 2023 preview cumulative update, this policy is no longer supported to configure the processor option. For more information, see [Enable Windows diagnostic data processor configuration](/windows/privacy/configure-windows-diagnostic-data-in-your-organization#enable-windows-diagnostic-data-processor-configuration).
 <!-- AllowWUfBCloudProcessing-Editable-End -->
 
 <!-- AllowWUfBCloudProcessing-DFProperties-Begin -->
@@ -887,7 +909,7 @@ When these policies are configured, Windows diagnostic data collected from the d
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- AllowWUfBCloudProcessing-DFProperties-End -->
@@ -926,7 +948,7 @@ When these policies are configured, Windows diagnostic data collected from the d
 <!-- BootStartDriverInitialization-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- BootStartDriverInitialization-Applicability-End -->
 
 <!-- BootStartDriverInitialization-OmaUri-Begin -->
@@ -938,16 +960,20 @@ When these policies are configured, Windows diagnostic data collected from the d
 <!-- BootStartDriverInitialization-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting allows you to specify which boot-start drivers are initialized based on a classification determined by an Early Launch Antimalware boot-start driver. The Early Launch Antimalware boot-start driver can return the following classifications for each boot-start driver:
-- Good: The driver has been signed and has not been tampered with.
-- Bad: The driver has been identified as malware. It is recommended that you do not allow known bad drivers to be initialized.
-- Bad, but required for boot: The driver has been identified as malware, but the computer cannot successfully boot without loading this driver.
-- Unknown: This driver has not been attested to by your malware detection application and has not been classified by the Early Launch Antimalware boot-start driver.
 
-- If you enable this policy setting you will be able to choose which boot-start drivers to initialize the next time the computer is started.
+- Good: The driver has been signed and hasn't been tampered with.
 
-- If you disable or do not configure this policy setting, the boot start drivers determined to be Good, Unknown or Bad but Boot Critical are initialized and the initialization of drivers determined to be Bad is skipped.
+- Bad: The driver has been identified as malware. It's recommended that you don't allow known bad drivers to be initialized.
 
-If your malware detection application does not include an Early Launch Antimalware boot-start driver or if your Early Launch Antimalware boot-start driver has been disabled, this setting has no effect and all boot-start drivers are initialized.
+- Bad, but required for boot: The driver has been identified as malware, but the computer can't successfully boot without loading this driver.
+
+- Unknown: This driver hasn't been attested to by your malware detection application and hasn't been classified by the Early Launch Antimalware boot-start driver.
+
+- If you enable this policy setting you'll be able to choose which boot-start drivers to initialize the next time the computer is started.
+
+- If you disable or don't configure this policy setting, the boot start drivers determined to be Good, Unknown or Bad but Boot Critical are initialized and the initialization of drivers determined to be Bad is skipped.
+
+If your malware detection application doesn't include an Early Launch Antimalware boot-start driver or if your Early Launch Antimalware boot-start driver has been disabled, this setting has no effect and all boot-start drivers are initialized.
 <!-- BootStartDriverInitialization-Description-End -->
 
 <!-- BootStartDriverInitialization-Editable-Begin -->
@@ -959,13 +985,12 @@ If your malware detection application does not include an Early Launch Antimalwa
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- BootStartDriverInitialization-DFProperties-End -->
 
 <!-- BootStartDriverInitialization-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -992,7 +1017,7 @@ If your malware detection application does not include an Early Launch Antimalwa
 <!-- ConfigureMicrosoft365UploadEndpoint-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- ConfigureMicrosoft365UploadEndpoint-Applicability-End -->
 
 <!-- ConfigureMicrosoft365UploadEndpoint-OmaUri-Begin -->
@@ -1006,6 +1031,7 @@ If your malware detection application does not include an Early Launch Antimalwa
 This policy sets the upload endpoint for this device's diagnostic data as part of the Desktop Analytics program.
 
 If your organization is participating in the program and has been instructed to configure a custom upload endpoint, then use this setting to define that endpoint.
+
 The value for this setting will be provided by Microsoft as part of the onboarding process for the program.
 <!-- ConfigureMicrosoft365UploadEndpoint-Description-End -->
 
@@ -1018,7 +1044,7 @@ The value for this setting will be provided by Microsoft as part of the onboardi
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ConfigureMicrosoft365UploadEndpoint-DFProperties-End -->
 
@@ -1029,7 +1055,7 @@ The value for this setting will be provided by Microsoft as part of the onboardi
 |:--|:--|
 | Name | ConfigureMicrosoft365UploadEndpoint |
 | Friendly Name | Configure diagnostic data upload endpoint for Desktop Analytics |
-| Element Name | Desktop Analytics Custom Upload Endpoint |
+| Element Name | Desktop Analytics Custom Upload Endpoint. |
 | Location | Computer Configuration |
 | Path | WindowsComponents > Data Collection and Preview Builds |
 | Registry Key Name | Software\Policies\Microsoft\Windows\DataCollection |
@@ -1048,7 +1074,7 @@ The value for this setting will be provided by Microsoft as part of the onboardi
 <!-- ConfigureTelemetryOptInChangeNotification-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- ConfigureTelemetryOptInChangeNotification-Applicability-End -->
 
 <!-- ConfigureTelemetryOptInChangeNotification-OmaUri-Begin -->
@@ -1061,7 +1087,7 @@ The value for this setting will be provided by Microsoft as part of the onboardi
 <!-- Description-Source-ADMX -->
 This policy setting controls whether notifications are shown, following a change to diagnostic data opt-in settings, on first logon and when the changes occur in settings.
 
-If you set this policy setting to "Disable diagnostic data change notifications", diagnostic data opt-in change notifications will not appear.
+If you set this policy setting to "Disable diagnostic data change notifications", diagnostic data opt-in change notifications won't appear.
 
 If you set this policy setting to "Enable diagnostic data change notifications" or don't configure this policy setting, diagnostic data opt-in change notifications appear at first logon and when the changes occur in Settings.
 <!-- ConfigureTelemetryOptInChangeNotification-Description-End -->
@@ -1075,7 +1101,7 @@ If you set this policy setting to "Enable diagnostic data change notifications" 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- ConfigureTelemetryOptInChangeNotification-DFProperties-End -->
@@ -1114,7 +1140,7 @@ If you set this policy setting to "Enable diagnostic data change notifications" 
 <!-- ConfigureTelemetryOptInSettingsUx-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- ConfigureTelemetryOptInSettingsUx-Applicability-End -->
 
 <!-- ConfigureTelemetryOptInSettingsUx-OmaUri-Begin -->
@@ -1129,10 +1155,10 @@ This policy setting determines whether an end user can change diagnostic data se
 
 If you set this policy setting to "Disable diagnostic data opt-in settings", diagnostic data settings are disabled in the Settings app.
 
-- If you don't configure this policy setting, or you set it to "Enable diagnostic data opt-in settings", end users can change the device diagnostic settings in the Settings app.
+If you don't configure this policy setting, or you set it to "Enable diagnostic data opt-in settings", end users can change the device diagnostic settings in the Settings app.
 
-**Note**:
-To set a limit on the amount of diagnostic data that is sent to Microsoft by your organization, use the "Allow Diagnostic Data" policy setting.
+> [!NOTE]
+> To set a limit on the amount of diagnostic data that's sent to Microsoft by your organization, use the "Allow Diagnostic Data" policy setting.
 <!-- ConfigureTelemetryOptInSettingsUx-Description-End -->
 
 <!-- ConfigureTelemetryOptInSettingsUx-Editable-Begin -->
@@ -1144,7 +1170,7 @@ To set a limit on the amount of diagnostic data that is sent to Microsoft by you
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- ConfigureTelemetryOptInSettingsUx-DFProperties-End -->
@@ -1183,7 +1209,7 @@ To set a limit on the amount of diagnostic data that is sent to Microsoft by you
 <!-- DisableDeviceDelete-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- DisableDeviceDelete-Applicability-End -->
 
 <!-- DisableDeviceDelete-OmaUri-Begin -->
@@ -1210,7 +1236,7 @@ This policy setting controls whether the Delete diagnostic data button is enable
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DisableDeviceDelete-DFProperties-End -->
@@ -1249,7 +1275,7 @@ This policy setting controls whether the Delete diagnostic data button is enable
 <!-- DisableDiagnosticDataViewer-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- DisableDiagnosticDataViewer-Applicability-End -->
 
 <!-- DisableDiagnosticDataViewer-OmaUri-Begin -->
@@ -1262,7 +1288,7 @@ This policy setting controls whether the Delete diagnostic data button is enable
 <!-- Description-Source-ADMX -->
 This policy setting controls whether users can enable and launch the Diagnostic Data Viewer from the Diagnostic & feedback Settings page.
 
-- If you enable this policy setting, the Diagnostic Data Viewer will not be enabled in Settings page, and it will prevent the viewer from showing diagnostic data collected by Microsoft from the device.
+- If you enable this policy setting, the Diagnostic Data Viewer won't be enabled in Settings page, and it will prevent the viewer from showing diagnostic data collected by Microsoft from the device.
 
 - If you disable or don't configure this policy setting, the Diagnostic Data Viewer will be enabled in Settings page.
 <!-- DisableDiagnosticDataViewer-Description-End -->
@@ -1276,7 +1302,7 @@ This policy setting controls whether users can enable and launch the Diagnostic 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DisableDiagnosticDataViewer-DFProperties-End -->
@@ -1315,7 +1341,7 @@ This policy setting controls whether users can enable and launch the Diagnostic 
 <!-- DisableDirectXDatabaseUpdate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- DisableDirectXDatabaseUpdate-Applicability-End -->
 
 <!-- DisableDirectXDatabaseUpdate-OmaUri-Begin -->
@@ -1338,7 +1364,7 @@ This group policy allows control over whether the DirectX Database Updater task 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DisableDirectXDatabaseUpdate-DFProperties-End -->
@@ -1373,7 +1399,7 @@ This group policy allows control over whether the DirectX Database Updater task 
 <!-- DisableEnterpriseAuthProxy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- DisableEnterpriseAuthProxy-Applicability-End -->
 
 <!-- DisableEnterpriseAuthProxy-OmaUri-Begin -->
@@ -1384,8 +1410,7 @@ This group policy allows control over whether the DirectX Database Updater task 
 
 <!-- DisableEnterpriseAuthProxy-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting blocks the Connected User Experience and Telemetry service from automatically using an authenticated proxy to send data back to Microsoft on Windows 10.
-- If you disable or do not configure this policy setting, the Connected User Experience and Telemetry service will automatically use an authenticated proxy to send data back to Microsoft. Enabling this policy will block the Connected User Experience and Telemetry service from automatically using an authenticated proxy.
+This policy setting blocks the Connected User Experience and Telemetry service from automatically using an authenticated proxy to send data back to Microsoft on Windows 10. If you disable or don't configure this policy setting, the Connected User Experience and Telemetry service will automatically use an authenticated proxy to send data back to Microsoft. Enabling this policy will block the Connected User Experience and Telemetry service from automatically using an authenticated proxy.
 <!-- DisableEnterpriseAuthProxy-Description-End -->
 
 <!-- DisableEnterpriseAuthProxy-Editable-Begin -->
@@ -1397,7 +1422,7 @@ This policy setting blocks the Connected User Experience and Telemetry service f
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DisableEnterpriseAuthProxy-DFProperties-End -->
@@ -1436,7 +1461,7 @@ This policy setting blocks the Connected User Experience and Telemetry service f
 <!-- DisableOneDriveFileSync-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DisableOneDriveFileSync-Applicability-End -->
 
 <!-- DisableOneDriveFileSync-OmaUri-Begin -->
@@ -1448,15 +1473,20 @@ This policy setting blocks the Connected User Experience and Telemetry service f
 <!-- DisableOneDriveFileSync-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting lets you prevent apps and features from working with files on OneDrive.
+
 - If you enable this policy setting:
 
 * Users can't access OneDrive from the OneDrive app and file picker.
+
 * Windows Store apps can't access OneDrive using the WinRT API.
+
 * OneDrive doesn't appear in the navigation pane in File Explorer.
+
 * OneDrive files aren't kept in sync with the cloud.
+
 * Users can't automatically upload photos and videos from the camera roll folder.
 
-- If you disable or do not configure this policy setting, apps and features can work with OneDrive file storage.
+- If you disable or don't configure this policy setting, apps and features can work with OneDrive file storage.
 <!-- DisableOneDriveFileSync-Description-End -->
 
 <!-- DisableOneDriveFileSync-Editable-Begin -->
@@ -1468,7 +1498,7 @@ This policy setting lets you prevent apps and features from working with files o
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DisableOneDriveFileSync-DFProperties-End -->
@@ -1508,7 +1538,7 @@ This policy setting lets you prevent apps and features from working with files o
 <!-- DisableOneSettingsDownloads-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DisableOneSettingsDownloads-Applicability-End -->
 
 <!-- DisableOneSettingsDownloads-OmaUri-Begin -->
@@ -1521,7 +1551,7 @@ This policy setting lets you prevent apps and features from working with files o
 <!-- Description-Source-ADMX -->
 This policy setting controls whether Windows attempts to connect with the OneSettings service.
 
-- If you enable this policy, Windows will not attempt to connect with the OneSettings Service.
+- If you enable this policy, Windows won't attempt to connect with the OneSettings Service.
 
 - If you disable or don't configure this policy setting, Windows will periodically attempt to connect with the OneSettings service to download configuration settings.
 <!-- DisableOneSettingsDownloads-Description-End -->
@@ -1535,7 +1565,7 @@ This policy setting controls whether Windows attempts to connect with the OneSet
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DisableOneSettingsDownloads-DFProperties-End -->
@@ -1574,7 +1604,7 @@ This policy setting controls whether Windows attempts to connect with the OneSet
 <!-- DisableSystemRestore-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DisableSystemRestore-Applicability-End -->
 
 <!-- DisableSystemRestore-OmaUri-Begin -->
@@ -1591,9 +1621,9 @@ This policy setting allows you to turn off System Restore.
 
 System Restore enables users, in the event of a problem, to restore their computers to a previous state without losing personal data files. By default, System Restore is turned on for the boot volume.
 
-- If you enable this policy setting, System Restore is turned off, and the System Restore Wizard cannot be accessed. The option to configure System Restore or create a restore point through System Protection is also disabled.
+- If you enable this policy setting, System Restore is turned off, and the System Restore Wizard can't be accessed. The option to configure System Restore or create a restore point through System Protection is also disabled.
 
-- If you disable or do not configure this policy setting, users can perform System Restore and configure System Restore settings through System Protection.
+- If you disable or don't configure this policy setting, users can perform System Restore and configure System Restore settings through System Protection.
 
 Also, see the "Turn off System Restore configuration" policy setting. If the "Turn off System Restore" policy setting is disabled or not configured, the "Turn off System Restore configuration" policy setting is used to determine whether the option to configure System Restore is available.
 <!-- DisableSystemRestore-Description-End -->
@@ -1607,13 +1637,12 @@ Also, see the "Turn off System Restore configuration" policy setting. If the "Tu
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableSystemRestore-DFProperties-End -->
 
 <!-- DisableSystemRestore-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1640,7 +1669,7 @@ Also, see the "Turn off System Restore configuration" policy setting. If the "Tu
 <!-- EnableOneSettingsAuditing-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- EnableOneSettingsAuditing-Applicability-End -->
 
 <!-- EnableOneSettingsAuditing-OmaUri-Begin -->
@@ -1655,7 +1684,7 @@ This policy setting controls whether Windows records attempts to connect with th
 
 - If you enable this policy, Windows will record attempts to connect with the OneSettings service to the Microsoft\Windows\Privacy-Auditing\Operational EventLog channel.
 
-- If you disable or don't configure this policy setting, Windows will not record attempts to connect with the OneSettings service to the EventLog.
+- If you disable or don't configure this policy setting, Windows won't record attempts to connect with the OneSettings service to the EventLog.
 <!-- EnableOneSettingsAuditing-Description-End -->
 
 <!-- EnableOneSettingsAuditing-Editable-Begin -->
@@ -1667,7 +1696,7 @@ This policy setting controls whether Windows records attempts to connect with th
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- EnableOneSettingsAuditing-DFProperties-End -->
@@ -1706,7 +1735,7 @@ This policy setting controls whether Windows records attempts to connect with th
 <!-- FeedbackHubAlwaysSaveDiagnosticsLocally-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- FeedbackHubAlwaysSaveDiagnosticsLocally-Applicability-End -->
 
 <!-- FeedbackHubAlwaysSaveDiagnosticsLocally-OmaUri-Begin -->
@@ -1717,7 +1746,7 @@ This policy setting controls whether Windows records attempts to connect with th
 
 <!-- FeedbackHubAlwaysSaveDiagnosticsLocally-Description-Begin -->
 <!-- Description-Source-DDF -->
-Diagnostic files created when a feedback is filed in the Feedback Hub app will always be saved locally. If this policy is not present or set to false, users will be presented with the option to save locally. The default is to not save locally.
+Diagnostic files created when a feedback is filed in the Feedback Hub app will always be saved locally. If this policy isn't present or set to false, users will be presented with the option to save locally. The default is to not save locally.
 <!-- FeedbackHubAlwaysSaveDiagnosticsLocally-Description-End -->
 
 <!-- FeedbackHubAlwaysSaveDiagnosticsLocally-Editable-Begin -->
@@ -1729,7 +1758,7 @@ Diagnostic files created when a feedback is filed in the Feedback Hub app will a
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- FeedbackHubAlwaysSaveDiagnosticsLocally-DFProperties-End -->
@@ -1739,7 +1768,7 @@ Diagnostic files created when a feedback is filed in the Feedback Hub app will a
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | False. The Feedback Hub will not always save a local copy of diagnostics that may be created when a feedback is submitted. The user will have the option to do so. |
+| 0 (Default) | False. The Feedback Hub won't always save a local copy of diagnostics that may be created when a feedback is submitted. The user will have the option to do so. |
 | 1 | True. The Feedback Hub should always save a local copy of diagnostics that may be created when a feedback is submitted. |
 <!-- FeedbackHubAlwaysSaveDiagnosticsLocally-AllowedValues-End -->
 
@@ -1755,7 +1784,7 @@ Diagnostic files created when a feedback is filed in the Feedback Hub app will a
 <!-- HideUnsupportedHardwareNotifications-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- HideUnsupportedHardwareNotifications-Applicability-End -->
 
 <!-- HideUnsupportedHardwareNotifications-OmaUri-Begin -->
@@ -1766,11 +1795,11 @@ Diagnostic files created when a feedback is filed in the Feedback Hub app will a
 
 <!-- HideUnsupportedHardwareNotifications-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy controls messages which are shown when Windows is running on a device that does not meet the minimum system requirements for this OS version.
+This policy controls messages which are shown when Windows is running on a device that doesn't meet the minimum system requirements for this OS version.
 
 - If you enable this policy setting, these messages will never appear on desktop or in the Settings app.
 
-- If you disable or do not configure this policy setting, these messages will appear on desktop and in the Settings app when Windows is running on a device that does not meet the minimum system requirements for this OS version.
+- If you disable or don't configure this policy setting, these messages will appear on desktop and in the Settings app when Windows is running on a device that doesn't meet the minimum system requirements for this OS version.
 <!-- HideUnsupportedHardwareNotifications-Description-End -->
 
 <!-- HideUnsupportedHardwareNotifications-Editable-Begin -->
@@ -1782,7 +1811,7 @@ This policy controls messages which are shown when Windows is running on a devic
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- HideUnsupportedHardwareNotifications-DFProperties-End -->
@@ -1822,7 +1851,7 @@ This policy controls messages which are shown when Windows is running on a devic
 <!-- LimitDiagnosticLogCollection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- LimitDiagnosticLogCollection-Applicability-End -->
 
 <!-- LimitDiagnosticLogCollection-OmaUri-Begin -->
@@ -1835,9 +1864,9 @@ This policy controls messages which are shown when Windows is running on a devic
 <!-- Description-Source-ADMX -->
 This policy setting controls whether additional diagnostic logs are collected when more information is needed to troubleshoot a problem on the device. Diagnostic logs are only sent when the device has been configured to send optional diagnostic data.
 
-By enabling this policy setting, diagnostic logs will not be collected.
+By enabling this policy setting, diagnostic logs won't be collected.
 
-- If you disable or do not configure this policy setting, we may occasionally collect diagnostic logs if the device has been configured to send optional diagnostic data.
+If you disable or don't configure this policy setting, we may occasionally collect diagnostic logs if the device has been configured to send optional diagnostic data.
 <!-- LimitDiagnosticLogCollection-Description-End -->
 
 <!-- LimitDiagnosticLogCollection-Editable-Begin -->
@@ -1849,7 +1878,7 @@ By enabling this policy setting, diagnostic logs will not be collected.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- LimitDiagnosticLogCollection-DFProperties-End -->
@@ -1888,7 +1917,7 @@ By enabling this policy setting, diagnostic logs will not be collected.
 <!-- LimitDumpCollection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- LimitDumpCollection-Applicability-End -->
 
 <!-- LimitDumpCollection-OmaUri-Begin -->
@@ -1903,7 +1932,7 @@ This policy setting limits the type of dumps that can be collected when more inf
 
 By enabling this setting, Windows Error Reporting is limited to sending kernel mini dumps and user mode triage dumps.
 
-- If you disable or do not configure this policy setting, we may occasionally collect full or heap dumps if the user has opted to send optional diagnostic data.
+If you disable or don't configure this policy setting, we may occasionally collect full or heap dumps if the user has opted to send optional diagnostic data.
 <!-- LimitDumpCollection-Description-End -->
 
 <!-- LimitDumpCollection-Editable-Begin -->
@@ -1915,7 +1944,7 @@ By enabling this setting, Windows Error Reporting is limited to sending kernel m
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- LimitDumpCollection-DFProperties-End -->
@@ -1954,7 +1983,7 @@ By enabling this setting, Windows Error Reporting is limited to sending kernel m
 <!-- LimitEnhancedDiagnosticDataWindowsAnalytics-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- LimitEnhancedDiagnosticDataWindowsAnalytics-Applicability-End -->
 
 <!-- LimitEnhancedDiagnosticDataWindowsAnalytics-OmaUri-Begin -->
@@ -1970,14 +1999,14 @@ This policy setting, in combination with the "Allow Diagnostic Data" policy sett
 To enable the behavior described above, complete the following steps:
 
 1. Enable this policy setting
-2. Set the "Allow Diagnostic Data" policy to "Send optional diagnostic data"
+2. Set the "Allow Diagnostic Data" policy to "Send optional diagnostic data".
 
 3. Enable the "Limit Dump Collection" policy
-4. Enable the "Limit Diagnostic Log Collection" policy
+4. Enable the "Limit Diagnostic Log Collection" policy.
 
-When these policies are configured, Microsoft will collect only required diagnostic data and the events required by Desktop Analytics, which can be viewed at <https://go.microsoft.com/fwlink/?linkid=2116020>.
+When these policies are configured, Microsoft will collect only required diagnostic data and the events required by Desktop Analytics, which can be viewed at< https://go.microsoft.com/fwlink/?linkid=2116020>.
 
-- If you disable or do not configure this policy setting, diagnostic data collection is determined by the "Allow Diagnostic Data" policy setting or by the end user from the Settings app.
+If you disable or don't configure this policy setting, diagnostic data collection is determined by the "Allow Diagnostic Data" policy setting or by the end user from the Settings app.
 <!-- LimitEnhancedDiagnosticDataWindowsAnalytics-Description-End -->
 
 <!-- LimitEnhancedDiagnosticDataWindowsAnalytics-Editable-Begin -->
@@ -1989,7 +2018,7 @@ When these policies are configured, Microsoft will collect only required diagnos
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- LimitEnhancedDiagnosticDataWindowsAnalytics-DFProperties-End -->
@@ -2028,7 +2057,7 @@ When these policies are configured, Microsoft will collect only required diagnos
 <!-- TelemetryProxy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- TelemetryProxy-Applicability-End -->
 
 <!-- TelemetryProxy-OmaUri-Begin -->
@@ -2038,9 +2067,12 @@ When these policies are configured, Microsoft will collect only required diagnos
 <!-- TelemetryProxy-OmaUri-End -->
 
 <!-- TelemetryProxy-Description-Begin -->
-<!-- Description-Source-DDF -->
-Allows you to specify the fully qualified domain name (FQDN) or IP address of a proxy server to forward Connected User Experiences and Telemetry requests. The format for this setting is `<server>`:`<port>`. The connection is made over a Secure Sockets Layer (SSL) connection. If the named proxy fails, or if there is no proxy specified when this policy is enabled, the Connected User Experiences and Telemetry data will not be transmitted and will remain on the local device.
-- If you disable or do not configure this policy setting, Connected User Experiences and Telemetry will go to Microsoft using the default proxy configuration.
+<!-- Description-Source-ADMX -->
+With this policy setting, you can forward Connected User Experience and Telemetry requests to a proxy server.
+
+If you enable this policy setting, you can specify the FQDN or IP address of the destination device within your organization's network (and optionally a port number, if desired). The connection will be made over a Secure Sockets Layer (SSL) connection. If the named proxy fails, or if you disable or don't configure this policy setting, Connected User Experience and Telemetry data will be sent to Microsoft using the default proxy configuration.
+
+The format for this setting is `<server>`:`<port>`
 <!-- TelemetryProxy-Description-End -->
 
 <!-- TelemetryProxy-Editable-Begin -->
@@ -2052,7 +2084,7 @@ Allows you to specify the fully qualified domain name (FQDN) or IP address of a 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- TelemetryProxy-DFProperties-End -->
 
@@ -2063,7 +2095,7 @@ Allows you to specify the fully qualified domain name (FQDN) or IP address of a 
 |:--|:--|
 | Name | TelemetryProxy |
 | Friendly Name | Configure Connected User Experiences and Telemetry |
-| Element Name | Proxy Server Name |
+| Element Name | Proxy Server Name. |
 | Location | Computer Configuration |
 | Path | WindowsComponents > Data Collection and Preview Builds |
 | Registry Key Name | Software\Policies\Microsoft\Windows\DataCollection |
@@ -2082,7 +2114,7 @@ Allows you to specify the fully qualified domain name (FQDN) or IP address of a 
 <!-- TurnOffFileHistory-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- TurnOffFileHistory-Applicability-End -->
 
 <!-- TurnOffFileHistory-OmaUri-Begin -->
@@ -2095,9 +2127,9 @@ Allows you to specify the fully qualified domain name (FQDN) or IP address of a 
 <!-- Description-Source-ADMX -->
 This policy setting allows you to turn off File History.
 
-- If you enable this policy setting, File History cannot be activated to create regular, automatic backups.
+- If you enable this policy setting, File History can't be activated to create regular, automatic backups.
 
-- If you disable or do not configure this policy setting, File History can be activated to create regular, automatic backups.
+- If you disable or don't configure this policy setting, File History can be activated to create regular, automatic backups.
 <!-- TurnOffFileHistory-Description-End -->
 
 <!-- TurnOffFileHistory-Editable-Begin -->
@@ -2109,7 +2141,7 @@ This policy setting allows you to turn off File History.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- TurnOffFileHistory-DFProperties-End -->

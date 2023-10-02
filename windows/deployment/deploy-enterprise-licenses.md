@@ -8,7 +8,9 @@ ms.prod: windows-client
 ms.technology: itpro-fundamentals
 ms.localizationpriority: medium
 ms.topic: how-to
-ms.collection: highpri, tier2
+ms.collection:
+  - highpri
+  - tier2
 appliesto: 
   - ✅ <b>Windows 10</b>
   - ✅ <b>Windows 11</b>

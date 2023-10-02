@@ -1,19 +1,24 @@
 ---
 title: Microsoft 365 admin center software updates page
+titleSuffix: Windows Update for Business reports
 manager: aaroncz
 description: Microsoft admin center populates Windows Update for Business reports data into the software updates page.
 ms.prod: windows-client
+ms.technology: itpro-updates
+ms.topic: conceptual
 author: mestew
 ms.author: mstewart
 ms.localizationpriority: medium
-ms.topic: article
-ms.date: 11/15/2022
-ms.technology: itpro-updates
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows Update for Business reports</a>	
+- ✅ <a href=https://learn.microsoft.com/microsoft-365/admin/admin-overview/admin-center-overview >Microsoft 365 admin center</a>	
+ms.date: 04/26/2023
 ---
 
 # Microsoft 365 admin center software updates page
 <!--37063317, 30141258, 37063041, ID2616577, ID2582518 -->
-***(Applies to: Windows 11 & Windows 10 using [Windows Update for Business reports](wufb-reports-overview.md) and the [Microsoft 365 admin center](/microsoft-365/admin/admin-overview/admin-center-overview))***
 
 The **Software updates** page in the [Microsoft 365 admin center](https://admin.microsoft.com) displays a high-level overview of the installation status for Microsoft 365 Apps and Windows updates in your environment. [Quality updates](quality-updates.md) that contain security fixes are typically released on the second Tuesday of each month. Ensuring these updates are installed is important because they help protect you from known vulnerabilities. The **Software updates** page allows you to easily determine the overall update compliance for your devices.
 
@@ -25,19 +30,13 @@ The **Software updates** page has following tabs to assist you in monitoring upd
 
   :::image type="content" source="media/37063317-admin-center-software-updates.png" alt-text="Screenshot of the Microsoft 365 admin center displaying the software updates page with the Windows tab selected." lightbox="media/37063317-admin-center-software-updates.png":::
 
-## Permissions
-
-<!--Using include Microsoft 365 admin center permissions-->
-[!INCLUDE [Windows Update for Business reports permissions](./includes/wufb-reports-admin-center-permissions.md)]
-
-> [!NOTE]
-> These permissions for the Microsoft 365 admin center apply specifically to the **Windows** tab of the **Software Updates** page. For more information about the **Microsoft 365 Apps** tab, see [Microsoft 365 Apps updates in the admin center](/DeployOffice/updates/software-update-status).
-
 ## Limitations
 
 Windows Update for Business reports is a Windows service hosted in Azure that uses Windows diagnostic data. Windows Update for Business reports is available in the Azure Commercial cloud, but not available for GCC High or United States Department of Defense customers since it doesn't meet [US Government community compliance (GCC)](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc#us-government-community-compliance) requirements. For a list of GCC offerings for Microsoft products and services, see the [Microsoft Trust Center](/compliance/regulatory/offering-home).
 
 ## Get started
+
+After verifying that you've met the [prerequisites and permissions](wufb-reports-prerequisites.md) for Windows Update for Business reports, enroll using the instructions below if needed: 
 
 <!--Using include for onboarding Windows Update for Business reports through the Microsoft 365 admin center-->
 [!INCLUDE [Onboarding Windows Update for Business reports through the Microsoft 365 admin center](./includes/wufb-reports-onboard-admin-center.md)]

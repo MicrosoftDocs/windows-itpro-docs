@@ -1,11 +1,11 @@
 ---
-title: 4803(S) The screen saver was dismissed. (Windows 10)
+title: 4803(S) The screen saver was dismissed. 
 description: Describes security event 4803(S) The screen saver was dismissed. This event is generated when screen saver is dismissed.
 ms.pagetype: security
 ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
+ms.localizationpriority: low
 author: vinaypamnani-msft
 ms.date: 09/07/2021
 ms.reviewer: 

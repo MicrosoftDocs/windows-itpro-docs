@@ -3,9 +3,6 @@ title: Use Virtual Smart Cards
 description: Learn about the requirements for virtual smart cards, how to use and manage them.
 ms.topic: conceptual
 ms.date: 02/22/2023
-appliesto:
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016 and later</a>
 ---
 
 # Use Virtual Smart Cards

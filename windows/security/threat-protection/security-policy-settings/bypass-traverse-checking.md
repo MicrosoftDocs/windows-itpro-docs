@@ -1,5 +1,5 @@
 ---
-title: Bypass traverse checking (Windows 10)
+title: Bypass traverse checking 
 description: Describes the best practices, location, values, policy management, and security considerations for the Bypass traverse checking security policy setting.
 ms.assetid: 1c828655-68d3-4140-aa0f-caa903a7087e
 ms.reviewer: 
@@ -89,7 +89,7 @@ The default configuration for the **Bypass traverse checking** setting is to all
 
 ### Countermeasure
 
-Organizations that are concerned about security may want to remove the Everyone group, and perhaps the Users group, from the list of groups that have the **Bypass traverse checking** user right. Taking explicit control over traversal assignments can be an effective way to limit access to sensitive information. Access–based enumeration can also be used. If you use access–based enumeration, users can't see any folder or file to which they don't have access. For more info about this feature, see [Access-based Enumeration](/previous-versions/windows/it-pro/windows-server-2003/cc784710(v=ws.10)).
+Organizations that are concerned about security may want to remove the Everyone group from the list of groups that have the **Bypass traverse checking** user right. Taking explicit control over traversal assignments can be an effective way to limit access to sensitive information. Access–based enumeration can also be used. If you use access–based enumeration, users can't see any folder or file to which they don't have access. For more info about this feature, see [Access-based Enumeration](/previous-versions/windows/it-pro/windows-server-2003/cc784710(v=ws.10)).
 
 ### Potential impact
 

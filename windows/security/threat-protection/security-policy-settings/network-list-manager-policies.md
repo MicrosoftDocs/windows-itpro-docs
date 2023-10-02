@@ -1,5 +1,5 @@
 ---
-title: Network List Manager policies (Windows 10)
+title: Network List Manager policies 
 description: Network List Manager policies are security settings that configure different aspects of how networks are listed and displayed on one device or on many devices.
 ms.assetid: bd8109d4-b07c-4beb-a9a6-affae2ba2fda
 ms.reviewer: 

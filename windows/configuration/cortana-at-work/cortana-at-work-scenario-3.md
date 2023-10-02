@@ -8,11 +8,13 @@ ms.localizationpriority: medium
 ms.author: aaroncz
 ms.date: 10/05/2017
 ms.reviewer: 
-manager: dougeby
+manager: aaroncz
 ms.technology: itpro-configure
 ---
 
 # Test scenario 3 - Set a reminder
+<!--Using include for Cortana in Windows deprecation -->
+[!INCLUDE [Deprecation of Cortana in Windows](./includes/cortana-deprecation.md)]
 
 This scenario helps you set up, review, and edit a reminder. For example, you can remind yourself to send someone a link to a document after a meeting.
 

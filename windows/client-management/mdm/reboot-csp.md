@@ -4,7 +4,7 @@ description: Learn more about the Reboot CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/28/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -15,6 +15,8 @@ ms.topic: reference
 
 <!-- Reboot-Begin -->
 # Reboot CSP
+
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- Reboot-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -29,6 +31,7 @@ The following list shows the Reboot configuration service provider nodes:
   - [Schedule](#schedule)
     - [DailyRecurrent](#scheduledailyrecurrent)
     - [Single](#schedulesingle)
+    - [WeeklyRecurrent](#scheduleweeklyrecurrent)
 <!-- Reboot-Tree-End -->
 
 <!-- Device-RebootNow-Begin -->
@@ -37,7 +40,7 @@ The following list shows the Reboot configuration service provider nodes:
 <!-- Device-RebootNow-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-RebootNow-Applicability-End -->
 
 <!-- Device-RebootNow-OmaUri-Begin -->
@@ -60,7 +63,7 @@ This node executes a reboot of the device. RebootNow triggers a reboot within 5 
 
 | Property name | Property value |
 |:--|:--|
-| Format | null |
+| Format | `null` |
 | Access Type | Exec, Get |
 <!-- Device-RebootNow-DFProperties-End -->
 
@@ -76,7 +79,7 @@ This node executes a reboot of the device. RebootNow triggers a reboot within 5 
 <!-- Device-Schedule-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Schedule-Applicability-End -->
 
 <!-- Device-Schedule-OmaUri-Begin -->
@@ -99,7 +102,7 @@ The supported operation is Get.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-Schedule-DFProperties-End -->
 
@@ -115,7 +118,7 @@ The supported operation is Get.
 <!-- Device-Schedule-DailyRecurrent-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Schedule-DailyRecurrent-Applicability-End -->
 
 <!-- Device-Schedule-DailyRecurrent-OmaUri-Begin -->
@@ -126,7 +129,7 @@ The supported operation is Get.
 
 <!-- Device-Schedule-DailyRecurrent-Description-Begin -->
 <!-- Description-Source-DDF -->
-Value in ISO8601, time is required. A reboot will be scheduled each day at the configured time starting at the date and time. Setting a null (empty) date will delete the existing schedule.
+Value in ISO8601, time is required. Either setting DailyRecurrent or WeeklyRecurrent is supported but not both at same time. A reboot will be scheduled each day at the configured time starting at the date and time. Setting a null (empty) date will delete the existing schedule.
 <!-- Device-Schedule-DailyRecurrent-Description-End -->
 
 <!-- Device-Schedule-DailyRecurrent-Editable-Begin -->
@@ -138,7 +141,7 @@ Value in ISO8601, time is required. A reboot will be scheduled each day at the c
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-Schedule-DailyRecurrent-DFProperties-End -->
 
@@ -154,7 +157,7 @@ Value in ISO8601, time is required. A reboot will be scheduled each day at the c
 <!-- Device-Schedule-Single-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Schedule-Single-Applicability-End -->
 
 <!-- Device-Schedule-Single-OmaUri-Begin -->
@@ -177,7 +180,7 @@ Value in ISO8601, both the date and time are required. A reboot will be schedule
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-Schedule-Single-DFProperties-End -->
 
@@ -186,6 +189,45 @@ Value in ISO8601, both the date and time are required. A reboot will be schedule
 <!-- Device-Schedule-Single-Examples-End -->
 
 <!-- Device-Schedule-Single-End -->
+
+<!-- Device-Schedule-WeeklyRecurrent-Begin -->
+### Schedule/WeeklyRecurrent
+
+<!-- Device-Schedule-WeeklyRecurrent-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- Device-Schedule-WeeklyRecurrent-Applicability-End -->
+
+<!-- Device-Schedule-WeeklyRecurrent-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Reboot/Schedule/WeeklyRecurrent
+```
+<!-- Device-Schedule-WeeklyRecurrent-OmaUri-End -->
+
+<!-- Device-Schedule-WeeklyRecurrent-Description-Begin -->
+<!-- Description-Source-DDF -->
+Value in ISO8601, time is required. Either setting DailyRecurrent or WeeklyRecurrent is supported but not both at same time. A reboot will be scheduled every week at the configured time starting at the date and time. Setting a null (empty) date will delete the existing schedule.
+<!-- Device-Schedule-WeeklyRecurrent-Description-End -->
+
+<!-- Device-Schedule-WeeklyRecurrent-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Schedule-WeeklyRecurrent-Editable-End -->
+
+<!-- Device-Schedule-WeeklyRecurrent-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-Schedule-WeeklyRecurrent-DFProperties-End -->
+
+<!-- Device-Schedule-WeeklyRecurrent-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Schedule-WeeklyRecurrent-Examples-End -->
+
+<!-- Device-Schedule-WeeklyRecurrent-End -->
 
 <!-- Reboot-CspMoreInfo-Begin -->
 <!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->

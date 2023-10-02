@@ -1,11 +1,11 @@
 ---
-title: 5062(S) A kernel-mode cryptographic self-test was performed. (Windows 10)
+title: 5062(S) A kernel-mode cryptographic self-test was performed. 
 description: Describes security event 5062(S) A kernel-mode cryptographic self-test was performed.
 ms.pagetype: security
 ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
+ms.localizationpriority: low
 author: vinaypamnani-msft
 ms.date: 09/08/2021
 ms.reviewer: 

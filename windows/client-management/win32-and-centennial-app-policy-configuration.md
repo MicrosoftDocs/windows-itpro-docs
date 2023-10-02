@@ -1,39 +1,24 @@
 ---
 title: Win32 and Desktop Bridge app ADMX policy Ingestion
-description: Starting in Windows 10, version 1703, you can ingest ADMX files and set those ADMX policies for Win32 and Desktop Bridge apps.
-ms.author: vinpa
+description: Ingest ADMX files and set ADMX policies for Win32 and Desktop Bridge apps.
 ms.topic: article
-ms.prod: windows-client
-ms.technology: itpro-manage
-author: vinaypamnani-msft
-ms.date: 03/23/2020
-ms.reviewer: 
-manager: aaroncz
+ms.date: 08/10/2023
 ---
 
 # Win32 and Desktop Bridge app ADMX policy Ingestion
 
-## In this section
+## Overview
 
--   [Overview](#overview)
--   [Ingesting an app ADMX file](#ingesting-an-app-admx-file)
--   [URI format for configuring an app policy](#uri-format-for-configuring-an-app-policy)
--   [ADMX app policy examples](#admx-backed-app-policy-examples)
-    - [Enabling an app policy](#enabling-an-app-policy)
-    - [Disabling an app policy](#disabling-an-app-policy)
-    - [Setting an app policy to not configured](#setting-an-app-policy-to-not-configured)
+You can ingest ADMX files (ADMX ingestion) and set those ADMX policies for Win32 and Desktop Bridge apps by using Windows Mobile Device Management (MDM) on desktop SKUs. The ADMX files that define policy information can be ingested to your device by using the Policy CSP URI, `./Device/Vendor/MSFT/Policy/ConfigOperations/ADMXInstall`. The ingested ADMX file is then processed into MDM policies.
 
-## <a href="" id="overview"></a>Overview
+Starting from the following Windows versions `Replace` command is supported:
 
-Starting in Windows 10, version 1703, you can ingest ADMX files (ADMX ingestion) and set those ADMX policies for Win32 and Desktop Bridge apps by using Windows 10 Mobile Device Management (MDM) on desktop SKUs. The ADMX files that define policy information can be ingested to your device by using the Policy CSP URI, `./Device/Vendor/MSFT/Policy/ConfigOperations/ADMXInstall`. The ingested ADMX file is then processed into MDM policies.
-
-NOTE: Starting from the following Windows 10 version Replace command is supported
 - Windows 10, version 1903 with KB4512941 and KB4517211 installed
 - Windows 10, version 1809 with KB4512534 and KB installed
 - Windows 10, version 1803 with KB4512509 and KB installed
 - Windows 10, version 1709 with KB4516071 and KB installed
 
-When the ADMX policies are ingested, the registry keys to which each policy is written are checked so that known system registry keys, or registry keys that are used by existing inbox policies or system components, are not overwritten. This precaution helps to avoid security concerns over opening the entire registry. Currently, the ingested policies are not allowed to write to locations within the **System**, **Software\Microsoft**, and **Software\Policies\Microsoft** keys, except for the following locations:
+When the ADMX policies are ingested, the registry keys to which each policy is written are checked so that known system registry keys, or registry keys that are used by existing inbox policies or system components, aren't overwritten. This precaution helps to avoid security concerns over opening the entire registry. Currently, the ingested policies aren't allowed to write to locations within the **System**, **Software\Microsoft**, and **Software\Policies\Microsoft** keys, except for the following locations:
 
 - Software\Policies\Microsoft\Office\
 - Software\Microsoft\Office\
@@ -57,17 +42,18 @@ When the ADMX policies are ingested, the registry keys to which each policy is w
 - software\Microsoft\Edge
 - Software\Microsoft\EdgeUpdate\
 
-> [!Warning]
+> [!WARNING]
 > Some operating system components have built in functionality to check devices for domain membership. MDM enforces the configured policy values only if the devices are domain joined, otherwise it does not. However, you can still ingest ADMX files and set ADMX policies regardless of whether the device is domain joined or non-domain joined.
 
 > [!NOTE]
 > Settings that cannot be configured using custom policy ingestion have to be set by pushing the appropriate registry keys directly (for example, by using PowerShell script).
 
-## <a href="" id="ingesting-an-app-admx-file"></a>Ingesting an app ADMX file
+## Ingesting an app ADMX file
 
 The following ADMX file example shows how to ingest a Win32 or Desktop Bridge app ADMX file and set policies from the file. The ADMX file defines eight policies.
 
-**Payload**
+**Payload**:
+
 ```XML
 <policyDefinitions revision="1.0" schemaVersion="1.0">
   <categories>
@@ -201,10 +187,10 @@ The following ADMX file example shows how to ingest a Win32 or Desktop Bridge ap
 </policyDefinitions>
 ```
 
-**Request Syncml**
+**Request Syncml**:
 
 The ADMX file is escaped and sent in SyncML format through the Policy CSP URI, `./Vendor/MSFT/Policy/ConfigOperations/ADMXInstall/{AppName}/{SettingType}/{FileUid or AdmxFileName}`.
-When the ADMX file is imported, the policy states for each new policy are the same as those in a regular MDM policy: Enabled, Disabled, or Not Configured.
+When the ADMX file is imported, the policy states for each new policy are the same as the ones in a regular MDM policy: Enabled, Disabled, or Not Configured.
 
 The following example shows an ADMX file in SyncML format:
 
@@ -360,16 +346,17 @@ The following example shows an ADMX file in SyncML format:
 </SyncML>
 ```
 
-**Response Syncml**
+**Response Syncml**:
+
 ```XML
 <Status><CmdID>2</CmdID><MsgRef>1</MsgRef><CmdRef>102</CmdRef><Cmd>Add</Cmd><Data>200</Data></Status>
 ```
 
-### <a href="" id="uri-format-for-configuring-an-app-policy"></a>URI format for configuring an app policy
+### URI format for configuring an app policy
 
 The following example shows how to derive a Win32 or Desktop Bridge app policy name and policy area name:
 
-```XML
+```xml
 <categories>
     <category name="ParentCategoryArea"/>
     <category name="Category1">
@@ -394,10 +381,9 @@ The following example shows how to derive a Win32 or Desktop Bridge app policy n
     </policy>
 ```
 
-As documented in [Policy CSP](mdm/policy-configuration-service-provider.md), the URI format to configure a policy via Policy CSP is:
-'./{user or device}/Vendor/MSFT/Policy/Config/{AreaName}/{PolicyName}'.
+As documented in [Policy CSP](mdm/policy-configuration-service-provider.md), the URI format to configure a policy via Policy CSP is: `./{user or device}/Vendor/MSFT/Policy/Config/{AreaName}/{PolicyName}`.
 
-**User or device policy**
+**User or device policy**:
 
 In the policy class, the attribute is defined as "User" and the URI is prefixed with `./user`.
 If the attribute value is "Machine", the URI is prefixed with `./device`.
@@ -409,25 +395,28 @@ The policy {AreaName} format is {AppName}~{SettingType}~{CategoryPathFromAdmx}.
 {CategoryPathFromAdmx} is derived by traversing the parentCategory parameter. In this example, {CategoryPathFromAdmx} is ParentCategoryArea~Category2~Category3. Therefore, {AreaName} is ContosoCompanyApp~ Policy~ ParentCategoryArea~Category2~Category3.
 
 Therefore, from the example:
-- Class: User
-- Policy name: L_PolicyPreventRun_1
-- Policy area name: ContosoCompanyApp~Policy~ParentCategoryArea~Category2~Category3
+
+- Class: `User`
+- Policy name: `L_PolicyPreventRun_1`
+- Policy area name: `ContosoCompanyApp~Policy~ParentCategoryArea~Category2~Category3`
 - URI: `./user/Vendor/MSFT/Policy/Config/ContosoCompanyApp~Policy~ParentCategoryArea~Category2~Category3/L_PolicyPreventRun_1`
 
-## <a href="" id="admx-backed-app-policy-examples"></a>ADMX-backed app policy examples
+## ADMX-backed app policy examples
 
 The following examples describe how to set an ADMX-ingested app policy.
 
-### <a href="" id="enabling-an-app-policy"></a>Enabling an app policy
+### Enabling an app policy
 
-**Payload**
+**Payload**:
+
 ```XML
 <enabled/>
 <data id="L_ServerAddressInternal_VALUE" value="TextValue1"/>
 <data id="L_ServerAddressExternal_VALUE" value="TextValue2"/>
 ```
 
-**Request Syncml**
+**Request Syncml**:
+
 ```XML
 <SyncML xmlns="SYNCML:SYNCML1.1">
   <SyncBody>
@@ -449,19 +438,22 @@ The following examples describe how to set an ADMX-ingested app policy.
 </SyncML>
 ```
 
-**Response SyncML**
+**Response SyncML**:
+
 ```XML
 <Status><CmdID>2</CmdID><MsgRef>1</MsgRef><CmdRef>103</CmdRef><Cmd>Replace</Cmd><Data>200</Data></Status>
 ```
 
-### <a href="" id="disabling-an-app-policy"></a>Disabling an app policy
+### Disabling an app policy
 
-**Payload**
+**Payload**:
+
 ```XML
 <disabled/>
 ```
 
-**Request SyncML**
+**Request SyncML**:
+
 ```XML
 <SyncML xmlns="SYNCML:SYNCML1.1">
   <SyncBody>
@@ -483,18 +475,20 @@ The following examples describe how to set an ADMX-ingested app policy.
 </SyncML>
 ```
 
-**Response SyncML**
+**Response SyncML**:
+
 ```XML
 <Status><CmdID>2</CmdID><MsgRef>1</MsgRef><CmdRef>104</CmdRef><Cmd>Replace</Cmd><Data>200</Data></Status>
 ```
 
-### <a href="" id="setting-an-app-policy-to-not-configured"></a>Setting an app policy to not configured
+### Setting an app policy to not configured
 
-**Payload**
+**Payload**:
 
 (None)
 
-**Request SyncML**
+**Request SyncML**:
+
 ```XML
 <SyncML xmlns="SYNCML:SYNCML1.1">
   <SyncBody>
@@ -511,7 +505,8 @@ The following examples describe how to set an ADMX-ingested app policy.
 </SyncML>
 ```
 
-**Response SyncML**
+**Response SyncML**:
+
 ```XML
 <Status><CmdID>2</CmdID><MsgRef>1</MsgRef><CmdRef>105</CmdRef><Cmd>Delete</Cmd><Data>200</Data></Status>
 ```

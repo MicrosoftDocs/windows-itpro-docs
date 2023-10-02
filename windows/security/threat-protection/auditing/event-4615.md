@@ -1,11 +1,11 @@
 ---
-title: 4615(S) Invalid use of LPC port. (Windows 10)
+title: 4615(S) Invalid use of LPC port. 
 description: Describes security event 4615(S) Invalid use of LPC port. It appears that the Invalid use of LPC port event never occurs.
 ms.pagetype: security
 ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
+ms.localizationpriority: low
 author: vinaypamnani-msft
 ms.date: 09/07/2021
 ms.reviewer: 

@@ -22,8 +22,7 @@ ms.date: 12/31/2017
 - Windows 10 Pro, Enterprise, and Education
 
 > [!NOTE]
-> [!INCLUDE [Multi-app kiosk mode not supported on Windows 11](./includes/multi-app-kiosk-support-windows11.md)]
-> The use of multiple monitors isn't supported for multi-app kiosk mode.
+> The use of multiple monitors isn't supported for multi-app kiosk mode in Windows 10.
 
 A [kiosk device](./kiosk-single-app.md) typically runs a single app, and users are prevented from accessing any features or functions on the device outside of the kiosk app. In Windows 10, version 1709, the [AssignedAccess configuration service provider (CSP)](/windows/client-management/mdm/assignedaccess-csp) was expanded to make it easy for administrators to create kiosks that run more than one app. The benefit of a kiosk that runs only one or more specified apps is to provide an easy-to-understand experience for individuals by putting in front of them only the things they need to use, and removing from their view the things they don't need to access.
 
@@ -255,7 +254,7 @@ The following example pins Groove Music, Movies & TV, Photos, Weather, Calculato
 
 ```xml
 <StartLayout>
-        <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="https://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="https://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="httsp://schemas.microsoft.com/Start/2014/LayoutModification">
+        <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="https://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="https://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="https://schemas.microsoft.com/Start/2014/LayoutModification">
                       <LayoutOptions StartTileGroupCellWidth="6" />
                       <DefaultLayoutOverride>
                         <StartLayoutCollection>

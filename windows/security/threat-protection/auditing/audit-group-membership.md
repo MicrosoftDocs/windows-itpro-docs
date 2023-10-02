@@ -1,5 +1,5 @@
 ---
-title: Audit Group Membership (Windows 10)
+title: Audit Group Membership 
 description: Using the advanced security audit policy setting, Audit Group Membership, you can audit group memberships when they're enumerated on the client PC.
 ms.assetid: 1CD7B014-FBD9-44B9-9274-CC5715DE58B9
 ms.reviewer: 
@@ -9,7 +9,7 @@ ms.pagetype: security
 ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
+ms.localizationpriority: low
 author: vinaypamnani-msft
 ms.date: 09/06/2021
 ms.technology: itpro-security

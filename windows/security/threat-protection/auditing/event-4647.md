@@ -1,11 +1,11 @@
 ---
-title: 4647(S) User initiated logoff. (Windows 10)
+title: 4647(S) User initiated logoff. 
 description: Describes security event 4647(S) User initiated logoff. This event is generated when a logoff is initiated. No further user-initiated activity can occur.
 ms.pagetype: security
 ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
+ms.localizationpriority: low
 author: vinaypamnani-msft
 ms.date: 09/07/2021
 ms.reviewer: 

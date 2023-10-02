@@ -6,7 +6,7 @@ ms.technology: itpro-privacy
 ms.localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
-manager: dougeby
+manager: laurawi
 ms.date: 12/13/2018
 ms.topic: how-to
 ---
@@ -40,7 +40,7 @@ Using the Diagnostic Data Viewer for PowerShell requires administrative (elevate
 ### Install the Diagnostic Data Viewer for PowerShell
 
    >[!IMPORTANT]
-   >It is recommended to visit the documentation on [Getting Started](/powershell/scripting/gallery/getting-started) with PowerShell Gallery. This page provides more specific details on installing a PowerShell module. 
+   >It is recommended to visit the documentation on [Getting Started](/powershell/gallery/getting-started) with PowerShell Gallery. This page provides more specific details on installing a PowerShell module. 
 
 To install the newest version of the Diagnostic Data Viewer PowerShell module, run the following command within an elevated PowerShell session: 
 ```powershell
@@ -180,4 +180,4 @@ When resetting the size of your data history to a lower value, be sure to turn o
 
 ## Related Links
 - [Module in PowerShell Gallery](https://www.powershellgallery.com/packages/Microsoft.DiagnosticDataViewer)
-- [Documentation for Diagnostic Data Viewer for PowerShell](/powershell/module/microsoft.diagnosticdataviewer/?)
+- [Documentation for Diagnostic Data Viewer for PowerShell](/powershell/module/microsoft.diagnosticdataviewer)

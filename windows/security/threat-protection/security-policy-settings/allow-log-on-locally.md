@@ -1,8 +1,8 @@
 ---
-title: Allow log on locally - security policy setting (Windows 10)
+title: Allow log on locally - security policy setting
 description: Describes the best practices, location, values, policy management, and security considerations for the Allow log on locally security policy setting.
 ms.assetid: d9e5e1f3-3bff-4da7-a9a2-4bb3e0c79055
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
 ms.prod: windows-client
 ms.mktglfcycl: deploy
@@ -29,7 +29,7 @@ Describes the best practices, location, values, policy management, and security 
 
 This policy setting determines which users can start an interactive session on the device. Users must have this user right to log on over a Remote Desktop Services session that is running on a Windows-based member device or domain controller.
 > **Note:**  Users who do not have this right are still able to start a remote interactive session on the device if they have the **Allow logon through Remote Desktop Services** right.
- 
+
 Constant: SeInteractiveLogonRight
 
 ### Possible values
@@ -48,6 +48,7 @@ By default, the members of the following groups have this right on domain contro
 -   Account Operators
 -   Administrators
 -   Backup Operators
+-   Enterprise Domain Controllers
 -   Print Operators
 -   Server Operators
 
@@ -62,17 +63,17 @@ Computer Configuration\\Policies\\Windows Settings\\Security Settings\\Local Pol
 
 ### Default values
 
-The following table lists the actual and effective default policy values for the most recent supported versions of Windows. Default values are also listed on the policy’s property page.
+The following table lists the actual and effective default policy values for the most recent supported versions of Windows. Default values are also listed on the policy's property page.
 
 | Server type or GPO | Default value |
 | - | - |
 | Default Domain Policy| Not Defined |
-| Default Domain Controller Policy | Account Operators<br>Administrators<br>Backup Operators<br>Print Operators<br>Server Operators |
+| Default Domain Controller Policy | Account Operators<br>Administrators<br>Backup Operators<br>Enterprise Domain Controllers<br>Print Operators<br>Server Operators |
 | Stand-Alone Server Default Settings| Administrators<br>Backup Operators<br>Users |
-| Domain Controller Effective Default Settings | Account Operators<br>Administrators<br>Backup Operators<br>Print Operators<br>Server Operators |
+| Domain Controller Effective Default Settings | Account Operators<br>Administrators<br>Backup Operators<br>Enterprise Domain Controllers<br>Print Operators<br>Server Operators |
 | Member Server Effective Default Settings | Administrators<br>Backup Operators<br>Users |
 | Client Computer Effective Default Settings | Administrators<br>Backup Operators<br>Users |
- 
+
 ## Policy management
 
 Restarting the device is not required to implement this change.
@@ -112,5 +113,5 @@ If you remove these default groups, you could limit the abilities of users who a
 
 ## Related topics
 - [User Rights Assignment](user-rights-assignment.md)
- 
- 
+
+

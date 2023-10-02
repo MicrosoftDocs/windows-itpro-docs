@@ -4,7 +4,7 @@ description: Learn more about the LanguagePackManagement CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/28/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,8 +16,7 @@ ms.topic: reference
 <!-- LanguagePackManagement-Begin -->
 # LanguagePackManagement CSP
 
-> [!IMPORTANT]
-> This CSP contains preview policies that are under development and only applicable for [Windows Insider Preview builds](/windows-insider/). These policies are subject to change and may have dependencies on other features or services in preview.
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- LanguagePackManagement-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -49,7 +48,7 @@ The following list shows the LanguagePackManagement configuration service provid
 <!-- Device-Install-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview [99.9.9999] |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview [99.9.9999] |
 <!-- Device-Install-Applicability-End -->
 
 <!-- Device-Install-OmaUri-Begin -->
@@ -72,7 +71,7 @@ Language to be installed or being installed.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-Install-DFProperties-End -->
 
@@ -88,7 +87,7 @@ Language to be installed or being installed.
 <!-- Device-Install-{Language ID}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview [99.9.9999] |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview [99.9.9999] |
 <!-- Device-Install-{Language ID}-Applicability-End -->
 
 <!-- Device-Install-{Language ID}-OmaUri-Begin -->
@@ -111,7 +110,7 @@ Language tag of the language to be installed or being installed.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 | Dynamic Node Naming | UniqueName: Language tag of the language to be installed or being installed. |
 <!-- Device-Install-{Language ID}-DFProperties-End -->
@@ -128,7 +127,7 @@ Language tag of the language to be installed or being installed.
 <!-- Device-Install-{Language ID}-CopyToDeviceInternationalSettings-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview [99.9.9999] |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview [99.9.9999] |
 <!-- Device-Install-{Language ID}-CopyToDeviceInternationalSettings-Applicability-End -->
 
 <!-- Device-Install-{Language ID}-CopyToDeviceInternationalSettings-OmaUri-Begin -->
@@ -139,7 +138,7 @@ Language tag of the language to be installed or being installed.
 
 <!-- Device-Install-{Language ID}-CopyToDeviceInternationalSettings-Description-Begin -->
 <!-- Description-Source-DDF -->
-Copies the language to the international settings (i.e., locale, input layout, speech recognizer, preferred UI language) of the device immediately after installation if the value is true. Default value is false.
+Copies the language to the international settings (that is, locale, input layout, speech recognizer, preferred UI language) of the device immediately after installation if the value is true. Default value is false.
 <!-- Device-Install-{Language ID}-CopyToDeviceInternationalSettings-Description-End -->
 
 <!-- Device-Install-{Language ID}-CopyToDeviceInternationalSettings-Editable-Begin -->
@@ -151,7 +150,7 @@ Copies the language to the international settings (i.e., locale, input layout, s
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | false |
 <!-- Device-Install-{Language ID}-CopyToDeviceInternationalSettings-DFProperties-End -->
@@ -177,7 +176,7 @@ Copies the language to the international settings (i.e., locale, input layout, s
 <!-- Device-Install-{Language ID}-EnableLanguageFeatureInstallations-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview [99.9.9999] |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview [99.9.9999] |
 <!-- Device-Install-{Language ID}-EnableLanguageFeatureInstallations-Applicability-End -->
 
 <!-- Device-Install-{Language ID}-EnableLanguageFeatureInstallations-OmaUri-Begin -->
@@ -200,7 +199,7 @@ Enables installations of all available language features when the value is true.
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | true |
 <!-- Device-Install-{Language ID}-EnableLanguageFeatureInstallations-DFProperties-End -->
@@ -226,7 +225,7 @@ Enables installations of all available language features when the value is true.
 <!-- Device-Install-{Language ID}-ErrorCode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview [99.9.9999] |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview [99.9.9999] |
 <!-- Device-Install-{Language ID}-ErrorCode-Applicability-End -->
 
 <!-- Device-Install-{Language ID}-ErrorCode-OmaUri-Begin -->
@@ -249,7 +248,7 @@ Error code of queued language installation. 0 if there is no error.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-Install-{Language ID}-ErrorCode-DFProperties-End -->
 
@@ -265,7 +264,7 @@ Error code of queued language installation. 0 if there is no error.
 <!-- Device-Install-{Language ID}-StartInstallation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview [99.9.9999] |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview [99.9.9999] |
 <!-- Device-Install-{Language ID}-StartInstallation-Applicability-End -->
 
 <!-- Device-Install-{Language ID}-StartInstallation-OmaUri-Begin -->
@@ -288,7 +287,7 @@ Execution node to queue a language for installation on the device.
 
 | Property name | Property value |
 |:--|:--|
-| Format | null |
+| Format | `null` |
 | Access Type | Exec |
 <!-- Device-Install-{Language ID}-StartInstallation-DFProperties-End -->
 
@@ -304,7 +303,7 @@ Execution node to queue a language for installation on the device.
 <!-- Device-Install-{Language ID}-Status-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview [99.9.9999] |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview [99.9.9999] |
 <!-- Device-Install-{Language ID}-Status-Applicability-End -->
 
 <!-- Device-Install-{Language ID}-Status-OmaUri-Begin -->
@@ -327,7 +326,7 @@ Status of the language queued for install. 0 - not started; 1 - in progress; 2 -
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-Install-{Language ID}-Status-DFProperties-End -->
 
@@ -343,7 +342,7 @@ Status of the language queued for install. 0 - not started; 1 - in progress; 2 -
 <!-- Device-InstalledLanguages-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview [99.9.9999] |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview [99.9.9999] |
 <!-- Device-InstalledLanguages-Applicability-End -->
 
 <!-- Device-InstalledLanguages-OmaUri-Begin -->
@@ -366,7 +365,7 @@ Languages currently installed on the device.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-InstalledLanguages-DFProperties-End -->
 
@@ -382,7 +381,7 @@ Languages currently installed on the device.
 <!-- Device-InstalledLanguages-{Language ID}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview [99.9.9999] |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview [99.9.9999] |
 <!-- Device-InstalledLanguages-{Language ID}-Applicability-End -->
 
 <!-- Device-InstalledLanguages-{Language ID}-OmaUri-Begin -->
@@ -405,7 +404,7 @@ Language tag of an installed language on the device. Delete to uninstall.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Delete, Get |
 | Dynamic Node Naming | ClientInventory |
 <!-- Device-InstalledLanguages-{Language ID}-DFProperties-End -->
@@ -422,7 +421,7 @@ Language tag of an installed language on the device. Delete to uninstall.
 <!-- Device-InstalledLanguages-{Language ID}-LanguageFeatures-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview [99.9.9999] |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview [99.9.9999] |
 <!-- Device-InstalledLanguages-{Language ID}-LanguageFeatures-Applicability-End -->
 
 <!-- Device-InstalledLanguages-{Language ID}-LanguageFeatures-OmaUri-Begin -->
@@ -445,7 +444,7 @@ Numeric representation of the language features installed. Basic Typing - 1 (0x1
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-InstalledLanguages-{Language ID}-LanguageFeatures-DFProperties-End -->
 
@@ -461,7 +460,7 @@ Numeric representation of the language features installed. Basic Typing - 1 (0x1
 <!-- Device-InstalledLanguages-{Language ID}-Providers-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview [99.9.9999] |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview [99.9.9999] |
 <!-- Device-InstalledLanguages-{Language ID}-Providers-Applicability-End -->
 
 <!-- Device-InstalledLanguages-{Language ID}-Providers-OmaUri-Begin -->
@@ -484,7 +483,7 @@ Numeric representation of how a language is installed. 1 - The system language p
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-InstalledLanguages-{Language ID}-Providers-DFProperties-End -->
 
@@ -500,7 +499,7 @@ Numeric representation of how a language is installed. 1 - The system language p
 <!-- Device-LanguageSettings-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview [99.9.9999] |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview [99.9.9999] |
 <!-- Device-LanguageSettings-Applicability-End -->
 
 <!-- Device-LanguageSettings-OmaUri-Begin -->
@@ -523,7 +522,7 @@ Language settings of the device.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-LanguageSettings-DFProperties-End -->
 
@@ -539,7 +538,7 @@ Language settings of the device.
 <!-- Device-LanguageSettings-SystemPreferredUILanguages-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview [99.9.9999] |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview [99.9.9999] |
 <!-- Device-LanguageSettings-SystemPreferredUILanguages-Applicability-End -->
 
 <!-- Device-LanguageSettings-SystemPreferredUILanguages-OmaUri-Begin -->
@@ -562,7 +561,7 @@ System Preferred UI Language of the device.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get, Replace |
 <!-- Device-LanguageSettings-SystemPreferredUILanguages-DFProperties-End -->
 

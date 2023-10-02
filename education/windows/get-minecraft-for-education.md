@@ -2,11 +2,8 @@
 title: Get and deploy Minecraft Education
 description: Learn how to obtain and distribute Minecraft Education to Windows devices.
 ms.topic: how-to
-ms.date: 02/23/2023
-appliesto:
-  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
+ms.date: 09/11/2023
 ms.collection:
-  - highpri
   - education
   - tier2
 ---

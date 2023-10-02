@@ -4,7 +4,7 @@ description: Learn more about the RemoteDesktop Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -26,7 +26,7 @@ ms.topic: reference
 <!-- AutoSubscription-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1370] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1370] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1370] and later <br> :heavy_check_mark: Windows 10, version 21H2 [10.0.19044.1370] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1370] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1370] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1370] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1370] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AutoSubscription-Applicability-End -->
 
 <!-- AutoSubscription-OmaUri-Begin -->
@@ -37,7 +37,7 @@ ms.topic: reference
 
 <!-- AutoSubscription-Description-Begin -->
 <!-- Description-Source-ADMX -->
-Controls the list of URLs that the user should be auto-subscribed to
+Controls the list of URLs that the user should be auto-subscribed to.
 <!-- AutoSubscription-Description-End -->
 
 <!-- AutoSubscription-Editable-Begin -->
@@ -53,7 +53,7 @@ To automatically subscribe to [Azure Virtual Desktop](/azure/virtual-desktop/ove
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `|`) |
 <!-- AutoSubscription-DFProperties-End -->
@@ -84,7 +84,7 @@ To automatically subscribe to [Azure Virtual Desktop](/azure/virtual-desktop/ove
 <!-- LoadAadCredKeyFromProfile-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- LoadAadCredKeyFromProfile-Applicability-End -->
 
 <!-- LoadAadCredKeyFromProfile-OmaUri-Begin -->
@@ -109,7 +109,7 @@ This policy allows the user to load the data protection API (DPAPI) cred key fro
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- LoadAadCredKeyFromProfile-DFProperties-End -->

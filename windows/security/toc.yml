@@ -1,0 +1,19 @@
+items:
+- name: Introduction to Windows security
+  href: introduction.md
+- name: Security features licensing and edition requirements
+  href: licensing-and-edition-requirements.md
+- name: Security foundations
+  href: security-foundations/toc.yml
+- name: Hardware security
+  href: hardware-security/toc.yml
+- name: Operating system security
+  href: operating-system-security/toc.yml
+- name: Application security
+  href: application-security/toc.yml
+- name: Identity protection
+  href: identity-protection/toc.yml
+- name: Cloud security
+  href: cloud-security/toc.yml
+- name: Windows Privacy 🔗
+  href: /windows/privacy

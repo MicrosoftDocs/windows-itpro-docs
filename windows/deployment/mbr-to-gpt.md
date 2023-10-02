@@ -7,8 +7,10 @@ ms.author: frankroj
 ms.date: 11/23/2022
 manager: aaroncz
 ms.localizationpriority: high
-ms.topic: article
-ms.collection: highpri, tier2
+ms.topic: how-to
+ms.collection:
+  - highpri
+  - tier2
 ms.technology: itpro-deploy
 ---
 

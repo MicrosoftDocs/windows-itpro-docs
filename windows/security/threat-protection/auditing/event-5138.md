@@ -1,11 +1,11 @@
 ---
-title: 5138(S) A directory service object was undeleted. (Windows 10)
+title: 5138(S) A directory service object was undeleted. 
 description: Describes security event 5138(S) A directory service object was undeleted.
 ms.pagetype: security
 ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
+ms.localizationpriority: low
 author: vinaypamnani-msft
 ms.date: 09/08/2021
 ms.reviewer: 

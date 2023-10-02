@@ -1,25 +1,23 @@
 ---
 title: Update Windows installation media with Dynamic Update
-description: Learn how to deploy feature updates to your mission critical devices
+description: Learn how to acquire and apply Dynamic Update packages to existing Windows images prior to deployment
 ms.prod: windows-client
+ms.technology: itpro-updates
+ms.topic: conceptual
 author: mestew
-ms.localizationpriority: medium
 ms.author: mstewart
 manager: aaroncz
-ms.topic: article
-ms.technology: itpro-updates
-ms.date: 12/31/2017
 ms.reviewer: stevedia
+ms.localizationpriority: medium
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
+ms.date: 07/17/2023
 ---
 
 # Update Windows installation media with Dynamic Update
 
-**Applies to**
-
--   Windows 10
--   Windows 11
-
-This topic explains how to acquire and apply Dynamic Update packages to existing Windows images *prior to deployment* and includes Windows PowerShell scripts you can use to automate this process.
+This article explains how to acquire and apply Dynamic Update packages to existing Windows images *prior to deployment* and includes Windows PowerShell scripts you can use to automate this process.
 
 Volume-licensed media is available for each release of Windows in the Volume Licensing Service Center (VLSC) and other relevant channels such as Windows Update for Business, Windows Server Update Services (WSUS), and Visual Studio Subscriptions. You can use Dynamic Update to ensure that Windows devices have the latest feature update packages as part of an in-place upgrade while preserving language pack and Features on Demand (FODs) that might have been previously installed. Dynamic Update also eliminates the need to install a separate quality update as part of the in-place upgrade process.
 
@@ -29,7 +27,7 @@ Whenever installation of a feature update starts (whether from media or an envir
 
 - Updates to Setup.exe binaries or other files that Setup uses for feature updates
 - Updates for the "safe operating system" (SafeOS) that is used for the Windows recovery environment
-- Updates to the servicing stack necessary to complete the feature update (see [Servicing stack updates](servicing-stack-updates.md) for more information)
+- Updates to the servicing stack necessary to complete the feature update For more information, see [Servicing stack updates](servicing-stack-updates.md).
 - The latest cumulative (quality) update
 - Updates to applicable drivers already published by manufacturers specifically intended for Dynamic Update
 
@@ -39,20 +37,40 @@ Devices must be able to connect to the internet to obtain Dynamic Updates. In so
 
 ## Acquire Dynamic Update packages
 
-You can obtain Dynamic Update packages from the [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Home.aspx). At that site, use the search bar in the upper right to find the Dynamic Update packages for a particular release. For example, you could enter *1809 Dynamic Update x64*, which would return results like this:
+You can obtain Dynamic Update packages from the [Microsoft Update Catalog](https://catalog.update.microsoft.com). At that site, use the search bar in the upper right to find the Dynamic Update packages for a particular release. The various Dynamic Update packages might not all be present in the results from a single search, so you might have to search with different keywords to find all of the updates. Check various parts of the results to be sure you've identified the needed files. The following tables show the key values to search for or look for in the results. 
 
-![Table with columns labeled Title, Products, Classification, Last Updated, Version, and Size and four rows listing various dynamic updates and associated KB articles.](images/update-catalog.png)
+### Windows 11, version 22H2 Dynamic Update packages
+**Title** can distinguish each Dynamic Package. Cumulative updates have the servicing stack embedded. The servicing stack is published only if necessary for a given cumulative update.
 
-The various Dynamic Update packages might not all be present in the results from a single search, so you might have to search with different keywords to find all of the updates. And you'll need to check various parts of the results to be sure you've identified the needed files. This table shows in **bold** the key items to search for or look for in the results. For example, to find the relevant "Setup Dynamic Update," you'll have to check the detailed description for the download by selecting the link in the **Title** column of the search results.
+| Update packages                   |Title                                                          |
+|-----------------------------------|---------------------------------------------------------------|
+|Safe OS Dynamic Update             | YYYY-MM Safe OS Dynamic Update for Windows 11 Version 22H2    |
+|Setup Dynamic Update               | YYYY-MM Setup Dynamic Update for Windows 11 Version 22H2      |
+|Latest cumulative update           | YYYY-MM Cumulative Update for Windows 11 Version 22H2         |
+|Servicing stack Dynamic Update     | YYYY-MM Servicing Stack Update for Windows 11 Version 22H2    |
 
-|To find this Dynamic Update packages, search for or check the results here  |Title  |Product  |Description (select the **Title** link to see **Details**)  |
-|---------|---------|---------|---------|
-|Safe OS Dynamic Update      | 2019-08 Dynamic Update...        | Windows 10 Dynamic Update, Windows **Safe OS Dynamic Update**         | ComponentUpdate:        |
-|Setup Dynamic Update     | 2019-08 Dynamic Update...         | Windows 10 Dynamic Update        | **SetupUpdate**        |
-|Latest cumulative update     | 2019-08 **Cumulative Update for Windows 10**    |  Windows 10       |  Install this update to resolve issues in Windows...       |
-|Servicing stack Dynamic Update     | 2019-09 **Servicing Stack Update for Windows 10**        |  Windows 10...       | Install this update to resolve issues in Windows...        |
 
-If you want to customize the image with additional languages or Features on Demand, download supplemental media ISO files from the [Volume Licensing Service Center](https://www.microsoft.com/licensing/servicecenter/default.aspx). For example, since Dynamic Update will be disabled for your devices, and if users require specific Features on Demand, you can preinstall these into the image.
+### Windows 11, version 21H2 Dynamic Update packages
+**Title**, **Product** and **Description** are required to distinguish each Dynamic Package. Latest cumulative update has the servicing stack embedded. Servicing stack published separately only if necessary as a prerequisite for a given cumulative update.
+
+| Update packages                   |Title                                                          |Product                                       |Description       |
+|-----------------------------------|---------------------------------------------------------------|----------------------------------------------|------------------|
+|Safe OS Dynamic Update             | YYYY-MM Dynamic Update for Windows 11                         |Windows Safe OS Dynamic Update                | ComponentUpdate  |
+|Setup Dynamic Update               | YYYY-MM Dynamic Update for Windows 11                         |Windows 10 and later Dynamic Update           | SetupUpdate      |
+|Latest cumulative update           | YYYY-MM Cumulative Update for Windows 11                      |                                              |                  |
+|Servicing stack Dynamic Update     | YYYY-MM Servicing Stack Update for Windows 11 Version 21H2    |                                              |                  |
+
+### For Windows 10, version 22H2 Dynamic Update packages
+**Title**, **Product** and **Description** are required to distinguish each Dynamic Package. Latest cumulative update has the servicing stack embedded. Servicing stack published separately only if necessary as a prerequisite for a given cumulative update.
+
+| Update packages                   |Title                                                          |Product                                       |Description       |
+|-----------------------------------|---------------------------------------------------------------|----------------------------------------------|------------------|
+|Safe OS Dynamic Update             | YYYY-MM Dynamic Update for Windows 10 Version 22H2            |Windows Safe OS Dynamic Update                | ComponentUpdate  |
+|Setup Dynamic Update               | YYYY-MM Dynamic Update for Windows 10 Version 22H2            |Windows 10 and later Dynamic Update           | SetupUpdate      |
+|Latest cumulative update           | YYYY-MM Cumulative Update for Windows 10 Version 22H2         |                                              |                  |
+|Servicing stack Dynamic Update     | YYYY-MM Servicing Stack Update for Windows 10 Version 22H2    |                                              |                  |
+
+If you want to customize the image with additional languages or Features on Demand, download supplemental media ISO files from the [Volume Licensing Service Center](https://www.microsoft.com/licensing/servicecenter/default.aspx). For example, if Dynamic Update will be disabled for your devices, and if users require specific Features on Demand, you can preinstall these into the image.
 
 ## Update Windows installation media
 
@@ -63,55 +81,56 @@ Properly updating the installation media involves a large number of actions oper
 - Windows operating system: one or more editions of Windows stored in \sources\install.wim
 - Windows installation media: the complete collection of files and folders in the Windows installation media. For example, \sources folder, \boot folder, Setup.exe, and so on.
 
-This table shows the correct sequence for applying the various tasks to the files. For example, the full sequence starts with adding the servicing stack update to WinRE (1) and concludes with adding the Dynamic Update for Setup to the new media (26).
+This table shows the correct sequence for applying the various tasks to the files. For example, the full sequence starts with adding the servicing stack update to WinRE (1) and concludes with adding boot manager from WinPE to the new media (28).
 
-|Task  |WinRE (winre.wim)  |WinPE (boot.wim)  |Operating system (install.wim)  | New media |
-|---------|---------|---------|---------|------|
-|Add servicing stack Dynamic Update     |  1       | 9        | 18        |
-|Add language pack     | 2        |   10      |  19       |
-|Add localized optional packages     |  3       | 11        |         |
-|Add font support     |  4       |  12       |         |
-|Add text-to-speech      | 5        |   13      |         |
-|Update Lang.ini     |         |  14       |         |
-|Add Features on Demand     |         |         |  20       |
-|Add Safe OS Dynamic Update     | 6        |        |       |
-|Add Setup Dynamic Update     |         |         |         | 26
-|Add setup.exe from WinPE     |         |         |         | 27
-|Add latest cumulative update     |         | 15        | 21        |
-|Clean up the image     |  7       | 16        | 22        |
-|Add Optional Components     |         |         |  23       |
-|Add .NET and .NET cumulative updates     |         |        | 24        |
-|Export image     | 8        |  17       | 25        |
+|Task                               |WinRE (winre.wim)  |WinPE (boot.wim)  |Operating system (install.wim)  | New media |
+|-----------------------------------|-------------------|------------------|--------------------------------|-----------|
+|Add servicing stack Dynamic Update | 1                 | 9                | 18                             |           | 
+|Add language pack                  | 2                 | 10               | 19                             |           |
+|Add localized optional packages    | 3                 | 11               |                                |           |
+|Add font support                   | 4                 | 12               |                                |           |
+|Add text-to-speech                 | 5                 | 13               |                                |           |
+|Update Lang.ini                    |                   | 14               |                                |           |
+|Add Features on Demand             |                   |                  | 20                             |           |
+|Add Safe OS Dynamic Update         | 6                 |                  |                                |           |
+|Add Setup Dynamic Update           |                   |                  |                                | 26        |
+|Add setup.exe from WinPE           |                   |                  |                                | 27        |
+|Add boot manager from WinPE        |                   |                  |                                | 28        |
+|Add latest cumulative update       |                   | 15               | 21                             |           |
+|Clean up the image                 | 7                 | 16               | 22                             |           |
+|Add Optional Components            |                   |                  | 23                             |           |
+|Add .NET and .NET cumulative updates |                 |                  | 24                             |           |
+|Export image                       | 8                 | 17               | 25                             |           |
 
 > [!NOTE]
 > Starting in February 2021, the latest cumulative update and servicing stack update will be combined and distributed in the Microsoft Update Catalog as a new combined cumulative update. For Steps 1, 9, and 18 that require the servicing stack update for updating the installation media, you should use the combined cumulative update. For more information on the combined cumulative update, see [Servicing stack updates](./servicing-stack-updates.md).
 
 > [!NOTE]
-> Microsoft will remove the Flash component from Windows through KB4577586, “Update for Removal of Adobe Flash Player”. You can also remove Flash anytime by deploying the update in KB4577586 (available on the Catalog) between steps 20 and 21. As of July 2021, KB4577586, “Update for Removal of Adobe Flash Player” will be included in the latest cumulative update for Windows 10, versions 1607 and 1507. The update will also be included in the Monthly Rollup and the Security Only Update for Windows 8.1, Windows Server 2012, and Windows Embedded 8 Standard. For more information, see [Update on Adobe Flash Player End of Support](https://blogs.windows.com/msedgedev/2020/09/04/update-adobe-flash-end-support/).
+> Microsoft will remove the Flash component from Windows through KB4577586, "Update for Removal of Adobe Flash Player". You can also remove Flash anytime by deploying the update in KB4577586 (available on the Catalog) between steps 20 and 21. As of July 2021, KB4577586, "Update for Removal of Adobe Flash Player" will be included in the latest cumulative update for Windows 10, versions 1607 and 1507. The update will also be included in the Monthly Rollup and the Security Only Update for Windows 8.1, Windows Server 2012, and Windows Embedded 8 Standard. For more information, see [Update on Adobe Flash Player End of Support](https://blogs.windows.com/msedgedev/2020/09/04/update-adobe-flash-end-support/).
 
 ### Multiple Windows editions
 
-The main operating system file (install.wim) contains multiple editions of Windows. It’s possible that only an update for a given edition is required to deploy it, based on the index. Or, it might be that all editions need an update. Further, ensure that languages are installed before Features on Demand, and the latest cumulative update is always applied last.
+The main operating system file (install.wim) contains multiple editions of Windows. It's possible that only an update for a given edition is required to deploy it, based on the index. Or, it might be that all editions need an update. Further, ensure that languages are installed before Features on Demand, and the latest cumulative update is always applied last.
 
 ### Additional languages and features
 
 You don't have to add more languages and features to the image to accomplish the updates, but it's an opportunity to customize the image with more languages, Optional Components, and Features on Demand beyond what is in your starting image. To do this, it's important to make these changes in the correct order: first apply servicing stack updates, followed by language additions, then by feature additions, and finally the latest cumulative update. The provided sample script installs a second language (in this case Japanese (ja-JP)). Since this language is backed by an lp.cab, there's no need to add a Language Experience Pack. Japanese is added to both the main operating system and to the recovery environment to allow the user to see the recovery screens in Japanese. This includes adding localized versions of the packages currently installed in the recovery image.
 
-Optional Components, along with the .NET feature, can be installed offline, however doing so creates pending operations that require the device to restart. As a result, the call to perform image cleanup would fail. There are two options to avoid this. One option is to skip the image cleanup step, though that will result in a larger install.wim. Another option is to install the .NET and Optional Components in a step after cleanup but before export. This is the option in the sample script. By doing this, you will have to start with the original install.wim (with no pending actions) when you maintain or update the image the next time (for example, the next month).
+Optional Components, along with the .NET feature, can be installed offline, however doing so creates pending operations that require the device to restart. As a result, the call to perform image cleanup would fail. There are two options to avoid this. One option is to skip the image cleanup step, though that results in a larger install.wim. Another option is to install the .NET and Optional Components in a step after cleanup but before export. This is the option in the sample script. By doing this, you'll have to start with the original install.wim (with no pending actions) when you maintain or update the image the next time (for example, the next month).
 
 ## Windows PowerShell scripts to apply Dynamic Updates to an existing image
 
 These examples are for illustration only, and therefore lack error handling. The script assumes that the following packages are stored locally in this folder structure:
 
-|Folder  |Description  |
-|---------|---------|
-|C:\mediaRefresh     |  Parent folder that contains the PowerShell script       |
-|C:\mediaRefresh\oldMedia |  Folder that contains the original media that will be refreshed. For example, contains Setup.exe, and \sources folder.       |
-|C:\mediaRefresh\newMedia     | Folder that will contain the updated media. It is copied from \oldMedia, then used as the target for all update and cleanup operations.        |
+|Folder                     |Description                                                                                                                              |
+|---------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
+|C:\mediaRefresh            | Parent folder that contains the PowerShell script                                                                                       |
+|C:\mediaRefresh\oldMedia   | Folder that contains the original media that will be refreshed. For example, contains Setup.exe, and \sources folder.                   |
+|C:\mediaRefresh\newMedia   | Folder that will contain the updated media. It's copied from \oldMedia, then used as the target for all update and cleanup operations. |
 
 ### Get started
 
-The script starts by declaring global variables and creating folders to use for mounting images. Then, make a copy of the original media, from \oldMedia to \newMedia, keeping the original media in case there is a script error and it's necessary to start over from a known state. Also, it will provide a comparison of old versus new media to evaluate changes. To ensure that the new media updates, make sure they are not read-only.
+The script starts by declaring global variables and creating folders to use for mounting images. Then, make a copy of the original media, from \oldMedia to \newMedia, keeping the original media in case there's a script error and it's necessary to start over from a known state. Also, it will provide a comparison of old versus new media to evaluate changes. To ensure that the new media updates, make sure they aren't read-only.
 
 ```powershell
 #Requires -RunAsAdministrator
@@ -125,8 +144,10 @@ $LANG  = "ja-jp"
 $LANG_FONT_CAPABILITY = "jpan"
 
 # Declare media for FOD and LPs
+# Note: Starting with Windows 11, version 21H2, the language pack (LANGPACK) ISO has been superseded by the FOD ISO.
+# Language packs and the \Windows Preinstallation Environment packages are part of the LOF ISO.
+# If you are using this script for Windows 10, modify to mount and use the LANGPACK ISO.
 $FOD_ISO_PATH    = "C:\mediaRefresh\packages\FOD-PACKAGES_OEM_PT1_amd64fre_MULTI.iso"
-$LP_ISO_PATH     = "C:\mediaRefresh\packages\CLIENTLANGPACKDVD_OEM_MULTI.iso"
 
 # Declare Dynamic Update packages
 $LCU_PATH        = "C:\mediaRefresh\packages\LCU.msu"
@@ -143,24 +164,23 @@ $MAIN_OS_MOUNT   = "C:\mediaRefresh\temp\MainOSMount"
 $WINRE_MOUNT     = "C:\mediaRefresh\temp\WinREMount"
 $WINPE_MOUNT     = "C:\mediaRefresh\temp\WinPEMount"
 
-# Mount the language pack ISO
-Write-Output "$(Get-TS): Mounting LP ISO"
-$LP_ISO_DRIVE_LETTER = (Mount-DiskImage -ImagePath $LP_ISO_PATH -ErrorAction stop | Get-Volume).DriveLetter
+# Mount the Features on Demand ISO
+Write-Output "$(Get-TS): Mounting FOD ISO"
+$FOD_ISO_DRIVE_LETTER = (Mount-DiskImage -ImagePath $FOD_ISO_PATH -ErrorAction stop | Get-Volume).DriveLetter
+
+# Note: Starting with Windows 11, version 21H2, the correct path for main OS language and optional features
+# moved to \LanguagesAndOptionalFeatures instead of the root. For Windows 10, use $FOD_PATH = $FOD_ISO_DRIVE_LETTER + ":\"
+$FOD_PATH = $FOD_ISO_DRIVE_LETTER + ":\LanguagesAndOptionalFeatures"
 
 # Declare language related cabs
-$WINPE_OC_PATH              = "$LP_ISO_DRIVE_LETTER`:\Windows Preinstallation Environment\x64\WinPE_OCs"
+$WINPE_OC_PATH              = "$FOD_ISO_DRIVE_LETTER`:\Windows Preinstallation Environment\x64\WinPE_OCs"
 $WINPE_OC_LANG_PATH         = "$WINPE_OC_PATH\$LANG"
 $WINPE_OC_LANG_CABS         = Get-ChildItem $WINPE_OC_LANG_PATH -Name
 $WINPE_OC_LP_PATH           = "$WINPE_OC_LANG_PATH\lp.cab"
 $WINPE_FONT_SUPPORT_PATH    = "$WINPE_OC_PATH\WinPE-FontSupport-$LANG.cab"
 $WINPE_SPEECH_TTS_PATH      = "$WINPE_OC_PATH\WinPE-Speech-TTS.cab"
 $WINPE_SPEECH_TTS_LANG_PATH = "$WINPE_OC_PATH\WinPE-Speech-TTS-$LANG.cab"
-$OS_LP_PATH                 = "$LP_ISO_DRIVE_LETTER`:\x64\langpacks\Microsoft-Windows-Client-Language-Pack_x64_$LANG.cab"
-
-# Mount the Features on Demand ISO
-Write-Output "$(Get-TS): Mounting FOD ISO"
-$FOD_ISO_DRIVE_LETTER = (Mount-DiskImage -ImagePath $FOD_ISO_PATH -ErrorAction stop | Get-Volume).DriveLetter
-$FOD_PATH = $FOD_ISO_DRIVE_LETTER + ":\"
+$OS_LP_PATH                 = "$FOD_PATH\Microsoft-Windows-Client-Language-Pack_x64_$LANG.cab"
 
 # Create folders for mounting images and storing temporary files
 New-Item -ItemType directory -Path $WORKING_PATH -ErrorAction Stop | Out-Null
@@ -198,7 +218,7 @@ Mount-WindowsImage -ImagePath $WORKING_PATH"\winre.wim" -Index 1 -Path $WINRE_MO
 # Depending on the Windows release that you are updating, there are 2 different approaches for updating the servicing stack
 # The first approach is to use the combined cumulative update. This is for Windows releases that are shipping a combined 
 # cumulative update that includes the servicing stack updates (i.e. SSU + LCU are combined). Windows 11, version 21H2 and 
-# Windows 11, version 22H2 are examples. In these cases, the servicing stack update is not published seperately; the combined 
+# Windows 11, version 22H2 are examples. In these cases, the servicing stack update is not published separately; the combined 
 # cumulative update should be used for this step. However, in hopefully rare cases, there may breaking change in the combined 
 # cumulative update format, that requires a standalone servicing stack update to be published, and installed first before the 
 # combined cumulative update can be installed. 
@@ -230,7 +250,7 @@ Catch
 }
 
 # The second approach for Step 1 is for Windows releases that have not adopted the combined cumulative update
-# but instead continue to have a seperate servicing stack update published. In this case, we'll install the SSU
+# but instead continue to have a separate servicing stack update published. In this case, we'll install the SSU
 # update. This second approach is commented out below.
 
 # Write-Output "$(Get-TS): Adding package $SSU_PATH"
@@ -287,7 +307,7 @@ Add-WindowsPackage -Path $WINRE_MOUNT -PackagePath $SAFE_OS_DU_PATH -ErrorAction
 
 # Perform image cleanup
 Write-Output "$(Get-TS): Performing image cleanup on WinRE"
-DISM /image:$WINRE_MOUNT /cleanup-image /StartComponentCleanup | Out-Null
+DISM /image:$WINRE_MOUNT /cleanup-image /StartComponentCleanup /ResetBase /Defer | Out-Null
 
 # Dismount
 Dismount-WindowsImage -Path $WINRE_MOUNT  -Save -ErrorAction stop | Out-Null
@@ -300,7 +320,7 @@ Move-Item -Path $WORKING_PATH"\winre2.wim" -Destination $WORKING_PATH"\winre.wim
 
 ### Update WinPE
 
-This script is similar to the one that updates WinRE, but instead it mounts Boot.wim, applies the packages with the latest cumulative update last, and saves. It repeats this for all images inside of Boot.wim, typically two images. It starts by applying the servicing stack Dynamic Update. Since the script is customizing this media with Japanese, it installs the language pack from the WinPE folder on the language pack ISO. Additionally, add font support and text to speech (TTS) support. Since the script is adding a new language, it rebuilds lang.ini, used to identify languages installed in the image. For the second image, we'll save setup.exe for later use, to ensure this version matches the \sources\setup.exe version from the installation media. If these binaries are not identical, Windows Setup will fail during installation. Finally, it cleans and exports Boot.wim, and copies it back to the new media.
+This script is similar to the one that updates WinRE, but instead it mounts Boot.wim, applies the packages with the latest cumulative update last, and saves. It repeats this for all images inside of Boot.wim, typically two images. It starts by applying the servicing stack Dynamic Update. Since the script is customizing this media with Japanese, it installs the language pack from the WinPE folder on the language pack ISO. Additionally, it adds font support and text to speech (TTS) support. Since the script is adding a new language, it rebuilds lang.ini, used to identify languages installed in the image. For the second image, we'll save setup.exe for later use, to ensure this version matches the \sources\setup.exe version from the installation media. If these binaries aren't identical, Windows Setup will fail during installation. We'll also save the serviced boot manager files for later use in the script. Finally, the script cleans and exports Boot.wim, and copies it back to the new media.
 
 ```powershell
 #
@@ -321,7 +341,7 @@ Foreach ($IMAGE in $WINPE_IMAGES) {
     # Depending on the Windows release that you are updating, there are 2 different approaches for updating the servicing stack
     # The first approach is to use the combined cumulative update. This is for Windows releases that are shipping a combined 
     # cumulative update that includes the servicing stack updates (i.e. SSU + LCU are combined). Windows 11, version 21H2 and 
-    # Windows 11, version 22H2 are examples. In these cases, the servicing stack update is not published seperately; the combined 
+    # Windows 11, version 22H2 are examples. In these cases, the servicing stack update is not published separately; the combined 
     # cumulative update should be used for this step. However, in hopefully rare cases, there may breaking change in the combined 
     # cumulative update format, that requires a standalone servicing stack update to be published, and installed first before the 
     # combined cumulative update can be installed. 
@@ -353,7 +373,7 @@ Foreach ($IMAGE in $WINPE_IMAGES) {
     }
 
     # The second approach for Step 9 is for Windows releases that have not adopted the combined cumulative update
-    # but instead continue to have a seperate servicing stack update published. In this case, we'll install the SSU
+    # but instead continue to have a separate servicing stack update published. In this case, we'll install the SSU
     # update. This second approach is commented out below.
 
     # Write-Output "$(Get-TS): Adding package $SSU_PATH"
@@ -414,11 +434,17 @@ Foreach ($IMAGE in $WINPE_IMAGES) {
 
     # Perform image cleanup
     Write-Output "$(Get-TS): Performing image cleanup on WinPE"
-    DISM /image:$WINPE_MOUNT /cleanup-image /StartComponentCleanup | Out-Null
+    DISM /image:$WINPE_MOUNT /cleanup-image /StartComponentCleanup /ResetBase /Defer | Out-Null
 
-    # If second image, save setup.exe for later use. This will address possible binary mismatch with the version in the main OS \sources folder
     if ($IMAGE.ImageIndex -eq "2") {
+
+        # Save setup.exe for later use. This will address possible binary mismatch with the version in the main OS \sources folder
         Copy-Item -Path $WINPE_MOUNT"\sources\setup.exe" -Destination $WORKING_PATH"\setup.exe" -Force -ErrorAction stop | Out-Null
+        
+        # Save serviced boot manager files later copy to the root media.
+        Copy-Item -Path $WINPE_MOUNT"\Windows\boot\efi\bootmgfw.efi" -Destination $WORKING_PATH"\bootmgfw.efi" -Force -ErrorAction stop | Out-Null
+        Copy-Item -Path $WINPE_MOUNT"\Windows\boot\efi\bootmgr.efi" -Destination $WORKING_PATH"\bootmgr.efi" -Force -ErrorAction stop | Out-Null
+    
     }
         
     # Dismount
@@ -435,11 +461,11 @@ Move-Item -Path $WORKING_PATH"\boot2.wim" -Destination $MEDIA_NEW_PATH"\sources\
 
 ### Update the main operating system
 
-For this next phase, there is no need to mount the main operating system, since it was already mounted in the previous scripts. This script starts by applying the servicing stack Dynamic Update. Then, it adds Japanese language support and then the Japanese language features. Unlike the Dynamic Update packages, it leverages `Add-WindowsCapability` to add these features. For a full list of such features, and their associated capability name, see [Available Features on Demand](/windows-hardware/manufacture/desktop/features-on-demand-non-language-fod).
+For this next phase, there's no need to mount the main operating system, since it was already mounted in the previous scripts. This script starts by applying the servicing stack Dynamic Update. Then, it adds Japanese language support and then the Japanese language features. Unlike the Dynamic Update packages, it uses `Add-WindowsCapability` to add these features. For a full list of such features, and their associated capability name, see [Available Features on Demand](/windows-hardware/manufacture/desktop/features-on-demand-non-language-fod).
 
 Now is the time to enable other Optional Components or add other Features on Demand. If such a feature has an associated cumulative update (for example, .NET), this is the time to apply those. The script then proceeds with applying the latest cumulative update. Finally, the script cleans and exports the image.
 
-You can install Optional Components, along with the .NET feature, offline, but that will require the device to be restarted. This is why the script installs .NET and Optional Components after cleanup and before export.
+You can install Optional Components, along with the .NET feature, offline, but that requires the device to be restarted. This is why the script installs .NET and Optional Components after cleanup and before export.
 
 ```powershell
 #
@@ -451,7 +477,7 @@ You can install Optional Components, along with the .NET feature, offline, but t
 # Depending on the Windows release that you are updating, there are 2 different approaches for updating the servicing stack
 # The first approach is to use the combined cumulative update. This is for Windows releases that are shipping a combined cumulative update that
 # includes the servicing stack updates (i.e. SSU + LCU are combined). Windows 11, version 21H2 and Windows 11, version 22H2 are examples. In these
-# cases, the servicing stack update is not published seperately; the combined cumulative update should be used for this step. However, in hopefully
+# cases, the servicing stack update is not published separately; the combined cumulative update should be used for this step. However, in hopefully
 # rare cases, there may breaking change in the combined cumulative update format, that requires a standalone servicing stack update to be published, 
 # and installed first before the combined cumulative update can be installed. 
 
@@ -464,7 +490,7 @@ Write-Output "$(Get-TS): Adding package $LCU_PATH"
 Add-WindowsPackage -Path $MAIN_OS_MOUNT -PackagePath $LCU_PATH | Out-Null  
 
 # The second approach for Step 18 is for Windows releases that have not adopted the combined cumulative update
-# but instead continue to have a seperate servicing stack update published. In this case, we'll install the SSU
+# but instead continue to have a separate servicing stack update published. In this case, we'll install the SSU
 # update. This second approach is commented out below.
 
 # Write-Output "$(Get-TS): Adding package $SSU_PATH"
@@ -532,7 +558,7 @@ Move-Item -Path $WORKING_PATH"\install2.wim" -Destination $MEDIA_NEW_PATH"\sourc
 
 ### Update remaining media files
 
-This part of the script updates the Setup files. It simply copies the individual files in the Setup Dynamic Update package to the new media. This step brings an updated Setup files as needed, along with the latest compatibility database, and replacement component manifests. This script also does a final replacement of setup.exe using the previously saved version from WinPE.
+This part of the script updates the Setup files. It simply copies the individual files in the Setup Dynamic Update package to the new media. This step brings in updated Setup files as needed, along with the latest compatibility database, and replacement component manifests. This script also does a final replacement of setup.exe and boot manager files using the previously saved versions from WinPE.
 
 ```powershell
 #
@@ -544,7 +570,28 @@ Write-Output "$(Get-TS): Adding package $SETUP_DU_PATH"
 cmd.exe /c $env:SystemRoot\System32\expand.exe $SETUP_DU_PATH -F:* $MEDIA_NEW_PATH"\sources" | Out-Null
 
 # Copy setup.exe from boot.wim, saved earlier.
+Write-Output "$(Get-TS): Copying $WORKING_PATH\setup.exe to $MEDIA_NEW_PATH\sources\setup.exe"
 Copy-Item -Path $WORKING_PATH"\setup.exe" -Destination $MEDIA_NEW_PATH"\sources\setup.exe" -Force -ErrorAction stop | Out-Null
+
+
+# Copy bootmgr files from boot.wim, saved earlier.
+$MEDIA_NEW_FILES = Get-ChildItem $MEDIA_NEW_PATH -Force -Recurse -Filter b*.efi
+
+Foreach ($File in $MEDIA_NEW_FILES){
+    if (($File.Name -ieq "bootmgfw.efi") -or `
+        ($File.Name -ieq "bootx64.efi") -or `
+        ($File.Name -ieq "bootia32.efi") -or `
+        ($File.Name -ieq "bootaa64.efi")) 
+    {
+        Write-Output "$(Get-TS): Copying $WORKING_PATH\bootmgfw.efi to $($File.FullName)"
+        Copy-Item -Path $WORKING_PATH"\bootmgfw.efi" -Destination $File.FullName -Force -ErrorAction stop | Out-Null
+    }
+    elseif ($File.Name -ieq "bootmgr.efi") 
+    {
+        Write-Output "$(Get-TS): Copying $WORKING_PATH\bootmgr.efi to $($File.FullName)"
+        Copy-Item -Path $WORKING_PATH"\bootmgr.efi" -Destination $File.FullName -Force -ErrorAction stop | Out-Null
+    }
+}
 
 ```
 
@@ -562,7 +609,6 @@ Remove-Item -Path $WORKING_PATH -Recurse -Force -ErrorAction stop | Out-Null
 
 # Dismount ISO images
 Write-Output "$(Get-TS): Dismounting ISO images"
-Dismount-DiskImage -ImagePath $LP_ISO_PATH -ErrorAction stop | Out-Null
 Dismount-DiskImage -ImagePath $FOD_ISO_PATH -ErrorAction stop | Out-Null
 
 Write-Output "$(Get-TS): Media refresh completed!"

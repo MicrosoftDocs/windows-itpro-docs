@@ -1,12 +1,9 @@
-- name: Windows Hello for Business documentation
-  href: index.yml
+items:
+- name: Overview
+  href: index.md
 - name: Concepts
   expanded: true
   items:
-  - name: Windows Hello for Business overview
-    href: hello-overview.md
-  - name: Passwordless strategy
-    href: passwordless-strategy.md
   - name: Why a PIN is better than a password
     href: hello-why-pin-is-better-than-password.md
   - name: Windows Hello biometrics in the enterprise
@@ -111,9 +108,11 @@
     href: hello-and-password-changes.md
 - name: Windows Hello for Business features
   items:
-  - name: PIN Reset
+  - name: PIN reset
     href: hello-feature-pin-reset.md
-  - name: Dual Enrollment
+  - name: Windows Hello Enhanced Security Sign-in (ESS) 🔗
+    href: /windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security
+  - name: Dual enrollment
     href: hello-feature-dual-enrollment.md  
   - name: Dynamic Lock
     href: hello-feature-dynamic-lock.md

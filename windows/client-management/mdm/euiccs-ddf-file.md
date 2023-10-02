@@ -4,7 +4,7 @@ description: View the XML file containing the device description framework (DDF)
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/21/2023
+ms.date: 08/29/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -50,7 +50,7 @@ The following XML file contains the device description framework (DDF) for the e
       <MSFT:Applicability>
         <MSFT:OsBuildVersion>10.0.16299</MSFT:OsBuildVersion>
         <MSFT:CspVersion>1.0</MSFT:CspVersion>
-        <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x62;0x63;0x64;0x65;0x77;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xB4;0xBC;0xBF;0xCA;0xCB;0xCD;</MSFT:EditionAllowList>
+        <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x62;0x63;0x64;0x65;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;</MSFT:EditionAllowList>
       </MSFT:Applicability>
     </DFProperties>
     <Node>
@@ -84,7 +84,7 @@ The following XML file contains the device description framework (DDF) for the e
           <AccessType>
             <Get />
           </AccessType>
-          <Description>The EID.</Description>
+          <Description>The unique eUICC identifier (EID).</Description>
           <DFFormat>
             <chr />
           </DFFormat>
@@ -129,7 +129,7 @@ The following XML file contains the device description framework (DDF) for the e
           <AccessType>
             <Get />
           </AccessType>
-          <Description>Indicates whether the download of a profile with PPR1 is allowed. If the eUICC has already a profile (regardless of its origin and policy rules associated with it), then the download of a profile with PPR1 is not allowed.</Description>
+          <Description>Indicates whether the download of a profile with Profile Policy Rule 1 (PPR1) is allowed. If the eUICC has already a profile (regardless of its origin and policy rules associated with it), then the download of a profile with PPR1 is not allowed.</Description>
           <DFFormat>
             <bool />
           </DFFormat>
@@ -150,7 +150,7 @@ The following XML file contains the device description framework (DDF) for the e
           <AccessType>
             <Get />
           </AccessType>
-          <Description>Indicates whether the eUICC has already a profile with PPR1.</Description>
+          <Description>Indicates whether the eUICC has already a profile with Profile Policy Rule 1 (PPR1).</Description>
           <DFFormat>
             <bool />
           </DFFormat>
@@ -171,7 +171,7 @@ The following XML file contains the device description framework (DDF) for the e
           <AccessType>
             <Get />
           </AccessType>
-          <Description>Represents default SM-DP+ discovery requests.</Description>
+          <Description>Represents servers used for bulk provisioning and eSIM discovery.</Description>
           <DFFormat>
             <node />
           </DFFormat>
@@ -199,7 +199,7 @@ The following XML file contains the device description framework (DDF) for the e
               <Get />
               <Replace />
             </AccessType>
-            <Description>Node representing the discovery operation for a server name. The node name is the fully qualified domain name of the SM-DP+ server that will be used for profile discovery. Creation of this subtree triggers a discovery request.</Description>
+            <Description>Node representing a bulk download/discovery server. The node name is the fully qualified domain name of the server that will be used. Creation of this subtree triggers a discovery request.</Description>
             <DFFormat>
               <node />
             </DFFormat>
@@ -224,7 +224,7 @@ The following XML file contains the device description framework (DDF) for the e
                 <Get />
               </AccessType>
               <DefaultValue>1</DefaultValue>
-              <Description>Current state of the discovery operation for the parent ServerName (Requested = 1, Executing = 2, Completed = 3, Failed = 4). Queried by the CSP and only updated by the LPA.</Description>
+              <Description>Current state of the discovery operation for this server (Requested = 1, Executing = 2, Completed = 3, Failed = 4).</Description>
               <DFFormat>
                 <int />
               </DFFormat>
@@ -281,7 +281,7 @@ The following XML file contains the device description framework (DDF) for the e
                 <Replace />
               </AccessType>
               <DefaultValue>false</DefaultValue>
-              <Description>Indicates whether the server is a discovery server. Optional, default value is false.</Description>
+              <Description>Indicates whether the server is a discovery server or if it is used for bulk download. A discovery server is used every time a user requests a profile discovery operation. Optional, default value is false.</Description>
               <DFFormat>
                 <bool />
               </DFFormat>
@@ -318,7 +318,7 @@ The following XML file contains the device description framework (DDF) for the e
           <AccessType>
             <Get />
           </AccessType>
-          <Description>Represents all enterprise-owned profiles.</Description>
+          <Description>Represents all enterprise-owned eSIM profiles.</Description>
           <DFFormat>
             <node />
           </DFFormat>
@@ -342,7 +342,7 @@ The following XML file contains the device description framework (DDF) for the e
               <Get />
               <Replace />
             </AccessType>
-            <Description>Node representing an enterprise-owned eUICC profile. The node name is the ICCID of the profile (which is a unique identifier). Creation of this subtree triggers an AddProfile request by the LPA (which installs the profile on the eUICC). Removal of this subtree triggers the LPA to delete the profile (if resident on the eUICC).</Description>
+            <Description>Node representing an enterprise-owned eSIM profile. The node name is the ICCID of the profile (which is a unique identifier). Creation of this subtree triggers an AddProfile request by the LPA (which installs the profile on the eUICC). Removal of this subtree triggers the LPA to delete the profile (if resident on the eUICC).</Description>
             <DFFormat>
               <node />
             </DFFormat>
@@ -368,7 +368,7 @@ The following XML file contains the device description framework (DDF) for the e
                 <Get />
                 <Replace />
               </AccessType>
-              <Description>Fully qualified domain name of the SM-DP+ that can download this profile. Must be set by the MDM when the ICCID subtree is created.</Description>
+              <Description>Fully qualified domain name of the server that can download this eSIM profile. Must be set by the MDM when the ICCID subtree is created.</Description>
               <DFFormat>
                 <chr />
               </DFFormat>
@@ -396,7 +396,7 @@ The following XML file contains the device description framework (DDF) for the e
                 <Get />
                 <Replace />
               </AccessType>
-              <Description>Matching ID (activation code token) for profile download. Must be set by the MDM when the ICCID subtree is created.</Description>
+              <Description>Matching ID (activation code token) for eSIM profile download. Must be set by the MDM when the ICCID subtree is created.</Description>
               <DFFormat>
                 <chr />
               </DFFormat>
@@ -424,7 +424,7 @@ The following XML file contains the device description framework (DDF) for the e
                 <Get />
               </AccessType>
               <DefaultValue>1</DefaultValue>
-              <Description>Current state of the profile (Installing = 1, Installed = 2, Deleting = 3, Error = 4). Queried by the CSP and only updated by the LPA.</Description>
+              <Description>Current state of the eSIM profile (Installing = 1, Installed = 2, Deleting = 3, Error = 4).</Description>
               <DFFormat>
                 <int />
               </DFFormat>
@@ -447,7 +447,7 @@ The following XML file contains the device description framework (DDF) for the e
                 <Get />
                 <Replace />
               </AccessType>
-              <Description>Indicates whether this profile is enabled. Can be set by the MDM when the ICCID subtree is created. Can also be queried and updated by the CSP.</Description>
+              <Description>Indicates whether this eSIM profile is enabled. Can be set by both the MDM and the CSP.</Description>
               <DFFormat>
                 <bool />
               </DFFormat>
@@ -482,7 +482,7 @@ The following XML file contains the device description framework (DDF) for the e
               <AccessType>
                 <Get />
               </AccessType>
-              <Description>This profile policy rule indicates whether disabling of this profile is not allowed (true if not allowed, false otherwise).</Description>
+              <Description>Profile Policy Rule 1 (PPR1) indicates whether disabling of this profile is not allowed (true if not allowed, false otherwise).</Description>
               <DFFormat>
                 <bool />
               </DFFormat>
@@ -503,7 +503,7 @@ The following XML file contains the device description framework (DDF) for the e
               <AccessType>
                 <Get />
               </AccessType>
-              <Description>This profile policy rule indicates whether deletion of this profile is not allowed (true if not allowed, false otherwise).</Description>
+              <Description>Profile Policy Rule 2 (PPR2) indicates whether deletion of this profile is not allowed (true if not allowed, false otherwise).</Description>
               <DFFormat>
                 <bool />
               </DFFormat>
@@ -570,7 +570,7 @@ The following XML file contains the device description framework (DDF) for the e
               <Replace />
             </AccessType>
             <DefaultValue>true</DefaultValue>
-            <Description>Determines whether the local user interface of the LUI is available (true if available, false otherwise). Initially populated by the LPA when the eUICC tree is created, can be queried and changed by the MDM server.</Description>
+            <Description>Determines whether or not the user can make changes to the eSIM through the user interface.</Description>
             <DFFormat>
               <bool />
             </DFFormat>
@@ -602,7 +602,7 @@ The following XML file contains the device description framework (DDF) for the e
           <AccessType>
             <Get />
           </AccessType>
-          <Description>Actions that can be performed on the eUICC as a whole (when it is active).</Description>
+          <Description>Actions that can be performed on the eUICC as a whole.</Description>
           <DFFormat>
             <node />
           </DFFormat>
@@ -622,7 +622,7 @@ The following XML file contains the device description framework (DDF) for the e
             <AccessType>
               <Exec />
             </AccessType>
-            <Description>An EXECUTE on this node triggers the  LPA to perform an eUICC Memory Reset.</Description>
+            <Description>This triggers an eUICC Memory Reset, which erases all the eSIM profiles in the eUICC.</Description>
             <DFFormat>
               <chr />
             </DFFormat>

@@ -1,22 +1,20 @@
 ---
 title: Evaluate infrastructure and tools
-description: Steps to make sure your infrastructure is ready to deploy updates
+description: Review the steps to ensure your infrastructure is ready to deploy updates to clients in your organization.
 ms.prod: windows-client
+ms.technology: itpro-updates
+ms.topic: article
 author: mestew
 ms.author: mstewart
 manager: aaroncz
 ms.localizationpriority: medium
-ms.topic: article
-ms.technology: itpro-updates
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 ms.date: 12/31/2017
 ---
 
 # Evaluate infrastructure and tools
-
-**Applies to**
-
--   Windows 10
--   Windows 11
 
 Before you deploy an update, it's best to assess your deployment infrastructure (that is, tools such as Configuration Manager, Microsoft Intune, or similar) and current configurations (such as security baselines, administrative templates, and policies that affect updates). Then, set some criteria to define your operational readiness.
 
@@ -45,7 +43,7 @@ Keep security baselines current to help ensure that your environment is secure a
 
 There are a number of Windows policies (set by Group Policy, Intune, or other methods) that affect when Windows updates are installed, deferral, end-user experience, and many other aspects. Check these policies to make sure they are set appropriately.
 
-- **Windows Administrative templates**: Each Windows client feature update has a supporting Administrative template (.admx) file. Group Policy tools use Administrative template files to populate policy settings in the user interface. The templates are available in the Download Center, for example, this one for [Windows 10, version 1909](https://www.microsoft.com/download/100591).
+- **Windows Administrative templates**: Each Windows client feature update has a supporting Administrative template (.admx) file. Group Policy tools use Administrative template files to populate policy settings in the user interface. The templates are available in the Download Center, for example, this one for [Windows 11, version 22H2](https://www.microsoft.com/download/details.aspx?id=104593).
 - **Policies for update compliance and end-user experience**: A number of settings affect when a device installs updates, whether and for how long a user can defer an update, restart behavior after installation, and many other aspects of update behavior. It's especially important to look for existing policies that are out of date or could conflict with new ones. 
 
 

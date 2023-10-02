@@ -4,9 +4,9 @@ description: Details on Microsoft Connected Cache (MCC) for Internet Service Pro
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.localizationpriority: medium
-author: amymzhou
-ms.author: amyzhou
-ms.reviewer: carmenf
+ms.author: carmenf
+author: cmknox
+ms.reviewer: mstewart
 manager: aaroncz
 ms.topic: how-to
 ms.date: 05/20/2022
@@ -565,7 +565,7 @@ To migrate, use the following steps:
 
 1. Navigate to the cache node that you would like to migrate and select **Download Migration Package** using the button at the top of the page.
 1. Follow the instructions under the **Connected Cache Migrate Scripts** section within Azure portal.
-   :::image type="content" source="images/mcc-isp-migrate.png" alt-text="A screenshot of Azure portal showing the migration instructions for migrating a cache node from the private preview to the public preview." lightbox="images/mcc-isp-migrate.png":::
+   :::image type="content" source="images/mcc-isp-migrate.png" alt-text="A screenshot of Azure portal showing the migration instructions for migrating a cache node from the early preview to the public preview." lightbox="images/mcc-isp-migrate.png":::
 1. Go to https://portal.azure.com and navigate to your resource to check your migrated cache nodes.
 
 

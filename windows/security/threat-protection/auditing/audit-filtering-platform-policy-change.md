@@ -1,5 +1,5 @@
 ---
-title: Audit Filtering Platform Policy Change (Windows 10)
+title: Audit Filtering Platform Policy Change 
 description: The policy setting, Audit Filtering Platform Policy Change, determines if audit events are generated for certain IPsec and Windows Filtering Platform actions.
 ms.assetid: 0eaf1c56-672b-4ea9-825a-22dc03eb4041
 ms.reviewer: 
@@ -9,7 +9,7 @@ ms.pagetype: security
 ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
+ms.localizationpriority: low
 author: vinaypamnani-msft
 ms.date: 09/06/2021
 ms.technology: itpro-security

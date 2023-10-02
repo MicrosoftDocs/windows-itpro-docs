@@ -8,11 +8,13 @@ ms.localizationpriority: medium
 ms.author: aaroncz
 ms.date: 10/05/2017
 ms.reviewer: 
-manager: dougeby
+manager: aaroncz
 ms.technology: itpro-configure
 ---
 
 # Test scenario 6 – Change your language and perform a quick search with Cortana
+<!--Using include for Cortana in Windows deprecation -->
+[!INCLUDE [Deprecation of Cortana in Windows](./includes/cortana-deprecation.md)]
 
 Cortana can help employees in regions outside the US search for quick answers like currency conversions, time zone conversions, or weather in their location.
 

@@ -1,5 +1,5 @@
 ---
-title: Password Policy (Windows 10)
+title: Password Policy 
 description: An overview of password policies for Windows and links to information for each policy setting.
 ms.assetid: aec1220d-a875-4575-9050-f02f9c54a3b6
 ms.reviewer: 

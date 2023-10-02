@@ -4,7 +4,7 @@ description: Learn more about the PassportForWork CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/28/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -15,6 +15,8 @@ ms.topic: reference
 
 <!-- PassportForWork-Begin -->
 # PassportForWork CSP
+
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- PassportForWork-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -30,7 +32,9 @@ The following list shows the PassportForWork configuration service provider node
 - ./Device/Vendor/MSFT/PassportForWork
   - [{TenantId}](#devicetenantid)
     - [Policies](#devicetenantidpolicies)
+      - [DisablePostLogonProvisioning](#devicetenantidpoliciesdisablepostlogonprovisioning)
       - [EnablePinRecovery](#devicetenantidpoliciesenablepinrecovery)
+      - [EnableWindowsHelloProvisioningForSecurityKeys](#devicetenantidpoliciesenablewindowshelloprovisioningforsecuritykeys)
       - [ExcludeSecurityDevices](#devicetenantidpoliciesexcludesecuritydevices)
         - [TPM12](#devicetenantidpoliciesexcludesecuritydevicestpm12)
       - [PINComplexity](#devicetenantidpoliciespincomplexity)
@@ -86,7 +90,7 @@ The following list shows the PassportForWork configuration service provider node
 <!-- Device-{TenantId}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{TenantId}-Applicability-End -->
 
 <!-- Device-{TenantId}-OmaUri-Begin -->
@@ -97,12 +101,12 @@ The following list shows the PassportForWork configuration service provider node
 
 <!-- Device-{TenantId}-Description-Begin -->
 <!-- Description-Source-DDF -->
-This policy specifies the Tenant ID in the format of a Globally Unique Identifier (GUID) without curly braces ( { , } ), which will be used as part of Windows Hello for Business provisioning and management.
+This policy specifies the Tenant ID in the format of a Globally Unique Identifier (GUID) without curly braces `{ }`, which will be used as part of Windows Hello for Business provisioning and management.
 <!-- Device-{TenantId}-Description-End -->
 
 <!-- Device-{TenantId}-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-To get the GUID, use the PowerShell cmdlet [Get-AzureAccount](/powershell/module/servicemanagement/azure.service/get-azureaccount). For more information, see [Get Windows Azure Active Directory Tenant ID in Windows PowerShell](https://devblogs.microsoft.com/scripting/get-windows-azure-active-directory-tenant-id-in-windows-powershell).
+To get the GUID, use the PowerShell cmdlet [Get-AzureAccount](/powershell/module/servicemanagement/azure/get-azureaccount). For more information, see [Get Windows Azure Active Directory Tenant ID in Windows PowerShell](https://devblogs.microsoft.com/scripting/get-windows-azure-active-directory-tenant-id-in-windows-powershell).
 <!-- Device-{TenantId}-Editable-End -->
 
 <!-- Device-{TenantId}-DFProperties-Begin -->
@@ -110,7 +114,7 @@ To get the GUID, use the PowerShell cmdlet [Get-AzureAccount](/powershell/module
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 | Dynamic Node Naming | UniqueName: A globally unique identifier (GUID), without curly braces ( { , } ), that is used as part of Windows Hello for Business provisioning and management. To get a GUID, use the PowerShell cmdlet Get-AzureAccount.  For more information see https://devblogs.microsoft.com/scripting/get-windows-azure-active-directory-tenant-id-in-windows-powershell. |
 <!-- Device-{TenantId}-DFProperties-End -->
@@ -127,7 +131,7 @@ To get the GUID, use the PowerShell cmdlet [Get-AzureAccount](/powershell/module
 <!-- Device-{TenantId}-Policies-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{TenantId}-Policies-Applicability-End -->
 
 <!-- Device-{TenantId}-Policies-OmaUri-Begin -->
@@ -150,7 +154,7 @@ Root node for policies.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 <!-- Device-{TenantId}-Policies-DFProperties-End -->
 
@@ -160,13 +164,62 @@ Root node for policies.
 
 <!-- Device-{TenantId}-Policies-End -->
 
+<!-- Device-{TenantId}-Policies-DisablePostLogonProvisioning-Begin -->
+#### Device/{TenantId}/Policies/DisablePostLogonProvisioning
+
+<!-- Device-{TenantId}-Policies-DisablePostLogonProvisioning-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- Device-{TenantId}-Policies-DisablePostLogonProvisioning-Applicability-End -->
+
+<!-- Device-{TenantId}-Policies-DisablePostLogonProvisioning-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/PassportForWork/{TenantId}/Policies/DisablePostLogonProvisioning
+```
+<!-- Device-{TenantId}-Policies-DisablePostLogonProvisioning-OmaUri-End -->
+
+<!-- Device-{TenantId}-Policies-DisablePostLogonProvisioning-Description-Begin -->
+<!-- Description-Source-DDF -->
+Don't start Windows Hello provisioning after sign-in.
+<!-- Device-{TenantId}-Policies-DisablePostLogonProvisioning-Description-End -->
+
+<!-- Device-{TenantId}-Policies-DisablePostLogonProvisioning-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-{TenantId}-Policies-DisablePostLogonProvisioning-Editable-End -->
+
+<!-- Device-{TenantId}-Policies-DisablePostLogonProvisioning-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `bool` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | False |
+<!-- Device-{TenantId}-Policies-DisablePostLogonProvisioning-DFProperties-End -->
+
+<!-- Device-{TenantId}-Policies-DisablePostLogonProvisioning-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| false (Default) | Disabled. |
+| true | Enabled. |
+<!-- Device-{TenantId}-Policies-DisablePostLogonProvisioning-AllowedValues-End -->
+
+<!-- Device-{TenantId}-Policies-DisablePostLogonProvisioning-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-{TenantId}-Policies-DisablePostLogonProvisioning-Examples-End -->
+
+<!-- Device-{TenantId}-Policies-DisablePostLogonProvisioning-End -->
+
 <!-- Device-{TenantId}-Policies-EnablePinRecovery-Begin -->
 #### Device/{TenantId}/Policies/EnablePinRecovery
 
 <!-- Device-{TenantId}-Policies-EnablePinRecovery-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-{TenantId}-Policies-EnablePinRecovery-Applicability-End -->
 
 <!-- Device-{TenantId}-Policies-EnablePinRecovery-OmaUri-Begin -->
@@ -181,7 +234,7 @@ If the user forgets their PIN, it can be changed to a new PIN using the Windows 
 
 - If you enable this policy setting, the PIN recovery secret will be stored on the device and the user will be able to change to a new PIN in case their PIN is forgotten.
 
-- If you disable or do not configure this policy setting, the PIN recovery secret will not be created or stored. If the user's PIN is forgotten, the only way to get a new PIN is by deleting the existing PIN and creating a new one, which will require the user to re-register with any services the old PIN provided access to.
+- If you disable or don't configure this policy setting, the PIN recovery secret won't be created or stored. If the user's PIN is forgotten, the only way to get a new PIN is by deleting the existing PIN and creating a new one, which will require the user to re-register with any services the old PIN provided access to.
 <!-- Device-{TenantId}-Policies-EnablePinRecovery-Description-End -->
 
 <!-- Device-{TenantId}-Policies-EnablePinRecovery-Editable-Begin -->
@@ -193,7 +246,7 @@ If the user forgets their PIN, it can be changed to a new PIN using the Windows 
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | False |
 <!-- Device-{TenantId}-Policies-EnablePinRecovery-DFProperties-End -->
@@ -213,13 +266,62 @@ If the user forgets their PIN, it can be changed to a new PIN using the Windows 
 
 <!-- Device-{TenantId}-Policies-EnablePinRecovery-End -->
 
+<!-- Device-{TenantId}-Policies-EnableWindowsHelloProvisioningForSecurityKeys-Begin -->
+#### Device/{TenantId}/Policies/EnableWindowsHelloProvisioningForSecurityKeys
+
+<!-- Device-{TenantId}-Policies-EnableWindowsHelloProvisioningForSecurityKeys-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- Device-{TenantId}-Policies-EnableWindowsHelloProvisioningForSecurityKeys-Applicability-End -->
+
+<!-- Device-{TenantId}-Policies-EnableWindowsHelloProvisioningForSecurityKeys-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/PassportForWork/{TenantId}/Policies/EnableWindowsHelloProvisioningForSecurityKeys
+```
+<!-- Device-{TenantId}-Policies-EnableWindowsHelloProvisioningForSecurityKeys-OmaUri-End -->
+
+<!-- Device-{TenantId}-Policies-EnableWindowsHelloProvisioningForSecurityKeys-Description-Begin -->
+<!-- Description-Source-DDF -->
+Enable Windows Hello provisioning if users sign-in to their devices with FIDO2 security keys.
+<!-- Device-{TenantId}-Policies-EnableWindowsHelloProvisioningForSecurityKeys-Description-End -->
+
+<!-- Device-{TenantId}-Policies-EnableWindowsHelloProvisioningForSecurityKeys-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-{TenantId}-Policies-EnableWindowsHelloProvisioningForSecurityKeys-Editable-End -->
+
+<!-- Device-{TenantId}-Policies-EnableWindowsHelloProvisioningForSecurityKeys-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `bool` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | False |
+<!-- Device-{TenantId}-Policies-EnableWindowsHelloProvisioningForSecurityKeys-DFProperties-End -->
+
+<!-- Device-{TenantId}-Policies-EnableWindowsHelloProvisioningForSecurityKeys-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| false (Default) | Disabled. |
+| true | Enabled. |
+<!-- Device-{TenantId}-Policies-EnableWindowsHelloProvisioningForSecurityKeys-AllowedValues-End -->
+
+<!-- Device-{TenantId}-Policies-EnableWindowsHelloProvisioningForSecurityKeys-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-{TenantId}-Policies-EnableWindowsHelloProvisioningForSecurityKeys-Examples-End -->
+
+<!-- Device-{TenantId}-Policies-EnableWindowsHelloProvisioningForSecurityKeys-End -->
+
 <!-- Device-{TenantId}-Policies-ExcludeSecurityDevices-Begin -->
 #### Device/{TenantId}/Policies/ExcludeSecurityDevices
 
 <!-- Device-{TenantId}-Policies-ExcludeSecurityDevices-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-{TenantId}-Policies-ExcludeSecurityDevices-Applicability-End -->
 
 <!-- Device-{TenantId}-Policies-ExcludeSecurityDevices-OmaUri-Begin -->
@@ -244,7 +346,7 @@ Root node for excluded security devices.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 <!-- Device-{TenantId}-Policies-ExcludeSecurityDevices-DFProperties-End -->
 
@@ -260,7 +362,7 @@ Root node for excluded security devices.
 <!-- Device-{TenantId}-Policies-ExcludeSecurityDevices-TPM12-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-{TenantId}-Policies-ExcludeSecurityDevices-TPM12-Applicability-End -->
 
 <!-- Device-{TenantId}-Policies-ExcludeSecurityDevices-TPM12-OmaUri-Begin -->
@@ -275,7 +377,7 @@ Some Trusted Platform Modules (TPMs) are only compliant with the older 1.2 revis
 
 - If you enable this policy setting, TPM revision 1.2 modules will be disallowed from being used with Windows Hello for Business.
 
-- If you disable or do not configure this policy setting, TPM revision 1.2 modules will be allowed to be used with Windows Hello for Business.
+- If you disable or don't configure this policy setting, TPM revision 1.2 modules will be allowed to be used with Windows Hello for Business.
 <!-- Device-{TenantId}-Policies-ExcludeSecurityDevices-TPM12-Description-End -->
 
 <!-- Device-{TenantId}-Policies-ExcludeSecurityDevices-TPM12-Editable-Begin -->
@@ -287,7 +389,7 @@ Some Trusted Platform Modules (TPMs) are only compliant with the older 1.2 revis
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | False |
 <!-- Device-{TenantId}-Policies-ExcludeSecurityDevices-TPM12-DFProperties-End -->
@@ -313,7 +415,7 @@ Some Trusted Platform Modules (TPMs) are only compliant with the older 1.2 revis
 <!-- Device-{TenantId}-Policies-PINComplexity-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{TenantId}-Policies-PINComplexity-Applicability-End -->
 
 <!-- Device-{TenantId}-Policies-PINComplexity-OmaUri-Begin -->
@@ -336,7 +438,7 @@ Root node for PIN policies.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 <!-- Device-{TenantId}-Policies-PINComplexity-DFProperties-End -->
 
@@ -352,7 +454,7 @@ Root node for PIN policies.
 <!-- Device-{TenantId}-Policies-PINComplexity-Digits-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{TenantId}-Policies-PINComplexity-Digits-Applicability-End -->
 
 <!-- Device-{TenantId}-Policies-PINComplexity-Digits-OmaUri-Begin -->
@@ -365,11 +467,11 @@ Root node for PIN policies.
 <!-- Description-Source-DDF -->
 Use this policy setting to configure the use of digits in the Windows Hello for Business PIN.
 
-A value of 1 corresponds to "Required." If you configure this policy setting to 1, Windows Hello for Business requires users to include at least one digit in their PIN.
+A value of 1 corresponds to "Required". If you configure this policy setting to 1, Windows Hello for Business requires users to include at least one digit in their PIN.
 
-A value of 2 corresponds to "Disallow." If you configure this policy setting to 2, Windows Hello for Business prevents users from using digits in their PIN.
+A value of 2 corresponds to "Disallow". If you configure this policy setting to 2, Windows Hello for Business prevents users from using digits in their PIN.
 
-- If you do not configure this policy setting, Windows Hello for Business requires users to use digits in their PIN.
+If you don't configure this policy setting, Windows Hello for Business requires users to use digits in their PIN.
 <!-- Device-{TenantId}-Policies-PINComplexity-Digits-Description-End -->
 
 <!-- Device-{TenantId}-Policies-PINComplexity-Digits-Editable-Begin -->
@@ -381,7 +483,7 @@ A value of 2 corresponds to "Disallow." If you configure this policy setting to 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- Device-{TenantId}-Policies-PINComplexity-Digits-DFProperties-End -->
@@ -408,7 +510,7 @@ A value of 2 corresponds to "Disallow." If you configure this policy setting to 
 <!-- Device-{TenantId}-Policies-PINComplexity-Expiration-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{TenantId}-Policies-PINComplexity-Expiration-Applicability-End -->
 
 <!-- Device-{TenantId}-Policies-PINComplexity-Expiration-OmaUri-Begin -->
@@ -419,7 +521,7 @@ A value of 2 corresponds to "Disallow." If you configure this policy setting to 
 
 <!-- Device-{TenantId}-Policies-PINComplexity-Expiration-Description-Begin -->
 <!-- Description-Source-DDF -->
-This policy specifies when the PIN expires (in days). Valid values are 0 to 730 inclusive. If this policy is set to 0, then PINs do not expire.
+This policy specifies when the PIN expires (in days). Valid values are 0 to 730 inclusive. If this policy is set to 0, then PINs don't expire.
 <!-- Device-{TenantId}-Policies-PINComplexity-Expiration-Description-End -->
 
 <!-- Device-{TenantId}-Policies-PINComplexity-Expiration-Editable-Begin -->
@@ -431,7 +533,7 @@ This policy specifies when the PIN expires (in days). Valid values are 0 to 730 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-730]` |
 | Default Value  | 0 |
@@ -449,7 +551,7 @@ This policy specifies when the PIN expires (in days). Valid values are 0 to 730 
 <!-- Device-{TenantId}-Policies-PINComplexity-History-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{TenantId}-Policies-PINComplexity-History-Applicability-End -->
 
 <!-- Device-{TenantId}-Policies-PINComplexity-History-OmaUri-Begin -->
@@ -460,7 +562,7 @@ This policy specifies when the PIN expires (in days). Valid values are 0 to 730 
 
 <!-- Device-{TenantId}-Policies-PINComplexity-History-Description-Begin -->
 <!-- Description-Source-DDF -->
-This policy specifies the number of past PINs that can be stored in the history that can't be used. Valid values are 0 to 50 inclusive. If this policy is set to 0, then storage of previous PINs is not required. PIN history is not preserved through PIN reset.
+This policy specifies the number of past PINs that can be stored in the history that can't be used. Valid values are 0 to 50 inclusive. If this policy is set to 0, then storage of previous PINs isn't required. PIN history isn't preserved through PIN reset.
 <!-- Device-{TenantId}-Policies-PINComplexity-History-Description-End -->
 
 <!-- Device-{TenantId}-Policies-PINComplexity-History-Editable-Begin -->
@@ -472,7 +574,7 @@ This policy specifies the number of past PINs that can be stored in the history 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-50]` |
 | Default Value  | 0 |
@@ -490,7 +592,7 @@ This policy specifies the number of past PINs that can be stored in the history 
 <!-- Device-{TenantId}-Policies-PINComplexity-LowercaseLetters-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{TenantId}-Policies-PINComplexity-LowercaseLetters-Applicability-End -->
 
 <!-- Device-{TenantId}-Policies-PINComplexity-LowercaseLetters-OmaUri-Begin -->
@@ -503,11 +605,11 @@ This policy specifies the number of past PINs that can be stored in the history 
 <!-- Description-Source-DDF -->
 Use this policy setting to configure the use of lowercase letters in the Windows Hello for Business PIN.
 
-A value of 1 corresponds to "Required." If you configure this policy setting to 1, Windows Hello for Business requires users to include at least one lowercase letter in their PIN.
+A value of 1 corresponds to "Required". If you configure this policy setting to 1, Windows Hello for Business requires users to include at least one lowercase letter in their PIN.
 
-A value of 2 corresponds to "Disallow." If you configure this policy setting to 2, Windows Hello for Business prevents users from using lowercase letters in their PIN.
+A value of 2 corresponds to "Disallow". If you configure this policy setting to 2, Windows Hello for Business prevents users from using lowercase letters in their PIN.
 
-- If you do not configure this policy setting, Windows Hello for Business does not allow users to use lowercase letters in their PIN.
+If you don't configure this policy setting, Windows Hello for Business doesn't allow users to use lowercase letters in their PIN.
 <!-- Device-{TenantId}-Policies-PINComplexity-LowercaseLetters-Description-End -->
 
 <!-- Device-{TenantId}-Policies-PINComplexity-LowercaseLetters-Editable-Begin -->
@@ -519,7 +621,7 @@ A value of 2 corresponds to "Disallow." If you configure this policy setting to 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- Device-{TenantId}-Policies-PINComplexity-LowercaseLetters-DFProperties-End -->
@@ -546,7 +648,7 @@ A value of 2 corresponds to "Disallow." If you configure this policy setting to 
 <!-- Device-{TenantId}-Policies-PINComplexity-MaximumPINLength-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{TenantId}-Policies-PINComplexity-MaximumPINLength-Applicability-End -->
 
 <!-- Device-{TenantId}-Policies-PINComplexity-MaximumPINLength-OmaUri-Begin -->
@@ -561,10 +663,10 @@ Maximum PIN length configures the maximum number of characters allowed for the P
 
 - If you configure this policy setting, the PIN length must be less than or equal to this number.
 
-- If you do not configure this policy setting, the PIN length must be less than or equal to 127.
+- If you don't configure this policy setting, the PIN length must be less than or equal to 127.
 
 > [!NOTE]
-> If the above specified conditions for the maximum PIN length are not met, default values will be used for both the maximum and minimum PIN lengths.
+> If the above specified conditions for the maximum PIN length aren't met, default values will be used for both the maximum and minimum PIN lengths.
 <!-- Device-{TenantId}-Policies-PINComplexity-MaximumPINLength-Description-End -->
 
 <!-- Device-{TenantId}-Policies-PINComplexity-MaximumPINLength-Editable-Begin -->
@@ -576,7 +678,7 @@ Maximum PIN length configures the maximum number of characters allowed for the P
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[4-127]` |
 | Default Value  | 127 |
@@ -594,7 +696,7 @@ Maximum PIN length configures the maximum number of characters allowed for the P
 <!-- Device-{TenantId}-Policies-PINComplexity-MinimumPINLength-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{TenantId}-Policies-PINComplexity-MinimumPINLength-Applicability-End -->
 
 <!-- Device-{TenantId}-Policies-PINComplexity-MinimumPINLength-OmaUri-Begin -->
@@ -609,10 +711,10 @@ Minimum PIN length configures the minimum number of characters required for the 
 
 - If you configure this policy setting, the PIN length must be greater than or equal to this number.
 
-- If you do not configure this policy setting, the PIN length must be greater than or equal to 4.
+- If you don't configure this policy setting, the PIN length must be greater than or equal to 4.
 
 > [!NOTE]
-> If the above specified conditions for the minimum PIN length are not met, default values will be used for both the maximum and minimum PIN lengths.
+> If the above specified conditions for the minimum PIN length aren't met, default values will be used for both the maximum and minimum PIN lengths.
 <!-- Device-{TenantId}-Policies-PINComplexity-MinimumPINLength-Description-End -->
 
 <!-- Device-{TenantId}-Policies-PINComplexity-MinimumPINLength-Editable-Begin -->
@@ -624,7 +726,7 @@ Minimum PIN length configures the minimum number of characters required for the 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[4-127]` |
 | Default Value  | 4 |
@@ -642,7 +744,7 @@ Minimum PIN length configures the minimum number of characters required for the 
 <!-- Device-{TenantId}-Policies-PINComplexity-SpecialCharacters-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{TenantId}-Policies-PINComplexity-SpecialCharacters-Applicability-End -->
 
 <!-- Device-{TenantId}-Policies-PINComplexity-SpecialCharacters-OmaUri-Begin -->
@@ -655,11 +757,11 @@ Minimum PIN length configures the minimum number of characters required for the 
 <!-- Description-Source-DDF -->
 Use this policy setting to configure the use of special characters in the Windows Hello for Business PIN gesture. Valid special characters for Windows Hello for Business PIN gestures include: ! " # $ % & ' ( ) * + , - . / : ; `< = >` ? @ [ \ ] ^ _ ` { | } ~ .
 
-A value of 1 corresponds to "Required." If you configure this policy setting to 1, Windows Hello for Business requires users to include at least one special character in their PIN.
+A value of 1 corresponds to "Required". If you configure this policy setting to 1, Windows Hello for Business requires users to include at least one special character in their PIN.
 
-A value of 2 corresponds to "Disallow." If you configure this policy setting to 2, Windows Hello for Business prevents users from using special characters in their PIN.
+A value of 2 corresponds to "Disallow". If you configure this policy setting to 2, Windows Hello for Business prevents users from using special characters in their PIN.
 
-- If you do not configure this policy setting, Windows Hello for Business does not allow users to use special characters in their PIN.
+If you don't configure this policy setting, Windows Hello for Business doesn't allow users to use special characters in their PIN.
 <!-- Device-{TenantId}-Policies-PINComplexity-SpecialCharacters-Description-End -->
 
 <!-- Device-{TenantId}-Policies-PINComplexity-SpecialCharacters-Editable-Begin -->
@@ -671,7 +773,7 @@ A value of 2 corresponds to "Disallow." If you configure this policy setting to 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- Device-{TenantId}-Policies-PINComplexity-SpecialCharacters-DFProperties-End -->
@@ -698,7 +800,7 @@ A value of 2 corresponds to "Disallow." If you configure this policy setting to 
 <!-- Device-{TenantId}-Policies-PINComplexity-UppercaseLetters-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{TenantId}-Policies-PINComplexity-UppercaseLetters-Applicability-End -->
 
 <!-- Device-{TenantId}-Policies-PINComplexity-UppercaseLetters-OmaUri-Begin -->
@@ -711,11 +813,11 @@ A value of 2 corresponds to "Disallow." If you configure this policy setting to 
 <!-- Description-Source-DDF -->
 Use this policy setting to configure the use of uppercase letters in the Windows Hello for Business PIN.
 
-A value of 1 corresponds to "Required." If you configure this policy setting to 1, Windows Hello for Business requires users to include at least one uppercase letter in their PIN.
+A value of 1 corresponds to "Required". If you configure this policy setting to 1, Windows Hello for Business requires users to include at least one uppercase letter in their PIN.
 
-A value of 2 corresponds to "Disallow." If you configure this policy setting to 2, Windows Hello for Business prevents users from using uppercase letters in their PIN.
+A value of 2 corresponds to "Disallow". If you configure this policy setting to 2, Windows Hello for Business prevents users from using uppercase letters in their PIN.
 
-- If you do not configure this policy setting, Windows Hello for Business does not allow users to use uppercase letters in their PIN.
+If you don't configure this policy setting, Windows Hello for Business doesn't allow users to use uppercase letters in their PIN.
 <!-- Device-{TenantId}-Policies-PINComplexity-UppercaseLetters-Description-End -->
 
 <!-- Device-{TenantId}-Policies-PINComplexity-UppercaseLetters-Editable-Begin -->
@@ -727,7 +829,7 @@ A value of 2 corresponds to "Disallow." If you configure this policy setting to 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- Device-{TenantId}-Policies-PINComplexity-UppercaseLetters-DFProperties-End -->
@@ -754,7 +856,7 @@ A value of 2 corresponds to "Disallow." If you configure this policy setting to 
 <!-- Device-{TenantId}-Policies-Remote-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{TenantId}-Policies-Remote-Applicability-End -->
 
 <!-- Device-{TenantId}-Policies-Remote-OmaUri-Begin -->
@@ -777,7 +879,7 @@ Root node for phone sign-in policies.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 <!-- Device-{TenantId}-Policies-Remote-DFProperties-End -->
 
@@ -793,7 +895,7 @@ Root node for phone sign-in policies.
 <!-- Device-{TenantId}-Policies-Remote-UseRemotePassport-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{TenantId}-Policies-Remote-UseRemotePassport-Applicability-End -->
 
 <!-- Device-{TenantId}-Policies-Remote-UseRemotePassport-OmaUri-Begin -->
@@ -809,7 +911,8 @@ Boolean that specifies if phone sign-in can be used with a device. Phone sign-in
 Default value is false.
 
 - If you enable this setting, a desktop device will allow a registered, companion device to be used as an authentication factor.
-- If you disable this setting, a companion device cannot be used in desktop authentication scenarios.
+
+- If you disable this setting, a companion device can't be used in desktop authentication scenarios.
 <!-- Device-{TenantId}-Policies-Remote-UseRemotePassport-Description-End -->
 
 <!-- Device-{TenantId}-Policies-Remote-UseRemotePassport-Editable-Begin -->
@@ -823,7 +926,7 @@ Default value is false.
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | False |
 <!-- Device-{TenantId}-Policies-Remote-UseRemotePassport-DFProperties-End -->
@@ -849,7 +952,7 @@ Default value is false.
 <!-- Device-{TenantId}-Policies-RequireSecurityDevice-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{TenantId}-Policies-RequireSecurityDevice-Applicability-End -->
 
 <!-- Device-{TenantId}-Policies-RequireSecurityDevice-OmaUri-Begin -->
@@ -860,11 +963,11 @@ Default value is false.
 
 <!-- Device-{TenantId}-Policies-RequireSecurityDevice-Description-Begin -->
 <!-- Description-Source-DDF -->
-A Trusted Platform Module (TPM) provides additional security benefits over software because data stored within it cannot be used on other devices.
+A Trusted Platform Module (TPM) provides additional security benefits over software because data stored within it can't be used on other devices.
 
 - If you enable this policy setting, only devices with a usable TPM provision Windows Hello for Business.
 
-- If you disable or do not configure this policy setting, the TPM is still preferred, but all devices provision Windows Hello for Business using software if the TPM is non-functional or unavailable.
+- If you disable or don't configure this policy setting, the TPM is still preferred, but all devices provision Windows Hello for Business using software if the TPM is non-functional or unavailable.
 <!-- Device-{TenantId}-Policies-RequireSecurityDevice-Description-End -->
 
 <!-- Device-{TenantId}-Policies-RequireSecurityDevice-Editable-Begin -->
@@ -876,7 +979,7 @@ A Trusted Platform Module (TPM) provides additional security benefits over softw
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | False |
 <!-- Device-{TenantId}-Policies-RequireSecurityDevice-DFProperties-End -->
@@ -902,7 +1005,7 @@ A Trusted Platform Module (TPM) provides additional security benefits over softw
 <!-- Device-{TenantId}-Policies-UseCertificateForOnPremAuth-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{TenantId}-Policies-UseCertificateForOnPremAuth-Applicability-End -->
 
 <!-- Device-{TenantId}-Policies-UseCertificateForOnPremAuth-OmaUri-Begin -->
@@ -917,7 +1020,7 @@ Windows Hello for Business can use certificates to authenticate to on-premise re
 
 - If you enable this policy setting, Windows Hello for Business will wait until the device has received a certificate payload from the mobile device management server before provisioning a PIN.
 
-- If you disable or do not configure this policy setting, the PIN will be provisioned when the user logs in, without waiting for a certificate payload.
+- If you disable or don't configure this policy setting, the PIN will be provisioned when the user logs in, without waiting for a certificate payload.
 <!-- Device-{TenantId}-Policies-UseCertificateForOnPremAuth-Description-End -->
 
 <!-- Device-{TenantId}-Policies-UseCertificateForOnPremAuth-Editable-Begin -->
@@ -929,7 +1032,7 @@ Windows Hello for Business can use certificates to authenticate to on-premise re
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | False |
 <!-- Device-{TenantId}-Policies-UseCertificateForOnPremAuth-DFProperties-End -->
@@ -955,7 +1058,7 @@ Windows Hello for Business can use certificates to authenticate to on-premise re
 <!-- Device-{TenantId}-Policies-UseCloudTrustForOnPremAuth-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 21H2 [10.0.19044.1566] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000.527] and later <br> :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 21H2 [10.0.19044.1566] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.527] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-{TenantId}-Policies-UseCloudTrustForOnPremAuth-Applicability-End -->
 
 <!-- Device-{TenantId}-Policies-UseCloudTrustForOnPremAuth-OmaUri-Begin -->
@@ -970,7 +1073,7 @@ Boolean value that enables Windows Hello for Business to use Azure AD Kerberos t
 
 - If you enable this policy setting, Windows Hello for Business will use an Azure AD Kerberos ticket to authenticate to on-premises resources. The Azure AD Kerberos ticket is returned to the client after a successful authentication to Azure AD if Azure AD Kerberos is enabled for the tenant and domain.
 
-- If you disable or do not configure this policy setting, Windows Hello for Business will use a key or certificate to authenticate to on-premises resources.
+- If you disable or don't configure this policy setting, Windows Hello for Business will use a key or certificate to authenticate to on-premises resources.
 <!-- Device-{TenantId}-Policies-UseCloudTrustForOnPremAuth-Description-End -->
 
 <!-- Device-{TenantId}-Policies-UseCloudTrustForOnPremAuth-Editable-Begin -->
@@ -982,7 +1085,7 @@ Boolean value that enables Windows Hello for Business to use Azure AD Kerberos t
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | False |
 <!-- Device-{TenantId}-Policies-UseCloudTrustForOnPremAuth-DFProperties-End -->
@@ -1008,7 +1111,7 @@ Boolean value that enables Windows Hello for Business to use Azure AD Kerberos t
 <!-- Device-{TenantId}-Policies-UseHelloCertificatesAsSmartCardCertificates-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-{TenantId}-Policies-UseHelloCertificatesAsSmartCardCertificates-Applicability-End -->
 
 <!-- Device-{TenantId}-Policies-UseHelloCertificatesAsSmartCardCertificates-OmaUri-Begin -->
@@ -1022,7 +1125,7 @@ Boolean value that enables Windows Hello for Business to use Azure AD Kerberos t
 
 - If you enable this policy setting, applications use Windows Hello for Business certificates as smart card certificates. Biometric factors are unavailable when a user is asked to authorize the use of the certificate's private key. This policy setting is designed to allow compatibility with applications that rely exclusively on smart card certificates.
 
-- If you disable or do not configure this policy setting, applications do not use Windows Hello for Business certificates as smart card certificates, and biometric factors are available when a user is asked to authorize the use of the certificate's private key.
+- If you disable or don't configure this policy setting, applications don't use Windows Hello for Business certificates as smart card certificates, and biometric factors are available when a user is asked to authorize the use of the certificate's private key.
 
 Windows requires a user to lock and unlock their session after changing this setting if the user is currently signed in.
 <!-- Device-{TenantId}-Policies-UseHelloCertificatesAsSmartCardCertificates-Description-End -->
@@ -1036,7 +1139,7 @@ Windows requires a user to lock and unlock their session after changing this set
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | False |
 <!-- Device-{TenantId}-Policies-UseHelloCertificatesAsSmartCardCertificates-DFProperties-End -->
@@ -1062,7 +1165,7 @@ Windows requires a user to lock and unlock their session after changing this set
 <!-- Device-{TenantId}-Policies-UsePassportForWork-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{TenantId}-Policies-UsePassportForWork-Applicability-End -->
 
 <!-- Device-{TenantId}-Policies-UsePassportForWork-OmaUri-Begin -->
@@ -1075,9 +1178,9 @@ Windows requires a user to lock and unlock their session after changing this set
 <!-- Description-Source-DDF -->
 Windows Hello for Business is an alternative method for signing into Windows using your Active Directory or Azure Active Directory account that can replace passwords, Smart Cards, and Virtual Smart Cards.
 
-- If you enable or do not configure this policy setting, the device provisions Windows Hello for Business for all users.
+- If you enable or don't configure this policy setting, the device provisions Windows Hello for Business for all users.
 
-- If you disable this policy setting, the device does not provision Windows Hello for Business for any user.
+- If you disable this policy setting, the device doesn't provision Windows Hello for Business for any user.
 <!-- Device-{TenantId}-Policies-UsePassportForWork-Description-End -->
 
 <!-- Device-{TenantId}-Policies-UsePassportForWork-Editable-Begin -->
@@ -1089,7 +1192,7 @@ Windows Hello for Business is an alternative method for signing into Windows usi
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | True |
 <!-- Device-{TenantId}-Policies-UsePassportForWork-DFProperties-End -->
@@ -1115,7 +1218,7 @@ Windows Hello for Business is an alternative method for signing into Windows usi
 <!-- Device-Biometrics-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Biometrics-Applicability-End -->
 
 <!-- Device-Biometrics-OmaUri-Begin -->
@@ -1138,7 +1241,7 @@ Root node for biometrics policies.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-Biometrics-DFProperties-End -->
 
@@ -1154,7 +1257,7 @@ Root node for biometrics policies.
 <!-- Device-Biometrics-EnableESSwithSupportedPeripherals-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-Biometrics-EnableESSwithSupportedPeripherals-Applicability-End -->
 
 <!-- Device-Biometrics-EnableESSwithSupportedPeripherals-OmaUri-Begin -->
@@ -1165,7 +1268,7 @@ Root node for biometrics policies.
 
 <!-- Device-Biometrics-EnableESSwithSupportedPeripherals-Description-Begin -->
 <!-- Description-Source-DDF -->
-Enhanced Sign-in Security (ESS) isolates both biometric template data and matching operations to trusted hardware or specified memory regions, meaning the rest of the operating system cannot access or tamper with them. Because the channel of communication between the sensors and the algorithm is also secured, it is impossible for malware to inject or replay data in order to simulate a user signing in or to lock a user out of their machine.
+Enhanced Sign-in Security (ESS) isolates both biometric template data and matching operations to trusted hardware or specified memory regions, meaning the rest of the operating system can't access or tamper with them. Because the channel of communication between the sensors and the algorithm is also secured, it's impossible for malware to inject or replay data in order to simulate a user signing in or to lock a user out of their machine.
 <!-- Device-Biometrics-EnableESSwithSupportedPeripherals-Description-End -->
 
 <!-- Device-Biometrics-EnableESSwithSupportedPeripherals-Editable-Begin -->
@@ -1177,7 +1280,7 @@ Enhanced Sign-in Security (ESS) isolates both biometric template data and matchi
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- Device-Biometrics-EnableESSwithSupportedPeripherals-DFProperties-End -->
@@ -1187,8 +1290,8 @@ Enhanced Sign-in Security (ESS) isolates both biometric template data and matchi
 
 | Value | Description |
 |:--|:--|
-| 0 | Enhanced sign-in security will be disabled on all systems. If a user already has a secure Windows Hello enrollment, they will lose their enrollment and must reset PIN, and they will have the option to re-enroll in normal face and fingerprint. Peripheral usage will be enabled by disabling Enhanced sign-in security. OS will not attempt to start secure components, even if the secure hardware and software components are present. (not recommended). |
-| 1 (Default) | Enhanced sign-in security will be enabled on systems with capable software and hardware, following the existing default behavior in Windows. For systems with one secure modality (face or fingerprint) and one insecure modality (fingerprint or face), only the secure sensor can be used for sign-in and the insecure sensor(s) will be blocked. This includes peripheral devices, which are unsupported and will be unusable. (default and recommended for highest security). |
+| 0 | ESS will be enabled on systems with capable software and hardware, following the existing default behavior in Windows. Authentication operations of peripheral Windows Hello capable devices will be allowed, subject to current feature limitations. In addition, with this setting, ESS will be enabled on devices with a mixture of biometric devices, such as an ESS capable FPR and a non-ESS capable camera. (not recommended). |
+| 1 (Default) | ESS will be enabled on systems with capable software and hardware, following the existing default behavior in Windows. Authentication operations of any peripheral biometric device will be blocked and not available for Windows Hello. (default and recommended for highest security). |
 <!-- Device-Biometrics-EnableESSwithSupportedPeripherals-AllowedValues-End -->
 
 <!-- Device-Biometrics-EnableESSwithSupportedPeripherals-GpMapping-Begin -->
@@ -1212,7 +1315,7 @@ Enhanced Sign-in Security (ESS) isolates both biometric template data and matchi
 <!-- Device-Biometrics-FacialFeaturesUseEnhancedAntiSpoofing-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Biometrics-FacialFeaturesUseEnhancedAntiSpoofing-Applicability-End -->
 
 <!-- Device-Biometrics-FacialFeaturesUseEnhancedAntiSpoofing-OmaUri-Begin -->
@@ -1225,11 +1328,11 @@ Enhanced Sign-in Security (ESS) isolates both biometric template data and matchi
 <!-- Description-Source-DDF -->
 This setting determines whether enhanced anti-spoofing is required for Windows Hello face authentication.
 
-- If you enable this setting, Windows requires all users on managed devices to use enhanced anti-spoofing for Windows Hello face authentication. This disables Windows Hello face authentication on devices that do not support enhanced anti-spoofing.
+- If you enable this setting, Windows requires all users on managed devices to use enhanced anti-spoofing for Windows Hello face authentication. This disables Windows Hello face authentication on devices that don't support enhanced anti-spoofing.
 
-- If you disable or do not configure this setting, Windows doesn't require enhanced anti-spoofing for Windows Hello face authentication.
+- If you disable or don't configure this setting, Windows doesn't require enhanced anti-spoofing for Windows Hello face authentication.
 
-**Note** that enhanced anti-spoofing for Windows Hello face authentication is not required on unmanaged devices.
+Note that enhanced anti-spoofing for Windows Hello face authentication isn't required on unmanaged devices.
 <!-- Device-Biometrics-FacialFeaturesUseEnhancedAntiSpoofing-Description-End -->
 
 <!-- Device-Biometrics-FacialFeaturesUseEnhancedAntiSpoofing-Editable-Begin -->
@@ -1243,7 +1346,7 @@ This setting determines whether enhanced anti-spoofing is required for Windows H
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | False |
 <!-- Device-Biometrics-FacialFeaturesUseEnhancedAntiSpoofing-DFProperties-End -->
@@ -1269,7 +1372,7 @@ This setting determines whether enhanced anti-spoofing is required for Windows H
 <!-- Device-Biometrics-UseBiometrics-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Biometrics-UseBiometrics-Applicability-End -->
 
 <!-- Device-Biometrics-UseBiometrics-OmaUri-Begin -->
@@ -1282,7 +1385,7 @@ This setting determines whether enhanced anti-spoofing is required for Windows H
 <!-- Description-Source-DDF -->
 Windows Hello for Business enables users to use biometric gestures, such as face and fingerprints, as an alternative to the PIN gesture. However, users must still configure a PIN to use in case of failures.
 
-- If you enable or do not configure this policy setting, Windows Hello for Business allows the use of biometric gestures.
+- If you enable or don't configure this policy setting, Windows Hello for Business allows the use of biometric gestures.
 
 - If you disable this policy setting, Windows Hello for Business prevents the use of biometric gestures.
 
@@ -1301,7 +1404,7 @@ Windows Hello for Business enables users to use biometric gestures, such as face
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | False |
 <!-- Device-Biometrics-UseBiometrics-DFProperties-End -->
@@ -1327,7 +1430,7 @@ Windows Hello for Business enables users to use biometric gestures, such as face
 <!-- Device-DeviceUnlock-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- Device-DeviceUnlock-Applicability-End -->
 
 <!-- Device-DeviceUnlock-OmaUri-Begin -->
@@ -1350,7 +1453,7 @@ Device Unlock.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-DeviceUnlock-DFProperties-End -->
 
@@ -1366,7 +1469,7 @@ Device Unlock.
 <!-- Device-DeviceUnlock-GroupA-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- Device-DeviceUnlock-GroupA-Applicability-End -->
 
 <!-- Device-DeviceUnlock-GroupA-OmaUri-Begin -->
@@ -1389,7 +1492,7 @@ Contains a list of providers by GUID that are to be considered for the first ste
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Regular Expression: `{[0-9A-Fa-f]{8}\-[0-9A-Fa-f]{4}\-[0-9A-Fa-f]{4}\-[0-9A-Fa-f]{4}\-[0-9A-Fa-f]{12}\}` |
 <!-- Device-DeviceUnlock-GroupA-DFProperties-End -->
@@ -1406,7 +1509,7 @@ Contains a list of providers by GUID that are to be considered for the first ste
 <!-- Device-DeviceUnlock-GroupB-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- Device-DeviceUnlock-GroupB-Applicability-End -->
 
 <!-- Device-DeviceUnlock-GroupB-OmaUri-Begin -->
@@ -1429,7 +1532,7 @@ Contains a list of providers by GUID that are to be considered for the second st
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Regular Expression: `{[0-9A-Fa-f]{8}\-[0-9A-Fa-f]{4}\-[0-9A-Fa-f]{4}\-[0-9A-Fa-f]{4}\-[0-9A-Fa-f]{12}\}` |
 <!-- Device-DeviceUnlock-GroupB-DFProperties-End -->
@@ -1446,7 +1549,7 @@ Contains a list of providers by GUID that are to be considered for the second st
 <!-- Device-DeviceUnlock-Plugins-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- Device-DeviceUnlock-Plugins-Applicability-End -->
 
 <!-- Device-DeviceUnlock-Plugins-OmaUri-Begin -->
@@ -1469,7 +1572,7 @@ List of plugins that the passive provider monitors to detect user presence.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-DeviceUnlock-Plugins-DFProperties-End -->
 
@@ -1485,7 +1588,7 @@ List of plugins that the passive provider monitors to detect user presence.
 <!-- Device-DynamicLock-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- Device-DynamicLock-Applicability-End -->
 
 <!-- Device-DynamicLock-OmaUri-Begin -->
@@ -1508,7 +1611,7 @@ Dynamic Lock.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-DynamicLock-DFProperties-End -->
 
@@ -1524,7 +1627,7 @@ Dynamic Lock.
 <!-- Device-DynamicLock-DynamicLock-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- Device-DynamicLock-DynamicLock-Applicability-End -->
 
 <!-- Device-DynamicLock-DynamicLock-OmaUri-Begin -->
@@ -1535,7 +1638,7 @@ Dynamic Lock.
 
 <!-- Device-DynamicLock-DynamicLock-Description-Begin -->
 <!-- Description-Source-DDF -->
-Enables/Disables Dyanamic Lock.
+Enables/Disables Dynamic Lock.
 <!-- Device-DynamicLock-DynamicLock-Description-End -->
 
 <!-- Device-DynamicLock-DynamicLock-Editable-Begin -->
@@ -1547,7 +1650,7 @@ Enables/Disables Dyanamic Lock.
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | False |
 <!-- Device-DynamicLock-DynamicLock-DFProperties-End -->
@@ -1573,7 +1676,7 @@ Enables/Disables Dyanamic Lock.
 <!-- Device-DynamicLock-Plugins-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- Device-DynamicLock-Plugins-Applicability-End -->
 
 <!-- Device-DynamicLock-Plugins-OmaUri-Begin -->
@@ -1596,7 +1699,7 @@ List of plugins that the passive provider monitors to detect user absence.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-DynamicLock-Plugins-DFProperties-End -->
 
@@ -1612,7 +1715,7 @@ List of plugins that the passive provider monitors to detect user absence.
 <!-- Device-SecurityKey-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- Device-SecurityKey-Applicability-End -->
 
 <!-- Device-SecurityKey-OmaUri-Begin -->
@@ -1635,7 +1738,7 @@ Security Key.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-SecurityKey-DFProperties-End -->
 
@@ -1651,7 +1754,7 @@ Security Key.
 <!-- Device-SecurityKey-UseSecurityKeyForSignin-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- Device-SecurityKey-UseSecurityKeyForSignin-Applicability-End -->
 
 <!-- Device-SecurityKey-UseSecurityKeyForSignin-OmaUri-Begin -->
@@ -1662,7 +1765,7 @@ Security Key.
 
 <!-- Device-SecurityKey-UseSecurityKeyForSignin-Description-Begin -->
 <!-- Description-Source-DDF -->
-Use security key for signin. 0 is disabled. 1 is enable. If you do not configure this policy setting, the default is disabled.
+Use security key for signin. 0 is disabled. 1 is enable. If you don't configure this policy setting, the default is disabled.
 <!-- Device-SecurityKey-UseSecurityKeyForSignin-Description-End -->
 
 <!-- Device-SecurityKey-UseSecurityKeyForSignin-Editable-Begin -->
@@ -1675,7 +1778,7 @@ Enables users to sign in to their device with a [FIDO2 security key](/azure/acti
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- Device-SecurityKey-UseSecurityKeyForSignin-DFProperties-End -->
@@ -1704,7 +1807,7 @@ Enables users to sign in to their device with a [FIDO2 security key](/azure/acti
 <!-- Device-UseBiometrics-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-UseBiometrics-Applicability-End -->
 
 <!-- Device-UseBiometrics-OmaUri-Begin -->
@@ -1719,7 +1822,7 @@ THIS NODE IS DEPRECATED AND WILL BE REMOVED IN A FUTURE VERSION. PLEASE USE Biom
 
 Windows Hello for Business enables users to use biometric gestures, such as face and fingerprints, as an alternative to the PIN gesture. However, users must still configure a PIN to use in case of failures.
 
-- If you enable or do not configure this policy setting, Windows Hello for Business allows the use of biometric gestures.
+- If you enable or don't configure this policy setting, Windows Hello for Business allows the use of biometric gestures.
 
 - If you disable this policy setting, Windows Hello for Business prevents the use of biometric gestures.
 
@@ -1736,7 +1839,7 @@ Windows Hello for Business enables users to use biometric gestures, such as face
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | False |
 <!-- Device-UseBiometrics-DFProperties-End -->
@@ -1762,7 +1865,7 @@ Windows Hello for Business enables users to use biometric gestures, such as face
 <!-- User-{TenantId}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{TenantId}-Applicability-End -->
 
 <!-- User-{TenantId}-OmaUri-Begin -->
@@ -1773,12 +1876,12 @@ Windows Hello for Business enables users to use biometric gestures, such as face
 
 <!-- User-{TenantId}-Description-Begin -->
 <!-- Description-Source-DDF -->
-This policy specifies the Tenant ID in the format of a Globally Unique Identifier (GUID) without curly braces ( { , } ), which will be used as part of Windows Hello for Business provisioning and management.
+This policy specifies the Tenant ID in the format of a Globally Unique Identifier (GUID) without curly braces `{ }`, which will be used as part of Windows Hello for Business provisioning and management.
 <!-- User-{TenantId}-Description-End -->
 
 <!-- User-{TenantId}-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-To get the GUID, use the PowerShell cmdlet [Get-AzureAccount](/powershell/module/servicemanagement/azure.service/get-azureaccount). For more information, see [Get Windows Azure Active Directory Tenant ID in Windows PowerShell](https://devblogs.microsoft.com/scripting/get-windows-azure-active-directory-tenant-id-in-windows-powershell).
+To get the GUID, use the PowerShell cmdlet [Get-AzureAccount](/powershell/module/servicemanagement/azure/get-azureaccount). For more information, see [Get Windows Azure Active Directory Tenant ID in Windows PowerShell](https://devblogs.microsoft.com/scripting/get-windows-azure-active-directory-tenant-id-in-windows-powershell).
 <!-- User-{TenantId}-Editable-End -->
 
 <!-- User-{TenantId}-DFProperties-Begin -->
@@ -1786,7 +1889,7 @@ To get the GUID, use the PowerShell cmdlet [Get-AzureAccount](/powershell/module
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 | Dynamic Node Naming | UniqueName: A globally unique identifier (GUID), without curly braces ( { , } ), that is used as part of Windows Hello for Business provisioning and management. To get a GUID, use the PowerShell cmdlet Get-AzureAccount.  For more information see https://devblogs.microsoft.com/scripting/get-windows-azure-active-directory-tenant-id-in-windows-powershell. |
 <!-- User-{TenantId}-DFProperties-End -->
@@ -1803,7 +1906,7 @@ To get the GUID, use the PowerShell cmdlet [Get-AzureAccount](/powershell/module
 <!-- User-{TenantId}-Policies-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{TenantId}-Policies-Applicability-End -->
 
 <!-- User-{TenantId}-Policies-OmaUri-Begin -->
@@ -1826,7 +1929,7 @@ Root node for policies.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 <!-- User-{TenantId}-Policies-DFProperties-End -->
 
@@ -1842,7 +1945,7 @@ Root node for policies.
 <!-- User-{TenantId}-Policies-EnablePinRecovery-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- User-{TenantId}-Policies-EnablePinRecovery-Applicability-End -->
 
 <!-- User-{TenantId}-Policies-EnablePinRecovery-OmaUri-Begin -->
@@ -1857,7 +1960,7 @@ If the user forgets their PIN, it can be changed to a new PIN using the Windows 
 
 - If you enable this policy setting, the PIN recovery secret will be stored on the device and the user will be able to change to a new PIN in case their PIN is forgotten.
 
-- If you disable or do not configure this policy setting, the PIN recovery secret will not be created or stored. If the user's PIN is forgotten, the only way to get a new PIN is by deleting the existing PIN and creating a new one, which will require the user to re-register with any services the old PIN provided access to.
+- If you disable or don't configure this policy setting, the PIN recovery secret won't be created or stored. If the user's PIN is forgotten, the only way to get a new PIN is by deleting the existing PIN and creating a new one, which will require the user to re-register with any services the old PIN provided access to.
 <!-- User-{TenantId}-Policies-EnablePinRecovery-Description-End -->
 
 <!-- User-{TenantId}-Policies-EnablePinRecovery-Editable-Begin -->
@@ -1869,7 +1972,7 @@ If the user forgets their PIN, it can be changed to a new PIN using the Windows 
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | False |
 <!-- User-{TenantId}-Policies-EnablePinRecovery-DFProperties-End -->
@@ -1895,7 +1998,7 @@ If the user forgets their PIN, it can be changed to a new PIN using the Windows 
 <!-- User-{TenantId}-Policies-PINComplexity-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{TenantId}-Policies-PINComplexity-Applicability-End -->
 
 <!-- User-{TenantId}-Policies-PINComplexity-OmaUri-Begin -->
@@ -1918,7 +2021,7 @@ Root node for PIN policies.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 <!-- User-{TenantId}-Policies-PINComplexity-DFProperties-End -->
 
@@ -1934,7 +2037,7 @@ Root node for PIN policies.
 <!-- User-{TenantId}-Policies-PINComplexity-Digits-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{TenantId}-Policies-PINComplexity-Digits-Applicability-End -->
 
 <!-- User-{TenantId}-Policies-PINComplexity-Digits-OmaUri-Begin -->
@@ -1947,11 +2050,11 @@ Root node for PIN policies.
 <!-- Description-Source-DDF -->
 Use this policy setting to configure the use of digits in the Windows Hello for Business PIN.
 
-A value of 1 corresponds to "Required." If you configure this policy setting to 1, Windows Hello for Business requires users to include at least one digit in their PIN.
+A value of 1 corresponds to "Required". If you configure this policy setting to 1, Windows Hello for Business requires users to include at least one digit in their PIN.
 
-A value of 2 corresponds to "Disallow." If you configure this policy setting to 2, Windows Hello for Business prevents users from using digits in their PIN.
+A value of 2 corresponds to "Disallow". If you configure this policy setting to 2, Windows Hello for Business prevents users from using digits in their PIN.
 
-- If you do not configure this policy setting, Windows Hello for Business requires users to use digits in their PIN.
+If you don't configure this policy setting, Windows Hello for Business requires users to use digits in their PIN.
 <!-- User-{TenantId}-Policies-PINComplexity-Digits-Description-End -->
 
 <!-- User-{TenantId}-Policies-PINComplexity-Digits-Editable-Begin -->
@@ -1963,7 +2066,7 @@ A value of 2 corresponds to "Disallow." If you configure this policy setting to 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- User-{TenantId}-Policies-PINComplexity-Digits-DFProperties-End -->
@@ -1990,7 +2093,7 @@ A value of 2 corresponds to "Disallow." If you configure this policy setting to 
 <!-- User-{TenantId}-Policies-PINComplexity-Expiration-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{TenantId}-Policies-PINComplexity-Expiration-Applicability-End -->
 
 <!-- User-{TenantId}-Policies-PINComplexity-Expiration-OmaUri-Begin -->
@@ -2001,7 +2104,7 @@ A value of 2 corresponds to "Disallow." If you configure this policy setting to 
 
 <!-- User-{TenantId}-Policies-PINComplexity-Expiration-Description-Begin -->
 <!-- Description-Source-DDF -->
-This policy specifies when the PIN expires (in days). Valid values are 0 to 730 inclusive. If this policy is set to 0, then PINs do not expire.
+This policy specifies when the PIN expires (in days). Valid values are 0 to 730 inclusive. If this policy is set to 0, then PINs don't expire.
 <!-- User-{TenantId}-Policies-PINComplexity-Expiration-Description-End -->
 
 <!-- User-{TenantId}-Policies-PINComplexity-Expiration-Editable-Begin -->
@@ -2013,7 +2116,7 @@ This policy specifies when the PIN expires (in days). Valid values are 0 to 730 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-730]` |
 | Default Value  | 0 |
@@ -2031,7 +2134,7 @@ This policy specifies when the PIN expires (in days). Valid values are 0 to 730 
 <!-- User-{TenantId}-Policies-PINComplexity-History-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{TenantId}-Policies-PINComplexity-History-Applicability-End -->
 
 <!-- User-{TenantId}-Policies-PINComplexity-History-OmaUri-Begin -->
@@ -2042,7 +2145,7 @@ This policy specifies when the PIN expires (in days). Valid values are 0 to 730 
 
 <!-- User-{TenantId}-Policies-PINComplexity-History-Description-Begin -->
 <!-- Description-Source-DDF -->
-This policy specifies the number of past PINs that can be stored in the history that can't be used. Valid values are 0 to 50 inclusive. If this policy is set to 0, then storage of previous PINs is not required. PIN history is not preserved through PIN reset.
+This policy specifies the number of past PINs that can be stored in the history that can't be used. Valid values are 0 to 50 inclusive. If this policy is set to 0, then storage of previous PINs isn't required. PIN history isn't preserved through PIN reset.
 <!-- User-{TenantId}-Policies-PINComplexity-History-Description-End -->
 
 <!-- User-{TenantId}-Policies-PINComplexity-History-Editable-Begin -->
@@ -2054,7 +2157,7 @@ This policy specifies the number of past PINs that can be stored in the history 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-50]` |
 | Default Value  | 0 |
@@ -2072,7 +2175,7 @@ This policy specifies the number of past PINs that can be stored in the history 
 <!-- User-{TenantId}-Policies-PINComplexity-LowercaseLetters-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{TenantId}-Policies-PINComplexity-LowercaseLetters-Applicability-End -->
 
 <!-- User-{TenantId}-Policies-PINComplexity-LowercaseLetters-OmaUri-Begin -->
@@ -2085,11 +2188,11 @@ This policy specifies the number of past PINs that can be stored in the history 
 <!-- Description-Source-DDF -->
 Use this policy setting to configure the use of lowercase letters in the Windows Hello for Business PIN.
 
-A value of 1 corresponds to "Required." If you configure this policy setting to 1, Windows Hello for Business requires users to include at least one lowercase letter in their PIN.
+A value of 1 corresponds to "Required". If you configure this policy setting to 1, Windows Hello for Business requires users to include at least one lowercase letter in their PIN.
 
-A value of 2 corresponds to "Disallow." If you configure this policy setting to 2, Windows Hello for Business prevents users from using lowercase letters in their PIN.
+A value of 2 corresponds to "Disallow". If you configure this policy setting to 2, Windows Hello for Business prevents users from using lowercase letters in their PIN.
 
-- If you do not configure this policy setting, Windows Hello for Business does not allow users to use lowercase letters in their PIN.
+If you don't configure this policy setting, Windows Hello for Business doesn't allow users to use lowercase letters in their PIN.
 <!-- User-{TenantId}-Policies-PINComplexity-LowercaseLetters-Description-End -->
 
 <!-- User-{TenantId}-Policies-PINComplexity-LowercaseLetters-Editable-Begin -->
@@ -2101,7 +2204,7 @@ A value of 2 corresponds to "Disallow." If you configure this policy setting to 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- User-{TenantId}-Policies-PINComplexity-LowercaseLetters-DFProperties-End -->
@@ -2128,7 +2231,7 @@ A value of 2 corresponds to "Disallow." If you configure this policy setting to 
 <!-- User-{TenantId}-Policies-PINComplexity-MaximumPINLength-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{TenantId}-Policies-PINComplexity-MaximumPINLength-Applicability-End -->
 
 <!-- User-{TenantId}-Policies-PINComplexity-MaximumPINLength-OmaUri-Begin -->
@@ -2143,10 +2246,10 @@ Maximum PIN length configures the maximum number of characters allowed for the P
 
 - If you configure this policy setting, the PIN length must be less than or equal to this number.
 
-- If you do not configure this policy setting, the PIN length must be less than or equal to 127.
+- If you don't configure this policy setting, the PIN length must be less than or equal to 127.
 
 > [!NOTE]
-> If the above specified conditions for the maximum PIN length are not met, default values will be used for both the maximum and minimum PIN lengths.
+> If the above specified conditions for the maximum PIN length aren't met, default values will be used for both the maximum and minimum PIN lengths.
 <!-- User-{TenantId}-Policies-PINComplexity-MaximumPINLength-Description-End -->
 
 <!-- User-{TenantId}-Policies-PINComplexity-MaximumPINLength-Editable-Begin -->
@@ -2158,7 +2261,7 @@ Maximum PIN length configures the maximum number of characters allowed for the P
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[4-127]` |
 | Default Value  | 127 |
@@ -2176,7 +2279,7 @@ Maximum PIN length configures the maximum number of characters allowed for the P
 <!-- User-{TenantId}-Policies-PINComplexity-MinimumPINLength-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{TenantId}-Policies-PINComplexity-MinimumPINLength-Applicability-End -->
 
 <!-- User-{TenantId}-Policies-PINComplexity-MinimumPINLength-OmaUri-Begin -->
@@ -2191,10 +2294,10 @@ Minimum PIN length configures the minimum number of characters required for the 
 
 - If you configure this policy setting, the PIN length must be greater than or equal to this number.
 
-- If you do not configure this policy setting, the PIN length must be greater than or equal to 4.
+- If you don't configure this policy setting, the PIN length must be greater than or equal to 4.
 
 > [!NOTE]
-> If the above specified conditions for the minimum PIN length are not met, default values will be used for both the maximum and minimum PIN lengths.
+> If the above specified conditions for the minimum PIN length aren't met, default values will be used for both the maximum and minimum PIN lengths.
 <!-- User-{TenantId}-Policies-PINComplexity-MinimumPINLength-Description-End -->
 
 <!-- User-{TenantId}-Policies-PINComplexity-MinimumPINLength-Editable-Begin -->
@@ -2206,7 +2309,7 @@ Minimum PIN length configures the minimum number of characters required for the 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[4-127]` |
 | Default Value  | 4 |
@@ -2224,7 +2327,7 @@ Minimum PIN length configures the minimum number of characters required for the 
 <!-- User-{TenantId}-Policies-PINComplexity-SpecialCharacters-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{TenantId}-Policies-PINComplexity-SpecialCharacters-Applicability-End -->
 
 <!-- User-{TenantId}-Policies-PINComplexity-SpecialCharacters-OmaUri-Begin -->
@@ -2237,11 +2340,11 @@ Minimum PIN length configures the minimum number of characters required for the 
 <!-- Description-Source-DDF -->
 Use this policy setting to configure the use of special characters in the Windows Hello for Business PIN gesture. Valid special characters for Windows Hello for Business PIN gestures include: ! " # $ % & ' ( ) * + , - . / : ; `< = >` ? @ [ \ ] ^ _ ` { | } ~ .
 
-A value of 1 corresponds to "Required." If you configure this policy setting to 1, Windows Hello for Business requires users to include at least one special character in their PIN.
+A value of 1 corresponds to "Required". If you configure this policy setting to 1, Windows Hello for Business requires users to include at least one special character in their PIN.
 
-A value of 2 corresponds to "Disallow." If you configure this policy setting to 2, Windows Hello for Business prevents users from using special characters in their PIN.
+A value of 2 corresponds to "Disallow". If you configure this policy setting to 2, Windows Hello for Business prevents users from using special characters in their PIN.
 
-- If you do not configure this policy setting, Windows Hello for Business does not allow users to use special characters in their PIN.
+If you don't configure this policy setting, Windows Hello for Business doesn't allow users to use special characters in their PIN.
 <!-- User-{TenantId}-Policies-PINComplexity-SpecialCharacters-Description-End -->
 
 <!-- User-{TenantId}-Policies-PINComplexity-SpecialCharacters-Editable-Begin -->
@@ -2253,7 +2356,7 @@ A value of 2 corresponds to "Disallow." If you configure this policy setting to 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- User-{TenantId}-Policies-PINComplexity-SpecialCharacters-DFProperties-End -->
@@ -2280,7 +2383,7 @@ A value of 2 corresponds to "Disallow." If you configure this policy setting to 
 <!-- User-{TenantId}-Policies-PINComplexity-UppercaseLetters-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{TenantId}-Policies-PINComplexity-UppercaseLetters-Applicability-End -->
 
 <!-- User-{TenantId}-Policies-PINComplexity-UppercaseLetters-OmaUri-Begin -->
@@ -2293,11 +2396,11 @@ A value of 2 corresponds to "Disallow." If you configure this policy setting to 
 <!-- Description-Source-DDF -->
 Use this policy setting to configure the use of uppercase letters in the Windows Hello for Business PIN.
 
-A value of 1 corresponds to "Required." If you configure this policy setting to 1, Windows Hello for Business requires users to include at least one uppercase letter in their PIN.
+A value of 1 corresponds to "Required". If you configure this policy setting to 1, Windows Hello for Business requires users to include at least one uppercase letter in their PIN.
 
-A value of 2 corresponds to "Disallow." If you configure this policy setting to 2, Windows Hello for Business prevents users from using uppercase letters in their PIN.
+A value of 2 corresponds to "Disallow". If you configure this policy setting to 2, Windows Hello for Business prevents users from using uppercase letters in their PIN.
 
-- If you do not configure this policy setting, Windows Hello for Business does not allow users to use uppercase letters in their PIN.
+If you don't configure this policy setting, Windows Hello for Business doesn't allow users to use uppercase letters in their PIN.
 <!-- User-{TenantId}-Policies-PINComplexity-UppercaseLetters-Description-End -->
 
 <!-- User-{TenantId}-Policies-PINComplexity-UppercaseLetters-Editable-Begin -->
@@ -2309,7 +2412,7 @@ A value of 2 corresponds to "Disallow." If you configure this policy setting to 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- User-{TenantId}-Policies-PINComplexity-UppercaseLetters-DFProperties-End -->
@@ -2336,7 +2439,7 @@ A value of 2 corresponds to "Disallow." If you configure this policy setting to 
 <!-- User-{TenantId}-Policies-RequireSecurityDevice-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{TenantId}-Policies-RequireSecurityDevice-Applicability-End -->
 
 <!-- User-{TenantId}-Policies-RequireSecurityDevice-OmaUri-Begin -->
@@ -2347,11 +2450,11 @@ A value of 2 corresponds to "Disallow." If you configure this policy setting to 
 
 <!-- User-{TenantId}-Policies-RequireSecurityDevice-Description-Begin -->
 <!-- Description-Source-DDF -->
-A Trusted Platform Module (TPM) provides additional security benefits over software because data stored within it cannot be used on other devices.
+A Trusted Platform Module (TPM) provides additional security benefits over software because data stored within it can't be used on other devices.
 
 - If you enable this policy setting, only devices with a usable TPM provision Windows Hello for Business.
 
-- If you disable or do not configure this policy setting, the TPM is still preferred, but all devices provision Windows Hello for Business using software if the TPM is non-functional or unavailable.
+- If you disable or don't configure this policy setting, the TPM is still preferred, but all devices provision Windows Hello for Business using software if the TPM is non-functional or unavailable.
 <!-- User-{TenantId}-Policies-RequireSecurityDevice-Description-End -->
 
 <!-- User-{TenantId}-Policies-RequireSecurityDevice-Editable-Begin -->
@@ -2363,7 +2466,7 @@ A Trusted Platform Module (TPM) provides additional security benefits over softw
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | False |
 <!-- User-{TenantId}-Policies-RequireSecurityDevice-DFProperties-End -->
@@ -2389,7 +2492,7 @@ A Trusted Platform Module (TPM) provides additional security benefits over softw
 <!-- User-{TenantId}-Policies-UsePassportForWork-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{TenantId}-Policies-UsePassportForWork-Applicability-End -->
 
 <!-- User-{TenantId}-Policies-UsePassportForWork-OmaUri-Begin -->
@@ -2402,9 +2505,9 @@ A Trusted Platform Module (TPM) provides additional security benefits over softw
 <!-- Description-Source-DDF -->
 Windows Hello for Business is an alternative method for signing into Windows using your Active Directory or Azure Active Directory account that can replace passwords, Smart Cards, and Virtual Smart Cards.
 
-- If you enable or do not configure this policy setting, the device provisions Windows Hello for Business for all users.
+- If you enable or don't configure this policy setting, the device provisions Windows Hello for Business for all users.
 
-- If you disable this policy setting, the device does not provision Windows Hello for Business for any user.
+- If you disable this policy setting, the device doesn't provision Windows Hello for Business for any user.
 <!-- User-{TenantId}-Policies-UsePassportForWork-Description-End -->
 
 <!-- User-{TenantId}-Policies-UsePassportForWork-Editable-Begin -->
@@ -2416,7 +2519,7 @@ Windows Hello for Business is an alternative method for signing into Windows usi
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | True |
 <!-- User-{TenantId}-Policies-UsePassportForWork-DFProperties-End -->

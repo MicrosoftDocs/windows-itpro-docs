@@ -8,11 +8,13 @@ ms.localizationpriority: medium
 ms.author: aaroncz
 ms.date: 10/05/2017
 ms.reviewer: 
-manager: dougeby
+manager: aaroncz
 ms.technology: itpro-configure
 ---
 
 # Send feedback about Cortana back to Microsoft
+<!--Using include for Cortana in Windows deprecation -->
+[!INCLUDE [Deprecation of Cortana in Windows](./includes/cortana-deprecation.md)]
 
 To provide feedback on an individual request or response, select the item in the conversation history and then select **Give feedback**. The Feedback Hub application is launched, where you can provide more information to help diagnose reported issues.
 

@@ -4,7 +4,7 @@ description: View the XML file containing the device description framework (DDF)
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/17/2023
+ms.date: 06/02/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -47,7 +47,7 @@ The following XML file contains the device description framework (DDF) for the R
       <MSFT:Applicability>
         <MSFT:OsBuildVersion>10.0.14393</MSFT:OsBuildVersion>
         <MSFT:CspVersion>1.0</MSFT:CspVersion>
-        <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x77;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xB4;0xBC;0xBF;0xCA;0xCB;0xCD;</MSFT:EditionAllowList>
+        <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x88;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;</MSFT:EditionAllowList>
       </MSFT:Applicability>
     </DFProperties>
     <Node>
@@ -129,7 +129,7 @@ The following XML file contains the device description framework (DDF) for the R
             <Get />
             <Replace />
           </AccessType>
-          <Description>Value in ISO8601, time is required. A reboot will be scheduled each day at the configured time starting at the date and time. Setting a null (empty) date will delete the existing schedule.</Description>
+          <Description>Value in ISO8601, time is required. Either setting DailyRecurrent or WeeklyRecurrent is supported but not both at same time. A reboot will be scheduled each day at the configured time starting at the date and time. Setting a null (empty) date will delete the existing schedule.</Description>
           <DFFormat>
             <chr />
           </DFFormat>
@@ -143,6 +143,37 @@ The following XML file contains the device description framework (DDF) for the R
           <DFType>
             <MIME />
           </DFType>
+          <MSFT:AllowedValues ValueType="None">
+          </MSFT:AllowedValues>
+        </DFProperties>
+      </Node>
+      <Node>
+        <NodeName>WeeklyRecurrent</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Add />
+            <Delete />
+            <Get />
+            <Replace />
+          </AccessType>
+          <Description>Value in ISO8601, time is required. Either setting DailyRecurrent or WeeklyRecurrent is supported but not both at same time. A reboot will be scheduled every week at the configured time starting at the date and time. Setting a null (empty) date will delete the existing schedule.</Description>
+          <DFFormat>
+            <chr />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFTitle>WeeklyRecurrent</DFTitle>
+          <DFType>
+            <MIME />
+          </DFType>
+          <MSFT:Applicability>
+            <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
+            <MSFT:CspVersion>9.9</MSFT:CspVersion>
+          </MSFT:Applicability>
           <MSFT:AllowedValues ValueType="None">
           </MSFT:AllowedValues>
         </DFProperties>

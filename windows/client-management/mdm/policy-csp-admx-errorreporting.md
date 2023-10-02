@@ -4,7 +4,7 @@ description: Learn more about the ADMX_ErrorReporting Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- ADMX_ErrorReporting-Begin -->
 # Policy CSP - ADMX_ErrorReporting
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- ADMX_ErrorReporting-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -31,7 +28,7 @@ ms.topic: reference
 <!-- PCH_AllOrNoneDef-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- PCH_AllOrNoneDef-Applicability-End -->
 
 <!-- PCH_AllOrNoneDef-OmaUri-Begin -->
@@ -48,7 +45,7 @@ This policy setting controls whether errors in general applications are included
 
 If the Report all errors in Microsoft applications check box is filled, all errors in Microsoft applications are reported, regardless of the setting in the Default pull-down menu. When the Report all errors in Windows check box is filled, all errors in Windows applications are reported, regardless of the setting in the Default dropdown list. The Windows applications category is a subset of Microsoft applications.
 
-- If you disable or do not configure this policy setting, users can enable or disable Windows Error Reporting in Control Panel. The default setting in Control Panel is Upload all applications.
+- If you disable or don't configure this policy setting, users can enable or disable Windows Error Reporting in Control Panel. The default setting in Control Panel is Upload all applications.
 
 This policy setting is ignored if the Configure Error Reporting policy setting is disabled or not configured.
 
@@ -64,13 +61,12 @@ For related information, see the Configure Error Reporting and Report Operating 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- PCH_AllOrNoneDef-DFProperties-End -->
 
 <!-- PCH_AllOrNoneDef-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -96,7 +92,7 @@ For related information, see the Configure Error Reporting and Report Operating 
 <!-- PCH_AllOrNoneEx-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- PCH_AllOrNoneEx-Applicability-End -->
 
 <!-- PCH_AllOrNoneEx-OmaUri-Begin -->
@@ -109,11 +105,11 @@ For related information, see the Configure Error Reporting and Report Operating 
 <!-- Description-Source-ADMX -->
 This policy setting controls Windows Error Reporting behavior for errors in general applications when Windows Error Reporting is turned on.
 
-- If you enable this policy setting, you can create a list of applications that are never included in error reports. To create a list of applications for which Windows Error Reporting never reports errors, click Show under the Exclude errors for applications on this list setting, and then add or remove applications from the list of application file names in the Show Contents dialog box (example: notepad.exe). File names must always include the .exe file name extension. Errors that are generated by applications in this list are not reported, even if the Default Application Reporting Settings policy setting is configured to report all application errors.
+- If you enable this policy setting, you can create a list of applications that are never included in error reports. To create a list of applications for which Windows Error Reporting never reports errors, click Show under the Exclude errors for applications on this list setting, and then add or remove applications from the list of application file names in the Show Contents dialog box (example: notepad.exe). File names must always include the .exe file name extension. Errors that are generated by applications in this list aren't reported, even if the Default Application Reporting Settings policy setting is configured to report all application errors.
 
 - If this policy setting is enabled, the Exclude errors for applications on this list setting takes precedence. If an application is listed both in the List of applications to always report errors for policy setting, and in the exclusion list in this policy setting, the application is excluded from error reporting. You can also use the exclusion list in this policy setting to exclude specific Microsoft applications or parts of Windows if the check boxes for these categories are filled in the Default application reporting settings policy setting.
 
-- If you disable or do not configure this policy setting, the Default application reporting settings policy setting takes precedence.
+- If you disable or don't configure this policy setting, the Default application reporting settings policy setting takes precedence.
 <!-- PCH_AllOrNoneEx-Description-End -->
 
 <!-- PCH_AllOrNoneEx-Editable-Begin -->
@@ -125,13 +121,12 @@ This policy setting controls Windows Error Reporting behavior for errors in gene
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- PCH_AllOrNoneEx-DFProperties-End -->
 
 <!-- PCH_AllOrNoneEx-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -157,7 +152,7 @@ This policy setting controls Windows Error Reporting behavior for errors in gene
 <!-- PCH_AllOrNoneInc-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- PCH_AllOrNoneInc-Applicability-End -->
 
 <!-- PCH_AllOrNoneInc-OmaUri-Begin -->
@@ -170,13 +165,13 @@ This policy setting controls Windows Error Reporting behavior for errors in gene
 <!-- Description-Source-ADMX -->
 This policy setting specifies applications for which Windows Error Reporting should always report errors.
 
-To create a list of applications for which Windows Error Reporting never reports errors, click Show under the Exclude errors for applications on this list setting, and then add or remove applications from the list of application file names in the Show Contents dialog box (example: notepad.exe). Errors that are generated by applications in this list are not reported, even if the Default Application Reporting Settings policy setting is configured to report all application errors.
+To create a list of applications for which Windows Error Reporting never reports errors, click Show under the Exclude errors for applications on this list setting, and then add or remove applications from the list of application file names in the Show Contents dialog box (example: notepad.exe). Errors that are generated by applications in this list aren't reported, even if the Default Application Reporting Settings policy setting is configured to report all application errors.
 
 - If you enable this policy setting, you can create a list of applications that are always included in error reporting. To add applications to the list, click Show under the Report errors for applications on this list setting, and edit the list of application file names in the Show Contents dialog box. The file names must include the .exe file name extension (for example, notepad.exe). Errors that are generated by applications on this list are always reported, even if the Default dropdown in the Default application reporting policy setting is set to report no application errors.
 
-If the Report all errors in Microsoft applications or Report all errors in Windows components check boxes in the Default Application Reporting policy setting are filled, Windows Error Reporting reports errors as if all applications in these categories were added to the list in this policy setting. (Note: The Microsoft applications category includes the Windows components category.)
+If the Report all errors in Microsoft applications or Report all errors in Windows components check boxes in the Default Application Reporting policy setting are filled, Windows Error Reporting reports errors as if all applications in these categories were added to the list in this policy setting. (Note: The Microsoft applications category includes the Windows components category).
 
-- If you disable this policy setting or do not configure it, the Default application reporting settings policy setting takes precedence.
+- If you disable this policy setting or don't configure it, the Default application reporting settings policy setting takes precedence.
 
 Also see the "Default Application Reporting" and "Application Exclusion List" policies.
 
@@ -192,13 +187,12 @@ This setting will be ignored if the 'Configure Error Reporting' setting is disab
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- PCH_AllOrNoneInc-DFProperties-End -->
 
 <!-- PCH_AllOrNoneInc-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -224,7 +218,7 @@ This setting will be ignored if the 'Configure Error Reporting' setting is disab
 <!-- PCH_ConfigureReport-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- PCH_ConfigureReport-Applicability-End -->
 
 <!-- PCH_ConfigureReport-OmaUri-Begin -->
@@ -237,27 +231,28 @@ This setting will be ignored if the 'Configure Error Reporting' setting is disab
 <!-- Description-Source-ADMX -->
 This policy setting configures how errors are reported to Microsoft, and what information is sent when Windows Error Reporting is enabled.
 
-This policy setting does not enable or disable Windows Error Reporting. To turn Windows Error Reporting on or off, see the Turn off Windows Error Reporting policy setting in Computer Configuration/Administrative Templates/System/Internet Communication Management/Internet Communication settings.
+This policy setting doesn't enable or disable Windows Error Reporting. To turn Windows Error Reporting on or off, see the Turn off Windows Error Reporting policy setting in Computer Configuration/Administrative Templates/System/Internet Communication Management/Internet Communication settings.
 
 > [!IMPORTANT]
-> If the Turn off Windows Error Reporting policy setting is not configured, then Control Panel settings for Windows Error Reporting override this policy setting.
+> If the Turn off Windows Error Reporting policy setting isn't configured, then Control Panel settings for Windows Error Reporting override this policy setting.
 
-- If you enable this policy setting, the setting overrides any user changes made to Windows Error Reporting settings in Control Panel, and default values are applied for any Windows Error Reporting policy settings that are not configured (even if users have changed settings by using Control Panel).
+- If you enable this policy setting, the setting overrides any user changes made to Windows Error Reporting settings in Control Panel, and default values are applied for any Windows Error Reporting policy settings that aren't configured (even if users have changed settings by using Control Panel).
+
 - If you enable this policy setting, you can configure the following settings in the policy setting:
 
-- "Do not display links to any Microsoft 'More information' websites": Select this option if you do not want error dialog boxes to display links to Microsoft websites.
+- "Do not display links to any Microsoft 'More information' websites": Select this option if you don't want error dialog boxes to display links to Microsoft websites.
 
-- "Do not collect additional files": Select this option if you do not want additional files to be collected and included in error reports.
+- "Do not collect additional files": Select this option if you don't want additional files to be collected and included in error reports.
 
-- "Do not collect additional computer data": Select this if you do not want additional information about the computer to be collected and included in error reports.
+- "Do not collect additional computer data": Select this if you don't want additional information about the computer to be collected and included in error reports.
 
-- "Force queue mode for application errors": Select this option if you do not want users to report errors. When this option is selected, errors are stored in a queue directory, and the next administrator to log on to the computer can send the error reports to Microsoft.
+- "Force queue mode for application errors": Select this option if you don't want users to report errors. When this option is selected, errors are stored in a queue directory, and the next administrator to log on to the computer can send the error reports to Microsoft.
 
 - "Corporate file path": Type a UNC path to enable Corporate Error Reporting. All errors are stored at the specified location instead of being sent directly to Microsoft, and the next administrator to log onto the computer can send the error reports to Microsoft.
 
 - "Replace instances of the word 'Microsoft' with": You can specify text with which to customize your error report dialog boxes. The word "Microsoft" is replaced with the specified text.
 
-- If you do not configure this policy setting, users can change Windows Error Reporting settings in Control Panel. By default, these settings are Enable Reporting on computers that are running Windows XP, and Report to Queue on computers that are running Windows Server 2003.
+- If you don't configure this policy setting, users can change Windows Error Reporting settings in Control Panel. By default, these settings are Enable Reporting on computers that are running Windows XP, and Report to Queue on computers that are running Windows Server 2003.
 
 - If you disable this policy setting, configuration settings in the policy setting are left blank.
 
@@ -273,13 +268,12 @@ See related policy settings Display Error Notification (same folder as this poli
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- PCH_ConfigureReport-DFProperties-End -->
 
 <!-- PCH_ConfigureReport-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -305,7 +299,7 @@ See related policy settings Display Error Notification (same folder as this poli
 <!-- PCH_ReportOperatingSystemFaults-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- PCH_ReportOperatingSystemFaults-Applicability-End -->
 
 <!-- PCH_ReportOperatingSystemFaults-OmaUri-Begin -->
@@ -320,9 +314,9 @@ This policy setting controls whether errors in the operating system are included
 
 - If you enable this policy setting, Windows Error Reporting includes operating system errors.
 
-- If you disable this policy setting, operating system errors are not included in error reports.
+- If you disable this policy setting, operating system errors aren't included in error reports.
 
-- If you do not configure this policy setting, users can change this setting in Control Panel. By default, Windows Error Reporting settings in Control Panel are set to upload operating system errors.
+- If you don't configure this policy setting, users can change this setting in Control Panel. By default, Windows Error Reporting settings in Control Panel are set to upload operating system errors.
 
 See also the Configure Error Reporting policy setting.
 <!-- PCH_ReportOperatingSystemFaults-Description-End -->
@@ -336,13 +330,12 @@ See also the Configure Error Reporting policy setting.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- PCH_ReportOperatingSystemFaults-DFProperties-End -->
 
 <!-- PCH_ReportOperatingSystemFaults-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -369,7 +362,7 @@ See also the Configure Error Reporting policy setting.
 <!-- WerArchive_1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- WerArchive_1-Applicability-End -->
 
 <!-- WerArchive_1-OmaUri-Begin -->
@@ -384,7 +377,7 @@ This policy setting controls the behavior of the Windows Error Reporting archive
 
 - If you enable this policy setting, you can configure Windows Error Reporting archiving behavior. If Archive behavior is set to Store all, all data collected for each error report is stored in the appropriate location. If Archive behavior is set to Store parameters only, only the minimum information required to check for an existing solution is stored. The Maximum number of reports to store setting determines how many reports are stored before older reports are automatically deleted.
 
-- If you disable or do not configure this policy setting, no Windows Error Reporting information is stored.
+- If you disable or don't configure this policy setting, no Windows Error Reporting information is stored.
 <!-- WerArchive_1-Description-End -->
 
 <!-- WerArchive_1-Editable-Begin -->
@@ -396,13 +389,12 @@ This policy setting controls the behavior of the Windows Error Reporting archive
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- WerArchive_1-DFProperties-End -->
 
 <!-- WerArchive_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -429,7 +421,7 @@ This policy setting controls the behavior of the Windows Error Reporting archive
 <!-- WerArchive_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- WerArchive_2-Applicability-End -->
 
 <!-- WerArchive_2-OmaUri-Begin -->
@@ -444,7 +436,7 @@ This policy setting controls the behavior of the Windows Error Reporting archive
 
 - If you enable this policy setting, you can configure Windows Error Reporting archiving behavior. If Archive behavior is set to Store all, all data collected for each error report is stored in the appropriate location. If Archive behavior is set to Store parameters only, only the minimum information required to check for an existing solution is stored. The Maximum number of reports to store setting determines how many reports are stored before older reports are automatically deleted.
 
-- If you disable or do not configure this policy setting, no Windows Error Reporting information is stored.
+- If you disable or don't configure this policy setting, no Windows Error Reporting information is stored.
 <!-- WerArchive_2-Description-End -->
 
 <!-- WerArchive_2-Editable-Begin -->
@@ -456,13 +448,12 @@ This policy setting controls the behavior of the Windows Error Reporting archive
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- WerArchive_2-DFProperties-End -->
 
 <!-- WerArchive_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -489,7 +480,7 @@ This policy setting controls the behavior of the Windows Error Reporting archive
 <!-- WerAutoApproveOSDumps_1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- WerAutoApproveOSDumps_1-Applicability-End -->
 
 <!-- WerAutoApproveOSDumps_1-OmaUri-Begin -->
@@ -500,9 +491,9 @@ This policy setting controls the behavior of the Windows Error Reporting archive
 
 <!-- WerAutoApproveOSDumps_1-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting controls whether memory dumps in support of OS-generated error reports can be sent to Microsoft automatically. This policy does not apply to error reports generated by 3rd-party products, or additional data other than memory dumps.
+This policy setting controls whether memory dumps in support of OS-generated error reports can be sent to Microsoft automatically. This policy doesn't apply to error reports generated by 3rd-party products, or additional data other than memory dumps.
 
-- If you enable or do not configure this policy setting, any memory dumps generated for error reports by Microsoft Windows are automatically uploaded, without notification to the user.
+- If you enable or don't configure this policy setting, any memory dumps generated for error reports by Microsoft Windows are automatically uploaded, without notification to the user.
 
 - If you disable this policy setting, then all memory dumps are uploaded according to the default consent and notification settings.
 <!-- WerAutoApproveOSDumps_1-Description-End -->
@@ -516,13 +507,12 @@ This policy setting controls whether memory dumps in support of OS-generated err
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- WerAutoApproveOSDumps_1-DFProperties-End -->
 
 <!-- WerAutoApproveOSDumps_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -549,7 +539,7 @@ This policy setting controls whether memory dumps in support of OS-generated err
 <!-- WerAutoApproveOSDumps_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- WerAutoApproveOSDumps_2-Applicability-End -->
 
 <!-- WerAutoApproveOSDumps_2-OmaUri-Begin -->
@@ -560,9 +550,9 @@ This policy setting controls whether memory dumps in support of OS-generated err
 
 <!-- WerAutoApproveOSDumps_2-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting controls whether memory dumps in support of OS-generated error reports can be sent to Microsoft automatically. This policy does not apply to error reports generated by 3rd-party products, or additional data other than memory dumps.
+This policy setting controls whether memory dumps in support of OS-generated error reports can be sent to Microsoft automatically. This policy doesn't apply to error reports generated by 3rd-party products, or additional data other than memory dumps.
 
-- If you enable or do not configure this policy setting, any memory dumps generated for error reports by Microsoft Windows are automatically uploaded, without notification to the user.
+- If you enable or don't configure this policy setting, any memory dumps generated for error reports by Microsoft Windows are automatically uploaded, without notification to the user.
 
 - If you disable this policy setting, then all memory dumps are uploaded according to the default consent and notification settings.
 <!-- WerAutoApproveOSDumps_2-Description-End -->
@@ -576,13 +566,12 @@ This policy setting controls whether memory dumps in support of OS-generated err
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- WerAutoApproveOSDumps_2-DFProperties-End -->
 
 <!-- WerAutoApproveOSDumps_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -609,7 +598,7 @@ This policy setting controls whether memory dumps in support of OS-generated err
 <!-- WerBypassDataThrottling_1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- WerBypassDataThrottling_1-Applicability-End -->
 
 <!-- WerBypassDataThrottling_1-OmaUri-Begin -->
@@ -622,9 +611,9 @@ This policy setting controls whether memory dumps in support of OS-generated err
 <!-- Description-Source-ADMX -->
 This policy setting determines whether Windows Error Reporting (WER) sends additional, second-level report data even if a CAB file containing data about the same event types has already been uploaded to the server.
 
-- If you enable this policy setting, WER does not throttle data; that is, WER uploads additional CAB files that can contain data about the same event types as an earlier uploaded report.
+- If you enable this policy setting, WER doesn't throttle data; that is, WER uploads additional CAB files that can contain data about the same event types as an earlier uploaded report.
 
-- If you disable or do not configure this policy setting, WER throttles data by default; that is, WER does not upload more than one CAB file for a report that contains data about the same event types.
+- If you disable or don't configure this policy setting, WER throttles data by default; that is, WER doesn't upload more than one CAB file for a report that contains data about the same event types.
 <!-- WerBypassDataThrottling_1-Description-End -->
 
 <!-- WerBypassDataThrottling_1-Editable-Begin -->
@@ -636,13 +625,12 @@ This policy setting determines whether Windows Error Reporting (WER) sends addit
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- WerBypassDataThrottling_1-DFProperties-End -->
 
 <!-- WerBypassDataThrottling_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -669,7 +657,7 @@ This policy setting determines whether Windows Error Reporting (WER) sends addit
 <!-- WerBypassDataThrottling_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- WerBypassDataThrottling_2-Applicability-End -->
 
 <!-- WerBypassDataThrottling_2-OmaUri-Begin -->
@@ -682,9 +670,9 @@ This policy setting determines whether Windows Error Reporting (WER) sends addit
 <!-- Description-Source-ADMX -->
 This policy setting determines whether Windows Error Reporting (WER) sends additional, second-level report data even if a CAB file containing data about the same event types has already been uploaded to the server.
 
-- If you enable this policy setting, WER does not throttle data; that is, WER uploads additional CAB files that can contain data about the same event types as an earlier uploaded report.
+- If you enable this policy setting, WER doesn't throttle data; that is, WER uploads additional CAB files that can contain data about the same event types as an earlier uploaded report.
 
-- If you disable or do not configure this policy setting, WER throttles data by default; that is, WER does not upload more than one CAB file for a report that contains data about the same event types.
+- If you disable or don't configure this policy setting, WER throttles data by default; that is, WER doesn't upload more than one CAB file for a report that contains data about the same event types.
 <!-- WerBypassDataThrottling_2-Description-End -->
 
 <!-- WerBypassDataThrottling_2-Editable-Begin -->
@@ -696,13 +684,12 @@ This policy setting determines whether Windows Error Reporting (WER) sends addit
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- WerBypassDataThrottling_2-DFProperties-End -->
 
 <!-- WerBypassDataThrottling_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -729,7 +716,7 @@ This policy setting determines whether Windows Error Reporting (WER) sends addit
 <!-- WerBypassNetworkCostThrottling_1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- WerBypassNetworkCostThrottling_1-Applicability-End -->
 
 <!-- WerBypassNetworkCostThrottling_1-OmaUri-Begin -->
@@ -740,11 +727,11 @@ This policy setting determines whether Windows Error Reporting (WER) sends addit
 
 <!-- WerBypassNetworkCostThrottling_1-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting determines whether Windows Error Reporting (WER) checks for a network cost policy that restricts the amount of data that is sent over the network.
+This policy setting determines whether Windows Error Reporting (WER) checks for a network cost policy that restricts the amount of data that's sent over the network.
 
-- If you enable this policy setting, WER does not check for network cost policy restrictions, and transmits data even if network cost is restricted.
+- If you enable this policy setting, WER doesn't check for network cost policy restrictions, and transmits data even if network cost is restricted.
 
-- If you disable or do not configure this policy setting, WER does not send data, but will check the network cost policy again if the network profile is changed.
+- If you disable or don't configure this policy setting, WER doesn't send data, but will check the network cost policy again if the network profile is changed.
 <!-- WerBypassNetworkCostThrottling_1-Description-End -->
 
 <!-- WerBypassNetworkCostThrottling_1-Editable-Begin -->
@@ -756,13 +743,12 @@ This policy setting determines whether Windows Error Reporting (WER) checks for 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- WerBypassNetworkCostThrottling_1-DFProperties-End -->
 
 <!-- WerBypassNetworkCostThrottling_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -789,7 +775,7 @@ This policy setting determines whether Windows Error Reporting (WER) checks for 
 <!-- WerBypassNetworkCostThrottling_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- WerBypassNetworkCostThrottling_2-Applicability-End -->
 
 <!-- WerBypassNetworkCostThrottling_2-OmaUri-Begin -->
@@ -800,11 +786,11 @@ This policy setting determines whether Windows Error Reporting (WER) checks for 
 
 <!-- WerBypassNetworkCostThrottling_2-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting determines whether Windows Error Reporting (WER) checks for a network cost policy that restricts the amount of data that is sent over the network.
+This policy setting determines whether Windows Error Reporting (WER) checks for a network cost policy that restricts the amount of data that's sent over the network.
 
-- If you enable this policy setting, WER does not check for network cost policy restrictions, and transmits data even if network cost is restricted.
+- If you enable this policy setting, WER doesn't check for network cost policy restrictions, and transmits data even if network cost is restricted.
 
-- If you disable or do not configure this policy setting, WER does not send data, but will check the network cost policy again if the network profile is changed.
+- If you disable or don't configure this policy setting, WER doesn't send data, but will check the network cost policy again if the network profile is changed.
 <!-- WerBypassNetworkCostThrottling_2-Description-End -->
 
 <!-- WerBypassNetworkCostThrottling_2-Editable-Begin -->
@@ -816,13 +802,12 @@ This policy setting determines whether Windows Error Reporting (WER) checks for 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- WerBypassNetworkCostThrottling_2-DFProperties-End -->
 
 <!-- WerBypassNetworkCostThrottling_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -849,7 +834,7 @@ This policy setting determines whether Windows Error Reporting (WER) checks for 
 <!-- WerBypassPowerThrottling_1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- WerBypassPowerThrottling_1-Applicability-End -->
 
 <!-- WerBypassPowerThrottling_1-OmaUri-Begin -->
@@ -860,11 +845,11 @@ This policy setting determines whether Windows Error Reporting (WER) checks for 
 
 <!-- WerBypassPowerThrottling_1-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting determines whether Windows Error Reporting (WER) checks if the computer is running on battery power. By default, when a computer is running on battery power, WER only checks for solutions, but does not upload additional report data until the computer is connected to a more permanent power source.
+This policy setting determines whether Windows Error Reporting (WER) checks if the computer is running on battery power. By default, when a computer is running on battery power, WER only checks for solutions, but doesn't upload additional report data until the computer is connected to a more permanent power source.
 
-- If you enable this policy setting, WER does not determine whether the computer is running on battery power, but checks for solutions and uploads report data normally.
+- If you enable this policy setting, WER doesn't determine whether the computer is running on battery power, but checks for solutions and uploads report data normally.
 
-- If you disable or do not configure this policy setting, WER checks for solutions while a computer is running on battery power, but does not upload report data until the computer is connected to a more permanent power source.
+- If you disable or don't configure this policy setting, WER checks for solutions while a computer is running on battery power, but doesn't upload report data until the computer is connected to a more permanent power source.
 <!-- WerBypassPowerThrottling_1-Description-End -->
 
 <!-- WerBypassPowerThrottling_1-Editable-Begin -->
@@ -876,13 +861,12 @@ This policy setting determines whether Windows Error Reporting (WER) checks if t
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- WerBypassPowerThrottling_1-DFProperties-End -->
 
 <!-- WerBypassPowerThrottling_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -909,7 +893,7 @@ This policy setting determines whether Windows Error Reporting (WER) checks if t
 <!-- WerBypassPowerThrottling_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- WerBypassPowerThrottling_2-Applicability-End -->
 
 <!-- WerBypassPowerThrottling_2-OmaUri-Begin -->
@@ -920,11 +904,11 @@ This policy setting determines whether Windows Error Reporting (WER) checks if t
 
 <!-- WerBypassPowerThrottling_2-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting determines whether Windows Error Reporting (WER) checks if the computer is running on battery power. By default, when a computer is running on battery power, WER only checks for solutions, but does not upload additional report data until the computer is connected to a more permanent power source.
+This policy setting determines whether Windows Error Reporting (WER) checks if the computer is running on battery power. By default, when a computer is running on battery power, WER only checks for solutions, but doesn't upload additional report data until the computer is connected to a more permanent power source.
 
-- If you enable this policy setting, WER does not determine whether the computer is running on battery power, but checks for solutions and uploads report data normally.
+- If you enable this policy setting, WER doesn't determine whether the computer is running on battery power, but checks for solutions and uploads report data normally.
 
-- If you disable or do not configure this policy setting, WER checks for solutions while a computer is running on battery power, but does not upload report data until the computer is connected to a more permanent power source.
+- If you disable or don't configure this policy setting, WER checks for solutions while a computer is running on battery power, but doesn't upload report data until the computer is connected to a more permanent power source.
 <!-- WerBypassPowerThrottling_2-Description-End -->
 
 <!-- WerBypassPowerThrottling_2-Editable-Begin -->
@@ -936,13 +920,12 @@ This policy setting determines whether Windows Error Reporting (WER) checks if t
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- WerBypassPowerThrottling_2-DFProperties-End -->
 
 <!-- WerBypassPowerThrottling_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -969,7 +952,7 @@ This policy setting determines whether Windows Error Reporting (WER) checks if t
 <!-- WerCER-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- WerCER-Applicability-End -->
 
 <!-- WerCER-OmaUri-Begin -->
@@ -980,11 +963,11 @@ This policy setting determines whether Windows Error Reporting (WER) checks if t
 
 <!-- WerCER-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting specifies a corporate server to which Windows Error Reporting sends reports (if you do not want to send error reports to Microsoft).
+This policy setting specifies a corporate server to which Windows Error Reporting sends reports (if you don't want to send error reports to Microsoft).
 
 - If you enable this policy setting, you can specify the name or IP address of an error report destination server on your organization's network. You can also select Connect using SSL to transmit error reports over a Secure Sockets Layer (SSL) connection, and specify a port number on the destination server for transmission.
 
-- If you disable or do not configure this policy setting, Windows Error Reporting sends error reports to Microsoft.
+- If you disable or don't configure this policy setting, Windows Error Reporting sends error reports to Microsoft.
 <!-- WerCER-Description-End -->
 
 <!-- WerCER-Editable-Begin -->
@@ -996,13 +979,12 @@ This policy setting specifies a corporate server to which Windows Error Reportin
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- WerCER-DFProperties-End -->
 
 <!-- WerCER-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1028,7 +1010,7 @@ This policy setting specifies a corporate server to which Windows Error Reportin
 <!-- WerConsentCustomize_1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- WerConsentCustomize_1-Applicability-End -->
 
 <!-- WerConsentCustomize_1-OmaUri-Begin -->
@@ -1049,11 +1031,11 @@ This policy setting determines the consent behavior of Windows Error Reporting f
 
 - 2 (Send parameters): Windows Error Reporting automatically sends the minimum data required to check for an existing solution, and Windows prompts the user for consent to send any additional data requested by Microsoft.
 
-- 3 (Send parameters and safe additional data): Windows Error Reporting automatically sends the minimum data required to check for an existing solution, as well as data which Windows has determined (within a high probability) does not contain personally identifiable data, and prompts the user for consent to send any additional data requested by Microsoft.
+- 3 (Send parameters and safe additional data): Windows Error Reporting automatically sends the minimum data required to check for an existing solution, as well as data which Windows has determined (within a high probability) doesn't contain personally identifiable data, and prompts the user for consent to send any additional data requested by Microsoft.
 
 - 4 (Send all data): Any data requested by Microsoft is sent automatically.
 
-- If you disable or do not configure this policy setting, then the default consent settings that are applied are those specified by the user in Control Panel, or in the Configure Default Consent policy setting.
+- If you disable or don't configure this policy setting, then the default consent settings that are applied are those specified by the user in Control Panel, or in the Configure Default Consent policy setting.
 <!-- WerConsentCustomize_1-Description-End -->
 
 <!-- WerConsentCustomize_1-Editable-Begin -->
@@ -1065,13 +1047,12 @@ This policy setting determines the consent behavior of Windows Error Reporting f
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- WerConsentCustomize_1-DFProperties-End -->
 
 <!-- WerConsentCustomize_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1097,7 +1078,7 @@ This policy setting determines the consent behavior of Windows Error Reporting f
 <!-- WerConsentOverride_1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- WerConsentOverride_1-Applicability-End -->
 
 <!-- WerConsentOverride_1-OmaUri-Begin -->
@@ -1112,7 +1093,7 @@ This policy setting determines the behavior of the Configure Default Consent set
 
 - If you enable this policy setting, the default consent levels of Windows Error Reporting always override any other consent policy setting.
 
-- If you disable or do not configure this policy setting, custom consent policy settings for error reporting determine the consent level for specified event types, and the default consent setting determines only the consent level of any other error reports.
+- If you disable or don't configure this policy setting, custom consent policy settings for error reporting determine the consent level for specified event types, and the default consent setting determines only the consent level of any other error reports.
 <!-- WerConsentOverride_1-Description-End -->
 
 <!-- WerConsentOverride_1-Editable-Begin -->
@@ -1124,13 +1105,12 @@ This policy setting determines the behavior of the Configure Default Consent set
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- WerConsentOverride_1-DFProperties-End -->
 
 <!-- WerConsentOverride_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1157,7 +1137,7 @@ This policy setting determines the behavior of the Configure Default Consent set
 <!-- WerConsentOverride_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- WerConsentOverride_2-Applicability-End -->
 
 <!-- WerConsentOverride_2-OmaUri-Begin -->
@@ -1172,7 +1152,7 @@ This policy setting determines the behavior of the Configure Default Consent set
 
 - If you enable this policy setting, the default consent levels of Windows Error Reporting always override any other consent policy setting.
 
-- If you disable or do not configure this policy setting, custom consent policy settings for error reporting determine the consent level for specified event types, and the default consent setting determines only the consent level of any other error reports.
+- If you disable or don't configure this policy setting, custom consent policy settings for error reporting determine the consent level for specified event types, and the default consent setting determines only the consent level of any other error reports.
 <!-- WerConsentOverride_2-Description-End -->
 
 <!-- WerConsentOverride_2-Editable-Begin -->
@@ -1184,13 +1164,12 @@ This policy setting determines the behavior of the Configure Default Consent set
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- WerConsentOverride_2-DFProperties-End -->
 
 <!-- WerConsentOverride_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1217,7 +1196,7 @@ This policy setting determines the behavior of the Configure Default Consent set
 <!-- WerDefaultConsent_1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- WerDefaultConsent_1-Applicability-End -->
 
 <!-- WerDefaultConsent_1-OmaUri-Begin -->
@@ -1234,9 +1213,9 @@ This policy setting determines the default consent behavior of Windows Error Rep
 
 - Always ask before sending data: Windows prompts users for consent to send reports.
 
-- Send parameters: Only the minimum data that is required to check for an existing solution is sent automatically, and Windows prompts users for consent to send any additional data that is requested by Microsoft.
+- Send parameters: Only the minimum data that's required to check for an existing solution is sent automatically, and Windows prompts users for consent to send any additional data that's requested by Microsoft.
 
-- Send parameters and safe additional data: the minimum data that is required to check for an existing solution, along with data which Windows has determined (within a high probability) does not contain personally-identifiable information is sent automatically, and Windows prompts the user for consent to send any additional data that is requested by Microsoft.
+- Send parameters and safe additional data: the minimum data that's required to check for an existing solution, along with data which Windows has determined (within a high probability) doesn't contain personally-identifiable information is sent automatically, and Windows prompts the user for consent to send any additional data that's requested by Microsoft.
 
 - Send all data: any error reporting data requested by Microsoft is sent automatically.
 
@@ -1252,13 +1231,12 @@ This policy setting determines the default consent behavior of Windows Error Rep
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- WerDefaultConsent_1-DFProperties-End -->
 
 <!-- WerDefaultConsent_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1284,7 +1262,7 @@ This policy setting determines the default consent behavior of Windows Error Rep
 <!-- WerDefaultConsent_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- WerDefaultConsent_2-Applicability-End -->
 
 <!-- WerDefaultConsent_2-OmaUri-Begin -->
@@ -1301,9 +1279,9 @@ This policy setting determines the default consent behavior of Windows Error Rep
 
 - Always ask before sending data: Windows prompts users for consent to send reports.
 
-- Send parameters: Only the minimum data that is required to check for an existing solution is sent automatically, and Windows prompts users for consent to send any additional data that is requested by Microsoft.
+- Send parameters: Only the minimum data that's required to check for an existing solution is sent automatically, and Windows prompts users for consent to send any additional data that's requested by Microsoft.
 
-- Send parameters and safe additional data: the minimum data that is required to check for an existing solution, along with data which Windows has determined (within a high probability) does not contain personally-identifiable information is sent automatically, and Windows prompts the user for consent to send any additional data that is requested by Microsoft.
+- Send parameters and safe additional data: the minimum data that's required to check for an existing solution, along with data which Windows has determined (within a high probability) doesn't contain personally-identifiable information is sent automatically, and Windows prompts the user for consent to send any additional data that's requested by Microsoft.
 
 - Send all data: any error reporting data requested by Microsoft is sent automatically.
 
@@ -1319,13 +1297,12 @@ This policy setting determines the default consent behavior of Windows Error Rep
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- WerDefaultConsent_2-DFProperties-End -->
 
 <!-- WerDefaultConsent_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1351,7 +1328,7 @@ This policy setting determines the default consent behavior of Windows Error Rep
 <!-- WerDisable_1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- WerDisable_1-Applicability-End -->
 
 <!-- WerDisable_1-OmaUri-Begin -->
@@ -1362,11 +1339,11 @@ This policy setting determines the default consent behavior of Windows Error Rep
 
 <!-- WerDisable_1-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting turns off Windows Error Reporting, so that reports are not collected or sent to either Microsoft or internal servers within your organization when software unexpectedly stops working or fails.
+This policy setting turns off Windows Error Reporting, so that reports aren't collected or sent to either Microsoft or internal servers within your organization when software unexpectedly stops working or fails.
 
-- If you enable this policy setting, Windows Error Reporting does not send any problem information to Microsoft. Additionally, solution information is not available in Security and Maintenance in Control Panel.
+- If you enable this policy setting, Windows Error Reporting doesn't send any problem information to Microsoft. Additionally, solution information isn't available in Security and Maintenance in Control Panel.
 
-- If you disable or do not configure this policy setting, the Turn off Windows Error Reporting policy setting in Computer Configuration/Administrative Templates/System/Internet Communication Management/Internet Communication settings takes precedence. If Turn off Windows Error Reporting is also either disabled or not configured, user settings in Control Panel for Windows Error Reporting are applied.
+- If you disable or don't configure this policy setting, the Turn off Windows Error Reporting policy setting in Computer Configuration/Administrative Templates/System/Internet Communication Management/Internet Communication settings takes precedence. If Turn off Windows Error Reporting is also either disabled or not configured, user settings in Control Panel for Windows Error Reporting are applied.
 <!-- WerDisable_1-Description-End -->
 
 <!-- WerDisable_1-Editable-Begin -->
@@ -1378,13 +1355,12 @@ This policy setting turns off Windows Error Reporting, so that reports are not c
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- WerDisable_1-DFProperties-End -->
 
 <!-- WerDisable_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1411,7 +1387,7 @@ This policy setting turns off Windows Error Reporting, so that reports are not c
 <!-- WerExlusion_1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- WerExlusion_1-Applicability-End -->
 
 <!-- WerExlusion_1-OmaUri-Begin -->
@@ -1425,9 +1401,10 @@ This policy setting turns off Windows Error Reporting, so that reports are not c
 This policy setting limits Windows Error Reporting behavior for errors in general applications when Windows Error Reporting is turned on.
 
 - If you enable this policy setting, you can create a list of applications that are never included in error reports. To create a list of applications for which Windows Error Reporting never reports errors, click Show, and then add or remove applications from the list of application file names in the Show Contents dialog box (example: notepad.exe). File names must always include the .exe file name extension. To remove an application from the list, click the name, and then press DELETE.
+
 - If this policy setting is enabled, the Exclude errors for applications on this list setting takes precedence.
 
-- If you disable or do not configure this policy setting, errors are reported on all Microsoft and Windows applications by default.
+- If you disable or don't configure this policy setting, errors are reported on all Microsoft and Windows applications by default.
 <!-- WerExlusion_1-Description-End -->
 
 <!-- WerExlusion_1-Editable-Begin -->
@@ -1439,13 +1416,12 @@ This policy setting limits Windows Error Reporting behavior for errors in genera
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- WerExlusion_1-DFProperties-End -->
 
 <!-- WerExlusion_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1471,7 +1447,7 @@ This policy setting limits Windows Error Reporting behavior for errors in genera
 <!-- WerExlusion_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- WerExlusion_2-Applicability-End -->
 
 <!-- WerExlusion_2-OmaUri-Begin -->
@@ -1485,9 +1461,10 @@ This policy setting limits Windows Error Reporting behavior for errors in genera
 This policy setting limits Windows Error Reporting behavior for errors in general applications when Windows Error Reporting is turned on.
 
 - If you enable this policy setting, you can create a list of applications that are never included in error reports. To create a list of applications for which Windows Error Reporting never reports errors, click Show, and then add or remove applications from the list of application file names in the Show Contents dialog box (example: notepad.exe). File names must always include the .exe file name extension. To remove an application from the list, click the name, and then press DELETE.
+
 - If this policy setting is enabled, the Exclude errors for applications on this list setting takes precedence.
 
-- If you disable or do not configure this policy setting, errors are reported on all Microsoft and Windows applications by default.
+- If you disable or don't configure this policy setting, errors are reported on all Microsoft and Windows applications by default.
 <!-- WerExlusion_2-Description-End -->
 
 <!-- WerExlusion_2-Editable-Begin -->
@@ -1499,13 +1476,12 @@ This policy setting limits Windows Error Reporting behavior for errors in genera
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- WerExlusion_2-DFProperties-End -->
 
 <!-- WerExlusion_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1531,7 +1507,7 @@ This policy setting limits Windows Error Reporting behavior for errors in genera
 <!-- WerNoLogging_1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- WerNoLogging_1-Applicability-End -->
 
 <!-- WerNoLogging_1-OmaUri-Begin -->
@@ -1544,9 +1520,9 @@ This policy setting limits Windows Error Reporting behavior for errors in genera
 <!-- Description-Source-ADMX -->
 This policy setting controls whether Windows Error Reporting saves its own events and error messages to the system event log.
 
-- If you enable this policy setting, Windows Error Reporting events are not recorded in the system event log.
+- If you enable this policy setting, Windows Error Reporting events aren't recorded in the system event log.
 
-- If you disable or do not configure this policy setting, Windows Error Reporting events and errors are logged to the system event log, as with other Windows-based programs.
+- If you disable or don't configure this policy setting, Windows Error Reporting events and errors are logged to the system event log, as with other Windows-based programs.
 <!-- WerNoLogging_1-Description-End -->
 
 <!-- WerNoLogging_1-Editable-Begin -->
@@ -1558,13 +1534,12 @@ This policy setting controls whether Windows Error Reporting saves its own event
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- WerNoLogging_1-DFProperties-End -->
 
 <!-- WerNoLogging_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1591,7 +1566,7 @@ This policy setting controls whether Windows Error Reporting saves its own event
 <!-- WerNoLogging_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- WerNoLogging_2-Applicability-End -->
 
 <!-- WerNoLogging_2-OmaUri-Begin -->
@@ -1604,9 +1579,9 @@ This policy setting controls whether Windows Error Reporting saves its own event
 <!-- Description-Source-ADMX -->
 This policy setting controls whether Windows Error Reporting saves its own events and error messages to the system event log.
 
-- If you enable this policy setting, Windows Error Reporting events are not recorded in the system event log.
+- If you enable this policy setting, Windows Error Reporting events aren't recorded in the system event log.
 
-- If you disable or do not configure this policy setting, Windows Error Reporting events and errors are logged to the system event log, as with other Windows-based programs.
+- If you disable or don't configure this policy setting, Windows Error Reporting events and errors are logged to the system event log, as with other Windows-based programs.
 <!-- WerNoLogging_2-Description-End -->
 
 <!-- WerNoLogging_2-Editable-Begin -->
@@ -1618,13 +1593,12 @@ This policy setting controls whether Windows Error Reporting saves its own event
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- WerNoLogging_2-DFProperties-End -->
 
 <!-- WerNoLogging_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1651,7 +1625,7 @@ This policy setting controls whether Windows Error Reporting saves its own event
 <!-- WerNoSecondLevelData_1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- WerNoSecondLevelData_1-Applicability-End -->
 
 <!-- WerNoSecondLevelData_1-OmaUri-Begin -->
@@ -1666,7 +1640,7 @@ This policy setting controls whether additional data in support of error reports
 
 - If you enable this policy setting, any additional data requests from Microsoft in response to a Windows Error Reporting report are automatically declined, without notification to the user.
 
-- If you disable or do not configure this policy setting, then consent policy settings in Computer Configuration/Administrative Templates/Windows Components/Windows Error Reporting/Consent take precedence.
+- If you disable or don't configure this policy setting, then consent policy settings in Computer Configuration/Administrative Templates/Windows Components/Windows Error Reporting/Consent take precedence.
 <!-- WerNoSecondLevelData_1-Description-End -->
 
 <!-- WerNoSecondLevelData_1-Editable-Begin -->
@@ -1678,13 +1652,12 @@ This policy setting controls whether additional data in support of error reports
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- WerNoSecondLevelData_1-DFProperties-End -->
 
 <!-- WerNoSecondLevelData_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1711,7 +1684,7 @@ This policy setting controls whether additional data in support of error reports
 <!-- WerQueue_1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- WerQueue_1-Applicability-End -->
 
 <!-- WerQueue_1-OmaUri-Begin -->
@@ -1728,7 +1701,7 @@ This policy setting determines the behavior of the Windows Error Reporting repor
 
 The Maximum number of reports to queue setting determines how many reports can be queued before older reports are automatically deleted. The setting for Number of days between solution check reminders determines the interval time between the display of system notifications that remind the user to check for solutions to problems. A value of 0 disables the reminder.
 
-- If you disable or do not configure this policy setting, Windows Error Reporting reports are not queued, and users can only send reports at the time that a problem occurs.
+- If you disable or don't configure this policy setting, Windows Error Reporting reports aren't queued, and users can only send reports at the time that a problem occurs.
 <!-- WerQueue_1-Description-End -->
 
 <!-- WerQueue_1-Editable-Begin -->
@@ -1740,13 +1713,12 @@ The Maximum number of reports to queue setting determines how many reports can b
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- WerQueue_1-DFProperties-End -->
 
 <!-- WerQueue_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1773,7 +1745,7 @@ The Maximum number of reports to queue setting determines how many reports can b
 <!-- WerQueue_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- WerQueue_2-Applicability-End -->
 
 <!-- WerQueue_2-OmaUri-Begin -->
@@ -1790,7 +1762,7 @@ This policy setting determines the behavior of the Windows Error Reporting repor
 
 The Maximum number of reports to queue setting determines how many reports can be queued before older reports are automatically deleted. The setting for Number of days between solution check reminders determines the interval time between the display of system notifications that remind the user to check for solutions to problems. A value of 0 disables the reminder.
 
-- If you disable or do not configure this policy setting, Windows Error Reporting reports are not queued, and users can only send reports at the time that a problem occurs.
+- If you disable or don't configure this policy setting, Windows Error Reporting reports aren't queued, and users can only send reports at the time that a problem occurs.
 <!-- WerQueue_2-Description-End -->
 
 <!-- WerQueue_2-Editable-Begin -->
@@ -1802,13 +1774,12 @@ The Maximum number of reports to queue setting determines how many reports can b
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- WerQueue_2-DFProperties-End -->
 
 <!-- WerQueue_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

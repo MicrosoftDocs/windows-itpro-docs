@@ -4,7 +4,7 @@ description: Learn more about the CredentialsUI Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- CredentialsUI-Begin -->
 # Policy CSP - CredentialsUI
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- CredentialsUI-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -31,7 +28,7 @@ ms.topic: reference
 <!-- DisablePasswordReveal-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DisablePasswordReveal-Applicability-End -->
 
 <!-- DisablePasswordReveal-OmaUri-Begin -->
@@ -48,9 +45,9 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure the display of the password reveal button in password entry user experiences.
 
-- If you enable this policy setting, the password reveal button will not be displayed after a user types a password in the password entry text box.
+- If you enable this policy setting, the password reveal button won't be displayed after a user types a password in the password entry text box.
 
-- If you disable or do not configure this policy setting, the password reveal button will be displayed after a user types a password in the password entry text box.
+- If you disable or don't configure this policy setting, the password reveal button will be displayed after a user types a password in the password entry text box.
 
 By default, the password reveal button is displayed after a user types a password in the password entry text box. To display the password, click the password reveal button.
 
@@ -66,13 +63,12 @@ The policy applies to all Windows components and applications that use the Windo
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisablePasswordReveal-DFProperties-End -->
 
 <!-- DisablePasswordReveal-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -99,7 +95,7 @@ The policy applies to all Windows components and applications that use the Windo
 <!-- EnumerateAdministrators-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- EnumerateAdministrators-Applicability-End -->
 
 <!-- EnumerateAdministrators-OmaUri-Begin -->
@@ -110,7 +106,7 @@ The policy applies to all Windows components and applications that use the Windo
 
 <!-- EnumerateAdministrators-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting controls whether administrator accounts are displayed when a user attempts to elevate a running application. By default, administrator accounts are not displayed when the user attempts to elevate a running application.
+This policy setting controls whether administrator accounts are displayed when a user attempts to elevate a running application. By default, administrator accounts aren't displayed when the user attempts to elevate a running application.
 
 - If you enable this policy setting, all local administrator accounts on the PC will be displayed so the user can choose one and enter the correct password.
 
@@ -126,13 +122,12 @@ This policy setting controls whether administrator accounts are displayed when a
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- EnumerateAdministrators-DFProperties-End -->
 
 <!-- EnumerateAdministrators-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

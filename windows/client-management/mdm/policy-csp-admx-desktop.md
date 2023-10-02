@@ -4,7 +4,7 @@ description: Learn more about the ADMX_Desktop Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- ADMX_Desktop-Begin -->
 # Policy CSP - ADMX_Desktop
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- ADMX_Desktop-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -31,7 +28,7 @@ ms.topic: reference
 <!-- AD_EnableFilter-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AD_EnableFilter-Applicability-End -->
 
 <!-- AD_EnableFilter-OmaUri-Begin -->
@@ -46,9 +43,9 @@ Displays the filter bar above the results of an Active Directory search. The fil
 
 - If you enable this setting, the filter bar appears when the Active Directory Find dialog box opens, but users can hide it.
 
-- If you disable this setting or do not configure it, the filter bar does not appear, but users can display it by selecting "Filter" on the "View" menu.
+- If you disable this setting or don't configure it, the filter bar doesn't appear, but users can display it by selecting "Filter" on the "View" menu.
 
-To see the filter bar, open Network Locations, click Entire Network, and then click Directory. Right-click the name of a Windows domain, and click Find. Type the name of an object in the directory, such as "Administrator." If the filter bar does not appear above the resulting display, on the View menu, click Filter.
+To see the filter bar, open Network Locations, click Entire Network, and then click Directory. Right-click the name of a Windows domain, and click Find. Type the name of an object in the directory, such as "Administrator". If the filter bar doesn't appear above the resulting display, on the View menu, click Filter.
 <!-- AD_EnableFilter-Description-End -->
 
 <!-- AD_EnableFilter-Editable-Begin -->
@@ -60,13 +57,12 @@ To see the filter bar, open Network Locations, click Entire Network, and then cl
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AD_EnableFilter-DFProperties-End -->
 
 <!-- AD_EnableFilter-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -93,7 +89,7 @@ To see the filter bar, open Network Locations, click Entire Network, and then cl
 <!-- AD_HideDirectoryFolder-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AD_HideDirectoryFolder-Applicability-End -->
 
 <!-- AD_HideDirectoryFolder-OmaUri-Begin -->
@@ -108,9 +104,9 @@ Hides the Active Directory folder in Network Locations.
 
 The Active Directory folder displays Active Directory objects in a browse window.
 
-- If you enable this setting, the Active Directory folder does not appear in the Network Locations folder.
+- If you enable this setting, the Active Directory folder doesn't appear in the Network Locations folder.
 
-- If you disable this setting or do not configure it, the Active Directory folder appears in the Network Locations folder.
+- If you disable this setting or don't configure it, the Active Directory folder appears in the Network Locations folder.
 
 This setting is designed to let users search Active Directory but not tempt them to casually browse Active Directory.
 <!-- AD_HideDirectoryFolder-Description-End -->
@@ -124,13 +120,12 @@ This setting is designed to let users search Active Directory but not tempt them
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AD_HideDirectoryFolder-DFProperties-End -->
 
 <!-- AD_HideDirectoryFolder-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -157,7 +152,7 @@ This setting is designed to let users search Active Directory but not tempt them
 <!-- AD_QueryLimit-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AD_QueryLimit-Applicability-End -->
 
 <!-- AD_QueryLimit-OmaUri-Begin -->
@@ -172,7 +167,7 @@ Specifies the maximum number of objects the system displays in response to a com
 
 - If you enable this setting, you can use the "Number of objects returned" box to limit returns from an Active Directory search.
 
-- If you disable this setting or do not configure it, the system displays up to 10,000 objects. This consumes approximately 2 MB of memory or disk space.
+- If you disable this setting or don't configure it, the system displays up to 10,000 objects. This consumes approximately 2 MB of memory or disk space.
 
 This setting is designed to protect the network and the domain controller from the effect of expansive searches.
 <!-- AD_QueryLimit-Description-End -->
@@ -186,13 +181,12 @@ This setting is designed to protect the network and the domain controller from t
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AD_QueryLimit-DFProperties-End -->
 
 <!-- AD_QueryLimit-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -218,7 +212,7 @@ This setting is designed to protect the network and the domain controller from t
 <!-- ForceActiveDesktopOn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ForceActiveDesktopOn-Applicability-End -->
 
 <!-- ForceActiveDesktopOn-OmaUri-Begin -->
@@ -233,7 +227,7 @@ Enables Active Desktop and prevents users from disabling it.
 
 This setting prevents users from trying to enable or disable Active Desktop while a policy controls it.
 
-- If you disable this setting or do not configure it, Active Desktop is disabled by default, but users can enable it.
+If you disable this setting or don't configure it, Active Desktop is disabled by default, but users can enable it.
 
 > [!NOTE]
 > If both the "Enable Active Desktop" setting and the "Disable Active Desktop" setting are enabled, the "Disable Active Desktop" setting is ignored. If the "Turn on Classic Shell" setting ( in User Configuration\Administrative Templates\Windows Components\Windows Explorer) is enabled, Active Desktop is disabled, and both of these policies are ignored.
@@ -248,13 +242,12 @@ This setting prevents users from trying to enable or disable Active Desktop whil
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ForceActiveDesktopOn-DFProperties-End -->
 
 <!-- ForceActiveDesktopOn-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -281,7 +274,7 @@ This setting prevents users from trying to enable or disable Active Desktop whil
 <!-- NoActiveDesktop-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- NoActiveDesktop-Applicability-End -->
 
 <!-- NoActiveDesktop-OmaUri-Begin -->
@@ -296,7 +289,7 @@ Disables Active Desktop and prevents users from enabling it.
 
 This setting prevents users from trying to enable or disable Active Desktop while a policy controls it.
 
-- If you disable this setting or do not configure it, Active Desktop is disabled by default, but users can enable it.
+If you disable this setting or don't configure it, Active Desktop is disabled by default, but users can enable it.
 
 > [!NOTE]
 > If both the "Enable Active Desktop" setting and the "Disable Active Desktop" setting are enabled, the "Disable Active Desktop" setting is ignored. If the "Turn on Classic Shell" setting (in User Configuration\Administrative Templates\Windows Components\Windows Explorer) is enabled, Active Desktop is disabled, and both these policies are ignored.
@@ -311,13 +304,12 @@ This setting prevents users from trying to enable or disable Active Desktop whil
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- NoActiveDesktop-DFProperties-End -->
 
 <!-- NoActiveDesktop-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -344,7 +336,7 @@ This setting prevents users from trying to enable or disable Active Desktop whil
 <!-- NoActiveDesktopChanges-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- NoActiveDesktopChanges-Applicability-End -->
 
 <!-- NoActiveDesktopChanges-OmaUri-Begin -->
@@ -357,7 +349,7 @@ This setting prevents users from trying to enable or disable Active Desktop whil
 <!-- Description-Source-ADMX -->
 Prevents the user from enabling or disabling Active Desktop or changing the Active Desktop configuration.
 
-This is a comprehensive setting that locks down the configuration you establish by using other policies in this folder. This setting removes the Web tab from Display in Control Panel. As a result, users cannot enable or disable Active Desktop. If Active Desktop is already enabled, users cannot add, remove, or edit Web content or disable, lock, or synchronize Active Desktop components.
+This is a comprehensive setting that locks down the configuration you establish by using other policies in this folder. This setting removes the Web tab from Display in Control Panel. As a result, users can't enable or disable Active Desktop. If Active Desktop is already enabled, users can't add, remove, or edit Web content or disable, lock, or synchronize Active Desktop components.
 <!-- NoActiveDesktopChanges-Description-End -->
 
 <!-- NoActiveDesktopChanges-Editable-Begin -->
@@ -369,13 +361,12 @@ This is a comprehensive setting that locks down the configuration you establish 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- NoActiveDesktopChanges-DFProperties-End -->
 
 <!-- NoActiveDesktopChanges-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -402,7 +393,7 @@ This is a comprehensive setting that locks down the configuration you establish 
 <!-- NoDesktop-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- NoDesktop-Applicability-End -->
 
 <!-- NoDesktop-OmaUri-Begin -->
@@ -419,7 +410,7 @@ This is a comprehensive setting that locks down the configuration you establish 
 <!-- Description-Source-ADMX -->
 Removes icons, shortcuts, and other default and user-defined items from the desktop, including Briefcase, Recycle Bin, Computer, and Network Locations.
 
-Removing icons and shortcuts does not prevent the user from using another method to start the programs or opening the items they represent.
+Removing icons and shortcuts doesn't prevent the user from using another method to start the programs or opening the items they represent.
 
 Also, see "Items displayed in Places Bar" in User Configuration\Administrative Templates\Windows Components\Common Open File Dialog to remove the Desktop icon from the Places Bar. This will help prevent users from saving data to the Desktop.
 <!-- NoDesktop-Description-End -->
@@ -433,13 +424,12 @@ Also, see "Items displayed in Places Bar" in User Configuration\Administrative T
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- NoDesktop-DFProperties-End -->
 
 <!-- NoDesktop-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -466,7 +456,7 @@ Also, see "Items displayed in Places Bar" in User Configuration\Administrative T
 <!-- NoDesktopCleanupWizard-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- NoDesktopCleanupWizard-Applicability-End -->
 
 <!-- NoDesktopCleanupWizard-OmaUri-Begin -->
@@ -479,12 +469,12 @@ Also, see "Items displayed in Places Bar" in User Configuration\Administrative T
 <!-- Description-Source-ADMX -->
 Prevents users from using the Desktop Cleanup Wizard.
 
-- If you enable this setting, the Desktop Cleanup wizard does not automatically run on a users workstation every 60 days. The user will also not be able to access the Desktop Cleanup Wizard.
+- If you enable this setting, the Desktop Cleanup wizard doesn't automatically run on a users workstation every 60 days. The user will also not be able to access the Desktop Cleanup Wizard.
 
-- If you disable this setting or do not configure it, the default behavior of the Desktop Clean Wizard running every 60 days occurs.
+- If you disable this setting or don't configure it, the default behavior of the Desktop Clean Wizard running every 60 days occurs.
 
 > [!NOTE]
-> When this setting is not enabled, users can run the Desktop Cleanup Wizard, or have it run automatically every 60 days from Display, by clicking the Desktop tab and then clicking the Customize Desktop button.
+> When this setting isn't enabled, users can run the Desktop Cleanup Wizard, or have it run automatically every 60 days from Display, by clicking the Desktop tab and then clicking the Customize Desktop button.
 <!-- NoDesktopCleanupWizard-Description-End -->
 
 <!-- NoDesktopCleanupWizard-Editable-Begin -->
@@ -496,13 +486,12 @@ Prevents users from using the Desktop Cleanup Wizard.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- NoDesktopCleanupWizard-DFProperties-End -->
 
 <!-- NoDesktopCleanupWizard-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -529,7 +518,7 @@ Prevents users from using the Desktop Cleanup Wizard.
 <!-- NoInternetIcon-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- NoInternetIcon-Applicability-End -->
 
 <!-- NoInternetIcon-OmaUri-Begin -->
@@ -542,7 +531,7 @@ Prevents users from using the Desktop Cleanup Wizard.
 <!-- Description-Source-ADMX -->
 Removes the Internet Explorer icon from the desktop and from the Quick Launch bar on the taskbar.
 
-This setting does not prevent the user from starting Internet Explorer by using other methods.
+This setting doesn't prevent the user from starting Internet Explorer by using other methods.
 <!-- NoInternetIcon-Description-End -->
 
 <!-- NoInternetIcon-Editable-Begin -->
@@ -554,13 +543,12 @@ This setting does not prevent the user from starting Internet Explorer by using 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- NoInternetIcon-DFProperties-End -->
 
 <!-- NoInternetIcon-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -587,7 +575,7 @@ This setting does not prevent the user from starting Internet Explorer by using 
 <!-- NoMyComputerIcon-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- NoMyComputerIcon-Applicability-End -->
 
 <!-- NoMyComputerIcon-OmaUri-Begin -->
@@ -604,10 +592,10 @@ This setting hides Computer from the desktop and from the new Start menu. It als
 
 - If you disable this setting, Computer is displayed as usual, appearing as normal on the desktop, Start menu, folder tree pane, and Web views, unless restricted by another setting.
 
-- If you do not configure this setting, the default is to display Computer as usual.
+- If you don't configure this setting, the default is to display Computer as usual.
 
 > [!NOTE]
-> In operating systems earlier than Microsoft Windows Vista, this policy applies to the My Computer icon. Hiding Computer and its contents does not hide the contents of the child folders of Computer. For example, if the users navigate into one of their hard drives, they see all of their folders and files there, even if this setting is enabled.
+> In operating systems earlier than Microsoft Windows Vista, this policy applies to the My Computer icon. Hiding Computer and its contents doesn't hide the contents of the child folders of Computer. For example, if the users navigate into one of their hard drives, they see all of their folders and files there, even if this setting is enabled.
 <!-- NoMyComputerIcon-Description-End -->
 
 <!-- NoMyComputerIcon-Editable-Begin -->
@@ -619,13 +607,12 @@ This setting hides Computer from the desktop and from the new Start menu. It als
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- NoMyComputerIcon-DFProperties-End -->
 
 <!-- NoMyComputerIcon-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -652,7 +639,7 @@ This setting hides Computer from the desktop and from the new Start menu. It als
 <!-- NoMyDocumentsIcon-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- NoMyDocumentsIcon-Applicability-End -->
 
 <!-- NoMyDocumentsIcon-OmaUri-Begin -->
@@ -667,9 +654,9 @@ Removes most occurrences of the My Documents icon.
 
 This setting removes the My Documents icon from the desktop, from File Explorer, from programs that use the File Explorer windows, and from the standard Open dialog box.
 
-This setting does not prevent the user from using other methods to gain access to the contents of the My Documents folder.
+This setting doesn't prevent the user from using other methods to gain access to the contents of the My Documents folder.
 
-This setting does not remove the My Documents icon from the Start menu. To do so, use the "Remove My Documents icon from Start Menu" setting.
+This setting doesn't remove the My Documents icon from the Start menu. To do so, use the "Remove My Documents icon from Start Menu" setting.
 
 > [!NOTE]
 > To make changes to this setting effective, you must log off from and log back on to Windows 2000 Professional.
@@ -684,13 +671,12 @@ This setting does not remove the My Documents icon from the Start menu. To do so
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- NoMyDocumentsIcon-DFProperties-End -->
 
 <!-- NoMyDocumentsIcon-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -717,7 +703,7 @@ This setting does not remove the My Documents icon from the Start menu. To do so
 <!-- NoNetHood-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- NoNetHood-Applicability-End -->
 
 <!-- NoNetHood-OmaUri-Begin -->
@@ -730,7 +716,7 @@ This setting does not remove the My Documents icon from the Start menu. To do so
 <!-- Description-Source-ADMX -->
 Removes the Network Locations icon from the desktop.
 
-This setting only affects the desktop icon. It does not prevent users from connecting to the network or browsing for shared computers on the network.
+This setting only affects the desktop icon. It doesn't prevent users from connecting to the network or browsing for shared computers on the network.
 
 > [!NOTE]
 > In operating systems earlier than Microsoft Windows Vista, this policy applies to the My Network Places icon.
@@ -745,13 +731,12 @@ This setting only affects the desktop icon. It does not prevent users from conne
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- NoNetHood-DFProperties-End -->
 
 <!-- NoNetHood-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -778,7 +763,7 @@ This setting only affects the desktop icon. It does not prevent users from conne
 <!-- NoPropertiesMyComputer-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- NoPropertiesMyComputer-Applicability-End -->
 
 <!-- NoPropertiesMyComputer-OmaUri-Begin -->
@@ -791,9 +776,9 @@ This setting only affects the desktop icon. It does not prevent users from conne
 <!-- Description-Source-ADMX -->
 This setting hides Properties on the context menu for Computer.
 
-- If you enable this setting, the Properties option will not be present when the user right-clicks My Computer or clicks Computer and then goes to the File menu. Likewise, Alt-Enter does nothing when Computer is selected.
+- If you enable this setting, the Properties option won't be present when the user right-clicks My Computer or clicks Computer and then goes to the File menu. Likewise, Alt-Enter does nothing when Computer is selected.
 
-- If you disable or do not configure this setting, the Properties option is displayed as usual.
+- If you disable or don't configure this setting, the Properties option is displayed as usual.
 <!-- NoPropertiesMyComputer-Description-End -->
 
 <!-- NoPropertiesMyComputer-Editable-Begin -->
@@ -805,13 +790,12 @@ This setting hides Properties on the context menu for Computer.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- NoPropertiesMyComputer-DFProperties-End -->
 
 <!-- NoPropertiesMyComputer-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -838,7 +822,7 @@ This setting hides Properties on the context menu for Computer.
 <!-- NoPropertiesMyDocuments-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- NoPropertiesMyDocuments-Applicability-End -->
 
 <!-- NoPropertiesMyDocuments-OmaUri-Begin -->
@@ -851,13 +835,15 @@ This setting hides Properties on the context menu for Computer.
 <!-- Description-Source-ADMX -->
 This policy setting hides the Properties menu command on the shortcut menu for the My Documents icon.
 
-- If you enable this policy setting, the Properties menu command will not be displayed when the user does any of the following:
+- If you enable this policy setting, the Properties menu command won't be displayed when the user does any of the following:
 
 Right-clicks the My Documents icon.
+
 Clicks the My Documents icon, and then opens the File menu.
+
 Clicks the My Documents icon, and then presses ALT+ENTER.
 
-- If you disable or do not configure this policy setting, the Properties menu command is displayed.
+- If you disable or don't configure this policy setting, the Properties menu command is displayed.
 <!-- NoPropertiesMyDocuments-Description-End -->
 
 <!-- NoPropertiesMyDocuments-Editable-Begin -->
@@ -869,13 +855,12 @@ Clicks the My Documents icon, and then presses ALT+ENTER.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- NoPropertiesMyDocuments-DFProperties-End -->
 
 <!-- NoPropertiesMyDocuments-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -902,7 +887,7 @@ Clicks the My Documents icon, and then presses ALT+ENTER.
 <!-- NoRecentDocsNetHood-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- NoRecentDocsNetHood-Applicability-End -->
 
 <!-- NoRecentDocsNetHood-OmaUri-Begin -->
@@ -913,11 +898,11 @@ Clicks the My Documents icon, and then presses ALT+ENTER.
 
 <!-- NoRecentDocsNetHood-Description-Begin -->
 <!-- Description-Source-ADMX -->
-Remote shared folders are not added to Network Locations whenever you open a document in the shared folder.
+Remote shared folders aren't added to Network Locations whenever you open a document in the shared folder.
 
-- If you disable this setting or do not configure it, when you open a document in a remote shared folder, the system adds a connection to the shared folder to Network Locations.
+- If you disable this setting or don't configure it, when you open a document in a remote shared folder, the system adds a connection to the shared folder to Network Locations.
 
-- If you enable this setting, shared folders are not added to Network Locations automatically when you open a document in the shared folder.
+- If you enable this setting, shared folders aren't added to Network Locations automatically when you open a document in the shared folder.
 <!-- NoRecentDocsNetHood-Description-End -->
 
 <!-- NoRecentDocsNetHood-Editable-Begin -->
@@ -929,13 +914,12 @@ Remote shared folders are not added to Network Locations whenever you open a doc
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- NoRecentDocsNetHood-DFProperties-End -->
 
 <!-- NoRecentDocsNetHood-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -962,7 +946,7 @@ Remote shared folders are not added to Network Locations whenever you open a doc
 <!-- NoRecycleBinIcon-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- NoRecycleBinIcon-Applicability-End -->
 
 <!-- NoRecycleBinIcon-OmaUri-Begin -->
@@ -977,7 +961,7 @@ Removes most occurrences of the Recycle Bin icon.
 
 This setting removes the Recycle Bin icon from the desktop, from File Explorer, from programs that use the File Explorer windows, and from the standard Open dialog box.
 
-This setting does not prevent the user from using other methods to gain access to the contents of the Recycle Bin folder.
+This setting doesn't prevent the user from using other methods to gain access to the contents of the Recycle Bin folder.
 
 > [!NOTE]
 > To make changes to this setting effective, you must log off and then log back on.
@@ -992,13 +976,12 @@ This setting does not prevent the user from using other methods to gain access t
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- NoRecycleBinIcon-DFProperties-End -->
 
 <!-- NoRecycleBinIcon-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1025,7 +1008,7 @@ This setting does not prevent the user from using other methods to gain access t
 <!-- NoRecycleBinProperties-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- NoRecycleBinProperties-Applicability-End -->
 
 <!-- NoRecycleBinProperties-OmaUri-Begin -->
@@ -1038,9 +1021,9 @@ This setting does not prevent the user from using other methods to gain access t
 <!-- Description-Source-ADMX -->
 Removes the Properties option from the Recycle Bin context menu.
 
-- If you enable this setting, the Properties option will not be present when the user right-clicks on Recycle Bin or opens Recycle Bin and then clicks File. Likewise, Alt-Enter does nothing when Recycle Bin is selected.
+- If you enable this setting, the Properties option won't be present when the user right-clicks on Recycle Bin or opens Recycle Bin and then clicks File. Likewise, Alt-Enter does nothing when Recycle Bin is selected.
 
-- If you disable or do not configure this setting, the Properties option is displayed as usual.
+- If you disable or don't configure this setting, the Properties option is displayed as usual.
 <!-- NoRecycleBinProperties-Description-End -->
 
 <!-- NoRecycleBinProperties-Editable-Begin -->
@@ -1052,13 +1035,12 @@ Removes the Properties option from the Recycle Bin context menu.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- NoRecycleBinProperties-DFProperties-End -->
 
 <!-- NoRecycleBinProperties-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1085,7 +1067,7 @@ Removes the Properties option from the Recycle Bin context menu.
 <!-- NoSaveSettings-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- NoSaveSettings-Applicability-End -->
 
 <!-- NoSaveSettings-OmaUri-Begin -->
@@ -1098,7 +1080,7 @@ Removes the Properties option from the Recycle Bin context menu.
 <!-- Description-Source-ADMX -->
 Prevents users from saving certain changes to the desktop.
 
-- If you enable this setting, users can change the desktop, but some changes, such as the position of open windows or the size and position of the taskbar, are not saved when users log off. However, shortcuts placed on the desktop are always saved.
+If you enable this setting, users can change the desktop, but some changes, such as the position of open windows or the size and position of the taskbar, aren't saved when users log off. However, shortcuts placed on the desktop are always saved.
 <!-- NoSaveSettings-Description-End -->
 
 <!-- NoSaveSettings-Editable-Begin -->
@@ -1110,13 +1092,12 @@ Prevents users from saving certain changes to the desktop.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- NoSaveSettings-DFProperties-End -->
 
 <!-- NoSaveSettings-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1143,7 +1124,7 @@ Prevents users from saving certain changes to the desktop.
 <!-- NoWindowMinimizingShortcuts-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- NoWindowMinimizingShortcuts-Applicability-End -->
 
 <!-- NoWindowMinimizingShortcuts-OmaUri-Begin -->
@@ -1156,9 +1137,9 @@ Prevents users from saving certain changes to the desktop.
 <!-- Description-Source-ADMX -->
 Prevents windows from being minimized or restored when the active window is shaken back and forth with the mouse.
 
-- If you enable this policy, application windows will not be minimized or restored when the active window is shaken back and forth with the mouse.
+- If you enable this policy, application windows won't be minimized or restored when the active window is shaken back and forth with the mouse.
 
-- If you disable or do not configure this policy, this window minimizing and restoring gesture will apply.
+- If you disable or don't configure this policy, this window minimizing and restoring gesture will apply.
 <!-- NoWindowMinimizingShortcuts-Description-End -->
 
 <!-- NoWindowMinimizingShortcuts-Editable-Begin -->
@@ -1170,13 +1151,12 @@ Prevents windows from being minimized or restored when the active window is shak
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- NoWindowMinimizingShortcuts-DFProperties-End -->
 
 <!-- NoWindowMinimizingShortcuts-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1203,7 +1183,7 @@ Prevents windows from being minimized or restored when the active window is shak
 <!-- sz_AdminComponents_Title-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- sz_AdminComponents_Title-Applicability-End -->
 
 <!-- sz_AdminComponents_Title-OmaUri-Begin -->
@@ -1221,7 +1201,7 @@ You can use the "Add" box in this setting to add particular Web-based items or s
 You can also use this setting to delete particular Web-based items from users' desktops. Users can add the item again (if settings allow), but the item is deleted each time the setting is refreshed.
 
 > [!NOTE]
-> Removing an item from the "Add" list for this setting is not the same as deleting it. Items that are removed from the "Add" list are not removed from the desktop. They are simply not added again.
+> Removing an item from the "Add" list for this setting isn't the same as deleting it. Items that are removed from the "Add" list aren't removed from the desktop. They are simply not added again.
 
 > [!NOTE]
 > For this setting to take affect, you must log off and log on to the system.
@@ -1236,13 +1216,12 @@ You can also use this setting to delete particular Web-based items from users' d
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- sz_AdminComponents_Title-DFProperties-End -->
 
 <!-- sz_AdminComponents_Title-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1268,7 +1247,7 @@ You can also use this setting to delete particular Web-based items from users' d
 <!-- sz_ATC_DisableAdd-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- sz_ATC_DisableAdd-Applicability-End -->
 
 <!-- sz_ATC_DisableAdd-OmaUri-Begin -->
@@ -1281,7 +1260,7 @@ You can also use this setting to delete particular Web-based items from users' d
 <!-- Description-Source-ADMX -->
 Prevents users from adding Web content to their Active Desktop.
 
-This setting removes the "New" button from Web tab in Display in Control Panel. As a result, users cannot add Web pages or pictures from the Internet or an intranet to the desktop. This setting does not remove existing Web content from their Active Desktop, or prevent users from removing existing Web content.
+This setting removes the "New" button from Web tab in Display in Control Panel. As a result, users can't add Web pages or pictures from the Internet or an intranet to the desktop. This setting doesn't remove existing Web content from their Active Desktop, or prevent users from removing existing Web content.
 
 Also, see the "Disable all items" setting.
 <!-- sz_ATC_DisableAdd-Description-End -->
@@ -1295,13 +1274,12 @@ Also, see the "Disable all items" setting.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- sz_ATC_DisableAdd-DFProperties-End -->
 
 <!-- sz_ATC_DisableAdd-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1328,7 +1306,7 @@ Also, see the "Disable all items" setting.
 <!-- sz_ATC_DisableClose-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- sz_ATC_DisableClose-Applicability-End -->
 
 <!-- sz_ATC_DisableClose-OmaUri-Begin -->
@@ -1341,12 +1319,12 @@ Also, see the "Disable all items" setting.
 <!-- Description-Source-ADMX -->
 Prevents users from removing Web content from their Active Desktop.
 
-In Active Desktop, you can add items to the desktop but close them so they are not displayed.
+In Active Desktop, you can add items to the desktop but close them so they aren't displayed.
 
-- If you enable this setting, items added to the desktop cannot be closed; they always appear on the desktop. This setting removes the check boxes from items on the Web tab in Display in Control Panel.
+If you enable this setting, items added to the desktop can't be closed; they always appear on the desktop. This setting removes the check boxes from items on the Web tab in Display in Control Panel.
 
 > [!NOTE]
-> This setting does not prevent users from deleting items from their Active Desktop.
+> This setting doesn't prevent users from deleting items from their Active Desktop.
 <!-- sz_ATC_DisableClose-Description-End -->
 
 <!-- sz_ATC_DisableClose-Editable-Begin -->
@@ -1358,13 +1336,12 @@ In Active Desktop, you can add items to the desktop but close them so they are n
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- sz_ATC_DisableClose-DFProperties-End -->
 
 <!-- sz_ATC_DisableClose-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1391,7 +1368,7 @@ In Active Desktop, you can add items to the desktop but close them so they are n
 <!-- sz_ATC_DisableDel-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- sz_ATC_DisableDel-Applicability-End -->
 
 <!-- sz_ATC_DisableDel-OmaUri-Begin -->
@@ -1406,7 +1383,7 @@ Prevents users from deleting Web content from their Active Desktop.
 
 This setting removes the Delete button from the Web tab in Display in Control Panel. As a result, users can temporarily remove, but not delete, Web content from their Active Desktop.
 
-This setting does not prevent users from adding Web content to their Active Desktop.
+This setting doesn't prevent users from adding Web content to their Active Desktop.
 
 Also, see the "Prohibit closing items" and "Disable all items" settings.
 <!-- sz_ATC_DisableDel-Description-End -->
@@ -1420,13 +1397,12 @@ Also, see the "Prohibit closing items" and "Disable all items" settings.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- sz_ATC_DisableDel-DFProperties-End -->
 
 <!-- sz_ATC_DisableDel-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1453,7 +1429,7 @@ Also, see the "Prohibit closing items" and "Disable all items" settings.
 <!-- sz_ATC_DisableEdit-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- sz_ATC_DisableEdit-Applicability-End -->
 
 <!-- sz_ATC_DisableEdit-OmaUri-Begin -->
@@ -1466,7 +1442,7 @@ Also, see the "Prohibit closing items" and "Disable all items" settings.
 <!-- Description-Source-ADMX -->
 Prevents users from changing the properties of Web content items on their Active Desktop.
 
-This setting disables the Properties button on the Web tab in Display in Control Panel. Also, it removes the Properties item from the menu for each item on the Active Desktop. As a result, users cannot change the properties of an item, such as its synchronization schedule, password, or display characteristics.
+This setting disables the Properties button on the Web tab in Display in Control Panel. Also, it removes the Properties item from the menu for each item on the Active Desktop. As a result, users can't change the properties of an item, such as its synchronization schedule, password, or display characteristics.
 <!-- sz_ATC_DisableEdit-Description-End -->
 
 <!-- sz_ATC_DisableEdit-Editable-Begin -->
@@ -1478,13 +1454,12 @@ This setting disables the Properties button on the Web tab in Display in Control
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- sz_ATC_DisableEdit-DFProperties-End -->
 
 <!-- sz_ATC_DisableEdit-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1511,7 +1486,7 @@ This setting disables the Properties button on the Web tab in Display in Control
 <!-- sz_ATC_NoComponents-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- sz_ATC_NoComponents-Applicability-End -->
 
 <!-- sz_ATC_NoComponents-OmaUri-Begin -->
@@ -1524,10 +1499,10 @@ This setting disables the Properties button on the Web tab in Display in Control
 <!-- Description-Source-ADMX -->
 Removes Active Desktop content and prevents users from adding Active Desktop content.
 
-This setting removes all Active Desktop items from the desktop. It also removes the Web tab from Display in Control Panel. As a result, users cannot add Web pages or pictures from the Internet or an intranet to the desktop.
+This setting removes all Active Desktop items from the desktop. It also removes the Web tab from Display in Control Panel. As a result, users can't add Web pages or pictures from the Internet or an intranet to the desktop.
 
 > [!NOTE]
-> This setting does not disable Active Desktop. Users can still use image formats, such as JPEG and GIF, for their desktop wallpaper.
+> This setting doesn't disable Active Desktop. Users can still use image formats, such as JPEG and GIF, for their desktop wallpaper.
 <!-- sz_ATC_NoComponents-Description-End -->
 
 <!-- sz_ATC_NoComponents-Editable-Begin -->
@@ -1539,13 +1514,12 @@ This setting removes all Active Desktop items from the desktop. It also removes 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- sz_ATC_NoComponents-DFProperties-End -->
 
 <!-- sz_ATC_NoComponents-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1572,7 +1546,7 @@ This setting removes all Active Desktop items from the desktop. It also removes 
 <!-- sz_DB_DragDropClose-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- sz_DB_DragDropClose-Applicability-End -->
 
 <!-- sz_DB_DragDropClose-OmaUri-Begin -->
@@ -1585,13 +1559,13 @@ This setting removes all Active Desktop items from the desktop. It also removes 
 <!-- Description-Source-ADMX -->
 Prevents users from manipulating desktop toolbars.
 
-- If you enable this setting, users cannot add or remove toolbars from the desktop. Also, users cannot drag toolbars on to or off of docked toolbars.
+If you enable this setting, users can't add or remove toolbars from the desktop. Also, users can't drag toolbars on to or off of docked toolbars.
 
 > [!NOTE]
 > If users have added or removed toolbars, this setting prevents them from restoring the default configuration.
 
 > [!TIP]
-> To view the toolbars that can be added to the desktop, right-click a docked toolbar (such as the taskbar beside the Start button), and point to "Toolbars."
+> To view the toolbars that can be added to the desktop, right-click a docked toolbar (such as the taskbar beside the Start button), and point to "Toolbars".
 
 Also, see the "Prohibit adjusting desktop toolbars" setting.
 <!-- sz_DB_DragDropClose-Description-End -->
@@ -1605,13 +1579,12 @@ Also, see the "Prohibit adjusting desktop toolbars" setting.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- sz_DB_DragDropClose-DFProperties-End -->
 
 <!-- sz_DB_DragDropClose-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1638,7 +1611,7 @@ Also, see the "Prohibit adjusting desktop toolbars" setting.
 <!-- sz_DB_Moving-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- sz_DB_Moving-Applicability-End -->
 
 <!-- sz_DB_Moving-OmaUri-Begin -->
@@ -1649,9 +1622,9 @@ Also, see the "Prohibit adjusting desktop toolbars" setting.
 
 <!-- sz_DB_Moving-Description-Begin -->
 <!-- Description-Source-ADMX -->
-Prevents users from adjusting the length of desktop toolbars. Also, users cannot reposition items or toolbars on docked toolbars.
+Prevents users from adjusting the length of desktop toolbars. Also, users can't reposition items or toolbars on docked toolbars.
 
-This setting does not prevent users from adding or removing toolbars on the desktop.
+This setting doesn't prevent users from adding or removing toolbars on the desktop.
 
 > [!NOTE]
 > If users have adjusted their toolbars, this setting prevents them from restoring the default configuration.
@@ -1668,13 +1641,12 @@ Also, see the "Prevent adding, dragging, dropping and closing the Taskbar's tool
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- sz_DB_Moving-DFProperties-End -->
 
 <!-- sz_DB_Moving-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1701,7 +1673,7 @@ Also, see the "Prevent adding, dragging, dropping and closing the Taskbar's tool
 <!-- sz_DWP_NoHTMLPaper-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- sz_DWP_NoHTMLPaper-Applicability-End -->
 
 <!-- sz_DWP_NoHTMLPaper-OmaUri-Begin -->
@@ -1712,7 +1684,7 @@ Also, see the "Prevent adding, dragging, dropping and closing the Taskbar's tool
 
 <!-- sz_DWP_NoHTMLPaper-Description-Begin -->
 <!-- Description-Source-ADMX -->
-Permits only bitmap images for wallpaper. This setting limits the desktop background ("wallpaper") to bitmap (.bmp) files. If users select files with other image formats, such as JPEG, GIF, PNG, or HTML, through the Browse button on the Desktop tab, the wallpaper does not load. Files that are autoconverted to a .bmp format, such as JPEG, GIF, and PNG, can be set as Wallpaper by right-clicking the image and selecting "Set as Wallpaper".
+Permits only bitmap images for wallpaper. This setting limits the desktop background ("wallpaper") to bitmap (.bmp) files. If users select files with other image formats, such as JPEG, GIF, PNG, or HTML, through the Browse button on the Desktop tab, the wallpaper doesn't load. Files that are autoconverted to a .bmp format, such as JPEG, GIF, and PNG, can be set as Wallpaper by right-clicking the image and selecting "Set as Wallpaper".
 
 Also, see the "Desktop Wallpaper" and the "Prevent changing wallpaper" (in User Configuration\Administrative Templates\Control Panel\Display) settings.
 <!-- sz_DWP_NoHTMLPaper-Description-End -->
@@ -1726,13 +1698,12 @@ Also, see the "Desktop Wallpaper" and the "Prevent changing wallpaper" (in User 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- sz_DWP_NoHTMLPaper-DFProperties-End -->
 
 <!-- sz_DWP_NoHTMLPaper-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1759,7 +1730,7 @@ Also, see the "Desktop Wallpaper" and the "Prevent changing wallpaper" (in User 
 <!-- Wallpaper-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Wallpaper-Applicability-End -->
 
 <!-- Wallpaper-OmaUri-Begin -->
@@ -1774,14 +1745,14 @@ Specifies the desktop background ("wallpaper") displayed on all users' desktops.
 
 This setting lets you specify the wallpaper on users' desktops and prevents users from changing the image or its presentation. The wallpaper you specify can be stored in a bitmap (*.bmp) or JPEG (*.jpg) file.
 
-To use this setting, type the fully qualified path and name of the file that stores the wallpaper image. You can type a local path, such as C:\Windows\web\wallpaper\home.jpg or a UNC path, such as \\Server\Share\Corp.jpg. If the specified file is not available when the user logs on, no wallpaper is displayed. Users cannot specify alternative wallpaper. You can also use this setting to specify that the wallpaper image be centered, tiled, or stretched. Users cannot change this specification.
+To use this setting, type the fully qualified path and name of the file that stores the wallpaper image. You can type a local path, such as C:\Windows\web\wallpaper\home.jpg or a UNC path, such as \\Server\Share\Corp.jpg. If the specified file isn't available when the user logs on, no wallpaper is displayed. Users can't specify alternative wallpaper. You can also use this setting to specify that the wallpaper image be centered, tiled, or stretched. Users can't change this specification.
 
-- If you disable this setting or do not configure it, no wallpaper is displayed. However, users can select the wallpaper of their choice.
+If you disable this setting or don't configure it, no wallpaper is displayed. However, users can select the wallpaper of their choice.
 
 Also, see the "Allow only bitmapped wallpaper" in the same location, and the "Prevent changing wallpaper" setting in User Configuration\Administrative Templates\Control Panel.
 
 > [!NOTE]
-> This setting does not apply to remote desktop server sessions.
+> This setting doesn't apply to remote desktop server sessions.
 <!-- Wallpaper-Description-End -->
 
 <!-- Wallpaper-Editable-Begin -->
@@ -1793,13 +1764,12 @@ Also, see the "Allow only bitmapped wallpaper" in the same location, and the "Pr
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Wallpaper-DFProperties-End -->
 
 <!-- Wallpaper-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

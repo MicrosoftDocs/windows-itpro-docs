@@ -1,10 +1,8 @@
 ---
 title: Take a Test app technical reference
 description: List of policies and settings applied by the Take a Test app.
-ms.date: 09/30/2022
+ms.date: 03/31/2023
 ms.topic: reference
-appliesto:
-  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
 ---
 
 # Take a Test app technical reference

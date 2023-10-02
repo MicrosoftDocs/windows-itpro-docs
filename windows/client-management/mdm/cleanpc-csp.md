@@ -2,12 +2,12 @@
 title: CleanPC CSP
 description: The CleanPC configuration service provider (CSP) allows you to remove user-installed and pre-installed applications, with the option to persist user data.
 ms.author: vinpa
-ms.topic: article
+ms.topic: reference
 ms.prod: windows-client
 ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 06/26/2017
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ---
 

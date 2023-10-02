@@ -1,11 +1,11 @@
 ---
-title: 4626(S) User/Device claims information. (Windows 10)
+title: 4626(S) User/Device claims information. 
 description: Describes security event 4626(S) User/Device claims information. This event is generated for new account logons.
 ms.pagetype: security
 ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
+ms.localizationpriority: low
 author: vinaypamnani-msft
 ms.date: 09/07/2021
 ms.reviewer: 

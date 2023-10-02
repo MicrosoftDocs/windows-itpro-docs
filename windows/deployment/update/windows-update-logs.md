@@ -2,18 +2,22 @@
 title: Windows Update log files
 description: Learn about the Windows Update log files and how to merge and convert Windows Update trace files (.etl files) into a single readable WindowsUpdate.log file.
 ms.prod: windows-client
+ms.technology: itpro-updates
+ms.topic: troubleshooting
 author: mestew
 ms.author: mstewart
 manager: aaroncz
-ms.topic: article
-ms.collection: highpri, tier2
-ms.technology: itpro-updates
+ms.collection:
+  - highpri
+  - tier2
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
 ms.date: 12/31/2017
 ---
 
 # Windows Update log files
 
->Applies to: Windows 10
 
 The following table describes the log files created by Windows Update.
 

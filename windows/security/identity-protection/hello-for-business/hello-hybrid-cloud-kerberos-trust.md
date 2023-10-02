@@ -32,15 +32,18 @@ Windows Hello for Business cloud Kerberos trust uses *Azure AD Kerberos*, which 
 Cloud Kerberos trust uses Azure AD Kerberos, which doesn't require a PKI to request TGTs.\
 With Azure AD Kerberos, Azure AD can issue TGTs for one or more AD domains. Windows can request a TGT from Azure AD when authenticating with Windows Hello for Business, and use the returned TGT for sign-in or to access AD-based resources. The on-premises domain controllers are still responsible for Kerberos service tickets and authorization.
 
-When Azure AD Kerberos is enabled in an Active Directory domain, an *Azure AD Kerberos server object* is created in the domain. This object:
+When Azure AD Kerberos is enabled in an Active Directory domain, an *AzureADKerberos* computer object is created in the domain. This object:
 
 - Appears as a Read Only Domain Controller (RODC) object, but isn't associated with any physical servers
-- Is only used by Azure AD to generate TGTs for the Active Directory domain. The same rules and restrictions used for RODCs apply to the Azure AD Kerberos Server object
+- Is only used by Azure AD to generate TGTs for the Active Directory domain
+
+  > [!NOTE]
+  > Similar rules and restrictions used for RODCs apply to the AzureADKerberos computer object. For example, users that are direct or indirect members of priviliged built-in security groups won't be able to use cloud Kerberos trust.
 
 :::image type="content" source="images/azuread-kerberos-object.png" alt-text="Active Directory Users and Computers console, showing the computer object representing the Azure AD Kerberos server ":::
 
 For more information about how Azure AD Kerberos enables access to on-premises resources, see [enabling passwordless security key sign-in to on-premises resources][AZ-1].\
-For more information about how Azure AD Kerberos works with Windows Hello for Business cloud Kerberos trust, see [Windows Hello for Business authentication technical deep dive](hello-how-it-works-authentication.md#hybrid-azure-ad-join-authentication-using-azure-ad-kerberos-cloud-kerberos-trust).
+For more information about how Azure AD Kerberos works with Windows Hello for Business cloud Kerberos trust, see [Windows Hello for Business authentication technical deep dive](hello-how-it-works-authentication.md#hybrid-azure-ad-join-authentication-using-cloud-kerberos-trust).
 
 > [!IMPORTANT]
 > When implementing the cloud Kerberos trust deployment model, you *must* ensure that you have an adequate number of *read-write domain controllers* in each Active Directory site where users will be authenticating with Windows Hello for Business. For more information, see [Capacity planning for Active Directory][SERV-1].
@@ -65,9 +68,9 @@ The following scenarios aren't supported using Windows Hello for Business cloud 
 - Signing in with cloud Kerberos trust on a Hybrid Azure AD joined device without previously signing in with DC connectivity
 
 > [!NOTE]
-> The default security policy for AD does not grant permission to sign high privilege accounts on to on-premises resources with cloud Kerberos trust or FIDO2 security keys.
+> The default *Password Replication Policy* configured on the AzureADKerberos computer object doesn't allow to sign high privilege accounts on to on-premises resources with cloud Kerberos trust or FIDO2 security keys.
 >
-> To unblock the accounts, use Active Directory Users and Computers to modify the msDS-NeverRevealGroup property of the Azure AD Kerberos Computer object `CN=AzureADKerberos,OU=Domain Controllers,<domain-DN>`.
+> Due to possible attack vectors from Azure AD to Active Directory, it **isn't recommended** to unblock these accounts by relaxing the Password Replication Policy of the computer object `CN=AzureADKerberos,OU=Domain Controllers,<domain-DN>`.
 
 ## Next steps
 

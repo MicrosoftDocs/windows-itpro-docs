@@ -4,7 +4,7 @@ description: View the XML file containing the device description framework (DDF)
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/17/2023
+ms.date: 08/02/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -47,7 +47,7 @@ The following XML file contains the device description framework (DDF) for the W
       <MSFT:Applicability>
         <MSFT:OsBuildVersion>10.0.10586</MSFT:OsBuildVersion>
         <MSFT:CspVersion>1.0</MSFT:CspVersion>
-        <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x62;0x63;0x64;0x65;0x77;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x87;0x88*;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xB4;0xBC;0xBF;0xCD;</MSFT:EditionAllowList>
+        <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x62;0x63;0x64;0x65;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xBC;0xBF;0xCD;</MSFT:EditionAllowList>
       </MSFT:Applicability>
     </DFProperties>
     <Node>
@@ -322,6 +322,177 @@ The following XML file contains the device description framework (DDF) for the W
           </DFProperties>
         </Node>
       </Node>
+      <Node>
+        <NodeName>SubscriptionType</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Get />
+            <Replace />
+          </AccessType>
+          <Description>Set device to Device Based Subscription or User Based Subscription. For Device Based Subscription this action will automatically acquire the subscription on the device. For User Based Subscription the existing process of user logon will be required.</Description>
+          <DFFormat>
+            <int />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFType>
+            <MIME />
+          </DFType>
+          <MSFT:Applicability>
+            <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
+            <MSFT:CspVersion>9.9</MSFT:CspVersion>
+          </MSFT:Applicability>
+          <MSFT:AllowedValues ValueType="ENUM">
+            <MSFT:Enum>
+              <MSFT:Value>0</MSFT:Value>
+              <MSFT:ValueDescription>User Based Subscription</MSFT:ValueDescription>
+            </MSFT:Enum>
+            <MSFT:Enum>
+              <MSFT:Value>1</MSFT:Value>
+              <MSFT:ValueDescription>Device Based Subscription</MSFT:ValueDescription>
+            </MSFT:Enum>
+          </MSFT:AllowedValues>
+        </DFProperties>
+      </Node>
+      <Node>
+        <NodeName>SubscriptionStatus</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Get />
+          </AccessType>
+          <Description>Status of last subscription operation.</Description>
+          <DFFormat>
+            <int />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFType>
+            <MIME />
+          </DFType>
+          <MSFT:Applicability>
+            <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
+            <MSFT:CspVersion>9.9</MSFT:CspVersion>
+          </MSFT:Applicability>
+        </DFProperties>
+      </Node>
+      <Node>
+        <NodeName>SubscriptionLastError</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Get />
+          </AccessType>
+          <Description>Error code of last subscription operation. Value would be empty(0) in absence of error.</Description>
+          <DFFormat>
+            <int />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFType>
+            <MIME />
+          </DFType>
+          <MSFT:Applicability>
+            <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
+            <MSFT:CspVersion>9.9</MSFT:CspVersion>
+          </MSFT:Applicability>
+        </DFProperties>
+      </Node>
+      <Node>
+        <NodeName>SubscriptionLastErrorDescription</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Get />
+          </AccessType>
+          <Description>Error description of last subscription operation. Value would be empty, if error description cannot be evaluated.</Description>
+          <DFFormat>
+            <chr />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFType>
+            <MIME />
+          </DFType>
+          <MSFT:Applicability>
+            <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
+            <MSFT:CspVersion>9.9</MSFT:CspVersion>
+          </MSFT:Applicability>
+        </DFProperties>
+      </Node>
+      <Node>
+        <NodeName>DisableSubscription</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Replace />
+          </AccessType>
+          <Description>Disable or Enable subscription activation on a device</Description>
+          <DFFormat>
+            <int />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFType>
+            <MIME />
+          </DFType>
+          <MSFT:Applicability>
+            <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
+            <MSFT:CspVersion>9.9</MSFT:CspVersion>
+          </MSFT:Applicability>
+          <MSFT:AllowedValues ValueType="ENUM">
+            <MSFT:Enum>
+              <MSFT:Value>0</MSFT:Value>
+              <MSFT:ValueDescription>Enable Subscription</MSFT:ValueDescription>
+            </MSFT:Enum>
+            <MSFT:Enum>
+              <MSFT:Value>1</MSFT:Value>
+              <MSFT:ValueDescription>Disable Subscription. It also removes any existing subscription on the device.</MSFT:ValueDescription>
+            </MSFT:Enum>
+          </MSFT:AllowedValues>
+        </DFProperties>
+      </Node>
+      <Node>
+        <NodeName>RemoveSubscription</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Exec />
+          </AccessType>
+          <Description>Remove subscription uninstall subscription license. It also reset subscription type to User Based Subscription.</Description>
+          <DFFormat>
+            <null />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Permanent />
+          </Scope>
+          <DFType>
+            <MIME />
+          </DFType>
+          <MSFT:Applicability>
+            <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
+            <MSFT:CspVersion>9.9</MSFT:CspVersion>
+          </MSFT:Applicability>
+        </DFProperties>
+      </Node>
     </Node>
     <Node>
       <NodeName>SMode</NodeName>
@@ -439,7 +610,7 @@ The following XML file contains the device description framework (DDF) for the W
         <AccessType>
           <Get />
         </AccessType>
-        <Description>Insert Description Here</Description>
+        <Description>Device Based Subscription</Description>
         <DFFormat>
           <node />
         </DFFormat>
@@ -453,7 +624,7 @@ The following XML file contains the device description framework (DDF) for the W
           <DDFName />
         </DFType>
         <MSFT:Applicability>
-          <MSFT:OsBuildVersion>10.0.22621</MSFT:OsBuildVersion>
+          <MSFT:OsBuildVersion>10.0.22621, 10.0.22000.1165</MSFT:OsBuildVersion>
           <MSFT:CspVersion>1.4</MSFT:CspVersion>
         </MSFT:Applicability>
       </DFProperties>
@@ -461,8 +632,6 @@ The following XML file contains the device description framework (DDF) for the W
         <NodeName>LicenseType</NodeName>
         <DFProperties>
           <AccessType>
-            <Add />
-            <Delete />
             <Get />
             <Replace />
           </AccessType>
@@ -542,48 +711,6 @@ The following XML file contains the device description framework (DDF) for the W
           <Description>Returns last error description from Device Licensing. Value would be empty, if error decription can not be evaluated.</Description>
           <DFFormat>
             <chr />
-          </DFFormat>
-          <Occurrence>
-            <One />
-          </Occurrence>
-          <Scope>
-            <Permanent />
-          </Scope>
-          <DFType>
-            <MIME />
-          </DFType>
-        </DFProperties>
-      </Node>
-      <Node>
-        <NodeName>AcquireDeviceLicense</NodeName>
-        <DFProperties>
-          <AccessType>
-            <Exec />
-          </AccessType>
-          <Description>Acquire and Refresh Device License. Does not reboot.</Description>
-          <DFFormat>
-            <null />
-          </DFFormat>
-          <Occurrence>
-            <One />
-          </Occurrence>
-          <Scope>
-            <Permanent />
-          </Scope>
-          <DFType>
-            <MIME />
-          </DFType>
-        </DFProperties>
-      </Node>
-      <Node>
-        <NodeName>RemoveDeviceLicense</NodeName>
-        <DFProperties>
-          <AccessType>
-            <Exec />
-          </AccessType>
-          <Description>Remove Device License. Device would be ready for user based license after this operation. Does not reboot.</Description>
-          <DFFormat>
-            <null />
           </DFFormat>
           <Occurrence>
             <One />

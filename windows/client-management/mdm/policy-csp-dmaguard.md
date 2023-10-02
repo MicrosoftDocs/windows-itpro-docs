@@ -4,7 +4,7 @@ description: Learn more about the DmaGuard Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -26,7 +26,7 @@ ms.topic: reference
 <!-- DeviceEnumerationPolicy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- DeviceEnumerationPolicy-Applicability-End -->
 
 <!-- DeviceEnumerationPolicy-OmaUri-Begin -->
@@ -37,7 +37,7 @@ ms.topic: reference
 
 <!-- DeviceEnumerationPolicy-Description-Begin -->
 <!-- Description-Source-ADMX -->
-Enumeration policy for external DMA-capable devices incompatible with DMA remapping. This policy only takes effect when Kernel DMA Protection is enabled and supported by the system. **Note** this policy does not apply to 1394, PCMCIA or ExpressCard devices.
+Enumeration policy for external DMA-capable devices incompatible with DMA remapping. This policy only takes effect when Kernel DMA Protection is enabled and supported by the system. Note this policy doesn't apply to 1394, PCMCIA or ExpressCard devices.
 <!-- DeviceEnumerationPolicy-Description-End -->
 
 <!-- DeviceEnumerationPolicy-Editable-Begin -->
@@ -45,6 +45,8 @@ Enumeration policy for external DMA-capable devices incompatible with DMA remapp
 This policy is intended to provide more security against external DMA capable devices. It allows for more control over the enumeration of external DMA capable devices that are incompatible with [DMA Remapping](/windows-hardware/drivers/pci/enabling-dma-remapping-for-device-drivers), device memory isolation and sandboxing.
 
 Device memory sandboxing allows the OS to use the I/O Memory Management Unit (IOMMU) of a device to block unallowed I/O, or memory access by the peripheral. In other words, the OS assigns a certain memory range to the peripheral. If the peripheral attempts to read/write to memory outside of the assigned range, the OS blocks it.
+
+This policy requires a system reboot to take effect.
 
 This policy only takes effect when Kernel DMA Protection is supported and enabled by the system firmware. Kernel DMA Protection is a platform feature that can't be controlled via policy or by end user. It has to be supported by the system at the time of manufacturing. To check if the system supports Kernel DMA Protection, check the Kernel DMA Protection field in the Summary page of MSINFO32.exe.
 <!-- DeviceEnumerationPolicy-Editable-End -->
@@ -54,7 +56,7 @@ This policy only takes effect when Kernel DMA Protection is supported and enable
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- DeviceEnumerationPolicy-DFProperties-End -->

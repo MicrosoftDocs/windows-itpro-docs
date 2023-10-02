@@ -4,7 +4,7 @@ description: Learn more about the Start Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 09/25/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -26,7 +26,7 @@ ms.topic: reference
 <!-- AllowPinnedFolderDocuments-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowPinnedFolderDocuments-Applicability-End -->
 
 <!-- AllowPinnedFolderDocuments-OmaUri-Begin -->
@@ -49,7 +49,7 @@ This policy controls the visibility of the Documents shortcut on the Start menu.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 65535 |
 <!-- AllowPinnedFolderDocuments-DFProperties-End -->
@@ -76,7 +76,7 @@ This policy controls the visibility of the Documents shortcut on the Start menu.
 <!-- AllowPinnedFolderDownloads-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowPinnedFolderDownloads-Applicability-End -->
 
 <!-- AllowPinnedFolderDownloads-OmaUri-Begin -->
@@ -99,7 +99,7 @@ This policy controls the visibility of the Downloads shortcut on the Start menu.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 65535 |
 <!-- AllowPinnedFolderDownloads-DFProperties-End -->
@@ -126,7 +126,7 @@ This policy controls the visibility of the Downloads shortcut on the Start menu.
 <!-- AllowPinnedFolderFileExplorer-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowPinnedFolderFileExplorer-Applicability-End -->
 
 <!-- AllowPinnedFolderFileExplorer-OmaUri-Begin -->
@@ -149,7 +149,7 @@ This policy controls the visibility of the File Explorer shortcut on the Start m
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 65535 |
 <!-- AllowPinnedFolderFileExplorer-DFProperties-End -->
@@ -176,7 +176,7 @@ This policy controls the visibility of the File Explorer shortcut on the Start m
 <!-- AllowPinnedFolderHomeGroup-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowPinnedFolderHomeGroup-Applicability-End -->
 
 <!-- AllowPinnedFolderHomeGroup-OmaUri-Begin -->
@@ -199,7 +199,7 @@ This policy controls the visibility of the HomeGroup shortcut on the Start menu.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 65535 |
 <!-- AllowPinnedFolderHomeGroup-DFProperties-End -->
@@ -226,7 +226,7 @@ This policy controls the visibility of the HomeGroup shortcut on the Start menu.
 <!-- AllowPinnedFolderMusic-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowPinnedFolderMusic-Applicability-End -->
 
 <!-- AllowPinnedFolderMusic-OmaUri-Begin -->
@@ -249,7 +249,7 @@ This policy controls the visibility of the Music shortcut on the Start menu. The
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 65535 |
 <!-- AllowPinnedFolderMusic-DFProperties-End -->
@@ -276,7 +276,7 @@ This policy controls the visibility of the Music shortcut on the Start menu. The
 <!-- AllowPinnedFolderNetwork-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowPinnedFolderNetwork-Applicability-End -->
 
 <!-- AllowPinnedFolderNetwork-OmaUri-Begin -->
@@ -299,7 +299,7 @@ This policy controls the visibility of the Network shortcut on the Start menu. T
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 65535 |
 <!-- AllowPinnedFolderNetwork-DFProperties-End -->
@@ -326,7 +326,7 @@ This policy controls the visibility of the Network shortcut on the Start menu. T
 <!-- AllowPinnedFolderPersonalFolder-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowPinnedFolderPersonalFolder-Applicability-End -->
 
 <!-- AllowPinnedFolderPersonalFolder-OmaUri-Begin -->
@@ -349,7 +349,7 @@ This policy controls the visibility of the PersonalFolder shortcut on the Start 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 65535 |
 <!-- AllowPinnedFolderPersonalFolder-DFProperties-End -->
@@ -376,7 +376,7 @@ This policy controls the visibility of the PersonalFolder shortcut on the Start 
 <!-- AllowPinnedFolderPictures-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowPinnedFolderPictures-Applicability-End -->
 
 <!-- AllowPinnedFolderPictures-OmaUri-Begin -->
@@ -399,7 +399,7 @@ This policy controls the visibility of the Pictures shortcut on the Start menu. 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 65535 |
 <!-- AllowPinnedFolderPictures-DFProperties-End -->
@@ -426,7 +426,7 @@ This policy controls the visibility of the Pictures shortcut on the Start menu. 
 <!-- AllowPinnedFolderSettings-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowPinnedFolderSettings-Applicability-End -->
 
 <!-- AllowPinnedFolderSettings-OmaUri-Begin -->
@@ -449,7 +449,7 @@ This policy controls the visibility of the Settings shortcut on the Start menu. 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 65535 |
 <!-- AllowPinnedFolderSettings-DFProperties-End -->
@@ -476,7 +476,7 @@ This policy controls the visibility of the Settings shortcut on the Start menu. 
 <!-- AllowPinnedFolderVideos-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowPinnedFolderVideos-Applicability-End -->
 
 <!-- AllowPinnedFolderVideos-OmaUri-Begin -->
@@ -499,7 +499,7 @@ This policy controls the visibility of the Videos shortcut on the Start menu. Th
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 65535 |
 <!-- AllowPinnedFolderVideos-DFProperties-End -->
@@ -526,7 +526,7 @@ This policy controls the visibility of the Videos shortcut on the Start menu. Th
 <!-- ConfigureStartPins-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ConfigureStartPins-Applicability-End -->
 
 <!-- ConfigureStartPins-OmaUri-Begin -->
@@ -559,7 +559,7 @@ This string policy takes a JSON file named `LayoutModification.json`. The file e
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ConfigureStartPins-DFProperties-End -->
 
@@ -584,7 +584,7 @@ This string policy takes a JSON file named `LayoutModification.json`. The file e
 <!-- DisableContextMenus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- DisableContextMenus-Applicability-End -->
 
 <!-- DisableContextMenus-OmaUri-Begin -->
@@ -601,7 +601,7 @@ This string policy takes a JSON file named `LayoutModification.json`. The file e
 <!-- Description-Source-ADMX -->
 This policy allows you to prevent users from being able to open context menus in the Start Menu.
 
-- If you enable this policy, then invocations of context menus within the Start Menu will be ignored.
+If you enable this policy, then invocations of context menus within the Start Menu will be ignored.
 <!-- DisableContextMenus-Description-End -->
 
 <!-- DisableContextMenus-Editable-Begin -->
@@ -613,7 +613,7 @@ This policy allows you to prevent users from being able to open context menus in
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DisableContextMenus-DFProperties-End -->
@@ -623,7 +623,7 @@ This policy allows you to prevent users from being able to open context menus in
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Do not disable. |
+| 0 (Default) | Don't disable. |
 | 1 | Disable. |
 <!-- DisableContextMenus-AllowedValues-End -->
 
@@ -653,7 +653,7 @@ This policy allows you to prevent users from being able to open context menus in
 <!-- DisableControlCenter-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- DisableControlCenter-Applicability-End -->
 
 <!-- DisableControlCenter-OmaUri-Begin -->
@@ -668,7 +668,7 @@ This policy setting removes Quick Settings from the bottom right area on the tas
 
 The quick settings area is located at the left of the clock in the taskbar and includes icons for current network and volume.
 
-- If this setting is enabled, Quick Settings is not displayed in the quick settings area.
+If this setting is enabled, Quick Settings isn't displayed in the quick settings area.
 
 A reboot is required for this policy setting to take effect.
 <!-- DisableControlCenter-Description-End -->
@@ -682,7 +682,7 @@ A reboot is required for this policy setting to take effect.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableControlCenter-DFProperties-End -->
 
@@ -721,7 +721,7 @@ A reboot is required for this policy setting to take effect.
 <!-- DisableEditingQuickSettings-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- DisableEditingQuickSettings-Applicability-End -->
 
 <!-- DisableEditingQuickSettings-OmaUri-Begin -->
@@ -732,6 +732,7 @@ A reboot is required for this policy setting to take effect.
 
 <!-- DisableEditingQuickSettings-Description-Begin -->
 <!-- Description-Source-ADMX -->
+
 - If you enable this policy, the user will be unable to modify Quick Settings.
 
 - If you disable or don't configure this policy setting, the user will be able to edit Quick Settings, such as pinning or unpinning buttons.
@@ -746,7 +747,7 @@ A reboot is required for this policy setting to take effect.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DisableEditingQuickSettings-DFProperties-End -->
@@ -786,7 +787,7 @@ A reboot is required for this policy setting to take effect.
 <!-- ForceStartSize-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- ForceStartSize-Applicability-End -->
 
 <!-- ForceStartSize-OmaUri-Begin -->
@@ -801,6 +802,7 @@ A reboot is required for this policy setting to take effect.
 
 <!-- ForceStartSize-Description-Begin -->
 <!-- Description-Source-ADMX -->
+
 - If you enable this policy and set it to Start menu or full screen Start, Start will be that size and users will be unable to change the size of Start in Settings.
 
 - If you disable or don't configure this policy setting, Windows will automatically select the size based on hardware form factor and users will be able to change the size of Start in Settings.
@@ -817,7 +819,7 @@ If there's a policy configuration conflict, the latest configuration request is 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- ForceStartSize-DFProperties-End -->
@@ -827,7 +829,7 @@ If there's a policy configuration conflict, the latest configuration request is 
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Do not force size of Start. |
+| 0 (Default) | Don't force size of Start. |
 | 1 | Force non-fullscreen size of Start. |
 | 2 | Force a fullscreen size of Start. |
 <!-- ForceStartSize-AllowedValues-End -->
@@ -857,7 +859,7 @@ If there's a policy configuration conflict, the latest configuration request is 
 <!-- HideAppList-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- HideAppList-Applicability-End -->
 
 <!-- HideAppList-OmaUri-Begin -->
@@ -901,7 +903,7 @@ To validate this policy, do the following steps:
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- HideAppList-DFProperties-End -->
@@ -929,7 +931,7 @@ To validate this policy, do the following steps:
 <!-- HideChangeAccountSettings-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- HideChangeAccountSettings-Applicability-End -->
 
 <!-- HideChangeAccountSettings-OmaUri-Begin -->
@@ -952,7 +954,7 @@ Enabling this policy hides "Change account settings" from appearing in the user 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- HideChangeAccountSettings-DFProperties-End -->
@@ -962,7 +964,7 @@ Enabling this policy hides "Change account settings" from appearing in the user 
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Do not hide. |
+| 0 (Default) | Don't hide. |
 | 1 | Hide. |
 <!-- HideChangeAccountSettings-AllowedValues-End -->
 
@@ -978,7 +980,7 @@ Enabling this policy hides "Change account settings" from appearing in the user 
 <!-- HideFrequentlyUsedApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- HideFrequentlyUsedApps-Applicability-End -->
 
 <!-- HideFrequentlyUsedApps-OmaUri-Begin -->
@@ -993,9 +995,10 @@ Enabling this policy hides "Change account settings" from appearing in the user 
 
 <!-- HideFrequentlyUsedApps-Description-Begin -->
 <!-- Description-Source-ADMX -->
+
 - If you enable this setting, the frequently used programs list is removed from the Start menu.
 
-- If you disable this setting or do not configure it, the frequently used programs list remains on the simple Start menu.
+- If you disable this setting or don't configure it, the frequently used programs list remains on the simple Start menu.
 <!-- HideFrequentlyUsedApps-Description-End -->
 
 <!-- HideFrequentlyUsedApps-Editable-Begin -->
@@ -1019,7 +1022,7 @@ To validate this policy, do the following steps:
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- HideFrequentlyUsedApps-DFProperties-End -->
@@ -1029,7 +1032,7 @@ To validate this policy, do the following steps:
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Do not hide. |
+| 0 (Default) | Don't hide. |
 | 1 | Hide. |
 <!-- HideFrequentlyUsedApps-AllowedValues-End -->
 
@@ -1059,7 +1062,7 @@ To validate this policy, do the following steps:
 <!-- HideHibernate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- HideHibernate-Applicability-End -->
 
 <!-- HideHibernate-OmaUri-Begin -->
@@ -1085,7 +1088,7 @@ Enabling this policy hides "Hibernate" from appearing in the power button in the
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- HideHibernate-DFProperties-End -->
@@ -1095,7 +1098,7 @@ Enabling this policy hides "Hibernate" from appearing in the power button in the
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Do not hide. |
+| 0 (Default) | Don't hide. |
 | 1 | Hide. |
 <!-- HideHibernate-AllowedValues-End -->
 
@@ -1111,7 +1114,7 @@ Enabling this policy hides "Hibernate" from appearing in the power button in the
 <!-- HideLock-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- HideLock-Applicability-End -->
 
 <!-- HideLock-OmaUri-Begin -->
@@ -1134,7 +1137,7 @@ Enabling this policy hides "Lock" from appearing in the user tile in the start m
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 | Dependency [Start_HideLock_DependencyGroup] | Dependency Type: `DependsOn` <br> Dependency URI: `Device/Vendor/MSFT/Policy/Config/Start/HideUserTile` <br> Dependency Allowed Value: `[0]` <br> Dependency Allowed Value Type: `Range` <br>  |
@@ -1145,7 +1148,7 @@ Enabling this policy hides "Lock" from appearing in the user tile in the start m
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Do not hide. |
+| 0 (Default) | Don't hide. |
 | 1 | Hide. |
 <!-- HideLock-AllowedValues-End -->
 
@@ -1161,7 +1164,7 @@ Enabling this policy hides "Lock" from appearing in the user tile in the start m
 <!-- HidePeopleBar-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- HidePeopleBar-Applicability-End -->
 
 <!-- HidePeopleBar-OmaUri-Begin -->
@@ -1174,7 +1177,7 @@ Enabling this policy hides "Lock" from appearing in the user tile in the start m
 <!-- Description-Source-ADMX -->
 This policy allows you to remove the People Bar from the taskbar and disables the My People experience.
 
-- If you enable this policy the people icon will be removed from the taskbar, the corresponding settings toggle is removed from the taskbar settings page, and users will not be able to pin people to the taskbar.
+If you enable this policy the people icon will be removed from the taskbar, the corresponding settings toggle is removed from the taskbar settings page, and users won't be able to pin people to the taskbar.
 <!-- HidePeopleBar-Description-End -->
 
 <!-- HidePeopleBar-Editable-Begin -->
@@ -1186,7 +1189,7 @@ This policy allows you to remove the People Bar from the taskbar and disables th
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- HidePeopleBar-DFProperties-End -->
@@ -1196,7 +1199,7 @@ This policy allows you to remove the People Bar from the taskbar and disables th
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Do not hide. |
+| 0 (Default) | Don't hide. |
 | 1 | Hide. |
 <!-- HidePeopleBar-AllowedValues-End -->
 
@@ -1226,7 +1229,7 @@ This policy allows you to remove the People Bar from the taskbar and disables th
 <!-- HidePowerButton-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- HidePowerButton-Applicability-End -->
 
 <!-- HidePowerButton-OmaUri-Begin -->
@@ -1252,7 +1255,7 @@ Enabling this policy hides the power button from appearing in the start menu.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- HidePowerButton-DFProperties-End -->
@@ -1262,7 +1265,7 @@ Enabling this policy hides the power button from appearing in the start menu.
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Do not hide. |
+| 0 (Default) | Don't hide. |
 | 1 | Hide. |
 <!-- HidePowerButton-AllowedValues-End -->
 
@@ -1278,7 +1281,7 @@ Enabling this policy hides the power button from appearing in the start menu.
 <!-- HideRecentJumplists-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- HideRecentJumplists-Applicability-End -->
 
 <!-- HideRecentJumplists-OmaUri-Begin -->
@@ -1320,7 +1323,7 @@ To validate this policy, do the following steps:
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- HideRecentJumplists-DFProperties-End -->
@@ -1330,7 +1333,7 @@ To validate this policy, do the following steps:
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Do not hide. |
+| 0 (Default) | Don't hide. |
 | 1 | Hide. |
 <!-- HideRecentJumplists-AllowedValues-End -->
 
@@ -1346,7 +1349,7 @@ To validate this policy, do the following steps:
 <!-- HideRecentlyAddedApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- HideRecentlyAddedApps-Applicability-End -->
 
 <!-- HideRecentlyAddedApps-OmaUri-Begin -->
@@ -1363,7 +1366,7 @@ To validate this policy, do the following steps:
 <!-- Description-Source-ADMX -->
 This policy allows you to prevent the Start Menu from displaying a list of recently installed applications.
 
-- If you enable this policy, the Start Menu will no longer display the "Recently added" list. The corresponding setting will also be disabled in Settings.
+If you enable this policy, the Start Menu will no longer display the "Recently added" list. The corresponding setting will also be disabled in Settings.
 <!-- HideRecentlyAddedApps-Description-End -->
 
 <!-- HideRecentlyAddedApps-Editable-Begin -->
@@ -1387,7 +1390,7 @@ To validate this policy, do the following steps:
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- HideRecentlyAddedApps-DFProperties-End -->
@@ -1397,7 +1400,7 @@ To validate this policy, do the following steps:
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Do not hide. |
+| 0 (Default) | Don't hide. |
 | 1 | Hide. |
 <!-- HideRecentlyAddedApps-AllowedValues-End -->
 
@@ -1421,13 +1424,80 @@ To validate this policy, do the following steps:
 
 <!-- HideRecentlyAddedApps-End -->
 
+<!-- HideRecommendedPersonalizedSites-Begin -->
+## HideRecommendedPersonalizedSites
+
+<!-- HideRecommendedPersonalizedSites-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.1928] and later |
+<!-- HideRecommendedPersonalizedSites-Applicability-End -->
+
+<!-- HideRecommendedPersonalizedSites-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/Start/HideRecommendedPersonalizedSites
+```
+
+```Device
+./Device/Vendor/MSFT/Policy/Config/Start/HideRecommendedPersonalizedSites
+```
+<!-- HideRecommendedPersonalizedSites-OmaUri-End -->
+
+<!-- HideRecommendedPersonalizedSites-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Remove Personalized Website Recommendations from the Recommended section in the Start Menu.
+<!-- HideRecommendedPersonalizedSites-Description-End -->
+
+<!-- HideRecommendedPersonalizedSites-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- HideRecommendedPersonalizedSites-Editable-End -->
+
+<!-- HideRecommendedPersonalizedSites-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- HideRecommendedPersonalizedSites-DFProperties-End -->
+
+<!-- HideRecommendedPersonalizedSites-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Personalized Website Recommendations shown. |
+| 1 | Personalized Website Recommendations hidden. |
+<!-- HideRecommendedPersonalizedSites-AllowedValues-End -->
+
+<!-- HideRecommendedPersonalizedSites-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | HideRecommendedPersonalizedSites |
+| Friendly Name | Remove Personalized Website Recommendations from the Recommended section in the Start Menu |
+| Location | Computer and User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
+| Registry Value Name | HideRecommendedPersonalizedSites |
+| ADMX File Name | StartMenu.admx |
+<!-- HideRecommendedPersonalizedSites-GpMapping-End -->
+
+<!-- HideRecommendedPersonalizedSites-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- HideRecommendedPersonalizedSites-Examples-End -->
+
+<!-- HideRecommendedPersonalizedSites-End -->
+
 <!-- HideRecommendedSection-Begin -->
 ## HideRecommendedSection
 
 <!-- HideRecommendedSection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- HideRecommendedSection-Applicability-End -->
 
 <!-- HideRecommendedSection-OmaUri-Begin -->
@@ -1444,7 +1514,7 @@ To validate this policy, do the following steps:
 <!-- Description-Source-ADMX -->
 This policy allows you to prevent the Start Menu from displaying a list of recommended applications and files.
 
-- If you enable this policy setting, the Start Menu will no longer show the section containing a list of recommended files and apps.
+If you enable this policy setting, the Start Menu will no longer show the section containing a list of recommended files and apps.
 <!-- HideRecommendedSection-Description-End -->
 
 <!-- HideRecommendedSection-Editable-Begin -->
@@ -1456,7 +1526,7 @@ This policy allows you to prevent the Start Menu from displaying a list of recom
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- HideRecommendedSection-DFProperties-End -->
@@ -1496,7 +1566,7 @@ This policy allows you to prevent the Start Menu from displaying a list of recom
 <!-- HideRestart-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- HideRestart-Applicability-End -->
 
 <!-- HideRestart-OmaUri-Begin -->
@@ -1519,7 +1589,7 @@ Enabling this policy hides "Restart/Update and restart" from appearing in the po
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- HideRestart-DFProperties-End -->
@@ -1529,7 +1599,7 @@ Enabling this policy hides "Restart/Update and restart" from appearing in the po
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Do not hide. |
+| 0 (Default) | Don't hide. |
 | 1 | Hide. |
 <!-- HideRestart-AllowedValues-End -->
 
@@ -1545,7 +1615,7 @@ Enabling this policy hides "Restart/Update and restart" from appearing in the po
 <!-- HideShutDown-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- HideShutDown-Applicability-End -->
 
 <!-- HideShutDown-OmaUri-Begin -->
@@ -1568,7 +1638,7 @@ Enabling this policy hides "Shut down/Update and shut down" from appearing in th
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- HideShutDown-DFProperties-End -->
@@ -1578,7 +1648,7 @@ Enabling this policy hides "Shut down/Update and shut down" from appearing in th
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Do not hide. |
+| 0 (Default) | Don't hide. |
 | 1 | Hide. |
 <!-- HideShutDown-AllowedValues-End -->
 
@@ -1594,7 +1664,7 @@ Enabling this policy hides "Shut down/Update and shut down" from appearing in th
 <!-- HideSignOut-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- HideSignOut-Applicability-End -->
 
 <!-- HideSignOut-OmaUri-Begin -->
@@ -1617,7 +1687,7 @@ Enabling this policy hides "Sign out" from appearing in the user tile in the sta
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 | Dependency [Start_HideSignOut_DependencyGroup] | Dependency Type: `DependsOn` <br> Dependency URI: `Device/Vendor/MSFT/Policy/Config/Start/HideUserTile` <br> Dependency Allowed Value: `[0]` <br> Dependency Allowed Value Type: `Range` <br>  |
@@ -1628,7 +1698,7 @@ Enabling this policy hides "Sign out" from appearing in the user tile in the sta
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Do not hide. |
+| 0 (Default) | Don't hide. |
 | 1 | Hide. |
 <!-- HideSignOut-AllowedValues-End -->
 
@@ -1644,7 +1714,7 @@ Enabling this policy hides "Sign out" from appearing in the user tile in the sta
 <!-- HideSleep-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- HideSleep-Applicability-End -->
 
 <!-- HideSleep-OmaUri-Begin -->
@@ -1667,7 +1737,7 @@ Enabling this policy hides "Sleep" from appearing in the power button in the sta
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- HideSleep-DFProperties-End -->
@@ -1677,7 +1747,7 @@ Enabling this policy hides "Sleep" from appearing in the power button in the sta
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Do not hide. |
+| 0 (Default) | Don't hide. |
 | 1 | Hide. |
 <!-- HideSleep-AllowedValues-End -->
 
@@ -1693,7 +1763,7 @@ Enabling this policy hides "Sleep" from appearing in the power button in the sta
 <!-- HideSwitchAccount-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- HideSwitchAccount-Applicability-End -->
 
 <!-- HideSwitchAccount-OmaUri-Begin -->
@@ -1716,7 +1786,7 @@ Enabling this policy hides "Switch account" from appearing in the user tile in t
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- HideSwitchAccount-DFProperties-End -->
@@ -1726,7 +1796,7 @@ Enabling this policy hides "Switch account" from appearing in the user tile in t
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Do not hide. |
+| 0 (Default) | Don't hide. |
 | 1 | Hide. |
 <!-- HideSwitchAccount-AllowedValues-End -->
 
@@ -1742,7 +1812,7 @@ Enabling this policy hides "Switch account" from appearing in the user tile in t
 <!-- HideTaskViewButton-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- HideTaskViewButton-Applicability-End -->
 
 <!-- HideTaskViewButton-OmaUri-Begin -->
@@ -1759,7 +1829,7 @@ Enabling this policy hides "Switch account" from appearing in the user tile in t
 <!-- Description-Source-ADMX -->
 This policy setting allows you to hide the TaskView button.
 
-- If you enable this policy setting, the TaskView button will be hidden and the Settings toggle will be disabled.
+If you enable this policy setting, the TaskView button will be hidden and the Settings toggle will be disabled.
 <!-- HideTaskViewButton-Description-End -->
 
 <!-- HideTaskViewButton-Editable-Begin -->
@@ -1771,7 +1841,7 @@ This policy setting allows you to hide the TaskView button.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- HideTaskViewButton-DFProperties-End -->
@@ -1811,7 +1881,7 @@ This policy setting allows you to hide the TaskView button.
 <!-- HideUserTile-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- HideUserTile-Applicability-End -->
 
 <!-- HideUserTile-OmaUri-Begin -->
@@ -1837,7 +1907,7 @@ Enabling this policy hides the user tile from appearing in the start menu.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- HideUserTile-DFProperties-End -->
@@ -1847,7 +1917,7 @@ Enabling this policy hides the user tile from appearing in the start menu.
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Do not hide. |
+| 0 (Default) | Don't hide. |
 | 1 | Hide. |
 <!-- HideUserTile-AllowedValues-End -->
 
@@ -1863,7 +1933,7 @@ Enabling this policy hides the user tile from appearing in the start menu.
 <!-- ImportEdgeAssets-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- ImportEdgeAssets-Applicability-End -->
 
 <!-- ImportEdgeAssets-OmaUri-Begin -->
@@ -1874,7 +1944,7 @@ Enabling this policy hides the user tile from appearing in the start menu.
 
 <!-- ImportEdgeAssets-Description-Begin -->
 <!-- Description-Source-DDF -->
-This policy setting allows you to import Edge assets to be used with StartLayout policy. Start layout can contain secondary tile from Edge app which looks for Edge local asset file. Edge local asset would not exist and cause Edge secondary tile to appear empty in this case. This policy only gets applied when StartLayout policy is modified.
+This policy setting allows you to import Edge assets to be used with StartLayout policy. Start layout can contain secondary tile from Edge app which looks for Edge local asset file. Edge local asset wouldn't exist and cause Edge secondary tile to appear empty in this case. This policy only gets applied when StartLayout policy is modified.
 <!-- ImportEdgeAssets-Description-End -->
 
 <!-- ImportEdgeAssets-Editable-Begin -->
@@ -1903,7 +1973,7 @@ To validate this policy, do the following steps:
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ImportEdgeAssets-DFProperties-End -->
 
@@ -1919,7 +1989,7 @@ To validate this policy, do the following steps:
 <!-- NoPinningToTaskbar-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- NoPinningToTaskbar-Applicability-End -->
 
 <!-- NoPinningToTaskbar-OmaUri-Begin -->
@@ -1931,8 +2001,10 @@ To validate this policy, do the following steps:
 <!-- NoPinningToTaskbar-Description-Begin -->
 <!-- Description-Source-DDF -->
 This policy setting allows you to control pinning programs to the Taskbar.
-- If you enable this policy setting, users cannot change the programs currently pinned to the Taskbar. If any programs are already pinned to the Taskbar, these programs continue to show in the Taskbar. However, users cannot unpin these programs already pinned to the Taskbar, and they cannot pin new programs to the Taskbar.
-- If you disable or do not configure this policy setting, users can change the programs currently pinned to the Taskbar.
+
+- If you enable this policy setting, users can't change the programs currently pinned to the Taskbar. If any programs are already pinned to the Taskbar, these programs continue to show in the Taskbar. However, users can't unpin these programs already pinned to the Taskbar, and they can't pin new programs to the Taskbar.
+
+- If you disable or don't configure this policy setting, users can change the programs currently pinned to the Taskbar.
 <!-- NoPinningToTaskbar-Description-End -->
 
 <!-- NoPinningToTaskbar-Editable-Begin -->
@@ -1952,7 +2024,7 @@ To validate this policy, do the following steps:
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- NoPinningToTaskbar-DFProperties-End -->
@@ -1978,7 +2050,7 @@ To validate this policy, do the following steps:
 <!-- ShowOrHideMostUsedApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ShowOrHideMostUsedApps-Applicability-End -->
 
 <!-- ShowOrHideMostUsedApps-OmaUri-Begin -->
@@ -1993,15 +2065,15 @@ To validate this policy, do the following steps:
 
 <!-- ShowOrHideMostUsedApps-Description-Begin -->
 <!-- Description-Source-ADMX -->
-- If you enable this policy setting, you can configure Start menu to show or hide the list of user's most used apps, regardless of user settings.
+If you enable this policy setting, you can configure Start menu to show or hide the list of user's most used apps, regardless of user settings.
 
-Selecting "Show" will force the "Most used" list to be shown, and user cannot change to hide it using the Settings app.
+Selecting "Show" will force the "Most used" list to be shown, and user can't change to hide it using the Settings app.
 
-Selecting "Hide" will force the "Most used" list to be hidden, and user cannot change to show it using the Settings app.
+Selecting "Hide" will force the "Most used" list to be hidden, and user can't change to show it using the Settings app.
 
-Selecting "Not Configured", or if you disable or do not configure this policy setting, all will allow users to turn on or off the display of "Most used" list using the Settings app. This is default behavior.
+Selecting "Not Configured", or if you disable or don't configure this policy setting, all will allow users to turn on or off the display of "Most used" list using the Settings app. This is default behavior.
 
-**Note** configuring this policy to "Show" or "Hide" on supported versions of Windows 10 will supercede any policy setting of "Remove frequent programs list from the Start Menu" (which manages same part of Start menu but with fewer options).
+Note configuring this policy to "Show" or "Hide" on supported versions of Windows 10 will supercede any policy setting of "Remove frequent programs list from the Start Menu" (which manages same part of Start menu but with fewer options).
 <!-- ShowOrHideMostUsedApps-Description-End -->
 
 <!-- ShowOrHideMostUsedApps-Editable-Begin -->
@@ -2013,7 +2085,7 @@ Selecting "Not Configured", or if you disable or do not configure this policy se
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- ShowOrHideMostUsedApps-DFProperties-End -->
@@ -2023,7 +2095,7 @@ Selecting "Not Configured", or if you disable or do not configure this policy se
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Do not enforce visibility of list of most used apps in Start; user can control via Settings app (default behavior equivalent to not configuring this policy). |
+| 0 (Default) | Don't enforce visibility of list of most used apps in Start; user can control via Settings app (default behavior equivalent to not configuring this policy). |
 | 1 | Force showing of list of most used apps in Start; corresponding toggle in Setting app is disabled. |
 | 2 | Force hiding of list of most used apps in Start; corresponding toggle in Setting app is disabled. |
 <!-- ShowOrHideMostUsedApps-AllowedValues-End -->
@@ -2053,7 +2125,7 @@ Selecting "Not Configured", or if you disable or do not configure this policy se
 <!-- SimplifyQuickSettings-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- SimplifyQuickSettings-Applicability-End -->
 
 <!-- SimplifyQuickSettings-OmaUri-Begin -->
@@ -2064,6 +2136,7 @@ Selecting "Not Configured", or if you disable or do not configure this policy se
 
 <!-- SimplifyQuickSettings-Description-Begin -->
 <!-- Description-Source-ADMX -->
+
 - If you enable this policy, Quick Settings will be reduced to only having the WiFi, Bluetooth, Accessibility, and VPN buttons; the brightness and volume sliders; and battery indicator and link to the Settings app.
 
 - If you disable or don't configure this policy setting, the regular Quick Settings layout will appear whenever Quick Settings is invoked.
@@ -2078,7 +2151,7 @@ Selecting "Not Configured", or if you disable or do not configure this policy se
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- SimplifyQuickSettings-DFProperties-End -->
@@ -2118,7 +2191,7 @@ Selecting "Not Configured", or if you disable or do not configure this policy se
 <!-- StartLayout-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- StartLayout-Applicability-End -->
 
 <!-- StartLayout-OmaUri-Begin -->
@@ -2136,11 +2209,12 @@ Selecting "Not Configured", or if you disable or do not configure this policy se
 Specifies the Start layout for users.
 
 This setting lets you specify the Start layout for users and prevents them from changing its configuration. The Start layout you specify must be stored in an XML file that was generated by the Export-StartLayout PowerShell cmdlet.
+
 To use this setting, you must first manually configure a device's Start layout to the desired look and feel. Once you are done, run the Export-StartLayout PowerShell cmdlet on that same device. The cmdlet will generate an XML file representing the layout you configured.
 
-Once the XML file is generated and moved to the desired file path, type the fully qualified path and name of the XML file. You can type a local path, such as C:\StartLayouts\myLayout.xml or a UNC path, such as \\Server\Share\Layout.xml. If the specified file is not available when the user logs on, the layout won't be changed. Users cannot customize their Start screen while this setting is enabled.
+Once the XML file is generated and moved to the desired file path, type the fully qualified path and name of the XML file. You can type a local path, such as C:\StartLayouts\myLayout.xml or a UNC path, such as \\Server\Share\Layout.xml. If the specified file isn't available when the user logs on, the layout won't be changed. Users can't customize their Start screen while this setting is enabled.
 
-- If you disable this setting or do not configure it, the Start screen layout won't be changed and users will be able to customize it.
+If you disable this setting or don't configure it, the Start screen layout won't be changed and users will be able to customize it.
 <!-- StartLayout-Description-End -->
 
 <!-- StartLayout-Editable-Begin -->
@@ -2156,7 +2230,7 @@ For more information on how to customize the Start layout, see [Customize the St
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- StartLayout-DFProperties-End -->
 

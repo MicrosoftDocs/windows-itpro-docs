@@ -4,7 +4,7 @@ description: Learn more about the TextInput Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -26,7 +26,7 @@ ms.topic: reference
 <!-- AllowHardwareKeyboardTextSuggestions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- AllowHardwareKeyboardTextSuggestions-Applicability-End -->
 
 <!-- AllowHardwareKeyboardTextSuggestions-OmaUri-Begin -->
@@ -37,7 +37,7 @@ ms.topic: reference
 
 <!-- AllowHardwareKeyboardTextSuggestions-Description-Begin -->
 <!-- Description-Source-DDF -->
-Placeholder only. Do not use in production environment.
+Placeholder only. Don't use in production environment.
 <!-- AllowHardwareKeyboardTextSuggestions-Description-End -->
 
 <!-- AllowHardwareKeyboardTextSuggestions-Editable-Begin -->
@@ -49,7 +49,7 @@ Placeholder only. Do not use in production environment.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowHardwareKeyboardTextSuggestions-DFProperties-End -->
@@ -75,7 +75,7 @@ Placeholder only. Do not use in production environment.
 <!-- AllowIMELogging-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowIMELogging-Applicability-End -->
 
 <!-- AllowIMELogging-OmaUri-Begin -->
@@ -86,8 +86,7 @@ Placeholder only. Do not use in production environment.
 
 <!-- AllowIMELogging-Description-Begin -->
 <!-- Description-Source-DDF -->
-> [!NOTE]
-> The policy is only enforced in Windows 10 for desktop. Allows the user to turn on and off the logging for incorrect conversion and saving auto-tuning result to a file and history-based predictive input. Most restricted value is 0.
+Allows the user to turn on and off the logging for incorrect conversion and saving auto-tuning result to a file and history-based predictive input. Most restricted value is 0.
 <!-- AllowIMELogging-Description-End -->
 
 <!-- AllowIMELogging-Editable-Begin -->
@@ -99,7 +98,7 @@ Placeholder only. Do not use in production environment.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowIMELogging-DFProperties-End -->
@@ -125,7 +124,7 @@ Placeholder only. Do not use in production environment.
 <!-- AllowIMENetworkAccess-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowIMENetworkAccess-Applicability-End -->
 
 <!-- AllowIMENetworkAccess-OmaUri-Begin -->
@@ -136,7 +135,7 @@ Placeholder only. Do not use in production environment.
 
 <!-- AllowIMENetworkAccess-Description-Begin -->
 <!-- Description-Source-DDF -->
-Allows the user to turn on Open Extended Dictionary, Internet search integration, or cloud candidate features to provide input suggestions that do not exist in the device's local dictionary. Most restricted value is 0. In Windows 10, version 1803, we introduced new suggestion services in Japanese IME in addition to cloud suggestion. When AllowIMENetworkAccess is set to 1, all suggestion services are available as predictive input.
+Allows the user to turn on Open Extended Dictionary, Internet search integration, or cloud candidate features to provide input suggestions that don't exist in the device's local dictionary. Most restricted value is 0. In Windows 10, version 1803, we introduced new suggestion services in Japanese IME in addition to cloud suggestion. When AllowIMENetworkAccess is set to 1, all suggestion services are available as predictive input.
 <!-- AllowIMENetworkAccess-Description-End -->
 
 <!-- AllowIMENetworkAccess-Editable-Begin -->
@@ -148,7 +147,7 @@ Allows the user to turn on Open Extended Dictionary, Internet search integration
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowIMENetworkAccess-DFProperties-End -->
@@ -174,7 +173,7 @@ Allows the user to turn on Open Extended Dictionary, Internet search integration
 <!-- AllowInputPanel-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowInputPanel-Applicability-End -->
 
 <!-- AllowInputPanel-OmaUri-Begin -->
@@ -185,8 +184,7 @@ Allows the user to turn on Open Extended Dictionary, Internet search integration
 
 <!-- AllowInputPanel-Description-Begin -->
 <!-- Description-Source-DDF -->
-> [!NOTE]
-> The policy is only enforced in Windows 10 for desktop. Allows the IT admin to disable the touch/handwriting keyboard on Windows. Most restricted value is 0.
+Allows the IT admin to disable the touch/handwriting keyboard on Windows. Most restricted value is 0.
 <!-- AllowInputPanel-Description-End -->
 
 <!-- AllowInputPanel-Editable-Begin -->
@@ -198,7 +196,7 @@ Allows the user to turn on Open Extended Dictionary, Internet search integration
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowInputPanel-DFProperties-End -->
@@ -224,7 +222,7 @@ Allows the user to turn on Open Extended Dictionary, Internet search integration
 <!-- AllowJapaneseIMESurrogatePairCharacters-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowJapaneseIMESurrogatePairCharacters-Applicability-End -->
 
 <!-- AllowJapaneseIMESurrogatePairCharacters-OmaUri-Begin -->
@@ -235,8 +233,7 @@ Allows the user to turn on Open Extended Dictionary, Internet search integration
 
 <!-- AllowJapaneseIMESurrogatePairCharacters-Description-Begin -->
 <!-- Description-Source-DDF -->
-> [!NOTE]
-> The policy is only enforced in Windows 10 for desktop. Allows the Japanese IME surrogate pair characters. Most restricted value is 0.
+Allows the Japanese IME surrogate pair characters. Most restricted value is 0.
 <!-- AllowJapaneseIMESurrogatePairCharacters-Description-End -->
 
 <!-- AllowJapaneseIMESurrogatePairCharacters-Editable-Begin -->
@@ -248,7 +245,7 @@ Allows the user to turn on Open Extended Dictionary, Internet search integration
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowJapaneseIMESurrogatePairCharacters-DFProperties-End -->
@@ -274,7 +271,7 @@ Allows the user to turn on Open Extended Dictionary, Internet search integration
 <!-- AllowJapaneseIVSCharacters-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowJapaneseIVSCharacters-Applicability-End -->
 
 <!-- AllowJapaneseIVSCharacters-OmaUri-Begin -->
@@ -285,8 +282,7 @@ Allows the user to turn on Open Extended Dictionary, Internet search integration
 
 <!-- AllowJapaneseIVSCharacters-Description-Begin -->
 <!-- Description-Source-DDF -->
-> [!NOTE]
-> The policy is only enforced in Windows 10 for desktop. Allows Japanese Ideographic Variation Sequence (IVS) characters. Most restricted value is 0.
+Allows Japanese Ideographic Variation Sequence (IVS) characters. Most restricted value is 0.
 <!-- AllowJapaneseIVSCharacters-Description-End -->
 
 <!-- AllowJapaneseIVSCharacters-Editable-Begin -->
@@ -298,7 +294,7 @@ Allows the user to turn on Open Extended Dictionary, Internet search integration
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowJapaneseIVSCharacters-DFProperties-End -->
@@ -324,7 +320,7 @@ Allows the user to turn on Open Extended Dictionary, Internet search integration
 <!-- AllowJapaneseNonPublishingStandardGlyph-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowJapaneseNonPublishingStandardGlyph-Applicability-End -->
 
 <!-- AllowJapaneseNonPublishingStandardGlyph-OmaUri-Begin -->
@@ -335,8 +331,7 @@ Allows the user to turn on Open Extended Dictionary, Internet search integration
 
 <!-- AllowJapaneseNonPublishingStandardGlyph-Description-Begin -->
 <!-- Description-Source-DDF -->
-> [!NOTE]
-> The policy is only enforced in Windows 10 for desktop. Allows the Japanese non-publishing standard glyph. Most restricted value is 0.
+Allows the Japanese non-publishing standard glyph. Most restricted value is 0.
 <!-- AllowJapaneseNonPublishingStandardGlyph-Description-End -->
 
 <!-- AllowJapaneseNonPublishingStandardGlyph-Editable-Begin -->
@@ -348,7 +343,7 @@ Allows the user to turn on Open Extended Dictionary, Internet search integration
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowJapaneseNonPublishingStandardGlyph-DFProperties-End -->
@@ -374,7 +369,7 @@ Allows the user to turn on Open Extended Dictionary, Internet search integration
 <!-- AllowJapaneseUserDictionary-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowJapaneseUserDictionary-Applicability-End -->
 
 <!-- AllowJapaneseUserDictionary-OmaUri-Begin -->
@@ -385,8 +380,7 @@ Allows the user to turn on Open Extended Dictionary, Internet search integration
 
 <!-- AllowJapaneseUserDictionary-Description-Begin -->
 <!-- Description-Source-DDF -->
-> [!NOTE]
-> The policy is only enforced in Windows 10 for desktop. Allows the Japanese user dictionary. Most restricted value is 0.
+Allows the Japanese user dictionary. Most restricted value is 0.
 <!-- AllowJapaneseUserDictionary-Description-End -->
 
 <!-- AllowJapaneseUserDictionary-Editable-Begin -->
@@ -398,7 +392,7 @@ Allows the user to turn on Open Extended Dictionary, Internet search integration
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowJapaneseUserDictionary-DFProperties-End -->
@@ -424,7 +418,7 @@ Allows the user to turn on Open Extended Dictionary, Internet search integration
 <!-- AllowKeyboardTextSuggestions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowKeyboardTextSuggestions-Applicability-End -->
 
 <!-- AllowKeyboardTextSuggestions-OmaUri-Begin -->
@@ -435,8 +429,7 @@ Allows the user to turn on Open Extended Dictionary, Internet search integration
 
 <!-- AllowKeyboardTextSuggestions-Description-Begin -->
 <!-- Description-Source-DDF -->
-> [!NOTE]
-> The policy is only enforced in Windows 10 for desktop. Specifies whether text prediction is enabled or disabled for the on-screen keyboard, touch keyboard, and handwriting recognition tool. When this policy is set to disabled, text prediction is disabled. Most restricted value is 0.
+ Specifies whether text prediction is enabled or disabled for the on-screen keyboard, touch keyboard, and handwriting recognition tool. When this policy is set to disabled, text prediction is disabled. Most restricted value is 0.
 <!-- AllowKeyboardTextSuggestions-Description-End -->
 
 <!-- AllowKeyboardTextSuggestions-Editable-Begin -->
@@ -453,7 +446,7 @@ To validate that text prediction is disabled on Windows 10 for desktop, do the f
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowKeyboardTextSuggestions-DFProperties-End -->
@@ -479,7 +472,7 @@ To validate that text prediction is disabled on Windows 10 for desktop, do the f
 <!-- AllowLanguageFeaturesUninstall-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowLanguageFeaturesUninstall-Applicability-End -->
 
 <!-- AllowLanguageFeaturesUninstall-OmaUri-Begin -->
@@ -502,7 +495,7 @@ When this policy setting is enabled, some language features (such as handwriting
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowLanguageFeaturesUninstall-DFProperties-End -->
@@ -542,7 +535,7 @@ When this policy setting is enabled, some language features (such as handwriting
 <!-- AllowLinguisticDataCollection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowLinguisticDataCollection-Applicability-End -->
 
 <!-- AllowLinguisticDataCollection-OmaUri-Begin -->
@@ -565,7 +558,7 @@ This policy setting controls the ability to send inking and typing data to Micro
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowLinguisticDataCollection-DFProperties-End -->
@@ -605,7 +598,7 @@ This policy setting controls the ability to send inking and typing data to Micro
 <!-- AllowTextInputSuggestionUpdate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AllowTextInputSuggestionUpdate-Applicability-End -->
 
 <!-- AllowTextInputSuggestionUpdate-OmaUri-Begin -->
@@ -616,7 +609,7 @@ This policy setting controls the ability to send inking and typing data to Micro
 
 <!-- AllowTextInputSuggestionUpdate-Description-Begin -->
 <!-- Description-Source-DDF -->
-Allows the user to turn on or off the automatic downloading of newer versions of the Expressive Input UI. When downloading is not allowed the Expressive Input panel will always display the initial UI included with the base Windows image. Most restricted value is 0. The following list shows the supported values: 0 - Not allowed. 1 (default) - Allowed.
+Allows the user to turn on or off the automatic downloading of newer versions of the Expressive Input UI. When downloading isn't allowed the Expressive Input panel will always display the initial UI included with the base Windows image. Most restricted value is 0. The following list shows the supported values: 0 - Not allowed. 1 (default) - Allowed.
 <!-- AllowTextInputSuggestionUpdate-Description-End -->
 
 <!-- AllowTextInputSuggestionUpdate-Editable-Begin -->
@@ -628,7 +621,7 @@ Allows the user to turn on or off the automatic downloading of newer versions of
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowTextInputSuggestionUpdate-DFProperties-End -->
@@ -654,7 +647,7 @@ Allows the user to turn on or off the automatic downloading of newer versions of
 <!-- ConfigureJapaneseIMEVersion-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- ConfigureJapaneseIMEVersion-Applicability-End -->
 
 <!-- ConfigureJapaneseIMEVersion-OmaUri-Begin -->
@@ -665,18 +658,18 @@ Allows the user to turn on or off the automatic downloading of newer versions of
 
 <!-- ConfigureJapaneseIMEVersion-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting controls the version of Microsoft IME. 
+This policy setting controls the version of Microsoft IME.
 
-- If you don't configure this policy setting, user can control IME version to use. The new Microsoft IME is on by default. 
+- If you don't configure this policy setting, user can control IME version to use. The new Microsoft IME is on by default.
 
-- If you enable this, user is not allowed to control IME version to use. The previous version of Microsoft IME is always selected. 
+- If you enable this, user isn't allowed to control IME version to use. The previous version of Microsoft IME is always selected.
 
-- If you disable this, user is not allowed to control IME version to use. The new Microsoft IME is always selected.
+- If you disable this, user isn't allowed to control IME version to use. The new Microsoft IME is always selected.
 
 This Policy setting applies only to Microsoft Japanese IME.
 
 > [!NOTE]
-> Changes to this setting will not take effect until the user logs off.
+> Changes to this setting won't take effect until the user logs off.
 <!-- ConfigureJapaneseIMEVersion-Description-End -->
 
 <!-- ConfigureJapaneseIMEVersion-Editable-Begin -->
@@ -688,7 +681,7 @@ This Policy setting applies only to Microsoft Japanese IME.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- ConfigureJapaneseIMEVersion-DFProperties-End -->
@@ -729,7 +722,7 @@ This Policy setting applies only to Microsoft Japanese IME.
 <!-- ConfigureKoreanIMEVersion-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ConfigureKoreanIMEVersion-Applicability-End -->
 
 <!-- ConfigureKoreanIMEVersion-OmaUri-Begin -->
@@ -740,18 +733,18 @@ This Policy setting applies only to Microsoft Japanese IME.
 
 <!-- ConfigureKoreanIMEVersion-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting controls the version of Microsoft IME. 
+This policy setting controls the version of Microsoft IME.
 
-- If you don't configure this policy setting, user can control IME version to use. The new Microsoft IME is on by default. 
+- If you don't configure this policy setting, user can control IME version to use. The new Microsoft IME is on by default.
 
-- If you enable this, user is not allowed to control IME version to use. The previous version of Microsoft IME is always selected. 
+- If you enable this, user isn't allowed to control IME version to use. The previous version of Microsoft IME is always selected.
 
-- If you disable this, user is not allowed to control IME version to use. The new Microsoft IME is always selected.
+- If you disable this, user isn't allowed to control IME version to use. The new Microsoft IME is always selected.
 
 This Policy setting applies only to Microsoft Korean IME.
 
 > [!NOTE]
-> Changes to this setting will not take effect until the user logs off.
+> Changes to this setting won't take effect until the user logs off.
 <!-- ConfigureKoreanIMEVersion-Description-End -->
 
 <!-- ConfigureKoreanIMEVersion-Editable-Begin -->
@@ -763,7 +756,7 @@ This Policy setting applies only to Microsoft Korean IME.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-2]` |
 | Default Value  | 0 |
@@ -795,7 +788,7 @@ This Policy setting applies only to Microsoft Korean IME.
 <!-- ConfigureSimplifiedChineseIMEVersion-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- ConfigureSimplifiedChineseIMEVersion-Applicability-End -->
 
 <!-- ConfigureSimplifiedChineseIMEVersion-OmaUri-Begin -->
@@ -806,18 +799,18 @@ This Policy setting applies only to Microsoft Korean IME.
 
 <!-- ConfigureSimplifiedChineseIMEVersion-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting controls the version of Microsoft IME. 
+This policy setting controls the version of Microsoft IME.
 
-- If you don't configure this policy setting, user can control IME version to use. The new Microsoft IME is on by default. 
+- If you don't configure this policy setting, user can control IME version to use. The new Microsoft IME is on by default.
 
-- If you enable this, user is not allowed to control IME version to use. The previous version of Microsoft IME is always selected. 
+- If you enable this, user isn't allowed to control IME version to use. The previous version of Microsoft IME is always selected.
 
-- If you disable this, user is not allowed to control IME version to use. The new Microsoft IME is always selected.
+- If you disable this, user isn't allowed to control IME version to use. The new Microsoft IME is always selected.
 
 This Policy setting applies only to Microsoft Simplified Chinese IME.
 
 > [!NOTE]
-> Changes to this setting will not take effect until the user logs off.
+> Changes to this setting won't take effect until the user logs off.
 <!-- ConfigureSimplifiedChineseIMEVersion-Description-End -->
 
 <!-- ConfigureSimplifiedChineseIMEVersion-Editable-Begin -->
@@ -829,7 +822,7 @@ This Policy setting applies only to Microsoft Simplified Chinese IME.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- ConfigureSimplifiedChineseIMEVersion-DFProperties-End -->
@@ -870,7 +863,7 @@ This Policy setting applies only to Microsoft Simplified Chinese IME.
 <!-- ConfigureTraditionalChineseIMEVersion-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- ConfigureTraditionalChineseIMEVersion-Applicability-End -->
 
 <!-- ConfigureTraditionalChineseIMEVersion-OmaUri-Begin -->
@@ -881,18 +874,18 @@ This Policy setting applies only to Microsoft Simplified Chinese IME.
 
 <!-- ConfigureTraditionalChineseIMEVersion-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting controls the version of Microsoft IME. 
+This policy setting controls the version of Microsoft IME.
 
-- If you don't configure this policy setting, user can control IME version to use. The new Microsoft IME is on by default. 
+- If you don't configure this policy setting, user can control IME version to use. The new Microsoft IME is on by default.
 
-- If you enable this, user is not allowed to control IME version to use. The previous version of Microsoft IME is always selected. 
+- If you enable this, user isn't allowed to control IME version to use. The previous version of Microsoft IME is always selected.
 
-- If you disable this, user is not allowed to control IME version to use. The new Microsoft IME is always selected.
+- If you disable this, user isn't allowed to control IME version to use. The new Microsoft IME is always selected.
 
 This Policy setting applies only to Microsoft Traditional Chinese IME.
 
 > [!NOTE]
-> Changes to this setting will not take effect until the user logs off.
+> Changes to this setting won't take effect until the user logs off.
 <!-- ConfigureTraditionalChineseIMEVersion-Description-End -->
 
 <!-- ConfigureTraditionalChineseIMEVersion-Editable-Begin -->
@@ -904,7 +897,7 @@ This Policy setting applies only to Microsoft Traditional Chinese IME.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- ConfigureTraditionalChineseIMEVersion-DFProperties-End -->
@@ -945,7 +938,7 @@ This Policy setting applies only to Microsoft Traditional Chinese IME.
 <!-- EnableTouchKeyboardAutoInvokeInDesktopMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- EnableTouchKeyboardAutoInvokeInDesktopMode-Applicability-End -->
 
 <!-- EnableTouchKeyboardAutoInvokeInDesktopMode-OmaUri-Begin -->
@@ -956,7 +949,7 @@ This Policy setting applies only to Microsoft Traditional Chinese IME.
 
 <!-- EnableTouchKeyboardAutoInvokeInDesktopMode-Description-Begin -->
 <!-- Description-Source-DDF -->
-This policy allows the IT admin to enable the touch keyboard to automatically show up when the device is in the desktop mode. The touch keyboard is enabled in both the tablet and desktop mode. In the tablet mode, when you touch a textbox, the touch keyboard automatically shows up. But in the desktop mode, by default, the touch keyboard does not automatically show up when you touch a textbox. The user must click the system tray to enable the touch keyboard. When this policy is enabled, the touch keyboard automatically shows up when the device is in the desktop mode. This policy corresponds to Show the touch keyboard when not in tablet mode and there's no keyboard attached in the Settings app.
+This policy allows the IT admin to control whether the touch keyboard should show up on tapping an edit control. By default, when you tap a textbox, the touch keyboard automatically shows up when there's no keyboard attached. When this policy is enabled, the touch keyboard can be shown or suppressed regardless of the hardware keyboard availability. This policy corresponds to Show the touch keyboard setting in the Settings app.
 <!-- EnableTouchKeyboardAutoInvokeInDesktopMode-Description-End -->
 
 <!-- EnableTouchKeyboardAutoInvokeInDesktopMode-Editable-Begin -->
@@ -968,7 +961,7 @@ This policy allows the IT admin to enable the touch keyboard to automatically sh
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- EnableTouchKeyboardAutoInvokeInDesktopMode-DFProperties-End -->
@@ -978,8 +971,9 @@ This policy allows the IT admin to enable the touch keyboard to automatically sh
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Disabled. |
-| 1 | Enabled. |
+| 0 (Default) | Never. |
+| 1 | When no keyboard attached. |
+| 2 | Always. |
 <!-- EnableTouchKeyboardAutoInvokeInDesktopMode-AllowedValues-End -->
 
 <!-- EnableTouchKeyboardAutoInvokeInDesktopMode-Examples-Begin -->
@@ -994,7 +988,7 @@ This policy allows the IT admin to enable the touch keyboard to automatically sh
 <!-- ExcludeJapaneseIMEExceptJIS0208-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- ExcludeJapaneseIMEExceptJIS0208-Applicability-End -->
 
 <!-- ExcludeJapaneseIMEExceptJIS0208-OmaUri-Begin -->
@@ -1005,8 +999,7 @@ This policy allows the IT admin to enable the touch keyboard to automatically sh
 
 <!-- ExcludeJapaneseIMEExceptJIS0208-Description-Begin -->
 <!-- Description-Source-DDF -->
-> [!NOTE]
-> The policy is only enforced in Windows 10 for desktop. Allows the users to restrict character code range of conversion by setting the character filter.
+Allows the users to restrict character code range of conversion by setting the character filter.
 <!-- ExcludeJapaneseIMEExceptJIS0208-Description-End -->
 
 <!-- ExcludeJapaneseIMEExceptJIS0208-Editable-Begin -->
@@ -1018,7 +1011,7 @@ This policy allows the IT admin to enable the touch keyboard to automatically sh
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- ExcludeJapaneseIMEExceptJIS0208-DFProperties-End -->
@@ -1044,7 +1037,7 @@ This policy allows the IT admin to enable the touch keyboard to automatically sh
 <!-- ExcludeJapaneseIMEExceptJIS0208andEUDC-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- ExcludeJapaneseIMEExceptJIS0208andEUDC-Applicability-End -->
 
 <!-- ExcludeJapaneseIMEExceptJIS0208andEUDC-OmaUri-Begin -->
@@ -1055,8 +1048,7 @@ This policy allows the IT admin to enable the touch keyboard to automatically sh
 
 <!-- ExcludeJapaneseIMEExceptJIS0208andEUDC-Description-Begin -->
 <!-- Description-Source-DDF -->
-> [!NOTE]
-> The policy is only enforced in Windows 10 for desktop. Allows the users to restrict character code range of conversion by setting the character filter.
+Allows the users to restrict character code range of conversion by setting the character filter.
 <!-- ExcludeJapaneseIMEExceptJIS0208andEUDC-Description-End -->
 
 <!-- ExcludeJapaneseIMEExceptJIS0208andEUDC-Editable-Begin -->
@@ -1068,7 +1060,7 @@ This policy allows the IT admin to enable the touch keyboard to automatically sh
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- ExcludeJapaneseIMEExceptJIS0208andEUDC-DFProperties-End -->
@@ -1094,7 +1086,7 @@ This policy allows the IT admin to enable the touch keyboard to automatically sh
 <!-- ExcludeJapaneseIMEExceptShiftJIS-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- ExcludeJapaneseIMEExceptShiftJIS-Applicability-End -->
 
 <!-- ExcludeJapaneseIMEExceptShiftJIS-OmaUri-Begin -->
@@ -1105,8 +1097,7 @@ This policy allows the IT admin to enable the touch keyboard to automatically sh
 
 <!-- ExcludeJapaneseIMEExceptShiftJIS-Description-Begin -->
 <!-- Description-Source-DDF -->
-> [!NOTE]
-> The policy is only enforced in Windows 10 for desktop. Allows the users to restrict character code range of conversion by setting the character filter.
+Allows the users to restrict character code range of conversion by setting the character filter.
 <!-- ExcludeJapaneseIMEExceptShiftJIS-Description-End -->
 
 <!-- ExcludeJapaneseIMEExceptShiftJIS-Editable-Begin -->
@@ -1118,7 +1109,7 @@ This policy allows the IT admin to enable the touch keyboard to automatically sh
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- ExcludeJapaneseIMEExceptShiftJIS-DFProperties-End -->
@@ -1144,7 +1135,7 @@ This policy allows the IT admin to enable the touch keyboard to automatically sh
 <!-- ForceTouchKeyboardDockedState-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- ForceTouchKeyboardDockedState-Applicability-End -->
 
 <!-- ForceTouchKeyboardDockedState-OmaUri-Begin -->
@@ -1167,7 +1158,7 @@ Specifies the touch keyboard is always docked. When this policy is set to enable
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- ForceTouchKeyboardDockedState-DFProperties-End -->
@@ -1194,7 +1185,7 @@ Specifies the touch keyboard is always docked. When this policy is set to enable
 <!-- TouchKeyboardDictationButtonAvailability-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- TouchKeyboardDictationButtonAvailability-Applicability-End -->
 
 <!-- TouchKeyboardDictationButtonAvailability-OmaUri-Begin -->
@@ -1217,7 +1208,7 @@ Specifies whether the dictation input button is enabled or disabled for the touc
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- TouchKeyboardDictationButtonAvailability-DFProperties-End -->
@@ -1244,7 +1235,7 @@ Specifies whether the dictation input button is enabled or disabled for the touc
 <!-- TouchKeyboardEmojiButtonAvailability-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- TouchKeyboardEmojiButtonAvailability-Applicability-End -->
 
 <!-- TouchKeyboardEmojiButtonAvailability-OmaUri-Begin -->
@@ -1267,7 +1258,7 @@ Specifies whether the emoji button is enabled or disabled for the touch keyboard
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- TouchKeyboardEmojiButtonAvailability-DFProperties-End -->
@@ -1294,7 +1285,7 @@ Specifies whether the emoji button is enabled or disabled for the touch keyboard
 <!-- TouchKeyboardFullModeAvailability-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- TouchKeyboardFullModeAvailability-Applicability-End -->
 
 <!-- TouchKeyboardFullModeAvailability-OmaUri-Begin -->
@@ -1317,7 +1308,7 @@ Specifies whether the full keyboard mode is enabled or disabled for the touch ke
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- TouchKeyboardFullModeAvailability-DFProperties-End -->
@@ -1344,7 +1335,7 @@ Specifies whether the full keyboard mode is enabled or disabled for the touch ke
 <!-- TouchKeyboardHandwritingModeAvailability-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- TouchKeyboardHandwritingModeAvailability-Applicability-End -->
 
 <!-- TouchKeyboardHandwritingModeAvailability-OmaUri-Begin -->
@@ -1367,7 +1358,7 @@ Specifies whether the handwriting input panel is enabled or disabled. When this 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- TouchKeyboardHandwritingModeAvailability-DFProperties-End -->
@@ -1394,7 +1385,7 @@ Specifies whether the handwriting input panel is enabled or disabled. When this 
 <!-- TouchKeyboardNarrowModeAvailability-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- TouchKeyboardNarrowModeAvailability-Applicability-End -->
 
 <!-- TouchKeyboardNarrowModeAvailability-OmaUri-Begin -->
@@ -1417,7 +1408,7 @@ Specifies whether the narrow keyboard mode is enabled or disabled for the touch 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- TouchKeyboardNarrowModeAvailability-DFProperties-End -->
@@ -1444,7 +1435,7 @@ Specifies whether the narrow keyboard mode is enabled or disabled for the touch 
 <!-- TouchKeyboardSplitModeAvailability-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- TouchKeyboardSplitModeAvailability-Applicability-End -->
 
 <!-- TouchKeyboardSplitModeAvailability-OmaUri-Begin -->
@@ -1467,7 +1458,7 @@ Specifies whether the split keyboard mode is enabled or disabled for the touch k
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- TouchKeyboardSplitModeAvailability-DFProperties-End -->
@@ -1494,7 +1485,7 @@ Specifies whether the split keyboard mode is enabled or disabled for the touch k
 <!-- TouchKeyboardWideModeAvailability-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- TouchKeyboardWideModeAvailability-Applicability-End -->
 
 <!-- TouchKeyboardWideModeAvailability-OmaUri-Begin -->
@@ -1517,7 +1508,7 @@ Specifies whether the wide keyboard mode is enabled or disabled for the touch ke
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- TouchKeyboardWideModeAvailability-DFProperties-End -->

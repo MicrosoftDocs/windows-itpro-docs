@@ -4,7 +4,7 @@ description: Learn more about the Authentication Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,6 +16,8 @@ ms.topic: reference
 <!-- Authentication-Begin -->
 # Policy CSP - Authentication
 
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
+
 <!-- Authentication-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 <!-- Authentication-Editable-End -->
@@ -26,7 +28,7 @@ ms.topic: reference
 <!-- AllowAadPasswordReset-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- AllowAadPasswordReset-Applicability-End -->
 
 <!-- AllowAadPasswordReset-OmaUri-Begin -->
@@ -51,7 +53,7 @@ This policy allows the Azure Active Directory (Azure AD) tenant administrator to
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- AllowAadPasswordReset-DFProperties-End -->
@@ -77,7 +79,7 @@ This policy allows the Azure Active Directory (Azure AD) tenant administrator to
 <!-- AllowEAPCertSSO-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowEAPCertSSO-Applicability-End -->
 
 <!-- AllowEAPCertSSO-OmaUri-Begin -->
@@ -100,7 +102,7 @@ Allows an EAP cert-based authentication for a single sign on (SSO) to access int
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- AllowEAPCertSSO-DFProperties-End -->
@@ -126,7 +128,7 @@ Allows an EAP cert-based authentication for a single sign on (SSO) to access int
 <!-- AllowFastReconnect-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowFastReconnect-Applicability-End -->
 
 <!-- AllowFastReconnect-OmaUri-Begin -->
@@ -149,7 +151,7 @@ Allows EAP Fast Reconnect from being attempted for EAP Method TLS. Most restrict
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowFastReconnect-DFProperties-End -->
@@ -175,7 +177,7 @@ Allows EAP Fast Reconnect from being attempted for EAP Method TLS. Most restrict
 <!-- AllowSecondaryAuthenticationDevice-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowSecondaryAuthenticationDevice-Applicability-End -->
 
 <!-- AllowSecondaryAuthenticationDevice-OmaUri-Begin -->
@@ -188,9 +190,9 @@ Allows EAP Fast Reconnect from being attempted for EAP Method TLS. Most restrict
 <!-- Description-Source-ADMX -->
 This policy allows users to use a companion device, such as a phone, fitness band, or IoT device, to sign on to a desktop computer running Windows 10. The companion device provides a second factor of authentication with Windows Hello.
 
-- If you enable or do not configure this policy setting, users can authenticate to Windows Hello using a companion device.
+- If you enable or don't configure this policy setting, users can authenticate to Windows Hello using a companion device.
 
-- If you disable this policy, users cannot use a companion device to authenticate with Windows Hello.
+- If you disable this policy, users can't use a companion device to authenticate with Windows Hello.
 <!-- AllowSecondaryAuthenticationDevice-Description-End -->
 
 <!-- AllowSecondaryAuthenticationDevice-Editable-Begin -->
@@ -202,7 +204,7 @@ This policy allows users to use a companion device, such as a phone, fitness ban
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- AllowSecondaryAuthenticationDevice-DFProperties-End -->
@@ -242,7 +244,7 @@ This policy allows users to use a companion device, such as a phone, fitness ban
 <!-- ConfigureWebcamAccessDomainNames-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ConfigureWebcamAccessDomainNames-Applicability-End -->
 
 <!-- ConfigureWebcamAccessDomainNames-OmaUri-Begin -->
@@ -268,7 +270,7 @@ Specifies a list of domains that are allowed to access the webcam in Web Sign-in
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- ConfigureWebcamAccessDomainNames-DFProperties-End -->
@@ -291,7 +293,7 @@ Your organization federates to "Contoso IDP" and your web sign-in portal at `sig
 <!-- ConfigureWebSignInAllowedUrls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134.2145] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134.2145] and later |
 <!-- ConfigureWebSignInAllowedUrls-Applicability-End -->
 
 <!-- ConfigureWebSignInAllowedUrls-OmaUri-Begin -->
@@ -322,7 +324,7 @@ This policy specifies the list of domains that users can access in certain authe
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- ConfigureWebSignInAllowedUrls-DFProperties-End -->
@@ -345,7 +347,7 @@ Your organization's PIN reset or web sign-in authentication flow is expected to 
 <!-- EnableFastFirstSignIn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- EnableFastFirstSignIn-Applicability-End -->
 
 <!-- EnableFastFirstSignIn-OmaUri-Begin -->
@@ -356,7 +358,7 @@ Your organization's PIN reset or web sign-in authentication flow is expected to 
 
 <!-- EnableFastFirstSignIn-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specifies whether new non-admin AAD accounts should auto-connect to pre-created candidate local accounts
+Specifies whether new non-admin AAD accounts should auto-connect to pre-created candidate local accounts.
 <!-- EnableFastFirstSignIn-Description-End -->
 
 <!-- EnableFastFirstSignIn-Editable-Begin -->
@@ -373,7 +375,7 @@ This policy is intended for use on Shared PCs to enable a quick first sign-in ex
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- EnableFastFirstSignIn-DFProperties-End -->
@@ -385,7 +387,7 @@ This policy is intended for use on Shared PCs to enable a quick first sign-in ex
 |:--|:--|
 | 0 (Default) | The feature defaults to the existing SKU and device capabilities. |
 | 1 | Enabled. Auto-connect new non-admin Azure AD accounts to pre-configured candidate local accounts. |
-| 2 | Disabled. Do not auto-connect new non-admin Azure AD accounts to pre-configured local accounts. |
+| 2 | Disabled. Don't auto-connect new non-admin Azure AD accounts to pre-configured local accounts. |
 <!-- EnableFastFirstSignIn-AllowedValues-End -->
 
 <!-- EnableFastFirstSignIn-Examples-Begin -->
@@ -394,13 +396,63 @@ This policy is intended for use on Shared PCs to enable a quick first sign-in ex
 
 <!-- EnableFastFirstSignIn-End -->
 
+<!-- EnablePasswordlessExperience-Begin -->
+## EnablePasswordlessExperience
+
+<!-- EnablePasswordlessExperience-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- EnablePasswordlessExperience-Applicability-End -->
+
+<!-- EnablePasswordlessExperience-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Authentication/EnablePasswordlessExperience
+```
+<!-- EnablePasswordlessExperience-OmaUri-End -->
+
+<!-- EnablePasswordlessExperience-Description-Begin -->
+<!-- Description-Source-DDF -->
+Specifies whether connected users on AADJ devices receive a Passwordless experience on Windows.
+<!-- EnablePasswordlessExperience-Description-End -->
+
+<!-- EnablePasswordlessExperience-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- EnablePasswordlessExperience-Editable-End -->
+
+<!-- EnablePasswordlessExperience-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- EnablePasswordlessExperience-DFProperties-End -->
+
+<!-- EnablePasswordlessExperience-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | The feature defaults to the existing edition and device capabilities. |
+| 1 | Enabled. The Passwordless experience will be enabled on Windows. |
+| 2 | Disabled. The Passwordless experience won't be enabled on Windows. |
+<!-- EnablePasswordlessExperience-AllowedValues-End -->
+
+<!-- EnablePasswordlessExperience-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- EnablePasswordlessExperience-Examples-End -->
+
+<!-- EnablePasswordlessExperience-End -->
+
 <!-- EnableWebSignIn-Begin -->
 ## EnableWebSignIn
 
 <!-- EnableWebSignIn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- EnableWebSignIn-Applicability-End -->
 
 <!-- EnableWebSignIn-OmaUri-Begin -->
@@ -411,7 +463,7 @@ This policy is intended for use on Shared PCs to enable a quick first sign-in ex
 
 <!-- EnableWebSignIn-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specifies whether web-based sign-in is allowed for signing in to Windows
+Specifies whether web-based sign-in is allowed for signing in to Windows.
 <!-- EnableWebSignIn-Description-End -->
 
 <!-- EnableWebSignIn-Editable-Begin -->
@@ -431,7 +483,7 @@ Specifies whether web-based sign-in is allowed for signing in to Windows
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- EnableWebSignIn-DFProperties-End -->
@@ -443,7 +495,7 @@ Specifies whether web-based sign-in is allowed for signing in to Windows
 |:--|:--|
 | 0 (Default) | The feature defaults to the existing SKU and device capabilities. |
 | 1 | Enabled. Web Sign-in will be enabled for signing in to Windows. |
-| 2 | Disabled. Web Sign-in will not be enabled for signing in to Windows. |
+| 2 | Disabled. Web Sign-in won't be enabled for signing in to Windows. |
 <!-- EnableWebSignIn-AllowedValues-End -->
 
 <!-- EnableWebSignIn-Examples-Begin -->
@@ -458,7 +510,7 @@ Specifies whether web-based sign-in is allowed for signing in to Windows
 <!-- PreferredAadTenantDomainName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- PreferredAadTenantDomainName-Applicability-End -->
 
 <!-- PreferredAadTenantDomainName-OmaUri-Begin -->
@@ -481,7 +533,7 @@ Specifies the preferred domain among available domains in the AAD tenant.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- PreferredAadTenantDomainName-DFProperties-End -->
 

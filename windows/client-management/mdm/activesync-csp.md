@@ -4,7 +4,7 @@ description: Learn more about the ActiveSync CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/28/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -64,7 +64,7 @@ The following list shows the ActiveSync configuration service provider nodes:
 <!-- User-Accounts-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-Accounts-Applicability-End -->
 
 <!-- User-Accounts-OmaUri-Begin -->
@@ -87,7 +87,7 @@ The parent node group all active sync accounts.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- User-Accounts-DFProperties-End -->
 
@@ -103,7 +103,7 @@ The parent node group all active sync accounts.
 <!-- User-Accounts-{Account GUID}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-Accounts-{Account GUID}-Applicability-End -->
 
 <!-- User-Accounts-{Account GUID}-OmaUri-Begin -->
@@ -127,8 +127,9 @@ When managing over OMA DM, make sure to always use a unique GUID. Provisioning w
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get, Replace |
+| Atomic Required | True |
 | Dynamic Node Naming | ServerGeneratedUniqueIdentifier |
 | Allowed Values | Regular Expression: `\{[0-9A-Fa-f]{8}\-[0-9A-Fa-f]{4}\-[0-9A-Fa-f]{4}\-[0-9A-Fa-f]{4}\-[0-9A-Fa-f]{12}\}` |
 <!-- User-Accounts-{Account GUID}-DFProperties-End -->
@@ -162,7 +163,7 @@ For OMA DM, you must use the ASCII values of %7B and %7D for the opening and clo
 <!-- User-Accounts-{Account GUID}-AccountIcon-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-Accounts-{Account GUID}-AccountIcon-Applicability-End -->
 
 <!-- User-Accounts-{Account GUID}-AccountIcon-OmaUri-Begin -->
@@ -186,7 +187,7 @@ The account icon can be used as a tile in the Start list or an icon in the appli
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-Accounts-{Account GUID}-AccountIcon-DFProperties-End -->
 
@@ -202,7 +203,7 @@ The account icon can be used as a tile in the Start list or an icon in the appli
 <!-- User-Accounts-{Account GUID}-AccountName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-Accounts-{Account GUID}-AccountName-Applicability-End -->
 
 <!-- User-Accounts-{Account GUID}-AccountName-OmaUri-Begin -->
@@ -225,7 +226,7 @@ The name that refers to the account on the device.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-Accounts-{Account GUID}-AccountName-DFProperties-End -->
 
@@ -241,7 +242,7 @@ The name that refers to the account on the device.
 <!-- User-Accounts-{Account GUID}-AccountType-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-Accounts-{Account GUID}-AccountType-Applicability-End -->
 
 <!-- User-Accounts-{Account GUID}-AccountType-OmaUri-Begin -->
@@ -252,7 +253,7 @@ The name that refers to the account on the device.
 
 <!-- User-Accounts-{Account GUID}-AccountType-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specify the account type. This value is entered during setup and cannot be modified once entered. An Exchange account is indicated by the string value "Exchange".
+Specify the account type. This value is entered during setup and can't be modified once entered. An Exchange account is indicated by the string value "Exchange".
 <!-- User-Accounts-{Account GUID}-AccountType-Description-End -->
 
 <!-- User-Accounts-{Account GUID}-AccountType-Editable-Begin -->
@@ -264,7 +265,7 @@ Specify the account type. This value is entered during setup and cannot be modif
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-Accounts-{Account GUID}-AccountType-DFProperties-End -->
 
@@ -280,7 +281,7 @@ Specify the account type. This value is entered during setup and cannot be modif
 <!-- User-Accounts-{Account GUID}-Domain-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-Accounts-{Account GUID}-Domain-Applicability-End -->
 
 <!-- User-Accounts-{Account GUID}-Domain-OmaUri-Begin -->
@@ -303,7 +304,7 @@ Domain name of the Exchange server.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-Accounts-{Account GUID}-Domain-DFProperties-End -->
 
@@ -319,7 +320,7 @@ Domain name of the Exchange server.
 <!-- User-Accounts-{Account GUID}-EmailAddress-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-Accounts-{Account GUID}-EmailAddress-Applicability-End -->
 
 <!-- User-Accounts-{Account GUID}-EmailAddress-OmaUri-Begin -->
@@ -330,7 +331,7 @@ Domain name of the Exchange server.
 
 <!-- User-Accounts-{Account GUID}-EmailAddress-Description-Begin -->
 <!-- Description-Source-DDF -->
-The email address the user entered during setup. This is the email address that is associated with the Exchange ActiveSync account and it is required.
+The email address the user entered during setup. This is the email address that's associated with the Exchange ActiveSync account and it's required.
 <!-- User-Accounts-{Account GUID}-EmailAddress-Description-End -->
 
 <!-- User-Accounts-{Account GUID}-EmailAddress-Editable-Begin -->
@@ -343,7 +344,7 @@ This email address is entered by the user during setup and must be in the fully 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-Accounts-{Account GUID}-EmailAddress-DFProperties-End -->
 
@@ -359,7 +360,7 @@ This email address is entered by the user during setup and must be in the fully 
 <!-- User-Accounts-{Account GUID}-Options-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-Accounts-{Account GUID}-Options-Applicability-End -->
 
 <!-- User-Accounts-{Account GUID}-Options-OmaUri-Begin -->
@@ -382,7 +383,7 @@ Specifies whether email, contacts, and calendar need to synchronize by default, 
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-Accounts-{Account GUID}-Options-DFProperties-End -->
 
@@ -398,7 +399,7 @@ Specifies whether email, contacts, and calendar need to synchronize by default, 
 <!-- User-Accounts-{Account GUID}-Options-CalendarAgeFilter-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-Accounts-{Account GUID}-Options-CalendarAgeFilter-Applicability-End -->
 
 <!-- User-Accounts-{Account GUID}-Options-CalendarAgeFilter-OmaUri-Begin -->
@@ -421,7 +422,7 @@ Specifies the time window used for syncing calendar items to the phone.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-Accounts-{Account GUID}-Options-CalendarAgeFilter-DFProperties-End -->
 
@@ -437,7 +438,7 @@ Specifies the time window used for syncing calendar items to the phone.
 <!-- User-Accounts-{Account GUID}-Options-ContentTypes-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-Accounts-{Account GUID}-Options-ContentTypes-Applicability-End -->
 
 <!-- User-Accounts-{Account GUID}-Options-ContentTypes-OmaUri-Begin -->
@@ -460,7 +461,7 @@ Interior node for Content Types.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-Accounts-{Account GUID}-Options-ContentTypes-DFProperties-End -->
 
@@ -476,7 +477,7 @@ Interior node for Content Types.
 <!-- User-Accounts-{Account GUID}-Options-ContentTypes-{Content Type GUID}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-Accounts-{Account GUID}-Options-ContentTypes-{Content Type GUID}-Applicability-End -->
 
 <!-- User-Accounts-{Account GUID}-Options-ContentTypes-{Content Type GUID}-OmaUri-Begin -->
@@ -499,7 +500,7 @@ Enables or disables syncing email, contacts, task, and calendar. Each is represe
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get, Replace |
 | Dynamic Node Naming | UniqueName: The GUID values allowed are one of the following: Email: "{c6d47067-6e92-480e-b0fc-4ba82182fac7}". Contacts: "{0dd8685c-e272-4fcb-9ecf-2ead7ea2497b}". Calendar: "{4a5d9fe0-f139-4a63-a5a4-4f31ceea02ad}". Tasks: "{783ae4f6-4c12-4423-8270-66361260d4f1}". |
 <!-- User-Accounts-{Account GUID}-Options-ContentTypes-{Content Type GUID}-DFProperties-End -->
@@ -516,7 +517,7 @@ Enables or disables syncing email, contacts, task, and calendar. Each is represe
 <!-- User-Accounts-{Account GUID}-Options-ContentTypes-{Content Type GUID}-Enabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-Accounts-{Account GUID}-Options-ContentTypes-{Content Type GUID}-Enabled-Applicability-End -->
 
 <!-- User-Accounts-{Account GUID}-Options-ContentTypes-{Content Type GUID}-Enabled-OmaUri-Begin -->
@@ -539,7 +540,7 @@ Enables or disables Sync for Email, contacts, calendar, and Tasks.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- User-Accounts-{Account GUID}-Options-ContentTypes-{Content Type GUID}-Enabled-DFProperties-End -->
@@ -565,7 +566,7 @@ Enables or disables Sync for Email, contacts, calendar, and Tasks.
 <!-- User-Accounts-{Account GUID}-Options-ContentTypes-{Content Type GUID}-Name-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-Accounts-{Account GUID}-Options-ContentTypes-{Content Type GUID}-Name-Applicability-End -->
 
 <!-- User-Accounts-{Account GUID}-Options-ContentTypes-{Content Type GUID}-Name-OmaUri-Begin -->
@@ -588,7 +589,7 @@ The name of the content type.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-Accounts-{Account GUID}-Options-ContentTypes-{Content Type GUID}-Name-DFProperties-End -->
 
@@ -604,7 +605,7 @@ The name of the content type.
 <!-- User-Accounts-{Account GUID}-Options-Logging-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-Accounts-{Account GUID}-Options-Logging-Applicability-End -->
 
 <!-- User-Accounts-{Account GUID}-Options-Logging-OmaUri-Begin -->
@@ -627,7 +628,7 @@ Specifies whether diagnostic logging is enabled and at what level.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- User-Accounts-{Account GUID}-Options-Logging-DFProperties-End -->
@@ -654,7 +655,7 @@ Specifies whether diagnostic logging is enabled and at what level.
 <!-- User-Accounts-{Account GUID}-Options-MailAgeFilter-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-Accounts-{Account GUID}-Options-MailAgeFilter-Applicability-End -->
 
 <!-- User-Accounts-{Account GUID}-Options-MailAgeFilter-OmaUri-Begin -->
@@ -677,7 +678,7 @@ Specifies the time window used for syncing email items to the phone.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 3 |
 <!-- User-Accounts-{Account GUID}-Options-MailAgeFilter-DFProperties-End -->
@@ -708,7 +709,7 @@ Specifies the time window used for syncing email items to the phone.
 <!-- User-Accounts-{Account GUID}-Options-MailBodyType-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-Accounts-{Account GUID}-Options-MailBodyType-Applicability-End -->
 
 <!-- User-Accounts-{Account GUID}-Options-MailBodyType-OmaUri-Begin -->
@@ -731,7 +732,7 @@ Indicates format type of the Email. Supported values are 0 (none), 1 (text), 2 (
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-Accounts-{Account GUID}-Options-MailBodyType-DFProperties-End -->
 
@@ -759,7 +760,7 @@ Indicates format type of the Email. Supported values are 0 (none), 1 (text), 2 (
 <!-- User-Accounts-{Account GUID}-Options-MailHTMLTruncation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-Accounts-{Account GUID}-Options-MailHTMLTruncation-Applicability-End -->
 
 <!-- User-Accounts-{Account GUID}-Options-MailHTMLTruncation-OmaUri-Begin -->
@@ -770,7 +771,7 @@ Indicates format type of the Email. Supported values are 0 (none), 1 (text), 2 (
 
 <!-- User-Accounts-{Account GUID}-Options-MailHTMLTruncation-Description-Begin -->
 <!-- Description-Source-DDF -->
-This setting specifies the size beyond which HTML-formatted e-mail messages are truncated when they are synchronized to the mobile phone. The value is specified in KB. A value of -1 disables truncation.
+This setting specifies the size beyond which HTML-formatted e-mail messages are truncated when they're synchronized to the mobile phone. The value is specified in KB. A value of -1 disables truncation.
 <!-- User-Accounts-{Account GUID}-Options-MailHTMLTruncation-Description-End -->
 
 <!-- User-Accounts-{Account GUID}-Options-MailHTMLTruncation-Editable-Begin -->
@@ -782,7 +783,7 @@ This setting specifies the size beyond which HTML-formatted e-mail messages are 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-Accounts-{Account GUID}-Options-MailHTMLTruncation-DFProperties-End -->
 
@@ -798,7 +799,7 @@ This setting specifies the size beyond which HTML-formatted e-mail messages are 
 <!-- User-Accounts-{Account GUID}-Options-MailPlainTextTruncation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-Accounts-{Account GUID}-Options-MailPlainTextTruncation-Applicability-End -->
 
 <!-- User-Accounts-{Account GUID}-Options-MailPlainTextTruncation-OmaUri-Begin -->
@@ -809,7 +810,7 @@ This setting specifies the size beyond which HTML-formatted e-mail messages are 
 
 <!-- User-Accounts-{Account GUID}-Options-MailPlainTextTruncation-Description-Begin -->
 <!-- Description-Source-DDF -->
-This setting specifies the size beyond which text-formatted e-mail messages are truncated when they are synchronized to the mobile phone. The value is specified in KB. A value of -1 disables truncation.
+This setting specifies the size beyond which text-formatted e-mail messages are truncated when they're synchronized to the mobile phone. The value is specified in KB. A value of -1 disables truncation.
 <!-- User-Accounts-{Account GUID}-Options-MailPlainTextTruncation-Description-End -->
 
 <!-- User-Accounts-{Account GUID}-Options-MailPlainTextTruncation-Editable-Begin -->
@@ -821,7 +822,7 @@ This setting specifies the size beyond which text-formatted e-mail messages are 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-Accounts-{Account GUID}-Options-MailPlainTextTruncation-DFProperties-End -->
 
@@ -837,7 +838,7 @@ This setting specifies the size beyond which text-formatted e-mail messages are 
 <!-- User-Accounts-{Account GUID}-Options-Schedule-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-Accounts-{Account GUID}-Options-Schedule-Applicability-End -->
 
 <!-- User-Accounts-{Account GUID}-Options-Schedule-OmaUri-Begin -->
@@ -860,7 +861,7 @@ Specifies the time until the next sync is performed in minutes. If -1 is chosen,
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[(-1)-4294967295]` |
 | Default Value  | -1 |
@@ -878,7 +879,7 @@ Specifies the time until the next sync is performed in minutes. If -1 is chosen,
 <!-- User-Accounts-{Account GUID}-Options-UseSSL-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-Accounts-{Account GUID}-Options-UseSSL-Applicability-End -->
 
 <!-- User-Accounts-{Account GUID}-Options-UseSSL-OmaUri-Begin -->
@@ -901,7 +902,7 @@ Specifies whether SSL is used.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- User-Accounts-{Account GUID}-Options-UseSSL-DFProperties-End -->
@@ -911,7 +912,7 @@ Specifies whether SSL is used.
 
 | Value | Description |
 |:--|:--|
-| 0 | SSL is not used. |
+| 0 | SSL isn't used. |
 | 1 (Default) | SSL is used. |
 <!-- User-Accounts-{Account GUID}-Options-UseSSL-AllowedValues-End -->
 
@@ -927,7 +928,7 @@ Specifies whether SSL is used.
 <!-- User-Accounts-{Account GUID}-Password-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-Accounts-{Account GUID}-Password-Applicability-End -->
 
 <!-- User-Accounts-{Account GUID}-Password-OmaUri-Begin -->
@@ -950,7 +951,7 @@ A character string that specifies the password for the account. For the Get comm
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-Accounts-{Account GUID}-Password-DFProperties-End -->
 
@@ -966,7 +967,7 @@ A character string that specifies the password for the account. For the Get comm
 <!-- User-Accounts-{Account GUID}-Policies-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-Accounts-{Account GUID}-Policies-Applicability-End -->
 
 <!-- User-Accounts-{Account GUID}-Policies-OmaUri-Begin -->
@@ -989,7 +990,7 @@ Specifies the mail body type and email age filter.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-Accounts-{Account GUID}-Policies-DFProperties-End -->
 
@@ -1005,7 +1006,7 @@ Specifies the mail body type and email age filter.
 <!-- User-Accounts-{Account GUID}-Policies-MailBodyType-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-Accounts-{Account GUID}-Policies-MailBodyType-Applicability-End -->
 
 <!-- User-Accounts-{Account GUID}-Policies-MailBodyType-OmaUri-Begin -->
@@ -1028,7 +1029,7 @@ Specifies the email body type. HTML or plain.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-Accounts-{Account GUID}-Policies-MailBodyType-DFProperties-End -->
 
@@ -1053,7 +1054,7 @@ Specifies the email body type. HTML or plain.
 <!-- User-Accounts-{Account GUID}-Policies-MaxMailAgeFilter-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-Accounts-{Account GUID}-Policies-MaxMailAgeFilter-Applicability-End -->
 
 <!-- User-Accounts-{Account GUID}-Policies-MaxMailAgeFilter-OmaUri-Begin -->
@@ -1076,7 +1077,7 @@ Specifies the time window used for syncing mail items to the device.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-Accounts-{Account GUID}-Policies-MaxMailAgeFilter-DFProperties-End -->
 
@@ -1092,7 +1093,7 @@ Specifies the time window used for syncing mail items to the device.
 <!-- User-Accounts-{Account GUID}-ServerName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-Accounts-{Account GUID}-ServerName-Applicability-End -->
 
 <!-- User-Accounts-{Account GUID}-ServerName-OmaUri-Begin -->
@@ -1115,7 +1116,7 @@ Specifies the server name used by the account.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-Accounts-{Account GUID}-ServerName-DFProperties-End -->
 
@@ -1131,7 +1132,7 @@ Specifies the server name used by the account.
 <!-- User-Accounts-{Account GUID}-UserName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-Accounts-{Account GUID}-UserName-Applicability-End -->
 
 <!-- User-Accounts-{Account GUID}-UserName-OmaUri-Begin -->
@@ -1142,7 +1143,7 @@ Specifies the server name used by the account.
 
 <!-- User-Accounts-{Account GUID}-UserName-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specifies the user name for the account. The user name cannot be changed after a sync has been successfully performed. The user name can be in the fully qualified format "`someone@example.com`", or just "username", depending on the type of account created. For most Exchange accounts, the user name format is just "username", whereas for Microsoft, Google, Yahoo, and most POP/IMAP accounts, the user name format is "`someone@example.com`".
+Specifies the user name for the account. The user name can't be changed after a sync has been successfully performed. The user name can be in the fully qualified format "`someone@example.com`", or just "username", depending on the type of account created. For most Exchange accounts, the user name format is just "username", whereas for Microsoft, Google, Yahoo, and most POP/IMAP accounts, the user name format is "`someone@example.com`".
 <!-- User-Accounts-{Account GUID}-UserName-Description-End -->
 
 <!-- User-Accounts-{Account GUID}-UserName-Editable-Begin -->
@@ -1154,7 +1155,7 @@ Specifies the user name for the account. The user name cannot be changed after a
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-Accounts-{Account GUID}-UserName-DFProperties-End -->
 

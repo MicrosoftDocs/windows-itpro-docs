@@ -7,15 +7,16 @@ ms.author: mstewart
 manager: aaroncz
 ms.localizationpriority: high
 ms.topic: article
-ms.collection: highpri, tier2
+ms.collection:
+  - highpri
+  - tier2
 ms.technology: itpro-fundamentals
 ms.date: 12/31/2017
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10, version 20H2</a>
 ---
 
 # What's new in Windows 10, version 20H2 for IT Pros
-
-**Applies to**
--   Windows 10, version 20H2
 
 This article lists new and updated features and content that is of interest to IT Pros for Windows 10, version 20H2, also known as the Windows 10 October 2020 Update. This update also contains all features and fixes included in previous cumulative updates to Windows 10, version 2004.
 
@@ -24,7 +25,7 @@ This article lists new and updated features and content that is of interest to I
 
 As with previous fall releases, Windows 10, version 20H2 is a scoped set of features for select performance improvements, enterprise features, and quality enhancements. As an [H2-targeted release](/lifecycle/faq/windows), 20H2 is serviced for 30 months from the release date for devices running Windows 10 Enterprise or Windows 10 Education editions. 
 
-To download and install Windows 10, version 20H2, use Windows Update (**Settings > Update & Security > Windows Update**). For more information, including a video, see [How to get the Windows 10 October 2020 Update](https://community.windows.com/videos/how-to-get-the-windows-10-october-2020-update/7c7_mWN0wi8). 
+To download and install Windows 10, version 20H2, use Windows Update (**Settings > Update & Security > Windows Update**).
 
 ## Microsoft Edge
 

@@ -6,7 +6,7 @@ ms.technology: itpro-privacy
 ms.localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
-manager: dougeby
+manager: laurawi
 ms.date: 03/07/2016
 ms.collection: highpri
 ms.topic: conceptual
@@ -113,6 +113,7 @@ The following table lists management options for each setting,  For Windows 10 (
 | [30. Cloud Clipboard](#bkmk-clcp) | | ![Check mark](images/checkmark.png) |  |
 | [31. Services Configuration](#bkmk-svccfg) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [32. Widgets](#bkmk-widgets) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
+| [33. Recommendations](#33-recommendations) |![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 
 
 ### Settings for Windows Server 2016 with Desktop Experience
@@ -1916,9 +1917,23 @@ Add a REG_DWORD value named **DisableOneSettingsDownloads** to **HKEY_LOCAL_MACH
 
 Widgets is a news and feeds service that can be customized by the user. If you turn off this service, apps using this service may stop working.
 
-You can turn off Widgets by setting the following registry entries:
+To turn off Widgets, you can use Group Policy or a custom setting in an MDM solution, such as Microsoft Intune.
 
-Add a REG_DWORD value named **AllowWidgets** to **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Widgets** and set the value to **0**.
+- For Group Policy, you can use the “Allow widgets” policy, which is also available in the Intune [settings catalog](/mem/intune/configuration/settings-catalog).
+- For an MDM solution, you can use the AllowNewsAndInterests setting in the NewsandInterests configuration service provider (CSP).
+
+For more information about AllowNewsAndInterests and the “Allow widgets” policy, [review this information](/windows/client-management/mdm/policy-csp-newsandinterests#allownewsandinterests).
+
+### 33. Recommendations
+
+The Recommended section on the Start menu displays a list of recommended apps and files.
+
+To turn off these recommendations, you can use any of the following methods:
+
+- In Group Policy, set the "Remove Recommended from Start Menu" policy to Enabled under **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar**.
+- In an MDM solution, such as Microsoft Intune, you can use the [HideRecentJumplists](/windows/client-management/mdm/policy-csp-start#hiderecentjumplists) setting in the Start Policy configuration service provider (CSP).
+- In the registry, you can set **HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\Start_TrackDocs** to 0.
+- In the UI, you can turn off **Show recommendations for tips, shortcuts, new apps, and more** under **Settings** > **Personalization** > **Start**.
 
 ### <a href="" id="bkmk-allowedtraffic"></a> Allowed traffic list for Windows Restricted Traffic Limited Functionality Baseline
 
@@ -1928,6 +1943,5 @@ Add a REG_DWORD value named **AllowWidgets** to **HKEY_LOCAL_MACHINE\Software\Po
 |crl.microsoft.com/pki/crl/*|
 |ocsp.digicert.com/*|
 |www.microsoft.com/pkiops/*|
-
 
 To learn more, see [Device update management](/windows/client-management/mdm/device-update-management) and [Configure Automatic Updates by using Group Policy](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc720539(v=ws.10)).

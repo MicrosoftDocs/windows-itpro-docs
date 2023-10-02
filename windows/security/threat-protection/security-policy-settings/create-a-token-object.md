@@ -1,5 +1,5 @@
 ---
-title: Create a token object (Windows 10)
+title: Create a token object 
 description: Describes the best practices, location, values, policy management, and security considerations for the Create a token object security policy setting.
 ms.assetid: bfbf52fc-6ba4-442a-9df7-bd277e55729c
 ms.reviewer: 

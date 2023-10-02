@@ -4,7 +4,7 @@ metadata:
   description: Answers to frequently asked questions about Windows Autopatch.
   ms.prod: windows-client
   ms.topic: faq
-  ms.date: 02/28/2023
+  ms.date: 07/19/2023
   audience: itpro
   ms.localizationpriority: medium
   manager: dougeby
@@ -31,10 +31,10 @@ sections:
           Autopatch isn't available for 'A' or 'F' series licensing.
       - question: Will Windows Autopatch support local domain join Windows 10?
         answer: | 
-          Windows Autopatch doesn't support local (on-premise) domain join. Windows Autopatch supports [Hybrid AD join](/azure/active-directory/devices/concept-azure-ad-join-hybrid) or pure [Azure AD join](/azure/active-directory/devices/concept-azure-ad-join-hybrid).
+          Windows Autopatch doesn't support local (on-premises) domain join. Windows Autopatch supports [Hybrid AD join](/azure/active-directory/devices/concept-azure-ad-join-hybrid) or pure [Azure AD join](/azure/active-directory/devices/concept-azure-ad-join-hybrid).
       - question: Will Windows Autopatch be available for state and local government customers?
         answer: |
-          Windows Autopatch is available for all Windows E3 customers using Azure commercial cloud. However, Autopatch isn't currently supported for government cloud (GCC) customers.
+          Windows Autopatch is available for all Windows E3 customers using Azure commercial cloud. However, Autopatch isn't currently supported for government cloud (GCC) customers. Although Windows 365 Enterprise is in the Azure Commercial cloud, when Windows 365 Enterprise is used with a GCC customer tenant, Autopatch is not suppported.
       - question: What if I enrolled into Windows Autopatch using the promo code? Will I still have access to the service?
         answer: |
           Yes. For those who used the promo code to access Windows Autopatch during public preview, you'll continue to have access to Windows Autopatch even when the promo code expires. There's no additional action you have to take to continue using Windows Autopatch.
@@ -77,6 +77,9 @@ sections:
       - question: Can you change the policies and configurations created by Windows Autopatch?
         answer: |
           No. Don't change, edit, add to, or remove any of the configurations. Doing so might cause unintended configuration conflicts and impact the Windows Autopatch service. For more information about policies and configurations, see [Changes made at tenant enrollment](/windows/deployment/windows-autopatch/references/windows-autopatch-changes-to-tenant).
+      - question: How can I represent our organizational structure with our own deployment cadence? 
+        answer: |
+          [Windows Autopatch groups](../deploy/windows-autopatch-groups-overview.md) helps you manage updates in a way that makes sense for your businesses. For more information, see [Windows Autopatch groups overview](../deploy/windows-autopatch-groups-overview.md) and [Manage Windows Autopatch groups](../deploy/windows-autopatch-groups-manage-autopatch-groups.md).
   - name: Update management
     questions: 
       - question: What systems does Windows Autopatch update?
@@ -96,7 +99,7 @@ sections:
           - Rollback: For more information about Microsoft 365 Apps for enterprise, see [Update controls for Microsoft 365 Apps for enterprise](../operate/windows-autopatch-microsoft-365-apps-enterprise.md#microsoft-365-apps-for-enterprise-update-controls).
       - question: Can I permanently pause a Windows feature update deployment?
         answer: |
-          Yes. Windows Autopatch provides a [permanent pause of either a feature update deployment](../operate/windows-autopatch-windows-feature-update-overview.md#pausing-and-resuming-a-release).
+          Yes. Windows Autopatch provides a [permanent pause of a feature update deployment](../operate/windows-autopatch-windows-feature-update-overview.md#pausing-and-resuming-a-release).
       - question: Will Windows quality updates be released more quickly after vulnerabilities are identified, or what is the regular cadence of updates?
         answer: |
           For zero-day threats, Autopatch will have an [expedited release cadence](../operate/windows-autopatch-windows-quality-update-overview.md#expedited-releases). For normal updates Autopatch, uses a [regular release cadence](../operate/windows-autopatch-wqu-overview.md#windows-quality-update-releases) starting with devices in the Test ring and completing with general rollout to the Broad ring.

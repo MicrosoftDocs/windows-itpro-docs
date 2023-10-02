@@ -4,7 +4,7 @@ description: Learn more about the BITS Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -26,7 +26,7 @@ ms.topic: reference
 <!-- BandwidthThrottlingEndTime-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- BandwidthThrottlingEndTime-Applicability-End -->
 
 <!-- BandwidthThrottlingEndTime-OmaUri-Begin -->
@@ -36,12 +36,19 @@ ms.topic: reference
 <!-- BandwidthThrottlingEndTime-OmaUri-End -->
 
 <!-- BandwidthThrottlingEndTime-Description-Begin -->
-<!-- Description-Source-DDF -->
-This policy specifies the bandwidth throttling end time that Background Intelligent Transfer Service (BITS) uses for background transfers. This policy setting does not affect foreground transfers. This policy is based on the 24-hour clock. Value type is integer. Default value is 17 (5 PM). Supported value range 0 - 23. You can specify a limit to use during a specific time interval and at all other times. For example, limit the use of network bandwidth to 10 Kbps from 800 A. M. to 500 P. M. , and use all available unused bandwidth the rest of the day's hours. Using the three policies together (BandwidthThrottlingStartTime, BandwidthThrottlingEndTime, BandwidthThrottlingTransferRate), BITS will limit its bandwidth usage to the specified values. You can specify the limit in kilobits per second (Kbps). If you specify a value less than 2 kilobits, BITS will continue to use approximately 2 kilobits. To prevent BITS transfers from occurring, specify a limit of 0.
-- If you disable or do not configure this policy setting, BITS uses all available unused bandwidth
+<!-- Description-Source-ADMX -->
+This policy setting limits the network bandwidth that Background Intelligent Transfer Service (BITS) uses for background transfers. (This policy setting doesn't affect foreground transfers).
+
+You can specify a limit to use during a specific time interval and at all other times. For example, limit the use of network bandwidth to 10 Kbps from 8:00 A. M. to 5:00 P. M., and use all available unused bandwidth the rest of the day's hours.
+
+- If you enable this policy setting, BITS will limit its bandwidth usage to the specified values. You can specify the limit in kilobits per second (Kbps). If you specify a value less than 2 kilobits, BITS will continue to use approximately 2 kilobits. To prevent BITS transfers from occurring, specify a limit of 0.
+
+- If you disable or don't configure this policy setting, BITS uses all available unused bandwidth.
 
 > [!NOTE]
-> You should base the limit on the speed of the network link, not the computer's network interface card (NIC). This policy setting does not affect peer caching transfers between peer computers (it does affect transfers from the origin server); the Limit the maximum network bandwidth used for Peercaching policy setting should be used for that purpose. Consider using this setting to prevent BITS transfers from competing for network bandwidth when the client computer has a fast network card (10Mbs), but is connected to the network via a slow link (56Kbs).
+> You should base the limit on the speed of the network link, not the computer's network interface card (NIC). This policy setting doesn't affect Peercaching transfers between peer computers (it does affect transfers from the origin server); the "Limit the maximum network bandwidth used for Peercaching" policy setting should be used for that purpose.
+
+Consider using this setting to prevent BITS transfers from competing for network bandwidth when the client computer has a fast network card (10Mbs), but is connected to the network via a slow link (56Kbs).
 <!-- BandwidthThrottlingEndTime-Description-End -->
 
 <!-- BandwidthThrottlingEndTime-Editable-Begin -->
@@ -53,7 +60,7 @@ This policy specifies the bandwidth throttling end time that Background Intellig
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-23]` |
 | Default Value  | 17 |
@@ -66,7 +73,7 @@ This policy specifies the bandwidth throttling end time that Background Intellig
 |:--|:--|
 | Name | BITS_MaxBandwidth |
 | Friendly Name | Limit the maximum network bandwidth for BITS background transfers |
-| Element Name | to |
+| Element Name | to. |
 | Location | Computer Configuration |
 | Path | Network > Background Intelligent Transfer Service (BITS) |
 | Registry Key Name | Software\Policies\Microsoft\Windows\BITS |
@@ -85,7 +92,7 @@ This policy specifies the bandwidth throttling end time that Background Intellig
 <!-- BandwidthThrottlingStartTime-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- BandwidthThrottlingStartTime-Applicability-End -->
 
 <!-- BandwidthThrottlingStartTime-OmaUri-Begin -->
@@ -95,12 +102,19 @@ This policy specifies the bandwidth throttling end time that Background Intellig
 <!-- BandwidthThrottlingStartTime-OmaUri-End -->
 
 <!-- BandwidthThrottlingStartTime-Description-Begin -->
-<!-- Description-Source-DDF -->
-This policy specifies the bandwidth throttling start time that Background Intelligent Transfer Service (BITS) uses for background transfers. This policy setting does not affect foreground transfers. This policy is based on the 24-hour clock. Value type is integer. Default value is 8 (8 am). Supported value range 0 - 23. You can specify a limit to use during a specific time interval and at all other times. For example, limit the use of network bandwidth to 10 Kbps from 800 A. M. to 500 P. M. , and use all available unused bandwidth the rest of the day's hours. Using the three policies together (BandwidthThrottlingStartTime, BandwidthThrottlingEndTime, BandwidthThrottlingTransferRate), BITS will limit its bandwidth usage to the specified values. You can specify the limit in kilobits per second (Kbps). If you specify a value less than 2 kilobits, BITS will continue to use approximately 2 kilobits. To prevent BITS transfers from occurring, specify a limit of 0.
-- If you disable or do not configure this policy setting, BITS uses all available unused bandwidth
+<!-- Description-Source-ADMX -->
+This policy setting limits the network bandwidth that Background Intelligent Transfer Service (BITS) uses for background transfers. (This policy setting doesn't affect foreground transfers).
+
+You can specify a limit to use during a specific time interval and at all other times. For example, limit the use of network bandwidth to 10 Kbps from 8:00 A. M. to 5:00 P. M., and use all available unused bandwidth the rest of the day's hours.
+
+- If you enable this policy setting, BITS will limit its bandwidth usage to the specified values. You can specify the limit in kilobits per second (Kbps). If you specify a value less than 2 kilobits, BITS will continue to use approximately 2 kilobits. To prevent BITS transfers from occurring, specify a limit of 0.
+
+- If you disable or don't configure this policy setting, BITS uses all available unused bandwidth.
 
 > [!NOTE]
-> You should base the limit on the speed of the network link, not the computer's network interface card (NIC). This policy setting does not affect peer caching transfers between peer computers (it does affect transfers from the origin server); the Limit the maximum network bandwidth used for Peercaching policy setting should be used for that purpose. Consider using this setting to prevent BITS transfers from competing for network bandwidth when the client computer has a fast network card (10Mbs), but is connected to the network via a slow link (56Kbs).
+> You should base the limit on the speed of the network link, not the computer's network interface card (NIC). This policy setting doesn't affect Peercaching transfers between peer computers (it does affect transfers from the origin server); the "Limit the maximum network bandwidth used for Peercaching" policy setting should be used for that purpose.
+
+Consider using this setting to prevent BITS transfers from competing for network bandwidth when the client computer has a fast network card (10Mbs), but is connected to the network via a slow link (56Kbs).
 <!-- BandwidthThrottlingStartTime-Description-End -->
 
 <!-- BandwidthThrottlingStartTime-Editable-Begin -->
@@ -112,7 +126,7 @@ This policy specifies the bandwidth throttling start time that Background Intell
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-23]` |
 | Default Value  | 8 |
@@ -125,7 +139,7 @@ This policy specifies the bandwidth throttling start time that Background Intell
 |:--|:--|
 | Name | BITS_MaxBandwidth |
 | Friendly Name | Limit the maximum network bandwidth for BITS background transfers |
-| Element Name | From |
+| Element Name | From. |
 | Location | Computer Configuration |
 | Path | Network > Background Intelligent Transfer Service (BITS) |
 | Registry Key Name | Software\Policies\Microsoft\Windows\BITS |
@@ -144,7 +158,7 @@ This policy specifies the bandwidth throttling start time that Background Intell
 <!-- BandwidthThrottlingTransferRate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- BandwidthThrottlingTransferRate-Applicability-End -->
 
 <!-- BandwidthThrottlingTransferRate-OmaUri-Begin -->
@@ -154,12 +168,19 @@ This policy specifies the bandwidth throttling start time that Background Intell
 <!-- BandwidthThrottlingTransferRate-OmaUri-End -->
 
 <!-- BandwidthThrottlingTransferRate-Description-Begin -->
-<!-- Description-Source-DDF -->
-This policy specifies the bandwidth throttling transfer rate in kilobits per second (Kbps) that Background Intelligent Transfer Service (BITS) uses for background transfers. This policy setting does not affect foreground transfers. Value type is integer. Default value is 1000. Supported value range 0 - 4294967200. You can specify a limit to use during a specific time interval and at all other times. For example, limit the use of network bandwidth to 10 Kbps from 800 A. M. to 500 P. M. , and use all available unused bandwidth the rest of the day's hours. Using the three policies together (BandwidthThrottlingStartTime, BandwidthThrottlingEndTime, BandwidthThrottlingTransferRate), BITS will limit its bandwidth usage to the specified values. You can specify the limit in kilobits per second (Kbps). If you specify a value less than 2 kilobits, BITS will continue to use approximately 2 kilobits. To prevent BITS transfers from occurring, specify a limit of 0.
-- If you disable or do not configure this policy setting, BITS uses all available unused bandwidth
+<!-- Description-Source-ADMX -->
+This policy setting limits the network bandwidth that Background Intelligent Transfer Service (BITS) uses for background transfers. (This policy setting doesn't affect foreground transfers).
+
+You can specify a limit to use during a specific time interval and at all other times. For example, limit the use of network bandwidth to 10 Kbps from 8:00 A. M. to 5:00 P. M., and use all available unused bandwidth the rest of the day's hours.
+
+- If you enable this policy setting, BITS will limit its bandwidth usage to the specified values. You can specify the limit in kilobits per second (Kbps). If you specify a value less than 2 kilobits, BITS will continue to use approximately 2 kilobits. To prevent BITS transfers from occurring, specify a limit of 0.
+
+- If you disable or don't configure this policy setting, BITS uses all available unused bandwidth.
 
 > [!NOTE]
-> You should base the limit on the speed of the network link, not the computer's network interface card (NIC). This policy setting does not affect peer caching transfers between peer computers (it does affect transfers from the origin server); the Limit the maximum network bandwidth used for Peercaching policy setting should be used for that purpose. Consider using this setting to prevent BITS transfers from competing for network bandwidth when the client computer has a fast network card (10Mbs), but is connected to the network via a slow link (56Kbs).
+> You should base the limit on the speed of the network link, not the computer's network interface card (NIC). This policy setting doesn't affect Peercaching transfers between peer computers (it does affect transfers from the origin server); the "Limit the maximum network bandwidth used for Peercaching" policy setting should be used for that purpose.
+
+Consider using this setting to prevent BITS transfers from competing for network bandwidth when the client computer has a fast network card (10Mbs), but is connected to the network via a slow link (56Kbs).
 <!-- BandwidthThrottlingTransferRate-Description-End -->
 
 <!-- BandwidthThrottlingTransferRate-Editable-Begin -->
@@ -171,7 +192,7 @@ This policy specifies the bandwidth throttling transfer rate in kilobits per sec
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-4294967200]` |
 | Default Value  | 1000 |
@@ -184,7 +205,7 @@ This policy specifies the bandwidth throttling transfer rate in kilobits per sec
 |:--|:--|
 | Name | BITS_MaxBandwidth |
 | Friendly Name | Limit the maximum network bandwidth for BITS background transfers |
-| Element Name | Limit background transfer rate (Kbps) to |
+| Element Name | Limit background transfer rate (Kbps) to. |
 | Location | Computer Configuration |
 | Path | Network > Background Intelligent Transfer Service (BITS) |
 | Registry Key Name | Software\Policies\Microsoft\Windows\BITS |
@@ -203,7 +224,7 @@ This policy specifies the bandwidth throttling transfer rate in kilobits per sec
 <!-- CostedNetworkBehaviorBackgroundPriority-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- CostedNetworkBehaviorBackgroundPriority-Applicability-End -->
 
 <!-- CostedNetworkBehaviorBackgroundPriority-OmaUri-Begin -->
@@ -213,9 +234,35 @@ This policy specifies the bandwidth throttling transfer rate in kilobits per sec
 <!-- CostedNetworkBehaviorBackgroundPriority-OmaUri-End -->
 
 <!-- CostedNetworkBehaviorBackgroundPriority-Description-Begin -->
-<!-- Description-Source-DDF -->
-This policy setting defines the default behavior that the Background Intelligent Transfer Service (BITS) uses for background transfers when the system is connected to a costed network (3G, etc. ). Download behavior policies further limit the network usage of background transfers.
-- If you enable this policy setting, you can define a default download policy for each BITS job priority. This setting does not override a download policy explicitly configured by the application that created the BITS job, but does apply to jobs that are created by specifying only a priority. For example, you can specify that background jobs are by default to transfer only when on uncosted network connections, but foreground jobs should proceed only when not roaming. The values that can be assigned are:1 - Always transfer2 - Transfer unless roaming3 - Transfer unless surcharge applies (when not roaming or overcap)4 - Transfer unless nearing limit (when not roaming or nearing cap)5 - Transfer only if unconstrained
+<!-- Description-Source-ADMX -->
+This policy setting defines the default behavior that the Background Intelligent Transfer Service (BITS) uses for background transfers when the system is connected to a costed network (3G, etc.). Download behavior policies further limit the network usage of background transfers.
+
+If you enable this policy setting, you can define a default download policy for each BITS job priority. This setting doesn't override a download policy explicitly configured by the application that created the BITS job, but does apply to jobs that are created by specifying only a priority.
+
+For example, you can specify that background jobs are by default to transfer only when on uncosted network connections, but foreground jobs should proceed only when not roaming. The values that can be assigned are:
+
+- Always transfer
+- Transfer unless roaming
+- Transfer unless surcharge applies (when not roaming or overcap)
+- Transfer unless nearing limit (when not roaming or nearing cap)
+- Transfer only if unconstrained
+- Custom--allows you to specify a bitmask, in which the bits describe cost states allowed or disallowed for this priority: (bits described here)
+0x1 - The cost is unknown or the connection is unlimited and is considered to be unrestricted of usage charges and capacity constraints.
+
+0x2 - The usage of this connection is unrestricted up to a certain data limit
+0x4 - The usage of this connection is unrestricted up to a certain data limit and plan usage is less than 80 percent of the limit.
+
+0x8 - Usage of this connection is unrestricted up to a certain data limit and plan usage is between 80 percent and 100 percent of the limit.
+
+0x10 - Usage of this connection is unrestricted up to a certain data limit, which has been exceeded. Surcharge applied or unknown.
+
+0x20 - Usage of this connection is unrestricted up to a certain data limit, which has been exceeded. No surcharge applies, but speeds are likely reduced.
+
+0x40 - The connection is costed on a per-byte basis.
+
+0x80 - The connection is roaming.
+
+0x80000000 - Ignore congestion.
 <!-- CostedNetworkBehaviorBackgroundPriority-Description-End -->
 
 <!-- CostedNetworkBehaviorBackgroundPriority-Editable-Begin -->
@@ -227,7 +274,7 @@ This policy setting defines the default behavior that the Background Intelligent
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- CostedNetworkBehaviorBackgroundPriority-DFProperties-End -->
@@ -251,7 +298,7 @@ This policy setting defines the default behavior that the Background Intelligent
 |:--|:--|
 | Name | BITS_SetTransferPolicyOnCostedNetwork |
 | Friendly Name | Set default download behavior for BITS jobs on costed networks |
-| Element Name | Normal |
+| Element Name | Normal. |
 | Location | Computer Configuration |
 | Path | Network > Background Intelligent Transfer Service (BITS) |
 | Registry Key Name | Software\Policies\Microsoft\Windows\BITS\TransferPolicy |
@@ -270,7 +317,7 @@ This policy setting defines the default behavior that the Background Intelligent
 <!-- CostedNetworkBehaviorForegroundPriority-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- CostedNetworkBehaviorForegroundPriority-Applicability-End -->
 
 <!-- CostedNetworkBehaviorForegroundPriority-OmaUri-Begin -->
@@ -280,9 +327,35 @@ This policy setting defines the default behavior that the Background Intelligent
 <!-- CostedNetworkBehaviorForegroundPriority-OmaUri-End -->
 
 <!-- CostedNetworkBehaviorForegroundPriority-Description-Begin -->
-<!-- Description-Source-DDF -->
-This policy setting defines the default behavior that the foreground Intelligent Transfer Service (BITS) uses for foreground transfers when the system is connected to a costed network (3G, etc. ). Download behavior policies further limit the network usage of foreground transfers.
-- If you enable this policy setting, you can define a default download policy for each BITS job priority. This setting does not override a download policy explicitly configured by the application that created the BITS job, but does apply to jobs that are created by specifying only a priority. For example, you can specify that foreground jobs are by default to transfer only when on uncosted network connections, but foreground jobs should proceed only when not roaming. The values that can be assigned are:1 - Always transfer2 - Transfer unless roaming3 - Transfer unless surcharge applies (when not roaming or overcap)4 - Transfer unless nearing limit (when not roaming or nearing cap)5 - Transfer only if unconstrained
+<!-- Description-Source-ADMX -->
+This policy setting defines the default behavior that the Background Intelligent Transfer Service (BITS) uses for background transfers when the system is connected to a costed network (3G, etc.). Download behavior policies further limit the network usage of background transfers.
+
+If you enable this policy setting, you can define a default download policy for each BITS job priority. This setting doesn't override a download policy explicitly configured by the application that created the BITS job, but does apply to jobs that are created by specifying only a priority.
+
+For example, you can specify that background jobs are by default to transfer only when on uncosted network connections, but foreground jobs should proceed only when not roaming. The values that can be assigned are:
+
+- Always transfer
+- Transfer unless roaming
+- Transfer unless surcharge applies (when not roaming or overcap)
+- Transfer unless nearing limit (when not roaming or nearing cap)
+- Transfer only if unconstrained
+- Custom--allows you to specify a bitmask, in which the bits describe cost states allowed or disallowed for this priority: (bits described here)
+0x1 - The cost is unknown or the connection is unlimited and is considered to be unrestricted of usage charges and capacity constraints.
+
+0x2 - The usage of this connection is unrestricted up to a certain data limit
+0x4 - The usage of this connection is unrestricted up to a certain data limit and plan usage is less than 80 percent of the limit.
+
+0x8 - Usage of this connection is unrestricted up to a certain data limit and plan usage is between 80 percent and 100 percent of the limit.
+
+0x10 - Usage of this connection is unrestricted up to a certain data limit, which has been exceeded. Surcharge applied or unknown.
+
+0x20 - Usage of this connection is unrestricted up to a certain data limit, which has been exceeded. No surcharge applies, but speeds are likely reduced.
+
+0x40 - The connection is costed on a per-byte basis.
+
+0x80 - The connection is roaming.
+
+0x80000000 - Ignore congestion.
 <!-- CostedNetworkBehaviorForegroundPriority-Description-End -->
 
 <!-- CostedNetworkBehaviorForegroundPriority-Editable-Begin -->
@@ -294,7 +367,7 @@ This policy setting defines the default behavior that the foreground Intelligent
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- CostedNetworkBehaviorForegroundPriority-DFProperties-End -->
@@ -318,7 +391,7 @@ This policy setting defines the default behavior that the foreground Intelligent
 |:--|:--|
 | Name | BITS_SetTransferPolicyOnCostedNetwork |
 | Friendly Name | Set default download behavior for BITS jobs on costed networks |
-| Element Name | Foreground |
+| Element Name | Foreground. |
 | Location | Computer Configuration |
 | Path | Network > Background Intelligent Transfer Service (BITS) |
 | Registry Key Name | Software\Policies\Microsoft\Windows\BITS\TransferPolicy |
@@ -337,7 +410,7 @@ This policy setting defines the default behavior that the foreground Intelligent
 <!-- JobInactivityTimeout-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- JobInactivityTimeout-Applicability-End -->
 
 <!-- JobInactivityTimeout-OmaUri-Begin -->
@@ -347,12 +420,19 @@ This policy setting defines the default behavior that the foreground Intelligent
 <!-- JobInactivityTimeout-OmaUri-End -->
 
 <!-- JobInactivityTimeout-Description-Begin -->
-<!-- Description-Source-DDF -->
-This policy setting specifies the number of days a pending BITS job can remain inactive before the job is considered abandoned. By default BITS will wait 90 days before considering an inactive job abandoned. After a job is determined to be abandoned, the job is deleted from BITS and any downloaded files for the job are deleted from the disk
+<!-- Description-Source-ADMX -->
+This policy setting specifies the number of days a pending BITS job can remain inactive before the job is considered abandoned. By default BITS will wait 90 days before considering an inactive job abandoned. After a job is determined to be abandoned, the job is deleted from BITS and any downloaded files for the job are deleted from the disk.
 
 > [!NOTE]
-> Any property changes to the job or any successful download action will reset this timeout. Value type is integer. Default is 90 days. Supported values range 0 - 999. Consider increasing the timeout value if computers tend to stay offline for a long period of time and still have pending jobs. Consider decreasing this value if you are concerned about orphaned jobs occupying disk space.
-- If you disable or do not configure this policy setting, the default value of 90 (days) will be used for the inactive job timeout.
+> Any property changes to the job or any successful download action will reset this timeout.
+
+Consider increasing the timeout value if computers tend to stay offline for a long period of time and still have pending jobs.
+
+Consider decreasing this value if you are concerned about orphaned jobs occupying disk space.
+
+- If you enable this policy setting, you can configure the inactive job timeout to specified number of days.
+
+- If you disable or don't configure this policy setting, the default value of 90 (days) will be used for the inactive job timeout.
 <!-- JobInactivityTimeout-Description-End -->
 
 <!-- JobInactivityTimeout-Editable-Begin -->
@@ -364,7 +444,7 @@ This policy setting specifies the number of days a pending BITS job can remain i
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[1-999]` |
 | Default Value  | 90 |
@@ -377,7 +457,7 @@ This policy setting specifies the number of days a pending BITS job can remain i
 |:--|:--|
 | Name | BITS_Job_Timeout |
 | Friendly Name | Timeout for inactive BITS jobs |
-| Element Name | Inactive Job Timeout in Days |
+| Element Name | Inactive Job Timeout in Days. |
 | Location | Computer Configuration |
 | Path | Network > Background Intelligent Transfer Service (BITS) |
 | Registry Key Name | Software\Policies\Microsoft\Windows\BITS |

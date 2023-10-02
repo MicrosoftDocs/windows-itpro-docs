@@ -1,10 +1,8 @@
 ---
 title: WebAuthn APIs
 description: Learn how to use WebAuthn APIs to enable passwordless authentication for your sites and apps.
-ms.date: 03/09/2023
-appliesto: 
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
-ms.topic: article
+ms.date: 07/27/2023
+ms.topic: how-to
 ---
 # WebAuthn APIs for passwordless authentication on Windows
 <!--MAXADO-6021798-->
@@ -16,7 +14,7 @@ Starting in **Windows 11, version 22H2**, WebAuthn APIs support ECC algorithms.
 
 ## What does this mean?
 
-By using WebAuthn APIs, developer partners and the developer community can use [Windows Hello](./index.yml) or [FIDO2 Security Keys](/azure/active-directory/authentication/howto-authentication-passwordless-security-key) to implement passwordless multi-factor authentication for their applications on Windows devices.
+By using WebAuthn APIs, developer partners and the developer community can use [Windows Hello](./index.md) or [FIDO2 Security Keys](/azure/active-directory/authentication/howto-authentication-passwordless-security-key) to implement passwordless multi-factor authentication for their applications on Windows devices.
 
 Users of these apps or sites can use any browser that supports WebAuthn APIs for passwordless authentication. Users will have a familiar and consistent experience on Windows, no matter which browser they use.
 

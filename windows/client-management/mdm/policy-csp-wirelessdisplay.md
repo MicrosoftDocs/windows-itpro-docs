@@ -4,7 +4,7 @@ description: Learn more about the WirelessDisplay Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -26,7 +26,7 @@ ms.topic: reference
 <!-- AllowMdnsAdvertisement-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- AllowMdnsAdvertisement-Applicability-End -->
 
 <!-- AllowMdnsAdvertisement-OmaUri-Begin -->
@@ -49,7 +49,7 @@ This policy setting allows you to turn off the Wireless Display multicast DNS se
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowMdnsAdvertisement-DFProperties-End -->
@@ -75,7 +75,7 @@ This policy setting allows you to turn off the Wireless Display multicast DNS se
 <!-- AllowMdnsDiscovery-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- AllowMdnsDiscovery-Applicability-End -->
 
 <!-- AllowMdnsDiscovery-OmaUri-Begin -->
@@ -98,7 +98,7 @@ This policy setting allows you to turn off discovering the display service adver
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowMdnsDiscovery-DFProperties-End -->
@@ -124,7 +124,7 @@ This policy setting allows you to turn off discovering the display service adver
 <!-- AllowMovementDetectionOnInfrastructure-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AllowMovementDetectionOnInfrastructure-Applicability-End -->
 
 <!-- AllowMovementDetectionOnInfrastructure-OmaUri-Begin -->
@@ -149,7 +149,7 @@ If you set it to 1, your PC will detect that you have moved and will automatical
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowMovementDetectionOnInfrastructure-DFProperties-End -->
@@ -175,7 +175,7 @@ If you set it to 1, your PC will detect that you have moved and will automatical
 <!-- AllowPCReceiverToBeTCPServer-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AllowPCReceiverToBeTCPServer-Applicability-End -->
 
 <!-- AllowPCReceiverToBeTCPServer-OmaUri-Begin -->
@@ -200,7 +200,7 @@ If you set it to 1, your PC may receive the incoming projection as a TCP server.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowPCReceiverToBeTCPServer-DFProperties-End -->
@@ -226,7 +226,7 @@ If you set it to 1, your PC may receive the incoming projection as a TCP server.
 <!-- AllowPCSenderToBeTCPClient-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AllowPCSenderToBeTCPClient-Applicability-End -->
 
 <!-- AllowPCSenderToBeTCPClient-OmaUri-Begin -->
@@ -251,7 +251,7 @@ If you set it to 1, your PC may start an outgoing projection as a TCP client.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowPCSenderToBeTCPClient-DFProperties-End -->
@@ -277,7 +277,7 @@ If you set it to 1, your PC may start an outgoing projection as a TCP client.
 <!-- AllowProjectionFromPC-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowProjectionFromPC-Applicability-End -->
 
 <!-- AllowProjectionFromPC-OmaUri-Begin -->
@@ -289,7 +289,7 @@ If you set it to 1, your PC may start an outgoing projection as a TCP client.
 <!-- AllowProjectionFromPC-Description-Begin -->
 <!-- Description-Source-DDF -->
 This policy allows you to turn off projection from a PC.
-If you set it to 0, your PC cannot discover or project to other devices.
+If you set it to 0, your PC can't discover or project to other devices.
 If you set it to 1, your PC can discover and project to other devices.
 <!-- AllowProjectionFromPC-Description-End -->
 
@@ -302,7 +302,7 @@ If you set it to 1, your PC can discover and project to other devices.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowProjectionFromPC-DFProperties-End -->
@@ -312,7 +312,7 @@ If you set it to 1, your PC can discover and project to other devices.
 
 | Value | Description |
 |:--|:--|
-| 0 | Your PC cannot discover or project to other devices. |
+| 0 | Your PC can't discover or project to other devices. |
 | 1 (Default) | Your PC can discover and project to other devices. |
 <!-- AllowProjectionFromPC-AllowedValues-End -->
 
@@ -328,7 +328,7 @@ If you set it to 1, your PC can discover and project to other devices.
 <!-- AllowProjectionFromPCOverInfrastructure-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowProjectionFromPCOverInfrastructure-Applicability-End -->
 
 <!-- AllowProjectionFromPCOverInfrastructure-OmaUri-Begin -->
@@ -340,7 +340,7 @@ If you set it to 1, your PC can discover and project to other devices.
 <!-- AllowProjectionFromPCOverInfrastructure-Description-Begin -->
 <!-- Description-Source-DDF -->
 This policy allows you to turn off projection from a PC over infrastructure.
-If you set it to 0, your PC cannot discover or project to other infrastructure devices, though it may still be possible to discover and project over WiFi Direct.
+If you set it to 0, your PC can't discover or project to other infrastructure devices, though it may still be possible to discover and project over WiFi Direct.
 If you set it to 1, your PC can discover and project to other devices over infrastructure.
 <!-- AllowProjectionFromPCOverInfrastructure-Description-End -->
 
@@ -353,7 +353,7 @@ If you set it to 1, your PC can discover and project to other devices over infra
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowProjectionFromPCOverInfrastructure-DFProperties-End -->
@@ -363,7 +363,7 @@ If you set it to 1, your PC can discover and project to other devices over infra
 
 | Value | Description |
 |:--|:--|
-| 0 | Your PC cannot discover or project to other infrastructure devices, although it is possible to discover and project over WiFi Direct. |
+| 0 | Your PC can't discover or project to other infrastructure devices, although it's possible to discover and project over WiFi Direct. |
 | 1 (Default) | Your PC can discover and project to other devices over infrastructure. |
 <!-- AllowProjectionFromPCOverInfrastructure-AllowedValues-End -->
 
@@ -379,7 +379,7 @@ If you set it to 1, your PC can discover and project to other devices over infra
 <!-- AllowProjectionToPC-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowProjectionToPC-Applicability-End -->
 
 <!-- AllowProjectionToPC-OmaUri-Begin -->
@@ -406,7 +406,7 @@ If you turn it off or don't configure it, your PC is discoverable and can be pro
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowProjectionToPC-DFProperties-End -->
@@ -416,7 +416,7 @@ If you turn it off or don't configure it, your PC is discoverable and can be pro
 
 | Value | Description |
 |:--|:--|
-| 0 | Projection to PC is not allowed. Always off and the user cannot enable it. |
+| 0 | Projection to PC isn't allowed. Always off and the user can't enable it. |
 | 1 (Default) | Projection to PC is allowed. Enabled only above the lock screen. |
 <!-- AllowProjectionToPC-AllowedValues-End -->
 
@@ -446,7 +446,7 @@ If you turn it off or don't configure it, your PC is discoverable and can be pro
 <!-- AllowProjectionToPCOverInfrastructure-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowProjectionToPCOverInfrastructure-Applicability-End -->
 
 <!-- AllowProjectionToPCOverInfrastructure-OmaUri-Begin -->
@@ -458,7 +458,7 @@ If you turn it off or don't configure it, your PC is discoverable and can be pro
 <!-- AllowProjectionToPCOverInfrastructure-Description-Begin -->
 <!-- Description-Source-DDF -->
 This policy setting allows you to turn off projection to a PC over infrastructure.
-If you set it to 0, your PC cannot be discoverable and can't be projected to over infrastructure, though it may still be possible to project over WiFi Direct.
+If you set it to 0, your PC can't be discoverable and can't be projected to over infrastructure, though it may still be possible to project over WiFi Direct.
 If you set it to 1, your PC can be discoverable and can be projected to over infrastructure.
 <!-- AllowProjectionToPCOverInfrastructure-Description-End -->
 
@@ -471,7 +471,7 @@ If you set it to 1, your PC can be discoverable and can be projected to over inf
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowProjectionToPCOverInfrastructure-DFProperties-End -->
@@ -481,7 +481,7 @@ If you set it to 1, your PC can be discoverable and can be projected to over inf
 
 | Value | Description |
 |:--|:--|
-| 0 | Your PC is not discoverable and other devices cannot project to it over infrastructure, although it is possible to project to it over WiFi Direct. |
+| 0 | Your PC isn't discoverable and other devices can't project to it over infrastructure, although it's possible to project to it over WiFi Direct. |
 | 1 (Default) | Your PC is discoverable and other devices can project to it over infrastructure. |
 <!-- AllowProjectionToPCOverInfrastructure-AllowedValues-End -->
 
@@ -497,7 +497,7 @@ If you set it to 1, your PC can be discoverable and can be projected to over inf
 <!-- AllowUserInputFromWirelessDisplayReceiver-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- AllowUserInputFromWirelessDisplayReceiver-Applicability-End -->
 
 <!-- AllowUserInputFromWirelessDisplayReceiver-OmaUri-Begin -->
@@ -520,7 +520,7 @@ Setting this policy controls whether or not the wireless display can send input-
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowUserInputFromWirelessDisplayReceiver-DFProperties-End -->
@@ -546,7 +546,7 @@ Setting this policy controls whether or not the wireless display can send input-
 <!-- RequirePinForPairing-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- RequirePinForPairing-Applicability-End -->
 
 <!-- RequirePinForPairing-OmaUri-Begin -->
@@ -575,7 +575,7 @@ If you set this to 'Always', all pairings will require PIN.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- RequirePinForPairing-DFProperties-End -->
@@ -585,7 +585,7 @@ If you set this to 'Always', all pairings will require PIN.
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | PIN is not required. |
+| 0 (Default) | PIN isn't required. |
 | 1 | Pairing ceremony for new devices will always require a PIN. |
 | 2 | All pairings will require PIN. |
 <!-- RequirePinForPairing-AllowedValues-End -->

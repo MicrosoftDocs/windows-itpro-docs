@@ -1,5 +1,5 @@
 ---
-title: DCOM Machine Access Restrictions in Security Descriptor Definition Language (SDDL) syntax (Windows 10)
+title: DCOM Machine Access Restrictions in Security Descriptor Definition Language (SDDL) syntax 
 description: Learn about best practices and more for the syntax policy setting, DCOM Machine Access Restrictions in Security Descriptor Definition Language (SDDL).
 ms.assetid: 0fe3521a-5252-44df-8a47-8d92cf936e7c
 ms.reviewer: 
@@ -42,7 +42,7 @@ This policy setting allows you to specify an ACL in two different ways. You can 
 
 -   Blank
 
-    This value represents how the local security policy deletes the policy enforcement key. This value deletes the policy and then sets it as Not defined. The Blank value is set by using the ACL editor to empty the list, and then pressing OK.
+    This value represents how the local security policy deletes the policy enforcement key. This value deletes the policy and then sets it as Not defined. To set a blank value, select "Define this policy setting" and leave the Security descriptor empty, and then select OK.
 
 ### Location
 

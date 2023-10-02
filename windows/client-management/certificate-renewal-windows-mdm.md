@@ -1,42 +1,33 @@
 ---
 title: Certificate Renewal
 description: Learn how to find all the resources that you need to provide continuous access to client certificates.
-MS-HAID: 
-  - 'p\_phdevicemgmt.certificate\_renewal'
-  - 'p\_phDeviceMgmt.certificate\_renewal\_windows\_mdm'
-ms.reviewer: 
-manager: aaroncz
-ms.author: vinpa
 ms.topic: article
-ms.prod: windows-client
-ms.technology: itpro-manage
-author: vinaypamnani-msft
-ms.date: 06/26/2017
+ms.date: 08/10/2023
 ---
 
 # Certificate Renewal
 
-The enrolled client certificate expires after a period of use. The expiration date of the certificate is specified by the server. To ensure continuous access to enterprise applications, Windows supports a user-triggered certificate renewal process. The user is prompted to provide the current password for the corporate account. The enrollment client gets a new client certificate from the enrollment server, and deletes the old certificate. The client generates a new private/public key pair, generates a PKCS\#7 request, and signs the PKCS\#7 request with the existing certificate. In Windows, automatic MDM client certificate renewal is also supported.
+The enrolled client certificate expires after a period of use. The expiration date of the certificate is specified by the server. To ensure continuous access to enterprise applications, Windows supports a user-triggered certificate renewal process. The user is prompted to provide the current password for the corporate account. The enrollment client gets a new client certificate from the enrollment server, and deletes the old certificate. The client generates a new private/public key pair, generates a PKCS#7 request, and signs the PKCS#7 request with the existing certificate. In Windows, automatic MDM client certificate renewal is also supported.
 
-> [!Note]
+> [!NOTE]
 > Make sure that the EntDMID in the DMClient configuration service provider is set before the certificate renewal request is triggered.
 
 ## Automatic certificate renewal request
 
 Windows supports automatic certificate renewal, also known as Renew On Behalf Of (ROBO), that doesn't require any user interaction. For auto renewal, the enrollment client uses the existing MDM client certificate to do client Transport Layer Security (TLS). The user security token isn't needed in the SOAP header. As a result, the MDM certificate enrollment server is required to support client TLS for certificate-based client authentication for automatic certificate renewal.
 
-> [!Note]
+> [!NOTE]
 > Certificate renewal of the enrollment certificate through ROBO is only supported with Microsoft PKI.
 
 Auto certificate renewal is the only supported MDM client certificate renewal method for the device that's enrolled using WAB authentication. Meaning, the AuthPolicy is set to Federated. It also means if the server supports WAB authentication, then the MDM certificate enrollment server MUST also support client TLS to renew the MDM client certificate.
 
-For Windows devices, during the MDM client certificate enrollment phase or during MDM management section, the enrollment server or MDM server could configure the device to support automatic MDM client certificate renewal using [CertificateStore CSP’s](mdm/certificatestore-csp.md) ROBOSupport node under CertificateStore/My/WSTEP/Renew URL.
+For Windows devices, during the MDM client certificate enrollment phase or during MDM management section, the enrollment server or MDM server could configure the device to support automatic MDM client certificate renewal using [CertificateStore CSP's](mdm/certificatestore-csp.md) ROBOSupport node under `CertificateStore/My/WSTEP/Renew` URL.
 
-With automatic renewal, the PKCS\#7 message content isn’t b64 encoded separately. With manual certificate renewal, there's an additional b64 encoding for PKCS\#7 message content.
+With automatic renewal, the PKCS#7 message content isn't base64 encoded separately. With manual certificate renewal, base64 encoding for PKCS#7 message content is required.
 
-During the automatic certificate renewal process, if the root certificate isn’t trusted by the device, the authentication will fail. Use one of device pre-installed root certificates, or configure the root cert over a DM session using the [CertificateStore CSP](mdm/certificatestore-csp.md).
+During the automatic certificate renewal process, if the device doesn't trust the root certificate, the authentication fails. Use one of device preinstalled root certificates, or configure the root cert over a DM session using the [CertificateStore CSP](mdm/certificatestore-csp.md).
 
-During the automatic certificate renew process, the device will deny HTTP redirect request from the server. It won't deny the request if the same redirect URL that the user accepted during the initial MDM enrollment process is used.
+During the automatic certificate renewal process, the device denies HTTP redirect request from the server. It doesn't deny the request if the same redirect URL that the user accepted during the initial MDM enrollment process is used.
 
 The following example shows the details of an automatic renewal request.
 
@@ -94,28 +85,25 @@ The following example shows the details of an automatic renewal request.
 
 ## Certificate renewal schedule configuration
 
-In Windows, the renewal period can only be set during the MDM enrollment phase. Windows supports a certificate renewal period and renewal failure retry. They're configurable by both MDM enrollment server and later by the MDM management server using CertificateStore CSP’s RenewPeriod and RenewInterval nodes. The device could retry automatic certificate renewal multiple times until the certificate expires. For manual certificate renewal, the Windows device reminds the user with a dialog at every renewal retry time until the certificate is expired.
+In Windows, the renewal period can only be set during the MDM enrollment phase. Windows supports a certificate renewal period and renewal failure retry. They're configurable by both MDM enrollment server and later by the MDM management server using CertificateStore CSP's RenewPeriod and RenewInterval nodes. The device could retry automatic certificate renewal multiple times until the certificate expires. For manual certificate renewal, the Windows device reminds the user with a dialog at every renewal retry time until the certificate is expired.
 
-For more information about the parameters, see the CertificateStore configuration service provider.
+For more information about the parameters, see the [CertificateStore configuration service provider](mdm/certificatestore-csp.md).
 
-Unlike manual certificate renewal, the device will not do an automatic MDM client certificate renewal if the certificate is already expired. To make sure the device has enough time to automatically renew, we recommend you set a renewal period a couple months (40-60 days) before the certificate expires. And, set the renewal retry interval to every few days, like every 4-5 days instead every 7 days (weekly). This change increases the chance that the device will try to connect at different days of the week.
-
-> [!Note]
-> For PCs that were previously enrolled in MDM in Windows 8.1 and then upgraded to Windows 10, renewal will be triggered for the enrollment certificate. Thereafter, renewal will happen at the configured ROBO interval.
+Unlike manual certificate renewal, the device doesn't perform an automatic MDM client certificate renewal if the certificate is already expired. To make sure the device has enough time to automatically renew, we recommend you set a renewal period a couple months (40-60 days) before the certificate expires. And, set the renewal retry interval to every few days, like every 4-5 days instead of every seven days (weekly). This change increases the chance that the device will try to connect at different days of the week.
 
 ## Certificate renewal response
 
-When RequestType is set to Renew, the web service verifies the following (in additional to initial enrollment):
+When RequestType is set to Renew, the web service verifies the following (in addition to the initial enrollment):
 
--   The signature of the PKCS\#7 BinarySecurityToken is correct
--   The client’s certificate is in the renewal period
--   The certificate was issued by the enrollment service
--   The requester is the same as the requester for initial enrollment
--   For standard client’s request, the client hasn’t been blocked
+- The signature of the PKCS#7 BinarySecurityToken is correct
+- The client's certificate is in the renewal period
+- The certificate is issued by the enrollment service
+- The requester is the same as the requester for initial enrollment
+- For standard client's request, the client hasn't been blocked
 
-After validation is completed, the web service retrieves the PKCS\#10 content from the PKCS\#7 BinarySecurityToken. The rest is the same as initial enrollment, except that the Provisioning XML only needs to have the new certificate issued by the CA.
+After validation is completed, the web service retrieves the PKCS#10 content from the PKCS#7 BinarySecurityToken. The rest is the same as initial enrollment, except that the Provisioning XML only needs to have the new certificate issued by the CA.
 
-> [!Note]
+> [!NOTE]
 > The HTTP server response must not be chunked; it must be sent as one message.
 
 The following example shows the details of a certificate renewal response.
@@ -123,7 +111,8 @@ The following example shows the details of a certificate renewal response.
 ```xml
 <wap-provisioningdoc version="1.1">
    <characteristic type="CertificateStore">
-<!-- Root certificate provision is only needed here if it is not in the device already -->      <characteristic type="Root">
+   <!-- Root certificate provision is only needed here if it is not in the device already -->
+      <characteristic type="Root">
          <characteristic type="System">
             <characteristic type="EncodedRootCertHashInsertedHere ">
                <parm name="EncodedCertificate" value="EncodedCertInsertedHere" />
@@ -145,14 +134,14 @@ The following example shows the details of a certificate renewal response.
 </wap-provisioningdoc>
 ```
 
-> [!Note]
+> [!NOTE]
 > The client receives a new certificate, instead of renewing the initial certificate. The administrator controls which certificate template the client should use. The templates may be different at renewal time than the initial enrollment time.
 
 ## Configuration service providers supported during MDM enrollment and certificate renewal
 
-The following configuration service providers are supported during MDM enrollment and certificate renewal process. See Configuration service provider reference for detailed descriptions of each configuration service provider.
+The following configuration service providers are supported during MDM enrollment and certificate renewal process.
 
--   CertificateStore
--   w7 APPLICATION
--   DMClient
--   EnterpriseAppManagement
+- [CertificateStore](mdm/certificatestore-csp.md)
+- [w7 APPLICATION](mdm/w7-application-csp.md)
+- [DMClient](mdm/dmclient-csp.md)
+- [EnterpriseAppManagement](mdm/enterpriseappvmanagement-csp.md)

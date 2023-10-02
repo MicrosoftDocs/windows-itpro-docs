@@ -11,9 +11,10 @@ metadata:
   ms.topic: landing-page
   ms.collection:
     - highpri
+    - tier1
   author: aczechowski
   ms.author: aaroncz
-  manager: dougeby
+  manager: aaroncz
   ms.date: 11/14/2022
   localization_priority: medium
 
@@ -31,6 +32,8 @@ landingContent:
             url: windows-11-plan.md
           - text: Prepare for Windows 11
             url: windows-11-prepare.md
+          - text: Windows commercial licensing overview
+            url: windows-licensing.md
 
   - title: Windows 10
     linkLists:
@@ -62,4 +65,4 @@ landingContent:
           - text: Compare Windows 11 Editions
             url: https://www.microsoft.com/windows/business/compare-windows-11
           - text: Windows 10 Enterprise LTSC
-            url: ltsc/index.md
+            url: ltsc/overview.md

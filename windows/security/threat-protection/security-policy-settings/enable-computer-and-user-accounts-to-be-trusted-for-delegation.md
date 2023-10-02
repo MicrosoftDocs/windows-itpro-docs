@@ -1,5 +1,5 @@
 ---
-title: Trust computer and user accounts for delegation (Windows 10)
+title: Trust computer and user accounts for delegation 
 description: Learn about best practices, security considerations and more for the security policy setting, Enable computer and user accounts to be trusted for delegation.
 ms.assetid: 524062d4-1595-41f3-8ce1-9c85fd21497b
 ms.reviewer: 
@@ -86,7 +86,7 @@ Settings are applied in the following order through a Group Policy Object (GPO),
 When a local setting is greyed out, it indicates that a GPO currently controls that setting.
 
 > [!NOTE]
-> More information about configuring the policy can be found [here](./how-to-configure-security-policy-settings.md).
+> More information about configuring the policy can be found [here](how-to-configure-security-policy-settings.md).
 
 ## Security considerations
 

@@ -4,7 +4,7 @@ description: Learn the policies in Policy CSP supported by HoloLens (1st gen) Co
 ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
-ms.topic: article
+ms.topic: reference
 ms.prod: windows-client
 ms.technology: itpro-manage
 author: vinaypamnani-msft

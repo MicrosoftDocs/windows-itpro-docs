@@ -7,9 +7,13 @@ ms.author: mstewart
 author: mestew
 manager: aaroncz
 ms.localizationpriority: medium
-ms.topic: article
+ms.topic: conceptual
 ms.date: 10/18/2022
-ms.collection: highpri, tier1
+ms.collection:
+  - highpri
+  - tier2
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10, version 22H2</a>
 ---
 
 # What's new in Windows 10, version 22H2

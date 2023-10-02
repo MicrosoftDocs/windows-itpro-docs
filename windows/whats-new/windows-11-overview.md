@@ -9,14 +9,14 @@ ms.date: 09/20/2022
 ms.technology: itpro-fundamentals
 ms.localizationpriority: medium
 ms.topic: overview
-ms.collection: highpri, tier1
+ms.collection:
+  - highpri
+  - tier1
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
 ---
 
 # Windows 11 overview
-
-**Applies to**:
-
-- Windows 11
 
 Windows 11 is the next client operating system, and includes features that organizations should know. Windows 11 is built on the same foundation as Windows 10. If you use Windows 10, then Windows 11 is a natural transition. It's an update to what you know, and what you're familiar with.
 
@@ -152,7 +152,7 @@ For more information on the security features you can configure, manage, and enf
 
 - Your Windows 10 apps will also work on Windows 11. **[App Assure](https://www.microsoft.com/fasttrack/microsoft-365/app-assure)** is also available if there are some issues.
 
-  You can continue to use **MSIX packages** for your UWP, Win32, WPF, and WinForm desktop application files. Continue to use **Windows Package Manager** to install Windows apps. You can create **Azure virtual desktops** that run Windows 11. Use **Azure Virtual desktop with MSIX app attach** to virtualize desktops and apps. For more information on these features, see [Overview of apps on Windows client devices](/windows/application-management/apps-in-windows-10).
+  You can continue to use **MSIX packages** for your UWP, Win32, WPF, and WinForm desktop application files. Continue to use **Windows Package Manager** to install Windows apps. You can create **Azure virtual desktops** that run Windows 11. Use **Azure Virtual desktop with MSIX app attach** to virtualize desktops and apps. For more information on these features, see [Overview of apps on Windows client devices](/windows/application-management/overview-windows-apps).
 
   In the **Settings** app > **Apps**, users can manage some of the app settings. For example, they can get apps anywhere, but let the user know if there's a comparable app in the Microsoft Store. They can also choose which apps start when they sign in.
 

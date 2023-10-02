@@ -4,7 +4,7 @@ description: Learn more about the Settings Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -26,7 +26,7 @@ ms.topic: reference
 <!-- AllowAutoPlay-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowAutoPlay-Applicability-End -->
 
 <!-- AllowAutoPlay-OmaUri-Begin -->
@@ -37,10 +37,10 @@ ms.topic: reference
 
 <!-- AllowAutoPlay-Description-Begin -->
 <!-- Description-Source-DDF -->
-Allows the user to change Auto Play settings
+Allows the user to change Auto Play settings.
 
 > [!NOTE]
-> Setting this policy to 0 (Not allowed) does not affect the autoplay dialog box that appears when a device is connected.
+> Setting this policy to 0 (Not allowed) doesn't affect the autoplay dialog box that appears when a device is connected.
 <!-- AllowAutoPlay-Description-End -->
 
 <!-- AllowAutoPlay-Editable-Begin -->
@@ -52,7 +52,7 @@ Allows the user to change Auto Play settings
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowAutoPlay-DFProperties-End -->
@@ -78,7 +78,7 @@ Allows the user to change Auto Play settings
 <!-- AllowDataSense-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowDataSense-Applicability-End -->
 
 <!-- AllowDataSense-OmaUri-Begin -->
@@ -104,7 +104,7 @@ Allows the user to change Data Sense settings.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowDataSense-DFProperties-End -->
@@ -130,7 +130,7 @@ Allows the user to change Data Sense settings.
 <!-- AllowDateTime-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowDateTime-Applicability-End -->
 
 <!-- AllowDateTime-OmaUri-Begin -->
@@ -153,7 +153,7 @@ Allows the user to change date and time settings.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowDateTime-DFProperties-End -->
@@ -179,7 +179,7 @@ Allows the user to change date and time settings.
 <!-- AllowEditDeviceName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowEditDeviceName-Applicability-End -->
 
 <!-- AllowEditDeviceName-OmaUri-Begin -->
@@ -202,7 +202,7 @@ Allows the user to edit the device name.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowEditDeviceName-DFProperties-End -->
@@ -228,7 +228,7 @@ Allows the user to edit the device name.
 <!-- AllowLanguage-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowLanguage-Applicability-End -->
 
 <!-- AllowLanguage-OmaUri-Begin -->
@@ -251,7 +251,7 @@ Allows the user to change the language settings.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowLanguage-DFProperties-End -->
@@ -277,7 +277,7 @@ Allows the user to change the language settings.
 <!-- AllowOnlineTips-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- AllowOnlineTips-Applicability-End -->
 
 <!-- AllowOnlineTips-OmaUri-Begin -->
@@ -287,8 +287,10 @@ Allows the user to change the language settings.
 <!-- AllowOnlineTips-OmaUri-End -->
 
 <!-- AllowOnlineTips-Description-Begin -->
-<!-- Description-Source-DDF -->
-Enables or disables the retrieval of online tips and help for the Settings app. If disabled, Settings will not contact Microsoft content services to retrieve tips and help content.
+<!-- Description-Source-ADMX -->
+Enables or disables the retrieval of online tips and help for the Settings app.
+
+If disabled, Settings won't contact Microsoft content services to retrieve tips and help content.
 <!-- AllowOnlineTips-Description-End -->
 
 <!-- AllowOnlineTips-Editable-Begin -->
@@ -300,7 +302,7 @@ Enables or disables the retrieval of online tips and help for the Settings app. 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowOnlineTips-DFProperties-End -->
@@ -340,7 +342,7 @@ Enables or disables the retrieval of online tips and help for the Settings app. 
 <!-- AllowPowerSleep-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowPowerSleep-Applicability-End -->
 
 <!-- AllowPowerSleep-OmaUri-Begin -->
@@ -363,7 +365,7 @@ Allows the user to change power and sleep settings.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowPowerSleep-DFProperties-End -->
@@ -389,7 +391,7 @@ Allows the user to change power and sleep settings.
 <!-- AllowRegion-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowRegion-Applicability-End -->
 
 <!-- AllowRegion-OmaUri-Begin -->
@@ -412,7 +414,7 @@ Allows the user to change the region settings.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowRegion-DFProperties-End -->
@@ -438,7 +440,7 @@ Allows the user to change the region settings.
 <!-- AllowSignInOptions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowSignInOptions-Applicability-End -->
 
 <!-- AllowSignInOptions-OmaUri-Begin -->
@@ -461,7 +463,7 @@ Allows the user to change sign-in options.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowSignInOptions-DFProperties-End -->
@@ -487,7 +489,7 @@ Allows the user to change sign-in options.
 <!-- AllowVPN-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowVPN-Applicability-End -->
 
 <!-- AllowVPN-OmaUri-Begin -->
@@ -510,7 +512,7 @@ Allows the user to change VPN settings.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowVPN-DFProperties-End -->
@@ -536,7 +538,7 @@ Allows the user to change VPN settings.
 <!-- AllowWorkplace-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowWorkplace-Applicability-End -->
 
 <!-- AllowWorkplace-OmaUri-Begin -->
@@ -559,7 +561,7 @@ Allows user to change workplace settings.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowWorkplace-DFProperties-End -->
@@ -585,7 +587,7 @@ Allows user to change workplace settings.
 <!-- AllowYourAccount-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowYourAccount-Applicability-End -->
 
 <!-- AllowYourAccount-OmaUri-Begin -->
@@ -608,7 +610,7 @@ Allows user to change account settings.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowYourAccount-DFProperties-End -->
@@ -634,7 +636,7 @@ Allows user to change account settings.
 <!-- ConfigureTaskbarCalendar-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- ConfigureTaskbarCalendar-Applicability-End -->
 
 <!-- ConfigureTaskbarCalendar-OmaUri-Begin -->
@@ -649,9 +651,9 @@ By default, the calendar is set according to the locale of the operating system,
 
 - If you enable this policy setting, users can show an additional calendar in either Simplified Chinese (Lunar) or Traditional Chinese (Lunar), regardless of the locale.
 
-- If you disable this policy setting, users cannot show an additional calendar, regardless of the locale.
+- If you disable this policy setting, users can't show an additional calendar, regardless of the locale.
 
-- If you do not configure this policy setting, the calendar will be set according to the default logic.
+- If you don't configure this policy setting, the calendar will be set according to the default logic.
 <!-- ConfigureTaskbarCalendar-Description-End -->
 
 <!-- ConfigureTaskbarCalendar-Editable-Begin -->
@@ -663,7 +665,7 @@ By default, the calendar is set according to the locale of the operating system,
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- ConfigureTaskbarCalendar-DFProperties-End -->
@@ -705,7 +707,7 @@ By default, the calendar is set according to the locale of the operating system,
 <!-- PageVisibilityList-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- PageVisibilityList-Applicability-End -->
 
 <!-- PageVisibilityList-OmaUri-Begin -->
@@ -719,14 +721,28 @@ By default, the calendar is set according to the locale of the operating system,
 <!-- PageVisibilityList-OmaUri-End -->
 
 <!-- PageVisibilityList-Description-Begin -->
-<!-- Description-Source-DDF -->
-Allows IT Admins to either prevent specific pages in the System Settings app from being visible or accessible, or to do so for all pages except those specified. The mode will be specified by the policy string beginning with either the string showonly or hide. Pages are identified by a shortened version of their already published URIs, which is the URI minus the ms-settings prefix. For example, if the URI for a settings page is ms-settingsbluetooth, the page identifier used in the policy will be just bluetooth. Multiple page identifiers are separated by semicolons. The following example illustrates a policy that would allow access only to the about and bluetooth pages, which have URI ms-settingsabout and ms-settingsbluetooth respectivelyshowonlyabout;bluetooth. If the policy is not specified, the behavior will be that no pages are affected. If the policy string is formatted incorrectly, it will be ignored entirely (i. e. treated as not set) to prevent the machine from becoming unserviceable if data corruption occurs. **Note** that if a page is already hidden for another reason, then it will remain hidden even if it is in a showonly list. The format of the PageVisibilityList value is as follows The value is a unicode string up to 10,000 characters long, which will be used without case sensitivity. There are two variants one that shows only the given pages and one which hides the given pages. The first variant starts with the string showonly and the second with the string hide. Following the variant identifier is a semicolon-delimited list of page identifiers, which must not have any extra whitespace. Each page identifier is the ms-settingsxyz URI for the page, minus the ms-settings prefix, so the identifier for the page with URI ms-settingsnetwork-wifi would be just network-wifi. The default value for this setting is an empty string, which is interpreted as show everything. Example 1, specifies that only the wifi and bluetooth pages should be shown (they have URIs ms-settingsnetwork-wifi and ms-settingsbluetooth). All other pages (and the categories they're in) will be hiddenshowonlynetwork-wifi;bluetooth. Example 2, specifies that the wifi page should not be shownhidenetwork-wifi
+<!-- Description-Source-ADMX -->
+Specifies the list of pages to show or hide from the System Settings app.
+
+This policy allows an administrator to block a given set of pages from the System Settings app. Blocked pages won't be visible in the app, and if all pages in a category are blocked the category will be hidden as well. Direct navigation to a blocked page via URI, context menu in Explorer or other means will result in the front page of Settings being shown instead.
+
+This policy has two modes: it can either specify a list of settings pages to show or a list of pages to hide. To specify a list of pages to show, the policy string must begin with "showonly:" (without quotes), and to specify a list of pages to hide, it must begin with "hide:". If a page in a showonly list would normally be hidden for other reasons (such as a missing hardware device), this policy won't force that page to appear. After this, the policy string must contain a semicolon-delimited list of settings page identifiers. The identifier for any given settings page is the published URI for that page, minus the "ms-settings:" protocol part.
+
+Example: to specify that only the About and Bluetooth pages should be shown (their respective URIs are ms-settings:about and ms-settings:bluetooth) and all other pages hidden:
+
+showonly:about;bluetooth.
+
+Example: to specify that only the Bluetooth page (which has URI ms-settings:bluetooth) should be hidden:
+
+hide:bluetooth.
 <!-- PageVisibilityList-Description-End -->
 
 <!-- PageVisibilityList-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-
 For more information on the URI reference scheme used for the various pages of the System Settings app, see [ms-settings: URI scheme reference](/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference).
+
+> [!WARNING]
+> In Windows 11, version 22H2 and later, when you configure this policy to hide any pages that contain `quietmoments` in the URI (for example, `ms-settings:quietmomentsgame`), the Notifications page under System category is hidden.
 
 To validate this policy, use the following steps:
 
@@ -740,7 +756,7 @@ To validate this policy, use the following steps:
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- PageVisibilityList-DFProperties-End -->
 
@@ -751,7 +767,7 @@ To validate this policy, use the following steps:
 |:--|:--|
 | Name | SettingsPageVisibility |
 | Friendly Name | Settings Page Visibility |
-| Element Name | Settings Page Visibility |
+| Element Name | Settings Page Visibility. |
 | Location | Computer and User Configuration |
 | Path | Control Panel |
 | Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |

@@ -4,7 +4,7 @@ description: Learn more about the WindowsInkWorkspace Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -26,7 +26,7 @@ ms.topic: reference
 <!-- AllowSuggestedAppsInWindowsInkWorkspace-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowSuggestedAppsInWindowsInkWorkspace-Applicability-End -->
 
 <!-- AllowSuggestedAppsInWindowsInkWorkspace-OmaUri-Begin -->
@@ -37,7 +37,7 @@ ms.topic: reference
 
 <!-- AllowSuggestedAppsInWindowsInkWorkspace-Description-Begin -->
 <!-- Description-Source-ADMX -->
-Allow suggested apps in Windows Ink Workspace
+Allow suggested apps in Windows Ink Workspace.
 <!-- AllowSuggestedAppsInWindowsInkWorkspace-Description-End -->
 
 <!-- AllowSuggestedAppsInWindowsInkWorkspace-Editable-Begin -->
@@ -49,7 +49,7 @@ Allow suggested apps in Windows Ink Workspace
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowSuggestedAppsInWindowsInkWorkspace-DFProperties-End -->
@@ -89,7 +89,7 @@ Allow suggested apps in Windows Ink Workspace
 <!-- AllowWindowsInkWorkspace-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowWindowsInkWorkspace-Applicability-End -->
 
 <!-- AllowWindowsInkWorkspace-OmaUri-Begin -->
@@ -99,8 +99,8 @@ Allow suggested apps in Windows Ink Workspace
 <!-- AllowWindowsInkWorkspace-OmaUri-End -->
 
 <!-- AllowWindowsInkWorkspace-Description-Begin -->
-<!-- Description-Source-DDF -->
-Specifies whether to allow the user to access the ink workspace.
+<!-- Description-Source-ADMX -->
+Allow Windows Ink Workspace.
 <!-- AllowWindowsInkWorkspace-Description-End -->
 
 <!-- AllowWindowsInkWorkspace-Editable-Begin -->
@@ -112,7 +112,7 @@ Specifies whether to allow the user to access the ink workspace.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 2 |
 <!-- AllowWindowsInkWorkspace-DFProperties-End -->
@@ -123,7 +123,7 @@ Specifies whether to allow the user to access the ink workspace.
 | Value | Description |
 |:--|:--|
 | 0 | Access to ink workspace is disabled. The feature is turned off. |
-| 1 | Ink workspace is enabled (feature is turned on), but the user cannot access it above the lock screen. |
+| 1 | Ink workspace is enabled (feature is turned on), but the user can't access it above the lock screen. |
 | 2 (Default) | Ink workspace is enabled (feature is turned on), and the user is allowed to use it above the lock screen. |
 <!-- AllowWindowsInkWorkspace-AllowedValues-End -->
 
@@ -134,7 +134,7 @@ Specifies whether to allow the user to access the ink workspace.
 |:--|:--|
 | Name | AllowWindowsInkWorkspace |
 | Friendly Name | Allow Windows Ink Workspace |
-| Element Name | Choose one of the following actions |
+| Element Name | Choose one of the following actions. |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Ink Workspace |
 | Registry Key Name | Software\Policies\Microsoft\WindowsInkWorkspace |

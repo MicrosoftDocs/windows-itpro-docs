@@ -19,8 +19,6 @@
           href: update/waas-servicing-strategy-windows-10-updates.md
         - name: Deployment proof of concept
           items: 
-            - name: Demonstrate Autopilot deployment on a VM
-              href: windows-autopilot/demonstrate-deployment-on-vm.md
             - name: Deploy Windows 10 with MDT and Configuration Manager
               items:
                 - name: 'Step by step guide: Configure a test lab to deploy Windows 10'
@@ -103,7 +101,9 @@
         - name: Deploy Windows client
           items:
             - name: Deploy Windows client with Autopilot
-              href: windows-autopilot/index.yml
+              href: /autopilot/
+            - name: Windows deployment scenarios and tools
+              href: windows-deployment-scenarios-and-tools.md
             - name: Deploy Windows client with Configuration Manager
               items:
                 - name: Deploy to a new device
@@ -138,10 +138,6 @@
           items:
             - name: Assign devices to servicing channels
               href: update/waas-servicing-channels-windows-10-updates.md
-            - name: Deploy updates with Configuration Manager
-              href: update/deploy-updates-configmgr.md
-            - name: Deploy updates with Intune
-              href: update/deploy-updates-intune.md
             - name: Deploy updates with WSUS
               href: update/waas-manage-updates-wsus.md
             - name: Deploy updates with Group Policy
@@ -172,8 +168,6 @@
               href: update/waas-integrate-wufb.md
             - name: 'Walkthrough: use Group Policy to configure Windows Update for Business'
               href: update/waas-wufb-group-policy.md
-            - name: 'Walkupdatesthrough: use Intune to configure Windows Update for Business'
-              href: update/deploy-updates-intune.md
         - name: Windows Update for Business deployment service
           items:
           - name: Windows Update for Business deployment service overview
@@ -212,11 +206,15 @@
           items:
           - name: Windows Update for Business reports workbook
             href: update/wufb-reports-workbook.md
+          - name: Delivery Optimization data in reports
+            href: update/wufb-reports-do.md
           - name: Software updates in the Microsoft 365 admin center
             href: update/wufb-reports-admin-center.md                                
           - name: Use Windows Update for Business reports data
-            href: update/wufb-reports-use.md                                
-          - name: Feedback, support, and troubleshooting 
+            href: update/wufb-reports-use.md
+          - name: FAQ for Windows Update for Business reports
+            href: update/wufb-reports-faq.yml                                            
+          - name: Feedback and support 
             href: update/wufb-reports-help.md                                               
         - name: Windows Update for Business reports schema reference
           items:
@@ -238,49 +236,6 @@
             href: update/wufb-reports-schema-ucserviceupdatestatus.md
           - name: UCUpdateAlert
             href: update/wufb-reports-schema-ucupdatealert.md                                                                         
-      - name: Monitor updates with Update Compliance
-        href: update/update-compliance-monitor.md
-        items:
-        - name: Get started
-          items: 
-          - name: Get started with Update Compliance
-            href: update/update-compliance-get-started.md
-          - name: Update Compliance configuration script
-            href: update/update-compliance-configuration-script.md
-          - name: Manually configuring devices for Update Compliance
-            href: update/update-compliance-configuration-manual.md
-          - name: Configuring devices for Update Compliance in Microsoft Intune
-            href: update/update-compliance-configuration-mem.md
-        - name: Update Compliance monitoring
-          items: 
-          - name: Use Update Compliance
-            href: update/update-compliance-using.md
-          - name: Need attention report
-            href: update/update-compliance-need-attention.md
-          - name: Security update status report
-            href: update/update-compliance-security-update-status.md
-          - name: Feature update status report
-            href: update/update-compliance-feature-update-status.md
-          - name: Safeguard holds report
-            href: update/update-compliance-safeguard-holds.md
-          - name: Delivery Optimization in Update Compliance
-            href: update/update-compliance-delivery-optimization.md
-          - name: Data handling and privacy in Update Compliance
-            href: update/update-compliance-privacy.md
-        - name: Schema reference
-          items:
-          - name: Update Compliance schema reference
-            href: update/update-compliance-schema.md
-          - name: WaaSUpdateStatus
-            href: update/update-compliance-schema-waasupdatestatus.md
-          - name: WaaSInsiderStatus
-            href: update/update-compliance-schema-waasinsiderstatus.md
-          - name: WaaSDeploymentStatus
-            href: update/update-compliance-schema-waasdeploymentstatus.md
-          - name: WUDOStatus
-            href: update/update-compliance-schema-wudostatus.md
-          - name: WUDOAggregatedStatus
-            href: update/update-compliance-schema-wudoaggregatedstatus.md
     - name: Troubleshooting
       items:
       - name: Resolve upgrade errors
@@ -636,3 +591,5 @@
 
         - name: Install fonts in Windows client
           href: windows-10-missing-fonts.md
+        - name: Customize Windows PE boot images
+          href: customize-boot-image.md

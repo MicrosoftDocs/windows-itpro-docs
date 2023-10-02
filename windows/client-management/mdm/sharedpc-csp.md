@@ -4,7 +4,7 @@ description: Learn more about the SharedPC CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/28/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -51,7 +51,7 @@ The following list shows the SharedPC configuration service provider nodes:
 <!-- Device-AccountModel-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-AccountModel-Applicability-End -->
 
 <!-- Device-AccountModel-OmaUri-Begin -->
@@ -74,7 +74,7 @@ Configures which type of accounts are allowed to use the PC. Allowed values: 0 (
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- Device-AccountModel-DFProperties-End -->
@@ -101,7 +101,7 @@ Configures which type of accounts are allowed to use the PC. Allowed values: 0 (
 <!-- Device-DeletionPolicy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-DeletionPolicy-Applicability-End -->
 
 <!-- Device-DeletionPolicy-OmaUri-Begin -->
@@ -124,7 +124,7 @@ Configures when accounts will be deleted. Allowed values: 0 (delete immediately)
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- Device-DeletionPolicy-DFProperties-End -->
@@ -151,7 +151,7 @@ Configures when accounts will be deleted. Allowed values: 0 (delete immediately)
 <!-- Device-DiskLevelCaching-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-DiskLevelCaching-Applicability-End -->
 
 <!-- Device-DiskLevelCaching-OmaUri-Begin -->
@@ -174,7 +174,7 @@ Stop deleting accounts when available disk space reaches this threshold, given a
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-100]` |
 | Default Value  | 50 |
@@ -192,7 +192,7 @@ Stop deleting accounts when available disk space reaches this threshold, given a
 <!-- Device-DiskLevelDeletion-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-DiskLevelDeletion-Applicability-End -->
 
 <!-- Device-DiskLevelDeletion-OmaUri-Begin -->
@@ -216,7 +216,7 @@ For example, if the DiskLevelCaching is set to 50 and the DiskLevelDeletion is s
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-100]` |
 | Default Value  | 25 |
@@ -234,7 +234,7 @@ For example, if the DiskLevelCaching is set to 50 and the DiskLevelDeletion is s
 <!-- Device-EnableAccountManager-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-EnableAccountManager-Applicability-End -->
 
 <!-- Device-EnableAccountManager-OmaUri-Begin -->
@@ -257,7 +257,7 @@ Enable the account manager for shared PC mode. If used, this value must be set b
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | false |
 <!-- Device-EnableAccountManager-DFProperties-End -->
@@ -283,7 +283,7 @@ Enable the account manager for shared PC mode. If used, this value must be set b
 <!-- Device-EnableSharedPCMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-EnableSharedPCMode-Applicability-End -->
 
 <!-- Device-EnableSharedPCMode-OmaUri-Begin -->
@@ -306,7 +306,7 @@ Setting this node to "true" triggers the action to configure a device to Shared 
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | false |
 <!-- Device-EnableSharedPCMode-DFProperties-End -->
@@ -332,7 +332,7 @@ Setting this node to "true" triggers the action to configure a device to Shared 
 <!-- Device-EnableSharedPCModeWithOneDriveSync-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-EnableSharedPCModeWithOneDriveSync-Applicability-End -->
 
 <!-- Device-EnableSharedPCModeWithOneDriveSync-OmaUri-Begin -->
@@ -355,7 +355,7 @@ Setting this node to "1" triggers the action to configure a device to Shared PC 
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | false |
 <!-- Device-EnableSharedPCModeWithOneDriveSync-DFProperties-End -->
@@ -381,7 +381,7 @@ Setting this node to "1" triggers the action to configure a device to Shared PC 
 <!-- Device-EnableWindowsInsiderPreviewFlighting-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-EnableWindowsInsiderPreviewFlighting-Applicability-End -->
 
 <!-- Device-EnableWindowsInsiderPreviewFlighting-OmaUri-Begin -->
@@ -404,7 +404,7 @@ Setting this node to "1" enables Windows Insider Preview flighting and the abili
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | false |
 <!-- Device-EnableWindowsInsiderPreviewFlighting-DFProperties-End -->
@@ -430,7 +430,7 @@ Setting this node to "1" enables Windows Insider Preview flighting and the abili
 <!-- Device-InactiveThreshold-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-InactiveThreshold-Applicability-End -->
 
 <!-- Device-InactiveThreshold-OmaUri-Begin -->
@@ -441,7 +441,7 @@ Setting this node to "1" enables Windows Insider Preview flighting and the abili
 
 <!-- Device-InactiveThreshold-Description-Begin -->
 <!-- Description-Source-DDF -->
-Accounts will start being deleted when they have not been logged on during the specified period, given as number of days.
+Accounts will start being deleted when they haven't been logged-on during the specified period, given as number of days.
 <!-- Device-InactiveThreshold-Description-End -->
 
 <!-- Device-InactiveThreshold-Editable-Begin -->
@@ -453,7 +453,7 @@ Accounts will start being deleted when they have not been logged on during the s
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-4294967295]` |
 | Default Value  | 30 |
@@ -471,7 +471,7 @@ Accounts will start being deleted when they have not been logged on during the s
 <!-- Device-KioskModeAUMID-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-KioskModeAUMID-Applicability-End -->
 
 <!-- Device-KioskModeAUMID-OmaUri-Begin -->
@@ -494,7 +494,7 @@ Specifies the AUMID of the app to use with assigned access. If used, this value 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-KioskModeAUMID-DFProperties-End -->
 
@@ -510,7 +510,7 @@ Specifies the AUMID of the app to use with assigned access. If used, this value 
 <!-- Device-KioskModeUserTileDisplayText-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-KioskModeUserTileDisplayText-Applicability-End -->
 
 <!-- Device-KioskModeUserTileDisplayText-OmaUri-Begin -->
@@ -533,7 +533,7 @@ Specifies the display text for the account shown on the sign-in screen which lau
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-KioskModeUserTileDisplayText-DFProperties-End -->
 
@@ -549,7 +549,7 @@ Specifies the display text for the account shown on the sign-in screen which lau
 <!-- Device-MaintenanceStartTime-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-MaintenanceStartTime-Applicability-End -->
 
 <!-- Device-MaintenanceStartTime-OmaUri-Begin -->
@@ -572,7 +572,7 @@ Daily start time of maintenance hour. Given in minutes from midnight. Default is
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-1440]` |
 | Default Value  | 0 |
@@ -590,7 +590,7 @@ Daily start time of maintenance hour. Given in minutes from midnight. Default is
 <!-- Device-MaxPageFileSizeMB-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-MaxPageFileSizeMB-Applicability-End -->
 
 <!-- Device-MaxPageFileSizeMB-OmaUri-Begin -->
@@ -613,7 +613,7 @@ Maximum size of the paging file in MB. Applies only to systems with less than 32
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-32768]` |
 | Default Value  | 1024 |
@@ -631,7 +631,7 @@ Maximum size of the paging file in MB. Applies only to systems with less than 32
 <!-- Device-RestrictLocalStorage-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-RestrictLocalStorage-Applicability-End -->
 
 <!-- Device-RestrictLocalStorage-OmaUri-Begin -->
@@ -654,7 +654,7 @@ Restricts the user from using local storage. This node is optional. If used, thi
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | false |
 <!-- Device-RestrictLocalStorage-DFProperties-End -->
@@ -680,7 +680,7 @@ Restricts the user from using local storage. This node is optional. If used, thi
 <!-- Device-SetEduPolicies-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-SetEduPolicies-Applicability-End -->
 
 <!-- Device-SetEduPolicies-OmaUri-Begin -->
@@ -704,7 +704,7 @@ A boolean value that specifies whether the policies for education environment ar
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | false |
 <!-- Device-SetEduPolicies-DFProperties-End -->
@@ -730,7 +730,7 @@ A boolean value that specifies whether the policies for education environment ar
 <!-- Device-SetPowerPolicies-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-SetPowerPolicies-Applicability-End -->
 
 <!-- Device-SetPowerPolicies-OmaUri-Begin -->
@@ -754,7 +754,7 @@ The default value is Not Configured and the effective power settings are determi
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | false |
 <!-- Device-SetPowerPolicies-DFProperties-End -->
@@ -780,7 +780,7 @@ The default value is Not Configured and the effective power settings are determi
 <!-- Device-SignInOnResume-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-SignInOnResume-Applicability-End -->
 
 <!-- Device-SignInOnResume-OmaUri-Begin -->
@@ -803,7 +803,7 @@ Require signing in on waking up from sleep. If used, this value must be set befo
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | false |
 <!-- Device-SignInOnResume-DFProperties-End -->
@@ -829,7 +829,7 @@ Require signing in on waking up from sleep. If used, this value must be set befo
 <!-- Device-SleepTimeout-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-SleepTimeout-Applicability-End -->
 
 <!-- Device-SleepTimeout-OmaUri-Begin -->
@@ -852,7 +852,7 @@ The amount of time before the PC sleeps, giving in seconds. 0 means the PC never
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-4294967295]` |
 | Default Value  | 300 |

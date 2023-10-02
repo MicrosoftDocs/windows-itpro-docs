@@ -4,7 +4,7 @@ description: Learn more about the Kerberos Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- Kerberos-Begin -->
 # Policy CSP - Kerberos
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- Kerberos-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -31,7 +28,7 @@ ms.topic: reference
 <!-- AllowForestSearchOrder-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowForestSearchOrder-Applicability-End -->
 
 <!-- AllowForestSearchOrder-OmaUri-Begin -->
@@ -44,9 +41,9 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting defines the list of trusting forests that the Kerberos client searches when attempting to resolve two-part service principal names (SPNs).
 
-- If you enable this policy setting, the Kerberos client searches the forests in this list, if it is unable to resolve a two-part SPN. If a match is found, the Kerberos client requests a referral ticket to the appropriate domain.
+- If you enable this policy setting, the Kerberos client searches the forests in this list, if it's unable to resolve a two-part SPN. If a match is found, the Kerberos client requests a referral ticket to the appropriate domain.
 
-- If you disable or do not configure this policy setting, the Kerberos client does not search the listed forests to resolve the SPN. If the Kerberos client is unable to resolve the SPN because the name is not found, NTLM authentication might be used.
+- If you disable or don't configure this policy setting, the Kerberos client doesn't search the listed forests to resolve the SPN. If the Kerberos client is unable to resolve the SPN because the name isn't found, NTLM authentication might be used.
 <!-- AllowForestSearchOrder-Description-End -->
 
 <!-- AllowForestSearchOrder-Editable-Begin -->
@@ -58,13 +55,12 @@ This policy setting defines the list of trusting forests that the Kerberos clien
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AllowForestSearchOrder-DFProperties-End -->
 
 <!-- AllowForestSearchOrder-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -91,7 +87,7 @@ This policy setting defines the list of trusting forests that the Kerberos clien
 <!-- CloudKerberosTicketRetrievalEnabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- CloudKerberosTicketRetrievalEnabled-Applicability-End -->
 
 <!-- CloudKerberosTicketRetrievalEnabled-OmaUri-Begin -->
@@ -104,7 +100,7 @@ This policy setting defines the list of trusting forests that the Kerberos clien
 <!-- Description-Source-ADMX -->
 This policy setting allows retrieving the Azure AD Kerberos Ticket Granting Ticket during logon.
 
-- If you disable or do not configure this policy setting, the Azure AD Kerberos Ticket Granting Ticket is not retrieved during logon.
+- If you disable or don't configure this policy setting, the Azure AD Kerberos Ticket Granting Ticket isn't retrieved during logon.
 
 - If you enable this policy setting, the Azure AD Kerberos Ticket Granting Ticket is retrieved during logon.
 <!-- CloudKerberosTicketRetrievalEnabled-Description-End -->
@@ -118,7 +114,7 @@ This policy setting allows retrieving the Azure AD Kerberos Ticket Granting Tick
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- CloudKerberosTicketRetrievalEnabled-DFProperties-End -->
@@ -158,7 +154,7 @@ This policy setting allows retrieving the Azure AD Kerberos Ticket Granting Tick
 <!-- KerberosClientSupportsClaimsCompoundArmor-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- KerberosClientSupportsClaimsCompoundArmor-Applicability-End -->
 
 <!-- KerberosClientSupportsClaimsCompoundArmor-OmaUri-Begin -->
@@ -170,9 +166,10 @@ This policy setting allows retrieving the Azure AD Kerberos Ticket Granting Tick
 <!-- KerberosClientSupportsClaimsCompoundArmor-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting controls whether a device will request claims and compound authentication for Dynamic Access Control and Kerberos armoring using Kerberos authentication with domains that support these features.
+
 - If you enable this policy setting, the client computers will request claims, provide information required to create compounded authentication and armor Kerberos messages in domains which support claims and compound authentication for Dynamic Access Control and Kerberos armoring.
 
-- If you disable or do not configure this policy setting, the client devices will not request claims, provide information required to create compounded authentication and armor Kerberos messages. Services hosted on the device will not be able to retrieve claims for clients using Kerberos protocol transition.
+- If you disable or don't configure this policy setting, the client devices won't request claims, provide information required to create compounded authentication and armor Kerberos messages. Services hosted on the device won't be able to retrieve claims for clients using Kerberos protocol transition.
 <!-- KerberosClientSupportsClaimsCompoundArmor-Description-End -->
 
 <!-- KerberosClientSupportsClaimsCompoundArmor-Editable-Begin -->
@@ -184,13 +181,12 @@ This policy setting controls whether a device will request claims and compound a
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- KerberosClientSupportsClaimsCompoundArmor-DFProperties-End -->
 
 <!-- KerberosClientSupportsClaimsCompoundArmor-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -217,7 +213,7 @@ This policy setting controls whether a device will request claims and compound a
 <!-- PKInitHashAlgorithmConfiguration-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- PKInitHashAlgorithmConfiguration-Applicability-End -->
 
 <!-- PKInitHashAlgorithmConfiguration-OmaUri-Begin -->
@@ -230,18 +226,17 @@ This policy setting controls whether a device will request claims and compound a
 <!-- Description-Source-ADMX -->
 This policy setting controls hash or checksum algorithms used by the Kerberos client when performing certificate authentication.
 
-- If you enable this policy, you will be able to configure one of four states for each algorithm:
+- If you enable this policy, you'll be able to configure one of four states for each algorithm:
 
 - "Default" sets the algorithm to the recommended state.
 
 - "Supported" enables usage of the algorithm. Enabling algorithms that have been disabled by default may reduce your security.
 
-- "Audited" enables usage of the algorithm and reports an event (ID 206) every time it is used. This state is intended to verify that the algorithm is not being used and can be safely disabled.
+- "Audited" enables usage of the algorithm and reports an event (ID 206) every time it's used. This state is intended to verify that the algorithm isn't being used and can be safely disabled.
 
 - "Not Supported" disables usage of the algorithm. This state is intended for algorithms that are deemed to be insecure.
 
-- If you disable or do not configure this policy, each algorithm will assume the "Default" state.
-More information about the hash and checksum algorithms supported by the Windows Kerberos client and their default states can be found at <https://go.microsoft.com/fwlink/?linkid=2169037>.
+- If you disable or don't configure this policy, each algorithm will assume the "Default" state.
 
 Events generated by this configuration: 205, 206, 207, 208.
 <!-- PKInitHashAlgorithmConfiguration-Description-End -->
@@ -255,7 +250,7 @@ Events generated by this configuration: 205, 206, 207, 208.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- PKInitHashAlgorithmConfiguration-DFProperties-End -->
@@ -295,7 +290,7 @@ Events generated by this configuration: 205, 206, 207, 208.
 <!-- PKInitHashAlgorithmSHA1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- PKInitHashAlgorithmSHA1-Applicability-End -->
 
 <!-- PKInitHashAlgorithmSHA1-OmaUri-Begin -->
@@ -325,7 +320,7 @@ If you don't configure this policy, the SHA1 algorithm will assume the **Default
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 | Dependency [PKINIT_Hash_Algorithm_Configuration_DependencyGroup] | Dependency Type: `DependsOn` <br> Dependency URI: `Device/Vendor/MSFT/Policy/Config/Kerberos/PKInitHashAlgorithmConfigurationEnabled` <br> Dependency Allowed Value: `[1]` <br> Dependency Allowed Value Type: `Range` <br>  |
@@ -347,8 +342,13 @@ If you don't configure this policy, the SHA1 algorithm will assume the **Default
 
 | Name | Value |
 |:--|:--|
-| Name | PKInitHashAlgorithmSHA1 |
-| Path | Kerberos > AT > System > kerberos |
+| Name | PKInitHashAlgorithmConfiguration |
+| Friendly Name | Configure hash algorithms for certificate logon |
+| Location | Computer Configuration |
+| Path | System > Kerberos |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\System\Kerberos\Parameters |
+| Registry Value Name | PKInitHashAlgorithmConfigurationEnabled |
+| ADMX File Name | Kerberos.admx |
 <!-- PKInitHashAlgorithmSHA1-GpMapping-End -->
 
 <!-- PKInitHashAlgorithmSHA1-Examples-Begin -->
@@ -363,7 +363,7 @@ If you don't configure this policy, the SHA1 algorithm will assume the **Default
 <!-- PKInitHashAlgorithmSHA256-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- PKInitHashAlgorithmSHA256-Applicability-End -->
 
 <!-- PKInitHashAlgorithmSHA256-OmaUri-Begin -->
@@ -393,7 +393,7 @@ If you don't configure this policy, the SHA256 algorithm will assume the **Defau
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 | Dependency [PKINIT_Hash_Algorithm_Configuration_DependencyGroup] | Dependency Type: `DependsOn` <br> Dependency URI: `Device/Vendor/MSFT/Policy/Config/Kerberos/PKInitHashAlgorithmConfigurationEnabled` <br> Dependency Allowed Value: `[1]` <br> Dependency Allowed Value Type: `Range` <br>  |
@@ -415,8 +415,13 @@ If you don't configure this policy, the SHA256 algorithm will assume the **Defau
 
 | Name | Value |
 |:--|:--|
-| Name | PKInitHashAlgorithmSHA256 |
-| Path | Kerberos > AT > System > kerberos |
+| Name | PKInitHashAlgorithmConfiguration |
+| Friendly Name | Configure hash algorithms for certificate logon |
+| Location | Computer Configuration |
+| Path | System > Kerberos |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\System\Kerberos\Parameters |
+| Registry Value Name | PKInitHashAlgorithmConfigurationEnabled |
+| ADMX File Name | Kerberos.admx |
 <!-- PKInitHashAlgorithmSHA256-GpMapping-End -->
 
 <!-- PKInitHashAlgorithmSHA256-Examples-Begin -->
@@ -431,7 +436,7 @@ If you don't configure this policy, the SHA256 algorithm will assume the **Defau
 <!-- PKInitHashAlgorithmSHA384-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- PKInitHashAlgorithmSHA384-Applicability-End -->
 
 <!-- PKInitHashAlgorithmSHA384-OmaUri-Begin -->
@@ -461,7 +466,7 @@ If you don't configure this policy, the SHA384 algorithm will assume the **Defau
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 | Dependency [PKINIT_Hash_Algorithm_Configuration_DependencyGroup] | Dependency Type: `DependsOn` <br> Dependency URI: `Device/Vendor/MSFT/Policy/Config/Kerberos/PKInitHashAlgorithmConfigurationEnabled` <br> Dependency Allowed Value: `[1]` <br> Dependency Allowed Value Type: `Range` <br>  |
@@ -483,8 +488,13 @@ If you don't configure this policy, the SHA384 algorithm will assume the **Defau
 
 | Name | Value |
 |:--|:--|
-| Name | PKInitHashAlgorithmSHA384 |
-| Path | Kerberos > AT > System > kerberos |
+| Name | PKInitHashAlgorithmConfiguration |
+| Friendly Name | Configure hash algorithms for certificate logon |
+| Location | Computer Configuration |
+| Path | System > Kerberos |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\System\Kerberos\Parameters |
+| Registry Value Name | PKInitHashAlgorithmConfigurationEnabled |
+| ADMX File Name | Kerberos.admx |
 <!-- PKInitHashAlgorithmSHA384-GpMapping-End -->
 
 <!-- PKInitHashAlgorithmSHA384-Examples-Begin -->
@@ -499,7 +509,7 @@ If you don't configure this policy, the SHA384 algorithm will assume the **Defau
 <!-- PKInitHashAlgorithmSHA512-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- PKInitHashAlgorithmSHA512-Applicability-End -->
 
 <!-- PKInitHashAlgorithmSHA512-OmaUri-Begin -->
@@ -529,7 +539,7 @@ If you don't configure this policy, the SHA512 algorithm will assume the **Defau
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 | Dependency [PKINIT_Hash_Algorithm_Configuration_DependencyGroup] | Dependency Type: `DependsOn` <br> Dependency URI: `Device/Vendor/MSFT/Policy/Config/Kerberos/PKInitHashAlgorithmConfigurationEnabled` <br> Dependency Allowed Value: `[1]` <br> Dependency Allowed Value Type: `Range` <br>  |
@@ -551,8 +561,13 @@ If you don't configure this policy, the SHA512 algorithm will assume the **Defau
 
 | Name | Value |
 |:--|:--|
-| Name | PKInitHashAlgorithmSHA512 |
-| Path | Kerberos > AT > System > kerberos |
+| Name | PKInitHashAlgorithmConfiguration |
+| Friendly Name | Configure hash algorithms for certificate logon |
+| Location | Computer Configuration |
+| Path | System > Kerberos |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\System\Kerberos\Parameters |
+| Registry Value Name | PKInitHashAlgorithmConfigurationEnabled |
+| ADMX File Name | Kerberos.admx |
 <!-- PKInitHashAlgorithmSHA512-GpMapping-End -->
 
 <!-- PKInitHashAlgorithmSHA512-Examples-Begin -->
@@ -567,7 +582,7 @@ If you don't configure this policy, the SHA512 algorithm will assume the **Defau
 <!-- RequireKerberosArmoring-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- RequireKerberosArmoring-Applicability-End -->
 
 <!-- RequireKerberosArmoring-OmaUri-Begin -->
@@ -581,14 +596,14 @@ If you don't configure this policy, the SHA512 algorithm will assume the **Defau
 This policy setting controls whether a computer requires that Kerberos message exchanges be armored when communicating with a domain controller.
 
 > [!WARNING]
-> When a domain does not support Kerberos armoring by enabling "Support Dynamic Access Control and Kerberos armoring", then all authentication for all its users will fail from computers with this policy setting enabled.
+> When a domain doesn't support Kerberos armoring by enabling "Support Dynamic Access Control and Kerberos armoring", then all authentication for all its users will fail from computers with this policy setting enabled.
 
 - If you enable this policy setting, the client computers in the domain enforce the use of Kerberos armoring in only authentication service (AS) and ticket-granting service (TGS) message exchanges with the domain controllers.
 
 > [!NOTE]
 > The Kerberos Group Policy "Kerberos client support for claims, compound authentication and Kerberos armoring" must also be enabled to support Kerberos armoring.
 
-- If you disable or do not configure this policy setting, the client computers in the domain enforce the use of Kerberos armoring when possible as supported by the target domain.
+- If you disable or don't configure this policy setting, the client computers in the domain enforce the use of Kerberos armoring when possible as supported by the target domain.
 <!-- RequireKerberosArmoring-Description-End -->
 
 <!-- RequireKerberosArmoring-Editable-Begin -->
@@ -600,13 +615,12 @@ This policy setting controls whether a computer requires that Kerberos message e
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RequireKerberosArmoring-DFProperties-End -->
 
 <!-- RequireKerberosArmoring-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -633,7 +647,7 @@ This policy setting controls whether a computer requires that Kerberos message e
 <!-- RequireStrictKDCValidation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- RequireStrictKDCValidation-Applicability-End -->
 
 <!-- RequireStrictKDCValidation-OmaUri-Begin -->
@@ -646,9 +660,9 @@ This policy setting controls whether a computer requires that Kerberos message e
 <!-- Description-Source-ADMX -->
 This policy setting controls the Kerberos client's behavior in validating the KDC certificate for smart card and system certificate logon.
 
-- If you enable this policy setting, the Kerberos client requires that the KDC's X.509 certificate contains the KDC key purpose object identifier in the Extended Key Usage (EKU) extensions, and that the KDC's X.509 certificate contains a dNSName subjectAltName (SAN) extension that matches the DNS name of the domain. If the computer is joined to a domain, the Kerberos client requires that the KDC's X.509 certificate must be signed by a Certificate Authority (CA) in the NTAuth store. If the computer is not joined to a domain, the Kerberos client allows the root CA certificate on the smart card to be used in the path validation of the KDC's X.509 certificate.
+- If you enable this policy setting, the Kerberos client requires that the KDC's X.509 certificate contains the KDC key purpose object identifier in the Extended Key Usage (EKU) extensions, and that the KDC's X.509 certificate contains a dNSName subjectAltName (SAN) extension that matches the DNS name of the domain. If the computer is joined to a domain, the Kerberos client requires that the KDC's X.509 certificate must be signed by a Certificate Authority (CA) in the NTAuth store. If the computer isn't joined to a domain, the Kerberos client allows the root CA certificate on the smart card to be used in the path validation of the KDC's X.509 certificate.
 
-- If you disable or do not configure this policy setting, the Kerberos client requires only that the KDC certificate contain the Server Authentication purpose object identifier in the EKU extensions which can be issued to any server.
+- If you disable or don't configure this policy setting, the Kerberos client requires only that the KDC certificate contains the Server Authentication purpose object identifier in the EKU extensions which can be issued to any server.
 <!-- RequireStrictKDCValidation-Description-End -->
 
 <!-- RequireStrictKDCValidation-Editable-Begin -->
@@ -660,13 +674,12 @@ This policy setting controls the Kerberos client's behavior in validating the KD
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RequireStrictKDCValidation-DFProperties-End -->
 
 <!-- RequireStrictKDCValidation-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -693,7 +706,7 @@ This policy setting controls the Kerberos client's behavior in validating the KD
 <!-- SetMaximumContextTokenSize-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- SetMaximumContextTokenSize-Applicability-End -->
 
 <!-- SetMaximumContextTokenSize-OmaUri-Begin -->
@@ -710,10 +723,10 @@ The size of the context token buffer determines the maximum size of SSPI context
 
 - If you enable this policy setting, the Kerberos client or server uses the configured value, or the locally allowed maximum value, whichever is smaller.
 
-- If you disable or do not configure this policy setting, the Kerberos client or server uses the locally configured value or the default value.
+- If you disable or don't configure this policy setting, the Kerberos client or server uses the locally configured value or the default value.
 
 > [!NOTE]
-> This policy setting configures the existing MaxTokenSize registry value in HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\Kerberos\Parameters, which was added in Windows XP and Windows Server 2003, with a default value of 12,000 bytes. Beginning with Windows 8 the default is 48,000 bytes. Due to HTTP's base64 encoding of authentication context tokens, it is not advised to set this value more than 48,000 bytes.
+> This policy setting configures the existing MaxTokenSize registry value in HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\Kerberos\Parameters, which was added in Windows XP and Windows Server 2003, with a default value of 12,000 bytes. Beginning with Windows 8 the default is 48,000 bytes. Due to HTTP's base64 encoding of authentication context tokens, it isn't advised to set this value more than 48,000 bytes.
 <!-- SetMaximumContextTokenSize-Description-End -->
 
 <!-- SetMaximumContextTokenSize-Editable-Begin -->
@@ -725,13 +738,12 @@ The size of the context token buffer determines the maximum size of SSPI context
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- SetMaximumContextTokenSize-DFProperties-End -->
 
 <!-- SetMaximumContextTokenSize-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -758,7 +770,7 @@ The size of the context token buffer determines the maximum size of SSPI context
 <!-- UPNNameHints-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- UPNNameHints-Applicability-End -->
 
 <!-- UPNNameHints-OmaUri-Begin -->
@@ -770,7 +782,7 @@ The size of the context token buffer determines the maximum size of SSPI context
 <!-- UPNNameHints-Description-Begin -->
 <!-- Description-Source-DDF -->
 Devices joined to Azure Active Directory in a hybrid environment need to interact with Active Directory Domain Controllers, but they lack the built-in ability to find a Domain Controller that a domain-joined device has. This can cause failures when such a device needs to resolve an AAD UPN into an Active Directory Principal.
-This parameter adds a list of domains that an Azure Active Directory joined device should attempt to contact if it is otherwise unable to resolve a UPN to a principal.
+This parameter adds a list of domains that an Azure Active Directory joined device should attempt to contact if it's otherwise unable to resolve a UPN to a principal.
 <!-- UPNNameHints-Description-End -->
 
 <!-- UPNNameHints-Editable-Begin -->
@@ -782,7 +794,7 @@ This parameter adds a list of domains that an Azure Active Directory joined devi
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `0xF000`) |
 <!-- UPNNameHints-DFProperties-End -->

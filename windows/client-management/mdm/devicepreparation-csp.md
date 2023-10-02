@@ -4,7 +4,7 @@ description: Learn more about the DevicePreparation CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/28/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,8 +16,7 @@ ms.topic: reference
 <!-- DevicePreparation-Begin -->
 # DevicePreparation CSP
 
-> [!IMPORTANT]
-> This CSP contains preview policies that are under development and only applicable for [Windows Insider Preview builds](/windows-insider/). These policies are subject to change and may have dependencies on other features or services in preview.
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- DevicePreparation-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -31,6 +30,9 @@ The following list shows the DevicePreparation configuration service provider no
     - [ClassID](#bootstrapperagentclassid)
     - [ExecutionContext](#bootstrapperagentexecutioncontext)
     - [InstallationStatusUri](#bootstrapperagentinstallationstatusuri)
+  - [MdmAgentInstalled](#mdmagentinstalled)
+  - [MDMProvider](#mdmprovider)
+    - [Progress](#mdmproviderprogress)
   - [PageEnabled](#pageenabled)
   - [PageSettings](#pagesettings)
   - [PageStatus](#pagestatus)
@@ -42,7 +44,7 @@ The following list shows the DevicePreparation configuration service provider no
 <!-- Device-BootstrapperAgent-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-BootstrapperAgent-Applicability-End -->
 
 <!-- Device-BootstrapperAgent-OmaUri-Begin -->
@@ -65,7 +67,7 @@ The subnodes configure settings for the Bootstrapper Agent.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-BootstrapperAgent-DFProperties-End -->
 
@@ -81,7 +83,7 @@ The subnodes configure settings for the Bootstrapper Agent.
 <!-- Device-BootstrapperAgent-ClassID-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-BootstrapperAgent-ClassID-Applicability-End -->
 
 <!-- Device-BootstrapperAgent-ClassID-OmaUri-Begin -->
@@ -104,7 +106,7 @@ This node stores the class ID for the Bootstrapper Agent WinRT object.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get, Replace |
 <!-- Device-BootstrapperAgent-ClassID-DFProperties-End -->
 
@@ -120,7 +122,7 @@ This node stores the class ID for the Bootstrapper Agent WinRT object.
 <!-- Device-BootstrapperAgent-ExecutionContext-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-BootstrapperAgent-ExecutionContext-Applicability-End -->
 
 <!-- Device-BootstrapperAgent-ExecutionContext-OmaUri-Begin -->
@@ -131,7 +133,7 @@ This node stores the class ID for the Bootstrapper Agent WinRT object.
 
 <!-- Device-BootstrapperAgent-ExecutionContext-Description-Begin -->
 <!-- Description-Source-DDF -->
-This node holds opaque data that will be passed to the Bootstrapper Agent as a parameter when it is invoked to execute.
+This node holds opaque data that will be passed to the Bootstrapper Agent as a parameter when it's invoked to execute.
 <!-- Device-BootstrapperAgent-ExecutionContext-Description-End -->
 
 <!-- Device-BootstrapperAgent-ExecutionContext-Editable-Begin -->
@@ -143,7 +145,7 @@ This node holds opaque data that will be passed to the Bootstrapper Agent as a p
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get, Replace |
 <!-- Device-BootstrapperAgent-ExecutionContext-DFProperties-End -->
 
@@ -159,7 +161,7 @@ This node holds opaque data that will be passed to the Bootstrapper Agent as a p
 <!-- Device-BootstrapperAgent-InstallationStatusUri-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-BootstrapperAgent-InstallationStatusUri-Applicability-End -->
 
 <!-- Device-BootstrapperAgent-InstallationStatusUri-OmaUri-Begin -->
@@ -182,7 +184,7 @@ This node holds a URI that can be queried for the status of the Bootstrapper Age
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get, Replace |
 <!-- Device-BootstrapperAgent-InstallationStatusUri-DFProperties-End -->
 
@@ -192,13 +194,131 @@ This node holds a URI that can be queried for the status of the Bootstrapper Age
 
 <!-- Device-BootstrapperAgent-InstallationStatusUri-End -->
 
+<!-- Device-MdmAgentInstalled-Begin -->
+## MdmAgentInstalled
+
+<!-- Device-MdmAgentInstalled-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- Device-MdmAgentInstalled-Applicability-End -->
+
+<!-- Device-MdmAgentInstalled-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DevicePreparation/MdmAgentInstalled
+```
+<!-- Device-MdmAgentInstalled-OmaUri-End -->
+
+<!-- Device-MdmAgentInstalled-Description-Begin -->
+<!-- Description-Source-DDF -->
+This node indicates whether the MDM agent was installed or not. When set to true sets the AUTOPILOT_MDM_AGENT_REGISTERED WNF event.
+<!-- Device-MdmAgentInstalled-Description-End -->
+
+<!-- Device-MdmAgentInstalled-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-MdmAgentInstalled-Editable-End -->
+
+<!-- Device-MdmAgentInstalled-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `bool` |
+| Access Type | Get, Replace |
+| Default Value  | false |
+<!-- Device-MdmAgentInstalled-DFProperties-End -->
+
+<!-- Device-MdmAgentInstalled-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-MdmAgentInstalled-Examples-End -->
+
+<!-- Device-MdmAgentInstalled-End -->
+
+<!-- Device-MDMProvider-Begin -->
+## MDMProvider
+
+<!-- Device-MDMProvider-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- Device-MDMProvider-Applicability-End -->
+
+<!-- Device-MDMProvider-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DevicePreparation/MDMProvider
+```
+<!-- Device-MDMProvider-OmaUri-End -->
+
+<!-- Device-MDMProvider-Description-Begin -->
+<!-- Description-Source-DDF -->
+The subnode configures the settings for the MDMProvider.
+<!-- Device-MDMProvider-Description-End -->
+
+<!-- Device-MDMProvider-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-MDMProvider-Editable-End -->
+
+<!-- Device-MDMProvider-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `node` |
+| Access Type | Get |
+<!-- Device-MDMProvider-DFProperties-End -->
+
+<!-- Device-MDMProvider-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-MDMProvider-Examples-End -->
+
+<!-- Device-MDMProvider-End -->
+
+<!-- Device-MDMProvider-Progress-Begin -->
+### MDMProvider/Progress
+
+<!-- Device-MDMProvider-Progress-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- Device-MDMProvider-Progress-Applicability-End -->
+
+<!-- Device-MDMProvider-Progress-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DevicePreparation/MDMProvider/Progress
+```
+<!-- Device-MDMProvider-Progress-OmaUri-End -->
+
+<!-- Device-MDMProvider-Progress-Description-Begin -->
+<!-- Description-Source-DDF -->
+Node for reporting progress status as opaque data.
+<!-- Device-MDMProvider-Progress-Description-End -->
+
+<!-- Device-MDMProvider-Progress-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-MDMProvider-Progress-Editable-End -->
+
+<!-- Device-MDMProvider-Progress-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Get, Replace |
+<!-- Device-MDMProvider-Progress-DFProperties-End -->
+
+<!-- Device-MDMProvider-Progress-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-MDMProvider-Progress-Examples-End -->
+
+<!-- Device-MDMProvider-Progress-End -->
+
 <!-- Device-PageEnabled-Begin -->
 ## PageEnabled
 
 <!-- Device-PageEnabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-PageEnabled-Applicability-End -->
 
 <!-- Device-PageEnabled-OmaUri-Begin -->
@@ -221,7 +341,7 @@ This node determines whether to enable or show the Device Preparation page.
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get, Replace |
 | Default Value  | false |
 <!-- Device-PageEnabled-DFProperties-End -->
@@ -231,7 +351,7 @@ This node determines whether to enable or show the Device Preparation page.
 
 | Value | Description |
 |:--|:--|
-| false (Default) | The page is not enabled. |
+| false (Default) | The page isn't enabled. |
 | true | The page is enabled. |
 <!-- Device-PageEnabled-AllowedValues-End -->
 
@@ -247,7 +367,7 @@ This node determines whether to enable or show the Device Preparation page.
 <!-- Device-PageSettings-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-PageSettings-Applicability-End -->
 
 <!-- Device-PageSettings-OmaUri-Begin -->
@@ -270,7 +390,7 @@ This node configures specific settings for the Device Preparation page.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get, Replace |
 <!-- Device-PageSettings-DFProperties-End -->
 
@@ -286,7 +406,7 @@ This node configures specific settings for the Device Preparation page.
 <!-- Device-PageStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-PageStatus-Applicability-End -->
 
 <!-- Device-PageStatus-OmaUri-Begin -->
@@ -297,7 +417,7 @@ This node configures specific settings for the Device Preparation page.
 
 <!-- Device-PageStatus-Description-Begin -->
 <!-- Description-Source-DDF -->
-This node provides status of the Device Preparation page. Values are an enum: 0 = Disabled; 1 = Enabled; 2 = InProgress; 3 = Succeeded; 4 = Failed.
+This node provides status of the Device Preparation page. Values are an enum: 0 = Disabled; 1 = Enabled; 2 = InProgress; 3 = ExitedOnSuccess; 4 = ExitedOnFailure.
 <!-- Device-PageStatus-Description-End -->
 
 <!-- Device-PageStatus-Editable-Begin -->
@@ -309,7 +429,7 @@ This node provides status of the Device Preparation page. Values are an enum: 0 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-PageStatus-DFProperties-End -->
 

@@ -4,7 +4,7 @@ description: Learn more about the Eap Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -26,7 +26,7 @@ ms.topic: reference
 <!-- AllowTLS1_3-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AllowTLS1_3-Applicability-End -->
 
 <!-- AllowTLS1_3-OmaUri-Begin -->
@@ -49,7 +49,7 @@ Added in Windows 10, version 21. H1. Allow or disallow use of TLS 1.3 during EAP
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowTLS1_3-DFProperties-End -->
@@ -59,7 +59,7 @@ Added in Windows 10, version 21. H1. Allow or disallow use of TLS 1.3 during EAP
 
 | Value | Description |
 |:--|:--|
-| 0 | Use of TLS version 1.3 is not allowed for authentication. |
+| 0 | Use of TLS version 1.3 isn't allowed for authentication. |
 | 1 (Default) | Use of TLS version 1.3 is allowed for authentication. |
 <!-- AllowTLS1_3-AllowedValues-End -->
 

@@ -1,9 +1,7 @@
 ---
 title: Multi-factor unlock
 description: Learn how Windows offers multi-factor device unlock by extending Windows Hello with trusted signals.
-ms.date: 03/09/2023
-appliesto: 
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
+ms.date: 03/30/2023
 ms.topic: how-to
 ---
 # Multi-factor unlock
@@ -31,6 +29,9 @@ The policy setting has three components:
 
 ## Configure unlock factors
 
+> [!CAUTION]
+> When the [DontDisplayLastUserName](/windows/security/threat-protection/security-policy-settings/interactive-logon-do-not-display-last-user-name) security policy is enabled, it is known to interfere with the ability to use multi factor unlock.
+
 The **First unlock factor credential providers** and **Second unlock factor credential providers** portion of the policy setting each contain a comma separated list of credential providers.
 
 Supported credential providers include:
@@ -42,8 +43,8 @@ Supported credential providers include:
 |Facial Recognition| `{8AF662BF-65A0-4D0A-A540-A338A999D36F}`|
 |Trusted Signal<br>(Phone proximity, Network location) | `{27FBDB57-B613-4AF2-9D7E-4FA7A66C21AD}`|
 
->[!NOTE]
->Multifactor unlock does not support third-party credential providers or credential providers not listed in the above table.
+> [!NOTE]
+> Multifactor unlock does not support third-party credential providers or credential providers not listed in the above table.
 
 The default credential providers for the **First unlock factor credential provider** include:
 

@@ -4,7 +4,7 @@ description: Learn more about the TenantRestrictions Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- TenantRestrictions-Begin -->
 # Policy CSP - TenantRestrictions
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- TenantRestrictions-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -31,7 +28,7 @@ ms.topic: reference
 <!-- ConfigureTenantRestrictions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Unknown [10.0.20348.320] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1320] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1320] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1320] and later <br> :heavy_check_mark: Windows 10, version 21H2 [10.0.19044] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.320] and later <br> ✅ Windows 10, version 2004 [10.0.19041.1320] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1320] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1320] and later <br> ✅ Windows 10, version 21H2 [10.0.19044] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ConfigureTenantRestrictions-Applicability-End -->
 
 <!-- ConfigureTenantRestrictions-OmaUri-Begin -->
@@ -51,7 +48,8 @@ When you enable this setting, compliant applications will be prevented from acce
 
 <https://go.microsoft.com/fwlink/?linkid=2148762>
 
-Before enabling firewall protection, ensure that a Windows Defender Application Control (WDAC) policy that correctly tags applications has been applied to the target devices. Enabling firewall protection without a corresponding WDAC policy will prevent all applications from reaching Microsoft endpoints. This firewall setting is not supported on all versions of Windows - see the following link for more information.
+Before enabling firewall protection, ensure that a Windows Defender Application Control (WDAC) policy that correctly tags applications has been applied to the target devices. Enabling firewall protection without a corresponding WDAC policy will prevent all applications from reaching Microsoft endpoints. This firewall setting isn't supported on all versions of Windows - see the following link for more information.
+
 For details about setting up WDAC with tenant restrictions, see <https://go.microsoft.com/fwlink/?linkid=2155230>
 <!-- ConfigureTenantRestrictions-Description-End -->
 
@@ -64,13 +62,12 @@ For details about setting up WDAC with tenant restrictions, see <https://go.micr
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ConfigureTenantRestrictions-DFProperties-End -->
 
 <!-- ConfigureTenantRestrictions-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

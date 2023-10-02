@@ -2,9 +2,7 @@
 title: Windows Hello for Business Deployment Overview
 description: Use this deployment guide to successfully deploy Windows Hello for Business in an existing environment.
 ms.date: 02/15/2022
-appliesto: 
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
-ms.topic: article
+ms.topic: overview
 ---
 # Windows Hello for Business Deployment Overview
 
@@ -44,7 +42,7 @@ The trust model determines how you want users to authenticate to the on-premises
 - The certificate trust model also supports enterprises which are not ready to deploy Windows Server 2016 Domain Controllers.
 
 > [!Note]
-> RDP does not support authentication with Windows Hello for Business Key Trust or cloud Kerberos trust deployments as a supplied credential. RDP is only supported with certificate trust deployments as a supplied credential at this time. Windows Hello for Business Key Trust and cloud Kerberos trust can be used with [Windows Defender Remote Credential Guard](../remote-credential-guard.md).
+> RDP does not support authentication with Windows Hello for Business Key Trust or cloud Kerberos trust deployments as a supplied credential. RDP is only supported with certificate trust deployments as a supplied credential at this time. Windows Hello for Business Key Trust and cloud Kerberos trust can be used with [Remote Credential Guard](../remote-credential-guard.md).
 
 Following are the various deployment guides and models included in this topic:
 

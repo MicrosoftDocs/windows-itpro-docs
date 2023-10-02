@@ -3,9 +3,6 @@ title: Virtual Smart Card Overview
 description: Learn about virtual smart card technology for Windows.
 ms.topic: conceptual
 ms.date: 02/22/2023
-appliesto:
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016 and later</a>
 ---
 
 # Virtual Smart Card Overview
