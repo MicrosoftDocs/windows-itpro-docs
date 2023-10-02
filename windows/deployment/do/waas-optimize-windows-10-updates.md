@@ -1,24 +1,22 @@
 ---
 title: Optimize Windows update delivery
-description: Two methods of peer-to-peer content distribution are available, Delivery Optimization and BranchCache.
+description: Learn about the two methods of peer-to-peer content distribution that are available, Delivery Optimization and BranchCache.
 ms.prod: windows-client
-ms.localizationpriority: medium
+ms.topic: conceptual
+ms.technology: itpro-updates
 ms.author: carmenf
 author: cmknox
 ms.reviewer: mstewart
 manager: aaroncz
-ms.topic: article
-ms.technology: itpro-updates
-ms.date: 12/31/2017
 ms.collection: tier3
+ms.localizationpriority: medium
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
+ms.date: 02/14/2023
 ---
 
 # Optimize Windows update delivery
-
-**Applies to**
-
-- Windows 10
-- Windows 11
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq)
 
@@ -41,8 +39,8 @@ Two methods of peer-to-peer content distribution are available.
 
 | Method | Windows Update | Windows Update for Business | WSUS | Configuration Manager |
 | --- | --- | --- | --- | --- |
-| Delivery Optimization | ![yes.](images/checkmark.png) | ![yes](images/checkmark.png) | ![yes](images/checkmark.png) | ![yes](images/checkmark.png) |
-| BranchCache | ![no.](images/crossmark.png) | ![no](images/crossmark.png) |![yes](images/checkmark.png) | ![yes](images/checkmark.png) |
+| Delivery Optimization | Yes | Yes | Yes | Yes |
+| BranchCache | No | No |Yes | Yes |
 
 > [!NOTE]
 > Microsoft Configuration Manager has an additional feature called Client Peer Cache that allows peer-to-peer content sharing between clients you use Configuration Manager to manage, in the same Configuration Manager boundary Group. For more information, see [Client Peer Cache](/configmgr/core/plan-design/hierarchy/client-peer-cache).
@@ -92,9 +90,9 @@ At this point, the download is complete and the update is ready to be installed.
 
 |&nbsp; |&nbsp; |
 | --- | --- |
-| ![done.](images/checklistdone.png) | [Learn about updates and servicing channels](../update/waas-overview.md) |
-| ![done.](images/checklistdone.png) | [Prepare servicing strategy for Windows client updates](../update/waas-servicing-strategy-windows-10-updates.md) |
-| ![done.](images/checklistdone.png) | [Build deployment rings for Windows client updates](../update/waas-deployment-rings-windows-10-updates.md) |
-| ![done.](images/checklistdone.png) | [Assign devices to servicing channels for Windows client updates](../update/waas-servicing-channels-windows-10-updates.md) |
-| ![done.](images/checklistdone.png) | Optimize update delivery for Windows 10 updates (this article) |
-| ![to do.](images/checklistbox.gif) | [Deploy updates using Windows Update for Business](../update/waas-manage-updates-wufb.md)<br/>or [Deploy Windows client updates using Windows Server Update Services](../update/waas-manage-updates-wsus.md)<br/>or [Deploy Windows client updates using Microsoft Configuration Manager](/mem/configmgr/osd/deploy-use/manage-windows-as-a-service) |
+| ✅| [Learn about updates and servicing channels](../update/waas-overview.md) |
+| ✅ | [Prepare servicing strategy for Windows client updates](../update/waas-servicing-strategy-windows-10-updates.md) |
+| ✅ | [Build deployment rings for Windows client updates](../update/waas-deployment-rings-windows-10-updates.md) |
+| ✅| [Assign devices to servicing channels for Windows client updates](../update/waas-servicing-channels-windows-10-updates.md) |
+| ✅ | Optimize update delivery for Windows 10 updates (this article) |
+|  | [Deploy updates using Windows Update for Business](../update/waas-manage-updates-wufb.md)<br/>or [Deploy Windows client updates using Windows Server Update Services](../update/waas-manage-updates-wsus.md)<br/>or [Deploy Windows client updates using Microsoft Configuration Manager](/mem/configmgr/osd/deploy-use/manage-windows-as-a-service) |
