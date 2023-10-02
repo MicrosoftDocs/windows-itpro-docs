@@ -506,3 +506,16 @@ The recovery password and be invalidated and reset in two ways:
 
     > [!WARNING]
     > The braces `{}` must be included in the ID string.
+
+<!--
+## Retrieve the BitLocker key package
+
+Two methods can be used to retrieve the key package as described in Using Additional Recovery Information:
+
+Export a previously saved key package from AD DS. Read access is required to BitLocker recovery passwords that are stored in AD DS.
+
+Export a new key package from an unlocked, BitLocker-protected volume. Local administrator access to the working volume is required before any damage occurred to the volume.
+
+   strRecoveryPassword = objFveInfo.Get("msFVE-RecoveryPassword")
+   strKeyPackage = objFveInfo.Get("msFVE-KeyPackage")
+-->
