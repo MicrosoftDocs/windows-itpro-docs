@@ -1,15 +1,18 @@
 ---
-title: Verify cache node functionality and monitor health and performance
-manager: aaroncz
-description: How to verify the functionality of a cache node
+title: Verify cache node functionality and monitor health
+titleSuffix: Microsoft Connected Cache for ISPs
+description: How to verify the functionality of a cache node, monitor health and performance, and review metrics.
 ms.prod: windows-client
+ms.technology: itpro-updates
+ms.topic: how-to
 ms.author: carmenf
 author: cmknox
+manager: aaroncz
 ms.reviewer: mstewart
-ms.topic: article
-ms.date: 12/31/2017
-ms.technology: itpro-updates
 ms.collection: tier3
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/deployment/do/mcc-isp target=_blank>Microsoft Connected Cache for ISPs</a>
+ms.date: 02/09/2023
 ---
 
 # Verify cache node functionality and monitor health and performance
