@@ -182,7 +182,7 @@ The following scenarios aren't supported:
 - No = not supported or not a downgrade.
 - \- = Not considered a downgrade or an upgrade.
 
-| **Edition** | **Home** | **Pro** | **Pro for Workstations** | **Pro Education** | **Education** | **Enterprise LTSC** | **Enterprise** |
+| Edition | Home | Pro | Pro for Workstations | Pro Education | Education | Enterprise LTSC | Enterprise |
 |-----------------| ------------------------------------ | --------------------------- | ------------------------- | -------------------------------------- | ----------------------------------- | --------------------------------------------- |--------------------------------------------- |
 | **Home** | - | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
 | **Pro** | ❌ | - | ❌ | ❌ | ❌ | ❌ | ❌ |
