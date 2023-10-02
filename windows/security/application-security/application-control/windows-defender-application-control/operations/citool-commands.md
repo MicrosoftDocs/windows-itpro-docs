@@ -61,7 +61,7 @@ CiTool makes Windows Defender Application Control (WDAC) policy management easie
 | Base Policy ID | Lists the ID of the base policy. | `d2bda982-ccf6-4344-ac5b-0b44427b6816` |
 | Friendly Name | Value listed in `<Setting Provider="PolicyInfo" Key="Information" ValueName="Name">` | `Microsoft Windows Driver Policy` |
 | Version | Version of the policy listed in `<VersionEx>` | `2814751463178240` |
-| Platform Policy | Whether the policy is provided by Microsoft, for example in the vulnerable driver blocklist policy. | `true` |
+| Platform Policy | Indicates whether the policy is provided by Microsoft, for example in the vulnerable driver blocklist policy. | `true` |
 | Policy is Signed | Indicates whether the policy has a valid signature. | `true` |
 | Has File on Disk | Indicates whether the policy file is currently on the disk. | `false` |
 | Is Currently Enforced | Indicates whether the policy file is active. | `true` |
