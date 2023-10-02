@@ -4,29 +4,25 @@ description: Learn how to recover BitLocker keys from Microsoft Entra ID and Act
 ms.collection: 
   - highpri
   - tier1
-ms.topic: howto
+ms.topic: how-to
 ms.date: 09/29/2023
 ---
 
 # BitLocker recovery guide
 
+Organizations can use BitLocker recovery information saved in Microsoft Entra ID and Active Directory Domain Services (AD DS) to access BitLocker-protected drives. It's recommended to create a recovery model for BitLocker while planning for BitLocker deployment.
+
 This article describes how to recover BitLocker keys from Microsoft Entra ID and Active Directory Domain Services (AD DS).
 
-Organizations can use BitLocker recovery information saved in Active Directory Domain Services (AD DS) to access BitLocker-protected data. It's recommended to create a recovery model for BitLocker while planning for BitLocker deployment.
-
-This article assumes that it's understood how to set up AD DS to back up BitLocker recovery information automatically, and what types of recovery information are saved to AD DS.
-
-This article doesn't detail how to configure AD DS to store the BitLocker recovery information.
+This article assumes that it's understood how to configure devices to automatically backup BitLocker recovery information, and what types of recovery information are saved to Microsoft Entra ID and AD DS.
 
 ## What is BitLocker recovery?
 
-BitLocker recovery is the process by which access can be restored to a BitLocker-protected drive if the drive can't be unlocked normally. In a recovery scenario, the following options to restore access to the drive are available:
+BitLocker recovery is the process by which access to a BitLocker-protected drive can be restored if the drive can't be unlocked normally. In a recovery scenario, the following options to restore access to the drive are available:
 
-- **The user can supply the recovery password.** If the organization allows users to print or store recovery passwords, the users can enter in the 48-digit recovery password that they printed or stored on a USB drive or with a Microsoft account online. Saving a recovery password with a Microsoft account online is only allowed when BitLocker is used on a PC that isn't a member of a domain.
-
-- **Data recovery agents can use their credentials to unlock the drive.** If the drive is an operating system drive, the drive must be mounted as a data drive on another computer for the data recovery agent to unlock it.
-
-- **A domain administrator can obtain the recovery password from AD DS and use it to unlock the drive.** Storing recovery passwords in AD DS is recommended to provide a way for IT professionals to be able to obtain recovery passwords for drives in an organization if needed. This method makes it mandatory to enable this recovery method in the BitLocker group policy setting **Choose how BitLocker-protected operating system drives can be recovered** located at **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Operating System Drives** in the Local Group Policy Editor. For more information, see [BitLocker policy settings](policy-settings.md).
+- **The user can supply the recovery password**: if the organization allows users to print or store recovery passwords, the users can enter the 48-digit recovery password
+- **Data recovery agents can use their credentials to unlock the drive:** if the drive is an operating system drive, the drive must be mounted as a data drive on another device for the data recovery agent to unlock it
+- **A domain administrator can obtain the recovery password from AD DS and use it to unlock the drive:** storing recovery passwords in AD DS is recommended to provide a way for IT professionals to be able to obtain recovery passwords for drives in an organization if needed. This method requires to enable the recovery method **Choose how BitLocker-protected operating system drives can be recovered**. For more information, review [BitLocker policy settings](policy-settings.md).
 
 ### What causes BitLocker recovery?
 

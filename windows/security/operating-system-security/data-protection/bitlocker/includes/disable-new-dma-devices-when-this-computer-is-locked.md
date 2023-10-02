@@ -15,6 +15,9 @@ Devices that were already enumerated when the device was unlocked will continue 
 
 This policy setting is only enforced when BitLocker or device encryption is enabled.
 
+> [!IMPORTANT]
+> This policy is not compatible with *Kernel DMA Protection*. It's recommended to disable this policy if the system supports Kernel DMA Protection, as Kernel DMA Protection provides higher security for the system. For more information about Kernel DMA Protection, see [Kernel DMA Protection](../../../../hardware-security/kernel-dma-protection-for-thunderbolt.md).
+
 |  | Path |
 |--|--|
 | **CSP** | Not available |

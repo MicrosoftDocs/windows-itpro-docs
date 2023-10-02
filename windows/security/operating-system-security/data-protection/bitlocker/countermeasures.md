@@ -1,26 +1,17 @@
 ---
 title: BitLocker countermeasures
-description: Windows uses technologies including TPM, Secure Boot, Trusted Boot, and Early Launch Anti-malware (ELAM) to protect against attacks on the BitLocker encryption key. 
+description: Learn about technologies and features to protect against attacks on the BitLocker encryption key. 
 ms.topic: conceptual
-ms.date: 11/08/2022
+ms.date: 10/02/2023
 ---
 
 # BitLocker countermeasures
 
-Windows uses technologies including *trusted platform module (TPM)*, *Secure Boot*, and *Measured Boot* to help protect BitLocker encryption keys against attacks. BitLocker is part of a strategic approach to securing data against offline attacks through encryption technology. Data on a lost or stolen device is vulnerable. For example, there could be unauthorized access, either by running a software attack tool against the device or by transferring the device's hard disk to a different device.
-
-BitLocker helps mitigate unauthorized data access on lost or stolen devices before the authorized operating system is started. This mitigation is done by:
-
-- **Encrypting volumes.** For example, BitLocker can be turned on for the operating system volume, a volume on a fixed drive, or removable data drive (such as a USB flash drive, SD card, etc.). Turning on BitLocker for the operating system volume encrypts all system files on the volume, including the paging files and hibernation files. The only exception is for the System partition, which includes the Windows Boot Manager and minimal boot collateral required for decryption of the operating system volume after the key is unsealed.
-- **Ensuring the integrity of early boot components and boot configuration data.** On devices that have a TPM version 1.2 or higher, BitLocker uses the enhanced security capabilities of the TPM to make data accessible only if the computer's BIOS firmware code and configuration, original boot sequence, boot components, and BCD configuration all appear unaltered and the encrypted disk is located in the original computer. On systems that use TPM PCR[7], BCD setting changes deemed safe are permitted to improve usability.
-
-The next sections provide more details about how Windows protects against various attacks on the BitLocker encryption keys in Windows 11, Windows 10, Windows 8.1, and Windows 8.
-
-For more information about how to enable the best overall security configuration for devices beginning with Windows 10 version 1803, see [Standards for a highly secure Windows device](/windows-hardware/design/device-experiences/oem-highly-secure).
+Windows uses hardware solutions and security features that protect BitLocker encryption keys against attacks. These technologies include *Trusted Platform Module (TPM)*, *Secure Boot*, and *Measured Boot*.
 
 ## Protection before startup
 
-Before Windows starts, security features implemented as part of the device hardware and firmware must be relied on, including TPM and secure boot. These features help ensure that the device hasn't been tampered with while the system was offline. The following sections provide more details about how Windows uses these features to protect against attacks on the BitLocker encryption keys.
+Before Windows starts, security features implemented as part of the device hardware and firmware must be relied on, including TPM and secure boot. These features ensure that the device hasn't been tampered with while the system was offline.
 
 ### Trusted Platform Module
 
@@ -59,33 +50,15 @@ On computers with a compatible TPM, operating system drives that are BitLocker-p
 
 - **TPM with startup key and PIN.** In addition to the core component protection that the TPM-only provides, part of the encryption key is stored on a USB flash drive, and a PIN is required to authenticate the user to the TPM. This configuration provides multifactor authentication so that if the USB key is lost or stolen, it can't be used for access to the drive, because the correct PIN is also required.
 
-In the following group policy example, TPM + PIN is required to unlock an operating system drive:
-
-![Pre-boot authentication setting in Group Policy.](images/pre-boot-authentication-group-policy.png)
-
 Pre-boot authentication with a PIN can mitigate an attack vector for devices that use a bootable eDrive because an exposed eDrive bus can allow an attacker to capture the BitLocker encryption key during startup. Pre-boot authentication with a PIN can also mitigate DMA port attacks during the window of time between when BitLocker unlocks the drive and Windows boots to the point that Windows can set any port-related policies that have been configured.
 
-On the other hand, Pre-boot authentication-prompts can be inconvenient to users. In addition, users who forget their PIN or lose their startup key are denied access to their data until they can contact their organization's support team to obtain a recovery key. Pre-boot authentication can also make it more difficult to update unattended desktops and remotely administered servers because a PIN needs to be entered when a computer reboots or resumes from hibernation.
+On the other hand, Pre-boot authentication-prompts can be inconvenient to users. In addition, users who forget their PIN or lose their startup key are denied access to their data until they can contact their organization's support team to obtain a recovery key. Pre-boot authentication can also make it more difficult to update unattended desktops and remotely administered servers because a PIN must be entered when a device reboots or resumes from hibernation.
 
 To address these issues, [BitLocker Network Unlock](bitlocker-how-to-enable-network-unlock.md) can be deployed. Network Unlock allows systems within the physical enterprise security perimeter that meet the hardware requirements and have BitLocker enabled with TPM+PIN to boot into Windows without user intervention. It requires direct ethernet connectivity to an enterprise Windows Deployment Services (WDS) server.
 
-### Protecting Thunderbolt and other DMA ports
+### Protect DMA ports
 
-There are a few different options to protect DMA ports, such as Thunderbolt&trade;3. Beginning with Windows 10 version 1803, new Intel-based devices have kernel protection against DMA attacks via Thunderbolt&trade; 3 ports enabled by default. This Kernel DMA Protection is available only for new systems beginning with Windows 10 version 1803, as it requires changes in the system firmware and/or BIOS.
-
-You can use the System Information desktop app `MSINFO32.exe` to check if a device has kernel DMA protection enabled:
-
-![Kernel DMA protection.](images/kernel-dma-protection.png)
-
-If kernel DMA protection isn't enabled, follow these steps to protect Thunderbolt&trade; 3 enabled ports:
-
-1. Require a password for BIOS changes
-
-2. Intel Thunderbolt Security must be set to User Authorization in BIOS settings. Refer to [Intel Thunderbolt&trade; 3 and Security on Microsoft Windows&reg; 10 Operating System documentation](https://thunderbolttechnology.net/security/Thunderbolt%203%20and%20Security.pdf)
-
-3. Additional DMA security may be added by deploying policy (beginning with Windows 10 version 1607 or Windows 11): [Disable new DMA devices when this computer is locked](policy-settings.md)
-
-For Thunderbolt v1 and v2 (DisplayPort Connector), refer to the **Thunderbolt Mitigation** section in [Blocking the SBP-2 driver and Thunderbolt controllers to reduce 1394 DMA and Thunderbolt DMA threats to BitLocker](https://support.microsoft.com/help/2516445/blocking-the-sbp-2-driver-and-thunderbolt-controllers-to-reduce-1394-d). For SBP-2 and 1394 (also known as Firewire), refer to the **SBP-2 Mitigation** section in [Blocking the SBP-2 driver and Thunderbolt controllers to reduce 1394 DMA and Thunderbolt DMA threats to BitLocker](https://support.microsoft.com/help/2516445/blocking-the-sbp-2-driver-and-thunderbolt-controllers-to-reduce-1394-d).
+It's important to protect DMA ports, as external peripherals may gain unauthorized access to memory. Depending on the device capabilities, there are different options to protect DMA ports. To learn more, see the policy setting [Disable new DMA devices when this computer is locked](policy-settings.md?tabs=common#disable-new-dma-devices-when-this-computer-is-locked).
 
 ## Attack countermeasures
 
