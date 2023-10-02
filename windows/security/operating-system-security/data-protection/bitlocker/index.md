@@ -55,3 +55,6 @@ BitLocker has the following requirements:
 > When installing the BitLocker optional component on a server, the *Enhanced Storage* feature must be installed. The feature is used to support hardware encrypted drives.
 
 [!INCLUDE [bitlocker](../../../../../includes/licensing/bitlocker-enablement.md)]
+
+> [!NOTE]
+> Licensing requirements for BitLocker enablement are different from the licensing requirements for BitLocker management. To learn more, see [Configure BitLocker](configure.md).

@@ -4,7 +4,7 @@ items:
 - name: BitLocker device encryption
   href: bitlocker-device-encryption.md
 - name: BitLocker countermeasures
-  href: bitlocker-countermeasures.md
+  href: countermeasures.md
 - name: Deployment guides
   items:
     - name: Planning for BitLocker

@@ -11,18 +11,11 @@ Windows uses hardware solutions and security features that protect BitLocker enc
 
 ## Protection before startup
 
-Before Windows starts, security features implemented as part of the device hardware and firmware must be relied on, including TPM and secure boot. These features ensure that the device hasn't been tampered with while the system was offline.
+Before Windows starts, security features implemented as part of the device hardware and firmware must be relied on, including TPM and secure boot. These features ensure that the device hasn't been tampered with while the system was offline:
 
-### Trusted Platform Module
-
-A TPM is a microchip designed to provide basic security-related functions, primarily involving encryption keys. BitLocker binds encryption keys with the TPM to ensure that a computer hasn't been tampered with while the system was offline. For more information about TPM, see [Trusted Platform Module](/windows/device-security/tpm/trusted-platform-module-overview).
-
-### UEFI and Secure Boot
-
-Unified Extensible Firmware Interface (UEFI) is a programmable boot environment that initializes devices and starts the operating system's bootloader.\
-The UEFI specification defines a firmware execution authentication process called [Secure Boot](../../system-security/secure-the-windows-10-boot-process.md). Secure Boot blocks untrusted firmware and bootloaders (signed or unsigned) from being able to start on the system.
-
-By default, BitLocker provides integrity protection for Secure Boot by utilizing the TPM PCR[7] measurement. An unauthorized EFI firmware, EFI boot application, or bootloader can't run and acquire the BitLocker key.
+- a *TPM* is a chip designed to provide basic security-related functions, primarily involving encryption keys. BitLocker binds encryption keys with the TPM to ensure that the device hasn't been tampered with while the system was offline. For more information about TPM, see [Trusted Platform Module](/windows/device-security/tpm/trusted-platform-module-overview)
+- *Unified Extensible Firmware Interface (UEFI)* is a programmable boot environment that initializes devices and starts the operating system's bootloader. The UEFI specification defines a firmware execution authentication process called [Secure Boot](../../system-security/secure-the-windows-10-boot-process.md)
+- *Secure Boot* blocks untrusted firmware and bootloaders (signed or unsigned) from being able to start on the system. By default, BitLocker provides integrity protection for Secure Boot by utilizing the TPM PCR[7] measurement. An unauthorized EFI firmware, EFI boot application, or bootloader can't run and acquire the BitLocker key
 
 ### BitLocker and reset attacks
 
@@ -30,31 +23,28 @@ To defend against malicious reset attacks, BitLocker uses the TCG Reset Attack M
 
 ## Security policies
 
-The next sections cover pre-boot authentication and DMA policies that can provide additional protection for BitLocker.
+Pre-boot authentication and DMA policies provide additional protection for BitLocker.
 
 ### Pre-boot authentication
 
-Pre-boot authentication with BitLocker is a policy setting that requires the use of either user input, such as a PIN, a startup key, or both to authenticate prior to making the contents of the system drive accessible. The policy setting is [Require additional authentication at startup](policy-settings.md).
+Pre-boot authentication with BitLocker can require the use of either user input, such as a PIN, a startup key, or both to authenticate prior to making the contents of the system drive accessible.
 
-BitLocker accesses and stores the encryption keys in memory only after pre-boot authentication is completed. If Windows can't access the encryption keys, the device can't read or edit the files on the system drive. The only option for bypassing pre-boot authentication is entering the recovery key.
+BitLocker accesses and stores the encryption keys in memory only after pre-boot authentication is completed. If Windows can't access the encryption keys, the device can't read or edit the files on the system drive. The only option for bypassing pre-boot authentication is entering the *recovery key*.
 
-Pre-boot authentication is designed to prevent the encryption keys from being loaded to system memory without the trusted user supplying another authentication factor such as a PIN or startup key. This feature helps mitigate DMA and memory remanence attacks.
+Pre-boot authentication is designed to prevent the encryption keys from being loaded to system memory without the trusted user supplying another authentication factor. This feature helps mitigate DMA and memory remanence attacks.
 
-On computers with a compatible TPM, operating system drives that are BitLocker-protected can be unlocked in four ways:
+On devices with a compatible TPM, operating system drives that are BitLocker-protected can be unlocked in four ways:
 
-- **TPM-only.** Using TPM-only validation doesn't require any interaction with the user to unlock and provide access to the drive. If the TPM validation succeeds, the user sign-in experience is the same as a standard sign-in. If the TPM is missing or changed or if BitLocker detects changes to the BIOS or UEFI code or configuration, critical operating system startup files, or the boot configuration, BitLocker enters recovery mode, and the user must enter a recovery password to regain access to the data. This option is more convenient for sign-in but less secure than the other options, which require an additional authentication factor.
-
-- **TPM with startup key.** In addition to the protection that the TPM-only provides, part of the encryption key is stored on a USB flash drive, referred to as a startup key. Data on the encrypted volume can't be accessed without the startup key.
-
-- **TPM with PIN.** In addition to the protection that the TPM provides, BitLocker requires that the user enters a PIN. Data on the encrypted volume can't be accessed without entering the PIN. TPMs also have [anti-hammering protection](/windows/security/hardware-protection/tpm/tpm-fundamentals#anti-hammering) that is designed to prevent brute force attacks that attempt to determine the PIN.
-
-- **TPM with startup key and PIN.** In addition to the core component protection that the TPM-only provides, part of the encryption key is stored on a USB flash drive, and a PIN is required to authenticate the user to the TPM. This configuration provides multifactor authentication so that if the USB key is lost or stolen, it can't be used for access to the drive, because the correct PIN is also required.
+- **TPM-only**: this option doesn't require any interaction with the user to unlock and provide access to the drive. If the TPM validation succeeds, the user sign-in experience is the same as a standard sign-in. If the TPM is missing or changed, or if BitLocker detects changes to the BIOS or UEFI configuration, critical operating system startup files, or the boot configuration, BitLocker enters recovery mode. The user must then enter a recovery password to regain access to the data. This option is more convenient for sign-in but less secure than the other options, which require an additional authentication factor
+- **TPM with startup key**: in addition to the protection that the TPM-only provides, part of the encryption key is stored on a USB flash drive, referred to as a *startup key*. Data on the encrypted volume can't be accessed without the startup key
+- **TPM with PIN**: in addition to the protection that the TPM provides, BitLocker requires that the user enters a PIN. Data on the encrypted volume can't be accessed without entering the PIN. TPMs also have [anti-hammering protection](/windows/security/hardware-protection/tpm/tpm-fundamentals#anti-hammering) that is designed to prevent brute force attacks that attempt to determine the PIN
+- **TPM with startup key and PIN**: in addition to the protection that the TPM provides, part of the encryption key is stored on a USB flash drive, and a PIN is required to authenticate the user to the TPM. This configuration provides multifactor authentication so that if the USB key is lost or stolen, it can't be used for access to the drive, because the PIN is also required
 
 Pre-boot authentication with a PIN can mitigate an attack vector for devices that use a bootable eDrive because an exposed eDrive bus can allow an attacker to capture the BitLocker encryption key during startup. Pre-boot authentication with a PIN can also mitigate DMA port attacks during the window of time between when BitLocker unlocks the drive and Windows boots to the point that Windows can set any port-related policies that have been configured.
 
-On the other hand, Pre-boot authentication-prompts can be inconvenient to users. In addition, users who forget their PIN or lose their startup key are denied access to their data until they can contact their organization's support team to obtain a recovery key. Pre-boot authentication can also make it more difficult to update unattended desktops and remotely administered servers because a PIN must be entered when a device reboots or resumes from hibernation.
+On the other hand, Pre-boot authentication-prompts can be inconvenient to users. In addition, users who forget their PIN or lose their startup key are denied access to their data until they can contact their organization's support team to obtain a recovery key. Pre-boot authentication can also make it more difficult to update unattended or remotely administered devices because a PIN must be entered when a device reboots or resumes from hibernation.
 
-To address these issues, [BitLocker Network Unlock](bitlocker-how-to-enable-network-unlock.md) can be deployed. Network Unlock allows systems within the physical enterprise security perimeter that meet the hardware requirements and have BitLocker enabled with TPM+PIN to boot into Windows without user intervention. It requires direct ethernet connectivity to an enterprise Windows Deployment Services (WDS) server.
+To address these issues, [BitLocker Network Unlock](network-unlock.md) can be deployed. Network Unlock allows systems that meet the hardware requirements and have BitLocker enabled with TPM+PIN to boot into Windows without user intervention. It requires direct ethernet connectivity to a Windows Deployment Services (WDS) server.
 
 ### Protect DMA ports
 
@@ -66,7 +56,7 @@ This section covers countermeasures for specific types of attacks.
 
 ### Bootkits and rootkits
 
-A physically present attacker might attempt to install a bootkit or rootkit-like piece of software into the boot chain in an attempt to steal the BitLocker keys. The TPM should observe this installation via PCR measurements, and the BitLocker key won't be released.
+A physically present attacker might attempt to install a bootkit or rootkit-like piece of software into the boot chain in an attempt to steal the BitLocker keys. The TPM should observe this installation via PCR measurements, and the BitLocker key isn't released.
 
 > [!NOTE]
 > BitLocker protects against this attack by default.
@@ -79,7 +69,7 @@ Require TPM + PIN for anti-hammering protection.
 
 ### DMA attacks
 
-See [Protecting Thunderbolt and other DMA ports](#protecting-thunderbolt-and-other-dma-ports) earlier in this article.
+See [Protect DMA ports](#protect-dma-ports) earlier in this article.
 
 ### Paging file, crash dump, and Hyberfil.sys attacks
 
@@ -87,26 +77,22 @@ These files are secured on an encrypted volume by default when BitLocker is enab
 
 ### Memory remanence
 
-Enable secure boot and mandatorily prompt a password to change BIOS settings. For customers requiring protection against these advanced attacks, configure a TPM+PIN protector, disable Standby power management, and shut down or hibernate the device before it leaves the control of an authorized user.
+Enable secure boot and mandatorily prompt a password to change BIOS settings. For scenarios requiring protection against these advanced attacks, configure a TPM+PIN protector, disable *standby* power management, and shut down or hibernate the device before it leaves the control of an authorized user.
 
-<!--
-## Power management group policy settings: Sleep and Hibernate
+The Windows default power settings cause devices to enter *sleep mode* when idle. When a device transitions to sleep, running programs and documents are persisted in memory. When a device resumes from sleep, users aren't required to reauthenticate with a PIN or USB startup key to access encrypted data. This scenario may lead to conditions where data security is compromised.
 
-PCs default power settings for a computer will cause the computer to enter Sleep mode frequently to conserve power when idle and to help extend the system's battery life. When a computer transitions to Sleep, open programs and documents are persisted in memory. When a computer resumes from Sleep, users aren't required to reauthenticate with a PIN or USB startup key to access encrypted data. Not needing to reauthenticate when resuming from Sleep might lead to conditions where data security is compromised.
+When a device *hibernates*, the drive is locked. When the device resumes from hibernation, the drive is unlocked, which means that users must provide a PIN or a startup key if using multifactor authentication with BitLocker.
 
-However, when a computer hibernates the drive is locked, and when it resumes from hibernation the drive is unlocked, which means that users will need to provide a PIN or a startup key if using multifactor authentication with BitLocker. Therefore, organizations that use BitLocker may want to use Hibernate instead of Sleep for improved security. This setting doesn't have an impact on TPM-only mode, because it provides a transparent user experience at startup and when resuming from the Hibernate states.
+Therefore, organizations that use BitLocker may want to use Hibernate instead of Sleep for improved security.
 
-To disable all available sleep states, disable the Group Policy settings located in **Computer Configuration** > **Administrative Templates** > **System** > **Power Management** :
-
-- **Allow Standby States (S1-S3) When Sleeping (Plugged In)**
-- **Allow Standby States (S1-S3) When Sleeping (Battery)**
--->
+> [!NOTE]
+> This setting doesn't have an impact on TPM-only mode, because it provides a transparent user experience at startup and when resuming from the Hibernate states.
 
 ### Tricking BitLocker to pass the key to a rogue operating system
 
-An attacker might modify the boot manager configuration database (BCD) which is stored on a non-encrypted partition and add an entry point to a rogue operating system on a different partition. During the boot process, BitLocker code will make sure that the operating system that the encryption key obtained from the TPM is given to, is cryptographically verified to be the intended recipient. Because this strong cryptographic verification already exists, we don't recommend storing a hash of a disk partition table in Platform Configuration Register (PCR) 5.
+An attacker might modify the boot manager configuration database (BCD), which is stored on a non-encrypted partition and add an entry point to a rogue operating system on a different partition. During the boot process, BitLocker code makes sure that the operating system that the encryption key obtained from the TPM is given to, is cryptographically verified to be the intended recipient. Because this strong cryptographic verification already exists, we don't recommend storing a hash of a disk partition table in Platform Configuration Register (PCR) 5.
 
-An attacker might also replace the entire operating system disk while preserving the platform hardware and firmware and could then extract a protected BitLocker key blob from the metadata of the victim OS partition. The attacker could then attempt to unseal that BitLocker key blob by calling the TPM API from an operating system under their control. This will not succeed because when Windows seals the BitLocker key to the TPM, it does it with a PCR 11 value of 0, and to successfully unseal the blob, PCR 11 in the TPM must have a value of 0. However, when the boot manager passes the control to any boot loader (legitimate or rogue) it always changes PCR 11 to a value of 1. Since the PCR 11 value is guaranteed to be different after exiting the boot manager, the attacker can't unlock the BitLocker key.
+An attacker might also replace the entire operating system disk while preserving the platform hardware and firmware and could then extract a protected BitLocker key blob from the metadata of the victim OS partition. The attacker could then attempt to unseal that BitLocker key blob by calling the TPM API from an operating system under their control. This won't succeed because when Windows seals the BitLocker key to the TPM, it does it with a PCR 11 value of 0, and to successfully unseal the blob, PCR 11 in the TPM must have a value of 0. However, when the boot manager passes the control to any boot loader (legitimate or rogue) it always changes PCR 11 to a value of 1. Since the PCR 11 value is guaranteed to be different after exiting the boot manager, the attacker can't unlock the BitLocker key.
 
 ## Attacker countermeasures
 
@@ -132,22 +118,20 @@ Mitigation:
 
   -And-
 
-- Disable Standby power management and shut down or hibernate the device before it leaves the control of an authorized user. This configuration can be set using the following Group Policy:
+- Disable Standby power management and shut down or hibernate the device before it leaves the control of an authorized user. This configuration can be set using the following policy settings:
 
-  - *Computer Configuration* > *Policies* > *Administrative Templates* > *Windows Components* > *File Explorer* > **Show hibernate in the power options menu**
-
-  - *Computer Configuration* > *Policies* > *Administrative Templates* > *Power Management* > *Sleep Settings* > **Allow standby states (S1-S3) when sleeping (plugged in)**
-
-  - *Computer Configuration* > *Policies* > *Administrative Templates* > *Power Management* > *Sleep Settings* > **Allow standby states (S1-S3) when sleeping (on battery)**
+  - **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **File Explorer** > **Show hibernate in the power options menu**
+  - **Computer Configuration** > **Policies** > **Administrative Templates** > **Power Management** > **Sleep Settings** >
+      - **Allow standby states (S1-S3) when sleeping (plugged in)**
+      - **Allow standby states (S1-S3) when sleeping (on battery)**
 
 > [!IMPORTANT]
 > These settings are **not configured** by default.
 
-For some systems, bypassing TPM-only may require opening the case, and may require soldering, but could possibly be done for a reasonable cost. Bypassing a TPM with a PIN protector would cost much more, and require brute forcing the PIN. With a sophisticated enhanced PIN, it could be nearly impossible. The Group Policy setting for [enhanced PIN](policy-settings.md) is:
+For some systems, bypassing TPM-only may require opening the case, and may require soldering, but could possibly be done for a reasonable cost. Bypassing a TPM with a PIN protector would cost much more, and require brute forcing the PIN. With a sophisticated enhanced PIN, it could be nearly impossible. To learn more about the policy setting, see [Allow enhanced PINs for startup](policy-settings.md?tabs=os#allow-enhanced-pins-for-startup).
 
-- *Computer Configuration* > *Policies* > *Administrative Templates* > *Windows Components* > *BitLocker Drive Encryption* > *Operating System Drives* > **Allow enhanced PINs for startup**
+For secure administrative workstations, it's recommended to:
 
-> [!IMPORTANT]
-> This setting is **not configured** by default.
-
-For secure administrative workstations, Microsoft recommends a TPM with PIN protector and to disable Standby power management and shut down or hibernate the device.
+- use a TPM with PIN protector
+- disable standby power management
+- shut down or hibernate the device before it leaves the control of an authorized user

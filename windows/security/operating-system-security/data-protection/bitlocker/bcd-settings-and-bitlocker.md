@@ -19,7 +19,7 @@ If the default BCD setting persistently triggers a recovery for benign changes, 
 
 One of the benefits of using secure boot is that it can correct BCD settings during boot without triggering recovery events. Secure boot enforces the same BCD settings as BitLocker. Secure boot BCD enforcement isn't configurable from within the operating system.
 
-## Customizing BCD validation settings
+## Customize BCD validation settings
 
 To modify the BCD settings that are validated by BitLocker, the administrator will add or exclude BCD settings from the platform validation profile by enabling and configuring the **[Use enhanced Boot Configuration Data validation profile](policy-settings.md?tabs=os#use-enhanced-boot-configuration-data-validation-profile)** policy setting.
 
