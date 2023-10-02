@@ -1,24 +1,23 @@
 ---
 title: Set up Delivery Optimization
-description: In this article, learn how to set up Delivery Optimization.
+description: In this article, learn how to set up Delivery Optimization for use by Windows clients in your organization.
+ms.prod: windows-client
+ms.technology: itpro-updates
+ms.topic: how-to
 author: cmknox
 ms.author: carmenf
 ms.reviewer: mstewart
 manager: aaroncz
-ms.prod: windows-client
-ms.technology: itpro-updates
-ms.localizationpriority: medium
-ms.topic: how-to
-ms.date: 12/19/2022
 ms.collection: tier3
+ms.localizationpriority: medium
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
+- ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-delivery-optimization target=_blank>Delivery Optimization</a>
+ms.date: 08/15/2023
 ---
 
 # Set up Delivery Optimization for Windows
-
-**Applies to**
-
-- Windows 10
-- Windows 11
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq)
 
