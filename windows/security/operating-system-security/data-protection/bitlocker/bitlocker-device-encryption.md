@@ -94,7 +94,7 @@ Network Unlock requires the following infrastructure:
 
 - A server with the DHCP server role installed
 
-For more information about how to configure Network unlock feature, see [BitLocker: How to enable Network Unlock](bitlocker-how-to-enable-network-unlock.md).
+For more information about how to configure Network unlock feature, see [BitLocker: How to enable Network Unlock](network-unlock.md).
 
 ## Microsoft BitLocker administration and monitoring
 

@@ -42,7 +42,7 @@ The Minimal Server Interface is a prerequisite for some of the BitLocker adminis
 
 If a server is being installed manually, such as a stand-alone server, then choosing [Server with Desktop Experience](/windows-server/get-started/getting-started-with-server-with-desktop-experience/) is the easiest path because it avoids performing the steps to add a GUI to Server Core.
 
- Additionally, lights-out data centers can take advantage of the enhanced security of a second factor while avoiding the need for user intervention during reboots by optionally using a combination of BitLocker (TPM+PIN) and BitLocker Network Unlock. BitLocker Network Unlock brings together the best of hardware protection, location dependence, and automatic unlock, while in the trusted location. For the configuration steps, see [BitLocker: How to enable Network Unlock](bitlocker-how-to-enable-network-unlock.md).
+ Additionally, lights-out data centers can take advantage of the enhanced security of a second factor while avoiding the need for user intervention during reboots by optionally using a combination of BitLocker (TPM+PIN) and BitLocker Network Unlock. BitLocker Network Unlock brings together the best of hardware protection, location dependence, and automatic unlock, while in the trusted location. For the configuration steps, see [BitLocker: How to enable Network Unlock](network-unlock.md).
  For more information, see the BitLocker FAQs article and other useful links in [Related Articles](#related-articles).
 
 ## PowerShell examples
@@ -105,7 +105,7 @@ Enable-BitLocker -MountPoint "C:" -EncryptionMethod XtsAes256 -UsedSpaceOnly -Pi
 - [How to update local source media to add roles and features](/archive/blogs/joscon/how-to-update-local-source-media-to-add-roles-and-features)
 - [How to add or remove optional components on Server Core](/archive/blogs/server_core/using-features-on-demand-with-updated-systems-and-patched-images) *(Features on Demand)*
 - [How to deploy BitLocker on Windows Server](bitlocker-how-to-deploy-on-windows-server.md)  
-- [How to enable Network Unlock](bitlocker-how-to-enable-network-unlock.md)
+- [How to enable Network Unlock](network-unlock.md)
 - [Shielded VMs and Guarded Fabric](https://blogs.technet.microsoft.com/windowsserver/2016/05/10/a-closer-look-at-shielded-vms-in-windows-server-2016/)
 
 ### PowerShell

@@ -18,7 +18,7 @@ If you disable or don't configure this policy setting, BitLocker clients won't b
 > [!NOTE]
 > For reliability and security, computers should also have a TPM startup PIN that can be used when the computer is disconnected from the wired network or the server at startup.
 
-For more information about Network Unlock feature, see [BitLocker: How to enable Network Unlock](../bitlocker-how-to-enable-network-unlock.md)
+For more information about Network Unlock feature, see [BitLocker: How to enable Network Unlock](../network-unlock.md)
 
 |  | Path |
 |--|--|

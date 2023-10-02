@@ -1,11 +1,11 @@
 ---
-title: Prepare the organization for BitLocker Planning and policies 
-description: This article for the IT professional explains how can to plan for a BitLocker deployment.
+title: Plan for a BitLocker deployment 
+description: Learn how to plan for a BitLocker deployment in your organization.
 ms.topic: conceptual
 ms.date: 11/08/2022
 ---
 
-# Prepare an organization for BitLocker: Planning and policies
+# Plan for a BitLocker deployment
 
 This article for the IT professional explains how to plan BitLocker deployment.
 
@@ -132,7 +132,7 @@ Administrators can enable BitLocker before to operating system deployment from t
 
 ## Used Disk Space Only encryption
 
-The BitLocker Setup wizard provides administrators the ability to choose the Used Disk Space Only or Full encryption method when enabling BitLocker for a volume. Administrators can use the new BitLocker group policy setting to enforce either Used Disk Space Only or Full disk encryption.
+The BitLocker Setup wizard provides administrators the ability to choose the Used Disk Space Only or Full encryption method when enabling BitLocker for a volume. Administrators can use the BitLocker policy setting to enforce either Used Disk Space Only or Full disk encryption.
 
 Launching the BitLocker Setup wizard prompts for the authentication method to be used (password and smart card are available for data volumes). Once the method is chosen and the recovery key is saved, the wizard asks to choose the drive encryption type. Select Used Disk Space Only or Full drive encryption.
 
@@ -142,7 +142,7 @@ With Full drive encryption, the entire drive is encrypted, whether data is store
 
 ## Active Directory Domain Services considerations
 
-BitLocker integrates with Active Directory Domain Services (AD DS) to provide centralized key management. By default, no recovery information is backed up to Active Directory. Administrators can configure the following group policy setting for each drive type to enable backup of BitLocker recovery information:
+BitLocker integrates with Microsoft Entra ID and Active Directory Domain Services (AD DS) to provide centralized key management. By default, no recovery information is backed up to Active Directory. Administrators can configure the following group policy setting for each drive type to enable backup of BitLocker recovery information:
 
 **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > ***drive type*** > **Choose how BitLocker-protected drives can be recovered**.
 

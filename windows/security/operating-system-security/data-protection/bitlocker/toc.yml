@@ -5,10 +5,10 @@ items:
   href: countermeasures.md
 - name: Deployment guides
   items:
-    - name: Planning for BitLocker
-      href: prepare-your-organization-for-bitlocker-planning-and-policies.md
-    - name: BitLocker basic deployment
-      href: bitlocker-basic-deployment.md
+    - name: Plan for a BitLocker deployment
+      href: plan.md
+    - name: Configure BitLocker
+      href: configure.md
     - name: BitLocker deployment comparison
       href: bitlocker-deployment-comparison.md
 - name: BitLocker device encryption
@@ -21,14 +21,14 @@ items:
       href: bitlocker-how-to-deploy-on-windows-server.md
     - name: Manage BitLocker with Drive Encryption Tools
       href: bitlocker-use-bitlocker-drive-encryption-tools-to-manage-bitlocker.md
-    - name: Use BitLocker Recovery Password Viewer
-      href: bitlocker-use-bitlocker-recovery-password-viewer.md
     - name: BitLocker Recovery Guide
       href: bitlocker-recovery-guide-plan.md
     - name: Protect cluster shared volumes and storage area networks with BitLocker
       href: protecting-cluster-shared-volumes-and-storage-area-networks-with-bitlocker.md
     - name: Network Unlock
-      href: bitlocker-how-to-enable-network-unlock.md
+      href: network-unlock.md
+    - name: BitLocker Recovery Password Viewer
+      href: bitlocker-use-bitlocker-recovery-password-viewer.md
 - name: Reference
   items:
     - name: BitLocker policy settings

@@ -388,7 +388,7 @@ sections:
           
           Network Unlock uses two protectors - the TPM protector and the protector provided by the network or by the PIN. Automatic unlock uses a single protector - the one stored in the TPM. If the computer is joined to a network without the key protector, it will prompt to enter a PIN. If the PIN isn't available, the recovery key will need to be used to unlock the computer if it can't be connected to the network.
           
-          For more info, see [BitLocker: How to enable Network Unlock](bitlocker-how-to-enable-network-unlock.md).
+          For more info, see [BitLocker: How to enable Network Unlock](network-unlock.md).
 
   - name: Use BitLocker with other programs
     questions:
