@@ -226,6 +226,6 @@ You can do this through the Intune admin center under Endpoint security > Firewa
 
 OR
 
-- **Create local firewall rules with PowerShell**: You can use PowerShell to configure by adding a Firewall rule using [New-NetFirewallRule](/powershell/module/netsecurity/new-netfirewallrule?view=windowsserver2022-ps) and specify the –PolicyAppId tag. You can specify one tag at a time while creating firewall rules. Multiple User Ids are supported. 
+- **Create local firewall rules with PowerShell**: You can use PowerShell to configure by adding a Firewall rule using [New-NetFirewallRule](/powershell/module/netsecurity/new-netfirewallrule) and specify the –PolicyAppId tag. You can specify one tag at a time while creating firewall rules. Multiple User Ids are supported. 
 
 
