@@ -228,14 +228,4 @@ OR
 
 - **Create local firewall rules with PowerShell**: You can use PowerShell to configure by adding a Firewall rule using [New-NetFirewallRule](/powershell/module/netsecurity/new-netfirewallrule?view=windowsserver2022-ps) and specify the –PolicyAppId tag. You can specify one tag at a time while creating firewall rules. Multiple User Ids are supported. 
 
-> [!NOTE]
-> WDAC AppId Tagging Policies are available on the following versions of the Windows platform: 
-> 
-> - Windows 10, versions 20H1 and above 
-
-> - Windows 11 
-
-> - Windows Server 2022 and above 
-
-> 
 
