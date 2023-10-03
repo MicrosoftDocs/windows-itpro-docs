@@ -23,7 +23,7 @@ Regular non administrator users can enroll to MAM.
 
 ## Understand Windows Information Protection
 
-WPJ takes advantage of [built-in policies](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip) to protect company data on the device. To protect user-owned applications on personal devices, MAM limits enforcement of WIP policies to [enlightened apps](/windows/security/information-protection/windows-information-protection/enlightened-microsoft-apps-and-wip) and WIP-aware apps. Enlightened apps can differentiate between corporate and personal data, correctly determining which to protect based on WIP policies. WIP-aware apps indicate to Windows that they don't handle personal data, and therefore, it's safe for Windows to protect data on their behalf.
+WIP takes advantage of [built-in policies](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip) to protect company data on the device. To protect user-owned applications on personal devices, WPJ limits enforcement of WIP policies to [enlightened apps](/windows/security/information-protection/windows-information-protection/enlightened-microsoft-apps-and-wip) and WIP-aware apps. Enlightened apps can differentiate between corporate and personal data, correctly determining which to protect based on WIP policies. WIP-aware apps indicate to Windows that they don't handle personal data, and therefore, it's safe for Windows to protect data on their behalf.
 
 To make applications WIP-aware, app developers need to include the following data in the app resource file.
 
