@@ -157,19 +157,6 @@ Users can verify whether the recovery key was saved properly by checking OneDriv
 
 Windows Explorer allows users to launch the **BitLocker Drive Encryption Wizard** by right-clicking a volume and selecting **Turn On BitLocker**. This option is available on client computers by default. On servers, the BitLocker feature and the Desktop-Experience feature must first be installed for this option to be available. After selecting **Turn on BitLocker**, the wizard works exactly as it does when launched using the BitLocker control panel.
 
-## Down-level compatibility
-
-The following table shows the compatibility matrix for systems that have been BitLocker enabled and then presented to a different version of Windows.
-
-Table 1: Cross compatibility for Windows 11, Windows 10, Windows 8.1, Windows 8, and Windows 7 encrypted volumes
-
-|Encryption Type|Windows 11, Windows 10, and Windows 8.1|Windows 8|Windows 7|
-|---|---|---|---|
-|Fully encrypted on Windows 8|Presents as fully encrypted|N/A|Presented as fully encrypted|
-|Used Disk Space Only encrypted on Windows 8|Presents as encrypt on write|N/A|Presented as fully encrypted|
-|Fully encrypted volume from Windows 7|Presents as fully encrypted|Presented as fully encrypted|N/A|
-|Partially encrypted volume from Windows 7|Windows 11, Windows 10, and Windows 8.1 will complete encryption regardless of policy|Windows 8 will complete encryption regardless of policy|N/A|
-
 ## Encrypting volumes using the `manage-bde.exe` command-line interface
 
 `Manage-bde.exe` is a command-line utility that can be used for scripting BitLocker operations. `Manage-bde.exe` offers additional options not displayed in the BitLocker control panel. For a complete list of the options, see [Manage-bde](/windows-server/administration/windows-commands/manage-bde).
@@ -246,112 +233,7 @@ manage-bde.exe -on C:
 
 ## Encrypting volumes using the BitLocker Windows PowerShell cmdlets
 
-Windows PowerShell cmdlets provide an alternative way to work with BitLocker. Using Windows PowerShell's scripting capabilities, administrators can integrate BitLocker options into existing scripts with ease. The list below displays the available BitLocker cmdlets.
 
-|Name|Parameters|
-|--- |--- |
-|**Add-BitLockerKeyProtector**|<li>ADAccountOrGroup<li>ADAccountOrGroupProtector<li>Confirm<li>MountPoint<li>Password<li>PasswordProtector<li>Pin<li>RecoveryKeyPath<li>RecoveryKeyProtector<li>RecoveryPassword<li>RecoveryPasswordProtector<li>Service<li>StartupKeyPath<li>StartupKeyProtector<li>TpmAndPinAndStartupKeyProtector<li>TpmAndPinProtector<li>TpmAndStartupKeyProtector<li>TpmProtector<li>WhatIf|
-|**Backup-BitLockerKeyProtector**|<li>Confirm<li>KeyProtectorId<li>MountPoint<li>WhatIf|
-|**Disable-BitLocker**|<li>Confirm<li>MountPoint<li>WhatIf|
-|**Disable-BitLockerAutoUnlock**|<li>Confirm<li>MountPoint<li>WhatIf|
-|**Enable-BitLocker**|<li>AdAccountOrGroup<li>AdAccountOrGroupProtector<li>Confirm<li>EncryptionMethod<li>HardwareEncryption<li>Password<li>PasswordProtector<li>Pin<li>RecoveryKeyPath<li>RecoveryKeyProtector<li>RecoveryPassword<li>RecoveryPasswordProtector<li>Service<li>SkipHardwareTest<li>StartupKeyPath<li>StartupKeyProtector<li>TpmAndPinAndStartupKeyProtector<li>TpmAndPinProtector<li>TpmAndStartupKeyProtector<li>TpmProtector<li>UsedSpaceOnly<li>WhatIf|
-|**Enable-BitLockerAutoUnlock**|<li>Confirm<li>MountPoint<li>WhatIf|
-|**Get-BitLockerVolume**|<li>MountPoint|
-|**Lock-BitLocker**|<li>Confirm<li>ForceDismount<li>MountPoint<li>WhatIf|
-|**Remove-BitLockerKeyProtector**|<li>Confirm<li>KeyProtectorId<li>MountPoint<li>WhatIf|
-|**Resume-BitLocker**|<li>Confirm<li>MountPoint<li>WhatIf|
-|**Suspend-BitLocker**|<li>Confirm<li>MountPoint<li>RebootCount<li>WhatIf|
-|**Unlock-BitLocker**|<li>AdAccountOrGroup<li>Confirm<li>MountPoint<li>Password<li>RecoveryKeyPath<li>RecoveryPassword<li>RecoveryPassword<li>WhatIf|
-
-Similar to `manage-bde.exe`, the Windows PowerShell cmdlets allow configuration beyond the options offered in the control panel. As with `manage-bde.exe`, users need to consider the specific needs of the volume they're encrypting prior to running Windows PowerShell cmdlets.
-
-A good initial step is to determine the current state of the volume(s) on the computer. You can do this using the `Get-BitLocker` volume PowerShell cmdlet. The output from this cmdlet displays information on the volume type, protectors, protection status, and other useful information.
-
-Occasionally, all protectors may not be shown when using **Get-BitLockerVolume** due to lack of space in the output display. If all of the protectors for a volume aren't seen, the Windows PowerShell pipe command (`|`) can be used to format a listing of the protectors.
-
-> [!NOTE]
-> In the event that there are more than four protectors for a volume, the pipe command may run out of display space. For volumes with more than four protectors, use the method described in the section below to generate a listing of all protectors with protector ID.
-
-```powershell
-Get-BitLockerVolume C: | fl
-```
-
-If the existing protectors need to be removed prior to provisioning BitLocker on the volume, the `Remove-BitLockerKeyProtector` cmdlet can be used. Accomplishing this action requires the GUID associated with the protector to be removed.
-A simple script can pipe out the values of each **Get-BitLockerVolume** return to another variable as seen below:
-
-```powershell
-$vol = Get-BitLockerVolume
-$keyprotectors = $vol.KeyProtector
-```
-
-Using this script, the information in the **$keyprotectors** variable can be displayed to determine the GUID for each protector. This information can then be used to remove the key protector for a specific volume using the command:
-
-```powershell
-Remove-BitLockerKeyProtector <volume>: -KeyProtectorID "{GUID}"
-```
-
-> [!NOTE]
-> The BitLocker cmdlet requires the key protector GUID (enclosed in quotation marks) to execute. Ensure the entire GUID, with braces, is included in the command.
-
-### Operating system volume PowerShell cmdlets
-
-Using the BitLocker Windows PowerShell cmdlets is similar to working with the `manage-bde.exe` tool for encrypting operating system volumes. Windows PowerShell offers users flexibility. For example, users can add the desired protector as part command for encrypting the volume. Below are examples of common user scenarios and steps to accomplish them using the BitLocker cmdlets for Windows PowerShell.
-
-To enable BitLocker with just the TPM protector, use this command:
-
-```powershell
-Enable-BitLocker C:
-```
-
-The example below adds one additional protector, the StartupKey protectors, and chooses to skip the BitLocker hardware test. In this example, encryption starts immediately without the need for a reboot.
-
-```powershell
-Enable-BitLocker C: -StartupKeyProtector -StartupKeyPath <path> -SkipHardwareTest
-```
-
-### Data volume PowerShell cmdlets
-
-Data volume encryption using Windows PowerShell is the same as for operating system volumes. You should add the desired protectors prior to encrypting the volume. The following example adds a password protector to the E: volume using the variable $pw as the password. The $pw variable is held as a SecureString value to store the user-defined password. Last, encryption begins.
-
-```powershell
-$pw = Read-Host -AsSecureString
-<user inputs password>
-Enable-BitLockerKeyProtector E: -PasswordProtector -Password $pw
-```
-
-### Using an SID-based protector in Windows PowerShell
-
-The **ADAccountOrGroup** protector is an Active Directory SID-based protector. This protector can be added to both operating system and data volumes, although it doesn't unlock operating system volumes in the pre-boot environment. The protector requires the SID for the domain account or group to link with the protector. BitLocker can protect a cluster-aware disk by adding an SID-based protector for the Cluster Name Object (CNO) that lets the disk properly failover and unlock to any member computer of the cluster.
-
-> [!WARNING]
-> The SID-based protector requires the use of an additional protector such as TPM, PIN, recovery key, etc. when used on operating system volumes.
-
-To add an **ADAccountOrGroup** protector to a volume, either the domain SID is needed or the group name preceded by the domain and a backslash. In the example below, the **CONTOSO\\Administrator** account is added as a protector to the data volume G.
-
-```powershell
-Enable-BitLocker G: -AdAccountOrGroupProtector -AdAccountOrGroup CONTOSO\Administrator
-```
-
-For users who wish to use the SID for the account or group, the first step is to determine the SID associated with the account. To get the specific SID for a user account in Windows PowerShell, use the following command:
-
-```powershell
-Get-ADUser -filter {samaccountname -eq "administrator"}
-```
-
-> [!NOTE]
-> Use of this command requires the RSAT-AD-PowerShell feature.
-
-> [!TIP]
-> In addition to the Windows PowerShell command above, information about the locally logged on user and group membership can be found using: `WHOAMI /ALL`. This doesn't require the use of additional features.
-
-In the example below, the user wishes to add a domain SID-based protector to the previously encrypted operating system volume. The user knows the SID for the user account or group they wish to add and uses the following command:
-
-```powershell
-Add-BitLockerKeyProtector C: -ADAccountOrGroupProtector -ADAccountOrGroup "<SID>"
-```
-
-> [!NOTE]
-> Active Directory-based protectors are normally used to unlock Failover Cluster-enabled volumes.
 
 ## Checking BitLocker status
 
@@ -447,9 +329,44 @@ If a user didn't want to input each mount point individually, using the `-MountP
 Disable-BitLocker -MountPoint E:,F:,G:
 ```
 
-## Related articles
+## PowerShell examples
 
-- [Prepare your organization for BitLocker: Planning and policies](prepare-your-organization-for-bitlocker-planning-and-policies.md)
-- [BitLocker recovery guide](bitlocker-recovery-guide-plan.md)
-- [BitLocker: How to enable Network Unlock](network-unlock.md)
-- [BitLocker overview](index.md)
+For Azure AD-joined computers, including virtual machines, the recovery password should be stored in Azure AD.  
+
+**Example**: *Use PowerShell to add a recovery password and back it up to Azure AD before enabling BitLocker*
+
+```powershell
+Add-BitLockerKeyProtector -MountPoint "C:" -RecoveryPasswordProtector
+
+$BLV = Get-BitLockerVolume -MountPoint "C:"
+
+BackupToAAD-BitLockerKeyProtector -MountPoint "C:" -KeyProtectorId $BLV.KeyProtector[0].KeyProtectorId
+```
+
+For domain-joined computers, including servers, the recovery password should be stored in Active Directory Domain Services (AD DS).
+
+**Example**: *Use PowerShell to add a recovery password and back it up to AD DS before enabling BitLocker*
+
+```powershell
+Add-BitLockerKeyProtector -MountPoint "C:" -RecoveryPasswordProtector
+
+$BLV = Get-BitLockerVolume -MountPoint "C:"
+
+Backup-BitLockerKeyProtector -MountPoint "C:" -KeyProtectorId $BLV.KeyProtector[0].KeyProtectorId
+```
+
+PowerShell can then be used to enable BitLocker:
+
+**Example**: *Use PowerShell to enable BitLocker with a TPM protector*
+
+```powershell
+Enable-BitLocker -MountPoint "D:" -EncryptionMethod XtsAes256 -UsedSpaceOnly -TpmProtector 
+```
+
+**Example**: *Use PowerShell to enable BitLocker with a TPM+PIN protector, in this case with a PIN set to 123456*
+
+```powershell
+$SecureString = ConvertTo-SecureString "123456" -AsPlainText -Force
+
+Enable-BitLocker -MountPoint "C:" -EncryptionMethod XtsAes256 -UsedSpaceOnly -Pin $SecureString -TPMandPinProtector
+```

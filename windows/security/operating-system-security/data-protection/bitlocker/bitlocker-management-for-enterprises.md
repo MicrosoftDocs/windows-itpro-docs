@@ -34,9 +34,9 @@ For hardware that is compliant with Modern Standby and HSTI, when using either o
 
 For Windows PCs and Windows Phones that are enrolled using **Connect to work or school account**, BitLocker Device Encryption is managed over MDM, the same as devices joined to Azure AD.
 
-## Managing servers
+## Manage servers
 
-Servers are often installed, configured, and deployed using PowerShell; therefore, the recommendation is to also use [PowerShell to enable BitLocker on a server](bitlocker-use-bitlocker-drive-encryption-tools-to-manage-bitlocker.md#bitlocker-cmdlets-for-windows-powershell), ideally as part of the initial setup. BitLocker is an Optional Component (OC) in Windows Server; therefore, follow the directions in [BitLocker: How to deploy on Windows Server 2012 and later](bitlocker-how-to-deploy-on-windows-server.md) to add the BitLocker OC.
+Servers are often installed, configured, and deployed using PowerShell; therefore, the recommendation is to also use [PowerShell to enable BitLocker on a server](manage.md#bitlocker-cmdlets-for-windows-powershell), ideally as part of the initial setup. BitLocker is an Optional Component (OC) in Windows Server; therefore, follow the directions in [BitLocker: How to deploy on Windows Server 2012 and later](bitlocker-how-to-deploy-on-windows-server.md) to add the BitLocker OC.
 
 The Minimal Server Interface is a prerequisite for some of the BitLocker administration tools. On a [Server Core](/windows-server/get-started/getting-started-with-server-core/) installation, the necessary GUI components must be added first. The steps to add shell components to Server Core are described in [Using Features on Demand with Updated Systems and Patched Images](/archive/blogs/server_core/using-features-on-demand-with-updated-systems-and-patched-images) and [How to update local source media to add roles and features](/archive/blogs/joscon/how-to-update-local-source-media-to-add-roles-and-features).  
 
@@ -45,69 +45,4 @@ If a server is being installed manually, such as a stand-alone server, then choo
  Additionally, lights-out data centers can take advantage of the enhanced security of a second factor while avoiding the need for user intervention during reboots by optionally using a combination of BitLocker (TPM+PIN) and BitLocker Network Unlock. BitLocker Network Unlock brings together the best of hardware protection, location dependence, and automatic unlock, while in the trusted location. For the configuration steps, see [BitLocker: How to enable Network Unlock](network-unlock.md).
  For more information, see the BitLocker FAQs article and other useful links in [Related Articles](#related-articles).
 
-## PowerShell examples
 
-For Azure AD-joined computers, including virtual machines, the recovery password should be stored in Azure AD.  
-
-**Example**: *Use PowerShell to add a recovery password and back it up to Azure AD before enabling BitLocker*
-
-```powershell
-Add-BitLockerKeyProtector -MountPoint "C:" -RecoveryPasswordProtector
-
-$BLV = Get-BitLockerVolume -MountPoint "C:"
-
-BackupToAAD-BitLockerKeyProtector -MountPoint "C:" -KeyProtectorId $BLV.KeyProtector[0].KeyProtectorId
-```
-
-For domain-joined computers, including servers, the recovery password should be stored in Active Directory Domain Services (AD DS).
-
-**Example**: *Use PowerShell to add a recovery password and back it up to AD DS before enabling BitLocker*
-
-```powershell
-Add-BitLockerKeyProtector -MountPoint "C:" -RecoveryPasswordProtector
-
-$BLV = Get-BitLockerVolume -MountPoint "C:"
-
-Backup-BitLockerKeyProtector -MountPoint "C:" -KeyProtectorId $BLV.KeyProtector[0].KeyProtectorId
-```
-
-PowerShell can then be used to enable BitLocker:
-
-**Example**: *Use PowerShell to enable BitLocker with a TPM protector*
-
-```powershell
-Enable-BitLocker -MountPoint "D:" -EncryptionMethod XtsAes256 -UsedSpaceOnly -TpmProtector 
-```
-
-**Example**: *Use PowerShell to enable BitLocker with a TPM+PIN protector, in this case with a PIN set to 123456*
-
-```powershell
-$SecureString = ConvertTo-SecureString "123456" -AsPlainText -Force
-
-Enable-BitLocker -MountPoint "C:" -EncryptionMethod XtsAes256 -UsedSpaceOnly -Pin $SecureString -TPMandPinProtector
-```
-
-## Related Articles
-
-- [BitLocker: FAQs](faq.yml)
-- [Microsoft BitLocker Administration and Management (MBAM)](/microsoft-desktop-optimization-pack/mbam-v25/)
-- [Overview of BitLocker Device Encryption](bitlocker-device-encryption.md)
-- [BitLocker policy settings](policy-settings.md)
-- [Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune/)
-*(Overview)*
-- [Configuration Settings Providers](/windows/client-management/mdm/policy-configuration-service-provider)
-*(Policy CSP: See [Security-RequireDeviceEncryption](/windows/client-management/mdm/policy-csp-security#security-policies))*
-- [BitLocker CSP](/windows/client-management/mdm/bitlocker-csp/)
-
-### Windows Server setup tools
-
-- [Windows Server Installation Options](/windows-server/get-started-19/install-upgrade-migrate-19/)
-- [How to update local source media to add roles and features](/archive/blogs/joscon/how-to-update-local-source-media-to-add-roles-and-features)
-- [How to add or remove optional components on Server Core](/archive/blogs/server_core/using-features-on-demand-with-updated-systems-and-patched-images) *(Features on Demand)*
-- [How to deploy BitLocker on Windows Server](bitlocker-how-to-deploy-on-windows-server.md)  
-- [How to enable Network Unlock](network-unlock.md)
-- [Shielded VMs and Guarded Fabric](https://blogs.technet.microsoft.com/windowsserver/2016/05/10/a-closer-look-at-shielded-vms-in-windows-server-2016/)
-
-### PowerShell
-
-- [BitLocker cmdlets for Windows PowerShell](bitlocker-use-bitlocker-drive-encryption-tools-to-manage-bitlocker.md#bitlocker-cmdlets-for-windows-powershell)

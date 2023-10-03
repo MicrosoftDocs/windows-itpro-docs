@@ -9,7 +9,7 @@ ms.date: 07/25/2023
 
 # How to use the BitLocker drive encryption tools to manage BitLocker
 
-BitLocker drive encryption tools include the command-line tools *manage-bde.exe*, *repair-bde.exe*, and the cmdlets for Windows PowerShell.
+BitLocker drive encryption tools include the two command-line tools *manage-bde.exe* and *repair-bde.exe*, and the BitLocker PowerShell module.
 
 The tools can be used to perform any tasks that can be accomplished through the BitLocker control panel and are appropriate to use for automated deployments and other scripting scenarios.
 
@@ -108,46 +108,55 @@ The following limitations exist for Repair-bde:
 
 For more information about using repair-bde, see [Repair-bde](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/ff829851(v=ws.11)).
 
-## BitLocker cmdlets for Windows PowerShell
+## BitLocker PowerShell module
 
-Windows PowerShell cmdlets provide a new way for administrators to use when working with BitLocker. Using Windows PowerShell's scripting capabilities, administrators can integrate BitLocker options into existing scripts with ease. The list below displays the available BitLocker cmdlets.
+The BitLocker PowerShell module enables administrators to integrate BitLocker options into existing scripts with ease. Here's a lists of the cmdlets included in the BitLocker PowerShell module:
 
-|Name|Parameters|
-|--- |--- |
-|**Add-BitLockerKeyProtector**|<li>ADAccountOrGroup<li>ADAccountOrGroupProtector<li>Confirm<li>MountPoint<li>Password<li>PasswordProtector<li>Pin<li>RecoveryKeyPath<li>RecoveryKeyProtector<li>RecoveryPassword<li>RecoveryPasswordProtector<li>Service<li>StartupKeyPath<li>StartupKeyProtector<li>TpmAndPinAndStartupKeyProtector<li>TpmAndPinProtector<li>TpmAndStartupKeyProtector<li>TpmProtector<li>WhatIf|
-|**Backup-BitLockerKeyProtector**|<li>Confirm<li>KeyProtectorId<li>MountPoint<li>WhatIf|
-|**Disable-BitLocker**|<li>Confirm<li>MountPoint<li>WhatIf|
-|**Disable-BitLockerAutoUnlock**|<li>Confirm<li>MountPoint<li>WhatIf|
-|**Enable-BitLocker**|<li>AdAccountOrGroup<li>AdAccountOrGroupProtector<li>Confirm<li>EncryptionMethod<li>HardwareEncryption<li>Password<li>PasswordProtector<li>Pin<li>RecoveryKeyPath<li>RecoveryKeyProtector<li>RecoveryPassword<li>RecoveryPasswordProtector<li>Service<li>SkipHardwareTest<li>StartupKeyPath<li>StartupKeyProtector<li>TpmAndPinAndStartupKeyProtector<li>TpmAndPinProtector<li>TpmAndStartupKeyProtector<li>TpmProtector<li>UsedSpaceOnly<li>WhatIf|
-|**Enable-BitLockerAutoUnlock**|<li>Confirm<li>MountPoint<li>WhatIf|
-|**Get-BitLockerVolume**|<li>MountPoint|
-|**Lock-BitLocker**|<li>Confirm<li>ForceDismount<li>MountPoint<li>WhatIf|
-|**Remove-BitLockerKeyProtector**|<li>Confirm<li>KeyProtectorId<li>MountPoint<li>WhatIf|
-|**Resume-BitLocker**|<li>Confirm<li>MountPoint<li>WhatIf|
-|**Suspend-BitLocker**|<li>Confirm<li>MountPoint<li>RebootCount<li>WhatIf|
-|**Unlock-BitLocker**|<li>AdAccountOrGroup<li>Confirm<li>MountPoint<li>Password<li>RecoveryKeyPath<li>RecoveryPassword<li>RecoveryPassword<li>WhatIf|
+- `Add-BitLockerKeyProtector`
+- `Backup-BitLockerKeyProtector`
+- `BackupToAAD-BitLockerKeyProtector`
+- `Clear-BitLockerAutoUnlock`
+- `Disable-BitLocker`
+- `Disable-BitLockerAutoUnlock`
+- `Enable-BitLocker`
+- `Enable-BitLockerAutoUnlock`
+- `Get-BitLockerVolume`
+- `Lock-BitLocker`
+- `Remove-BitLockerKeyProtector`
+- `Resume-BitLocker`
+- `Suspend-BitLocker`
+- `Unlock-BitLocker`
 
-Similar to manage-bde, the Windows PowerShell cmdlets allow configuration beyond the options offered in the control panel. As with manage-bde, users need to consider the specific needs of the volume they're encrypting prior to running Windows PowerShell cmdlets.
+Similar to manage-bde, the PowerShell cmdlets allow configuration beyond the options offered in the control panel. A good initial step is to determine the current state of the volume(s) on the computer. For example, to determine the current state of a volume you can use the `Get-BitLockerVolume` cmdlet, which provides information on the volume type, protectors, protection status, and other details.
 
-A good initial step is to determine the current state of the volume(s) on the computer. Determining the current state of the volume(s) can be done using the `Get-BitLockerVolume` cmdlet.
+```powershell
+PS C:\> Get-BitLockerVolume C: | fl
 
-The `Get-BitLockerVolume` cmdlet output gives information on the volume type, protectors, protection status, and other details.
-
-> [!TIP]
-> Occasionally, all protectors may not be shown when using `Get-BitLockerVolume` due to lack of space in the output display. If all of the protectors for a volume are not seen, use the Windows PowerShell pipe command (|) to format a full listing of the protectors:
-> 
-> `Get-BitLockerVolume C: | fl`
+ComputerName         : DESKTOP
+MountPoint           : C:
+EncryptionMethod     : XtsAes128
+AutoUnlockEnabled    :
+AutoUnlockKeyStored  : False
+MetadataVersion      : 2
+VolumeStatus         : FullyEncrypted
+ProtectionStatus     : On
+LockStatus           : Unlocked
+EncryptionPercentage : 100
+WipePercentage       : 0
+VolumeType           : OperatingSystem
+CapacityGB           : 1000
+KeyProtector         : {Tpm, RecoveryPassword}
+```
 
 To remove the existing protectors prior to provisioning BitLocker on the volume, use the `Remove-BitLockerKeyProtector` cmdlet. Running this cmdlet requires the GUID associated with the protector to be removed.
 
-A simple script can pipe the values of each Get-BitLockerVolume return out to another variable as seen below:
+The following commands return the list of key protectors and GUIDS:
 
-```powershell
+```PowerShell
 $vol = Get-BitLockerVolume
 $keyprotectors = $vol.KeyProtector
+$keyprotectors
 ```
-
-By using this script, the information in the $keyprotectors variable can be displayed to determine the GUID for each protector.
 
 By using this information, the key protector for a specific volume can be removed using the command:
 
@@ -185,14 +194,14 @@ $pw = Read-Host -AsSecureString
 Enable-BitLockerKeyProtector E: -PasswordProtector -Password $pw
 ```
 
-### Using an AD Account or Group protector in Windows PowerShell
+### Using an SID-based protector in Windows PowerShell
 
-The **ADAccountOrGroup** protector, introduced in Windows 8 and Windows Server 2012, is an Active Directory SID-based protector. This protector can be added to both operating system and data volumes, although it doesn't unlock operating system volumes in the pre-boot environment. The protector requires the SID for the domain account or group to link with the protector. BitLocker can protect a cluster-aware disk by adding a SID-based protector for the Cluster Name Object (CNO) that lets the disk properly fail over to and become unlocked by any member computer of the cluster.
+The **ADAccountOrGroup** protector is an Active Directory SID-based protector. This protector can be added to both operating system and data volumes, although it doesn't unlock operating system volumes in the pre-boot environment. The protector requires the SID for the domain account or group to link with the protector. BitLocker can protect a cluster-aware disk by adding an SID-based protector for the Cluster Name Object (CNO) that lets the disk properly failover and unlock to any member computer of the cluster.
 
 > [!WARNING]
-> The **ADAccountOrGroup** protector requires the use of an additional protector for use (such as TPM, PIN, or recovery key) when used on operating system volumes
+> The SID-based protector requires the use of an additional protector such as TPM, PIN, recovery key, etc. when used on operating system volumes.
 
-To add an **ADAccountOrGroup** protector to a volume, use either the actual domain SID or the group name preceded by the domain and a backslash. In the example below, the CONTOSO\\Administrator account is added as a protector to the data volume G.
+To add an **ADAccountOrGroup** protector to a volume, either the domain SID is needed or the group name preceded by the domain and a backslash. In the example below, the **CONTOSO\\Administrator** account is added as a protector to the data volume G.
 
 ```powershell
 Enable-BitLocker G: -AdAccountOrGroupProtector -AdAccountOrGroup CONTOSO\Administrator
@@ -200,29 +209,21 @@ Enable-BitLocker G: -AdAccountOrGroupProtector -AdAccountOrGroup CONTOSO\Adminis
 
 For users who wish to use the SID for the account or group, the first step is to determine the SID associated with the account. To get the specific SID for a user account in Windows PowerShell, use the following command:
 
+```powershell
+Get-ADUser -filter {samaccountname -eq "administrator"}
+```
+
 > [!NOTE]
 > Use of this command requires the RSAT-AD-PowerShell feature.
 
-```powershell
-get-aduser -filter {samaccountname -eq "administrator"}
-```
-
 > [!TIP]
-> In addition to the PowerShell command above, information about the locally logged on user and group membership can be found using: WHOAMI /ALL. This doesn't require the use of additional features.
+> In addition to the Windows PowerShell command above, information about the locally logged on user and group membership can be found using: `WHOAMI /ALL`. This doesn't require the use of additional features.
 
-The following example adds an **ADAccountOrGroup** protector to the previously encrypted operating system volume using the SID of the account:
+In the example below, the user wishes to add a domain SID-based protector to the previously encrypted operating system volume. The user knows the SID for the user account or group they wish to add and uses the following command:
 
 ```powershell
-Add-BitLockerKeyProtector C: -ADAccountOrGroupProtector -ADAccountOrGroup S-1-5-21-3651336348-8937238915-291003330-500
+Add-BitLockerKeyProtector C: -ADAccountOrGroupProtector -ADAccountOrGroup "<SID>"
 ```
 
 > [!NOTE]
-> Active Directory-based protectors are normally used to unlock Failover Cluster enabled volumes.
-
-## Related articles
-
-- [BitLocker overview](index.md)
-- [BitLocker frequently asked questions (FAQ)](faq.yml)
-- [Prepare your organization for BitLocker: Planning and policies](prepare-your-organization-for-bitlocker-planning-and-policies.md)
-- [BitLocker: How to enable Network Unlock](network-unlock.md)
-- [BitLocker: How to deploy on Windows Server 2012](bitlocker-how-to-deploy-on-windows-server.md)
+> Active Directory-based protectors are normally used to unlock Failover Cluster-enabled volumes.

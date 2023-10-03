@@ -20,11 +20,11 @@ items:
     - name: Configure BitLocker on Windows Server
       href: bitlocker-how-to-deploy-on-windows-server.md
     - name: Manage BitLocker with Drive Encryption Tools
-      href: bitlocker-use-bitlocker-drive-encryption-tools-to-manage-bitlocker.md
+      href: manage.md
     - name: BitLocker Recovery Guide
       href: bitlocker-recovery-guide-plan.md
     - name: Protect cluster shared volumes and storage area networks with BitLocker
-      href: protecting-cluster-shared-volumes-and-storage-area-networks-with-bitlocker.md
+      href: csv-san.md
     - name: Network Unlock
       href: network-unlock.md
     - name: BitLocker Recovery Password Viewer
