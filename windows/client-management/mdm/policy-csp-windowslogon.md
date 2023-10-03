@@ -4,7 +4,7 @@ description: Learn more about the WindowsLogon Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 09/14/2023
+ms.date: 10/03/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,6 +17,8 @@ ms.topic: reference
 # Policy CSP - WindowsLogon
 
 [!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
+
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- WindowsLogon-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -376,7 +378,7 @@ This policy setting allows you to control whether users see the first sign-in an
 <!-- EnableMPRNotifications-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- EnableMPRNotifications-Applicability-End -->
 
 <!-- EnableMPRNotifications-OmaUri-Begin -->
@@ -589,7 +591,6 @@ OverrideShellProgram policy allows IT admin to configure the shell program for W
 | Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
-| Dependency [BootToCloudModeDependencyGroup] | Dependency Type: `DependsOn` <br> Dependency URI: `Device/Vendor/MSFT/Policy/Config/CloudDesktop/BootToCloudMode` <br> Dependency Allowed Value: `[1]` <br> Dependency Allowed Value Type: `Range` <br>  |
 <!-- OverrideShellProgram-DFProperties-End -->
 
 <!-- OverrideShellProgram-AllowedValues-Begin -->
