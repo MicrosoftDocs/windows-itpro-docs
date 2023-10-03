@@ -16,7 +16,7 @@ The tools can be used to perform any tasks that can be accomplished through the 
 
 Follow the instructions below to configure your devices, selecting the option that best suits your needs.
 
-#### [:::image type="icon" source="images/powershell.png"::: **PowerShell**](#tab/powershell)
+#### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
 
 Similar to manage-bde, the PowerShell cmdlets allow configuration beyond the options offered in the control panel. A good initial step is to determine the current state of the volume(s) on the computer. For example, to determine the current state of a volume you can use the `Get-BitLockerVolume` cmdlet, which provides information on the volume type, protectors, protection status, and other details.
 
@@ -132,9 +132,8 @@ The above command encrypts the drive using the TPM as the default protector. If 
 ## Manage data volumes
 
 Follow the instructions below to configure your devices, selecting the option that best suits your needs.
-<!--
-#### [:::image type="icon" source="images/powershell.png"::: **PowerShell**](#tab/powershell)-->
-#### [PowerShell](#tab/powershell)
+
+#### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
 
 Data volume encryption using Windows PowerShell is the same as for operating system volumes. Add the desired protectors prior to encrypting the volume. The following example adds a password protector to the E: volume using the variable $pw as the password. The $pw variable is held as a
 SecureString value to store the user-defined password.
@@ -266,3 +265,51 @@ Add-BitLockerKeyProtector C: -ADAccountOrGroupProtector -ADAccountOrGroup "<SID>
 
 > [!NOTE]
 > Active Directory-based protectors are normally used to unlock Failover Cluster-enabled volumes.
+
+
+
+### Decrypt volumes
+
+#### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
+
+
+Decryption with Windows PowerShell cmdlets is straightforward, similar to `manage-bde.exe`. Windows PowerShell offers the ability to decrypt multiple drives in one pass. In the example below, the user has three encrypted volumes, which they wish to decrypt.
+
+Using the Disable-BitLocker command, they can remove all protectors and encryption at the same time without the need for more commands. An example of this command is:
+
+```powershell
+Disable-BitLocker
+```
+
+If a user didn't want to input each mount point individually, using the `-MountPoint` parameter in an array can sequence the same command into one line without requiring additional user input. An example command is:
+
+```powershell
+Disable-BitLocker -MountPoint E:,F:,G:
+```
+
+
+#### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
+
+
+Decrypting volumes using `manage-bde.exe` is straightforward. Decryption with `manage-bde.exe` offers the advantage of not requiring user confirmation to start the process. Manage-bde uses the -off command to start the decryption process. A sample command for decryption is:
+
+```powershell
+manage-bde.exe -off C:
+```
+
+This command disables protectors while it decrypts the volume and removes all protectors when decryption is complete. If users wish to check the status of the decryption, they can use the following command:
+
+```powershell
+manage-bde.exe -status C:
+```
+
+#### [:::image type="icon" source="images/controlpanel.svg"::: **Control Panel**](#tab/controlpanel)
+
+BitLocker decryption using the control panel is done using a wizard. The control panel can be called from Windows Explorer or by opening it directly. After opening the BitLocker control panel, users will select the **Turn off BitLocker** option to begin the process.
+After selecting the **Turn off BitLocker** option, the user chooses to continue by clicking the confirmation dialog. With **Turn off BitLocker** confirmed, the drive decryption process begins and reports status to the control panel.
+
+The control panel doesn't report decryption progress but displays it in the notification area of the task bar. Selecting the notification area icon will open a modal dialog with progress.
+
+Once decryption is complete, the drive updates its status in the control panel and becomes available for encryption.
+
+---

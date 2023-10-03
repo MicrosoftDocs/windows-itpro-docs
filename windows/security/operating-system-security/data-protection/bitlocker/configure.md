@@ -252,44 +252,7 @@ Administrators can enable BitLocker prior to operating system deployment from th
 
 Decrypting volumes removes BitLocker and any associated protectors from the volumes. Decryption should occur when protection is no longer required. BitLocker decryption shouldn't occur as a troubleshooting step. BitLocker can be removed from a volume using the BitLocker control panel applet, `manage-bde.exe`, or Windows PowerShell cmdlets. We'll discuss each method further below.
 
-### Decrypting volumes using the BitLocker control panel applet
 
-BitLocker decryption using the control panel is done using a wizard. The control panel can be called from Windows Explorer or by opening it directly. After opening the BitLocker control panel, users will select the **Turn off BitLocker** option to begin the process.
-After selecting the **Turn off BitLocker** option, the user chooses to continue by clicking the confirmation dialog. With **Turn off BitLocker** confirmed, the drive decryption process begins and reports status to the control panel.
-
-The control panel doesn't report decryption progress but displays it in the notification area of the task bar. Selecting the notification area icon will open a modal dialog with progress.
-
-Once decryption is complete, the drive updates its status in the control panel and becomes available for encryption.
-
-### Decrypting volumes using the `manage-bde.exe` command-line interface
-
-Decrypting volumes using `manage-bde.exe` is straightforward. Decryption with `manage-bde.exe` offers the advantage of not requiring user confirmation to start the process. Manage-bde uses the -off command to start the decryption process. A sample command for decryption is:
-
-```powershell
-manage-bde.exe -off C:
-```
-
-This command disables protectors while it decrypts the volume and removes all protectors when decryption is complete. If users wish to check the status of the decryption, they can use the following command:
-
-```powershell
-manage-bde.exe -status C:
-```
-
-### Decrypting volumes using the BitLocker Windows PowerShell cmdlets
-
-Decryption with Windows PowerShell cmdlets is straightforward, similar to `manage-bde.exe`. Windows PowerShell offers the ability to decrypt multiple drives in one pass. In the example below, the user has three encrypted volumes, which they wish to decrypt.
-
-Using the Disable-BitLocker command, they can remove all protectors and encryption at the same time without the need for more commands. An example of this command is:
-
-```powershell
-Disable-BitLocker
-```
-
-If a user didn't want to input each mount point individually, using the `-MountPoint` parameter in an array can sequence the same command into one line without requiring additional user input. An example command is:
-
-```powershell
-Disable-BitLocker -MountPoint E:,F:,G:
-```
 
 ## PowerShell examples
 
