@@ -373,9 +373,9 @@
         - name: How does Windows Update work?
           href: update/how-windows-update-works.md
         - name: Windows client upgrade paths
-          href: upgrade/windows-10-upgrade-paths.md
+          href: upgrade/windows-upgrade-paths.md
         - name: Windows client edition upgrade
-          href: upgrade/windows-10-edition-upgrades.md
+          href: upgrade/windows-edition-upgrades.md
         - name: Deploy Windows 10 with Microsoft 365
           href: deploy-m365.md
         - name: Understand the Unified Update Platform
