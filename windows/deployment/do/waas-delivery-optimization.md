@@ -3,24 +3,22 @@ title: What is Delivery Optimization?
 description: This article provides information about Delivery Optimization, a peer-to-peer distribution method in Windows 10 and Windows 11.
 ms.prod: windows-client
 ms.technology: itpro-updates
-ms.localizationpriority: medium
+ms.topic: overview
 author: cmknox
 ms.author: carmenf
 manager: aaroncz
+ms.reviewer: mstewart
 ms.collection:
   - tier3
   - highpri
-ms.topic: overview
-ms.date: 12/31/2017
-ms.reviewer: mstewart
+ms.localizationpriority: medium
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
+ms.date: 06/02/2023
 ---
 
 # What is Delivery Optimization?
-
-**Applies to**
-
-- Windows 10
-- Windows 11
 
 > **Looking for Group Policy objects?** See [Delivery Optimization reference](waas-delivery-optimization-reference.md) or the master spreadsheet available at the Download Center [for Windows 11](https://www.microsoft.com/en-us/download/details.aspx?id=104594) or [for Windows 10](https://www.microsoft.com/en-us/download/details.aspx?id=104678).
 
