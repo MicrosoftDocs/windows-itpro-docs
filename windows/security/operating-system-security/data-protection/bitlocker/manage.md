@@ -1,13 +1,13 @@
 ---
-title: How to use the BitLocker drive encryption tools to manage BitLocker 
-description: Learn how to use tools to manage BitLocker.
+title: Manage BitLocker in your organization
+description: Learn how to use different tools to manage BitLocker in your organization.
 ms.collection: 
   - tier1
 ms.topic: how-to
 ms.date: 07/25/2023
 ---
 
-# How to use the BitLocker drive encryption tools to manage BitLocker
+# Manage BitLocker in your organization
 
 BitLocker drive encryption tools include the two command-line tools *manage-bde.exe* and *repair-bde.exe*, and the BitLocker PowerShell module.
 
@@ -16,7 +16,7 @@ The tools can be used to perform any tasks that can be accomplished through the 
 
 Follow the instructions below to configure your devices, selecting the option that best suits your needs.
 
-#### [:::image type="icon" source="images/powershell.png"::: **Intune**](#tab/powershell)
+#### [:::image type="icon" source="images/powershell.png"::: **PowerShell**](#tab/powershell)
 
 Similar to manage-bde, the PowerShell cmdlets allow configuration beyond the options offered in the control panel. A good initial step is to determine the current state of the volume(s) on the computer. For example, to determine the current state of a volume you can use the `Get-BitLockerVolume` cmdlet, which provides information on the volume type, protectors, protection status, and other details.
 
@@ -58,7 +58,7 @@ Remove-BitLockerKeyProtector <volume>: -KeyProtectorID "{GUID}"
 > [!NOTE]
 > The BitLocker cmdlet requires the key protector GUID enclosed in quotation marks to execute. Ensure the entire GUID, with braces, is included in the command.
 
-#### [:::image type="icon" source="images/cmd.png"::: **Intune**](#tab/cmd)
+#### [:::image type="icon" source="images/cmd.png"::: **cmd**](#tab/cmd)
 
 ```cmd
 C:\>manage-bde -status
@@ -79,12 +79,9 @@ Volume C: [Local Disk]
         Numerical Password
 ```
 
-
-#### [:::image type="icon" source="images/locked-drive.svg"::: **Intune**](#tab/controlpanel)
+#### [:::image type="icon" source="images/locked-drive.svg"::: **Settings**](#tab/controlpanel)
 
 ---
-
-
 
 ## Manage-bde
 
@@ -132,7 +129,25 @@ The above command encrypts the drive using the TPM as the default protector. If 
  manage-bde.exe -protectors -get <volume>
 ```
 
-### Using manage-bde with data volumes
+## Manage data volumes
+
+Follow the instructions below to configure your devices, selecting the option that best suits your needs.
+
+#### [:::image type="icon" source="images/powershell.png"::: **PowerShell**](#tab/powershell)
+
+Data volume encryption using Windows PowerShell is the same as for operating system volumes. Add the desired protectors prior to encrypting the volume. The following example adds a password protector to the E: volume using the variable $pw as the password. The $pw variable is held as a
+SecureString value to store the user-defined password.
+
+```powershell
+$pw = Read-Host -AsSecureString
+<user inputs password>
+Enable-BitLockerKeyProtector E: -PasswordProtector -Password $pw
+```
+
+> [!NOTE]
+> The BitLocker cmdlet requires the key protector GUID enclosed in quotation marks to execute. Ensure the entire GUID, with braces, is included in the command.
+
+#### [:::image type="icon" source="images/cmd.png"::: **cmd**](#tab/cmd)
 
 Data volumes use the same syntax for encryption as operating system volumes but they don't require protectors for the operation to complete. Encrypting data volumes can be done using the base command:
 
@@ -146,6 +161,10 @@ A common protector for a data volume is the password protector. In the example b
 manage-bde.exe -protectors -add -pw C:
 manage-bde.exe -on C:
 ```
+
+#### [:::image type="icon" source="images/locked-drive.svg"::: **Settings**](#tab/controlpanel)
+
+---
 
 ## BitLocker Repair Tool
 
@@ -212,17 +231,6 @@ In the example below, adds one additional protector, the StartupKey protector an
 
 ```powershell
 Enable-BitLocker C: -StartupKeyProtector -StartupKeyPath <path> -SkipHardwareTest
-```
-
-### Using the BitLocker Windows PowerShell cmdlets with data volumes
-
-Data volume encryption using Windows PowerShell is the same as for operating system volumes. Add the desired protectors prior to encrypting the volume. The following example adds a password protector to the E: volume using the variable $pw as the password. The $pw variable is held as a
-SecureString value to store the user-defined password.
-
-```powershell
-$pw = Read-Host -AsSecureString
-<user inputs password>
-Enable-BitLockerKeyProtector E: -PasswordProtector -Password $pw
 ```
 
 ### Using an SID-based protector in Windows PowerShell
