@@ -1,25 +1,25 @@
 ---
-title: Delivery Optimization client-service communication explained
-manager: aaroncz
+title: Delivery Optimization client-service communication
 description: Details of how Delivery Optimization communicates with the server when content is requested to download.
 ms.prod: windows-client
-author: cmknox
-ms.localizationpriority: medium
-ms.author: carmenf
-ms.topic: article
 ms.technology: itpro-updates
-ms.date: 12/31/2017
-ms.collection: tier3
+ms.topic: conceptual
+author: cmknox
+ms.author: carmenf
+manager: aaroncz
 ms.reviewer: mstewart
+ms.collection: tier3
+ms.localizationpriority: medium
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
+- ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-delivery-optimization target=_blank>Delivery Optimization</a>	
+ms.date: 12/31/2017
 ---
 
 # Delivery Optimization client-service communication explained
 
-**Applies to**
-
-- Windows 10
-- Windows 11
-
+Delivery Optimization is a cloud-managed solution that uses peer-to-peer (P2P) and local caching to deliver software updates and apps to Windows clients across your network. This article describes details of how Delivery Optimization communicates with the server when content is requested to download.
 ## Download request workflow
 
 This workflow allows Delivery Optimization to securely and efficiently deliver requested content to the calling device. Delivery Optimization uses content metadata to verify the content and to determine all available locations to pull content from.
