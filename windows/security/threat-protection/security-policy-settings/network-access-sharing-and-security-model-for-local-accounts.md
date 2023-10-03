@@ -1,26 +1,26 @@
 ---
-title: Network access Sharing and security model for local accounts (Windows 10)
+title: Network access Sharing and security model for local accounts 
 description: Best practices, security considerations, and more for the security policy setting, Network access Sharing and security model for local accounts.
 ms.assetid: 0b3d703c-ea27-488f-8f59-b345af75b994
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Network access: Sharing and security model for local accounts
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management and security considerations for the **Network access: Sharing and security model for local accounts** security policy setting.

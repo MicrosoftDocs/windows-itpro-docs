@@ -1,77 +1,80 @@
 ---
-title: Policy CSP - Games
-description: Learn to use the Policy CSP - Games setting so that you can specify whether advanced gaming services can be used.
-ms.author: vinpa
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
+title: Games Policy CSP
+description: Learn more about the Games Area in Policy CSP.
 author: vinaypamnani-msft
-ms.localizationpriority: medium
-ms.date: 09/27/2019
-ms.reviewer: 
 manager: aaroncz
+ms.author: vinpa
+ms.date: 08/10/2023
+ms.localizationpriority: medium
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- Games-Begin -->
 # Policy CSP - Games
 
-<hr/>
+<!-- Games-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Games-Editable-End -->
 
-<!--Policies-->
-## Games policies  
+<!-- AllowAdvancedGamingServices-Begin -->
+## AllowAdvancedGamingServices
 
-<dl>
-  <dd>
-    <a href="#games-allowadvancedgamingservices">Games/AllowAdvancedGamingServices</a>
-  </dd>
-</dl>
+<!-- AllowAdvancedGamingServices-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- AllowAdvancedGamingServices-Applicability-End -->
 
-<hr/>
+<!-- AllowAdvancedGamingServices-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Games/AllowAdvancedGamingServices
+```
+<!-- AllowAdvancedGamingServices-OmaUri-End -->
 
-<!--Policy-->
-<a href="" id="games-allowadvancedgamingservices"></a>**Games/AllowAdvancedGamingServices**  
+<!-- AllowAdvancedGamingServices-Description-Begin -->
+<!-- Description-Source-DDF -->
+Specifies whether advanced gaming services can be used. These services may send data to Microsoft or publishers of games that use these services.
+<!-- AllowAdvancedGamingServices-Description-End -->
 
-<!--SupportedSKUs-->
+<!-- AllowAdvancedGamingServices-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowAdvancedGamingServices-Editable-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AllowAdvancedGamingServices-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowAdvancedGamingServices-DFProperties-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowAdvancedGamingServices-AllowedValues-Begin -->
+**Allowed values**:
 
-> [!div class = "checklist"]
-> * Device
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. |
+| 1 (Default) | Allowed. |
+<!-- AllowAdvancedGamingServices-AllowedValues-End -->
 
-<hr/>
+<!-- AllowAdvancedGamingServices-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowAdvancedGamingServices-Examples-End -->
 
-<!--/Scope-->
-<!--Description-->
-Added in Windows 10, version 1709. Specifies whether advanced gaming services can be used. These services may send data to Microsoft or publishers of games that use these services. 
+<!-- AllowAdvancedGamingServices-End -->
 
-Supported value type is integer.
+<!-- Games-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- Games-CspMoreInfo-End -->
 
-<!--/Description-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- Games-End -->
 
-- 0 - Not Allowed
-- 1 (default) - Allowed
-
-<!--/SupportedValues-->
-<!--/Policy-->
-<hr/>
-
-
-<!--/Policies-->
-
-## Related topics
+## Related articles
 
 [Policy configuration service provider](policy-configuration-service-provider.md)

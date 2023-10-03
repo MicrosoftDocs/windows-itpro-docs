@@ -1,26 +1,26 @@
 ---
-title: Microsoft network server Disconnect clients when sign-in hours expire (Windows 10)
+title: Microsoft network server Disconnect clients when sign-in hours expire 
 description: Best practices, location, values, and security considerations for the policy setting, Microsoft network server Disconnect clients when sign-in hours expire.
 ms.assetid: 48b5c424-9ba8-416d-be7d-ccaabb3f49af
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Microsoft network server: Disconnect clients when sign-in hours expire
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, and security considerations for the **Microsoft network server: Disconnect clients when logon hours expire** security policy setting.

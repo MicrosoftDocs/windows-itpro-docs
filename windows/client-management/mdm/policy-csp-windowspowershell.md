@@ -1,92 +1,101 @@
 ---
-title: Policy CSP - WindowsPowerShell
-description: Use the Policy CSP - WindowsPowerShell setting to enable logging of all PowerShell script input to the Microsoft-Windows-PowerShell/Operational event log.
-ms.author: vinpa
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
+title: WindowsPowerShell Policy CSP
+description: Learn more about the WindowsPowerShell Area in Policy CSP.
 author: vinaypamnani-msft
-ms.localizationpriority: medium
-ms.date: 09/27/2019
-ms.reviewer: 
 manager: aaroncz
+ms.author: vinpa
+ms.date: 08/10/2023
+ms.localizationpriority: medium
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- WindowsPowerShell-Begin -->
 # Policy CSP - WindowsPowerShell
 
-<hr/>
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
-<!--Policies-->
-## WindowsPowerShell policies  
+<!-- WindowsPowerShell-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- WindowsPowerShell-Editable-End -->
 
-<dl>
-  <dd>
-    <a href="#windowspowershell-turnonpowershellscriptblocklogging">WindowsPowerShell/TurnOnPowerShellScriptBlockLogging</a>
-  </dd>
-</dl>
+<!-- TurnOnPowerShellScriptBlockLogging-Begin -->
+## TurnOnPowerShellScriptBlockLogging
 
+<!-- TurnOnPowerShellScriptBlockLogging-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- TurnOnPowerShellScriptBlockLogging-Applicability-End -->
 
-<hr/>
+<!-- TurnOnPowerShellScriptBlockLogging-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/WindowsPowerShell/TurnOnPowerShellScriptBlockLogging
+```
 
-<!--Policy-->
-<a href="" id="windowspowershell-turnonpowershellscriptblocklogging"></a>**WindowsPowerShell/TurnOnPowerShellScriptBlockLogging**  
+```Device
+./Device/Vendor/MSFT/Policy/Config/WindowsPowerShell/TurnOnPowerShellScriptBlockLogging
+```
+<!-- TurnOnPowerShellScriptBlockLogging-OmaUri-End -->
 
-<!--SupportedSKUs-->
-The table below shows the applicability of Windows:
+<!-- TurnOnPowerShellScriptBlockLogging-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting enables logging of all PowerShell script input to the Microsoft-Windows-PowerShell/Operational event log.
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+- If you enable this policy setting, Windows PowerShell will log the processing of commands, script blocks, functions, and scripts - whether invoked interactively, or through automation.
 
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting enables logging of all PowerShell script input to the Microsoft-Windows-PowerShell/Operational event log. If you enable this policy setting, Windows PowerShell will log the processing of commands, script blocks, functions, and scripts - whether invoked interactively, or through automation.
-
-If you disable this policy setting, logging of PowerShell script input is disabled.
+- If you disable this policy setting, logging of PowerShell script input is disabled.
 
 If you enable the Script Block Invocation Logging, PowerShell additionally logs events when invocation of a command, script block, function, or script starts or stops. Enabling Invocation Logging generates a high volume of event logs.
 
 > [!NOTE]
 > This policy setting exists under both Computer Configuration and User Configuration in the Group Policy Editor. The Computer Configuration policy setting takes precedence over the User Configuration policy setting.
+<!-- TurnOnPowerShellScriptBlockLogging-Description-End -->
 
-<!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+<!-- TurnOnPowerShellScriptBlockLogging-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TurnOnPowerShellScriptBlockLogging-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Turn on PowerShell Script Block Logging*
--   GP name: *EnableScriptBlockLogging*
--   GP path: *Windows Components/Windows PowerShell*
--   GP ADMX file name: *PowerShellExecutionPolicy.admx*
+<!-- TurnOnPowerShellScriptBlockLogging-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- TurnOnPowerShellScriptBlockLogging-DFProperties-End -->
 
-<!--/Policies-->
+<!-- TurnOnPowerShellScriptBlockLogging-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-## Related topics
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | EnableScriptBlockLogging |
+| Friendly Name | Turn on PowerShell Script Block Logging |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Windows PowerShell |
+| Registry Key Name | Software\Policies\Microsoft\Windows\PowerShell\ScriptBlockLogging |
+| Registry Value Name | EnableScriptBlockLogging |
+| ADMX File Name | PowerShellExecutionPolicy.admx |
+<!-- TurnOnPowerShellScriptBlockLogging-AdmxBacked-End -->
+
+<!-- TurnOnPowerShellScriptBlockLogging-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TurnOnPowerShellScriptBlockLogging-Examples-End -->
+
+<!-- TurnOnPowerShellScriptBlockLogging-End -->
+
+<!-- WindowsPowerShell-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- WindowsPowerShell-CspMoreInfo-End -->
+
+<!-- WindowsPowerShell-End -->
+
+## Related articles
 
 [Policy configuration service provider](policy-configuration-service-provider.md)

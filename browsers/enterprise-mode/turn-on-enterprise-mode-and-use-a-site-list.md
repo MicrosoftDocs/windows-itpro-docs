@@ -1,3 +1,6 @@
+---
+ms.date: 07/17/2018
+---
 Before you can use a site list with Enterprise Mode, you must turn the functionality on and set up the system for centralized control. By allowing
 centralized control, you can create one global list of websites that render using Enterprise Mode. Approximately 65 seconds after Internet Explorer 11 starts, it looks for a properly formatted site list. If a new site list if found, with a different version number than the active list, IE11 loads and uses the newer version. After the initial check, IE11 won’t look for an updated list again until you restart the browser.
 

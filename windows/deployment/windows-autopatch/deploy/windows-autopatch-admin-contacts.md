@@ -1,15 +1,17 @@
 ---
 title: Add and verify admin contacts
-description:  This article explains how to add and verify admin contacts
-ms.date: 05/30/2022
-ms.prod: w11
-ms.technology: windows
+description: This article explains how to add and verify admin contacts
+ms.date: 09/15/2023
+ms.prod: windows-client
+ms.technology: itpro-updates
 ms.topic: how-to
 ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
 manager: dougeby
-msreviewer: hathind
+ms.reviewer: hathind
+ms.collection:
+  - tier2
 ---
 
 # Add and verify admin contacts
@@ -17,9 +19,9 @@ msreviewer: hathind
 There are several ways that Windows Autopatch service communicates with customers. To streamline communication and ensure we're checking with the right people when you [submit a support request](../operate/windows-autopatch-support-request.md), you must provide a set of admin contacts when you onboard with Windows Autopatch.
 
 > [!IMPORTANT]
-> You might have already added these contacts in the Microsoft Endpoint Manager admin center during the enrollment process. If so, take a moment now to double-check that the contact list is accurate, since the Windows Autopatch Service Engineering Team must be able to reach them if a severe incident occurs.
+> You might have already added these contacts in the Microsoft Intune admin center during the [enrollment process](../prepare/windows-autopatch-enroll-tenant.md#step-4-enroll-your-tenant), or if you've [submitted a tenant enrollment support request](../prepare/windows-autopatch-enrollment-support-request.md). However, take a moment to double-check that the contact list is accurate, since the Windows Autopatch Service Engineering Team must be able to reach them if a severe incident occurs.
 
-You must have an admin contact for each specified area of focus. The Windows Autopatch Service Engineering Team will contact these individuals for assistance with troubleshooting your support request. Admin contacts should be the best person or group that can answer questions and make decisions for different [areas of focus](#area-of-focus).
+You must have an admin contact for each specified area of focus. The Windows Autopatch Service Engineering Team will contact these individuals for assistance with your support request. Admin contacts should be the best person or group that can answer questions and make decisions for different [areas of focus](#area-of-focus).
 
 > [!IMPORTANT]
 > Whoever you choose as admin contacts, they must have the knowledge and authority to make decisions for your Windows Autopatch environment. The Windows Autopatch Service Engineering Team will contact these admin contacts for questions involving support requests.
@@ -35,7 +37,7 @@ Your admin contacts will receive notifications about support request updates and
 
 **To add admin contacts:**
 
-1. Sign into [Microsoft Endpoint Manager](https://endpoint.microsoft.com/).
+1. Sign into the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 1. Under **Tenant administration** in the **Windows Autopatch** section, select **Admin contacts**.
 1. Select **+Add**.
 1. Enter the contact details including name, email, phone number and preferred language. For a support ticket, the ticket's primary contact's preferred language will determine the language used for email communications.

@@ -1,24 +1,16 @@
 ---
 title: Set up device management
-description: How to configure the Intune service and set up the environment for education.
+description: Learn how to configure the Intune service and set up the environment for education.
 ms.date: 08/31/2022
-ms.prod: windows
-ms.technology: windows
 ms.topic: tutorial
-ms.localizationpriority: medium
-author: paolomatarazzo
-ms.author: paoloma
-#ms.reviewer: 
-manager: aaroncz
-ms.collection: education
-#appliesto:
+appliesto:
 ---
 
 # Set up Microsoft Intune
 
-Without the proper tools and resources, managing hundreds or thousands of devices in a school environment can be a complex and time-consuming task. Microsoft Endpoint Manager provides a collection of services that simplifies the management of devices at scale.
+Without the proper tools and resources, managing hundreds or thousands of devices in a school environment can be a complex and time-consuming task. Microsoft Intune is a collection of services that simplifies the management of devices at scale.
 
-Microsoft Intune is one of the services provided by Microsoft Endpoint Manager. The Microsoft Intune service can be managed in different ways, and one of them is **Intune for Education**, a web portal designed for education environments.
+The Microsoft Intune service can be managed in different ways, and one of them is **Intune for Education**, a web portal designed for education environments.
 
 :::image type="content" source="./images/intune-education-portal.png" alt-text="Intune for Education dashboard" lightbox="./images/intune-education-portal.png" border="true":::
 
@@ -53,13 +45,13 @@ With enrollment restrictions, you can prevent certain types of devices from bein
 
 To block personally owned Windows devices from enrolling:
 
-1. Sign in to the <a href="https://endpoint.microsoft.com/" target="_blank"><b>Microsoft Endpoint Manager admin center</b></a>
+1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 1. Select **Devices** > **Enroll devices** > **Enrollment device platform restrictions**
 1. Select the **Windows restrictions** tab
 1. Select **Create restriction**
 1. On the **Basics** page, provide a name for the restriction and, optionally, a description > **Next**
 1. On the **Platform settings** page, in the **Personally owned devices** field, select **Block** > **Next**
-    :::image type="content" source="./images/enrollment-restrictions.png" alt-text="Device enrollment restriction page in Microsoft Endpoint Manager admin center" lightbox="./images/enrollment-restrictions.png" border="true":::
+    :::image type="content" source="./images/enrollment-restrictions.png" alt-text="This screenshot is of the device enrollment restriction page in Microsoft Intune admin center." lightbox="./images/enrollment-restrictions.png":::
 1. Optionally, on the **Scope tags** page, add scope tags > **Next**
 1. On the **Assignments** page, select **Add groups**, and then use the search box to find and choose groups to which you want to apply the restriction > **Next**
 1. On the **Review + create** page, select **Create** to save the restriction
@@ -72,13 +64,13 @@ Windows Hello for Business is a biometric authentication feature that allows use
 It's suggested to disable Windows Hello for Business on Windows devices at the tenant level, and enabling it only for devices that need it, for example for teachers and staff devices.
 To disable Windows Hello for Business at the tenant level:
 
-1. Sign in to the <a href="https://endpoint.microsoft.com/" target="_blank"><b>Microsoft Endpoint Manager admin center</b></a>
+1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 1. Select **Devices** > **Windows** > **Windows Enrollment**
 1. Select **Windows Hello for Business**
 1. Ensure that **Configure Windows Hello for Business** is set to **disabled**
 1. Select **Save**
 
-:::image type="content" source="./images/whfb-disable.png" alt-text="Disablement of Windows Hello for Business from Microsoft Endpoint Manager admin center." border="true" lightbox="./images/whfb-disable.png":::
+:::image type="content" source="./images/whfb-disable.png" alt-text="Disablement of Windows Hello for Business from Microsoft Intune admin center." lightbox="./images/whfb-disable.png":::
 
 For more information how to enable Windows Hello for Business on specific devices, see [Create a Windows Hello for Business policy][MEM-4].
 

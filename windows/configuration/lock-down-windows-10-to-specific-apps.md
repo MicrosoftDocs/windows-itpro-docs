@@ -1,15 +1,18 @@
 ---
 title: Set up a multi-app kiosk on Windows 10
 description: Learn how to configure a kiosk device running Windows 10 so that users can only run a few specific apps.
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-configure
 author: lizgt2000
 ms.author: lizlong
 manager: aaroncz
 ms.reviewer: sybruckm
 ms.localizationpriority: medium
 ms.topic: how-to
-ms.collection: highpri
+ms.collection:
+ - highpri
+ - tier2
+ms.date: 12/31/2017
 ---
 
 # Set up a multi-app kiosk on Windows 10 devices
@@ -19,8 +22,7 @@ ms.collection: highpri
 - Windows 10 Pro, Enterprise, and Education
 
 > [!NOTE]
-> [!INCLUDE [Multi-app kiosk mode not supported on Windows 11](./includes/multi-app-kiosk-support-windows11.md)]
-> The use of multiple monitors isn't supported for multi-app kiosk mode.
+> The use of multiple monitors isn't supported for multi-app kiosk mode in Windows 10.
 
 A [kiosk device](./kiosk-single-app.md) typically runs a single app, and users are prevented from accessing any features or functions on the device outside of the kiosk app. In Windows 10, version 1709, the [AssignedAccess configuration service provider (CSP)](/windows/client-management/mdm/assignedaccess-csp) was expanded to make it easy for administrators to create kiosks that run more than one app. The benefit of a kiosk that runs only one or more specified apps is to provide an easy-to-understand experience for individuals by putting in front of them only the things they need to use, and removing from their view the things they don't need to access.
 
@@ -246,13 +248,13 @@ A few things to note here:
 - The test device on which you customize the Start layout should have the same OS version that is installed on the device where you plan to deploy the multi-app assigned access configuration.
 - Since the multi-app assigned access experience is intended for fixed-purpose devices, to ensure the device experiences are consistent and predictable, use the *full* Start layout option instead of the *partial* Start layout.
 - There are no apps pinned on the taskbar in the multi-app mode, and it's not supported to configure Taskbar layout using the `<CustomTaskbarLayoutCollection>` tag in a layout modification XML as part of the assigned access configuration.
-- The following example uses `DesktopApplicationLinkPath` to pin the desktop app to start. When the desktop app doesn’t have a shortcut link on the target device, [learn how to provision .lnk files using Windows Configuration Designer](#lnk-files).
+- The following example uses `DesktopApplicationLinkPath` to pin the desktop app to start. When the desktop app doesn't have a shortcut link on the target device, [learn how to provision .lnk files using Windows Configuration Designer](#lnk-files).
 
 The following example pins Groove Music, Movies & TV, Photos, Weather, Calculator, Paint, and Notepad apps on Start:
 
 ```xml
 <StartLayout>
-        <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="https://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="https://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="httsp://schemas.microsoft.com/Start/2014/LayoutModification">
+        <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="https://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="https://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="https://schemas.microsoft.com/Start/2014/LayoutModification">
                       <LayoutOptions StartTileGroupCellWidth="6" />
                       <DefaultLayoutOverride>
                         <StartLayoutCollection>
@@ -283,7 +285,7 @@ The following example pins Groove Music, Movies & TV, Photos, Weather, Calculato
 
 ##### Taskbar
 
-Define whether you want to have the taskbar present in the kiosk device. For tablet-based or touch-enabled all-in-one kiosks, when you don’t attach a keyboard and mouse, you can hide the taskbar as part of the multi-app experience if you want.
+Define whether you want to have the taskbar present in the kiosk device. For tablet-based or touch-enabled all-in-one kiosks, when you don't attach a keyboard and mouse, you can hide the taskbar as part of the multi-app experience if you want.
 
 The following example exposes the taskbar to the end user:
 
@@ -458,7 +460,7 @@ Usage is demonstrated below, by using the new XML namespace and specifying `Glob
                               <!-- A link file is required for desktop applications to show on start layout, the link file can be placed under
                                    "%AllUsersProfile%\Microsoft\Windows\Start Menu\Programs" if the link file is shared for all users or
                                    "%AppData%\Microsoft\Windows\Start Menu\Programs" if the link file is for the specific user only 
-                                   see document https://docs.microsoft.com/windows/configuration/start-layout-xml-desktop
+                                   see document https://learn.microsoft.com/windows/configuration/start-layout-xml-desktop
                               -->
                               <!-- for inbox desktop applications, a link file might already exist and can be used directly -->
                               <start:DesktopApplicationTile Size="2x2" Column="2" Row="0" DesktopApplicationLinkPath="%AllUsersProfile%\Microsoft\Windows\Start Menu\Programs\Accessories\paint.lnk" />
@@ -576,7 +578,7 @@ These apps are in addition to any mixed reality apps that you allow.
 
 After the admin has completed setup, the kiosk account can sign in and repeat the setup. The admin user may want to complete the kiosk user setup before providing the PC to employees or customers.
 
-There's a difference between the mixed reality experiences for a kiosk user and other users. Typically, when a user connects a mixed reality device, they begin in the [Mixed Reality home](https://developer.microsoft.com/windows/mixed-reality/navigating_the_windows_mixed_reality_home). The Mixed Reality home is a shell that runs in "silent" mode when the PC is configured as a kiosk. When a kiosk user connects a mixed reality device, they'll see only a blank display in the device, and won't have access to the features and functionality available in the home. To run a mixed reality app, the kiosk user must launch the app from the PC Start screen.
+There's a difference between the mixed reality experiences for a kiosk user and other users. Typically, when a user connects a mixed reality device, they begin in the [Mixed Reality home](/windows/mixed-reality/discover/navigating-the-windows-mixed-reality-home). The Mixed Reality home is a shell that runs in "silent" mode when the PC is configured as a kiosk. When a kiosk user connects a mixed reality device, they'll see only a blank display in the device, and won't have access to the features and functionality available in the home. To run a mixed reality app, the kiosk user must launch the app from the PC Start screen.
 
 ## Policies set by multi-app kiosk configuration
 
@@ -606,7 +608,7 @@ Lock the Taskbar     |  Enabled
 Prevent users from adding or removing toolbars |        Enabled
 Prevent users from resizing the taskbar  |  Enabled
 Remove frequent programs list from the Start Menu |     Enabled
-Remove ‘Map Network Drive’ and ‘Disconnect Network Drive’ | Enabled
+Remove 'Map Network Drive' and 'Disconnect Network Drive' | Enabled
 Remove the Security and Maintenance icon     |  Enabled
 Turn off all balloon notifications |        Enabled
 Turn off feature advertisement balloon notifications     |  Enabled
@@ -614,7 +616,7 @@ Turn off toast notifications |      Enabled
 Remove Task Manager |       Enabled
 Remove Change Password option in Security Options UI |      Enabled
 Remove Sign Out option in Security Options UI    |  Enabled
-Remove All Programs list from the Start Menu     |  Enabled – Remove and disable setting
+Remove All Programs list from the Start Menu     |  Enabled - Remove and disable setting
 Prevent access to drives from My Computer    |  Enabled - Restrict all drivers
 
 >[!NOTE]

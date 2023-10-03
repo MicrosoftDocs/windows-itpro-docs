@@ -1,149 +1,159 @@
 ---
-title: Policy CSP - CredentialsUI
-description: Learn how to use the Policy CSP - CredentialsUI setting to configure the display of the password reveal button in password entry user experiences.
-ms.author: vinpa
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
+title: CredentialsUI Policy CSP
+description: Learn more about the CredentialsUI Area in Policy CSP.
 author: vinaypamnani-msft
-ms.localizationpriority: medium
-ms.date: 09/27/2019
-ms.reviewer: 
 manager: aaroncz
+ms.author: vinpa
+ms.date: 08/10/2023
+ms.localizationpriority: medium
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- CredentialsUI-Begin -->
 # Policy CSP - CredentialsUI
 
-> [!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
-<hr/>
+<!-- CredentialsUI-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- CredentialsUI-Editable-End -->
 
-<!--Policies-->
-## CredentialsUI policies  
+<!-- DisablePasswordReveal-Begin -->
+## DisablePasswordReveal
 
-<dl>
-  <dd>
-    <a href="#credentialsui-disablepasswordreveal">CredentialsUI/DisablePasswordReveal</a>
-  </dd>
-  <dd>
-    <a href="#credentialsui-enumerateadministrators">CredentialsUI/EnumerateAdministrators</a>
-  </dd>
-</dl>
+<!-- DisablePasswordReveal-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- DisablePasswordReveal-Applicability-End -->
 
+<!-- DisablePasswordReveal-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/CredentialsUI/DisablePasswordReveal
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/CredentialsUI/DisablePasswordReveal
+```
+<!-- DisablePasswordReveal-OmaUri-End -->
 
-<!--Policy-->
-<a href="" id="credentialsui-disablepasswordreveal"></a>**CredentialsUI/DisablePasswordReveal**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- DisablePasswordReveal-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to configure the display of the password reveal button in password entry user experiences.
 
-If you enable this policy setting, the password reveal button won't be displayed after a user types a password in the password entry text box.
+- If you enable this policy setting, the password reveal button won't be displayed after a user types a password in the password entry text box.
 
-If you disable or don't configure this policy setting, the password reveal button will be displayed after a user types a password in the password entry text box.
+- If you disable or don't configure this policy setting, the password reveal button will be displayed after a user types a password in the password entry text box.
 
 By default, the password reveal button is displayed after a user types a password in the password entry text box. To display the password, click the password reveal button.
 
-This policy applies to all Windows components and applications that use the Windows system controls, including Internet Explorer.
+The policy applies to all Windows components and applications that use the Windows system controls, including Internet Explorer.
+<!-- DisablePasswordReveal-Description-End -->
 
-<!--/Description-->
+<!-- DisablePasswordReveal-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisablePasswordReveal-Editable-End -->
 
+<!-- DisablePasswordReveal-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Do not display the password reveal button*
--   GP name: *DisablePasswordReveal*
--   GP path: *Windows Components/Credential User Interface*
--   GP ADMX file name: *credui.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisablePasswordReveal-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+<!-- DisablePasswordReveal-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<hr/>
+**ADMX mapping**:
 
-<!--Policy-->
-<a href="" id="credentialsui-enumerateadministrators"></a>**CredentialsUI/EnumerateAdministrators**  
+| Name | Value |
+|:--|:--|
+| Name | DisablePasswordReveal |
+| Friendly Name | Do not display the password reveal button |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Credential User Interface |
+| Registry Key Name | Software\Policies\Microsoft\Windows\CredUI |
+| Registry Value Name | DisablePasswordReveal |
+| ADMX File Name | CredUI.admx |
+<!-- DisablePasswordReveal-AdmxBacked-End -->
 
-<!--SupportedSKUs-->
+<!-- DisablePasswordReveal-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisablePasswordReveal-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- DisablePasswordReveal-End -->
 
+<!-- EnumerateAdministrators-Begin -->
+## EnumerateAdministrators
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- EnumerateAdministrators-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- EnumerateAdministrators-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- EnumerateAdministrators-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/CredentialsUI/EnumerateAdministrators
+```
+<!-- EnumerateAdministrators-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- EnumerateAdministrators-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting controls whether administrator accounts are displayed when a user attempts to elevate a running application. By default, administrator accounts aren't displayed when the user attempts to elevate a running application.
 
-If you enable this policy setting, all local administrator accounts on the PC will be displayed so the user can choose one and enter the correct password.
+- If you enable this policy setting, all local administrator accounts on the PC will be displayed so the user can choose one and enter the correct password.
 
-If you disable this policy setting, users will always be required to type a user name and password to elevate.
+- If you disable this policy setting, users will always be required to type a user name and password to elevate.
+<!-- EnumerateAdministrators-Description-End -->
 
-<!--/Description-->
+<!-- EnumerateAdministrators-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- EnumerateAdministrators-Editable-End -->
 
+<!-- EnumerateAdministrators-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Enumerate administrator accounts on elevation*
--   GP name: *EnumerateAdministrators*
--   GP path: *Windows Components/Credential User Interface*
--   GP ADMX file name: *credui.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- EnumerateAdministrators-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- EnumerateAdministrators-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
+**ADMX mapping**:
 
+| Name | Value |
+|:--|:--|
+| Name | EnumerateAdministrators |
+| Friendly Name | Enumerate administrator accounts on elevation |
+| Location | Computer Configuration |
+| Path | Windows Components > Credential User Interface |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\CredUI |
+| Registry Value Name | EnumerateAdministrators |
+| ADMX File Name | CredUI.admx |
+<!-- EnumerateAdministrators-AdmxBacked-End -->
 
-<!--/Policies-->
+<!-- EnumerateAdministrators-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- EnumerateAdministrators-Examples-End -->
 
-## Related topics
+<!-- EnumerateAdministrators-End -->
+
+<!-- CredentialsUI-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- CredentialsUI-CspMoreInfo-End -->
+
+<!-- CredentialsUI-End -->
+
+## Related articles
 
 [Policy configuration service provider](policy-configuration-service-provider.md)

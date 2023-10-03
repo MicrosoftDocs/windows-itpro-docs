@@ -1,13 +1,10 @@
 ---
 title: Create and deploy a WIP policy in Configuration Manager
-description: Use Microsoft Endpoint Configuration Manager to create and deploy a Windows Information Protection (WIP) policy. Choose protected apps, WIP-protection level, and find enterprise data.
-ms.prod: m365-security
-ms.localizationpriority: medium
+description: Use Microsoft Configuration Manager to create and deploy a Windows Information Protection (WIP) policy. Choose protected apps, WIP-protection level, and find enterprise data.
 author: aczechowski
 ms.author: aaroncz
-manager: dougeby
+manager: aaroncz
 ms.reviewer: rafals
-ms.collection: M365-security-compliance
 ms.topic: how-to
 ms.date: 07/15/2022
 ---
@@ -22,7 +19,7 @@ _Applies to:_
 - Windows 10
 - Windows 11
 
-Microsoft Endpoint Configuration Manager helps you create and deploy your Windows Information Protection (WIP) policy. You can choose your protected apps, your WIP-protection mode, and how to find enterprise data on the network.
+Microsoft Configuration Manager helps you create and deploy your Windows Information Protection (WIP) policy. You can choose your protected apps, your WIP-protection mode, and how to find enterprise data on the network.
 
 ## Add a WIP policy
 After you've installed and set up Configuration Manager for your organization, you must create a configuration item for WIP, which in turn becomes your WIP policy.
@@ -97,15 +94,14 @@ If you don't know the publisher or product name, you can find them for both desk
 
 **To find the Publisher and Product Name values for Store apps without installing them**
 
-1. Go to the [Microsoft Store for Business](https://businessstore.microsoft.com/store) website, and find your app. For example, Microsoft OneNote.
+1. Go to the [Microsoft Store](https://apps.microsoft.com/) website, and find your app. For example, Microsoft OneNote.
 
    > [!NOTE]
-   > 
    > If your app is already installed on desktop devices, you can use the AppLocker local security policy MMC snap-in to gather the info for adding the app to the protected apps list. For info about how to do this, see the steps in [Add an AppLocker policy file](#add-an-applocker-policy-file) in this article.
 
-2. Copy the ID value from the app URL. For example, Microsoft OneNote's ID URL is https://www.microsoft.com/store/apps/onenote/9wzdncrfhvjl, and you'd copy the ID value, `9wzdncrfhvjl`.
+2. Copy the ID value from the app URL. For example, Microsoft OneNote's ID URL is `https://www.microsoft.com/store/apps/onenote/9wzdncrfhvjl`, and you'd copy the ID value, `9wzdncrfhvjl`.
 
-3. In a browser, run the Store for Business portal web API, to return a JavaScript Object Notation (JSON) file that includes the publisher and product name values. For example, run https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata, where `9wzdncrfhvjl` is replaced with your ID value.
+3. In a browser, run the Store for Business portal web API, to return a JavaScript Object Notation (JSON) file that includes the publisher and product name values. For example, run `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata`, where `9wzdncrfhvjl` is replaced with your ID value.
 
    The API runs and opens a text editor with the app details.
 
@@ -183,7 +179,7 @@ Where the text, `O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US` is the 
 
 ### Add an AppLocker policy file
 
-For this example, we're going to add an AppLocker XML file to the **App Rules** list. You'll use this option if you want to add multiple apps at the same time. For more info about AppLocker, see the [AppLocker](../../threat-protection/windows-defender-application-control/applocker/applocker-overview.md) content.
+For this example, we're going to add an AppLocker XML file to the **App Rules** list. You'll use this option if you want to add multiple apps at the same time. For more info about AppLocker, see the [AppLocker](../../application-security/application-control/windows-defender-application-control/applocker/applocker-overview.md) content.
 
 **To create an app rule and xml file using the AppLocker tool**
 

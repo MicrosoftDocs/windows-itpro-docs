@@ -1,12 +1,12 @@
 ---
 title: Policies in Policy CSP supported by HoloLens (1st gen) Commercial Suite
 description: Learn the policies in Policy CSP supported by HoloLens (1st gen) Commercial Suite.
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.topic: reference
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/17/2019
@@ -14,57 +14,50 @@ ms.date: 09/17/2019
 
 # Policies in Policy CSP supported by HoloLens (first gen) Commercial Suite
 
-> [!div class="op_single_selector"]
->
-> - [HoloLens 2](./policies-in-policy-csp-supported-by-hololens2.md)
-> - [HoloLens (1st gen) Commercial Suite]()
-> - [HoloLens (1st gen) Development Edition](./policies-in-policy-csp-supported-by-hololens-1st-gen-development-edition.md)
->
-
-- [Accounts/AllowMicrosoftAccountConnection](policy-csp-accounts.md#accounts-allowmicrosoftaccountconnection)
-- [ApplicationManagement/AllowAllTrustedApps](policy-csp-applicationmanagement.md#applicationmanagement-allowalltrustedapps)
-- [ApplicationManagement/AllowAppStoreAutoUpdate](policy-csp-applicationmanagement.md#applicationmanagement-allowappstoreautoupdate)
-- [ApplicationManagement/AllowDeveloperUnlock](policy-csp-applicationmanagement.md#applicationmanagement-allowdeveloperunlock)
-- [Authentication/AllowFastReconnect](policy-csp-authentication.md#authentication-allowfastreconnect)
-- [Authentication/PreferredAadTenantDomainName](policy-csp-authentication.md#authentication-preferredaadtenantdomainname)
-- [Bluetooth/AllowAdvertising](policy-csp-bluetooth.md#bluetooth-allowadvertising)
-- [Bluetooth/AllowDiscoverableMode](policy-csp-bluetooth.md#bluetooth-allowdiscoverablemode)
-- [Bluetooth/LocalDeviceName](policy-csp-bluetooth.md#bluetooth-localdevicename)
-- [Browser/AllowAutofill](policy-csp-browser.md#browser-allowautofill)
-- [Browser/AllowCookies](policy-csp-browser.md#browser-allowcookies)
-- [Browser/AllowDoNotTrack](policy-csp-browser.md#browser-allowdonottrack)
-- [Browser/AllowPasswordManager](policy-csp-browser.md#browser-allowpasswordmanager)
-- [Browser/AllowPopups](policy-csp-browser.md#browser-allowpopups)
-- [Browser/AllowSearchSuggestionsinAddressBar](policy-csp-browser.md#browser-allowsearchsuggestionsinaddressbar)
-- [Browser/AllowSmartScreen](policy-csp-browser.md#browser-allowsmartscreen)
-- [Connectivity/AllowBluetooth](policy-csp-connectivity.md#connectivity-allowbluetooth)
-- [Connectivity/AllowUSBConnection](policy-csp-connectivity.md#connectivity-allowusbconnection)
-- [DeviceLock/AllowIdleReturnWithoutPassword](policy-csp-devicelock.md#devicelock-allowidlereturnwithoutpassword)
-- [DeviceLock/AllowSimpleDevicePassword](policy-csp-devicelock.md#devicelock-allowsimpledevicepassword)
-- [DeviceLock/AlphanumericDevicePasswordRequired](policy-csp-devicelock.md#devicelock-alphanumericdevicepasswordrequired)
-- [DeviceLock/DevicePasswordEnabled](policy-csp-devicelock.md#devicelock-devicepasswordenabled)
-- [DeviceLock/DevicePasswordHistory](policy-csp-devicelock.md#devicelock-devicepasswordhistory)
-- [DeviceLock/MaxDevicePasswordFailedAttempts](policy-csp-devicelock.md#devicelock-maxdevicepasswordfailedattempts)
-- [DeviceLock/MaxInactivityTimeDeviceLock](policy-csp-devicelock.md#devicelock-maxinactivitytimedevicelock)
-- [DeviceLock/MinDevicePasswordComplexCharacters](policy-csp-devicelock.md#devicelock-mindevicepasswordcomplexcharacters)
-- [DeviceLock/MinDevicePasswordLength](policy-csp-devicelock.md#devicelock-mindevicepasswordlength)
-- [Experience/AllowCortana](policy-csp-experience.md#experience-allowcortana)
-- [Privacy/AllowInputPersonalization](policy-csp-privacy.md#privacy-allowinputpersonalization)
-- [Search/AllowSearchToUseLocation](policy-csp-search.md#search-allowsearchtouselocation)
-- [Security/RequireDeviceEncryption](policy-csp-security.md#security-requiredeviceencryption)
-- [Settings/AllowDateTime](policy-csp-settings.md#settings-allowdatetime)
-- [Settings/AllowVPN](policy-csp-settings.md#settings-allowvpn)
-- [Speech/AllowSpeechModelUpdate](policy-csp-speech.md#speech-allowspeechmodelupdate)
-- [System/AllowLocation](policy-csp-system.md#system-allowlocation)
-- [System/AllowTelemetry](policy-csp-system.md#system-allowtelemetry)
-- [Update/AllowAutoUpdate](policy-csp-update.md#update-allowautoupdate)
-- [Update/AllowUpdateService](policy-csp-update.md#update-allowupdateservice)
-- [Update/RequireDeferUpgrade](policy-csp-update.md#update-requiredeferupgrade)
-- [Update/RequireUpdateApproval](policy-csp-update.md#update-requireupdateapproval)
-- [Update/ScheduledInstallDay](policy-csp-update.md#update-scheduledinstallday)
-- [Update/ScheduledInstallTime](policy-csp-update.md#update-scheduledinstalltime)
-- [Update/UpdateServiceUrl](policy-csp-update.md#update-updateserviceurl)
-- [Wifi/AllowManualWiFiConfiguration](policy-csp-wifi.md#wifi-allowmanualwificonfiguration)
+- [Accounts/AllowMicrosoftAccountConnection](policy-csp-accounts.md#allowmicrosoftaccountconnection)
+- [ApplicationManagement/AllowAllTrustedApps](policy-csp-applicationmanagement.md#allowalltrustedapps)
+- [ApplicationManagement/AllowAppStoreAutoUpdate](policy-csp-applicationmanagement.md#allowappstoreautoupdate)
+- [ApplicationManagement/AllowDeveloperUnlock](policy-csp-applicationmanagement.md#allowdeveloperunlock)
+- [Authentication/AllowFastReconnect](policy-csp-authentication.md#allowfastreconnect)
+- [Authentication/PreferredAadTenantDomainName](policy-csp-authentication.md#preferredaadtenantdomainname)
+- [Bluetooth/AllowAdvertising](policy-csp-bluetooth.md#allowadvertising)
+- [Bluetooth/AllowDiscoverableMode](policy-csp-bluetooth.md#allowdiscoverablemode)
+- [Bluetooth/LocalDeviceName](policy-csp-bluetooth.md#localdevicename)
+- [Browser/AllowAutofill](policy-csp-browser.md#allowautofill)
+- [Browser/AllowCookies](policy-csp-browser.md#allowcookies)
+- [Browser/AllowDoNotTrack](policy-csp-browser.md#allowdonottrack)
+- [Browser/AllowPasswordManager](policy-csp-browser.md#allowpasswordmanager)
+- [Browser/AllowPopups](policy-csp-browser.md#allowpopups)
+- [Browser/AllowSearchSuggestionsinAddressBar](policy-csp-browser.md#allowsearchsuggestionsinaddressbar)
+- [Browser/AllowSmartScreen](policy-csp-browser.md#allowsmartscreen)
+- [Connectivity/AllowBluetooth](policy-csp-connectivity.md#allowbluetooth)
+- [Connectivity/AllowUSBConnection](policy-csp-connectivity.md#allowusbconnection)
+- [DeviceLock/AllowIdleReturnWithoutPassword](policy-csp-devicelock.md#allowidlereturnwithoutpassword)
+- [DeviceLock/AllowSimpleDevicePassword](policy-csp-devicelock.md#allowsimpledevicepassword)
+- [DeviceLock/AlphanumericDevicePasswordRequired](policy-csp-devicelock.md#alphanumericdevicepasswordrequired)
+- [DeviceLock/DevicePasswordEnabled](policy-csp-devicelock.md#devicepasswordenabled)
+- [DeviceLock/DevicePasswordHistory](policy-csp-devicelock.md#devicepasswordhistory)
+- [DeviceLock/MaxDevicePasswordFailedAttempts](policy-csp-devicelock.md#maxdevicepasswordfailedattempts)
+- [DeviceLock/MaxInactivityTimeDeviceLock](policy-csp-devicelock.md#maxinactivitytimedevicelock)
+- [DeviceLock/MinDevicePasswordComplexCharacters](policy-csp-devicelock.md#mindevicepasswordcomplexcharacters)
+- [DeviceLock/MinDevicePasswordLength](policy-csp-devicelock.md#mindevicepasswordlength)
+- [Experience/AllowCortana](policy-csp-experience.md#allowcortana)
+- [Privacy/AllowInputPersonalization](policy-csp-privacy.md#allowinputpersonalization)
+- [Search/AllowSearchToUseLocation](policy-csp-search.md#allowsearchtouselocation)
+- [Security/RequireDeviceEncryption](policy-csp-security.md#requiredeviceencryption)
+- [Settings/AllowDateTime](policy-csp-settings.md#allowdatetime)
+- [Settings/AllowVPN](policy-csp-settings.md#allowvpn)
+- [Speech/AllowSpeechModelUpdate](policy-csp-speech.md#allowspeechmodelupdate)
+- [System/AllowLocation](policy-csp-system.md#allowlocation)
+- [System/AllowTelemetry](policy-csp-system.md#allowtelemetry)
+- [Update/AllowAutoUpdate](policy-csp-update.md#allowautoupdate)
+- [Update/AllowUpdateService](policy-csp-update.md#allowupdateservice)
+- [Update/RequireDeferUpgrade](policy-csp-update.md#requiredeferupgrade)
+- [Update/RequireUpdateApproval](policy-csp-update.md#requireupdateapproval)
+- [Update/ScheduledInstallDay](policy-csp-update.md#scheduledinstallday)
+- [Update/ScheduledInstallTime](policy-csp-update.md#scheduledinstalltime)
+- [Update/UpdateServiceUrl](policy-csp-update.md#updateserviceurl)
+- [Wifi/AllowManualWiFiConfiguration](policy-csp-wifi.md#allowmanualwificonfiguration)
 
 ## Related topics
 

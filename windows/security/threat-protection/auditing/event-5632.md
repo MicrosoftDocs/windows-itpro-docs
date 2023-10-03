@@ -1,17 +1,18 @@
 ---
-title: 5632(S, F) A request was made to authenticate to a wireless network. (Windows 10)
+title: 5632(S, F) A request was made to authenticate to a wireless network. 
 description: Describes security event 5632(S, F) A request was made to authenticate to a wireless network.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
-author: dansimp
+ms.localizationpriority: low
+author: vinaypamnani-msft
 ms.date: 09/08/2021
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.technology: windows-sec
+manager: aaroncz
+ms.author: vinpa
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 5632(S, F): A request was made to authenticate to a wireless network.
@@ -35,36 +36,36 @@ It typically generates when network adapter connects to new wireless network.
 ```
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
- <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
- <EventID>5632</EventID> 
- <Version>1</Version> 
- <Level>0</Level> 
- <Task>12551</Task> 
- <Opcode>0</Opcode> 
- <Keywords>0x8020000000000000</Keywords> 
- <TimeCreated SystemTime="2015-11-10T23:10:34.052054800Z" /> 
- <EventRecordID>44113845</EventRecordID> 
- <Correlation /> 
- <Execution ProcessID="712" ThreadID="4176" /> 
- <Channel>Security</Channel> 
- <Computer>XXXXXXX.redmond.corp.microsoft.com</Computer> 
- <Security /> 
+ <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" />
+ <EventID>5632</EventID>
+ <Version>1</Version>
+ <Level>0</Level>
+ <Task>12551</Task>
+ <Opcode>0</Opcode>
+ <Keywords>0x8020000000000000</Keywords>
+ <TimeCreated SystemTime="2015-11-10T23:10:34.052054800Z" />
+ <EventRecordID>44113845</EventRecordID>
+ <Correlation />
+ <Execution ProcessID="712" ThreadID="4176" />
+ <Channel>Security</Channel>
+ <Computer>XXXXXXX.redmond.corp.microsoft.com</Computer>
+ <Security />
  </System>
 - <EventData>
- <Data Name="SSID">Nokia</Data> 
- <Data Name="Identity">host/XXXXXXXX.redmond.corp.microsoft.com</Data> 
- <Data Name="SubjectUserName">-</Data> 
- <Data Name="SubjectDomainName">-</Data> 
- <Data Name="SubjectLogonId">0x0</Data> 
- <Data Name="PeerMac">18:64:72:F3:33:91</Data> 
- <Data Name="LocalMac">02:1A:C5:14:59:C9</Data> 
- <Data Name="IntfGuid">{2BB33827-6BB6-48DB-8DE6-DB9E0B9F9C9B}</Data> 
- <Data Name="ReasonCode">0x0</Data> 
- <Data Name="ReasonText">The operation was successful.</Data> 
- <Data Name="ErrorCode">0x0</Data> 
- <Data Name="EAPReasonCode">0x0</Data> 
- <Data Name="EapRootCauseString" /> 
- <Data Name="EAPErrorCode">0x0</Data> 
+ <Data Name="SSID">Nokia</Data>
+ <Data Name="Identity">host/XXXXXXXX.redmond.corp.microsoft.com</Data>
+ <Data Name="SubjectUserName">-</Data>
+ <Data Name="SubjectDomainName">-</Data>
+ <Data Name="SubjectLogonId">0x0</Data>
+ <Data Name="PeerMac">18:64:72:F3:33:91</Data>
+ <Data Name="LocalMac">02:1A:C5:14:59:C9</Data>
+ <Data Name="IntfGuid">{2BB33827-6BB6-48DB-8DE6-DB9E0B9F9C9B}</Data>
+ <Data Name="ReasonCode">0x0</Data>
+ <Data Name="ReasonText">The operation was successful.</Data>
+ <Data Name="ErrorCode">0x0</Data>
+ <Data Name="EAPReasonCode">0x0</Data>
+ <Data Name="EapRootCauseString" />
+ <Data Name="EAPErrorCode">0x0</Data>
  </EventData>
  </Event>
 ```
@@ -127,7 +128,7 @@ You can see interface’s GUID using the following commands:
 
 -   **Error Code** \[Type = HexInt32\]**:** there's no information about this field in this document.
 
--   **EAP Reason Code** \[Type = HexInt32\]**:** there's no information about this field in this document. See additional information here: <https://technet.microsoft.com/library/dd197570(v=ws.10).aspx>.
+-   **EAP Reason Code** \[Type = HexInt32\]**:** there's no information about this field in this document. See [EAP Related Error and Information Constants](/windows/win32/eaphost/eap-related-error-and-information-constants) for additional information.
 
 -   **EAP Root Cause String** \[Type = UnicodeString\]**:** there's no information about this field in this document.
 

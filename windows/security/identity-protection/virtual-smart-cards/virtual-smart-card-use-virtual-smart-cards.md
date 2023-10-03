@@ -1,22 +1,15 @@
 ---
-title: Use Virtual Smart Cards (Windows 10)
-description: This topic for the IT professional describes requirements for virtual smart cards and provides information about how to use and manage them.
-ms.prod: m365-security
-author: paolomatarazzo
-ms.author: paoloma
-manager: aaroncz
-ms.collection: M365-identity-device-management
-ms.topic: article
-ms.localizationpriority: medium
-ms.date: 10/13/2017
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows Server 2016</b>
+title: Use Virtual Smart Cards
+description: Learn about the requirements for virtual smart cards, how to use and manage them.
+ms.topic: conceptual
+ms.date: 02/22/2023
 ---
 
 # Use Virtual Smart Cards
 
-This topic for the IT professional describes requirements for virtual smart cards, how to use virtual smart cards, and tools that are available to help you create and manage them.
+[!INCLUDE [virtual-smart-card-deprecation-notice](../../includes/virtual-smart-card-deprecation-notice.md)]
+
+Learn about the requirements for virtual smart cards, how to use and manage them.
 
 ## Requirements, restrictions, and limitations
 
@@ -24,9 +17,9 @@ This topic for the IT professional describes requirements for virtual smart card
 |-------------|---------------------------|
 | Supported operating systems  | Windows Server 2016 <br>Windows Server 2012 R2 <br>Windows Server 2012 <br>Windows 10 <br>Windows 8.1 <br>Windows 8  |
 | Supported Trusted Platform Module (TPM)                        | Any TPM that adheres to the TPM main specifications for version 1.2 or version 2.0 (as set by the Trusted Computing Group) is supported for use as a virtual smart card. For more information, see the [TPM Main Specification](http://www.trustedcomputinggroup.org/resources/tpm_main_specification).      |
-| Supported virtual smart cards per computer                     | Ten smart cards can be connected to a computer or device at one time. This includes physical and virtual smart cards combined. <br><br>**Note**<br>You can create more than one virtual smart card; however, after creating more than four virtual smart cards, you may start to notice performance degradation. Because all smart cards appear as if they are always inserted, if more than one person shares a computer or device, each person can see all the virtual smart cards that are created on that computer or device. If the user knows the PIN values for all the virtual smart cards, the user will also be able to use them.<br> |
-| Supported number of certificates on a virtual smart card       | A single TPM virtual smart card can contain 30 distinct certificates with the corresponding private keys. Users can continue to renew certificates on the card until the total number of certificates on a card exceeds 90. The reason that the total number of certificates is different from the total number of private keys is that sometimes the renewal can be done with the same private key—in which case a new private key is not generated.       |
-| PIN, PIN Unlock Key (PUK), and Administrative key requirements | The PIN and the PUK must be a minimum of eight characters that can include numerals, alphabetic characters, and special characters.<br>The Administrative key must be entered as 48 hexadecimal characters. It is a 3-key triple DES with ISO/IEC 9797 padding method 2 in CBC chaining mode.                 |
+| Supported virtual smart cards per computer                     | Ten smart cards can be connected to a computer or device at one time. This includes physical and virtual smart cards combined. <br><br>**Note**<br>You can create more than one virtual smart card; however, after creating more than four virtual smart cards, you may start to notice performance degradation. Because all smart cards appear as if they're always inserted, if more than one person shares a computer or device, each person can see all the virtual smart cards that are created on that computer or device. If the user knows the PIN values for all the virtual smart cards, the user will also be able to use them.<br> |
+| Supported number of certificates on a virtual smart card       | A single TPM virtual smart card can contain 30 distinct certificates with the corresponding private keys. Users can continue to renew certificates on the card until the total number of certificates on a card exceeds 90. The reason that the total number of certificates is different from the total number of private keys is that sometimes the renewal can be done with the same private key—in which case a new private key isn't generated.       |
+| PIN, PIN Unlock Key (PUK), and Administrative key requirements | The PIN and the PUK must be a minimum of eight characters that can include numerals, alphabetic characters, and special characters.<br>The Administrative key must be entered as 48 hexadecimal characters. It's a 3-key triple DES with ISO/IEC 9797 padding method 2 in CBC chaining mode.                 |
 
 ## Using Tpmvscmgr.exe
 
@@ -68,7 +61,7 @@ For more information about these Windows APIs, see:
 
 ## Distinguishing TPM-based virtual smart cards from physical smart cards
 
-To help users visually distinguish a Trusted Platform Module (TPM)-based virtual smart card from physical smart cards, the virtual smart card has a different icon. The following icon is displayed during sign in, and on other screens that require the user to enter the PIN for a virtual smart card.
+To help users visually distinguish a Trusted Platform Module (TPM)-based virtual smart card from physical smart cards, the virtual smart card has a different icon. The following icon is displayed during sign-in, and on other screens that require the user to enter the PIN for a virtual smart card.
 
 ![Icon for a virtual smart card.](images/vsc-virtual-smart-card-icon.png)
 
@@ -86,17 +79,17 @@ The PIN for a virtual smart card can be changed by following these steps:
 
 ### TPM not provisioned
 
-For a TPM-based virtual smart card to function properly, a provisioned TPM must be available on the computer. If the TPM is disabled in the BIOS, or it is not provisioned with full ownership and the storage root key, the TPM virtual smart card creation will fail.
+For a TPM-based virtual smart card to function properly, a provisioned TPM must be available on the computer. If the TPM is disabled in the BIOS, or it isn't provisioned with full ownership and the storage root key, the TPM virtual smart card creation will fail.
 
 If the TPM is initialized after creating a virtual smart card, the card will no longer function, and it will need to be re-created.
 
-If the TPM ownership was established on a Windows Vista installation, the TPM will not be ready to use virtual smart cards. The system administrator needs to clear and initialize the TPM for it to be suitable for creating TPM virtual smart cards.
+If the TPM ownership was established on a Windows Vista installation, the TPM won't be ready to use virtual smart cards. The system administrator needs to clear and initialize the TPM for it to be suitable for creating TPM virtual smart cards.
 
 If the operating system is reinstalled, prior TPM virtual smart cards are no longer available and need to be re-created. If the operating system is upgraded, prior TPM virtual smart cards will be available to use in the upgraded operating system.
 
 ### TPM in lockout state
 
-Sometimes, due to frequent incorrect PIN attempts from a user, the TPM may enter the lockout state. To resume using the TPM virtual smart card, it is necessary to reset the lockout on the TPM by using the owner’s password or to wait for the lockout to expire. Unblocking the user PIN does not reset the lockout in the TPM. When the TPM is in lockout, the TPM virtual smart card appears as if it is blocked. When the TPM enters the lockout state because the user entered an incorrect PIN too many times, it may be necessary to reset the user PIN by using the virtual smart card management tools, such as Tpmvscmgr command-line tool.
+Sometimes, due to frequent incorrect PIN attempts from a user, the TPM may enter the lockout state. To resume using the TPM virtual smart card, it's necessary to reset the lockout on the TPM by using the owner's password or to wait for the lockout to expire. Unblocking the user PIN doesn't reset the lockout in the TPM. When the TPM is in lockout, the TPM virtual smart card appears as if it's blocked. When the TPM enters the lockout state because the user entered an incorrect PIN too many times, it may be necessary to reset the user PIN by using the virtual smart card management tools, such as Tpmvscmgr command-line tool.
 
 ## See also
 

@@ -4,7 +4,7 @@ ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: How to turn Enterprise Mode off temporarily while testing websites and how to turn it off completely if you no longer want to to use it.
 author: dansimp
-ms.prod: ie11
+ms.prod: windows-client
 ms.assetid: 5027c163-71e0-49b8-9dc0-f0a7310c7ae3
 ms.reviewer: 
 audience: itpro

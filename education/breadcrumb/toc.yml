@@ -14,6 +14,11 @@ items:
         tocHref: /education/windows
         topicHref: /education/windows/index
       - name: Windows
-        tocHref: /windows/security/
+        tocHref: /windows/configuration/
         topicHref: /education/windows/index
-        
+      - name: Windows
+        tocHref: /windows/deployment/
+        topicHref: /education/windows/index
+      - name: Windows
+        tocHref: /windows/Security/Application Control for Windows/
+        topicHref: /education/windows/index

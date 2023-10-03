@@ -1,100 +1,99 @@
 ---
-title: Policy CSP - ServiceControlManager
-description: Learn how the Policy CSP - ServiceControlManager setting enables process mitigation options on svchost.exe processes.
+title: ServiceControlManager Policy CSP
+description: Learn more about the ServiceControlManager Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
 ms.author: vinpa
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: Heidilohr
+ms.date: 08/10/2023
 ms.localizationpriority: medium
-ms.date: 09/27/2019
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ServiceControlManager-Begin -->
 # Policy CSP - ServiceControlManager
 
-<hr/>
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
-<!--Policies-->
-## ServiceControlManager policies  
+<!-- ServiceControlManager-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ServiceControlManager-Editable-End -->
 
-<dl>
-  <dd>
-    <a href="#servicecontrolmanager-svchostprocessmitigation">ServiceControlManager/SvchostProcessMitigation</a>
-  </dd>
-</dl>
+<!-- SvchostProcessMitigation-Begin -->
+## SvchostProcessMitigation
 
-<hr/>
+<!-- SvchostProcessMitigation-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
+<!-- SvchostProcessMitigation-Applicability-End -->
 
-<!--Policy-->
-<a href="" id="servicecontrolmanager-svchostprocessmitigation"></a>**ServiceControlManager/SvchostProcessMitigation**  
+<!-- SvchostProcessMitigation-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ServiceControlManager/SvchostProcessMitigation
+```
+<!-- SvchostProcessMitigation-OmaUri-End -->
 
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Windows SE|No|No|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- SvchostProcessMitigation-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting enables process mitigation options on svchost.exe processes.
 
-If you enable this policy setting, built-in system services hosted in svchost.exe processes will have stricter security policies enabled on them.
+- If you enable this policy setting, built-in system services hosted in svchost.exe processes will have stricter security policies enabled on them.
 
-These stricter security policies include a policy requiring all binaries loaded in these processes to be signed by Microsoft, and a policy disallowing dynamically generated code.  
+This includes a policy requiring all binaries loaded in these processes to be signed by microsoft, as well as a policy disallowing dynamically-generated code.
+
+- If you disable or don't configure this policy setting, these stricter security settings won't be applied.
+<!-- SvchostProcessMitigation-Description-End -->
+
+<!-- SvchostProcessMitigation-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+
+If you enable this policy, it adds code integrity guard (CIG) and arbitrary code guard (ACG) enforcement and other process mitigation/code integrity policies to SVCHOST processes.
 
 > [!IMPORTANT]
-> Enabling this policy could cause compatibility issues with third-party software that uses svchost.exe processes (for example, third-party antivirus software).
+> Enabling this policy could cause compatibility issues with third-party software that uses svchost.exe processes. For example, third-party antivirus software.
+<!-- SvchostProcessMitigation-Editable-End -->
 
-If you disable or do not configure this policy setting, the stricter security settings will not be applied.
+<!-- SvchostProcessMitigation-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- SvchostProcessMitigation-DFProperties-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Enable svchost.exe mitigation options*
--   GP name: *SvchostProcessMitigationEnable*
--   GP path: *System/Service Control Manager Settings/Security Settings*
--   GP ADMX file name: *ServiceControlManager.admx*
+<!-- SvchostProcessMitigation-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--/ADMXBacked-->
-<!--SupportedValues-->
-Supported values:  
-- Disabled - Do not add ACG/CIG enforcement and other process mitigation/code integrity policies to SVCHOST processes.
-- Enabled - Add ACG/CIG enforcement and other process mitigation/code integrity policies to SVCHOST processes.
-<!--/SupportedValues-->
-<!--Example-->
+**ADMX mapping**:
 
-<!--/Example-->
-<!--Validation-->
+| Name | Value |
+|:--|:--|
+| Name | SvchostProcessMitigationEnable |
+| Friendly Name | Enable svchost.exe mitigation options |
+| Location | Computer Configuration |
+| Path | System > Service Control Manager Settings > Security Settings |
+| Registry Key Name | System\CurrentControlSet\Control\SCMConfig |
+| Registry Value Name | EnableSvchostMitigationPolicy |
+| ADMX File Name | ServiceControlManager.admx |
+<!-- SvchostProcessMitigation-AdmxBacked-End -->
 
-<!--/Validation-->
-<!--/Policy-->
-<hr/>
+<!-- SvchostProcessMitigation-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- SvchostProcessMitigation-Examples-End -->
 
-<!--/Policies-->
+<!-- SvchostProcessMitigation-End -->
 
-## Related topics
+<!-- ServiceControlManager-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ServiceControlManager-CspMoreInfo-End -->
+
+<!-- ServiceControlManager-End -->
+
+## Related articles
 
 [Policy configuration service provider](policy-configuration-service-provider.md)

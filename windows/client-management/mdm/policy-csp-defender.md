@@ -1,2439 +1,2912 @@
 ---
-title: Policy CSP - Defender
-description: Learn how to use the Policy CSP - Defender setting so you can allow or disallow scanning of archives.
-ms.author: vinpa
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
+title: Defender Policy CSP
+description: Learn more about the Defender Area in Policy CSP.
 author: vinaypamnani-msft
-ms.localizationpriority: medium
-ms.date: 05/12/2022
-ms.reviewer: 
 manager: aaroncz
-ms.collection: highpri
+ms.author: vinpa
+ms.date: 08/10/2023
+ms.localizationpriority: medium
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- Defender-Begin -->
 # Policy CSP - Defender
 
+<!-- Defender-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Defender-Editable-End -->
 
+<!-- AllowArchiveScanning-Begin -->
+## AllowArchiveScanning
 
-<hr/>
+<!-- AllowArchiveScanning-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- AllowArchiveScanning-Applicability-End -->
 
-<!--Policies-->
-## Defender policies  
+<!-- AllowArchiveScanning-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Defender/AllowArchiveScanning
+```
+<!-- AllowArchiveScanning-OmaUri-End -->
 
-<dl>
-  <dd>
-    <a href="#defender-allowarchivescanning">Defender/AllowArchiveScanning</a>
-  </dd>
-  <dd>
-    <a href="#defender-allowbehaviormonitoring">Defender/AllowBehaviorMonitoring</a>
-  </dd>
-  <dd>
-    <a href="#defender-allowcloudprotection">Defender/AllowCloudProtection</a>
-  </dd>
-  <dd>
-    <a href="#defender-allowemailscanning">Defender/AllowEmailScanning</a>
-  </dd>
-  <dd>
-    <a href="#defender-allowfullscanonmappednetworkdrives">Defender/AllowFullScanOnMappedNetworkDrives</a>
-  </dd>
-  <dd>
-    <a href="#defender-allowfullscanremovabledrivescanning">Defender/AllowFullScanRemovableDriveScanning</a>
-  </dd>
-  <dd>
-    <a href="#defender-allowioavprotection">Defender/AllowIOAVProtection</a>
-  </dd>
-  <dd>
-    <a href="#defender-allowonaccessprotection">Defender/AllowOnAccessProtection</a>
-  </dd>
-  <dd>
-    <a href="#defender-allowrealtimemonitoring">Defender/AllowRealtimeMonitoring</a>
-  </dd>
-  <dd>
-    <a href="#defender-allowscanningnetworkfiles">Defender/AllowScanningNetworkFiles</a>
-  </dd>
-  <dd>
-    <a href="#defender-allowscriptscanning">Defender/AllowScriptScanning</a>
-  </dd>
-  <dd>
-    <a href="#defender-allowuseruiaccess">Defender/AllowUserUIAccess</a>
-  </dd>
-  <dd>
-    <a href="#defender-attacksurfacereductiononlyexclusions">Defender/AttackSurfaceReductionOnlyExclusions</a>
-  </dd>
-  <dd>
-    <a href="#defender-attacksurfacereductionrules">Defender/AttackSurfaceReductionRules</a>
-  </dd>
-  <dd>
-    <a href="#defender-avgcpuloadfactor">Defender/AvgCPULoadFactor</a>
-  </dd>
-  <dd>
-    <a href="#defender-checkforsignaturesbeforerunningscan">Defender/CheckForSignaturesBeforeRunningScan</a>
-  </dd>
-  <dd>
-    <a href="#defender-cloudblocklevel">Defender/CloudBlockLevel</a>
-  </dd>
-  <dd>
-    <a href="#defender-cloudextendedtimeout">Defender/CloudExtendedTimeout</a>
-  </dd>
-  <dd>
-    <a href="#defender-controlledfolderaccessallowedapplications">Defender/ControlledFolderAccessAllowedApplications</a>
-  </dd>
-  <dd>
-    <a href="#defender-controlledfolderaccessprotectedfolders">Defender/ControlledFolderAccessProtectedFolders</a>
-  </dd>
-  <dd>
-    <a href="#defender-daystoretaincleanedmalware">Defender/DaysToRetainCleanedMalware</a>
-  </dd>
-  <dd>
-    <a href="#defender-disablecatchupfullscan">Defender/DisableCatchupFullScan</a>
-  </dd>
-  <dd>
-    <a href="#defender-disablecatchupquickscan">Defender/DisableCatchupQuickScan</a>
-  </dd>
-  <dd>
-    <a href="#defender-enablecontrolledfolderaccess">Defender/EnableControlledFolderAccess</a>
-  </dd>
-  <dd>
-    <a href="#defender-enablelowcpupriority">Defender/EnableLowCPUPriority</a>
-  </dd>
-  <dd>
-    <a href="#defender-enablenetworkprotection">Defender/EnableNetworkProtection</a>
-  </dd>
-  <dd>
-    <a href="#defender-excludedextensions">Defender/ExcludedExtensions</a>
-  </dd>
-  <dd>
-    <a href="#defender-excludedpaths">Defender/ExcludedPaths</a>
-  </dd>
-  <dd>
-    <a href="#defender-excludedprocesses">Defender/ExcludedProcesses</a>
-  </dd>
-  <dd>
-    <a href="#defender-puaprotection">Defender/PUAProtection</a>
-  </dd>
-  <dd>
-    <a href="#defender-realtimescandirection">Defender/RealTimeScanDirection</a>
-  </dd>
-  <dd>
-    <a href="#defender-scanparameter">Defender/ScanParameter</a>
-  </dd>
-  <dd>
-    <a href="#defender-schedulequickscantime">Defender/ScheduleQuickScanTime</a>
-  </dd>
-  <dd>
-    <a href="#defender-schedulescanday">Defender/ScheduleScanDay</a>
-  </dd>
-  <dd>
-    <a href="#defender-schedulescantime">Defender/ScheduleScanTime</a>
-  </dd>
-  <dd>
-    <a href="#defender-securityintelligencelocation">Defender/SecurityIntelligenceLocation</a>
-  </dd>
-  <dd>
-    <a href="#defender-signatureupdatefallbackorder">Defender/SignatureUpdateFallbackOrder</a>
-  </dd>
-  <dd>
-    <a href="#defender-signatureupdatefilesharessources">Defender/SignatureUpdateFileSharesSources</a>
-  </dd>
-  <dd>
-    <a href="#defender-signatureupdateinterval">Defender/SignatureUpdateInterval</a>
-  </dd>
-  <dd>
-    <a href="#defender-submitsamplesconsent">Defender/SubmitSamplesConsent</a>
-  </dd>
-  <dd>
-    <a href="#defender-threatseveritydefaultaction">Defender/ThreatSeverityDefaultAction</a>
-  </dd>
-</dl>
+<!-- AllowArchiveScanning-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to configure scans for malicious software and unwanted software in archive files such as . ZIP or . CAB files.
 
+- If you enable or don't configure this setting, archive files will be scanned.
 
-<hr/>
+- If you disable this setting, archive files won't be scanned. However, archives are always scanned during directed scans.
+<!-- AllowArchiveScanning-Description-End -->
 
-<!--Policy-->
-<a href="" id="defender-allowarchivescanning"></a>**Defender/AllowArchiveScanning**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- AllowArchiveScanning-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> This policy is only enforced in Windows 10 for desktop.
+> Changes to this setting are not applied when [tamper protection][TAMPER-1] is enabled.
+<!-- AllowArchiveScanning-Editable-End -->
 
+<!-- AllowArchiveScanning-DFProperties-Begin -->
+**Description framework properties**:
 
-Allows or disallows scanning of archives.
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowArchiveScanning-DFProperties-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Scan archive files*
--   GP name: *Scan_DisableArchiveScanning*
--   GP path: *Windows Components/Microsoft Defender Antivirus/Scan*
--   GP ADMX file name: *WindowsDefender.admx*
+<!-- AllowArchiveScanning-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. Turns off scanning on archived files. |
+| 1 (Default) | Allowed. Scans the archive files. |
+<!-- AllowArchiveScanning-AllowedValues-End -->
 
--   0 – Not allowed. Turns off scanning on archived files.
--   1 (default) – Allowed. Scans the archive files.
+<!-- AllowArchiveScanning-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--/SupportedValues-->
-<!--/Policy-->
+| Name | Value |
+|:--|:--|
+| Name | Scan_DisableArchiveScanning |
+| Friendly Name | Scan archive files |
+| Location | Computer Configuration |
+| Path | Windows Components > Microsoft Defender Antivirus > Scan |
+| Registry Key Name | Software\Policies\Microsoft\Windows Defender\Scan |
+| Registry Value Name | DisableArchiveScanning |
+| ADMX File Name | WindowsDefender.admx |
+<!-- AllowArchiveScanning-GpMapping-End -->
 
-<hr/>
+<!-- AllowArchiveScanning-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowArchiveScanning-Examples-End -->
 
-<!--Policy-->
-<a href="" id="defender-allowbehaviormonitoring"></a>**Defender/AllowBehaviorMonitoring**  
+<!-- AllowArchiveScanning-End -->
 
-<!--SupportedSKUs-->
+<!-- AllowBehaviorMonitoring-Begin -->
+## AllowBehaviorMonitoring
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AllowBehaviorMonitoring-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- AllowBehaviorMonitoring-Applicability-End -->
 
+<!-- AllowBehaviorMonitoring-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Defender/AllowBehaviorMonitoring
+```
+<!-- AllowBehaviorMonitoring-OmaUri-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowBehaviorMonitoring-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to configure behavior monitoring.
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+- If you enable or don't configure this setting, behavior monitoring will be enabled.
 
-> [!div class = "checklist"]
-> * Device
+- If you disable this setting, behavior monitoring will be disabled.
+<!-- AllowBehaviorMonitoring-Description-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- AllowBehaviorMonitoring-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> This policy is only enforced in Windows 10 for desktop.
+> Changes to this setting are not applied when [tamper protection][TAMPER-1] is enabled.
+<!-- AllowBehaviorMonitoring-Editable-End -->
 
- 
-Allows or disallows Windows Defender Behavior Monitoring functionality.
+<!-- AllowBehaviorMonitoring-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Turn on behavior monitoring*
--   GP name: *RealtimeProtection_DisableBehaviorMonitoring*
--   GP path: *Windows Components/Microsoft Defender Antivirus/Real-time Protection*
--   GP ADMX file name: *WindowsDefender.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowBehaviorMonitoring-DFProperties-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- AllowBehaviorMonitoring-AllowedValues-Begin -->
+**Allowed values**:
 
--   0 – Not allowed. Turns off behavior monitoring.
--   1 (default) – Allowed. Turns on real-time behavior monitoring.
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. Turns off behavior monitoring. |
+| 1 (Default) | Allowed. Turns on real-time behavior monitoring. |
+<!-- AllowBehaviorMonitoring-AllowedValues-End -->
 
-<!--/SupportedValues-->
-<!--/Policy-->
+<!-- AllowBehaviorMonitoring-GpMapping-Begin -->
+**Group policy mapping**:
 
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | RealtimeProtection_DisableBehaviorMonitoring |
+| Friendly Name | Turn on behavior monitoring |
+| Location | Computer Configuration |
+| Path | Windows Components > Microsoft Defender Antivirus > Real-time Protection |
+| Registry Key Name | Software\Policies\Microsoft\Windows Defender\Real-Time Protection |
+| Registry Value Name | DisableBehaviorMonitoring |
+| ADMX File Name | WindowsDefender.admx |
+<!-- AllowBehaviorMonitoring-GpMapping-End -->
 
-<!--Policy-->
-<a href="" id="defender-allowcloudprotection"></a>**Defender/AllowCloudProtection**  
+<!-- AllowBehaviorMonitoring-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowBehaviorMonitoring-Examples-End -->
 
-<!--SupportedSKUs-->
+<!-- AllowBehaviorMonitoring-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AllowCloudProtection-Begin -->
+## AllowCloudProtection
 
+<!-- AllowCloudProtection-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- AllowCloudProtection-Applicability-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowCloudProtection-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Defender/AllowCloudProtection
+```
+<!-- AllowCloudProtection-OmaUri-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowCloudProtection-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to join Microsoft MAPS. Microsoft MAPS is the online community that helps you choose how to respond to potential threats. The community also helps stop the spread of new malicious software infections.
 
-> [!div class = "checklist"]
-> * Device
+You can choose to send basic or additional information about detected software. Additional information helps Microsoft create new security intelligence and help it to protect your computer. This information can include things like location of detected items on your computer if harmful software was removed. The information will be automatically collected and sent. In some instances, personal information might unintentionally be sent to Microsoft. However, Microsoft won't use this information to identify you or contact you.
 
-<hr/>
+Possible options are:
 
-<!--/Scope-->
-<!--Description-->
+(0x0) Disabled (default)
+(0x1) Basic membership (0x2) Advanced membership.
+
+Basic membership will send basic information to Microsoft about software that has been detected, including where the software came from, the actions that you apply or that are applied automatically, and whether the actions were successful.
+
+Advanced membership, in addition to basic information, will send more information to Microsoft about malicious software, spyware, and potentially unwanted software, including the location of the software, file names, how the software operates, and how it has impacted your computer.
+
+- If you enable this setting, you'll join Microsoft MAPS with the membership specified.
+
+- If you disable or don't configure this setting, you won't join Microsoft MAPS.
+
+In Windows 10, Basic membership is no longer available, so setting the value to 1 or 2 enrolls the device into Advanced membership.
+<!-- AllowCloudProtection-Description-End -->
+
+<!-- AllowCloudProtection-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> This policy is only enforced in Windows 10 for desktop.
+> Changes to this setting are not applied when [tamper protection][TAMPER-1] is enabled.
+<!-- AllowCloudProtection-Editable-End -->
 
-To best protect your PC, Windows Defender will send information to Microsoft about any problems it finds. Microsoft will analyze that information, learn more about problems affecting you and other customers, and offer improved solutions.
+<!-- AllowCloudProtection-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Join Microsoft MAPS*
--   GP name: *SpynetReporting*
--   GP element: *SpynetReporting*
--   GP path: *Windows Components/Microsoft Defender Antivirus/MAPS*
--   GP ADMX file name: *WindowsDefender.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowCloudProtection-DFProperties-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- AllowCloudProtection-AllowedValues-Begin -->
+**Allowed values**:
 
--   0 – Not allowed. Turns off the Microsoft Active Protection Service.
--   1 (default) – Allowed. Turns on the Microsoft Active Protection Service.
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. Turns off the Microsoft Active Protection Service. |
+| 1 (Default) | Allowed. Turns on the Microsoft Active Protection Service. |
+<!-- AllowCloudProtection-AllowedValues-End -->
 
-<!--/SupportedValues-->
-<!--/Policy-->
+<!-- AllowCloudProtection-GpMapping-Begin -->
+**Group policy mapping**:
 
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | SpynetReporting |
+| Friendly Name | Join Microsoft MAPS |
+| Element Name | Join Microsoft MAPS. |
+| Location | Computer Configuration |
+| Path | Windows Components > Microsoft Defender Antivirus > MAPS |
+| Registry Key Name | Software\Policies\Microsoft\Windows Defender\Spynet |
+| ADMX File Name | WindowsDefender.admx |
+<!-- AllowCloudProtection-GpMapping-End -->
 
-<!--Policy-->
-<a href="" id="defender-allowemailscanning"></a>**Defender/AllowEmailScanning**  
+<!-- AllowCloudProtection-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowCloudProtection-Examples-End -->
 
-<!--SupportedSKUs-->
+<!-- AllowCloudProtection-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AllowEmailScanning-Begin -->
+## AllowEmailScanning
 
+<!-- AllowEmailScanning-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- AllowEmailScanning-Applicability-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowEmailScanning-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Defender/AllowEmailScanning
+```
+<!-- AllowEmailScanning-OmaUri-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowEmailScanning-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to configure e-mail scanning. When e-mail scanning is enabled, the engine will parse the mailbox and mail files, according to their specific format, in order to analyze the mail bodies and attachments. Several e-mail formats are currently supported, for example: pst (Outlook), dbx, mbx, mime (Outlook Express), binhex (Mac). Email scanning isn't supported on modern email clients.
 
-> [!div class = "checklist"]
-> * Device
+- If you enable this setting, e-mail scanning will be enabled.
 
-<hr/>
+- If you disable or don't configure this setting, e-mail scanning will be disabled.
+<!-- AllowEmailScanning-Description-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- AllowEmailScanning-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowEmailScanning-Editable-End -->
+
+<!-- AllowEmailScanning-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- AllowEmailScanning-DFProperties-End -->
+
+<!-- AllowEmailScanning-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Not allowed. Turns off email scanning. |
+| 1 | Allowed. Turns on email scanning. |
+<!-- AllowEmailScanning-AllowedValues-End -->
+
+<!-- AllowEmailScanning-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Scan_DisableEmailScanning |
+| Friendly Name | Turn on e-mail scanning |
+| Location | Computer Configuration |
+| Path | Windows Components > Microsoft Defender Antivirus > Scan |
+| Registry Key Name | Software\Policies\Microsoft\Windows Defender\Scan |
+| Registry Value Name | DisableEmailScanning |
+| ADMX File Name | WindowsDefender.admx |
+<!-- AllowEmailScanning-GpMapping-End -->
+
+<!-- AllowEmailScanning-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowEmailScanning-Examples-End -->
+
+<!-- AllowEmailScanning-End -->
+
+<!-- AllowFullScanOnMappedNetworkDrives-Begin -->
+## AllowFullScanOnMappedNetworkDrives
+
+<!-- AllowFullScanOnMappedNetworkDrives-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- AllowFullScanOnMappedNetworkDrives-Applicability-End -->
+
+<!-- AllowFullScanOnMappedNetworkDrives-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Defender/AllowFullScanOnMappedNetworkDrives
+```
+<!-- AllowFullScanOnMappedNetworkDrives-OmaUri-End -->
+
+<!-- AllowFullScanOnMappedNetworkDrives-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to configure scanning mapped network drives.
+
+- If you enable this setting, mapped network drives will be scanned.
+
+- If you disable or don't configure this setting, mapped network drives won't be scanned.
+<!-- AllowFullScanOnMappedNetworkDrives-Description-End -->
+
+<!-- AllowFullScanOnMappedNetworkDrives-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowFullScanOnMappedNetworkDrives-Editable-End -->
+
+<!-- AllowFullScanOnMappedNetworkDrives-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- AllowFullScanOnMappedNetworkDrives-DFProperties-End -->
+
+<!-- AllowFullScanOnMappedNetworkDrives-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Not allowed. Disables scanning on mapped network drives. |
+| 1 | Allowed. Scans mapped network drives. |
+<!-- AllowFullScanOnMappedNetworkDrives-AllowedValues-End -->
+
+<!-- AllowFullScanOnMappedNetworkDrives-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Scan_DisableScanningMappedNetworkDrivesForFullScan |
+| Friendly Name | Run full scan on mapped network drives |
+| Location | Computer Configuration |
+| Path | Windows Components > Microsoft Defender Antivirus > Scan |
+| Registry Key Name | Software\Policies\Microsoft\Windows Defender\Scan |
+| Registry Value Name | DisableScanningMappedNetworkDrivesForFullScan |
+| ADMX File Name | WindowsDefender.admx |
+<!-- AllowFullScanOnMappedNetworkDrives-GpMapping-End -->
+
+<!-- AllowFullScanOnMappedNetworkDrives-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowFullScanOnMappedNetworkDrives-Examples-End -->
+
+<!-- AllowFullScanOnMappedNetworkDrives-End -->
+
+<!-- AllowFullScanRemovableDriveScanning-Begin -->
+## AllowFullScanRemovableDriveScanning
+
+<!-- AllowFullScanRemovableDriveScanning-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- AllowFullScanRemovableDriveScanning-Applicability-End -->
+
+<!-- AllowFullScanRemovableDriveScanning-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Defender/AllowFullScanRemovableDriveScanning
+```
+<!-- AllowFullScanRemovableDriveScanning-OmaUri-End -->
+
+<!-- AllowFullScanRemovableDriveScanning-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to manage whether or not to scan for malicious software and unwanted software in the contents of removable drives, such as USB flash drives, when running a full scan.
+
+- If you enable this setting, removable drives will be scanned during any type of scan.
+
+- If you disable or don't configure this setting, removable drives won't be scanned during a full scan. Removable drives may still be scanned during quick scan and custom scan.
+<!-- AllowFullScanRemovableDriveScanning-Description-End -->
+
+<!-- AllowFullScanRemovableDriveScanning-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowFullScanRemovableDriveScanning-Editable-End -->
+
+<!-- AllowFullScanRemovableDriveScanning-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowFullScanRemovableDriveScanning-DFProperties-End -->
+
+<!-- AllowFullScanRemovableDriveScanning-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. Turns off scanning on removable drives. |
+| 1 (Default) | Allowed. Scans removable drives. |
+<!-- AllowFullScanRemovableDriveScanning-AllowedValues-End -->
+
+<!-- AllowFullScanRemovableDriveScanning-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Scan_DisableRemovableDriveScanning |
+| Friendly Name | Scan removable drives |
+| Location | Computer Configuration |
+| Path | Windows Components > Microsoft Defender Antivirus > Scan |
+| Registry Key Name | Software\Policies\Microsoft\Windows Defender\Scan |
+| Registry Value Name | DisableRemovableDriveScanning |
+| ADMX File Name | WindowsDefender.admx |
+<!-- AllowFullScanRemovableDriveScanning-GpMapping-End -->
+
+<!-- AllowFullScanRemovableDriveScanning-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowFullScanRemovableDriveScanning-Examples-End -->
+
+<!-- AllowFullScanRemovableDriveScanning-End -->
+
+<!-- AllowIntrusionPreventionSystem-Begin -->
+## AllowIntrusionPreventionSystem
+
 > [!NOTE]
-> This policy is only enforced in Windows 10 for desktop.
+> This policy is deprecated and may be removed in a future release.
 
-Allows or disallows scanning of email.
+<!-- AllowIntrusionPreventionSystem-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- AllowIntrusionPreventionSystem-Applicability-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Turn on e-mail scanning*
--   GP name: *Scan_DisableEmailScanning*
--   GP path: *Windows Components/Microsoft Defender Antivirus/Scan*
--   GP ADMX file name: *WindowsDefender.admx*
+<!-- AllowIntrusionPreventionSystem-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Defender/AllowIntrusionPreventionSystem
+```
+<!-- AllowIntrusionPreventionSystem-OmaUri-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- AllowIntrusionPreventionSystem-Description-Begin -->
+<!-- Description-Source-DDF -->
+Allows or disallows Windows Defender Intrusion Prevention functionality.
+<!-- AllowIntrusionPreventionSystem-Description-End -->
 
--   0 (default) – Not allowed. Turns off email scanning.
--   1 – Allowed. Turns on email scanning.
-
-<!--/SupportedValues-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="defender-allowfullscanonmappednetworkdrives"></a>**Defender/AllowFullScanOnMappedNetworkDrives**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- AllowIntrusionPreventionSystem-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> This policy is only enforced in Windows 10 for desktop.
+> Changes to this setting are not applied when [tamper protection][TAMPER-1] is enabled.
+<!-- AllowIntrusionPreventionSystem-Editable-End -->
 
-Allows or disallows a full scan of mapped network drives.
+<!-- AllowIntrusionPreventionSystem-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Run full scan on mapped network drives*
--   GP name: *Scan_DisableScanningMappedNetworkDrivesForFullScan*
--   GP path: *Windows Components/Microsoft Defender Antivirus/Scan*
--   GP ADMX file name: *WindowsDefender.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowIntrusionPreventionSystem-DFProperties-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- AllowIntrusionPreventionSystem-AllowedValues-Begin -->
+**Allowed values**:
 
--   0 (default) – Not allowed. Disables scanning on mapped network drives.
--   1 – Allowed. Scans mapped network drives.
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. |
+| 1 (Default) | Allowed. |
+<!-- AllowIntrusionPreventionSystem-AllowedValues-End -->
 
-<!--/SupportedValues-->
-<!--/Policy-->
+<!-- AllowIntrusionPreventionSystem-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowIntrusionPreventionSystem-Examples-End -->
 
-<hr/>
+<!-- AllowIntrusionPreventionSystem-End -->
 
-<!--Policy-->
-<a href="" id="defender-allowfullscanremovabledrivescanning"></a>**Defender/AllowFullScanRemovableDriveScanning**  
+<!-- AllowIOAVProtection-Begin -->
+## AllowIOAVProtection
 
-<!--SupportedSKUs-->
+<!-- AllowIOAVProtection-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- AllowIOAVProtection-Applicability-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AllowIOAVProtection-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Defender/AllowIOAVProtection
+```
+<!-- AllowIOAVProtection-OmaUri-End -->
 
+<!-- AllowIOAVProtection-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to configure scanning for all downloaded files and attachments.
 
-<!--/SupportedSKUs-->
-<hr/>
+- If you enable or don't configure this setting, scanning for all downloaded files and attachments will be enabled.
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+- If you disable this setting, scanning for all downloaded files and attachments will be disabled.
+<!-- AllowIOAVProtection-Description-End -->
 
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- AllowIOAVProtection-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> This policy is only enforced in Windows 10 for desktop.
+> Changes to this setting are not applied when [tamper protection][TAMPER-1] is enabled.
+<!-- AllowIOAVProtection-Editable-End -->
 
-Allows or disallows a full scan of removable drives. During a quick scan, removable drives may still be scanned.
+<!-- AllowIOAVProtection-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Scan removable drives*
--   GP name: *Scan_DisableRemovableDriveScanning*
--   GP path: *Windows Components/Microsoft Defender Antivirus/Scan*
--   GP ADMX file name: *WindowsDefender.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowIOAVProtection-DFProperties-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- AllowIOAVProtection-AllowedValues-Begin -->
+**Allowed values**:
 
--   0 – Not allowed. Turns off scanning on removable drives.
--   1 (default) – Allowed. Scans removable drives.
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. |
+| 1 (Default) | Allowed. |
+<!-- AllowIOAVProtection-AllowedValues-End -->
 
-<!--/SupportedValues-->
-<!--/Policy-->
+<!-- AllowIOAVProtection-GpMapping-Begin -->
+**Group policy mapping**:
 
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | RealtimeProtection_DisableIOAVProtection |
+| Friendly Name | Scan all downloaded files and attachments |
+| Location | Computer Configuration |
+| Path | Windows Components > Microsoft Defender Antivirus > Real-time Protection |
+| Registry Key Name | Software\Policies\Microsoft\Windows Defender\Real-Time Protection |
+| Registry Value Name | DisableIOAVProtection |
+| ADMX File Name | WindowsDefender.admx |
+<!-- AllowIOAVProtection-GpMapping-End -->
 
-<!--Policy-->
-<a href="" id="defender-allowioavprotection"></a>**Defender/AllowIOAVProtection**  
+<!-- AllowIOAVProtection-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowIOAVProtection-Examples-End -->
 
-<!--SupportedSKUs-->
+<!-- AllowIOAVProtection-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AllowOnAccessProtection-Begin -->
+## AllowOnAccessProtection
 
+<!-- AllowOnAccessProtection-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- AllowOnAccessProtection-Applicability-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowOnAccessProtection-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Defender/AllowOnAccessProtection
+```
+<!-- AllowOnAccessProtection-OmaUri-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowOnAccessProtection-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to configure monitoring for file and program activity.
 
-> [!div class = "checklist"]
-> * Device
+- If you enable or don't configure this setting, monitoring for file and program activity will be enabled.
 
-<hr/>
+- If you disable this setting, monitoring for file and program activity will be disabled.
+<!-- AllowOnAccessProtection-Description-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- AllowOnAccessProtection-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> This policy is only enforced in Windows 10 for desktop.
- 
-Allows or disallows Windows Defender IOAVP Protection functionality.
+> Changes to this setting are not applied when [tamper protection][TAMPER-1] is enabled.
+<!-- AllowOnAccessProtection-Editable-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Scan all downloaded files and attachments*
--   GP name: *RealtimeProtection_DisableIOAVProtection*
--   GP path: *Windows Components/Microsoft Defender Antivirus/Real-time Protection*
--   GP ADMX file name: *WindowsDefender.admx*
+<!-- AllowOnAccessProtection-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowOnAccessProtection-DFProperties-End -->
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+<!-- AllowOnAccessProtection-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--/SupportedValues-->
-<!--/Policy-->
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. |
+| 1 (Default) | Allowed. |
+<!-- AllowOnAccessProtection-AllowedValues-End -->
 
-<hr/>
+<!-- AllowOnAccessProtection-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--Policy-->
-<a href="" id="defender-allowonaccessprotection"></a>**Defender/AllowOnAccessProtection**  
+| Name | Value |
+|:--|:--|
+| Name | RealtimeProtection_DisableOnAccessProtection |
+| Friendly Name | Monitor file and program activity on your computer |
+| Location | Computer Configuration |
+| Path | Windows Components > Microsoft Defender Antivirus > Real-time Protection |
+| Registry Key Name | Software\Policies\Microsoft\Windows Defender\Real-Time Protection |
+| Registry Value Name | DisableOnAccessProtection |
+| ADMX File Name | WindowsDefender.admx |
+<!-- AllowOnAccessProtection-GpMapping-End -->
 
-<!--SupportedSKUs-->
+<!-- AllowOnAccessProtection-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowOnAccessProtection-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AllowOnAccessProtection-End -->
 
+<!-- AllowRealtimeMonitoring-Begin -->
+## AllowRealtimeMonitoring
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowRealtimeMonitoring-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- AllowRealtimeMonitoring-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowRealtimeMonitoring-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Defender/AllowRealtimeMonitoring
+```
+<!-- AllowRealtimeMonitoring-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- AllowRealtimeMonitoring-Description-Begin -->
+<!-- Description-Source-DDF -->
+Allows or disallows Windows Defender Realtime Monitoring functionality.
+<!-- AllowRealtimeMonitoring-Description-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- AllowRealtimeMonitoring-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> This policy is only enforced in Windows 10 for desktop.
+> Changes to this setting are not applied when [tamper protection][TAMPER-1] is enabled.
+<!-- AllowRealtimeMonitoring-Editable-End -->
 
-Allows or disallows Windows Defender On Access Protection functionality.
+<!-- AllowRealtimeMonitoring-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Monitor file and program activity on your computer*
--   GP name: *RealtimeProtection_DisableOnAccessProtection*
--   GP path: *Windows Components/Microsoft Defender Antivirus/Real-time Protection*
--   GP ADMX file name: *WindowsDefender.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowRealtimeMonitoring-DFProperties-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- AllowRealtimeMonitoring-AllowedValues-Begin -->
+**Allowed values**:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. Turns off the real-time monitoring service. |
+| 1 (Default) | Allowed. Turns on and runs the real-time monitoring service. |
+<!-- AllowRealtimeMonitoring-AllowedValues-End -->
 
-<!--/SupportedValues-->
-<!--/Policy-->
+<!-- AllowRealtimeMonitoring-GpMapping-Begin -->
+**Group policy mapping**:
 
-> [!IMPORTANT]
-> AllowOnAccessProtection is officially being deprecated.
+| Name | Value |
+|:--|:--|
+| Name | DisableRealtimeMonitoring |
+| Friendly Name | Turn off real-time protection |
+| Location | Computer Configuration |
+| Path | Windows Components > Microsoft Defender Antivirus > Real-time Protection |
+| Registry Key Name | Software\Policies\Microsoft\Windows Defender\Real-Time Protection |
+| Registry Value Name | DisableRealtimeMonitoring |
+| ADMX File Name | WindowsDefender.admx |
+<!-- AllowRealtimeMonitoring-GpMapping-End -->
 
-<hr/>
+<!-- AllowRealtimeMonitoring-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowRealtimeMonitoring-Examples-End -->
 
-<!--Policy-->
-<a href="" id="defender-allowrealtimemonitoring"></a>**Defender/AllowRealtimeMonitoring**  
+<!-- AllowRealtimeMonitoring-End -->
 
-<!--SupportedSKUs-->
+<!-- AllowScanningNetworkFiles-Begin -->
+## AllowScanningNetworkFiles
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AllowScanningNetworkFiles-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- AllowScanningNetworkFiles-Applicability-End -->
 
+<!-- AllowScanningNetworkFiles-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Defender/AllowScanningNetworkFiles
+```
+<!-- AllowScanningNetworkFiles-OmaUri-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowScanningNetworkFiles-Description-Begin -->
+<!-- Description-Source-Manual-Forced -->
+<!-- AllowScanningNetworkFiles-Description-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowScanningNetworkFiles-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+This policy setting allows you to configure real-time scanning for files that are accessed over the network. It is recommended to enable this setting.
 
-> [!div class = "checklist"]
-> * Device
+- If you enable this setting or do not configure this setting, network files will be scanned.
+- If you disable this setting, network files will not be scanned.
+<!-- AllowScanningNetworkFiles-Editable-End -->
 
-<hr/>
+<!-- AllowScanningNetworkFiles-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Scope-->
-<!--Description-->
-> [!NOTE]
-> This policy is only enforced in Windows 10 for desktop.
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- AllowScanningNetworkFiles-DFProperties-End -->
 
-Allows or disallows Windows Defender real-time Monitoring functionality.
+<!-- AllowScanningNetworkFiles-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Turn off real-time protection*
--   GP name: *DisableRealtimeMonitoring*
--   GP path: *Windows Components/Microsoft Defender Antivirus/Real-time Protection*
--   GP ADMX file name: *WindowsDefender.admx*
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Not allowed. Turns off scanning of network files. |
+| 1 | Allowed. Scans network files. |
+<!-- AllowScanningNetworkFiles-AllowedValues-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- AllowScanningNetworkFiles-GpMapping-Begin -->
+**Group policy mapping**:
 
--   0 – Not allowed. Turns off the real-time monitoring service.
--   1 (default) – Allowed. Turns on and runs the real-time monitoring service.
+| Name | Value |
+|:--|:--|
+| Name | Scan_DisableScanningNetworkFiles |
+| Friendly Name | Scan network files |
+| Location | Computer Configuration |
+| Path | Windows Components > Microsoft Defender Antivirus > Scan |
+| Registry Key Name | Software\Policies\Microsoft\Windows Defender\Scan |
+| Registry Value Name | DisableScanningNetworkFiles |
+| ADMX File Name | WindowsDefender.admx |
+<!-- AllowScanningNetworkFiles-GpMapping-End -->
 
-<!--/SupportedValues-->
-<!--/Policy-->
+<!-- AllowScanningNetworkFiles-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowScanningNetworkFiles-Examples-End -->
 
-<hr/>
+<!-- AllowScanningNetworkFiles-End -->
 
-<!--Policy-->
-<a href="" id="defender-allowscanningnetworkfiles"></a>**Defender/AllowScanningNetworkFiles**  
+<!-- AllowScriptScanning-Begin -->
+## AllowScriptScanning
 
-<!--SupportedSKUs-->
+<!-- AllowScriptScanning-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- AllowScriptScanning-Applicability-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AllowScriptScanning-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Defender/AllowScriptScanning
+```
+<!-- AllowScriptScanning-OmaUri-End -->
 
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-> [!NOTE]
-> This policy is only enforced in Windows 10 for desktop.
-
-Allows or disallows a scanning of network files.
-
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Scan network files*
--   GP name: *Scan_DisableScanningNetworkFiles*
--   GP path: *Windows Components/Microsoft Defender Antivirus/Scan*
--   GP ADMX file name: *WindowsDefender.admx*
-
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
-
--   0 – Not allowed. Turns off scanning of network files.
--   1 (default) – Allowed. Scans network files.
-
-<!--/SupportedValues-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="defender-allowscriptscanning"></a>**Defender/AllowScriptScanning**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-> [!NOTE]
-> This policy is only enforced in Windows 10 for desktop.
-
+<!-- AllowScriptScanning-Description-Begin -->
+<!-- Description-Source-DDF -->
 Allows or disallows Windows Defender Script Scanning functionality.
+<!-- AllowScriptScanning-Description-End -->
 
-<!--/Description-->
-<!--SupportedValues-->
-The following list shows the supported values:
-
--   0 – Not allowed.
--   1 (default) – Allowed.
-
-<!--/SupportedValues-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="defender-allowuseruiaccess"></a>**Defender/AllowUserUIAccess**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- AllowScriptScanning-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> This policy is only enforced in Windows 10 for desktop.
+> Changes to this setting are not applied when [tamper protection][TAMPER-1] is enabled.
+<!-- AllowScriptScanning-Editable-End -->
+
+<!-- AllowScriptScanning-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowScriptScanning-DFProperties-End -->
+
+<!-- AllowScriptScanning-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. |
+| 1 (Default) | Allowed. |
+<!-- AllowScriptScanning-AllowedValues-End -->
+
+<!-- AllowScriptScanning-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowScriptScanning-Examples-End -->
+
+<!-- AllowScriptScanning-End -->
 
-Allows or disallows user access to the Windows Defender UI. I disallowed, all Windows Defender notifications will also be suppressed.
+<!-- AllowUserUIAccess-Begin -->
+## AllowUserUIAccess
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Enable headless UI mode*
--   GP name: *UX_Configuration_UILockdown*
--   GP path: *Windows Components/Microsoft Defender Antivirus/Client Interface*
--   GP ADMX file name: *WindowsDefender.admx*
+<!-- AllowUserUIAccess-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- AllowUserUIAccess-Applicability-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- AllowUserUIAccess-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Defender/AllowUserUIAccess
+```
+<!-- AllowUserUIAccess-OmaUri-End -->
 
--   0 – Not allowed. Prevents users from accessing UI.
--   1 (default) – Allowed. Lets users access UI.
+<!-- AllowUserUIAccess-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to configure whether or not to display AM UI to the users.
 
-<!--/SupportedValues-->
-<!--/Policy-->
+If you enable this setting AM UI won't be available to users.
+<!-- AllowUserUIAccess-Description-End -->
 
-<hr/>
+<!-- AllowUserUIAccess-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowUserUIAccess-Editable-End -->
+
+<!-- AllowUserUIAccess-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowUserUIAccess-DFProperties-End -->
+
+<!-- AllowUserUIAccess-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. Prevents users from accessing UI. |
+| 1 (Default) | Allowed. Lets users access UI. |
+<!-- AllowUserUIAccess-AllowedValues-End -->
+
+<!-- AllowUserUIAccess-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | UX_Configuration_UILockdown |
+| Friendly Name | Enable headless UI mode |
+| Location | Computer Configuration |
+| Path | Windows Components > Microsoft Defender Antivirus > Client Interface |
+| Registry Key Name | Software\Policies\Microsoft\Windows Defender\UX Configuration |
+| Registry Value Name | UILockdown |
+| ADMX File Name | WindowsDefender.admx |
+<!-- AllowUserUIAccess-GpMapping-End -->
+
+<!-- AllowUserUIAccess-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowUserUIAccess-Examples-End -->
+
+<!-- AllowUserUIAccess-End -->
+
+<!-- AttackSurfaceReductionOnlyExclusions-Begin -->
+## AttackSurfaceReductionOnlyExclusions
+
+<!-- AttackSurfaceReductionOnlyExclusions-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- AttackSurfaceReductionOnlyExclusions-Applicability-End -->
 
-<!--Policy-->
-<a href="" id="defender-attacksurfacereductiononlyexclusions"></a>**Defender/AttackSurfaceReductionOnlyExclusions**  
+<!-- AttackSurfaceReductionOnlyExclusions-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionOnlyExclusions
+```
+<!-- AttackSurfaceReductionOnlyExclusions-OmaUri-End -->
 
-<!--SupportedSKUs-->
+<!-- AttackSurfaceReductionOnlyExclusions-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Exclude files and paths from Attack Surface Reduction (ASR) rules.
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+Enabled:
 
+Specify the folders or files and resources that should be excluded from ASR rules in the Options section.
 
-<!--/SupportedSKUs-->
-<hr/>
+Enter each rule on a new line as a name-value pair:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+- Name column: Enter a folder path or a fully qualified resource name. For example, "C:\Windows" will exclude all files in that directory. "C:\Windows\App.exe" will exclude only that specific file in that specific folder
+- Value column: Enter "0" for each item.
 
-> [!div class = "checklist"]
-> * Device
+Disabled:
 
-<hr/>
+No exclusions will be applied to the ASR rules.
 
-<!--/Scope-->
-<!--Description-->
-> [!NOTE]
-> This policy is only enforced in Windows 10 for desktop.
+Not configured:
 
-This policy setting allows you to prevent Attack Surface reduction rules from matching on files under the paths specified or for the fully qualified resources specified. Paths should be added under the Options for this setting. Each entry must be listed as a name value pair, where the name should be a string representation of a path or a fully qualified resource name. As an example, a path might be defined as: "c:\Windows" to exclude all files in this directory. A fully qualified resource name might be defined as: "C:\Windows\App.exe".
+Same as Disabled.
 
-Value type is string.
+You can configure ASR rules in the Configure Attack Surface Reduction rules GP setting.
+<!-- AttackSurfaceReductionOnlyExclusions-Description-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Exclude files and paths from Attack Surface Reduction Rules*
--   GP name: *ExploitGuard_ASR_ASROnlyExclusions*
--   GP element: *ExploitGuard_ASR_ASROnlyExclusions*
--   GP path: *Windows Components/Microsoft Defender Antivirus/Windows Defender Exploit Guard/Attack Surface Reduction*
--   GP ADMX file name: *WindowsDefender.admx*
+<!-- AttackSurfaceReductionOnlyExclusions-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AttackSurfaceReductionOnlyExclusions-Editable-End -->
 
-<!--/ADMXMapped-->
-<!--/Policy-->
+<!-- AttackSurfaceReductionOnlyExclusions-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `|`) |
+<!-- AttackSurfaceReductionOnlyExclusions-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="defender-attacksurfacereductionrules"></a>**Defender/AttackSurfaceReductionRules**  
+<!-- AttackSurfaceReductionOnlyExclusions-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | ExploitGuard_ASR_ASROnlyExclusions |
+| Friendly Name | Exclude files and paths from Attack Surface Reduction Rules |
+| Element Name | Exclusions from ASR rules. |
+| Location | Computer Configuration |
+| Path | Windows Components > Microsoft Defender Antivirus > Microsoft Defender Exploit Guard > Attack Surface Reduction |
+| Registry Key Name | Software\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\ASR |
+| ADMX File Name | WindowsDefender.admx |
+<!-- AttackSurfaceReductionOnlyExclusions-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AttackSurfaceReductionOnlyExclusions-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AttackSurfaceReductionOnlyExclusions-Examples-End -->
 
+<!-- AttackSurfaceReductionOnlyExclusions-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AttackSurfaceReductionRules-Begin -->
+## AttackSurfaceReductionRules
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AttackSurfaceReductionRules-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- AttackSurfaceReductionRules-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- AttackSurfaceReductionRules-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionRules
+```
+<!-- AttackSurfaceReductionRules-OmaUri-End -->
 
-<hr/>
+<!-- AttackSurfaceReductionRules-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Set the state for each Attack Surface Reduction (ASR) rule.
 
-<!--/Scope-->
-<!--Description-->
-> [!NOTE]
-> This policy is only enforced in Windows 10 for desktop.
+After enabling this setting, you can set each rule to the following in the Options section:
 
-This policy setting enables setting the state (Block/Audit/Off) for each attack surface reduction (ASR) rule. Each ASR rule listed can be set to one of the following states (Block/Audit/Off). The ASR rule ID and state should be added under the Options for this setting. Each entry must be listed as a name value pair. The name defines a valid ASR rule ID, while the value contains the status ID indicating the status of the rule.
+- Block: the rule will be applied
+- Audit Mode: if the rule would normally cause an event, then it will be recorded (although the rule won't actually be applied)
+- Off: the rule won't be applied
+- Not Configured: the rule is enabled with default values
+- Warn: the rule will be applied and the end-user will have the option to bypass the block.
 
-For more information about ASR rule ID and status ID, see [Enable Attack Surface Reduction](/windows/threat-protection/windows-defender-exploit-guard/enable-attack-surface-reduction).
+Unless the ASR rule is disabled, a subsample of audit events are collected for ASR rules with the value of not configured.
 
-Value type is string.
+Enabled:
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Configure Attack Surface Reduction rules*
--   GP name: *ExploitGuard_ASR_Rules*
--   GP element: *ExploitGuard_ASR_Rules*
--   GP path: *Windows Components/Microsoft Defender Antivirus/Windows Defender Exploit Guard/Attack Surface Reduction*
--   GP ADMX file name: *WindowsDefender.admx*
+Specify the state for each ASR rule under the Options section for this setting.
 
-<!--/ADMXMapped-->
-<!--/Policy-->
+Enter each rule on a new line as a name-value pair:
 
-<hr/>
+- Name column: Enter a valid ASR rule ID
+- Value column: Enter the status ID that relates to state you want to specify for the associated rule.
 
-<!--Policy-->
-<a href="" id="defender-avgcpuloadfactor"></a>**Defender/AvgCPULoadFactor**  
+The following status IDs are permitted under the value column:
 
-<!--SupportedSKUs-->
+- 1 (Block)
+- 0 (Off)
+- 2 (Audit)
+- 5 (Not Configured)
+- 6 (Warn)
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+Example:
 
+xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+0
+xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+1
+xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+2
 
-<!--/SupportedSKUs-->
-<hr/>
+Disabled:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+No ASR rules will be configured.
 
-> [!div class = "checklist"]
-> * Device
+Not configured:
 
-<hr/>
+Same as Disabled.
 
-<!--/Scope-->
-<!--Description-->
-> [!NOTE]
-> This policy is only enforced in Windows 10 for desktop.
- 
-Represents the average CPU load factor for the Windows Defender scan (in percent).
+You can exclude folders or files in the "Exclude files and paths from Attack Surface Reduction Rules" GP setting.
+<!-- AttackSurfaceReductionRules-Description-End -->
 
-The default value is 50.
+<!-- AttackSurfaceReductionRules-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AttackSurfaceReductionRules-Editable-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Specify the maximum percentage of CPU utilization during a scan*
--   GP name: *Scan_AvgCPULoadFactor*
--   GP element: *Scan_AvgCPULoadFactor*
--   GP path: *Windows Components/Microsoft Defender Antivirus/Scan*
--   GP ADMX file name: *WindowsDefender.admx*
+<!-- AttackSurfaceReductionRules-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-Valid values: 0–100
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AttackSurfaceReductionRules-DFProperties-End -->
 
-<!--/SupportedValues-->
-<!--/Policy-->
+<!-- AttackSurfaceReductionRules-GpMapping-Begin -->
+**Group policy mapping**:
 
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | ExploitGuard_ASR_Rules |
+| Friendly Name | Configure Attack Surface Reduction rules |
+| Element Name | Set the state for each ASR rule. |
+| Location | Computer Configuration |
+| Path | Windows Components > Microsoft Defender Antivirus > Microsoft Defender Exploit Guard > Attack Surface Reduction |
+| Registry Key Name | Software\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\ASR |
+| ADMX File Name | WindowsDefender.admx |
+<!-- AttackSurfaceReductionRules-GpMapping-End -->
 
-<!--Policy-->
-<a href="" id="defender-checkforsignaturesbeforerunningscan"></a>**Defender/CheckForSignaturesBeforeRunningScan**  
+<!-- AttackSurfaceReductionRules-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AttackSurfaceReductionRules-Examples-End -->
 
-<!--SupportedSKUs-->
+<!-- AttackSurfaceReductionRules-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AvgCPULoadFactor-Begin -->
+## AvgCPULoadFactor
 
+<!-- AvgCPULoadFactor-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- AvgCPULoadFactor-Applicability-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AvgCPULoadFactor-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Defender/AvgCPULoadFactor
+```
+<!-- AvgCPULoadFactor-OmaUri-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AvgCPULoadFactor-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to configure the maximum percentage CPU utilization permitted during a scan. Valid values for this setting are a percentage represented by the integers 5 to 100. A value of 0 indicates that there should be no throttling of CPU utilization. The default value is 50.
 
-> [!div class = "checklist"]
-> * Device
+- If you enable this setting, CPU utilization won't exceed the percentage specified.
 
-<hr/>
+- If you disable or don't configure this setting, CPU utilization won't exceed the default value.
+<!-- AvgCPULoadFactor-Description-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to manage whether a check for new virus and spyware definitions will occur before running a scan. 
+<!-- AvgCPULoadFactor-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AvgCPULoadFactor-Editable-End -->
 
-This setting applies to scheduled scans and the command line "mpcmdrun -SigUpdate", but it has no effect on scans initiated manually from the user interface.
+<!-- AvgCPULoadFactor-DFProperties-Begin -->
+**Description framework properties**:
 
-If you enable this setting, a check for new definitions will occur before running a scan.
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-100]` |
+| Default Value  | 50 |
+<!-- AvgCPULoadFactor-DFProperties-End -->
 
-If you disable this setting or don't configure this setting, the scan will start using the existing definitions.
+<!-- AvgCPULoadFactor-GpMapping-Begin -->
+**Group policy mapping**:
 
-Supported values:
+| Name | Value |
+|:--|:--|
+| Name | Scan_AvgCPULoadFactor |
+| Friendly Name | Specify the maximum percentage of CPU utilization during a scan |
+| Element Name | Specify the maximum percentage of CPU utilization during a scan. |
+| Location | Computer Configuration |
+| Path | Windows Components > Microsoft Defender Antivirus > Scan |
+| Registry Key Name | Software\Policies\Microsoft\Windows Defender\Scan |
+| ADMX File Name | WindowsDefender.admx |
+<!-- AvgCPULoadFactor-GpMapping-End -->
 
-- 0 (default) - Disabled 
-- 1 - Enabled
+<!-- AvgCPULoadFactor-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AvgCPULoadFactor-Examples-End -->
 
-OMA-URI Path: ./Vendor/MSFT/Policy/Config/Defender/CheckForSignaturesBeforeRunningScan
+<!-- AvgCPULoadFactor-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Check for the latest virus and spyware definitions before running a scheduled scan*
--   GP name: *CheckForSignaturesBeforeRunningScan*
--   GP element: *CheckForSignaturesBeforeRunningScan*
--   GP path: *Windows Components/Microsoft Defender Antivirus/Scan*
--   GP ADMX file name: *WindowsDefender.admx*
+<!-- CheckForSignaturesBeforeRunningScan-Begin -->
+## CheckForSignaturesBeforeRunningScan
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
+<!-- CheckForSignaturesBeforeRunningScan-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
+<!-- CheckForSignaturesBeforeRunningScan-Applicability-End -->
 
-<!--/SupportedValues-->
-<!--Example-->
+<!-- CheckForSignaturesBeforeRunningScan-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Defender/CheckForSignaturesBeforeRunningScan
+```
+<!-- CheckForSignaturesBeforeRunningScan-OmaUri-End -->
 
-<!--/Example-->
-<!--Validation-->
+<!-- CheckForSignaturesBeforeRunningScan-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to manage whether a check for new virus and spyware security intelligence will occur before running a scan.
 
-<!--/Validation-->
-<!--/Policy-->
+This setting applies to scheduled scans, but it has no effect on scans initiated manually from the user interface or to the ones started from the command line using "mpcmdrun -Scan".
 
-<hr/>
+- If you enable this setting, a check for new security intelligence will occur before running a scan.
 
-<!--Policy-->
-<a href="" id="defender-cloudblocklevel"></a>**Defender/CloudBlockLevel**  
+- If you disable this setting or don't configure this setting, the scan will start using the existing security intelligence.
+<!-- CheckForSignaturesBeforeRunningScan-Description-End -->
 
-<!--SupportedSKUs-->
+<!-- CheckForSignaturesBeforeRunningScan-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- CheckForSignaturesBeforeRunningScan-Editable-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- CheckForSignaturesBeforeRunningScan-DFProperties-Begin -->
+**Description framework properties**:
 
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- CheckForSignaturesBeforeRunningScan-DFProperties-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- CheckForSignaturesBeforeRunningScan-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Disabled. |
+| 1 | Enabled. |
+<!-- CheckForSignaturesBeforeRunningScan-AllowedValues-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- CheckForSignaturesBeforeRunningScan-GpMapping-Begin -->
+**Group policy mapping**:
 
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | CheckForSignaturesBeforeRunningScan |
+| Friendly Name | Check for the latest virus and spyware security intelligence before running a scheduled scan |
+| Location | Computer Configuration |
+| Path | Windows Components > Microsoft Defender Antivirus > Scan |
+| Registry Key Name | Software\Policies\Microsoft\Windows Defender\Scan |
+| ADMX File Name | WindowsDefender.admx |
+<!-- CheckForSignaturesBeforeRunningScan-GpMapping-End -->
 
-<!--/Scope-->
-<!--Description-->
-> [!NOTE]
-> This policy is only enforced in Windows 10 for desktop.
+<!-- CheckForSignaturesBeforeRunningScan-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- CheckForSignaturesBeforeRunningScan-Examples-End -->
 
-This policy setting determines how aggressive Microsoft Defender Antivirus will be in blocking and scanning suspicious files. Value type is integer.
+<!-- CheckForSignaturesBeforeRunningScan-End -->
 
-If this setting is on, Microsoft Defender Antivirus will be more aggressive when identifying suspicious files to block and scan; otherwise, it will be less aggressive and therefore block and scan with less frequency. 
+<!-- CloudBlockLevel-Begin -->
+## CloudBlockLevel
+
+<!-- CloudBlockLevel-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- CloudBlockLevel-Applicability-End -->
+
+<!-- CloudBlockLevel-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Defender/CloudBlockLevel
+```
+<!-- CloudBlockLevel-OmaUri-End -->
+
+<!-- CloudBlockLevel-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting determines how aggressive Microsoft Defender Antivirus will be in blocking and scanning suspicious files.
+
+If this setting is on, Microsoft Defender Antivirus will be more aggressive when identifying suspicious files to block and scan; otherwise, it will be less aggressive and therefore block and scan with less frequency.
 
 For more information about specific values that are supported, see the Microsoft Defender Antivirus documentation site.
-      
+
 > [!NOTE]
 > This feature requires the "Join Microsoft MAPS" setting enabled in order to function.
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Select cloud protection level*
--   GP name: *MpEngine_MpCloudBlockLevel*
--   GP element: *MpCloudBlockLevel*
--   GP path: *Windows Components/Microsoft Defender Antivirus/MpEngine*
--   GP ADMX file name: *WindowsDefender.admx*
+Possible options are:
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+(0x0) Default Microsoft Defender Antivirus blocking level (0x1) Moderate Microsoft Defender Antivirus blocking level, delivers verdict only for high confidence detections (0x2) High blocking level - aggressively block unknowns while optimizing client performance (greater chance of false positives)
+(0x4) High+ blocking level - aggressively block unknowns and apply additional protection measures (may impact client performance)
+(0x6) Zero tolerance blocking level - block all unknown executables.
+<!-- CloudBlockLevel-Description-End -->
 
-- 0x0 - Default windows defender blocking level
-- 0x2 - High blocking level - aggressively block unknowns while optimizing client performance (greater chance of false positives)       
-- 0x4 - High+ blocking level – aggressively block unknowns and apply more protection measures (may impact  client performance)
-- 0x6 - Zero tolerance blocking level – block all unknown executables
+<!-- CloudBlockLevel-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- CloudBlockLevel-Editable-End -->
 
-<!--/SupportedValues-->
-<!--/Policy-->
+<!-- CloudBlockLevel-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- CloudBlockLevel-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="defender-cloudextendedtimeout"></a>**Defender/CloudExtendedTimeout**  
+<!-- CloudBlockLevel-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--SupportedSKUs-->
+| Value | Description |
+|:--|:--|
+| 0 (Default) | NotConfigured. |
+| 2 | High. |
+| 4 | HighPlus. |
+| 6 | ZeroTolerance. |
+<!-- CloudBlockLevel-AllowedValues-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- CloudBlockLevel-GpMapping-Begin -->
+**Group policy mapping**:
 
+| Name | Value |
+|:--|:--|
+| Name | MpEngine_MpCloudBlockLevel |
+| Friendly Name | Select cloud protection level |
+| Element Name | Select cloud blocking level. |
+| Location | Computer Configuration |
+| Path | Windows Components > Microsoft Defender Antivirus > MpEngine |
+| Registry Key Name | Software\Policies\Microsoft\Windows Defender\MpEngine |
+| ADMX File Name | WindowsDefender.admx |
+<!-- CloudBlockLevel-GpMapping-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- CloudBlockLevel-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- CloudBlockLevel-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- CloudBlockLevel-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- CloudExtendedTimeout-Begin -->
+## CloudExtendedTimeout
 
-<hr/>
+<!-- CloudExtendedTimeout-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- CloudExtendedTimeout-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- CloudExtendedTimeout-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Defender/CloudExtendedTimeout
+```
+<!-- CloudExtendedTimeout-OmaUri-End -->
+
+<!-- CloudExtendedTimeout-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This feature allows Microsoft Defender Antivirus to block a suspicious file for up to 60 seconds, and scan it in the cloud to make sure it's safe.
+
+The typical cloud check timeout is 10 seconds. To enable the extended cloud check feature, specify the extended time in seconds, up to an additional 50 seconds.
+
+For example, if the desired timeout is 60 seconds, specify 50 seconds in this setting, which will enable the extended cloud check feature, and will raise the total time to 60 seconds.
+
 > [!NOTE]
-> This policy is only enforced in Windows 10 for desktop.
+> This feature depends on three other MAPS settings - "Configure the 'Block at First Sight' feature; "Join Microsoft MAPS"; "Send file samples when further analysis is required" all need to be enabled.
+<!-- CloudExtendedTimeout-Description-End -->
 
-This feature allows Microsoft Defender Antivirus to block a suspicious file for up to 60 seconds, and scan it in the cloud to make sure it's safe. Value type is integer, range is 0 - 50.
+<!-- CloudExtendedTimeout-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- CloudExtendedTimeout-Editable-End -->
 
-The typical cloud check timeout is 10 seconds. To enable the extended cloud check feature, specify the extended time in seconds, up to an extra 50 seconds. 
+<!-- CloudExtendedTimeout-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-50]` |
+| Default Value  | 0 |
+<!-- CloudExtendedTimeout-DFProperties-End -->
 
-For example, if the desired timeout is 60 seconds, specify 50 seconds in this setting, which will enable the extended cloud check feature, and will raise the total time to 60 seconds. 
+<!-- CloudExtendedTimeout-GpMapping-Begin -->
+**Group policy mapping**:
 
-> [!NOTE]
-> This feature depends on three other MAPS settings the must all be enabled- "Configure the 'Block at First Sight' feature; "Join Microsoft MAPS"; "Send file samples when further analysis is required".
+| Name | Value |
+|:--|:--|
+| Name | MpEngine_MpBafsExtendedTimeout |
+| Friendly Name | Configure extended cloud check |
+| Element Name | Specify the extended cloud check time in seconds. |
+| Location | Computer Configuration |
+| Path | Windows Components > Microsoft Defender Antivirus > MpEngine |
+| Registry Key Name | Software\Policies\Microsoft\Windows Defender\MpEngine |
+| ADMX File Name | WindowsDefender.admx |
+<!-- CloudExtendedTimeout-GpMapping-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Configure extended cloud check*
--   GP name: *MpEngine_MpBafsExtendedTimeout*
--   GP element: *MpBafsExtendedTimeout*
--   GP path: *Windows Components/Microsoft Defender Antivirus/MpEngine*
--   GP ADMX file name: *WindowsDefender.admx*
+<!-- CloudExtendedTimeout-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- CloudExtendedTimeout-Examples-End -->
 
-<!--/ADMXMapped-->
-<!--/Policy-->
+<!-- CloudExtendedTimeout-End -->
 
-<hr/>
+<!-- ControlledFolderAccessAllowedApplications-Begin -->
+## ControlledFolderAccessAllowedApplications
 
-<!--Policy-->
-<a href="" id="defender-controlledfolderaccessallowedapplications"></a>**Defender/ControlledFolderAccessAllowedApplications**  
+<!-- ControlledFolderAccessAllowedApplications-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- ControlledFolderAccessAllowedApplications-Applicability-End -->
 
-<!--SupportedSKUs-->
+<!-- ControlledFolderAccessAllowedApplications-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Defender/ControlledFolderAccessAllowedApplications
+```
+<!-- ControlledFolderAccessAllowedApplications-OmaUri-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- ControlledFolderAccessAllowedApplications-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Add additional applications that should be considered "trusted" by controlled folder access.
 
+These applications are allowed to modify or delete files in controlled folder access folders.
 
-<!--/SupportedSKUs-->
-<hr/>
+Microsoft Defender Antivirus automatically determines which applications should be trusted. You can configure this setting to add additional applications.
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+Enabled:
 
-> [!div class = "checklist"]
-> * Device
+Specify additional allowed applications in the Options section..
 
-<hr/>
+Disabled:
 
-<!--/Scope-->
-<!--Description-->
-> [!NOTE]
-> This policy is only enforced in Windows 10 for desktop. The previous name was GuardedFoldersAllowedApplications and changed to ControlledFolderAccessAllowedApplications.
+No additional applications will be added to the trusted list.
 
-Added in Windows 10, version 1709. This policy setting allows user-specified applications to the controlled folder access feature. Adding an allowed application means the controlled folder access feature will allow the application to modify or delete content in certain folders such as My Documents. In most cases it won't be necessary to add entries. Microsoft Defender Antivirus will automatically detect and dynamically add applications that are friendly. Value type is string. Use the | as the substring separator.
+Not configured:
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Configure allowed applications*
--   GP name: *ExploitGuard_ControlledFolderAccess_AllowedApplications*
--   GP element: *ExploitGuard_ControlledFolderAccess_AllowedApplications*
--   GP path: *Windows Components/Microsoft Defender Antivirus/Windows Defender Exploit Guard/Controlled Folder Access*
--   GP ADMX file name: *WindowsDefender.admx*
+Same as Disabled.
 
-<!--/ADMXMapped-->
-<!--/Policy-->
+You can enable controlled folder access in the Configure controlled folder access GP setting.
 
-<hr/>
+Default system folders are automatically guarded, but you can add folders in the configure protected folders GP setting.
+<!-- ControlledFolderAccessAllowedApplications-Description-End -->
 
-<!--Policy-->
-<a href="" id="defender-controlledfolderaccessprotectedfolders"></a>**Defender/ControlledFolderAccessProtectedFolders**  
+<!-- ControlledFolderAccessAllowedApplications-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ControlledFolderAccessAllowedApplications-Editable-End -->
 
-<!--SupportedSKUs-->
+<!-- ControlledFolderAccessAllowedApplications-DFProperties-Begin -->
+**Description framework properties**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `|`) |
+<!-- ControlledFolderAccessAllowedApplications-DFProperties-End -->
 
+<!-- ControlledFolderAccessAllowedApplications-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | ExploitGuard_ControlledFolderAccess_AllowedApplications |
+| Friendly Name | Configure allowed applications |
+| Element Name | Enter the applications that should be trusted. |
+| Location | Computer Configuration |
+| Path | Windows Components > Microsoft Defender Antivirus > Microsoft Defender Exploit Guard > Controlled Folder Access |
+| Registry Key Name | Software\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\Controlled Folder Access |
+| ADMX File Name | WindowsDefender.admx |
+<!-- ControlledFolderAccessAllowedApplications-GpMapping-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ControlledFolderAccessAllowedApplications-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ControlledFolderAccessAllowedApplications-Examples-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- ControlledFolderAccessAllowedApplications-End -->
 
-<hr/>
+<!-- ControlledFolderAccessProtectedFolders-Begin -->
+## ControlledFolderAccessProtectedFolders
 
-<!--/Scope-->
-<!--Description-->
-> [!NOTE]
-> This policy is only enforced in Windows 10 for desktop. The previous name was GuardedFoldersList and changed to ControlledFolderAccessProtectedFolders.
+<!-- ControlledFolderAccessProtectedFolders-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- ControlledFolderAccessProtectedFolders-Applicability-End -->
 
-This policy setting allows adding user-specified folder locations to the controlled folder access feature. These folders will complement the system defined folders such as My Documents and My Pictures. The list of system folders will be displayed in the user interface and can't be changed. Value type is string. Use the | as the substring separator.
+<!-- ControlledFolderAccessProtectedFolders-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Defender/ControlledFolderAccessProtectedFolders
+```
+<!-- ControlledFolderAccessProtectedFolders-OmaUri-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Configure protected folders*
--   GP name: *ExploitGuard_ControlledFolderAccess_ProtectedFolders*
--   GP element: *ExploitGuard_ControlledFolderAccess_ProtectedFolders*
--   GP path: *Windows Components/Microsoft Defender Antivirus/Windows Defender Exploit Guard/Controlled Folder Access*
--   GP ADMX file name: *WindowsDefender.admx*
+<!-- ControlledFolderAccessProtectedFolders-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Specify additional folders that should be guarded by the Controlled folder access feature.
 
-<!--/ADMXMapped-->
-<!--/Policy-->
+Files in these folders can't be modified or deleted by untrusted applications.
 
-<hr/>
+Default system folders are automatically protected. You can configure this setting to add additional folders.
 
-<!--Policy-->
-<a href="" id="defender-daystoretaincleanedmalware"></a>**Defender/DaysToRetainCleanedMalware**  
+The list of default system folders that are protected is shown in Windows Security.
 
-<!--SupportedSKUs-->
+Enabled:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+Specify additional folders that should be protected in the Options section.
 
+Disabled:
 
-<!--/SupportedSKUs-->
-<hr/>
+No additional folders will be protected.
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+Not configured:
 
-> [!div class = "checklist"]
-> * Device
+Same as Disabled.
 
-<hr/>
+You can enable controlled folder access in the Configure controlled folder access GP setting.
 
-<!--/Scope-->
-<!--Description-->
-> [!NOTE]
-> This policy is only enforced in Windows 10 for desktop.
- 
-Time period (in days) that quarantine items will be stored on the system.
+Microsoft Defender Antivirus automatically determines which applications can be trusted. You can add additional trusted applications in the Configure allowed applications GP setting.
+<!-- ControlledFolderAccessProtectedFolders-Description-End -->
 
-The default value is 0, which keeps items in quarantine, and doesn't automatically remove them.
+<!-- ControlledFolderAccessProtectedFolders-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ControlledFolderAccessProtectedFolders-Editable-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Configure removal of items from Quarantine folder*
--   GP name: *Quarantine_PurgeItemsAfterDelay*
--   GP element: *Quarantine_PurgeItemsAfterDelay*
--   GP path: *Windows Components/Microsoft Defender Antivirus/Quarantine*
--   GP ADMX file name: *WindowsDefender.admx*
+<!-- ControlledFolderAccessProtectedFolders-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-Valid values: 0–90
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `|`) |
+<!-- ControlledFolderAccessProtectedFolders-DFProperties-End -->
 
-<!--/SupportedValues-->
-<!--/Policy-->
+<!-- ControlledFolderAccessProtectedFolders-GpMapping-Begin -->
+**Group policy mapping**:
 
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | ExploitGuard_ControlledFolderAccess_ProtectedFolders |
+| Friendly Name | Configure protected folders |
+| Element Name | Enter the folders that should be guarded. |
+| Location | Computer Configuration |
+| Path | Windows Components > Microsoft Defender Antivirus > Microsoft Defender Exploit Guard > Controlled Folder Access |
+| Registry Key Name | Software\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\Controlled Folder Access |
+| ADMX File Name | WindowsDefender.admx |
+<!-- ControlledFolderAccessProtectedFolders-GpMapping-End -->
 
-<!--Policy-->
-<a href="" id="defender-disablecatchupfullscan"></a>**Defender/DisableCatchupFullScan**  
+<!-- ControlledFolderAccessProtectedFolders-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ControlledFolderAccessProtectedFolders-Examples-End -->
 
-<!--SupportedSKUs-->
+<!-- ControlledFolderAccessProtectedFolders-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- DaysToRetainCleanedMalware-Begin -->
+## DaysToRetainCleanedMalware
 
+<!-- DaysToRetainCleanedMalware-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- DaysToRetainCleanedMalware-Applicability-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DaysToRetainCleanedMalware-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Defender/DaysToRetainCleanedMalware
+```
+<!-- DaysToRetainCleanedMalware-OmaUri-End -->
+
+<!-- DaysToRetainCleanedMalware-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting defines the number of days items should be kept in the Quarantine folder before being removed.
+
+- If you enable this setting, items will be removed from the Quarantine folder after the number of days specified.
+
+- If you disable or don't configure this setting, items will be kept in the quarantine folder indefinitely and won't be automatically removed.
+<!-- DaysToRetainCleanedMalware-Description-End -->
+
+<!-- DaysToRetainCleanedMalware-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DaysToRetainCleanedMalware-Editable-End -->
+
+<!-- DaysToRetainCleanedMalware-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-90]` |
+| Default Value  | 0 |
+<!-- DaysToRetainCleanedMalware-DFProperties-End -->
+
+<!-- DaysToRetainCleanedMalware-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Quarantine_PurgeItemsAfterDelay |
+| Friendly Name | Configure removal of items from Quarantine folder |
+| Element Name | Configure removal of items from Quarantine folder. |
+| Location | Computer Configuration |
+| Path | Windows Components > Microsoft Defender Antivirus > Quarantine |
+| Registry Key Name | Software\Policies\Microsoft\Windows Defender\Quarantine |
+| ADMX File Name | WindowsDefender.admx |
+<!-- DaysToRetainCleanedMalware-GpMapping-End -->
+
+<!-- DaysToRetainCleanedMalware-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DaysToRetainCleanedMalware-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DaysToRetainCleanedMalware-End -->
+
+<!-- DisableCatchupFullScan-Begin -->
+## DisableCatchupFullScan
+
+<!-- DisableCatchupFullScan-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
+<!-- DisableCatchupFullScan-Applicability-End -->
+
+<!-- DisableCatchupFullScan-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Defender/DisableCatchupFullScan
+```
+<!-- DisableCatchupFullScan-OmaUri-End -->
+
+<!-- DisableCatchupFullScan-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to configure catch-up scans for scheduled full scans. A catch-up scan is a scan that's initiated because a regularly scheduled scan was missed. Usually these scheduled scans are missed because the computer was turned off at the scheduled time.
+
+- If you enable this setting, catch-up scans for scheduled full scans will be turned on. If a computer is offline for two consecutive scheduled scans, a catch-up scan is started the next time someone logs on to the computer. If there is no scheduled scan configured, there will be no catch-up scan run.
+
+- If you disable or don't configure this setting, catch-up scans for scheduled full scans will be turned off.
+<!-- DisableCatchupFullScan-Description-End -->
+
+<!-- DisableCatchupFullScan-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableCatchupFullScan-Editable-End -->
+
+<!-- DisableCatchupFullScan-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- DisableCatchupFullScan-DFProperties-End -->
+
+<!-- DisableCatchupFullScan-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Enabled. |
+| 1 (Default) | Disabled. |
+<!-- DisableCatchupFullScan-AllowedValues-End -->
+
+<!-- DisableCatchupFullScan-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Scan_DisableCatchupFullScan |
+| Friendly Name | Turn on catch-up full scan |
+| Location | Computer Configuration |
+| Path | Windows Components > Microsoft Defender Antivirus > Scan |
+| Registry Key Name | Software\Policies\Microsoft\Windows Defender\Scan |
+| ADMX File Name | WindowsDefender.admx |
+<!-- DisableCatchupFullScan-GpMapping-End -->
+
+<!-- DisableCatchupFullScan-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableCatchupFullScan-Examples-End -->
+
+<!-- DisableCatchupFullScan-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- DisableCatchupQuickScan-Begin -->
+## DisableCatchupQuickScan
 
-<hr/>
+<!-- DisableCatchupQuickScan-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
+<!-- DisableCatchupQuickScan-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to configure catch-up scans for scheduled full scans. A catch-up scan is a scan that is initiated because a regularly scheduled scan was missed.  Usually these scheduled scans are missed because the computer was turned off at the scheduled time. 
+<!-- DisableCatchupQuickScan-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Defender/DisableCatchupQuickScan
+```
+<!-- DisableCatchupQuickScan-OmaUri-End -->
 
-If you enable this setting, catch-up scans for scheduled full scans will be turned on. If a computer is offline for two consecutive scheduled scans, a catch-up scan is started the next time someone signs in to the computer.  If there's no scheduled scan configured, there will be no catch-up scan run. 
+<!-- DisableCatchupQuickScan-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to configure catch-up scans for scheduled quick scans. A catch-up scan is a scan that's initiated because a regularly scheduled scan was missed. Usually these scheduled scans are missed because the computer was turned off at the scheduled time.
 
-If you disable or don't configure this setting, catch-up scans for scheduled full scans will be turned off.
+- If you enable this setting, catch-up scans for scheduled quick scans will be turned on. If a computer is offline for two consecutive scheduled scans, a catch-up scan is started the next time someone logs on to the computer. If there is no scheduled scan configured, there will be no catch-up scan run.
 
-Supported values:
+- If you disable or don't configure this setting, catch-up scans for scheduled quick scans will be turned off.
+<!-- DisableCatchupQuickScan-Description-End -->
 
-- 1 - Disabled (default)
-- 0 - Enabled 
+<!-- DisableCatchupQuickScan-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableCatchupQuickScan-Editable-End -->
 
-OMA-URI Path: ./Vendor/MSFT/Policy/Config/Defender/DisableCatchupFullScan
+<!-- DisableCatchupQuickScan-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Turn on catch-up full scan*
--   GP name: *Scan_DisableCatchupFullScan*
--   GP element: *Scan_DisableCatchupFullScan*
--   GP path: *Windows Components/Microsoft Defender Antivirus/Scan*
--   GP ADMX file name: *WindowsDefender.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- DisableCatchupQuickScan-DFProperties-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
+<!-- DisableCatchupQuickScan-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--/SupportedValues-->
-<!--Example-->
+| Value | Description |
+|:--|:--|
+| 0 | Enabled. |
+| 1 (Default) | Disabled. |
+<!-- DisableCatchupQuickScan-AllowedValues-End -->
 
-<!--/Example-->
-<!--Validation-->
+<!-- DisableCatchupQuickScan-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--/Validation-->
-<!--/Policy-->
+| Name | Value |
+|:--|:--|
+| Name | Scan_DisableCatchupQuickScan |
+| Friendly Name | Turn on catch-up quick scan |
+| Location | Computer Configuration |
+| Path | Windows Components > Microsoft Defender Antivirus > Scan |
+| Registry Key Name | Software\Policies\Microsoft\Windows Defender\Scan |
+| ADMX File Name | WindowsDefender.admx |
+<!-- DisableCatchupQuickScan-GpMapping-End -->
 
-<hr/>
+<!-- DisableCatchupQuickScan-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableCatchupQuickScan-Examples-End -->
 
-<!--Policy-->
-<a href="" id="defender-disablecatchupquickscan"></a>**Defender/DisableCatchupQuickScan**  
+<!-- DisableCatchupQuickScan-End -->
 
-<!--SupportedSKUs-->
+<!-- EnableControlledFolderAccess-Begin -->
+## EnableControlledFolderAccess
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- EnableControlledFolderAccess-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- EnableControlledFolderAccess-Applicability-End -->
 
+<!-- EnableControlledFolderAccess-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Defender/EnableControlledFolderAccess
+```
+<!-- EnableControlledFolderAccess-OmaUri-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- EnableControlledFolderAccess-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Enable or disable controlled folder access for untrusted applications. You can choose to block, audit, or allow attempts by untrusted apps to:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+- Modify or delete files in protected folders, such as the Documents folder
+- Write to disk sectors.
 
-> [!div class = "checklist"]
-> * Device
+You can also choose to only block or audit writes to disk sectors while still allowing the modification or deletion of files in protected folders.
 
-<hr/>
+Microsoft Defender Antivirus automatically determines which applications can be trusted. You can add additional trusted applications in the Configure allowed applications GP setting.
 
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to configure catch-up scans for scheduled quick scans. A catch-up scan is a scan that is initiated because a regularly scheduled scan was missed. Usually these scheduled scans are missed because the computer was turned off at the scheduled time. 
+Default system folders are automatically protected, but you can add folders in the Configure protected folders GP setting.
 
-If you enable this setting, catch-up scans for scheduled quick scans will be turned on. If a computer is offline for two consecutive scheduled scans, a catch-up scan is started the next time someone signs in to the computer. If there's no scheduled scan configured, there will be no catch-up scan run.
+Block:
 
-If you disable or don't configure this setting, catch-up scans for scheduled quick scans will be turned off.
+The following will be blocked:
 
-Supported values:
+- Attempts by untrusted apps to modify or delete files in protected folders
+- Attempts by untrusted apps to write to disk sectors.
 
-- 1 - Disabled (default)
-- 0 - Enabled 
+The Windows event log will record these blocks under Applications and Services Logs > Microsoft > Windows > Windows Defender > Operational > ID 1123.
 
-OMA-URI Path: ./Vendor/MSFT/Policy/Config/Defender/DisableCatchupQuickScan
+Disabled:
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Turn on catch-up quick scan*
--   GP name: *Scan_DisableCatchupQuickScan*
--   GP element: *Scan_DisableCatchupQuickScan*
--   GP path: *Windows Components/Microsoft Defender Antivirus/Scan*
--   GP ADMX file name: *WindowsDefender.admx*
+The following won't be blocked and will be allowed to run:
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
+- Attempts by untrusted apps to modify or delete files in protected folders
+- Attempts by untrusted apps to write to disk sectors.
 
-<!--/SupportedValues-->
-<!--Example-->
+These attempts won't be recorded in the Windows event log.
 
-<!--/Example-->
-<!--Validation-->
+Audit Mode:
 
-<!--/Validation-->
-<!--/Policy-->
+The following won't be blocked and will be allowed to run:
 
-<hr/>
+- Attempts by untrusted apps to modify or delete files in protected folders
+- Attempts by untrusted apps to write to disk sectors.
 
-<!--Policy-->
-<a href="" id="defender-enablecontrolledfolderaccess"></a>**Defender/EnableControlledFolderAccess**  
+The Windows event log will record these attempts under Applications and Services Logs > Microsoft > Windows > Windows Defender > Operational > ID 1124.
 
-<!--SupportedSKUs-->
+Block disk modification only:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+The following will be blocked:
 
+- Attempts by untrusted apps to write to disk sectors.
 
-<!--/SupportedSKUs-->
-<hr/>
+The Windows event log will record these attempts under Applications and Services Logs > Microsoft > Windows > Windows Defender > Operational > ID 1123.
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+The following won't be blocked and will be allowed to run:
 
-> [!div class = "checklist"]
-> * Device
+- Attempts by untrusted apps to modify or delete files in protected folders.
 
-<hr/>
+These attempts won't be recorded in the Windows event log.
 
-<!--/Scope-->
-<!--Description-->
-> [!NOTE]
-> This policy is only enforced in Windows 10 for desktop. The previous name was EnableGuardMyFolders  and changed to EnableControlledFolderAccess.
+Audit disk modification only:
 
-This policy enables setting the state (On/Off/Audit) for the controlled folder access feature. The controlled folder access feature removes modify and delete permissions from untrusted applications to certain folders such as My Documents. Value type is integer and the range is 0 - 2.
+The following won't be blocked and will be allowed to run:
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Configure Controlled folder access*
--   GP name: *ExploitGuard_ControlledFolderAccess_EnableControlledFolderAccess*
--   GP element: *ExploitGuard_ControlledFolderAccess_EnableControlledFolderAccess*
--   GP path: *Windows Components/Microsoft Defender Antivirus/Windows Defender Exploit Guard/Controlled Folder Access*
--   GP ADMX file name: *WindowsDefender.admx*
+- Attempts by untrusted apps to write to disk sectors
+- Attempts by untrusted apps to modify or delete files in protected folders.
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+Only attempts to write to protected disk sectors will be recorded in the Windows event log (under Applications and Services Logs > Microsoft > Windows > Windows Defender > Operational > ID 1124).
 
-- 0 (default) - Disabled
-- 1 - Enabled
-- 2 - Audit Mode
+Attempts to modify or delete files in protected folders won't be recorded.
 
-<!--/SupportedValues-->
-<!--/Policy-->
+Not configured:
 
-<hr/>
+Same as Disabled.
+<!-- EnableControlledFolderAccess-Description-End -->
 
-<!--Policy-->
-<a href="" id="defender-enablelowcpupriority"></a>**Defender/EnableLowCPUPriority**  
+<!-- EnableControlledFolderAccess-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- EnableControlledFolderAccess-Editable-End -->
 
-<!--SupportedSKUs-->
+<!-- EnableControlledFolderAccess-DFProperties-Begin -->
+**Description framework properties**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- EnableControlledFolderAccess-DFProperties-End -->
 
+<!-- EnableControlledFolderAccess-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Disabled. |
+| 1 | Enabled. |
+| 2 | Audit Mode. |
+| 3 | Block disk modification only. |
+| 4 | Audit disk modification only. |
+<!-- EnableControlledFolderAccess-AllowedValues-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- EnableControlledFolderAccess-GpMapping-Begin -->
+**Group policy mapping**:
 
-> [!div class = "checklist"]
-> * Device
+| Name | Value |
+|:--|:--|
+| Name | ExploitGuard_ControlledFolderAccess_EnableControlledFolderAccess |
+| Friendly Name | Configure Controlled folder access |
+| Element Name | Configure the guard my folders feature. |
+| Location | Computer Configuration |
+| Path | Windows Components > Microsoft Defender Antivirus > Microsoft Defender Exploit Guard > Controlled Folder Access |
+| Registry Key Name | Software\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\Controlled Folder Access |
+| ADMX File Name | WindowsDefender.admx |
+<!-- EnableControlledFolderAccess-GpMapping-End -->
 
-<hr/>
+<!-- EnableControlledFolderAccess-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- EnableControlledFolderAccess-Examples-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- EnableControlledFolderAccess-End -->
+
+<!-- EnableLowCPUPriority-Begin -->
+## EnableLowCPUPriority
+
+<!-- EnableLowCPUPriority-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
+<!-- EnableLowCPUPriority-Applicability-End -->
+
+<!-- EnableLowCPUPriority-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Defender/EnableLowCPUPriority
+```
+<!-- EnableLowCPUPriority-OmaUri-End -->
+
+<!-- EnableLowCPUPriority-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to enable or disable low CPU priority for scheduled scans.
 
-If you enable this setting, low CPU priority will be used during scheduled scans.
+- If you enable this setting, low CPU priority will be used during scheduled scans.
 
-If you disable or don't configure this setting, no changes will be made to CPU priority for scheduled scans.
+- If you disable or don't configure this setting, not changes will be made to CPU priority for scheduled scans.
+<!-- EnableLowCPUPriority-Description-End -->
 
-Supported values:
+<!-- EnableLowCPUPriority-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- EnableLowCPUPriority-Editable-End -->
 
-- 0 - Disabled (default)
-- 1 - Enabled 
+<!-- EnableLowCPUPriority-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Configure low CPU priority for scheduled scans*
--   GP name: *Scan_LowCpuPriority*
--   GP element: *Scan_LowCpuPriority*
--   GP path: *Windows Components/Microsoft Defender Antivirus/Scan*
--   GP ADMX file name: *WindowsDefender.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- EnableLowCPUPriority-DFProperties-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
+<!-- EnableLowCPUPriority-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--/SupportedValues-->
-<!--Example-->
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Disabled. |
+| 1 | Enabled. |
+<!-- EnableLowCPUPriority-AllowedValues-End -->
 
-<!--/Example-->
-<!--Validation-->
+<!-- EnableLowCPUPriority-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--/Validation-->
-<!--/Policy-->
+| Name | Value |
+|:--|:--|
+| Name | Scan_LowCpuPriority |
+| Friendly Name | Configure low CPU priority for scheduled scans |
+| Location | Computer Configuration |
+| Path | Windows Components > Microsoft Defender Antivirus > Scan |
+| Registry Key Name | Software\Policies\Microsoft\Windows Defender\Scan |
+| ADMX File Name | WindowsDefender.admx |
+<!-- EnableLowCPUPriority-GpMapping-End -->
 
-<hr/>
+<!-- EnableLowCPUPriority-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- EnableLowCPUPriority-Examples-End -->
 
-<!--Policy-->
-<a href="" id="defender-enablenetworkprotection"></a>**Defender/EnableNetworkProtection**  
+<!-- EnableLowCPUPriority-End -->
 
-<!--SupportedSKUs-->
+<!-- EnableNetworkProtection-Begin -->
+## EnableNetworkProtection
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- EnableNetworkProtection-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- EnableNetworkProtection-Applicability-End -->
 
+<!-- EnableNetworkProtection-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection
+```
+<!-- EnableNetworkProtection-OmaUri-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- EnableNetworkProtection-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Enable or disable Microsoft Defender Exploit Guard network protection to prevent employees from using any application to access dangerous domains that may host phishing scams, exploit-hosting sites, and other malicious content on the Internet.
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+Enabled:
 
-> [!div class = "checklist"]
-> * Device
+Specify the mode in the Options section:
 
-<hr/>
+-Block: Users and applications won't be able to access dangerous domains
+-Audit Mode: Users and applications can connect to dangerous domains, however if this feature would've blocked access if it were set to Block, then a record of the event will be in the event logs.
 
-<!--/Scope-->
-<!--Description-->
+Disabled:
+
+Users and applications won't be blocked from connecting to dangerous domains.
+
+Not configured:
+
+Same as Disabled.
+<!-- EnableNetworkProtection-Description-End -->
+
+<!-- EnableNetworkProtection-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- EnableNetworkProtection-Editable-End -->
+
+<!-- EnableNetworkProtection-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- EnableNetworkProtection-DFProperties-End -->
+
+<!-- EnableNetworkProtection-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Disabled. |
+| 1 | Enabled (block mode). |
+| 2 | Enabled (audit mode). |
+<!-- EnableNetworkProtection-AllowedValues-End -->
+
+<!-- EnableNetworkProtection-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | ExploitGuard_EnableNetworkProtection |
+| Friendly Name | Prevent users and apps from accessing dangerous websites |
+| Location | Computer Configuration |
+| Path | Windows Components > Microsoft Defender Antivirus > Microsoft Defender Exploit Guard > Network Protection |
+| Registry Key Name | Software\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\Network Protection |
+| ADMX File Name | WindowsDefender.admx |
+<!-- EnableNetworkProtection-GpMapping-End -->
+
+<!-- EnableNetworkProtection-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- EnableNetworkProtection-Examples-End -->
+
+<!-- EnableNetworkProtection-End -->
+
+<!-- ExcludedExtensions-Begin -->
+## ExcludedExtensions
+
+<!-- ExcludedExtensions-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- ExcludedExtensions-Applicability-End -->
+
+<!-- ExcludedExtensions-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Defender/ExcludedExtensions
+```
+<!-- ExcludedExtensions-OmaUri-End -->
+
+<!-- ExcludedExtensions-Description-Begin -->
+<!-- Description-Source-DDF-Forced -->
+Allows an administrator to specify a list of file type extensions to ignore during a scan. Each file type in the list must be separated by a |. For example, lib|obj.
+<!-- ExcludedExtensions-Description-End -->
+
+<!-- ExcludedExtensions-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> This policy is only enforced in Windows 10 for desktop.
+> To prevent unauthorized changes to exclusions, apply tamper protection. Tamper protection for exclusions only works when [certain conditions][TAMPER-2] are met.
+<!-- ExcludedExtensions-Editable-End -->
 
-This policy allows you to turn on network protection (block/audit) or off. Network protection protects employees using any app from accessing phishing scams, exploit-hosting sites, and malicious content on the Internet. This protection includes preventing third-party browsers from connecting to dangerous sites. Value type is integer.
+<!-- ExcludedExtensions-DFProperties-Begin -->
+**Description framework properties**:
 
-If you enable this setting, network protection is turned on and employees can't turn it off. Its behavior can be controlled by the following options: Block and Audit.
-If you enable this policy with the ""Block"" option, users/apps will be blocked from connecting to dangerous domains. You'll be able to see this activity in Windows Defender Security Center.
-If you enable this policy with the ""Audit"" option, users/apps won't be blocked from connecting to dangerous domains. However, you'll still see this activity in Windows Defender Security Center.
-If you disable this policy, users/apps won't be blocked from connecting to dangerous domains. You'll not see any network activity in Windows Defender Security Center.
-If you don't configure this policy, network blocking will be disabled by default.
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `|`) |
+<!-- ExcludedExtensions-DFProperties-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Prevent users and apps from accessing dangerous websites*
--   GP name: *ExploitGuard_EnableNetworkProtection*
--   GP element: *ExploitGuard_EnableNetworkProtection*
--   GP path: *Windows Components/Microsoft Defender Antivirus/Windows Defender Exploit Guard/Network Protection*
--   GP ADMX file name: *WindowsDefender.admx*
+<!-- ExcludedExtensions-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+| Name | Value |
+|:--|:--|
+| Name | Exclusions_Extensions |
+| Friendly Name | Extension Exclusions |
+| Element Name | Extension Exclusions. |
+| Location | Computer Configuration |
+| Path | Windows Components > Microsoft Defender Antivirus > Exclusions |
+| Registry Key Name | Software\Policies\Microsoft\Windows Defender\Exclusions |
+| ADMX File Name | WindowsDefender.admx |
+<!-- ExcludedExtensions-GpMapping-End -->
 
-- 0 (default) - Disabled
-- 1 - Enabled (block mode)
-- 2 - Enabled (audit mode)
+<!-- ExcludedExtensions-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ExcludedExtensions-Examples-End -->
 
-<!--/SupportedValues-->
-<!--/Policy-->
+<!-- ExcludedExtensions-End -->
 
-<hr/>
+<!-- ExcludedPaths-Begin -->
+## ExcludedPaths
 
-<!--Policy-->
-<a href="" id="defender-excludedextensions"></a>**Defender/ExcludedExtensions**  
+<!-- ExcludedPaths-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- ExcludedPaths-Applicability-End -->
 
-<!--SupportedSKUs-->
+<!-- ExcludedPaths-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Defender/ExcludedPaths
+```
+<!-- ExcludedPaths-OmaUri-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- ExcludedPaths-Description-Begin -->
+<!-- Description-Source-DDF-Forced -->
+Allows an administrator to specify a list of directory paths to ignore during a scan. Each path in the list must be separated by a |. For example, C:\Example|C:\Example1.
+<!-- ExcludedPaths-Description-End -->
 
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- ExcludedPaths-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> This policy is only enforced in Windows 10 for desktop.
- 
-Allows an administrator to specify a list of file type extensions to ignore during a scan. Each file type in the list must be separated by a **|**. For example, "lib|obj".
+> To prevent unauthorized changes to exclusions, apply tamper protection. Tamper protection for exclusions only works when [certain conditions][TAMPER-2] are met.
+<!-- ExcludedPaths-Editable-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Path Exclusions*
--   GP name: *Exclusions_Paths*
--   GP element: *Exclusions_PathsList*
--   GP path: *Windows Components/Microsoft Defender Antivirus/Exclusions*
--   GP ADMX file name: *WindowsDefender.admx*
+<!-- ExcludedPaths-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXMapped-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `|`) |
+<!-- ExcludedPaths-DFProperties-End -->
 
-<hr/>
+<!-- ExcludedPaths-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--Policy-->
-<a href="" id="defender-excludedpaths"></a>**Defender/ExcludedPaths**  
+| Name | Value |
+|:--|:--|
+| Name | Exclusions_Paths |
+| Friendly Name | Path Exclusions |
+| Element Name | Path Exclusions. |
+| Location | Computer Configuration |
+| Path | Windows Components > Microsoft Defender Antivirus > Exclusions |
+| Registry Key Name | Software\Policies\Microsoft\Windows Defender\Exclusions |
+| ADMX File Name | WindowsDefender.admx |
+<!-- ExcludedPaths-GpMapping-End -->
 
-<!--SupportedSKUs-->
+<!-- ExcludedPaths-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ExcludedPaths-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- ExcludedPaths-End -->
 
+<!-- ExcludedProcesses-Begin -->
+## ExcludedProcesses
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ExcludedProcesses-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- ExcludedProcesses-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ExcludedProcesses-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Defender/ExcludedProcesses
+```
+<!-- ExcludedProcesses-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-> [!NOTE]
-> This policy is only enforced in Windows 10 for desktop.
-
-Allows an administrator to specify a list of directory paths to ignore during a scan. Each path in the list must be separated by a **|**. For example, "C:\\Example|C:\\Example1".
-
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Extension Exclusions*
--   GP name: *Exclusions_Extensions*
--   GP element: *Exclusions_ExtensionsList*
--   GP path: *Windows Components/Microsoft Defender Antivirus/Exclusions*
--   GP ADMX file name: *WindowsDefender.admx*
-
-<!--/ADMXMapped-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="defender-excludedprocesses"></a>**Defender/ExcludedProcesses**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-> [!NOTE]
-> This policy is only enforced in Windows 10 for desktop.
-
+<!-- ExcludedProcesses-Description-Begin -->
+<!-- Description-Source-DDF-Forced -->
 Allows an administrator to specify a list of files opened by processes to ignore during a scan.
 
 > [!IMPORTANT]
-> The process itself is not excluded from the scan, but can be by using the **Defender/ExcludedPaths** policy to exclude its path.
+> The process itself isn't excluded from the scan, but can be by using the Defender/ExcludedPaths policy to exclude its path. Each file type must be separated by a |. For example, C:\Example. exe|C:\Example1.exe.
+<!-- ExcludedProcesses-Description-End -->
 
-Each file type must be separated by a **|**. For example, "C:\\Example.exe|C:\\Example1.exe".
-
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Process Exclusions*
--   GP name: *Exclusions_Processes*
--   GP element: *Exclusions_ProcessesList*
--   GP path: *Windows Components/Microsoft Defender Antivirus/Exclusions*
--   GP ADMX file name: *WindowsDefender.admx*
-
-<!--/ADMXMapped-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="defender-puaprotection"></a>**Defender/PUAProtection**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- ExcludedProcesses-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> This policy is only enforced in Windows 10 for desktop.
+> To prevent unauthorized changes to exclusions, apply tamper protection. Tamper protection for exclusions only works when [certain conditions][TAMPER-2] are met.
+<!-- ExcludedProcesses-Editable-End -->
+
+<!-- ExcludedProcesses-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `|`) |
+<!-- ExcludedProcesses-DFProperties-End -->
 
+<!-- ExcludedProcesses-GpMapping-Begin -->
+**Group policy mapping**:
 
-Specifies the level of detection for potentially unwanted applications (PUAs). Windows Defender alerts you when potentially unwanted software is being downloaded or attempts to install itself on your computer.
+| Name | Value |
+|:--|:--|
+| Name | Exclusions_Processes |
+| Friendly Name | Process Exclusions |
+| Element Name | Process Exclusions. |
+| Location | Computer Configuration |
+| Path | Windows Components > Microsoft Defender Antivirus > Exclusions |
+| Registry Key Name | Software\Policies\Microsoft\Windows Defender\Exclusions |
+| ADMX File Name | WindowsDefender.admx |
+<!-- ExcludedProcesses-GpMapping-End -->
+
+<!-- ExcludedProcesses-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ExcludedProcesses-Examples-End -->
+
+<!-- ExcludedProcesses-End -->
+
+<!-- PUAProtection-Begin -->
+## PUAProtection
 
-> [!NOTE]
-> Potentially unwanted applications (PUA) are a category of software that can cause your machine to run slowly, display unexpected ads, or at worst, install other software which might be unexpected or unwanted. By default in Windows 10 (version 2004 and later), Microsoft Defender Antivirus blocks apps that are considered PUA, for Enterprise (E5) devices. For more information about PUA, see [Detect and block potentially unwanted applications](/microsoft-365/security/defender-endpoint/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus).
+<!-- PUAProtection-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- PUAProtection-Applicability-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Configure detection for potentially unwanted applications*
--   GP name: *Root_PUAProtection*
--   GP element: *Root_PUAProtection*
--   GP path: *Windows Components/Microsoft Defender Antivirus*
--   GP ADMX file name: *WindowsDefender.admx*
+<!-- PUAProtection-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Defender/PUAProtection
+```
+<!-- PUAProtection-OmaUri-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- PUAProtection-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Enable or disable detection for potentially unwanted applications. You can choose to block, audit, or allow when potentially unwanted software is being downloaded or attempts to install itself on your computer.
 
--   0 (default) – PUA Protection off. Windows Defender won't protect against potentially unwanted applications.
--   1 – PUA Protection on. Detected items are blocked. They'll show in history along with other threats.
--   2 – Audit mode. Windows Defender will detect potentially unwanted applications, but take no action. You can review information about the applications Windows Defender would have taken action against by searching for events created by Windows Defender in the Event Viewer.
+Enabled:
 
-<!--/SupportedValues-->
-<!--/Policy-->
+Specify the mode in the Options section:
 
-<hr/>
+-Block: Potentially unwanted software will be blocked.
 
-<!--Policy-->
-<a href="" id="defender-realtimescandirection"></a>**Defender/RealTimeScanDirection**  
+-Audit Mode: Potentially unwanted software won't be blocked, however if this feature would've blocked access if it were set to Block, then a record of the event will be in the event logs.
 
-<!--SupportedSKUs-->
+Disabled:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+Potentially unwanted software won't be blocked.
 
+Not configured:
 
-<!--/SupportedSKUs-->
-<hr/>
+Same as Disabled.
+<!-- PUAProtection-Description-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- PUAProtection-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- PUAProtection-Editable-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- PUAProtection-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-> [!NOTE]
-> This policy is only enforced in Windows 10 for desktop.
-
-Controls which sets of files should be monitored.
-
-> [!NOTE]
-> If **AllowOnAccessProtection** is not allowed, then this configuration can be used to monitor specific files.
-
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Configure monitoring for incoming and outgoing file and program activity*
--   GP name: *RealtimeProtection_RealtimeScanDirection*
--   GP element: *RealtimeProtection_RealtimeScanDirection*
--   GP path: *Windows Components/Microsoft Defender Antivirus/Real-time Protection*
--   GP ADMX file name: *WindowsDefender.admx*
-
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
-
--   0 (default) – Monitor all files (bi-directional).
--   1 – Monitor incoming files.
--   2 – Monitor outgoing files.
-
-<!--/SupportedValues-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="defender-scanparameter"></a>**Defender/ScanParameter**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-> [!NOTE]
-> This policy is only enforced in Windows 10 for desktop.
-
-Selects whether to perform a quick scan or full scan.
-
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Specify the scan type to use for a scheduled scan*
--   GP name: *Scan_ScanParameters*
--   GP element: *Scan_ScanParameters*
--   GP path: *Windows Components/Microsoft Defender Antivirus/Scan*
--   GP ADMX file name: *WindowsDefender.admx*
-
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
-
--   1 (default) – Quick scan
--   2 – Full scan
-
-<!--/SupportedValues-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="defender-schedulequickscantime"></a>**Defender/ScheduleQuickScanTime**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-> [!NOTE]
-> This policy is only enforced in Windows 10 for desktop.
- 
-Selects the time of day that the Windows Defender quick scan should run. The Windows Defender quick scan runs daily if a time is specified.
-
- 
-
-For example, a value of 0=12:00AM, a value of 60=1:00AM, a value of 120=2:00, and so on, up to a value of 1380=11:00PM.
-
-The default value is 120
-
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Specify the time for a daily quick scan*
--   GP name: *Scan_ScheduleQuickScantime*
--   GP element: *Scan_ScheduleQuickScantime*
--   GP path: *Windows Components/Microsoft Defender Antivirus/Scan*
--   GP ADMX file name: *WindowsDefender.admx*
-
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-Valid values: 0–1380
-
-<!--/SupportedValues-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="defender-schedulescanday"></a>**Defender/ScheduleScanDay**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-> [!NOTE]
-> This policy is only enforced in Windows 10 for desktop.
-
-Selects the day that the Windows Defender scan should run.
-
-> [!NOTE]
-> The scan type will depends on what scan type is selected in the **Defender/ScanParameter** setting.
-
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Specify the day of the week to run a scheduled scan*
--   GP name: *Scan_ScheduleDay*
--   GP element: *Scan_ScheduleDay*
--   GP path: *Windows Components/Microsoft Defender Antivirus/Scan*
--   GP ADMX file name: *WindowsDefender.admx*
-
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:  
-
-- 0 (default) – Every day
-- 1 – Sunday 
-- 2 – Monday 
-- 3 – Tuesday  
-- 4 – Wednesday
-- 5 – Thursday  
-- 6 – Friday  
-- 7 – Saturday  
-- 8 – No scheduled scan
-
-<!--/SupportedValues-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="defender-schedulescantime"></a>**Defender/ScheduleScanTime**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-> [!NOTE]
-> This policy is only enforced in Windows 10 for desktop.
-
-Selects the time of day that the Windows Defender scan should run.
-
-> [!NOTE]
-> The scan type will depends on what scan type is selected in the **Defender/ScanParameter** setting.
-
-For example, a value of 0=12:00AM, a value of 60=1:00AM, a value of 120=2:00, and so on, up to a value of 1380=11:00PM.
-
-The default value is 120.
-
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Specify the time of day to run a scheduled scan*
--   GP name: *Scan_ScheduleTime*
--   GP element: *Scan_ScheduleTime*
--   GP path: *Windows Components/Microsoft Defender Antivirus/Scan*
--   GP ADMX file name: *WindowsDefender.admx*
-
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-Valid values: 0–1380.
-
-<!--/SupportedValues-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="defender-securityintelligencelocation"></a>**Defender/SecurityIntelligenceLocation**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to define the security intelligence location for VDI-configured computers. 
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- PUAProtection-DFProperties-End -->
+
+<!-- PUAProtection-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | PUA Protection off. Windows Defender won't protect against potentially unwanted applications. |
+| 1 | PUA Protection on. Detected items are blocked. They will show in history along with other threats. |
+| 2 | Audit mode. Windows Defender will detect potentially unwanted applications, but take no action. You can review information about the applications Windows Defender would've taken action against by searching for events created by Windows Defender in the Event Viewer. |
+<!-- PUAProtection-AllowedValues-End -->
+
+<!-- PUAProtection-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Root_PUAProtection |
+| Friendly Name | Configure detection for potentially unwanted applications |
+| Location | Computer Configuration |
+| Path | Windows Components > Microsoft Defender Antivirus |
+| Registry Key Name | Software\Policies\Microsoft\Windows Defender |
+| ADMX File Name | WindowsDefender.admx |
+<!-- PUAProtection-GpMapping-End -->
+
+<!-- PUAProtection-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- PUAProtection-Examples-End -->
+
+<!-- PUAProtection-End -->
+
+<!-- RealTimeScanDirection-Begin -->
+## RealTimeScanDirection
+
+<!-- RealTimeScanDirection-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- RealTimeScanDirection-Applicability-End -->
+
+<!-- RealTimeScanDirection-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Defender/RealTimeScanDirection
+```
+<!-- RealTimeScanDirection-OmaUri-End -->
+
+<!-- RealTimeScanDirection-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to configure monitoring for incoming and outgoing files, without having to turn off monitoring entirely. It's recommended for use on servers where there is a lot of incoming and outgoing file activity but for performance reasons need to have scanning disabled for a particular scan direction. The appropriate configuration should be evaluated based on the server role.
+
+Note that this configuration is only honored for NTFS volumes. For any other file system type, full monitoring of file and program activity will be present on those volumes.
+
+The options for this setting are mutually exclusive:
+
+0 = Scan incoming and outgoing files (default)
+1 = Scan incoming files only
+2 = Scan outgoing files only.
+
+Any other value, or if the value doesn't exist, resolves to the default (0).
+
+- If you enable this setting, the specified type of monitoring will be enabled.
+
+- If you disable or don't configure this setting, monitoring for incoming and outgoing files will be enabled.
+<!-- RealTimeScanDirection-Description-End -->
+
+<!-- RealTimeScanDirection-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- RealTimeScanDirection-Editable-End -->
+
+<!-- RealTimeScanDirection-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- RealTimeScanDirection-DFProperties-End -->
+
+<!-- RealTimeScanDirection-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Monitor all files (bi-directional). |
+| 1 | Monitor incoming files. |
+| 2 | Monitor outgoing files. |
+<!-- RealTimeScanDirection-AllowedValues-End -->
+
+<!-- RealTimeScanDirection-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | RealtimeProtection_RealtimeScanDirection |
+| Friendly Name | Configure monitoring for incoming and outgoing file and program activity |
+| Element Name | Configure monitoring for incoming and outgoing file and program activity. |
+| Location | Computer Configuration |
+| Path | Windows Components > Microsoft Defender Antivirus > Real-time Protection |
+| Registry Key Name | Software\Policies\Microsoft\Windows Defender\Real-Time Protection |
+| ADMX File Name | WindowsDefender.admx |
+<!-- RealTimeScanDirection-GpMapping-End -->
+
+<!-- RealTimeScanDirection-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- RealTimeScanDirection-Examples-End -->
+
+<!-- RealTimeScanDirection-End -->
+
+<!-- ScanParameter-Begin -->
+## ScanParameter
+
+<!-- ScanParameter-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- ScanParameter-Applicability-End -->
+
+<!-- ScanParameter-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Defender/ScanParameter
+```
+<!-- ScanParameter-OmaUri-End -->
+
+<!-- ScanParameter-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to specify the scan type to use during a scheduled scan. Scan type options are:
+
+1 = Quick Scan (default)
+2 = Full Scan.
+
+- If you enable this setting, the scan type will be set to the specified value.
+
+- If you disable or don't configure this setting, the default scan type will be used.
+<!-- ScanParameter-Description-End -->
+
+<!-- ScanParameter-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ScanParameter-Editable-End -->
+
+<!-- ScanParameter-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- ScanParameter-DFProperties-End -->
+
+<!-- ScanParameter-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 1 (Default) | Quick scan. |
+| 2 | Full scan. |
+<!-- ScanParameter-AllowedValues-End -->
+
+<!-- ScanParameter-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Scan_ScanParameters |
+| Friendly Name | Specify the scan type to use for a scheduled scan |
+| Element Name | Specify the scan type to use for a scheduled scan. |
+| Location | Computer Configuration |
+| Path | Windows Components > Microsoft Defender Antivirus > Scan |
+| Registry Key Name | Software\Policies\Microsoft\Windows Defender\Scan |
+| ADMX File Name | WindowsDefender.admx |
+<!-- ScanParameter-GpMapping-End -->
+
+<!-- ScanParameter-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ScanParameter-Examples-End -->
+
+<!-- ScanParameter-End -->
+
+<!-- ScheduleQuickScanTime-Begin -->
+## ScheduleQuickScanTime
+
+<!-- ScheduleQuickScanTime-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- ScheduleQuickScanTime-Applicability-End -->
+
+<!-- ScheduleQuickScanTime-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Defender/ScheduleQuickScanTime
+```
+<!-- ScheduleQuickScanTime-OmaUri-End -->
+
+<!-- ScheduleQuickScanTime-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to specify the time of day at which to perform a daily quick scan. The time value is represented as the number of minutes past midnight (00:00). For example, 120 (0x78) is equivalent to 02:00 AM. By default, this setting is set to disabled. The schedule is based on local time on the computer where the scan is executing.
+
+- If you enable this setting, a daily quick scan will run at the time of day specified.
+
+- If you disable or don't configure this setting, daily quick scan controlled by this config won't be run.
+<!-- ScheduleQuickScanTime-Description-End -->
+
+<!-- ScheduleQuickScanTime-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ScheduleQuickScanTime-Editable-End -->
+
+<!-- ScheduleQuickScanTime-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-1380]` |
+| Default Value  | 120 |
+<!-- ScheduleQuickScanTime-DFProperties-End -->
+
+<!-- ScheduleQuickScanTime-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Scan_ScheduleQuickScantime |
+| Friendly Name | Specify the time for a daily quick scan |
+| Element Name | Specify the time for a daily quick scan. |
+| Location | Computer Configuration |
+| Path | Windows Components > Microsoft Defender Antivirus > Scan |
+| Registry Key Name | Software\Policies\Microsoft\Windows Defender\Scan |
+| ADMX File Name | WindowsDefender.admx |
+<!-- ScheduleQuickScanTime-GpMapping-End -->
+
+<!-- ScheduleQuickScanTime-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ScheduleQuickScanTime-Examples-End -->
+
+<!-- ScheduleQuickScanTime-End -->
+
+<!-- ScheduleScanDay-Begin -->
+## ScheduleScanDay
+
+<!-- ScheduleScanDay-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- ScheduleScanDay-Applicability-End -->
+
+<!-- ScheduleScanDay-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Defender/ScheduleScanDay
+```
+<!-- ScheduleScanDay-OmaUri-End -->
+
+<!-- ScheduleScanDay-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to specify the day of the week on which to perform a scheduled scan. The scan can also be configured to run every day or to never run at all.
+
+This setting can be configured with the following ordinal number values:
+
+(0x0) Every Day (0x1) Sunday (0x2) Monday (0x3) Tuesday (0x4) Wednesday (0x5) Thursday (0x6) Friday (0x7) Saturday (0x8) Never (default)
+
+- If you enable this setting, a scheduled scan will run at the frequency specified.
+
+- If you disable or don't configure this setting, a scheduled scan will run at a default frequency.
+<!-- ScheduleScanDay-Description-End -->
+
+<!-- ScheduleScanDay-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ScheduleScanDay-Editable-End -->
+
+<!-- ScheduleScanDay-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- ScheduleScanDay-DFProperties-End -->
+
+<!-- ScheduleScanDay-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Every day. |
+| 1 | Sunday. |
+| 2 | Monday. |
+| 3 | Tuesday. |
+| 4 | Wednesday. |
+| 5 | Thursday. |
+| 6 | Friday. |
+| 7 | Saturday. |
+| 8 | No scheduled scan. |
+<!-- ScheduleScanDay-AllowedValues-End -->
+
+<!-- ScheduleScanDay-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Scan_ScheduleDay |
+| Friendly Name | Specify the day of the week to run a scheduled scan |
+| Element Name | Specify the day of the week to run a scheduled scan. |
+| Location | Computer Configuration |
+| Path | Windows Components > Microsoft Defender Antivirus > Scan |
+| Registry Key Name | Software\Policies\Microsoft\Windows Defender\Scan |
+| ADMX File Name | WindowsDefender.admx |
+<!-- ScheduleScanDay-GpMapping-End -->
+
+<!-- ScheduleScanDay-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ScheduleScanDay-Examples-End -->
+
+<!-- ScheduleScanDay-End -->
+
+<!-- ScheduleScanTime-Begin -->
+## ScheduleScanTime
+
+<!-- ScheduleScanTime-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- ScheduleScanTime-Applicability-End -->
+
+<!-- ScheduleScanTime-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Defender/ScheduleScanTime
+```
+<!-- ScheduleScanTime-OmaUri-End -->
+
+<!-- ScheduleScanTime-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to specify the time of day at which to perform a scheduled scan. The time value is represented as the number of minutes past midnight (00:00). For example, 120 (0x78) is equivalent to 02:00 AM. By default, this setting is set to a time value of 2:00 AM. The schedule is based on local time on the computer where the scan is executing.
+
+- If you enable this setting, a scheduled scan will run at the time of day specified.
+
+- If you disable or don't configure this setting, a scheduled scan will run at a default time.
+<!-- ScheduleScanTime-Description-End -->
+
+<!-- ScheduleScanTime-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ScheduleScanTime-Editable-End -->
+
+<!-- ScheduleScanTime-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-1380]` |
+| Default Value  | 120 |
+<!-- ScheduleScanTime-DFProperties-End -->
+
+<!-- ScheduleScanTime-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Scan_ScheduleTime |
+| Friendly Name | Specify the time of day to run a scheduled scan |
+| Element Name | Specify the time of day to run a scheduled scan. |
+| Location | Computer Configuration |
+| Path | Windows Components > Microsoft Defender Antivirus > Scan |
+| Registry Key Name | Software\Policies\Microsoft\Windows Defender\Scan |
+| ADMX File Name | WindowsDefender.admx |
+<!-- ScheduleScanTime-GpMapping-End -->
+
+<!-- ScheduleScanTime-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ScheduleScanTime-Examples-End -->
+
+<!-- ScheduleScanTime-End -->
+
+<!-- SecurityIntelligenceLocation-Begin -->
+## SecurityIntelligenceLocation
+
+<!-- SecurityIntelligenceLocation-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
+<!-- SecurityIntelligenceLocation-Applicability-End -->
+
+<!-- SecurityIntelligenceLocation-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Defender/SecurityIntelligenceLocation
+```
+<!-- SecurityIntelligenceLocation-OmaUri-End -->
+
+<!-- SecurityIntelligenceLocation-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to define the security intelligence location for VDI-configured computers.
 
 If you disable or don't configure this setting, security intelligence will be referred from the default local source.
+<!-- SecurityIntelligenceLocation-Description-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Define security intelligence location for VDI clients*
--   GP name: *SecurityIntelligenceLocation*
--   GP element: *SecurityIntelligenceLocation*
--   GP path: *Windows Components/Microsoft Defender Antivirus/Security Intelligence Updates*
--   GP ADMX file name: *WindowsDefender.admx*
+<!-- SecurityIntelligenceLocation-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- SecurityIntelligenceLocation-Editable-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
+<!-- SecurityIntelligenceLocation-DFProperties-Begin -->
+**Description framework properties**:
 
-- Empty string - no policy is set
-- Non-empty string - the policy is set and security intelligence is gathered from the location
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- SecurityIntelligenceLocation-DFProperties-End -->
 
-<!--/SupportedValues-->
-<!--/Policy-->
+<!-- SecurityIntelligenceLocation-GpMapping-Begin -->
+**Group policy mapping**:
 
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | SignatureUpdate_SharedSignaturesLocation |
+| Friendly Name | Define security intelligence location for VDI clients. |
+| Element Name | Define file share for downloading security intelligence updates in virtual environments. |
+| Location | Computer Configuration |
+| Path | Windows Components > Microsoft Defender Antivirus > Security Intelligence Updates |
+| Registry Key Name | Software\Policies\Microsoft\Windows Defender\Signature Updates |
+| ADMX File Name | WindowsDefender.admx |
+<!-- SecurityIntelligenceLocation-GpMapping-End -->
 
-<!--Policy-->
-<a href="" id="defender-signatureupdatefallbackorder"></a>**Defender/SignatureUpdateFallbackOrder**  
+<!-- SecurityIntelligenceLocation-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- SecurityIntelligenceLocation-Examples-End -->
 
-<!--SupportedSKUs-->
+<!-- SecurityIntelligenceLocation-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- SignatureUpdateFallbackOrder-Begin -->
+## SignatureUpdateFallbackOrder
 
+<!-- SignatureUpdateFallbackOrder-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
+<!-- SignatureUpdateFallbackOrder-Applicability-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- SignatureUpdateFallbackOrder-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Defender/SignatureUpdateFallbackOrder
+```
+<!-- SignatureUpdateFallbackOrder-OmaUri-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- SignatureUpdateFallbackOrder-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to define the order in which different security intelligence update sources should be contacted. The value of this setting should be entered as a pipe-separated string enumerating the security intelligence update sources in order. Possible values are: "InternalDefinitionUpdateServer", "MicrosoftUpdateServer", "MMPC", and "FileShares".
 
-> [!div class = "checklist"]
-> * Device
+For Example: `{ InternalDefinitionUpdateServer | MicrosoftUpdateServer | MMPC }`
 
-<hr/>
+- If you enable this setting, security intelligence update sources will be contacted in the order specified. Once security intelligence updates have been successfully downloaded from one specified source, the remaining sources in the list won't be contacted.
 
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to define the order in which different definition update sources should be contacted. The value of this setting should be entered as a pipe-separated string enumerating the definition update sources in order. 
+- If you disable or don't configure this setting, security intelligence update sources will be contacted in a default order.
+<!-- SignatureUpdateFallbackOrder-Description-End -->
 
-Possible values are: 
+<!-- SignatureUpdateFallbackOrder-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- SignatureUpdateFallbackOrder-Editable-End -->
 
-- InternalDefinitionUpdateServer
-- MicrosoftUpdateServer
-- MMPC
-- FileShares
+<!-- SignatureUpdateFallbackOrder-DFProperties-Begin -->
+**Description framework properties**:
 
-For example: InternalDefinitionUpdateServer | MicrosoftUpdateServer | MMPC 
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `|`) |
+<!-- SignatureUpdateFallbackOrder-DFProperties-End -->
 
-If you enable this setting, definition update sources will be contacted in the order specified. Once definition updates have been successfully downloaded from one specified source, the remaining sources in the list won't be contacted.
+<!-- SignatureUpdateFallbackOrder-GpMapping-Begin -->
+**Group policy mapping**:
 
-If you disable or don't configure this setting, definition update sources will be contacted in a default order.
+| Name | Value |
+|:--|:--|
+| Name | SignatureUpdate_FallbackOrder |
+| Friendly Name | Define the order of sources for downloading security intelligence updates |
+| Element Name | Define the order of sources for downloading security intelligence updates. |
+| Location | Computer Configuration |
+| Path | Windows Components > Microsoft Defender Antivirus > Security Intelligence Updates |
+| Registry Key Name | Software\Policies\Microsoft\Windows Defender\Signature Updates |
+| ADMX File Name | WindowsDefender.admx |
+<!-- SignatureUpdateFallbackOrder-GpMapping-End -->
 
-OMA-URI Path: ./Vendor/MSFT/Policy/Config/Defender/SignatureUpdateFallbackOrder
+<!-- SignatureUpdateFallbackOrder-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- SignatureUpdateFallbackOrder-Examples-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Define the order of sources for downloading definition updates*
--   GP name: *SignatureUpdate_FallbackOrder*
--   GP element: *SignatureUpdate_FallbackOrder*
--   GP path: *Windows Components/Microsoft Defender Antivirus/Signature Updates*
--   GP ADMX file name: *WindowsDefender.admx*
+<!-- SignatureUpdateFallbackOrder-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
+<!-- SignatureUpdateFileSharesSources-Begin -->
+## SignatureUpdateFileSharesSources
 
-<!--/SupportedValues-->
-<!--Example-->
+<!-- SignatureUpdateFileSharesSources-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
+<!-- SignatureUpdateFileSharesSources-Applicability-End -->
 
-<!--/Example-->
-<!--Validation-->
+<!-- SignatureUpdateFileSharesSources-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Defender/SignatureUpdateFileSharesSources
+```
+<!-- SignatureUpdateFileSharesSources-OmaUri-End -->
 
-<!--/Validation-->
-<!--/Policy-->
+<!-- SignatureUpdateFileSharesSources-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to configure UNC file share sources for downloading security intelligence updates. Sources will be contacted in the order specified. The value of this setting should be entered as a pipe-separated string enumerating the security intelligence update sources. For example: "`{\\unc1 | \\unc2 }`". The list is empty by default.
 
-<hr/>
+- If you enable this setting, the specified sources will be contacted for security intelligence updates. Once security intelligence updates have been successfully downloaded from one specified source, the remaining sources in the list won't be contacted.
 
-<!--Policy-->
-<a href="" id="defender-signatureupdatefilesharessources"></a>**Defender/SignatureUpdateFileSharesSources**  
+- If you disable or don't configure this setting, the list will remain empty by default and no sources will be contacted.
+<!-- SignatureUpdateFileSharesSources-Description-End -->
 
-<!--SupportedSKUs-->
+<!-- SignatureUpdateFileSharesSources-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- SignatureUpdateFileSharesSources-Editable-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- SignatureUpdateFileSharesSources-DFProperties-Begin -->
+**Description framework properties**:
 
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `|`) |
+<!-- SignatureUpdateFileSharesSources-DFProperties-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- SignatureUpdateFileSharesSources-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+| Name | Value |
+|:--|:--|
+| Name | SignatureUpdate_DefinitionUpdateFileSharesSources |
+| Friendly Name | Define file shares for downloading security intelligence updates |
+| Element Name | Define file shares for downloading security intelligence updates. |
+| Location | Computer Configuration |
+| Path | Windows Components > Microsoft Defender Antivirus > Security Intelligence Updates |
+| Registry Key Name | Software\Policies\Microsoft\Windows Defender\Signature Updates |
+| ADMX File Name | WindowsDefender.admx |
+<!-- SignatureUpdateFileSharesSources-GpMapping-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- SignatureUpdateFileSharesSources-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- SignatureUpdateFileSharesSources-Examples-End -->
 
-<hr/>
+<!-- SignatureUpdateFileSharesSources-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to configure UNC file share sources for downloading definition updates. Sources will be contacted in the order specified. The value of this setting should be entered as a pipe-separated string enumerating the definition update sources. 
+<!-- SignatureUpdateInterval-Begin -->
+## SignatureUpdateInterval
 
-For example: \\unc1\Signatures | \\unc2\Signatures  
+<!-- SignatureUpdateInterval-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- SignatureUpdateInterval-Applicability-End -->
 
-The list is empty by default.
+<!-- SignatureUpdateInterval-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Defender/SignatureUpdateInterval
+```
+<!-- SignatureUpdateInterval-OmaUri-End -->
 
-If you enable this setting, the specified sources will be contacted for definition updates. Once definition updates have been successfully downloaded from one specified source, the remaining sources in the list won't be contacted.
+<!-- SignatureUpdateInterval-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to specify an interval at which to check for security intelligence updates. The time value is represented as the number of hours between update checks. Valid values range from 1 (every hour) to 24 (once per day).
 
-If you disable or don't configure this setting, the list will remain empty by default and no sources will be contacted.
+- If you enable this setting, checks for security intelligence updates will occur at the interval specified.
 
-OMA-URI Path: ./Vendor/MSFT/Policy/Config/Defender/SignatureUpdateFileSharesSources
+- If you disable or don't configure this setting, checks for security intelligence updates will occur at the default interval.
+<!-- SignatureUpdateInterval-Description-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Define file shares for downloading definition updates*
--   GP name: *SignatureUpdate_DefinitionUpdateFileSharesSources*
--   GP element: *SignatureUpdate_DefinitionUpdateFileSharesSources*
--   GP path: *Windows Components/Microsoft Defender Antivirus/Signature Updates*
--   GP ADMX file name: *WindowsDefender.admx*
+<!-- SignatureUpdateInterval-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- SignatureUpdateInterval-Editable-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
+<!-- SignatureUpdateInterval-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedValues-->
-<!--Example-->
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-24]` |
+| Default Value  | 8 |
+<!-- SignatureUpdateInterval-DFProperties-End -->
 
-<!--/Example-->
-<!--Validation-->
+<!-- SignatureUpdateInterval-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--/Validation-->
-<!--/Policy-->
+| Name | Value |
+|:--|:--|
+| Name | SignatureUpdate_SignatureUpdateInterval |
+| Friendly Name | Specify the interval to check for security intelligence updates |
+| Element Name | Specify the interval to check for security intelligence updates. |
+| Location | Computer Configuration |
+| Path | Windows Components > Microsoft Defender Antivirus > Security Intelligence Updates |
+| Registry Key Name | Software\Policies\Microsoft\Windows Defender\Signature Updates |
+| ADMX File Name | WindowsDefender.admx |
+<!-- SignatureUpdateInterval-GpMapping-End -->
 
-<hr/>
+<!-- SignatureUpdateInterval-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- SignatureUpdateInterval-Examples-End -->
 
-<!--Policy-->
-<a href="" id="defender-signatureupdateinterval"></a>**Defender/SignatureUpdateInterval**  
+<!-- SignatureUpdateInterval-End -->
 
-<!--SupportedSKUs-->
+<!-- SubmitSamplesConsent-Begin -->
+## SubmitSamplesConsent
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- SubmitSamplesConsent-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- SubmitSamplesConsent-Applicability-End -->
 
+<!-- SubmitSamplesConsent-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Defender/SubmitSamplesConsent
+```
+<!-- SubmitSamplesConsent-OmaUri-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- SubmitSamplesConsent-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures behavior of samples submission when opt-in for MAPS telemetry is set.
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+Possible options are:
 
-> [!div class = "checklist"]
-> * Device
+(0x0) Always prompt (0x1) Send safe samples automatically (0x2) Never send (0x3) Send all samples automatically.
+<!-- SubmitSamplesConsent-Description-End -->
 
-<hr/>
+<!-- SubmitSamplesConsent-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- SubmitSamplesConsent-Editable-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- SubmitSamplesConsent-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- SubmitSamplesConsent-DFProperties-End -->
+
+<!-- SubmitSamplesConsent-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Always prompt. |
+| 1 (Default) | Send safe samples automatically. |
+| 2 | Never send. |
+| 3 | Send all samples automatically. |
+<!-- SubmitSamplesConsent-AllowedValues-End -->
+
+<!-- SubmitSamplesConsent-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | SubmitSamplesConsent |
+| Friendly Name | Send file samples when further analysis is required |
+| Element Name | Send file samples when further analysis is required. |
+| Location | Computer Configuration |
+| Path | Windows Components > Microsoft Defender Antivirus > MAPS |
+| Registry Key Name | Software\Policies\Microsoft\Windows Defender\Spynet |
+| ADMX File Name | WindowsDefender.admx |
+<!-- SubmitSamplesConsent-GpMapping-End -->
+
+<!-- SubmitSamplesConsent-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- SubmitSamplesConsent-Examples-End -->
+
+<!-- SubmitSamplesConsent-End -->
+
+<!-- ThreatSeverityDefaultAction-Begin -->
+## ThreatSeverityDefaultAction
+
+<!-- ThreatSeverityDefaultAction-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- ThreatSeverityDefaultAction-Applicability-End -->
+
+<!-- ThreatSeverityDefaultAction-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Defender/ThreatSeverityDefaultAction
+```
+<!-- ThreatSeverityDefaultAction-OmaUri-End -->
+
+<!-- ThreatSeverityDefaultAction-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to customize which automatic remediation action will be taken for each threat alert level. Threat alert levels should be added under the Options for this setting. Each entry must be listed as a name value pair. The name defines a threat alert level. The value contains the action ID for the remediation action that should be taken.
+
+Valid threat alert levels are:
+
+1 = Low
+2 = Medium
+4 = High
+5 = Severe.
+
+Valid remediation action values are:
+
+2 = Quarantine
+3 = Remove
+6 = Ignore.
+<!-- ThreatSeverityDefaultAction-Description-End -->
+
+<!-- ThreatSeverityDefaultAction-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> This policy is only enforced in Windows 10 for desktop.
+> Changes to this setting are not applied when [tamper protection][TAMPER-1] is enabled.
+<!-- ThreatSeverityDefaultAction-Editable-End -->
 
-Specifies the interval (in hours) that will be used to check for signatures, so instead of using the ScheduleDay and ScheduleTime the check for new signatures will be set according to the interval.
+<!-- ThreatSeverityDefaultAction-DFProperties-Begin -->
+**Description framework properties**:
 
-A value of 0 means no check for new signatures, a value of 1 means to check every hour, a value of 2 means to check every two hours, and so on, up to a value of 24, which means to check every day.
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- ThreatSeverityDefaultAction-DFProperties-End -->
 
-The default value is 8.
+<!-- ThreatSeverityDefaultAction-GpMapping-Begin -->
+**Group policy mapping**:
 
-OMA-URI Path: ./Vendor/MSFT/Policy/Config/Defender/SignatureUpdateInterval
+| Name | Value |
+|:--|:--|
+| Name | Threats_ThreatSeverityDefaultAction |
+| Friendly Name | Specify threat alert levels at which default action should not be taken when detected |
+| Element Name | Specify threat alert levels at which default action shouldn't be taken when detected. |
+| Location | Computer Configuration |
+| Path | Windows Components > Microsoft Defender Antivirus > Threats |
+| Registry Key Name | Software\Policies\Microsoft\Windows Defender\Threats |
+| ADMX File Name | WindowsDefender.admx |
+<!-- ThreatSeverityDefaultAction-GpMapping-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Specify the interval to check for definition updates*
--   GP name: *SignatureUpdate_SignatureUpdateInterval*
--   GP element: *SignatureUpdate_SignatureUpdateInterval*
--   GP path: *Windows Components/Microsoft Defender Antivirus/Signature Updates*
--   GP ADMX file name: *WindowsDefender.admx*
+<!-- ThreatSeverityDefaultAction-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ThreatSeverityDefaultAction-Examples-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-Valid values: 0–24.
+<!-- ThreatSeverityDefaultAction-End -->
 
-<!--/SupportedValues-->
-<!--/Policy-->
+<!-- Defender-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- Links -->
+[TAMPER-1]: /microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection
+[TAMPER-2]: /microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection#what-about-exclusions
+<!-- Defender-CspMoreInfo-End -->
 
-<hr/>
+<!-- Defender-End -->
 
-<!--Policy-->
-<a href="" id="defender-submitsamplesconsent"></a>**Defender/SubmitSamplesConsent**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-> [!NOTE]
-> This policy is only enforced in Windows 10 for desktop.
-
-Checks for the user consent level in Windows Defender to send data. If the required consent has already been granted, Windows Defender submits them. If not (and if the user has specified never to ask), the UI is launched to ask for user consent (when **Defender/AllowCloudProtection** is allowed) before sending data.
-
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Send file samples when further analysis is required*
--   GP name: *SubmitSamplesConsent*
--   GP element: *SubmitSamplesConsent*
--   GP path: *Windows Components/Microsoft Defender Antivirus/MAPS*
--   GP ADMX file name: *WindowsDefender.admx*
-
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
-
--   0 – Always prompt.
--   1 (default) – Send safe samples automatically.
--   2 – Never send.
--   3 – Send all samples automatically.
-
-<!--/SupportedValues-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="defender-threatseveritydefaultaction"></a>**Defender/ThreatSeverityDefaultAction**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-> [!NOTE]
-> This policy is only enforced in Windows 10 for desktop.
-
-Allows an administrator to specify any valid threat severity levels and the corresponding default action ID to take.
-
-This value is a list of threat severity level IDs and corresponding actions, separated by a <strong>|</strong> using the format "*threat level*=*action*|*threat level*=*action*". For example, "1=6|2=2|4=10|5=3".
-
-The following list shows the supported values for threat severity levels:
-
--   1 – Low severity threats
--   2 – Moderate severity threats
--   4 – High severity threats
--   5 – Severe threats
-
-The following list shows the supported values for possible actions:
-
--   1 – Clean. Service tries to recover files and try to disinfect.
--   2 – Quarantine. Moves files to quarantine.
--   3 – Remove. Removes files from system.
--   6 – Allow. Allows file/does none of the above actions.
--   8 – User defined. Requires user to make a decision on which action to take.
--   10 – Block. Blocks file execution.
-
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Specify threat alert levels at which default action should not be taken when detected*
--   GP name: *Threats_ThreatSeverityDefaultAction*
--   GP element: *Threats_ThreatSeverityDefaultActionList*
--   GP path: *Windows Components/Microsoft Defender Antivirus/Threats*
--   GP ADMX file name: *WindowsDefender.admx*
-
-<!--/ADMXMapped-->
-<!--/Policy-->
-<hr/>
-
-
-
-<!--/Policies-->
-
-## Related topics
+## Related articles
 
 [Policy configuration service provider](policy-configuration-service-provider.md)

@@ -1,138 +1,155 @@
 ---
-title: Policy CSP - ADMX_WinCal
-description: Policy CSP - ADMX_WinCal
-ms.author: vinpa
-ms.localizationpriority: medium
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
+title: ADMX_WinCal Policy CSP
+description: Learn more about the ADMX_WinCal Area in Policy CSP.
 author: vinaypamnani-msft
-ms.date: 09/28/2020
-ms.reviewer: 
 manager: aaroncz
+ms.author: vinpa
+ms.date: 08/10/2023
+ms.localizationpriority: medium
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ADMX_WinCal-Begin -->
 # Policy CSP - ADMX_WinCal
-> [!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<hr/>
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
-<!--Policies-->
-## ADMX_WinCal policies  
+<!-- ADMX_WinCal-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ADMX_WinCal-Editable-End -->
 
-<dl>
-  <dd>
-    <a href="#admx-wincal-turnoffwincal-1">ADMX_WinCal/TurnOffWinCal_1</a>
-  </dd>
-  <dd>
-    <a href="#admx-wincal-turnoffwincal-2">ADMX_WinCal/TurnOffWinCal_2</a>
-  </dd>
-</dl>
+<!-- TurnOffWinCal_1-Begin -->
+## TurnOffWinCal_1
 
+<!-- TurnOffWinCal_1-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- TurnOffWinCal_1-Applicability-End -->
 
-<hr/>
+<!-- TurnOffWinCal_1-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_WinCal/TurnOffWinCal_1
+```
+<!-- TurnOffWinCal_1-OmaUri-End -->
 
-<!--Policy-->
-<a href="" id="admx-wincal-turnoffwincal-1"></a>**ADMX_WinCal/TurnOffWinCal_1**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- TurnOffWinCal_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Windows Calendar is a feature that allows users to manage appointments and tasks by creating personal calendars, publishing them, and subscribing to other users calendars.
 
 - If you enable this setting, Windows Calendar will be turned off.
-- If you disable or do not configure this setting, Windows Calendar will be turned on.
+
+- If you disable or don't configure this setting, Windows Calendar will be turned on.
 
 The default is for Windows Calendar to be turned on.
+<!-- TurnOffWinCal_1-Description-End -->
 
-<!--/Description-->
+<!-- TurnOffWinCal_1-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TurnOffWinCal_1-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Turn off Windows Calendar*
--   GP name: *TurnOffWinCal_1*
--   GP path: *Windows Components\Windows Calendar*
--   GP ADMX file name: *WinCal.admx*
+<!-- TurnOffWinCal_1-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- TurnOffWinCal_1-DFProperties-End -->
 
-<hr/>
+<!-- TurnOffWinCal_1-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-wincal-turnoffwincal-2"></a>**ADMX_WinCal/TurnOffWinCal_2**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | TurnOffWinCal_1 |
+| Friendly Name | Turn off Windows Calendar |
+| Location | User Configuration |
+| Path | Windows Components > Windows Calendar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Windows |
+| Registry Value Name | TurnOffWinCal |
+| ADMX File Name | WinCal.admx |
+<!-- TurnOffWinCal_1-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- TurnOffWinCal_1-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TurnOffWinCal_1-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- TurnOffWinCal_1-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- TurnOffWinCal_2-Begin -->
+## TurnOffWinCal_2
 
-> [!div class = "checklist"]
-> * Device
+<!-- TurnOffWinCal_2-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- TurnOffWinCal_2-Applicability-End -->
 
-<hr/>
+<!-- TurnOffWinCal_2-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_WinCal/TurnOffWinCal_2
+```
+<!-- TurnOffWinCal_2-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- TurnOffWinCal_2-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Windows Calendar is a feature that allows users to manage appointments and tasks by creating personal calendars, publishing them, and subscribing to other users calendars.
 
 - If you enable this setting, Windows Calendar will be turned off.
-- If you disable or do not configure this setting, Windows Calendar will be turned on.
+
+- If you disable or don't configure this setting, Windows Calendar will be turned on.
 
 The default is for Windows Calendar to be turned on.
+<!-- TurnOffWinCal_2-Description-End -->
 
-<!--/Description-->
+<!-- TurnOffWinCal_2-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TurnOffWinCal_2-Editable-End -->
 
+<!-- TurnOffWinCal_2-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Turn off Windows Calendar*
--   GP name: *TurnOffWinCal_2*
--   GP path: *Windows Components\Windows Calendar*
--   GP ADMX file name: *WinCal.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- TurnOffWinCal_2-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- TurnOffWinCal_2-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--/Policies-->
+**ADMX mapping**:
 
+| Name | Value |
+|:--|:--|
+| Name | TurnOffWinCal_2 |
+| Friendly Name | Turn off Windows Calendar |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Calendar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Windows |
+| Registry Value Name | TurnOffWinCal |
+| ADMX File Name | WinCal.admx |
+<!-- TurnOffWinCal_2-AdmxBacked-End -->
+
+<!-- TurnOffWinCal_2-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TurnOffWinCal_2-Examples-End -->
+
+<!-- TurnOffWinCal_2-End -->
+
+<!-- ADMX_WinCal-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ADMX_WinCal-CspMoreInfo-End -->
+
+<!-- ADMX_WinCal-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

@@ -1,15 +1,18 @@
 ---
-title: Customize and manage the Windows 10 Start and taskbar layout  (Windows 10) | Microsoft Docs
+title: Customize and manage the Windows 10 Start and taskbar layout
 description: On Windows devices, customize the start menu layout and taskbar using XML, group policy, provisioning package, or MDM policy. You can add pinned folders, add a start menu size, pin apps to the taskbar, and more.
 ms.reviewer: 
 manager: aaroncz
-ms.prod: w10
+ms.prod: windows-client
 author: lizgt2000
 ms.author: lizlong
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 08/05/2021
-ms.collection: highpri
+ms.collection:
+ - highpri
+ - tier2
+ms.technology: itpro-configure
 ---
 
 # Customize the Start menu and taskbar layout on Windows 10 and later devices
@@ -24,7 +27,7 @@ ms.collection: highpri
 >
 > **Looking for OEM information?** See [Customize the Taskbar](/windows-hardware/customize/desktop/customize-the-windows-11-taskbar) and [Customize the Start layout](/windows-hardware/customize/desktop/customize-the-windows-11-start-menu).
 
-Your organization can deploy a customized Start and taskbar to Windows 10 Professional, Enterprise, or Education devices. Use a standard, customized Start layout on devices that are common to multiple users, and devices that are locked down. Configuring the taskbar allows you to pin useful apps for your users, and remove apps that are pinned by default.
+Your organization can deploy a customized Start and taskbar to Windows 10 Professional, Enterprise, or Education devices. Use a standard, customized Start layout on devices that are common to multiple users, and devices that are locked down. Configuring the taskbar allows you to pin useful apps for your users, and remove apps that are pinned by default.
 
 >[!NOTE]
 >Support for applying a customized taskbar using MDM is added in Windows 10, version 1703.
@@ -214,7 +217,7 @@ On Windows 10 version 1607 and later, the new taskbar layout for upgrades apply 
 
 If your Start layout customization isn't applied as you expect, open the **Event Viewer**. Go to **Applications and Services Log** > **Microsoft** > **Windows** > **ShellCommon-StartLayoutPopulation** > **Operational**. Look for the following events:
 
-- **Event 22**: The XML is malformed. The specified file isn’t valid XML. This event can happen if the file has extra spaces or unexpected characters. Or, if the file isn't saved in the UTF8 format.
+- **Event 22**: The XML is malformed. The specified file isn't valid XML. This event can happen if the file has extra spaces or unexpected characters. Or, if the file isn't saved in the UTF8 format.
 - **Event 64**: The XML is valid, and has unexpected values. This event can happen when the configuration isn't understood, elements aren't in [the required order](start-layout-xml-desktop.md#required-order), or source isn't found, such as a missing or misspelled `.lnk`.
 
 ## Next steps

@@ -1,14 +1,15 @@
 ---
 title: What's new in Windows 10, version 1709
 description: New and updated features in Windows 10, version 1709 (also known as the Fall Creators Update).
-ms.prod: w10
-ms.reviewer: 
-author: aczechowski
-manager: dougeby
-ms.author: aaroncz
+ms.prod: windows-client
+author: mestew
+manager: aaroncz
+ms.author: mstewart
 ms.localizationpriority: medium
 ms.topic: article
 ROBOTS: NOINDEX
+ms.technology: itpro-fundamentals
+ms.date: 12/31/2017
 ---
 
 # What's new in Windows 10, version 1709 for IT Pros
@@ -79,7 +80,7 @@ The AssignedAccess CSP has been expanded to make it easy for administrators to c
 ## Security
 
 >[!NOTE]
->Windows security features have been rebranded as Windows Defender security features, including Windows Defender Device Guard, Windows Defender Credential Guard, and Windows Defender Firewall.
+>Windows security features have been rebranded as Windows Defender security features, including Windows Defender Device Guard, Credential Guard, and Windows Defender Firewall.
 
 **Windows security baselines** have been updated for Windows 10. A [security baseline](/windows/device-security/windows-security-baselines) is a group of Microsoft-recommended configuration settings and explains their security impact. For more information, and to download the Policy Analyzer tool, see [Microsoft Security Compliance Toolkit 1.0](/windows/device-security/security-compliance-toolkit-10).
 

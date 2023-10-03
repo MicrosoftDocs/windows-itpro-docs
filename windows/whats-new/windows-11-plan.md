@@ -1,24 +1,25 @@
 ---
 title: Plan for Windows 11
 description: Windows 11 deployment planning, IT Pro content.
-ms.prod: w11
-author: aczechowski
-ms.author: aaroncz
-manager: dougeby
+ms.prod: windows-client
+author: mestew
+ms.author: mstewart
+manager: aaroncz
 ms.localizationpriority: high
-ms.topic: article
-ms.collection: highpri
+ms.topic: conceptual
+ms.collection:
+  - highpri
+  - tier1
+ms.technology: itpro-fundamentals
+ms.date: 08/11/2023
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
 ---
 
 # Plan for Windows 11
 
-**Applies to**
-
--   Windows 11
-
-## Deployment planning
-
 This article provides guidance to help you plan for Windows 11 in your organization.
+## Deployment planning
 
 Since Windows 11 is built on the same foundation as Windows 10, you can use the same deployment capabilities, scenarios, and tools—and the same basic deployment strategy that you use today for Windows 10. You'll need to review and update your servicing strategy to adjust for changes in [Servicing and support](#servicing-and-support) for Windows 11. 
 
@@ -45,7 +46,7 @@ The availability of Windows 11 will vary according to a device's hardware and wh
 
 ##### Managed devices
 
-Managed devices are devices that are under organization control. Managed devices include those devices managed by Microsoft Intune, Microsoft Endpoint Configuration Manager, or other endpoint management solutions. 
+Managed devices are devices that are under organization control. Managed devices include those devices managed by Microsoft Intune, Microsoft Configuration Manager, or other endpoint management solutions. 
 
 If you manage devices on behalf of your organization, you'll be able to upgrade eligible devices to Windows 11 using your existing deployment and management tools at no cost when the upgrade reaches general availability. Organizations that use Windows Update for Business will have added benefits, such as:  
 
@@ -71,7 +72,7 @@ The recommended method to determine if your infrastructure, deployment processes
 
 As you plan your endpoint management strategy for Windows 11, consider moving to cloud-based mobile device management (MDM), such as [Microsoft Intune](/mem/intune/fundamentals/what-is-intune). If a cloud-only approach isn't right for your organization yet, you can still modernize and streamline essential pieces of your endpoint management strategy as follows:
 - Create a [cloud management gateway](/mem/configmgr/core/clients/manage/cmg/overview) (CMG) to manage Configuration Manager clients over the internet.
-- Attach your existing Configuration Management estate to the cloud with [tenant attach](/mem/configmgr/tenant-attach/device-sync-actions) so you can manage all devices from within the Microsoft Endpoint Manager admin center. 
+- Attach your existing Configuration Management estate to the cloud with [tenant attach](/mem/configmgr/tenant-attach/device-sync-actions) so you can manage all devices from within the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431). 
 - Use [co-management](/mem/configmgr/comanage/overview) to concurrently manage devices using both Configuration Manager and Microsoft Intune. This concurrent management allows you to take advantage of cloud-powered capabilities like [Conditional Access](/azure/active-directory/conditional-access/overview). 
 
 For more information on the benefits of these approaches, see [Cloud Attach Your Future: The Big 3](https://techcommunity.microsoft.com/t5/configuration-manager-blog/cloud-attach-your-future-part-ii-quot-the-big-3-quot/ba-p/1750664). 
@@ -102,9 +103,9 @@ Microsoft's compatibility promise for Windows 10 is maintained for Windows 11. D
 
 If you run into compatibility issues or want to ensure that your organization's applications are compatible from day one, App Assure and Test Base for Microsoft 365 can help. 
 
-**App Assure**: With enrollment in the [App Assure](/windows/compatibility/app-assure) service, any app compatibility issues that you find with Windows 11 can be resolved. Microsoft will help you remedy application issues at no cost. Since 2018, App Assure has evaluated almost 800,000 apps, and subscriptions are free for eligible customers with 150+ seats. 
+- **App Assure**: With enrollment in the [App Assure](/windows/compatibility/app-assure) service, any app compatibility issues that you find with Windows 11 can be resolved. Microsoft will help you remedy application issues at no cost. Since 2018, App Assure has evaluated almost 800,000 apps, and subscriptions are free for eligible customers with 150+ seats.
 
-**Test Base for Microsoft 365**: For software publishers, systems integrators, and IT administrators, [Test Base for Microsoft 365](https://aka.ms/testbase) (currently in private preview) is a service that allows you to validate your apps across various Windows features and quality updates and environments in a Microsoft-managed Azure environment. Enterprise organizations can also nominate their software publishers for participation by completing a short form.  
+- **Test Base for Microsoft 365**: [Test Base](https://portal.azure.com/?feature.Win11=true%2F#view/Microsoft_Azure_Marketplace/GalleryItemDetailsBladeNopdl/id/Microsoft.TestBase) is a cloud testing platform that can help you evaluate applications readiness for Windows 11 upgrade or migration. IT administrators, software publishers, and system integrators can find desired test cases throughout the entire Windows validation lifecycle. Tests include, but aren't limited to, in-place upgrade validation, monthly quality updates, and tests against Windows preview features.
 
 You might already be using App Assure and Test Base in your Windows 10 environment. Both of these tools will continue to function with Windows 11. 
 
@@ -114,4 +115,4 @@ You might already be using App Assure and Test Base in your Windows 10 environme
 
 ## Also see
 
-[Plan to deploy updates for Windows 10 and Microsoft 365 Apps](/learn/modules/windows-plan/)
+[Plan to deploy updates for Windows 10 and Microsoft 365 Apps](/training/modules/windows-plan/)

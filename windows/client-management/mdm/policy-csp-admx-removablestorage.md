@@ -1,1623 +1,1934 @@
 ---
-title: Policy CSP - ADMX_RemovableStorage
-description: Learn about Policy CSP - ADMX_RemovableStorage.
-ms.author: vinpa
-ms.localizationpriority: medium
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
+title: ADMX_RemovableStorage Policy CSP
+description: Learn more about the ADMX_RemovableStorage Area in Policy CSP.
 author: vinaypamnani-msft
-ms.date: 12/10/2020
-ms.reviewer: 
 manager: aaroncz
+ms.author: vinpa
+ms.date: 08/10/2023
+ms.localizationpriority: medium
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ADMX_RemovableStorage-Begin -->
 # Policy CSP - ADMX_RemovableStorage
->[!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<hr/>
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
-<!--Policies-->
-## ADMX_RemovableStorage policies  
+<!-- ADMX_RemovableStorage-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ADMX_RemovableStorage-Editable-End -->
 
-<dl>
-  <dd>
-    <a href="#admx-removablestorage-accessrights-reboottime-1">ADMX_RemovableStorage/AccessRights_RebootTime_1</a>
-  </dd>
-  <dd>
-    <a href="#admx-removablestorage-accessrights-reboottime-2">ADMX_RemovableStorage/AccessRights_RebootTime_2</a>
-  </dd>
-  <dd>
-    <a href="#admx-removablestorage-cdanddvd-denyexecute-access-2">ADMX_RemovableStorage/CDandDVD_DenyExecute_Access_2</a>
-  </dd>
-  <dd>
-    <a href="#admx-removablestorage-cdanddvd-denyread-access-1">ADMX_RemovableStorage/CDandDVD_DenyRead_Access_1</a>
-  </dd>
-  <dd>
-    <a href="#admx-removablestorage-cdanddvd-denyread-access-2">ADMX_RemovableStorage/CDandDVD_DenyRead_Access_2</a>
-  </dd>
-  <dd>
-    <a href="#admx-removablestorage-cdanddvd-denywrite-access-1">ADMX_RemovableStorage/CDandDVD_DenyWrite_Access_1</a>
-  </dd>
-  <dd>
-    <a href="#admx-removablestorage-cdanddvd-denywrite-access-2">ADMX_RemovableStorage/CDandDVD_DenyWrite_Access_2</a>
-  </dd>
-  <dd>
-    <a href="#admx-removablestorage-customclasses-denyread-access-1">ADMX_RemovableStorage/CustomClasses_DenyRead_Access_1</a>
-  </dd>
-  <dd>
-    <a href="#admx-removablestorage-customclasses-denyread-access-2">ADMX_RemovableStorage/CustomClasses_DenyRead_Access_2</a>
-  </dd>
-  <dd>
-    <a href="#admx-removablestorage-customclasses-denywrite-access-1">ADMX_RemovableStorage/CustomClasses_DenyWrite_Access_1</a>
-  </dd>
-  <dd>
-    <a href="#admx-removablestorage-customclasses-denywrite-access-2">ADMX_RemovableStorage/CustomClasses_DenyWrite_Access_2</a>
-  </dd>
-  <dd>
-    <a href="#admx-removablestorage-floppydrives-denyexecute-access-2">ADMX_RemovableStorage/FloppyDrives_DenyExecute_Access_2</a>
-  </dd>
-  <dd>
-    <a href="#admx-removablestorage-floppydrives-denyread-access-1">ADMX_RemovableStorage/FloppyDrives_DenyRead_Access_1</a>
-  </dd>
-  <dd>
-    <a href="#admx-removablestorage-floppydrives-denyread-access-2">ADMX_RemovableStorage/FloppyDrives_DenyRead_Access_2</a>
-  </dd>
-  <dd>
-    <a href="#admx-removablestorage-floppydrives-denywrite-access-1">ADMX_RemovableStorage/FloppyDrives_DenyWrite_Access_1</a>
-  </dd>
-  <dd>
-    <a href="#admx-removablestorage-floppydrives-denywrite-access-2">ADMX_RemovableStorage/FloppyDrives_DenyWrite_Access_2</a>
-  </dd>
-  <dd>
-    <a href="#admx-removablestorage-removabledisks-denyexecute-access-2">ADMX_RemovableStorage/RemovableDisks_DenyExecute_Access_2</a>
-  </dd>
-  <dd>
-    <a href="#admx-removablestorage-removabledisks-denyread-access-1">ADMX_RemovableStorage/RemovableDisks_DenyRead_Access_1</a>
-  </dd>
-  <dd>
-    <a href="#admx-removablestorage-removabledisks-denyread-access-2">ADMX_RemovableStorage/RemovableDisks_DenyRead_Access_2</a>
-  </dd>
-  <dd>
-    <a href="#admx-removablestorage-removabledisks-denywrite-access-1">ADMX_RemovableStorage/RemovableDisks_DenyWrite_Access_1</a>
-  </dd>
-  <dd>
-    <a href="#admx-removablestorage-removablestorageclasses-denyall-access-1">ADMX_RemovableStorage/RemovableStorageClasses_DenyAll_Access_1</a>
-  </dd>
-  <dd>
-    <a href="#admx-removablestorage-removablestorageclasses-denyall-access-2">ADMX_RemovableStorage/RemovableStorageClasses_DenyAll_Access_2</a>
-  </dd>
-  <dd>
-    <a href="#admx-removablestorage-removable-remote-allow-access">ADMX_RemovableStorage/Removable_Remote_Allow_Access</a>
-  </dd>
-  <dd>
-    <a href="#admx-removablestorage-tapedrives-denyexecute-access-2">ADMX_RemovableStorage/TapeDrives_DenyExecute_Access_2</a>
-  </dd>
-  <dd>
-    <a href="#admx-removablestorage-tapedrives-denyread-access-1">ADMX_RemovableStorage/TapeDrives_DenyRead_Access_1</a>
-  </dd>
-  <dd>
-    <a href="#admx-removablestorage-tapedrives-denyread-access-2">ADMX_RemovableStorage/TapeDrives_DenyRead_Access_2</a>
-  </dd>
-  <dd>
-    <a href="#admx-removablestorage-tapedrives-denywrite-access-1">ADMX_RemovableStorage/TapeDrives_DenyWrite_Access_1</a>
-  </dd>
-  <dd>
-    <a href="#admx-removablestorage-tapedrives-denywrite-access-2">ADMX_RemovableStorage/TapeDrives_DenyWrite_Access_2</a>
-  </dd>
-  <dd>
-    <a href="#admx-removablestorage-wpddevices-denyread-access-1">ADMX_RemovableStorage/WPDDevices_DenyRead_Access_1</a>
-  </dd>
-  <dd>
-    <a href="#admx-removablestorage-wpddevices-denyread-access-2">ADMX_RemovableStorage/WPDDevices_DenyRead_Access_2</a>
-  </dd>
-  <dd>
-    <a href="#admx-removablestorage-wpddevices-denywrite-access-1">ADMX_RemovableStorage/WPDDevices_DenyWrite_Access_1</a>
-  </dd>
-  <dd>
-    <a href="#admx-removablestorage-wpddevices-denywrite-access-2">ADMX_RemovableStorage/WPDDevices_DenyWrite_Access_2</a>
-  </dd>
-</dl>
+<!-- AccessRights_RebootTime_1-Begin -->
+## AccessRights_RebootTime_1
 
+<!-- AccessRights_RebootTime_1-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- AccessRights_RebootTime_1-Applicability-End -->
 
-<hr/>
+<!-- AccessRights_RebootTime_1-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_RemovableStorage/AccessRights_RebootTime_1
+```
+<!-- AccessRights_RebootTime_1-OmaUri-End -->
 
-<!--Policy-->
-<a href="" id="admx-removablestorage-accessrights-reboottime-1"></a>**ADMX_RemovableStorage/AccessRights_RebootTime_1**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- AccessRights_RebootTime_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting configures the amount of time (in seconds) that the operating system waits to reboot in order to enforce a change in access rights to removable storage devices.
 
-If you enable this policy setting, you can set the number of seconds you want the system to wait until a reboot.
+- If you enable this policy setting, you can set the number of seconds you want the system to wait until a reboot.
 
-If you disable or don't configure this setting, the operating system does not force a reboot.
+- If you disable or don't configure this setting, the operating system doesn't force a reboot.
 
 > [!NOTE]
-> If no reboot is forced, the access right does not take effect until the operating system is restarted.
+> If no reboot is forced, the access right doesn't take effect until the operating system is restarted.
+<!-- AccessRights_RebootTime_1-Description-End -->
 
-<!--/Description-->
+<!-- AccessRights_RebootTime_1-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AccessRights_RebootTime_1-Editable-End -->
 
+<!-- AccessRights_RebootTime_1-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Set time (in seconds) to force reboot*
--   GP name: *AccessRights_RebootTime_1*
--   GP path: *System\Removable Storage Access*
--   GP ADMX file name: *RemovableStorage.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AccessRights_RebootTime_1-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- AccessRights_RebootTime_1-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-removablestorage-accessrights-reboottime-2"></a>**ADMX_RemovableStorage/AccessRights_RebootTime_2**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | AccessRights_RebootTime_1 |
+| Friendly Name | Set time (in seconds) to force reboot |
+| Location | User Configuration |
+| Path | System > Removable Storage Access |
+| Registry Key Name | Software\Policies\Microsoft\Windows\RemovableStorageDevices |
+| Registry Value Name | RebootTimeinSeconds_state |
+| ADMX File Name | RemovableStorage.admx |
+<!-- AccessRights_RebootTime_1-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AccessRights_RebootTime_1-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AccessRights_RebootTime_1-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AccessRights_RebootTime_1-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AccessRights_RebootTime_2-Begin -->
+## AccessRights_RebootTime_2
 
-> [!div class = "checklist"]
-> * Device
+<!-- AccessRights_RebootTime_2-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- AccessRights_RebootTime_2-Applicability-End -->
 
-<hr/>
+<!-- AccessRights_RebootTime_2-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_RemovableStorage/AccessRights_RebootTime_2
+```
+<!-- AccessRights_RebootTime_2-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- AccessRights_RebootTime_2-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting configures the amount of time (in seconds) that the operating system waits to reboot in order to enforce a change in access rights to removable storage devices.
 
-If you enable this policy setting, you can set the number of seconds you want the system to wait until a reboot.
+- If you enable this policy setting, you can set the number of seconds you want the system to wait until a reboot.
 
-If you disable or don't configure this setting, the operating system does not force a reboot
+- If you disable or don't configure this setting, the operating system doesn't force a reboot.
 
 > [!NOTE]
-> If no reboot is forced, the access right does not take effect until the operating system is restarted.
+> If no reboot is forced, the access right doesn't take effect until the operating system is restarted.
+<!-- AccessRights_RebootTime_2-Description-End -->
 
-<!--/Description-->
+<!-- AccessRights_RebootTime_2-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AccessRights_RebootTime_2-Editable-End -->
 
+<!-- AccessRights_RebootTime_2-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Set time (in seconds) to force reboot*
--   GP name: *AccessRights_RebootTime_2*
--   GP path: *System\Removable Storage Access*
--   GP ADMX file name: *RemovableStorage.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AccessRights_RebootTime_2-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- AccessRights_RebootTime_2-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-removablestorage-cdanddvd-denyexecute-access-2"></a>**ADMX_RemovableStorage/CDandDVD_DenyExecute_Access_2**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | AccessRights_RebootTime_2 |
+| Friendly Name | Set time (in seconds) to force reboot |
+| Location | Computer Configuration |
+| Path | System > Removable Storage Access |
+| Registry Key Name | Software\Policies\Microsoft\Windows\RemovableStorageDevices |
+| Registry Value Name | RebootTimeinSeconds_state |
+| ADMX File Name | RemovableStorage.admx |
+<!-- AccessRights_RebootTime_2-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AccessRights_RebootTime_2-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AccessRights_RebootTime_2-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AccessRights_RebootTime_2-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- CDandDVD_DenyExecute_Access_2-Begin -->
+## CDandDVD_DenyExecute_Access_2
 
-> [!div class = "checklist"]
-> * Device
+<!-- CDandDVD_DenyExecute_Access_2-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- CDandDVD_DenyExecute_Access_2-Applicability-End -->
 
-<hr/>
+<!-- CDandDVD_DenyExecute_Access_2-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_RemovableStorage/CDandDVD_DenyExecute_Access_2
+```
+<!-- CDandDVD_DenyExecute_Access_2-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- CDandDVD_DenyExecute_Access_2-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting denies execute access to the CD and DVD removable storage class.
 
-If you enable this policy setting, execute access is denied to this removable storage class.
+- If you enable this policy setting, execute access is denied to this removable storage class.
 
-If you disable or don't configure this policy setting, execute access is allowed to this removable storage class.
+- If you disable or don't configure this policy setting, execute access is allowed to this removable storage class.
+<!-- CDandDVD_DenyExecute_Access_2-Description-End -->
 
-<!--/Description-->
+<!-- CDandDVD_DenyExecute_Access_2-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- CDandDVD_DenyExecute_Access_2-Editable-End -->
 
+<!-- CDandDVD_DenyExecute_Access_2-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *CD and DVD: Deny execute access*
--   GP name: *CDandDVD_DenyExecute_Access_2*
--   GP path: *System\Removable Storage Access*
--   GP ADMX file name: *RemovableStorage.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- CDandDVD_DenyExecute_Access_2-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- CDandDVD_DenyExecute_Access_2-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-removablestorage-cdanddvd-denyread-access-1"></a>**ADMX_RemovableStorage/CDandDVD_DenyRead_Access_1**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | CDandDVD_DenyExecute_Access_2 |
+| Friendly Name | CD and DVD: Deny execute access |
+| Location | Computer Configuration |
+| Path | System > Removable Storage Access |
+| Registry Key Name | Software\Policies\Microsoft\Windows\RemovableStorageDevices\{53f56308-b6bf-11d0-94f2-00a0c91efb8b} |
+| Registry Value Name | Deny_Execute |
+| ADMX File Name | RemovableStorage.admx |
+<!-- CDandDVD_DenyExecute_Access_2-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- CDandDVD_DenyExecute_Access_2-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- CDandDVD_DenyExecute_Access_2-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- CDandDVD_DenyExecute_Access_2-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- CDandDVD_DenyRead_Access_1-Begin -->
+## CDandDVD_DenyRead_Access_1
 
-> [!div class = "checklist"]
-> * User
+<!-- CDandDVD_DenyRead_Access_1-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- CDandDVD_DenyRead_Access_1-Applicability-End -->
 
-<hr/>
+<!-- CDandDVD_DenyRead_Access_1-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_RemovableStorage/CDandDVD_DenyRead_Access_1
+```
+<!-- CDandDVD_DenyRead_Access_1-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- CDandDVD_DenyRead_Access_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting denies read access to the CD and DVD removable storage class.
 
-If you enable this policy setting, read access is denied to this removable storage class.
+- If you enable this policy setting, read access is denied to this removable storage class.
 
-If you disable or don't configure this policy setting, read access is allowed to this removable storage class.
-<!--/Description-->
+- If you disable or don't configure this policy setting, read access is allowed to this removable storage class.
+<!-- CDandDVD_DenyRead_Access_1-Description-End -->
 
+<!-- CDandDVD_DenyRead_Access_1-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- CDandDVD_DenyRead_Access_1-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *CD and DVD: Deny read access*
--   GP name: *CDandDVD_DenyRead_Access_1*
--   GP path: *System\Removable Storage Access*
--   GP ADMX file name: *RemovableStorage.admx*
+<!-- CDandDVD_DenyRead_Access_1-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- CDandDVD_DenyRead_Access_1-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-removablestorage-cdanddvd-denyread-access-2"></a>**ADMX_RemovableStorage/CDandDVD_DenyRead_Access_2**  
+<!-- CDandDVD_DenyRead_Access_1-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | CDandDVD_DenyRead_Access_1 |
+| Friendly Name | CD and DVD: Deny read access |
+| Location | User Configuration |
+| Path | System > Removable Storage Access |
+| Registry Key Name | Software\Policies\Microsoft\Windows\RemovableStorageDevices\{53f56308-b6bf-11d0-94f2-00a0c91efb8b} |
+| Registry Value Name | Deny_Read |
+| ADMX File Name | RemovableStorage.admx |
+<!-- CDandDVD_DenyRead_Access_1-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- CDandDVD_DenyRead_Access_1-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- CDandDVD_DenyRead_Access_1-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- CDandDVD_DenyRead_Access_1-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- CDandDVD_DenyRead_Access_2-Begin -->
+## CDandDVD_DenyRead_Access_2
 
-<hr/>
+<!-- CDandDVD_DenyRead_Access_2-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- CDandDVD_DenyRead_Access_2-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- CDandDVD_DenyRead_Access_2-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_RemovableStorage/CDandDVD_DenyRead_Access_2
+```
+<!-- CDandDVD_DenyRead_Access_2-OmaUri-End -->
+
+<!-- CDandDVD_DenyRead_Access_2-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting denies read access to the CD and DVD removable storage class.
 
-If you enable this policy setting, read access is denied to this removable storage class.
+- If you enable this policy setting, read access is denied to this removable storage class.
 
-If you disable or don't configure this policy setting, read access is allowed to this removable storage class.
+- If you disable or don't configure this policy setting, read access is allowed to this removable storage class.
+<!-- CDandDVD_DenyRead_Access_2-Description-End -->
 
-<!--/Description-->
+<!-- CDandDVD_DenyRead_Access_2-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- CDandDVD_DenyRead_Access_2-Editable-End -->
 
+<!-- CDandDVD_DenyRead_Access_2-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *CD and DVD: Deny read access*
--   GP name: *CDandDVD_DenyRead_Access_2*
--   GP path: *System\Removable Storage Access*
--   GP ADMX file name: *RemovableStorage.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- CDandDVD_DenyRead_Access_2-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- CDandDVD_DenyRead_Access_2-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-removablestorage-cdanddvd-denywrite-access-1"></a>**ADMX_RemovableStorage/CDandDVD_DenyWrite_Access_1**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | CDandDVD_DenyRead_Access_2 |
+| Friendly Name | CD and DVD: Deny read access |
+| Location | Computer Configuration |
+| Path | System > Removable Storage Access |
+| Registry Key Name | Software\Policies\Microsoft\Windows\RemovableStorageDevices\{53f56308-b6bf-11d0-94f2-00a0c91efb8b} |
+| Registry Value Name | Deny_Read |
+| ADMX File Name | RemovableStorage.admx |
+<!-- CDandDVD_DenyRead_Access_2-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- CDandDVD_DenyRead_Access_2-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- CDandDVD_DenyRead_Access_2-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- CDandDVD_DenyRead_Access_2-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- CDandDVD_DenyWrite_Access_1-Begin -->
+## CDandDVD_DenyWrite_Access_1
 
-> [!div class = "checklist"]
-> * User
+<!-- CDandDVD_DenyWrite_Access_1-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- CDandDVD_DenyWrite_Access_1-Applicability-End -->
 
-<hr/>
+<!-- CDandDVD_DenyWrite_Access_1-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_RemovableStorage/CDandDVD_DenyWrite_Access_1
+```
+<!-- CDandDVD_DenyWrite_Access_1-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- CDandDVD_DenyWrite_Access_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting denies write access to the CD and DVD removable storage class.
 
-If you enable this policy setting, write access is denied to this removable storage class.
+- If you enable this policy setting, write access is denied to this removable storage class.
 
-If you disable or don't configure this policy setting, write access is allowed to this removable storage class.
+- If you disable or don't configure this policy setting, write access is allowed to this removable storage class.
+<!-- CDandDVD_DenyWrite_Access_1-Description-End -->
 
-<!--/Description-->
+<!-- CDandDVD_DenyWrite_Access_1-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- CDandDVD_DenyWrite_Access_1-Editable-End -->
 
+<!-- CDandDVD_DenyWrite_Access_1-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *CD and DVD: Deny write access*
--   GP name: *CDandDVD_DenyWrite_Access_1*
--   GP path: *System\Removable Storage Access*
--   GP ADMX file name: *RemovableStorage.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- CDandDVD_DenyWrite_Access_1-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- CDandDVD_DenyWrite_Access_1-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-removablestorage-cdanddvd-denywrite-access-2"></a>**ADMX_RemovableStorage/CDandDVD_DenyWrite_Access_2**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | CDandDVD_DenyWrite_Access_1 |
+| Friendly Name | CD and DVD: Deny write access |
+| Location | User Configuration |
+| Path | System > Removable Storage Access |
+| Registry Key Name | Software\Policies\Microsoft\Windows\RemovableStorageDevices\{53f56308-b6bf-11d0-94f2-00a0c91efb8b} |
+| Registry Value Name | Deny_Write |
+| ADMX File Name | RemovableStorage.admx |
+<!-- CDandDVD_DenyWrite_Access_1-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- CDandDVD_DenyWrite_Access_1-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- CDandDVD_DenyWrite_Access_1-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- CDandDVD_DenyWrite_Access_1-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- CDandDVD_DenyWrite_Access_2-Begin -->
+## CDandDVD_DenyWrite_Access_2
 
-> [!div class = "checklist"]
-> * Device
+<!-- CDandDVD_DenyWrite_Access_2-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- CDandDVD_DenyWrite_Access_2-Applicability-End -->
 
-<hr/>
+<!-- CDandDVD_DenyWrite_Access_2-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_RemovableStorage/CDandDVD_DenyWrite_Access_2
+```
+<!-- CDandDVD_DenyWrite_Access_2-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- CDandDVD_DenyWrite_Access_2-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting denies write access to the CD and DVD removable storage class.
 
-If you enable this policy setting, write access is denied to this removable storage class.
+- If you enable this policy setting, write access is denied to this removable storage class.
 
-If you disable or don't configure this policy setting, write access is allowed to this removable storage class.
+- If you disable or don't configure this policy setting, write access is allowed to this removable storage class.
+<!-- CDandDVD_DenyWrite_Access_2-Description-End -->
 
-<!--/Description-->
+<!-- CDandDVD_DenyWrite_Access_2-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- CDandDVD_DenyWrite_Access_2-Editable-End -->
 
+<!-- CDandDVD_DenyWrite_Access_2-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *CD and DVD: Deny write access*
--   GP name: *CDandDVD_DenyWrite_Access_2*
--   GP path: *System\Removable Storage Access*
--   GP ADMX file name: *RemovableStorage.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- CDandDVD_DenyWrite_Access_2-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- CDandDVD_DenyWrite_Access_2-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-removablestorage-customclasses-denyread-access-1"></a>**ADMX_RemovableStorage/CustomClasses_DenyRead_Access_1**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | CDandDVD_DenyWrite_Access_2 |
+| Friendly Name | CD and DVD: Deny write access |
+| Location | Computer Configuration |
+| Path | System > Removable Storage Access |
+| Registry Key Name | Software\Policies\Microsoft\Windows\RemovableStorageDevices\{53f56308-b6bf-11d0-94f2-00a0c91efb8b} |
+| Registry Value Name | Deny_Write |
+| ADMX File Name | RemovableStorage.admx |
+<!-- CDandDVD_DenyWrite_Access_2-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- CDandDVD_DenyWrite_Access_2-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- CDandDVD_DenyWrite_Access_2-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- CDandDVD_DenyWrite_Access_2-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- CustomClasses_DenyRead_Access_1-Begin -->
+## CustomClasses_DenyRead_Access_1
 
-> [!div class = "checklist"]
-> * User
+<!-- CustomClasses_DenyRead_Access_1-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- CustomClasses_DenyRead_Access_1-Applicability-End -->
 
-<hr/>
+<!-- CustomClasses_DenyRead_Access_1-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_RemovableStorage/CustomClasses_DenyRead_Access_1
+```
+<!-- CustomClasses_DenyRead_Access_1-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- CustomClasses_DenyRead_Access_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting denies read access to custom removable storage classes.
 
-If you enable this policy setting, read access is denied to these removable storage classes.
+- If you enable this policy setting, read access is denied to these removable storage classes.
 
-If you disable or don't configure this policy setting, read access is allowed to these removable storage classes.
+- If you disable or don't configure this policy setting, read access is allowed to these removable storage classes.
+<!-- CustomClasses_DenyRead_Access_1-Description-End -->
 
-<!--/Description-->
+<!-- CustomClasses_DenyRead_Access_1-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- CustomClasses_DenyRead_Access_1-Editable-End -->
 
+<!-- CustomClasses_DenyRead_Access_1-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Custom Classes: Deny read access*
--   GP name: *CustomClasses_DenyRead_Access_1*
--   GP path: *System\Removable Storage Access*
--   GP ADMX file name: *RemovableStorage.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- CustomClasses_DenyRead_Access_1-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- CustomClasses_DenyRead_Access_1-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-removablestorage-customclasses-denyread-access-2"></a>**ADMX_RemovableStorage/CustomClasses_DenyRead_Access_2**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | CustomClasses_DenyRead_Access_1 |
+| Friendly Name | Custom Classes: Deny read access |
+| Location | User Configuration |
+| Path | System > Removable Storage Access |
+| Registry Key Name | Software\Policies\Microsoft\Windows\RemovableStorageDevices\Custom\Deny_Read |
+| Registry Value Name | Deny_Read |
+| ADMX File Name | RemovableStorage.admx |
+<!-- CustomClasses_DenyRead_Access_1-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- CustomClasses_DenyRead_Access_1-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- CustomClasses_DenyRead_Access_1-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- CustomClasses_DenyRead_Access_1-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- CustomClasses_DenyRead_Access_2-Begin -->
+## CustomClasses_DenyRead_Access_2
 
-> [!div class = "checklist"]
-> * Device
+<!-- CustomClasses_DenyRead_Access_2-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- CustomClasses_DenyRead_Access_2-Applicability-End -->
 
-<hr/>
+<!-- CustomClasses_DenyRead_Access_2-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_RemovableStorage/CustomClasses_DenyRead_Access_2
+```
+<!-- CustomClasses_DenyRead_Access_2-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- CustomClasses_DenyRead_Access_2-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting denies read access to custom removable storage classes.
 
-If you enable this policy setting, read access is denied to these removable storage classes.
+- If you enable this policy setting, read access is denied to these removable storage classes.
 
-If you disable or don't configure this policy setting, read access is allowed to these removable storage classes.
+- If you disable or don't configure this policy setting, read access is allowed to these removable storage classes.
+<!-- CustomClasses_DenyRead_Access_2-Description-End -->
 
-<!--/Description-->
+<!-- CustomClasses_DenyRead_Access_2-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- CustomClasses_DenyRead_Access_2-Editable-End -->
 
+<!-- CustomClasses_DenyRead_Access_2-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Custom Classes: Deny read access*
--   GP name: *CustomClasses_DenyRead_Access_2*
--   GP path: *System\Removable Storage Access*
--   GP ADMX file name: *RemovableStorage.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- CustomClasses_DenyRead_Access_2-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- CustomClasses_DenyRead_Access_2-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-removablestorage-customclasses-denywrite-access-1"></a>**ADMX_RemovableStorage/CustomClasses_DenyWrite_Access_1**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | CustomClasses_DenyRead_Access_2 |
+| Friendly Name | Custom Classes: Deny read access |
+| Location | Computer Configuration |
+| Path | System > Removable Storage Access |
+| Registry Key Name | Software\Policies\Microsoft\Windows\RemovableStorageDevices\Custom\Deny_Read |
+| Registry Value Name | Deny_Read |
+| ADMX File Name | RemovableStorage.admx |
+<!-- CustomClasses_DenyRead_Access_2-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- CustomClasses_DenyRead_Access_2-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- CustomClasses_DenyRead_Access_2-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- CustomClasses_DenyRead_Access_2-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- CustomClasses_DenyWrite_Access_1-Begin -->
+## CustomClasses_DenyWrite_Access_1
 
-> [!div class = "checklist"]
-> * User
+<!-- CustomClasses_DenyWrite_Access_1-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- CustomClasses_DenyWrite_Access_1-Applicability-End -->
 
-<hr/>
+<!-- CustomClasses_DenyWrite_Access_1-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_RemovableStorage/CustomClasses_DenyWrite_Access_1
+```
+<!-- CustomClasses_DenyWrite_Access_1-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- CustomClasses_DenyWrite_Access_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting denies write access to custom removable storage classes.
 
-If you enable this policy setting, write access is denied to these removable storage classes.
+- If you enable this policy setting, write access is denied to these removable storage classes.
 
-If you disable or don't configure this policy setting, write access is allowed to these removable storage classes.
+- If you disable or don't configure this policy setting, write access is allowed to these removable storage classes.
+<!-- CustomClasses_DenyWrite_Access_1-Description-End -->
 
-<!--/Description-->
+<!-- CustomClasses_DenyWrite_Access_1-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- CustomClasses_DenyWrite_Access_1-Editable-End -->
 
+<!-- CustomClasses_DenyWrite_Access_1-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Custom Classes: Deny write access*
--   GP name: *CustomClasses_DenyWrite_Access_1*
--   GP path: *System\Removable Storage Access*
--   GP ADMX file name: *RemovableStorage.admx*
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- CustomClasses_DenyWrite_Access_1-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-removablestorage-customclasses-denywrite-access-2"></a>**ADMX_RemovableStorage/CustomClasses_DenyWrite_Access_2**  
+<!-- CustomClasses_DenyWrite_Access_1-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | CustomClasses_DenyWrite_Access_1 |
+| Friendly Name | Custom Classes: Deny write access |
+| Location | User Configuration |
+| Path | System > Removable Storage Access |
+| Registry Key Name | Software\Policies\Microsoft\Windows\RemovableStorageDevices\Custom\Deny_Write |
+| Registry Value Name | Deny_Write |
+| ADMX File Name | RemovableStorage.admx |
+<!-- CustomClasses_DenyWrite_Access_1-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- CustomClasses_DenyWrite_Access_1-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- CustomClasses_DenyWrite_Access_1-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- CustomClasses_DenyWrite_Access_1-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- CustomClasses_DenyWrite_Access_2-Begin -->
+## CustomClasses_DenyWrite_Access_2
 
-<hr/>
+<!-- CustomClasses_DenyWrite_Access_2-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- CustomClasses_DenyWrite_Access_2-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- CustomClasses_DenyWrite_Access_2-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_RemovableStorage/CustomClasses_DenyWrite_Access_2
+```
+<!-- CustomClasses_DenyWrite_Access_2-OmaUri-End -->
+
+<!-- CustomClasses_DenyWrite_Access_2-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting denies write access to custom removable storage classes.
 
-If you enable this policy setting, write access is denied to these removable storage classes.
+- If you enable this policy setting, write access is denied to these removable storage classes.
 
-If you disable or don't configure this policy setting, write access is allowed to these removable storage classes.
+- If you disable or don't configure this policy setting, write access is allowed to these removable storage classes.
+<!-- CustomClasses_DenyWrite_Access_2-Description-End -->
 
-<!--/Description-->
+<!-- CustomClasses_DenyWrite_Access_2-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- CustomClasses_DenyWrite_Access_2-Editable-End -->
 
+<!-- CustomClasses_DenyWrite_Access_2-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Custom Classes: Deny write access*
--   GP name: *CustomClasses_DenyWrite_Access_2*
--   GP path: *System\Removable Storage Access*
--   GP ADMX file name: *RemovableStorage.admx*
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- CustomClasses_DenyWrite_Access_2-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-removablestorage-floppydrives-denyexecute-access-2"></a>**ADMX_RemovableStorage/FloppyDrives_DenyExecute_Access_2**  
+<!-- CustomClasses_DenyWrite_Access_2-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | CustomClasses_DenyWrite_Access_2 |
+| Friendly Name | Custom Classes: Deny write access |
+| Location | Computer Configuration |
+| Path | System > Removable Storage Access |
+| Registry Key Name | Software\Policies\Microsoft\Windows\RemovableStorageDevices\Custom\Deny_Write |
+| Registry Value Name | Deny_Write |
+| ADMX File Name | RemovableStorage.admx |
+<!-- CustomClasses_DenyWrite_Access_2-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- CustomClasses_DenyWrite_Access_2-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- CustomClasses_DenyWrite_Access_2-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- CustomClasses_DenyWrite_Access_2-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- FloppyDrives_DenyExecute_Access_2-Begin -->
+## FloppyDrives_DenyExecute_Access_2
 
-<hr/>
+<!-- FloppyDrives_DenyExecute_Access_2-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- FloppyDrives_DenyExecute_Access_2-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- FloppyDrives_DenyExecute_Access_2-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_RemovableStorage/FloppyDrives_DenyExecute_Access_2
+```
+<!-- FloppyDrives_DenyExecute_Access_2-OmaUri-End -->
+
+<!-- FloppyDrives_DenyExecute_Access_2-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting denies execute access to the Floppy Drives removable storage class, including USB Floppy Drives.
 
-If you enable this policy setting, execute access is denied to this removable storage class.
+- If you enable this policy setting, execute access is denied to this removable storage class.
 
-If you disable or don't configure this policy setting, execute access is allowed to this removable storage class.
+- If you disable or don't configure this policy setting, execute access is allowed to this removable storage class.
+<!-- FloppyDrives_DenyExecute_Access_2-Description-End -->
 
-<!--/Description-->
+<!-- FloppyDrives_DenyExecute_Access_2-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- FloppyDrives_DenyExecute_Access_2-Editable-End -->
 
+<!-- FloppyDrives_DenyExecute_Access_2-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Floppy Drives: Deny execute access*
--   GP name: *FloppyDrives_DenyExecute_Access_2*
--   GP path: *System\Removable Storage Access*
--   GP ADMX file name: *RemovableStorage.admx*
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- FloppyDrives_DenyExecute_Access_2-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-removablestorage-floppydrives-denyread-access-1"></a>**ADMX_RemovableStorage/FloppyDrives_DenyRead_Access_1**  
+<!-- FloppyDrives_DenyExecute_Access_2-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | FloppyDrives_DenyExecute_Access_2 |
+| Friendly Name | Floppy Drives: Deny execute access |
+| Location | Computer Configuration |
+| Path | System > Removable Storage Access |
+| Registry Key Name | Software\Policies\Microsoft\Windows\RemovableStorageDevices\{53f56311-b6bf-11d0-94f2-00a0c91efb8b} |
+| Registry Value Name | Deny_Execute |
+| ADMX File Name | RemovableStorage.admx |
+<!-- FloppyDrives_DenyExecute_Access_2-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- FloppyDrives_DenyExecute_Access_2-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- FloppyDrives_DenyExecute_Access_2-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- FloppyDrives_DenyExecute_Access_2-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- FloppyDrives_DenyRead_Access_1-Begin -->
+## FloppyDrives_DenyRead_Access_1
 
-<hr/>
+<!-- FloppyDrives_DenyRead_Access_1-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- FloppyDrives_DenyRead_Access_1-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- FloppyDrives_DenyRead_Access_1-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_RemovableStorage/FloppyDrives_DenyRead_Access_1
+```
+<!-- FloppyDrives_DenyRead_Access_1-OmaUri-End -->
+
+<!-- FloppyDrives_DenyRead_Access_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting denies read access to the Floppy Drives removable storage class, including USB Floppy Drives.
 
-If you enable this policy setting, read access is denied to this removable storage class.
+- If you enable this policy setting, read access is denied to this removable storage class.
 
-If you disable or don't configure this policy setting, read access is allowed to this removable storage class.
+- If you disable or don't configure this policy setting, read access is allowed to this removable storage class.
+<!-- FloppyDrives_DenyRead_Access_1-Description-End -->
 
-<!--/Description-->
+<!-- FloppyDrives_DenyRead_Access_1-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- FloppyDrives_DenyRead_Access_1-Editable-End -->
 
+<!-- FloppyDrives_DenyRead_Access_1-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Floppy Drives: Deny read access*
--   GP name: *FloppyDrives_DenyRead_Access_1*
--   GP path: *System\Removable Storage Access*
--   GP ADMX file name: *RemovableStorage.admx*
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- FloppyDrives_DenyRead_Access_1-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-removablestorage-floppydrives-denyread-access-2"></a>**ADMX_RemovableStorage/FloppyDrives_DenyRead_Access_2**  
+<!-- FloppyDrives_DenyRead_Access_1-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | FloppyDrives_DenyRead_Access_1 |
+| Friendly Name | Floppy Drives: Deny read access |
+| Location | User Configuration |
+| Path | System > Removable Storage Access |
+| Registry Key Name | Software\Policies\Microsoft\Windows\RemovableStorageDevices\{53f56311-b6bf-11d0-94f2-00a0c91efb8b} |
+| Registry Value Name | Deny_Read |
+| ADMX File Name | RemovableStorage.admx |
+<!-- FloppyDrives_DenyRead_Access_1-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- FloppyDrives_DenyRead_Access_1-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- FloppyDrives_DenyRead_Access_1-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- FloppyDrives_DenyRead_Access_1-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- FloppyDrives_DenyRead_Access_2-Begin -->
+## FloppyDrives_DenyRead_Access_2
 
-<hr/>
+<!-- FloppyDrives_DenyRead_Access_2-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- FloppyDrives_DenyRead_Access_2-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- FloppyDrives_DenyRead_Access_2-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_RemovableStorage/FloppyDrives_DenyRead_Access_2
+```
+<!-- FloppyDrives_DenyRead_Access_2-OmaUri-End -->
+
+<!-- FloppyDrives_DenyRead_Access_2-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting denies read access to the Floppy Drives removable storage class, including USB Floppy Drives.
 
-If you enable this policy setting, read access is denied to this removable storage class.
+- If you enable this policy setting, read access is denied to this removable storage class.
 
-If you disable or don't configure this policy setting, read access is allowed to this removable storage class.
+- If you disable or don't configure this policy setting, read access is allowed to this removable storage class.
+<!-- FloppyDrives_DenyRead_Access_2-Description-End -->
 
-<!--/Description-->
+<!-- FloppyDrives_DenyRead_Access_2-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- FloppyDrives_DenyRead_Access_2-Editable-End -->
 
+<!-- FloppyDrives_DenyRead_Access_2-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Floppy Drives: Deny read access*
--   GP name: *FloppyDrives_DenyRead_Access_2*
--   GP path: *System\Removable Storage Access*
--   GP ADMX file name: *RemovableStorage.admx*
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- FloppyDrives_DenyRead_Access_2-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-removablestorage-floppydrives-denywrite-access-1"></a>**ADMX_RemovableStorage/FloppyDrives_DenyWrite_Access_1**  
+<!-- FloppyDrives_DenyRead_Access_2-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | FloppyDrives_DenyRead_Access_2 |
+| Friendly Name | Floppy Drives: Deny read access |
+| Location | Computer Configuration |
+| Path | System > Removable Storage Access |
+| Registry Key Name | Software\Policies\Microsoft\Windows\RemovableStorageDevices\{53f56311-b6bf-11d0-94f2-00a0c91efb8b} |
+| Registry Value Name | Deny_Read |
+| ADMX File Name | RemovableStorage.admx |
+<!-- FloppyDrives_DenyRead_Access_2-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- FloppyDrives_DenyRead_Access_2-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- FloppyDrives_DenyRead_Access_2-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- FloppyDrives_DenyRead_Access_2-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- FloppyDrives_DenyWrite_Access_1-Begin -->
+## FloppyDrives_DenyWrite_Access_1
 
-<hr/>
+<!-- FloppyDrives_DenyWrite_Access_1-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- FloppyDrives_DenyWrite_Access_1-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- FloppyDrives_DenyWrite_Access_1-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_RemovableStorage/FloppyDrives_DenyWrite_Access_1
+```
+<!-- FloppyDrives_DenyWrite_Access_1-OmaUri-End -->
+
+<!-- FloppyDrives_DenyWrite_Access_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting denies write access to the Floppy Drives removable storage class, including USB Floppy Drives.
 
-If you enable this policy setting, write access is denied to this removable storage class.
+- If you enable this policy setting, write access is denied to this removable storage class.
 
-If you disable or don't configure this policy setting, write access is allowed to this removable storage class.
-<!--/Description-->
+- If you disable or don't configure this policy setting, write access is allowed to this removable storage class.
+<!-- FloppyDrives_DenyWrite_Access_1-Description-End -->
 
+<!-- FloppyDrives_DenyWrite_Access_1-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- FloppyDrives_DenyWrite_Access_1-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Floppy Drives: Deny write access*
--   GP name: *FloppyDrives_DenyWrite_Access_1*
--   GP path: *System\Removable Storage Access*
--   GP ADMX file name: *RemovableStorage.admx*
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- FloppyDrives_DenyWrite_Access_1-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Policy-->
-<a href="" id="admx-removablestorage-floppydrives-denywrite-access-2"></a>**ADMX_RemovableStorage/FloppyDrives_DenyWrite_Access_2**  
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- FloppyDrives_DenyWrite_Access_1-DFProperties-End -->
 
-<!--SupportedSKUs-->
+<!-- FloppyDrives_DenyWrite_Access_1-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+**ADMX mapping**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | FloppyDrives_DenyWrite_Access_1 |
+| Friendly Name | Floppy Drives: Deny write access |
+| Location | User Configuration |
+| Path | System > Removable Storage Access |
+| Registry Key Name | Software\Policies\Microsoft\Windows\RemovableStorageDevices\{53f56311-b6bf-11d0-94f2-00a0c91efb8b} |
+| Registry Value Name | Deny_Write |
+| ADMX File Name | RemovableStorage.admx |
+<!-- FloppyDrives_DenyWrite_Access_1-AdmxBacked-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- FloppyDrives_DenyWrite_Access_1-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- FloppyDrives_DenyWrite_Access_1-Examples-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- FloppyDrives_DenyWrite_Access_1-End -->
 
-<hr/>
+<!-- FloppyDrives_DenyWrite_Access_2-Begin -->
+## FloppyDrives_DenyWrite_Access_2
 
-<!--/Scope-->
-<!--Description-->
+<!-- FloppyDrives_DenyWrite_Access_2-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- FloppyDrives_DenyWrite_Access_2-Applicability-End -->
+
+<!-- FloppyDrives_DenyWrite_Access_2-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_RemovableStorage/FloppyDrives_DenyWrite_Access_2
+```
+<!-- FloppyDrives_DenyWrite_Access_2-OmaUri-End -->
+
+<!-- FloppyDrives_DenyWrite_Access_2-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting denies write access to the Floppy Drives removable storage class, including USB Floppy Drives.
 
-If you enable this policy setting, write access is denied to this removable storage class.
+- If you enable this policy setting, write access is denied to this removable storage class.
 
-If you disable or don't configure this policy setting, write access is allowed to this removable storage class.
+- If you disable or don't configure this policy setting, write access is allowed to this removable storage class.
+<!-- FloppyDrives_DenyWrite_Access_2-Description-End -->
 
-<!--/Description-->
+<!-- FloppyDrives_DenyWrite_Access_2-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- FloppyDrives_DenyWrite_Access_2-Editable-End -->
 
+<!-- FloppyDrives_DenyWrite_Access_2-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Floppy Drives: Deny write access*
--   GP name: *FloppyDrives_DenyWrite_Access_2*
--   GP path: *System\Removable Storage Access*
--   GP ADMX file name: *RemovableStorage.admx*
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- FloppyDrives_DenyWrite_Access_2-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-removablestorage-removabledisks-denyexecute-access-2"></a>**ADMX_RemovableStorage/RemovableDisks_DenyExecute_Access_2**  
+<!-- FloppyDrives_DenyWrite_Access_2-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | FloppyDrives_DenyWrite_Access_2 |
+| Friendly Name | Floppy Drives: Deny write access |
+| Location | Computer Configuration |
+| Path | System > Removable Storage Access |
+| Registry Key Name | Software\Policies\Microsoft\Windows\RemovableStorageDevices\{53f56311-b6bf-11d0-94f2-00a0c91efb8b} |
+| Registry Value Name | Deny_Write |
+| ADMX File Name | RemovableStorage.admx |
+<!-- FloppyDrives_DenyWrite_Access_2-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- FloppyDrives_DenyWrite_Access_2-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- FloppyDrives_DenyWrite_Access_2-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- FloppyDrives_DenyWrite_Access_2-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- Removable_Remote_Allow_Access-Begin -->
+## Removable_Remote_Allow_Access
 
-<hr/>
+<!-- Removable_Remote_Allow_Access-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Removable_Remote_Allow_Access-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- Removable_Remote_Allow_Access-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_RemovableStorage/Removable_Remote_Allow_Access
+```
+<!-- Removable_Remote_Allow_Access-OmaUri-End -->
+
+<!-- Removable_Remote_Allow_Access-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting grants normal users direct access to removable storage devices in remote sessions.
+
+- If you enable this policy setting, remote users can open direct handles to removable storage devices in remote sessions.
+
+- If you disable or don't configure this policy setting, remote users can't open direct handles to removable storage devices in remote sessions.
+<!-- Removable_Remote_Allow_Access-Description-End -->
+
+<!-- Removable_Remote_Allow_Access-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Removable_Remote_Allow_Access-Editable-End -->
+
+<!-- Removable_Remote_Allow_Access-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Removable_Remote_Allow_Access-DFProperties-End -->
+
+<!-- Removable_Remote_Allow_Access-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Removable_Remote_Allow_Access |
+| Friendly Name | All Removable Storage: Allow direct access in remote sessions |
+| Location | Computer Configuration |
+| Path | System > Removable Storage Access |
+| Registry Key Name | Software\Policies\Microsoft\Windows\RemovableStorageDevices |
+| Registry Value Name | AllowRemoteDASD |
+| ADMX File Name | RemovableStorage.admx |
+<!-- Removable_Remote_Allow_Access-AdmxBacked-End -->
+
+<!-- Removable_Remote_Allow_Access-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Removable_Remote_Allow_Access-Examples-End -->
+
+<!-- Removable_Remote_Allow_Access-End -->
+
+<!-- RemovableDisks_DenyExecute_Access_2-Begin -->
+## RemovableDisks_DenyExecute_Access_2
+
+<!-- RemovableDisks_DenyExecute_Access_2-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- RemovableDisks_DenyExecute_Access_2-Applicability-End -->
+
+<!-- RemovableDisks_DenyExecute_Access_2-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_RemovableStorage/RemovableDisks_DenyExecute_Access_2
+```
+<!-- RemovableDisks_DenyExecute_Access_2-OmaUri-End -->
+
+<!-- RemovableDisks_DenyExecute_Access_2-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting denies execute access to removable disks.
 
-If you enable this policy setting, execute access is denied to this removable storage class.
+- If you enable this policy setting, execute access is denied to this removable storage class.
 
-If you disable or don't configure this policy setting, execute access is allowed to this removable storage class.
-<!--/Description-->
+- If you disable or don't configure this policy setting, execute access is allowed to this removable storage class.
+<!-- RemovableDisks_DenyExecute_Access_2-Description-End -->
 
+<!-- RemovableDisks_DenyExecute_Access_2-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- RemovableDisks_DenyExecute_Access_2-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Removable Disks: Deny execute access*
--   GP name: *RemovableDisks_DenyExecute_Access_2*
--   GP path: *System\Removable Storage Access*
--   GP ADMX file name: *RemovableStorage.admx*
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- RemovableDisks_DenyExecute_Access_2-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Policy-->
-<a href="" id="admx-removablestorage-removabledisks-denyread-access-1"></a>**ADMX_RemovableStorage/RemovableDisks_DenyRead_Access_1**  
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- RemovableDisks_DenyExecute_Access_2-DFProperties-End -->
 
-<!--SupportedSKUs-->
+<!-- RemovableDisks_DenyExecute_Access_2-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+**ADMX mapping**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | RemovableDisks_DenyExecute_Access_2 |
+| Friendly Name | Removable Disks: Deny execute access |
+| Location | Computer Configuration |
+| Path | System > Removable Storage Access |
+| Registry Key Name | Software\Policies\Microsoft\Windows\RemovableStorageDevices\{53f5630d-b6bf-11d0-94f2-00a0c91efb8b} |
+| Registry Value Name | Deny_Execute |
+| ADMX File Name | RemovableStorage.admx |
+<!-- RemovableDisks_DenyExecute_Access_2-AdmxBacked-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- RemovableDisks_DenyExecute_Access_2-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- RemovableDisks_DenyExecute_Access_2-Examples-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- RemovableDisks_DenyExecute_Access_2-End -->
 
-<hr/>
+<!-- RemovableDisks_DenyRead_Access_1-Begin -->
+## RemovableDisks_DenyRead_Access_1
 
-<!--/Scope-->
-<!--Description-->
+<!-- RemovableDisks_DenyRead_Access_1-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- RemovableDisks_DenyRead_Access_1-Applicability-End -->
+
+<!-- RemovableDisks_DenyRead_Access_1-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_RemovableStorage/RemovableDisks_DenyRead_Access_1
+```
+<!-- RemovableDisks_DenyRead_Access_1-OmaUri-End -->
+
+<!-- RemovableDisks_DenyRead_Access_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting denies read access to removable disks.
 
-If you enable this policy setting, read access is denied to this removable storage class.
+- If you enable this policy setting, read access is denied to this removable storage class.
 
-If you disable or don't configure this policy setting, read access is allowed to this removable storage class.
+- If you disable or don't configure this policy setting, read access is allowed to this removable storage class.
+<!-- RemovableDisks_DenyRead_Access_1-Description-End -->
 
-<!--/Description-->
+<!-- RemovableDisks_DenyRead_Access_1-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- RemovableDisks_DenyRead_Access_1-Editable-End -->
 
+<!-- RemovableDisks_DenyRead_Access_1-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Removable Disks: Deny read access*
--   GP name: *RemovableDisks_DenyRead_Access_1*
--   GP path: *System\Removable Storage Access*
--   GP ADMX file name: *RemovableStorage.admx*
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- RemovableDisks_DenyRead_Access_1-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-removablestorage-removabledisks-denyread-access-2"></a>**ADMX_RemovableStorage/RemovableDisks_DenyRead_Access_2**  
+<!-- RemovableDisks_DenyRead_Access_1-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | RemovableDisks_DenyRead_Access_1 |
+| Friendly Name | Removable Disks: Deny read access |
+| Location | User Configuration |
+| Path | System > Removable Storage Access |
+| Registry Key Name | Software\Policies\Microsoft\Windows\RemovableStorageDevices\{53f5630d-b6bf-11d0-94f2-00a0c91efb8b} |
+| Registry Value Name | Deny_Read |
+| ADMX File Name | RemovableStorage.admx |
+<!-- RemovableDisks_DenyRead_Access_1-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- RemovableDisks_DenyRead_Access_1-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- RemovableDisks_DenyRead_Access_1-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- RemovableDisks_DenyRead_Access_1-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- RemovableDisks_DenyRead_Access_2-Begin -->
+## RemovableDisks_DenyRead_Access_2
 
-<hr/>
+<!-- RemovableDisks_DenyRead_Access_2-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- RemovableDisks_DenyRead_Access_2-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- RemovableDisks_DenyRead_Access_2-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_RemovableStorage/RemovableDisks_DenyRead_Access_2
+```
+<!-- RemovableDisks_DenyRead_Access_2-OmaUri-End -->
+
+<!-- RemovableDisks_DenyRead_Access_2-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting denies read access to removable disks.
 
-If you enable this policy setting, read access is denied to this removable storage class.
+- If you enable this policy setting, read access is denied to this removable storage class.
 
-If you disable or don't configure this policy setting, read access is allowed to this removable storage class.
-<!--/Description-->
+- If you disable or don't configure this policy setting, read access is allowed to this removable storage class.
+<!-- RemovableDisks_DenyRead_Access_2-Description-End -->
 
+<!-- RemovableDisks_DenyRead_Access_2-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- RemovableDisks_DenyRead_Access_2-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Removable Disks: Deny read access*
--   GP name: *RemovableDisks_DenyRead_Access_2*
--   GP path: *System\Removable Storage Access*
--   GP ADMX file name: *RemovableStorage.admx*
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- RemovableDisks_DenyRead_Access_2-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Policy-->
-<a href="" id="admx-removablestorage-removabledisks-denywrite-access-1"></a>**ADMX_RemovableStorage/RemovableDisks_DenyWrite_Access_1**  
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- RemovableDisks_DenyRead_Access_2-DFProperties-End -->
 
-<!--SupportedSKUs-->
+<!-- RemovableDisks_DenyRead_Access_2-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+**ADMX mapping**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | RemovableDisks_DenyRead_Access_2 |
+| Friendly Name | Removable Disks: Deny read access |
+| Location | Computer Configuration |
+| Path | System > Removable Storage Access |
+| Registry Key Name | Software\Policies\Microsoft\Windows\RemovableStorageDevices\{53f5630d-b6bf-11d0-94f2-00a0c91efb8b} |
+| Registry Value Name | Deny_Read |
+| ADMX File Name | RemovableStorage.admx |
+<!-- RemovableDisks_DenyRead_Access_2-AdmxBacked-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- RemovableDisks_DenyRead_Access_2-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- RemovableDisks_DenyRead_Access_2-Examples-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- RemovableDisks_DenyRead_Access_2-End -->
 
-<hr/>
+<!-- RemovableDisks_DenyWrite_Access_1-Begin -->
+## RemovableDisks_DenyWrite_Access_1
 
-<!--/Scope-->
-<!--Description-->
+<!-- RemovableDisks_DenyWrite_Access_1-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- RemovableDisks_DenyWrite_Access_1-Applicability-End -->
+
+<!-- RemovableDisks_DenyWrite_Access_1-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_RemovableStorage/RemovableDisks_DenyWrite_Access_1
+```
+<!-- RemovableDisks_DenyWrite_Access_1-OmaUri-End -->
+
+<!-- RemovableDisks_DenyWrite_Access_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting denies write access to removable disks.
 
-If you enable this policy setting, write access is denied to this removable storage class.
+- If you enable this policy setting, write access is denied to this removable storage class.
 
-If you disable or don't configure this policy setting, write access is allowed to this removable storage class.
+- If you disable or don't configure this policy setting, write access is allowed to this removable storage class.
 
 > [!NOTE]
-> To require that users write data to BitLocker-protected storage, enable the policy setting "Deny write access to drives not protected by BitLocker," which is located in "Computer Configuration\Administrative Templates\Windows Components\BitLocker Drive Encryption\Removable Data Drives."
+> To require that users write data to BitLocker-protected storage, enable the policy setting "Deny write access to drives not protected by BitLocker," which is located in "Computer Configuration\Administrative Templates\Windows Components\BitLocker Drive Encryption\Removable Data Drives".
+<!-- RemovableDisks_DenyWrite_Access_1-Description-End -->
 
-<!--/Description-->
+<!-- RemovableDisks_DenyWrite_Access_1-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- RemovableDisks_DenyWrite_Access_1-Editable-End -->
 
+<!-- RemovableDisks_DenyWrite_Access_1-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Removable Disks: Deny write access*
--   GP name: *RemovableDisks_DenyWrite_Access_1*
--   GP path: *System\Removable Storage Access*
--   GP ADMX file name: *RemovableStorage.admx*
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- RemovableDisks_DenyWrite_Access_1-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-removablestorage-removablestorageclasses-denyall-access-1"></a>**ADMX_RemovableStorage/RemovableStorageClasses_DenyAll_Access_1**  
+<!-- RemovableDisks_DenyWrite_Access_1-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | RemovableDisks_DenyWrite_Access_1 |
+| Friendly Name | Removable Disks: Deny write access |
+| Location | User Configuration |
+| Path | System > Removable Storage Access |
+| Registry Key Name | Software\Policies\Microsoft\Windows\RemovableStorageDevices\{53f5630d-b6bf-11d0-94f2-00a0c91efb8b} |
+| Registry Value Name | Deny_Write |
+| ADMX File Name | RemovableStorage.admx |
+<!-- RemovableDisks_DenyWrite_Access_1-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- RemovableDisks_DenyWrite_Access_1-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- RemovableDisks_DenyWrite_Access_1-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- RemovableDisks_DenyWrite_Access_1-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- RemovableStorageClasses_DenyAll_Access_1-Begin -->
+## RemovableStorageClasses_DenyAll_Access_1
 
-<hr/>
+<!-- RemovableStorageClasses_DenyAll_Access_1-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- RemovableStorageClasses_DenyAll_Access_1-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- RemovableStorageClasses_DenyAll_Access_1-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_RemovableStorage/RemovableStorageClasses_DenyAll_Access_1
+```
+<!-- RemovableStorageClasses_DenyAll_Access_1-OmaUri-End -->
+
+<!-- RemovableStorageClasses_DenyAll_Access_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Configure access to all removable storage classes.
 
 This policy setting takes precedence over any individual removable storage policy settings. To manage individual classes, use the policy settings available for each class.
 
-If you enable this policy setting, no access is allowed to any removable storage class.
+- If you enable this policy setting, no access is allowed to any removable storage class.
 
-If you disable or don't configure this policy setting, write and read accesses are allowed to all removable storage classes.
+- If you disable or don't configure this policy setting, write and read accesses are allowed to all removable storage classes.
+<!-- RemovableStorageClasses_DenyAll_Access_1-Description-End -->
 
-<!--/Description-->
+<!-- RemovableStorageClasses_DenyAll_Access_1-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- RemovableStorageClasses_DenyAll_Access_1-Editable-End -->
 
+<!-- RemovableStorageClasses_DenyAll_Access_1-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *All Removable Storage classes: Deny all access*
--   GP name: *RemovableStorageClasses_DenyAll_Access_1*
--   GP path: *System\Removable Storage Access*
--   GP ADMX file name: *RemovableStorage.admx*
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- RemovableStorageClasses_DenyAll_Access_1-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-removablestorage-removablestorageclasses-denyall-access-2"></a>**ADMX_RemovableStorage/RemovableStorageClasses_DenyAll_Access_2**  
+<!-- RemovableStorageClasses_DenyAll_Access_1-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | RemovableStorageClasses_DenyAll_Access_1 |
+| Friendly Name | All Removable Storage classes: Deny all access |
+| Location | User Configuration |
+| Path | System > Removable Storage Access |
+| Registry Key Name | Software\Policies\Microsoft\Windows\RemovableStorageDevices |
+| Registry Value Name | Deny_All |
+| ADMX File Name | RemovableStorage.admx |
+<!-- RemovableStorageClasses_DenyAll_Access_1-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- RemovableStorageClasses_DenyAll_Access_1-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- RemovableStorageClasses_DenyAll_Access_1-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- RemovableStorageClasses_DenyAll_Access_1-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- RemovableStorageClasses_DenyAll_Access_2-Begin -->
+## RemovableStorageClasses_DenyAll_Access_2
 
-<hr/>
+<!-- RemovableStorageClasses_DenyAll_Access_2-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- RemovableStorageClasses_DenyAll_Access_2-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
-Configure access to all removable storage classes. 
+<!-- RemovableStorageClasses_DenyAll_Access_2-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_RemovableStorage/RemovableStorageClasses_DenyAll_Access_2
+```
+<!-- RemovableStorageClasses_DenyAll_Access_2-OmaUri-End -->
+
+<!-- RemovableStorageClasses_DenyAll_Access_2-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Configure access to all removable storage classes.
 
 This policy setting takes precedence over any individual removable storage policy settings. To manage individual classes, use the policy settings available for each class.
 
-If you enable this policy setting, no access is allowed to any removable storage class.
+- If you enable this policy setting, no access is allowed to any removable storage class.
 
-If you disable or don't configure this policy setting, write and read accesses are allowed to all removable storage classes.
+- If you disable or don't configure this policy setting, write and read accesses are allowed to all removable storage classes.
+<!-- RemovableStorageClasses_DenyAll_Access_2-Description-End -->
 
-<!--/Description-->
+<!-- RemovableStorageClasses_DenyAll_Access_2-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- RemovableStorageClasses_DenyAll_Access_2-Editable-End -->
 
+<!-- RemovableStorageClasses_DenyAll_Access_2-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *All Removable Storage classes: Deny all access*
--   GP name: *RemovableStorageClasses_DenyAll_Access_2*
--   GP path: *System\Removable Storage Access*
--   GP ADMX file name: *RemovableStorage.admx*
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- RemovableStorageClasses_DenyAll_Access_2-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-removablestorage-removable-remote-allow-access"></a>**ADMX_RemovableStorage/Removable_Remote_Allow_Access**  
+<!-- RemovableStorageClasses_DenyAll_Access_2-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | RemovableStorageClasses_DenyAll_Access_2 |
+| Friendly Name | All Removable Storage classes: Deny all access |
+| Location | Computer Configuration |
+| Path | System > Removable Storage Access |
+| Registry Key Name | Software\Policies\Microsoft\Windows\RemovableStorageDevices |
+| Registry Value Name | Deny_All |
+| ADMX File Name | RemovableStorage.admx |
+<!-- RemovableStorageClasses_DenyAll_Access_2-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- RemovableStorageClasses_DenyAll_Access_2-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- RemovableStorageClasses_DenyAll_Access_2-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- RemovableStorageClasses_DenyAll_Access_2-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- TapeDrives_DenyExecute_Access_2-Begin -->
+## TapeDrives_DenyExecute_Access_2
 
-<hr/>
+<!-- TapeDrives_DenyExecute_Access_2-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- TapeDrives_DenyExecute_Access_2-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting grants normal users direct access to removable storage devices in remote sessions.
+<!-- TapeDrives_DenyExecute_Access_2-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_RemovableStorage/TapeDrives_DenyExecute_Access_2
+```
+<!-- TapeDrives_DenyExecute_Access_2-OmaUri-End -->
 
-If you enable this policy setting, remote users can open direct handles to removable storage devices in remote sessions.
-
-If you disable or don't configure this policy setting, remote users cannot open direct handles to removable storage devices in remote sessions.
-
-<!--/Description-->
-
-
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *All Removable Storage: Allow direct access in remote sessions*
--   GP name: *Removable_Remote_Allow_Access*
--   GP path: *System\Removable Storage Access*
--   GP ADMX file name: *RemovableStorage.admx*
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-removablestorage-tapedrives-denyexecute-access-2"></a>**ADMX_RemovableStorage/TapeDrives_DenyExecute_Access_2**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- TapeDrives_DenyExecute_Access_2-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting denies execute access to the Tape Drive removable storage class.
 
-If you enable this policy setting, execute access is denied to this removable storage class.
+- If you enable this policy setting, execute access is denied to this removable storage class.
 
-If you disable or don't configure this policy setting, execute access is allowed to this removable storage class.
+- If you disable or don't configure this policy setting, execute access is allowed to this removable storage class.
+<!-- TapeDrives_DenyExecute_Access_2-Description-End -->
 
-<!--/Description-->
+<!-- TapeDrives_DenyExecute_Access_2-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TapeDrives_DenyExecute_Access_2-Editable-End -->
 
+<!-- TapeDrives_DenyExecute_Access_2-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Tape Drives: Deny execute access*
--   GP name: *TapeDrives_DenyExecute_Access_2*
--   GP path: *System\Removable Storage Access*
--   GP ADMX file name: *RemovableStorage.admx*
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- TapeDrives_DenyExecute_Access_2-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-removablestorage-tapedrives-denyread-access-1"></a>**ADMX_RemovableStorage/TapeDrives_DenyRead_Access_1**  
+<!-- TapeDrives_DenyExecute_Access_2-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | TapeDrives_DenyExecute_Access_2 |
+| Friendly Name | Tape Drives: Deny execute access |
+| Location | Computer Configuration |
+| Path | System > Removable Storage Access |
+| Registry Key Name | Software\Policies\Microsoft\Windows\RemovableStorageDevices\{53f5630b-b6bf-11d0-94f2-00a0c91efb8b} |
+| Registry Value Name | Deny_Execute |
+| ADMX File Name | RemovableStorage.admx |
+<!-- TapeDrives_DenyExecute_Access_2-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- TapeDrives_DenyExecute_Access_2-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TapeDrives_DenyExecute_Access_2-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- TapeDrives_DenyExecute_Access_2-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- TapeDrives_DenyRead_Access_1-Begin -->
+## TapeDrives_DenyRead_Access_1
 
-<hr/>
+<!-- TapeDrives_DenyRead_Access_1-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- TapeDrives_DenyRead_Access_1-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- TapeDrives_DenyRead_Access_1-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_RemovableStorage/TapeDrives_DenyRead_Access_1
+```
+<!-- TapeDrives_DenyRead_Access_1-OmaUri-End -->
+
+<!-- TapeDrives_DenyRead_Access_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting denies read access to the Tape Drive removable storage class.
 
-If you enable this policy setting, read access is denied to this removable storage class.
+- If you enable this policy setting, read access is denied to this removable storage class.
 
-If you disable or don't configure this policy setting, read access is allowed to this removable storage class.
-<!--/Description-->
+- If you disable or don't configure this policy setting, read access is allowed to this removable storage class.
+<!-- TapeDrives_DenyRead_Access_1-Description-End -->
 
+<!-- TapeDrives_DenyRead_Access_1-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TapeDrives_DenyRead_Access_1-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Tape Drives: Deny read access*
--   GP name: *TapeDrives_DenyRead_Access_1*
--   GP path: *System\Removable Storage Access*
--   GP ADMX file name: *RemovableStorage.admx*
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- TapeDrives_DenyRead_Access_1-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Policy-->
-<a href="" id="admx-removablestorage-tapedrives-denyread-access-2"></a>**ADMX_RemovableStorage/TapeDrives_DenyRead_Access_2**  
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- TapeDrives_DenyRead_Access_1-DFProperties-End -->
 
-<!--SupportedSKUs-->
+<!-- TapeDrives_DenyRead_Access_1-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+**ADMX mapping**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | TapeDrives_DenyRead_Access_1 |
+| Friendly Name | Tape Drives: Deny read access |
+| Location | User Configuration |
+| Path | System > Removable Storage Access |
+| Registry Key Name | Software\Policies\Microsoft\Windows\RemovableStorageDevices\{53f5630b-b6bf-11d0-94f2-00a0c91efb8b} |
+| Registry Value Name | Deny_Read |
+| ADMX File Name | RemovableStorage.admx |
+<!-- TapeDrives_DenyRead_Access_1-AdmxBacked-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- TapeDrives_DenyRead_Access_1-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TapeDrives_DenyRead_Access_1-Examples-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- TapeDrives_DenyRead_Access_1-End -->
 
-<hr/>
+<!-- TapeDrives_DenyRead_Access_2-Begin -->
+## TapeDrives_DenyRead_Access_2
 
-<!--/Scope-->
-<!--Description-->
+<!-- TapeDrives_DenyRead_Access_2-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- TapeDrives_DenyRead_Access_2-Applicability-End -->
+
+<!-- TapeDrives_DenyRead_Access_2-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_RemovableStorage/TapeDrives_DenyRead_Access_2
+```
+<!-- TapeDrives_DenyRead_Access_2-OmaUri-End -->
+
+<!-- TapeDrives_DenyRead_Access_2-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting denies read access to the Tape Drive removable storage class.
 
-If you enable this policy setting, read access is denied to this removable storage class.
+- If you enable this policy setting, read access is denied to this removable storage class.
 
-If you disable or don't configure this policy setting, read access is allowed to this removable storage class.
+- If you disable or don't configure this policy setting, read access is allowed to this removable storage class.
+<!-- TapeDrives_DenyRead_Access_2-Description-End -->
 
-<!--/Description-->
+<!-- TapeDrives_DenyRead_Access_2-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TapeDrives_DenyRead_Access_2-Editable-End -->
 
+<!-- TapeDrives_DenyRead_Access_2-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Tape Drives: Deny read access*
--   GP name: *TapeDrives_DenyRead_Access_2*
--   GP path: *System\Removable Storage Access*
--   GP ADMX file name: *RemovableStorage.admx*
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- TapeDrives_DenyRead_Access_2-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-removablestorage-tapedrives-denywrite-access-1"></a>**ADMX_RemovableStorage/TapeDrives_DenyWrite_Access_1**  
+<!-- TapeDrives_DenyRead_Access_2-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | TapeDrives_DenyRead_Access_2 |
+| Friendly Name | Tape Drives: Deny read access |
+| Location | Computer Configuration |
+| Path | System > Removable Storage Access |
+| Registry Key Name | Software\Policies\Microsoft\Windows\RemovableStorageDevices\{53f5630b-b6bf-11d0-94f2-00a0c91efb8b} |
+| Registry Value Name | Deny_Read |
+| ADMX File Name | RemovableStorage.admx |
+<!-- TapeDrives_DenyRead_Access_2-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- TapeDrives_DenyRead_Access_2-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TapeDrives_DenyRead_Access_2-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- TapeDrives_DenyRead_Access_2-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- TapeDrives_DenyWrite_Access_1-Begin -->
+## TapeDrives_DenyWrite_Access_1
 
-<hr/>
+<!-- TapeDrives_DenyWrite_Access_1-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- TapeDrives_DenyWrite_Access_1-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- TapeDrives_DenyWrite_Access_1-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_RemovableStorage/TapeDrives_DenyWrite_Access_1
+```
+<!-- TapeDrives_DenyWrite_Access_1-OmaUri-End -->
+
+<!-- TapeDrives_DenyWrite_Access_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting denies write access to the Tape Drive removable storage class.
 
-If you enable this policy setting, write access is denied to this removable storage class.
+- If you enable this policy setting, write access is denied to this removable storage class.
 
-If you disable or don't configure this policy setting, write access is allowed to this removable storage class.
-<!--/Description-->
+- If you disable or don't configure this policy setting, write access is allowed to this removable storage class.
+<!-- TapeDrives_DenyWrite_Access_1-Description-End -->
 
+<!-- TapeDrives_DenyWrite_Access_1-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TapeDrives_DenyWrite_Access_1-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Tape Drives: Deny write access*
--   GP name: *TapeDrives_DenyWrite_Access_1*
--   GP path: *System\Removable Storage Access*
--   GP ADMX file name: *RemovableStorage.admx*
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- TapeDrives_DenyWrite_Access_1-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Policy-->
-<a href="" id="admx-removablestorage-tapedrives-denywrite-access-2"></a>**ADMX_RemovableStorage/TapeDrives_DenyWrite_Access_2**  
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- TapeDrives_DenyWrite_Access_1-DFProperties-End -->
 
-<!--SupportedSKUs-->
+<!-- TapeDrives_DenyWrite_Access_1-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+**ADMX mapping**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | TapeDrives_DenyWrite_Access_1 |
+| Friendly Name | Tape Drives: Deny write access |
+| Location | User Configuration |
+| Path | System > Removable Storage Access |
+| Registry Key Name | Software\Policies\Microsoft\Windows\RemovableStorageDevices\{53f5630b-b6bf-11d0-94f2-00a0c91efb8b} |
+| Registry Value Name | Deny_Write |
+| ADMX File Name | RemovableStorage.admx |
+<!-- TapeDrives_DenyWrite_Access_1-AdmxBacked-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- TapeDrives_DenyWrite_Access_1-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TapeDrives_DenyWrite_Access_1-Examples-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- TapeDrives_DenyWrite_Access_1-End -->
 
-<hr/>
+<!-- TapeDrives_DenyWrite_Access_2-Begin -->
+## TapeDrives_DenyWrite_Access_2
 
-<!--/Scope-->
-<!--Description-->
+<!-- TapeDrives_DenyWrite_Access_2-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- TapeDrives_DenyWrite_Access_2-Applicability-End -->
+
+<!-- TapeDrives_DenyWrite_Access_2-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_RemovableStorage/TapeDrives_DenyWrite_Access_2
+```
+<!-- TapeDrives_DenyWrite_Access_2-OmaUri-End -->
+
+<!-- TapeDrives_DenyWrite_Access_2-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting denies write access to the Tape Drive removable storage class.
 
-If you enable this policy setting, write access is denied to this removable storage class.
+- If you enable this policy setting, write access is denied to this removable storage class.
 
-If you disable or don't configure this policy setting, write access is allowed to this removable storage class.
+- If you disable or don't configure this policy setting, write access is allowed to this removable storage class.
+<!-- TapeDrives_DenyWrite_Access_2-Description-End -->
 
-<!--/Description-->
+<!-- TapeDrives_DenyWrite_Access_2-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TapeDrives_DenyWrite_Access_2-Editable-End -->
 
+<!-- TapeDrives_DenyWrite_Access_2-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Tape Drives: Deny write access*
--   GP name: *TapeDrives_DenyWrite_Access_2*
--   GP path: *System\Removable Storage Access*
--   GP ADMX file name: *RemovableStorage.admx*
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- TapeDrives_DenyWrite_Access_2-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-removablestorage-wpddevices-denyread-access-1"></a>**ADMX_RemovableStorage/WPDDevices_DenyRead_Access_1**  
+<!-- TapeDrives_DenyWrite_Access_2-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | TapeDrives_DenyWrite_Access_2 |
+| Friendly Name | Tape Drives: Deny write access |
+| Location | Computer Configuration |
+| Path | System > Removable Storage Access |
+| Registry Key Name | Software\Policies\Microsoft\Windows\RemovableStorageDevices\{53f5630b-b6bf-11d0-94f2-00a0c91efb8b} |
+| Registry Value Name | Deny_Write |
+| ADMX File Name | RemovableStorage.admx |
+<!-- TapeDrives_DenyWrite_Access_2-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- TapeDrives_DenyWrite_Access_2-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TapeDrives_DenyWrite_Access_2-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- TapeDrives_DenyWrite_Access_2-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- WPDDevices_DenyRead_Access_1-Begin -->
+## WPDDevices_DenyRead_Access_1
 
-<hr/>
+<!-- WPDDevices_DenyRead_Access_1-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- WPDDevices_DenyRead_Access_1-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- WPDDevices_DenyRead_Access_1-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_RemovableStorage/WPDDevices_DenyRead_Access_1
+```
+<!-- WPDDevices_DenyRead_Access_1-OmaUri-End -->
+
+<!-- WPDDevices_DenyRead_Access_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting denies read access to removable disks, which may include media players, cellular phones, auxiliary displays, and CE devices.
 
-If you enable this policy setting, read access is denied to this removable storage class.
+- If you enable this policy setting, read access is denied to this removable storage class.
 
-If you disable or don't configure this policy setting, read access is allowed to this removable storage class.
+- If you disable or don't configure this policy setting, read access is allowed to this removable storage class.
+<!-- WPDDevices_DenyRead_Access_1-Description-End -->
 
-<!--/Description-->
+<!-- WPDDevices_DenyRead_Access_1-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- WPDDevices_DenyRead_Access_1-Editable-End -->
 
+<!-- WPDDevices_DenyRead_Access_1-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *WPD Devices: Deny read access*
--   GP name: *WPDDevices_DenyRead_Access_1*
--   GP path: *System\Removable Storage Access*
--   GP ADMX file name: *RemovableStorage.admx*
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- WPDDevices_DenyRead_Access_1-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-removablestorage-wpddevices-denyread-access-2"></a>**ADMX_RemovableStorage/WPDDevices_DenyRead_Access_2**  
+<!-- WPDDevices_DenyRead_Access_1-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | WPDDevices_DenyRead_Access_1 |
+| Friendly Name | WPD Devices: Deny read access |
+| Location | User Configuration |
+| Path | System > Removable Storage Access |
+| Registry Key Name | Software\Policies\Microsoft\Windows\RemovableStorageDevices\{6AC27878-A6FA-4155-BA85-F98F491D4F33} |
+| Registry Value Name | Deny_Read |
+| ADMX File Name | RemovableStorage.admx |
+<!-- WPDDevices_DenyRead_Access_1-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- WPDDevices_DenyRead_Access_1-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- WPDDevices_DenyRead_Access_1-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- WPDDevices_DenyRead_Access_1-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- WPDDevices_DenyRead_Access_2-Begin -->
+## WPDDevices_DenyRead_Access_2
 
-<hr/>
+<!-- WPDDevices_DenyRead_Access_2-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- WPDDevices_DenyRead_Access_2-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- WPDDevices_DenyRead_Access_2-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_RemovableStorage/WPDDevices_DenyRead_Access_2
+```
+<!-- WPDDevices_DenyRead_Access_2-OmaUri-End -->
+
+<!-- WPDDevices_DenyRead_Access_2-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting denies read access to removable disks, which may include media players, cellular phones, auxiliary displays, and CE devices.
 
-If you enable this policy setting, read access is denied to this removable storage class.
+- If you enable this policy setting, read access is denied to this removable storage class.
 
-If you disable or don't configure this policy setting, read access is allowed to this removable storage class.
-<!--/Description-->
+- If you disable or don't configure this policy setting, read access is allowed to this removable storage class.
+<!-- WPDDevices_DenyRead_Access_2-Description-End -->
 
+<!-- WPDDevices_DenyRead_Access_2-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- WPDDevices_DenyRead_Access_2-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *WPD Devices: Deny read access*
--   GP name: *WPDDevices_DenyRead_Access_2*
--   GP path: *System\Removable Storage Access*
--   GP ADMX file name: *RemovableStorage.admx*
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- WPDDevices_DenyRead_Access_2-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Policy-->
-<a href="" id="admx-removablestorage-wpddevices-denywrite-access-1"></a>**ADMX_RemovableStorage/WPDDevices_DenyWrite_Access_1**  
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- WPDDevices_DenyRead_Access_2-DFProperties-End -->
 
-<!--SupportedSKUs-->
+<!-- WPDDevices_DenyRead_Access_2-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+**ADMX mapping**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | WPDDevices_DenyRead_Access_2 |
+| Friendly Name | WPD Devices: Deny read access |
+| Location | Computer Configuration |
+| Path | System > Removable Storage Access |
+| Registry Key Name | Software\Policies\Microsoft\Windows\RemovableStorageDevices\{6AC27878-A6FA-4155-BA85-F98F491D4F33} |
+| Registry Value Name | Deny_Read |
+| ADMX File Name | RemovableStorage.admx |
+<!-- WPDDevices_DenyRead_Access_2-AdmxBacked-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- WPDDevices_DenyRead_Access_2-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- WPDDevices_DenyRead_Access_2-Examples-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- WPDDevices_DenyRead_Access_2-End -->
 
-<hr/>
+<!-- WPDDevices_DenyWrite_Access_1-Begin -->
+## WPDDevices_DenyWrite_Access_1
 
-<!--/Scope-->
-<!--Description-->
+<!-- WPDDevices_DenyWrite_Access_1-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- WPDDevices_DenyWrite_Access_1-Applicability-End -->
+
+<!-- WPDDevices_DenyWrite_Access_1-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_RemovableStorage/WPDDevices_DenyWrite_Access_1
+```
+<!-- WPDDevices_DenyWrite_Access_1-OmaUri-End -->
+
+<!-- WPDDevices_DenyWrite_Access_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting denies write access to removable disks, which may include media players, cellular phones, auxiliary displays, and CE devices.
 
-If you enable this policy setting, write access is denied to this removable storage class.
+- If you enable this policy setting, write access is denied to this removable storage class.
 
-If you disable or don't configure this policy setting, write access is allowed to this removable storage class.
+- If you disable or don't configure this policy setting, write access is allowed to this removable storage class.
+<!-- WPDDevices_DenyWrite_Access_1-Description-End -->
 
-<!--/Description-->
+<!-- WPDDevices_DenyWrite_Access_1-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- WPDDevices_DenyWrite_Access_1-Editable-End -->
 
+<!-- WPDDevices_DenyWrite_Access_1-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *WPD Devices: Deny write access*
--   GP name: *WPDDevices_DenyWrite_Access_1*
--   GP path: *System\Removable Storage Access*
--   GP ADMX file name: *RemovableStorage.admx*
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- WPDDevices_DenyWrite_Access_1-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-removablestorage-wpddevices-denywrite-access-2"></a>**ADMX_RemovableStorage/WPDDevices_DenyWrite_Access_2**  
+<!-- WPDDevices_DenyWrite_Access_1-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | WPDDevices_DenyWrite_Access_1 |
+| Friendly Name | WPD Devices: Deny write access |
+| Location | User Configuration |
+| Path | System > Removable Storage Access |
+| Registry Key Name | Software\Policies\Microsoft\Windows\RemovableStorageDevices\{6AC27878-A6FA-4155-BA85-F98F491D4F33} |
+| Registry Value Name | Deny_Write |
+| ADMX File Name | RemovableStorage.admx |
+<!-- WPDDevices_DenyWrite_Access_1-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- WPDDevices_DenyWrite_Access_1-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- WPDDevices_DenyWrite_Access_1-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- WPDDevices_DenyWrite_Access_1-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- WPDDevices_DenyWrite_Access_2-Begin -->
+## WPDDevices_DenyWrite_Access_2
 
-<hr/>
+<!-- WPDDevices_DenyWrite_Access_2-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- WPDDevices_DenyWrite_Access_2-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting denies write access to removable disks that may include media players, cellular phones, auxiliary displays, and CE devices.
+<!-- WPDDevices_DenyWrite_Access_2-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_RemovableStorage/WPDDevices_DenyWrite_Access_2
+```
+<!-- WPDDevices_DenyWrite_Access_2-OmaUri-End -->
 
-If you enable this policy setting, write access is denied to this removable storage class.
+<!-- WPDDevices_DenyWrite_Access_2-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting denies write access to removable disks, which may include media players, cellular phones, auxiliary displays, and CE devices.
 
-If you disable or don't configure this policy setting, write access is allowed to this removable storage class.
+- If you enable this policy setting, write access is denied to this removable storage class.
 
-<!--/Description-->
+- If you disable or don't configure this policy setting, write access is allowed to this removable storage class.
+<!-- WPDDevices_DenyWrite_Access_2-Description-End -->
 
+<!-- WPDDevices_DenyWrite_Access_2-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- WPDDevices_DenyWrite_Access_2-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *WPD Devices: Deny write access*
--   GP name: *WPDDevices_DenyWrite_Access_2*
--   GP path: *System\Removable Storage Access*
--   GP ADMX file name: *RemovableStorage.admx*
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- WPDDevices_DenyWrite_Access_2-DFProperties-Begin -->
+**Description framework properties**:
 
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- WPDDevices_DenyWrite_Access_2-DFProperties-End -->
 
+<!-- WPDDevices_DenyWrite_Access_2-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--/Policies-->
+**ADMX mapping**:
 
-## Related topics
+| Name | Value |
+|:--|:--|
+| Name | WPDDevices_DenyWrite_Access_2 |
+| Friendly Name | WPD Devices: Deny write access |
+| Location | Computer Configuration |
+| Path | System > Removable Storage Access |
+| Registry Key Name | Software\Policies\Microsoft\Windows\RemovableStorageDevices\{6AC27878-A6FA-4155-BA85-F98F491D4F33} |
+| Registry Value Name | Deny_Write |
+| ADMX File Name | RemovableStorage.admx |
+<!-- WPDDevices_DenyWrite_Access_2-AdmxBacked-End -->
 
-[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)
+<!-- WPDDevices_DenyWrite_Access_2-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- WPDDevices_DenyWrite_Access_2-Examples-End -->
+
+<!-- WPDDevices_DenyWrite_Access_2-End -->
+
+<!-- ADMX_RemovableStorage-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ADMX_RemovableStorage-CspMoreInfo-End -->
+
+<!-- ADMX_RemovableStorage-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

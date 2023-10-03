@@ -1,26 +1,29 @@
 ---
-title: Account lockout threshold (Windows 10)
+title: Account lockout threshold 
 description: Describes the best practices, location, values, and security considerations for the Account lockout threshold security policy setting.
 ms.assetid: 4904bb40-a2bd-4fef-a102-260ba8d74e30
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+  - highpri
+  - tier3
 ms.topic: conceptual
 ms.date: 11/02/2018
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Account lockout threshold
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, and security considerations for the **Account lockout threshold** security policy setting.
@@ -32,7 +35,7 @@ The **Account lockout threshold** policy setting determines the number of failed
 Brute force password attacks can be automated to try thousands or even millions of password combinations for any or all user accounts. Limiting the number of failed sign-ins that can be performed nearly eliminates the effectiveness of such attacks.
 However, it's important to note that a denial-of-service (DoS) attack could be performed on a domain that has an account lockout threshold configured. A malicious user could programmatically attempt a series of password attacks against all users in the organization. If the number of attempts is greater than the value of **Account lockout threshold**, the attacker could potentially lock every account.
 
-Failed attempts to unlock a workstation can cause account lockout even if the [Interactive logon: Require Domain Controller authentication to unlock workstation](interactive-logon-require-domain-controller-authentication-to-unlock-workstation.md) security option is disabled. Windows doesn’t need to contact a domain controller for an unlock if you enter the same password that you logged on with, but if you enter a different password, Windows has to contact a domain controller in case you had changed your password from another machine.
+Failed attempts to unlock a workstation can cause account lockout even if the [Interactive logon: Require Domain Controller authentication to unlock workstation](interactive-logon-require-domain-controller-authentication-to-unlock-workstation.md) security option is disabled. Windows doesn't need to contact a domain controller for an unlock if you enter the same password that you logged on with, but if you enter a different password, Windows has to contact a domain controller in case you had changed your password from another machine.
 
 ### Possible values
 
@@ -44,7 +47,7 @@ Because vulnerabilities can exist when this value is configured and when it's no
 
 ### Best practices
 
-The threshold that you select is a balance between operational efficiency and security, and it depends on your organization's risk level. To allow for user error and to thwart brute force attacks, [Windows security baselines](../windows-security-baselines.md) recommend a value of 10 could be an acceptable starting point for your organization.
+The threshold that you select is a balance between operational efficiency and security, and it depends on your organization's risk level. To allow for user error and to thwart brute force attacks, [Windows security baselines](../../operating-system-security/device-management/windows-security-configuration-framework/windows-security-baselines.md) recommend a value of 10 could be an acceptable starting point for your organization.
 
 As with other account lockout settings, this value is more of a guideline than a rule or best practice because there's no "one size fits all." For more information, see [Configuring Account Lockout](/archive/blogs/secguide/configuring-account-lockout).
 
@@ -114,7 +117,7 @@ Because vulnerabilities can exist when this value is configured and when it's no
     
 -   Configure the **Account lockout threshold** policy setting to a sufficiently high value to provide users with the ability to accidentally mistype their password several times before the account is locked, but ensure that a brute force password attack still locks the account.
 
-    [Windows security baselines](../windows-security-baselines.md) recommend configuring a threshold of 10 invalid sign-in attempts, which prevents accidental account lockouts and reduces the number of Help Desk calls, but doesn't prevent a DoS attack.
+    [Windows security baselines](../../operating-system-security/device-management/windows-security-configuration-framework/windows-security-baselines.md) recommend configuring a threshold of 10 invalid sign-in attempts, which prevents accidental account lockouts and reduces the number of Help Desk calls, but doesn't prevent a DoS attack.
     
     Using this type of policy must be accompanied by a process to unlock locked accounts. It must be possible to implement this policy whenever it's needed to help mitigate massive lockouts caused by an attack on your systems.
 

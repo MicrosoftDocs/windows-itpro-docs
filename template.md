@@ -2,17 +2,17 @@
 title: # ARTICLE TITLE in 55 chars or less, most important for SEO. Best to match H1 and TOC, but doesn't have to.
 description: # A summary of the content. 75-300 characters. Used in site search. Sometimes used on a search engine results page for improved SEO. Always end with period.
 ms.date: mm/dd/yyyy
-ms.prod: windows
-ms.technology: windows #more to come...
+ms.prod: windows-client
+ms.technology: itpro-fundamentals # itpro-deploy itpro-updates itpro-apps itpro-manage itpro-configure itpro-security itpro-privacy itpro-edu
 ms.topic: conceptual #reference troubleshooting how-to end-user-help overview (more in contrib guide)
 ms.localizationpriority: medium #high null
 author: # GitHub username (aczechowski)
 ms.author: # MS alias (aaroncz)
-ms.reviewer: # MS alias of feature PM, optional
-manager: # MS alias of manager (dougeby)
+ms.reviewer: # MS alias of feature PM, optional. comma-separated multivalue
+manager: # MS alias of manager (dougeby/aaroncz)
 ms.collection: # optional
-- # highpri - high priority, strategic, important, current, etc. articles
-- # openauth - the article is owned by PM or community for open authoring
+- # highpri - high priority, strategic, important, current, etc. articles (confirm with manager prior to use)
+- # education - part of M365 for Education vertical
 ---
 
 # Metadata and Markdown Template
@@ -28,7 +28,7 @@ When you create a new markdown file article, **Save as** this template to a new 
 
 ## Metadata
 
-The full metadata block is above the markdown between the `---` lines. For more information, see [Metadata attributes](https://review.docs.microsoft.com/en-us/help/contribute/metadata-attributes?branch=main) in the contributor guide. Some key notes:
+The full metadata block is above the markdown between the `---` lines. For more information, see [Metadata for Magic content](https://review.learn.microsoft.com/office-authoring-guide/metadata-for-content-on-docs?branch=main) and [Metadata attributes](https://review.learn.microsoft.com/help/platform/metadata-all-attributes?branch=main) in the contributor guide. Some key notes:
 
 - You _must_ have a space between the colon (`:`) and the value for a metadata element.
 
@@ -40,22 +40,23 @@ The full metadata block is above the markdown between the `---` lines. For more 
   - Don't end with a period.
   - Use Microsoft style _sentence case_.
   - The title can match the H1 heading (`#`) and the name in the toc.yml, but doesn't have to.
-  - It should be roughly 55 characters or less for best search engine optimization (SEO).
+  - It should be roughly 60-65 characters or less for best search engine optimization (SEO). NOTE that the length also includes any titleSuffix value, which is configured for every docset in docfx.json.
 
 - `description`: Summarize the content, shows in search engine results. 75-300 characters. Always end with a period.
 
-- `ms.date`: After you Save As this template to the target file, with the Docs Authoring Pack extension installed, right-click anywhere in the .md file to **Update `ms.date` metadata value** and save the file.
+- `ms.date`: After you Save As this template to the target file, with the Docs Authoring Pack extension installed, right-click anywhere in the .md file to **Update `ms.date` metadata value** and save the file. This value is useful for when someone last reviewed the article (not just made any edit/commit).
 
-- `author`: The author field contains the **Github username** of the author.
+- `author`: The author field contains the **Github username** of the author (single-value).
   - This value is used in GitHub notifications, assignments, and other build automation in both the private and public repositories.
   - It's also used to display the first (left-most) contributor in the published article.
 
-- `ms.author` & `manager`: Microsoft aliases. ms.author and author are typically the same.
-  - `ms.reviewer`: Optionally can specify the name of the PM associated with the article. Just for reference, not currently used by any automation.
+- `ms.author` & `manager`: Microsoft aliases (single-value). ms.author and author are typically the same.
 
-- `ms.prod`: Should always be `windows` for Windows content. (Some older articles still use `w10` and `w11`.)
+- `ms.reviewer`: Optionally can specify the name of the PM associated with the article. Just for reference, not currently used by any automation. Single or multi-value.
 
-- `ms.technology`: Select one of the options based on the feature area. Currently the only option is `windows`.
+- `ms.prod`: Should always be `windows-client` for Windows content.
+
+- `ms.technology`: Select one of the options based on the feature area. (single-value)
 
 - `ms.topic`: Select one of the options based on the content type. This attribute is used in calculating content health (different content types are used differently by customers, so have different metrics).
 
@@ -65,7 +66,7 @@ The full metadata block is above the markdown between the `---` lines. For more 
 
 All basic and Github-flavored markdown (GFM) is supported. For more information, see the following articles:
 
-- [Docs Markdown reference in the Contributor Guide](https://review.docs.microsoft.com/help/contribute/markdown-reference?branch=main)
+- [Docs Markdown reference in the Contributor Guide](https://review.learn.microsoft.com/help/contribute/markdown-reference?branch=main)
 - [Baseline markdown syntax](https://daringfireball.net/projects/markdown/syntax)
 - [Github-flavored markdown (GFM) documentation](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 
@@ -79,7 +80,7 @@ Second-level headings (`##`, also known as H2) generate the on-page TOC that app
 
 Limit the length of second-level headings to avoid excessive line wraps.
 
-Make sure _all_ headings of any level have a unique name for the article. The build creates an anchor for all headings on the page using kebab formatting. For example, from the [Docs Markdown reference](https://review.docs.microsoft.com/help/contribute/markdown-reference?branch=main) article, the heading **Alerts (Note, Tip, Important, Caution, Warning)** becomes the anchor `#alerts-note-tip-important-caution-warning`. If there are duplicate headings, then the anchors don't behave properly. This behavior also applies when using include files, make sure the headings are unique across the main markdown file, and all include markdown files.
+Make sure _all_ headings of any level have a unique name for the article. The build creates an anchor for all headings on the page using kebab formatting. For example, from the [Docs Markdown reference](https://review.learn.microsoft.com/help/contribute/markdown-reference?branch=main) article, the heading **Alerts (Note, Tip, Important, Caution, Warning)** becomes the anchor `#alerts-note-tip-important-caution-warning`. If there are duplicate headings, then the anchors don't behave properly. This behavior also applies when using include files, make sure the headings are unique across the main markdown file, and all include markdown files.
 
 Don't skip levels. For example, don't have an H3 (`###`) without a parent H2 (`##`).
 
@@ -111,7 +112,7 @@ _Italics_ (a single asterisk (`*`) also works, but the underscore (`_`) helps di
 >
 > It supports headings in the current and other files too! (Just not the custom `bkmk` anchors that are sometimes used in this content.)
 
-For more information, see [Add links to articles](https://review.docs.microsoft.com/help/contribute/links-how-to?branch=main) in the contributor guide.
+For more information, see [Add links to articles](https://review.learn.microsoft.com/help/contribute/links-how-to?branch=main) in the contributor guide.
 
 ### Article in the same repo
 
@@ -149,7 +150,7 @@ There's a broken link report that runs once a week in the build system, get the 
 
 Don't use URL shorteners like `go.microsoft.com/fwlink` or `aka.ms`. Include the full URL to the target.
 
-For more information, see [Add links to articles](https://review.docs.microsoft.com/help/contribute/links-how-to?branch=main) in the contributor guide.
+For more information, see [Add links to articles](https://review.learn.microsoft.com/help/contribute/links-how-to?branch=main) in the contributor guide.
 
 ## Lists
 
@@ -289,4 +290,4 @@ Always include alt text for accessibility, and always end it with a period.
 ## docs.ms extensions
 
 > [!div class="nextstepaction"]
-> [Microsoft Endpoint Configuration Manager documentation](https://docs.microsoft.com/mem/configmgr)
+> [Microsoft Configuration Manager documentation](https://learn.microsoft.com/mem/configmgr)

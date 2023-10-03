@@ -1,313 +1,381 @@
 ---
-title: Policy CSP - KioskBrowser
-description: Use the Policy CSP - KioskBrowser setting to configure URLs kiosk browsers are allowed to navigate to, which are a subset of the blocked URLs.
-ms.author: vinpa
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
+title: KioskBrowser Policy CSP
+description: Learn more about the KioskBrowser Area in Policy CSP.
 author: vinaypamnani-msft
-ms.localizationpriority: medium
-ms.date: 09/27/2019
-ms.reviewer: 
 manager: aaroncz
+ms.author: vinpa
+ms.date: 08/10/2023
+ms.localizationpriority: medium
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- KioskBrowser-Begin -->
 # Policy CSP - KioskBrowser
 
-These policies currently only apply to Kiosk Browser app. Kiosk Browser is a Microsoft Store app, added in Windows 10 version 1803, that provides IT a way to customize the end user's browsing experience to fulfill kiosk, signage, and shared device scenarios. Application developers can also create their own kiosk browser and read these policies using [NamedPolicy.GetPolicyFromPath(String, String) Method](/uwp/api/windows.management.policies.namedpolicy.getpolicyfrompath#Windows_Management_Policies_NamedPolicy_GetPolicyFromPath_System_String_System_String_). 
+<!-- KioskBrowser-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- KioskBrowser-Editable-End -->
 
+<!-- BlockedUrlExceptions-Begin -->
+## BlockedUrlExceptions
 
-<hr/>
+<!-- BlockedUrlExceptions-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- BlockedUrlExceptions-Applicability-End -->
 
-<!--Policies-->
-## KioskBrowser policies  
+<!-- BlockedUrlExceptions-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/KioskBrowser/BlockedUrlExceptions
+```
 
-<dl>
-  <dd>
-    <a href="#kioskbrowser-blockedurlexceptions">KioskBrowser/BlockedUrlExceptions</a>
-  </dd>
-  <dd>
-    <a href="#kioskbrowser-blockedurls">KioskBrowser/BlockedUrls</a>
-  </dd>
-  <dd>
-    <a href="#kioskbrowser-defaulturl">KioskBrowser/DefaultURL</a>
-  </dd>
-  <dd>
-    <a href="#kioskbrowser-enableendsessionbutton">KioskBrowser/EnableEndSessionButton</a>
-  </dd>
-  <dd>
-    <a href="#kioskbrowser-enablehomebutton">KioskBrowser/EnableHomeButton</a>
-  </dd>
-  <dd>
-    <a href="#kioskbrowser-enablenavigationbuttons">KioskBrowser/EnableNavigationButtons</a>
-  </dd>
-  <dd>
-    <a href="#kioskbrowser-restartonidletime">KioskBrowser/RestartOnIdleTime</a>
-  </dd>
-</dl>
+```Device
+./Device/Vendor/MSFT/Policy/Config/KioskBrowser/BlockedUrlExceptions
+```
+<!-- BlockedUrlExceptions-OmaUri-End -->
 
+<!-- BlockedUrlExceptions-Description-Begin -->
+<!-- Description-Source-DDF -->
+List of exceptions to the blocked website URLs (with wildcard support). This is used to configure URLs kiosk browsers are allowed to navigate to, which are a subset of the blocked URLs.
+<!-- BlockedUrlExceptions-Description-End -->
 
-<hr/>
-
-<!--Policy-->
-<a href="" id="kioskbrowser-blockedurlexceptions"></a>**KioskBrowser/BlockedUrlExceptions**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-List of exceptions to the blocked website URLs (with wildcard support). This policy is used to configure URLs kiosk browsers are allowed to navigate to, which are a subset of the blocked URLs.
-
+<!-- BlockedUrlExceptions-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > This policy only applies to the Kiosk Browser app in Microsoft Store.
+<!-- BlockedUrlExceptions-Editable-End -->
 
-<!--/Description-->
-<!--/Policy-->
+<!-- BlockedUrlExceptions-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `0xF000`) |
+<!-- BlockedUrlExceptions-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="kioskbrowser-blockedurls"></a>**KioskBrowser/BlockedUrls**  
+<!-- BlockedUrlExceptions-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- BlockedUrlExceptions-Examples-End -->
 
-<!--SupportedSKUs-->
+<!-- BlockedUrlExceptions-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- BlockedUrls-Begin -->
+## BlockedUrls
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- BlockedUrls-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- BlockedUrls-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- BlockedUrls-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/KioskBrowser/BlockedUrls
+```
 
-> [!div class = "checklist"]
-> * Device
+```Device
+./Device/Vendor/MSFT/Policy/Config/KioskBrowser/BlockedUrls
+```
+<!-- BlockedUrls-OmaUri-End -->
 
-<hr/>
+<!-- BlockedUrls-Description-Begin -->
+<!-- Description-Source-DDF -->
+List of blocked website URLs (with wildcard support). This is used to configure blocked URLs kiosk browsers can't navigate to.
+<!-- BlockedUrls-Description-End -->
 
-<!--/Scope-->
-<!--Description-->
-List of blocked website URLs (with wildcard support). This policy is used to configure blocked URLs kiosk browsers can't navigate to.
-
+<!-- BlockedUrls-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > This policy only applies to the Kiosk Browser app in Microsoft Store.
+<!-- BlockedUrls-Editable-End -->
 
-<!--/Description-->
-<!--/Policy-->
+<!-- BlockedUrls-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `0xF000`) |
+<!-- BlockedUrls-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="kioskbrowser-defaulturl"></a>**KioskBrowser/DefaultURL**  
+<!-- BlockedUrls-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- BlockedUrls-Examples-End -->
 
-<!--SupportedSKUs-->
+<!-- BlockedUrls-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- DefaultURL-Begin -->
+## DefaultURL
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DefaultURL-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- DefaultURL-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DefaultURL-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/KioskBrowser/DefaultURL
+```
 
-> [!div class = "checklist"]
-> * Device
+```Device
+./Device/Vendor/MSFT/Policy/Config/KioskBrowser/DefaultURL
+```
+<!-- DefaultURL-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- DefaultURL-Description-Begin -->
+<!-- Description-Source-DDF -->
 Configures the default URL kiosk browsers to navigate on launch and restart.
+<!-- DefaultURL-Description-End -->
 
+<!-- DefaultURL-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > This policy only applies to the Kiosk Browser app in Microsoft Store.
+<!-- DefaultURL-Editable-End -->
 
-<!--/Description-->
-<!--/Policy-->
+<!-- DefaultURL-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DefaultURL-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="kioskbrowser-enableendsessionbutton"></a>**KioskBrowser/EnableEndSessionButton**  
+<!-- DefaultURL-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DefaultURL-Examples-End -->
 
-<!--SupportedSKUs-->
+<!-- DefaultURL-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- EnableEndSessionButton-Begin -->
+## EnableEndSessionButton
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- EnableEndSessionButton-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- EnableEndSessionButton-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- EnableEndSessionButton-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/KioskBrowser/EnableEndSessionButton
+```
 
-> [!div class = "checklist"]
-> * Device
+```Device
+./Device/Vendor/MSFT/Policy/Config/KioskBrowser/EnableEndSessionButton
+```
+<!-- EnableEndSessionButton-OmaUri-End -->
 
-<hr/>
+<!-- EnableEndSessionButton-Description-Begin -->
+<!-- Description-Source-DDF -->
+Enable/disable kiosk browser's end session button.
+<!-- EnableEndSessionButton-Description-End -->
 
-<!--/Scope-->
-<!--Description-->
-Shows the Kiosk Browser's end session button. When the policy is enabled, the Kiosk Browser app shows a button to reset the browser. When the user selects the button, the app will prompt the user for confirmation to end the session. When the user confirms, the Kiosk browser will clear all browsing data (cache, cookies, etc.) and navigate back to the default URL.
+<!-- EnableEndSessionButton-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+When the policy is enabled, the Kiosk Browser app shows a button to reset the browser. When the user selects the button, the app will prompt the user for confirmation to end the session. When the user confirms, the Kiosk browser will clear all browsing data (cache, cookies, etc.) and navigate back to the default URL.
+<!-- EnableEndSessionButton-Editable-End -->
 
-<!--/Description-->
-<!--/Policy-->
+<!-- EnableEndSessionButton-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- EnableEndSessionButton-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="kioskbrowser-enablehomebutton"></a>**KioskBrowser/EnableHomeButton**  
+<!-- EnableEndSessionButton-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--SupportedSKUs-->
+| Value | Description |
+|:--|:--|
+| 1 | Enable. |
+| 0 (Default) | Disable. |
+<!-- EnableEndSessionButton-AllowedValues-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- EnableEndSessionButton-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- EnableEndSessionButton-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- EnableEndSessionButton-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- EnableHomeButton-Begin -->
+## EnableHomeButton
 
-> [!div class = "checklist"]
-> * Device
+<!-- EnableHomeButton-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- EnableHomeButton-Applicability-End -->
 
-<hr/>
+<!-- EnableHomeButton-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/KioskBrowser/EnableHomeButton
+```
 
-<!--/Scope-->
-<!--Description-->
+```Device
+./Device/Vendor/MSFT/Policy/Config/KioskBrowser/EnableHomeButton
+```
+<!-- EnableHomeButton-OmaUri-End -->
+
+<!-- EnableHomeButton-Description-Begin -->
+<!-- Description-Source-DDF -->
 Enable/disable kiosk browser's home button.
+<!-- EnableHomeButton-Description-End -->
 
+<!-- EnableHomeButton-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > This policy only applies to the Kiosk Browser app in Microsoft Store.
+<!-- EnableHomeButton-Editable-End -->
 
-<!--/Description-->
-<!--/Policy-->
+<!-- EnableHomeButton-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- EnableHomeButton-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="kioskbrowser-enablenavigationbuttons"></a>**KioskBrowser/EnableNavigationButtons**  
+<!-- EnableHomeButton-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--SupportedSKUs-->
+| Value | Description |
+|:--|:--|
+| 1 | Enable. |
+| 0 (Default) | Disable. |
+<!-- EnableHomeButton-AllowedValues-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- EnableHomeButton-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- EnableHomeButton-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- EnableHomeButton-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- EnableNavigationButtons-Begin -->
+## EnableNavigationButtons
 
-> [!div class = "checklist"]
-> * Device
+<!-- EnableNavigationButtons-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- EnableNavigationButtons-Applicability-End -->
 
-<hr/>
+<!-- EnableNavigationButtons-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/KioskBrowser/EnableNavigationButtons
+```
 
-<!--/Scope-->
-<!--Description-->
+```Device
+./Device/Vendor/MSFT/Policy/Config/KioskBrowser/EnableNavigationButtons
+```
+<!-- EnableNavigationButtons-OmaUri-End -->
+
+<!-- EnableNavigationButtons-Description-Begin -->
+<!-- Description-Source-DDF -->
 Enable/disable kiosk browser's navigation buttons (forward/back).
+<!-- EnableNavigationButtons-Description-End -->
 
+<!-- EnableNavigationButtons-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > This policy only applies to the Kiosk Browser app in Microsoft Store.
+<!-- EnableNavigationButtons-Editable-End -->
 
-<!--/Description-->
-<!--/Policy-->
+<!-- EnableNavigationButtons-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- EnableNavigationButtons-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="kioskbrowser-restartonidletime"></a>**KioskBrowser/RestartOnIdleTime**  
+<!-- EnableNavigationButtons-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--SupportedSKUs-->
+| Value | Description |
+|:--|:--|
+| 1 | Enable. |
+| 0 (Default) | Disable. |
+<!-- EnableNavigationButtons-AllowedValues-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- EnableNavigationButtons-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- EnableNavigationButtons-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- EnableNavigationButtons-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- RestartOnIdleTime-Begin -->
+## RestartOnIdleTime
 
-> [!div class = "checklist"]
-> * Device
+<!-- RestartOnIdleTime-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- RestartOnIdleTime-Applicability-End -->
 
-<hr/>
+<!-- RestartOnIdleTime-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/KioskBrowser/RestartOnIdleTime
+```
 
-<!--/Scope-->
-<!--Description-->
-Amount of time in minutes, the session is idle until the kiosk browser restarts in a fresh state.  
+```Device
+./Device/Vendor/MSFT/Policy/Config/KioskBrowser/RestartOnIdleTime
+```
+<!-- RestartOnIdleTime-OmaUri-End -->
 
+<!-- RestartOnIdleTime-Description-Begin -->
+<!-- Description-Source-DDF -->
+Amount of time in minutes the session is idle until the kiosk browser restarts in a fresh state.
+<!-- RestartOnIdleTime-Description-End -->
+
+<!-- RestartOnIdleTime-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 The value is an int 1-1440 that specifies the number of minutes the session is idle until the kiosk browser restarts in a fresh state. The default value is empty, which means there's no idle timeout within the kiosk browser.
 
 > [!NOTE]
 > This policy only applies to the Kiosk Browser app in Microsoft Store.
+<!-- RestartOnIdleTime-Editable-End -->
 
-<!--/Description-->
-<!--/Policy-->
-<hr/>
+<!-- RestartOnIdleTime-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Policies-->
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[1-1440]` |
+| Default Value  | 0 |
+<!-- RestartOnIdleTime-DFProperties-End -->
 
-## Related topics
+<!-- RestartOnIdleTime-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- RestartOnIdleTime-Examples-End -->
+
+<!-- RestartOnIdleTime-End -->
+
+<!-- KioskBrowser-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- KioskBrowser-CspMoreInfo-End -->
+
+<!-- KioskBrowser-End -->
+
+## Related articles
 
 [Policy configuration service provider](policy-configuration-service-provider.md)

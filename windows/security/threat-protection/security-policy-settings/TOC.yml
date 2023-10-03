@@ -1,22 +1,22 @@
         - name: Security policy settings
           href: security-policy-settings.md
-          items: 
+          items:
             - name: Administer security policy settings
               href: administer-security-policy-settings.md
-              items: 
+              items:
                 - name: Network List Manager policies
                   href: network-list-manager-policies.md
             - name: Configure security policy settings
               href: how-to-configure-security-policy-settings.md
             - name: Security policy settings reference
               href: security-policy-settings-reference.md
-              items: 
+              items:
                 - name: Account Policies
                   href: account-policies.md
-                  items: 
+                  items:
                     - name: Password Policy
                       href: password-policy.md
-                      items: 
+                      items:
                         - name: Enforce password history
                           href: enforce-password-history.md
                         - name: Maximum password age
@@ -31,7 +31,7 @@
                           href: store-passwords-using-reversible-encryption.md
                     - name: Account Lockout Policy
                       href: account-lockout-policy.md
-                      items: 
+                      items:
                         - name: Account lockout duration
                           href: account-lockout-duration.md
                         - name: Account lockout threshold
@@ -40,7 +40,7 @@
                           href: reset-account-lockout-counter-after.md
                     - name: Kerberos Policy
                       href: kerberos-policy.md
-                      items: 
+                      items:
                         - name: Enforce user logon restrictions
                           href: enforce-user-logon-restrictions.md
                         - name: Maximum lifetime for service ticket
@@ -55,7 +55,7 @@
                   href: audit-policy.md
                 - name: Security Options
                   href: security-options.md
-                  items: 
+                  items:
                     - name: "Accounts: Administrator account status"
                       href: accounts-administrator-account-status.md
                     - name: "Accounts: Block Microsoft accounts"
@@ -92,6 +92,8 @@
                       href: devices-restrict-floppy-access-to-locally-logged-on-user-only.md
                     - name: "Domain controller: Allow server operators to schedule tasks"
                       href: domain-controller-allow-server-operators-to-schedule-tasks.md
+                    - name: "Domain controller: LDAP server channel binding token requirements"
+                      href: domain-controller-ldap-server-channel-binding-token-requirements.md
                     - name: "Domain controller: LDAP server signing requirements"
                       href: domain-controller-ldap-server-signing-requirements.md
                     - name: "Domain controller: Refuse machine account password changes"
@@ -136,10 +138,6 @@
                       href: interactive-logon-smart-card-removal-behavior.md
                     - name: "Microsoft network client: Digitally sign communications (always)"
                       href: microsoft-network-client-digitally-sign-communications-always.md
-                    - name: "SMBv1 Microsoft network client: Digitally sign communications (always)"
-                      href: smbv1-microsoft-network-client-digitally-sign-communications-always.md
-                    - name: "SMBv1 Microsoft network client: Digitally sign communications (if server agrees)"
-                      href: smbv1-microsoft-network-client-digitally-sign-communications-if-server-agrees.md
                     - name: "Microsoft network client: Send unencrypted password to third-party SMB servers"
                       href: microsoft-network-client-send-unencrypted-password-to-third-party-smb-servers.md
                     - name: "Microsoft network server: Amount of idle time required before suspending session"
@@ -148,10 +146,6 @@
                       href: microsoft-network-server-attempt-s4u2self-to-obtain-claim-information.md
                     - name: "Microsoft network server: Digitally sign communications (always)"
                       href: microsoft-network-server-digitally-sign-communications-always.md
-                    - name: "SMBv1 Microsoft network server: Digitally sign communications (always)"
-                      href: smbv1-microsoft-network-server-digitally-sign-communications-always.md
-                    - name: "SMBv1 Microsoft network server: Digitally sign communications (if client agrees)"
-                      href: smbv1-microsoft-network-server-digitally-sign-communications-if-client-agrees.md
                     - name: "Microsoft network server: Disconnect clients when logon hours expire"
                       href: microsoft-network-server-disconnect-clients-when-logon-hours-expire.md
                     - name: "Microsoft network server: Server SPN target name validation level"
@@ -258,7 +252,7 @@
                   href: secpol-advanced-security-audit-policy-settings.md
                 - name: User Rights Assignment
                   href: user-rights-assignment.md
-                  items: 
+                  items:
                     - name: Access Credential Manager as a trusted caller
                       href: access-credential-manager-as-a-trusted-caller.md
                     - name: Access this computer from the network

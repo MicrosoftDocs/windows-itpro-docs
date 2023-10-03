@@ -1,17 +1,18 @@
 ---
-title: 4670(S) Permissions on an object were changed. (Windows 10)
+title: 4670(S) Permissions on an object were changed. 
 description: Describes security event 4670(S) Permissions on an object were changed.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
-author: dansimp
+ms.localizationpriority: low
+author: vinaypamnani-msft
 ms.date: 09/07/2021
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.technology: windows-sec
+manager: aaroncz
+ms.author: vinpa
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 4670(S): Permissions on an object were changed.
@@ -234,14 +235,14 @@ Example: D:(A;;FA;;;WD)
 | "GR"                       | GENERIC READ                    | "SD"                 | Delete                   |
 | "GW"                       | GENERIC WRITE                   | "WD"                 | Modify Permissions       |
 | "GX"                       | GENERIC EXECUTE                 | "WO"                 | Modify Owner             |
-| File access rights         | "RP"                            | Read All Properties  |
+| File access rights         |                                 | "RP"                 | Read All Properties      |
 | "FA"                       | FILE ALL ACCESS                 | "WP"                 | Write All Properties     |
 | "FR"                       | FILE GENERIC READ               | "CC"                 | Create All Child Objects |
 | "FW"                       | FILE GENERIC WRITE              | "DC"                 | Delete All Child Objects |
 | "FX"                       | FILE GENERIC EXECUTE            | "LC"                 | List Contents            |
-| Registry key access rights | "SW"                            | All Validated Writes |
-| "KA"                       | "LO"                            | "LO"                 | List Object              |
-| "K"                        | KEY READ                        | "DT"                 | Delete Subtree           |
+| Registry key access rights |                                 | "SW"                 | Self Write               |
+| "KA"                       | KEY ALL ACCESS                  | "LO"                 | List Object              |
+| "KR"                       | KEY READ                        | "DT"                 | Delete Subtree           |
 | "KW"                       | KEY WRITE                       | "CR"                 | All Extended Rights      |
 | "KX"                       | KEY EXECUTE                     |                      |                          |
 

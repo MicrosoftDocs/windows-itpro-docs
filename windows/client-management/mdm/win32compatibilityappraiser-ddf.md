@@ -2,23 +2,23 @@
 title: Win32CompatibilityAppraiser DDF file
 description: Learn about the XML file containing the device description framework for the Win32CompatibilityAppraiser configuration service provider.
 ms.author: vinpa
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.topic: reference
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 07/19/2018
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ---
 
-# Win32CompatibilityAppraiser DDF file 
+# Win32CompatibilityAppraiser DDF file
 
 > [!WARNING]
 > Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 This topic shows the OMA DM device description framework (DDF) for the **Win32CompatibilityAppraiser** configuration service provider.
 
-Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
+Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-ddf.md).
 
 The XML below is for Windows 10, version 1809 and later.
 

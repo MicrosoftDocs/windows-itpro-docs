@@ -1,0 +1,17 @@
+items:
+- name: Virtual Smart Card overview
+  href: virtual-smart-card-overview.md
+  items:
+    - name: Understand and evaluate virtual smart cards
+      href: virtual-smart-card-understanding-and-evaluating.md
+      items:
+        - name: Get started with virtual smart cards
+          href: virtual-smart-card-get-started.md
+        - name: Use virtual smart cards
+          href: virtual-smart-card-use-virtual-smart-cards.md
+        - name: Deploy virtual smart cards
+          href: virtual-smart-card-deploy-virtual-smart-cards.md
+        - name: Evaluate virtual smart card security
+          href: virtual-smart-card-evaluate-security.md
+    - name: Tpmvscmgr
+      href: virtual-smart-card-tpmvscmgr.md

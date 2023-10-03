@@ -1,14 +1,15 @@
 ---
 title: What's new in Windows 10, version 1803
 description: New and updated features in Windows 10, version 1803 (also known as the Windows 10 April 2018 Update).
-ms.prod: w10
-ms.reviewer: 
-author: aczechowski
-manager: dougeby
-ms.author: aaroncz
+ms.prod: windows-client
+author: mestew
+manager: aaroncz
+ms.author: mstewart
 ms.localizationpriority: medium
 ms.topic: article
 ROBOTS: NOINDEX
+ms.technology: itpro-fundamentals
+ms.date: 12/31/2017
 ---
 
 # What's new in Windows 10, version 1803 for IT Pros
@@ -130,7 +131,7 @@ Portions of the work done during the offline phases of a Windows update have bee
 
 ### Co-management
 
-**Intune** and **Microsoft Endpoint Configuration Manager** policies have been added to enable hybrid Azure AD-joined authentication. Mobile Device Management (MDM) has added over 150 new policies and settings in this release, including the [MDMWinsOverGP](/windows/client-management/mdm/policy-csp-controlpolicyconflict) policy, to enable easier transition to cloud-based management.
+**Intune** and **Microsoft Configuration Manager** policies have been added to enable hybrid Azure AD-joined authentication. Mobile Device Management (MDM) has added over 150 new policies and settings in this release, including the [MDMWinsOverGP](/windows/client-management/mdm/policy-csp-controlpolicyconflict) policy, to enable easier transition to cloud-based management.
 
 For more information, see [What's New in MDM enrollment and management](/windows/client-management/mdm/new-in-windows-mdm-enrollment-management#whatsnew1803)
 
@@ -155,7 +156,7 @@ For more information, see: [Windows Hello and FIDO2 Security Keys enable secure 
 
 ### Accessibility
 
-"Out of box" accessibility is enhanced with auto-generated picture descriptions. For more information about accessibility, see [Accessibility information for IT Professionals](/windows/configuration/windows-10-accessibility-for-itpros). Also see the accessibility section in the [What’s new in the Windows 10 April 2018 Update](https://blogs.windows.com/windowsexperience/2018/04/30/whats-new-in-the-windows-10-april-2018-update/) blog post.
+"Out of box" accessibility is enhanced with auto-generated picture descriptions. For more information about accessibility, see [Accessibility information for IT Professionals](/windows/configuration/windows-accessibility-for-itpros). Also see the accessibility section in the [What’s new in the Windows 10 April 2018 Update](https://blogs.windows.com/windowsexperience/2018/04/30/whats-new-in-the-windows-10-april-2018-update/) blog post.
 
 ### Privacy
 

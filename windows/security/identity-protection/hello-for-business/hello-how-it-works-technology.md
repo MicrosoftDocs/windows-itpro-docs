@@ -1,18 +1,8 @@
 ---
 title: How Windows Hello for Business works - technology and terms
 description: Explore technology and terms associated with Windows Hello for Business. Learn how Windows Hello for Business works.
-ms.prod: m365-security
-author: paolomatarazzo
-ms.author: paoloma
-manager: aaroncz
-ms.reviewer: prsriva
-ms.collection: M365-identity-device-management
-ms.topic: article
-localizationpriority: medium
 ms.date: 10/08/2018
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
+ms.topic: glossary
 ---
 
 # Technology and terms
@@ -78,6 +68,7 @@ The certificate trust model uses a securely issued certificate based on the user
 - [Deployment type](#deployment-type)
 - [Hybrid Azure AD join](#hybrid-azure-ad-join)
 - [Hybrid deployment](#hybrid-deployment)
+- [Cloud Kerberos trust](#cloud-kerberos-trust)
 - [Key trust](#key-trust)
 - [On-premises deployment](#on-premises-deployment)
 - [Trust type](#trust-type)
@@ -103,12 +94,32 @@ In Windows 10 and Windows 11, cloud experience host is an application used while
 
 ### Related to cloud experience host
 
-- [Windows Hello for Business](./hello-identity-verification.md)
-- [Managed Windows Hello in organization](./hello-manage-in-organization.md)
+- [Windows Hello for Business](hello-identity-verification.md)
+- [Managed Windows Hello in organization](hello-manage-in-organization.md)
 
 ### More information on cloud experience host
 
-[Windows Hello for Business and device registration](./hello-how-it-works-device-registration.md)
+[Windows Hello for Business and device registration](/azure/active-directory/devices/device-registration-how-it-works)
+
+## Cloud Kerberos trust
+
+The cloud Kerberos trust model offers a simplified deployment experience, when compared to the other trust types.\
+With cloud Kerberos trust, there's no need to deploy certificates to the users or to the domain controllers, which is ideal for environments without an existing PKI.
+
+Giving the simplicity offered by this model, cloud Kerberos trust is the recommended model when compared to the key trust model. It is also the preferred deployment model if you do not need to support certificate authentication scenarios.
+
+### Related to cloud Kerberos trust
+
+- [Deployment type](#deployment-type)
+- [Hybrid Azure AD join](#hybrid-azure-ad-join)
+- [Hybrid deployment](#hybrid-deployment)
+- [Key trust](#key-trust)
+- [On-premises deployment](#on-premises-deployment)
+- [Trust type](#trust-type)
+
+### More information about cloud Kerberos trust
+
+[Cloud Kerberos trust deployment](hello-hybrid-cloud-kerberos-trust.md)
 
 ## Deployment type
 
@@ -157,7 +168,7 @@ For certain devices that use firmware-based TPM produced by Intel or Qualcomm, t
 
 ## Federated environment
 
-Primarily for large enterprise organizations with more complex authentication requirements, on-premises directory objects are synchronized with Azure AD and users accounts are managed on-premises. With AD FS, users have the same password on-premises and in the cloud and they don't have to sign in again to use Office 365 or other Azure-based applications. This federated authentication model can provide extra authentication requirements, such as smart card-based authentication or a third-party multi-factor authentication and is typically required when organizations have an authentication requirement not natively supported by Azure AD.
+Primarily for large enterprise organizations with more complex authentication requirements, on-premises directory objects are synchronized with Azure AD and users accounts are managed on-premises. With AD FS, users have the same password on-premises and in the cloud and they don't have to sign in again to use Microsoft cloud services. This federated authentication model can provide extra authentication requirements, such as smart card-based authentication or a third-party multi-factor authentication and is typically required when organizations have an authentication requirement not natively supported by Azure AD.
 
 ### Related to federated environment
 
@@ -193,7 +204,7 @@ If your environment has an on-premises AD footprint and you also want benefit fr
 
 ## Hybrid deployment
 
-The Windows Hello for Business hybrid deployment is for organizations that have both on-premises and cloud resources that are accessed using a managed or federated identity that's synchronized with Azure AD. Hybrid deployments support devices that are Azure AD-registered, Azure AD-joined, and hybrid Azure AD-joined. The Hybrid deployment model supports two trust types for on-premises authentication, key trust and certificate trust.
+The Windows Hello for Business hybrid deployment is for organizations that have both on-premises and cloud resources that are accessed using a managed or federated identity that's synchronized with Azure AD. Hybrid deployments support devices that are Azure AD-registered, Azure AD-joined, and hybrid Azure AD-joined. The Hybrid deployment model supports three trust types for on-premises authentication: cloud Kerberos trust, key trust and certificate trust.
 
 ### Related to hybrid deployment
 
@@ -231,6 +242,7 @@ The key trust model uses the user's Windows Hello for Business identity to authe
 
 ### Related to key trust
 
+- [Cloud Kerberos trust](#cloud-kerberos-trust)
 - [Certificate trust](#certificate-trust)
 - [Deployment type](#deployment-type)
 - [Hybrid Azure AD join](#hybrid-azure-ad-join)
@@ -268,7 +280,7 @@ The Windows Hello for Business on-premises deployment is for organizations that 
 
 ## Pass-through authentication
 
-Pass-through authentication provides a simple password validation for Azure AD authentication services. It uses a software agent that runs on one or more on-premises servers to validate the users directly with your on-premises Active Directory. With pass-through authentication (PTA), you synchronize on-premises Active Directory user account objects with Office 365 and manage your users on-premises. Allows your users to sign in to both on-premises and Office 365 resources and applications using their on-premises account and password. This configuration validates users' passwords directly against your on-premises Active Directory without sending password hashes to Office 365. Companies with a security requirement to immediately enforce on-premises user account states, password policies, and sign-in hours would use this authentication method. With seamless single sign-on, users are automatically signed in to Azure AD when they are on their corporate devices and connected to your corporate network.
+Pass-through authentication provides a simple password validation for Azure AD authentication services. It uses a software agent that runs on one or more on-premises servers to validate the users directly with your on-premises Active Directory. With pass-through authentication (PTA), you synchronize on-premises Active Directory user account objects with Azure AD and manage your users on-premises. Allows your users to sign in to both on-premises and Microsoft cloud resources and applications using their on-premises account and password. This configuration validates users' passwords directly against your on-premises Active Directory without sending password hashes to Azure AD. Companies with a security requirement to immediately enforce on-premises user account states, password policies, and sign-in hours would use this authentication method. With seamless single sign-on, users are automatically signed in to Azure AD when they are on their corporate devices and connected to your corporate network.
 
 ### Related to pass-through authentication
 
@@ -282,7 +294,7 @@ Pass-through authentication provides a simple password validation for Azure AD a
 
 ## Password hash sync
 
-Password hash sync is the simplest way to enable authentication for on-premises directory objects in Azure AD. With password hash sync (PHS), you synchronize your on-premises Active Directory user account objects with Office 365 and manage your users on-premises. Hashes of user passwords are synchronized from your on-premises Active Directory to Azure AD so that the users have the same password on-premises and in the cloud. When passwords are changed or reset on-premises, the new password hashes are synchronized to Azure AD so that your users can always use the same password for cloud resources and on-premises resources. The passwords are never sent to Azure AD or stored in Azure AD in clear text. Some premium features of Azure AD, such as Identity Protection, require PHS regardless of which authentication method is selected. With seamless single sign-on, users are automatically signed in to Azure AD when they are on their corporate devices and connected to your corporate network.
+Password hash sync is the simplest way to enable authentication for on-premises directory objects in Azure AD. With password hash sync (PHS), you synchronize your on-premises Active Directory user account objects with Azure AD and manage your users on-premises. Hashes of user passwords are synchronized from your on-premises Active Directory to Azure AD so that the users have the same password on-premises and in the cloud. When passwords are changed or reset on-premises, the new password hashes are synchronized to Azure AD so that your users can always use the same password for cloud resources and on-premises resources. The passwords are never sent to Azure AD or stored in Azure AD in clear text. Some premium features of Azure AD, such as Identity Protection, require PHS regardless of which authentication method is selected. With seamless single sign-on, users are automatically signed in to Azure AD when they are on their corporate devices and connected to your corporate network.
 
 ### Related to password hash sync
 
@@ -322,6 +334,7 @@ The trust type determines how a user authenticates to the Active Directory to ac
 
 ### Related to trust type
 
+- [Cloud Kerberos trust](#cloud-kerberos-trust)
 - [Certificate trust](#certificate-trust)
 - [Hybrid deployment](#hybrid-deployment)
 - [Key trust](#key-trust)
@@ -346,7 +359,7 @@ A TPM implements controls that meet the specification described by the Trusted C
 - The first TPM specification, version 1.2, was published in February 2005 by the TCG and standardized under ISO / IEC 11889 standard.
 - The latest TPM specification, referred to as TPM 2.0, was released in April 2014 and has been approved by the ISO/IEC Joint Technical Committee (JTC) as ISO/IEC 11889:2015.
 
-Windows 10 and Windows 11 use the TPM for cryptographic calculations as part of health attestation and to protect the keys for BitLocker, Windows Hello, virtual smart cards, and other public key certificates. For more information, see [TPM requirements in Windows](../../information-protection/tpm/tpm-recommendations.md).
+Windows 10 and Windows 11 use the TPM for cryptographic calculations as part of health attestation and to protect the keys for BitLocker, Windows Hello, virtual smart cards, and other public key certificates. For more information, see [TPM requirements in Windows](../../hardware-security/tpm/tpm-recommendations.md).
 
 Windows recognizes versions 1.2 and 2.0 TPM specifications produced by the TCG. For the most recent and modern security features, Windows 10 and Windows 11 support only TPM 2.0.
 

@@ -4,11 +4,12 @@ description: Learn how to prepare a device for kiosk configuration. Also, learn 
 ms.reviewer: sybruckm
 manager: aaroncz
 ms.author: lizlong
-ms.prod: w10
+ms.prod: windows-client
 author: lizgt2000
 ms.localizationpriority: medium
 ms.topic: article
-ms.collection: highpri
+ms.technology: itpro-configure
+ms.date: 12/31/2017
 ---
 
 # Prepare a device for kiosk configuration
@@ -29,9 +30,9 @@ ms.collection: highpri
 
   Assigned access can be configured using Windows Management Instrumentation (WMI) or configuration service provider (CSP). Assigned access runs an application using a domain user or service account, not a local account. Using a domain user or service accounts has risks, and might allow an attacker to gain access to domain resources that are accessible to any domain account. When using domain accounts with assigned access, proceed with caution. Consider the domain resources potentially exposed by using a domain account.
 
-- MDM providers, such as [Microsoft Endpoint Manager](/mem/endpoint-manager-getting-started), use the configuration service providers (CSP) exposed by the Windows OS to manage settings on devices. In this article, we mention these services. If you're not managing your devices using an MDM provider, the following resources may help you get started:
+- MDM providers, such as [Microsoft Intune](/mem/intune/fundamentals/what-is-intune), use the configuration service providers (CSP) exposed by the Windows OS to manage settings on devices. In this article, we mention these services. If you're not managing your devices using an MDM provider, the following resources may help you get started:
 
-  - [Microsoft Endpoint Manager](/mem/endpoint-manager-getting-started)
+  - [Endpoint Management at Microsoft](/mem/endpoint-manager-getting-started)
   - [What is Microsoft Intune](/mem/intune/fundamentals/what-is-intune) and [Microsoft Intune planning guide](/mem/intune/fundamentals/intune-planning-guide)
   - [What is Configuration Manager?](/mem/configmgr/core/understand/introduction)
 
@@ -43,7 +44,7 @@ For a more secure kiosk experience, we recommend that you make the following con
 
   - **Use Group policy**: `Computer Configuration\Administrative Templates\Windows Components\Windows Update\Display options for update notifications`
 
-  - **Use an MDM provider**: This feature uses the [Update/UpdateNotificationLevel CSP](/windows/client-management/mdm/policy-csp-update#update-updatenotificationlevel). In Endpoint Manager, you can use the [Windows update settings](/mem/intune/protect/windows-update-settings) to manage this feature.
+  - **Use an MDM provider**: This feature uses the [Update/UpdateNotificationLevel CSP](/windows/client-management/mdm/policy-csp-update#update-updatenotificationlevel). In Intune, you can use the [Windows update settings](/mem/intune/protect/windows-update-settings) to manage this feature.
 
   - **Use the registry**:
 
@@ -58,7 +59,7 @@ For a more secure kiosk experience, we recommend that you make the following con
 - **Enable and schedule automatic updates**. To enable this feature, you have the following options:
 
   - **Use Group policy**: `Computer Configuration\Administrative Templates\Windows Components\Windows Update\Configure Automatic Updates`. Select `4 - Auto download and schedule the install`.
-  - **Use an MDM provider**: This feature uses the [Update/AllowAutoUpdate CSP](/windows/client-management/mdm/policy-csp-update#update-allowautoupdate). Select `3 - Auto install and restart at a specified time`. In Endpoint Manager, you can use the [Windows update settings](/mem/intune/protect/windows-update-settings) to manage this feature.
+  - **Use an MDM provider**: This feature uses the [Update/AllowAutoUpdate CSP](/windows/client-management/mdm/policy-csp-update#update-allowautoupdate). Select `3 - Auto install and restart at a specified time`. In Intune, you can use the [Windows update settings](/mem/intune/protect/windows-update-settings) to manage this feature.
 
   You can also schedule automatic updates, including **Schedule Install Day**, **Schedule Install Time**, and **Schedule Install Week**. Installations can take between 30 minutes and 2 hours, depending on the device. Schedule updates to occur when a block of 3-4 hours is available.
 
@@ -66,7 +67,7 @@ For a more secure kiosk experience, we recommend that you make the following con
 
   - **Use Group policy**: `Computer Configuration\Administrative Templates\Windows Components\Windows Update\Always automatically restart at the scheduled time`. Select `4 - Auto download and schedule the install`.
 
-  - **Use an MDM provider**: This feature uses the [Update/ActiveHoursStart](/windows/client-management/mdm/policy-csp-update#update-activehoursstart) and [Update/ActiveHoursEnd](/windows/client-management/mdm/policy-csp-update#update-activehoursend) CSPs. In Endpoint Manager, you can use the [Windows update settings](/mem/intune/protect/windows-update-settings) to manage this feature.
+  - **Use an MDM provider**: This feature uses the [Update/ActiveHoursStart](/windows/client-management/mdm/policy-csp-update#update-activehoursstart) and [Update/ActiveHoursEnd](/windows/client-management/mdm/policy-csp-update#update-activehoursend) CSPs. In Intune, you can use the [Windows update settings](/mem/intune/protect/windows-update-settings) to manage this feature.
 
 - **Replace "blue screen" with blank screen for OS errors**. To enable this feature, use the Registry Editor:
 
@@ -91,7 +92,7 @@ For a more secure kiosk experience, we recommend that you make the following con
 
 - **Hide "Ease of access" feature on the sign-in screen**: To enable this feature, you have the following options:
 
-  - **Use an MDM provider**: In Endpoint Manager, you can use the [Control Panel and Settings](/mem/intune/configuration/device-restrictions-windows-10#control-panel-and-settings) to manage this feature.
+  - **Use an MDM provider**: In Intune, you can use the [Control Panel and Settings](/mem/intune/configuration/device-restrictions-windows-10#control-panel-and-settings) to manage this feature.
   - **Use the registry**: For more information, see [how to disable the Ease of Access button in the registry](/windows-hardware/customize/enterprise/complementary-features-to-custom-logon#welcome-screen).
 
 - **Disable the hardware power button**: To enable this feature, you have the following options:
@@ -110,7 +111,7 @@ For a more secure kiosk experience, we recommend that you make the following con
 
       To prevent this policy from affecting a member of the Administrators group, be sure to keep the Administrators group.
 
-  - **Use an MDM provider**: In Endpoint Manager, you have some options:
+  - **Use an MDM provider**: In Intune, you have some options:
 
     - [Settings Catalog](/mem/intune/configuration/settings-catalog): This option lists all the settings you can configure, including the administrative templates used in on-premises Group Policy. Configure the following settings:
 
@@ -130,7 +131,7 @@ For a more secure kiosk experience, we recommend that you make the following con
 
   - **Use Group Policy**: `Computer Configuration\Windows Settings\Security Settings\Local Policies\Security Options\Shutdown: Allow system to be shut down without having to log on`. Select **Disabled**.
 
-  - **Use MDM**: In Endpoint Manager, you have the following option:
+  - **Use MDM**: In Intune, you have the following option:
 
     - [Settings Catalog](/mem/intune/configuration/settings-catalog): This option lists all the settings you can configure, including the administrative templates used in on-premises Group Policy. Configure the following setting:
 
@@ -145,7 +146,7 @@ For a more secure kiosk experience, we recommend that you make the following con
 
   - **Use Group Policy**: `Computer Configuration\Administrative Templates\Windows Components\Camera: Allow use of camera`: Select **Disabled**.
 
-  - **Use an MDM provider**: This feature uses the [Policy CSP - Camera](/windows/client-management/mdm/policy-csp-camera). In Endpoint Manager, you have the following options:
+  - **Use an MDM provider**: This feature uses the [Policy CSP - Camera](/windows/client-management/mdm/policy-csp-camera). In Intune, you have the following options:
 
     - [General settings in a device configuration profile](/mem/intune/configuration/device-restrictions-windows-10#general): This option shows this setting, and more settings you can manage.
     - [Settings Catalog](/mem/intune/configuration/settings-catalog): This option lists all the settings you can configure, including the administrative templates used in on-premises Group Policy. Configure the following setting:
@@ -164,7 +165,7 @@ For a more secure kiosk experience, we recommend that you make the following con
     - `Computer Configuration\Administrative Templates\System\Logon\Turn off app notifications on the lock screen`: Select **Enabled**.
     - `User Configuration\Administrative Templates\Start Menu and Taskbar\Notifications\Turn off toast notifications on the lock screen`: Select **Enabled**.
 
-  - **Use an MDM provider**: This feature uses the [AboveLock/AllowToasts CSP](/windows/client-management/mdm/policy-csp-abovelock#abovelock-allowtoasts). In Endpoint Manager, you have the following options:
+  - **Use an MDM provider**: This feature uses the [AboveLock/AllowToasts CSP](/windows/client-management/mdm/policy-csp-abovelock#abovelock-allowtoasts). In Intune, you have the following options:
 
     - [Locked screen experience device configuration profile](/mem/intune/configuration/device-restrictions-windows-10#locked-screen-experience): See this setting, and more settings you can manage.
 
@@ -186,7 +187,7 @@ For a more secure kiosk experience, we recommend that you make the following con
 
     To prevent this policy from affecting a member of the Administrators group, select `Allow administrators to override Device Installation Restriction policies` > **Enabled**.
 
-  - **Use an MDM provider**: In Endpoint Manager, you have the following options:
+  - **Use an MDM provider**: In Intune, you have the following options:
 
     - [General settings in a device configuration profile](/mem/intune/configuration/device-restrictions-windows-10#general): See the **Removable storage** setting, and more settings you can manage.
 
@@ -206,7 +207,7 @@ For a more secure kiosk experience, we recommend that you make the following con
 
 ## Enable logging
 
-Logs can help you [troubleshoot issues](./kiosk-troubleshoot.md) kiosk issues. Logs about configuration and runtime issues can be obtained by enabling the **Applications and Services Logs\Microsoft\Windows\AssignedAccess\Operational** channel, which is disabled by default.
+Logs can help you [troubleshoot issues](/troubleshoot/windows-client/shell-experience/kiosk-mode-issues-troubleshooting) kiosk issues. Logs about configuration and runtime issues can be obtained by enabling the **Applications and Services Logs\Microsoft\Windows\AssignedAccess\Operational** channel, which is disabled by default.
 
 :::image type="content" source="images/enable-assigned-access-log.png" alt-text="On Windows client, open Event Viewer, right-click Operational, select enable log to turn on logging to help troubleshoot.":::
 
@@ -244,7 +245,7 @@ You may also want to set up **automatic logon** for your kiosk device. When your
      > [!NOTE]
      > If *DefaultUserName* and *DefaultPassword* aren't there, add them as **New** > **String Value**.
 
-   - *DefaultDomainName*: set value for domain, only for domain accounts. For local accounts, do not add this key.
+   - *DefaultDomainName*: set value for domain, only for domain accounts. For local accounts, don't add this key.
 
 4. Close Registry Editor. The next time the computer restarts, the account will sign in automatically.
 
@@ -258,7 +259,7 @@ You may also want to set up **automatic logon** for your kiosk device. When your
 
 The following table describes some features that have interoperability issues we recommend that you consider when running assigned access.
 
-- **Accessibility**: Assigned access does not change Ease of Access settings. We recommend that you use [Keyboard Filter](/windows-hardware/customize/enterprise/keyboardfilter) to block the following key combinations that bring up accessibility features:
+- **Accessibility**: Assigned access doesn't change Ease of Access settings. We recommend that you use [Keyboard Filter](/windows-hardware/customize/enterprise/keyboardfilter) to block the following key combinations that bring up accessibility features:
 
   | Key combination | Blocked behavior |
   | --- | --- | 
@@ -270,7 +271,7 @@ The following table describes some features that have interoperability issues we
 
 - **Key sequences blocked by assigned access**: When in assigned access, some key combinations are blocked for assigned access users.
 
-  Alt + F4, Alt + Shift + Tab, Alt + Tab are not blocked by Assigned Access, it's recommended you use [Keyboard Filter](/windows-hardware/customize/enterprise/keyboardfilter) to block these key combinations.
+  Alt + F4, Alt + Shift + Tab, Alt + Tab aren't blocked by Assigned Access, it's recommended you use [Keyboard Filter](/windows-hardware/customize/enterprise/keyboardfilter) to block these key combinations.
 
   Ctrl + Alt + Delete is the key to break out of Assigned Access. If needed, you can use Keyboard Filter to configure a different key combination to break out of assigned access by setting BreakoutKeyScanCode as described in [WEKF_Settings](/windows-hardware/customize/enterprise/wekf-settings).
 
@@ -283,7 +284,7 @@ The following table describes some features that have interoperability issues we
   | Ctrl + Shift + Esc | Open Task Manager. |
   | Ctrl + Tab | Switch windows within the application currently open. |
   | LaunchApp1 | Open the app that is assigned to this key. |
-  | LaunchApp2 | Open the app that is assigned to this key, which on many Microsoft keyboards is Calculator. |
+  | LaunchApp2 | Open the app that is assigned to this key. On many Microsoft keyboards, the app is Calculator. |
   | LaunchMail | Open the default mail client. |
   | Windows logo key | Open the Start screen. |
 
@@ -293,7 +294,7 @@ The following table describes some features that have interoperability issues we
 
   [Keyboard Filter](/windows-hardware/customize/enterprise/keyboardfilter) is only available on Windows client Enterprise or Education.
 
-- **Power button**: Customizations for the Power button complement assigned access, letting you implement features such as removing the power button from the Welcome screen. Removing the power button ensures the user cannot turn off the device when it's in assigned access.
+- **Power button**: Customizations for the Power button complement assigned access, letting you implement features such as removing the power button from the Welcome screen. Removing the power button ensures the user can't turn off the device when it's in assigned access.
 
   For more information on removing the power button or disabling the physical power button, see [Custom Logon](/windows-hardware/customize/enterprise/custom-logon).
 
@@ -315,7 +316,7 @@ Customers sometimes use virtual machines (VMs) to test configurations before dep
 
 A single-app kiosk configuration runs an app above the lock screen. It doesn't work when it's accessed remotely, which includes *enhanced* sessions in Hyper-V. 
 
-When you connect to a VM configured as a single-app kiosk, you need a *basic* session rather than an enhanced session. In the following image, notice that **Enhanced session** is not selected in the **View** menu; that means it's a basic session.
+When you connect to a VM configured as a single-app kiosk, you need a *basic* session rather than an enhanced session. In the following image, notice that **Enhanced session** isn't selected in the **View** menu; that means it's a basic session.
 
 :::image type="content" source="images/vm-kiosk.png" alt-text="Use a basic session to connect a virtual machine. In the View menu, Extended session isn't selected, which means basic is used.":::
 

@@ -1,91 +1,198 @@
 ---
 title: Personalization CSP
-description: Use the Personalization CSP to lock screen and desktop background images, prevent users from changing the image, and use the settings in a provisioning package.
-ms.author: vinpa
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
+description: Learn more about the Personalization CSP.
 author: vinaypamnani-msft
-ms.date: 06/28/2022
-ms.reviewer: 
 manager: aaroncz
+ms.author: vinpa
+ms.date: 08/10/2023
+ms.localizationpriority: medium
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- Personalization-Begin -->
 # Personalization CSP
 
-The table below shows the applicability of Windows:
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Windows SE|No|Yes|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
+<!-- Personalization-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 The Personalization CSP can set the lock screen and desktop background images. Setting these policies also prevents the user from changing the image. You can also use the Personalization settings in a provisioning package.
 
-This CSP was added in Windows 10, version 1703.
+> [!IMPORTANT]
+> Personalization CSP is supported in Windows Enterprise and Education SKUs. It works in Windows Professional only when SetEduPolicies in [SharedPC CSP](sharedpc-csp.md) is set.
+<!-- Personalization-Editable-End -->
 
-> [!Note]
-> Personalization CSP is supported in Windows 10 Enterprise and Education SKUs. It works in Windows 10 Pro and Windows 10 Pro in S mode if SetEduPolicies in [SharedPC CSP](sharedpc-csp.md) is set.
+<!-- Personalization-Tree-Begin -->
+The following list shows the Personalization configuration service provider nodes:
 
-The following example shows the Personalization configuration service provider in tree format.
+- ./Vendor/MSFT/Personalization
+  - [DesktopImageStatus](#desktopimagestatus)
+  - [DesktopImageUrl](#desktopimageurl)
+  - [LockScreenImageStatus](#lockscreenimagestatus)
+  - [LockScreenImageUrl](#lockscreenimageurl)
+<!-- Personalization-Tree-End -->
+
+<!-- Device-DesktopImageStatus-Begin -->
+## DesktopImageStatus
+
+<!-- Device-DesktopImageStatus-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- Device-DesktopImageStatus-Applicability-End -->
+
+<!-- Device-DesktopImageStatus-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/Personalization/DesktopImageStatus
 ```
-./Vendor/MSFT
-Personalization
-----DesktopImageUrl
-----DesktopImageStatus
-----LockScreenImageUrl
-----LockScreenImageStatus
+<!-- Device-DesktopImageStatus-OmaUri-End -->
+
+<!-- Device-DesktopImageStatus-Description-Begin -->
+<!-- Description-Source-DDF -->
+This represents the status of the DesktopImage. 1 - Successfully downloaded or copied. 2 - Download/Copy in progress. 3 - Download/Copy failed. 4 - Unknown file type. 5 - Unsupported Url scheme. 6 - Max retry failed.
+<!-- Device-DesktopImageStatus-Description-End -->
+
+<!-- Device-DesktopImageStatus-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-DesktopImageStatus-Editable-End -->
+
+<!-- Device-DesktopImageStatus-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Get |
+<!-- Device-DesktopImageStatus-DFProperties-End -->
+
+<!-- Device-DesktopImageStatus-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-DesktopImageStatus-Examples-End -->
+
+<!-- Device-DesktopImageStatus-End -->
+
+<!-- Device-DesktopImageUrl-Begin -->
+## DesktopImageUrl
+
+<!-- Device-DesktopImageUrl-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- Device-DesktopImageUrl-Applicability-End -->
+
+<!-- Device-DesktopImageUrl-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/Personalization/DesktopImageUrl
 ```
-<a href="" id="personalization"></a>**./Vendor/MSFT/Personalization**  
-<p>Defines the root node for the Personalization configuration service provider.</p>
+<!-- Device-DesktopImageUrl-OmaUri-End -->
 
-<a href="" id="desktopimageurl"></a>**DesktopImageUrl**  
-<p>Specify a jpg, jpeg or png image to be used as Desktop Image. This setting can take an http or https Url to a remote image to be downloaded, a file Url to a local image.</p>
-<p>Value type is string. Supported operations are Add, Get, Delete, and Replace.</p>
+<!-- Device-DesktopImageUrl-Description-Begin -->
+<!-- Description-Source-DDF -->
+A http or https Url to a jpg, jpeg or png image that needs to be downloaded and used as the Desktop Image or a file Url to a local image on the file system that needs to be used as the Desktop Image.
+<!-- Device-DesktopImageUrl-Description-End -->
 
-<a href="" id="desktopimagestatus"></a>**DesktopImageStatus**  
-<p>Represents the status of the desktop image. Valid values:</p>
-<ul>
-<li>1 - Successfully downloaded or copied.</li>
-<li>2 - Download or copy in progress.</li>
-<li>3 - Download or copy failed.</li>
-<li>4 - Unknown file type.</li>
-<li>5 - Unsupported URL scheme.</li>
-<li>6 - Max retry failed.</li>
-<li>7 - Blocked, SKU not allowed</li>
-</ul>
-<p>Supporter operation is Get.</p>
+<!-- Device-DesktopImageUrl-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-DesktopImageUrl-Editable-End -->
 
-> [!Note]
-> This setting is only used to query status. To set the image, use the DesktopImageUrl setting.
+<!-- Device-DesktopImageUrl-DFProperties-Begin -->
+**Description framework properties**:
 
-<a href="" id="lockscreenimageurl"></a>**LockScreenImageUrl**  
-<p>Specify a jpg, jpeg or png image to be used as Lock Screen Image. This setting can take an http or https Url to a remote image to be downloaded, a file Url to a local image.</p>
-<p>Value type is string. Supported operations are Add, Get, Delete, and Replace.</p>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-DesktopImageUrl-DFProperties-End -->
 
+<!-- Device-DesktopImageUrl-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-DesktopImageUrl-Examples-End -->
 
-<a href="" id="lockscreenimagestatus"></a>**LockScreenImageStatus**  
-<p>Represents the status of the lock screen image. Valid values:</p>
-<ul>
-<li>1 - Successfully downloaded or copied.</li>
-<li>2 - Download or copy in progress.</li>
-<li>3 - Download or copy failed.</li>
-<li>4 - Unknown file type.</li>
-<li>5 - Unsupported URL scheme.</li>
-<li>6 - Max retry failed.</li>
-<li>7 - Blocked, SKU not allowed</li>
-</ul>
-<p>Supporter operation is Get.</p>
+<!-- Device-DesktopImageUrl-End -->
 
-> [!Note]
-> This setting is only used to query status. To set the image, use the LockScreenImageUrl setting.
+<!-- Device-LockScreenImageStatus-Begin -->
+## LockScreenImageStatus
 
+<!-- Device-LockScreenImageStatus-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- Device-LockScreenImageStatus-Applicability-End -->
 
-## Example SyncML
+<!-- Device-LockScreenImageStatus-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/Personalization/LockScreenImageStatus
+```
+<!-- Device-LockScreenImageStatus-OmaUri-End -->
+
+<!-- Device-LockScreenImageStatus-Description-Begin -->
+<!-- Description-Source-DDF -->
+This represents the status of the LockScreenImage. 1 - Successfully downloaded or copied. 2 - Download/Copy in progress. 3 - Download/Copy failed. 4 - Unknown file type. 5 - Unsupported Url scheme. 6 - Max retry failed.
+<!-- Device-LockScreenImageStatus-Description-End -->
+
+<!-- Device-LockScreenImageStatus-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-LockScreenImageStatus-Editable-End -->
+
+<!-- Device-LockScreenImageStatus-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Get |
+<!-- Device-LockScreenImageStatus-DFProperties-End -->
+
+<!-- Device-LockScreenImageStatus-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-LockScreenImageStatus-Examples-End -->
+
+<!-- Device-LockScreenImageStatus-End -->
+
+<!-- Device-LockScreenImageUrl-Begin -->
+## LockScreenImageUrl
+
+<!-- Device-LockScreenImageUrl-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- Device-LockScreenImageUrl-Applicability-End -->
+
+<!-- Device-LockScreenImageUrl-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/Personalization/LockScreenImageUrl
+```
+<!-- Device-LockScreenImageUrl-OmaUri-End -->
+
+<!-- Device-LockScreenImageUrl-Description-Begin -->
+<!-- Description-Source-DDF -->
+A http or https Url to a jpg, jpeg or png image that neeeds to be downloaded and used as the Lock Screen Image or a file Url to a local image on the file system that needs to be used as the Lock Screen Image.
+<!-- Device-LockScreenImageUrl-Description-End -->
+
+<!-- Device-LockScreenImageUrl-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-LockScreenImageUrl-Editable-End -->
+
+<!-- Device-LockScreenImageUrl-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-LockScreenImageUrl-DFProperties-End -->
+
+<!-- Device-LockScreenImageUrl-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-LockScreenImageUrl-Examples-End -->
+
+<!-- Device-LockScreenImageUrl-End -->
+
+<!-- Personalization-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+## Example
 
 ```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
@@ -120,10 +227,14 @@ Personalization
         <Data>https://www.contoso.com/lockscreenimage.JPG</Data>
       </Item>
     </Replace>
-    <Final/> 
+    <Final/>
   </SyncBody>
 </SyncML>
 ```
+<!-- Personalization-CspMoreInfo-End -->
 
+<!-- Personalization-End -->
 
+## Related articles
 
+[Configuration service provider reference](configuration-service-provider-reference.md)

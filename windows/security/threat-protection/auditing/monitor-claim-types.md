@@ -1,21 +1,20 @@
 ---
-title: Monitor claim types (Windows 10)
+title: Monitor claim types 
 description: Learn how to monitor changes to claim types that are associated with dynamic access control when you're using advanced security auditing options.
 ms.assetid: 426084da-4eef-44af-aeec-e7ab4d4e2439
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/09/2021
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Monitor claim types

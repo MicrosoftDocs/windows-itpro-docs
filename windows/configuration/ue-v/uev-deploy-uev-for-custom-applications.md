@@ -2,12 +2,16 @@
 title: Use UE-V with custom applications
 description: Use User Experience Virtualization (UE-V) to create your own custom settings location templates with the UE-V template generator.
 author: aczechowski
-ms.prod: w10
+ms.prod: windows-client
+ms.collection:
+ - tier3
+ - must-keep
 ms.date: 04/19/2017
 ms.reviewer: 
-manager: dougeby
+manager: aaroncz
 ms.author: aaroncz
 ms.topic: article
+ms.technology: itpro-configure
 ---
 
 # Use UE-V with custom applications 
@@ -219,7 +223,7 @@ After you create a settings location template with the UE-V template generator, 
 
 You can deploy settings location templates using of these methods:
 
--   An electronic software distribution (ESD) system such as Microsoft Endpoint Configuration Manager
+-   An electronic software distribution (ESD) system such as Microsoft Configuration Manager
 
 -   Group Policy preferences
 

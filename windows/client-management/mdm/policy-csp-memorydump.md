@@ -1,119 +1,129 @@
 ---
-title: Policy CSP - MemoryDump
-description: Use the Policy CSP
-ms.author: vinpa
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
+title: MemoryDump Policy CSP
+description: Learn more about the MemoryDump Area in Policy CSP.
 author: vinaypamnani-msft
-ms.localizationpriority: medium
-ms.date: 09/27/2019
-ms.reviewer: 
 manager: aaroncz
+ms.author: vinpa
+ms.date: 08/10/2023
+ms.localizationpriority: medium
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- MemoryDump-Begin -->
 # Policy CSP - MemoryDump
 
-<hr/>
+<!-- MemoryDump-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MemoryDump-Editable-End -->
 
-<!--Policies-->
-## MemoryDump policies  
+<!-- AllowCrashDump-Begin -->
+## AllowCrashDump
 
-<dl>
-  <dd>
-    <a href="#memorydump-allowcrashdump">MemoryDump/AllowCrashDump</a>
-  </dd>
-  <dd>
-    <a href="#memorydump-allowlivedump">MemoryDump/AllowLiveDump</a>
-  </dd>
-</dl>
+<!-- AllowCrashDump-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- AllowCrashDump-Applicability-End -->
 
-<hr/>
+<!-- AllowCrashDump-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/MemoryDump/AllowCrashDump
+```
+<!-- AllowCrashDump-OmaUri-End -->
 
-<!--Policy-->
-<a href="" id="memorydump-allowcrashdump"></a>**MemoryDump/AllowCrashDump**  
+<!-- AllowCrashDump-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting decides if crash dump collection on the machine is allowed or not. Supported values: 0 - Disable crash dump collection. 1 (default) - Allow crash dump collection.
+<!-- AllowCrashDump-Description-End -->
 
-<!--SupportedSKUs-->
+<!-- AllowCrashDump-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowCrashDump-Editable-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AllowCrashDump-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowCrashDump-DFProperties-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowCrashDump-AllowedValues-Begin -->
+**Allowed values**:
 
-> [!div class = "checklist"]
-> * Device
+| Value | Description |
+|:--|:--|
+| 0 | Disable crash dump collection. |
+| 1 (Default) | Allow crash dump collection. |
+<!-- AllowCrashDump-AllowedValues-End -->
 
-<hr/>
+<!-- AllowCrashDump-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowCrashDump-Examples-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting decides if crash dump collection on the machine is allowed or not.
+<!-- AllowCrashDump-End -->
 
-<!--/Description-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- AllowLiveDump-Begin -->
+## AllowLiveDump
 
-- 0 - Disable crash dump collection.
-- 1 (default) - Allow crash dump collection.
+<!-- AllowLiveDump-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- AllowLiveDump-Applicability-End -->
 
-<!--/SupportedValues-->
-<!--/Policy-->
+<!-- AllowLiveDump-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/MemoryDump/AllowLiveDump
+```
+<!-- AllowLiveDump-OmaUri-End -->
 
-<hr/>
+<!-- AllowLiveDump-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting decides if live dump collection on the machine is allowed or not. Supported values: 0 - Disable live dump collection. 1 (default) - Allow live dump collection.
+<!-- AllowLiveDump-Description-End -->
 
-<!--Policy-->
-<a href="" id="memorydump-allowlivedump"></a>**MemoryDump/AllowLiveDump**  
+<!-- AllowLiveDump-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowLiveDump-Editable-End -->
 
-<!--SupportedSKUs-->
+<!-- AllowLiveDump-DFProperties-Begin -->
+**Description framework properties**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowLiveDump-DFProperties-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowLiveDump-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+| Value | Description |
+|:--|:--|
+| 0 | Disable live dump collection. |
+| 1 (Default) | Allow live dump collection. |
+<!-- AllowLiveDump-AllowedValues-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- AllowLiveDump-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowLiveDump-Examples-End -->
 
-<hr/>
+<!-- AllowLiveDump-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting decides if crash dump collection on the machine is allowed or not.
+<!-- MemoryDump-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- MemoryDump-CspMoreInfo-End -->
 
-<!--/Description-->
+<!-- MemoryDump-End -->
 
-<!--SupportedValues-->
-The following list shows the supported values:
-
-- 0 - Disable crash dump collection.
-- 1 (default) - Allow crash dump collection.
-
-<!--/SupportedValues-->
-<!--/Policy-->
-<hr/>
-
-<!--/Policies-->
-
-## Related topics
+## Related articles
 
 [Policy configuration service provider](policy-configuration-service-provider.md)

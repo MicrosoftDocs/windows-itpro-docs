@@ -1,17 +1,21 @@
 ---
-title: 4771(F) Kerberos pre-authentication failed. (Windows 10)
+title: 4771(F) Kerberos pre-authentication failed. 
 description: Describes security event 4771(F) Kerberos pre-authentication failed. This event is generated when the Key Distribution Center fails to issue a Kerberos TGT.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
-author: dansimp
+ms.localizationpriority: low
+author: vinaypamnani-msft
 ms.date: 09/07/2021
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.technology: windows-sec
+manager: aaroncz
+ms.author: vinpa
+ms.technology: itpro-security
+ms.collection: 
+  - highpri
+  - tier3
+ms.topic: reference
 ---
 
 # 4771(F): Kerberos pre-authentication failed.
@@ -23,11 +27,11 @@ ms.technology: windows-sec
 
 ***Event Description:***
 
-This event generates every time the Key Distribution Center fails to issue a Kerberos Ticket Granting Ticket (TGT). This problem can occur when a domain controller doesn’t have a certificate installed for smart card authentication (for example, with a “Domain Controller” or “Domain Controller Authentication” template), the user’s password has expired, or the wrong password was provided.
+This event generates every time the Key Distribution Center fails to issue a Kerberos Ticket Granting Ticket (TGT). This problem can occur when a domain controller doesn't have a certificate installed for smart card authentication (for example, with a "Domain Controller" or "Domain Controller Authentication" template), the user's password has expired, or the wrong password was provided.
 
 This event generates only on domain controllers.
 
-This event is not generated if “Do not require Kerberos preauthentication” option is set for the account.
+This event is not generated if "Do not require Kerberos preauthentication" option is set for the account.
 
 > **Note**&nbsp;&nbsp;For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
 
@@ -124,7 +128,7 @@ This event is not generated if “Do not require Kerberos preauthentication” o
 
     -   Using **MSB 0**-bit numbering, we have bit 1, 8, 15 and 27 set = Forwardable, Renewable, Canonicalize, Renewable-ok.
 
-> **Note**&nbsp;&nbsp;In the table below **“MSB 0”** bit numbering is used, because RFC documents use this style. In “MSB 0” style bit numbering begins from left.<br><img src="images/msb.png" alt="MSB illustration" width="224" height="57" />
+> **Note**&nbsp;&nbsp;In the table below **"MSB 0"** bit numbering is used, because RFC documents use this style. In "MSB 0" style bit numbering begins from left.<br><img src="images/msb.png" alt="MSB illustration" width="224" height="57" />
 
 The most common values:
 
@@ -182,14 +186,14 @@ The most common values:
 | 0xd         | KDC\_ERR\_BADOPTION                       | KDC cannot accommodate requested option         |
 | 0xe         | KDC\_ERR\_ETYPE\_NOSUPP                   | KDC has no support for encryption type          |
 | 0xf         | KDC\_ERR\_SUMTYPE\_NOSUPP                 | KDC has no support for checksum type            |
-| 0x10         | KDC\_ERR\_PADATA\_TYPE\_NOSUPP            | KDC has no support for PADATA type (pre-authentication data)|Smart card logon is being attempted and the proper certificate cannot be located. This problem can happen because the wrong certification authority (CA) is being queried or the proper CA cannot be contacted in order to get Domain Controller or Domain Controller Authentication certificates for the domain controller.<br>It can also happen when a domain controller doesn’t have a certificate installed for smart cards (Domain Controller or Domain Controller Authentication templates).
+| 0x10         | KDC\_ERR\_PADATA\_TYPE\_NOSUPP            | KDC has no support for PADATA type (pre-authentication data)|Smart card logon is being attempted and the proper certificate cannot be located. This problem can happen because the wrong certification authority (CA) is being queried or the proper CA cannot be contacted in order to get Domain Controller or Domain Controller Authentication certificates for the domain controller.<br>It can also happen when a domain controller doesn't have a certificate installed for smart cards (Domain Controller or Domain Controller Authentication templates).
 | 0x11         | KDC\_ERR\_TRTYPE\_NOSUPP                  | KDC has no support for transited type           |
 | 0x12         | KDC\_ERR\_CLIENT\_REVOKED                 | Clients credentials have been revoked           |
 | 0x13         | KDC\_ERR\_SERVICE\_REVOKED                | Credentials for server have been revoked        |
 | 0x14         | KDC\_ERR\_TGT\_REVOKED                    | TGT has been revoked                            |
 | 0x15         | KDC\_ERR\_CLIENT\_NOTYET                  | Client not yet valid; try again later           |
 | 0x16         | KDC\_ERR\_SERVICE\_NOTYET                 | Server not yet valid; try again later           |
-| 0x17         | KDC\_ERR\_KEY\_EXPIRED                    | Password has expired—change password to reset   |The user’s password has expired.
+| 0x17         | KDC\_ERR\_KEY\_EXPIRED                    | Password has expired—change password to reset   |The user's password has expired.
 | 0x18         | KDC\_ERR\_PREAUTH\_FAILED                 | Pre-authentication information was invalid      |The wrong password was provided.
 | 0x19         | KDC\_ERR\_PREAUTH\_REQUIRED               | Additional pre-authentication required          |
 | 0x1a         | KDC\_ERR\_SERVER\_NOMATCH                 | Requested server and ticket don't match         |
@@ -257,9 +261,9 @@ The most common values:
 
 - **Certificate Issuer Name** \[Type = UnicodeString\]**:** the name of Certification Authority that issued smart card certificate. Populated in **Issued by** field in certificate. Always empty for [4771](event-4771.md) events.
 
-- **Certificate Serial Number** \[Type = UnicodeString\]**:** smart card certificate’s serial number. Can be found in **Serial number** field in the certificate. Always empty for [4771](event-4771.md) events.
+- **Certificate Serial Number** \[Type = UnicodeString\]**:** smart card certificate's serial number. Can be found in **Serial number** field in the certificate. Always empty for [4771](event-4771.md) events.
 
-- **Certificate Thumbprint** \[Type = UnicodeString\]**:** smart card certificate’s thumbprint. Can be found in **Thumbprint** field in the certificate. Always empty for [4771](event-4771.md) events.
+- **Certificate Thumbprint** \[Type = UnicodeString\]**:** smart card certificate's thumbprint. Can be found in **Thumbprint** field in the certificate. Always empty for [4771](event-4771.md) events.
 
 ## Security Monitoring Recommendations
 
@@ -267,11 +271,11 @@ For 4771(F): Kerberos pre-authentication failed.
 
 | **Type of monitoring required**                                                                                                                                                                                                                                                                                   | **Recommendation**                                                                                                                                                 |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **High-value accounts**: You might have high-value domain or local accounts for which you need to monitor each action.<br>Examples of high-value accounts are database administrators, built-in local administrator account, domain administrators, service accounts, domain controller accounts and so on. | Monitor this event with the **“Security ID”** that corresponds to the high-value account or accounts.                                                              |
-| **Anomalies or malicious actions**: You might have specific requirements for detecting anomalies or monitoring potential malicious actions. For example, you might need to monitor for use of an account outside of working hours.                                                                                | When you monitor for anomalies or malicious actions, use the **“Security ID”** (with other information) to monitor how or when a particular account is being used. |
-| **Non-active accounts**: You might have non-active, disabled, or guest accounts, or other accounts that should never be used.                                                                                                                                                                                     | Monitor this event with the **“Security ID”** that corresponds to the accounts that should never be used.                                                          |
-| **Account allow list**: You might have a specific allow list of accounts that are the only ones allowed to perform actions corresponding to particular events.                                                                                                                                                      | If this event corresponds to a “allow list-only” action, review the **“Security ID”** for accounts that are outside the allow list.                                  |
-| **Account naming conventions**: Your organization might have specific naming conventions for account names.                                                                                                                                                                                                       | Monitor “**Subject\\Account Name”** for names that don’t comply with naming conventions.                                                                           |
+| **High-value accounts**: You might have high-value domain or local accounts for which you need to monitor each action.<br>Examples of high-value accounts are database administrators, built-in local administrator account, domain administrators, service accounts, domain controller accounts and so on. | Monitor this event with the **"Security ID"** that corresponds to the high-value account or accounts.                                                              |
+| **Anomalies or malicious actions**: You might have specific requirements for detecting anomalies or monitoring potential malicious actions. For example, you might need to monitor for use of an account outside of working hours.                                                                                | When you monitor for anomalies or malicious actions, use the **"Security ID"** (with other information) to monitor how or when a particular account is being used. |
+| **Non-active accounts**: You might have non-active, disabled, or guest accounts, or other accounts that should never be used.                                                                                                                                                                                     | Monitor this event with the **"Security ID"** that corresponds to the accounts that should never be used.                                                          |
+| **Account allow list**: You might have a specific allow list of accounts that are the only ones allowed to perform actions corresponding to particular events.                                                                                                                                                      | If this event corresponds to a "allow list-only" action, review the **"Security ID"** for accounts that are outside the allow list.                                  |
+| **Account naming conventions**: Your organization might have specific naming conventions for account names.                                                                                                                                                                                                       | Monitor "**Subject\\Account Name"** for names that don't comply with naming conventions.                                                                           |
 
 -   You can track all [4771](event-4771.md) events where the **Client Address** is not from your internal IP range or not from private IP ranges.
 

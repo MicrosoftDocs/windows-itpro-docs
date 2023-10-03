@@ -1,20 +1,19 @@
 ---
 title: Configure a test lab to deploy Windows 10
 description: Learn about concepts and procedures for deploying Windows 10 in a proof of concept lab environment.
-ms.reviewer: 
-manager: dougeby
-ms.author: aaroncz
-author: aczechowski
-ms.prod: w10
-ms.technology: windows
+manager: aaroncz
+ms.author: frankroj
+author: frankroj
+ms.prod: windows-client
+ms.technology: itpro-deploy
 ms.localizationpriority: medium
 ms.topic: tutorial
-ms.date: 05/12/2022
+ms.date: 11/23/2022
 ---
 
 # Step by step guide: Configure a test lab to deploy Windows 10
 
-*Applies to*
+*Applies to:*
 
 - Windows 10
 
@@ -25,7 +24,7 @@ This guide contains instructions to configure a proof of concept (PoC) environme
 
 This lab guide makes extensive use of Windows PowerShell and Hyper-V. Subsequent companion guides contain steps to deploy Windows 10 using the PoC environment. After completing this guide, see the following Windows 10 PoC deployment guides:
 
-- [Step by step: Deploy Windows 10 in a test lab using Microsoft Endpoint Configuration Manager](windows-10-poc-sc-config-mgr.md)
+- [Step by step: Deploy Windows 10 in a test lab using Microsoft Configuration Manager](windows-10-poc-sc-config-mgr.md)
 - [Step by step: Deploy Windows 10 in a test lab using MDT](windows-10-poc-mdt.md)
 
 The proof of concept (PoC) deployment guides are intended to provide a demonstration of Windows 10 deployment tools and processes for IT professionals that aren't familiar with these tools, and you want to set up a PoC environment. Don't use the instructions in this guide in a production setting. They aren't meant to replace the instructions found in production deployment guidance.
@@ -69,6 +68,7 @@ The procedures in this guide are summarized in the following table. An estimate 
 One computer that meets the hardware and software specifications below is required to complete the guide; A second computer is recommended to validate the upgrade process.
 
 - **Computer 1**: the computer you'll use to run Hyper-V and host virtual machines. This computer should have 16 GB or more of installed RAM and a multi-core processor.
+
 - **Computer 2**: a client computer from your network. It's shadow-copied to create a VM that can be added to the PoC environment, enabling you to test a mirror image of a computer on your network. If you don't have a computer to use for this simulation, you can download an evaluation VHD and use it to represent this computer. Subsequent guides use this computer to simulate Windows 10 replace and refresh scenarios, so the VM is required even if you can't create this VM using computer 2.
 
 Hardware requirements are displayed below:
@@ -80,7 +80,7 @@ Hardware requirements are displayed below:
 |**OS**|Windows 8.1/10 or Windows Server 2012/2012 R2/2016|Windows 8.1 or a later|
 |**Edition**|Enterprise, Professional, or Education|Any|
 |**Architecture**|64-bit|Any <br/><br/> Retaining applications and settings requires that architecture (32-bit or 64-bit) is the same before and after the upgrade.|
-|**RAM**|8-GB RAM (16 GB recommended) to test Windows 10 deployment with MDT.<br>16-GB RAM to test Windows 10 deployment with Microsoft Endpoint Configuration Manager.|Any|
+|**RAM**|8-GB RAM (16 GB recommended) to test Windows 10 deployment with MDT.<br>16-GB RAM to test Windows 10 deployment with Microsoft Configuration Manager.|Any|
 |**Disk**|200-GB available hard disk space, any format.|Any size, MBR formatted.|
 |**CPU**|SLAT-Capable CPU|Any|
 |**Network**|Internet connection|Any|
@@ -92,7 +92,9 @@ The lab architecture is summarized in the following diagram:
 ![PoC diagram.](images/poc.png)
 
 - Computer 1 is configured to host four VMs on a private, PoC network.
+
   - Two VMs are running Windows Server 2012 R2 with required network services and tools installed.
+
   - Two VMs are client systems: One VM is intended to mirror a host on your network (computer 2) and one VM is running Windows 10 Enterprise to demonstrate the hardware replacement scenario.
 
 > [!NOTE]
@@ -120,8 +122,8 @@ Starting with Windows 8, the host computer's microprocessor must support second 
 
 1. To verify your computer supports SLAT, open an administrator command prompt,  type **systeminfo**, press ENTER, and review the section displayed at the bottom of the output, next to Hyper-V Requirements. See the following example:
 
-    ```console
-    C:\>systeminfo
+    ```cmd
+    C:\>systeminfo.exe
 
     ...
     Hyper-V Requirements:      VM Monitor Mode Extensions: Yes
@@ -136,8 +138,8 @@ Starting with Windows 8, the host computer's microprocessor must support second 
 
     You can also identify Hyper-V support using [tools](/archive/blogs/taylorb/hyper-v-will-my-computer-run-hyper-v-detecting-intel-vt-and-amd-v) provided by the processor manufacturer, the [msinfo32](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc731397(v=ws.11)) tool, or you can download the [coreinfo](/sysinternals/downloads/coreinfo) utility and run it, as shown in the following example:
 
-    ```console
-    C:\>coreinfo -v
+    ```cmd
+    C:\>coreinfo.exe -v
 
     Coreinfo v3.31 - Dump information on system CPU and memory topology
     Copyright (C) 2008-2014 Mark Russinovich
@@ -205,7 +207,7 @@ When you have completed installation of Hyper-V on the host computer, begin conf
 
      The following example displays the procedures described in this section, both before and after downloading files:
 
-    ```console
+    ```cmd
      C:>mkdir VHD
      C:>cd VHD
      C:\VHD&gt;ren 9600*.vhd 2012R2-poc-1.vhd
@@ -225,13 +227,23 @@ When you have completed installation of Hyper-V on the host computer, begin conf
 
 If you don't have a PC available to convert to VM, do the following steps to download an evaluation VM:
 
-1. Open the [Download virtual machines](https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/) page.<!-- only works with locale :( -->
+1. Open the [Download virtual machines](https://developer.microsoft.com/microsoft-edge/tools/vms/) page.
+
+    > [!NOTE]
+    > The above link may not be available in all locales.
+
 2. Under **Virtual machine**, choose **IE11 on Win7**.
+
 3. Under **Select platform**, choose **HyperV (Windows)**.
+
 4. Select **Download .zip**. The download is 3.31 GB.
+
 5. Extract the zip file. Three directories are created.
+
 6. Open the **Virtual Hard Disks** directory and then copy **IE11 - Win7.vhd** to the **C:\VHD** directory.
+
 7. Rename **IE11 - Win7.vhd** to **w7.vhd** (don't rename the file to w7.vhdx).
+
 8. In step 5 of the [Configure Hyper-V](#configure-hyper-v) section, replace the VHD file name **w7.vhdx** with **w7.vhd**.
 
 If you have a PC available to convert to VM (computer 2):
@@ -242,6 +254,7 @@ If you have a PC available to convert to VM (computer 2):
     > The account used in this step must have local administrator privileges. You can use a local computer account, or a domain account with administrative rights if domain policy allows the use of cached credentials. After converting the computer to a VM, you must be able to sign in on this VM with administrator rights while the VM is disconnected from the network.
 
 2. [Determine the VM generation and partition type](#determine-the-vm-generation-and-partition-type) that is required.
+
 3. Based on the VM generation and partition type, perform one of the following procedures: [Prepare a generation 1 VM](#prepare-a-generation-1-vm), [Prepare a generation 2 VM](#prepare-a-generation-2-vm), or [prepare a generation 1 VM from a GPT disk](#prepare-a-generation-1-vm-from-a-gpt-disk).
 
 #### Determine the VM generation and partition type
@@ -256,6 +269,7 @@ When creating a VM in Hyper-V, you must specify either generation 1 or generatio
 If the PC is running a 32-bit OS or the OS is Windows 7, it must be converted to a generation 1 VM. Otherwise, it can be converted to a generation 2 VM.
 
 - To determine the OS and architecture of a PC, type **systeminfo** at a command prompt and review the output next to **OS Name** and **System Type**.
+
 - To determine the partition style, open a Windows PowerShell prompt on the PC and type the following command:
 
   ```powershell
@@ -265,7 +279,7 @@ If the PC is running a 32-bit OS or the OS is Windows 7, it must be converted to
 If the **Type** column doesn't indicate GPT, then the disk partition format is MBR ("Installable File System" = MBR). In the following example, the disk is GPT:
 
 ```powershell
-PS C:> Get-WmiObject -Class Win32_DiskPartition | Select-Object -Property SystemName,Caption,Type
+Get-WmiObject -Class Win32_DiskPartition | Select-Object -Property SystemName,Caption,Type
 
 SystemName                           Caption                                 Type
 ----------                           -------                                 ----
@@ -276,7 +290,7 @@ USER-PC1                             Disk #0, Partition #1                   GPT
 On a computer running Windows 8 or later, you can also type **Get-Disk** at a Windows PowerShell prompt to discover the partition style. The default output of this cmdlet displays the partition style for all attached disks. Both commands are displayed below. In this example, the client computer is running Windows 8.1 and uses a GPT style partition format:
 
 ```powershell
-PS C:> Get-WmiObject -Class Win32_DiskPartition | Select-Object -Property SystemName,Caption,Type
+Get-WmiObject -Class Win32_DiskPartition | Select-Object -Property SystemName,Caption,Type
 
 SystemName                            Caption                               Type
 ----------                            -------                               ----
@@ -293,34 +307,32 @@ Number Friendly Name                  OperationalStatus                     Tota
 0      INTEL SSDSCMMW240A3L           Online                                223.57 GB GPT
 ```
 
-<span id="determine-vm-generation"/>
-
-**Choosing a VM generation**
+##### Choosing a VM generation
 
 The following tables display the Hyper-V VM generation to choose based on the OS, architecture, and partition style. Links to procedures to create the corresponding VMs are included.
 
-**Windows 7 MBR**
+###### Windows 7 MBR
 
 |Architecture|VM generation|Procedure|
 |--- |--- |--- |
 |32|1|[Prepare a generation 1 VM](#prepare-a-generation-1-vm)|
 |64|1|[Prepare a generation 1 VM](#prepare-a-generation-1-vm)|
 
-**Windows 7 GPT**
+###### Windows 7 GPT
 
 |Architecture|VM generation|Procedure|
 |--- |--- |--- |
 |32|N/A|N/A|
 |64|1|[Prepare a generation 1 VM from a GPT disk](#prepare-a-generation-1-vm-from-a-gpt-disk)|
 
-**Windows 8 or later MBR**
+###### Windows 8 or later MBR
 
 |Architecture|VM generation|Procedure|
 |--- |--- |--- |
 |32|1|[Prepare a generation 1 VM](#prepare-a-generation-1-vm)|
 |64|1, 2|[Prepare a generation 1 VM](#prepare-a-generation-1-vm)|
 
-**Windows 8 or later GPT**
+###### Windows 8 or later GPT
 
 |Architecture|VM generation|Procedure|
 |--- |--- |--- |
@@ -347,7 +359,7 @@ The following tables display the Hyper-V VM generation to choose based on the OS
 3. Select the checkboxes next to the `C:\` and the **system reserved** (BIOS/MBR) volumes. The system volume isn't assigned a drive letter, but will be displayed in the Disk2VHD tool with a volume label similar to `\?\Volume{`. See the following example.
 
     > [!IMPORTANT]
-    > You must include the system volume in order to create a bootable VHD. If this volume isn't displayed in the disk2vhd tool, then the computer is likely to be using the GPT partition style. For more information, see [Determine VM generation](#determine-vm-generation).
+    > You must include the system volume in order to create a bootable VHD. If this volume isn't displayed in the disk2vhd tool, then the computer is likely to be using the GPT partition style. For more information, see [Choosing a VM generation](#choosing-a-vm-generation).
 
 4. Specify a location to save the resulting VHD or VHDX file (F:\VHD\w7.vhdx in the following example) and select **Create**. See the following example:
 
@@ -374,13 +386,14 @@ The following tables display the Hyper-V VM generation to choose based on the OS
 
 2. On the computer you wish to convert, open an elevated command prompt and type the following command:
 
-    ```console
-    mountvol s: /s
+    ```cmd
+    mountvol.exe s: /s
     ```
 
     This command temporarily assigns a drive letter of S to the system volume and mounts it. If the letter S is already assigned to a different volume on the computer, then choose one that is available (ex: mountvol z: /s).
 
 3. On the computer you wish to convert, double-click the disk2vhd utility to start the graphical user interface.
+
 4. Select the checkboxes next to the **C:\\** and the **S:\\** volumes, and clear the **Use Volume Shadow Copy checkbox**. Volume shadow copy won't work if the EFI system partition is selected.
 
     > [!IMPORTANT]
@@ -394,7 +407,7 @@ The following tables display the Hyper-V VM generation to choose based on the OS
 
 6. When the Disk2vhd utility has completed converting the source computer to a VHD, copy the VHDX file (PC1.vhdx) to your Hyper-V host in the C:\VHD directory. There should now be four files in this directory:
 
-    ```console
+    ```cmd
     C:\vhd>dir /B
     2012R2-poc-1.vhd
     2012R2-poc-2.vhd
@@ -409,6 +422,7 @@ The following tables display the Hyper-V VM generation to choose based on the OS
     You might experience timeouts if you attempt to run Disk2vhd from a network share, or specify a network share for the destination. To avoid timeouts, use local, portable media such as a USB drive.
 
 2. On the computer you wish to convert, double-click the disk2vhd utility to start the graphical user interface.
+
 3. Select the checkbox next to the **C:\\** volume and clear the checkbox next to **Use Vhdx**.
 
     > [!NOTE]
@@ -524,7 +538,7 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40 GB to
     > [!NOTE]
     > The RAM values assigned to VMs in this step are not permanent, and can be easily increased or decreased later if needed to address performance issues.
 
-5. Using the same elevated Windows PowerShell prompt that was used in the previous step, type one of the following sets of commands, depending on the type of VM that was prepared in the [Determine VM generation](#determine-vm-generation) section, either generation 1, generation 2, or generation 1 with GPT.
+5. Using the same elevated Windows PowerShell prompt that was used in the previous step, type one of the following sets of commands, depending on the type of VM that was prepared in the [Choosing a VM generation](#choosing-a-vm-generation) section, either generation 1, generation 2, or generation 1 with GPT.
 
     To create a generation 1 VM (using c:\vhd\w7.vhdx):
 
@@ -574,19 +588,23 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40 GB to
     The VM will automatically boot into Windows Setup. In the PC1 window:
 
    1. Select **Next**.
+
    2. Select **Repair your computer**.
+
    3. Select **Troubleshoot**.
+
    4. Select **Command Prompt**.
+
    5. Type the following command to save an image of the OS drive:
 
-      ```console
-      dism /Capture-Image /ImageFile:D:\c.wim /CaptureDir:C:\ /Name:Drive-C
+      ```cmd
+      dism.exe /Capture-Image /ImageFile:D:\c.wim /CaptureDir:C:\ /Name:Drive-C
       ```
 
    6. Wait for the OS image to complete saving, and then type the following commands to convert the C: drive to MBR:
 
-      ```console
-      diskpart
+      ```cmd
+      diskpart.exe
       select disk 0
       clean
       convert MBR
@@ -601,14 +619,16 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40 GB to
 
    7. Type the following commands to restore the OS image and boot files:
 
-      ```console
-      dism /Apply-Image /ImageFile:D:\c.wim /Index:1 /ApplyDir:C:\
-      bcdboot c:\windows
+      ```cmd
+      dism.exe /Apply-Image /ImageFile:D:\c.wim /Index:1 /ApplyDir:C:\
+      bcdboot.exe c:\windows
       exit
       ```
 
    8. Select **Continue** and verify the VM boots successfully. Don't boot from DVD.
+
    9. Select **Ctrl+Alt+Del**, and then in the bottom right corner, select **Shut down**.
+
    10. Type the following commands at an elevated Windows PowerShell prompt on the Hyper-V host to remove the temporary disks and drives from PC1:
 
         ```powershell
@@ -626,8 +646,14 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40 GB to
     ```
 
 2. Select **Next** to accept the default settings, read the license terms and select **I accept**, provide a strong administrator password, and select **Finish**.
+
 3. Select **Ctrl+Alt+Del** in the upper left corner of the virtual machine connection window, and then sign in to DC1 using the Administrator account.
-4. Right-click **Start**, point to **Shut down or sign out**, and select **Sign out**. The VM connection will reset and a new connection dialog box will appear enabling you to choose a custom display configuration. Select a desktop size, select **Connect** and sign in again with the local Administrator account. Note: Signing in this way ensures that [enhanced session mode](/windows-server/virtualization/hyper-v/learn-more/Use-local-resources-on-Hyper-V-virtual-machine-with-VMConnect) is enabled. It's only necessary to do this action the first time you sign in to a new VM.
+
+4. Right-click **Start**, point to **Shut down or sign out**, and select **Sign out**. The VM connection will reset and a new connection dialog box will appear enabling you to choose a custom display configuration. Select a desktop size, select **Connect** and sign in again with the local Administrator account.
+
+   > [!NOTE]
+   > Signing in this way ensures that [enhanced session mode](/windows-server/virtualization/hyper-v/learn-more/Use-local-resources-on-Hyper-V-virtual-machine-with-VMConnect) is enabled. It's only necessary to do this action the first time you sign in to a new VM.
+
 5. If DC1 is configured as described in this guide, it will currently be assigned an APIPA address, have a randomly generated hostname, and a single network adapter named "Ethernet." Open an elevated Windows PowerShell prompt on DC1 and type or paste the following commands to provide a new hostname and configure a static IP address and gateway:
 
     ```powershell
@@ -690,7 +716,7 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40 GB to
 
     The following output should be displayed:
 
-    ```powershell
+    ```console
     UseRootHint        : True
     Timeout(s)         : 3
     EnableReordering   : True
@@ -752,8 +778,8 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40 GB to
 
     To open Windows PowerShell on Windows 7, select **Start**, and search for "**power**." Right-click **Windows PowerShell** and then select **Pin to Taskbar** so that it's simpler to use Windows PowerShell during this lab. Select **Windows PowerShell** on the taskbar, and then type `ipconfig` at the prompt to see the client's current IP address. Also type `ping dc1.contoso.com` and `nltest /dsgetdc:contoso.com` to verify that it can reach the domain controller. See the following examples of a successful network connection:
 
-    ```console
-    ipconfig
+    ```cmd
+    ipconfig.exe
 
     Windows IP Configuration
 
@@ -841,7 +867,7 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40 GB to
 
 25. Accept the default settings, read license terms and accept them, provide a strong administrator password, and select **Finish**. When you're prompted about finding PCs, devices, and content on the network, select **Yes**.
 
-26. Sign in to SRV1 using the local administrator account. In the same way that was done on DC1, sign out of SRV1 and then sign in again to enable enhanced session mode. This will enable you to copy and paste Windows PowerShell commands from the Hyper-V host to the VM.
+26. Sign in to SRV1 using the local administrator account. In the same way that was done on DC1, sign out of SRV1 and then sign in again to enable enhanced session mode. Enhanced session mode will enable you to copy and paste Windows PowerShell commands from the Hyper-V host to the VM.
 
 27. Open an elevated Windows PowerShell prompt on SRV1 and type the following commands:
 
@@ -909,11 +935,11 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40 GB to
 
 33. In most cases, this process completes configuration of the PoC network. However, if your network has a firewall that filters queries from local DNS servers, you'll also need to configure a server-level DNS forwarder on SRV1 to resolve internet names. To test whether or not DNS is working without this forwarder, try to reach a name on the internet from DC1 or PC1, which are only using DNS services on the PoC network. You can test DNS with the ping command, for example:
 
-    ```powershell
-    ping www.microsoft.com
+    ```cmd
+    ping.exe www.microsoft.com
     ```
 
-    If you see "Ping request could not find host `www.microsoft.com`" on PC1 and DC1, but not on SRV1, then you'll need to configure a server-level DNS forwarder on SRV1. To do this action, open an elevated Windows PowerShell prompt on SRV1 and type the following command.
+    If you see "Ping request couldn't find host `www.microsoft.com`" on PC1 and DC1, but not on SRV1, then you'll need to configure a server-level DNS forwarder on SRV1. To do this action, open an elevated Windows PowerShell prompt on SRV1 and type the following command.
 
     > [!NOTE]
     > This command also assumes that "Ethernet 2" is the external-facing network adapter on SRV1. If the external adapter has a different name, replace "Ethernet 2" in the command below with that name:
@@ -924,8 +950,8 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40 GB to
 
 34. If DNS and routing are both working correctly, you'll see the following output on DC1 and PC1 (the IP address might be different, but that's OK):
 
-    ```powershell
-    PS C:\> ping www.microsoft.com
+    ```cmd
+    ping www.microsoft.com
 
     Pinging e2847.dspb.akamaiedge.net [23.222.146.170] with 32 bytes of data:
     Reply from 23.222.146.170: bytes=32 time=3ms TTL=51
@@ -943,7 +969,7 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40 GB to
 36. Lastly, because the client computer has different hardware after copying it to a VM, its Windows activation will be invalidated and you might receive a message that you must activate Windows in three days. To extend this period to 30 days, type the following commands at an elevated Windows PowerShell prompt on PC1:
 
     ```powershell
-    runas /noprofile /env /user:administrator@contoso.com "cmd /c slmgr -rearm"
+    runas.exe /noprofile /env /user:administrator@contoso.com "cmd.exe /c slmgr -rearm"
     Restart-Computer
     ```
 
@@ -963,7 +989,7 @@ Use the following procedures to verify that the PoC environment is configured pr
     Resolve-DnsName -Server dc1.contoso.com -Name www.microsoft.com
     Get-DhcpServerInDC
     Get-DhcpServerv4Statistics
-    ipconfig /all
+    ipconfig.exe /all
     ```
 
     **Get-Service** displays a status of "Running" for all three services.
@@ -988,8 +1014,8 @@ Use the following procedures to verify that the PoC environment is configured pr
     Get-Service DNS,RemoteAccess
     Get-DnsServerForwarder
     Resolve-DnsName -Server dc1.contoso.com -Name www.microsoft.com
-    ipconfig /all
-    netsh int ipv4 show address
+    ipconfig.exe /all
+    netsh.exe int ipv4 show address
     ```
 
     **Get-Service** displays a status of "Running" for both services.
@@ -1004,38 +1030,38 @@ Use the following procedures to verify that the PoC environment is configured pr
 
 3. On PC1, open an elevated Windows PowerShell prompt and type the following commands:
 
-    ```powershell
-    whoami
-    hostname
-    nslookup www.microsoft.com
-    ping -n 1 dc1.contoso.com
-    tracert www.microsoft.com
+    ```cmd
+    whoami.exe
+    hostname.exe
+    nslookup.exe www.microsoft.com
+    ping.exe -n 1 dc1.contoso.com
+    tracert.exe www.microsoft.com
     ```
 
-    **whoami** displays the current user context, for example in an elevated Windows PowerShell prompt, contoso\administrator is displayed.
+    **whoami.exe** displays the current user context, for example in an elevated Windows PowerShell prompt, contoso\administrator is displayed.
 
-    **hostname** displays the name of the local computer, for example W7PC-001.
+    **hostname.exe** displays the name of the local computer, for example W7PC-001.
 
-    **nslookup** displays the DNS server used for the query, and the results of the query. For example, server `dc1.contoso.com`, address 192.168.0.1, Name `e2847.dspb.akamaiedge.net`.
+    **nslookup.exe** displays the DNS server used for the query, and the results of the query. For example, server `dc1.contoso.com`, address 192.168.0.1, Name `e2847.dspb.akamaiedge.net`.
 
-    **ping** displays if the source can resolve the target name, and whether or not the target responds to ICMP. If it can't be resolved, "could not find host" will be displayed. If the target is found and also responds to ICMP, you'll see "Reply from" and the IP address of the target.
+    **ping.exe** displays if the source can resolve the target name, and whether or not the target responds to ICMP. If it can't be resolved, "couldn't find host" will be displayed. If the target is found and also responds to ICMP, you'll see "Reply from" and the IP address of the target.
 
-    **tracert** displays the path to reach the destination, for example `srv1.contoso.com` [192.168.0.2] followed by a list of hosts and IP addresses corresponding to subsequent routing nodes between the source and the destination.
+    **tracert.exe** displays the path to reach the destination, for example `srv1.contoso.com` [192.168.0.2] followed by a list of hosts and IP addresses corresponding to subsequent routing nodes between the source and the destination.
 
 ## Appendix B: Terminology used in this guide
 
 |Term|Definition|
 |--- |--- |
-|GPT|GUID partition table (GPT) is an updated hard-disk formatting scheme that enables the use of newer hardware. GPT is one of the partition formats that can be chosen when first initializing a hard drive, prior to creating and formatting partitions.|
-|Hyper-V|Hyper-V is a server role introduced with Windows Server 2008 that lets you create a virtualized computing environment. Hyper-V can also be installed as a Windows feature on Windows client operating systems, starting with Windows 8.|
-|Hyper-V host|The computer where Hyper-V is installed.|
-|Hyper-V Manager|The user-interface console used to view and configure Hyper-V.|
-|MBR|Master Boot Record (MBR) is a legacy hard-disk formatting scheme that limits support for newer hardware. MBR is one of the partition formats that can be chosen when first initializing a hard drive, prior to creating and formatting partitions. MBR is in the process of being replaced by the GPT partition format.|
-|Proof of concept (PoC)|Confirmation that a process or idea works as intended. A PoC is carried out in a test environment to learn about and verify a process.|
-|Shadow copy|A copy or "snapshot" of a computer at a point in time, created by the Volume Shadow Copy Service (VSS), typically for backup purposes.|
-|Virtual machine (VM)|A VM is a virtual computer with its own operating system, running on the Hyper-V host.|
-|Virtual switch|A virtual network connection used to connect VMs to each other and to physical network adapters on the Hyper-V host.|
-|VM snapshot|A point in time image of a VM that includes its disk, memory and device state. It can be used to return a virtual machine to a former state corresponding to the time the snapshot was taken.|
+|**GPT**|GUID partition table (GPT) is an updated hard-disk formatting scheme that enables the use of newer hardware. GPT is one of the partition formats that can be chosen when first initializing a hard drive, prior to creating and formatting partitions.|
+|**Hyper-V**|Hyper-V is a server role introduced with Windows Server 2008 that lets you create a virtualized computing environment. Hyper-V can also be installed as a Windows feature on Windows client operating systems, starting with Windows 8.|
+|**Hyper-V host**|The computer where Hyper-V is installed.|
+|**Hyper-V Manager**|The user-interface console used to view and configure Hyper-V.|
+|**MBR**|Master Boot Record (MBR) is a legacy hard-disk formatting scheme that limits support for newer hardware. MBR is one of the partition formats that can be chosen when first initializing a hard drive, prior to creating and formatting partitions. MBR is in the process of being replaced by the GPT partition format.|
+|**Proof of concept (PoC)**|Confirmation that a process or idea works as intended. A PoC is carried out in a test environment to learn about and verify a process.|
+|**Shadow copy**|A copy or "snapshot" of a computer at a point in time, created by the Volume Shadow Copy Service (VSS), typically for backup purposes.|
+|**Virtual machine (VM)**|A VM is a virtual computer with its own operating system, running on the Hyper-V host.|
+|**Virtual switch**|A virtual network connection used to connect VMs to each other and to physical network adapters on the Hyper-V host.|
+|**VM snapshot**|A point in time image of a VM that includes its disk, memory and device state. It can be used to return a virtual machine to a former state corresponding to the time the snapshot was taken.|
 
 ## Next steps
 

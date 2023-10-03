@@ -1,87 +1,93 @@
 ---
-title: Policy CSP - ADMX_Servicing
-description: Learn about Policy CSP - ADMX_Servicing.
-ms.author: vinpa
-ms.localizationpriority: medium
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
+title: ADMX_Servicing Policy CSP
+description: Learn more about the ADMX_Servicing Area in Policy CSP.
 author: vinaypamnani-msft
-ms.date: 09/18/2020
-ms.reviewer: 
 manager: aaroncz
+ms.author: vinpa
+ms.date: 08/10/2023
+ms.localizationpriority: medium
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ADMX_Servicing-Begin -->
 # Policy CSP - ADMX_Servicing
 
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
-<hr/>
+<!-- ADMX_Servicing-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ADMX_Servicing-Editable-End -->
 
-<!--Policies-->
-## ADMX_Servicing policies  
+<!-- Servicing-Begin -->
+## Servicing
 
-<dl>
-  <dd>
-    <a href="#admx-servicing-servicing">ADMX_Servicing/Servicing</a>
-  </dd>
-</dl>
+<!-- Servicing-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Servicing-Applicability-End -->
 
+<!-- Servicing-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Servicing/Servicing
+```
+<!-- Servicing-OmaUri-End -->
 
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-servicing-servicing"></a>**ADMX_Servicing/Servicing**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- Servicing-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting specifies the network locations that will be used for the repair of operating system corruption and for enabling optional features that have had their payload files removed.
 
-If you enable this policy setting and specify the new location, the files in that location will be used to repair operating system corruption and for enabling optional features that have had their payload files removed. You must enter the fully qualified path to the new location in the "Alternate source file path" text box. Multiple locations can be specified when each path is separated by a semicolon. 
+- If you enable this policy setting and specify the new location, the files in that location will be used to repair operating system corruption and for enabling optional features that have had their payload files removed. You must enter the fully qualified path to the new location in the "Alternate source file path" text box. Multiple locations can be specified when each path is separated by a semicolon.
 
-The network location can be either a folder, or a WIM file. If it's a WIM file, the location should be specified by prefixing the path with “wim:” and include the index of the image to use in the WIM file, for example, “wim:\\server\share\install.wim:3”.
+The network location can be either a folder, or a WIM file. If it's a WIM file, the location should be specified by prefixing the path with "wim:" and include the index of the image to use in the WIM file. For example "wim:\\server\share\install.wim:3".
 
-If you disable or don't configure this policy setting, or if the required files can't be found at the locations specified in this policy setting, the files will be downloaded from Windows Update, if that is allowed by the policy settings for the computer.
+- If you disable or don't configure this policy setting, or if the required files can't be found at the locations specified in this policy setting, the files will be downloaded from Windows Update, if that's allowed by the policy settings for the computer.
+<!-- Servicing-Description-End -->
 
-<!--/Description-->
+<!-- Servicing-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Servicing-Editable-End -->
 
+<!-- Servicing-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Specify settings for optional component installation and component repair*
--   GP name: *Servicing*
--   GP path: *System*
--   GP ADMX file name: *Servicing.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Servicing-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- Servicing-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
+**ADMX mapping**:
 
+| Name | Value |
+|:--|:--|
+| Name | Servicing |
+| Friendly Name | Specify settings for optional component installation and component repair |
+| Location | Computer Configuration |
+| Path | System |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Servicing |
+| ADMX File Name | Servicing.admx |
+<!-- Servicing-AdmxBacked-End -->
 
-<!--/Policies-->
+<!-- Servicing-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Servicing-Examples-End -->
 
-## Related topics
+<!-- Servicing-End -->
 
-[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)
+<!-- ADMX_Servicing-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ADMX_Servicing-CspMoreInfo-End -->
+
+<!-- ADMX_Servicing-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

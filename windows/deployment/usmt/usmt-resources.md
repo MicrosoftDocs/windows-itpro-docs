@@ -1,42 +1,35 @@
 ---
 title: USMT Resources (Windows 10)
 description: Learn about User State Migration Tool (USMT) online resources, including Microsoft Visual Studio and forums.
-ms.reviewer: 
-manager: dougeby
-ms.author: aaroncz
-ms.prod: w10
-author: aczechowski
-ms.date: 04/19/2017
+manager: aaroncz
+ms.author: frankroj
+ms.prod: windows-client
+author: frankroj
+ms.date: 11/01/2022
 ms.topic: article
+ms.technology: itpro-deploy
 ---
 
-# USMT Resources
+# USMT resources
 
+## USMT online resources
 
-## USMT Online Resources
+- [ADK Release Notes](/windows-hardware/get-started/what-s-new-in-kits-and-tools)
 
+- Microsoft Visual Studio
 
--   [ADK Release Notes](/windows-hardware/get-started/what-s-new-in-kits-and-tools)
+  - You can use the User State Migration Tool (USMT) XML schema (the `MigXML.xsd` file) to validate the migration .xml files using an XML authoring tool such as Microsoft® Visual Studio®.
+  
+    For more information about how to use the schema with your XML authoring environment, see the environment's documentation.
 
--   Microsoft Visual Studio
+- [Ask the Directory Services Team blog](https://techcommunity.microsoft.com/t5/ask-the-directory-services-team/bg-p/AskDS)
 
-    -   You can use the User State Migration Tool (USMT) XML schema (the MigXML.xsd file) to validate the migration .xml files using an XML authoring tool such as Microsoft® Visual Studio®.
+- Forums:
 
-        For more information about how to use the schema with your XML authoring environment, see the environment’s documentation.
+  - [Microsoft Deployment Toolkit forum](/answers/topics/mem-mdt.html)
 
--   [Ask the Directory Services Team blog](/archive/blogs/askds/)
+  - [Configuration Manager Operating System Deployment forum](/answers/topics/mem-cm-osd.html)
 
--   Forums:
+## Related articles
 
-    -   [Microsoft Deployment Toolkit](https://go.microsoft.com/fwlink/p/?LinkId=226386)
-
-    -   [Configuration Manager Operating System Deployment](https://go.microsoft.com/fwlink/p/?LinkId=226388)
-
-## Related topics
-
-
-[User State Migration Tool (USMT) Overview Topics](usmt-topics.md)
-
- 
-
- 
+[User State Migration Tool (USMT) overview topics](usmt-topics.md)

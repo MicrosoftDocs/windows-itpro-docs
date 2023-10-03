@@ -2,12 +2,13 @@
 metadata:
   title: Microsoft Edge - Frequently Asked Questions (FAQ) for IT Pros
   ms.reviewer: 
+  ms.date: 12/14/2020
   audience: itpro
   manager: dansimp
   description: Answers to frequently asked questions about Microsoft Edge features, integration, support, and potential problems.
   author: dansimp
   ms.author: dansimp
-  ms.prod: edge
+  ms.prod: microsoft-edge
   ms.topic: faq
   ms.mktglfcycl: general
   ms.sitesec: library

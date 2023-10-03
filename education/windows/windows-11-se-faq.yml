@@ -1,0 +1,63 @@
+### YamlMime:FAQ
+metadata:
+  title: Windows 11 SE Frequently Asked Questions (FAQ)
+  description: Use these frequently asked questions (FAQ) to learn important details about Windows 11 SE.   
+  ms.topic: faq
+  ms.date: 03/09/2023
+  appliesto:
+    - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11 SE</a>
+
+title: Common questions about Windows 11 SE
+summary: Windows 11 SE combines the power and privacy of Windows 11 with educator feedback to create a simplified experience on devices built for education. This Frequently Asked Questions (FAQ) article is intended to help you learn more about Windows 11 SE so you can get to what matters most.
+
+sections:
+  - name: General
+    questions:
+      - question: What is Windows 11 SE?
+        answer: |
+          Windows 11 SE is a new cloud-first operating system that offers the power and reliability of Windows 11 with a simplified design and tools specially designed for schools.
+          To learn more, see [Windows 11 SE Overview](/education/windows/windows-11-se-overview).
+      - question: Who is the Windows 11 SE designed for?
+        answer: |
+          Windows 11 SE is designed for students in grades K-8 who use a laptop provided by their school, in a 1:1 scenario.
+      - question: What are the major differences between Windows 11 and Windows 11 SE?
+        answer: |
+          Windows 11 SE was created based on feedback from educators who wanted a distraction-free experience for their students. Here are some of the differences that you'll find in Windows 11 SE:
+          - Experience a simplified user interface so you can stay focused on the important stuff
+          - Only IT admins can install apps. Users will not be able to access the Microsoft Store or download apps from the internet
+          - Use Snap Assist to maximize screen space on smaller screens with two-window snapping
+          - Store your Desktop, Documents, and Photos folders in the cloud using OneDrive, so your work is backed up and easy to find
+          - Express yourself and celebrate accomplishments with the *emoji and GIF panel* and *Stickers*
+  - name: Deployment
+    questions:
+      - question: Can I load Windows 11 SE on any hardware? 
+        answer: |
+          Windows 11 SE is only available on devices that are built for education. To learn more, see [Windows 11 SE Overview](/education/windows/windows-11-se-overview).
+      - question: Can I PXE boot a Windows SE device?
+        answer: |
+          No, Secure Boot prevents Windows SE devices from booting via PXE. As a workaround, you can use a UEFI bootable USB device to boot the device.
+  - name: Applications and settings
+    questions:
+      - question: How can I install applications on Windows 11 SE?
+        answer: |
+          You can use Microsoft Intune to install applications on Windows 11 SE.
+          For more information, see [Configure applications with Microsoft Intune](/education/windows/tutorial-school-deployment/configure-device-apps).
+      - question: What apps will work on Windows 11 SE?
+        answer: |
+          Windows 11 SE supports all web applications and a curated list of desktop applications. You can prepare and add a desktop app to Microsoft Intune as a Win32 app from the [approved app list](/education/windows/windows-11-se-overview), then distribute it.
+          For more information, see [Considerations for Windows 11 SE](/education/windows/tutorial-school-deployment/configure-device-apps#considerations-for-windows-11-se).
+      - question: Why there's no application store on Windows 11 SE?
+        answer: |
+          IT Admins can manage system settings (including application installation and the application store) to ensure all students have a safe, distraction-free experience. On Windows SE devices, you have pre-installed apps from Microsoft, from your IT admin, and from your device manufacturer. You can continue to use web apps on the Microsoft Edge browser, as web apps do not require installation.
+          For more information, see [Configure applications with Microsoft Intune](/education/windows/tutorial-school-deployment/configure-device-apps).
+      - question: What does the error 0x87D300D9 mean in the Intune for Education portal?
+        answer: |
+          This error means that the app you are trying to install is not supported on Windows 11 SE. If you have an app that fails with this error, then:
+          - Make sure the app is on the [available applications list](/education/windows/windows-11-se-overview#available-applications). Or, make sure your app is [approved for Windows 11 SE](/education/windows/windows-11-se-overview#add-your-own-applications)
+          - If the app is approved, then it's possible the app is not packaged correctly. For more information, [Configure applications with Microsoft Intune](/education/windows/tutorial-school-deployment/configure-device-apps)
+          - If the app isn't approved, then it won't run on Windows 11 SE. To get apps approved, see [Add your own applications](/education/windows/windows-11-se-overview#add-your-own-applications). Or, use an app that runs in a web browser, such as a web app or PWA
+  - name: Out-of-box experience (OOBE)
+    questions:
+      - question: My Windows 11 SE device is stuck in OOBE, how can I troubleshoot it?
+        answer: |
+          To access the Settings application during OOBE on a Windows 11 SE device, press <kbd>Shift</kbd>+<kbd>F10</kbd>, then select the accessibility icon :::image type="icon" source="images/icons/accessibility.svg"::: on the bottom-right corner of the screen. From the Settings application, you can troubleshoot the OOBE process and, optionally, trigger a device reset.

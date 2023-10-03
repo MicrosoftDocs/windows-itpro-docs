@@ -1,17 +1,18 @@
 ---
-title: 4912(S) Per User Audit Policy was changed. (Windows 10)
+title: 4912(S) Per User Audit Policy was changed. 
 description: Describes security event 4912(S) Per User Audit Policy was changed. This event is generated every time Per User Audit Policy is changed.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
-author: dansimp
+ms.localizationpriority: low
+author: vinaypamnani-msft
 ms.date: 09/08/2021
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.technology: windows-sec
+manager: aaroncz
+ms.author: vinpa
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 4912(S): Per User Audit Policy was changed.

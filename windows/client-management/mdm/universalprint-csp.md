@@ -2,9 +2,9 @@
 title: UniversalPrint CSP
 description: Learn how the UniversalPrint configuration service provider (CSP) is used to install printers on Windows client devices.
 ms.author: vinpa
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.topic: reference
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 06/02/2022
 ms.reviewer: jimwu
@@ -42,7 +42,7 @@ PrinterProvisioning
 --------ErrorCode
 ```
 
-<a href="" id="PrinterProvisioning"></a>**./Vendor/MSFT/PrinterProvisioning**  
+<a href="" id="PrinterProvisioning"></a>**./Vendor/MSFT/PrinterProvisioning**
 The root node for the Universal Print PrinterProvisioning configuration service provider.
 
 <a href="" id="upprinterinstalls"></a>**UPPrinterInstalls**

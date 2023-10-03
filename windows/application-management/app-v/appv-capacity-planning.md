@@ -2,12 +2,14 @@
 title: App-V Capacity Planning (Windows 10/11)
 description: Use these recommendations as a baseline to help determine capacity planning information that is appropriate to your organization’s App-V infrastructure.
 author: aczechowski
-ms.prod: w10
+ms.prod: windows-client
 ms.date: 04/18/2018
 ms.reviewer: 
-manager: dougeby
+manager: aaroncz
 ms.author: aaroncz
+ms.collection: must-keep
 ms.topic: article
+ms.technology: itpro-apps
 ---
 # App-V Capacity Planning
 

@@ -1,702 +1,822 @@
 ---
-title: Policy CSP - ADMX_tcpip
-description: Learn about Policy CSP - ADMX_tcpip.
-ms.author: vinpa
-ms.localizationpriority: medium
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
+title: ADMX_tcpip Policy CSP
+description: Learn more about the ADMX_tcpip Area in Policy CSP.
 author: vinaypamnani-msft
-ms.date: 09/23/2020
-ms.reviewer: 
 manager: aaroncz
+ms.author: vinpa
+ms.date: 08/10/2023
+ms.localizationpriority: medium
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ADMX_tcpip-Begin -->
 # Policy CSP - ADMX_tcpip
 
-<hr/>
-
-> [!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
-
-<!--Policies-->
-## ADMX_tcpip policies  
-
-<dl>
-  <dd>
-    <a href="#admx-tcpip-6to4-router-name">ADMX_tcpip/6to4_Router_Name</a>
-  </dd>
-  <dd>
-    <a href="#admx-tcpip-6to4-router-name-resolution-interval">ADMX_tcpip/6to4_Router_Name_Resolution_Interval</a>
-  </dd>
-  <dd>
-    <a href="#admx-tcpip-6to4-state">ADMX_tcpip/6to4_State</a>
-  </dd>
-  <dd>
-    <a href="#admx-tcpip-iphttps-clientstate">ADMX_tcpip/IPHTTPS_ClientState</a>
-  </dd>
-  <dd>
-    <a href="#admx-tcpip-ip-stateless-autoconfiguration-limits-state">ADMX_tcpip/IP_Stateless_Autoconfiguration_Limits_State</a>
-  </dd>
-  <dd>
-    <a href="#admx-tcpip-isatap-router-name">ADMX_tcpip/ISATAP_Router_Name</a>
-  </dd>
-  <dd>
-    <a href="#admx-tcpip-isatap-state">ADMX_tcpip/ISATAP_State</a>
-  </dd>
-  <dd>
-    <a href="#admx-tcpip-teredo-client-port">ADMX_tcpip/Teredo_Client_Port</a>
-  </dd>
-  <dd>
-    <a href="#admx-tcpip-teredo-default-qualified">ADMX_tcpip/Teredo_Default_Qualified</a>
-  </dd>
-  <dd>
-    <a href="#admx-tcpip-teredo-refresh-rate">ADMX_tcpip/Teredo_Refresh_Rate</a>
-  </dd>
-  <dd>
-    <a href="#admx-tcpip-teredo-server-name">ADMX_tcpip/Teredo_Server_Name</a>
-  </dd>
-  <dd>
-    <a href="#admx-tcpip-teredo-state">ADMX_tcpip/Teredo_State</a>
-  </dd>
-  <dd>
-    <a href="#admx-tcpip-windows-scaling-heuristics-state">ADMX_tcpip/Windows_Scaling_Heuristics_State</a>
-  </dd>
-</dl>
-
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-tcpip-6to4-router-name"></a>**ADMX_tcpip/6to4_Router_Name**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to specify a 6to4 relay name for a 6to4 host. A 6to4 relay is used as a default gateway for IPv6 network traffic sent by the 6to4 host. The 6to4 relay name setting has no effect if 6to4 connectivity is not available on the host.
-
-If you enable this policy setting, you can specify a relay name for a 6to4 host.
-
-If you disable or do not configure this policy setting, the local host setting is used, and you cannot specify a relay name for a 6to4 host.
-
-<!--/Description-->
-
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Set 6to4 Relay Name*
--   GP name: *6to4_Router_Name*
--   GP path: *Network\TCPIP Settings\IPv6 Transition Technologies*
--   GP ADMX file name: *tcpip.admx*
-
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
+
+<!-- ADMX_tcpip-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ADMX_tcpip-Editable-End -->
+
+<!-- 6to4_Router_Name-Begin -->
+## 6to4_Router_Name
 
-<!--Policy-->
-<a href="" id="admx-tcpip-6to4-router-name-resolution-interval"></a>**ADMX_tcpip/6to4_Router_Name_Resolution_Interval**  
+<!-- 6to4_Router_Name-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- 6to4_Router_Name-Applicability-End -->
+
+<!-- 6to4_Router_Name-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_tcpip/6to4_Router_Name
+```
+<!-- 6to4_Router_Name-OmaUri-End -->
+
+<!-- 6to4_Router_Name-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to specify a 6to4 relay name for a 6to4 host. A 6to4 relay is used as a default gateway for IPv6 network traffic sent by the 6to4 host. The 6to4 relay name setting has no effect if 6to4 connectivity isn't available on the host.
+
+- If you enable this policy setting, you can specify a relay name for a 6to4 host.
+
+- If you disable or don't configure this policy setting, the local host setting is used, and you can't specify a relay name for a 6to4 host.
+<!-- 6to4_Router_Name-Description-End -->
+
+<!-- 6to4_Router_Name-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- 6to4_Router_Name-Editable-End -->
+
+<!-- 6to4_Router_Name-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- 6to4_Router_Name-DFProperties-End -->
+
+<!-- 6to4_Router_Name-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | 6to4_Router_Name |
+| Friendly Name | Set 6to4 Relay Name |
+| Location | Computer Configuration |
+| Path | Network > TCPIP Settings > IPv6 Transition Technologies |
+| Registry Key Name | Software\Policies\Microsoft\Windows\TCPIP\v6Transition |
+| ADMX File Name | tcpip.admx |
+<!-- 6to4_Router_Name-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- 6to4_Router_Name-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- 6to4_Router_Name-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- 6to4_Router_Name-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- 6to4_Router_Name_Resolution_Interval-Begin -->
+## 6to4_Router_Name_Resolution_Interval
 
-> [!div class = "checklist"]
-> * Device
+<!-- 6to4_Router_Name_Resolution_Interval-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- 6to4_Router_Name_Resolution_Interval-Applicability-End -->
 
-<hr/>
+<!-- 6to4_Router_Name_Resolution_Interval-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_tcpip/6to4_Router_Name_Resolution_Interval
+```
+<!-- 6to4_Router_Name_Resolution_Interval-OmaUri-End -->
+
+<!-- 6to4_Router_Name_Resolution_Interval-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to specify the interval at which the relay name is resolved. The 6to4 relay name resolution interval setting has no effect if 6to4 connectivity isn't available on the host.
+
+- If you enable this policy setting, you can specify the value for the duration at which the relay name is resolved periodically.
 
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to specify the interval at which the relay name is resolved. The 6to4 relay name resolution interval setting has no effect if 6to4 connectivity is not available on the host.
+- If you disable or don't configure this policy setting, the local host setting is used.
+<!-- 6to4_Router_Name_Resolution_Interval-Description-End -->
 
-If you enable this policy setting, you can specify the value for the duration at which the relay name is resolved periodically.
+<!-- 6to4_Router_Name_Resolution_Interval-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- 6to4_Router_Name_Resolution_Interval-Editable-End -->
 
-If you disable or do not configure this policy setting, the local host setting is used.
+<!-- 6to4_Router_Name_Resolution_Interval-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- 6to4_Router_Name_Resolution_Interval-DFProperties-End -->
+
+<!-- 6to4_Router_Name_Resolution_Interval-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--/Description-->
+**ADMX mapping**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Set 6to4 Relay Name Resolution Interval*
--   GP name: *6to4_Router_Name_Resolution_Interval*
--   GP path: *Network\TCPIP Settings\IPv6 Transition Technologies*
--   GP ADMX file name: *tcpip.admx*
+| Name | Value |
+|:--|:--|
+| Name | 6to4_Router_Name_Resolution_Interval |
+| Friendly Name | Set 6to4 Relay Name Resolution Interval |
+| Location | Computer Configuration |
+| Path | Network > TCPIP Settings > IPv6 Transition Technologies |
+| Registry Key Name | Software\Policies\Microsoft\Windows\TCPIP\v6Transition |
+| ADMX File Name | tcpip.admx |
+<!-- 6to4_Router_Name_Resolution_Interval-AdmxBacked-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- 6to4_Router_Name_Resolution_Interval-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- 6to4_Router_Name_Resolution_Interval-Examples-End -->
 
-<!--Policy-->
-<a href="" id="admx-tcpip-6to4-state"></a>**ADMX_tcpip/6to4_State**  
+<!-- 6to4_Router_Name_Resolution_Interval-End -->
 
-<!--SupportedSKUs-->
+<!-- 6to4_State-Begin -->
+## 6to4_State
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- 6to4_State-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- 6to4_State-Applicability-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- 6to4_State-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_tcpip/6to4_State
+```
+<!-- 6to4_State-OmaUri-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- 6to4_State-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to configure 6to4, an address assignment and router-to-router automatic tunneling technology that's used to provide unicast IPv6 connectivity between IPv6 sites and hosts across the IPv4 Internet. 6to4 uses the global address prefix: 2002:WWXX:YYZZ::/48 in which the letters are a hexadecimal representation of the global IPv4 address (w.x.y.z) assigned to a site.
 
-> [!div class = "checklist"]
-> * Device
+- If you disable or don't configure this policy setting, the local host setting is used.
 
-<hr/>
+- If you enable this policy setting, you can configure 6to4 with one of the following settings:
 
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to configure 6to4, an address assignment and router-to-router automatic tunneling technology that is used to provide unicast IPv6 connectivity between IPv6 sites and hosts across the IPv4 Internet. 6to4 uses the global address prefix: 2002:WWXX:YYZZ::/48 in which the letters are a hexadecimal representation of the global IPv4 address (w.x.y.z) assigned to a site.
+Policy Default State: 6to4 is turned off and connectivity with 6to4 won't be available.
 
-If you disable or do not configure this policy setting, the local host setting is used.
+Policy Enabled State: If a global IPv4 address is present, the host will have a 6to4 interface. If no global IPv4 address is present, the host won't have a 6to4 interface.
 
-If you enable this policy setting, you can configure 6to4 with one of the following settings:
+Policy Disabled State: 6to4 is turned off and connectivity with 6to4 won't be available.
+<!-- 6to4_State-Description-End -->
 
-- Policy Default State: 6to4 is turned off and connectivity with 6to4 will not be available.
-- Policy Enabled State: If a global IPv4 address is present, the host will have a 6to4 interface. If no global IPv4 address is present, the host will not have a 6to4 interface.
-- Policy Disabled State: 6to4 is turned off and connectivity with 6to4 will not be available.
+<!-- 6to4_State-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- 6to4_State-Editable-End -->
 
-<!--/Description-->
+<!-- 6to4_State-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Set 6to4 State*
--   GP name: *6to4_State*
--   GP path: *Network\TCPIP Settings\IPv6 Transition Technologies*
--   GP ADMX file name: *tcpip.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- 6to4_State-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- 6to4_State-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-tcpip-iphttps-clientstate"></a>**ADMX_tcpip/IPHTTPS_ClientState**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | 6to4_State |
+| Friendly Name | Set 6to4 State |
+| Location | Computer Configuration |
+| Path | Network > TCPIP Settings > IPv6 Transition Technologies |
+| Registry Key Name | Software\Policies\Microsoft\Windows\TCPIP\v6Transition |
+| ADMX File Name | tcpip.admx |
+<!-- 6to4_State-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- 6to4_State-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- 6to4_State-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- 6to4_State-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- IP_Stateless_Autoconfiguration_Limits_State-Begin -->
+## IP_Stateless_Autoconfiguration_Limits_State
 
-> [!div class = "checklist"]
-> * Device
+<!-- IP_Stateless_Autoconfiguration_Limits_State-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- IP_Stateless_Autoconfiguration_Limits_State-Applicability-End -->
 
-<hr/>
+<!-- IP_Stateless_Autoconfiguration_Limits_State-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_tcpip/IP_Stateless_Autoconfiguration_Limits_State
+```
+<!-- IP_Stateless_Autoconfiguration_Limits_State-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to configure IP-HTTPS, a tunneling technology that uses the HTTPS protocol to provide IP connectivity to a remote network.
-
-If you disable or do not configure this policy setting, the local host settings are used.
-
-If you enable this policy setting, you can specify an IP-HTTPS server URL. You will be able to configure IP-HTTPS with one of the following settings:
-
-- Policy Default State: The IP-HTTPS interface is used when there are no other connectivity options.
-- Policy Enabled State: The IP-HTTPS interface is always present, even if the host has other connectiv-ity options.
-- Policy Disabled State: No IP-HTTPS interfaces are present on the host.
-
-<!--/Description-->
-
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Set IP-HTTPS State*
--   GP name: *IPHTTPS_ClientState*
--   GP path: *Network\TCPIP Settings\IPv6 Transition Technologies*
--   GP ADMX file name: *tcpip.admx*
-
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-tcpip-ip-stateless-autoconfiguration-limits-state"></a>**ADMX_tcpip/IP_Stateless_Autoconfiguration_Limits_State**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- IP_Stateless_Autoconfiguration_Limits_State-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to configure IP Stateless Autoconfiguration Limits.
 
-If you enable or do not configure this policy setting, IP Stateless Autoconfiguration Limits will be enabled and system will limit the number of autoconfigured addresses and routes.
+- If you enable or don't configure this policy setting, IP Stateless Autoconfiguration Limits will be enabled and system will limit the number of autoconfigured addresses and routes.
 
-If you disable this policy setting, IP Stateless Autoconfiguration Limits will be disabled and system will not limit the number of autoconfigured addresses and routes.
+- If you disable this policy setting, IP Stateless Autoconfiguration Limits will be disabled and system won't limit the number of autoconfigured addresses and routes.
+<!-- IP_Stateless_Autoconfiguration_Limits_State-Description-End -->
 
-<!--/Description-->
+<!-- IP_Stateless_Autoconfiguration_Limits_State-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- IP_Stateless_Autoconfiguration_Limits_State-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Set IP Stateless Autoconfiguration Limits State*
--   GP name: *IP_Stateless_Autoconfiguration_Limits_State*
--   GP path: *Network\TCPIP Settings\Parameters*
--   GP ADMX file name: *tcpip.admx*
+<!-- IP_Stateless_Autoconfiguration_Limits_State-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- IP_Stateless_Autoconfiguration_Limits_State-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-tcpip-isatap-router-name"></a>**ADMX_tcpip/ISATAP_Router_Name**  
+<!-- IP_Stateless_Autoconfiguration_Limits_State-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | IP_Stateless_Autoconfiguration_Limits_State |
+| Friendly Name | Set IP Stateless Autoconfiguration Limits State |
+| Location | Computer Configuration |
+| Path | Network > TCPIP Settings > Parameters |
+| Registry Key Name | System\CurrentControlSet\Services\Tcpip\Parameters |
+| Registry Value Name | EnableIPAutoConfigurationLimits |
+| ADMX File Name | tcpip.admx |
+<!-- IP_Stateless_Autoconfiguration_Limits_State-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- IP_Stateless_Autoconfiguration_Limits_State-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- IP_Stateless_Autoconfiguration_Limits_State-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- IP_Stateless_Autoconfiguration_Limits_State-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- IPHTTPS_ClientState-Begin -->
+## IPHTTPS_ClientState
 
-<hr/>
+<!-- IPHTTPS_ClientState-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- IPHTTPS_ClientState-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- IPHTTPS_ClientState-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_tcpip/IPHTTPS_ClientState
+```
+<!-- IPHTTPS_ClientState-OmaUri-End -->
+
+<!-- IPHTTPS_ClientState-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to configure IP-HTTPS, a tunneling technology that uses the HTTPS protocol to provide IP connectivity to a remote network.
+
+- If you disable or don't configure this policy setting, the local host settings are used.
+
+- If you enable this policy setting, you can specify an IP-HTTPS server URL. You'll be able to configure IP-HTTPS with one of the following settings:
+
+Policy Default State: The IP-HTTPS interface is used when there are no other connectivity options.
+
+Policy Enabled State: The IP-HTTPS interface is always present, even if the host has other connectivity options.
+
+Policy Disabled State: No IP-HTTPS interfaces are present on the host.
+<!-- IPHTTPS_ClientState-Description-End -->
+
+<!-- IPHTTPS_ClientState-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- IPHTTPS_ClientState-Editable-End -->
+
+<!-- IPHTTPS_ClientState-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- IPHTTPS_ClientState-DFProperties-End -->
+
+<!-- IPHTTPS_ClientState-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | IPHTTPS_ClientState |
+| Friendly Name | Set IP-HTTPS State |
+| Location | Computer Configuration |
+| Path | Network > TCPIP Settings > IPv6 Transition Technologies |
+| Registry Key Name | Software\Policies\Microsoft\Windows\TCPIP\v6Transition\IPHTTPS\IPHTTPSInterface |
+| ADMX File Name | tcpip.admx |
+<!-- IPHTTPS_ClientState-AdmxBacked-End -->
+
+<!-- IPHTTPS_ClientState-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- IPHTTPS_ClientState-Examples-End -->
+
+<!-- IPHTTPS_ClientState-End -->
+
+<!-- ISATAP_Router_Name-Begin -->
+## ISATAP_Router_Name
+
+<!-- ISATAP_Router_Name-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- ISATAP_Router_Name-Applicability-End -->
+
+<!-- ISATAP_Router_Name-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_tcpip/ISATAP_Router_Name
+```
+<!-- ISATAP_Router_Name-OmaUri-End -->
+
+<!-- ISATAP_Router_Name-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to specify a router name or Internet Protocol version 4 (IPv4) address for an ISATAP router.
 
-If you enable this policy setting, you can specify a router name or IPv4 address for an ISATAP router. If you enter an IPv4 address of the ISATAP router in the text box, DNS services are not required.
+- If you enable this policy setting, you can specify a router name or IPv4 address for an ISATAP router. If you enter an IPv4 address of the ISATAP router in the text box, DNS services aren't required.
 
-If you disable or do not configure this policy setting, the local host setting is used.
+- If you disable or don't configure this policy setting, the local host setting is used.
+<!-- ISATAP_Router_Name-Description-End -->
 
-<!--/Description-->
+<!-- ISATAP_Router_Name-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ISATAP_Router_Name-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Set ISATAP Router Name*
--   GP name: *ISATAP_Router_Name*
--   GP path: *Network\TCPIP Settings\IPv6 Transition Technologies*
--   GP ADMX file name: *tcpip.admx*
+<!-- ISATAP_Router_Name-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- ISATAP_Router_Name-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-tcpip-isatap-state"></a>**ADMX_tcpip/ISATAP_State**  
+<!-- ISATAP_Router_Name-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | ISATAP_Router_Name |
+| Friendly Name | Set ISATAP Router Name |
+| Location | Computer Configuration |
+| Path | Network > TCPIP Settings > IPv6 Transition Technologies |
+| Registry Key Name | Software\Policies\Microsoft\Windows\TCPIP\v6Transition |
+| ADMX File Name | tcpip.admx |
+<!-- ISATAP_Router_Name-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ISATAP_Router_Name-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ISATAP_Router_Name-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ISATAP_Router_Name-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- ISATAP_State-Begin -->
+## ISATAP_State
 
-<hr/>
+<!-- ISATAP_State-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- ISATAP_State-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to configure Intra-Site Automatic Tunnel Addressing Protocol (ISATAP), an address-to-router and host-to-host, host-to-router and router-to-host automatic tunneling technology that is used to provide unicast IPv6 connectivity between IPv6 hosts across an IPv4 intranet.
+<!-- ISATAP_State-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_tcpip/ISATAP_State
+```
+<!-- ISATAP_State-OmaUri-End -->
 
-If you disable or do not configure this policy setting, the local host setting is used.
+<!-- ISATAP_State-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to configure Intra-Site Automatic Tunnel Addressing Protocol (ISATAP), an address-to-router and host-to-host, host-to-router and router-to-host automatic tunneling technology that's used to provide unicast IPv6 connectivity between IPv6 hosts across an IPv4 intranet.
 
-If you enable this policy setting, you can configure ISATAP with one of the following settings:
+- If you disable or don't configure this policy setting, the local host setting is used.
 
-- Policy Default State: No ISATAP interfaces are present on the host.
-- Policy Enabled State: If the ISATAP name is resolved successfully, the host will have ISATAP configured with a link-local address and an address for each prefix received from the ISATAP router through stateless address auto-configuration. If the ISATAP name is not resolved successfully, the host will have an ISATAP interface configured with a link-local address.
-- Policy Disabled State: No ISATAP interfaces are present on the host.
+- If you enable this policy setting, you can configure ISATAP with one of the following settings:
 
-<!--/Description-->
+Policy Default State: No ISATAP interfaces are present on the host.
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Set ISATAP State*
--   GP name: *ISATAP_State*
--   GP path: *Network\TCPIP Settings\IPv6 Transition Technologies*
--   GP ADMX file name: *tcpip.admx*
+Policy Enabled State: If the ISATAP name is resolved successfully, the host will have ISATAP configured with a link-local address and an address for each prefix received from the ISATAP router through stateless address auto-configuration. If the ISATAP name isn't resolved successfully, the host will have an ISATAP interface configured with a link-local address.
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+Policy Disabled State: No ISATAP interfaces are present on the host.
+<!-- ISATAP_State-Description-End -->
 
-<!--Policy-->
-<a href="" id="admx-tcpip-teredo-client-port"></a>**ADMX_tcpip/Teredo_Client_Port**  
+<!-- ISATAP_State-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ISATAP_State-Editable-End -->
 
-<!--SupportedSKUs-->
+<!-- ISATAP_State-DFProperties-Begin -->
+**Description framework properties**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- ISATAP_State-DFProperties-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ISATAP_State-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+**ADMX mapping**:
 
-> [!div class = "checklist"]
-> * Device
+| Name | Value |
+|:--|:--|
+| Name | ISATAP_State |
+| Friendly Name | Set ISATAP State |
+| Location | Computer Configuration |
+| Path | Network > TCPIP Settings > IPv6 Transition Technologies |
+| Registry Key Name | Software\Policies\Microsoft\Windows\TCPIP\v6Transition |
+| ADMX File Name | tcpip.admx |
+<!-- ISATAP_State-AdmxBacked-End -->
 
-<hr/>
+<!-- ISATAP_State-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ISATAP_State-Examples-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to select the UDP port the Teredo client will use to send packets. If you leave the default of 0, the operating system will select a port (recommended). If you select a UDP port that is already in use by a system, the Teredo client will fail to initialize.
+<!-- ISATAP_State-End -->
 
-If you enable this policy setting, you can customize a UDP port for the Teredo client.
+<!-- Teredo_Client_Port-Begin -->
+## Teredo_Client_Port
 
-If you disable or do not configure this policy setting, the local host setting is used.
+<!-- Teredo_Client_Port-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Teredo_Client_Port-Applicability-End -->
 
-<!--/Description-->
+<!-- Teredo_Client_Port-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_tcpip/Teredo_Client_Port
+```
+<!-- Teredo_Client_Port-OmaUri-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Set Teredo Client Port*
--   GP name: *Teredo_Client_Port*
--   GP path: *Network\TCPIP Settings\IPv6 Transition Technologies*
--   GP ADMX file name: *tcpip.admx*
+<!-- Teredo_Client_Port-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to select the UDP port the Teredo client will use to send packets. If you leave the default of 0, the operating system will select a port (recommended). If you select a UDP port that's already in use by a system, the Teredo client will fail to initialize.
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+- If you enable this policy setting, you can customize a UDP port for the Teredo client.
 
-<!--Policy-->
-<a href="" id="admx-tcpip-teredo-default-qualified"></a>**ADMX_tcpip/Teredo_Default_Qualified**  
+- If you disable or don't configure this policy setting, the local host setting is used.
+<!-- Teredo_Client_Port-Description-End -->
 
-<!--SupportedSKUs-->
+<!-- Teredo_Client_Port-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Teredo_Client_Port-Editable-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- Teredo_Client_Port-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Teredo_Client_Port-DFProperties-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- Teredo_Client_Port-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-> [!div class = "checklist"]
-> * Device
+**ADMX mapping**:
 
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | Teredo_Client_Port |
+| Friendly Name | Set Teredo Client Port |
+| Location | Computer Configuration |
+| Path | Network > TCPIP Settings > IPv6 Transition Technologies |
+| Registry Key Name | Software\Policies\Microsoft\Windows\TCPIP\v6Transition |
+| ADMX File Name | tcpip.admx |
+<!-- Teredo_Client_Port-AdmxBacked-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- Teredo_Client_Port-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Teredo_Client_Port-Examples-End -->
+
+<!-- Teredo_Client_Port-End -->
+
+<!-- Teredo_Default_Qualified-Begin -->
+## Teredo_Default_Qualified
+
+<!-- Teredo_Default_Qualified-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Teredo_Default_Qualified-Applicability-End -->
+
+<!-- Teredo_Default_Qualified-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_tcpip/Teredo_Default_Qualified
+```
+<!-- Teredo_Default_Qualified-OmaUri-End -->
+
+<!-- Teredo_Default_Qualified-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to set Teredo to be ready to communicate, a process referred to as qualification. By default, Teredo enters a dormant state when not in use. The qualification process brings it out of a dormant state.
 
-If you disable or do not configure this policy setting, the local host setting is used.
+If you disable or don't configure this policy setting, the local host setting is used.
 
 This policy setting contains only one state:
 
 Policy Enabled State: If Default Qualified is enabled, Teredo will attempt qualification immediately and remain qualified if the qualification process succeeds.
+<!-- Teredo_Default_Qualified-Description-End -->
 
-<!--/Description-->
+<!-- Teredo_Default_Qualified-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Teredo_Default_Qualified-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Set Teredo Default Qualified*
--   GP name: *Teredo_Default_Qualified*
--   GP path: *Network\TCPIP Settings\IPv6 Transition Technologies*
--   GP ADMX file name: *tcpip.admx*
+<!-- Teredo_Default_Qualified-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Teredo_Default_Qualified-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-tcpip-teredo-refresh-rate"></a>**ADMX_tcpip/Teredo_Refresh_Rate**  
+<!-- Teredo_Default_Qualified-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | Teredo_Default_Qualified |
+| Friendly Name | Set Teredo Default Qualified |
+| Location | Computer Configuration |
+| Path | Network > TCPIP Settings > IPv6 Transition Technologies |
+| Registry Key Name | Software\Policies\Microsoft\Windows\TCPIP\v6Transition |
+| ADMX File Name | tcpip.admx |
+<!-- Teredo_Default_Qualified-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- Teredo_Default_Qualified-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Teredo_Default_Qualified-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- Teredo_Default_Qualified-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- Teredo_Refresh_Rate-Begin -->
+## Teredo_Refresh_Rate
 
-<hr/>
+<!-- Teredo_Refresh_Rate-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Teredo_Refresh_Rate-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- Teredo_Refresh_Rate-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_tcpip/Teredo_Refresh_Rate
+```
+<!-- Teredo_Refresh_Rate-OmaUri-End -->
+
+<!-- Teredo_Refresh_Rate-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to configure the Teredo refresh rate.
 
 > [!NOTE]
 > On a periodic basis (by default, every 30 seconds), Teredo clients send a single Router Solicitation packet to the Teredo server. The Teredo server sends a Router Advertisement Packet in response. This periodic packet refreshes the IP address and UDP port mapping in the translation table of the Teredo client's NAT device.
 
-If you enable this policy setting, you can specify the refresh rate.  If you choose a refresh rate longer than the port mapping in the Teredo client's NAT device, Teredo might stop working or connectivity might be intermittent.
+- If you enable this policy setting, you can specify the refresh rate. If you choose a refresh rate longer than the port mapping in the Teredo client's NAT device, Teredo might stop working or connectivity might be intermittent.
 
-If you disable or do not configure this policy setting, the refresh rate is configured using the local settings on the computer. The default refresh rate is 30 seconds.
+- If you disable or don't configure this policy setting, the refresh rate is configured using the local settings on the computer. The default refresh rate is 30 seconds.
+<!-- Teredo_Refresh_Rate-Description-End -->
 
-<!--/Description-->
+<!-- Teredo_Refresh_Rate-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Teredo_Refresh_Rate-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Set Teredo Refresh Rate*
--   GP name: *Teredo_Refresh_Rate*
--   GP path: *Network\TCPIP Settings\IPv6 Transition Technologies*
--   GP ADMX file name: *tcpip.admx*
+<!-- Teredo_Refresh_Rate-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Teredo_Refresh_Rate-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-tcpip-teredo-server-name"></a>**ADMX_tcpip/Teredo_Server_Name**  
+<!-- Teredo_Refresh_Rate-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | Teredo_Refresh_Rate |
+| Friendly Name | Set Teredo Refresh Rate |
+| Location | Computer Configuration |
+| Path | Network > TCPIP Settings > IPv6 Transition Technologies |
+| Registry Key Name | Software\Policies\Microsoft\Windows\TCPIP\v6Transition |
+| ADMX File Name | tcpip.admx |
+<!-- Teredo_Refresh_Rate-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- Teredo_Refresh_Rate-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Teredo_Refresh_Rate-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- Teredo_Refresh_Rate-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- Teredo_Server_Name-Begin -->
+## Teredo_Server_Name
 
-<hr/>
+<!-- Teredo_Server_Name-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Teredo_Server_Name-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- Teredo_Server_Name-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_tcpip/Teredo_Server_Name
+```
+<!-- Teredo_Server_Name-OmaUri-End -->
+
+<!-- Teredo_Server_Name-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to specify the name of the Teredo server. This server name will be used on the Teredo client computer where this policy setting is applied.
 
-If you enable this policy setting, you can specify a Teredo server name that applies to a Teredo client.
+- If you enable this policy setting, you can specify a Teredo server name that applies to a Teredo client.
 
-If you disable or do not configure this policy setting, the local settings on the computer are used to determine the Teredo server name.
+- If you disable or don't configure this policy setting, the local settings on the computer are used to determine the Teredo server name.
+<!-- Teredo_Server_Name-Description-End -->
 
-<!--/Description-->
+<!-- Teredo_Server_Name-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Teredo_Server_Name-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Set Teredo Server Name*
--   GP name: *Teredo_Server_Name*
--   GP path: *Network\TCPIP Settings\IPv6 Transition Technologies*
--   GP ADMX file name: *tcpip.admx*
+<!-- Teredo_Server_Name-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Teredo_Server_Name-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-tcpip-teredo-state"></a>**ADMX_tcpip/Teredo_State**  
+<!-- Teredo_Server_Name-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | Teredo_Server_Name |
+| Friendly Name | Set Teredo Server Name |
+| Location | Computer Configuration |
+| Path | Network > TCPIP Settings > IPv6 Transition Technologies |
+| Registry Key Name | Software\Policies\Microsoft\Windows\TCPIP\v6Transition |
+| ADMX File Name | tcpip.admx |
+<!-- Teredo_Server_Name-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- Teredo_Server_Name-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Teredo_Server_Name-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- Teredo_Server_Name-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- Teredo_State-Begin -->
+## Teredo_State
 
-<hr/>
+<!-- Teredo_State-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Teredo_State-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- Teredo_State-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_tcpip/Teredo_State
+```
+<!-- Teredo_State-OmaUri-End -->
+
+<!-- Teredo_State-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to configure Teredo, an address assignment and automatic tunneling technology that provides unicast IPv6 connectivity across the IPv4 Internet.
 
-If you disable or do not configure this policy setting, the local host settings are used.
+- If you disable or don't configure this policy setting, the local host settings are used.
 
-If you enable this policy setting, you can configure Teredo with one of the following settings:
+- If you enable this policy setting, you can configure Teredo with one of the following settings:
 
-- Default: The default state is "Client."
-- Disabled: No Teredo interfaces are present on the host.
-- Client: The Teredo interface is present only when the host is not on a network that includes a domain controller.
-- Enterprise Client: The Teredo interface is always present, even if the host is on a network that includes a domain controller.
+Default: The default state is "Client".
 
-<!--/Description-->
+Disabled: No Teredo interfaces are present on the host.
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Set Teredo State*
--   GP name: *Teredo_State*
--   GP path: *Network\TCPIP Settings\IPv6 Transition Technologies*
--   GP ADMX file name: *tcpip.admx*
+Client: The Teredo interface is present only when the host isn't on a network that includes a domain controller.
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+Enterprise Client: The Teredo interface is always present, even if the host is on a network that includes a domain controller.
+<!-- Teredo_State-Description-End -->
 
-<!--Policy-->
-<a href="" id="admx-tcpip-windows-scaling-heuristics-state"></a>**ADMX_tcpip/Windows_Scaling_Heuristics_State**  
+<!-- Teredo_State-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Teredo_State-Editable-End -->
 
-<!--SupportedSKUs-->
+<!-- Teredo_State-DFProperties-Begin -->
+**Description framework properties**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Teredo_State-DFProperties-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- Teredo_State-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+**ADMX mapping**:
 
-> [!div class = "checklist"]
-> * Device
+| Name | Value |
+|:--|:--|
+| Name | Teredo_State |
+| Friendly Name | Set Teredo State |
+| Location | Computer Configuration |
+| Path | Network > TCPIP Settings > IPv6 Transition Technologies |
+| Registry Key Name | Software\Policies\Microsoft\Windows\TCPIP\v6Transition |
+| ADMX File Name | tcpip.admx |
+<!-- Teredo_State-AdmxBacked-End -->
 
-<hr/>
+<!-- Teredo_State-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Teredo_State-Examples-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- Teredo_State-End -->
+
+<!-- Windows_Scaling_Heuristics_State-Begin -->
+## Windows_Scaling_Heuristics_State
+
+<!-- Windows_Scaling_Heuristics_State-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Windows_Scaling_Heuristics_State-Applicability-End -->
+
+<!-- Windows_Scaling_Heuristics_State-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_tcpip/Windows_Scaling_Heuristics_State
+```
+<!-- Windows_Scaling_Heuristics_State-OmaUri-End -->
+
+<!-- Windows_Scaling_Heuristics_State-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to configure Window Scaling Heuristics. Window Scaling Heuristics is an algorithm to identify connectivity and throughput problems caused by many Firewalls and other middle boxes that don't interpret Window Scaling option correctly.
 
-If you do not configure this policy setting, the local host settings are used.
+- If you don't configure this policy setting, the local host settings are used.
 
-If you enable this policy setting, Window Scaling Heuristics will be enabled and system will try to identify connectivity and throughput problems and take appropriate measures.
+- If you enable this policy setting, Window Scaling Heuristics will be enabled and system will try to identify connectivity and throughput problems and take appropriate measures.
 
-If you disable this policy setting, Window Scaling Heuristics will be disabled and system will not try to identify connectivity and throughput problems caused by Firewalls or other middle boxes.
+- If you disable this policy setting, Window Scaling Heuristics will be disabled and system won't try to identify connectivity and throughput problems casued by Firewalls or other middle boxes.
+<!-- Windows_Scaling_Heuristics_State-Description-End -->
 
-<!--/Description-->
+<!-- Windows_Scaling_Heuristics_State-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Windows_Scaling_Heuristics_State-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Set Window Scaling Heuristics State*
--   GP name: *Windows_Scaling_Heuristics_State*
--   GP path: *Network\TCPIP Settings\Parameters*
--   GP ADMX file name: *tcpip.admx*
+<!-- Windows_Scaling_Heuristics_State-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Windows_Scaling_Heuristics_State-DFProperties-End -->
 
-> 
-<!--/Policies-->
+<!-- Windows_Scaling_Heuristics_State-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
+**ADMX mapping**:
 
-## Related topics
+| Name | Value |
+|:--|:--|
+| Name | Windows_Scaling_Heuristics_State |
+| Friendly Name | Set Window Scaling Heuristics State |
+| Location | Computer Configuration |
+| Path | Network > TCPIP Settings > Parameters |
+| Registry Key Name | System\CurrentControlSet\Services\Tcpip\Parameters |
+| Registry Value Name | EnableWsd |
+| ADMX File Name | tcpip.admx |
+<!-- Windows_Scaling_Heuristics_State-AdmxBacked-End -->
 
-[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)
+<!-- Windows_Scaling_Heuristics_State-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Windows_Scaling_Heuristics_State-Examples-End -->
+
+<!-- Windows_Scaling_Heuristics_State-End -->
+
+<!-- ADMX_tcpip-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ADMX_tcpip-CspMoreInfo-End -->
+
+<!-- ADMX_tcpip-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

@@ -1,17 +1,18 @@
 ---
-title: 4693(S, F) Recovery of data protection master key was attempted. (Windows 10)
+title: 4693(S, F) Recovery of data protection master key was attempted. 
 description: Describes security event 4693(S, F) Recovery of data protection master key was attempted.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
-author: dansimp
+ms.localizationpriority: low
+author: vinaypamnani-msft
 ms.date: 09/07/2021
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.technology: windows-sec
+manager: aaroncz
+ms.author: vinpa
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 4693(S, F): Recovery of data protection master key was attempted.
@@ -25,7 +26,7 @@ ms.technology: windows-sec
 
 This event generates every time that recovery is attempted for a [DPAPI](/previous-versions/ms995355(v=msdn.10)) Master Key.
 
-While unprotecting data, if DPAPI cannot use the Master Key protected by the user's password, it sends the backup Master Key to a domain controller by using a mutually authenticated and privacy protected RPC call. The domain controller then decrypts the Master Key with its private key and sends it back to the client by using the same protected RPC call. This protected RPC call is used to ensure that no one listening on the network can get the Master Key.
+While unprotecting data, if DPAPI can't use the Master Key protected by the user's password, it sends the backup Master Key to a domain controller by using a mutually authenticated and privacy protected RPC call. The domain controller then decrypts the Master Key with its private key and sends it back to the client by using the same protected RPC call. This protected RPC call is used to ensure that no one listening on the network can get the Master Key.
 
 This event generates on domain controllers, member servers, and workstations.
 
@@ -79,9 +80,9 @@ Failure event generates when a Master Key restore operation fails for some reaso
 
 **Subject:**
 
--   **Security ID** \[Type = SID\]**:** SID of account that requested the “recover” operation. Event Viewer automatically tries to resolve SIDs and show the account name. If the SID cannot be resolved, you will see the source data in the event.
+-   **Security ID** \[Type = SID\]**:** SID of account that requested the “recover” operation. Event Viewer automatically tries to resolve SIDs and show the account name. If the SID can't be resolved, you'll see the source data in the event.
 
-> **Note**&nbsp;&nbsp;A **security identifier (SID)** is a unique value of variable length used to identify a trustee (security principal). Each account has a unique SID that is issued by an authority, such as an Active Directory domain controller, and stored in a security database. Each time a user logs on, the system retrieves the SID for that user from the database and places it in the access token for that user. The system uses the SID in the access token to identify the user in all subsequent interactions with Windows security. When a SID has been used as the unique identifier for a user or group, it cannot ever be used again to identify another user or group. For more information about SIDs, see [Security identifiers](/windows/access-protection/access-control/security-identifiers).
+> **Note**&nbsp;&nbsp;A **security identifier (SID)** is a unique value of variable length used to identify a trustee (security principal). Each account has a unique SID that is issued by an authority, such as an Active Directory domain controller, and stored in a security database. Each time a user logs on, the system retrieves the SID for that user from the database and places it in the access token for that user. The system uses the SID in the access token to identify the user in all subsequent interactions with Windows security. When a SID has been used as the unique identifier for a user or group, it can't ever be used again to identify another user or group. For more information about SIDs, see [Security identifiers](/windows/access-protection/access-control/security-identifiers).
 
 -   **Account Name** \[Type = UnicodeString\]**:** the name of the account that requested the “recover” operation.
 
@@ -101,13 +102,13 @@ Failure event generates when a Master Key restore operation fails for some reaso
 
 **Key Information:**
 
--   **Key Identifier** \[Type = UnicodeString\]**:** unique identifier of a master key which was recovered. The Master Key is used, with some additional data, to generate an actual symmetric session key to encrypt\\decrypt the data using DPAPI. All of user's Master Keys are located in user profile -&gt; %APPDATA%\\Roaming\\Microsoft\\Windows\\Protect\\%SID% folder. The name of every Master Key file is it’s ID.
+-   **Key Identifier** \[Type = UnicodeString\]**:** unique identifier of a master key which was recovered. The Master Key is used, with some additional data, to generate an actual symmetric session key to encrypt\\decrypt the data using DPAPI. All of user's Master Keys are located in user profile -&gt; %APPDATA%\\Roaming\\Microsoft\\Windows\\Protect\\%SID% folder. The name of every Master Key file is its ID.
 
 -   **Recovery Server** \[Type = UnicodeString\]: the name (typically – DNS name) of the computer that you contacted to recover your Master Key. For domain joined machines, it’s typically a name of a domain controller.
 
 > **Note**&nbsp;&nbsp;In this event Recovery Server field contains information from Recovery Reason field.
 
--   **Recovery Key ID** \[Type = UnicodeString\]**:** unique identifier of a recovery key. The recovery key is generated when a user chooses to create a Password Reset Disk (PRD) from the user's Control Panel or when first Master Key is generated. First, DPAPI generates a RSA public/private key pair, which is the recovery key. In this field you will see unique Recovery key ID which was used for Master key recovery operation. This parameter might not be captured in the event, and in that case will be empty.
+-   **Recovery Key ID** \[Type = UnicodeString\]**:** unique identifier of a recovery key. The recovery key is generated when a user chooses to create a Password Reset Disk (PRD) from the user's Control Panel or when first Master Key is generated. First, DPAPI generates an RSA public/private key pair, which is the recovery key. In this field you'll see unique Recovery key ID which was used for Master key recovery operation. This parameter might not be captured in the event, and in that case will be empty.
 
 -   **Recovery Reason** \[Type = HexInt32\]: hexadecimal code of recovery reason.
 
@@ -121,7 +122,7 @@ Failure event generates when a Master Key restore operation fails for some reaso
 
 For 4693(S, F): Recovery of data protection master key was attempted.
 
--   This event is typically an informational event and it is difficult to detect any malicious activity using this event. It’s mainly used for DPAPI troubleshooting.
+-   This event is typically an informational event and it's difficult to detect any malicious activity using this event. It’s mainly used for DPAPI troubleshooting.
 
 -   For domain joined computers, **Recovery Reason** should typically be a domain controller DNS name.
 

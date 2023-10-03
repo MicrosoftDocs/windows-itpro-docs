@@ -1,18 +1,19 @@
 ---
-title: Audit Directory Service Changes (Windows 10)
+title: Audit Directory Service Changes 
 description: The policy setting Audit Directory Service Changes determines if audit events are generated when objects in Active Directory Domain Services (AD DS) are changed
 ms.assetid: 9f7c0dd4-3977-47dd-a0fb-ec2f17cad05e
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
-author: dansimp
+ms.localizationpriority: low
+author: vinaypamnani-msft
 ms.date: 09/06/2021
-ms.technology: windows-sec
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # Audit Directory Service Changes

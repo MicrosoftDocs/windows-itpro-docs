@@ -1,26 +1,25 @@
 ---
 title: Fixing Applications by Using the SUA Tool (Windows 10)
 description: On the user interface for the Standard User Analyzer (SUA) tool, you can apply fixes to an application.
-ms.reviewer: 
-manager: dougeby
-ms.author: aaroncz
-ms.prod: w10
-author: aczechowski
-ms.date: 04/19/2017
+manager: aaroncz
+ms.author: frankroj
+ms.prod: windows-client
+author: frankroj
+ms.date: 10/28/2022
 ms.topic: article
+ms.technology: itpro-deploy
 ---
 
 # Fixing Applications by Using the SUA Tool
 
-
 **Applies to**
 
--   Windows 10
--   Windows 8.1
--   Windows 8
--   Windows 7
--   Windows Server 2012
--   Windows Server 2008 R2
+-   Windows 10
+-   Windows 8.1
+-   Windows 8
+-   Windows 7
+-   Windows Server 2012
+-   Windows Server 2008 R2
 
 On the user interface for the Standard User Analyzer (SUA) tool, you can apply fixes to an application.
 
@@ -37,14 +36,3 @@ On the user interface for the Standard User Analyzer (SUA) tool, you can apply f
     |**Apply Mitigations**|Opens the **Mitigate AppCompat Issues** dialog box, in which you can select the fixes that you intend to apply to the application.|
     |**Undo Mitigations**|Removes the application fixes that you just applied.<p>This option is available only after you apply an application fix and before you close the SUA tool. Alternatively, you can manually remove application fixes by using **Programs and Features** in Control Panel.|
     |**Export Mitigations as Windows Installer file**|Exports your application fixes as a Windows® Installer (.msi) file, which can then be deployed to other computers that are running the application.|
-
-     
-
- 
-
- 
-
-
-
-
-

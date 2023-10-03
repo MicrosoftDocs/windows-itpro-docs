@@ -1,183 +1,583 @@
 ---
-title: Policy CSP - ADMX_iSCSI
-description: Learn about the Policy CSP - ADMX_iSCSI.
-ms.author: vinpa
-ms.localizationpriority: medium
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
+title: ADMX_iSCSI Policy CSP
+description: Learn more about the ADMX_iSCSI Area in Policy CSP.
 author: vinaypamnani-msft
-ms.date: 12/17/2020
-ms.reviewer: 
 manager: aaroncz
+ms.author: vinpa
+ms.date: 08/10/2023
+ms.localizationpriority: medium
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ADMX_iSCSI-Begin -->
 # Policy CSP - ADMX_iSCSI
 
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
-<hr/>
+<!-- ADMX_iSCSI-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ADMX_iSCSI-Editable-End -->
 
-<!--Policies-->
-## ADMX_iSCSI policies  
+<!-- iSCSIDiscovery_ConfigureiSNSServers-Begin -->
+## iSCSIDiscovery_ConfigureiSNSServers
 
-<dl>
-  <dd>
-    <a href="#admx-iscsi-iscsigeneral_restrictadditionallogins">ADMX_iSCSI/iSCSIGeneral_RestrictAdditionalLogins</a>
-  </dd>
-  <dd>
-    <a href="#admx-iscsi-iscsigeneral_changeiqnname">ADMX_iSCSI/iSCSIGeneral_ChangeIQNName</a>
-  </dd>
-  <dd>
-    <a href="#admx-iscsi-iscsisecurity_changechapsecret">ADMX_iSCSI/iSCSISecurity_ChangeCHAPSecret</a>
-  </dd>
-</dl>
+<!-- iSCSIDiscovery_ConfigureiSNSServers-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- iSCSIDiscovery_ConfigureiSNSServers-Applicability-End -->
 
+<!-- iSCSIDiscovery_ConfigureiSNSServers-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_iSCSI/iSCSIDiscovery_ConfigureiSNSServers
+```
+<!-- iSCSIDiscovery_ConfigureiSNSServers-OmaUri-End -->
 
-<hr/>
+<!-- iSCSIDiscovery_ConfigureiSNSServers-Description-Begin -->
+<!-- Description-Source-ADMX -->
+If enabled then new iSNS servers may not be added and thus new targets discovered via those iSNS servers; existing iSNS servers may not be removed. If disabled then new iSNS servers may be added and thus new targets discovered via those iSNS servers; existing iSNS servers may be removed.
+<!-- iSCSIDiscovery_ConfigureiSNSServers-Description-End -->
 
-<!--Policy-->
-<a href="" id="admx-iscsi-iscsigeneral_restrictadditionallogins"></a>**ADMX_iSCSI/iSCSIGeneral_RestrictAdditionalLogins**  
+<!-- iSCSIDiscovery_ConfigureiSNSServers-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- iSCSIDiscovery_ConfigureiSNSServers-Editable-End -->
 
-<!--SupportedSKUs-->
+<!-- iSCSIDiscovery_ConfigureiSNSServers-DFProperties-Begin -->
+**Description framework properties**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- iSCSIDiscovery_ConfigureiSNSServers-DFProperties-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- iSCSIDiscovery_ConfigureiSNSServers-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+**ADMX mapping**:
 
-> [!div class = "checklist"]
-> * Device
+| Name | Value |
+|:--|:--|
+| Name | iSCSIDiscovery_ConfigureiSNSServers |
+| Friendly Name | Do not allow manual configuration of iSNS servers |
+| Location | Computer Configuration |
+| Path | System > iSCSI > iSCSI Target Discovery |
+| Registry Key Name | Software\Policies\Microsoft\Windows\iSCSI |
+| Registry Value Name | ConfigureiSNSServers |
+| ADMX File Name | iSCSI.admx |
+<!-- iSCSIDiscovery_ConfigureiSNSServers-AdmxBacked-End -->
 
-<hr/>
+<!-- iSCSIDiscovery_ConfigureiSNSServers-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- iSCSIDiscovery_ConfigureiSNSServers-Examples-End -->
 
-<!--/Scope-->
-<!--Description-->
-If enabled then new iSNS servers may not be added and thus new targets discovered via those iSNS servers; existing iSNS servers may not be removed. 
+<!-- iSCSIDiscovery_ConfigureiSNSServers-End -->
 
-If disabled then new iSNS servers may be added and thus new targets discovered via those iSNS servers; existing iSNS servers may be removed.
+<!-- iSCSIDiscovery_ConfigureTargetPortals-Begin -->
+## iSCSIDiscovery_ConfigureTargetPortals
 
+<!-- iSCSIDiscovery_ConfigureTargetPortals-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- iSCSIDiscovery_ConfigureTargetPortals-Applicability-End -->
 
-<!--/Description-->
+<!-- iSCSIDiscovery_ConfigureTargetPortals-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_iSCSI/iSCSIDiscovery_ConfigureTargetPortals
+```
+<!-- iSCSIDiscovery_ConfigureTargetPortals-OmaUri-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Do not allow manual configuration of iSNS servers*
--   GP name: *iSCSIGeneral_RestrictAdditionalLogins*
--   GP path: *System\iSCSI\iSCSI Target Discovery*
--   GP ADMX file name: *iSCSI.admx*
+<!-- iSCSIDiscovery_ConfigureTargetPortals-Description-Begin -->
+<!-- Description-Source-ADMX -->
+If enabled then new target portals may not be added and thus new targets discovered on those portals; existing target portals may not be removed. If disabled then new target portals may be added and thus new targets discovered on those portals; existing target portals may be removed.
+<!-- iSCSIDiscovery_ConfigureTargetPortals-Description-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- iSCSIDiscovery_ConfigureTargetPortals-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- iSCSIDiscovery_ConfigureTargetPortals-Editable-End -->
 
-<!--Policy-->
-<a href="" id="admx-iscsi-iscsigeneral_changeiqnname"></a>**ADMX_iSCSI/iSCSIGeneral_ChangeIQNName**  
+<!-- iSCSIDiscovery_ConfigureTargetPortals-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--SupportedSKUs-->
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- iSCSIDiscovery_ConfigureTargetPortals-DFProperties-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- iSCSIDiscovery_ConfigureTargetPortals-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--/SupportedSKUs-->
-<hr/>
+**ADMX mapping**:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+| Name | Value |
+|:--|:--|
+| Name | iSCSIDiscovery_ConfigureTargetPortals |
+| Friendly Name | Do not allow manual configuration of target portals |
+| Location | Computer Configuration |
+| Path | System > iSCSI > iSCSI Target Discovery |
+| Registry Key Name | Software\Policies\Microsoft\Windows\iSCSI |
+| Registry Value Name | ConfigureTargetPortals |
+| ADMX File Name | iSCSI.admx |
+<!-- iSCSIDiscovery_ConfigureTargetPortals-AdmxBacked-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- iSCSIDiscovery_ConfigureTargetPortals-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- iSCSIDiscovery_ConfigureTargetPortals-Examples-End -->
 
-<hr/>
+<!-- iSCSIDiscovery_ConfigureTargetPortals-End -->
 
-<!--/Scope-->
-<!--Description-->
-If enabled then new target portals may not be added and thus new targets discovered on those portals; existing target portals may not be removed. 
+<!-- iSCSIDiscovery_ConfigureTargets-Begin -->
+## iSCSIDiscovery_ConfigureTargets
 
-If disabled then new target portals may be added and thus new targets discovered on those portals; existing target portals may be removed.
+<!-- iSCSIDiscovery_ConfigureTargets-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- iSCSIDiscovery_ConfigureTargets-Applicability-End -->
 
-<!--/Description-->
+<!-- iSCSIDiscovery_ConfigureTargets-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_iSCSI/iSCSIDiscovery_ConfigureTargets
+```
+<!-- iSCSIDiscovery_ConfigureTargets-OmaUri-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Do not allow manual configuration of target portals*
--   GP name: *iSCSIGeneral_ChangeIQNName*
--   GP path: *System\iSCSI\iSCSI Target Discovery*
--   GP ADMX file name: *iSCSI.admx*
+<!-- iSCSIDiscovery_ConfigureTargets-Description-Begin -->
+<!-- Description-Source-ADMX -->
+If enabled then discovered targets may not be manually configured. If disabled then discovered targets may be manually configured. Note if enabled there may be cases where this will break VDS.
+<!-- iSCSIDiscovery_ConfigureTargets-Description-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- iSCSIDiscovery_ConfigureTargets-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- iSCSIDiscovery_ConfigureTargets-Editable-End -->
 
-<!--Policy-->
-<a href="" id="admx-iscsi-iscsisecurity_changechapsecret"></a>**ADMX_iSCSI/iSCSISecurity_ChangeCHAPSecret**  
+<!-- iSCSIDiscovery_ConfigureTargets-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--SupportedSKUs-->
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- iSCSIDiscovery_ConfigureTargets-DFProperties-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- iSCSIDiscovery_ConfigureTargets-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--/SupportedSKUs-->
-<hr/>
+**ADMX mapping**:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+| Name | Value |
+|:--|:--|
+| Name | iSCSIDiscovery_ConfigureTargets |
+| Friendly Name | Do not allow manual configuration of discovered targets |
+| Location | Computer Configuration |
+| Path | System > iSCSI > iSCSI Target Discovery |
+| Registry Key Name | Software\Policies\Microsoft\Windows\iSCSI |
+| Registry Value Name | ConfigureTargets |
+| ADMX File Name | iSCSI.admx |
+<!-- iSCSIDiscovery_ConfigureTargets-AdmxBacked-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- iSCSIDiscovery_ConfigureTargets-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- iSCSIDiscovery_ConfigureTargets-Examples-End -->
 
-<hr/>
+<!-- iSCSIDiscovery_ConfigureTargets-End -->
 
-<!--/Scope-->
-<!--Description-->
-If enabled then don't allow the initiator CHAP secret to be changed. 
+<!-- iSCSIDiscovery_NewStaticTargets-Begin -->
+## iSCSIDiscovery_NewStaticTargets
 
-If disabled then the initiator CHAP secret may be changed.
+<!-- iSCSIDiscovery_NewStaticTargets-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- iSCSIDiscovery_NewStaticTargets-Applicability-End -->
 
-<!--/Description-->
+<!-- iSCSIDiscovery_NewStaticTargets-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_iSCSI/iSCSIDiscovery_NewStaticTargets
+```
+<!-- iSCSIDiscovery_NewStaticTargets-OmaUri-End -->
 
+<!-- iSCSIDiscovery_NewStaticTargets-Description-Begin -->
+<!-- Description-Source-ADMX -->
+If enabled then new targets may not be manually configured by entering the target name and target portal; already discovered targets may be manually configured. If disabled then new and already discovered targets may be manually configured. Note if enabled there may be cases where this will break VDS.
+<!-- iSCSIDiscovery_NewStaticTargets-Description-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Do not allow changes to initiator CHAP secret*
--   GP name: *iSCSISecurity_ChangeCHAPSecret*
--   GP path: *System\iSCSI\iSCSI Security*
--   GP ADMX file name: *iSCSI.admx*
+<!-- iSCSIDiscovery_NewStaticTargets-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- iSCSIDiscovery_NewStaticTargets-Editable-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- iSCSIDiscovery_NewStaticTargets-DFProperties-Begin -->
+**Description framework properties**:
 
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- iSCSIDiscovery_NewStaticTargets-DFProperties-End -->
 
-<!--/Policies-->
+<!-- iSCSIDiscovery_NewStaticTargets-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-## Related topics
+**ADMX mapping**:
 
-[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)
+| Name | Value |
+|:--|:--|
+| Name | iSCSIDiscovery_NewStaticTargets |
+| Friendly Name | Do not allow adding new targets via manual configuration |
+| Location | Computer Configuration |
+| Path | System > iSCSI > iSCSI Target Discovery |
+| Registry Key Name | Software\Policies\Microsoft\Windows\iSCSI |
+| Registry Value Name | NewStaticTargets |
+| ADMX File Name | iSCSI.admx |
+<!-- iSCSIDiscovery_NewStaticTargets-AdmxBacked-End -->
+
+<!-- iSCSIDiscovery_NewStaticTargets-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- iSCSIDiscovery_NewStaticTargets-Examples-End -->
+
+<!-- iSCSIDiscovery_NewStaticTargets-End -->
+
+<!-- iSCSIGeneral_ChangeIQNName-Begin -->
+## iSCSIGeneral_ChangeIQNName
+
+<!-- iSCSIGeneral_ChangeIQNName-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- iSCSIGeneral_ChangeIQNName-Applicability-End -->
+
+<!-- iSCSIGeneral_ChangeIQNName-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_iSCSI/iSCSIGeneral_ChangeIQNName
+```
+<!-- iSCSIGeneral_ChangeIQNName-OmaUri-End -->
+
+<!-- iSCSIGeneral_ChangeIQNName-Description-Begin -->
+<!-- Description-Source-ADMX -->
+If enabled then don't allow the initiator iqn name to be changed. If disabled then the initiator iqn name may be changed.
+<!-- iSCSIGeneral_ChangeIQNName-Description-End -->
+
+<!-- iSCSIGeneral_ChangeIQNName-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- iSCSIGeneral_ChangeIQNName-Editable-End -->
+
+<!-- iSCSIGeneral_ChangeIQNName-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- iSCSIGeneral_ChangeIQNName-DFProperties-End -->
+
+<!-- iSCSIGeneral_ChangeIQNName-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | iSCSIGeneral_ChangeIQNName |
+| Friendly Name | Do not allow changes to initiator iqn name |
+| Location | Computer Configuration |
+| Path | System > iSCSI > General iSCSI |
+| Registry Key Name | Software\Policies\Microsoft\Windows\iSCSI |
+| Registry Value Name | ChangeIQNName |
+| ADMX File Name | iSCSI.admx |
+<!-- iSCSIGeneral_ChangeIQNName-AdmxBacked-End -->
+
+<!-- iSCSIGeneral_ChangeIQNName-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- iSCSIGeneral_ChangeIQNName-Examples-End -->
+
+<!-- iSCSIGeneral_ChangeIQNName-End -->
+
+<!-- iSCSIGeneral_RestrictAdditionalLogins-Begin -->
+## iSCSIGeneral_RestrictAdditionalLogins
+
+<!-- iSCSIGeneral_RestrictAdditionalLogins-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- iSCSIGeneral_RestrictAdditionalLogins-Applicability-End -->
+
+<!-- iSCSIGeneral_RestrictAdditionalLogins-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_iSCSI/iSCSIGeneral_RestrictAdditionalLogins
+```
+<!-- iSCSIGeneral_RestrictAdditionalLogins-OmaUri-End -->
+
+<!-- iSCSIGeneral_RestrictAdditionalLogins-Description-Begin -->
+<!-- Description-Source-ADMX -->
+If enabled then only those sessions that are established via a persistent login will be established and no new persistent logins may be created. If disabled then additional persistent and non persistent logins may be established.
+<!-- iSCSIGeneral_RestrictAdditionalLogins-Description-End -->
+
+<!-- iSCSIGeneral_RestrictAdditionalLogins-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- iSCSIGeneral_RestrictAdditionalLogins-Editable-End -->
+
+<!-- iSCSIGeneral_RestrictAdditionalLogins-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- iSCSIGeneral_RestrictAdditionalLogins-DFProperties-End -->
+
+<!-- iSCSIGeneral_RestrictAdditionalLogins-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | iSCSIGeneral_RestrictAdditionalLogins |
+| Friendly Name | Do not allow additional session logins |
+| Location | Computer Configuration |
+| Path | System > iSCSI > General iSCSI |
+| Registry Key Name | Software\Policies\Microsoft\Windows\iSCSI |
+| Registry Value Name | RestrictAdditionalLogins |
+| ADMX File Name | iSCSI.admx |
+<!-- iSCSIGeneral_RestrictAdditionalLogins-AdmxBacked-End -->
+
+<!-- iSCSIGeneral_RestrictAdditionalLogins-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- iSCSIGeneral_RestrictAdditionalLogins-Examples-End -->
+
+<!-- iSCSIGeneral_RestrictAdditionalLogins-End -->
+
+<!-- iSCSISecurity_ChangeCHAPSecret-Begin -->
+## iSCSISecurity_ChangeCHAPSecret
+
+<!-- iSCSISecurity_ChangeCHAPSecret-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- iSCSISecurity_ChangeCHAPSecret-Applicability-End -->
+
+<!-- iSCSISecurity_ChangeCHAPSecret-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_iSCSI/iSCSISecurity_ChangeCHAPSecret
+```
+<!-- iSCSISecurity_ChangeCHAPSecret-OmaUri-End -->
+
+<!-- iSCSISecurity_ChangeCHAPSecret-Description-Begin -->
+<!-- Description-Source-ADMX -->
+If enabled then don't allow the initiator CHAP secret to be changed. If disabled then the initiator CHAP secret may be changed.
+<!-- iSCSISecurity_ChangeCHAPSecret-Description-End -->
+
+<!-- iSCSISecurity_ChangeCHAPSecret-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- iSCSISecurity_ChangeCHAPSecret-Editable-End -->
+
+<!-- iSCSISecurity_ChangeCHAPSecret-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- iSCSISecurity_ChangeCHAPSecret-DFProperties-End -->
+
+<!-- iSCSISecurity_ChangeCHAPSecret-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | iSCSISecurity_ChangeCHAPSecret |
+| Friendly Name | Do not allow changes to initiator CHAP secret |
+| Location | Computer Configuration |
+| Path | System > iSCSI > iSCSI Security |
+| Registry Key Name | Software\Policies\Microsoft\Windows\iSCSI |
+| Registry Value Name | ChangeCHAPSecret |
+| ADMX File Name | iSCSI.admx |
+<!-- iSCSISecurity_ChangeCHAPSecret-AdmxBacked-End -->
+
+<!-- iSCSISecurity_ChangeCHAPSecret-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- iSCSISecurity_ChangeCHAPSecret-Examples-End -->
+
+<!-- iSCSISecurity_ChangeCHAPSecret-End -->
+
+<!-- iSCSISecurity_RequireIPSec-Begin -->
+## iSCSISecurity_RequireIPSec
+
+<!-- iSCSISecurity_RequireIPSec-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- iSCSISecurity_RequireIPSec-Applicability-End -->
+
+<!-- iSCSISecurity_RequireIPSec-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_iSCSI/iSCSISecurity_RequireIPSec
+```
+<!-- iSCSISecurity_RequireIPSec-OmaUri-End -->
+
+<!-- iSCSISecurity_RequireIPSec-Description-Begin -->
+<!-- Description-Source-ADMX -->
+If enabled then only those connections that are configured for IPSec may be established. If disabled then connections that are configured for IPSec or connections not configured for IPSec may be established.
+<!-- iSCSISecurity_RequireIPSec-Description-End -->
+
+<!-- iSCSISecurity_RequireIPSec-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- iSCSISecurity_RequireIPSec-Editable-End -->
+
+<!-- iSCSISecurity_RequireIPSec-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- iSCSISecurity_RequireIPSec-DFProperties-End -->
+
+<!-- iSCSISecurity_RequireIPSec-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | iSCSISecurity_RequireIPSec |
+| Friendly Name | Do not allow connections without IPSec |
+| Location | Computer Configuration |
+| Path | System > iSCSI > iSCSI Security |
+| Registry Key Name | Software\Policies\Microsoft\Windows\iSCSI |
+| Registry Value Name | RequireIPSec |
+| ADMX File Name | iSCSI.admx |
+<!-- iSCSISecurity_RequireIPSec-AdmxBacked-End -->
+
+<!-- iSCSISecurity_RequireIPSec-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- iSCSISecurity_RequireIPSec-Examples-End -->
+
+<!-- iSCSISecurity_RequireIPSec-End -->
+
+<!-- iSCSISecurity_RequireMutualCHAP-Begin -->
+## iSCSISecurity_RequireMutualCHAP
+
+<!-- iSCSISecurity_RequireMutualCHAP-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- iSCSISecurity_RequireMutualCHAP-Applicability-End -->
+
+<!-- iSCSISecurity_RequireMutualCHAP-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_iSCSI/iSCSISecurity_RequireMutualCHAP
+```
+<!-- iSCSISecurity_RequireMutualCHAP-OmaUri-End -->
+
+<!-- iSCSISecurity_RequireMutualCHAP-Description-Begin -->
+<!-- Description-Source-ADMX -->
+If enabled then only those sessions that are configured for mutual CHAP may be established. If disabled then sessions that are configured for mutual CHAP or sessions not configured for mutual CHAP may be established.
+<!-- iSCSISecurity_RequireMutualCHAP-Description-End -->
+
+<!-- iSCSISecurity_RequireMutualCHAP-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- iSCSISecurity_RequireMutualCHAP-Editable-End -->
+
+<!-- iSCSISecurity_RequireMutualCHAP-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- iSCSISecurity_RequireMutualCHAP-DFProperties-End -->
+
+<!-- iSCSISecurity_RequireMutualCHAP-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | iSCSISecurity_RequireMutualCHAP |
+| Friendly Name | Do not allow sessions without mutual CHAP |
+| Location | Computer Configuration |
+| Path | System > iSCSI > iSCSI Security |
+| Registry Key Name | Software\Policies\Microsoft\Windows\iSCSI |
+| Registry Value Name | RequireMutualCHAP |
+| ADMX File Name | iSCSI.admx |
+<!-- iSCSISecurity_RequireMutualCHAP-AdmxBacked-End -->
+
+<!-- iSCSISecurity_RequireMutualCHAP-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- iSCSISecurity_RequireMutualCHAP-Examples-End -->
+
+<!-- iSCSISecurity_RequireMutualCHAP-End -->
+
+<!-- iSCSISecurity_RequireOneWayCHAP-Begin -->
+## iSCSISecurity_RequireOneWayCHAP
+
+<!-- iSCSISecurity_RequireOneWayCHAP-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- iSCSISecurity_RequireOneWayCHAP-Applicability-End -->
+
+<!-- iSCSISecurity_RequireOneWayCHAP-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_iSCSI/iSCSISecurity_RequireOneWayCHAP
+```
+<!-- iSCSISecurity_RequireOneWayCHAP-OmaUri-End -->
+
+<!-- iSCSISecurity_RequireOneWayCHAP-Description-Begin -->
+<!-- Description-Source-ADMX -->
+If enabled then only those sessions that are configured for one-way CHAP may be established. If disabled then sessions that are configured for one-way CHAP or sessions not configured for one-way CHAP may be established. Note that if the "Do not allow sessions without mutual CHAP" setting is enabled then that setting overrides this one.
+<!-- iSCSISecurity_RequireOneWayCHAP-Description-End -->
+
+<!-- iSCSISecurity_RequireOneWayCHAP-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- iSCSISecurity_RequireOneWayCHAP-Editable-End -->
+
+<!-- iSCSISecurity_RequireOneWayCHAP-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- iSCSISecurity_RequireOneWayCHAP-DFProperties-End -->
+
+<!-- iSCSISecurity_RequireOneWayCHAP-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | iSCSISecurity_RequireOneWayCHAP |
+| Friendly Name | Do not allow sessions without one way CHAP |
+| Location | Computer Configuration |
+| Path | System > iSCSI > iSCSI Security |
+| Registry Key Name | Software\Policies\Microsoft\Windows\iSCSI |
+| Registry Value Name | RequireOneWayCHAP |
+| ADMX File Name | iSCSI.admx |
+<!-- iSCSISecurity_RequireOneWayCHAP-AdmxBacked-End -->
+
+<!-- iSCSISecurity_RequireOneWayCHAP-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- iSCSISecurity_RequireOneWayCHAP-Examples-End -->
+
+<!-- iSCSISecurity_RequireOneWayCHAP-End -->
+
+<!-- ADMX_iSCSI-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ADMX_iSCSI-CspMoreInfo-End -->
+
+<!-- ADMX_iSCSI-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

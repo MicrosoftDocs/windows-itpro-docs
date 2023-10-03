@@ -1,12 +1,12 @@
 ---
 title: Provisioning CSP
 description: The Provisioning configuration service provider is used for bulk user enrollment to an MDM service.
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.topic: reference
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 06/26/2017
 ---
@@ -29,7 +29,7 @@ The Provisioning configuration service provider is used for bulk user enrollment
 > [!NOTE]
 > Bulk enrollment does not work when two-factor authentication is enabled.
 
-For bulk enrollment step-by-step guide, see [Bulk enrollment](bulk-enrollment-using-windows-provisioning-tool.md).
+For bulk enrollment step-by-step guide, see [Bulk enrollment](../bulk-enrollment-using-windows-provisioning-tool.md).
 
 The following shows the Provisioning configuration service provider in tree format.
 

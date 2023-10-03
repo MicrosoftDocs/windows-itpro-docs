@@ -1,23 +1,20 @@
 ---
 title: Use Windows Update for Business and Windows Server Update Services (WSUS) together
-description:  Learn how to use Windows Update for Business and WSUS together using the new scan source policy.
-ms.prod: w10
-author: arcarley
+description: Learn how to use Windows Update for Business and WSUS together using the new scan source policy.
+ms.prod: windows-client
+ms.technology: itpro-updates
+ms.topic: conceptual
+author: mestew
+ms.author: mstewart
+manager: aaroncz
 ms.localizationpriority: medium
-ms.author: arcarley
-ms.collection:
-  - m365initiative-coredeploy
-  - highpri
-manager: dougeby
-ms.topic: article
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
+ms.date: 01/13/2022
 ---
 
 # Use Windows Update for Business and WSUS together
-
-**Applies to**
-
-- Windows 10
-- Windows 11
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq)
 
@@ -47,7 +44,7 @@ To help you better understand the scan source policy, see the default scan behav
 - If you configure only the WSUS server policy:
 
   - On Windows 10: All of your updates will come from WSUS.
-  - On Windows 11: All of your updates will still come from Windows Update unless you configure the specify scan source policy.
+  - On Windows 11: All of your updates will still come from WSUS unless you configure the specify scan source policy.
 
 - If you configure a WSUS server and deferral policies: All of your updates will come from Windows Update unless you specify the scan source policy.
 - If you configure a WSUS server and the scan source policy: All of your updates will come from the source chosen in the scan source policy.
@@ -71,7 +68,8 @@ The policy can be configured using the following two methods:
 2. Configuration Service Provider (CSP) Policies: **SetPolicyDrivenUpdateSourceFor&lt;Update Type>**:
 
 > [!NOTE]
-> You should configure **all** of these policies if you are using CSPs.
+> - You should configure **all** of these policies if you are using CSPs.
+> - Editing the registry to change the behavior of update policies isn't recommended. Use Group Policy or the Configuration Service Provider (CSP) policy instead of directly writing to the registry. However, if you choose to edit the registry, ensure you've configured the `UseUpdateClassPolicySource` registry key too, or the scan source won't be altered. 
 
 - [Update/SetPolicyDrivenUpdateSourceForDriverUpdates](/windows/client-management/mdm/policy-csp-update#update-setpolicydrivenupdatesourcefordriver)
 - [Update/SetPolicyDrivenUpdateSourceForFeatureUpdates](/windows/client-management/mdm/policy-csp-update#update-setpolicydrivenupdatesourceforfeature)

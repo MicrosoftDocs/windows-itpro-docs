@@ -1,199 +1,216 @@
 ---
-title: Policy CSP - ADMX_WindowsConnectNow
-description: Policy CSP - ADMX_WindowsConnectNow
-ms.author: vinpa
-ms.localizationpriority: medium
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
+title: ADMX_WindowsConnectNow Policy CSP
+description: Learn more about the ADMX_WindowsConnectNow Area in Policy CSP.
 author: vinaypamnani-msft
-ms.date: 09/28/2020
-ms.reviewer: 
 manager: aaroncz
+ms.author: vinpa
+ms.date: 08/10/2023
+ms.localizationpriority: medium
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ADMX_WindowsConnectNow-Begin -->
 # Policy CSP - ADMX_WindowsConnectNow
-> [!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<hr/>
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
-<!--Policies-->
-## ADMX_WindowsConnectNow policies  
+<!-- ADMX_WindowsConnectNow-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ADMX_WindowsConnectNow-Editable-End -->
 
-<dl>
-  <dd>
-    <a href="#admx-windowsconnectnow-wcn-disablewcnui-1">ADMX_WindowsConnectNow/WCN_DisableWcnUi_1</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsconnectnow-wcn-disablewcnui-2">ADMX_WindowsConnectNow/WCN_DisableWcnUi_2</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsconnectnow-wcn-enableregistrar">ADMX_WindowsConnectNow/WCN_EnableRegistrar</a>
-  </dd>
-</dl>
+<!-- WCN_DisableWcnUi_1-Begin -->
+## WCN_DisableWcnUi_1
 
+<!-- WCN_DisableWcnUi_1-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- WCN_DisableWcnUi_1-Applicability-End -->
 
-<hr/>
+<!-- WCN_DisableWcnUi_1-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_WindowsConnectNow/WCN_DisableWcnUi_1
+```
+<!-- WCN_DisableWcnUi_1-OmaUri-End -->
 
-<!--Policy-->
-<a href="" id="admx-windowsconnectnow-wcn-disablewcnui-1"></a>**ADMX_WindowsConnectNow/WCN_DisableWcnUi_1**  
+<!-- WCN_DisableWcnUi_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting prohibits access to Windows Connect Now (WCN) wizards.
 
-<!--SupportedSKUs-->
+- If you enable this policy setting, the wizards are turned off and users have no access to any of the wizard tasks. All the configuration related tasks, including "Set up a wireless router or access point" and "Add a wireless device" are disabled.
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+- If you disable or don't configure this policy setting, users can access the wizard tasks, including "Set up a wireless router or access point" and "Add a wireless device". The default for this policy setting allows users to access all WCN wizards.
+<!-- WCN_DisableWcnUi_1-Description-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- WCN_DisableWcnUi_1-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- WCN_DisableWcnUi_1-Editable-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- WCN_DisableWcnUi_1-DFProperties-Begin -->
+**Description framework properties**:
 
-> [!div class = "checklist"]
-> * User
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- WCN_DisableWcnUi_1-DFProperties-End -->
 
-<hr/>
+<!-- WCN_DisableWcnUi_1-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--/Scope-->
-<!--Description-->
-This policy setting prohibits access to Windows Connect Now (WCN) wizards. 
+**ADMX mapping**:
 
-- If you enable this policy setting, the wizards are turned off and users have no access to any of the wizard tasks. 
+| Name | Value |
+|:--|:--|
+| Name | WCN_DisableWcnUi_1 |
+| Friendly Name | Prohibit access of the Windows Connect Now wizards |
+| Location | User Configuration |
+| Path | Network > Windows Connect Now |
+| Registry Key Name | Software\Policies\Microsoft\Windows\WCN\UI |
+| Registry Value Name | DisableWcnUi |
+| ADMX File Name | WindowsConnectNow.admx |
+<!-- WCN_DisableWcnUi_1-AdmxBacked-End -->
 
-All the configuration-related tasks, including "Set up a wireless router or access point" and "Add a wireless device" are disabled. 
+<!-- WCN_DisableWcnUi_1-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- WCN_DisableWcnUi_1-Examples-End -->
 
-- If you disable or don't configure this policy setting, users can access the wizard tasks. 
+<!-- WCN_DisableWcnUi_1-End -->
 
-They are "Set up a wireless router or access point" and "Add a wireless device." The default for this policy setting allows users to access all WCN wizards.
+<!-- WCN_DisableWcnUi_2-Begin -->
+## WCN_DisableWcnUi_2
 
-<!--/Description-->
+<!-- WCN_DisableWcnUi_2-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- WCN_DisableWcnUi_2-Applicability-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Prohibit access of the Windows Connect Now wizards*
--   GP name: *WCN_DisableWcnUi_1*
--   GP path: *Network\Windows Connect Now*
--   GP ADMX file name: *WindowsConnectNow.admx*
+<!-- WCN_DisableWcnUi_2-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_WindowsConnectNow/WCN_DisableWcnUi_2
+```
+<!-- WCN_DisableWcnUi_2-OmaUri-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- WCN_DisableWcnUi_2-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting prohibits access to Windows Connect Now (WCN) wizards.
 
-<!--Policy-->
-<a href="" id="admx-windowsconnectnow-wcn-disablewcnui-2"></a>**ADMX_WindowsConnectNow/WCN_DisableWcnUi_2**  
+- If you enable this policy setting, the wizards are turned off and users have no access to any of the wizard tasks. All the configuration related tasks, including "Set up a wireless router or access point" and "Add a wireless device" are disabled.
 
-<!--SupportedSKUs-->
+- If you disable or don't configure this policy setting, users can access the wizard tasks, including "Set up a wireless router or access point" and "Add a wireless device". The default for this policy setting allows users to access all WCN wizards.
+<!-- WCN_DisableWcnUi_2-Description-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- WCN_DisableWcnUi_2-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- WCN_DisableWcnUi_2-Editable-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- WCN_DisableWcnUi_2-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- WCN_DisableWcnUi_2-DFProperties-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- WCN_DisableWcnUi_2-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<hr/>
+**ADMX mapping**:
 
-<!--/Scope-->
-<!--Description-->
-This policy setting prohibits access to Windows Connect Now (WCN) wizards. 
+| Name | Value |
+|:--|:--|
+| Name | WCN_DisableWcnUi_2 |
+| Friendly Name | Prohibit access of the Windows Connect Now wizards |
+| Location | Computer Configuration |
+| Path | Network > Windows Connect Now |
+| Registry Key Name | Software\Policies\Microsoft\Windows\WCN\UI |
+| Registry Value Name | DisableWcnUi |
+| ADMX File Name | WindowsConnectNow.admx |
+<!-- WCN_DisableWcnUi_2-AdmxBacked-End -->
 
-- If you enable this policy setting, the wizards are turned off and users have no access to any of the wizard tasks. 
+<!-- WCN_DisableWcnUi_2-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- WCN_DisableWcnUi_2-Examples-End -->
 
-All the configuration-related tasks, including "Set up a wireless router or access point" and "Add a wireless device" are disabled. 
+<!-- WCN_DisableWcnUi_2-End -->
 
-- If you disable or don't configure this policy setting, users can access the wizard tasks. 
+<!-- WCN_EnableRegistrar-Begin -->
+## WCN_EnableRegistrar
 
-They are "Set up a wireless router or access point" and "Add a wireless device." The default for this policy setting allows users to access all WCN wizards.
+<!-- WCN_EnableRegistrar-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- WCN_EnableRegistrar-Applicability-End -->
 
-<!--/Description-->
+<!-- WCN_EnableRegistrar-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_WindowsConnectNow/WCN_EnableRegistrar
+```
+<!-- WCN_EnableRegistrar-OmaUri-End -->
 
-
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Prohibit access of the Windows Connect Now wizards*
--   GP name: *WCN_DisableWcnUi_2*
--   GP path: *Network\Windows Connect Now*
--   GP ADMX file name: *WindowsConnectNow.admx*
-
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-windowsconnectnow-wcn-enableregistrar"></a>**ADMX_WindowsConnectNow/WCN_EnableRegistrar**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- WCN_EnableRegistrar-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows the configuration of wireless settings using Windows Connect Now (WCN). The WCN Registrar enables the discovery and configuration of devices over Ethernet (UPnP), over In-band 802.11 WLAN, through the Windows Portable Device API (WPD), and via USB Flash drives.
 
-More options are available to allow discovery and configuration over a specific medium. 
+Additional options are available to allow discovery and configuration over a specific medium.
 
-- If you enable this policy setting, more choices are available to turn off the operations over a specific medium. 
-- If you disable this policy setting, operations are disabled over all media. 
+- If you enable this policy setting, additional choices are available to turn off the operations over a specific medium.
 
-If you don't configure this policy setting, operations are enabled over all media. 
+- If you disable this policy setting, operations are disabled over all media.
+
+- If you don't configure this policy setting, operations are enabled over all media.
 
 The default for this policy setting allows operations over all media.
+<!-- WCN_EnableRegistrar-Description-End -->
 
-<!--/Description-->
+<!-- WCN_EnableRegistrar-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- WCN_EnableRegistrar-Editable-End -->
 
+<!-- WCN_EnableRegistrar-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Configuration of wireless settings using Windows Connect Now*
--   GP name: *WCN_EnableRegistrar*
--   GP path: *Network\Windows Connect Now*
--   GP ADMX file name: *WindowsConnectNow.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- WCN_EnableRegistrar-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- WCN_EnableRegistrar-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
+**ADMX mapping**:
 
+| Name | Value |
+|:--|:--|
+| Name | WCN_EnableRegistrar |
+| Friendly Name | Configuration of wireless settings using Windows Connect Now |
+| Location | Computer Configuration |
+| Path | Network > Windows Connect Now |
+| Registry Key Name | Software\Policies\Microsoft\Windows\WCN\Registrars |
+| Registry Value Name | EnableRegistrars |
+| ADMX File Name | WindowsConnectNow.admx |
+<!-- WCN_EnableRegistrar-AdmxBacked-End -->
 
-<!--/Policies-->
+<!-- WCN_EnableRegistrar-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- WCN_EnableRegistrar-Examples-End -->
 
+<!-- WCN_EnableRegistrar-End -->
+
+<!-- ADMX_WindowsConnectNow-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ADMX_WindowsConnectNow-CspMoreInfo-End -->
+
+<!-- ADMX_WindowsConnectNow-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

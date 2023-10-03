@@ -1,0 +1,5 @@
+items:
+- name: FIPS 140-2 Validation
+  href: fips-140-validation.md
+- name: Common Criteria Certifications
+  href: windows-platform-common-criteria.md

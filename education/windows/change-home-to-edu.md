@@ -1,19 +1,15 @@
 ---
 title: Upgrade Windows Home to Windows Education on student-owned devices
 description: Learn how IT Pros can upgrade student-owned devices from Windows Home to Windows Education using Mobile Device Management or Kivuto OnTheHub with qualifying subscriptions.
-ms.date: 08/10/2022
-ms.prod: windows
-ms.technology: windows
+ms.date: 08/07/2023
 ms.topic: how-to
-ms.localizationpriority: medium
 author: scottbreenmsft
 ms.author: scbree
 ms.reviewer: paoloma
-manager: jeffbu
-ms.collection: education
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
+manager: aaroncz
+ms.collection:
+  - tier3
+  - education
 ---
 
 # Upgrade Windows Home to Windows Education on student-owned devices
@@ -76,7 +72,7 @@ It's critical that MAKs are protected whenever they're used. The following proce
 - Mobile Device Management (like Microsoft Intune) via [WindowsLicensing CSP](/windows/client-management/mdm/windowslicensing-csp);
     > [!IMPORTANT]
     > If you are using a Mobile Device Management product other than Microsoft Intune, ensure the key isn't accessible by students.
-- Operating System Deployment processes with tools such as Microsoft Deployment Toolkit or Microsoft Endpoint Configuration Manager.
+- Operating System Deployment processes with tools such as Microsoft Deployment Toolkit or Microsoft Configuration Manager.
 
 For a full list of methods to perform a Windows edition upgrade and more details, see [Windows 10 edition upgrade](/windows/deployment/upgrade/windows-10-edition-upgrades).
 
@@ -119,7 +115,7 @@ These steps provide instructions on how to use Microsoft Intune to upgrade devic
 
 These steps configure a filter that will only apply to devices running the *Windows Home edition*. This filter will ensure only devices running *Windows Home edition* are upgraded. For more information about filters, see [Create filters in Microsoft Intune](/mem/intune/fundamentals/filters).
 
-- Start in the [**Microsoft Endpoint Manager admin console**](https://endpoint.microsoft.com)
+- Start in the [**Microsoft Intune admin center**](https://go.microsoft.com/fwlink/?linkid=2109431)
 - Select **Tenant administration** > **Filters**
 - Select **Create**
   - Specify a name for the filter (for example *Windows Home edition*)
@@ -144,7 +140,7 @@ These steps configure a filter that will only apply to devices running the *Wind
 
 These steps create and assign a Windows edition upgrade policy. For more information, see [Windows 10/11 device settings to upgrade editions or enable S mode in Intune](/mem/intune/configuration/edition-upgrade-windows-settings).
 
-- Start in the [**Microsoft Endpoint Manager admin console**](https://endpoint.microsoft.com)
+- Start in the [**Microsoft Intune admin center**](https://go.microsoft.com/fwlink/?linkid=2109431)
 - Select **Devices** > **Configuration profiles**
 - Select **Create profile**
   - Select the **Platform** as **Windows 10 or later**
@@ -179,9 +175,9 @@ The edition upgrade policy will now apply to all existing and new Windows Home e
 
 ### Step 3: Report on device edition
 
-You can check the Windows versions of managed devices in the Microsoft Endpoint Manager admin console.
+You can check the Windows versions of managed devices in the Microsoft Intune admin center.
 
-- Start in the **Microsoft Endpoint Manager admin console**
+- Start in the **Microsoft Intune admin center**
 - Select **Devices** > **Windows**
 - Select the **Columns** button
 - Select **Sku Family**

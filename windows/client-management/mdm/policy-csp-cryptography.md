@@ -1,141 +1,423 @@
 ---
-title: Policy CSP - Cryptography
-description: Learn how to use the Policy CSP - Cryptography setting to allow or disallow the Federal Information Processing Standard (FIPS) policy.
-ms.author: vinpa
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
+title: Cryptography Policy CSP
+description: Learn more about the Cryptography Area in Policy CSP.
 author: vinaypamnani-msft
-ms.localizationpriority: medium
-ms.date: 09/27/2019
-ms.reviewer: 
 manager: aaroncz
+ms.author: vinpa
+ms.date: 08/29/2023
+ms.localizationpriority: medium
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- Cryptography-Begin -->
 # Policy CSP - Cryptography
 
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
+<!-- Cryptography-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Cryptography-Editable-End -->
 
-<hr/>
+<!-- AllowFipsAlgorithmPolicy-Begin -->
+## AllowFipsAlgorithmPolicy
 
-<!--Policies-->
-## Cryptography policies  
+<!-- AllowFipsAlgorithmPolicy-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- AllowFipsAlgorithmPolicy-Applicability-End -->
 
-<dl>
-  <dd>
-    <a href="#cryptography-allowfipsalgorithmpolicy">Cryptography/AllowFipsAlgorithmPolicy</a>
-  </dd>
-  <dd>
-    <a href="#cryptography-tlsciphersuites">Cryptography/TLSCipherSuites</a>
-  </dd>
-</dl>
+<!-- AllowFipsAlgorithmPolicy-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Cryptography/AllowFipsAlgorithmPolicy
+```
+<!-- AllowFipsAlgorithmPolicy-OmaUri-End -->
 
+<!-- AllowFipsAlgorithmPolicy-Description-Begin -->
+<!-- Description-Source-DDF -->
+Allows or disallows the Federal Information Processing Standard (FIPS) policy.
+<!-- AllowFipsAlgorithmPolicy-Description-End -->
 
-<hr/>
+<!-- AllowFipsAlgorithmPolicy-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowFipsAlgorithmPolicy-Editable-End -->
 
-<!--Policy-->
-<a href="" id="cryptography-allowfipsalgorithmpolicy"></a>**Cryptography/AllowFipsAlgorithmPolicy**  
+<!-- AllowFipsAlgorithmPolicy-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--SupportedSKUs-->
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- AllowFipsAlgorithmPolicy-DFProperties-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AllowFipsAlgorithmPolicy-AllowedValues-Begin -->
+**Allowed values**:
 
+| Value | Description |
+|:--|:--|
+| 1 | Allow. |
+| 0 (Default) | Block. |
+<!-- AllowFipsAlgorithmPolicy-AllowedValues-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowFipsAlgorithmPolicy-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+| Name | Value |
+|:--|:--|
+| Name | System cryptography: Use FIPS-compliant algorithms for encryption, hashing, and signing |
+| Path | Windows Settings > Security Settings > Local Policies > Security Options |
+<!-- AllowFipsAlgorithmPolicy-GpMapping-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- AllowFipsAlgorithmPolicy-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowFipsAlgorithmPolicy-Examples-End -->
 
-<hr/>
+<!-- AllowFipsAlgorithmPolicy-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting allows or disallows the Federal Information Processing Standard (FIPS) policy.
+<!-- ConfigureEllipticCurveCryptography-Begin -->
+## ConfigureEllipticCurveCryptography
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *System cryptography: Use FIPS-compliant algorithms for encryption, hashing, and signing*
--   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+<!-- ConfigureEllipticCurveCryptography-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- ConfigureEllipticCurveCryptography-Applicability-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- ConfigureEllipticCurveCryptography-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Cryptography/ConfigureEllipticCurveCryptography
+```
+<!-- ConfigureEllipticCurveCryptography-OmaUri-End -->
 
-0 (default) – Not allowed.
-1– Allowed.
-<!--/SupportedValues-->
-<!--Example-->
+<!-- ConfigureEllipticCurveCryptography-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting determines the priority order of ECC curves used with ECDHE cipher suites.
 
-<!--/Example-->
-<!--Validation-->
+- If you enable this policy setting, ECC curves are prioritized in the order specified.(Enter one Curve name per line)
 
-<!--/Validation-->
-<!--/Policy-->
+- If you disable or don't configure this policy setting, the default ECC curve order is used.
 
-<hr/>
+Default Curve Order
+ 
+curve25519
+NistP256
+NistP384
 
-<!--Policy-->
-<a href="" id="cryptography-tlsciphersuites"></a>**Cryptography/TLSCipherSuites**  
+To See all the curves supported on the system, Use the following command:
 
-<!--SupportedSKUs-->
+CertUtil.exe -DisplayEccCurve.
+<!-- ConfigureEllipticCurveCryptography-Description-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- ConfigureEllipticCurveCryptography-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ConfigureEllipticCurveCryptography-Editable-End -->
 
+<!-- ConfigureEllipticCurveCryptography-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- ConfigureEllipticCurveCryptography-DFProperties-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ConfigureEllipticCurveCryptography-GpMapping-Begin -->
+**Group policy mapping**:
 
-> [!div class = "checklist"]
-> * Device
+| Name | Value |
+|:--|:--|
+| Name | SSLCurveOrder |
+| Friendly Name | ECC Curve Order |
+| Location | Computer Configuration |
+| Path | Network > SSL Configuration Settings |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Cryptography\Configuration\SSL\00010002 |
+| ADMX File Name | CipherSuiteOrder.admx |
+<!-- ConfigureEllipticCurveCryptography-GpMapping-End -->
 
-<hr/>
+<!-- ConfigureEllipticCurveCryptography-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ConfigureEllipticCurveCryptography-Examples-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting lists the Cryptographic Cipher Algorithms allowed for SSL connections. Format is a semicolon delimited list. Last write win.
+<!-- ConfigureEllipticCurveCryptography-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
+<!-- ConfigureSystemCryptographyForceStrongKeyProtection-Begin -->
+## ConfigureSystemCryptographyForceStrongKeyProtection
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
+<!-- ConfigureSystemCryptographyForceStrongKeyProtection-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- ConfigureSystemCryptographyForceStrongKeyProtection-Applicability-End -->
 
-<!--/SupportedValues-->
-<!--Example-->
+<!-- ConfigureSystemCryptographyForceStrongKeyProtection-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Cryptography/ConfigureSystemCryptographyForceStrongKeyProtection
+```
+<!-- ConfigureSystemCryptographyForceStrongKeyProtection-OmaUri-End -->
 
-<!--/Example-->
-<!--Validation-->
+<!-- ConfigureSystemCryptographyForceStrongKeyProtection-Description-Begin -->
+<!-- Description-Source-DDF -->
+System cryptography: Force strong key protection for user keys stored on the computer. Last write wins.
+<!-- ConfigureSystemCryptographyForceStrongKeyProtection-Description-End -->
 
-<!--/Validation-->
-<!--/Policy-->
-<hr/>
+<!-- ConfigureSystemCryptographyForceStrongKeyProtection-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ConfigureSystemCryptographyForceStrongKeyProtection-Editable-End -->
 
+<!-- ConfigureSystemCryptographyForceStrongKeyProtection-DFProperties-Begin -->
+**Description framework properties**:
 
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 2 |
+<!-- ConfigureSystemCryptographyForceStrongKeyProtection-DFProperties-End -->
 
-<!--/Policies-->
+<!-- ConfigureSystemCryptographyForceStrongKeyProtection-AllowedValues-Begin -->
+**Allowed values**:
 
-## Related topics
+| Flag | Description |
+|:--|:--|
+| 8 | An app container has accessed a medium key that isn't strongly protected. For example, a key that's for user consent only, or is password or fingerprint protected. |
+| 2 (Default) | Force high protection. |
+| 1 | Display the strong key user interface as needed. |
+<!-- ConfigureSystemCryptographyForceStrongKeyProtection-AllowedValues-End -->
+
+<!-- ConfigureSystemCryptographyForceStrongKeyProtection-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ConfigureSystemCryptographyForceStrongKeyProtection-Examples-End -->
+
+<!-- ConfigureSystemCryptographyForceStrongKeyProtection-End -->
+
+<!-- OverrideMinimumEnabledDTLSVersionClient-Begin -->
+## OverrideMinimumEnabledDTLSVersionClient
+
+<!-- OverrideMinimumEnabledDTLSVersionClient-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- OverrideMinimumEnabledDTLSVersionClient-Applicability-End -->
+
+<!-- OverrideMinimumEnabledDTLSVersionClient-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Cryptography/OverrideMinimumEnabledDTLSVersionClient
+```
+<!-- OverrideMinimumEnabledDTLSVersionClient-OmaUri-End -->
+
+<!-- OverrideMinimumEnabledDTLSVersionClient-Description-Begin -->
+<!-- Description-Source-DDF -->
+Override minimal enabled TLS version for client role. Last write wins.
+<!-- OverrideMinimumEnabledDTLSVersionClient-Description-End -->
+
+<!-- OverrideMinimumEnabledDTLSVersionClient-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- OverrideMinimumEnabledDTLSVersionClient-Editable-End -->
+
+<!-- OverrideMinimumEnabledDTLSVersionClient-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- OverrideMinimumEnabledDTLSVersionClient-DFProperties-End -->
+
+<!-- OverrideMinimumEnabledDTLSVersionClient-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- OverrideMinimumEnabledDTLSVersionClient-Examples-End -->
+
+<!-- OverrideMinimumEnabledDTLSVersionClient-End -->
+
+<!-- OverrideMinimumEnabledDTLSVersionServer-Begin -->
+## OverrideMinimumEnabledDTLSVersionServer
+
+<!-- OverrideMinimumEnabledDTLSVersionServer-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- OverrideMinimumEnabledDTLSVersionServer-Applicability-End -->
+
+<!-- OverrideMinimumEnabledDTLSVersionServer-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Cryptography/OverrideMinimumEnabledDTLSVersionServer
+```
+<!-- OverrideMinimumEnabledDTLSVersionServer-OmaUri-End -->
+
+<!-- OverrideMinimumEnabledDTLSVersionServer-Description-Begin -->
+<!-- Description-Source-DDF -->
+Override minimal enabled TLS version for server role. Last write wins.
+<!-- OverrideMinimumEnabledDTLSVersionServer-Description-End -->
+
+<!-- OverrideMinimumEnabledDTLSVersionServer-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- OverrideMinimumEnabledDTLSVersionServer-Editable-End -->
+
+<!-- OverrideMinimumEnabledDTLSVersionServer-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- OverrideMinimumEnabledDTLSVersionServer-DFProperties-End -->
+
+<!-- OverrideMinimumEnabledDTLSVersionServer-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- OverrideMinimumEnabledDTLSVersionServer-Examples-End -->
+
+<!-- OverrideMinimumEnabledDTLSVersionServer-End -->
+
+<!-- OverrideMinimumEnabledTLSVersionClient-Begin -->
+## OverrideMinimumEnabledTLSVersionClient
+
+<!-- OverrideMinimumEnabledTLSVersionClient-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- OverrideMinimumEnabledTLSVersionClient-Applicability-End -->
+
+<!-- OverrideMinimumEnabledTLSVersionClient-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Cryptography/OverrideMinimumEnabledTLSVersionClient
+```
+<!-- OverrideMinimumEnabledTLSVersionClient-OmaUri-End -->
+
+<!-- OverrideMinimumEnabledTLSVersionClient-Description-Begin -->
+<!-- Description-Source-DDF -->
+Override minimal enabled TLS version for client role. Last write wins.
+<!-- OverrideMinimumEnabledTLSVersionClient-Description-End -->
+
+<!-- OverrideMinimumEnabledTLSVersionClient-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- OverrideMinimumEnabledTLSVersionClient-Editable-End -->
+
+<!-- OverrideMinimumEnabledTLSVersionClient-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- OverrideMinimumEnabledTLSVersionClient-DFProperties-End -->
+
+<!-- OverrideMinimumEnabledTLSVersionClient-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- OverrideMinimumEnabledTLSVersionClient-Examples-End -->
+
+<!-- OverrideMinimumEnabledTLSVersionClient-End -->
+
+<!-- OverrideMinimumEnabledTLSVersionServer-Begin -->
+## OverrideMinimumEnabledTLSVersionServer
+
+<!-- OverrideMinimumEnabledTLSVersionServer-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- OverrideMinimumEnabledTLSVersionServer-Applicability-End -->
+
+<!-- OverrideMinimumEnabledTLSVersionServer-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Cryptography/OverrideMinimumEnabledTLSVersionServer
+```
+<!-- OverrideMinimumEnabledTLSVersionServer-OmaUri-End -->
+
+<!-- OverrideMinimumEnabledTLSVersionServer-Description-Begin -->
+<!-- Description-Source-DDF -->
+Override minimal enabled TLS version for server role. Last write wins.
+<!-- OverrideMinimumEnabledTLSVersionServer-Description-End -->
+
+<!-- OverrideMinimumEnabledTLSVersionServer-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- OverrideMinimumEnabledTLSVersionServer-Editable-End -->
+
+<!-- OverrideMinimumEnabledTLSVersionServer-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- OverrideMinimumEnabledTLSVersionServer-DFProperties-End -->
+
+<!-- OverrideMinimumEnabledTLSVersionServer-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- OverrideMinimumEnabledTLSVersionServer-Examples-End -->
+
+<!-- OverrideMinimumEnabledTLSVersionServer-End -->
+
+<!-- TLSCipherSuites-Begin -->
+## TLSCipherSuites
+
+<!-- TLSCipherSuites-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- TLSCipherSuites-Applicability-End -->
+
+<!-- TLSCipherSuites-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Cryptography/TLSCipherSuites
+```
+<!-- TLSCipherSuites-OmaUri-End -->
+
+<!-- TLSCipherSuites-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting determines the cipher suites used by the Secure Socket Layer (SSL).
+
+- If you enable this policy setting, SSL cipher suites are prioritized in the order specified.
+
+- If you disable or don't configure this policy setting, default cipher suite order is used.
+
+Link for all the cipherSuites: <https://go.microsoft.com/fwlink/?LinkId=517265>
+<!-- TLSCipherSuites-Description-End -->
+
+<!-- TLSCipherSuites-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TLSCipherSuites-Editable-End -->
+
+<!-- TLSCipherSuites-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- TLSCipherSuites-DFProperties-End -->
+
+<!-- TLSCipherSuites-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | SSLCipherSuiteOrder |
+| Friendly Name | SSL Cipher Suite Order |
+| Location | Computer Configuration |
+| Path | Network > SSL Configuration Settings |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Cryptography\Configuration\SSL\00010002 |
+| ADMX File Name | CipherSuiteOrder.admx |
+<!-- TLSCipherSuites-GpMapping-End -->
+
+<!-- TLSCipherSuites-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TLSCipherSuites-Examples-End -->
+
+<!-- TLSCipherSuites-End -->
+
+<!-- Cryptography-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- Cryptography-CspMoreInfo-End -->
+
+<!-- Cryptography-End -->
+
+## Related articles
 
 [Policy configuration service provider](policy-configuration-service-provider.md)

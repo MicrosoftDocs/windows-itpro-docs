@@ -1,26 +1,26 @@
 ---
-title: Network access Do not allow storage of passwords and credentials for network authentication (Windows 10)
+title: Network access Do not allow storage of passwords and credentials for network authentication 
 description: Learn about best practices and more for the security policy setting, Network access Do not allow storage of passwords and credentials for network authentication
 ms.assetid: b9b64360-36ea-40fa-b795-2d6558c46563
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 07/01/2021
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Network access: Do not allow storage of passwords and credentials for network authentication
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management and security considerations for the **Network access: Do not allow storage of passwords and credentials for network authentication** security policy setting.
@@ -55,12 +55,12 @@ The following table lists the actual and effective default values for this polic
 
 | Server type or Group Policy Object (GPO) | Default value |
 | - | - |
-| Default domain policy| Disabled| 
-| Default domain controller policy| Disabled| 
-| Stand-alone server default settings | Disabled| 
-| Domain controller effective default settings| Not defined| 
-| Member server effective default settings | Not defined| 
-| Effective GPO default settings on client computers | Not defined| 
+| Default domain policy| Not defined| 
+| Default domain controller policy| Not defined| 
+| Stand-alone server default settings | Not defined| 
+| Domain controller effective default settings| Disabled| 
+| Member server effective default settings | Disabled| 
+| Effective GPO default settings on client computers |Disabled| 
  
 ### Policy management
 

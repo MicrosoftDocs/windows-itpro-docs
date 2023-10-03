@@ -1,127 +1,143 @@
 ---
-title: Policy CSP - ADMX_DeviceCompat
-description: Learn about Policy CSP - ADMX_DeviceCompat.
-ms.author: vinpa
-ms.localizationpriority: medium
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
+title: ADMX_DeviceCompat Policy CSP
+description: Learn more about the ADMX_DeviceCompat Area in Policy CSP.
 author: vinaypamnani-msft
-ms.date: 08/09/2021
-ms.reviewer: 
 manager: aaroncz
+ms.author: vinpa
+ms.date: 08/10/2023
+ms.localizationpriority: medium
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ADMX_DeviceCompat-Begin -->
 # Policy CSP - ADMX_DeviceCompat
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<hr/>
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
-<!--Policies-->
-## ADMX_DeviceCompat policies  
+<!-- ADMX_DeviceCompat-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ADMX_DeviceCompat-Editable-End -->
 
-<dl>
-  <dd>
-    <a href="#admx-devicecompat-deviceflags">ADMX_DeviceCompat/DeviceFlags</a>
-  </dd>
-  <dd>
-    <a href="#admx-devicecompat-drivershims">ADMX_DeviceCompat/DriverShims</a>
-  </dd>
-</dl>
+<!-- DeviceFlags-Begin -->
+## DeviceFlags
 
+<!-- DeviceFlags-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DeviceFlags-Applicability-End -->
 
-<hr/>
+<!-- DeviceFlags-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_DeviceCompat/DeviceFlags
+```
+<!-- DeviceFlags-OmaUri-End -->
 
-<!--Policy-->
-<a href="" id="admx-devicecompat-deviceflags"></a>**ADMX_DeviceCompat/DeviceFlags**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- DeviceFlags-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Changes behavior of Microsoft bus drivers to work with specific devices.
+<!-- DeviceFlags-Description-End -->
 
-<!--/Description-->
+<!-- DeviceFlags-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DeviceFlags-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Device compatibility settings*
--   GP name: *DeviceFlags*
--   GP path: *Windows Components\Device and Driver Compatibility*
--   GP ADMX file name: *DeviceCompat.admx*
+<!-- DeviceFlags-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DeviceFlags-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-devicecompat-drivershims"></a>**ADMX_DeviceCompat/DriverShims**  
+<!-- DeviceFlags-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | DeviceFlags |
+| Friendly Name | Device compatibility settings |
+| Location | Computer Configuration |
+| Path | Windows Components > Device and Driver Compatibility |
+| Registry Key Name | System\CurrentControlSet\Policies\Microsoft\Compatibility |
+| Registry Value Name | DisableDeviceFlags |
+| ADMX File Name | DeviceCompat.admx |
+<!-- DeviceFlags-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DeviceFlags-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DeviceFlags-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DeviceFlags-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- DriverShims-Begin -->
+## DriverShims
 
-<hr/>
+<!-- DriverShims-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DriverShims-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
-Changes behavior of third-party drivers to work around incompatibilities introduced between OS versions.
+<!-- DriverShims-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_DeviceCompat/DriverShims
+```
+<!-- DriverShims-OmaUri-End -->
 
-<!--/Description-->
+<!-- DriverShims-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Changes behavior of 3rd-party drivers to work around incompatibilities introduced between OS versions.
+<!-- DriverShims-Description-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Driver compatibility settings*
--   GP name: *DriverShims*
--   GP path: *Windows Components\Device and Driver Compatibility*
--   GP ADMX file name: *DeviceCompat.admx*
+<!-- DriverShims-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DriverShims-Editable-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+<!-- DriverShims-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Policies-->
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DriverShims-DFProperties-End -->
 
-## Related topics
+<!-- DriverShims-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | DriverShims |
+| Friendly Name | Driver compatibility settings |
+| Location | Computer Configuration |
+| Path | Windows Components > Device and Driver Compatibility |
+| Registry Key Name | System\CurrentControlSet\Policies\Microsoft\Compatibility |
+| Registry Value Name | DisableDriverShims |
+| ADMX File Name | DeviceCompat.admx |
+<!-- DriverShims-AdmxBacked-End -->
+
+<!-- DriverShims-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DriverShims-Examples-End -->
+
+<!-- DriverShims-End -->
+
+<!-- ADMX_DeviceCompat-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ADMX_DeviceCompat-CspMoreInfo-End -->
+
+<!-- ADMX_DeviceCompat-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

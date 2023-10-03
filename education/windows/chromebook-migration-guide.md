@@ -1,21 +1,10 @@
 ---
-title: Chromebook migration guide (Windows 10)
-description: In this guide, you'll learn how to migrate a Google Chromebook-based learning environment to a Windows 10-based learning environment.
-ms.assetid: 7A1FA48A-C44A-4F59-B895-86D4D77F8BEA
-keywords: migrate, automate, device, Chromebook migration
-ms.prod: windows
-ms.mktglfcycl: plan
-ms.sitesec: library
-ms.pagetype: edu, devices
-ms.localizationpriority: medium
-ms.collection: education
-author: paolomatarazzo
-ms.author: paoloma
+title: Chromebook migration guide 
+description: Learn how to migrate a Google Chromebook-based learning environment to a Windows 10-based learning environment.
+ms.topic: how-to
 ms.date: 08/10/2022
-ms.reviewer: 
-manager: aaroncz
 appliesto:
-- ✅ <b>Windows 10</b>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
 # Chromebook migration guide
@@ -142,7 +131,7 @@ Table 3. Settings in the Security node in the Google Admin Console
 |Set up single sign-on (SSO)|This section is used to configure SSO for Google web-based apps (such as Google Apps Gmail or Google Apps Calendar). While you don’t need to migrate any settings in this section, you probably will want to configure Azure Active Directory synchronization to replace Google-based SSO.|
 |Advanced settings|This section is used to configure administrative access to user data and to configure the Google Secure Data Connector (which allows Google Apps to access data on your local network). You don’t need to migrate any settings in this section.|
 
-**Identify locally-configured settings to migrate**
+**Identify locally configured settings to migrate**
 
 In addition to the settings configured in the Google Admin Console, users may have locally configured their devices based on their own personal preferences (as shown in Figure 2). Table 4 lists the Chromebook user and device settings that you can locally configure. Review the settings and determine which settings you'll migrate to Windows. Some of the settings listed in Table 4 can only be seen when you click the **Show advanced settings** link (as shown in Figure 2).
 
@@ -150,7 +139,7 @@ In addition to the settings configured in the Google Admin Console, users may ha
 
 Figure 2. Locally configured settings on Chromebook
 
-Table 4. Locally-configured settings
+Table 4. Locally configured settings
 
 | Section                | Settings                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -206,7 +195,7 @@ In addition to Chromebook devices, users may have companion devices (smartphones
 
 After you've identified each companion device, verify the settings for the device that are used to access Office 365. You only need to test one type of each companion device. For example, if users use Android phones to access Google Apps Gmail mailboxes, configure the device to access Office 365 and then record those settings. You can publish those settings on a website or to your helpdesk staff so that users will know how to access their Office 365 mailbox.
 
-In most instances, users will only need to provide in their Office 365 email account and password. However, you should verify these credentials on each type of companion device. For more information about how to configure a companion device to work with Office 365, see [Compare how different mobile devices work with Office 365](https://go.microsoft.com/fwlink/p/?LinkId=690254).
+In most instances, users will only need to provide in their Office 365 email account and password. However, you should verify these credentials on each type of companion device. For more information about how to configure a companion device to work with Office 365, see [Compare how different mobile devices work with Office 365](https://support.microsoft.com/office/compare-how-different-mobile-devices-work-with-office-365-bdd06229-776a-4824-947c-82425d72597b).
 
 **Identify the optimal timing for the migration**
 
@@ -357,7 +346,7 @@ Table 5. Select on-premises AD DS, Azure AD, or hybrid
 |--- |--- |--- |--- |
 |Use Office 365||✔️|✔️|
 |Use Intune for management||✔️|✔️|
-|Use Microsoft Endpoint Manager for management|✔️||✔️|
+|Use Microsoft Configuration Manager for management|✔️||✔️|
 |Use Group Policy for management|✔️||✔️|
 |Have devices that are domain-joined|✔️||✔️|
 |Allow faculty and students to Bring Your Own Device (BYOD) which aren't domain-joined||✔️|✔️|
@@ -370,7 +359,7 @@ You may ask the question, “Why plan for device, user, and app management befor
 
 Also, planning management before deployment is essential to being ready to support the devices as you deploy them. You want to have your management processes and technology in place when the first teachers, facility, or students start using their new Windows device.
 
-Table 6 is a decision matrix that lists the device, user, and app management products and technologies and the features supported by each product or technology. The primary device, user, and app management products and technologies include Group Policy, Microsoft Endpoint Configuration Manager, Intune, and the Microsoft Deployment Toolkit (MDT). Use this decision matrix to help you select the right combination of products and technologies for your plan.
+Table 6 is a decision matrix that lists the device, user, and app management products and technologies and the features supported by each product or technology. The primary device, user, and app management products and technologies include Group Policy, Microsoft Configuration Manager, Intune, and the Microsoft Deployment Toolkit (MDT). Use this decision matrix to help you select the right combination of products and technologies for your plan.
 
 Table 6. Device, user, and app management products and technologies
 
@@ -416,11 +405,11 @@ Examine each of the following network infrastructure technologies and services a
 
     For more information that compares Internet bandwidth consumption for Chromebook and Windows devices, see the following resources:
 
-    -   [Chromebook vs. Windows Notebook Network Traffic Analysis](https://go.microsoft.com/fwlink/p/?LinkId=690255)
+    -   [Chromebook vs. Windows Notebook Network Traffic Analysis](https://www.principledtechnologies.com/Microsoft/Chromebook_PC_network_traffic_0613.pdf)
 
-    -   [Hidden Cost of Chromebook Deployments](https://go.microsoft.com/fwlink/p/?LinkId=690256)
+    -   [Hidden Cost of Chromebook Deployments](https://www.principledtechnologies.com/Microsoft/Windows_Chromebook_bandwidth_0514.pdf)
 
-    -   [Microsoft Windows 8.1 Notebook vs. Chromebooks for Education](https://go.microsoft.com/fwlink/p/?LinkId=690257)
+    -   [Microsoft Windows 8.1 Notebook vs. Chromebooks for Education](https://www.principledtechnologies.com/Microsoft/Windows_8.1_vs_Chromebooks_in_Education_0715.pdf)
 
 -   **Power.** Although not specifically a network infrastructure, you need to ensure your classrooms have adequate power. Chromebook and Windows devices should consume similar amounts of power. This condition means that your existing power outlets should support the same number of Windows devices.
 
@@ -442,15 +431,11 @@ You must perform some of the steps in this section in a specific sequence. Each 
 
 The first migration task is to perform any network infrastructure remediation. In the [Plan network infrastructure remediation](#plan-network-infra-remediation) section, you determined the network infrastructure remediation (if any) that you needed to perform.
 
-It's important that you perform any network infrastructure remediation first because the remaining migration steps are dependent on the network infrastructure. Table 7 lists the Microsoft network infrastructure products and technologies and deployment resources for each.
+It's important that you perform any network infrastructure remediation first because the remaining migration steps are dependent on the network infrastructure. Use the following Microsoft network infrastructure products and technologies:
 
-Table 7. Network infrastructure products and technologies and deployment resources
-
-|Product or technology|Resources|
-|--- |--- |
-|DHCP|<li> [Core Network Guide](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh911995(v=ws.11)) <li> [DHCP Deployment Guide](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd283051(v=ws.10))|
-|DNS|<li>[Core Network Guide](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh911995(v=ws.11)) <li>[Deploying Domain Name System (DNS)](/previous-versions/windows/it-pro/windows-server-2003/cc780661(v=ws.10))|
- 
+- [Core network guidance for Windows Server](/windows-server/networking/core-network-guide/core-network-guide-windows-server)
+- [DHCP overview](/windows-server/networking/technologies/dhcp/dhcp-top)
+- [DNS overview](/windows-server/networking/dns/dns-top)
 
 If you use network infrastructure products and technologies from other vendors, refer to the vendor documentation on how to perform the necessary remediation. If you determined that no remediation is necessary, you can skip this section.
 
@@ -459,34 +444,39 @@ If you use network infrastructure products and technologies from other vendors, 
 
 It's important that you perform AD DS and Azure AD services deployment or remediation right after you finish network infrastructure remediation. Many of the remaining migration steps are dependent on you having your identity system (AD DS or Azure AD) in place and up to necessary expectations.
 
-In the [Plan for Active Directory services](#plan-adservices) section, you determined the AD DS and/or Azure AD deployment or remediation (if any) that needed to be performed. Table 8 list AD DS, Azure AD, and the deployment resources for both. Use the resources in this table to deploy or remediate on-premises AD DS, Azure AD, or both.
+In the [Plan for Active Directory services](#plan-adservices) section, you determined the AD DS and/or Azure AD deployment or remediation (if any) that needed to be performed. Use the following resources to deploy or remediate on-premises AD DS, Azure AD, or both:
 
-Table 8. AD DS, Azure AD and deployment resources
-
-|Product or technology|Resources|
-|--- |--- |
-|AD DS| <li> [Core Network Guide](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh911995(v=ws.11)) <li>[Active Directory Domain Services Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831484(v=ws.11))|
-|Azure AD| <li> [Azure Active Directory documentation](/azure/active-directory/) <li>[Manage and support Azure Active Directory Premium](https://go.microsoft.com/fwlink/p/?LinkId=690259) <li>[Guidelines for Deploying Windows Server Active Directory on Azure Virtual Machines](/windows-server/identity/ad-ds/introduction-to-active-directory-domain-services-ad-ds-virtualization-level-100)|
+- [Core network guidance for Windows Server](/windows-server/networking/core-network-guide/core-network-guide-windows-server)
+- [AD DS overview](/windows-server/identity/ad-ds/active-directory-domain-services)
+- [Azure AD documentation](/azure/active-directory/)
+- [Azure AD Premium](https://azure.microsoft.com/pricing/details/active-directory/)
+- [Safely virtualizing Active Directory Domain Services (AD DS)](/windows-server/identity/ad-ds/introduction-to-active-directory-domain-services-ad-ds-virtualization-level-100)|
 
 If you decided not to migrate to AD DS or Azure AD as a part of the migration, or if you determined that no remediation is necessary, you can skip this section. If you use identity products and technologies from another vendor, refer to the vendor documentation on how to perform the necessary steps.
 
 ## Prepare device, user, and app management systems
 
-
 In the [Plan device, user, and app management](#plan-userdevapp-manage) section of this guide, you selected the products and technologies that you'll use to manage devices, users, and apps on Windows devices. You need to prepare your management systems prior to Windows 10 device deployment. You'll use these management systems to manage the user and device settings that you selected to migrate in the [Plan for migration of user and device settings](#plan-migrate-user-device-settings) section. You need to prepare these systems prior to the migration of user and device settings.
 
-Table 9 lists the Microsoft management systems and the deployment resources for each. Use the resources in this table to prepare (deploy or remediate) these management systems.
+Use the following Microsoft management systems and the deployment resources to prepare (deploy or remediate) these management systems.
 
-Table 9. Management systems and deployment resources
+- [Microsoft Intune](/mem/intune/fundamentals/setup-steps)
 
-|Management system|Resources|
-|--- |--- |
-|Windows provisioning packages| <li> [Build and apply a provisioning package](/windows/configuration/provisioning-packages/provisioning-create-package) <li>[Windows Imaging and Configuration Designer](/windows/configuration/provisioning-packages/provisioning-install-icd) <li> [Step-By-Step: Building Windows 10 Provisioning Packages](/archive/blogs/canitpro/step-by-step-building-windows-10-provisioning-packages)|
-|Group Policy|<li> [Core Network Companion Guide: Group Policy Deployment](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj899807(v=ws.11)) <li> [Deploying Group Policy](/previous-versions/windows/it-pro/windows-server-2003/cc737330(v=ws.10))"|
-|Configuration Manager| <li> [Site Administration for Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg681983(v=technet.10)) <li> [Deploying Clients for Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg699391(v=technet.10))|
-|Intune| <li> [Set up and manage devices with Microsoft Intune](https://go.microsoft.com/fwlink/p/?LinkId=690262) <li> [System Center 2012 R2 Configuration Manager &amp;amp; Windows Intune](/learn/?l=fCzIjVKy_6404984382)|
-|MDT| <li> [Step-By-Step: Installing Windows 8.1 From A USB Key](/archive/blogs/canitpro/step-by-step-installing-windows-8-1-from-a-usb-key)|
+- [Windows Autopilot](/mem/autopilot/windows-autopilot)
 
+- Microsoft Configuration Manager [core infrastructure documentation](/mem/configmgr/core/)
+
+- Provisioning packages:
+
+  - [Build and apply a provisioning package](/windows/configuration/provisioning-packages/provisioning-create-package)
+  - [Windows Imaging and Configuration Designer](/windows/configuration/provisioning-packages/provisioning-install-icd)
+  - [Step-By-Step: Building Windows 10 Provisioning Packages](/archive/blogs/canitpro/step-by-step-building-windows-10-provisioning-packages)
+
+- Group policy
+
+  - [Core Network Companion Guide: Group Policy Deployment](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj899807(v=ws.11))
+  - [Deploying Group Policy](/previous-versions/windows/it-pro/windows-server-2003/cc737330(v=ws.10))
+ 
 If you determined that no new management system or no remediation of existing systems is necessary, you can skip this section. If you use a management system from another vendor, refer to the vendor documentation on how to perform the necessary steps.
 
 ## <a href="" id="perform-app-migration-or-replacement-"></a>Perform app migration or replacement
@@ -494,20 +484,18 @@ If you determined that no new management system or no remediation of existing sy
 
 In the [Plan for app migration or replacement](#plan-app-migrate-replace) section, you identified the apps currently in use on Chromebook devices and selected the Windows apps that will replace the Chromebook apps. You also performed app compatibility testing for web apps to ensure that web apps on the Chromebook devices would run on Microsoft Edge and Internet Explorer.
 
-In this step, you need to configure your management system to deploy the apps to the appropriate Windows users and devices. Table 10 lists the Microsoft management systems and the app deployment resources for each. Use the resources in this table to configure these management systems to deploy the apps that you selected in the [Plan for app migration or replacement](#plan-app-migrate-replace) section of this guide.
+In this step, you need to configure your management system to deploy the apps to the appropriate Windows users and devices. Use the following Microsoft management systems and the app deployment resources to configure these management systems to deploy the apps that you selected in the [Plan for app migration or replacement](#plan-app-migrate-replace) section of this guide.
 
-Table 10. Management systems and app deployment resources
-
-|Management system|Resources|
-|--- |--- |
-|Group Policy| <li> [Editing an AppLocker Policy](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee791894(v=ws.10)) <li> [Group Policy Software Deployment Background](/previous-versions/windows/it-pro/windows-server-2003/cc739305(v=ws.10)) <li> [Assigning and Publishing Software](/previous-versions/windows/it-pro/windows-server-2003/cc783635(v=ws.10))|
-|Configuration Manager| <li> [How to Deploy Applications in Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682082(v=technet.10)) <li> [Application Management in Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg699373(v=technet.10))|
-|Intune| <li> [Manage apps with Microsoft Intune](/mem/intune/)|
+- [Manage apps in Microsoft Intune](/mem/intune/apps/)
+- [App management in Configuration Manager](/mem/configmgr/apps/)
+- Group policy
+  - [Edit an AppLocker policy](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee791894(v=ws.10))
+  - [Group policy software deployment background](/previous-versions/windows/it-pro/windows-server-2003/cc739305(v=ws.10))
+  - [Assigning and publishing software](/previous-versions/windows/it-pro/windows-server-2003/cc783635(v=ws.10))
 
 If you determined that no deployment of apps is necessary, you can skip this section. If you use a management system from another vendor, refer to the vendor documentation on how to perform the necessary steps.
 
 ## <a href="" id="migrate-user-device-settings"></a>Perform migration of user and device settings
-
 
 In the [Plan for migration of user and device settings](#plan-migrate-user-device-settings) section, you determined the user and device settings that you want to migrate. You selected settings that are configured in the Google Admin Console and locally on the Chromebook device.
 
@@ -534,7 +522,7 @@ Alternatively, if you want to migrate to Office 365 from:
 
 -   **On-premises Microsoft Exchange Server.** Use the following resources to migrate to Office 365 from an on-premises Microsoft Exchange Server:
 
-    -   [Cutover Exchange Migration and Single Sign-On](https://go.microsoft.com/fwlink/p/?LinkId=690266)
+    -   [What you need to know about a cutover email migration in Exchange Online](/exchange/mailbox-migration/what-to-know-about-a-cutover-migration)
 
     -   [Step-By-Step: Migration of Exchange 2003 Server to Office 365](/archive/blogs/canitpro/step-by-step-migration-of-exchange-2003-server-to-office-365)
 
@@ -543,7 +531,6 @@ Alternatively, if you want to migrate to Office 365 from:
 -   **Another on-premises or cloud-based email service.** Follow the guidance from that vendor.
 
 ## Perform cloud storage migration
-
 
 In the [Plan for cloud storage migration](#plan-cloud-storage-migration) section, you identified the cloud storage services currently in use, selected the Microsoft cloud storage services that you'll use, and optimized your cloud storage services migration plan. You can perform the cloud storage migration before or after you deploy the Windows devices.
 
@@ -577,15 +564,15 @@ In the [Select a Windows device deployment strategy](#select-windows-device-depl
 
 For example, if you selected to deploy Windows devices by each classroom, start with the first classroom and then proceed through all of the classrooms until you’ve deployed all Windows devices.
 
-In some instances, you may receive the devices with Windows 10 already deployed, and want to use provisioning packages. In other cases, you may have a custom Windows 10 image that you want to deploy to the devices by using Configuration Manager and/or MDT. For information on how to deploy Windows 10 images to the devices, see the following resources:
+In some instances, you may receive the devices with Windows 10 already deployed, and want to use provisioning packages. In other cases, you may have a custom Windows 10 image that you want to deploy to the devices by using Configuration Manager or MDT. For more information on how to deploy Windows 10 images to the devices, see the following resources:
+
+-   [OS deployment in Configuration Manager](/mem/configmgr/osd/)
 
 -   [Windows Imaging and Configuration Designer](/windows/configuration/provisioning-packages/provisioning-install-icd)
 
 -   [Build and apply a provisioning package](/windows/configuration/provisioning-packages/provisioning-create-package)
 
 -   [Step-By-Step: Installing Windows 8.1 From A USB Key](/archive/blogs/canitpro/step-by-step-installing-windows-8-1-from-a-usb-key)
-
--   [Operating System Deployment in Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682018(v=technet.10))
 
 In addition to the Windows 10 image deployment, you may need to perform the following tasks as a part of device deployment:
 
@@ -601,10 +588,6 @@ After you complete these steps, your management system should take over the day-
 
 ## Related topics
 
-
 [Try it out: Windows 10 deployment (for education)](../index.yml)
 
 [Try it out: Windows 10 in the classroom](../index.yml)
-
- 
-

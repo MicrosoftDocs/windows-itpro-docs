@@ -1,19 +1,22 @@
 ---
 title: What's new in Windows 10, version 21H1
 description: New and updated features in Windows 10, version 21H1 (also known as the Windows 10 May 2021 Update).
-ms.prod: w10
-author: aczechowski
-ms.author: aaroncz
-manager: dougeby
+ms.prod: windows-client
+author: mestew
+ms.author: mstewart
+manager: aaroncz
 ms.localizationpriority: high
 ms.topic: article
-ms.collection: highpri
+ms.collection:
+  - highpri
+  - tier2
+ms.technology: itpro-fundamentals
+ms.date: 12/31/2017
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10, version 21H1</a>
 ---
 
 # What's new in Windows 10, version 21H1 for IT Pros
-
-**Applies to**
--   Windows 10, version 21H1
 
 This article lists new and updated features and content that is of interest to IT Pros for Windows 10, version 21H1, also known as the **Windows 10 May 2021 Update**. This update also contains all features and fixes included in previous cumulative updates to Windows 10, version 20H2.
 
@@ -93,10 +96,10 @@ This release includes the following enhancements and issues fixed:
 - Windows Management Instrumentation (WMI) service caused a heap leak each time security settings are applied to WMI namespace permissions.
 - screen rendering after opening games with certain hardware configurations.
 - startup times for applications that have roaming settings when User Experience Virtualization (UE-V) is turned on.
-- a principal in a trusted MIT realm fails to obtain a Kerberos service ticket from Active Directory domain controllers (DC). This occurs on devices that installed Windows Updates that contain CVE-2020-17049 protections and configured PerfromTicketSignature to 1 or higher. These updates were released between November 10, 2020 and December 8, 2020. Ticket acquisition also fails with the error, “KRB_GENERIC_ERROR”, if callers submit a PAC-less Ticket Granting Ticket (TGT) as an evidence ticket without providing the USER_NO_AUTH_DATA_REQUIRED flag.
+- a principal in a trusted MIT realm fails to obtain a Kerberos service ticket from Active Directory domain controllers (DC). This occurs on devices that installed Windows Updates that contain CVE-2020-17049 protections and configured PerfromTicketSignature to 1 or higher. These updates were released between November 10, 2020 and December 8, 2020. Ticket acquisition also fails with the error, "KRB_GENERIC_ERROR", if callers submit a PAC-less Ticket Granting Ticket (TGT) as an evidence ticket without providing the USER_NO_AUTH_DATA_REQUIRED flag.
 - high memory and CPU utilization in Microsoft Defender for Endpoint.
 - We enhanced data loss prevention and insider risk management solution functionalities in Microsoft 365 endpoints.
-- an error when you attempt to open an untrusted webpage using Microsoft Edge or open an untrusted Microsoft Office document. The error is, “WDAG Report – Container: Error: 0x80070003, Ext error: 0x00000001”. This issue occurs after installing the .NET update KB4565627.
+- an error when you attempt to open an untrusted webpage using Microsoft Edge or open an untrusted Microsoft Office document. The error is, "WDAG Report - Container: Error: 0x80070003, Ext error: 0x00000001". This issue occurs after installing the .NET update KB4565627.
 - an issue that prevents wevtutil from parsing an XML file.
 - failure to report an error when the Elliptic Curve Digital Signature Algorithm (ECDSA) generates invalid keys of 163 bytes instead of 165 bytes.
 - We added support for using the new Chromium-based Microsoft Edge as the assigned access single kiosk app. Now, you can also customize a breakout key sequence for single app kiosks. For more information, see Configure Microsoft Edge kiosk mode.
@@ -130,7 +133,7 @@ This release includes the following enhancements and issues fixed:
 [Introducing the next feature update to Windows 10, version 21H1](https://blogs.windows.com/windowsexperience/2021/02/17/introducing-the-next-feature-update-to-windows-10-version-21h1/): Windows Experience Blog.<br>
 [What's New in Windows Server](/windows-server/get-started/whats-new-in-windows-server): New and updated features in Windows Server.<br>
 [Windows 10 Features](https://www.microsoft.com/windows/features): General information about Windows 10 features.<br>
-[What's New in Windows 10](./index.yml): See what’s new in other versions of Windows 10.<br>
-[Announcing more ways we’re making app development easier on Windows](https://blogs.windows.com/windowsdeveloper/2020/09/22/kevin-gallo-microsoft-ignite-2020/): Simplifying app development in Windows.<br>
-[Features and functionality removed in Windows 10](/windows/deployment/planning/windows-10-removed-features): Removed features.<br>
-[Windows 10 features we’re no longer developing](/windows/deployment/planning/windows-10-deprecated-features): Features that aren't being developed.<br>
+[What's New in Windows 10](./index.yml): See what's new in other versions of Windows 10.<br>
+[Announcing more ways we're making app development easier on Windows](https://blogs.windows.com/windowsdeveloper/2020/09/22/kevin-gallo-microsoft-ignite-2020/): Simplifying app development in Windows.<br>
+[Features and functionality removed in Windows 10](removed-features.md): Removed features.<br>
+[Windows 10 features we're no longer developing](deprecated-features.md): Features that aren't being developed.<br>

@@ -1,92 +1,92 @@
 ---
-title: Policy CSP - Desktop
-description: Learn how to use the Policy CSP - Desktop setting to prevent users from changing the path to their profile folders.
-ms.author: vinpa
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
+title: Desktop Policy CSP
+description: Learn more about the Desktop Area in Policy CSP.
 author: vinaypamnani-msft
-ms.localizationpriority: medium
-ms.date: 09/27/2019
-ms.reviewer: 
 manager: aaroncz
+ms.author: vinpa
+ms.date: 08/10/2023
+ms.localizationpriority: medium
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- Desktop-Begin -->
 # Policy CSP - Desktop
 
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
-<hr/>
+<!-- Desktop-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Desktop-Editable-End -->
 
-<!--Policies-->
-## Desktop policies  
+<!-- PreventUserRedirectionOfProfileFolders-Begin -->
+## PreventUserRedirectionOfProfileFolders
 
-<dl>
-  <dd>
-    <a href="#desktop-preventuserredirectionofprofilefolders">Desktop/PreventUserRedirectionOfProfileFolders</a>
-  </dd>
-</dl>
+<!-- PreventUserRedirectionOfProfileFolders-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- PreventUserRedirectionOfProfileFolders-Applicability-End -->
 
+<!-- PreventUserRedirectionOfProfileFolders-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/Desktop/PreventUserRedirectionOfProfileFolders
+```
+<!-- PreventUserRedirectionOfProfileFolders-OmaUri-End -->
 
-<hr/>
-
-<!--Policy-->
-<a href="" id="desktop-preventuserredirectionofprofilefolders"></a>**Desktop/PreventUserRedirectionOfProfileFolders**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting prevents users from changing the path to their profile folders.
+<!-- PreventUserRedirectionOfProfileFolders-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Prevents users from changing the path to their profile folders.
 
 By default, a user can change the location of their individual profile folders like Documents, Music etc. by typing a new path in the Locations tab of the folder's Properties dialog box.
 
 If you enable this setting, users are unable to type a new location in the Target box.
+<!-- PreventUserRedirectionOfProfileFolders-Description-End -->
 
-<!--/Description-->
+<!-- PreventUserRedirectionOfProfileFolders-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- PreventUserRedirectionOfProfileFolders-Editable-End -->
 
+<!-- PreventUserRedirectionOfProfileFolders-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Prohibit User from manually redirecting Profile Folders*
--   GP name: *DisablePersonalDirChange*
--   GP path: *Desktop*
--   GP ADMX file name: *desktop.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- PreventUserRedirectionOfProfileFolders-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- PreventUserRedirectionOfProfileFolders-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
+**ADMX mapping**:
 
+| Name | Value |
+|:--|:--|
+| Name | DisablePersonalDirChange |
+| Friendly Name | Prohibit User from manually redirecting Profile Folders |
+| Location | User Configuration |
+| Path | Desktop |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | DisablePersonalDirChange |
+| ADMX File Name | Desktop.admx |
+<!-- PreventUserRedirectionOfProfileFolders-AdmxBacked-End -->
 
-<!--/Policies-->
+<!-- PreventUserRedirectionOfProfileFolders-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- PreventUserRedirectionOfProfileFolders-Examples-End -->
 
-## Related topics
+<!-- PreventUserRedirectionOfProfileFolders-End -->
+
+<!-- Desktop-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- Desktop-CspMoreInfo-End -->
+
+<!-- Desktop-End -->
+
+## Related articles
 
 [Policy configuration service provider](policy-configuration-service-provider.md)

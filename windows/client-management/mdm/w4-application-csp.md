@@ -1,12 +1,12 @@
 ---
 title: w4 APPLICATION CSP
 description: Use an APPLICATION configuration service provider (CSP) that has an APPID of w4 to configure Multimedia Messaging Service (MMS).
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.topic: reference
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 06/26/2017
 ---
@@ -82,4 +82,4 @@ Optional. The maximum authorized size, in KB, for multimedia content. This param
 ## Related topics
 
 
-[Configuration service provider reference](configuration-service-provider-reference.md)
+[Configuration service provider reference](index.yml)

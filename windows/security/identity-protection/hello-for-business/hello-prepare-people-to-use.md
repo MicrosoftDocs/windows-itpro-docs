@@ -1,18 +1,8 @@
 ---
-title: Prepare people to use Windows Hello (Windows)
+title: Prepare people to use Windows Hello 
 description: When you set a policy to require Windows Hello for Business in the workplace, you will want to prepare people in your organization.
-ms.prod: m365-security
-author: paolomatarazzo
-ms.author: paoloma
-manager: aaroncz
-ms.reviewer: prsriva
-ms.collection: M365-identity-device-management
-ms.topic: article
-localizationpriority: medium
 ms.date: 08/19/2018
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
+ms.topic: end-user-help
 ---
 # Prepare people to use Windows Hello
 
@@ -23,6 +13,8 @@ After enrollment in Hello, users should use their gesture (such as a PIN or fing
 Although the organization may require users to change their Active Directory or Azure Active Directory (AD) account password at regular intervals, changes to their passwords have no effect on Hello.
 
 People who are currently using virtual or physical smart cards for authentication can use their virtual smart card to verify their identity when they set up Hello.
+
+[!INCLUDE [virtual-smart-card-deprecation-notice](../../includes/virtual-smart-card-deprecation-notice.md)]
 
 ## On devices owned by the organization
 
@@ -48,9 +40,7 @@ People can go to **Settings** &gt; **Accounts** &gt; **Work or school**, select 
 
 If your policy allows it, people can use biometrics (fingerprint, iris, and facial recognition) with Windows Hello for Business, if the hardware supports it.
 
-![sign in to windows, apps, and services using fingerprint or face.](images/hellosettings.png)
-
-
+:::image type="content" alt-text="This screenshot shows account sign-in options to windows, apps, and services using fingerprint or face." source="images/hellosettings.png":::
 
 ## Related topics
 
@@ -60,6 +50,6 @@ If your policy allows it, people can use biometrics (fingerprint, iris, and faci
 - [Why a PIN is better than a password](hello-why-pin-is-better-than-password.md)
 - [Windows Hello and password changes](hello-and-password-changes.md)
 - [Windows Hello errors during PIN creation](hello-errors-during-pin-creation.md)
-- [Event ID 300 - Windows Hello successfully created](hello-event-300.md)
+- [Event ID 300 - Windows Hello successfully created](/windows/security/identity-protection/hello-for-business/hello-faq)
 - [Windows Hello biometrics in the enterprise](hello-biometrics-in-enterprise.md)
 

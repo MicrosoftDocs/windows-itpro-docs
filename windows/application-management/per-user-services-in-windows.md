@@ -1,17 +1,21 @@
 ---
-title: Per-user services in Windows 10 and Windows Server
+title: Per-user services
 description: Learn about per-user services, how to change the template service Startup Type, and manage per-user services through Group Policy and security templates.
-ms.prod: w10
-author: nicholasswhite
-ms.author: nwhite
+author: aczechowski
+ms.author: aaroncz
 manager: aaroncz
 ms.date: 09/14/2017
-ms.reviewer: 
+ms.topic: how-to
+ms.prod: windows-client
+ms.technology: itpro-apps
+ms.localizationpriority: medium
+ms.collection: tier2
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server</a>
 ---
 
-# Per-user services in Windows 10 and Windows Server 
-
-> Applies to: Windows 10, Windows Server
+# Per-user services in Windows
 
 Per-user services are services that are created when a user signs into Windows or Windows Server and are stopped and deleted when that user signs out. These services run in the security context of the user account - this provides better resource management than the previous approach of running these kinds of services in Explorer, associated with a preconfigured account, or as tasks. 
 
@@ -73,9 +77,9 @@ In light of these restrictions, you can use the following methods to manage per-
 
 You can manage the CDPUserSvc and OneSyncSvc per-user services with a [security template](/windows/device-security/security-policy-settings/administer-security-policy-settings#bkmk-sectmpl). For more information, visit [Administer security policy settings](/windows/device-security/security-policy-settings/administer-security-policy-settings).
 
-For example: 
+For example:
 
-```
+```ini
 [Unicode]
 Unicode=yes
 [Version]
@@ -113,7 +117,7 @@ If a per-user service can't be disabled using the security template, you can dis
 
    ![Startup Type is Disabled.](media/gpp-svc-disabled.png)   
    
-9. To add the other services that can't be managed with a Group Policy templates, edit the policy and repeat steps 5-8.  
+9. To add the other services that can't be managed with Group Policy templates, edit the policy and repeat steps 5-8.  
 
 ### Managing Template Services with reg.exe
 
@@ -121,7 +125,7 @@ If you can't use Group Policy Preferences to manage the per-user services, you c
 To disable the Template Services, change the Startup Type for each service to 4 (disabled). 
 For example:
 
-```code
+```cmd
 REG.EXE ADD HKLM\System\CurrentControlSet\Services\CDPUserSvc /v Start /t REG_DWORD /d 4 /f
 REG.EXE ADD HKLM\System\CurrentControlSet\Services\OneSyncSvc /v Start /t REG_DWORD /d 4 /f
 REG.EXE ADD HKLM\System\CurrentControlSet\Services\PimIndexMaintenanceSvc /v Start /t REG_DWORD /d 4 /f
@@ -156,9 +160,10 @@ You can create a script to change the Startup Type for the per-user services. Th
 
 Sample script using [sc.exe](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc990290(v=ws.11)?f=255&MSPPError=-2147217396):
 
-```
+```cmd
 sc.exe configure <service name> start= disabled
 ```
+
 The space after "=" is intentional.
 
 Sample script using the [Set-Service PowerShell cmdlet](/previous-versions/windows/it-pro/windows-powershell-1.0/ee176963(v=technet.10)):

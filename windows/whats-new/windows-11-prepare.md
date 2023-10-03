@@ -1,21 +1,23 @@
 ---
 title: Prepare for Windows 11
 description: Prepare your infrastructure and tools to deploy Windows 11, IT Pro content.
-ms.prod: w11
-author: aczechowski
-ms.author: aaroncz
-manager: dougeby
+ms.prod: windows-client
+author: mestew
+ms.author: mstewart
+manager: aaroncz
 ms.localizationpriority: high
-ms.topic: article
-ms.collection: highpri
+ms.topic: conceptual
+ms.collection:
+  - highpri
+  - tier1
+ms.technology: itpro-fundamentals
+ms.date: 12/31/2017
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
 # Prepare for Windows 11
-
-**Applies to**
-
--   Windows 11
--   Windows 10
 
 Windows 10 and Windows 11 are designed to coexist, so that you can use the same familiar tools and process to manage both operating systems. Using a single management infrastructure that supports common applications across both Windows 10 and Windows 11 helps to simplify the migration process. You can analyze endpoints, determine application compatibility, and manage Windows 11 deployments in the same way that you do with Windows 10.
 
@@ -35,7 +37,7 @@ The tools that you use for core workloads during Windows 10 deployments can stil
   > [!NOTE]
   > During deployment, you will be prompted to agree to the Microsoft Software License Terms on behalf of your users. Additionally, you will not see an x86 option because Windows 11 is not supported on 32-bit architecture.
 
-- If you use [Microsoft Endpoint Configuration Manager](/mem/configmgr/), you can sync the new **Windows 11** product category and begin upgrading eligible devices. If you would like to validate Windows 11 prior to release, you can sync the **Windows Insider Pre-release** category as well.  
+- If you use [Microsoft Configuration Manager](/mem/configmgr/), you can sync the new **Windows 11** product category and begin upgrading eligible devices. If you would like to validate Windows 11 prior to release, you can sync the **Windows Insider Pre-release** category as well.  
 
   > [!NOTE]
   > Configuration Manager will prompt you to accept the Microsoft Software License Terms on behalf of the users in your organization. 
@@ -56,13 +58,13 @@ The tools that you use for core workloads during Windows 10 deployments can stil
 
 ## Cloud-based management
 
-If you aren’t already taking advantage of cloud-based management capabilities, like those available in [Microsoft Endpoint Manager](/mem/endpoint-manager-overview), it's worth considering. In addition to consolidating device management and endpoint security into a single platform, Microsoft Endpoint Manager can better support the diverse bring-your-own-device (BYOD) ecosystem that is increasingly the norm with hybrid work scenarios. It can also enable you to track your progress against compliance and business objectives, while protecting user privacy.  
+If you aren’t already taking advantage of cloud-based management capabilities, like those available in the [Microsoft Intune family of products](/mem/endpoint-manager-overview), it's worth considering. In addition to consolidating device management and endpoint security into a single platform, Microsoft Intune can better support the diverse bring-your-own-device (BYOD) ecosystem that is increasingly the norm with hybrid work scenarios. It can also enable you to track your progress against compliance and business objectives, while protecting user privacy.  
 
-The following are some common use cases and the corresponding Microsoft Endpoint Manager capabilities that support them: 
+The following are some common use cases and the corresponding Microsoft Intune capabilities that support them: 
 
 - **Provision and pre-configure new Windows 11 devices**: [Windows Autopilot](/mem/autopilot/windows-autopilot) enables you to deploy new Windows 11 devices in a “business-ready” state that includes your desired applications, settings, and policies. It can also be used to change the edition of Windows. For example, you can upgrade from Pro to Enterprise edition and gain the use of advanced features. The [Windows Autopilot diagnostics page](/mem/autopilot/windows-autopilot-whats-new#preview-windows-autopilot-diagnostics-page) is new feature that is available when you use in Windows Autopilot to deploy Windows 11.
 - **Configure rules and control settings for users, apps, and devices**: When you enroll devices in [Microsoft Intune](/mem/intune/fundamentals/what-is-intune), administrators have full control over apps, settings, features, and security for both Windows 11 and Windows 10. You can also use app protection policies to require multifactor authentication (MFA) for specific apps. 
-- **Streamline device management for frontline, remote, and onsite workers**: Introduced with Windows 10, [cloud configuration](/mem/intune/fundamentals/cloud-configuration) is a standard, easy-to-manage, device configuration that is cloud-optimized for users with specific workflow needs. It can be deployed to devices running the Pro, Enterprise, and Education editions of Windows 11 by using Microsoft Endpoint Manager. 
+- **Streamline device management for frontline, remote, and onsite workers**: Introduced with Windows 10, [cloud configuration](/mem/intune/fundamentals/cloud-configuration) is a standard, easy-to-manage, device configuration that is cloud-optimized for users with specific workflow needs. It can be deployed to devices running the Pro, Enterprise, and Education editions of Windows 11 by using Microsoft Intune. 
 
 If you're exclusively using an on-premises device management solution (for example, Configuration Manager), you can still use the [cloud management gateway](/mem/configmgr/core/clients/manage/cmg/overview), enable [tenant attach](/mem/configmgr/tenant-attach/device-sync-actions), or enable [co-management](/mem/configmgr/comanage/overview) with Microsoft Intune. These solutions can make it easier to keep devices secure and up-to-date. 
 
@@ -97,7 +99,7 @@ Regardless of the method you choose, you have the benefit of free Microsoft supp
 
 #### Analytics and assessment tools 
 
-If you use Microsoft Endpoint Manager and have onboarded devices to Endpoint analytics, you'll have access to a hardware readiness assessment later this year. This tool enables you to quickly identify which of your managed devices are eligible for the Windows 11 upgrade.
+If you use Microsoft Intune and have onboarded devices to Endpoint analytics, you'll have access to a hardware readiness assessment later this year. This tool enables you to quickly identify which of your managed devices are eligible for the Windows 11 upgrade.
 
 [Desktop Analytics](/mem/configmgr/desktop-analytics/overview) doesn't support Windows 11. You must use [Endpoint analytics](/mem/analytics/overview).
 
@@ -125,7 +127,7 @@ Don't overlook the importance of user readiness to deliver an effective, enterpr
 
 ## Learn more
 
-See the [Stay current with Windows 10 and Microsoft 365 Apps](/learn/paths/m365-stay-current/) learning path.
+See the [Stay current with Windows 10 and Microsoft 365 Apps](/training/paths/m365-stay-current/) learning path.
 
 - The learning path was created for Windows 10, but the basic principles and tasks outlined for the plan, prepare, and deploy phases also apply to your deployment of Windows 11.
 

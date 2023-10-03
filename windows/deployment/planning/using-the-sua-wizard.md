@@ -1,33 +1,31 @@
 ---
 title: Using the SUA wizard (Windows 10)
 description: The Standard User Analyzer (SUA) wizard, although it doesn't offer deep analysis, works much like the SUA tool to test for User Account Control (UAC) issues.
-ms.reviewer: 
-manager: dougeby
-ms.author: aaroncz
-ms.prod: w10
-author: aczechowski
-ms.date: 04/19/2017
+manager: aaroncz
+ms.author: frankroj
+ms.prod: windows-client
+author: frankroj
+ms.date: 10/28/2022
 ms.topic: article
+ms.technology: itpro-deploy
 ---
 
 # Using the SUA wizard
 
-
 **Applies to**
 
--   Windows 10
--   Windows 8.1
--   Windows 8
--   Windows 7
--   Windows Server 2012
--   Windows Server 2008 R2
+-   Windows 10
+-   Windows 8.1
+-   Windows 8
+-   Windows 7
+-   Windows Server 2012
+-   Windows Server 2008 R2
 
 The Standard User Analyzer (SUA) wizard works much like the SUA tool to evaluate User Account Control (UAC) issues. However, the SUA wizard doesn't offer detailed analysis, and it can't disable virtualization or elevate your permissions.
 
 For information about the SUA tool, see [Using the SUA Tool](using-the-sua-tool.md).
 
 ## Testing an Application by Using the SUA wizard
-
 
 Install Application Verifier before you can use the SUA wizard. If Application Verifier isn't installed on the computer that is running the SUA wizard, the SUA wizard notifies you. In addition, install the Microsoft® .NET Framework 3.5 or later before you can use the SUA wizard.
 
@@ -75,12 +73,3 @@ The following flowchart shows the process of using the SUA wizard.
 
 ## Related articles
 [SUA User's Guide](sua-users-guide.md)
-
- 
-
- 
-
-
-
-
-

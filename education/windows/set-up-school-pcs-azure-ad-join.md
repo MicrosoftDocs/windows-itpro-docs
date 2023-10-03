@@ -1,20 +1,10 @@
 ---
 title: Azure AD Join with Set up School PCs app
-description: Describes how Azure AD Join is configured in the Set up School PCs app.
-keywords: shared cart, shared PC, school, set up school pcs
-ms.prod: windows
-ms.mktglfcycl: plan
-ms.sitesec: library
-ms.pagetype: edu
-ms.localizationpriority: medium
-ms.collection: education
-author: paolomatarazzo
-ms.author: paoloma
+description: Learn how Azure AD Join is configured in the Set up School PCs app.
+ms.topic: reference
 ms.date: 08/10/2022
-ms.reviewer: 
-manager: aaroncz
 appliesto:
-- ✅ <b>Windows 10</b>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---  
 
 # Azure AD Join for school PCs  
@@ -27,8 +17,7 @@ appliesto:
 Set up School PCs lets you create a provisioning package that automates Azure AD
 Join on your devices. This feature eliminates the need to manually:
 
--   Connect to your school’s network.
-
+-   Connect to your school's network.
 -   Join your organization's domain.
 
 ## Automated connection to school domain  
@@ -37,8 +26,8 @@ During initial device setup, Azure AD Join automatically connects your PCs to yo
 
 Students who sign in to their PCs with their Azure AD credentials get access to on-premises apps and the following cloud apps:
 * Office 365
-* OneDrive 
-* OneNote.
+* OneDrive
+* OneNote
 
 ## Enable Azure AD Join  
 
@@ -51,7 +40,7 @@ Active Directory** \> **Devices** \> **Device settings**.
 for Azure AD by selecting **All** or **Selected**. If you choose the latter
 option, select the teachers and IT staff to allow them to connect to Azure AD.  
 
-![Select the users you want to let join devices to Azure AD.](images/suspc-enable-shared-pc-1807.png)  
+![Select the users you want to let join devices to Azure AD.](images/suspcs/suspc-enable-shared-pc-1807.png)  
 
 You can also create an account that holds the exclusive rights to join devices. When a student PC has to be set up, provide the account credentials to the appropriate teachers or staff.
 
@@ -73,7 +62,7 @@ The following table describes each setting within **Device Settings**.
 Your Intune tenant can only have 500 active Azure AD tokens, or packages, at a time. You'll receive a notification in the Intune portal when you reach 500 active tokens.
 
 To reduce your inventory, clear out all unnecessary and inactive tokens.
-1. Go to **Azure Active Directory** \> **Users** \> **All users**  
+1. Go to **Azure Active Directory** > **Users** > **All users**  
 2. In the **User Name** column, select and delete all accounts with a **package\ _**
 prefix. These accounts are created at a 1:1 ratio for every token and are safe
 to delete.   
@@ -82,18 +71,12 @@ to delete.
 ### How do I know if my package expired?
 Automated Azure AD tokens expire after 180 days. The expiration date for each token is appended to the end of the saved provisioning package, on the USB drive. After this date, you must create a new package. Be careful that you don't delete active accounts.  
 
-![Screenshot of the Azure portal, Azure Active Directory, All Users page. Highlights all accounts that start with the prefix package_ and can be deleted.](images/suspc-admin-token-delete-1807.png)  
+![Screenshot of the Azure portal, Azure Active Directory, All Users page. Highlights all accounts that start with the prefix package_ and can be deleted.](images/suspcs/suspc-admin-token-delete-1807.png)  
 
 ## Next steps    
 Learn more about setting up devices with the Set up School PCs app.  
 * [What's in my provisioning package?](set-up-school-pcs-provisioning-package.md)
-* [Shared PC mode for schools](set-up-school-pcs-shared-pc-mode.md)
 * [Set up School PCs technical reference](set-up-school-pcs-technical.md)
 * [Set up Windows 10 devices for education](set-up-windows-10.md) 
 
 When you're ready to create and apply your provisioning package, see [Use Set up School PCs app](use-set-up-school-pcs-app.md).
-
-
-
-
-

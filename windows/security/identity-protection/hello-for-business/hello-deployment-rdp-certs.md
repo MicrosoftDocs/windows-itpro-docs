@@ -1,203 +1,174 @@
 ---
-title: Deploying Certificates to Key Trust Users to Enable RDP
-description: Learn how to deploy certificates to a Key Trust user to enable remote desktop with supplied credentials
-ms.prod: m365-security
-author: paolomatarazzo
-ms.author: paoloma
-manager: aaroncz
-ms.reviewer: prsriva
-ms.collection: M365-identity-device-management
-ms.topic: article
-localizationpriority: medium
-ms.date: 02/22/2021
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
-- ✅ <b>Hybrid deployment</b>
-- ✅ <b>Key trust</b>
+title: Deploy certificates for remote desktop sign-in
+description: Learn how to deploy certificates to cloud Kerberos trust and key trust users, to enable remote desktop sign-in with supplied credentials.
+ms.collection: 
+  - tier1
+ms.topic: how-to
+ms.date: 07/25/2023
 ---
 
-# Deploying Certificates to Key Trust Users to Enable RDP
+# Deploy certificates for remote desktop (RDP) sign-in
 
-Windows Hello for Business supports using a certificate as the supplied credential when establishing a remote desktop connection to a server or other device. For certificate trust deployments, creation of this certificate occurs at container creation time.
+This document describes Windows Hello for Business functionalities or scenarios that apply to:
+- **Deployment type:** [!INCLUDE [hybrid](./includes/hello-deployment-hybrid.md)]
+- **Trust type:** [!INCLUDE [cloud-kerberos](./includes/hello-trust-cloud-kerberos.md)], [!INCLUDE [key](./includes/hello-trust-key.md)]
+- **Join type:** [!INCLUDE [hello-join-aadj](./includes/hello-join-aad.md)], [!INCLUDE [hello-join-hybrid](./includes/hello-join-hybrid.md)]
+---
 
-This document discusses an approach for key trust deployments where authentication certificates can be deployed to an existing key trust user.
+Windows Hello for Business supports using a certificate as the supplied credential, when establishing a remote desktop connection to another Windows device. This document discusses three approaches for *cloud Kerberos trust* and *key trust* deployments, where authentication certificates can be deployed to an existing Windows Hello for Business user:
 
-Three approaches are documented here:
+- Deploy certificates to hybrid joined devices using an on-premises Active Directory Certificate Services enrollment policy
+- Deploy certificates to hybrid or Azure AD-joined devices using Intune
+- Work with third-party PKIs
 
-1. Deploying a certificate to hybrid joined devices using an on-premises Active Directory certificate enrollment policy.
+## Deploy certificates via Active Directory Certificate Services (AD CS)
 
-1. Deploying a certificate to hybrid or Azure AD-joined devices using Simple Certificate Enrollment Protocol (SCEP) and Intune.
+> [!NOTE]
+> This process is applicable to *hybrid Azure AD joined* devices only.
 
-1. Working with non-Microsoft enterprise certificate authorities.
-
-## Deploying a certificate to a hybrid joined device using an on-premises Active Directory Certificate enrollment policy
+To deploy certificates using an on-premises Active Directory Certificate Services enrollment policy, you must first create a *certificate template*, and then deploy certificates based on that template.
 
 ### Create a Windows Hello for Business certificate template
 
-1. Sign in to your issuing certificate authority (CA).
+Follow these steps to create a certificate template:
 
-1. Open the **Certificate Authority** Console (%windir%\system32\certsrv.msc).
+1. Sign in to your issuing certificate authority (CA) and open *Server Manager*
+1. Select **Tools > Certification Authority**. The Certification Authority Microsoft Management Console (MMC) opens
+1. In the MMC, expand the CA name and right-click **Certificate Templates > Manage**
+1. The Certificate Templates console opens. All of the certificate templates are displayed in the details pane
+1. Right-click the **Smartcard Logon** template and select **Duplicate Template**
+1. Use the following table to configure the template:
 
-1. In the left pane of the MMC, expand **Certification Authority (Local)**, and then expand your CA within the Certification Authority list.
+    | Tab Name | Configurations |
+    | --- | --- |
+    | *Compatibility* | <ul><li>Clear the **Show resulting changes** check box</li><li>Select **Windows Server 2012 or Windows Server 2012 R2** from the *Certification Authority list*</li><li>Select **Windows Server 2012 or Windows Server 2012 R2** from the *Certification Recipient list*</li></ul>|
+    | *General* | <ul><li>Specify a **Template display name**, for example *WHfB Certificate Authentication*</li><li>Set the validity period to the desired value</li><li>Take note of the Template name for later, which should be the same as the Template display name minus spaces (*WHfBCertificateAuthentication* in this example)</li></ul>|
+    | *Extensions* | Verify the **Application Policies** extension includes **Smart Card Logon**|
+    | *Subject Name* | <ul><li> Select the **Build from this Active Directory** information button if it isn't already selected</li><li>Select **Fully distinguished name** from the **Subject name format** list if Fully distinguished name isn't already selected</li><li>Select the **User Principal Name (UPN)** check box under **Include this information in alternative subject name**</li></ul><br>**Note:** If you deploy certificates via Intune, select **Supply in the request** instead of *Build from this Active Directory*.|
+    |*Request Handling*|<ul><li>Set the Purpose to **Signature and smartcard logon** and select **Yes** when prompted to change the certificate purpose</li><li>Select the **Renew with same key** check box</li><li>Select **Prompt the user during enrollment**</li></ul>|
+    |*Cryptography*|<ul><li>Set the Provider Category to **Key Storage Provider**</li><li>Set the Algorithm name to **RSA**</li><li>Set the minimum key size to **2048**</li><li>Select **Requests must use one of the following providers**</li><li>Select **Microsoft Software Key Storage Provider**</li><li>Set the Request hash to **SHA256**</li></ul>|
+    |*Security*|Add the security group that you want to give **Enroll** access to. For example, if you want to give access to all users, select the **Authenticated** users group, and then select Enroll permissions for them|
 
-1. Right-click **Certificate Templates** and then click **Manage** to open the **Certificate Templates** console.
+1. Select **OK** to finalize your changes and create the new template. Your new template should now appear in the list of Certificate Templates
+1. Close the Certificate Templates console
+1. Open an elevated command prompt and change to a temporary working directory
+1. Execute the following command, replacing `<TemplateName>` with the **Template display name** noted above
 
-1. Right-click the **Smartcard Logon** template and click **Duplicate Template**
-
-    ![Duplicating Smartcard Template.](images/rdpcert/duplicatetemplate.png)
-
-1. On the **Compatibility** tab:
-    1. Clear the **Show resulting changes** check box
-    1. Select **Windows Server 2012 or Windows Server 2012 R2** from the Certification Authority list
-    1. Select **Windows Server 2012 or Windows Server 2012 R2** from the Certification Recipient list
-
-1. On the **General** tab:
-    1. Specify a Template display name, such as **WHfB Certificate Authentication**
-    1. Set the validity period to the desired value
-    1. Take note of the Template name for later, which should be the same as the Template display name minus spaces (**WHfBCertificateAuthentication** in this example).
-
-1. On the **Extensions** tab, verify the **Application Policies** extension includes **Smart Card Logon**.
-
-1. On the **Subject Name** tab:
-    1. Select the **Build from this Active Directory** information button if it is not already selected
-    1. Select **Fully distinguished name** from the **Subject name format** list if Fully distinguished name is not already selected
-    1. Select the **User Principal Name (UPN)** check box under **Include this information in alternative subject name**
-1. On the **Request Handling** tab:
-    1. Select the **Renew with same key** check box
-    1. Set the Purpose to **Signature and smartcard logon**
-        1. Click **Yes** when prompted to change the certificate purpose
-    1. Click **Prompt the user during enrollment**
-
-1. On the **Cryptography** tab:
-    1. Set the Provider Category to **Key Storage Provider**
-    1. Set the Algorithm name to **RSA**
-    1. Set the minimum key size to **2048**
-    1. Select **Requests must use one of the following providers**
-    1. Tick **Microsoft Software Key Storage Provider**
-    1. Set the Request hash to **SHA256**
-
-1. On the **Security** tab, add the security group that you want to give **Enroll** access to. For example, if you want to give access to all users, select the **Authenticated** users group, and then select Enroll permissions for them  .
-
-1. Click **OK** to finalize your changes and create the new template. Your new template should now appear in the list of Certificate Templates.
-
-1. Close the Certificate Templates console.
-
-1. Open an elevated command prompt and change to a temporary working directory.
-
-1. Execute the following command:
-
-    certutil -dstemplate \<TemplateName\> \> \<TemplateName\>.txt
-
-    Replace \<TemplateName\> with the Template name you took note of earlier in step 7.
+    ```cmd
+    certutil.exe -dstemplate <TemplateName> > <TemplateName.txt>
+    ```
 
 1. Open the text file created by the command above.
-    1. Delete the last line of the output from the file that reads **CertUtil: -dsTemplate command completed successfully.**
-    1. Modify the line that reads **pKIDefaultCSPs = "1,Microsoft Software Key Storage Provider"** to **pKIDefaultCSPs = "1,Microsoft Passport Key Storage Provider"**
-
-1. Save the text file.
-
+    - Delete the last line of the output from the file that reads\
+      `CertUtil: -dsTemplate command completed successfully.`
+    - Modify the line that reads\
+      `pKIDefaultCSPs = "1,Microsoft Software Key Storage Provider"` to\
+      `pKIDefaultCSPs = "1,Microsoft Passport Key Storage Provider"`
+1. Save the text file
 1. Update the certificate template by executing the following command:
 
-    certutil -dsaddtemplate \<TemplateName\>.txt
+    ```cmd
+    certutil.exe -dsaddtemplate <TemplateName.txt>
+    ```
 
-1. In the Certificate Authority console, right-click **Certificate Templates**, select **New**, and select **Certificate Template to Issue**
+1. In the Certificate Authority console, right-click **Certificate Templates**, select **New > Certificate Template to Issue**
+1. From the list of templates, select the template you previously created (**WHFB Certificate Authentication**) and select **OK**. It can take some time for the template to replicate to all servers and become available in this list
+1. After the template replicates, in the MMC, right-click in the Certification Authority list, select **All Tasks > Stop Service**. Right-click the name of the CA again, select **All Tasks > Start Service**
 
-    ![Selecting Certificate Template to Issue.](images/rdpcert/certificatetemplatetoissue.png)
+### Request a certificate
 
-1. From the list of templates, select the template you previously created (**WHFB Certificate Authentication**) and click **OK**. It can take some time for the template to replicate to all servers and become available in this list.
+1. Sign in to a client that is hybrid Azure AD joined, ensuring that the client has line of sight to a domain controller and the issuing CA
+1. Open the **Certificates - Current User** Microsoft Management Console (MMC). To do so, you can execute the command `certmgr.msc`
+1. In the left pane of the MMC, right-click **Personal > All Tasks > Request New Certificate…**
+1. On the Certificate Enrollment screen, select **Next**
+1. Under *Select Certificate Enrollment Policy*, select **Active Directory Enrollment Policy > Next**
+1. Under *Request Certificates*, select the check-box for the certificate template you created in the previous section (*WHfB Certificate Authentication*) and then select **Enroll**
+1. After a successful certificate request, select **Finish** on the Certificate Installation Results screen
 
-1. After the template replicates, in the MMC, right-click in the Certification Authority list, click **All Tasks** and then click **Stop Service**. Right-click the name of the CA again, click **All Tasks**, and then click **Start Service**.
+## Deploy certificates via Intune
 
-### Requesting a Certificate
+> [!CAUTION]
+> This process is applicable to both *Azure AD joined* and *hybrid Azure AD joined* devices that are managed via Intune.
+>
+> If you deploy certificates via Intune and configure Windows Hello for Business via group policy, the devices will fail to obtain a certificate, logging the error code `0x82ab0011` in the `DeviceManagement-Enterprise-Diagnostic-Provider` log.\
+> To avoid the error, configure Windows Hello for Business via Intune instead of group policy.
 
-1. Ensure the hybrid Azure AD joined device has network line of sight to Active Directory domain controllers and the issuing certificate authority. 
+Deploying a certificate to Azure AD joined or hybrid Azure AD joined devices may be achieved using the Simple Certificate Enrollment Protocol (SCEP) or PKCS (PFX) via Intune. For guidance deploying the required infrastructure, refer to:
 
-1. Start the **Certificates – Current User** console (%windir%\system32\certmgr.msc).
+- [Configure infrastructure to support SCEP certificate profiles with Microsoft Intune][MEM-1]
+- [Configure and use PKCS certificates with Intune][MEM-2]
 
-1. In the left pane of the MMC, right-click **Personal**, click **All Tasks**, and then click **Request New Certificate…**
+Next, you should deploy the root CA certificate (and any other intermediate certificate authority certificates) to Azure AD joined Devices using a *Trusted root certificate* policy with Intune. For guidance, refer to [Create trusted certificate profiles in Microsoft Intune][MEM-5].
 
-    ![Request a new certificate.](images/rdpcert/requestnewcertificate.png)
+Once these requirements are met, a policy can be configured in Intune that provisions certificates for the users on the targeted device.
 
-1. On the Certificate Enrollment screen, click **Next**.
+### Create a policy in Intune
 
-1. Under Select Certificate Enrollment Policy, ensure **Active Directory Enrollment Policy** is selected and then click **Next**.
+This section describes how to configure a SCEP policy in Intune. Similar steps can be followed to configure a PKCS policy.
 
-1. Under Request Certificates, click the check-box next to the certificate template you created in the previous section (WHfB Certificate Authentication) and then click **Enroll**.
+1. Go to the <a href="https://go.microsoft.com/fwlink/?linkid=2109431" target="_blank"><b>Microsoft Intune admin center</b></a>
+1. Select **Devices > Configuration profiles > Create profile**
+1. Select **Platform > Windows 10 and later** and **Profile type > Templates > SCEP Certificate**
+1. Select **Create**
+1. In the *Basics* panel, provide a **Name** and, optionally, a **Description > Next**
+1. In the *Configuration settings* panel, use the following table to configure the policy:
 
-1. After a successful certificate request, click Finish on the Certificate Installation Results screen
+    | Setting| Configurations |
+    | --- | --- |
+    |*Certificate Type*| User |
+    |*Subject name format* | `CN={{UserPrincipalName}}` |
+    |*Subject alternative name* |From the dropdown, select **User principal name (UPN)** with a value of `{{UserPrincipalName}}`
+    |*Certificate validity period* | Configure a value of your choosing|
+    |*Key storage provider (KSP)* | **Enroll to Windows Hello for Business, otherwise fail (Windows 10 and later)**
+    |*Key usage*| **Digital Signature**|
+    |*Key size (bits)* | **2048**|
+    |*For Hash algorithm*|**SHA-2**|
+    |*Root Certificate*| Select **+Root Certificate** and select the trusted certificate profile created earlier for the Root CA Certificate|
+    |*Extended key usage*| <ul><li>*Name:* **Smart Card Logon**</li><li>*Object Identifier:* `1.3.6.1.4.1.311.20.2.2`</li><li>*Predefined Values:* **Not configured**</li><br><li>*Name:* **Client Authentication**</li><li>*Object Identifier:* `1.3.6.1.5.5.7.3.2 `</li><li>*Predefined Values:* **Client Authentication**</li></ul>|
+    |*Renewal threshold (%)*|Configure a value of your choosing|
+    |*SCEP Server URLs*|Provide the public endpoint(s) that you configured during the deployment of your SCEP infrastructure|
 
-## Deploying a certificate to Hybrid or Azure AD Joined Devices using Simple Certificate Enrollment Protocol (SCEP) via Intune
+1. Select **Next**
+1. In the *Assignments* panel, assign the policy to a security group that contains as members the devices or users that you want to configure and select **Next**
+1. In the *Applicability Rules* panel, configure issuance restrictions, if needed, and select **Next**
+1. In the *Review + create* panel, review the policy configuration and select **Create**
 
-Deploying a certificate to Azure AD Joined Devices may be achieved with the Simple Certificate Enrollment Protocol (SCEP) via Intune. For guidance deploying the required infrastructure, refer to [Configure infrastructure to support SCEP certificate profiles with Microsoft Intune](/mem/intune/protect/certificates-scep-configure).
+For more information how to configure SCEP policies, see [Configure SCEP certificate profiles in Intune][MEM-3].
+To configure PKCS policies, see [Configure and use PKCS certificate with Intune][MEM-4].
 
-Next you should deploy the root CA certificate (and any other intermediate certificate authority certificates) to Azure AD Joined Devices using a Trusted root certificate profile with Intune. For guidance, refer to [Create trusted certificate profiles in Microsoft Intune](/mem/intune/protect/certificates-trusted-root).
+### Request a certificate for Intune clients
 
-Once these requirements have been met, a new device configuration profile may be configured from Intune that provisions a certificate for the user of the device. Proceed as follows:
+Once the Intune policy is created, targeted clients will request a certificate during their next policy refresh cycle. To validate that the certificate is present in the user store, follow these steps:
 
-1. Sign in to the Microsoft [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
-
-1. Navigate to Devices \> Configuration Profiles \> Create profile.
-
-1. Enter the following properties:
-    1. For Platform, select **Windows 10 and later**.
-    1. For Profile, select **SCEP Certificate**.
-    1. Click **Create**.
-
-1. In **Basics**, enter the following parameters:
-    1. **Name**: Enter a descriptive name for the profile. Name your profiles so you can easily identify them later. For example, a good profile name is SCEP profile for entire company.
-    1. **Description**: Enter a description for the profile. This setting is optional, but recommended.
-    1. Select **Next**.
-
-1. In the **Configuration settings**, complete the following:
-    1. For Certificate Type, choose **User**.
-    1. For Subject name format, set it to **CN={{UserPrincipalName}}**.
-    1. Under Subject alternative name, select **User principal name (UPN)** from the drop-down menu and set the value to **CN={{UserPrincipalName}}**.
-    1. For Certificate validity period, set a value of your choosing.
-    1. For Key storage provider (KSP), choose **Enroll to Windows Hello for Business, otherwise fail (Windows 10 and later)**.
-    1. For Key usage, choose **Digital Signature**.
-    1. For Key size (bits), choose **2048**.
-    1. For Hash algorithm, choose **SHA-2**.
-    1. Under Root Certificate, click **+Root Certificate** and select the trusted certificate profile you created earlier for the Root CA Certificate.
-    1. Under Extended key usage, add the following:
-
-        | Name | Object Identifier | Predefined Values |
-        |------|-------------------|-------------------|
-        | Smart Card Logon | 1.3.6.1.4.1.311.20.2.2 | Smart Card Logon |
-        | Client Authentication | 1.3.6.1.5.5.7.3.2 | Client Authentication |
-
-    1. For Renewal threshold (%), set a value of your choosing.
-    1. For SCEP Server URLs, provide the public endpoint that you configured during the deployment of your SCEP infrastructure.
-    1. Click **Next**
-1. In Assignments, target the devices or users who should receive a certificate and click **Next**
-
-1. In Applicability Rules, provide additional issuance restrictions if required and click **Next**
-
-1. In Review + create, click **Create**
-
-Once the configuration profile has been created, targeted clients will receive the profile from Intune on their next refresh cycle. You should find a new certificate in the user store. To validate the certificate is present, do the following steps:
-
-1. Open the Certificates - Current User console (%windir%\system32\certmgr.msc)
-
+1. Sign in to a client targeted by the Intune policy
+1. Open the **Certificates - Current User** Microsoft Management Console (MMC). To do so, you can execute the command `certmgr.msc`
 1. In the left pane of the MMC, expand **Personal** and select **Certificates**
-
 1. In the right-hand pane of the MMC, check for the new certificate
 
+## Use third-party certification authorities
+
+If you're using a non-Microsoft PKI, the certificate templates published to the on-premises Active Directory may not be available. For guidance with integration of Intune/SCEP with non-Microsoft PKI deployments, refer to [Use third-party certification authorities (CA) with SCEP in Microsoft Intune][MEM-6].
+
+As an alternative to using SCEP or if none of the previously covered solutions will work in your environment, you can manually generate Certificate Signing Requests (CSR) for submission to your PKI. To assist with this approach, you can use the [Generate-CertificateRequest][HTTP-1] PowerShell commandlet.
+
+The `Generate-CertificateRequest` commandlet will generate an *.inf* file for a pre-existing Windows Hello for Business key. The *.inf* can be used to generate a certificate request manually using `certreq.exe`. The commandlet will also generate a *.req* file, which can be submitted to your PKI for a certificate.
+
+## RDP sign-in with Windows Hello for Business certificate authentication
+
+After obtaining a certificate, users can RDP to any Windows devices in the same Active Directory forest as the user's Active Directory account.
+
 > [!NOTE]
-> This infrastructure may also deploy the same certificates to co-managed or modern-managed Hybrid Azure Active Directory-Joined devices using Intune Policies.
+> The certificate chain of the issuing CA must be trusted by the target server.
 
-## Using non-Microsoft Enterprise Certificate Authorities
+1. Open the Remote Desktop Client (`mstsc.exe`) on the client where the authentication certificate has been deployed
+1. Attempt an RDP session to a target server
+1. Use the certificate credential protected by your Windows Hello for Business gesture to authenticate
 
-If you are using a Public Key Infrastructure that uses non-Microsoft services, the certificate templates published to the on-premises Active Directory may not be available. For guidance with integration of Intune/SCEP with non-Microsoft PKI deployments, refer to [Use third-party certification authorities (CA) with SCEP in Microsoft Intune](/mem/intune/protect/certificate-authority-add-scep-overview).
+[MEM-1]: /mem/intune/protect/certificates-scep-configure
+[MEM-2]: /mem/intune/protect/certificates-pfx-configure
+[MEM-3]: /mem/intune/protect/certificates-profile-scep
+[MEM-4]: /mem/intune/protect/certificates-pfx-configure
+[MEM-5]: /mem/intune/protect/certificates-trusted-root
+[MEM-6]: /mem/intune/protect/certificate-authority-add-scep-overview
 
-As an alternative to using SCEP or if none of the previously covered solutions will work in your environment, you can manually generate Certificate Signing Requests (CSR) for submission to your PKI. To assist with this approach, you can use the [Generate-CertificateRequest](https://www.powershellgallery.com/packages/Generate-CertificateRequest) PowerShell commandlet.
-
-The Generate-CertificateRequest commandlet will generate an .inf file for a pre-existing Windows Hello for Business key. The .inf can be used to generate a certificate request manually using certreq.exe. The commandlet will also generate a .req file, which can be submitted to your PKI for a certificate.
-
-## RDP Sign-in with Windows Hello for Business Certificate Authentication
-
-After adding the certificate using an approach from any of the previous sections, you should be able to RDP to any Windows device or server in the same Forest as the user’s on-premises Active Directory account, provided the PKI certificate chain for the issuing certificate authority is deployed to that target server.
-
-1. Open the Remote Desktop Client (%windir%\system32\mstsc.exe) on the Hybrid Azure Active Directory-Joined client where the authentication certificate has been deployed.
-1. Attempt an RDP session to a target server.
-1. Use the certificate credential protected by your Windows Hello for Business gesture.
+[HTTP-1]: https://www.powershellgallery.com/packages/Generate-CertificateRequest

@@ -1,18 +1,19 @@
 ---
-title: Audit Registry (Windows 10)
+title: Audit Registry 
 description: The Advanced Security Audit policy setting, Audit Registry, determines if audit events are generated when users attempt to access registry objects.
 ms.assetid: 02bcc23b-4823-46ac-b822-67beedf56b32
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
-author: dansimp
+ms.localizationpriority: low
+author: vinaypamnani-msft
 ms.date: 01/05/2021
-ms.technology: windows-sec
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # Audit Registry

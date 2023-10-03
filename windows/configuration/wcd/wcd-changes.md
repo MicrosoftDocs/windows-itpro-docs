@@ -1,13 +1,16 @@
 ---
 title: Changes to settings in Windows Configuration Designer (Windows 10)
 ms.reviewer: 
-manager: dougeby
+manager: aaroncz
 description: This section describes the changes to settings in Windows Configuration Designer in Windows 10, version 1809.
-ms.prod: w10
+ms.prod: windows-client
 author: aczechowski
 ms.localizationpriority: medium
 ms.author: aaroncz
-ms.topic: article
+ms.topic: reference
+ms.collection: must-keep
+ms.technology: itpro-configure
+ms.date: 12/31/2017
 ---
 
 # Changes to settings in Windows Configuration Designer

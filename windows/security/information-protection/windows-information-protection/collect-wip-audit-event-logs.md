@@ -1,12 +1,9 @@
 ---
-title: How to collect Windows Information Protection (WIP) audit event logs (Windows 10)
+title: How to collect Windows Information Protection (WIP) audit event logs 
 description: How to collect & understand Windows Information Protection audit event logs via the Reporting configuration service provider (CSP) or Windows Event Forwarding.
-ms.prod: m365-security
-ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
-manager: dansimp
-ms.collection: M365-security-compliance
+author: aczechowski
+ms.author: aaroncz
+manager: aaroncz
 ms.topic: conceptual
 ms.date: 02/26/2019
 ms.reviewer: 
@@ -27,7 +24,7 @@ Windows Information Protection (WIP) creates audit events in the following situa
 - If an app has custom audit events.
 
 ## Collect WIP audit logs by using the Reporting configuration service provider (CSP)
-Collect the WIP audit logs from your employee’s devices by following the guidance provided by the [Reporting configuration service provider (CSP)](/windows/client-management/mdm/reporting-csp) documentation. This topic provides info about the actual audit events.
+Collect the WIP audit logs from your employee's devices by following the guidance provided by the [Reporting configuration service provider (CSP)](/windows/client-management/mdm/reporting-csp) documentation. This topic provides info about the actual audit events.
 
 >[!Note]
 >The **Data** element in the response includes the requested audit logs in an XML-encoded format.
@@ -53,12 +50,12 @@ This table includes all available attributes/elements for the **Log** element. T
 |Object |String |A description of the shared work data. For example, if an employee opens a work file by using a personal app, this would be the file path. |
 |DataInfo |String |Any additional info about how the work file changed:<ul><li>**A file path.** If an employee uploads a work file to a personal website by using Microsoft Edge or Internet Explorer, the file path is included here.</li><li>**Clipboard data types.** If an employee pastes work data into a personal app, the list of clipboard data types provided by the work app are included here. For more info, see the [Examples](#examples) section of this topic.</li></ul> |
 |Action |Int |Provides info about what happened when the work data was shared to personal, including:<ul><li>**1.** File decrypt.</li><li>**2.** Copy to location.</li><li>**3.** Send to recipient.</li><li>**4.** Other.</li></ul> |
-|FilePath |String |The file path to the file specified in the audit event. For example, the location of a file that’s been decrypted by an employee or uploaded to a personal website. |
+|FilePath |String |The file path to the file specified in the audit event. For example, the location of a file that's been decrypted by an employee or uploaded to a personal website. |
 |SourceApplicationName |String |The source app or website. For the source app, this is the AppLocker identity. For the source website, this is the hostname. |
-|SourceName |String |A string provided by the app that’s logging the event. It’s intended to describe the source of the work data. |
-|DestinationEnterpriseID |String |The enterprise ID value for the app or website where the employee is sharing the data.<br><br>**NULL**, **Personal**, or **blank** means there’s no enterprise ID because the work data was shared to a personal location. Because we don’t currently support multiple enrollments, you’ll always see one of these values. |
+|SourceName |String |A string provided by the app that's logging the event. It's intended to describe the source of the work data. |
+|DestinationEnterpriseID |String |The enterprise ID value for the app or website where the employee is sharing the data.<br><br>**NULL**, **Personal**, or **blank** means there's no enterprise ID because the work data was shared to a personal location. Because we don't currently support multiple enrollments, you'll always see one of these values. |
 |DestinationApplicationName |String |The destination app or website. For the destination app, this is the AppLocker identity. For the destination website, this is the hostname. |
-|DestinationName |String |A string provided by the app that’s logging the event. It’s intended to describe the destination of the work data. |
+|DestinationName |String |A string provided by the app that's logging the event. It's intended to describe the destination of the work data. |
 |Application |String |The AppLocker identity for the app where the audit event happened. |
 
 ### Examples
@@ -127,10 +124,10 @@ Here are a few examples of responses from the Reporting CSP.
       <Justification></Justification>
       <Object>C:\Users\TestUser\Desktop\tmp\demo\Work document.docx</Object>
       <Action>1</Action>
-      <SourceName>O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US\MICROSOFT® WINDOWS® OPERATING SYSTEM\WORDPAD.EXE\10.0.15063.2</SourceName>
+      <SourceName>O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US\MICROSOFT&reg; WINDOWS&reg; OPERATING SYSTEM\WORDPAD.EXE\10.0.15063.2</SourceName>
       <DestinationEnterpriseID>Personal</DestinationEnterpriseID>
-      <DestinationName>O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US\MICROSOFT® WINDOWS® OPERATING SYSTEM\WORDPAD.EXE\10.0.15063.2</DestinationName>
-      <Application>O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US\MICROSOFT® WINDOWS® OPERATING SYSTEM\WORDPAD.EXE\10.0.15063.2</Application>
+      <DestinationName>O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US\MICROSOFT&reg; WINDOWS&reg; OPERATING SYSTEM\WORDPAD.EXE\10.0.15063.2</DestinationName>
+      <Application>O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US\MICROSOFT&reg; WINDOWS&reg; OPERATING SYSTEM\WORDPAD.EXE\10.0.15063.2</Application>
     </Log>
   </User>
 </Reporting></Data></Item></Results><Final/></SyncBody></SyncML>
@@ -185,22 +182,22 @@ You can collect audit logs using Azure Monitor. See [Windows event log data sour
 
 4.  To get MSI for Intune installation as stated in the Azure Monitor article, extract: `MMASetup-.exe /c /t:`
 
-	Install Microsoft Monitoring Agent to WIP devices using Workspace ID and Primary key. More information on Workspace ID and Primary key can be found in **Log Analytics** > **Advanced Settings**.
+    Install Microsoft Monitoring Agent to WIP devices using Workspace ID and Primary key. More information on Workspace ID and Primary key can be found in **Log Analytics** > **Advanced Settings**.
 
 5.  To deploy MSI via Intune, in installation parameters add: `/q /norestart NOAPM=1 ADD_OPINSIGHTS_WORKSPACE=1 OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE=0 OPINSIGHTS_WORKSPACE_ID=<WORKSPACE_ID> OPINSIGHTS_WORKSPACE_KEY=<WORKSPACE_KEY> AcceptEndUserLicenseAgreement=1`
 
-	>[!NOTE]
-	>Replace <WORKSPACE_ID> & <WORKSPACE_KEY> received from step 5. In installation parameters, don't place <WORKSPACE_ID> & <WORKSPACE_KEY> in quotes ("" or '').
+    >[!NOTE]
+    >Replace <WORKSPACE_ID> & <WORKSPACE_KEY> received from step 5. In installation parameters, don't place <WORKSPACE_ID> & <WORKSPACE_KEY> in quotes ("" or '').
 
 6. After the agent is deployed, data will be received within approximately 10 minutes.
 
 7. To search for logs, go to **Log Analytics workspace** > **Logs**, and type **Event** in search.
 
-	***Example***
+    ***Example***
 
-	```console
-	Event | where EventLog == "Microsoft-Windows-EDP-Audit-TCB/Admin"
-	```
+    ```console
+    Event | where EventLog == "Microsoft-Windows-EDP-Audit-TCB/Admin"
+    ```
 
 ## Additional resources
 -   [How to deploy app via Intune](/intune/apps-add)

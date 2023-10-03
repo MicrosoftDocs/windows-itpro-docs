@@ -1,26 +1,26 @@
 ---
-title: Increase a process working set (Windows 10)
+title: Increase a process working set 
 description: Describes the best practices, location, values, policy management, and security considerations for the Increase a process working set security policy setting.
 ms.assetid: b742ad96-37f3-4686-b8f7-f2b48367105b
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Increase a process working set
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management, and security considerations for the **Increase a process working set** security policy setting.

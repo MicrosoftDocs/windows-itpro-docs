@@ -1,14 +1,15 @@
 ---
 title: What's new in Windows 10, version 1703
 description: New and updated features in Windows 10, version 1703 (also known as the Creators Updated).
-ms.prod: w10
+ms.prod: windows-client
 ms.localizationpriority: medium
-ms.reviewer: 
-author: aczechowski
-manager: dougeby
-ms.author: aaroncz
+author: mestew
+manager: aaroncz
+ms.author: mstewart
 ms.topic: article
 ROBOTS: NOINDEX
+ms.technology: itpro-fundamentals
+ms.date: 12/31/2017
 ---
 
 # What's new in Windows 10, version 1703 for IT Pros
@@ -18,7 +19,7 @@ Below is a list of some of what's new in Information Technology (IT) pro feature
 For more general info about Windows 10 features, see [Features available only on Windows 10](https://www.microsoft.com/windows/features). For info about previous versions of Windows 10, see [What's New in Windows 10](./index.yml). Also see this blog post: [What’s new for IT pros in the Windows 10 Creators Update}(https://blogs.technet.microsoft.com/windowsitpro/2017/04/05/whats-new-for-it-pros-in-the-windows-10-creators-update/).
 
 >[!NOTE]
->Windows 10, version 1703 contains all fixes included in previous cumulative updates to Windows 10, version 1607. For info about each version, see [Windows 10 release information](https://technet.microsoft.com/windows/release-info). For a list of removed features, see [Features that are removed or deprecated in Windows 10 Creators Update](/windows/deployment/planning/windows-10-removed-features).
+>Windows 10, version 1703 contains all fixes included in previous cumulative updates to Windows 10, version 1607. For info about each version, see [Windows 10 release information](https://technet.microsoft.com/windows/release-info). For a list of removed features, see [Features that are removed in Windows 10 Creators Update](removed-features.md).
 
 ## Configuration
 
@@ -181,7 +182,7 @@ We recently added the option to download Windows 10 Insider Preview builds using
 
 ### Optimize update delivery
 
-With changes delivered in Windows 10, version 1703, [express updates](/windows/deployment/do/waas-optimize-windows-10-updates#express-update-delivery) are now fully supported with Microsoft Endpoint Configuration Manager, starting with version 1702 of Configuration Manager, and with other third-party updating and management products that [implement this new functionality](/windows-server/administration/windows-server-update-services/deploy/express-update-delivery-isv-support). This support is in addition to current Express support on Windows Update, Windows Update for Business and WSUS.
+With changes delivered in Windows 10, version 1703, [express updates](/windows/deployment/do/waas-optimize-windows-10-updates#express-update-delivery) are now fully supported with Microsoft Configuration Manager, starting with version 1702 of Configuration Manager, and with other third-party updating and management products that [implement this new functionality](/windows-server/administration/windows-server-update-services/deploy/express-update-delivery-isv-support). This support is in addition to current Express support on Windows Update, Windows Update for Business and WSUS.
 
 >[!NOTE]
 > The above changes can be made available to Windows 10, version 1607, by installing the April 2017 cumulative update.
@@ -211,7 +212,7 @@ Windows 10, version 1703 adds many new [configuration service providers (CSPs)](
 
 Some of the other new CSPs are:
 
-- The [DynamicManagement CSP](/windows/client-management/mdm/dynamicmanagement-csp) allows you to manage devices differently depending on location, network, or time. For example, managed devices can have cameras disabled when at a work location, the cellular service can be disabled when outside the country to avoid roaming charges, or the wireless network can be disabled when the device isn't within the corporate building or campus. Once configured, these settings will be enforced even if the device can’t reach the management server when the location or network changes. The Dynamic Management CSP enables configuration of policies that change how the device is managed in addition to setting the conditions on which the change occurs.
+- The [DynamicManagement CSP](/windows/client-management/mdm/dynamicmanagement-csp) allows you to manage devices differently depending on location, network, or time. For example, managed devices can have cameras disabled when at a work location, the cellular service can be disabled when outside the country/region to avoid roaming charges, or the wireless network can be disabled when the device isn't within the corporate building or campus. Once configured, these settings will be enforced even if the device can’t reach the management server when the location or network changes. The Dynamic Management CSP enables configuration of policies that change how the device is managed in addition to setting the conditions on which the change occurs.
 
 - The [CleanPC CSP](/windows/client-management/mdm/cleanpc-csp) allows removal of user-installed and pre-installed applications, with the option to persist user data.
 

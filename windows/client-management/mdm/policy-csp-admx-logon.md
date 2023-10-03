@@ -1,867 +1,1012 @@
 ---
-title: Policy CSP - ADMX_Logon
-description: Learn about Policy CSP - ADMX_Logon.
-ms.author: vinpa
-ms.localizationpriority: medium
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
+title: ADMX_Logon Policy CSP
+description: Learn more about the ADMX_Logon Area in Policy CSP.
 author: vinaypamnani-msft
-ms.date: 12/21/2020
-ms.reviewer: 
 manager: aaroncz
+ms.author: vinpa
+ms.date: 08/10/2023
+ms.localizationpriority: medium
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ADMX_Logon-Begin -->
 # Policy CSP - ADMX_Logon
 
->[!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
-<hr/>
+<!-- ADMX_Logon-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ADMX_Logon-Editable-End -->
 
-<!--Policies-->
-## ADMX_Logon policies  
+<!-- BlockUserFromShowingAccountDetailsOnSignin-Begin -->
+## BlockUserFromShowingAccountDetailsOnSignin
 
-<dl>
-  <dd>
-    <a href="#admx-logon-blockuserfromshowingaccountdetailsonsignin">ADMX_Logon/BlockUserFromShowingAccountDetailsOnSignin</a>
-  </dd>
-  <dd>
-    <a href="#admx-logon-disableacrylicbackgroundonlogon">ADMX_Logon/DisableAcrylicBackgroundOnLogon</a>
-  </dd>
-  <dd>
-    <a href="#admx-logon-disableexplorerrunlegacy-1">ADMX_Logon/DisableExplorerRunLegacy_1</a>
-  </dd>
-  <dd>
-    <a href="#admx-logon-disableexplorerrunlegacy-2">ADMX_Logon/DisableExplorerRunLegacy_2</a>
-  </dd>
-  <dd>
-    <a href="#admx-logon-disableexplorerrunoncelegacy-1">ADMX_Logon/DisableExplorerRunOnceLegacy_1</a>
-  </dd>
-  <dd>
-    <a href="#admx-logon-disableexplorerrunoncelegacy-2">ADMX_Logon/DisableExplorerRunOnceLegacy_2</a>
-  </dd>
-  <dd>
-    <a href="#admx-logon-disablestatusmessages">ADMX_Logon/DisableStatusMessages</a>
-  </dd>
-  <dd>
-    <a href="#admx-logon-dontenumerateconnectedusers">ADMX_Logon/DontEnumerateConnectedUsers</a>
-  </dd>
-  <dd>
-    <a href="#admx-logon-nowelcometips-1">ADMX_Logon/NoWelcomeTips_1</a>
-  </dd>
-  <dd>
-    <a href="#admx-logon-nowelcometips-2">ADMX_Logon/NoWelcomeTips_2</a>
-  </dd>
-  <dd>
-    <a href="#admx-logon-run-1">ADMX_Logon/Run_1</a>
-  </dd>
-  <dd>
-    <a href="#admx-logon-run-2">ADMX_Logon/Run_2</a>
-  </dd>
-  <dd>
-    <a href="#admx-logon-syncforegroundpolicy">ADMX_Logon/SyncForegroundPolicy</a>
-  </dd>
-  <dd>
-    <a href="#admx-logon-useoembackground">ADMX_Logon/UseOEMBackground</a>
-  </dd>
-  <dd>
-    <a href="#admx-logon-verbosestatus">ADMX_Logon/VerboseStatus</a>
-  </dd>
-</dl>
+<!-- BlockUserFromShowingAccountDetailsOnSignin-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- BlockUserFromShowingAccountDetailsOnSignin-Applicability-End -->
 
+<!-- BlockUserFromShowingAccountDetailsOnSignin-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Logon/BlockUserFromShowingAccountDetailsOnSignin
+```
+<!-- BlockUserFromShowingAccountDetailsOnSignin-OmaUri-End -->
 
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-logon-blockuserfromshowingaccountdetailsonsignin"></a>**ADMX_Logon/BlockUserFromShowingAccountDetailsOnSignin**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- BlockUserFromShowingAccountDetailsOnSignin-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy prevents the user from showing account details (email address or user name) on the sign-in screen.
 
-If you enable this policy setting, the user can't choose to show account details on the sign-in screen.
+- If you enable this policy setting, the user can't choose to show account details on the sign-in screen.
 
-If you disable or don't configure this policy setting, the user may choose to show account details on the sign-in screen.
+- If you disable or don't configure this policy setting, the user may choose to show account details on the sign-in screen.
+<!-- BlockUserFromShowingAccountDetailsOnSignin-Description-End -->
 
-<!--/Description-->
+<!-- BlockUserFromShowingAccountDetailsOnSignin-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- BlockUserFromShowingAccountDetailsOnSignin-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Block user from showing account details on sign-in*
--   GP name: *BlockUserFromShowingAccountDetailsOnSignin*
--   GP path: *System\Logon*
--   GP ADMX file name: *Logon.admx*
+<!-- BlockUserFromShowingAccountDetailsOnSignin-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- BlockUserFromShowingAccountDetailsOnSignin-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-logon-disableacrylicbackgroundonlogon"></a>**ADMX_Logon/DisableAcrylicBackgroundOnLogon**  
+<!-- BlockUserFromShowingAccountDetailsOnSignin-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | BlockUserFromShowingAccountDetailsOnSignin |
+| Friendly Name | Block user from showing account details on sign-in |
+| Location | Computer Configuration |
+| Path | System > Logon |
+| Registry Key Name | Software\Policies\Microsoft\Windows\System |
+| Registry Value Name | BlockUserFromShowingAccountDetailsOnSignin |
+| ADMX File Name | Logon.admx |
+<!-- BlockUserFromShowingAccountDetailsOnSignin-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- BlockUserFromShowingAccountDetailsOnSignin-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- BlockUserFromShowingAccountDetailsOnSignin-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- BlockUserFromShowingAccountDetailsOnSignin-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- DisableAcrylicBackgroundOnLogon-Begin -->
+## DisableAcrylicBackgroundOnLogon
 
-<hr/>
+<!-- DisableAcrylicBackgroundOnLogon-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DisableAcrylicBackgroundOnLogon-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- DisableAcrylicBackgroundOnLogon-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Logon/DisableAcrylicBackgroundOnLogon
+```
+<!-- DisableAcrylicBackgroundOnLogon-OmaUri-End -->
+
+<!-- DisableAcrylicBackgroundOnLogon-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting disables the acrylic blur effect on logon background image.
 
-If you enable this policy, the logon background image shows without blur.
+- If you enable this policy, the logon background image shows without blur.
 
-If you disable or don't configure this policy, the logon background image adopts the acrylic blur effect.
+- If you disable or don't configure this policy, the logon background image adopts the acrylic blur effect.
+<!-- DisableAcrylicBackgroundOnLogon-Description-End -->
 
-<!--/Description-->
+<!-- DisableAcrylicBackgroundOnLogon-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableAcrylicBackgroundOnLogon-Editable-End -->
 
+<!-- DisableAcrylicBackgroundOnLogon-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Show clear logon background*
--   GP name: *DisableAcrylicBackgroundOnLogon*
--   GP path: *System\Logon*
--   GP ADMX file name: *Logon.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisableAcrylicBackgroundOnLogon-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- DisableAcrylicBackgroundOnLogon-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-logon-disableexplorerrunlegacy-1"></a>**ADMX_Logon/DisableExplorerRunLegacy_1**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | DisableAcrylicBackgroundOnLogon |
+| Friendly Name | Show clear logon background |
+| Location | Computer Configuration |
+| Path | System > Logon |
+| Registry Key Name | Software\Policies\Microsoft\Windows\System |
+| Registry Value Name | DisableAcrylicBackgroundOnLogon |
+| ADMX File Name | Logon.admx |
+<!-- DisableAcrylicBackgroundOnLogon-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- DisableAcrylicBackgroundOnLogon-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableAcrylicBackgroundOnLogon-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DisableAcrylicBackgroundOnLogon-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DisableExplorerRunLegacy_1-Begin -->
+## DisableExplorerRunLegacy_1
 
-> [!div class = "checklist"]
-> * User
+<!-- DisableExplorerRunLegacy_1-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DisableExplorerRunLegacy_1-Applicability-End -->
 
-<hr/>
+<!-- DisableExplorerRunLegacy_1-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Logon/DisableExplorerRunLegacy_1
+```
+<!-- DisableExplorerRunLegacy_1-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- DisableExplorerRunLegacy_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting ignores the customized run list.
 
-These programs are added to the standard run list of programs and services that the system starts.
+You can create a customized list of additional programs and documents that the system starts automatically when it runs on Windows Vista, Windows XP Professional, and Windows 2000 Professional. These programs are added to the standard run list of programs and services that the system starts.
+
+- If you enable this policy setting, the system ignores the run list for Windows Vista, Windows XP Professional, and Windows 2000 Professional.
+
+- If you disable or don't configure this policy setting, Windows Vista adds any customized run list configured to its run list.
 
 This policy setting appears in the Computer Configuration and User Configuration folders. If both policy settings are configured, the policy setting in Computer Configuration takes precedence over the policy setting in User Configuration.
 
 > [!NOTE]
-> To create a customized run list by using a policy setting, use the "Run these applications at startup" policy setting.  Also, see the "Do not process the run once list" policy setting.
+> To create a customized run list by using a policy setting, use the "Run these applications at startup" policy setting.
 
-<!--/Description-->
+Also, see the "Do not process the run once list" policy setting.
+<!-- DisableExplorerRunLegacy_1-Description-End -->
 
+<!-- DisableExplorerRunLegacy_1-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableExplorerRunLegacy_1-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Do not process the legacy run list*
--   GP name: *DisableExplorerRunLegacy_1*
--   GP path: *System\Logon*
--   GP ADMX file name: *Logon.admx*
+<!-- DisableExplorerRunLegacy_1-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisableExplorerRunLegacy_1-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-logon-disableexplorerrunlegacy-2"></a>**ADMX_Logon/DisableExplorerRunLegacy_2**  
+<!-- DisableExplorerRunLegacy_1-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | DisableExplorerRunLegacy_1 |
+| Friendly Name | Do not process the legacy run list |
+| Location | User Configuration |
+| Path | System > Logon |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | DisableCurrentUserRun |
+| ADMX File Name | Logon.admx |
+<!-- DisableExplorerRunLegacy_1-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DisableExplorerRunLegacy_1-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableExplorerRunLegacy_1-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DisableExplorerRunLegacy_1-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- DisableExplorerRunLegacy_2-Begin -->
+## DisableExplorerRunLegacy_2
 
-<hr/>
+<!-- DisableExplorerRunLegacy_2-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DisableExplorerRunLegacy_2-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- DisableExplorerRunLegacy_2-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Logon/DisableExplorerRunLegacy_2
+```
+<!-- DisableExplorerRunLegacy_2-OmaUri-End -->
+
+<!-- DisableExplorerRunLegacy_2-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting ignores the customized run list.
 
-These programs are added to the standard run list of programs and services that the system starts.
+You can create a customized list of additional programs and documents that the system starts automatically when it runs on Windows Vista, Windows XP Professional, and Windows 2000 Professional. These programs are added to the standard run list of programs and services that the system starts.
+
+- If you enable this policy setting, the system ignores the run list for Windows Vista, Windows XP Professional, and Windows 2000 Professional.
+
+- If you disable or don't configure this policy setting, Windows Vista adds any customized run list configured to its run list.
 
 This policy setting appears in the Computer Configuration and User Configuration folders. If both policy settings are configured, the policy setting in Computer Configuration takes precedence over the policy setting in User Configuration.
 
 > [!NOTE]
-> To create a customized run list by using a policy setting, use the "Run these applications at startup" policy setting.  Also, see the "Do not process the run once list" policy setting.
+> To create a customized run list by using a policy setting, use the "Run these applications at startup" policy setting.
 
-<!--/Description-->
+Also, see the "Do not process the run once list" policy setting.
+<!-- DisableExplorerRunLegacy_2-Description-End -->
 
+<!-- DisableExplorerRunLegacy_2-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableExplorerRunLegacy_2-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Do not process the legacy run list*
--   GP name: *DisableExplorerRunLegacy_2*
--   GP path: *System\Logon*
--   GP ADMX file name: *Logon.admx*
+<!-- DisableExplorerRunLegacy_2-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisableExplorerRunLegacy_2-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-logon-disableexplorerrunoncelegacy-1"></a>**ADMX_Logon/DisableExplorerRunOnceLegacy_1**  
+<!-- DisableExplorerRunLegacy_2-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | DisableExplorerRunLegacy_2 |
+| Friendly Name | Do not process the legacy run list |
+| Location | Computer Configuration |
+| Path | System > Logon |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | DisableLocalMachineRun |
+| ADMX File Name | Logon.admx |
+<!-- DisableExplorerRunLegacy_2-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DisableExplorerRunLegacy_2-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableExplorerRunLegacy_2-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DisableExplorerRunLegacy_2-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- DisableExplorerRunOnceLegacy_1-Begin -->
+## DisableExplorerRunOnceLegacy_1
 
-<hr/>
+<!-- DisableExplorerRunOnceLegacy_1-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DisableExplorerRunOnceLegacy_1-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- DisableExplorerRunOnceLegacy_1-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Logon/DisableExplorerRunOnceLegacy_1
+```
+<!-- DisableExplorerRunOnceLegacy_1-OmaUri-End -->
+
+<!-- DisableExplorerRunOnceLegacy_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting ignores customized run-once lists.
 
-You can create a customized list of other programs and documents that are started automatically the next time the system starts (but not thereafter). These programs are added to the standard list of programs and services that the system starts.
+You can create a customized list of additional programs and documents that are started automatically the next time the system starts (but not thereafter). These programs are added to the standard list of programs and services that the system starts.
 
-If you enable this policy setting, the system ignores the run-once list.
+- If you enable this policy setting, the system ignores the run-once list.
 
-If you disable or don't configure this policy setting, the system runs the programs in the run-once list.
+- If you disable or don't configure this policy setting, the system runs the programs in the run-once list.
 
 This policy setting appears in the Computer Configuration and User Configuration folders. If both policy settings are configured, the policy setting in Computer Configuration takes precedence over the policy setting in User Configuration.
 
 > [!NOTE]
-> Customized run-once lists are stored in the registry in HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\RunOnce. Also, see the "Do not process the legacy run list" policy setting.
+> Customized run-once lists are stored in the registry in HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\RunOnce.
 
-<!--/Description-->
+Also, see the "Do not process the legacy run list" policy setting.
+<!-- DisableExplorerRunOnceLegacy_1-Description-End -->
 
+<!-- DisableExplorerRunOnceLegacy_1-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableExplorerRunOnceLegacy_1-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Do not process the run once list*
--   GP name: *DisableExplorerRunOnceLegacy_1*
--   GP path: *System\Logon*
--   GP ADMX file name: *Logon.admx*
+<!-- DisableExplorerRunOnceLegacy_1-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisableExplorerRunOnceLegacy_1-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-logon-disableexplorerrunoncelegacy-2"></a>**ADMX_Logon/DisableExplorerRunOnceLegacy_2**  
+<!-- DisableExplorerRunOnceLegacy_1-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | DisableExplorerRunOnceLegacy_1 |
+| Friendly Name | Do not process the run once list |
+| Location | User Configuration |
+| Path | System > Logon |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | DisableCurrentUserRunOnce |
+| ADMX File Name | Logon.admx |
+<!-- DisableExplorerRunOnceLegacy_1-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DisableExplorerRunOnceLegacy_1-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableExplorerRunOnceLegacy_1-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DisableExplorerRunOnceLegacy_1-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- DisableExplorerRunOnceLegacy_2-Begin -->
+## DisableExplorerRunOnceLegacy_2
 
-<hr/>
+<!-- DisableExplorerRunOnceLegacy_2-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DisableExplorerRunOnceLegacy_2-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- DisableExplorerRunOnceLegacy_2-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Logon/DisableExplorerRunOnceLegacy_2
+```
+<!-- DisableExplorerRunOnceLegacy_2-OmaUri-End -->
+
+<!-- DisableExplorerRunOnceLegacy_2-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting ignores customized run-once lists.
 
-You can create a customized list of other programs and documents that are started automatically the next time the system starts (but not thereafter). These programs are added to the standard list of programs and services that the system starts.
+You can create a customized list of additional programs and documents that are started automatically the next time the system starts (but not thereafter). These programs are added to the standard list of programs and services that the system starts.
 
-If you enable this policy setting, the system ignores the run-once list.
+- If you enable this policy setting, the system ignores the run-once list.
 
-If you disable or don't configure this policy setting, the system runs the programs in the run-once list.
+- If you disable or don't configure this policy setting, the system runs the programs in the run-once list.
 
 This policy setting appears in the Computer Configuration and User Configuration folders. If both policy settings are configured, the policy setting in Computer Configuration takes precedence over the policy setting in User Configuration.
 
 > [!NOTE]
-> Customized run-once lists are stored in the registry in HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\RunOnce. Also, see the "Do not process the legacy run list" policy setting.
+> Customized run-once lists are stored in the registry in HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\RunOnce.
 
-<!--/Description-->
+Also, see the "Do not process the legacy run list" policy setting.
+<!-- DisableExplorerRunOnceLegacy_2-Description-End -->
 
+<!-- DisableExplorerRunOnceLegacy_2-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableExplorerRunOnceLegacy_2-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Do not process the run once list*
--   GP name: *DisableExplorerRunOnceLegacy_2*
--   GP path: *System\Logon*
--   GP ADMX file name: *Logon.admx*
+<!-- DisableExplorerRunOnceLegacy_2-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisableExplorerRunOnceLegacy_2-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-logon-disablestatusmessages"></a>**ADMX_Logon/DisableStatusMessages**  
+<!-- DisableExplorerRunOnceLegacy_2-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | DisableExplorerRunOnceLegacy_2 |
+| Friendly Name | Do not process the run once list |
+| Location | Computer Configuration |
+| Path | System > Logon |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | DisableLocalMachineRunOnce |
+| ADMX File Name | Logon.admx |
+<!-- DisableExplorerRunOnceLegacy_2-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DisableExplorerRunOnceLegacy_2-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableExplorerRunOnceLegacy_2-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DisableExplorerRunOnceLegacy_2-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- DisableStatusMessages-Begin -->
+## DisableStatusMessages
 
-<hr/>
+<!-- DisableStatusMessages-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DisableStatusMessages-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- DisableStatusMessages-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Logon/DisableStatusMessages
+```
+<!-- DisableStatusMessages-OmaUri-End -->
+
+<!-- DisableStatusMessages-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting suppresses system status messages.
 
-If you enable this setting, the system doesn't display a message reminding users to wait while their system starts or shuts down, or while users sign in or sign out.
+- If you enable this setting, the system doesn't display a message reminding users to wait while their system starts or shuts down, or while users log on or off.
 
-If you disable or don't configure this policy setting, the system displays the message reminding users to wait while their system starts or shuts down, or while users sign in or sign out.
+- If you disable or don't configure this policy setting, the system displays the message reminding users to wait while their system starts or shuts down, or while users log on or off.
+<!-- DisableStatusMessages-Description-End -->
 
-<!--/Description-->
+<!-- DisableStatusMessages-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableStatusMessages-Editable-End -->
 
+<!-- DisableStatusMessages-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Remove Boot / Shutdown / Logon / Logoff status messages*
--   GP name: *DisableStatusMessages*
--   GP path: *System*
--   GP ADMX file name: *Logon.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisableStatusMessages-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- DisableStatusMessages-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-logon-dontenumerateconnectedusers"></a>**ADMX_Logon/DontEnumerateConnectedUsers**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | DisableStatusMessages |
+| Friendly Name | Remove Boot / Shutdown / Logon / Logoff status messages |
+| Location | Computer Configuration |
+| Path | System |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\System |
+| Registry Value Name | DisableStatusMessages |
+| ADMX File Name | Logon.admx |
+<!-- DisableStatusMessages-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- DisableStatusMessages-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableStatusMessages-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DisableStatusMessages-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DontEnumerateConnectedUsers-Begin -->
+## DontEnumerateConnectedUsers
 
-> [!div class = "checklist"]
-> * Device
+<!-- DontEnumerateConnectedUsers-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DontEnumerateConnectedUsers-Applicability-End -->
 
-<hr/>
+<!-- DontEnumerateConnectedUsers-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Logon/DontEnumerateConnectedUsers
+```
+<!-- DontEnumerateConnectedUsers-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- DontEnumerateConnectedUsers-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting prevents connected users from being enumerated on domain-joined computers.
 
-If you enable this policy setting, the Logon UI won't enumerate any connected users on domain-joined computers.
+- If you enable this policy setting, the Logon UI won't enumerate any connected users on domain-joined computers.
 
-If you disable or don't configure this policy setting, connected users will be enumerated on domain-joined computers.
+- If you disable or don't configure this policy setting, connected users will be enumerated on domain-joined computers.
+<!-- DontEnumerateConnectedUsers-Description-End -->
 
-<!--/Description-->
+<!-- DontEnumerateConnectedUsers-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DontEnumerateConnectedUsers-Editable-End -->
 
+<!-- DontEnumerateConnectedUsers-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Do not enumerate connected users on domain-joined computers*
--   GP name: *DontEnumerateConnectedUsers*
--   GP path: *System\Logon*
--   GP ADMX file name: *Logon.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DontEnumerateConnectedUsers-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- DontEnumerateConnectedUsers-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-logon-nowelcometips-1"></a>**ADMX_Logon/NoWelcomeTips_1**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | DontEnumerateConnectedUsers |
+| Friendly Name | Do not enumerate connected users on domain-joined computers |
+| Location | Computer Configuration |
+| Path | System > Logon |
+| Registry Key Name | Software\Policies\Microsoft\Windows\System |
+| Registry Value Name | DontEnumerateConnectedUsers |
+| ADMX File Name | Logon.admx |
+<!-- DontEnumerateConnectedUsers-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- DontEnumerateConnectedUsers-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DontEnumerateConnectedUsers-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DontEnumerateConnectedUsers-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoWelcomeTips_1-Begin -->
+## NoWelcomeTips_1
 
-> [!div class = "checklist"]
-> * User
+<!-- NoWelcomeTips_1-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoWelcomeTips_1-Applicability-End -->
 
-<hr/>
+<!-- NoWelcomeTips_1-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Logon/NoWelcomeTips_1
+```
+<!-- NoWelcomeTips_1-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting hides the welcome screen that is displayed on Windows each time the user logs on.
+<!-- NoWelcomeTips_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting hides the welcome screen that's displayed on Windows 2000 Professional each time the user logs on.
 
-If you enable this policy setting, the welcome screen is hidden from the user logging on to a computer where this policy is applied.
+- If you enable this policy setting, the welcome screen is hidden from the user logging on to a computer where this policy is applied.
 
 Users can still display the welcome screen by selecting it on the Start menu or by typing "Welcome" in the Run dialog box.
 
-If you disable or don't configure this policy, the welcome screen is displayed each time a user signs in to the computer.
+- If you disable or don't configure this policy, the welcome screen is displayed each time a user logs on to the computer.
 
-This setting applies only to Windows. It doesn't affect the "Configure Your Server on a Windows Server" screen on Windows Server.
+This setting applies only to Windows 2000 Professional. It doesn't affect the "Configure Your Server on a Windows 2000 Server" screen on Windows 2000 Server.
 
 > [!NOTE]
 > This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the setting in Computer Configuration takes precedence over the setting in User Configuration.
 
 > [!TIP]
-> To display the welcome screen, click Start, point to Programs, point to Accessories, point to System Tools, and then click "Getting Started." To suppress the welcome screen without specifying a setting, clear the "Show this screen at startup" check box on the welcome screen.
+> To display the welcome screen, click Start, point to Programs, point to Accessories, point to System Tools, and then click "Getting Started". To suppress the welcome screen without specifying a setting, clear the "Show this screen at startup" check box on the welcome screen.
+<!-- NoWelcomeTips_1-Description-End -->
 
-<!--/Description-->
+<!-- NoWelcomeTips_1-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoWelcomeTips_1-Editable-End -->
 
+<!-- NoWelcomeTips_1-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Do not display the Getting Started welcome screen at logon*
--   GP name: *NoWelcomeTips_1*
--   GP path: *System*
--   GP ADMX file name: *Logon.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoWelcomeTips_1-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+<!-- NoWelcomeTips_1-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<hr/>
+**ADMX mapping**:
 
-<!--Policy-->
-<a href="" id="admx-logon-nowelcometips-2"></a>**ADMX_Logon/NoWelcomeTips_2**  
+| Name | Value |
+|:--|:--|
+| Name | NoWelcomeTips_1 |
+| Friendly Name | Do not display the Getting Started welcome screen at logon |
+| Location | User Configuration |
+| Path | System |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoWelcomeScreen |
+| ADMX File Name | Logon.admx |
+<!-- NoWelcomeTips_1-AdmxBacked-End -->
 
-<!--SupportedSKUs-->
+<!-- NoWelcomeTips_1-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoWelcomeTips_1-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- NoWelcomeTips_1-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoWelcomeTips_2-Begin -->
+## NoWelcomeTips_2
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoWelcomeTips_2-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoWelcomeTips_2-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- NoWelcomeTips_2-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Logon/NoWelcomeTips_2
+```
+<!-- NoWelcomeTips_2-OmaUri-End -->
 
-<hr/>
+<!-- NoWelcomeTips_2-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting hides the welcome screen that's displayed on Windows 2000 Professional each time the user logs on.
 
-<!--/Scope-->
-<!--Description-->
-This policy setting hides the welcome screen that is displayed on Windows each time the user logs on.
-
-If you enable this policy setting, the welcome screen is hidden from the user logging on to a computer where this policy is applied.
+- If you enable this policy setting, the welcome screen is hidden from the user logging on to a computer where this policy is applied.
 
 Users can still display the welcome screen by selecting it on the Start menu or by typing "Welcome" in the Run dialog box.
 
-If you disable or don't configure this policy, the welcome screen is displayed each time a user signs in to the computer.  This setting applies only to Windows. It doesn't affect the "Configure Your Server on a Windows Server" screen on Windows Server.
+- If you disable or don't configure this policy, the welcome screen is displayed each time a user logs on to the computer.
+
+This setting applies only to Windows 2000 Professional. It doesn't affect the "Configure Your Server on a Windows 2000 Server" screen on Windows 2000 Server.
 
 > [!NOTE]
 > This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the setting in Computer Configuration takes precedence over the setting in User Configuration.
 
 > [!TIP]
-> To display the welcome screen, click Start, point to Programs, point to Accessories, point to System Tools, and then click "Getting Started." To suppress the welcome screen without specifying a setting, clear the "Show this screen at startup" check box on the welcome screen.
+> To display the welcome screen, click Start, point to Programs, point to Accessories, point to System Tools, and then click "Getting Started". To suppress the welcome screen without specifying a setting, clear the "Show this screen at startup" check box on the welcome screen.
+<!-- NoWelcomeTips_2-Description-End -->
 
-<!--/Description-->
+<!-- NoWelcomeTips_2-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoWelcomeTips_2-Editable-End -->
 
+<!-- NoWelcomeTips_2-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Do not display the Getting Started welcome screen at logon*
--   GP name: *NoWelcomeTips_2*
--   GP path: *System\Logon*
--   GP ADMX file name: *Logon.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoWelcomeTips_2-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- NoWelcomeTips_2-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-logon-run-1"></a>**ADMX_Logon/Run_1**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | NoWelcomeTips_2 |
+| Friendly Name | Do not display the Getting Started welcome screen at logon |
+| Location | Computer Configuration |
+| Path | System > Logon |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoWelcomeScreen |
+| ADMX File Name | Logon.admx |
+<!-- NoWelcomeTips_2-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- NoWelcomeTips_2-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoWelcomeTips_2-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoWelcomeTips_2-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- Run_1-Begin -->
+## Run_1
 
-> [!div class = "checklist"]
-> * User
+<!-- Run_1-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Run_1-Applicability-End -->
 
-<hr/>
+<!-- Run_1-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Logon/Run_1
+```
+<!-- Run_1-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting specifies other programs or documents that Windows starts automatically when a user signs in to the system.
+<!-- Run_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting specifies additional programs or documents that Windows starts automatically when a user logs on to the system.
 
-If you enable this policy setting, you can specify which programs can run at the time the user signs in to this computer that has this policy applied.
+- If you enable this policy setting, you can specify which programs can run at the time the user logs on to this computer that has this policy applied.
 
 To specify values for this policy setting, click Show. In the Show Contents dialog box in the Value column, type the name of the executable program (.exe) file or document file. To specify another name, press ENTER, and type the name. Unless the file is located in the %Systemroot% directory, you must specify the fully qualified path to the file.
 
-If you disable or don't configure this policy setting, the user will have to start the appropriate programs after signing in.
+- If you disable or don't configure this policy setting, the user will have to start the appropriate programs after logon.
 
 > [!NOTE]
 > This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the system starts the programs specified in the Computer Configuration setting just before it starts the programs specified in the User Configuration setting.
 
-Also, see the "Do not process the legacy run list" and the "don't process the run once list" settings.
+Also, see the "Do not process the legacy run list" and the "Do not process the run once list" settings.
+<!-- Run_1-Description-End -->
 
-<!--/Description-->
+<!-- Run_1-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Run_1-Editable-End -->
 
+<!-- Run_1-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Run these programs at user logon*
--   GP name: *Run_1*
--   GP path: *System\Logon*
--   GP ADMX file name: *Logon.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Run_1-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- Run_1-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-logon-run-2"></a>**ADMX_Logon/Run_2**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | Run_1 |
+| Friendly Name | Run these programs at user logon |
+| Location | User Configuration |
+| Path | System > Logon |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| ADMX File Name | Logon.admx |
+<!-- Run_1-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- Run_1-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Run_1-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- Run_1-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- Run_2-Begin -->
+## Run_2
 
-> [!div class = "checklist"]
-> * Device
+<!-- Run_2-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Run_2-Applicability-End -->
 
-<hr/>
+<!-- Run_2-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Logon/Run_2
+```
+<!-- Run_2-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting specifies other programs or documents that Windows starts automatically when a user signs in to the system.
+<!-- Run_2-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting specifies additional programs or documents that Windows starts automatically when a user logs on to the system.
 
-If you enable this policy setting, you can specify which programs can run at the time the user signs in to this computer that has this policy applied.
+- If you enable this policy setting, you can specify which programs can run at the time the user logs on to this computer that has this policy applied.
 
 To specify values for this policy setting, click Show. In the Show Contents dialog box in the Value column, type the name of the executable program (.exe) file or document file. To specify another name, press ENTER, and type the name. Unless the file is located in the %Systemroot% directory, you must specify the fully qualified path to the file.
 
-If you disable or don't configure this policy setting, the user will have to start the appropriate programs after signing in.
+- If you disable or don't configure this policy setting, the user will have to start the appropriate programs after logon.
 
 > [!NOTE]
 > This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the system starts the programs specified in the Computer Configuration setting just before it starts the programs specified in the User Configuration setting.
 
-Also, see the "Do not process the legacy run list" and the "don't process the run once list" settings.
+Also, see the "Do not process the legacy run list" and the "Do not process the run once list" settings.
+<!-- Run_2-Description-End -->
 
+<!-- Run_2-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Run_2-Editable-End -->
 
-<!--/Description-->
+<!-- Run_2-DFProperties-Begin -->
+**Description framework properties**:
 
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Run_2-DFProperties-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Run these programs at user logon*
--   GP name: *Run_2*
--   GP path: *System\Logon*
--   GP ADMX file name: *Logon.admx*
+<!-- Run_2-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+**ADMX mapping**:
 
-<!--Policy-->
-<a href="" id="admx-logon-syncforegroundpolicy"></a>**ADMX_Logon/SyncForegroundPolicy**  
+| Name | Value |
+|:--|:--|
+| Name | Run_2 |
+| Friendly Name | Run these programs at user logon |
+| Location | Computer Configuration |
+| Path | System > Logon |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| ADMX File Name | Logon.admx |
+<!-- Run_2-AdmxBacked-End -->
 
-<!--SupportedSKUs-->
+<!-- Run_2-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Run_2-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- Run_2-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- SyncForegroundPolicy-Begin -->
+## SyncForegroundPolicy
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- SyncForegroundPolicy-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- SyncForegroundPolicy-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- SyncForegroundPolicy-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Logon/SyncForegroundPolicy
+```
+<!-- SyncForegroundPolicy-OmaUri-End -->
 
-<hr/>
+<!-- SyncForegroundPolicy-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting determines whether Group Policy processing is synchronous (that is, whether computers wait for the network to be fully initialized during computer startup and user logon). By default, on client computers, Group Policy processing isn't synchronous; client computers typically don't wait for the network to be fully initialized at startup and logon. Existing users are logged-on using cached credentials, which results in shorter logon times. Group Policy is applied in the background after the network becomes available.
 
-<!--/Scope-->
-<!--Description-->
-This policy setting determines whether Group Policy processing is synchronous (that is, whether computers wait for the network to be fully initialized during computer startup and user sign in). By default, on client computers, Group Policy processing isn't synchronous; client computers typically don't wait for the network to be fully initialized at startup and sign in. Existing users are signed in using cached credentials, which results in shorter sign-in times. Group Policy is applied in the background after the network becomes available.
+Note that because this is a background refresh, extensions such as Software Installation and Folder Redirection take two logons to apply changes. To be able to operate safely, these extensions require that no users be logged on. Therefore, they must be processed in the foreground before users are actively using the computer. In addition, changes that are made to the user object, such as adding a roaming profile path, home directory, or user object logon script, may take up to two logons to be detected.
 
-Because this process (of applying Group Policy) is a background refresh, extensions such as Software Installation and Folder Redirection take two sign-ins to apply changes. To be able to operate safely, these extensions require that no users be signed in. Therefore, they must be processed in the foreground before users are actively using the computer. In addition, changes that are made to the user object, such as adding a roaming profile path, home directory, or user object logon script may take up to two sign-ins to be detected.
+If a user with a roaming profile, home directory, or user object logon script logs on to a computer, computers always wait for the network to be initialized before logging the user on. If a user has never logged-on to this computer before, computers always wait for the network to be initialized.
 
-If a user with a roaming profile, home directory, or user object logon script signs in to a computer, computers always wait for the network to be initialized before signing in the user. If a user has never signed in to this computer before, computers always wait for the network to be initialized.
-
-If you enable this policy setting, computers wait for the network to be fully initialized before users are signed in. Group Policy is applied in the foreground, synchronously.
+- If you enable this policy setting, computers wait for the network to be fully initialized before users are logged on. Group Policy is applied in the foreground, synchronously.
 
 On servers running Windows Server 2008 or later, this policy setting is ignored during Group Policy processing at computer startup and Group Policy processing will be synchronous (these servers wait for the network to be initialized during computer startup).
 
-If the server is configured as follows, this policy setting takes effect during Group Policy processing at user sign in:
+If the server is configured as follows, this policy setting takes effect during Group Policy processing at user logon:
 
 - The server is configured as a terminal server (that is, the Terminal Server role service is installed and configured on the server); and
-- The “Allow asynchronous user Group Policy processing when logging on through Terminal Services” policy setting is enabled. This policy setting is located under Computer Configuration\Policies\Administrative templates\System\Group Policy\\.
+- The "Allow asynchronous user Group Policy processing when logging on through Terminal Services" policy setting is enabled. This policy setting is located under Computer Configuration\Policies\Administrative templates\System\Group Policy\.
 
-If this configuration isn't implemented on the server, this policy setting is ignored. In this case, Group Policy processing at user sign in is synchronous (these servers wait for the network to be initialized during user sign in).
+If this configuration isn't implemented on the server, this policy setting is ignored. In this case, Group Policy processing at user logon is synchronous (these servers wait for the network to be initialized during user logon).
 
-If you disable or don't configure this policy setting and users sign in to a client computer or a server running Windows Server 2008 or later and that is configured as described earlier, the computer typically doesn't wait for the network to be fully initialized. In this case, users are logged on with cached credentials. Group Policy is applied asynchronously in the background.
+- If you disable or don't configure this policy setting and users log on to a client computer or a server running Windows Server 2008 or later and that's configured as described earlier, the computer typically doesn't wait for the network to be fully initialized. In this case, users are logged-on with cached credentials. Group Policy is applied asynchronously in the background.
 
-> [!NOTE]
->
-> - If you want to guarantee the application of Folder Redirection, Software Installation, or roaming user profile settings in just one sign in, enable this policy setting to ensure that Windows waits for the network to be available before applying policy. 
-> - If Folder Redirection policy will apply during the next sign in, security policies will be applied asynchronously during the next update cycle, if network connectivity is available.
+Note
 
-<!--/Description-->
+-If you want to guarantee the application of Folder Redirection, Software Installation, or roaming user profile settings in just one logon, enable this policy setting to ensure that Windows waits for the network to be available before applying policy.
 
+-If Folder Redirection policy will apply during the next logon, security policies will be applied asynchronously during the next update cycle, if network connectivity is available.
+<!-- SyncForegroundPolicy-Description-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Always wait for the network at computer startup and logon*
--   GP name: *SyncForegroundPolicy*
--   GP path: *System\Logon*
--   GP ADMX file name: *Logon.admx*
+<!-- SyncForegroundPolicy-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- SyncForegroundPolicy-Editable-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- SyncForegroundPolicy-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Policy-->
-<a href="" id="admx-logon-useoembackground"></a>**ADMX_Logon/UseOEMBackground**  
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- SyncForegroundPolicy-DFProperties-End -->
 
-<!--SupportedSKUs-->
+<!-- SyncForegroundPolicy-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+**ADMX mapping**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | SyncForegroundPolicy |
+| Friendly Name | Always wait for the network at computer startup and logon |
+| Location | Computer Configuration |
+| Path | System > Logon |
+| Registry Key Name | Software\Policies\Microsoft\Windows NT\CurrentVersion\Winlogon |
+| Registry Value Name | SyncForegroundPolicy |
+| ADMX File Name | Logon.admx |
+<!-- SyncForegroundPolicy-AdmxBacked-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- SyncForegroundPolicy-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- SyncForegroundPolicy-Examples-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- SyncForegroundPolicy-End -->
 
-<hr/>
+<!-- UseOEMBackground-Begin -->
+## UseOEMBackground
 
-<!--/Scope-->
-<!--Description-->
+<!-- UseOEMBackground-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- UseOEMBackground-Applicability-End -->
+
+<!-- UseOEMBackground-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Logon/UseOEMBackground
+```
+<!-- UseOEMBackground-OmaUri-End -->
+
+<!-- UseOEMBackground-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting ignores Windows Logon Background.
 
-This policy setting may be used to make Windows give preference to a custom logon background. If you enable this policy setting, the sign-in screen always attempts to load a custom background instead of the Windows-branded logon background.
+This policy setting may be used to make Windows give preference to a custom logon background.
 
-If you disable or don't configure this policy setting, Windows uses the default Windows logon background or custom background.
+- If you enable this policy setting, the logon screen always attempts to load a custom background instead of the Windows-branded logon background.
 
-<!--/Description-->
+- If you disable or don't configure this policy setting, Windows uses the default Windows logon background or custom background.
+<!-- UseOEMBackground-Description-End -->
 
+<!-- UseOEMBackground-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- UseOEMBackground-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Always use custom logon background*
--   GP name: *UseOEMBackground*
--   GP path: *System\Logon*
--   GP ADMX file name: *Logon.admx*
+<!-- UseOEMBackground-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- UseOEMBackground-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-logon-verbosestatus"></a>**ADMX_Logon/VerboseStatus**  
+<!-- UseOEMBackground-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | UseOEMBackground |
+| Friendly Name | Always use custom logon background |
+| Location | Computer Configuration |
+| Path | System > Logon |
+| Registry Key Name | Software\Policies\Microsoft\Windows\System |
+| Registry Value Name | UseOEMBackground |
+| ADMX File Name | Logon.admx |
+<!-- UseOEMBackground-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- UseOEMBackground-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- UseOEMBackground-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- UseOEMBackground-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- VerboseStatus-Begin -->
+## VerboseStatus
 
-<hr/>
+<!-- VerboseStatus-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- VerboseStatus-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- VerboseStatus-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Logon/VerboseStatus
+```
+<!-- VerboseStatus-OmaUri-End -->
+
+<!-- VerboseStatus-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting directs the system to display highly detailed status messages.
 
 This policy setting is designed for advanced users who require this information.
 
-If you enable this policy setting, the system displays status messages that reflect each step in the process of starting, shutting down, logging on, or logging off the system.
+- If you enable this policy setting, the system displays status messages that reflect each step in the process of starting, shutting down, logging on, or logging off the system.
 
-If you disable or don't configure this policy setting, only the default status messages are displayed to the user during these processes.
+- If you disable or don't configure this policy setting, only the default status messages are displayed to the user during these processes.
 
 > [!NOTE]
 > This policy setting is ignored if the "Remove Boot/Shutdown/Logon/Logoff status messages" policy setting is enabled.
+<!-- VerboseStatus-Description-End -->
 
-<!--/Description-->
+<!-- VerboseStatus-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- VerboseStatus-Editable-End -->
 
+<!-- VerboseStatus-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Display highly detailed status messages*
--   GP name: *VerboseStatus*
--   GP path: *System*
--   GP ADMX file name: *Logon.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- VerboseStatus-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- VerboseStatus-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
+**ADMX mapping**:
 
+| Name | Value |
+|:--|:--|
+| Name | VerboseStatus |
+| Friendly Name | Display highly detailed status messages |
+| Location | Computer Configuration |
+| Path | System |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\System |
+| Registry Value Name | VerboseStatus |
+| ADMX File Name | Logon.admx |
+<!-- VerboseStatus-AdmxBacked-End -->
 
-<!--/Policies-->
+<!-- VerboseStatus-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- VerboseStatus-Examples-End -->
 
-## Related topics
+<!-- VerboseStatus-End -->
 
-[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)
+<!-- ADMX_Logon-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ADMX_Logon-CspMoreInfo-End -->
+
+<!-- ADMX_Logon-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

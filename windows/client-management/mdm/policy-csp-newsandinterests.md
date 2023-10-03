@@ -1,86 +1,100 @@
 ---
-title: Policy CSP - NewsAndInterests
-description: Learn how Policy CSP - NewsandInterests contains a list of news and interests.
-ms.author: vinpa
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
+title: NewsAndInterests Policy CSP
+description: Learn more about the NewsAndInterests Area in Policy CSP.
 author: vinaypamnani-msft
-ms.localizationpriority: medium
-ms.date: 09/27/2019
-ms.reviewer: 
 manager: aaroncz
+ms.author: vinpa
+ms.date: 08/10/2023
+ms.localizationpriority: medium
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- NewsAndInterests-Begin -->
 # Policy CSP - NewsAndInterests
 
-<hr/>
+<!-- NewsAndInterests-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NewsAndInterests-Editable-End -->
 
-<!--Policies-->
-## NewsAndInterests policies  
+<!-- AllowNewsAndInterests-Begin -->
+## AllowNewsAndInterests
 
-<dl>
-  <dd>
-    <a href="#newsandinterests-allownewsandinterests">NewsAndInterests/AllowNewsAndInterests</a>
-  </dd>
+<!-- AllowNewsAndInterests-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- AllowNewsAndInterests-Applicability-End -->
 
-<hr/>
+<!-- AllowNewsAndInterests-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/NewsAndInterests/AllowNewsAndInterests
+```
+<!-- AllowNewsAndInterests-OmaUri-End -->
 
-<!--Policy-->
-<a href="" id="newsandinterests-allownewsandinterests"></a>**NewsAndInterests/AllowNewsAndInterests**  
+<!-- AllowNewsAndInterests-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy specifies whether the widgets feature is allowed on the device.
 
-<!--SupportedSKUs-->
+Widgets will be turned on by default unless you change this in your settings.
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|Yes|
-|Windows SE|No|Yes|
-|Business|No|Yes|
-|Enterprise|No|Yes|
-|Education|No|Yes|
+If you turned this feature on before, it will stay on automatically unless you turn it off.
+<!-- AllowNewsAndInterests-Description-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowNewsAndInterests-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+This policy applies to the entire widgets experience, including content on the taskbar.
+<!-- AllowNewsAndInterests-Editable-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- AllowNewsAndInterests-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowNewsAndInterests-DFProperties-End -->
 
-<!--/Scope-->
+<!-- AllowNewsAndInterests-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--Description-->
-This policy specifies whether to allow the entire widgets experience, including the content on taskbar.
- 
-<!--/Description-->
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. |
+| 1 (Default) | Allowed. |
+<!-- AllowNewsAndInterests-AllowedValues-End -->
 
-<!--SupportedValues-->
+<!-- AllowNewsAndInterests-GpMapping-Begin -->
+**Group policy mapping**:
 
-The following are the supported values:
+| Name | Value |
+|:--|:--|
+| Name | AllowNewsAndInterests |
+| Friendly Name | Allow widgets |
+| Location | Computer Configuration |
+| Path | Windows Components > Widgets |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Dsh |
+| Registry Value Name | AllowNewsAndInterests |
+| ADMX File Name | NewsAndInterests.admx |
+<!-- AllowNewsAndInterests-GpMapping-End -->
 
-- 1 - Default - Allowed.
-- 0 - Not allowed.
+<!-- AllowNewsAndInterests-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowNewsAndInterests-Examples-End -->
 
-<!--/SupportedValues-->
+<!-- AllowNewsAndInterests-End -->
 
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Specifies whether to allow the entire widgets experience, including the content on taskbar*.
--   GP name: *AllowNewsAndInterests*
--   GP path: *Network/NewsandInterests*
--   GP ADMX file name: *NewsandInterests.admx*
+<!-- NewsAndInterests-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- NewsAndInterests-CspMoreInfo-End -->
 
-<!--/ADMXMapped-->
-<!--/Policy-->
+<!-- NewsAndInterests-End -->
 
-<hr/>
-
-<!--/Policies-->
-
-## Related topics
+## Related articles
 
 [Policy configuration service provider](policy-configuration-service-provider.md)

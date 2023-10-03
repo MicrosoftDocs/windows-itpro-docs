@@ -1,27 +1,31 @@
 ---
-title: Access this computer from the network - security policy setting (Windows 10)
+title: Access this computer from the network - security policy setting 
 description: Describes the best practices, location, values, policy management, and security considerations for the Access this computer from the network security policy setting.
 ms.assetid: f6767bc2-83d1-45f1-847c-54f5362db022
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 06/11/2021
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Access this computer from the network - security policy setting
 
 **Applies to**
--   Windows 10, Azure Stack HCI, Windows Server 2022, Windows Server 2019, Windows Server 2016
+-   Windows 11
+-   Windows 10
+-   Windows Server 2022
+-   Windows Server 2019
+-   Windows Server 2016
+-   Azure Stack HCI
 
 Describes the best practices, location, values, policy management, and security considerations for the **Access this computer from the network** security policy setting.
 

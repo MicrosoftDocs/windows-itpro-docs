@@ -1,27 +1,27 @@
 ---
-title: Microsoft network server Attempt S4U2Self (Windows 10)
+title: Microsoft network server Attempt S4U2Self 
 description: Learn about the security policy setting, Microsoft network server Attempt S4U2Self to obtain claim information.
 ms.assetid: e4508387-35ed-4a3f-a47c-27f8396adbba
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Microsoft network server: Attempt S4U2Self to obtain claim information
 
 **Applies to**
--   Windows 10
+-   Windows 11
+-   Windows 10
 
 Describes the best practices, location, values, management, and security considerations for the **Microsoft network server: Attempt S4U2Self to obtain claim information** security policy setting.
 

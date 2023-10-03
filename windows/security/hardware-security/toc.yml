@@ -1,0 +1,56 @@
+items:
+  - name: Overview
+    href: index.md
+  - name: Hardware root of trust
+    items:
+      - name: Windows Defender System Guard
+        href: how-hardware-based-root-of-trust-helps-protect-windows.md
+      - name: Trusted Platform Module
+        href: tpm/trusted-platform-module-top-node.md
+        items:
+          - name: Trusted Platform Module overview
+            href: tpm/trusted-platform-module-overview.md
+          - name: TPM fundamentals
+            href: tpm/tpm-fundamentals.md
+          - name: How Windows uses the TPM
+            href: tpm/how-windows-uses-the-tpm.md
+          - name: Manage TPM commands
+            href: tpm/manage-tpm-commands.md
+          - name: Manage TPM Lockout
+            href: tpm/manage-tpm-lockout.md
+          - name: Change the TPM password
+            href: tpm/change-the-tpm-owner-password.md
+          - name: TPM Group Policy settings
+            href: tpm/trusted-platform-module-services-group-policy-settings.md
+          - name: Back up the TPM recovery information to AD DS
+            href: tpm/backup-tpm-recovery-information-to-ad-ds.md
+          - name: View status, clear, or troubleshoot the TPM
+            href: tpm/initialize-and-configure-ownership-of-the-tpm.md
+          - name: Understanding PCR banks on TPM 2.0 devices
+            href: tpm/switch-pcr-banks-on-tpm-2-0-devices.md
+          - name: TPM recommendations
+            href: tpm/tpm-recommendations.md
+      - name: Microsoft Pluton security processor
+        items:
+          - name: Microsoft Pluton overview
+            href: pluton/microsoft-pluton-security-processor.md
+          - name: Microsoft Pluton as TPM
+            href: pluton/pluton-as-tpm.md
+  - name: Silicon assisted security
+    items:
+      - name: Virtualization-based security (VBS) 🔗
+        href: /windows-hardware/design/device-experiences/oem-vbs
+      - name: Memory integrity (HVCI)
+        href: enable-virtualization-based-protection-of-code-integrity.md
+      - name: Memory integrity and VBS enablement 🔗
+        href: /windows-hardware/design/device-experiences/oem-hvci-enablement
+      - name: Hardware-enforced stack protection
+        href: https://techcommunity.microsoft.com/t5/windows-os-platform-blog/understanding-hardware-enforced-stack-protection/ba-p/1247815
+      - name: Secured-core PC 🔗
+        href: /windows-hardware/design/device-experiences/oem-highly-secure-11
+      - name: Secured-core PC configuration lock 🔗
+        href: /windows/client-management/config-lock
+      - name: Kernel Direct Memory Access (DMA) protection
+        href: kernel-dma-protection-for-thunderbolt.md
+      - name: System Guard Secure Launch
+        href: system-guard-secure-launch-and-smm-protection.md

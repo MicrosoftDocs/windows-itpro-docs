@@ -1,17 +1,18 @@
 ---
-title: 5140(S, F) A network share object was accessed. (Windows 10)
+title: 5140(S, F) A network share object was accessed. 
 description: Describes security event 5140(S, F) A network share object was accessed.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
-author: dansimp
+ms.localizationpriority: low
+author: vinaypamnani-msft
 ms.date: 09/08/2021
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.technology: windows-sec
+manager: aaroncz
+ms.author: vinpa
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 5140(S, F): A network share object was accessed.
@@ -132,7 +133,7 @@ This event generates once per session, when first access attempt was made.
 
 **Access Request Information:**
 
--   **Access Mask** \[Type = HexInt32\]: the sum of hexadecimal values of requested access rights. See “Table 13. File access codes.” for different hexadecimal values for access rights. Has always “**0x1**” value for this event.
+-   **Access Mask** \[Type = HexInt32\]: the sum of hexadecimal values of requested access rights. See [Table of file access codes](/windows/security/threat-protection/auditing/event-5145#table-of-file-access-codes) for different hexadecimal values for access rights. It always has “**0x1**” value for this event.
 
 -   **Accesses** \[Type = UnicodeString\]: the list of access rights that were requested by **Subject\\Security ID**. These access rights depend on **Object Type**. Has always “**ReadData (or ListDirectory)**” value for this event.
 

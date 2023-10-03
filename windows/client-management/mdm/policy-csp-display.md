@@ -1,225 +1,278 @@
 ---
-title: Policy CSP - Display
-description: Learn how to use the Policy CSP - Display setting to disable Per-Process System DPI for a semicolon-separated list of applications.
-ms.author: vinpa
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
+title: Display Policy CSP
+description: Learn more about the Display Area in Policy CSP.
 author: vinaypamnani-msft
-ms.localizationpriority: medium
-ms.date: 09/27/2019
-ms.reviewer: 
 manager: aaroncz
+ms.author: vinpa
+ms.date: 08/10/2023
+ms.localizationpriority: medium
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- Display-Begin -->
 # Policy CSP - Display
 
-<hr/>
+<!-- Display-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Display-Editable-End -->
 
-<!--Policies-->
-## Display policies  
+<!-- DisablePerProcessDpiForApps-Begin -->
+## DisablePerProcessDpiForApps
 
-<dl>
-  <dd>
-    <a href="#display-disableperprocessdpiforapps">Display/DisablePerProcessDpiForApps</a>
-  </dd>
-  <dd>
-    <a href="#display-enableperprocessdpi">Display/EnablePerProcessDpi</a>
-  </dd>
-  <dd>
-    <a href="#display-enableperprocessdpiforapps">Display/EnablePerProcessDpiForApps</a>
-  </dd>
-  <dd>
-    <a href="#display-turnoffgdidpiscalingforapps">Display/TurnOffGdiDPIScalingForApps</a>
-  </dd>
-  <dd>
-    <a href="#display-turnongdidpiscalingforapps">Display/TurnOnGdiDPIScalingForApps</a>
-  </dd>
-</dl>
+<!-- DisablePerProcessDpiForApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- DisablePerProcessDpiForApps-Applicability-End -->
 
+<!-- DisablePerProcessDpiForApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Display/DisablePerProcessDpiForApps
+```
+<!-- DisablePerProcessDpiForApps-OmaUri-End -->
 
-<hr/>
+<!-- DisablePerProcessDpiForApps-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Per Process System DPI is an application compatibility feature for desktop applications that don't render properly after a display-scale factor (DPI) change. When the display scale factor of the primary display changes (which can happen when you connect or disconnect a display that has a different display scale factor (DPI), connect remotely from a device with a different display scale factor, or manually change the display scale factor), many desktop applications can display blurry. Desktop applications that haven't been updated to display properly in this scenario will be blurry until the user logs out and back in to Windows.
 
-<!--Policy-->
-<a href="" id="display-disableperprocessdpiforapps"></a>**Display/DisablePerProcessDpiForApps**  
+When you enable this policy some blurry applications will be crisp after they're restarted, without requiring the user to log out and back in to Windows.
 
-<!--SupportedSKUs-->
+Be aware of the following:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+Per Process System DPI will only improve the rendering of desktop applications that are positioned on the primary display. Some desktop applications can still be blurry on secondary displays that have different display scale factors.
 
+Per Process System DPI won't work for all applications as some older desktop applications will always be blurry on high DPI displays.
 
-<!--/SupportedSKUs-->
-<hr/>
+In some cases, you may see some odd behavior in some desktop applications. If that happens, Per Process System DPI should be disabled.
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+Enabling this setting lets you specify the system-wide default for desktop applications as well as per-application overrides. If you disable or don't configure this setting, Per Process System DPI won't apply to any processes on the system.
+<!-- DisablePerProcessDpiForApps-Description-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- DisablePerProcessDpiForApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisablePerProcessDpiForApps-Editable-End -->
 
-<hr/>
+<!-- DisablePerProcessDpiForApps-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Scope-->
-<!--Description-->
-This policy allows you to disable Per-Process System DPI for a semicolon-separated list of applications. Applications can be specified either by using full paths or with filenames and extensions. This policy will override the system-wide default value.
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- DisablePerProcessDpiForApps-DFProperties-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Configure Per-Process System DPI settings*
--   GP name: *DisplayPerProcessSystemDpiSettings*
--   GP element: *DisplayDisablePerProcessSystemDpiSettings*
--   GP path: *System/Display*
--   GP ADMX file name: *Display.admx*
+<!-- DisablePerProcessDpiForApps-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--/ADMXMapped-->
-<!--/Policy-->
+| Name | Value |
+|:--|:--|
+| Name | DisplayPerProcessSystemDpiSettings |
+| Friendly Name | Configure Per-Process System DPI settings |
+| Element Name | Disable Per-Process System DPI for the following applications. Use either the full application path or the application filename and extension. Separate applications with a semicolon. |
+| Location | Computer and User Configuration |
+| Path | System > Display |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Display |
+| ADMX File Name | Display.admx |
+<!-- DisablePerProcessDpiForApps-GpMapping-End -->
 
-<hr/>
+<!-- DisablePerProcessDpiForApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisablePerProcessDpiForApps-Examples-End -->
 
-<!--Policy-->
-<a href="" id="display-enableperprocessdpi"></a>**Display/EnablePerProcessDpi**  
+<!-- DisablePerProcessDpiForApps-End -->
 
-<!--SupportedSKUs-->
+<!-- EnablePerProcessDpi-Begin -->
+## EnablePerProcessDpi
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- EnablePerProcessDpi-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- EnablePerProcessDpi-Applicability-End -->
 
+<!-- EnablePerProcessDpi-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/Display/EnablePerProcessDpi
+```
 
-<!--/SupportedSKUs-->
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/Display/EnablePerProcessDpi
+```
+<!-- EnablePerProcessDpi-OmaUri-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- EnablePerProcessDpi-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Per Process System DPI is an application compatibility feature for desktop applications that don't render properly after a display-scale factor (DPI) change. When the display scale factor of the primary display changes (which can happen when you connect or disconnect a display that has a different display scale factor (DPI), connect remotely from a device with a different display scale factor, or manually change the display scale factor), many desktop applications can display blurry. Desktop applications that haven't been updated to display properly in this scenario will be blurry until the user logs out and back in to Windows.
 
-> [!div class = "checklist"]
-> * User
-> * Device
+When you enable this policy some blurry applications will be crisp after they're restarted, without requiring the user to log out and back in to Windows.
 
-<hr/>
+Be aware of the following:
 
-<!--/Scope-->
-<!--Description-->
-Per Process System DPI is an application compatibility feature for desktop applications that don't render properly after a display-scale factor (DPI) change. When the display scale factor of the primary display changes (which can happen when you connect or disconnect a display that has a different display scale factor (DPI), connect remotely from a device with a different display scale factor, or manually change the display scale factor), many desktop applications can display blurry. Desktop applications that haven't been updated to display properly in this scenario will be blurry until you sign out and back in to Windows. 
+Per Process System DPI will only improve the rendering of desktop applications that are positioned on the primary display. Some desktop applications can still be blurry on secondary displays that have different display scale factors.
 
-When you enable this policy some blurry applications will be crisp after they're restarted, without requiring the user to sign out and back in to Windows. 
+Per Process System DPI won't work for all applications as some older desktop applications will always be blurry on high DPI displays.
+
+In some cases, you may see some odd behavior in some desktop applications. If that happens, Per Process System DPI should be disabled.
+
+Enabling this setting lets you specify the system-wide default for desktop applications as well as per-application overrides. If you disable or don't configure this setting, Per Process System DPI won't apply to any processes on the system.
+<!-- EnablePerProcessDpi-Description-End -->
+
+<!-- EnablePerProcessDpi-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+Per Process System DPI is an application compatibility feature for desktop applications that don't render properly after a display-scale factor (DPI) change. When the display scale factor of the primary display changes (which can happen when you connect or disconnect a display that has a different display scale factor (DPI), connect remotely from a device with a different display scale factor, or manually change the display scale factor), many desktop applications can display blurry. Desktop applications that haven't been updated to display properly in this scenario will be blurry until you sign out and back in to Windows.
+
+When you enable this policy some blurry applications will be crisp after they're restarted, without requiring the user to sign out and back in to Windows.
 
 Be aware of the following points:
 
-Per Process System DPI will only improve the rendering of desktop applications that are positioned on the primary display (or any other display having the same scale factor as that of the primary display). Some desktop applications can still be blurry on secondary displays that have different display scale factors. 
+Per Process System DPI will only improve the rendering of desktop applications that are positioned on the primary display (or any other display having the same scale factor as that of the primary display). Some desktop applications can still be blurry on secondary displays that have different display scale factors.
 
-Per Process System DPI won't work for all applications as some older desktop applications will always be blurry on high DPI displays. 
+Per Process System DPI won't work for all applications as some older desktop applications will always be blurry on high DPI displays.
 
 In some cases, you may see some unexpected behavior in some desktop applications that have Per-Process System DPI applied. If that happens, Per Process System DPI should be disabled.
 
 Enabling this setting lets you specify the system-wide default for desktop applications and per-application overrides. If you disable or don't configure this setting, Per Process System DPI won't apply to any processes on the system.
+<!-- EnablePerProcessDpi-Editable-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Configure Per-Process System DPI settings*
--   GP name: *DisplayPerProcessSystemDpiSettings*
--   GP element: *DisplayGlobalPerProcessSystemDpiSettings*
--   GP path: *System/Display*
--   GP ADMX file name: *Display.admx*
+<!-- EnablePerProcessDpi-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+<!-- EnablePerProcessDpi-DFProperties-End -->
 
--   0 - Disable.
--   1 - Enable.
+<!-- EnablePerProcessDpi-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--/SupportedValues-->
-<!--/Policy-->
+| Value | Description |
+|:--|:--|
+| 0 | Disable. |
+| 1 | Enable. |
+<!-- EnablePerProcessDpi-AllowedValues-End -->
 
-<hr/>
+<!-- EnablePerProcessDpi-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--Policy-->
-<a href="" id="display-enableperprocessdpiforapps"></a>**Display/EnablePerProcessDpiForApps**  
+| Name | Value |
+|:--|:--|
+| Name | DisplayPerProcessSystemDpiSettings |
+| Friendly Name | Configure Per-Process System DPI settings |
+| Element Name | Enable or disable Per-Process System DPI for all applications. |
+| Location | Computer and User Configuration |
+| Path | System > Display |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Display |
+| ADMX File Name | Display.admx |
+<!-- EnablePerProcessDpi-GpMapping-End -->
 
-<!--SupportedSKUs-->
+<!-- EnablePerProcessDpi-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- EnablePerProcessDpi-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- EnablePerProcessDpi-End -->
 
+<!-- EnablePerProcessDpiForApps-Begin -->
+## EnablePerProcessDpiForApps
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- EnablePerProcessDpiForApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- EnablePerProcessDpiForApps-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- EnablePerProcessDpiForApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Display/EnablePerProcessDpiForApps
+```
+<!-- EnablePerProcessDpiForApps-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- EnablePerProcessDpiForApps-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Per Process System DPI is an application compatibility feature for desktop applications that don't render properly after a display-scale factor (DPI) change. When the display scale factor of the primary display changes (which can happen when you connect or disconnect a display that has a different display scale factor (DPI), connect remotely from a device with a different display scale factor, or manually change the display scale factor), many desktop applications can display blurry. Desktop applications that haven't been updated to display properly in this scenario will be blurry until the user logs out and back in to Windows.
 
-<hr/>
+When you enable this policy some blurry applications will be crisp after they're restarted, without requiring the user to log out and back in to Windows.
 
-<!--/Scope-->
-<!--Description-->
-This policy allows you to enable Per-Process System DPI for a semicolon-separated list of applications. Applications can be specified either by using full paths or with filenames and extensions. This policy will override the system-wide default value.
+Be aware of the following:
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Configure Per-Process System DPI settings*
--   GP name: *DisplayPerProcessSystemDpiSettings*
--   GP element: *DisplayEnablePerProcessSystemDpiSettings*
--   GP path: *System/Display*
--   GP ADMX file name: *Display.admx*
+Per Process System DPI will only improve the rendering of desktop applications that are positioned on the primary display. Some desktop applications can still be blurry on secondary displays that have different display scale factors.
 
-<!--/ADMXMapped-->
-<!--/Policy-->
+Per Process System DPI won't work for all applications as some older desktop applications will always be blurry on high DPI displays.
 
-<hr/>
+In some cases, you may see some odd behavior in some desktop applications. If that happens, Per Process System DPI should be disabled.
 
-<!--Policy-->
-<a href="" id="display-turnoffgdidpiscalingforapps"></a>**Display/TurnOffGdiDPIScalingForApps**  
+Enabling this setting lets you specify the system-wide default for desktop applications as well as per-application overrides. If you disable or don't configure this setting, Per Process System DPI won't apply to any processes on the system.
+<!-- EnablePerProcessDpiForApps-Description-End -->
 
-<!--SupportedSKUs-->
+<!-- EnablePerProcessDpiForApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- EnablePerProcessDpiForApps-Editable-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- EnablePerProcessDpiForApps-DFProperties-Begin -->
+**Description framework properties**:
 
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- EnablePerProcessDpiForApps-DFProperties-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- EnablePerProcessDpiForApps-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+| Name | Value |
+|:--|:--|
+| Name | DisplayPerProcessSystemDpiSettings |
+| Friendly Name | Configure Per-Process System DPI settings |
+| Element Name | Enable Per-Process System DPI for the following applications. Use either the full application path or the application filename and extension. Separate applications with a semicolon. |
+| Location | Computer and User Configuration |
+| Path | System > Display |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Display |
+| ADMX File Name | Display.admx |
+<!-- EnablePerProcessDpiForApps-GpMapping-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- EnablePerProcessDpiForApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- EnablePerProcessDpiForApps-Examples-End -->
 
-<hr/>
+<!-- EnablePerProcessDpiForApps-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- TurnOffGdiDPIScalingForApps-Begin -->
+## TurnOffGdiDPIScalingForApps
+
+<!-- TurnOffGdiDPIScalingForApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- TurnOffGdiDPIScalingForApps-Applicability-End -->
+
+<!-- TurnOffGdiDPIScalingForApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Display/TurnOffGdiDPIScalingForApps
+```
+<!-- TurnOffGdiDPIScalingForApps-OmaUri-End -->
+
+<!-- TurnOffGdiDPIScalingForApps-Description-Begin -->
+<!-- Description-Source-ADMX -->
+GDI DPI Scaling enables applications that aren't DPI aware to become per monitor DPI aware.
+
+This policy setting lets you specify legacy applications that have GDI DPI Scaling turned off.
+
+- If you enable this policy setting, GDI DPI Scaling is turned off for all applications in the list, even if they're enabled by using ApplicationCompatibility database, ApplicationCompatibility UI System (Enhanced) setting, or an application manifest.
+
+- If you disable or don't configure this policy setting, GDI DPI Scaling might still be turned on for legacy applications.
+
+If GDI DPI Scaling is configured to both turn off and turn on an application, the application will be turned off.
+<!-- TurnOffGdiDPIScalingForApps-Description-End -->
+
+<!-- TurnOffGdiDPIScalingForApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 GDI DPI Scaling enables applications that aren't DPI aware to become per monitor DPI aware.
 
 This policy setting lets you specify legacy applications that have GDI DPI Scaling turned off.
@@ -229,58 +282,75 @@ If you enable this policy setting, GDI DPI Scaling is turned off for all applica
 If you disable or don't configure this policy setting, GDI DPI Scaling might still be turned on for legacy applications.
 
 If GDI DPI Scaling is configured to both turn-off and turn-on an application, the application will be turned off.
+<!-- TurnOffGdiDPIScalingForApps-Editable-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Turn off GdiDPIScaling for applications*
--   GP name: *DisplayTurnOffGdiDPIScaling*
--   GP element: *DisplayTurnOffGdiDPIScalingPrompt*
--   GP path: *System/Display*
--   GP ADMX file name: *Display.admx*
+<!-- TurnOffGdiDPIScalingForApps-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXMapped-->
-<!--Validation-->
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- TurnOffGdiDPIScalingForApps-DFProperties-End -->
+
+<!-- TurnOffGdiDPIScalingForApps-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | DisplayTurnOffGdiDPIScaling |
+| Friendly Name | Turn off GdiDPIScaling for applications |
+| Element Name | Disable GDI DPI Scaling for the following applications. Use either the full application path or the application filename and extension. Separate applications with a semicolon. |
+| Location | Computer Configuration |
+| Path | System > Display |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Display |
+| ADMX File Name | Display.admx |
+<!-- TurnOffGdiDPIScalingForApps-GpMapping-End -->
+
+<!-- TurnOffGdiDPIScalingForApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+**Validate**:
+
 To validate on Desktop, do the following tasks:
 
 1.   Configure the setting for an app, which has GDI DPI scaling enabled via MDM or any other supported mechanisms.
 2.   Run the app and observe blurry text.
-
 <!--/Validation-->Each cloud resource can also be paired optionally with an internal proxy server by using a trailing comma followed by the proxy address.
-<!--/Policy-->
+<!-- TurnOffGdiDPIScalingForApps-Examples-End -->
 
-<hr/>
+<!-- TurnOffGdiDPIScalingForApps-End -->
 
-<!--Policy-->
-<a href="" id="display-turnongdidpiscalingforapps"></a>**Display/TurnOnGdiDPIScalingForApps**  
+<!-- TurnOnGdiDPIScalingForApps-Begin -->
+## TurnOnGdiDPIScalingForApps
 
-<!--SupportedSKUs-->
+<!-- TurnOnGdiDPIScalingForApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- TurnOnGdiDPIScalingForApps-Applicability-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- TurnOnGdiDPIScalingForApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Display/TurnOnGdiDPIScalingForApps
+```
+<!-- TurnOnGdiDPIScalingForApps-OmaUri-End -->
 
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- TurnOnGdiDPIScalingForApps-Description-Begin -->
+<!-- Description-Source-ADMX -->
 GDI DPI Scaling enables applications that aren't DPI aware to become per monitor DPI aware.
 
+This policy setting lets you specify legacy applications that have GDI DPI Scaling turned on.
+
+- If you enable this policy setting, GDI DPI Scaling is turned on for all legacy applications in the list.
+
+- If you disable or don't configure this policy setting, GDI DPI Scaling won't be enabled for an application except when an application is enabled by using ApplicationCompatibility database, ApplicationCompatibility UI System (Enhanced) setting, or an application manifest.
+
+If GDI DPI Scaling is configured to both turn off and turn on an application, the application will be turned off.
+<!-- TurnOnGdiDPIScalingForApps-Description-End -->
+
+<!-- TurnOnGdiDPIScalingForApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This policy setting lets you specify legacy applications that have GDI DPI Scaling turned on.
 
 If you enable this policy setting, GDI DPI Scaling is turned on for all legacy applications in the list.
@@ -288,31 +358,50 @@ If you enable this policy setting, GDI DPI Scaling is turned on for all legacy a
 If you disable or don't configure this policy setting, GDI DPI Scaling won't be enabled for an application except when an application is enabled by using ApplicationCompatibility database, ApplicationCompatibility UI System (Enhanced) setting, or an application manifest.
 
 If GDI DPI Scaling is configured to both turn-off and turn-on an application, the application will be turned off.
+<!-- TurnOnGdiDPIScalingForApps-Editable-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Turn on GdiDPIScaling for applications*
--   GP name: *DisplayTurnOnGdiDPIScaling*
--   GP element: *DisplayTurnOnGdiDPIScalingPrompt*
--   GP path: *System/Display*
--   GP ADMX file name: *Display.admx*
+<!-- TurnOnGdiDPIScalingForApps-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXMapped-->
-<!--Validation-->
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- TurnOnGdiDPIScalingForApps-DFProperties-End -->
+
+<!-- TurnOnGdiDPIScalingForApps-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | DisplayTurnOnGdiDPIScaling |
+| Friendly Name | Turn on GdiDPIScaling for applications |
+| Element Name | Enable GDI DPI Scaling for the following applications. Use either the full application path or the application filename and extension. Separate applications with a semicolon. |
+| Location | Computer Configuration |
+| Path | System > Display |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Display |
+| ADMX File Name | Display.admx |
+<!-- TurnOnGdiDPIScalingForApps-GpMapping-End -->
+
+<!-- TurnOnGdiDPIScalingForApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+**Validate**:
+
 To validate on Desktop, do the following tasks:
 
 1. Configure the setting for an app, which uses GDI.
 2. Run the app and observe crisp text.
+<!-- TurnOnGdiDPIScalingForApps-Examples-End -->
 
-<!--/Validation-->
-<!--/Policy-->
-<hr/>
+<!-- TurnOnGdiDPIScalingForApps-End -->
 
+<!-- Display-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- Display-CspMoreInfo-End -->
 
+<!-- Display-End -->
 
-<!--/Policies-->
-
-## Related topics
+## Related articles
 
 [Policy configuration service provider](policy-configuration-service-provider.md)

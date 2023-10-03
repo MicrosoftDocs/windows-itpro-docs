@@ -1,49 +1,73 @@
-- name: Delivery Optimization for Windows client
+- name: Delivery Optimization for Windows and Microsoft Connected Cache
   href: index.yml
+- name: What's new
+  href: whats-new-do.md
   items: 
-    - name: Get started
-      items: 
-        - name: What is Delivery Optimization
-          href: waas-delivery-optimization.md
-        - name: What's new
-          href: whats-new-do.md
-        - name: Delivery Optimization Frequently Asked Questions
-          href: waas-delivery-optimization-faq.yml
-          
-
-     
-    - name: Configure Delivery Optimization
+- name: Delivery Optimization
+  items: 
+  - name: What is Delivery Optimization
+    href: waas-delivery-optimization.md
+  - name: Delivery Optimization Frequently Asked Questions
+    href: waas-delivery-optimization-faq.yml    
+  - name: Configure Delivery Optimization for Windows
+    items:
+    - name: Set up Delivery Optimization for Windows
+      href: waas-delivery-optimization-setup.md
+    - name: Monitor Delivery Optimization for Windows
+      href: waas-delivery-optimization-monitor.md
+    - name: Configure Delivery Optimization settings using Microsoft Intune
+      href: /mem/intune/configuration/delivery-optimization-windows
+  - name: Resources for Delivery Optimization
+    items:
+    - name: Delivery Optimization reference
+      href: waas-delivery-optimization-reference.md
+    - name: Delivery Optimization client-service communication
+      href: delivery-optimization-workflow.md       
+    - name: Using a proxy with Delivery Optimization
+      href: delivery-optimization-proxy.md
+    - name: Testing Delivery Optimization
+      href: delivery-optimization-test.md
+- name: Microsoft Connected Cache
+  items:
+    - name: What is Microsoft Connected Cache?
+      href: waas-microsoft-connected-cache.md
+    - name: MCC for Enterprise and Education
       items:
-        - name: Configure Windows Clients
-          items:
-            - name: Windows Delivery Optimization settings
-              href: waas-delivery-optimization-setup.md#recommended-delivery-optimization-settings
-            - name: Windows Delivery Optimization Frequently Asked Questions
-              href: ../do/waas-delivery-optimization-faq.yml
-        - name: Configure Microsoft Endpoint Manager
-          items:
-            - name: Delivery Optimization settings in Microsoft Intune
-              href: /mem/intune/configuration/delivery-optimization-windows
-     
-    - name: Microsoft Connected Cache
+      - name: MCC for Enterprise and Education Overview
+        href: mcc-ent-edu-overview.md
+      - name: Requirements
+        href: mcc-enterprise-prerequisites.md
+      - name: Deploy Microsoft Connected Cache
+        href: mcc-enterprise-deploy.md
+      - name: Update or uninstall MCC
+        href: mcc-enterprise-update-uninstall.md
+      - name: Appendix
+        href: mcc-enterprise-appendix.md
+    - name: MCC for ISPs
       items:
-        - name: MCC overview
-          href: waas-microsoft-connected-cache.md
-        - name: MCC for Enterprise and Education
-          href: mcc-enterprise.md
-        - name: MCC for ISPs
+      - name: MCC for ISPs Overview
+        href: mcc-isp-overview.md
+      - name: How-to guides
+        items:  
+        - name: Operator sign up and service onboarding
+          href: mcc-isp-signup.md
+        - name: Create, provision, and deploy the cache node in Azure portal
+          href: mcc-isp-create-provision-deploy.md
+        - name: Verify cache node functionality and monitor health and performance
+          href: mcc-isp-verify-cache-node.md
+        - name: Update or uninstall your cache node
+          href: mcc-isp-update.md
+      - name: Resources
+        items:
+        - name: Frequently Asked Questions
+          href: mcc-isp-faq.yml
+        - name: Enhancing cache performance
+          href: mcc-isp-vm-performance.md
+        - name: Support and troubleshooting
+          href: mcc-isp-support.md
+        - name: MCC for ISPs (early preview)
           href: mcc-isp.md
+- name: Endpoints for Microsoft Connected Cache content and services
+  href: delivery-optimization-endpoints.md 
 
-    - name: Resources
-      items:
-        - name: Set up Delivery Optimization for Windows
-          href: waas-delivery-optimization-setup.md
-        - name: Delivery Optimization reference
-          href: waas-delivery-optimization-reference.md
-        - name: Delivery Optimization client-service communication
-          href: delivery-optimization-workflow.md       
-        - name: Using a proxy with Delivery Optimization
-          href: delivery-optimization-proxy.md
-        - name: Content endpoints for Delivery Optimization and Microsoft Connected Cache
-          href: delivery-optimization-endpoints.md         
-
+  

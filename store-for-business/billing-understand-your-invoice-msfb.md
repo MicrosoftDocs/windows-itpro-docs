@@ -1,28 +1,30 @@
 ---
 title: Understand your Microsoft Customer Agreement invoice
 description: Learn how to read and understand your MCA bill
-ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store
-author: trudyha
-ms.author: TrudyHa
+ms.author: cmcatee
+author: cmcatee-MSFT
+manager: scotv
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.date: 07/21/2021
+ms.date: 05/24/2023
 ms.reviewer: 
-manager: dansimp
 ---
 
 # Understand your Microsoft Customer Agreement invoice
 
 > [!IMPORTANT]
-> Microsoft Store for Business and Microsoft Store for Education will be retired in the first quarter of 2023. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Update to Endpoint Manager integration with the Microsoft Store on Windows](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/update-to-endpoint-manager-integration-with-the-microsoft-store/ba-p/3585077) and [FAQ: Supporting Microsoft Store experiences on managed devices](https://techcommunity.microsoft.com/t5/windows-management/faq-supporting-microsoft-store-experiences-on-managed-devices/m-p/3585286).
+>
+> - The retirement of Microsoft Store for Business and Microsoft Store for Education has been postponed. We will update this notice when a new retirement date is announced. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Update to Intune integration with the Microsoft Store on Windows](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/update-to-endpoint-manager-integration-with-the-microsoft-store/ba-p/3585077) and [FAQ: Supporting Microsoft Store experiences on managed devices](https://techcommunity.microsoft.com/t5/windows-management/faq-supporting-microsoft-store-experiences-on-managed-devices/m-p/3585286).
+> - In April 2023 the Microsoft Store for Business tab was removed from Microsoft Store apps on Windows 10 and Windows 11 PCs. An interaction with existing MDM and GPO policies may lead to customers seeing errors when accessing the Microsoft Store app. For more information see [Microsoft Store for Business tab removed](manage-access-to-private-store.md#microsoft-store-for-business-tab-removed).
 
 The invoice provides a summary of your charges and provides instructions for payment. It's available for
 download in the Portable Document Format (.pdf) for commercial customers from Microsoft Store for Business [Microsoft Store for Business - Invoice](https://businessstore.microsoft.com/manage/payments-billing/invoices) or can be sent via email. This article applies to invoices generated for a Microsoft Customer Agreement billing account. Check if you have a [Microsoft Customer Agreement](https://businessstore.microsoft.com/manage/organization/agreements).
 
 ## General invoice information
+
 Invoices are your bill from Microsoft. A few things to note:
 
 - **Invoice schedule** - You're invoiced on a monthly basis. You can find out which day of the month you receive invoices by checking invoice date under billing profile overview in [Microsoft Store for Business](https://businessstore.microsoft.com/manage/payments-billing/billing-profiles). Charges that occur between the end of the billing period and the invoice date are included in the next month's invoice, since they are in the next billing period. The billing period start and end dates for each invoice are listed in the invoice PDF above **Billing Summary**.
@@ -76,7 +78,7 @@ The **Billing Summary**  shows the charges against the billing profile since the
 | Credits |Credits you received from returns |
 | Azure credits applied |Your Azure credits that are automatically applied to Azure charges each billing period |
 | Subtotal |The pre-tax amount due |
-| Tax |The type and amount of tax that you pay, depending on the country of your billing profile. If you don't have to pay tax, then you won't see tax on your invoice. |
+| Tax |The type and amount of tax that you pay, depending on the country/region of your billing profile. If you don't have to pay tax, then you won't see tax on your invoice. |
 | Estimated total savings |The estimated total amount you saved from effective discounts. If applicable, effective discount rates are listed beneath the purchase line items in Details by Invoice Section. |
 
 ### Understand your charges
@@ -99,7 +101,7 @@ The total amount due for each service family is calculated by subtracting Azure 
 | Qty | Quantity purchased or consumed during the billing period |
 | Charges/Credits | Net amount of charges after credits/refunds are applied |
 | Azure Credit | The amount of Azure credits applied to the Charges/Credits|
-| Tax rate | Tax rate(s) depending on country |
+| Tax rate | Tax rate(s) depending on country/region |
 | Tax amount | Amount of tax applied to purchase based on tax rate |
 | Total | The total amount due for the purchase |
 

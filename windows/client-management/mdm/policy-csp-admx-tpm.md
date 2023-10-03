@@ -1,284 +1,342 @@
 ---
-title: Policy CSP - ADMX_TPM
-description: Learn about Policy CSP - ADMX_TPM.
-ms.author: vinpa
-ms.localizationpriority: medium
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
+title: ADMX_TPM Policy CSP
+description: Learn more about the ADMX_TPM Area in Policy CSP.
 author: vinaypamnani-msft
-ms.date: 09/25/2020
-ms.reviewer: 
 manager: aaroncz
+ms.author: vinpa
+ms.date: 08/10/2023
+ms.localizationpriority: medium
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ADMX_TPM-Begin -->
 # Policy CSP - ADMX_TPM
-> [!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<hr/>
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
-<!--Policies-->
-## ADMX_TPM policies  
+<!-- ADMX_TPM-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ADMX_TPM-Editable-End -->
 
-<dl>
-  <dd>
-    <a href="#admx-tpm-blockedcommandslist-name">ADMX_TPM/BlockedCommandsList_Name</a>
-  </dd>
-  <dd>
-    <a href="#admx-tpm-cleartpmifnotready-name">ADMX_TPM/ClearTPMIfNotReady_Name</a>
-  </dd>
-  <dd>
-    <a href="#admx-tpm-ignoredefaultlist-name">ADMX_TPM/IgnoreDefaultList_Name</a>
-  </dd>
-  <dd>
-    <a href="#admx-tpm-ignorelocallist-name">ADMX_TPM/IgnoreLocalList_Name</a>
-  </dd>
-  <dd>
-    <a href="#admx-tpm-osmanagedauth-name">ADMX_TPM/OSManagedAuth_Name</a>
-  </dd>
-  <dd>
-    <a href="#admx-tpm-optintodsha-name">ADMX_TPM/OptIntoDSHA_Name</a>
-  </dd>
-  <dd>
-    <a href="#admx-tpm-standarduserauthorizationfailureduration-name">ADMX_TPM/StandardUserAuthorizationFailureDuration_Name</a>
-  </dd>
-  <dd>
-    <a href="#admx-tpm-standarduserauthorizationfailureindividualthreshold-name">ADMX_TPM/StandardUserAuthorizationFailureIndividualThreshold_Name</a>
-  </dd>
-  <dd>
-    <a href="#admx-tpm-standarduserauthorizationfailuretotalthreshold-name">ADMX_TPM/StandardUserAuthorizationFailureTotalThreshold_Name</a>
-  </dd>
-  <dd>
-    <a href="#admx-tpm-uselegacydap-name">ADMX_TPM/UseLegacyDAP_Name</a>
-  </dd>
-</dl>
+<!-- BlockedCommandsList_Name-Begin -->
+## BlockedCommandsList_Name
 
+<!-- BlockedCommandsList_Name-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- BlockedCommandsList_Name-Applicability-End -->
 
-<hr/>
+<!-- BlockedCommandsList_Name-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_TPM/BlockedCommandsList_Name
+```
+<!-- BlockedCommandsList_Name-OmaUri-End -->
 
-<!--Policy-->
-<a href="" id="admx-tpm-blockedcommandslist-name"></a>**ADMX_TPM/BlockedCommandsList_Name**  
+<!-- BlockedCommandsList_Name-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to manage the Group Policy list of Trusted Platform Module (TPM) commands blocked by Windows.
 
-<!--SupportedSKUs-->
+- If you enable this policy setting, Windows will block the specified commands from being sent to the TPM on the computer. TPM commands are referenced by a command number. For example, command number 129 is TPM_OwnerReadInternalPub, and command number 170 is TPM_FieldUpgrade. To find the command number associated with each TPM command with TPM 1.2, run "tpm.msc" and navigate to the "Command Management" section.
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+- If you disable or don't configure this policy setting, only those TPM commands specified through the default or local lists may be blocked by Windows. The default list of blocked TPM commands is pre-configured by Windows. You can view the default list by running "tpm.msc", navigating to the "Command Management" section, and making visible the "On Default Block List" column. The local list of blocked TPM commands is configured outside of Group Policy by running "tpm.msc" or through scripting against the Win32_Tpm interface. See related policy settings to enforce or ignore the default and local lists of blocked TPM commands.
+<!-- BlockedCommandsList_Name-Description-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- BlockedCommandsList_Name-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- BlockedCommandsList_Name-Editable-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- BlockedCommandsList_Name-DFProperties-Begin -->
+**Description framework properties**:
 
-> [!div class = "checklist"]
-> * Device
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- BlockedCommandsList_Name-DFProperties-End -->
 
-<hr/>
+<!-- BlockedCommandsList_Name-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to manage the Policy list of Trusted Platform Module (TPM) commands blocked by Windows.
+**ADMX mapping**:
 
-If you enable this policy setting, Windows will block the specified commands from being sent to the TPM on the computer. TPM commands are referenced by a command number. For example, command number 129 is TPM_OwnerReadInternalPub, and command number 170 is TPM_FieldUpgrade. To find the command number associated with each TPM command with TPM 1.2, run "tpm.msc" and navigate to the "Command Management" section.
+| Name | Value |
+|:--|:--|
+| Name | BlockedCommandsList_Name |
+| Friendly Name | Configure the list of blocked TPM commands |
+| Location | Computer Configuration |
+| Path | System > Trusted Platform Module Services |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Tpm\BlockedCommands |
+| Registry Value Name | Enabled |
+| ADMX File Name | TPM.admx |
+<!-- BlockedCommandsList_Name-AdmxBacked-End -->
 
-If you disable or don't configure this policy setting, only those TPM commands specified through the default or local lists may be blocked by Windows. The default list of blocked TPM commands is pre-configured by Windows. You can view the default list by running "tpm.msc", navigating to the "Command Management" section, and making visible the "On Default Block List" column. The local list of blocked TPM commands is configured outside of Policy by running "tpm.msc" or through scripting against the Win32_Tpm interface. See related policy settings to enforce or ignore the default and local lists of blocked TPM commands.
+<!-- BlockedCommandsList_Name-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- BlockedCommandsList_Name-Examples-End -->
 
-<!--/Description-->
+<!-- BlockedCommandsList_Name-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Configure the list of blocked TPM commands*
--   GP name: *BlockedCommandsList_Name*
--   GP path: *System\Trusted Platform Module Services*
--   GP ADMX file name: *TPM.admx*
+<!-- ClearTPMIfNotReady_Name-Begin -->
+## ClearTPMIfNotReady_Name
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- ClearTPMIfNotReady_Name-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- ClearTPMIfNotReady_Name-Applicability-End -->
 
-<!--Policy-->
-<a href="" id="admx-tpm-cleartpmifnotready-name"></a>**ADMX_TPM/ClearTPMIfNotReady_Name**  
+<!-- ClearTPMIfNotReady_Name-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_TPM/ClearTPMIfNotReady_Name
+```
+<!-- ClearTPMIfNotReady_Name-OmaUri-End -->
 
-<!--SupportedSKUs-->
+<!-- ClearTPMIfNotReady_Name-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the system to prompt the user to clear the TPM if the TPM is detected to be in any state other than Ready. This policy will take effect only if the system's TPM is in a state other than Ready, including if the TPM is "Ready, with reduced functionality". The prompt to clear the TPM will start occurring after the next reboot, upon user login only if the logged in user is part of the Administrators group for the system. The prompt can be dismissed, but will reappear after every reboot and login until the policy is disabled or until the TPM is in a Ready state.
+<!-- ClearTPMIfNotReady_Name-Description-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- ClearTPMIfNotReady_Name-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ClearTPMIfNotReady_Name-Editable-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ClearTPMIfNotReady_Name-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- ClearTPMIfNotReady_Name-DFProperties-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- ClearTPMIfNotReady_Name-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<hr/>
+**ADMX mapping**:
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the system to prompt the user to clear the TPM if the TPM is detected to be in any state other than Ready. This policy will take effect only if the system’s TPM is in a state other than Ready, including if the TPM is “Ready, with reduced functionality”. The prompt to clear the TPM will start occurring after the next reboot, upon user sign in only if the signed in user is part of the Administrators group for the system. The prompt can be dismissed, but will reappear after every reboot and sign in until the policy is disabled or until the TPM is in a Ready state.
+| Name | Value |
+|:--|:--|
+| Name | ClearTPMIfNotReady_Name |
+| Friendly Name | Configure the system to clear the TPM if it is not in a ready state. |
+| Location | Computer Configuration |
+| Path | System > Trusted Platform Module Services |
+| Registry Key Name | Software\Policies\Microsoft\TPM |
+| Registry Value Name | ClearTPMIfNotReadyGP |
+| ADMX File Name | TPM.admx |
+<!-- ClearTPMIfNotReady_Name-AdmxBacked-End -->
 
-<!--/Description-->
+<!-- ClearTPMIfNotReady_Name-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ClearTPMIfNotReady_Name-Examples-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Configure the system to clear the TPM if it is not in a ready state.*
--   GP name: *ClearTPMIfNotReady_Name*
--   GP path: *System\Trusted Platform Module Services*
--   GP ADMX file name: *TPM.admx*
+<!-- ClearTPMIfNotReady_Name-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- IgnoreDefaultList_Name-Begin -->
+## IgnoreDefaultList_Name
 
-<!--Policy-->
-<a href="" id="admx-tpm-ignoredefaultlist-name"></a>**ADMX_TPM/IgnoreDefaultList_Name**  
+<!-- IgnoreDefaultList_Name-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- IgnoreDefaultList_Name-Applicability-End -->
 
-<!--SupportedSKUs-->
+<!-- IgnoreDefaultList_Name-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_TPM/IgnoreDefaultList_Name
+```
+<!-- IgnoreDefaultList_Name-OmaUri-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- IgnoreDefaultList_Name-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to enforce or ignore the computer's default list of blocked Trusted Platform Module (TPM) commands.
 
-If you enable this policy setting, Windows will ignore the computer's default list of blocked TPM commands and will only block those TPM commands specified by Policy or the local list.
+- If you enable this policy setting, Windows will ignore the computer's default list of blocked TPM commands and will only block those TPM commands specified by Group Policy or the local list.
 
-The default list of blocked TPM commands is pre-configured by Windows. You can view the default list by running "tpm.msc", navigating to the "Command Management" section, and making visible the "On Default Block List" column. The local list of blocked TPM commands is configured outside of Policy by running "tpm.msc" or through scripting against the Win32_Tpm interface. See the related policy setting to configure the Policy list of blocked TPM commands.
+The default list of blocked TPM commands is pre-configured by Windows. You can view the default list by running "tpm.msc", navigating to the "Command Management" section, and making visible the "On Default Block List" column. The local list of blocked TPM commands is configured outside of Group Policy by running "tpm.msc" or through scripting against the Win32_Tpm interface. See the related policy setting to configure the Group Policy list of blocked TPM commands.
 
-If you disable or don't configure this policy setting, Windows will block the TPM commands in the default list, in addition to commands in the Policy and local lists of blocked TPM commands. 
+- If you disable or don't configure this policy setting, Windows will block the TPM commands in the default list, in addition to commands in the Group Policy and local lists of blocked TPM commands.
+<!-- IgnoreDefaultList_Name-Description-End -->
 
-<!--/Description-->
+<!-- IgnoreDefaultList_Name-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- IgnoreDefaultList_Name-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Ignore the default list of blocked TPM commands*
--   GP name: *IgnoreDefaultList_Name*
--   GP path: *System\Trusted Platform Module Services*
--   GP ADMX file name: *TPM.admx*
+<!-- IgnoreDefaultList_Name-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- IgnoreDefaultList_Name-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-tpm-ignorelocallist-name"></a>**ADMX_TPM/IgnoreLocalList_Name**  
+<!-- IgnoreDefaultList_Name-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | IgnoreDefaultList_Name |
+| Friendly Name | Ignore the default list of blocked TPM commands |
+| Location | Computer Configuration |
+| Path | System > Trusted Platform Module Services |
+| Registry Key Name | Software\Policies\Microsoft\TPM\BlockedCommands |
+| Registry Value Name | IgnoreDefaultList |
+| ADMX File Name | TPM.admx |
+<!-- IgnoreDefaultList_Name-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- IgnoreDefaultList_Name-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- IgnoreDefaultList_Name-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- IgnoreDefaultList_Name-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- IgnoreLocalList_Name-Begin -->
+## IgnoreLocalList_Name
 
-<hr/>
+<!-- IgnoreLocalList_Name-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- IgnoreLocalList_Name-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- IgnoreLocalList_Name-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_TPM/IgnoreLocalList_Name
+```
+<!-- IgnoreLocalList_Name-OmaUri-End -->
+
+<!-- IgnoreLocalList_Name-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to enforce or ignore the computer's local list of blocked Trusted Platform Module (TPM) commands.
 
-If you enable this policy setting, Windows will ignore the computer's local list of blocked TPM commands and will only block those TPM commands specified by Policy or the default list.
+- If you enable this policy setting, Windows will ignore the computer's local list of blocked TPM commands and will only block those TPM commands specified by Group Policy or the default list.
 
-The local list of blocked TPM commands is configured outside of Policy by running "tpm.msc" or through scripting against the Win32_Tpm interface. The default list of blocked TPM commands is pre-configured by Windows. See the related policy setting to configure the Policy list of blocked TPM commands.
+The local list of blocked TPM commands is configured outside of Group Policy by running "tpm.msc" or through scripting against the Win32_Tpm interface. The default list of blocked TPM commands is pre-configured by Windows. See the related policy setting to configure the Group Policy list of blocked TPM commands.
 
-If you disable or don't configure this policy setting, Windows will block the TPM commands found in the local list, in addition to commands in the Policy and default lists of blocked TPM commands.
+- If you disable or don't configure this policy setting, Windows will block the TPM commands found in the local list, in addition to commands in the Group Policy and default lists of blocked TPM commands.
+<!-- IgnoreLocalList_Name-Description-End -->
 
-<!--/Description-->
+<!-- IgnoreLocalList_Name-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- IgnoreLocalList_Name-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Ignore the local list of blocked TPM commands*
--   GP name: *IgnoreLocalList_Name*
--   GP path: *System\Trusted Platform Module Services*
--   GP ADMX file name: *TPM.admx*
+<!-- IgnoreLocalList_Name-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- IgnoreLocalList_Name-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-tpm-osmanagedauth-name"></a>**ADMX_TPM/OSManagedAuth_Name**  
+<!-- IgnoreLocalList_Name-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | IgnoreLocalList_Name |
+| Friendly Name | Ignore the local list of blocked TPM commands |
+| Location | Computer Configuration |
+| Path | System > Trusted Platform Module Services |
+| Registry Key Name | Software\Policies\Microsoft\TPM\BlockedCommands |
+| Registry Value Name | IgnoreLocalList |
+| ADMX File Name | TPM.admx |
+<!-- IgnoreLocalList_Name-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- IgnoreLocalList_Name-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- IgnoreLocalList_Name-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- IgnoreLocalList_Name-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- OptIntoDSHA_Name-Begin -->
+## OptIntoDSHA_Name
 
-<hr/>
+<!-- OptIntoDSHA_Name-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- OptIntoDSHA_Name-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures how much of the TPM owner authorization information is stored in the registry of the local computer. Depending on the amount of TPM owner authorization information stored locally, the operating system and TPM-based applications can perform certain TPM actions that require TPM owner authorization without requiring the user to enter the TPM owner password.
+<!-- OptIntoDSHA_Name-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_TPM/OptIntoDSHA_Name
+```
+<!-- OptIntoDSHA_Name-OmaUri-End -->
+
+<!-- OptIntoDSHA_Name-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This group policy enables Device Health Attestation reporting (DHA-report) on supported devices. It enables supported devices to send Device Health Attestation related information (device boot logs, PCR values, TPM certificate, etc.) to Device Health Attestation Service (DHA-Service) every time a device starts. Device Health Attestation Service validates the security state and health of the devices, and makes the findings accessible to enterprise administrators via a cloud based reporting portal. This policy is independent of DHA reports that are initiated by device manageability solutions (like MDM or SCCM), and won't interfere with their workflows.
+<!-- OptIntoDSHA_Name-Description-End -->
+
+<!-- OptIntoDSHA_Name-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- OptIntoDSHA_Name-Editable-End -->
+
+<!-- OptIntoDSHA_Name-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- OptIntoDSHA_Name-DFProperties-End -->
+
+<!-- OptIntoDSHA_Name-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | OptIntoDSHA_Name |
+| Friendly Name | Enable Device Health Attestation Monitoring and Reporting |
+| Location | Computer Configuration |
+| Path | System > Device Health Attestation Service |
+| Registry Key Name | Software\Policies\Microsoft\DeviceHealthAttestationService |
+| Registry Value Name | EnableDeviceHealthAttestationService |
+| ADMX File Name | TPM.admx |
+<!-- OptIntoDSHA_Name-AdmxBacked-End -->
+
+<!-- OptIntoDSHA_Name-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- OptIntoDSHA_Name-Examples-End -->
+
+<!-- OptIntoDSHA_Name-End -->
+
+<!-- OSManagedAuth_Name-Begin -->
+## OSManagedAuth_Name
+
+<!-- OSManagedAuth_Name-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- OSManagedAuth_Name-Applicability-End -->
+
+<!-- OSManagedAuth_Name-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_TPM/OSManagedAuth_Name
+```
+<!-- OSManagedAuth_Name-OmaUri-End -->
+
+<!-- OSManagedAuth_Name-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures how much of the TPM owner authorization information is stored in the registry of the local computer. Depending on the amount of TPM owner authorization information stored locally, the operating system and TPM-based applications can perform certain TPM actions which require TPM owner authorization without requiring the user to enter the TPM owner password.
 
 You can choose to have the operating system store either the full TPM owner authorization value, the TPM administrative delegation blob plus the TPM user delegation blob, or none.
 
 If you enable this policy setting, Windows will store the TPM owner authorization in the registry of the local computer according to the operating system managed TPM authentication setting you choose.
 
-Choose the operating system managed TPM authentication setting of "Full" to store the full TPM owner authorization, the TPM administrative delegation blob and the TPM user delegation blob in the local registry. This setting allows use of the TPM without requiring remote or external storage of the TPM owner authorization value. This setting is appropriate for scenarios that don't depend on preventing reset of the TPM anti-hammering logic or changing the TPM owner authorization value. Some TPM-based applications may require this setting to be changed before making the features that depend on the TPM anti-hammering logic usable.
+Choose the operating system managed TPM authentication setting of "Full" to store the full TPM owner authorization, the TPM administrative delegation blob and the TPM user delegation blob in the local registry. This setting allows use of the TPM without requiring remote or external storage of the TPM owner authorization value. This setting is appropriate for scenarios which don't depend on preventing reset of the TPM anti-hammering logic or changing the TPM owner authorization value. Some TPM-based applications may require this setting be changed before features which depend on the TPM anti-hammering logic can be used.
 
 Choose the operating system managed TPM authentication setting of "Delegated" to store only the TPM administrative delegation blob and the TPM user delegation blob in the local registry. This setting is appropriate for use with TPM-based applications that depend on the TPM anti-hammering logic.
 
@@ -286,89 +344,59 @@ Choose the operating system managed TPM authentication setting of "None" for com
 
 > [!NOTE]
 > If the operating system managed TPM authentication setting is changed from "Full" to "Delegated", the full TPM owner authorization value will be regenerated and any copies of the original TPM owner authorization value will be invalid.
+<!-- OSManagedAuth_Name-Description-End -->
 
-<!--/Description-->
+<!-- OSManagedAuth_Name-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- OSManagedAuth_Name-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Configure the level of TPM owner authorization information available to the operating system*
--   GP name: *OSManagedAuth_Name*
--   GP path: *System\Trusted Platform Module Services*
--   GP ADMX file name: *TPM.admx*
+<!-- OSManagedAuth_Name-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- OSManagedAuth_Name-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-tpm-optintodsha-name"></a>**ADMX_TPM/OptIntoDSHA_Name**  
+<!-- OSManagedAuth_Name-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | OSManagedAuth_Name |
+| Friendly Name | Configure the level of TPM owner authorization information available to the operating system |
+| Location | Computer Configuration |
+| Path | System > Trusted Platform Module Services |
+| Registry Key Name | Software\Policies\Microsoft\TPM |
+| ADMX File Name | TPM.admx |
+<!-- OSManagedAuth_Name-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- OSManagedAuth_Name-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- OSManagedAuth_Name-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- OSManagedAuth_Name-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- StandardUserAuthorizationFailureDuration_Name-Begin -->
+## StandardUserAuthorizationFailureDuration_Name
 
-<hr/>
+<!-- StandardUserAuthorizationFailureDuration_Name-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- StandardUserAuthorizationFailureDuration_Name-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
-This Policy enables Device Health Attestation reporting (DHA-report) on supported devices. It enables supported devices to send Device Health Attestation related information (device boot logs, PCR values, TPM certificate, etc.) to Device Health Attestation Service (DHA-Service) every time a device starts. Device Health Attestation Service validates the security state and health of the devices, and makes the findings accessible to enterprise administrators via a cloud based reporting portal. This policy is independent of DHA reports that are initiated by device manageability solutions (like MDM or Configuration Manager), and won't interfere with their workflows.
+<!-- StandardUserAuthorizationFailureDuration_Name-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_TPM/StandardUserAuthorizationFailureDuration_Name
+```
+<!-- StandardUserAuthorizationFailureDuration_Name-OmaUri-End -->
 
-<!--/Description-->
-
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Enable Device Health Attestation Monitoring and Reporting*
--   GP name: *OptIntoDSHA_Name*
--   GP path: *System\Device Health Attestation Service*
--   GP ADMX file name: *TPM.admx*
-
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-tpm-standarduserauthorizationfailureduration-name"></a>**ADMX_TPM/StandardUserAuthorizationFailureDuration_Name**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- StandardUserAuthorizationFailureDuration_Name-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to manage the duration in minutes for counting standard user authorization failures for Trusted Platform Module (TPM) commands requiring authorization. If the number of TPM commands with an authorization failure within the duration equals a threshold, a standard user is prevented from sending commands requiring authorization to the TPM.
 
 This setting helps administrators prevent the TPM hardware from entering a lockout mode because it slows the speed standard users can send commands requiring authorization to the TPM.
@@ -381,191 +409,255 @@ The Standard User Lockout Threshold Individual value is the maximum number of au
 
 The Standard User Lockout Total Threshold value is the maximum total number of authorization failures all standard users may have before all standard users aren't allowed to send commands requiring authorization to the TPM.
 
-The TPM is designed to protect itself against password guessing attacks by entering a hardware lockout mode when it receives too many commands with an incorrect authorization value. When the TPM enters a lockout mode, it is global for all users including administrators and Windows features like BitLocker Drive Encryption. The number of authorization failures a TPM allows and how long it stays locked out vary by TPM manufacturer. Some TPMs may enter lockout mode for successively longer periods of time with fewer authorization failures depending on past failures. Some TPMs may require a system restart to exit the lockout mode. Other TPMs may require the system to be on so enough clock cycles elapse before the TPM exits the lockout mode.
+The TPM is designed to protect itself against password guessing attacks by entering a hardware lockout mode when it receives too many commands with an incorrect authorization value. When the TPM enters a lockout mode it's global for all users including administrators and Windows features like BitLocker Drive Encryption. The number of authorization failures a TPM allows and how long it stays locked out vary by TPM manufacturer. Some TPMs may enter lockout mode for successively longer periods of time with fewer authorization failures depending on past failures. Some TPMs may require a system restart to exit the lockout mode. Other TPMs may require the system to be on so enough clock cycles elapse before the TPM exits the lockout mode.
 
 An administrator with the TPM owner password may fully reset the TPM's hardware lockout logic using the TPM Management Console (tpm.msc). Each time an administrator resets the TPM's hardware lockout logic all prior standard user TPM authorization failures are ignored; allowing standard users to use the TPM normally again immediately.
 
 If this value isn't configured, a default value of 480 minutes (8 hours) is used.
+<!-- StandardUserAuthorizationFailureDuration_Name-Description-End -->
 
-<!--/Description-->
->
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Standard User Lockout Duration*
--   GP name: *StandardUserAuthorizationFailureDuration_Name*
--   GP path: *System\Trusted Platform Module Services*
--   GP ADMX file name: *TPM.admx*
+<!-- StandardUserAuthorizationFailureDuration_Name-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- StandardUserAuthorizationFailureDuration_Name-Editable-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- StandardUserAuthorizationFailureDuration_Name-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Policy-->
-<a href="" id="admx-tpm-standarduserauthorizationfailureindividualthreshold-name"></a>**ADMX_TPM/StandardUserAuthorizationFailureIndividualThreshold_Name**  
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- StandardUserAuthorizationFailureDuration_Name-DFProperties-End -->
 
-<!--SupportedSKUs-->
+<!-- StandardUserAuthorizationFailureDuration_Name-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+**ADMX mapping**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | StandardUserAuthorizationFailureDuration_Name |
+| Friendly Name | Standard User Lockout Duration |
+| Location | Computer Configuration |
+| Path | System > Trusted Platform Module Services |
+| Registry Key Name | Software\Policies\Microsoft\Tpm |
+| Registry Value Name | StandardUserAuthorizationFailureDuration |
+| ADMX File Name | TPM.admx |
+<!-- StandardUserAuthorizationFailureDuration_Name-AdmxBacked-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- StandardUserAuthorizationFailureDuration_Name-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- StandardUserAuthorizationFailureDuration_Name-Examples-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- StandardUserAuthorizationFailureDuration_Name-End -->
 
-<hr/>
+<!-- StandardUserAuthorizationFailureIndividualThreshold_Name-Begin -->
+## StandardUserAuthorizationFailureIndividualThreshold_Name
 
-<!--/Scope-->
-<!--Description-->
+<!-- StandardUserAuthorizationFailureIndividualThreshold_Name-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- StandardUserAuthorizationFailureIndividualThreshold_Name-Applicability-End -->
+
+<!-- StandardUserAuthorizationFailureIndividualThreshold_Name-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_TPM/StandardUserAuthorizationFailureIndividualThreshold_Name
+```
+<!-- StandardUserAuthorizationFailureIndividualThreshold_Name-OmaUri-End -->
+
+<!-- StandardUserAuthorizationFailureIndividualThreshold_Name-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to manage the maximum number of authorization failures for each standard user for the Trusted Platform Module (TPM). If the number of authorization failures for the user within the duration for Standard User Lockout Duration equals this value, the standard user is prevented from sending commands to the Trusted Platform Module (TPM) that require authorization.
 
 This setting helps administrators prevent the TPM hardware from entering a lockout mode because it slows the speed standard users can send commands requiring authorization to the TPM.
 
 An authorization failure occurs each time a standard user sends a command to the TPM and receives an error response indicating an authorization failure occurred. Authorization failures older than the duration are ignored.
 
-For each standard user, two thresholds apply. Exceeding either threshold will prevent the standard user from sending a command to the TPM that requires authorization.
+For each standard user two thresholds apply. Exceeding either threshold will prevent the standard user from sending a command to the TPM that requires authorization.
 
 This value is the maximum number of authorization failures each standard user may have before the user isn't allowed to send commands requiring authorization to the TPM.
 
 The Standard User Lockout Total Threshold value is the maximum total number of authorization failures all standard users may have before all standard users aren't allowed to send commands requiring authorization to the TPM.
 
-The TPM is designed to protect itself against password guessing attacks by entering a hardware lockout mode when it receives too many commands with an incorrect authorization value. When the TPM enters a lockout mode, it's global for all users including administrators and Windows features like BitLocker Drive Encryption. The number of authorization failures a TPM allows and how long it stays locked out vary by TPM manufacturer. Some TPMs may enter lockout mode for successively longer periods of time with fewer authorization failures depending on past failures. Some TPMs may require a system restart to exit the lockout mode. Other TPMs may require the system to be on so enough clock cycles elapse before the TPM exits the lockout mode.
+The TPM is designed to protect itself against password guessing attacks by entering a hardware lockout mode when it receives too many commands with an incorrect authorization value. When the TPM enters a lockout mode it's global for all users including administrators and Windows features like BitLocker Drive Encryption. The number of authorization failures a TPM allows and how long it stays locked out vary by TPM manufacturer. Some TPMs may enter lockout mode for successively longer periods of time with fewer authorization failures depending on past failures. Some TPMs may require a system restart to exit the lockout mode. Other TPMs may require the system to be on so enough clock cycles elapse before the TPM exits the lockout mode.
 
 An administrator with the TPM owner password may fully reset the TPM's hardware lockout logic using the TPM Management Console (tpm.msc). Each time an administrator resets the TPM's hardware lockout logic all prior standard user TPM authorization failures are ignored; allowing standard users to use the TPM normally again immediately.
 
 If this value isn't configured, a default value of 4 is used.
 
-A value of 0 means the OS won't allow standard users to send commands to the TPM, which may cause an authorization failure.
+A value of zero means the OS won't allow standard users to send commands to the TPM which may cause an authorization failure.
+<!-- StandardUserAuthorizationFailureIndividualThreshold_Name-Description-End -->
 
-<!--/Description-->
+<!-- StandardUserAuthorizationFailureIndividualThreshold_Name-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- StandardUserAuthorizationFailureIndividualThreshold_Name-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Standard User Individual Lockout Threshold*
--   GP name: *StandardUserAuthorizationFailureIndividualThreshold_Name*
--   GP path: *System\Trusted Platform Module Services*
--   GP ADMX file name: *TPM.admx*
+<!-- StandardUserAuthorizationFailureIndividualThreshold_Name-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- StandardUserAuthorizationFailureIndividualThreshold_Name-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-tpm-standarduserauthorizationfailuretotalthreshold-name"></a>**ADMX_TPM/StandardUserAuthorizationFailureTotalThreshold_Name**  
+<!-- StandardUserAuthorizationFailureIndividualThreshold_Name-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | StandardUserAuthorizationFailureIndividualThreshold_Name |
+| Friendly Name | Standard User Individual Lockout Threshold |
+| Location | Computer Configuration |
+| Path | System > Trusted Platform Module Services |
+| Registry Key Name | Software\Policies\Microsoft\Tpm |
+| Registry Value Name | StandardUserAuthorizationFailureIndividualThreshold |
+| ADMX File Name | TPM.admx |
+<!-- StandardUserAuthorizationFailureIndividualThreshold_Name-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- StandardUserAuthorizationFailureIndividualThreshold_Name-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- StandardUserAuthorizationFailureIndividualThreshold_Name-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- StandardUserAuthorizationFailureIndividualThreshold_Name-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- StandardUserAuthorizationFailureTotalThreshold_Name-Begin -->
+## StandardUserAuthorizationFailureTotalThreshold_Name
 
-<hr/>
+<!-- StandardUserAuthorizationFailureTotalThreshold_Name-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- StandardUserAuthorizationFailureTotalThreshold_Name-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- StandardUserAuthorizationFailureTotalThreshold_Name-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_TPM/StandardUserAuthorizationFailureTotalThreshold_Name
+```
+<!-- StandardUserAuthorizationFailureTotalThreshold_Name-OmaUri-End -->
+
+<!-- StandardUserAuthorizationFailureTotalThreshold_Name-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to manage the maximum number of authorization failures for all standard users for the Trusted Platform Module (TPM). If the total number of authorization failures for all standard users within the duration for Standard User Lockout Duration equals this value, all standard users are prevented from sending commands to the Trusted Platform Module (TPM) that require authorization.
 
 This setting helps administrators prevent the TPM hardware from entering a lockout mode because it slows the speed standard users can send commands requiring authorization to the TPM.
 
 An authorization failure occurs each time a standard user sends a command to the TPM and receives an error response indicating an authorization failure occurred. Authorization failures older than the duration are ignored.
 
-For each standard user, two thresholds apply. Exceeding either threshold will prevent the standard user from sending a command to the TPM that requires authorization.
+For each standard user two thresholds apply. Exceeding either threshold will prevent the standard user from sending a command to the TPM that requires authorization.
 
 The Standard User Individual Lockout value is the maximum number of authorization failures each standard user may have before the user isn't allowed to send commands requiring authorization to the TPM.
 
 This value is the maximum total number of authorization failures all standard users may have before all standard users aren't allowed to send commands requiring authorization to the TPM.
 
-The TPM is designed to protect itself against password guessing attacks by entering a hardware lockout mode when it receives too many commands with an incorrect authorization value. When the TPM enters a lockout mode, it's global for all users including administrators and Windows features like BitLocker Drive Encryption. The number of authorization failures a TPM allows and how long it stays locked out vary by TPM manufacturer. Some TPMs may enter lockout mode for successively longer periods of time with fewer authorization failures depending on past failures. Some TPMs may require a system restart to exit the lockout mode. Other TPMs may require the system to be on so enough clock cycles elapse before the TPM exits the lockout mode.
+The TPM is designed to protect itself against password guessing attacks by entering a hardware lockout mode when it receives too many commands with an incorrect authorization value. When the TPM enters a lockout mode it's global for all users including administrators and Windows features like BitLocker Drive Encryption. The number of authorization failures a TPM allows and how long it stays locked out vary by TPM manufacturer. Some TPMs may enter lockout mode for successively longer periods of time with fewer authorization failures depending on past failures. Some TPMs may require a system restart to exit the lockout mode. Other TPMs may require the system to be on so enough clock cycles elapse before the TPM exits the lockout mode.
 
 An administrator with the TPM owner password may fully reset the TPM's hardware lockout logic using the TPM Management Console (tpm.msc). Each time an administrator resets the TPM's hardware lockout logic all prior standard user TPM authorization failures are ignored; allowing standard users to use the TPM normally again immediately.
 
 If this value isn't configured, a default value of 9 is used.
 
-A value of 0 means the OS won't allow standard users to send commands to the TPM, which may cause an authorization failure.
+A value of zero means the OS won't allow standard users to send commands to the TPM which may cause an authorization failure.
+<!-- StandardUserAuthorizationFailureTotalThreshold_Name-Description-End -->
 
-<!--/Description-->
+<!-- StandardUserAuthorizationFailureTotalThreshold_Name-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- StandardUserAuthorizationFailureTotalThreshold_Name-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Standard User Total Lockout Threshold*
--   GP name: *StandardUserAuthorizationFailureTotalThreshold_Name*
--   GP path: *System\Trusted Platform Module Services*
--   GP ADMX file name: *TPM.admx*
+<!-- StandardUserAuthorizationFailureTotalThreshold_Name-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- StandardUserAuthorizationFailureTotalThreshold_Name-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-tpm-uselegacydap-name"></a>**ADMX_TPM/UseLegacyDAP_Name**  
+<!-- StandardUserAuthorizationFailureTotalThreshold_Name-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | StandardUserAuthorizationFailureTotalThreshold_Name |
+| Friendly Name | Standard User Total Lockout Threshold |
+| Location | Computer Configuration |
+| Path | System > Trusted Platform Module Services |
+| Registry Key Name | Software\Policies\Microsoft\Tpm |
+| Registry Value Name | StandardUserAuthorizationFailureTotalThreshold |
+| ADMX File Name | TPM.admx |
+<!-- StandardUserAuthorizationFailureTotalThreshold_Name-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- StandardUserAuthorizationFailureTotalThreshold_Name-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- StandardUserAuthorizationFailureTotalThreshold_Name-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- StandardUserAuthorizationFailureTotalThreshold_Name-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- UseLegacyDAP_Name-Begin -->
+## UseLegacyDAP_Name
 
-<hr/>
+<!-- UseLegacyDAP_Name-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- UseLegacyDAP_Name-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the TPM to use the Dictionary Attack Prevention Parameters (lockout threshold and recovery time) to the values that were used for Windows 10 Version 1607 and below. Setting this policy will take effect only if a) the TPM was originally prepared using a version of Windows after Windows 10 Version 1607 and b) the System has a TPM 2.0. Enabling this policy will only take effect after the TPM maintenance task runs (which typically happens after a system restart). Once this policy has been enabled on a system and has taken effect (after a system restart), disabling it will have no impact and the system's TPM will remain configured using the legacy Dictionary Attack Prevention parameters, regardless of the value of this Policy. The only way for the disabled setting of this policy to take effect on a system where it was once enabled is to a) disable it from Policy and b) clear the TPM on the system.
+<!-- UseLegacyDAP_Name-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_TPM/UseLegacyDAP_Name
+```
+<!-- UseLegacyDAP_Name-OmaUri-End -->
 
-<!--/Description-->
+<!-- UseLegacyDAP_Name-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the TPM to use the Dictionary Attack Prevention Parameters (lockout threshold and recovery time) to the values that were used for Windows 10 Version 1607 and below. Setting this policy will take effect only if a) the TPM was originally prepared using a version of Windows after Windows 10 Version 1607 and b) the System has a TPM 2.0. Note that enabling this policy will only take effect after the TPM maintenance task runs (which typically happens after a system restart). Once this policy has been enabled on a system and has taken effect (after a system restart), disabling it will have no impact and the system's TPM will remain configured using the legacy Dictionary Attack Prevention parameters, regardless of the value of this group policy. The only way for the disabled setting of this policy to take effect on a system where it was once enabled is to a) disable it from group policy and b)clear the TPM on the system.
+<!-- UseLegacyDAP_Name-Description-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Configure the system to use legacy Dictionary Attack Prevention Parameters setting for TPM 2.0.*
--   GP name: *UseLegacyDAP_Name*
--   GP path: *System\Trusted Platform Module Services*
--   GP ADMX file name: *TPM.admx*
+<!-- UseLegacyDAP_Name-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- UseLegacyDAP_Name-Editable-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- UseLegacyDAP_Name-DFProperties-Begin -->
+**Description framework properties**:
 
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- UseLegacyDAP_Name-DFProperties-End -->
 
-<!--/Policies-->
+<!-- UseLegacyDAP_Name-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
+**ADMX mapping**:
 
-## Related topics
+| Name | Value |
+|:--|:--|
+| Name | UseLegacyDAP_Name |
+| Friendly Name | Configure the system to use legacy Dictionary Attack Prevention Parameters setting for TPM 2.0. |
+| Location | Computer Configuration |
+| Path | System > Trusted Platform Module Services |
+| Registry Key Name | Software\Policies\Microsoft\TPM |
+| Registry Value Name | UseLegacyDictionaryAttackParameters |
+| ADMX File Name | TPM.admx |
+<!-- UseLegacyDAP_Name-AdmxBacked-End -->
 
-[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)
+<!-- UseLegacyDAP_Name-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- UseLegacyDAP_Name-Examples-End -->
+
+<!-- UseLegacyDAP_Name-End -->
+
+<!-- ADMX_TPM-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ADMX_TPM-CspMoreInfo-End -->
+
+<!-- ADMX_TPM-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

@@ -1,84 +1,80 @@
 ---
-title: Policy CSP - BitLocker
-description: Use the Policy configuration service provider (CSP) - BitLocker to manage encryption of PCs and devices.
-ms.author: vinpa
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
+title: Bitlocker Policy CSP
+description: Learn more about the Bitlocker Area in Policy CSP.
 author: vinaypamnani-msft
-ms.localizationpriority: medium
-ms.date: 09/27/2019
-ms.reviewer: 
 manager: aaroncz
+ms.author: vinpa
+ms.date: 08/09/2023
+ms.localizationpriority: medium
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
-# Policy CSP - BitLocker
+<!-- Auto-Generated CSP Document -->
 
+<!-- Bitlocker-Begin -->
+# Policy CSP - Bitlocker
 
-
+<!-- Bitlocker-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > To manage encryption of PCs and devices, use [BitLocker CSP](./bitlocker-csp.md).
+<!-- Bitlocker-Editable-End -->
 
-<hr/>
+<!-- EncryptionMethod-Begin -->
+## EncryptionMethod
 
-<!--Policies-->
-## BitLocker policies  
+<!-- EncryptionMethod-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- EncryptionMethod-Applicability-End -->
 
-<dl>
-  <dd>
-    <a href="#bitlocker-encryptionmethod">Bitlocker/EncryptionMethod</a>
-  </dd>
-</dl>
+<!-- EncryptionMethod-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Bitlocker/EncryptionMethod
+```
+<!-- EncryptionMethod-OmaUri-End -->
 
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="bitlocker-encryptionmethod"></a>**Bitlocker/EncryptionMethod**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- EncryptionMethod-Description-Begin -->
+<!-- Description-Source-DDF -->
 This policy specifies the BitLocker Drive Encryption method and cipher strength.
+<!-- EncryptionMethod-Description-End -->
 
-> [!NOTE]
-> XTS-AES 128-bit and XTS-AES 256-bit values are supported only on Windows 10 for desktop.
-
-<!--/Description-->
-<!--SupportedValues-->
+<!-- EncryptionMethod-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 The following list shows the supported values:
 
--   3 - AES-CBC 128-bit
--   4 - AES-CBC 256-bit
--   6 - XTS-AES 128-bit (Desktop only)
--   7 - XTS-AES 256-bit (Desktop only)
+- 3 - AES-CBC 128-bit
+- 4 - AES-CBC 256-bit
+- 6 - XTS-AES 128-bit
+- 7 - XTS-AES 256-bit
+<!-- EncryptionMethod-Editable-End -->
 
-<!--/SupportedValues-->
-<!--/Policy-->
-<hr/>
+<!-- EncryptionMethod-DFProperties-Begin -->
+**Description framework properties**:
 
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-4294967295]` |
+| Default Value  | 6 |
+<!-- EncryptionMethod-DFProperties-End -->
 
+<!-- EncryptionMethod-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- EncryptionMethod-Examples-End -->
 
-<!--/Policies-->
+<!-- EncryptionMethod-End -->
+
+<!-- Bitlocker-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- Bitlocker-CspMoreInfo-End -->
+
+<!-- Bitlocker-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

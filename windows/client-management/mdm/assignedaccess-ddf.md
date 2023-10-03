@@ -1,198 +1,223 @@
 ---
-title: AssignedAccess DDF
-description: Learn how the OMA DM device description framework (DDF) for the AssignedAccess configuration service provider.
-ms.reviewer: 
+title: AssignedAccess DDF file
+description: View the XML file containing the device description framework (DDF) for the AssignedAccess configuration service provider.
+author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: vinaypamnani-msft
-ms.date: 02/22/2018
+ms.date: 06/02/2023
+ms.localizationpriority: medium
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
-# AssignedAccess DDF
+<!-- Auto-Generated CSP Document -->
 
-This topic shows the OMA DM device description framework (DDF) for the **AssignedAccess** configuration service provider. DDF files are used only with OMA DM provisioning XML.
+# AssignedAccess DDF file
 
-You can download the DDF files from the links below:
-
-- [Download all the DDF files for Windows 10, version 1703](https://download.microsoft.com/download/C/7/C/C7C94663-44CF-4221-ABCA-BC895F42B6C2/Windows10_1703_DDF_download.zip)
-- [Download all the DDF files for Windows 10, version 1607](https://download.microsoft.com/download/2/3/E/23E27D6B-6E23-4833-B143-915EDA3BDD44/Windows10_1607_DDF.zip)
-
-The XML below is for Windows 10, version 1803 and later.
+The following XML file contains the device description framework (DDF) for the AssignedAccess configuration service provider.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE MgmtTree PUBLIC " -//OMA//DTD-DM-DDF 1.2//EN"
-  "http://www.openmobilealliance.org/tech/DTD/DM_DDF-V1_2.dtd"
-  [
-    <?oma-dm-ddf-ver supported-versions="1.2"?>
-]>
+<!DOCTYPE MgmtTree PUBLIC " -//OMA//DTD-DM-DDF 1.2//EN" "http://www.openmobilealliance.org/tech/DTD/DM_DDF-V1_2.dtd"[<?oma-dm-ddf-ver supported-versions="1.2"?>]>
 <MgmtTree xmlns:MSFT="http://schemas.microsoft.com/MobileDevice/DM">
-    <VerDTD>1.2</VerDTD>
+  <VerDTD>1.2</VerDTD>
+  <MSFT:Diagnostics>
+  </MSFT:Diagnostics>
+  <Node>
+    <NodeName>AssignedAccess</NodeName>
+    <Path>./Vendor/MSFT</Path>
+    <DFProperties>
+      <AccessType>
+        <Get />
+      </AccessType>
+      <Description>Root node for the CSP</Description>
+      <DFFormat>
+        <node />
+      </DFFormat>
+      <Occurrence>
+        <One />
+      </Occurrence>
+      <Scope>
+        <Permanent />
+      </Scope>
+      <DFType>
+        <MIME />
+      </DFType>
+      <MSFT:Applicability>
+        <MSFT:OsBuildVersion>10.0.10240</MSFT:OsBuildVersion>
+        <MSFT:CspVersion>1.0</MSFT:CspVersion>
+        <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x88;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;</MSFT:EditionAllowList>
+      </MSFT:Applicability>
+    </DFProperties>
     <Node>
-        <NodeName>AssignedAccess</NodeName>
-        <Path>./Vendor/MSFT</Path>
-        <DFProperties>
-            <AccessType>
-                <Get />
-            </AccessType>
-            <DFFormat>
-                <node />
-            </DFFormat>
-            <Occurrence>
-                <One />
-            </Occurrence>
-            <Scope>
-                <Permanent />
-            </Scope>
-            <DFType>
-                <MIME>com.microsoft/4.0/MDM/AssignedAccess</MIME>
-            </DFType>
-        </DFProperties>
-        <Node>
-            <NodeName>KioskModeApp</NodeName>
-            <DFProperties>
-                <AccessType>
-                    <Get />
-                    <Add />
-                    <Delete />
-                    <Replace />
-                </AccessType>
-                <Description>This node can accept and return json string which comprises of account name, and AUMID for Kiosk mode app.
+      <NodeName>KioskModeApp</NodeName>
+      <DFProperties>
+        <AccessType>
+          <Add />
+          <Delete />
+          <Get />
+          <Replace />
+        </AccessType>
+        <Description>This node can accept and return json string which comprises of account name, and AUMID for Kiosk mode app.
 
-Example: {"User":"domain\\user", "AUMID":"Microsoft.WindowsCalculator_8wekyb3d8bbwe!App"}.
+Example: {"User":"domain\\user", "AUMID":"Microsoft.WindowsCalculator_8wekyb3d8bbwe!App"}. 
 
-When configuring kiosk mode app, account name will be used to find the target user. Account name includes domain name and user name. Domain name can be optional, if user name is unique across the system. For a local account, domain name should be machine name. When "Get" is executed on this node, domain name is always returned in the output.
+When configuring kiosk mode app, account name will be used to find the target user. Account name includes domain name and user name. Domain name can be optional if user name is unique across the system. For a local account, domain name should be machine name. When "Get" is executed on this node, domain name is always returned in the output.
 
 This node supports Add, Delete, Replace and Get methods. When there's no configuration, "Get" and "Delete" methods fail. When there's already a configuration for kiosk mode app, "Add" method fails. The data pattern for "Add" and "Replace" is the same.</Description>
-                <DFFormat>
-                    <chr />
-                </DFFormat>
-                <Occurrence>
-                    <One />
-                </Occurrence>
-                <Scope>
-                    <Dynamic />
-                </Scope>
-                <CaseSense>
-                    <CIS />
-                </CaseSense>
-                <DFType>
-                    <MIME>text/plain</MIME>
-                </DFType>
-            </DFProperties>
-        </Node>
-        <Node>
-            <NodeName>Configuration</NodeName>
-            <DFProperties>
-                <AccessType>
-                    <Get />
-                    <Add />
-                    <Delete />
-                    <Replace />
-                </AccessType>
-                <Description>This node accepts an AssignedAccessConfiguration xml as input. Please check out samples and required xsd on MSDN.</Description>
-                <DFFormat>
-                    <chr />
-                </DFFormat>
-                <Occurrence>
-                    <One />
-                </Occurrence>
-                <Scope>
-                    <Dynamic />
-                </Scope>
-                <CaseSense>
-                    <CIS />
-                </CaseSense>
-                <DFType>
-                    <MIME>text/plain</MIME>
-                </DFType>
-            </DFProperties>
-        </Node>
-        <Node>
-            <NodeName>Status</NodeName>
-            <DFProperties>
-                <AccessType>
-                    <Get />
-                </AccessType>
-                <Description>This read only node contains kiosk health event in xml.</Description>
-                <DFFormat>
-                    <chr />
-                </DFFormat>
-                <Occurrence>
-                    <One />
-                </Occurrence>
-                <Scope>
-                    <Permanent />
-                </Scope>
-                <CaseSense>
-                    <CIS />
-                </CaseSense>
-                <DFType>
-                    <MIME>text/plain</MIME>
-                </DFType>
-            </DFProperties>
-        </Node>
-        <Node>
-            <NodeName>ShellLauncher</NodeName>
-            <DFProperties>
-                <AccessType>
-                    <Get />
-                    <Add />
-                    <Delete />
-                    <Replace />
-                </AccessType>
-                <Description>This node accepts a ShellLauncherConfiguration xml as input. Please check out samples and required xsd on MSDN.</Description>
-                <DFFormat>
-                    <chr />
-                </DFFormat>
-                <Occurrence>
-                    <One />
-                </Occurrence>
-                <Scope>
-                    <Dynamic />
-                </Scope>
-                <CaseSense>
-                    <CIS />
-                </CaseSense>
-                <DFType>
-                    <MIME>text/plain</MIME>
-                </DFType>
-            </DFProperties>
-        </Node>
-        <Node>
-            <NodeName>StatusConfiguration</NodeName>
-            <DFProperties>
-                <AccessType>
-                    <Get />
-                    <Add />
-                    <Delete />
-                    <Replace />
-                </AccessType>
-                <Description>This node accepts a StatusConfiguration xml as input. Please check out samples and required xsd on MSDN.</Description>
-                <DFFormat>
-                    <chr />
-                </DFFormat>
-                <Occurrence>
-                    <One />
-                </Occurrence>
-                <Scope>
-                    <Dynamic />
-                </Scope>
-                <CaseSense>
-                    <CIS />
-                </CaseSense>
-                <DFType>
-                    <MIME>text/plain</MIME>
-                </DFType>
-            </DFProperties>
-        </Node>
+        <DFFormat>
+          <chr />
+        </DFFormat>
+        <Occurrence>
+          <One />
+        </Occurrence>
+        <Scope>
+          <Dynamic />
+        </Scope>
+        <DFType>
+          <MIME />
+        </DFType>
+        <CaseSense>
+          <CIS />
+        </CaseSense>
+        <MSFT:AllowedValues ValueType="None">
+        </MSFT:AllowedValues>
+        <MSFT:Deprecated />
+      </DFProperties>
     </Node>
+    <Node>
+      <NodeName>Configuration</NodeName>
+      <DFProperties>
+        <AccessType>
+          <Add />
+          <Delete />
+          <Get />
+          <Replace />
+        </AccessType>
+        <Description>This node accepts an AssignedAccessConfiguration xml as input. Please check out samples and required xsd on MSDN.</Description>
+        <DFFormat>
+          <chr />
+        </DFFormat>
+        <Occurrence>
+          <One />
+        </Occurrence>
+        <Scope>
+          <Dynamic />
+        </Scope>
+        <DFType>
+          <MIME />
+        </DFType>
+        <CaseSense>
+          <CIS />
+        </CaseSense>
+        <MSFT:Applicability>
+          <MSFT:OsBuildVersion>10.0.16299</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>1.1</MSFT:CspVersion>
+        </MSFT:Applicability>
+        <MSFT:AllowedValues ValueType="None">
+        </MSFT:AllowedValues>
+      </DFProperties>
+    </Node>
+    <Node>
+      <NodeName>Status</NodeName>
+      <DFProperties>
+        <AccessType>
+          <Get />
+        </AccessType>
+        <Description>This read only node contains kiosk health event xml</Description>
+        <DFFormat>
+          <chr />
+        </DFFormat>
+        <Occurrence>
+          <One />
+        </Occurrence>
+        <Scope>
+          <Permanent />
+        </Scope>
+        <DFType>
+          <MIME />
+        </DFType>
+        <CaseSense>
+          <CIS />
+        </CaseSense>
+        <MSFT:Applicability>
+          <MSFT:OsBuildVersion>10.0.17134</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>2.0</MSFT:CspVersion>
+        </MSFT:Applicability>
+      </DFProperties>
+    </Node>
+    <Node>
+      <NodeName>ShellLauncher</NodeName>
+      <DFProperties>
+        <AccessType>
+          <Add />
+          <Delete />
+          <Get />
+          <Replace />
+        </AccessType>
+        <Description>This node accepts a ShellLauncherConfiguration xml as input. Please check out samples and required xsd on MSDN.</Description>
+        <DFFormat>
+          <chr />
+        </DFFormat>
+        <Occurrence>
+          <One />
+        </Occurrence>
+        <Scope>
+          <Dynamic />
+        </Scope>
+        <DFType>
+          <MIME />
+        </DFType>
+        <CaseSense>
+          <CIS />
+        </CaseSense>
+        <MSFT:Applicability>
+          <MSFT:OsBuildVersion>10.0.17134</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>2.0</MSFT:CspVersion>
+          <MSFT:EditionAllowList>0x4;0x1B;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0xAB;0xAC;0xAF;0xBC;0xBF</MSFT:EditionAllowList>
+        </MSFT:Applicability>
+        <MSFT:AllowedValues ValueType="None">
+        </MSFT:AllowedValues>
+      </DFProperties>
+    </Node>
+    <Node>
+      <NodeName>StatusConfiguration</NodeName>
+      <DFProperties>
+        <AccessType>
+          <Add />
+          <Delete />
+          <Get />
+          <Replace />
+        </AccessType>
+        <Description>This node accepts a StatusConfiguration xml as input. Please check out samples and required xsd on MSDN.</Description>
+        <DFFormat>
+          <chr />
+        </DFFormat>
+        <Occurrence>
+          <One />
+        </Occurrence>
+        <Scope>
+          <Dynamic />
+        </Scope>
+        <DFType>
+          <MIME />
+        </DFType>
+        <CaseSense>
+          <CIS />
+        </CaseSense>
+        <MSFT:Applicability>
+          <MSFT:OsBuildVersion>10.0.17134</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>2.0</MSFT:CspVersion>
+        </MSFT:Applicability>
+        <MSFT:AllowedValues ValueType="None">
+        </MSFT:AllowedValues>
+      </DFProperties>
+    </Node>
+  </Node>
 </MgmtTree>
 ```
 
-## Related topics
+## Related articles
 
-[AssignedAccess configuration service provider](assignedaccess-csp.md)
+[AssignedAccess configuration service provider reference](assignedaccess-csp.md)

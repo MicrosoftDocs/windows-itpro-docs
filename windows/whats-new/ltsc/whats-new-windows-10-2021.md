@@ -1,21 +1,21 @@
 ---
 title: What's new in Windows 10 Enterprise LTSC 2021
-ms.reviewer: 
-manager: dougeby
-ms.author: aaroncz
+manager: aaroncz
+ms.author: mstewart
 description: New and updated IT Pro content about new features in Windows 10 Enterprise LTSC 2021.
-ms.prod: w10
-author: aczechowski
-ms.localizationpriority: low
-ms.topic: article
+ms.prod: windows-client
+author: mestew
+ms.localizationpriority: high
+ms.topic: conceptual
+ms.technology: itpro-fundamentals
+ms.date: 04/05/2023
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/" target="_blank">Windows 10 Enterprise LTSC 2021</a>
 ---
 
 # What's new in Windows 10 Enterprise LTSC 2021
 
-**Applies to**
--   Windows 10 Enterprise LTSC 2021
-
-This article lists new and updated features and content that is of interest to IT Pros for Windows 10 Enterprise LTSC 2021, compared to Windows 10 Enterprise LTSC 2019 (LTSB). For a brief description of the LTSC servicing channel and associated support, see [Windows 10 Enterprise LTSC](index.md).
+This article lists new and updated features and content that is of interest to IT Pros for Windows 10 Enterprise LTSC 2021, compared to Windows 10 Enterprise LTSC 2019 (LTSB). For a brief description of the LTSC servicing channel and associated support, see [Windows 10 Enterprise LTSC](overview.md).
 
 > [!NOTE]
 > Features in Windows 10 Enterprise LTSC 2021 are equivalent to Windows 10, version 21H2.<br>
@@ -28,7 +28,7 @@ The Windows 10 Enterprise LTSC 2021 release includes the cumulative enhancements
 ## Lifecycle
 
 > [!IMPORTANT]
-> Windows 10 Enterprise LTSC 2021 has a 5 year lifecycle ([IoT](/windows/iot/product-family/what's-new-in-windows-10-iot-enterprise-21h2) continues to have a [10 year lifecycle](/windows/iot/product-family/product-lifecycle?tabs=2021)). Thus, the LTSC 2021 release is not a direct replacement for LTSC 2019, which has a 10 year lifecycle.
+> Windows 10 Enterprise LTSC 2021 has a 5 year lifecycle ([IoT Enterprise LTSC](/windows/iot/iot-enterprise/whats-new/windows-iot-enterprise-ltsc) continues to have a [10 year lifecycle](/lifecycle/products/windows-10-iot-enterprise-ltsc-2021)). Thus, the LTSC 2021 release is not a direct replacement for LTSC 2019, which has a 10 year lifecycle.
 
 For more information about the lifecycle for this release, see [The next Windows 10 Long Term Servicing Channel (LTSC) release](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/the-next-windows-10-long-term-servicing-channel-ltsc-release/ba-p/2147232).
 
@@ -74,11 +74,11 @@ Windows Defender Firewall also now supports [Windows Subsystem for Linux (WSL)](
 
 ### Virus and threat protection
 
-[Attack surface area reduction](/windows/security/threat-protection/windows-defender-atp/overview-attack-surface-reduction) – IT admins can configure devices with advanced web protection that enables them to define allowlists and blocklists for specific URL’s and IP addresses.
-[Next generation protection](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-in-windows-10) – Controls have been extended to protection from ransomware, credential misuse, and attacks that are transmitted through removable storage.
-  - Integrity enforcement capabilities – Enable remote runtime attestation of Windows 10 platform.
-  - [Tamper-proofing](/microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection) capabilities – Uses virtualization-based security to isolate critical Microsoft Defender for Endpoint security capabilities away from the OS and attackers.
-[Platform support](https://techcommunity.microsoft.com/t5/Windows-Defender-ATP/Protecting-Windows-Server-with-Windows-Defender-ATP/ba-p/267114) – In addition to Windows 10, Microsoft Defender for Endpoint’s functionality has been extended to support Windows 7 and Windows 8.1 clients, as well as macOS, Linux, and Windows Server with both its Endpoint Detection (EDR) and Endpoint Protection Platform (EPP) capabilities.
+[Attack surface area reduction](/windows/security/threat-protection/windows-defender-atp/overview-attack-surface-reduction) - IT admins can configure devices with advanced web protection that enables them to define allowlists and blocklists for specific URLs and IP addresses.
+[Next generation protection](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-in-windows-10) - Controls have been extended to protection from ransomware, credential misuse, and attacks that are transmitted through removable storage.
+  - Integrity enforcement capabilities - Enable remote runtime attestation of Windows 10 platform.
+  - [Tamper-proofing](/microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection) capabilities - Uses virtualization-based security to isolate critical Microsoft Defender for Endpoint security capabilities away from the OS and attackers.
+[Platform support](https://techcommunity.microsoft.com/t5/Windows-Defender-ATP/Protecting-Windows-Server-with-Windows-Defender-ATP/ba-p/267114) - In addition to Windows 10, Microsoft Defender for Endpoint's functionality has been extended to support Windows 7 and Windows 8.1 clients, as well as macOS, Linux, and Windows Server with both its Endpoint Detection (EDR) and Endpoint Protection Platform (EPP) capabilities.
 
 **Advanced machine learning**: Improved with advanced machine learning and AI models that enable it to protect against apex attackers using innovative vulnerability exploit techniques, tools and malware.
 
@@ -103,7 +103,7 @@ Windows Defender Firewall also now supports [Windows Subsystem for Linux (WSL)](
 
 [Microsoft Defender Application Guard](/windows/security/threat-protection/windows-defender-application-guard/wd-app-guard-overview) enhancements include: 
   - Standalone users can install and configure their Windows Defender Application Guard settings without needing to change registry key settings. Enterprise users can check their settings to see what their administrators have configured for their machines to better understand the behavior.
-  - Application Guard is now an extension in Google Chrome and Mozilla Firefox. Many users are in a hybrid browser environment, and would like to extend Application Guard’s browser isolation technology beyond Microsoft Edge. In the latest release, users can install the Application Guard extension in their Chrome or Firefox browsers. This extension will redirect untrusted navigation to the Application Guard Edge browser. There's also a companion app to enable this feature in the Microsoft Store. Users can quickly launch Application Guard from their desktop using this app. This feature is also available in Windows 10, version 1803 or later with the latest updates.
+  - Application Guard is now an extension in Google Chrome and Mozilla Firefox. Many users are in a hybrid browser environment, and would like to extend Application Guard's browser isolation technology beyond Microsoft Edge. In the latest release, users can install the Application Guard extension in their Chrome or Firefox browsers. This extension will redirect untrusted navigation to the Application Guard Edge browser. There's also a companion app to enable this feature in the Microsoft Store. Users can quickly launch Application Guard from their desktop using this app. This feature is also available in Windows 10, version 1803 or later with the latest updates.
 
     To try this extension: 
     1. Configure Application Guard policies on your device.
@@ -127,7 +127,7 @@ Application Guard performance is improved with optimized document opening times:
 
 [Application Control for Windows](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control): In Windows 10, version 1903, Windows Defender Application Control (WDAC) added many new features that light up key scenarios and provide feature parity with AppLocker.
 
-  - [Multiple Policies](/windows/security/threat-protection/windows-defender-application-control/deploy-multiple-windows-defender-application-control-policies): Windows Defender Application Control now supports multiple simultaneous code integrity policies for one device in order to enable the following scenarios: 1) enforce and audit side by side, 2) simpler targeting for policies with different scope/intent, 3) expanding a policy using a new ‘supplemental’ policy.
+  - [Multiple Policies](/windows/security/threat-protection/windows-defender-application-control/deploy-multiple-windows-defender-application-control-policies): Windows Defender Application Control now supports multiple simultaneous code integrity policies for one device in order to enable the following scenarios: 1) enforce and audit side by side, 2) simpler targeting for policies with different scope/intent, 3) expanding a policy using a new 'supplemental' policy.
   - [Path-Based Rules](/windows/security/threat-protection/windows-defender-application-control/create-path-based-rules): The path condition identifies an app by its location in the file system of the computer or on the network instead of a signer or hash identifier. Additionally, WDAC has an option that allows admins to enforce at runtime that only code from paths that aren't user-writeable is executed. When code tries to execute at runtime, the directory is scanned and files will be checked for write permissions for unknown admins. If a file is found to be user writeable, the executable is blocked from running unless it's authorized by something other than a path rule like a signer or hash rule.<br>
     This functionality brings WDAC to parity with AppLocker in terms of support for file path rules. WDAC improves upon the security of policies based on file path rules with the availability of the user-writability permission checks at runtime time, which is a capability that isn't available with AppLocker.
   - [Allow COM Object Registration](/windows/security/threat-protection/windows-defender-application-control/allow-com-object-registration-in-windows-defender-application-control-policy): Previously, Windows Defender Application Control (WDAC) enforced a built-in allowlist for COM object registration. While this mechanism works for most common application usage scenarios, customers have provided feedback that there are cases where more COM objects need to be allowed. The 1903 update to Windows 10 introduces the ability to specify allowed COM objects via their GUID in the WDAC policy.
@@ -149,9 +149,9 @@ Windows Hello enhancements include:
 
 ### Credential protection
 
-#### Windows Defender Credential Guard
+#### Credential Guard
 
-[Windows Defender Credential Guard](/windows/security/identity-protection/credential-guard/credential-guard) is now available for ARM64 devices, for extra protection against credential theft for enterprises deploying ARM64 devices in their organizations, such as Surface Pro X.
+[Credential Guard](/windows/security/identity-protection/credential-guard/credential-guard) is now available for ARM64 devices, for extra protection against credential theft for enterprises deploying ARM64 devices in their organizations, such as Surface Pro X.
 
 ### Privacy controls
 
@@ -159,9 +159,9 @@ Windows Hello enhancements include:
 
 ## Cloud Services
 
-### Microsoft Endpoint Manager
+### Microsoft Intune family of products
 
-Configuration Manager, Intune, Desktop Analytics, Co-Management, and Device Management Admin Console are now [Microsoft Endpoint Manager](/configmgr/). See the Nov. 4 2019 [announcement](https://www.microsoft.com/microsoft-365/blog/2019/11/04/use-the-power-of-cloud-intelligence-to-simplify-and-accelerate-it-and-the-move-to-a-modern-workplace/). Also see [Modern management and security principles driving our Microsoft Endpoint Manager vision](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Modern-management-and-security-principles-driving-our-Microsoft/ba-p/946797).
+Configuration Manager, Intune, Desktop Analytics, Co-Management, and the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) are now part of the [Microsoft endpoint management services](/mem/endpoint-manager-overview). See the Nov. 4 2019 [announcement](https://www.microsoft.com/microsoft-365/blog/2019/11/04/use-the-power-of-cloud-intelligence-to-simplify-and-accelerate-it-and-the-move-to-a-modern-workplace/).
 
 ### Configuration Manager
 
@@ -169,7 +169,8 @@ An in-place upgrade wizard is available in Configuration Manager. For more infor
 
 #### Microsoft Intune
 
-Microsoft Intune supports Windows 10 Enterprise LTSC 2021, except for [Windows Update Rings](/mem/intune/configuration/device-profile-create#create-the-profile) in device profiles.
+Microsoft Intune supports Windows 10 Enterprise LTSC 2021 with the following exception:
+- [Update rings](/mem/intune/protect/windows-10-update-rings) can't be used for feature updates since Windows 10 LTSC versions don't receive feature updates. Update rings can be used for quality updates for Windows 10 Enterprise LTSC 2021 clients.
 
 A new Intune remote action: **Collect diagnostics**, lets you collect the logs from corporate devices without interrupting or waiting for the end user. For more information, see [Collect diagnostics remote action](/mem/intune/fundamentals/whats-new#collect-diagnostics-remote-action).
 
@@ -225,7 +226,7 @@ Microsoft Edge Browser support is now included in-box.
 
 ### Microsoft Edge kiosk mode
 
-Microsoft Edge kiosk mode is available for LTSC releases starting in Windows 10 Enterprise 2021 LTSC and [Windows 10 IoT Enterprise 2021 LTSC](/windows/iot/product-family/what's-new-in-windows-10-iot-enterprise-21h2).
+Microsoft Edge kiosk mode is available for LTSC releases starting in Windows 10 Enterprise 2021 LTSC and [Windows 10 IoT Enterprise 2021 LTSC](/windows/iot/iot-enterprise/whats-new/windows-iot-enterprise-ltsc).
 
 Microsoft Edge kiosk mode offers two lockdown experiences of the browser so organizations can create, manage, and provide the best experience for their customers. The following lockdown experiences are available:
 - Digital/Interactive Signage experience - Displays a specific site in full-screen mode.
@@ -242,4 +243,4 @@ WPA3 H2E standards are supported for enhanced Wi-Fi security.
 
 ## See Also
 
-[Windows 10 Enterprise LTSC](index.md): A short description of the LTSC servicing channel with links to information about each release.
+[Windows 10 Enterprise LTSC](overview.md): A short description of the LTSC servicing channel with links to information about each release.

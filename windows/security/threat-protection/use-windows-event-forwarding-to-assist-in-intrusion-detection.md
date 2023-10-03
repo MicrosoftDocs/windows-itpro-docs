@@ -1,14 +1,14 @@
 ---
-title: Use Windows Event Forwarding to help with intrusion detection (Windows 10)
+title: Use Windows Event Forwarding to help with intrusion detection 
 description: Learn about an approach to collect events from devices in your organization. This article talks about events in both normal operations and when an intrusion is suspected.
-ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.prod: m365-security
-author: dulcemontemayor
+ms.prod: windows-client
+author: aczechowski
+ms.author: aaroncz
+manager: aaroncz
 ms.date: 02/28/2019
 ms.localizationpriority: medium
-ms.technology: windows-sec
+ms.technology: itpro-security
+ms.topic: how-to
 ---
 
 # Use Windows Event Forwarding to help with intrusion detection
@@ -25,7 +25,7 @@ To accomplish this functionality, there are two different subscriptions publishe
 
 This implementation helps differentiate where events are ultimately stored. Baseline events can be sent to devices with online analytical capability, such as Security Event Manager (SEM), while also sending events to a MapReduce system, such as HDInsight or Hadoop, for long-term storage and deeper analysis. Events from the Suspect subscription are sent directly to a MapReduce system due to volume and lower signal/noise ratio, they're largely used for host forensic analysis.
 
-An SEM’s strength lies in being able to inspect, correlate events, and generate alerts for known patterns manner and alert security staff at machine speed.
+An SEM's strength lies in being able to inspect, correlate events, and generate alerts for known patterns manner and alert security staff at machine speed.
 
 A MapReduce system has a longer retention time (years versus months for an SEM), larger ingress ability (hundreds of terabytes per day), and the ability to perform more complex operations on the data like statistical and trend analysis, pattern clustering analysis, or apply Machine Learning algorithms.
 
@@ -43,14 +43,14 @@ For the minimum recommended audit policy and registry system ACL settings, see [
 
 >**Note:**  These are only minimum values need to meet what the WEF subscription selects.
  
-From a WEF subscription management perspective, the event queries provided should be used in two separate subscriptions for ease of maintenance; only machines meeting specific criteria would be allowed access to the targeted subscription, this access would be determined by an algorithm or an analysts’ direction. All devices should have access to the Baseline subscription.
+From a WEF subscription management perspective, the event queries provided should be used in two separate subscriptions for ease of maintenance; only machines meeting specific criteria would be allowed access to the targeted subscription, this access would be determined by an algorithm or an analysts' direction. All devices should have access to the Baseline subscription.
 
 This system of dual subscription means you would create two base subscriptions:
 
 -   **Baseline WEF subscription**. Events collected from all hosts; these events include some role-specific events, which will only be emitted by those machines.
 -   **Targeted WEF subscription**. Events collected from a limited set of hosts due to unusual activity and/or heightened awareness for those systems.
 
-Each using the respective event query below. For the Targeted subscription, enabling the “read existing events” option should be set to true to allow collection of existing events from systems. By default, WEF subscriptions will only forward events generated after the WEF subscription was received by the client.
+Each using the respective event query below. For the Targeted subscription, enabling the "read existing events" option should be set to true to allow collection of existing events from systems. By default, WEF subscriptions will only forward events generated after the WEF subscription was received by the client.
 
 In [Appendix E – Annotated Baseline Subscription Event Query](#bkmk-appendixe) and [Appendix F – Annotated Suspect Subscription Event Query](#bkmk-appendixf), the event query XML is included when creating WEF subscriptions. These subscriptions are annotated for query purpose and clarity. Individual &lt;Query&gt; element can be removed or edited without affecting the rest of the query.
 
@@ -91,24 +91,24 @@ The HTTPS option is available if certificate based authentication is used, in ca
 
 ### Do WEF Clients have a separate buffer for events?
 
-The WEF client machines local event log is the buffer for WEF for when the connection to the WEC server is lost. To increase the “buffer size”, increase the maximum file size of the specific event log file where events are being selected. For more info, see [Appendix C – Event Channel Settings (enable and Channel Access) methods](#bkmk-appendixc).
+The WEF client machines local event log is the buffer for WEF for when the connection to the WEC server is lost. To increase the "buffer size", increase the maximum file size of the specific event log file where events are being selected. For more info, see [Appendix C – Event Channel Settings (enable and Channel Access) methods](#bkmk-appendixc).
 
 When the event log overwrites existing events (resulting in data loss if the device isn't connected to the Event Collector), there's no notification sent to the WEF collector that events are lost from the client. Neither is there an indicator that there was a gap encountered in the event stream.
 
 ### What format is used for forwarded events?
 
-WEF has two modes for forwarded events. The default is “Rendered Text” that includes the textual description of the event as you would see it in Event Viewer. This description's inclusion means that the event size is effectively doubled or tripled depending on the size of the rendered description. The alternative mode is “Events” (also sometimes referred to as “Binary” format) – which is just the event XML itself sent in binary XML format (as it would be written to the evtx file.) This format is compact and can more than double the event volume a single WEC server can accommodate.
+WEF has two modes for forwarded events. The default is "Rendered Text" that includes the textual description of the event as you would see it in Event Viewer. This description's inclusion means that the event size is effectively doubled or tripled depending on the size of the rendered description. The alternative mode is "Events" (also sometimes referred to as "Binary" format) – which is just the event XML itself sent in binary XML format (as it would be written to the evtx file.) This format is compact and can more than double the event volume a single WEC server can accommodate.
 
-A subscription “testSubscription” can be configured to use the Events format through the WECUTIL utility:
+A subscription "testSubscription" can be configured to use the Events format through the WECUTIL utility:
 
 ``` syntax
 @rem required to set the DeliveryMaxItems or DeliveryMaxLatencyTime
-Wecutil ss “testSubscription” /cf:Events
+Wecutil ss "testSubscription" /cf:Events
 ```
 
 ### How frequently are WEF events delivered?
 
-Event delivery options are part of the WEF subscription configuration parameters – There are three built-in subscription delivery options: Normal, Minimize Bandwidth, and Minimize Latency. A fourth, catch-all called “Custom” is available but can't be selected or configured through the WEF UI by using Event Viewer. The Custom delivery option must be selected and configured using the WECUTIL.EXE command-line application. All subscription options define a maximum event count and maximum event age, if either limit is exceeded then the accumulated events are sent to the event collector.
+Event delivery options are part of the WEF subscription configuration parameters – There are three built-in subscription delivery options: Normal, Minimize Bandwidth, and Minimize Latency. A fourth, catch-all called "Custom" is available but can't be selected or configured through the WEF UI by using Event Viewer. The Custom delivery option must be selected and configured using the WECUTIL.EXE command-line application. All subscription options define a maximum event count and maximum event age, if either limit is exceeded then the accumulated events are sent to the event collector.
 
 This table outlines the built-in delivery options:
 
@@ -124,11 +124,11 @@ The primary difference is in the latency which events are sent from the client. 
 
 ``` syntax
 @rem required to set the DeliveryMaxItems or DeliveryMaxLatencyTime
-Wecutil ss “SubscriptionNameGoesHere” /cm:Custom
+Wecutil ss "SubscriptionNameGoesHere" /cm:Custom
 @rem set DeliveryMaxItems to 1 event
-Wecutil ss “SubscriptionNameGoesHere” /dmi:1
+Wecutil ss "SubscriptionNameGoesHere" /dmi:1
 @rem set DeliveryMaxLatencyTime to 10 ms
-Wecutil ss “SubscriptionNameGoesHere” /dmlt:10
+Wecutil ss "SubscriptionNameGoesHere" /dmlt:10
 ```
 ### How do I control which devices have access to a WEF Subscription?
 
@@ -140,7 +140,7 @@ For collector initiated subscriptions: The subscription contains the list of mac
 
 Yes. If you desire a High-Availability environment, configure multiple WEC servers with the same subscription configuration and publish both WEC Server URIs to WEF clients. WEF Clients will forward events simultaneously to the configured subscriptions on the WEC servers, if they have the appropriate access.
 
-### <a href="" id="what-are-the-wec-server-s-limitations-"></a>What are the WEC server’s limitations?
+### <a href="" id="what-are-the-wec-server-s-limitations-"></a>What are the WEC server's limitations?
 
 There are three factors that limit the scalability of WEC servers. The general rule for a stable WEC server on commodity hardware is planning for a total of 3,000 events per second on average for all configured subscriptions.
 
@@ -327,7 +327,7 @@ This subscription adds some possible intruder-related activity to help analyst f
     -   Covers Windows PowerShell 2.0 and later and includes the Windows PowerShell 5.0 logging improvements for in-memory attacks using Windows PowerShell.
     -   Includes Windows PowerShell remoting logging
 
--   User Mode Driver Framework “Driver Loaded” event
+-   User Mode Driver Framework "Driver Loaded" event
 
     -   Can possibly detect a USB device loading multiple device drivers. For example, a USB\_STOR device loading the keyboard or network driver.
 
@@ -396,6 +396,17 @@ The following GPO snippet performs the following tasks:
 -   Sets the maximum file size for **Microsoft-Windows-DriverFrameworks-UserMode/Operational** to 50 MB.
 
 ![configure event channels.](images/capi-gpo.png)
+
+The following table also contains the six actions to configure in the GPO:
+
+| Program/Script                     | Arguments                                                                                                |
+|------------------------------------|----------------------------------------------------------------------------------------------------------|
+| %SystemRoot%\System32\wevtutil.exe | sl Microsoft-Windows-CAPI2/Operational /e:true                                                           |
+| %SystemRoot%\System32\wevtutil.exe | sl Microsoft-Windows-CAPI2/Operational /ms:102432768                                                     |
+| %SystemRoot%\System32\wevtutil.exe | sl "Microsoft-Windows-AppLocker/EXE and DLL" /ms:102432768                                               |
+| %SystemRoot%\System32\wevtutil.exe | sl Microsoft-Windows-CAPI2/Operational /ca:"O:BAG:SYD:(A;;0x7;;;BA)(A;;0x2;;;AU)(A;;0x1;;;S-1-5-32-573)" |
+| %SystemRoot%\System32\wevtutil.exe | sl "Microsoft-Windows-DriverFrameworks-UserMode/Operational" /e:true                                     |
+| %SystemRoot%\System32\wevtutil.exe | sl "Microsoft-Windows-DriverFrameworks-UserMode/Operational" /ms:52432896                                |
 
 ## <a href="" id="bkmk-appendixd"></a>Appendix D - Minimum GPO for WEF Client configuration
 
@@ -655,4 +666,4 @@ You can get more info with the following links:
 -   [Event Queries and Event XML](/previous-versions/bb399427(v=vs.90))
 -   [Event Query Schema](/windows/win32/wes/queryschema-schema)
 -   [Windows Event Collector](/windows/win32/wec/windows-event-collector)
--   [4625(F): An account failed to log on](./auditing/event-4625.md)
+-   [4625(F): An account failed to log on](auditing/event-4625.md)

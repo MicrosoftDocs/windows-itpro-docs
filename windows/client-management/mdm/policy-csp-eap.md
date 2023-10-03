@@ -1,86 +1,80 @@
 ---
-title: Policy CSP - EAP
-description: Learn how to use the Policy CSP - Education setting to control graphing functionality in the Windows Calculator app.
-ms.author: vinpa
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
+title: Eap Policy CSP
+description: Learn more about the Eap Area in Policy CSP.
 author: vinaypamnani-msft
-ms.localizationpriority: medium
-ms.date: 09/27/2019
-ms.reviewer: 
 manager: aaroncz
+ms.author: vinpa
+ms.date: 08/10/2023
+ms.localizationpriority: medium
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
-# Policy CSP - EAP
+<!-- Auto-Generated CSP Document -->
 
-<hr/>
+<!-- Eap-Begin -->
+# Policy CSP - Eap
 
-<!--Policies-->
-## EAP policies  
+<!-- Eap-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Eap-Editable-End -->
 
-<dl>
-  <dd>
-    <a href="#eap-allowtls1_3">EAP/AllowTLS1_3</a>
-  </dd>
-</dl>
+<!-- AllowTLS1_3-Begin -->
+## AllowTLS1_3
 
+<!-- AllowTLS1_3-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- AllowTLS1_3-Applicability-End -->
 
-<hr/>
+<!-- AllowTLS1_3-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Eap/AllowTLS1_3
+```
+<!-- AllowTLS1_3-OmaUri-End -->
 
-<!--Policy-->
-<a href="" id="eap-allowtls1_3"></a>**EAP/AllowTLS1_3**  
+<!-- AllowTLS1_3-Description-Begin -->
+<!-- Description-Source-DDF -->
+Added in Windows 10, version 21. H1. Allow or disallow use of TLS 1.3 during EAP client authentication.
+<!-- AllowTLS1_3-Description-End -->
 
-<!--SupportedSKUs-->
+<!-- AllowTLS1_3-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowTLS1_3-Editable-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AllowTLS1_3-DFProperties-Begin -->
+**Description framework properties**:
 
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowTLS1_3-DFProperties-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowTLS1_3-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+| Value | Description |
+|:--|:--|
+| 0 | Use of TLS version 1.3 isn't allowed for authentication. |
+| 1 (Default) | Use of TLS version 1.3 is allowed for authentication. |
+<!-- AllowTLS1_3-AllowedValues-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- AllowTLS1_3-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowTLS1_3-Examples-End -->
 
-<hr/>
+<!-- AllowTLS1_3-End -->
 
-<!--/Scope-->
-<!--Description-->
-Added in Windows 10, version 21H1. This policy setting allows or disallows use of TLS 1.3 during EAP client authentication.
+<!-- Eap-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- Eap-CspMoreInfo-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *AllowTLS1_3*
--   GP name: *AllowTLS1_3*
--   GP path: *Windows Components/EAP*
--   GP ADMX file name: *EAP.admx*
+<!-- Eap-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:  
-
-- 0 – Use of TLS version 1.3 is not allowed for authentication.
-- 1 (default) – Use of TLS version 1.3 is allowed for authentication.
-
-<!--/SupportedValues-->
-<!--/Policy-->
-
-<hr/>
-
-
-<!--/Policies-->
-
-## Related topics
+## Related articles
 
 [Policy configuration service provider](policy-configuration-service-provider.md)

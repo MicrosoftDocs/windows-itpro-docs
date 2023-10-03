@@ -4,11 +4,12 @@ description: A single-use device such as a digital sign is easy to set up in Win
 ms.reviewer: sybruckm
 manager: aaroncz
 ms.author: lizlong
-ms.prod: w10
+ms.prod: windows-client
 author: lizgt2000
 ms.localizationpriority: medium
 ms.date: 09/20/2021
 ms.topic: article
+ms.technology: itpro-configure
 ---
 
 # Set up digital signs on Windows 10/11

@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 title: Change history for Internet Explorer 11 (IE11) - Deployment Guide for IT Pros (Internet Explorer 11 for IT Pros)
 description: This topic lists new and updated topics in the Internet Explorer 11 Deployment Guide documentation for Windows 10.
 ms.mktglfcycl: deploy
-ms.prod: ie11
+ms.prod: windows-client
 ms.sitesec: library
 author: dansimp
 ms.date: 07/27/2017

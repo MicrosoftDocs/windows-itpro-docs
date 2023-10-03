@@ -1,15 +1,14 @@
 ---
 title: Connection endpoints for Windows 10 Enterprise, version 1909
 description: Explains what Windows 10 endpoints are used for, how to turn off traffic to them, and the impact. Specific to Windows 10 Enterprise, version 1909.
-ms.prod: m365-security
+ms.prod: windows-client
+ms.technology: itpro-privacy
 ms.localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
-manager: dougeby
-ms.collection: M365-security-compliance
-ms.topic: article
-ms.date: 11/29/2021
-ms.technology: privacy
+manager: laurawi
+ms.date: 01/18/2018
+ms.topic: reference
 ---
 # Manage connection endpoints for Windows 10 Enterprise, version 1909
 

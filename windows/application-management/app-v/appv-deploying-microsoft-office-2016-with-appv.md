@@ -2,12 +2,14 @@
 title: Deploying Microsoft Office 2016 by using App-V (Windows 10/11)
 description: Use Application Virtualization (App-V) to deliver Microsoft Office 2016 as a virtualized application to computers in your organization.
 author: aczechowski
-ms.prod: w10
+ms.prod: windows-client
 ms.date: 04/18/2018
 ms.reviewer: 
-manager: dougeby
+manager: aaroncz
 ms.author: aaroncz
+ms.collection: must-keep
 ms.topic: article
+ms.technology: itpro-apps
 ---
 
 # Deploying Microsoft Office 2016 by using App-V
@@ -228,7 +230,7 @@ Use the following information to publish an Office package.
 
 Deploy the App-V package for Office 2016 by using the same methods as the other packages that you've already deployed:
 
-* Microsoft Endpoint Configuration Manager
+* Microsoft Configuration Manager
 * App-V Server
 * Stand-alone through Windows PowerShell commands
 
@@ -265,7 +267,7 @@ The following steps will tell you how to enable Office plug-ins with your Office
 
 #### Enable plug-ins for Office App-V packages
 
-1. Add a Connection Group through App-V Server, Microsoft Endpoint Configuration Manager, or a Windows PowerShell cmdlet.
+1. Add a Connection Group through App-V Server, Microsoft Configuration Manager, or a Windows PowerShell cmdlet.
 2. Sequence your plug-ins using the App-V Sequencer. Ensure that Office 2016 is installed on the computer that will be used to sequence the plug-in. We recommend that you use Microsoft 365 Apps for enterprise (non-virtual) on the sequencing computer when sequencing Office 2016 plug-ins.
 3. Create an App-V package that includes the plug-ins you want.
 4. Add a Connection Group through the App-V Server, Configuration Manager, or a Windows PowerShell cmdlet.

@@ -1,245 +1,1046 @@
 ---
 title: DMClient CSP
-description: Understand how the DMClient configuration service provider (CSP) is used to specify enterprise-specific mobile device management (MDM) configuration settings.
-ms.reviewer: 
+description: Learn more about the DMClient CSP.
+author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: vinaypamnani-msft
-ms.date: 11/01/2017
+ms.date: 09/27/2023
+ms.localizationpriority: medium
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- DMClient-Begin -->
 # DMClient CSP
 
-The table below shows the applicability of Windows:
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
+<!-- DMClient-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 The DMClient configuration service provider (CSP) has more enterprise-specific mobile device management (MDM) configuration settings. These settings identify the device in the enterprise domain, include security mitigation for certificate renewal, and are used for server-triggered enterprise unenrollment.
+<!-- DMClient-Editable-End -->
 
-The following information shows the DMClient CSP in tree format.
+<!-- DMClient-Tree-Begin -->
+The following list shows the DMClient configuration service provider nodes:
 
-```console
-./Vendor/MSFT
-DMClient
-----Provider
---------ProviderID
-------------EntDeviceName
-------------ExchangeID
-------------EntDMID
-------------SignedEntDMID
-------------CertRenewTimeStamp
-------------PublisherDeviceID
-------------ManagementServiceAddress
-------------UPN
-------------HelpPhoneNumber
-------------HelpWebsite
-------------HelpEmailAddress
-------------RequireMessageSigning
-------------SyncApplicationVersion
-------------MaxSyncApplicationVersion
-------------Unenroll
-------------AADResourceID
-------------AADDeviceID
-------------AADSendDeviceToken
-------------ForceAadToken
-------------EnrollmentType
-------------EnableOmaDmKeepAliveMessage
-------------HWDevID
-------------ManagementServerAddressList
-------------CommercialID
-------------ConfigLock
-----------------Lock
-----------------UnlockDuration
-----------------SecureCore
-------------Push
-----------------PFN
-----------------ChannelURI
-----------------Status
-------------Poll
-----------------IntervalForFirstSetOfRetries
-----------------NumberOfFirstRetries
-----------------IntervalForSecondSetOfRetries
-----------------NumberOfSecondRetries
-----------------IntervalForRemainingScheduledRetries
-----------------NumberOfRemainingScheduledRetries
-----------------PollOnLogin
-----------------AllUsersPollOnFirstLogin
-------------LinkedEnrollment
-----------------Priority
-----------------Enroll
-----------------Unenroll
-----------------EnrollStatus
-----------------LastError
-------------Recovery
-----------------AllowRecovery
-----------------RecoveryStatus
-----------------InitiateRecovery
-------------MultipleSession
-----------------NumAllowedConcurrentUserSessionForBackgroundSync
-----------------NumAllowedConcurrentUserSessionAtUserLogonSync
-----------------IntervalForScheduledRetriesForUserSession
-----------------NumberOfScheduledRetriesForUserSession
-----Unenroll
-----UpdateManagementServiceAddress
+- ./Device/Vendor/MSFT/DMClient
+  - [HWDevID](#devicehwdevid)
+  - [Provider](#deviceprovider)
+    - [{ProviderID}](#deviceproviderproviderid)
+      - [AADDeviceID](#deviceproviderprovideridaaddeviceid)
+      - [AADResourceID](#deviceproviderprovideridaadresourceid)
+      - [AADSendDeviceToken](#deviceproviderprovideridaadsenddevicetoken)
+      - [CertRenewTimeStamp](#deviceproviderprovideridcertrenewtimestamp)
+      - [CommercialID](#deviceproviderprovideridcommercialid)
+      - [ConfigLock](#deviceproviderprovideridconfiglock)
+        - [Lock](#deviceproviderprovideridconfiglocklock)
+        - [SecureCore](#deviceproviderprovideridconfiglocksecurecore)
+        - [UnlockDuration](#deviceproviderprovideridconfiglockunlockduration)
+      - [ConfigRefresh](#deviceproviderprovideridconfigrefresh)
+        - [Cadence](#deviceproviderprovideridconfigrefreshcadence)
+        - [Enabled](#deviceproviderprovideridconfigrefreshenabled)
+        - [PausePeriod](#deviceproviderprovideridconfigrefreshpauseperiod)
+      - [CustomEnrollmentCompletePage](#deviceproviderprovideridcustomenrollmentcompletepage)
+        - [BodyText](#deviceproviderprovideridcustomenrollmentcompletepagebodytext)
+        - [HyperlinkHref](#deviceproviderprovideridcustomenrollmentcompletepagehyperlinkhref)
+        - [HyperlinkText](#deviceproviderprovideridcustomenrollmentcompletepagehyperlinktext)
+        - [Title](#deviceproviderprovideridcustomenrollmentcompletepagetitle)
+      - [EnableOmaDmKeepAliveMessage](#deviceproviderprovideridenableomadmkeepalivemessage)
+      - [EnhancedAppLayerSecurity](#deviceproviderprovideridenhancedapplayersecurity)
+        - [Cert0](#deviceproviderprovideridenhancedapplayersecuritycert0)
+        - [Cert1](#deviceproviderprovideridenhancedapplayersecuritycert1)
+        - [SecurityMode](#deviceproviderprovideridenhancedapplayersecuritysecuritymode)
+        - [UseCertIfRevocationCheckOffline](#deviceproviderprovideridenhancedapplayersecurityusecertifrevocationcheckoffline)
+      - [EnrollmentType](#deviceproviderprovideridenrollmenttype)
+      - [EntDeviceName](#deviceproviderprovideridentdevicename)
+      - [EntDMID](#deviceproviderprovideridentdmid)
+      - [ExchangeID](#deviceproviderprovideridexchangeid)
+      - [FirstSyncStatus](#deviceproviderprovideridfirstsyncstatus)
+        - [AllowCollectLogsButton](#deviceproviderprovideridfirstsyncstatusallowcollectlogsbutton)
+        - [BlockInStatusPage](#deviceproviderprovideridfirstsyncstatusblockinstatuspage)
+        - [CustomErrorText](#deviceproviderprovideridfirstsyncstatuscustomerrortext)
+        - [ExpectedModernAppPackages](#deviceproviderprovideridfirstsyncstatusexpectedmodernapppackages)
+        - [ExpectedMSIAppPackages](#deviceproviderprovideridfirstsyncstatusexpectedmsiapppackages)
+        - [ExpectedNetworkProfiles](#deviceproviderprovideridfirstsyncstatusexpectednetworkprofiles)
+        - [ExpectedPFXCerts](#deviceproviderprovideridfirstsyncstatusexpectedpfxcerts)
+        - [ExpectedPolicies](#deviceproviderprovideridfirstsyncstatusexpectedpolicies)
+        - [ExpectedSCEPCerts](#deviceproviderprovideridfirstsyncstatusexpectedscepcerts)
+        - [IsSyncDone](#deviceproviderprovideridfirstsyncstatusissyncdone)
+        - [ServerHasFinishedProvisioning](#deviceproviderprovideridfirstsyncstatusserverhasfinishedprovisioning)
+        - [SkipDeviceStatusPage](#deviceproviderprovideridfirstsyncstatusskipdevicestatuspage)
+        - [SkipUserStatusPage](#deviceproviderprovideridfirstsyncstatusskipuserstatuspage)
+        - [TimeOutUntilSyncFailure](#deviceproviderprovideridfirstsyncstatustimeoutuntilsyncfailure)
+        - [WasDeviceSuccessfullyProvisioned](#deviceproviderprovideridfirstsyncstatuswasdevicesuccessfullyprovisioned)
+      - [ForceAadToken](#deviceproviderprovideridforceaadtoken)
+      - [HelpEmailAddress](#deviceproviderprovideridhelpemailaddress)
+      - [HelpPhoneNumber](#deviceproviderprovideridhelpphonenumber)
+      - [HelpWebsite](#deviceproviderprovideridhelpwebsite)
+      - [HWDevID](#deviceproviderprovideridhwdevid)
+      - [LinkedEnrollment](#deviceproviderprovideridlinkedenrollment)
+        - [DiscoveryEndpoint](#deviceproviderprovideridlinkedenrollmentdiscoveryendpoint)
+        - [Enroll](#deviceproviderprovideridlinkedenrollmentenroll)
+        - [EnrollStatus](#deviceproviderprovideridlinkedenrollmentenrollstatus)
+        - [LastError](#deviceproviderprovideridlinkedenrollmentlasterror)
+        - [Unenroll](#deviceproviderprovideridlinkedenrollmentunenroll)
+      - [ManagementServerAddressList](#deviceproviderprovideridmanagementserveraddresslist)
+      - [ManagementServerToUpgradeTo](#deviceproviderprovideridmanagementservertoupgradeto)
+      - [ManagementServiceAddress](#deviceproviderprovideridmanagementserviceaddress)
+      - [MaxSyncApplicationVersion](#deviceproviderprovideridmaxsyncapplicationversion)
+      - [MultipleSession](#deviceproviderprovideridmultiplesession)
+        - [IntervalForScheduledRetriesForUserSession](#deviceproviderprovideridmultiplesessionintervalforscheduledretriesforusersession)
+        - [NumAllowedConcurrentUserSessionAtUserLogonSync](#deviceproviderprovideridmultiplesessionnumallowedconcurrentusersessionatuserlogonsync)
+        - [NumAllowedConcurrentUserSessionForBackgroundSync](#deviceproviderprovideridmultiplesessionnumallowedconcurrentusersessionforbackgroundsync)
+        - [NumberOfScheduledRetriesForUserSession](#deviceproviderprovideridmultiplesessionnumberofscheduledretriesforusersession)
+      - [NumberOfDaysAfterLostContactToUnenroll](#deviceproviderprovideridnumberofdaysafterlostcontacttounenroll)
+      - [Poll](#deviceproviderprovideridpoll)
+        - [AllUsersPollOnFirstLogin](#deviceproviderprovideridpollalluserspollonfirstlogin)
+        - [IntervalForFirstSetOfRetries](#deviceproviderprovideridpollintervalforfirstsetofretries)
+        - [IntervalForRemainingScheduledRetries](#deviceproviderprovideridpollintervalforremainingscheduledretries)
+        - [IntervalForSecondSetOfRetries](#deviceproviderprovideridpollintervalforsecondsetofretries)
+        - [NumberOfFirstRetries](#deviceproviderprovideridpollnumberoffirstretries)
+        - [NumberOfRemainingScheduledRetries](#deviceproviderprovideridpollnumberofremainingscheduledretries)
+        - [NumberOfSecondRetries](#deviceproviderprovideridpollnumberofsecondretries)
+        - [PollOnLogin](#deviceproviderprovideridpollpollonlogin)
+      - [PublisherDeviceID](#deviceproviderprovideridpublisherdeviceid)
+      - [Push](#deviceproviderprovideridpush)
+        - [ChannelURI](#deviceproviderprovideridpushchanneluri)
+        - [PFN](#deviceproviderprovideridpushpfn)
+        - [Status](#deviceproviderprovideridpushstatus)
+      - [Recovery](#deviceproviderprovideridrecovery)
+        - [AllowRecovery](#deviceproviderprovideridrecoveryallowrecovery)
+        - [InitiateRecovery](#deviceproviderprovideridrecoveryinitiaterecovery)
+        - [RecoveryStatus](#deviceproviderprovideridrecoveryrecoverystatus)
+      - [RequireMessageSigning](#deviceproviderprovideridrequiremessagesigning)
+      - [SignedEntDMID](#deviceproviderprovideridsignedentdmid)
+      - [SyncApplicationVersion](#deviceproviderprovideridsyncapplicationversion)
+      - [Unenroll](#deviceproviderprovideridunenroll)
+      - [UPN](#deviceproviderprovideridupn)
+  - [Unenroll](#deviceunenroll)
+  - [UpdateManagementServiceAddress](#deviceupdatemanagementserviceaddress)
+- ./User/Vendor/MSFT/DMClient
+  - [Provider](#userprovider)
+    - [{ProviderID}](#userproviderproviderid)
+      - [FirstSyncStatus](#userproviderprovideridfirstsyncstatus)
+        - [AllowCollectLogsButton](#userproviderprovideridfirstsyncstatusallowcollectlogsbutton)
+        - [CustomErrorText](#userproviderprovideridfirstsyncstatuscustomerrortext)
+        - [ExpectedModernAppPackages](#userproviderprovideridfirstsyncstatusexpectedmodernapppackages)
+        - [ExpectedMSIAppPackages](#userproviderprovideridfirstsyncstatusexpectedmsiapppackages)
+        - [ExpectedNetworkProfiles](#userproviderprovideridfirstsyncstatusexpectednetworkprofiles)
+        - [ExpectedPFXCerts](#userproviderprovideridfirstsyncstatusexpectedpfxcerts)
+        - [ExpectedPolicies](#userproviderprovideridfirstsyncstatusexpectedpolicies)
+        - [ExpectedSCEPCerts](#userproviderprovideridfirstsyncstatusexpectedscepcerts)
+        - [IsSyncDone](#userproviderprovideridfirstsyncstatusissyncdone)
+        - [ServerHasFinishedProvisioning](#userproviderprovideridfirstsyncstatusserverhasfinishedprovisioning)
+        - [WasDeviceSuccessfullyProvisioned](#userproviderprovideridfirstsyncstatuswasdevicesuccessfullyprovisioned)
+<!-- DMClient-Tree-End -->
+
+<!-- Device-HWDevID-Begin -->
+## Device/HWDevID
+
+<!-- Device-HWDevID-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- Device-HWDevID-Applicability-End -->
+
+<!-- Device-HWDevID-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/HWDevID
 ```
+<!-- Device-HWDevID-OmaUri-End -->
 
-<a href="" id="msft"></a>**./Vendor/MSFT**  
-All the nodes in this CSP are supported in the device context, except for the **ExchangeID** node, which is supported in the user context. For the device context, use the **./Device/Vendor/MSFT** path and for the user context, use the **./User/Vendor/MSFT** path.
+<!-- Device-HWDevID-Description-Begin -->
+<!-- Description-Source-DDF -->
+Returns the hardware device ID.
+<!-- Device-HWDevID-Description-End -->
 
-<a href="" id="dmclient"></a>**DMClient**  
-Root node for the CSP.
+<!-- Device-HWDevID-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-HWDevID-Editable-End -->
 
-<a href="" id="updatemanagementserviceaddress"></a>**UpdateManagementServiceAddress**  
-For provisioning packages only. Specifies the list of servers (semicolon delimited). The first server in the semicolon-delimited list is the server that will be used to instantiate MDM sessions. The list can be a permutation or a subset of the existing server list. You can't add new servers to the list using this node.
+<!-- Device-HWDevID-DFProperties-Begin -->
+**Description framework properties**:
 
-<a href="" id="hwdevid"></a>**HWDevID**  
-Added in Windows 10, version 1703. Returns the hardware device ID.
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Get |
+<!-- Device-HWDevID-DFProperties-End -->
 
-Supported operation is Get. Value type is string.
+<!-- Device-HWDevID-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-HWDevID-Examples-End -->
 
-<a href="" id="provider"></a>**Provider**  
-Required. The root node for all settings that belong to a single management server. Scope is permanent.
+<!-- Device-HWDevID-End -->
 
-Supported operation is Get.
+<!-- Device-Provider-Begin -->
+## Device/Provider
 
-<a href="" id="provider-providerid"></a>**Provider/**<strong>*ProviderID*</strong>  
-Required. This node contains the URI-encoded value of the bootstrapped device management account’s Provider ID. Scope is dynamic. This value is set and controlled by the MDM provider. As a best practice, use text that doesn’t require XML/URI escaping.
+<!-- Device-Provider-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- Device-Provider-Applicability-End -->
 
-Supported operations are Get and Add.
-
-<a href="" id="provider-providerid-entdevicename"></a>**Provider/*ProviderID*/EntDeviceName**  
-Optional. Character string that contains the user-friendly device name used by the IT admin console. The value is set during the enrollment process using the DMClient CSP. You can retrieve it later during an OMA DM session.
-
-Supported operations are Get and Add.
-
-<a href="" id="provider-providerid-entdmid"></a>**Provider/*ProviderID*/EntDMID**  
-Optional. Character string that contains the unique enterprise device ID. The value is set by the management server during the enrollment process using the DMClient CSP. You can retrieve it later during an OMA DM session.
-
-Supported operations are Get and Add.
-
-> [!NOTE]
-> Although hardware device IDs are guaranteed to be unique, there's a concern that this isn't ultimately enforceable during a DM session. The device ID could be changed through the w7 APPLICATION CSP’s **USEHWDEVID** parm by another management server. So during enterprise bootstrap and enrollment, a new device ID is specified by the enterprise server.
-This node is required and must be set by the server before the client certificate renewal is triggered.
-
-<a href="" id="provider-providerid-exchangeid"></a>**Provider/*ProviderID*/ExchangeID**  
-Optional. Character string that contains the unique Exchange device ID used by the Outlook account of the user the session is running against. The enterprise management server can correlate and merge records for:
-
-- A device that's managed by Exchange.
-- A device that's natively managed by a dedicated management server.
-
-> [!NOTE]
-> In some cases for the desktop, this node will return "not found" until the user sets up their email.
-
-Supported operation is Get.
-
-The following XML is a Get command example:
-
-```xml
-<Get>
-   <CmdID>12</CmdID>
-   <Item>
-      <Target>
-         <LocURI>./Vendor/MSFT/DMClient/Provider/<ProviderID>/ExchangeID</LocURI>
-      </Target>
-   </Item>
-</Get>
+<!-- Device-Provider-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider
 ```
+<!-- Device-Provider-OmaUri-End -->
 
-<a href="" id="provider-providerid-signedentdmid"></a>**Provider/*ProviderID*/SignedEntDMID**  
-Optional. Character string that contains the device ID. This node and the nodes **CertRenewTimeStamp** can be used by the MDM provider to verify client identity to update the registration record after the device certificate is renewed. The device signs the **EntDMID** with the old client certificate during the certificate renewal process and saves the signature locally.
+<!-- Device-Provider-Description-Begin -->
+<!-- Description-Source-DDF -->
+The root node for all settings that belong to a single management server.
+<!-- Device-Provider-Description-End -->
 
-Supported operation is Get.
+<!-- Device-Provider-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-Editable-End -->
 
-<a href="" id="provider-providerid-certrenewtimestamp"></a>**Provider/*ProviderID*/CertRenewTimeStamp**  
-Optional. The time in OMA DM standard time format. This node is designed to reduce the risk of the certificate being used by another device. The device records the time that the new certificate was created.
+<!-- Device-Provider-DFProperties-Begin -->
+**Description framework properties**:
 
-Supported operation is Get.
+| Property name | Property value |
+|:--|:--|
+| Format | `node` |
+| Access Type | Get |
+<!-- Device-Provider-DFProperties-End -->
 
-<a href="" id="provider-providerid-managementserviceaddress"></a>**Provider/*ProviderID*/ManagementServiceAddress**  
-Required. The character string that contains the device management server address. It can be updated during an OMA DM session by the management server. It allows the server to load balance to another server when too many devices are connected to the server.
+<!-- Device-Provider-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-Examples-End -->
+
+<!-- Device-Provider-End -->
+
+<!-- Device-Provider-{ProviderID}-Begin -->
+### Device/Provider/{ProviderID}
+
+<!-- Device-Provider-{ProviderID}-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- Device-Provider-{ProviderID}-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}
+```
+<!-- Device-Provider-{ProviderID}-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-Description-Begin -->
+<!-- Description-Source-DDF -->
+This node contains the URI-encoded value of the bootstrapped device management account's Provider ID. Scope is dynamic. This value is set and controlled by the MDM server. As a best practice, use text that doesn't require XML/URI escaping.
+<!-- Device-Provider-{ProviderID}-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `node` |
+| Access Type | Add, Delete, Get |
+| Dynamic Node Naming | ServerGeneratedUniqueIdentifier |
+<!-- Device-Provider-{ProviderID}-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-End -->
+
+<!-- Device-Provider-{ProviderID}-AADDeviceID-Begin -->
+#### Device/Provider/{ProviderID}/AADDeviceID
+
+<!-- Device-Provider-{ProviderID}-AADDeviceID-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- Device-Provider-{ProviderID}-AADDeviceID-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-AADDeviceID-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/AADDeviceID
+```
+<!-- Device-Provider-{ProviderID}-AADDeviceID-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-AADDeviceID-Description-Begin -->
+<!-- Description-Source-DDF -->
+Device ID used for AAD device registration.
+<!-- Device-Provider-{ProviderID}-AADDeviceID-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-AADDeviceID-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-AADDeviceID-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-AADDeviceID-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Get |
+<!-- Device-Provider-{ProviderID}-AADDeviceID-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-AADDeviceID-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-AADDeviceID-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-AADDeviceID-End -->
+
+<!-- Device-Provider-{ProviderID}-AADResourceID-Begin -->
+#### Device/Provider/{ProviderID}/AADResourceID
+
+<!-- Device-Provider-{ProviderID}-AADResourceID-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- Device-Provider-{ProviderID}-AADResourceID-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-AADResourceID-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/AADResourceID
+```
+<!-- Device-Provider-{ProviderID}-AADResourceID-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-AADResourceID-Description-Begin -->
+<!-- Description-Source-DDF -->
+This is the ResourceID used when requesting the user token from the OMA DM session for Azure Active Directory (Azure AD) enrollments (Azure AD Join or Add Accounts). The token is audience-specific, which allows for different service principals (enrollment vs. device management). It can be an application ID or the endpoint that you are trying to access.
+<!-- Device-Provider-{ProviderID}-AADResourceID-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-AADResourceID-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+For more information about Azure AD enrollment, see [Azure Active Directory integration with MDM](../azure-active-directory-integration-with-mdm.md).
+<!-- Device-Provider-{ProviderID}-AADResourceID-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-AADResourceID-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Get, Replace |
+<!-- Device-Provider-{ProviderID}-AADResourceID-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-AADResourceID-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-AADResourceID-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-AADResourceID-End -->
+
+<!-- Device-Provider-{ProviderID}-AADSendDeviceToken-Begin -->
+#### Device/Provider/{ProviderID}/AADSendDeviceToken
+
+<!-- Device-Provider-{ProviderID}-AADSendDeviceToken-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- Device-Provider-{ProviderID}-AADSendDeviceToken-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-AADSendDeviceToken-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/AADSendDeviceToken
+```
+<!-- Device-Provider-{ProviderID}-AADSendDeviceToken-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-AADSendDeviceToken-Description-Begin -->
+<!-- Description-Source-DDF -->
+For Azure AD backed enrollments, this will cause the client to send a Device Token if the User Token can't be obtained.
+<!-- Device-Provider-{ProviderID}-AADSendDeviceToken-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-AADSendDeviceToken-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-AADSendDeviceToken-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-AADSendDeviceToken-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `bool` |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-Provider-{ProviderID}-AADSendDeviceToken-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-AADSendDeviceToken-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| false | Don't send Device Token if User Token can't be obtained. |
+| true | Send Device Token if User Token can't be obtained. |
+<!-- Device-Provider-{ProviderID}-AADSendDeviceToken-AllowedValues-End -->
+
+<!-- Device-Provider-{ProviderID}-AADSendDeviceToken-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-AADSendDeviceToken-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-AADSendDeviceToken-End -->
+
+<!-- Device-Provider-{ProviderID}-CertRenewTimeStamp-Begin -->
+#### Device/Provider/{ProviderID}/CertRenewTimeStamp
+
+<!-- Device-Provider-{ProviderID}-CertRenewTimeStamp-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- Device-Provider-{ProviderID}-CertRenewTimeStamp-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-CertRenewTimeStamp-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/CertRenewTimeStamp
+```
+<!-- Device-Provider-{ProviderID}-CertRenewTimeStamp-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-CertRenewTimeStamp-Description-Begin -->
+<!-- Description-Source-DDF -->
+The time in OMA DM standard time format. This node is designed to reduce the risk of the certificate being used by another device. The device records the time that the new certificate was created.
+<!-- Device-Provider-{ProviderID}-CertRenewTimeStamp-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-CertRenewTimeStamp-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-CertRenewTimeStamp-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-CertRenewTimeStamp-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-Provider-{ProviderID}-CertRenewTimeStamp-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-CertRenewTimeStamp-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-CertRenewTimeStamp-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-CertRenewTimeStamp-End -->
+
+<!-- Device-Provider-{ProviderID}-CommercialID-Begin -->
+#### Device/Provider/{ProviderID}/CommercialID
+
+<!-- Device-Provider-{ProviderID}-CommercialID-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- Device-Provider-{ProviderID}-CommercialID-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-CommercialID-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/CommercialID
+```
+<!-- Device-Provider-{ProviderID}-CommercialID-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-CommercialID-Description-Begin -->
+<!-- Description-Source-DDF -->
+Configures the identifier used to uniquely associate this diagnostic data of this device as belonging to a given organization. If your organization is participating in a program that requires this device to be identified as belonging to your organization then use this setting to provide that identification. The value for this setting will be provided by Microsoft as part of the onboarding process for the program. If you disable or don't configure this policy setting, then Microsoft won't be able to use this identifier to associate this machine and its diagnostic data with your organization.
+<!-- Device-Provider-{ProviderID}-CommercialID-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-CommercialID-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-CommercialID-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-CommercialID-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-Provider-{ProviderID}-CommercialID-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-CommercialID-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-CommercialID-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-CommercialID-End -->
+
+<!-- Device-Provider-{ProviderID}-ConfigLock-Begin -->
+#### Device/Provider/{ProviderID}/ConfigLock
+
+<!-- Device-Provider-{ProviderID}-ConfigLock-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Device-Provider-{ProviderID}-ConfigLock-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-ConfigLock-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/ConfigLock
+```
+<!-- Device-Provider-{ProviderID}-ConfigLock-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-ConfigLock-Description-Begin -->
+<!-- Description-Source-Not-Found -->
+<!-- Device-Provider-{ProviderID}-ConfigLock-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-ConfigLock-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+This node enables [Config Lock](../config-lock.md) feature. If enabled, policies defined in the Config Lock document will be monitored and quickly remediated when a configuration drift is detected.
 
 > [!NOTE]
-> When the **ManagementServerAddressList** value is set, the device ignores the value.
+> If the device isn't a Secured-core PC, then this feature won't work. To know more, see [Secured-core PC](/windows-hardware/design/device-experiences/oem-highly-secure).
+<!-- Device-Provider-{ProviderID}-ConfigLock-Editable-End -->
 
-The DMClient CSP will save the address to the same location as the w7 and DMS CSPs. The save ensures the management client has a single place to retrieve the current server address. The initial value for this node is the same server address value as bootstrapped using the [w7 APPLICATION configuration service provider](w7-application-csp.md).
+<!-- Device-Provider-{ProviderID}-ConfigLock-DFProperties-Begin -->
+**Description framework properties**:
 
-Starting in Windows 10, version 1511, this node supports multiple server addresses in the format &lt;URL1&gt;&lt;URL2&gt;&lt;URL3&gt;. If there's only a single URL, then the &lt;&gt; aren't required. This feature is supported on Windows client devices.
+| Property name | Property value |
+|:--|:--|
+| Format | `node` |
+| Access Type | Get |
+<!-- Device-Provider-{ProviderID}-ConfigLock-DFProperties-End -->
 
-During a DM session, the device will use the first address on the list and then keep going down the list until a successful connection is achieved. The DM client should cache the successfully connected server URL for the next session.
+<!-- Device-Provider-{ProviderID}-ConfigLock-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-ConfigLock-Examples-End -->
 
-Supported operations are Add, Get, and Replace.
+<!-- Device-Provider-{ProviderID}-ConfigLock-End -->
 
-<a href="" id="provider-providerid-upn"></a>**Provider/*ProviderID*/UPN**  
-Optional. Allows the management server to update the User Principal Name (UPN) of the enrolled user. This information is useful when the user's email address changes in the identity system. Or, when the user enters an invalid UPN during enrollment, and fixes the UPN during federated enrollment. The UPN will be recorded and the UX will reflect the updated UPN.
+<!-- Device-Provider-{ProviderID}-ConfigLock-Lock-Begin -->
+##### Device/Provider/{ProviderID}/ConfigLock/Lock
 
-Supported operations are Get and Replace.
+<!-- Device-Provider-{ProviderID}-ConfigLock-Lock-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Device-Provider-{ProviderID}-ConfigLock-Lock-Applicability-End -->
 
-<a href="" id="provider-providerid-helpphonenumber"></a>**Provider/*ProviderID*/HelpPhoneNumber**  
-Optional. The character string that allows the user experience to include a customized help phone number. Users can see this information if they need help or support.
+<!-- Device-Provider-{ProviderID}-ConfigLock-Lock-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/ConfigLock/Lock
+```
+<!-- Device-Provider-{ProviderID}-ConfigLock-Lock-OmaUri-End -->
 
-Supported operations are Get, Replace, and Delete.
+<!-- Device-Provider-{ProviderID}-ConfigLock-Lock-Description-Begin -->
+<!-- Description-Source-DDF -->
+This node specifies how the client will perform the lock mode for SecureCore PC. 0: unlock; 1: lock. The default value is 0.
+<!-- Device-Provider-{ProviderID}-ConfigLock-Lock-Description-End -->
 
-<a href="" id="provider-providerid-helpwebsite"></a>**Provider/*ProviderID*/HelpWebsite**  
-Optional. The character string that allows the user experience to include a customized help website. Users can see this information if they need help or support.
+<!-- Device-Provider-{ProviderID}-ConfigLock-Lock-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-ConfigLock-Lock-Editable-End -->
 
-Supported operations are Get, Replace, and Delete
+<!-- Device-Provider-{ProviderID}-ConfigLock-Lock-DFProperties-Begin -->
+**Description framework properties**:
 
-<a href="" id="provider-providerid-helpemailaddress"></a>**Provider/*ProviderID*/HelpEmailAddress**  
-Optional. The character string that allows the user experience to include a customized help email address. Users can see this information if they need help or support.
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- Device-Provider-{ProviderID}-ConfigLock-Lock-DFProperties-End -->
 
-Supported operations are Get, Replace, and Delete.
+<!-- Device-Provider-{ProviderID}-ConfigLock-Lock-AllowedValues-Begin -->
+**Allowed values**:
 
-<a href="" id="provider-providerid-requiremessagesigning"></a>**Provider/*ProviderID*/RequireMessageSigning**  
-Boolean type. Primarily used for SSL bridging mode where firewalls and proxies are deployed and where device client identity is required. When enabled, every SyncML message from the device will carry an additional HTTP header named MDM-Signature. This header contains BASE64-encoded Cryptographic Message Syntax using a Detached Signature of the complete SyncML message SHA-2 (inclusive of the SyncHdr and SyncBody). Signing is performed using the private key of the management session certificate that was enrolled as part of the enrollment process. The device public key and PKCS9 UTC signing time stamp are included in the authenticated attributes in the signature.
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Unlock. |
+| 1 | Lock. |
+<!-- Device-Provider-{ProviderID}-ConfigLock-Lock-AllowedValues-End -->
 
-Default value is false, where the device management client doesn't include authentication information in the management session HTTP header. Optionally set to true, where the client authentication information is provided in the management session HTTP header.
+<!-- Device-Provider-{ProviderID}-ConfigLock-Lock-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-ConfigLock-Lock-Examples-End -->
 
-When enabled, the MDM provider should:
+<!-- Device-Provider-{ProviderID}-ConfigLock-Lock-End -->
 
-- Validate the signature and the timestamp using the device identify certificate enrolled as part of Mobile Device Enrollment protocol (MS-MDE).
-- Ensure the certificate and time are valid.
-- Verify that the signature is trusted by the MDM provider.
+<!-- Device-Provider-{ProviderID}-ConfigLock-SecureCore-Begin -->
+##### Device/Provider/{ProviderID}/ConfigLock/SecureCore
 
-Supported operations are Get, Replace, and Delete.
+<!-- Device-Provider-{ProviderID}-ConfigLock-SecureCore-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Device-Provider-{ProviderID}-ConfigLock-SecureCore-Applicability-End -->
 
-<a href="" id="provider-providerid-syncapplicationversion"></a>**Provider/*ProviderID*/SyncApplicationVersion**  
-Optional. Used by the management server to set the DM session version that the server and device should use. Default is 1.0. In Windows 10, the DM session protocol version of the client is 2.0. If the server is updated to support 2.0, then you should set this value to 2.0. In the next session, check to see if there's a client behavior change between 1.0 and 2.0.
+<!-- Device-Provider-{ProviderID}-ConfigLock-SecureCore-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/ConfigLock/SecureCore
+```
+<!-- Device-Provider-{ProviderID}-ConfigLock-SecureCore-OmaUri-End -->
 
-> [!NOTE]
-> This node is only supported in Windows 10 and later.
+<!-- Device-Provider-{ProviderID}-ConfigLock-SecureCore-Description-Begin -->
+<!-- Description-Source-DDF -->
+The node returns the boolean value whether the device is a SecureCore PC.
+<!-- Device-Provider-{ProviderID}-ConfigLock-SecureCore-Description-End -->
 
-Once you set the value to 2.0, it won't go back to 1.0.
+<!-- Device-Provider-{ProviderID}-ConfigLock-SecureCore-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-ConfigLock-SecureCore-Editable-End -->
 
-Supported operations are Get, Replace, and Delete.
+<!-- Device-Provider-{ProviderID}-ConfigLock-SecureCore-DFProperties-Begin -->
+**Description framework properties**:
 
-<a href="" id="provider-providerid-maxsyncapplicationversion"></a>**Provider/*ProviderID*/MaxSyncApplicationVersion**  
-Optional. Used by the client to indicate the latest DM session version that it supports. Default is 2.0.
+| Property name | Property value |
+|:--|:--|
+| Format | `bool` |
+| Access Type | Get |
+<!-- Device-Provider-{ProviderID}-ConfigLock-SecureCore-DFProperties-End -->
 
-When you query this node, a Windows 10 client will return 2.0 and a Windows 8.1 client will return an error code (404 node not found).
+<!-- Device-Provider-{ProviderID}-ConfigLock-SecureCore-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-ConfigLock-SecureCore-Examples-End -->
 
-Supported operation is Get.
+<!-- Device-Provider-{ProviderID}-ConfigLock-SecureCore-End -->
 
-<a href="" id="provider-providerid-aadresourceid"></a>**Provider/*ProviderID*/AADResourceID**  
-Optional. This ResourceID is used when requesting the user token from the OMA DM session for Azure Active Directory (Azure AD) enrollments (Azure AD Join or Add Accounts). The token is audience-specific, which allows for different service principals (enrollment vs. device management). It can be an application ID or the endpoint that you're trying to access.
+<!-- Device-Provider-{ProviderID}-ConfigLock-UnlockDuration-Begin -->
+##### Device/Provider/{ProviderID}/ConfigLock/UnlockDuration
 
-For more information about Azure AD enrollment, see [Azure Active Directory integration with MDM](azure-active-directory-integration-with-mdm.md).
+<!-- Device-Provider-{ProviderID}-ConfigLock-UnlockDuration-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Device-Provider-{ProviderID}-ConfigLock-UnlockDuration-Applicability-End -->
 
-<a href="" id="provider-providerid-enableomadmkeepalivemessage"></a>**Provider/*ProviderID*/EnableOmaDmKeepAliveMessage**  
-Added in Windows 10, version 1511. A boolean value that specifies whether the DM client should send out a request pending alert in case the device response to a DM request is too slow.
+<!-- Device-Provider-{ProviderID}-ConfigLock-UnlockDuration-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/ConfigLock/UnlockDuration
+```
+<!-- Device-Provider-{ProviderID}-ConfigLock-UnlockDuration-OmaUri-End -->
 
-When the server sends a configuration request, the client can take longer than the HTTP timeout to get all information together. The session might end unexpectedly because of the timeout. By default, the MDM client doesn't send an alert that a DM request is pending.
+<!-- Device-Provider-{ProviderID}-ConfigLock-UnlockDuration-Description-Begin -->
+<!-- Description-Source-DDF -->
+This node, when it's set, tells the client to set how many minutes the device should be temporarily unlocked from SecureCore settings protection. The default value is 480.
+<!-- Device-Provider-{ProviderID}-ConfigLock-UnlockDuration-Description-End -->
 
-To work around the timeout, you can use this setting to keep the session alive by sending a heartbeat message back to the server. Send a SyncML message with a specific device alert element in the body until the client can respond back to the server with the requested information.
+<!-- Device-Provider-{ProviderID}-ConfigLock-UnlockDuration-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-ConfigLock-UnlockDuration-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-ConfigLock-UnlockDuration-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 480 |
+<!-- Device-Provider-{ProviderID}-ConfigLock-UnlockDuration-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-ConfigLock-UnlockDuration-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-ConfigLock-UnlockDuration-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-ConfigLock-UnlockDuration-End -->
+
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Begin -->
+#### Device/Provider/{ProviderID}/ConfigRefresh
+
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/ConfigRefresh
+```
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Description-Begin -->
+<!-- Description-Source-DDF -->
+Parent node for ConfigRefresh nodes.
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `node` |
+| Access Type | Add, Delete, Get |
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-End -->
+
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Cadence-Begin -->
+##### Device/Provider/{ProviderID}/ConfigRefresh/Cadence
+
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Cadence-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Cadence-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Cadence-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/ConfigRefresh/Cadence
+```
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Cadence-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Cadence-Description-Begin -->
+<!-- Description-Source-DDF -->
+This node determines the number of minutes between refreshes.
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Cadence-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Cadence-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Cadence-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Cadence-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[30-1440]` |
+| Default Value  | 90 |
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Cadence-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Cadence-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Cadence-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Cadence-End -->
+
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Enabled-Begin -->
+##### Device/Provider/{ProviderID}/ConfigRefresh/Enabled
+
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Enabled-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Enabled-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Enabled-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/ConfigRefresh/Enabled
+```
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Enabled-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Enabled-Description-Begin -->
+<!-- Description-Source-DDF -->
+This node determines whether or not a periodic settings refresh for MDM policies will occur.
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Enabled-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Enabled-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Enabled-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Enabled-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `bool` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | false |
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Enabled-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Enabled-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| true | ConfigRefresh is enabled. |
+| false (Default) | ConfigRefresh is disabled. |
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Enabled-AllowedValues-End -->
+
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Enabled-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Enabled-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Enabled-End -->
+
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-PausePeriod-Begin -->
+##### Device/Provider/{ProviderID}/ConfigRefresh/PausePeriod
+
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-PausePeriod-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-PausePeriod-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-PausePeriod-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/ConfigRefresh/PausePeriod
+```
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-PausePeriod-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-PausePeriod-Description-Begin -->
+<!-- Description-Source-DDF -->
+This node determines the number of minutes ConfigRefresh should be paused for.
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-PausePeriod-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-PausePeriod-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-PausePeriod-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-PausePeriod-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-1440]` |
+| Default Value  | 0 |
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-PausePeriod-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-PausePeriod-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-PausePeriod-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-PausePeriod-End -->
+
+<!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-Begin -->
+#### Device/Provider/{ProviderID}/CustomEnrollmentCompletePage
+
+<!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/CustomEnrollmentCompletePage
+```
+<!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-Description-Begin -->
+<!-- Description-Source-DDF -->
+These nodes provision custom text for the enrollment page.
+<!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `node` |
+| Access Type | Add, Delete, Get |
+<!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-End -->
+
+<!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-BodyText-Begin -->
+##### Device/Provider/{ProviderID}/CustomEnrollmentCompletePage/BodyText
+
+<!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-BodyText-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-BodyText-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-BodyText-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/CustomEnrollmentCompletePage/BodyText
+```
+<!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-BodyText-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-BodyText-Description-Begin -->
+<!-- Description-Source-DDF -->
+Specifies the body text of the all done page that appears at the end of the MDM enrollment flow.
+<!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-BodyText-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-BodyText-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-BodyText-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-BodyText-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-BodyText-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-BodyText-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-BodyText-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-BodyText-End -->
+
+<!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-HyperlinkHref-Begin -->
+##### Device/Provider/{ProviderID}/CustomEnrollmentCompletePage/HyperlinkHref
+
+<!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-HyperlinkHref-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-HyperlinkHref-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-HyperlinkHref-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/CustomEnrollmentCompletePage/HyperlinkHref
+```
+<!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-HyperlinkHref-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-HyperlinkHref-Description-Begin -->
+<!-- Description-Source-DDF -->
+Specifies the URL that's shown at the end of the MDM enrollment flow.
+<!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-HyperlinkHref-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-HyperlinkHref-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-HyperlinkHref-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-HyperlinkHref-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-HyperlinkHref-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-HyperlinkHref-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-HyperlinkHref-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-HyperlinkHref-End -->
+
+<!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-HyperlinkText-Begin -->
+##### Device/Provider/{ProviderID}/CustomEnrollmentCompletePage/HyperlinkText
+
+<!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-HyperlinkText-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-HyperlinkText-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-HyperlinkText-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/CustomEnrollmentCompletePage/HyperlinkText
+```
+<!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-HyperlinkText-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-HyperlinkText-Description-Begin -->
+<!-- Description-Source-DDF -->
+Specifies the display text for the URL that's shown at the end of the MDM enrollment flow.
+<!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-HyperlinkText-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-HyperlinkText-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-HyperlinkText-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-HyperlinkText-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-HyperlinkText-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-HyperlinkText-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-HyperlinkText-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-HyperlinkText-End -->
+
+<!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-Title-Begin -->
+##### Device/Provider/{ProviderID}/CustomEnrollmentCompletePage/Title
+
+<!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-Title-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-Title-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-Title-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/CustomEnrollmentCompletePage/Title
+```
+<!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-Title-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-Title-Description-Begin -->
+<!-- Description-Source-DDF -->
+Specifies the title of the all done page that appears at the end of the MDM enrollment flow.
+<!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-Title-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-Title-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-Title-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-Title-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-Title-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-Title-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-Title-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-Title-End -->
+
+<!-- Device-Provider-{ProviderID}-EnableOmaDmKeepAliveMessage-Begin -->
+#### Device/Provider/{ProviderID}/EnableOmaDmKeepAliveMessage
+
+<!-- Device-Provider-{ProviderID}-EnableOmaDmKeepAliveMessage-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+<!-- Device-Provider-{ProviderID}-EnableOmaDmKeepAliveMessage-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-EnableOmaDmKeepAliveMessage-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/EnableOmaDmKeepAliveMessage
+```
+<!-- Device-Provider-{ProviderID}-EnableOmaDmKeepAliveMessage-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-EnableOmaDmKeepAliveMessage-Description-Begin -->
+<!-- Description-Source-DDF -->
+A boolean value that specifies whether the DM client should send out a request pending alert in case the device response to a DM request is too slow. When the server sends a configuration request, sometimes it takes the client longer than the HTTP timeout to get all information together and then the session ends unexpectedly due to timeout. By default, the MDM client doesn't send an alert that a DM request is pending. To work around the timeout, you can use this setting to keep the session alive by sending a heartbeat message back to the server. This is achieved by sending a SyncML message with a specific device alert element in the body until the client is able to respond back to the server with the requested information.
+<!-- Device-Provider-{ProviderID}-EnableOmaDmKeepAliveMessage-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-EnableOmaDmKeepAliveMessage-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-EnableOmaDmKeepAliveMessage-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-EnableOmaDmKeepAliveMessage-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `bool` |
+| Access Type | Get, Replace |
+| Default Value  | false |
+<!-- Device-Provider-{ProviderID}-EnableOmaDmKeepAliveMessage-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-EnableOmaDmKeepAliveMessage-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| false (Default) | Enable message. |
+| true | Disable message. |
+<!-- Device-Provider-{ProviderID}-EnableOmaDmKeepAliveMessage-AllowedValues-End -->
+
+<!-- Device-Provider-{ProviderID}-EnableOmaDmKeepAliveMessage-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+**Example**:
 
 Here's an example of DM message sent by the device when it's in pending state:
 
@@ -260,7 +1061,7 @@ Here's an example of DM message sent by the device when it's in pending state:
   <SyncBody>
 <Alert>
     <CmdID>2</CmdID>
-    <Data>1224</Data> 
+    <Data>1224</Data>
     <Item>
         <Meta>
             <Type xmlns="syncml:metinf">Reversed-Domain-Name:com.microsoft.mdm.requestpending</Type>
@@ -271,32 +1072,1594 @@ Here's an example of DM message sent by the device when it's in pending state:
   </SyncBody>
 </SyncML>
 ```
+<!-- Device-Provider-{ProviderID}-EnableOmaDmKeepAliveMessage-Examples-End -->
 
-<a href="" id="provider-providerid-aaddeviceid"></a>**Provider/*ProviderID*/AADDeviceID**  
-Added in Windows 10, version 1607. Returns the device ID for the Azure AD device registration.
+<!-- Device-Provider-{ProviderID}-EnableOmaDmKeepAliveMessage-End -->
 
-Supported operation is Get.
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-Begin -->
+#### Device/Provider/{ProviderID}/EnhancedAppLayerSecurity
 
-<a href="" id="provider-providerid-enrollmenttype"></a>**Provider/*ProviderID*/EnrollmentType**  
-Added in Windows 10, version 1607. Returns the enrollment type (Device or Full).
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-Applicability-End -->
 
-Supported operation is Get.
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/EnhancedAppLayerSecurity
+```
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-OmaUri-End -->
 
-<a href="" id="provider-providerid-hwdevid"></a>**Provider/*ProviderID*/HWDevID**  
-Added in Windows 10, version 1607. Returns the hardware device ID.
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-Description-Begin -->
+<!-- Description-Source-Not-Found -->
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-Description-End -->
 
-Supported operation is Get.
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-Editable-End -->
 
-<a href="" id="provider-providerid-commercialid"></a>**Provider/*ProviderID*/CommercialID**  
-Added in Windows 10, version 1607. It configures the identifier that uniquely associates the device's diagnostic data belonging to the organization. If your organization is participating in a program that requires this device to be identified as belonging to your organization, then use this setting to provide that identification. The value for this setting is provided by Microsoft in the onboarding process for the program. If you disable or don't configure this policy setting, then Microsoft can't use this identifier to associate this machine and its diagnostic data with your organization.
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-DFProperties-Begin -->
+**Description framework properties**:
 
-Supported operations are Add, Get, Replace, and Delete.
+| Property name | Property value |
+|:--|:--|
+| Format | `node` |
+| Access Type | Get |
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-DFProperties-End -->
 
-<a href="" id="provider-providerid-managementserveraddresslist"></a>**Provider/*ProviderID*/ManagementServerAddressList**  
-Added in Windows 10, version 1607. The list of management server URLs in the format &lt;URL1&gt;&lt;URL2&gt;&lt;URL3&gt;, and so on. If there's only one, the angle brackets (&lt;&gt;) aren't required.
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-Examples-End -->
 
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-End -->
+
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-Cert0-Begin -->
+##### Device/Provider/{ProviderID}/EnhancedAppLayerSecurity/Cert0
+
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-Cert0-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-Cert0-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-Cert0-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/EnhancedAppLayerSecurity/Cert0
+```
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-Cert0-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-Cert0-Description-Begin -->
+<!-- Description-Source-DDF -->
+The node contains the primary certificate - the public key to use.
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-Cert0-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-Cert0-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-Cert0-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-Cert0-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-Cert0-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-Cert0-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-Cert0-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-Cert0-End -->
+
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-Cert1-Begin -->
+##### Device/Provider/{ProviderID}/EnhancedAppLayerSecurity/Cert1
+
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-Cert1-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-Cert1-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-Cert1-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/EnhancedAppLayerSecurity/Cert1
+```
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-Cert1-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-Cert1-Description-Begin -->
+<!-- Description-Source-DDF -->
+The node contains the secondary certificate - the public key to use.
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-Cert1-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-Cert1-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-Cert1-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-Cert1-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-Cert1-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-Cert1-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-Cert1-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-Cert1-End -->
+
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-SecurityMode-Begin -->
+##### Device/Provider/{ProviderID}/EnhancedAppLayerSecurity/SecurityMode
+
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-SecurityMode-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-SecurityMode-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-SecurityMode-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/EnhancedAppLayerSecurity/SecurityMode
+```
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-SecurityMode-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-SecurityMode-Description-Begin -->
+<!-- Description-Source-DDF -->
+This node specifies how the client will perform the app layer signing and encryption. 0: no op; 1: sign only; 2: encrypt only; 3: sign and encrypt. The default value is 0.
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-SecurityMode-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-SecurityMode-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-SecurityMode-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-SecurityMode-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-SecurityMode-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-SecurityMode-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | No op. |
+| 1 | Sign only. |
+| 2 | Encrypt only. |
+| 3 | Sign and encrypt. |
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-SecurityMode-AllowedValues-End -->
+
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-SecurityMode-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-SecurityMode-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-SecurityMode-End -->
+
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-UseCertIfRevocationCheckOffline-Begin -->
+##### Device/Provider/{ProviderID}/EnhancedAppLayerSecurity/UseCertIfRevocationCheckOffline
+
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-UseCertIfRevocationCheckOffline-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-UseCertIfRevocationCheckOffline-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-UseCertIfRevocationCheckOffline-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/EnhancedAppLayerSecurity/UseCertIfRevocationCheckOffline
+```
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-UseCertIfRevocationCheckOffline-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-UseCertIfRevocationCheckOffline-Description-Begin -->
+<!-- Description-Source-DDF -->
+This node, when it's set, tells the client to use the certificate even when the client can't check the certificate's revocation status because the device is offline. The default value is set.
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-UseCertIfRevocationCheckOffline-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-UseCertIfRevocationCheckOffline-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-UseCertIfRevocationCheckOffline-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-UseCertIfRevocationCheckOffline-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `bool` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | false |
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-UseCertIfRevocationCheckOffline-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-UseCertIfRevocationCheckOffline-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| false (Default) | False. |
+| true | True. |
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-UseCertIfRevocationCheckOffline-AllowedValues-End -->
+
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-UseCertIfRevocationCheckOffline-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-UseCertIfRevocationCheckOffline-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-UseCertIfRevocationCheckOffline-End -->
+
+<!-- Device-Provider-{ProviderID}-EnrollmentType-Begin -->
+#### Device/Provider/{ProviderID}/EnrollmentType
+
+<!-- Device-Provider-{ProviderID}-EnrollmentType-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- Device-Provider-{ProviderID}-EnrollmentType-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-EnrollmentType-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/EnrollmentType
+```
+<!-- Device-Provider-{ProviderID}-EnrollmentType-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-EnrollmentType-Description-Begin -->
+<!-- Description-Source-DDF -->
+Type of MDM enrollment (Device or Full).
+<!-- Device-Provider-{ProviderID}-EnrollmentType-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-EnrollmentType-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-EnrollmentType-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-EnrollmentType-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Get |
+<!-- Device-Provider-{ProviderID}-EnrollmentType-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-EnrollmentType-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-EnrollmentType-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-EnrollmentType-End -->
+
+<!-- Device-Provider-{ProviderID}-EntDeviceName-Begin -->
+#### Device/Provider/{ProviderID}/EntDeviceName
+
+<!-- Device-Provider-{ProviderID}-EntDeviceName-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- Device-Provider-{ProviderID}-EntDeviceName-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-EntDeviceName-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/EntDeviceName
+```
+<!-- Device-Provider-{ProviderID}-EntDeviceName-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-EntDeviceName-Description-Begin -->
+<!-- Description-Source-DDF -->
+Character string that contains the user-friendly device name used by the IT admin console. The value is set during the enrollment process by way of the DMClient CSP. You can retrieve it later during an OMA DM session.
+<!-- Device-Provider-{ProviderID}-EntDeviceName-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-EntDeviceName-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-EntDeviceName-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-EntDeviceName-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-Provider-{ProviderID}-EntDeviceName-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-EntDeviceName-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-EntDeviceName-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-EntDeviceName-End -->
+
+<!-- Device-Provider-{ProviderID}-EntDMID-Begin -->
+#### Device/Provider/{ProviderID}/EntDMID
+
+<!-- Device-Provider-{ProviderID}-EntDMID-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- Device-Provider-{ProviderID}-EntDMID-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-EntDMID-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/EntDMID
+```
+<!-- Device-Provider-{ProviderID}-EntDMID-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-EntDMID-Description-Begin -->
+<!-- Description-Source-DDF -->
+Character string that contains the unique enterprise device ID. The value is set by the management server during the enrollment process by way of the DMClient CSP. You can retrieve it later during an OMA DM session.
+<!-- Device-Provider-{ProviderID}-EntDMID-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-EntDMID-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> The &lt; and &gt; should be escaped.
+> Although hardware device IDs are guaranteed to be unique, there's a concern that this isn't ultimately enforceable during a DM session. The device ID could be changed through the w7 APPLICATION CSP's **USEHWDEVID** node by another management server. So during enterprise bootstrap and enrollment, a new device ID is specified by the enterprise server. This node is required and must be set by the server before the client certificate renewal is triggered.
+<!-- Device-Provider-{ProviderID}-EntDMID-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-EntDMID-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-Provider-{ProviderID}-EntDMID-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-EntDMID-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-EntDMID-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-EntDMID-End -->
+
+<!-- Device-Provider-{ProviderID}-ExchangeID-Begin -->
+#### Device/Provider/{ProviderID}/ExchangeID
+
+<!-- Device-Provider-{ProviderID}-ExchangeID-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- Device-Provider-{ProviderID}-ExchangeID-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-ExchangeID-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/ExchangeID
+```
+<!-- Device-Provider-{ProviderID}-ExchangeID-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-ExchangeID-Description-Begin -->
+<!-- Description-Source-DDF -->
+Character string that contains the unique Exchange device ID used by the Outlook account of the user the session is running against. This is useful for the enterprise management server to correlate and merge records for a device that's managed by exchange and natively managed by a dedicated management server.
+<!-- Device-Provider-{ProviderID}-ExchangeID-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-ExchangeID-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> In some cases, this node will return "not found" until the user sets up their email.
+<!-- Device-Provider-{ProviderID}-ExchangeID-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-ExchangeID-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-Provider-{ProviderID}-ExchangeID-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-ExchangeID-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+**Example**:
+
+```xml
+<Get>
+   <CmdID>12</CmdID>
+   <Item>
+      <Target>
+         <LocURI>./Vendor/MSFT/DMClient/Provider/<ProviderID>/ExchangeID</LocURI>
+      </Target>
+   </Item>
+</Get>
+```
+<!-- Device-Provider-{ProviderID}-ExchangeID-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-ExchangeID-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-Begin -->
+#### Device/Provider/{ProviderID}/FirstSyncStatus
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/FirstSyncStatus
+```
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-Description-Begin -->
+<!-- Description-Source-Not-Found -->
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `node` |
+| Access Type | Add, Delete, Get |
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-AllowCollectLogsButton-Begin -->
+##### Device/Provider/{ProviderID}/FirstSyncStatus/AllowCollectLogsButton
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-AllowCollectLogsButton-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-AllowCollectLogsButton-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-AllowCollectLogsButton-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/FirstSyncStatus/AllowCollectLogsButton
+```
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-AllowCollectLogsButton-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-AllowCollectLogsButton-Description-Begin -->
+<!-- Description-Source-DDF -->
+This node decides whether or not the MDM progress page displays the Collect Logs button. This node only applies to the device MDM status page.
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-AllowCollectLogsButton-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-AllowCollectLogsButton-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-AllowCollectLogsButton-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-AllowCollectLogsButton-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `bool` |
+| Access Type | Get, Replace |
+| Default Value  | false |
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-AllowCollectLogsButton-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-AllowCollectLogsButton-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| false (Default) | Don't show the Collect Logs button on the progress page. |
+| true | Show the Collect Logs button on the progress page. |
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-AllowCollectLogsButton-AllowedValues-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-AllowCollectLogsButton-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-AllowCollectLogsButton-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-AllowCollectLogsButton-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-BlockInStatusPage-Begin -->
+##### Device/Provider/{ProviderID}/FirstSyncStatus/BlockInStatusPage
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-BlockInStatusPage-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-BlockInStatusPage-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-BlockInStatusPage-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/FirstSyncStatus/BlockInStatusPage
+```
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-BlockInStatusPage-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-BlockInStatusPage-Description-Begin -->
+<!-- Description-Source-DDF -->
+Device Only. This node determines whether or not the MDM progress page is blocking in the AADJ or DJ++ case, as well as which remediation options are available.
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-BlockInStatusPage-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-BlockInStatusPage-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-BlockInStatusPage-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-BlockInStatusPage-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Get, Replace |
+| Default Value  | 0 |
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-BlockInStatusPage-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-BlockInStatusPage-AllowedValues-Begin -->
+**Allowed values**:
+
+| Flag | Description |
+|:--|:--|
+| 0x0 | Allow the user to exit the page before provisioning completes. |
+| 0x1 | Block the user on the page and show the Reset PC button on failure. |
+| 0x2 | Block the user on the page and show the Try Again button on failure. |
+| 0x4 | Block the user on the page and show the Continue Anyway button on failure. |
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-BlockInStatusPage-AllowedValues-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-BlockInStatusPage-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-BlockInStatusPage-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-BlockInStatusPage-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-CustomErrorText-Begin -->
+##### Device/Provider/{ProviderID}/FirstSyncStatus/CustomErrorText
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-CustomErrorText-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-CustomErrorText-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-CustomErrorText-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/FirstSyncStatus/CustomErrorText
+```
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-CustomErrorText-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-CustomErrorText-Description-Begin -->
+<!-- Description-Source-DDF -->
+This node allows the MDM to set custom error text, detailing what the user needs to do in case of error. This node only applies to the user MDM status page (on a per user basis).
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-CustomErrorText-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-CustomErrorText-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-CustomErrorText-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-CustomErrorText-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-CustomErrorText-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-CustomErrorText-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-CustomErrorText-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-CustomErrorText-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedModernAppPackages-Begin -->
+##### Device/Provider/{ProviderID}/FirstSyncStatus/ExpectedModernAppPackages
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedModernAppPackages-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedModernAppPackages-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedModernAppPackages-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/FirstSyncStatus/ExpectedModernAppPackages
+```
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedModernAppPackages-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedModernAppPackages-Description-Begin -->
+<!-- Description-Source-DDF -->
+This node contains a list of LocURIs that refer to App Packages the ISV expects to provision via EnterpriseModernAppManagement CSP, delimited by the character L"\xF000". The LocURI will be followed by a semicolon and a number, representing the number of apps included in the App Package. We won't verify that number. E. G. ./Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/PackageFamilyName/PackageFullName/Name;4"\xF000" ./Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/PackageFamilyName/PackageFullName2/Name;2 Which will represent that App Package PackageFullName contains 4 apps, whereas PackageFullName2 contains 2 apps.
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedModernAppPackages-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedModernAppPackages-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedModernAppPackages-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedModernAppPackages-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `\xF000`) |
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedModernAppPackages-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedModernAppPackages-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedModernAppPackages-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedModernAppPackages-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedMSIAppPackages-Begin -->
+##### Device/Provider/{ProviderID}/FirstSyncStatus/ExpectedMSIAppPackages
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedMSIAppPackages-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedMSIAppPackages-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedMSIAppPackages-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/FirstSyncStatus/ExpectedMSIAppPackages
+```
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedMSIAppPackages-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedMSIAppPackages-Description-Begin -->
+<!-- Description-Source-DDF -->
+This node contains a list of LocURIs that refer to App Packages the ISV expects to provision via EnterpriseDesktopAppManagement CSP, delimited by the character L"\xF000". The LocURI will be followed by a semicolon and a number, representing the number of apps included in the App Package. We won't verify that number. E. G. ./User/Vendor/MSFT/EnterpriseDesktopAppManagement/MSI/ProductID1/Status;4"\xF000" ./User/Vendor/MSFT/EnterpriseDesktopAppManagement/MSI/ProductID2/Status;2 Which will represent that App Package ProductID1 contains 4 apps, whereas ProductID2 contains 2 apps.
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedMSIAppPackages-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedMSIAppPackages-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedMSIAppPackages-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedMSIAppPackages-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `\xF000`) |
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedMSIAppPackages-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedMSIAppPackages-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedMSIAppPackages-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedMSIAppPackages-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedNetworkProfiles-Begin -->
+##### Device/Provider/{ProviderID}/FirstSyncStatus/ExpectedNetworkProfiles
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedNetworkProfiles-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedNetworkProfiles-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedNetworkProfiles-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/FirstSyncStatus/ExpectedNetworkProfiles
+```
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedNetworkProfiles-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedNetworkProfiles-Description-Begin -->
+<!-- Description-Source-DDF -->
+This node contains a list of LocURIs that refer to Wi-Fi profiles and VPN profiles the ISV expects to provision, delimited by the character L"\xF000".
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedNetworkProfiles-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedNetworkProfiles-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedNetworkProfiles-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedNetworkProfiles-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `\xF000`) |
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedNetworkProfiles-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedNetworkProfiles-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedNetworkProfiles-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedNetworkProfiles-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedPFXCerts-Begin -->
+##### Device/Provider/{ProviderID}/FirstSyncStatus/ExpectedPFXCerts
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedPFXCerts-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedPFXCerts-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedPFXCerts-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/FirstSyncStatus/ExpectedPFXCerts
+```
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedPFXCerts-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedPFXCerts-Description-Begin -->
+<!-- Description-Source-DDF -->
+This node contains a list of LocURIs that refer to certs the ISV expects to provision via ClientCertificateInstall CSP, delimited by the character L"\xF000" (the CSP_LIST_DELIMITER).
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedPFXCerts-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedPFXCerts-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedPFXCerts-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedPFXCerts-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `\xF000`) |
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedPFXCerts-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedPFXCerts-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedPFXCerts-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedPFXCerts-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedPolicies-Begin -->
+##### Device/Provider/{ProviderID}/FirstSyncStatus/ExpectedPolicies
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedPolicies-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedPolicies-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedPolicies-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/FirstSyncStatus/ExpectedPolicies
+```
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedPolicies-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedPolicies-Description-Begin -->
+<!-- Description-Source-DDF -->
+This node contains a list of LocURIs that refer to Policies the ISV expects to provision, delimited by the character L"\xF000" (the CSP_LIST_DELIMITER).
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedPolicies-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedPolicies-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedPolicies-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedPolicies-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `\xF000`) |
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedPolicies-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedPolicies-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedPolicies-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedPolicies-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedSCEPCerts-Begin -->
+##### Device/Provider/{ProviderID}/FirstSyncStatus/ExpectedSCEPCerts
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedSCEPCerts-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedSCEPCerts-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedSCEPCerts-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/FirstSyncStatus/ExpectedSCEPCerts
+```
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedSCEPCerts-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedSCEPCerts-Description-Begin -->
+<!-- Description-Source-DDF -->
+This node contains a list of LocURIs that refer to SCEP certs the ISV expects to provision via ClientCertificateInstall CSP, delimited by the character L"\xF000" (the CSP_LIST_DELIMITER).
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedSCEPCerts-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedSCEPCerts-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedSCEPCerts-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedSCEPCerts-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `\xF000`) |
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedSCEPCerts-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedSCEPCerts-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedSCEPCerts-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedSCEPCerts-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-IsSyncDone-Begin -->
+##### Device/Provider/{ProviderID}/FirstSyncStatus/IsSyncDone
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-IsSyncDone-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-IsSyncDone-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-IsSyncDone-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/FirstSyncStatus/IsSyncDone
+```
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-IsSyncDone-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-IsSyncDone-Description-Begin -->
+<!-- Description-Source-DDF -->
+This node, when doing a get, tells the server if the "First Syncs" are done and the device is fully provisioned. When doing a Set, this triggers the UX to override whatever state it's in and tell the user that the device is provisioned. It can't be set from True to False (it won't change its mind on whether or not the sync is done), and it can't be set from True to True (to prevent notifications from firing multiple times). This node only applies to the user MDM status page (on a per user basis).
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-IsSyncDone-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-IsSyncDone-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-IsSyncDone-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-IsSyncDone-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `bool` |
+| Access Type | Get, Replace |
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-IsSyncDone-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-IsSyncDone-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| false | The device isn't finished provisioning. |
+| true | The device has finished provisioning. |
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-IsSyncDone-AllowedValues-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-IsSyncDone-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-IsSyncDone-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-IsSyncDone-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ServerHasFinishedProvisioning-Begin -->
+##### Device/Provider/{ProviderID}/FirstSyncStatus/ServerHasFinishedProvisioning
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ServerHasFinishedProvisioning-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ServerHasFinishedProvisioning-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ServerHasFinishedProvisioning-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/FirstSyncStatus/ServerHasFinishedProvisioning
+```
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ServerHasFinishedProvisioning-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ServerHasFinishedProvisioning-Description-Begin -->
+<!-- Description-Source-DDF -->
+This node is set by the server to inform the UX that the server has finished provisioning the device. This was added so that the server can "change its mind" about what it needs to provision on the device. When this node is set, many other DM Client nodes will no longer be able to be changed. If this node isn't True, the UX will consider the provisioning a failure. Once set to true, it would reject attempts to change it back to false with CFGMGR_E_COMMANDNOTALLOWED. This node applies to the per user expected policies and resources lists.
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ServerHasFinishedProvisioning-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ServerHasFinishedProvisioning-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ServerHasFinishedProvisioning-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ServerHasFinishedProvisioning-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `bool` |
+| Access Type | Get, Replace |
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ServerHasFinishedProvisioning-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ServerHasFinishedProvisioning-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| false | Server hasn't finished provisioning. |
+| true | Server has finished provisioning. |
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ServerHasFinishedProvisioning-AllowedValues-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ServerHasFinishedProvisioning-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ServerHasFinishedProvisioning-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-ServerHasFinishedProvisioning-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-SkipDeviceStatusPage-Begin -->
+##### Device/Provider/{ProviderID}/FirstSyncStatus/SkipDeviceStatusPage
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-SkipDeviceStatusPage-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-SkipDeviceStatusPage-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-SkipDeviceStatusPage-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/FirstSyncStatus/SkipDeviceStatusPage
+```
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-SkipDeviceStatusPage-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-SkipDeviceStatusPage-Description-Begin -->
+<!-- Description-Source-DDF -->
+Device only. This node decides whether or not the MDM device progress page skips after AADJ or Hybrid AADJ in OOBE.
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-SkipDeviceStatusPage-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-SkipDeviceStatusPage-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-SkipDeviceStatusPage-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-SkipDeviceStatusPage-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `bool` |
+| Access Type | Get, Replace |
+| Default Value  | true |
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-SkipDeviceStatusPage-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-SkipDeviceStatusPage-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| false | Don't skip the device progress page after Azure AD joined or Hybrid Azure AD joined in OOBE. |
+| true (Default) | Skip the device progress page after Azure AD joined or Hybrid Azure AD joined in OOBE. |
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-SkipDeviceStatusPage-AllowedValues-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-SkipDeviceStatusPage-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-SkipDeviceStatusPage-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-SkipDeviceStatusPage-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-SkipUserStatusPage-Begin -->
+##### Device/Provider/{ProviderID}/FirstSyncStatus/SkipUserStatusPage
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-SkipUserStatusPage-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-SkipUserStatusPage-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-SkipUserStatusPage-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/FirstSyncStatus/SkipUserStatusPage
+```
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-SkipUserStatusPage-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-SkipUserStatusPage-Description-Begin -->
+<!-- Description-Source-DDF -->
+Device only. This node decides whether or not the MDM user progress page skips after AADJ or DJ++ after user login.
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-SkipUserStatusPage-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-SkipUserStatusPage-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-SkipUserStatusPage-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-SkipUserStatusPage-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `bool` |
+| Access Type | Get, Replace |
+| Default Value  | true |
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-SkipUserStatusPage-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-SkipUserStatusPage-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| false | Don't skip the MGM user progress page after Azure AD joined or Hybrid Azure AD joined in OOBE. |
+| true (Default) | Skip the MGM user progress page after Azure AD joined or Hybrid Azure AD joined in OOBE. |
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-SkipUserStatusPage-AllowedValues-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-SkipUserStatusPage-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-SkipUserStatusPage-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-SkipUserStatusPage-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-TimeOutUntilSyncFailure-Begin -->
+##### Device/Provider/{ProviderID}/FirstSyncStatus/TimeOutUntilSyncFailure
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-TimeOutUntilSyncFailure-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-TimeOutUntilSyncFailure-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-TimeOutUntilSyncFailure-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/FirstSyncStatus/TimeOutUntilSyncFailure
+```
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-TimeOutUntilSyncFailure-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-TimeOutUntilSyncFailure-Description-Begin -->
+<!-- Description-Source-DDF -->
+This node determines how long we will poll until we surface an error message to the user. The unit of measurement is minutes. Default value will be 60, while maximum value will be 1,440 (one day).
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-TimeOutUntilSyncFailure-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-TimeOutUntilSyncFailure-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-TimeOutUntilSyncFailure-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-TimeOutUntilSyncFailure-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Get, Replace |
+| Allowed Values | Range: `[1-1440]` |
+| Default Value  | 60 |
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-TimeOutUntilSyncFailure-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-TimeOutUntilSyncFailure-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-TimeOutUntilSyncFailure-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-TimeOutUntilSyncFailure-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-WasDeviceSuccessfullyProvisioned-Begin -->
+##### Device/Provider/{ProviderID}/FirstSyncStatus/WasDeviceSuccessfullyProvisioned
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-WasDeviceSuccessfullyProvisioned-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-WasDeviceSuccessfullyProvisioned-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-WasDeviceSuccessfullyProvisioned-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/FirstSyncStatus/WasDeviceSuccessfullyProvisioned
+```
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-WasDeviceSuccessfullyProvisioned-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-WasDeviceSuccessfullyProvisioned-Description-Begin -->
+<!-- Description-Source-DDF -->
+Integer node determining if a Device was Successfully provisioned. 0 is failure, 1 is success, 2 is in progress. Once the value is changed to 0 or 1, the value can't be changed again. The client will change the value of success or failure and update the node. The server can, however, force a failure or success message to appear on the device by setting this value and then setting the IsSyncDone node to true. This node only applies to the user MDM status page (on a per user basis).
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-WasDeviceSuccessfullyProvisioned-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-WasDeviceSuccessfullyProvisioned-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-WasDeviceSuccessfullyProvisioned-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-WasDeviceSuccessfullyProvisioned-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Get, Replace |
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-WasDeviceSuccessfullyProvisioned-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-WasDeviceSuccessfullyProvisioned-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | The device has failed to provision the device. |
+| 1 | The device has successfully provisioned the device. |
+| 2 | Provisioning is in progress. |
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-WasDeviceSuccessfullyProvisioned-AllowedValues-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-WasDeviceSuccessfullyProvisioned-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-WasDeviceSuccessfullyProvisioned-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-FirstSyncStatus-WasDeviceSuccessfullyProvisioned-End -->
+
+<!-- Device-Provider-{ProviderID}-ForceAadToken-Begin -->
+#### Device/Provider/{ProviderID}/ForceAadToken
+
+<!-- Device-Provider-{ProviderID}-ForceAadToken-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 [10.0.19042.1766] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1766] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1766] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.739] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
+<!-- Device-Provider-{ProviderID}-ForceAadToken-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-ForceAadToken-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/ForceAadToken
+```
+<!-- Device-Provider-{ProviderID}-ForceAadToken-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-ForceAadToken-Description-Begin -->
+<!-- Description-Source-DDF -->
+Force device to send device AAD token during check-in as a separate header.
+<!-- Device-Provider-{ProviderID}-ForceAadToken-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-ForceAadToken-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-ForceAadToken-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-ForceAadToken-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `bool` |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-Provider-{ProviderID}-ForceAadToken-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-ForceAadToken-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | ForceAadTokenNotDefined: the value isn't defined(default). |
+| 1 | AlwaysSendAadDeviceTokenCheckIn: always send AAD device token during check-in as a separate header section(not as Bearer token). |
+| 2 | Reserved for future. AlwaysSendAadUserTokenCheckin: always send AAD user token during check-in as a separate header section(not as Bearer token). |
+| 4 | SendAadDeviceTokenForAuth: to replace AADSendDeviceToken, send AAD Device token for auth as Bearer token. |
+| 8 | Reserved for future. ForceAadTokenMaxAllowed: max value allowed. |
+<!-- Device-Provider-{ProviderID}-ForceAadToken-AllowedValues-End -->
+
+<!-- Device-Provider-{ProviderID}-ForceAadToken-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-ForceAadToken-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-ForceAadToken-End -->
+
+<!-- Device-Provider-{ProviderID}-HelpEmailAddress-Begin -->
+#### Device/Provider/{ProviderID}/HelpEmailAddress
+
+<!-- Device-Provider-{ProviderID}-HelpEmailAddress-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- Device-Provider-{ProviderID}-HelpEmailAddress-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-HelpEmailAddress-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/HelpEmailAddress
+```
+<!-- Device-Provider-{ProviderID}-HelpEmailAddress-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-HelpEmailAddress-Description-Begin -->
+<!-- Description-Source-DDF -->
+The character string that allows the user experience to include a customized help email address that the end user will be able to view and use if they need help or support.
+<!-- Device-Provider-{ProviderID}-HelpEmailAddress-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-HelpEmailAddress-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-HelpEmailAddress-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-HelpEmailAddress-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-Provider-{ProviderID}-HelpEmailAddress-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-HelpEmailAddress-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-HelpEmailAddress-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-HelpEmailAddress-End -->
+
+<!-- Device-Provider-{ProviderID}-HelpPhoneNumber-Begin -->
+#### Device/Provider/{ProviderID}/HelpPhoneNumber
+
+<!-- Device-Provider-{ProviderID}-HelpPhoneNumber-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- Device-Provider-{ProviderID}-HelpPhoneNumber-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-HelpPhoneNumber-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/HelpPhoneNumber
+```
+<!-- Device-Provider-{ProviderID}-HelpPhoneNumber-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-HelpPhoneNumber-Description-Begin -->
+<!-- Description-Source-DDF -->
+The character string that allows the user experience to include a customized help phone number that the end user will be able to view and use if they need help or support.
+<!-- Device-Provider-{ProviderID}-HelpPhoneNumber-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-HelpPhoneNumber-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-HelpPhoneNumber-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-HelpPhoneNumber-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-Provider-{ProviderID}-HelpPhoneNumber-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-HelpPhoneNumber-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-HelpPhoneNumber-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-HelpPhoneNumber-End -->
+
+<!-- Device-Provider-{ProviderID}-HelpWebsite-Begin -->
+#### Device/Provider/{ProviderID}/HelpWebsite
+
+<!-- Device-Provider-{ProviderID}-HelpWebsite-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- Device-Provider-{ProviderID}-HelpWebsite-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-HelpWebsite-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/HelpWebsite
+```
+<!-- Device-Provider-{ProviderID}-HelpWebsite-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-HelpWebsite-Description-Begin -->
+<!-- Description-Source-DDF -->
+The character string that allows the user experience to include a customized help website that the end user will be able to view and use if they need help or support.
+<!-- Device-Provider-{ProviderID}-HelpWebsite-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-HelpWebsite-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-HelpWebsite-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-HelpWebsite-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-Provider-{ProviderID}-HelpWebsite-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-HelpWebsite-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-HelpWebsite-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-HelpWebsite-End -->
+
+<!-- Device-Provider-{ProviderID}-HWDevID-Begin -->
+#### Device/Provider/{ProviderID}/HWDevID
+
+<!-- Device-Provider-{ProviderID}-HWDevID-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- Device-Provider-{ProviderID}-HWDevID-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-HWDevID-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/HWDevID
+```
+<!-- Device-Provider-{ProviderID}-HWDevID-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-HWDevID-Description-Begin -->
+<!-- Description-Source-DDF -->
+Returns the hardware device ID.
+<!-- Device-Provider-{ProviderID}-HWDevID-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-HWDevID-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-HWDevID-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-HWDevID-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Get |
+<!-- Device-Provider-{ProviderID}-HWDevID-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-HWDevID-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-HWDevID-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-HWDevID-End -->
+
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-Begin -->
+#### Device/Provider/{ProviderID}/LinkedEnrollment
+
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 [10.0.19042.2193] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.2193] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.2193] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.918] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/LinkedEnrollment
+```
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-Description-Begin -->
+<!-- Description-Source-DDF -->
+The interior node for linked enrollment.
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `node` |
+| Access Type | Get |
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-End -->
+
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-DiscoveryEndpoint-Begin -->
+##### Device/Provider/{ProviderID}/LinkedEnrollment/DiscoveryEndpoint
+
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-DiscoveryEndpoint-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-DiscoveryEndpoint-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-DiscoveryEndpoint-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/LinkedEnrollment/DiscoveryEndpoint
+```
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-DiscoveryEndpoint-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-DiscoveryEndpoint-Description-Begin -->
+<!-- Description-Source-DDF -->
+Endpoint Discovery is the process where a specific URL (the "discovery endpoint") is accessed, which returns a directory of endpoints for using the system including enrollment. On Get, if the endpoint isn't set, client will return an rmpty string with S_OK.
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-DiscoveryEndpoint-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-DiscoveryEndpoint-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-DiscoveryEndpoint-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-DiscoveryEndpoint-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-DiscoveryEndpoint-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-DiscoveryEndpoint-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-DiscoveryEndpoint-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-DiscoveryEndpoint-End -->
+
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-Enroll-Begin -->
+##### Device/Provider/{ProviderID}/LinkedEnrollment/Enroll
+
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-Enroll-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 [10.0.19042.2193] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.2193] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.2193] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.918] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-Enroll-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-Enroll-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/LinkedEnrollment/Enroll
+```
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-Enroll-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-Enroll-Description-Begin -->
+<!-- Description-Source-DDF -->
+This is an execution node and will trigger a silent Declared Configuration unenroll, there is no user interaction needed. On un-enrollment, all the settings/resources set by Declared Configuration will be rolled back (rollback details will be covered later).
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-Enroll-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-Enroll-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+This is an execution node and will trigger a silent Declared Configuration enrollment, using the AAD device token pulled from the Azure AD-joined device. There is no user interaction needed. When the **DiscoveryEndpoint** is not set, the Enroll node will fail with `ERROR_FILE_NOT_FOUND (0x80070002)` and there is no scheduled task created for dual enrollment.
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-Enroll-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-Enroll-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `null` |
+| Access Type | Exec |
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-Enroll-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-Enroll-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-Enroll-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-Enroll-End -->
+
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-EnrollStatus-Begin -->
+##### Device/Provider/{ProviderID}/LinkedEnrollment/EnrollStatus
+
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-EnrollStatus-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 [10.0.19042.2193] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.2193] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.2193] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.918] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-EnrollStatus-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-EnrollStatus-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/LinkedEnrollment/EnrollStatus
+```
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-EnrollStatus-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-EnrollStatus-Description-Begin -->
+<!-- Description-Source-DDF -->
+Returns the current enrollment or un-enrollment status of the linked enrollment. Supports Get only.
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-EnrollStatus-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-EnrollStatus-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-EnrollStatus-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-EnrollStatus-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Get |
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-EnrollStatus-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-EnrollStatus-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Undefined. |
+| 1 | Enrollment Not started. |
+| 2 | Enrollment In Progress. |
+| 3 | Enrollment Failed. |
+| 4 | Enrollment Succeeded. |
+| 5 | Unenrollment Not started. |
+| 6 | UnEnrollment In Progress. |
+| 7 | UnEnrollment Failed. |
+| 8 | UnEnrollment Succeeded. |
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-EnrollStatus-AllowedValues-End -->
+
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-EnrollStatus-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-EnrollStatus-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-EnrollStatus-End -->
+
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-LastError-Begin -->
+##### Device/Provider/{ProviderID}/LinkedEnrollment/LastError
+
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-LastError-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 [10.0.19042.2193] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.2193] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.2193] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.918] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-LastError-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-LastError-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/LinkedEnrollment/LastError
+```
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-LastError-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-LastError-Description-Begin -->
+<!-- Description-Source-DDF -->
+Supports Get Only. Returns the HRESULT for the last error when enroll/unenroll fails.
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-LastError-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-LastError-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-LastError-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-LastError-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Get |
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-LastError-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-LastError-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-LastError-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-LastError-End -->
+
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-Unenroll-Begin -->
+##### Device/Provider/{ProviderID}/LinkedEnrollment/Unenroll
+
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-Unenroll-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 [10.0.19042.2193] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.2193] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.2193] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.918] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-Unenroll-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-Unenroll-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/LinkedEnrollment/Unenroll
+```
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-Unenroll-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-Unenroll-Description-Begin -->
+<!-- Description-Source-DDF -->
+Trigger Unenroll for the Linked Enrollment.
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-Unenroll-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-Unenroll-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+This is an execution node and will trigger a silent Declared Configuration unenroll, without any user interaction. On un-enrollment, all the settings/resources set by Declared Configuration will be rolled back.
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-Unenroll-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-Unenroll-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `null` |
+| Access Type | Exec |
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-Unenroll-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-Unenroll-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-Unenroll-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-Unenroll-End -->
+
+<!-- Device-Provider-{ProviderID}-ManagementServerAddressList-Begin -->
+#### Device/Provider/{ProviderID}/ManagementServerAddressList
+
+<!-- Device-Provider-{ProviderID}-ManagementServerAddressList-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- Device-Provider-{ProviderID}-ManagementServerAddressList-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-ManagementServerAddressList-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/ManagementServerAddressList
+```
+<!-- Device-Provider-{ProviderID}-ManagementServerAddressList-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-ManagementServerAddressList-Description-Begin -->
+<!-- Description-Source-DDF -->
+The list of management server URLs in the format `<URL1>` `<URL2>` `<URL3>`, and so on. If there is only one, the angle brackets (<>) aren't required. The `< and >` should be escaped. If ManagementServerAddressList node is set, the device will only use the server URL configured in this node and ignore the ManagementServiceAddress value. When the server isn't responding after a specified number of retries, the device tries to use the next server URL in the list until it gets a successful connection. After the server list is updated, the client uses the updated list at the next session starting with the first on in the list.
+<!-- Device-Provider-{ProviderID}-ManagementServerAddressList-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-ManagementServerAddressList-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-ManagementServerAddressList-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-ManagementServerAddressList-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Get, Replace |
+<!-- Device-Provider-{ProviderID}-ManagementServerAddressList-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-ManagementServerAddressList-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+**Example**:
 
 ```xml
    <Replace>
@@ -311,519 +2674,1285 @@ Added in Windows 10, version 1607. The list of management server URLs in the fo
        </Item>
    </Replace>
 ```
+<!-- Device-Provider-{ProviderID}-ManagementServerAddressList-Examples-End -->
 
-If ManagementServerAddressList node is set, the device will only use the server URL configured in this node and ignore the ManagementServiceAddress value.
+<!-- Device-Provider-{ProviderID}-ManagementServerAddressList-End -->
 
-When the server isn't responding after a specified number of retries, the device tries to use the next server URL in the list. It keeps trying until it gets a successful connection. After the server list is updated, the client uses the updated list at the next session starting with the first one in the list.
+<!-- Device-Provider-{ProviderID}-ManagementServerToUpgradeTo-Begin -->
+#### Device/Provider/{ProviderID}/ManagementServerToUpgradeTo
 
-Supported operations are Get and Replace.
+<!-- Device-Provider-{ProviderID}-ManagementServerToUpgradeTo-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- Device-Provider-{ProviderID}-ManagementServerToUpgradeTo-Applicability-End -->
 
-Value type is string.
-
-<a href="" id="provider-providerid-managementservertoupgradeto"></a>**Provider/*ProviderID*/ManagementServerToUpgradeTo**  
-Optional. Added in Windows 10, version 1703. Specify the Discovery server URL of the MDM provider to upgrade to for a Mobile Application Management (MAM) enrolled device.
-
-Supported operations are Add, Delete, Get, and Replace.
-
-Value type is string.
-
-<a href="" id="provider-providerid-numberofdaysafterlostcontacttounenroll"></a>**Provider/*ProviderID*/NumberOfDaysAfterLostContactToUnenroll**  
-Optional. Number of days after last successful sync to unenroll.
-
-Supported operations are Add, Delete, Get, and Replace. 
-
-Value type is integer.
-
-<a href="" id="provider-providerid-aadsenddevicetoken"></a>**Provider/*ProviderID*/AADSendDeviceToken**  
-
-Device. Added in Windows 10 version 1803. For Azure AD backed enrollments, this feature will cause the client to send a Device Token if the User Token can't be obtained.
-
-Supported operations are Add, Delete, Get, and Replace. 
-
-Value type is bool.
-
-<a href="" id="provider-providerid-forceaadtoken"></a>**Provider/*ProviderID*/ForceAadToken**
-The value type is integer/enum.
-
-The value is "1" and it means client should always send Azure Active Directory device token during check-in/sync.
-
-<a href="" id="provider-providerid-poll"></a>**Provider/*ProviderID*/Poll**  
-Optional. Polling schedules must use the DMClient CSP. The Registry paths previously associated with polling using the Registry CSP are now deprecated.
-
-Supported operations are Get and Add.
-
-There are three schedules managed under the Poll node. They enable a rich polling schedule experience to provide greater flexibility in managing the way devices poll the management server. There are various ways that polling schedules may be set. If an invalid polling configuration is set, the device will correct or remove the schedules to restore the polling schedules back to a valid configuration.
-
-If there's no infinite schedule set, then a 24-hour schedule is created and scheduled to launch in the maintenance window.
-
-**Valid poll schedule: sigmoid polling schedule with infinite schedule (Recommended).**
-
-|Schedule name|Schedule set by the server|Actual value queried on device|
-|--- |--- |--- |
-|IntervalForFirstSetOfRetries|15|15|
-|NumberOfFirstRetries|5|5|
-|IntervalForSecondSetOfRetries|60|60|
-|NumberOfSecondRetries|10|10|
-|IntervalForRemainingScheduledRetries|1440|1440|
-|NumberOfRemainingScheduledRetries|0|0|
-
-**Valid poll schedule: initial enrollment only [no infinite schedule]**
-
-|Schedule name|Schedule set by the server|Actual value queried on device|
-|--- |--- |--- |
-|IntervalForFirstSetOfRetries|15|15|
-|NumberOfFirstRetries|5|5|
-|IntervalForSecondSetOfRetries|60|60|
-|NumberOfSecondRetries|10|10|
-|IntervalForRemainingScheduledRetries|0|0|
-|NumberOfRemainingScheduledRetries|0|0|
-
-**Invalid poll schedule: disable all poll schedules**
-
-> [!NOTE]
-> Disabling poll schedules results in UNDEFINED behavior and enrollment may fail if poll schedules are all set to zero.
-
-|Schedule name|Schedule set by the server|Actual value queried on device|
-|--- |--- |--- |
-|IntervalForFirstSetOfRetries|0|0|
-|NumberOfFirstRetries|0|0|
-|IntervalForSecondSetOfRetries|0|0|
-|NumberOfSecondRetries|0|0|
-|IntervalForRemainingScheduledRetries|0|0|
-|NumberOfRemainingScheduledRetries|0|0|
- 
-**Invalid poll schedule: two infinite schedules**
-
-|Schedule name|Schedule set by server|Actual schedule set on device|Actual experience|
-|--- |--- |--- |--- |
-|IntervalForFirstSetOfRetries|15|15|Device polls|
-|NumberOfFirstRetries|5|5|Device polls|
-|IntervalForSecondSetOfRetries|1440|1440|Device polls the server once in 24 hours|
-|NumberOfSecondRetries|0|0|Device polls the server once in 24 hours|
-|IntervalForRemainingScheduledRetries|1440|0|Third schedule is disabled|
-|NumberOfRemainingScheduledRetries|0|0|Third schedule is disabled|
-
-If the device was previously enrolled in MDM with polling schedule configured using the registry key values directly, the MDM provider that supports using DMClient CSP to update polling schedule must first send an Add command to add a **./Vendor/MSFT/DMClient/Enrollment/&lt;ProviderID&gt;/Poll** node before it sends a Get/Replace command to query or update polling parameters using the DMClient CSP
-
-When using the DMClient CSP to configure polling schedule parameters, the server must not set all six polling parameters to 0, or set all three number of retry nodes to 0. It will cause a configuration failure.
-
-<a href="" id="provider-providerid-poll-intervalforfirstsetofretries"></a>**Provider/*ProviderID*/Poll/IntervalForFirstSetOfRetries**  
-Optional. The waiting time (in minutes) for the initial set of retries, which is the number of retries in `/<ProviderID>/Poll/NumberOfFirstRetries`. If IntervalForFirstSetOfRetries isn't set, then the default value is used. The default value is 15. If the value is set to 0, this schedule is disabled.
-
-Supported operations are Get and Replace.
-
-The IntervalForFirstSetOfRetries replaces the deprecated HKLM\\Software\\Microsoft\\Enrollment\\OmaDmRetry\\AuxRetryInterval path that previously used the Registry CSP.
-
-<a href="" id="provider-providerid-poll-numberoffirstretries"></a>**Provider/*ProviderID*/Poll/NumberOfFirstRetries**  
-Optional. The number of times the DM client should retry to connect to the server when the client is initially configured or enrolled to communicate with the server. If the value is set to 0 and the IntervalForFirstSetOfRetries value isn't 0, then the schedule will be set to repeat an infinite number of times and second set and this set of schedule won't set in this case. The default value is 10.
-
-Supported operations are Get and Replace.
-
-The NumberOfFirstRetries replaces the deprecated HKLM\\Software\\Microsoft\\Enrollment\\OmaDmRetry\\AuxNumRetries path that previously used the Registry CSP.
-
-The first set of retries gives the management server some buffered time to be ready to send policy and setting configurations to the device. The total time for first set of retries shouldn't be more than a few hours. The server shouldn't set NumberOfFirstRetries to 0. RemainingScheduledRetries is used for the long run device polling schedule.
-
-<a href="" id="provider-providerid-poll-intervalforsecondsetofretries"></a>**Provider/*ProviderID*/Poll/IntervalForSecondSetOfRetries**  
-Optional. The waiting time (in minutes) for the second set of retries, which is the number of retries in `/<ProviderID>/Poll/NumberOfSecondRetries`. Default value is 0. If this value is set to zero, then this schedule is disabled.
-
-Supported operations are Get and Replace.
-
-The IntervalForSecondSetOfRetries replaces the deprecated HKLM\\Software\\Microsoft\\Enrollment\\OmaDmRetry\\RetryInterval path that previously used the Registry CSP.
-
-<a href="" id="provider-providerid-poll-numberofsecondretries"></a>**Provider/*ProviderID*/Poll/NumberOfSecondRetries**  
-Optional. The number of times the DM client should retry a second round of connecting to the server when the client is initially configured/enrolled to communicate with the server. Default value is 0. If the value is set to 0 and IntervalForSecondSetOfRetries isn't set to 0 AND the first set of retries isn't set as infinite retries, then the schedule repeats an infinite number of times. However, if the first set of retries is set at infinite, then this schedule is disabled.
-
-Supported operations are Get and Replace.
-
-The NumberOfSecondRetries replaces the deprecated HKLM\\Software\\Microsoft\\Enrollment\\OmaDmRetry\\NumRetries path that previously used the Registry CSP.
-
-The second set of retries is also optional and temporarily retries that the total duration should be last for more than a day. And the IntervalForSecondSetOfRetries should be longer than IntervalForFirstSetOfRetries. RemainingScheduledRetries is used for the long run device polling schedule.
-
-<a href="" id="provider-providerid-poll-intervalforremainingscheduledretries"></a>**Provider/*ProviderID*/Poll/IntervalForRemainingScheduledRetries**  
-Optional. The waiting time (in minutes) for the initial set of retries, which is the number of retries in `/<ProviderID>/Poll/NumberOfRemainingScheduledRetries`. Default value is 0. If IntervalForRemainingScheduledRetries is set to 0, then this schedule is disabled.
-
-Supported operations are Get and Replace.
-
-The IntervalForRemainingScheduledRetries replaces the deprecated HKLM\\Software\\Microsoft\\Enrollment\\OmaDmRetry\\Aux2RetryInterval path that previously used the Registry CSP.
-
-<a href="" id="provider-providerid-poll-numberofremainingscheduledretries"></a>**Provider/*ProviderID*/Poll/NumberOfRemainingScheduledRetries**  
-Optional. The number of times the DM client should retry connecting to the server when the client is initially configured/enrolled to communicate with the server. Default value is 0. If the value is set to 0 and IntervalForRemainingScheduledRetries AND the first and second set of retries aren't set as infinite retries, then the schedule will be set to repeat for an infinite number of times. However, if either or both of the first and second set of retries are set as infinite, then this schedule will be disabled.
-
-Supported operations are Get and Replace.
-
-The NumberOfRemainingScheduledRetries replaces the deprecated HKLM\\Software\\Microsoft\\Enrollment\\OmaDmRetry\\Aux2NumRetries path that previously used the Registry CSP.
-
-The RemainingScheduledRetries is used for the long run device polling schedule. 
-
-<a href="" id="provider-providerid-poll-pollonlogin"></a>**Provider/*ProviderID*/Poll/PollOnLogin**  
-Optional. Boolean value that allows the IT admin to require the device to start a management session on any user login, even if the user has previously logged in. Login isn't the same as device unlock. Default value is false, where polling is disabled on first login. Supported values are true or false.
-
-Supported operations are Add, Get, and Replace.
-
-<a href="" id="provider-providerid-poll-alluserspollonfirstlogin"></a>**Provider/*ProviderID*/Poll/AllUsersPollOnFirstLogin**  
-Optional. Boolean value that allows the IT admin to require the device to start a management session on first user login for all NT users. A session is only kicked off the first time a user logs in to the system. Later sign-ins won't trigger an MDM session. Login isn't the same as device unlock. Default value is false, where polling is disabled on first login. Supported values are true or false.
-
-Supported operations are Add, Get, and Replace.
-
-<a href="" id="provider-providerid-linkedenrollment-priority"></a>**Provider/*ProviderID*/LinkedEnrollment/Priority**
-This node is an integer, value is "0" or "1".
-
-Default is 1, meaning the MDM enrollment is the “winning” authority for conflicting policies/resources. Value 1 means MMP-C enrollment is the “winning” one.
-Support operations are Get and Set.
-
-<a href="" id="provider-providerid-linkedenrollment-enroll"></a>**Provider/*ProviderID*/LinkedEnrollment/Enroll**
-This is an execution node and will trigger a silent MMP-C enrollment, using the Azure Active Directory device token pulled from the Azure AD-joined device. There is no user interaction needed.
-
-Support operation is Exec.
-
-<a href="" id="provider-providerid-linkedenrollment-unenroll"></a>**Provider/*ProviderID*/LinkedEnrollment/Unenroll**
-This is an execution node and will trigger a silent MMP-C unenroll, there is no user interaction needed. On un-enrollment, all the settings/resources set by MMPC will be rolled back(rollback details will be covered later).
-
-Support operation is Exec.
-
-<a href="" id="provider-providerid-linkedenrollment-enrollstatus"></a>**Provider/*ProviderID*/LinkedEnrollment/EnrollStatus**
-
-This node can be used to check both enroll and unenroll statuses.
-This will return the enroll action status and is defined as a enum class LinkedEnrollmentStatus. The values are aas follows:
-
-- Undefined = 0
-- EnrollmentNotStarted = 1
-- InProgress = 2
-- Failed = 3
-- Succeeded = 4
-- UnEnrollmentQueued = 5
-- UnEnrollmentSucceeded = 8
-
-Support operation is Get only.
-
-<a href="" id="provider-providerid-linkedenrollment-lasterror"></a>**Provider/*ProviderID*/LinkedEnrollment/LastError**
-
-This specifies the Hresult to report the enrollment/unenroll results.
-
-<a href="" id="provider-providerid-recovery-allowrecovery"></a>**Provider/*ProviderID*/Recovery/AllowRecovery**
-
-This node determines whether or not the client will automatically initiate a MDM Recovery operation when it detects issues with the MDM certificate.
-
-Supported operations are Get, Add, Replace and Delete.
-
-The supported values for this node are 1-true (allow) and 0-false(not allow). Default value is 0.
-
-<a href="" id="provider-providerid-recovery-recoverystatus"></a>**Provider/*ProviderID*/Recovery/RecoveryStatus**
-
-This node tracks the status of a Recovery request from the InitiateRecovery node. The values are as follows:
-
-0 - No Recovery request has been processed.  
-1 - Recovery is in Process.  
-2 - Recovery has finished successfully.  
-3 - Recovery has failed to start because TPM is not available.  
-4 - Recovery has failed to start because Azure Active Directory keys are not protected by the TPM.  
-5 - Recovery has failed to start because the MDM keys are already protected by the TPM.  
-6 - Recovery has failed to start because the TPM is not ready for attestation.  
-7 - Recovery has failed because the client cannot authenticate to the server.  
-8 - Recovery has failed because the server has rejected the client's request.
-
-Supported operation is Get only.
-
-<a href="" id="provider-providerid-recovery-initiaterecovery"></a>**Provider/*ProviderID*/Recovery/InitiateRecovery**
-
-This node initiates an MDM Recovery operation on the client.  
-
-If initiated with argument 0, it triggers MDM Recovery, no matter the state of the device.
-
-If initiated with argument 1, it triggers only if the MDM certificate’s private key isn’t already protected by the TPM, if there is a TPM to put the private key into, and if the TPM is ready for attestation. 
-
-Supported operation is Exec only.
-
-<a href="" id="provider-providerid-multiplesession-numallowedconcurrentusersessionforbackgroundsync"></a>**Provider/*ProviderID*/MultipleSession/NumAllowedConcurrentUserSessionForBackgroundSync**
-
-Optional. This node specifies maximum number of concurrent user sync sessions in background. 
-
-The default value is dynamically decided by the client based on CPU usage.
-
-The values are : 0= none, 1= sequential, anything else=  parallel.
-
-Supported operations are Get, Add, Replace and Delete.
-
-Value type is integer. Only applicable for Windows Enterprise multi-session.
-
-
-<a href="" id="provider-providerid-multiplesession-numallowedconcurrentusersessionatuserlogonsync"></a>**Provider/*ProviderID*/MultipleSession/NumAllowedConcurrentUserSessionAtUserLogonSync**
-Optional. This node specifies maximum number of concurrent user sync sessions at User Login. 
-
-The default value is dynamically decided by the client based on CPU usage.
-
-The values are : 0= none, 1= sequential, anything else= parallel.
-
-Supported operations are Get, Add, Replace and Delete. 
-
-Value type is integer. Only applicable for Windows Enterprise multi-session. 
-
-<a href="" id="provider-providerid-multiplesession-intervalforscheduledretriesforusersession"></a>**Provider/*ProviderID*/MultipleSession/IntervalForScheduledRetriesForUserSession**
-Optional. This node specifies the waiting time (in minutes) for the initial set of retries as specified by the number of retries in `/<ProviderID>/Poll/NumberOfScheduledRetriesForUserSession`. 
-
-If IntervalForScheduledRetriesForUserSession is not set, then the default value is used. The default value is 0. If the value is set to 0, this schedule is disabled.
-
-This configuration is only applicable for Windows Multi-session Editions.
-
-Supported operations are Get and Replace.
-
-<a href="" id="provider-providerid-multiplesession-numberofscheduledretriesforusersession"></a>**Provider/*ProviderID*/MultipleSession/NumberOfScheduledRetriesForUserSession**
-Optional. This node specifies the number of times the DM client should retry to connect to the server when the client is initially configured or enrolled to communicate with the server. 
-
-If the value is set to 0 and the IntervalForScheduledRetriesForUserSession value is not 0, then the schedule will be set to repeat an infinite number of times. 
-
-The default value is 0. This configuration is only applicable for Windows Multi-session Editions.
-
-Supported operations are Get and Replace.
-
-<a href="" id="provider-providerid-configlock"></a>**Provider/*ProviderID*/ConfigLock**
-
-Optional. This node enables [Config Lock](config-lock.md) feature. If enabled, policies defined in the Config Lock document will be monitored and quickly remediated when a configuration drift is detected.
-
-Default = Locked
-
-> [!Note]
-> If the device isn't a Secured-core PC, then this feature won't work. To know more, see [Secured-core PC](/windows-hardware/design/device-experiences/oem-highly-secure).
-
-<a href="" id="provider-providerid-configlock-lock"></a>**Provider/*ProviderID*/ConfigLock/Lock**
-
-The supported values for this node are 0-unlock, 1-lock.
-
-Supported operations are Add, Delete, Get.
-
-<a href="" id="provider-providerid-configlock-unlockduration"></a>**Provider/*ProviderID*/ConfigLock/UnlockDuration**
-
-The supported values for this node are 1 to 480 (in min).
-
-Supported operations are Add, Delete, Get.
-
-<a href="" id="provider-providerid-configlock-securecore"></a>**Provider/*ProviderID*/ConfigLock/SecureCore**
-
-The supported values for this node are false or true.
-
-Supported operation is Get only.
-
-<a href="" id="provider-providerid-push"></a>**Provider/*ProviderID*/Push**  
-Optional. Not configurable during WAP Provisioning XML. If removed, DM sessions triggered by Push will no longer be supported.
-
-Supported operations are Add and Delete.
-
-<a href="" id="provider-providerid-push-pfn"></a>**Provider/*ProviderID*/Push/PFN**  
-Required. A string provided by the Windows 10 ecosystem for an MDM solution. Used to register a device for Push Notifications. The server must use the same PFN as the devices it's managing.
-
-Supported operations are Add, Get, and Replace.
-
-<a href="" id="provider-providerid-push-channeluri"></a>**Provider/*ProviderID*/Push/ChannelURI**  
-Required. A string that contains the channel that the WNS client has negotiated for the OMA DM client on the device, based on the PFN that was provided. If no valid PFN is currently set, ChannelURI will return null.
-
-Supported operation is Get.
-
-<a href="" id="provider-providerid-push-status"></a>**Provider/*ProviderID*/Push/Status**  
-Required. An integer that maps to a known error state or condition on the system.
-
-Supported operation is Get.
-
-The status error mapping is listed below.
-
-|Status|Description|
-|--- |--- |
-|0|Success|
-|1|Failure: invalid PFN|
-|2|Failure: invalid or expired device authentication with Microsoft account|
-|3|Failure: WNS client registration failed due to an invalid or revoked PFN|
-|4|Failure: no Channel URI assigned|
-|5|Failure: Channel URI has expired|
-|6|Failure: Channel URI failed to be revoked|
-|7|Failure: push notification received, but unable to establish an OMA-DM session due to power or connectivity limitations.|
-|8|Unknown error|
-
-<a href="" id="provider-providerid-customenrollmentcompletepage"></a>**Provider/*ProviderID*/CustomEnrollmentCompletePage**  
-Optional. Added in Windows 10, version 1703.
-
-Supported operations are Add, Delete, and Get.
-
-<a href="" id="provider-providerid-customenrollmentcompletepage-title"></a>**Provider/*ProviderID*/CustomEnrollmentCompletePage/Title**  
-Optional. Added in Windows 10, version 1703. Specifies the title of the all done page that appears at the end of the MDM enrollment flow.
-
-Supported operations are Add, Delete, Get, and Replace. 
-
-Value type is string.
-
-<a href="" id="provider-providerid-customenrollmentcompletepage-bodytext"></a>**Provider/*ProviderID*/CustomEnrollmentCompletePage/BodyText**  
-Optional. Added in Windows 10, version 1703. Specifies the body text of the all done page that appears at the end of the MDM enrollment flow.
-
-Supported operations are Add, Delete, Get, and Replace. 
-
-Value type is string.
-
-<a href="" id="provider-providerid-customenrollmentcompletepage-hyperlinkhref"></a>**Provider/*ProviderID*/CustomEnrollmentCompletePage/HyperlinkHref**  
-Optional. Added in Windows 10, version 1703. Specifies the URL that's shown at the end of the MDM enrollment flow.
-
-Supported operations are Add, Delete, Get, and Replace. 
-
-Value type is string.
-
-<a href="" id="provider-providerid-customenrollmentcompletepage-hyperlinktext"></a>**Provider/*ProviderID*/CustomEnrollmentCompletePage/HyperlinkText**  
-Optional. Added in Windows 10, version 1703. Specifies the display text for the URL that's shown at the end of the MDM enrollment flow.
-
-Supported operations are Add, Delete, Get, and Replace. 
-
-Value type is string.
-
-<a href="" id="provider-providerid-firstsyncstatus-"></a>**Provider/*ProviderID*/FirstSyncStatus**  
-Optional node. Added in Windows 10, version 1709.
-
-<a href="" id="provider-providerid-firstsyncstatus-expectedpolicies"></a>**Provider/*ProviderID*/FirstSyncStatus/ExpectedPolicies**  
-Required. Added in Windows 10, version 1709. This node contains a list of LocURIs that refer to policies the management service provider expects to configure, delimited by the character L"\xF000" (the CSP_LIST_DELIMITER).
-
-Supported operations are Add, Delete, Get, and Replace. 
-
-Value type is string.
-
-<a href="" id="provider-providerid-firstsyncstatus-expectednetworkprofiles "></a>**Provider/*ProviderID*/FirstSyncStatus/ExpectedNetworkProfiles**  
-Required. Added in Windows 10, version 1709. This node contains a list of LocURIs that refer to Wi-Fi profiles and VPN profiles the management service provider expects to configure, delimited by the character L"\xF000".
-
-Supported operations are Add, Delete, Get, and Replace. 
-
-Value type is string.
-
-<a href="" id="provider-providerid-firstsyncstatus-expectedmsiapppackages"></a>**Provider/*ProviderID*/FirstSyncStatus/ExpectedMSIAppPackages**  
-Required. Added in Windows 10, version 1709. This node contains a list of LocURIs that refer to App Packages the management service provider expects to configure using the EnterpriseDesktopAppManagement CSP, delimited by the character L"\xF000". The LocURI will be followed by a semicolon and a number, representing the number of apps included in the App Package.  We won't verify that number. For example, `./User/Vendor/MSFT/EnterpriseDesktopAppManagement/MSI/ProductID1/Status;4"\xF000" ./User/Vendor/MSFT/EnterpriseDesktopAppManagement/MSI/ProductID2/Status;2`  This represents App Package ProductID1 containing four apps, and ProductID2 containing two apps.
-
-Supported operations are Add, Delete, Get, and Replace. 
-
-Value type is string.
-
-<a href="" id="provider-providerid-firstsyncstatus-expectedmodernapppackages"></a>**Provider/*ProviderID*/FirstSyncStatus/ExpectedModernAppPackages**  
-Required. Added in Windows 10, version 1709. This node contains a list of LocURIs that refer to App Packages the management service provider expects to configure using the EnterpriseModernAppManagement CSP, delimited by the character L"\xF000".  The LocURI will be followed by a semicolon and a number, representing the number of apps included in the App Package.  We won't verify that number.  For example, 
-
-``` syntax
-./Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/PackageFamilyName/PackageFullName/Name;4"\xF000" 
-./Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/PackageFamilyName/PackageFullName2/Name;2
+<!-- Device-Provider-{ProviderID}-ManagementServerToUpgradeTo-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/ManagementServerToUpgradeTo
 ```
+<!-- Device-Provider-{ProviderID}-ManagementServerToUpgradeTo-OmaUri-End -->
 
-This syntax represents App Package PackageFullName containing four apps, and PackageFullName2 containing two apps.
+<!-- Device-Provider-{ProviderID}-ManagementServerToUpgradeTo-Description-Begin -->
+<!-- Description-Source-DDF -->
+Specify the Discovery server URL of the MDM server to upgrade to for a MAM enrolled device.
+<!-- Device-Provider-{ProviderID}-ManagementServerToUpgradeTo-Description-End -->
 
-Supported operations are Add, Delete, Get, and Replace. 
+<!-- Device-Provider-{ProviderID}-ManagementServerToUpgradeTo-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-ManagementServerToUpgradeTo-Editable-End -->
 
-Value type is string.
+<!-- Device-Provider-{ProviderID}-ManagementServerToUpgradeTo-DFProperties-Begin -->
+**Description framework properties**:
 
-<a href="" id="provider-providerid-firstsyncstatus-expectedpfxcerts"></a>**Provider/*ProviderID*/FirstSyncStatus/ExpectedPFXCerts**  
-Required. Added in Windows 10, version 1709. This node contains a list of LocURIs that refer to certs the management service provider expects to configure using the ClientCertificateInstall CSP, delimited by the character L"\xF000" (the CSP_LIST_DELIMITER).
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-Provider-{ProviderID}-ManagementServerToUpgradeTo-DFProperties-End -->
 
-Supported operations are Add, Delete, Get, and Replace. 
+<!-- Device-Provider-{ProviderID}-ManagementServerToUpgradeTo-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-ManagementServerToUpgradeTo-Examples-End -->
 
-Value type is string.
+<!-- Device-Provider-{ProviderID}-ManagementServerToUpgradeTo-End -->
 
-<a href="" id="provider-providerid-firstsyncstatus-expectedscepcerts"></a>**Provider/*ProviderID*/FirstSyncStatus/ExpectedSCEPCerts**  
-Required. Added in Windows 10, version 1709. This node contains a list of LocURIs that refer to SCEP certs the management service provider expects to configure using the ClientCertificateInstall CSP, delimited by the character L"\xF000" (the CSP_LIST_DELIMITER).
+<!-- Device-Provider-{ProviderID}-ManagementServiceAddress-Begin -->
+#### Device/Provider/{ProviderID}/ManagementServiceAddress
 
-Supported operations are Add, Delete, Get, and Replace. 
+<!-- Device-Provider-{ProviderID}-ManagementServiceAddress-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- Device-Provider-{ProviderID}-ManagementServiceAddress-Applicability-End -->
 
-Value type is string.
+<!-- Device-Provider-{ProviderID}-ManagementServiceAddress-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/ManagementServiceAddress
+```
+<!-- Device-Provider-{ProviderID}-ManagementServiceAddress-OmaUri-End -->
 
-<a href="" id="provider-providerid-firstsyncstatus-timeoutuntilsyncfailure"></a>**Provider/*ProviderID*/FirstSyncStatus/TimeOutUntilSyncFailure**  
-Required. Added in Windows 10, version 1709. This node determines how long we'll poll until we surface an error message to the user.  The unit of measurement is minutes.  Default value will be 60, while maximum value will be 1,440 (one day).  
+<!-- Device-Provider-{ProviderID}-ManagementServiceAddress-Description-Begin -->
+<!-- Description-Source-DDF -->
+The character string that contains the device management server address. It can be updated during an OMA DM session by the management server to allow the server to load balance to another server in situations where too many devices are connected to the server. The DMClient CSP will save the address to the same location as the w7 and DMS CSPs to ensure the management client has a single place to retrieve the current server address. The initial value for this node is the same server address value as bootstrapped via the [w7 APPLICATION](w7-application-csp.md) configuration service provider. Starting in Windows 10, version 1511, this node supports multiple server addresses in the format `<URL1>` `<URL2>` `<URL3>`. If there is only a single URL, then the <> aren't required. This is supported for both desktop and mobile devices. During a DM session, the device will use the first address on the list and then keep going down the list until a successful connection is achieved. The DM client should cache the successfully connected server URL for the next session.
+<!-- Device-Provider-{ProviderID}-ManagementServiceAddress-Description-End -->
 
-Supported operations are Get and Replace. 
+<!-- Device-Provider-{ProviderID}-ManagementServiceAddress-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> When the **ManagementServerAddressList** value is set, the device ignores the value.
+<!-- Device-Provider-{ProviderID}-ManagementServiceAddress-Editable-End -->
 
-Value type is integer.
+<!-- Device-Provider-{ProviderID}-ManagementServiceAddress-DFProperties-Begin -->
+**Description framework properties**:
 
-<a href="" id="provider-providerid-firstsyncstatus-serverhasfinishedprovisioning"></a>**Provider/*ProviderID*/FirstSyncStatus/ServerHasFinishedProvisioning**  
-Required. Added in Windows 10, version 1709. This node is set by the server to inform the UX that the server has finished configuring the device. It was added so that the server can “change its mind" about what it needs to configure on the device. When this node is set, many other DM Client nodes can't be changed. If this node isn't True, the UX will consider the configuration a failure. Once set to true, it would reject attempts to change it back to false with CFGMGR_E_COMMANDNOTALLOWED. This node applies to the per user expected policies and resources lists.
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Get, Replace |
+| Dependency [ManageServerAddressListBlock] | Dependency Type: `Not` <br> Dependency URI: `Device/Vendor/MSFT/DMClient/Provider/[ProviderID]/ManagementServerAddressList` <br> Dependency Allowed Value Type: `None` <br>  |
+<!-- Device-Provider-{ProviderID}-ManagementServiceAddress-DFProperties-End -->
 
-Supported operations are Get and Replace. 
+<!-- Device-Provider-{ProviderID}-ManagementServiceAddress-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-ManagementServiceAddress-Examples-End -->
 
-Value type is boolean.
+<!-- Device-Provider-{ProviderID}-ManagementServiceAddress-End -->
 
-<a href="" id="provider-providerid-firstsyncstatus-issyncdone"></a>**Provider/*ProviderID*/FirstSyncStatus/IsSyncDone**  
-Required. Added in Windows 10, version 1709. This node, when doing a get, tells the server if the “First Syncs" are done and the device is fully configured. `Set` triggers the UX to override whatever state it's in, and tell the user that the device is configured. It can't be set from True to False (it won't change its mind  if the sync is done), and it can't be set from True to True (to prevent notifications from firing multiple times). This node only applies to the user MDM status page (on a per user basis).
+<!-- Device-Provider-{ProviderID}-MaxSyncApplicationVersion-Begin -->
+#### Device/Provider/{ProviderID}/MaxSyncApplicationVersion
 
-Supported operations are Get and Replace. 
+<!-- Device-Provider-{ProviderID}-MaxSyncApplicationVersion-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- Device-Provider-{ProviderID}-MaxSyncApplicationVersion-Applicability-End -->
 
-Value type is boolean.
+<!-- Device-Provider-{ProviderID}-MaxSyncApplicationVersion-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/MaxSyncApplicationVersion
+```
+<!-- Device-Provider-{ProviderID}-MaxSyncApplicationVersion-OmaUri-End -->
 
-<a href="" id="provider-providerid-firstsyncstatus-wasdevicesuccessfullyprovisioned"></a>**Provider/*ProviderID*/FirstSyncStatus/WasDeviceSuccessfullyProvisioned**  
-Required. Added in Windows 10, version 1709. Integer node determining if a device was successfully configured.  0 is failure, 1 is success, 2 is in progress.  Once the value is changed to 0 or 1, the value can't be changed again. The client will change the value of success or failure and update the node. The server can force a failure or success message to appear on the device by setting this value and then setting the IsSyncDone node to true. This node only applies to the user MDM status page (on a per user basis).
+<!-- Device-Provider-{ProviderID}-MaxSyncApplicationVersion-Description-Begin -->
+<!-- Description-Source-DDF -->
+Used by the client to indicate the latest DM session version that it supports.
+<!-- Device-Provider-{ProviderID}-MaxSyncApplicationVersion-Description-End -->
 
-Supported operations are Get and Replace. 
+<!-- Device-Provider-{ProviderID}-MaxSyncApplicationVersion-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-MaxSyncApplicationVersion-Editable-End -->
 
-Value type is integer.
+<!-- Device-Provider-{ProviderID}-MaxSyncApplicationVersion-DFProperties-Begin -->
+**Description framework properties**:
 
-<a href="" id="provider-providerid-firstsyncstatus-blockinstatuspage"></a>**Provider/*ProviderID*/FirstSyncStatus/BlockInStatusPage**  
-Required. Device Only. Added in Windows 10, version 1803. This node determines if the MDM progress page is blocking in the Azure AD joined or DJ++ case, and which remediation options are available.
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Get |
+<!-- Device-Provider-{ProviderID}-MaxSyncApplicationVersion-DFProperties-End -->
 
-Supported operations are Get and Replace. 
+<!-- Device-Provider-{ProviderID}-MaxSyncApplicationVersion-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-MaxSyncApplicationVersion-Examples-End -->
 
-Value type is integer.
+<!-- Device-Provider-{ProviderID}-MaxSyncApplicationVersion-End -->
 
-<a href="" id="provider-providerid-firstsyncstatus-allowcollectlogsbutton"></a>**Provider/*ProviderID*/FirstSyncStatus/AllowCollectLogsButton**  
-Required. Added in Windows 10, version 1803. This node decides if the MDM progress page displays the Collect Logs button.  
+<!-- Device-Provider-{ProviderID}-MultipleSession-Begin -->
+#### Device/Provider/{ProviderID}/MultipleSession
 
-Supported operations are Get and Replace. 
+<!-- Device-Provider-{ProviderID}-MultipleSession-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Device-Provider-{ProviderID}-MultipleSession-Applicability-End -->
 
-Value type is bool.
+<!-- Device-Provider-{ProviderID}-MultipleSession-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/MultipleSession
+```
+<!-- Device-Provider-{ProviderID}-MultipleSession-OmaUri-End -->
 
-<a href="" id="provider-providerid-firstsyncstatus-customerrortext"></a>**Provider/*ProviderID*/FirstSyncStatus/CustomErrorText**  
-Required. Added in Windows 10, version 1803. This node allows the MDM to set custom error text, detailing what the user needs to do if there's an error.  
+<!-- Device-Provider-{ProviderID}-MultipleSession-Description-Begin -->
+<!-- Description-Source-Not-Found -->
+<!-- Device-Provider-{ProviderID}-MultipleSession-Description-End -->
 
-Supported operations are Add, Get, Delete, and Replace. 
+<!-- Device-Provider-{ProviderID}-MultipleSession-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> Only applicable for Windows Enterprise multi-session.
+<!-- Device-Provider-{ProviderID}-MultipleSession-Editable-End -->
 
-Value type is string.
+<!-- Device-Provider-{ProviderID}-MultipleSession-DFProperties-Begin -->
+**Description framework properties**:
 
-<a href="" id="provider-providerid-firstsyncstatus-skipdevicestatuspage"></a>**Provider/*ProviderID*/FirstSyncStatus/SkipDeviceStatusPage**  
-Required. Device only. Added in Windows 10, version 1803. This node decides if the MDM device progress page skips after Azure AD joined or Hybrid Azure AD joined in OOBE.
+| Property name | Property value |
+|:--|:--|
+| Format | `node` |
+| Access Type | Get |
+<!-- Device-Provider-{ProviderID}-MultipleSession-DFProperties-End -->
 
-Supported operations are Get and Replace. 
+<!-- Device-Provider-{ProviderID}-MultipleSession-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-MultipleSession-Examples-End -->
 
-Value type is bool.
+<!-- Device-Provider-{ProviderID}-MultipleSession-End -->
 
-<a href="" id="provider-providerid-firstsyncstatus-skipuserstatuspage"></a>**Provider/*ProviderID*/FirstSyncStatus/SkipUserStatusPage**  
-Required. Device only. Added in Windows 10, version 1803. This node decides if the MDM user progress page skips after Azure AD joined or DJ++ after user login.
+<!-- Device-Provider-{ProviderID}-MultipleSession-IntervalForScheduledRetriesForUserSession-Begin -->
+##### Device/Provider/{ProviderID}/MultipleSession/IntervalForScheduledRetriesForUserSession
 
-Supported operations are Get and Replace. 
+<!-- Device-Provider-{ProviderID}-MultipleSession-IntervalForScheduledRetriesForUserSession-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Device-Provider-{ProviderID}-MultipleSession-IntervalForScheduledRetriesForUserSession-Applicability-End -->
 
-Value type is bool.
+<!-- Device-Provider-{ProviderID}-MultipleSession-IntervalForScheduledRetriesForUserSession-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/MultipleSession/IntervalForScheduledRetriesForUserSession
+```
+<!-- Device-Provider-{ProviderID}-MultipleSession-IntervalForScheduledRetriesForUserSession-OmaUri-End -->
 
-<a href="" id="provider-providerid-enhancedapplayersecurity"></a>**Provider/*ProviderID*/EnhancedAppLayerSecurity**  
-Required node. Added in Windows 10, version 1709.
+<!-- Device-Provider-{ProviderID}-MultipleSession-IntervalForScheduledRetriesForUserSession-Description-Begin -->
+<!-- Description-Source-DDF -->
+The waiting time (in minutes) for the initial set of retries as specified by the number of retries in NumberOfScheduledRetriesForUserSession. If IntervalForScheduledRetriesForUserSession isn't set, then the default value is used. Default value is 1440. If the value is 0, this schedule is disabled.
+<!-- Device-Provider-{ProviderID}-MultipleSession-IntervalForScheduledRetriesForUserSession-Description-End -->
 
-Supported operation is Get.
+<!-- Device-Provider-{ProviderID}-MultipleSession-IntervalForScheduledRetriesForUserSession-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> Only applicable for Windows Enterprise multi-session.
+<!-- Device-Provider-{ProviderID}-MultipleSession-IntervalForScheduledRetriesForUserSession-Editable-End -->
 
-<a href="" id="provider-providerid-enhancedapplayersecurity-securitymode"></a>**Provider/*ProviderID*/EnhancedAppLayerSecurity/SecurityMode**  
-Required. Added in Windows 10, version 1709. This node specifies how the client will do the app layer signing and encryption. 0: no op; 1: sign only; 2: encrypt only; 3: sign and encrypt. The default value is 0.
+<!-- Device-Provider-{ProviderID}-MultipleSession-IntervalForScheduledRetriesForUserSession-DFProperties-Begin -->
+**Description framework properties**:
 
-Supported operations are Add, Get, Replace, and Delete. 
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-Provider-{ProviderID}-MultipleSession-IntervalForScheduledRetriesForUserSession-DFProperties-End -->
 
-Value type is integer.
+<!-- Device-Provider-{ProviderID}-MultipleSession-IntervalForScheduledRetriesForUserSession-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-MultipleSession-IntervalForScheduledRetriesForUserSession-Examples-End -->
 
-<a href="" id="provider-providerid-enhancedapplayersecurity-usecertifrevocationcheckoffline"></a>**Provider/*ProviderID*/EnhancedAppLayerSecurity/UseCertIfRevocationCheckOffline**  
-Required. Added in Windows 10, version 1709. When this node is set, it tells the client to use the certificate even when the client can't check the certificate's revocation status because the device is offline. The default value is set.
+<!-- Device-Provider-{ProviderID}-MultipleSession-IntervalForScheduledRetriesForUserSession-End -->
 
-Supported operations are Add, Get, Replace, and Delete. 
+<!-- Device-Provider-{ProviderID}-MultipleSession-NumAllowedConcurrentUserSessionAtUserLogonSync-Begin -->
+##### Device/Provider/{ProviderID}/MultipleSession/NumAllowedConcurrentUserSessionAtUserLogonSync
 
-Value type is boolean.
+<!-- Device-Provider-{ProviderID}-MultipleSession-NumAllowedConcurrentUserSessionAtUserLogonSync-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Device-Provider-{ProviderID}-MultipleSession-NumAllowedConcurrentUserSessionAtUserLogonSync-Applicability-End -->
 
-<a href="" id="provider-providerid-enhancedapplayersecurity-cert0"></a>**Provider/*ProviderID*/EnhancedAppLayerSecurity/Cert0**  
-Required. Added in Windows 10, version 1709. The node contains the primary certificate - the public key to use.
+<!-- Device-Provider-{ProviderID}-MultipleSession-NumAllowedConcurrentUserSessionAtUserLogonSync-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/MultipleSession/NumAllowedConcurrentUserSessionAtUserLogonSync
+```
+<!-- Device-Provider-{ProviderID}-MultipleSession-NumAllowedConcurrentUserSessionAtUserLogonSync-OmaUri-End -->
 
-Supported operations are Add, Get, Replace, and Delete. 
+<!-- Device-Provider-{ProviderID}-MultipleSession-NumAllowedConcurrentUserSessionAtUserLogonSync-Description-Begin -->
+<!-- Description-Source-DDF -->
+Optional. Maximum number of concurrent user sync sessions at User Login. Default value is 25. 0 none, 1 sequential, anything else: parallel.
+<!-- Device-Provider-{ProviderID}-MultipleSession-NumAllowedConcurrentUserSessionAtUserLogonSync-Description-End -->
 
-Value type is string.
+<!-- Device-Provider-{ProviderID}-MultipleSession-NumAllowedConcurrentUserSessionAtUserLogonSync-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> Only applicable for Windows Enterprise multi-session.
+<!-- Device-Provider-{ProviderID}-MultipleSession-NumAllowedConcurrentUserSessionAtUserLogonSync-Editable-End -->
 
-<a href="" id="provider-providerid-enhancedapplayersecurity-cert1"></a>**Provider/*ProviderID*/EnhancedAppLayerSecurity/Cert1**  
-Required. Added in Windows 10, version 1709. The node contains the secondary certificate - the public key to use.
+<!-- Device-Provider-{ProviderID}-MultipleSession-NumAllowedConcurrentUserSessionAtUserLogonSync-DFProperties-Begin -->
+**Description framework properties**:
 
-Supported operations are Add, Get, Replace, and Delete. 
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-Provider-{ProviderID}-MultipleSession-NumAllowedConcurrentUserSessionAtUserLogonSync-DFProperties-End -->
 
-Value type is string.
+<!-- Device-Provider-{ProviderID}-MultipleSession-NumAllowedConcurrentUserSessionAtUserLogonSync-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-MultipleSession-NumAllowedConcurrentUserSessionAtUserLogonSync-Examples-End -->
 
-<a href="" id="provider-providerid-unenroll"></a>**Provider/*ProviderID*/Unenroll**  
-Required. The node accepts unenrollment requests using the OMA DM Exec command and calls the enrollment client to unenroll the device from the management server whose provider ID is specified in the `<Data>` tag under the `<Item>` element. Scope is permanent.
+<!-- Device-Provider-{ProviderID}-MultipleSession-NumAllowedConcurrentUserSessionAtUserLogonSync-End -->
 
-Supported operations are Get and Exec.
+<!-- Device-Provider-{ProviderID}-MultipleSession-NumAllowedConcurrentUserSessionForBackgroundSync-Begin -->
+##### Device/Provider/{ProviderID}/MultipleSession/NumAllowedConcurrentUserSessionForBackgroundSync
 
-&lt;LocURI&gt;./Vendor/MSFT/DMClient/Unenroll&lt;/LocURI&gt; is supported for backward compatibility.
+<!-- Device-Provider-{ProviderID}-MultipleSession-NumAllowedConcurrentUserSessionForBackgroundSync-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Device-Provider-{ProviderID}-MultipleSession-NumAllowedConcurrentUserSessionForBackgroundSync-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-MultipleSession-NumAllowedConcurrentUserSessionForBackgroundSync-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/MultipleSession/NumAllowedConcurrentUserSessionForBackgroundSync
+```
+<!-- Device-Provider-{ProviderID}-MultipleSession-NumAllowedConcurrentUserSessionForBackgroundSync-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-MultipleSession-NumAllowedConcurrentUserSessionForBackgroundSync-Description-Begin -->
+<!-- Description-Source-DDF -->
+Optional. Maximum number of concurrent user sync sessions in background. Default value is 25. 0 none, 1 sequential, anything else: parallel.
+<!-- Device-Provider-{ProviderID}-MultipleSession-NumAllowedConcurrentUserSessionForBackgroundSync-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-MultipleSession-NumAllowedConcurrentUserSessionForBackgroundSync-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> Only applicable for Windows Enterprise multi-session.
+<!-- Device-Provider-{ProviderID}-MultipleSession-NumAllowedConcurrentUserSessionForBackgroundSync-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-MultipleSession-NumAllowedConcurrentUserSessionForBackgroundSync-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-Provider-{ProviderID}-MultipleSession-NumAllowedConcurrentUserSessionForBackgroundSync-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-MultipleSession-NumAllowedConcurrentUserSessionForBackgroundSync-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-MultipleSession-NumAllowedConcurrentUserSessionForBackgroundSync-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-MultipleSession-NumAllowedConcurrentUserSessionForBackgroundSync-End -->
+
+<!-- Device-Provider-{ProviderID}-MultipleSession-NumberOfScheduledRetriesForUserSession-Begin -->
+##### Device/Provider/{ProviderID}/MultipleSession/NumberOfScheduledRetriesForUserSession
+
+<!-- Device-Provider-{ProviderID}-MultipleSession-NumberOfScheduledRetriesForUserSession-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Device-Provider-{ProviderID}-MultipleSession-NumberOfScheduledRetriesForUserSession-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-MultipleSession-NumberOfScheduledRetriesForUserSession-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/MultipleSession/NumberOfScheduledRetriesForUserSession
+```
+<!-- Device-Provider-{ProviderID}-MultipleSession-NumberOfScheduledRetriesForUserSession-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-MultipleSession-NumberOfScheduledRetriesForUserSession-Description-Begin -->
+<!-- Description-Source-DDF -->
+The number of times the DM client should retry connecting to the server when the client is initially configured/enrolled to communicate with the server. Default value is 0. If the value is 0 and IntervalForScheduledRetriesForUserSession isn't 0, then the schedule will be set to repeat for an infinite number of times.
+<!-- Device-Provider-{ProviderID}-MultipleSession-NumberOfScheduledRetriesForUserSession-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-MultipleSession-NumberOfScheduledRetriesForUserSession-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> Only applicable for Windows Enterprise multi-session.
+<!-- Device-Provider-{ProviderID}-MultipleSession-NumberOfScheduledRetriesForUserSession-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-MultipleSession-NumberOfScheduledRetriesForUserSession-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-Provider-{ProviderID}-MultipleSession-NumberOfScheduledRetriesForUserSession-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-MultipleSession-NumberOfScheduledRetriesForUserSession-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-MultipleSession-NumberOfScheduledRetriesForUserSession-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-MultipleSession-NumberOfScheduledRetriesForUserSession-End -->
+
+<!-- Device-Provider-{ProviderID}-NumberOfDaysAfterLostContactToUnenroll-Begin -->
+#### Device/Provider/{ProviderID}/NumberOfDaysAfterLostContactToUnenroll
+
+<!-- Device-Provider-{ProviderID}-NumberOfDaysAfterLostContactToUnenroll-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- Device-Provider-{ProviderID}-NumberOfDaysAfterLostContactToUnenroll-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-NumberOfDaysAfterLostContactToUnenroll-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/NumberOfDaysAfterLostContactToUnenroll
+```
+<!-- Device-Provider-{ProviderID}-NumberOfDaysAfterLostContactToUnenroll-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-NumberOfDaysAfterLostContactToUnenroll-Description-Begin -->
+<!-- Description-Source-DDF -->
+Number of days after last successful sync to unenroll.
+<!-- Device-Provider-{ProviderID}-NumberOfDaysAfterLostContactToUnenroll-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-NumberOfDaysAfterLostContactToUnenroll-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-NumberOfDaysAfterLostContactToUnenroll-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-NumberOfDaysAfterLostContactToUnenroll-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-Provider-{ProviderID}-NumberOfDaysAfterLostContactToUnenroll-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-NumberOfDaysAfterLostContactToUnenroll-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-NumberOfDaysAfterLostContactToUnenroll-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-NumberOfDaysAfterLostContactToUnenroll-End -->
+
+<!-- Device-Provider-{ProviderID}-Poll-Begin -->
+#### Device/Provider/{ProviderID}/Poll
+
+<!-- Device-Provider-{ProviderID}-Poll-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- Device-Provider-{ProviderID}-Poll-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-Poll-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/Poll
+```
+<!-- Device-Provider-{ProviderID}-Poll-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-Poll-Description-Begin -->
+<!-- Description-Source-DDF -->
+Polling schedules must utilize the DMClient CSP. The Registry paths previously associated with polling using the Registry CSP are now deprecated. There are three schedules managed under the Poll node which enable a rich polling schedule experience to provide greater flexibility in managing the way in which devices poll the management server. There are a variety of ways in which polling schedules may be set. If an invalid polling configuration is set, the device will correct or remove the schedules in order to restore the polling schedules back to a valid configuration. If there is no infinite schedule set, then a 24-hour schedule is created and scheduled to launch in the maintenance window.
+<!-- Device-Provider-{ProviderID}-Poll-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-Poll-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-Poll-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-Poll-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `node` |
+| Access Type | Add, Delete, Get |
+<!-- Device-Provider-{ProviderID}-Poll-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-Poll-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-Poll-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-Poll-End -->
+
+<!-- Device-Provider-{ProviderID}-Poll-AllUsersPollOnFirstLogin-Begin -->
+##### Device/Provider/{ProviderID}/Poll/AllUsersPollOnFirstLogin
+
+<!-- Device-Provider-{ProviderID}-Poll-AllUsersPollOnFirstLogin-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- Device-Provider-{ProviderID}-Poll-AllUsersPollOnFirstLogin-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-Poll-AllUsersPollOnFirstLogin-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/Poll/AllUsersPollOnFirstLogin
+```
+<!-- Device-Provider-{ProviderID}-Poll-AllUsersPollOnFirstLogin-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-Poll-AllUsersPollOnFirstLogin-Description-Begin -->
+<!-- Description-Source-DDF -->
+Boolean value that allows the IT admin to require the device to start a management session on first user login for all NT users. A session is only kicked off the first time a user logs in to the system; subsequent logins won't trigger an MDM session. Login isn't the same as device unlock. Default value is false, where polling is disabled on first login. Supported values are true or false.
+<!-- Device-Provider-{ProviderID}-Poll-AllUsersPollOnFirstLogin-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-Poll-AllUsersPollOnFirstLogin-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-Poll-AllUsersPollOnFirstLogin-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-Poll-AllUsersPollOnFirstLogin-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `bool` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | false |
+<!-- Device-Provider-{ProviderID}-Poll-AllUsersPollOnFirstLogin-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-Poll-AllUsersPollOnFirstLogin-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| false (Default) | Polling is disabled on first login. |
+| true | Polling is enabled on first login. |
+<!-- Device-Provider-{ProviderID}-Poll-AllUsersPollOnFirstLogin-AllowedValues-End -->
+
+<!-- Device-Provider-{ProviderID}-Poll-AllUsersPollOnFirstLogin-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-Poll-AllUsersPollOnFirstLogin-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-Poll-AllUsersPollOnFirstLogin-End -->
+
+<!-- Device-Provider-{ProviderID}-Poll-IntervalForFirstSetOfRetries-Begin -->
+##### Device/Provider/{ProviderID}/Poll/IntervalForFirstSetOfRetries
+
+<!-- Device-Provider-{ProviderID}-Poll-IntervalForFirstSetOfRetries-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- Device-Provider-{ProviderID}-Poll-IntervalForFirstSetOfRetries-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-Poll-IntervalForFirstSetOfRetries-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/Poll/IntervalForFirstSetOfRetries
+```
+<!-- Device-Provider-{ProviderID}-Poll-IntervalForFirstSetOfRetries-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-Poll-IntervalForFirstSetOfRetries-Description-Begin -->
+<!-- Description-Source-DDF -->
+The waiting time (in minutes) for the initial set of retries as specified by the number of retries in /`<ProviderID>`/Poll/NumberOfFirstRetries. If IntervalForFirstSetOfRetries isn't set, then the default value is used. The default value is 15. If the value is set to 0, this schedule is disabled.
+<!-- Device-Provider-{ProviderID}-Poll-IntervalForFirstSetOfRetries-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-Poll-IntervalForFirstSetOfRetries-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-Poll-IntervalForFirstSetOfRetries-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-Poll-IntervalForFirstSetOfRetries-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-Provider-{ProviderID}-Poll-IntervalForFirstSetOfRetries-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-Poll-IntervalForFirstSetOfRetries-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-Poll-IntervalForFirstSetOfRetries-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-Poll-IntervalForFirstSetOfRetries-End -->
+
+<!-- Device-Provider-{ProviderID}-Poll-IntervalForRemainingScheduledRetries-Begin -->
+##### Device/Provider/{ProviderID}/Poll/IntervalForRemainingScheduledRetries
+
+<!-- Device-Provider-{ProviderID}-Poll-IntervalForRemainingScheduledRetries-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- Device-Provider-{ProviderID}-Poll-IntervalForRemainingScheduledRetries-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-Poll-IntervalForRemainingScheduledRetries-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/Poll/IntervalForRemainingScheduledRetries
+```
+<!-- Device-Provider-{ProviderID}-Poll-IntervalForRemainingScheduledRetries-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-Poll-IntervalForRemainingScheduledRetries-Description-Begin -->
+<!-- Description-Source-DDF -->
+The waiting time (in minutes) for the initial set of retries as specified by the number of retries in /`<ProviderID>`/Poll/NumberOfRemainingScheduledRetries. Default value is 0. If IntervalForRemainingScheduledRetries is set to 0, then this schedule is disabled.
+<!-- Device-Provider-{ProviderID}-Poll-IntervalForRemainingScheduledRetries-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-Poll-IntervalForRemainingScheduledRetries-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-Poll-IntervalForRemainingScheduledRetries-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-Poll-IntervalForRemainingScheduledRetries-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-Provider-{ProviderID}-Poll-IntervalForRemainingScheduledRetries-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-Poll-IntervalForRemainingScheduledRetries-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-Poll-IntervalForRemainingScheduledRetries-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-Poll-IntervalForRemainingScheduledRetries-End -->
+
+<!-- Device-Provider-{ProviderID}-Poll-IntervalForSecondSetOfRetries-Begin -->
+##### Device/Provider/{ProviderID}/Poll/IntervalForSecondSetOfRetries
+
+<!-- Device-Provider-{ProviderID}-Poll-IntervalForSecondSetOfRetries-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- Device-Provider-{ProviderID}-Poll-IntervalForSecondSetOfRetries-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-Poll-IntervalForSecondSetOfRetries-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/Poll/IntervalForSecondSetOfRetries
+```
+<!-- Device-Provider-{ProviderID}-Poll-IntervalForSecondSetOfRetries-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-Poll-IntervalForSecondSetOfRetries-Description-Begin -->
+<!-- Description-Source-DDF -->
+The waiting time (in minutes) for the second set of retries as specified by the number of retries in /`<ProviderID>`/Poll/NumberOfSecondRetries. Default value is 0. If this value is set to zero, then this schedule is disabled.
+<!-- Device-Provider-{ProviderID}-Poll-IntervalForSecondSetOfRetries-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-Poll-IntervalForSecondSetOfRetries-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-Poll-IntervalForSecondSetOfRetries-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-Poll-IntervalForSecondSetOfRetries-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-Provider-{ProviderID}-Poll-IntervalForSecondSetOfRetries-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-Poll-IntervalForSecondSetOfRetries-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-Poll-IntervalForSecondSetOfRetries-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-Poll-IntervalForSecondSetOfRetries-End -->
+
+<!-- Device-Provider-{ProviderID}-Poll-NumberOfFirstRetries-Begin -->
+##### Device/Provider/{ProviderID}/Poll/NumberOfFirstRetries
+
+<!-- Device-Provider-{ProviderID}-Poll-NumberOfFirstRetries-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- Device-Provider-{ProviderID}-Poll-NumberOfFirstRetries-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-Poll-NumberOfFirstRetries-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/Poll/NumberOfFirstRetries
+```
+<!-- Device-Provider-{ProviderID}-Poll-NumberOfFirstRetries-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-Poll-NumberOfFirstRetries-Description-Begin -->
+<!-- Description-Source-DDF -->
+The number of times the DM client should retry to connect to the server when the client is initially configured or enrolled to communicate with the server. If the value is set to 0 and the IntervalForFirstSetOfRetries value isn't 0, then the schedule will be set to repeat an infinite number of times and second set and this set of schedule won't set in this case. The default value is 10. The first set of retries is intended to give the management server some buffered time to be ready to send policies and settings configuration to the device. The total time for first set of retries shouldn't be more than a few hours. The server shouldn't set NumberOfFirstRetries to be 0. RemainingScheduledRetries is used for the long run device polling schedule.
+<!-- Device-Provider-{ProviderID}-Poll-NumberOfFirstRetries-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-Poll-NumberOfFirstRetries-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-Poll-NumberOfFirstRetries-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-Poll-NumberOfFirstRetries-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-Provider-{ProviderID}-Poll-NumberOfFirstRetries-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-Poll-NumberOfFirstRetries-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-Poll-NumberOfFirstRetries-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-Poll-NumberOfFirstRetries-End -->
+
+<!-- Device-Provider-{ProviderID}-Poll-NumberOfRemainingScheduledRetries-Begin -->
+##### Device/Provider/{ProviderID}/Poll/NumberOfRemainingScheduledRetries
+
+<!-- Device-Provider-{ProviderID}-Poll-NumberOfRemainingScheduledRetries-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- Device-Provider-{ProviderID}-Poll-NumberOfRemainingScheduledRetries-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-Poll-NumberOfRemainingScheduledRetries-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/Poll/NumberOfRemainingScheduledRetries
+```
+<!-- Device-Provider-{ProviderID}-Poll-NumberOfRemainingScheduledRetries-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-Poll-NumberOfRemainingScheduledRetries-Description-Begin -->
+<!-- Description-Source-DDF -->
+The number of times the DM client should retry connecting to the server when the client is initially configured/enrolled to communicate with the server. Default value is 0. If the value is set to 0 and IntervalForRemainingScheduledRetries AND the first and second set of retries aren't set as infinite retries, then the schedule will be set to repeat for an infinite number of times. However, if either or both of the first and second set of retries are set as infinite, then this schedule will be disabled. The RemainingScheduledRetries is used for the long run device polling schedule. IntervalForRemainingScheduledRetries shouldn't be set smaller than 1440 minutes (24 hours) in Windows Phone 8.1 device. Windows Phone 8.1 supports MDM server push.
+<!-- Device-Provider-{ProviderID}-Poll-NumberOfRemainingScheduledRetries-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-Poll-NumberOfRemainingScheduledRetries-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-Poll-NumberOfRemainingScheduledRetries-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-Poll-NumberOfRemainingScheduledRetries-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-Provider-{ProviderID}-Poll-NumberOfRemainingScheduledRetries-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-Poll-NumberOfRemainingScheduledRetries-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-Poll-NumberOfRemainingScheduledRetries-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-Poll-NumberOfRemainingScheduledRetries-End -->
+
+<!-- Device-Provider-{ProviderID}-Poll-NumberOfSecondRetries-Begin -->
+##### Device/Provider/{ProviderID}/Poll/NumberOfSecondRetries
+
+<!-- Device-Provider-{ProviderID}-Poll-NumberOfSecondRetries-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- Device-Provider-{ProviderID}-Poll-NumberOfSecondRetries-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-Poll-NumberOfSecondRetries-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/Poll/NumberOfSecondRetries
+```
+<!-- Device-Provider-{ProviderID}-Poll-NumberOfSecondRetries-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-Poll-NumberOfSecondRetries-Description-Begin -->
+<!-- Description-Source-DDF -->
+The number of times the DM client should retry a second round of connecting to the server when the client is initially configured/enrolled to communicate with the server. Default value is 0. If the value is set to 0 and IntervalForSecondSetOfRetries isn't set to 0 AND the first set of retries isn't set as infinite retries, then the schedule repeats an infinite number of times. However, if the first set of retries is set at infinite, then this schedule is disabled. The second set of retries is also optional and temporarily retries that the total duration should be last for more than a day. And the IntervalForSecondSetOfRetries should be longer than IntervalForFirstSetOfRetries. RemainingScheduledRetries is used for the long run device polling schedule.
+<!-- Device-Provider-{ProviderID}-Poll-NumberOfSecondRetries-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-Poll-NumberOfSecondRetries-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-Poll-NumberOfSecondRetries-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-Poll-NumberOfSecondRetries-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-Provider-{ProviderID}-Poll-NumberOfSecondRetries-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-Poll-NumberOfSecondRetries-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-Poll-NumberOfSecondRetries-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-Poll-NumberOfSecondRetries-End -->
+
+<!-- Device-Provider-{ProviderID}-Poll-PollOnLogin-Begin -->
+##### Device/Provider/{ProviderID}/Poll/PollOnLogin
+
+<!-- Device-Provider-{ProviderID}-Poll-PollOnLogin-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- Device-Provider-{ProviderID}-Poll-PollOnLogin-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-Poll-PollOnLogin-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/Poll/PollOnLogin
+```
+<!-- Device-Provider-{ProviderID}-Poll-PollOnLogin-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-Poll-PollOnLogin-Description-Begin -->
+<!-- Description-Source-DDF -->
+Boolean value that allows the IT admin to require the device to start a management session on any user login, regardless of if the user has preciously logged in. Login isn't the same as device unlock. Default value is false, where polling is disabled on first login. Supported values are true or false.
+<!-- Device-Provider-{ProviderID}-Poll-PollOnLogin-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-Poll-PollOnLogin-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-Poll-PollOnLogin-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-Poll-PollOnLogin-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `bool` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | false |
+<!-- Device-Provider-{ProviderID}-Poll-PollOnLogin-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-Poll-PollOnLogin-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| false (Default) | Polling is disabled on first login. |
+| true | Polling is enabled on first login. |
+<!-- Device-Provider-{ProviderID}-Poll-PollOnLogin-AllowedValues-End -->
+
+<!-- Device-Provider-{ProviderID}-Poll-PollOnLogin-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-Poll-PollOnLogin-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-Poll-PollOnLogin-End -->
+
+<!-- Device-Provider-{ProviderID}-PublisherDeviceID-Begin -->
+#### Device/Provider/{ProviderID}/PublisherDeviceID
+
+<!-- Device-Provider-{ProviderID}-PublisherDeviceID-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- Device-Provider-{ProviderID}-PublisherDeviceID-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-PublisherDeviceID-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/PublisherDeviceID
+```
+<!-- Device-Provider-{ProviderID}-PublisherDeviceID-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-PublisherDeviceID-Description-Begin -->
+<!-- Description-Source-DDF -->
+The PublisherDeviceID is a device-unique ID created based on the enterprise Publisher ID. Publisher ID is created based on the enterprise application token and enterprise ID via ./Vendor/MSFT/EnterpriseAppManagement/`<enterprise id>`/EnrollmentToken. It's to ensure that for one enterprise, each device has a unique ID associated with it. For the same device, if it has multiple enterprises' applications, each enterprise is identified differently.
+<!-- Device-Provider-{ProviderID}-PublisherDeviceID-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-PublisherDeviceID-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-PublisherDeviceID-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-PublisherDeviceID-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-Provider-{ProviderID}-PublisherDeviceID-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-PublisherDeviceID-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-PublisherDeviceID-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-PublisherDeviceID-End -->
+
+<!-- Device-Provider-{ProviderID}-Push-Begin -->
+#### Device/Provider/{ProviderID}/Push
+
+<!-- Device-Provider-{ProviderID}-Push-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- Device-Provider-{ProviderID}-Push-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-Push-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/Push
+```
+<!-- Device-Provider-{ProviderID}-Push-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-Push-Description-Begin -->
+<!-- Description-Source-DDF -->
+Not configurable during WAP Provisioning XML. If removed, DM sessions triggered by Push will no longer be supported.
+<!-- Device-Provider-{ProviderID}-Push-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-Push-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-Push-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-Push-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `node` |
+| Access Type | Add, Delete, Get |
+<!-- Device-Provider-{ProviderID}-Push-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-Push-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-Push-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-Push-End -->
+
+<!-- Device-Provider-{ProviderID}-Push-ChannelURI-Begin -->
+##### Device/Provider/{ProviderID}/Push/ChannelURI
+
+<!-- Device-Provider-{ProviderID}-Push-ChannelURI-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- Device-Provider-{ProviderID}-Push-ChannelURI-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-Push-ChannelURI-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/Push/ChannelURI
+```
+<!-- Device-Provider-{ProviderID}-Push-ChannelURI-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-Push-ChannelURI-Description-Begin -->
+<!-- Description-Source-DDF -->
+A string that contains the channel that the WNS client has negotiated for the OMA DM client on the device based on the PFN that was provided. If no valid PFN is currently set, ChannelURI will return null.
+<!-- Device-Provider-{ProviderID}-Push-ChannelURI-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-Push-ChannelURI-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-Push-ChannelURI-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-Push-ChannelURI-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Get |
+<!-- Device-Provider-{ProviderID}-Push-ChannelURI-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-Push-ChannelURI-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-Push-ChannelURI-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-Push-ChannelURI-End -->
+
+<!-- Device-Provider-{ProviderID}-Push-PFN-Begin -->
+##### Device/Provider/{ProviderID}/Push/PFN
+
+<!-- Device-Provider-{ProviderID}-Push-PFN-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- Device-Provider-{ProviderID}-Push-PFN-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-Push-PFN-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/Push/PFN
+```
+<!-- Device-Provider-{ProviderID}-Push-PFN-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-Push-PFN-Description-Begin -->
+<!-- Description-Source-DDF -->
+A string provided by the Windows 10 ecosystem for an MDM solution. Used to register a device for Push Notifications. The server must use the same PFN as the devices it's managing.
+<!-- Device-Provider-{ProviderID}-Push-PFN-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-Push-PFN-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-Push-PFN-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-Push-PFN-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-Provider-{ProviderID}-Push-PFN-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-Push-PFN-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-Push-PFN-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-Push-PFN-End -->
+
+<!-- Device-Provider-{ProviderID}-Push-Status-Begin -->
+##### Device/Provider/{ProviderID}/Push/Status
+
+<!-- Device-Provider-{ProviderID}-Push-Status-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- Device-Provider-{ProviderID}-Push-Status-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-Push-Status-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/Push/Status
+```
+<!-- Device-Provider-{ProviderID}-Push-Status-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-Push-Status-Description-Begin -->
+<!-- Description-Source-DDF -->
+An integer that maps to a known error state or condition on the system. Valid values are: 0 - Success, 1 - Failure: invalid PFN, 2 - Failure: invalid or expired device authentication with MSA, 3 - Failure: WNS client registration failed due to an invalid or revoked PFN, 4 - Failure: no Channel URI assigned, 5 - Failure: Channel URI has expired, 6 - Failure: Channel URI failed to be revoked, 7 - Failure: push notification received, but unable to establish an OMA-DM session due to power or connectivity limitations, 8 - Unknown error.
+<!-- Device-Provider-{ProviderID}-Push-Status-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-Push-Status-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-Push-Status-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-Push-Status-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Get |
+<!-- Device-Provider-{ProviderID}-Push-Status-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-Push-Status-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-Push-Status-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-Push-Status-End -->
+
+<!-- Device-Provider-{ProviderID}-Recovery-Begin -->
+#### Device/Provider/{ProviderID}/Recovery
+
+<!-- Device-Provider-{ProviderID}-Recovery-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000.1165] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
+<!-- Device-Provider-{ProviderID}-Recovery-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-Recovery-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/Recovery
+```
+<!-- Device-Provider-{ProviderID}-Recovery-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-Recovery-Description-Begin -->
+<!-- Description-Source-DDF -->
+Parent node for Recovery nodes.
+<!-- Device-Provider-{ProviderID}-Recovery-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-Recovery-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-Recovery-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-Recovery-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `node` |
+| Access Type | Get |
+<!-- Device-Provider-{ProviderID}-Recovery-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-Recovery-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-Recovery-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-Recovery-End -->
+
+<!-- Device-Provider-{ProviderID}-Recovery-AllowRecovery-Begin -->
+##### Device/Provider/{ProviderID}/Recovery/AllowRecovery
+
+<!-- Device-Provider-{ProviderID}-Recovery-AllowRecovery-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000.1165] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
+<!-- Device-Provider-{ProviderID}-Recovery-AllowRecovery-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-Recovery-AllowRecovery-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/Recovery/AllowRecovery
+```
+<!-- Device-Provider-{ProviderID}-Recovery-AllowRecovery-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-Recovery-AllowRecovery-Description-Begin -->
+<!-- Description-Source-DDF -->
+This node determines whether or not the client will automatically initiate a MDM Recovery operation when it detects issues with the MDM certificate.
+<!-- Device-Provider-{ProviderID}-Recovery-AllowRecovery-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-Recovery-AllowRecovery-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-Recovery-AllowRecovery-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-Recovery-AllowRecovery-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Get, Replace |
+| Default Value  | 0 |
+<!-- Device-Provider-{ProviderID}-Recovery-AllowRecovery-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-Recovery-AllowRecovery-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 1 | MDM Recovery is allowed. |
+| 0 (Default) | MDM Recovery isn't allowed. |
+<!-- Device-Provider-{ProviderID}-Recovery-AllowRecovery-AllowedValues-End -->
+
+<!-- Device-Provider-{ProviderID}-Recovery-AllowRecovery-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-Recovery-AllowRecovery-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-Recovery-AllowRecovery-End -->
+
+<!-- Device-Provider-{ProviderID}-Recovery-InitiateRecovery-Begin -->
+##### Device/Provider/{ProviderID}/Recovery/InitiateRecovery
+
+<!-- Device-Provider-{ProviderID}-Recovery-InitiateRecovery-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000.1165] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
+<!-- Device-Provider-{ProviderID}-Recovery-InitiateRecovery-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-Recovery-InitiateRecovery-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/Recovery/InitiateRecovery
+```
+<!-- Device-Provider-{ProviderID}-Recovery-InitiateRecovery-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-Recovery-InitiateRecovery-Description-Begin -->
+<!-- Description-Source-DDF -->
+This node initiates a recovery action. The server can specify prerequisites before the action is taken.
+<!-- Device-Provider-{ProviderID}-Recovery-InitiateRecovery-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-Recovery-InitiateRecovery-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-Recovery-InitiateRecovery-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-Recovery-InitiateRecovery-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Exec |
+| Default Value  | 0 |
+<!-- Device-Provider-{ProviderID}-Recovery-InitiateRecovery-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-Recovery-InitiateRecovery-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Initiate MDM Recovery. |
+| 1 | Initiate Recovery if Keys aren't already protected by the TPM, there is a TPM to put the keys into, AAD keys are protected by TPM, and the TPM is ready for attestation. |
+<!-- Device-Provider-{ProviderID}-Recovery-InitiateRecovery-AllowedValues-End -->
+
+<!-- Device-Provider-{ProviderID}-Recovery-InitiateRecovery-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-Recovery-InitiateRecovery-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-Recovery-InitiateRecovery-End -->
+
+<!-- Device-Provider-{ProviderID}-Recovery-RecoveryStatus-Begin -->
+##### Device/Provider/{ProviderID}/Recovery/RecoveryStatus
+
+<!-- Device-Provider-{ProviderID}-Recovery-RecoveryStatus-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000.1165] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
+<!-- Device-Provider-{ProviderID}-Recovery-RecoveryStatus-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-Recovery-RecoveryStatus-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/Recovery/RecoveryStatus
+```
+<!-- Device-Provider-{ProviderID}-Recovery-RecoveryStatus-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-Recovery-RecoveryStatus-Description-Begin -->
+<!-- Description-Source-DDF -->
+This node tracks the status of a Recovery request from the InitiateRecovery node. 0 - No Recovery request has been processed. 1 - Recovery is in Process. 2 - Recovery has finished successfully. 3 - Recovery has failed to start because TPM isn't available. 4 - Recovery has failed to start because AAD keys aren't protected by the TPM. 5 - Recovery has failed to start because the MDM keys are already protected by the TPM. 6 - Recovery has failed to start because the TPM isn't ready for attestation. 7 - Recovery has failed because the client can't authenticate to the server. 8 - Recovery has failed because the server has rejected the client's request.
+<!-- Device-Provider-{ProviderID}-Recovery-RecoveryStatus-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-Recovery-RecoveryStatus-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-Recovery-RecoveryStatus-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-Recovery-RecoveryStatus-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Get |
+| Default Value  | 0 |
+<!-- Device-Provider-{ProviderID}-Recovery-RecoveryStatus-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-Recovery-RecoveryStatus-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-Recovery-RecoveryStatus-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-Recovery-RecoveryStatus-End -->
+
+<!-- Device-Provider-{ProviderID}-RequireMessageSigning-Begin -->
+#### Device/Provider/{ProviderID}/RequireMessageSigning
+
+<!-- Device-Provider-{ProviderID}-RequireMessageSigning-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- Device-Provider-{ProviderID}-RequireMessageSigning-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-RequireMessageSigning-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/RequireMessageSigning
+```
+<!-- Device-Provider-{ProviderID}-RequireMessageSigning-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-RequireMessageSigning-Description-Begin -->
+<!-- Description-Source-DDF -->
+Primarily used for SSL bridging mode where firewalls and proxies are deployed and where device client identity is required. When enabled, every SyncML message from the device will carry an additional HTTP header named MDM-Signature. This header contains BASE64-encoded Cryptographic Message Syntax using a Detached Signature of the complete SyncML message SHA-2 (inclusive of the SyncHdr and SyncBody). Signing is performed using the private key of the management session certificate that was enrolled as part of the enrollment process. The device public key and PKCS9 UTC signing time stamp are included as part of the authenticated attributes in the signature. When enabled, the MDM server should validate the signature and the timestamp using the device identify certificate enrolled as part of MS-MDE, ensure the certificate and time are valid, and verify that the signature is trusted by the MDM server.
+<!-- Device-Provider-{ProviderID}-RequireMessageSigning-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-RequireMessageSigning-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-RequireMessageSigning-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-RequireMessageSigning-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `bool` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | false |
+<!-- Device-Provider-{ProviderID}-RequireMessageSigning-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-RequireMessageSigning-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| false (Default) | The device management client doesn't include authentication information in the management session HTTP header. |
+| true | The client authentication information is provided in the management session HTTP header. |
+<!-- Device-Provider-{ProviderID}-RequireMessageSigning-AllowedValues-End -->
+
+<!-- Device-Provider-{ProviderID}-RequireMessageSigning-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-RequireMessageSigning-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-RequireMessageSigning-End -->
+
+<!-- Device-Provider-{ProviderID}-SignedEntDMID-Begin -->
+#### Device/Provider/{ProviderID}/SignedEntDMID
+
+<!-- Device-Provider-{ProviderID}-SignedEntDMID-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- Device-Provider-{ProviderID}-SignedEntDMID-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-SignedEntDMID-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/SignedEntDMID
+```
+<!-- Device-Provider-{ProviderID}-SignedEntDMID-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-SignedEntDMID-Description-Begin -->
+<!-- Description-Source-DDF -->
+Character string that contains the device ID. This node and the nodes CertRenewTimeStamp can be used by the MDM server to verify client identity in order to update the registration record after the device certificate is renewed. The device signs the EntDMID with the old client certificate during the certificate renewal process and saves the signature locally.
+<!-- Device-Provider-{ProviderID}-SignedEntDMID-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-SignedEntDMID-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-SignedEntDMID-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-SignedEntDMID-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-Provider-{ProviderID}-SignedEntDMID-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-SignedEntDMID-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-SignedEntDMID-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-SignedEntDMID-End -->
+
+<!-- Device-Provider-{ProviderID}-SyncApplicationVersion-Begin -->
+#### Device/Provider/{ProviderID}/SyncApplicationVersion
+
+<!-- Device-Provider-{ProviderID}-SyncApplicationVersion-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- Device-Provider-{ProviderID}-SyncApplicationVersion-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-SyncApplicationVersion-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/SyncApplicationVersion
+```
+<!-- Device-Provider-{ProviderID}-SyncApplicationVersion-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-SyncApplicationVersion-Description-Begin -->
+<!-- Description-Source-DDF -->
+Used by the management server to set the DM session version that the server and device should use. Default is 1.0. In Windows 10, the DM session protocol version of the client is 2.0. If the server is updated to support 2.0, then you should set this value to 2.0. In the next session, check to see if there is a client behavior change between 1.0 and 2.0.
+<!-- Device-Provider-{ProviderID}-SyncApplicationVersion-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-SyncApplicationVersion-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> Once you set the value to 2.0, it won't go back to 1.0.
+<!-- Device-Provider-{ProviderID}-SyncApplicationVersion-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-SyncApplicationVersion-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Regular Expression: `^(\d\.)?(\d)$` |
+| Default Value  | 1.0 |
+<!-- Device-Provider-{ProviderID}-SyncApplicationVersion-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-SyncApplicationVersion-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-SyncApplicationVersion-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-SyncApplicationVersion-End -->
+
+<!-- Device-Provider-{ProviderID}-Unenroll-Begin -->
+#### Device/Provider/{ProviderID}/Unenroll
+
+<!-- Device-Provider-{ProviderID}-Unenroll-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- Device-Provider-{ProviderID}-Unenroll-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-Unenroll-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/Unenroll
+```
+<!-- Device-Provider-{ProviderID}-Unenroll-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-Unenroll-Description-Begin -->
+<!-- Description-Source-DDF -->
+The node accepts unenrollment requests by way of the OMA DM Exec command and calls the enrollment client to unenroll the device from the management server whose provider ID is specified in the `<Data>` tag under the `<Item>` element.
+<!-- Device-Provider-{ProviderID}-Unenroll-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-Unenroll-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> `<LocURI>./Vendor/MSFT/DMClient/Unenroll</LocURI>` is supported for backward compatibility.
+<!-- Device-Provider-{ProviderID}-Unenroll-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-Unenroll-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `null` |
+| Access Type | Exec, Get |
+<!-- Device-Provider-{ProviderID}-Unenroll-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-Unenroll-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+**Example**:
 
 The following SyncML shows how to remotely unenroll the device. This command should be inserted in the general DM packages sent from the server to the device.
 
@@ -835,13 +3964,730 @@ The following SyncML shows how to remotely unenroll the device. This command sho
              <LocURI>./Vendor/MSFT/DMClient/Provider/<ProviderID>/Unenroll</LocURI>
           </Target>
           <Meta>
-             <Format xmlns=”syncml:metinf”>chr</Format>
+             <Format xmlns="syncml:metinf">chr</Format>
           </Meta>
-          <Data>TestMDMServer</Data> 
+          <Data>TestMDMServer</Data>
           <!-- Data Field in Threshold is now IGNORED -->
        </Item>
     </Exec>
 ```
+<!-- Device-Provider-{ProviderID}-Unenroll-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-Unenroll-End -->
+
+<!-- Device-Provider-{ProviderID}-UPN-Begin -->
+#### Device/Provider/{ProviderID}/UPN
+
+<!-- Device-Provider-{ProviderID}-UPN-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- Device-Provider-{ProviderID}-UPN-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-UPN-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/UPN
+```
+<!-- Device-Provider-{ProviderID}-UPN-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-UPN-Description-Begin -->
+<!-- Description-Source-DDF -->
+Allows the management server to update the User Principal Name (UPN) of the enrolled user. This is useful in scenarios where the user email address changes in the identity system, or in the scenario where the user enters an invalid UPN during enrollment, and fixes the UPN during federated enrollment. The UPN will be recorded and the UX will reflect the updated UPN.
+<!-- Device-Provider-{ProviderID}-UPN-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-UPN-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-UPN-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-UPN-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Get, Replace |
+<!-- Device-Provider-{ProviderID}-UPN-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-UPN-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-UPN-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-UPN-End -->
+
+<!-- Device-Unenroll-Begin -->
+## Device/Unenroll
+
+<!-- Device-Unenroll-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- Device-Unenroll-Applicability-End -->
+
+<!-- Device-Unenroll-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Unenroll
+```
+<!-- Device-Unenroll-OmaUri-End -->
+
+<!-- Device-Unenroll-Description-Begin -->
+<!-- Description-Source-DDF -->
+The node accepts unenrollment requests by way of the OMA DM Exec command and calls the enrollment client to unenroll the device from the management server whose provider ID is specified in the `<Data>` tag under the `<Item>` element. Scope is permanent.
+<!-- Device-Unenroll-Description-End -->
+
+<!-- Device-Unenroll-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Unenroll-Editable-End -->
+
+<!-- Device-Unenroll-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `null` |
+| Access Type | Exec, Get |
+<!-- Device-Unenroll-DFProperties-End -->
+
+<!-- Device-Unenroll-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Unenroll-Examples-End -->
+
+<!-- Device-Unenroll-End -->
+
+<!-- Device-UpdateManagementServiceAddress-Begin -->
+## Device/UpdateManagementServiceAddress
+
+<!-- Device-UpdateManagementServiceAddress-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- Device-UpdateManagementServiceAddress-Applicability-End -->
+
+<!-- Device-UpdateManagementServiceAddress-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/UpdateManagementServiceAddress
+```
+<!-- Device-UpdateManagementServiceAddress-OmaUri-End -->
+
+<!-- Device-UpdateManagementServiceAddress-Description-Begin -->
+<!-- Description-Source-DDF -->
+For provisioning packages only. Specifies the list of servers (semicolon delimited). The first server in the semicolon-delimited list is the server that will be used to instantiate MDM sessions. The list can be a permutation or a subset of the existing server list. You can't add new servers to the list using this node.
+<!-- Device-UpdateManagementServiceAddress-Description-End -->
+
+<!-- Device-UpdateManagementServiceAddress-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-UpdateManagementServiceAddress-Editable-End -->
+
+<!-- Device-UpdateManagementServiceAddress-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- Device-UpdateManagementServiceAddress-DFProperties-End -->
+
+<!-- Device-UpdateManagementServiceAddress-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-UpdateManagementServiceAddress-Examples-End -->
+
+<!-- Device-UpdateManagementServiceAddress-End -->
+
+<!-- User-Provider-Begin -->
+## User/Provider
+
+<!-- User-Provider-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- User-Provider-Applicability-End -->
+
+<!-- User-Provider-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/DMClient/Provider
+```
+<!-- User-Provider-OmaUri-End -->
+
+<!-- User-Provider-Description-Begin -->
+<!-- Description-Source-DDF -->
+The root node for all settings that belong to a single management server.
+<!-- User-Provider-Description-End -->
+
+<!-- User-Provider-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- User-Provider-Editable-End -->
+
+<!-- User-Provider-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `node` |
+| Access Type | Get |
+<!-- User-Provider-DFProperties-End -->
+
+<!-- User-Provider-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- User-Provider-Examples-End -->
+
+<!-- User-Provider-End -->
+
+<!-- User-Provider-{ProviderID}-Begin -->
+### User/Provider/{ProviderID}
+
+<!-- User-Provider-{ProviderID}-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- User-Provider-{ProviderID}-Applicability-End -->
+
+<!-- User-Provider-{ProviderID}-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/DMClient/Provider/{ProviderID}
+```
+<!-- User-Provider-{ProviderID}-OmaUri-End -->
+
+<!-- User-Provider-{ProviderID}-Description-Begin -->
+<!-- Description-Source-DDF -->
+This node contains the URI-encoded value of the bootstrapped device management account's Provider ID. Scope is dynamic. This value is set and controlled by the MDM server. As a best practice, use text that doesn't require XML/URI escaping.
+<!-- User-Provider-{ProviderID}-Description-End -->
+
+<!-- User-Provider-{ProviderID}-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- User-Provider-{ProviderID}-Editable-End -->
+
+<!-- User-Provider-{ProviderID}-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `node` |
+| Access Type | Add, Delete, Get |
+| Dynamic Node Naming | ServerGeneratedUniqueIdentifier |
+<!-- User-Provider-{ProviderID}-DFProperties-End -->
+
+<!-- User-Provider-{ProviderID}-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- User-Provider-{ProviderID}-Examples-End -->
+
+<!-- User-Provider-{ProviderID}-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-Begin -->
+#### User/Provider/{ProviderID}/FirstSyncStatus
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-Applicability-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/DMClient/Provider/{ProviderID}/FirstSyncStatus
+```
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-OmaUri-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-Description-Begin -->
+<!-- Description-Source-Not-Found -->
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-Description-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-Editable-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `node` |
+| Access Type | Add, Delete, Get |
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-DFProperties-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-Examples-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-AllowCollectLogsButton-Begin -->
+##### User/Provider/{ProviderID}/FirstSyncStatus/AllowCollectLogsButton
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-AllowCollectLogsButton-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-AllowCollectLogsButton-Applicability-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-AllowCollectLogsButton-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/DMClient/Provider/{ProviderID}/FirstSyncStatus/AllowCollectLogsButton
+```
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-AllowCollectLogsButton-OmaUri-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-AllowCollectLogsButton-Description-Begin -->
+<!-- Description-Source-DDF -->
+This node decides whether or not the MDM progress page displays the Collect Logs button. This node only applies to the user MDM status page (on a per user basis).
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-AllowCollectLogsButton-Description-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-AllowCollectLogsButton-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-AllowCollectLogsButton-Editable-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-AllowCollectLogsButton-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `bool` |
+| Access Type | Get, Replace |
+| Default Value  | false |
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-AllowCollectLogsButton-DFProperties-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-AllowCollectLogsButton-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| false (Default) | Don't show the Collect Logs button on the progress page. |
+| true | Show the Collect Logs button on the progress page. |
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-AllowCollectLogsButton-AllowedValues-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-AllowCollectLogsButton-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-AllowCollectLogsButton-Examples-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-AllowCollectLogsButton-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-CustomErrorText-Begin -->
+##### User/Provider/{ProviderID}/FirstSyncStatus/CustomErrorText
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-CustomErrorText-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-CustomErrorText-Applicability-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-CustomErrorText-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/DMClient/Provider/{ProviderID}/FirstSyncStatus/CustomErrorText
+```
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-CustomErrorText-OmaUri-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-CustomErrorText-Description-Begin -->
+<!-- Description-Source-DDF -->
+This node allows the MDM to set custom error text, detailing what the user needs to do in case of error. This node only applies to the user MDM status page (on a per user basis).
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-CustomErrorText-Description-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-CustomErrorText-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-CustomErrorText-Editable-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-CustomErrorText-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Get, Replace |
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-CustomErrorText-DFProperties-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-CustomErrorText-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-CustomErrorText-Examples-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-CustomErrorText-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedModernAppPackages-Begin -->
+##### User/Provider/{ProviderID}/FirstSyncStatus/ExpectedModernAppPackages
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedModernAppPackages-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedModernAppPackages-Applicability-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedModernAppPackages-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/DMClient/Provider/{ProviderID}/FirstSyncStatus/ExpectedModernAppPackages
+```
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedModernAppPackages-OmaUri-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedModernAppPackages-Description-Begin -->
+<!-- Description-Source-DDF -->
+This node contains a list of LocURIs that refer to App Packages the ISV expects to provision via EnterpriseModernAppManagement CSP, delimited by the character L"\xF000". The LocURI will be followed by a semicolon and a number, representing the number of apps included in the App Package. We won't verify that number. E. G. ./Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/PackageFamilyName/PackageFullName/Name;4"\xF000" ./Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/PackageFamilyName/PackageFullName2/Name;2 Which will represent that App Package PackageFullName contains 4 apps, whereas PackageFullName2 contains 2 apps. This is per user.
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedModernAppPackages-Description-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedModernAppPackages-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedModernAppPackages-Editable-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedModernAppPackages-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `\xF000`) |
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedModernAppPackages-DFProperties-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedModernAppPackages-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedModernAppPackages-Examples-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedModernAppPackages-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedMSIAppPackages-Begin -->
+##### User/Provider/{ProviderID}/FirstSyncStatus/ExpectedMSIAppPackages
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedMSIAppPackages-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedMSIAppPackages-Applicability-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedMSIAppPackages-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/DMClient/Provider/{ProviderID}/FirstSyncStatus/ExpectedMSIAppPackages
+```
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedMSIAppPackages-OmaUri-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedMSIAppPackages-Description-Begin -->
+<!-- Description-Source-DDF -->
+This node contains a list of LocURIs that refer to App Packages the ISV expects to provision via EnterpriseDesktopAppManagement CSP, delimited by the character L"\xF000". The LocURI will be followed by a semicolon and a number, representing the number of apps included in the App Package. We won't verify that number. E. G. ./User/Vendor/MSFT/EnterpriseDesktopAppManagement/MSI/ProductID1/Status;4"\xF000" ./User/Vendor/MSFT/EnterpriseDesktopAppManagement/MSI/ProductID2/Status;2 Which will represent that App Package ProductID1 contains 4 apps, whereas ProductID2 contains 2 apps. This is per user.
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedMSIAppPackages-Description-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedMSIAppPackages-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedMSIAppPackages-Editable-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedMSIAppPackages-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `\xF000`) |
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedMSIAppPackages-DFProperties-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedMSIAppPackages-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedMSIAppPackages-Examples-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedMSIAppPackages-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedNetworkProfiles-Begin -->
+##### User/Provider/{ProviderID}/FirstSyncStatus/ExpectedNetworkProfiles
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedNetworkProfiles-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedNetworkProfiles-Applicability-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedNetworkProfiles-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/DMClient/Provider/{ProviderID}/FirstSyncStatus/ExpectedNetworkProfiles
+```
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedNetworkProfiles-OmaUri-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedNetworkProfiles-Description-Begin -->
+<!-- Description-Source-DDF -->
+This node contains a list of LocURIs that refer to Wi-Fi profiles and VPN profiles the ISV expects to provision, delimited by the character L"\xF000". This is per user.
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedNetworkProfiles-Description-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedNetworkProfiles-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedNetworkProfiles-Editable-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedNetworkProfiles-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `\xF000`) |
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedNetworkProfiles-DFProperties-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedNetworkProfiles-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedNetworkProfiles-Examples-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedNetworkProfiles-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedPFXCerts-Begin -->
+##### User/Provider/{ProviderID}/FirstSyncStatus/ExpectedPFXCerts
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedPFXCerts-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedPFXCerts-Applicability-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedPFXCerts-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/DMClient/Provider/{ProviderID}/FirstSyncStatus/ExpectedPFXCerts
+```
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedPFXCerts-OmaUri-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedPFXCerts-Description-Begin -->
+<!-- Description-Source-DDF -->
+This node contains a list of LocURIs that refer to certs the ISV expects to provision via ClientCertificateInstall CSP, delimited by the character L"\xF000" (the CSP_LIST_DELIMITER). This is per user.
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedPFXCerts-Description-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedPFXCerts-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedPFXCerts-Editable-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedPFXCerts-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `\xF000`) |
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedPFXCerts-DFProperties-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedPFXCerts-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedPFXCerts-Examples-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedPFXCerts-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedPolicies-Begin -->
+##### User/Provider/{ProviderID}/FirstSyncStatus/ExpectedPolicies
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedPolicies-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedPolicies-Applicability-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedPolicies-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/DMClient/Provider/{ProviderID}/FirstSyncStatus/ExpectedPolicies
+```
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedPolicies-OmaUri-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedPolicies-Description-Begin -->
+<!-- Description-Source-DDF -->
+This node contains a list of LocURIs that refer to Policies the ISV expects to provision, delimited by the character L"\xF000" (the CSP_LIST_DELIMITER). This is per user.
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedPolicies-Description-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedPolicies-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedPolicies-Editable-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedPolicies-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `\xF000`) |
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedPolicies-DFProperties-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedPolicies-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedPolicies-Examples-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedPolicies-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedSCEPCerts-Begin -->
+##### User/Provider/{ProviderID}/FirstSyncStatus/ExpectedSCEPCerts
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedSCEPCerts-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedSCEPCerts-Applicability-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedSCEPCerts-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/DMClient/Provider/{ProviderID}/FirstSyncStatus/ExpectedSCEPCerts
+```
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedSCEPCerts-OmaUri-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedSCEPCerts-Description-Begin -->
+<!-- Description-Source-DDF -->
+This node contains a list of LocURIs that refer to SCEP certs the ISV expects to provision via ClientCertificateInstall CSP, delimited by the character L"\xF000" (the CSP_LIST_DELIMITER). This is per user.
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedSCEPCerts-Description-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedSCEPCerts-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedSCEPCerts-Editable-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedSCEPCerts-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `\xF000`) |
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedSCEPCerts-DFProperties-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedSCEPCerts-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedSCEPCerts-Examples-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedSCEPCerts-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-IsSyncDone-Begin -->
+##### User/Provider/{ProviderID}/FirstSyncStatus/IsSyncDone
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-IsSyncDone-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-IsSyncDone-Applicability-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-IsSyncDone-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/DMClient/Provider/{ProviderID}/FirstSyncStatus/IsSyncDone
+```
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-IsSyncDone-OmaUri-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-IsSyncDone-Description-Begin -->
+<!-- Description-Source-DDF -->
+This node, when doing a get, tells the server if the "First Syncs" are done and the device is fully provisioned. When doing a Set, this triggers the UX to override whatever state it's in and tell the user that the device is provisioned. It can't be set from True to False (it won't change its mind on whether or not the sync is done), and it can't be set from True to True (to prevent notifications from firing multiple times). This node only applies to the user MDM status page (on a per user basis).
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-IsSyncDone-Description-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-IsSyncDone-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-IsSyncDone-Editable-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-IsSyncDone-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `bool` |
+| Access Type | Get, Replace |
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-IsSyncDone-DFProperties-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-IsSyncDone-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| false | The user isn't finished provisioning. |
+| true | The user has finished provisioning. |
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-IsSyncDone-AllowedValues-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-IsSyncDone-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-IsSyncDone-Examples-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-IsSyncDone-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ServerHasFinishedProvisioning-Begin -->
+##### User/Provider/{ProviderID}/FirstSyncStatus/ServerHasFinishedProvisioning
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ServerHasFinishedProvisioning-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ServerHasFinishedProvisioning-Applicability-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ServerHasFinishedProvisioning-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/DMClient/Provider/{ProviderID}/FirstSyncStatus/ServerHasFinishedProvisioning
+```
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ServerHasFinishedProvisioning-OmaUri-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ServerHasFinishedProvisioning-Description-Begin -->
+<!-- Description-Source-DDF -->
+This node is set by the server to inform the UX that the server has finished provisioning the device. This was added so that the server can "change its mind" about what it needs to provision on the device. When this node is set, many other DM Client nodes will no longer be able to be changed. If this node isn't True, the UX will consider the provisioning a failure. Once set to true, it would reject attempts to change it back to false with CFGMGR_E_COMMANDNOTALLOWED. This node applies to the per user expected policies and resources lists.
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ServerHasFinishedProvisioning-Description-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ServerHasFinishedProvisioning-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ServerHasFinishedProvisioning-Editable-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ServerHasFinishedProvisioning-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `bool` |
+| Access Type | Get, Replace |
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ServerHasFinishedProvisioning-DFProperties-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ServerHasFinishedProvisioning-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| false | Server hasn't finished provisioning. |
+| true | Server has finished provisioning. |
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ServerHasFinishedProvisioning-AllowedValues-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ServerHasFinishedProvisioning-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ServerHasFinishedProvisioning-Examples-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-ServerHasFinishedProvisioning-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-WasDeviceSuccessfullyProvisioned-Begin -->
+##### User/Provider/{ProviderID}/FirstSyncStatus/WasDeviceSuccessfullyProvisioned
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-WasDeviceSuccessfullyProvisioned-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-WasDeviceSuccessfullyProvisioned-Applicability-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-WasDeviceSuccessfullyProvisioned-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/DMClient/Provider/{ProviderID}/FirstSyncStatus/WasDeviceSuccessfullyProvisioned
+```
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-WasDeviceSuccessfullyProvisioned-OmaUri-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-WasDeviceSuccessfullyProvisioned-Description-Begin -->
+<!-- Description-Source-DDF -->
+Integer node determining if a Device was Successfully provisioned. 0 is failure, 1 is success, 2 is in progress. Once the value is changed to 0 or 1, the value can't be changed again. The client will change the value of success or failure and update the node. The server can, however, force a failure or success message to appear on the device by setting this value and then setting the IsSyncDone node to true. This node only applies to the user MDM status page (on a per user basis).
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-WasDeviceSuccessfullyProvisioned-Description-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-WasDeviceSuccessfullyProvisioned-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-WasDeviceSuccessfullyProvisioned-Editable-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-WasDeviceSuccessfullyProvisioned-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Get, Replace |
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-WasDeviceSuccessfullyProvisioned-DFProperties-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-WasDeviceSuccessfullyProvisioned-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | The device has failed to provision the user. |
+| 1 | The device has successfully provisioned the user. |
+| 2 | Provisioning is in progress. |
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-WasDeviceSuccessfullyProvisioned-AllowedValues-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-WasDeviceSuccessfullyProvisioned-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-WasDeviceSuccessfullyProvisioned-Examples-End -->
+
+<!-- User-Provider-{ProviderID}-FirstSyncStatus-WasDeviceSuccessfullyProvisioned-End -->
+
+<!-- DMClient-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- DMClient-CspMoreInfo-End -->
+
+<!-- DMClient-End -->
 
 ## Related articles
 

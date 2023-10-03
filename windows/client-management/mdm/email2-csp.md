@@ -1,336 +1,1480 @@
 ---
 title: EMAIL2 CSP
-description: Learn how the EMAIL2 configuration service provider (CSP) is used to configure Simple Mail Transfer Protocol (SMTP) email accounts.
-ms.reviewer: 
+description: Learn more about the EMAIL2 CSP.
+author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: vinaypamnani-msft
-ms.date: 06/26/2017
+ms.date: 08/10/2023
+ms.localizationpriority: medium
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- EMAIL2-Begin -->
 # EMAIL2 CSP
 
-The table below shows the applicability of Windows:
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
+<!-- EMAIL2-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 The EMAIL2 configuration service provider (CSP) is used to configure Simple Mail Transfer Protocol (SMTP) email accounts.
 
-> [!Note]
+> [!NOTE]
 > This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_CSP\_MAIL capabilities to be accessed from a network configuration application.
-
-On Windows client, only per user configuration is supported. 
-
-The following information shows the EMAIL2 configuration service provider management object in tree format as used by both OMA DM and OMA Client Provisioning.
-
-```console
-./Vendor/MSFT
-EMAIL2
-----Account GUID
---------ACCOUNTICON
---------ACCOUNTTYPE
---------AUTHNAME
---------AUTHREQUIRED
---------AUTHSECRET
---------DOMAIN
---------DWNDAY
---------INSERVER
---------LINGER
---------KEEPMAX
---------NAME
---------OUTSERVER
---------REPLYADDR
---------SERVICENAME
---------SERVICETYPE
---------RETRIEVE
---------SERVERDELETEACTION
---------CELLULARONLY
---------SYNCINGCONTENTTYPES
---------CONTACTSSERVER
---------CALENDARSERVER
---------CONTACTSSERVERREQUIRESSL
---------CALENDARSERVERREQUIRESSL
---------CONTACTSSYNCSCHEDULE
---------CALENDARSYNCSCHEDULE
---------SMTPALTAUTHNAME
---------SMTPALTDOMAIN
---------SMTPALTENABLED
---------SMTPALTPASSWORD
---------TAGPROPS
-------------8128000B
-------------812C000B
-```
-
-After provisioning, the **Start** screen has a tile for the proprietary mail provider and there's also a link to it in the applications list under **Settings, email & accounts**. After an account has been updated over-the-air by the EMAIL2 CSP, the device must be powered off and then powered back on to see the sync status.
-
-Configuration data isn't encrypted when sent over the air (OTA). This is a potential security risk when sending sensitive configuration data, such as passwords.
 
 > [!IMPORTANT]
 > All Add and Replace commands need to be wrapped in an Atomic section.
+<!-- EMAIL2-Editable-End -->
 
-<a href="" id="email2"></a>**EMAIL2**  
-The configuration service provider root node.
+<!-- EMAIL2-Tree-Begin -->
+The following list shows the EMAIL2 configuration service provider nodes:
 
-Supported operation is Get.
+- ./User/Vendor/MSFT/EMAIL2
+  - [{Account GUID}](#account-guid)
+    - [ACCOUNTICON](#account-guidaccounticon)
+    - [ACCOUNTTYPE](#account-guidaccounttype)
+    - [AUTHNAME](#account-guidauthname)
+    - [AUTHREQUIRED](#account-guidauthrequired)
+    - [AUTHSECRET](#account-guidauthsecret)
+    - [CALENDARSERVER](#account-guidcalendarserver)
+    - [CALENDARSERVERREQUIRESSL](#account-guidcalendarserverrequiressl)
+    - [CALENDARSYNCSCHEDULE](#account-guidcalendarsyncschedule)
+    - [CELLULARONLY](#account-guidcellularonly)
+    - [CONTACTSSERVER](#account-guidcontactsserver)
+    - [CONTACTSSERVERREQUIRESSL](#account-guidcontactsserverrequiressl)
+    - [CONTACTSSYNCSCHEDULE](#account-guidcontactssyncschedule)
+    - [DOMAIN](#account-guiddomain)
+    - [DWNDAY](#account-guiddwnday)
+    - [INSERVER](#account-guidinserver)
+    - [KEEPMAX](#account-guidkeepmax)
+    - [LINGER](#account-guidlinger)
+    - [NAME](#account-guidname)
+    - [OUTSERVER](#account-guidoutserver)
+    - [REPLYADDR](#account-guidreplyaddr)
+    - [RETRIEVE](#account-guidretrieve)
+    - [SERVERDELETEACTION](#account-guidserverdeleteaction)
+    - [SERVICENAME](#account-guidservicename)
+    - [SERVICETYPE](#account-guidservicetype)
+    - [SMTPALTAUTHNAME](#account-guidsmtpaltauthname)
+    - [SMTPALTDOMAIN](#account-guidsmtpaltdomain)
+    - [SMTPALTENABLED](#account-guidsmtpaltenabled)
+    - [SMTPALTPASSWORD](#account-guidsmtpaltpassword)
+    - [SYNCINGCONTENTTYPES](#account-guidsyncingcontenttypes)
+    - [TAGPROPS](#account-guidtagprops)
+      - [8128000B](#account-guidtagprops8128000b)
+      - [812C000B](#account-guidtagprops812c000b)
+<!-- EMAIL2-Tree-End -->
 
-<a href="" id="guid"></a>***GUID***  
-Defines a specific email account. A globally unique identifier (GUID) must be generated for each email account on the device. Provisioning with an account that has the same GUID as an existing one doesn't create the new account and Add command will fail in this case.
+<!-- User-{Account GUID}-Begin -->
+## {Account GUID}
 
-Supported operations are Get, Add, and Delete.
+<!-- User-{Account GUID}-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- User-{Account GUID}-Applicability-End -->
+
+<!-- User-{Account GUID}-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/EMAIL2/{Account GUID}
+```
+<!-- User-{Account GUID}-OmaUri-End -->
+
+<!-- User-{Account GUID}-Description-Begin -->
+<!-- Description-Source-DDF -->
+This is unique and identifies a particular account. Also, we can only have 6 additional email accounts. So, depending on how many are already there on the device, we can have from 1 to 6.
+<!-- User-{Account GUID}-Description-End -->
+
+<!-- User-{Account GUID}-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+A globally unique identifier (GUID) must be generated for each email account on the device. Provisioning with an account that has the same GUID as an existing one doesn't create the new account and Add command will fail in this case.
 
 The braces {} around the GUID are required in the EMAIL2 configuration service provider.
 
 - For OMA Client Provisioning, the braces can be sent literally. For example, `<characteristic type="{C556E16F-56C4-4edb-9C64-D9469EE1FBE0}"/>`
 - For OMA DM, the braces must be sent using ASCII values of 0x7B and 0x7D respectively. For example, `<Target><LocURI>./Vendor/MSFT/EMAIL2/0x7BC556E16F-56C4-4edb-9C64-D9469EE1FBE0x7D</LocURI></Target>`
+<!-- User-{Account GUID}-Editable-End -->
 
-<a href="" id="accounticon"></a>**ACCOUNTICON**  
-Optional. Returns the location of the icon associated with the account.
+<!-- User-{Account GUID}-DFProperties-Begin -->
+**Description framework properties**:
 
-Supported operations are Get, Add, Replace, and Delete.
+| Property name | Property value |
+|:--|:--|
+| Format | `node` |
+| Access Type | Add, Delete, Get, Replace |
+| Dynamic Node Naming | ServerGeneratedUniqueIdentifier |
+| Allowed Values | Regular Expression: `\{[0-9A-Fa-f]{8}\-[0-9A-Fa-f]{4}\-[0-9A-Fa-f]{4}\-[0-9A-Fa-f]{4}\-[0-9A-Fa-f]{12}\}` |
+<!-- User-{Account GUID}-DFProperties-End -->
 
-The account icon can be used as a tile in the **Start** list or an icon in the applications list under **Settings, email & accounts**. Some icons are already provided on the device. The suggested icon for POP/IMAP or generic ActiveSync accounts is at res://AccountSettingsSharedRes{*ScreenResolution*}!%s.genericmail.png. The suggested icon for Exchange Accounts is at res://AccountSettingsSharedRes{*ScreenResolution*}!%s.office.outlook.png. Custom icons can be added.
+<!-- User-{Account GUID}-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- User-{Account GUID}-Examples-End -->
 
-<a href="" id="accounttype"></a>**ACCOUNTTYPE**  
-Required. Specifies the type of account.
+<!-- User-{Account GUID}-End -->
 
-Supported operations are Get, Add, Replace, and Delete.
+<!-- User-{Account GUID}-ACCOUNTICON-Begin -->
+### {Account GUID}/ACCOUNTICON
 
-Valid values are:
+<!-- User-{Account GUID}-ACCOUNTICON-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- User-{Account GUID}-ACCOUNTICON-Applicability-End -->
 
-- Email: Normal email
-- VVM: Visual voice mail
+<!-- User-{Account GUID}-ACCOUNTICON-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/EMAIL2/{Account GUID}/ACCOUNTICON
+```
+<!-- User-{Account GUID}-ACCOUNTICON-OmaUri-End -->
 
-<a href="" id="authname"></a>**AUTHNAME**  
-Required. Character string that specifies the name used to authorize the user to a specific email account (also known as the user's logon name).
+<!-- User-{Account GUID}-ACCOUNTICON-Description-Begin -->
+<!-- Description-Source-DDF -->
+The location of the icon associated with the account. The account icon can be used as a tile in the Start list or an icon in the applications list under Settings, email & accounts. Some icons are already provided on the device. The suggested icon for POP/IMAP or generic ActiveSync accounts is at res://AccountSettingsSharedRes{ScreenResolution}!%s.genericmail.png. The suggested icon for Exchange Accounts is at res://AccountSettingsSharedRes{ScreenResolution}!%s.office.outlook.png. Custom icons can be added if desired.
+<!-- User-{Account GUID}-ACCOUNTICON-Description-End -->
 
-Supported operations are Get, Add, Replace, and Delete.
+<!-- User-{Account GUID}-ACCOUNTICON-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- User-{Account GUID}-ACCOUNTICON-Editable-End -->
 
-<a href="" id="authrequired"></a>**AUTHREQUIRED**  
-Optional. Character string that specifies whether the outgoing server requires authentication.
+<!-- User-{Account GUID}-ACCOUNTICON-DFProperties-Begin -->
+**Description framework properties**:
 
-Supported operations are Get, Add, Replace, and Delete.
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- User-{Account GUID}-ACCOUNTICON-DFProperties-End -->
 
-Value options are:
+<!-- User-{Account GUID}-ACCOUNTICON-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- User-{Account GUID}-ACCOUNTICON-Examples-End -->
 
-- 0 - Server authentication isn't required.
-- 1 - Server authentication is required.
+<!-- User-{Account GUID}-ACCOUNTICON-End -->
+
+<!-- User-{Account GUID}-ACCOUNTTYPE-Begin -->
+### {Account GUID}/ACCOUNTTYPE
+
+<!-- User-{Account GUID}-ACCOUNTTYPE-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- User-{Account GUID}-ACCOUNTTYPE-Applicability-End -->
+
+<!-- User-{Account GUID}-ACCOUNTTYPE-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/EMAIL2/{Account GUID}/ACCOUNTTYPE
+```
+<!-- User-{Account GUID}-ACCOUNTTYPE-OmaUri-End -->
+
+<!-- User-{Account GUID}-ACCOUNTTYPE-Description-Begin -->
+<!-- Description-Source-DDF -->
+Specifies the type of account. Valid values are: Email - normal email, VVM - visual voice mail.
+<!-- User-{Account GUID}-ACCOUNTTYPE-Description-End -->
+
+<!-- User-{Account GUID}-ACCOUNTTYPE-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- User-{Account GUID}-ACCOUNTTYPE-Editable-End -->
+
+<!-- User-{Account GUID}-ACCOUNTTYPE-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- User-{Account GUID}-ACCOUNTTYPE-DFProperties-End -->
+
+<!-- User-{Account GUID}-ACCOUNTTYPE-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| Email | Normal email. |
+| VVM | Visual voice mail. |
+<!-- User-{Account GUID}-ACCOUNTTYPE-AllowedValues-End -->
+
+<!-- User-{Account GUID}-ACCOUNTTYPE-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- User-{Account GUID}-ACCOUNTTYPE-Examples-End -->
+
+<!-- User-{Account GUID}-ACCOUNTTYPE-End -->
+
+<!-- User-{Account GUID}-AUTHNAME-Begin -->
+### {Account GUID}/AUTHNAME
+
+<!-- User-{Account GUID}-AUTHNAME-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- User-{Account GUID}-AUTHNAME-Applicability-End -->
+
+<!-- User-{Account GUID}-AUTHNAME-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/EMAIL2/{Account GUID}/AUTHNAME
+```
+<!-- User-{Account GUID}-AUTHNAME-OmaUri-End -->
+
+<!-- User-{Account GUID}-AUTHNAME-Description-Begin -->
+<!-- Description-Source-DDF -->
+Character string that specifies the name used to authorize the user to a specific email account (also known as the user's logon name).
+<!-- User-{Account GUID}-AUTHNAME-Description-End -->
+
+<!-- User-{Account GUID}-AUTHNAME-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- User-{Account GUID}-AUTHNAME-Editable-End -->
+
+<!-- User-{Account GUID}-AUTHNAME-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- User-{Account GUID}-AUTHNAME-DFProperties-End -->
+
+<!-- User-{Account GUID}-AUTHNAME-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- User-{Account GUID}-AUTHNAME-Examples-End -->
+
+<!-- User-{Account GUID}-AUTHNAME-End -->
+
+<!-- User-{Account GUID}-AUTHREQUIRED-Begin -->
+### {Account GUID}/AUTHREQUIRED
+
+<!-- User-{Account GUID}-AUTHREQUIRED-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- User-{Account GUID}-AUTHREQUIRED-Applicability-End -->
+
+<!-- User-{Account GUID}-AUTHREQUIRED-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/EMAIL2/{Account GUID}/AUTHREQUIRED
+```
+<!-- User-{Account GUID}-AUTHREQUIRED-OmaUri-End -->
+
+<!-- User-{Account GUID}-AUTHREQUIRED-Description-Begin -->
+<!-- Description-Source-DDF -->
+Character string that specifies whether the outgoing server requires authentication.
+
+1 for TRUE
+0 for FALSE(default).
 
 > [!NOTE]
-> If this value isn't specified, then no SMTP authentication is done. Also, this is different from SMTPALTENABLED.
+> If this isn't specified then SMTP authentication won't be done. Also, this is different from the SMTPALTENABLED. That is to specify different set of credentials for SMTP.
+<!-- User-{Account GUID}-AUTHREQUIRED-Description-End -->
 
-<a href="" id="authsecret"></a>**AUTHSECRET**  
-Optional. Character string that specifies the user's password. The same password is used for SMTP authentication.
+<!-- User-{Account GUID}-AUTHREQUIRED-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- User-{Account GUID}-AUTHREQUIRED-Editable-End -->
 
-Supported operations are Get, Add, Replace, and Delete.
+<!-- User-{Account GUID}-AUTHREQUIRED-DFProperties-Begin -->
+**Description framework properties**:
 
-<a href="" id="domain"></a>**DOMAIN**  
-Optional. Character string that specifies the incoming server credentials domain. Limited to 255 characters.
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- User-{Account GUID}-AUTHREQUIRED-DFProperties-End -->
 
-Supported operations are Get, Add, Replace, and Delete.
+<!-- User-{Account GUID}-AUTHREQUIRED-AllowedValues-Begin -->
+**Allowed values**:
 
-<a href="" id="dwnday"></a>**DWNDAY**  
-Optional. Character string that specifies how many days' worth of email should be downloaded from the server.
+| Value | Description |
+|:--|:--|
+| 0 | Server authentication isn't required. |
+| 1 | Server authentication is required. |
+<!-- User-{Account GUID}-AUTHREQUIRED-AllowedValues-End -->
 
-Supported operations are Get, Add, Replace, and Delete.
+<!-- User-{Account GUID}-AUTHREQUIRED-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- User-{Account GUID}-AUTHREQUIRED-Examples-End -->
 
-Value options:
+<!-- User-{Account GUID}-AUTHREQUIRED-End -->
 
-- -1: Specifies that all email currently on the server should be downloaded.
-- 7: Specifies that seven days’ worth of email should be downloaded.
-- 14: Specifies that 14 days’ worth of email should be downloaded.
-- 30: Specifies that 30 days’ worth of email should be downloaded.
+<!-- User-{Account GUID}-AUTHSECRET-Begin -->
+### {Account GUID}/AUTHSECRET
 
-<a href="" id="inserver"></a>**INSERVER**  
-Required. Character string that specifies the name of the incoming server name and port number. This string is limited to 62 characters. If the standard port number is used, then you don't have to specify the port number. The value format is:
+<!-- User-{Account GUID}-AUTHSECRET-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- User-{Account GUID}-AUTHSECRET-Applicability-End -->
 
-- server name:port number
+<!-- User-{Account GUID}-AUTHSECRET-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/EMAIL2/{Account GUID}/AUTHSECRET
+```
+<!-- User-{Account GUID}-AUTHSECRET-OmaUri-End -->
 
-Supported operations are Get, Add, and Replace.
+<!-- User-{Account GUID}-AUTHSECRET-Description-Begin -->
+<!-- Description-Source-DDF -->
+Character string that specifies the user's password. The same password is used for SMTP authentication.
+<!-- User-{Account GUID}-AUTHSECRET-Description-End -->
 
-<a href="" id="linger"></a>**LINGER**  
-Optional. Character string that specifies the length of time between email send/receive updates in minutes.
+<!-- User-{Account GUID}-AUTHSECRET-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- User-{Account GUID}-AUTHSECRET-Editable-End -->
 
-Supported operations are Get, Add, Replace, and Delete.
+<!-- User-{Account GUID}-AUTHSECRET-DFProperties-Begin -->
+**Description framework properties**:
 
-Value options:
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- User-{Account GUID}-AUTHSECRET-DFProperties-End -->
 
-- 0 - Email updates must be performed manually
-- 15 (default) - Wait for 15 minutes between updates
-- 30 - Wait for 30 minutes between updates
-- 60 - Wait for 60 minutes between updates
-- 120 - Wait for 120 minutes between updates.
+<!-- User-{Account GUID}-AUTHSECRET-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- User-{Account GUID}-AUTHSECRET-Examples-End -->
 
-<a href="" id="keepmax"></a>**KEEPMAX**  
-Optional. Specifies the maximum size for a message attachment. Attachments beyond this size will not be downloaded but it will remain on the server. The message itself will be downloaded. This value can be set only for IMAP4 accounts.
+<!-- User-{Account GUID}-AUTHSECRET-End -->
 
-The limit is specified in KB.
+<!-- User-{Account GUID}-CALENDARSERVER-Begin -->
+### {Account GUID}/CALENDARSERVER
 
-Value options are 0, 25, 50, 125, and 250.
+<!-- User-{Account GUID}-CALENDARSERVER-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- User-{Account GUID}-CALENDARSERVER-Applicability-End -->
 
-A value of 0 meaning that no limit will be enforced.
+<!-- User-{Account GUID}-CALENDARSERVER-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/EMAIL2/{Account GUID}/CALENDARSERVER
+```
+<!-- User-{Account GUID}-CALENDARSERVER-OmaUri-End -->
 
-Supported operations are Get, Add, Replace, and Delete.
+<!-- User-{Account GUID}-CALENDARSERVER-Description-Begin -->
+<!-- Description-Source-DDF -->
+Server for calendar sync if it's different from the email server.
+<!-- User-{Account GUID}-CALENDARSERVER-Description-End -->
 
-<a href="" id="name"></a>**NAME**  
-Optional. Character string that specifies the name of the sender displayed on a sent email. It should be set to the user’s name. Limited to 255 characters.
+<!-- User-{Account GUID}-CALENDARSERVER-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- User-{Account GUID}-CALENDARSERVER-Editable-End -->
 
-Supported operations are Get, Add, Replace, and Delete.
+<!-- User-{Account GUID}-CALENDARSERVER-DFProperties-Begin -->
+**Description framework properties**:
 
-<a href="" id="outserver"></a>**OUTSERVER**  
-Required. Character string that specifies the name of the messaging service's outgoing email server. Limited to 62 characters. The value format is:
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- User-{Account GUID}-CALENDARSERVER-DFProperties-End -->
 
-- server name:port number
+<!-- User-{Account GUID}-CALENDARSERVER-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- User-{Account GUID}-CALENDARSERVER-Examples-End -->
 
-Supported operations are Get, Add, Delete, and Replace.
+<!-- User-{Account GUID}-CALENDARSERVER-End -->
 
-<a href="" id="replyaddr"></a>**REPLYADDR**  
-Required. Character string that specifies the reply email address of the user (usually the same as the user email address). Sending email will fail without it. Limited to 255 characters.
+<!-- User-{Account GUID}-CALENDARSERVERREQUIRESSL-Begin -->
+### {Account GUID}/CALENDARSERVERREQUIRESSL
 
-Supported operations are Get, Add, Delete, and Replace.
+<!-- User-{Account GUID}-CALENDARSERVERREQUIRESSL-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- User-{Account GUID}-CALENDARSERVERREQUIRESSL-Applicability-End -->
 
-<a href="" id="servicename"></a>**SERVICENAME**  
-Required. Character string that specifies the name of the email service to create or edit (32 characters maximum).
+<!-- User-{Account GUID}-CALENDARSERVERREQUIRESSL-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/EMAIL2/{Account GUID}/CALENDARSERVERREQUIRESSL
+```
+<!-- User-{Account GUID}-CALENDARSERVERREQUIRESSL-OmaUri-End -->
 
-Supported operations are Get, Add, Replace, and Delete.
+<!-- User-{Account GUID}-CALENDARSERVERREQUIRESSL-Description-Begin -->
+<!-- Description-Source-DDF -->
+Indicates if the connection to the calendar server requires SSL.
+<!-- User-{Account GUID}-CALENDARSERVERREQUIRESSL-Description-End -->
 
+<!-- User-{Account GUID}-CALENDARSERVERREQUIRESSL-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- User-{Account GUID}-CALENDARSERVERREQUIRESSL-Editable-End -->
+
+<!-- User-{Account GUID}-CALENDARSERVERREQUIRESSL-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- User-{Account GUID}-CALENDARSERVERREQUIRESSL-DFProperties-End -->
+
+<!-- User-{Account GUID}-CALENDARSERVERREQUIRESSL-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- User-{Account GUID}-CALENDARSERVERREQUIRESSL-Examples-End -->
+
+<!-- User-{Account GUID}-CALENDARSERVERREQUIRESSL-End -->
+
+<!-- User-{Account GUID}-CALENDARSYNCSCHEDULE-Begin -->
+### {Account GUID}/CALENDARSYNCSCHEDULE
+
+<!-- User-{Account GUID}-CALENDARSYNCSCHEDULE-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- User-{Account GUID}-CALENDARSYNCSCHEDULE-Applicability-End -->
+
+<!-- User-{Account GUID}-CALENDARSYNCSCHEDULE-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/EMAIL2/{Account GUID}/CALENDARSYNCSCHEDULE
+```
+<!-- User-{Account GUID}-CALENDARSYNCSCHEDULE-OmaUri-End -->
+
+<!-- User-{Account GUID}-CALENDARSYNCSCHEDULE-Description-Begin -->
+<!-- Description-Source-DDF -->
+Sets the schedule for syncing calendar items.
+<!-- User-{Account GUID}-CALENDARSYNCSCHEDULE-Description-End -->
+
+<!-- User-{Account GUID}-CALENDARSYNCSCHEDULE-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- User-{Account GUID}-CALENDARSYNCSCHEDULE-Editable-End -->
+
+<!-- User-{Account GUID}-CALENDARSYNCSCHEDULE-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- User-{Account GUID}-CALENDARSYNCSCHEDULE-DFProperties-End -->
+
+<!-- User-{Account GUID}-CALENDARSYNCSCHEDULE-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- User-{Account GUID}-CALENDARSYNCSCHEDULE-Examples-End -->
+
+<!-- User-{Account GUID}-CALENDARSYNCSCHEDULE-End -->
+
+<!-- User-{Account GUID}-CELLULARONLY-Begin -->
+### {Account GUID}/CELLULARONLY
+
+<!-- User-{Account GUID}-CELLULARONLY-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- User-{Account GUID}-CELLULARONLY-Applicability-End -->
+
+<!-- User-{Account GUID}-CELLULARONLY-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/EMAIL2/{Account GUID}/CELLULARONLY
+```
+<!-- User-{Account GUID}-CELLULARONLY-OmaUri-End -->
+
+<!-- User-{Account GUID}-CELLULARONLY-Description-Begin -->
+<!-- Description-Source-DDF -->
+If this flag is set, the account only uses the cellular network and not Wi-Fi.
+<!-- User-{Account GUID}-CELLULARONLY-Description-End -->
+
+<!-- User-{Account GUID}-CELLULARONLY-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- User-{Account GUID}-CELLULARONLY-Editable-End -->
+
+<!-- User-{Account GUID}-CELLULARONLY-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- User-{Account GUID}-CELLULARONLY-DFProperties-End -->
+
+<!-- User-{Account GUID}-CELLULARONLY-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- User-{Account GUID}-CELLULARONLY-Examples-End -->
+
+<!-- User-{Account GUID}-CELLULARONLY-End -->
+
+<!-- User-{Account GUID}-CONTACTSSERVER-Begin -->
+### {Account GUID}/CONTACTSSERVER
+
+<!-- User-{Account GUID}-CONTACTSSERVER-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- User-{Account GUID}-CONTACTSSERVER-Applicability-End -->
+
+<!-- User-{Account GUID}-CONTACTSSERVER-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/EMAIL2/{Account GUID}/CONTACTSSERVER
+```
+<!-- User-{Account GUID}-CONTACTSSERVER-OmaUri-End -->
+
+<!-- User-{Account GUID}-CONTACTSSERVER-Description-Begin -->
+<!-- Description-Source-DDF -->
+Server for contact sync if it's different from the email server.
+<!-- User-{Account GUID}-CONTACTSSERVER-Description-End -->
+
+<!-- User-{Account GUID}-CONTACTSSERVER-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- User-{Account GUID}-CONTACTSSERVER-Editable-End -->
+
+<!-- User-{Account GUID}-CONTACTSSERVER-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- User-{Account GUID}-CONTACTSSERVER-DFProperties-End -->
+
+<!-- User-{Account GUID}-CONTACTSSERVER-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- User-{Account GUID}-CONTACTSSERVER-Examples-End -->
+
+<!-- User-{Account GUID}-CONTACTSSERVER-End -->
+
+<!-- User-{Account GUID}-CONTACTSSERVERREQUIRESSL-Begin -->
+### {Account GUID}/CONTACTSSERVERREQUIRESSL
+
+<!-- User-{Account GUID}-CONTACTSSERVERREQUIRESSL-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- User-{Account GUID}-CONTACTSSERVERREQUIRESSL-Applicability-End -->
+
+<!-- User-{Account GUID}-CONTACTSSERVERREQUIRESSL-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/EMAIL2/{Account GUID}/CONTACTSSERVERREQUIRESSL
+```
+<!-- User-{Account GUID}-CONTACTSSERVERREQUIRESSL-OmaUri-End -->
+
+<!-- User-{Account GUID}-CONTACTSSERVERREQUIRESSL-Description-Begin -->
+<!-- Description-Source-DDF -->
+Indicates if the connection to the contact server requires SSL.
+<!-- User-{Account GUID}-CONTACTSSERVERREQUIRESSL-Description-End -->
+
+<!-- User-{Account GUID}-CONTACTSSERVERREQUIRESSL-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- User-{Account GUID}-CONTACTSSERVERREQUIRESSL-Editable-End -->
+
+<!-- User-{Account GUID}-CONTACTSSERVERREQUIRESSL-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- User-{Account GUID}-CONTACTSSERVERREQUIRESSL-DFProperties-End -->
+
+<!-- User-{Account GUID}-CONTACTSSERVERREQUIRESSL-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- User-{Account GUID}-CONTACTSSERVERREQUIRESSL-Examples-End -->
+
+<!-- User-{Account GUID}-CONTACTSSERVERREQUIRESSL-End -->
+
+<!-- User-{Account GUID}-CONTACTSSYNCSCHEDULE-Begin -->
+### {Account GUID}/CONTACTSSYNCSCHEDULE
+
+<!-- User-{Account GUID}-CONTACTSSYNCSCHEDULE-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- User-{Account GUID}-CONTACTSSYNCSCHEDULE-Applicability-End -->
+
+<!-- User-{Account GUID}-CONTACTSSYNCSCHEDULE-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/EMAIL2/{Account GUID}/CONTACTSSYNCSCHEDULE
+```
+<!-- User-{Account GUID}-CONTACTSSYNCSCHEDULE-OmaUri-End -->
+
+<!-- User-{Account GUID}-CONTACTSSYNCSCHEDULE-Description-Begin -->
+<!-- Description-Source-DDF -->
+Sets the schedule for syncing contact items.
+<!-- User-{Account GUID}-CONTACTSSYNCSCHEDULE-Description-End -->
+
+<!-- User-{Account GUID}-CONTACTSSYNCSCHEDULE-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- User-{Account GUID}-CONTACTSSYNCSCHEDULE-Editable-End -->
+
+<!-- User-{Account GUID}-CONTACTSSYNCSCHEDULE-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- User-{Account GUID}-CONTACTSSYNCSCHEDULE-DFProperties-End -->
+
+<!-- User-{Account GUID}-CONTACTSSYNCSCHEDULE-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- User-{Account GUID}-CONTACTSSYNCSCHEDULE-Examples-End -->
+
+<!-- User-{Account GUID}-CONTACTSSYNCSCHEDULE-End -->
+
+<!-- User-{Account GUID}-DOMAIN-Begin -->
+### {Account GUID}/DOMAIN
+
+<!-- User-{Account GUID}-DOMAIN-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- User-{Account GUID}-DOMAIN-Applicability-End -->
+
+<!-- User-{Account GUID}-DOMAIN-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/EMAIL2/{Account GUID}/DOMAIN
+```
+<!-- User-{Account GUID}-DOMAIN-OmaUri-End -->
+
+<!-- User-{Account GUID}-DOMAIN-Description-Begin -->
+<!-- Description-Source-DDF -->
+Character string that specifies the incoming server credentials domain. Limited to 255 characters.
+<!-- User-{Account GUID}-DOMAIN-Description-End -->
+
+<!-- User-{Account GUID}-DOMAIN-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- User-{Account GUID}-DOMAIN-Editable-End -->
+
+<!-- User-{Account GUID}-DOMAIN-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- User-{Account GUID}-DOMAIN-DFProperties-End -->
+
+<!-- User-{Account GUID}-DOMAIN-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- User-{Account GUID}-DOMAIN-Examples-End -->
+
+<!-- User-{Account GUID}-DOMAIN-End -->
+
+<!-- User-{Account GUID}-DWNDAY-Begin -->
+### {Account GUID}/DWNDAY
+
+<!-- User-{Account GUID}-DWNDAY-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- User-{Account GUID}-DWNDAY-Applicability-End -->
+
+<!-- User-{Account GUID}-DWNDAY-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/EMAIL2/{Account GUID}/DWNDAY
+```
+<!-- User-{Account GUID}-DWNDAY-OmaUri-End -->
+
+<!-- User-{Account GUID}-DWNDAY-Description-Begin -->
+<!-- Description-Source-DDF -->
+Character string that specifies how many days' worth of email should be downloaded from the server.
+<!-- User-{Account GUID}-DWNDAY-Description-End -->
+
+<!-- User-{Account GUID}-DWNDAY-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- User-{Account GUID}-DWNDAY-Editable-End -->
+
+<!-- User-{Account GUID}-DWNDAY-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- User-{Account GUID}-DWNDAY-DFProperties-End -->
+
+<!-- User-{Account GUID}-DWNDAY-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| -1 | Specifies that all email currently on the server should be downloaded. |
+| 7 | Specifies that 7 days’ worth of email should be downloaded. |
+| 14 | Specifies that 14 days’ worth of email should be downloaded. |
+| 30 | Specifies that 30 days’ worth of email should be downloaded. |
+| 90 | Specifies that 90 days’ worth of email should be downloaded. |
+<!-- User-{Account GUID}-DWNDAY-AllowedValues-End -->
+
+<!-- User-{Account GUID}-DWNDAY-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- User-{Account GUID}-DWNDAY-Examples-End -->
+
+<!-- User-{Account GUID}-DWNDAY-End -->
+
+<!-- User-{Account GUID}-INSERVER-Begin -->
+### {Account GUID}/INSERVER
+
+<!-- User-{Account GUID}-INSERVER-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- User-{Account GUID}-INSERVER-Applicability-End -->
+
+<!-- User-{Account GUID}-INSERVER-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/EMAIL2/{Account GUID}/INSERVER
+```
+<!-- User-{Account GUID}-INSERVER-OmaUri-End -->
+
+<!-- User-{Account GUID}-INSERVER-Description-Begin -->
+<!-- Description-Source-DDF -->
+Character string that specifies how many days' worth of email should be downloaded from the server. server name:port number.
+<!-- User-{Account GUID}-INSERVER-Description-End -->
+
+<!-- User-{Account GUID}-INSERVER-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- User-{Account GUID}-INSERVER-Editable-End -->
+
+<!-- User-{Account GUID}-INSERVER-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- User-{Account GUID}-INSERVER-DFProperties-End -->
+
+<!-- User-{Account GUID}-INSERVER-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- User-{Account GUID}-INSERVER-Examples-End -->
+
+<!-- User-{Account GUID}-INSERVER-End -->
+
+<!-- User-{Account GUID}-KEEPMAX-Begin -->
+### {Account GUID}/KEEPMAX
+
+<!-- User-{Account GUID}-KEEPMAX-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- User-{Account GUID}-KEEPMAX-Applicability-End -->
+
+<!-- User-{Account GUID}-KEEPMAX-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/EMAIL2/{Account GUID}/KEEPMAX
+```
+<!-- User-{Account GUID}-KEEPMAX-OmaUri-End -->
+
+<!-- User-{Account GUID}-KEEPMAX-Description-Begin -->
+<!-- Description-Source-DDF -->
+Specifies the maximum size for a message attachment. Attachments beyond this size won't be downloaded but it will remain on the server. The message itself will be downloaded. This value can be set only for IMAP4 accounts. The limit's specified in KB.
+<!-- User-{Account GUID}-KEEPMAX-Description-End -->
+
+<!-- User-{Account GUID}-KEEPMAX-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- User-{Account GUID}-KEEPMAX-Editable-End -->
+
+<!-- User-{Account GUID}-KEEPMAX-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- User-{Account GUID}-KEEPMAX-DFProperties-End -->
+
+<!-- User-{Account GUID}-KEEPMAX-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| -1 | No limit's enforced. |
+| 0 | No attachment is downloaded. |
+| 25 | 25 KB. |
+| 50 | 50 KB. |
+| 100 | 100 KB. |
+| 250 | 250 KB. |
+<!-- User-{Account GUID}-KEEPMAX-AllowedValues-End -->
+
+<!-- User-{Account GUID}-KEEPMAX-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- User-{Account GUID}-KEEPMAX-Examples-End -->
+
+<!-- User-{Account GUID}-KEEPMAX-End -->
+
+<!-- User-{Account GUID}-LINGER-Begin -->
+### {Account GUID}/LINGER
+
+<!-- User-{Account GUID}-LINGER-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- User-{Account GUID}-LINGER-Applicability-End -->
+
+<!-- User-{Account GUID}-LINGER-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/EMAIL2/{Account GUID}/LINGER
+```
+<!-- User-{Account GUID}-LINGER-OmaUri-End -->
+
+<!-- User-{Account GUID}-LINGER-Description-Begin -->
+<!-- Description-Source-DDF -->
+Character string that specifies the length of time between email send/receive updates in minutes. 0 indicates that updates must be performed manually.
+<!-- User-{Account GUID}-LINGER-Description-End -->
+
+<!-- User-{Account GUID}-LINGER-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- User-{Account GUID}-LINGER-Editable-End -->
+
+<!-- User-{Account GUID}-LINGER-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[(-1)-2147483647]` |
+| Default Value  | 15 |
+<!-- User-{Account GUID}-LINGER-DFProperties-End -->
+
+<!-- User-{Account GUID}-LINGER-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- User-{Account GUID}-LINGER-Examples-End -->
+
+<!-- User-{Account GUID}-LINGER-End -->
+
+<!-- User-{Account GUID}-NAME-Begin -->
+### {Account GUID}/NAME
+
+<!-- User-{Account GUID}-NAME-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- User-{Account GUID}-NAME-Applicability-End -->
+
+<!-- User-{Account GUID}-NAME-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/EMAIL2/{Account GUID}/NAME
+```
+<!-- User-{Account GUID}-NAME-OmaUri-End -->
+
+<!-- User-{Account GUID}-NAME-Description-Begin -->
+<!-- Description-Source-DDF -->
+Character string that specifies the name of the sender displayed on a sent email. It should be set to the user's name. Limited to 255 characters.
+<!-- User-{Account GUID}-NAME-Description-End -->
+
+<!-- User-{Account GUID}-NAME-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- User-{Account GUID}-NAME-Editable-End -->
+
+<!-- User-{Account GUID}-NAME-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- User-{Account GUID}-NAME-DFProperties-End -->
+
+<!-- User-{Account GUID}-NAME-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- User-{Account GUID}-NAME-Examples-End -->
+
+<!-- User-{Account GUID}-NAME-End -->
+
+<!-- User-{Account GUID}-OUTSERVER-Begin -->
+### {Account GUID}/OUTSERVER
+
+<!-- User-{Account GUID}-OUTSERVER-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- User-{Account GUID}-OUTSERVER-Applicability-End -->
+
+<!-- User-{Account GUID}-OUTSERVER-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/EMAIL2/{Account GUID}/OUTSERVER
+```
+<!-- User-{Account GUID}-OUTSERVER-OmaUri-End -->
+
+<!-- User-{Account GUID}-OUTSERVER-Description-Begin -->
+<!-- Description-Source-DDF -->
+Character string that specifies the name of the messaging service's outgoing email server. Limited to 62 characters. The value format is: server name:port number.
+<!-- User-{Account GUID}-OUTSERVER-Description-End -->
+
+<!-- User-{Account GUID}-OUTSERVER-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- User-{Account GUID}-OUTSERVER-Editable-End -->
+
+<!-- User-{Account GUID}-OUTSERVER-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- User-{Account GUID}-OUTSERVER-DFProperties-End -->
+
+<!-- User-{Account GUID}-OUTSERVER-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- User-{Account GUID}-OUTSERVER-Examples-End -->
+
+<!-- User-{Account GUID}-OUTSERVER-End -->
+
+<!-- User-{Account GUID}-REPLYADDR-Begin -->
+### {Account GUID}/REPLYADDR
+
+<!-- User-{Account GUID}-REPLYADDR-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- User-{Account GUID}-REPLYADDR-Applicability-End -->
+
+<!-- User-{Account GUID}-REPLYADDR-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/EMAIL2/{Account GUID}/REPLYADDR
+```
+<!-- User-{Account GUID}-REPLYADDR-OmaUri-End -->
+
+<!-- User-{Account GUID}-REPLYADDR-Description-Begin -->
+<!-- Description-Source-DDF -->
+Character string that specifies the reply email address of the user (usually the same as the user email address). Sending email will fail without it. Limited to 255 characters.
+<!-- User-{Account GUID}-REPLYADDR-Description-End -->
+
+<!-- User-{Account GUID}-REPLYADDR-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- User-{Account GUID}-REPLYADDR-Editable-End -->
+
+<!-- User-{Account GUID}-REPLYADDR-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- User-{Account GUID}-REPLYADDR-DFProperties-End -->
+
+<!-- User-{Account GUID}-REPLYADDR-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- User-{Account GUID}-REPLYADDR-Examples-End -->
+
+<!-- User-{Account GUID}-REPLYADDR-End -->
+
+<!-- User-{Account GUID}-RETRIEVE-Begin -->
+### {Account GUID}/RETRIEVE
+
+<!-- User-{Account GUID}-RETRIEVE-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- User-{Account GUID}-RETRIEVE-Applicability-End -->
+
+<!-- User-{Account GUID}-RETRIEVE-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/EMAIL2/{Account GUID}/RETRIEVE
+```
+<!-- User-{Account GUID}-RETRIEVE-OmaUri-End -->
+
+<!-- User-{Account GUID}-RETRIEVE-Description-Begin -->
+<!-- Description-Source-DDF -->
+Specifies the maximum size in bytes for messages retrieved from the incoming email server. Messages beyond this size are retrieved, but truncated.
+<!-- User-{Account GUID}-RETRIEVE-Description-End -->
+
+<!-- User-{Account GUID}-RETRIEVE-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- User-{Account GUID}-RETRIEVE-Editable-End -->
+
+<!-- User-{Account GUID}-RETRIEVE-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[(-1)-2147483647]` |
+<!-- User-{Account GUID}-RETRIEVE-DFProperties-End -->
+
+<!-- User-{Account GUID}-RETRIEVE-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- User-{Account GUID}-RETRIEVE-Examples-End -->
+
+<!-- User-{Account GUID}-RETRIEVE-End -->
+
+<!-- User-{Account GUID}-SERVERDELETEACTION-Begin -->
+### {Account GUID}/SERVERDELETEACTION
+
+<!-- User-{Account GUID}-SERVERDELETEACTION-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- User-{Account GUID}-SERVERDELETEACTION-Applicability-End -->
+
+<!-- User-{Account GUID}-SERVERDELETEACTION-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/EMAIL2/{Account GUID}/SERVERDELETEACTION
+```
+<!-- User-{Account GUID}-SERVERDELETEACTION-OmaUri-End -->
+
+<!-- User-{Account GUID}-SERVERDELETEACTION-Description-Begin -->
+<!-- Description-Source-DDF -->
+Character string that specifies how message is deleted on server. The default action depends on the transport.
+<!-- User-{Account GUID}-SERVERDELETEACTION-Description-End -->
+
+<!-- User-{Account GUID}-SERVERDELETEACTION-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- User-{Account GUID}-SERVERDELETEACTION-Editable-End -->
+
+<!-- User-{Account GUID}-SERVERDELETEACTION-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- User-{Account GUID}-SERVERDELETEACTION-DFProperties-End -->
+
+<!-- User-{Account GUID}-SERVERDELETEACTION-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 1 | Delete message on the server. |
+| 2 | Keep the message on the server (delete to the Trash folder). |
+<!-- User-{Account GUID}-SERVERDELETEACTION-AllowedValues-End -->
+
+<!-- User-{Account GUID}-SERVERDELETEACTION-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- User-{Account GUID}-SERVERDELETEACTION-Examples-End -->
+
+<!-- User-{Account GUID}-SERVERDELETEACTION-End -->
+
+<!-- User-{Account GUID}-SERVICENAME-Begin -->
+### {Account GUID}/SERVICENAME
+
+<!-- User-{Account GUID}-SERVICENAME-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- User-{Account GUID}-SERVICENAME-Applicability-End -->
+
+<!-- User-{Account GUID}-SERVICENAME-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/EMAIL2/{Account GUID}/SERVICENAME
+```
+<!-- User-{Account GUID}-SERVICENAME-OmaUri-End -->
+
+<!-- User-{Account GUID}-SERVICENAME-Description-Begin -->
+<!-- Description-Source-DDF -->
+Character string that specifies the name of the email service to create or edit (32 characters maximum).
+<!-- User-{Account GUID}-SERVICENAME-Description-End -->
+
+<!-- User-{Account GUID}-SERVICENAME-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- User-{Account GUID}-SERVICENAME-Editable-End -->
+
+<!-- User-{Account GUID}-SERVICENAME-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- User-{Account GUID}-SERVICENAME-DFProperties-End -->
+
+<!-- User-{Account GUID}-SERVICENAME-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
 > [!NOTE]
 > The EMAIL2 Configuration Service Provider doesn't support the OMA DM **Replace** command on the parameters **SERVICENAME** and **SERVICETYPE**. To replace either the email account name or the account service type, the existing email account must be deleted and then a new one must be created.
+<!-- User-{Account GUID}-SERVICENAME-Examples-End -->
 
-<a href="" id="servicetype"></a>**SERVICETYPE**  
-Required. Character string that specifies the type of email service to create or edit (for example, "IMAP4" or "POP3").
+<!-- User-{Account GUID}-SERVICENAME-End -->
 
-Supported operations are Get, Add, Replace, and Delete.
+<!-- User-{Account GUID}-SERVICETYPE-Begin -->
+### {Account GUID}/SERVICETYPE
 
-> **Note**   The EMAIL2 Configuration Service Provider doesn't support the OMA DM **Replace** command on the parameters **SERVICENAME** and **SERVICETYPE**. To replace either the email account name or the account service type, the existing email account must be deleted and then a new one must be created.
+<!-- User-{Account GUID}-SERVICETYPE-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- User-{Account GUID}-SERVICETYPE-Applicability-End -->
 
-<a href="" id="retrieve"></a>**RETRIEVE**  
-Optional. Specifies the maximum size in bytes for messages retrieved from the incoming email server. Messages beyond this size are retrieved, but truncated.
+<!-- User-{Account GUID}-SERVICETYPE-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/EMAIL2/{Account GUID}/SERVICETYPE
+```
+<!-- User-{Account GUID}-SERVICETYPE-OmaUri-End -->
 
-Value options are 512, 1024, 2048, 5120, 20480, and 51200.
+<!-- User-{Account GUID}-SERVICETYPE-Description-Begin -->
+<!-- Description-Source-DDF -->
+Character string that specifies the type of email service to create or edit (for example, "IMAP4" or "POP3").
+<!-- User-{Account GUID}-SERVICETYPE-Description-End -->
 
-Supported operations are Get, Add, Replace, and Delete.
+<!-- User-{Account GUID}-SERVICETYPE-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> The EMAIL2 Configuration Service Provider doesn't support the OMA DM **Replace** command on the parameters **SERVICENAME** and **SERVICETYPE**. To replace either the email account name or the account service type, the existing email account must be deleted and then a new one must be created.
+<!-- User-{Account GUID}-SERVICETYPE-Editable-End -->
 
-<a href="" id="serverdeleteaction"></a>**SERVERDELETEACTION**  
-Optional. Character string that specifies how message is deleted on server. Value options are:
+<!-- User-{Account GUID}-SERVICETYPE-DFProperties-Begin -->
+**Description framework properties**:
 
-- 1 - Delete message on the server.
-- 2 - Keep the message on the server (delete to the Trash folder).
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- User-{Account GUID}-SERVICETYPE-DFProperties-End -->
 
-Any other value results in default action, which depends on the transport.
+<!-- User-{Account GUID}-SERVICETYPE-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- User-{Account GUID}-SERVICETYPE-Examples-End -->
 
-Supported operations are Get, Add, Replace, and Delete.
+<!-- User-{Account GUID}-SERVICETYPE-End -->
 
-<a href="" id="cellularonly"></a>**CELLULARONLY**  
-Optional. If this flag is set, the account only uses the cellular network and not Wi-Fi.
+<!-- User-{Account GUID}-SMTPALTAUTHNAME-Begin -->
+### {Account GUID}/SMTPALTAUTHNAME
 
-Value type is string. Supported operations are Get, Add, Replace, and Delete.
+<!-- User-{Account GUID}-SMTPALTAUTHNAME-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- User-{Account GUID}-SMTPALTAUTHNAME-Applicability-End -->
 
-<a href="" id="syncingcontenttypes"></a>**SYNCINGCONTENTTYPES**  
-Required. Specifies a bitmask for which content types are supported for syncing, like Mail, Contacts, and Calendar.
+<!-- User-{Account GUID}-SMTPALTAUTHNAME-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/EMAIL2/{Account GUID}/SMTPALTAUTHNAME
+```
+<!-- User-{Account GUID}-SMTPALTAUTHNAME-OmaUri-End -->
 
-- No data (0x0)
-- Contacts (0x1)
-- Mail (0x2)
-- Appointments (0x4)
-- Tasks (0x8)
-- Notes (0x10)
-- Feeds (0x60)
-- Network Photo (0x180)
-- Group and room (0x200)
-- Chat (0x400)
-- Email Recipient Email (0x800)
-- Server Link (0x1000)
-- All items (0xffffffff)
+<!-- User-{Account GUID}-SMTPALTAUTHNAME-Description-Begin -->
+<!-- Description-Source-DDF -->
+Character string that specifies the display name associated with the user's alternative SMTP email account.
+<!-- User-{Account GUID}-SMTPALTAUTHNAME-Description-End -->
 
-Supported operations are Get, Add, Replace, and Delete.
+<!-- User-{Account GUID}-SMTPALTAUTHNAME-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- User-{Account GUID}-SMTPALTAUTHNAME-Editable-End -->
 
-<a href="" id="contactsserver"></a>**CONTACTSSERVER**  
-Optional. Server for contact sync if it's different from the email server.
+<!-- User-{Account GUID}-SMTPALTAUTHNAME-DFProperties-Begin -->
+**Description framework properties**:
 
-Supported operations are Get, Add, Replace, and Delete.
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- User-{Account GUID}-SMTPALTAUTHNAME-DFProperties-End -->
 
-<a href="" id="calendarserver"></a>**CALENDARSERVER**  
-Optional. Server for calendar sync if it's different from the email server.
+<!-- User-{Account GUID}-SMTPALTAUTHNAME-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- User-{Account GUID}-SMTPALTAUTHNAME-Examples-End -->
 
-Supported operations are Get, Add, Replace, and Delete.
+<!-- User-{Account GUID}-SMTPALTAUTHNAME-End -->
 
-<a href="" id="contactsserverrequiressl"></a>**CONTACTSSERVERREQUIRESSL**  
-Optional. Indicates if the connection to the contact server requires SSL.
+<!-- User-{Account GUID}-SMTPALTDOMAIN-Begin -->
+### {Account GUID}/SMTPALTDOMAIN
 
-Supported operations are Get, Add, Replace, and Delete.
+<!-- User-{Account GUID}-SMTPALTDOMAIN-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- User-{Account GUID}-SMTPALTDOMAIN-Applicability-End -->
 
-<a href="" id="calendarserverrequiressl"></a>**CALENDARSERVERREQUIRESSL**  
-Optional. Indicates if the connection to the calendar server requires SSL.
+<!-- User-{Account GUID}-SMTPALTDOMAIN-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/EMAIL2/{Account GUID}/SMTPALTDOMAIN
+```
+<!-- User-{Account GUID}-SMTPALTDOMAIN-OmaUri-End -->
 
-Supported operations are Get, Add, Replace, and Delete.
+<!-- User-{Account GUID}-SMTPALTDOMAIN-Description-Begin -->
+<!-- Description-Source-DDF -->
+Character string that specifies the domain name for the user's alternative SMTP account.
+<!-- User-{Account GUID}-SMTPALTDOMAIN-Description-End -->
 
-<a href="" id="contactssyncschedule"></a>**CONTACTSSYNCSCHEDULE**  
-Optional. Sets the schedule for syncing contact items.
+<!-- User-{Account GUID}-SMTPALTDOMAIN-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- User-{Account GUID}-SMTPALTDOMAIN-Editable-End -->
 
-Supported operations are Get, Add, Replace, and Delete.
+<!-- User-{Account GUID}-SMTPALTDOMAIN-DFProperties-Begin -->
+**Description framework properties**:
 
-<a href="" id="calendarsyncschedule"></a>**CALENDARSYNCSCHEDULE**  
-Optional. Sets the schedule for syncing calendar items.
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- User-{Account GUID}-SMTPALTDOMAIN-DFProperties-End -->
 
-Supported operations are Get, Add, Replace, and Delete.
+<!-- User-{Account GUID}-SMTPALTDOMAIN-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- User-{Account GUID}-SMTPALTDOMAIN-Examples-End -->
 
-<a href="" id="smtpaltauthname"></a>**SMTPALTAUTHNAME**  
-Optional. Character string that specifies the display name associated with the user's alternative SMTP email account.
+<!-- User-{Account GUID}-SMTPALTDOMAIN-End -->
 
-Supported operations are Get, Add, Replace, and Delete.
+<!-- User-{Account GUID}-SMTPALTENABLED-Begin -->
+### {Account GUID}/SMTPALTENABLED
 
-<a href="" id="smtpaltdomain"></a>**SMTPALTDOMAIN**  
-Optional. Character string that specifies the domain name for the user's alternative SMTP account.
+<!-- User-{Account GUID}-SMTPALTENABLED-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- User-{Account GUID}-SMTPALTENABLED-Applicability-End -->
 
-Supported operations are Get, Add, Replace, and Delete.
+<!-- User-{Account GUID}-SMTPALTENABLED-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/EMAIL2/{Account GUID}/SMTPALTENABLED
+```
+<!-- User-{Account GUID}-SMTPALTENABLED-OmaUri-End -->
 
-<a href="" id="smtpaltenabled"></a>**SMTPALTENABLED**  
-Optional. Character string that specifies if the user's alternate SMTP account is enabled.
+<!-- User-{Account GUID}-SMTPALTENABLED-Description-Begin -->
+<!-- Description-Source-DDF -->
+Character string that specifies if the user's alternate SMTP account is enabled.
+<!-- User-{Account GUID}-SMTPALTENABLED-Description-End -->
 
-Supported operations are Get, Add, Replace, and Delete.
+<!-- User-{Account GUID}-SMTPALTENABLED-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- User-{Account GUID}-SMTPALTENABLED-Editable-End -->
 
-A value of "FALSE" means the user's alternate SMTP email account is disabled. A value of "TRUE" means that the user's alternate SMTP email account is enabled.
+<!-- User-{Account GUID}-SMTPALTENABLED-DFProperties-Begin -->
+**Description framework properties**:
 
-<a href="" id="smtpaltpassword"></a>**SMTPALTPASSWORD**  
-Optional. Character string that specifies the password for the user's alternate SMTP account.
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- User-{Account GUID}-SMTPALTENABLED-DFProperties-End -->
 
-Supported operations are Get, Add, Replace, and Delete.
+<!-- User-{Account GUID}-SMTPALTENABLED-AllowedValues-Begin -->
+**Allowed values**:
 
-<a href="" id="tagprops"></a>**TAGPROPS**  
-Optional. Defines a group of properties with non-standard element names.
+| Value | Description |
+|:--|:--|
+| 0 | The user's alternate SMTP email account is disabled. |
+| 1 | The user's alternate SMTP email account is enabled. |
+<!-- User-{Account GUID}-SMTPALTENABLED-AllowedValues-End -->
 
-Supported operations are Get, Add, Replace, and Delete.
+<!-- User-{Account GUID}-SMTPALTENABLED-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- User-{Account GUID}-SMTPALTENABLED-Examples-End -->
 
-<a href="" id="tagprops-8128000b"></a>**TAGPROPS/8128000B**  
-Optional. Character string that specifies if the incoming email server requires SSL.
+<!-- User-{Account GUID}-SMTPALTENABLED-End -->
 
-Supported operations are Get, Add, Replace, and Delete.
+<!-- User-{Account GUID}-SMTPALTPASSWORD-Begin -->
+### {Account GUID}/SMTPALTPASSWORD
 
-Value options are:
+<!-- User-{Account GUID}-SMTPALTPASSWORD-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- User-{Account GUID}-SMTPALTPASSWORD-Applicability-End -->
 
-- 0 - SSL isn't required.
-- 1 - SSL is required.
+<!-- User-{Account GUID}-SMTPALTPASSWORD-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/EMAIL2/{Account GUID}/SMTPALTPASSWORD
+```
+<!-- User-{Account GUID}-SMTPALTPASSWORD-OmaUri-End -->
 
-<a href="" id="tagprops-812c000b"></a>**TAGPROPS/812C000B**  
-Optional. Character string that specifies if the outgoing email server requires SSL.
+<!-- User-{Account GUID}-SMTPALTPASSWORD-Description-Begin -->
+<!-- Description-Source-DDF -->
+Character string that specifies the password for the user's alternate SMTP account.
+<!-- User-{Account GUID}-SMTPALTPASSWORD-Description-End -->
 
-Supported operations are Get and Replace.
+<!-- User-{Account GUID}-SMTPALTPASSWORD-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- User-{Account GUID}-SMTPALTPASSWORD-Editable-End -->
 
-Value options:
+<!-- User-{Account GUID}-SMTPALTPASSWORD-DFProperties-Begin -->
+**Description framework properties**:
 
-- 0 - SSL isn't required.
-- 1 - SSL is required.
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- User-{Account GUID}-SMTPALTPASSWORD-DFProperties-End -->
 
+<!-- User-{Account GUID}-SMTPALTPASSWORD-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- User-{Account GUID}-SMTPALTPASSWORD-Examples-End -->
+
+<!-- User-{Account GUID}-SMTPALTPASSWORD-End -->
+
+<!-- User-{Account GUID}-SYNCINGCONTENTTYPES-Begin -->
+### {Account GUID}/SYNCINGCONTENTTYPES
+
+<!-- User-{Account GUID}-SYNCINGCONTENTTYPES-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- User-{Account GUID}-SYNCINGCONTENTTYPES-Applicability-End -->
+
+<!-- User-{Account GUID}-SYNCINGCONTENTTYPES-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/EMAIL2/{Account GUID}/SYNCINGCONTENTTYPES
+```
+<!-- User-{Account GUID}-SYNCINGCONTENTTYPES-OmaUri-End -->
+
+<!-- User-{Account GUID}-SYNCINGCONTENTTYPES-Description-Begin -->
+<!-- Description-Source-DDF -->
+Specifies a bitmask for which content types are supported for syncing (eg: Mail, Contacts, Calendar).
+<!-- User-{Account GUID}-SYNCINGCONTENTTYPES-Description-End -->
+
+<!-- User-{Account GUID}-SYNCINGCONTENTTYPES-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- User-{Account GUID}-SYNCINGCONTENTTYPES-Editable-End -->
+
+<!-- User-{Account GUID}-SYNCINGCONTENTTYPES-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- User-{Account GUID}-SYNCINGCONTENTTYPES-DFProperties-End -->
+
+<!-- User-{Account GUID}-SYNCINGCONTENTTYPES-AllowedValues-Begin -->
+**Allowed values**:
+
+| Flag | Description |
+|:--|:--|
+| 0x0 | No data. |
+| 0x1 | Contacts. |
+| 0x2 | Mail. |
+| 0x4 | Appointments. |
+| 0x8 | Tasks. |
+| 0x10 | Notes. |
+| 0x60 | Feeds. |
+| 0x180 | Network Photo. |
+| 0x200 | Group and room. |
+| 0x400 | Chat. |
+| 0x800 | Email Recipient Email. |
+| 0x1000 | Server Link. |
+| 0xffffffff | All items. |
+<!-- User-{Account GUID}-SYNCINGCONTENTTYPES-AllowedValues-End -->
+
+<!-- User-{Account GUID}-SYNCINGCONTENTTYPES-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- User-{Account GUID}-SYNCINGCONTENTTYPES-Examples-End -->
+
+<!-- User-{Account GUID}-SYNCINGCONTENTTYPES-End -->
+
+<!-- User-{Account GUID}-TAGPROPS-Begin -->
+### {Account GUID}/TAGPROPS
+
+<!-- User-{Account GUID}-TAGPROPS-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- User-{Account GUID}-TAGPROPS-Applicability-End -->
+
+<!-- User-{Account GUID}-TAGPROPS-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/EMAIL2/{Account GUID}/TAGPROPS
+```
+<!-- User-{Account GUID}-TAGPROPS-OmaUri-End -->
+
+<!-- User-{Account GUID}-TAGPROPS-Description-Begin -->
+<!-- Description-Source-DDF -->
+Specifies that stated parameter element name attributes is nonstandard tag properties.
+<!-- User-{Account GUID}-TAGPROPS-Description-End -->
+
+<!-- User-{Account GUID}-TAGPROPS-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- User-{Account GUID}-TAGPROPS-Editable-End -->
+
+<!-- User-{Account GUID}-TAGPROPS-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `node` |
+| Access Type | Add, Delete, Get, Replace |
+<!-- User-{Account GUID}-TAGPROPS-DFProperties-End -->
+
+<!-- User-{Account GUID}-TAGPROPS-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- User-{Account GUID}-TAGPROPS-Examples-End -->
+
+<!-- User-{Account GUID}-TAGPROPS-End -->
+
+<!-- User-{Account GUID}-TAGPROPS-8128000B-Begin -->
+#### {Account GUID}/TAGPROPS/8128000B
+
+<!-- User-{Account GUID}-TAGPROPS-8128000B-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- User-{Account GUID}-TAGPROPS-8128000B-Applicability-End -->
+
+<!-- User-{Account GUID}-TAGPROPS-8128000B-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/EMAIL2/{Account GUID}/TAGPROPS/8128000B
+```
+<!-- User-{Account GUID}-TAGPROPS-8128000B-OmaUri-End -->
+
+<!-- User-{Account GUID}-TAGPROPS-8128000B-Description-Begin -->
+<!-- Description-Source-DDF -->
+Character string that specifies if the incoming email server requires SSL.
+<!-- User-{Account GUID}-TAGPROPS-8128000B-Description-End -->
+
+<!-- User-{Account GUID}-TAGPROPS-8128000B-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- User-{Account GUID}-TAGPROPS-8128000B-Editable-End -->
+
+<!-- User-{Account GUID}-TAGPROPS-8128000B-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- User-{Account GUID}-TAGPROPS-8128000B-DFProperties-End -->
+
+<!-- User-{Account GUID}-TAGPROPS-8128000B-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | SSL isn't required. |
+| 1 | SSL is required. |
+<!-- User-{Account GUID}-TAGPROPS-8128000B-AllowedValues-End -->
+
+<!-- User-{Account GUID}-TAGPROPS-8128000B-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- User-{Account GUID}-TAGPROPS-8128000B-Examples-End -->
+
+<!-- User-{Account GUID}-TAGPROPS-8128000B-End -->
+
+<!-- User-{Account GUID}-TAGPROPS-812C000B-Begin -->
+#### {Account GUID}/TAGPROPS/812C000B
+
+<!-- User-{Account GUID}-TAGPROPS-812C000B-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- User-{Account GUID}-TAGPROPS-812C000B-Applicability-End -->
+
+<!-- User-{Account GUID}-TAGPROPS-812C000B-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/EMAIL2/{Account GUID}/TAGPROPS/812C000B
+```
+<!-- User-{Account GUID}-TAGPROPS-812C000B-OmaUri-End -->
+
+<!-- User-{Account GUID}-TAGPROPS-812C000B-Description-Begin -->
+<!-- Description-Source-DDF -->
+Character string that specifies if the outgoing email server requires SSL.
+<!-- User-{Account GUID}-TAGPROPS-812C000B-Description-End -->
+
+<!-- User-{Account GUID}-TAGPROPS-812C000B-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- User-{Account GUID}-TAGPROPS-812C000B-Editable-End -->
+
+<!-- User-{Account GUID}-TAGPROPS-812C000B-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- User-{Account GUID}-TAGPROPS-812C000B-DFProperties-End -->
+
+<!-- User-{Account GUID}-TAGPROPS-812C000B-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | SSL isn't required. |
+| 1 | SSL is required. |
+<!-- User-{Account GUID}-TAGPROPS-812C000B-AllowedValues-End -->
+
+<!-- User-{Account GUID}-TAGPROPS-812C000B-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- User-{Account GUID}-TAGPROPS-812C000B-Examples-End -->
+
+<!-- User-{Account GUID}-TAGPROPS-812C000B-End -->
+
+<!-- EMAIL2-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
 ## Remarks
 
 When an application removal or configuration roll-back is provisioned, the EMAIL2 CSP passes the request to Configuration Manager, which handles the transaction externally. When a MAPI application is removed, the accounts that were created with it are deleted. All messages and other properties that the transport (like Short Message Service \[SMS\], Post Office Protocol \[POP\], or Simple Mail Transfer Protocol \[SMTP\]) might have stored, are lost. If an attempt to create a new email account is unsuccessful, the new account is automatically deleted. If an attempt to edit an existing account is unsuccessful, the original configuration is automatically rolled back (restored).
@@ -349,6 +1493,9 @@ If the connection to the mail server is initiated with deferred SSL, the mail se
 4. If the user didn't select **Server requires encrypted (SSL) connection**, the device attempts to establish a non-SSL connection
 5. If the connection succeeds using any of the encryption protocols, the device requests the server capabilities.
 6. If one of the capabilities sent by the mail server is STARTTLS and the connection is deferred SSL, then the device enables TLS. TLS isn't enabled on connections using SSL or non-SSL.
+<!-- EMAIL2-CspMoreInfo-End -->
+
+<!-- EMAIL2-End -->
 
 ## Related articles
 

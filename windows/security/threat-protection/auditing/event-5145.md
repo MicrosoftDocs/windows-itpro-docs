@@ -1,17 +1,18 @@
 ---
-title: 5145(S, F) A network share object was checked to see whether client can be granted desired access. (Windows 10)
+title: 5145(S, F) A network share object was checked to see whether client can be granted desired access. 
 description: Describes security event 5145(S, F) A network share object was checked to see whether client can be granted desired access.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
-author: dansimp
+ms.localizationpriority: low
+author: vinaypamnani-msft
 ms.date: 09/08/2021
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.technology: windows-sec
+manager: aaroncz
+ms.author: vinpa
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 5145(S, F): A network share object was checked to see whether client can be granted desired access.
@@ -134,7 +135,7 @@ This event generates every time network share object (file or folder) was access
 
 **Access Request Information:**
 
--   **Access Mask** \[Type = HexInt32\]: the sum of hexadecimal values of requested access rights. See “Table 13. File access codes.” for different hexadecimal values for access rights.
+-   **Access Mask** \[Type = HexInt32\]: the sum of hexadecimal values of requested access rights. See [Table of file access codes](/windows/security/threat-protection/auditing/event-5145#table-of-file-access-codes) for different hexadecimal values for access rights.
 
 -   **Accesses** \[Type = UnicodeString\]: the list of access rights that were requested by **Subject\\Security ID**. These access rights depend on **Object Type**.
 

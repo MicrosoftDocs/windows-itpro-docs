@@ -34,13 +34,17 @@
     "externalReference": [],
     "globalMetadata": {
       "recommendations": true,
+      "adobe-target": true,
       "breadcrumb_path": "/windows/resources/breadcrumb/toc.json",
-      "uhfHeaderId": "MSDocsHeader-M365-IT",
-      "ms.technology": "windows",
-      "audience": "ITPro",
+      "ms.collection": [
+        "tier2"
+      ],
+      "uhfHeaderId": "MSDocsHeader-Windows",
+      "ms.technology": "itpro-apps",
       "ms.topic": "article",
-      "ms.author": "elizapo",
-      "feedback_system": "None",
+      "feedback_system": "GitHub",
+      "feedback_github_repo": "MicrosoftDocs/windows-itpro-docs",
+      "feedback_product_url": "https://support.microsoft.com/windows/send-feedback-to-microsoft-with-the-feedback-hub-app-f59187f8-8739-22d6-ba93-f66612949332",
       "_op_documentIdPathDepotMapping": {
         "./": {
           "depot_name": "MSDN.win-app-management",
@@ -55,11 +59,16 @@
         "claydetels19", 
         "jborsecnik",
         "tiburd",
-        "garycentric"
+        "garycentric",
+        "beccarobins"
       ],
       "searchScope": ["Windows 10"]
     },
-    "fileMetadata": {},
+    "fileMetadata": {
+      "feedback_system": {
+        "app-v/**/*.*": "None"
+      }
+    },
     "template": [],
     "dest": "win-app-management",
     "markdownEngineName": "markdig"

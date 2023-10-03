@@ -1,21 +1,9 @@
 ---
-title: Smart Card Removal Policy Service (Windows)
+title: Smart Card Removal Policy Service 
 description: This topic for the IT professional describes the role of the removal policy service (ScPolicySvc) in smart card implementation.
-ms.prod: m365-security
-author: paolomatarazzo
-ms.author: paoloma
 ms.reviewer: ardenw
-manager: aaroncz
-ms.collection: M365-identity-device-management
-ms.topic: article
-ms.localizationpriority: medium
+ms.topic: concept-article
 ms.date: 09/24/2021
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
-- ✅ <b>Windows Server 2016</b>
-- ✅ <b>Windows Server 2019</b>
-- ✅ <b>Windows Server 2022</b>
 ---
 
 # Smart Card Removal Policy Service

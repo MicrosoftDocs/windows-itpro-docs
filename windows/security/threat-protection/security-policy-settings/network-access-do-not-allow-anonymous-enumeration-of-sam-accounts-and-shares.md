@@ -1,21 +1,20 @@
 ---
-title: Network access Do not allow anonymous enumeration (Windows 10)
+title: Network access Do not allow anonymous enumeration 
 description: Learn about best practices and more for the security policy setting, Network access Do not allow anonymous enumeration of SAM accounts and shares.
 ms.assetid: 3686788d-4cc7-4222-9163-cbc7c3362d73
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Network access: Do not allow anonymous enumeration of SAM accounts and shares

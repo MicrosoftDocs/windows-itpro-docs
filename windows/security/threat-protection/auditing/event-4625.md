@@ -1,17 +1,21 @@
 ---
-title: 4625(F) An account failed to log on. (Windows 10)
+title: 4625(F) An account failed to log on. 
 description: Describes security event 4625(F) An account failed to log on. This event is generated if an account logon attempt failed for a locked out account.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
-author: dansimp
+ms.localizationpriority: low
+author: vinaypamnani-msft
 ms.date: 01/03/2022
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.technology: windows-sec
+manager: aaroncz
+ms.author: vinpa
+ms.technology: itpro-security
+ms.collection: 
+  - highpri
+  - tier3
+ms.topic: reference
 ---
 
 # 4625(F): An account failed to log on.
@@ -25,7 +29,7 @@ ms.technology: windows-sec
 
 This event is logged for any logon failure.
 
-It generates on the computer where logon attempt was made, for example, if logon attempt was made on user’s workstation, then event will be logged on this workstation.
+It generates on the computer where logon attempt was made, for example, if logon attempt was made on user's workstation, then event will be logged on this workstation.
 
 This event generates on domain controllers, member servers, and workstations.
 
@@ -104,11 +108,11 @@ This event generates on domain controllers, member servers, and workstations.
 
     -   Uppercase full domain name: CONTOSO.LOCAL
 
-    -   For some [well-known security principals](/windows/security/identity-protection/access-control/security-identifiers), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
+    -   For some [well-known security principals](/windows/security/identity-protection/access-control/security-identifiers), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is "NT AUTHORITY".
 
-    -   For local user accounts, this field will contain the name of the computer or device that this account belongs to, for example: “Win81”.
+    -   For local user accounts, this field will contain the name of the computer or device that this account belongs to, for example: "Win81".
 
--   **Logon Type** \[Type = UInt32\]**:** the type of logon that was performed. “Table 11. Windows Logon Types” contains the list of possible values for this field.
+-   **Logon Type** \[Type = UInt32\]**:** the type of logon that was performed. "Table 11. Windows Logon Types" contains the list of possible values for this field.
 
 
     <span id="_Ref433822321" class="anchor"></span>**Table 11: Windows Logon Types**
@@ -143,50 +147,22 @@ This event generates on domain controllers, member servers, and workstations.
 
     -   Uppercase full domain name: CONTOSO.LOCAL
 
-    -   For some [well-known security principals](/windows/security/identity-protection/access-control/security-identifiers), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
+    -   For some [well-known security principals](/windows/security/identity-protection/access-control/security-identifiers), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is "NT AUTHORITY".
 
-    -   For local user accounts, this field will contain the name of the computer or device that this account belongs to, for example: “Win81”.
+    -   For local user accounts, this field will contain the name of the computer or device that this account belongs to, for example: "Win81".
 
--   **Logon ID** \[Type = HexInt64\]**:** hexadecimal value that can help you correlate this event with recent events that might contain the same Logon ID, for example, “[4624](event-4624.md): An account was successfully logged on.”
+-   **Logon ID** \[Type = HexInt64\]**:** hexadecimal value that can help you correlate this event with recent events that might contain the same Logon ID, for example, "[4624](event-4624.md): An account was successfully logged on."
 
 **Failure Information:**
 
--   **Failure Reason** \[Type = UnicodeString\]**:** textual explanation of **Status** field value. For this event, it typically has “**Account locked out**” value.
+-   **Failure Reason** \[Type = UnicodeString\]**:** textual explanation of **Status** field value. For this event, it typically has "**Account locked out**" value.
 
--   **Status** \[Type = HexInt32\]**:** the reason why logon failed. For this event, it typically has “**0xC0000234**” value. The most common status codes are listed in Table 12. Windows logon status codes.
+-   **Status** \[Type = HexInt32\]**:** the reason why logon failed. For this event, it typically has "**0xC0000234**" value.
 
-    <span id="_Ref433822658" class="anchor"></span>**Table 12: Windows logon status codes.**
-
-    | Status\\Sub-Status Code | Description                                                                      |
-    |-------------------------|------------------------------------------------------------------------------------------------------|
-    | 0XC000005E              | There are currently no logon servers available to service the logon request.                         |
-    | 0xC0000064              | User logon with misspelled or bad user account                                                       |
-    | 0xC000006A              | User logon with misspelled or bad password                                                           |
-    | 0XC000006D              | The cause is either a bad username or authentication information                                   |
-    | 0XC000006E              | Indicates a referenced user name and authentication information are valid, but some user account restriction has prevented successful authentication (such as time-of-day restrictions).     |
-    | 0xC000006F              | User logon outside authorized hours                                                                  |
-    | 0xC0000070              | User logon from unauthorized workstation                                                             |
-    | 0xC0000071              | User logon with expired password                                                                     |
-    | 0xC0000072              | User logon to account disabled by administrator                                                      |
-    | 0XC00000DC              | Indicates the Sam Server was in the wrong state to perform the desired operation.                    |
-    | 0XC0000133              | Clocks between DC and other computer too far out of sync                                             |
-    | 0XC000015B              | The user has not been granted the requested logon type (also called the *logon right*) at this machine             |
-    | 0XC000018C              | The logon request failed because the trust relationship between the primary domain and the trusted domain failed.      |
-    | 0XC0000192              | An attempt was made to logon, but the **Netlogon** service was not started.                                            |
-    | 0xC0000193              | User logon with expired account                                                                      |
-    | 0XC0000224              | User is required to change password at next logon                                                    |
-    | 0XC0000225              | Evidently a bug in Windows and not a risk                                                            |
-    | 0xC0000234              | User logon with account locked                                                                       |
-    | 0XC00002EE              | Failure Reason: An Error occurred during Logon                                                       |
-    | 0XC0000413              | Logon Failure: The machine you are logging on to is protected by an authentication firewall. The specified account is not allowed to authenticate to the machine. |
-    | 0x0                     | Status OK.  |
+-   **Sub Status** \[Type = HexInt32\]**:** additional information about logon failure.
 
 > [!NOTE]
-> To see the meaning of other status or substatus codes, you might also check for status code in the Windows header file ntstatus.h in Windows SDK.
-
-More information: <https://dev.windows.com/en-us/downloads>
-
--   **Sub Status** \[Type = HexInt32\]**:** additional information about logon failure. The most common substatus codes listed in the “Table 12. Windows logon status codes.”.
+> For more information about various Status or Sub Status codes, see [NTSTATUS Values](/openspecs/windows_protocols/ms-erref/596a1078-e883-4972-9bbc-49e60bebca55).
 
 **Process Information:**
 
@@ -196,7 +172,7 @@ More information: <https://dev.windows.com/en-us/downloads>
 
     If you convert the hexadecimal value to decimal, you can compare it to the values in Task Manager.
 
-    You can also correlate this process ID with a process ID in other events, for example, “[4688](event-4688.md): A new process has been created” **Process Information\\New Process ID**.
+    You can also correlate this process ID with a process ID in other events, for example, "[4688](event-4688.md): A new process has been created" **Process Information\\New Process ID**.
 
 -   **Caller Process Name** \[Type = UnicodeString\]**:** full path and the name of the executable for the process.
 
@@ -216,9 +192,9 @@ More information: <https://dev.windows.com/en-us/downloads>
 
 **Detailed Authentication Information:**
 
--   **Logon Process** \[Type = UnicodeString\]**:** the name of the trusted logon process that was used for the logon attempt. See event “[4611](event-4611.md): A trusted logon process has been registered with the Local Security Authority” description for more information.
+-   **Logon Process** \[Type = UnicodeString\]**:** the name of the trusted logon process that was used for the logon attempt. See event "[4611](event-4611.md): A trusted logon process has been registered with the Local Security Authority" description for more information.
 
--   **Authentication Package** \[Type = UnicodeString\]**:** The name of the authentication package that was used for the logon authentication process. Default packages loaded on LSA startup are located in “HKLM\\SYSTEM\\CurrentControlSet\\Control\\Lsa\\OSConfig” registry key. Other packages can be loaded at runtime. When a new package is loaded a “[4610](event-4610.md): An authentication package has been loaded by the Local Security Authority” (typically for NTLM) or “[4622](event-4622.md): A security package has been loaded by the Local Security Authority” (typically for Kerberos) event is logged to indicate that a new package has been loaded along with the package name. The most common authentication packages are:
+-   **Authentication Package** \[Type = UnicodeString\]**:** The name of the authentication package that was used for the logon authentication process. Default packages loaded on LSA startup are located in "HKLM\\SYSTEM\\CurrentControlSet\\Control\\Lsa\\OSConfig" registry key. Other packages can be loaded at runtime. When a new package is loaded a "[4610](event-4610.md): An authentication package has been loaded by the Local Security Authority" (typically for NTLM) or "[4622](event-4622.md): A security package has been loaded by the Local Security Authority" (typically for Kerberos) event is logged to indicate that a new package has been loaded along with the package name. The most common authentication packages are:
 
     -   **NTLM** – NTLM-family Authentication
 
@@ -230,15 +206,15 @@ More information: <https://dev.windows.com/en-us/downloads>
 
 -   **Package Name (NTLM only)** \[Type = UnicodeString\]**:** The name of the LAN Manager subpackage ([NTLM-family](/openspecs/windows_protocols/ms-nlmp/c50a85f0-5940-42d8-9e82-ed206902e919) protocol name) that was used during the logon attempt. Possible values are:
 
-    -   “NTLM V1”
+    -   "NTLM V1"
 
-    -   “NTLM V2”
+    -   "NTLM V2"
 
-    -   “LM”
+    -   "LM"
 
-        Only populated if “**Authentication Package” = “NTLM”**.
+        Only populated if "**Authentication Package" = "NTLM"**.
 
--   **Key Length** \[Type = UInt32\]**:** the length of [NTLM Session Security](/openspecs/windows_protocols/ms-nlmp/99d90ff4-957f-4c8a-80e4-5bfe5a9a9832) key. Typically, it has a length of 128 bits or 56 bits. This parameter is always 0 if **"Authentication Package" = "Kerberos"**, because it is not applicable for Kerberos protocol. This field will also have “0” value if Kerberos was negotiated using **Negotiate** authentication package.
+-   **Key Length** \[Type = UInt32\]**:** the length of [NTLM Session Security](/openspecs/windows_protocols/ms-nlmp/99d90ff4-957f-4c8a-80e4-5bfe5a9a9832) key. Typically, it has a length of 128 bits or 56 bits. This parameter is always 0 if **"Authentication Package" = "Kerberos"**, because it is not applicable for Kerberos protocol. This field will also have "0" value if Kerberos was negotiated using **Negotiate** authentication package.
 
 ## Security Monitoring Recommendations
 
@@ -247,19 +223,19 @@ For 4625(F): An account failed to log on.
 > [!IMPORTANT]
 > For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
--   If you have a pre-defined “**Process Name**” for the process reported in this event, monitor all events with “**Process Name**” not equal to your defined value.
+-   If you have a pre-defined "**Process Name**" for the process reported in this event, monitor all events with "**Process Name**" not equal to your defined value.
 
--   You can monitor to see if “**Process Name**” is not in a standard folder (for example, not in **System32** or **Program Files**) or is in a restricted folder (for example, **Temporary Internet Files**).
+-   You can monitor to see if "**Process Name**" is not in a standard folder (for example, not in **System32** or **Program Files**) or is in a restricted folder (for example, **Temporary Internet Files**).
 
 <!-- -->
 
--   If you have a pre-defined list of restricted substrings or words in process names (for example, “**mimikatz**” or “**cain.exe**”), check for these substrings in “**Process Name**.”
+-   If you have a pre-defined list of restricted substrings or words in process names (for example, "**mimikatz**" or "**cain.exe**"), check for these substrings in "**Process Name**."
 
 -   If **Subject\\Account Name** is a name of service account or user account, it may be useful to investigate whether that account is allowed (or expected) to request logon for **Account For Which Logon Failed\\Security ID**.
 
 -   To monitor for a mismatch between the logon type and the account that uses it (for example, if **Logon Type** 4-Batch or 5-Service is used by a member of a domain administrative group), monitor **Logon Type** in this event.
 
--   If you have a high-value domain or local account for which you need to monitor every lockout, monitor all [4625](event-4625.md) events with the **“Subject\\Security ID”** that corresponds to the account.
+-   If you have a high-value domain or local account for which you need to monitor every lockout, monitor all [4625](event-4625.md) events with the **"Subject\\Security ID"** that corresponds to the account.
 
 -   We recommend monitoring all [4625](event-4625.md) events for local accounts, because these accounts typically should not be locked out. Monitoring is especially relevant for critical servers, administrative workstations, and other high-value assets.
 
@@ -267,7 +243,7 @@ For 4625(F): An account failed to log on.
 
 -   If your organization restricts logons in the following ways, you can use this event to monitor accordingly:
 
-    -   If the **“Account For Which Logon Failed \\Security ID”** should never be used to log on from the specific **Network Information\\Workstation Name**.
+    -   If the **"Account For Which Logon Failed \\Security ID"** should never be used to log on from the specific **Network Information\\Workstation Name**.
 
     -   If a specific account, such as a service account, should only be used from your internal IP address list (or some other list of IP addresses). In this case, you can monitor for **Network Information\\Source Network Address** and compare the network address with your list of IP addresses.
 
@@ -283,14 +259,14 @@ For 4625(F): An account failed to log on.
 
     |  Field                                                                         | Value to monitor for                                                                                                                                                                                |
     |----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | **Failure Information\\Status** or <br>**Failure Information\\Sub Status** | 0XC000005E – “There are currently no logon servers available to service the logon request.” <br>This issue is typically not a security issue, but it can be an infrastructure or availability issue. |
-    | **Failure Information\\Status** or <br>**Failure Information\\Sub Status** | 0xC0000064 – “User logon with misspelled or bad user account”. <br>Especially if you get several of these events in a row, it can be a sign of a user enumeration attack.                             |
-    | **Failure Information\\Status** or <br>**Failure Information\\Sub Status** | 0xC000006A – “User logon with misspelled or bad password” for critical accounts or service accounts. <br>Especially watch for a number of such events in a row.                               |
-    | **Failure Information\\Status** or <br>**Failure Information\\Sub Status** | 0XC000006D – “This is either due to a bad username or authentication information” for critical accounts or service accounts. <br>Especially watch for a number of such events in a row.       |
-    | **Failure Information\\Status** or <br>**Failure Information\\Sub Status** | 0xC000006F – “User logon outside authorized hours”.                                                                                                                                                 |
-    | **Failure Information\\Status** or <br>**Failure Information\\Sub Status** | 0xC0000070 – “User logon from unauthorized workstation”.                                                                                                                                            |
-    | **Failure Information\\Status** or <br>**Failure Information\\Sub Status** | 0xC0000072 – “User logon to account disabled by administrator”.                                                                                                                                     |
-    | **Failure Information\\Status** or <br>**Failure Information\\Sub Status** | 0XC000015B – “The user has not been granted the requested logon type (aka logon right) at this machine”.                                                                                            |
-    | **Failure Information\\Status** or <br>**Failure Information\\Sub Status** | 0XC0000192 – “An attempt was made to logon, but the Netlogon service was not started”. <br>This issue is typically not a security issue but it can be an infrastructure or availability issue.      |
-    | **Failure Information\\Status** or <br>**Failure Information\\Sub Status** | 0xC0000193 – “User logon with expired account”.                                                                                                                                                     |
-    | **Failure Information\\Status** or <br>**Failure Information\\Sub Status** | 0XC0000413 – “Logon Failure: The machine you are logging onto is protected by an authentication firewall. The specified account is not allowed to authenticate to the machine”.                     |
+    | **Failure Information\\Status** or <br>**Failure Information\\Sub Status** | 0XC000005E – "There are currently no logon servers available to service the logon request." <br>This issue is typically not a security issue, but it can be an infrastructure or availability issue. |
+    | **Failure Information\\Status** or <br>**Failure Information\\Sub Status** | 0xC0000064 – "User logon with misspelled or bad user account". <br>Especially if you get several of these events in a row, it can be a sign of a user enumeration attack.                             |
+    | **Failure Information\\Status** or <br>**Failure Information\\Sub Status** | 0xC000006A – "User logon with misspelled or bad password" for critical accounts or service accounts. <br>Especially watch for a number of such events in a row.                               |
+    | **Failure Information\\Status** or <br>**Failure Information\\Sub Status** | 0XC000006D – "This is either due to a bad username or authentication information" for critical accounts or service accounts. <br>Especially watch for a number of such events in a row.       |
+    | **Failure Information\\Status** or <br>**Failure Information\\Sub Status** | 0xC000006F – "User logon outside authorized hours".                                                                                                                                                 |
+    | **Failure Information\\Status** or <br>**Failure Information\\Sub Status** | 0xC0000070 – "User logon from unauthorized workstation".                                                                                                                                            |
+    | **Failure Information\\Status** or <br>**Failure Information\\Sub Status** | 0xC0000072 – "User logon to account disabled by administrator".                                                                                                                                     |
+    | **Failure Information\\Status** or <br>**Failure Information\\Sub Status** | 0XC000015B – "The user has not been granted the requested logon type (aka logon right) at this machine".                                                                                            |
+    | **Failure Information\\Status** or <br>**Failure Information\\Sub Status** | 0XC0000192 – "An attempt was made to logon, but the Netlogon service was not started". <br>This issue is typically not a security issue but it can be an infrastructure or availability issue.      |
+    | **Failure Information\\Status** or <br>**Failure Information\\Sub Status** | 0xC0000193 – "User logon with expired account".                                                                                                                                                     |
+    | **Failure Information\\Status** or <br>**Failure Information\\Sub Status** | 0XC0000413 – "Logon Failure: The machine you are logging onto is protected by an authentication firewall. The specified account is not allowed to authenticate to the machine".                     |

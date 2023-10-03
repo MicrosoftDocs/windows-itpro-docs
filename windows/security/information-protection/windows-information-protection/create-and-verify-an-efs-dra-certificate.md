@@ -1,13 +1,10 @@
 ---
 title: Create an EFS Data Recovery Agent certificate
 description: Follow these steps to create, verify, and perform a quick recovery by using an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate.
-ms.prod: m365-security
-ms.localizationpriority: medium
 author: aczechowski
 ms.author: aaroncz
-manager: dougeby
+manager: aaroncz
 ms.reviewer: rafals
-ms.collection: M365-security-compliance
 ms.topic: how-to
 ms.date: 07/15/2022
 ---
@@ -46,7 +43,7 @@ If you don't already have an EFS DRA certificate, you'll need to create and extr
     >[!Important]
     >Because the private keys in your DRA .pfx files can be used to decrypt any WIP file, you must protect them accordingly. We highly recommend storing these files offline, keeping copies on a smart card with strong protection for normal use and master copies in a secured physical location.
 
-4. Add your EFS DRA certificate to your WIP policy using a deployment tool, such as [Microsoft Intune](create-wip-policy-using-intune-azure.md) or [Microsoft Endpoint Configuration Manager](create-wip-policy-using-configmgr.md).
+4. Add your EFS DRA certificate to your WIP policy using a deployment tool, such as [Microsoft Intune](create-wip-policy-using-intune-azure.md) or [Microsoft Configuration Manager](create-wip-policy-using-configmgr.md).
 
 	> [!NOTE]
 	> This certificate can be used in Intune for policies both _with_ device enrollment (MDM) and _without_ device enrollment (MAM).
@@ -160,6 +157,6 @@ After signing in, the necessary WIP key info is automatically downloaded and emp
 
 - [Create a Windows Information Protection (WIP) policy using Microsoft Intune](create-wip-policy-using-intune-azure.md)
 
-- [Create a Windows Information Protection (WIP) policy using Microsoft Endpoint Configuration Manager](create-wip-policy-using-configmgr.md)
+- [Create a Windows Information Protection (WIP) policy using Microsoft Configuration Manager](create-wip-policy-using-configmgr.md)
 
 - [Creating a Domain-Based Recovery Agent](/previous-versions/tn-archive/cc875821(v=technet.10)#EJAA)

@@ -1,27 +1,21 @@
 ---
-title: Network security Restrict NTLM Audit NTLM authentication in this domain (Windows 10)
+title: Network security Restrict NTLM Audit NTLM authentication in this domain
 description: Best practices, security considerations, and more for the security policy setting, Network Security Restrict NTLM Audit NTLM authentication in this domain.
-ms.assetid: 33183ef9-53b5-4258-8605-73dc46335e6e
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+ms.author: vinpa
+ms.prod: windows-client
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
-audience: ITPro
-ms.collection: M365-security-compliance
+author: vinaypamnani-msft
+manager: aaroncz
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Network security: Restrict NTLM: Audit NTLM authentication in this domain
 
 **Applies to**
--   Windows 10
+- Windows Server
 
 Describes the best practices, location, values, management aspects, and security considerations for the **Network Security: Restrict NTLM: Audit NTLM authentication in this domain** security policy setting.
 
@@ -96,7 +90,7 @@ There are no security audit event policies that can be configured to view output
 
 This section describes how an attacker might exploit a feature or its configuration, how to implement the countermeasure, and the possible negative consequences of countermeasure implementation.
 
-NTLM and NTLMv2 authentication is vulnerable to various malicious attacks, including SMB replay, man-in-the-middle attacks, and brute force attacks. Reducing and eliminating NTLM authentication from your environment forces the Windows operating system to use more secure protocols, such as the 
+NTLM and NTLMv2 authentication is vulnerable to various malicious attacks, including SMB relay, man-in-the-middle attacks, and brute force attacks. Reducing and eliminating NTLM authentication from your environment forces the Windows operating system to use more secure protocols, such as the 
 Kerberos version 5 protocol, or different authentication mechanisms, such as smart cards.
 
 ### Vulnerability

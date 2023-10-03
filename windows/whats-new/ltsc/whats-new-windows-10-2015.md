@@ -1,21 +1,21 @@
 ---
 title: What's new in Windows 10 Enterprise LTSC 2015
-ms.reviewer: 
-manager: dougeby
-ms.author: aaroncz
+manager: aaroncz
+ms.author: mstewart
 description: New and updated IT Pro content about new features in Windows 10 Enterprise LTSC 2015 (also known as Windows 10 Enterprise 2015 LTSB).
-ms.prod: w10
-author: aczechowski
-ms.localizationpriority: medium
+ms.prod: windows-client
+author: mestew
+ms.localizationpriority: low
 ms.topic: article
+ms.technology: itpro-fundamentals
+ms.date: 02/26/2023
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/" target="_blank">Windows 10 Enterprise LTSC 2015</a>
 ---
 
 # What's new in Windows 10 Enterprise LTSC 2015
 
-**Applies to**
--   Windows 10 Enterprise LTSC 2015
-
-This article lists new and updated features and content that are of interest to IT Pros for Windows 10 Enterprise LTSC 2015 (LTSB). For a brief description of the LTSC servicing channel, see [Windows 10 Enterprise LTSC](index.md).
+This article lists new and updated features and content that are of interest to IT Pros for Windows 10 Enterprise LTSC 2015 (LTSB). For a brief description of the LTSC servicing channel, see [Windows 10 Enterprise LTSC](overview.md).
 
 ## Deployment
 
@@ -236,7 +236,7 @@ Enterprises have the following identity and management choices.
 |---|---|
 | Identity   | Active Directory; Azure AD         |
 | Grouping   | Domain join; Workgroup; Azure AD join    |
-| Device management | Group Policy; Microsoft Endpoint Configuration Manager; Microsoft Intune; other MDM solutions; Exchange ActiveSync; Windows PowerShell; Windows Management Instrumentation (WMI) |
+| Device management | Group Policy; Microsoft Configuration Manager; Microsoft Intune; other MDM solutions; Exchange ActiveSync; Windows PowerShell; Windows Management Instrumentation (WMI) |
 
 > [!NOTE]
 > With the release of Windows Server 2012 R2, Network Access Protection (NAP) was deprecated and the NAP client has now been removed in Windows 10. For more information about support lifecycles, see [Microsoft Support Lifecycle](/lifecycle/).
@@ -273,9 +273,9 @@ By using [Group Policy Objects](/previous-versions/cc498727(v=msdn.10)), Windows
 
 -   **Peer-to-peer delivery**, which administrators can enable to make delivery of updates to branch offices and remote sites with limited bandwidth efficient.
 
--   **Use with existing tools** such as Microsoft Endpoint Manager and the [Enterprise Mobility Suite](/enterprise-mobility-security).
+-   **Use with existing tools** such as Microsoft Intune and the [Enterprise Mobility Suite](/enterprise-mobility-security).
 
-Together, these Windows Update for Business features help reduce device management costs, provide controls over update deployment, offer quicker access to security updates, and provide access to the latest innovations from Microsoft on an ongoing basis. Windows Update for Business is a free service for all Windows 10 Pro, Enterprise, and Education editions, and can be used independent of, or in conjunction with, existing device management solutions such as [Windows Server Update Services (WSUS)](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh852345(v=ws.11)) and [Microsoft Endpoint Configuration Manager](/configmgr).
+Together, these Windows Update for Business features help reduce device management costs, provide controls over update deployment, offer quicker access to security updates, and provide access to the latest innovations from Microsoft on an ongoing basis. Windows Update for Business is a free service for all Windows 10 Pro, Enterprise, and Education editions, and can be used independent of, or in conjunction with, existing device management solutions such as [Windows Server Update Services (WSUS)](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh852345(v=ws.11)) and [Microsoft Configuration Manager](/configmgr).
 
 
 Learn more about [Windows Update for Business](/windows/deployment/update/waas-manage-updates-wufb).
@@ -288,4 +288,4 @@ The new chromium-based Microsoft Edge isn't included in the LTSC release of Wind
 
 ## See Also
 
-[Windows 10 Enterprise LTSC](index.md): A description of the LTSC servicing channel with links to information about each release.
+[Windows 10 Enterprise LTSC](overview.md): A description of the LTSC servicing channel with links to information about each release.

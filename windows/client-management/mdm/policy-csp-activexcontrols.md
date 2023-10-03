@@ -1,92 +1,95 @@
 ---
-title: Policy CSP - ActiveXControls
-description: Learn about various Policy configuration service provider (CSP) - ActiveXControls settings, including SyncML, for Windows 10.
-ms.author: vinpa
-ms.localizationpriority: medium
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
+title: ActiveXControls Policy CSP
+description: Learn more about the ActiveXControls Area in Policy CSP.
 author: vinaypamnani-msft
-ms.date: 09/27/2019
-ms.reviewer: 
 manager: aaroncz
+ms.author: vinpa
+ms.date: 08/10/2023
+ms.localizationpriority: medium
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ActiveXControls-Begin -->
 # Policy CSP - ActiveXControls
 
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
+<!-- ActiveXControls-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ActiveXControls-Editable-End -->
 
-<hr/>
+<!-- ApprovedInstallationSites-Begin -->
+## ApprovedInstallationSites
 
-<!--Policies-->
-## ActiveXControls policies  
+<!-- ApprovedInstallationSites-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- ApprovedInstallationSites-Applicability-End -->
 
-<dl>
-  <dd>
-    <a href="#activexcontrols-approvedinstallationsites">ActiveXControls/ApprovedInstallationSites</a>
-  </dd>
-</dl>
+<!-- ApprovedInstallationSites-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ActiveXControls/ApprovedInstallationSites
+```
+<!-- ApprovedInstallationSites-OmaUri-End -->
 
+<!-- ApprovedInstallationSites-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting determines which ActiveX installation sites standard users in your organization can use to install ActiveX controls on their computers. When this setting is enabled, the administrator can create a list of approved Activex Install sites specified by host URL.
 
-<hr/>
+- If you enable this setting, the administrator can create a list of approved ActiveX Install sites specified by host URL.
 
-<!--Policy-->
-<a href="" id="activexcontrols-approvedinstallationsites"></a>**ActiveXControls/ApprovedInstallationSites**  
+- If you disable or don't configure this policy setting, ActiveX controls prompt the user for administrative credentials before installation.
 
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting determines which ActiveX installation sites standard users in your organization can use to install ActiveX controls on their computers. When this setting is enabled, the administrator can create a list of approved ActiveX Install sites specified by host URL. 
-
-If you enable this setting, the administrator can create a list of approved ActiveX Install sites specified by host URL. 
-
-If you disable or don't configure this policy setting, ActiveX controls prompt the user for administrative credentials before installation. 
-
-> [!Note]
+> [!NOTE]
 > Wild card characters can't be used when specifying the host URLs.
+<!-- ApprovedInstallationSites-Description-End -->
 
-<!--/Description-->
+<!-- ApprovedInstallationSites-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ApprovedInstallationSites-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Approved Installation Sites for ActiveX Controls*
--   GP name: *ApprovedActiveXInstallSites*
--   GP path: *Windows Components/ActiveX Installer Service*
--   GP ADMX file name: *ActiveXInstallService.admx*
+<!-- ApprovedInstallationSites-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- ApprovedInstallationSites-DFProperties-End -->
 
+<!-- ApprovedInstallationSites-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--/Policies-->
+**ADMX mapping**:
 
-## Related topics
+| Name | Value |
+|:--|:--|
+| Name | ApprovedActiveXInstallSites |
+| Friendly Name | Approved Installation Sites for ActiveX Controls |
+| Location | Computer Configuration |
+| Path | Windows Components > ActiveX Installer Service |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\AxInstaller |
+| Registry Value Name | ApprovedList |
+| ADMX File Name | ActiveXInstallService.admx |
+<!-- ApprovedInstallationSites-AdmxBacked-End -->
 
-[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)
+<!-- ApprovedInstallationSites-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ApprovedInstallationSites-Examples-End -->
+
+<!-- ApprovedInstallationSites-End -->
+
+<!-- ActiveXControls-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ActiveXControls-CspMoreInfo-End -->
+
+<!-- ActiveXControls-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

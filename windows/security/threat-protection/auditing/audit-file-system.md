@@ -1,18 +1,19 @@
 ---
-title: Audit File System (Windows 10)
+title: Audit File System 
 description: The Advanced Security Audit policy setting, Audit File System, determines if audit events are generated when users attempt to access file system objects.
 ms.assetid: 6a71f283-b8e5-41ac-b348-0b7ec6ea0b1f
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
-author: dansimp
+ms.localizationpriority: low
+author: vinaypamnani-msft
 ms.date: 09/06/2021
-ms.technology: windows-sec
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # Audit File System

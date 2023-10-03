@@ -1,21 +1,20 @@
 ---
-title: Monitor the use of removable storage devices (Windows 10)
+title: Monitor the use of removable storage devices 
 description: Learn how advanced security auditing options can be used to monitor attempts to use removable storage devices to access network resources.
 ms.assetid: b0a9e4a5-b7ff-41c6-96ff-0228d4ba5da8
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/09/2021
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Monitor the use of removable storage devices

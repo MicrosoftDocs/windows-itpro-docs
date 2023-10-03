@@ -8,7 +8,7 @@ metadata:
   description: Find the tools and resources you need to help deploy and use Microsoft Edge in your organization. # Required; article description that is displayed in search results. < 160 chars.
   keywords: Microsoft Edge Legacy, Windows 10
   ms.localizationpriority: medium
-  ms.prod: edge
+  ms.prod: microsoft-edge
   author: dougeby
   ms.author: pashort
   ms.topic: landing-page

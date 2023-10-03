@@ -1,92 +1,91 @@
 ---
-title: Policy CSP - ADMX_DataCollection
-description: Learn about the Policy CSP - ADMX_DataCollection.
-ms.author: vinpa
-ms.localizationpriority: medium
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
+title: ADMX_DataCollection Policy CSP
+description: Learn more about the ADMX_DataCollection Area in Policy CSP.
 author: vinaypamnani-msft
-ms.date: 12/01/2020
-ms.reviewer: 
 manager: aaroncz
+ms.author: vinpa
+ms.date: 08/10/2023
+ms.localizationpriority: medium
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ADMX_DataCollection-Begin -->
 # Policy CSP - ADMX_DataCollection
 
-<hr/>
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
-<!--Policies-->
-## ADMX_DataCollection policies  
+<!-- ADMX_DataCollection-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ADMX_DataCollection-Editable-End -->
 
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+<!-- CommercialIdPolicy-Begin -->
+## CommercialIdPolicy
 
-<dl>
-  <dd>
-    <a href="#admx-datacollection-commercialidpolicy">ADMX_DataCollection/CommercialIdPolicy</a>
-  </dd>
-</dl>
+<!-- CommercialIdPolicy-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- CommercialIdPolicy-Applicability-End -->
 
+<!-- CommercialIdPolicy-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_DataCollection/CommercialIdPolicy
+```
+<!-- CommercialIdPolicy-OmaUri-End -->
 
-<hr/>
+<!-- CommercialIdPolicy-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting defines the identifier used to uniquely associate this device's diagnostic data data as belonging to a given organization. If your organization is participating in a program that requires this device to be identified as belonging to your organization then use this setting to provide that identification. The value for this setting will be provided by Microsoft as part of the onboarding process for the program.
 
-<!--Policy-->
-<a href="" id="admx-datacollection-commercialidpolicy"></a>**ADMX_DataCollection/CommercialIdPolicy**  
+If you disable or don't configure this policy setting, then Microsoft won't be able to use this identifier to associate this machine and its diagnostic data data with your organization.
+<!-- CommercialIdPolicy-Description-End -->
 
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting defines the identifier used to uniquely associate this device’s telemetry data as belonging to a given organization.
-
-If your organization is participating in a program that requires this device to be identified as belonging to your organization, then use this setting to provide that identification. The value for this setting will be provided by Microsoft as part of the onboarding process for the program.
-
-If you disable or don't configure this policy setting, then Microsoft won't be able to use this identifier to associate this machine and its telemetry data with your organization.
-
-<!--/Description-->
-
-
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Configure the Commercial ID*
--   GP name: *CommercialIdPolicy*
--   GP path: *Windows Components\Data Collection and Preview Builds*
--   GP ADMX file name: *DataCollection.admx*
-
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-
+<!-- CommercialIdPolicy-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> These policies are for upcoming release.
+> Starting with the January 2023 preview cumulative update, this policy is no longer supported to configure the processor option. For more information, see [Enable Windows diagnostic data processor configuration](/windows/privacy/configure-windows-diagnostic-data-in-your-organization#enable-windows-diagnostic-data-processor-configuration).
+<!-- CommercialIdPolicy-Editable-End -->
 
-<!--/Policies-->
+<!-- CommercialIdPolicy-DFProperties-Begin -->
+**Description framework properties**:
 
-## Related topics
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- CommercialIdPolicy-DFProperties-End -->
 
-[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)
+<!-- CommercialIdPolicy-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | CommercialIdPolicy |
+| Friendly Name | Configure the Commercial ID |
+| Location | Computer Configuration |
+| Path | WindowsComponents > Data Collection and Preview Builds |
+| Registry Key Name | Software\Policies\Microsoft\Windows\DataCollection |
+| ADMX File Name | DataCollection.admx |
+<!-- CommercialIdPolicy-AdmxBacked-End -->
+
+<!-- CommercialIdPolicy-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- CommercialIdPolicy-Examples-End -->
+
+<!-- CommercialIdPolicy-End -->
+
+<!-- ADMX_DataCollection-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ADMX_DataCollection-CspMoreInfo-End -->
+
+<!-- ADMX_DataCollection-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

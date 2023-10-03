@@ -1,143 +1,154 @@
 ---
-title: Policy CSP - ADMX_DeviceSetup
-description: Learn about Policy CSP - ADMX_DeviceSetup.
-ms.author: vinpa
-ms.localizationpriority: medium
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
+title: ADMX_DeviceSetup Policy CSP
+description: Learn more about the ADMX_DeviceSetup Area in Policy CSP.
 author: vinaypamnani-msft
-ms.date: 11/19/2020
-ms.reviewer: 
 manager: aaroncz
+ms.author: vinpa
+ms.date: 08/10/2023
+ms.localizationpriority: medium
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ADMX_DeviceSetup-Begin -->
 # Policy CSP - ADMX_DeviceSetup
 
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
-<hr/>
+<!-- ADMX_DeviceSetup-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ADMX_DeviceSetup-Editable-End -->
 
-<!--Policies-->
-## ADMX_DeviceSetup policies  
+<!-- DeviceInstall_BalloonTips-Begin -->
+## DeviceInstall_BalloonTips
 
-<dl>
-  <dd>
-    <a href="#admx-devicesetup-deviceinstall-balloontips">ADMX_DeviceSetup/DeviceInstall_BalloonTips</a>
-  </dd>
-  <dd>
-    <a href="#admx-devicesetup-driversearchplaces-searchorderconfiguration">ADMX_DeviceSetup/DriverSearchPlaces_SearchOrderConfiguration</a>
-  </dd>
-</dl>
+<!-- DeviceInstall_BalloonTips-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DeviceInstall_BalloonTips-Applicability-End -->
 
+<!-- DeviceInstall_BalloonTips-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_DeviceSetup/DeviceInstall_BalloonTips
+```
+<!-- DeviceInstall_BalloonTips-OmaUri-End -->
 
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-devicesetup-deviceinstall-balloontips"></a>**ADMX_DeviceSetup/DeviceInstall_BalloonTips**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- DeviceInstall_BalloonTips-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to turn off "Found New Hardware" balloons during device installation.
 
-If you enable this policy setting, "Found New Hardware" balloons don't appear while a device is being installed.
+- If you enable this policy setting, "Found New Hardware" balloons don't appear while a device is being installed.
 
-If you disable or don't configure this policy setting, "Found New Hardware" balloons appear while a device is being installed, unless the driver for the device suppresses the balloons.
+- If you disable or don't configure this policy setting, "Found New Hardware" balloons appear while a device is being installed, unless the driver for the device suppresses the balloons.
+<!-- DeviceInstall_BalloonTips-Description-End -->
 
-<!--/Description-->
+<!-- DeviceInstall_BalloonTips-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DeviceInstall_BalloonTips-Editable-End -->
 
+<!-- DeviceInstall_BalloonTips-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Turn off "Found New Hardware" balloons during device installation*
--   GP name: *DeviceInstall_BalloonTips*
--   GP path: *System\Device Installation*
--   GP ADMX file name: *DeviceSetup.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DeviceInstall_BalloonTips-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- DeviceInstall_BalloonTips-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-devicesetup-driversearchplaces-searchorderconfiguration"></a>**ADMX_DeviceSetup/DriverSearchPlaces_SearchOrderConfiguration**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | DeviceInstall_BalloonTips |
+| Friendly Name | Turn off "Found New Hardware" balloons during device installation |
+| Location | Computer Configuration |
+| Path | System > Device Installation |
+| Registry Key Name | Software\Policies\Microsoft\Windows\DeviceInstall\Settings |
+| Registry Value Name | DisableBalloonTips |
+| ADMX File Name | DeviceSetup.admx |
+<!-- DeviceInstall_BalloonTips-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- DeviceInstall_BalloonTips-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DeviceInstall_BalloonTips-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DeviceInstall_BalloonTips-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DriverSearchPlaces_SearchOrderConfiguration-Begin -->
+## DriverSearchPlaces_SearchOrderConfiguration
 
-> [!div class = "checklist"]
-> * Device
+<!-- DriverSearchPlaces_SearchOrderConfiguration-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DriverSearchPlaces_SearchOrderConfiguration-Applicability-End -->
 
-<hr/>
+<!-- DriverSearchPlaces_SearchOrderConfiguration-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_DeviceSetup/DriverSearchPlaces_SearchOrderConfiguration
+```
+<!-- DriverSearchPlaces_SearchOrderConfiguration-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- DriverSearchPlaces_SearchOrderConfiguration-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to specify the order in which Windows searches source locations for device drivers.
 
-If you enable this policy setting, you can select whether Windows searches for drivers on Windows Update unconditionally, only if necessary, or not at all.
+- If you enable this policy setting, you can select whether Windows searches for drivers on Windows Update unconditionally, only if necessary, or not at all.
 
->[!Note]
-> Searching always implies that Windows will attempt to search Windows Update exactly one time. With this setting, Windows won't continually search for updates. 
+Note that searching always implies that Windows will attempt to search Windows Update exactly one time. With this setting, Windows won't continually search for updates. This setting is used to ensure that the best software will be found for the device, even if the network is temporarily available.
 
-This setting is used to ensure that the best software will be found for the device, even if the network is temporarily available. If the setting for searching is enabled and only when needed is specified, then Windows will search for a driver only if a driver isn't locally available on the system.
+If the setting for searching only if needed is specified, then Windows will search for a driver only if a driver isn't locally available on the system.
 
-If you disable or don't configure this policy setting, members of the Administrators group can determine the priority order in which Windows searches source locations for device drivers.
+- If you disable or don't configure this policy setting, members of the Administrators group can determine the priority order in which Windows searches source locations for device drivers.
+<!-- DriverSearchPlaces_SearchOrderConfiguration-Description-End -->
 
-<!--/Description-->
+<!-- DriverSearchPlaces_SearchOrderConfiguration-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DriverSearchPlaces_SearchOrderConfiguration-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Specify search order for device driver source locations*
--   GP name: *DriverSearchPlaces_SearchOrderConfiguration*
--   GP path: *System\Device Installation*
--   GP ADMX file name: *DeviceSetup.admx*
+<!-- DriverSearchPlaces_SearchOrderConfiguration-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DriverSearchPlaces_SearchOrderConfiguration-DFProperties-End -->
 
-<!--/Policies-->
+<!-- DriverSearchPlaces_SearchOrderConfiguration-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-## Related topics
+**ADMX mapping**:
 
-[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)
+| Name | Value |
+|:--|:--|
+| Name | DriverSearchPlaces_SearchOrderConfiguration |
+| Friendly Name | Specify search order for device driver source locations |
+| Location | Computer Configuration |
+| Path | System > Device Installation |
+| Registry Key Name | Software\Policies\Microsoft\Windows\DriverSearching |
+| ADMX File Name | DeviceSetup.admx |
+<!-- DriverSearchPlaces_SearchOrderConfiguration-AdmxBacked-End -->
+
+<!-- DriverSearchPlaces_SearchOrderConfiguration-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DriverSearchPlaces_SearchOrderConfiguration-Examples-End -->
+
+<!-- DriverSearchPlaces_SearchOrderConfiguration-End -->
+
+<!-- ADMX_DeviceSetup-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ADMX_DeviceSetup-CspMoreInfo-End -->
+
+<!-- ADMX_DeviceSetup-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

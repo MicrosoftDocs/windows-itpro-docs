@@ -2,12 +2,14 @@
 title: Planning for App-V (Windows 10/11)
 description: Use the information in this article to plan to deploy App-V without disrupting your existing network or user experience.
 author: aczechowski
-ms.prod: w10
+ms.prod: windows-client
 ms.date: 04/18/2018
 ms.reviewer: 
-manager: dougeby
+manager: aaroncz
 ms.author: aaroncz
+ms.collection: must-keep
 ms.topic: article
+ms.technology: itpro-apps
 ---
 
 # Planning for App-V

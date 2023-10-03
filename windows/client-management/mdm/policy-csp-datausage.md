@@ -1,112 +1,163 @@
 ---
-title: Policy CSP - DataUsage
-description: Learn how to use the Policy CSP - DataUsage setting to configure the cost of 4G connections on the local machine.
-ms.author: vinpa
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
+title: DataUsage Policy CSP
+description: Learn more about the DataUsage Area in Policy CSP.
 author: vinaypamnani-msft
-ms.localizationpriority: medium
-ms.date: 09/27/2019
-ms.reviewer: 
 manager: aaroncz
+ms.author: vinpa
+ms.date: 08/10/2023
+ms.localizationpriority: medium
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- DataUsage-Begin -->
 # Policy CSP - DataUsage
 
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
-<hr/>
+<!-- DataUsage-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DataUsage-Editable-End -->
 
-<!--Policies-->
-## DataUsage policies  
+<!-- SetCost3G-Begin -->
+## SetCost3G
 
-<dl>
-  <dd>
-    <a href="#datausage-setcost3g">DataUsage/SetCost3G</a>
-  </dd>
-  <dd>
-    <a href="#datausage-setcost4g">DataUsage/SetCost4G</a>
-  </dd>
-</dl>
+<!-- SetCost3G-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- SetCost3G-Applicability-End -->
 
+<!-- SetCost3G-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/DataUsage/SetCost3G
+```
+<!-- SetCost3G-OmaUri-End -->
 
-<hr/>
+<!-- SetCost3G-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the cost of 3G connections on the local machine.
 
-<!--Policy-->
-<a href="" id="datausage-setcost3g"></a>**DataUsage/SetCost3G**  
+- If this policy setting is enabled, a drop-down list box presenting possible cost values will be active. Selecting one of the following values from the list will set the cost of all 3G connections on the local machine:
 
-<hr/>
+- Unrestricted: Use of this connection is unlimited and not restricted by usage charges and capacity constraints.
 
-<!--Description-->
-This policy is deprecated in Windows 10, version 1809.
+- Fixed: Use of this connection isn't restricted by usage charges and capacity constraints up to a certain data limit.
 
-<!--/Description-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="datausage-setcost4g"></a>**DataUsage/SetCost4G**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the cost of 4G connections on the local machine.      
-
-If this policy setting is enabled, a drop-down list box presenting possible cost values will be active. Selecting one of the following values from the list will set the cost of all 4G connections on the local machine:
-
-- Unrestricted: Use of this connection is unlimited and not restricted by usage charges and capacity constraints. 
-- Fixed: Use of this connection is not restricted by usage charges and capacity constraints up to a certain data limit. 
 - Variable: This connection is costed on a per byte basis.
 
-If this policy setting is disabled or is not configured, the cost of 4G connections is Fixed by default.
+- If this policy setting is disabled or isn't configured, the cost of 3G connections is Fixed by default.
+<!-- SetCost3G-Description-End -->
 
-<!--/Description-->
+<!-- SetCost3G-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> This policy is deprecated.
+<!-- SetCost3G-Editable-End -->
 
+<!-- SetCost3G-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Set 4G Cost*
--   GP name: *SetCost4G*
--   GP path: *Network/WWAN Service/WWAN Media Cost*
--   GP ADMX file name: *wwansvc.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- SetCost3G-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- SetCost3G-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
+**ADMX mapping**:
 
+| Name | Value |
+|:--|:--|
+| Name | SetCost3G |
+| Friendly Name | Set 3G Cost |
+| Location | Computer Configuration |
+| Path | Network > WWAN Service > WWAN Media Cost |
+| Registry Key Name | Software\Policies\Microsoft\Windows\WwanSvc\NetCost |
+| ADMX File Name | wwansvc.admx |
+<!-- SetCost3G-AdmxBacked-End -->
 
-<!--/Policies-->
+<!-- SetCost3G-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- SetCost3G-Examples-End -->
 
-## Related topics
+<!-- SetCost3G-End -->
+
+<!-- SetCost4G-Begin -->
+## SetCost4G
+
+<!-- SetCost4G-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- SetCost4G-Applicability-End -->
+
+<!-- SetCost4G-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/DataUsage/SetCost4G
+```
+<!-- SetCost4G-OmaUri-End -->
+
+<!-- SetCost4G-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the cost of 4G connections on the local machine.
+
+- If this policy setting is enabled, a drop-down list box presenting possible cost values will be active. Selecting one of the following values from the list will set the cost of all 4G connections on the local machine:
+
+- Unrestricted: Use of this connection is unlimited and not restricted by usage charges and capacity constraints.
+
+- Fixed: Use of this connection isn't restricted by usage charges and capacity constraints up to a certain data limit.
+
+- Variable: This connection is costed on a per byte basis.
+
+- If this policy setting is disabled or isn't configured, the cost of 4G connections is Fixed by default.
+<!-- SetCost4G-Description-End -->
+
+<!-- SetCost4G-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- SetCost4G-Editable-End -->
+
+<!-- SetCost4G-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- SetCost4G-DFProperties-End -->
+
+<!-- SetCost4G-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | SetCost4G |
+| Friendly Name | Set 4G Cost |
+| Location | Computer Configuration |
+| Path | Network > WWAN Service > WWAN Media Cost |
+| Registry Key Name | Software\Policies\Microsoft\Windows\WwanSvc\NetCost |
+| ADMX File Name | wwansvc.admx |
+<!-- SetCost4G-AdmxBacked-End -->
+
+<!-- SetCost4G-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- SetCost4G-Examples-End -->
+
+<!-- SetCost4G-End -->
+
+<!-- DataUsage-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- DataUsage-CspMoreInfo-End -->
+
+<!-- DataUsage-End -->
+
+## Related articles
 
 [Policy configuration service provider](policy-configuration-service-provider.md)

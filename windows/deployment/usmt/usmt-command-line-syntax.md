@@ -1,23 +1,23 @@
 ---
 title: User State Migration Tool (USMT) Command-line Syntax (Windows 10)
 description: Learn about the User State Migration Tool (USMT) command-line syntax for using the ScanState tool, LoadState tool, and UsmtUtils tool.
-ms.reviewer: 
-manager: dougeby
-ms.author: aaroncz
-ms.prod: w10
-author: aczechowski
-ms.date: 04/19/2017
+manager: aaroncz
+ms.author: frankroj
+ms.prod: windows-client
+author: frankroj
+ms.date: 11/01/2022
 ms.topic: article
+ms.technology: itpro-deploy
 ---
 
-# User State Migration Tool (USMT) Command-line Syntax
+# User State Migration Tool (USMT) command-line syntax
 
-The User State Migration Tool (USMT) 10.0 migrates user files and settings during large deployments of Windows. To improve and simplify the migration process, USMT captures desktop, network, and application settings in addition to a user's files. USMT then migrates these items to a new Windows installation.
+The User State Migration Tool (USMT) 10.0 migrates user files and settings during large deployments of Windows. To improve and simplify the migration process, USMT captures desktop, network, and application settings in addition to a user's files. USMT then migrates these items to a new Windows installation.
 
-## In This Section
+## In this Section
 
 | Link | Description |
 |--- |--- |
-|[ScanState Syntax](usmt-scanstate-syntax.md)|Lists the command-line options for using the ScanState tool.|
-|[LoadState Syntax](usmt-loadstate-syntax.md)|Lists the command-line options for using the LoadState tool.|
-|[UsmtUtils Syntax](usmt-utilities.md)|Lists the command-line options for using the UsmtUtils tool.|
+|[ScanState syntax](usmt-scanstate-syntax.md)|Lists the command-line options for using the ScanState tool.|
+|[LoadState syntax](usmt-loadstate-syntax.md)|Lists the command-line options for using the LoadState tool.|
+|[UsmtUtils syntax](usmt-utilities.md)|Lists the command-line options for using the UsmtUtils tool.|

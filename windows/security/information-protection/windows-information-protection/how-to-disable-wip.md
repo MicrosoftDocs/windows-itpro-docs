@@ -1,14 +1,12 @@
 ---
 title: How to disable Windows Information Protection (WIP)
-description: How to disable Windows Information Protection (WIP) in Microsoft Intune or Microsoft Endpoint Configuration Manager.
+description: How to disable Windows Information Protection (WIP) in Microsoft Intune or Microsoft Configuration Manager.
 ms.date: 07/21/2022
-ms.prod: m365-security
 ms.topic: how-to
-ms.localizationpriority: medium
 author: lizgt2000
 ms.author: lizlong
 ms.reviewer: aaroncz
-manager: dougeby
+manager: aaroncz
 ---
 
 # How to disable Windows Information Protection (WIP)
@@ -33,7 +31,7 @@ When you unassign an existing policy, it removes the intent to deploy WIP from t
 
 If you're currently deploying a WIP policy for enrolled or unenrolled devices, you switch the WIP policy to Off. When devices check in after this change, the devices will proceed to unprotect files previously protected by WIP.
 
-1. Sign in to the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com).
+1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 1. Open Microsoft Intune and select **Apps** > **App protection policies**.
 1. Select the existing policy to turn off, and then select the **Properties**.
 1. Edit **Required settings**.
@@ -83,7 +81,7 @@ To disable WIP for your organization, first create a configuration item.
 The **Configure Windows Information Protection settings** page appears, where you'll configure your policy for your organization. The following sections provide details on the required settings on this page.
 
 > [!TIP]
-> For more information on filling out the required fields, see [Create and deploy a Windows Information Protection (WIP) policy using Microsoft Endpoint Configuration Manager](/windows/security/information-protection/windows-information-protection/create-wip-policy-using-configmgr).
+> For more information on filling out the required fields, see [Create and deploy a Windows Information Protection (WIP) policy using Microsoft Configuration Manager](/windows/security/information-protection/windows-information-protection/create-wip-policy-using-configmgr).
 
 #### Turn off WIP
 

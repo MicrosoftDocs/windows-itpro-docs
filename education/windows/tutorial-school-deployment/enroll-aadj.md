@@ -1,20 +1,8 @@
 ---
 title: Enrollment in Intune with standard out-of-box experience (OOBE)
-description: how to join Azure AD for OOBE and automatically get the device enrolled in Intune
+description: Learn how to join devices to Azure AD from OOBE and automatically get them enrolled in Intune.
 ms.date: 08/31/2022
-ms.prod: windows
-ms.technology: windows
 ms.topic: tutorial
-ms.localizationpriority: medium
-author: paolomatarazzo
-ms.author: paoloma
-#ms.reviewer: 
-manager: aaroncz
-ms.collection: education
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
-- ✅ <b>Windows 11 SE</b>
 ---
 # Automatic Intune enrollment via Azure AD join
 

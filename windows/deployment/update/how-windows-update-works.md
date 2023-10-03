@@ -1,49 +1,38 @@
 ---
-title: How Windows Update works 
-description: In this article, learn about the process Windows Update uses to download and install updates on a Windows client devices.
-ms.prod: w10
-author: aczechowski
+title: How Windows Update works
+description: In this article, learn about the process Windows Update uses to download and install updates on Windows client devices.
+ms.prod: windows-client
+ms.technology: itpro-updates
+ms.topic: conceptual
+author: mestew
+ms.author: mstewart
+manager: aaroncz
 ms.localizationpriority: medium
-ms.author: aaroncz
-manager: dougeby
-ms.collection:
-  - M365-modern-desktop
-  - highpri
-ms.topic: article
-ms.custom: seo-marvel-apr2020
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
+ms.date: 12/31/2017
 ---
 
 # How Windows Update works
 
-**Applies to**
-
--   Windows 10
--   Windows 11
-
 The Windows Update workflow has four core areas of functionality: 
 
-### Scan
-
-1. Orchestrator schedules the scan.
-2. Orchestrator verifies admin approvals and policies for download.
-
-
-### Download
-1. Orchestrator starts downloads.
-2. Windows Update downloads manifest files and provides them to the arbiter.
-3. The arbiter evaluates the manifest and tells the Windows Update client to download files.
-4. Windows Update client downloads files in a temporary folder.
-5. The arbiter stages the downloaded files.
-
-
-### Install
-1. Orchestrator starts the installation.
-2. The arbiter calls the installer to install the package.
-
-
-### Commit
-1. Orchestrator starts a restart.
-2. The arbiter finalizes before the restart.
+1. Scan
+   1. Orchestrator schedules the scan.
+   1. Orchestrator verifies admin approvals and policies for download.
+1. Download
+   1. Orchestrator starts downloads.
+   1. Windows Update downloads manifest files and provides them to the arbiter.
+   1. The arbiter evaluates the manifest and tells the Windows Update client to download files.
+   1. Windows Update client downloads files in a temporary folder.
+   1. The arbiter stages the downloaded files.
+1. Install
+   1. Orchestrator starts the installation.
+   1. The arbiter calls the installer to install the package.
+1. Commit
+   1. Orchestrator starts a restart.
+   1. The arbiter finalizes before the restart.
 
 
 ## How updating works 
@@ -54,7 +43,7 @@ During the updating process, the Windows Update Orchestrator operates in the bac
 
 The Windows Update Orchestrator on your PC checks the Microsoft Update server or your WSUS endpoint for new updates at random intervals. The randomization ensures that the Windows Update server isn't overloaded with requests all at the same time. The Update Orchestrator searches only for updates that have been added since the last time updates were searched, allowing it to find updates quickly and efficiently.  
 
-When checking for updates, the Windows Update Orchestrator evaluates whether the update is appropriate for your device. It uses guidelines defined by the publisher of the update, for example, Microsoft Office including enterprise group policies. 
+When devices check for updates, the Windows Update Orchestrator evaluates whether the update is appropriate for your device. It uses guidelines defined by the publisher of the update, for example, Microsoft Office including enterprise group policies. 
 
 Make sure you're familiar with the following terminology related to Windows Update scan:
 
@@ -63,8 +52,8 @@ Make sure you're familiar with the following terminology related to Windows Upda
 |Update|We use this term to mean several different things, but in this context it's the actual updated code or change.| 
 |Bundle update|An update that contains 1-N child updates; doesn't contain payload itself.| 
 |Child update|Leaf update that's bundled by another update; contains payload.| 
-|Detector update|A special "update" that contains "IsInstalled" applicability rule only and no payload. Used for prereq evaluation.| 
-|Category update|A special "detectoid" that has an **IsInstalled** rule that is always true. Used for grouping updates and to allow the device to filter updates. |
+|Detector update|A special update that contains `IsInstalled` applicability rule only and no payload. Used for prerequisite evaluation.| 
+|Category update|A special `detectoid` that has an `IsInstalled` rule that is always true. Used for grouping updates and allowing the device to filter updates. |
 |Full scan|Scan with empty datastore.| 
 |Delta scan|Scan with updates from previous scan already cached in datastore.| 
 |Online scan|Scan that uses the network and to check an update server. |
@@ -82,7 +71,7 @@ Windows Update does the following actions when it runs a scan.
 #### Starts the scan for updates  
 When users start scanning in Windows Update through the Settings panel, the following occurs:  
 
-- The scan first generates a “ComApi” message. The caller (Microsoft Defender Antivirus) tells the Windows Update engine to scan for updates. 
+- The scan first generates a `ComApi` message. The caller (Microsoft Defender Antivirus) tells the Windows Update engine to scan for updates. 
 - "Agent" messages: queueing the scan, then actually starting the work: 
    - Updates are identified by the different IDs ("ID = 10", "ID = 11") and from the different thread ID numbers. 
    - Windows Update uses the thread ID filtering to concentrate on one particular task. 
@@ -90,9 +79,9 @@ When users start scanning in Windows Update through the Settings panel, the foll
       ![Windows Update scan log 1.](images/update-scan-log-1.png)
       
 #### Proxy Behavior
-For Windows Update (WU) scans URLs that are used for update detection ([MS-WUSP]: SimpleAuth Web Service | Microsoft Docs, [MS-WUSP]: Client Web Service | Microsoft Docs):
+For Windows Update (WU) scans URLs that are used for update detection ([MS-WUSP: SimpleAuth Web Service](/openspecs/windows_protocols/ms-wusp/61235469-6c2f-4c08-9749-e35d52c16899), [MS-WUSP: Client Web Service](/openspecs/windows_protocols/ms-wusp/69093c08-da97-445e-a944-af0bef36e4ec)):
 - System proxy is attempted (set using the `netsh` command).
-- If WUA fails to reach the service due to a certain proxy, service, or authentication error code, then user proxy is attempted (generally it is the logged-in user).
+- If WUA fails to reach the service due to a certain proxy, service, or authentication error code, then user proxy is attempted (generally it's the logged-in user).
 
     > [!Note]
     > For intranet WSUS update service URLs, we provide an option via Windows Update policy to select the proxy behavior.
@@ -132,13 +121,13 @@ Common update failure is caused due to network issues. To find the root of the i
    > [!NOTE]
    > If the search is against WSUS or Configuration Manager, you can ignore warning messages for the Service Locator Service. 
 
-- On sites that only use WSUS or Configuration Manager, the Service Locator Service might be blocked at the firewall. In this case the request will fail, and though the service can’t scan against Windows Update or Microsoft Update, it can still scan against WSUS or Configuration Manager, since it’s locally configured.
+- On sites that only use WSUS or Configuration Manager, the Service Locator Service might be blocked at the firewall. In this case the request will fail, and though the service can't scan against Windows Update or Microsoft Update, it can still scan against WSUS or Configuration Manager, since it's locally configured.
    ![Windows Update scan log 3.](images/update-scan-log-3.png)
    
 ## Downloading updates 
 ![Windows Update download step.](images/update-download-step.png)
 
-Once the Windows Update Orchestrator determines which updates apply to your computer, it will begin downloading the updates, if you have selected the option to automatically download updates. It does operation in the background without interrupting your normal use of the device.  
+Once the Windows Update Orchestrator determines which updates apply to your computer, it begins downloading the updates, if you have selected the option to automatically download updates. It does operation in the background without interrupting your normal use of the device.  
 
 To ensure that your other downloads aren't affected or slowed down because updates are downloading, Windows Update uses Delivery Optimization, which downloads updates and reduces bandwidth consumption. 
  

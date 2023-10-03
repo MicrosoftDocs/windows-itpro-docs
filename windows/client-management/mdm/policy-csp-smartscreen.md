@@ -1,188 +1,266 @@
 ---
-title: Policy CSP - SmartScreen
-description: Use the Policy CSP - SmartScreen setting to allow IT Admins to control whether users are allowed to install apps from places other than the Store.
-ms.author: vinpa
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
+title: SmartScreen Policy CSP
+description: Learn more about the SmartScreen Area in Policy CSP.
 author: vinaypamnani-msft
-ms.localizationpriority: medium
-ms.date: 09/27/2019
-ms.reviewer: 
 manager: aaroncz
+ms.author: vinpa
+ms.date: 08/10/2023
+ms.localizationpriority: medium
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- SmartScreen-Begin -->
 # Policy CSP - SmartScreen
 
+<!-- SmartScreen-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- SmartScreen-Editable-End -->
 
-<hr/>
+<!-- EnableAppInstallControl-Begin -->
+## EnableAppInstallControl
 
-<!--Policies-->
-## SmartScreen policies  
+<!-- EnableAppInstallControl-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- EnableAppInstallControl-Applicability-End -->
 
-<dl>
-  <dd>
-    <a href="#smartscreen-enableappinstallcontrol">SmartScreen/EnableAppInstallControl</a>
-  </dd>
-  <dd>
-    <a href="#smartscreen-enablesmartscreeninshell">SmartScreen/EnableSmartScreenInShell</a>
-  </dd>
-  <dd>
-    <a href="#smartscreen-preventoverrideforfilesinshell">SmartScreen/PreventOverrideForFilesInShell</a>
-  </dd>
-</dl>
+<!-- EnableAppInstallControl-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/SmartScreen/EnableAppInstallControl
+```
+<!-- EnableAppInstallControl-OmaUri-End -->
 
+<!-- EnableAppInstallControl-Description-Begin -->
+<!-- Description-Source-ADMX -->
+App Install Control is a feature of Windows Defender SmartScreen that helps protect PCs by allowing users to install apps only from the Store. SmartScreen must be enabled for this feature to work properly.
 
-<hr/>
+- If you enable this setting, you must choose from the following behaviors:
 
-<!--Policy-->
-<a href="" id="smartscreen-enableappinstallcontrol"></a>**SmartScreen/EnableAppInstallControl**  
+- Turn off app recommendations.
 
-<!--SupportedSKUs-->
+- Show me app recommendations.
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+- Warn me before installing apps from outside the Store.
 
-<!--/SupportedSKUs-->
-<hr/>
+- Allow apps from Store only.
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+- If you disable or don't configure this setting, users will be able to install apps from anywhere, including files downloaded from the Internet.
+<!-- EnableAppInstallControl-Description-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- EnableAppInstallControl-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> This policy will block installation only while the device is online. To block offline installation too, **SmartScreen/PreventOverrideForFilesInShell** and **SmartScreen/EnableSmartScreenInShell** policies should also be enabled.
+>
+> This policy setting is intended to prevent malicious content from affecting your user's devices when downloading executable content from the internet.
+<!-- EnableAppInstallControl-Editable-End -->
 
-<hr/>
+<!-- EnableAppInstallControl-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Scope-->
-<!--Description-->
-Allows IT Admins to control whether users are allowed to install apps from places other than the Store.
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- EnableAppInstallControl-DFProperties-End -->
 
-> [!Note]
-> This policy will block installation only while the device is online. To block offline installation too, **SmartScreen/PreventOverrideForFilesInShell** and **SmartScreen/EnableSmartScreenInShell** policies should also be enabled.<p>This policy setting is intended to prevent malicious content from affecting your user's devices when downloading executable content from the internet.
+<!-- EnableAppInstallControl-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Configure App Install Control*
--   GP name: *ConfigureAppInstallControl*
--   GP path: *Windows Components/Windows Defender SmartScreen/Explorer*
--   GP ADMX file name: *SmartScreen.admx*
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Turns off Application Installation Control, allowing users to download and install files from anywhere on the web. |
+| 1 | Turns on Application Installation Control, allowing users to only install apps from the Store. |
+<!-- EnableAppInstallControl-AllowedValues-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- EnableAppInstallControl-GpMapping-Begin -->
+**Group policy mapping**:
 
--   0 – Turns off Application Installation Control, allowing users to download and install files from anywhere on the web.
--   1 – Turns on Application Installation Control, allowing users to only install apps from the Store.
+| Name | Value |
+|:--|:--|
+| Name | ConfigureAppInstallControl |
+| Friendly Name | Configure App Install Control |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Defender SmartScreen > Explorer |
+| Registry Key Name | Software\Policies\Microsoft\Windows Defender\SmartScreen |
+| Registry Value Name | ConfigureAppInstallControlEnabled |
+| ADMX File Name | SmartScreen.admx |
+<!-- EnableAppInstallControl-GpMapping-End -->
 
-<!--/SupportedValues-->
-<!--/Policy-->
+<!-- EnableAppInstallControl-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- EnableAppInstallControl-Examples-End -->
 
-<hr/>
+<!-- EnableAppInstallControl-End -->
 
-<!--Policy-->
-<a href="" id="smartscreen-enablesmartscreeninshell"></a>**SmartScreen/EnableSmartScreenInShell**  
+<!-- EnableSmartScreenInShell-Begin -->
+## EnableSmartScreenInShell
 
-<!--SupportedSKUs-->
+<!-- EnableSmartScreenInShell-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- EnableSmartScreenInShell-Applicability-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- EnableSmartScreenInShell-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/SmartScreen/EnableSmartScreenInShell
+```
+<!-- EnableSmartScreenInShell-OmaUri-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- EnableSmartScreenInShell-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy allows you to turn Windows Defender SmartScreen on or off. SmartScreen helps protect PCs by warning users before running potentially malicious programs downloaded from the Internet. This warning is presented as an interstitial dialog shown before running an app that has been downloaded from the Internet and is unrecognized or known to be malicious. No dialog is shown for apps that don't appear to be suspicious.
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+Some information is sent to Microsoft about files and programs run on PCs with this feature enabled.
 
-> [!div class = "checklist"]
-> * Device
+- If you enable this policy, SmartScreen will be turned on for all users. Its behavior can be controlled by the following options:
 
-<hr/>
+- Warn and prevent bypass
+- Warn.
 
-<!--/Scope-->
-<!--Description-->
-Allows IT Admins to configure SmartScreen for Windows.
+- If you enable this policy with the "Warn and prevent bypass" option, SmartScreen's dialogs won't present the user with the option to disregard the warning and run the app. SmartScreen will continue to show the warning on subsequent attempts to run the app.
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Configure Windows Defender SmartScreen*
--   GP name: *ShellConfigureSmartScreen*
--   GP path: *Windows Components/Windows Defender SmartScreen/Explorer*
--   GP ADMX file name: *SmartScreen.admx*
+- If you enable this policy with the "Warn" option, SmartScreen's dialogs will warn the user that the app appears suspicious, but will permit the user to disregard the warning and run the app anyway. SmartScreen won't warn the user again for that app if the user tells SmartScreen to run the app.
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+- If you disable this policy, SmartScreen will be turned off for all users. Users won't be warned if they try to run suspicious apps from the Internet.
 
--   0 – Turns off SmartScreen in Windows.
--   1 – Turns on SmartScreen in Windows.
+- If you don't configure this policy, SmartScreen will be enabled by default, but users may change their settings.
+<!-- EnableSmartScreenInShell-Description-End -->
 
-<!--/SupportedValues-->
-<!--/Policy-->
+<!-- EnableSmartScreenInShell-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- EnableSmartScreenInShell-Editable-End -->
 
-<hr/>
+<!-- EnableSmartScreenInShell-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Policy-->
-<a href="" id="smartscreen-preventoverrideforfilesinshell"></a>**SmartScreen/PreventOverrideForFilesInShell**  
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- EnableSmartScreenInShell-DFProperties-End -->
 
-<!--SupportedSKUs-->
+<!-- EnableSmartScreenInShell-AllowedValues-Begin -->
+**Allowed values**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Value | Description |
+|:--|:--|
+| 0 | Disabled. |
+| 1 (Default) | Enabled. |
+<!-- EnableSmartScreenInShell-AllowedValues-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- EnableSmartScreenInShell-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+| Name | Value |
+|:--|:--|
+| Name | ShellConfigureSmartScreen |
+| Friendly Name | Configure Windows Defender SmartScreen |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Defender SmartScreen > Explorer |
+| Registry Key Name | Software\Policies\Microsoft\Windows\System |
+| Registry Value Name | EnableSmartScreen |
+| ADMX File Name | SmartScreen.admx |
+<!-- EnableSmartScreenInShell-GpMapping-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- EnableSmartScreenInShell-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- EnableSmartScreenInShell-Examples-End -->
 
-<hr/>
+<!-- EnableSmartScreenInShell-End -->
 
-<!--/Scope-->
-<!--Description-->
-Allows IT Admins to control whether users can ignore SmartScreen warnings and run malicious files.
+<!-- PreventOverrideForFilesInShell-Begin -->
+## PreventOverrideForFilesInShell
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Configure Windows Defender SmartScreen*
--   GP name: *ShellConfigureSmartScreen*
--   GP element: *ShellConfigureSmartScreen_Dropdown*
--   GP path: *Windows Components/Windows Defender SmartScreen/Explorer*
--   GP ADMX file name: *SmartScreen.admx*
+<!-- PreventOverrideForFilesInShell-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- PreventOverrideForFilesInShell-Applicability-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- PreventOverrideForFilesInShell-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/SmartScreen/PreventOverrideForFilesInShell
+```
+<!-- PreventOverrideForFilesInShell-OmaUri-End -->
 
--   0 – Employees can ignore SmartScreen warnings and run malicious files.
--   1 – Employees cannot ignore SmartScreen warnings and run malicious files.
+<!-- PreventOverrideForFilesInShell-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy allows you to turn Windows Defender SmartScreen on or off. SmartScreen helps protect PCs by warning users before running potentially malicious programs downloaded from the Internet. This warning is presented as an interstitial dialog shown before running an app that has been downloaded from the Internet and is unrecognized or known to be malicious. No dialog is shown for apps that don't appear to be suspicious.
 
-<!--/SupportedValues-->
-<!--/Policy-->
-<hr/>
+Some information is sent to Microsoft about files and programs run on PCs with this feature enabled.
 
-<!--/Policies-->
+- If you enable this policy, SmartScreen will be turned on for all users. Its behavior can be controlled by the following options:
+
+- Warn and prevent bypass
+- Warn.
+
+- If you enable this policy with the "Warn and prevent bypass" option, SmartScreen's dialogs won't present the user with the option to disregard the warning and run the app. SmartScreen will continue to show the warning on subsequent attempts to run the app.
+
+- If you enable this policy with the "Warn" option, SmartScreen's dialogs will warn the user that the app appears suspicious, but will permit the user to disregard the warning and run the app anyway. SmartScreen won't warn the user again for that app if the user tells SmartScreen to run the app.
+
+- If you disable this policy, SmartScreen will be turned off for all users. Users won't be warned if they try to run suspicious apps from the Internet.
+
+- If you don't configure this policy, SmartScreen will be enabled by default, but users may change their settings.
+<!-- PreventOverrideForFilesInShell-Description-End -->
+
+<!-- PreventOverrideForFilesInShell-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- PreventOverrideForFilesInShell-Editable-End -->
+
+<!-- PreventOverrideForFilesInShell-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- PreventOverrideForFilesInShell-DFProperties-End -->
+
+<!-- PreventOverrideForFilesInShell-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Don't prevent override. |
+| 1 | Prevent override. |
+<!-- PreventOverrideForFilesInShell-AllowedValues-End -->
+
+<!-- PreventOverrideForFilesInShell-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | ShellConfigureSmartScreen |
+| Friendly Name | Configure Windows Defender SmartScreen |
+| Element Name | Pick one of the following settings. |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Defender SmartScreen > Explorer |
+| Registry Key Name | Software\Policies\Microsoft\Windows\System |
+| ADMX File Name | SmartScreen.admx |
+<!-- PreventOverrideForFilesInShell-GpMapping-End -->
+
+<!-- PreventOverrideForFilesInShell-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- PreventOverrideForFilesInShell-Examples-End -->
+
+<!-- PreventOverrideForFilesInShell-End -->
+
+<!-- SmartScreen-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- SmartScreen-CspMoreInfo-End -->
+
+<!-- SmartScreen-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

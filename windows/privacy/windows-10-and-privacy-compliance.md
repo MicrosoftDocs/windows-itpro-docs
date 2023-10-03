@@ -1,15 +1,14 @@
 ---
 title: Windows Privacy Compliance Guide
 description: This article provides information to help IT and compliance professionals understand the personal data policies as related to Windows.
-ms.prod: m365-security
+ms.prod: windows-client
+ms.technology: itpro-privacy
 ms.localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
-manager: dougeby
-ms.collection: M365-security-compliance
-ms.topic: article
-ms.date: 12/01/2021
-ms.technology: privacy
+manager: laurawi
+ms.date: 05/20/2019
+ms.topic: conceptual
 ---
 
 # Windows Privacy Compliance:<br />A Guide for IT and Compliance Professionals
@@ -85,10 +84,10 @@ The following table provides an overview of the privacy settings discussed earli
 | [Find my device](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#find-my-device) | Group Policy:<br />**Computer Configuration** > **Windows Components** > **Find My Device** > **Turn On/Off Find My Device**<br /><br />MDM: [Experience/AllFindMyDevice](/windows/client-management/mdm/policy-csp-experience#experience-allowfindmydevice) | Off | Off |
 | [Diagnostic Data](configure-windows-diagnostic-data-in-your-organization.md) | Group Policy:<br />**Computer Configuration** > **Windows Components** > **Data Collection and Preview Builds** > **Allow Telemetry** (or **Allow diagnostic data** in Windows 11 or Windows Server 2022)<br /><br />MDM: [System/AllowTelemetry](/windows/client-management/mdm/policy-csp-system#system-allowtelemetry)<br /><br />**Note**: If you are planning to configure devices, using the Windows diagnostic data processor configuration option, the state to minimize data collection is not recommended. For more information, see [Enabling the Windows diagnostic data processor configuration](#237-diagnostic-data-enabling-the-windows-diagnostic-data-processor-configuration). | Required diagnostic data (Windows 10, version 1903 and later and Windows 11)<br /><br />Server editions:<br />Enhanced diagnostic data | Security (Off) and block endpoints |
 | [Inking and typing diagnostics](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-priv-ink) | Group Policy:<br />**Computer Configuration** > **Windows Components** > **Text Input** > **Improve inking and typing recognition**<br /><br />MDM: [TextInput/AllowLinguisticDataCollection](/windows/client-management/mdm/policy-csp-textinput#textinput-allowlinguisticdatacollection) | Off (Windows 10, version 1809 and later and Windows 11) | Off |
-| Tailored Experiences | Group Policy:<br />**User Configuration** > **Windows Components** > **Cloud Content** > **Do not use diagnostic data for tailored experiences**<br /><br />MDM: [Experience/AllowTailoredExperiencesWithDiagnosticData](/windows/client-management/mdm/policy-csp-experience#experience-allowtailoredexperienceswithdiagnosticdata) | Off | Off | 
-| Advertising ID | Group Policy:<br />**Computer Configuration** > **System** > **User Profile** > **Turn off the advertising Id**<br /><br />MDM: [Privacy/DisableAdvertisingId](/windows/client-management/mdm/policy-csp-privacy#privacy-disableadvertisingid) | Off | Off | 
-| Activity History/Timeline – Cloud Sync | Group Policy:<br />**Computer Configuration** > **System** > **OS Policies** > **Allow upload of User Activities**<br /><br />MDM: [Privacy/EnableActivityFeed](/windows/client-management/mdm/policy-csp-privacy#privacy-enableactivityfeed) | Off | Off | 
-| [Cortana](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#2-cortana-and-search) | Group Policy:<br />**Computer Configuration** > **Windows Components** > **Search** > **Allow Cortana**<br /><br />MDM: [Experience/AllowCortana](/windows/client-management/mdm/policy-csp-experience#experience-allowcortana) | Off | Off | 
+| Tailored Experiences | Group Policy:<br />**User Configuration** > **Windows Components** > **Cloud Content** > **Do not use diagnostic data for tailored experiences**<br /><br />MDM: [Experience/AllowTailoredExperiencesWithDiagnosticData](/windows/client-management/mdm/policy-csp-experience#experience-allowtailoredexperienceswithdiagnosticdata) | Off | Off |
+| Advertising ID | Group Policy:<br />**Computer Configuration** > **System** > **User Profile** > **Turn off the advertising Id**<br /><br />MDM: [Privacy/DisableAdvertisingId](/windows/client-management/mdm/policy-csp-privacy#privacy-disableadvertisingid) | Off | Off |
+| Activity History/Timeline – Cloud Sync | Group Policy:<br />**Computer Configuration** > **System** > **OS Policies** > **Allow upload of User Activities**<br /><br />MDM: [Privacy/EnableActivityFeed](/windows/client-management/mdm/policy-csp-privacy#privacy-enableactivityfeed) | Off | Off |
+| [Cortana](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#2-cortana-and-search) | Group Policy:<br />**Computer Configuration** > **Windows Components** > **Search** > **Allow Cortana**<br /><br />MDM: [Experience/AllowCortana](/windows/client-management/mdm/policy-csp-experience#experience-allowcortana) | Off | Off |
 
 ### 2.3 Guidance for configuration options
 
@@ -100,9 +99,9 @@ Windows deployment can be configured using several different methods that provid
 
 If you want the ability to fully control and apply restrictions on data being sent back to Microsoft, you can use [Configuration Manager](/mem/configmgr/) as a deployment solution. Configuration Manager can be used to deploy a customized boot image using a variety of [deployment methods](/mem/configmgr/osd/get-started/prepare-for-operating-system-deployment). You can further restrict any Configuration Manager-specific diagnostic data from being sent back to Microsoft by turning off this setting as outlined in the instructions [here](/mem/configmgr/core/plan-design/diagnostics/frequently-asked-questions).
 
-Alternatively, your administrators can also choose to use Windows Autopilot. Autopilot lessens the overall burden of deployment while allowing administrators to fully customize the out-of-box experience. However, since Windows Autopilot is a cloud-based solution, administrators should be aware that a minimal set of device identifiers are sent back to Microsoft during initial device boot up. This device-specific information is used to identify the device so that it can receive the administrator-configured Autopilot profile and policies.
+Alternatively, your administrators can also choose to use Windows Autopilot. Windows Autopilot lessens the overall burden of deployment while allowing administrators to fully customize the out-of-box experience. However, since Windows Autopilot is a cloud-based solution, administrators should be aware that a minimal set of device identifiers are sent back to Microsoft during initial device boot up. This device-specific information is used to identify the device so that it can receive the administrator-configured Windows Autopilot profile and policies.
 
-You can use the following articles to learn more about Autopilot and how to use Autopilot to deploy Windows:
+You can use the following articles to learn more about Windows Autopilot and how to use Windows Autopilot to deploy Windows:
 
 - [Overview of Windows Autopilot](/windows/deployment/windows-Autopilot/windows-Autopilot)
 - [Windows Autopilot deployment process](/windows/deployment/windows-Autopilot/deployment-process)
@@ -146,15 +145,12 @@ An administrator can disable a user’s ability to delete their device’s diagn
 
 #### _2.3.7 Diagnostic data: Enabling the Windows diagnostic data processor configuration_
 
-> [!IMPORTANT]
-> There are some significant changes planned for the Windows diagnostic data processor configuration.  To learn more, [review this information](changes-to-windows-diagnostic-data-collection.md#significant-changes-coming-to-the-windows-diagnostic-data-processor-configuration).
-
 **Applies to:**
 
 - Windows 11 Enterprise, Professional, and Education editions
 - Windows 10 Enterprise, Professional, and Education, version 1809 with July 2021 update and newer
 
-The Windows diagnostic data processor configuration enables IT administrators to be the controller, as defined by the European Union General Data Protection Regulation (GDPR), for the Windows diagnostic data collected from Windows devices that are Azure Active Directory (AAD)-joined and meet the configuration requirements. For more information, see [Enable Windows diagnostic data processor configuration](configure-windows-diagnostic-data-in-your-organization.md#enable-windows-diagnostic-data-processor-configuration) in [Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization.md). Windows diagnostic data does not include data processed by Microsoft in connection with providing service-based capabilities.
+The Windows diagnostic data processor configuration enables IT administrators to be the controller, as defined by the European Union General Data Protection Regulation (GDPR), for the Windows diagnostic data collected from Windows devices that are Azure Active Directory (AAD)-joined and meet the configuration requirements. For more information, see [Enable Windows diagnostic data processor configuration](configure-windows-diagnostic-data-in-your-organization.md#enable-windows-diagnostic-data-processor-configuration). Windows diagnostic data does not include data processed by Microsoft in connection with providing service-based capabilities.
 
 The Windows diagnostic data collected from devices enabled with the Windows diagnostic data processor configuration may be associated with a specific Azure Active Directory User ID or device ID. The Windows diagnostic data processor configuration provides you with controls that help respond to data subject requests (DSRs) to delete diagnostic data, at user account closure, for a specific Azure AD User ID. Additionally, you’re able to execute an export DSR for diagnostic data related to a specific Azure AD User ID. For more information, see [The process for exercising data subject rights](#3-the-process-for-exercising-data-subject-rights). Microsoft also will accommodate a tenant account closure, either because you decide to close your Azure or Azure AD tenant account, or because you decide you no longer wish to be the data controller for Windows diagnostic data, but still wish to remain an Azure customer.
 
@@ -165,8 +161,6 @@ We recommend that IT administrators who have enabled the Windows diagnostic data
 
 >[!Note]
 >Tenant account closure will lead to the deletion of all data associated with that tenant.
-
-Specific services that depend on Windows diagnostic data will also result in the enterprise becoming controllers of their Windows diagnostic data. These services include Update Compliance, Desktop Analytics, Windows Update for Business, and Microsoft Managed Desktop. For more information, see [Related Windows product considerations](#5-related-windows-product-considerations).
 
 For more information on how Microsoft can help you honor rights and fulfill obligations under the GDPR when using Windows diagnostic data processor configurations, see [General Data Protection Regulation Summary](/compliance/regulatory/gdpr).
 
@@ -231,17 +225,17 @@ An administrator can configure privacy-related settings, such as choosing to onl
 >[!Note]
 >The Windows diagnostic data processor configuration is not available for Surface Hub.
 
-### 5.3 Desktop Analytics
+### 5.3 Windows Update for Business reports
 
-[Desktop Analytics](/mem/configmgr/desktop-analytics/overview) is a set of solutions for Azure portal that provide you with extensive data about the state of devices in your deployment. Desktop Analytics is a separate offering from Windows and is dependent on enabling a minimum set of data collection on the device to function.
+[Windows Update for Business reports](/windows/deployment/update/wufb-reports-overview) is a cloud-based solution that provides information about an organization’s Azure Active Directory-joined devices' compliance with Windows updates. Windows Update for Business reports uses Windows diagnostic data for all of its reporting.
 
-### 5.4 Microsoft Managed Desktop
+### 5.4 Windows Autopatch
 
-[Microsoft Managed Desktop (MMD)](/microsoft-365/managed-desktop/service-description/) is a service that provides your users with a secure modern experience and always keeps devices up to date with the latest versions of Windows Enterprise edition, Office 365 ProPlus, and Microsoft security services.
+[Windows Autopatch](/windows/deployment/windows-autopatch/overview/windows-autopatch-overview) is a cloud service that automates Windows, Microsoft 365 Apps for enterprise, Microsoft Edge, and Microsoft Teams updates to improve security and productivity across your organization. Windows Autopatch reports use Windows diagnostic data for their reporting.
 
-### 5.5 Update Compliance
+### 5.5 Windows updates reports (in Microsoft Intune)
 
-[Update Compliance](/windows/deployment/update/update-compliance-monitor) is a service that enables organizations to monitor security, quality and feature updates for Windows Professional, Education, and Enterprise editions, and view a report of device and update issues related to compliance that need attention. Update Compliance uses Windows diagnostic data for all its reporting.
+Microsoft Intune is a cloud-based endpoint management solution. It manages user access and simplifies app and device management across your many devices, including mobile devices, desktop computers, and virtual endpoints. Microsoft Intune includes reports that help you prepare a Windows upgrade or update. For example, [App and driver compatibility reports](/mem/intune/protect/windows-update-compatibility-reports), [Windows driver updates](/mem/intune/protect/windows-driver-updates-overview), and [Windows Autopilot](/autopilot/windows-autopilot). These reports use Windows diagnostic data for their reporting.
 
 ## Additional Resources
 
@@ -249,7 +243,7 @@ An administrator can configure privacy-related settings, such as choosing to onl
 * [Microsoft Trust Center: Privacy at Microsoft](https://www.microsoft.com/trust-center/privacy)
 * [Windows IT Pro Docs](/windows/#pivot=it-pro)
 * [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement)
-* [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md) 
+* [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md)
 * [Privacy at Microsoft](https://privacy.microsoft.com/privacy-report)
 * [Changes to Windows diagnostic data](changes-to-windows-diagnostic-data-collection.md)
 * [Microsoft Service Trust Portal](https://servicetrust.microsoft.com/)

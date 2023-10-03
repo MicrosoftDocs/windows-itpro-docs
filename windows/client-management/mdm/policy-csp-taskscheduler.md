@@ -1,69 +1,80 @@
 ---
-title: Policy CSP - TaskScheduler
-description: Learn how to use the Policy CSP - TaskScheduler setting to determine whether the specific task is enabled (1) or disabled (0).
-ms.author: vinpa
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
+title: TaskScheduler Policy CSP
+description: Learn more about the TaskScheduler Area in Policy CSP.
 author: vinaypamnani-msft
-ms.localizationpriority: medium
-ms.date: 09/27/2019
-ms.reviewer: 
 manager: aaroncz
+ms.author: vinpa
+ms.date: 08/10/2023
+ms.localizationpriority: medium
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- TaskScheduler-Begin -->
 # Policy CSP - TaskScheduler
 
-<hr/>
+<!-- TaskScheduler-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TaskScheduler-Editable-End -->
 
-<!--Policies-->
-## TaskScheduler policies  
+<!-- EnableXboxGameSaveTask-Begin -->
+## EnableXboxGameSaveTask
 
-<dl>
-  <dd>
-    <a href="#taskscheduler-enablexboxgamesavetask">TaskScheduler/EnableXboxGameSaveTask</a>
-  </dd>
-</dl>
+<!-- EnableXboxGameSaveTask-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- EnableXboxGameSaveTask-Applicability-End -->
 
+<!-- EnableXboxGameSaveTask-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/TaskScheduler/EnableXboxGameSaveTask
+```
+<!-- EnableXboxGameSaveTask-OmaUri-End -->
 
-<hr/>
+<!-- EnableXboxGameSaveTask-Description-Begin -->
+<!-- Description-Source-DDF -->
+This setting determines whether the specific task is enabled (1) or disabled (0). Default: Enabled.
+<!-- EnableXboxGameSaveTask-Description-End -->
 
-<!--Policy-->
-<a href="" id="taskscheduler-enablexboxgamesavetask"></a>**TaskScheduler/EnableXboxGameSaveTask**  
+<!-- EnableXboxGameSaveTask-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- EnableXboxGameSaveTask-Editable-End -->
 
-<!--SupportedSKUs-->
-The table below shows the applicability of Windows:
+<!-- EnableXboxGameSaveTask-DFProperties-Begin -->
+**Description framework properties**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- EnableXboxGameSaveTask-DFProperties-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- EnableXboxGameSaveTask-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Disabled. |
+| 1 | Enabled. |
+<!-- EnableXboxGameSaveTask-AllowedValues-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- EnableXboxGameSaveTask-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- EnableXboxGameSaveTask-Examples-End -->
 
-<hr/>
+<!-- EnableXboxGameSaveTask-End -->
 
-<!--/Scope-->
-<!--Description-->
-This setting determines whether the specific task is enabled (1) or disabled (0). Default: Disabled.
+<!-- TaskScheduler-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- TaskScheduler-CspMoreInfo-End -->
 
-<!--/Description-->
-<!--/Policy-->
-<hr/>
+<!-- TaskScheduler-End -->
 
-<!--/Policies-->
-
-## Related topics
+## Related articles
 
 [Policy configuration service provider](policy-configuration-service-provider.md)

@@ -50,22 +50,6 @@
       "template_folder": "_themes"
     },
     {
-      "docset_name": "smb",
-      "build_source_folder": "smb",
-      "build_output_subfolder": "smb",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": false,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
       "docset_name": "store-for-business",
       "build_source_folder": "store-for-business",
       "build_output_subfolder": "store-for-business",
@@ -219,7 +203,6 @@
   ],
   "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/windows-itpro-docs",
   "git_repository_branch_open_to_public_contributors": "public",
-  "skip_source_output_uploading": false,
   "need_preview_pull_request": true,
   "resolve_user_profile_using_github": true,
   "dependent_repositories": [
@@ -252,8 +235,23 @@
     }
   },
   "docs_build_engine": {},
+  "skip_source_output_uploading": false,
   "need_generate_pdf_url_template": true,
   "contribution_branch_mappings": {},
   "need_generate_pdf": false,
-  "need_generate_intellisense": false
+  "need_generate_intellisense": false,
+  "redirection_files": [
+    ".openpublishing.redirection.browsers.json",
+    ".openpublishing.redirection.education.json",
+    ".openpublishing.redirection.json",
+    ".openpublishing.redirection.store-for-business.json",
+    ".openpublishing.redirection.windows-application-management.json",
+    ".openpublishing.redirection.windows-client-management.json",
+    ".openpublishing.redirection.windows-configuration.json",
+    ".openpublishing.redirection.windows-deployment.json",
+    ".openpublishing.redirection.windows-hub.json",
+    ".openpublishing.redirection.windows-privacy.json",
+    ".openpublishing.redirection.windows-security.json",
+    ".openpublishing.redirection.windows-whats-new.json"
+  ]
 }

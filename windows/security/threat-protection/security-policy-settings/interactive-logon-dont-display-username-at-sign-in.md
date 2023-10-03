@@ -1,27 +1,30 @@
 ---
-title: Interactive logon Don't display username at sign-in (Windows 10)
+title: Interactive logon Don't display username at sign-in
 description: Describes the best practices, location, values, and security considerations for the Interactive logon Don't display username at sign-in security policy setting.
 ms.assetid: 98b24b03-95fe-4edc-8e97-cbdaa8e314fd
-ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.reviewer:
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Interactive logon: Don't display username at sign-in
 
 **Applies to**
-- Windows 10, Windows Server 2019
+- Windows 11
+- Windows 10
+- Windows Server 2022
+- Windows Server 2019
+- Windows Server 2016
 
 Describes the best practices, location, values, and security considerations for the **Interactive logon: Don't display username at sign-in** security policy setting.
 
@@ -88,7 +91,7 @@ Enable the **Interactive logon: Don't display user name at sign-in** setting.
 
 ### Potential impact
 
-Users must always type their usernames and passwords when they log on locally or to the domain. The sign in tiles of all logged on users aren't displayed.
+Users must always type their usernames and passwords when they log on locally or to the domain. The sign in tiles of all logged on users aren't displayed. When this policy is enabled, you will be unable to change the default credential provider to anything other than username/password. In addition, this policy may be incompatible with autologon and multi-factor unlock.
 
 ## Related topics
 

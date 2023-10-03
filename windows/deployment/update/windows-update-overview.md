@@ -1,12 +1,16 @@
 ---
-title: Get started with Windows Update 
+title: Get started with Windows Update
 description: An overview of learning resources for Windows Update, including documents on architecture, log files, and common errors.
-ms.prod: w10
-author: aczechowski
-ms.author: aaroncz
-manager: dougeby
+ms.prod: windows-client
+ms.technology: itpro-updates
+ms.topic: conceptual
+author: mestew
+ms.author: mstewart
+manager: aaroncz
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
 ms.date: 09/18/2018
-ms.topic: article
 ---
 
 # Get started with Windows Update
@@ -20,9 +24,9 @@ Use the following information to get started with Windows Update:
 - Understand the UUP architecture
 - Understand [how Windows Update works](how-windows-update-works.md)
 - Find [Windows Update log files](windows-update-logs.md)
-- Learn how to [troubleshoot Windows Update](windows-update-troubleshooting.md)
-- Review [common Windows Update errors](windows-update-errors.md) and check out the [error code reference](windows-update-error-reference.md)
-- Review [other resources](windows-update-resources.md) to help you use Windows Update
+- Learn how to [troubleshoot Windows Update](/troubleshoot/windows-client/deployment/windows-update-issues-troubleshooting?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json)
+- Review [common Windows Update errors](/troubleshoot/windows-client/deployment/common-windows-update-errors?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json) and check out the [error code reference](windows-update-error-reference.md)
+- Review [other resources](/troubleshoot/windows-client/deployment/additional-resources-for-windows-update) to help you use Windows Update
 - Review [Windows IT Pro Blog](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/bg-p/Windows10Blog) section of Microsoft Blogs.
 
 ## Unified Update Platform (UUP) architecture 
@@ -30,7 +34,7 @@ To understand the changes to the Windows Update architecture that UUP introduces
 
 ![Windows Update terminology.](images/update-terminology.png)
 
-- **Update UI** – The user interface to initiate Windows Update check and history. Available under **Settings --> Update & Security --> Windows Update**. 
+- **Update UI** - The user interface to initiate Windows Update check and history. Available under **Settings --> Update & Security --> Windows Update**. 
 - **Update Session Orchestrator (USO)**- A Windows OS component that orchestrates the sequence of downloading and installing various update types from Windows Update.  
 
    Update types- 
@@ -50,5 +54,5 @@ To understand the changes to the Windows Update architecture that UUP introduces
  
 Additional components include the following- 
 
-- **CompDB** – A generic term to refer to the XML describing information about target build composition, available diff packages, and conditional rules. 
-- **Action List** – The payload and additional information needed to perform an update. The action list is consumed by the UpdateAgent, as well as other installers to determine what payload to download. It's also consumed by the "Install Agent" to determine what actions need to be taken, such as installing or removing packages.  
+- **CompDB** - A generic term to refer to the XML describing information about target build composition, available diff packages, and conditional rules. 
+- **Action List** - The payload and additional information needed to perform an update. The action list is consumed by the UpdateAgent, as well as other installers to determine what payload to download. It's also consumed by the "Install Agent" to determine what actions need to be taken, such as installing or removing packages.  

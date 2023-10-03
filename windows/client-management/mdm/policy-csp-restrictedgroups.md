@@ -1,79 +1,81 @@
 ---
-title: Policy CSP - RestrictedGroups
-description: Learn how the Policy CSP - RestrictedGroups setting allows an administrator to define the members that are part of a security-sensitive (restricted) group.
-ms.author: vinpa
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
+title: RestrictedGroups Policy CSP
+description: Learn more about the RestrictedGroups Area in Policy CSP.
 author: vinaypamnani-msft
-ms.localizationpriority: medium
-ms.date: 04/07/2020
-ms.reviewer: 
 manager: aaroncz
+ms.author: vinpa
+ms.date: 08/10/2023
+ms.localizationpriority: medium
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- RestrictedGroups-Begin -->
 # Policy CSP - RestrictedGroups
 
+<!-- RestrictedGroups-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+
 > [!IMPORTANT]
-> Starting from Windows 10, version 20H2, it is recommended to use the [LocalUsersandGroups](policy-csp-localusersandgroups.md) policy instead of the RestrictedGroups policy, to configure members (users or Azure Active Directory groups) to a Windows 10 local group. Applying both the policies to the same device is unsupported and may yield unpredictable results.
+> Starting from Windows 10, version 20H2, to configure members of Windows local groups, use the [LocalUsersandGroups](policy-csp-localusersandgroups.md) policy instead of the RestrictedGroups policy. These members can be users or Azure Active Directory (Azure AD) groups.
+>
+> Don't apply both policies to the same device, it's unsupported and may yield unpredictable results.
+<!-- RestrictedGroups-Editable-End -->
 
+<!-- ConfigureGroupMembership-Begin -->
+## ConfigureGroupMembership
 
-<hr/>
+<!-- ConfigureGroupMembership-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- ConfigureGroupMembership-Applicability-End -->
 
-<!--Policies-->
-## RestrictedGroups policies  
+<!-- ConfigureGroupMembership-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/RestrictedGroups/ConfigureGroupMembership
+```
+<!-- ConfigureGroupMembership-OmaUri-End -->
 
-<dl>
-  <dd>
-    <a href="#restrictedgroups-configuregroupmembership">RestrictedGroups/ConfigureGroupMembership</a>
-  </dd>
-</dl>
-
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="restrictedgroups-configuregroupmembership"></a>**RestrictedGroups/ConfigureGroupMembership**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This security setting allows an administrator to define the members that are part of a security-sensitive (restricted) group. When a Restricted Groups policy is enforced, any current member of a restricted group that is not on the Members list is removed, except for the built-in administrator in the built-in Administrators group. Any user on the Members list who is not currently a member of the restricted group is added. An empty Members list means that the restricted group has no members. The membership configuration is based on SIDS, therefore renaming these built-in groups does not affect retention of this special membership.
-
-For example, you can create a Restricted Groups policy to allow only specified users. Alice and John, to be members of the Backup Operators group. When this policy is refreshed, only Alice and John will remain as members of the Backup Operators group, and all other members will be removed.  
+<!-- ConfigureGroupMembership-Description-Begin -->
+<!-- Description-Source-DDF -->
+This security setting allows an administrator to define the members of a security-sensitive (restricted) group. When a Restricted Groups Policy is enforced, any current member of a restricted group that isn't on the Members list is removed. Any user on the Members list who isn't currently a member of the restricted group is added. You can use Restricted Groups policy to control group membership. Using the policy, you can specify what members are part of a group. Any members that aren't specified in the policy are removed during configuration or refresh. For example, you can create a Restricted Groups policy to only allow specified users (for example, Alice and John) to be members of the Administrators group. When policy is refreshed, only Alice and John will remain as members of the Administrators group.
 
 > [!CAUTION]
-> Attempting to remove the built-in administrator from the Administrators group will result in failure with the following error:  
+> If a Restricted Groups policy is applied, any current member not on the Restricted Groups policy members list is removed. This can include default members, such as administrators. Restricted Groups should be used primarily to configure membership of local groups on workstation or member servers. An empty Members list means that the restricted group has no members.
+<!-- ConfigureGroupMembership-Description-End -->
+
+<!-- ConfigureGroupMembership-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!CAUTION]
+> You can't remove the built-in Administrator account from the built-in Administrators group. If you try to remove it, the command fails with the following error:
 >
 > | Error Code  | Symbolic Name | Error Description | Header |
 > |----------|----------|----------|----------|
-> |  0x55b (Hex)  <br>  1371 (Dec)  |ERROR_SPECIAL_ACCOUNT|Cannot perform this operation on built-in accounts.|  winerror.h  |
+> |  `0x55b` (Hex)  <br>  `1371` (Dec)  |ERROR_SPECIAL_ACCOUNT|Cannot perform this operation on built-in accounts.|  winerror.h  |
+<!-- ConfigureGroupMembership-Editable-End -->
 
-Starting in Windows 10, version 1809, you can use this schema for retrieval and application of the RestrictedGroups/ConfigureGroupMembership policy. A minimum occurrence of zero members when applying the policy implies clearing the access group, and should be used with caution.
+<!-- ConfigureGroupMembership-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- ConfigureGroupMembership-DFProperties-End -->
+
+<!-- ConfigureGroupMembership-AllowedValues-Begin -->
+**Allowed values**:
+
+<br>
+<details>
+  <summary>Expand to see schema XML</summary>
 
 ```xml
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0">  
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0">
   <xs:simpleType name="member_name">
     <xs:restriction base="xs:string">
       <xs:maxLength value="255" />
@@ -87,34 +89,34 @@ Starting in Windows 10, version 1809, you can use this schema for retrieval and 
             <xs:documentation>Restricted Group Member</xs:documentation>
           </xs:annotation>
           <xs:complexType>
-           <xs:attribute name="name" type="member_name" use="required"/>
+            <xs:attribute name="name" type="member_name" use="required" />
           </xs:complexType>
         </xs:element>
       </xs:sequence>
-      <xs:attribute name="desc" type="member_name" use="required"/>
+      <xs:attribute name="desc" type="member_name" use="required" />
     </xs:complexType>
   </xs:element>
   <xs:element name="groupmembership">
     <xs:complexType>
-       <xs:sequence>
-          <xs:element name="accessgroup" minOccurs="0" maxOccurs="unbounded">
-           <xs:annotation>
-              <xs:documentation>Restricted Group</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-       </xs:sequence>
+      <xs:sequence>
+        <xs:element name="accessgroup" minOccurs="0" maxOccurs="unbounded">
+          <xs:annotation>
+            <xs:documentation>Restricted Group</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+      </xs:sequence>
     </xs:complexType>
-   </xs:element>
+  </xs:element>
 </xs:schema>
 ```
 
-<!--/Description-->
-<!--SupportedValues-->
+</details>
+<!-- ConfigureGroupMembership-AllowedValues-End -->
 
-<!--/SupportedValues-->
-<!--Example-->
+<!-- ConfigureGroupMembership-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
 
-Here's an example:
+**Example**:
 
 ```xml
 <groupmembership>
@@ -129,39 +131,39 @@ Here's an example:
 </groupmembership>
 ```
 
-where:
+Descriptions of the properties:
 
 - `<accessgroup desc>` contains the local group SID or group name to configure. If a SID is specified here, the policy uses the [LookupAccountName](/windows/win32/api/winbase/nf-winbase-lookupaccountnamea) API to get the local group name. For best results, use names for `<accessgroup desc>`.
 
-- `<member name>` contains the members to add to the group in `<accessgroup desc>`. A member can be specified as a name or as a SID. For best results, use a SID for `<member name>`. The member SID can be a user account or a group in AD, Azure AD, or on the local machine. If a name is specified here, the policy will try to get the corresponding SID using the [LookupAccountSID](/windows/win32/api/winbase/nf-winbase-lookupaccountsida) API. Name can be used for a user account or a group in AD or on the local machine. Membership is configured using the [NetLocalGroupSetMembers](/windows/win32/api/lmaccess/nf-lmaccess-netlocalgroupsetmembers) API.
+- `<member name>` contains the members to add to the group in `<accessgroup desc>`. A member can be specified as a name or as a SID. For best results, use a SID for `<member name>`. The member SID can be a user account or a group in Active Directory, Azure AD, or on the local machine. If a name is specified here, the policy will try to get the corresponding SID using the [LookupAccountSID](/windows/win32/api/winbase/nf-winbase-lookupaccountsida) API. Name can be used for a user account or a group in Active Directory or on the local machine. Membership is configured using the [NetLocalGroupSetMembers](/windows/win32/api/lmaccess/nf-lmaccess-netlocalgroupsetmembers) API.
 
 - In this example, `Group1` and `Group2` are local groups on the device being configured, and `Group3` is a domain group.
 
 > [!NOTE]
-> Currently, the RestrictedGroups/ConfigureGroupMembership policy does not have a MemberOf functionality. However, you can add a domain group as a member to a local group by using the member portion, as shown in the previous example.
+> Currently, the RestrictedGroups/ConfigureGroupMembership policy doesn't have a MemberOf functionality. However, you can add a domain group as a member to a local group by using the member portion, as shown in this example.
+<!-- ConfigureGroupMembership-Examples-End -->
 
-<!--/Example-->
-<!--Validation-->
+<!-- ConfigureGroupMembership-End -->
 
-### Policy timeline
+<!-- RestrictedGroups-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
 
-The behavior of this policy setting differs in different Windows 10 versions. For Windows 10, version 1809 through version 1909, you can use name in `<accessgroup dec>` and SID in `<member name>`. For Windows 10, version 2004, you can use name or SID for both the elements, as described in this topic. 
+**Policy timeline**:
+
+The behavior of this policy setting differs in different Windows 10 versions. For Windows 10, version 1809 through version 1909, you can use name in `<accessgroup desc>` and SID in `<member name>`. For Windows 10, version 2004, you can use name or SID for both the elements, as described in the example.
 
 The following table describes how this policy setting behaves in different Windows 10 versions:
 
 | Windows 10 version | Policy behavior |
 | ------------------ | --------------- |
 |Windows 10, version 1803 | Added this policy setting. <br> XML accepts group and member only by name. <br> Supports configuring the administrators group using the group name. <br> Expects member name to be in the account name format. |
-| Windows 10, version 1809 <br> Windows 10, version 1903 <br> Windows 10, version 1909 | Supports configuring any local group. <br> `<accessgroup desc>` accepts only name. <br> `<member name>` accepts a name or an SID. <br> This is useful when you want to ensure a certain local group always has a well-known SID as member. |
-| Windows 10, version 2004 | Behaves as described in this topic. <br> Accepts name or SID for group and members and translates as appropriate.| 
+| Windows 10, version 1809 <br> Windows 10, version 1903 <br> Windows 10, version 1909 | Supports configuring any local group. <br> `<accessgroup desc>` accepts only name. <br> `<member name>` accepts a name or a SID. <br> This behavior is useful when you want to make sure a certain local group always has a well-known SID as member. |
+| Windows 10, version 2004 | Behaves as described in this article. <br> Accepts name or SID for group and members and translates as appropriate.|
 
+<!-- RestrictedGroups-CspMoreInfo-End -->
 
-<!--/Validation-->
-<!--/Policy-->
-<hr/>
+<!-- RestrictedGroups-End -->
 
-<!--/Policies-->
-
-## Related topics
+## Related articles
 
 [Policy configuration service provider](policy-configuration-service-provider.md)

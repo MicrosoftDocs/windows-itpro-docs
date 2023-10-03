@@ -1,36 +1,51 @@
 ---
 title: Submit a support request
-description:  Details how to contact the Windows Autopatch Service Engineering Team and submit support requests
-ms.date: 05/30/2022
-ms.prod: w11
-ms.technology: windows
+description: Details how to contact the Windows Autopatch Service Engineering Team and submit support requests
+ms.date: 01/06/2023
+ms.prod: windows-client
+ms.technology: itpro-updates
 ms.topic: how-to
 ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
 manager: dougeby
-msreviewer: hathind
+ms.reviewer: hathind
+ms.collection:
+  - highpri
+  - tier1
 ---
 
 # Submit a support request
 
 > [!IMPORTANT]
-> Make sure you've [added and verified your admin contacts](../deploy/windows-autopatch-admin-contacts.md). The Windows Autopatch Service Engineering Team will contact these individuals for assistance with troubleshooting issues.
+> Make sure you've [added and verified your admin contacts](../deploy/windows-autopatch-admin-contacts.md). The Windows Autopatch Service Engineering Team will contact these individuals for assistance with remediating issues.
 
-You can submit support tickets to Microsoft using the Windows Autopatch admin center. Email is the recommended approach to interact with the Windows Autopatch Service Engineering Team.
-
-## Submit a new support request  
+## Submit a new support request
 
 Support requests are triaged and responded to as they're received.
 
 **To submit a new support request:**
 
-1. Sign into [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) and navigate to the **Tenant administration** menu.
+1. Sign into the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and navigate to the **Tenant administration** menu.
 1. In the **Windows Autopatch** section, select **Support requests**.
 1. In the **Support requests** section, select **+ New support request**.
 1. Enter your question(s) and/or a description of the problem.
 1. Review all the information you provided for accuracy.
 1. When you're ready, select **Create**.
+
+### Premier and Unified support options
+
+If you have a **Premier** or **Unified** support contract, when you submit a new request, or edit an active support request, you can:
+
+- Specify the severity of your issue
+- Schedule a support callback for a specific day and time
+
+Depending on your support contract, the following severity options are available:
+
+| Support contract | Severity options |
+| ----- | ----- |
+| Premier | Severity A, B or C |
+| Unified | Critical or non-critical |
 
 ## Manage an active support request
 
@@ -42,7 +57,7 @@ You can see the summary status of all your support requests. At any time, you ca
 
 **To view all your active support requests:**
 
-1. Sign into [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) and navigate to the **Tenant Administration** menu.
+1. Sign into the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and navigate to the **Tenant Administration** menu.
 1. In the **Windows Autopatch** section, select **Support request**.
 1. From this view, you can export the summary view or select any case to view the details.
 
@@ -52,7 +67,7 @@ You can edit support request details, for example, updating the primary case con
 
 **To edit support request details:**
 
-1. Sign into [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) and navigate to the **Tenant Administration** menu.
+1. Sign into the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and navigate to the **Tenant Administration** menu.
 1. In the **Windows Autopatch** section, select **Support request**.
 1. In the **Support requests** section, use the search bar or filters to find the case you want to edit.
 1. Select the case to open the request's details.

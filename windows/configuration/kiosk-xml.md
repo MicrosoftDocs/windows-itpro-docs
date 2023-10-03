@@ -3,11 +3,13 @@ title: Assigned Access configuration kiosk XML reference (Windows 10/11)
 description: Learn about the assigned access configuration (kiosk) for XML and XSD for kiosk device configuration in Windows 10/11.
 ms.reviewer: sybruckm
 manager: aaroncz
-ms.prod: w10
+ms.prod: windows-client
 author: lizgt2000
 ms.localizationpriority: medium
 ms.author: lizlong
 ms.topic: article
+ms.technology: itpro-configure
+ms.date: 12/31/2017
 ---
 
 # Assigned Access configuration (kiosk) XML reference
@@ -59,7 +61,7 @@ ms.topic: article
                               <!-- A link file is required for desktop applications to show on start layout, the link file can be placed under
                                    "%AllUsersProfile%\Microsoft\Windows\Start Menu\Programs" if the link file is shared for all users or
                                    "%AppData%\Microsoft\Windows\Start Menu\Programs" if the link file is for the specific user only 
-                                   see document https://docs.microsoft.com/windows/configuration/start-layout-xml-desktop
+                                   see document https://learn.microsoft.com/windows/configuration/start-layout-xml-desktop
                               -->
                               <!-- for inbox desktop applications, a link file might already exist and can be used directly -->
                               <start:DesktopApplicationTile Size="2x2" Column="2" Row="0" DesktopApplicationLinkPath="%AllUsersProfile%\Microsoft\Windows\Start Menu\Programs\Accessories\paint.lnk" />
@@ -192,7 +194,7 @@ This sample demonstrates that both UWP and Win32 apps can be configured to autom
                               <!-- A link file is required for desktop applications to show on start layout, the link file can be placed under
                                    "%AllUsersProfile%\Microsoft\Windows\Start Menu\Programs" if the link file is shared for all users or
                                    "%AppData%\Microsoft\Windows\Start Menu\Programs" if the link file is for the specific user only 
-                                   see document https://docs.microsoft.com/windows/configuration/start-layout-xml-desktop
+                                   see document https://learn.microsoft.com/windows/configuration/start-layout-xml-desktop
                               -->
                               <!-- for inbox desktop applications, a link file might already exist and can be used directly -->
                               <start:DesktopApplicationTile Size="2x2" Column="2" Row="0" DesktopApplicationLinkPath="%AllUsersProfile%\Microsoft\Windows\Start Menu\Programs\Accessories\paint.lnk" />
@@ -257,10 +259,8 @@ This sample demonstrates that both UWP and Win32 apps can be configured to autom
   xmlns:v4="http://schemas.microsoft.com/AssignedAccess/2021/config"
   >
   <Profiles>
-    <Profile Id="{AFF9DA33-AE89-4039-B646-3A5706E92957}">
-      <KioskModeApp v4:ClassicAppPath="%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe"
-        <KioskModeApp v4:ClassicAppPath="%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe"
-                                  v4:ClassicAppArguments="--no-first-run --kiosk-idle-timeout-minutes=5 --kiosk www.bing.com"/>
+    <Profile Id="{AFF9DA33-AE89-4039-B646-3A5706E92957}">      
+        <KioskModeApp v4:ClassicAppPath="%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe" v4:ClassicAppArguments="--no-first-run --kiosk-idle-timeout-minutes=5 --kiosk www.bing.com" />
         <v4:BreakoutSequence Key="Ctrl+A"/>
     </Profile>
   </Profiles>
@@ -313,7 +313,7 @@ This sample demonstrates that only a global profile is used, with no active user
                               <!-- A link file is required for desktop applications to show on start layout, the link file can be placed under
                                    "%AllUsersProfile%\Microsoft\Windows\Start Menu\Programs" if the link file is shared for all users or
                                    "%AppData%\Microsoft\Windows\Start Menu\Programs" if the link file is for the specific user only 
-                                   see document https://docs.microsoft.com/windows/configuration/start-layout-xml-desktop
+                                   see document https://learn.microsoft.com/windows/configuration/start-layout-xml-desktop
                               -->
                               <!-- for inbox desktop applications, a link file might already exist and can be used directly -->
                               <start:DesktopApplicationTile Size="2x2" Column="2" Row="0" DesktopApplicationLinkPath="%AllUsersProfile%\Microsoft\Windows\Start Menu\Programs\Accessories\paint.lnk" />
@@ -365,7 +365,7 @@ Below sample shows dedicated profile and global profile mixed usage, a user woul
                               <!-- A link file is required for desktop applications to show on start layout, the link file can be placed under
                                    "%AllUsersProfile%\Microsoft\Windows\Start Menu\Programs" if the link file is shared for all users or
                                    "%AppData%\Microsoft\Windows\Start Menu\Programs" if the link file is for the specific user only 
-                                   see document https://docs.microsoft.com/windows/configuration/start-layout-xml-desktop
+                                   see document https://learn.microsoft.com/windows/configuration/start-layout-xml-desktop
                               -->
                               <!-- for inbox desktop applications, a link file might already exist and can be used directly -->
                               <start:DesktopApplicationTile Size="2x2" Column="2" Row="0" DesktopApplicationLinkPath="%AllUsersProfile%\Microsoft\Windows\Start Menu\Programs\Accessories\paint.lnk" />

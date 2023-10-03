@@ -1,153 +1,161 @@
 ---
-title: Policy CSP - ADMX_MobilePCPresentationSettings
-description: Learn about Policy CSP - ADMX_MobilePCPresentationSettings.
-ms.author: vinpa
-ms.localizationpriority: medium
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
+title: ADMX_MobilePCPresentationSettings Policy CSP
+description: Learn more about the ADMX_MobilePCPresentationSettings Area in Policy CSP.
 author: vinaypamnani-msft
-ms.date: 09/20/2021
-ms.reviewer: 
 manager: aaroncz
+ms.author: vinpa
+ms.date: 08/10/2023
+ms.localizationpriority: medium
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ADMX_MobilePCPresentationSettings-Begin -->
 # Policy CSP - ADMX_MobilePCPresentationSettings
 
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
-<hr/>
+<!-- ADMX_MobilePCPresentationSettings-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ADMX_MobilePCPresentationSettings-Editable-End -->
 
-<!--Policies-->
-## ADMX_MobilePCPresentationSettings policies  
+<!-- PresentationSettingsEnable_1-Begin -->
+## PresentationSettingsEnable_1
 
-<dl>
-  <dd>
-    <a href="#admx-mobilepcpresentationsettings-presentationsettingsenable_1">ADMX_MobilePCPresentationSettings/PresentationSettingsEnable_1</a>
-  </dd>
-  <dd>
-    <a href="#admx-mobilepcpresentationsettings-presentationsettingsenable_2">ADMX_MobilePCPresentationSettings/PresentationSettingsEnable_2</a>
-  </dd>
-</dl>
+<!-- PresentationSettingsEnable_1-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- PresentationSettingsEnable_1-Applicability-End -->
 
-<hr/>
+<!-- PresentationSettingsEnable_1-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_MobilePCPresentationSettings/PresentationSettingsEnable_1
+```
+<!-- PresentationSettingsEnable_1-OmaUri-End -->
 
-<!--Policy-->
+<!-- PresentationSettingsEnable_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting turns off Windows presentation settings.
 
-<a href="" id="admx-mobilepcpresentationsettings-presentationsettingsenable_1"></a>**ADMX_MobilePCPresentationSettings/PresentationSettingsEnable_1**
+- If you enable this policy setting, Windows presentation settings can't be invoked.
 
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting turns off Windows presentation settings.  
-
-If you enable this policy setting, Windows presentation settings can't be invoked.  
-
-If you disable this policy setting, Windows presentation settings can be invoked. 
-
-The presentation settings icon will be displayed in the notification area. This will give users a quick and easy way to configure their system settings before a presentation to block system notifications and screen blanking, adjust speaker volume, and apply a custom background image.  
+- If you disable this policy setting, Windows presentation settings can be invoked. The presentation settings icon will be displayed in the notification area. This will give users a quick and easy way to configure their system settings before a presentation to block system notifications and screen blanking, adjust speaker volume, and apply a custom background image.
 
 > [!NOTE]
-> Users will be able to customize their system settings for presentations in Windows Mobility Center.  
-If you do not configure this policy setting, Windows presentation settings can be invoked.
+> Users will be able to customize their system settings for presentations in Windows Mobility Center.
 
+- If you don't configure this policy setting, Windows presentation settings can be invoked.
+<!-- PresentationSettingsEnable_1-Description-End -->
 
-<!--/Description-->
+<!-- PresentationSettingsEnable_1-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- PresentationSettingsEnable_1-Editable-End -->
 
+<!-- PresentationSettingsEnable_1-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Turn off Windows presentation settings*
--   GP name: *PresentationSettingsEnable_1*
--   GP path: *Windows Components\Presentation Settings*
--   GP ADMX file name: *MobilePCPresentationSettings.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- PresentationSettingsEnable_1-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- PresentationSettingsEnable_1-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-mobilepcpresentationsettings-presentationsettingsenable_2"></a>**ADMX_MobilePCPresentationSettings/PresentationSettingsEnable_2**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | PresentationSettingsEnable_1 |
+| Friendly Name | Turn off Windows presentation settings |
+| Location | User Configuration |
+| Path | Windows Components > Presentation Settings |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\PresentationSettings |
+| Registry Value Name | NoPresentationSettings |
+| ADMX File Name | MobilePCPresentationSettings.admx |
+<!-- PresentationSettingsEnable_1-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- PresentationSettingsEnable_1-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- PresentationSettingsEnable_1-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- PresentationSettingsEnable_1-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- PresentationSettingsEnable_2-Begin -->
+## PresentationSettingsEnable_2
 
-> [!div class = "checklist"]
-> * User
+<!-- PresentationSettingsEnable_2-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- PresentationSettingsEnable_2-Applicability-End -->
 
-<hr/>
+<!-- PresentationSettingsEnable_2-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_MobilePCPresentationSettings/PresentationSettingsEnable_2
+```
+<!-- PresentationSettingsEnable_2-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting turns off Windows presentation settings.  
+<!-- PresentationSettingsEnable_2-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting turns off Windows presentation settings.
 
-If you enable this policy setting, Windows presentation settings can't be invoked.  
+- If you enable this policy setting, Windows presentation settings can't be invoked.
 
-If you disable this policy setting, Windows presentation settings can be invoked. 
-
-The presentation settings icon will be displayed in the notification area. This will give users a quick and easy way to configure their system settings before a presentation to block system notifications and screen blanking, adjust speaker volume, and apply a custom background image.  
+- If you disable this policy setting, Windows presentation settings can be invoked. The presentation settings icon will be displayed in the notification area. This will give users a quick and easy way to configure their system settings before a presentation to block system notifications and screen blanking, adjust speaker volume, and apply a custom background image.
 
 > [!NOTE]
-> Users will be able to customize their system settings for presentations in Windows Mobility Center.  
+> Users will be able to customize their system settings for presentations in Windows Mobility Center.
 
-If you do not configure this policy setting, Windows presentation settings can be invoked.
+- If you don't configure this policy setting, Windows presentation settings can be invoked.
+<!-- PresentationSettingsEnable_2-Description-End -->
 
-<!--/Description-->
+<!-- PresentationSettingsEnable_2-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- PresentationSettingsEnable_2-Editable-End -->
 
+<!-- PresentationSettingsEnable_2-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Turn off Windows presentation settings*
--   GP name: *PresentationSettingsEnable_2*
--   GP path: *Windows Components\Presentation Settings*
--   GP ADMX file name: *MobilePCPresentationSettings.admx*
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- PresentationSettingsEnable_2-DFProperties-End -->
 
-<!--/Policies-->
+<!-- PresentationSettingsEnable_2-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-## Related topics
+**ADMX mapping**:
 
-[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)
+| Name | Value |
+|:--|:--|
+| Name | PresentationSettingsEnable_2 |
+| Friendly Name | Turn off Windows presentation settings |
+| Location | Computer Configuration |
+| Path | Windows Components > Presentation Settings |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\PresentationSettings |
+| Registry Value Name | NoPresentationSettings |
+| ADMX File Name | MobilePCPresentationSettings.admx |
+<!-- PresentationSettingsEnable_2-AdmxBacked-End -->
+
+<!-- PresentationSettingsEnable_2-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- PresentationSettingsEnable_2-Examples-End -->
+
+<!-- PresentationSettingsEnable_2-End -->
+
+<!-- ADMX_MobilePCPresentationSettings-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ADMX_MobilePCPresentationSettings-CspMoreInfo-End -->
+
+<!-- ADMX_MobilePCPresentationSettings-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

@@ -3,12 +3,13 @@ ms.mktglfcycl: deploy
 description: Use this guide to learn about the several options and processes you'll need to consider while you're planning for, deploying, and customizing Internet Explorer 11 for your employee's devices.
 author: dansimp
 ms.author: dansimp
-ms.prod: ie11
+ms.prod: windows-client
 ms.assetid: bddc2d97-c38d-45c5-9588-1f5bbff2e9c3
 title: Internet Explorer 11 (IE11) - Deployment Guide for IT Pros (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.localizationpriority: medium
 manager: dansimp
+ms.date: 02/24/2016
 ---
 
 

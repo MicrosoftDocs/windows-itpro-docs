@@ -1,26 +1,32 @@
 ---
-title: Policy CSP - UserRights
-description: Learn how user rights are assigned for user accounts or groups, and how the name of the policy defines the user right in question.
-ms.author: vinpa
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
+title: UserRights Policy CSP
+description: Learn more about the UserRights Area in Policy CSP.
 author: vinaypamnani-msft
-ms.localizationpriority: medium
-ms.date: 11/24/2021
-ms.reviewer: 
 manager: aaroncz
+ms.author: vinpa
+ms.date: 08/10/2023
+ms.localizationpriority: medium
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- UserRights-Begin -->
 # Policy CSP - UserRights
 
-<hr/>
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
-User rights are assigned for user accounts or groups. The name of the policy defines the user right in question, and the values are always users or groups. Values can be represented as SIDs or strings. For reference, see [Well-Known SID Structures](/openspecs/windows_protocols/ms-dtyp/81d92bba-d22b-4a8c-908a-554ab29148ab).
+<!-- UserRights-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+User rights are assigned for user accounts or groups. The name of the policy defines the user right in question, and the values are always users or groups. Values can be represented as Security Identifiers (SID) or strings. For more information, see [Well-known SID structures](/openspecs/windows_protocols/ms-dtyp/81d92bba-d22b-4a8c-908a-554ab29148ab).
 
 Even though strings are supported for well-known accounts and groups, it's better to use SIDs, because strings are localized for different languages. Some user rights allow things like AccessFromNetwork, while others disallow things, like DenyAccessFromNetwork.
 
-Here's an example for setting the user right BackupFilesAndDirectories for Administrators and Authenticated Users groups.
+## General example
+
+Here's an example for setting the user right [BackupFilesAndDirectories](#backupfilesanddirectories) for Administrators and Authenticated Users groups.
 
 ```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
@@ -44,1418 +50,2054 @@ Here's an example for setting the user right BackupFilesAndDirectories for Admin
 </SyncML>
 ```
 
-Here are examples of data fields. The encoded 0xF000 is the standard delimiter/separator.
+Here are examples of data fields. The encoded `0xF000` is the standard delimiter/separator.
 
 - Grant a user right to Administrators group via SID:
-   ```xml
-   <Data>*S-1-5-32-544</Data>
-   ```
- 
+
+  ```xml
+  <Data>*S-1-5-32-544</Data>
+  ```
+
 - Grant a user right to multiple groups (Administrators, Authenticated Users) via SID:
-   ```xml
-   <Data>*S-1-5-32-544&#xF000;*S-1-5-11</Data>
-   ```
+
+  ```xml
+  <Data>*S-1-5-32-544&#xF000;*S-1-5-11</Data>
+  ```
 
 - Grant a user right to multiple groups (Administrators, Authenticated Users) via a mix of SID and Strings:
-   ```xml
-   <Data>*S-1-5-32-544&#xF000;Authenticated Users</Data>
-   ```
- 
+
+  ```xml
+  <Data>*S-1-5-32-544&#xF000;Authenticated Users</Data>
+  ```
+
 - Grant a user right to multiple groups (Authenticated Users, Administrators) via strings:
-   ```xml
-   <Data>Authenticated Users&#xF000;Administrators</Data>
-   ```
+
+  ```xml
+  <Data>Authenticated Users&#xF000;Administrators</Data>
+  ```
 
 - Empty input indicates that there are no users configured to have that user right:
-   ```xml
-   <Data></Data>
-   ```
-   
-  If you use Intune custom profiles to assign UserRights policies, you must use the CDATA tag (`<![CDATA[...]]>`) to wrap the data fields. You can specify one or more user groups within the CDATA tag by using 0xF000 as the delimiter/separator.
+
+  ```xml
+  <Data></Data>
+  ```
+
+If you use Intune custom profiles to assign UserRights policies, you must use the CDATA tag (`<![CDATA[...]]>`) to wrap the data fields. You can specify one or more user groups within the CDATA tag by using `0xF000` as the delimiter/separator.
 
 > [!NOTE]
-> `&#xF000;` is the entity encoding of 0xF000.
+> `&#xF000;` is the entity encoding of `0xF000`.
 
-For example, the following syntax grants user rights to Authenticated Users and Replicator user groups.:
+For example, the following syntax grants user rights to Authenticated Users and Replicator user groups:
 
 ```xml
 <![CDATA[Authenticated Users&#xF000;Replicator]]>
 ```
 
-For example, the following syntax grants user rights to two specific Azure Active Directory (AAD) users from Contoso, user1 and user2:
+For example, the following syntax grants user rights to two specific Azure Active Directory (Azure AD) users from Contoso, user1 and user2:
 
 ```xml
 <![CDATA[AzureAD\user1@contoso.com&#xF000;AzureAD\user2@contoso.com]]>
 ```
 
-For example, the following syntax grants user rights to a specific user or group, by using the Security Identifier (SID) of the account or group:
+For example, the following syntax grants user rights to a specific user or group, by using the SID of the account or group:
 
 ```xml
 <![CDATA[*S-1-12-1-430441778-1204322964-3914475434-3271576427&#xF000;*S-1-12-1-2699785510-1240757380-4153857927-656075536]]>
 ```
+<!-- UserRights-Editable-End -->
 
-<hr/>
+<!-- AccessCredentialManagerAsTrustedCaller-Begin -->
+## AccessCredentialManagerAsTrustedCaller
 
-<!--Policies-->
-## UserRights policies
+<!-- AccessCredentialManagerAsTrustedCaller-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- AccessCredentialManagerAsTrustedCaller-Applicability-End -->
 
-<dl>
-  <dd>
-    <a href="#userrights-accesscredentialmanagerastrustedcaller">UserRights/AccessCredentialManagerAsTrustedCaller</a>
-  </dd>
-  <dd>
-    <a href="#userrights-accessfromnetwork">UserRights/AccessFromNetwork</a>
-  </dd>
-  <dd>
-    <a href="#userrights-actaspartoftheoperatingsystem">UserRights/ActAsPartOfTheOperatingSystem</a>
-  </dd>
-  <dd>
-    <a href="#userrights-allowlocallogon">UserRights/AllowLocalLogOn</a>
-  </dd>
-  <dd>
-    <a href="#userrights-backupfilesanddirectories">UserRights/BackupFilesAndDirectories</a>
-  </dd>
-  <dd>
-    <a href="#userrights-changesystemtime">UserRights/ChangeSystemTime</a>
-  </dd>
-  <dd>
-    <a href="#userrights-createglobalobjects">UserRights/CreateGlobalObjects</a>
-  </dd>
-  <dd>
-    <a href="#userrights-createpagefile">UserRights/CreatePageFile</a>
-  </dd>
-  <dd>
-    <a href="#userrights-createpermanentsharedobjects">UserRights/CreatePermanentSharedObjects</a>
-  </dd>
-  <dd>
-    <a href="#userrights-createsymboliclinks">UserRights/CreateSymbolicLinks</a>
-  </dd>
-  <dd>
-    <a href="#userrights-createtoken">UserRights/CreateToken</a>
-  </dd>
-  <dd>
-    <a href="#userrights-debugprograms">UserRights/DebugPrograms</a>
-  </dd>
-  <dd>
-    <a href="#userrights-denyaccessfromnetwork">UserRights/DenyAccessFromNetwork</a>
-  </dd>
-  <dd>
-    <a href="#userrights-denylocallogon">UserRights/DenyLocalLogOn</a>
-  </dd>
-  <dd>
-    <a href="#userrights-denyremotedesktopserviceslogon">UserRights/DenyRemoteDesktopServicesLogOn</a>
-  </dd>
-  <dd>
-    <a href="#userrights-enabledelegation">UserRights/EnableDelegation</a>
-  </dd>
-  <dd>
-    <a href="#userrights-generatesecurityaudits">UserRights/GenerateSecurityAudits</a>
-  </dd>
-  <dd>
-    <a href="#userrights-impersonateclient">UserRights/ImpersonateClient</a>
-  </dd>
-  <dd>
-    <a href="#userrights-increaseschedulingpriority">UserRights/IncreaseSchedulingPriority</a>
-  </dd>
-  <dd>
-    <a href="#userrights-loadunloaddevicedrivers">UserRights/LoadUnloadDeviceDrivers</a>
-  </dd>
-  <dd>
-    <a href="#userrights-lockmemory">UserRights/LockMemory</a>
-  </dd>
-  <dd>
-    <a href="#userrights-manageauditingandsecuritylog">UserRights/ManageAuditingAndSecurityLog</a>
-  </dd>
-  <dd>
-    <a href="#userrights-managevolume">UserRights/ManageVolume</a>
-  </dd>
-  <dd>
-    <a href="#userrights-modifyfirmwareenvironment">UserRights/ModifyFirmwareEnvironment</a>
-  </dd>
-  <dd>
-    <a href="#userrights-modifyobjectlabel">UserRights/ModifyObjectLabel</a>
-  </dd>
-  <dd>
-    <a href="#userrights-profilesingleprocess">UserRights/ProfileSingleProcess</a>
-  </dd>
-  <dd>
-    <a href="#userrights-remoteshutdown">UserRights/RemoteShutdown</a>
-  </dd>
-  <dd>
-    <a href="#userrights-restorefilesanddirectories">UserRights/RestoreFilesAndDirectories</a>
-  </dd>
-  <dd>
-    <a href="#userrights-takeownership">UserRights/TakeOwnership</a>
-  </dd>
-</dl>
+<!-- AccessCredentialManagerAsTrustedCaller-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/UserRights/AccessCredentialManagerAsTrustedCaller
+```
+<!-- AccessCredentialManagerAsTrustedCaller-OmaUri-End -->
 
+<!-- AccessCredentialManagerAsTrustedCaller-Description-Begin -->
+<!-- Description-Source-DDF -->
+This user right is used by Credential Manager during Backup/Restore. No accounts should've this privilege, as it's only assigned to Winlogon. Users' saved credentials might be compromised if this privilege is given to other entities.
+<!-- AccessCredentialManagerAsTrustedCaller-Description-End -->
 
-<hr/>
+<!-- AccessCredentialManagerAsTrustedCaller-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AccessCredentialManagerAsTrustedCaller-Editable-End -->
 
-<!--Policy-->
-<a href="" id="userrights-accesscredentialmanagerastrustedcaller"></a>**UserRights/AccessCredentialManagerAsTrustedCaller**
+<!-- AccessCredentialManagerAsTrustedCaller-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--SupportedSKUs-->
-The table below shows the applicability of Windows:
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `0xF000`) |
+<!-- AccessCredentialManagerAsTrustedCaller-DFProperties-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AccessCredentialManagerAsTrustedCaller-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | Access Credential Manager ase a trusted caller |
+| Path | Windows Settings > Security Settings > Local Policies > User Rights Assignment |
+<!-- AccessCredentialManagerAsTrustedCaller-GpMapping-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AccessCredentialManagerAsTrustedCaller-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AccessCredentialManagerAsTrustedCaller-Examples-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- AccessCredentialManagerAsTrustedCaller-End -->
 
-<hr/>
+<!-- AccessFromNetwork-Begin -->
+## AccessFromNetwork
 
-<!--/Scope-->
-<!--Description-->
-This user right is used by Credential Manager during Backup/Restore. No accounts should have this privilege, as it's only assigned to Winlogon. Users' saved credentials might be compromised if this privilege is given to other entities.
+<!-- AccessFromNetwork-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- AccessFromNetwork-Applicability-End -->
 
-<!--/Description-->
-<!--DbMapped-->
-GP Info:
--   GP Friendly name: *Access Credential Manager as a trusted caller*
--   GP path: *Windows Settings/Security Settings/Local Policies/User Rights Assignment*
+<!-- AccessFromNetwork-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/UserRights/AccessFromNetwork
+```
+<!-- AccessFromNetwork-OmaUri-End -->
 
-<!--/DbMapped-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="userrights-accessfromnetwork"></a>**UserRights/AccessFromNetwork**
-
-<!--SupportedSKUs-->
-The table below shows the applicability of Windows:
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This user right determines which users and groups are allowed to connect to the computer over the network. Remote Desktop Services isn't affected by this user right.
+<!-- AccessFromNetwork-Description-Begin -->
+<!-- Description-Source-DDF -->
+This user right determines which users and groups are allowed to connect to the computer over the network. Remote Desktop Services aren't affected by this user right.
 
 > [!NOTE]
 > Remote Desktop Services was called Terminal Services in previous versions of Windows Server.
+<!-- AccessFromNetwork-Description-End -->
 
-<!--/Description-->
-<!--DbMapped-->
-GP Info:
--   GP Friendly name: *Access this computer from the network*
--   GP path: *Windows Settings/Security Settings/Local Policies/User Rights Assignment*
+<!-- AccessFromNetwork-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AccessFromNetwork-Editable-End -->
 
-<!--/DbMapped-->
-<!--/Policy-->
+<!-- AccessFromNetwork-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `0xF000`) |
+<!-- AccessFromNetwork-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="userrights-actaspartoftheoperatingsystem"></a>**UserRights/ActAsPartOfTheOperatingSystem**
+<!-- AccessFromNetwork-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
-The table below shows the applicability of Windows:
+| Name | Value |
+|:--|:--|
+| Name | Access this computer from the network |
+| Path | Windows Settings > Security Settings > Local Policies > User Rights Assignment |
+<!-- AccessFromNetwork-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AccessFromNetwork-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AccessFromNetwork-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AccessFromNetwork-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ActAsPartOfTheOperatingSystem-Begin -->
+## ActAsPartOfTheOperatingSystem
 
-> [!div class = "checklist"]
-> * Device
+<!-- ActAsPartOfTheOperatingSystem-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- ActAsPartOfTheOperatingSystem-Applicability-End -->
 
-<hr/>
+<!-- ActAsPartOfTheOperatingSystem-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/UserRights/ActAsPartOfTheOperatingSystem
+```
+<!-- ActAsPartOfTheOperatingSystem-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- ActAsPartOfTheOperatingSystem-Description-Begin -->
+<!-- Description-Source-DDF -->
 This user right allows a process to impersonate any user without authentication. The process can therefore gain access to the same local resources as that user. Processes that require this privilege should use the LocalSystem account, which already includes this privilege, rather than using a separate user account with this privilege specially assigned.
 
 > [!CAUTION]
-> Assigning this user right can be a security risk. Assign this user right to trusted users only.
+> Assigning this user right can be a security risk. Only assign this user right to trusted users.
+<!-- ActAsPartOfTheOperatingSystem-Description-End -->
 
-<!--/Description-->
-<!--DbMapped-->
-GP Info:
--   GP Friendly name: *Act as part of the operating system*
--   GP path: *Windows Settings/Security Settings/Local Policies/User Rights Assignment*
+<!-- ActAsPartOfTheOperatingSystem-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ActAsPartOfTheOperatingSystem-Editable-End -->
 
-<!--/DbMapped-->
-<!--/Policy-->
+<!-- ActAsPartOfTheOperatingSystem-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `0xF000`) |
+<!-- ActAsPartOfTheOperatingSystem-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="userrights-allowlocallogon"></a>**UserRights/AllowLocalLogOn**
+<!-- ActAsPartOfTheOperatingSystem-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
-The table below shows the applicability of Windows:
+| Name | Value |
+|:--|:--|
+| Name | Act as part of the operating system |
+| Path | Windows Settings > Security Settings > Local Policies > User Rights Assignment |
+<!-- ActAsPartOfTheOperatingSystem-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- ActAsPartOfTheOperatingSystem-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ActAsPartOfTheOperatingSystem-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ActAsPartOfTheOperatingSystem-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowLocalLogOn-Begin -->
+## AllowLocalLogOn
 
-> [!div class = "checklist"]
-> * Device
+<!-- AllowLocalLogOn-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- AllowLocalLogOn-Applicability-End -->
 
-<hr/>
+<!-- AllowLocalLogOn-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/UserRights/AllowLocalLogOn
+```
+<!-- AllowLocalLogOn-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-This user right determines which users can sign in to the computer.
+<!-- AllowLocalLogOn-Description-Begin -->
+<!-- Description-Source-DDF -->
+This user right determines which users can log on to the computer.
 
 > [!NOTE]
-> Modifying this setting might affect compatibility with clients, services, and applications. For compatibility information about this setting, see [Allow log on locally](https://go.microsoft.com/fwlink/?LinkId=24268 ) at the Microsoft website.
+> Modifying this setting may affect compatibility with clients, services, and applications. For compatibility information about this setting, see Allow log on locally (https://go.microsoft.com/fwlink/?LinkId=24268 ) at the Microsoft website.
+<!-- AllowLocalLogOn-Description-End -->
 
-<!--/Description-->
-<!--DbMapped-->
-GP Info:
--   GP Friendly name: *Allow log on locally*
--   GP path: *Windows Settings/Security Settings/Local Policies/User Rights Assignment*
+<!-- AllowLocalLogOn-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowLocalLogOn-Editable-End -->
 
-<!--/DbMapped-->
-<!--/Policy-->
+<!-- AllowLocalLogOn-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `0xF000`) |
+<!-- AllowLocalLogOn-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="userrights-backupfilesanddirectories"></a>**UserRights/BackupFilesAndDirectories**
+<!-- AllowLocalLogOn-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
-The table below shows the applicability of Windows:
+| Name | Value |
+|:--|:--|
+| Name | Allow log on locally |
+| Path | Windows Settings > Security Settings > Local Policies > User Rights Assignment |
+<!-- AllowLocalLogOn-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AllowLocalLogOn-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowLocalLogOn-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowLocalLogOn-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- BackupFilesAndDirectories-Begin -->
+## BackupFilesAndDirectories
 
-> [!div class = "checklist"]
-> * Device
+<!-- BackupFilesAndDirectories-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- BackupFilesAndDirectories-Applicability-End -->
 
-<hr/>
+<!-- BackupFilesAndDirectories-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/UserRights/BackupFilesAndDirectories
+```
+<!-- BackupFilesAndDirectories-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-This user right determines which users can bypass file, directory, registry, and other persistent objects permissions when backing up files and directories. Specifically, this user right is similar to granting the following permissions to the user or group in question on all files and folders on the system: Traverse Folder/Execute File, Read.
+<!-- BackupFilesAndDirectories-Description-Begin -->
+<!-- Description-Source-DDF -->
+This user right determines which users can bypass file, directory, registry, and other persistent objects permissions when backing up files and directories. Specifically, this user right is similar to granting the following permissions to the user or group in question on all files and folders on the system:Traverse Folder/Execute File, Read.
 
 > [!CAUTION]
-> Assigning this user right can be a security risk. Since users with this user right can read any registry settings and files, assign this user right to trusted users only.
+> Assigning this user right can be a security risk. Since users with this user right can read any registry settings and files, only assign this user right to trusted users.
+<!-- BackupFilesAndDirectories-Description-End -->
 
-<!--/Description-->
-<!--DbMapped-->
-GP Info:
--   GP Friendly name: *Back up files and directories*
--   GP path: *Windows Settings/Security Settings/Local Policies/User Rights Assignment*
+<!-- BackupFilesAndDirectories-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- BackupFilesAndDirectories-Editable-End -->
 
-<!--/DbMapped-->
-<!--/Policy-->
+<!-- BackupFilesAndDirectories-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `0xF000`) |
+<!-- BackupFilesAndDirectories-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="userrights-changesystemtime"></a>**UserRights/ChangeSystemTime**
+<!-- BackupFilesAndDirectories-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
-The table below shows the applicability of Windows:
+| Name | Value |
+|:--|:--|
+| Name | Back up files and directories |
+| Path | Windows Settings > Security Settings > Local Policies > User Rights Assignment |
+<!-- BackupFilesAndDirectories-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- BackupFilesAndDirectories-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- BackupFilesAndDirectories-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- BackupFilesAndDirectories-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- BypassTraverseChecking-Begin -->
+## BypassTraverseChecking
 
-> [!div class = "checklist"]
-> * Device
+<!-- BypassTraverseChecking-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- BypassTraverseChecking-Applicability-End -->
 
-<hr/>
+<!-- BypassTraverseChecking-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/UserRights/BypassTraverseChecking
+```
+<!-- BypassTraverseChecking-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- BypassTraverseChecking-Description-Begin -->
+<!-- Description-Source-DDF -->
+This user right determines which users can traverse directory trees even though the user may not have permissions on the traversed directory. This privilege doesn't allow the user to list the contents of a directory, only to traverse directories.
+<!-- BypassTraverseChecking-Description-End -->
+
+<!-- BypassTraverseChecking-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- BypassTraverseChecking-Editable-End -->
+
+<!-- BypassTraverseChecking-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `0xF000`) |
+<!-- BypassTraverseChecking-DFProperties-End -->
+
+<!-- BypassTraverseChecking-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Bypass traverse checking |
+| Path | Windows Settings > Security Settings > Local Policies > User Rights Assignment |
+<!-- BypassTraverseChecking-GpMapping-End -->
+
+<!-- BypassTraverseChecking-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- BypassTraverseChecking-Examples-End -->
+
+<!-- BypassTraverseChecking-End -->
+
+<!-- ChangeSystemTime-Begin -->
+## ChangeSystemTime
+
+<!-- ChangeSystemTime-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- ChangeSystemTime-Applicability-End -->
+
+<!-- ChangeSystemTime-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/UserRights/ChangeSystemTime
+```
+<!-- ChangeSystemTime-OmaUri-End -->
+
+<!-- ChangeSystemTime-Description-Begin -->
+<!-- Description-Source-DDF -->
 This user right determines which users and groups can change the time and date on the internal clock of the computer. Users that are assigned this user right can affect the appearance of event logs. If the system time is changed, events that are logged will reflect this new time, not the actual time that the events occurred.
+<!-- ChangeSystemTime-Description-End -->
+
+<!-- ChangeSystemTime-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
 > [!CAUTION]
-> Configuring user rights replaces existing users or groups previously assigned to those user rights. The system requires that Local Service account (SID S-1-5-19) always has the ChangeSystemTime right. Therefore, Local Service must always be specified in addition to any other accounts being configured in this policy.
-> 
-> Not including the Local Service account will result in failure with the following error:
-> 
-> | Error code  | Symbolic name | Error description | Header |
-> |----------|----------|----------|----------|
-> |  0x80070032 (Hex)|ERROR_NOT_SUPPORTED|The request isn't supported.|  winerror.h  |
+> When you configure user rights, it replaces existing users or groups that were previously assigned to those user rights. The system requires that the **Local Service** account (SID `S-1-5-19`) always has the ChangeSystemTime right. Always specify **Local Service**, in addition to any other accounts that you need to configure in this policy.
+>
+> If you don't include the **Local Service** account, the request fails with the following error:
+>
+> | Error code         | Symbolic name       | Error description            | Header     |
+> |--------------------|---------------------|------------------------------|------------|
+> | `0x80070032` (Hex) | ERROR_NOT_SUPPORTED | The request isn't supported. | winerror.h |
+<!-- ChangeSystemTime-Editable-End -->
 
-<!--/Description-->
-<!--DbMapped-->
-GP Info:
--   GP Friendly name: *Change the system time*
--   GP path: *Windows Settings/Security Settings/Local Policies/User Rights Assignment*
+<!-- ChangeSystemTime-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/DbMapped-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `0xF000`) |
+<!-- ChangeSystemTime-DFProperties-End -->
 
-<hr/>
+<!-- ChangeSystemTime-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--Policy-->
-<a href="" id="userrights-createglobalobjects"></a>**UserRights/CreateGlobalObjects**
+| Name | Value |
+|:--|:--|
+| Name | Change the system time |
+| Path | Windows Settings > Security Settings > Local Policies > User Rights Assignment |
+<!-- ChangeSystemTime-GpMapping-End -->
 
-<!--SupportedSKUs-->
-The table below shows the applicability of Windows:
+<!-- ChangeSystemTime-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ChangeSystemTime-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- ChangeSystemTime-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ChangeTimeZone-Begin -->
+## ChangeTimeZone
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ChangeTimeZone-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- ChangeTimeZone-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- ChangeTimeZone-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/UserRights/ChangeTimeZone
+```
+<!-- ChangeTimeZone-OmaUri-End -->
 
-<hr/>
+<!-- ChangeTimeZone-Description-Begin -->
+<!-- Description-Source-DDF -->
+This user right determines which users and groups can change the time zone used by the computer for displaying the local time, which is the computer's system time plus the time zone offset. System time itself is absolute and isn't affected by a change in the time zone.
+<!-- ChangeTimeZone-Description-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- ChangeTimeZone-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ChangeTimeZone-Editable-End -->
+
+<!-- ChangeTimeZone-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `0xF000`) |
+<!-- ChangeTimeZone-DFProperties-End -->
+
+<!-- ChangeTimeZone-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Change the time zone |
+| Path | Windows Settings > Security Settings > Local Policies > User Rights Assignment |
+<!-- ChangeTimeZone-GpMapping-End -->
+
+<!-- ChangeTimeZone-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ChangeTimeZone-Examples-End -->
+
+<!-- ChangeTimeZone-End -->
+
+<!-- CreateGlobalObjects-Begin -->
+## CreateGlobalObjects
+
+<!-- CreateGlobalObjects-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- CreateGlobalObjects-Applicability-End -->
+
+<!-- CreateGlobalObjects-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/UserRights/CreateGlobalObjects
+```
+<!-- CreateGlobalObjects-OmaUri-End -->
+
+<!-- CreateGlobalObjects-Description-Begin -->
+<!-- Description-Source-DDF -->
 This security setting determines whether users can create global objects that are available to all sessions. Users can still create objects that are specific to their own session if they don't have this user right. Users who can create global objects could affect processes that run under other users' sessions, which could lead to application failure or data corruption.
 
 > [!CAUTION]
-> Assigning this user right can be a security risk. Assign this user right to trusted users only.
+> Assigning this user right can be a security risk. Assign this user right only to trusted users.
+<!-- CreateGlobalObjects-Description-End -->
 
-<!--/Description-->
-<!--DbMapped-->
-GP Info:
--   GP Friendly name: *Create global objects*
--   GP path: *Windows Settings/Security Settings/Local Policies/User Rights Assignment*
+<!-- CreateGlobalObjects-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- CreateGlobalObjects-Editable-End -->
 
-<!--/DbMapped-->
-<!--/Policy-->
+<!-- CreateGlobalObjects-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `0xF000`) |
+<!-- CreateGlobalObjects-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="userrights-createpagefile"></a>**UserRights/CreatePageFile**
+<!-- CreateGlobalObjects-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
-The table below shows the applicability of Windows:
+| Name | Value |
+|:--|:--|
+| Name | Create global objects |
+| Path | Windows Settings > Security Settings > Local Policies > User Rights Assignment |
+<!-- CreateGlobalObjects-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- CreateGlobalObjects-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- CreateGlobalObjects-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- CreateGlobalObjects-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- CreatePageFile-Begin -->
+## CreatePageFile
 
-> [!div class = "checklist"]
-> * Device
+<!-- CreatePageFile-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- CreatePageFile-Applicability-End -->
 
-<hr/>
+<!-- CreatePageFile-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/UserRights/CreatePageFile
+```
+<!-- CreatePageFile-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- CreatePageFile-Description-Begin -->
+<!-- Description-Source-DDF -->
 This user right determines which users and groups can call an internal application programming interface (API) to create and change the size of a page file. This user right is used internally by the operating system and usually doesn't need to be assigned to any users.
+<!-- CreatePageFile-Description-End -->
 
-<!--/Description-->
-<!--DbMapped-->
-GP Info:
--   GP Friendly name: *Create a pagefile*
--   GP path: *Windows Settings/Security Settings/Local Policies/User Rights Assignment*
+<!-- CreatePageFile-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- CreatePageFile-Editable-End -->
 
-<!--/DbMapped-->
-<!--/Policy-->
+<!-- CreatePageFile-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `0xF000`) |
+<!-- CreatePageFile-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="userrights-createpermanentsharedobjects"></a>**UserRights/CreatePermanentSharedObjects**
+<!-- CreatePageFile-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
-The table below shows the applicability of Windows:
+| Name | Value |
+|:--|:--|
+| Name | Create a pagefile |
+| Path | Windows Settings > Security Settings > Local Policies > User Rights Assignment |
+<!-- CreatePageFile-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- CreatePageFile-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- CreatePageFile-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- CreatePageFile-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- CreatePermanentSharedObjects-Begin -->
+## CreatePermanentSharedObjects
 
-> [!div class = "checklist"]
-> * Device
+<!-- CreatePermanentSharedObjects-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- CreatePermanentSharedObjects-Applicability-End -->
 
-<hr/>
+<!-- CreatePermanentSharedObjects-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/UserRights/CreatePermanentSharedObjects
+```
+<!-- CreatePermanentSharedObjects-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-This user right determines which accounts can be used by processes to create a directory object using the object manager. This user right is used internally by the operating system and is useful to kernel-mode components that extend the object namespace. Because components that are running in kernel mode already have this user right assigned to them, it's not necessary to specifically assign it.
+<!-- CreatePermanentSharedObjects-Description-Begin -->
+<!-- Description-Source-DDF -->
+This user right determines which accounts can be used by processes to create a directory object using the object manager. This user right is used internally by the operating system and is useful to kernel-mode components that extend the object namespace. Because components that are running in kernel mode already have this user right assigned to them, it isn't necessary to specifically assign it.
+<!-- CreatePermanentSharedObjects-Description-End -->
 
-<!--/Description-->
-<!--DbMapped-->
-GP Info:
--   GP Friendly name: *Create permanent shared objects*
--   GP path: *Windows Settings/Security Settings/Local Policies/User Rights Assignment*
+<!-- CreatePermanentSharedObjects-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- CreatePermanentSharedObjects-Editable-End -->
 
-<!--/DbMapped-->
-<!--/Policy-->
+<!-- CreatePermanentSharedObjects-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `0xF000`) |
+<!-- CreatePermanentSharedObjects-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="userrights-createsymboliclinks"></a>**UserRights/CreateSymbolicLinks**
+<!-- CreatePermanentSharedObjects-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
-The table below shows the applicability of Windows:
+| Name | Value |
+|:--|:--|
+| Name | Create permanent shared objects |
+| Path | Windows Settings > Security Settings > Local Policies > User Rights Assignment |
+<!-- CreatePermanentSharedObjects-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- CreatePermanentSharedObjects-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- CreatePermanentSharedObjects-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- CreatePermanentSharedObjects-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- CreateSymbolicLinks-Begin -->
+## CreateSymbolicLinks
 
-> [!div class = "checklist"]
-> * Device
+<!-- CreateSymbolicLinks-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- CreateSymbolicLinks-Applicability-End -->
 
-<hr/>
+<!-- CreateSymbolicLinks-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/UserRights/CreateSymbolicLinks
+```
+<!-- CreateSymbolicLinks-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-This user right determines if the user can create a symbolic link from the computer they're signed in to.
+<!-- CreateSymbolicLinks-Description-Begin -->
+<!-- Description-Source-DDF -->
+This user right determines if the user can create a symbolic link from the computer he is logged-on to.
 
 > [!CAUTION]
-> This privilege should be given to trusted users only. Symbolic links can expose security vulnerabilities in applications that aren't designed to handle them.
+> This privilege should only be given to trusted users. Symbolic links can expose security vulnerabilities in applications that aren't designed to handle them.
 
 > [!NOTE]
-> This setting can be used in conjunction with a symlink filesystem setting that can be manipulated with the command line utility to control the kinds of symlinks that are allowed on the machine. Type 'fsutil behavior set symlinkevaluation /?' at the command line to get more information about fsutil and symbolic links.
+> This setting can be used in conjunction a symlink filesystem setting that can be manipulated with the command line utility to control the kinds of symlinks that are allowed on the machine. Type 'fsutil behavior set symlinkevaluation /?' at the command line to get more information about fsutil and symbolic links.
+<!-- CreateSymbolicLinks-Description-End -->
 
-<!--/Description-->
-<!--DbMapped-->
-GP Info:
--   GP Friendly name: *Create symbolic links*
--   GP path: *Windows Settings/Security Settings/Local Policies/User Rights Assignment*
+<!-- CreateSymbolicLinks-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- CreateSymbolicLinks-Editable-End -->
 
-<!--/DbMapped-->
-<!--/Policy-->
+<!-- CreateSymbolicLinks-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `0xF000`) |
+<!-- CreateSymbolicLinks-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="userrights-createtoken"></a>**UserRights/CreateToken**
+<!-- CreateSymbolicLinks-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
-The table below shows the applicability of Windows:
+| Name | Value |
+|:--|:--|
+| Name | Create symbolic links |
+| Path | Windows Settings > Security Settings > Local Policies > User Rights Assignment |
+<!-- CreateSymbolicLinks-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- CreateSymbolicLinks-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- CreateSymbolicLinks-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- CreateSymbolicLinks-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- CreateToken-Begin -->
+## CreateToken
 
-> [!div class = "checklist"]
-> * Device
+<!-- CreateToken-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- CreateToken-Applicability-End -->
 
-<hr/>
+<!-- CreateToken-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/UserRights/CreateToken
+```
+<!-- CreateToken-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- CreateToken-Description-Begin -->
+<!-- Description-Source-DDF -->
 This user right determines which accounts can be used by processes to create a token that can then be used to get access to any local resources when the process uses an internal application programming interface (API) to create an access token. This user right is used internally by the operating system. Unless it's necessary, don't assign this user right to a user, group, or process other than Local System.
 
 > [!CAUTION]
 > Assigning this user right can be a security risk. Don't assign this user right to any user, group, or process that you don't want to take over the system.
+<!-- CreateToken-Description-End -->
 
-<!--/Description-->
-<!--DbMapped-->
-GP Info:
--   GP Friendly name: *Create a token object*
--   GP path: *Windows Settings/Security Settings/Local Policies/User Rights Assignment*
+<!-- CreateToken-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- CreateToken-Editable-End -->
 
-<!--/DbMapped-->
-<!--/Policy-->
+<!-- CreateToken-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `0xF000`) |
+<!-- CreateToken-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="userrights-debugprograms"></a>**UserRights/DebugPrograms**
+<!-- CreateToken-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
-The table below shows the applicability of Windows:
+| Name | Value |
+|:--|:--|
+| Name | Create a token object |
+| Path | Windows Settings > Security Settings > Local Policies > User Rights Assignment |
+<!-- CreateToken-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- CreateToken-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- CreateToken-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- CreateToken-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DebugPrograms-Begin -->
+## DebugPrograms
 
-> [!div class = "checklist"]
-> * Device
+<!-- DebugPrograms-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- DebugPrograms-Applicability-End -->
 
-<hr/>
+<!-- DebugPrograms-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/UserRights/DebugPrograms
+```
+<!-- DebugPrograms-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- DebugPrograms-Description-Begin -->
+<!-- Description-Source-DDF -->
 This user right determines which users can attach a debugger to any process or to the kernel. Developers who are debugging their own applications don't need to be assigned this user right. Developers who are debugging new system components will need this user right to be able to do so. This user right provides complete access to sensitive and critical operating system components.
 
 > [!CAUTION]
-> Assigning this user right can be a security risk. Assign this user right to trusted users only.
+> Assigning this user right can be a security risk. Only assign this user right to trusted users.
+<!-- DebugPrograms-Description-End -->
 
-<!--/Description-->
-<!--DbMapped-->
-GP Info:
--   GP Friendly name: *Debug programs*
--   GP path: *Windows Settings/Security Settings/Local Policies/User Rights Assignment*
+<!-- DebugPrograms-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DebugPrograms-Editable-End -->
 
-<!--/DbMapped-->
-<!--/Policy-->
+<!-- DebugPrograms-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `0xF000`) |
+<!-- DebugPrograms-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="userrights-denyaccessfromnetwork"></a>**UserRights/DenyAccessFromNetwork**
+<!-- DebugPrograms-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
-The table below shows the applicability of Windows:
+| Name | Value |
+|:--|:--|
+| Name | Debug programs |
+| Path | Windows Settings > Security Settings > Local Policies > User Rights Assignment |
+<!-- DebugPrograms-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- DebugPrograms-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DebugPrograms-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DebugPrograms-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DenyAccessFromNetwork-Begin -->
+## DenyAccessFromNetwork
 
-> [!div class = "checklist"]
-> * Device
+<!-- DenyAccessFromNetwork-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- DenyAccessFromNetwork-Applicability-End -->
 
-<hr/>
+<!-- DenyAccessFromNetwork-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/UserRights/DenyAccessFromNetwork
+```
+<!-- DenyAccessFromNetwork-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-This user right determines which users are prevented from accessing a computer over the network. This policy setting supersedes the Access to this computer from the network policy setting if a user account is subject to both policies.
+<!-- DenyAccessFromNetwork-Description-Begin -->
+<!-- Description-Source-DDF -->
+This user right determines which users are prevented from accessing a computer over the network. This policy setting supersedes the Access this computer from the network policy setting if a user account is subject to both policies.
+<!-- DenyAccessFromNetwork-Description-End -->
 
-<!--/Description-->
-<!--DbMapped-->
-GP Info:
--   GP Friendly name: *Deny access to this computer from the network*
--   GP path: *Windows Settings/Security Settings/Local Policies/User Rights Assignment*
+<!-- DenyAccessFromNetwork-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DenyAccessFromNetwork-Editable-End -->
 
-<!--/DbMapped-->
-<!--/Policy-->
+<!-- DenyAccessFromNetwork-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `0xF000`) |
+<!-- DenyAccessFromNetwork-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="userrights-denylocallogon"></a>**UserRights/DenyLocalLogOn**
+<!-- DenyAccessFromNetwork-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
-The table below shows the applicability of Windows:
+| Name | Value |
+|:--|:--|
+| Name | Deny access to this computer from the network |
+| Path | Windows Settings > Security Settings > Local Policies > User Rights Assignment |
+<!-- DenyAccessFromNetwork-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- DenyAccessFromNetwork-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DenyAccessFromNetwork-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DenyAccessFromNetwork-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DenyLocalLogOn-Begin -->
+## DenyLocalLogOn
 
-> [!div class = "checklist"]
-> * Device
+<!-- DenyLocalLogOn-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- DenyLocalLogOn-Applicability-End -->
 
-<hr/>
+<!-- DenyLocalLogOn-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/UserRights/DenyLocalLogOn
+```
+<!-- DenyLocalLogOn-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-This security setting determines which users are prevented from logging on to the computer. This policy setting supersedes the **Allow log on locally** policy setting if an account is subject to both policies.
+<!-- DenyLocalLogOn-Description-Begin -->
+<!-- Description-Source-DDF -->
+This security setting determines which service accounts are prevented from registering a process as a service.
 
 > [!NOTE]
-> If you apply this security policy to the **Everyone** group, no one will be able to log on locally.
+> This security setting doesn't apply to the System, Local Service, or Network Service accounts.
+<!-- DenyLocalLogOn-Description-End -->
 
-<!--/Description-->
-<!--DbMapped-->
-GP Info:
--   GP Friendly name: *Deny log on Locally*
--   GP path: *Windows Settings/Security Settings/Local Policies/User Rights Assignment*
+<!-- DenyLocalLogOn-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- KNOWN ISSUE: DenyLocalLogOn policy section from DDF has strings for 'Deny log on as a service'-->
+<!-- DenyLocalLogOn-Editable-End -->
 
-<!--/DbMapped-->
-<!--/Policy-->
+<!-- DenyLocalLogOn-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `0xF000`) |
+<!-- DenyLocalLogOn-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="userrights-denyremotedesktopserviceslogon"></a>**UserRights/DenyRemoteDesktopServicesLogOn**
+<!-- DenyLocalLogOn-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
-The table below shows the applicability of Windows:
+| Name | Value |
+|:--|:--|
+| Name | Deny log on as a service |
+| Path | Windows Settings > Security Settings > Local Policies > User Rights Assignment |
+<!-- DenyLocalLogOn-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- DenyLocalLogOn-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DenyLocalLogOn-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DenyLocalLogOn-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DenyLogOnAsBatchJob-Begin -->
+## DenyLogOnAsBatchJob
 
-> [!div class = "checklist"]
-> * Device
+<!-- DenyLogOnAsBatchJob-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- DenyLogOnAsBatchJob-Applicability-End -->
 
-<hr/>
+<!-- DenyLogOnAsBatchJob-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/UserRights/DenyLogOnAsBatchJob
+```
+<!-- DenyLogOnAsBatchJob-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-This user right determines which users and groups are prohibited from logging on as Remote Desktop Services clients.
+<!-- DenyLogOnAsBatchJob-Description-Begin -->
+<!-- Description-Source-DDF -->
+This security setting determines which accounts are prevented from being able to log on as a batch job. This policy setting supersedes the Log on as a batch job policy setting if a user account is subject to both policies.
+<!-- DenyLogOnAsBatchJob-Description-End -->
 
-<!--/Description-->
-<!--DbMapped-->
-GP Info:
--   GP Friendly name: *Deny log on through Remote Desktop Services*
--   GP path: *Windows Settings/Security Settings/Local Policies/User Rights Assignment*
+<!-- DenyLogOnAsBatchJob-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DenyLogOnAsBatchJob-Editable-End -->
 
-<!--/DbMapped-->
-<!--/Policy-->
+<!-- DenyLogOnAsBatchJob-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `0xF000`) |
+<!-- DenyLogOnAsBatchJob-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="userrights-enabledelegation"></a>**UserRights/EnableDelegation**
+<!-- DenyLogOnAsBatchJob-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
-The table below shows the applicability of Windows:
+| Name | Value |
+|:--|:--|
+| Name | Deny log on as a batch job |
+| Path | Windows Settings > Security Settings > Local Policies > User Rights Assignment |
+<!-- DenyLogOnAsBatchJob-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- DenyLogOnAsBatchJob-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DenyLogOnAsBatchJob-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DenyLogOnAsBatchJob-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DenyLogOnAsService-Begin -->
+## DenyLogOnAsService
 
-> [!div class = "checklist"]
-> * Device
+<!-- DenyLogOnAsService-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- DenyLogOnAsService-Applicability-End -->
 
-<hr/>
+<!-- DenyLogOnAsService-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/UserRights/DenyLogOnAsService
+```
+<!-- DenyLogOnAsService-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-This user right determines which users can set the Trusted for Delegation setting on a user or computer object. The user or object that is granted this privilege must have write access to the account control flags on the user or computer object. A server process running on a computer (or under a user context) that is trusted for delegation can access resources on another computer using delegated credentials of a client, as long as the client account doesn't have the Account can't be delegated account control flag set.
+<!-- DenyLogOnAsService-Description-Begin -->
+<!-- Description-Source-DDF -->
+Deny log on as a service -This security setting determines which service accounts are prevented from registering a process as a service. This policy setting supersedes the Log on as a service policy setting if an account is subject to both policies.
+
+> [!NOTE]
+> This security setting doesn't apply to the System, Local Service, or Network Service accounts. Default: None.
+<!-- DenyLogOnAsService-Description-End -->
+
+<!-- DenyLogOnAsService-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DenyLogOnAsService-Editable-End -->
+
+<!-- DenyLogOnAsService-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `0xF000`) |
+<!-- DenyLogOnAsService-DFProperties-End -->
+
+<!-- DenyLogOnAsService-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Deny log on as a service |
+| Path | Windows Settings > Security Settings > Local Policies > User Rights Assignment |
+<!-- DenyLogOnAsService-GpMapping-End -->
+
+<!-- DenyLogOnAsService-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DenyLogOnAsService-Examples-End -->
+
+<!-- DenyLogOnAsService-End -->
+
+<!-- DenyRemoteDesktopServicesLogOn-Begin -->
+## DenyRemoteDesktopServicesLogOn
+
+<!-- DenyRemoteDesktopServicesLogOn-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- DenyRemoteDesktopServicesLogOn-Applicability-End -->
+
+<!-- DenyRemoteDesktopServicesLogOn-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/UserRights/DenyRemoteDesktopServicesLogOn
+```
+<!-- DenyRemoteDesktopServicesLogOn-OmaUri-End -->
+
+<!-- DenyRemoteDesktopServicesLogOn-Description-Begin -->
+<!-- Description-Source-DDF -->
+This user right determines which users and groups are prohibited from logging on as a Remote Desktop Services client.
+<!-- DenyRemoteDesktopServicesLogOn-Description-End -->
+
+<!-- DenyRemoteDesktopServicesLogOn-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DenyRemoteDesktopServicesLogOn-Editable-End -->
+
+<!-- DenyRemoteDesktopServicesLogOn-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `0xF000`) |
+<!-- DenyRemoteDesktopServicesLogOn-DFProperties-End -->
+
+<!-- DenyRemoteDesktopServicesLogOn-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Deny log on through Remote Desktop Services |
+| Path | Windows Settings > Security Settings > Local Policies > User Rights Assignment |
+<!-- DenyRemoteDesktopServicesLogOn-GpMapping-End -->
+
+<!-- DenyRemoteDesktopServicesLogOn-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DenyRemoteDesktopServicesLogOn-Examples-End -->
+
+<!-- DenyRemoteDesktopServicesLogOn-End -->
+
+<!-- EnableDelegation-Begin -->
+## EnableDelegation
+
+<!-- EnableDelegation-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- EnableDelegation-Applicability-End -->
+
+<!-- EnableDelegation-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/UserRights/EnableDelegation
+```
+<!-- EnableDelegation-OmaUri-End -->
+
+<!-- EnableDelegation-Description-Begin -->
+<!-- Description-Source-DDF -->
+This user right determines which users can set the Trusted for Delegation setting on a user or computer object. The user or object that's granted this privilege must have write access to the account control flags on the user or computer object. A server process running on a computer (or under a user context) that's trusted for delegation can access resources on another computer using delegated credentials of a client, as long as the client account doesn't have the Account can't be delegated account control flag set.
 
 > [!CAUTION]
 > Misuse of this user right, or of the Trusted for Delegation setting, could make the network vulnerable to sophisticated attacks using Trojan horse programs that impersonate incoming clients and use their credentials to gain access to network resources.
+<!-- EnableDelegation-Description-End -->
 
-<!--/Description-->
-<!--DbMapped-->
-GP Info:
--   GP Friendly name: *Enable computer and user accounts to be trusted for delegation*
--   GP path: *Windows Settings/Security Settings/Local Policies/User Rights Assignment*
+<!-- EnableDelegation-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- EnableDelegation-Editable-End -->
 
-<!--/DbMapped-->
-<!--/Policy-->
+<!-- EnableDelegation-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `0xF000`) |
+<!-- EnableDelegation-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="userrights-generatesecurityaudits"></a>**UserRights/GenerateSecurityAudits**
+<!-- EnableDelegation-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
-The table below shows the applicability of Windows:
+| Name | Value |
+|:--|:--|
+| Name | Enable computer and user accounts to be trusted for delegation |
+| Path | Windows Settings > Security Settings > Local Policies > User Rights Assignment |
+<!-- EnableDelegation-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- EnableDelegation-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- EnableDelegation-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- EnableDelegation-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- GenerateSecurityAudits-Begin -->
+## GenerateSecurityAudits
 
-> [!div class = "checklist"]
-> * Device
+<!-- GenerateSecurityAudits-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- GenerateSecurityAudits-Applicability-End -->
 
-<hr/>
+<!-- GenerateSecurityAudits-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/UserRights/GenerateSecurityAudits
+```
+<!-- GenerateSecurityAudits-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- GenerateSecurityAudits-Description-Begin -->
+<!-- Description-Source-DDF -->
 This user right determines which accounts can be used by a process to add entries to the security log. The security log is used to trace unauthorized system access. Misuse of this user right can result in the generation of many auditing events, potentially hiding evidence of an attack or causing a denial of service. Shut down system immediately if unable to log security audits security policy setting is enabled.
+<!-- GenerateSecurityAudits-Description-End -->
 
-<!--/Description-->
-<!--DbMapped-->
-GP Info:
--   GP Friendly name: *Generate security audits*
--   GP path: *Windows Settings/Security Settings/Local Policies/User Rights Assignment*
+<!-- GenerateSecurityAudits-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- GenerateSecurityAudits-Editable-End -->
 
-<!--/DbMapped-->
-<!--/Policy-->
+<!-- GenerateSecurityAudits-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `0xF000`) |
+<!-- GenerateSecurityAudits-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="userrights-impersonateclient"></a>**UserRights/ImpersonateClient**
+<!-- GenerateSecurityAudits-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
-The table below shows the applicability of Windows:
+| Name | Value |
+|:--|:--|
+| Name | Generate security audits |
+| Path | Windows Settings > Security Settings > Local Policies > User Rights Assignment |
+<!-- GenerateSecurityAudits-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- GenerateSecurityAudits-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- GenerateSecurityAudits-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- GenerateSecurityAudits-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ImpersonateClient-Begin -->
+## ImpersonateClient
 
-> [!div class = "checklist"]
-> * Device
+<!-- ImpersonateClient-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- ImpersonateClient-Applicability-End -->
 
-<hr/>
+<!-- ImpersonateClient-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/UserRights/ImpersonateClient
+```
+<!-- ImpersonateClient-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Assigning this user right to a user allows programs running on behalf of that user to impersonate a client. Requiring this user right for this kind of impersonation prevents an unauthorized user from convincing a client to connect (for example, by remote procedure call (RPC) or named pipes) to a service that they have created and then impersonating that client, which can elevate the unauthorized user's permissions to administrative or system levels.
+<!-- ImpersonateClient-Description-Begin -->
+<!-- Description-Source-DDF -->
+Assigning this user right to a user allows programs running on behalf of that user to impersonate a client. Requiring this user right for this kind of impersonation prevents an unauthorized user from convincing a client to connect (for example, by remote procedure call (RPC) or named pipes) to a service that they've created and then impersonating that client, which can elevate the unauthorized user's permissions to administrative or system levels.
 
 > [!CAUTION]
-> Assigning this user right can be a security risk. Assign this user right to trusted users only.
+> Assigning this user right can be a security risk. Only assign this user right to trusted users.
 
 > [!NOTE]
-> By default, services that are started by the Service Control Manager have the built-in Service group added to their access tokens. Component Object Model (COM) servers that are started by the COM infrastructure and that are configured to run under a specific account also have the Service group added to their access tokens. As a result, these services get this user right when they are started. In addition, a user can also impersonate an access token if any of the following conditions exist. 
-
-1. The access token that is being impersonated is for this user.
-1. The user, in this sign-in session, created the access token by signing in to the network with explicit credentials.
-1. The requested level is less than Impersonate, such as Anonymous or Identify.
-
-Because of these factors, users don't usually need this user right.
+> By default, services that are started by the Service Control Manager have the built-in Service group added to their access tokens. Component Object Model (COM) servers that are started by the COM infrastructure and that are configured to run under a specific account also have the Service group added to their access tokens. As a result, these services get this user right when they're started. In addition, a user can also impersonate an access token if any of the following conditions exist. 1) The access token that's being impersonated is for this user. 2) The user, in this logon session, created the access token by logging on to the network with explicit credentials. 3) The requested level is less than Impersonate, such as Anonymous or Identify. Because of these factors, users don't usually need this user right.
 
 > [!WARNING]
-> If you enable this setting, programs that previously had the Impersonate privilege might lose it, and they might not run.
+> If you enable this setting, programs that previously had the Impersonate privilege may lose it, and they may not run.
+<!-- ImpersonateClient-Description-End -->
 
-<!--/Description-->
-<!--DbMapped-->
-GP Info:
--   GP Friendly name: *Impersonate a client after authentication*
--   GP path: *Windows Settings/Security Settings/Local Policies/User Rights Assignment*
+<!-- ImpersonateClient-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ImpersonateClient-Editable-End -->
 
-<!--/DbMapped-->
-<!--/Policy-->
+<!-- ImpersonateClient-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `0xF000`) |
+<!-- ImpersonateClient-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="userrights-increaseschedulingpriority"></a>**UserRights/IncreaseSchedulingPriority**
+<!-- ImpersonateClient-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
-The table below shows the applicability of Windows:
+| Name | Value |
+|:--|:--|
+| Name | Impersonate a client after authentication |
+| Path | Windows Settings > Security Settings > Local Policies > User Rights Assignment |
+<!-- ImpersonateClient-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- ImpersonateClient-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ImpersonateClient-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ImpersonateClient-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- IncreaseProcessWorkingSet-Begin -->
+## IncreaseProcessWorkingSet
 
-> [!div class = "checklist"]
-> * Device
+<!-- IncreaseProcessWorkingSet-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- IncreaseProcessWorkingSet-Applicability-End -->
 
-<hr/>
+<!-- IncreaseProcessWorkingSet-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/UserRights/IncreaseProcessWorkingSet
+```
+<!-- IncreaseProcessWorkingSet-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- IncreaseProcessWorkingSet-Description-Begin -->
+<!-- Description-Source-DDF -->
+Increase a process working set. This privilege determines which user accounts can increase or decrease the size of a process's working set. The working set of a process is the set of memory pages currently visible to the process in physical RAM memory. These pages are resident and available for an application to use without triggering a page fault. The minimum and maximum working set sizes affect the virtual memory paging behavior of a process.
+
+> [!WARNING]
+> Increasing the working set size for a process decreases the amount of physical memory available to the rest of the system.
+<!-- IncreaseProcessWorkingSet-Description-End -->
+
+<!-- IncreaseProcessWorkingSet-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- IncreaseProcessWorkingSet-Editable-End -->
+
+<!-- IncreaseProcessWorkingSet-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `0xF000`) |
+<!-- IncreaseProcessWorkingSet-DFProperties-End -->
+
+<!-- IncreaseProcessWorkingSet-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Increase a process working set |
+| Path | Windows Settings > Security Settings > Local Policies > User Rights Assignment |
+<!-- IncreaseProcessWorkingSet-GpMapping-End -->
+
+<!-- IncreaseProcessWorkingSet-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- IncreaseProcessWorkingSet-Examples-End -->
+
+<!-- IncreaseProcessWorkingSet-End -->
+
+<!-- IncreaseSchedulingPriority-Begin -->
+## IncreaseSchedulingPriority
+
+<!-- IncreaseSchedulingPriority-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- IncreaseSchedulingPriority-Applicability-End -->
+
+<!-- IncreaseSchedulingPriority-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/UserRights/IncreaseSchedulingPriority
+```
+<!-- IncreaseSchedulingPriority-OmaUri-End -->
+
+<!-- IncreaseSchedulingPriority-Description-Begin -->
+<!-- Description-Source-DDF -->
 This user right determines which accounts can use a process with Write Property access to another process to increase the execution priority assigned to the other process. A user with this privilege can change the scheduling priority of a process through the Task Manager user interface.
+<!-- IncreaseSchedulingPriority-Description-End -->
 
-<!--/Description-->
-<!--DbMapped-->
-GP Info:
--   GP Friendly name: *Increase scheduling priority*
--   GP path: *Windows Settings/Security Settings/Local Policies/User Rights Assignment*
+<!-- IncreaseSchedulingPriority-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
 > [!WARNING]
-> If you remove **Window Manager\Window Manager Group** from the **Increase scheduling priority** user right, certain applications and computers don't function correctly. In particular, the INK workspace doesn't function correctly on unified memory architecture (UMA) laptop and desktop computers that run Windows 10, version 1903 (or later) and that use the Intel GFX driver.
+> If you remove **Window Manager\Window Manager Group** from the **Increase scheduling priority** user right, certain applications and computers won't function correctly. In particular, the INK workspace doesn't function correctly on unified memory architecture (UMA) laptop and desktop computers that run Windows 10, version 1903 or later and that use the Intel GFX driver.
 >
 > On affected computers, the display blinks when users draw on INK workspaces such as those that are used by Microsoft Edge, Microsoft PowerPoint, or Microsoft OneNote. The blinking occurs because the inking-related processes repeatedly try to use the Real-Time priority, but are denied permission.
+<!-- IncreaseSchedulingPriority-Editable-End -->
 
-<!--/DbMapped-->
-<!--/Policy-->
+<!-- IncreaseSchedulingPriority-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `0xF000`) |
+<!-- IncreaseSchedulingPriority-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="userrights-loadunloaddevicedrivers"></a>**UserRights/LoadUnloadDeviceDrivers**
+<!-- IncreaseSchedulingPriority-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
-The table below shows the applicability of Windows:
+| Name | Value |
+|:--|:--|
+| Name | Increase scheduling priority |
+| Path | Windows Settings > Security Settings > Local Policies > User Rights Assignment |
+<!-- IncreaseSchedulingPriority-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- IncreaseSchedulingPriority-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- IncreaseSchedulingPriority-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- IncreaseSchedulingPriority-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LoadUnloadDeviceDrivers-Begin -->
+## LoadUnloadDeviceDrivers
 
-> [!div class = "checklist"]
-> * Device
+<!-- LoadUnloadDeviceDrivers-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- LoadUnloadDeviceDrivers-Applicability-End -->
 
-<hr/>
+<!-- LoadUnloadDeviceDrivers-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/UserRights/LoadUnloadDeviceDrivers
+```
+<!-- LoadUnloadDeviceDrivers-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- LoadUnloadDeviceDrivers-Description-Begin -->
+<!-- Description-Source-DDF -->
 This user right determines which users can dynamically load and unload device drivers or other code in to kernel mode. This user right doesn't apply to Plug and Play device drivers. It's recommended that you don't assign this privilege to other users.
 
 > [!CAUTION]
 > Assigning this user right can be a security risk. Don't assign this user right to any user, group, or process that you don't want to take over the system.
+<!-- LoadUnloadDeviceDrivers-Description-End -->
 
-<!--/Description-->
-<!--DbMapped-->
-GP Info:
--   GP Friendly name: *Load and unload device drivers*
--   GP path: *Windows Settings/Security Settings/Local Policies/User Rights Assignment*
+<!-- LoadUnloadDeviceDrivers-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LoadUnloadDeviceDrivers-Editable-End -->
 
-<!--/DbMapped-->
-<!--/Policy-->
+<!-- LoadUnloadDeviceDrivers-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `0xF000`) |
+<!-- LoadUnloadDeviceDrivers-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="userrights-lockmemory"></a>**UserRights/LockMemory**
+<!-- LoadUnloadDeviceDrivers-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
-The table below shows the applicability of Windows:
+| Name | Value |
+|:--|:--|
+| Name | Load and unload device drivers |
+| Path | Windows Settings > Security Settings > Local Policies > User Rights Assignment |
+<!-- LoadUnloadDeviceDrivers-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- LoadUnloadDeviceDrivers-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LoadUnloadDeviceDrivers-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LoadUnloadDeviceDrivers-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LockMemory-Begin -->
+## LockMemory
 
-> [!div class = "checklist"]
-> * Device
+<!-- LockMemory-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- LockMemory-Applicability-End -->
 
-<hr/>
+<!-- LockMemory-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/UserRights/LockMemory
+```
+<!-- LockMemory-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-This user right determines which accounts can use a process to keep data in physical memory, which prevents the system from paging the data to virtual memory on disk. Exercising this privilege might significantly affect system performance by decreasing the amount of available random access memory (RAM).
+<!-- LockMemory-Description-Begin -->
+<!-- Description-Source-DDF -->
+This user right determines which accounts can use a process to keep data in physical memory, which prevents the system from paging the data to virtual memory on disk. Exercising this privilege could significantly affect system performance by decreasing the amount of available random access memory (RAM).
+<!-- LockMemory-Description-End -->
 
-<!--/Description-->
-<!--DbMapped-->
-GP Info:
--   GP Friendly name: *Lock pages in memory*
--   GP path: *Windows Settings/Security Settings/Local Policies/User Rights Assignment*
+<!-- LockMemory-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LockMemory-Editable-End -->
 
-<!--/DbMapped-->
-<!--/Policy-->
+<!-- LockMemory-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `0xF000`) |
+<!-- LockMemory-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="userrights-manageauditingandsecuritylog"></a>**UserRights/ManageAuditingAndSecurityLog**
+<!-- LockMemory-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
-The table below shows the applicability of Windows:
+| Name | Value |
+|:--|:--|
+| Name | Lock pages in memory |
+| Path | Windows Settings > Security Settings > Local Policies > User Rights Assignment |
+<!-- LockMemory-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- LockMemory-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LockMemory-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LockMemory-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LogOnAsBatchJob-Begin -->
+## LogOnAsBatchJob
 
-> [!div class = "checklist"]
-> * Device
+<!-- LogOnAsBatchJob-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- LogOnAsBatchJob-Applicability-End -->
 
-<hr/>
+<!-- LogOnAsBatchJob-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/UserRights/LogOnAsBatchJob
+```
+<!-- LogOnAsBatchJob-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-This user right determines which users can specify object access auditing options for individual resources, such as files, Active Directory objects, and registry keys. This security setting doesn't allow a user to enable file and object access auditing in general. You can view audited events in the security log of the Event Viewer. A user with this privilege also can view and clear the security log.
+<!-- LogOnAsBatchJob-Description-Begin -->
+<!-- Description-Source-DDF -->
+This security setting allows a user to be logged-on by means of a batch-queue facility and is provided only for compatibility with older versions of Windows. For example, when a user submits a job by means of the task scheduler, the task scheduler logs that user on as a batch user rather than as an interactive user.
+<!-- LogOnAsBatchJob-Description-End -->
 
-<!--/Description-->
-<!--DbMapped-->
-GP Info:
--   GP Friendly name: *Manage auditing and security log*
--   GP path: *Windows Settings/Security Settings/Local Policies/User Rights Assignment*
+<!-- LogOnAsBatchJob-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LogOnAsBatchJob-Editable-End -->
 
-<!--/DbMapped-->
-<!--/Policy-->
+<!-- LogOnAsBatchJob-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `0xF000`) |
+<!-- LogOnAsBatchJob-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="userrights-managevolume"></a>**UserRights/ManageVolume**
+<!-- LogOnAsBatchJob-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
-The table below shows the applicability of Windows:
+| Name | Value |
+|:--|:--|
+| Name | Log on as a batch job |
+| Path | Windows Settings > Security Settings > Local Policies > User Rights Assignment |
+<!-- LogOnAsBatchJob-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- LogOnAsBatchJob-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LogOnAsBatchJob-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LogOnAsBatchJob-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LogOnAsService-Begin -->
+## LogOnAsService
 
-> [!div class = "checklist"]
-> * Device
+<!-- LogOnAsService-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- LogOnAsService-Applicability-End -->
 
-<hr/>
+<!-- LogOnAsService-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/UserRights/LogOnAsService
+```
+<!-- LogOnAsService-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-This user right determines which users and groups can run maintenance tasks on a volume, such as remote de-fragmentation. Use caution when assigning this user right. Users with this user right can explore disks and extend files in to memory that contains other data. When the extended files are opened, the user might be able to read and modify the acquired data.
+<!-- LogOnAsService-Description-Begin -->
+<!-- Description-Source-DDF -->
+This security setting allows a security principal to log on as a service. Services can be configured to run under the Local System, Local Service, or Network Service accounts, which have a built in right to log on as a service. Any service that runs under a separate user account must be assigned the right.
+<!-- LogOnAsService-Description-End -->
 
-<!--/Description-->
-<!--DbMapped-->
-GP Info:
--   GP Friendly name: *Perform volume maintenance tasks*
--   GP path: *Windows Settings/Security Settings/Local Policies/User Rights Assignment*
+<!-- LogOnAsService-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LogOnAsService-Editable-End -->
 
-<!--/DbMapped-->
-<!--/Policy-->
+<!-- LogOnAsService-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `0xF000`) |
+<!-- LogOnAsService-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="userrights-modifyfirmwareenvironment"></a>**UserRights/ModifyFirmwareEnvironment**
+<!-- LogOnAsService-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
-The table below shows the applicability of Windows:
+| Name | Value |
+|:--|:--|
+| Name | Log on as a service |
+| Path | Windows Settings > Security Settings > Local Policies > User Rights Assignment |
+<!-- LogOnAsService-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- LogOnAsService-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LogOnAsService-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LogOnAsService-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ManageAuditingAndSecurityLog-Begin -->
+## ManageAuditingAndSecurityLog
 
-> [!div class = "checklist"]
-> * Device
+<!-- ManageAuditingAndSecurityLog-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- ManageAuditingAndSecurityLog-Applicability-End -->
 
-<hr/>
+<!-- ManageAuditingAndSecurityLog-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/UserRights/ManageAuditingAndSecurityLog
+```
+<!-- ManageAuditingAndSecurityLog-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-This user right determines who can modify firmware environment values. Firmware environment variables are settings stored in the nonvolatile RAM of non-x86-based computers. The effect of the setting depends on the processor. On x86-based computers, the only firmware environment value that can be modified by assigning this user right is the Last Known Good Configuration setting, which should be modified only by the system. On Itanium-based computers, boot information is stored in nonvolatile RAM. Users must be assigned this user right to run bootcfg.exe and to change the Default Operating System setting on Startup and Recovery in System Properties. On all computers, this user right is required to install or upgrade Windows.
+<!-- ManageAuditingAndSecurityLog-Description-Begin -->
+<!-- Description-Source-DDF -->
+This user right determines which users can specify object access auditing options for individual resources, such as files, Active Directory objects, and registry keys. This security setting doesn't allow a user to enable file and object access auditing in general. You can view audited events in the security log of the Event Viewer. A user with this privilege can also view and clear the security log.
+<!-- ManageAuditingAndSecurityLog-Description-End -->
+
+<!-- ManageAuditingAndSecurityLog-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ManageAuditingAndSecurityLog-Editable-End -->
+
+<!-- ManageAuditingAndSecurityLog-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `0xF000`) |
+<!-- ManageAuditingAndSecurityLog-DFProperties-End -->
+
+<!-- ManageAuditingAndSecurityLog-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Manage auditing and security log |
+| Path | Windows Settings > Security Settings > Local Policies > User Rights Assignment |
+<!-- ManageAuditingAndSecurityLog-GpMapping-End -->
+
+<!-- ManageAuditingAndSecurityLog-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ManageAuditingAndSecurityLog-Examples-End -->
+
+<!-- ManageAuditingAndSecurityLog-End -->
+
+<!-- ManageVolume-Begin -->
+## ManageVolume
+
+<!-- ManageVolume-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- ManageVolume-Applicability-End -->
+
+<!-- ManageVolume-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/UserRights/ManageVolume
+```
+<!-- ManageVolume-OmaUri-End -->
+
+<!-- ManageVolume-Description-Begin -->
+<!-- Description-Source-DDF -->
+This user right determines which users and groups can run maintenance tasks on a volume, such as remote defragmentation. Use caution when assigning this user right. Users with this user right can explore disks and extend files in to memory that contains other data. When the extended files are opened, the user might be able to read and modify the acquired data.
+<!-- ManageVolume-Description-End -->
+
+<!-- ManageVolume-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ManageVolume-Editable-End -->
+
+<!-- ManageVolume-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `0xF000`) |
+<!-- ManageVolume-DFProperties-End -->
+
+<!-- ManageVolume-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Perform volume maintenance tasks |
+| Path | Windows Settings > Security Settings > Local Policies > User Rights Assignment |
+<!-- ManageVolume-GpMapping-End -->
+
+<!-- ManageVolume-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ManageVolume-Examples-End -->
+
+<!-- ManageVolume-End -->
+
+<!-- ModifyFirmwareEnvironment-Begin -->
+## ModifyFirmwareEnvironment
+
+<!-- ModifyFirmwareEnvironment-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- ModifyFirmwareEnvironment-Applicability-End -->
+
+<!-- ModifyFirmwareEnvironment-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/UserRights/ModifyFirmwareEnvironment
+```
+<!-- ModifyFirmwareEnvironment-OmaUri-End -->
+
+<!-- ModifyFirmwareEnvironment-Description-Begin -->
+<!-- Description-Source-DDF -->
+This user right determines who can modify firmware environment values. Firmware environment variables are settings stored in the nonvolatile RAM of non-x86-based computers. The effect of the setting depends on the processor. On x86-based computers, the only firmware environment value that can be modified by assigning this user right is the Last Known Good Configuration setting, which should only be modified by the system. On Itanium-based computers, boot information is stored in nonvolatile RAM. Users must be assigned this user right to run bootcfg.exe and to change the Default Operating System setting on Startup and Recovery in System Properties. On all computers, this user right is required to install or upgrade Windows.
 
 > [!NOTE]
 > This security setting doesn't affect who can modify the system environment variables and user environment variables that are displayed on the Advanced tab of System Properties.
+<!-- ModifyFirmwareEnvironment-Description-End -->
 
-<!--/Description-->
-<!--DbMapped-->
-GP Info:
--   GP Friendly name: *Modify firmware environment values*
--   GP path: *Windows Settings/Security Settings/Local Policies/User Rights Assignment*
+<!-- ModifyFirmwareEnvironment-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ModifyFirmwareEnvironment-Editable-End -->
 
-<!--/DbMapped-->
-<!--/Policy-->
+<!-- ModifyFirmwareEnvironment-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `0xF000`) |
+<!-- ModifyFirmwareEnvironment-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="userrights-modifyobjectlabel"></a>**UserRights/ModifyObjectLabel**
+<!-- ModifyFirmwareEnvironment-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
-The table below shows the applicability of Windows:
+| Name | Value |
+|:--|:--|
+| Name | Modify firmware environment values |
+| Path | Windows Settings > Security Settings > Local Policies > User Rights Assignment |
+<!-- ModifyFirmwareEnvironment-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- ModifyFirmwareEnvironment-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ModifyFirmwareEnvironment-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ModifyFirmwareEnvironment-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ModifyObjectLabel-Begin -->
+## ModifyObjectLabel
 
-> [!div class = "checklist"]
-> * Device
+<!-- ModifyObjectLabel-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- ModifyObjectLabel-Applicability-End -->
 
-<hr/>
+<!-- ModifyObjectLabel-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/UserRights/ModifyObjectLabel
+```
+<!-- ModifyObjectLabel-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- ModifyObjectLabel-Description-Begin -->
+<!-- Description-Source-DDF -->
 This user right determines which user accounts can modify the integrity label of objects, such as files, registry keys, or processes owned by other users. Processes running under a user account can modify the label of an object owned by that user to a lower level without this privilege.
+<!-- ModifyObjectLabel-Description-End -->
 
-<!--/Description-->
-<!--DbMapped-->
-GP Info:
--   GP Friendly name: *Modify an object label*
--   GP path: *Windows Settings/Security Settings/Local Policies/User Rights Assignment*
+<!-- ModifyObjectLabel-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ModifyObjectLabel-Editable-End -->
 
-<!--/DbMapped-->
-<!--/Policy-->
+<!-- ModifyObjectLabel-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `0xF000`) |
+<!-- ModifyObjectLabel-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="userrights-profilesingleprocess"></a>**UserRights/ProfileSingleProcess**
+<!-- ModifyObjectLabel-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
-The table below shows the applicability of Windows:
+| Name | Value |
+|:--|:--|
+| Name | Modify an object label |
+| Path | Windows Settings > Security Settings > Local Policies > User Rights Assignment |
+<!-- ModifyObjectLabel-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- ModifyObjectLabel-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ModifyObjectLabel-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ModifyObjectLabel-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ProfileSingleProcess-Begin -->
+## ProfileSingleProcess
 
-> [!div class = "checklist"]
-> * Device
+<!-- ProfileSingleProcess-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- ProfileSingleProcess-Applicability-End -->
 
-<hr/>
+<!-- ProfileSingleProcess-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/UserRights/ProfileSingleProcess
+```
+<!-- ProfileSingleProcess-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- ProfileSingleProcess-Description-Begin -->
+<!-- Description-Source-DDF -->
 This user right determines which users can use performance monitoring tools to monitor the performance of system processes.
+<!-- ProfileSingleProcess-Description-End -->
 
-<!--/Description-->
-<!--DbMapped-->
-GP Info:
--   GP Friendly name: *Profile single process*
--   GP path: *Windows Settings/Security Settings/Local Policies/User Rights Assignment*
+<!-- ProfileSingleProcess-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ProfileSingleProcess-Editable-End -->
 
-<!--/DbMapped-->
-<!--/Policy-->
+<!-- ProfileSingleProcess-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `0xF000`) |
+<!-- ProfileSingleProcess-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="userrights-remoteshutdown"></a>**UserRights/RemoteShutdown**
+<!-- ProfileSingleProcess-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
-The table below shows the applicability of Windows:
+| Name | Value |
+|:--|:--|
+| Name | Profile single process |
+| Path | Windows Settings > Security Settings > Local Policies > User Rights Assignment |
+<!-- ProfileSingleProcess-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- ProfileSingleProcess-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ProfileSingleProcess-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ProfileSingleProcess-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ProfileSystemPerformance-Begin -->
+## ProfileSystemPerformance
 
-> [!div class = "checklist"]
-> * Device
+<!-- ProfileSystemPerformance-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- ProfileSystemPerformance-Applicability-End -->
 
-<hr/>
+<!-- ProfileSystemPerformance-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/UserRights/ProfileSystemPerformance
+```
+<!-- ProfileSystemPerformance-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- ProfileSystemPerformance-Description-Begin -->
+<!-- Description-Source-DDF -->
+This security setting determines which users can use performance monitoring tools to monitor the performance of system processes.
+<!-- ProfileSystemPerformance-Description-End -->
+
+<!-- ProfileSystemPerformance-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ProfileSystemPerformance-Editable-End -->
+
+<!-- ProfileSystemPerformance-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `0xF000`) |
+<!-- ProfileSystemPerformance-DFProperties-End -->
+
+<!-- ProfileSystemPerformance-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Profile system performance |
+| Path | Windows Settings > Security Settings > Local Policies > User Rights Assignment |
+<!-- ProfileSystemPerformance-GpMapping-End -->
+
+<!-- ProfileSystemPerformance-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ProfileSystemPerformance-Examples-End -->
+
+<!-- ProfileSystemPerformance-End -->
+
+<!-- RemoteShutdown-Begin -->
+## RemoteShutdown
+
+<!-- RemoteShutdown-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- RemoteShutdown-Applicability-End -->
+
+<!-- RemoteShutdown-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/UserRights/RemoteShutdown
+```
+<!-- RemoteShutdown-OmaUri-End -->
+
+<!-- RemoteShutdown-Description-Begin -->
+<!-- Description-Source-DDF -->
 This user right determines which users are allowed to shut down a computer from a remote location on the network. Misuse of this user right can result in a denial of service.
+<!-- RemoteShutdown-Description-End -->
 
-<!--/Description-->
-<!--DbMapped-->
-GP Info:
--   GP Friendly name: *Force shutdown from a remote system*
--   GP path: *Windows Settings/Security Settings/Local Policies/User Rights Assignment*
+<!-- RemoteShutdown-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- RemoteShutdown-Editable-End -->
 
-<!--/DbMapped-->
-<!--/Policy-->
+<!-- RemoteShutdown-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `0xF000`) |
+<!-- RemoteShutdown-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="userrights-restorefilesanddirectories"></a>**UserRights/RestoreFilesAndDirectories**
+<!-- RemoteShutdown-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
-The table below shows the applicability of Windows:
+| Name | Value |
+|:--|:--|
+| Name | Force shutdown from a remote system |
+| Path | Windows Settings > Security Settings > Local Policies > User Rights Assignment |
+<!-- RemoteShutdown-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- RemoteShutdown-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- RemoteShutdown-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- RemoteShutdown-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ReplaceProcessLevelToken-Begin -->
+## ReplaceProcessLevelToken
 
-> [!div class = "checklist"]
-> * Device
+<!-- ReplaceProcessLevelToken-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- ReplaceProcessLevelToken-Applicability-End -->
 
-<hr/>
+<!-- ReplaceProcessLevelToken-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/UserRights/ReplaceProcessLevelToken
+```
+<!-- ReplaceProcessLevelToken-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-This user right determines which users can bypass file, directory, registry, and other persistent objects permissions when restoring backed up files and directories, and it determines which users can set any valid security principal as the owner of an object. Specifically, this user right is similar to granting the following permissions to the user or group in question on all files and folders on the system: Traverse Folder/Execute File, Write.
+<!-- ReplaceProcessLevelToken-Description-Begin -->
+<!-- Description-Source-DDF -->
+This security setting determines which user accounts can call the CreateProcessAsUser() application programming interface (API) so that one service can start another. An example of a process that uses this user right is Task Scheduler. For information about Task Scheduler, see Task Scheduler overview.
+<!-- ReplaceProcessLevelToken-Description-End -->
+
+<!-- ReplaceProcessLevelToken-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ReplaceProcessLevelToken-Editable-End -->
+
+<!-- ReplaceProcessLevelToken-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `0xF000`) |
+<!-- ReplaceProcessLevelToken-DFProperties-End -->
+
+<!-- ReplaceProcessLevelToken-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Replace a process level token |
+| Path | Windows Settings > Security Settings > Local Policies > User Rights Assignment |
+<!-- ReplaceProcessLevelToken-GpMapping-End -->
+
+<!-- ReplaceProcessLevelToken-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ReplaceProcessLevelToken-Examples-End -->
+
+<!-- ReplaceProcessLevelToken-End -->
+
+<!-- RestoreFilesAndDirectories-Begin -->
+## RestoreFilesAndDirectories
+
+<!-- RestoreFilesAndDirectories-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- RestoreFilesAndDirectories-Applicability-End -->
+
+<!-- RestoreFilesAndDirectories-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/UserRights/RestoreFilesAndDirectories
+```
+<!-- RestoreFilesAndDirectories-OmaUri-End -->
+
+<!-- RestoreFilesAndDirectories-Description-Begin -->
+<!-- Description-Source-DDF -->
+This user right determines which users can bypass file, directory, registry, and other persistent objects permissions when restoring backed up files and directories, and determines which users can set any valid security principal as the owner of an object. Specifically, this user right is similar to granting the following permissions to the user or group in question on all files and folders on the system:Traverse Folder/Execute File, Write.
 
 > [!CAUTION]
-> Assigning this user right can be a security risk. Since users with this user right can overwrite registry settings, hide data, and gain ownership of system objects, assign this user right to trusted users only.
+> Assigning this user right can be a security risk. Since users with this user right can overwrite registry settings, hide data, and gain ownership of system objects, only assign this user right to trusted users.
+<!-- RestoreFilesAndDirectories-Description-End -->
 
-<!--/Description-->
-<!--DbMapped-->
-GP Info:
--   GP Friendly name: *Restore files and directories*
--   GP path: *Windows Settings/Security Settings/Local Policies/User Rights Assignment*
+<!-- RestoreFilesAndDirectories-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- RestoreFilesAndDirectories-Editable-End -->
 
-<!--/DbMapped-->
-<!--/Policy-->
+<!-- RestoreFilesAndDirectories-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `0xF000`) |
+<!-- RestoreFilesAndDirectories-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="userrights-takeownership"></a>**UserRights/TakeOwnership**
+<!-- RestoreFilesAndDirectories-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
-The table below shows the applicability of Windows:
+| Name | Value |
+|:--|:--|
+| Name | Restore files and directories |
+| Path | Windows Settings > Security Settings > Local Policies > User Rights Assignment |
+<!-- RestoreFilesAndDirectories-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- RestoreFilesAndDirectories-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- RestoreFilesAndDirectories-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- RestoreFilesAndDirectories-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ShutDownTheSystem-Begin -->
+## ShutDownTheSystem
 
-> [!div class = "checklist"]
-> * Device
+<!-- ShutDownTheSystem-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- ShutDownTheSystem-Applicability-End -->
 
-<hr/>
+<!-- ShutDownTheSystem-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/UserRights/ShutDownTheSystem
+```
+<!-- ShutDownTheSystem-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- ShutDownTheSystem-Description-Begin -->
+<!-- Description-Source-DDF -->
+This security setting determines which users who are logged-on locally to the computer can shut down the operating system using the Shut Down command. Misuse of this user right can result in a denial of service.
+<!-- ShutDownTheSystem-Description-End -->
+
+<!-- ShutDownTheSystem-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ShutDownTheSystem-Editable-End -->
+
+<!-- ShutDownTheSystem-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `0xF000`) |
+<!-- ShutDownTheSystem-DFProperties-End -->
+
+<!-- ShutDownTheSystem-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Shut down the system |
+| Path | Windows Settings > Security Settings > Local Policies > User Rights Assignment |
+<!-- ShutDownTheSystem-GpMapping-End -->
+
+<!-- ShutDownTheSystem-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ShutDownTheSystem-Examples-End -->
+
+<!-- ShutDownTheSystem-End -->
+
+<!-- TakeOwnership-Begin -->
+## TakeOwnership
+
+<!-- TakeOwnership-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- TakeOwnership-Applicability-End -->
+
+<!-- TakeOwnership-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/UserRights/TakeOwnership
+```
+<!-- TakeOwnership-OmaUri-End -->
+
+<!-- TakeOwnership-Description-Begin -->
+<!-- Description-Source-DDF -->
 This user right determines which users can take ownership of any securable object in the system, including Active Directory objects, files and folders, printers, registry keys, processes, and threads.
 
 > [!CAUTION]
-> Assigning this user right can be a security risk. Since owners of objects have full control of them, assign this user right to trusted users only.
+> Assigning this user right can be a security risk. Since owners of objects have full control of them, only assign this user right to trusted users.
+<!-- TakeOwnership-Description-End -->
 
-<!--/Description-->
-<!--DbMapped-->
-GP Info:
--   GP Friendly name: *Take ownership of files or other objects*
--   GP path: *Windows Settings/Security Settings/Local Policies/User Rights Assignment*
+<!-- TakeOwnership-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TakeOwnership-Editable-End -->
 
-<!--/DbMapped-->
-<!--/Policy-->
-<hr/>
+<!-- TakeOwnership-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Policies-->
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `0xF000`) |
+<!-- TakeOwnership-DFProperties-End -->
 
-## Related topics
+<!-- TakeOwnership-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Take ownership of files or other objects |
+| Path | Windows Settings > Security Settings > Local Policies > User Rights Assignment |
+<!-- TakeOwnership-GpMapping-End -->
+
+<!-- TakeOwnership-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TakeOwnership-Examples-End -->
+
+<!-- TakeOwnership-End -->
+
+<!-- UserRights-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- UserRights-CspMoreInfo-End -->
+
+<!-- UserRights-End -->
+
+## Related articles
 
 [Policy configuration service provider](policy-configuration-service-provider.md)

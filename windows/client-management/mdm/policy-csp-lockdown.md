@@ -1,84 +1,98 @@
 ---
-title: Policy CSP - LockDown
-description: Use the Policy CSP - LockDown setting to allow the user to invoke any system user interface by swiping in from any screen edge using touch.
-ms.author: vinpa
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
+title: LockDown Policy CSP
+description: Learn more about the LockDown Area in Policy CSP.
 author: vinaypamnani-msft
-ms.localizationpriority: medium
-ms.date: 09/27/2019
-ms.reviewer: 
 manager: aaroncz
+ms.author: vinpa
+ms.date: 08/10/2023
+ms.localizationpriority: medium
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- LockDown-Begin -->
 # Policy CSP - LockDown
 
-<hr/>
+<!-- LockDown-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LockDown-Editable-End -->
 
-<!--Policies-->
-## LockDown policies  
+<!-- AllowEdgeSwipe-Begin -->
+## AllowEdgeSwipe
 
-<dl>
-  <dd>
-    <a href="#lockdown-allowedgeswipe">LockDown/AllowEdgeSwipe</a>
-  </dd>
-</dl>
+<!-- AllowEdgeSwipe-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- AllowEdgeSwipe-Applicability-End -->
 
-<hr/>
+<!-- AllowEdgeSwipe-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/LockDown/AllowEdgeSwipe
+```
+<!-- AllowEdgeSwipe-OmaUri-End -->
 
-<!--Policy-->
-<a href="" id="lockdown-allowedgeswipe"></a>**LockDown/AllowEdgeSwipe**  
+<!-- AllowEdgeSwipe-Description-Begin -->
+<!-- Description-Source-ADMX -->
+- If you disable this policy setting, users won't be able to invoke any system UI by swiping in from any screen edge.
 
-<!--SupportedSKUs-->
+- If you enable or don't configure this policy setting, users will be able to invoke system UI by swiping in from the screen edges.
+<!-- AllowEdgeSwipe-Description-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Allows the user to invoke any system user interface by swiping in from any screen edge using touch.
+<!-- AllowEdgeSwipe-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
 The easiest way to verify the policy is to restart the explorer process or to reboot after the policy is applied, and then try to swipe from the right edge of the screen. The desired result is for Action Center to not be invoked by the swipe. You can also enter tablet mode and attempt to swipe from the top of the screen to rearrange, that will also be disabled.
+<!-- AllowEdgeSwipe-Editable-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Allow edge swipe*
--   GP name: *AllowEdgeSwipe*
--   GP path: *Windows Components/Edge UI*
--   GP ADMX file name: *EdgeUI.admx*
+<!-- AllowEdgeSwipe-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowEdgeSwipe-DFProperties-End -->
 
--   0 - disallow edge swipe.
--   1 (default, not configured) - allow edge swipe.
+<!-- AllowEdgeSwipe-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--/SupportedValues-->
-<!--/Policy-->
-<hr/>
+| Value | Description |
+|:--|:--|
+| 0 | Disallow edge swipe. |
+| 1 (Default) | Allow edge swipe. |
+<!-- AllowEdgeSwipe-AllowedValues-End -->
 
-<!--/Policies-->
+<!-- AllowEdgeSwipe-GpMapping-Begin -->
+**Group policy mapping**:
 
-## Related topics
+| Name | Value |
+|:--|:--|
+| Name | AllowEdgeSwipe |
+| Friendly Name | Allow edge swipe |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Edge UI |
+| Registry Key Name | Software\Policies\Microsoft\Windows\EdgeUI |
+| Registry Value Name | AllowEdgeSwipe |
+| ADMX File Name | EdgeUI.admx |
+<!-- AllowEdgeSwipe-GpMapping-End -->
+
+<!-- AllowEdgeSwipe-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowEdgeSwipe-Examples-End -->
+
+<!-- AllowEdgeSwipe-End -->
+
+<!-- LockDown-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- LockDown-CspMoreInfo-End -->
+
+<!-- LockDown-End -->
+
+## Related articles
 
 [Policy configuration service provider](policy-configuration-service-provider.md)

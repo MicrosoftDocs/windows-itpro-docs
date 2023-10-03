@@ -1,218 +1,239 @@
 ---
-title: Policy CSP - Autoplay
-description: Learn how the Policy CSP - Autoplay setting disallows AutoPlay for MTP devices like cameras or phones.
-ms.author: vinpa
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
+title: Autoplay Policy CSP
+description: Learn more about the Autoplay Area in Policy CSP.
 author: vinaypamnani-msft
-ms.localizationpriority: medium
-ms.date: 09/27/2019
-ms.reviewer: 
 manager: aaroncz
+ms.author: vinpa
+ms.date: 08/10/2023
+ms.localizationpriority: medium
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- Autoplay-Begin -->
 # Policy CSP - Autoplay
 
->[!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
+<!-- Autoplay-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Autoplay-Editable-End -->
 
-<hr/>
+<!-- DisallowAutoplayForNonVolumeDevices-Begin -->
+## DisallowAutoplayForNonVolumeDevices
 
-<!--Policies-->
-## Autoplay policies  
+<!-- DisallowAutoplayForNonVolumeDevices-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- DisallowAutoplayForNonVolumeDevices-Applicability-End -->
 
-<dl>
-  <dd>
-    <a href="#autoplay-disallowautoplayfornonvolumedevices">Autoplay/DisallowAutoplayForNonVolumeDevices</a>
-  </dd>
-  <dd>
-    <a href="#autoplay-setdefaultautorunbehavior">Autoplay/SetDefaultAutoRunBehavior</a>
-  </dd>
-  <dd>
-    <a href="#autoplay-turnoffautoplay">Autoplay/TurnOffAutoPlay</a>
-  </dd>
-</dl>
+<!-- DisallowAutoplayForNonVolumeDevices-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/Autoplay/DisallowAutoplayForNonVolumeDevices
+```
 
+```Device
+./Device/Vendor/MSFT/Policy/Config/Autoplay/DisallowAutoplayForNonVolumeDevices
+```
+<!-- DisallowAutoplayForNonVolumeDevices-OmaUri-End -->
 
-<hr/>
-
-<!--Policy-->
-<a href="" id="autoplay-disallowautoplayfornonvolumedevices"></a>**Autoplay/DisallowAutoplayForNonVolumeDevices**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- DisallowAutoplayForNonVolumeDevices-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting disallows AutoPlay for MTP devices like cameras or phones.
 
-If you enable this policy setting, AutoPlay isn't allowed for MTP devices like cameras or phones.
+- If you enable this policy setting, AutoPlay isn't allowed for MTP devices like cameras or phones.
 
-If you disable or don't configure this policy setting, AutoPlay is enabled for non-volume devices.
+- If you disable or don't configure this policy setting, AutoPlay is enabled for non-volume devices.
+<!-- DisallowAutoplayForNonVolumeDevices-Description-End -->
 
+<!-- DisallowAutoplayForNonVolumeDevices-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisallowAutoplayForNonVolumeDevices-Editable-End -->
 
-<!--/Description-->
+<!-- DisallowAutoplayForNonVolumeDevices-DFProperties-Begin -->
+**Description framework properties**:
 
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisallowAutoplayForNonVolumeDevices-DFProperties-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Disallow Autoplay for non-volume devices*
--   GP name: *NoAutoplayfornonVolume*
--   GP path: *Windows Components/AutoPlay Policies*
--   GP ADMX file name: *AutoPlay.admx*
+<!-- DisallowAutoplayForNonVolumeDevices-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+**ADMX mapping**:
 
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | NoAutoplayfornonVolume |
+| Friendly Name | Disallow Autoplay for non-volume devices |
+| Location | Computer and User Configuration |
+| Path | Windows Components > AutoPlay Policies |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
+| Registry Value Name | NoAutoplayfornonVolume |
+| ADMX File Name | AutoPlay.admx |
+<!-- DisallowAutoplayForNonVolumeDevices-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="autoplay-setdefaultautorunbehavior"></a>**Autoplay/SetDefaultAutoRunBehavior**  
+<!-- DisallowAutoplayForNonVolumeDevices-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisallowAutoplayForNonVolumeDevices-Examples-End -->
 
-<!--SupportedSKUs-->
+<!-- DisallowAutoplayForNonVolumeDevices-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- SetDefaultAutoRunBehavior-Begin -->
+## SetDefaultAutoRunBehavior
 
+<!-- SetDefaultAutoRunBehavior-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- SetDefaultAutoRunBehavior-Applicability-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- SetDefaultAutoRunBehavior-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/Autoplay/SetDefaultAutoRunBehavior
+```
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+```Device
+./Device/Vendor/MSFT/Policy/Config/Autoplay/SetDefaultAutoRunBehavior
+```
+<!-- SetDefaultAutoRunBehavior-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * User
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- SetDefaultAutoRunBehavior-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting sets the default behavior for Autorun commands.
 
-Autorun commands are stored in autorun.inf files. They often launch the installation program or other routines.
+Autorun commands are generally stored in autorun.inf files. They often launch the installation program or other routines.
 
 Prior to Windows Vista, when media containing an autorun command is inserted, the system will automatically execute the program without user intervention.
 
-This automatic execution creates a major security concern as code may be executed without user's knowledge. The default behavior starting with Windows Vista is to prompt the user whether autorun command is to be run. The autorun command is represented as a handler in the Autoplay dialog.
+This creates a major security concern as code may be executed without user's knowledge. The default behavior starting with Windows Vista is to prompt the user whether autorun command is to be run. The autorun command is represented as a handler in the Autoplay dialog.
 
-If you enable this policy setting, an Administrator can change the default Windows Vista or later behavior for autorun to:
+- If you enable this policy setting, an Administrator can change the default Windows Vista or later behavior for autorun to:
 
-a) Completely disable autorun commands, or
-b) Revert back to pre-Windows Vista behavior of automatically executing the autorun command.
+a) Completely disable autorun commands, or b) Revert back to pre-Windows Vista behavior of automatically executing the autorun command.
 
-If you disable or not configure this policy setting, Windows Vista or later will prompt the user whether autorun command is to be run.
+- If you disable or not configure this policy setting, Windows Vista or later will prompt the user whether autorun command is to be run.
+<!-- SetDefaultAutoRunBehavior-Description-End -->
 
-<!--/Description-->
+<!-- SetDefaultAutoRunBehavior-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- SetDefaultAutoRunBehavior-Editable-End -->
 
+<!-- SetDefaultAutoRunBehavior-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Set the default behavior for AutoRun*
--   GP name: *NoAutorun*
--   GP path: *Windows Components/AutoPlay Policies*
--   GP ADMX file name: *AutoPlay.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- SetDefaultAutoRunBehavior-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+<!-- SetDefaultAutoRunBehavior-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<hr/>
+**ADMX mapping**:
 
-<!--Policy-->
-<a href="" id="autoplay-turnoffautoplay"></a>**Autoplay/TurnOffAutoPlay**  
+| Name | Value |
+|:--|:--|
+| Name | NoAutorun |
+| Friendly Name | Set the default behavior for AutoRun |
+| Location | Computer and User Configuration |
+| Path | Windows Components > AutoPlay Policies |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| ADMX File Name | AutoPlay.admx |
+<!-- SetDefaultAutoRunBehavior-AdmxBacked-End -->
 
-<!--SupportedSKUs-->
+<!-- SetDefaultAutoRunBehavior-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- SetDefaultAutoRunBehavior-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- SetDefaultAutoRunBehavior-End -->
 
+<!-- TurnOffAutoPlay-Begin -->
+## TurnOffAutoPlay
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- TurnOffAutoPlay-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- TurnOffAutoPlay-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- TurnOffAutoPlay-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/Autoplay/TurnOffAutoPlay
+```
 
-> [!div class = "checklist"]
-> * User
-> * Device
+```Device
+./Device/Vendor/MSFT/Policy/Config/Autoplay/TurnOffAutoPlay
+```
+<!-- TurnOffAutoPlay-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- TurnOffAutoPlay-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to turn off the Autoplay feature.
 
 Autoplay begins reading from a drive as soon as you insert media in the drive. As a result, the setup file of programs and the music on audio media start immediately.
 
 Prior to Windows XP SP2, Autoplay is disabled by default on removable drives, such as the floppy disk drive (but not the CD-ROM drive), and on network drives.
 
-With Windows XP SP2 onward, Autoplay is enabled for removable drives as well, including Zip drives and some USB mass storage devices.
+Starting with Windows XP SP2, Autoplay is enabled for removable drives as well, including Zip drives and some USB mass storage devices.
 
-If you enable this policy setting, Autoplay is disabled on CD-ROM and removable media drives, or disabled on all drives.
+- If you enable this policy setting, Autoplay is disabled on CD-ROM and removable media drives, or disabled on all drives.
 
-This policy setting disables Autoplay on other types of drives. You can't use this setting to enable Autoplay on drives on which it's disabled by default.
+This policy setting disables Autoplay on additional types of drives. You can't use this setting to enable Autoplay on drives on which it's disabled by default.
 
-If you disable or don't configure this policy setting, AutoPlay is enabled.
+- If you disable or don't configure this policy setting, AutoPlay is enabled.
 
-> [!Note]
+> [!NOTE]
 > This policy setting appears in both the Computer Configuration and User Configuration folders. If the policy settings conflict, the policy setting in Computer Configuration takes precedence over the policy setting in User Configuration.
+<!-- TurnOffAutoPlay-Description-End -->
 
-<!--/Description-->
+<!-- TurnOffAutoPlay-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TurnOffAutoPlay-Editable-End -->
 
+<!-- TurnOffAutoPlay-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Turn off Autoplay*
--   GP name: *Autorun*
--   GP path: *Windows Components/AutoPlay Policies*
--   GP ADMX file name: *AutoPlay.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- TurnOffAutoPlay-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- TurnOffAutoPlay-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
+**ADMX mapping**:
 
+| Name | Value |
+|:--|:--|
+| Name | Autorun |
+| Friendly Name | Turn off Autoplay |
+| Location | Computer and User Configuration |
+| Path | Windows Components > AutoPlay Policies |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| ADMX File Name | AutoPlay.admx |
+<!-- TurnOffAutoPlay-AdmxBacked-End -->
 
-<!--/Policies-->
+<!-- TurnOffAutoPlay-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TurnOffAutoPlay-Examples-End -->
 
+<!-- TurnOffAutoPlay-End -->
+
+<!-- Autoplay-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- Autoplay-CspMoreInfo-End -->
+
+<!-- Autoplay-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

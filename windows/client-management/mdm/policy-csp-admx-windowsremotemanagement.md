@@ -1,140 +1,151 @@
 ---
-title: Policy CSP - ADMX_WindowsRemoteManagement
-description: Policy CSP - ADMX_WindowsRemoteManagement
-ms.author: vinpa
-ms.localizationpriority: medium
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
+title: ADMX_WindowsRemoteManagement Policy CSP
+description: Learn more about the ADMX_WindowsRemoteManagement Area in Policy CSP.
 author: vinaypamnani-msft
-ms.date: 12/16/2020
-ms.reviewer: 
 manager: aaroncz
+ms.author: vinpa
+ms.date: 08/10/2023
+ms.localizationpriority: medium
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ADMX_WindowsRemoteManagement-Begin -->
 # Policy CSP - ADMX_WindowsRemoteManagement
->[!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
-<hr/>
+<!-- ADMX_WindowsRemoteManagement-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ADMX_WindowsRemoteManagement-Editable-End -->
 
-<!--Policies-->
-## ADMX_WindowsRemoteManagement policies  
+<!-- DisallowKerberos_1-Begin -->
+## DisallowKerberos_1
 
-<dl>
-  <dd>
-    <a href="#admx-windowsremotemanagement-disallowkerberos-1">ADMX_WindowsRemoteManagement/DisallowKerberos_1</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsremotemanagement-disallowkerberos-2">ADMX_WindowsRemoteManagement/DisallowKerberos_2</a>
-  </dd>
-</dl>
+<!-- DisallowKerberos_1-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DisallowKerberos_1-Applicability-End -->
 
+<!-- DisallowKerberos_1-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_WindowsRemoteManagement/DisallowKerberos_1
+```
+<!-- DisallowKerberos_1-OmaUri-End -->
 
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-windowsremotemanagement-disallowkerberos-1"></a>**ADMX_WindowsRemoteManagement/DisallowKerberos_1**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- DisallowKerberos_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to manage whether the Windows Remote Management (WinRM) service accepts Kerberos credentials over the network.
 
-If you enable this policy setting, the WinRM service does not accept Kerberos credentials over the network.  
+- If you enable this policy setting, the WinRM service doesn't accept Kerberos credentials over the network.
 
-If you disable or do not configure this policy setting, the WinRM service accepts Kerberos authentication from a remote client.
+- If you disable or don't configure this policy setting, the WinRM service accepts Kerberos authentication from a remote client.
+<!-- DisallowKerberos_1-Description-End -->
 
-<!--/Description-->
+<!-- DisallowKerberos_1-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisallowKerberos_1-Editable-End -->
 
+<!-- DisallowKerberos_1-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Disallow Kerberos authentication*
--   GP name: *DisallowKerberos_1*
--   GP path: *Windows Components\Windows Remote Management (WinRM)\WinRM Service*
--   GP ADMX file name: *WindowsRemoteManagement.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisallowKerberos_1-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+<!-- DisallowKerberos_1-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<hr/>
+**ADMX mapping**:
 
-<!--Policy-->
-<a href="" id="admx-windowsremotemanagement-disallowkerberos-2"></a>**ADMX_WindowsRemoteManagement/DisallowKerberos_2**  
+| Name | Value |
+|:--|:--|
+| Name | DisallowKerberos_1 |
+| Friendly Name | Disallow Kerberos authentication |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Remote Management (WinRM) > WinRM Service |
+| Registry Key Name | Software\Policies\Microsoft\Windows\WinRM\Service |
+| Registry Value Name | AllowKerberos |
+| ADMX File Name | WindowsRemoteManagement.admx |
+<!-- DisallowKerberos_1-AdmxBacked-End -->
 
-<!--SupportedSKUs-->
+<!-- DisallowKerberos_1-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisallowKerberos_1-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- DisallowKerberos_1-End -->
 
+<!-- DisallowKerberos_2-Begin -->
+## DisallowKerberos_2
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DisallowKerberos_2-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DisallowKerberos_2-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DisallowKerberos_2-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_WindowsRemoteManagement/DisallowKerberos_2
+```
+<!-- DisallowKerberos_2-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- DisallowKerberos_2-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to manage whether the Windows Remote Management (WinRM) client uses Kerberos authentication directly.
 
-If you enable this policy setting, the Windows Remote Management (WinRM) client does not use Kerberos authentication directly. Kerberos can still be used if the WinRM client is using the Negotiate authentication and Kerberos is selected.
+- If you enable this policy setting, the Windows Remote Management (WinRM) client doesn't use Kerberos authentication directly. Kerberos can still be used if the WinRM client is using the Negotiate authentication and Kerberos is selected.
 
-If you disable or do not configure this policy setting, the WinRM client uses the Kerberos authentication directly.
+- If you disable or don't configure this policy setting, the WinRM client uses the Kerberos authentication directly.
+<!-- DisallowKerberos_2-Description-End -->
 
-<!--/Description-->
+<!-- DisallowKerberos_2-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisallowKerberos_2-Editable-End -->
 
+<!-- DisallowKerberos_2-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Disallow Kerberos authentication*
--   GP name: *DisallowKerberos_2*
--   GP path: *Windows Components\Windows Remote Management (WinRM)\WinRM Client*
--   GP ADMX file name: *WindowsRemoteManagement.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisallowKerberos_2-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- DisallowKerberos_2-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
+**ADMX mapping**:
 
+| Name | Value |
+|:--|:--|
+| Name | DisallowKerberos_2 |
+| Friendly Name | Disallow Kerberos authentication |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Remote Management (WinRM) > WinRM Client |
+| Registry Key Name | Software\Policies\Microsoft\Windows\WinRM\Client |
+| Registry Value Name | AllowKerberos |
+| ADMX File Name | WindowsRemoteManagement.admx |
+<!-- DisallowKerberos_2-AdmxBacked-End -->
 
-<!--/Policies-->
+<!-- DisallowKerberos_2-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisallowKerberos_2-Examples-End -->
+
+<!-- DisallowKerberos_2-End -->
+
+<!-- ADMX_WindowsRemoteManagement-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ADMX_WindowsRemoteManagement-CspMoreInfo-End -->
+
+<!-- ADMX_WindowsRemoteManagement-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

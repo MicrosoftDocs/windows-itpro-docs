@@ -1,26 +1,25 @@
 ---
 title: Enabling and Disabling Compatibility Fixes in Compatibility Administrator
 description: You can disable and enable individual compatibility fixes in your customized databases for testing and troubleshooting purposes.
-ms.reviewer: 
-manager: dougeby
-ms.author: aaroncz
-ms.prod: w10
-author: aczechowski
+manager: aaroncz
+ms.author: frankroj
+ms.prod: windows-client
+author: frankroj
 ms.topic: article
-ms.custom: seo-marvel-apr2020
+ms.technology: itpro-deploy
+ms.date: 10/28/2022
 ---
 
 # Enabling and Disabling Compatibility Fixes in Compatibility Administrator
 
-
 **Applies to**
 
--   Windows 10
--   Windows 8.1
--   Windows 8
--   Windows 7
--   Windows Server 2012
--   Windows Server 2008 R2
+-   Windows 10
+-   Windows 8.1
+-   Windows 8
+-   Windows 7
+-   Windows Server 2012
+-   Windows Server 2008 R2
 
 You can disable and enable individual compatibility fixes in your customized databases for testing and troubleshooting purposes.
 
@@ -31,8 +30,6 @@ Customized compatibility databases can become quite complex as you add your fixe
 >[!IMPORTANT]
 >Application Compatibility Toolkit (ACT) installs a 32-bit and a 64-bit version of the Compatibility Administrator tool. You must use the 32-bit version to work with custom databases for 32-bit applications and the 64-bit version to work with custom databases for 64-bit applications.
 
- 
-
 **To disable a compatibility fix within a database**
 
 1.  In the left-sde pane of Compatibility Administrator, expand the custom database that includes the compatibility fix that you want to disable, and then select the specific compatibility fix.
@@ -41,13 +38,10 @@ Customized compatibility databases can become quite complex as you add your fixe
 
 2.  On the **Database** menu, click **Disable Entry**.
 
-    **Important**  
+    **Important**  
     When you disable an entry, it will remain disabled even if you do not save the database file.
 
-     
-
 ## Enabling Compatibility Fixes
-
 
 You can enable your disabled compatibility fixes at any time.
 

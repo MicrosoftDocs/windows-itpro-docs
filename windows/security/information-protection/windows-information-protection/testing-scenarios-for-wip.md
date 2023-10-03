@@ -1,13 +1,10 @@
 ---
-title: Testing scenarios for Windows Information Protection (WIP) (Windows 10)
+title: Testing scenarios for Windows Information Protection (WIP) 
 description: A list of suggested testing scenarios that you can use to test Windows Information Protection (WIP) in your company.
 ms.reviewer: 
-ms.prod: m365-security
-ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
-manager: dansimp
-ms.collection: M365-security-compliance
+author: aczechowski
+ms.author: aaroncz
+manager: aaroncz
 ms.topic: conceptual
 ms.date: 03/05/2019
 ---
@@ -42,7 +39,7 @@ You can try any of the processes included in these scenarios, but you should foc
   > [!IMPORTANT]
   > Certain file types like `.exe` and `.dll`, along with certain file paths, such as `%windir%` and `%programfiles%` are excluded from automatic encryption.
 
-  For more info about your Enterprise Identity and adding apps to your allowed apps list, see either [Create a Windows Information Protection (WIP) policy using Microsoft Intune](create-wip-policy-using-intune-azure.md) or [Create a Windows Information Protection (WIP) policy using Microsoft Endpoint Configuration Manager](create-wip-policy-using-configmgr.md), based on your deployment system.
+  For more info about your Enterprise Identity and adding apps to your allowed apps list, see either [Create a Windows Information Protection (WIP) policy using Microsoft Intune](create-wip-policy-using-intune-azure.md) or [Create a Windows Information Protection (WIP) policy using Microsoft Configuration Manager](create-wip-policy-using-configmgr.md), based on your deployment system.
 
 - **Block enterprise data from non-enterprise apps**:
 
@@ -59,7 +56,7 @@ You can try any of the processes included in these scenarios, but you should foc
       You should see a WIP-related warning box, asking you to click either **Change to personal** or **Keep at work**.
 
   2. Click **Keep at work**. The content isn't pasted into the non-enterprise app.
-  3. Repeat Step 1, but this time click **Change to personal**, and try to paste the content again.
+  3. Repeat Step 1, but this time select **Change to personal** and try to paste the content again.
 
       The content is pasted into the non-enterprise app.
 
@@ -72,7 +69,7 @@ You can try any of the processes included in these scenarios, but you should foc
       You should see a WIP-related warning box, asking you to click either **Keep at work** or **Change to personal**.
 
   2. Click **Keep at work**. The content isn't dropped into the non-enterprise app.
-  3. Repeat Step 1, but this time click **Change to personal**, and try to drop the content again.
+  3. Repeat Step 1, but this time select **Change to personal** and try to drop the content again.
 
       The content is dropped into the non-enterprise app.
 
@@ -85,7 +82,7 @@ You can try any of the processes included in these scenarios, but you should foc
       You should see a WIP-related warning box, asking you to click either **Keep at work** or **Change to personal**.
 
   2. Click **Keep at work**. The content isn't shared into Facebook.
-  3. Repeat Step 1, but this time click **Change to personal**, and try to share the content again.
+  3. Repeat Step 1, but this time select **Change to personal** and try to share the content again.
 
       The content is shared into Facebook.
 
@@ -107,7 +104,7 @@ You can try any of the processes included in these scenarios, but you should foc
 
 - **Use WIP on NTFS, FAT, and exFAT systems**:
 
-  1. Start an app that uses the FAT or exFAT file system (for example a SD card or USB flash drive), and appears on your allowed apps list.
+  1. Start an app that uses the FAT or exFAT file system (for example an SD card or USB flash drive), and appears on your allowed apps list.
   2. Create, edit, write, save, copy, and move files. Basic file and folder operations like copy, move, rename, delete, and so on, should work properly on encrypted files.
 
 - **Verify your shared files can use WIP**:

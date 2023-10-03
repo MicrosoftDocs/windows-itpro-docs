@@ -1,12 +1,12 @@
 ---
 title: CMPolicyEnterprise CSP
 description: Learn how the CMPolicyEnterprise CSP is used to define rules that the Connection Manager uses to identify the correct connection for a connection request.
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.topic: reference
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 06/26/2017
 ---
@@ -53,10 +53,10 @@ CMPolicy
 ----------------ConnectionID
 ----------------Type
 ```
-<a href="" id="policyname"></a>***policyName***  
+<a href="" id="policyname"></a>***policyName***
 Defines the name of the policy.
 
-<a href="" id="sid"></a>**SID**  
+<a href="" id="sid"></a>**SID**
 The value of SID depends on the ClientType.
 
 For Universal Windows Platform (UWP) app-based mapping policies, SID is the Package family name without curly brackets {}, not the application.
@@ -65,7 +65,7 @@ For non-UWP application-based mapping policies, SID is the application product I
 
 For host-based mapping policies, SID must be set to `*`.
 
-<a href="" id="clienttype"></a>**ClientType**  
+<a href="" id="clienttype"></a>**ClientType**
 Specifies the mapping policy type.
 
 The following list describes the available mapping policy types:
@@ -74,21 +74,21 @@ The following list describes the available mapping policy types:
 
 - Host-based mapping policies are applied to all types of clients requesting connections to specified host(s). To specify this mapping type, use the value `*`.
 
-<a href="" id="host"></a>**Host**  
+<a href="" id="host"></a>**Host**
 Specifies the name of a host pattern. The host name is matched to the connection request to select the right policy to use.
 
 The host pattern can have two wild cards, "\*" and "+". The host pattern isn't a URL pattern and there's no concept of transport or paths on the specific host. For example, the host pattern might be "\*.host\_name.com" to match any prefix to the host\_name.com domains. The host pattern will match "www.host\_name.com" and "mail.host\_name.com", but it will not match "host\_name.com".
 
-<a href="" id="orderedconnections"></a>**OrderedConnections**  
+<a href="" id="orderedconnections"></a>**OrderedConnections**
 Specifies whether the list of connections is in preference order.
 
 A value of "0" specifies that the connections aren't listed in order of preference. A value of "1" indicates that the listed connections are in order of preference.
 
-<a href="" id="connxxx"></a>**Conn**<strong>*XXX*</strong>  
+<a href="" id="connxxx"></a>**Conn**<strong>*XXX*</strong>
 
 Enumerates the connections associated with the policy. Element names begin with "Conn" followed by three-digits, which increment starting from "000". For example, a policy which applied to five connections would have element entries named "Conn000", "Conn001", "Conn002", "Conn003", and "Conn004".
 
-<a href="" id="connectionid"></a>**ConnectionID**  
+<a href="" id="connectionid"></a>**ConnectionID**
 Specifies a unique identifier for a connection within a group of connections. The exact value is based on the Type parameter.
 
 For `CMST_CONNECTION_NAME`, specify the connection name. For example, if you have a connection configured by using the CM\_CellularEntries configuration service provider, the connection name could be the name of the connection. If you have a NAP configured with the NAPID set to “GPRS1”, the connection name could be “GPRS1@WAP”.
@@ -133,7 +133,7 @@ For `CMST_CONNECTION_DEVICE_TYPE`, specify the GUID for the desired device type.
 |Bluetooth|{1D793123-701A-4fd0-B6AE-9C3C57E99C2C}|
 |Virtual|{EAA02CE5-9C70-4E87-97FE-55C9DEC847D4}|
 
-<a href="" id="type"></a>**Type**  
+<a href="" id="type"></a>**Type**
 Specifies the type of connection being referenced. The following list describes the available connection types:
 
 - `CMST_CONNECTION_NAME` – A connection specified by name.
@@ -170,20 +170,20 @@ Adding an application-based mapping policy. In this example, the ConnectionId fo
        <parm name="OrderedConnections" value="1" />
        <characteristic type="Connections">
            <characteristic type="Conn000">
-               <parm name="Type" value="CMST_CONNECTION_DEVICE_TYPE" /> 
-               <parm name="ConnectionId" value="{F9A53167-4016-4198-9B41-86D9522DC019}" /> 
+               <parm name="Type" value="CMST_CONNECTION_DEVICE_TYPE" />
+               <parm name="ConnectionId" value="{F9A53167-4016-4198-9B41-86D9522DC019}" />
            </characteristic>
            <characteristic type="Conn001">
-               <parm name="Type" value="CMST_CONNECTION_NETWORK_TYPE" /> 
-               <parm name="ConnectionId" value="{AFB7D659-FC1F-4EA5-BDD0-0FDA62676D96}" /> 
+               <parm name="Type" value="CMST_CONNECTION_NETWORK_TYPE" />
+               <parm name="ConnectionId" value="{AFB7D659-FC1F-4EA5-BDD0-0FDA62676D96}" />
            </characteristic>
            <characteristic type="Conn002">
-               <parm name="Type" value="CMST_CONNECTION_NAME" /> 
-               <parm name="ConnectionId" value="GPRSConn1" /> 
+               <parm name="Type" value="CMST_CONNECTION_NAME" />
+               <parm name="ConnectionId" value="GPRSConn1" />
            </characteristic>
            <characteristic type="Conn003">
-              <parm name="Type" value="CMST_CONNECTION_TYPE" /> 
-              <parm name="ConnectionId" value="{072FC7DC-1D93-40d1-9BB0-2114D7D73434}" /> 
+              <parm name="Type" value="CMST_CONNECTION_TYPE" />
+              <parm name="ConnectionId" value="{072FC7DC-1D93-40d1-9BB0-2114D7D73434}" />
            </characteristic>
        </characteristic>
       </characteristic>
@@ -215,20 +215,20 @@ Adding a host-based mapping policy. In this example, the ConnectionId for type C
        <parm name="OrderedConnections" value="1" />
        <characteristic type="Connections">
            <characteristic type="Conn000">
-               <parm name="Type" value="CMST_CONNECTION_DEVICE_TYPE" /> 
-               <parm name="ConnectionId" value="{F9A53167-4016-4198-9B41-86D9522DC019}" /> 
+               <parm name="Type" value="CMST_CONNECTION_DEVICE_TYPE" />
+               <parm name="ConnectionId" value="{F9A53167-4016-4198-9B41-86D9522DC019}" />
            </characteristic>
            <characteristic type="Conn001">
-               <parm name="Type" value="CMST_CONNECTION_NETWORK_TYPE" /> 
-               <parm name="ConnectionId" value="{AFB7D659-FC1F-4EA5-BDD0-0FDA62676D96}" /> 
+               <parm name="Type" value="CMST_CONNECTION_NETWORK_TYPE" />
+               <parm name="ConnectionId" value="{AFB7D659-FC1F-4EA5-BDD0-0FDA62676D96}" />
            </characteristic>
            <characteristic type="Conn002">
-               <parm name="Type" value="CMST_CONNECTION_NAME" /> 
-               <parm name="ConnectionId" value="GPRSConn1" /> 
+               <parm name="Type" value="CMST_CONNECTION_NAME" />
+               <parm name="ConnectionId" value="GPRSConn1" />
            </characteristic>
            <characteristic type="Conn003">
-               <parm name="Type" value="CMST_CONNECTION_TYPE" /> 
-               <parm name="ConnectionId" value="{072FC7DC-1D93-40d1-9BB0-2114D7D73434}" /> 
+               <parm name="Type" value="CMST_CONNECTION_TYPE" />
+               <parm name="ConnectionId" value="{072FC7DC-1D93-40d1-9BB0-2114D7D73434}" />
            </characteristic>
        </characteristic>
       </characteristic>
@@ -300,7 +300,7 @@ Adding an application-based mapping policy:
             <Data>CMST_CONNECTION_DEVICE_TYPE</Data>
         </Item>
     </Add>
-        </Atomic> 
+        </Atomic>
         <Final/>
     </SyncBody>
 </SyncML>
@@ -383,11 +383,11 @@ Adding a host-based mapping policy:
 
 ## Related topics
 
-[Configuration service provider reference](configuration-service-provider-reference.md)
+[Configuration service provider reference](index.yml)
 
- 
 
- 
+
+
 
 
 

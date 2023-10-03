@@ -1,786 +1,917 @@
 ---
-title: Policy CSP - Connectivity
-description: Learn how to use the Policy CSP - Connectivity setting to allow the user to enable Bluetooth or restrict access.
-ms.author: vinpa
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
+title: Connectivity Policy CSP
+description: Learn more about the Connectivity Area in Policy CSP.
 author: vinaypamnani-msft
-ms.localizationpriority: medium
-ms.date: 09/27/2019
-ms.reviewer: 
 manager: aaroncz
+ms.author: vinpa
+ms.date: 08/10/2023
+ms.localizationpriority: medium
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- Connectivity-Begin -->
 # Policy CSP - Connectivity
 
->[!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
+<!-- Connectivity-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Connectivity-Editable-End -->
 
-<hr/>
+<!-- AllowBluetooth-Begin -->
+## AllowBluetooth
 
-<!--Policies-->
-## Connectivity policies
+<!-- AllowBluetooth-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- AllowBluetooth-Applicability-End -->
 
-<dl>
-  <dd>
-    <a href="#connectivity-allowbluetooth">Connectivity/AllowBluetooth</a>
-  </dd>
-  <dd>
-    <a href="#connectivity-allowcellulardata">Connectivity/AllowCellularData</a>
-  </dd>
-  <dd>
-    <a href="#connectivity-allowcellulardataroaming">Connectivity/AllowCellularDataRoaming</a>
-  </dd>
-  <dd>
-    <a href="#connectivity-allowconnecteddevices">Connectivity/AllowConnectedDevices</a>
-  </dd>
-  <dd>
-    <a href="#connectivity-allowphonepclinking">Connectivity/AllowPhonePCLinking</a>
-  </dd>
-  <dd>
-    <a href="#connectivity-allowusbconnection">Connectivity/AllowUSBConnection</a>
-  </dd>
-  <dd>
-    <a href="#connectivity-allowvpnovercellular">Connectivity/AllowVPNOverCellular</a>
-  </dd>
-  <dd>
-    <a href="#connectivity-allowvpnroamingovercellular">Connectivity/AllowVPNRoamingOverCellular</a>
-  </dd>
-  <dd>
-    <a href="#connectivity-disableprintingoverhttp">Connectivity/DisablePrintingOverHTTP</a>
-  </dd>
-  <dd>
-    <a href="#connectivity-disabledownloadingofprintdriversoverhttp">Connectivity/DisableDownloadingOfPrintDriversOverHTTP</a>
-  </dd>
-  <dd>
-    <a href="#connectivity-disableinternetdownloadforwebpublishingandonlineorderingwizards">Connectivity/DisableInternetDownloadForWebPublishingAndOnlineOrderingWizards</a>
-  </dd>
-  <dd>
-    <a href="#connectivity-disallownetworkconnectivityactivetests">Connectivity/DisallowNetworkConnectivityActiveTests</a>
-  </dd>
-  <dd>
-    <a href="#connectivity-hardeneduncpaths">Connectivity/HardenedUNCPaths</a>
-  </dd>
-  <dd>
-    <a href="#connectivity-prohibitinstallationandconfigurationofnetworkbridge">Connectivity/ProhibitInstallationAndConfigurationOfNetworkBridge</a>
-  </dd>
-</dl>
+<!-- AllowBluetooth-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Connectivity/AllowBluetooth
+```
+<!-- AllowBluetooth-OmaUri-End -->
 
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="connectivity-allowbluetooth"></a>**Connectivity/AllowBluetooth**
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy allows the user to enable Bluetooth or restrict access.
+<!-- AllowBluetooth-Description-Begin -->
+<!-- Description-Source-DDF -->
+Allows the user to enable Bluetooth or restrict access.
 
 > [!NOTE]
->  This value isn't supported in Windows 10.
+> This value isn't supported in Windows Phone 8. 1 MDM and EAS, Windows 10 for desktop, or Windows 10 Mobile. If this isn't set or it's deleted, the default value of 2 (Allow) is used. Most restricted value is 0.
+<!-- AllowBluetooth-Description-End -->
 
-If this policy isn't set or is deleted, the default value of 2 (Allow) is used.
+<!-- AllowBluetooth-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowBluetooth-Editable-End -->
 
-Most restricted value is 0.
+<!-- AllowBluetooth-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
-<!--SupportedValues-->
-The following list shows the supported values:
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 2 |
+<!-- AllowBluetooth-DFProperties-End -->
 
--   0 – Disallow Bluetooth. If this is set to 0, the radio in the Bluetooth control panel will be grayed out and the user won't be able to turn on Bluetooth.
--   1 – Reserved. If this is set to 1, the radio in the Bluetooth control panel will be functional and the user will be able to turn on Bluetooth.
--   2 (default) – Allow Bluetooth. If this is set to 2, the radio in the Bluetooth control panel will be functional and the user will be able to turn on Bluetooth.
+<!-- AllowBluetooth-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--/SupportedValues-->
-<!--/Policy-->
+| Value | Description |
+|:--|:--|
+| 0 | Disallow Bluetooth. If this is set to 0, the radio in the Bluetooth control panel will be grayed out and the user won't be able to turn Bluetooth on. |
+| 2 (Default) | Allow Bluetooth. If this is set to 2, the radio in the Bluetooth control panel will be functional and the user will be able to turn Bluetooth on. |
+<!-- AllowBluetooth-AllowedValues-End -->
 
-<hr/>
+<!-- AllowBluetooth-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowBluetooth-Examples-End -->
 
-<!--Policy-->
-<a href="" id="connectivity-allowcellulardata"></a>**Connectivity/AllowCellularData**
+<!-- AllowBluetooth-End -->
 
-<!--SupportedSKUs-->
+<!-- AllowCellularData-Begin -->
+## AllowCellularData
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AllowCellularData-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- AllowCellularData-Applicability-End -->
 
+<!-- AllowCellularData-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Connectivity/AllowCellularData
+```
+<!-- AllowCellularData-OmaUri-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowCellularData-Description-Begin -->
+<!-- Description-Source-DDF -->
+Allows the cellular data channel on the device. Device reboot isn't required to enforce the policy.
+<!-- AllowCellularData-Description-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowCellularData-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowCellularData-Editable-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- AllowCellularData-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowCellularData-DFProperties-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- AllowCellularData-AllowedValues-Begin -->
+**Allowed values**:
 
-This policy allows the cellular data channel on the device. Device reboot isn't required to enforce the policy.
+| Value | Description |
+|:--|:--|
+| 0 | Don't allow the cellular data channel. The user can't turn it on. This value isn't supported in Windows 10, version 1511. |
+| 1 (Default) | Allow the cellular data channel. The user can turn it off. |
+| 2 | Allow the cellular data channel. The user can't turn it off. |
+<!-- AllowCellularData-AllowedValues-End -->
 
-<!--/Description-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- AllowCellularData-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowCellularData-Examples-End -->
 
--   0 – Don't allow the cellular data channel. The user can't turn it on. This value isn't supported in Windows 10, version 1511.
--   1 (default) – Allow the cellular data channel. The user can turn it off.
--   2 - Allow the cellular data channel. The user can't turn it off.
+<!-- AllowCellularData-End -->
 
-<!--/SupportedValues-->
-<!--/Policy-->
+<!-- AllowCellularDataRoaming-Begin -->
+## AllowCellularDataRoaming
 
-<hr/>
+<!-- AllowCellularDataRoaming-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- AllowCellularDataRoaming-Applicability-End -->
 
-<!--Policy-->
-<a href="" id="connectivity-allowcellulardataroaming"></a>**Connectivity/AllowCellularDataRoaming**
+<!-- AllowCellularDataRoaming-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Connectivity/AllowCellularDataRoaming
+```
+<!-- AllowCellularDataRoaming-OmaUri-End -->
 
-<!--SupportedSKUs-->
+<!-- AllowCellularDataRoaming-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting prevents clients from connecting to Mobile Broadband networks when the client is registered on a roaming provider network.
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+- If this policy setting is enabled, all automatic and manual connection attempts to roaming provider networks are blocked until the client registers with the home provider network.
 
+- If this policy setting isn't configured or is disabled, clients are allowed to connect to roaming provider Mobile Broadband networks.
+<!-- AllowCellularDataRoaming-Description-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowCellularDataRoaming-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowCellularDataRoaming-Editable-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowCellularDataRoaming-DFProperties-Begin -->
+**Description framework properties**:
 
-> [!div class = "checklist"]
-> * Device
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowCellularDataRoaming-DFProperties-End -->
 
-<hr/>
+<!-- AllowCellularDataRoaming-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--/Scope-->
-<!--Description-->
-Allows or disallows cellular data roaming on the device. Device reboot isn't required to enforce the policy.
+| Value | Description |
+|:--|:--|
+| 0 | Don't allow cellular data roaming. The user can't turn it on. This value isn't supported in Windows 10, version 1511. |
+| 1 (Default) | Allow cellular data roaming. |
+| 2 | Allow cellular data roaming on. The user can't turn it off. |
+<!-- AllowCellularDataRoaming-AllowedValues-End -->
 
-Most restricted value is 0.
+<!-- AllowCellularDataRoaming-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Prohibit connection to roaming Mobile Broadband networks*
--   GP name: *WCM_DisableRoaming*
--   GP path: *Network/Windows Connection Manager*
--   GP ADMX file name: *WCM.admx*
+| Name | Value |
+|:--|:--|
+| Name | WCM_DisableRoaming |
+| Friendly Name | Prohibit connection to roaming Mobile Broadband networks |
+| Location | Computer Configuration |
+| Path | Network > Windows Connection Manager |
+| Registry Key Name | Software\Policies\Microsoft\Windows\WcmSvc\GroupPolicy |
+| Registry Value Name | fBlockRoaming |
+| ADMX File Name | WCM.admx |
+<!-- AllowCellularDataRoaming-GpMapping-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- AllowCellularDataRoaming-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+**Validate**:
 
--   0 – Don't allow cellular data roaming. The user can't turn it on. This value isn't supported in Windows 10, version 1511.
--   1 (default) – Allow cellular data roaming.
--   2 - Allow cellular data roaming on. The user can't turn it off.
+To validate, the enterprise can confirm by observing the roaming enable switch in the UX. It will be inactive if the roaming policy is being enforced by the enterprise policy. To validate on a device, perform the following steps:
 
-<!--/SupportedValues-->
-<!--Validation-->
-To validate, the enterprise can confirm by observing the roaming enable switch in the UX. It will be inactive if the roaming policy is being enforced by the enterprise policy.
+1. Go to Cellular & SIM.
+2. Click on the SIM (next to the signal strength icon) and select **Properties**.
+3. On the Properties page, select **Data roaming options**.
+<!-- AllowCellularDataRoaming-Examples-End -->
 
-To validate on devices, perform the following steps:
+<!-- AllowCellularDataRoaming-End -->
 
-1.  Go to Cellular & SIM.
-2.  Click on the SIM (next to the signal strength icon) and select **Properties**.
-3.  On the Properties page, select **Data roaming options**.
+<!-- AllowConnectedDevices-Begin -->
+## AllowConnectedDevices
 
-<!--/Validation-->
-<!--/Policy-->
+<!-- AllowConnectedDevices-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- AllowConnectedDevices-Applicability-End -->
 
-<hr/>
+<!-- AllowConnectedDevices-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Connectivity/AllowConnectedDevices
+```
+<!-- AllowConnectedDevices-OmaUri-End -->
 
-<!--Policy-->
-<a href="" id="connectivity-allowconnecteddevices"></a>**Connectivity/AllowConnectedDevices**
+<!-- AllowConnectedDevices-Description-Begin -->
+<!-- Description-Source-DDF -->
 
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
 > [!NOTE]
-> This policy requires reboot to take effect.
+> This policy requires reboot to take effect. Allows IT Admins the ability to disable the Connected Devices Platform (CDP) component. CDP enables discovery and connection to other devices (either proximally with BT/LAN or through the cloud) to support remote app launching, remote messaging, remote app sessions, and other cross-device experiences.
+<!-- AllowConnectedDevices-Description-End -->
 
-This policy allows IT Admins the ability to disable the Connected Devices Platform (CDP) component. CDP enables discovery and connection to other devices (either proximally with BT/LAN or through the cloud) to support remote app launching, remote messaging, remote app sessions, and other cross-device experiences.
+<!-- AllowConnectedDevices-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowConnectedDevices-Editable-End -->
 
-<!--/Description-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- AllowConnectedDevices-DFProperties-Begin -->
+**Description framework properties**:
 
--   1 (default) - Allow (CDP service available).
--   0 - Disable (CDP service not available).
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowConnectedDevices-DFProperties-End -->
 
-<!--/SupportedValues-->
-<!--/Policy-->
+<!-- AllowConnectedDevices-AllowedValues-Begin -->
+**Allowed values**:
 
-<hr/>
+| Value | Description |
+|:--|:--|
+| 0 | Disable (CDP service not available). |
+| 1 (Default) | Allow (CDP service available). |
+<!-- AllowConnectedDevices-AllowedValues-End -->
 
-<!--Policy-->
-<a href="" id="connectivity-allowphonepclinking"></a>**Connectivity/AllowPhonePCLinking**
+<!-- AllowConnectedDevices-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowConnectedDevices-Examples-End -->
 
-<!--SupportedSKUs-->
+<!-- AllowConnectedDevices-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AllowNFC-Begin -->
+## AllowNFC
 
+> [!NOTE]
+> This policy is deprecated and may be removed in a future release.
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowNFC-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- AllowNFC-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowNFC-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Connectivity/AllowNFC
+```
+<!-- AllowNFC-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- AllowNFC-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy is deprecated.
+<!-- AllowNFC-Description-End -->
 
-<hr/>
+<!-- AllowNFC-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowNFC-Editable-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy allows IT admins to turn off the ability to Link a Phone with a PC to continue tasks, such as reading, email, and other tasks that require linking between Phone and PC.
+<!-- AllowNFC-DFProperties-Begin -->
+**Description framework properties**:
 
-If you enable this policy setting, the Windows device will be able to enroll in Phone-PC linking functionality and participate in 'Continue on PC experiences'. 
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowNFC-DFProperties-End -->
 
-If you disable this policy setting, the Windows device isn't allowed to be linked to phones, will remove itself from the device list of any linked Phones, and can't participate in 'Continue on PC experiences'.
+<!-- AllowNFC-AllowedValues-Begin -->
+**Allowed values**:
 
-If you don't configure this policy setting, the default behavior depends on the Windows edition. Changes to this policy take effect on reboot.
+| Value | Description |
+|:--|:--|
+| 0 | Disabled. |
+| 1 (Default) | Enabled. |
+<!-- AllowNFC-AllowedValues-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP name: *enableMMX*
--   GP ADMX file name: *grouppolicy.admx*
+<!-- AllowNFC-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowNFC-Examples-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-This setting supports a range of values between 0 and 1.
+<!-- AllowNFC-End -->
 
-- 0 - Don't link
-- 1 (default) - Allow phone-PC linking
+<!-- AllowPhonePCLinking-Begin -->
+## AllowPhonePCLinking
 
-<!--/SupportedValues-->
-<!--Validation-->
-Validation:
+<!-- AllowPhonePCLinking-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- AllowPhonePCLinking-Applicability-End -->
 
+<!-- AllowPhonePCLinking-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Connectivity/AllowPhonePCLinking
+```
+<!-- AllowPhonePCLinking-OmaUri-End -->
+
+<!-- AllowPhonePCLinking-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy allows IT admins to turn off the ability to Link a Phone with a PC to continue reading, emailing and other tasks that requires linking between Phone and PC.
+
+- If you enable this policy setting, the Windows device will be able to enroll in Phone-PC linking functionality and participate in Continue on PC experiences.
+
+- If you disable this policy setting, the Windows device isn't allowed to be linked to Phones, will remove itself from the device list of any linked Phones, and can't participate in Continue on PC experiences.
+
+- If you don't configure this policy setting, the default behavior depends on the Windows edition. Changes to this policy take effect on reboot.
+<!-- AllowPhonePCLinking-Description-End -->
+
+<!-- AllowPhonePCLinking-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowPhonePCLinking-Editable-End -->
+
+<!-- AllowPhonePCLinking-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowPhonePCLinking-DFProperties-End -->
+
+<!-- AllowPhonePCLinking-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Don't link. |
+| 1 (Default) | Allow phone-PC linking. |
+<!-- AllowPhonePCLinking-AllowedValues-End -->
+
+<!-- AllowPhonePCLinking-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | EnableMMX |
+| Friendly Name | Phone-PC linking on this device |
+| Location | Computer Configuration |
+| Path | System > Group Policy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\System |
+| Registry Value Name | EnableMmx |
+| ADMX File Name | GroupPolicy.admx |
+<!-- AllowPhonePCLinking-GpMapping-End -->
+
+<!-- AllowPhonePCLinking-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+**Validate**:
 
 If the Connectivity/AllowPhonePCLinking policy is configured to value 0, add a phone button in the Phones section in settings will be grayed out and clicking it will not launch the window for a user to enter their phone number.
 
 Device that has previously opt-in to MMX will also stop showing on the device list.
+<!-- AllowPhonePCLinking-Examples-End -->
 
-<!--/Validation-->
-<!--/Policy-->
+<!-- AllowPhonePCLinking-End -->
 
-<hr/>
+<!-- AllowUSBConnection-Begin -->
+## AllowUSBConnection
 
-<!--Policy-->
-<a href="" id="connectivity-allowusbconnection"></a>**Connectivity/AllowUSBConnection**
+<!-- AllowUSBConnection-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- AllowUSBConnection-Applicability-End -->
 
-<!--SupportedSKUs-->
+<!-- AllowUSBConnection-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Connectivity/AllowUSBConnection
+```
+<!-- AllowUSBConnection-OmaUri-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Windows SE|No|No|
-|Business|No|No|
-|Enterprise|No|No|
-|Education|No|No|
+<!-- AllowUSBConnection-Description-Begin -->
+<!-- Description-Source-DDF -->
 
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
 > [!NOTE]
-> Currently, this policy is supported only in HoloLens 2, Hololens (1st gen) Commercial Suite, and HoloLens (1st gen) Development Edition.
+> Currently, this policy is supported only in HoloLens 2, HoloLens (1st gen) Commercial Suite, and HoloLens (1st gen) Development Edition. Enables USB connection between the device and a computer to sync files with the device or to use developer tools to deploy or debug applications. Changing this policy doesn't affect USB charging. Both Media Transfer Protocol (MTP) and IP over USB are disabled when this policy is enforced. Most restricted value is 0.
+<!-- AllowUSBConnection-Description-End -->
 
-Enables USB connection between the device and a computer to sync files with the device or to use developer tools to deploy or debug applications. Changing this policy doesn't affect USB charging.
+<!-- AllowUSBConnection-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowUSBConnection-Editable-End -->
 
-Both Media Transfer Protocol (MTP) and IP over USB are disabled when this policy is enforced.
+<!-- AllowUSBConnection-DFProperties-Begin -->
+**Description framework properties**:
 
-Most restricted value is 0.
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowUSBConnection-DFProperties-End -->
 
-<!--/Description-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- AllowUSBConnection-AllowedValues-Begin -->
+**Allowed values**:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. |
+| 1 (Default) | Allowed. |
+<!-- AllowUSBConnection-AllowedValues-End -->
 
-<!--/SupportedValues-->
-<!--/Policy-->
+<!-- AllowUSBConnection-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowUSBConnection-Examples-End -->
 
-<hr/>
+<!-- AllowUSBConnection-End -->
 
-<!--Policy-->
-<a href="" id="connectivity-allowvpnovercellular"></a>**Connectivity/AllowVPNOverCellular**
+<!-- AllowVPNOverCellular-Begin -->
+## AllowVPNOverCellular
 
-<!--SupportedSKUs-->
+<!-- AllowVPNOverCellular-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- AllowVPNOverCellular-Applicability-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AllowVPNOverCellular-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Connectivity/AllowVPNOverCellular
+```
+<!-- AllowVPNOverCellular-OmaUri-End -->
 
+<!-- AllowVPNOverCellular-Description-Begin -->
+<!-- Description-Source-DDF -->
+Specifies what type of underlying connections VPN is allowed to use. Most restricted value is 0.
+<!-- AllowVPNOverCellular-Description-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowVPNOverCellular-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowVPNOverCellular-Editable-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowVPNOverCellular-DFProperties-Begin -->
+**Description framework properties**:
 
-> [!div class = "checklist"]
-> * Device
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowVPNOverCellular-DFProperties-End -->
 
-<hr/>
+<!-- AllowVPNOverCellular-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--/Scope-->
-<!--Description-->
-Specifies what type of underlying connections VPN is allowed to use.
+| Value | Description |
+|:--|:--|
+| 0 | VPN isn't allowed over cellular. |
+| 1 (Default) | VPN can use any connection, including cellular. |
+<!-- AllowVPNOverCellular-AllowedValues-End -->
 
-Most restricted value is 0.
+<!-- AllowVPNOverCellular-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowVPNOverCellular-Examples-End -->
 
-<!--/Description-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- AllowVPNOverCellular-End -->
 
--   0 – VPN isn't allowed over cellular.
--   1 (default) – VPN can use any connection, including cellular.
+<!-- AllowVPNRoamingOverCellular-Begin -->
+## AllowVPNRoamingOverCellular
 
-<!--/SupportedValues-->
-<!--/Policy-->
+<!-- AllowVPNRoamingOverCellular-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- AllowVPNRoamingOverCellular-Applicability-End -->
 
-<hr/>
+<!-- AllowVPNRoamingOverCellular-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Connectivity/AllowVPNRoamingOverCellular
+```
+<!-- AllowVPNRoamingOverCellular-OmaUri-End -->
 
-<!--Policy-->
-<a href="" id="connectivity-allowvpnroamingovercellular"></a>**Connectivity/AllowVPNRoamingOverCellular**
+<!-- AllowVPNRoamingOverCellular-Description-Begin -->
+<!-- Description-Source-DDF -->
+Prevents the device from connecting to VPN when the device roams over cellular networks. Most restricted value is 0.
+<!-- AllowVPNRoamingOverCellular-Description-End -->
 
-<!--SupportedSKUs-->
+<!-- AllowVPNRoamingOverCellular-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowVPNRoamingOverCellular-Editable-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AllowVPNRoamingOverCellular-DFProperties-Begin -->
+**Description framework properties**:
 
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowVPNRoamingOverCellular-DFProperties-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowVPNRoamingOverCellular-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. |
+| 1 (Default) | Allowed. |
+<!-- AllowVPNRoamingOverCellular-AllowedValues-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- AllowVPNRoamingOverCellular-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowVPNRoamingOverCellular-Examples-End -->
 
-<hr/>
+<!-- AllowVPNRoamingOverCellular-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy prevents the device from connecting to VPN when the device roams over cellular networks.
+<!-- DiablePrintingOverHTTP-Begin -->
+## DiablePrintingOverHTTP
 
-Most restricted value is 0.
+<!-- DiablePrintingOverHTTP-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- DiablePrintingOverHTTP-Applicability-End -->
 
-<!--/Description-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- DiablePrintingOverHTTP-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Connectivity/DiablePrintingOverHTTP
+```
+<!-- DiablePrintingOverHTTP-OmaUri-End -->
 
--   0 – Not allowed.
--   1 (default) – Allowed.
-
-<!--/SupportedValues-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="connectivity-disableprintingoverhttp"></a>**Connectivity/DisablePrintingOverHTTP**
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- DiablePrintingOverHTTP-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting specifies whether to allow printing over HTTP from this client.
 
-Printing over HTTP allows a client to print to printers on the intranet and the Internet.
+Printing over HTTP allows a client to print to printers on the intranet as well as the Internet.
 
-Note: This policy setting affects the client side of Internet printing only. It doesn't prevent this computer from acting as an Internet Printing server and making its shared printers available via HTTP.
+> [!NOTE]
+> This policy setting affects the client side of Internet printing only. It doesn't prevent this computer from acting as an Internet Printing server and making its shared printers available via HTTP.
 
-If you enable this policy setting, it prevents this client from printing to Internet printers over HTTP.
+- If you enable this policy setting, it prevents this client from printing to Internet printers over HTTP.
 
-If you disable or don't configure this policy setting, users can choose to print to Internet printers over HTTP.
+- If you disable or don't configure this policy setting, users can choose to print to Internet printers over HTTP.
 
 Also, see the "Web-based printing" policy setting in Computer Configuration/Administrative Templates/Printers.
+<!-- DiablePrintingOverHTTP-Description-End -->
 
-<!--/Description-->
+<!-- DiablePrintingOverHTTP-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DiablePrintingOverHTTP-Editable-End -->
 
+<!-- DiablePrintingOverHTTP-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:
--   GP Friendly name: *Turn off printing over HTTP*
--   GP name: *DisableHTTPPrinting_2*
--   GP path: *Internet Communication settings*
--   GP ADMX file name: *ICM.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DiablePrintingOverHTTP-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+<!-- DiablePrintingOverHTTP-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<hr/>
+**ADMX mapping**:
 
-<!--Policy-->
-<a href="" id="connectivity-disabledownloadingofprintdriversoverhttp"></a>**Connectivity/DisableDownloadingOfPrintDriversOverHTTP**
+| Name | Value |
+|:--|:--|
+| Name | DisableHTTPPrinting_2 |
+| Friendly Name | Turn off printing over HTTP |
+| Location | Computer Configuration |
+| Path | InternetManagement > Internet Communication settings |
+| Registry Key Name | Software\Policies\Microsoft\Windows NT\Printers |
+| Registry Value Name | DisableHTTPPrinting |
+| ADMX File Name | ICM.admx |
+<!-- DiablePrintingOverHTTP-AdmxBacked-End -->
 
-<!--SupportedSKUs-->
+<!-- DiablePrintingOverHTTP-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DiablePrintingOverHTTP-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- DiablePrintingOverHTTP-End -->
 
+<!-- DisableDownloadingOfPrintDriversOverHTTP-Begin -->
+## DisableDownloadingOfPrintDriversOverHTTP
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DisableDownloadingOfPrintDriversOverHTTP-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- DisableDownloadingOfPrintDriversOverHTTP-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DisableDownloadingOfPrintDriversOverHTTP-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Connectivity/DisableDownloadingOfPrintDriversOverHTTP
+```
+<!-- DisableDownloadingOfPrintDriversOverHTTP-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- DisableDownloadingOfPrintDriversOverHTTP-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting specifies whether to allow this client to download print driver packages over HTTP.
 
 To set up HTTP printing, non-inbox drivers need to be downloaded over HTTP.
 
-Note: This policy setting doesn't prevent the client from printing to printers on the Intranet or the Internet over HTTP.  It only prohibits downloading drivers that aren't already installed locally.
+> [!NOTE]
+> This policy setting doesn't prevent the client from printing to printers on the Intranet or the Internet over HTTP. It only prohibits downloading drivers that aren't already installed locally.
 
-If you enable this policy setting, print drivers can't be downloaded over HTTP.
+- If you enable this policy setting, print drivers can't be downloaded over HTTP.
 
-If you disable or don't configure this policy setting, users can download print drivers over HTTP.
+- If you disable or don't configure this policy setting, users can download print drivers over HTTP.
+<!-- DisableDownloadingOfPrintDriversOverHTTP-Description-End -->
 
-<!--/Description-->
+<!-- DisableDownloadingOfPrintDriversOverHTTP-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableDownloadingOfPrintDriversOverHTTP-Editable-End -->
 
+<!-- DisableDownloadingOfPrintDriversOverHTTP-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:
--   GP Friendly name: *Turn off downloading of print drivers over HTTP*
--   GP name: *DisableWebPnPDownload_2*
--   GP path: *Internet Communication settings*
--   GP ADMX file name: *ICM.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisableDownloadingOfPrintDriversOverHTTP-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+<!-- DisableDownloadingOfPrintDriversOverHTTP-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<hr/>
+**ADMX mapping**:
 
-<!--Policy-->
-<a href="" id="connectivity-disableinternetdownloadforwebpublishingandonlineorderingwizards"></a>**Connectivity/DisableInternetDownloadForWebPublishingAndOnlineOrderingWizards**
+| Name | Value |
+|:--|:--|
+| Name | DisableWebPnPDownload_2 |
+| Friendly Name | Turn off downloading of print drivers over HTTP |
+| Location | Computer Configuration |
+| Path | InternetManagement > Internet Communication settings |
+| Registry Key Name | Software\Policies\Microsoft\Windows NT\Printers |
+| Registry Value Name | DisableWebPnPDownload |
+| ADMX File Name | ICM.admx |
+<!-- DisableDownloadingOfPrintDriversOverHTTP-AdmxBacked-End -->
 
-<!--SupportedSKUs-->
+<!-- DisableDownloadingOfPrintDriversOverHTTP-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableDownloadingOfPrintDriversOverHTTP-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- DisableDownloadingOfPrintDriversOverHTTP-End -->
 
+<!-- DisableInternetDownloadForWebPublishingAndOnlineOrderingWizards-Begin -->
+## DisableInternetDownloadForWebPublishingAndOnlineOrderingWizards
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DisableInternetDownloadForWebPublishingAndOnlineOrderingWizards-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- DisableInternetDownloadForWebPublishingAndOnlineOrderingWizards-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DisableInternetDownloadForWebPublishingAndOnlineOrderingWizards-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Connectivity/DisableInternetDownloadForWebPublishingAndOnlineOrderingWizards
+```
+<!-- DisableInternetDownloadForWebPublishingAndOnlineOrderingWizards-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- DisableInternetDownloadForWebPublishingAndOnlineOrderingWizards-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting specifies whether Windows should download a list of providers for the web publishing and online ordering wizards.
 
 These wizards allow users to select from a list of companies that provide services such as online storage and photographic printing. By default, Windows displays providers downloaded from a Windows website in addition to providers specified in the registry.
 
-If you enable this policy setting, Windows doesn't download providers, and only the service providers that are cached in the local registry are displayed.
+- If you enable this policy setting, Windows doesn't download providers, and only the service providers that are cached in the local registry are displayed.
 
-If you disable or don't configure this policy setting, a list of providers is downloaded when the user uses the web publishing or online ordering wizards.
+- If you disable or don't configure this policy setting, a list of providers are downloaded when the user uses the web publishing or online ordering wizards.
 
-For more information, including details on specifying service providers in the registry, see the documentation for the web publishing and online ordering wizards.
+See the documentation for the web publishing and online ordering wizards for more information, including details on specifying service providers in the registry.
+<!-- DisableInternetDownloadForWebPublishingAndOnlineOrderingWizards-Description-End -->
 
-<!--/Description-->
+<!-- DisableInternetDownloadForWebPublishingAndOnlineOrderingWizards-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableInternetDownloadForWebPublishingAndOnlineOrderingWizards-Editable-End -->
 
+<!-- DisableInternetDownloadForWebPublishingAndOnlineOrderingWizards-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:
--   GP Friendly name: *Turn off Internet download for Web publishing and online ordering wizards*
--   GP name: *ShellPreventWPWDownload_2*
--   GP path: *Internet Communication settings*
--   GP ADMX file name: *ICM.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisableInternetDownloadForWebPublishingAndOnlineOrderingWizards-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+<!-- DisableInternetDownloadForWebPublishingAndOnlineOrderingWizards-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<hr/>
+**ADMX mapping**:
 
-<!--Policy-->
-<a href="" id="connectivity-disallownetworkconnectivityactivetests"></a>**Connectivity/DisallowNetworkConnectivityActiveTests**
+| Name | Value |
+|:--|:--|
+| Name | ShellPreventWPWDownload_2 |
+| Friendly Name | Turn off Internet download for Web publishing and online ordering wizards |
+| Location | Computer Configuration |
+| Path | InternetManagement > Internet Communication settings |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoWebServices |
+| ADMX File Name | ICM.admx |
+<!-- DisableInternetDownloadForWebPublishingAndOnlineOrderingWizards-AdmxBacked-End -->
 
-<!--SupportedSKUs-->
+<!-- DisableInternetDownloadForWebPublishingAndOnlineOrderingWizards-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableInternetDownloadForWebPublishingAndOnlineOrderingWizards-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- DisableInternetDownloadForWebPublishingAndOnlineOrderingWizards-End -->
 
+<!-- DisallowNetworkConnectivityActiveTests-Begin -->
+## DisallowNetworkConnectivityActiveTests
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DisallowNetworkConnectivityActiveTests-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- DisallowNetworkConnectivityActiveTests-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DisallowNetworkConnectivityActiveTests-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Connectivity/DisallowNetworkConnectivityActiveTests
+```
+<!-- DisallowNetworkConnectivityActiveTests-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- DisallowNetworkConnectivityActiveTests-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting turns off the active tests performed by the Windows Network Connectivity Status Indicator (NCSI) to determine whether your computer is connected to the Internet or to a more limited network.
 
-<hr/>
+As part of determining the connectivity level, NCSI performs one of two active tests: downloading a page from a dedicated Web server or making a DNS request for a dedicated address.
 
-<!--/Scope-->
-<!--Description-->
-Network Connection Status Indicator (NCSI) detects Internet connectivity and corporate network connectivity status. NCSI sends a DNS request and HTTP query to `<http://www.msftconnecttest.com/connecttest.txt>` to determine if the device can communicate with the Internet.  This policy disables the NCSI active probe, preventing network connectivity to `www.msftconnecttest.com`.
+- If you enable this policy setting, NCSI doesn't run either of the two active tests. This may reduce the ability of NCSI, and of other components that use NCSI, to determine Internet access.
 
-Value type is integer.
+- If you disable or don't configure this policy setting, NCSI runs one of the two active tests.
+<!-- DisallowNetworkConnectivityActiveTests-Description-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Turn off Windows Network Connectivity Status Indicator active tests*
--   GP name: *NoActiveProbe*
--   GP path: *Internet Communication settings*
--   GP ADMX file name: *ICM.admx*
+<!-- DisallowNetworkConnectivityActiveTests-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisallowNetworkConnectivityActiveTests-Editable-End -->
 
-<!--/ADMXMapped-->
-<!--/Policy-->
+<!-- DisallowNetworkConnectivityActiveTests-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- DisallowNetworkConnectivityActiveTests-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="connectivity-hardeneduncpaths"></a>**Connectivity/HardenedUNCPaths**
+<!-- DisallowNetworkConnectivityActiveTests-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--SupportedSKUs-->
+| Value | Description |
+|:--|:--|
+| 1 | Allow. |
+| 0 (Default) | Block. |
+<!-- DisallowNetworkConnectivityActiveTests-AllowedValues-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- DisallowNetworkConnectivityActiveTests-GpMapping-Begin -->
+**Group policy mapping**:
 
+| Name | Value |
+|:--|:--|
+| Name | NoActiveProbe |
+| Friendly Name | Turn off Windows Network Connectivity Status Indicator active tests |
+| Location | Computer Configuration |
+| Path | InternetManagement > Internet Communication settings |
+| Registry Key Name | Software\Policies\Microsoft\Windows\NetworkConnectivityStatusIndicator |
+| Registry Value Name | NoActiveProbe |
+| ADMX File Name | ICM.admx |
+<!-- DisallowNetworkConnectivityActiveTests-GpMapping-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DisallowNetworkConnectivityActiveTests-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisallowNetworkConnectivityActiveTests-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DisallowNetworkConnectivityActiveTests-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- HardenedUNCPaths-Begin -->
+## HardenedUNCPaths
 
-<hr/>
+<!-- HardenedUNCPaths-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- HardenedUNCPaths-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- HardenedUNCPaths-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Connectivity/HardenedUNCPaths
+```
+<!-- HardenedUNCPaths-OmaUri-End -->
+
+<!-- HardenedUNCPaths-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting configures secure access to UNC paths.
 
-If you enable this policy, Windows only allows access to the specified UNC paths after fulfilling other security requirements.
+If you enable this policy, Windows only allows access to the specified UNC paths after fulfilling additional security requirements.
+<!-- HardenedUNCPaths-Description-End -->
 
-<!--/Description-->
+<!-- HardenedUNCPaths-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+For more information, see [MS15-011: Vulnerability in Group Policy could allow remote code execution](https://support.microsoft.com/kb/3000483).
+<!-- HardenedUNCPaths-Editable-End -->
 
+<!-- HardenedUNCPaths-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:
--   GP Friendly name: *Hardened UNC Paths*
--   GP name: *Pol_HardenedPaths*
--   GP path: *Network/Network Provider*
--   GP ADMX file name: *networkprovider.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- HardenedUNCPaths-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+<!-- HardenedUNCPaths-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<hr/>
+**ADMX mapping**:
 
-<!--Policy-->
-<a href="" id="connectivity-prohibitinstallationandconfigurationofnetworkbridge"></a>**Connectivity/ProhibitInstallationAndConfigurationOfNetworkBridge**
+| Name | Value |
+|:--|:--|
+| Name | Pol_HardenedPaths |
+| Friendly Name | Hardened UNC Paths |
+| Location | Computer Configuration |
+| Path | Network > Network Provider |
+| Registry Key Name | Software\Policies\Microsoft\Windows\NetworkProvider\HardenedPaths |
+| ADMX File Name | NetworkProvider.admx |
+<!-- HardenedUNCPaths-AdmxBacked-End -->
 
-<!--SupportedSKUs-->
+<!-- HardenedUNCPaths-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- HardenedUNCPaths-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- HardenedUNCPaths-End -->
 
+<!-- ProhibitInstallationAndConfigurationOfNetworkBridge-Begin -->
+## ProhibitInstallationAndConfigurationOfNetworkBridge
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ProhibitInstallationAndConfigurationOfNetworkBridge-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- ProhibitInstallationAndConfigurationOfNetworkBridge-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ProhibitInstallationAndConfigurationOfNetworkBridge-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Connectivity/ProhibitInstallationAndConfigurationOfNetworkBridge
+```
+<!-- ProhibitInstallationAndConfigurationOfNetworkBridge-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- ProhibitInstallationAndConfigurationOfNetworkBridge-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Determines whether a user can install and configure the Network Bridge.
 
-<hr/>
+> [!IMPORTANT]
+> This settings is location aware. It only applies when a computer is connected to the same DNS domain network it was connected to when the setting was refreshed on that computer. If a computer is connected to a DNS domain network other than the one it was connected to when the setting was refreshed, this setting doesn't apply.
 
-<!--/Scope-->
-<!--Description-->
-This policy determines whether a user can install and configure the Network Bridge.
-
-Important: This setting is location aware. It only applies when a computer is connected to the same DNS domain network it was connected to when the setting was refreshed on that computer. If a computer is connected to a DNS domain network other than the one it was connected to when the setting was refreshed, this setting doesn't apply.
-
-The Network Bridge allows users to create a layer 2 MAC bridge, enabling them to connect two or more network segments together. This connection appears in the Network Connections folder.
+The Network Bridge allows users to create a layer 2 MAC bridge, enabling them to connect two or more network segements together. This connection appears in the Network Connections folder.
 
 If you disable this setting or don't configure it, the user will be able to create and modify the configuration of a Network Bridge. Enabling this setting doesn't remove an existing Network Bridge from the user's computer.
+<!-- ProhibitInstallationAndConfigurationOfNetworkBridge-Description-End -->
 
-<!--/Description-->
+<!-- ProhibitInstallationAndConfigurationOfNetworkBridge-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ProhibitInstallationAndConfigurationOfNetworkBridge-Editable-End -->
 
+<!-- ProhibitInstallationAndConfigurationOfNetworkBridge-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:
--   GP Friendly name: *Prohibit installation and configuration of Network Bridge on your DNS domain network*
--   GP name: *NC_AllowNetBridge_NLA*
--   GP path: *Network/Network Connections*
--   GP ADMX file name: *NetworkConnections.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- ProhibitInstallationAndConfigurationOfNetworkBridge-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+<!-- ProhibitInstallationAndConfigurationOfNetworkBridge-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<hr/>
+**ADMX mapping**:
 
+| Name | Value |
+|:--|:--|
+| Name | NC_AllowNetBridge_NLA |
+| Friendly Name | Prohibit installation and configuration of Network Bridge on your DNS domain network |
+| Location | Computer Configuration |
+| Path | Network > Network Connections |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Network Connections |
+| Registry Value Name | NC_AllowNetBridge_NLA |
+| ADMX File Name | NetworkConnections.admx |
+<!-- ProhibitInstallationAndConfigurationOfNetworkBridge-AdmxBacked-End -->
 
+<!-- ProhibitInstallationAndConfigurationOfNetworkBridge-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ProhibitInstallationAndConfigurationOfNetworkBridge-Examples-End -->
 
-<!--/Policies-->
+<!-- ProhibitInstallationAndConfigurationOfNetworkBridge-End -->
+
+<!-- Connectivity-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- Connectivity-CspMoreInfo-End -->
+
+<!-- Connectivity-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

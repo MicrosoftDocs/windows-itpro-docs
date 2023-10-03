@@ -1,13 +1,10 @@
 ---
-title: List of enlightened Microsoft apps for use with Windows Information Protection (WIP) (Windows 10)
+title: List of enlightened Microsoft apps for use with Windows Information Protection (WIP) 
 description: Learn the difference between enlightened and unenlightened apps. Find out which enlightened apps are provided by Microsoft. Learn how to allow-list them.
 ms.reviewer: 
-ms.prod: m365-security
-ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
-manager: dansimp
-ms.collection: M365-security-compliance
+author: aczechowski
+ms.author: aaroncz
+manager: aaroncz
 ms.topic: conceptual
 ms.date: 05/02/2019
 ---
@@ -83,7 +80,7 @@ Microsoft still has apps that are unenlightened, but which have been tested and 
 > [!NOTE]
 > As of January 2019 it is no longer necessary to add Intune Company Portal as an exempt app since it is now included in the default list of protected apps.
 
-You can add any or all of the enlightened Microsoft apps to your allowed apps list. Included here is the **Publisher name**, **Product or File name**, and **App Type** info for both Microsoft Intune and Microsoft Endpoint Configuration Manager.
+You can add any or all of the enlightened Microsoft apps to your allowed apps list. Included here is the **Publisher name**, **Product or File name**, and **App Type** info for both Microsoft Intune and Microsoft Configuration Manager.
 
 
 |                     Product name                     |                                                                                                                                                                                                                        App info                                                                                                                                                                                                                        |

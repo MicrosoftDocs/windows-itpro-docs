@@ -1,21 +1,20 @@
 ---
-title: Maximum lifetime for service ticket (Windows 10)
+title: Maximum lifetime for service ticket 
 description: Describes the best practices, location, values, policy management, and security considerations for the Maximum lifetime for service ticket security policy setting.
 ms.assetid: 484bf05a-3858-47fc-bc02-6599ca860247
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Maximum lifetime for service ticket

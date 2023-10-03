@@ -1,12 +1,14 @@
 ---
-manager: dansimp
-ms.author: dansimp
-title: Override Process Mitigation Options (Windows 10)
+title: Override Process Mitigation Options 
 description: How to use Group Policy to override individual Process Mitigation Options settings and to help enforce specific app-related security policies.
-ms.prod: m365-security
-author: dulcemontemayor
+ms.prod: windows-client
+author: aczechowski
+ms.author: aaroncz
+manager: aaroncz
 ms.localizationpriority: medium
-ms.technology: windows-sec
+ms.technology: itpro-security
+ms.date: 12/31/2017
+ms.topic: article
 ---
 
 
@@ -17,10 +19,10 @@ ms.technology: windows-sec
 -   Windows 10, version 1607
 -   Windows Server 2016
 
-Windows 10 includes Group Policy-configurable “Process Mitigation Options” that add advanced protections against memory-based attacks, that is, attacks where malware manipulates memory to gain control of a system. For example, malware might attempt to use buffer overruns to inject malicious executable code into memory, but Process Mitigation Options can prevent the running of the malicious code.
+Windows 10 includes Group Policy-configurable "Process Mitigation Options" that add advanced protections against memory-based attacks, that is, attacks where malware manipulates memory to gain control of a system. For example, malware might attempt to use buffer overruns to inject malicious executable code into memory, but Process Mitigation Options can prevent the running of the malicious code.
 
 > [!IMPORTANT]
-> We recommend trying these mitigations in a test lab before deploying to your organization, to determine if they interfere with your organization’s required apps.
+> We recommend trying these mitigations in a test lab before deploying to your organization, to determine if they interfere with your organization's required apps.
 
 The Group Policy settings in this topic are related to three types of process mitigations. In Windows 10, all three types are on by default for 64-bit applications, but by using the Group Policy settings described in this topic, you can configure more protections. The types of process mitigations are:
 
@@ -28,7 +30,7 @@ The Group Policy settings in this topic are related to three types of process mi
 
 - **Structured Exception Handling Overwrite Protection (SEHOP)** is designed to block exploits that use the Structured Exception Handler (SEH) overwrite technique. Because this protection mechanism is provided at run-time, it helps to protect apps regardless of whether they've been compiled with the latest improvements. For more information, see [Structured Exception Handling Overwrite Protection](overview-of-threat-mitigations-in-windows-10.md#structured-exception-handling-overwrite-protection).
 
-- **Address Space Layout Randomization (ASLR)** loads DLLs into random memory addresses at boot time to mitigate against malware that’s designed to attack specific memory locations, where specific DLLs are expected to be loaded. For more information, see [Address Space Layout Randomization](overview-of-threat-mitigations-in-windows-10.md#address-space-layout-randomization). 
+- **Address Space Layout Randomization (ASLR)** loads DLLs into random memory addresses at boot time to mitigate against malware that's designed to attack specific memory locations, where specific DLLs are expected to be loaded. For more information, see [Address Space Layout Randomization](overview-of-threat-mitigations-in-windows-10.md#address-space-layout-randomization). 
     To find more ASLR protections in the table below, look for `IMAGES` or `ASLR`.
 
 The following procedure describes how to use Group Policy to override individual **Process Mitigation Options** settings.
@@ -39,7 +41,7 @@ The following procedure describes how to use Group Policy to override individual
 
     ![Group Policy editor: Process Mitigation Options with setting enabled and Show button active.](images/gp-process-mitigation-options.png)
 
-2. Click **Enabled**, and then in the **Options** area, click **Show** to open the **Show Contents** box, where you’ll be able to add your apps and the appropriate bit flag values, as shown in the [Setting the bit field](#setting-the-bit-field) and [Example](#example) sections of this topic.
+2. Click **Enabled**, and then in the **Options** area, click **Show** to open the **Show Contents** box, where you'll be able to add your apps and the appropriate bit flag values, as shown in the [Setting the bit field](#setting-the-bit-field) and [Example](#example) sections of this topic.
 
     **Important**<br>For each app you want to include, you must include:
     
@@ -51,7 +53,7 @@ The following procedure describes how to use Group Policy to override individual
      ![Group Policy editor: Process Mitigation Options with Show Contents box and example text.](images/gp-process-mitigation-options-show.png)
 
 ## Setting the bit field
-Here’s a visual representation of the bit flag locations for the various Process Mitigation Options settings:
+Here's a visual representation of the bit flag locations for the various Process Mitigation Options settings:
 
 ![Visual representation of the bit flag locations for the Process Mitigation Options settings.](images/gp-process-mitigation-options-bit-flag-image.png)
 
@@ -62,11 +64,11 @@ Where the bit flags are read from right to left and are defined as:
 |A |0 |`PROCESS_CREATION_MITIGATION_POLICY_DEP_ENABLE (0x00000001)` |Turns on Data Execution Prevention (DEP) for child processes. |
 |B |1 |`PROCESS_CREATION_MITIGATION_POLICY_DEP_ATL_THUNK_ENABLE (0x00000002)` |Turns on DEP-ATL thunk emulation for child processes. DEP-ATL thunk emulation lets the system intercept non-executable (NX) faults that originate from the Active Template Library (ATL) thunk layer, and then emulate and handle the instructions so the process can continue to run. |
 |C |2 |`PROCESS_CREATION_MITIGATION_POLICY_SEHOP_ENABLE (0x00000004)` |Turns on Structured Exception Handler Overwrite Protection (SEHOP) for child processes. SEHOP helps to block exploits that use the Structured Exception Handler (SEH) overwrite technique. |
-|D |8 |`PROCESS_CREATION_MITIGATION_POLICY_FORCE_RELOCATE_IMAGES_ALWAYS_ON (0x00000100)` |Uses the force Address Space Layout Randomization (ASLR) setting to act as though an image base collision happened at load time, forcibly rebasing images that aren’t dynamic base compatible. Images without the base relocation section won’t be loaded if relocations are required. |
+|D |8 |`PROCESS_CREATION_MITIGATION_POLICY_FORCE_RELOCATE_IMAGES_ALWAYS_ON (0x00000100)` |Uses the force Address Space Layout Randomization (ASLR) setting to act as though an image base collision happened at load time, forcibly rebasing images that aren't dynamic base compatible. Images without the base relocation section won't be loaded if relocations are required. |
 |E |15 |`PROCESS_CREATION_MITIGATION_POLICY_BOTTOM_UP_ASLR_ALWAYS_ON (0x00010000)` |Turns on the bottom-up randomization policy, which includes stack randomization options and causes a random location to be used as the lowest user address. |
 |F |16 |`PROCESS_CREATION_MITIGATION_POLICY_BOTTOM_UP_ASLR_ALWAYS_OFF (0x00020000)` |Turns off the bottom-up randomization policy, which includes stack randomization options and causes a random location to be used as the lowest user address. |
     
 ## Example
-If you want to turn on the **PROCESS_CREATION_MITIGATION_POLICY_DEP_ENABLE** and **PROCESS_CREATION_MITIGATION_POLICY_FORCE_RELOCATE_IMAGES_ALWAYS_ON** settings, turn off the **PROCESS_CREATION_MITIGATION_POLICY_BOTTOM_UP_ASLR_ALWAYS_OFF** setting, and leave everything else as the default values, you’d want to type a value of `???????????????0???????1???????1`.
+If you want to turn on the **PROCESS_CREATION_MITIGATION_POLICY_DEP_ENABLE** and **PROCESS_CREATION_MITIGATION_POLICY_FORCE_RELOCATE_IMAGES_ALWAYS_ON** settings, turn off the **PROCESS_CREATION_MITIGATION_POLICY_BOTTOM_UP_ASLR_ALWAYS_OFF** setting, and leave everything else as the default values, you'd want to type a value of `???????????????0???????1???????1`.
 
 

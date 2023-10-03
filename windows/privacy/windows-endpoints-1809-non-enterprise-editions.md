@@ -1,16 +1,14 @@
 ---
 title: Windows 10, version 1809, connection endpoints for non-Enterprise editions
 description: Explains what Windows 10 endpoints are used in non-Enterprise editions. Specific to Windows 10, version 1809.
-ms.prod: m365-security
+ms.prod: windows-client
+ms.technology: itpro-privacy
 ms.localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
-manager: dougeby
-ms.collection: M365-security-compliance
-ms.topic: article
-ms.date: 12/01/2021
-ms.reviewer: 
-ms.technology: privacy
+manager: laurawi
+ms.date: 06/29/2018
+ms.topic: reference
 ---
 # Windows 10, version 1809, connection endpoints for non-Enterprise editions
 

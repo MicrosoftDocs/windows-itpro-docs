@@ -1,21 +1,19 @@
 ### YamlMime:Landing
 
 title: Configure Windows client # < 60 chars
-summary: Find out how to apply custom configurations to Windows 10 and Windows 11 devices. Windows 10 provides many features and methods to help you configure or lock down specific parts of Windows client.  # < 160 chars
+summary: Find out how to apply custom configurations to Windows client devices. Windows provides many features and methods to help you configure or lock down specific parts of Windows client.  # < 160 chars
 
 metadata:
   title: Configure Windows client # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Find out how to apply custom configurations to Windows client devices. # Required; article description that is displayed in search results. < 160 chars.
-  services: windows-10
-  ms.service: windows-10 #Required; service per approved list. service slug assigned to your service by ACOM.
-  ms.subservice: subservice
   ms.topic: landing-page # Required
+  ms.prod: windows-client
   ms.collection:
-    - windows-10
     - highpri
+    - tier1
   author: aczechowski
   ms.author: aaroncz
-  manager: dougeby
+  manager: aaroncz
   ms.date: 08/05/2021 #Required; mm/dd/yyyy format.
   localization_priority: medium
     

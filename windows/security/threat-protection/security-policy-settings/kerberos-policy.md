@@ -1,21 +1,20 @@
 ---
-title: Kerberos Policy (Windows 10)
+title: Kerberos Policy 
 description: Describes the Kerberos Policy settings and provides links to policy setting descriptions.
 ms.assetid: 94017dd9-b1a3-4624-af9f-b29161b4bf38
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Kerberos Policy

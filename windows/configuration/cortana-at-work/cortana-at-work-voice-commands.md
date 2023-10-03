@@ -1,16 +1,20 @@
 ---
 title: Set up and test custom voice commands in Cortana for your organization (Windows)
 description: How to create voice commands that use Cortana to perform voice-enabled actions in your line-of-business (LOB) Universal Windows Platform (UWP) apps.
-ms.prod: w10
+ms.prod: windows-client
+ms.collection: tier3
 author: aczechowski
 ms.localizationpriority: medium
 ms.author: aaroncz
 ms.date: 10/05/2017
 ms.reviewer: 
-manager: dougeby
+manager: aaroncz
+ms.technology: itpro-configure
 ---
 
 # Set up and test custom voice commands in Cortana for your organization
+<!--Using include for Cortana in Windows deprecation -->
+[!INCLUDE [Deprecation of Cortana in Windows](./includes/cortana-deprecation.md)]
 
 >[!NOTE]
 >This content applies to Cortana in versions 1909 and earlier, but will not be available in future releases.
@@ -30,27 +34,27 @@ To enable voice commands in Cortana
 
     - **Start Cortana removing focus from your app, using specific voice-enabled statements.** [Activate a background app in Cortana using voice commands](/cortana/voice-commands/launch-a-background-app-with-voice-commands-in-cortana).
 
-2.	**Install the VCD file on employees' devices**. You can use Microsoft Endpoint Manager or Microsoft Intune to deploy and install the VCD file on your employees' devices, the same way you deploy and install any other package in your organization.
+2.	**Install the VCD file on employees' devices**. You can use Configuration Manager or Microsoft Intune to deploy and install the VCD file on your employees' devices, the same way you deploy and install any other package in your organization.
 
 ## Test scenario: Use voice commands in a Microsoft Store app
 While these apps aren't line-of-business apps, we've worked to make sure to implement a VCD file, allowing you to test how the functionality works with Cortana in your organization.
 
 **To get a Microsoft Store app**
-1. Go to the Microsoft Store, scroll down to the **Collections** area, click **Show All**, and then click **Better with Cortana**.
+1. Go to the Microsoft Store, scroll down to the **Collections** area, select **Show All**, and then select **Better with Cortana**.
 
-2. Click **Uber**, and then click **Install**.
+2. Select **Uber**, and then select **Install**.
 
 3. Open Uber, create an account or sign in, and then close the app.
 
 **To set up the app with Cortana**
-1. Click on the **Cortana** search box in the taskbar, and then click the **Notebook** icon.
+1. Select on the **Cortana** search box in the taskbar, and then select the **Notebook** icon.
 
-2. Click on **Connected Services**, click **Uber**, and then click **Connect**.
+2. Select on **Connected Services**, select **Uber**, and then select **Connect**.
 
     ![Cortana at work, showing where to connect the Uber service to Cortana.](../images/cortana-connect-uber.png)
 
 **To use the voice-enabled commands with Cortana**
-1. Click on the **Cortana** icon in the taskbar, and then click the **Microphone** icon (to the right of the **Search** box).
+1. Select on the **Cortana** icon in the taskbar, and then select the **Microphone** icon (to the right of the **Search** box).
 
 2. Say _Uber get me a taxi_.
 

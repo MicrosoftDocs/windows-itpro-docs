@@ -1,13 +1,16 @@
 ---
 title: Remove background task resource restrictions
 description: Allow enterprise background tasks unrestricted access to computer resources.
-ms.prod: w10
-author: nicholasswhite
-ms.author: nwhite
+author: aczechowski
+ms.author: aaroncz
 manager: aaroncz
 ms.date: 10/03/2017
-ms.reviewer: 
 ms.topic: article
+ms.prod: windows-client
+ms.technology: itpro-apps
+ms.localizationpriority: medium
+ms.collection: tier2
+ms.reviewer: 
 ---
 
 # Remove background task resource restrictions

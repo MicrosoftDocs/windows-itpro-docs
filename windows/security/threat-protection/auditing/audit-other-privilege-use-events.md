@@ -1,18 +1,19 @@
 ---
-title: Audit Other Privilege Use Events (Windows 10)
+title: Audit Other Privilege Use Events 
 description: Learn about the audit other privilege use events, an auditing subcategory that should not have any events in it but enables generation of event 4985(S).
 ms.assetid: 5f7f5b25-42a6-499f-8aa2-01ac79a2a63c
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
-author: dansimp
+ms.localizationpriority: low
+author: vinaypamnani-msft
 ms.date: 09/06/2021
-ms.technology: windows-sec
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # Audit Other Privilege Use Events

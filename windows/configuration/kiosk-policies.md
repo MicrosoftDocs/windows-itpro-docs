@@ -3,11 +3,13 @@ title: Policies enforced on kiosk devices (Windows 10/11)
 description: Learn about the policies enforced on a device when you configure it as a kiosk.
 ms.reviewer: sybruckm
 manager: aaroncz
-ms.prod: w10
+ms.prod: windows-client
 author: lizgt2000
 ms.localizationpriority: medium
 ms.author: lizlong
 ms.topic: article
+ms.technology: itpro-configure
+ms.date: 12/31/2017
 ---
 
 # Policies enforced on kiosk devices
@@ -55,7 +57,7 @@ Remove Task Manager |		Enabled
 Remove Change Password option in Security Options UI |		Enabled
 Remove Sign Out option in Security Options UI	 |	Enabled
 Remove All Programs list from the Start Menu	 |	Enabled – Remove and disable setting
-Prevent access to drives from My Computer	 |	Enabled - Restrict all drivers
+Prevent access to drives from My Computer	 |	Enabled - Restrict all drives
 
 >[!NOTE]
 >When **Prevent access to drives from My Computer** is enabled, users can browse the directory structure in File Explorer, but they cannot open folders and access the contents. Also, they cannot use the **Run** dialog box or the **Map Network Drive** dialog box to view the directories on these drives. The icons representing the specified drives still appear in File Explorer, but if users double-click the icons, a message appears explaining that a setting prevents the action. This setting does not prevent users from using programs to access local and network drives. It does not prevent users from using the Disk Management snap-in to view and change drive characteristics.

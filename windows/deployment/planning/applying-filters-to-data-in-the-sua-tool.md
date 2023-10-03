@@ -1,26 +1,25 @@
 ---
 title: Applying Filters to Data in the SUA Tool (Windows 10)
 description: Learn how to apply filters to results from the Standard User Analyzer (SUA) tool while testing your application.
-ms.reviewer: 
-manager: dougeby
-ms.author: aaroncz
-ms.prod: w10
-author: aczechowski
-ms.date: 04/19/2017
+manager: aaroncz
+ms.author: frankroj
+ms.prod: windows-client
+author: frankroj
+ms.date: 10/28/2022
 ms.topic: article
+ms.technology: itpro-deploy
 ---
 
 # Applying Filters to Data in the SUA Tool
 
-
 **Applies to**
 
--   Windows 10
--   Windows 8.1
--   Windows 8
--   Windows 7
--   Windows Server 2012
--   Windows Server 2008 R2
+-   Windows 10
+-   Windows 8.1
+-   Windows 8
+-   Windows 7
+-   Windows Server 2012
+-   Windows Server 2008 R2
 
 On the user interface for the Standard User Analyzer (SUA) tool, you can apply filters to the issues that the tool has found so that you can view only the information that interests you.
 

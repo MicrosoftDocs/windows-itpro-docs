@@ -1,26 +1,26 @@
 ---
-title: Network security Restrict NTLM Outgoing traffic (Windows 10)
+title: Network security Restrict NTLM Outgoing traffic 
 description: Learn about best practices, security considerations and more for the policy setting, Network Security Restrict NTLM Outgoing NTLM traffic to remote servers.
 ms.assetid: 63437a90-764b-4f06-aed8-a4a26cf81bd1
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 06/15/2022
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Network security: Restrict NTLM: Outgoing NTLM traffic to remote servers
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, management aspects, and security considerations for the **Network Security: Restrict NTLM: Outgoing NTLM traffic to remote servers** security policy setting.
@@ -94,7 +94,7 @@ There are no security audit event policies that can be configured to view event 
 
 This section describes how an attacker might exploit a feature or its configuration, how to implement the countermeasure, and the possible negative consequences of countermeasure implementation.
 
-NTLM and NTLMv2 authentication is vulnerable to various malicious attacks, including SMB replay, man-in-the-middle attacks, and brute force attacks. Reducing and eliminating NTLM authentication from your environment forces the Windows operating system to use more secure protocols, such as the Kerberos version 5 protocol, or different authentication mechanisms, such as smart cards.
+NTLM and NTLMv2 authentication is vulnerable to various malicious attacks, including SMB relay, man-in-the-middle attacks, and brute force attacks. Reducing and eliminating NTLM authentication from your environment forces the Windows operating system to use more secure protocols, such as the Kerberos version 5 protocol, or different authentication mechanisms, such as smart cards.
 
 ### Vulnerability
 

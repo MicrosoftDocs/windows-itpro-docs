@@ -1,14 +1,18 @@
 ---
-title: Provisioning packages overview on Windows 10/11
+title: Provisioning packages overview
 description: With Windows 10 and Windows 11, you can create provisioning packages that let you quickly and efficiently configure a device without having to install a new image. Learn about what provisioning packages, are and what they do.
-ms.reviewer: gkomatsu
+ms.reviewer: kevinsheehan
 manager: aaroncz
-ms.prod: w10
+ms.prod: windows-client
 author: lizgt2000
 ms.author: lizlong
 ms.topic: article
 ms.localizationpriority: medium
-ms.collection: highpri
+ms.collection:
+ - highpri
+ - tier2
+ms.technology: itpro-configure
+ms.date: 12/31/2017
 ---
 
 # Provisioning packages for Windows
@@ -18,11 +22,11 @@ ms.collection: highpri
 - Windows 10
 - Windows 11
 
-Windows provisioning makes it easy for IT administrators to configure end-user devices without imaging. Using Windows provisioning, an IT administrator can easily specify desired configuration and settings required to enroll the devices into management and then apply that configuration to target devices in a matter of minutes. It is best suited for small- to medium-sized businesses with deployments that range from tens to a few hundred computers. 
+Windows provisioning makes it easy for IT administrators to configure end-user devices without imaging. When you use Windows provisioning, an IT administrator can easily specify the desired configuration and settings required to enroll the devices into management. Then, apply that configuration to target devices in a matter of minutes. It's best suited for small- to medium-sized businesses with deployments that range from tens to a few hundred computers. 
 
 A provisioning package (.ppkg) is a container for a collection of configuration settings. With Windows client, you can create provisioning packages that let you quickly and efficiently configure a device without having to install a new image.
 
-Provisioning packages are simple enough that with a short set of written instructions, a student, or non-technical employee can use them to configure their device. This can result in a significant reduction in the time required to configure multiple devices in your organization.
+Provisioning packages are simple enough that with a short set of written instructions, a student, or non-technical employee can use them to configure their device. It can result in a significant reduction in the time required to configure multiple devices in your organization.
 
 <!-- The [Windows Assessment and Deployment Kit (ADK) for Windows 10](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit) includes the Windows Configuration Designer, a tool for configuring provisioning packages.--> 
 Windows Configuration Designer is available as an [app in the Microsoft Store](https://www.microsoft.com/store/apps/9nblggh4tx22). 
@@ -67,7 +71,7 @@ The following table describes settings that you can configure using the wizards 
 
 | Step | Description | Desktop wizard | Kiosk wizard | HoloLens wizard |
 | --- | --- | --- | --- | --- |
-| Set up device | Assign device name, enter product key to upgrade Windows, configure shared used, remove pre-installed software | ✔️ | ✔️ | ✔️ |
+| Set up device | Assign device name, enter product key to upgrade Windows, configure shared use, remove pre-installed software | ✔️ | ✔️ | ✔️ |
 | Set up network | Connect to a Wi-Fi network | ✔️ | ✔️ | ✔️ |
 | Account management | Enroll device in Active Directory, enroll device in Azure Active Directory, or create a local administrator account | ✔️ | ✔️ | ✔️ |
 | Bulk Enrollment in Azure AD | Enroll device in Azure Active Directory using Bulk Token</br></br> [Set up Azure AD join in your organization](/azure/active-directory/active-directory-azureadjoin-setup), before you use Windows Configuration Designer wizard to configure bulk Azure AD enrollment. | ✔️ | ✔️ | ✔️ |
@@ -92,7 +96,7 @@ The following table provides some examples of settings that you can configure us
 |---|---|
 | Bulk Active Directory join and device name | Join devices to Active Directory domain and assign device names using hardware-specific serial numbers or random characters |
 | Applications  |   Windows apps, line-of-business applications  |
-| Bulk enrollment into MDM  | Automatic enrollment into a third-party MDM service <br/><br/>Using a provisioning package for auto-enrollment to Microsoft Endpoint Manager isn't supported. To enroll devices, use the Configuration Manager console. |
+| Bulk enrollment into MDM  | Automatic enrollment into a third-party MDM service <br/><br/>Using a provisioning package for auto-enrollment to Microsoft Intune isn't supported. To enroll devices, use the Configuration Manager console. |
 | Certificates | Root certification authority (CA), client certificates |
 | Connectivity profiles | Wi-Fi, proxy settings, Email   |
 | Enterprise policies | Security restrictions (password, device lock, camera, and so on), encryption, update settings |

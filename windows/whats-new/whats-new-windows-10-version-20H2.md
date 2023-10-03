@@ -1,19 +1,22 @@
 ---
 title: What's new in Windows 10, version 20H2
 description: New and updated features in Windows 10, version 20H2 (also known as the Windows 10 October 2020 Update).
-ms.prod: w10
-author: aczechowski
-ms.author: aaroncz
-manager: dougeby
+ms.prod: windows-client
+author: mestew
+ms.author: mstewart
+manager: aaroncz
 ms.localizationpriority: high
 ms.topic: article
-ms.collection: highpri
+ms.collection:
+  - highpri
+  - tier2
+ms.technology: itpro-fundamentals
+ms.date: 12/31/2017
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10, version 20H2</a>
 ---
 
 # What's new in Windows 10, version 20H2 for IT Pros
-
-**Applies to**
--   Windows 10, version 20H2
 
 This article lists new and updated features and content that is of interest to IT Pros for Windows 10, version 20H2, also known as the Windows 10 October 2020 Update. This update also contains all features and fixes included in previous cumulative updates to Windows 10, version 2004.
 
@@ -22,7 +25,7 @@ This article lists new and updated features and content that is of interest to I
 
 As with previous fall releases, Windows 10, version 20H2 is a scoped set of features for select performance improvements, enterprise features, and quality enhancements. As an [H2-targeted release](/lifecycle/faq/windows), 20H2 is serviced for 30 months from the release date for devices running Windows 10 Enterprise or Windows 10 Education editions. 
 
-To download and install Windows 10, version 20H2, use Windows Update (**Settings > Update & Security > Windows Update**). For more information, including a video, see [How to get the Windows 10 October 2020 Update](https://community.windows.com/videos/how-to-get-the-windows-10-october-2020-update/7c7_mWN0wi8). 
+To download and install Windows 10, version 20H2, use Windows Update (**Settings > Update & Security > Windows Update**).
 
 ## Microsoft Edge
 
@@ -69,7 +72,7 @@ Activities are grouped into the following phases: **Plan** > **Prepare** > **Dep
 Enhancements to Windows Autopilot since the last release of Windows 10 include:
 - [Windows Autopilot for HoloLens](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/windows-autopilot-for-hololens-2/ba-p/1371494): Set up HoloLens 2 devices with Windows Autopilot for HoloLens 2 self-deploying mode.
 - [Windows Autopilot with co-management](/mem/configmgr/comanage/quickstart-autopilot): Co-management and Autopilot together can help you reduce cost and improve the end user experience.
-- Enhancements to Windows Autopilot deployment reporting are in preview. From the Microsoft Endpoint Manager admin center (endpoint.microsoft.com), select **Devices** > **Monitor** and scroll down to the **Enrollment** section. Click **Autopilot deployment (preview)**.
+- Enhancements to Windows Autopilot deployment reporting are in preview. In the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), select **Devices** > **Monitor** and scroll down to the **Enrollment** section. Select **Autopilot deployment (preview)**.
 
 ### Windows Assessment and Deployment Toolkit (ADK)
 
@@ -145,5 +148,5 @@ For information about Desktop Analytics and this release of Windows 10, see [Wha
 [Windows 10 Features](https://www.microsoft.com/windows/features): General information about Windows 10 features.<br>
 [What's New in Windows 10](./index.yml): See what’s new in other versions of Windows 10.<br>
 [Announcing more ways we’re making app development easier on Windows](https://blogs.windows.com/windowsdeveloper/2020/09/22/kevin-gallo-microsoft-ignite-2020/): Simplifying app development in Windows.<br>
-[Features and functionality removed in Windows 10](/windows/deployment/planning/windows-10-removed-features): Removed features.<br>
-[Windows 10 features we’re no longer developing](/windows/deployment/planning/windows-10-deprecated-features): Features that aren't being developed.<br>
+[Features and functionality removed in Windows 10](removed-features.md): Removed features.<br>
+[Windows 10 features we're no longer developing](deprecated-features.md): Features that aren't being developed.<br>

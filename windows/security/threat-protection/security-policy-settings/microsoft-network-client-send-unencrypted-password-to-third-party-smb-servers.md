@@ -1,27 +1,27 @@
 ---
-title: Microsoft network client Send unencrypted password (Windows 10)
+title: Microsoft network client Send unencrypted password 
 description: Learn about best practices and more for the security policy setting, Microsoft network client Send unencrypted password to third-party SMB servers.
 ms.assetid: 97a76b93-afa7-4dd9-bb52-7c9e289b6017
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 
 # Microsoft network client: Send unencrypted password to third-party SMB servers
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management and security considerations for the **Microsoft network client: Send unencrypted password to third-party SMB servers** security policy setting.

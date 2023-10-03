@@ -1,13 +1,16 @@
 ---
 title: Windows Configuration Designer provisioning settings (Windows 10)
 description: This section describes the settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
-ms.prod: w10
+ms.prod: windows-client
 author: aczechowski
 ms.localizationpriority: medium
 ms.author: aaroncz
-ms.topic: article
+ms.topic: reference
+ms.collection: must-keep
 ms.reviewer: 
-manager: dougeby
+manager: aaroncz
+ms.technology: itpro-configure
+ms.date: 12/31/2017
 ---
 
 # Windows Configuration Designer provisioning settings (reference)
@@ -37,7 +40,7 @@ This section describes the settings that you can configure in [provisioning pack
 | [DeviceUpdateCenter](wcd-deviceupdatecenter.md) | ✔️ |  |  |  |
 | [DMClient](wcd-dmclient.md) | ✔️ | ✔️ |  | ✔️ |
 | [EditionUpgrade](wcd-editionupgrade.md) | ✔️ |  | ✔️ |  |
-| [EmbeddedLockdownProfiles](wcd-embeddedlockdownprofiles.md) |  |  |  |  |
+| [EmbeddedLockdownProfiles](https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5) |  |  |  |  |
 | [FirewallConfiguration](wcd-firewallconfiguration.md) |  |  |  | ✔️ |
 | [FirstExperience](wcd-firstexperience.md) |  |  | ✔️ |  |
 | [Folders](wcd-folders.md) |✔️ | ✔️ |  |  |

@@ -1,14 +1,16 @@
 ---
 title: Browser (Windows 10)
 description: This section describes the Browser settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
-ms.prod: w10
+ms.prod: windows-client
 author: aczechowski
 ms.localizationpriority: medium
 ms.author: aaroncz
-ms.topic: article
+ms.topic: reference
+ms.collection: must-keep
 ms.date: 10/02/2018
 ms.reviewer: 
-manager: dougeby
+manager: aaroncz
+ms.technology: itpro-configure
 ---
 
 # Browser (Windows Configuration Designer reference)
@@ -55,7 +57,7 @@ To add a new item under the browser's **Favorites** list:
 
 2. In the **Available customizations** pane, select the friendly name that you created, and in the text field, enter the URL for the item.
 
-For example, to include the corporate Web site to the list of browser favorites, a company called Contoso can specify **Contoso** as the value for the name and "<http://www.contoso.com>" for the URL. 
+For example, to include the corporate Web site to the list of browser favorites, a company called Contoso can specify **Contoso** as the value for the name and `http://www.contoso.com` for the URL. 
 
 
 ## PartnerSearchCode
@@ -80,7 +82,7 @@ Use *Default* to specify a name that matches one of the search providers you ent
 
 #### Specific region guidance
 
-Some countries require specific, default search providers. The following table lists the applicable countries and information for configuring the necessary search provider.
+Some countries/regions require specific, default search providers. The following table lists the applicable countries/regions and information for configuring the necessary search provider.
 
 >[!NOTE]
 >For Russia + Commonwealth of Independent States (CIS), the independent states consist of Russia, Ukraine, Georgia, The Republic of Azerbaijan, Republic Of Belarus, The Republic of Kazakhstan, The Kyrgyz Republic, The Republic of Moldova, The Republic of Tajikistan, The Republic of Armenia, Turkmenistan, The Republic of Uzbekistan, and Turkey.

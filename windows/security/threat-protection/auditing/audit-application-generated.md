@@ -1,18 +1,19 @@
 ---
-title: Audit Application Generated (Windows 10)
+title: Audit Application Generated 
 description: The policy setting, Audit Application Generated, determines if audit events are generated when applications attempt to use the Windows Auditing APIs.
 ms.assetid: 6c58a365-b25b-42b8-98ab-819002e31871
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
-author: dansimp
+ms.localizationpriority: low
+author: vinaypamnani-msft
 ms.date: 09/06/2021
-ms.technology: windows-sec
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # Audit Application Generated

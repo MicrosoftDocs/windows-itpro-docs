@@ -1,27 +1,27 @@
 ---
-title: UAC Run all administrators in Admin Approval Mode (Windows 10)
+title: UAC Run all administrators in Admin Approval Mode
 description: Learn about best practices, security considerations and more for the security policy setting, User Account Control Run all administrators in Admin Approval Mode.
 ms.assetid: b838c561-7bfc-41ef-a7a5-55857259c7bf
-ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.reviewer:
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # User Account Control: Run all administrators in Admin Approval Mode
 
 **Applies to**
--   Windows 10
+-   Windows 11
+-   Windows 10
 
 This article describes the best practices, location, values, policy management and security considerations for the **User Account Control: Run all administrators in Admin Approval Mode** security policy setting.
 
@@ -40,7 +40,7 @@ This policy setting determines the behavior of all User Account Control (UAC) po
     Admin Approval Mode and all related UAC policies are disabled.
 
     > [!NOTE]
-    > If this security setting is configured to **Disabled**, Windows Security app notifies the user that the overall security of the operating system has been reduced.
+    > If this security setting is configured to **Disabled**, **Windows Security** notifies the user that the overall security of the operating system has been reduced.
 
 ### Best practices
 
@@ -56,13 +56,13 @@ The following table lists the actual and effective default values for this polic
 
 | Server type or GPO | Default value |
 | - | - |
-| Default Domain Policy| Not defined| 
-| Default Domain Controller Policy | Not defined| 
-| Stand-Alone Server Default Settings | Enabled| 
-| DC Effective Default Settings | Enabled| 
-| Member Server Effective Default Settings| Enabled| 
-| Client Computer Effective Default Settings | Enabled| 
- 
+| Default Domain Policy| Not defined|
+| Default Domain Controller Policy | Not defined|
+| Stand-Alone Server Default Settings | Enabled|
+| DC Effective Default Settings | Enabled|
+| Member Server Effective Default Settings| Enabled|
+| Client Computer Effective Default Settings | Enabled|
+
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.

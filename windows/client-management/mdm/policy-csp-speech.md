@@ -1,83 +1,98 @@
 ---
-title: Policy CSP - Speech
-description: Learn how the Policy CSP - Speech setting specifies whether the device will receive updates to the speech recognition and speech synthesis models.
-ms.author: vinpa
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
+title: Speech Policy CSP
+description: Learn more about the Speech Area in Policy CSP.
 author: vinaypamnani-msft
-ms.localizationpriority: medium
-ms.date: 09/27/2019
-ms.reviewer: 
 manager: aaroncz
+ms.author: vinpa
+ms.date: 08/10/2023
+ms.localizationpriority: medium
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- Speech-Begin -->
 # Policy CSP - Speech
 
-<hr/>
+<!-- Speech-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Speech-Editable-End -->
 
-<!--Policies-->
-## Speech policies  
+<!-- AllowSpeechModelUpdate-Begin -->
+## AllowSpeechModelUpdate
 
-<dl>
-  <dd>
-    <a href="#speech-allowspeechmodelupdate">Speech/AllowSpeechModelUpdate</a>
-  </dd>
-</dl>
+<!-- AllowSpeechModelUpdate-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- AllowSpeechModelUpdate-Applicability-End -->
 
-<hr/>
+<!-- AllowSpeechModelUpdate-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Speech/AllowSpeechModelUpdate
+```
+<!-- AllowSpeechModelUpdate-OmaUri-End -->
 
-<!--Policy-->
-<a href="" id="speech-allowspeechmodelupdate"></a>**Speech/AllowSpeechModelUpdate**  
+<!-- AllowSpeechModelUpdate-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Specifies whether the device will receive updates to the speech recognition and speech synthesis models.
 
-<!--SupportedSKUs-->
+A speech model contains data used by the speech engine to convert audio to text (or vice-versa). The models are periodically updated to improve accuracy and performance. Models are non-executable data files.
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+If enabled (default), the device will periodically check for updated speech models and then download them from a Microsoft service using the Background Internet Transfer Service (BITS).
+<!-- AllowSpeechModelUpdate-Description-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowSpeechModelUpdate-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowSpeechModelUpdate-Editable-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowSpeechModelUpdate-DFProperties-Begin -->
+**Description framework properties**:
 
-> [!div class = "checklist"]
-> * Device
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowSpeechModelUpdate-DFProperties-End -->
 
-<hr/>
+<!-- AllowSpeechModelUpdate-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--/Scope-->
-<!--Description-->
-Specifies whether the device will receive updates to the speech recognition and speech synthesis models. A speech model contains data used by the speech engine to convert audio to text (or vice-versa). The models are periodically updated to improve accuracy and performance. Models are non-executable data files. If enabled, the device will periodically check for updated speech models and then download them from a Microsoft service using the Background Internet Transfer Service (BITS).
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. |
+| 1 (Default) | Allowed. |
+<!-- AllowSpeechModelUpdate-AllowedValues-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Allow Automatic Update of Speech Data*
--   GP name: *AllowSpeechModelUpdate*
--   GP path: *Windows Components/Speech*
--   GP ADMX file name: *Speech.admx*
+<!-- AllowSpeechModelUpdate-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+| Name | Value |
+|:--|:--|
+| Name | AllowSpeechModelUpdate |
+| Friendly Name | Allow Automatic Update of Speech Data |
+| Location | Computer Configuration |
+| Path | Windows Components > Speech |
+| Registry Key Name | Software\Policies\Microsoft\Speech |
+| Registry Value Name | AllowSpeechModelUpdate |
+| ADMX File Name | Speech.admx |
+<!-- AllowSpeechModelUpdate-GpMapping-End -->
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+<!-- AllowSpeechModelUpdate-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowSpeechModelUpdate-Examples-End -->
 
-<!--/SupportedValues-->
-<!--/Policy-->
-<hr/>
+<!-- AllowSpeechModelUpdate-End -->
 
+<!-- Speech-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- Speech-CspMoreInfo-End -->
 
-<!--/Policies-->
+<!-- Speech-End -->
 
-## Related topics
+## Related articles
 
 [Policy configuration service provider](policy-configuration-service-provider.md)

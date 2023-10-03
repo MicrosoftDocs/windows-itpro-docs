@@ -1,13 +1,14 @@
 ---
 title: Manage connections from Windows operating system components to Microsoft services using Microsoft Intune MDM Server
 description: Use MDM CSPs to minimize connections from Windows to Microsoft services, or to configure particular privacy settings.
-ms.prod: m365-security
+ms.prod: windows-client
+ms.technology: itpro-privacy
 ms.localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
-manager: dougeby
-ms.date: 11/29/2021
-ms.technology: privacy
+manager: laurawi
+ms.date: 05/15/2019
+ms.topic: conceptual
 ---
 
 # Manage connections from Windows 10 and Windows 11 operating system components to Microsoft services using Microsoft Intune MDM Server
@@ -155,6 +156,8 @@ For Windows 10 and Windows 11, the following MDM policies are available in the [
    1. Windows Update Allow Update Service - [Update/AllowUpdateService](/windows/client-management/mdm/policy-csp-update#update-allowupdateservice). Specifies whether the device could use Microsoft Update, Windows Server Update Services (WSUS), or Microsoft Store. **Set to 0 (zero)**
    1. Windows Update Service URL - [Update/UpdateServiceUrl](/windows/client-management/mdm/policy-csp-update#update-updateserviceurl). Allows the device to check for updates from a WSUS server instead of Microsoft Update. **Set to String** with the Value:
       1. **\<Replace>\<CmdID>$CmdID$</CmdID>\<Item>\<Meta>\<Format>chr</Format>\<Type>text/plain</Type>\</Meta>\<Target> \<LocURI>./Vendor/MSFT/Policy/Config/Update/UpdateServiceUrl</LocURI>\</Target>\<Data>http://abcd-srv:8530</Data>\</Item>\</Replace>**
+28. **Recommendations** </br>
+   a. [HideRecentJumplists](/windows/client-management/mdm/policy-csp-start#hiderecentjumplists) setting in the Start Policy configuration service provider (CSP). To hide a list of recommended apps and files in the Recommended section on the Start menu.
 
 ### <a href="" id="bkmk-mdm-allowedtraffic"></a> Allowed traffic for Microsoft Intune / MDM configurations
 

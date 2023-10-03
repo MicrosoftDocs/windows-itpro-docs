@@ -1,505 +1,580 @@
 ---
-title: Policy CSP - ADMX_SettingSync
-description: Learn about Policy CSP - ADMX_SettingSync.
-ms.author: vinpa
-ms.localizationpriority: medium
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
+title: ADMX_SettingSync Policy CSP
+description: Learn more about the ADMX_SettingSync Area in Policy CSP.
 author: vinaypamnani-msft
-ms.date: 12/01/2020
-ms.reviewer: 
 manager: aaroncz
+ms.author: vinpa
+ms.date: 08/10/2023
+ms.localizationpriority: medium
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ADMX_SettingSync-Begin -->
 # Policy CSP - ADMX_SettingSync
-> [!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<hr/>
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
-<!--Policies-->
-## ADMX_SettingSync policies  
+<!-- ADMX_SettingSync-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ADMX_SettingSync-Editable-End -->
 
-<dl>
-  <dd>
-    <a href="#admx-settingsync-disableappsyncsettingsync">ADMX_SettingSync/DisableAppSyncSettingSync</a>
-  </dd>
-  <dd>
-    <a href="#admx-settingsync-disableapplicationsettingsync">ADMX_SettingSync/DisableApplicationSettingSync</a>
-  </dd>
-  <dd>
-    <a href="#admx-settingsync-disablecredentialssettingsync">ADMX_SettingSync/DisableCredentialsSettingSync</a>
-  </dd>
-  <dd>
-    <a href="#admx-settingsync-disabledesktopthemesettingsync">ADMX_SettingSync/DisableDesktopThemeSettingSync</a>
-  </dd>
-  <dd>
-    <a href="#admx-settingsync-disablepersonalizationsettingsync">ADMX_SettingSync/DisablePersonalizationSettingSync</a>
-  </dd>
-  <dd>
-    <a href="#admx-settingsync-disablesettingsync">ADMX_SettingSync/DisableSettingSync</a>
-  </dd>
-  <dd>
-    <a href="#admx-settingsync-disablestartlayoutsettingsync">ADMX_SettingSync/DisableStartLayoutSettingSync</a>
-  </dd>
-  <dd>
-    <a href="#admx-settingsync-disablesynconpaidnetwork">ADMX_SettingSync/DisableSyncOnPaidNetwork</a>
-  </dd>
-  <dd>
-    <a href="#admx-settingsync-disablewindowssettingsync">ADMX_SettingSync/DisableWindowsSettingSync</a>
-  </dd>
-</dl>
+<!-- DisableApplicationSettingSync-Begin -->
+## DisableApplicationSettingSync
 
+<!-- DisableApplicationSettingSync-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DisableApplicationSettingSync-Applicability-End -->
 
-<hr/>
+<!-- DisableApplicationSettingSync-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_SettingSync/DisableApplicationSettingSync
+```
+<!-- DisableApplicationSettingSync-OmaUri-End -->
 
-<!--Policy-->
-<a href="" id="admx-settingsync-disableappsyncsettingsync"></a>**ADMX_SettingSync/DisableAppSyncSettingSync**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting prevents the "AppSync" group from syncing to and from this PC. This option turns off and disables the "AppSync" group on the "sync your settings" page in PC settings.
-
-If you enable this policy setting, the "AppSync" group won't be synced.
-
-Use the option "Allow users to turn app syncing on" so that syncing it is turned off by default but not disabled.
-
-If you don't set or disable this setting, syncing of the "AppSync" group is on by default and configurable by the user.
-
-<!--/Description-->
-
-
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Do not sync Apps*
--   GP name: *DisableAppSyncSettingSync*
--   GP path: *Windows Components\Sync your settings*
--   GP ADMX file name: *SettingSync.admx*
-
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-settingsync-disableapplicationsettingsync"></a>**ADMX_SettingSync/DisableApplicationSettingSync**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy seting prevents the "app settings" group from syncing to and from this PC. This option turns off and disables the "app settings" group on the "sync your settings" page in PC settings.
+<!-- DisableApplicationSettingSync-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Prevent the "app settings" group from syncing to and from this PC. This turns off and disables the "app settings" group on the "sync your settings" page in PC settings.
 
 If you enable this policy setting, the "app settings" group won't be synced.
 
-Use the option "Allow users to turn app settings syncing on" so that syncing it is turned off by default but not disabled.
+Use the option "Allow users to turn app settings syncing on" so that syncing it turned off by default but not disabled.
 
 If you don't set or disable this setting, syncing of the "app settings" group is on by default and configurable by the user.
+<!-- DisableApplicationSettingSync-Description-End -->
 
-<!--/Description-->
+<!-- DisableApplicationSettingSync-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableApplicationSettingSync-Editable-End -->
 
+<!-- DisableApplicationSettingSync-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Do not sync app settings*
--   GP name: *DisableApplicationSettingSync*
--   GP path: *Windows Components\Sync your settings*
--   GP ADMX file name: *SettingSync.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisableApplicationSettingSync-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- DisableApplicationSettingSync-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-settingsync-disablecredentialssettingsync"></a>**ADMX_SettingSync/DisableCredentialsSettingSync**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | DisableApplicationSettingSync |
+| Friendly Name | Do not sync app settings |
+| Location | Computer Configuration |
+| Path | Windows Components > Sync your settings |
+| Registry Key Name | Software\Policies\Microsoft\Windows\SettingSync |
+| Registry Value Name | DisableApplicationSettingSync |
+| ADMX File Name | SettingSync.admx |
+<!-- DisableApplicationSettingSync-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- DisableApplicationSettingSync-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableApplicationSettingSync-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DisableApplicationSettingSync-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DisableAppSyncSettingSync-Begin -->
+## DisableAppSyncSettingSync
 
-> [!div class = "checklist"]
-> * Device
+<!-- DisableAppSyncSettingSync-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DisableAppSyncSettingSync-Applicability-End -->
 
-<hr/>
+<!-- DisableAppSyncSettingSync-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_SettingSync/DisableAppSyncSettingSync
+```
+<!-- DisableAppSyncSettingSync-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy seting prevents the "passwords" group from syncing to and from this PC. This option turns off and disables the "passwords" group on the "sync your settings" page in PC settings.
+<!-- DisableAppSyncSettingSync-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Prevent the "AppSync" group from syncing to and from this PC. This turns off and disables the "AppSync" group on the "sync your settings" page in PC settings.
+
+If you enable this policy setting, the "AppSync" group won't be synced.
+
+Use the option "Allow users to turn app syncing on" so that syncing it turned off by default but not disabled.
+
+If you don't set or disable this setting, syncing of the "AppSync" group is on by default and configurable by the user.
+<!-- DisableAppSyncSettingSync-Description-End -->
+
+<!-- DisableAppSyncSettingSync-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableAppSyncSettingSync-Editable-End -->
+
+<!-- DisableAppSyncSettingSync-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisableAppSyncSettingSync-DFProperties-End -->
+
+<!-- DisableAppSyncSettingSync-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | DisableAppSyncSettingSync |
+| Friendly Name | Do not sync Apps |
+| Location | Computer Configuration |
+| Path | Windows Components > Sync your settings |
+| Registry Key Name | Software\Policies\Microsoft\Windows\SettingSync |
+| Registry Value Name | DisableAppSyncSettingSync |
+| ADMX File Name | SettingSync.admx |
+<!-- DisableAppSyncSettingSync-AdmxBacked-End -->
+
+<!-- DisableAppSyncSettingSync-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableAppSyncSettingSync-Examples-End -->
+
+<!-- DisableAppSyncSettingSync-End -->
+
+<!-- DisableCredentialsSettingSync-Begin -->
+## DisableCredentialsSettingSync
+
+<!-- DisableCredentialsSettingSync-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DisableCredentialsSettingSync-Applicability-End -->
+
+<!-- DisableCredentialsSettingSync-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_SettingSync/DisableCredentialsSettingSync
+```
+<!-- DisableCredentialsSettingSync-OmaUri-End -->
+
+<!-- DisableCredentialsSettingSync-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Prevent the "passwords" group from syncing to and from this PC. This turns off and disables the "passwords" group on the "sync your settings" page in PC settings.
 
 If you enable this policy setting, the "passwords" group won't be synced.
 
-Use the option "Allow users to turn passwords syncing on" so that syncing it is turned off by default but not disabled.
+Use the option "Allow users to turn passwords syncing on" so that syncing it turned off by default but not disabled.
 
 If you don't set or disable this setting, syncing of the "passwords" group is on by default and configurable by the user.
+<!-- DisableCredentialsSettingSync-Description-End -->
 
-<!--/Description-->
+<!-- DisableCredentialsSettingSync-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableCredentialsSettingSync-Editable-End -->
 
+<!-- DisableCredentialsSettingSync-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Do not sync passwords*
--   GP name: *DisableCredentialsSettingSync*
--   GP path: *Windows Components\Sync your settings*
--   GP ADMX file name: *SettingSync.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisableCredentialsSettingSync-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- DisableCredentialsSettingSync-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-settingsync-disabledesktopthemesettingsync"></a>**ADMX_SettingSync/DisableDesktopThemeSettingSync**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | DisableCredentialsSettingSync |
+| Friendly Name | Do not sync passwords |
+| Location | Computer Configuration |
+| Path | Windows Components > Sync your settings |
+| Registry Key Name | Software\Policies\Microsoft\Windows\SettingSync |
+| Registry Value Name | DisableCredentialsSettingSync |
+| ADMX File Name | SettingSync.admx |
+<!-- DisableCredentialsSettingSync-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- DisableCredentialsSettingSync-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableCredentialsSettingSync-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DisableCredentialsSettingSync-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DisableDesktopThemeSettingSync-Begin -->
+## DisableDesktopThemeSettingSync
 
-> [!div class = "checklist"]
-> * Device
+<!-- DisableDesktopThemeSettingSync-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DisableDesktopThemeSettingSync-Applicability-End -->
 
-<hr/>
+<!-- DisableDesktopThemeSettingSync-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_SettingSync/DisableDesktopThemeSettingSync
+```
+<!-- DisableDesktopThemeSettingSync-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting prevents the "desktop personalization" group from syncing to and from this PC. This option turns off and disables the "desktop personalization" group on the "sync your settings" page in PC settings.
+<!-- DisableDesktopThemeSettingSync-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Prevent the "desktop personalization" group from syncing to and from this PC. This turns off and disables the "desktop personalization" group on the "sync your settings" page in PC settings.
 
 If you enable this policy setting, the "desktop personalization" group won't be synced.
 
-Use the option "Allow users to turn desktop personalization syncing on" so that syncing it is turned off by default but not disabled.
+Use the option "Allow users to turn desktop personalization syncing on" so that syncing it turned off by default but not disabled.
 
 If you don't set or disable this setting, syncing of the "desktop personalization" group is on by default and configurable by the user.
+<!-- DisableDesktopThemeSettingSync-Description-End -->
 
-<!--/Description-->
+<!-- DisableDesktopThemeSettingSync-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableDesktopThemeSettingSync-Editable-End -->
 
+<!-- DisableDesktopThemeSettingSync-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Do not sync desktop personalization*
--   GP name: *DisableDesktopThemeSettingSync*
--   GP path: *Windows Components\Sync your settings*
--   GP ADMX file name: *SettingSync.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisableDesktopThemeSettingSync-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- DisableDesktopThemeSettingSync-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-settingsync-disablepersonalizationsettingsync"></a>**ADMX_SettingSync/DisablePersonalizationSettingSync**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | DisableDesktopThemeSettingSync |
+| Friendly Name | Do not sync desktop personalization |
+| Location | Computer Configuration |
+| Path | Windows Components > Sync your settings |
+| Registry Key Name | Software\Policies\Microsoft\Windows\SettingSync |
+| Registry Value Name | DisableDesktopThemeSettingSync |
+| ADMX File Name | SettingSync.admx |
+<!-- DisableDesktopThemeSettingSync-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- DisableDesktopThemeSettingSync-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableDesktopThemeSettingSync-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DisableDesktopThemeSettingSync-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DisablePersonalizationSettingSync-Begin -->
+## DisablePersonalizationSettingSync
 
-> [!div class = "checklist"]
-> * Device
+<!-- DisablePersonalizationSettingSync-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DisablePersonalizationSettingSync-Applicability-End -->
 
-<hr/>
+<!-- DisablePersonalizationSettingSync-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_SettingSync/DisablePersonalizationSettingSync
+```
+<!-- DisablePersonalizationSettingSync-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting prevents the "personalize" group from syncing to and from this PC. This option turns off and disables the "personalize" group on the "sync your settings" page in PC settings.
+<!-- DisablePersonalizationSettingSync-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Prevent the "personalize" group from syncing to and from this PC. This turns off and disables the "personalize" group on the "sync your settings" page in PC settings.
 
 If you enable this policy setting, the "personalize" group won't be synced.
 
-Use the option "Allow users to turn personalize syncing on" so that syncing it is turned off by default but not disabled.
+Use the option "Allow users to turn personalize syncing on" so that syncing it turned off by default but not disabled.
 
 If you don't set or disable this setting, syncing of the "personalize" group is on by default and configurable by the user.
+<!-- DisablePersonalizationSettingSync-Description-End -->
 
-<!--/Description-->
+<!-- DisablePersonalizationSettingSync-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisablePersonalizationSettingSync-Editable-End -->
 
+<!-- DisablePersonalizationSettingSync-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Do not sync personalize*
--   GP name: *DisablePersonalizationSettingSync*
--   GP path: *Windows Components\Sync your settings*
--   GP ADMX file name: *SettingSync.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisablePersonalizationSettingSync-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- DisablePersonalizationSettingSync-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-settingsync-disablesettingsync"></a>**ADMX_SettingSync/DisableSettingSync**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | DisablePersonalizationSettingSync |
+| Friendly Name | Do not sync personalize |
+| Location | Computer Configuration |
+| Path | Windows Components > Sync your settings |
+| Registry Key Name | Software\Policies\Microsoft\Windows\SettingSync |
+| Registry Value Name | DisablePersonalizationSettingSync |
+| ADMX File Name | SettingSync.admx |
+<!-- DisablePersonalizationSettingSync-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- DisablePersonalizationSettingSync-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisablePersonalizationSettingSync-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DisablePersonalizationSettingSync-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DisableSettingSync-Begin -->
+## DisableSettingSync
 
-> [!div class = "checklist"]
-> * Device
+<!-- DisableSettingSync-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DisableSettingSync-Applicability-End -->
 
-<hr/>
+<!-- DisableSettingSync-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_SettingSync/DisableSettingSync
+```
+<!-- DisableSettingSync-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting prevents syncing to and from this PC. This option turns off and disables the "sync your settings" switch on the "sync your settings" page in PC Settings.
+<!-- DisableSettingSync-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Prevent syncing to and from this PC. This turns off and disables the "sync your settings" switch on the "sync your settings" page in PC Settings.
 
 If you enable this policy setting, "sync your settings" will be turned off, and none of the "sync your setting" groups will be synced on this PC.
 
-Use the option "Allow users to turn syncing on" so that syncing it is turned off by default but not disabled.
+Use the option "Allow users to turn syncing on" so that syncing it turned off by default but not disabled.
 
 If you don't set or disable this setting, "sync your settings" is on by default and configurable by the user.
+<!-- DisableSettingSync-Description-End -->
 
-<!--/Description-->
+<!-- DisableSettingSync-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableSettingSync-Editable-End -->
 
+<!-- DisableSettingSync-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Do not sync*
--   GP name: *DisableSettingSync*
--   GP path: *Windows Components\Sync your settings*
--   GP ADMX file name: *SettingSync.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisableSettingSync-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- DisableSettingSync-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-settingsync-disablestartlayoutsettingsync"></a>**ADMX_SettingSync/DisableStartLayoutSettingSync**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | DisableSettingSync |
+| Friendly Name | Do not sync |
+| Location | Computer Configuration |
+| Path | Windows Components > Sync your settings |
+| Registry Key Name | Software\Policies\Microsoft\Windows\SettingSync |
+| Registry Value Name | DisableSettingSync |
+| ADMX File Name | SettingSync.admx |
+<!-- DisableSettingSync-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- DisableSettingSync-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableSettingSync-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DisableSettingSync-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DisableStartLayoutSettingSync-Begin -->
+## DisableStartLayoutSettingSync
 
-> [!div class = "checklist"]
-> * Device
+<!-- DisableStartLayoutSettingSync-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DisableStartLayoutSettingSync-Applicability-End -->
 
-<hr/>
+<!-- DisableStartLayoutSettingSync-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_SettingSync/DisableStartLayoutSettingSync
+```
+<!-- DisableStartLayoutSettingSync-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting prevents the "Start layout" group from syncing to and from this PC. This option turns off and disables the "Start layout" group on the "sync your settings" page in PC settings.
+<!-- DisableStartLayoutSettingSync-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Prevent the "Start layout" group from syncing to and from this PC. This turns off and disables the "Start layout" group on the "sync your settings" page in PC settings.
 
 If you enable this policy setting, the "Start layout" group won't be synced.
 
-Use the option "Allow users to turn on start syncing" so that syncing is turned off by default but not disabled.
+Use the option "Allow users to turn start syncing on" so that syncing is turned off by default but not disabled.
 
 If you don't set or disable this setting, syncing of the "Start layout" group is on by default and configurable by the user.
+<!-- DisableStartLayoutSettingSync-Description-End -->
 
-<!--/Description-->
+<!-- DisableStartLayoutSettingSync-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableStartLayoutSettingSync-Editable-End -->
 
+<!-- DisableStartLayoutSettingSync-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Do not sync start settings*
--   GP name: *DisableStartLayoutSettingSync*
--   GP path: *Windows Components\Sync your settings*
--   GP ADMX file name: *SettingSync.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisableStartLayoutSettingSync-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- DisableStartLayoutSettingSync-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-settingsync-disablesynconpaidnetwork"></a>**ADMX_SettingSync/DisableSyncOnPaidNetwork**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | DisableStartLayoutSettingSync |
+| Friendly Name | Do not sync start settings |
+| Location | Computer Configuration |
+| Path | Windows Components > Sync your settings |
+| Registry Key Name | Software\Policies\Microsoft\Windows\SettingSync |
+| Registry Value Name | DisableStartLayoutSettingSync |
+| ADMX File Name | SettingSync.admx |
+<!-- DisableStartLayoutSettingSync-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- DisableStartLayoutSettingSync-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableStartLayoutSettingSync-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DisableStartLayoutSettingSync-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DisableSyncOnPaidNetwork-Begin -->
+## DisableSyncOnPaidNetwork
 
-> [!div class = "checklist"]
-> * Device
+<!-- DisableSyncOnPaidNetwork-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DisableSyncOnPaidNetwork-Applicability-End -->
 
-<hr/>
+<!-- DisableSyncOnPaidNetwork-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_SettingSync/DisableSyncOnPaidNetwork
+```
+<!-- DisableSyncOnPaidNetwork-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting prevents syncing to and from this PC when on metered Internet connections. This option turns off and disables "sync your settings on metered connections" switch on the "sync your settings" page in PC Settings.
+<!-- DisableSyncOnPaidNetwork-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Prevent syncing to and from this PC when on metered Internet connections. This turns off and disables "sync your settings on metered connections" switch on the "sync your settings" page in PC Settings.
 
 If you enable this policy setting, syncing on metered connections will be turned off, and no syncing will take place when this PC is on a metered connection.
 
 If you don't set or disable this setting, syncing on metered connections is configurable by the user.
+<!-- DisableSyncOnPaidNetwork-Description-End -->
 
-<!--/Description-->
+<!-- DisableSyncOnPaidNetwork-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableSyncOnPaidNetwork-Editable-End -->
 
+<!-- DisableSyncOnPaidNetwork-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Do not sync on metered connections*
--   GP name: *DisableSyncOnPaidNetwork*
--   GP path: *Windows Components\Sync your settings*
--   GP ADMX file name: *SettingSync.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisableSyncOnPaidNetwork-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- DisableSyncOnPaidNetwork-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-settingsync-disablewindowssettingsync"></a>**ADMX_SettingSync/DisableWindowsSettingSync**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | DisableSyncOnPaidNetwork |
+| Friendly Name | Do not sync on metered connections |
+| Location | Computer Configuration |
+| Path | Windows Components > Sync your settings |
+| Registry Key Name | Software\Policies\Microsoft\Windows\SettingSync |
+| Registry Value Name | DisableSyncOnPaidNetwork |
+| ADMX File Name | SettingSync.admx |
+<!-- DisableSyncOnPaidNetwork-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- DisableSyncOnPaidNetwork-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableSyncOnPaidNetwork-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DisableSyncOnPaidNetwork-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DisableWindowsSettingSync-Begin -->
+## DisableWindowsSettingSync
 
-> [!div class = "checklist"]
-> * Device
+<!-- DisableWindowsSettingSync-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DisableWindowsSettingSync-Applicability-End -->
 
-<hr/>
+<!-- DisableWindowsSettingSync-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_SettingSync/DisableWindowsSettingSync
+```
+<!-- DisableWindowsSettingSync-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting prevents the "Other Windows settings" group from syncing to and from this PC.  This option turns off and disables the "Other Windows settings" group on the "sync your settings" page in PC settings.
+<!-- DisableWindowsSettingSync-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Prevent the "Other Windows settings" group from syncing to and from this PC. This turns off and disables the "Other Windows settings" group on the "sync your settings" page in PC settings.
 
 If you enable this policy setting, the "Other Windows settings" group won't be synced.
 
-Use the option "Allow users to turn other Windows settings syncing on" so that syncing it is turned off by default but not disabled.
+Use the option "Allow users to turn other Windows settings syncing on" so that syncing it turned off by default but not disabled.
 
 If you don't set or disable this setting, syncing of the "Other Windows settings" group is on by default and configurable by the user.
+<!-- DisableWindowsSettingSync-Description-End -->
 
-<!--/Description-->
+<!-- DisableWindowsSettingSync-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableWindowsSettingSync-Editable-End -->
 
+<!-- DisableWindowsSettingSync-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Do not sync other Windows settings*
--   GP name: *DisableWindowsSettingSync*
--   GP path: *Windows Components\Sync your settings*
--   GP ADMX file name: *SettingSync.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisableWindowsSettingSync-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- DisableWindowsSettingSync-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
+**ADMX mapping**:
 
-<!--/Policies-->
+| Name | Value |
+|:--|:--|
+| Name | DisableWindowsSettingSync |
+| Friendly Name | Do not sync other Windows settings |
+| Location | Computer Configuration |
+| Path | Windows Components > Sync your settings |
+| Registry Key Name | Software\Policies\Microsoft\Windows\SettingSync |
+| Registry Value Name | DisableWindowsSettingSync |
+| ADMX File Name | SettingSync.admx |
+<!-- DisableWindowsSettingSync-AdmxBacked-End -->
 
-## Related topics
+<!-- DisableWindowsSettingSync-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableWindowsSettingSync-Examples-End -->
 
-[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)
+<!-- DisableWindowsSettingSync-End -->
+
+<!-- ADMX_SettingSync-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ADMX_SettingSync-CspMoreInfo-End -->
+
+<!-- ADMX_SettingSync-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

@@ -1,86 +1,98 @@
 ---
-title: Policy CSP - Camera
-description: Learn how to use the Policy CSP - Camera setting so that you can configure it to disable or enable the camera.
-ms.author: vinpa
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
+title: Camera Policy CSP
+description: Learn more about the Camera Area in Policy CSP.
 author: vinaypamnani-msft
-ms.localizationpriority: medium
-ms.date: 09/27/2019
-ms.reviewer: 
 manager: aaroncz
+ms.author: vinpa
+ms.date: 08/10/2023
+ms.localizationpriority: medium
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- Camera-Begin -->
 # Policy CSP - Camera
 
+<!-- Camera-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Camera-Editable-End -->
 
+<!-- AllowCamera-Begin -->
+## AllowCamera
 
-<hr/>
+<!-- AllowCamera-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- AllowCamera-Applicability-End -->
 
-<!--Policies-->
-## Camera policies  
+<!-- AllowCamera-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Camera/AllowCamera
+```
+<!-- AllowCamera-OmaUri-End -->
 
-<dl>
-  <dd>
-    <a href="#camera-allowcamera">Camera/AllowCamera</a>
-  </dd>
-</dl>
+<!-- AllowCamera-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allow the use of Camera devices on the machine.
 
+- If you enable or don't configure this policy setting, Camera devices will be enabled.
 
-<hr/>
+- If you disable this property setting, Camera devices will be disabled.
+<!-- AllowCamera-Description-End -->
 
-<!--Policy-->
-<a href="" id="camera-allowcamera"></a>**Camera/AllowCamera**  
+<!-- AllowCamera-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowCamera-Editable-End -->
 
-<!--SupportedSKUs-->
+<!-- AllowCamera-DFProperties-Begin -->
+**Description framework properties**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowCamera-DFProperties-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowCamera-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. |
+| 1 (Default) | Allowed. |
+<!-- AllowCamera-AllowedValues-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- AllowCamera-GpMapping-Begin -->
+**Group policy mapping**:
 
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | L_AllowCamera |
+| Friendly Name | Allow Use of Camera |
+| Location | Computer Configuration |
+| Path | Windows Components > Camera |
+| Registry Key Name | software\Policies\Microsoft\Camera |
+| Registry Value Name | AllowCamera |
+| ADMX File Name | Camera.admx |
+<!-- AllowCamera-GpMapping-End -->
 
-<!--/Scope-->
-<!--Description-->
-Disables or enables the camera.
+<!-- AllowCamera-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowCamera-Examples-End -->
 
-Most restricted value is 0.
+<!-- AllowCamera-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Allow Use of Camera*
--   GP name: *L_AllowCamera*
--   GP path: *Windows Components/Camera*
--   GP ADMX file name: *Camera.admx*
+<!-- Camera-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- Camera-CspMoreInfo-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- Camera-End -->
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+## Related articles
 
-<!--/SupportedValues-->
-<!--/Policy-->
-<hr/>
-
-
-
-<!--/Policies-->
-
+[Policy configuration service provider](policy-configuration-service-provider.md)

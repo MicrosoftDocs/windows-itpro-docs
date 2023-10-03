@@ -1,18 +1,19 @@
 ---
-title: Audit Detailed Directory Service Replication (Windows 10)
+title: Audit Detailed Directory Service Replication 
 description: The Audit Detailed Directory Service Replication setting decides if audit events contain detailed tracking info about data replicated between domain controllers
 ms.assetid: 1b89c8f5-bce7-4b20-8701-42585c7ab993
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
-author: dansimp
+ms.localizationpriority: low
+author: vinaypamnani-msft
 ms.date: 09/06/2021
-ms.technology: windows-sec
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # Audit Detailed Directory Service Replication

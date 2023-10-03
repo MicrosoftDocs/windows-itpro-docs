@@ -1,88 +1,155 @@
 ---
-title: Policy CSP - ADMX_Sharing
-description: Learn about Policy CSP - ADMX_Sharing.
-ms.author: vinpa
-ms.localizationpriority: medium
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
+title: ADMX_Sharing Policy CSP
+description: Learn more about the ADMX_Sharing Area in Policy CSP.
 author: vinaypamnani-msft
-ms.date: 09/21/2020
-ms.reviewer: 
 manager: aaroncz
+ms.author: vinpa
+ms.date: 08/10/2023
+ms.localizationpriority: medium
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ADMX_Sharing-Begin -->
 # Policy CSP - ADMX_Sharing
-> [!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<hr/>
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
-<!--Policies-->
-## ADMX_Sharing policies  
+<!-- ADMX_Sharing-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ADMX_Sharing-Editable-End -->
 
-<dl>
-  <dd>
-    <a href="#admx-sharing-noinplacesharing">ADMX_Sharing/NoInplaceSharing</a>
-  </dd>
-</dl>
+<!-- DisableHomeGroup-Begin -->
+## DisableHomeGroup
 
-<hr/>
+<!-- DisableHomeGroup-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DisableHomeGroup-Applicability-End -->
 
-<!--Policy-->
-<a href="" id="admx-sharing-noinplacesharing"></a>**ADMX_Sharing/NoInplaceSharing**  
+<!-- DisableHomeGroup-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Sharing/DisableHomeGroup
+```
+<!-- DisableHomeGroup-OmaUri-End -->
 
-<!--SupportedSKUs-->
+<!-- DisableHomeGroup-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether users can add computers to a homegroup. By default, users can add their computer to a homegroup on a private network.
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+- If you enable this policy setting, users can't add computers to a homegroup. This policy setting doesn't affect other network sharing features.
 
-<!--/SupportedSKUs-->
-<hr/>
+- If you disable or don't configure this policy setting, users can add computers to a homegroup. However, data on a domain-joined computer isn't shared with the homegroup.
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+This policy setting isn't configured by default.
 
-> [!div class = "checklist"]
-> * User
+You must restart the computer for this policy setting to take effect.
+<!-- DisableHomeGroup-Description-End -->
 
-<hr/>
+<!-- DisableHomeGroup-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableHomeGroup-Editable-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting specifies whether users can share files within their profile. By default, users are allowed to share files within their profile to other users on their network after an administrator opts in the computer.  An administrator can opt in the computer by using the sharing wizard to share a file within their profile.
+<!-- DisableHomeGroup-DFProperties-Begin -->
+**Description framework properties**:
 
-If you enable this policy setting, users can't share files within their profile using the sharing wizard.  Also, the sharing wizard can't create a share at %root%\users and can only be used to create SMB shares on folders.
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisableHomeGroup-DFProperties-End -->
 
-If you disable or don't configure this policy setting, users can share files out of their user profile after an administrator has opted in the computer.
+<!-- DisableHomeGroup-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--/Description-->
+**ADMX mapping**:
 
+| Name | Value |
+|:--|:--|
+| Name | DisableHomeGroup |
+| Friendly Name | Prevent the computer from joining a homegroup |
+| Location | Computer Configuration |
+| Path | Windows Components > HomeGroup |
+| Registry Key Name | Software\Policies\Microsoft\Windows\HomeGroup |
+| Registry Value Name | DisableHomeGroup |
+| ADMX File Name | Sharing.admx |
+<!-- DisableHomeGroup-AdmxBacked-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Prevent users from sharing files within their profile.*
--   GP name: *NoInplaceSharing*
--   GP path: *Windows Components\Network Sharing*
--   GP ADMX file name: *Sharing.admx*
+<!-- DisableHomeGroup-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableHomeGroup-Examples-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- DisableHomeGroup-End -->
 
+<!-- NoInplaceSharing-Begin -->
+## NoInplaceSharing
 
-<!--/Policies-->
+<!-- NoInplaceSharing-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoInplaceSharing-Applicability-End -->
 
-## Related topics
+<!-- NoInplaceSharing-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Sharing/NoInplaceSharing
+```
+<!-- NoInplaceSharing-OmaUri-End -->
 
-[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)
+<!-- NoInplaceSharing-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether users can share files within their profile. By default users are allowed to share files within their profile to other users on their network after an administrator opts in the computer. An administrator can opt in the computer by using the sharing wizard to share a file within their profile.
+
+- If you enable this policy setting, users can't share files within their profile using the sharing wizard. Also, the sharing wizard can't create a share at %root%\users and can only be used to create SMB shares on folders.
+
+- If you disable or don't configure this policy setting, users can share files out of their user profile after an administrator has opted in the computer.
+<!-- NoInplaceSharing-Description-End -->
+
+<!-- NoInplaceSharing-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoInplaceSharing-Editable-End -->
+
+<!-- NoInplaceSharing-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoInplaceSharing-DFProperties-End -->
+
+<!-- NoInplaceSharing-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | NoInplaceSharing |
+| Friendly Name | Prevent users from sharing files within their profile. |
+| Location | User Configuration |
+| Path | Windows Components > Network Sharing |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoInplaceSharing |
+| ADMX File Name | Sharing.admx |
+<!-- NoInplaceSharing-AdmxBacked-End -->
+
+<!-- NoInplaceSharing-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoInplaceSharing-Examples-End -->
+
+<!-- NoInplaceSharing-End -->
+
+<!-- ADMX_Sharing-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ADMX_Sharing-CspMoreInfo-End -->
+
+<!-- ADMX_Sharing-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

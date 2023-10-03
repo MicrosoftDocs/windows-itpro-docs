@@ -1,15 +1,17 @@
 ---
 title: Configure your network
-description:  This article details the network configurations needed for Windows Autopatch
-ms.date: 05/30/2022
-ms.prod: w11
-ms.technology: windows
+description: This article details the network configurations needed for Windows Autopatch
+ms.date: 09/15/2023
+ms.prod: windows-client
+ms.technology: itpro-updates
 ms.topic: how-to
 ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
 manager: dougeby
-msreviewer: hathind
+ms.reviewer: hathind
+ms.collection:
+  - tier2
 ---
 
 # Configure your network
@@ -47,3 +49,9 @@ There are URLs from several Microsoft products that must be in the allowed list 
 | Microsoft Edge | [Allowlist for Microsoft Edge Endpoints](/deployedge/microsoft-edge-security-endpoints) |
 | Microsoft Teams | [Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges) |
 | Windows Update for Business (WUfB) | [Windows Update for Business firewall and proxy requirements](https://support.microsoft.com/help/3084568/can-t-download-updates-from-windows-update-from-behind-a-firewall-or-p)
+
+### Delivery Optimization
+
+Delivery Optimization is a peer-to-peer distribution technology available in Windows 10 and Windows 11 that allows devices to share content, such as updates, that the devices downloaded from Microsoft over the internet. Delivery Optimization can help reduce network bandwidth because the device can get portions of the update from another device on the same local network instead of having to download the update completely from Microsoft.
+
+Windows Autopatch supports and recommends you configure and validate Delivery Optimization when you enroll into the Window Autopatch service. For more information, see [What is Delivery Optimization?](/windows/deployment/do/waas-delivery-optimization)

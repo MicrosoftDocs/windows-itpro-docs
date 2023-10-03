@@ -1,16 +1,8 @@
 ---
-title: Introduction
-description: Introduction to deployment and management of Windows devices in education environments
+title: Introduction to the tutorial deploy and manage Windows devices in a school
+description: Introduction to deployment and management of Windows devices in education environments.
 ms.date: 08/31/2022
-ms.prod: windows
-ms.technology: windows
-ms.topic: conceptual
-ms.localizationpriority: medium
-author: paolomatarazzo
-ms.author: paoloma
-#ms.reviewer: 
-manager: aaroncz
-ms.collection: education
+ms.topic: tutorial
 ---
 
 # Tutorial: deploy and manage Windows devices in a school
@@ -35,8 +27,8 @@ This content provides a comprehensive path for schools to deploy and manage new 
 
 Historically, school IT administrators and educators have struggled to find an easy-to-use, flexible, and secure way to manage the lifecycle of the devices in their schools. In response, Microsoft has developed integrated suites of products for streamlined, cost-effective device lifecycle management.
 
-Microsoft 365 Education provides tools and services that enable simplified management of all devices through Microsoft Endpoint Manager (MEM). With Microsoft's solutions, IT administrators have the flexibility to support diverse scenarios, including school-owned devices and bring-your-own devices.
-Microsoft Endpoint Manager services include:
+Microsoft 365 Education provides tools and services that enable simplified management of all devices through Microsoft Intune services. With Microsoft's solutions, IT administrators have the flexibility to support diverse scenarios, including school-owned devices and bring-your-own devices.
+Microsoft Intune services include:
 
 - [Microsoft Intune][MEM-1]
 - [Microsoft Intune for Education][INT-1]

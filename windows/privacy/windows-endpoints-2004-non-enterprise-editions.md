@@ -1,15 +1,14 @@
 ---
 title: Windows 10, version 2004, connection endpoints for non-Enterprise editions
 description: Explains what Windows 10 endpoints are used in non-Enterprise editions. Specific to Windows 10, version 2004.
-ms.prod: m365-security
+ms.prod: windows-client
+ms.technology: itpro-privacy
 ms.localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
-manager: dougeby
-ms.collection: M365-security-compliance
-ms.topic: article
-ms.date: 12/01/2021
-ms.technology: privacy
+manager: laurawi
+ms.date: 05/11/2020
+ms.topic: reference
 ---
 # Windows 10, version 2004, connection endpoints for non-Enterprise editions
 
@@ -197,4 +196,3 @@ The following methodology was used to derive the network endpoints:
 |www.microsoft.com|HTTP|Connected User Experiences and Telemetry, Microsoft Data Management service
 |www.msftconnecttest.com|HTTP|Network Connection (NCSI)
 |www.office.com|HTTPS|Microsoft Office
-

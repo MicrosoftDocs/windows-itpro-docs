@@ -1,13 +1,16 @@
 ---
 title: NetworkQoSPolicy (Windows 10)
 description: This section describes the NetworkQoSPolicy settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
-ms.prod: w10
+ms.prod: windows-client
 author: aczechowski
 ms.localizationpriority: medium
 ms.author: aaroncz
-ms.topic: article
+ms.topic: reference
+ms.collection: must-keep
 ms.reviewer: 
-manager: dougeby
+manager: aaroncz
+ms.technology: itpro-configure
+ms.date: 12/31/2017
 ---
 
 # NetworkQoSPolicy (Windows Configuration Designer reference)
@@ -20,7 +23,7 @@ Use to create network Quality of Service (QoS) policies. A QoS policy performs a
 | --- | :---: | :---: | :---: | :---: |
 | All settings |   | ✔️ |  |  |
 
-1. In **Available customizations**, select **NetworkQ0SPolicy**, enter a friendly name for the account, and then click **Add**.
+1. In **Available customizations**, select **NetworkQoSPolicy**, enter a friendly name for the account, and then click **Add**.
 2. In **Available customizations**, select the name that you just created. The following table describes the settings you can configure. 
 
 | Setting | Description |

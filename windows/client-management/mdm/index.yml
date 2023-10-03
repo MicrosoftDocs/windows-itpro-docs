@@ -1,18 +1,17 @@
 ### YamlMime:Landing
 
-title: Mobile Device Management # < 60 chars
-summary: Find out how to enroll Windows devices and manage company security policies and business applications. # < 160 chars
+title: Configuration Service Provider # < 60 chars
+summary: Learn more about the configuration service provider (CSP) policies available on Windows 10 and Windows 11. # < 160 chars
 
 metadata:
-  title: Mobile Device Management # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Find out how to enroll Windows devices and manage company security policies and business applications. # Required; article description that is displayed in search results. < 160 chars.
-  ms.topic: landing-page # Required
-  services: windows-10
-  ms.prod: windows
+  title: Configuration Service Provider # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Learn more about the configuration service provider (CSP) policies available on Windows 10 and Windows 11. # Required; article description that is displayed in search results. < 160 chars.
+  ms.topic: landing-page
+  ms.technology: itpro-manage
+  ms.prod: windows-client
   ms.collection:
-    - windows-10
     - highpri
-  ms.custom: intro-hub-or-landing
+    - tier1
   author: vinaypamnani-msft
   ms.author: vinpa
   manager: aaroncz
@@ -24,56 +23,46 @@ metadata:
 landingContent:
   # Cards and links should be based on top customer tasks or top subjects
   # Start card title with a verb
-  # Card (optional)
-  - title: Device enrollment
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Mobile device enrollment
-            url: mobile-device-enrollment.md
-      - linkListType: concept
-        links:
-          - text: Enroll Windows devices
-            url: mdm-enrollment-of-windows-devices.md
-          - text: Automatic enrollment using Azure AD
-            url: azure-ad-and-microsoft-intune-automatic-mdm-enrollment-in-the-new-portal.md
-          - text: Automatic enrollment using Group Policy
-            url: enroll-a-windows-10-device-automatically-using-group-policy.md
-          - text: Bulk enrollment
-            url: bulk-enrollment-using-windows-provisioning-tool.md
 
   # Card (optional)
-  - title: Device management
+  - title: Configuration service provider reference
     linkLists:
-      - linkListType: overview
+      - linkListType: reference
         links:
-          - text: Enterprise settings, policies, and app management
-            url: windows-mdm-enterprise-settings.md
-      - linkListType: concept
-        links:
-          - text: Enterprise app management
-            url: enterprise-app-management.md
-          - text: Device updates management
-            url: device-update-management.md
-          - text: Secured-core PC configuration lock
-            url: config-lock.md
-          - text: Diagnose MDM failures
-            url: diagnose-mdm-failures-in-windows-10.md
+          - text: Support scenarios
+            url: configuration-service-provider-support.md
+          - text: Device description framework (DDF) files
+            url: configuration-service-provider-ddf.md
+          - text: BitLocker CSP
+            url: bitlocker-csp.md
+          - text: DynamicManagement CSP
+            url: dynamicmanagement-csp.md
+
 
   # Card (optional)
-  - title: CSP reference
+  - title: Policy CSP
     linkLists:
-      - linkListType: overview
-        links:
-          - text: Configuration service provider reference
-            url: configuration-service-provider-reference.md
       - linkListType: reference
         links:
           - text: Policy CSP
             url: policy-configuration-service-provider.md
+          - text: Policy DDF file
+            url: configuration-service-provider-ddf.md
+          - text: Policy CSP - Start
+            url: policy-csp-start.md
           - text: Policy CSP - Update
             url: policy-csp-update.md
-          - text: DynamicManagement CSP
-            url: dynamicmanagement-csp.md
-          - text: BitLocker CSP
-            url: bitlocker-csp.md
+
+  # Card (optional)
+  - title: Policy CSP support scenarios
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: ADMX policies
+            url: policies-in-policy-csp-admx-backed.md
+          - text: Policies supported by group policy
+            url: policies-in-policy-csp-supported-by-group-policy.md
+          - text: Policies supported by HoloLens 2
+            url: policies-in-policy-csp-supported-by-hololens2.md
+          - text: Policies supported by Microsoft Surface Hub
+            url: policies-in-policy-csp-supported-by-surface-hub.md

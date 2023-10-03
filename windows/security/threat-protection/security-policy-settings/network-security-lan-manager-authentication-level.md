@@ -1,26 +1,29 @@
 ---
-title: Network security LAN Manager authentication level (Windows 10)
+title: Network security LAN Manager authentication level 
 description: Best practices, location, values, policy management and security considerations for the policy setting, Network security LAN Manager authentication level.
 ms.assetid: bbe1a98c-420a-41e7-9d3c-3a2fe0f1843e
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+  - highpri
+  - tier3
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Network security: LAN Manager authentication level
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management and security considerations for the **Network security: LAN Manager authentication level** security policy setting.
@@ -73,7 +76,7 @@ HKLM\System\CurrentControlSet\Control\Lsa\LmCompatibilityLevel
 
 ### Default values
 
-The following table lists the actual and effective default values for this policy. Default values are also listed on the policy’s property page.
+The following table lists the actual and effective default values for this policy. Default values are also listed on the policy's property page.
 
 | Server type or GPO | Default value |
 | - | - |

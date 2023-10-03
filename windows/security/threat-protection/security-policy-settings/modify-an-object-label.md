@@ -1,26 +1,26 @@
 ---
-title: Modify an object label (Windows 10)
+title: Modify an object label 
 description: Describes the best practices, location, values, policy management, and security considerations for the Modify an object label security policy setting.
 ms.assetid: 3e5a97dd-d363-43a8-ae80-452e866ebfd5
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Modify an object label
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management, and security considerations for the **Modify an object label** security policy setting.

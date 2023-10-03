@@ -1,13 +1,15 @@
 ---
 title: What's new in App-V for Windows 10, version 1703 and earlier (Windows 10)
-description: Information about what's new in App-V for Windows 10, version 1703 and earlier. 
+description: Information about what's new in App-V for Windows 10, version 1703 and earlier.
 author: aczechowski
-ms.prod: w10
+ms.prod: windows-client
 ms.date: 06/08/2018
 ms.reviewer: 
-manager: dougeby
+manager: aaroncz
 ms.author: aaroncz
+ms.collection: must-keep
 ms.topic: article
+ms.technology: itpro-apps
 ---
 # What's new in App-V for Windows 10, version 1703 and earlier
 

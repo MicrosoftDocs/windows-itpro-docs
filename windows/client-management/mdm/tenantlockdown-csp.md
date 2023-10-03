@@ -2,12 +2,12 @@
 title: TenantLockdown CSP
 description: To lock a device to a tenant to prevent accidental or intentional resets or wipes, use the TenantLockdown configuration service provider.
 ms.author: vinpa
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.topic: reference
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 08/13/2018
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ---
 
@@ -38,22 +38,22 @@ The following example shows the TenantLockdown configuration service provider in
 TenantLockdown
 ----RequireNetworkInOOBE
 ```
-<a href="" id="tenantlockdown"></a>**./Vendor/MSFT/TenantLockdown**  
+<a href="" id="tenantlockdown"></a>**./Vendor/MSFT/TenantLockdown**
 The root node for the TenantLockdown configuration service provider.
 
-<a href="" id="requirenetworkinoobe"></a>**RequireNetworkInOOBE**  
+<a href="" id="requirenetworkinoobe"></a>**RequireNetworkInOOBE**
 Specifies whether a network connection is required during the out-of-box experience (OOBE) at first logon.
 
 When RequireNetworkInOOBE is true, when the device goes through OOBE at first sign in or after a reset, the user is required to choose a network before proceeding. There's no "skip for now" option.
 
-- Value type is bool. 
+- Value type is bool.
 - Supported operations are Get and Replace.
 
-  -  True - Require network in OOBE.  
+  -  True - Require network in OOBE.
   -  False - No network connection requirement in OOBE.
 
 Example scenario:  Henry is the IT admin at Contoso. He deploys 1000 devices successfully with RequireNetworkInOOBE set to true. When users accidentally or intentionally reset their device, they are required to connect to a network before they can proceed. Upon successful connection, users see the Contoso branded sign-in experience where they must use their Azure AD credentials. There is no option to skip the network connection and create a local account.
 
 ## Related topics
 
-[Configuration service provider reference](configuration-service-provider-reference.md)
+[Configuration service provider reference](index.yml)

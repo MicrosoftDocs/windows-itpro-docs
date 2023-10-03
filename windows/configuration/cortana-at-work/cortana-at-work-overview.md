@@ -1,16 +1,21 @@
 ---
 title: Configure Cortana in Windows 10 and Windows 11
 ms.reviewer: 
-manager: dougeby
+manager: aaroncz
 description: Cortana includes powerful configuration options specifically to optimize for unique small to medium-sized business and for enterprise environments.
-ms.prod: w10
+ms.prod: windows-client
+ms.collection: tier3
 author: aczechowski
 ms.localizationpriority: medium
 ms.author: aaroncz
+ms.technology: itpro-configure
+ms.date: 12/31/2017
+ms.topic: article
 ---
 
 # Configure Cortana in Windows 10 and Windows 11
-
+<!--Using include for Cortana in Windows deprecation -->
+[!INCLUDE [Deprecation of Cortana in Windows](./includes/cortana-deprecation.md)]
 ## Who is Cortana?
 
 Cortana is a personal productivity assistant in Microsoft 365, helping your users achieve more with less effort and focus on what matters. The Cortana app in Windows 10 and Windows 11 helps users quickly get information across Microsoft 365, using typed or spoken queries to connect with people, check calendars, set reminders, add tasks, and more.

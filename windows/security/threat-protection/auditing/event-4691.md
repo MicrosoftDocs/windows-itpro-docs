@@ -1,17 +1,18 @@
 ---
-title: 4691(S) Indirect access to an object was requested. (Windows 10)
+title: 4691(S) Indirect access to an object was requested. 
 description: Describes security event 4691(S) Indirect access to an object was requested.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
-author: dansimp
+ms.localizationpriority: low
+author: vinaypamnani-msft
 ms.date: 09/07/2021
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.technology: windows-sec
+manager: aaroncz
+ms.author: vinpa
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 4691(S): Indirect access to an object was requested.
@@ -125,9 +126,9 @@ These events are generated for [ALPC Ports](/windows/win32/etw/alpc) access requ
 
 **Access Request Information:**
 
--   **Accesses** \[Type = UnicodeString\]: the list of access rights which were requested by **Subject\\Security ID**. These access rights depend on **Object Type**. “Table 13. File access codes.” contains information about the most common access rights for file system objects. For information about ALPC ports access rights, use <https://technet.microsoft.com/> or other informational resources.
+-   **Accesses** \[Type = UnicodeString\]: the list of access rights which were requested by **Subject\\Security ID**. These access rights depend on **Object Type**. [Table of file access codes](/windows/security/threat-protection/auditing/event-5145#table-of-file-access-codes) contains information about the most common access rights for file system objects. For information about ALPC ports access rights, use <https://technet.microsoft.com/> or other informational resources.
 
--   **Access Mask** \[Type = HexInt32\]: hexadecimal mask for the operation that was requested or performed. See “Table 13. File access codes.” for more information about file access rights. For information about ALPC ports access rights, use <https://technet.microsoft.com/> or other informational resources.
+-   **Access Mask** \[Type = HexInt32\]: hexadecimal mask for the operation that was requested or performed. For more information about file access rights, see [Table of file access codes](/windows/security/threat-protection/auditing/event-5145#table-of-file-access-codes). For information about ALPC ports access rights, use <https://technet.microsoft.com/> or other informational resources.
 
 ## Security Monitoring Recommendations
 

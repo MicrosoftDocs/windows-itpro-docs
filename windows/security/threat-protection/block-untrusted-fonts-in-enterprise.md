@@ -1,14 +1,15 @@
 ---
-title: Block untrusted fonts in an enterprise (Windows 10)
+title: Block untrusted fonts in an enterprise 
 description: To help protect your company from attacks that may originate from untrusted or attacker controlled font files, we've created the Blocking Untrusted Fonts feature.
 ms.reviewer: 
-manager: dansimp
-ms.prod: m365-security
-author: dansimp
-ms.author: dansimp
+ms.prod: windows-client
+author: aczechowski
+ms.author: aaroncz
+manager: aaroncz
 ms.date: 08/14/2017
 ms.localizationpriority: medium
-ms.technology: windows-sec
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # Block untrusted fonts in an enterprise
@@ -19,7 +20,7 @@ ms.technology: windows-sec
 
 > Learn more about what features and functionality are supported in each Windows edition at [Compare Windows 10 Editions](https://www.microsoft.com/WindowsForBusiness/Compare).
 
-To help protect your company from attacks that may originate from untrusted or attacker-controlled font files, we’ve created the Blocking Untrusted Fonts feature. Using this feature, you can turn on a global setting that stops your employees from loading untrusted fonts processed using the Graphics Device Interface (GDI) onto your network. Untrusted fonts are any font installed outside of the `%windir%/Fonts` directory. Blocking untrusted fonts helps prevent both remote (web-based or email-based) and local EOP attacks that can happen during the font file-parsing process.
+To help protect your company from attacks that may originate from untrusted or attacker-controlled font files, we've created the Blocking Untrusted Fonts feature. Using this feature, you can turn on a global setting that stops your employees from loading untrusted fonts processed using the Graphics Device Interface (GDI) onto your network. Untrusted fonts are any font installed outside of the `%windir%/Fonts` directory. Blocking untrusted fonts helps prevent both remote (web-based or email-based) and local EOP attacks that can happen during the font file-parsing process.
 
 ## What does this mean for me?
 Blocking untrusted fonts helps improve your network and employee protection against font-processing-related attacks. By default, this feature isn't turned on.
@@ -29,7 +30,7 @@ There are three ways to use this feature:
 
 - **On.** Helps stop any font processed using GDI from loading outside of the `%windir%/Fonts` directory. It also turns on event logging.
 
-- **Audit.** Turns on event logging, but doesn’t block fonts from loading, regardless of location. The name of the apps that use untrusted fonts appear in your event log.
+- **Audit.** Turns on event logging, but doesn't block fonts from loading, regardless of location. The name of the apps that use untrusted fonts appear in your event log.
 
   > [!NOTE]
   > If you aren't quite ready to deploy this feature into your organization, you can run it in Audit mode to see if not loading untrusted fonts causes any usability or compatibility issues.
@@ -39,9 +40,9 @@ There are three ways to use this feature:
 ## Potential reductions in functionality
 After you turn on this feature, your employees might experience reduced functionality when:
 
-- Sending a print job to a remote printer server that uses this feature and where the spooler process hasn’t been excluded. In this situation, any fonts that aren’t already available in the server’s %windir%/Fonts folder won’t be used.
+- Sending a print job to a remote printer server that uses this feature and where the spooler process hasn't been excluded. In this situation, any fonts that aren't already available in the server's %windir%/Fonts folder won't be used.
 
-- Printing using fonts provided by the installed printer’s graphics .dll file, outside of the %windir%/Fonts folder. For more information, see [Introduction to Printer Graphics DLLs](/windows-hardware/drivers/print/introduction-to-printer-graphics-dlls).
+- Printing using fonts provided by the installed printer's graphics .dll file, outside of the %windir%/Fonts folder. For more information, see [Introduction to Printer Graphics DLLs](/windows-hardware/drivers/print/introduction-to-printer-graphics-dlls).
 
 - Using first or third-party apps that use memory-based fonts.
 
@@ -105,7 +106,7 @@ After you turn on this feature, or start using Audit mode, you can look at your 
     Blocked: true
 
     > [!NOTE]
-    > Because the **FontType** is *Memory*, there’s no associated **FontPath**.
+    > Because the **FontType** is *Memory*, there's no associated **FontPath**.
 
     **Event Example 2 - Winlogon**<br>
     Winlogon.exe attempted loading a font that is restricted by font-loading policy.<br>
@@ -114,7 +115,7 @@ After you turn on this feature, or start using Audit mode, you can look at your 
     Blocked: true
 
     > [!NOTE]
-    > Because the **FontType** is *File*, there’s also an associated **FontPath**.
+    > Because the **FontType** is *File*, there's also an associated **FontPath**.
 
     **Event Example 3 - Internet Explorer running in Audit mode**<br>
     Iexplore.exe attempted loading a font that is restricted by font-loading policy.<br>
@@ -123,7 +124,7 @@ After you turn on this feature, or start using Audit mode, you can look at your 
     Blocked: false
 
     > [!NOTE]
-    > In Audit mode, the problem is recorded, but the font isn’t blocked.
+    > In Audit mode, the problem is recorded, but the font isn't blocked.
 
 ## Fix apps having problems because of blocked fonts
 Your company may still need apps that are having problems because of blocked fonts, so we suggest that you first run this feature in Audit mode to determine which fonts are causing the problems.
@@ -132,15 +133,15 @@ After you figure out the problematic fonts, you can try to fix your apps in two 
 
 **To fix your apps by installing the problematic fonts (recommended)**
 
-- On each computer with the app installed, right-click on the font name and click **Install**.<p>The font should automatically install into your `%windir%/Fonts` directory. If it doesn’t, you’ll need to manually copy the font files into the **Fonts** directory and run the installation from there.
+- On each computer with the app installed, right-click on the font name and click **Install**.<p>The font should automatically install into your `%windir%/Fonts` directory. If it doesn't, you'll need to manually copy the font files into the **Fonts** directory and run the installation from there.
 
 **To fix your apps by excluding processes**
 
-1.  On each computer with the app installed, open regedit.exe and go to `HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\<process_image_name>`.<br><br>For example, if you want to exclude Microsoft Word processes, you’d use `HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\Winword.exe`.
+1.  On each computer with the app installed, open regedit.exe and go to `HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\<process_image_name>`.<br><br>For example, if you want to exclude Microsoft Word processes, you'd use `HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\Winword.exe`.
 
 2.  Add other processes that need to be excluded here, and then turn on the Blocking untrusted fonts feature, using the steps in [Turn on and use the Blocking Untrusted Fonts feature](#turn-on-and-use-the-blocking-untrusted-fonts-feature), earlier in this article.
 
 
 ## Related content
 
-- [Dropping the “Untrusted Font Blocking” setting](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/dropping-the-quot-untrusted-font-blocking-quot-setting/ba-p/701068/)
+- [Dropping the "Untrusted Font Blocking" setting](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/dropping-the-quot-untrusted-font-blocking-quot-setting/ba-p/701068/)

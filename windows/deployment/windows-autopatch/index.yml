@@ -7,12 +7,17 @@ metadata:
   title: Windows Autopatch documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Windows Autopatch is a cloud service that automates Windows, Microsoft 365 Apps for enterprise, Microsoft Edge, and Microsoft Teams updates to improve security and productivity across your organization. # Required; article description that is displayed in search results. < 160 chars.
   keywords: device, app, update, management
-  ms.service: w11 #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: landing-page # Required
   author: tiaraquan #Required; your GitHub user alias, with correct capitalization.
   ms.author: tiaraquan #Required; microsoft alias of author; optional team alias.
+  manager: dougeby
   ms.date: 05/30/2022 #Required; mm/dd/yyyy format.
-  ms.custom: intro-hub-or-landing
+  ms.prod: windows-client
+  ms.technology: itpro-updates
+  ms.collection:
+    - highpri
+    - tier2
+
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
 

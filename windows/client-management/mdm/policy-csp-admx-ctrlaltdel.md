@@ -1,246 +1,278 @@
 ---
-title: Policy CSP - ADMX_CtrlAltDel
-description: Learn about the Policy CSP - ADMX_CtrlAltDel.
-ms.author: vinpa
-ms.localizationpriority: medium
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
+title: ADMX_CtrlAltDel Policy CSP
+description: Learn more about the ADMX_CtrlAltDel Area in Policy CSP.
 author: vinaypamnani-msft
-ms.date: 08/26/2020
-ms.reviewer: 
 manager: aaroncz
+ms.author: vinpa
+ms.date: 08/10/2023
+ms.localizationpriority: medium
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ADMX_CtrlAltDel-Begin -->
 # Policy CSP - ADMX_CtrlAltDel
 
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
-<hr/>
+<!-- ADMX_CtrlAltDel-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ADMX_CtrlAltDel-Editable-End -->
 
-<!--Policies-->
-## ADMX_CtrlAltDel policies  
+<!-- DisableChangePassword-Begin -->
+## DisableChangePassword
 
-<dl>
-  <dd>
-    <a href="#admx-ctrlaltdel-disablechangepassword">ADMX_CtrlAltDel/DisableChangePassword</a>
-  </dd>
-  <dd>
-    <a href="#admx-ctrlaltdel-disablelockcomputer">ADMX_CtrlAltDel/DisableLockComputer</a>
-  </dd>
-  <dd>
-    <a href="#admx-ctrlaltdel-disabletaskmgr">ADMX_CtrlAltDel/DisableTaskMgr</a>
-  </dd>
-  <dd>
-    <a href="#admx-ctrlaltdel-nologoff">ADMX_CtrlAltDel/NoLogoff</a>
-  </dd>
-</dl>
+<!-- DisableChangePassword-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DisableChangePassword-Applicability-End -->
 
+<!-- DisableChangePassword-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_CtrlAltDel/DisableChangePassword
+```
+<!-- DisableChangePassword-OmaUri-End -->
 
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-ctrlaltdel-disablechangepassword"></a>**ADMX_CtrlAltDel/DisableChangePassword**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- DisableChangePassword-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting prevents users from changing their Windows password on demand.
 
-If you enable this policy setting, the **Change Password** button on the Windows Security dialog box won't appear when you press Ctrl+Alt+Del.
+If you enable this policy setting, the 'Change Password' button on the Windows Security dialog box won't appear when you press Ctrl+Alt+Del.
 
-However, users will still be able to change their password when prompted by the system. The system prompts users for a new password when an administrator requires a new password or their password is expiring.
+However, users are still able to change their password when prompted by the system. The system prompts users for a new password when an administrator requires a new password or their password is expiring.
+<!-- DisableChangePassword-Description-End -->
 
-<!--/Description-->
+<!-- DisableChangePassword-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableChangePassword-Editable-End -->
 
+<!-- DisableChangePassword-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Remove Change Password*
--   GP name: *DisableChangePassword*
--   GP path: *System/Ctrl+Alt+Del Options*
--   GP ADMX file name: *CtrlAltDel.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisableChangePassword-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+<!-- DisableChangePassword-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<hr/>
+**ADMX mapping**:
 
-<!--Policy-->
-<a href="" id="admx-ctrlaltdel-disablelockcomputer"></a>**ADMX_CtrlAltDel/DisableLockComputer**  
+| Name | Value |
+|:--|:--|
+| Name | DisableChangePassword |
+| Friendly Name | Remove Change Password |
+| Location | User Configuration |
+| Path | System > Ctrl+Alt+Del Options |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\System |
+| Registry Value Name | DisableChangePassword |
+| ADMX File Name | CtrlAltDel.admx |
+<!-- DisableChangePassword-AdmxBacked-End -->
 
-<!--SupportedSKUs-->
+<!-- DisableChangePassword-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableChangePassword-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- DisableChangePassword-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DisableLockComputer-Begin -->
+## DisableLockComputer
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DisableLockComputer-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DisableLockComputer-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- DisableLockComputer-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_CtrlAltDel/DisableLockComputer
+```
+<!-- DisableLockComputer-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- DisableLockComputer-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting prevents users from locking the system.
 
 While locked, the desktop is hidden and the system can't be used. Only the user who locked the system or the system administrator can unlock it.
 
-If you enable this policy setting, users can't lock the computer from the keyboard using Ctrl+Alt+Del.
+- If you enable this policy setting, users can't lock the computer from the keyboard using Ctrl+Alt+Del.
 
-If you disable or don't configure this policy setting, users will be able to lock the computer from the keyboard using Ctrl+Alt+Del.
+- If you disable or don't configure this policy setting, users will be able to lock the computer from the keyboard using Ctrl+Alt+Del.
 
 > [!TIP]
 > To lock a computer without configuring a setting, press Ctrl+Alt+Delete, and then click Lock this computer.
+<!-- DisableLockComputer-Description-End -->
 
-<!--/Description-->
+<!-- DisableLockComputer-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableLockComputer-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Remove Lock Computer*
--   GP name: *DisableLockWorkstation*
--   GP path: *System/Ctrl+Alt+Del Options*
--   GP ADMX file name: *CtrlAltDel.admx*
+<!-- DisableLockComputer-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisableLockComputer-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-ctrlaltdel-disabletaskmgr"></a>**ADMX_CtrlAltDel/DisableTaskMgr**  
-<!--SupportedSKUs-->
+<!-- DisableLockComputer-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+**ADMX mapping**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | DisableLockComputer |
+| Friendly Name | Remove Lock Computer |
+| Location | User Configuration |
+| Path | System > Ctrl+Alt+Del Options |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\System |
+| Registry Value Name | DisableLockWorkstation |
+| ADMX File Name | CtrlAltDel.admx |
+<!-- DisableLockComputer-AdmxBacked-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DisableLockComputer-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableLockComputer-Examples-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- DisableLockComputer-End -->
 
-<hr/>
+<!-- DisableTaskMgr-Begin -->
+## DisableTaskMgr
 
-<!--/Scope-->
-<!--Description-->
+<!-- DisableTaskMgr-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DisableTaskMgr-Applicability-End -->
+
+<!-- DisableTaskMgr-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_CtrlAltDel/DisableTaskMgr
+```
+<!-- DisableTaskMgr-OmaUri-End -->
+
+<!-- DisableTaskMgr-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting prevents users from starting Task Manager.
 
-Task Manager (**taskmgr.exe**) lets users start and stop programs, monitor the performance of their computers, view and monitor all programs running on their computers, including system services, find the executable names of programs, and change the priority of the process in which programs run.
+Task Manager (taskmgr.exe) lets users start and stop programs; monitor the performance of their computers; view and monitor all programs running on their computers, including system services; find the executable names of programs; and change the priority of the process in which programs run.
 
-If you enable this policy setting, users won't be able to access Task Manager. If users try to start Task Manager, a message appears explaining that a policy prevents the action.
+- If you enable this policy setting, users won't be able to access Task Manager. If users try to start Task Manager, a message appears explaining that a policy prevents the action.
 
-If you disable or don't configure this policy setting, users can access Task Manager to start and stop programs, monitor the performance of their computers, view and monitor all programs running on their computers, including system services, find the executable names of programs, and change the priority of the process in which programs run.
+- If you disable or don't configure this policy setting, users can access Task Manager to start and stop programs, monitor the performance of their computers, view and monitor all programs running on their computers, including system services, find the executable names of programs, and change the priority of the process in which programs run.
+<!-- DisableTaskMgr-Description-End -->
 
-<!--/Description-->
+<!-- DisableTaskMgr-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableTaskMgr-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Remove Task Manager*
--   GP name: *DisableTaskMgr*
--   GP path: *System/Ctrl+Alt+Del Options*
--   GP ADMX file name: *CtrlAltDel.admx*
+<!-- DisableTaskMgr-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisableTaskMgr-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-ctrlaltdel-nologoff"></a>**ADMX_CtrlAltDel/NoLogoff**  
+<!-- DisableTaskMgr-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | DisableTaskMgr |
+| Friendly Name | Remove Task Manager |
+| Location | User Configuration |
+| Path | System > Ctrl+Alt+Del Options |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\System |
+| Registry Value Name | DisableTaskMgr |
+| ADMX File Name | CtrlAltDel.admx |
+<!-- DisableTaskMgr-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DisableTaskMgr-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableTaskMgr-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DisableTaskMgr-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- NoLogoff-Begin -->
+## NoLogoff
 
-<hr/>
+<!-- NoLogoff-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoLogoff-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- NoLogoff-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_CtrlAltDel/NoLogoff
+```
+<!-- NoLogoff-OmaUri-End -->
+
+<!-- NoLogoff-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting disables or removes all menu items and buttons that log the user off the system.
 
-If you enable this policy setting, users won't see the Logoff menu item when they press Ctrl+Alt+Del. This scenario will prevent them from logging off unless they restart or shut down the computer, or clicking Log off from the Start menu.
+- If you enable this policy setting, users won't see the Log off menu item when they press Ctrl+Alt+Del. This will prevent them from logging off unless they restart or shutdown the computer, or clicking Log off from the Start menu.
 
 Also, see the 'Remove Logoff on the Start Menu' policy setting.
 
-If you disable or don't configure this policy setting, users can see and select the Logoff menu item when they press Ctrl+Alt+Del.
+- If you disable or don't configure this policy setting, users can see and select the Log off menu item when they press Ctrl+Alt+Del.
+<!-- NoLogoff-Description-End -->
 
-<!--/Description-->
+<!-- NoLogoff-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoLogoff-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Remove Logoff*
--   GP name: *NoLogoff*
--   GP path: *System/Ctrl+Alt+Del Options*
--   GP ADMX file name: *CtrlAltDel.admx*
+<!-- NoLogoff-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoLogoff-DFProperties-End -->
 
+<!-- NoLogoff-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--/Policies-->
+**ADMX mapping**:
 
-## Related topics
+| Name | Value |
+|:--|:--|
+| Name | NoLogoff |
+| Friendly Name | Remove Logoff |
+| Location | User Configuration |
+| Path | System > Ctrl+Alt+Del Options |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoLogoff |
+| ADMX File Name | CtrlAltDel.admx |
+<!-- NoLogoff-AdmxBacked-End -->
 
-[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)
+<!-- NoLogoff-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoLogoff-Examples-End -->
+
+<!-- NoLogoff-End -->
+
+<!-- ADMX_CtrlAltDel-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ADMX_CtrlAltDel-CspMoreInfo-End -->
+
+<!-- ADMX_CtrlAltDel-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

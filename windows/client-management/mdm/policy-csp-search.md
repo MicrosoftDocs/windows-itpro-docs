@@ -1,804 +1,1177 @@
 ---
-title: Policy CSP - Search
-description: Learn how the Policy CSP - Search setting allows search and Cortana to search cloud sources like OneDrive and SharePoint.
-ms.author: vinpa
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
+title: Search Policy CSP
+description: Learn more about the Search Area in Policy CSP.
 author: vinaypamnani-msft
-ms.localizationpriority: medium
-ms.date: 02/12/2021
-ms.reviewer: 
 manager: aaroncz
+ms.author: vinpa
+ms.date: 08/10/2023
+ms.localizationpriority: medium
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- Search-Begin -->
 # Policy CSP - Search
 
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
+
+<!-- Search-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Search-Editable-End -->
+
+<!-- AllowCloudSearch-Begin -->
+## AllowCloudSearch
+
+<!-- AllowCloudSearch-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- AllowCloudSearch-Applicability-End -->
+
+<!-- AllowCloudSearch-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Search/AllowCloudSearch
+```
+<!-- AllowCloudSearch-OmaUri-End -->
+
+<!-- AllowCloudSearch-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Allow search and Cortana to search cloud sources like OneDrive and SharePoint.
+<!-- AllowCloudSearch-Description-End -->
+
+<!-- AllowCloudSearch-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowCloudSearch-Editable-End -->
+
+<!-- AllowCloudSearch-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowCloudSearch-DFProperties-End -->
+
+<!-- AllowCloudSearch-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. |
+| 1 (Default) | Allowed. |
+<!-- AllowCloudSearch-AllowedValues-End -->
+
+<!-- AllowCloudSearch-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | AllowCloudSearch |
+| Friendly Name | Allow Cloud Search |
+| Element Name | Cloud Search Setting. |
+| Location | Computer Configuration |
+| Path | Windows Components > Search |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\Windows Search |
+| ADMX File Name | Search.admx |
+<!-- AllowCloudSearch-GpMapping-End -->
+
+<!-- AllowCloudSearch-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowCloudSearch-Examples-End -->
+
+<!-- AllowCloudSearch-End -->
+
+<!-- AllowCortanaInAAD-Begin -->
+## AllowCortanaInAAD
+
+<!-- AllowCortanaInAAD-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- AllowCortanaInAAD-Applicability-End -->
+
+<!-- AllowCortanaInAAD-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Search/AllowCortanaInAAD
+```
+<!-- AllowCortanaInAAD-OmaUri-End -->
+
+<!-- AllowCortanaInAAD-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Allow the cortana opt-in page during windows setup out of the box experience.
+<!-- AllowCortanaInAAD-Description-End -->
+
+<!-- AllowCortanaInAAD-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowCortanaInAAD-Editable-End -->
+
+<!-- AllowCortanaInAAD-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- AllowCortanaInAAD-DFProperties-End -->
+
+<!-- AllowCortanaInAAD-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Not allowed. The Cortana consent page won't appear in AAD OOBE during setup. |
+| 1 | Allowed. The Cortana consent page will appear in Azure AAD OOBE during setup. |
+<!-- AllowCortanaInAAD-AllowedValues-End -->
+
+<!-- AllowCortanaInAAD-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | AllowCortanaInAAD |
+| Friendly Name | Allow Cortana Page in OOBE on an AAD account |
+| Location | Computer Configuration |
+| Path | Windows Components > Search |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\Windows Search |
+| Registry Value Name | AllowCortanaInAAD |
+| ADMX File Name | Search.admx |
+<!-- AllowCortanaInAAD-GpMapping-End -->
+
+<!-- AllowCortanaInAAD-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowCortanaInAAD-Examples-End -->
 
-<hr/>
-
-<!--Policies-->
-## Search policies  
-
-<dl>
-  <dd>
-    <a href="#search-allowcloudsearch">Search/AllowCloudSearch</a>
-  </dd>
-  <dd>
-    <a href="#search-allowcortanainaad">Search/AllowCortanaInAAD</a>
-  </dd>
-  <dd>
-    <a href="#search-allowfindmyfiles">Search/AllowFindMyFiles</a>
-  </dd>
-  <dd>
-    <a href="#search-allowindexingencryptedstoresoritems">Search/AllowIndexingEncryptedStoresOrItems</a>
-  </dd>
-  <dd>
-    <a href="#search-allowsearchtouselocation">Search/AllowSearchToUseLocation</a>
-  </dd>
-  <dd>
-    <a href="#search-allowsearchhighlights">Search/AllowSearchHighlights</a>
-  </dd>
-  <dd>
-    <a href="#search-allowstoringimagesfromvisionsearch">Search/AllowStoringImagesFromVisionSearch</a>
-  </dd>
-  <dd>
-    <a href="#search-allowusingdiacritics">Search/AllowUsingDiacritics</a>
-  </dd>
-  <dd>
-    <a href="#search-allowwindowsindexer">Search/AllowWindowsIndexer</a>
-  </dd>
-  <dd>
-    <a href="#search-alwaysuseautolangdetection">Search/AlwaysUseAutoLangDetection</a>
-  </dd>
-  <dd>
-    <a href="#search-disablebackoff">Search/DisableBackoff</a>
-  </dd>
-  <dd>
-    <a href="#search-disableremovabledriveindexing">Search/DisableRemovableDriveIndexing</a>
-  </dd>
-  <dd>
-    <a href="#search-donotusewebresults">Search/DoNotUseWebResults</a>
-  </dd>
-  <dd>
-    <a href="#search-preventindexinglowdiskspacemb">Search/PreventIndexingLowDiskSpaceMB</a>
-  </dd>
-  <dd>
-    <a href="#search-preventremotequeries">Search/PreventRemoteQueries</a>
-  </dd>
-</dl>
-
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="search-allowcloudsearch"></a>**Search/AllowCloudSearch**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Allow Search and Cortana to search cloud sources like OneDrive and SharePoint. This policy allows corporate administrators to control whether employees can turn off/on the search of these cloud sources. The default policy value is to allow employees access to the setting that controls search of cloud sources.
-
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Allow Cloud Search*
--   GP name: *AllowCloudSearch*
--   GP element: *AllowCloudSearch_Dropdown*
--   GP path: *Windows Components/Search*
--   GP ADMX file name: *Search.admx*
-
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
-
--   0 – Not allowed.
--   1 (default) – Allowed.
+<!-- AllowCortanaInAAD-End -->
 
-<!--/SupportedValues-->
-<!--/Policy-->
+<!-- AllowFindMyFiles-Begin -->
+## AllowFindMyFiles
 
-<hr/>
+<!-- AllowFindMyFiles-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
+<!-- AllowFindMyFiles-Applicability-End -->
 
-<!--Policy-->
-<a href="" id="search-allowcortanainaad"></a>**Search/AllowCortanaInAAD**  
+<!-- AllowFindMyFiles-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Search/AllowFindMyFiles
+```
+<!-- AllowFindMyFiles-OmaUri-End -->
 
-<!--SupportedSKUs-->
+<!-- AllowFindMyFiles-Description-Begin -->
+<!-- Description-Source-DDF -->
+This feature allows you to disable find my files completely on the machine.
+<!-- AllowFindMyFiles-Description-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AllowFindMyFiles-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy allows the cortana opt-in page during windows setup out of the box experience.
-
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Allow Cloud Search*
--   GP name: *AllowCortanaInAAD*
--   GP element: *AllowCloudSearch_Dropdown*
--   GP path: *Windows Components/Search*
--   GP ADMX file name: *Search.admx*
-
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-
-This value is a simple boolean value, default false, that can be set by MDM policy to allow the Cortana Page in OOBE when logged in with an Azure Active Directory account.
-
-<!--/SupportedValues-->
-
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="search-allowfindmyfiles"></a>**Search/AllowFindMyFiles**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Controls if the user can configure search to Find My Files mode, which searches files in secondary hard drives and also outside of the user profile. Find My Files doesn't allow users to search files or locations to which they don't have access.
-
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Allow Find My Files*
--   GP name: *AllowFindMyFiles*
--   GP path: *Computer Configuration/Administrative Templates/Windows Components/Search*
--   GP ADMX file name: *Search.admx*
-
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:  
-
-- 1 (Default) - Find My Files feature can be toggled (still off by default), and the settings UI is present.
-- 0 - Find My Files feature is turned off completely, and the settings UI is disabled.
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="search-allowindexingencryptedstoresoritems"></a>**Search/AllowIndexingEncryptedStoresOrItems**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Allows or disallows the indexing of items. This switch is for the Windows Search Indexer, which controls whether it will index items that are encrypted, such as the Windows Information Protection (WIP) protected files.
-
-When the policy is enabled, WIP protected items are indexed and the metadata about them are stored in an unencrypted location. The metadata includes file path and date modified.
-
-When the policy is disabled, the WIP protected items aren't indexed and don't show up in the results in Cortana or file explorer. There may also be a performance impact on photos and Groove apps, if there are many WIP-protected media files on the device.
-
-Most restricted value is 0.
-
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Allow indexing of encrypted files*
--   GP name: *AllowIndexingEncryptedStoresOrItems*
--   GP path: *Windows Components/Search*
--   GP ADMX file name: *Search.admx*
-
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
-
--   0 – Not allowed.
--   1 (default) – Allowed.
-
-<!--/SupportedValues-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="search-allowsearchtouselocation"></a>**Search/AllowSearchToUseLocation**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Specifies whether search can use location information.
-
-Most restricted value is 0.
-
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Allow search and Cortana to use location*
--   GP name: *AllowSearchToUseLocation*
--   GP path: *Windows Components/Search*
--   GP ADMX file name: *Search.admx*
-
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
-
--   0 – Not allowed.
--   1 (default) – Allowed.
-
-<!--/SupportedValues-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="search-allowsearchhighlights"></a>**Search/AllowSearchHighlights**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy controls whether search highlights are shown in the search box or in search home.
-
-- If you enable this policy setting, then this setting turns on search highlights in the search box or in the search home.
-- If you disable this policy setting, then this setting turns off search highlights in the search box or in the search home. 
-
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Allow search and highlights*
--   GP name: *AllowSearchHighlights*
--   GP path: *Windows Components/Search*
--   GP ADMX file name: *Search.admx*
-
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values in Windows 10:
-
-- Not Configured/ Enabled (default) – Enabling or not configuring this setting turns on search highlights in the taskbar search box and in search home.
-
-- Disabled – Disabling this setting turns off search highlights in the taskbar search box and in search home.
-
-The following list shows the supported values in Windows 11:
-
-- Not Configured/ Enabled (default) – Enabling or not configuring this setting turns on search highlights in the start menu search box and in search home.
-
-- Disabled – Disabling this setting turns off search highlights in the start menu search box and in search home.
-
-<!--/SupportedValues-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="search-allowstoringimagesfromvisionsearch"></a>**Search/AllowStoringImagesFromVisionSearch**  
-
-<!--Description-->
+This policy controls whether the user can configure search to *Find My Files* mode. This mode searches files in secondary hard drives and also outside of the user profile. Find My Files doesn't allow users to search files or locations to which they don't have access.
+<!-- AllowFindMyFiles-Editable-End -->
+
+<!-- AllowFindMyFiles-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowFindMyFiles-DFProperties-End -->
+
+<!-- AllowFindMyFiles-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 1 (Default) | Find My Files feature can be toggled (still off by default), and the settings UI is present. |
+| 0 | Find My Files feature is turned off completely, and the settings UI is disabled. |
+<!-- AllowFindMyFiles-AllowedValues-End -->
+
+<!-- AllowFindMyFiles-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | AllowFindMyFiles |
+| Path | Search > AT > WindowsComponents > Search |
+<!-- AllowFindMyFiles-GpMapping-End -->
+
+<!-- AllowFindMyFiles-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowFindMyFiles-Examples-End -->
+
+<!-- AllowFindMyFiles-End -->
+
+<!-- AllowIndexingEncryptedStoresOrItems-Begin -->
+## AllowIndexingEncryptedStoresOrItems
+
+<!-- AllowIndexingEncryptedStoresOrItems-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- AllowIndexingEncryptedStoresOrItems-Applicability-End -->
+
+<!-- AllowIndexingEncryptedStoresOrItems-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Search/AllowIndexingEncryptedStoresOrItems
+```
+<!-- AllowIndexingEncryptedStoresOrItems-OmaUri-End -->
+
+<!-- AllowIndexingEncryptedStoresOrItems-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows encrypted items to be indexed.
+
+- If you enable this policy setting, indexing will attempt to decrypt and index the content (access restrictions will still apply).
+
+- If you disable this policy setting, the search service components (including non-Microsoft components) are expected not to index encrypted items or encrypted stores. This policy setting isn't configured by default.
+
+- If you don't configure this policy setting, the local setting, configured through Control Panel, will be used. By default, the Control Panel setting is set to not index encrypted content.
+
+When this setting is enabled or disabled, the index is rebuilt completely.
+
+Full volume encryption (such as BitLocker Drive Encryption or a non-Microsoft solution) must be used for the location of the index to maintain security for encrypted files.
+<!-- AllowIndexingEncryptedStoresOrItems-Description-End -->
+
+<!-- AllowIndexingEncryptedStoresOrItems-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+
+When the policy is enabled, Windows Information Protection (WIP) protected items are indexed. The metadata about them are stored in an unencrypted location. The metadata includes file path and date modified.
+
+When the policy is disabled, the WIP protected items aren't indexed. The encrypted items don't show up in the results in Cortana or file explorer. Search performance may also be affected on photos and other media apps, if there are many WIP-protected media files on the device.
+
+The most restrictive value is `0` to not allow indexing of encrypted items.
+<!-- AllowIndexingEncryptedStoresOrItems-Editable-End -->
+
+<!-- AllowIndexingEncryptedStoresOrItems-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- AllowIndexingEncryptedStoresOrItems-DFProperties-End -->
+
+<!-- AllowIndexingEncryptedStoresOrItems-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Not allowed. |
+| 1 | Allowed. |
+<!-- AllowIndexingEncryptedStoresOrItems-AllowedValues-End -->
+
+<!-- AllowIndexingEncryptedStoresOrItems-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | AllowIndexingEncryptedStoresOrItems |
+| Friendly Name | Allow indexing of encrypted files |
+| Location | Computer Configuration |
+| Path | Windows Components > Search |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\Windows Search |
+| Registry Value Name | AllowIndexingEncryptedStoresOrItems |
+| ADMX File Name | Search.admx |
+<!-- AllowIndexingEncryptedStoresOrItems-GpMapping-End -->
+
+<!-- AllowIndexingEncryptedStoresOrItems-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowIndexingEncryptedStoresOrItems-Examples-End -->
+
+<!-- AllowIndexingEncryptedStoresOrItems-End -->
+
+<!-- AllowSearchHighlights-Begin -->
+## AllowSearchHighlights
+
+<!-- AllowSearchHighlights-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | <!-- Not-Found --> |
+<!-- AllowSearchHighlights-Applicability-End -->
+
+<!-- AllowSearchHighlights-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Search/AllowSearchHighlights
+```
+<!-- AllowSearchHighlights-OmaUri-End -->
+
+<!-- AllowSearchHighlights-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Disabling this setting turns off search highlights in the start menu search box and in search home. Enabling or not configuring this setting turns on search highlights in the start menu search box and in search home.
+<!-- AllowSearchHighlights-Description-End -->
+
+<!-- AllowSearchHighlights-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Disabling this setting turns off search highlights in search home, and the taskbar search box (Windows 10) or the Start menu search box (Windows 11). |
+| 1 (Default) | Enabling or not configuring this setting turns on search highlights in search home, and the taskbar search box (Windows 10) or the Start menu search box (Windows 11). |
+<!-- AllowSearchHighlights-Editable-End -->
+
+<!-- AllowSearchHighlights-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-1]` |
+| Default Value  | 1 |
+<!-- AllowSearchHighlights-DFProperties-End -->
+
+<!-- AllowSearchHighlights-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | AllowSearchHighlights |
+| Friendly Name | Allow search highlights |
+| Location | Computer Configuration |
+| Path | Windows Components > Search |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\Windows Search |
+| Registry Value Name | EnableDynamicContentInWSB |
+| ADMX File Name | Search.admx |
+<!-- AllowSearchHighlights-GpMapping-End -->
+
+<!-- AllowSearchHighlights-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowSearchHighlights-Examples-End -->
+
+<!-- AllowSearchHighlights-End -->
+
+<!-- AllowSearchToUseLocation-Begin -->
+## AllowSearchToUseLocation
+
+<!-- AllowSearchToUseLocation-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- AllowSearchToUseLocation-Applicability-End -->
+
+<!-- AllowSearchToUseLocation-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Search/AllowSearchToUseLocation
+```
+<!-- AllowSearchToUseLocation-OmaUri-End -->
+
+<!-- AllowSearchToUseLocation-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether search and Cortana can provide location aware search and Cortana results.
+
+If this is enabled, search and Cortana can access location information.
+<!-- AllowSearchToUseLocation-Description-End -->
+
+<!-- AllowSearchToUseLocation-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+
+The most restrictive value is `0` to not allow search to use location.
+<!-- AllowSearchToUseLocation-Editable-End -->
+
+<!-- AllowSearchToUseLocation-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowSearchToUseLocation-DFProperties-End -->
+
+<!-- AllowSearchToUseLocation-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. |
+| 1 (Default) | Allowed. |
+<!-- AllowSearchToUseLocation-AllowedValues-End -->
+
+<!-- AllowSearchToUseLocation-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | AllowSearchToUseLocation |
+| Friendly Name | Allow search and Cortana to use location |
+| Location | Computer Configuration |
+| Path | Windows Components > Search |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\Windows Search |
+| Registry Value Name | AllowSearchToUseLocation |
+| ADMX File Name | Search.admx |
+<!-- AllowSearchToUseLocation-GpMapping-End -->
+
+<!-- AllowSearchToUseLocation-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowSearchToUseLocation-Examples-End -->
+
+<!-- AllowSearchToUseLocation-End -->
+
+<!-- AllowStoringImagesFromVisionSearch-Begin -->
+## AllowStoringImagesFromVisionSearch
+
+<!-- AllowStoringImagesFromVisionSearch-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- AllowStoringImagesFromVisionSearch-Applicability-End -->
+
+<!-- AllowStoringImagesFromVisionSearch-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Search/AllowStoringImagesFromVisionSearch
+```
+<!-- AllowStoringImagesFromVisionSearch-OmaUri-End -->
+
+<!-- AllowStoringImagesFromVisionSearch-Description-Begin -->
+<!-- Description-Source-DDF -->
 This policy has been deprecated.
+<!-- AllowStoringImagesFromVisionSearch-Description-End -->
 
-<!--/Description-->
-<!--/Policy-->
+<!-- AllowStoringImagesFromVisionSearch-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowStoringImagesFromVisionSearch-Editable-End -->
 
-<hr/>
+<!-- AllowStoringImagesFromVisionSearch-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Policy-->
-<a href="" id="search-allowusingdiacritics"></a>**Search/AllowUsingDiacritics**  
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowStoringImagesFromVisionSearch-DFProperties-End -->
 
-<!--SupportedSKUs-->
+<!-- AllowStoringImagesFromVisionSearch-AllowedValues-Begin -->
+**Allowed values**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. |
+| 1 (Default) | Allowed. |
+<!-- AllowStoringImagesFromVisionSearch-AllowedValues-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowStoringImagesFromVisionSearch-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowStoringImagesFromVisionSearch-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowStoringImagesFromVisionSearch-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- AllowUsingDiacritics-Begin -->
+## AllowUsingDiacritics
 
-<hr/>
+<!-- AllowUsingDiacritics-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- AllowUsingDiacritics-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
-Allows the use of diacritics.
+<!-- AllowUsingDiacritics-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Search/AllowUsingDiacritics
+```
+<!-- AllowUsingDiacritics-OmaUri-End -->
 
-Most restricted value is 0.
+<!-- AllowUsingDiacritics-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows words that contain diacritic characters to be treated as separate words.
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Allow use of diacritics*
--   GP name: *AllowUsingDiacritics*
--   GP path: *Windows Components/Search*
--   GP ADMX file name: *Search.admx*
+- If you enable this policy setting, words that only differ in diacritics are treated as different words.
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+- If you disable this policy setting, words with diacritics and words without diacritics are treated as identical words. This policy setting isn't configured by default.
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+- If you don't configure this policy setting, the local setting, configured through Control Panel, will be used.
 
-<!--/SupportedValues-->
-<!--/Policy-->
+> [!NOTE]
+> By default, the Control Panel setting is set to treat words that differ only because of diacritics as the same word.
+<!-- AllowUsingDiacritics-Description-End -->
 
-<hr/>
+<!-- AllowUsingDiacritics-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
-<!--Policy-->
-<a href="" id="search-allowwindowsindexer"></a>**Search/AllowWindowsIndexer**  
+The most restrictive value is `0` to not allow the use of diacritics.
+<!-- AllowUsingDiacritics-Editable-End -->
 
-<!--SupportedSKUs-->
+<!-- AllowUsingDiacritics-DFProperties-Begin -->
+**Description framework properties**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- AllowUsingDiacritics-DFProperties-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowUsingDiacritics-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Not allowed. |
+| 1 | Allowed. |
+<!-- AllowUsingDiacritics-AllowedValues-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- AllowUsingDiacritics-GpMapping-Begin -->
+**Group policy mapping**:
 
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | AllowUsingDiacritics |
+| Friendly Name | Allow use of diacritics |
+| Location | Computer Configuration |
+| Path | Windows Components > Search |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\Windows Search |
+| Registry Value Name | AllowUsingDiacritics |
+| ADMX File Name | Search.admx |
+<!-- AllowUsingDiacritics-GpMapping-End -->
 
-<!--/Scope-->
-<!--Description-->
-Allow Windows indexer. Supported value type is integer.
+<!-- AllowUsingDiacritics-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowUsingDiacritics-Examples-End -->
 
-<!--/Description-->
-<!--/Policy-->
+<!-- AllowUsingDiacritics-End -->
 
-<hr/>
+<!-- AllowWindowsIndexer-Begin -->
+## AllowWindowsIndexer
 
-<!--Policy-->
-<a href="" id="search-alwaysuseautolangdetection"></a>**Search/AlwaysUseAutoLangDetection**  
+<!-- AllowWindowsIndexer-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- AllowWindowsIndexer-Applicability-End -->
 
-<!--SupportedSKUs-->
+<!-- AllowWindowsIndexer-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Search/AllowWindowsIndexer
+```
+<!-- AllowWindowsIndexer-OmaUri-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AllowWindowsIndexer-Description-Begin -->
+<!-- Description-Source-DDF -->
+Allow Windows indexer. Value type is integer.
+<!-- AllowWindowsIndexer-Description-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowWindowsIndexer-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowWindowsIndexer-Editable-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowWindowsIndexer-DFProperties-Begin -->
+**Description framework properties**:
 
-> [!div class = "checklist"]
-> * Device
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-3]` |
+| Default Value  | 3 |
+<!-- AllowWindowsIndexer-DFProperties-End -->
 
-<hr/>
+<!-- AllowWindowsIndexer-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowWindowsIndexer-Examples-End -->
 
-<!--/Scope-->
-<!--Description-->
-Specifies whether to always use automatic language detection when indexing content and properties.
+<!-- AllowWindowsIndexer-End -->
 
-Most restricted value is 0.
+<!-- AlwaysUseAutoLangDetection-Begin -->
+## AlwaysUseAutoLangDetection
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Always use automatic language detection when indexing content and properties*
--   GP name: *AlwaysUseAutoLangDetection*
--   GP path: *Windows Components/Search*
--   GP ADMX file name: *Search.admx*
+<!-- AlwaysUseAutoLangDetection-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- AlwaysUseAutoLangDetection-Applicability-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- AlwaysUseAutoLangDetection-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Search/AlwaysUseAutoLangDetection
+```
+<!-- AlwaysUseAutoLangDetection-OmaUri-End -->
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+<!-- AlwaysUseAutoLangDetection-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting determines when Windows uses automatic language detection results, and when it relies on indexing history.
 
-<!--/SupportedValues-->
-<!--/Policy-->
+- If you enable this policy setting, Windows will always use automatic language detection to index (as it did in Windows 7). Using automatic language detection can increase memory usage. We recommend enabling this policy setting only on PCs where documents are stored in many languages.
 
-<hr/>
+- If you disable or don't configure this policy setting, Windows will use automatic language detection only when it can determine the language of a document with high confidence.
+<!-- AlwaysUseAutoLangDetection-Description-End -->
 
-<!--Policy-->
-<a href="" id="search-disablebackoff"></a>**Search/DisableBackoff**  
+<!-- AlwaysUseAutoLangDetection-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
-<!--SupportedSKUs-->
+The most restrictive value is `0` to now allow automatic language detection.
+<!-- AlwaysUseAutoLangDetection-Editable-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AlwaysUseAutoLangDetection-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- AlwaysUseAutoLangDetection-DFProperties-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AlwaysUseAutoLangDetection-AllowedValues-Begin -->
+**Allowed values**:
 
-> [!div class = "checklist"]
-> * Device
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Not allowed. |
+| 1 | Allowed. |
+<!-- AlwaysUseAutoLangDetection-AllowedValues-End -->
 
-<hr/>
+<!-- AlwaysUseAutoLangDetection-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--/Scope-->
-<!--Description-->
+| Name | Value |
+|:--|:--|
+| Name | AlwaysUseAutoLangDetection |
+| Friendly Name | Always use automatic language detection when indexing content and properties |
+| Location | Computer Configuration |
+| Path | Windows Components > Search |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\Windows Search |
+| Registry Value Name | AlwaysUseAutoLangDetection |
+| ADMX File Name | Search.admx |
+<!-- AlwaysUseAutoLangDetection-GpMapping-End -->
+
+<!-- AlwaysUseAutoLangDetection-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AlwaysUseAutoLangDetection-Examples-End -->
+
+<!-- AlwaysUseAutoLangDetection-End -->
+
+<!-- ConfigureSearchOnTaskbarMode-Begin -->
+## ConfigureSearchOnTaskbarMode
+
+<!-- ConfigureSearchOnTaskbarMode-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- ConfigureSearchOnTaskbarMode-Applicability-End -->
+
+<!-- ConfigureSearchOnTaskbarMode-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Search/ConfigureSearchOnTaskbarMode
+```
+<!-- ConfigureSearchOnTaskbarMode-OmaUri-End -->
+
+<!-- ConfigureSearchOnTaskbarMode-Description-Begin -->
+<!-- Description-Source-ADMX-Forced -->
+This policy setting allows you to configure search on the taskbar.
+
+- If you enable this policy setting and set it to hide, search on taskbar will be hidden by default. Users can't change it in Settings.
+
+- If you enable this policy setting and set it to search icon only, the search icon will be displayed on the taskbar by default. Users can't change it in Settings.
+
+- If you enable this policy setting and set it to search icon and label, the search icon and label will be displayed on the taskbar by default. Users can't change it in Settings.
+
+- If you enable this policy setting and set it to search box, the search box will be displayed on the taskbar by default. Users can't change it in Settings.
+
+- If you disable or don't configure this policy setting, search on taskbar will be configured according to the defaults for your Windows edition. Users will be able to change search on taskbar in Settings.
+<!-- ConfigureSearchOnTaskbarMode-Description-End -->
+
+<!-- ConfigureSearchOnTaskbarMode-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ConfigureSearchOnTaskbarMode-Editable-End -->
+
+<!-- ConfigureSearchOnTaskbarMode-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 3 |
+<!-- ConfigureSearchOnTaskbarMode-DFProperties-End -->
+
+<!-- ConfigureSearchOnTaskbarMode-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Hide. |
+| 1 | Search icon only. |
+| 2 | Search icon and label. |
+| 3 (Default) | Search box. |
+<!-- ConfigureSearchOnTaskbarMode-AllowedValues-End -->
+
+<!-- ConfigureSearchOnTaskbarMode-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | ConfigureSearchOnTaskbarMode |
+| Friendly Name | Configures search on the taskbar |
+| Element Name | Search on the taskbar. |
+| Location | Computer Configuration |
+| Path | Windows Components > Search |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Windows Search |
+| ADMX File Name | Search.admx |
+<!-- ConfigureSearchOnTaskbarMode-GpMapping-End -->
+
+<!-- ConfigureSearchOnTaskbarMode-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ConfigureSearchOnTaskbarMode-Examples-End -->
+
+<!-- ConfigureSearchOnTaskbarMode-End -->
+
+<!-- DisableBackoff-Begin -->
+## DisableBackoff
+
+<!-- DisableBackoff-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- DisableBackoff-Applicability-End -->
+
+<!-- DisableBackoff-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Search/DisableBackoff
+```
+<!-- DisableBackoff-OmaUri-End -->
+
+<!-- DisableBackoff-Description-Begin -->
+<!-- Description-Source-ADMX -->
 If enabled, the search indexer backoff feature will be disabled. Indexing will continue at full speed even when system activity is high. If disabled, backoff logic will be used to throttle back indexing activity when system activity is high. Default is disabled.
+<!-- DisableBackoff-Description-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Disable indexer backoff*
--   GP name: *DisableBackoff*
--   GP path: *Windows Components/Search*
--   GP ADMX file name: *Search.admx*
+<!-- DisableBackoff-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableBackoff-Editable-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- DisableBackoff-DFProperties-Begin -->
+**Description framework properties**:
 
--   0 (default) – Disable.
--   1 – Enable.
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- DisableBackoff-DFProperties-End -->
 
-<!--/SupportedValues-->
-<!--/Policy-->
+<!-- DisableBackoff-AllowedValues-Begin -->
+**Allowed values**:
 
-<hr/>
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Disable. |
+| 1 | Enable. |
+<!-- DisableBackoff-AllowedValues-End -->
 
-<!--Policy-->
-<a href="" id="search-disableremovabledriveindexing"></a>**Search/DisableRemovableDriveIndexing**  
+<!-- DisableBackoff-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | DisableBackoff |
+| Friendly Name | Disable indexer backoff |
+| Location | Computer Configuration |
+| Path | Windows Components > Search |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\Windows Search |
+| Registry Value Name | DisableBackoff |
+| ADMX File Name | Search.admx |
+<!-- DisableBackoff-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- DisableBackoff-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableBackoff-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DisableBackoff-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DisableRemovableDriveIndexing-Begin -->
+## DisableRemovableDriveIndexing
 
-> [!div class = "checklist"]
-> * Device
+<!-- DisableRemovableDriveIndexing-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- DisableRemovableDriveIndexing-Applicability-End -->
 
-<hr/>
+<!-- DisableRemovableDriveIndexing-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Search/DisableRemovableDriveIndexing
+```
+<!-- DisableRemovableDriveIndexing-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- DisableRemovableDriveIndexing-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting configures whether or not locations on removable drives can be added to libraries.
 
-If you enable this policy setting, locations on removable drives can't be added to libraries. In addition, locations on removable drives can't be indexed.
+- If you enable this policy setting, locations on removable drives can't be added to libraries. In addition, locations on removable drives can't be indexed.
 
-If you disable or don't configure this policy setting, locations on removable drives can be added to libraries. In addition, locations on removable drives can be indexed.
+- If you disable or don't configure this policy setting, locations on removable drives can be added to libraries. In addition, locations on removable drives can be indexed.
+<!-- DisableRemovableDriveIndexing-Description-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Do not allow locations on removable drives to be added to libraries*
--   GP name: *DisableRemovableDriveIndexing*
--   GP path: *Windows Components/Search*
--   GP ADMX file name: *Search.admx*
+<!-- DisableRemovableDriveIndexing-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableRemovableDriveIndexing-Editable-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- DisableRemovableDriveIndexing-DFProperties-Begin -->
+**Description framework properties**:
 
--   0 (default) – Disable.
--   1 – Enable.
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- DisableRemovableDriveIndexing-DFProperties-End -->
 
-<!--/SupportedValues-->
-<!--/Policy-->
+<!-- DisableRemovableDriveIndexing-AllowedValues-Begin -->
+**Allowed values**:
 
-<hr/>
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Disable. |
+| 1 | Enable. |
+<!-- DisableRemovableDriveIndexing-AllowedValues-End -->
 
-<!--Policy-->
-<a href="" id="search-donotusewebresults"></a>**Search/DoNotUseWebResults**  
+<!-- DisableRemovableDriveIndexing-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | DisableRemovableDriveIndexing |
+| Friendly Name | Do not allow locations on removable drives to be added to libraries |
+| Location | Computer Configuration |
+| Path | Windows Components > Search |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\Windows Search |
+| Registry Value Name | DisableRemovableDriveIndexing |
+| ADMX File Name | Search.admx |
+<!-- DisableRemovableDriveIndexing-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- DisableRemovableDriveIndexing-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableRemovableDriveIndexing-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DisableRemovableDriveIndexing-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DisableSearch-Begin -->
+## DisableSearch
 
-> [!div class = "checklist"]
-> * Device
+<!-- DisableSearch-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+<!-- DisableSearch-Applicability-End -->
 
-<hr/>
+<!-- DisableSearch-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Search/DisableSearch
+```
+<!-- DisableSearch-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Don't search the web or display web results in Search, or show search highlights in the search box or in search home.
+<!-- DisableSearch-Description-Begin -->
+<!-- Description-Source-ADMX -->
 
+- If you enable this policy, the Search UI will be disabled along with all its entry points, such as keyboard shortcuts, touchpad gestures, and type-to-search in the Start menu. The Start menu's search box and Search Taskbar button will also be hidden.
+
+- If you disable or don't configure this policy setting, the user will be able to open the Search UI and its different entry points will be shown.
+<!-- DisableSearch-Description-End -->
+
+<!-- DisableSearch-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableSearch-Editable-End -->
+
+<!-- DisableSearch-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- DisableSearch-DFProperties-End -->
+
+<!-- DisableSearch-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Don't disable. |
+| 1 | Disable. |
+<!-- DisableSearch-AllowedValues-End -->
+
+<!-- DisableSearch-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | DisableSearch |
+| Friendly Name | Fully disable Search UI |
+| Location | Computer Configuration |
+| Path | Windows Components > Search |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\Windows Search |
+| Registry Value Name | DisableSearch |
+| ADMX File Name | Search.admx |
+<!-- DisableSearch-GpMapping-End -->
+
+<!-- DisableSearch-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableSearch-Examples-End -->
+
+<!-- DisableSearch-End -->
+
+<!-- DoNotUseWebResults-Begin -->
+## DoNotUseWebResults
+
+<!-- DoNotUseWebResults-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- DoNotUseWebResults-Applicability-End -->
+
+<!-- DoNotUseWebResults-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Search/DoNotUseWebResults
+```
+<!-- DoNotUseWebResults-OmaUri-End -->
+
+<!-- DoNotUseWebResults-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to control whether or not Search can perform queries on the web, if web results are displayed in Search, and if search highlights are shown in the search box and in search home.
 
-- If you enable this policy setting, queries won't be performed on the web. Web results won't be displayed when a user performs a query in Search, and search highlights won't be shown in the search box and in search home.
+- If you enable this policy setting, queries won't be performed on the web, web results won't be displayed when a user performs a query in Search, and search highlights won't be shown in the search box and in search home.
 
-- If you disable this policy setting, queries will be performed on the web. Web results will be displayed when a user performs a query in Search, and search highlights will be shown in the search box and in search home.
+- If you disable this policy setting, queries will be performed on the web, web results will be displayed when a user performs a query in Search, and search highlights will be shown in the search box and in search home.
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Don't search the web or display web results in Search*
--   GP name: *DoNotUseWebResults*
--   GP path: *Windows Components/Search*
--   GP ADMX file name: *Search.admx*
+- If you don't configure this policy setting, a user can choose whether or not Search can perform queries on the web, and if the web results are displayed in Search, and if search highlights are shown in the search box and in search home.
+<!-- DoNotUseWebResults-Description-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- DoNotUseWebResults-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DoNotUseWebResults-Editable-End -->
 
-- 0 - Not allowed. Queries won't be performed on the web. Web results won't be displayed when a user performs a query in Search, and search highlights won't be shown in the search box and in search home.
-- 1 (default) - Allowed. Queries will be performed on the web. Web results will be displayed when a user performs a query in Search, and search highlights will be shown in the search box and in search home.
+<!-- DoNotUseWebResults-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedValues-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- DoNotUseWebResults-DFProperties-End -->
 
-<hr/>
+<!-- DoNotUseWebResults-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--Policy-->
-<a href="" id="search-preventindexinglowdiskspacemb"></a>**Search/PreventIndexingLowDiskSpaceMB**  
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. Queries won't be performed on the web and web results won't be displayed when a user performs a query in Search. |
+| 1 (Default) | Allowed. Queries will be performed on the web and web results will be displayed when a user performs a query in Search. |
+<!-- DoNotUseWebResults-AllowedValues-End -->
 
-<!--SupportedSKUs-->
+<!-- DoNotUseWebResults-GpMapping-Begin -->
+**Group policy mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | DoNotUseWebResults |
+| Friendly Name | Don't search the web or display web results in Search |
+| Location | Computer Configuration |
+| Path | Windows Components > Search |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\Windows Search |
+| Registry Value Name | ConnectedSearchUseWeb |
+| ADMX File Name | Search.admx |
+<!-- DoNotUseWebResults-GpMapping-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DoNotUseWebResults-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DoNotUseWebResults-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DoNotUseWebResults-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- PreventIndexingLowDiskSpaceMB-Begin -->
+## PreventIndexingLowDiskSpaceMB
 
-<hr/>
+<!-- PreventIndexingLowDiskSpaceMB-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- PreventIndexingLowDiskSpaceMB-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
-Enabling this policy prevents indexing from continuing after less than the specified amount of hard drive space is left on the same drive as the index location. Select between 0 and 1.
+<!-- PreventIndexingLowDiskSpaceMB-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Search/PreventIndexingLowDiskSpaceMB
+```
+<!-- PreventIndexingLowDiskSpaceMB-OmaUri-End -->
 
-Enable this policy, if computers in your environment have limited hard drive space.
+<!-- PreventIndexingLowDiskSpaceMB-Description-Begin -->
+<!-- Description-Source-DDF-Forced -->
+Enabling this policy prevents indexing from continuing after less than the specified amount of hard drive space is left on the same drive as the index location. Select between 0 and 1. Enable this policy if computers in your environment have extremely limited hard drive space. When this policy is disabled or not configured, Windows Desktop Search automatically manages your index size.
+<!-- PreventIndexingLowDiskSpaceMB-Description-End -->
 
-When this policy is disabled or not configured, Windows Desktop Search automatically manages your index size.
+<!-- PreventIndexingLowDiskSpaceMB-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- PreventIndexingLowDiskSpaceMB-Editable-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Stop indexing in the event of limited hard drive space*
--   GP name: *StopIndexingOnLimitedHardDriveSpace*
--   GP path: *Windows Components/Search*
--   GP ADMX file name: *Search.admx*
+<!-- PreventIndexingLowDiskSpaceMB-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- PreventIndexingLowDiskSpaceMB-DFProperties-End -->
 
--   0 – Disable.
--   1 (default) – Enable.
+<!-- PreventIndexingLowDiskSpaceMB-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--/SupportedValues-->
-<!--/Policy-->
+| Value | Description |
+|:--|:--|
+| 0 | Disable. |
+| 1 (Default) | Enable. |
+<!-- PreventIndexingLowDiskSpaceMB-AllowedValues-End -->
 
-<hr/>
+<!-- PreventIndexingLowDiskSpaceMB-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--Policy-->
-<a href="" id="search-preventremotequeries"></a>**Search/PreventRemoteQueries**  
+| Name | Value |
+|:--|:--|
+| Name | StopIndexingOnLimitedHardDriveSpace |
+| Friendly Name | Stop indexing in the event of limited hard drive space |
+| Location | Computer Configuration |
+| Path | Windows Components > Search |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\Windows Search |
+| ADMX File Name | Search.admx |
+<!-- PreventIndexingLowDiskSpaceMB-GpMapping-End -->
 
-<!--SupportedSKUs-->
+<!-- PreventIndexingLowDiskSpaceMB-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- PreventIndexingLowDiskSpaceMB-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- PreventIndexingLowDiskSpaceMB-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- PreventRemoteQueries-Begin -->
+## PreventRemoteQueries
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- PreventRemoteQueries-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- PreventRemoteQueries-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- PreventRemoteQueries-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Search/PreventRemoteQueries
+```
+<!-- PreventRemoteQueries-OmaUri-End -->
 
-<hr/>
+<!-- PreventRemoteQueries-Description-Begin -->
+<!-- Description-Source-DDF-Forced -->
+If enabled, clients will be unable to query this computer's index remotely. Thus, when they're browsing network shares that are stored on this computer, they won't search them using the index. If disabled, client search requests will use this computer's index. .
+<!-- PreventRemoteQueries-Description-End -->
 
-<!--/Scope-->
-<!--Description-->
-If enabled, clients will be unable to query this computer's index remotely. Thus, when they're browsing network shares that are stored on this computer, they won't search them using the index. If disabled, client search requests will use this computer's index..
+<!-- PreventRemoteQueries-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- PreventRemoteQueries-Editable-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Prevent clients from querying the index remotely*
--   GP name: *PreventRemoteQueries*
--   GP path: *Windows Components/Search*
--   GP ADMX file name: *Search.admx*
+<!-- PreventRemoteQueries-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- PreventRemoteQueries-DFProperties-End -->
 
--   0 – Disable.
--   1 (default) – Enable.
+<!-- PreventRemoteQueries-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--/SupportedValues-->
-<!--/Policy-->
+| Value | Description |
+|:--|:--|
+| 0 | Disable. |
+| 1 (Default) | Enable. |
+<!-- PreventRemoteQueries-AllowedValues-End -->
 
-<hr/>
+<!-- PreventRemoteQueries-GpMapping-Begin -->
+**Group policy mapping**:
 
+| Name | Value |
+|:--|:--|
+| Name | PreventRemoteQueries |
+| Friendly Name | Prevent clients from querying the index remotely |
+| Location | Computer Configuration |
+| Path | Windows Components > Search |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\Windows Search |
+| Registry Value Name | PreventRemoteQueries |
+| ADMX File Name | Search.admx |
+<!-- PreventRemoteQueries-GpMapping-End -->
 
-<!--/Policies-->
+<!-- PreventRemoteQueries-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- PreventRemoteQueries-Examples-End -->
 
-## Related topics
+<!-- PreventRemoteQueries-End -->
+
+<!-- SafeSearchPermissions-Begin -->
+## SafeSearchPermissions
+
+> [!NOTE]
+> This policy is deprecated and may be removed in a future release.
+
+<!-- SafeSearchPermissions-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- SafeSearchPermissions-Applicability-End -->
+
+<!-- SafeSearchPermissions-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Search/SafeSearchPermissions
+```
+<!-- SafeSearchPermissions-OmaUri-End -->
+
+<!-- SafeSearchPermissions-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy is deprecated.
+<!-- SafeSearchPermissions-Description-End -->
+
+<!-- SafeSearchPermissions-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- SafeSearchPermissions-Editable-End -->
+
+<!-- SafeSearchPermissions-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- SafeSearchPermissions-DFProperties-End -->
+
+<!-- SafeSearchPermissions-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 1 (Default) | Enable. |
+| 0 | Disable. |
+<!-- SafeSearchPermissions-AllowedValues-End -->
+
+<!-- SafeSearchPermissions-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- SafeSearchPermissions-Examples-End -->
+
+<!-- SafeSearchPermissions-End -->
+
+<!-- Search-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- Search-CspMoreInfo-End -->
+
+<!-- Search-End -->
+
+## Related articles
 
 [Policy configuration service provider](policy-configuration-service-provider.md)

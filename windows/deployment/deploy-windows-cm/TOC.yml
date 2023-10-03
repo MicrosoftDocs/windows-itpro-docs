@@ -1,4 +1,4 @@
-- name: Deploy Windows 10 with Microsoft Endpoint Configuration Manager
+- name: Deploy Windows 10 with Microsoft Configuration Manager
   items: 
     - name: Prepare for Windows 10 deployment with Configuration Manager
       items: 

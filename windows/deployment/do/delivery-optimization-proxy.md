@@ -1,21 +1,23 @@
 ---
 title: Using a proxy with Delivery Optimization
-manager: dansimp
-description: Settings to use with various proxy configurations to allow Delivery Optimization to work
-ms.prod: w10
-author: carmenf
-ms.localizationpriority: medium
+description: Settings to use with various proxy configurations to allow Delivery Optimization to work in your environment.
+ms.prod: windows-client
+ms.technology: itpro-updates
+ms.topic: conceptual
+author: cmknox
 ms.author: carmenf
-ms.collection: M365-modern-desktop
-ms.topic: article
+manager: aaroncz
+ms.reviewer: mstewart
+ms.collection: tier3
+ms.localizationpriority: medium
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
+- ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-delivery-optimization target=_blank>Delivery Optimization</a>
+ms.date: 06/02/2023
 ---
 
 # Using a proxy with Delivery Optimization
-
-**Applies to:**
-
-- Windows 11
-- Windows 10
 
 When Delivery Optimization downloads content from HTTP sources, it uses the automatic proxy discovery capability of WinHttp to streamline and maximize the support for complex proxy configurations as it makes range requests from the content server. It does this by setting the **WINHTTP_ACCESS_TYPE_AUTOMATIC_PROXY** flag in all HTTP calls.
 
@@ -32,7 +34,7 @@ If a user is signed in, the system uses the Internet Explorer proxy.
 
 If no user is signed in, even if both the Internet Explorer proxy and netsh configuration are set, the netsh configuration will take precedence over the Internet Explorer proxy. This can result in download failures. For example, you might receive HTTP_E_STATUS_PROXY_AUTH_REQ or HTTP_E_STATUS_DENIED errors.
 
-You can still use netsh to import the proxy setting from Internet Explorer (`netsh winhttp import proxy source=ie `) if your proxy configuration is a static *proxyServerName:Port*. However, the same limitations mentioned previously apply.
+You can still use netsh to import the proxy setting from Internet Explorer (`netsh winhttp import proxy source=ie`) if your proxy configuration is a static *proxyServerName:Port*. However, the same limitations mentioned previously apply.
 
 ### Summary of settings behavior
 

@@ -1,302 +1,341 @@
 ---
-title: Policy CSP - ErrorReporting
-description: Learn how to use the Policy CSP - ErrorReporting setting to determine the consent behavior of Windows Error Reporting for specific event types.
-ms.author: vinpa
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
+title: ErrorReporting Policy CSP
+description: Learn more about the ErrorReporting Area in Policy CSP.
 author: vinaypamnani-msft
-ms.localizationpriority: medium
-ms.date: 09/27/2019
-ms.reviewer: 
 manager: aaroncz
+ms.author: vinpa
+ms.date: 08/10/2023
+ms.localizationpriority: medium
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ErrorReporting-Begin -->
 # Policy CSP - ErrorReporting
 
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
-<hr/>
+<!-- ErrorReporting-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ErrorReporting-Editable-End -->
 
-<!--Policies-->
-## ErrorReporting policies  
+<!-- CustomizeConsentSettings-Begin -->
+## CustomizeConsentSettings
 
-<dl>
-  <dd>
-    <a href="#errorreporting-customizeconsentsettings">ErrorReporting/CustomizeConsentSettings</a>
-  </dd>
-  <dd>
-    <a href="#errorreporting-disablewindowserrorreporting">ErrorReporting/DisableWindowsErrorReporting</a>
-  </dd>
-  <dd>
-    <a href="#errorreporting-displayerrornotification">ErrorReporting/DisplayErrorNotification</a>
-  </dd>
-  <dd>
-    <a href="#errorreporting-donotsendadditionaldata">ErrorReporting/DoNotSendAdditionalData</a>
-  </dd>
-  <dd>
-    <a href="#errorreporting-preventcriticalerrordisplay">ErrorReporting/PreventCriticalErrorDisplay</a>
-  </dd>
-</dl>
+<!-- CustomizeConsentSettings-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- CustomizeConsentSettings-Applicability-End -->
 
-<hr/>
+<!-- CustomizeConsentSettings-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ErrorReporting/CustomizeConsentSettings
+```
+<!-- CustomizeConsentSettings-OmaUri-End -->
 
-<!--Policy-->
-<a href="" id="errorreporting-customizeconsentsettings"></a>**ErrorReporting/CustomizeConsentSettings**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- CustomizeConsentSettings-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting determines the consent behavior of Windows Error Reporting for specific event types.
 
-If you enable this policy setting, you can add specific event types to a list by clicking Show, and typing event types in the Value Name column of the Show Contents dialog box. Event types are those even types for generic, non-fatal errors: crash, no response, and kernel fault errors. For each specified event type, you can set a consent level of 0, 1, 2, 3, or 4.
+- If you enable this policy setting, you can add specific event types to a list by clicking Show, and typing event types in the Value Name column of the Show Contents dialog box. Event types are those for generic, non-fatal errors: crash, no response, and kernel fault errors. For each specified event type, you can set a consent level of 0, 1, 2, 3, or 4.
 
 - 0 (Disable): Windows Error Reporting sends no data to Microsoft for this event type.
 
 - 1 (Always ask before sending data): Windows prompts the user for consent to send reports.
 
-- 2 (Send parameters): Windows Error Reporting automatically sends the minimum data required to check for an existing solution, and Windows prompts the user for consent to send any extra data requested by Microsoft.
+- 2 (Send parameters): Windows Error Reporting automatically sends the minimum data required to check for an existing solution, and Windows prompts the user for consent to send any additional data requested by Microsoft.
 
-- 3 (Send parameters and safe extra data): Windows Error Reporting automatically sends the minimum data required to check for an existing solution, and data which Windows has determined (within a high probability) doesn't contain personally identifiable data, and prompts the user for consent, to send any extra data requested by Microsoft.
+- 3 (Send parameters and safe additional data): Windows Error Reporting automatically sends the minimum data required to check for an existing solution, as well as data which Windows has determined (within a high probability) doesn't contain personally identifiable data, and prompts the user for consent to send any additional data requested by Microsoft.
 
 - 4 (Send all data): Any data requested by Microsoft is sent automatically.
 
-If you disable or don't configure this policy setting, then the default consent settings that are applied are those settings specified by the user in Control Panel, or in the Configure Default Consent policy setting.
+- If you disable or don't configure this policy setting, then the default consent settings that are applied are those specified by the user in Control Panel, or in the Configure Default Consent policy setting.
+<!-- CustomizeConsentSettings-Description-End -->
 
-<!--/Description-->
+<!-- CustomizeConsentSettings-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- CustomizeConsentSettings-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Customize consent settings*
--   GP name: *WerConsentCustomize_2*
--   GP path: *Windows Components/Windows Error Reporting/Consent*
--   GP ADMX file name: *ErrorReporting.admx*
+<!-- CustomizeConsentSettings-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- CustomizeConsentSettings-DFProperties-End -->
 
-<hr/>
+<!-- CustomizeConsentSettings-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="errorreporting-disablewindowserrorreporting"></a>**ErrorReporting/DisableWindowsErrorReporting**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | WerConsentCustomize_2 |
+| Friendly Name | Customize consent settings |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Error Reporting > Consent |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\Windows Error Reporting\Consent |
+| ADMX File Name | ErrorReporting.admx |
+<!-- CustomizeConsentSettings-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- CustomizeConsentSettings-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- CustomizeConsentSettings-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- CustomizeConsentSettings-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DisableWindowsErrorReporting-Begin -->
+## DisableWindowsErrorReporting
 
-> [!div class = "checklist"]
-> * Device
+<!-- DisableWindowsErrorReporting-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- DisableWindowsErrorReporting-Applicability-End -->
 
-<hr/>
+<!-- DisableWindowsErrorReporting-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ErrorReporting/DisableWindowsErrorReporting
+```
+<!-- DisableWindowsErrorReporting-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting turns off Windows Error Reporting, so that reports aren't collected or sent to either Microsoft or internal servers within your organization, when software unexpectedly stops working or fails.
+<!-- DisableWindowsErrorReporting-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting turns off Windows Error Reporting, so that reports aren't collected or sent to either Microsoft or internal servers within your organization when software unexpectedly stops working or fails.
 
-If you enable this policy setting, Windows Error Reporting doesn't send any problem information to Microsoft. Additionally, solution information isn't available in Security and Maintenance in Control Panel.
+- If you enable this policy setting, Windows Error Reporting doesn't send any problem information to Microsoft. Additionally, solution information isn't available in Security and Maintenance in Control Panel.
 
-If you disable or don't configure this policy setting, the Turn off Windows Error Reporting policy setting in Computer Configuration/Administrative Templates/System/Internet Communication Management/Internet Communication settings takes precedence. If Turn off Windows Error Reporting is also either disabled or not configured, user settings in Control Panel for Windows Error Reporting are applied.
+- If you disable or don't configure this policy setting, the Turn off Windows Error Reporting policy setting in Computer Configuration/Administrative Templates/System/Internet Communication Management/Internet Communication settings takes precedence. If Turn off Windows Error Reporting is also either disabled or not configured, user settings in Control Panel for Windows Error Reporting are applied.
+<!-- DisableWindowsErrorReporting-Description-End -->
 
-<!--/Description-->
+<!-- DisableWindowsErrorReporting-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableWindowsErrorReporting-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Disable Windows Error Reporting*
--   GP name: *WerDisable_2*
--   GP path: *Windows Components/Windows Error Reporting*
--   GP ADMX file name: *ErrorReporting.admx*
+<!-- DisableWindowsErrorReporting-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisableWindowsErrorReporting-DFProperties-End -->
 
-<hr/>
+<!-- DisableWindowsErrorReporting-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="errorreporting-displayerrornotification"></a>**ErrorReporting/DisplayErrorNotification**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | WerDisable_2 |
+| Friendly Name | Disable Windows Error Reporting |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Error Reporting |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\Windows Error Reporting |
+| Registry Value Name | Disabled |
+| ADMX File Name | ErrorReporting.admx |
+<!-- DisableWindowsErrorReporting-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- DisableWindowsErrorReporting-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableWindowsErrorReporting-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DisableWindowsErrorReporting-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DisplayErrorNotification-Begin -->
+## DisplayErrorNotification
 
-> [!div class = "checklist"]
-> * Device
+<!-- DisplayErrorNotification-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- DisplayErrorNotification-Applicability-End -->
 
-<hr/>
+<!-- DisplayErrorNotification-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ErrorReporting/DisplayErrorNotification
+```
+<!-- DisplayErrorNotification-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting controls, whether users are shown an error dialog box that lets them report an error.
+<!-- DisplayErrorNotification-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting controls whether users are shown an error dialog box that lets them report an error.
 
-If you enable this policy setting, users are notified in a dialog box that an error has occurred, and can display more details about the error. If the Configure Error Reporting policy setting is also enabled, the user can also report the error.
+- If you enable this policy setting, users are notified in a dialog box that an error has occurred, and can display more details about the error. If the Configure Error Reporting policy setting is also enabled, the user can also report the error.
 
-If you disable this policy setting, users aren't notified that errors have occurred. If the Configure Error Reporting policy setting is also enabled, errors are reported, but users receive no notification. Disabling this policy setting is useful for servers that don't have interactive users.
+- If you disable this policy setting, users aren't notified that errors have occurred. If the Configure Error Reporting policy setting is also enabled, errors are reported, but users receive no notification. Disabling this policy setting is useful for servers that don't have interactive users.
 
-If you don't configure this policy setting, users can change this setting in Control Panel, which is set to enable notification by default on computers that are running Windows XP Personal Edition and Windows XP Professional Edition, and disable notification by default on computers that are running Windows Server.
+- If you don't configure this policy setting, users can change this setting in Control Panel, which is set to enable notification by default on computers that are running Windows XP Personal Edition and Windows XP Professional Edition, and disable notification by default on computers that are running Windows Server.
 
 See also the Configure Error Reporting policy setting.
+<!-- DisplayErrorNotification-Description-End -->
 
-<!--/Description-->
+<!-- DisplayErrorNotification-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisplayErrorNotification-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Display Error Notification*
--   GP name: *PCH_ShowUI*
--   GP path: *Windows Components/Windows Error Reporting*
--   GP ADMX file name: *ErrorReporting.admx*
+<!-- DisplayErrorNotification-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisplayErrorNotification-DFProperties-End -->
 
-<hr/>
+<!-- DisplayErrorNotification-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="errorreporting-donotsendadditionaldata"></a>**ErrorReporting/DoNotSendAdditionalData**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | PCH_ShowUI |
+| Friendly Name | Display Error Notification |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Error Reporting |
+| Registry Key Name | Software\Policies\Microsoft\PCHealth\ErrorReporting |
+| Registry Value Name | ShowUI |
+| ADMX File Name | ErrorReporting.admx |
+<!-- DisplayErrorNotification-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- DisplayErrorNotification-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisplayErrorNotification-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DisplayErrorNotification-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DoNotSendAdditionalData-Begin -->
+## DoNotSendAdditionalData
 
-> [!div class = "checklist"]
-> * Device
+<!-- DoNotSendAdditionalData-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- DoNotSendAdditionalData-Applicability-End -->
 
-<hr/>
+<!-- DoNotSendAdditionalData-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ErrorReporting/DoNotSendAdditionalData
+```
+<!-- DoNotSendAdditionalData-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting controls, whether extra data in support of error reports can be sent to Microsoft automatically.
+<!-- DoNotSendAdditionalData-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting controls whether additional data in support of error reports can be sent to Microsoft automatically.
 
-If you enable this policy setting, any extra data requests from Microsoft in response to a Windows Error Reporting report are automatically declined, without notification to the user.
+- If you enable this policy setting, any additional data requests from Microsoft in response to a Windows Error Reporting report are automatically declined, without notification to the user.
 
-If you disable or don't configure this policy setting, then consent policy settings in Computer Configuration/Administrative Templates/Windows Components/Windows Error Reporting/Consent take precedence.
+- If you disable or don't configure this policy setting, then consent policy settings in Computer Configuration/Administrative Templates/Windows Components/Windows Error Reporting/Consent take precedence.
+<!-- DoNotSendAdditionalData-Description-End -->
 
-<!--/Description-->
+<!-- DoNotSendAdditionalData-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DoNotSendAdditionalData-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Do not send additional data*
--   GP name: *WerNoSecondLevelData_2*
--   GP path: *Windows Components/Windows Error Reporting*
--   GP ADMX file name: *ErrorReporting.admx*
+<!-- DoNotSendAdditionalData-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DoNotSendAdditionalData-DFProperties-End -->
 
-<hr/>
+<!-- DoNotSendAdditionalData-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="errorreporting-preventcriticalerrordisplay"></a>**ErrorReporting/PreventCriticalErrorDisplay**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | WerNoSecondLevelData_2 |
+| Friendly Name | Do not send additional data |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Error Reporting |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\Windows Error Reporting |
+| Registry Value Name | DontSendAdditionalData |
+| ADMX File Name | ErrorReporting.admx |
+<!-- DoNotSendAdditionalData-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- DoNotSendAdditionalData-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DoNotSendAdditionalData-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DoNotSendAdditionalData-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- PreventCriticalErrorDisplay-Begin -->
+## PreventCriticalErrorDisplay
 
-> [!div class = "checklist"]
-> * Device
+<!-- PreventCriticalErrorDisplay-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- PreventCriticalErrorDisplay-Applicability-End -->
 
-<hr/>
+<!-- PreventCriticalErrorDisplay-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ErrorReporting/PreventCriticalErrorDisplay
+```
+<!-- PreventCriticalErrorDisplay-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- PreventCriticalErrorDisplay-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting prevents the display of the user interface for critical errors.
 
-If you enable this policy setting, Windows Error Reporting doesn't display any GUI-based error messages or dialog boxes for critical errors.
+- If you enable or don't configure this policy setting, Windows Error Reporting doesn't display any GUI-based error messages or dialog boxes for critical errors.
 
-If you disable or don't configure this policy setting, Windows Error Reporting displays the user interface for critical errors.
+- If you disable this policy setting, Windows Error Reporting displays the GUI-based error messages or dialog boxes for critical errors.
+<!-- PreventCriticalErrorDisplay-Description-End -->
 
-<!--/Description-->
+<!-- PreventCriticalErrorDisplay-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- PreventCriticalErrorDisplay-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Prevent display of the user interface for critical errors*
--   GP name: *WerDoNotShowUI*
--   GP path: *Windows Components/Windows Error Reporting*
--   GP ADMX file name: *ErrorReporting.admx*
+<!-- PreventCriticalErrorDisplay-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- PreventCriticalErrorDisplay-DFProperties-End -->
 
+<!-- PreventCriticalErrorDisplay-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--/Policies-->
+**ADMX mapping**:
 
-## Related topics
+| Name | Value |
+|:--|:--|
+| Name | WerDoNotShowUI |
+| Friendly Name | Prevent display of the user interface for critical errors |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Error Reporting |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\Windows Error Reporting |
+| Registry Value Name | DontShowUI |
+| ADMX File Name | ErrorReporting.admx |
+<!-- PreventCriticalErrorDisplay-AdmxBacked-End -->
+
+<!-- PreventCriticalErrorDisplay-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- PreventCriticalErrorDisplay-Examples-End -->
+
+<!-- PreventCriticalErrorDisplay-End -->
+
+<!-- ErrorReporting-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ErrorReporting-CspMoreInfo-End -->
+
+<!-- ErrorReporting-End -->
+
+## Related articles
 
 [Policy configuration service provider](policy-configuration-service-provider.md)

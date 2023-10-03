@@ -1,26 +1,26 @@
 ---
-title: Create a token object (Windows 10)
+title: Create a token object 
 description: Describes the best practices, location, values, policy management, and security considerations for the Create a token object security policy setting.
 ms.assetid: bfbf52fc-6ba4-442a-9df7-bd277e55729c
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Create a token object
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management, and security considerations for the **Create a token object** security policy setting.

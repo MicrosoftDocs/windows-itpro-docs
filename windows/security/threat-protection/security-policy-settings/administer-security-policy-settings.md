@@ -1,28 +1,28 @@
 ---
-title: Administer security policy settings (Windows 10)
+title: Administer security policy settings 
 description: This article discusses different methods to administer security policy settings on a local device or throughout a small- or medium-sized organization.
 ms.assetid: 7617d885-9d28-437a-9371-171197407599
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Administer security policy settings
 
 **Applies to**
 
-- Windows 10
+- Windows 11
+- Windows 10
 
 This article discusses different methods to administer security policy settings on a local device or throughout a small- or medium-sized organization.
 
@@ -94,7 +94,7 @@ The Security Compliance Manager is a downloadable tool that helps you plan, depl
 
 **To administer security policies by using the Security Compliance Manager**
 
-1. Download the most recent version. You can find out more info on the [Microsoft Security Guidance](/archive/blogs/secguide/) blog.
+1. Download the most recent version. You can find more info on the [Microsoft Security Baselines](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/bg-p/Microsoft-Security-Baselines) blog.
 1. Read the relevant security baseline documentation that is included in this tool.
 1. Download and import the relevant security baselines. The installation process steps you through baseline selection.
 1. Open the Help and follow instructions how to customize, compare, or merge your security baselines before deploying those baselines.

@@ -1,31 +1,29 @@
 ---
 title: Testing Your Application Mitigation Packages (Windows 10)
 description: Learn how to test your application-mitigation packages, including how to report your information and how to resolve any outstanding issues.
-ms.reviewer: 
-manager: dougeby
-ms.author: aaroncz
-ms.prod: w10
-author: aczechowski
-ms.date: 04/19/2017
+manager: aaroncz
+ms.author: frankroj
+ms.prod: windows-client
+author: frankroj
+ms.date: 10/28/2022
 ms.topic: article
+ms.technology: itpro-deploy
 ---
 
 # Testing Your Application Mitigation Packages
 
-
 **Applies to**
 
--   Windows 10
--   Windows 8.1
--   Windows 8
--   Windows 7
--   Windows Server 2012
--   Windows Server 2008 R2
+-   Windows 10
+-   Windows 8.1
+-   Windows 8
+-   Windows 7
+-   Windows Server 2012
+-   Windows Server 2008 R2
 
 This topic provides details about testing your application-mitigation packages, including recommendations about how to report your information and how to resolve any outstanding issues.
 
 ## Testing Your Application Mitigation Packages
-
 
 Testing your application mitigation package strategies is an iterative process, whereby the mitigation strategies that prove unsuccessful will need to be revised and retested. The testing process includes a series of tests in the test environment and one or more pilot deployments in the production environment.
 
@@ -49,7 +47,6 @@ Testing your application mitigation package strategies is an iterative process, 
 
 ## Reporting the Compatibility Mitigation Status to Stakeholders
 
-
 After testing your application mitigation package, you must communicate your status to the appropriate stakeholders before deployment begins. We recommend that you perform this communication by using the following status ratings.
 
 -   **Resolved application compatibility issues**. This status indicates that the application compatibility issues are resolved and that these applications represent no risk to your environment.
@@ -62,15 +59,12 @@ After testing your application mitigation package, you must communicate your sta
 
 ## Resolving Outstanding Compatibility Issues
 
-
 At this point, you probably cannot resolve any unresolved application compatibility issues by automated mitigation methods or by modifying the application. Resolve any outstanding application compatibility issues by using one of the following methods.
 
 -   Apply specific compatibility modes, or run the program as an Administrator, by using the Compatibility Administrator tool.
 
     > [!NOTE]
     > For more information about using Compatibility Administrator to apply compatibility fixes and compatibility modes, see [Using the Compatibility Administrator Tool](using-the-compatibility-administrator-tool.md).
-
-     
 
 -   Run the application in a virtual environment.
 

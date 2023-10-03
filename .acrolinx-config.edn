@@ -1,18 +1,18 @@
-{:allowed-branchname-matches ["main"]
+{:changed-files-limit 60
+ :allowed-branchname-matches ["main" "release-.*"]
  :allowed-filename-matches ["windows/"]
  
   :targets 
    {
      :counts {
-              ;;:spelling 10
-              ;;:grammar 3
+              ;;:correctness 13 
               ;;:total 15 ;; absolute flag count but i don't know the difference between this and issues
               ;;:issues 15 ;; coming from the platform, will need to be tested.
              }
      :scores {
               ;;:terminology 100
               :qualityscore 80 ;; Confirmed with Hugo that you just comment out the single score and leave the structure in place
-              ;;:spelling 40
+              ;;:correctness 40
              }
    }
  
@@ -22,7 +22,7 @@
  {
   "languageId" "en"
   "ruleSetName" "Standard"
-  "requestedFlagTypes" ["SPELLING" "GRAMMAR" "STYLE"
+  "requestedFlagTypes" ["CORRECTNESS" "SPELLING" "GRAMMAR" "STYLE"
                         "TERMINOLOGY_DEPRECATED"
                         "TERMINOLOGY_VALID"
                         "VOICE_GUIDANCE"
@@ -35,7 +35,7 @@
  "
 ## Acrolinx Scorecards
  
-**The minimum Acrolinx topic score of 80 is required for all MARVEL content merged to the default branch.**
+**The minimum Acrolinx topic score of 80 is required for all MAGIC content merged to the default branch.**
 
 If you need a scoring exception for content in this PR, add the *Sign off* and the *Acrolinx exception* labels to the PR. The PubOps Team will review the exception request and may take one or more of the following actions:
 
@@ -47,12 +47,12 @@ For more information about the exception criteria and exception process, see [Mi
  
 Click the scorecard links for each article to review the Acrolinx feedback on grammar, spelling, punctuation, writing style, and terminology:
 
-| Article | Score | Issues | Correctness<br>issues | Scorecard | Processed |
+| Article | Score | Issues | Correctness<br>score | Scorecard | Processed |
 | ------- | ----- | ------ | ------ | --------- | --------- |
 "
 
  :template-change
- "| ${s/file} | ${acrolinx/qualityscore} | ${acrolinx/flags/issues} | ${acrolinx/flags/correctness} | [link](${acrolinx/scorecard}) | ${s/status} |
+ "| ${s/file} | ${acrolinx/qualityscore} | ${acrolinx/flags/issues} | ${acrolinx/scores/correctness} | [link](${acrolinx/scorecard}) | ${s/status} |
 "
  
  :template-footer

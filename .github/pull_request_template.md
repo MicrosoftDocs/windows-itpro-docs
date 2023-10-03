@@ -30,10 +30,10 @@ If your changes are extensive:
 -->
 
 <!--
-Thanks for contributing to Microsoft docs content!
+Thanks for contributing to Microsoft technical content!
 
 Here are some resources that might be helpful while contributing:
-- [Microsoft Docs contributor guide](https://docs.microsoft.com/contribute/)
-- [Docs Markdown reference](https://docs.microsoft.com/contribute/markdown-reference)
-- [Microsoft Writing Style Guide](https://docs.microsoft.com/style-guide/welcome/)
+- [Microsoft Docs contributor guide](https://learn.microsoft.com/contribute/)
+- [Docs Markdown reference](https://learn.microsoft.com/contribute/markdown-reference)
+- [Microsoft Writing Style Guide](https://learn.microsoft.com/style-guide/welcome/)
 -->

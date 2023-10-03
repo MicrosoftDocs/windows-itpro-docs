@@ -1,211 +1,237 @@
 ---
-title: Policy CSP - MSSLegacy
-description: Learn how Policy CSP - MSSLegacy, an ADMX-backed policy, requires a special SyncML format to enable or disable.
-ms.author: vinpa
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
+title: MSSLegacy Policy CSP
+description: Learn more about the MSSLegacy Area in Policy CSP.
 author: vinaypamnani-msft
-ms.localizationpriority: medium
-ms.date: 09/27/2019
-ms.reviewer: 
 manager: aaroncz
+ms.author: vinpa
+ms.date: 08/10/2023
+ms.localizationpriority: medium
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- MSSLegacy-Begin -->
 # Policy CSP - MSSLegacy
 
-<hr/>
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
-<!--Policies-->
-## MSSLegacy policies  
+<!-- MSSLegacy-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MSSLegacy-Editable-End -->
 
-<dl>
-  <dd>
-    <a href="#msslegacy-allowicmpredirectstooverrideospfgeneratedroutes">MSSLegacy/AllowICMPRedirectsToOverrideOSPFGeneratedRoutes</a>
-  </dd>
-  <dd>
-    <a href="#msslegacy-allowthecomputertoignorenetbiosnamereleaserequestsexceptfromwinsservers">MSSLegacy/AllowTheComputerToIgnoreNetBIOSNameReleaseRequestsExceptFromWINSServers</a>
-  </dd>
-  <dd>
-    <a href="#msslegacy-ipsourceroutingprotectionlevel">MSSLegacy/IPSourceRoutingProtectionLevel</a>
-  </dd>
-  <dd>
-    <a href="#msslegacy-ipv6sourceroutingprotectionlevel">MSSLegacy/IPv6SourceRoutingProtectionLevel</a>
-  </dd>
-</dl>
+<!-- AllowICMPRedirectsToOverrideOSPFGeneratedRoutes-Begin -->
+## AllowICMPRedirectsToOverrideOSPFGeneratedRoutes
 
-> [!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+<!-- AllowICMPRedirectsToOverrideOSPFGeneratedRoutes-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- AllowICMPRedirectsToOverrideOSPFGeneratedRoutes-Applicability-End -->
 
-<hr/>
+<!-- AllowICMPRedirectsToOverrideOSPFGeneratedRoutes-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/MSSLegacy/AllowICMPRedirectsToOverrideOSPFGeneratedRoutes
+```
+<!-- AllowICMPRedirectsToOverrideOSPFGeneratedRoutes-OmaUri-End -->
 
-<!--Policy-->
-<a href="" id="msslegacy-allowicmpredirectstooverrideospfgeneratedroutes"></a>**MSSLegacy/AllowICMPRedirectsToOverrideOSPFGeneratedRoutes**  
+<!-- AllowICMPRedirectsToOverrideOSPFGeneratedRoutes-Description-Begin -->
+<!-- Description-Source-Not-Found -->
+<!-- AllowICMPRedirectsToOverrideOSPFGeneratedRoutes-Description-End -->
 
-<!--SupportedSKUs-->
+<!-- AllowICMPRedirectsToOverrideOSPFGeneratedRoutes-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+Allow ICMP redirects to override OSPF generated routes.
+<!-- AllowICMPRedirectsToOverrideOSPFGeneratedRoutes-Editable-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AllowICMPRedirectsToOverrideOSPFGeneratedRoutes-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AllowICMPRedirectsToOverrideOSPFGeneratedRoutes-DFProperties-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowICMPRedirectsToOverrideOSPFGeneratedRoutes-AdmxBacked-Begin -->
+<!-- ADMX-Not-Found -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-> [!div class = "checklist"]
-> * Device
+**ADMX mapping**:
 
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | Pol_MSS_EnableICMPRedirect |
+| ADMX File Name | mss-legacy.admx |
+<!-- AllowICMPRedirectsToOverrideOSPFGeneratedRoutes-AdmxBacked-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- AllowICMPRedirectsToOverrideOSPFGeneratedRoutes-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowICMPRedirectsToOverrideOSPFGeneratedRoutes-Examples-End -->
 
-<!--/Description-->
+<!-- AllowICMPRedirectsToOverrideOSPFGeneratedRoutes-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP name: *Pol_MSS_EnableICMPRedirect*
--   GP ADMX file name: *mss-legacy.admx*
+<!-- AllowTheComputerToIgnoreNetBIOSNameReleaseRequestsExceptFromWINSServers-Begin -->
+## AllowTheComputerToIgnoreNetBIOSNameReleaseRequestsExceptFromWINSServers
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+<!-- AllowTheComputerToIgnoreNetBIOSNameReleaseRequestsExceptFromWINSServers-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- AllowTheComputerToIgnoreNetBIOSNameReleaseRequestsExceptFromWINSServers-Applicability-End -->
 
-<hr/>
+<!-- AllowTheComputerToIgnoreNetBIOSNameReleaseRequestsExceptFromWINSServers-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/MSSLegacy/AllowTheComputerToIgnoreNetBIOSNameReleaseRequestsExceptFromWINSServers
+```
+<!-- AllowTheComputerToIgnoreNetBIOSNameReleaseRequestsExceptFromWINSServers-OmaUri-End -->
 
-<!--Policy-->
-<a href="" id="msslegacy-allowthecomputertoignorenetbiosnamereleaserequestsexceptfromwinsservers"></a>**MSSLegacy/AllowTheComputerToIgnoreNetBIOSNameReleaseRequestsExceptFromWINSServers**  
+<!-- AllowTheComputerToIgnoreNetBIOSNameReleaseRequestsExceptFromWINSServers-Description-Begin -->
+<!-- Description-Source-Not-Found -->
+<!-- AllowTheComputerToIgnoreNetBIOSNameReleaseRequestsExceptFromWINSServers-Description-End -->
 
-<!--SupportedSKUs-->
+<!-- AllowTheComputerToIgnoreNetBIOSNameReleaseRequestsExceptFromWINSServers-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+Allow the computer to ignore NetBIOS name release requests except from WINS servers.
+<!-- AllowTheComputerToIgnoreNetBIOSNameReleaseRequestsExceptFromWINSServers-Editable-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AllowTheComputerToIgnoreNetBIOSNameReleaseRequestsExceptFromWINSServers-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AllowTheComputerToIgnoreNetBIOSNameReleaseRequestsExceptFromWINSServers-DFProperties-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowTheComputerToIgnoreNetBIOSNameReleaseRequestsExceptFromWINSServers-AdmxBacked-Begin -->
+<!-- ADMX-Not-Found -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-> [!div class = "checklist"]
-> * Device
+**ADMX mapping**:
 
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | Pol_MSS_NoNameReleaseOnDemand |
+| ADMX File Name | mss-legacy.admx |
+<!-- AllowTheComputerToIgnoreNetBIOSNameReleaseRequestsExceptFromWINSServers-AdmxBacked-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- AllowTheComputerToIgnoreNetBIOSNameReleaseRequestsExceptFromWINSServers-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowTheComputerToIgnoreNetBIOSNameReleaseRequestsExceptFromWINSServers-Examples-End -->
 
-<!--/Description-->
+<!-- AllowTheComputerToIgnoreNetBIOSNameReleaseRequestsExceptFromWINSServers-End -->
 
+<!-- IPSourceRoutingProtectionLevel-Begin -->
+## IPSourceRoutingProtectionLevel
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP name: *Pol_MSS_NoNameReleaseOnDemand*
--   GP ADMX file name: *mss-legacy.admx*
+<!-- IPSourceRoutingProtectionLevel-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- IPSourceRoutingProtectionLevel-Applicability-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+<!-- IPSourceRoutingProtectionLevel-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/MSSLegacy/IPSourceRoutingProtectionLevel
+```
+<!-- IPSourceRoutingProtectionLevel-OmaUri-End -->
 
-<hr/>
+<!-- IPSourceRoutingProtectionLevel-Description-Begin -->
+<!-- Description-Source-Not-Found -->
+<!-- IPSourceRoutingProtectionLevel-Description-End -->
 
-<!--Policy-->
-<a href="" id="msslegacy-ipsourceroutingprotectionlevel"></a>**MSSLegacy/IPSourceRoutingProtectionLevel**  
+<!-- IPSourceRoutingProtectionLevel-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+IP source routing protection level (protects against packet spoofing).
+<!-- IPSourceRoutingProtectionLevel-Editable-End -->
 
-<!--SupportedSKUs-->
+<!-- IPSourceRoutingProtectionLevel-DFProperties-Begin -->
+**Description framework properties**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- IPSourceRoutingProtectionLevel-DFProperties-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- IPSourceRoutingProtectionLevel-AdmxBacked-Begin -->
+<!-- ADMX-Not-Found -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+**ADMX mapping**:
 
-> [!div class = "checklist"]
-> * Device
+| Name | Value |
+|:--|:--|
+| Name | Pol_MSS_DisableIPSourceRouting |
+| ADMX File Name | mss-legacy.admx |
+<!-- IPSourceRoutingProtectionLevel-AdmxBacked-End -->
 
-<hr/>
+<!-- IPSourceRoutingProtectionLevel-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- IPSourceRoutingProtectionLevel-Examples-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- IPSourceRoutingProtectionLevel-End -->
 
-<!--/Description-->
+<!-- IPv6SourceRoutingProtectionLevel-Begin -->
+## IPv6SourceRoutingProtectionLevel
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP name: *Pol_MSS_DisableIPSourceRouting*
--   GP ADMX file name: *mss-legacy.admx*
+<!-- IPv6SourceRoutingProtectionLevel-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- IPv6SourceRoutingProtectionLevel-Applicability-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+<!-- IPv6SourceRoutingProtectionLevel-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/MSSLegacy/IPv6SourceRoutingProtectionLevel
+```
+<!-- IPv6SourceRoutingProtectionLevel-OmaUri-End -->
 
-<hr/>
+<!-- IPv6SourceRoutingProtectionLevel-Description-Begin -->
+<!-- Description-Source-Not-Found -->
+<!-- IPv6SourceRoutingProtectionLevel-Description-End -->
 
-<!--Policy-->
-<a href="" id="msslegacy-ipv6sourceroutingprotectionlevel"></a>**MSSLegacy/IPv6SourceRoutingProtectionLevel**  
+<!-- IPv6SourceRoutingProtectionLevel-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+IPv6 source routing protection level (protects against packet spoofing).
+<!-- IPv6SourceRoutingProtectionLevel-Editable-End -->
 
-<!--SupportedSKUs-->
+<!-- IPv6SourceRoutingProtectionLevel-DFProperties-Begin -->
+**Description framework properties**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- IPv6SourceRoutingProtectionLevel-DFProperties-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- IPv6SourceRoutingProtectionLevel-AdmxBacked-Begin -->
+<!-- ADMX-Not-Found -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+**ADMX mapping**:
 
-> [!div class = "checklist"]
-> * Device
+| Name | Value |
+|:--|:--|
+| Name | Pol_MSS_DisableIPSourceRoutingIPv6 |
+| ADMX File Name | mss-legacy.admx |
+<!-- IPv6SourceRoutingProtectionLevel-AdmxBacked-End -->
 
-<hr/>
+<!-- IPv6SourceRoutingProtectionLevel-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- IPv6SourceRoutingProtectionLevel-Examples-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- IPv6SourceRoutingProtectionLevel-End -->
 
-<!--/Description-->
+<!-- MSSLegacy-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- MSSLegacy-CspMoreInfo-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP name: *Pol_MSS_DisableIPSourceRoutingIPv6*
--   GP ADMX file name: *mss-legacy.admx*
+<!-- MSSLegacy-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-
-
-<!--/Policies-->
-
-## Related topics
+## Related articles
 
 [Policy configuration service provider](policy-configuration-service-provider.md)

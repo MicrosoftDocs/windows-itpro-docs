@@ -1,26 +1,16 @@
 ---
 title: Windows 10 configuration recommendations for education customers
-description: Provides guidance on ways to configure the OS diagnostic data, consumer experiences, Cortana, search, and some of the preinstalled apps, so that Windows is ready for your school.
-keywords: Windows 10 deployment, recommendations, privacy settings, school, education, configurations, accessibility, assistive technology
-ms.mktglfcycl: plan
-ms.sitesec: library
-ms.prod: windows
-ms.pagetype: edu
-ms.localizationpriority: medium
-ms.collection: education
-author: paolomatarazzo
-ms.author: paoloma
+description: Learn how to configure the OS diagnostic data, consumer experiences, Cortana, search, and some of the preinstalled apps, so that Windows is ready for your school.
+ms.topic: how-to
 ms.date: 08/10/2022
-ms.reviewer: 
-manager: aaroncz
 appliesto:
-- ✅ <b>Windows 10</b>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 # Windows 10 configuration recommendations for education customers
 
 Privacy is important to us, we want to provide you with ways to customize the OS diagnostic data, consumer experiences, Cortana, search, and some of the preinstalled apps, for usage with [education editions of Windows 10](windows-editions-for-education-customers.md) in education environments. These features work on all Windows 10 editions, but education editions of Windows 10 have the settings preconfigured. We recommend that all Windows 10 devices in an education setting be configured with **[SetEduPolicies](#setedupolicies)** enabled. For more information, see the following table. To learn more about Microsoft's commitment to privacy, see [Windows 10 and privacy](https://go.microsoft.com/fwlink/?LinkId=809305).
 
-We want all students to have the chance to use the apps they need for success in the classroom and all school personnel to have apps they need for their job. Students and school personnel who use assistive technology apps not available in the Microsoft Store for Education, and use devices running Windows 10 S, will be able to configure the device at no extra charge to Windows 10 Pro Education. To learn more about the steps to configure this device, see [Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 S](change-to-pro-education.md).
+We want all students to have the chance to use the apps they need for success in the classroom and all school personnel to have apps they need for their job. Students and school personnel who use assistive technology apps not available in the Microsoft Store, and use devices running Windows 10 S, will be able to configure the device at no extra charge to Windows 10 Pro Education. To learn more about the steps to configure this device, see [Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 S](change-to-pro-education.md).
 
 In Windows 10, version 1703 (Creators Update), it's straightforward to configure Windows to be education ready.
 
@@ -55,7 +45,7 @@ It's easy to be education ready when using Microsoft products. We recommend the 
    3. Enroll the PCs in MDM.
       * If you've activated Intune for Education in your Azure AD tenant, enrollment will happen automatically when the PC is joined to Azure AD. Intune for Education will automatically set **SetEduPolicies** to True and **AllowCortana** to False.
    4. Ensure that needed assistive technology apps can be used.
-      * If you've students or school personnel who rely on assistive technology apps that aren't available in the Microsoft Store for Education, and who are using a Windows 10 S device, configure their device to Windows 10 Pro Education to allow the download and use of non-Microsoft Store assistive technology apps. See [Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 S](change-to-pro-education.md) for more info.
+      * If you've students or school personnel who rely on assistive technology apps that aren't available in the Microsoft Store, and who are using a Windows 10 S device, configure their device to Windows 10 Pro Education to allow the download and use of non-Microsoft Store assistive technology apps. See [Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 S](change-to-pro-education.md) for more info.
 
 4. Distribute the PCs to students.
 
@@ -92,19 +82,13 @@ Use one of these methods to set this policy.
     - Data type:  Integer
     - Value:  0
 
-      ![Create an OMA URI for AllowCortana.](images/allowcortana_omauri.png)
-
 ### Group Policy
 Set **Computer Configuration > Administrative Templates > Windows Components > Search > AllowCortana** to **Disabled**.
-
-![Set AllowCortana to disabled through Group Policy.](images/allowcortana_gp.png)
 
 ### Provisioning tools
 - [Set up School PCs](use-set-up-school-pcs-app.md) always sets this policy in provisioning packages it creates.
 - [Windows Configuration Designer](/windows/configuration/provisioning-packages/provisioning-create-package) 
     - Under **Runtime settings**, click the **Policies** settings group, set **Experience > Cortana** to **No**.
-
-        ![Set AllowCortana to No in Windows Configuration Designer.](images/allowcortana_wcd.png)
 
 ## SetEduPolicies
 **SetEduPolicies** is a policy that applies a set of configuration behaviors to Windows. It's a policy node in the [SharedPC configuration service provider](/windows/client-management/mdm/sharedpc-csp).
@@ -145,7 +129,7 @@ For example:
 - [Windows Configuration Designer](/windows/configuration/provisioning-packages/provisioning-create-package) 
     - Under **Runtime settings**, click the **SharedPC** settings group, set **PolicyCustomization > SetEduPolicies** to **True**.
 
-        ![Set SetEduPolicies to True in Windows Configuration Designer.](images/setedupolicies_wcd.png)
+        ![Set SetEduPolicies to True in Windows Configuration Designer.](images/wcd/setedupolicies.png)
 
 ## Ad-free search with Bing
 Provide an ad-free experience that is a safer, more private search option for K–12 education institutions in the United States. 
@@ -155,7 +139,7 @@ Provide an ad-free experience that is a safer, more private search option for K�
 #### Azure AD and Office 365 Education tenant
 To suppress ads when searching with Bing on Microsoft Edge on any network, follow these steps:
 
-1. Ensure your Office 365 tenant is registered as an education tenant. For more information, see [Verify your Office 365 domain to prove education status](https://support.office.com/article/Verify-your-Office-365-domain-to-prove-ownership-nonprofit-or-education-status-or-to-activate-Yammer-87d1844e-aa47-4dc0-a61b-1b773fd4e590).
+1. Ensure your Office 365 tenant is registered as an education tenant. For more information, see [Verify your Office 365 domain to prove education status](https://support.office.com/article/Verify-your-Office-365-domain-to-prove-ownership-nonprofit-or-education-status-or-to-activate-viva-engage-87d1844e-aa47-4dc0-a61b-1b773fd4e590).
 2. Domain join the Windows 10 PCs to your Azure AD tenant (this tenant is the same as your Office 365 tenant).
 3. Configure **SetEduPolicies** according to one of the methods described in the previous sections in this topic.
 4. Have students sign in with their Azure AD identity, which is the same as your Office 365 identity, to use the PC.

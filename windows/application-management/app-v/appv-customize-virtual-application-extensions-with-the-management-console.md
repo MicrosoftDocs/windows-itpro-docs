@@ -2,12 +2,14 @@
 title: How to customize virtual application extensions for a specific AD group by using the Management Console (Windows 10/11)
 description: How to customize virtual application extensions for a specific AD group by using the Management Console.
 author: aczechowski
-ms.prod: w10
+ms.prod: windows-client
 ms.date: 07/10/2018
 ms.reviewer: 
-manager: dougeby
+manager: aaroncz
 ms.author: aaroncz
+ms.collection: must-keep
 ms.topic: article
+ms.technology: itpro-apps
 ---
 # How to customize virtual applications extensions for a specific AD group by using the Management Console
 

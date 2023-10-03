@@ -2,19 +2,13 @@
 
 title: Microsoft 365 Education Documentation
 summary: Microsoft 365 Education empowers educators to unlock creativity, promote teamwork, and provide a simple and safe experience in a single, affordable solution built for education.
-# brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-apps | power-automate | power-bi | power-platform | power-virtual-agents | sql | sql-server | vs | visual-studio | windows | xamarin
 brand: m365
 
 metadata:
   title: Microsoft 365 Education Documentation
   description: Learn about product documentation and resources available for school IT administrators, teachers, students, and education app developers.
-  ms.service: help
   ms.topic: hub-page
-  ms.collection: education
-  author: paolomatarazzo
-  ms.author: paoloma
   ms.date: 08/10/2022
-  manager: aaroncz
 
 productDirectory:
   title: For IT admins
@@ -23,7 +17,7 @@ productDirectory:
     # Card    
     - title: Phase 1 - Cloud deployment
       imageSrc: ./images/EDU-Deploy.svg
-      summary: Create your Microsoft 365 tenant, secure and configure your environment, sync your active directry and SIS, and license users.
+      summary: Create your Microsoft 365 tenant, secure and configure your environment, sync your Active Directory and SIS, and license users.
       url: /microsoft-365/education/deploy/create-your-office-365-tenant
     # Card
     - title: Phase 2 - Device management
@@ -51,7 +45,7 @@ productDirectory:
           text: Azure information protection deployment acceleration guide
         - url: /defender-cloud-apps/get-started
           text: Microsoft Defender for Cloud Apps
-        - url: /microsoft-365/compliance/create-test-tune-dlp-policy
+        - url: /microsoft-365/compliance/information-protection#prevent-data-loss
           text: Data loss prevention
         - url: /microsoft-365/compliance/
           text: Microsoft Purview compliance
@@ -73,7 +67,7 @@ productDirectory:
           text: IT admin help
         - url: https://support.office.com/education
           text: Education help center
-        - url: /learn/educator-center/
+        - url: /training/educator-center/
           text: Teacher training packs
     # Card    
     - title: Check out our education journey

@@ -37,13 +37,13 @@
         - name: Use mobile device management (MDM)
           href: customize-windows-10-start-screens-by-using-mobile-device-management.md
         - name: Troubleshoot Start menu errors
-          href: start-layout-troubleshoot.md
+          href: /troubleshoot/windows-client/shell-experience/troubleshoot-start-menu-errors
         - name: Changes to Start policies in Windows 10
           href: changes-to-start-policies-in-windows-10.md
     - name: Accessibility settings
       items:
          - name: Accessibility information for IT Pros
-           href: windows-10-accessibility-for-ITPros.md
+           href: windows-accessibility-for-ITPros.md
          - name: Configure access to Microsoft Store
            href: stop-employees-from-using-microsoft-store.md
          - name: Configure Windows Spotlight on the lock screen
@@ -66,10 +66,10 @@
       href: setup-digital-signage.md
     - name: Set up a single-app kiosk
       href: kiosk-single-app.md
-    - name: Set up a multi-app kiosk
+    - name: Set up a multi-app kiosk for Windows 10
       href: lock-down-windows-10-to-specific-apps.md
-    - name: Set up a shared or guest PC
-      href: set-up-shared-or-guest-pc.md
+    - name: Set up a multi-app kiosk for Windows 11
+      href: lock-down-windows-11-to-specific-apps.md
     - name: Kiosk reference information
       items:
         - name: More kiosk methods and reference information
@@ -91,8 +91,16 @@
         - name: Use MDM Bridge WMI Provider to create a Windows client kiosk
           href: kiosk-mdm-bridge.md
         - name: Troubleshoot kiosk mode issues
-          href: kiosk-troubleshoot.md
-       
+          href: /troubleshoot/windows-client/shell-experience/kiosk-mode-issues-troubleshooting
+
+- name: Configure multi-user and guest devices 
+  items:
+    - name: Shared devices concepts
+      href: shared-devices-concepts.md
+    - name: Configure shared devices with Shared PC
+      href: set-up-shared-or-guest-pc.md
+    - name: Shared PC technical reference
+      href: shared-pc-technical.md
 
 - name: Use provisioning packages
   items:
@@ -120,6 +128,8 @@
       href: provisioning-packages/provisioning-multivariant.md
     - name: PowerShell cmdlets for provisioning Windows client (reference)
       href: provisioning-packages/provisioning-powershell.md
+    - name: Diagnose provisioning packages
+      href: provisioning-packages/diagnose-provisioning-packages.md
     - name: Windows Configuration Designer command-line interface (reference)
       href: provisioning-packages/provisioning-command-line.md
 
@@ -321,7 +331,7 @@
                   href: ue-v/uev-manage-configurations.md
                 - name: Configuring UE-V with Group Policy Objects
                   href: ue-v/uev-configuring-uev-with-group-policy-objects.md
-                - name: Configuring UE-V with Microsoft Endpoint Configuration Manager
+                - name: Configuring UE-V with Microsoft Configuration Manager
                   href: ue-v/uev-configuring-uev-with-system-center-configuration-manager.md
                 - name: Administering UE-V with Windows PowerShell and WMI
                   href: ue-v/uev-administering-uev-with-windows-powershell-and-wmi.md

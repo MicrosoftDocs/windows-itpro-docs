@@ -1,358 +1,428 @@
 ---
-title: Policy CSP - FileExplorer
-description: Use the Policy CSP - FileExplorer setting so you can allow certain legacy plug-in applications to function without terminating Explorer.
-ms.author: vinpa
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
+title: FileExplorer Policy CSP
+description: Learn more about the FileExplorer Area in Policy CSP.
 author: vinaypamnani-msft
-ms.localizationpriority: medium
-ms.date: 09/27/2019
-ms.reviewer: 
 manager: aaroncz
+ms.author: vinpa
+ms.date: 08/30/2023
+ms.localizationpriority: medium
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- FileExplorer-Begin -->
 # Policy CSP - FileExplorer
 
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
+<!-- FileExplorer-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- FileExplorer-Editable-End -->
 
-<hr/>
+<!-- AllowOptionToShowNetwork-Begin -->
+## AllowOptionToShowNetwork
 
-<!--Policies-->
-## FileExplorer policies  
+<!-- AllowOptionToShowNetwork-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- AllowOptionToShowNetwork-Applicability-End -->
 
-<dl>
-  <dd>
-    <a href="#fileexplorer-allowoptiontoshownetwork">FileExplorer/AllowOptionToShowNetwork</a>
-  </dd>
-  <dd>
-    <a href="#fileexplorer-allowoptiontoshowthispc">FileExplorer/AllowOptionToShowThisPC</a>
-  </dd>
-  <dd>
-    <a href="#fileexplorer-turnoffdataexecutionpreventionforexplorer">FileExplorer/TurnOffDataExecutionPreventionForExplorer</a>
-  </dd>
-  <dd>
-    <a href="#fileexplorer-turnoffheapterminationoncorruption">FileExplorer/TurnOffHeapTerminationOnCorruption</a>
-  </dd>
-  <dd>
-    <a href="#fileexplorer-setallowedfolderlocations">FileExplorer/SetAllowedFolderLocations</a>
-  </dd>
-  <dd>
-    <a href="#fileexplorer-setallowedstoragelocations">FileExplorer/SetAllowedStorageLocations</a>
-  </dd>
-</dl>
+<!-- AllowOptionToShowNetwork-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/FileExplorer/AllowOptionToShowNetwork
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/FileExplorer/AllowOptionToShowNetwork
+```
+<!-- AllowOptionToShowNetwork-OmaUri-End -->
 
-<!--Policy-->
-<a href="" id="fileexplorer-allowoptiontoshownetwork"></a>**FileExplorer/AllowOptionToShowNetwork**  
+<!-- AllowOptionToShowNetwork-Description-Begin -->
+<!-- Description-Source-DDF -->
+When the Network folder is restricted, give the user the option to enumerate and navigate into it.
+<!-- AllowOptionToShowNetwork-Description-End -->
 
-<!--SupportedSKUs-->
+<!-- AllowOptionToShowNetwork-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowOptionToShowNetwork-Editable-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AllowOptionToShowNetwork-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- AllowOptionToShowNetwork-DFProperties-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowOptionToShowNetwork-AllowedValues-Begin -->
+**Allowed values**:
 
-> [!div class = "checklist"]
-> * Device
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Not Allowed. |
+| 1 | Allowed. |
+<!-- AllowOptionToShowNetwork-AllowedValues-End -->
 
-<hr/>
+<!-- AllowOptionToShowNetwork-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowOptionToShowNetwork-Examples-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- AllowOptionToShowNetwork-End -->
 
-This policy allows the user with an option to show the network folder when restricted.
+<!-- AllowOptionToShowThisPC-Begin -->
+## AllowOptionToShowThisPC
 
-<!--/Description-->
+<!-- AllowOptionToShowThisPC-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- AllowOptionToShowThisPC-Applicability-End -->
 
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- AllowOptionToShowThisPC-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/FileExplorer/AllowOptionToShowThisPC
+```
 
-- 0 - Disabled
-- 1 (default) - Enabled
+```Device
+./Device/Vendor/MSFT/Policy/Config/FileExplorer/AllowOptionToShowThisPC
+```
+<!-- AllowOptionToShowThisPC-OmaUri-End -->
 
-<!--/SupportedValues-->
+<!-- AllowOptionToShowThisPC-Description-Begin -->
+<!-- Description-Source-DDF -->
+When This PC location is restricted, give the user the option to enumerate and navigate into it.
+<!-- AllowOptionToShowThisPC-Description-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Allow the user the option to show Network folder when restricted*
--   GP name: *AllowOptionToShowNetwork*
--   GP path: *File Explorer*
--   GP ADMX file name: *Explorer.admx*
+<!-- AllowOptionToShowThisPC-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowOptionToShowThisPC-Editable-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+<!-- AllowOptionToShowThisPC-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- AllowOptionToShowThisPC-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="fileexplorer-allowoptiontoshowthispc"></a>**FileExplorer/AllowOptionToShowThisPC**  
+<!-- AllowOptionToShowThisPC-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--SupportedSKUs-->
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Not Allowed. |
+| 1 | Allowed. |
+<!-- AllowOptionToShowThisPC-AllowedValues-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AllowOptionToShowThisPC-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowOptionToShowThisPC-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowOptionToShowThisPC-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DisableGraphRecentItems-Begin -->
+## DisableGraphRecentItems
 
-> [!div class = "checklist"]
-> * User
+<!-- DisableGraphRecentItems-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+<!-- DisableGraphRecentItems-Applicability-End -->
 
-<hr/>
+<!-- DisableGraphRecentItems-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/FileExplorer/DisableGraphRecentItems
+```
+<!-- DisableGraphRecentItems-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- DisableGraphRecentItems-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Turning off this setting will prevent File Explorer from requesting cloud file metadata and displaying it in the homepage and other views in File Explorer. Any insights and files available based on account activity will be stopped in views such as Recent, Recommended, Favorites, etc.
+<!-- DisableGraphRecentItems-Description-End -->
 
-This policy allows the user with an option to show this PC location when restricted.
+<!-- DisableGraphRecentItems-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableGraphRecentItems-Editable-End -->
 
-<!--/Description-->
+<!-- DisableGraphRecentItems-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--SupportedValues-->
-The following list shows the supported values:
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- DisableGraphRecentItems-DFProperties-End -->
 
-- 0 - Disabled
-- 1 (default) - Enabled
+<!-- DisableGraphRecentItems-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--/SupportedValues-->
+| Value | Description |
+|:--|:--|
+| 0 (Default) | File Explorer will request cloud file metadata and display it in the homepage and other views. |
+| 1 | File Explorer won't request cloud file metadata or display it in the homepage or other views. |
+<!-- DisableGraphRecentItems-AllowedValues-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Allow the user the option to show Network folder when restricted*
--   GP name: *AllowOptionToShowThisPC*
--   GP path: *File Explorer*
--   GP ADMX file name: *Explorer.admx*
+<!-- DisableGraphRecentItems-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Name | Value |
+|:--|:--|
+| Name | DisableGraphRecentItems |
+| Friendly Name | Turn off account-based insights, recent, favorite, and recommended files in File Explorer |
+| Location | Computer Configuration |
+| Path | WindowsComponents > File Explorer |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
+| Registry Value Name | DisableGraphRecentItems |
+| ADMX File Name | Explorer.admx |
+<!-- DisableGraphRecentItems-GpMapping-End -->
 
-<hr/>
+<!-- DisableGraphRecentItems-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableGraphRecentItems-Examples-End -->
 
-<!--Policy-->
-<a href="" id="fileexplorer-turnoffdataexecutionpreventionforexplorer"></a>**FileExplorer/TurnOffDataExecutionPreventionForExplorer**  
+<!-- DisableGraphRecentItems-End -->
 
-<!--SupportedSKUs-->
+<!-- SetAllowedFolderLocations-Begin -->
+## SetAllowedFolderLocations
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- SetAllowedFolderLocations-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- SetAllowedFolderLocations-Applicability-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- SetAllowedFolderLocations-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/FileExplorer/SetAllowedFolderLocations
+```
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+```Device
+./Device/Vendor/MSFT/Policy/Config/FileExplorer/SetAllowedFolderLocations
+```
+<!-- SetAllowedFolderLocations-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- SetAllowedFolderLocations-Description-Begin -->
+<!-- Description-Source-DDF -->
+A value that can represent one or more folder locations in File Explorer. If not specified, the default is access to all folder locations.
+<!-- SetAllowedFolderLocations-Description-End -->
 
-<hr/>
+<!-- SetAllowedFolderLocations-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- SetAllowedFolderLocations-Editable-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- SetAllowedFolderLocations-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- SetAllowedFolderLocations-DFProperties-End -->
+
+<!-- SetAllowedFolderLocations-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Access to all folder locations. |
+| 13 | Documents, Pictures, Downloads. |
+| 15 | Desktop, Documents, Pictures, Downloads. |
+| 31 | Desktop, Documents, Pictures, Downloads, Network. |
+| 47 | This PC, Desktop, Documents, Pictures, Downloads. |
+| 63 | This PC, Desktop, Documents, Pictures, Downloads, Network. |
+<!-- SetAllowedFolderLocations-AllowedValues-End -->
+
+<!-- SetAllowedFolderLocations-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- SetAllowedFolderLocations-Examples-End -->
+
+<!-- SetAllowedFolderLocations-End -->
+
+<!-- SetAllowedStorageLocations-Begin -->
+## SetAllowedStorageLocations
+
+<!-- SetAllowedStorageLocations-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- SetAllowedStorageLocations-Applicability-End -->
+
+<!-- SetAllowedStorageLocations-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/FileExplorer/SetAllowedStorageLocations
+```
+
+```Device
+./Device/Vendor/MSFT/Policy/Config/FileExplorer/SetAllowedStorageLocations
+```
+<!-- SetAllowedStorageLocations-OmaUri-End -->
+
+<!-- SetAllowedStorageLocations-Description-Begin -->
+<!-- Description-Source-DDF -->
+A value that can represent one or more storage locations in File Explorer. If not specified, the default is access to all storage locations.
+<!-- SetAllowedStorageLocations-Description-End -->
+
+<!-- SetAllowedStorageLocations-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- SetAllowedStorageLocations-Editable-End -->
+
+<!-- SetAllowedStorageLocations-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- SetAllowedStorageLocations-DFProperties-End -->
+
+<!-- SetAllowedStorageLocations-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Access to all storage locations. |
+| 1 | Removable Drives. |
+| 2 | Sync roots. |
+| 3 | Removable Drives, Sync roots. |
+| 4 | Local Drives. |
+| 5 | Removable Drives, Local Drives. |
+| 6 | Sync Roots, Local Drives. |
+| 7 | Removable Drives, Sync Roots, Local Drives. |
+<!-- SetAllowedStorageLocations-AllowedValues-End -->
+
+<!-- SetAllowedStorageLocations-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- SetAllowedStorageLocations-Examples-End -->
+
+<!-- SetAllowedStorageLocations-End -->
+
+<!-- TurnOffDataExecutionPreventionForExplorer-Begin -->
+## TurnOffDataExecutionPreventionForExplorer
+
+<!-- TurnOffDataExecutionPreventionForExplorer-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- TurnOffDataExecutionPreventionForExplorer-Applicability-End -->
+
+<!-- TurnOffDataExecutionPreventionForExplorer-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/FileExplorer/TurnOffDataExecutionPreventionForExplorer
+```
+<!-- TurnOffDataExecutionPreventionForExplorer-OmaUri-End -->
+
+<!-- TurnOffDataExecutionPreventionForExplorer-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Disabling data execution prevention can allow certain legacy plug-in applications to function without terminating Explorer.
+<!-- TurnOffDataExecutionPreventionForExplorer-Description-End -->
 
-<!--/Description-->
+<!-- TurnOffDataExecutionPreventionForExplorer-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TurnOffDataExecutionPreventionForExplorer-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Turn off Data Execution Prevention for Explorer*
--   GP name: *NoDataExecutionPrevention*
--   GP path: *File Explorer*
--   GP ADMX file name: *Explorer.admx*
+<!-- TurnOffDataExecutionPreventionForExplorer-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- TurnOffDataExecutionPreventionForExplorer-DFProperties-End -->
 
-<hr/>
+<!-- TurnOffDataExecutionPreventionForExplorer-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="fileexplorer-turnoffheapterminationoncorruption"></a>**FileExplorer/TurnOffHeapTerminationOnCorruption**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | NoDataExecutionPrevention |
+| Friendly Name | Turn off Data Execution Prevention for Explorer |
+| Location | Computer Configuration |
+| Path | WindowsComponents > File Explorer |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
+| Registry Value Name | NoDataExecutionPrevention |
+| ADMX File Name | Explorer.admx |
+<!-- TurnOffDataExecutionPreventionForExplorer-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- TurnOffDataExecutionPreventionForExplorer-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TurnOffDataExecutionPreventionForExplorer-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- TurnOffDataExecutionPreventionForExplorer-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- TurnOffHeapTerminationOnCorruption-Begin -->
+## TurnOffHeapTerminationOnCorruption
 
-> [!div class = "checklist"]
-> * Device
+<!-- TurnOffHeapTerminationOnCorruption-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- TurnOffHeapTerminationOnCorruption-Applicability-End -->
 
-<hr/>
+<!-- TurnOffHeapTerminationOnCorruption-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/FileExplorer/TurnOffHeapTerminationOnCorruption
+```
+<!-- TurnOffHeapTerminationOnCorruption-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- TurnOffHeapTerminationOnCorruption-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Disabling heap termination on corruption can allow certain legacy plug-in applications to function without terminating Explorer immediately, although Explorer may still terminate unexpectedly later.
+<!-- TurnOffHeapTerminationOnCorruption-Description-End -->
 
-<!--/Description-->
+<!-- TurnOffHeapTerminationOnCorruption-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TurnOffHeapTerminationOnCorruption-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Turn off heap termination on corruption*
--   GP name: *NoHeapTerminationOnCorruption*
--   GP path: *File Explorer*
--   GP ADMX file name: *Explorer.admx*
+<!-- TurnOffHeapTerminationOnCorruption-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- TurnOffHeapTerminationOnCorruption-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="fileexplorer-setallowedfolderlocations"></a>**FileExplorer/SetAllowedFolderLocations**  
+<!-- TurnOffHeapTerminationOnCorruption-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | NoHeapTerminationOnCorruption |
+| Friendly Name | Turn off heap termination on corruption |
+| Location | Computer Configuration |
+| Path | WindowsComponents > File Explorer |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
+| Registry Value Name | NoHeapTerminationOnCorruption |
+| ADMX File Name | Explorer.admx |
+<!-- TurnOffHeapTerminationOnCorruption-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- TurnOffHeapTerminationOnCorruption-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TurnOffHeapTerminationOnCorruption-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- TurnOffHeapTerminationOnCorruption-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- FileExplorer-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- FileExplorer-CspMoreInfo-End -->
 
-<hr/>
+<!-- FileExplorer-End -->
 
-<!--/Scope-->
-
-<!--Description-->
-
-This policy configures the folders that the user can enumerate and access in the File Explorer.
-
-<!--/Description-->
-
-<!--SupportedValues-->
-The following list shows the supported values:
-
-- 0: All folders
-- 15:Desktop, Documents, Pictures, and Downloads
-- 31:Desktop, Documents, Pictures, Downloads, and Network
-- 47:This PC (local drive), [Desktop, Documents, Pictures], and Downloads
-- 63:This PC, [Desktop, Documents, Pictures], Downloads, and Network
-
-<!--/SupportedValues-->
-
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Configure which folders the user can enumerate and access to in File Explorer*
--   GP name: *SetAllowedFolderLocations*
--   GP path: *File Explorer*
--   GP ADMX file name: *Explorer.admx*
-
-<!--/ADMXBacked-->
-
-<!--/Policy-->
-<hr/>
-
-<!--Policy-->
-<a href="" id="fileexplorer-setallowedstoragelocations"></a>**FileExplorer/SetAllowedStorageLocations**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-
-<hr/>
-
-<!--/Scope-->
-
-<!--Description-->
-
-This policy configures the folders that the user can enumerate and access in the File Explorer.
-
-<!--/Description-->
-
-<!--SupportedValues-->
-The following list shows the supported values:
-
-- 0: all storage locations
-- 1: Removable Drives
-- 2: Sync roots
-- 3: Removable Drives, Sync roots, local drive
-
-<!--/SupportedValues-->
-
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Configure which folders the user can enumerate and access to in File Explorer*
--   GP name: *SetAllowedStorageLocations*
--   GP path: *File Explorer*
--   GP ADMX file name: *Explorer.admx*
-
-<!--/ADMXBacked-->
-
-<!--/Policy-->
-<hr/>
-
-<!--/Policies-->
-
-
-## Related topics
+## Related articles
 
 [Policy configuration service provider](policy-configuration-service-provider.md)

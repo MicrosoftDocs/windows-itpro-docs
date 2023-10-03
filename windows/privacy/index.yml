@@ -7,15 +7,12 @@ brand: m365
 metadata:
   title: Windows Privacy
   description: Learn about how privacy is managed in Windows.
-  services: windows
-  ms.prod: windows
+  ms.prod: windows-client
   ms.topic: hub-page # Required
-  ms.collection:
-    - M365-security-compliance
-    - highpri
-  author: dansimp
-  ms.author: dansimp
-  manager: dansimp
+  ms.collection: highpri
+  author: DHB-MSFT
+  ms.author: danbrown
+  manager: laurawi
   ms.date: 09/08/2021 #Required; mm/dd/yyyy format.
   ms.localizationpriority: high
 
@@ -47,7 +44,7 @@ productDirectory:
       # imageSrc should be square in ratio with no whitespace
       imageSrc: /media/common/i_extend.svg
       summary: Learn more about basic Windows diagnostic data events and fields collected.
-      url: required-windows-11-diagnostic-events-and-fields.md
+      url: required-diagnostic-events-fields-windows-11-22H2.md
     # Card
     - title: Windows 10 required diagnostic data
       imageSrc: /media/common/i_build.svg
@@ -68,50 +65,50 @@ productDirectory:
 #     # Card
 #     - title: cardtitle1
 #       links:
-#         - url: file1.md OR https://docs.microsoft.com/file1
+#         - url: file1.md OR https://learn.microsoft.com/file1
 #           itemType: itemType
 #           text: linktext1
-#         - url: file2.md OR https://docs.microsoft.com/file2
+#         - url: file2.md OR https://learn.microsoft.com/file2
 #           itemType: itemType
 #           text: linktext2
-#         - url: file3.md OR https://docs.microsoft.com/file3
+#         - url: file3.md OR https://learn.microsoft.com/file3
 #           itemType: itemType
 #           text: linktext3
 #       # footerLink (optional)
 #       footerLink:
-#         url: filefooter.md OR https://docs.microsoft.com/filefooter
+#         url: filefooter.md OR https://learn.microsoft.com/filefooter
 #         text: See more
 #     # Card
 #     - title: cardtitle2
 #       links:
-#         - url: file1.md OR https://docs.microsoft.com/file1
+#         - url: file1.md OR https://learn.microsoft.com/file1
 #           itemType: itemType
 #           text: linktext1
-#         - url: file2.md OR https://docs.microsoft.com/file2
+#         - url: file2.md OR https://learn.microsoft.com/file2
 #           itemType: itemType
 #           text: linktext2
-#         - url: file3.md OR https://docs.microsoft.com/file3
+#         - url: file3.md OR https://learn.microsoft.com/file3
 #           itemType: itemType
 #           text: linktext3
 #       # footerLink (optional)
 #       footerLink:
-#         url: filefooter.md OR https://docs.microsoft.com/filefooter
+#         url: filefooter.md OR https://learn.microsoft.com/filefooter
 #         text: See more
 #     # Card
 #     - title: cardtitle3
 #       links:
-#         - url: file1.md OR https://docs.microsoft.com/file1
+#         - url: file1.md OR https://learn.microsoft.com/file1
 #           itemType: itemType
 #           text: linktext1
-#         - url: file2.md OR https://docs.microsoft.com/file2
+#         - url: file2.md OR https://learn.microsoft.com/file2
 #           itemType: itemType
 #           text: linktext2
-#         - url: file3.md OR https://docs.microsoft.com/file3
+#         - url: file3.md OR https://learn.microsoft.com/file3
 #           itemType: itemType
 #           text: linktext3
 #       # footerLink (optional)
 #       footerLink:
-#         url: filefooter.md OR https://docs.microsoft.com/filefooter
+#         url: filefooter.md OR https://learn.microsoft.com/filefooter
 #         text: See more
 
 # # tools section (optional)
@@ -122,15 +119,15 @@ productDirectory:
 #     # Card
 #     - title: cardtitle1
 #       # imageSrc should be square in ratio with no whitespace
-#       imageSrc: ./media/index/image1.svg OR https://docs.microsoft.com/media/logos/image1.svg
+#       imageSrc: ./media/index/image1.svg OR https://learn.microsoft.com/media/logos/image1.svg
 #       url: file1.md
 #     # Card
 #     - title: cardtitle2
-#       imageSrc: ./media/index/image2.svg OR https://docs.microsoft.com/media/logos/image2.svg
+#       imageSrc: ./media/index/image2.svg OR https://learn.microsoft.com/media/logos/image2.svg
 #       url: file2.md
 #     # Card
 #     - title: cardtitle3
-#       imageSrc: ./media/index/image3.svg OR https://docs.microsoft.com/media/logos/image3.svg
+#       imageSrc: ./media/index/image3.svg OR https://learn.microsoft.com/media/logos/image3.svg
 #       url: file3.md
 
 # additionalContent section (optional)
@@ -144,15 +141,15 @@ productDirectory:
 #         # Card
 #         - title: cardtitle1
 #           summary: cardsummary1
-#           url: file1.md OR https://docs.microsoft.com/file1
+#           url: file1.md OR https://learn.microsoft.com/file1
 #         # Card
 #         - title: cardtitle2
 #           summary: cardsummary2
-#           url: file1.md OR https://docs.microsoft.com/file2
+#           url: file1.md OR https://learn.microsoft.com/file2
 #         # Card
 #         - title: cardtitle3
 #           summary: cardsummary3
-#           url: file1.md OR https://docs.microsoft.com/file3
+#           url: file1.md OR https://learn.microsoft.com/file3
 #   # footer (optional)
 #   footer: "footertext [linktext](/footerfile)"
 

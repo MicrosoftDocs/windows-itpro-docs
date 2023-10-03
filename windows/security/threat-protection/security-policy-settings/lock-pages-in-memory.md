@@ -1,26 +1,26 @@
 ---
-title: Lock pages in memory (Windows 10)
+title: Lock pages in memory 
 description: Describes the best practices, location, values, policy management, and security considerations for the Lock pages in memory security policy setting.
 ms.assetid: cc724979-aec0-496d-be4e-7009aef660a3
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Lock pages in memory
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management, and security considerations for the **Lock pages in memory** security policy setting.
@@ -33,7 +33,8 @@ Normally, an application running on Windows can negotiate for more physical memo
 
 Enabling this policy setting for a specific account (a user account or a process account for an application) prevents paging of the data. Thereby, the amount of memory that Windows can reclaim under pressure is limited. This limitation could lead to performance degradation.
 
->**Note:**  By configuring this policy setting, the performance of the Windows operating system will differ depending on if applications are running on 32-bit or 64-bit systems, and if they are virtualized images. Performance will also differ between earlier and later versions of the Windows operating system.
+> [!NOTE]
+> By configuring this policy setting, the performance of the Windows operating system will differ depending on if applications are running on 32-bit or 64-bit systems, and if they are virtualized images. Performance will also differ between earlier and later versions of the Windows operating system.
  
 Constant: SeLockMemoryPrivilege
 

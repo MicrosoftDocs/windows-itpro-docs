@@ -1,16 +1,20 @@
 ---
 title: Help protect data with Cortana and WIP (Windows)
 description: An optional test scenario about how to use Cortana at work with Windows Information Protection (WIP).
-ms.prod: w10
+ms.prod: windows-client
+ms.collection: tier3
 author: aczechowski
 ms.localizationpriority: medium
 ms.author: aaroncz
 ms.date: 10/05/2017
 ms.reviewer: 
-manager: dougeby
+manager: aaroncz
+ms.technology: itpro-configure
 ---
 
 # Test scenario 7 - Use Cortana and Windows Information Protection (WIP) to help protect your organization’s data on a device
+<!--Using include for Cortana in Windows deprecation -->
+[!INCLUDE [Deprecation of Cortana in Windows](./includes/cortana-deprecation.md)]
 
 >[!IMPORTANT]
 >The data created as part of these scenarios will be uploaded to Microsoft’s Cloud to help Cortana learn and help your employees. This is the same info that Cortana uses in the consumer offering.

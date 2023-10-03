@@ -1,17 +1,18 @@
 ---
-title: 4908(S) Special Groups Logon table modified. (Windows 10)
+title: 4908(S) Special Groups Logon table modified. 
 description: Describes security event 4908(S) Special Groups Logon table modified. This event is generated when the Special Groups Logon table is modified.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
-author: dansimp
+ms.localizationpriority: low
+author: vinaypamnani-msft
 ms.date: 09/08/2021
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.technology: windows-sec
+manager: aaroncz
+ms.author: vinpa
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 4908(S): Special Groups Logon table modified.
@@ -70,7 +71,7 @@ For more information about Special Groups auditing, see [4908(S): Special Groups
 
 ***Field Descriptions:***
 
-**Special Groups** \[Type = UnicodeString\]**:** contains current list of SIDs (groups or accounts) which are members of Special Groups. Event Viewer automatically tries to resolve SIDs and show the account name. If the SID cannot be resolved, you will see the source data in the event.
+**Special Groups** \[Type = UnicodeString\]**:** contains current list of SIDs (groups or accounts) which are members of Special Groups. Event Viewer automatically tries to resolve SIDs and show the account name. If the SID can't be resolved, you'll see the source data in the event.
 
 > [!NOTE]
 > A **security identifier (SID)** is a unique value of variable length used to identify a trustee (security principal). Each account has a unique SID that is issued by an authority, such as an Active Directory domain controller, and stored in a security database. Each time a user logs on, the system retrieves the SID for that user from the database and places it in the access token for that user. The system uses the SID in the access token to identify the user in all subsequent interactions with Windows security. When a SID has been used as the unique identifier for a user or group, it cannot ever be used again to identify another user or group. For more information about SIDs, see [Security identifiers](/windows/access-protection/access-control/security-identifiers).
@@ -83,7 +84,7 @@ For more information about Special Groups auditing, see [4908(S): Special Groups
 
 For 4908(S): Special Groups Logon table modified.
 
--   If you use the Special Groups feature, then this event should be always monitored, especially on high value assets or computers. If this change was not planned, investigate the reason for the change.
+-   If you use the Special Groups feature, then this event should be always monitored, especially on high value assets or computers. If this change wasn't planned, investigate the reason for the change.
 
 -   If you don’t use the Special Groups feature, then this event should be always monitored because it indicates use of the Special Groups feature outside of your standard procedures.
 

@@ -2,11 +2,13 @@
 title: How to Modify Client Configuration by Using Windows PowerShell (Windows 10/11)
 description: Learn how to modify the Application Virtualization (App-V) client configuration by using Windows PowerShell.
 author: aczechowski
-ms.prod: w10
+ms.prod: windows-client
 ms.date: 04/19/2017
 ms.reviewer: 
-manager: dougeby
+manager: aaroncz
 ms.author: aaroncz
+ms.collection: must-keep
+ms.technology: itpro-apps
 ---
 
 # How to Modify Client Configuration by Using Windows PowerShell
