@@ -87,7 +87,7 @@ Here's a list of key scenarios supported by Web sign-in, and a brief animation s
 :::row-end:::
 
 > [!TIP]
-> When used in conjuction with *Windows Hello for Business passworless*, you can hide the password credential provider from the lock screen as well as in-session authentication scenarios. This enables a truly passwordless Windows experience.
+> When used in conjuction with *Windows Hello for Business passwordless*, you can hide the password credential provider from the lock screen as well as in-session authentication scenarios. This enables a truly passwordless Windows experience.
 To learn more:
 - [Enable passwordless sign-in with Microsoft Authenticator][AAD-1]
 - [Passwordless authentication options for Microsoft Entra ID][AAD-2]
