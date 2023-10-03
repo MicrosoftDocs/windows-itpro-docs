@@ -58,7 +58,7 @@ Remove-BitLockerKeyProtector <volume>: -KeyProtectorID "{GUID}"
 > [!NOTE]
 > The BitLocker cmdlet requires the key protector GUID enclosed in quotation marks to execute. Ensure the entire GUID, with braces, is included in the command.
 
-#### [:::image type="icon" source="images/cmd.png"::: **cmd**](#tab/cmd)
+#### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
 
 ```cmd
 C:\>manage-bde -status
@@ -79,7 +79,7 @@ Volume C: [Local Disk]
         Numerical Password
 ```
 
-#### [:::image type="icon" source="images/locked-drive.svg"::: **Settings**](#tab/controlpanel)
+#### [:::image type="icon" source="images/controlpanel.svg"::: **Control Panel**](#tab/controlpanel)
 
 ---
 
@@ -147,9 +147,8 @@ Enable-BitLockerKeyProtector E: -PasswordProtector -Password $pw
 
 > [!NOTE]
 > The BitLocker cmdlet requires the key protector GUID enclosed in quotation marks to execute. Ensure the entire GUID, with braces, is included in the command.
-<!--
-#### [:::image type="icon" source="images/cmd.png"::: **cmd**](#tab/cmd)-->
-#### [Command prompt](#tab/cmd)
+
+#### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
 
 Data volumes use the same syntax for encryption as operating system volumes but they don't require protectors for the operation to complete. Encrypting data volumes can be done using the base command:
 
@@ -163,9 +162,8 @@ A common protector for a data volume is the password protector. In the example b
 manage-bde.exe -protectors -add -pw C:
 manage-bde.exe -on C:
 ```
-<!--
-#### [:::image type="icon" source="images/locked-drive.svg"::: **Control panel**](#tab/controlpanel)-->
-#### [Control panel](#tab/controlpanel)
+#### [:::image type="icon" source="images/controlpanel.svg"::: **Control Panel**](#tab/controlpanel)
+
 ---
 
 ## BitLocker Repair Tool
