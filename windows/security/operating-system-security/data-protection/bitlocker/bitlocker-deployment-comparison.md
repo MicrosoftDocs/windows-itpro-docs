@@ -12,7 +12,7 @@ This article compares the BitLocker management options between Microsoft Intune 
 | Requirements | Microsoft Intune | Microsoft Configuration Manager |
 |--|--|--|
 | *Supported Windows client editions* | Pro, Enterprise, Pro Education, Education | Pro, Enterprise, Pro Education, Education |
-| *Windows server support* | | ✅ |
+| *Windows server support* | ❌ | ❌ |
 | *Supported domain-joined status* | Microsoft Entra joined and hybrid joined | Active Directory-joined, Microsoft Entra hybrid joined |
 | *Permissions required to manage policies* | Endpoint security manager or custom | Full administrator or custom |
 | *Cloud or on premises* | Cloud | On premises |
@@ -34,9 +34,9 @@ This article compares the BitLocker management options between Microsoft Intune 
 | *Support for organization unique IDs* | ✅ | ✅ |
 | *Self-service recovery* | ✅ | ✅ |
 | *Recovery password rotation for fixed and operating environment drives* | ✅ | ✅ |
-| *Wait to complete encryption until recovery information is backed up to Microsoft Entra ID* | ✅ |  |
+| *Wait to complete encryption until recovery information is backed up to Microsoft Entra ID* | ✅ | ❌ |
 | *Wait to complete encryption until recovery information is backed up to Active Directory* | ✅ | ✅ |
-| *Allow or deny Data Recovery Agent* | ✅ | |
-| *Unlock a volume using certificate with custom object identifier* |  | ✅ |
+| *Allow or deny Data Recovery Agent* | ✅ | ❌ |
+| *Unlock a volume using certificate with custom object identifier* | ❌ | ❌ |
 | *Prevent memory overwrite on restart* | ✅ | ✅ |
 | *Manage auto-unlock functionality* | ✅ | ✅ |

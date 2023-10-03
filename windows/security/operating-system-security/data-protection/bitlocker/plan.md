@@ -17,15 +17,11 @@ To plan a BitLocker deployment, understand the current environment. Perform an i
 
 To help document the organization's current disk encryption security policies, answer the following questions:
 
-1. Are there policies to determine which computers will use BitLocker and which computers won't use BitLocker?
-
-2. What policies exist to control recovery password and recovery key storage?
-
-3. What are the policies for validating the identity of users who need to perform BitLocker recovery?
-
-4. What policies exist to control who in the organization has access to recovery data?
-
-5. What policies exist to control computer decommissioning or retirement?
+- Are there policies to determine which computers will use BitLocker and which computers won't use BitLocker?
+- What policies exist to control recovery password and recovery key storage?
+- What are the policies for validating the identity of users who need to perform BitLocker recovery?
+- What policies exist to control who in the organization has access to recovery data?
+- What policies exist to control computer decommissioning or retirement?
 
 ## Encryption keys and authentication
 
@@ -122,7 +118,7 @@ Windows RE can also be used from boot media other than the local hard disk. If W
 
 ## BitLocker provisioning
 
-In Windows Vista and Windows 7, BitLocker was provisioned after the installation for system and data volumes. It used the `manage-bde` command line interface or the Control Panel user interface. With newer operating systems, BitLocker can be provisioned before the operating system is installed. Preprovisioning requires the computer have a TPM.
+BitLocker can be provisioned before the operating system is installed. Preprovisioning requires the computer have a TPM.
 
 To check the BitLocker status of a particular volume, administrators can look at the drive status in the BitLocker control panel applet or Windows Explorer. The "Waiting For Activation" status with a yellow exclamation icon means that the drive was preprovisioned for BitLocker. This status means that there was only a clear protector used when encrypting the volume. In this case, the volume isn't protected, and needs to have a secure key added to the volume before the drive is considered fully protected. Administrators can use the control panel options, the **manage-bde** tool, or WMI APIs to add an appropriate key protector. The volume status will be updated.
 
