@@ -1,9 +1,8 @@
 ---
 title: Windows Hello for Business cloud-only deployment
 description: Learn how to configure Windows Hello for Business in a cloud-only deployment scenario.
-ms.date: 06/23/2021
+ms.date: 10/03/2023
 ms.topic: how-to
-ms.custom: has-azure-ad-ps-ref
 ---
 # Cloud-only deployment
 
@@ -11,34 +10,34 @@ ms.custom: has-azure-ad-ps-ref
 
 ## Introduction
 
-When you Azure Active Directory (Azure AD) join a Windows device, the system prompts you to enroll in Windows Hello for Business by default. If you want to use Windows Hello for Business in your cloud-only environment, there's no additional configuration needed.
+When you Microsoft Entra join a Windows device, the system prompts you to enroll in Windows Hello for Business by default. If you want to use Windows Hello for Business in a cloud-only environment, there's no additional configuration needed.
 
-You may wish to disable the automatic Windows Hello for Business enrollment prompts if you aren't ready to use it in your environment. Instructions on how to disable Windows Hello for Business enrollment in a cloud only environment are included below.
+You may wish to disable the automatic Windows Hello for Business enrollment prompts if you aren't ready to use it in your environment. This article describes how to disable Windows Hello for Business enrollment in a cloud only environment.
 
 > [!NOTE]
-> During the out-of-box experience (OOBE) flow of an Azure AD join, you will see a provisioning PIN when you don't have Intune. You can always cancel the PIN screen and set this cancellation with registry keys to prevent future prompts.
+> During the out-of-box experience (OOBE) flow of an Microsoft Entra join, you will see a provisioning PIN when you don't have Intune. You can always cancel the PIN screen and set this cancellation with registry keys to prevent future prompts.
 
 ## Prerequisites
 
-Cloud only deployments will use Azure AD multi-factor authentication (MFA) during Windows Hello for Business (WHfB) enrollment and there's no additional MFA configuration needed. If you aren't already registered in Azure AD MFA, you'll be guided through the MFA registration as part of the Windows Hello for Business enrollment process.
+Cloud only deployments will use Microsoft Entra multifactor authentication (MFA) during Windows Hello for Business enrollment, and there's no additional MFA configuration needed. If you aren't already registered in MFA, you'll be guided through the MFA registration as part of the Windows Hello for Business enrollment process.
 
 The necessary Windows Hello for Business prerequisites are located at [Cloud Only Deployment](hello-identity-verification.md#azure-ad-cloud-only-deployment).
 
-Also note that it's possible for federated domains to enable the *Supports MFA* flag in your federated domain settings. This flag tells Azure AD that the federated IDP will perform the MFA challenge.
+It's possible for federated domains to configure the *FederatedIdpMfaBehavior* flag. The flag instructs Microsoft Entra ID to accept, enforce, or reject the MFA challenge from the federated IdP. For more information, see [federatedIdpMfaBehavior values](/graph/api/resources/internaldomainfederation?view=graph-rest-1.0#federatedidpmfabehavior-values). To check this setting, use the following PowerShell command:
 
-Check and view this setting with the following MSOnline PowerShell command:
+```powershell
+Connect-MgGraph
+$DomainId = "<your federated domain name>"
+Get-MgDomainFederationConfiguration -DomainId $DomainId |fl
+```
 
-`Get-MsolDomainFederationSettings -DomainName <your federated domain name>`
+To reject the MFA claim from the federated IdP, use the following command. This change impacts all MFA scenarios for the federated domain.
 
-To disable this setting, run the following command. This change impacts ALL Azure AD MFA scenarios for this federated domain.
+```powershell
+Update-MgDomainFederationConfiguration -DomainId $DomainId -FederatedIdpMfaBehavior rejectMfaByFederatedIdp
+```
 
-`Set-MsolDomainFederationSettings -DomainName <your federated domain name> -SupportsMfa $false`
-
-Example:
-
-`Set-MsolDomainFederationSettings -DomainName contoso.com -SupportsMfa $false`
-
-If you use this Supports MFA switch with value **True**, you must verify that your federated IDP is correctly configured and working with the MFA adapter and provider used by your IDP.
+If you use configure the flag with a value of either `acceptIfMfaDoneByFederatedIdp` (default) or `enforceMfaByFederatedIdp`, you must verify that your federated IDP is correctly configured and working with the MFA adapter and provider used by your IdP.
 
 ## Use Intune to disable Windows Hello for Business enrollment
 
@@ -63,7 +62,7 @@ If you don't use Intune in your organization, then you can disable Windows Hello
 
 Intune uses the following registry keys: **`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Policies\PassportForWork\<Tenant-ID>\Device\Policies`**
 
-To look up your Tenant ID, see [How to find your Azure Active Directory tenant ID](/azure/active-directory/fundamentals/how-to-find-tenant) or try the following, ensuring to sign-in with your organization's account:
+To look up your Tenant ID, see [How to find your Microsoft Entra tenant ID](/azure/active-directory/fundamentals/how-to-find-tenant) or try the following, ensuring to sign-in with your organization's account:
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/organization?$select=id
@@ -83,12 +82,3 @@ These registry settings can be applied from Local or Group Policies:
 - Value = **0** for Disable or Value = **1** for Enable
 
 If there's a conflicting Device policy and User policy, the User policy would take precedence. We don't recommend creating Local/GPO registry settings that could conflict with an Intune policy. This conflict could lead to unexpected results.
-
-## Related reference documents for Azure AD join scenarios
-
-- [Azure AD-joined devices](/azure/active-directory/devices/concept-azure-ad-join)
-- [Plan your Azure Active Directory device deployment](/azure/active-directory/devices/plan-device-deployment)
-- [How to: Plan your Azure AD join implementation](/azure/active-directory/devices/azureadjoin-plan)
-- [How to manage the local administrators group on Azure AD-joined devices](/azure/active-directory/devices/assign-local-admin)
-- [Manage device identities using the Azure portal](/azure/active-directory/devices/device-management-azure-portal)
-- [Azure AD Join Single Sign-on Deployment](hello-hybrid-aadj-sso.md)
