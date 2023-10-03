@@ -37,15 +37,6 @@ For the operating system volume the **BitLocker Drive Encryption Wizard** presen
 
 1. When the **BitLocker Drive Encryption Wizard**  first launches, it verifies the computer meets the BitLocker system requirements for encrypting an operating system volume. By default, the system requirements are:
 
-    |Requirement|Description|
-    |--- |--- |
-    |Hardware configuration|The computer must meet the minimum requirements for the supported Windows versions.|
-    |Operating system|BitLocker is an optional feature that can be installed by Server Manager on Windows Server 2012 and later.|
-    |Hardware TPM|TPM version 1.2 or 2.0. <br><br> A TPM isn't required for BitLocker; however, only a computer with a TPM can provide the additional security of pre-startup system integrity verification and multifactor authentication.|
-    |UEFI firmware/BIOS configuration|<ul><li> A Trusted Computing Group (TCG)-compliant BIOS or UEFI firmware.</li> <li> The boot order must be set to start first from the hard disk, and not the USB or CD drives.</li>  <li> The firmware must be able to read from a USB flash drive during startup.</li></ul>|
-    |File system| One FAT32 partition for the system drive and one NTFS partition for the operating system drive. This requirement is applicable for computers that boot natively with UEFI firmware. <br/> For computers with legacy BIOS firmware, at least two NTFS disk partitions, one for the system drive and one for the operating system drive. <br/> For either firmware, the system drive partition must be at least 350 megabytes (MB) and set as the active partition.|
-    |Hardware encrypted drive prerequisites (optional)|To use a hardware encrypted drive as the boot drive, the drive must be in the uninitialized state and in the security inactive state. In addition, the system must always boot with native UEFI version 2.3.1 or higher and the CSM (if any) disabled.|
-
     If the volume doesn't pass the initial configuration for BitLocker, the user is presented with an error dialog describing the appropriate actions to be taken.
 
 2. Upon passing the initial configuration, users may be prompted to enter a password for the volume, for example, if a TPM isn't available. If a TPM is available, the password screen will be skipped.
@@ -231,10 +222,6 @@ manage-bde.exe -protectors -add -pw C:
 manage-bde.exe -on C:
 ```
 
-## Encrypting volumes using the BitLocker Windows PowerShell cmdlets
-
-
-
 ## Checking BitLocker status
 
 To check the BitLocker status of a particular volume, administrators can look at the status of the drive in the BitLocker control panel applet, Windows Explorer, `manage-bde.exe` command-line tool, or Windows PowerShell cmdlets. Each option offers different levels of detail and ease of use. We'll look at each of the available methods in the following section.
@@ -256,31 +243,6 @@ Using the control panel, administrators can choose **Turn on BitLocker** to star
 The drive security window displays prior to changing the volume status. Selecting **Activate BitLocker** will complete the encryption process.
 
 Once BitLocker protector activation is completed, the completion notice is displayed.
-
-### Checking BitLocker status with `manage-bde.exe`
-
-Administrators who prefer a command-line interface can utilize `manage-bde.exe` to check volume status. Manage-bde is capable of returning more information about the volume than the graphical user interface tools in the control panel. For example, `manage-bde.exe` can display the BitLocker version in use, the encryption type, and the protectors associated with a volume.
-
-To check the status of a volume using `manage-bde.exe`, use the following command:
-
-```powershell
-manage-bde.exe -status <volume>
-```
-
-> [!NOTE]
-> If no volume letter is associated with the -status command, all volumes on the computer display their status.
-
-### Checking BitLocker status with Windows PowerShell
-
-Windows PowerShell commands offer another way to query BitLocker status for volumes. Like `manage-bde.exe`, Windows PowerShell includes the advantage of being able to check the status of a volume on a remote computer.
-
-Using the Get-BitLockerVolume cmdlet, each volume on the system displays its current BitLocker status. To get information that is more detailed on a specific volume, use the following command:
-
-```powershell
-Get-BitLockerVolume <volume> -Verbose | fl
-```
-
-This command displays information about the encryption method, volume type, key protectors, and more.
 
 ### Provisioning BitLocker during operating system deployment
 

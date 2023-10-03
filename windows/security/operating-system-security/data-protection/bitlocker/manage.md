@@ -13,6 +13,79 @@ BitLocker drive encryption tools include the two command-line tools *manage-bde.
 
 The tools can be used to perform any tasks that can be accomplished through the BitLocker control panel and are appropriate to use for automated deployments and other scripting scenarios.
 
+
+Follow the instructions below to configure your devices, selecting the option that best suits your needs.
+
+#### [:::image type="icon" source="images/powershell.png"::: **Intune**](#tab/powershell)
+
+Similar to manage-bde, the PowerShell cmdlets allow configuration beyond the options offered in the control panel. A good initial step is to determine the current state of the volume(s) on the computer. For example, to determine the current state of a volume you can use the `Get-BitLockerVolume` cmdlet, which provides information on the volume type, protectors, protection status, and other details.
+
+```powershell
+PS C:\> Get-BitLockerVolume C: | fl
+
+ComputerName         : DESKTOP
+MountPoint           : C:
+EncryptionMethod     : XtsAes128
+AutoUnlockEnabled    :
+AutoUnlockKeyStored  : False
+MetadataVersion      : 2
+VolumeStatus         : FullyEncrypted
+ProtectionStatus     : On
+LockStatus           : Unlocked
+EncryptionPercentage : 100
+WipePercentage       : 0
+VolumeType           : OperatingSystem
+CapacityGB           : 1000
+KeyProtector         : {Tpm, RecoveryPassword}
+```
+
+To remove the existing protectors prior to provisioning BitLocker on the volume, use the `Remove-BitLockerKeyProtector` cmdlet. Running this cmdlet requires the GUID associated with the protector to be removed.
+
+The following commands return the list of key protectors and GUIDS:
+
+```PowerShell
+$vol = Get-BitLockerVolume
+$keyprotectors = $vol.KeyProtector
+$keyprotectors
+```
+
+By using this information, the key protector for a specific volume can be removed using the command:
+
+```powershell
+Remove-BitLockerKeyProtector <volume>: -KeyProtectorID "{GUID}"
+```
+
+> [!NOTE]
+> The BitLocker cmdlet requires the key protector GUID enclosed in quotation marks to execute. Ensure the entire GUID, with braces, is included in the command.
+
+#### [:::image type="icon" source="images/cmd.png"::: **Intune**](#tab/cmd)
+
+```cmd
+C:\>manage-bde -status
+
+Volume C: [Local Disk]
+[OS Volume]
+
+    Size:                 1000 GB
+    BitLocker Version:    2.0
+    Conversion Status:    Used Space Only Encrypted
+    Percentage Encrypted: 100.0%
+    Encryption Method:    XTS-AES 128
+    Protection Status:    Protection On
+    Lock Status:          Unlocked
+    Identification Field: Unknown
+    Key Protectors:
+        TPM
+        Numerical Password
+```
+
+
+#### [:::image type="icon" source="images/locked-drive.svg"::: **Intune**](#tab/controlpanel)
+
+---
+
+
+
 ## Manage-bde
 
 Manage-bde is a command-line tool that can be used for scripting BitLocker operations. Manage-bde offers additional options not displayed in the BitLocker control panel. For a complete list of the `manage-bde.exe` options, see the [Manage-bde](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/ff829849(v=ws.11)) command-line reference.
@@ -25,13 +98,9 @@ Listed below are examples of basic valid commands for operating system volumes. 
 
 A good practice when using `manage-bde.exe` is to determine the volume status on the target system. Use the following command to determine volume status:
 
-```cmd
-manage-bde.exe -status
-```
 
-This command returns the volumes on the target, current encryption status, encryption method, and volume type (operating system or data) for each volume:
 
-![Using manage-bde to check encryption status.](images/manage-bde-status.png)
+This command returns the volumes on the target, current encryption status, encryption method, and volume type (operating system or data) for each volume.
 
 The following example illustrates enabling BitLocker on a computer without a TPM chip. Before beginning the encryption process, the startup key needed for BitLocker must be created and saved to a USB drive. When BitLocker is enabled for the operating system volume, BitLocker will need to access the USB flash drive to obtain the encryption key. In this example, the drive letter E represents the USB drive. Once the commands are run, it will prompt to reboot the computer to complete the encryption process.
 
@@ -127,45 +196,7 @@ The BitLocker PowerShell module enables administrators to integrate BitLocker op
 - `Suspend-BitLocker`
 - `Unlock-BitLocker`
 
-Similar to manage-bde, the PowerShell cmdlets allow configuration beyond the options offered in the control panel. A good initial step is to determine the current state of the volume(s) on the computer. For example, to determine the current state of a volume you can use the `Get-BitLockerVolume` cmdlet, which provides information on the volume type, protectors, protection status, and other details.
 
-```powershell
-PS C:\> Get-BitLockerVolume C: | fl
-
-ComputerName         : DESKTOP
-MountPoint           : C:
-EncryptionMethod     : XtsAes128
-AutoUnlockEnabled    :
-AutoUnlockKeyStored  : False
-MetadataVersion      : 2
-VolumeStatus         : FullyEncrypted
-ProtectionStatus     : On
-LockStatus           : Unlocked
-EncryptionPercentage : 100
-WipePercentage       : 0
-VolumeType           : OperatingSystem
-CapacityGB           : 1000
-KeyProtector         : {Tpm, RecoveryPassword}
-```
-
-To remove the existing protectors prior to provisioning BitLocker on the volume, use the `Remove-BitLockerKeyProtector` cmdlet. Running this cmdlet requires the GUID associated with the protector to be removed.
-
-The following commands return the list of key protectors and GUIDS:
-
-```PowerShell
-$vol = Get-BitLockerVolume
-$keyprotectors = $vol.KeyProtector
-$keyprotectors
-```
-
-By using this information, the key protector for a specific volume can be removed using the command:
-
-```powershell
-Remove-BitLockerKeyProtector <volume>: -KeyProtectorID "{GUID}"
-```
-
-> [!NOTE]
-> The BitLocker cmdlet requires the key protector GUID enclosed in quotation marks to execute. Ensure the entire GUID, with braces, is included in the command.
 
 ### Using the BitLocker Windows PowerShell cmdlets with operating system volumes
 
