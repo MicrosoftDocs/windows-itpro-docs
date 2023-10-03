@@ -209,7 +209,7 @@ For tasks related to creating outbound rules, see [Checklist: Creating Outbound 
 
 When creating an inbound or outbound rule, you should specify details about the app itself, the port range used, and important notes like creation date. Rules must be well-documented for ease of review both by you and other admins. We highly encourage taking the time to make the work of reviewing your firewall rules at a later date easier. And *never* create unnecessary holes in your firewall.
 
-## Configure Windows Firewall rules with WDAG tagging policies
+## Configure Windows Firewall rules with WDAC tagging policies
 
 Windows Firewall now supports the use of Windows Defender Application Control (WDAC) Application ID (AppID) tags in firewall rules. With this capability, Windows Firewall rules can now be scoped to an application or a group of applications by referencing process tags, without using absolute path or sacrificing security. There are two steps for this configuration: 
 
