@@ -132,8 +132,9 @@ The above command encrypts the drive using the TPM as the default protector. If 
 ## Manage data volumes
 
 Follow the instructions below to configure your devices, selecting the option that best suits your needs.
-
-#### [:::image type="icon" source="images/powershell.png"::: **PowerShell**](#tab/powershell)
+<!--
+#### [:::image type="icon" source="images/powershell.png"::: **PowerShell**](#tab/powershell)-->
+#### [PowerShell](#tab/powershell)
 
 Data volume encryption using Windows PowerShell is the same as for operating system volumes. Add the desired protectors prior to encrypting the volume. The following example adds a password protector to the E: volume using the variable $pw as the password. The $pw variable is held as a
 SecureString value to store the user-defined password.
@@ -146,8 +147,9 @@ Enable-BitLockerKeyProtector E: -PasswordProtector -Password $pw
 
 > [!NOTE]
 > The BitLocker cmdlet requires the key protector GUID enclosed in quotation marks to execute. Ensure the entire GUID, with braces, is included in the command.
-
-#### [:::image type="icon" source="images/cmd.png"::: **cmd**](#tab/cmd)
+<!--
+#### [:::image type="icon" source="images/cmd.png"::: **cmd**](#tab/cmd)-->
+#### [Command prompt](#tab/cmd)
 
 Data volumes use the same syntax for encryption as operating system volumes but they don't require protectors for the operation to complete. Encrypting data volumes can be done using the base command:
 
@@ -161,9 +163,9 @@ A common protector for a data volume is the password protector. In the example b
 manage-bde.exe -protectors -add -pw C:
 manage-bde.exe -on C:
 ```
-
-#### [:::image type="icon" source="images/locked-drive.svg"::: **Settings**](#tab/controlpanel)
-
+<!--
+#### [:::image type="icon" source="images/locked-drive.svg"::: **Control panel**](#tab/controlpanel)-->
+#### [Control panel](#tab/controlpanel)
 ---
 
 ## BitLocker Repair Tool
