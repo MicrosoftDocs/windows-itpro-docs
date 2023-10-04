@@ -59,14 +59,13 @@ The following table shows the methods and paths available to change the edition 
 > - Edition upgrades via Microsoft Store for Business are no longer available with the [retirement of Microsoft Store for Business](/announcements/microsoft-store-for-business-education-retiring).
 
 > [!TIP]
->
-> - For information on upgrading editions of Windows using Microsoft Intune, including switching out of S mode, see [Upgrade Windows 10/11 editions or switch out of S mode on devices using Microsoft Intune](/mem/intune/configuration/edition-upgrade-configure-windows-10).
->
-> - Edition upgrade is also possible using edition upgrade policy in Microsoft Configuration Manager. For more information, see [Upgrade Windows devices to a new edition with Configuration Manager](/mem/configmgr/compliance/deploy-use/upgrade-windows-version).
+> Edition upgrade is also possible using edition upgrade policy in Microsoft Configuration Manager. For more information, see [Upgrade Windows devices to a new edition with Configuration Manager](/mem/configmgr/compliance/deploy-use/upgrade-windows-version).
 
 ## Upgrade using modern device management (MDM)
 
 To upgrade desktop editions of Windows using MDM, enter the product key for the upgraded edition in the **UpgradeEditionWithProductKey** policy setting of the **WindowsLicensing** CSP. For more info, see [WindowsLicensing CSP](/windows/client-management/mdm/windowslicensing-csp).
+
+For information on upgrading editions of Windows using Microsoft Intune, including switching out of S mode, see [Upgrade Windows 10/11 editions or switch out of S mode on devices using Microsoft Intune](/mem/intune/configuration/edition-upgrade-configure-windows-10).
 
 ## Upgrade using a provisioning package
 
