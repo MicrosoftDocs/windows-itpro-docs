@@ -31,7 +31,7 @@ For a comprehensive list of all possible upgrade paths to Windows, see [Windows 
 
 The following table shows the methods and paths available to change the edition of Windows that is running on your computer.
 
-| Edition upgrade | MDM | Provisioning package | Command<br>line tool | Manually entering<br>product key |
+| Edition upgrade | MDM | Provisioning<br>package | Command<br>line tool | Manually entering<br>product key |
 |-----| ----- | ----- | ----- | ----- |
 | **Home > Pro** | ❌ | ❌ | ❌ | ☑️ |
 | **Home > Pro for Workstations** | ❌ | ❌ | ❌ | ☑️|
