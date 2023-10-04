@@ -568,3 +568,27 @@ Device name: DESKTOP-53O32QI
  Key id: 6a7e153f-d5e9-4547-96d6-174ff0d0bdb4
  BitLocker recovery key: 241846-437393-298925-499389-123255-123640-709808-330682
 ```
+### Repair tool
+
+The Repair Tool can reconstruct critical parts of the drive and salvage recoverable data, as long as a valid recovery password or recovery key is used to decrypt the data. If the BitLocker metadata data on the drive is corrupt, the backup key package in addition to the recovery password or recovery key must be supplied. With the key package and either the recovery password or recovery key, portions of a corrupted BitLocker-protected drive can be decrypted. Each key package works only for a drive that has the corresponding drive identifier
+
+> [!TIP]
+> If recovery information is not backed up to AD DS or if key packages need to be saved in an alternative way, use the following command to generate a key package for a volume:
+>
+> `manage-bde.exe -KeyPackage`
+
+The Repair Tool is intended for use when the operating system doesn't start or when the BitLocker Recovery Console can't be started. Use Repair-bde in the following conditions:
+
+- The drive is encrypted using BitLocker Drive Encryption
+- Windows doesn't start, or the BitLocker recovery console can't start
+- There isn't a backup copy of the data that is contained on the encrypted drive
+
+> [!NOTE]
+> Damage to the drive may not be related to BitLocker. Therefore, it is recommended to try other tools to help diagnose and resolve the problem with the drive before using the BitLocker Repair Tool. The Windows Recovery Environment (Windows RE) provides additional options to repair computers.
+
+The following limitations exist for Repair-bde:
+
+- it can't repair a drive that failed during the encryption or decryption process
+- it assumes that if the drive has any encryption, then the drive is fully encrypted
+
+For a complete list of the `repair-bde.exe` options, see the [Repair-bde reference](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/ff829851(v=ws.11)).

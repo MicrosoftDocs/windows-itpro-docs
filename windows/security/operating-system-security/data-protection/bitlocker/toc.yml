@@ -13,12 +13,12 @@ items:
       href: enable-server.md
     - name: Configure BitLocker
       href: configure.md
-    - name: BitLocker management tools
-      href: manage.md
-    - name: Protect cluster shared volumes and storage area networks with BitLocker
-      href: csv-san.md
+    - name: BitLocker operations guide
+      href: operations-guide.md
     - name: Network Unlock
       href: network-unlock.md
+    - name: Protect cluster shared volumes and storage area networks with BitLocker
+      href: csv-san.md
     - name: BitLocker Recovery Guide
       href: recovery-guide.md
     - name: BitLocker Recovery Password Viewer

@@ -1,13 +1,13 @@
 ---
-title: BitLocker management tools
-description: Learn how to use different tools to operate BitLocker.
+title: BitLocker operations guide
+description: Learn how to use different tools to manage and operate BitLocker.
 ms.collection: 
   - tier1
 ms.topic: how-to
 ms.date: 07/25/2023
 ---
 
-# BitLocker management tools
+# BitLocker operations guide
 
 There are differnt tools and options to manage and operate BitLocker:
 
@@ -30,31 +30,6 @@ The BitLocker drive encryption tools include the two command-line tools:
 
 - *Configuration Tool* (`manage-bde.exe`) can be used for scripting BitLocker operations, offering options that aren't present in the BitLocker Control Panel applet. For a complete list of the `manage-bde.exe` options, see the [Manage-bde reference](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/ff829849(v=ws.11))
 - *Repair Tool* (`repair-bde.exe`) is useful for disaster recovery scenarios, in which a BitLocker protected drive can't be unlocked normally or using the recovery console
-
-### Repair tool
-
-The Repair Tool can reconstruct critical parts of the drive and salvage recoverable data, as long as a valid recovery password or recovery key is used to decrypt the data. If the BitLocker metadata data on the drive is corrupt, the backup key package in addition to the recovery password or recovery key must be supplied. With the key package and either the recovery password or recovery key, portions of a corrupted BitLocker-protected drive can be decrypted. Each key package works only for a drive that has the corresponding drive identifier
-
-> [!TIP]
-> If recovery information is not backed up to AD DS or if key packages need to be saved in an alternative way, use the following command to generate a key package for a volume:
->
-> `manage-bde.exe -KeyPackage`
-
-The Repair Tool is intended for use when the operating system doesn't start or when the BitLocker Recovery Console can't be started. Use Repair-bde in the following conditions:
-
-- The drive is encrypted using BitLocker Drive Encryption
-- Windows doesn't start, or the BitLocker recovery console can't start
-- There isn't a backup copy of the data that is contained on the encrypted drive
-
-> [!NOTE]
-> Damage to the drive may not be related to BitLocker. Therefore, it is recommended to try other tools to help diagnose and resolve the problem with the drive before using the BitLocker Repair Tool. The Windows Recovery Environment (Windows RE) provides additional options to repair computers.
-
-The following limitations exist for Repair-bde:
-
-- it can't repair a drive that failed during the encryption or decryption process
-- it assumes that if the drive has any encryption, then the drive is fully encrypted
-
-For a complete list of the `repair-bde.exe` options, see the [Repair-bde reference](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/ff829851(v=ws.11)).
 
 ## Example: check the BitLocker status
 
@@ -257,22 +232,17 @@ To start encryption for a volume, select **Turn on BitLocker** for the appropria
 
 For the operating system volume the **BitLocker Drive Encryption Wizard** presents several screens that prompt for options while it performs several actions:
 
-1. When the **BitLocker Drive Encryption Wizard**  first launches, it verifies the computer meets the BitLocker system requirements for encrypting an operating system volume. By default, the system requirements are:
-
-    If the volume doesn't pass the initial configuration for BitLocker, the user is presented with an error dialog describing the appropriate actions to be taken.
-
-2. Upon passing the initial configuration, users may be prompted to enter a password for the volume, for example, if a TPM isn't available. If a TPM is available, the password screen will be skipped.
-
-3. After the initial configuration/password screens, a recovery key will be generated. The **BitLocker Drive Encryption Wizard** will prompt for a location to save the recovery key. A BitLocker recovery key is a special key that is created when BitLocker Drive Encryption is turned on for the first time on each drive that is encrypted. The recovery key can be used to gain access to the computer if:
-
+1. When the **BitLocker Drive Encryption Wizard**  first launches, it verifies the computer meets the BitLocker system requirements for encrypting an operating system volume
+1. Upon passing the initial configuration, users are prompted to enter a password for the volume if a TPM isn't available. If a TPM is available, the password screen is skipped
+1. After the initial configuration/password screens, a recovery key will be generated. The **BitLocker Drive Encryption Wizard** will prompt for a location to save the recovery key. A BitLocker recovery key is a special key that is created when BitLocker Drive Encryption is turned on for the first time on each drive that is encrypted. The recovery key can be used to gain access to the device if:
    - The drive that Windows is installed on (the operating system drive) is encrypted using BitLocker Drive Encryption
    - BitLocker detects a condition that prevents it from unlocking the drive when the computer is starting up
 
-    A recovery key can also be used to gain access to the files and folders on a removable data drive (such as an external hard drive or USB flash drive) that is encrypted using BitLocker To Go, if for some reason the password is forgotten or the computer can't access the drive.
+    A recovery key can also be used to gain access to the files and folders on a removable data drive (such as an external hard drive or USB flash drive) that is encrypted using BitLocker, if for some reason the password is forgotten or the device can't access the drive.
 
     The recovery key can be stored using the following methods:
 
-   - **Save to your Azure AD account** (if applicable)
+   - **Save to your Microsoft Entra ID account** or **Microsoft Account** (if applicable)
    - **Save to a USB flash drive**
    - **Save to a file** - the file needs to be saved to a location that isn't on the computer itself such as a network folder or OneDrive
    - **Print the recovery key**
@@ -284,15 +254,15 @@ For the operating system volume the **BitLocker Drive Encryption Wizard** presen
    - An encrypted volume
 
     > [!TIP]
-    > Ideally, a computer's recovery key should be stored separate from the computer itself.
+    > Ideally, a recovery key should be stored separate from the device itself.
 
     > [!NOTE]
     > After a recovery key is created, the BitLocker control panel can be used to make additional copies of the recovery key.
 
-4. The **BitLocker Drive Encryption Wizard** will then prompt how much of the drive to encrypt. The **BitLocker Drive Encryption Wizard** will have two options that determine how much of the drive is encrypted:
+1. The **BitLocker Drive Encryption Wizard** prompts how much of the drive to encrypt. The **BitLocker Drive Encryption Wizard** has two options that determine how much of the drive is encrypted:
 
-   - **Encrypt used disk space only** - Encrypts only disk space that contains data.
-   - **Encrypt entire drive** - Encrypts the entire volume including free space. Also known as full disk encryption.
+   - **Encrypt used disk space only** - Encrypts only disk space that contains data
+   - **Encrypt entire drive** - Encrypts the entire volume including free space. Also known as full disk encryption
 
     Each of the methods is recommended in the following scenarios:
 
@@ -310,16 +280,16 @@ For the operating system volume the **BitLocker Drive Encryption Wizard** presen
     > [!IMPORTANT]
     > Deleted files appear as free space to the file system, which isn't encrypted by **used disk space only**. Until they are wiped or overwritten, deleted files hold information that could be recovered with common data forensic tools.
 
-5. The **BitLocker Drive Encryption Wizard** will then prompt for an encryption mode:
+1. The **BitLocker Drive Encryption Wizard** will then prompt for an encryption mode:
 
    - **New encryption mode**
    - **Compatible mode**
 
-    Normally **New encryption mode** should be chosen, but if the drive will be potentially moved to another computer with an older Windows operating system, then select **Compatible mode**.
+    Normally **New encryption mode** should be chosen, but if the drive will be potentially moved to another device with an older Windows operating system, select **Compatible mode**
 
-6. After selecting an encryption mode, the **BitLocker Drive Encryption Wizard** will give the option of running a BitLocker system check via the option **Run BitLocker system check**. This system check will ensure that BitLocker can properly access the recovery and encryption keys before the volume encryption begins. it's recommended run this system check before starting the encryption process. If the system check isn't run and a problem is encountered when the operating system attempts to start, the user will need to provide the recovery key to start Windows.
+1. After selecting an encryption mode, the **BitLocker Drive Encryption Wizard** will give the option of running a BitLocker system check via the option **Run BitLocker system check**. This system check ensures that BitLocker can properly access the recovery and encryption keys before the volume encryption begins. it's recommended run this system check before starting the encryption process. If the system check isn't run and a problem is encountered when the operating system attempts to start, the user will need to provide the recovery key to start Windows.
 
-After completing the system check (if selected), the **BitLocker Drive Encryption Wizard** will begin encryption. A reboot may be initiated to start encryption. If a reboot was initiated, if there was no TPM and a password was specified, the password will need to be entered to boot into the operating system volume.
+After completing the system check (if selected), the **BitLocker Drive Encryption Wizard** starts encryption. A reboot may be initiated to start encryption. If a reboot is initiated, if there was no TPM and a password was specified, the password must be entered to boot into the operating system volume.
 
 Users can check encryption status by checking the system notification area or the BitLocker control panel.
 
@@ -329,42 +299,11 @@ Until encryption is completed, the only available options for managing BitLocker
 
 Encrypting data volumes using the BitLocker control panel works in a similar fashion to encryption of the operating system volumes. Users select **Turn on BitLocker** within the BitLocker control panel to begin the **BitLocker Drive Encryption Wizard**.
 
-1. Upon launching the **BitLocker Drive Encryption Wizard**, unlike for operating system volumes, data volumes aren't required to pass any configuration tests for the **BitLocker Drive Encryption Wizard** to proceed
-
-2. A choice of authentication methods to unlock the drive appears. The available options are:
-
-   - **Use a password to unlock the drive**
-   - **Use my smart card to unlock the drive**
-   - **Automatically unlock this drive on this computer** - Disabled by default but if enabled, this option will unlock the data volume without user input when the operating system volume is unlocked.
-
-3. The **BitLocker Drive Encryption Wizard** presents options for storage of the recovery key. These options are the same as for operating system volumes:
-
-   - **Save to your Azure AD account** (if applicable)
-   - **Save to a USB flash drive**
-   - **Save to a file** - the file needs to be saved to a location that isn't on the computer itself such as a network folder or OneDrive
-   - **Print the recovery key**
-
-4. After saving the recovery key, the **BitLocker Drive Encryption Wizard** will show available options for encryption. These options are the same as for operating system volumes:
-
-   - **Encrypt used disk space only** - Encrypts only disk space that contains data.
-   - **Encrypt entire drive** - Encrypts the entire volume including free space. Also known as full disk encryption.
-
-5. The **BitLocker Drive Encryption Wizard** will then prompt for an encryption mode:
-
-   - **New encryption mode**
-   - **Compatible mode**
-
-    Normally **New encryption mode** should be chosen, but if the drive will be potentially moved to another computer with an older Windows operating system, then select **Compatible mode**.
-
-6. The **BitLocker Drive Encryption Wizard** will display a final confirmation screen before the encryption process begins. Selecting **Start encrypting** begins encryption.
-
-Encryption status displays in the notification area or within the BitLocker control panel.
-
 ### OneDrive option
 
-There's an option for storing the BitLocker recovery key using OneDrive. This option requires that computers aren't members of a domain and that the user is using a Microsoft Account. Local accounts don't give the option to use OneDrive. Using the OneDrive option is the default recommended recovery key storage method for computers that aren't joined to a domain.
+There's an option for storing the BitLocker recovery key using OneDrive. This option requires that computers aren't members of a domain and that the user is using a Microsoft Account. Local user accounts don't have the option to use OneDrive. Using the OneDrive option is the default recommended recovery key storage method for computers that aren't joined to a domain.
 
-Users can verify whether the recovery key was saved properly by checking OneDrive for the BitLocker folder. The BitLocker folder on OneDrive is created automatically during the save process. The folder will contain two files, a `readme.txt` and the recovery key. For users storing more than one recovery password on their OneDrive, they can identify the required recovery key by looking at the file name. The recovery key ID is appended to the end of the file name.
+Users can verify whether the recovery key is saved properly by checking OneDrive for the *BitLocker* folder, which is created automatically during the save process. The folder contains two files, a `readme.txt` and the recovery key. For users storing more than one recovery password on their OneDrive, they can identify the required recovery key by looking at the file name. The recovery key ID is appended to the end of the file name.
 
 ### Using BitLocker within Windows Explorer
 
