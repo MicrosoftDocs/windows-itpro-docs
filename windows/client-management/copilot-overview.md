@@ -9,6 +9,19 @@ appliesto:
 
 # What is Copilot in Windows?
 
-Copilot in Windows provides centralized generative AI assistance to your users right from the desktop.   
+>**Looking for consumer information?** See [Welcome to Copilot in Windows](https://support.microsoft.com/windows/welcome-to-copilot-in-windows-675708af-8c16-4675-afeb-85a5a476ccb0).
 
-## 
+Copilot in Windows provides centralized generative AI assistance to your users right from the Windows desktop. Copilot in Windows is a bit different from Copilot in Edge, which provides assistance in the browser. However, both user experiences can share the same underlying chat provider platform. 
+
+## Chat provider platforms for Copilot in Windows
+
+Copilot in Windows uses one of the following chat provider platforms, dependant on your organization's configuration:
+
+- [Bing chat](https://www.microsoft.com/bing/do-more-with-ai/what-is-bing-chat-and-how-can-you-use-it), which is intended for consumer use scenarios
+- [Bing chat enterprise](/bing-chat-enterprise/overview), which is intended for business use scenarios
+    - Bing chat enterprise is available, at no additional cost, for customers who are licensed for Microsoft 365 E3 or E5, A3 or A5 for faculty, Business Standard, or Business Premium.
+
+
+
+
+
