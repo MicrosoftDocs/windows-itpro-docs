@@ -18,8 +18,6 @@ ms.topic: reference
 
 [!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
-[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
-
 <!-- WindowsLogon-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 <!-- WindowsLogon-Editable-End -->
