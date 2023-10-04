@@ -1,6 +1,6 @@
 ---
-description: Learn more about the Windows 11, version 22H2 diagnostic data gathered.
-title: Required diagnostic events and fields for Windows 11, version 22H2
+description: Learn more about the diagnostic data gathered for Windows 11, versions 23H2 and 22H2.
+title: Required diagnostic events and fields for Windows 11, versions 23H3 and 22H2
 keywords: privacy, telemetry
 ms.prod: windows-client
 ms.technology: itpro-privacy
@@ -8,15 +8,15 @@ localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
 manager: laurawi
-ms.date: 09/26/2023
+ms.date: 10/31/2023
 ms.topic: reference
 ---
 
+# Required diagnostic events and fields for Windows 11, versions 23H2 and 22H2
 
-# Required diagnostic events and fields for Windows 11, version 22H2
+**Applies to**
 
- **Applies to**
-
+- Windows 11, version 23H2
 - Windows 11, version 22H2
 
 Required diagnostic data gathers a limited set of information that is critical for understanding the device and its configuration including: basic device information, quality-related information, app compatibility, and Microsoft Store.
@@ -206,6 +206,7 @@ This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedevic
 The following fields are available:
 
 - **AppraiserVersion**  The version of the appraiser file generating the events.
+- **SdbEntries**  Deprecated in RS3.
 
 
 ### Microsoft.Windows.Appraiser.General.DataSourceMatchingInfoBlockRemove
@@ -228,6 +229,7 @@ This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedevic
 The following fields are available:
 
 - **AppraiserVersion**  The version of the appraiser file generating the events.
+- **SdbEntries**  Deprecated in RS3.
 
 
 ### Microsoft.Windows.Appraiser.General.DatasourceSystemBiosAdd
@@ -239,6 +241,7 @@ This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedevic
 The following fields are available:
 
 - **AppraiserVersion**  The version of the Appraiser file generating the events.
+- **SdbEntries**  Deprecated in RS3.
 
 
 ### Microsoft.Windows.Appraiser.General.DatasourceSystemBiosStartSync
@@ -1007,7 +1010,7 @@ The following fields are available:
 - **MDMServiceProvider**  A hash of the specific MDM authority, such as Microsoft Intune, that is managing the device.
 - **MPNId**  Returns the Partner ID/MPN ID from Regkey. HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\DeployID
 - **SCCMClientId**  This ID correlate systems that send data to Compat Analytics (OMS) and other OMS based systems with systems in an enterprise Configuration Manager environment.
-- **ServerFeatures**  Represents the features installed on a Windows   Server. This can be used by developers and administrators who need to automate the process of determining the features installed on a set of server computers.
+- **ServerFeatures**  Represents the features installed on a Windows Server. This can be used by developers and administrators who need to automate the process of determining the features installed on a set of server computers.
 - **SystemCenterID**  The Configuration Manager ID is an anonymized one-way hash of the Active Directory Organization identifier
 
 
@@ -1146,12 +1149,6 @@ Fires when an incompatible language pack is detected.
 The following fields are available:
 
 - **Language**  String containing the incompatible language pack detected.
-
-
-### MicrosoftWindowsCodeIntegrityTraceLoggingProvider.CodeIntegrityHvciSysprepHvciAlreadyEnabled
-
-This event fires when HVCI is already enabled so no need to continue auto-enablement.
-
 
 
 ## Common data extensions
@@ -1316,6 +1313,7 @@ The following fields are available:
 - **uts**  A bit field, with 2 bits being assigned to each user ID listed in xid. This field is omitted if all users are retail accounts.
 - **xid**  A list of base10-encoded XBOX User IDs.
 
+
 ## Common data fields
 
 ### Ms.Device.DeviceInventoryChange
@@ -1329,7 +1327,6 @@ The following fields are available:
 - **objectInstanceId**  Object identity which is unique within the device scope.
 - **objectType**  Indicates the object type that the event applies to.
 - **syncId**  A string used to group StartSync, EndSync, Add, and Remove operations that belong together. This field is unique by Sync period and is used to disambiguate in situations where multiple agents perform overlapping inventories for the same object.
-
 
 ## Component-based servicing events
 
@@ -1757,6 +1754,31 @@ The following fields are available:
 
 ## Holographic events
 
+### Microsoft.Windows.Analog.HydrogenCompositor.ExclusiveMode_Entered
+
+This event sends data indicating the start of augmented reality application experience. The data collected with this event is used to keep Windows performing properly.
+
+The following fields are available:
+
+- **SessionID**  Unique value for each attempt.
+- **TargetAsId**  The sequence number for the process.
+- **windowInstanceId**  Unique value for each window instance.
+
+
+### Microsoft.Windows.Analog.HydrogenCompositor.ExclusiveMode_Leave
+
+This event sends data indicating the end of augmented reality application experience. The data collected with this event is used to keep Windows performing properly.
+
+The following fields are available:
+
+- **EventHistory**  Unique number of event history.
+- **ExternalComponentState**  State of external component.
+- **LastEvent**  Unique number of last event.
+- **SessionID**  Unique value for each attempt.
+- **TargetAsId**  The sequence number for the process.
+- **windowInstanceId**  Unique value for each window instance.
+
+
 ### Microsoft.Windows.Analog.Spectrum.TelemetryHolographicSpaceCreated
 
 This event indicates the state of Windows holographic scene. The data collected with this event is used to keep Windows performing properly.
@@ -2124,6 +2146,24 @@ The following fields are available:
 - **ServiceName**  The name of the driver or service attached to the device.
 
 
+### Microsoft.Windows.Kernel.Power.AbnormalShutdown
+
+No content is currently available.
+
+The following fields are available:
+
+- **BootEnvironment**  No content is currently available. See [BootEnvironment](#bootenvironment).
+- **BootStatValid**  No content is currently available.
+- **Bugcheck**  No content is currently available. See [Bugcheck](#bugcheck).
+- **CrashDump**  No content is currently available. See [CrashDump](#crashdump).
+- **CurrentBootId**  No content is currently available.
+- **FirmwareReset**  No content is currently available. See [FirmwareReset](#firmwarereset).
+- **LastShutdownBootId**  No content is currently available.
+- **LongPowerButtonHold**  No content is currently available. See [LongPowerButtonHold](#longpowerbuttonhold).
+- **SystemStateTransition**  No content is currently available. See [SystemStateTransition](#systemstatetransition).
+- **Watchdog**  No content is currently available. See [Watchdog](#watchdog).
+
+
 ## Microsoft Edge events
 
 ### Aria.af397ef28e484961ba48646a5d38cf54.Microsoft.WebBrowser.Installer.EdgeUpdate.Ping
@@ -2210,22 +2250,6 @@ The following fields are available:
 - **requestUid**  A randomly-generated (uniformly distributed) GUID, corresponding to the Omaha user. Each request attempt SHOULD have (with high probability) a unique request id. Default: ''.
 
 
-### Microsoft.Edge.Crashpad.HangEvent
-
-This event sends simple Product and Service Performance data on a hanging/frozen Microsoft Edge browser process to help mitigate future instances of the hang.
-
-The following fields are available:
-
-- **app_name**  The name of the hanging process.
-- **app_session_guid**  Encodes the boot session, process, and process start time.
-- **app_version**  The version of the hanging process.
-- **client_id_hash**  Hash of the browser client id to help identify the installation.
-- **etag**  Identifier to help identify running browser experiments.
-- **hang_source**  Identifies how the hang was detected.
-- **process_type**  The type of the hanging browser process, for example, gpu-process, renderer, etc.
-- **stack_hash**  A hash of the hanging stack. Currently not used or set to zero.
-
-
 ## OneSettings events
 
 ### Microsoft.Windows.OneSettingsClient.Status
@@ -2242,7 +2266,7 @@ The following fields are available:
 
 ### Microsoft.Windows.Shell.Oobe.ZDP.ZdpTaskCancelled
 
-This event is the result of an attempt to cancel ZDP task.
+This event is the result of an attempt to cancel ZDP task
 
 The following fields are available:
 
@@ -2252,29 +2276,96 @@ The following fields are available:
 
 ## Other events
 
-### Microsoft.Windows.Analog.HydrogenCompositor.ExclusiveMode_Entered
+### Microsoft.Edge.Crashpad.HangEvent
 
-This event sends data indicating the start of augmented reality application experience. The data collected with this event is used to keep Windows performing properly.
-
-The following fields are available:
-
-- **SessionID**  Unique value for each attempt.
-- **TargetAsId**  The sequence number for the process.
-- **windowInstanceId**  Unique value for each window instance.
-
-
-### Microsoft.Windows.Analog.HydrogenCompositor.ExclusiveMode_Leave
-
-This event sends data indicating the end of augmented reality application experience. The data collected with this event is used to keep Windows performing properly.
+This event sends simple Product and Service Performance data on a hanging/frozen Microsoft Edge browser process to help mitigate future instances of the hang.
 
 The following fields are available:
 
-- **EventHistory**  Unique number of event history.
-- **ExternalComponentState**  State of external component.
-- **LastEvent**  Unique number of last event.
-- **SessionID**  Unique value for each attempt.
-- **TargetAsId**  The sequence number for the process.
-- **windowInstanceId**  Unique value for each window instance.
+- **app_name**  The name of the hanging process.
+- **app_session_guid**  Encodes the boot session, process, and process start time.
+- **app_version**  The version of the hanging process.
+- **client_id_hash**  Hash of the browser client id to help identify the installation.
+- **etag**  Identifier to help identify running browser experiments.
+- **hang_source**  Identifies how the hang was detected.
+- **process_type**  The type of the hanging browser process, for example, gpu-process, renderer, etc.
+- **stack_hash**  A hash of the hanging stack. Currently not used or set to zero.
+
+
+### Microsoft.Gaming.Critical.Error
+
+Common error event used by the Gaming Telemetry Library to provide centralized monitoring for critical errors logged by callers using the library.
+
+The following fields are available:
+
+- **callStack**  List of active subroutines running during error occurrence.
+- **componentName**  Friendly name meant to represent what feature area this error should be attributed to. Used for aggregations and pivots of data.
+- **customAttributes**  List of custom attributes. See [customAttributes](#customattributes).
+- **errorCode**  Error code.
+- **extendedData**  JSON blob representing additional, provider-level properties common to the component.
+- **featureName**  Friendly name meant to represent which feature this should be attributed to.
+- **identifier**  Error identifier.
+- **message**  Error message.
+- **properties**  List of properties attributed to the error.
+
+
+### Microsoft.Gaming.Critical.ProviderRegistered
+
+Indicates that a telemetry provider has been registered with the Gaming Telemetry Library.
+
+The following fields are available:
+
+- **providerNamespace**  The telemetry Namespace for the registered provider.
+
+
+### Microsoft.Gaming.OOBE.HDDBackup
+
+This event describes whether an External HDD back up has been found.
+
+The following fields are available:
+
+- **backupVersion**  version number of backup.
+- **extendedData**  JSON blob representing additional, provider-level properties common to the component.
+- **hasConsoleSettings**  Indicates whether the console settings stored.
+- **hasUserSettings**  Indicates whether the user settings stored.
+- **hasWirelessProfile**  Indicates whether the wireless profile stored.
+- **hddBackupFound**  Indicates whether hdd backup is found.
+- **osVersion**  Operating system version.
+
+
+### Microsoft.Gaming.OOBE.OobeComplete
+
+This event is triggered when OOBE activation is complete.
+
+The following fields are available:
+
+- **allowAutoUpdate**  Allows auto update.
+- **allowAutoUpdateApps**  Allows auto update for apps.
+- **appliedTransferToken**  Applied transfer token.
+- **connectionType**  Connection type.
+- **curSessionId**  Current session id.
+- **extendedData**  JSON blob representing additional, provider-level properties common to the component.
+- **instantOn**  Instant on.
+- **moobeAcceptedState**  Moobe accepted state.
+- **phaseOneElapsedTimeMs**  Total elapsed time in milliseconds for phase 1.
+- **phaseOneVersion**  Version of phase 1.
+- **phaseTwoElapsedTimeMs**  Total elapsed time in milliseconds for phase 2.
+- **phaseTwoVersion**  Version of phase 2.
+- **systemUpdateRequired**  Indicates whether a system update required.
+- **totalElapsedTimeMs**  Total elapsed time in milliseconds of all phases.
+- **usedCloudBackup**  Indicates whether cloud backup is used.
+- **usedHDDBackup**  Indicates whether HDD backup is used.
+- **usedOffConsole**  Indicates whether off console is used.
+
+
+### Microsoft.Gaming.OOBE.SessionStarted
+
+This event is sent at the start of OOBE session.
+
+The following fields are available:
+
+- **customAttributes**  customAttributes.
+- **extendedData**  extendedData.
 
 
 ### Microsoft.Windows.Defender.Engine.Maps.Heartbeat
@@ -2302,6 +2393,98 @@ The following fields are available:
 - **SignatureRing**  Signature ring used for deployments
 - **SigVersion**  Version of signature VDMs
 
+
+### Microsoft.Windows.Shell.SystemSettings.SettingsAppActivity.GetUserAccountState
+
+No content is currently available.
+
+The following fields are available:
+
+- **CassService**  No content is currently available.
+- **componentName**  No content is currently available.
+- **correlationVector**  No content is currently available.
+- **currentPageGroupId**  No content is currently available.
+- **currentPageId**  No content is currently available.
+- **experienceId**  No content is currently available.
+- **experienceVersion**  No content is currently available.
+- **isExperienceInbox**  No content is currently available.
+- **pageId**  No content is currently available.
+- **pageSessionId**  No content is currently available.
+- **processSessionId**  No content is currently available.
+- **state**  No content is currently available.
+
+
+### Microsoft.Windows.UpdateAssistantApp.UpdateAssistantStartState
+
+This event marks the start of an Update Assistant State. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **CV**  The correlation vector.
+- **GlobalEventCounter**  The global event counter for all telemetry on the device.
+- **UpdateAssistantStateDownloading**  True at the start Downloading.
+- **UpdateAssistantStateInitializingApplication**  True at the start of the state InitializingApplication.
+- **UpdateAssistantStateInitializingStates**  True at the start of InitializingStates.
+- **UpdateAssistantStateInstalling**  True at the start of Installing.
+- **UpdateAssistantStatePostInstall**  True at the start of PostInstall.
+- **UpdateAssistantVersion**  Current package version of UpdateAssistant.
+
+
+### MicrosoftWindowsCodeIntegrityTraceLoggingProvider.CodeIntegrityHvciSysprepHvciAlreadyEnabled
+
+This event fires when HVCI is already enabled so no need to continue auto-enablement.
+
+
+
+### ShellWNSRegistration.SLSChannelRegistrationFailed
+
+This event is logged when the upload of a channel URI to the SLS service fails.
+
+The following fields are available:
+
+- **baseData**  JSON blob.
+- **baseType**  PartB schema type.
+- **RetryAttempt**  The retry attempt number for attempting to open and register the channel.
+- **RetryTimeInMilliseconds**  The amount of time taken to retry the channel request in milliseconds.
+
+
+### ShellWNSRegistration.SLSChannelRegistrationSuccess
+
+This event is logged when a channel URI is successfully uploaded to the SLS service.
+
+The following fields are available:
+
+- **RegistrationPayload**  JSON payload containing Channel Uri and other data uploaded to SLS.
+- **RetryAttempts**  The retry attempt number for attempting to open and register the channel.
+- **RetryTimeInMilliseconds**  The amount of time taken to retry the channel request in milliseconds.
+- **TitleId**  TitleId for which channel is uploaded.
+
+
+### ShellWNSRegistration.WNSChannelRequestFailed
+
+This event is logged when a Channel Request fails. Contains error code and AppUserModelId for which channel was requested.
+
+The following fields are available:
+
+- **baseData**  JSON blob.
+- **baseType**  PartB schema type.
+- **RetryAttempt**  The retry attempt number for attempting to open and register the channel.
+- **RetryTimeInMilliseconds**  The amount of time taken to retry the channel request in milliseconds.
+
+
+### ShellWNSRegistration.WNSChannelRequestSuccess
+
+This event is triggered immediately following the completion of a Channel Request API call. Contains channel URI and AppUserModelId for which channel was requested.
+
+The following fields are available:
+
+- **AppUserModelId**  Unique identifier for app requesting a channel.
+- **ChannelUri**  Channel URI returned by WNS.
+- **RetryAttempt**  The retry attempt number for attempting to open and register the channel.
+- **RetryTimeInMilliseconds**  The amount of time taken to retry the channel request in milliseconds.
+
+
+
 ## Privacy consent logging events
 
 ### Microsoft.Windows.Shell.PrivacyConsentLogging.PrivacyConsentCompleted
@@ -2326,7 +2509,7 @@ The following fields are available:
 
 - **Path**  Path to the file or the directory which is being moved or deleted.
 - **Process**  Path to the process which is requesting the move or the deletion.
-- **SessionId**  Identifier to correlate this component's telemetry with that of others.
+- **SessionId**   Identifier to correlate this component's telemetry with that of others.
 - **TargetPath**  (Optional) If the operation is a move, the target path to which the file or directory is being moved.
 
 
@@ -2337,7 +2520,7 @@ Provides details about error in the functioning of upgrade data safety monitorin
 The following fields are available:
 
 - **Message**  Text string describing the error condition.
-- **SessionId**  Identifier to correlate this component's telemetry with that of others.
+- **SessionId** Identifier to correlate this component's telemetry with that of others.
 - **Status**  	NTSTATUS code related to the error.
 
 
@@ -2524,24 +2707,6 @@ The following fields are available:
 - **RetryCount**  The number of attempted installations (retries), reported by the driver software key.
 - **Status**  The status returned to the PnP (Plug-and-Play) manager.
 - **UpdateAttempted**  Indicates if installation of the current update has been attempted before.
-
-
-## Update Assistant events
-
-### Microsoft.Windows.UpdateAssistantApp.UpdateAssistantStartState
-
-This event marks the start of an Update Assistant State. The data collected with this event is used to help keep Windows up to date.
-
-The following fields are available:
-
-- **CV**  The correlation vector.
-- **GlobalEventCounter**  The global event counter for all telemetry on the device.
-- **UpdateAssistantStateDownloading**  True at the start Downloading.
-- **UpdateAssistantStateInitializingApplication**  True at the start of the state InitializingApplication.
-- **UpdateAssistantStateInitializingStates**  True at the start of InitializingStates.
-- **UpdateAssistantStateInstalling**  True at the start of Installing.
-- **UpdateAssistantStatePostInstall**  True at the start of PostInstall.
-- **UpdateAssistantVersion**  Current package version of UpdateAssistant.
 
 
 ## Update events
@@ -3524,9 +3689,7 @@ The following fields are available:
 
 ### Microsoft.Windows.Update.WUClientExt.UpdateMetadataIntegrityGeneral
 
-Ensures Windows Updates are secure and complete. Event helps to identify whether update content has been tampered with and protects against man-in-the-middle attack
-
-The following fields are available:
+Ensures Windows Updates are secure and complete. Event helps to identify whether update content has been tampered with and protects against man-in-the-middle attack.
 
 - **CallerName**  Name of the application making the Windows Update Request. Used to identify context of the request.
 - **EndpointUrl**  Ensures Windows Updates are secure and complete. Event helps to identify whether update content has been tampered with and protects against man-in-the-middle attack.
