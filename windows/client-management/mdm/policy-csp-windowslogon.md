@@ -4,7 +4,7 @@ description: Learn more about the WindowsLogon Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 09/14/2023
+ms.date: 10/03/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -589,7 +589,6 @@ OverrideShellProgram policy allows IT admin to configure the shell program for W
 | Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
-| Dependency [BootToCloudModeDependencyGroup] | Dependency Type: `DependsOn` <br> Dependency URI: `Device/Vendor/MSFT/Policy/Config/CloudDesktop/BootToCloudMode` <br> Dependency Allowed Value: `[1]` <br> Dependency Allowed Value Type: `Range` <br>  |
 <!-- OverrideShellProgram-DFProperties-End -->
 
 <!-- OverrideShellProgram-AllowedValues-Begin -->
