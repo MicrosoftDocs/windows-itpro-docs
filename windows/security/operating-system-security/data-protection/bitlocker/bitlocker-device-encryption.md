@@ -42,24 +42,18 @@ Microsoft recommends automatically enabling BitLocker Device Encryption on any s
 - **Type**: `REG_DWORD`
 - **Value**: `PreventDeviceEncryption` equal to `1` (True)
 
-Administrators can manage domain-joined devices that have BitLocker Device Encryption enabled through Microsoft BitLocker Administration and Monitoring (MBAM). In this case, BitLocker Device Encryption automatically makes additional BitLocker options available. No conversion or encryption is required, and MBAM can manage the full BitLocker policy set if any configuration changes are required.
-
 > [!NOTE]
 > BitLocker Device Encryption uses the XTS-AES 128-bit encryption method. If a different encryption method and/or cipher strength is needed but the device is already encrypted, it must first be decrypted before the new encryption method and/or cipher strength can be applied. After the device has been decrypted, different BitLocker settings can be applied.
 
 ## Used Disk Space Only encryption
 
-BitLocker in earlier Windows versions could take a long time to encrypt a drive because it encrypted every byte on the volume including areas that didn't have data. Encrypting every byte on the volume including areas that didn't have data is known as full disk encryption. Full disk encryption is still the most secure way to encrypt a drive, especially if a drive has previously contained confidential data that has since been moved or deleted. If a drive previously had confidential data that has been moved or deleted, traces of the confidential data could remain on portions of the drive marked as unused.
-
-To reduce encryption time, BitLocker in Windows 11 and Windows 10 let users choose to encrypt just the areas of the disk that contain data. Areas of the disk that don't contain data and are empty won't be encrypted. Any new data is encrypted as it's created. Depending on the amount of data on the drive, this option can reduce the initial encryption time by more than 99 percent.
+To reduce encryption time, BitLocker lets users choose to encrypt just the areas of the disk that contain data. Areas of the disk that don't contain data and are empty aren't be encrypted. Any new data is encrypted as it's created. Depending on the amount of data on the drive, this option can reduce the initial encryption time by more than 99 percent.
 
 Exercise caution when encrypting only used space on an existing volume on which confidential data may have already been stored in an unencrypted state. When using used space encryption, sectors where previously unencrypted data are stored can be recovered through disk-recovery tools until they're overwritten by new encrypted data. In contrast, encrypting only used space on a brand-new volume can significantly decrease deployment time without the security risk because all new data will be encrypted as it's written to the disk.
 
 ## Encrypted hard drive support
 
-SEDs have been available for years, but Microsoft couldn't support their use with some earlier versions of Windows because the drives lacked important key management features. Microsoft worked with storage vendors to improve the hardware capabilities, and now BitLocker supports the next generation of SEDs, which are called encrypted hard drives.
-
-Encrypted hard drives provide onboard cryptographic capabilities to encrypt data on drives. This feature improves both drive and system performance by offloading cryptographic calculations from the PC's processor to the drive itself. Data is rapidly encrypted by the drive by using dedicated, purpose-built hardware. If planning to use whole-drive encryption with Windows 11 or Windows 10, Microsoft recommends researching hard drive manufacturers and models to determine whether any of their encrypted hard drives meet the security and budget requirements.
+Encrypted hard drives provide onboard cryptographic capabilities to encrypt data on drives. This feature improves both drive and system performance by offloading cryptographic calculations from the device's processor to the drive itself. Data is rapidly encrypted by the drive by using dedicated, purpose-built hardware. If planning to use whole-drive encryption with Windows, Microsoft recommends researching hard drive manufacturers and models to determine whether any of their encrypted hard drives meet the security and budget requirements.
 
 For more information about encrypted hard drives, see [Encrypted hard drive](../encrypted-hard-drive.md).
 
@@ -98,4 +92,4 @@ For more information about how to configure Network unlock feature, see [BitLock
 
 ## Microsoft BitLocker administration and monitoring
 
-Enterprises can use Configuration Manager or the built-in features of Azure AD and Microsoft Intune for BitLocker administration and monitoring. For more information, see [Monitor device encryption with Intune](/mem/intune/protect/encryption-monitor).
+Enterprises can use Microsoft Entra ID, Microsoft Intune and Configuration Manager for BitLocker administration and monitoring. For more information, see [Monitor device encryption with Intune](/mem/intune/protect/encryption-monitor).
