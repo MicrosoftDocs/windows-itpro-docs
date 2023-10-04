@@ -51,11 +51,12 @@ The following table shows the methods and paths available to change the edition 
 - ☑️ = Supported, but reboot required.
 - ❌ = Not supported.
 - MDM = Modern device management.
-- Each desktop edition in the table also has an N and KN SKU. These editions have had media-related functionality removed. Devices with N or KN SKUs installed can be upgraded to corresponding N or KN SKUs using the same methods.
 
 > [!NOTE]
 >
-> Edition upgrades via Microsoft Store for Business are no longer available with the [retirement of Microsoft Store for Business](/announcements/microsoft-store-for-business-education-retiring).
+> - Each desktop edition in the table also has an N and KN SKU. These editions have had media-related functionality removed. Devices with N or KN SKUs installed can be upgraded to corresponding N or KN SKUs using the same methods.
+>
+> - Edition upgrades via Microsoft Store for Business are no longer available with the [retirement of Microsoft Store for Business](/announcements/microsoft-store-for-business-education-retiring).
 
 > [!TIP]
 >
@@ -178,10 +179,6 @@ The following scenarios aren't supported:
 
 ## Supported Windows downgrade paths
 
-- Yes = Supported downgrade path.
-- No = not supported or not a downgrade.
-- \- = Not considered a downgrade or an upgrade.
-
 | Edition | Home | Pro | Pro for Workstations | Pro Education | Education | Enterprise LTSC | Enterprise |
 |-----------------| ------------------------------------ | --------------------------- | ------------------------- | -------------------------------------- | ----------------------------------- | --------------------------------------------- |--------------------------------------------- |
 | **Home** | - | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
@@ -192,7 +189,13 @@ The following scenarios aren't supported:
 | **Enterprise LTSC** | ❌ | ❌ | ❌ | ❌ | ❌ | - | ❌ |
 | **Enterprise** | ❌ | ✅ | ✅ | ✅ | - | ❌ | - |
 
-**Windows N/KN**: Windows **N** and **KN** SKUs follow the same rules shown in the table.
+- ✅ = Supported downgrade path.
+- ❌ = not supported or not a downgrade.
+- \- = Not considered a downgrade or an upgrade.
+
+> [!NOTE]
+>
+> Windows **N** and Windows **KN** SKUs follow the same rules shown in the table.
 
 The table may not represent more complex scenarios. For example, you can perform an upgrade from Pro to Pro for Workstation on a computer with an embedded Pro key using a Pro for Workstation license key. You can then later downgrade this computer back to Pro with the firmware-embedded key. The downgrade is allowed but only because the pre-installed OS is Pro.
 
