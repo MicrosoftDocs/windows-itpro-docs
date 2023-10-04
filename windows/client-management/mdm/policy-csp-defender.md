@@ -4,7 +4,7 @@ description: Learn more about the Defender Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 08/10/2023
+ms.date: 10/03/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -1075,13 +1075,17 @@ This policy setting allows you to configure the maximum percentage CPU utilizati
 
 - If you disable or don't configure this setting, CPU utilization won't exceed the default value.
 
-> [!NOTE]
-> If ScanOnlyIfIdle (instructing the product to scan only when the computer is not in use) and DisableCpuThrottleOnIdleScans (instructing the product to disable CPU throttling on idle scans) are both enabled, then the value of AvgCPULoadFactor is ignored.
-
 <!-- AvgCPULoadFactor-Description-End -->
 
 <!-- AvgCPULoadFactor-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+
+> [!NOTE]
+> If you enable both of the following policies, then Windows ignores the value of **AvgCPULoadFactor**:
+> 
+> - [ScanOnlyIfIdle](defender-csp.md#configurationscanonlyifidleenabled): Instructs the product to scan only when the computer isn't in use.
+> - [DisableCpuThrottleOnIdleScans](defender-csp.md#configurationdisablecputhrottleonidlescans): Instructs the product to disable CPU throttling on idle scans.
+
 <!-- AvgCPULoadFactor-Editable-End -->
 
 <!-- AvgCPULoadFactor-DFProperties-Begin -->
