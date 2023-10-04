@@ -136,7 +136,7 @@ When the cluster service owns a disk resource already, the disk resource needs t
 
 2. Ensure new storage is formatted as NTFS.
 
-3. Encrypt the volume, add a recovery key and add the cluster administrator as a protector key using **`manage-bde.exe`** in a command prompt window. For example:
+3. Encrypt the volume, add a recovery key and add the cluster administrator as a protector key using **`manage-bde.exe`** in a Command Prompt window. For example:
 
     ```cmd
     manage-bde.exe -on -used <drive letter> -RP -sid domain\CNO$ -sync

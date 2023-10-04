@@ -15,7 +15,7 @@ There are differnt tools and options to manage and operate BitLocker:
 - the BitLocker drive encryption tools
 - Control Panel
 
-The BitLocker drive encryption tools and BitLocker PowerShell module can be used to perform any tasks that can be accomplished through the BitLocker control panel. They are appropriate to use for automated deployments and other scripting scenarios.\
+The BitLocker drive encryption tools and BitLocker PowerShell module can be used to perform any tasks that can be accomplished through the BitLockerControl Panel. They are appropriate to use for automated deployments and other scripting scenarios.\
 The BitLocker Control Panel applet allows users to perform basic tasks such as turning on BitLocker on a drive and specifying unlock methods and authentication methods. The BitLocker Control Panel applet is appropriate to use for basic BitLocker tasks.
 
 This article describes the BitLocker management tools and how to use them, providing practical examples.
@@ -33,7 +33,7 @@ The BitLocker drive encryption tools include the two command-line tools:
 
 ## Example: check the BitLocker status
 
-To check the BitLocker status of a particular volume, administrators can look at the status of the drive in the BitLocker control panel applet, Windows Explorer, `manage-bde.exe` command-line tool, or Windows PowerShell cmdlets. Each option offers different levels of detail and ease of use.
+To check the BitLocker status of a particular volume, administrators can look at the status of the drive in the BitLockerControl Panel applet, Windows Explorer, `manage-bde.exe` command-line tool, or Windows PowerShell cmdlets. Each option offers different levels of detail and ease of use.
 
 Follow the instructions below verify the status of BitLocker, selecting the tool of your choice.
 
@@ -89,7 +89,7 @@ Volume C: [Local Disk]
 
 #### [:::image type="icon" source="images/controlpanel.svg"::: **Control Panel**](#tab/controlpanel)
 
-Checking BitLocker status with the control panel is a common method used by most users. Once opened, the status for each volume is displayed next to the volume description and drive letter. Available status return values with applet include:
+Checking BitLocker status with theControl Panel is a common method used by most users. Once opened, the status for each volume is displayed next to the volume description and drive letter. Available status return values with applet include:
 
 | Status | Description |
 | - | - |
@@ -98,7 +98,7 @@ Checking BitLocker status with the control panel is a common method used by most
 | **Suspended** | BitLocker is suspended and not actively protecting the volume |
 | **Waiting for Activation**| BitLocker is enabled with a clear protector key and requires further action to be fully protected|
 
-If a drive is pre-provisioned with BitLocker, a status of **Waiting for Activation** displays with a yellow exclamation icon on the volume. This status means that there was only a clear protector used when encrypting the volume. In this case, the volume isn't in a protected state and needs to have a secure key added to the volume before the drive is fully protected. Administrators can use the control panel, PowerShell or `manage-bde.exe` tool to add an appropriate key protector. Once complete, the Control Panel will update to reflect the new status.
+If a drive is pre-provisioned with BitLocker, a status of **Waiting for Activation** displays with a yellow exclamation icon on the volume. This status means that there was only a clear protector used when encrypting the volume. In this case, the volume isn't in a protected state and needs to have a secure key added to the volume before the drive is fully protected. Administrators can use theControl Panel, PowerShell or `manage-bde.exe` tool to add an appropriate key protector. Once complete, the Control Panel will update to reflect the new status.
 
 ---
 
@@ -224,7 +224,7 @@ Or users can choose to add protectors to the volume. It is recommended to add at
 
 #### [:::image type="icon" source="images/controlpanel.svg"::: **Control Panel**](#tab/controlpanel)
 
-Encrypting volumes with the BitLocker control panel (select **Start**, enter `BitLocker`, select **Manage BitLocker**) is how many users will use BitLocker. The name of the BitLocker control panel is BitLocker Drive Encryption. The BitLocker control panel supports encrypting operating system, fixed data, and removable data volumes. The BitLocker control panel will organize available drives in the appropriate category based on how the device reports itself to Windows. Only formatted volumes with assigned drive letters will appear properly in the BitLocker control panel applet.
+Encrypting volumes with the BitLockerControl Panel (select **Start**, enter `BitLocker`, select **Manage BitLocker**) is how many users will use BitLocker. The name of the BitLockerControl Panel is BitLocker Drive Encryption. The BitLockerControl Panel supports encrypting operating system, fixed data, and removable data volumes. The BitLockerControl Panel will organize available drives in the appropriate category based on how the device reports itself to Windows. Only formatted volumes with assigned drive letters will appear properly in the BitLockerControl Panel applet.
 
 To start encryption for a volume, select **Turn on BitLocker** for the appropriate drive to initialize the **BitLocker Drive Encryption Wizard**. **BitLocker Drive Encryption Wizard** options vary based on volume type (operating system volume or data volume).
 
@@ -257,7 +257,7 @@ For the operating system volume the **BitLocker Drive Encryption Wizard** presen
     > Ideally, a recovery key should be stored separate from the device itself.
 
     > [!NOTE]
-    > After a recovery key is created, the BitLocker control panel can be used to make additional copies of the recovery key.
+    > After a recovery key is created, the BitLockerControl Panel can be used to make additional copies of the recovery key.
 
 1. The **BitLocker Drive Encryption Wizard** prompts how much of the drive to encrypt. The **BitLocker Drive Encryption Wizard** has two options that determine how much of the drive is encrypted:
 
@@ -291,13 +291,13 @@ For the operating system volume the **BitLocker Drive Encryption Wizard** presen
 
 After completing the system check (if selected), the **BitLocker Drive Encryption Wizard** starts encryption. A reboot may be initiated to start encryption. If a reboot is initiated, if there was no TPM and a password was specified, the password must be entered to boot into the operating system volume.
 
-Users can check encryption status by checking the system notification area or the BitLocker control panel.
+Users can check encryption status by checking the system notification area or the BitLockerControl Panel.
 
 Until encryption is completed, the only available options for managing BitLocker involve manipulation of the password protecting the operating system volume, backing up the recovery key, and turning off BitLocker.
 
 ### Data volume
 
-Encrypting data volumes using the BitLocker control panel works in a similar fashion to encryption of the operating system volumes. Users select **Turn on BitLocker** within the BitLocker control panel to begin the **BitLocker Drive Encryption Wizard**.
+Encrypting data volumes using the BitLockerControl Panel works in a similar fashion to encryption of the operating system volumes. Users select **Turn on BitLocker** within the BitLockerControl Panel to begin the **BitLocker Drive Encryption Wizard**.
 
 ### OneDrive option
 
@@ -307,7 +307,7 @@ Users can verify whether the recovery key is saved properly by checking OneDrive
 
 ### Using BitLocker within Windows Explorer
 
-Windows Explorer allows users to launch the **BitLocker Drive Encryption Wizard** by right-clicking a volume and selecting **Turn On BitLocker**. This option is available on client computers by default. On servers, the BitLocker feature and the Desktop-Experience feature must first be installed for this option to be available. After selecting **Turn on BitLocker**, the wizard works exactly as it does when launched using the BitLocker control panel.
+Windows Explorer allows users to launch the **BitLocker Drive Encryption Wizard** by right-clicking a volume and selecting **Turn On BitLocker**. This option is available on client computers by default. On servers, the BitLocker feature and the Desktop-Experience feature must first be installed for this option to be available. After selecting **Turn on BitLocker**, the wizard works exactly as it does when launched using the BitLockerControl Panel.
 
 ---
 
@@ -394,7 +394,7 @@ or additional protectors can be added to the volume first. It's recommended to a
 
 #### [:::image type="icon" source="images/controlpanel.svg"::: **Control Panel**](#tab/controlpanel)
 
-Using the control panel, administrators can choose **Turn on BitLocker** to start the BitLocker Drive Encryption wizard and add a protector, like PIN for an operating system volume (or password if no TPM exists), or a password or smart card protector to a data volume.
+Using theControl Panel, administrators can choose **Turn on BitLocker** to start the BitLocker Drive Encryption wizard and add a protector, like PIN for an operating system volume (or password if no TPM exists), or a password or smart card protector to a data volume.
 The drive security window displays prior to changing the volume status. Selecting **Activate BitLocker** will complete the encryption process.
 
 Once BitLocker protector activation is completed, the completion notice is displayed.
@@ -437,11 +437,11 @@ manage-bde.exe -status C:
 
 #### [:::image type="icon" source="images/controlpanel.svg"::: **Control Panel**](#tab/controlpanel)
 
-BitLocker decryption using the control panel is done using a wizard. The control panel can be called from Windows Explorer or by opening it directly. After opening the BitLocker control panel applet, users can select the **Turn off BitLocker** option to begin the process.\
-After selecting the **Turn off BitLocker** option, the user chooses to continue by clicking the confirmation dialog. With **Turn off BitLocker** confirmed, the drive decryption process begins and reports status to the control panel.
+BitLocker decryption using theControl Panel is done using a wizard. TheControl Panel can be called from Windows Explorer or by opening it directly. After opening the BitLockerControl Panel applet, users can select the **Turn off BitLocker** option to begin the process.\
+After selecting the **Turn off BitLocker** option, the user chooses to continue by clicking the confirmation dialog. With **Turn off BitLocker** confirmed, the drive decryption process begins and reports status to theControl Panel.
 
-The control panel doesn't report decryption progress but displays it in the notification area of the task bar. Selecting the notification area icon will open a modal dialog with progress.
+TheControl Panel doesn't report decryption progress but displays it in the notification area of the task bar. Selecting the notification area icon will open a modal dialog with progress.
 
-Once decryption is complete, the drive updates its status in the control panel and becomes available for encryption.
+Once decryption is complete, the drive updates its status in theControl Panel and becomes available for encryption.
 
 ---

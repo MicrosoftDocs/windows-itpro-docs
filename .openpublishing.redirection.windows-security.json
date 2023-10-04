@@ -7452,12 +7452,32 @@
     },
     {
       "source_path": "windows/security/operating-system-security/data-protection/bitlocker/bitlocker-use-bitlocker-drive-encryption-tools-to-manage-bitlocker.md",
-      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/manage",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/operations-guide",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/security/operating-system-security/data-protection/bitlocker/protecting-cluster-shared-volumes-and-storage-area-networks-with-bitlocker.md",
       "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/csv-san",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/data-protection/bitlocker/bitlocker-deployment-comparison.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/policy-settings",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/data-protection/bitlocker/bitlocker-how-to-deploy-on-windows-server.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/enable-server",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/data-protection/bitlocker/bitlocker-management-for-enterprises.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/configure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/data-protection/bitlocker/bitlocker-use-bitlocker-recovery-password-viewer.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/recovery-password-viewer.md",
       "redirect_document_id": false
     }
   ]

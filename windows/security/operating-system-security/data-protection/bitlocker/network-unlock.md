@@ -234,7 +234,7 @@ New-SelfSignedCertificate -CertStoreLocation Cert:\LocalMachine\My -Subject "CN=
     _continue_ = "1.3.6.1.4.1.311.67.1.1"
     ```
 
-3. Open an elevated command prompt and use the `certreq.exe` tool to create a new certificate. Use the following command, specifying the full path to the file that was created previously along with the file name:
+3. Open an elevated Command Prompt and use the `certreq.exe` tool to create a new certificate. Use the following command, specifying the full path to the file that was created previously along with the file name:
 
     ```cmd
     certreq.exe -new BitLocker-NetworkUnlock.inf BitLocker-NetworkUnlock.cer
@@ -384,7 +384,7 @@ Gather the following files to troubleshoot BitLocker Network Unlock.
 
     Debug logging is turned off by default for the WDS server role. To retrieve WDS debug logs, the WDS debug logs first need to be enabled. Use either of the following two methods to turn on WDS debug logging.
 
-  - Start an elevated command prompt, and then run the following command:
+  - Start an elevated Command Prompt, and then run the following command:
 
       ```cmd
       wevtutil.exe sl Microsoft-Windows-Deployment-Services-Diagnostics/Debug /e:true

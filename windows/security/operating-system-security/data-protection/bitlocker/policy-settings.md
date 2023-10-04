@@ -32,23 +32,23 @@ The following table lists the BitLocker policies applicable to all drive types, 
 |Policy name| CSP | GPO |
 |-|-|-|
 |[Allow standard user encryption](#allow-standard-user-encryption)|✅|❌|
-|[Allow suspension of BitLocker protection](#allow-suspension-of-bitlocker-protection)|✅|❌|
 |[Choose default folder for recovery password](#choose-default-folder-for-recovery-password)|❌|✅|
 |[Choose drive encryption method and cipher strength](#choose-drive-encryption-method-and-cipher-strength)|✅|✅|
 |[Configure recovery password rotation](#configure-recovery-password-rotation)|✅|❌|
 |[Disable new DMA devices when this computer is locked](#disable-new-dma-devices-when-this-computer-is-locked)|❌|✅|
 |[Prevent memory overwrite on restart](#prevent-memory-overwrite-on-restart)|❌|✅|
 |[Provide the unique identifiers for your organization](#provide-the-unique-identifiers-for-your-organization)|✅|✅|
+|[Require device encryption](#require-device-encryption)|✅|❌|
 |[Validate smart card certificate usage rule compliance](#validate-smart-card-certificate-usage-rule-compliance)|❌|✅|
 
 [!INCLUDE [allow-standard-user-encryption](includes/allow-standard-user-encryption.md)]
-[!INCLUDE [allow-suspension-of-bitlocker-protection](includes/allow-suspension-of-bitlocker-protection.md)]
 [!INCLUDE [choose-default-folder-for-recovery-password](includes/choose-default-folder-for-recovery-password.md)]
 [!INCLUDE [choose-drive-encryption-method-and-cipher-strength](includes/choose-drive-encryption-method-and-cipher-strength.md)]
 [!INCLUDE [configure-recovery-password-rotation](includes/configure-recovery-password-rotation.md)]
 [!INCLUDE [disable-new-dma-devices-when-this-computer-is-locked](includes/disable-new-dma-devices-when-this-computer-is-locked.md)]
 [!INCLUDE [prevent-memory-overwrite-on-restart](includes/prevent-memory-overwrite-on-restart.md)]
 [!INCLUDE [provide-the-unique-identifiers-for-your-organization](includes/provide-the-unique-identifiers-for-your-organization.md)]
+[!INCLUDE [require-device-encryption](includes/require-device-encryption.md)]
 [!INCLUDE [validate-smart-card-certificate-usage-rule-compliance](includes/validate-smart-card-certificate-usage-rule-compliance.md)]
 
 #### [:::image type="icon" source="images/os-drive.svg"::: **Operating system drive**](#tab/os)
@@ -71,7 +71,6 @@ The following table lists the BitLocker policies applicable to all drive types, 
 |[Enable use of BitLocker authentication requiring preboot keyboard input on slates](#enable-use-of-bitlocker-authentication-requiring-preboot-keyboard-input-on-slates)|✅|✅|
 |[Enforce drive encryption type on operating system drives](#enforce-drive-encryption-type-on-operating-system-drives)|✅|✅|
 |[Require additional authentication at startup](#require-additional-authentication-at-startup)|✅|✅|
-|[Require device encryption](#require-device-encryption)|✅|❌|
 |[Reset platform validation data after BitLocker recovery](#reset-platform-validation-data-after-bitlocker-recovery)|❌|✅|
 |[Use enhanced Boot Configuration Data validation profile](#use-enhanced-boot-configuration-data-validation-profile)|❌|✅|
 
@@ -91,7 +90,6 @@ The following table lists the BitLocker policies applicable to all drive types, 
 [!INCLUDE [enable-use-of-bitlocker-authentication-requiring-preboot-keyboard-input-on-slates](includes/enable-use-of-bitlocker-authentication-requiring-preboot-keyboard-input-on-slates.md)]
 [!INCLUDE [enforce-drive-encryption-type-on-operating-system-drives](includes/enforce-drive-encryption-type-on-operating-system-drives.md)]
 [!INCLUDE [require-additional-authentication-at-startup](includes/require-additional-authentication-at-startup.md)]
-[!INCLUDE [require-device-encryption](includes/require-device-encryption.md)]
 [!INCLUDE [reset-platform-validation-data-after-bitlocker-recovery](includes/reset-platform-validation-data-after-bitlocker-recovery.md)]
 [!INCLUDE [use-enhanced-boot-configuration-data-validation-profile](includes/use-enhanced-boot-configuration-data-validation-profile.md)]
 
@@ -137,9 +135,9 @@ The following table lists the BitLocker policies applicable to all drive types, 
 
 ---
 
-## BitLocker and policies compliance
+## BitLocker and policcy settings compliance
 
-If a device isn't compliant with the configured policies, BitLocker may not be turned on, or BitLocker configuration may be modified until the computer is in a compliant state. When a drive becomes out of compliance with policy settings, only changes to the BitLocker configuration that will bring it into compliance are allowed. Such scenario could occur, for example, if a previously encrypted drive was brought out of compliance by change in policy settings.
+If a device isn't compliant with the configured policy settings, BitLocker may not be turned on, or BitLocker configuration may be modified until the device is in a compliant state. When a drive becomes out of compliance with policy settings, only changes to the BitLocker configuration that will bring it into compliance are allowed. Such scenario could occur, for example, if a previously encrypted drive was brought out of compliance by change in policy settings.
 
 If multiple changes are necessary to bring the drive into compliance, BitLocker protection may need to be suspended, the necessary changes made, and then protection resumed. Such situation could occur, for example, if a removable drive is initially configured for unlock with a password but then policy settings are changed to disallow passwords and require smart cards. In this situation, BitLocker protection needs to be suspended by using the [`manage-bde`](/windows-server/administration/windows-commands/manage-bde) command-line tool, delete the password unlock method, and add the smart card method. After this process is complete, BitLocker is compliant with the policy setting, and BitLocker protection on the drive can be resumed.
 

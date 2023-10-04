@@ -88,7 +88,7 @@ To install BitLocker using the `dism.exe` module, use the following command:
 Enable-WindowsOptionalFeature -Online -FeatureName BitLocker -All
 ```
 
-This command prompts the user for a reboot. The Enable-WindowsOptionalFeature cmdlet doesn't offer support for forcing a reboot of the computer. This command doesn't include installation of the management tools for BitLocker. For a complete installation of BitLocker and all available management tools, use the following command:
+This Command Prompts the user for a reboot. The Enable-WindowsOptionalFeature cmdlet doesn't offer support for forcing a reboot of the computer. This command doesn't include installation of the management tools for BitLocker. For a complete installation of BitLocker and all available management tools, use the following command:
 
 ```powershell
 Enable-WindowsOptionalFeature -Online -FeatureName BitLocker, BitLocker-Utilities -All

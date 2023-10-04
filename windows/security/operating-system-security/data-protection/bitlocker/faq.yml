@@ -204,7 +204,7 @@ sections:
           
       - question: Is it possible to add an additional method of authentication without decrypting the drive if I only have the TPM authentication method enabled?
         answer: |
-          The `Manage-bde.exe` command-line tool can be used to replace TPM-only authentication mode with a multifactor authentication mode. For example, if BitLocker is enabled with TPM authentication only and PIN authentication needs to be added, use the following commands from an elevated command prompt, replacing *4-20 digit numeric PIN* with the desired numeric PIN:
+          The `Manage-bde.exe` command-line tool can be used to replace TPM-only authentication mode with a multifactor authentication mode. For example, if BitLocker is enabled with TPM authentication only and PIN authentication needs to be added, use the following commands from an elevated Command Prompt, replacing *4-20 digit numeric PIN* with the desired numeric PIN:
           
           ```cmd
           manage-bde.exe -protectors -delete %systemdrive% -type tpm
@@ -314,7 +314,7 @@ sections:
           
           For more info, see [BitLocker policy settings](policy-settings.md).
           
-          The BitLocker Windows Management Instrumentation (WMI) interface allows administrators to write a script to back up or synchronize an online client's existing recovery information. However, BitLocker doesn't automatically manage this process. The `manage-bde.exe` command-line tool can also be used to manually back up recovery information to AD DS. For example, to back up all of the recovery information for the `$env:SystemDrive` to AD DS, the following command script can be used from an elevated command prompt:
+          The BitLocker Windows Management Instrumentation (WMI) interface allows administrators to write a script to back up or synchronize an online client's existing recovery information. However, BitLocker doesn't automatically manage this process. The `manage-bde.exe` command-line tool can also be used to manually back up recovery information to AD DS. For example, to back up all of the recovery information for the `$env:SystemDrive` to AD DS, the following command script can be used from an elevated Command Prompt:
           
           ```powershell
           $BitLocker = Get-BitLockerVolume -MountPoint $env:SystemDrive

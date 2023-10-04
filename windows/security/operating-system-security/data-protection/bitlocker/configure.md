@@ -8,7 +8,7 @@ ms.date: 10/03/2023
 # BitLocker settings and configuration
 
 This article describes the Personal Data Encryption (BitLocker) settings and how to configure them via Microsoft Intune or Configuration Service Providers (CSP).
-
+<!--
 ## BitLocker settings
 
 ## Configure BitLocker with Microsoft Intune
@@ -27,45 +27,23 @@ This article describes the Personal Data Encryption (BitLocker) settings and how
 
 - Review the [Personal Data Encryption (BitLocker) FAQ](faq.yml)
 
+This article describes how to configure BitLocker using Microsoft Intune or group policy.
 
+## Configure BitLocker
 
-
-## Configure Credential Guard
-
-This article describes how to configure Credential Guard using Microsoft Intune, Group Policy, or the registry.
-
-## Enable Credential Guard
-
-To enable Credential Guard, you can use:
+To configure BitLocker, you can use:
 
 - Microsoft Intune/MDM
 - Group policy
-- Registry
 
 ### Configure Credential Guard with group policy
 
-### Configure Credential Guard with registry settings
+### Configure Credential Guard Microsoft Intune
 
-### Verify if Credential Guard is enabled
+-->
 
-#### System Information
+## BitLocker management
 
-#### PowerShell
-
-#### Event viewer
-
-## Disable Credential Guard
-
-### Disable Credential Guard with Intune
-
-### Disable  Credential Guard with group policy
-
-### Disable Credential Guard with registry settings
-
-## Next steps
-
-
-# BitLocker management
 
 The ideal solution for BitLocker management is to eliminate the need for IT administrators to set management policies using tools or other mechanisms by having Windows perform tasks that are more practical to automate. The growth of TPM 2.0, secure boot, and other hardware improvements, for example, have helped to alleviate the support burden on help desks and a decrease in support-call volumes, yielding improved user satisfaction. 
 
@@ -76,11 +54,6 @@ The ideal solution for BitLocker management is to eliminate the need for IT admi
 ## Managing domain-joined computers and moving to cloud  
 
 Companies that image their own computers using Configuration Manager can use an existing task sequence to [pre-provision BitLocker](/configmgr/osd/understand/task-sequence-steps#BKMK_PreProvisionBitLocker) encryption while in Windows Preinstallation Environment (WinPE) and can then [enable protection](/configmgr/osd/understand/task-sequence-steps#BKMK_EnableBitLocker). These steps during an operating system deployment can help ensure that computers are encrypted from the start, even before users receive them. As part of the imaging process, a company could also decide to use Configuration Manager to pre-set any desired [BitLocker policy settings](policy-settings.md).
-
-Enterprises can use [Microsoft BitLocker Administration and Monitoring (MBAM)](/microsoft-desktop-optimization-pack/mbam-v25/) to manage client computers with BitLocker that are domain-joined on-premises until [mainstream support ends in July 2019](/lifecycle/products/?alpha=Microsoft%20BitLocker%20Administration%20and%20Monitoring%202.5%20Service%20Pack%201%2F) or they can receive extended support until April 2026. Thus, over the next few years, a good strategy for enterprises will be to plan and move to cloud-based management for BitLocker. Refer to the [PowerShell examples](#powershell-examples) to see how to store recovery keys in Azure Active Directory (Azure AD).
-
-> [!IMPORTANT]
-> Microsoft BitLocker Administration and Monitoring (MBAM) capabilities are offered through Configuration Manager BitLocker Management. See [Plan for BitLocker management](/mem/configmgr/protect/plan-design/bitlocker-management) in the Configuration Manager documentation for additional information.
 
 ## Manage Microsoft Entra joined devices
 
@@ -104,5 +77,3 @@ If a server is being installed manually, such as a stand-alone server, then choo
 
  Additionally, lights-out data centers can take advantage of the enhanced security of a second factor while avoiding the need for user intervention during reboots by optionally using a combination of BitLocker (TPM+PIN) and BitLocker Network Unlock. BitLocker Network Unlock brings together the best of hardware protection, location dependence, and automatic unlock, while in the trusted location. For the configuration steps, see [BitLocker: How to enable Network Unlock](network-unlock.md).
  For more information, see the BitLocker FAQs article and other useful links in [Related Articles](#related-articles).
-
-

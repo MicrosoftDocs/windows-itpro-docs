@@ -116,7 +116,7 @@ Before a thorough BitLocker recovery process is created, it's recommended to tes
 
 2. Right select on **cmd.exe** or **Command Prompt** and then select **Run as administrator**.
 
-3. At the command prompt, enter the following command:
+3. At the Command Prompt, enter the following command:
 
     ```cmd
     manage-bde.exe -forcerecovery <BitLockerVolume>
@@ -128,7 +128,7 @@ Before a thorough BitLocker recovery process is created, it's recommended to tes
 
 2. Right select on **cmd.exe** or **Command Prompt** and then select **Run as administrator**.
 
-3. At the command prompt, enter the following command:
+3. At the Command Prompt, enter the following command:
 
     ```cmd
     manage-bde.exe -ComputerName <RemoteComputerName> -forcerecovery <BitLockerVolume>
@@ -468,7 +468,7 @@ If the recovery methods discussed earlier in this document don't unlock the volu
 > [!NOTE]
 > The BitLocker Repair tool `repair-bde.exe` must be used to use the BitLocker key package.
 
-The BitLocker key package isn't saved by default. To save the package along with the recovery password in AD DS, the **Backup recovery password and key package** option must be selected in the group policy settings that control the recovery method. The key package can also be exported from a working volume. For more information on how to export key packages, see [Retrieving the BitLocker Key Package](#retrieving-the-bitlocker-key-package).
+The BitLocker key package isn't saved by default. To save the package along with the recovery password in AD DS, the **Backup recovery password and key package** option must be selected in the group policy settings that control the recovery method. The key package can also be exported from a working volume. For more information on how to export key packages, see [Retrieving the BitLocker Key Package](#retrieve-the-bitlocker-key-package).
 
 ## Resetting recovery passwords
 
@@ -507,7 +507,7 @@ The recovery password and be invalidated and reset in two ways:
     > [!WARNING]
     > The braces `{}` must be included in the ID string.
 
-<!--
+
 ## Retrieve the BitLocker key package
 
 Two methods can be used to retrieve the key package as described in Using Additional Recovery Information:
@@ -518,7 +518,7 @@ Export a new key package from an unlocked, BitLocker-protected volume. Local adm
 
    strRecoveryPassword = objFveInfo.Get("msFVE-RecoveryPassword")
    strKeyPackage = objFveInfo.Get("msFVE-KeyPackage")
--->
+
 
 ### Example: retrieve Bitlocker recovery keys for a Microsoft Entra joined device
 
@@ -568,6 +568,8 @@ Device name: DESKTOP-53O32QI
  Key id: 6a7e153f-d5e9-4547-96d6-174ff0d0bdb4
  BitLocker recovery key: 241846-437393-298925-499389-123255-123640-709808-330682
 ```
+
+
 ### Repair tool
 
 The Repair Tool can reconstruct critical parts of the drive and salvage recoverable data, as long as a valid recovery password or recovery key is used to decrypt the data. If the BitLocker metadata data on the drive is corrupt, the backup key package in addition to the recovery password or recovery key must be supplied. With the key package and either the recovery password or recovery key, portions of a corrupted BitLocker-protected drive can be decrypted. Each key package works only for a drive that has the corresponding drive identifier
