@@ -36,8 +36,6 @@ This article describes how to configure Credential Guard using Microsoft Intune,
 
 ## Enable Credential Guard
 
-Credential Guard should be enabled before a device is joined to a domain or before a domain user signs in for the first time. If Credential Guard is enabled after domain join, the user and device secrets may already be compromised.
-
 To enable Credential Guard, you can use:
 
 - Microsoft Intune/MDM
@@ -69,9 +67,9 @@ To enable Credential Guard, you can use:
 
 # BitLocker management
 
-The ideal solution for BitLocker management is to eliminate the need for IT administrators to set management policies using tools or other mechanisms by having Windows perform tasks that are more practical to automate. This vision leverages modern hardware developments. The growth of TPM 2.0, secure boot, and other hardware improvements, for example, have helped to alleviate the support burden on help desks and a decrease in support-call volumes, yielding improved user satisfaction. Windows continues to be the focus for new features and improvements for built-in encryption management, such as automatically enabling encryption on devices that support Modern Standby beginning with Windows 8.1.
+The ideal solution for BitLocker management is to eliminate the need for IT administrators to set management policies using tools or other mechanisms by having Windows perform tasks that are more practical to automate. The growth of TPM 2.0, secure boot, and other hardware improvements, for example, have helped to alleviate the support burden on help desks and a decrease in support-call volumes, yielding improved user satisfaction. 
 
-Though much Windows [BitLocker documentation](index.md) has been published, customers frequently ask for recommendations and pointers to specific, task-oriented documentation that is both easy to digest and focused on how to deploy and manage BitLocker. This article links to relevant documentation, products, and services to help answer this and other related frequently asked questions, and also provides BitLocker recommendations for different types of computers.
+ This article links to relevant documentation, products, and services to help answer frequently asked questions, and also provides BitLocker recommendations for different types of computers.
 
 [!INCLUDE [bitlocker](../../../../../includes/licensing/bitlocker-management.md)]
 
@@ -84,17 +82,17 @@ Enterprises can use [Microsoft BitLocker Administration and Monitoring (MBAM)](/
 > [!IMPORTANT]
 > Microsoft BitLocker Administration and Monitoring (MBAM) capabilities are offered through Configuration Manager BitLocker Management. See [Plan for BitLocker management](/mem/configmgr/protect/plan-design/bitlocker-management) in the Configuration Manager documentation for additional information.
 
-## Managing devices joined to Azure Active Directory
+## Manage Microsoft Entra joined devices
 
 Devices joined to Azure AD are managed using Mobile Device Management (MDM) policy from an MDM solution such as Microsoft Intune. Prior to Windows 10, version 1809, only local administrators can enable BitLocker via Intune policy. Starting with Windows 10, version 1809, Intune can enable BitLocker for standard users. [BitLocker Device Encryption](bitlocker-device-encryption.md) status can be queried from managed machines via the [Policy Configuration Settings Provider (CSP)](/windows/client-management/mdm/policy-configuration-service-provider/), which reports on whether BitLocker Device Encryption is enabled on the device. Compliance with BitLocker Device Encryption policy can be a requirement for [Conditional Access](https://www.microsoft.com/cloud-platform/conditional-access/) to services like Exchange Online and SharePoint Online.
 
-Starting with Windows 10 version 1703, the enablement of BitLocker can be triggered over MDM either by the [Policy CSP](/windows/client-management/mdm/policy-configuration-service-provider/) or the [BitLocker CSP](/windows/client-management/mdm/bitlocker-csp/). The BitLocker CSP adds policy options that go beyond ensuring that encryption has occurred, and is available on computers that run Windows 11, Windows 10, and on Windows phones.
+The enablement of BitLocker can be triggered over MDM either by the [Policy CSP](/windows/client-management/mdm/policy-configuration-service-provider/) or the [BitLocker CSP](/windows/client-management/mdm/bitlocker-csp/). The BitLocker CSP adds policy options that go beyond ensuring that encryption has occurred.
 
-For hardware that is compliant with Modern Standby and HSTI, when using either of these features, [BitLocker Device Encryption](bitlocker-device-encryption.md) is automatically turned on whenever the user joins a device to Azure AD. Azure AD provides a portal where recovery keys are also backed up, so users can retrieve their own recovery key for self-service, if necessary. For older devices that aren't yet encrypted, beginning with Windows 10 version 1703, admins can use the [BitLocker CSP](/windows/client-management/mdm/bitlocker-csp/) to trigger encryption and store the recovery key in Azure AD. This process and feature is applicable to Azure Hybrid AD as well.
+For hardware that is compliant with Modern Standby and HSTI, when using either of these features, [BitLocker Device Encryption](bitlocker-device-encryption.md) is automatically turned on whenever the user joins a device to Azure AD. Azure AD provides a portal where recovery keys are also backed up, so users can retrieve their own recovery key for self-service, if necessary.
 
-## Managing workplace-joined PCs and phones
+## Manage Microsoft Entra registered devices
 
-For Windows PCs and Windows Phones that are enrolled using **Connect to work or school account**, BitLocker Device Encryption is managed over MDM, the same as devices joined to Azure AD.
+For Windows devices that are enrolled using **Connect to work or school account**, BitLocker Device Encryption is managed over MDM, the same as Microsoft Entra ID joined devices.
 
 ## Manage servers
 

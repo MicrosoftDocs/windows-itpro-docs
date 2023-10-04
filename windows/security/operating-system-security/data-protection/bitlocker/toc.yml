@@ -12,19 +12,17 @@ items:
     - name: Configure BitLocker
       href: configure.md
     - name: Configure BitLocker on Windows Server
-      href: bitlocker-how-to-deploy-on-windows-server.md
+      href: configure-server.md
     - name: BitLocker management tools
       href: manage.md
-    - name: Manage BitLocker with Drive Encryption Tools
-      href: manage.md
-    - name: BitLocker Recovery Guide
-      href: bitlocker-recovery-guide-plan.md
     - name: Protect cluster shared volumes and storage area networks with BitLocker
       href: csv-san.md
     - name: Network Unlock
       href: network-unlock.md
+    - name: BitLocker Recovery Guide
+      href: recovery-guide.md
     - name: BitLocker Recovery Password Viewer
-      href: bitlocker-use-bitlocker-recovery-password-viewer.md
+      href: recovery-password-viewer.md
 - name: Reference
   items:
     - name: BitLocker policy settings
