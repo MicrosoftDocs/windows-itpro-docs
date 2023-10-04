@@ -3,22 +3,18 @@ items:
   href: index.md
 - name: BitLocker countermeasures
   href: countermeasures.md
-- name: Deployment guides
-  items:
-    - name: Plan for a BitLocker deployment
-      href: plan.md
-    - name: Configure BitLocker
-      href: configure.md
-    - name: BitLocker deployment comparison
-      href: bitlocker-deployment-comparison.md
+- name: Plan for a BitLocker deployment
+  href: plan.md
 - name: BitLocker device encryption
   href: bitlocker-device-encryption.md
 - name: How-to guides
   items:
-    - name: Manage BitLocker in your organization
-      href: bitlocker-management-for-enterprises.md
+    - name: Configure BitLocker
+      href: configure.md
     - name: Configure BitLocker on Windows Server
       href: bitlocker-how-to-deploy-on-windows-server.md
+    - name: BitLocker management tools
+      href: manage.md
     - name: Manage BitLocker with Drive Encryption Tools
       href: manage.md
     - name: BitLocker Recovery Guide

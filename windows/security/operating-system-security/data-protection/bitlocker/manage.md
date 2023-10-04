@@ -1,32 +1,39 @@
 ---
-title: BitLocker common operations
-description: Learn how to use different tools to operate BitLocker in your organization.
+title: BitLocker management tools
+description: Learn how to use different tools to operate BitLocker.
 ms.collection: 
   - tier1
 ms.topic: how-to
 ms.date: 07/25/2023
 ---
 
-# BitLocker common operations
+# BitLocker management tools
 
-There are differnt tools and options to operate BitLocker:
+There are differnt tools and options to manage and operate BitLocker:
 
-- the BitLocker drive encryption tools include the two command-line tools *manage-bde.exe* and *repair-bde.exe*
 - the BitLocker PowerShell module
+- the BitLocker drive encryption tools
 - Control Panel
 
-The BitLocker drive encryption tools and BitLocker PowerShell module can be used to perform any tasks that can be accomplished through the BitLocker control panel. They are appropriate to use for automated deployments and other scripting scenarios.
+The BitLocker drive encryption tools and BitLocker PowerShell module can be used to perform any tasks that can be accomplished through the BitLocker control panel. They are appropriate to use for automated deployments and other scripting scenarios.\
+The BitLocker Control Panel applet allows users to perform basic tasks such as turning on BitLocker on a drive and specifying unlock methods and authentication methods. The BitLocker Control Panel applet is appropriate to use for basic BitLocker tasks.
 
-Manage-bde is a command-line tool that can be used for scripting BitLocker operations. Manage-bde offers additional options not displayed in the BitLocker control panel. For a complete list of the `manage-bde.exe` options, see the [Manage-bde](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/ff829849(v=ws.11)) command-line reference. Manage-bde includes fewer default settings and requires greater customization for configuring BitLocker. For example, using just the `manage-bde.exe -on` command on a data volume will fully encrypt the volume without any authenticating protectors. A volume encrypted in this manner still requires user interaction to turn on BitLocker protection, even though the command successfully completed because an authentication method needs to be added to the volume for it to be fully protected. The following sections provide examples of common usage scenarios for manage-bde.
+This article describes the BitLocker management tools and how to use them, providing practical examples.
 
+## BitLocker PowerShell module
 
-## BitLocker Repair Tool
+The BitLocker PowerShell module enables administrators to integrate BitLocker options into existing scripts with ease. For a list of cmdlets included in module, their description and syntax, che the [BitLocker PowerShell reference article](/powershell/module/bitlocker).
 
-Hard disk areas on which BitLocker stores critical information could be damaged, for example, when a hard disk fails or if Windows exits unexpectedly.
+## BitLocker drive encryption tools
 
-The BitLocker Repair Tool (*repair-bde.exe*) is useful for disaster recovery scenarios, in which a BitLocker protected drive can't be unlocked normally or using the recovery console.
+The BitLocker drive encryption tools include the two command-line tools:
 
-The Repair Tool can reconstruct critical parts of the drive and salvage recoverable data, as long as a valid recovery password or recovery key is used to decrypt the data. If the BitLocker metadata data on the drive is corrupt, the backup key package in addition to the recovery password or recovery key must be supplied. The key package is backed up in Active Directory Domain Services (AD DS) if the default settings for AD DS backup are used. With the key package and either the recovery password or recovery key, portions of a corrupted BitLocker-protected drive can be decrypted. Each key package works only for a drive that has the corresponding drive identifier. The BitLocker Recovery Password Viewer can be used to obtain this key package from AD DS.
+- *Configuration Tool* (`manage-bde.exe`) can be used for scripting BitLocker operations, offering options that aren't present in the BitLocker Control Panel applet. For a complete list of the `manage-bde.exe` options, see the [Manage-bde](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/ff829849(v=ws.11)) command-line reference
+- *Repair Tool* (`repair-bde.exe`) is useful for disaster recovery scenarios, in which a BitLocker protected drive can't be unlocked normally or using the recovery console
+
+### Repair tool
+
+The Repair Tool can reconstruct critical parts of the drive and salvage recoverable data, as long as a valid recovery password or recovery key is used to decrypt the data. If the BitLocker metadata data on the drive is corrupt, the backup key package in addition to the recovery password or recovery key must be supplied. With the key package and either the recovery password or recovery key, portions of a corrupted BitLocker-protected drive can be decrypted. Each key package works only for a drive that has the corresponding drive identifier
 
 > [!TIP]
 > If recovery information is not backed up to AD DS or if key packages need to be saved in an alternative way, use the following command to generate a key package for a volume:
@@ -44,36 +51,10 @@ The Repair Tool is intended for use when the operating system doesn't start or w
 
 The following limitations exist for Repair-bde:
 
-- The Repair-bde command-line tool can't repair a drive that failed during the encryption or decryption process.
-
-- The Repair-bde command-line tool assumes that if the drive has any encryption, then the drive has been fully encrypted.
+- it can't repair a drive that failed during the encryption or decryption process
+- it assumes that if the drive has any encryption, then the drive is fully encrypted
 
 For more information about using repair-bde, see [Repair-bde](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/ff829851(v=ws.11)).
-
-## BitLocker PowerShell module
-
-Using the BitLocker Windows PowerShell cmdlets is similar to working with the manage-bde tool for encrypting operating system volumes. Windows PowerShell offers users flexibility. For example, users can add the desired protector as part command for encrypting the volume.
-
-
-The BitLocker PowerShell module enables administrators to integrate BitLocker options into existing scripts with ease. Here's a lists of the cmdlets included in the BitLocker PowerShell module:
-
-- `Add-BitLockerKeyProtector`
-- `Backup-BitLockerKeyProtector`
-- `BackupToAAD-BitLockerKeyProtector`
-- `Clear-BitLockerAutoUnlock`
-- `Disable-BitLocker`
-- `Disable-BitLockerAutoUnlock`
-- `Enable-BitLocker`
-- `Enable-BitLockerAutoUnlock`
-- `Get-BitLockerVolume`
-- `Lock-BitLocker`
-- `Remove-BitLockerKeyProtector`
-- `Resume-BitLocker`
-- `Suspend-BitLocker`
-- `Unlock-BitLocker`
-
-
-
 
 ## Using BitLocker to encrypt volumes
 
@@ -84,25 +65,17 @@ If the drive was prepared as a single contiguous space, BitLocker requires a new
 > [!NOTE]
 > For more info about using this tool, see [Bdehdcfg](/windows-server/administration/windows-commands/bdehdcfg) in the Command-Line Reference.
 
-
-
 `Manage-bde.exe` is a command-line utility that can be used for scripting BitLocker operations. `Manage-bde.exe` offers additional options not displayed in the BitLocker control panel. For a complete list of the options, see [Manage-bde](/windows-server/administration/windows-commands/manage-bde).
 
 `Manage-bde.exe` offers a multitude of wider options for configuring BitLocker. Using the command syntax may require care. For example, using just the `manage-bde.exe -on` command on a data volume will fully encrypt the volume without any authenticating protectors. A volume encrypted in this manner still requires user interaction to turn on BitLocker protection, even though the command successfully completed. For the volume to be fully protected, an authentication method needs to also be added to the volume in addition to running the `manage-bde.exe`command.
 
 Command-line users need to determine the appropriate syntax for a given situation. The following section covers general encryption for operating system volumes and data volumes.
 
+## Example: check the BitLocker status
 
-## Provisioning BitLocker during operating system deployment
+To check the BitLocker status of a particular volume, administrators can look at the status of the drive in the BitLocker control panel applet, Windows Explorer, `manage-bde.exe` command-line tool, or Windows PowerShell cmdlets. Each option offers different levels of detail and ease of use.
 
-Administrators can enable BitLocker prior to operating system deployment from the Windows Pre-installation environment. Enabling BitLocker prior to the operating system deployment is done with a randomly generated clear key protector applied to the formatted volume and by encrypting the volume prior to running the Windows setup process. If the encryption uses the **Used Disk Space Only** option described later in this document, this step takes only a few seconds and incorporates well into regular deployment processes.
-
-
-## Check BitLocker status
-
-Follow the instructions below verify the status of BitLocker, selecting the option that best suits your needs.
-
-To check the BitLocker status of a particular volume, administrators can look at the status of the drive in the BitLocker control panel applet, Windows Explorer, `manage-bde.exe` command-line tool, or Windows PowerShell cmdlets. Each option offers different levels of detail and ease of use. We'll look at each of the available methods in the following section.
+Follow the instructions below verify the status of BitLocker, selecting the tool of your choice.
 
 #### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
 
@@ -127,14 +100,13 @@ CapacityGB           : 1000
 KeyProtector         : {Tpm, RecoveryPassword}
 ```
 
-
 #### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
 
-A good practice when using `manage-bde.exe` is to determine the volume status on the target system. Use the following command to determine volume status:
+With `manage-bde.exe` you can determine the volume status on the target system, for example:
 
 `manage-bde.exe -status`
 
-This command returns the volumes on the target, current encryption status, encryption method, and volume type (operating system or data) for each volume. Using this information, users can determine the best encryption method for their environment.
+This command returns the volumes on the target, current encryption status, encryption method, and volume type (operating system or data) for each volume.
 
 ```cmd
 C:\>manage-bde -status
@@ -157,7 +129,7 @@ Volume C: [Local Disk]
 
 #### [:::image type="icon" source="images/controlpanel.svg"::: **Control Panel**](#tab/controlpanel)
 
-Checking BitLocker status with the control panel is the most common method used by most users. Once opened, the status for each volume is displayed next to the volume description and drive letter. Available status return values with the control panel include:
+Checking BitLocker status with the control panel is a common method used by most users. Once opened, the status for each volume is displayed next to the volume description and drive letter. Available status return values with applet include:
 
 | Status | Description |
 | - | - |
@@ -166,21 +138,11 @@ Checking BitLocker status with the control panel is the most common method used 
 | **Suspended** | BitLocker is suspended and not actively protecting the volume |
 | **Waiting for Activation**| BitLocker is enabled with a clear protector key and requires further action to be fully protected|
 
-If a drive is pre-provisioned with BitLocker, a status of "Waiting for Activation" displays with a yellow exclamation icon on the volume. This status means that there was only a clear protector used when encrypting the volume. In this case, the volume isn't in a protected state and needs to have a secure key added to the volume before the drive is fully protected. Administrators can use the control panel, `manage-bde.exe` tool, or WMI APIs to add an appropriate key protector. Once complete, the control panel will update to reflect the new status.
-
-Using the control panel, administrators can choose **Turn on BitLocker** to start the BitLocker Drive Encryption wizard and add a protector, like PIN for an operating system volume (or password if no TPM exists), or a password or smart card protector to a data volume.
-The drive security window displays prior to changing the volume status. Selecting **Activate BitLocker** will complete the encryption process.
-
-Once BitLocker protector activation is completed, the completion notice is displayed.
+If a drive is pre-provisioned with BitLocker, a status of **Waiting for Activation** displays with a yellow exclamation icon on the volume. This status means that there was only a clear protector used when encrypting the volume. In this case, the volume isn't in a protected state and needs to have a secure key added to the volume before the drive is fully protected. Administrators can use the control panel, PowerShell or `manage-bde.exe` tool to add an appropriate key protector. Once complete, the Control Panel will update to reflect the new status.
 
 ---
 
-
-
-
-
-
-## Enable BitLocker
+## Example: enable BitLocker
 
 #### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
 
@@ -190,7 +152,7 @@ The following example shows how to enable BitLocker on an operating system drive
 Enable-BitLocker C:
 ```
 
-In the example below, adds one additional protector, the StartupKey protector and chooses to skip the BitLocker hardware test. In this example, encryption starts immediately without the need for a reboot.
+In the next example, we add one more protector, the *StartupKey* protector, and choose to skip the BitLocker hardware test. Encryption starts immediately without the need for a reboot:
 
 ```powershell
 Enable-BitLocker C: -StartupKeyProtector -StartupKeyPath <path> -SkipHardwareTest
@@ -198,20 +160,9 @@ Enable-BitLocker C: -StartupKeyProtector -StartupKeyPath <path> -SkipHardwareTes
 
 #### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
 
-Listed below are examples of basic valid commands for operating system volumes. In general, using only the `manage-bde.exe -on <drive letter>` command encrypts the operating system volume with a TPM-only protector and no recovery key. However, many environments require more secure protectors such as passwords or PIN and expect to be able to recover information with a recovery key.
+Using only the `manage-bde.exe -on <drive letter>` command encrypts the operating system volume with a TPM-only protector and no recovery key. However, you may require more secure protectors such as passwords or PIN, and expect to be able to recover information with a recovery key.
 
-### Enabling BitLocker without a TPM
-
-Suppose BitLocker is desired on a computer without a TPM. In this scenario, a USB flash drive is needed as a startup key for the operating system volume. The startup key will then allow the computer to boot. To create the startup key using `manage-bde.exe`, the `-protectors` switch would be used specifying the `-startupkey` option. Assuming the USB flash drive is drive letter `E:`, then the following `manage-bde.exe` commands would be used t create the startup key and start the BitLocker encryption:
-
-```powershell
-manage-bde.exe -protectors -add C: -startupkey E:
-manage-bde.exe -on C:
-```
-
-If prompted, reboot the computer to complete the encryption process.
-
-### Enabling BitLocker with a TPM only
+### Enable BitLocker with a TPM only
 
 It's possible to encrypt the operating system volume without any defined protectors by using `manage-bde.exe`. Use this command:
 
@@ -235,6 +186,23 @@ manage-bde.exe -protectors -add C: -pw -sid <user or group>
 
 This command requires the user to enter and then confirm the password protectors before adding them to the volume. With the protectors enabled on the volume, the user just needs to turn on BitLocker.
 
+A common protector for a data volume is the password protector. In the next example, a password protector is added to the volume and turn on BitLocker.
+
+```powershell
+manage-bde.exe -protectors -add -pw C:
+manage-bde.exe -on C:
+```
+### Enabling BitLocker without a TPM
+
+Suppose BitLocker is desired on a computer without a TPM. In this scenario, a USB flash drive is needed as a startup key for the operating system volume. The startup key will then allow the computer to boot. To create the startup key using `manage-bde.exe`, the `-protectors` switch would be used specifying the `-startupkey` option. Assuming the USB flash drive is drive letter `E:`, then the following `manage-bde.exe` commands would be used t create the startup key and start the BitLocker encryption:
+
+```powershell
+manage-bde.exe -protectors -add C: -startupkey E:
+manage-bde.exe -on C:
+```
+
+If prompted, reboot the computer to complete the encryption process.
+
 ### Data volume commands
 
 Data volumes use the same syntax for encryption as operating system volumes but they don't require protectors for the operation to complete. Encrypting data volumes can be done using the base command:
@@ -244,17 +212,6 @@ manage-bde.exe -on <drive letter>
 ```
 
 Or users can choose to add protectors to the volume. It is recommended to add at least one primary protector and a recovery protector to a data volume.
-
-### Enabling BitLocker with a password
-
-A common protector for a data volume is the password protector. In the example below, a password protector is added to the volume and turn on BitLocker.
-
-```powershell
-manage-bde.exe -protectors -add -pw C:
-manage-bde.exe -on C:
-```
-
-
 
 #### [:::image type="icon" source="images/controlpanel.svg"::: **Control Panel**](#tab/controlpanel)
 
@@ -564,12 +521,13 @@ manage-bde.exe -on C:
 
 
 #### [:::image type="icon" source="images/controlpanel.svg"::: **Control Panel**](#tab/controlpanel)
+
+Using the control panel, administrators can choose **Turn on BitLocker** to start the BitLocker Drive Encryption wizard and add a protector, like PIN for an operating system volume (or password if no TPM exists), or a password or smart card protector to a data volume.
+The drive security window displays prior to changing the volume status. Selecting **Activate BitLocker** will complete the encryption process.
+
+Once BitLocker protector activation is completed, the completion notice is displayed.
+
 ---
-
-
-
-
-
 
 
 ### Decrypt volumes
@@ -577,7 +535,6 @@ manage-bde.exe -on C:
 Decrypting volumes removes BitLocker and any associated protectors from the volumes. Decryption should occur when protection is no longer required, and not as a troubleshooting step.
 
 #### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
-
 
 Windows PowerShell offers the ability to decrypt multiple drives in one pass. In the example below, the user has three encrypted volumes, which they wish to decrypt.
 
@@ -592,7 +549,6 @@ If a user didn't want to input each mount point individually, using the `-MountP
 ```powershell
 Disable-BitLocker -MountPoint E:,F:,G:
 ```
-
 
 #### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
 
@@ -618,20 +574,3 @@ The control panel doesn't report decryption progress but displays it in the noti
 Once decryption is complete, the drive updates its status in the control panel and becomes available for encryption.
 
 ---
-
-
-<!--
----
-
-## Template
-
-#### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
-
-
-#### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
-
-
-#### [:::image type="icon" source="images/controlpanel.svg"::: **Control Panel**](#tab/controlpanel)
-
----
--->
