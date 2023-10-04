@@ -56,7 +56,7 @@ The following table shows the methods and paths available to change the edition 
 >
 > - Each desktop edition in the table also has an N and KN SKU. These editions have had media-related functionality removed. Devices with N or KN SKUs installed can be upgraded to corresponding N or KN SKUs using the same methods.
 >
-> - Edition upgrades via Microsoft Store for Business are no longer available with the [retirement of Microsoft Store for Business](/announcements/microsoft-store-for-business-education-retiring).
+> - Edition upgrades via Microsoft Store for Business are no longer available with the retirement of the Microsoft Store for Business. For more information, see [Microsoft Store for Business and Education retiring March 31, 2023](/lifecycle/announcements/microsoft-store-for-business-education-retiring) and [Microsoft Store for Business and Microsoft Store for Education overview](/microsoft-store/microsoft-store-for-business-overview).
 
 > [!TIP]
 > Edition upgrade is also possible using edition upgrade policy in Microsoft Configuration Manager. For more information, see [Upgrade Windows devices to a new edition with Configuration Manager](/mem/configmgr/compliance/deploy-use/upgrade-windows-version).
