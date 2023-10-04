@@ -5,7 +5,7 @@ ms.topic: conceptual
 ms.date: 11/08/2022
 ---
 
-# BitLocker: How to deploy on Windows Server
+# Enable BitLocker on Windows Server
 
 This article explains how to deploy BitLocker on Windows Server. For all Windows Server editions, BitLocker can be installed using Server Manager or Windows PowerShell cmdlets. BitLocker requires administrator privileges on the server on which it's to be installed.
 

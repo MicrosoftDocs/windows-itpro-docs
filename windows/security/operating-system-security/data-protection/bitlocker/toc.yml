@@ -9,10 +9,10 @@ items:
   href: bitlocker-device-encryption.md
 - name: How-to guides
   items:
+    - name: Enable BitLocker on Windows Server
+      href: enable-server.md
     - name: Configure BitLocker
       href: configure.md
-    - name: Configure BitLocker on Windows Server
-      href: configure-server.md
     - name: BitLocker management tools
       href: manage.md
     - name: Protect cluster shared volumes and storage area networks with BitLocker
