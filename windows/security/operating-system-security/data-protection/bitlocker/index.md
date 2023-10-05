@@ -46,7 +46,6 @@ BitLocker has the following requirements:
     - must be formatted with the FAT32 file system on computers that use UEFI-based firmware, or with the NTFS file system on computers that use BIOS firmware
     - it's recommended that to be approximately 350 MB in size. After BitLocker is turned on, it should have approximately 250 MB of free space
 
-
 > [!IMPORTANT]
 > When installed on a new device, Windows automatically creates the partitions that are required for BitLocker.
 >
@@ -54,6 +53,10 @@ BitLocker has the following requirements:
 
 > [!NOTE]
 > When installing the BitLocker optional component on a server, the *Enhanced Storage* feature must be installed. The feature is used to support hardware encrypted drives.
+
+## Device Encryption
+
+*Device Encryption* is a security feature that provides a simple way for some devices to enable BitLocker encryption automatically. Device Encryption requires a device to meet either [Modern Standby](/windows-hardware/design/device-experiences/modern-standby) or HSTI security requirements, and have no externally accessible ports that allow DMA access.
 
 [!INCLUDE [bitlocker](../../../../../includes/licensing/bitlocker-enablement.md)]
 

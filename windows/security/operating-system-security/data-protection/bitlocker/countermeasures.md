@@ -124,8 +124,8 @@ Mitigation:
 
   - **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **File Explorer** > **Show hibernate in the power options menu**
   - **Computer Configuration** > **Policies** > **Administrative Templates** > **Power Management** > **Sleep Settings** >
-      - **Allow standby states (S1-S3) when sleeping (plugged in)**
-      - **Allow standby states (S1-S3) when sleeping (on battery)**
+    - **Allow standby states (S1-S3) when sleeping (plugged in)**
+    - **Allow standby states (S1-S3) when sleeping (on battery)**
 
 > [!IMPORTANT]
 > These settings are **not configured** by default.
@@ -137,3 +137,9 @@ For secure administrative workstations, it's recommended to:
 - use a TPM with PIN protector
 - disable standby power management
 - shut down or hibernate the device before it leaves the control of an authorized user
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> Learn how to plan for a BitLocker deployment in your organization:
+> [Plan for a BitLocker deployment >](plan.md)

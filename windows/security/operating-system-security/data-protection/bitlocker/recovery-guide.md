@@ -28,7 +28,7 @@ BitLocker recovery is the process by which access to a BitLocker-protected drive
 
 The following list provides examples of specific events that will cause BitLocker to enter recovery mode when attempting to start the operating system drive:
 
-- On devices that use BitLocker drive encryption or [BitLocker Device Encryption](bitlocker-device-encryption.md), when an attack is detected the device will reboot and enter into BitLocker recovery mode. To take advantage of this functionality, administrators can set the **Interactive logon: Machine account lockout threshold** Group Policy setting located in **Computer Configuration** > **Windows Settings** > **Security Settings** > **Local Policies** > **Security Options** in the Local Group Policy Editor. Or they can use the **MaxFailedPasswordAttempts** policy of [Exchange ActiveSync](/Exchange/clients/exchange-activesync/exchange-activesync) (also configurable through [Microsoft Intune](/mem/intune)), to limit the number of failed password attempts before the device goes into Device Lockout.
+- On devices that use BitLocker drive encryption or [Device Encryption](index.md#device-encryption), when an attack is detected the device will reboot and enter into BitLocker recovery mode. To take advantage of this functionality, administrators can set the **Interactive logon: Machine account lockout threshold** Group Policy setting located in **Computer Configuration** > **Windows Settings** > **Security Settings** > **Local Policies** > **Security Options** in the Local Group Policy Editor. Or they can use the **MaxFailedPasswordAttempts** policy of [Exchange ActiveSync](/Exchange/clients/exchange-activesync/exchange-activesync) (also configurable through [Microsoft Intune](/mem/intune)), to limit the number of failed password attempts before the device goes into Device Lockout.
 
 - On devices with TPM 1.2, changing the BIOS or firmware boot device order causes BitLocker recovery. However, devices with TPM 2.0 don't start BitLocker recovery in this case. TPM 2.0 doesn't consider a firmware change of boot device order as a security threat because the OS Boot Loader isn't compromised.
 
@@ -301,9 +301,9 @@ If the USB flash drive that contains the startup key has been lost, then drive m
 
 This error occurs if the firmware is updated. As a best practice, BitLocker should be suspended before making changes to the firmware. Protection should then be resumed after the firmware update has completed. Suspending BitLocker prevents the computer from going into recovery mode. However, if changes were made when BitLocker protection was on, the recovery password can be used to unlock the drive and the platform validation profile will be updated so that recovery won't occur the next time.
 
-## Windows RE and BitLocker Device Encryption
+## Windows RE and Device Encryption
 
-Windows Recovery Environment (RE) can be used to recover access to a drive protected by [BitLocker Device Encryption](bitlocker-device-encryption.md). If a device is unable to boot after two failures, Startup Repair automatically starts. When Startup Repair is launched automatically due to boot failures, it executes only operating system and driver file repairs if the boot logs or any available crash dump points to a specific corrupted file. Devices that include firmware to support specific TPM measurements for *PCR 7*, the TPM can validate that Windows RE is a trusted operating environment and unlock any BitLocker-protected drives if Windows RE hasn't been modified. If the Windows RE environment has been modified, for example, the TPM has been disabled, the drives stay locked until the BitLocker recovery key is provided. If Startup Repair isn't able to run automatically from the PC and instead, Windows RE is manually started from a repair disk, the BitLocker recovery key must be provided to unlock the BitLocker-protected drives.
+Windows Recovery Environment (RE) can be used to recover access to a drive protected by [Device Encryption](index.md#device-encryption). If a device is unable to boot after two failures, Startup Repair automatically starts. When Startup Repair is launched automatically due to boot failures, it executes only operating system and driver file repairs if the boot logs or any available crash dump points to a specific corrupted file. Devices that include firmware to support specific TPM measurements for *PCR 7*, the TPM can validate that Windows RE is a trusted operating environment and unlock any BitLocker-protected drives if Windows RE hasn't been modified. If the Windows RE environment has been modified, for example, the TPM has been disabled, the drives stay locked until the BitLocker recovery key is provided. If Startup Repair isn't able to run automatically from the PC and instead, Windows RE is manually started from a repair disk, the BitLocker recovery key must be provided to unlock the BitLocker-protected drives.
 
 Windows RE will also ask for a BitLocker recovery key when a **Remove everything** reset from Windows RE is started on a device that uses **TPM + PIN** or **Password for OS drive** protectors. If BitLocker recovery is started on a keyboardless device with TPM-only protection, Windows RE, not the boot manager, will ask for the BitLocker recovery key. After the key is entered, Windows RE troubleshooting tools can be accessed, or Windows can be started normally.
 
@@ -416,7 +416,6 @@ There are rules governing which hint is shown during the recovery (in the order 
 | Creation time              | **1PM**  |
 | Key ID                     | A564F193 |
 
-
 | Custom URL                 | No       |
 |----------------------------|----------|
 | Saved to Microsoft Account | No       |
@@ -507,7 +506,6 @@ The recovery password and be invalidated and reset in two ways:
     > [!WARNING]
     > The braces `{}` must be included in the ID string.
 
-
 ## Retrieve the BitLocker key package
 
 Two methods can be used to retrieve the key package as described in Using Additional Recovery Information:
@@ -518,7 +516,6 @@ Export a new key package from an unlocked, BitLocker-protected volume. Local adm
 
    strRecoveryPassword = objFveInfo.Get("msFVE-RecoveryPassword")
    strKeyPackage = objFveInfo.Get("msFVE-KeyPackage")
-
 
 ### Example: retrieve Bitlocker recovery keys for a Microsoft Entra joined device
 
@@ -568,7 +565,6 @@ Device name: DESKTOP-53O32QI
  Key id: 6a7e153f-d5e9-4547-96d6-174ff0d0bdb4
  BitLocker recovery key: 241846-437393-298925-499389-123255-123640-709808-330682
 ```
-
 
 ### Repair tool
 

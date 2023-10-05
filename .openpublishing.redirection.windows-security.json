@@ -7416,12 +7416,12 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "windows/security/operating-system-security/data-protection/bitlocker/bitlocker-device-encryption-overview-windows-10.md",
-      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/bitlocker-device-encryption",
+      "source_path": "windows/security/operating-system-security/data-protection/bitlocker/bitlocker-group-policy-settings.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/policy-settings",
       "redirect_document_id": false
     },
     {
-      "source_path": "windows/security/operating-system-security/data-protection/bitlocker/bitlocker-group-policy-settings.md",
+      "source_path": "windows/security/operating-system-security/data-protection/bitlocker/bitlocker-deployment-comparison.md",
       "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/policy-settings",
       "redirect_document_id": false
     },
@@ -7436,12 +7436,22 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "windows/security/operating-system-security/data-protection/bitlocker/bitlocker-use-bitlocker-recovery-password-viewer.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/recovery-password-viewer",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "windows/security/operating-system-security/data-protection/bitlocker/bitlocker-how-to-enable-network-unlock.md",
       "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/network-unlock",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/security/operating-system-security/data-protection/bitlocker/bitlocker-basic-deployment.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/configure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/data-protection/bitlocker/bitlocker-management-for-enterprises.md",
       "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/configure",
       "redirect_document_id": false
     },
@@ -7461,23 +7471,13 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "windows/security/operating-system-security/data-protection/bitlocker/bitlocker-deployment-comparison.md",
-      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/policy-settings",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "windows/security/operating-system-security/data-protection/bitlocker/bitlocker-how-to-deploy-on-windows-server.md",
       "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/enable-server",
       "redirect_document_id": false
     },
     {
-      "source_path": "windows/security/operating-system-security/data-protection/bitlocker/bitlocker-management-for-enterprises.md",
-      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/configure",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "windows/security/operating-system-security/data-protection/bitlocker/bitlocker-use-bitlocker-recovery-password-viewer.md",
-      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/recovery-password-viewer.md",
+      "source_path": "windows/security/operating-system-security/data-protection/bitlocker/bitlocker-device-encryption-overview-windows-10.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker#device-encryption",
       "redirect_document_id": false
     }
   ]
