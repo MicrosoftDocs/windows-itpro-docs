@@ -34,7 +34,7 @@ The following methodology was used to derive these network endpoints:
 2. Leave the device(s) running idle for a week ("idle" means a user isn't interacting with the system/device).
 3. Use globally accepted network protocol analyzer/capturing tools and log all background egress traffic.
 4. Compile reports on traffic going to public IP addresses.
-5. The test virtual machine(s) was logged into using a local account, and wasn't joined to a domain or Azure Active Directory.
+5. The test virtual machine(s) was logged into using a local account, and wasn't joined to a domain or Microsoft Entra ID.
 6. All traffic was captured in our lab using an IPV4 network. Therefore, no IPV6 traffic is reported here.
 7. These tests were conducted in an approved Microsoft lab. It's possible your results may be different.
 8. These tests were conducted for one week, but if you capture traffic for longer you may have different results.
