@@ -2,7 +2,7 @@
 title: BitLocker countermeasures
 description: Learn about technologies and features to protect against attacks on the BitLocker encryption key. 
 ms.topic: conceptual
-ms.date: 10/02/2023
+ms.date: 10/05/2023
 ---
 
 # BitLocker countermeasures
@@ -142,4 +142,5 @@ For secure administrative workstations, it's recommended to:
 
 > [!div class="nextstepaction"]
 > Learn how to plan for a BitLocker deployment in your organization:
+>
 > [Plan for a BitLocker deployment >](plan.md)

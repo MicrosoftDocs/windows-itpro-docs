@@ -67,4 +67,6 @@ BitLocker has the following requirements:
 
 > [!div class="nextstepaction"]
 > Learn about technologies and features to protect against attacks on the BitLocker encryption key:
+>
+>
 > [BitLocker countermeasures >](countermeasures.md)
