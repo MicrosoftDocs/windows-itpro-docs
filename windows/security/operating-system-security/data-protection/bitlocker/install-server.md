@@ -7,7 +7,7 @@ ms.date: 10/05/2023
 
 # Install BitLocker on Windows Server
 
-For all Windows Server editions, BitLocker is not installed by default, but it can be installed using Server Manager or Windows PowerShell cmdlets. This article explains how to install BitLocker on Windows Server.
+For all Windows Server editions, BitLocker isn't installed by default, but it can be installed using Server Manager or Windows PowerShell cmdlets. This article explains how to install BitLocker on Windows Server.
 
 > [!NOTE]
 > To install BitLocker you must have administrator privileges.
@@ -25,7 +25,7 @@ For all Windows Server editions, BitLocker is not installed by default, but it c
    > The **Enhanced Storage** feature is a required feature for enabling BitLocker. This feature enables support for encrypted hard drives on capable systems.
 1. Select **Next** and under **Confirmation** select **Install**
 
-The BitLocker feature requires a restart for to complete its installation. Selecting the **Restart the destination server automatically if required** option in the **Confirmation** pane forces a restart of the server after installation is complete
+The BitLocker feature requires a restart to complete its installation. Selecting the **Restart the destination server automatically if required** option in the **Confirmation** pane forces a restart of the server after installation is complete
 
 ## Install BitLocker with Windows PowerShell
 
@@ -77,10 +77,13 @@ To install BitLocker using the `dism.exe` module, use the following command:
 Enable-WindowsOptionalFeature -Online -FeatureName BitLocker -All
 ```
 
-This Command Prompts the user for a reboot. The `Enable-WindowsOptionalFeature` cmdlet doesn't offer support for forcing a reboot of the server. This command doesn't include installation of the management tools for BitLocker. For a complete installation of BitLocker and all available management tools, use the following command:
+The command doesn't include installation of the management tools for BitLocker, but you can do a complete installation of BitLocker and all available management tools with the following command:
 
 ```powershell
 Enable-WindowsOptionalFeature -Online -FeatureName BitLocker, BitLocker-Utilities -All
 ```
+
+> [!NOTE]
+> When using `Enable-WindowsOptionalFeature`, the administrator is prompted to reboot the server, as the cmdlet doesn't have support for forcing a reboot.
 
 After the server reboots, you can use BitLocker.
