@@ -5,8 +5,6 @@ items:
   href: countermeasures.md
 - name: Plan for a BitLocker deployment
   href: plan.md
-- name: BitLocker device encryption
-  href: bitlocker-device-encryption.md
 - name: How-to guides
   items:
     - name: Enable BitLocker on Windows Server

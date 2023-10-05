@@ -40,16 +40,17 @@ BitLocker has the following requirements:
 
 - The hard disk must be partitioned with at least two drives:
   - The *operating system drive* (or boot drive) contains the OS and its support files. It must be formatted with the NTFS file system
-  - The *system drive* contains the files that are needed to load Windows after the firmware has prepared the system hardware. BitLocker isn't enabled on this drive. For BitLocker to work, the system drive:
+  - The *system drive* contains files required to boot, decrypt, and load the operating system. BitLocker isn't enabled on this drive. For BitLocker to work, the system drive:
     - must not be encrypted
     - must differ from the operating system drive
     - must be formatted with the FAT32 file system on computers that use UEFI-based firmware, or with the NTFS file system on computers that use BIOS firmware
     - it's recommended that to be approximately 350 MB in size. After BitLocker is turned on, it should have approximately 250 MB of free space
 
+
 > [!IMPORTANT]
 > When installed on a new device, Windows automatically creates the partitions that are required for BitLocker.
 >
-> An encrypted partition can't be marked as active.
+> If the drive was prepared as a single contiguous space, BitLocker requires a new volume to hold the boot files. `BdeHdCfg.exe` can create the volume. For more information about using the tool, see [Bdehdcfg](/windows-server/administration/windows-commands/bdehdcfg) in the Command-Line Reference.
 
 > [!NOTE]
 > When installing the BitLocker optional component on a server, the *Enhanced Storage* feature must be installed. The feature is used to support hardware encrypted drives.
