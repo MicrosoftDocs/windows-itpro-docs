@@ -11,12 +11,12 @@ items:
       href: enable-server.md
     - name: Configure BitLocker
       href: configure.md
-    - name: BitLocker operations guide
-      href: operations-guide.md
     - name: Network Unlock
       href: network-unlock.md
     - name: Cluster shared volumes and storage area networks
       href: csv-san.md
+    - name: BitLocker operations guide
+      href: operations-guide.md
     - name: BitLocker recovery guide
       href: recovery-guide.md
     - name: BitLocker Recovery Password Viewer
