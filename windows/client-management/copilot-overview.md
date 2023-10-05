@@ -11,7 +11,9 @@ appliesto:
 
 >**Looking for consumer information?** See [Welcome to Copilot in Windows](https://support.microsoft.com/windows/welcome-to-copilot-in-windows-675708af-8c16-4675-afeb-85a5a476ccb0).
 
-Copilot in Windows provides centralized generative AI assistance to your users right from the Windows desktop. Copilot in Windows is a bit different from Copilot in Edge, which provides assistance in the browser. However, both user experiences can share the same underlying chat provider platform. 
+Copilot in Windows provides centralized generative AI assistance to your users right from the Windows desktop. Copilot in Windows appears as a side bar on the Windows desktop, docked to the right.  
+
+Copilot in Windows is a bit different from [Bing Chat in the Microsoft Edge sidebar](https://www.microsoft.com/edge/features/bing-chat), which provides assistance in the browser, since it can also perform actions such as changing Windows settings or performing common tasks in Windows. However, both user experiences can share the same underlying chat provider platform. 
 
 ## Chat provider platforms for Copilot in Windows
 
