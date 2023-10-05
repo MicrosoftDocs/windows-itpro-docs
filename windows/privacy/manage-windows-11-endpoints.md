@@ -7,7 +7,7 @@ ms.localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
 manager: laurawi
-ms.date: 10/02/2023
+ms.date: 10/06/2023
 ms.topic: reference
 ---
 
@@ -78,6 +78,9 @@ To view endpoints for non-Enterprise Windows 11 editions, see [Windows 11 connec
 |Device metadata|||[Learn how to turn off traffic to all of the following endpoint(s) for device metadata.](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#4-device-metadata-retrieval)|
 ||The following endpoint is used to retrieve device metadata. If you turn off traffic for this endpoint, metadata won't be updated for the device.|HTTP|dmd.metaservices.microsoft.com|
 |Diagnostic Data| ||[Learn how to turn off traffic to all of the following endpoint(s) for diagnostic data.](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-priv-feedback)|
+|||TLSv1.2|functional.events.data.microsoft.com|
+|||HTTP|browser.events.data.msn.com|
+|||TLSv1.2/HTTP|www.microsoft.com|
 ||The following endpoints are used by the Connected User Experiences and Telemetry component and connects to the Microsoft Data Management service. If you turn off traffic for this endpoint, diagnostic and usage information, which helps Microsoft find and fix problems and improve our products and services, won't be sent back to Microsoft.|TLSv1.2/HTTP|self.events.data.microsoft.com|
 |||TLSv1.2/HTTPS/HTTP|v10.events.data.microsoft.com|
 ||The following endpoints are used by Windows Error Reporting. To turn off traffic for these endpoints, enable the following Group Policy: Administrative Templates > Windows Components > Windows Error Reporting > Disable Windows Error Reporting. This means error reporting information won't be sent back to Microsoft.|TLSv1.2|telecommand.telemetry.microsoft.com|
@@ -164,6 +167,7 @@ To view endpoints for non-Enterprise Windows 11 editions, see [Windows 11 connec
 |||TLSv1.2/HTTP|fd.api.iris.microsoft.com|
 |||TLSv1.2|staticview.msn.com|
 |Windows Update|||[Learn how to turn off traffic to all of the following endpoint(s) for Windows Update.](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-updates)|
+|||TLSv1.2|definitionupdates.microsoft.com|
 ||The following endpoints are used for Windows Update downloads of apps and OS updates, including HTTP downloads or HTTP downloads blended with peers. If you turn off traffic for this endpoint, Windows Update downloads won't be managed, as critical metadata that is used to make downloads more resilient is blocked. Downloads may be impacted by corruption (resulting in re-downloads of full files). Additionally, downloads of the same update by multiple devices on the same local network won't use peer devices for bandwidth reduction.|TLSv1.2/HTTPS/HTTP|*.prod.do.dsp.mp.microsoft.com|
 |||HTTP|emdl.ws.microsoft.com|
 ||The following endpoints are used to download operating system patches, updates, and apps from Microsoft Store. If you turn off traffic for these endpoints, the device won't be able to download updates for the operating system.|TLSv1.2/HTTPS/HTTP|*.dl.delivery.mp.microsoft.com|
