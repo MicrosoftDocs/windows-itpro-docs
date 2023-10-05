@@ -4,7 +4,7 @@ description: Learn more about the DMClient CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 08/10/2023
+ms.date: 09/27/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -80,10 +80,10 @@ The following list shows the DMClient configuration service provider nodes:
       - [HelpWebsite](#deviceproviderprovideridhelpwebsite)
       - [HWDevID](#deviceproviderprovideridhwdevid)
       - [LinkedEnrollment](#deviceproviderprovideridlinkedenrollment)
+        - [DiscoveryEndpoint](#deviceproviderprovideridlinkedenrollmentdiscoveryendpoint)
         - [Enroll](#deviceproviderprovideridlinkedenrollmentenroll)
         - [EnrollStatus](#deviceproviderprovideridlinkedenrollmentenrollstatus)
         - [LastError](#deviceproviderprovideridlinkedenrollmentlasterror)
-        - [Priority](#deviceproviderprovideridlinkedenrollmentpriority)
         - [Unenroll](#deviceproviderprovideridlinkedenrollmentunenroll)
       - [ManagementServerAddressList](#deviceproviderprovideridmanagementserveraddresslist)
       - [ManagementServerToUpgradeTo](#deviceproviderprovideridmanagementservertoupgradeto)
@@ -2411,6 +2411,45 @@ The interior node for linked enrollment.
 
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-End -->
 
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-DiscoveryEndpoint-Begin -->
+##### Device/Provider/{ProviderID}/LinkedEnrollment/DiscoveryEndpoint
+
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-DiscoveryEndpoint-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-DiscoveryEndpoint-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-DiscoveryEndpoint-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/LinkedEnrollment/DiscoveryEndpoint
+```
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-DiscoveryEndpoint-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-DiscoveryEndpoint-Description-Begin -->
+<!-- Description-Source-DDF -->
+Endpoint Discovery is the process where a specific URL (the "discovery endpoint") is accessed, which returns a directory of endpoints for using the system including enrollment. On Get, if the endpoint isn't set, client will return an rmpty string with S_OK.
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-DiscoveryEndpoint-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-DiscoveryEndpoint-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-DiscoveryEndpoint-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-DiscoveryEndpoint-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-DiscoveryEndpoint-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-DiscoveryEndpoint-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-DiscoveryEndpoint-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-LinkedEnrollment-DiscoveryEndpoint-End -->
+
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-Enroll-Begin -->
 ##### Device/Provider/{ProviderID}/LinkedEnrollment/Enroll
 
@@ -2428,12 +2467,12 @@ The interior node for linked enrollment.
 
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-Enroll-Description-Begin -->
 <!-- Description-Source-DDF -->
-Trigger to enroll for the Linked Enrollment.
+This is an execution node and will trigger a silent Declared Configuration unenroll, there is no user interaction needed. On un-enrollment, all the settings/resources set by Declared Configuration will be rolled back (rollback details will be covered later).
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-Enroll-Description-End -->
 
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-Enroll-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-This is an execution node and will trigger a silent MMP-C enrollment, using the Azure Active Directory device token pulled from the Azure AD-joined device. There is no user interaction needed.
+This is an execution node and will trigger a silent Declared Configuration enrollment, using the AAD device token pulled from the Azure AD-joined device. There is no user interaction needed. When the **DiscoveryEndpoint** is not set, the Enroll node will fail with `ERROR_FILE_NOT_FOUND (0x80070002)` and there is no scheduled task created for dual enrollment.
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-Enroll-Editable-End -->
 
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-Enroll-DFProperties-Begin -->
@@ -2468,7 +2507,7 @@ This is an execution node and will trigger a silent MMP-C enrollment, using the 
 
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-EnrollStatus-Description-Begin -->
 <!-- Description-Source-DDF -->
-Returns the current enrollment or un-enrollment status of the linked enrollment.
+Returns the current enrollment or un-enrollment status of the linked enrollment. Supports Get only.
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-EnrollStatus-Description-End -->
 
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-EnrollStatus-Editable-Begin -->
@@ -2523,7 +2562,7 @@ Returns the current enrollment or un-enrollment status of the linked enrollment.
 
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-LastError-Description-Begin -->
 <!-- Description-Source-DDF -->
-return the last error for enroll/unenroll.
+Supports Get Only. Returns the HRESULT for the last error when enroll/unenroll fails.
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-LastError-Description-End -->
 
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-LastError-Editable-Begin -->
@@ -2544,54 +2583,6 @@ return the last error for enroll/unenroll.
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-LastError-Examples-End -->
 
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-LastError-End -->
-
-<!-- Device-Provider-{ProviderID}-LinkedEnrollment-Priority-Begin -->
-##### Device/Provider/{ProviderID}/LinkedEnrollment/Priority
-
-<!-- Device-Provider-{ProviderID}-LinkedEnrollment-Priority-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 [10.0.19042.2193] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.2193] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.2193] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.918] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
-<!-- Device-Provider-{ProviderID}-LinkedEnrollment-Priority-Applicability-End -->
-
-<!-- Device-Provider-{ProviderID}-LinkedEnrollment-Priority-OmaUri-Begin -->
-```Device
-./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/LinkedEnrollment/Priority
-```
-<!-- Device-Provider-{ProviderID}-LinkedEnrollment-Priority-OmaUri-End -->
-
-<!-- Device-Provider-{ProviderID}-LinkedEnrollment-Priority-Description-Begin -->
-<!-- Description-Source-DDF -->
-Optional. Allowed value is 0 or 1. 0 means the main enrollment has authority for MDM settings and resources, 1 means the linked enrollment has authority.
-<!-- Device-Provider-{ProviderID}-LinkedEnrollment-Priority-Description-End -->
-
-<!-- Device-Provider-{ProviderID}-LinkedEnrollment-Priority-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- Device-Provider-{ProviderID}-LinkedEnrollment-Priority-Editable-End -->
-
-<!-- Device-Provider-{ProviderID}-LinkedEnrollment-Priority-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | `int` |
-| Access Type | Add, Delete, Get, Replace |
-<!-- Device-Provider-{ProviderID}-LinkedEnrollment-Priority-DFProperties-End -->
-
-<!-- Device-Provider-{ProviderID}-LinkedEnrollment-Priority-AllowedValues-Begin -->
-**Allowed values**:
-
-| Value | Description |
-|:--|:--|
-| 0 | The main enrollment has priority over linked enrollment. |
-| 1 | The linked enrollment has priority over the main enrollment. |
-<!-- Device-Provider-{ProviderID}-LinkedEnrollment-Priority-AllowedValues-End -->
-
-<!-- Device-Provider-{ProviderID}-LinkedEnrollment-Priority-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- Device-Provider-{ProviderID}-LinkedEnrollment-Priority-Examples-End -->
-
-<!-- Device-Provider-{ProviderID}-LinkedEnrollment-Priority-End -->
 
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-Unenroll-Begin -->
 ##### Device/Provider/{ProviderID}/LinkedEnrollment/Unenroll
@@ -2615,7 +2606,7 @@ Trigger Unenroll for the Linked Enrollment.
 
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-Unenroll-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-This is an execution node and will trigger a silent MMP-C unenroll, there is no user interaction needed. On un-enrollment, all the settings/resources set by MMPC will be rolled back.
+This is an execution node and will trigger a silent Declared Configuration unenroll, without any user interaction. On un-enrollment, all the settings/resources set by Declared Configuration will be rolled back.
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-Unenroll-Editable-End -->
 
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-Unenroll-DFProperties-Begin -->
@@ -3973,7 +3964,7 @@ The following SyncML shows how to remotely unenroll the device. This command sho
              <LocURI>./Vendor/MSFT/DMClient/Provider/<ProviderID>/Unenroll</LocURI>
           </Target>
           <Meta>
-             <Format xmlns=”syncml:metinf”>chr</Format>
+             <Format xmlns="syncml:metinf">chr</Format>
           </Meta>
           <Data>TestMDMServer</Data>
           <!-- Data Field in Threshold is now IGNORED -->

@@ -1933,7 +1933,7 @@ To turn off these recommendations, you can use any of the following methods:
 - In Group Policy, set the "Remove Recommended from Start Menu" policy to Enabled under **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar**.
 - In an MDM solution, such as Microsoft Intune, you can use the [HideRecentJumplists](/windows/client-management/mdm/policy-csp-start#hiderecentjumplists) setting in the Start Policy configuration service provider (CSP).
 - In the registry, you can set **HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\Start_TrackDocs** to 0.
-- In the UI, you can turn off **Show recommendations for tips, shortcuts, new apps, and more** under **Settings** > **Personalization** > **Start**.
+- In the UI, you can turn off **Show recently opened items in Start, Jump Lists, and File Explorer** under **Settings** > **Personalization** > **Start**.
 
 ### <a href="" id="bkmk-allowedtraffic"></a> Allowed traffic list for Windows Restricted Traffic Limited Functionality Baseline
 
