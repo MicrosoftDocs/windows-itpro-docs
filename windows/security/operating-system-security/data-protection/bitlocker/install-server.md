@@ -1,13 +1,13 @@
 ---
-title: Enable BitLocker on Windows Server
-description: Learn how to enable BitLocker on Windows Server
+title: Install BitLocker on Windows Server
+description: Learn how to install BitLocker on Windows Server.
 ms.topic: how-to
 ms.date: 10/05/2023
 ---
 
-# Enable BitLocker on Windows Server
+# Install BitLocker on Windows Server
 
-For all Windows Server editions, BitLocker is not installed by default, but it can be installed using Server Manager or Windows PowerShell cmdlets. This article explains how to enable BitLocker on Windows Server.
+For all Windows Server editions, BitLocker is not installed by default, but it can be installed using Server Manager or Windows PowerShell cmdlets. This article explains how to install BitLocker on Windows Server.
 
 > [!NOTE]
 > To install BitLocker you must have administrator privileges.

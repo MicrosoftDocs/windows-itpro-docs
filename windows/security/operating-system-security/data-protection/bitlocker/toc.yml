@@ -7,8 +7,8 @@ items:
   href: plan.md
 - name: How-to guides
   items:
-    - name: Enable BitLocker on Windows Server
-      href: enable-server.md
+    - name: Install BitLocker on Windows Server
+      href: install-server.md
     - name: Configure BitLocker
       href: configure.md
     - name: Network Unlock
