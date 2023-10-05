@@ -4,7 +4,7 @@ description: Learn about the ADMX-backed policies in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 08/29/2023
+ms.date: 10/03/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -2144,6 +2144,7 @@ This article lists the ADMX-backed policies in Policy CSP.
 - [EnableAdditionalSources](policy-csp-desktopappinstaller.md)
 - [EnableAllowedSources](policy-csp-desktopappinstaller.md)
 - [EnableMSAppInstallerProtocol](policy-csp-desktopappinstaller.md)
+- [EnableWindowsPackageManagerCommandLineInterfaces](policy-csp-desktopappinstaller.md)
 
 ## DeviceInstallation
 
@@ -2416,7 +2417,10 @@ This article lists the ADMX-backed policies in Policy CSP.
 - [InternetZoneLaunchingApplicationsAndFilesInIFRAME](policy-csp-internetexplorer.md)
 - [RestrictedSitesZoneLaunchingApplicationsAndFilesInIFRAME](policy-csp-internetexplorer.md)
 - [InternetZoneLogonOptions](policy-csp-internetexplorer.md)
+- [IntranetZoneLogonOptions](policy-csp-internetexplorer.md)
+- [TrustedSitesZoneLogonOptions](policy-csp-internetexplorer.md)
 - [RestrictedSitesZoneLogonOptions](policy-csp-internetexplorer.md)
+- [LocalMachineZoneLogonOptions](policy-csp-internetexplorer.md)
 - [DisableDeletingUserVisitedWebsites](policy-csp-internetexplorer.md)
 - [DisableIgnoringCertificateErrors](policy-csp-internetexplorer.md)
 - [PreventPerUserInstallationOfActiveXControls](policy-csp-internetexplorer.md)

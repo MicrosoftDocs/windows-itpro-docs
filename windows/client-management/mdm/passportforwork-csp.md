@@ -4,7 +4,7 @@ description: Learn more about the PassportForWork CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 08/10/2023
+ms.date: 10/03/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -32,6 +32,7 @@ The following list shows the PassportForWork configuration service provider node
 - ./Device/Vendor/MSFT/PassportForWork
   - [{TenantId}](#devicetenantid)
     - [Policies](#devicetenantidpolicies)
+      - [DisablePostLogonCredentialCaching](#devicetenantidpoliciesdisablepostlogoncredentialcaching)
       - [DisablePostLogonProvisioning](#devicetenantidpoliciesdisablepostlogonprovisioning)
       - [EnablePinRecovery](#devicetenantidpoliciesenablepinrecovery)
       - [EnableWindowsHelloProvisioningForSecurityKeys](#devicetenantidpoliciesenablewindowshelloprovisioningforsecuritykeys)
@@ -163,6 +164,55 @@ Root node for policies.
 <!-- Device-{TenantId}-Policies-Examples-End -->
 
 <!-- Device-{TenantId}-Policies-End -->
+
+<!-- Device-{TenantId}-Policies-DisablePostLogonCredentialCaching-Begin -->
+#### Device/{TenantId}/Policies/DisablePostLogonCredentialCaching
+
+<!-- Device-{TenantId}-Policies-DisablePostLogonCredentialCaching-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- Device-{TenantId}-Policies-DisablePostLogonCredentialCaching-Applicability-End -->
+
+<!-- Device-{TenantId}-Policies-DisablePostLogonCredentialCaching-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/PassportForWork/{TenantId}/Policies/DisablePostLogonCredentialCaching
+```
+<!-- Device-{TenantId}-Policies-DisablePostLogonCredentialCaching-OmaUri-End -->
+
+<!-- Device-{TenantId}-Policies-DisablePostLogonCredentialCaching-Description-Begin -->
+<!-- Description-Source-DDF -->
+Disable caching of the Windows Hello for Business credential after sign-in.
+<!-- Device-{TenantId}-Policies-DisablePostLogonCredentialCaching-Description-End -->
+
+<!-- Device-{TenantId}-Policies-DisablePostLogonCredentialCaching-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-{TenantId}-Policies-DisablePostLogonCredentialCaching-Editable-End -->
+
+<!-- Device-{TenantId}-Policies-DisablePostLogonCredentialCaching-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `bool` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | False |
+<!-- Device-{TenantId}-Policies-DisablePostLogonCredentialCaching-DFProperties-End -->
+
+<!-- Device-{TenantId}-Policies-DisablePostLogonCredentialCaching-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| false (Default) | Disabled. |
+| true | Enabled. |
+<!-- Device-{TenantId}-Policies-DisablePostLogonCredentialCaching-AllowedValues-End -->
+
+<!-- Device-{TenantId}-Policies-DisablePostLogonCredentialCaching-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-{TenantId}-Policies-DisablePostLogonCredentialCaching-Examples-End -->
+
+<!-- Device-{TenantId}-Policies-DisablePostLogonCredentialCaching-End -->
 
 <!-- Device-{TenantId}-Policies-DisablePostLogonProvisioning-Begin -->
 #### Device/{TenantId}/Policies/DisablePostLogonProvisioning
