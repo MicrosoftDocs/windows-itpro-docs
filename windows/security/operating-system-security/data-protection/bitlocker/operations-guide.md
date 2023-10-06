@@ -89,7 +89,7 @@ Volume C: [Local Disk]
 
 #### [:::image type="icon" source="images/controlpanel.svg"::: **Control Panel**](#tab/controlpanel)
 
-Checking BitLocker status with theControl Panel is a common method used by most users. Once opened, the status for each volume is displayed next to the volume description and drive letter. Available status return values with applet include:
+Checking BitLocker status with the Control Panel is a common method used by most users. Once opened, the status for each volume is displayed next to the volume description and drive letter. Available status return values with applet include:
 
 | Status | Description |
 | - | - |
@@ -98,7 +98,7 @@ Checking BitLocker status with theControl Panel is a common method used by most 
 | **Suspended** | BitLocker is suspended and not actively protecting the volume |
 | **Waiting for Activation**| BitLocker is enabled with a clear protector key and requires further action to be fully protected|
 
-If a drive is pre-provisioned with BitLocker, a status of **Waiting for Activation** displays with a yellow exclamation icon on the volume. This status means that there was only a clear protector used when encrypting the volume. In this case, the volume isn't in a protected state and needs to have a secure key added to the volume before the drive is fully protected. Administrators can use theControl Panel, PowerShell or `manage-bde.exe` tool to add an appropriate key protector. Once complete, the Control Panel will update to reflect the new status.
+If a drive is pre-provisioned with BitLocker, a status of **Waiting for Activation** displays with a yellow exclamation icon on the volume. This status means that there was only a clear protector used when encrypting the volume. In this case, the volume isn't in a protected state and needs to have a secure key added to the volume before the drive is fully protected. Administrators can use the Control Panel, PowerShell or `manage-bde.exe` tool to add an appropriate key protector. Once complete, the Control Panel will update to reflect the new status.
 
 ---
 
@@ -394,7 +394,7 @@ or additional protectors can be added to the volume first. It's recommended to a
 
 #### [:::image type="icon" source="images/controlpanel.svg"::: **Control Panel**](#tab/controlpanel)
 
-Using theControl Panel, administrators can choose **Turn on BitLocker** to start the BitLocker Drive Encryption wizard and add a protector, like PIN for an operating system volume (or password if no TPM exists), or a password or smart card protector to a data volume.
+Using the Control Panel, administrators can choose **Turn on BitLocker** to start the BitLocker Drive Encryption wizard and add a protector, like PIN for an operating system volume (or password if no TPM exists), or a password or smart card protector to a data volume.
 The drive security window displays prior to changing the volume status. Selecting **Activate BitLocker** will complete the encryption process.
 
 Once BitLocker protector activation is completed, the completion notice is displayed.
@@ -437,11 +437,11 @@ manage-bde.exe -status C:
 
 #### [:::image type="icon" source="images/controlpanel.svg"::: **Control Panel**](#tab/controlpanel)
 
-BitLocker decryption using theControl Panel is done using a wizard. TheControl Panel can be called from Windows Explorer or by opening it directly. After opening the BitLockerControl Panel applet, users can select the **Turn off BitLocker** option to begin the process.\
-After selecting the **Turn off BitLocker** option, the user chooses to continue by clicking the confirmation dialog. With **Turn off BitLocker** confirmed, the drive decryption process begins and reports status to theControl Panel.
+BitLocker decryption using the Control Panel is done using a wizard. TheControl Panel can be called from Windows Explorer or by opening it directly. After opening the BitLockerControl Panel applet, users can select the **Turn off BitLocker** option to begin the process.\
+After selecting the **Turn off BitLocker** option, the user chooses to continue by clicking the confirmation dialog. With **Turn off BitLocker** confirmed, the drive decryption process begins and reports status to the Control Panel.
 
 TheControl Panel doesn't report decryption progress but displays it in the notification area of the task bar. Selecting the notification area icon will open a modal dialog with progress.
 
-Once decryption is complete, the drive updates its status in theControl Panel and becomes available for encryption.
+Once decryption is complete, the drive updates its status in the Control Panel and becomes available for encryption.
 
 ---

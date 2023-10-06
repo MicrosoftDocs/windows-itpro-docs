@@ -22,11 +22,6 @@ Passwords must be at least 8 characters. To configure a greater minimum length f
 
 If you disable or don't configure this policy setting, the default length constraint of eight characters applies to operating system drive passwords, and no complexity checks occur.
 
-> [!IMPORTANT]
-> Passwords can't be used if FIPS-compliance is enabled.
->
-> The **System cryptography: Use FIPS-compliant algorithms for encryption, hashing, and signing** policy setting, which is located at **Computer Configuration** > **Windows Settings** > **Security Settings** > **Local Policies** > **Security Options** specifies whether FIPS-compliance is enabled.
-
 |  | Path |
 |--|--|
 | **CSP** | Not available |

@@ -3,8 +3,10 @@ items:
   href: index.md
 - name: BitLocker countermeasures
   href: countermeasures.md
-- name: Plan for a BitLocker deployment
-  href: plan.md
+- name: BitLocker planning guide
+  href: planning-guide.md
+- name: Device Encryption
+  href: device-encryption.md
 - name: How-to guides
   items:
     - name: Install BitLocker on Windows Server

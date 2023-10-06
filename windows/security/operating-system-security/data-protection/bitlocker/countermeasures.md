@@ -143,4 +143,4 @@ For secure administrative workstations, it's recommended to:
 > [!div class="nextstepaction"]
 > Learn how to plan for a BitLocker deployment in your organization:
 >
-> [Plan for a BitLocker deployment >](plan.md)
+> [BitLocker planning guide >](planning-guide.md)

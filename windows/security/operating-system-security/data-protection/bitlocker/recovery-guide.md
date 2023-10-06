@@ -590,3 +590,8 @@ The following limitations exist for Repair-bde:
 - it assumes that if the drive has any encryption, then the drive is fully encrypted
 
 For a complete list of the `repair-bde.exe` options, see the [Repair-bde reference](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/ff829851(v=ws.11)).
+
+<!--
+
+By default, only Domain Admins have access to BitLocker recovery information, but [access can be delegated to others](/archive/blogs/craigf/delegating-access-in-ad-to-bitlocker-recovery-information).
+-->>
