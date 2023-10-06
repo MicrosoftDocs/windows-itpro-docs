@@ -7,7 +7,7 @@ ms.localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
 manager: laurawi
-ms.date: 10/05/2023
+ms.date: 10/06/2023
 ms.topic: reference
 ---
 # Windows 11 connection endpoints for non-Enterprise editions
