@@ -120,11 +120,11 @@ The following methodology was used to derive the network endpoints:
 | --- | --- | --- | ---|
 | Activity Feed Service |The following endpoints are used by Activity Feed Service, which enables multiple cross-device data roaming scenarios on Windows|TLSv1.2/HTTPS/HTTP|activity.windows.com|
 |||HTTP|assets.activity.windows.com|
-|Apps|The following endpoints are used for the Weather app.|TLSv1.2/HTTPS/HTTP|tile-service.weather.microsoft.com|
+|Apps|The following endpoint is used for the Weather app.|TLSv1.2/HTTPS/HTTP|tile-service.weather.microsoft.com|
 ||The following endpoint is used by the Photos app to download configuration files, and to connect to the Office 365 portal's shared infrastructure, including Office in a browser.|TLSv1.2/HTTPS/HTTP|evoke-windowsservices-tas.msedge.net|
 ||The following endpoint is used for OneNote Live Tile.|HTTPS/HTTP|cdn.onenote.net|
-||Used for Spotify Live Tile|HTTPS/HTTP|spclient.wg.spotify.com|
-|Certificates|The following endpoint is used by the Automatic Root Certificates Update component to automatically check the list of trusted authorities on Windows Update to see if an update is available.|TLSv1.2/HTTPS/HTTP|ctldl.windowsupdate.com/*|
+||The following endpoint is used for Spotify Live Tile.|HTTPS/HTTP|spclient.wg.spotify.com|
+|Certificates|The following endpoints are used by the Automatic Root Certificates Update component to automatically check the list of trusted authorities on Windows Update to see if an update is available.|TLSv1.2/HTTPS/HTTP|ctldl.windowsupdate.com/*|
 |||HTTP|ocsp.digicert.com|
 |Cortana and Live Tiles|The following endpoints are related to Cortana and Live Tiles|TLSv1.2/HTTPS/HTTP|www.bing.com*|
 |||HTTPS|business.bing.com|
@@ -150,22 +150,22 @@ The following methodology was used to derive the network endpoints:
 |||TLSv1.2/HTTP|self.events.data.microsoft.com|
 ||The following endpoints are used by Windows Error Reporting.|TLSv1.2/HTTPS/HTTP|watson.telemetry.microsoft.com|
 |||TLSv1.2/HTTP|watson.events.data.microsoft.com|
-|Font Streaming|The following endpoints are used to download fonts on demand.|TLSv1.2/HTTPS|fs.microsoft.com*|
+|Font Streaming|The following endpoints is used to download fonts on demand.|TLSv1.2/HTTPS|fs.microsoft.com*|
 |Licensing|The following endpoint is used for online activation and some app licensing.|TLSv1.2/HTTPS/HTTP|*licensing.mp.microsoft.com|
 |Location|The following endpoint is used for location data. If you turn off traffic for this endpoint, apps can't use location data.|TLSv1.2|inference.location.live.net|
 |Maps|The following endpoints are used to check for updates to maps that have been downloaded for offline use.|HTTPS/HTTP|maps.windows.com|
 |||HTTP|ecn-us.dev.virtualearth.net|
-|Microsoft Account|The following endpoints are used for Microsoft accounts to sign in. |TLSv1.2/HTTPS/HTTP|*login.live.com|
+|Microsoft Account|The following endpoint is used for Microsoft accounts to sign in. |TLSv1.2/HTTPS/HTTP|*login.live.com|
 |Microsoft Defender Antivirus|The following endpoints are used for Windows Defender when Cloud-based Protection is enabled|TLSv1.2/HTTPS|wdcp.microsoft.com|
 |||TLSv1.2/HTTPS|wdcpalt.microsoft.com|
-|||HTTPS/HTTP|*.smartscreen-prod.microsoft.com|
-||The following endpoints are used for Windows Defender SmartScreen reporting and notifications.|TLSv1.2|*.smartscreen.microsoft.com|
+||The following endpoints are used for Windows Defender SmartScreen reporting and notifications.|HTTPS/HTTP|*.smartscreen-prod.microsoft.com|
+|||TLSv1.2|*.smartscreen.microsoft.com|
 |||TLSv1.2/HTTP|checkappexec.microsoft.com|
-|Microsoft Edge|The following endpoint is used by Microsoft Edge Update service to check for new updates. If you disable this endpoint, Microsoft Edge won’t be able to check for and apply new edge updates. |HTTPS/HTTP|msedge.api.cdp.microsoft.com|
+|Microsoft Edge|The following endpoints are used by Microsoft Edge Update service to check for new updates. If you disable this endpoint, Microsoft Edge won’t be able to check for and apply new edge updates. |HTTPS/HTTP|msedge.api.cdp.microsoft.com|
 |||TLSv1.2/HTTP|edge.microsoft.com|
 |||HTTP|edge.nelreports.net|
 |||TLSv1.2/HTTP|windows.msn.com|
-|Microsoft Store|The following endpoint is used to download image files that are called when applications run (Microsoft Store or Inbox MSN Apps)|TLSv1.2/HTTPS/HTTP|img-prod-cms-rt-microsoft-com.akamaized.net|
+|Microsoft Store|The following endpoints are used to download image files that are called when applications run (Microsoft Store or Inbox MSN Apps)|TLSv1.2/HTTPS/HTTP|img-prod-cms-rt-microsoft-com.akamaized.net|
 |||HTTP|img-s-msn-com.akamaized.net|
 ||The following endpoint is used for the Windows Push Notification Services (WNS). WNS enables third-party developers to send toast, tile, badge, and raw updates from their own cloud service. This provides a mechanism to deliver new updates to your users in a power-efficient and dependable way.|TLSv1.2/HTTPS|*.wns.windows.com|
 ||The following endpoint is used to revoke licenses for malicious apps in the Microsoft Store.|TLSv1.2/HTTPS/HTTP|storecatalogrevocation.storequality.microsoft.com|
@@ -204,15 +204,15 @@ The following methodology was used to derive the network endpoints:
 |||HTTP|skydrivesync.policies.live.net|
 |||HTTPS/HTTP|*storage.live.com|
 |||HTTPS/HTTP|windows.policies.live.net|
-|Settings|The following endpoint is used as a way for apps to dynamically update their configuration. Apps such as System Initiated User Feedback and the Xbox app use it.|TLSv1.2/HTTPS/HTTP|settings.data.microsoft.com*|
+|Settings|The following endpoints are used as a way for apps to dynamically update their configuration. Apps such as System Initiated User Feedback and the Xbox app use it.|TLSv1.2/HTTPS/HTTP|settings.data.microsoft.com*|
 |||TLSv1.2/HTTPS/HTTP|settings-win.data.microsoft.com*|
-|Skype|The following endpoint is used to retrieve Skype configuration values.|TLSv1.2/HTTPS/HTTP|*.pipe.aria.microsoft.com|
+|Skype|The following endpoints are used to retrieve Skype configuration values.|TLSv1.2/HTTPS/HTTP|*.pipe.aria.microsoft.com|
 |||TLSv1.2/HTTPS/HTTP|config.edge.skype.com|
 |||HTTP|edge.skype.com|
 |||HTTP|experimental-api.asm.skype.com|
 |||HTTP|trouter-azsc-ukwe-0-b.trouter.skype.com|
 |||HTTP|us-api.asm.skype.com|
-|Teams|The following endpoint is used for Microsoft Teams application.|TLSv1.2/HTTPS/HTTP|config.teams.microsoft.com|
+|Teams|The following endpoints are used for Microsoft Teams application.|TLSv1.2/HTTPS/HTTP|config.teams.microsoft.com|
 |||TLSv1.2/HTTP|teams.events.data.microsoft.com|
 |||HTTP|teams.live.com|
 |||HTTP|statics.teams.cdn.live.net|
@@ -227,12 +227,12 @@ The following methodology was used to derive the network endpoints:
 |||HTTP|srtb.msn.com|
 |||TLSv1.2/HTTP|www.msn.com|
 |Windows Update||TLSv1.2|definitionupdates.microsoft.com|
-||The following endpoint is used for Windows Update downloads of apps and OS updates, including HTTP downloads or HTTP downloads blended with peers.|TLSv1.2/HTTPS/HTTP|*.prod.do.dsp.mp.microsoft.com|
+||The following endpoints are used for Windows Update downloads of apps and OS updates, including HTTP downloads or HTTP downloads blended with peers.|TLSv1.2/HTTPS/HTTP|*.prod.do.dsp.mp.microsoft.com|
 |||TLSv1.2/HTTP|emdl.ws.microsoft.com|
 |||TLSv1.2/HTTPS/HTTP|*.dl.delivery.mp.microsoft.com|
 ||The following endpoints are used to download operating system patches, updates, and apps from Microsoft Store.|TLSv1.2/HTTP|*.windowsupdate.com|
 |||TLSv1.2/HTTPS/HTTP|*.delivery.mp.microsoft.com|
-||The following endpoints enable connections to Windows Update, Microsoft Update, and the online services of the Store to help keep the device secure.|TLSv1.2/HTTPS/HTTP|*.update.microsoft.com|
+||The following endpoint enables connections to Windows Update, Microsoft Update, and the online services of the Store to help keep the device secure.|TLSv1.2/HTTPS/HTTP|*.update.microsoft.com|
 ||The following endpoint is used for compatibility database updates for Windows.|HTTPS/HTTP|adl.windows.com|
 ||The following endpoint is used for content regulation.|TLSv1.2/HTTPS/HTTP|tsfe.trafficshaping.dsp.mp.microsoft.com|
 |Xbox Live|The following endpoints are used for Xbox Live.|TLSv1.2/HTTPS/HTTP|dlassets-ssl.xboxlive.com|
