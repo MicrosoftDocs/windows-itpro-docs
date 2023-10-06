@@ -41,5 +41,34 @@ To complete these procedures, you must be a member of the Domain Administrators 
 
     6.  Click **OK** twice.
 
+### Troubleshooting if the log file is not created or written to
+
+Sometimes the log files are not created or no events are written the log files. This can be related to missing permissions for the Windows Defender Firewall Service (mpssvc) on the folder or the logfiles themselves. It can happen if you want to store the log files in a different folder or the permissions were removed or have not been set automatically.
+
+Verify if mpssvc has FullControl on the folder and the files.
+Open an elevated PowerShell and use these commands. Make sure to use the correct path.
+
+```
+$LogPath = Join-Path -path $env:windir -ChildPath "System32\LogFiles\Firewall"
+(Get-ACL -Path $LogPath).Access | Format-Table IdentityReference,FileSystemRights,AccessControlType,IsInherited,InheritanceFlags -AutoSize
+```
+The output should show NT SERVICE\mpssvc having FullControl:
+```
+IdentityReference      FileSystemRights AccessControlType IsInherited InheritanceFlags
+-----------------      ---------------- ----------------- ----------- ----------------
+NT AUTHORITY\SYSTEM         FullControl             Allow       False    ObjectInherit
+BUILTIN\Administrators      FullControl             Allow       False    ObjectInherit
+NT SERVICE\mpssvc           FullControl             Allow       False    ObjectInherit
+```
+If not, add FullControl permissions for mpssvc to the folder, subfolders and files. Make sure to use the correct path.
+```
+$LogPath = Join-Path -path $env:windir -ChildPath "System32\LogFiles\Firewall"
+$ACL = get-acl -Path $LogPath
+$ACL.SetAccessRuleProtection($true, $false)
+$RULE = New-Object System.Security.AccessControl.FileSystemAccessRule ("NT SERVICE\mpssvc","FullControl","ContainerInherit,ObjectInherit","None","Allow")
+$ACL.AddAccessRule($RULE)
+```
+Restart the Computer to restart the Windows Defender Firewall Service.
+
 ### Troubleshooting Slow Log Ingestion
 If logs are slow to appear in Sentinel, you can turn down the log file size. Just beware that this downsizing will result in more resource usage due to the increased resource usage for log rotation. 
