@@ -173,8 +173,7 @@ The following methodology was used to derive the network endpoints:
 |||HTTPS|storesdk.dsx.mp.microsoft.com|
 ||The following endpoint is used to get Microsoft Store analytics.|TLSv1.2/HTTPS/HTTP|manage.devcenter.microsoft.com|
 ||The following endpoint is needed to load the content in the Microsoft Store app.|HTTP|storeedgefd.dsx.mp.microsoft.com|
-|Microsoft To Do|The following endpoints are used for the Microsoft To Do app.|HTTP|staging.to-do.officeppe.com|
-|||HTTP|staging.to-do.microsoft.com|
+|Microsoft To Do|The following endpoints are used for the Microsoft To Do app.|HTTP|staging.to-do.microsoft.com|
 |||TLSv1.2/HTTP|to-do.microsoft.com|
 |Network Connection Status Indicator (NCSI)|Network Connection Status Indicator (NCSI) detects Internet connectivity and corporate network connectivity status. NCSI sends a DNS request and HTTP query to this endpoint to determine if the device can communicate with the Internet.|TLSv1.2/HTTP|www.msftconnecttest.com*|
 |||HTTP|ipv6.msftconnecttest.com|
