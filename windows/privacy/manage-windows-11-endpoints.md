@@ -123,8 +123,7 @@ To view endpoints for non-Enterprise Windows 11 editions, see [Windows 11 connec
 |||HTTP|share.microsoft.com|
 ||The following endpoint is used to get Microsoft Store analytics.|TLSv1.2/HTTPS/HTTP|manage.devcenter.microsoft.com|
 |Microsoft To Do|||[Learn how to turn off traffic to all of the following endpoint(s) for Microsoft To Do.](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#26-microsoft-store)|
-||The following endpoints are used for the Microsoft To Do app.|HTTP|staging.to-do.officeppe.com|
-|||HTTP|staging.to-do.microsoft.com|
+||The following endpoints are used for the Microsoft To Do app.|HTTP|staging.to-do.microsoft.com|
 |||TLSv1.2/HTTP|to-do.microsoft.com|
 |Network Connection Status Indicator (NCSI)|||[Learn how to turn off traffic to all of the following endpoint(s) for Network Connection Status Indicator (NCSI).](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-ncsi)|
 ||Network Connection Status Indicator (NCSI) detects Internet connectivity and corporate network connectivity status. NCSI sends a DNS request and HTTP query to this endpoint to determine if the device can communicate with the Internet. If you turn off traffic for this endpoint, NCSI won't be able to determine if the device is connected to the internet, and the network status tray icon will show a warning.|HTTPS|www.msftconnecttest.com*|
