@@ -160,7 +160,7 @@ For more information about encrypted hard drives, see [Encrypted hard drive](../
 
 ## Microsoft Entra ID and Active Directory Domain Services considerations
 
-BitLocker integrates with Microsoft Entra ID and Active Directory Domain Services (AD DS) to provide centralized key management. By default, no recovery information is backed up to Microsoft Entra ID or AD DS. Administrators can configure [policy setting](../policy-settings.md?tabs=os#choose-how-bitlocker-protected-operating-system-drives-can-be-recovered) for each drive type to enable backup of BitLocker recovery information.
+BitLocker integrates with Microsoft Entra ID and Active Directory Domain Services (AD DS) to provide centralized key management. By default, no recovery information is backed up to Microsoft Entra ID or AD DS. Administrators can configure [policy setting](policy-settings.md?tabs=os#choose-how-bitlocker-protected-operating-system-drives-can-be-recovered) for each drive type to enable backup of BitLocker recovery information.
 
 The following recovery data is saved for each computer object:
 

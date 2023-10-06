@@ -118,7 +118,7 @@ sections:
           
       - question: What is *Used Disk Space Only* encryption?
         answer: |
-          BitLocker lets users choose to encrypt just their data. Although it's not the most secure way to encrypt a drive, this option can reduce encryption time by more than 99 percent, depending on how much data that needs to be encrypted. For more information, see [Used Disk Space Only encryption](plan.md#used-disk-space-only-encryption).
+          BitLocker lets users choose to encrypt just their data. Although it's not the most secure way to encrypt a drive, this option can reduce encryption time by more than 99 percent, depending on how much data that needs to be encrypted. For more information, see [Used Disk Space Only encryption](planning-guide.md#used-disk-space-only-encryption).
           
       - question: What system changes would cause the integrity check on the OS drive to fail?
         answer: |
