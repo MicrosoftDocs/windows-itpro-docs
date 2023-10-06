@@ -76,7 +76,7 @@ The following methodology was used to derive the network endpoints:
 |||TLSv1.2/HTTPS|office.com|
 |||TLSv1.2/HTTPS|blobs.officehome.msocdn.com|
 |||HTTPS/HTTP|officehomeblobs.blob.core.windows.net|
-|||HTTP/HTTPS|*.blob.core.windows.net|
+|||HTTPS/HTTP|*.blob.core.windows.net|
 |||TLSv1.2|self.events.data.microsoft.com|
 |||HTTPS/HTTP|outlookmobile-office365-tas.msedge.net|
 |||HTTP|roaming.officeapps.live.com|
@@ -107,7 +107,7 @@ The following methodology was used to derive the network endpoints:
 ||The following endpoints are used to download operating system patches, updates, and apps from Microsoft Store.|TLSv1.2/HTTP|*.windowsupdate.com|
 |||TLSv1.2/HTTPS/HTTP|*.delivery.mp.microsoft.com|
 ||The following endpoints enable connections to Windows Update, Microsoft Update, and the online services of the Store to help keep the device secure.|TLSv1.2/HTTPS/HTTP|*.update.microsoft.com|
-||The following endpoint is used for compatibility database updates for Windows.|HTTP/HTTPS|adl.windows.com|
+||The following endpoint is used for compatibility database updates for Windows.|HTTPS/HTTP|adl.windows.com|
 ||The following endpoint is used for content regulation.|TLSv1.2/HTTPS/HTTP|tsfe.trafficshaping.dsp.mp.microsoft.com|
 |Xbox Live|The following endpoints are used for Xbox Live.|TLSv1.2/HTTPS/HTTP|dlassets-ssl.xboxlive.com|
 |||TLSv1.2/HTTPS|da.xboxservices.com|
@@ -156,6 +156,11 @@ The following methodology was used to derive the network endpoints:
 |Maps|The following endpoints are used to check for updates to maps that have been downloaded for offline use.|HTTPS/HTTP|maps.windows.com|
 |||HTTP|ecn-us.dev.virtualearth.net|
 |Microsoft Account|The following endpoints are used for Microsoft accounts to sign in. |TLSv1.2/HTTPS/HTTP|*login.live.com|
+|Microsoft Defender Antivirus|The following endpoints are used for Windows Defender when Cloud-based Protection is enabled|TLSv1.2/HTTPS|wdcp.microsoft.com|
+|||TLSv1.2/HTTPS|wdcpalt.microsoft.com|
+|||HTTPS/HTTP|*.smartscreen-prod.microsoft.com|
+||The following endpoints are used for Windows Defender SmartScreen reporting and notifications.|TLSv1.2|*.smartscreen.microsoft.com|
+|||TLSv1.2/HTTP|checkappexec.microsoft.com|
 |Microsoft Edge|The following endpoint is used by Microsoft Edge Update service to check for new updates. If you disable this endpoint, Microsoft Edge won’t be able to check for and apply new edge updates. |HTTPS/HTTP|msedge.api.cdp.microsoft.com|
 |||TLSv1.2/HTTP|edge.microsoft.com|
 |||HTTP|edge.nelreports.net|
@@ -167,14 +172,14 @@ The following methodology was used to derive the network endpoints:
 ||The following endpoints are used to communicate with Microsoft Store.|TLSv1.2/HTTPS/HTTP|*displaycatalog.mp.microsoft.com|
 |||HTTPS|storesdk.dsx.mp.microsoft.com|
 ||The following endpoint is used to get Microsoft Store analytics.|TLSv1.2/HTTPS/HTTP|manage.devcenter.microsoft.com|
-||The following endpoints are needed to load the content in the Microsoft Store app.|HTTP|storeedgefd.dsx.mp.microsoft.com|
+||The following endpoint is needed to load the content in the Microsoft Store app.|HTTP|storeedgefd.dsx.mp.microsoft.com|
 |Microsoft To Do|The following endpoints are used for the Microsoft To Do app.|HTTP|staging.to-do.officeppe.com|
 |||HTTP|staging.to-do.microsoft.com|
 |||TLSv1.2/HTTP|to-do.microsoft.com|
 |Network Connection Status Indicator (NCSI)|Network Connection Status Indicator (NCSI) detects Internet connectivity and corporate network connectivity status. NCSI sends a DNS request and HTTP query to this endpoint to determine if the device can communicate with the Internet.|TLSv1.2/HTTP|www.msftconnecttest.com*|
 |||HTTP|ipv6.msftconnecttest.com|
 |Office|The following endpoints are used to connect to the Office 365 portal's shared infrastructure, including Office in a browser.|TLSv1.2/HTTPS|blobs.officehome.msocdn.com|
-|||TLSv1.2/HTTP/HTTPS|*.blob.core.windows.net|
+|||TLSv1.2/HTTPS/HTTP|*.blob.core.windows.net|
 |||TLSv1.2/HTTP|ecs.nel.measure.office.net|
 |||TLSv1.2/HTTP|ocws.officeapps.live.com|
 |||TLSv1.2/HTTP|odc.officeapps.live.com|
@@ -212,11 +217,6 @@ The following methodology was used to derive the network endpoints:
 |||HTTP|teams.live.com|
 |||HTTP|statics.teams.cdn.live.net|
 |||HTTP|statics.teams.cdn.office.net|
-|Microsoft Defender Antivirus|The following endpoints are used for Windows Defender when Cloud-based Protection is enabled|TLSv1.2/HTTPS|wdcp.microsoft.com|
-|||TLSv1.2/HTTPS|wdcpalt.microsoft.com|
-|||HTTPS/HTTP|*.smartscreen-prod.microsoft.com|
-||The following endpoints are used for Windows Defender SmartScreen reporting and notifications.|TLSv1.2|*.smartscreen.microsoft.com|
-|||TLSv1.2/HTTP|checkappexec.microsoft.com|
 |Windows Spotlight|The following endpoints are used to retrieve Windows Spotlight metadata that describes content, such as references to image locations, as well as suggested apps, Microsoft account notifications, and Windows tips.|TLSv1.2/HTTP|api.msn.com|
 |||TLSv1.2/HTTPS/HTTP|arc.msn.com|
 |||TLSv1.2/HTTP|assets.msn.com|
@@ -227,13 +227,13 @@ The following methodology was used to derive the network endpoints:
 |||HTTP|srtb.msn.com|
 |||TLSv1.2/HTTP|www.msn.com|
 |Windows Update||TLSv1.2|definitionupdates.microsoft.com|
-|Windows Update|The following endpoint is used for Windows Update downloads of apps and OS updates, including HTTP downloads or HTTP downloads blended with peers.|TLSv1.2/HTTPS/HTTP|*.prod.do.dsp.mp.microsoft.com|
+||The following endpoint is used for Windows Update downloads of apps and OS updates, including HTTP downloads or HTTP downloads blended with peers.|TLSv1.2/HTTPS/HTTP|*.prod.do.dsp.mp.microsoft.com|
 |||TLSv1.2/HTTP|emdl.ws.microsoft.com|
 |||TLSv1.2/HTTPS/HTTP|*.dl.delivery.mp.microsoft.com|
 ||The following endpoints are used to download operating system patches, updates, and apps from Microsoft Store.|TLSv1.2/HTTP|*.windowsupdate.com|
 |||TLSv1.2/HTTPS/HTTP|*.delivery.mp.microsoft.com|
 ||The following endpoints enable connections to Windows Update, Microsoft Update, and the online services of the Store to help keep the device secure.|TLSv1.2/HTTPS/HTTP|*.update.microsoft.com|
-||The following endpoint is used for compatibility database updates for Windows.|HTTP/HTTPS|adl.windows.com|
+||The following endpoint is used for compatibility database updates for Windows.|HTTPS/HTTP|adl.windows.com|
 ||The following endpoint is used for content regulation.|TLSv1.2/HTTPS/HTTP|tsfe.trafficshaping.dsp.mp.microsoft.com|
 |Xbox Live|The following endpoints are used for Xbox Live.|TLSv1.2/HTTPS/HTTP|dlassets-ssl.xboxlive.com|
 |||TLSv1.2/HTTPS|da.xboxservices.com|
@@ -294,7 +294,7 @@ The following methodology was used to derive the network endpoints:
 ||The following endpoints are used to download operating system patches, updates, and apps from Microsoft Store.|TLSv1.2/HTTP|*.windowsupdate.com|
 |||TLSv1.2/HTTPS/HTTP|*.delivery.mp.microsoft.com|
 ||The following endpoints enable connections to Windows Update, Microsoft Update, and the online services of the Store to help keep the device secure.|TLSv1.2/HTTPS/HTTP|*.update.microsoft.com|
-||The following endpoint is used for compatibility database updates for Windows.|HTTP/HTTPS|adl.windows.com|
+||The following endpoint is used for compatibility database updates for Windows.|HTTPS/HTTP|adl.windows.com|
 ||The following endpoint is used for content regulation.|TLSv1.2/HTTPS/HTTP|tsfe.trafficshaping.dsp.mp.microsoft.com|
 |Xbox Live|The following endpoints are used for Xbox Live.|TLSv1.2/HTTPS/HTTP|dlassets-ssl.xboxlive.com|
 |||TLSv1.2/HTTPS|da.xboxservices.com|
