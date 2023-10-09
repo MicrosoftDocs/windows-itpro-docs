@@ -51,7 +51,7 @@ New-Item -ItemType Directory -Path $env:windir\System32\LogFiles\Firewall
 ```
 
 Verify if MpsSvc has *FullControl* on the folder and the files.
-Open an elevated PowerShell and use these commands. Make sure to use the correct path.
+From an elevated PowerShell session, use the following commands, ensuring to use the correct path:
 
 ```
 $LogPath = Join-Path -path $env:windir -ChildPath "System32\LogFiles\Firewall"
