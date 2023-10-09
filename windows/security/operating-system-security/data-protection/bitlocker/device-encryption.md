@@ -32,7 +32,7 @@ You can check whether a device meets requirements for device encryption in the S
     > [!NOTE]
     > If device encryption is turned off, it will no longer automatically enable itself in the future. The user must enable it manually in Settings
 
-:::image type="content" source="images/settings-device-encryption.png" alt-text="Screenshot of the Settings app showing the device encryption panel." border="False"":::
+:::image type="content" source="images/settings-device-encryption.png" alt-text="Screenshot of the Settings app showing the device encryption panel." border="False":::
 
 ## Disable device encryption
 
