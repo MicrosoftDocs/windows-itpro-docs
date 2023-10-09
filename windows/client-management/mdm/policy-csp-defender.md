@@ -834,7 +834,7 @@ Allows or disallows Windows Defender Script Scanning functionality.
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure whether or not to display AM UI to the users.
 
-If you enable this setting AM UI won't be available to users.
+If you enable this setting AM UI will be available to users.
 <!-- AllowUserUIAccess-Description-End -->
 
 <!-- AllowUserUIAccess-Editable-Begin -->
