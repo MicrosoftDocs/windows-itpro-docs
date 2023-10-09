@@ -66,7 +66,7 @@ BUILTIN\Administrators      FullControl             Allow       False    ObjectI
 NT SERVICE\mpssvc           FullControl             Allow       False    ObjectInherit
 ```
 If not, add FullControl permissions for mpssvc to the folder, subfolders and files. Make sure to use the correct path.
-```
+```PowerShell
 $LogPath = Join-Path -path $env:windir -ChildPath "System32\LogFiles\Firewall"
 $ACL = get-acl -Path $LogPath
 $ACL.SetAccessRuleProtection($true, $false)
