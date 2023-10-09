@@ -65,7 +65,7 @@ sections:
           Yes. 
 
       - question: |
-          What is the difference between suspending and decrypting BitLocker?
+          What is the difference between `*suspending`* and decrypting BitLocker?
         answer: |
           *Decrypt* completely removes BitLocker protection and fully decrypts the drive.
           
@@ -116,11 +116,13 @@ sections:
           Policy settings can be configured to require that data drives be BitLocker-protected before a BitLocker-protected computer can write data to them. For more info, see [BitLocker policy settings](policy-settings.md).
           When these policy settings are enabled, the BitLocker-protected operating system will mount any data drives that aren't protected by BitLocker as read-only.
           
-      - question: "What is *Used Disk Space Only* encryption?"
+      - question: |
+          What is *Used Disk Space Only* encryption?
         answer: |
           BitLocker lets users choose to encrypt just their data. Although it's not the most secure way to encrypt a drive, this option can reduce encryption time by more than 99 percent, depending on how much data that needs to be encrypted. For more information, see [Used Disk Space Only encryption](planning-guide.md#used-disk-space-only-encryption).
           
-      - question: What system changes would cause the integrity check on the OS drive to fail?
+      - question: |
+          What system changes would cause the integrity check on the OS drive to fail?
         answer: |
           The following types of system changes can cause an integrity check failure and prevent the TPM from releasing the BitLocker key to decrypt the protected operating system drive:
           
@@ -378,7 +380,7 @@ sections:
   - name: Network Unlock
     questions:
       - question: |
-          What is BitLocker Network Unlock
+          What is BitLocker Network Unlock?
         answer: |  
           BitLocker Network Unlock enables easier management for BitLocker-enabled clients and servers that use the TPM+PIN protection method in a domain environment. When a computer that is connected to a wired corporate network is rebooted, Network Unlock allows the PIN entry prompt to be bypassed. It automatically unlocks BitLocker-protected operating system volumes by using a trusted key that is provided by the Windows Deployment Services server as its secondary authentication method.
           
@@ -456,7 +458,7 @@ sections:
           Limited BitLocker functionality is available in Safe Mode. BitLocker-protected drives can be unlocked and decrypted by using the **BitLocker Drive Encryption** Control Panel item. Right-clicking to access BitLocker options from Windows Explorer isn't available in Safe Mode.
 
       - question: |
-          "How do I *lock* a data drive?"
+          How do I *lock* a data drive?
         answer: |
           Both fixed and removable data drives can be locked by using the Manage-bde command-line tool and the -lock command.
           
