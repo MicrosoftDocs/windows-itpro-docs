@@ -58,7 +58,7 @@ $LogPath = Join-Path -path $env:windir -ChildPath "System32\LogFiles\Firewall"
 (Get-ACL -Path $LogPath).Access | Format-Table IdentityReference,FileSystemRights,AccessControlType,IsInherited,InheritanceFlags -AutoSize
 ```
 The output should show NT SERVICE\mpssvc having FullControl:
-```
+```PowerShell
 IdentityReference      FileSystemRights AccessControlType IsInherited InheritanceFlags
 -----------------      ---------------- ----------------- ----------- ----------------
 NT AUTHORITY\SYSTEM         FullControl             Allow       False    ObjectInherit
