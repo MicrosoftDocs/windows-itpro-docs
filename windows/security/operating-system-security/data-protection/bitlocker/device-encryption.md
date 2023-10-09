@@ -1,7 +1,7 @@
 ---
 title: Device Encryption
 description: Learn how Device Encryption works for devices that support it.
-ms.topic: conceptual
+ms.topic: overview
 ms.date: 10/06/2023
 ---
 

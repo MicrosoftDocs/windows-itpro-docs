@@ -1,21 +1,21 @@
 ---
 title: BitLocker planning guide
 description: Learn how to plan for a BitLocker deployment in your organization.
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 10/06/2023
 ---
 
 # BitLocker planning guide
 
-A BitLocker deployment strategy inculudes definining the appropriate policies and configuration requirements based on your organization's security requirements. This article helps collecting the information to assist with a BitLocker deployment.
+A BitLocker deployment strategy includes definining the appropriate policies and configuration requirements based on your organization's security requirements. This article helps collecting the information to assist with a BitLocker deployment.
 
 ## Audit the environment
 
-To plan a BitLocker deployment, understand the current environment. Perform an informal audit to define the current policies, procedures, and hardware environment. Review the existing disk encryption software corporate security policies. If the organization isn't using disk encryption software, then these policies may not exist. If disk encryption software is being used, then the organization's policies might need to be changed to use the BitLocker features.
+To plan a BitLocker deployment, understand the current environment. Perform an informal audit to define the current policies, procedures, and hardware environment. Review the existing disk encryption software and the organization's security policies. If the organization isn't using disk encryption software, then these policies may not exist. If disk encryption software is in use, then the policies may need to change to use certain BitLocker features.
 
 To help document the organization's current disk encryption security policies, answer the following questions:
 
-- Are there policies to determine which devices will use BitLocker and which computers won't?
+- Are there policies to determine which devices must use BitLocker and which computers don't?
 - What policies exist to control recovery password and recovery key storage?
 - What are the policies for validating the identity of users who need to perform BitLocker recovery?
 - What policies exist to control who in the organization has access to recovery data?
@@ -29,30 +29,36 @@ BitLocker can lock the normal startup process until the user supplies a personal
 
 On devices that don't have a TPM, BitLocker can still be used to encrypt the Windows operating system volume. However, this implementation requires the user to insert a USB startup key to start the computer or resume from hibernation. It doesn't provide the pre-startup system integrity verification offered by BitLocker working with a TPM.
 
+An effective implementation of information protection, like most security controls, considers usability and security. Users typically prefer a simple security experience. In fact, the more transparent a security solution becomes, the more likely users are to conform to it.
+
+It's crucial that organizations protect information on their devices regardless of the state of the device or the intent of users. This protection shouldn't be cumbersome to users. One undesirable and previously commonplace situation is when the user is prompted for input during preboot, and then again during Windows sign-in. Challenging users for input more than once should be avoided.
+
+The TPM is able to securely protect the BitLocker encryption key while it is at rest, and it can securely unlock the operating system drive. When the key is in use, and thus in memory, a combination of hardware and Windows capabilities can secure the key and prevent unauthorized access through cold-boot attacks. Although other countermeasures like PIN-based unlock are available, they aren't as user-friendly; depending on the devices' configuration they may not offer additional security when it comes to key protection. For more information, see [BitLocker Countermeasures](bitlocker-countermeasures.md).
+
 ### BitLocker key protectors
 
 | Key protector | Description |
 | - | - |
-| *TPM* | A hardware device used to help establish a secure root-of-trust. BitLocker only supports TPM 1.2 or higher versions.|
-| *PIN* | A user-entered numeric key protector that can only be used in addition to the TPM.|
-| *Enhanced PIN* | A user-entered alphanumeric key protector that can only be used in addition to the TPM.|
-| *Startup key* | An encryption key that can be stored on most removable media. This key protector can be used alone on non-TPM computers, or with a TPM for added security.|
-| *Recovery password* | A 48-digit number used to unlock a volume when it is in recovery mode. Numbers can often be typed on a regular keyboard. If the numbers on the normal keyboard aren't responding, the function keys (F1-F10) can be used to input the numbers.|
-| *Recovery key*| An encryption key stored on removable media that can be used for recovering data encrypted on a BitLocker volume.|
+| TPM | A hardware device used to help establish a secure root-of-trust. BitLocker only supports TPM 1.2 or higher versions.|
+| PIN | A user-entered numeric key protector that can only be used in addition to the TPM.|
+| Enhanced PIN | A user-entered alphanumeric key protector that can only be used in addition to the TPM.|
+| Startup key | An encryption key that can be stored on most removable media. This key protector can be used alone on non-TPM computers, or with a TPM for added security.|
+| Recovery password | A 48-digit number used to unlock a volume when it is in recovery mode. Numbers can often be typed on a regular keyboard. If the numbers on the normal keyboard aren't responding, the function keys (F1-F10) can be used to input the numbers.|
+| Recovery key| An encryption key stored on removable media that can be used for recovering data encrypted on a BitLocker volume.|
 
 ### BitLocker authentication methods
 
 | Authentication method | Requires user interaction | Description |
 | - | - | - |
-| *TPM only*| No| TPM validates early boot components.|
-| *TPM + PIN* | Yes| TPM validates early boot components. The user must enter the correct PIN before the start-up process can continue, and before the drive can be unlocked. The TPM enters lockout if the incorrect PIN is entered repeatedly, to protect the PIN from brute force attacks. The number of repeated attempts that will trigger a lockout is variable.|
-| *TPM + Network key* | No | The TPM successfully validates early boot components, and a valid encrypted network key has been provided from the WDS server. This authentication method provides automatic unlock of operating system volumes at system reboot while still maintaining multifactor authentication. |
-| *TPM + startup key* | Yes| The TPM successfully validates early boot components, and a USB flash drive containing the startup key has been inserted.|
-| *Startup key only* | Yes| The user is prompted for the USB flash drive that has the recovery key and/or startup key, and then reboot the device.|
+| TPM only| No| TPM validates early boot components.|
+| TPM + PIN | Yes| TPM validates early boot components. The user must enter the correct PIN before the start-up process can continue, and before the drive can be unlocked. The TPM enters lockout if the incorrect PIN is entered repeatedly, to protect the PIN from brute force attacks. The number of repeated attempts that will trigger a lockout is variable.|
+| TPM + Network key | No | The TPM successfully validates early boot components, and a valid encrypted network key has been provided from the WDS server. This authentication method provides automatic unlock of operating system volumes at system reboot while still maintaining multifactor authentication. |
+| TPM + startup key | Yes| The TPM successfully validates early boot components, and a USB flash drive containing the startup key has been inserted.|
+| Startup key only | Yes| The user is prompted for the USB flash drive that has the recovery key and/or startup key, and then reboot the device.|
 
 #### Support for devices without TPM
 
-Determine whether computers that don't have a TPM 1.2 or higher versions in the environment will be supported. If it's decided to support devices with TPM 1.2 or higher versions, a user must use a USB startup key to boot the system. This startup key requires extra support processes similar to multifactor authentication.
+Determine whether computers that don't have a TPM 1.2 or higher versions in the environment will be supported. If it's decided to support devices without TPM, a user must use a USB startup key to boot the system. The startup key requires extra support processes similar to multifactor authentication.
 
 #### What areas of the organization need a baseline level of data protection?
 
@@ -70,14 +76,6 @@ If there are devices with highly sensitive data, then deploy BitLocker with mult
 #### What multifactor authentication method does the organization prefer?
 
 The protection differences provided by multifactor authentication methods can't be easily quantified. Consider each authentication method's impact on Helpdesk support, user education, user productivity, and any automated systems management processes.
-
-## Preboot information protection
-
-An effective implementation of information protection, like most security controls, considers usability and security. Users typically prefer a simple security experience. In fact, the more transparent a security solution becomes, the more likely users are to conform to it.
-
-It's crucial that organizations protect information on their devices regardless of the state of the device or the intent of users. This protection shouldn't be cumbersome to users. One undesirable and previously commonplace situation is when the user is prompted for input during preboot, and then again during Windows sign-in. Challenging users for input more than once should be avoided.
-
-Windows can enable a signle sign-on (SSO) experience from the preboot environment when robust information protection configurations are in place. The TPM in isolation is able to securely protect the BitLocker encryption key while it is at rest, and it can securely unlock the operating system drive. When the key is in use and thus in memory, a combination of hardware and Windows capabilities can secure the key and prevent unauthorized access through cold-boot attacks. Although other countermeasures like PIN-based unlock are available, they aren't as user-friendly; depending on the devices' configuration they may not offer additional security when it comes to key protection. For more information, see [BitLocker Countermeasures](bitlocker-countermeasures.md).
 
 ## Manage passwords and PINs
 

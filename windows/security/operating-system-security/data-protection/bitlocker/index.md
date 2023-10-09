@@ -57,7 +57,7 @@ BitLocker has the following requirements:
 
 *Device Encryption* is a security feature that provides a simple way for some devices to enable BitLocker encryption automatically. Device Encryption requires a device to meet either [Modern Standby](/windows-hardware/design/device-experiences/modern-standby) or HSTI security requirements, and have no externally accessible ports that allow DMA access.
 
-To learn more about Device Encryption, see the [BitLocker Planning Guide](device-encryption.md).
+To learn more about Device Encryption, see the [Device Encryption](device-encryption.md).
 
 [!INCLUDE [bitlocker](../../../../../includes/licensing/bitlocker-enablement.md)]
 

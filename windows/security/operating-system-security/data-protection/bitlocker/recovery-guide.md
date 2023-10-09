@@ -106,7 +106,7 @@ If software maintenance requires the computer to be restarted and two-factor aut
 
 Recovery has been described within the context of unplanned or undesired behavior. However, recovery can also be caused as an intended production scenario, for example in order to manage access control. When desktop or laptop computers are redeployed to other departments or employees in the enterprise, BitLocker can be forced into recovery before the computer is given to a new user.
 
-## Testing recovery
+## Test the recovery process
 
 Before a thorough BitLocker recovery process is created, it's recommended to test how the recovery process works for both end users (people who call the helpdesk for the recovery password) and administrators (people who help the end user get the recovery password). The `-forcerecovery` command of `manage-bde.exe` is an easy way to step through the recovery process before users encounter a recovery situation.
 
@@ -137,7 +137,7 @@ Before a thorough BitLocker recovery process is created, it's recommended to tes
     > [!NOTE]
     > Recovery triggered by `-forcerecovery` persists for multiple restarts until a TPM protector is added or protection is suspended by the user. When using Modern Standby devices (such as Surface devices), the `-forcerecovery` option is not recommended because BitLocker will have to be unlocked and disabled manually from the WinRE environment before the OS can boot up again. For more information, see [BitLocker Troubleshooting: Continuous reboot loop with BitLocker recovery on a slate device](https://social.technet.microsoft.com/wiki/contents/articles/18671.bitlocker-troubleshooting-continuous-reboot-loop-with-bitlocker-recovery-on-a-slate-device.aspx).
 
-## Planning the recovery process
+## Plan the recovery process
 
 When planning the BitLocker recovery process, first consult the organization's current best practices for recovering sensitive information. For example: How does the enterprise handle lost Windows passwords? How does the organization perform smart card PIN resets? These best practices and related resources (people and tools) can be used to help formulate a BitLocker recovery model.
 
