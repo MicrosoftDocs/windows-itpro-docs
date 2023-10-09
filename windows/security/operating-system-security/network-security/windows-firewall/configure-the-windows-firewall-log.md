@@ -43,7 +43,12 @@ To complete these procedures, you must be a member of the Domain Administrators 
 
 ### Troubleshooting if the log file is not created or modified
 
-Sometimes the log files are not created or no events are written the log files. This can be related to missing permissions for the Windows Defender Firewall Service (mpssvc) on the folder or the logfiles themselves. It can happen if you want to store the log files in a different folder or the permissions were removed or have not been set automatically.  
+Sometimes the Windows Firewall log files aren't created, or the events aren't written to the log files. Some examples when this condition may occur include:
+
+- missing permissions for the Windows Defender Firewall Service (MpsSvc) on the folder or on the log files
+- you want to store the log files in a different folder and the permissions were removed, or haven't been set automatically
+- if firewall logging is configured via Group Policy only, it can happen that the log folder isn't created in the default location `%windir%\System32\LogFiles\firewall`
+- if a custom path to a non-existent folder is configured via Group Policy. In this case, you must create the folder manually or via script, and add the permissions for MpsSvc
 If firewall logging is configured via Group Policy only, it also can happen that the `firewall` folder is not created in the default location `%windir%\System32\LogFiles\`. The same can happen if a custom path to a non-existant folder is configered via Group Policy. In this case, create the folder manually or via script and add the permissions for MPSSVC.  
 
 ```PowerShell
