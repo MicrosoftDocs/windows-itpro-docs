@@ -20,11 +20,11 @@ Deploying feature or quality updates for many organizations is only part of the 
 
 With a current version, it's best to use the new policy introduced in June 2019 to Windows 10, version 1709 and later: **Specify deadlines for automatic updates and restarts**. In MDM, this policy is available as separate settings:
 
-- Update/ConfigureDeadlineForFeatureUpdates
-- Update/ConfigureDeadlineForQualityUpdates
-- Update/ConfigureDeadlineGracePeriod
-- Update/ConfigureDeadlineGracePeriodForFeatureUpdates (Windows 11, version 22H2 or later)
-- Update/ConfigureDeadlineNoAutoReboot
+- [Update/ConfigureDeadlineForFeatureUpdates](/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforfeatureupdates) 
+- [Update/ConfigureDeadlineForQualityUpdates](/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforqualityupdates)
+- [Update/ConfigureDeadlineGracePeriod](/windows/client-management/mdm/policy-csp-update#update-configuredeadlinegraceperiod)
+- [Update/ConfigureDeadlineGracePeriodForFeatureUpdates](/windows/client-management/mdm/policy-csp-update#configuredeadlinegraceperiodforfeatureupdates) (Windows 11, version 22H2 or later)
+- [Update/ConfigureDeadlineNoAutoReboot](/windows/client-management/mdm/policy-csp-update#update-configuredeadlinenoautoreboot)
 
 
 ## Policy setting overview for clients running Windows 11, version 22H2 and later
