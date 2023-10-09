@@ -43,7 +43,12 @@ To complete these procedures, you must be a member of the Domain Administrators 
 
 ### Troubleshooting if the log file is not created or written to
 
-Sometimes the log files are not created or no events are written the log files. This can be related to missing permissions for the Windows Defender Firewall Service (mpssvc) on the folder or the logfiles themselves. It can happen if you want to store the log files in a different folder or the permissions were removed or have not been set automatically.
+Sometimes the log files are not created or no events are written the log files. This can be related to missing permissions for the Windows Defender Firewall Service (mpssvc) on the folder or the logfiles themselves. It can happen if you want to store the log files in a different folder or the permissions were removed or have not been set automatically.  
+If firewall logging is configured via Group Policy only, it also can happen that the `firewall` folder is not created in the default location `%windir%\System32\LogFiles\`. The same can happen if a custom path to a non-existant folder is configered via Group Policy. In this case, create the folder manually or via script and add the permissions for MPSSVC.  
+
+```
+New-Item -ItemType Directory -Path $env:windir\System32\LogFiles\Firewall
+```
 
 Verify if mpssvc has FullControl on the folder and the files.
 Open an elevated PowerShell and use these commands. Make sure to use the correct path.
@@ -69,6 +74,8 @@ $RULE = New-Object System.Security.AccessControl.FileSystemAccessRule ("NT SERVI
 $ACL.AddAccessRule($RULE)
 ```
 Restart the Computer to restart the Windows Defender Firewall Service.
+
+
 
 ### Troubleshooting Slow Log Ingestion
 If logs are slow to appear in Sentinel, you can turn down the log file size. Just beware that this downsizing will result in more resource usage due to the increased resource usage for log rotation. 
