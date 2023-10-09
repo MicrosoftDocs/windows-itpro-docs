@@ -53,7 +53,7 @@ New-Item -ItemType Directory -Path $env:windir\System32\LogFiles\Firewall
 Verify if MpsSvc has *FullControl* on the folder and the files.
 From an elevated PowerShell session, use the following commands, ensuring to use the correct path:
 
-```
+```PowerShell
 $LogPath = Join-Path -path $env:windir -ChildPath "System32\LogFiles\Firewall"
 (Get-ACL -Path $LogPath).Access | Format-Table IdentityReference,FileSystemRights,AccessControlType,IsInherited,InheritanceFlags -AutoSize
 ```
