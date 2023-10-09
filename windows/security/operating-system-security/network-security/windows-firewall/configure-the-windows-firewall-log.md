@@ -29,17 +29,18 @@ To complete these procedures, you must be a member of the Domain Administrators 
 
     3.  The default path for the log is **%windir%\\system32\\logfiles\\firewall\\pfirewall.log**. If you want to change this path, clear the **Not configured** check box and type the path to the new location, or click **Browse** to select a file location.
 
-        >**Important:**  The location you specify must have permissions assigned that permit the Windows Defender Firewall service to write to the log file.
+        > [!IMPORTANT]
+        > The location you specify must have permissions assigned that permit the Windows Defender Firewall service to write to the log file.
 
-    4.  The default maximum file size for the log is 4,096 kilobytes (KB). If you want to change this size, clear the **Not configured** check box, and type in the new size in KB, or use the up and down arrows to select a size. The file won't grow beyond this size; when the limit is reached, old log entries are deleted to make room for the newly created ones.
+    5.  The default maximum file size for the log is 4,096 kilobytes (KB). If you want to change this size, clear the **Not configured** check box, and type in the new size in KB, or use the up and down arrows to select a size. The file won't grow beyond this size; when the limit is reached, old log entries are deleted to make room for the newly created ones.
 
-    5.  No logging occurs until you set one of following two options:
+    6.  No logging occurs until you set one of following two options:
 
         -   To create a log entry when Windows Defender Firewall drops an incoming network packet, change **Log dropped packets** to **Yes**.
 
         -   To create a log entry when Windows Defender Firewall allows an inbound connection, change **Log successful connections** to **Yes**.
 
-    6.  Click **OK** twice.
+    7.  Click **OK** twice.
 
 ### Troubleshoot if the log file is not created or modified
 
