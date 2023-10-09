@@ -43,7 +43,7 @@ To complete these procedures, you must be a member of the Domain Administrators 
 
 ### Troubleshoot if the log file is not created or modified
 
-Sometimes the Windows Firewall log files aren't created, or the events aren't written to the log files. Some examples when this condition may occur include:
+Sometimes the Windows Firewall log files aren't created, or the events aren't written to the log files. Some examples when this condition might occur include:
 
 - missing permissions for the Windows Defender Firewall Service (MpsSvc) on the folder or on the log files
 - you want to store the log files in a different folder and the permissions were removed, or haven't been set automatically
