@@ -53,11 +53,11 @@ BitLocker has the following requirements:
 > [!NOTE]
 > When installing the BitLocker optional component on a server, the *Enhanced Storage* feature must be installed. The feature is used to support hardware encrypted drives.
 
-## Device Encryption
+## Device encryption
 
-*Device Encryption* is a security feature that provides a simple way for some devices to enable BitLocker encryption automatically. Device Encryption requires a device to meet either [Modern Standby](/windows-hardware/design/device-experiences/modern-standby) or HSTI security requirements, and have no externally accessible ports that allow DMA access.
+*Device encryption* is a security feature that provides a simple way for some devices to enable BitLocker encryption automatically. Device encryption requires a device to meet either [Modern Standby](/windows-hardware/design/device-experiences/modern-standby) or HSTI security requirements, and have no externally accessible ports that allow DMA access.
 
-To learn more about Device Encryption, review the [Device Encryption](device-encryption.md) documentation.
+To learn more about device encryption, review the [device encryption](device-encryption.md) documentation.
 
 [!INCLUDE [bitlocker](../../../../../includes/licensing/bitlocker-enablement.md)]
 

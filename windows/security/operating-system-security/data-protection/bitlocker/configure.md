@@ -56,15 +56,15 @@ Companies that image their own computers using Configuration Manager can use an 
 
 ## Manage Microsoft Entra joined devices
 
-Devices joined to Azure AD are managed using Mobile Device Management (MDM) policy from an MDM solution such as Microsoft Intune. Prior to Windows 10, version 1809, only local administrators can enable BitLocker via Intune policy. Intune can enable BitLocker for standard users. [Device Encryption](index.md#device-encryption) status can be queried from managed machines via the [Policy Configuration Settings Provider (CSP)](/windows/client-management/mdm/policy-configuration-service-provider/), which reports on whether BitLocker Device Encryption is enabled on the device. Compliance with BitLocker Device Encryption policy can be a requirement for [Conditional Access](https://www.microsoft.com/cloud-platform/conditional-access/) to services like Exchange Online and SharePoint Online.
+Devices joined to Azure AD are managed using Mobile Device Management (MDM) policy from an MDM solution such as Microsoft Intune. Prior to Windows 10, version 1809, only local administrators can enable BitLocker via Intune policy. Intune can enable BitLocker for standard users. [Device encryption](index.md#device-encryption) status can be queried from managed machines via the [Policy Configuration Settings Provider (CSP)](/windows/client-management/mdm/policy-configuration-service-provider/), which reports on whether device encryption is enabled on the device. Compliance with device encryption policy can be a requirement for [Conditional Access](https://www.microsoft.com/cloud-platform/conditional-access/) to services like Exchange Online and SharePoint Online.
 
 The enablement of BitLocker can be triggered over MDM either by the [Policy CSP](/windows/client-management/mdm/policy-configuration-service-provider/) or the [BitLocker CSP](/windows/client-management/mdm/bitlocker-csp/). The BitLocker CSP adds policy options that go beyond ensuring that encryption has occurred.
 
-For hardware that is compliant with Modern Standby and HSTI, when using either of these features, [Device Encryption](index.md#device-encryption) is automatically turned on whenever the user joins a device to Azure AD. Azure AD provides a portal where recovery keys are also backed up, so users can retrieve their own recovery key for self-service, if necessary.
+For hardware that is compliant with Modern Standby and HSTI, when using either of these features, [device encryption](index.md#device-encryption) is automatically turned on whenever the user joins a device to Azure AD. Azure AD provides a portal where recovery keys are also backed up, so users can retrieve their own recovery key for self-service, if necessary.
 
 ## Manage Microsoft Entra registered devices
 
-For Windows devices that are enrolled using **Connect to work or school account**, BitLocker Device Encryption is managed over MDM, the same as Microsoft Entra ID joined devices.
+For Windows devices that are enrolled using **Connect to work or school account**, device encryption is managed over MDM, the same as Microsoft Entra ID joined devices.
 
 ## Manage servers
 

@@ -5,7 +5,7 @@ items:
   href: countermeasures.md
 - name: BitLocker planning guide
   href: planning-guide.md
-- name: Device Encryption
+- name: Device encryption
   href: device-encryption.md
 - name: How-to guides
   items:
