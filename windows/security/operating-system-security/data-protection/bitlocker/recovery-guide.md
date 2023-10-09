@@ -10,7 +10,7 @@ ms.date: 09/29/2023
 
 # BitLocker recovery guide
 
-Organizations can use BitLocker recovery information saved in Microsoft Entra ID and Active Directory Domain Services (AD DS) to access BitLocker-protected drives. It's recommended to create a recovery model for BitLocker while planning for BitLocker deployment.
+Organizations can use BitLocker recovery information saved in Microsoft Entra ID and Active Directory Domain Services (AD DS) to access BitLocker-protected drives. It's recommended to create a recovery model for BitLocker while planning your BitLocker deployment.
 
 This article describes how to recover BitLocker keys from Microsoft Entra ID and Active Directory Domain Services (AD DS).
 
@@ -20,9 +20,9 @@ This article assumes that it's understood how to configure devices to automatica
 
 BitLocker recovery is the process by which access to a BitLocker-protected drive can be restored if the drive can't be unlocked normally. In a recovery scenario, the following options to restore access to the drive are available:
 
-- **The user can supply the recovery password**: if the organization allows users to print or store recovery passwords, the users can enter the 48-digit recovery password
-- **Data recovery agents can use their credentials to unlock the drive:** if the drive is an operating system drive, the drive must be mounted as a data drive on another device for the data recovery agent to unlock it
-- **A domain administrator can obtain the recovery password from AD DS and use it to unlock the drive:** storing recovery passwords in AD DS is recommended to provide a way for IT professionals to be able to obtain recovery passwords for drives in an organization if needed. This method requires to enable the recovery method **Choose how BitLocker-protected operating system drives can be recovered**. For more information, review [BitLocker policy settings](policy-settings.md).
+- The user can supply the recovery password: if the organization allows users to print or store recovery passwords, the users can enter the 48-digit recovery password
+- Data recovery agents can use their credentials to unlock the drive: if the drive is an operating system drive, the drive must be mounted as a data drive on another device for the data recovery agent to unlock it
+- An administrator can obtain the recovery password from AD DS and use it to unlock the drive: storing recovery passwords in AD DS is recommended to provide a way for IT professionals to be able to obtain recovery passwords for drives in an organization if needed. This method requires to enable the recovery method **Choose how BitLocker-protected operating system drives can be recovered**. For more information, review [BitLocker policy settings](policy-settings.md).
 
 ### What causes BitLocker recovery?
 
