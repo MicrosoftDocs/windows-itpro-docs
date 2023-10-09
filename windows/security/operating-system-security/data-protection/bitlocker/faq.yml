@@ -65,7 +65,7 @@ sections:
           Yes. 
 
       - question: |
-          What is the difference between `*suspending`* and decrypting BitLocker?
+          What is the difference between &#42;suspending&#42; and &#42;decrypting&#42; BitLocker?
         answer: |
           *Decrypt* completely removes BitLocker protection and fully decrypts the drive.
           
