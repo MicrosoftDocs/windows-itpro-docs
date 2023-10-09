@@ -1,11 +1,11 @@
 ---
-title: BitLocker - How to enable Network Unlock 
+title: Network Unlock 
 description: This article for the IT professional describes how BitLocker Network Unlock works and how to configure it.
 ms.topic: how-to
 ms.date: 11/08/2022
 ---
 
-# BitLocker: How to enable Network Unlock
+# Network Unlock
 
 This article describes how BitLocker Network Unlock works and how to configure it.
 

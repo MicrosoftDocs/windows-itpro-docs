@@ -33,7 +33,7 @@ An effective implementation of information protection, like most security contro
 
 It's crucial that organizations protect information on their devices regardless of the state of the device or the intent of users. This protection shouldn't be cumbersome to users. One undesirable and previously commonplace situation is when the user is prompted for input during preboot, and then again during Windows sign-in. Challenging users for input more than once should be avoided.
 
-The TPM is able to securely protect the BitLocker encryption key while it is at rest, and it can securely unlock the operating system drive. When the key is in use, and thus in memory, a combination of hardware and Windows capabilities can secure the key and prevent unauthorized access through cold-boot attacks. Although other countermeasures like PIN-based unlock are available, they aren't as user-friendly; depending on the devices' configuration they may not offer additional security when it comes to key protection. For more information, see [BitLocker Countermeasures](bitlocker-countermeasures.md).
+The TPM is able to securely protect the BitLocker encryption key while it is at rest, and it can securely unlock the operating system drive. When the key is in use, and thus in memory, a combination of hardware and Windows capabilities can secure the key and prevent unauthorized access through cold-boot attacks. Although other countermeasures like PIN-based unlock are available, they aren't as user-friendly; depending on the devices' configuration they may not offer additional security when it comes to key protection. For more information, see [BitLocker countermeasures](countermeasures.md).
 
 ### BitLocker key protectors
 
@@ -79,13 +79,13 @@ The protection differences provided by multifactor authentication methods can't 
 
 ## Manage passwords and PINs
 
-When BitLocker is enabled on a system drive and the PC has a TPM, users can be required to type a PIN before BitLocker will unlock the drive. Such a PIN requirement can prevent an attacker who has physical access to a PC from even getting to the Windows sign-in, which makes it almost impossible for the attacker to access or modify user data and system files.
+When BitLocker is enabled on a system drive and the device has a TPM, users can be required to enter a PIN before BitLocker unlocks the drive. Such a PIN requirement can prevent an attacker who has physical access to a device from even getting to the Windows sign-in, which makes it almost impossible for the attacker to access or modify user data and system files.
 
-Requiring a PIN at startup is a useful security feature because it acts as a second authentication factor. However, this configuration comes with some costs. One of the most significant costs is the need to change the PIN regularly.
+Requiring a PIN at startup is a useful security feature because it acts as a second authentication factor. However, this configuration comes with some costs, especially if you require to change the PIN regularly.
 
-In addition, Modern Standby devices don't require a PIN for startup: They're designed to start infrequently and have other mitigations in place that further reduce the attack surface of the system.
+In addition, Modern Standby devices don't require a PIN for startup: they're designed to start infrequently and have other mitigations in place that further reduce the attack surface of the system.
 
-For more information about how startup security works and the countermeasures that Windows provides, see [Protect BitLocker from pre-boot attacks](bitlocker-countermeasures.md).
+For more information about how startup security works and the countermeasures that Windows provides, see [Preboot authentication](countermeasures.md#preboot-authentication).
 
 ## TPM hardware configurations
 
@@ -109,8 +109,8 @@ Devices without a TPM can still be protected by drive encryption using a startup
 
 Use the following questions to identify issues that might affect the deployment in a non-TPM configuration:
 
-- Is there a budget for USB flash drives for each of these computers?
-- Do existing non-TPM devices support USB devices at boot time?
+- Is there a budget for USB flash drives for each of these devices?
+- Do existing non-TPM devices support USB drives at boot time?
 
 Test the individual hardware platforms with the BitLocker system check option while enabling BitLocker. The system check makes sure that BitLocker can read the recovery information from a USB device and encryption keys correctly before it encrypts the volume.
 
@@ -129,13 +129,11 @@ Windows RE can also be used from boot media other than the local hard disk. If W
 
 ## BitLocker provisioning
 
-BitLocker can be provisioned before the operating system is installed. Preprovisioning requires a TPM.
+Administrators can enable BitLocker before to operating system deployment from the *Windows Pre-installation Environment* (WinPE). This step is done with a randomly generated clear key protector applied to the formatted volume. It encrypts the volume before running the Windows setup process. If the encryption uses the **Used Disk Space Only** option, then this step takes only a few seconds, and can be incorporated into existing deployment processes. Preprovisioning requires a TPM.
 
 To check the BitLocker status of a particular volume, administrators can look at the drive status in the BitLocker Control Panel applet or Windows Explorer. The **Waiting For Activation** status means that the drive was preprovisioned for BitLocker, and there's only a clear protector used to encrypt the volume. In this case, the volume isn't protected, and needs to have a secure key added to the volume before the drive is considered fully protected. Administrators can use the Control Panel options, PowerShell cmdlets, the `manage-bde.exe` tool, or WMI APIs to add an appropriate key protector. The volume status then will be updated.
 
 When using the Control Panel options, administrators can choose to **Turn on BitLocker** and follow the steps in the wizard to add a protector, such as a PIN for an operating system volume (or a password if no TPM exists), or a password or smart card protector to a data volume. Then the drive security window is presented before changing the volume status.
-
-Administrators can enable BitLocker before to operating system deployment from the Windows Pre-installation Environment (WinPE). This step is done with a randomly generated clear key protector applied to the formatted volume. It encrypts the volume before running the Windows setup process. If the encryption uses the **Used Disk Space Only** option, then this step takes only a few seconds, and can be incorporated into existing deployment processes.
 
 ## *Used Disk Space Only* encryption
 
@@ -143,7 +141,7 @@ The BitLocker Setup wizard provides administrators the ability to choose the *Us
 
 Launching the BitLocker Setup wizard prompts for the authentication method to be used (password and smart card are available for data volumes). Once the method is chosen and the recovery key is saved, the wizard asks to choose the drive encryption type. Select **Used Disk Space Only** or **Full** drive encryption.
 
-With Used Disk Space Only, just the portion of the drive that contains data will be encrypted. Unused space will remain unencrypted. This behavior causes the encryption process to be much faster, especially for new PCs and data drives. When BitLocker is enabled with this method, as data is added to the drive, the portion of the drive used is encrypted. So, there's never unencrypted data stored on the drive.
+With Used Disk Space Only, just the portion of the drive that contains data will be encrypted. Unused space will remain unencrypted. This behavior causes the encryption process to be much faster, especially for new devices and data drives. When BitLocker is enabled with this method, as data is added to the drive, the portion of the drive used is encrypted. So, there's never unencrypted data stored on the drive.
 
 With Full drive encryption, the entire drive is encrypted, whether data is stored on it or not. This option is useful for drives that have been repurposed, and may contain data remnants from their previous use.
 
@@ -167,7 +165,7 @@ The following recovery data is saved for each computer object:
 
 ## FIPS support for recovery password protector
 
-Devices configured to operate in FIPS mode can create FIPS-compliant recovery password protectors, which use the FIPS-140 NIST SP800-132 algorithm.
+Devices configured to operate in FIPS mode can create FIPS-compliant recovery password protectors, which use the *FIPS-140 NIST SP800-132* algorithm.
 
 > [!NOTE]
 > The United States Federal Information Processing Standard (FIPS) defines security and interoperability requirements for computer systems that are used by the U.S. Federal Government. The FIPS-140 standard defines approved cryptographic algorithms. The FIPS-140 standard also sets forth requirements for key generation and for key management. The National Institute of Standards and Technology (NIST) uses the Cryptographic Module Validation Program (CMVP) to determine whether a particular implementation of a cryptographic algorithm is compliant with the FIPS-140 standard. An implementation of a cryptographic algorithm is considered FIPS-140-compliant only if it has been submitted for and has passed NIST validation. An algorithm that has not been submitted cannot be considered FIPS-compliant even if the implementation produces identical data as a validated implementation of the same algorithm.
@@ -177,18 +175,15 @@ Devices configured to operate in FIPS mode can create FIPS-compliant recovery pa
 
 ## Network Unlock
 
-Some organizations have location specific data security requirements. Location specific data security requirements are most common in environments where high-value data is stored on PCs. The network environment may provide crucial data protection and enforce mandatory authentication. Therefore, policy states that those PCs shouldn't leave the building or be disconnected from the corporate network. Safeguards like physical security locks and geofencing may help enforce this policy as reactive controls. Beyond these safeguards, a proactive security control that grants data access only when the PC is connected to the corporate network is necessary.
+Some organizations have location-specific data security requirements, especially in environments with high-value data. The network environment may provide crucial data protection and enforce mandatory authentication. Therefore, policy states that those devices shouldn't leave the building or be disconnected from the corporate network. Safeguards like physical security locks and geofencing may help enforce this policy as reactive controls. Beyond these safeguards, a proactive security control that grants data access only when the device is connected to the corporate network is necessary.
 
-Network Unlock enables BitLocker-protected PCs to start automatically when connected to a wired corporate network on which Windows Deployment Services runs. Anytime the PC isn't connected to the corporate network, a user must type a PIN to unlock the drive (if PIN-based unlock is enabled).
-Network Unlock requires the following infrastructure:
+*Network Unlock* enables BitLocker-protected devices to start automatically when connected to a wired corporate network on which Windows Deployment Services runs. Anytime the device isn't connected to the corporate network, a user must enter a PIN to unlock the drive (if PIN-based unlock is enabled). Network Unlock requires the following infrastructure:
 
-- Client PCs that have Unified Extensible Firmware Interface (UEFI) firmware version 2.3.1 or later, which supports Dynamic Host Configuration Protocol (DHCP)
+- Client devices that have Unified Extensible Firmware Interface (UEFI) firmware version 2.3.1 or later, which supports Dynamic Host Configuration Protocol (DHCP)
+- A Windows Server running the Windows deployment services (WDS) role
+- A DHCP server
 
-- A server running at least Windows Server 2012 with the Windows deployment services (WDS) role
-
-- A server with the DHCP server role installed
-
-For more information about how to configure Network unlock feature, see [BitLocker: How to enable Network Unlock](network-unlock.md).
+For more information about how to configure Network unlock feature, see [Network Unlock](network-unlock.md).
 
 ## BitLocker administration and monitoring
 

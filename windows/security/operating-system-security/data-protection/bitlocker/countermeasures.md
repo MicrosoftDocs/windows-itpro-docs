@@ -11,15 +11,15 @@ Windows uses hardware solutions and security features that protect BitLocker enc
 
 ## Protection before startup
 
-Before Windows starts, security features implemented as part of the device hardware and firmware must be relied on, including TPM and secure boot. These features ensure that the device hasn't been tampered with while the system was offline:
+Before Windows starts, security features implemented as part of the device hardware and firmware must be relied on, including TPM and secure boot:
 
-- a *TPM* is a chip designed to provide basic security-related functions, primarily involving encryption keys. BitLocker binds encryption keys with the TPM to ensure that the device hasn't been tampered with while the system was offline. For more information about TPM, see [Trusted Platform Module](/windows/device-security/tpm/trusted-platform-module-overview)
+- a *TPM* is a chip designed to provide basic security-related functions, primarily involving encryption keys. BitLocker binds encryption keys with the TPM to ensure that the device hasn't been tampered with while the system is offline. For more information about TPM, see [Trusted Platform Module](/windows/device-security/tpm/trusted-platform-module-overview)
 - *Unified Extensible Firmware Interface (UEFI)* is a programmable boot environment that initializes devices and starts the operating system's bootloader. The UEFI specification defines a firmware execution authentication process called [Secure Boot](../../system-security/secure-the-windows-10-boot-process.md)
 - *Secure Boot* blocks untrusted firmware and bootloaders (signed or unsigned) from being able to start on the system. By default, BitLocker provides integrity protection for Secure Boot by utilizing the TPM PCR[7] measurement. An unauthorized EFI firmware, EFI boot application, or bootloader can't run and acquire the BitLocker key
 
 ### BitLocker and reset attacks
 
-To defend against malicious reset attacks, BitLocker uses the TCG Reset Attack Mitigation, also known as MOR bit (Memory Overwrite Request), before extracting keys into memory.
+To defend against malicious reset attacks, BitLocker uses the *TCG Reset Attack Mitigation*, also known as *MOR bit* (Memory Overwrite Request), before extracting keys into memory.
 
 ## Security policies
 

@@ -14,13 +14,13 @@ BitLocker is a Windows security feature that provides encryption for entire volu
 
 ## Practical applications
 
-Data on a lost or stolen device is vulnerable to unauthorized access, either by running a software-attack tool against it, or by transferring the devices's hard drive to a different device. BitLocker helps mitigate unauthorized data access by enhancing file and system protections,rendering data inaccessible when BitLocker-protected devices are decommissioned or recycled.
+Data on a lost or stolen device is vulnerable to unauthorized access, either by running a software-attack tool against it, or by transferring the devices's hard drive to a different device. BitLocker helps mitigate unauthorized data access by enhancing file and system protections, rendering data inaccessible when BitLocker-protected devices are decommissioned or recycled.
 
 ## BitLocker and TPM
 
 BitLocker provides maximum protection when used with a Trusted Platform Module (TPM). A TPM is a common hardware component installed on Windows devices, and it works with BitLocker to ensure that a device hasn't been tampered with while the system is offline.
 
-On devices that don't have a TPM, BitLocker can still be used to encrypt the operating system drive. However, this implementation requires the user to insert a USB key to start the device or when resuming from hibernation. A password can also be used to protect the OS volume on a device without TPM. Both options don't provide the pre-startup system integrity verification offered by BitLocker with a TPM.
+On devices that don't have a TPM, BitLocker can still be used to encrypt the operating system drive. However, this implementation requires the user to insert a USB key to start the device, or when resuming from hibernation. A password can also be used to protect the OS volume on a device without TPM. Both options don't provide the pre-startup system integrity verification offered by BitLocker with a TPM.
 
 In addition to the TPM, BitLocker has the option to lock the normal startup process until the user supplies a personal identification number (PIN) or inserts a removable device (such as a USB drive) that contains a *startup key*. These security measures provide multifactor authentication and assurance that the device can't start or resume from hibernation until the correct PIN or startup key is presented.
 
@@ -57,12 +57,12 @@ BitLocker has the following requirements:
 
 *Device Encryption* is a security feature that provides a simple way for some devices to enable BitLocker encryption automatically. Device Encryption requires a device to meet either [Modern Standby](/windows-hardware/design/device-experiences/modern-standby) or HSTI security requirements, and have no externally accessible ports that allow DMA access.
 
-To learn more about Device Encryption, see the [Device Encryption](device-encryption.md).
+To learn more about Device Encryption, review the [Device Encryption](device-encryption.md) documentation.
 
 [!INCLUDE [bitlocker](../../../../../includes/licensing/bitlocker-enablement.md)]
 
 > [!NOTE]
-> Licensing requirements for BitLocker enablement are different from the licensing requirements for BitLocker management. To learn more, see [Configure BitLocker](configure.md).
+> Licensing requirements for BitLocker enablement are different from the licensing requirements for BitLocker *management*. To learn more, review the how-to guide: [configure BitLocker](configure.md).
 
 ## Next steps
 
