@@ -7,7 +7,7 @@ localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
 manager: laurawi
-ms.date: 05/23/2023
+ms.date: 09/26/2023
 ms.collection: highpri
 ms.topic: reference
 ---
@@ -1652,6 +1652,30 @@ The following fields are available:
 - **AppraiserVersion**  The version of the Appraiser file that is generating the events.
 
 
+### Microsoft.Windows.Appraiser.General.SystemProcessorPopCntAdd
+
+This event sends data indicating whether the system supports the PopCnt CPU requirement for newer versions of Windows, to help keep Windows up-to-date.
+
+This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
+
+The following fields are available:
+
+- **AppraiserVersion**  Appraiser version
+- **Blocking**  Is the upgrade blocked due to the processor missing the PopCnt instruction?
+- **PopCntPassed**  Whether the machine passes the latest OS hardware requirements or not for the PopCnt instruction.
+
+
+### Microsoft.Windows.Appraiser.General.SystemProcessorPopCntStartSync
+
+The SystemProcessorPopCntStartSync event indicates that a new set of SystemProcessorPopCntAdd events will be sent. This event is used to understand if the system supports the PopCnt CPU requirement for newer versions of Windows.
+
+This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
+
+The following fields are available:
+
+- **AppraiserVersion**  Appraiser version
+
+
 ### Microsoft.Windows.Appraiser.General.SystemProcessorPrefetchWAdd
 
 This event sends data indicating whether the system supports the PrefetchW CPU requirement, to help keep Windows up to date.
@@ -1988,7 +2012,7 @@ This event sends data about Azure presence, type, and cloud domain use in order 
 
 The following fields are available:
 
-- **AADDeviceId**  Azure Active Directory device ID.
+- **AADDeviceId**  Microsoft Entra ID device ID.
 - **AzureOSIDPresent**  Represents the field used to identify an Azure machine.
 - **AzureVMType**  Represents whether the instance is Azure VM PAAS, Azure VM IAAS or any other VMs.
 - **CDJType**  Represents the type of cloud domain joined for the machine.
@@ -1996,7 +2020,7 @@ The following fields are available:
 - **ContainerType**  The type of container, such as process or virtual machine hosted.
 - **EnrollmentType**  Defines the type of MDM enrollment on the device.
 - **HashedDomain**  The hashed representation of the user domain used for login.
-- **IsCloudDomainJoined**  Is this device joined to an Azure Active Directory (AAD) tenant? true/false
+- **IsCloudDomainJoined**  Is this device joined to a Microsoft Entra tenant? true/false
 - **IsDERequirementMet**  Represents if the device can do device encryption.
 - **IsDeviceProtected**  Represents if Device protected by BitLocker/Device Encryption
 - **IsDomainJoined**  Indicates whether a machine is joined to a domain.
@@ -2005,7 +2029,7 @@ The following fields are available:
 - **MDMServiceProvider**  A hash of the specific MDM authority, such as Microsoft Intune, that is managing the device.
 - **MPNId**  Returns the Partner ID/MPN ID from Regkey. HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\DeployID
 - **SCCMClientId**  This ID correlate systems that send data to Compat Analytics (OMS) and other OMS based systems with systems in an enterprise Configuration Manager environment.
-- **ServerFeatures**  Represents the features installed on a Windows   Server. This can be used by developers and administrators who need to automate the process of determining the features installed on a set of server computers.
+- **ServerFeatures**  Represents the features installed on a Windows Server. This can be used by developers and administrators who need to automate the process of determining the features installed on a set of server computers.
 - **SystemCenterID**  The Configuration Manager ID is an anonymized one-way hash of the Active Directory Organization identifier
 
 
@@ -2473,6 +2497,7 @@ Fires at the beginning and end of the HVCI auto-enablement process in sysprep.
 The following fields are available:
 
 - **wilActivity**  Contains the thread ID used to match the begin and end events, and for the end event also a HResult indicating sucess or failure.
+
 
 ### Microsoft.Windows.Security.CodeIntegrity.HVCISysprep.HvciScanGetResultFailed
 
@@ -3125,7 +3150,7 @@ The following fields are available:
 - **CoordinatorVersion**  Coordinator version of DTU.
 - **CV**  Correlation vector.
 - **IsCTA**  If device has the CTA regkey set.
-- **IsDeviceAADDomainJoined**  Indicates whether the device is logged in to the AAD (Azure Active Directory) domain.
+- **IsDeviceAADDomainJoined**  Indicates whether the device is logged in to the Microsoft Entra domain.
 - **IsDeviceADDomainJoined**  Indicates whether the device is logged in to the AD (Active Directory) domain.
 - **IsDeviceCloverTrail**  Indicates whether the device has a Clover Trail system installed.
 - **IsDeviceDiskSpaceLow**  If device disk space is low.
@@ -5150,7 +5175,7 @@ The following fields are available:
 - **appPingEventDoneBeforeOOBEComplete**  Indicates whether the install or update was completed before Windows Out of the Box Experience ends. 1 means event completed before OOBE finishes; 0 means event was not completed before OOBE finishes; -1 means the field does not apply.
 - **appPingEventDownloadMetricsCdnAzureRefOriginShield**  Provides a unique reference string that identifies a request served by Azure Front Door. It's used to search access logs and is critical for troubleshooting. For example, Ref A: E172B39D19774147B0EFCC8E3E823D9D Ref B: BL2EDGE0215 Ref C: 2021-05-11T22:25:48Z.
 - **appPingEventDownloadMetricsCdnCache**  Corresponds to the result, whether the proxy has served the result from cache (HIT for yes, and MISS for no) For example, HIT from proxy.domain.tld, MISS from proxy.local.
-- **appPingEventDownloadMetricsCdnCCC**  ISO 2 character country code that matches to the country updated binaries are delivered from. E.g.: US.
+- **appPingEventDownloadMetricsCdnCCC**  ISO 2 character country or region code that matches to the country or region updated binaries are delivered from. E.g.: US.
 - **appPingEventDownloadMetricsCdnCID**  Numeric value used to internally track the origins of the updated binaries. For example, 2.
 - **appPingEventDownloadMetricsCdnMSEdgeRef**  Used to help correlate client-to-AFD (Azure Front Door) conversations. For example, Ref A: E2476A9592DF426A934098C0C2EAD3AB Ref B: DM2EDGE0307 Ref C: 2022-01-13T22:08:31Z.
 - **appPingEventDownloadMetricsCdnP3P**  Electronic privacy statement: CAO = collects contact-and-other, PSA = for pseudo-analysis, OUR = data received by us only. Helps identify the existence of transparent intermediaries (proxies) that can create noise in legitimate error detection. For example, CP=\"CAO PSA OUR\".
@@ -5591,6 +5616,33 @@ The following fields are available:
 
 ## Other events
 
+### Microsoft.Windows.Defender.Engine.Maps.Heartbeat
+
+Heartbeat is sent once a day to indicate Defender is running and functional. Event includes necessary information to understand health of Defender on the device.
+
+The following fields are available:
+
+- **AppVersion**  Version of the Defender platform
+- **CampRing**  Camp ring used for monthly deployment
+- **CfaMode**  State of Controlled Folder Access
+- **ConsumerAsrMode**  State of Attack Surface Reduction
+- **CountAsrRules**  Number of Attack Surface Reduction rules in place
+- **EngineRing**  Engine ring used for monthly deployment
+- **EngineVersion**  Version of the AntiMalware Engine
+- **HeartbeatType**  Enum of the reason the heartbeat is collected
+- **IsAsrAnyAudit**  Flag to indicate if any Attack Surface Reduction rules are running in Audit mode
+- **IsAsrAnyBlock**  Flag to indicate if any Attack Surface Reduction rules are running in Block mode
+- **IsBeta**  Flag to indicate if the user has opted in for Beta updates for Defender.
+- **IsManaged**  Flag to indicate if Defender is running in manage mode
+- **IsPassiveMode**  Flag to indicate if Defender is in Passive mode for ATP
+- **IsSxsPassiveMode**  Flag to indicate if Defender is in Passive mode for Limited periodic scanning
+- **ProductGuid**  Defender Product Guid (static for Defender).
+- **PusMode**  Mode for blocking potentially unwanted software
+- **ShouldHashIds**  Do we have ISO Compliance requirement to hash IDs for e5
+- **SignatureRing**  Signature ring used for deployments
+- **SigVersion**  Version of signature VDMs
+
+
 ### Microsoft.Windows.OneSettingsClient.Heartbeat
 
 This event indicates the config state heartbeat. The data collected with this event is used to help keep Windows up to date, secure, and performing properly.
@@ -5598,6 +5650,20 @@ This event indicates the config state heartbeat. The data collected with this ev
 The following fields are available:
 
 - **Configs**  Array of configs.
+
+
+### Microsoft.Windows.Security.SBServicing.ApplySecureBootUpdateFailed
+
+Event that indicates that an attempt to apply secure boot updates failed
+
+The following fields are available:
+
+- **Action**  Action string when error occured
+- **hr**  Error code in HRESULT
+- **IsResealNeeded**  BOOL value to indicate if TPM Reseal was needed
+- **SecureBootUpdateCaller**  Scenario in which function was called. Could be Update or Upgrade
+- **UpdateType**  Indicates if it is DB or DBX update
+- **WillResealSucceed**  Indicates if TPM reseal operation is expected to succeed
 
 
 ## Privacy consent logging events
@@ -5730,6 +5796,16 @@ The following fields are available:
 
 ## Software update events
 
+### SoftwareUpdateClientTelemetry.BadUpdateMetadata
+
+Provides information on bad update metadata detection. This information is used to understand the impacted update and ensure correct updates to keep windows up to date.
+
+The following fields are available:
+
+- **RevisionId**  Update metadata revision Id.
+- **ServiceGuid**  The service endpoint (pre-defined GUID) which client is checking updates against.
+
+
 ### SoftwareUpdateClientTelemetry.CheckForUpdates
 
 This event sends tracking data about the software distribution client check for content that is applicable to a device, to help keep Windows up to date.
@@ -5749,7 +5825,7 @@ The following fields are available:
 - **CachedEngineVersion**  For self-initiated healing, the version of the SIH engine that is cached on the device. If the SIH engine does not exist, the value is null.
 - **CallerApplicationName**  The name provided by the caller who initiated API calls into the software distribution client.
 - **CapabilityDetectoidGuid**  The GUID for a hardware applicability detectoid that could not be evaluated.
-- **CDNCountryCode**  Two letter country abbreviation for the Content Distribution Network (CDN) location.
+- **CDNCountryCode**  Two letter country or region abbreviation for the Content Distribution Network (CDN) location.
 - **CDNId**  The unique identifier of a specific device, used to identify how many devices are encountering success or a particular issue.
 - **ClientVersion**  The version number of the software distribution client.
 - **CommonProps**  A bitmask for future flags associated with the Windows Update client behavior. No data is currently reported in this field. Expected value for this field is 0.
@@ -5870,7 +5946,7 @@ The following fields are available:
 - **CallerApplicationName**  The name provided by the caller who initiated API calls into the software distribution client.
 - **CbsDownloadMethod**  Indicates whether the download was a full- or a partial-file download.
 - **CbsMethod**  The method used for downloading the update content related to the Component Based Servicing (CBS) technology.
-- **CDNCountryCode**  Two letter country abbreviation for the Content Distribution Network (CDN) location.
+- **CDNCountryCode**  Two letter country or region abbreviation for the Content Distribution Network (CDN) location.
 - **CDNId**  ID which defines which CDN the software distribution client downloaded the content from.
 - **ClientVersion**  The version number of the software distribution client.
 - **CommonProps**  A bitmask for future flags associated with the Windows Update client behavior.
@@ -6367,6 +6443,25 @@ The following fields are available:
 - **TimeStamp**  UTC seconds when log was created.
 - **totalFwRuntime**  Total FW runtime.
 - **updateStatus**  Update status.
+- **Ver**  Schema version.
+
+
+### Microsoft.Surface.Battery.Prod.BatteryInfoEventV3
+
+Hardware level data about battery performance.
+
+The following fields are available:
+
+- **BatteryTelemetry**  Hardware Level Data about battery performance.
+- **ComponentId**  Component ID.
+- **FwVersion**  FW version that created this log.
+- **LogClass**  LOG CLASS.
+- **LogInstance**  Log instance within class (1..n).
+- **LogVersion**  LOG MGR VERSION.
+- **MCUInstance**  Instance id used to identify multiple MCU's in a product.
+- **ProductId**  ProductId ID.
+- **SeqNum**  Sequence Number.
+- **TimeStamp**  UTC seconds when log was created.
 - **Ver**  Schema version.
 
 
@@ -6923,10 +7018,10 @@ The following fields are available:
 - **CV**  The correlation vector.
 - **GlobalEventCounter**  Counts the events at the global level for telemetry.
 - **PackageVersion**  The package version for currency tools.
-- **UnifiedInstallerDeviceAADJoinedHresult**  The result code after checking if device is Azure Active Directory joined.
+- **UnifiedInstallerDeviceAADJoinedHresult**  The result code after checking if device is Microsoft Entra joined.
 - **UnifiedInstallerDeviceInDssPolicy**  Boolean indicating whether the device is found to be in a DSS policy.
 - **UnifiedInstallerDeviceInDssPolicyHresult**  The result code for checking whether the device is found to be in a DSS policy.
-- **UnifiedInstallerDeviceIsAADJoined**  Boolean indicating whether a device is Azure Active Directory joined.
+- **UnifiedInstallerDeviceIsAADJoined**  Boolean indicating whether a device is Microsoft Entra joined.
 - **UnifiedInstallerDeviceIsAdJoined**  Boolean indicating whether a device is AD joined.
 - **UnifiedInstallerDeviceIsAdJoinedHresult**  The result code for checking whether a device is AD joined.
 - **UnifiedInstallerDeviceIsEducationSku**  Boolean indicating whether a device is Education SKU.
@@ -7053,7 +7148,7 @@ The following fields are available:
 - **PackageVersion**  The package version of the label.
 - **UpdateHealthToolsDevicePolicyFileName**  The default name of the policy blob file.
 - **UpdateHealthToolsDssDeviceApiSegment**  The URI segment for reading the DSS device pointer.
-- **UpdateHealthToolsDssDeviceId**  The Azure Active Directory ID of the device used to create the device ID hash.
+- **UpdateHealthToolsDssDeviceId**  The ID in Microsoft Entra ID of the device used to create the device ID hash.
 - **UpdateHealthToolsDssDevicePolicyApiSegment**  The segment of the device policy API pointer.
 - **UpdateHealthToolsDssTenantId**  The tenant id of the device used to create the tenant id hash.
 - **UpdateHealthToolsHashedDeviceId**  The SHA256 hash of the device id.
@@ -7062,7 +7157,7 @@ The following fields are available:
 
 ### Microsoft.Windows.UpdateHealthTools.UpdateHealthToolsServiceBlockedByNoDSSJoin
 
-This event is sent when the device is not joined to Azure Active Directory. The data collected with this event is used to help keep Windows up to date and secure.
+This event is sent when the device is not Microsoft Entra joined. The data collected with this event is used to help keep Windows up to date and secure.
 
 The following fields are available:
 
@@ -8803,6 +8898,19 @@ This event measures overall health of UpdateOrchestrator. The data collected wit
 The following fields are available:
 
 - **wilActivity**  This struct provides a Windows Internal Library context used for Product and Service diagnostics.
+
+
+### Microsoft.Windows.Update.Orchestrator.Client.UpdatePolicyCacheRefresh
+
+This ensures the update policies are refreshed in the cache so that we can properly determine what updates the device should be offered and how the device should take the updates (e.g. how and when to scan, download, install, and reboot).
+
+The following fields are available:
+
+- **configuredPoliciescount**  Number of configured policies
+- **policiesNamevaluesource**  Name of the policies
+- **updateInstalluxsetting**  Whether the update install setting is set
+- **wuDeviceid**  Device ID.
+
 
 ### Microsoft.Windows.Update.Orchestrator.DeferRestart
 

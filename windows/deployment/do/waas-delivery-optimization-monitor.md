@@ -1,17 +1,21 @@
 ---
-manager: aaroncz
 title: Monitor Delivery Optimization
-description: How to monitor Delivery Optimization
-ms.collection:
-  - tier3
+description: How to monitor Delivery Optimization using either the Windows Update for Business Delivery Optimization Report or Windows PowerShell cmdlets
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: reference
-ms.date: 08/13/2023
-ms.localizationpriority: medium
 ms.author: carmenf
 author: cmknox
+manager: aaroncz
 ms.reviewer: mstewart
+ms.collection:
+  - tier3
+ms.localizationpriority: medium
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
+- ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-delivery-optimization target=_blank>Delivery Optimization</a>
+ms.date: 08/13/2023
 ---
 
 # Monitor Delivery Optimization
