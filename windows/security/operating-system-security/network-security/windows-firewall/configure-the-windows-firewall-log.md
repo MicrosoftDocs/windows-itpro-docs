@@ -73,7 +73,7 @@ $ACL.SetAccessRuleProtection($true, $false)
 $RULE = New-Object System.Security.AccessControl.FileSystemAccessRule ("NT SERVICE\mpssvc","FullControl","ContainerInherit,ObjectInherit","None","Allow")
 $ACL.AddAccessRule($RULE)
 ```
-Restart the Computer to restart the Windows Defender Firewall Service.
+Restart the device to restart the Windows Defender Firewall Service.
 
 
 
