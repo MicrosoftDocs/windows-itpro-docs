@@ -4,7 +4,7 @@ description: Learn more about the DevicePreparation CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 08/10/2023
+ms.date: 10/03/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -430,7 +430,7 @@ This node provides status of the Device Preparation page. Values are an enum: 0 
 | Property name | Property value |
 |:--|:--|
 | Format | `int` |
-| Access Type | Get |
+| Access Type | Get, Replace |
 <!-- Device-PageStatus-DFProperties-End -->
 
 <!-- Device-PageStatus-AllowedValues-Begin -->
