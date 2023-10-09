@@ -41,14 +41,17 @@ To complete these procedures, you must be a member of the Domain Administrators 
 
     6.  Click **OK** twice.
 
-### Troubleshooting if the log file is not created or modified
+### Troubleshoot if the log file is not created or modified
 
 Sometimes the Windows Firewall log files aren't created, or the events aren't written to the log files. Some examples when this condition may occur include:
 
 - missing permissions for the Windows Defender Firewall Service (MpsSvc) on the folder or on the log files
 - you want to store the log files in a different folder and the permissions were removed, or haven't been set automatically
-- if firewall logging is configured via Group Policy only, it can happen that the log folder isn't created in the default location `%windir%\System32\LogFiles\firewall`
-- if a custom path to a non-existent folder is configured via Group Policy. In this case, you must create the folder manually or via script, and add the permissions for MpsSvc
+- if firewall logging is configured via policy settings, it can happen that
+  - the log folder in the default location `%windir%\System32\LogFiles\firewall` doesn't exist
+  - the log folder in a custom path doesn't exist
+  In both cases, you must create the folder manually or via script, and add the permissions for MpsSvc
+
 If firewall logging is configured via Group Policy only, it also can happen that the `firewall` folder is not created in the default location `%windir%\System32\LogFiles\`. The same can happen if a custom path to a non-existant folder is configered via Group Policy. In this case, create the folder manually or via script and add the permissions for MPSSVC.  
 
 ```PowerShell
@@ -62,7 +65,9 @@ From an elevated PowerShell session, use the following commands, ensuring to use
 $LogPath = Join-Path -path $env:windir -ChildPath "System32\LogFiles\Firewall"
 (Get-ACL -Path $LogPath).Access | Format-Table IdentityReference,FileSystemRights,AccessControlType,IsInherited,InheritanceFlags -AutoSize
 ```
+
 The output should show `NT SERVICE\mpssvc` having *FullControl*:
+
 ```PowerShell
 IdentityReference      FileSystemRights AccessControlType IsInherited InheritanceFlags
 -----------------      ---------------- ----------------- ----------- ----------------
@@ -70,7 +75,9 @@ NT AUTHORITY\SYSTEM         FullControl             Allow       False    ObjectI
 BUILTIN\Administrators      FullControl             Allow       False    ObjectInherit
 NT SERVICE\mpssvc           FullControl             Allow       False    ObjectInherit
 ```
-If not, add FullControl permissions for mpssvc to the folder, subfolders and files. Make sure to use the correct path.
+
+If not, add *FullControl* permissions for mpssvc to the folder, subfolders and files. Make sure to use the correct path.
+
 ```PowerShell
 $LogPath = Join-Path -path $env:windir -ChildPath "System32\LogFiles\Firewall"
 $ACL = get-acl -Path $LogPath
@@ -78,9 +85,9 @@ $ACL.SetAccessRuleProtection($true, $false)
 $RULE = New-Object System.Security.AccessControl.FileSystemAccessRule ("NT SERVICE\mpssvc","FullControl","ContainerInherit,ObjectInherit","None","Allow")
 $ACL.AddAccessRule($RULE)
 ```
+
 Restart the device to restart the Windows Defender Firewall Service.
 
+### Troubleshoot Slow Log Ingestion
 
-
-### Troubleshooting Slow Log Ingestion
 If logs are slow to appear in Sentinel, you can turn down the log file size. Just beware that this downsizing will result in more resource usage due to the increased resource usage for log rotation. 
