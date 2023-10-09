@@ -52,7 +52,7 @@ Sometimes the Windows Firewall log files aren't created, or the events aren't wr
   - the log folder in a custom path doesn't exist
   In both cases, you must create the folder manually or via script, and add the permissions for MpsSvc
 
-If firewall logging is configured via Group Policy only, it also can happen that the `firewall` folder is not created in the default location `%windir%\System32\LogFiles\`. The same can happen if a custom path to a non-existant folder is configered via Group Policy. In this case, create the folder manually or via script and add the permissions for MPSSVC.  
+If firewall logging is configured via Group Policy only, it also can happen that the `firewall` folder is not created in the default location `%windir%\System32\LogFiles\`. The same can happen if a custom path to a non-existent folder is configured via Group Policy. In this case, create the folder manually or via script and add the permissions for MPSSVC.  
 
 ```PowerShell
 New-Item -ItemType Directory -Path $env:windir\System32\LogFiles\Firewall
