@@ -31,7 +31,7 @@ For a comprehensive list of all possible upgrade paths to Windows, see [Windows 
 
 The following table shows the methods and paths available to change the edition of Windows that is running on your computer.
 
-| Edition upgrade | MDM | Provisioning package | Command-line tool | Manually entering product key |
+| Edition upgrade | MDM | Provisioning<br>package | Command-<br>line tool | Manually entering<br>product key |
 |-----| ----- | ----- | ----- | ----- |
 | **Home > Pro** | ❌ | ❌ | ❌ | ☑️ |
 | **Home > Pro for Workstations** | ❌ | ❌ | ❌ | ☑️|
@@ -51,21 +51,21 @@ The following table shows the methods and paths available to change the edition 
 - ☑️ = Supported, but reboot required.
 - ❌ = Not supported.
 - MDM = Modern device management.
-- Each desktop edition in the table also has an N and KN SKU. These editions have had media-related functionality removed. Devices with N or KN SKUs installed can be upgraded to corresponding N or KN SKUs using the same methods.
 
 > [!NOTE]
 >
-> Edition upgrades via Microsoft Store for Business are no longer available with the [retirement of Microsoft Store for Business](/announcements/microsoft-store-for-business-education-retiring).
+> - Each desktop edition in the table also has an N and KN SKU. These editions have had media-related functionality removed. Devices with N or KN SKUs installed can be upgraded to corresponding N or KN SKUs using the same methods.
+>
+> - Edition upgrades via Microsoft Store for Business are no longer available with the retirement of the Microsoft Store for Business. For more information, see [Microsoft Store for Business and Education retiring March 31, 2023](/lifecycle/announcements/microsoft-store-for-business-education-retiring) and [Microsoft Store for Business and Microsoft Store for Education overview](/microsoft-store/microsoft-store-for-business-overview).
 
 > [!TIP]
->
-> - For information on upgrading editions of Windows using Microsoft Intune, including switching out of S mode, see [Upgrade Windows 10/11 editions or switch out of S mode on devices using Microsoft Intune](/mem/intune/configuration/edition-upgrade-configure-windows-10).
->
-> - Edition upgrade is also possible using edition upgrade policy in Microsoft Configuration Manager. For more information, see [Upgrade Windows devices to a new edition with Configuration Manager](/mem/configmgr/compliance/deploy-use/upgrade-windows-version).
+> Edition upgrade is also possible using edition upgrade policy in Microsoft Configuration Manager. For more information, see [Upgrade Windows devices to a new edition with Configuration Manager](/mem/configmgr/compliance/deploy-use/upgrade-windows-version).
 
 ## Upgrade using modern device management (MDM)
 
 To upgrade desktop editions of Windows using MDM, enter the product key for the upgraded edition in the **UpgradeEditionWithProductKey** policy setting of the **WindowsLicensing** CSP. For more info, see [WindowsLicensing CSP](/windows/client-management/mdm/windowslicensing-csp).
+
+For information on upgrading editions of Windows using Microsoft Intune, including switching out of S mode, see [Upgrade Windows 10/11 editions or switch out of S mode on devices using Microsoft Intune](/mem/intune/configuration/edition-upgrade-configure-windows-10).
 
 ## Upgrade using a provisioning package
 
@@ -178,11 +178,7 @@ The following scenarios aren't supported:
 
 ## Supported Windows downgrade paths
 
-- Yes = Supported downgrade path.
-- No = not supported or not a downgrade.
-- \- = Not considered a downgrade or an upgrade.
-
-| Edition | Home | Pro | Pro for Workstations | Pro Education | Education | Enterprise LTSC | Enterprise |
+| Edition | Home | Pro | Pro for<br> Workstations | Pro<br>Education | Education | Enterprise<br>LTSC | Enterprise |
 |-----------------| ------------------------------------ | --------------------------- | ------------------------- | -------------------------------------- | ----------------------------------- | --------------------------------------------- |--------------------------------------------- |
 | **Home** | - | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
 | **Pro** | ❌ | - | ❌ | ❌ | ❌ | ❌ | ❌ |
@@ -192,7 +188,13 @@ The following scenarios aren't supported:
 | **Enterprise LTSC** | ❌ | ❌ | ❌ | ❌ | ❌ | - | ❌ |
 | **Enterprise** | ❌ | ✅ | ✅ | ✅ | - | ❌ | - |
 
-**Windows N/KN**: Windows **N** and **KN** SKUs follow the same rules shown in the table.
+- ✅ = Supported downgrade path.
+- ❌ = not supported or not a downgrade.
+- \- = Not considered a downgrade or an upgrade.
+
+> [!NOTE]
+>
+> Windows **N** and Windows **KN** SKUs follow the same rules shown in the table.
 
 The table may not represent more complex scenarios. For example, you can perform an upgrade from Pro to Pro for Workstation on a computer with an embedded Pro key using a Pro for Workstation license key. You can then later downgrade this computer back to Pro with the firmware-embedded key. The downgrade is allowed but only because the pre-installed OS is Pro.
 
