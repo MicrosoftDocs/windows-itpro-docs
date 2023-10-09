@@ -50,7 +50,7 @@ If firewall logging is configured via Group Policy only, it also can happen that
 New-Item -ItemType Directory -Path $env:windir\System32\LogFiles\Firewall
 ```
 
-Verify if mpssvc has FullControl on the folder and the files.
+Verify if MpsSvc has *FullControl* on the folder and the files.
 Open an elevated PowerShell and use these commands. Make sure to use the correct path.
 
 ```
