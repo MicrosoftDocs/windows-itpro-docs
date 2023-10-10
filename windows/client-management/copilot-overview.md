@@ -39,15 +39,17 @@ Copilot in Windows uses one of the following chat provider platforms, dependant 
 Configuring the correct chat provider platform for Copilot in Windows is important because users can pass sensitive information into the chat provider. Each chat provider platform has different privacy and security protections.
 
 #### Bing Chat as the chat provider platform
- 
-Bing Chat is used as the default chat provider platform for Copilot in Windows when any of the following conditions occur: 
+
+Bing Chat is used as the default chat provider platform for Copilot in Windows when any of the following conditions occur:
+
 - Bing Chat Enterprise isn't configured for the user
--  Bing Chat Enterprise is turned off
--  The user isn't signed in with a Microsoft account rather than a Microsoft Entra account, 
+- Bing Chat Enterprise is [turned off](/bing-chat-enterprise/manage)
+- The user isn't signed in with a Microsoft Entra account that's licensed for Bing Chat Enterprise
 
-Bing Chat is intended for consumer use scenarios and has the following privacy and security protections:
+The Bing Chat is a consumer experience and doesn't offer commercial data protection. Users in your organization get consumer Bing Chat without these extra protections. The following privacy and security protections apply for Bing Chat:
 
-1. Review [Copilot in Windows: Your data and privacy](https://support.microsoft.com/windows/3e265e82-fc76-4d0a-afc0-4a0de528b73a), and the privacy statement for using Bing Chat, which is in the [Microsoft privacy statement](https://privacy.microsoft.com/privacystatement). Ensure you include the product specific guidance in the Microsoft privacy statement for Bing under the Search, Microsoft Edge, and artificial intelligence section.
+- [Copilot in Windows: Your data and privacy](https://support.microsoft.com/windows/3e265e82-fc76-4d0a-afc0-4a0de528b73a)
+- The privacy statement for using Bing Chat follows the [Microsoft privacy statement](https://privacy.microsoft.com/privacystatement) including the product specific guidance in the Microsoft privacy statement for **Bing** under the **Search, Microsoft Edge, and artificial intelligence** section.
 
 #### Bing Chat Enterprise as the chat provider platform (recommended for business environments)
 
