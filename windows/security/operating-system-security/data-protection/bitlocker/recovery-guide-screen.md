@@ -131,14 +131,15 @@ There are rules governing which hint is shown during the recovery (in the order 
   :::column span="2":::
     **In this scenario, the following options are configured:**
     - Recovery password #1:
-      - Saved to Microsoft Account
-      - Saved to Microsoft Entra ID
-      - creation time: **1PM**
-      - key ID: **99631A34**
+        - Saved to Microsoft Account
+        - Saved to Microsoft Entra ID
+        - creation time: **1PM**
+        - key ID: **99631A34**
+    
     - Recovery password #2:
-      - Saved to Microsoft Entra ID
-      - creation time: **3PM**
-      - key ID: **9DF70931**
+        - Saved to Microsoft Entra ID
+        - creation time: **3PM**
+        - key ID: **9DF70931**
   :::column-end:::
   :::column span="2":::
   **Result:** the hint for the most recent key is displayed.
