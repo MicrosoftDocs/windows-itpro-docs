@@ -15,11 +15,13 @@ To plan a BitLocker deployment, understand the current environment. Perform an i
 
 To help document the organization's current disk encryption security policies, answer the following questions:
 
-- Are there policies to determine which devices must use BitLocker and which computers don't?
-- What policies exist to control recovery password and recovery key storage?
-- What are the policies for validating the identity of users who need to perform BitLocker recovery?
-- What policies exist to control who in the organization has access to recovery data?
-- What policies exist to control computer decommissioning or retirement?
+| :ballot_box_with_check: | **Question** |
+|--|--|
+| :red_square_button: | **Are there policies to determine which devices must use BitLocker and which computers don't?** |
+| :black_square_button: | **What policies exist to control recovery password and recovery key storage?** |
+| :black_square_button: | **What are the policies for validating the identity of users who need to perform BitLocker recovery?** |
+| :black_square_button: | **What policies exist to control who in the organization has access to recovery data?** |
+| :black_square_button: | **What policies exist to control computer decommissioning or retirement?** |
 
 ## Encryption keys and authentication
 
