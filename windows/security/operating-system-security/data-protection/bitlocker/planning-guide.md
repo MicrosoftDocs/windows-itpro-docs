@@ -17,11 +17,11 @@ To help document the organization's current disk encryption security policies, a
 
 | :ballot_box_with_check: | **Question** |
 |--|--|
-| :red_square_button: | **Are there policies to determine which devices must use BitLocker and which computers don't?** |
-| :black_square_button: | **What policies exist to control recovery password and recovery key storage?** |
-| :black_square_button: | **What are the policies for validating the identity of users who need to perform BitLocker recovery?** |
-| :black_square_button: | **What policies exist to control who in the organization has access to recovery data?** |
-| :black_square_button: | **What policies exist to control computer decommissioning or retirement?** |
+| :black_square_button: | *Are there policies to determine which devices must use BitLocker and which don't?* |
+| :black_square_button: | *What policies exist to control recovery password and recovery key storage?* |
+| :black_square_button: | *What are the policies for validating the identity of users who need to perform BitLocker recovery?* |
+| :black_square_button: | *What policies exist to control who in the organization has access to recovery data?* |
+| :black_square_button: | *What policies exist to control the decommission or retirement of devices?* |
 
 ## Encryption keys and authentication
 
@@ -187,6 +187,6 @@ Some organizations have location-specific data security requirements, especially
 
 For more information about how to configure Network unlock feature, see [Network Unlock](network-unlock.md).
 
-## BitLocker administration and monitoring
+## Monitor and manage BitLocker
 
-Enterprises can use Microsoft Entra ID, Microsoft Intune and Configuration Manager for BitLocker administration and monitoring. For more information, see [Monitor device encryption with Intune](/mem/intune/protect/encryption-monitor).
+Organizations can use Microsoft Intune or Configuration Manager to monitor and manage BitLocker. For more information, see [Monitor device encryption with Intune](/mem/intune/protect/encryption-monitor).
