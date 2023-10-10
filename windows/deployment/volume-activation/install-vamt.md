@@ -32,13 +32,13 @@ You install VAMT as part of the Windows Assessment and Deployment Kit (ADK) for 
 
 - Latest version of the [Windows ADK](/windows-hardware/get-started/adk-install)
 
-- Any supported [SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express) version, the latest is recommended
+- Any supported [SQL Server Express](https://www.microsoft.com/sql-server/sql-server-downloads) version, the latest is recommended
 
 - Alternatively, any supported **full** SQL instance
 
 ### Install SQL Server Express / alternatively use any full SQL instance
 
-1. Download and open the [SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express) package.
+1. Download and open the [SQL Server Express](https://www.microsoft.com/sql-server/sql-server-downloads) package.
 
 2. Select **Basic**.
 
@@ -68,7 +68,7 @@ You install VAMT as part of the Windows Assessment and Deployment Kit (ADK) for 
 
 ### Configure VAMT to connect to SQL Server Express or full SQL Server
 
-1. Open **Volume Active Management Tool 3.1** from the Start menu.
+1. Open **Volume Active Management Tool** from the Start menu.
 
 2. Enter the server instance name (for a remote SQL use the FQDN) and a name for the database, select **Connect**, and then select **Yes** to create the database. See the following image for an example for SQL.
 
