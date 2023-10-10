@@ -1,72 +1,53 @@
 ---
-title: BitLocker settings and configuration
+title: BitLocker configuration
 description: Learn about the available options to configure BitLocker and how to configure them via Configuration Service Providers (CSP) or group policy (GPO).
 ms.topic: how-to
 ms.date: 10/03/2023
 ---
 
-# BitLocker settings and configuration
+# BitLocker configuration
 
-This article describes the Personal Data Encryption (BitLocker) settings and how to configure them via Microsoft Intune or Configuration Service Providers (CSP).
-<!--
-## BitLocker settings
+To configure BitLocker, you can use one of the following options:
 
-## Configure BitLocker with Microsoft Intune
+- Configuration Service Provider (CSP): this option is usually used for devices that are managed by a Mobile Device Management (MDM) solution, like Microsoft Intune
+- Group policy (GPO): this option can be used for devices that are joined to an Active Directory domain or managed by Microsoft Configuration Manager. GPO can also be used for devices that are not joined to an Active Directory domain, using the local group policy editor
 
-## Configure BitLocker with CSP
+The following table describes the common options to configure BitLocker, depending on the devices' join type:
 
-## Disable BitLocker
+| Join type | Configuration option |
+|-|-|
+| *Microsoft Entra joined* | CSP |
+| *Microsoft Entra registered* | CSP |
+| *Microsoft Entra hybrid joined* | CSP if the devices are enrolled in a MDM solution, otherwise GPO |
+| *Active Directory joined devices* | GPO |
 
-### Disable BitLocker with a settings catalog policy in Intune
+> [!NOTE]
+> Windows Server doesn't support the configuration of BitLocker using CSP. Use GPO instead.
 
-### Disable BitLocker with CSP
-
-## Decrypt BitLocker-encrypted content
-
-## Next steps
-
-- Review the [Personal Data Encryption (BitLocker) FAQ](faq.yml)
-
-This article describes how to configure BitLocker using Microsoft Intune or group policy.
-
-## Configure BitLocker
-
-To configure BitLocker, you can use:
-
-- Microsoft Intune/MDM
-- Group policy
-
-### Configure Credential Guard with group policy
-
-### Configure Credential Guard Microsoft Intune
-
--->
-
-## BitLocker management
-
-The ideal solution for BitLocker management is to eliminate the need for IT administrators to set management policies using tools or other mechanisms by having Windows perform tasks that are more practical to automate. The growth of TPM 2.0, secure boot, and other hardware improvements, for example, have helped to alleviate the support burden on help desks and a decrease in support-call volumes, yielding improved user satisfaction.
-
- This article links to relevant documentation, products, and services to help answer frequently asked questions, and also provides BitLocker recommendations for different types of computers.
+While many of the BitLocker policy settings can be configure using both CSP and GPO, there are some settings that are only available using one of the options. To learn about the policy settings available for both CSP and GPO, review the reference article [BitLocker policy settings](policy-settings.md).
 
 [!INCLUDE [bitlocker](../../../../../includes/licensing/bitlocker-management.md)]
 
-## Managing domain-joined computers and moving to cloud  
+## Configure devices using CSP
 
-Companies that image their own computers using Configuration Manager can use an existing task sequence to [pre-provision BitLocker](/configmgr/osd/understand/task-sequence-steps#BKMK_PreProvisionBitLocker) encryption while in Windows Preinstallation Environment (WinPE) and can then [enable protection](/configmgr/osd/understand/task-sequence-steps#BKMK_EnableBitLocker). These steps during an operating system deployment can help ensure that computers are encrypted from the start, even before users receive them. As part of the imaging process, a company could also decide to use Configuration Manager to pre-set any desired [BitLocker policy settings](policy-settings.md).
+The configuration of devices using CSP is a good option for devices that are managed by a MDM solution, like Microsoft Intune. These are usually devices that are *Microsoft Entra joined*, *Microsoft Entra registered* or *Microsoft Entra hybrid joined*.
 
-## Manage Microsoft Entra joined devices
+The [BitLocker CSP](/windows/client-management/mdm/bitlocker-csp) is used to configure BitLocker, and to report the status of different BitLocker functions to the MDM solution. With Microsoft Intune, you can leverage the BitLocker status in [compliance polices](/mem/intune/protect/device-compliance-get-started). Compliance policies can then be combined with [Conditional Access](/azure/active-directory/conditional-access/overview), which can prevent access to services like Exchange Online and SharePoint Online, based on the status of BitLocker.
 
-Devices joined to Azure AD are managed using Mobile Device Management (MDM) policy from an MDM solution such as Microsoft Intune. Prior to Windows 10, version 1809, only local administrators can enable BitLocker via Intune policy. Intune can enable BitLocker for standard users. [Device encryption](index.md#device-encryption) status can be queried from managed machines via the [Policy Configuration Settings Provider (CSP)](/windows/client-management/mdm/policy-configuration-service-provider/), which reports on whether device encryption is enabled on the device. Compliance with device encryption policy can be a requirement for [Conditional Access](https://www.microsoft.com/cloud-platform/conditional-access/) to services like Exchange Online and SharePoint Online.
+> [!NOTE]
+> For hardware that is compliant with Modern Standby and HSTI, [device encryption](device-encryption.md) is automatically turned on whenever a user Microsoft Entra joins a device. Microsoft Entra ID provides a portal where recovery keys are also backed up, so users can retrieve their own recovery keys for self-service, if necessary.
 
-The enablement of BitLocker can be triggered over MDM either by the [Policy CSP](/windows/client-management/mdm/policy-configuration-service-provider/) or the [BitLocker CSP](/windows/client-management/mdm/bitlocker-csp/). The BitLocker CSP adds policy options that go beyond ensuring that encryption has occurred.
+To learn more about the Intune options to configure and monitor BitLocker, check the following articles:
 
-For hardware that is compliant with Modern Standby and HSTI, when using either of these features, [device encryption](index.md#device-encryption) is automatically turned on whenever the user joins a device to Azure AD. Azure AD provides a portal where recovery keys are also backed up, so users can retrieve their own recovery key for self-service, if necessary.
+- [Manage BitLocker policy for Windows devices with Intune](/mem/intune/protect/encrypt-devices#rotate-bitlocker-recovery-keys)
+- [Monitor device encryption with Intune](/mem/intune/protect/encryption-monitor)
 
-## Manage Microsoft Entra registered devices
+## Configure devices using GPO
 
-For Windows devices that are enrolled using **Connect to work or school account**, device encryption is managed over MDM, the same as Microsoft Entra ID joined devices.
+Organizations that image their device using Configuration Manager can use an existing task sequence to [pre-provision BitLocker](/configmgr/osd/understand/task-sequence-steps#BKMK_PreProvisionBitLocker) encryption while in Windows Preinstallation Environment (WinPE), and can then [enable protection](/configmgr/osd/understand/task-sequence-steps#BKMK_EnableBitLocker). These steps during an operating system deployment can help ensure that computers are encrypted from the start, even before users receive them. As part of the imaging process, an organization could also decide to use Configuration Manager to pre-set any desired [BitLocker policy settings](policy-settings.md).
 
-## Manage servers
+
+### Configure and manage servers
 
 Servers are often installed, configured, and deployed using PowerShell; therefore, the recommendation is to also use [PowerShell to enable BitLocker on a server](operations-guide.md), ideally as part of the initial setup. BitLocker is an Optional Component (OC) in Windows Server; therefore, follow the directions in [BitLocker: How to deploy on Windows Server](bitlocker-how-to-deploy-on-windows-server.md) to add the BitLocker OC.
 
@@ -75,3 +56,4 @@ The Minimal Server Interface is a prerequisite for some of the BitLocker adminis
 If a server is being installed manually, such as a stand-alone server, then choosing [Server with Desktop Experience](/windows-server/get-started/getting-started-with-server-with-desktop-experience/) is the easiest path because it avoids performing the steps to add a GUI to Server Core.
 
  Additionally, lights-out data centers can take advantage of the enhanced security of a second factor while avoiding the need for user intervention during reboots by optionally using a combination of BitLocker (TPM+PIN) and BitLocker Network Unlock. BitLocker Network Unlock brings together the best of hardware protection, location dependence, and automatic unlock, while in the trusted location. For the configuration steps, see [BitLocker: How to enable Network Unlock](network-unlock.md).
+
