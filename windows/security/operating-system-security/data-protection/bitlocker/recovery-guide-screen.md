@@ -12,7 +12,7 @@ ms.date: 09/29/2023
 
 During BitLocker recovery, Windows displays a custom recovery message and a few hints that identify where a key can be retrieved from. These improvements can help a user during BitLocker recovery.
 
-### Custom recovery message
+## Custom recovery message
 
 :::row:::
   :::column span="3":::
@@ -25,7 +25,7 @@ During BitLocker recovery, Windows displays a custom recovery message and a few 
 
 For more information, see [Configure preboot recovery message and URL](policy-settings.md?tabs=os#configure-preboot-recovery-message-and-url).
 
-### BitLocker recovery key hints
+## BitLocker recovery key hints
 
 :::row:::
   :::column span="3":::
@@ -51,37 +51,26 @@ There are rules governing which hint is shown during the recovery (in the order 
 1. There's no specific hint for keys saved to an on-premises Active Directory. In this case, a custom message (if configured) or a generic message, **Contact your organization's help desk**, is displayed
 1. If two recovery keys are present on the disk, but only one was successfully backed up, the system asks for a key that was backed up, even if another key is newer
 
-#### Example 1 (single recovery key with single backup)
+### Example: single recovery key for Microsoft account and single backup
 
 :::row:::
   :::column span="3":::
-| Custom URL                 | Yes |
-|----------------------------|-----|
-| Saved to Microsoft Account | Yes |
-| Saved to Azure AD          | No  |
-| Saved to Active Directory  | No  |
-| Printed                    | No  |
-| Saved to file              | No  |
-**Result:** The hints for the Microsoft account and custom URL are displayed.
+
+In this scenario, the following options are configured:
+
+- Custom URL
+- Recovery password: saved to Microsoft Account
+  - not printed
+  - not saved to file  
+
   :::column-end:::
   :::column span="1":::
+  **Result:** The hints for the Microsoft account and custom URL are displayed:
   :::image type="content" source="images/rp-example1.png" alt-text="Screenshot of the BitLocker recovery screen showing a hint where the BitLocker recovery key was saved." lightbox="images/rp-example1.png":::
   :::column-end:::
 :::row-end:::
 
-| Custom URL                 | Yes |
-|----------------------------|-----|
-| Saved to Microsoft Account | Yes |
-| Saved to Azure AD          | No  |
-| Saved to Active Directory  | No  |
-| Printed                    | No  |
-| Saved to file              | No  |
-
-**Result:** The hints for the Microsoft account and custom URL are displayed.
-
-![Example 1 of Customized BitLocker recovery screen.](images/rp-example1.png)
-
-#### Example 2 (single recovery key with single backup)
+### Example: single recovery key in AD DS and single backup
 
 | Custom URL                 | Yes |
 |----------------------------|-----|

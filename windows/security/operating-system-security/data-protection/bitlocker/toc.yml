@@ -17,8 +17,8 @@ items:
       href: network-unlock.md
     - name: Cluster shared volumes and storage area networks
       href: csv-san.md
-    - name: BitLocker operations guide
-      href: operations-guide.md
+- name: BitLocker operations guide
+  href: operations-guide.md
 - name: BitLocker recovery guide
   items:
     - name: Overview of BitLocker recovery methods
