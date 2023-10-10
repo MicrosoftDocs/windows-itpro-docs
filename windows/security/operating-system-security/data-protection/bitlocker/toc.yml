@@ -23,8 +23,14 @@ items:
   items:
     - name: Overview of BitLocker recovery methods
       href: recovery-guide.md
+    - name: BitLocker recovery process
+      href: recovery-guide-process.md
     - name: BitLocker recovery screen
       href: recovery-guide-screen.md
+    - name: BitLocker repair tool
+      href: recovery-guide-repair-tool.md
+    - name: BitLocker password reset
+      href: recovery-guide-password-reset.md
     - name: BitLocker Recovery Password Viewer
       href: recovery-password-viewer.md
 - name: Reference
