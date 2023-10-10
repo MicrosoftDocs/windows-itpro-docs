@@ -54,49 +54,56 @@ There are rules governing which hint is shown during the recovery (in the order 
 ### Example: single recovery key for Microsoft account and single backup
 
 :::row:::
-  :::column span="3":::
+  :::column span="2":::
 
-In this scenario, the following options are configured:
-
-- Custom URL
-- Recovery password: saved to Microsoft Account
-  - not printed
-  - not saved to file  
-
+**In this scenario, the following options are configured:**
+    - Custom URL
+    - Recovery password:
+      - saved to Microsoft Account
+      - not printed
+      - not saved to file
   :::column-end:::
-  :::column span="1":::
-  **Result:** The hints for the Microsoft account and custom URL are displayed:
+  :::column span="2":::
+  **Result:** the hints for the Microsoft account and custom URL are displayed.
   :::image type="content" source="images/rp-example1.png" alt-text="Screenshot of the BitLocker recovery screen showing a hint where the BitLocker recovery key was saved." lightbox="images/rp-example1.png":::
   :::column-end:::
 :::row-end:::
 
 ### Example: single recovery key in AD DS and single backup
 
-| Custom URL                 | Yes |
-|----------------------------|-----|
-| Saved to Microsoft Account | No  |
-| Saved to Azure AD          | No  |
-| Saved to Active Directory  | Yes |
-| Printed                    | No  |
-| Saved to file              | No  |
+:::row:::
+  :::column span="2":::
+    **In this scenario, the following options are configured:**
+    - Custom URL
+    - Recovery password:
+      - saved to Active Directory
+      - not printed
+      - not saved to file  
+  :::column-end:::
+  :::column span="2":::
+  **Result:** only the custom URL is displayed.
+  :::image type="content" source="images/rp-example2.png" alt-text="Screenshot of the BitLocker recovery screen showing only the custom URL." lightbox="images/rp-example2.png":::
+  :::column-end:::
+:::row-end:::
 
-**Result:** Only the custom URL is displayed.
+#### Example: single recovery key in Microsoft Entra ID with multiple backups
 
-![Example 2 of customized BitLocker recovery screen.](images/rp-example2.png)
-
-#### Example 3 (single recovery key with multiple backups)
-
-| Custom URL                 | No  |
-|----------------------------|-----|
-| Saved to Microsoft Account | Yes |
-| Saved to Azure AD          | Yes |
-| Saved to Active Directory  | No  |
-| Printed                    | Yes |
-| Saved to file              | Yes |
+:::row:::
+  :::column span="2":::
+    **In this scenario, the following options are configured:**
+    - Recovery password:
+      - saved to Microsoft Account
+      - saved to Microsoft Entra ID
+      - printed
+      - saved to file  
+  :::column-end:::
+  :::column span="2":::
+  **Result:** only the Microsoft Account hint is displayed.
+  :::image type="content" source="images/rp-example3.png" alt-text="Screenshot of the BitLocker recovery screen showing only the Microsoft Account hint." lightbox="images/rp-example3.png":::
+  :::column-end:::
+:::row-end:::
 
 **Result:** Only the Microsoft Account hint is displayed.
-
-![Example 3 of customized BitLocker recovery screen.](images/rp-example3.png)
 
 #### Example 4  (multiple recovery passwords)
 
