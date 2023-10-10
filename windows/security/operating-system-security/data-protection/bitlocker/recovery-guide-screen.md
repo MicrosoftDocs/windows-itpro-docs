@@ -51,7 +51,7 @@ There are rules governing which hint is shown during the recovery (in the order 
 1. There's no specific hint for keys saved to an on-premises Active Directory. In this case, a custom message (if configured) or a generic message, **Contact your organization's help desk**, is displayed
 1. If two recovery keys are present on the disk, but only one was successfully backed up, the system asks for a key that was backed up, even if another key is newer
 
-### Example: single recovery key for Microsoft account and single backup
+### Example: single recovery password for Microsoft account and single backup
 
 :::row:::
   :::column span="2":::
@@ -69,7 +69,7 @@ There are rules governing which hint is shown during the recovery (in the order 
   :::column-end:::
 :::row-end:::
 
-### Example: single recovery key in AD DS and single backup
+### Example: single recovery password in AD DS and single backup
 
 :::row:::
   :::column span="2":::
@@ -86,7 +86,7 @@ There are rules governing which hint is shown during the recovery (in the order 
   :::column-end:::
 :::row-end:::
 
-#### Example: single recovery key in Microsoft Entra ID with multiple backups
+### Example: single recovery password in Microsoft Entra ID with multiple backups
 
 :::row:::
   :::column span="2":::
@@ -105,54 +105,43 @@ There are rules governing which hint is shown during the recovery (in the order 
 
 **Result:** Only the Microsoft Account hint is displayed.
 
-#### Example 4  (multiple recovery passwords)
+### Example: multiple recovery passwords
 
-| Custom URL                 | No       |
-|----------------------------|----------|
-| Saved to Microsoft Account | No       |
-| Saved to Azure AD          | No       |
-| Saved to Active Directory  | No       |
-| Printed                    | No       |
-| Saved to file              | Yes      |
-| Creation time              | **1PM**  |
-| Key ID                     | A564F193 |
+:::row:::
+  :::column span="2":::
+    **In this scenario, the following options are configured:**
+    - Recovery password #1:
+      - saved to file
+      - creation time: **1PM**
+      - key ID: **A564F193**
+    - Recovery password #2:
+      - not backed up
+      - creation time: **3PM**
+      - key ID: **T4521ER5**
+  :::column-end:::
+  :::column span="2":::
+  **Result:** only the hint for a successfully backed up key is displayed, even if it isn't the most recent key.
+  :::image type="content" source="images/rp-example4.png" alt-text="Screenshot of the BitLocker recovery screen showing the key ID of the recovery password that was successfully backed up." lightbox="images/rp-example4.png":::
+  :::column-end:::
+:::row-end:::
 
-| Custom URL                 | No       |
-|----------------------------|----------|
-| Saved to Microsoft Account | No       |
-| Saved to Azure AD          | No       |
-| Saved to Active Directory  | No       |
-| Printed                    | No       |
-| Saved to file              | No       |
-| Creation time              | **3PM**  |
-| Key ID                     | T4521ER5 |
+### Example: multiple recovery passwords
 
-**Result:** Only the hint for a successfully backed up key is displayed, even if it isn't the most recent key.
-
-![Example 4 of customized BitLocker recovery screen.](images/rp-example4.png)
-
-#### Example 5  (multiple recovery passwords)
-
-| Custom URL                 | No       |
-|----------------------------|----------|
-| Saved to Microsoft Account | Yes      |
-| Saved to Azure AD          | Yes      |
-| Saved to Active Directory  | No       |
-| Printed                    | No       |
-| Saved to file              | No       |
-| Creation time              | **1PM**  |
-| Key ID                     | 99631A34 |
-
-| Custom URL                 | No       |
-|----------------------------|----------|
-| Saved to Microsoft Account | No       |
-| Saved to Azure AD          | Yes      |
-| Saved to Active Directory  | No       |
-| Printed                    | No       |
-| Saved to file              | No       |
-| Creation time              | **3PM**  |
-| Key ID                     | 9DF70931 |
-
-**Result:** The hint for the most recent key is displayed.
-
-![Example 5 of customized BitLocker recovery screen.](images/rp-example5.png)
+:::row:::
+  :::column span="2":::
+    **In this scenario, the following options are configured:**
+    - Recovery password #1:
+      - Saved to Microsoft Account
+      - Saved to Microsoft Entra ID
+      - creation time: **1PM**
+      - key ID: **99631A34**
+    - Recovery password #2:
+      - Saved to Microsoft Entra ID
+      - creation time: **3PM**
+      - key ID: **9DF70931**
+  :::column-end:::
+  :::column span="2":::
+  **Result:** the hint for the most recent key is displayed.
+  :::image type="content" source="images/rp-example5.png" alt-text="Screenshot of the BitLocker recovery screen showing the key ID of the most recent key." lightbox="images/rp-example5.png":::
+  :::column-end:::
+:::row-end:::
