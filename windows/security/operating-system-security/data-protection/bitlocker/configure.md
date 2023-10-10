@@ -13,17 +13,17 @@ To configure BitLocker, you can use one of the following options:
 - Group policy (GPO): this option can be used for devices that are joined to an Active Directory domain and aren't managed by a device management solution. Group policy can also be used for devices that aren't joined to an Active Directory domain, using the local group policy editor
 - Microsoft Configuration Manager: this option can be used for devices that are managed by Microsoft Configuration Manager using the BitLocker management agent
 
-The following table describes the options to configure BitLocker, depending on the devices' join type:
+The following table describes the options to configure BitLocker, depending on the device's join type:
 
 | Join type | CSP | GPO | Configuration Manager |
 |-|-| - |-|
-| *Microsoft Entra joined* | ✅ | ❌ | ❌ |
+| *Microsoft Entra joined* | ✅ | ❌ | ✅ |
 | *Microsoft Entra registered* | ✅ | ❌ | ❌ |
 | *Microsoft Entra hybrid joined* | ✅ | ✅ | ✅ |
 | *Active Directory joined devices* | ❌ | ✅ | ✅ |
 
 > [!NOTE]
-> Windows Server doesn't support the configuration of BitLocker using CSP. Use GPO instead.
+> Windows Server doesn't support the configuration of BitLocker using CSP or Microsoft Configuration Manager. Use GPO instead.
 
 While many of the BitLocker policy settings can be configured using both CSP and GPO, there are some settings that are only available using one of the options. To learn about the policy settings available for both CSP and GPO, review the reference article [BitLocker policy settings](policy-settings.md).
 

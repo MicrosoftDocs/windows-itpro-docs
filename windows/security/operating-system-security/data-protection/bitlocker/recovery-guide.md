@@ -307,11 +307,9 @@ Windows Recovery Environment (RE) can be used to recover access to a drive prote
 
 Windows RE will also ask for a BitLocker recovery key when a **Remove everything** reset from Windows RE is started on a device that uses **TPM + PIN** or **Password for OS drive** protectors. If BitLocker recovery is started on a keyboardless device with TPM-only protection, Windows RE, not the boot manager, will ask for the BitLocker recovery key. After the key is entered, Windows RE troubleshooting tools can be accessed, or Windows can be started normally.
 
-The BitLocker recovery screen that's shown by Windows RE has the accessibility tools like narrator and on-screen keyboard to help enter the BitLocker recovery key. If the BitLocker recovery key is requested by the Windows boot manager, those tools might not be available.
+The BitLocker recovery screen in Windows RE has the accessibility tools like narrator and on-screen keyboard to help enter the BitLocker recovery key. If the BitLocker recovery key is requested by the Windows boot manager, those tools might not be available.
 
-To activate the narrator during BitLocker recovery in Windows RE, press **Windows** + **CTRL** + **Enter**. To activate the on-screen keyboard, tap on a text input control.
-
-:::image type="content" source="images/bl-narrator.png" alt-text="A screenshot of the BitLocker recovery screen showing Narrator activated.":::
+To activate the narrator during BitLocker recovery in Windows RE, press <kbd>WIN</kbd>+<kbd>CTRL</kbd>+<kbd>ENTER</kbd>. To activate the on-screen keyboard, select a text input control.
 
 ## BitLocker recovery screen
 
@@ -319,19 +317,14 @@ During BitLocker recovery, Windows displays a custom recovery message and a few 
 
 ### Custom recovery message
 
-BitLocker Group Policy settings starting in Windows 10, version 1511, allows configuring a custom recovery message and URL on the BitLocker recovery screen. The custom recovery message and URL can include the address of the BitLocker self-service recovery portal, the IT internal website, or a phone number for support.
-
-This policy can be configured using GPO under **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Operating System Drives** > **Configure pre-boot recovery message and URL**.
-
-It can also be configured using mobile device management (MDM), including in Intune, using the [BitLocker CSP](/windows/client-management/mdm/bitlocker-csp):
-
-**`<LocURI>./Device/Vendor/MSFT/BitLocker/SystemDrivesRecoveryMessage</LocURI>`**
-
-![Custom URL.](images/bl-intune-custom-url.png)
-
-Example of a customized recovery screen:
-
-![Customized BitLocker Recovery Screen.](images/bl-password-hint1.png)
+:::row:::
+  :::column span="3":::
+    BitLocker policy settings allows configuring a custom recovery message and URL on the BitLocker recovery screen. The custom recovery message and URL can include the address of the BitLocker self-service recovery portal, the IT internal website, or a phone number for support. For more information, see [Configure preboot recovery message and URL](policy-settings.md?tabs=os#configure-preboot-recovery-message-and-url)
+  :::column-end:::
+  :::column span="1":::
+  :::image type="content" source="images/recovery-message-url.png" alt-text="Screenshot of the BitLocker recovery screen showing a custom URL." lightbox="images/recovery-message-url.png":::
+  :::column-end:::
+:::row-end:::
 
 ### BitLocker recovery key hints
 
@@ -345,22 +338,14 @@ BitLocker metadata has been enhanced starting in Windows 10, version 1903, to in
 There are rules governing which hint is shown during the recovery (in the order of processing):
 
 1. Always display custom recovery message if it has been configured (using GPO or MDM).
-
-2. Always display generic hint: `For more information, go to https://aka.ms/recoverykeyfaq.`
-
-3. If multiple recovery keys exist on the volume, prioritize the last-created (and successfully backed up) recovery key.
-
-4. Prioritize keys with successful backup over keys that have never been backed up.
-
-5. Prioritize backup hints in the following order for remote backup locations: **Microsoft Account > Azure AD > Active Directory**.
-
-6. If a key has been printed and saved to file, display a combined hint, "Look for a printout or a text file with the key," instead of two separate hints.
-
-7. If multiple backups of the same type (remove vs. local) have been performed for the same recovery key, prioritize backup info with latest backed-up date.
-
-8. There's no specific hint for keys saved to an on-premises Active Directory. In this case, a custom message (if configured) or a generic message, "Contact your organization's help desk," is displayed.
-
-9. If two recovery keys are present on the disk, but only one has been successfully backed up, the system asks for a key that has been backed up, even if another key is newer.
+1. Always display generic hint: `For more information, go to https://aka.ms/recoverykeyfaq.`
+1. If multiple recovery keys exist on the volume, prioritize the last-created (and successfully backed up) recovery key.
+1. Prioritize keys with successful backup over keys that have never been backed up.
+1. Prioritize backup hints in the following order for remote backup locations: **Microsoft Account > Azure AD > Active Directory**.
+1. If a key has been printed and saved to file, display a combined hint, "Look for a printout or a text file with the key," instead of two separate hints.
+1. If multiple backups of the same type (remove vs. local) have been performed for the same recovery key, prioritize backup info with latest backed-up date.
+1. There's no specific hint for keys saved to an on-premises Active Directory. In this case, a custom message (if configured) or a generic message, "Contact your organization's help desk," is displayed.
+1. If two recovery keys are present on the disk, but only one has been successfully backed up, the system asks for a key that has been backed up, even if another key is newer.
 
 #### Example 1 (single recovery key with single backup)
 
