@@ -20,7 +20,7 @@ The following table describes the options to configure BitLocker, depending on t
 | *Microsoft Entra joined* | ✅ | ❌ | ✅ |
 | *Microsoft Entra registered* | ✅ | ❌ | ❌ |
 | *Microsoft Entra hybrid joined* | ✅ | ✅ | ✅ |
-| *Active Directory joined devices* | ❌ | ✅ | ✅ |
+| *Active Directory joined* | ❌ | ✅ | ✅ |
 
 > [!NOTE]
 > Windows Server doesn't support the configuration of BitLocker using CSP or Microsoft Configuration Manager. Use GPO instead.
