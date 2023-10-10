@@ -1,22 +1,24 @@
 ---
 title: BitLocker recovery screen
-description: Learn how to recover BitLocker keys from Microsoft Entra ID and Active Directory Domain Services (AD DS).
+description: Learn about the information displayed in the BitLocker recovery screen depending on configured policy settings and recovery keys status.
 ms.collection: 
   - highpri
   - tier1
-ms.topic: how-to
-ms.date: 09/29/2023
+ms.topic: concept-article
+ms.date: 10/10/2023
 ---
 
 # BitLocker recovery screen
 
-During BitLocker recovery, Windows displays a custom recovery message and a few hints that identify where a key can be retrieved from. These improvements can help a user during BitLocker recovery.
+During BitLocker recovery, Windows can display a custom recovery message and a few hints to help users finding where a key can be retrieved from.
+
+This article describes the information displayed in the BitLocker recovery screen depending on configured policy settings and recovery keys status.
 
 ## Custom recovery message
 
 :::row:::
   :::column span="3":::
-    BitLocker policy settings allows configuring a custom recovery message and URL on the BitLocker recovery screen. The custom recovery message and URL can include the address of the BitLocker self-service recovery portal, the IT internal website, or a phone number for support.
+    BitLocker policy settings allow configuring a custom recovery message and URL on the BitLocker recovery screen. The custom recovery message and URL can include the address of the BitLocker self-service recovery portal, the IT internal website, or a phone number for support.
   :::column-end:::
   :::column span="1":::
   :::image type="content" source="images/recovery-message-url.png" alt-text="Screenshot of the BitLocker recovery screen showing a custom URL." lightbox="images/recovery-message-url.png":::
@@ -49,7 +51,7 @@ There are rules governing which hint is shown during the recovery (in the order 
 1. If a key has been printed and saved to file, display a combined hint **Look for a printout or a text file with the key**, instead of two separate hints
 1. If multiple backups of the same type (remove vs. local) were done for the same recovery key, prioritize backup info with latest backup date
 1. There's no specific hint for keys saved to an on-premises Active Directory. In this case, a custom message (if configured) or a generic message, **Contact your organization's help desk**, is displayed
-1. If two recovery keys are present on the disk, but only one was successfully backed up, the system asks for a key that was backed up, even if another key is newer
+1. If two recovery keys are present, but only one was backed up, the system asks for the backed up key, even if the other key is newer
 
 ### Example: single recovery password for Microsoft account and single backup
 
