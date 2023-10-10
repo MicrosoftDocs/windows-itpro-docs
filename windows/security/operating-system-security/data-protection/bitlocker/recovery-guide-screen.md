@@ -55,13 +55,10 @@ There are rules governing which hint is shown during the recovery (in the order 
 
 :::row:::
   :::column span="2":::
-
-**In this scenario, the following options are configured:**
-    - Custom URL
-    - Recovery password:
+    In this scenario, a custom URL is configured. The recovery password is:
       - saved to Microsoft Account
       - not printed
-      - not saved to file
+      - not saved to a file
   :::column-end:::
   :::column span="2":::
   **Result:** the hints for the Microsoft account and custom URL are displayed.
@@ -73,12 +70,10 @@ There are rules governing which hint is shown during the recovery (in the order 
 
 :::row:::
   :::column span="2":::
-    **In this scenario, the following options are configured:**
-    - Custom URL
-    - Recovery password:
-      - saved to Active Directory
-      - not printed
-      - not saved to file  
+    In this scenario, a custom URL is configured. The recovery password is:
+    - saved to Active Directory
+    - not printed
+    - not saved to a file  
   :::column-end:::
   :::column span="2":::
   **Result:** only the custom URL is displayed.
@@ -90,12 +85,11 @@ There are rules governing which hint is shown during the recovery (in the order 
 
 :::row:::
   :::column span="2":::
-    **In this scenario, the following options are configured:**
-    - Recovery password:
-      - saved to Microsoft Account
-      - saved to Microsoft Entra ID
-      - printed
-      - saved to file  
+    In this scenario, the recovery password is:
+    - saved to Microsoft Account
+    - saved to Microsoft Entra ID
+    - printed
+    - saved to file  
   :::column-end:::
   :::column span="2":::
   **Result:** only the Microsoft Account hint is displayed.
@@ -109,18 +103,20 @@ There are rules governing which hint is shown during the recovery (in the order 
 
 :::row:::
   :::column span="2":::
-    **In this scenario, the following options are configured:**
-    - Recovery password #1:
-      - saved to file
-      - creation time: **1PM**
-      - key ID: **A564F193**
-    - Recovery password #2:
-      - not backed up
-      - creation time: **3PM**
-      - key ID: **T4521ER5**
+    In this scenario, there are two recovery passwords.
+
+    The recovery password #1 is:
+    - saved to file
+    - creation time: **1PM**
+    - key ID: **A564F193**
+    
+    The recovery password #2 is:
+    - not backed up
+    - creation time: **3PM**
+    - key ID: **T4521ER5**
   :::column-end:::
   :::column span="2":::
-  **Result:** only the hint for a successfully backed up key is displayed, even if it isn't the most recent key.
+  **Result:** only the hint for the successfully backed up key is displayed, even if it isn't the most recent key.
   :::image type="content" source="images/rp-example4.png" alt-text="Screenshot of the BitLocker recovery screen showing the key ID of the recovery password that was successfully backed up." lightbox="images/rp-example4.png":::
   :::column-end:::
 :::row-end:::
@@ -129,14 +125,15 @@ There are rules governing which hint is shown during the recovery (in the order 
 
 :::row:::
   :::column span="2":::
-    **In this scenario, the following options are configured:**
-    
-    Recovery password #1:
+    In this scenario, there are two recovery passwords.
+
+    The recovery password #1 is:
      - Saved to Microsoft Account
      - Saved to Microsoft Entra ID
      - creation time: **1PM**
      - key ID: **99631A34**
-    Recovery password #2:
+    
+    The recovery password #2 is:
       - Saved to Microsoft Entra ID
       - creation time: **3PM**
       - key ID: **9DF70931**
