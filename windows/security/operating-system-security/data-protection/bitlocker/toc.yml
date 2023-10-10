@@ -19,8 +19,12 @@ items:
       href: csv-san.md
     - name: BitLocker operations guide
       href: operations-guide.md
-    - name: BitLocker recovery guide
+- name: BitLocker recovery guide
+  items:
+    - name: Overview of BitLocker recovery methods
       href: recovery-guide.md
+    - name: BitLocker recovery screen
+      href: recovery-guide-screen.md
     - name: BitLocker Recovery Password Viewer
       href: recovery-password-viewer.md
 - name: Reference
