@@ -1,6 +1,6 @@
 ---
-title: Install VAMT (Windows 10)
-description: Learn how to install Volume Activation Management Tool (VAMT) as part of the Windows Assessment and Deployment Kit (ADK) for Windows 10.
+title: Install VAMT
+description: Learn how to install Volume Activation Management Tool (VAMT) as part of the Windows Assessment and Deployment Kit (ADK) for Windows.
 ms.reviewer: nganguly
 manager: aaroncz
 ms.author: frankroj
@@ -18,7 +18,7 @@ This article describes how to install the Volume Activation Management Tool (VAM
 
 ## Installing VAMT
 
-You install VAMT as part of the Windows Assessment and Deployment Kit (ADK) for Windows 10.
+You install VAMT as part of the Windows Assessment and Deployment Kit (ADK) for Windows.
 
 >[!IMPORTANT]
 >VAMT requires local administrator privileges on all managed computers in order to deposit confirmation IDs (CIDs), get the client products' license status, and install product keys. If VAMT is being used to manage products and product keys on the local host computer and you do not have administrator privileges, start VAMT with elevated privileges. For best results when using Active Directory-based activation, we recommend running VAMT while logged on as a domain administrator.
@@ -30,7 +30,7 @@ You install VAMT as part of the Windows Assessment and Deployment Kit (ADK) for 
 
 - [Windows Server with Desktop Experience](/windows-server/get-started/getting-started-with-server-with-desktop-experience), with internet access (for the main VAMT console) and all updates applied
 
-- Latest version of the [Windows 10 ADK](/windows-hardware/get-started/adk-install)
+- Latest version of the [Windows ADK](/windows-hardware/get-started/adk-install)
 
 - Any supported [SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express) version, the latest is recommended
 
@@ -52,7 +52,7 @@ You install VAMT as part of the Windows Assessment and Deployment Kit (ADK) for 
 
 ### Install VAMT using the ADK
 
-1. Download the latest version of [Windows 10 ADK](/windows-hardware/get-started/adk-install).
+1. Download the latest version of [Windows ADK](/windows-hardware/get-started/adk-install).
 
    If an older version is already installed, it's recommended to uninstall the older ADK and install the latest version. Existing VAMT data is maintained in the VAMT database.
 
