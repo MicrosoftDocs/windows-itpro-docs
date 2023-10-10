@@ -36,27 +36,60 @@ Copilot in Windows uses one of the following chat provider platforms, dependant 
 
 ### Configure the chat provider platform that Copilot in Windows uses
 
-**Bing Chat Enterprise:**
-1. By default, Bing Chat Enterprise is enabled for users with one of the following licenses:
+Configuring the correct chat provider platform for Copilot in Windows is important because users can pass sensitive information into the chat provider. Each chat provider platform has different privacy and security protections.
+
+#### Bing Chat as the chat provider platform
+ 
+Bing Chat is used as the default chat provider platform for Copilot in Windows when any of the following conditions occur: 
+- Bing Chat Enterprise isn't configured for the user
+-  Bing Chat Enterprise is turned off
+-  The user isn't signed in with a Microsoft account rather than a Microsoft Entra account, 
+
+Bing Chat is intended for consumer use scenarios and has the following privacy and security protections:
+
+1. Review [Copilot in Windows: Your data and privacy](https://support.microsoft.com/windows/3e265e82-fc76-4d0a-afc0-4a0de528b73a), and the privacy statement for using Bing Chat, which is in the [Microsoft privacy statement](https://privacy.microsoft.com/privacystatement). Ensure you include the product specific guidance in the Microsoft privacy statement for Bing under the Search, Microsoft Edge, and artificial intelligence section.
+
+#### Bing Chat Enterprise as the chat provider platform (recommended for business environments)
+
+1. Review the Bing Chat Enterprise [privacy statement](https://learn.microsoft.com/bing-chat-enterprise/privacy-and-protections).
+1. By default, Bing Chat Enterprise is enabled for users that are assigned one of the following licenses:
    -  Microsoft 365 E3 or E5
    - Microsoft 365 A3 or A5 for faculty
    - Business Standard
    - Business Premium
 1. Verify that users have the license by signing into the [Microsoft 365 admin center](https://admin.microsoft.com/).
-1. In the admin enter, select  **Users** > **Active users** and verify that they have one of the licenses listed above. 
+1. In the admin center, select  **Users** > **Active users** and verify that users have one of the licenses listed above. 
 1. To verify that Bing Chat Enterprise is enabled for the user, select the user's **Display name** to open the flyout menu. 
 1. In the flyout, select the **Licenses & apps** tab, then expand the **Apps** list.
 1. Verify that **Bing Chat Enterprise** is enabled for the user.
- 
 
+```http
+*would be nice to have a Graph query that lists users that do/do not have BCE app enabled*
+*licensedetails does output BCE, so its a matter of just getting the query right*
+**powershell or http preferably**
+Ex output from my lab: GET https://graph.microsoft.com/v1.0/me/licenseDetails
+{
+    "servicePlanId": "0d0c0d31-fae7-41f2-b909-eaf4d7f26dba",
+    "servicePlanName": "Bing_Chat_Enterprise",
+    "provisioningStatus": "Success",
+    "appliesTo": "User"
+},
+https://learn.microsoft.com/graph/api/resources/licensedetails
+```
 
 ### Enable Copilot in Windows for Windows 11, version 22H2 clients
 
-Copilot in Windows isn't enabled by default for manged Windows 11, version 22H2 devices because it's behind a [temporary enterprise control](/windows/whats-new/temporary-enterprise-feature-control). For the purposes of temporary enterprise control, a system is considered managed if it's configured to get updates from Windows Update for Business or [Windows Server Update Services (WSUS)](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus). Clients that get updates from Microsoft Configuration Manager and Microsoft Intune are considered managed since their updates ultimately come from WSUS or Windows Updates for Business. 
+Copilot in Windows isn't enabled by default for manged Windows 11, version 22H2 devices because it's behind a [temporary enterprise control](/windows/whats-new/temporary-enterprise-feature-control). For the purposes of temporary enterprise control, a system is considered managed if it's configured to get updates from Windows Update for Business or [Windows Server Update Services (WSUS)](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus). Clients that get updates from Microsoft Configuration Manager and Microsoft Intune are considered managed since their updates ultimately come from WSUS or Windows Updates for Business.
 
-To enable Copilot in Windows for managed Windows 11, version 22H2 devices, use the following instructions:
+To enable Copilot in Windows for managed Windows 11, version 22H2 devices, you'll need to turn off temporary enterprise control for these devices. Since disabling [temporary enterprise control](/windows/whats-new/temporary-enterprise-feature-control) can be impactful, you should test this change before deploying it broadly. To enable Copilot in Windows for managed Windows 11, version 22H2 devices, use the following instructions:
 
-**GPOs/CSPs to set**
+1. Verify that the users accounts have the correct chat provider platform configured for Copilot in Windows. For more information, see the [Configure the chat provider platform that Copilot in Windows uses](#configure-the-chat-provider-platform-that-copilot-in-windows-uses) section.
+1. Apply a policy to disable temporary enterprise control. The following polices apply to Windows 11, version 22H2 with [KB5022845](https://support.microsoft.com/en-us/topic/february-14-2023-kb5022845-os-build-22621-1265-90a807f4-d2e8-486e-8a43-d09e66319f38) and later:
+   - **Group Policy:** Computer Configuration\Administrative Templates\Windows Components\Windows Update\Manage end user experience\\**Enable features introduced via servicing that are off by default**
+
+    - **CSP**: ./Device/Vendor/MSFT/Policy/Config/Update/[AllowTemporaryEnterpriseFeatureControl](/windows/client-management/mdm/policy-csp-update?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json#allowtemporaryenterprisefeaturecontrol)
+       - In the Intune [settings catalog](/mem/intune/configuration/settings-catalog), this setting is named **Allow Temporary Enterprise Feature Control** under the **Windows Update for Business** category.
+1. 
 
 ### Windows 11 clients with the 2023 annual update installed (coming soon)
 
