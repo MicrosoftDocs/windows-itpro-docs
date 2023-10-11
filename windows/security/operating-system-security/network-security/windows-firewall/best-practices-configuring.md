@@ -219,7 +219,7 @@ A Windows Defender Application Control (WDAC) policy needs to be deployed which 
 
 Follow the detailed [WDAC Application ID (AppId) Tagging Guide](/windows/security/threat-protection/windows-defender-application-control/appidtagging/windows-defender-application-control-appid-tagging-guide) to create, deploy, and test an AppID (Application ID) policy to tag applications. 
 
-**Step 2: Configure Firewall Rules using PolicyAppId Tags** 
+### Step 2: Configure Firewall Rules using PolicyAppId Tags
 
 - **Deploy firewall rules with Intune:** When creating firewall rules with Intune Microsoft Defender Firewall Rules, provide the AppId tag in the Policy App ID setting. The properties come directly from the [Firewall configuration service provider ](/windows/client-management/mdm/firewall-csp)(CSP) and apply to the Windows platform.
 You can do this through the Intune admin center under Endpoint security > Firewall. Policy templates can be found via Create policy > Windows 10, Windows 11, and Windows Server > Microsoft Defender Firewall or Microsoft Defender Firewall Rules. 
