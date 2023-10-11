@@ -332,6 +332,164 @@ You can choose to add protectors to the volume. It is recommended to add at leas
 
 ---
 
+## Manage BitLocker protectors
+
+The management of BitLocker protectors consist in adding, removing, and backing up protectors.
+
+Follow the instructions below manage BitLocker protectors, selecting the option that best suits your needs.
+
+### List protectors
+
+##### Retrieve the BitLocker recovery password protector
+
+#### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
+
+```PowerShell
+(Get-BitLockerVolume -mountpoint $env:SystemDrive).KeyProtector | where-object {$_.KeyProtectorType -eq 'RecoveryPassword'} | ft KeyProtectorId,RecoveryPassword
+```
+
+
+#### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
+
+To verify if a TPM protector is available, the list of protectors available for a volume can be listed by running the following command:
+
+```cmd
+ manage-bde.exe -protectors -get <volume>
+```
+
+#### [:::image type="icon" source="images/controlpanel.svg"::: **Control Panel**](#tab/controlpanel)
+
+---
+
+### Add protectors
+
+For Microsoft Entra joined devices, the recovery password should be stored in Microsoft Entra ID.  
+
+For domain-joined devices, including servers, the recovery password should be stored in Active Directory Domain Services (AD DS).
+
+#### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
+
+Add a BitLocker recovery password protector for the OS volume
+
+```PowerShell
+Add-BitLockerKeyProtector -MountPoint -mountpoint $env:SystemDrive -RecoveryPasswordProtector
+```
+
+In the example below, the user adds a domain SID-based protector to a previously encrypted operating system volume. The user knows the SID for the user account or group they wish to add and uses the following command:
+
+```powershell
+Add-BitLockerKeyProtector C: -ADAccountOrGroupProtector -ADAccountOrGroup "<SID>"
+```
+
+> [!NOTE]
+> Active Directory-based protectors are normally used to unlock Failover Cluster-enabled volumes.
+
+
+#### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
+
+A common protector for a data volume is the password protector. In the next example, a password protector is added to the volume.
+
+```cmd
+manage-bde.exe -protectors -add -pw D:
+```
+
+Another example is a user on a non-TPM hardware who wishes to add a password and SID-based protector to the operating system volume. In this instance, the user adds the protectors first. Adding the protectors is done with the command:
+
+```cmd
+manage-bde.exe -protectors -add C: -pw -sid <user or group>
+```
+
+This command requires the user to enter and then confirm the password protector, before adding both protectors to the volume. With the protectors enabled on the volume, the user just needs to turn on BitLocker.
+
+#### [:::image type="icon" source="images/controlpanel.svg"::: **Control Panel**](#tab/controlpanel)
+
+---
+
+### Backup a recovery password to Microsoft Entra ID
+
+#### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
+
+```PowerShell
+(Get-BitLockerVolume -mountpoint $env:SystemDrive).KeyProtector | where-object {$_.KeyProtectorType -eq 'RecoveryPassword'} | ft KeyProtectorId,RecoveryPassword
+BackuptoAAD-BitLockerKeyProtector -MountPoint $env:SystemDrive -KeyProtectorId "{GUID}"
+```
+
+<!--
+```powershell
+Add-BitLockerKeyProtector -MountPoint "C:" -RecoveryPasswordProtector
+$BLV = Get-BitLockerVolume -MountPoint "C:"
+BackupToAAD-BitLockerKeyProtector -MountPoint "C:" -KeyProtectorId $BLV.KeyProtector[0].KeyProtectorId
+```
+-->
+
+#### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
+
+```cmd
+```
+
+#### [:::image type="icon" source="images/controlpanel.svg"::: **Control Panel**](#tab/controlpanel)
+
+---
+
+
+### Backup a recovery password to Active Directory
+
+#### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
+
+```PowerShell
+(Get-BitLockerVolume -mountpoint $env:SystemDrive).KeyProtector | where-object {$_.KeyProtectorType -eq 'RecoveryPassword'} | ft KeyProtectorId,RecoveryPassword
+Backup-BitLockerKeyProtector -MountPoint $env:SystemDrive -KeyProtectorId "{GUID}"
+```
+
+<!--
+```powershell
+Add-BitLockerKeyProtector -MountPoint "C:" -RecoveryPasswordProtector
+$BLV = Get-BitLockerVolume -MountPoint "C:"
+Backup-BitLockerKeyProtector -MountPoint "C:" -KeyProtectorId $BLV.KeyProtector[0].KeyProtectorId
+```
+-->
+
+#### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
+
+```cmd
+```
+
+#### [:::image type="icon" source="images/controlpanel.svg"::: **Control Panel**](#tab/controlpanel)
+
+---
+
+### Remove protectors
+
+#### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
+
+To remove the existing protectors prior to provisioning BitLocker on the volume, use the `Remove-BitLockerKeyProtector` cmdlet. Running this cmdlet requires the GUID associated with the protector to be removed.
+
+The following commands return the list of key protectors and GUIDS:
+
+```PowerShell
+$vol = Get-BitLockerVolume C:
+$keyprotectors = $vol.KeyProtector
+$keyprotectors
+```
+
+By using this information, the key protector for a specific volume can be removed using the command:
+
+```powershell
+Remove-BitLockerKeyProtector <volume>: -KeyProtectorID "{GUID}"
+```
+
+> [!NOTE]
+> The BitLocker cmdlet requires the key protector GUID enclosed in quotation marks to execute. Ensure the entire GUID, with braces, is included in the command.
+
+#### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
+
+```cmd
+```
+
+#### [:::image type="icon" source="images/controlpanel.svg"::: **Control Panel**](#tab/controlpanel)
+
+---
+
 ## Disable BitLocker
 
 Disabling BitLocker decrypts and removes any associated protectors from the volumes. Decryption should occur when protection is no longer required, and not as a troubleshooting step.
@@ -371,209 +529,5 @@ BitLocker decryption using the Control Panel is done using a wizard. After openi
 The Control Panel doesn't report decryption progress, but displays it in the notification area of the task bar. Selecting the notification area icon will open a modal dialog with progress.
 
 Once decryption is complete, the drive updates its status in the Control Panel and becomes available for encryption.
-
----
-
-## Manage BitLocker protectors
-
-The management of BitLocker protectors consist in adding, removing, and backing up protectors.
-
-Follow the instructions below manage BitLocker protectors, selecting the option that best suits your needs.
-
-### List protectors
-
-##### Retrieve the BitLocker recovery password protector
-
-#### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
-
-```PowerShell
-(Get-BitLockerVolume -mountpoint $env:SystemDrive).KeyProtector | where-object {$_.KeyProtectorType -eq 'RecoveryPassword'} | ft KeyProtectorId,RecoveryPassword
-```
-
-
-#### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
-
-To verify if a TPM protector is available, the list of protectors available for a volume can be listed by running the following command:
-
-```cmd
- manage-bde.exe -protectors -get <volume>
-```
-
-#### [:::image type="icon" source="images/controlpanel.svg"::: **Control Panel**](#tab/controlpanel)
-
----
-
-### Add protectors
-
-#### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
-
-```powershell
-```
-
-
-#### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
-
-```cmd
-```
-
-#### [:::image type="icon" source="images/controlpanel.svg"::: **Control Panel**](#tab/controlpanel)
-
----
-
-### Remove protectors
-
-#### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
-
-```powershell
-```
-
-
-#### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
-
-```cmd
-```
-
-#### [:::image type="icon" source="images/controlpanel.svg"::: **Control Panel**](#tab/controlpanel)
-
----
-
-<!--
-#### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
-
-This command encrypts the drive using the TPM as the protector. If users are unsure of the protector for a volume, they can use the `-protectors` option in `manage-bde.exe` to list this information by executing the following command:
-
-```cmd
-manage-bde.exe -protectors -get <volume>
-```
-
-### Provisioning BitLocker with two protectors
-
-Another example is a user on a non-TPM hardware who wishes to add a password and SID-based protector to the operating system volume. In this instance, the user adds the protectors first. Adding the protectors is done with the command:
-
-```cmd
-manage-bde.exe -protectors -add C: -pw -sid <user or group>
-```
-
-This command requires the user to enter and then confirm the password protector, before adding both protectors to the volume. With the protectors enabled on the volume, the user just needs to turn on BitLocker.
-
-A common protector for a data volume is the password protector. In the next example, a password protector is added to the volume and turn on BitLocker.
-
-```cmd
-manage-bde.exe -protectors -add -pw C:
-manage-bde.exe -on C:
-```
-
-
-## Manage BitLocker protectors
-
-
-#### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
-
-To remove the existing protectors prior to provisioning BitLocker on the volume, use the `Remove-BitLockerKeyProtector` cmdlet. Running this cmdlet requires the GUID associated with the protector to be removed.
-
-The following commands return the list of key protectors and GUIDS:
-
-```PowerShell
-$vol = Get-BitLockerVolume C:
-$keyprotectors = $vol.KeyProtector
-$keyprotectors
-```
-
-By using this information, the key protector for a specific volume can be removed using the command:
-
-```powershell
-Remove-BitLockerKeyProtector <volume>: -KeyProtectorID "{GUID}"
-```
-
-> [!NOTE]
-> The BitLocker cmdlet requires the key protector GUID enclosed in quotation marks to execute. Ensure the entire GUID, with braces, is included in the command.
-
-In the example below, the user adds a domain SID-based protector to a previously encrypted operating system volume. The user knows the SID for the user account or group they wish to add and uses the following command:
-
-```powershell
-Add-BitLockerKeyProtector C: -ADAccountOrGroupProtector -ADAccountOrGroup "<SID>"
-```
-
-> [!NOTE]
-> Active Directory-based protectors are normally used to unlock Failover Cluster-enabled volumes.
-
-For Microsoft Entra joined devices, the recovery password should be stored in Microsoft Entra ID.  
-
-**Example**: Use PowerShell to add a recovery password and back it up to Microsoft Entra ID before enabling BitLocker*:
-
-```powershell
-Add-BitLockerKeyProtector -MountPoint "C:" -RecoveryPasswordProtector
-$BLV = Get-BitLockerVolume -MountPoint "C:"
-BackupToAAD-BitLockerKeyProtector -MountPoint "C:" -KeyProtectorId $BLV.KeyProtector[0].KeyProtectorId
-```
-
-For domain-joined devices, including servers, the recovery password should be stored in Active Directory Domain Services (AD DS).
-
-**Example**: Use PowerShell to add a recovery password and back it up to AD DS before enabling BitLocker:
-
-```powershell
-Add-BitLockerKeyProtector -MountPoint "C:" -RecoveryPasswordProtector
-$BLV = Get-BitLockerVolume -MountPoint "C:"
-Backup-BitLockerKeyProtector -MountPoint "C:" -KeyProtectorId $BLV.KeyProtector[0].KeyProtectorId
-```
-
-
-
-
-
-
-
-### Add a BitLocker recovery password protector for the OS volume
-
-#### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
-
-```PowerShell
-Add-BitLockerKeyProtector -MountPoint -mountpoint $env:SystemDrive -RecoveryPasswordProtector
-```
-
-#### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
----
-
-### Remove a BitLocker key protector
-
-#### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
-
-```PowerShell
-Remove-BitLockerKeyProtector -MountPoint C: -KeyProtectorId "{GUID}"
-```
-
-#### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
----
-
-### Backup a recovery password
-
-#### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
-
-```PowerShell
-(Get-BitLockerVolume -mountpoint $env:SystemDrive).KeyProtector | where-object {$_.KeyProtectorType -eq 'RecoveryPassword'} | ft KeyProtectorId,RecoveryPassword
-BackuptoAAD-BitLockerKeyProtector -MountPoint $env:SystemDrive -KeyProtectorId "{GUID}"
-```
-
-#### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
-
----
-
-
-
-
-## Template
-
-#### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
-
-```powershell
-```
-
-
-#### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
-
-```cmd
-```
-
-#### [:::image type="icon" source="images/controlpanel.svg"::: **Control Panel**](#tab/controlpanel)
 
 ---
