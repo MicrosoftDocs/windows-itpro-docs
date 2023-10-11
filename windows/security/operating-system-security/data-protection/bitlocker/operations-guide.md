@@ -374,7 +374,15 @@ Once decryption is complete, the drive updates its status in the Control Panel a
 
 ---
 
-## Retrieve the BitLocker recovery password protector for the OS volume
+## Manage BitLocker protectors
+
+The management of BitLocker protectors consist in adding, removing, and backing up protectors.
+
+Follow the instructions below manage BitLocker protectors, selecting the option that best suits your needs.
+
+### List protectors
+
+##### Retrieve the BitLocker recovery password protector
 
 #### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
 
@@ -395,7 +403,39 @@ To verify if a TPM protector is available, the list of protectors available for 
 
 ---
 
+### Add protectors
 
+#### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
+
+```powershell
+```
+
+
+#### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
+
+```cmd
+```
+
+#### [:::image type="icon" source="images/controlpanel.svg"::: **Control Panel**](#tab/controlpanel)
+
+---
+
+### Remove protectors
+
+#### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
+
+```powershell
+```
+
+
+#### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
+
+```cmd
+```
+
+#### [:::image type="icon" source="images/controlpanel.svg"::: **Control Panel**](#tab/controlpanel)
+
+---
 
 <!--
 #### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
@@ -426,9 +466,6 @@ manage-bde.exe -on C:
 
 ## Manage BitLocker protectors
 
-The management of BitLocker protectors consist in adding, removing, and backing up protectors.
-
-Follow the instructions below manage BitLocker protectors, selecting the option that best suits your needs.
 
 #### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
 
