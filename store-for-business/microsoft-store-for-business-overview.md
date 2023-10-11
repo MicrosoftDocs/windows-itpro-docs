@@ -244,7 +244,6 @@ Store for Business and Education is currently available in these markets.
 - Liechtenstein
 - Lithuania
 - Luxembourg
-- Macedonia
 - Madagascar
 - Malawi
 - Malaysia
@@ -268,6 +267,7 @@ Store for Business and Education is currently available in these markets.
 - New Zealand
 - Nicaragua
 - Nigeria
+- North Macedonia
 - Norway
 - Oman
 - Pakistan
@@ -310,7 +310,7 @@ Store for Business and Education is currently available in these markets.
 - Tonga
 - Trinidad and Tobago
 - Tunisia
-- Turkey
+- Türkiye
 - Turks and Caicos Islands
 - Uganda
 - United Arab Emirates
