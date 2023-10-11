@@ -70,7 +70,7 @@ To register the applications, follow these steps:
   :::column span="3":::
   3. Review the permissions requested by the *Microsoft Pin Reset Service Production* application and select **Accept** to confirm consent to both applications to access your organization.
   >[!NOTE]
-  >After accepance, the redirect page will show a blank page. This is a known behavior.
+  >After acceptance, the redirect page will show a blank page. This is a known behavior.
   :::column-end:::
   :::column span="1":::
     :::image type="content" alt-text="Screenshot showing the PIN reset service permissions final page." source="images/pinreset/pin-reset-service-prompt-2.png" lightbox="images/pinreset/pin-reset-service-prompt-2.png" border="true":::
