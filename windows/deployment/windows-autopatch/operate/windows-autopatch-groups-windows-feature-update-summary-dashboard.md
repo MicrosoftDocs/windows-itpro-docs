@@ -48,5 +48,5 @@ The following options are available:
 
 | Option | Description |
 | ----- | ----- |
-| Refresh | The option to **Refresh** the Summary dashboard is available at the top of the page. This process will ensure that the Summary dashboard view is updated to the latest available dataset from within the last 24-hour period. |
+| Refresh | The option to **Refresh** the Summary dashboard is available at the top of the page. This process ensures that the Summary dashboard view is updated to the latest available dataset from within the last 24-hour period. |
 | Summary links | Each column represents the summary of included devices. Select the hyperlinked number to produce a filtered report in a new browser tab. |
