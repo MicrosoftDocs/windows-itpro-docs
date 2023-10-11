@@ -102,11 +102,6 @@ If a drive is pre-provisioned with BitLocker, a status of **Waiting for Activati
 
 ---
 
-
-
-
-
-<!--
 ## Enable BitLocker
 
 ### OS drive with TPM protector
@@ -120,11 +115,11 @@ The following example shows how to enable BitLocker on an operating system drive
 ```powershell
 Enable-BitLocker C: -TpmProtector
 ```
-
+#### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
+#### [:::image type="icon" source="images/controlpanel.svg"::: **Control Panel**](#tab/controlpanel)
 ---
 
-
-### OS drive with TPM protector
+### OS drive with TPM protector and startup key
 
 In the next example, we add one more protector, the *StartupKey* protector, and choose to skip the BitLocker hardware test. Encryption starts immediately without the need for a reboot:
 
@@ -134,7 +129,8 @@ In the next example, we add one more protector, the *StartupKey* protector, and 
 ```powershell
 Enable-BitLocker C: -StartupKeyProtector -StartupKeyPath <path> -SkipHardwareTest
 ```
-
+#### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
+#### [:::image type="icon" source="images/controlpanel.svg"::: **Control Panel**](#tab/controlpanel)
 ---
 
 ### Data volumes
@@ -165,7 +161,8 @@ Enable-BitLocker D: -EncryptionMethod XtsAes256 -UsedSpaceOnly -TpmProtector
 $SecureString = ConvertTo-SecureString "123456" -AsPlainText -Force
 Enable-BitLocker C: -EncryptionMethod XtsAes256 -UsedSpaceOnly -Pin $SecureString -TPMandPinProtector
 ```
-
+#### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
+#### [:::image type="icon" source="images/controlpanel.svg"::: **Control Panel**](#tab/controlpanel)
 ---
 
 ### Active Directory protector
@@ -195,10 +192,13 @@ Get-ADUser -filter {samaccountname -eq "administrator"}
 
 > [!TIP]
 > In addition to the Windows PowerShell command above, information about the locally logged on user and group membership can be found using: `WHOAMI /ALL`. This doesn't require the use of additional features.
-
+#### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
+#### [:::image type="icon" source="images/controlpanel.svg"::: **Control Panel**](#tab/controlpanel)
 ---
 
 
+
+<!--
 #### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
 
 Using only the `manage-bde.exe -on <drive letter>` command encrypts the operating system volume with a TPM-only protector and no recovery key. However, you may require more secure protectors such as passwords or PIN, and expect to be able to recover information with a recovery key.
@@ -352,7 +352,7 @@ Windows Explorer allows users to launch the **BitLocker Drive Encryption Wizard*
 
 
 
-
+<!--
 ## Manage BitLocker protectors
 
 The management of BitLocker protectors consist in adding, removing, and backing up protectors.
