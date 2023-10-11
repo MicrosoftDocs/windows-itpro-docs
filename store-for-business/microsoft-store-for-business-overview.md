@@ -106,7 +106,7 @@ Also, if your organization plans to use a management tool, you'll need to config
 
 ## Get apps and content
 
-Once signed in to the Microsoft Store, you can browse and search for all products in the Store for Business and Education catalog. Some apps are free,and some apps charge a price. We're continuing to add more paid apps to the Store for Business and Education. Check back if you don't see the app that you're looking for. Currently, you can pay for apps with a credit card, and some items can be paid for with an invoice. We'll be adding more payment options over time. 
+Once signed in to the Microsoft Store, you can browse and search for all products in the Store for Business and Education catalog. Some apps are free, and some apps charge a price. We're continuing to add more paid apps to the Store for Business and Education. Check back if you don't see the app that you're looking for. Currently, you can pay for apps with a credit card, and some items can be paid for with an invoice. We'll be adding more payment options over time. 
 
 **App types** - These app types are supported in the Store for Business and Education:
 
@@ -244,7 +244,6 @@ Store for Business and Education is currently available in these markets.
 - Liechtenstein
 - Lithuania
 - Luxembourg
-- Macedonia
 - Madagascar
 - Malawi
 - Malaysia
@@ -268,6 +267,7 @@ Store for Business and Education is currently available in these markets.
 - New Zealand
 - Nicaragua
 - Nigeria
+- North Macedonia
 - Norway
 - Oman
 - Pakistan
@@ -310,7 +310,7 @@ Store for Business and Education is currently available in these markets.
 - Tonga
 - Trinidad and Tobago
 - Tunisia
-- Turkey
+- Türkiye
 - Turks and Caicos Islands
 - Uganda
 - United Arab Emirates
