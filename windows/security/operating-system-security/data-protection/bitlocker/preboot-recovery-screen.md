@@ -69,7 +69,7 @@ There are rules governing which hint is shown during the recovery (in the order 
 
 :::row:::
   :::column span="4":::
-    **Example: single recovery password saved to file and single backup**
+    #### Example: single recovery password saved to file and single backup
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -86,7 +86,7 @@ There are rules governing which hint is shown during the recovery (in the order 
 :::row-end:::
 :::row:::
   :::column span="4":::
-    **Example: single recovery password for Microsoft account and single backup**
+    #### Example: single recovery password for Microsoft account and single backup
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -104,7 +104,7 @@ There are rules governing which hint is shown during the recovery (in the order 
 :::row-end:::
 :::row:::
   :::column span="4":::
-    **Example: single recovery password in AD DS and single backup**
+    #### Example: single recovery password in AD DS and single backup
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -122,7 +122,7 @@ There are rules governing which hint is shown during the recovery (in the order 
 :::row-end:::
 :::row:::
   :::column span="4":::
-    **Example: single recovery password with multiple backups**
+    #### Example: single recovery password with multiple backups
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -141,7 +141,7 @@ There are rules governing which hint is shown during the recovery (in the order 
 :::row-end:::
 :::row:::
   :::column span="4":::
-    **Example: multiple recovery passwords with sinlge backup**
+    #### Example: multiple recovery passwords with sinlge backup
     :::column-end:::
 :::row-end:::
 :::row:::
