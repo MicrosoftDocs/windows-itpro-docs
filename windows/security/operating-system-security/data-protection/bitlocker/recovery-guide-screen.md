@@ -10,36 +10,47 @@ ms.date: 10/10/2023
 
 # BitLocker recovery screen
 
-During BitLocker recovery, Windows can display a custom recovery message and a few hints to help users finding where a key can be retrieved from.
+During BitLocker recovery, Windows can display a custom recovery message, a custom recovery URL, and a few hints to help users finding where a key can be retrieved from.
 
 This article describes the information displayed in the BitLocker recovery screen depending on configured policy settings and recovery keys status.
 
-## Custom recovery message
+## Default BitLocker recovery screen
 
 :::row:::
   :::column span="2":::
-    BitLocker policy settings allow configuring a custom recovery message and URL on the BitLocker recovery screen. The custom recovery message and URL can include the address of the BitLocker self-service recovery portal, the IT internal website, or a phone number for support.
+    By default, the BitLocker recovery screen displays a generic message and the default url *aka.ms/recoverykeyfaq*.
   :::column-end:::
   :::column span="2":::
-  :::image type="content" source="images/recovery-message-url.png" alt-text="Screenshot of the BitLocker recovery screen showing a custom URL." lightbox="images/recovery-message-url.png":::
+  :::image type="content" source="images/bitlocker-recovery.png" alt-text="Screenshot of the default BitLocker recovery screen." lightbox="images/bitlocker-recovery.png":::
+  :::column-end:::
+:::row-end:::
+
+## Custom recovery message
+
+BitLocker policy settings allow to configure a custom recovery message and URL on the BitLocker recovery screen. The custom recovery message and URL can include the address of the BitLocker self-service recovery portal, the IT internal website, or a phone number for support.
+
+:::row:::
+  :::column span="2":::
+    BitLocker policy settings configured with a custom recovery message.
+  :::column-end:::
+  :::column span="2":::
+  :::image type="content" source="images/bitlocker-recovery-custom-message.png" alt-text="Screenshot of the BitLocker recovery screen showing a custom message." lightbox="images/bitlocker-recovery-custom-message.png":::
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column span="2":::
+    BitLocker policy settings configured with a custom recovery URL.
+  :::column-end:::
+  :::column span="2":::
+  :::image type="content" source="images/bitlocker-recovery-custom-url.png" alt-text="Screenshot of the BitLocker recovery screen showing a custom URL." lightbox="images/bitlocker-recovery-custom-url.png":::
   :::column-end:::
 :::row-end:::
 
 For more information, see [Configure preboot recovery message and URL](policy-settings.md?tabs=os#configure-preboot-recovery-message-and-url).
 
-## BitLocker recovery key hints
+## Recovery key hints
 
-:::row:::
-  :::column span="2":::
-    BitLocker metadata includes information about when and where a BitLocker recovery key was saved. This information isn't exposed through the UI or any public API. It's used solely by the BitLocker recovery screen in the form of hints to help a user locate a volume's recovery key. Hints are displayed on the recovery screen and refer to the location where the key was saved. The hints apply to both the boot manager recovery screen and the WinRE unlock screen.
-  :::column-end:::
-  :::column span="2":::
-  :::image type="content" source="images/recover-message-hint.png" alt-text="Screenshot of the BitLocker recovery screen showing a hint where the BitLocker recovery key was saved." lightbox="images/recover-message-hint.png":::
-  :::column-end:::
-:::row-end:::
-
-> [!IMPORTANT]
-> It's not recommend to print recovery keys or saving them to a file. Instead, use Microsoft Account, Microsoft Entra ID or Active Directory backup.
+BitLocker metadata includes information about when and where a BitLocker recovery key was saved. This information isn't exposed through the UI or any public API. It's used solely by the BitLocker recovery screen in the form of hints to help a user locate a volume's recovery key. Hints are displayed on the recovery screen and refer to the location where the key was saved. The hints apply to both the boot manager recovery screen and the WinRE unlock screen.
 
 There are rules governing which hint is shown during the recovery (in the order of processing):
 
@@ -53,8 +64,33 @@ There are rules governing which hint is shown during the recovery (in the order 
 1. There's no specific hint for keys saved to an on-premises Active Directory. In this case, a custom message (if configured) or a generic message, **Contact your organization's help desk**, is displayed
 1. If two recovery keys are present, but only one was backed up, the system asks for the backed up key, even if the other key is newer
 
+:::row:::
+  :::column span="4":::
+    **Example: single recovery password saved to file and single backup**
+    :::column-end:::
+:::row-end:::
+:::row:::
+:::row:::
+  :::column span="2":::
+    In this scenario, the recovery password is saved to a file
+    
+    > [!IMPORTANT]
+    > It's not recommend to print recovery keys or saving them to a file. Instead, use Microsoft Account, Microsoft Entra ID or Active Directory backup.
+  
+:::column-end:::
+  :::column span="2":::
+  :::image type="content" source="images/bitlocker-recovery-hint.png" alt-text="Screenshot of the BitLocker recovery screen showing a hint where the BitLocker recovery key was saved." lightbox="images/bitlocker-recovery-hint.png":::
+  :::column-end:::
+:::row-end:::
+
+
 ### Example: single recovery password for Microsoft account and single backup
 
+:::row:::
+  :::column span="4":::
+    **Example: single recovery password for Microsoft account and single backup**
+    :::column-end:::
+:::row-end:::
 :::row:::
   :::column span="2":::
     In this scenario, a custom URL is configured. The recovery password is:
