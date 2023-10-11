@@ -31,6 +31,12 @@ The BitLocker drive encryption tools include the two command-line tools:
 - *Configuration Tool* (`manage-bde.exe`) can be used for scripting BitLocker operations, offering options that aren't present in the BitLocker Control Panel applet. For a complete list of the `manage-bde.exe` options, see the [Manage-bde reference](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/ff829849(v=ws.11))
 - *Repair Tool* (`repair-bde.exe`) is useful for disaster recovery scenarios, in which a BitLocker protected drive can't be unlocked normally or using the recovery console
 
+### BitLocker Control Panel applet
+
+Encrypting volumes with the BitLocker Control Panel (select **Start**, enter `BitLocker`, select **Manage BitLocker**) is how many users will use BitLocker. The name of the BitLocker Control Panel applet is *BitLocker Drive Encryption*. The applet supports encrypting operating system, fixed data, and removable data volumes. The BitLocker Control Panel organizes available drives in the appropriate category based on how the device reports itself to Windows. Only formatted volumes with assigned drive letters appear properly in the BitLocker Control Panel applet.
+
+To start encryption for a volume, select **Turn on BitLocker** for the appropriate drive to initialize the **BitLocker Drive Encryption Wizard**. **BitLocker Drive Encryption Wizard** options vary based on volume type (operating system volume or data volume).
+
 ## Check the BitLocker status
 
 To check the BitLocker status of a particular volume, administrators can look at the status of the drive in the BitLocker Control Panel applet, Windows Explorer, `manage-bde.exe` command-line tool, or Windows PowerShell cmdlets. Each option offers different levels of detail and ease of use.
@@ -106,17 +112,22 @@ If a drive is pre-provisioned with BitLocker, a status of **Waiting for Activati
 
 ### OS drive with TPM protector
 
-The following example shows how to enable BitLocker on an operating system drive using only the TPM protector:
+The following example shows how to enable BitLocker on an operating system drive using only the TPM protector and no recovery key:
 
 #### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
-
-The following example shows how to enable BitLocker on an operating system drive using only the TPM protector:
 
 ```powershell
 Enable-BitLocker C: -TpmProtector
 ```
 #### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
+
+```cmd
+manage-bde.exe -on C:
+```
+
 #### [:::image type="icon" source="images/controlpanel.svg"::: **Control Panel**](#tab/controlpanel)
+
+
 ---
 
 ### OS drive with TPM protector and startup key
@@ -125,158 +136,12 @@ In the next example, we add one more protector, the *StartupKey* protector, and 
 
 #### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
 
-
 ```powershell
 Enable-BitLocker C: -StartupKeyProtector -StartupKeyPath <path> -SkipHardwareTest
 ```
 #### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
-#### [:::image type="icon" source="images/controlpanel.svg"::: **Control Panel**](#tab/controlpanel)
----
 
-### Data volumes
-
-#### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
-
-
-Data volume encryption using Windows PowerShell is the same as for operating system volumes. Add the desired protectors prior to encrypting the volume. The following example adds a password protector to the `E:` volume using the variable `$pw` as the password. The `$pw` variable is held as a SecureString value to store the user-defined password:
-
-```powershell
-$pw = Read-Host -AsSecureString
-<user inputs password>
-Enable-BitLockerKeyProtector E: -PasswordProtector -Password $pw
-```
-
-> [!NOTE]
-> The BitLocker cmdlet requires the key protector GUID enclosed in quotation marks to execute. Ensure the entire GUID, with braces, is included in the command.
-
-**Example**: Use PowerShell to enable BitLocker with a TPM protector
-
-```powershell
-Enable-BitLocker D: -EncryptionMethod XtsAes256 -UsedSpaceOnly -TpmProtector 
-```
-
-**Example**: Use PowerShell to enable BitLocker with a TPM+PIN protector, in this case with a PIN set to *123456*:
-
-```powershell
-$SecureString = ConvertTo-SecureString "123456" -AsPlainText -Force
-Enable-BitLocker C: -EncryptionMethod XtsAes256 -UsedSpaceOnly -Pin $SecureString -TPMandPinProtector
-```
-#### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
-#### [:::image type="icon" source="images/controlpanel.svg"::: **Control Panel**](#tab/controlpanel)
----
-
-### Active Directory protector
-
-The **ADAccountOrGroup** protector is an Active Directory SID-based protector. This protector can be added to both operating system and data volumes, although it doesn't unlock operating system volumes in the pre-boot environment. The protector requires the SID for the domain account or group to link with the protector. BitLocker can protect a cluster-aware disk by adding an SID-based protector for the Cluster Name Object (CNO) that lets the disk properly failover and unlock to any member computer of the cluster.
-
-> [!WARNING]
-> The SID-based protector requires the use of an additional protector such as TPM, PIN, recovery key, etc. when used on operating system volumes.
-
-
-#### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
-
-To add an **ADAccountOrGroup** protector to a volume, either the domain SID is needed or the group name preceded by the domain and a backslash. In the example below, the **CONTOSO\\Administrator** account is added as a protector to the data volume G.
-
-```powershell
-Enable-BitLocker G: -AdAccountOrGroupProtector -AdAccountOrGroup CONTOSO\Administrator
-```
-
-For users who wish to use the SID for the account or group, the first step is to determine the SID associated with the account. To get the specific SID for a user account in Windows PowerShell, use the following command:
-
-```powershell
-Get-ADUser -filter {samaccountname -eq "administrator"}
-```
-
-> [!NOTE]
-> Use of this command requires the RSAT-AD-PowerShell feature.
-
-> [!TIP]
-> In addition to the Windows PowerShell command above, information about the locally logged on user and group membership can be found using: `WHOAMI /ALL`. This doesn't require the use of additional features.
-#### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
-#### [:::image type="icon" source="images/controlpanel.svg"::: **Control Panel**](#tab/controlpanel)
----
-
-## Disable BitLocker
-
-Disabling BitLocker decrypts and removes any associated protectors from the volumes. Decryption should occur when protection is no longer required, and not as a troubleshooting step.
-
-Follow the instructions below to disable BitLocker, selecting the option that best suits your needs.
-
-#### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
-
-Windows PowerShell offers the ability to decrypt multiple drives in one pass. In the example below, the user has three encrypted volumes, which they wish to decrypt.
-
-Using the Disable-BitLocker command, they can remove all protectors and encryption at the same time without the need for more commands. An example of this command is:
-
-```powershell
-Disable-BitLocker
-```
-
-To avoid specifying each mount point individually, use the `-MountPoint` parameter in an array to sequence the same command into one line, without requiring additional user input. Example:
-
-```powershell
-Disable-BitLocker -MountPoint E:,F:,G:
-```
-
-#### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
-
-Decryption with `manage-bde.exe` offers the advantage of not requiring user confirmation to start the process. Manage-bde uses the -off command to start the decryption process. A sample command for decryption is:
-
-```powershell
-manage-bde.exe -off C:
-```
-
-This command disables protectors while it decrypts the volume and removes all protectors when decryption is complete.
-
-#### [:::image type="icon" source="images/controlpanel.svg"::: **Control Panel**](#tab/controlpanel)
-
-BitLocker decryption using the Control Panel is done using a wizard. After opening the BitLocker Control Panel applet, select the **Turn off BitLocker** option to begin the process. To proceed, select the confirmation dialog. With **Turn off BitLocker** confirmed, the drive decryption process begins.
-
-The Control Panel doesn't report decryption progress, but displays it in the notification area of the task bar. Selecting the notification area icon will open a modal dialog with progress.
-
-Once decryption is complete, the drive updates its status in the Control Panel and becomes available for encryption.
-
----
-
-<!--
-#### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
-
-Using only the `manage-bde.exe -on <drive letter>` command encrypts the operating system volume with a TPM-only protector and no recovery key. However, you may require more secure protectors such as passwords or PIN, and expect to be able to recover information with a recovery key.
-
-### Enable BitLocker with a TPM only
-
-It's possible to encrypt the operating system volume without any defined protectors by using `manage-bde.exe`. Use this command:
-
-```cmd
-manage-bde.exe -on C:
-```
-
-This command will encrypt the drive using the TPM as the protector. If users are unsure of the protector for a volume, they can use the `-protectors` option in `manage-bde.exe` to list this information by executing the following command:
-
-```cmd
-manage-bde.exe -protectors -get <volume>
-```
-
-### Provisioning BitLocker with two protectors
-
-Another example is a user on a non-TPM hardware who wishes to add a password and SID-based protector to the operating system volume. In this instance, the user adds the protectors first. Adding the protectors is done with the command:
-
-```cmd
-manage-bde.exe -protectors -add C: -pw -sid <user or group>
-```
-
-This command requires the user to enter and then confirm the password protector, before adding both protectors to the volume. With the protectors enabled on the volume, the user just needs to turn on BitLocker.
-
-A common protector for a data volume is the password protector. In the next example, a password protector is added to the volume and turn on BitLocker.
-
-```cmd
-manage-bde.exe -protectors -add -pw C:
-manage-bde.exe -on C:
-```
-
-### Enabling BitLocker without a TPM
-
-Suppose BitLocker is desired on a computer without a TPM. In this scenario, a USB flash drive is needed as a startup key for the operating system volume. The startup key will then allow the computer to boot. To create the startup key using `manage-bde.exe`, the `-protectors` switch would be used specifying the `-startupkey` option. Assuming the USB flash drive is drive letter `E:`, then the following `manage-bde.exe` commands would be used t create the startup key and start the BitLocker encryption:
+Suppose BitLocker is desired on a computer without a TPM. In this scenario, a USB flash drive is needed as a startup key for the operating system volume. The startup key allows the device to boot. To create the startup key using `manage-bde.exe`, the `-protectors` switch would be used specifying the `-startupkey` option. Assuming the USB flash drive is drive letter `E:`, then the following `manage-bde.exe` commands would be used t create the startup key and start the BitLocker encryption:
 
 ```cmd
 manage-bde.exe -protectors -add C: -startupkey E:
@@ -285,23 +150,7 @@ manage-bde.exe -on C:
 
 If prompted, reboot the computer to complete the encryption process.
 
-### Data volume commands
-
-Data volumes use the same syntax for encryption as operating system volumes but they don't require protectors for the operation to complete. Encrypting data volumes can be done using the base command:
-
-```cmd
-manage-bde.exe -on <drive letter>
-```
-
-Or users can choose to add protectors to the volume. It is recommended to add at least one primary protector and a recovery protector to a data volume.
-
 #### [:::image type="icon" source="images/controlpanel.svg"::: **Control Panel**](#tab/controlpanel)
-
-Encrypting volumes with the BitLocker Control Panel (select **Start**, enter `BitLocker`, select **Manage BitLocker**) is how many users will use BitLocker. The name of the BitLocker Control Panel is BitLocker Drive Encryption. The BitLocker Control Panel supports encrypting operating system, fixed data, and removable data volumes. The BitLocker Control Panel will organize available drives in the appropriate category based on how the device reports itself to Windows. Only formatted volumes with assigned drive letters will appear properly in the BitLocker Control Panel applet.
-
-To start encryption for a volume, select **Turn on BitLocker** for the appropriate drive to initialize the **BitLocker Drive Encryption Wizard**. **BitLocker Drive Encryption Wizard** options vary based on volume type (operating system volume or data volume).
-
-### Operating system volume
 
 For the operating system volume the **BitLocker Drive Encryption Wizard** presents several screens that prompt for options while it performs several actions:
 
@@ -367,6 +216,156 @@ After completing the system check (if selected), the **BitLocker Drive Encryptio
 Users can check encryption status by checking the system notification area or the BitLocker Control Panel.
 
 Until encryption is completed, the only available options for managing BitLocker involve manipulation of the password protecting the operating system volume, backing up the recovery key, and turning off BitLocker.
+
+---
+
+### Data volumes
+
+Data volumes use the same syntax for encryption as operating system volumes but they don't require protectors for the operation to complete.
+
+#### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
+
+Data volume encryption using Windows PowerShell is the same as for operating system volumes. Add the desired protectors prior to encrypting the volume. The following example adds a password protector to the `E:` volume using the variable `$pw` as the password. The `$pw` variable is held as a SecureString value to store the user-defined password:
+
+```powershell
+$pw = Read-Host -AsSecureString
+<user inputs password>
+Enable-BitLockerKeyProtector E: -PasswordProtector -Password $pw
+```
+
+> [!NOTE]
+> The BitLocker cmdlet requires the key protector GUID enclosed in quotation marks to execute. Ensure the entire GUID, with braces, is included in the command.
+
+**Example**: Use PowerShell to enable BitLocker with a TPM protector
+
+```powershell
+Enable-BitLocker D: -EncryptionMethod XtsAes256 -UsedSpaceOnly -TpmProtector 
+```
+
+**Example**: Use PowerShell to enable BitLocker with a TPM+PIN protector, in this case with a PIN set to *123456*:
+
+```powershell
+$SecureString = ConvertTo-SecureString "123456" -AsPlainText -Force
+Enable-BitLocker C: -EncryptionMethod XtsAes256 -UsedSpaceOnly -Pin $SecureString -TPMandPinProtector
+```
+#### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
+#### [:::image type="icon" source="images/controlpanel.svg"::: **Control Panel**](#tab/controlpanel)
+---
+
+### Active Directory protector
+
+The **ADAccountOrGroup** protector is an Active Directory SID-based protector. This protector can be added to both operating system and data volumes, although it doesn't unlock operating system volumes in the pre-boot environment. The protector requires the SID for the domain account or group to link with the protector. BitLocker can protect a cluster-aware disk by adding an SID-based protector for the Cluster Name Object (CNO) that lets the disk properly failover and unlock to any member computer of the cluster.
+
+> [!WARNING]
+> The SID-based protector requires the use of an additional protector such as TPM, PIN, recovery key, etc. when used on operating system volumes.
+
+
+#### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
+
+To add an **ADAccountOrGroup** protector to a volume, either the domain SID is needed or the group name preceded by the domain and a backslash. In the example below, the **CONTOSO\\Administrator** account is added as a protector to the data volume G.
+
+```powershell
+Enable-BitLocker G: -AdAccountOrGroupProtector -AdAccountOrGroup CONTOSO\Administrator
+```
+
+For users who wish to use the SID for the account or group, the first step is to determine the SID associated with the account. To get the specific SID for a user account in Windows PowerShell, use the following command:
+
+```powershell
+Get-ADUser -filter {samaccountname -eq "administrator"}
+```
+
+> [!NOTE]
+> Use of this command requires the RSAT-AD-PowerShell feature.
+
+> [!TIP]
+> In addition to the Windows PowerShell command above, information about the locally logged on user and group membership can be found using: `WHOAMI /ALL`. This doesn't require the use of additional features.
+#### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
+
+```cmd
+manage-bde.exe -on <drive letter>
+```
+
+You can choose to add protectors to the volume. It is recommended to add at least one primary protector and a recovery protector to a data volume.
+
+#### [:::image type="icon" source="images/controlpanel.svg"::: **Control Panel**](#tab/controlpanel)
+---
+
+## Disable BitLocker
+
+Disabling BitLocker decrypts and removes any associated protectors from the volumes. Decryption should occur when protection is no longer required, and not as a troubleshooting step.
+
+Follow the instructions below to disable BitLocker, selecting the option that best suits your needs.
+
+#### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
+
+Windows PowerShell offers the ability to decrypt multiple drives in one pass. In the example below, the user has three encrypted volumes, which they wish to decrypt.
+
+Using the Disable-BitLocker command, they can remove all protectors and encryption at the same time without the need for more commands. An example of this command is:
+
+```powershell
+Disable-BitLocker
+```
+
+To avoid specifying each mount point individually, use the `-MountPoint` parameter in an array to sequence the same command into one line, without requiring additional user input. Example:
+
+```powershell
+Disable-BitLocker -MountPoint E:,F:,G:
+```
+
+#### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
+
+Decryption with `manage-bde.exe` offers the advantage of not requiring user confirmation to start the process. Manage-bde uses the -off command to start the decryption process. A sample command for decryption is:
+
+```powershell
+manage-bde.exe -off C:
+```
+
+This command disables protectors while it decrypts the volume and removes all protectors when decryption is complete.
+
+#### [:::image type="icon" source="images/controlpanel.svg"::: **Control Panel**](#tab/controlpanel)
+
+BitLocker decryption using the Control Panel is done using a wizard. After opening the BitLocker Control Panel applet, select the **Turn off BitLocker** option to begin the process. To proceed, select the confirmation dialog. With **Turn off BitLocker** confirmed, the drive decryption process begins.
+
+The Control Panel doesn't report decryption progress, but displays it in the notification area of the task bar. Selecting the notification area icon will open a modal dialog with progress.
+
+Once decryption is complete, the drive updates its status in the Control Panel and becomes available for encryption.
+
+---
+
+<!--
+#### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
+
+This command encrypts the drive using the TPM as the protector. If users are unsure of the protector for a volume, they can use the `-protectors` option in `manage-bde.exe` to list this information by executing the following command:
+
+```cmd
+manage-bde.exe -protectors -get <volume>
+```
+
+### Provisioning BitLocker with two protectors
+
+Another example is a user on a non-TPM hardware who wishes to add a password and SID-based protector to the operating system volume. In this instance, the user adds the protectors first. Adding the protectors is done with the command:
+
+```cmd
+manage-bde.exe -protectors -add C: -pw -sid <user or group>
+```
+
+This command requires the user to enter and then confirm the password protector, before adding both protectors to the volume. With the protectors enabled on the volume, the user just needs to turn on BitLocker.
+
+A common protector for a data volume is the password protector. In the next example, a password protector is added to the volume and turn on BitLocker.
+
+```cmd
+manage-bde.exe -protectors -add -pw C:
+manage-bde.exe -on C:
+```
+
+
+#### [:::image type="icon" source="images/controlpanel.svg"::: **Control Panel**](#tab/controlpanel)
+
+
+
+### Operating system volume
+
+
 
 ### Data volume
 
