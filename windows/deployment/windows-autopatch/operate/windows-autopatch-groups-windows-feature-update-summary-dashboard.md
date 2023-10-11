@@ -1,7 +1,7 @@
 ---
 title: Windows feature update summary dashboard
 description: Provides a broader view of the current Windows OS upgrade status for all devices registered with Windows Autopatch.
-ms.date: 07/25/2023
+ms.date: 10/11/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: how-to
