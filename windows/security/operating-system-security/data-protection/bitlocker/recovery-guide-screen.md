@@ -82,10 +82,6 @@ There are rules governing which hint is shown during the recovery (in the order 
   :::image type="content" source="images/bitlocker-recovery-hint.png" alt-text="Screenshot of the BitLocker recovery screen showing a hint where the BitLocker recovery key was saved." lightbox="images/bitlocker-recovery-hint.png":::
   :::column-end:::
 :::row-end:::
-
-
-### Example: single recovery password for Microsoft account and single backup
-
 :::row:::
   :::column span="4":::
     **Example: single recovery password for Microsoft account and single backup**
@@ -103,9 +99,11 @@ There are rules governing which hint is shown during the recovery (in the order 
   :::image type="content" source="images/rp-example1.png" alt-text="Screenshot of the BitLocker recovery screen showing a hint where the BitLocker recovery key was saved." lightbox="images/rp-example1.png":::
   :::column-end:::
 :::row-end:::
-
-### Example: single recovery password in AD DS and single backup
-
+:::row:::
+  :::column span="4":::
+    **Example: single recovery password in AD DS and single backup**
+    :::column-end:::
+:::row-end:::
 :::row:::
   :::column span="2":::
     In this scenario, a custom URL is configured. The recovery password is:
