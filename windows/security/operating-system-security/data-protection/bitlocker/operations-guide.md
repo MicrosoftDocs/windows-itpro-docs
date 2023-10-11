@@ -196,8 +196,6 @@ Get-ADUser -filter {samaccountname -eq "administrator"}
 #### [:::image type="icon" source="images/controlpanel.svg"::: **Control Panel**](#tab/controlpanel)
 ---
 
-
-
 <!--
 #### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
 
