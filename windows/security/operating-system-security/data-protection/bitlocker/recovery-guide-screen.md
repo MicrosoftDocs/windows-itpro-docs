@@ -5,7 +5,7 @@ ms.collection:
   - highpri
   - tier1
 ms.topic: concept-article
-ms.date: 10/10/2023
+ms.date: 10/11/2023
 ---
 
 # BitLocker recovery screen
@@ -21,7 +21,7 @@ This article describes the information displayed in the BitLocker recovery scree
     By default, the BitLocker recovery screen displays a generic message and the default url *aka.ms/recoverykeyfaq*.
   :::column-end:::
   :::column span="2":::
-  :::image type="content" source="images/bitlocker-recovery.png" alt-text="Screenshot of the default BitLocker recovery screen." lightbox="images/bitlocker-recovery.png":::
+  :::image type="content" source="images/bitlocker-recovery.png" alt-text="Screenshot of the default BitLocker recovery screen." lightbox="images/bitlocker-recovery.png" border="false":::
   :::column-end:::
 :::row-end:::
 
@@ -34,7 +34,7 @@ BitLocker policy settings allow to configure a custom recovery message and URL o
     BitLocker policy settings configured with a custom recovery message.
   :::column-end:::
   :::column span="2":::
-  :::image type="content" source="images/bitlocker-recovery-custom-message.png" alt-text="Screenshot of the BitLocker recovery screen showing a custom message." lightbox="images/bitlocker-recovery-custom-message.png":::
+  :::image type="content" source="images/bitlocker-recovery-custom-message.png" alt-text="Screenshot of the BitLocker recovery screen showing a custom message." lightbox="images/bitlocker-recovery-custom-message.png" border="false":::
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -42,7 +42,7 @@ BitLocker policy settings allow to configure a custom recovery message and URL o
     BitLocker policy settings configured with a custom recovery URL.
   :::column-end:::
   :::column span="2":::
-  :::image type="content" source="images/bitlocker-recovery-custom-url.png" alt-text="Screenshot of the BitLocker recovery screen showing a custom URL." lightbox="images/bitlocker-recovery-custom-url.png":::
+  :::image type="content" source="images/bitlocker-recovery-custom-url.png" alt-text="Screenshot of the BitLocker recovery screen showing a custom URL." lightbox="images/bitlocker-recovery-custom-url.png" border="false":::
   :::column-end:::
 :::row-end:::
 
@@ -78,7 +78,7 @@ There are rules governing which hint is shown during the recovery (in the order 
   
 :::column-end:::
   :::column span="2":::
-  :::image type="content" source="images/bitlocker-recovery-hint.png" alt-text="Screenshot of the BitLocker recovery screen showing a hint where the BitLocker recovery key was saved." lightbox="images/bitlocker-recovery-hint.png":::
+  :::image type="content" source="images/bitlocker-recovery-hint.png" alt-text="Screenshot of the BitLocker recovery screen showing a hint where the BitLocker recovery key was saved." lightbox="images/bitlocker-recovery-hint.png" border="false":::
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -96,7 +96,7 @@ There are rules governing which hint is shown during the recovery (in the order 
     **Result:** the hints for the Microsoft account and custom URL are displayed.
   :::column-end:::
   :::column span="2":::
-  :::image type="content" source="images/bitlocker-recovery-custom-url-single-backup.png" alt-text="Screenshot of the BitLocker recovery screen showing a hint where the BitLocker recovery key was saved." lightbox="images/bitlocker-recovery-custom-url-single-backup.png":::
+  :::image type="content" source="images/bitlocker-recovery-custom-url-single-backup.png" alt-text="Screenshot of the BitLocker recovery screen showing a custom URL and the hint where the BitLocker recovery key was saved." lightbox="images/bitlocker-recovery-custom-url-single-backup.png" border="false":::
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -114,7 +114,7 @@ There are rules governing which hint is shown during the recovery (in the order 
     **Result:** only the custom URL is displayed.
   :::column-end:::
   :::column span="2":::
-  :::image type="content" source="images/bitlocker-recovery-custom-url" alt-text="Screenshot of the BitLocker recovery screen showing only the custom URL." lightbox="images/bitlocker-recovery-custom-url":::
+  :::image type="content" source="images/bitlocker-recovery-custom-url.png" alt-text="Screenshot of the BitLocker recovery screen showing only the custom URL." lightbox="images/bitlocker-recovery-custom-url.png" border="false":::
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -133,7 +133,7 @@ There are rules governing which hint is shown during the recovery (in the order 
     **Result:** only the Microsoft Account hint is displayed.
   :::column-end:::
   :::column span="2":::
-  :::image type="content" source="images/bitlocker-recovery-multiple-backups.png" alt-text="Screenshot of the BitLocker recovery screen showing only the Microsoft Account hint." lightbox="images/bitlocker-recovery-multiple-backups.png":::
+  :::image type="content" source="images/bitlocker-recovery-multiple-backups.png" alt-text="Screenshot of the BitLocker recovery screen showing only the Microsoft Account hint." lightbox="images/bitlocker-recovery-multiple-backups.png" border="false":::
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -158,7 +158,7 @@ There are rules governing which hint is shown during the recovery (in the order 
     **Result:** only the hint for the successfully backed up key is displayed, even if it isn't the most recent key.
   :::column-end:::
   :::column span="2":::
-  :::image type="content" source="images/bitlocker-recovery-hint.png" alt-text="Screenshot of the BitLocker recovery screen showing the key ID of the recovery password that was successfully backed up." lightbox="images/bitlocker-recovery-hint.png":::
+  :::image type="content" source="images/bitlocker-recovery-hint.png" alt-text="Screenshot of the BitLocker recovery screen showing the key ID of the recovery password that was successfully backed up." lightbox="images/bitlocker-recovery-hint.png" border="false":::
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -183,6 +183,6 @@ There are rules governing which hint is shown during the recovery (in the order 
   :::column-end:::
   :::column span="2":::
   **Result:** the hint for the most recent key is displayed.
-  :::image type="content" source="images/bitlocker-recovery-multiple-passwords-multiple-backups.png" alt-text="Screenshot of the BitLocker recovery screen showing the key ID of the most recent key." lightbox="images/bitlocker-recovery-multiple-passwords-multiple-backups.png":::
+  :::image type="content" source="images/bitlocker-recovery-multiple-passwords-multiple-backups.png" alt-text="Screenshot of the BitLocker recovery screen showing the key ID of the most recent key." lightbox="images/bitlocker-recovery-multiple-passwords-multiple-backups.png" border="false":::
   :::column-end:::
 :::row-end:::
