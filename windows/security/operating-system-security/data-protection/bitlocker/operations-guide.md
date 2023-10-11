@@ -196,6 +196,48 @@ Get-ADUser -filter {samaccountname -eq "administrator"}
 #### [:::image type="icon" source="images/controlpanel.svg"::: **Control Panel**](#tab/controlpanel)
 ---
 
+## Disable BitLocker
+
+Disabling BitLocker decrypts and removes any associated protectors from the volumes. Decryption should occur when protection is no longer required, and not as a troubleshooting step.
+
+Follow the instructions below to disable BitLocker, selecting the option that best suits your needs.
+
+#### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
+
+Windows PowerShell offers the ability to decrypt multiple drives in one pass. In the example below, the user has three encrypted volumes, which they wish to decrypt.
+
+Using the Disable-BitLocker command, they can remove all protectors and encryption at the same time without the need for more commands. An example of this command is:
+
+```powershell
+Disable-BitLocker
+```
+
+To avoid specifying each mount point individually, use the `-MountPoint` parameter in an array to sequence the same command into one line, without requiring additional user input. Example:
+
+```powershell
+Disable-BitLocker -MountPoint E:,F:,G:
+```
+
+#### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
+
+Decryption with `manage-bde.exe` offers the advantage of not requiring user confirmation to start the process. Manage-bde uses the -off command to start the decryption process. A sample command for decryption is:
+
+```powershell
+manage-bde.exe -off C:
+```
+
+This command disables protectors while it decrypts the volume and removes all protectors when decryption is complete.
+
+#### [:::image type="icon" source="images/controlpanel.svg"::: **Control Panel**](#tab/controlpanel)
+
+BitLocker decryption using the Control Panel is done using a wizard. After opening the BitLocker Control Panel applet, select the **Turn off BitLocker** option to begin the process. To proceed, select the confirmation dialog. With **Turn off BitLocker** confirmed, the drive decryption process begins.
+
+The Control Panel doesn't report decryption progress, but displays it in the notification area of the task bar. Selecting the notification area icon will open a modal dialog with progress.
+
+Once decryption is complete, the drive updates its status in the Control Panel and becomes available for encryption.
+
+---
+
 <!--
 #### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
 
@@ -506,44 +548,3 @@ BackuptoAAD-BitLockerKeyProtector -MountPoint $env:SystemDrive -KeyProtectorId "
 
 
 
-## Decrypt volumes
-
-Decrypting volumes removes BitLocker and any associated protectors from the volumes. Decryption should occur when protection is no longer required, and not as a troubleshooting step.
-
-Follow the instructions below to disable BitLocker, selecting the option that best suits your needs.
-
-#### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
-
-Windows PowerShell offers the ability to decrypt multiple drives in one pass. In the example below, the user has three encrypted volumes, which they wish to decrypt.
-
-Using the Disable-BitLocker command, they can remove all protectors and encryption at the same time without the need for more commands. An example of this command is:
-
-```powershell
-Disable-BitLocker
-```
-
-To avoid specifying each mount point individually, use the `-MountPoint` parameter in an array to sequence the same command into one line, without requiring additional user input. Example:
-
-```powershell
-Disable-BitLocker -MountPoint E:,F:,G:
-```
-
-#### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
-
-Decryption with `manage-bde.exe` offers the advantage of not requiring user confirmation to start the process. Manage-bde uses the -off command to start the decryption process. A sample command for decryption is:
-
-```powershell
-manage-bde.exe -off C:
-```
-
-This command disables protectors while it decrypts the volume and removes all protectors when decryption is complete.
-
-#### [:::image type="icon" source="images/controlpanel.svg"::: **Control Panel**](#tab/controlpanel)
-
-BitLocker decryption using the Control Panel is done using a wizard. After opening the BitLocker Control Panel applet, select the **Turn off BitLocker** option to begin the process. To proceed, select the confirmation dialog. With **Turn off BitLocker** confirmed, the drive decryption process begins.
-
-The Control Panel doesn't report decryption progress, but displays it in the notification area of the task bar. Selecting the notification area icon will open a modal dialog with progress.
-
-Once decryption is complete, the drive updates its status in the Control Panel and becomes available for encryption.
-
----
