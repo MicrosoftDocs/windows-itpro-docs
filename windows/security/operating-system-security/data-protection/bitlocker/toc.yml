@@ -5,10 +5,10 @@ items:
   href: countermeasures.md
 - name: BitLocker planning guide
   href: planning-guide.md
+- name: BitLocker operations guide
+  href: operations-guide.md
 - name: Configure BitLocker
   href: configure.md
-- name: Device encryption
-  href: device-encryption.md
 - name: How-to guides
   items:
     - name: Install BitLocker on Windows Server
@@ -17,8 +17,6 @@ items:
       href: network-unlock.md
     - name: Protect cluster shared volumes and storage area networks
       href: csv-san.md
-- name: BitLocker operations guide
-  href: operations-guide.md
 - name: BitLocker recovery guide
   items:
     - name: Overview of BitLocker recovery methods

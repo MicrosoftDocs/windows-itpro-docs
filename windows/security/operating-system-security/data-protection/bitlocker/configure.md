@@ -36,7 +36,7 @@ The configuration of devices using CSP is a good option for devices that managed
 The [BitLocker CSP](/windows/client-management/mdm/bitlocker-csp) is used to configure BitLocker, and to report the status of different BitLocker functions to the MDM solution. With Microsoft Intune, you can use the BitLocker status in [compliance polices](/mem/intune/protect/compliance-policy-create-windows#encryption), combining them with [Conditional Access](/azure/active-directory/conditional-access/overview). Conditional Access can prevent or grant access to services like Exchange Online and SharePoint Online, based on the status of BitLocker.
 
 > [!NOTE]
-> For hardware that is compliant with Modern Standby and HSTI, [device encryption](device-encryption.md) is automatically turned on whenever a user Microsoft Entra joins a device. Microsoft Entra ID provides a portal where recovery keys are also backed up, so users can retrieve their own recovery keys for self-service, if necessary.
+> For hardware that is compliant with Modern Standby and HSTI, [device encryption](index.md#device-encryption) is automatically turned on whenever a user Microsoft Entra joins a device. Microsoft Entra ID provides a portal where recovery keys are also backed up, so users can retrieve their own recovery keys for self-service, if necessary.
 
 To learn more about the Intune options to configure and monitor BitLocker, check the following articles:
 
