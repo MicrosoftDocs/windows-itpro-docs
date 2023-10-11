@@ -1,6 +1,6 @@
 ---
-title: BitLocker recovery screen
-description: Learn about the information displayed in the BitLocker recovery screen depending on configured policy settings and recovery keys status.
+title: BitLocker preboot recovery screen
+description: Learn about the information displayed in the BitLocker preboot recovery screen, depending on configured policy settings and recovery keys status.
 ms.collection: 
   - highpri
   - tier1
@@ -8,20 +8,20 @@ ms.topic: concept-article
 ms.date: 10/11/2023
 ---
 
-# BitLocker recovery screen
+# BitLocker preboot recovery screen
 
-During BitLocker recovery, Windows can display a custom recovery message, a custom recovery URL, and a few hints to help users finding where a key can be retrieved from.
+During BitLocker recovery, the *preboot recovery screen* can display a custom recovery message, a custom recovery URL, and a few hints to help users finding where a key can be retrieved from.
 
-This article describes the information displayed in the BitLocker recovery screen depending on configured policy settings and recovery keys status.
+This article describes the information displayed in the preboot recovery screen depending on configured policy settings and recovery keys status.
 
-## Default BitLocker recovery screen
+## Default preboot recovery screen
 
 :::row:::
   :::column span="2":::
     By default, the BitLocker recovery screen displays a generic message and the default url *aka.ms/recoverykeyfaq*.
   :::column-end:::
   :::column span="2":::
-  :::image type="content" source="images/bitlocker-recovery.png" alt-text="Screenshot of the default BitLocker recovery screen." lightbox="images/bitlocker-recovery.png" border="false":::
+  :::image type="content" source="images/preboot-recovery.png" alt-text="Screenshot of the default BitLocker recovery screen." lightbox="images/preboot-recovery.png" border="false":::
   :::column-end:::
 :::row-end:::
 
@@ -34,7 +34,7 @@ BitLocker policy settings allow to configure a custom recovery message and URL o
     BitLocker policy settings configured with a custom recovery message.
   :::column-end:::
   :::column span="2":::
-  :::image type="content" source="images/bitlocker-recovery-custom-message.png" alt-text="Screenshot of the BitLocker recovery screen showing a custom message." lightbox="images/bitlocker-recovery-custom-message.png" border="false":::
+  :::image type="content" source="images/preboot-recovery-custom-message.png" alt-text="Screenshot of the BitLocker recovery screen showing a custom message." lightbox="images/preboot-recovery-custom-message.png" border="false":::
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -42,7 +42,7 @@ BitLocker policy settings allow to configure a custom recovery message and URL o
     BitLocker policy settings configured with a custom recovery URL.
   :::column-end:::
   :::column span="2":::
-  :::image type="content" source="images/bitlocker-recovery-custom-url.png" alt-text="Screenshot of the BitLocker recovery screen showing a custom URL." lightbox="images/bitlocker-recovery-custom-url.png" border="false":::
+  :::image type="content" source="images/preboot-recovery-custom-url.png" alt-text="Screenshot of the BitLocker recovery screen showing a custom URL." lightbox="images/preboot-recovery-custom-url.png" border="false":::
   :::column-end:::
 :::row-end:::
 
@@ -78,7 +78,7 @@ There are rules governing which hint is shown during the recovery (in the order 
   
 :::column-end:::
   :::column span="2":::
-  :::image type="content" source="images/bitlocker-recovery-hint.png" alt-text="Screenshot of the BitLocker recovery screen showing a hint where the BitLocker recovery key was saved." lightbox="images/bitlocker-recovery-hint.png" border="false":::
+  :::image type="content" source="images/preboot-recovery-hint.png" alt-text="Screenshot of the BitLocker recovery screen showing a hint where the BitLocker recovery key was saved." lightbox="images/preboot-recovery-hint.png" border="false":::
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -96,7 +96,7 @@ There are rules governing which hint is shown during the recovery (in the order 
     **Result:** the hints for the Microsoft account and custom URL are displayed.
   :::column-end:::
   :::column span="2":::
-  :::image type="content" source="images/bitlocker-recovery-custom-url-single-backup.png" alt-text="Screenshot of the BitLocker recovery screen showing a custom URL and the hint where the BitLocker recovery key was saved." lightbox="images/bitlocker-recovery-custom-url-single-backup.png" border="false":::
+  :::image type="content" source="images/preboot-recovery-custom-url-single-backup.png" alt-text="Screenshot of the BitLocker recovery screen showing a custom URL and the hint where the BitLocker recovery key was saved." lightbox="images/preboot-recovery-custom-url-single-backup.png" border="false":::
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -114,7 +114,7 @@ There are rules governing which hint is shown during the recovery (in the order 
     **Result:** only the custom URL is displayed.
   :::column-end:::
   :::column span="2":::
-  :::image type="content" source="images/bitlocker-recovery-custom-url.png" alt-text="Screenshot of the BitLocker recovery screen showing only the custom URL." lightbox="images/bitlocker-recovery-custom-url.png" border="false":::
+  :::image type="content" source="images/preboot-recovery-custom-url.png" alt-text="Screenshot of the BitLocker recovery screen showing only the custom URL." lightbox="images/preboot-recovery-custom-url.png" border="false":::
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -133,7 +133,7 @@ There are rules governing which hint is shown during the recovery (in the order 
     **Result:** only the Microsoft Account hint is displayed.
   :::column-end:::
   :::column span="2":::
-  :::image type="content" source="images/bitlocker-recovery-multiple-backups.png" alt-text="Screenshot of the BitLocker recovery screen showing only the Microsoft Account hint." lightbox="images/bitlocker-recovery-multiple-backups.png" border="false":::
+  :::image type="content" source="images/preboot-recovery-multiple-backups.png" alt-text="Screenshot of the BitLocker recovery screen showing only the Microsoft Account hint." lightbox="images/preboot-recovery-multiple-backups.png" border="false":::
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -158,7 +158,7 @@ There are rules governing which hint is shown during the recovery (in the order 
     **Result:** only the hint for the successfully backed up key is displayed, even if it isn't the most recent key.
   :::column-end:::
   :::column span="2":::
-  :::image type="content" source="images/bitlocker-recovery-hint.png" alt-text="Screenshot of the BitLocker recovery screen showing the key ID of the recovery password that was successfully backed up." lightbox="images/bitlocker-recovery-hint.png" border="false":::
+  :::image type="content" source="images/preboot-recovery-hint.png" alt-text="Screenshot of the BitLocker recovery screen showing the key ID of the recovery password that was successfully backed up." lightbox="images/preboot-recovery-hint.png" border="false":::
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -184,6 +184,6 @@ There are rules governing which hint is shown during the recovery (in the order 
     **Result:** the hint for the most recent key is displayed.
   :::column-end:::
   :::column span="2":::
-  :::image type="content" source="images/bitlocker-recovery-multiple-passwords-multiple-backups.png" alt-text="Screenshot of the BitLocker recovery screen showing the key ID of the most recent key." lightbox="images/bitlocker-recovery-multiple-passwords-multiple-backups.png" border="false":::
+  :::image type="content" source="images/preboot-recovery-multiple-passwords-multiple-backups.png" alt-text="Screenshot of the BitLocker recovery screen showing the key ID of the most recent key." lightbox="images/preboot-recovery-multiple-passwords-multiple-backups.png" border="false":::
   :::column-end:::
 :::row-end:::

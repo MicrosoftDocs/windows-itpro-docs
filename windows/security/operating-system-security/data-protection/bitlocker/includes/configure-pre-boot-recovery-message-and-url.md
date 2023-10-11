@@ -16,6 +16,8 @@ This policy setting is used to configure the recovery message and to replace the
 > [!NOTE]
 > Not all characters and languages are supported in pre-boot. It is strongly recommended that you test that the characters you use for the custom message or URL appear correctly on the pre-boot recovery screen.
 
+For more information about the BitLocker preboot recovery screen, see [Preboot recovery screen](/windows/security/operating-system-security/data-protection/bitlocker/preboot-recovery-screen).
+
 |  | Path |
 |--|--|
 | **CSP** | `./Device/Vendor/MSFT/BitLocker/`[SystemDrivesRecoveryMessage](/windows/client-management/mdm/bitlocker-csp#systemdrivesrecoverymessage) |

@@ -25,8 +25,8 @@ items:
       href: recovery-guide.md
     - name: BitLocker recovery process
       href: recovery-guide-process.md
-    - name: BitLocker recovery screen
-      href: recovery-guide-screen.md
+    - name: Preboot recovery screen
+      href: preboot-recovery-screen.md
     - name: BitLocker repair tool
       href: recovery-guide-repair-tool.md
     - name: BitLocker password reset
