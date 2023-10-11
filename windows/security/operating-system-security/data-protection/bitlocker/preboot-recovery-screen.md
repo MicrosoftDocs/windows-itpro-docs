@@ -166,7 +166,7 @@ There are rules governing which hint is shown during the recovery (in the order 
 :::row-end:::
 :::row:::
   :::column span="4":::
-    **Example: multiple recovery passwords with multiple backups**
+    #### Example: multiple recovery passwords with multiple backups
     :::column-end:::
 :::row-end:::
 :::row:::
