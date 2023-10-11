@@ -37,6 +37,21 @@ Encrypting volumes with the BitLocker Control Panel (select **Start**, enter `Bi
 
 To start encryption for a volume, select **Turn on BitLocker** for the appropriate drive to initialize the **BitLocker Drive Encryption Wizard**. **BitLocker Drive Encryption Wizard** options vary based on volume type (operating system volume or data volume).
 
+#### OneDrive option
+
+There's an option for storing the BitLocker recovery key using OneDrive. This option requires that computers aren't members of a domain and that the user is using a Microsoft Account. Local user accounts don't have the option to use OneDrive. Using the OneDrive option is the default recommended recovery key storage method for computers that aren't joined to a domain.
+
+Users can verify whether the recovery key is saved properly by checking OneDrive for the *BitLocker* folder, which is created automatically during the save process. The folder contains two files, a `readme.txt` and the recovery key. For users storing more than one recovery password on their OneDrive, they can identify the required recovery key by looking at the file name. The recovery key ID is appended to the end of the file name.
+
+#### Using BitLocker within Windows Explorer
+
+Windows Explorer allows users to launch the **BitLocker Drive Encryption Wizard** by right-clicking a volume and selecting **Turn On BitLocker**. This option is available on client computers by default. On servers, the BitLocker feature and the Desktop-Experience feature must first be installed for this option to be available. After selecting **Turn on BitLocker**, the wizard works exactly as it does when launched using the BitLocker Control Panel.
+
+Using the Control Panel, administrators can choose **Turn on BitLocker** to start the BitLocker Drive Encryption wizard and add a protector, like PIN for an operating system volume (or password if no TPM exists), or a password or smart card protector to a data volume.
+The drive security window displays prior to changing the volume status. Selecting **Activate BitLocker** will complete the encryption process.
+
+Once BitLocker protector activation is completed, the completion notice is displayed.
+
 ## Check the BitLocker status
 
 To check the BitLocker status of a particular volume, administrators can look at the status of the drive in the BitLocker Control Panel applet, Windows Explorer, `manage-bde.exe` command-line tool, or Windows PowerShell cmdlets. Each option offers different levels of detail and ease of use.
@@ -260,37 +275,21 @@ Enable-BitLocker D: -EncryptionMethod XtsAes256 -UsedSpaceOnly -TpmProtector
 $SecureString = ConvertTo-SecureString "123456" -AsPlainText -Force
 Enable-BitLocker C: -EncryptionMethod XtsAes256 -UsedSpaceOnly -Pin $SecureString -TPMandPinProtector
 ```
+
 #### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
 
 Data volumes use the same syntax for encryption as operating system volumes but they don't require protectors for the operation to complete. Encrypting data volumes can be done using the base command:
 
 ```cmd
 manage-bde.exe -on <drive letter>
-```dotnetcli
-
 ```
-or additional protectors can be added to the volume first. It's recommended to add at least one primary protector plus a recovery protector to a data volume.
 
+or additional protectors can be added to the volume first. It's recommended to add at least one primary protector plus a recovery protector to a data volume.
 
 #### [:::image type="icon" source="images/controlpanel.svg"::: **Control Panel**](#tab/controlpanel)
 
 Encrypting data volumes using the BitLocker Control Panel works in a similar fashion to encryption of the operating system volumes. Users select **Turn on BitLocker** within the BitLocker Control Panel to begin the **BitLocker Drive Encryption Wizard**.
 
-##### OneDrive option
-
-There's an option for storing the BitLocker recovery key using OneDrive. This option requires that computers aren't members of a domain and that the user is using a Microsoft Account. Local user accounts don't have the option to use OneDrive. Using the OneDrive option is the default recommended recovery key storage method for computers that aren't joined to a domain.
-
-Users can verify whether the recovery key is saved properly by checking OneDrive for the *BitLocker* folder, which is created automatically during the save process. The folder contains two files, a `readme.txt` and the recovery key. For users storing more than one recovery password on their OneDrive, they can identify the required recovery key by looking at the file name. The recovery key ID is appended to the end of the file name.
-
-##### Using BitLocker within Windows Explorer
-
-Windows Explorer allows users to launch the **BitLocker Drive Encryption Wizard** by right-clicking a volume and selecting **Turn On BitLocker**. This option is available on client computers by default. On servers, the BitLocker feature and the Desktop-Experience feature must first be installed for this option to be available. After selecting **Turn on BitLocker**, the wizard works exactly as it does when launched using the BitLocker Control Panel.
-
-
-Using the Control Panel, administrators can choose **Turn on BitLocker** to start the BitLocker Drive Encryption wizard and add a protector, like PIN for an operating system volume (or password if no TPM exists), or a password or smart card protector to a data volume.
-The drive security window displays prior to changing the volume status. Selecting **Activate BitLocker** will complete the encryption process.
-
-Once BitLocker protector activation is completed, the completion notice is displayed.
 ---
 
 ### Active Directory protector
@@ -320,6 +319,7 @@ Get-ADUser -filter {samaccountname -eq "administrator"}
 
 > [!TIP]
 > In addition to the Windows PowerShell command above, information about the locally logged on user and group membership can be found using: `WHOAMI /ALL`. This doesn't require the use of additional features.
+
 #### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
 
 ```cmd
@@ -329,6 +329,7 @@ manage-bde.exe -on <drive letter>
 You can choose to add protectors to the volume. It is recommended to add at least one primary protector and a recovery protector to a data volume.
 
 #### [:::image type="icon" source="images/controlpanel.svg"::: **Control Panel**](#tab/controlpanel)
+
 ---
 
 ## Disable BitLocker
@@ -519,11 +520,6 @@ BackuptoAAD-BitLockerKeyProtector -MountPoint $env:SystemDrive -KeyProtectorId "
 #### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
 
 ---
-
-
-
-
-
 
 
 
