@@ -180,9 +180,10 @@ There are rules governing which hint is shown during the recovery (in the order 
       - Saved to Microsoft Entra ID
       - creation time: **3PM**
       - key ID: **045219EC-A53B-41AE-B310-08EC883AAEDD**
+    
+    **Result:** the hint for the most recent key is displayed.
   :::column-end:::
   :::column span="2":::
-  **Result:** the hint for the most recent key is displayed.
   :::image type="content" source="images/bitlocker-recovery-multiple-passwords-multiple-backups.png" alt-text="Screenshot of the BitLocker recovery screen showing the key ID of the most recent key." lightbox="images/bitlocker-recovery-multiple-passwords-multiple-backups.png" border="false":::
   :::column-end:::
 :::row-end:::
