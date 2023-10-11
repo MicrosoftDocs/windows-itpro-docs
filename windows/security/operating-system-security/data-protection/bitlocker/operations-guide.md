@@ -106,7 +106,7 @@ If a drive is pre-provisioned with BitLocker, a status of **Waiting for Activati
 
 
 
-
+<!--
 ## Enable BitLocker
 
 ### OS drive with TPM protector
