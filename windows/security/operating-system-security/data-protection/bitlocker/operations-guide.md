@@ -20,18 +20,18 @@ The BitLocker Control Panel applet allows users to perform basic tasks such as t
 
 This article describes the BitLocker management tools and how to use them, providing practical examples.
 
-## BitLocker PowerShell module
+### BitLocker PowerShell module
 
 The BitLocker PowerShell module enables administrators to integrate BitLocker options into existing scripts with ease. For a list of cmdlets included in module, their description and syntax, che the [BitLocker PowerShell reference article](/powershell/module/bitlocker).
 
-## BitLocker drive encryption tools
+### BitLocker drive encryption tools
 
 The BitLocker drive encryption tools include the two command-line tools:
 
 - *Configuration Tool* (`manage-bde.exe`) can be used for scripting BitLocker operations, offering options that aren't present in the BitLocker Control Panel applet. For a complete list of the `manage-bde.exe` options, see the [Manage-bde reference](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/ff829849(v=ws.11))
 - *Repair Tool* (`repair-bde.exe`) is useful for disaster recovery scenarios, in which a BitLocker protected drive can't be unlocked normally or using the recovery console
 
-## Example: check the BitLocker status
+## Check the BitLocker status
 
 To check the BitLocker status of a particular volume, administrators can look at the status of the drive in the BitLockerControl Panel applet, Windows Explorer, `manage-bde.exe` command-line tool, or Windows PowerShell cmdlets. Each option offers different levels of detail and ease of use.
 
@@ -102,7 +102,7 @@ If a drive is pre-provisioned with BitLocker, a status of **Waiting for Activati
 
 ---
 
-## Example: enable BitLocker
+## Enable BitLocker
 
 #### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
 
@@ -118,8 +118,7 @@ In the next example, we add one more protector, the *StartupKey* protector, and 
 Enable-BitLocker C: -StartupKeyProtector -StartupKeyPath <path> -SkipHardwareTest
 ```
 
-Data volume encryption using Windows PowerShell is the same as for operating system volumes. Add the desired protectors prior to encrypting the volume. The following example adds a password protector to the E: volume using the variable $pw as the password. The $pw variable is held as a
-SecureString value to store the user-defined password.
+Data volume encryption using Windows PowerShell is the same as for operating system volumes. Add the desired protectors prior to encrypting the volume. The following example adds a password protector to the `E:` volume using the variable `$pw` as the password. The `$pw` variable is held as a SecureString value to store the user-defined password:
 
 ```powershell
 $pw = Read-Host -AsSecureString
@@ -311,7 +310,18 @@ Windows Explorer allows users to launch the **BitLocker Drive Encryption Wizard*
 
 ---
 
-## Example: manage BitLocker protectors
+
+
+
+
+
+
+
+
+
+## Manage BitLocker protectors
+
+The management of BitLocker protectors consist in adding, removing, and backing up protectors.
 
 Follow the instructions below manage BitLocker protectors, selecting the option that best suits your needs.
 
@@ -336,7 +346,7 @@ Remove-BitLockerKeyProtector <volume>: -KeyProtectorID "{GUID}"
 > [!NOTE]
 > The BitLocker cmdlet requires the key protector GUID enclosed in quotation marks to execute. Ensure the entire GUID, with braces, is included in the command.
 
-In the example below, the user wishes to add a domain SID-based protector to the previously encrypted operating system volume. The user knows the SID for the user account or group they wish to add and uses the following command:
+In the example below, the user adds a domain SID-based protector to a previously encrypted operating system volume. The user knows the SID for the user account or group they wish to add and uses the following command:
 
 ```powershell
 Add-BitLockerKeyProtector C: -ADAccountOrGroupProtector -ADAccountOrGroup "<SID>"
@@ -391,7 +401,6 @@ Data volumes use the same syntax for encryption as operating system volumes but 
 
 or additional protectors can be added to the volume first. It's recommended to add at least one primary protector plus a recovery protector to a data volume.
 
-
 #### [:::image type="icon" source="images/controlpanel.svg"::: **Control Panel**](#tab/controlpanel)
 
 Using the Control Panel, administrators can choose **Turn on BitLocker** to start the BitLocker Drive Encryption wizard and add a protector, like PIN for an operating system volume (or password if no TPM exists), or a password or smart card protector to a data volume.
@@ -401,9 +410,76 @@ Once BitLocker protector activation is completed, the completion notice is displ
 
 ---
 
-## Example: decrypt volumes
+
+### Retrieve the BitLocker recovery password protector for the OS volume
+
+#### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
+
+```PowerShell
+(Get-BitLockerVolume -mountpoint $env:SystemDrive).KeyProtector | where-object {$_.KeyProtectorType -eq 'RecoveryPassword'} | ft KeyProtectorId,RecoveryPassword
+```
+
+#### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
+---
+
+
+### Add a BitLocker recovery password protector for the OS volume
+
+#### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
+
+```PowerShell
+Add-BitLockerKeyProtector -MountPoint -mountpoint $env:SystemDrive -RecoveryPasswordProtector
+```
+
+#### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
+---
+
+### Remove a BitLocker key protector
+
+#### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
+
+```PowerShell
+Remove-BitLockerKeyProtector -MountPoint C: -KeyProtectorId "{GUID}"
+```
+
+#### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
+---
+
+
+### Backup a recovery password
+
+#### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
+
+```PowerShell
+(Get-BitLockerVolume -mountpoint $env:SystemDrive).KeyProtector | where-object {$_.KeyProtectorType -eq 'RecoveryPassword'} | ft KeyProtectorId,RecoveryPassword
+BackuptoAAD-BitLockerKeyProtector -MountPoint $env:SystemDrive -KeyProtectorId "{GUID}"
+```
+
+#### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Decrypt volumes
 
 Decrypting volumes removes BitLocker and any associated protectors from the volumes. Decryption should occur when protection is no longer required, and not as a troubleshooting step.
+
+Follow the instructions below to disable BitLocker, selecting the option that best suits your needs.
 
 #### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
 
@@ -415,7 +491,7 @@ Using the Disable-BitLocker command, they can remove all protectors and encrypti
 Disable-BitLocker
 ```
 
-If a user didn't want to input each mount point individually, using the `-MountPoint` parameter in an array can sequence the same command into one line without requiring additional user input. An example command is:
+To avoid specifying each mount point individually, use the `-MountPoint` parameter in an array to sequence the same command into one line, without requiring additional user input. Example:
 
 ```powershell
 Disable-BitLocker -MountPoint E:,F:,G:
@@ -429,18 +505,13 @@ Decryption with `manage-bde.exe` offers the advantage of not requiring user conf
 manage-bde.exe -off C:
 ```
 
-This command disables protectors while it decrypts the volume and removes all protectors when decryption is complete. If users wish to check the status of the decryption, they can use the following command:
-
-```powershell
-manage-bde.exe -status C:
-```
+This command disables protectors while it decrypts the volume and removes all protectors when decryption is complete.
 
 #### [:::image type="icon" source="images/controlpanel.svg"::: **Control Panel**](#tab/controlpanel)
 
-BitLocker decryption using the Control Panel is done using a wizard. TheControl Panel can be called from Windows Explorer or by opening it directly. After opening the BitLockerControl Panel applet, users can select the **Turn off BitLocker** option to begin the process.\
-After selecting the **Turn off BitLocker** option, the user chooses to continue by clicking the confirmation dialog. With **Turn off BitLocker** confirmed, the drive decryption process begins and reports status to the Control Panel.
+BitLocker decryption using the Control Panel is done using a wizard. After opening the BitLockerControl Panel applet, select the **Turn off BitLocker** option to begin the process. To proceed, select the confirmation dialog. With **Turn off BitLocker** confirmed, the drive decryption process begins.
 
-TheControl Panel doesn't report decryption progress but displays it in the notification area of the task bar. Selecting the notification area icon will open a modal dialog with progress.
+The Control Panel doesn't report decryption progress, but displays it in the notification area of the task bar. Selecting the notification area icon will open a modal dialog with progress.
 
 Once decryption is complete, the drive updates its status in the Control Panel and becomes available for encryption.
 
