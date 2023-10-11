@@ -213,7 +213,7 @@ When creating an inbound or outbound rule, you should specify details about the 
 
 Windows Firewall now supports the use of Windows Defender Application Control (WDAC) Application ID (AppID) tags in firewall rules. With this capability, Windows Firewall rules can now be scoped to an application or a group of applications by referencing process tags, without using absolute path or sacrificing security. There are two steps for this configuration: 
 
-**Step 1: Deploy WDAC AppId Tagging Policies**
+### Step 1: Deploy WDAC AppId Tagging Policies
 
 A Windows Defender Application Control (WDAC) policy needs to be deployed which specifies individual applications or groups of applications to apply a PolicyAppId tag to the process token(s). Then, the admin can define firewall rules which are scoped to all processes tagged with the matching PolicyAppId.  
 
