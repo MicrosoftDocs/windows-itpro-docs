@@ -1,5 +1,5 @@
 ---
-title: Reset recovery password
+title: Manage BitLocker recovery password
 description: Learn how to recover BitLocker keys from Microsoft Entra ID and Active Directory Domain Services (AD DS).
 ms.collection: 
   - highpri
@@ -8,15 +8,65 @@ ms.topic: how-to
 ms.date: 09/29/2023
 ---
 
-# Reset recovery password
+# Recovery password
+
+## Retrieve the BitLocker recovery password protector for the OS volume
+
+#### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
+
+```PowerShell
+(Get-BitLockerVolume -mountpoint $env:SystemDrive).KeyProtector | where-object {$_.KeyProtectorType -eq 'RecoveryPassword'} | ft KeyProtectorId,RecoveryPassword
+```
+
+#### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
+---
+
+
+## Add a BitLocker recovery password protector for the OS volume
+
+#### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
+
+```PowerShell
+Add-BitLockerKeyProtector -MountPoint -mountpoint $env:SystemDrive -RecoveryPasswordProtector
+```
+
+#### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
+---
+
+## Remove a BitLocker key protector
+
+#### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
+
+```PowerShell
+Remove-BitLockerKeyProtector -MountPoint C: -KeyProtectorId "{GUID}"
+```
+
+#### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
+---
+
+
+## Backup a recovery password
+
+#### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
+
+```PowerShell
+(Get-BitLockerVolume -mountpoint $env:SystemDrive).KeyProtector | where-object {$_.KeyProtectorType -eq 'RecoveryPassword'} | ft KeyProtectorId,RecoveryPassword
+BackuptoAAD-BitLockerKeyProtector -MountPoint $env:SystemDrive -KeyProtectorId "{GUID}"
+```
+
+#### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
+
+---
+
+## Reset recovery password
 
 It's recommended to invalidate a recovery password after it has been provided and used. The recovery password can be invalidated when it has been provided and used or for any other valid reason.
 
-The recovery password and be invalidated and reset in two ways:
+#### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
 
-- **Use `manage-bde.exe`**: `manage-bde.exe` can be used to remove the old recovery password and add a new recovery password. The procedure identifies the command and the syntax for this method.
+#### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
 
-### Resetting a recovery password using `manage-bde.exe`
+`manage-bde.exe` can be used to remove the old recovery password and add a new recovery password. The procedure identifies the command and the syntax for this method.
 
 1. Remove the previous recovery password.
 
@@ -45,31 +95,7 @@ The recovery password and be invalidated and reset in two ways:
     > [!WARNING]
     > The braces `{}` must be included in the ID string.
 
-
-## Example: retrieve the BitLocker recovery password protector for the OS volume
-
-```PowerShell
-(Get-BitLockerVolume -mountpoint $env:SystemDrive).KeyProtector | where-object {$_.KeyProtectorType -eq 'RecoveryPassword'} | ft KeyProtectorId,RecoveryPassword
-```
-
-## Example: add a BitLocker recovery password protector for the OS volume
-
-```PowerShell
-Add-BitLockerKeyProtector -MountPoint -mountpoint $env:SystemDrive -RecoveryPasswordProtector
-```
-
-## Example: Remove a BitLocker key protector
-
-```PowerShell
-Remove-BitLockerKeyProtector -MountPoint C: -KeyProtectorId "{GUID}"
-```
-
-## Backup a recovery password
-
-```PowerShell
-(Get-BitLockerVolume -mountpoint $env:SystemDrive).KeyProtector | where-object {$_.KeyProtectorType -eq 'RecoveryPassword'} | ft KeyProtectorId,RecoveryPassword
-BackuptoAAD-BitLockerKeyProtector -MountPoint $env:SystemDrive -KeyProtectorId "{GUID}"
-```
+---
 
 ## Example: retrieve Bitlocker recovery keys for a Microsoft Entra joined device
 
@@ -112,10 +138,4 @@ Device name: DESKTOP-53O32QI
  BitLocker recovery key: 496298-461032-321464-595518-463221-173943-033616-139579
  Key id: 045219ec-a53b-41ae-b310-08ec883aaedd
  BitLocker recovery key: 158422-038236-492536-574783-256300-205084-114356-069773
- Key id: 69622eba-9068-449d-bc94-53e375cf5d58
- BitLocker recovery key: 117612-564564-392623-622424-499697-461120-039083-522236
- Key id: 96723a5a-1cf7-4fd6-8142-1c6603195aec
- BitLocker recovery key: 230428-214104-446864-180785-025949-078650-715165-409893
- Key id: 6a7e153f-d5e9-4547-96d6-174ff0d0bdb4
- BitLocker recovery key: 241846-437393-298925-499389-123255-123640-709808-330682
 ```
