@@ -70,7 +70,6 @@ There are rules governing which hint is shown during the recovery (in the order 
     :::column-end:::
 :::row-end:::
 :::row:::
-:::row:::
   :::column span="2":::
     In this scenario, the recovery password is saved to a file
     
@@ -93,10 +92,11 @@ There are rules governing which hint is shown during the recovery (in the order 
       - saved to Microsoft Account
       - not printed
       - not saved to a file
+    
+    **Result:** the hints for the Microsoft account and custom URL are displayed.
   :::column-end:::
   :::column span="2":::
-  **Result:** the hints for the Microsoft account and custom URL are displayed.
-  :::image type="content" source="images/rp-example1.png" alt-text="Screenshot of the BitLocker recovery screen showing a hint where the BitLocker recovery key was saved." lightbox="images/rp-example1.png":::
+  :::image type="content" source="images/bitlocker-recovery-custom-url-single-backup.png" alt-text="Screenshot of the BitLocker recovery screen showing a hint where the BitLocker recovery key was saved." lightbox="images/bitlocker-recovery-custom-url-single-backup.png":::
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -109,32 +109,38 @@ There are rules governing which hint is shown during the recovery (in the order 
     In this scenario, a custom URL is configured. The recovery password is:
     - saved to Active Directory
     - not printed
-    - not saved to a file  
+    - not saved to a file
+    
+    **Result:** only the custom URL is displayed.
   :::column-end:::
   :::column span="2":::
-  **Result:** only the custom URL is displayed.
-  :::image type="content" source="images/rp-example2.png" alt-text="Screenshot of the BitLocker recovery screen showing only the custom URL." lightbox="images/rp-example2.png":::
+  :::image type="content" source="images/bitlocker-recovery-custom-url" alt-text="Screenshot of the BitLocker recovery screen showing only the custom URL." lightbox="images/bitlocker-recovery-custom-url":::
   :::column-end:::
 :::row-end:::
-
-### Example: single recovery password in Microsoft Entra ID with multiple backups
-
+:::row:::
+  :::column span="4":::
+    **Example: single recovery password with multiple backups**
+    :::column-end:::
+:::row-end:::
 :::row:::
   :::column span="2":::
     In this scenario, the recovery password is:
     - saved to Microsoft Account
     - saved to Microsoft Entra ID
     - printed
-    - saved to file  
+    - saved to file
+    
+    **Result:** only the Microsoft Account hint is displayed.
   :::column-end:::
   :::column span="2":::
-  **Result:** only the Microsoft Account hint is displayed.
-  :::image type="content" source="images/rp-example3.png" alt-text="Screenshot of the BitLocker recovery screen showing only the Microsoft Account hint." lightbox="images/rp-example3.png":::
+  :::image type="content" source="images/bitlocker-recovery-multiple-backups.png" alt-text="Screenshot of the BitLocker recovery screen showing only the Microsoft Account hint." lightbox="images/bitlocker-recovery-multiple-backups.png":::
   :::column-end:::
 :::row-end:::
-
-### Example: multiple recovery passwords
-
+:::row:::
+  :::column span="4":::
+    **Example: multiple recovery passwords with sinlge backup**
+    :::column-end:::
+:::row-end:::
 :::row:::
   :::column span="2":::
     In this scenario, there are two recovery passwords.
@@ -142,21 +148,24 @@ There are rules governing which hint is shown during the recovery (in the order 
     The recovery password #1 is:
     - saved to file
     - creation time: **1PM**
-    - key ID: **A564F193**
+    - key ID: **4290B6C0-B17A-497A-8552-272CC30E80D4**
     
     The recovery password #2 is:
     - not backed up
     - creation time: **3PM**
-    - key ID: **T4521ER5**
+    - key ID: **045219EC-A53B-41AE-B310-08EC883AAEDD**
+    
+    **Result:** only the hint for the successfully backed up key is displayed, even if it isn't the most recent key.
   :::column-end:::
   :::column span="2":::
-  **Result:** only the hint for the successfully backed up key is displayed, even if it isn't the most recent key.
-  :::image type="content" source="images/rp-example4.png" alt-text="Screenshot of the BitLocker recovery screen showing the key ID of the recovery password that was successfully backed up." lightbox="images/rp-example4.png":::
+  :::image type="content" source="images/bitlocker-recovery-hint.png" alt-text="Screenshot of the BitLocker recovery screen showing the key ID of the recovery password that was successfully backed up." lightbox="images/bitlocker-recovery-hint.png":::
   :::column-end:::
 :::row-end:::
-
-### Example: multiple recovery passwords
-
+:::row:::
+  :::column span="4":::
+    **Example: multiple recovery passwords with multiple backups**
+    :::column-end:::
+:::row-end:::
 :::row:::
   :::column span="2":::
     In this scenario, there are two recovery passwords.
@@ -165,15 +174,15 @@ There are rules governing which hint is shown during the recovery (in the order 
      - Saved to Microsoft Account
      - Saved to Microsoft Entra ID
      - creation time: **1PM**
-     - key ID: **99631A34**
+     - key ID: **4290B6C0-B17A-497A-8552-272CC30E80D4**
     
     The recovery password #2 is:
       - Saved to Microsoft Entra ID
       - creation time: **3PM**
-      - key ID: **9DF70931**
+      - key ID: **045219EC-A53B-41AE-B310-08EC883AAEDD**
   :::column-end:::
   :::column span="2":::
   **Result:** the hint for the most recent key is displayed.
-  :::image type="content" source="images/rp-example5.png" alt-text="Screenshot of the BitLocker recovery screen showing the key ID of the most recent key." lightbox="images/rp-example5.png":::
+  :::image type="content" source="images/bitlocker-recovery-multiple-passwords-multiple-backups.png" alt-text="Screenshot of the BitLocker recovery screen showing the key ID of the most recent key." lightbox="images/bitlocker-recovery-multiple-passwords-multiple-backups.png":::
   :::column-end:::
 :::row-end:::
