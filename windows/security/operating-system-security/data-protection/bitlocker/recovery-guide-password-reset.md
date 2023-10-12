@@ -10,44 +10,29 @@ ms.date: 09/29/2023
 
 # Recovery password
 
-## Retrieve the BitLocker recovery password protector for the OS volume
+## Reset recovery password
+
+It's recommended to invalidate a recovery password after its use. In following example, all recovery passwords are removed from the OS drive 
 
 #### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
+
+#### Remove all recovery passwords for the OS volume
 
 ```PowerShell
-(Get-BitLockerVolume -mountpoint $env:SystemDrive).KeyProtector | where-object {$_.KeyProtectorType -eq 'RecoveryPassword'} | ft KeyProtectorId,RecoveryPassword
+(Get-BitLockerVolume -MountPoint $env:SystemDrive).KeyProtector | `
+  where-object {$_.KeyProtectorType -eq 'RecoveryPassword'} | `
+  Remove-BitLockerKeyProtector -MountPoint $env:SystemDrive
 ```
 
-#### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
----
-
-
-## Add a BitLocker recovery password protector for the OS volume
-
-#### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
+#### Add a BitLocker recovery password protector for the OS volume
 
 ```PowerShell
-Add-BitLockerKeyProtector -MountPoint -mountpoint $env:SystemDrive -RecoveryPasswordProtector
+Add-BitLockerKeyProtector -MountPoint $env:SystemDrive -RecoveryPasswordProtector
 ```
 
-#### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
----
+#### Backup the BitLocker recovery password to Microsoft Entra ID
 
-## Remove a BitLocker key protector
-
-#### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
-
-```PowerShell
-Remove-BitLockerKeyProtector -MountPoint C: -KeyProtectorId "{GUID}"
-```
-
-#### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
----
-
-
-## Backup a recovery password
-
-#### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
+This step is not required if the policy setting **Choose how BitLocker-protected operating system drives can be recovered** is configured to **Require BitLocker backup to AD DS**.
 
 ```PowerShell
 (Get-BitLockerVolume -mountpoint $env:SystemDrive).KeyProtector | where-object {$_.KeyProtectorType -eq 'RecoveryPassword'} | ft KeyProtectorId,RecoveryPassword
@@ -56,48 +41,42 @@ BackuptoAAD-BitLockerKeyProtector -MountPoint $env:SystemDrive -KeyProtectorId "
 
 #### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
 
----
-
-## Reset recovery password
-
-It's recommended to invalidate a recovery password after it has been provided and used. The recovery password can be invalidated when it has been provided and used or for any other valid reason.
-
-#### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
-
-#### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
-
 `manage-bde.exe` can be used to remove the old recovery password and add a new recovery password. The procedure identifies the command and the syntax for this method.
 
-1. Remove the previous recovery password.
+##### Remove previous recovery passwords for the OS volume
 
-    ```cmd
-    `manage-bde.exe` -protectors -delete C: -type RecoveryPassword
-    ```
+```cmd
+manage-bde.exe -protectors -delete C: -type RecoveryPassword
+```
 
-2. Add the new recovery password.
+##### Add the new recovery passwor
 
-    ```cmd
-    `manage-bde.exe` -protectors -add C: -RecoveryPassword
-    ```
+```cmd
+manage-bde.exe -protectors -add C: -RecoveryPassword
+```
 
-3. Get the ID of the new recovery password. From the screen, copy the ID of the recovery password.
+##### Obtain the ID of the new recovery password
 
-    ```cmd
-    `manage-bde.exe` -protectors -get C: -Type RecoveryPassword
-    ```
+```cmd
+manage-bde.exe -protectors -get C: -Type RecoveryPassword
+```
 
-4. Back up the new recovery password to AD DS.
+From the screen, copy the ID of the recovery password.
 
-    ```cmd
-    `manage-bde.exe` -protectors -adbackup C: -id {EXAMPLE6-5507-4924-AA9E-AFB2EB003692}
-    ```
+##### Back up the new recovery password to AD DS
 
-    > [!WARNING]
-    > The braces `{}` must be included in the ID string.
+This step is not required if the policy setting **Choose how BitLocker-protected operating system drives can be recovered** is configured to **Require BitLocker backup to AD DS**.
+
+```cmd
+manage-bde.exe -protectors -adbackup C: -id {EXAMPLE6-5507-4924-AA9E-AFB2EB003692}
+```
+
+> [!NOTE]
+> The braces `{}` must be included in the ID string.
 
 ---
 
-## Example: retrieve Bitlocker recovery keys for a Microsoft Entra joined device
+## Retrieve Bitlocker recovery keys for a Microsoft Entra joined device
 
 ``` PowerShell
 function Get-EntraBitLockerKeys{
