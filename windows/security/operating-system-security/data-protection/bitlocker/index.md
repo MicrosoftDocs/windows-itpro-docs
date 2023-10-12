@@ -26,12 +26,12 @@ In addition to the TPM, BitLocker has the option to lock the normal startup proc
 
 :::row:::
   :::column span="2":::
-    *BitLocker preboot screen with PIN*
-    :::image type="content" source="images/preboot-pin.png" alt-text="Screenshot of the BitLocker preboot screen prompting to enter a PIN." lightbox="images/preboot-pin.png" border="false":::
+    *BitLocker preboot screen with startup key:*
+    :::image type="content" source="images/preboot-startup-key.png" alt-text="Screenshot of the BitLocker preboot screen prompting to enter a startup key." lightbox="images/preboot-startup-key.png" border="false":::
   :::column-end:::
   :::column span="2":::
-    *BitLocker preboot screen with startup key*
-    :::image type="content" source="images/preboot-startup-key.png" alt-text="Screenshot of the BitLocker preboot screen prompting to enter a PIN." lightbox="images/preboot-startup-key.png" border="false":::
+    *BitLocker preboot screen with PIN:*
+    :::image type="content" source="images/preboot-pin.png" alt-text="Screenshot of the BitLocker preboot screen prompting to enter a PIN." lightbox="images/preboot-pin.png" border="false":::
   :::column-end:::
 :::row-end:::
 

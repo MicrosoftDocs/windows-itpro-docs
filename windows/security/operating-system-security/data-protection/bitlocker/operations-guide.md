@@ -85,7 +85,9 @@ KeyProtector         : {Tpm, RecoveryPassword}
 
 With `manage-bde.exe` you can determine the volume status on the target system, for example:
 
-`manage-bde.exe -status`
+```cmd
+manage-bde.exe -status
+```
 
 This command returns the volumes on the target, current encryption status, encryption method, and volume type (operating system or data) for each volume.
 
@@ -142,37 +144,30 @@ manage-bde.exe -on C:
 
 #### [:::image type="icon" source="images/controlpanel.svg"::: **Control Panel**](#tab/controlpanel)
 
-
 ---
 
 ### OS drive with TPM protector and startup key
 
-In the next example, we add one more protector, the *StartupKey* protector, and choose to skip the BitLocker hardware test. Encryption starts immediately without the need for a reboot:
+In the next example, we add one more protector, the *StartupKey* protector.
+
+Assuming the OS drive letter is `C:` and the USB flash drive is drive letter `E:`, here's the command:
 
 #### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
 
+If you choose to skip the BitLocker hardware test, encryption starts immediately without the need for a reboot.
+
 ```powershell
-Enable-BitLocker C: -StartupKeyProtector -StartupKeyPath <path> -SkipHardwareTest
+Enable-BitLocker C: -StartupKeyProtector -StartupKeyPath E: -SkipHardwareTest
 ```
+
 #### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
 
-Suppose BitLocker is desired on a computer without a TPM. In this scenario, a USB flash drive is needed as a startup key for the operating system volume. The startup key allows the device to boot. To create the startup key using `manage-bde.exe`, the `-protectors` switch would be used specifying the `-startupkey` option. Assuming the USB flash drive is drive letter `E:`, then the following `manage-bde.exe` commands would be used t create the startup key and start the BitLocker encryption:
-
 ```cmd
-manage-bde.exe -protectors -add C: -startupkey E:
+manage-bde.exe -protectors -add C: -TPMAndStartupKey E:
 manage-bde.exe -on C:
 ```
 
 If prompted, reboot the computer to complete the encryption process.
-
-However, you may require more secure protectors such as passwords or PIN and expect information recovery with a recovery key.
-
-The following example illustrates enabling BitLocker on a computer without a TPM chip. Before beginning the encryption process, the startup key needed for BitLocker must be created and saved to a USB drive. When BitLocker is enabled for the operating system volume, BitLocker will need to access the USB flash drive to obtain the encryption key. In this example, the drive letter E represents the USB drive. Once the commands are run, it will prompt to reboot the computer to complete the encryption process.
-
-```cmd
-manage-bde.exe -protectors -add C: -startupkey E:
-manage-bde.exe -on C:
-```
 
 > [!NOTE]
 > After the encryption is completed, the USB startup key must be inserted before the operating system can be started.
@@ -245,6 +240,8 @@ Users can check encryption status by checking the system notification area or th
 Until encryption is completed, the only available options for managing BitLocker involve manipulation of the password protecting the operating system volume, backing up the recovery key, and turning off BitLocker.
 
 ---
+
+:::image type="content" source="images/preboot-startup-key.png" alt-text="Screenshot of the BitLocker preboot screen asking for a USB drive containing the startup key.":::
 
 ### Data volumes
 
@@ -340,120 +337,86 @@ Follow the instructions below manage BitLocker protectors, selecting the option 
 
 ### List protectors
 
-##### Retrieve the BitLocker recovery password protector
+The list of protectors available for a volume (`C:` in the example) can be listed by running the following command:
 
 #### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
 
 ```PowerShell
-(Get-BitLockerVolume -mountpoint $env:SystemDrive).KeyProtector | where-object {$_.KeyProtectorType -eq 'RecoveryPassword'} | ft KeyProtectorId,RecoveryPassword
+(Get-BitLockerVolume -mountpoint C).KeyProtector
 ```
-
 
 #### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
 
-To verify if a TPM protector is available, the list of protectors available for a volume can be listed by running the following command:
-
 ```cmd
- manage-bde.exe -protectors -get <volume>
+ manage-bde.exe -protectors -get C:
 ```
 
 #### [:::image type="icon" source="images/controlpanel.svg"::: **Control Panel**](#tab/controlpanel)
+
+This information is not available in the Control Panel.
 
 ---
 
 ### Add protectors
 
-For Microsoft Entra joined devices, the recovery password should be stored in Microsoft Entra ID.  
-
-For domain-joined devices, including servers, the recovery password should be stored in Active Directory Domain Services (AD DS).
-
 #### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
 
-Add a BitLocker recovery password protector for the OS volume
+##### Add a recovery password protector
 
 ```PowerShell
-Add-BitLockerKeyProtector -MountPoint -mountpoint $env:SystemDrive -RecoveryPasswordProtector
+Add-BitLockerKeyProtector -MountPoint C -RecoveryPasswordProtector
 ```
-
-In the example below, the user adds a domain SID-based protector to a previously encrypted operating system volume. The user knows the SID for the user account or group they wish to add and uses the following command:
-
-```powershell
-Add-BitLockerKeyProtector C: -ADAccountOrGroupProtector -ADAccountOrGroup "<SID>"
-```
-
-> [!NOTE]
-> Active Directory-based protectors are normally used to unlock Failover Cluster-enabled volumes.
-
 
 #### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
 
-A common protector for a data volume is the password protector. In the next example, a password protector is added to the volume.
+```cmd
+manage-bde.exe -protectors -add -recoverypassword C:
+```
+
+---
+
+##### Add a password protector
+
+A common protector for a *data volume* is the *password protector*. In the next example, a password protector is added to a volume.
+
+#### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
+
+```PowerShell
+Add-BitLockerKeyProtector -MountPoint D -PasswordProtector
+```
+
+#### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
 
 ```cmd
 manage-bde.exe -protectors -add -pw D:
 ```
 
-Another example is a user on a non-TPM hardware who wishes to add a password and SID-based protector to the operating system volume. In this instance, the user adds the protectors first. Adding the protectors is done with the command:
-
-```cmd
-manage-bde.exe -protectors -add C: -pw -sid <user or group>
-```
-
-This command requires the user to enter and then confirm the password protector, before adding both protectors to the volume. With the protectors enabled on the volume, the user just needs to turn on BitLocker.
-
-#### [:::image type="icon" source="images/controlpanel.svg"::: **Control Panel**](#tab/controlpanel)
-
 ---
 
-### Backup a recovery password to Microsoft Entra ID
+##### Add a domain SID-based protector protector
+
+> [!NOTE]
+> This option is not available for Microsoft Entra joined devices.
+>
+> Active Directory-based protectors are normally used to unlock Failover Cluster-enabled volumes.
+
+In this example, a domain SID-based protector is added to a previously encrypted volume. The user knows the SID for the user account or group they wish to add and uses the following command:
 
 #### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
 
-```PowerShell
-(Get-BitLockerVolume -mountpoint $env:SystemDrive).KeyProtector | where-object {$_.KeyProtectorType -eq 'RecoveryPassword'} | ft KeyProtectorId,RecoveryPassword
-BackuptoAAD-BitLockerKeyProtector -MountPoint $env:SystemDrive -KeyProtectorId "{GUID}"
-```
-
-<!--
 ```powershell
-Add-BitLockerKeyProtector -MountPoint "C:" -RecoveryPasswordProtector
-$BLV = Get-BitLockerVolume -MountPoint "C:"
-BackupToAAD-BitLockerKeyProtector -MountPoint "C:" -KeyProtectorId $BLV.KeyProtector[0].KeyProtectorId
+Add-BitLockerKeyProtector C: -ADAccountOrGroupProtector -ADAccountOrGroup "<SID>"
 ```
--->
 
 #### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
 
 ```cmd
+manage-bde.exe -protectors -add -sid <user or group>
 ```
 
 #### [:::image type="icon" source="images/controlpanel.svg"::: **Control Panel**](#tab/controlpanel)
 
----
-
-### Backup a recovery password to Active Directory
-
-#### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
-
-```PowerShell
-(Get-BitLockerVolume -mountpoint $env:SystemDrive).KeyProtector | where-object {$_.KeyProtectorType -eq 'RecoveryPassword'} | ft KeyProtectorId,RecoveryPassword
-Backup-BitLockerKeyProtector -MountPoint $env:SystemDrive -KeyProtectorId "{GUID}"
-```
-
-<!--
-```powershell
-Add-BitLockerKeyProtector -MountPoint "C:" -RecoveryPasswordProtector
-$BLV = Get-BitLockerVolume -MountPoint "C:"
-Backup-BitLockerKeyProtector -MountPoint "C:" -KeyProtectorId $BLV.KeyProtector[0].KeyProtectorId
-```
--->
-
-#### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
-
-```cmd
-```
-
-#### [:::image type="icon" source="images/controlpanel.svg"::: **Control Panel**](#tab/controlpanel)
+This option is not available in the Control Panel.
 
 ---
 
