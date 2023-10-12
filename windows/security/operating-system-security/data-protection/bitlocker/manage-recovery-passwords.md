@@ -30,45 +30,57 @@ It's recommended to invalidate a recovery password after its use. In following e
 Add-BitLockerKeyProtector -MountPoint $env:SystemDrive -RecoveryPasswordProtector
 ```
 
-#### Backup the BitLocker recovery password to Microsoft Entra ID
-
-This step is not required if the policy setting **Choose how BitLocker-protected operating system drives can be recovered** is configured to **Require BitLocker backup to AD DS**.
+#### Obtain the ID of the new recovery password
 
 ```PowerShell
 (Get-BitLockerVolume -mountpoint $env:SystemDrive).KeyProtector | where-object {$_.KeyProtectorType -eq 'RecoveryPassword'} | ft KeyProtectorId,RecoveryPassword
-BackuptoAAD-BitLockerKeyProtector -MountPoint $env:SystemDrive -KeyProtectorId "{GUID}"
 ```
+
+Copy the ID of the recovery password from the output.
+
+#### Backup the BitLocker recovery password to Microsoft Entra ID
+
+Using the GUID from the previous step, replace the `{ID}` in the following command:
+
+```PowerShell
+BackuptoAAD-BitLockerKeyProtector -MountPoint $env:SystemDrive -KeyProtectorId "{ID}"
+```
+
+> [!NOTE]
+> The braces `{}` must be included in the ID string.
 
 #### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
 
 `manage-bde.exe` can be used to remove the old recovery password and add a new recovery password. The procedure identifies the command and the syntax for this method.
 
-##### Remove previous recovery passwords for the OS volume
+#### Remove previous recovery passwords for the OS volume
 
 ```cmd
 manage-bde.exe -protectors -delete C: -type RecoveryPassword
 ```
 
-##### Add the new recovery passwor
+#### Add the new recovery password for the OS volume
 
 ```cmd
 manage-bde.exe -protectors -add C: -RecoveryPassword
 ```
 
-##### Obtain the ID of the new recovery password
+#### Obtain the ID of the new recovery password
 
 ```cmd
 manage-bde.exe -protectors -get C: -Type RecoveryPassword
 ```
 
-From the screen, copy the ID of the recovery password.
+Copy the ID of the recovery password from the output.
 
-##### Back up the new recovery password to AD DS
+#### Backup the new recovery password to AD DS
 
-This step is not required if the policy setting **Choose how BitLocker-protected operating system drives can be recovered** is configured to **Require BitLocker backup to AD DS**.
+> [!NOTE] This step is not required if the policy setting [Choose how BitLocker-protected operating system drives can be recovered](policy-settings.md?tabs=os#choose-how-bitlocker-protected-operating-system-drives-can-be-recovered) is configured to **Require BitLocker backup to AD DS**.
+
+Using the ID from the previous step, replace the `{ID}` in the following command:
 
 ```cmd
-manage-bde.exe -protectors -adbackup C: -id {EXAMPLE6-5507-4924-AA9E-AFB2EB003692}
+manage-bde.exe -protectors -adbackup C: -id {ID}
 ```
 
 > [!NOTE]
@@ -119,16 +131,16 @@ Device name: DESKTOP-53O32QI
  BitLocker recovery key: 158422-038236-492536-574783-256300-205084-114356-069773
 ```
 
-## BitLocker Recovery Password Viewer
+## Retrieve Bitlocker recovery keys from Active Directory with BitLocker Recovery Password Viewer
 
-BitLocker Recovery Password Viewer is an optional tool included with the *Remote Server Administration Tools (RSAT)*. With Recovery Password Viewer you can view the BitLocker recovery passwords that are stored in Active Directory Domain Services (AD DS). The tool is an extension for the *Active Directory Users and Computers Microsoft Management Console (MMC)* snap-in.
+BitLocker Recovery Password Viewer is an optional tool included with the *Remote Server Administration Tools (RSAT)*. With Recovery Password Viewer, you can view the BitLocker recovery passwords that are stored in Active Directory Domain Services (AD DS). The tool is an extension for the *Active Directory Users and Computers Microsoft Management Console (MMC)* snap-in.
 
 With BitLocker Recovery Password Viewer you can:
 
 - Check the Active Directory computer object's properties to find the associated BitLocker recovery passwords
 - Search Active Directory for BitLocker recovery password across all the domains in the Active Directory forest. Passwords can also be searched by password identifier (ID)
 
-## Requirements
+### Requirements
 
 To complete the procedures in this scenario, the following requirements must be met:
 
@@ -138,7 +150,11 @@ To complete the procedures in this scenario, the following requirements must be 
 
 The following procedures describe the most common tasks performed by using the BitLocker Recovery Password Viewer.
 
-## View the recovery passwords for a computer object
+### Install BitLocker Recovery Password Viewer
+
+
+
+### View the recovery passwords for a computer object
 
 1. In **Active Directory Users and Computers**, locate and then select the container in which the computer is located
 1. Right-click the computer object and select **Properties**
