@@ -23,12 +23,12 @@ items:
       href: recovery-guide.md
     - name: BitLocker recovery process
       href: recovery-guide-process.md
+    - name: Manage BitLocker recovery passwords
+      href: manage-recovery-passwords.md
     - name: Preboot recovery screen
       href: preboot-recovery-screen.md
     - name: BitLocker repair tool
       href: recovery-guide-repair-tool.md
-    - name: Manage BitLocker recovery passwords
-      href: recovery-guide-password-reset.md
 - name: Reference
   items:
     - name: BitLocker policy settings
