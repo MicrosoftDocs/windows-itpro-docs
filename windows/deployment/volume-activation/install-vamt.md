@@ -50,7 +50,7 @@ You install VAMT as part of the Windows Assessment and Deployment Kit (ADK) for 
 
 1. On the completion page, note the instance name for your installation, select **Close**, and then select **Yes**.
 
-    ![In this example, the instance name is SQLEXPRESS01.](images/sql-instance.png)
+    ![Screenshot that shows that in this example, the instance name is SQLEXPRESS01.](images/sql-instance.png)
 
 ### Install VAMT using the ADK
 
@@ -74,7 +74,7 @@ You install VAMT as part of the Windows Assessment and Deployment Kit (ADK) for 
 
 1. Enter the server instance name (for a remote SQL use the FQDN) and a name for the database, select **Connect**, and then select **Yes** to create the database. See the following image for an example for SQL.
 
-   ![Server name is .\SQLEXPRESS and database name is VAMT.](images/vamt-db.png)
+   ![Screenshot that shows that the Server name is .\SQLEXPRESS and database name is VAMT.](images/vamt-db.png)
 
    For remote SQL Server, use `servername.yourdomain.com`.
 
