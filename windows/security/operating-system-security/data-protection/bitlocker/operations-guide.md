@@ -431,7 +431,6 @@ BackupToAAD-BitLockerKeyProtector -MountPoint "C:" -KeyProtectorId $BLV.KeyProte
 
 ---
 
-
 ### Backup a recovery password to Active Directory
 
 #### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)

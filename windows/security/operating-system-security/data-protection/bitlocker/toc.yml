@@ -27,10 +27,8 @@ items:
       href: preboot-recovery-screen.md
     - name: BitLocker repair tool
       href: recovery-guide-repair-tool.md
-    - name: BitLocker password reset
+    - name: Manage BitLocker recovery passwords
       href: recovery-guide-password-reset.md
-    - name: BitLocker Recovery Password Viewer
-      href: recovery-password-viewer.md
 - name: Reference
   items:
     - name: BitLocker policy settings
