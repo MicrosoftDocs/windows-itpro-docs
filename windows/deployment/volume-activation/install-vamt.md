@@ -101,7 +101,7 @@ To uninstall VAMT:
    Alternatively, select the following link to automatically open the **Settings** app to the **Installed apps** page:
 
    > [!div class="nextstepaction"]
-   > [Activation](ms-settings:appsfeatures)
+   > [Installed apps](ms-settings:appsfeatures)
 
 1. Scroll through the list of installed apps and find **Windows Assessment and Deployment Kit**.
 
