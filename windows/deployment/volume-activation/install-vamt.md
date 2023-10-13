@@ -105,7 +105,7 @@ To uninstall VAMT:
 
 1. Scroll through the list of installed apps and find **Windows Assessment and Deployment Kit**.
 
-1. Select the the three dots **...** next to **Windows Assessment and Deployment Kit** and then select **Modify**. The **Windows Assessment and Deployment Kit** window opens.
+1. Select the three dots **...** next to **Windows Assessment and Deployment Kit** and then select **Modify**. The **Windows Assessment and Deployment Kit** window opens.
 
 1. In the **Windows Assessment and Deployment Kit** window:
 
