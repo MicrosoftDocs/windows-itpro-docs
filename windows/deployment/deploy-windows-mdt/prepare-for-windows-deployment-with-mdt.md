@@ -11,7 +11,7 @@ ms.technology: itpro-deploy
 ms.collection:
   - highpri
   - tier3
-ms.date: 11/28/2022
+ms.date: 10/13/2023
 ---
 
 # Prepare for deployment with MDT
@@ -135,7 +135,8 @@ To install WSUS on MDT01, enter the following at an elevated Windows PowerShell 
 
 ```powershell
 Install-WindowsFeature -Name UpdateServices, UpdateServices-WidDB, UpdateServices-Services, UpdateServices-RSAT, UpdateServices-API, UpdateServices-UI
-"C:\Program Files\Update Services\Tools\wsusutil.exe" postinstall CONTENT_DIR=C:\WSUS
+cd "C:\Program Files\Update Services\Tools"
+.\wsusutil.exe postinstall CONTENT_DIR=C:\WSUS
 ```
 
 > [!NOTE]
@@ -264,19 +265,19 @@ See the following example:
 
 ![Logs folder.](../images/mdt-05-fig08.png)
 
-## Use CMTrace to read log files (optional)
+## Use Support Center OneTrace or CMTrace to read log files (optional)
 
-The log files in MDT Lite Touch are formatted to be read by Configuration Manager Trace ([CMTrace](/mem/configmgr/core/support/cmtrace)).
+The log files in MDT Lite Touch are formatted to be read by [Support Center OneTrace](/mem/configmgr/core/support/support-center-onetrace) or [CMTrace](/mem/configmgr/core/support/cmtrace).
 
-You can use Notepad (example below):
+Notepad can be used to read the log files (example below):
 
 ![figure 8.](../images/mdt-05-fig09.png)
 
-Alternatively, CMTrace formatting makes the logs much easier to read. See the same log file below, opened in CMTrace:
+However, Support Center OneTrace or CMTrace makes the logs much easier to read. See the same log file below, opened in CMTrace:
 
 ![figure 9.](../images/mdt-05-fig10.png)
 
-After installing the ConfigMgrTools.msi file, you can search for **cmtrace** and pin the tool to your taskbar for easy access.
+Both Support Center OneTrace and CMTrace are available as part of Microsoft Configuration Manager.
 
 ## Next steps
 
