@@ -48,6 +48,8 @@ In MDM, the same settings are under **.Vendor/MSFT/Policy/Config/DeliveryOptimiz
 | [Monthly upload data cap](#monthly-upload-data-cap) | DOMonthlyUploadDataCap | 1607 | Default value is 20 GB. |
 | [Minimum background QoS](#minimum-background-qos) | DOMinBackgroundQoS | 1607 | Recommend setting this to 500 KB/s. Default value is 2500 KB/s. |
 | [Enable peer caching while the device connects via VPN](#enable-peer-caching-while-the-device-connects-via-vpn) | DOAllowVPNPeerCaching | 1709 | Default is to not allow peering while on VPN. |
+| [VPN Keywords](#vpn-keywords) | DOVpnKeywords | 22H2 September Moment | Allows you to set one or more keywords used to recognize VPN connections. |
+| [Disallow Cache Server Downloads from VPN](#disallow-cache-server-downloads-on-vpn) | DODisallowCacheServerDownloadsOnVPN | 22H2 September Moment | Disallow downloads from Microsoft Connected Cache servers when the device connects via VPN. By default, the device is allowed to download from Microsoft Connected Cache when connected via VPN. |
 | [Allow uploads while the device is on battery while under set battery level](#allow-uploads-while-the-device-is-on-battery-while-under-set-battery-level) | DOMinBatteryPercentageAllowedToUpload | 1709 | Default is to not allow peering while on battery.  |
 | [Maximum foreground download bandwidth (percentage)](#maximum-foreground-download-bandwidth) | DOPercentageMaxForegroundBandwidth | 1803 | Default is '0' which will dynamically adjust. |
 | [Maximum background download bandwidth (percentage)](#maximum-background-download-bandwidth) | DOPercentageMaxBackgroundBandwidth | 1803 | Default is '0' which will dynamically adjust. |
@@ -306,6 +308,18 @@ This setting specifies the total amount of data in gigabytes that a Delivery Opt
 MDM Setting: **DOAllowVPNPeerCaching**
 
 This setting determines whether a device will be allowed to participate in Peer Caching while connected to VPN. **By default, if a VPN connection is detected, peering isn't allowed, except when the 'Local Discovery' (DNS-SD) option is chosen.** Specify "true" to allow the device to participate in Peer Caching while connected via VPN to the domain network. The device can download from or upload to other domain network devices, either on VPN or on the corporate domain network.
+
+### VPN Keywords
+
+MDM Setting: **DOVpnKeywords**
+
+This policy allows you to set one or more keywords used to recognize VPN connections. **By default, this policy is not set so if a VPN is detected, the device will not use peering.** Delivery Optimization automatically detects a VPN connection by looking at a pre-defined set of VPN names. As the number of VPNs grow it’s difficult to support an ever-changing list of VPN names. To address this, we’ve introduced this new setting to set unique VPN names, which will be recognized by Delivery Optimization and therefore resulting in the expected behavior to help manage peering.
+
+### Disallow Cache Server Downloads on VPN
+
+MDM Setting: **DODisallowCacheServerDownloadsOnVPN**
+
+This policy disallows downloads from Connected Cache servers when the device connects via VPN. **By default, the device is allowed to download from Connected Cache when connected via VPN.**
 
 ### Allow uploads while the device is on battery while under set Battery level
 
