@@ -50,7 +50,7 @@ This article describes how to install the Volume Activation Management Tool (VAM
 
 1. In the **Specify SQL Server install location** screen under **INSTALL LOCATION \*:**, specify an install location or use the default path, and then select the **Install** button.
 
-1. Once the installation is complete, in the **Installation Has completed successfully!** page, under **INSTANCE NAME**, note the instance name for the installation
+1. Once the installation is complete, in the **Installation Has completed successfully!** page, under **INSTANCE NAME**, note the instance name for the installation. The instance name will be used later in the [Configure VAMT to connect to SQL Server Express or full SQL Server](#configure-vamt-to-connect-to-sql-server-express-or-full-sql-server) section.
 
 1. Once the instance name has been noted, select the **Close** button, and then select the **Yes** button to confirm exiting the installer.
 
@@ -90,8 +90,27 @@ This article describes how to install the Volume Activation Management Tool (VAM
 
 ## Uninstall VAMT
 
-To uninstall VAMT using the **Programs and Features** Control Panel:
+To uninstall VAMT:
 
-1. Open **Control Panel** and select **Programs and Features**.
+1. Right-click on the Start Menu and select **Settings**.
 
-1. Select **Assessment and Deployment Kit** from the list of installed programs and select **Change**. Follow the instructions in the Windows ADK installer to remove VAMT.
+1. Select **Apps** in the left hand pane.
+
+1. In the right hand pane under **Apps**, select **Installed apps**.
+
+   Alternatively, select the following link to automatically open the **Settings** app to the **Installed apps** page:
+
+   > [!div class="nextstepaction"]
+   > [Activation](ms-settings:appsfeatures)
+
+1. Scroll through the list of installed apps and find **Windows Assessment and Deployment Kit**.
+
+1. Select the the three dots **...** next to **Windows Assessment and Deployment Kit** and then select **Modify**. The **Windows Assessment and Deployment Kit** window opens.
+
+1. In the **Windows Assessment and Deployment Kit** window:
+
+   1. In the **Maintain your Windows Assessment and Deployment Kit features** page, select **Change**, and then select the **Next** button.
+
+   1. In the **Select the features you want to change** page, uncheck **Volume Activation Management Tool (VAMT)**, and then select the **Change** button.
+
+   1. Once the uninstall is complete, the **Change is complete.** page is displayed. Select the **Close** button.

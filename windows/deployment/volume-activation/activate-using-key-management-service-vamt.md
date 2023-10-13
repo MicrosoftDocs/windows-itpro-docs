@@ -80,7 +80,7 @@ KMS can be activated on client versions of Windows by using the `slmgr.vbs`. To 
       1. In the elevated Command Prompt window, run the following command:
 
          ```cmd
-         cscript.exe slmgr.vbs /atp \<confirmation_ID_from_previous_step\>
+         cscript.exe slmgr.vbs /atp <confirmation_ID_from_previous_step>
          ```
 
 ## Key Management Service in Windows Server
