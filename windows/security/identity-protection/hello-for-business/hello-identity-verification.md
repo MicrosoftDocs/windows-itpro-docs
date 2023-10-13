@@ -30,12 +30,12 @@ The table shows the minimum requirements for each deployment. For key trust in a
 
 | Requirement | Cloud Kerberos trust<br/>Group Policy or Modern managed | Key trust<br/>Group Policy or Modern managed | Certificate Trust<br/>Mixed managed | Certificate Trust<br/>Modern managed | 
 | --- | --- | --- | --- | --- |
-| **Windows Version** | Any supported Windows client versions| Any supported Windows client versions | Any supported Windows client versions |
-| **Schema Version** | No specific Schema requirement | Windows Server 2016 or later schema | Windows Server 2016 or later schema | Windows Server 2016 or later schema |
+| **Windows version** | Any supported Windows client versions| Any supported Windows client versions | Any supported Windows client versions |
+| **Schema version** | No specific Schema requirement | Windows Server 2016 or later schema | Windows Server 2016 or later schema | Windows Server 2016 or later schema |
 | **Domain and Forest Functional Level** | Windows Server 2008 R2 Domain/Forest functional level | Windows Server 2008 R2 Domain/Forest functional level | Windows Server 2008 R2 Domain/Forest functional level |Windows Server 2008 R2 Domain/Forest functional level |
-| **Domain Controller Version** | Any supported Windows Server versions | Any supported Windows Server versions | Any supported Windows Server versions | Any supported Windows Server versions  |
+| **Domain Controller version** | Any supported Windows Server versions | Any supported Windows Server versions | Any supported Windows Server versions | Any supported Windows Server versions  |
 | **Certificate Authority**| Not required |Any supported Windows Server versions | Any supported Windows Server versions | Any supported Windows Server versions |
-| **AD FS Version** | Not required | Not required | Any supported Windows Server versions | Any supported Windows Server versions |
+| **AD FS version** | Not required | Not required | Any supported Windows Server versions | Any supported Windows Server versions |
 | **MFA Requirement** | Azure MFA, or<br/>AD FS w/Azure MFA adapter, or<br/>AD FS w/Azure MFA Server adapter, or<br/>AD FS w/3rd Party MFA Adapter | Azure MFA tenant, or<br/>AD FS w/Azure MFA adapter, or<br/>AD FS w/Azure MFA Server adapter, or<br/>AD FS w/3rd Party MFA Adapter | Azure MFA tenant, or<br/>AD FS w/Azure MFA adapter, or<br/>AD FS w/Azure MFA Server adapter, or<br/>AD FS w/3rd Party MFA Adapter | Azure MFA tenant, or<br/>AD FS w/Azure MFA adapter, or<br/>AD FS w/Azure MFA Server adapter, or<br/>AD FS w/3rd Party MFA Adapter |
 | **Azure AD Connect** | Not required. It's recommended to use [Microsoft Entra Connect cloud sync](/azure/active-directory/hybrid/cloud-sync/what-is-cloud-sync) | Required | Required | Required |
 | **Azure AD License** | Azure AD Premium, optional | Azure AD Premium, optional | Azure AD Premium, needed for device write-back | Azure AD Premium, optional. Intune license required |
@@ -44,12 +44,12 @@ The table shows the minimum requirements for each deployment. For key trust in a
 
 The table shows the minimum requirements for each deployment.
 
-| Key trust <br/> Group Policy managed | Certificate trust <br/> Group Policy managed|
-| --- | --- |
-|Any supported Windows client versions|Any supported Windows client versions|
-| Windows Server 2016 Schema | Windows Server 2016 Schema|
-| Windows Server 2008 R2 Domain/Forest functional level | Windows Server 2008 R2 Domain/Forest functional level |
-| Any supported Windows Server versions  | Any supported Windows Server versions |
-| Any supported Windows Server versions  | Any supported Windows Server versions  |
-| Any supported Windows Server versions  | Any supported Windows Server versions  |
-| AD FS with 3rd Party MFA Adapter | AD FS with 3rd Party MFA Adapter |
+|Requirement| Key trust <br/> Group Policy managed | Certificate trust <br/> Group Policy managed|
+| --- | --- | --- |
+| **Windows version** |Any supported Windows client versions|Any supported Windows client versions|
+| **Schema version** | Windows Server 2016 Schema | Windows Server 2016 Schema|
+| **Domain and Forest Functional Level** | Windows Server 2008 R2 Domain/Forest functional level | Windows Server 2008 R2 Domain/Forest functional level |
+| **Domain Controller version**| Any supported Windows Server versions  | Any supported Windows Server versions |
+| **Certificate Authority**| Any supported Windows Server versions  | Any supported Windows Server versions  |
+| **AD FS version**| Any supported Windows Server versions  | Any supported Windows Server versions  |
+| **MFA Requirement**| AD FS with 3rd Party MFA Adapter | AD FS with 3rd Party MFA Adapter |
