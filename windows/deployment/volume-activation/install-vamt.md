@@ -20,11 +20,7 @@ appliesto:
 
 # Install VAMT
 
-This article describes how to install the Volume Activation Management Tool (VAMT).
-
-## Installing VAMT
-
-You install VAMT as part of the Windows Assessment and Deployment Kit (ADK) for Windows.
+This article describes how to install the Volume Activation Management Tool (VAMT). VAMT is installed as part of the Windows Assessment and Deployment Kit (ADK) for Windows.
 
 >[!IMPORTANT]
 >
@@ -34,7 +30,7 @@ You install VAMT as part of the Windows Assessment and Deployment Kit (ADK) for 
 >
 > The VAMT Microsoft Management Console snap-in ships as an x86 package.
 
-### Requirements
+## Requirements
 
 - [Windows Server with Desktop Experience](/windows-server/get-started/getting-started-with-server-with-desktop-experience), with internet access (for the main VAMT console) and all updates applied.
 
@@ -44,7 +40,7 @@ You install VAMT as part of the Windows Assessment and Deployment Kit (ADK) for 
 
 - Alternatively, any supported **full** SQL instance.
 
-### Install SQL Server Express / alternatively use any full SQL instance
+## Install SQL Server Express / alternatively use any full SQL instance
 
 1. Download and open the [SQL Server Express](https://aka.ms/sqlexpress) package.
 
@@ -58,7 +54,7 @@ You install VAMT as part of the Windows Assessment and Deployment Kit (ADK) for 
 
 1. Once the instance name has been noted, select the **Close** button, and then select the **Yes** button to confirm exiting the installer.
 
-### Install VAMT using the ADK
+## Install VAMT using the ADK
 
 1. Download the latest version of [Windows ADK](/windows-hardware/get-started/adk-install).
 
@@ -78,7 +74,7 @@ You install VAMT as part of the Windows Assessment and Deployment Kit (ADK) for 
 
    1. Once installation is complete, the **Welcome to the Windows Assessment and Deployment Kit!** page is displayed. Select the **Close** button.
 
-### Configure VAMT to connect to SQL Server Express or full SQL Server
+## Configure VAMT to connect to SQL Server Express or full SQL Server
 
 1. In the Start Menu under **Windows Kits**, select **Volume Active Management Tool 3.1**. The **Database Connection Settings** window opens.
 
