@@ -15,10 +15,10 @@ Copilot in Windows provides centralized generative AI assistance to your users r
 
 At a high level, configuring Copilot in Windows for your organization involves the following steps:
 
-1. Understand the available chat provider platforms for Copilot in Windows
-1. Configure the chat provider platform that Copilot in Windows uses
-1. Ensure the Copilot in Windows user experience is enabled
-1. Verify other settings that might impact Copilot in Windows and its underlying chat provider
+1. Understand the [available chat provider platforms for Copilot in Windows](#chat-provider-platforms-for-copilot-in-windows)
+1. [Configure the chat provider platform](#configure-the-chat-provider-platform-that-copilot-in-windows-uses) used by Copilot in Windows
+1. Ensure the [Copilot in Windows user experience](#ensure-the-copilot-in-windows-user-experience-is-enabled) is enabled
+1. Verify [other settings that might impact Copilot in Windows](#other-settings-that-might-impact-copilot-in-windows-and-its-underlying-chat-provider) and its underlying chat provider
 
 Organizations that aren't ready to use Copilot in Windows can disable it until they're ready with the **Turn off Windows Copilot** policy. This policy setting allows you to turn off Copilot in Windows. If you enable this policy setting, users can't use Copilot. The Copilot icon doesn't appear on the taskbar either. If you disable or don't configure this policy setting, users can use Copilot when it's available to them.
 
@@ -123,7 +123,9 @@ To enable Copilot in Windows for managed Windows 11, version 22H2 devices, you n
 
 One a managed device installs the upcoming 2023 annual update, likely to be called version 23H2, the [temporary enterprise control](/windows/whats-new/temporary-enterprise-feature-control) for Copilot in Windows will be removed. This means that Copilot in Windows will be enabled by default for these devices.
 
-While the user experience for Copilot in Windows is enabled by default, you still need to verify that the the correct chat provider platform configured for Copilot in Windows. While every effort has been made to ensure that Bing Chat Enterprise is the default chat provider for commercial organizations, it's still possible that Bing Chat might still be used if the configuration is incorrect. For more information, see the [Configure the chat provider platform that Copilot in Windows uses](#configure-the-chat-provider-platform-that-copilot-in-windows-uses) section.
+While the user experience for Copilot in Windows is enabled by default, you still need to verify that the the correct chat provider platform configured for Copilot in Windows. While every effort has been made to ensure that Bing Chat Enterprise is the default chat provider for commercial organizations, it's still possible that Bing Chat might still be used if the configuration is incorrect, or if other settings impact Copilot in Windows. For more information, see: 
+- [Configure the chat provider platform that Copilot in Windows uses](#configure-the-chat-provider-platform-that-copilot-in-windows-uses)
+- [Other settings that might impact Copilot in Windows and its underlying chat provider](#other-settings-that-might-impact-copilot-in-windows-and-its-underlying-chat-provider)
 
 Organizations that aren't ready to use Copilot in Windows can disable it until they're ready by using either of the following permanent controls:
 
@@ -131,3 +133,5 @@ Organizations that aren't ready to use Copilot in Windows can disable it until t
 - **Group Policy**: User Configuration\Administrative Templates\Windows Components\Windows Copilot\\**Turn off Windows Copilot**
 
 ## Other settings that might impact Copilot in Windows and its underlying chat provider
+
+ Copilot in Windows is a bit different from [Bing Chat in the Microsoft Edge sidebar](https://www.microsoft.com/edge/features/bing-chat), which provides assistance in the browser, since it can also perform actions such as changing Windows settings or performing common tasks in Windows. However, both user experiences, Copilot in Windows and Bing Chat in the Microsoft Edge sidebar, can share the same underlying chat provider platform.
