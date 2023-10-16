@@ -34,7 +34,7 @@ In MDM, the same settings are under **.Vendor/MSFT/Policy/Config/DeliveryOptimiz
 
 | Group Policy setting | MDM setting | Supported from version | Notes |
 | --- | --- | --- | ------- |
-| [Download mode](#download-mode) | DODownloadMode | 1511 | Default is set to LAN(1). The Group [Download mode](#download-mode) (2) combined with [Group ID](#group-id), enables administrators to create custom device groups that will share content between devices in the group.|
+| [Download mode](#download-mode) | DODownloadMode | 1511 | Default is set to LAN(1). The Group [Download mode](#download-mode) (2) combined with [Group ID](#group-id), enables administrators to create custom device groups that share content between devices in the group.|
 | [Group ID](#group-id)  | DOGroupID | 1511 | Used with Group [Download mode](#download-mode). If not set, check [GroupIDSource](#select-the-source-of-group-ids). When GroupID or GroupIDSource policies aren't set, the GroupID is defined as the AD Site (1), Authenticated domain SID (2) or Azure AD Tenant ID (5), in that order.  |
 | [Select the source of Group IDs](#select-the-source-of-group-ids) | DOGroupIDSource | 1803 | If not set, check [Group ID](#group-id). When the GroupID or GroupIDSource policies aren't set, the Group is defined as the AD Site (1), Authenticated domain SID (2) or Azure AD Tenant ID (5), in that order. |
 | [Select a method to restrict peer selection](#select-a-method-to-restrict-peer-selection) | DORestrictPeerSelectionBy | 1803 | Starting in Windows 11, a new option to use 'Local discovery (DNS-SD)' is available to set via this policy. |
@@ -176,19 +176,19 @@ MDM Setting: **DOMinDiskSizeAllowedToPeer**
 This setting specifies the required minimum disk size (capacity in GB) for the device to use Peer Caching. The recommended values are 64 to 256, and **the default value is 32 GB**.
 
 >[!NOTE]
->If the [Modify Cache Drive](#modify-cache-drive) policy is set, the disk size check will apply to the new working directory specified by this policy.
+>If the [Modify Cache Drive](#modify-cache-drive) policy is set, the disk size check applies to the new working directory specified by this policy.
 
 ### Max Cache Age
 
 MDM Setting: **DOMaxCacheAge**
 
-In environments configured for Delivery Optimization, you might want to set an expiration on cached updates and Windows application installation files. If so, this setting defines the maximum number of seconds each file can be held in the Delivery Optimization cache on each Windows 10 client device. Alternatively, organizations might choose to set this value to "0" which means "unlimited" to avoid peers redownloading content. When "Unlimited" value is set, Delivery Optimization holds the files in the cache longer and will clean up the cache as needed (for example when the cache size exceeded the maximum space allowed). **The default value is 259,200 seconds (three days)**.
+In environments configured for Delivery Optimization, you might want to set an expiration on cached updates and Windows application installation files. If so, this setting defines the maximum number of seconds each file can be held in the Delivery Optimization cache on each Windows 10 client device. Alternatively, organizations might choose to set this value to "0" which means "unlimited" to avoid peers redownloading content. When "Unlimited" value is set, Delivery Optimization holds the files in the cache longer and cleans up the cache as needed (for example when the cache size exceeded the maximum space allowed). **The default value is 259,200 seconds (three days)**.
 
 ### Max Cache Size
 
 MDM Setting: **DOMaxCacheSize**
 
-This setting limits the maximum amount of space the Delivery Optimization cache can use as a percentage of the available drive space, from 1 to 100. For example, if you set this value to 10 on a Windows client device that has 100 GB of available drive space, then Delivery Optimization uses up to 10 GB of that space. Delivery Optimization will constantly assess the available drive space and automatically clear the cache to keep the maximum cache size under the set percentage. **The default value is 20%**.
+This setting limits the maximum amount of space the Delivery Optimization cache can use as a percentage of the available drive space, from 1 to 100. For example, if you set this value to 10 on a Windows client device that has 100 GB of available drive space, then Delivery Optimization uses up to 10 GB of that space. Delivery Optimization constantly assesses the available drive space and automatically clear the cache to keep the maximum cache size under the set percentage. **The default value is 20%**.
 
 ### Absolute Max Cache Size
 
@@ -207,7 +207,7 @@ This setting specifies the minimum content file size in MB enabled to use Peer C
 MDM Setting: **DOMaxUploadBandwidth**
 
 Deprecated in Windows 10, version 2004.
-This setting specifies the maximum download bandwidth that can be used across all concurrent Delivery Optimization downloads in kilobytes per second (KB/s). **A default value of "0"** means that Delivery Optimization will dynamically adjust and optimize the maximum bandwidth used.
+This setting specifies the maximum download bandwidth that can be used across all concurrent Delivery Optimization downloads in kilobytes per second (KB/s). **A default value of "0"** means that Delivery Optimization dynamically adjusts and optimize the maximum bandwidth used.
 
 
 ### Maximum Foreground Download Bandwidth
@@ -257,7 +257,7 @@ MDM Setting: **DORestrictPeerSelectionBy**
 
 Starting in Windows 10, version 1803, set this policy to restrict peer selection via selected option. In Windows 11, the 'Local Peer Discovery' option was introduced to restrict peer discovery to the local network. Currently the available options include: 0 = NAT, 1 = Subnet mask, and 2 = Local Peer Discovery. These options apply to both Download Modes LAN (1) and Group (2) and therefore means there's no peering between subnets.
 
-If Group mode is set, Delivery Optimization will connect to locally discovered peers that are also part of the same Group (have the same Group ID).
+If Group mode is set, Delivery Optimization connects to locally discovered peers that are also part of the same Group (have the same Group ID).
 
 The Local Peer Discovery (DNS-SD) option can only be set via MDM delivered policies on Windows 11 builds. This feature can be enabled in supported Windows 10 builds by setting the `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization\DORestrictPeerSelectionBy` value to **2**.
 
