@@ -8,7 +8,7 @@ author: frankroj
 manager: aaroncz
 ms.author: frankroj
 ms.localizationpriority: medium
-ms.date: 10/13/2023
+ms.date: 10/16/2023
 ms.topic: how-to
 ms.collection:
   - highpri
@@ -191,7 +191,7 @@ For more information about the use and syntax of the script `slmgr.vbs`, see [Sl
 
 > [!IMPORTANT]
 >
-> Clients require RPC over TCP/IP connectivity to the KMS host to successfully activate.
+> Clients require RPC over TCP/IP connectivity to the KMS host to successfully activate. For more information, see [Key Management Services (KMS) activation planning: Network requirements](/windows-server/get-started/kms-activation-planning#network-requirements) and [Remote Procedure Call (RPC) errors troubleshooting guidance](/troubleshoot/windows-client/networking/rpc-errors-troubleshooting).
 
 ## Related articles
 
