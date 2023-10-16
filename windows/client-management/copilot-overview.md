@@ -53,7 +53,7 @@ Configuring the correct chat provider platform for Copilot in Windows is importa
 Bing Chat is used as the default chat provider platform for Copilot in Windows when any of the following conditions occur:
 
 - Bing Chat Enterprise isn't configured for the user
-- T user isn't assigned a license that includes Bing Chat Enterprise
+- The user isn't assigned a license that includes Bing Chat Enterprise
 - Bing Chat Enterprise is [turned off](/bing-chat-enterprise/manage)
 - The user isn't signed in with a Microsoft Entra account that's licensed for Bing Chat Enterprise
 
@@ -107,11 +107,10 @@ To enable Copilot in Windows for managed Windows 11, version 22H2 devices, you n
    - **Group Policy:** Computer Configuration\Administrative Templates\Windows Components\Windows Update\Windows Update for Business\\**Allow updates to Windows optional features**
    - **CSP**: ./Device/Vendor/MSFT/Policy/Config/Update/[AllowOptionalUpdates](/windows/client-management/mdm/policy-csp-update?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json#allowoptionalupdates)
       - In the Intune [settings catalog](/mem/intune/configuration/settings-catalog), this setting is named **Allow optional updates** under the **Windows Update for Business** category.
-
-      > [!Note]
-      > The optional updates policies apply to Windows 11, version 22H2 with [KB5029351](https://support.microsoft.com/help/5029351) and later. When setting policy for optional updates, ensure you select one of the following options that includes CFRs:
-      > - Automatically receive optional updates (including CFRs)
-      > - Users can select which optional updates to receive
+ 
+   The optional updates policies apply to Windows 11, version 22H2 with [KB5029351](https://support.microsoft.com/help/5029351) and later. When setting policy for optional updates, ensure you select one of the following options that includes CFRs:
+    - Automatically receive optional updates (including CFRs)
+    - Users can select which optional updates to receive
 
 ### Windows 11 clients with the 2023 annual update installed (coming soon)
 
