@@ -119,7 +119,7 @@ To enable Copilot in Windows for managed Windows 11, version 22H2 devices, you n
 
 1. Managed Windows 11, version 22H2 devices will display Copilot in Windows when the CFR is enabled for the device. CFRs are enabled for devices in phases, sometimes called waves.
 
-### Enable the Copilot in Windows user experience for Windows 11 clients with the 2023 annual update installed (coming soon)
+### Enable the Copilot in Windows user experience for Windows 11 clients with the 2023 annual update (coming soon)
 
 One a managed device installs the upcoming 2023 annual update, likely to be called version 23H2, the [temporary enterprise control](/windows/whats-new/temporary-enterprise-feature-control) for Copilot in Windows will be removed. This means that Copilot in Windows will be enabled by default for these devices.
 
