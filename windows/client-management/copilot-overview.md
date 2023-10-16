@@ -1,6 +1,6 @@
 ---
 title: Copilot in Windows Overview
-description: Learn about Copilot in Windows.
+description: Learn about managing Copilot in Windows for commercial environments. 
 ms.topic: overview
 ms.date: 10/26/2023
 appliesto:
@@ -91,18 +91,25 @@ To enable Copilot in Windows for managed Windows 11, version 22H2 devices, you'l
 
     - **CSP**: ./Device/Vendor/MSFT/Policy/Config/Update/[AllowTemporaryEnterpriseFeatureControl](/windows/client-management/mdm/policy-csp-update?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json#allowtemporaryenterprisefeaturecontrol)
        - In the Intune [settings catalog](/mem/intune/configuration/settings-catalog), this setting is named **Allow Temporary Enterprise Feature Control** under the **Windows Update for Business** category.
-1. Depending on how soon you start deploying Copilot in Windows, you may also need to also enable optional updates with one of the following policies: 
- Enable optional updates for Windows 11, version 22H2 and later
+1. Copilot in Windows will be initially deployed to devices using a controlled feature rollout (CFR). Depending on how soon you start deploying Copilot in Windows, you may also need to also [enable optional updates](/windows/deployment/update/waas-configure-wufb#enable-optional-updates) with one of the following policies:
    - **Group Policy:** Computer Configuration\Administrative Templates\Windows Components\Windows Update\Windows Update for Business\\**Allow updates to Windows optional features**
    - **CSP**: ./Device/Vendor/MSFT/Policy/Config/Update/[AllowOptionalUpdates](/windows/client-management/mdm/policy-csp-update?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json#allowoptionalupdates)
       - In the Intune [settings catalog](/mem/intune/configuration/settings-catalog), this setting is named **Allow optional updates** under the **Windows Update for Business** category.
-      > [!NOTE]
-      > Copilot in Windows will be initially deployed to devices using a controlled feature rollout (CFR). When setting the policy for optional updates, ensure you select an option that includes CFRs. For more information, see [Enable optional updates](/windows/deployment/update/waas-configure-wufb#enable-optional-updates)
+
+   > [!Note]
+   > These optional updates policies apply to Windows 11, version 22H2 with [KB5029351](https://support.microsoft.com/help/5029351) and later. When setting policy for optional updates, ensure you select one of the following options that includes CFRs:
+   > - Automatically receive optional updates (including CFRs)
+   > - Users can select which optional updates to receive
+
+
+
+
+
 
 ### Windows 11 clients with the 2023 annual update installed (coming soon)
 
-
-One a managed device installs the 2023 annual update, the Copilot in Windows user experience is enabled by default. Organizations that aren't ready to use Copilot in Windows can disable it until they are ready by using either of the following permanent controls: 
+One a managed device installs the 2023 annual update, likely to be called 23H2, the Copilot in Windows user experience is enabled by default. Organizations that aren't ready to use Copilot in Windows can disable it until they're ready by using either of the following permanent controls:
 
 - **CSP**: ./User/Vendor/MSFT/WindowsAI/[TurnOffWindowsCopilot](/windows/client-management/mdm/policy-csp-windowsai#turnoffwindowscopilot)
 - **Group Policy**: User Configuration\Administrative Templates\Windows Components\Windows Copilot\\**Turn off Windows Copilot**
+
