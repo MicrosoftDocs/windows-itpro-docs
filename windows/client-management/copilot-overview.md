@@ -65,6 +65,10 @@ The Bing Chat is a consumer experience and doesn't offer commercial data protect
 1. In the flyout, select the **Licenses & apps** tab, then expand the **Apps** list.
 1. Verify that **Bing Chat Enterprise** is enabled for the user.
 
+> [!Note]
+> If you previously disabled Bing Chat Enterprise using the URL, `https://aka.ms/TurnOffBCE`, see [Manage Bing Chat Enterprise](/bing-chat-enterprise/manage) for verifying that Bing Chat Enterprise is enabled for your users.
+
+
 ```http
 *would be nice to have a Graph query that lists users that do/do not have BCE app enabled*
 *licensedetails does output BCE, so its a matter of just getting the query right*
