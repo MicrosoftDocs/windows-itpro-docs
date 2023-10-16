@@ -77,7 +77,6 @@ Bing Chat Enterprise (recommended for commercial environments), is used as the c
    > [!Note]
    > If you previously disabled Bing Chat Enterprise using the URL, `https://aka.ms/TurnOffBCE`, see [Manage Bing Chat Enterprise](/bing-chat-enterprise/manage) for verifying that Bing Chat Enterprise is enabled for your users.
 
-
 ```http
 *would be nice to have a Graph query that lists users that do/do not have BCE app enabled*
 *licensedetails does output BCE, so its a matter of just getting the query right*
@@ -91,6 +90,10 @@ Ex output from my lab: GET https://graph.microsoft.com/v1.0/me/licenseDetails
 },
 https://learn.microsoft.com/graph/api/resources/licensedetails
 ```
+
+When Bing Chat Enterprise is the chat provider platform, the user experience clearly states that **Your personal and company data are protected in this chat**. There is also a shield emblem labeled **Protected** at the top of the Copilot in Windows sidebar and the provider is listed under the Copilot logo when the sidebar is first opened. The following image shows the message that's displayed when Bing Chat Enterprise is the chat provider platform for Copilot in Windows:
+
+:::image type="content" source="images/bing-chat-enterprise-chat-provider.png" alt-text="Screenshot of the Copilot in Windows user experience when Bing Chat Enterprise is the chat provider." lightbox="images/bing-chat-enterprise-chat-provider.png":::
 
 ## Ensure the Copilot in Windows user experience is enabled
 
@@ -134,4 +137,6 @@ Organizations that aren't ready to use Copilot in Windows can disable it until t
 
 ## Other settings that might impact Copilot in Windows and its underlying chat provider
 
- Copilot in Windows is a bit different from [Bing Chat in the Microsoft Edge sidebar](https://www.microsoft.com/edge/features/bing-chat), which provides assistance in the browser, since it can also perform actions such as changing Windows settings or performing common tasks in Windows. However, both user experiences, Copilot in Windows and Bing Chat in the Microsoft Edge sidebar, can share the same underlying chat provider platform.
+Copilot in Windows and [Bing Chat in the Microsoft Edge sidebar](https://www.microsoft.com/edge/features/bing-chat), can share the same underlying chat provider platform. This also means that some setting which affect Bing Chat, Bing Chat Enterprise, and the Microsoft Edge sidebar can also affect Copilot in Windows.
+
+The following settings might impact Copilot in Windows and its underlying chat provider:
