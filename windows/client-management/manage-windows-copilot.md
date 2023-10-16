@@ -2,7 +2,7 @@
 title: Manage Copilot in Windows
 description: Learn how to manage Copilot in Windows using MDM and group policy.
 ms.topic: article
-ms.date: 09/26/2023
+ms.date: 10/16/2023
 appliesto:
 - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
 ---
@@ -20,7 +20,7 @@ This policy setting allows you to turn off Copilot in Windows. If you enable thi
 |                  | Setting                                                                                                 |
 |------------------|---------------------------------------------------------------------------------------------------------|
 | **CSP**          | ./User/Vendor/MSFT/WindowsAI/[TurnOffWindowsCopilot](mdm/policy-csp-windowsai.md#turnoffwindowscopilot) |
-| **Group policy** | User Configuration > Administrative Templates > Windows Copilot > **Turn off Windows Copilot**          |
+| **Group policy** | User Configuration > Administrative Templates > Windows Components > Windows Copilot > **Turn off Windows Copilot** |
 
 
 
