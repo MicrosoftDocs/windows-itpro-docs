@@ -15,23 +15,34 @@ Copilot in Windows provides centralized generative AI assistance to your users r
 
 At a high level, configuring Copilot in Windows for your organization involves the following steps:
 
-1. Configure the chat provider platform that Copilot in Windows uses:
-   - Bing Chat Enterprise (highly recommended for commercial environments)
-   - Bing Chat (default, intended for consumer environments)
-1. Ensure the Copilot in Windows user experience is enabled:
-   - Windows 11, version 22H2 clients
-   - Windows 11 clients with the 2023 annual update installed (coming soon)
+1. Understand the available chat provider platforms for Copilot in Windows
+1. Configure the chat provider platform that Copilot in Windows uses
+1. Ensure the Copilot in Windows user experience is enabled
 1. Verify other settings that may impact Copilot in Windows and its underlying chat provider
 
+Organizations that aren't ready to use Copilot in Windows can disable it until they're ready by using either of the following permanent controls:
+
+- **CSP**: ./User/Vendor/MSFT/WindowsAI/[TurnOffWindowsCopilot](/windows/client-management/mdm/policy-csp-windowsai#turnoffwindowscopilot)
+- **Group Policy**: User Configuration\Administrative Templates\Windows Components\Windows Copilot\\**Turn off Windows Copilot**
 
 ## Chat provider platforms for Copilot in Windows
 
-Copilot in Windows uses one of the following chat provider platforms, dependent on your organization's configuration:
+Copilot in Windows can use either Bing Chat or Bing Chat Enterprise as its chat provider platform. The chat provider platform is the underlying service that Copilot in Windows uses to communicate with the user. The chat provider platform that Copilot in Windows uses is important because users can pass sensitive information into the chat provider. Each chat provider platform has different privacy and security protections.
 
-- **[Bing Chat Enterprise](/bing-chat-enterprise/overview)**: intended for commercial use scenarios
-    - With Bing Chat Enterprise, user and organizational data is protected, chat data isn't saved, Microsoft has no eyes-on access, and your data isn't used to train the underlying large language models. Because of this protection, chat history, 3rd-party plugins, and the Bing mobile app for iOS or Android aren't currently supported.
-    - Bing chat enterprise is available, at no additional cost, for customers who are licensed for Microsoft 365 E3 or E5, A3 or A5 for faculty, Business Standard, or Business Premium.
-- **[Bing Chat](https://www.microsoft.com/bing/do-more-with-ai/what-is-bing-chat-and-how-can-you-use-it)**: intended for consumer use scenarios
+**Bing Chat**: 
+
+[Bing Chat](https://www.microsoft.com/bing/do-more-with-ai/what-is-bing-chat-and-how-can-you-use-it) is a consumer experience and doesn't offer commercial data protection. Users in your organization get consumer Bing Chat without extra commercial protections. The following privacy and security protections apply for Bing Chat:
+   - [Copilot in Windows: Your data and privacy](https://support.microsoft.com/windows/3e265e82-fc76-4d0a-afc0-4a0de528b73a)
+   - The privacy statement for using Bing Chat follows the [Microsoft privacy statement](https://privacy.microsoft.com/privacystatement) including the product specific guidance in the Microsoft privacy statement for **Bing** under the **Search, Microsoft Edge, and artificial intelligence** section.
+
+**Bing Chat Enterprise**:
+
+[Bing Chat Enterprise](/bing-chat-enterprise/overview) is intended for commercial use scenarios. The following privacy and security protections apply for Bing Chat Enterprise:
+
+- With [Bing Chat Enterprise](/bing-chat-enterprise/overview), user and organizational data is protected, chat data isn't saved, Microsoft has no eyes-on access, and your data isn't used to train the underlying large language models. Because of this protection, chat history, 3rd-party plugins, and the Bing mobile app for iOS or Android aren't currently supported. Review the Bing Chat Enterprise [privacy statement](/bing-chat-enterprise/privacy-and-protections).
+- Bing chat enterprise is available, at no additional cost, for customers who are licensed for Microsoft 365 E3 or E5, A3 or A5 for faculty, Business Standard, or Business Premium.
+  > [!Note]
+  > Bing Chat Enterprise doesn't have access to Microsoft Graph, unlike [Microsoft 365 Copilot](/microsoft-365-copilot/microsoft-365-copilot-overview) which is used in Microsoft 365 apps. This means that Bing Chat Enterprise can't access Microsoft 365 Apps data, such as email, calendar, or files.
 
 ## Configure the chat provider platform that Copilot in Windows uses
 
@@ -42,24 +53,20 @@ Configuring the correct chat provider platform for Copilot in Windows is importa
 Bing Chat is used as the default chat provider platform for Copilot in Windows when any of the following conditions occur:
 
 - Bing Chat Enterprise isn't configured for the user
+- T user isn't assigned a license that includes Bing Chat Enterprise
 - Bing Chat Enterprise is [turned off](/bing-chat-enterprise/manage)
 - The user isn't signed in with a Microsoft Entra account that's licensed for Bing Chat Enterprise
 
-The Bing Chat is a consumer experience and doesn't offer commercial data protection. Users in your organization get consumer Bing Chat without these extra protections. The following privacy and security protections apply for Bing Chat:
+### Bing Chat Enterprise as the chat provider platform 
 
-- [Copilot in Windows: Your data and privacy](https://support.microsoft.com/windows/3e265e82-fc76-4d0a-afc0-4a0de528b73a)
-- The privacy statement for using Bing Chat follows the [Microsoft privacy statement](https://privacy.microsoft.com/privacystatement) including the product specific guidance in the Microsoft privacy statement for **Bing** under the **Search, Microsoft Edge, and artificial intelligence** section.
+Bing Chat Enterprise (recommended for commercial environments), is used as the chat provider platform for Copilot in Windows when all of the following conditions occur:
 
-### Bing Chat Enterprise as the chat provider platform (recommended for commercial environments)
-
-1. Review the Bing Chat Enterprise [privacy statement](https://learn.microsoft.com/bing-chat-enterprise/privacy-and-protections).
-1. By default, Bing Chat Enterprise is enabled for users that are assigned one of the following licenses:
-   -  Microsoft 365 E3 or E5
+1. Sign into the [Microsoft 365 admin center](https://admin.microsoft.com/).
+1. In the admin center, select  **Users** > **Active users** and verify that users are assigned a license that includes Bing Chat Enterprise. Bing Chat Enterprise is included and enabled by default for users that are assigned one of the following licenses:
+   - Microsoft 365 E3 or E5
    - Microsoft 365 A3 or A5 for faculty
    - Business Standard
    - Business Premium
-1. Verify that users have the license by signing into the [Microsoft 365 admin center](https://admin.microsoft.com/).
-1. In the admin center, select  **Users** > **Active users** and verify that users have one of the licenses listed above. 
 1. To verify that Bing Chat Enterprise is enabled for the user, select the user's **Display name** to open the flyout menu. 
 1. In the flyout, select the **Licenses & apps** tab, then expand the **Apps** list.
 1. Verify that **Bing Chat Enterprise** is enabled for the user.
@@ -101,15 +108,10 @@ To enable Copilot in Windows for managed Windows 11, version 22H2 devices, you n
    - **CSP**: ./Device/Vendor/MSFT/Policy/Config/Update/[AllowOptionalUpdates](/windows/client-management/mdm/policy-csp-update?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json#allowoptionalupdates)
       - In the Intune [settings catalog](/mem/intune/configuration/settings-catalog), this setting is named **Allow optional updates** under the **Windows Update for Business** category.
 
-   > [!Note]
-   > These optional updates policies apply to Windows 11, version 22H2 with [KB5029351](https://support.microsoft.com/help/5029351) and later. When setting policy for optional updates, ensure you select one of the following options that includes CFRs:
-   > - Automatically receive optional updates (including CFRs)
-   > - Users can select which optional updates to receive
-
-
-
-
-
+      > [!Note]
+      > The optional updates policies apply to Windows 11, version 22H2 with [KB5029351](https://support.microsoft.com/help/5029351) and later. When setting policy for optional updates, ensure you select one of the following options that includes CFRs:
+      > - Automatically receive optional updates (including CFRs)
+      > - Users can select which optional updates to receive
 
 ### Windows 11 clients with the 2023 annual update installed (coming soon)
 
