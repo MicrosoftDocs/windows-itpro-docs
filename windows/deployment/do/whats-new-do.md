@@ -32,8 +32,11 @@ There are two different versions:
 
 ## New in Delivery Optimization for Windows
 
-- Delivery Optimization introduced support for receiver side ledbat (rLedbat) in Windows 11 22H2.
+### Windows 11 22H2
 
+- New setting: Customize Vpn detection by choosing custom keywords. Now, you don't have to rely on Delivery Optimization keywords to detect your Vpn. By using the new VpnKeywords configuration you can add keywords for Delivery Optimization to use when detecting a Vpn when in use. You can find this configuration in Group Policy or MDM under 'DOVpnKeywords'.
+- New setting: Use the disallow downloads from a connected cache server, when a Vpn is detected and you want to prevent the download from the connected cache server. You can find this configuration in Group Policy or MDM under 'DODisallowCacheServerDownloadsOnVPN'.
+- Delivery Optimization introduced support for receiver side ledbat (rLedbat).
 - New peer selection options: Currently the available options include: 0 = None, 1 = Subnet mask, and 2 = Local Peer Discovery. The subnet mask option applies to both Download Modes LAN (1) and Group (2). If Group mode is set, Delivery Optimization connects to locally discovered peers that are also part of the same Group (have the same Group ID)."
 - Local Peer Discovery: a new option for **[Restrict Peer Selection By](waas-delivery-optimization-reference.md#select-a-method-to-restrict-peer-selection)** (in Group Policy) or **DORestrictPeerSelectionBy** (in MDM). This option restricts the discovery of local peers using the DNS-SD protocol. When you set Option 2, Delivery Optimization restricts peer selection to peers that are locally discovered (using DNS-SD). If Group mode is enabled, Delivery Optimization connects to locally discovered peers that are also part of the same group, for those devices with the same Group ID).
 
