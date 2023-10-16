@@ -319,9 +319,10 @@ This information is not available in the Control Panel.
 
 ### Add protectors
 
+#### Add a recovery password protector
+
 #### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
 
-#### Add a recovery password protector
 
 ```PowerShell
 Add-BitLockerKeyProtector -MountPoint C -RecoveryPasswordProtector
@@ -357,7 +358,7 @@ manage-bde.exe -protectors -add -pw D:
 
 #### [:::image type="icon" source="images/controlpanel.svg"::: **Control Panel**](#tab/controlpanel)
 
-This information is not available in the Control Panel.
+From the **BitLocker Drive Encryption** Control Panel applet, expand the drive where you want to add a password protector and select the option **Add password**. When prompted, enter and confirm a password to unlock the drive. Select **Finish** to complete the process.
 
 ---
 
@@ -442,7 +443,12 @@ Remove-BitLockerKeyProtector <volume> -KeyProtectorID "{GUID}"
 
 #### [:::image type="icon" source="images/controlpanel.svg"::: **Control Panel**](#tab/controlpanel)
 
+From the **BitLocker Drive Encryption** Control Panel applet, expand the drive where you want to remove a protector and select the option to remove it, if available.
+
 ---
+
+> [!NOTE]
+> You must have at least one unlock method for any BitLocker-encrypted drives.
 
 ## Disable BitLocker
 
