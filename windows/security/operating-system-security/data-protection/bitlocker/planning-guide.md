@@ -15,7 +15,7 @@ To plan a BitLocker deployment, understand the current environment. Perform an i
 
 To help document the organization's current disk encryption security policies, answer the following questions:
 
-| :ballot_box_with_check: | **Question** |
+| | **Question** |
 |--|--|
 | :black_square_button: | *Are there policies to determine which devices must use BitLocker and which don't?* |
 | :black_square_button: | *What policies exist to control recovery password and recovery key storage?* |
@@ -27,7 +27,7 @@ To help document the organization's current disk encryption security policies, a
 
 A trusted platform module (TPM) is a hardware component installed in many Windows devices by the manufacturers. It works with BitLocker to help protect user data and to make sure a device hasn't been tampered with while the system was offline.
 
-BitLocker can lock the normal startup process until the user supplies a personal identification number (PIN) or inserts a removable USB device that contains a startup key. These extra security measures provide multifactor authentication. They also make sure that the computer won't start or resume from hibernation until the correct PIN or startup key is presented.
+BitLocker can lock the normal startup process until the user supplies a personal identification number (PIN), or inserts a removable USB device that contains a startup key. These extra security measures provide multifactor authentication. They also make sure that the computer won't start or resume from hibernation until the correct PIN or startup key is presented.
 
 On devices that don't have a TPM, BitLocker can still be used to encrypt the Windows operating system volume. However, this implementation requires the user to insert a USB startup key to start the computer or resume from hibernation. It doesn't provide the pre-startup system integrity verification offered by BitLocker working with a TPM.
 
@@ -39,8 +39,11 @@ The TPM is able to securely protect the BitLocker encryption key while it is at 
 
 ### BitLocker key protectors
 
+To protect the BitLocker encryption key, BitLocker can use different types of *protectors*. When enabling BitLocker, each protector receives a copy of the *Volume Master Key*, which is then encrypted using its own machanism.
+
 | Key protector | Description |
 | - | - |
+| Password | To unlock a drive, the user must supply a password. This is the weakest protector and it should be avoided, if possible.|
 | TPM | A hardware device used to help establish a secure root-of-trust. BitLocker only supports TPM 1.2 or higher versions.|
 | PIN | A user-entered numeric key protector that can only be used in addition to the TPM.|
 | Enhanced PIN | A user-entered alphanumeric key protector that can only be used in addition to the TPM.|

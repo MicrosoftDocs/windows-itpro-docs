@@ -373,6 +373,10 @@ Add-BitLockerKeyProtector -MountPoint C -RecoveryPasswordProtector
 manage-bde.exe -protectors -add -recoverypassword C:
 ```
 
+#### [:::image type="icon" source="images/controlpanel.svg"::: **Control Panel**](#tab/controlpanel)
+
+This information is not available in the Control Panel.
+
 ---
 
 ##### Add a password protector
@@ -390,6 +394,10 @@ Add-BitLockerKeyProtector -MountPoint D -PasswordProtector
 ```cmd
 manage-bde.exe -protectors -add -pw D:
 ```
+
+#### [:::image type="icon" source="images/controlpanel.svg"::: **Control Panel**](#tab/controlpanel)
+
+This information is not available in the Control Panel.
 
 ---
 

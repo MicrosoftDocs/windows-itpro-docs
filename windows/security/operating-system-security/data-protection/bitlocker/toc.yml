@@ -21,8 +21,6 @@ items:
   items:
     - name: Overview of BitLocker recovery methods
       href: recovery-guide.md
-    - name: BitLocker recovery process
-      href: recovery-guide-process.md
     - name: Manage BitLocker recovery passwords
       href: manage-recovery-passwords.md
     - name: Preboot recovery screen
