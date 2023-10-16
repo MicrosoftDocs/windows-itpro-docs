@@ -165,7 +165,7 @@ To view endpoints for non-Enterprise Windows 11 editions, see [Windows 11 connec
 |||TLSv1.2/HTTP|www.msn.com|
 |||TLSv1.2/HTTP|fd.api.iris.microsoft.com|
 |||TLSv1.2|staticview.msn.com|
-|Windows Update|||[Learn how to turn off traffic to all of the following endpoint(s) for Windows Update.](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-updates)<br>[Hostnames to allow through firewall to support Delivery Optimization.](../deployment/do/waas-delivery-optimization-faq.yml#what-hostnames-should-i-allow-through-my-firewall-to-support-delivery-optimization)|
+|Windows Update|||[Learn how to turn off traffic to all of the following endpoint(s) for Windows Update.](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-updates)<br>[Hostnames to allow through firewall to support Delivery Optimization.](../deployment/do/waas-delivery-optimization-faq.yml)|
 |||TLSv1.2|definitionupdates.microsoft.com|
 ||The following endpoints are used for Windows Update downloads of apps and OS updates, including HTTP downloads or HTTP downloads blended with peers. If you turn off traffic for this endpoint, Windows Update downloads won't be managed, as critical metadata that is used to make downloads more resilient is blocked. Downloads may be impacted by corruption (resulting in re-downloads of full files). Additionally, downloads of the same update by multiple devices on the same local network won't use peer devices for bandwidth reduction.|TLSv1.2/HTTPS/HTTP|*.prod.do.dsp.mp.microsoft.com|
 |||HTTP|emdl.ws.microsoft.com|
