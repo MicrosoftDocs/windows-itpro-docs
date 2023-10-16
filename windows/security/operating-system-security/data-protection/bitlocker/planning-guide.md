@@ -15,7 +15,7 @@ To plan a BitLocker deployment, understand the current environment. Perform an i
 
 To help document the organization's current disk encryption security policies, answer the following questions:
 
-| | **Question** |
+| [x] | **Question** |
 |--|--|
 | :black_square_button: | *Are there policies to determine which devices must use BitLocker and which don't?* |
 | :black_square_button: | *What policies exist to control recovery password and recovery key storage?* |
