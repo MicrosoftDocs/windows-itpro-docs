@@ -11,28 +11,27 @@ appliesto:
 
 >**Looking for consumer information?** See [Welcome to Copilot in Windows](https://support.microsoft.com/windows/welcome-to-copilot-in-windows-675708af-8c16-4675-afeb-85a5a476ccb0).
 
-Copilot in Windows provides centralized generative AI assistance to your users right from the Windows desktop. Copilot in Windows appears as a side bar on the Windows desktop, docked to the right. It's designed to be an assistant that can help your users get things done in Windows. Copilot in Windows is a bit different from [Bing Chat in the Microsoft Edge sidebar](https://www.microsoft.com/edge/features/bing-chat), which provides assistance in the browser, since it can also perform actions such as changing Windows settings or performing common tasks in Windows. However, both user experiences, Copilot in Windows and Bing Chat in the Microsoft Edge sidebar, can share the same underlying chat provider platform. It's important for organizations to properly configure the chat provider platform that Copilot in Windows uses, since users can possibly pass sensitive information into the chat provider.
+Copilot in Windows provides centralized generative AI assistance to your users right from the Windows desktop. Copilot in Windows appears as a side bar docked on the Windows desktop. It's designed to be an assistant that can help your users get things done in Windows. Copilot in Windows is a bit different from [Bing Chat in the Microsoft Edge sidebar](https://www.microsoft.com/edge/features/bing-chat), which provides assistance in the browser, since it can also perform actions such as changing Windows settings or performing common tasks in Windows. However, both user experiences, Copilot in Windows and Bing Chat in the Microsoft Edge sidebar, can share the same underlying chat provider platform. It's important for organizations to properly configure the chat provider platform that Copilot in Windows uses, since users can possibly pass sensitive information into the chat provider.
+
+At a high level, configuring Copilot in Windows for your organization involves the following steps:
+
+1. Configure the chat provider platform that Copilot in Windows uses:
+   - Bing Chat Enterprise (highly recommended for commercial environments)
+   - Bing Chat (default, intended for consumer environments)
+1. Ensure the Copilot in Windows user experience is enabled:
+   - Windows 11, version 22H2 clients
+   - Windows 11 clients with the 2023 annual update installed (coming soon)
+1. Verify other settings that may impact Copilot in Windows and its underlying chat provider
 
 
 ## Chat provider platforms for Copilot in Windows
 
-Copilot in Windows uses one of the following chat provider platforms, dependant on your organization's configuration:
+Copilot in Windows uses one of the following chat provider platforms, dependent on your organization's configuration:
 
 - **[Bing Chat Enterprise](/bing-chat-enterprise/overview)**: intended for commercial use scenarios
     - With Bing Chat Enterprise, user and organizational data is protected, chat data isn't saved, Microsoft has no eyes-on access, and your data isn't used to train the underlying large language models. Because of this protection, chat history, 3rd-party plugins, and the Bing mobile app for iOS or Android aren't currently supported.
     - Bing chat enterprise is available, at no additional cost, for customers who are licensed for Microsoft 365 E3 or E5, A3 or A5 for faculty, Business Standard, or Business Premium.
 - **[Bing Chat](https://www.microsoft.com/bing/do-more-with-ai/what-is-bing-chat-and-how-can-you-use-it)**: intended for consumer use scenarios
-
-## How to enable Copilot in Windows
-
-1. [Configure the chat provider](#configure-the-chat-provider-platform-that-copilot-in-windows-uses) platform that Copilot in Windows uses:
-   - [Bing Chat Enterprise](/bing-chat-enterprise/overview) (highly recommended for commercial environments)
-   - Bing Chat (default, intended for consumer environments)
-
-1. Ensure the Copilot in Windows user experience is enabled:
-   - Windows 11, version 22H2 clients
-   - Windows 11 clients with the 2023 annual update installed (coming soon)
-
 
 ## Configure the chat provider platform that Copilot in Windows uses
 
@@ -89,15 +88,15 @@ https://learn.microsoft.com/graph/api/resources/licensedetails
 
 Copilot in Windows isn't enabled by default for manged Windows 11, version 22H2 devices because it's behind a [temporary enterprise control](/windows/whats-new/temporary-enterprise-feature-control). For the purposes of temporary enterprise control, a system is considered managed if it's configured to get updates from Windows Update for Business or [Windows Server Update Services (WSUS)](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus). Clients that get updates from Microsoft Configuration Manager and Microsoft Intune are considered managed since their updates ultimately come from WSUS or Windows Updates for Business.
 
-To enable Copilot in Windows for managed Windows 11, version 22H2 devices, you'll need to turn off temporary enterprise control for these devices. Since disabling [temporary enterprise control](/windows/whats-new/temporary-enterprise-feature-control) can be impactful, you should test this change before deploying it broadly. To enable Copilot in Windows for managed Windows 11, version 22H2 devices, use the following instructions:
+To enable Copilot in Windows for managed Windows 11, version 22H2 devices, you need to turn off temporary enterprise control for these devices. Since disabling [temporary enterprise control](/windows/whats-new/temporary-enterprise-feature-control) can be impactful, you should test this change before deploying it broadly. To enable Copilot in Windows for managed Windows 11, version 22H2 devices, use the following instructions:
 
-1. Verify that the users accounts have the correct chat provider platform configured for Copilot in Windows. For more information, see the [Configure the chat provider platform that Copilot in Windows uses](#configure-the-chat-provider-platform-that-copilot-in-windows-uses) section.
+1. Verify that the user accounts have the correct chat provider platform configured for Copilot in Windows. For more information, see the [Configure the chat provider platform that Copilot in Windows uses](#configure-the-chat-provider-platform-that-copilot-in-windows-uses) section.
 1. Apply a policy to disable temporary enterprise control. The following polices apply to Windows 11, version 22H2 with [KB5022845](https://support.microsoft.com/en-us/topic/february-14-2023-kb5022845-os-build-22621-1265-90a807f4-d2e8-486e-8a43-d09e66319f38) and later:
    - **Group Policy:** Computer Configuration\Administrative Templates\Windows Components\Windows Update\Manage end user experience\\**Enable features introduced via servicing that are off by default**
 
     - **CSP**: ./Device/Vendor/MSFT/Policy/Config/Update/[AllowTemporaryEnterpriseFeatureControl](/windows/client-management/mdm/policy-csp-update?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json#allowtemporaryenterprisefeaturecontrol)
        - In the Intune [settings catalog](/mem/intune/configuration/settings-catalog), this setting is named **Allow Temporary Enterprise Feature Control** under the **Windows Update for Business** category.
-1. Copilot in Windows will be initially deployed to devices using a controlled feature rollout (CFR). Depending on how soon you start deploying Copilot in Windows, you may also need to also [enable optional updates](/windows/deployment/update/waas-configure-wufb#enable-optional-updates) with one of the following policies:
+1. Copilot in Windows will be initially deployed to devices using a controlled feature rollout (CFR). Depending on how soon you start deploying Copilot in Windows, you might also need to [enable optional updates](/windows/deployment/update/waas-configure-wufb#enable-optional-updates) with one of the following policies:
    - **Group Policy:** Computer Configuration\Administrative Templates\Windows Components\Windows Update\Windows Update for Business\\**Allow updates to Windows optional features**
    - **CSP**: ./Device/Vendor/MSFT/Policy/Config/Update/[AllowOptionalUpdates](/windows/client-management/mdm/policy-csp-update?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json#allowoptionalupdates)
       - In the Intune [settings catalog](/mem/intune/configuration/settings-catalog), this setting is named **Allow optional updates** under the **Windows Update for Business** category.
