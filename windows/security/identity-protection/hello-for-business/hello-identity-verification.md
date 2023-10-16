@@ -44,12 +44,12 @@ The table shows the minimum requirements for each deployment. For key trust in a
 
 The table shows the minimum requirements for each deployment.
 
-| Key trust <br/> Group Policy managed | Certificate trust <br/> Group Policy managed|
-| --- | --- |
-|Any supported Windows client versions|Any supported Windows client versions|
-| Windows Server 2016 Schema | Windows Server 2016 Schema|
-| Windows Server 2008 R2 Domain/Forest functional level | Windows Server 2008 R2 Domain/Forest functional level |
-| Any supported Windows Server versions  | Any supported Windows Server versions |
-| Any supported Windows Server versions  | Any supported Windows Server versions  |
-| Any supported Windows Server versions  | Any supported Windows Server versions  |
-| AD FS with 3rd Party MFA Adapter | AD FS with 3rd Party MFA Adapter |
+| Requirement | Key trust <br/> Group Policy managed | Certificate trust <br/> Group Policy managed|
+| --- | --- | ---|
+| **Windows Version** | Any supported Windows client versions|Any supported Windows client versions|
+| **Schema Version**| Windows Server 2016 Schema | Windows Server 2016 Schema|
+| **Domain and Forest Functional Level**| Windows Server 2008 R2 Domain/Forest functional level | Windows Server 2008 R2 Domain/Forest functional level |
+| **Domain Controller Version**| Any supported Windows Server versions  | Any supported Windows Server versions |
+| **Certificate Authority**| Any supported Windows Server versions  | Any supported Windows Server versions  |
+| **AD FS Version**| Any supported Windows Server versions  | Any supported Windows Server versions  |
+| **MFA Requirement**| AD FS with 3rd Party MFA Adapter | AD FS with 3rd Party MFA Adapter |
