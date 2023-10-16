@@ -289,46 +289,6 @@ Encrypting data volumes using the BitLocker Control Panel works in a similar fas
 
 ---
 
-### Active Directory protector
-
-The **ADAccountOrGroup** protector is an Active Directory SID-based protector. This protector can be added to both operating system and data volumes, although it doesn't unlock operating system volumes in the pre-boot environment. The protector requires the SID for the domain account or group to link with the protector. BitLocker can protect a cluster-aware disk by adding an SID-based protector for the Cluster Name Object (CNO) that lets the disk properly failover and unlock to any member computer of the cluster.
-
-> [!WARNING]
-> The SID-based protector requires the use of an additional protector such as TPM, PIN, recovery key, etc. when used on operating system volumes.
-
-
-#### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
-
-To add an **ADAccountOrGroup** protector to a volume, either the domain SID is needed or the group name preceded by the domain and a backslash. In the example below, the **CONTOSO\\Administrator** account is added as a protector to the data volume G.
-
-```powershell
-Enable-BitLocker G: -AdAccountOrGroupProtector -AdAccountOrGroup CONTOSO\Administrator
-```
-
-For users who wish to use the SID for the account or group, the first step is to determine the SID associated with the account. To get the specific SID for a user account in Windows PowerShell, use the following command:
-
-```powershell
-Get-ADUser -filter {samaccountname -eq "administrator"}
-```
-
-> [!NOTE]
-> Use of this command requires the RSAT-AD-PowerShell feature.
-
-> [!TIP]
-> In addition to the Windows PowerShell command above, information about the locally logged on user and group membership can be found using: `WHOAMI /ALL`. This doesn't require the use of additional features.
-
-#### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
-
-```cmd
-manage-bde.exe -on <drive letter>
-```
-
-You can choose to add protectors to the volume. It is recommended to add at least one primary protector and a recovery protector to a data volume.
-
-#### [:::image type="icon" source="images/controlpanel.svg"::: **Control Panel**](#tab/controlpanel)
-
----
-
 ## Manage BitLocker protectors
 
 The management of BitLocker protectors consist in adding, removing, and backing up protectors.
@@ -361,7 +321,7 @@ This information is not available in the Control Panel.
 
 #### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
 
-##### Add a recovery password protector
+#### Add a recovery password protector
 
 ```PowerShell
 Add-BitLockerKeyProtector -MountPoint C -RecoveryPasswordProtector
@@ -379,7 +339,7 @@ This information is not available in the Control Panel.
 
 ---
 
-##### Add a password protector
+#### Add a password protector
 
 A common protector for a *data volume* is the *password protector*. In the next example, a password protector is added to a volume.
 
@@ -401,11 +361,17 @@ This information is not available in the Control Panel.
 
 ---
 
-##### Add a domain SID-based protector protector
+#### Add an Active Directory protector
+
+The **ADAccountOrGroup** protector is an Active Directory SID-based protector. This protector can be added to both operating system and data volumes, although it doesn't unlock operating system volumes in the pre-boot environment. The protector requires the SID for the domain account or group to link with the protector. BitLocker can protect a cluster-aware disk by adding an SID-based protector for the Cluster Name Object (CNO) that lets the disk properly failover and unlock to any member computer of the cluster.
+
+> [!IMPORTANT]
+> The SID-based protector requires the use of an additional protector such as TPM, PIN, recovery key, etc. when used on operating system volumes.
 
 > [!NOTE]
 > This option is not available for Microsoft Entra joined devices.
->
+
+> [!TIP]
 > Active Directory-based protectors are normally used to unlock Failover Cluster-enabled volumes.
 
 In this example, a domain SID-based protector is added to a previously encrypted volume. The user knows the SID for the user account or group they wish to add and uses the following command:
@@ -415,6 +381,24 @@ In this example, a domain SID-based protector is added to a previously encrypted
 ```powershell
 Add-BitLockerKeyProtector C: -ADAccountOrGroupProtector -ADAccountOrGroup "<SID>"
 ```
+
+To add an **ADAccountOrGroup** protector to a volume, either the domain SID is needed or the group name preceded by the domain and a backslash. In the example below, the **CONTOSO\\Administrator** account is added as a protector to the data volume G.
+
+```powershell
+Enable-BitLocker G: -AdAccountOrGroupProtector -AdAccountOrGroup CONTOSO\Administrator
+```
+
+For users who wish to use the SID for the account or group, the first step is to determine the SID associated with the account. To get the specific SID for a user account in Windows PowerShell, use the following command:
+
+```powershell
+Get-ADUser -filter {samaccountname -eq "administrator"}
+```
+
+> [!NOTE]
+> Use of this command requires the RSAT-AD-PowerShell feature.
+
+> [!TIP]
+> In addition to the Windows PowerShell command above, information about the locally logged on user and group membership can be found using: `WHOAMI /ALL`. This doesn't require the use of additional features.
 
 #### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
 
@@ -432,12 +416,12 @@ This option is not available in the Control Panel.
 
 #### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
 
-To remove the existing protectors prior to provisioning BitLocker on the volume, use the `Remove-BitLockerKeyProtector` cmdlet. Running this cmdlet requires the GUID associated with the protector to be removed.
+To remove existing protectors on a volume, use the `Remove-BitLockerKeyProtector` cmdlet. A GUID associated with the protector to be removed must be provided.
 
 The following commands return the list of key protectors and GUIDS:
 
 ```PowerShell
-$vol = Get-BitLockerVolume C:
+$vol = Get-BitLockerVolume C
 $keyprotectors = $vol.KeyProtector
 $keyprotectors
 ```
@@ -445,7 +429,7 @@ $keyprotectors
 By using this information, the key protector for a specific volume can be removed using the command:
 
 ```powershell
-Remove-BitLockerKeyProtector <volume>: -KeyProtectorID "{GUID}"
+Remove-BitLockerKeyProtector <volume> -KeyProtectorID "{GUID}"
 ```
 
 > [!NOTE]
