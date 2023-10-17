@@ -62,6 +62,7 @@ The Network Unlock process follows these phases:
   :::column span="2":::
     :::image type="content" source="images/network-unlock-diagram.png" alt-text="Diagram of the Network Unlock sequence." lightbox="images/network-unlock-diagram.png" border="false":::
   :::column-end:::
+:::row-end:::
 
 ## Configure Network Unlock
 
