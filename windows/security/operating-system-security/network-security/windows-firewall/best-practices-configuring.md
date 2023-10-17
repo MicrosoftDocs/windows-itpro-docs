@@ -105,7 +105,7 @@ To determine why some applications are blocked from communicating in the network
 
 Creation of application rules at runtime can also be prohibited by administrators using the Settings app or Group Policy.
 
-![Windows Firewall prompt.](images/fw04-userquery.png)
+:::image type="content" alt-text="Windows Firewall prompt." source="images/fw04-userquery.png":::
 
 *Figure 4: Dialog box to allow access*
 
@@ -185,7 +185,7 @@ incoming connections, including those in the list of allowed apps** setting foun
 
 *Figure 6: Windows settings App/Windows Security/Firewall Protection/Network Type*
 
-![Firewall cpl.](images/fw07-legacy.png)
+:::image type="content" alt-text="Firewall cpl." source="images/fw07-legacy.png":::
 
 *Figure 7: Legacy firewall.cpl*
 
