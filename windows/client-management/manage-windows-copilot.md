@@ -106,7 +106,7 @@ When Bing Chat Enterprise is the chat provider platform, the user experience cle
 
 ## Ensure the Copilot in Windows user experience is enabled
 
-Once you've configured the chat provider platform that Copilot in Windows uses, you need to ensure that the Copilot in Windows user experience is enabled. The Copilot in Windows user experience is enabled by default for managed Windows 11, version 22H2 devices.
+Once you've configured the chat provider platform that Copilot in Windows uses, you need to ensure that the Copilot in Windows user experience is enabled. Ensuring the Copilot in Windows user experience is enabled varies by the Windows version. 
 
 ### Enable the Copilot in Windows user experience for Windows 11, version 22H2 clients
 
