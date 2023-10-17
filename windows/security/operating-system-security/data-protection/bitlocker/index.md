@@ -39,7 +39,8 @@ Both options don't provide the pre-startup system integrity verification offered
   :::column span="1":::
     *BitLocker preboot screen with password:*
   :::column-end:::
-:::row-end::::::row:::
+:::row-end:::
+:::row:::
   :::column span="1":::
     :::image type="content" source="images/preboot-startup-key.png" alt-text="Screenshot of the BitLocker preboot screen prompting to enter a startup key." lightbox="images/preboot-startup-key.png" border="false":::
   :::column-end:::
