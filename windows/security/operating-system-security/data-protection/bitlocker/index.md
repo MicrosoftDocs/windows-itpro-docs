@@ -20,21 +20,33 @@ Data on a lost or stolen device is vulnerable to unauthorized access, either by 
 
 BitLocker provides maximum protection when used with a Trusted Platform Module (TPM). A TPM is a common hardware component installed on Windows devices, and it works with BitLocker to ensure that a device hasn't been tampered with while the system is offline.
 
-On devices that don't have a TPM, BitLocker can still be used to encrypt the operating system drive. However, this implementation requires the user to insert a USB key to start the device, or when resuming from hibernation. A password can also be used to protect the OS volume on a device without TPM. Both options don't provide the pre-startup system integrity verification offered by BitLocker with a TPM.
+In **addition** to the TPM, BitLocker has the option to lock the normal startup process until the user supplies a personal identification number (PIN) or inserts a removable device  that contains a *startup key*. These security measures provide multifactor authentication and assurance that the device can't start or resume from hibernation until the correct PIN or startup key is presented.
 
-In addition to the TPM, BitLocker has the option to lock the normal startup process until the user supplies a personal identification number (PIN) or inserts a removable device (such as a USB drive) that contains a *startup key*. These security measures provide multifactor authentication and assurance that the device can't start or resume from hibernation until the correct PIN or startup key is presented.
+On devices that don't have a TPM, BitLocker can still be used to encrypt the operating system drive. This implementation requires the user to either:
+
+- use a startup key, which is a file stored on a removable drive that is used to start the device, or when resuming from hibernation
+- use a password. This option is not very secure since there's no password lockout logic. As such, this option is discouraged and disabled by default
+
+Both options don't provide the pre-startup system integrity verification offered by BitLocker with a TPM.
 
 :::row:::
   :::column span="1":::
     *BitLocker preboot screen with startup key:*
-    :::image type="content" source="images/preboot-startup-key.png" alt-text="Screenshot of the BitLocker preboot screen prompting to enter a startup key." lightbox="images/preboot-startup-key.png" border="false":::
   :::column-end:::
   :::column span="1":::
     *BitLocker preboot screen with PIN:*
-    :::image type="content" source="images/preboot-pin.png" alt-text="Screenshot of the BitLocker preboot screen prompting to enter a PIN." lightbox="images/preboot-pin.png" border="false":::
   :::column-end:::
   :::column span="1":::
     *BitLocker preboot screen with password:*
+  :::column-end:::
+:::row-end::::::row:::
+  :::column span="1":::
+    :::image type="content" source="images/preboot-startup-key.png" alt-text="Screenshot of the BitLocker preboot screen prompting to enter a startup key." lightbox="images/preboot-startup-key.png" border="false":::
+  :::column-end:::
+  :::column span="1":::
+    :::image type="content" source="images/preboot-pin.png" alt-text="Screenshot of the BitLocker preboot screen prompting to enter a PIN." lightbox="images/preboot-pin.png" border="false":::
+  :::column-end:::
+  :::column span="1":::
     :::image type="content" source="images/preboot-password.png" alt-text="Screenshot of the BitLocker preboot screen prompting to enter a password." lightbox="images/preboot-password.png" border="false":::
   :::column-end:::
 :::row-end:::
