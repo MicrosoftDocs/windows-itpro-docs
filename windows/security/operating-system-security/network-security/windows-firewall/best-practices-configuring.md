@@ -208,3 +208,24 @@ For tasks related to creating outbound rules, see [Checklist: Creating Outbound 
 ## Document your changes
 
 When creating an inbound or outbound rule, you should specify details about the app itself, the port range used, and important notes like creation date. Rules must be well-documented for ease of review both by you and other admins. We highly encourage taking the time to make the work of reviewing your firewall rules at a later date easier. And *never* create unnecessary holes in your firewall.
+
+## Configure Windows Firewall rules with WDAC tagging policies
+
+Windows Firewall now supports the use of Windows Defender Application Control (WDAC) Application ID (AppID) tags in firewall rules. With this capability, Windows Firewall rules can now be scoped to an application or a group of applications by referencing process tags, without using absolute path or sacrificing security. There are two steps for this configuration: 
+
+### Step 1: Deploy WDAC AppId Tagging Policies
+
+A Windows Defender Application Control (WDAC) policy needs to be deployed which specifies individual applications or groups of applications to apply a PolicyAppId tag to the process token(s). Then, the admin can define firewall rules which are scoped to all processes tagged with the matching PolicyAppId.  
+
+Follow the detailed [WDAC Application ID (AppId) Tagging Guide](/windows/security/threat-protection/windows-defender-application-control/appidtagging/windows-defender-application-control-appid-tagging-guide) to create, deploy, and test an AppID (Application ID) policy to tag applications. 
+
+### Step 2: Configure Firewall Rules using PolicyAppId Tags
+
+- **Deploy firewall rules with Intune:** When creating firewall rules with Intune Microsoft Defender Firewall Rules, provide the AppId tag in the Policy App ID setting. The properties come directly from the [Firewall configuration service provider ](/windows/client-management/mdm/firewall-csp)(CSP) and apply to the Windows platform.
+You can do this through the Intune admin center under Endpoint security > Firewall. Policy templates can be found via Create policy > Windows 10, Windows 11, and Windows Server > Microsoft Defender Firewall or Microsoft Defender Firewall Rules. 
+
+OR
+
+- **Create local firewall rules with PowerShell**: You can use PowerShell to configure by adding a Firewall rule using [New-NetFirewallRule](/powershell/module/netsecurity/new-netfirewallrule) and specify the `–PolicyAppId` tag. You can specify one tag at a time while creating firewall rules. Multiple User Ids are supported. 
+
+
