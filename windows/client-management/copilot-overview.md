@@ -13,7 +13,9 @@ appliesto:
 
 Copilot in Windows provides centralized generative AI assistance to your users right from the Windows desktop. Copilot in Windows appears as a side bar docked on the Windows desktop. It's designed to be an assistant that can help your users get things done in Windows. Copilot in Windows is a bit different from [Bing Chat Enterprise in the Microsoft Edge sidebar](/bing-chat-enterprise/edge) (and [Bing Chat in the Microsoft Edge sidebar](https://www.microsoft.com/edge/features/bing-chat)), which provides assistance in the browser, since it can also perform actions such as changing Windows settings or performing common tasks in Windows. However, both user experiences, Copilot in Windows and Bing Chat Enterprise in the Microsoft Edge sidebar, can share the same underlying chat provider platform. It's important for organizations to properly configure the chat provider platform that Copilot in Windows uses, since users can possibly pass sensitive information into the chat provider.
 
-At a high level, configuring Copilot in Windows for your organization involves the following steps:
+## Manage Copilot in Windows for commercial environments
+
+At a high level, managing and configuring Copilot in Windows for your organization involves the following steps:
 
 1. Understand the [available chat provider platforms for Copilot in Windows](#chat-provider-platforms-for-copilot-in-windows)
 1. [Configure the chat provider platform](#configure-the-chat-provider-platform-that-copilot-in-windows-uses) used by Copilot in Windows
