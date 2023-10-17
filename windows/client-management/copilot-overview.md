@@ -146,3 +146,4 @@ Organizations that aren't ready to use Copilot in Windows can disable it until t
 Copilot in Windows and [Bing Chat in the Microsoft Edge sidebar](https://www.microsoft.com/edge/features/bing-chat), can share the same underlying chat provider platform. This also means that some settings that affect Bing Chat, Bing Chat Enterprise, and the Microsoft Edge sidebar can also affect Copilot in Windows.
 
 The following settings might affect Copilot in Windows and its underlying chat provider:
+
