@@ -47,17 +47,17 @@ The Network Unlock process follows these phases:
 
 :::row:::
   :::column span="2":::
-1. The Windows boot manager detects a Network Unlock protector in the BitLocker configuration
-1. The client computer uses its DHCP driver in the UEFI to get a valid IPv4 IP address
-1. The client computer broadcasts a vendor-specific DHCP request that contains:
-    1. A network key (a 256-bit intermediate key) that is encrypted by using the 2048-bit RSA Public Key of the Network Unlock certificate from the WDS server
-    1. An AES-256 session key for the reply
-1. The Network Unlock provider on the WDS server recognizes the vendor-specific request
-1. The provider decrypts the request by using the WDS server's BitLocker Network Unlock certificate RSA private key
-1. The WDS provider returns the network key encrypted with the session key by using its own vendor-specific DHCP reply to the client computer. This key is an intermediate key
-1. The returned intermediate key is combined with another local 256-bit intermediate key. This key can be decrypted only by the TPM
-1. This combined key is used to create an AES-256 key that unlocks the volume
-1. Windows continues the boot sequence
+    1. The Windows boot manager detects a Network Unlock protector in the BitLocker configuration
+    1. The client computer uses its DHCP driver in the UEFI to get a valid IPv4 IP address
+    1. The client computer broadcasts a vendor-specific DHCP request that contains:
+        - A network key (a 256-bit intermediate key) that is encrypted by using the 2048-bit RSA Public Key of the Network Unlock certificate from the WDS server
+        - An AES-256 session key for the reply
+    1. The Network Unlock provider on the WDS server recognizes the vendor-specific request
+    1. The provider decrypts the request by using the WDS server's BitLocker Network Unlock certificate RSA private key
+    1. The WDS provider returns the network key encrypted with the session key by using its own vendor-specific DHCP reply to the client computer. This key is an intermediate key
+    1. The returned intermediate key is combined with another local 256-bit intermediate key. This key can be decrypted only by the TPM
+    1. This combined key is used to create an AES-256 key that unlocks the volume
+    1. Windows continues the boot sequence
   :::column-end:::
   :::column span="2":::
     :::image type="content" source="images/network-unlock-diagram.png" alt-text="Diagram of the Network Unlock sequence." lightbox="images/network-unlock-diagram.png" border="false":::
