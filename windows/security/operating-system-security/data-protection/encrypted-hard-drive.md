@@ -72,7 +72,7 @@ Configuration of encrypted hard drives as startup drives is done using the same 
 
 There are three related policy settings that help you manage how BitLocker uses hardware-based encryption and which encryption algorithms to use. If these settings aren't configured or disabled on systems that are equipped with encrypted drives, BitLocker uses software-based encryption:
 
-- [Configure use of hardware-based encryption for fixed data drives](bitlocker/policy-settings.md#configure-use-of-hardware-based-encryption-for-fixed-data-drives)  
+- [Configure use of hardware-based encryption for fixed data drives](bitlocker/configure.md#configure-use-of-hardware-based-encryption-for-fixed-data-drives)  
 - [Configure use of hardware-based encryption for removable data drives](bitlocker/policy-settings.md#configure-use-of-hardware-based-encryption-for-removable-data-drives)
 - [Configure use of hardware-based encryption for operating system drives](bitlocker/policy-settings.md#configure-use-of-hardware-based-encryption-for-operating-system-drives)
 
