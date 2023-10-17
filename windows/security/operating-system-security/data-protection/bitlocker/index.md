@@ -25,13 +25,17 @@ On devices that don't have a TPM, BitLocker can still be used to encrypt the ope
 In addition to the TPM, BitLocker has the option to lock the normal startup process until the user supplies a personal identification number (PIN) or inserts a removable device (such as a USB drive) that contains a *startup key*. These security measures provide multifactor authentication and assurance that the device can't start or resume from hibernation until the correct PIN or startup key is presented.
 
 :::row:::
-  :::column span="2":::
+  :::column span="1":::
     *BitLocker preboot screen with startup key:*
     :::image type="content" source="images/preboot-startup-key.png" alt-text="Screenshot of the BitLocker preboot screen prompting to enter a startup key." lightbox="images/preboot-startup-key.png" border="false":::
   :::column-end:::
-  :::column span="2":::
+  :::column span="1":::
     *BitLocker preboot screen with PIN:*
     :::image type="content" source="images/preboot-pin.png" alt-text="Screenshot of the BitLocker preboot screen prompting to enter a PIN." lightbox="images/preboot-pin.png" border="false":::
+  :::column-end:::
+  :::column span="1":::
+    *BitLocker preboot screen with password:*
+    :::image type="content" source="images/preboot-password.png" alt-text="Screenshot of the BitLocker preboot screen prompting to enter a password." lightbox="images/preboot-password.png" border="false":::
   :::column-end:::
 :::row-end:::
 
