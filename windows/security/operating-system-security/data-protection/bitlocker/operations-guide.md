@@ -450,6 +450,54 @@ From the **BitLocker Drive Encryption** Control Panel applet, expand the drive w
 > [!NOTE]
 > You must have at least one unlock method for any BitLocker-encrypted drives.
 
+## Suspend and resume
+
+Some configuration changes may require to suspend BitLocker and then resume it after the change is applied.
+
+Follow the instructions below to suspend and resume BitLocker, selecting the option that best suits your needs.
+
+#### Suspend BitLocker
+
+#### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
+
+```powershell
+Suspend-BitLocker -MountPoint D
+```
+
+#### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
+
+```cmd
+manage-bde.exe -protectors -disable d:
+```
+
+#### [:::image type="icon" source="images/controlpanel.svg"::: **Control Panel**](#tab/controlpanel)
+
+You can only suspend BitLocker protection for the OS drive when using the Control Panel.
+
+From the **BitLocker Drive Encryption** Control Panel applet, select the OS drive and select the option **Suspend protection**.
+
+---
+
+#### Resume BitLocker
+
+#### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
+
+```powershell
+Resume-BitLocker -MountPoint D
+```
+
+#### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
+
+```cmd
+manage-bde.exe -protectors -enable d:
+```
+
+#### [:::image type="icon" source="images/controlpanel.svg"::: **Control Panel**](#tab/controlpanel)
+
+From the **BitLocker Drive Encryption** Control Panel applet, select the OS drive and select the option **Resume protection**.
+
+---
+
 ## Disable BitLocker
 
 Disabling BitLocker decrypts and removes any associated protectors from the volumes. Decryption should occur when protection is no longer required, and not as a troubleshooting step.
@@ -469,7 +517,7 @@ Disable-BitLocker
 To avoid specifying each mount point individually, use the `-MountPoint` parameter in an array to sequence the same command into one line, without requiring additional user input. Example:
 
 ```powershell
-Disable-BitLocker -MountPoint E:,F:,G:
+Disable-BitLocker -MountPoint C,D
 ```
 
 #### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
@@ -485,8 +533,6 @@ This command disables protectors while it decrypts the volume and removes all pr
 #### [:::image type="icon" source="images/controlpanel.svg"::: **Control Panel**](#tab/controlpanel)
 
 BitLocker decryption using the Control Panel is done using a wizard. After opening the BitLocker Control Panel applet, select the **Turn off BitLocker** option to begin the process. To proceed, select the confirmation dialog. With **Turn off BitLocker** confirmed, the drive decryption process begins.
-
-The Control Panel doesn't report decryption progress, but displays it in the notification area of the task bar. Selecting the notification area icon will open a modal dialog with progress.
 
 Once decryption is complete, the drive updates its status in the Control Panel and becomes available for encryption.
 
