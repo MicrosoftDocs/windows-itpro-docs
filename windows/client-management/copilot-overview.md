@@ -8,7 +8,7 @@ appliesto:
 ---
 
 # What is Copilot in Windows?
-
+<!--8445848-->
 >**Looking for consumer information?** See [Welcome to Copilot in Windows](https://support.microsoft.com/windows/welcome-to-copilot-in-windows-675708af-8c16-4675-afeb-85a5a476ccb0).
 
 Copilot in Windows provides centralized generative AI assistance to your users right from the Windows desktop. Copilot in Windows appears as a side bar docked on the Windows desktop. It's designed to be an assistant that can help your users get things done in Windows. Copilot in Windows is a bit different from [Bing Chat in the Microsoft Edge sidebar](https://www.microsoft.com/edge/features/bing-chat), which provides assistance in the browser, since it can also perform actions such as changing Windows settings or performing common tasks in Windows. However, both user experiences, Copilot in Windows and Bing Chat in the Microsoft Edge sidebar, can share the same underlying chat provider platform. It's important for organizations to properly configure the chat provider platform that Copilot in Windows uses, since users can possibly pass sensitive information into the chat provider.
@@ -18,7 +18,7 @@ At a high level, configuring Copilot in Windows for your organization involves t
 1. Understand the [available chat provider platforms for Copilot in Windows](#chat-provider-platforms-for-copilot-in-windows)
 1. [Configure the chat provider platform](#configure-the-chat-provider-platform-that-copilot-in-windows-uses) used by Copilot in Windows
 1. Ensure the [Copilot in Windows user experience](#ensure-the-copilot-in-windows-user-experience-is-enabled) is enabled
-1. Verify [other settings that might impact Copilot in Windows](#other-settings-that-might-impact-copilot-in-windows-and-its-underlying-chat-provider) and its underlying chat provider
+1. Verify [other settings that might affect Copilot in Windows](#other-settings-that-might-affect-copilot-in-windows-and-its-underlying-chat-provider) and its underlying chat provider
 
 Organizations that aren't ready to use Copilot in Windows can disable it until they're ready with the **Turn off Windows Copilot** policy. This policy setting allows you to turn off Copilot in Windows. If you enable this policy setting, users can't use Copilot in Windows and the icon doesn't appear on the taskbar either. If you disable or don't configure this policy setting, users can use Copilot in Windows when it's available to them.
 
