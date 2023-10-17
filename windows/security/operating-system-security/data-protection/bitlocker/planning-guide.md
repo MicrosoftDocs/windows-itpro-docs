@@ -29,7 +29,7 @@ A trusted platform module (TPM) is a hardware component installed in many Window
 
 BitLocker can lock the normal startup process until the user supplies a personal identification number (PIN), or inserts a removable USB device that contains a startup key. These extra security measures provide multifactor authentication. They also make sure that the computer won't start or resume from hibernation until the correct PIN or startup key is presented.
 
-On devices that don't have a TPM, BitLocker can still be used to encrypt the Windows operating system volume. However, this implementation requires the user to insert a USB startup key to start the computer or resume from hibernation. It doesn't provide the pre-startup system integrity verification offered by BitLocker working with a TPM.
+On devices that don't have a TPM, BitLocker can still be used to encrypt the Windows operating system volume. However, this implementation doesn't provide the pre-startup system integrity verification offered by BitLocker working with a TPM.
 
 An effective implementation of information protection, like most security controls, considers usability and security. Users typically prefer a simple security experience. In fact, the more transparent a security solution becomes, the more likely users are to conform to it.
 
@@ -43,33 +43,38 @@ To protect the BitLocker encryption key, BitLocker can use different types of *p
 
 | Key protector | Description |
 | - | - |
-| Password | To unlock a drive, the user must supply a password. This is the weakest protector and it should be avoided, if possible.|
-| TPM | A hardware device used to help establish a secure root-of-trust. BitLocker only supports TPM 1.2 or higher versions.|
-| PIN | A user-entered numeric key protector that can only be used in addition to the TPM.|
-| Enhanced PIN | A user-entered alphanumeric key protector that can only be used in addition to the TPM.|
-| Startup key | An encryption key that can be stored on most removable media. This key protector can be used alone on non-TPM computers, or with a TPM for added security.|
-| Recovery password | A 48-digit number used to unlock a volume when it is in recovery mode. Numbers can often be typed on a regular keyboard. If the numbers on the normal keyboard aren't responding, the function keys (F1-F10) can be used to input the numbers.|
-| Recovery key| An encryption key stored on removable media that can be used for recovering data encrypted on a BitLocker volume.|
+| Password | To unlock a drive, the user must supply a password. This key protector can be used on non-TPM devices .|
+| TPM | A hardware device used to help establish a secure root-of-trust. BitLocker only supports TPM 1.2 or higher versions. The TPM protector can only be used with the OS drive. |
+| PIN | A user-entered numeric or alphanumeric key protector that can only be used with OS volumes and in addition to the TPM.|
+| Startup key | An encryption key that can be stored on removable media, with a file name format of `<protector_id>.bek`. This key protector can be used alone on non-TPM computers, or with a TPM for added security.|
+| Recovery key| An encryption key stored on removable media that can be used for recovering data encrypted on a BitLocker volume. The file name has a format of `<protector_id>.bek`|
+| Recovery password | A 48-digit number used to unlock a volume when it is in *recovery mode*. Numbers can often be typed on a regular keyboard. If the numbers on the normal keyboard aren't responding, the function keys (F1-F10) can be used to input the numbers.|
+| PublicKey (DataRecoveryAgent) | A *Data Recovery Agent* (DRA) certificate that can be used to access any BitLocker encrypted drives that is configured with the public key protector.|
+| Network (TpmNetworkKey) | A key protector that allows automatic unlocking of operating system volumes while still maintaining multifactor authentication. This key protector can only be used with OS volumes.|
+| Active Directory user or group | A protector that is based on an Active Directory user or group security identified (SID). This protector can't be used for OS volumes and is not supported on Microsoft Entra joined devices.|
 
 ### BitLocker authentication methods
 
+The following table describes the authentication methods that can be used to unlock an OS volume:
+
 | Authentication method | Requires user interaction | Description |
 | - | - | - |
-| TPM only| No| TPM validates early boot components.|
+| TPM only| No| TPM validates early boot components|
 | TPM + PIN | Yes| TPM validates early boot components. The user must enter the correct PIN before the start-up process can continue, and before the drive can be unlocked. The TPM enters lockout if the incorrect PIN is entered repeatedly, to protect the PIN from brute force attacks. The number of repeated attempts that will trigger a lockout is variable.|
-| TPM + Network key | No | The TPM successfully validates early boot components, and a valid encrypted network key has been provided from the WDS server. This authentication method provides automatic unlock of operating system volumes at system reboot while still maintaining multifactor authentication. |
+| TPM + Network key | No | The TPM successfully validates early boot components, and a valid encrypted network key has been provided from a WDS server. This authentication method provides automatic unlock of operating system volumes at system reboot while still maintaining multifactor authentication. |
 | TPM + startup key | Yes| The TPM successfully validates early boot components, and a USB flash drive containing the startup key has been inserted.|
 | Startup key only | Yes| The user is prompted for the USB flash drive that has the recovery key and/or startup key, and then reboot the device.|
+| Password | Yes| The user is prompted for a password in the preboot screen. This method doesn't offer any lockout logic. |
 
 #### Support for devices without TPM
 
-Determine whether computers that don't have a TPM 1.2 or higher versions in the environment will be supported. If it's decided to support devices without TPM, a user must use a USB startup key to boot the system. The startup key requires extra support processes similar to multifactor authentication.
+Determine whether computers that don't have a TPM 1.2 or higher versions in the environment will be supported. If it's decided to support devices without TPM, a user must use a USB startup key or a password to boot the system. The startup key requires extra support processes similar to multifactor authentication.
 
 #### What areas of the organization need a baseline level of data protection?
 
 The TPM-only authentication method provides the most transparent user experience for organizations that need a baseline level of data protection to meet security policies. It has the lowest total cost of ownership. TPM-only might also be more appropriate for devices that are unattended or that must reboot unattended.
 
-However, TPM-only authentication method offers the lowest level of data protection. This authentication method protects against attacks that modify early boot components. But, the level of protection can be affected by potential weaknesses in hardware or in the early boot components. BitLocker's multifactor authentication methods significantly increase the overall level of data protection.
+However, TPM-only authentication method doesn't offer a high level of data protection. This authentication method protects against attacks that modify early boot components. But, the level of protection can be affected by potential weaknesses in hardware or in the early boot components. BitLocker's multifactor authentication methods significantly increase the overall level of data protection.
 
 > [!TIP]
 > An advantage of TPM-only authentication is that a device can boot Windows without any user interaction. In case of lost or stolen device, there may be an advantage of this configuration: if the device is connected to the Internet, it can be remotely wiped with a device management solution like Microsoft Intune.
@@ -193,3 +198,11 @@ For more information about how to configure Network unlock feature, see [Network
 ## Monitor and manage BitLocker
 
 Organizations can use Microsoft Intune or Configuration Manager to monitor and manage BitLocker. For more information, see [Monitor device encryption with Intune](/mem/intune/protect/encryption-monitor).
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> Learn about the available options to configure BitLocker and how to configure them via Configuration Service Providers (CSP) or group policy (GPO).
+>
+>
+> [Configure BitLocker >](countermeasures.md)

@@ -27,12 +27,8 @@ items:
       href: preboot-recovery-screen.md
     - name: BitLocker repair tool
       href: recovery-guide-repair-tool.md
-- name: Reference
-  items:
-    - name: BitLocker policy settings
-      href: policy-settings.md
-    - name: BCD settings
-      href: bcd-settings-and-bitlocker.md
+- name: BCD settings
+  href: bcd-settings-and-bitlocker.md
 - name: Frequently asked questions (FAQ)
   href: faq.yml
 - name: Troubleshooting
