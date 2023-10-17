@@ -1,5 +1,5 @@
 ---
-ms.date: 07/05/2023
+ms.date: 10/09/2023
 title: Windows Hello for Business Deployment Prerequisite Overview
 description: Overview of all the different infrastructure requirements for Windows Hello for Business deployment models
 ms.topic: overview
@@ -37,19 +37,19 @@ The table shows the minimum requirements for each deployment. For key trust in a
 | **Certificate Authority**| Not required |Any supported Windows Server versions | Any supported Windows Server versions | Any supported Windows Server versions |
 | **AD FS Version** | Not required | Not required | Any supported Windows Server versions | Any supported Windows Server versions |
 | **MFA Requirement** | Azure MFA, or<br/>AD FS w/Azure MFA adapter, or<br/>AD FS w/Azure MFA Server adapter, or<br/>AD FS w/3rd Party MFA Adapter | Azure MFA tenant, or<br/>AD FS w/Azure MFA adapter, or<br/>AD FS w/Azure MFA Server adapter, or<br/>AD FS w/3rd Party MFA Adapter | Azure MFA tenant, or<br/>AD FS w/Azure MFA adapter, or<br/>AD FS w/Azure MFA Server adapter, or<br/>AD FS w/3rd Party MFA Adapter | Azure MFA tenant, or<br/>AD FS w/Azure MFA adapter, or<br/>AD FS w/Azure MFA Server adapter, or<br/>AD FS w/3rd Party MFA Adapter |
-| **Azure AD Connect** | Not required | Required | Required | Required |
+| **Azure AD Connect** | Not required. It's recommended to use [Microsoft Entra Connect cloud sync](/azure/active-directory/hybrid/cloud-sync/what-is-cloud-sync) | Required | Required | Required |
 | **Azure AD License** | Azure AD Premium, optional | Azure AD Premium, optional | Azure AD Premium, needed for device write-back | Azure AD Premium, optional. Intune license required |
 
 ## On-premises Deployments
 
 The table shows the minimum requirements for each deployment.
 
-| Key trust <br/> Group Policy managed | Certificate trust <br/> Group Policy managed|
-| --- | --- |
-|Any supported Windows client versions|Any supported Windows client versions|
-| Windows Server 2016 Schema | Windows Server 2016 Schema|
-| Windows Server 2008 R2 Domain/Forest functional level | Windows Server 2008 R2 Domain/Forest functional level |
-| Any supported Windows Server versions  | Any supported Windows Server versions |
-| Any supported Windows Server versions  | Any supported Windows Server versions  |
-| Any supported Windows Server versions  | Any supported Windows Server versions  |
-| AD FS with 3rd Party MFA Adapter | AD FS with 3rd Party MFA Adapter |
+| Requirement | Key trust <br/> Group Policy managed | Certificate trust <br/> Group Policy managed|
+| --- | --- | ---|
+| **Windows Version** | Any supported Windows client versions|Any supported Windows client versions|
+| **Schema Version**| Windows Server 2016 Schema | Windows Server 2016 Schema|
+| **Domain and Forest Functional Level**| Windows Server 2008 R2 Domain/Forest functional level | Windows Server 2008 R2 Domain/Forest functional level |
+| **Domain Controller Version**| Any supported Windows Server versions  | Any supported Windows Server versions |
+| **Certificate Authority**| Any supported Windows Server versions  | Any supported Windows Server versions  |
+| **AD FS Version**| Any supported Windows Server versions  | Any supported Windows Server versions  |
+| **MFA Requirement**| AD FS with 3rd Party MFA Adapter | AD FS with 3rd Party MFA Adapter |

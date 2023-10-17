@@ -1,7 +1,7 @@
 ---
 title: Deprecated features in the Windows client
 description: Review the list of features that Microsoft is no longer actively developing in Windows 10 and Windows 11.
-ms.date: 09/01/2023
+ms.date: 10/09/2023
 ms.prod: windows-client
 ms.technology: itpro-fundamentals
 ms.localizationpriority: medium
@@ -36,6 +36,7 @@ The features in this article are no longer being actively developed, and might b
 
 |Feature    |  Details and mitigation  | Deprecation announced |
 | ----------- | --------------------- | ---- |
+| VBScript <!--7954828--> | VBScript is being deprecated. In future releases of Windows, VBScript will be available as a feature on demand before its removal from the operating system. For more information, see [Resources for deprecated features](deprecated-features-resources.md#vbscript). | October 2023 |
 | WordPad | WordPad is no longer being updated and will be removed in a future release of Windows. We recommend Microsoft Word for rich text documents like .doc and .rtf and Windows Notepad for plain text documents like .txt.  | September 1, 2023 |
 | AllJoyn |  Microsoft's implementation of AllJoyn which included the [Windows.Devices.AllJoyn API namespace](/uwp/api/windows.devices.alljoyn), a [Win32 API](/windows/win32/api/_alljoyn/), a [management configuration service provider (CSP)](/windows/client-management/mdm/alljoynmanagement-csp), and an [Alljoyn Router Service](/windows-server/security/windows-services/security-guidelines-for-disabling-system-services-in-windows-server#alljoyn-router-service) has been deprecated. [AllJoyn](https://openconnectivity.org/technology/reference-implementation/alljoyn/), sponsored by AllSeen Alliance, was an open source discovery and communication protocol for Internet of Things scenarios such as turning on/off lights or reading temperatures.AllSeen Alliance promoted the AllJoyn project from 2013 until 2016 when it merged with the Open Connectivity Foundation (OCF), the sponsors of [Iotivity.org](https://iotivity.org/), another protocol for Internet of Things scenarios. Customers should refer to the [Iotivity.org](https://iotivity.org/) website for alternatives such as [Iotivity Lite](https://github.com/iotivity/iotivity-lite) or [Iotivity](https://github.com/iotivity/iotivity).  | August 17, 2023 |
 | TLS 1.0 and 1.1 | Over the past several years, internet standards and regulatory bodies have [deprecated or disallowed](https://www.ietf.org/rfc/rfc8996.html) TLS versions 1.0 and 1.1 due to various security issues. Starting in Windows 11 Insider Preview builds for September 2023 and continuing in future Windows OS releases, TLS 1.0 and 1.1 will be disabled by default. This change increases the security posture of Windows customers and encourages modern protocol adoption. For organizations that need to use these versions, there's an option to re-enable TLS 1.0 or TLS 1.1. For more information, see [Resources for deprecated features](deprecated-features-resources.md). | August 1, 2023| 
