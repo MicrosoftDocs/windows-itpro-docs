@@ -46,7 +46,7 @@ With BitLocker policy settings, you can configure a custom recovery message and 
   :::column-end:::
 :::row-end:::
 
-For more information how to configure a custom recovery message with policy settings, see [Configure preboot recovery message and URL](policy-settings.md?tabs=os#configure-preboot-recovery-message-and-url).
+For more information how to configure a custom recovery message with policy settings, see [Configure preboot recovery message and URL](configure.md?tabs=os#configure-preboot-recovery-message-and-url).
 
 ## Recovery key hints
 

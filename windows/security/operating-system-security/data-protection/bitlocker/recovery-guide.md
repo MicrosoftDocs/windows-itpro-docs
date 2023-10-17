@@ -21,9 +21,9 @@ BitLocker recovery is the process by which access to a BitLocker-protected drive
 - The user can supply a *recovery password*: if the organization allows users to print or store recovery passwords, the users can enter the 48-digit recovery password
 - *Data recovery agents* can use their credentials to unlock the drive: if the drive is an operating system drive, the drive must be mounted as a data drive on another device for the data recovery agent to unlock it
 - An administrator can obtain the *recovery password* from Microsoft Entra ID or AD DS and use it to unlock the drive. Storing recovery passwords in Microsoft Entra ID or AD DS is recommended to provide a way to obtain recovery passwords for drives in an organization if needed. This method requires to enable the policy settings:
-  - [Choose how BitLocker-protected operating system drives can be recovered](policy-settings.md?tabs=os#choose-how-bitlocker-protected-operating-system-drives-can-be-recovered)
-  - [Choose how BitLocker-protected fixed drives can be recovered](policy-settings.md?tabs=fixed#choose-how-bitlocker-protected-fixed-drives-can-be-recovered)
-  - [Choose how BitLocker-protected removable drives can be recovered](policy-settings.md?tabs=removable#choose-how-bitlocker-protected-removable-drives-can-be-recovered)
+  - [Choose how BitLocker-protected operating system drives can be recovered](configure.md?tabs=os#choose-how-bitlocker-protected-operating-system-drives-can-be-recovered)
+  - [Choose how BitLocker-protected fixed drives can be recovered](configure.md?tabs=fixed#choose-how-bitlocker-protected-fixed-drives-can-be-recovered)
+  - [Choose how BitLocker-protected removable drives can be recovered](configure.md?tabs=removable#choose-how-bitlocker-protected-removable-drives-can-be-recovered)
 
 ## What causes BitLocker recovery?
 
@@ -105,9 +105,9 @@ In some cases, users might have the recovery password in a printout or a USB fla
 If the user doesn't have a recovery password printed or on a USB flash drive, the user will need to be able to retrieve the recovery password from an online source. If the PC is a member of a domain, the recovery password can be backed up to AD DS. **However, back up of the recovery password to AD DS does not happen by default.** Backup of the recovery password to AD DS has to be configured via the appropriate group policy settings **before** BitLocker was enabled on the PC. BitLocker group policy settings can be found in the Local Group Policy Editor or the Group Policy Management Console (GPMC) under **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption**. The following policy settings define the recovery methods that can be used to restore access to a BitLocker-protected drive if an authentication method fails or is unable to be used.
 
 This method requires to enable the policy settings:
-  - [Choose how BitLocker-protected operating system drives can be recovered](policy-settings.md?tabs=os#choose-how-bitlocker-protected-operating-system-drives-can-be-recovered)
-  - [Choose how BitLocker-protected fixed drives can be recovered](policy-settings.md?tabs=fixed#choose-how-bitlocker-protected-fixed-drives-can-be-recovered)
-  - [Choose how BitLocker-protected removable drives can be recovered](policy-settings.md?tabs=removable#choose-how-bitlocker-protected-removable-drives-can-be-recovered)
+  - [Choose how BitLocker-protected operating system drives can be recovered](configure.md?tabs=os#choose-how-bitlocker-protected-operating-system-drives-can-be-recovered)
+  - [Choose how BitLocker-protected fixed drives can be recovered](configure.md?tabs=fixed#choose-how-bitlocker-protected-fixed-drives-can-be-recovered)
+  - [Choose how BitLocker-protected removable drives can be recovered](configure.md?tabs=removable#choose-how-bitlocker-protected-removable-drives-can-be-recovered)
 
 In each of these policies, select **Save BitLocker recovery information to Active Directory Domain Services** and then choose which BitLocker recovery information to store in AD DS. Check the **Do not enable BitLocker until recovery information is stored in AD
 DS** check box if it's desired to prevent users from enabling BitLocker unless the computer is connected to the domain and the backup of BitLocker recovery information for the drive to AD DS succeeds.

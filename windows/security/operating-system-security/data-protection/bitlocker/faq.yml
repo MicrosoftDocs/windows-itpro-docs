@@ -113,7 +113,7 @@ sections:
 
       - question: How can I prevent users on a network from storing data on an unencrypted drive?
         answer: |
-          Policy settings can be configured to require that data drives be BitLocker-protected before a BitLocker-protected computer can write data to them. For more info, see [BitLocker policy settings](policy-settings.md).
+          Policy settings can be configured to require that data drives be BitLocker-protected before a BitLocker-protected computer can write data to them. For more info, see [BitLocker policy settings](configure.md).
           When these policy settings are enabled, the BitLocker-protected operating system will mount any data drives that aren't protected by BitLocker as read-only.
           
       - question: |
@@ -217,7 +217,7 @@ sections:
       - question: When should an additional method of authentication be considered?
         answer: |
           New hardware that meets [Windows Hardware Compatibility Program](/windows-hardware/design/compatibility/) requirements make a PIN less critical as a mitigation, and having a TPM-only protector is likely sufficient when combined with policies like device lockout. For example, Surface Pro and Surface Book don't have external DMA ports to attack. 
-          For older hardware, where a PIN may be needed, it's recommended to enable [enhanced PINs](policy-settings.md) that allow non-numeric characters such as letters and punctuation marks, and to set the PIN length based on the risk tolerance and the hardware anti-hammering capabilities available to the TPMs on the computers. 
+          For older hardware, where a PIN may be needed, it's recommended to enable [enhanced PINs](configure.md) that allow non-numeric characters such as letters and punctuation marks, and to set the PIN length based on the risk tolerance and the hardware anti-hammering capabilities available to the TPMs on the computers. 
           
       - question: If I lose my recovery information, will the BitLocker-protected data be unrecoverable?
         answer: |
@@ -278,7 +278,7 @@ sections:
         answer: |
           The minimum personal identification number (PIN) length can be configured by using the **Configure minimum PIN length for startup** Group Policy setting and allow the use of alphanumeric PINs by enabling the **Allow enhanced PINs for startup** policy setting. PIN complexity can't be required via policy settings.
           
-          For more info, see [BitLocker policy settings](policy-settings.md).
+          For more info, see [BitLocker policy settings](configure.md).
           
       - question: How are the PIN and TPM used to derive the volume master key?
         answer: |
@@ -314,7 +314,7 @@ sections:
         answer: |
           If BitLocker is enabled on a drive before policy settings are applied to enforce a backup, the recovery information won't be automatically backed up to AD DS when the computer joins the domain or when the policy settings are subsequently applied. However, the policy settings **Choose how BitLocker-protected operating system drives can be recovered**, **Choose how BitLocker-protected fixed drives can be recovered**, and **Choose how BitLocker-protected removable drives can be recovered** can be chosen to require the computer to be connected to a domain before BitLocker can be enabled to help ensure that recovery information for BitLocker-protected drives in the organization is backed up to AD DS.
           
-          For more info, see [BitLocker policy settings](policy-settings.md).
+          For more info, see [BitLocker policy settings](configure.md).
           
           The BitLocker Windows Management Instrumentation (WMI) interface allows administrators to write a script to back up or synchronize an online client's existing recovery information. However, BitLocker doesn't automatically manage this process. The `manage-bde.exe` command-line tool can also be used to manually back up recovery information to AD DS. For example, to back up all of the recovery information for the `$env:SystemDrive` to AD DS, the following command script can be used from an elevated Command Prompt:
           
@@ -348,7 +348,7 @@ sections:
           
           When an administrator selects the **Do not enable BitLocker until recovery information is stored in AD DS for (operating system | fixed data | removable data) drives** check box in any of the **Choose how BitLocker-protected operating system drives can be recovered**, **Choose how BitLocker-protected fixed data drives can be recovered**, and **Choose how BitLocker-protected removable data drives can be recovered** policy settings, users can't enable BitLocker unless the computer is connected to the domain and the backup of BitLocker recovery information to AD DS succeeds. With these settings configured if the backup fails, BitLocker can't be enabled, ensuring that administrators will be able to recover BitLocker-protected drives in the organization.
           
-          For more info, see [BitLocker policy settings](policy-settings.md).
+          For more info, see [BitLocker policy settings](configure.md).
           
           When an administrator clears these check boxes, the administrator is allowing a drive to be BitLocker-protected without having the recovery information successfully backed up to AD DS; however, BitLocker won't automatically retry the backup if it fails. Instead, administrators can create a backup script, as described earlier in [What if BitLocker is enabled on a computer before the computer joins the domain?](#what-if-bitlocker-is-enabled-on-a-computer-before-the-computer-joins-the-domain-) to capture the information after connectivity is restored.
 
@@ -367,7 +367,7 @@ sections:
       - question: |
           What are the implications of using the sleep or hibernate power management options?
         answer: |
-          BitLocker on operating system drives in its basic configuration provides extra security for the hibernate mode. In sleep mode, the computer is vulnerable to direct memory access attacks, since unprotected data remains in RAM. Therefore, for improved security, it's recommended to disable sleep mode. Startup authentication can be configured by using a [policy setting](policy-settings.md). 
+          BitLocker on operating system drives in its basic configuration provides extra security for the hibernate mode. In sleep mode, the computer is vulnerable to direct memory access attacks, since unprotected data remains in RAM. Therefore, for improved security, it's recommended to disable sleep mode. Startup authentication can be configured by using a [policy setting](configure.md). 
           
       - question: |
           What are the advantages of a TPM?

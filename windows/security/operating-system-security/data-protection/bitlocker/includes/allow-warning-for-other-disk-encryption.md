@@ -12,7 +12,7 @@ With this policy you can disable all notification for encryption, warning prompt
 > [!IMPORTANT]
 > This policy applies to Microsoft Entra joined devices only.
 
-This policy takes effect only if [Require device encryption](../policy-settings.md?tabs=os#require-device-encryption) policy is enabled.
+This policy takes effect only if [Require device encryption](../configure.md?tabs=os#require-device-encryption) policy is enabled.
 
 > [!WARNING]
 > When you enable BitLocker on a device with third party encryption, it may render the device unusable and will require reinstallation of Windows.

@@ -16,7 +16,7 @@ To configure BitLocker, you can use one of the following options:
 > [!NOTE]
 > Windows Server doesn't support the configuration of BitLocker using CSP or Microsoft Configuration Manager. Use GPO instead.
 
-While many of the BitLocker policy settings can be configured using both CSP and GPO, there are some settings that are only available using one of the options. To learn about the policy settings available for both CSP and GPO, review the reference article [BitLocker policy settings](policy-settings.md).
+While many of the BitLocker policy settings can be configured using both CSP and GPO, there are some settings that are only available using one of the options. To learn about the policy settings available for both CSP and GPO, review the reference article [BitLocker policy settings](configure.md).
 
 [!INCLUDE [bitlocker](../../../../../includes/licensing/bitlocker-management.md)]
 
@@ -41,7 +41,7 @@ To learn more about the Intune options to configure and monitor BitLocker, check
 To learn more about options to configure BitLocker via Microsoft Configuration Manager, see [Deploy BitLocker management](/mem/configmgr/protect/deploy-use/bitlocker/deploy-management-agent).
 
 > [!TIP]
-> Organizations that image their device using Configuration Manager can use an existing task sequence to [pre-provision BitLocker](/configmgr/osd/understand/task-sequence-steps#BKMK_PreProvisionBitLocker) encryption while in Windows Preinstallation Environment (WinPE), and can then [enable protection](/configmgr/osd/understand/task-sequence-steps#BKMK_EnableBitLocker). These steps during an operating system deployment can help ensure that computers are encrypted from the start, even before users receive them. As part of the imaging process, an organization could also decide to use Configuration Manager to pre-set any desired [BitLocker policy settings](policy-settings.md).
+> Organizations that image their device using Configuration Manager can use an existing task sequence to [pre-provision BitLocker](/configmgr/osd/understand/task-sequence-steps#BKMK_PreProvisionBitLocker) encryption while in Windows Preinstallation Environment (WinPE), and can then [enable protection](/configmgr/osd/understand/task-sequence-steps#BKMK_EnableBitLocker). These steps during an operating system deployment can help ensure that computers are encrypted from the start, even before users receive them. As part of the imaging process, an organization could also decide to use Configuration Manager to pre-set any desired [BitLocker policy settings](configure.md).
 
 ## BitLocker policy settings
 

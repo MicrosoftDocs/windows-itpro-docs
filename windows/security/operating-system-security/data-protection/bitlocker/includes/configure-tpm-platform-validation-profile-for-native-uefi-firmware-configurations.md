@@ -13,7 +13,7 @@ This policy setting determines what values the TPM measures when it validates ea
 - If you disable or do not configure this policy setting, BitLocker uses the default platform validation profile for the available hardware, or the platform validation profile specified by the setup script
 
 > [!IMPORTANT]
-> This policy setting only applies to devices with a native UEFI firmware configuration. Computers with BIOS or UEFI firmware with a Compatibility Support Module (CSM) enabled store different values in the Platform Configuration Registers (PCRs). Use the **[Configure TPM platform validation profile for BIOS-based firmware configurations](../policy-settings.md?tabs=os#configure-tpm-platform-validation-profile-for-bios-based-firmware-configurations)** policy setting to configure the TPM PCR profile for devices with BIOS configurations, or for devices with UEFI firmware with a CSM enabled.
+> This policy setting only applies to devices with a native UEFI firmware configuration. Computers with BIOS or UEFI firmware with a Compatibility Support Module (CSM) enabled store different values in the Platform Configuration Registers (PCRs). Use the **[Configure TPM platform validation profile for BIOS-based firmware configurations](../configure.md?tabs=os#configure-tpm-platform-validation-profile-for-bios-based-firmware-configurations)** policy setting to configure the TPM PCR profile for devices with BIOS configurations, or for devices with UEFI firmware with a CSM enabled.
 
 A platform validation profile consists of a set of PCR indices ranging from 0 to 23. The default platform validation profile secures the encryption key against changes to the following PCRs:
 
@@ -51,7 +51,7 @@ The following list identifies all of the available PCRs:
 > [!WARNING]
 > Changing from the default platform validation profile affects the security and manageability of a device. BitLocker's sensitivity to platform modifications (malicious or authorized) is increased or decreased depending on inclusion or exclusion (respectively) of the PCRs.
 >
-> Setting this policy with PCR 7 omitted, overrides the *[Allow Secure Boot for integrity validation](../policy-settings.md?tabs=os#allow-secure-boot-for-integrity-validation)* policy, preventing BitLocker from using Secure Boot for platform or Boot Configuration Data (BCD) integrity validation.
+> Setting this policy with PCR 7 omitted, overrides the *[Allow Secure Boot for integrity validation](../configure.md?tabs=os#allow-secure-boot-for-integrity-validation)* policy, preventing BitLocker from using Secure Boot for platform or Boot Configuration Data (BCD) integrity validation.
 >
 > Setting this policy may result in BitLocker recovery when firmware is updated. If you set this policy to include PCR 0, suspend BitLocker prior to applying firmware updates. It is recommended to not configure this policy, to allow Windows to select the PCR profile for the best combination of security and usability based on the available hardware on each device.
 

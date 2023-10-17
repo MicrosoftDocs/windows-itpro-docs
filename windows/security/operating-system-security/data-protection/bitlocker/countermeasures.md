@@ -46,11 +46,11 @@ On the other hand, Preboot authentication-prompts can be inconvenient to users. 
 
 To address these issues, [BitLocker Network Unlock](network-unlock.md) can be deployed. Network Unlock allows systems that meet the hardware requirements and have BitLocker enabled with TPM+PIN to boot into Windows without user intervention. It requires direct ethernet connectivity to a Windows Deployment Services (WDS) server.
 
-To learn more, see the policy setting [Require additional authentication at startup](policy-settings.md?tabs=os#require-additional-authentication-at-startup).
+To learn more, see the policy setting [Require additional authentication at startup](configure.md?tabs=os#require-additional-authentication-at-startup).
 
 ### Protect DMA ports
 
-It's important to protect DMA ports, as external peripherals may gain unauthorized access to memory. Depending on the device capabilities, there are different options to protect DMA ports. To learn more, see the policy setting [Disable new DMA devices when this computer is locked](policy-settings.md?tabs=common#disable-new-dma-devices-when-this-computer-is-locked).
+It's important to protect DMA ports, as external peripherals may gain unauthorized access to memory. Depending on the device capabilities, there are different options to protect DMA ports. To learn more, see the policy setting [Disable new DMA devices when this computer is locked](configure.md?tabs=common#disable-new-dma-devices-when-this-computer-is-locked).
 
 ## Attack countermeasures
 
@@ -130,7 +130,7 @@ Mitigation:
 > [!IMPORTANT]
 > These settings are **not configured** by default.
 
-For some systems, bypassing TPM-only may require opening the case, and may require soldering, but could possibly be done for a reasonable cost. Bypassing a TPM with a PIN protector would cost more, and require brute forcing the PIN. With a sophisticated enhanced PIN, it could be nearly impossible. To learn more about the policy setting, see [Allow enhanced PINs for startup](policy-settings.md?tabs=os#allow-enhanced-pins-for-startup).
+For some systems, bypassing TPM-only may require opening the case, and may require soldering, but could possibly be done for a reasonable cost. Bypassing a TPM with a PIN protector would cost more, and require brute forcing the PIN. With a sophisticated enhanced PIN, it could be nearly impossible. To learn more about the policy setting, see [Allow enhanced PINs for startup](configure.md?tabs=os#allow-enhanced-pins-for-startup).
 
 For secure administrative workstations, it's recommended to:
 

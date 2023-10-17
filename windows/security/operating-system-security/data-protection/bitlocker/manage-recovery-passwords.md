@@ -76,7 +76,7 @@ Copy the ID of the recovery password from the output.
 #### Backup the new recovery password to AD DS
 
 > [!NOTE]
->This step is not required if the policy setting [Choose how BitLocker-protected operating system drives can be recovered](policy-settings.md?tabs=os#choose-how-bitlocker-protected-operating-system-drives-can-be-recovered) is configured to **Require BitLocker backup to AD DS**.
+>This step is not required if the policy setting [Choose how BitLocker-protected operating system drives can be recovered](configure.md?tabs=os#choose-how-bitlocker-protected-operating-system-drives-can-be-recovered) is configured to **Require BitLocker backup to AD DS**.
 
 Using the ID from the previous step, replace the `{ID}` in the following command:
 
