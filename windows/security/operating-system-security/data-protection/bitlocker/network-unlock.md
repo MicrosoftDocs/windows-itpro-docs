@@ -2,22 +2,19 @@
 title: Network Unlock 
 description: Learn how BitLocker Network Unlock works and how to configure it.
 ms.topic: how-to
-ms.date: 11/08/2022
+ms.date: 10/17/2023
 ---
 
 # Network Unlock
 
-This article describes how BitLocker Network Unlock works and how to configure it.
+Network Unlock is a BitLocker *key protector* for operating system volumes. Network Unlock enables easier management for BitLocker-enabled desktops and servers in a domain environment by providing automatic unlock of operating system volumes at system reboot when connected to a wired corporate network. Network Unlock requires the client hardware to have a DHCP driver implemented in its UEFI firmware. Without Network Unlock, operating system volumes protected by `TPM+PIN` protectors require a PIN to be entered when a device reboots or resumes from hibernation (for example, by Wake on LAN). Requiring a PIN after a reboot can make it difficult to enterprises to roll out software patches to unattended desktops and remotely administered servers.
 
-Network Unlock is a BitLocker protector option for operating system volumes. Network Unlock enables easier management for BitLocker-enabled desktops and servers in a domain environment by providing automatic unlock of operating system volumes at system reboot when connected to a wired corporate network. This feature requires the client hardware to have a DHCP driver implemented in its UEFI firmware. Without Network Unlock, operating system volumes protected by TPM+PIN protectors require a PIN to be entered when a computer reboots or resumes from hibernation (for example, by Wake on LAN). Requiring a PIN after a reboot can make it difficult to enterprises to roll out software patches to unattended desktops and remotely administered servers.
+Network Unlock allows BitLocker-enabled systems that have a `TPM+PIN` and that meet the hardware requirements to boot into Windows without user intervention. Network Unlock works in a similar fashion to the `TPM+StartupKey` at boot. Rather than needing to read the StartupKey from USB media, however, the Network Unlock feature needs the key to be composed from a key stored in the TPM and an encrypted network key that is sent to the server, decrypted and returned to the client in a secure session.
 
-Network Unlock allows BitLocker-enabled systems that have a TPM+PIN and that meet the hardware requirements to boot into Windows without user intervention. Network Unlock works in a similar fashion to the TPM+StartupKey at boot. Rather than needing to read the StartupKey from USB media, however, the Network Unlock feature needs the key to be composed from a key stored in the TPM and an encrypted network key that is sent to the server, decrypted and returned to the client in a secure session.
-
-## Network Unlock core requirements
+## System requirements
 
 Network Unlock must meet mandatory hardware and software requirements before the feature can automatically unlock domain-joined systems. These requirements include:
 
-- Currently supported Windows operating system
 - Any supported operating system with UEFI DHCP drivers that can serve as Network Unlock clients
 - Network Unlock clients with a TPM chip and at least one TPM protector
 - A server running the Windows Deployment Services (WDS) role on any supported server operating system
@@ -27,12 +24,12 @@ Network Unlock must meet mandatory hardware and software requirements before the
 - Network Unlock group policy settings configured
 - Network stack enabled in the UEFI firmware of client devices
 
-> [!NOTE]
-> To properly support DHCP within UEFI, the UEFI-based system should be in native mode and shouldn't have a compatibility support module (CSM) enabled.
+> [!IMPORTANT]
+> To support DHCP within UEFI, the UEFI-based system should be in native mode and shouldn't have a compatibility support module (CSM) enabled.
 
-For Network Unlock to work reliably on computers, the first network adapter on the computer, usually the onboard adapter, must be configured to support DHCP. This first network adapter must be used for Network Unlock. This configuration is especially worth noting when the device has multiple adapters, and some adapters are configured without DHCP, such as for use with a lights-out management protocol. This configuration is necessary because Network Unlock stops enumerating adapters when it reaches one with a DHCP port failure for any reason. Thus, if the first enumerated adapter doesn't support DHCP, isn't plugged into the network, or fails to report availability of the DHCP port for any reason, then Network Unlock fails.
+For Network Unlock to work reliably, the first network adapter on the device, usually the onboard adapter, must be configured to support DHCP. This first network adapter must be used for Network Unlock. This configuration is especially worth noting when the device has multiple adapters, and some adapters are configured without DHCP, such as for use with a lights-out management protocol. This configuration is necessary because Network Unlock stops enumerating adapters when it reaches one with a DHCP port failure for any reason. Thus, if the first enumerated adapter doesn't support DHCP, isn't plugged into the network, or fails to report availability of the DHCP port for any reason, then Network Unlock fails.
 
-The Network Unlock server component is installed on supported versions of Windows Server 2012 and later as a Windows feature that uses Server Manager or Windows PowerShell cmdlets. The feature name is BitLocker Network Unlock in Server Manager and BitLocker-NetworkUnlock in Windows PowerShell. This feature is a core requirement.
+The Network Unlock server component is installed on supported versions of Windows Server as a Windows feature that uses Server Manager or Windows PowerShell cmdlets. The feature name is `BitLocker Network Unlock` in Server Manager and `BitLocker-NetworkUnlock` in PowerShell.
 
 Network Unlock requires Windows Deployment Services (WDS) in the environment where the feature will be utilized. Configuration of the WDS installation isn't required. However, the WDS service must be running on the server.
 
@@ -40,39 +37,31 @@ The network key is stored on the system drive along with an AES 256 session key 
 
 ## Network Unlock sequence
 
-The unlock sequence starts on the client side when the Windows boot manager detects the existence of Network Unlock protector. It uses the DHCP driver in UEFI to obtain an IP address for IPv4 and then broadcasts a vendor-specific DHCP request that contains the network key and a session key for the reply, all encrypted by the server's Network Unlock certificate, as described above. The Network Unlock provider on the supported WDS server recognizes the vendor-specific request, decrypts it with the RSA private key, and returns the network key encrypted with the session key via its own vendor-specific DHCP reply.
+The unlock sequence starts on the client side when the Windows boot manager detects the existence of Network Unlock protector. It uses the DHCP driver in UEFI to obtain an IP address for IPv4 and then broadcasts a vendor-specific DHCP request that contains the network key and a session key for the reply, all encrypted by the server's Network Unlock certificate. The Network Unlock provider on the supported WDS server recognizes the vendor-specific request, decrypts it with the RSA private key, and returns the network key encrypted with the session key via its own vendor-specific DHCP reply.
 
-On the server side, the WDS server role has an optional plugin component, like a PXE provider, which is what handles the incoming Network Unlock requests. The provider can also be configured with subnet restrictions, which would require that the IP address provided by the client in the Network Unlock request belong to a permitted subnet to release the network key to the client. In instances where the Network Unlock provider is unavailable, BitLocker fails over to the next available protector to unlock the drive. In a typical configuration, the standard TPM+PIN unlock screen is presented to unlock the drive.
+On the server side, the WDS server role has an optional plugin component, like a PXE provider, which is what handles the incoming Network Unlock requests. The provider can also be configured with subnet restrictions, which would require that the IP address provided by the client in the Network Unlock request belong to a permitted subnet to release the network key to the client. In instances where the Network Unlock provider is unavailable, BitLocker fails over to the next available protector to unlock the drive. In a typical configuration, the standard `TPM+PIN` unlock screen is presented to unlock the drive.
 
-The server side configuration to enable Network Unlock also requires provisioning a 2048-bit RSA public/private key pair in the form of an X.509 certificate, and distributing the public key certificate to the clients. This certificate must be managed and deployed through the Group Policy editor directly on a domain controller with at least a Domain Functional Level of Windows Server 2012. This certificate is the public key that encrypts the intermediate network key (which is one of the two secrets required to unlock the drive; the other secret is stored in the TPM).
-
-Manage and deploy this certificate through the Group Policy editor directly on a domain controller that has a domain functional level of at least Windows Server 2012. This certificate is the public key that encrypts the intermediate network key. The intermediate network key is one of the two secrets that are required to unlock the drive; the other secret is stored in the TPM.
-
-![Diagram showing the BitLocker Network Unlock sequence.](images/bitlockernetworkunlocksequence.png)
+The server side configuration to enable Network Unlock also requires provisioning a 2048-bit RSA public/private key pair in the form of an X.509 certificate, and distributing the public key certificate to the clients. This certificate is the *public key* that encrypts the intermediate network key (which is one of the two secrets required to unlock the drive; the other secret is stored in the TPM), and it must be managed and deployed via Group Policy.
 
 The Network Unlock process follows these phases:
 
-1. The Windows boot manager detects a Network Unlock protector in the BitLocker configuration.
-
-2. The client computer uses its DHCP driver in the UEFI to get a valid IPv4 IP address.
-
-3. The client computer broadcasts a vendor-specific DHCP request that contains:
-
-    1. A network key (a 256-bit intermediate key) that is encrypted by using the 2048-bit RSA Public Key of the Network Unlock certificate from the WDS server.
-
-    2. An AES-256 session key for the reply.
-
-4. The Network Unlock provider on the WDS server recognizes the vendor-specific request.
-
-5. The provider decrypts the request by using the WDS server's BitLocker Network Unlock certificate RSA private key.
-
-6. The WDS provider returns the network key encrypted with the session key by using its own vendor-specific DHCP reply to the client computer. This key is an intermediate key.
-
-7. The returned intermediate key is combined with another local 256-bit intermediate key. This key can be decrypted only by the TPM.
-
-8. This combined key is used to create an AES-256 key that unlocks the volume.
-
-9. Windows continues the boot sequence.
+:::row:::
+  :::column span="2":::
+1. The Windows boot manager detects a Network Unlock protector in the BitLocker configuration
+1. The client computer uses its DHCP driver in the UEFI to get a valid IPv4 IP address
+1. The client computer broadcasts a vendor-specific DHCP request that contains:
+    1. A network key (a 256-bit intermediate key) that is encrypted by using the 2048-bit RSA Public Key of the Network Unlock certificate from the WDS server
+    1. An AES-256 session key for the reply
+1. The Network Unlock provider on the WDS server recognizes the vendor-specific request
+1. The provider decrypts the request by using the WDS server's BitLocker Network Unlock certificate RSA private key
+1. The WDS provider returns the network key encrypted with the session key by using its own vendor-specific DHCP reply to the client computer. This key is an intermediate key
+1. The returned intermediate key is combined with another local 256-bit intermediate key. This key can be decrypted only by the TPM
+1. This combined key is used to create an AES-256 key that unlocks the volume
+1. Windows continues the boot sequence
+  :::column-end:::
+  :::column span="2":::
+    :::image type="content" source="images/network-unlock-diagram.png" alt-text="Diagram of the Network Unlock sequence." lightbox="images/network-unlock-diagram.png" border="false":::
+  :::column-end:::
 
 ## Configure Network Unlock
 
