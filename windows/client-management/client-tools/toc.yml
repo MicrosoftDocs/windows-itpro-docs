@@ -3,7 +3,7 @@ items:
     href: administrative-tools-in-windows.md
   - name: Use Quick Assist to help users
     href: quick-assist.md
-  - name: Connect to remote Azure Active Directory-joined PC
+  - name: Connect to remote Microsoft Entra joined PC
     href: connect-to-remote-aadj-pc.md
   - name: Create mandatory user profiles
     href: mandatory-user-profile.md

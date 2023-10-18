@@ -11,17 +11,17 @@ ms.localizationpriority: medium
 <!--This file is shared by updates/wufb-reports-enable.md and the update/wufb-reports-admin-center.md articles. Headings may be driven by article context.  -->
 Accessing Windows Update for Business reports typcially requires permissions from multiple sources including:
 
-- [Azure Active Directory (Azure AD)](/azure/active-directory/roles/custom-overview) or [Intune](/mem/intune/fundamentals/role-based-access-control): Used for managing Windows Update for Business services through Microsoft Graph API, such as enrolling into reports
+- [Microsoft Entra ID](/azure/active-directory/roles/custom-overview) or [Intune](/mem/intune/fundamentals/role-based-access-control): Used for managing Windows Update for Business services through Microsoft Graph API, such as enrolling into reports
 - [Azure](/azure/role-based-access-control/overview): Used for controlling access to Azure resources through Azure Resource Management, such as access to the Log Analytics workspace
-- [Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles): Manages access to the Microsoft 365 admin center, which allows only users with certain Azure AD roles access to sign in
+- [Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles): Manages access to the Microsoft 365 admin center, which allows only users with certain Microsoft Entra roles access to sign in
 
 **Roles that can enroll into Windows Update for Business reports**
 
 To [enroll](../wufb-reports-enable.md#bkmk_enroll) into Windows Update for Business reports from the [Azure portal](https://portal.azure.com) or the [Microsoft 365 admin center](https://admin.microsoft.com) requires one of the following roles:
 
-- [Global Administrator](/azure/active-directory/roles/permissions-reference#global-administrator) Azure AD role
-- [Intune Administrator](/azure/active-directory/roles/permissions-reference#intune-administrator) Azure AD role
-- [Windows Update deployment administrator](/azure/active-directory/roles/permissions-reference#windows-update-deployment-administrator) Azure AD role
+- [Global Administrator](/azure/active-directory/roles/permissions-reference#global-administrator) Microsoft Entra role
+- [Intune Administrator](/azure/active-directory/roles/permissions-reference#intune-administrator) Microsoft Entra role
+- [Windows Update deployment administrator](/azure/active-directory/roles/permissions-reference#windows-update-deployment-administrator) Microsoft Entra role
 - [Policy and profile manager](/mem/intune/fundamentals/role-based-access-control#built-in-roles) Microsoft Intune role
   - Microsoft Intune RBAC roles don't allow access to the Microsoft 365 admin center
 
@@ -43,4 +43,4 @@ Examples of commonly assigned roles for Windows Update for Business reports user
 | [Global reader](/azure/active-directory/roles/permissions-reference#global-reader) + Log Analytics reader | No | No | Yes | Yes | No |  
 
 > [!NOTE]
-> The Azure AD roles discussed in this article for the Microsoft 365 admin center access apply specifically to the **Windows** tab of the **Software Updates** page. For more information about the **Microsoft 365 Apps** tab, see [Microsoft 365 Apps updates in the admin center](/DeployOffice/updates/software-update-status).
+> The Microsoft Entra roles discussed in this article for the Microsoft 365 admin center access apply specifically to the **Windows** tab of the **Software Updates** page. For more information about the **Microsoft 365 Apps** tab, see [Microsoft 365 Apps updates in the admin center](/DeployOffice/updates/software-update-status).

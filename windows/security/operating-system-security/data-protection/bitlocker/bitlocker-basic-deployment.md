@@ -59,7 +59,7 @@ For the operating system volume the **BitLocker Drive Encryption Wizard** presen
 
     The recovery key can be stored using the following methods:
 
-   - **Save to your Azure AD account** (if applicable)
+   - **Save to your Microsoft Entra account** (if applicable)
    - **Save to a USB flash drive**
    - **Save to a file** - the file needs to be saved to a location that isn't on the computer itself such as a network folder or OneDrive
    - **Print the recovery key**
@@ -126,7 +126,7 @@ Encrypting data volumes using the BitLocker control panel works in a similar fas
 
 3. The **BitLocker Drive Encryption Wizard** presents options for storage of the recovery key. These options are the same as for operating system volumes:
 
-   - **Save to your Azure AD account** (if applicable)
+   - **Save to your Microsoft Entra account** (if applicable)
    - **Save to a USB flash drive**
    - **Save to a file** - the file needs to be saved to a location that isn't on the computer itself such as a network folder or OneDrive
    - **Print the recovery key**
