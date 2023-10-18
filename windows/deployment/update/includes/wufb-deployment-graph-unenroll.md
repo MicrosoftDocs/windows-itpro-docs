@@ -17,7 +17,7 @@ When a device no longer needs to be managed by the deployment service, unenroll 
 - Drivers may start being installed from Windows Update depending on the device's configuration
 
 To unenroll a device, POST to [updatableAssets](/graph/api/resources/windowsupdates-updatableasset) using [unenrollAssets](/graph/api/windowsupdates-updatableasset-unenrollassets). In the request body, specify:
-- **Azure AD Device ID** as `id` for the device
+- **Microsoft Entra Device ID** as `id` for the device
 - Either `feature` or `driver` for the updateCategory
 
 The following example removes `driver` enrollment for two devices, `01234567-89ab-cdef-0123-456789abcdef` and `01234567-89ab-cdef-0123-456789abcde0`:
