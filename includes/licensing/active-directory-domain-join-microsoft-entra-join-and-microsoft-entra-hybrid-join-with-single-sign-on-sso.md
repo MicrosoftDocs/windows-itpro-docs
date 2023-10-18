@@ -7,13 +7,13 @@ ms.topic: include
 
 ## Windows edition and licensing requirements
 
-The following table lists the Windows editions that support Active Directory domain join, Microsoft Entra join, and Microsoft Entra Hybrid join with single sign-on (SSO):
+The following table lists the Windows editions that support Active Directory domain join, Microsoft Entra join, and Microsoft Entra hybrid join with single sign-on (SSO):
 
 |Windows Pro|Windows Enterprise|Windows Pro Education/SE|Windows Education|
 |:---:|:---:|:---:|:---:|
 |Yes|Yes|Yes|Yes|
 
-Active Directory domain join, Microsoft Entra join, and Microsoft Entra Hybrid join with single sign-on (SSO) license entitlements are granted by the following licenses:
+Active Directory domain join, Microsoft Entra join, and Microsoft Entra hybrid join with single sign-on (SSO) license entitlements are granted by the following licenses:
 
 |Windows Pro/Pro Education/SE|Windows Enterprise E3|Windows Enterprise E5|Windows Education A3|Windows Education A5|
 |:---:|:---:|:---:|:---:|:---:|

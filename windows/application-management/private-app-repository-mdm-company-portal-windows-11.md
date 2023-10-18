@@ -63,7 +63,7 @@ To install the Company Portal app, you have some options:
   - [What is co-management?](/mem/configmgr/comanage/overview)
   - [Use the Company Portal app on co-managed devices](/mem/configmgr/comanage/company-portal)
 
-- **Use Windows Autopilot**: Windows Autopilot automatically provisions devices, registers them in your Azure AD organization (tenant), and gets them ready for production. If you're purchasing new devices, then we recommend using Windows Autopilot to preconfigure the devices, and get them ready for use.
+- **Use Windows Autopilot**: Windows Autopilot automatically provisions devices, registers them in your Microsoft Entra organization (tenant), and gets them ready for production. If you're purchasing new devices, then we recommend using Windows Autopilot to preconfigure the devices, and get them ready for use.
 
   - In the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), you add the Company Portal app from the Microsoft Store. Once it's added, the app can be included in your Windows Autopilot deployment. When the device turns on and is getting ready, the Company Portal app is also installed, before users sign in.
 
