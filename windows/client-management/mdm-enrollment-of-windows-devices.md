@@ -78,7 +78,7 @@ To create a local account and connect the device:
 
 1. Type in your Microsoft Entra username. This username is the email address you use to log into Office 365 and similar services.
 
-    ![Microsoft Entra sign-in.](images/unifiedenrollment-rs1-19.png)
+    ![Microsoft Entra sign-in using Settings app.](images/unifiedenrollment-rs1-19.png)
 
     If the tenant is a cloud-only, password hash sync, or pass-through authentication tenant, this page changes to show the organization's custom branding, and you can enter your password directly on this page. If the tenant is part of a federated domain, you're redirected to the organization's on-premises federation server, such as AD FS, for authentication.
 
