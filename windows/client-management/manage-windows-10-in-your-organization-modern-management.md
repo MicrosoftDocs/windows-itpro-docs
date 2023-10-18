@@ -32,7 +32,7 @@ Windows offers a range of management options, as shown in the following diagram:
 
 :::image type="content" source="images/windows-10-management-range-of-options.png" alt-text="Diagram of the path to modern IT." lightbox="images/windows-10-management-range-of-options.png":::
 
-As indicated in the diagram, Microsoft continues to provide support for deep manageability and security through technologies like group Policy, Active Directory, and Configuration Manager. It also delivers a "mobile-first, cloud-first" approach of simplified, modern management using cloud-based device management solutions such as Microsoft Enterprise Mobility + Security (EMS). Future Windows innovations, delivered through Windows as a Service, are complemented by cloud services like Microsoft Intune, Azure Active Directory, Azure Information Protection, and Microsoft 365.
+As indicated in the diagram, Microsoft continues to provide support for deep manageability and security through technologies like group Policy, Active Directory, and Configuration Manager. It also delivers a "mobile-first, cloud-first" approach of simplified, modern management using cloud-based device management solutions such as Microsoft Enterprise Mobility + Security (EMS). Future Windows innovations, delivered through Windows as a Service, are complemented by cloud services like Microsoft Intune, Microsoft Entra ID, Azure Information Protection, and Microsoft 365.
 
 ## Deployment and provisioning
 
@@ -48,21 +48,21 @@ You have multiple options for [upgrading to Windows 10 and Windows 11](/windows/
 
 ## Identity and authentication
 
-You can use Windows and services like [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis) in new ways for cloud-based identity, authentication, and management. You can offer your users the ability to **"bring your own device" (BYOD)** or to **"choose your own device" (CYOD)** from a selection you make available. At the same time, you might be managing PCs and tablets that must be domain-joined because of specific applications or resources that are used on them.
+You can use Windows and services like [Microsoft Entra ID](/azure/active-directory/fundamentals/active-directory-whatis) in new ways for cloud-based identity, authentication, and management. You can offer your users the ability to **"bring your own device" (BYOD)** or to **"choose your own device" (CYOD)** from a selection you make available. At the same time, you might be managing PCs and tablets that must be domain-joined because of specific applications or resources that are used on them.
 
 You can envision user and device management as falling into these two categories:
 
 - **Corporate (CYOD) or personal (BYOD) devices used by mobile users for SaaS apps such as Office 365.** With Windows, your employees can self-provision their devices:
 
-  - For corporate devices, they can set up corporate access with [Azure AD join](/azure/active-directory/devices/overview). When you offer them Azure AD Join with automatic Intune MDM enrollment, they can bring devices into a corporate-managed state in [*one step*](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/windows-10-azure-ad-and-microsoft-intune-automatic-mdm/ba-p/244067), all from the cloud.
+  - For corporate devices, they can set up corporate access with [Microsoft Entra join](/azure/active-directory/devices/overview). When you offer them Microsoft Entra join with automatic Intune MDM enrollment, they can bring devices into a corporate-managed state in [*one step*](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/windows-10-azure-ad-and-microsoft-intune-automatic-mdm/ba-p/244067), all from the cloud.
 
-    Azure AD join is also a great solution for temporary staff, partners, or other part-time employees. These accounts can be kept separate from the on-premises AD domain but still access needed corporate resources.
+    Microsoft Entra join is also a great solution for temporary staff, partners, or other part-time employees. These accounts can be kept separate from the on-premises AD domain but still access needed corporate resources.
 
   - Likewise, for personal devices, employees can use a new, simplified [BYOD experience](/azure/active-directory/devices/overview) to add their work account to Windows, then access work resources on the device.
 
 - **Domain joined PCs and tablets used for traditional applications and access to important resources.** These applications and resources may be traditional ones that require authentication or accessing highly sensitive or classified resources on-premises.
 
-  With Windows, if you have an on-premises [Active Directory](/windows-server/identity/whats-new-active-directory-domain-services) domain that's [integrated with Azure AD](/azure/active-directory/devices/hybrid-azuread-join-plan), when employee devices are joined, they automatically register with Azure AD. This registration provides:
+  With Windows, if you have an on-premises [Active Directory](/windows-server/identity/whats-new-active-directory-domain-services) domain that's [integrated with Microsoft Entra ID](/azure/active-directory/devices/hybrid-azuread-join-plan), when employee devices are joined, they automatically register with Microsoft Entra ID. This registration provides:
 
   - Single sign-on to cloud and on-premises resources from everywhere
   - [Enterprise roaming of settings](/azure/active-directory/devices/enterprise-state-roaming-enable)
@@ -72,7 +72,7 @@ You can envision user and device management as falling into these two categories
 
   Domain joined PCs and tablets can continue to be managed with [Configuration Manager](/mem/configmgr/core/understand/introduction) client or group policy.
 
-As you review the roles in your organization, you can use the following generalized decision tree to begin to identify users or devices that require domain join. Consider switching the remaining users to Azure AD.
+As you review the roles in your organization, you can use the following generalized decision tree to begin to identify users or devices that require domain join. Consider switching the remaining users to Microsoft Entra ID.
 
 :::image type="content" source="images/windows-10-management-cyod-byod-flow.png" alt-text="Diagram of decision tree for device authentication options." lightbox="images/windows-10-management-cyod-byod-flow.png":::
 

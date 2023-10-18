@@ -56,10 +56,12 @@ For information about the MDM policies defined in the Intune security baseline, 
 
 No. Only one MDM is allowed.
 
-### How do I set the maximum number of Azure Active Directory-joined devices per user?
+<a name='how-do-i-set-the-maximum-number-of-azure-active-directory-joined-devices-per-user'></a>
+
+### How do I set the maximum number of Microsoft Entra joined devices per user?
 
 1. Sign in to the portal as tenant admin: <https://portal.azure.com>.
-1. Navigate to **Azure AD**, then **Devices**, and then select **Device Settings**.
+1. Navigate to **Microsoft Entra ID**, then **Devices**, and then select **Device Settings**.
 1. Change the number under **Maximum number of devices per user**.
 
 ### What is dmwappushsvc?

@@ -17,16 +17,18 @@ In today's cloud-first world, enterprise IT departments increasingly want to let
 
 ## Connect corporate-owned Windows devices
 
-You can connect corporate-owned devices to work by either joining the device to an Active Directory domain, or to an Azure Active Directory (Azure AD) domain. Windows doesn't require a personal Microsoft account on devices joined to Azure AD or an on-premises Active Directory domain.
+You can connect corporate-owned devices to work by either joining the device to an Active Directory domain, or to a Microsoft Entra domain. Windows doesn't require a personal Microsoft account on devices joined to Microsoft Entra ID or an on-premises Active Directory domain.
 
-![active directory azure ad signin.](images/unifiedenrollment-rs1-1.png)
+![active directory Microsoft Entra sign-in.](images/unifiedenrollment-rs1-1.png)
 
 > [!NOTE]
 > For devices joined to on-premises Active Directory, see [Group policy enrollment](enroll-a-windows-10-device-automatically-using-group-policy.md).
 
-### Connect your device to an Azure AD domain (join Azure AD)
+<a name='connect-your-device-to-an-azure-ad-domain-join-azure-ad'></a>
 
-All Windows devices can be connected to an Azure AD domain. These devices can be connected during OOBE. Additionally, desktop devices can be connected to an Azure AD domain using the Settings app.
+### Connect your device to a Microsoft Entra domain (join Microsoft Entra ID)
+
+All Windows devices can be connected to a Microsoft Entra domain. These devices can be connected during OOBE. Additionally, desktop devices can be connected to a Microsoft Entra domain using the Settings app.
 
 #### Out-of-box-experience
 
@@ -36,19 +38,19 @@ To join a domain:
 
     ![oobe - local account creation](images/unifiedenrollment-rs1-11.png)
 
-1. Select **Join Azure AD**, and then select **Next.**
+1. Select **Join Microsoft Entra ID**, and then select **Next.**
 
-    ![choose the domain or azure ad](images/unifiedenrollment-rs1-12.png)
+    ![choose the domain or Microsoft Entra ID](images/unifiedenrollment-rs1-12.png)
 
-1. Type in your Azure AD username. This username is the email address you use to log into Microsoft Office 365 and similar services.
+1. Type in your Microsoft Entra username. This username is the email address you use to log into Microsoft Office 365 and similar services.
 
     If the tenant is a cloud-only, password hash sync, or pass-through authentication tenant, this page changes to show the organization's custom branding, and you're able to enter your password directly on this page. If the tenant is part of a federated domain, you're redirected to the organization's on-premises federation server, such as Active Directory Federation Services (AD FS) for authentication.
 
     Based on IT policy, you may also be prompted to provide a second factor of authentication at this point.
 
-    If your Azure AD tenant has autoenrollment configured, your device also gets enrolled into MDM during this flow. For more information, see [these steps](azure-ad-and-microsoft-intune-automatic-mdm-enrollment-in-the-new-portal.md). If your tenant isn't configured for autoenrollment, you must go through the enrollment flow a second time to [connect your device to MDM](#enroll-in-device-management-only). After you complete the flow, your device will be connected to your organization's Azure AD domain.
+    If your Microsoft Entra tenant has autoenrollment configured, your device also gets enrolled into MDM during this flow. For more information, see [these steps](azure-ad-and-microsoft-intune-automatic-mdm-enrollment-in-the-new-portal.md). If your tenant isn't configured for autoenrollment, you must go through the enrollment flow a second time to [connect your device to MDM](#enroll-in-device-management-only). After you complete the flow, your device will be connected to your organization's Microsoft Entra domain.
 
-    ![azure ad signin.](images/unifiedenrollment-rs1-13.png)
+    ![Microsoft Entra sign-in.](images/unifiedenrollment-rs1-13.png)
 
 #### Use the Settings app
 
@@ -70,36 +72,38 @@ To create a local account and connect the device:
 
     ![Option of connect to work or school](images/unifiedenrollment-rs1-17.png)
 
-1. Under **Alternate Actions**, select **Join this device to Azure Active Directory**.
+1. Under **Alternate Actions**, select **Join this device to Microsoft Entra ID**.
 
-    ![option to join work or school account to azure ad](images/unifiedenrollment-rs1-18.png)
+    ![option to join work or school account to Microsoft Entra ID](images/unifiedenrollment-rs1-18.png)
 
-1. Type in your Azure AD username. This username is the email address you use to log into Office 365 and similar services.
+1. Type in your Microsoft Entra username. This username is the email address you use to log into Office 365 and similar services.
 
-    ![azure ad sign in.](images/unifiedenrollment-rs1-19.png)
+    ![Microsoft Entra sign-in.](images/unifiedenrollment-rs1-19.png)
 
     If the tenant is a cloud-only, password hash sync, or pass-through authentication tenant, this page changes to show the organization's custom branding, and you can enter your password directly on this page. If the tenant is part of a federated domain, you're redirected to the organization's on-premises federation server, such as AD FS, for authentication.
 
     Based on IT policy, you may also be prompted to provide a second factor of authentication at this point.
 
-    If your Azure AD tenant has autoenrollment configured, your device also gets enrolled into MDM during this flow. For more information, see [this blog post](https://blogs.technet.microsoft.com/enterprisemobility/2015/08/14/windows-10-azure-ad-and-microsoft-intune-automatic-mdm-enrollment-powered-by-the-cloud/). If your tenant isn't configured for autoenrollment, you must go through the enrollment flow a second time to connect your device to MDM.
+    If your Microsoft Entra tenant has autoenrollment configured, your device also gets enrolled into MDM during this flow. For more information, see [this blog post](https://blogs.technet.microsoft.com/enterprisemobility/2015/08/14/windows-10-azure-ad-and-microsoft-intune-automatic-mdm-enrollment-powered-by-the-cloud/). If your tenant isn't configured for autoenrollment, you must go through the enrollment flow a second time to connect your device to MDM.
 
-    After you reach the end of the flow, your device should be connected to your organization's Azure AD domain. You may now sign out of your current account and sign in using your Azure AD username.
+    After you reach the end of the flow, your device should be connected to your organization's Microsoft Entra domain. You may now sign out of your current account and sign in using your Microsoft Entra username.
 
     ![corporate sign in screen](images/unifiedenrollment-rs1-20.png)
 
-#### Help with connecting to an Azure AD domain
+<a name='help-with-connecting-to-an-azure-ad-domain'></a>
 
-There are a few instances where your device can't be connected to an Azure AD domain.
+#### Help with connecting to a Microsoft Entra domain
+
+There are a few instances where your device can't be connected to a Microsoft Entra domain.
 
 | Connection issue | Description |
 |--|--|
-| Your device is connected to an Azure AD domain. | Your device can only be connected to a single Azure AD domain at a time. |
-| Your device is already connected to an Active Directory domain. | Your device can either be connected to an Azure AD domain or an Active Directory domain. You can't connect to both simultaneously. |
-| Your device already has a user connected to a work account. | You can either connect to an Azure AD domain or connect to a work or school account. You can't connect to both simultaneously. |
-| You're logged in as a standard user. | Your device can only be connected to an Azure AD domain if you're logged in as an administrative user. You must switch to an administrator account to continue. |
-| Your device is already managed by MDM. | The connect to Azure AD flow attempts to enroll your device into MDM if your Azure AD tenant has a preconfigured MDM endpoint. Your device must be unenrolled from MDM to be able to connect to Azure AD in this case. |
-| Your device is running Home edition. | This feature isn't available on Windows Home edition, so you can't connect to an Azure AD domain. You must upgrade to Pro, Enterprise, or Education edition to continue. |
+| Your device is connected to a Microsoft Entra domain. | Your device can only be connected to a single Microsoft Entra domain at a time. |
+| Your device is already connected to an Active Directory domain. | Your device can either be connected to a Microsoft Entra domain or an Active Directory domain. You can't connect to both simultaneously. |
+| Your device already has a user connected to a work account. | You can either connect to a Microsoft Entra domain or connect to a work or school account. You can't connect to both simultaneously. |
+| You're logged in as a standard user. | Your device can only be connected to a Microsoft Entra domain if you're logged in as an administrative user. You must switch to an administrator account to continue. |
+| Your device is already managed by MDM. | The connect to Microsoft Entra ID flow attempts to enroll your device into MDM if your Microsoft Entra tenant has a preconfigured MDM endpoint. Your device must be unenrolled from MDM to be able to connect to Microsoft Entra ID in this case. |
+| Your device is running Home edition. | This feature isn't available on Windows Home edition, so you can't connect to a Microsoft Entra domain. You must upgrade to Pro, Enterprise, or Education edition to continue. |
 
 ## Connect personally owned devices
 
@@ -107,7 +111,9 @@ Personally owned devices, also known as bring your own device (BYOD), can be con
 
 All Windows devices can be connected to a work or school account. You can connect to a work or school account either through the Settings app or through any of the numerous Universal Windows Platform (UWP) apps, such as the universal Office apps.
 
-### Register device in Azure AD and enroll in MDM
+<a name='register-device-in-azure-ad-and-enroll-in-mdm'></a>
+
+### Register device in Microsoft Entra ID and enroll in MDM
 
 To create a local account and connect the device:
 
@@ -123,15 +129,15 @@ To create a local account and connect the device:
 
     ![connect button to access the option of work or school.](images/unifiedenrollment-rs1-24-b.png)
 
-1. Type in your Azure AD username. This username is the email address you use to log into Office 365 and similar services.
+1. Type in your Microsoft Entra username. This username is the email address you use to log into Office 365 and similar services.
 
-    ![sync work or school account to azure ad.](images/unifiedenrollment-rs1-25-b.png)
+    ![sync work or school account to Azure AD.](images/unifiedenrollment-rs1-25-b.png)
 
 1. If the tenant is a cloud-only, password hash sync, or pass-through authentication tenant, this page changes to show the organization's custom branding, and can enter your password directly into the page. If the tenant is part of a federated domain, you're redirected to the organization's on-premises federation server, such as AD FS, for authentication.
 
     Based on IT policy, you may also be prompted to provide a second factor of authentication at this point.
 
-    If your Azure AD tenant has autoenrollment configured, your device also gets enrolled into MDM during this flow. For more information, see [this blog post](https://blogs.technet.microsoft.com/enterprisemobility/2015/08/14/windows-10-azure-ad-and-microsoft-intune-automatic-mdm-enrollment-powered-by-the-cloud/). If your tenant isn't configured for autoenrollment, you must go through the enrollment flow a second time to [connect your device to MDM](#enroll-in-device-management-only).
+    If your Microsoft Entra tenant has autoenrollment configured, your device also gets enrolled into MDM during this flow. For more information, see [this blog post](https://blogs.technet.microsoft.com/enterprisemobility/2015/08/14/windows-10-azure-ad-and-microsoft-intune-automatic-mdm-enrollment-powered-by-the-cloud/). If your tenant isn't configured for autoenrollment, you must go through the enrollment flow a second time to [connect your device to MDM](#enroll-in-device-management-only).
 
     You can see the status page that shows the progress of your device being set up.
 
@@ -147,8 +153,8 @@ There are a few instances where your device may not be able to connect to work.
 
 | Error Message | Description |
 |--|--|
-| Your device is already connected to your organization's cloud. | Your device is already connected to either Azure AD, a work or school account, or an AD domain. |
-| We couldn't find your identity in your organization's cloud. | The username you entered wasn't found on your Azure AD tenant. |
+| Your device is already connected to your organization's cloud. | Your device is already connected to either Microsoft Entra ID, a work or school account, or an AD domain. |
+| We couldn't find your identity in your organization's cloud. | The username you entered wasn't found on your Microsoft Entra tenant. |
 | Your device is already being managed by an organization. | Your device is either already managed by MDM or Microsoft Configuration Manager. |
 | You don't have the right privileges to perform this operation. Talk to your admin. | You can't enroll your device into MDM as a standard user. You must be on an administrator account. |
 | We couldn't autodiscover a management endpoint matching the username entered. Check your username and try again. If you know the URL to your management endpoint, enter it. | You need to provide the server URL for your MDM or check the spelling of the username you entered. |
@@ -195,7 +201,7 @@ The deep link used for connecting your device to work uses the following format.
 
 | Parameter | Description | Supported Value for Windows |
 |--|--|--|
-| mode | Describes which mode is executed in the enrollment app. | Mobile Device Management (MDM), Adding Work Account (AWA), and Azure Active Directory-joined. |
+| mode | Describes which mode is executed in the enrollment app. | Mobile Device Management (MDM), Adding Work Account (AWA), and Microsoft Entra joined. |
 | username | Specifies the email address or UPN of the user who should be enrolled into MDM. | string |
 | servername | Specifies the MDM server URL that is used to enroll the device. | string |
 | accesstoken | Custom parameter for MDM servers to use as they see fit. Typically, this parameter's value can be used as a token to validate the enrollment request. | string |
@@ -248,7 +254,7 @@ To manage your work or school connections, select **Settings** > **Accounts** > 
 
 The **Info** button can be found on work or school connections involving MDM. This button is included in the following scenarios:
 
-- Connecting your device to an Azure AD domain that has autoenroll into MDM configured.
+- Connecting your device to a Microsoft Entra domain that has autoenroll into MDM configured.
 - Connecting your device to a work or school account that has autoenroll into MDM configured.
 - Connecting your device to MDM.
 
@@ -263,7 +269,7 @@ Selecting the **Info** button shows a list of policies and line-of-business apps
 The **Disconnect** button can be found on all work connections. Generally, selecting the **Disconnect** button removes the connection from the device. There are a few exceptions to this functionality:
 
 - Devices that enforce the AllowManualMDMUnenrollment policy don't allow users to remove MDM enrollments. These connections must be removed by a server-initiated unenroll command.
-- On mobile devices, you can't disconnect from Azure AD. These connections can only be removed by wiping the device.
+- On mobile devices, you can't disconnect from Microsoft Entra ID. These connections can only be removed by wiping the device.
 
 > [!WARNING]
 > Disconnecting might result in the loss of data on the device.
