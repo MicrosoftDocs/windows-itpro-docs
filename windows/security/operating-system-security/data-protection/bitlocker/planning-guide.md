@@ -195,11 +195,21 @@ Some organizations have location-specific data security requirements, especially
 
 For more information about how to configure Network unlock feature, see [Network Unlock](network-unlock.md).
 
+## BitLocker recovery
+
+Organizations should carefully plan a BitLocker recovery strategy as part of the overall BitLocker implementation plan. There are different options when it comes to BitLocker recovery, which are described in the [BitLocker recovery guide](recovery-guide).
+
 ## Monitor BitLocker
 
 Organizations can use Microsoft Intune or Configuration Manager to monitor device encryption across multiple devices. For more information, see [Monitor device encryption with Intune](/mem/intune/protect/encryption-monitor) and [View BitLocker reports in Configuration Manager](/mem/configmgr/protect/deploy-use/bitlocker/view-reports).
 
 ## Next steps
+
+> [!div class="nextstepaction"]
+> Learn how to plan a BitLocker recovery strategy for your organization.
+>
+>
+> [BitLocker recovery guide >](recovery-guide.md)
 
 > [!div class="nextstepaction"]
 > Learn about the available options to configure BitLocker and how to configure them via Configuration Service Providers (CSP) or group policy (GPO).

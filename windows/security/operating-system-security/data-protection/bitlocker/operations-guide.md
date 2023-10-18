@@ -35,16 +35,9 @@ The BitLocker drive encryption tools include the two command-line tools:
 
 Encrypting volumes with the BitLocker Control Panel (select **Start**, enter `BitLocker`, select **Manage BitLocker**) is how many users will use BitLocker. The name of the BitLocker Control Panel applet is *BitLocker Drive Encryption*. The applet supports encrypting operating system, fixed data, and removable data volumes. The BitLocker Control Panel organizes available drives in the appropriate category based on how the device reports itself to Windows. Only formatted volumes with assigned drive letters appear properly in the BitLocker Control Panel applet.
 
-To start encryption for a volume, select **Turn on BitLocker** for the appropriate drive to initialize the **BitLocker Drive Encryption Wizard**. **BitLocker Drive Encryption Wizard** options vary based on volume type (operating system volume or data volume).
-
 ### Use BitLocker within Windows Explorer
 
 Windows Explorer allows users to launch the **BitLocker Drive Encryption Wizard** by right-clicking a volume and selecting **Turn On BitLocker**. This option is available on client computers by default. On servers, the BitLocker feature and the Desktop-Experience feature must first be installed for this option to be available. After selecting **Turn on BitLocker**, the wizard works exactly as it does when launched using the BitLocker Control Panel.
-
-Using the Control Panel, administrators can choose **Turn on BitLocker** to start the BitLocker Drive Encryption wizard and add a protector, like PIN for an operating system volume (or password if no TPM exists), or a password or smart card protector to a data volume.
-The drive security window displays prior to changing the volume status. Selecting **Activate BitLocker** will complete the encryption process.
-
-Once BitLocker protector activation is completed, the completion notice is displayed.
 
 ## Check the BitLocker status
 

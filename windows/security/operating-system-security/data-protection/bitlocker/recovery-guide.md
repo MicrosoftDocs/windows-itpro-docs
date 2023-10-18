@@ -10,8 +10,6 @@ ms.date: 09/29/2023
 
 # BitLocker recovery guide
 
-Organizations can use BitLocker recovery information saved in Microsoft Entra ID and Active Directory Domain Services (AD DS) to access BitLocker-protected drives. It's recommended to create a recovery model for BitLocker while planning your BitLocker deployment.
-
 This article describes how to recover BitLocker keys from Microsoft Entra ID and Active Directory Domain Services (AD DS). This article assumes that it's understood how to configure devices to automatically backup BitLocker recovery information, and what types of recovery information are saved to Microsoft Entra ID and AD DS.
 
 ## What is BitLocker recovery?
@@ -27,31 +25,27 @@ BitLocker recovery is the process by which access to a BitLocker-protected drive
 
 ## What causes BitLocker recovery?
 
-The following list provides some examples of specific events that causes BitLocker to enter recovery mode when attempting to start the operating system drive:
+The following list provides examples of common events that causes BitLocker to enter recovery mode when attempting to start the operating system drive:
 
-- On devices with TPM 1.2, changing the BIOS or firmware boot device order causes BitLocker recovery. However, devices with TPM 2.0 don't start BitLocker recovery in this case. TPM 2.0 doesn't consider a firmware change of boot device order as a security threat because the OS Boot Loader isn't compromised
+- Changing the BIOS or firmware boot device order on devices with TPM 1.2
 - Having the CD or DVD drive before the hard drive in the BIOS boot order and then inserting or removing a CD or DVD
 - Failing to boot from a network drive before booting from the hard drive
-- Docking or undocking a portable computer. In some instances (depending on the computer manufacturer and the BIOS), the docking condition of the portable computer is part of the system measurement and must be consistent to validate the system status and unlock BitLocker. So if a portable computer is connected to its docking station when BitLocker is turned on, then it might also need to be connected to the docking station when it's unlocked. Conversely, if a portable computer isn't connected to its docking station when BitLocker is turned on, then it might need to be disconnected from the docking station when it's unlocked
-- Changes to the NTFS partition table on the disk including creating, deleting, or resizing a primary partition
-- Entering the personal identification number (PIN) incorrectly too many times so that the anti-hammering logic of the TPM is activated. Anti-hammering logic is software or hardware methods that increase the difficulty and cost of a brute force attack on a PIN by not accepting PIN entries until after a certain amount of time has passed
+- Docking or undocking a portable computer
+- Changes to the NTFS partition table on the disk
+- Entering the personal identification number (PIN) incorrectly too many times
 - Turning off the support for reading the USB device in the pre-boot environment from the BIOS or UEFI firmware if using USB-based keys instead of a TPM
 - Turning off, disabling, deactivating, or clearing the TPM
-- Upgrading critical early startup components, such as a BIOS or UEFI firmware upgrade, causing the related boot measurements to change
+- Upgrading critical early startup components, such as a BIOS or UEFI firmware upgrade
 - Forgetting the PIN when PIN authentication has been enabled
 - Updating option ROM firmware
 - Upgrading TPM firmware
-- Adding or removing hardware; for example, inserting a new card in the computer, including some PCMIA wireless cards
+- Adding or removing hardware
 - Removing, inserting, or completely depleting the charge on a smart battery on a portable computer
 - Changes to the master boot record on the disk
 - Changes to the boot manager on the disk
-- Hiding the TPM from the operating system. Some BIOS or UEFI settings can be used to prevent the enumeration of the TPM to the operating system. When implemented, this option can make the TPM hidden from the operating system. When the TPM is hidden, BIOS and UEFI secure startup are disabled, and the TPM doesn't respond to commands from any software
-- Using a different keyboard that doesn't correctly enter the PIN or whose keyboard map doesn't match the keyboard map assumed by the pre-boot environment. This problem can prevent the entry of enhanced PINs
-- Modifying the Platform Configuration Registers (PCRs) used by the TPM validation profile. For example, including **PCR\[1\]** would result in BitLocker measuring most changes to BIOS settings, causing BitLocker to enter recovery mode even when non-boot critical BIOS settings change
-
-    > [!NOTE]
-    > Some computers have BIOS settings that skip measurements to certain PCRs, such as **PCR\[2\]**. Changing this setting in the BIOS would cause BitLocker to enter recovery mode because the PCR measurement will be different.
-
+- Hiding the TPM from the operating system
+- Using a different keyboard that doesn't correctly enter the PIN
+- Modifying the Platform Configuration Registers (PCRs) used by the TPM validation profile.
 - Moving the BitLocker-protected drive into a new computer
 - Upgrading the motherboard to a new one with a new TPM
 - Losing the USB flash drive containing the startup key when startup key authentication has been enabled
