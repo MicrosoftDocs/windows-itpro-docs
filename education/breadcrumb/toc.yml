@@ -1,8 +1,3 @@
-items:
-- name: Microsoft 365
-  tocHref: /education/
-  topicHref: /microsoft-365/index
-  items:
-    - name: Education
-      tocHref: /education/deploy/
-      topicHref: /education/index
+- name: Windows
+  tocHref: /windows/
+  topicHref: /windows/index
