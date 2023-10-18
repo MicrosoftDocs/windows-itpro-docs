@@ -19,8 +19,10 @@ The enrollment into Intune is triggered by a group policy created on your local 
 - The Active Directory joined device must be running a [supported version of Windows](/windows/release-health/supported-versions-windows-client).
 - The enterprise has configured a Mobile Device Management (MDM) service.
 - The on-premises Active Directory must be [integrated with Azure AD (via Azure AD Connect)](/azure/architecture/reference-architectures/identity/azure-ad).
+- Service connection point (SCP) configuration. For more information see [configuring the SCP using Microsoft Entra Connect](/azure/active-directory/devices/how-to-hybrid-join). For environments not publishing SCP data to AD, see [Microsoft Entra hybrid join targeted deployment](/azure/active-directory/devices/hybrid-join-control#targeted-deployment-of-microsoft-entra-hybrid-join-on-windows-current-devices).
 - The device shouldn't already be enrolled in Intune using the classic agents (devices managed using agents fail enrollment with `error 0x80180026`).
 - The minimum Windows Server version requirement is based on the Hybrid Azure AD join requirement. For more information, see [How to plan your hybrid Azure Active Directory join implementation](/azure/active-directory/devices/hybrid-azuread-join-plan).
+
 
 > [!TIP]
 > For more information, see the following topics:
