@@ -85,7 +85,7 @@ The MDM vendor must first register the application in their home tenant and mark
 The MDM application uses keys to request access tokens from Microsoft Entra ID. These keys are managed within the tenant of the MDM provider and not visible to individual customers. The same key is used by the multi-tenant MDM application to authenticate itself with Microsoft Entra ID, in the customer tenant where the managed device belongs.
 
 > [!NOTE]
-> All MDM apps must implement Azure AD v2 tokens before we certify that integration works. Due to changes in the Microsoft Entra app platform, using Azure AD v2 tokens is a hard requirement. For more information, see [Microsoft identity platform access tokens](/azure/active-directory/develop/access-tokens#token-formats).
+> All MDM apps must implement Microsoft Entra v2 tokens before we certify that integration works. Due to changes in the Microsoft Entra app platform, using Microsoft Entra v2 tokens is a hard requirement. For more information, see [Microsoft identity platform access tokens](/azure/active-directory/develop/access-tokens#token-formats).
 
 ### On-premises MDM
 
