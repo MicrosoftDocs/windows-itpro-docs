@@ -23,7 +23,7 @@ For many years, organizations have deployed new versions of Windows using a "wip
 
 Windows 10 also introduces two additional scenarios that organizations should consider:
 
--   **In-place upgrade**, which provides a simple, automated process that leverages the Windows setup process to automatically upgrade from an earlier version of Windows. This process automatically migrates existing data, settings, drivers, and applications.
+-   **In-place upgrade**, which provides a simple, automated process that uses the Windows setup process to automatically upgrade from an earlier version of Windows. This process automatically migrates existing data, settings, drivers, and applications.
 
 -   **Dynamic provisioning**, which enables organizations to configure new Windows 10 devices for organization use without having to deploy a new custom organization image to the device.
 
@@ -33,8 +33,8 @@ Windows 10 also introduces two additional scenarios that organizations should co
 
 | Consider ... | For these scenarios  |
 |---|---|
-| In-place upgrade  | - When you want to keep all (or at least most) existing applications<br/>- When you do not plan to significantly change the device configuration (for example, BIOS to UEFI) or operating system configuration (for example, x86 to x64, language changes, Administrators to non-Administrators, Active Directory domain consolidations)<br/>- To migrate from Windows 10 to a later Windows 10 release |
-| Traditional wipe-and-load | - When you upgrade significant numbers of applications along with the new Windows OS<br/>- When you make significant device or operating system configuration changes<br/>- When you "start clean". For example, scenarios where it is not necessary to preserve existing apps or data (for example, call centers) or when you move from unmanaged to well-managed PCs<br/>- When you migrate from Windows Vista or other previous operating system versions |
+| In-place upgrade  | - When you want to keep all (or at least most) existing applications<br/>- When you don't plan to significantly change the device configuration (for example, BIOS to UEFI) or operating system configuration (for example, x86 to x64, language changes, Administrators to non-Administrators, Active Directory domain consolidations)<br/>- To migrate from Windows 10 to a later Windows 10 release |
+| Traditional wipe-and-load | - When you upgrade significant numbers of applications along with the new Windows OS<br/>- When you make significant device or operating system configuration changes<br/>- When you "start clean". For example, scenarios where it isn't necessary to preserve existing apps or data (for example, call centers) or when you move from unmanaged to well-managed PCs<br/>- When you migrate from Windows Vista or other previous operating system versions |
 | Dynamic provisioning | - For new devices, especially in "choose your own device" scenarios when simple configuration (not reimaging) is all that is required. <br/>- When used in combination with a management tool (for example, an MDM service like Microsoft Intune) that enables self-service installation of user-specific or role-specific apps |
 
 ## Migration from previous Windows versions
@@ -45,19 +45,19 @@ The original Windows 8 release was only supported until January 2016. For device
 
 For PCs running operating systems older than Windows 7, you can perform wipe-and-load (OS refresh) deployments when you use compatible hardware.
 
-For organizations with Software Assurance for Windows, both in-place upgrade or wipe-and-load can be leveraged (with in-place upgrade being the preferred method, as previously discussed).
+For organizations with Software Assurance for Windows, both in-place upgrade or wipe-and-load can be used (with in-place upgrade being the preferred method, as previously discussed).
 
-For organizations that did not take advantage of the free upgrade offer and are not enrolled in Software Assurance for Windows, Windows 10 upgrade licenses are available for purchase through existing Volume License (VL) agreements.
+For organizations that didn't take advantage of the free upgrade offer and aren't enrolled in Software Assurance for Windows, Windows 10 upgrade licenses are available for purchase through existing Volume License (VL) agreements.
 
 ## Setting up new computers
 
-For new computers acquired with Windows 10 preinstalled, you can leverage dynamic provisioning scenarios to transform the device from its initial state into a fully-configured organization PC. There are two primary dynamic provisioning scenarios you can use:
+For new computers acquired with Windows 10 preinstalled, you can use dynamic provisioning scenarios to transform the device from its initial state into a fully configured organization PC. There are two primary dynamic provisioning scenarios you can use:
 
--   **User-driven, from the cloud.** By joining a device into Microsoft Entra ID and leveraging the automatic mobile device management (MDM) provisioning capabilities at the same time, an end user can initiate the provisioning process themselves just by entering the Microsoft Entra account and password (called their "work or school account" within Windows 10). The MDM service can then transform the device into a fully-configured organization PC. For more information, see [Microsoft Entra integration with MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm).
+-   **User-driven, from the cloud.** By joining a device into Microsoft Entra ID and leveraging the automatic mobile device management (MDM) provisioning capabilities at the same time, an end user can initiate the provisioning process themselves just by entering the Microsoft Entra account and password (called their "work or school account" within Windows 10). The MDM service can then transform the device into a fully configured organization PC. For more information, see [Microsoft Entra integration with MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm).
 
--   **IT admin-driven, using new tools.** Using the new Windows Imaging and Configuration Designer (ICD) tool, IT administrators can create provisioning packages that can be applied to a computer to transform it into a fully-configured organization PC. For more information, see [Windows Imaging and Configuration Designer](/windows/configuration/provisioning-packages/provisioning-install-icd).
+-   **IT admin-driven, using new tools.** Using the new Windows Imaging and Configuration Designer (ICD) tool, IT administrators can create provisioning packages that can be applied to a computer to transform it into a fully configured organization PC. For more information, see [Windows Imaging and Configuration Designer](/windows/configuration/provisioning-packages/provisioning-install-icd).
 
-In either of these scenarios, you can make a variety of configuration changes to the PC:
+In either of these scenarios, you can make various configuration changes to the PC:
 
 -   Transform the edition (SKU) of Windows 10 that is in use.
 -   Apply configuration and settings to the device (for example, security settings, device restrictions, policies, Wi-Fi and VPN profiles, certificates, and so on).
@@ -66,18 +66,18 @@ In either of these scenarios, you can make a variety of configuration changes to
 
 ## Stay up to date
 
-For computers using the [General Availability Channel](../update/waas-overview.md#general-availability-channel), you can deploy these upgrades by using a variety of methods:
+For computers using the [General Availability Channel](../update/waas-overview.md#general-availability-channel), you can deploy these upgrades by using various methods:
 
 -   Windows Update or Windows Update for Business, for devices where you want to receive updates directly from the Internet.
--   Windows Server Update Services (WSUS), for devices configured to pull updates from internal servers after they are approved (deploying like an update). 
+-   Windows Server Update Services (WSUS), for devices configured to pull updates from internal servers after they're approved (deploying like an update). 
 -   Configuration Manager task sequences.
 -   Configuration Manager software update capabilities (deploying like an update).
 
-These upgrades (which are installed differently than monthly updates) leverage an in-place upgrade process. Unlike updates, which are relatively small, these upgrades will include a full operating system image (around 3 GB for 64-bit operating systems), which requires time (1-2 hours) and disk space (approximately 10 GB) to complete. Ensure that the deployment method you use can support the required network bandwidth and/or disk space requirements.
+These upgrades (which are installed differently than monthly updates) use an in-place upgrade process. Unlike updates, which are relatively small, these upgrades include a full operating system image (around 3 GB for 64-bit operating systems), which requires time (1-2 hours) and disk space (approximately 10 GB) to complete. Ensure that the deployment method you use can support the required network bandwidth and/or disk space requirements.
 
 The upgrade process is also optimized to reduce the overall time and network bandwidth consumed.
 
-## Related topics
+## Related articles
 
 [Windows 10 compatibility](windows-10-compatibility.md)<br>
 [Windows 10 infrastructure requirements](windows-10-infrastructure-requirements.md)
