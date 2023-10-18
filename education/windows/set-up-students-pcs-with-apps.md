@@ -16,7 +16,7 @@ You can apply a provisioning package on a USB drive to off-the-shelf devices dur
 
 - If you want to [provision a school PC to join a domain](set-up-students-pcs-to-join-domain.md) and add apps in the same provisioning package, follow the steps in [Provision PCs with apps](/windows/configuration/provisioning-packages/provision-pcs-with-apps).
 
-- If you want to provision a school PC to join Azure AD, set up the PC using the steps in [Use Set up School PCs App](use-set-up-school-pcs-app.md). Set up School PCs now lets you add recommended apps from the Store so you can add these apps while you're creating your package through Set up School PCs. You can also follow the steps in [Provision PCs with apps](/windows/configuration/provisioning-packages/provision-pcs-with-apps) if you want to add apps to student PCs after initial setup with the Set up School PCs package.
+- If you want to provision a school PC to join Microsoft Entra ID, set up the PC using the steps in [Use Set up School PCs App](use-set-up-school-pcs-app.md). Set up School PCs now lets you add recommended apps from the Store so you can add these apps while you're creating your package through Set up School PCs. You can also follow the steps in [Provision PCs with apps](/windows/configuration/provisioning-packages/provision-pcs-with-apps) if you want to add apps to student PCs after initial setup with the Set up School PCs package.
 
 ## Learn more
 
