@@ -87,7 +87,7 @@ landingContent:
         links:
           - text: Enroll Windows devices
             url: mdm-enrollment-of-windows-devices.md
-          - text: Automatic enrollment using Azure AD
+          - text: Automatic enrollment using Microsoft Entra ID
             url: azure-ad-and-microsoft-intune-automatic-mdm-enrollment-in-the-new-portal.md
           - text: Automatic enrollment using group policy
             url: enroll-a-windows-10-device-automatically-using-group-policy.md
@@ -102,7 +102,7 @@ landingContent:
             url: client-tools/administrative-tools-in-windows.md
           - text: Use Quick assist
             url: client-tools/quick-assist.md
-          - text: Connect to Azure AD devices
+          - text: Connect to Microsoft Entra devices
             url: client-tools/connect-to-remote-aadj-pc.md
           - text: Create mandatory user profiles
             url: client-tools/mandatory-user-profile.md
