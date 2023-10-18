@@ -4,7 +4,7 @@ description: Learn how to use different tools to manage and operate BitLocker.
 ms.collection: 
   - tier1
 ms.topic: how-to
-ms.date: 07/25/2023
+ms.date: 10/18/2023
 ---
 
 # BitLocker operations guide
@@ -521,17 +521,21 @@ Obtain the ID of the new recovery password:
 (Get-BitLockerVolume -mountpoint $env:SystemDrive).KeyProtector | where-object {$_.KeyProtectorType -eq 'RecoveryPassword'} | ft KeyProtectorId,RecoveryPassword
 ```
 
+> [!NOTE]
+>This next steps are not required if the policy setting [Choose how BitLocker-protected operating system drives can be recovered](configure.md?tabs=os#choose-how-bitlocker-protected-operating-system-drives-can-be-recovered) is configured to **Require BitLocker backup to AD DS**.
+
 Copy the ID of the recovery password from the output.
 
-Backup the BitLocker recovery password to Microsoft Entra ID.
-
-> [!NOTE]
->This step is not required if the policy setting [Choose how BitLocker-protected operating system drives can be recovered](configure.md?tabs=os#choose-how-bitlocker-protected-operating-system-drives-can-be-recovered) is configured to **Require BitLocker backup to AD DS**.
-
-Using the GUID from the previous step, replace the `{ID}` in the following command:
+Using the GUID from the previous step, replace the `{ID}` in the following command and use the following command to backup the recovery password to Microsoft Entra ID:
 
 ```PowerShell
 BackuptoAAD-BitLockerKeyProtector -MountPoint $env:SystemDrive -KeyProtectorId "{ID}"
+```
+
+Or use the following command to backup the recovery password to Active Directory:
+
+```PowerShell
+Backup-BitLockerKeyProtector -MountPoint $env:SystemDrive -KeyProtectorId "{ID}"
 ```
 
 > [!NOTE]
@@ -557,14 +561,16 @@ Obtain the ID of the new recovery password:
 manage-bde.exe -protectors -get C: -Type RecoveryPassword
 ```
 
-Copy the ID of the recovery password from the output.
-
-Backup the BitLocker recovery password to Microsoft Entra ID.
-
 > [!NOTE]
->This step is not required if the policy setting [Choose how BitLocker-protected operating system drives can be recovered](configure.md?tabs=os#choose-how-bitlocker-protected-operating-system-drives-can-be-recovered) is configured to **Require BitLocker backup to AD DS**.
+>This following steps are not required if the policy setting [Choose how BitLocker-protected operating system drives can be recovered](configure.md?tabs=os#choose-how-bitlocker-protected-operating-system-drives-can-be-recovered) is configured to **Require BitLocker backup to AD DS**.
 
-Using the GUID from the previous step, replace the `{ID}` in the following command:
+Using the GUID from the previous step, replace the `{ID}` in the following command and use the following command to backup the recovery password to Microsoft Entra ID:
+
+```cmd
+manage-bde.exe -protectors -aadbackup C: -id {ID}
+```
+
+Or use the following command to backup the recovery password to Active Directory:
 
 ```cmd
 manage-bde.exe -protectors -adbackup C: -id {ID}
@@ -618,4 +624,3 @@ BitLocker decryption using the Control Panel is done using a wizard. After openi
 Once decryption is complete, the drive updates its status in the Control Panel and becomes available for encryption.
 
 ---
-
