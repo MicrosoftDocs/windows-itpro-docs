@@ -64,7 +64,7 @@ The following table describes the authentication methods that can be used to unl
 | TPM + Network key | No | The TPM successfully validates early boot components, and a valid encrypted network key has been provided from a WDS server. This authentication method provides automatic unlock of operating system volumes at system reboot while still maintaining multifactor authentication. |
 | TPM + startup key | Yes| The TPM successfully validates early boot components, and a USB flash drive containing the startup key has been inserted.|
 | Startup key only | Yes| The user is prompted for the USB flash drive that has the recovery key and/or startup key, and then reboot the device.|
-| Password | Yes| The user is prompted for a password in the preboot screen. This method doesn't offer any lockout logic. |
+| Password | Yes| The user is prompted for a password in the preboot screen. This method doesn't offer any lockout logic, therefore it doesn't protect against brute force attacks. |
 
 #### Support for devices without TPM
 
@@ -162,7 +162,7 @@ With Full drive encryption, the entire drive is encrypted, whether data is store
 
 Encrypted hard drives provide onboard cryptographic capabilities to encrypt data on drives. This feature improves both drive and system performance by offloading cryptographic calculations from the device's processor to the drive itself. Data is rapidly encrypted by the drive by using dedicated, purpose-built hardware. If planning to use whole-drive encryption with Windows, Microsoft recommends researching hard drive manufacturers and models to determine whether any of their encrypted hard drives meet the security and budget requirements.
 
-For more information about encrypted hard drives, see [Encrypted hard drive](../encrypted-hard-drive.md).
+For more information about encrypted hard drives, see [Encrypted hard drives](../encrypted-hard-drive.md).
 
 ## Microsoft Entra ID and Active Directory Domain Services considerations
 
@@ -195,9 +195,9 @@ Some organizations have location-specific data security requirements, especially
 
 For more information about how to configure Network unlock feature, see [Network Unlock](network-unlock.md).
 
-## Monitor and manage BitLocker
+## Monitor BitLocker
 
-Organizations can use Microsoft Intune or Configuration Manager to monitor and manage BitLocker. For more information, see [Monitor device encryption with Intune](/mem/intune/protect/encryption-monitor).
+Organizations can use Microsoft Intune or Configuration Manager to monitor device encryption across multiple devices. For more information, see [Monitor device encryption with Intune](/mem/intune/protect/encryption-monitor) and [View BitLocker reports in Configuration Manager](/mem/configmgr/protect/deploy-use/bitlocker/view-reports).
 
 ## Next steps
 
