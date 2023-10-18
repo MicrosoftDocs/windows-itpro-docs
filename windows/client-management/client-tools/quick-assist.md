@@ -19,7 +19,7 @@ All that's required to use Quick Assist is suitable network and internet connect
 
 ### Authentication
 
-The helper can authenticate when they sign in by using a Microsoft account (MSA) or Azure Active Directory (Azure AD). Local Active Directory authentication isn't currently supported.
+The helper can authenticate when they sign in by using a Microsoft account (MSA) or Microsoft Entra ID. Local Active Directory authentication isn't currently supported.
 
 ### Network considerations
 
@@ -36,7 +36,7 @@ Quick Assist communicates over port 443 (https) and connects to the Remote Assis
 | `*.registrar.skype.com` | Required for Azure Communication Service. |
 | `*.support.services.microsoft.com` | Primary endpoint used for Quick Assist application |
 | `*.trouter.skype.com` | Used for Azure Communication Service for chat and connection between parties. |
-| `aadcdn.msauth.net` | Required for logging in to the application (Azure AD). |
+| `aadcdn.msauth.net` | Required for logging in to the application (Microsoft Entra ID). |
 | `edge.skype.com` | Used for Azure Communication Service for chat and connection between parties. |
 | `login.microsoftonline.com` | Required for Microsoft login service. |
 | `remoteassistanceprodacs.communication.azure.com` | Used for Azure Communication Service for chat and connection between parties. |
