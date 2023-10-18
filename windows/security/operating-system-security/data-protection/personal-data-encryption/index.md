@@ -25,7 +25,7 @@ Unlike BitLocker that releases data encryption keys at boot, PDE doesn't release
 To use PDE, the following prerequisites must be met:
 
 - Windows 11, version 22H2 and later
-- The devices must be [Azure AD joined][AAD-1]. Domain-joined and hybrid Azure AD joined devices aren't supported
+- The devices must be [Microsoft Entra joined][AAD-1]. Domain-joined and Microsoft Entra hybrid joined devices aren't supported
 - Users must sign in using [Windows Hello for Business](../../../identity-protection/hello-for-business/index.md)
 
 > [!IMPORTANT]
