@@ -7,6 +7,8 @@ ms.topic: concept-article
 
 # Encrypted hard drives
 
+## Overview
+
 Encrypted hard drives are a class of hard drives that are self-encrypted at the hardware level and allow for full disk hardware encryption while being transparent to the user. These drives combine the security and management benefits provided by BitLocker Drive Encryption with the power of self-encrypting drives.
 
 By offloading the cryptographic operations to hardware, encrypted hard drives increase BitLocker performance and reduce CPU usage and power consumption. Because encrypted hard drives encrypt data quickly, BitLocker deployment can be expanded across enterprise devices with little to no impact on productivity.
@@ -34,6 +36,8 @@ Encrypted hard drives are supported natively in the operating system through the
 >
 >It's important to confirm that the device type is an encrypted hard drive for Windows when planning for deployment.
 
+When the operating system identifies an encrypted hard drive, it activates the *security mode*. This activation lets the drive controller generate a *media key* for every volume that the host computer creates. The media key, which is never exposed outside the disk, is used to rapidly encrypt or decrypt every byte of data that is sent or received from the disk.
+
 If you're a storage device vendor who is looking for more info on how to implement encrypted hard drive, see the [encrypted hard drive device guide](/previous-versions/windows/hardware/design/dn653989(v=vs.85)).
 
 ## System Requirements
@@ -57,10 +61,6 @@ For an encrypted hard drive used as a **startup drive**:
 >All encrypted hard drives must be attached to non-RAID controllers to function properly.
 
 [!INCLUDE [encrypted-hard-drive](../../../../includes/licensing/encrypted-hard-drive.md)]
-
-## Technical overview
-
-Rapid encryption in BitLocker directly addresses the security needs of enterprises while offering improved performance. Encrypted hard drives offload the cryptographic operations to the drive controller for greater efficiency. When the operating system identifies an encrypted hard drive, it activates the *security mode*. This activation lets the drive controller generate a *media key* for every volume that the host computer creates. The media key, which is never exposed outside the disk, is used to rapidly encrypt or decrypt every byte of data that is sent or received from the disk.
 
 ## Configure encrypted hard drives as startup drives
 
