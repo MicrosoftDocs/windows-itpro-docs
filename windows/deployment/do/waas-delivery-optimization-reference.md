@@ -303,7 +303,7 @@ MDM Setting: **DOMonthlyUploadDataCap**
 
 This setting specifies the total amount of data in gigabytes that a Delivery Optimization client can upload to Internet peers per month. A value of "0" means that an unlimited amount of data can be uploaded. **The default value for this setting is 20 GB.**
 
-### Enable Peer Caching while the device connects via VPN
+### Enable peer caching while the device connects via VPN
 
 MDM Setting: **DOAllowVPNPeerCaching**
 
@@ -313,13 +313,13 @@ This setting determines whether a device will be allowed to participate in Peer 
 
 MDM Setting: **DOVpnKeywords**
 
-This policy allows you to set one or more keywords used to recognize VPN connections. **By default, this policy is not set so if a VPN is detected, the device will not use peering.** Delivery Optimization automatically detects a VPN connection by looking at a pre-defined set of VPN names. As the number of VPNs grow it’s difficult to support an ever-changing list of VPN names. To address this, we’ve introduced this new setting to set unique VPN names, which will be recognized by Delivery Optimization and therefore resulting in the expected behavior to help manage peering.
+This policy allows you to set one or more comma-separated keywords used to recognize VPN connections. **By default, this policy is not set so if a VPN is detected, the device will not use peering.** Delivery Optimization automatically detects a VPN connection by looking at the network adapter's 'Description' and 'FriendlyName' strings using the default keyword list including: “VPN”, “Secure”, and “Virtual Private Network” (ex: “MSFTVPN” matches the “VPN” keyword). As the number of VPNs grow it’s difficult to support an ever-changing list of VPN names. To address this, we’ve introduced this new setting to set unique VPN names to meet the needs of individual environments.
 
-### Disallow Cache Server Downloads on VPN
+### Disallow cache server downloads on VPN
 
 MDM Setting: **DODisallowCacheServerDownloadsOnVPN**
 
-This policy disallows downloads from Connected Cache servers when the device connects via VPN. **By default, the device is allowed to download from Connected Cache when connected via VPN.**
+This policy disallows downloads from Connected Cache servers when the device connects via VPN. **By default, the device is allowed to download from Connected Cache when connected via VPN.** Set this policy if you prefer devices to download directly from the Internet when connected remotely (via VPN) instead of pulling from a Microsoft Connected Cache server deployed on your corporate network.
 
 ### Allow uploads while the device is on battery while under set Battery level
 
