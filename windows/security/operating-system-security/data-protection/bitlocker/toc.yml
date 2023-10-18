@@ -9,14 +9,6 @@ items:
   href: configure.md
 - name: BitLocker operations guide
   href: operations-guide.md
-- name: How-to guides
-  items:
-    - name: Install BitLocker on Windows Server
-      href: install-server.md
-    - name: Configure Network Unlock
-      href: network-unlock.md
-    - name: Protect cluster shared volumes and storage area networks
-      href: csv-san.md
 - name: BitLocker recovery guide
   items:
     - name: Overview of BitLocker recovery methods
@@ -27,6 +19,15 @@ items:
       href: preboot-recovery-screen.md
     - name: BitLocker repair tool
       href: recovery-guide-repair-tool.md
+- name: How-to guides
+  items:
+    - name: Install BitLocker on Windows Server
+      href: install-server.md
+    - name: Configure Network Unlock
+      href: network-unlock.md
+    - name: Protect cluster shared volumes and storage area networks
+      href: csv-san.md
+
 - name: BCD settings
   href: bcd-settings-and-bitlocker.md
 - name: Frequently asked questions (FAQ)

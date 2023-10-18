@@ -20,30 +20,30 @@ The BitLocker Control Panel applet allows users to perform basic tasks such as t
 
 This article describes the BitLocker management tools and how to use them, providing practical examples.
 
-### BitLocker PowerShell module
+## BitLocker PowerShell module
 
 The BitLocker PowerShell module enables administrators to integrate BitLocker options into existing scripts with ease. For a list of cmdlets included in module, their description and syntax, che the [BitLocker PowerShell reference article](/powershell/module/bitlocker).
 
-### BitLocker drive encryption tools
+## BitLocker drive encryption tools
 
 The BitLocker drive encryption tools include the two command-line tools:
 
 - *Configuration Tool* (`manage-bde.exe`) can be used for scripting BitLocker operations, offering options that aren't present in the BitLocker Control Panel applet. For a complete list of the `manage-bde.exe` options, see the [Manage-bde reference](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/ff829849(v=ws.11))
 - *Repair Tool* (`repair-bde.exe`) is useful for disaster recovery scenarios, in which a BitLocker protected drive can't be unlocked normally or using the recovery console
 
-### BitLocker Control Panel applet
+## BitLocker Control Panel applet
 
 Encrypting volumes with the BitLocker Control Panel (select **Start**, enter `BitLocker`, select **Manage BitLocker**) is how many users will use BitLocker. The name of the BitLocker Control Panel applet is *BitLocker Drive Encryption*. The applet supports encrypting operating system, fixed data, and removable data volumes. The BitLocker Control Panel organizes available drives in the appropriate category based on how the device reports itself to Windows. Only formatted volumes with assigned drive letters appear properly in the BitLocker Control Panel applet.
 
 To start encryption for a volume, select **Turn on BitLocker** for the appropriate drive to initialize the **BitLocker Drive Encryption Wizard**. **BitLocker Drive Encryption Wizard** options vary based on volume type (operating system volume or data volume).
 
-#### OneDrive option
+### OneDrive option
 
 There's an option for storing the BitLocker recovery key using OneDrive. This option requires that computers aren't members of a domain and that the user is using a Microsoft Account. Local user accounts don't have the option to use OneDrive. Using the OneDrive option is the default recommended recovery key storage method for computers that aren't joined to a domain.
 
 Users can verify whether the recovery key is saved properly by checking OneDrive for the *BitLocker* folder, which is created automatically during the save process. The folder contains two files, a `readme.txt` and the recovery key. For users storing more than one recovery password on their OneDrive, they can identify the required recovery key by looking at the file name. The recovery key ID is appended to the end of the file name.
 
-#### Using BitLocker within Windows Explorer
+### Use BitLocker within Windows Explorer
 
 Windows Explorer allows users to launch the **BitLocker Drive Encryption Wizard** by right-clicking a volume and selecting **Turn On BitLocker**. This option is available on client computers by default. On servers, the BitLocker feature and the Desktop-Experience feature must first be installed for this option to be available. After selecting **Turn on BitLocker**, the wizard works exactly as it does when launched using the BitLocker Control Panel.
 
@@ -456,7 +456,7 @@ Some configuration changes may require to suspend BitLocker and then resume it a
 
 Follow the instructions below to suspend and resume BitLocker, selecting the option that best suits your needs.
 
-#### Suspend BitLocker
+### Suspend BitLocker
 
 #### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
 
@@ -478,7 +478,7 @@ From the **BitLocker Drive Encryption** Control Panel applet, select the OS driv
 
 ---
 
-#### Resume BitLocker
+### Resume BitLocker
 
 #### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
 
@@ -495,6 +495,91 @@ manage-bde.exe -protectors -enable d:
 #### [:::image type="icon" source="images/controlpanel.svg"::: **Control Panel**](#tab/controlpanel)
 
 From the **BitLocker Drive Encryption** Control Panel applet, select the OS drive and select the option **Resume protection**.
+
+---
+
+## Reset and backup a recovery password
+
+It's recommended to invalidate a recovery password after its use. In this example the recovery password protector is removed from the OS drive, a new protector added, and backed up to Microsoft Entra ID or Active Direcroty.
+
+#### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
+
+Remove all recovery passwords from the OS volume:
+
+```PowerShell
+(Get-BitLockerVolume -MountPoint $env:SystemDrive).KeyProtector | `
+  where-object {$_.KeyProtectorType -eq 'RecoveryPassword'} | `
+  Remove-BitLockerKeyProtector -MountPoint $env:SystemDrive
+```
+
+Add a BitLocker recovery password protector for the OS volume:
+
+```PowerShell
+Add-BitLockerKeyProtector -MountPoint $env:SystemDrive -RecoveryPasswordProtector
+```
+
+Obtain the ID of the new recovery password:
+
+```PowerShell
+(Get-BitLockerVolume -mountpoint $env:SystemDrive).KeyProtector | where-object {$_.KeyProtectorType -eq 'RecoveryPassword'} | ft KeyProtectorId,RecoveryPassword
+```
+
+Copy the ID of the recovery password from the output.
+
+Backup the BitLocker recovery password to Microsoft Entra ID.
+
+> [!NOTE]
+>This step is not required if the policy setting [Choose how BitLocker-protected operating system drives can be recovered](configure.md?tabs=os#choose-how-bitlocker-protected-operating-system-drives-can-be-recovered) is configured to **Require BitLocker backup to AD DS**.
+
+Using the GUID from the previous step, replace the `{ID}` in the following command:
+
+```PowerShell
+BackuptoAAD-BitLockerKeyProtector -MountPoint $env:SystemDrive -KeyProtectorId "{ID}"
+```
+
+> [!NOTE]
+> The braces `{}` must be included in the ID string.
+
+#### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
+
+Remove all recovery passwords from the OS volume:
+
+```cmd
+manage-bde.exe -protectors -delete C: -type RecoveryPassword
+```
+
+Add a BitLocker recovery password protector for the OS volume:
+
+```cmd
+manage-bde.exe -protectors -add C: -RecoveryPassword
+```
+
+Obtain the ID of the new recovery password:
+
+```cmd
+manage-bde.exe -protectors -get C: -Type RecoveryPassword
+```
+
+Copy the ID of the recovery password from the output.
+
+Backup the BitLocker recovery password to Microsoft Entra ID.
+
+> [!NOTE]
+>This step is not required if the policy setting [Choose how BitLocker-protected operating system drives can be recovered](configure.md?tabs=os#choose-how-bitlocker-protected-operating-system-drives-can-be-recovered) is configured to **Require BitLocker backup to AD DS**.
+
+Using the GUID from the previous step, replace the `{ID}` in the following command:
+
+```cmd
+manage-bde.exe -protectors -adbackup C: -id {ID}
+```
+
+> [!NOTE]
+> The braces `{}` must be included in the ID string.
+
+
+#### [:::image type="icon" source="images/controlpanel.svg"::: **Control Panel**](#tab/controlpanel)
+
+This process can't be accomplished using the Control Panel. Use one of the other options instead.
 
 ---
 
@@ -537,3 +622,10 @@ BitLocker decryption using the Control Panel is done using a wizard. After openi
 Once decryption is complete, the drive updates its status in the Control Panel and becomes available for encryption.
 
 ---
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> Learn how to plan for BitLocker recovery deployment in your organization:
+>
+> [BitLocker planning guide >](planning-guide.md)
