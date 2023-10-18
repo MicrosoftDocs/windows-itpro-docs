@@ -103,7 +103,7 @@ The built-in Windows Hello for Business provisioning experience creates a hardwa
 > [!IMPORTANT]
 > As of July 1, 2019, Microsoft will no longer offer MFA Server for new deployments. New customers who require multifactor authentication for their users should use cloud-based Microsoft Entra multifactor authentication. Existing customers who have activated MFA Server prior to July 1, 2019 will be able to download the latest version, future updates and generate activation credentials as usual. See [Getting started with the Azure Multi-Factor Authentication Server](/azure/active-directory/authentication/howto-mfaserver-deploy) for more details.
 
-The goal of Windows Hello for Business is to move organizations away from passwords by providing them a strong credential that provides easy two-factor authentication.  The built-in provisioning experience accepts the user's weak credentials (username and password) as the first factor authentication; however, the user must provide a second factor of authentication before Windows provisions a strong credential.  
+The goal of Windows Hello for Business is to move organizations away from passwords by providing them a with strong credential that provides easy two-factor authentication.  The built-in provisioning experience accepts the user's weak credentials (username and password) as the first factor authentication; however, the user must provide a second factor of authentication before Windows provisions a strong credential.  
 
 Cloud only and hybrid deployments provide many choices for multifactor authentication.  On-premises deployments must use a multifactor authentication that provides an AD FS multifactor adapter to be used in conjunction with the on-premises Windows Server 2016 AD FS server role. Organizations can use the on-premises Azure Multi-Factor Authentication Server, or choose from several third parties (Read [Microsoft and third-party additional authentication methods](/windows-server/identity/ad-fs/operations/configure-additional-authentication-methods-for-ad-fs#microsoft-and-third-party-additional-authentication-methods) for more information).
 > [!NOTE]
@@ -136,7 +136,7 @@ Modern management is an emerging device management paradigm that leverages the c
 
 Windows Hello for Business is an exclusive Windows 10 and Windows 11 feature. As part of the Windows as a Service strategy, Microsoft has improved the deployment, management, and user experience with each new release of Windows and introduced support for new scenarios.
 
-Most deployment scenarios require a minimum of Windows 10, version 1511, also known as the November Update.  The client requirement may change based on different components in your existing infrastructure, or other infrastructure choices made later in planning your deployment. Those components and choices may require a minimum client running Windows 10, version 1703, also known as the Creators Update.
+Most deployment scenarios require a minimum of Windows 10, version 1511, also known as the November Update.  The client requirement might change based on different components in your existing infrastructure, or other infrastructure choices made later in planning your deployment. Those components and choices might require a minimum client running Windows 10, version 1703, also known as the Creators Update.
 
 
 ### Active Directory
@@ -145,7 +145,7 @@ Hybrid and on-premises deployments include Active Directory as part of their inf
 
 ### Public Key Infrastructure
 
-The Windows Hello for Business deployment depends on an enterprise public key infrastructure as a trust anchor for authentication. Domain controllers for hybrid and on-premises deployments need a certificate in order for Windows devices to trust the domain controller as legitimate. Deployments using the certificate trust type need an enterprise public key infrastructure and a certificate registration authority to issue authentication certificates to users.  Hybrid deployments may need to issue VPN certificates to users to enable connectivity on-premises resources.
+The Windows Hello for Business deployment depends on an enterprise public key infrastructure as a trust anchor for authentication. Domain controllers for hybrid and on-premises deployments need a certificate in order for Windows devices to trust the domain controller as legitimate. Deployments using the certificate trust type need an enterprise public key infrastructure and a certificate registration authority to issue authentication certificates to users.  Hybrid deployments might need to issue VPN certificates to users to enable connectivity on-premises resources.
 
 ### Cloud
 
