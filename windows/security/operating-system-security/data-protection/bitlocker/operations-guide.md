@@ -619,9 +619,3 @@ Once decryption is complete, the drive updates its status in the Control Panel a
 
 ---
 
-## Next steps
-
-> [!div class="nextstepaction"]
-> Learn how to plan for BitLocker recovery deployment in your organization:
->
-> [BitLocker planning guide >](planning-guide.md)
