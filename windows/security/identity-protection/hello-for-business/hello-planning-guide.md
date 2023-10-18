@@ -6,7 +6,7 @@ ms.topic: overview
 ---
 # Planning a Windows Hello for Business Deployment
 
-Congratulations! You are taking the first step forward in helping move your organizations away from password to a two-factor, convenience authentication for Windows — Windows Hello for Business. This planning guide helps you understand the different topologies, architectures, and components that encompass a Windows Hello for Business infrastructure.
+Congratulations! You're taking the first step forward in helping move your organizations away from password to a two-factor, convenience authentication for Windows — Windows Hello for Business. This planning guide helps you understand the different topologies, architectures, and components that encompass a Windows Hello for Business infrastructure.
 
 This guide explains the role of each component within Windows Hello for Business and how certain deployment decisions affect other aspects of the infrastructure. Armed with your planning worksheet, you'll use that information to select the correct deployment guide for your needs.
 
@@ -15,7 +15,7 @@ This guide explains the role of each component within Windows Hello for Business
 
 ## Using this guide
 
-There are many options from which you can choose when deploying Windows Hello for Business. Providing multiple options ensures nearly every organization can deploy Windows Hello for Business. Providing many options makes the deployment appear complex, however, most organization will realize they've already implemented most of the infrastructure on which the Windows Hello for Business deployment depends. It is important to understand that Windows Hello for Business is a distributed system and does take proper planning across multiple teams within an organization.
+There are many options from which you can choose when deploying Windows Hello for Business. Providing multiple options ensures nearly every organization can deploy Windows Hello for Business. Providing many options makes the deployment appear complex, however, most organization will realize they've already implemented most of the infrastructure on which the Windows Hello for Business deployment depends. It's important to understand that Windows Hello for Business is a distributed system and does take proper planning across multiple teams within an organization.
 
 This guide removes the appearance of complexity by helping you make decisions on each aspect of your Windows Hello for Business deployment and the options you'll need to consider. Using this guide also identifies the information needed to help you make decisions about the deployment that best suits your environment. Download the [Windows Hello for Business planning worksheet](https://go.microsoft.com/fwlink/?linkid=852514) from the Microsoft Download Center to help track your progress and make your planning easier.
 
@@ -83,7 +83,7 @@ A deployment's trust type defines how each Windows Hello for Business client aut
 > [!NOTE]
 > Windows Hello for Business introduced a new trust model called cloud Kerberos trust, in early 2022. This model enables deployment of Windows Hello for Business using the infrastructure introduced for supporting [security key sign-in on Microsoft Entra hybrid joined devices and on-premises resource access on Microsoft Entra joined devices](/azure/active-directory/authentication/howto-authentication-passwordless-security-key-on-premises). For more information, see [Hybrid Cloud Kerberos Trust Deployment](hello-hybrid-cloud-kerberos-trust.md).
 
-The key trust type does not require issuing authentication certificates to end users. Users authenticate using a hardware-bound key created during the built-in provisioning experience. This requires an adequate distribution of Windows Server 2016 or later domain controllers relative to your existing authentication and the number of users included in your Windows Hello for Business deployment. Read the [Planning an adequate number of Windows Server 2016 or later Domain Controllers for Windows Hello for Business deployments](hello-adequate-domain-controllers.md) to learn more.
+The key trust type doesn't require issuing authentication certificates to end users. Users authenticate using a hardware-bound key created during the built-in provisioning experience. This requires an adequate distribution of Windows Server 2016 or later domain controllers relative to your existing authentication and the number of users included in your Windows Hello for Business deployment. Read the [Planning an adequate number of Windows Server 2016 or later Domain Controllers for Windows Hello for Business deployments](hello-adequate-domain-controllers.md) to learn more.
 
 The certificate trust type issues authentication certificates to end users.  Users authenticate using a certificate requested using a hardware-bound key created during the built-in provisioning experience.  Unlike key trust, certificate trust does not require Windows Server 2016 domain controllers (but still requires [Windows Server 2016 or later Active Directory schema](/windows/security/identity-protection/hello-for-business/hello-hybrid-cert-trust#directories)).  Users can use their certificate to authenticate to any Windows Server 2008 R2, or later, domain controller.
 
@@ -337,4 +337,4 @@ If boxes **2a** or **2b** read **modern management** and you want devices to aut
 
 ## Congratulations, You're Done
 
-Your Windows Hello for Business planning worksheet should be complete.  This guide provided understanding of the components used in the Windows Hello for Business infrastructure and rationalization of why they are used.  The worksheet gives you an overview of the requirements needed to continue the next phase of the deployment.  With this worksheet, you'll be able to identify key elements of your Windows Hello for Business deployment.
+Your Windows Hello for Business planning worksheet should be complete.  This guide provided understanding of the components used in the Windows Hello for Business infrastructure and rationalization of why they're used.  The worksheet gives you an overview of the requirements needed to continue the next phase of the deployment.  With this worksheet, you'll be able to identify key elements of your Windows Hello for Business deployment.
