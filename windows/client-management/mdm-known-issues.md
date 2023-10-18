@@ -33,7 +33,7 @@ When the Windows device is configured to use a proxy that requires authenticatio
 
 Server-initiated unenrollment for a device enrolled by adding a work account silently fails to leave the MDM account active. MDM policies and resources are still in place and the client can continue to sync with the server.
 
-Remote server unenrollment is disabled for mobile devices enrolled via Azure Active Directory Join. It returns an error message to the server. The only way to remove enrollment for a mobile device that is Azure AD joined is by remotely wiping the device.
+Remote server unenrollment is disabled for mobile devices enrolled via Microsoft Entra join. It returns an error message to the server. The only way to remove enrollment for a mobile device that is Microsoft Entra joined is by remotely wiping the device.
 
 ## Certificates causing issues with Wi-Fi and VPN
 
@@ -222,9 +222,11 @@ Alternatively you can use the following procedure to create an EAP Configuration
 
 After the MDM client automatically renews the WNS channel URI, the MDM client will immediately check in with the MDM server. Henceforth, for every MDM client check-in, the MDM server should send a GET request for "ProviderID/Push/ChannelURI" to retrieve the latest channel URI and compare it with the existing channel URI; then update the channel URI if necessary.
 
-## User provisioning failure in Azure Active Directory-joined devices
+<a name='user-provisioning-failure-in-azure-active-directory-joined-devices'></a>
 
-For Azure AD joined devices, provisioning `.\User` resources fails when the user isn't logged in as an Azure AD user. If you attempt to join Azure AD from **Settings** &gt; **System** &gt; **About** user interface, ensure to sign out and sign in with Azure AD credentials to get your organizational configuration from your MDM server. This behavior is by design.
+## User provisioning failure in Microsoft Entra joined devices
+
+For Microsoft Entra joined devices, provisioning `.\User` resources fails when the user isn't logged in as a Microsoft Entra user. If you attempt to join Microsoft Entra ID from **Settings** &gt; **System** &gt; **About** user interface, ensure to sign out and sign in with Microsoft Entra credentials to get your organizational configuration from your MDM server. This behavior is by design.
 
 ## Requirements to note for VPN certificates also used for Kerberos Authentication
 
