@@ -82,7 +82,7 @@ To verify that Bing Chat Enterprise is enabled for the user as the chat provider
 1. To verify that Bing Chat Enterprise is enabled for the user, select the user's **Display name** to open the flyout menu. 
 1. In the flyout, select the **Licenses & apps** tab, then expand the **Apps** list.
 1. Verify that **Bing Chat Enterprise** is enabled for the user.
-1. If you prefer to view a user's licenses from the Azure portal, you will find it under **Microsoft Entra ID** > **Users**. Select the user's name, then **Licenses**. Select a  license that includes Bing Chat Enterprise, and verify that it's listed as **On**.
+1. If you prefer to view a user's licenses from the [Azure portal](https://portal.azure.com), you will find it under **Microsoft Entra ID** > **Users**. Select the user's name, then **Licenses**. Select a  license that includes Bing Chat Enterprise, and verify that it's listed as **On**.
 
    > [!Note]
    > If you previously disabled Bing Chat Enterprise using the URL, `https://aka.ms/TurnOffBCE`, see [Manage Bing Chat Enterprise](/bing-chat-enterprise/manage) for verifying that Bing Chat Enterprise is enabled for your users.
