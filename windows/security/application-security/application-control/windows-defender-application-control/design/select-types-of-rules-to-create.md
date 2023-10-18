@@ -47,7 +47,7 @@ You can set several rule options within a WDAC policy. Table 1 describes each ru
 | **18 Disabled:Runtime FilePath Rule Protection** | This option disables the default runtime check that only allows FilePath rules for paths that are only writable by an administrator.<br/> NOTE: This option is only supported on Windows 10, version 1903 and later, or Windows Server 2022 and later. | Yes |
 | **19 Enabled:Dynamic Code Security** | Enables policy enforcement for .NET applications and dynamically loaded libraries.<br/> NOTE: This option is only supported on Windows 10, version 1803 and later, or Windows Server 2019 and later. | No |
 | **20 Enabled:Revoked Expired As Unsigned** | Use this option to treat binaries signed with revoked certificates, or expired certificates with the Lifetime Signing EKU on the signature, as "Unsigned binaries" for user-mode process/components, under enterprise signing scenarios. | No |
-| ** Enabled:Developer Mode Dynamic Code Trust** | Use this option to trust UWP apps that are [debugged in Visual Studio](/visualstudio/debugger/run-windows-store-apps-on-a-remote-machine) or deployed through device portal when Developer Mode is enabled on the system. | No |
+| **Enabled:Developer Mode Dynamic Code Trust** | Use this option to trust UWP apps that are [debugged in Visual Studio](/visualstudio/debugger/run-windows-store-apps-on-a-remote-machine) or deployed through device portal when Developer Mode is enabled on the system. | No |
 
 ## Windows Defender Application Control file rule levels
 
