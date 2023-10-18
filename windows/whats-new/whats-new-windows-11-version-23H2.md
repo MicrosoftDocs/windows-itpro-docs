@@ -25,11 +25,17 @@ Windows 11, version 23H2 follows the [Windows 11 servicing timeline](/lifecycle/
 - **Windows 11 Pro**: Serviced for 24 months from the release date.
 - **Windows 11 Enterprise**: Serviced for 36 months from the release date.
 
+Devices updating from Windows 11, version 22H2 will use an enablement package. The majority of the files for the 23H2 update will already exist on Windows 11, version 22H2 devices that have installed a recent monthly security update. These files and features are just in an inactive and dormant state. These new features will remain dormant until they are turned on through the enablement package, a small, quick-to-install switch that activates the Windows 11, version 23H2 features.
+
 Windows 11, version 23H2 is available through Windows Server Update Services (including Configuration Manager), Windows Update for Business, and the Volume Licensing Service Center (VLSC). For more information, see [How to get the Windows 11, version 23H2 update](https://aka.ms/W11/how-to-get-23H2). Review the [Windows 11, version 23H2 Windows IT Pro blog post](https://aka.ms/new-in-23H2) to discover information about available deployment resources such as the [Windows Deployment Kit (Windows ADK)](/windows-hardware/get-started/adk-install).
 
 
 To learn more about the status of the update rollout, known issues, and new information, see [Windows release health](/windows/release-health/).
 
 ## Features no longer under temporary enterprise control
+
+When version 23H2 is installed, the following features are no longer under [temporary enterprise feature control](temporary-enterprise-feature-control.md):
+
+
 
 ## Feature1
