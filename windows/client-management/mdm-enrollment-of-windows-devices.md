@@ -50,7 +50,7 @@ To join a domain:
 
     If your Microsoft Entra tenant has autoenrollment configured, your device also gets enrolled into MDM during this flow. For more information, see [these steps](azure-ad-and-microsoft-intune-automatic-mdm-enrollment-in-the-new-portal.md). If your tenant isn't configured for autoenrollment, you must go through the enrollment flow a second time to [connect your device to MDM](#enroll-in-device-management-only). After you complete the flow, your device will be connected to your organization's Microsoft Entra domain.
 
-    ![Microsoft Entra sign-in.](images/unifiedenrollment-rs1-13.png)
+    ![Microsoft Entra sign-in during OOBE.](images/unifiedenrollment-rs1-13.png)
 
 #### Use the Settings app
 
