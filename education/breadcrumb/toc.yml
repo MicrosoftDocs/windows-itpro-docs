@@ -1,24 +1,8 @@
 items:
-- name: Docs
-  tocHref: /
-  topicHref: /
+- name: Microsoft 365
+  tocHref: /education/
+  topicHref: /microsoft-365/index
   items:
-    - name: Microsoft Education
-      tocHref: /education/
+    - name: Education
+      tocHref: /education/deploy/
       topicHref: /education/index
-      items:
-      - name: Get started
-        tocHref: /education/get-started
-        topicHref: /education/get-started/index
-      - name: Windows
-        tocHref: /education/windows
-        topicHref: /education/windows/index
-      - name: Windows
-        tocHref: /windows/configuration/
-        topicHref: /education/windows/index
-      - name: Windows
-        tocHref: /windows/deployment/
-        topicHref: /education/windows/index
-      - name: Windows
-        tocHref: /windows/Security/Application Control for Windows/
-        topicHref: /education/windows/index
