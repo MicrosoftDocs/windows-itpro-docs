@@ -196,7 +196,7 @@ Users can check encryption status using the BitLocker Control Panel applet.
 
 ### OS drive with TPM protector and startup key
 
-In the next example, we add one more protector, the *StartupKey* protector.
+The following example shows how to enable BitLocker on an operating system drive using the TPM and *startup key* protectors.
 
 Assuming the OS drive letter is `C:` and the USB flash drive is drive letter `E:`, here's the command:
 
@@ -222,18 +222,25 @@ If prompted, reboot the computer to complete the encryption process.
 
 #### [:::image type="icon" source="images/controlpanel.svg"::: **Control Panel**](#tab/controlpanel)
 
+The Control Panel applet doesn't allow to enable BitLocker and add a startup key protector at the same time. To add a startup key protector, follow these steps:
+
+- From the **BitLocker Drive Encryption** Control Panel applet, under the OS drive, select the option **Change how drive is unlocked at startup**
+- When prompted, select the option **Insert a USB flash drive**
+- Selecting the USB drive where you want to store the startup key, and select **Save**
 
 ---
+
+After reboot, the BitLocker preboot screen displays and the USB startup key must be inserted before the operating system can be started:
 
 :::image type="content" source="images/preboot-startup-key.png" alt-text="Screenshot of the BitLocker preboot screen asking for a USB drive containing the startup key.":::
 
 ### Data volumes
 
-Data volumes use the same syntax for encryption as operating system volumes but they don't require protectors for the operation to complete.
+Data volumes use a similar process for encryption as operating system volumes, but they don't require protectors for the operation to complete.
 
 #### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
 
-Data volume encryption using Windows PowerShell is the same as for operating system volumes. Add the desired protectors prior to encrypting the volume. The following example adds a password protector to the `E:` volume using the variable `$pw` as the password. The `$pw` variable is held as a SecureString value to store the user-defined password:
+Add the desired protectors prior to encrypting the volume. The following example adds a password protector to the `E:` volume using the variable `$pw` as the password. The `$pw` variable is held as a SecureString value to store the user-defined password:
 
 ```powershell
 $pw = Read-Host -AsSecureString
@@ -259,7 +266,7 @@ Enable-BitLocker C: -EncryptionMethod XtsAes256 -UsedSpaceOnly -Pin $SecureStrin
 
 #### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
 
-Data volumes use the same syntax for encryption as operating system volumes but they don't require protectors for the operation to complete. Encrypting data volumes can be done using the base command:
+Encrypting data volumes can be done using the base command:
 
 ```cmd
 manage-bde.exe -on <drive letter>
@@ -320,7 +327,7 @@ manage-bde.exe -protectors -add -recoverypassword C:
 
 #### [:::image type="icon" source="images/controlpanel.svg"::: **Control Panel**](#tab/controlpanel)
 
-This information is not available in the Control Panel.
+From the **BitLocker Drive Encryption** Control Panel applet, select the volume where you want to add a protector and select the option **Back up your recovery key**.
 
 ---
 
@@ -348,16 +355,13 @@ From the **BitLocker Drive Encryption** Control Panel applet, expand the drive w
 
 #### Add an Active Directory protector
 
-The **ADAccountOrGroup** protector is an Active Directory SID-based protector. This protector can be added to both operating system and data volumes, although it doesn't unlock operating system volumes in the pre-boot environment. The protector requires the SID for the domain account or group to link with the protector. BitLocker can protect a cluster-aware disk by adding an SID-based protector for the Cluster Name Object (CNO) that lets the disk properly failover and unlock to any member computer of the cluster.
+The Active Directory protector is a SID-based protector that can be added to both operating system and data volumes, although it doesn't unlock operating system volumes in the preboot environment. The protector requires the SID for the domain account or group to link with the protector. BitLocker can protect a cluster-aware disk by adding an SID-based protector for the Cluster Name Object (CNO) that lets the disk properly failover and unlock to any member computer of the cluster.
 
 > [!IMPORTANT]
 > The SID-based protector requires the use of an additional protector such as TPM, PIN, recovery key, etc. when used on operating system volumes.
 
 > [!NOTE]
 > This option is not available for Microsoft Entra joined devices.
-
-> [!TIP]
-> Active Directory-based protectors are normally used to unlock Failover Cluster-enabled volumes.
 
 In this example, a domain SID-based protector is added to a previously encrypted volume. The user knows the SID for the user account or group they wish to add and uses the following command:
 
@@ -367,13 +371,13 @@ In this example, a domain SID-based protector is added to a previously encrypted
 Add-BitLockerKeyProtector C: -ADAccountOrGroupProtector -ADAccountOrGroup "<SID>"
 ```
 
-To add an **ADAccountOrGroup** protector to a volume, either the domain SID is needed or the group name preceded by the domain and a backslash. In the example below, the **CONTOSO\\Administrator** account is added as a protector to the data volume G.
+To add the protector to a volume, either the domain SID or the group name preceded by the domain and a backslash are needed. In the following example, the **CONTOSO\\Administrator** account is added as a protector to the data volume G.
 
 ```powershell
 Enable-BitLocker G: -AdAccountOrGroupProtector -AdAccountOrGroup CONTOSO\Administrator
 ```
 
-For users who wish to use the SID for the account or group, the first step is to determine the SID associated with the account. To get the specific SID for a user account in Windows PowerShell, use the following command:
+To use the SID for the account or group, the first step is to determine the SID associated with the security principal. To get the specific SID for a user account in Windows PowerShell, use the following command:
 
 ```powershell
 Get-ADUser -filter {samaccountname -eq "administrator"}
@@ -383,7 +387,7 @@ Get-ADUser -filter {samaccountname -eq "administrator"}
 > Use of this command requires the RSAT-AD-PowerShell feature.
 
 > [!TIP]
-> In addition to the Windows PowerShell command above, information about the locally logged on user and group membership can be found using: `WHOAMI /ALL`. This doesn't require the use of additional features.
+> Information about the locally logged on user and group membership can be found using: `whoami.exe /all`.
 
 #### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
 
@@ -422,7 +426,16 @@ Remove-BitLockerKeyProtector <volume> -KeyProtectorID "{GUID}"
 
 #### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
 
+The following commands return the list of key protectors:
+
 ```cmd
+manage-bde.exe -status C:
+```
+
+The following command removes keys protector of a certain type:
+
+```cmd
+manage-bde.exe -protectors -delete C: -type TPMandPIN
 ```
 
 #### [:::image type="icon" source="images/controlpanel.svg"::: **Control Panel**](#tab/controlpanel)

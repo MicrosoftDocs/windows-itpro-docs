@@ -77,7 +77,6 @@ The following procedures describe the most common tasks performed by using the B
 ### Install BitLocker Recovery Password Viewer
 
 
-
 ### View the recovery passwords for a computer object
 
 1. In **Active Directory Users and Computers**, locate and then select the container in which the computer is located
