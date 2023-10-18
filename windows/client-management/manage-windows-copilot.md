@@ -89,21 +89,21 @@ To verify that Bing Chat Enterprise is enabled for the user as the chat provider
 The following PowerShell script connects to Microsoft Graph and lists which users that have Bing Chat Enterprise enabled and disabled:
 
 ```powershell
-# Install graph module
+# Install Microsoft Graph module
 if (-not (Get-Module Microsoft.Graph.Users)) {
     Install-Module Microsoft.Graph.Users
 }
 
-# Connect to MS graph
+# Connect to Microsoft Graph
 Connect-MgGraph -Scopes 'User.Read.All'
 
 # Get all users
 $users = Get-MgUser -All -ConsistencyLevel eventual -Property Id, DisplayName, Mail, UserPrincipalName, AssignedPlans
 
-# Users with BCE enabled
+# Users with Bing Chat Enterprise enabled
 $users | Where-Object { $_.AssignedPlans -and $_.AssignedPlans.Service -eq "Bing" -and $_.AssignedPlans.CapabilityStatus -eq "Enabled" } | Format-Table
 
-# Users without BCE enabled
+# Users without Bing Chat Enterprise enabled
 $users | Where-Object { -not $_.AssignedPlans -or ($_.AssignedPlans.Service -eq "Bing" -and $_.AssignedPlans.CapabilityStatus -ne "Enabled") } | Format-Table
 ```
 
