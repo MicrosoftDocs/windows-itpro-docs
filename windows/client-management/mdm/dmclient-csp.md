@@ -272,7 +272,7 @@ This node contains the URI-encoded value of the bootstrapped device management a
 
 <!-- Device-Provider-{ProviderID}-AADDeviceID-Description-Begin -->
 <!-- Description-Source-DDF -->
-Device ID used for AAD device registration.
+Device ID used for Microsoft Entra device registration.
 <!-- Device-Provider-{ProviderID}-AADDeviceID-Description-End -->
 
 <!-- Device-Provider-{ProviderID}-AADDeviceID-Editable-Begin -->
@@ -311,12 +311,12 @@ Device ID used for AAD device registration.
 
 <!-- Device-Provider-{ProviderID}-AADResourceID-Description-Begin -->
 <!-- Description-Source-DDF -->
-This is the ResourceID used when requesting the user token from the OMA DM session for Azure Active Directory (Azure AD) enrollments (Azure AD Join or Add Accounts). The token is audience-specific, which allows for different service principals (enrollment vs. device management). It can be an application ID or the endpoint that you are trying to access.
+This is the ResourceID used when requesting the user token from the OMA DM session for Microsoft Entra enrollments (Microsoft Entra join or Add Accounts). The token is audience-specific, which allows for different service principals (enrollment vs. device management). It can be an application ID or the endpoint that you are trying to access.
 <!-- Device-Provider-{ProviderID}-AADResourceID-Description-End -->
 
 <!-- Device-Provider-{ProviderID}-AADResourceID-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-For more information about Azure AD enrollment, see [Azure Active Directory integration with MDM](../azure-active-directory-integration-with-mdm.md).
+For more information about Microsoft Entra enrollment, see [Microsoft Entra integration with MDM](../azure-active-directory-integration-with-mdm.md).
 <!-- Device-Provider-{ProviderID}-AADResourceID-Editable-End -->
 
 <!-- Device-Provider-{ProviderID}-AADResourceID-DFProperties-Begin -->
@@ -351,7 +351,7 @@ For more information about Azure AD enrollment, see [Azure Active Directory inte
 
 <!-- Device-Provider-{ProviderID}-AADSendDeviceToken-Description-Begin -->
 <!-- Description-Source-DDF -->
-For Azure AD backed enrollments, this will cause the client to send a Device Token if the User Token can't be obtained.
+For Microsoft Entra backed enrollments, this will cause the client to send a Device Token if the User Token can't be obtained.
 <!-- Device-Provider-{ProviderID}-AADSendDeviceToken-Description-End -->
 
 <!-- Device-Provider-{ProviderID}-AADSendDeviceToken-Editable-Begin -->
@@ -2016,8 +2016,8 @@ Device only. This node decides whether or not the MDM device progress page skips
 
 | Value | Description |
 |:--|:--|
-| false | Don't skip the device progress page after Azure AD joined or Hybrid Azure AD joined in OOBE. |
-| true (Default) | Skip the device progress page after Azure AD joined or Hybrid Azure AD joined in OOBE. |
+| false | Don't skip the device progress page after Microsoft Entra joined or Microsoft Entra hybrid joined in OOBE. |
+| true (Default) | Skip the device progress page after Microsoft Entra joined or Microsoft Entra hybrid joined in OOBE. |
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-SkipDeviceStatusPage-AllowedValues-End -->
 
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-SkipDeviceStatusPage-Examples-Begin -->
@@ -2065,8 +2065,8 @@ Device only. This node decides whether or not the MDM user progress page skips a
 
 | Value | Description |
 |:--|:--|
-| false | Don't skip the MGM user progress page after Azure AD joined or Hybrid Azure AD joined in OOBE. |
-| true (Default) | Skip the MGM user progress page after Azure AD joined or Hybrid Azure AD joined in OOBE. |
+| false | Don't skip the MGM user progress page after Microsoft Entra joined or Microsoft Entra hybrid joined in OOBE. |
+| true (Default) | Skip the MGM user progress page after Microsoft Entra joined or Microsoft Entra hybrid joined in OOBE. |
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-SkipUserStatusPage-AllowedValues-End -->
 
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-SkipUserStatusPage-Examples-Begin -->
@@ -2182,7 +2182,7 @@ Integer node determining if a Device was Successfully provisioned. 0 is failure,
 
 <!-- Device-Provider-{ProviderID}-ForceAadToken-Description-Begin -->
 <!-- Description-Source-DDF -->
-Force device to send device AAD token during check-in as a separate header.
+Force device to send device Microsoft Entra token during check-in as a separate header.
 <!-- Device-Provider-{ProviderID}-ForceAadToken-Description-End -->
 
 <!-- Device-Provider-{ProviderID}-ForceAadToken-Editable-Begin -->
@@ -2204,9 +2204,9 @@ Force device to send device AAD token during check-in as a separate header.
 | Value | Description |
 |:--|:--|
 | 0 | ForceAadTokenNotDefined: the value isn't defined(default). |
-| 1 | AlwaysSendAadDeviceTokenCheckIn: always send AAD device token during check-in as a separate header section(not as Bearer token). |
-| 2 | Reserved for future. AlwaysSendAadUserTokenCheckin: always send AAD user token during check-in as a separate header section(not as Bearer token). |
-| 4 | SendAadDeviceTokenForAuth: to replace AADSendDeviceToken, send AAD Device token for auth as Bearer token. |
+| 1 | AlwaysSendAadDeviceTokenCheckIn: always send Microsoft Entra device token during check-in as a separate header section(not as Bearer token). |
+| 2 | Reserved for future. AlwaysSendAadUserTokenCheckin: always send Microsoft Entra user token during check-in as a separate header section(not as Bearer token). |
+| 4 | SendAadDeviceTokenForAuth: to replace AADSendDeviceToken, send Microsoft Entra Device token for auth as Bearer token. |
 | 8 | Reserved for future. ForceAadTokenMaxAllowed: max value allowed. |
 <!-- Device-Provider-{ProviderID}-ForceAadToken-AllowedValues-End -->
 
@@ -2472,7 +2472,7 @@ This is an execution node and will trigger a silent Declared Configuration unenr
 
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-Enroll-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-This is an execution node and will trigger a silent Declared Configuration enrollment, using the AAD device token pulled from the Azure AD-joined device. There is no user interaction needed. When the **DiscoveryEndpoint** is not set, the Enroll node will fail with `ERROR_FILE_NOT_FOUND (0x80070002)` and there is no scheduled task created for dual enrollment.
+This is an execution node and will trigger a silent Declared Configuration enrollment, using the Microsoft Entra device token pulled from the Microsoft Entra joined device. There is no user interaction needed. When the **DiscoveryEndpoint** is not set, the Enroll node will fail with `ERROR_FILE_NOT_FOUND (0x80070002)` and there is no scheduled task created for dual enrollment.
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-Enroll-Editable-End -->
 
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-Enroll-DFProperties-Begin -->
@@ -3735,7 +3735,7 @@ This node initiates a recovery action. The server can specify prerequisites befo
 | Value | Description |
 |:--|:--|
 | 0 (Default) | Initiate MDM Recovery. |
-| 1 | Initiate Recovery if Keys aren't already protected by the TPM, there is a TPM to put the keys into, AAD keys are protected by TPM, and the TPM is ready for attestation. |
+| 1 | Initiate Recovery if Keys aren't already protected by the TPM, there is a TPM to put the keys into, Microsoft Entra ID keys are protected by TPM, and the TPM is ready for attestation. |
 <!-- Device-Provider-{ProviderID}-Recovery-InitiateRecovery-AllowedValues-End -->
 
 <!-- Device-Provider-{ProviderID}-Recovery-InitiateRecovery-Examples-Begin -->
@@ -3761,7 +3761,7 @@ This node initiates a recovery action. The server can specify prerequisites befo
 
 <!-- Device-Provider-{ProviderID}-Recovery-RecoveryStatus-Description-Begin -->
 <!-- Description-Source-DDF -->
-This node tracks the status of a Recovery request from the InitiateRecovery node. 0 - No Recovery request has been processed. 1 - Recovery is in Process. 2 - Recovery has finished successfully. 3 - Recovery has failed to start because TPM isn't available. 4 - Recovery has failed to start because AAD keys aren't protected by the TPM. 5 - Recovery has failed to start because the MDM keys are already protected by the TPM. 6 - Recovery has failed to start because the TPM isn't ready for attestation. 7 - Recovery has failed because the client can't authenticate to the server. 8 - Recovery has failed because the server has rejected the client's request.
+This node tracks the status of a Recovery request from the InitiateRecovery node. 0 - No Recovery request has been processed. 1 - Recovery is in Process. 2 - Recovery has finished successfully. 3 - Recovery has failed to start because TPM isn't available. 4 - Recovery has failed to start because Microsoft Entra ID keys aren't protected by the TPM. 5 - Recovery has failed to start because the MDM keys are already protected by the TPM. 6 - Recovery has failed to start because the TPM isn't ready for attestation. 7 - Recovery has failed because the client can't authenticate to the server. 8 - Recovery has failed because the server has rejected the client's request.
 <!-- Device-Provider-{ProviderID}-Recovery-RecoveryStatus-Description-End -->
 
 <!-- Device-Provider-{ProviderID}-Recovery-RecoveryStatus-Editable-Begin -->

@@ -20,7 +20,7 @@ ms.topic: reference
 
 <!-- PassportForWork-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-The PassportForWork configuration service provider is used to provision Windows Hello for Business (formerly Microsoft Passport for Work). It allows you to log in to Windows using your Active Directory or Azure Active Directory account and replace passwords, smartcards, and virtual smart cards.
+The PassportForWork configuration service provider is used to provision Windows Hello for Business (formerly Microsoft Passport for Work). It allows you to log in to Windows using your Active Directory or Microsoft Entra account and replace passwords, smartcards, and virtual smart cards.
 
 > [!IMPORTANT]
 > Starting with Windows 10, version 1607 all devices only have one PIN associated with Windows Hello for Business. This means that any PIN on a device will be subject to the policies specified in the PassportForWork CSP. The values specified take precedence over any complexity rules set via Exchange ActiveSync (EAS) or the DeviceLock CSP.
@@ -117,7 +117,7 @@ To get the GUID, use the PowerShell cmdlet [Get-AzureAccount](/powershell/module
 |:--|:--|
 | Format | `node` |
 | Access Type | Add, Delete, Get |
-| Dynamic Node Naming | UniqueName: A globally unique identifier (GUID), without curly braces ( { , } ), that is used as part of Windows Hello for Business provisioning and management. To get a GUID, use the PowerShell cmdlet Get-AzureAccount.  For more information see https://devblogs.microsoft.com/scripting/get-windows-azure-active-directory-tenant-id-in-windows-powershell. |
+| Dynamic Node Naming | UniqueName: A globally unique identifier (GUID), without curly braces ( { , } ), that is used as part of Windows Hello for Business provisioning and management. To get a GUID, use the PowerShell cmdlet Get-AzureAccount.  For more information see https://devblogs.microsoft.com/scripting/get-windows-Microsoft Entra tenant-id-in-windows-powershell. |
 <!-- Device-{TenantId}-DFProperties-End -->
 
 <!-- Device-{TenantId}-Examples-Begin -->
@@ -1119,9 +1119,9 @@ Windows Hello for Business can use certificates to authenticate to on-premise re
 
 <!-- Device-{TenantId}-Policies-UseCloudTrustForOnPremAuth-Description-Begin -->
 <!-- Description-Source-DDF -->
-Boolean value that enables Windows Hello for Business to use Azure AD Kerberos to authenticate to on-premises resources.
+Boolean value that enables Windows Hello for Business to use Microsoft Entra Kerberos to authenticate to on-premises resources.
 
-- If you enable this policy setting, Windows Hello for Business will use an Azure AD Kerberos ticket to authenticate to on-premises resources. The Azure AD Kerberos ticket is returned to the client after a successful authentication to Azure AD if Azure AD Kerberos is enabled for the tenant and domain.
+- If you enable this policy setting, Windows Hello for Business will use a Microsoft Entra Kerberos ticket to authenticate to on-premises resources. The Microsoft Entra Kerberos ticket is returned to the client after a successful authentication to Microsoft Entra ID if Microsoft Entra Kerberos is enabled for the tenant and domain.
 
 - If you disable or don't configure this policy setting, Windows Hello for Business will use a key or certificate to authenticate to on-premises resources.
 <!-- Device-{TenantId}-Policies-UseCloudTrustForOnPremAuth-Description-End -->
@@ -1226,7 +1226,7 @@ Windows requires a user to lock and unlock their session after changing this set
 
 <!-- Device-{TenantId}-Policies-UsePassportForWork-Description-Begin -->
 <!-- Description-Source-DDF -->
-Windows Hello for Business is an alternative method for signing into Windows using your Active Directory or Azure Active Directory account that can replace passwords, Smart Cards, and Virtual Smart Cards.
+Windows Hello for Business is an alternative method for signing into Windows using your Active Directory or Microsoft Entra account that can replace passwords, Smart Cards, and Virtual Smart Cards.
 
 - If you enable or don't configure this policy setting, the device provisions Windows Hello for Business for all users.
 
@@ -1941,7 +1941,7 @@ To get the GUID, use the PowerShell cmdlet [Get-AzureAccount](/powershell/module
 |:--|:--|
 | Format | `node` |
 | Access Type | Add, Delete, Get |
-| Dynamic Node Naming | UniqueName: A globally unique identifier (GUID), without curly braces ( { , } ), that is used as part of Windows Hello for Business provisioning and management. To get a GUID, use the PowerShell cmdlet Get-AzureAccount.  For more information see https://devblogs.microsoft.com/scripting/get-windows-azure-active-directory-tenant-id-in-windows-powershell. |
+| Dynamic Node Naming | UniqueName: A globally unique identifier (GUID), without curly braces ( { , } ), that is used as part of Windows Hello for Business provisioning and management. To get a GUID, use the PowerShell cmdlet Get-AzureAccount.  For more information see https://devblogs.microsoft.com/scripting/get-windows-Microsoft Entra tenant-id-in-windows-powershell. |
 <!-- User-{TenantId}-DFProperties-End -->
 
 <!-- User-{TenantId}-Examples-Begin -->
@@ -2553,7 +2553,7 @@ A Trusted Platform Module (TPM) provides additional security benefits over softw
 
 <!-- User-{TenantId}-Policies-UsePassportForWork-Description-Begin -->
 <!-- Description-Source-DDF -->
-Windows Hello for Business is an alternative method for signing into Windows using your Active Directory or Azure Active Directory account that can replace passwords, Smart Cards, and Virtual Smart Cards.
+Windows Hello for Business is an alternative method for signing into Windows using your Active Directory or Microsoft Entra account that can replace passwords, Smart Cards, and Virtual Smart Cards.
 
 - If you enable or don't configure this policy setting, the device provisions Windows Hello for Business for all users.
 

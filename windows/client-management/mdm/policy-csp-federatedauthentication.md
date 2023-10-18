@@ -43,7 +43,7 @@ Specifies whether web-based sign-in is enabled with the Primary User experience.
 <!-- EnableWebSignInForPrimaryUser-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> Web Sign-in is only supported on Azure AD Joined PCs.
+> Web Sign-in is only supported on Microsoft Entra joined PCs.
 <!-- EnableWebSignInForPrimaryUser-Editable-End -->
 
 <!-- EnableWebSignInForPrimaryUser-DFProperties-Begin -->

@@ -236,7 +236,7 @@ The expected values for this policy are:
 
 1 = This is the default, when the policy isn't set. Warning prompt and encryption notification is allowed.
 
-0 = Disables the warning prompt and encryption notification. Starting in Windows 10, next major update, the value 0 only takes effect on Azure Active Directory joined devices.
+0 = Disables the warning prompt and encryption notification. Starting in Windows 10, next major update, the value 0 only takes effect on Microsoft Entra joined devices.
 
 Windows will attempt to silently enable BitLocker for value 0.
 <!-- Device-AllowWarningForOtherDiskEncryption-Description-End -->
@@ -244,12 +244,12 @@ Windows will attempt to silently enable BitLocker for value 0.
 <!-- Device-AllowWarningForOtherDiskEncryption-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> When you disable the warning prompt, the OS drive's recovery key will back up to the user's Azure Active Directory account. When you allow the warning prompt, the user who receives the prompt can select where to back up the OS drive's recovery key.
+> When you disable the warning prompt, the OS drive's recovery key will back up to the user's Microsoft Entra account. When you allow the warning prompt, the user who receives the prompt can select where to back up the OS drive's recovery key.
 >
 > The endpoint for a fixed data drive's backup is chosen in the following order:
 >
 > 1. The user's Windows Server Active Directory Domain Services account.
-> 2. The user's Azure Active Directory account.
+> 2. The user's Microsoft Entra account.
 > 3. The user's personal OneDrive (MDM/MAM only).
 >
 > Encryption will wait until one of these three locations backs up successfully.
@@ -270,7 +270,7 @@ Windows will attempt to silently enable BitLocker for value 0.
 
 | Value | Description |
 |:--|:--|
-| 0 | Disables the warning prompt. Starting in Windows 10, version 1803, the value 0 can only be set for Azure Active Directory joined devices. Windows will attempt to silently enable BitLocker for value 0. |
+| 0 | Disables the warning prompt. Starting in Windows 10, version 1803, the value 0 can only be set for Microsoft Entra joined devices. Windows will attempt to silently enable BitLocker for value 0. |
 | 1 (Default) | Warning prompt allowed. |
 <!-- Device-AllowWarningForOtherDiskEncryption-AllowedValues-End -->
 
@@ -312,9 +312,9 @@ Windows will attempt to silently enable BitLocker for value 0.
 
 <!-- Device-ConfigureRecoveryPasswordRotation-Description-Begin -->
 <!-- Description-Source-DDF -->
-Allows Admin to configure Numeric Recovery Password Rotation upon use for OS and fixed drives on AAD and Hybrid domain joined devices.
+Allows Admin to configure Numeric Recovery Password Rotation upon use for OS and fixed drives on Microsoft Entra ID and Hybrid domain joined devices.
 
-When not configured, Rotation is turned on by default for AAD only and off on Hybrid. The Policy will be effective only when Active Directory back up for recovery password is configured to required.
+When not configured, Rotation is turned on by default for Microsoft Entra-only and off on Hybrid. The Policy will be effective only when Active Directory back up for recovery password is configured to required.
 
 For OS drive: Turn on "Do not enable BitLocker until recovery information is stored to AD DS for operating system drives".
 
@@ -322,8 +322,8 @@ For Fixed drives: Turn on "Do not enable BitLocker until recovery information is
 
 Supported Values: 0 - Numeric Recovery Passwords rotation OFF.
 
-1 - Numeric Recovery Passwords Rotation upon use ON for AAD joined devices. Default value
-2 - Numeric Recovery Passwords Rotation upon use ON for both AAD and Hybrid devices.
+1 - Numeric Recovery Passwords Rotation upon use ON for Microsoft Entra joined devices. Default value
+2 - Numeric Recovery Passwords Rotation upon use ON for both Microsoft Entra ID and Hybrid devices.
 <!-- Device-ConfigureRecoveryPasswordRotation-Description-End -->
 
 <!-- Device-ConfigureRecoveryPasswordRotation-Editable-Begin -->
@@ -346,8 +346,8 @@ Supported Values: 0 - Numeric Recovery Passwords rotation OFF.
 | Value | Description |
 |:--|:--|
 | 0 (Default) | Refresh off (default). |
-| 1 | Refresh on for Azure AD-joined devices. |
-| 2 | Refresh on for both Azure AD-joined and hybrid-joined devices. |
+| 1 | Refresh on for Microsoft Entra joined devices. |
+| 2 | Refresh on for both Microsoft Entra joined and hybrid-joined devices. |
 <!-- Device-ConfigureRecoveryPasswordRotation-AllowedValues-End -->
 
 <!-- Device-ConfigureRecoveryPasswordRotation-Examples-Begin -->
@@ -1269,7 +1269,7 @@ Disabling the policy won't turn off the encryption on the storage card. But will
 
 <!-- Device-RotateRecoveryPasswords-Description-Begin -->
 <!-- Description-Source-DDF -->
-Allows admin to push one-time rotation of all numeric recovery passwords for OS and Fixed Data drives on an Azure Active Directory or hybrid-joined device.
+Allows admin to push one-time rotation of all numeric recovery passwords for OS and Fixed Data drives on a Microsoft Entra ID or hybrid-joined device.
 
 This policy is Execute type and rotates all numeric passwords when issued from MDM tools.
 
@@ -1401,7 +1401,7 @@ This value represents a bitmask with each bit and the corresponding error code d
 | 8 |Recovery key backup failed.|
 | 9 |A fixed drive is unprotected.|
 | 10 |The encryption method of the fixed drive doesn't match the BitLocker policy.|
-| 11 |To encrypt drives, the BitLocker policy requires either the user to sign in as an Administrator or if the device is joined to Azure AD, the AllowStandardUserEncryption policy must be set to 1.|
+| 11 |To encrypt drives, the BitLocker policy requires either the user to sign in as an Administrator or if the device is joined to Microsoft Entra ID, the AllowStandardUserEncryption policy must be set to 1.|
 | 12 |Windows Recovery Environment (WinRE) isn't configured.|
 | 13 |A TPM isn't available for BitLocker, either because it isn't present, it has been made unavailable in the Registry, or the OS is on a removable drive. |
 | 14 |The TPM isn't ready for BitLocker.|
