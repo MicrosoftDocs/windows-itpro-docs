@@ -86,18 +86,25 @@ To verify that Bing Chat Enterprise is enabled for the user as the chat provider
    > [!Note]
    > If you previously disabled Bing Chat Enterprise using the URL, `https://aka.ms/TurnOffBCE`, see [Manage Bing Chat Enterprise](/bing-chat-enterprise/manage) for verifying that Bing Chat Enterprise is enabled for your users.
 
-```http
-*would be nice to have a Graph query that lists users that do/do not have BCE app enabled*
-*licensedetails does output BCE, so its a matter of just getting the query right*
-**powershell or http preferably**
-Ex output from my lab: GET https://graph.microsoft.com/v1.0/me/licenseDetails
-{
-    "servicePlanId": "0d0c0d31-fae7-41f2-b909-eaf4d7f26dba",
-    "servicePlanName": "Bing_Chat_Enterprise",
-    "provisioningStatus": "Success",
-    "appliesTo": "User"
-},
-https://learn.microsoft.com/graph/api/resources/licensedetails
+The following PowerShell script connects to Microsoft Graph and lists which users that have Bing Chat Enterprise enabled and disabled:
+
+```powershell
+# Install graph module
+if (-not (Get-Module Microsoft.Graph.Users)) {
+    Install-Module Microsoft.Graph.Users
+}
+
+# Connect to MS graph
+Connect-MgGraph -Scopes 'User.Read.All'
+
+# Get all users
+$users = Get-MgUser -All -ConsistencyLevel eventual -Property Id, DisplayName, Mail, UserPrincipalName, AssignedPlans
+
+# Users with BCE enabled
+$users | Where-Object { $_.AssignedPlans -and $_.AssignedPlans.Service -eq "Bing" -and $_.AssignedPlans.CapabilityStatus -eq "Enabled" } | Format-Table
+
+# Users without BCE enabled
+$users | Where-Object { -not $_.AssignedPlans -or ($_.AssignedPlans.Service -eq "Bing" -and $_.AssignedPlans.CapabilityStatus -ne "Enabled") } | Format-Table
 ```
 
 When Bing Chat Enterprise is the chat provider platform, the user experience clearly states that **Your personal and company data are protected in this chat**. There's also a shield symbol labeled **Protected** at the top of the Copilot in Windows sidebar and the provider is listed under the Copilot logo when the sidebar is first opened. The following image shows the message that's displayed when Bing Chat Enterprise is the chat provider platform for Copilot in Windows:
