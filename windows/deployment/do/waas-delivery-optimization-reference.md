@@ -35,8 +35,8 @@ In MDM, the same settings are under **.Vendor/MSFT/Policy/Config/DeliveryOptimiz
 | Group Policy setting | MDM setting | Supported from version | Notes |
 | --- | --- | --- | ------- |
 | [Download mode](#download-mode) | DODownloadMode | 1511 | Default is set to LAN(1). The Group [Download mode](#download-mode) (2) combined with [Group ID](#group-id), enables administrators to create custom device groups that share content between devices in the group.|
-| [Group ID](#group-id)  | DOGroupID | 1511 | Used with Group [Download mode](#download-mode). If not set, check [GroupIDSource](#select-the-source-of-group-ids). When GroupID or GroupIDSource policies aren't set, the GroupID is defined as the AD Site (1), Authenticated domain SID (2) or Azure AD Tenant ID (5), in that order.  |
-| [Select the source of Group IDs](#select-the-source-of-group-ids) | DOGroupIDSource | 1803 | If not set, check [Group ID](#group-id). When the GroupID or GroupIDSource policies aren't set, the Group is defined as the AD Site (1), Authenticated domain SID (2) or Azure AD Tenant ID (5), in that order. |
+| [Group ID](#group-id)  | DOGroupID | 1511 | Used with Group [Download mode](#download-mode). If not set, check [GroupIDSource](#select-the-source-of-group-ids). When GroupID or GroupIDSource policies aren't set, the GroupID is defined as the AD Site (1), Authenticated domain SID (2) or Microsoft Entra tenant ID (5), in that order.  |
+| [Select the source of Group IDs](#select-the-source-of-group-ids) | DOGroupIDSource | 1803 | If not set, check [Group ID](#group-id). When the GroupID or GroupIDSource policies aren't set, the Group is defined as the AD Site (1), Authenticated domain SID (2) or Microsoft Entra tenant ID (5), in that order. |
 | [Select a method to restrict peer selection](#select-a-method-to-restrict-peer-selection) | DORestrictPeerSelectionBy | 1803 | Starting in Windows 11, a new option to use 'Local discovery (DNS-SD)' is available to set via this policy. |
 | [Minimum RAM (inclusive) allowed to use peer caching](#minimum-ram-inclusive-allowed-to-use-peer-caching) | DOMinRAMAllowedToPeer | 1703 | Default value is 4 GB. |
 | [Minimum disk size allowed to use peer caching](#minimum-disk-size-allowed-to-use-peer-caching) | DOMinDiskSizeAllowedToPeer | 1703 | Default value is 32 GB. |
@@ -135,7 +135,7 @@ Download mode dictates which download sources clients are allowed to use when do
 | Bypass (100) | Starting in Windows 11, this option is deprecated. Don't set **Download mode** to '100' (Bypass), which can cause some content to fail to download. If you want to disable peer-to-peer functionality, set DownloadMode to (0). If your device doesn't have internet access, set Download Mode to (99). When you set Bypass (100), the download bypasses Delivery Optimization and uses BITS instead. You don't need to set this option if you're using Configuration Manager. |
 
 > [!NOTE]
-> When you use Azure Active Directory tenant, AD Site, or AD Domain as the source of group IDs, the association of devices participating in the group should not be relied on for an authentication of identity of those devices.
+> When you use Microsoft Entra tenant, AD Site, or AD Domain as the source of group IDs, the association of devices participating in the group should not be relied on for an authentication of identity of those devices.
 
 ### Group ID
 
@@ -159,9 +159,9 @@ Starting in Windows 10, version 1803, set this policy to restrict peer selection
 - 2 = Authenticated domain SID
 - 3 = DHCP Option ID (with this option, the client queries DHCP Option ID 234 and use the returned GUID value as the Group ID)
 - 4 = DNS Suffix
-- 5 = Starting with Windows 10, version 1903, you can use the Azure AD Tenant ID as a means to define groups. To do this set the value for DOGroupIdSource to its new maximum value of 5.
+- 5 = Starting with Windows 10, version 1903, you can use the Microsoft Entra tenant ID as a means to define groups. To do this set the value for DOGroupIdSource to its new maximum value of 5.
 
-When set, the Group ID is assigned automatically from the selected source. If you set this policy, the GroupID policy is ignored. The default behavior, when the GroupID or GroupIDSource policies aren't set, is to determine the Group ID using AD Site (1), Authenticated domain SID (2) or Azure AD Tenant ID (5), in that order. If GroupIDSource is set to either DHCP Option ID (3) or DNS Suffix (4) and those methods fail, the default behavior is used instead. The option set in this policy only applies to Group (2) download mode. If Group (2) isn't set as Download mode, this policy will be ignored. If you set the value to anything other than 0-5, the policy is ignored.  
+When set, the Group ID is assigned automatically from the selected source. If you set this policy, the GroupID policy is ignored. The default behavior, when the GroupID or GroupIDSource policies aren't set, is to determine the Group ID using AD Site (1), Authenticated domain SID (2) or Microsoft Entra tenant ID (5), in that order. If GroupIDSource is set to either DHCP Option ID (3) or DNS Suffix (4) and those methods fail, the default behavior is used instead. The option set in this policy only applies to Group (2) download mode. If Group (2) isn't set as Download mode, this policy will be ignored. If you set the value to anything other than 0-5, the policy is ignored.  
 
 ### Minimum RAM (inclusive) allowed to use Peer Caching  
 
