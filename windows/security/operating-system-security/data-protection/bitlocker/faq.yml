@@ -5,7 +5,7 @@ metadata:
   ms.collection:
     - tier1
   ms.topic: faq
-  ms.date: 10/02/2023
+  ms.date: 10/18/2023
 title: BitLocker FAQ
 summary: Learn more about BitLocker by reviewing the frequently asked questions.
 
@@ -17,25 +17,9 @@ sections:
       - question: Does BitLocker support multifactor authentication?
         answer: Yes, BitLocker supports multifactor authentication for operating system drives. If BitLocker is enabled on a computer that has a TPM version 1.2 or later, additional forms of authentication can be used with the TPM protection.
 
-      - question: What are the BitLocker hardware and software requirements?
-        answer: |
-          For requirements, see [System requirements](index.md#system-requirements).
-          
-          > [!NOTE]
-          > Dynamic disks aren't supported by BitLocker. Dynamic data volumes won't be displayed in the Control Panel. Although the operating system volume will always be displayed in the Control Panel, regardless of whether it's a Dynamic disk, if it's a dynamic disk it can't be protected by BitLocker.
-
       - question: Why are two partitions required?
         answer: Two partitions are required to run BitLocker because pre-startup authentication and system integrity verification must occur on a separate partition from the encrypted operating system drive. This configuration helps protect the operating system and the information in the encrypted drive.
 
-      - question: Which Trusted Platform Modules (TPMs) does BitLocker support?
-        answer: |
-          BitLocker supports TPM version 1.2 or higher. BitLocker support for TPM 2.0 requires Unified Extensible Firmware Interface (UEFI) for the device. 
-          
-          > [!NOTE]
-          > TPM 2.0 isn't supported in Legacy and CSM Modes of the BIOS. Devices with TPM 2.0 must have their BIOS mode configured as Native UEFI only. The Legacy and Compatibility Support Module (CSM) options must be disabled. For added security, enable the Secure Boot feature.
-          > 
-          > Installed Operating System on hardware in legacy mode will stop the OS from booting when the BIOS mode is changed to UEFI. Use the tool [MBR2GPT](/windows/deployment/mbr-to-gpt) before changing the BIOS mode that will prepare the OS and the disk to support UEFI.
-          
       - question: How can I tell if a computer has a TPM?
         answer: The TPM status can be checked in **Windows Defender Security Center** > **Device Security** > **Security processor details**. 
 
@@ -51,7 +35,7 @@ sections:
           - It's compliant with the TCG standards for a client computer
           - It has a secure update mechanism to help prevent a malicious BIOS or boot firmware from being installed on the computer
           
-      - question: What credentials are required to use BitLocker?
+      - question: What user rights are required to use BitLocker?
         answer: To turn on, turn off, or change configurations of BitLocker on operating system and fixed data drives, membership to the local *Administrators* group is required. Standard users can turn on, turn off, or change configurations of BitLocker on removable data drives.
 
       - question: What is the recommended boot order for computers that are going to be BitLocker-protected?
@@ -91,11 +75,8 @@ sections:
     questions:
       - question: Can BitLocker deployment be automated in an enterprise environment?
         answer: |
-          Yes, the deployment and configuration of both BitLocker and the TPM can be automated using either WMI or Windows PowerShell scripts. Which method is chosen to implement the automation depends on the environment. `Manage-bde.exe` can also be used to locally or remotely configure BitLocker. For more info about writing scripts that use the BitLocker WMI providers, see [BitLocker Drive Encryption Provider](/windows/win32/secprov/bitlocker-drive-encryption-provider). For more info about using Windows PowerShell cmdlets with BitLocker Drive Encryption, see [BitLocker Cmdlets in Windows PowerShell](/powershell/module/bitlocker/index?view=win10-ps).
+          Yes, the deployment and configuration BitLocker can be automated using either Windows PowerShell or with the `manage-bde.exe` command. For more information about common BitLocker management commands, check the [BitLocker operations guide](operations-guide.md).
           
-      - question: Can BitLocker encrypt more than just the operating system drive?
-        answer: Yes.
-
       - question: Is there a noticeable performance impact when BitLocker is enabled on a computer?
         answer: Typically, there's a small performance overhead, often in single-digit percentages, which is relative to the throughput of the storage operations on which it needs to operate.
 
@@ -111,13 +92,13 @@ sections:
       - question: Does BitLocker encrypt and decrypt the entire drive all at once when reading and writing data?
         answer: No, BitLocker doesn't encrypt and decrypt the entire drive when reading and writing data. The encrypted sectors in the BitLocker-protected drive are decrypted only as they're requested from system read operations. Blocks that are written to the drive are encrypted before the system writes them to the physical disk. No unencrypted data is ever stored on a BitLocker-protected drive.
 
-      - question: How can I prevent users on a network from storing data on an unencrypted drive?
+      - question: How can I prevent users from storing data on an unencrypted drive?
         answer: |
           Policy settings can be configured to require that data drives be BitLocker-protected before a BitLocker-protected computer can write data to them. For more info, see [BitLocker policy settings](configure.md).
           When these policy settings are enabled, the BitLocker-protected operating system will mount any data drives that aren't protected by BitLocker as read-only.
           
       - question: |
-          What is *Used Disk Space Only* encryption?
+          What is Used Disk Space Only encryption?
         answer: |
           BitLocker lets users choose to encrypt just their data. Although it's not the most secure way to encrypt a drive, this option can reduce encryption time by more than 99 percent, depending on how much data that needs to be encrypted. For more information, see [Used Disk Space Only encryption](planning-guide.md#used-disk-space-only-encryption).
           
@@ -153,7 +134,7 @@ sections:
       - question: Can I access my BitLocker-protected drive if I insert the hard disk into a different computer?
         answer: Yes, if the drive is a data drive, it can be unlocked from the **BitLocker Drive Encryption** Control Panel item by using a password or smart card. If the data drive was configured for automatic unlock only, it will need to be unlocked by using the recovery key. The encrypted hard disk can be unlocked by a data recovery agent (if one was configured) or it can be unlocked by using the recovery key.
 
-      - question: "Why isn't the **Turn BitLocker on** option available when I right-click a drive?"
+      - question: Why isn't the "Turn BitLocker on" option available when I right-click a drive?
         answer: Some drives can't be encrypted with BitLocker. Reasons a drive can't be encrypted include insufficient disk size, an incompatible file system, if the drive is a dynamic disk, or a drive is designated as the system partition. By default, the system drive (or system partition) is hidden from display. However, if it isn't created as a hidden drive when the operating system was installed due to a custom installation process, that drive might be displayed but can't be encrypted.
 
       - question: What type of disk configurations are supported by BitLocker?
@@ -166,7 +147,7 @@ sections:
           Removable data drives can be unlocked using a password or a smart card. A SID protector can also be configured to unlock a drive by using user domain credentials. After encryption has started, the drive can also be automatically unlocked on a specific computer for a specific user account. System administrators can configure which options are available for users including password complexity and minimum length requirements. To unlock by using a SID protector, use `manage-bde.exe`:
           
           ```cmd
-          Manage-bde.exe -protectors -add e: -sid <i>domain\username</i></code>
+          Manage-bde.exe -protectors -add e: -sid domain\username
           ```
           
       - question: What is the difference between a TPM owner password, recovery password, recovery key, PIN, enhanced PIN, and startup key?
@@ -314,25 +295,15 @@ sections:
         answer: |
           If BitLocker is enabled on a drive before policy settings are applied to enforce a backup, the recovery information won't be automatically backed up to AD DS when the computer joins the domain or when the policy settings are subsequently applied. However, the policy settings **Choose how BitLocker-protected operating system drives can be recovered**, **Choose how BitLocker-protected fixed drives can be recovered**, and **Choose how BitLocker-protected removable drives can be recovered** can be chosen to require the computer to be connected to a domain before BitLocker can be enabled to help ensure that recovery information for BitLocker-protected drives in the organization is backed up to AD DS.
           
-          For more info, see [BitLocker policy settings](configure.md).
-          
-          The BitLocker Windows Management Instrumentation (WMI) interface allows administrators to write a script to back up or synchronize an online client's existing recovery information. However, BitLocker doesn't automatically manage this process. The `manage-bde.exe` command-line tool can also be used to manually back up recovery information to AD DS. For example, to back up all of the recovery information for the `$env:SystemDrive` to AD DS, the following command script can be used from an elevated Command Prompt:
-          
-          ```powershell
-          $BitLocker = Get-BitLockerVolume -MountPoint $env:SystemDrive
-          $RecoveryProtector = $BitLocker.KeyProtector | Where-Object { $_.KeyProtectorType -eq 'RecoveryPassword' }
-          
-          Backup-BitLockerKeyProtector -MountPoint $env:SystemDrive -KeyProtectorId $RecoveryProtector.KeyProtectorID
-          BackupToAAD-BitLockerKeyProtector -MountPoint $env:SystemDrive -KeyProtectorId $RecoveryProtector.KeyProtectorID
-          ```
+          For more information how to backup the recovery password to AD DS or Microsoft Entra ID, review the [BitLocker operations guide](operations-guide.md).
           
           > [!IMPORTANT]
           > Joining a computer to the domain should be the first step for new computers within an organization. After computers are joined to a domain, storing the BitLocker recovery key to AD DS is automatic (when enabled with policy settings).
 
       - question: |
-          Is there an event log entry recorded on the client computer to indicate the success or failure of the Active Directory backup?
+          Is there an event log entry recorded on the client computer to indicate the success or failure of the Microsoft Entra ID or Active Directory backup?
         answer: |
-          Yes, an event log entry that indicates the success or failure of an Active Directory backup is recorded on the client computer. However, even if an event log entry says "Success," the information could have been subsequently removed from AD DS, or BitLocker could have been reconfigured in such a way that the Active Directory information can no longer unlock the drive (such as by removing the recovery password key protector). In addition, it's also possible that the log entry could be spoofed.
+          Yes, an event log entry that indicates the success or failure of a backup is recorded on the client computer. However, even if an event log entry says "Success," the information could have been subsequently removed from AD DS, or BitLocker could have been reconfigured in such a way that the Active Directory information can no longer unlock the drive (such as by removing the recovery password key protector). In addition, it's also possible that the log entry could be spoofed.
           
           Ultimately, determining whether a legitimate backup exists in AD DS requires querying AD DS with domain administrator credentials by using the BitLocker password viewer tool.
           
@@ -458,7 +429,7 @@ sections:
           Limited BitLocker functionality is available in Safe Mode. BitLocker-protected drives can be unlocked and decrypted by using the **BitLocker Drive Encryption** Control Panel item. Right-clicking to access BitLocker options from Windows Explorer isn't available in Safe Mode.
 
       - question: |
-          How do I *lock* a data drive?
+          How do I "lock" a data drive?
         answer: |
           Both fixed and removable data drives can be locked by using the Manage-bde command-line tool and the -lock command.
           
