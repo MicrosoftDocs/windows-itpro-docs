@@ -1941,7 +1941,7 @@ To get the GUID, use the PowerShell cmdlet [Get-AzureAccount](/powershell/module
 |:--|:--|
 | Format | `node` |
 | Access Type | Add, Delete, Get |
-| Dynamic Node Naming | UniqueName: A globally unique identifier (GUID), without curly braces ( { , } ), that is used as part of Windows Hello for Business provisioning and management. To get a GUID, use the PowerShell cmdlet Get-AzureAccount.  For more information see https://devblogs.microsoft.com/scripting/get-windows-Microsoft Entra tenant-id-in-windows-powershell. |
+| Dynamic Node Naming | UniqueName: A globally unique identifier (GUID), without curly braces ( { , } ), that is used as part of Windows Hello for Business provisioning and management. To get a GUID, use the PowerShell cmdlet Get-AzureAccount.  For more information see https://devblogs.microsoft.com/scripting/get-windows-azure-active-directory-tenant-id-in-windows-powershell. |
 <!-- User-{TenantId}-DFProperties-End -->
 
 <!-- User-{TenantId}-Examples-Begin -->
