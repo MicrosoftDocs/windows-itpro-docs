@@ -9,7 +9,7 @@ ms.topic: include
 |:---|:---:|:---:|:---:|:---:|:---:|
 |**[Access Control (ACL/SACL)](/windows/security/identity-protection/access-control/access-control)**|Yes|Yes|Yes|Yes|Yes|
 |**[Account Lockout Policy](/windows/security/threat-protection/security-policy-settings/account-lockout-policy)**|Yes|Yes|Yes|Yes|Yes|
-|**[Active Directory domain join, Microsoft Entra join, and Microsoft Entra Hybrid join with single sign-on (SSO)](/azure/active-directory/devices/concept-directory-join)**|Yes|Yes|Yes|Yes|Yes|
+|**[Active Directory domain join, Microsoft Entra join, and Microsoft Entra hybrid join with single sign-on (SSO)](/azure/active-directory/devices/concept-directory-join)**|Yes|Yes|Yes|Yes|Yes|
 |**[Always On VPN (device tunnel)](/Windows-server/remote/remote-access/overview-always-on-vpn)**|❌|Yes|Yes|Yes|Yes|
 |**[App containers](/virtualization/windowscontainers/about/)**|Yes|Yes|Yes|Yes|Yes|
 |**[AppLocker](/windows/security/application-security/application-control/windows-defender-application-control/applocker/applocker-overview)**|❌|Yes|Yes|Yes|Yes|

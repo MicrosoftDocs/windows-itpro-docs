@@ -95,7 +95,7 @@ Each calculated values used in the Delivery Optimization report are listed below
 
 ## Mapping GroupID
 
-In the **Efficiency By Group** subsection, the **GroupID** is displayed as an encoded SHA256 hash. You can create a mapping of original to encoded GroupIDs using the following PowerShell example:
+In the **Efficiency By Group** subsection, the **GroupID** is displayed as an encoded SHA256 hash and is case sensitive. You can create a mapping of original to encoded GroupIDs using the following PowerShell example:
 
 ```powershell
 $text = "<myOriginalGroupID>`0" ; # The `0 null terminator is required
