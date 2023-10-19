@@ -63,7 +63,7 @@ Specifies whether web-based sign-in is enabled with the Primary User experience.
 |:--|:--|
 | 0 (Default) | Feature defaults as appropriate for edition and device capabilities. As of now, all editions/devices exhibit Disabled behavior by default. However, this may change for future editions/devices. |
 | 1 | Enabled. Web Sign-in Credential Provider will be enabled for device sign-in. |
-| 2 | Disabled. Web Sign-in Credential Provider will be not be enabled for device sign-in. |
+| 2 | Disabled. Web Sign-in Credential Provider isn't be enabled for device sign-in. |
 <!-- EnableWebSignInForPrimaryUser-AllowedValues-End -->
 
 <!-- EnableWebSignInForPrimaryUser-Examples-Begin -->
