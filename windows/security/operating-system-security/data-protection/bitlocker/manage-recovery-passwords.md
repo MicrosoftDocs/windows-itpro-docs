@@ -98,3 +98,19 @@ The following procedures describe the most common tasks performed by using the B
 1. In Active Directory Users and Computers, right-click the domain container and select **Find BitLocker Recovery Password**
 1. In the **Find BitLocker Recovery Password** dialog box, type the first eight characters of the recovery password in the **Password ID (first 8 characters)** box, and select **Search**
 1. Once the recovery password is located, you can use the previous procedure to copy it
+
+
+## Rotate keys
+
+>[!TIP]
+> For Microsoft Entra joined devices, the recovery password should be stored in Microsoft Entra ID
+> For Active Directoy domain-joined devices, including servers, the recovery password should be stored in AD DS
+
+SCCM rotate keys: /mem/configmgr/protect/deploy-use/bitlocker/recovery-service#rotate-keys
+Intune rotate keys: /mem/intune/protect/encrypt-devices#rotate-bitlocker-recovery-keys
+
+Prerequisites:
+
+Client-driven recovery password rotation to Enable rotation on Azure AD-joined devices or Enable rotation on Azure AD and Hybrid-joined devices
+Save BitLocker recovery information to Azure Active Directory to Enabled
+Store recovery information in Azure Active Directory before enabling BitLocker to Required

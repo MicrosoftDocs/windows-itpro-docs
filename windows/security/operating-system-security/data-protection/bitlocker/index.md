@@ -101,6 +101,11 @@ Unlike a standard BitLocker implementation, device encryption is enabled automat
 - If the device isn't Microsoft Entra joined or Active Directory domain joined, a Microsoft account with administrative privileges on the device is required. When the administrator uses a Microsoft account to sign in, the clear key is removed, a recovery key is uploaded to the online Microsoft account, and a TPM protector is created. Should a device require the recovery key, the user is guided to use an alternate device and navigate to a recovery key access URL to retrieve the recovery key by using their Microsoft account credentials
 - If a device uses only local accounts, then it remains unprotected even though the data is encrypted
 
+> [!IMPORTANT]
+> Device encryption uses the `XTS-AES 128-bit` encryption method, by default. In case you configure a policy setting to use a different encryption method, you can use the Enrollment Status Page to avoid the device to begin encryption with the default method. BitLocker has a logic that doesn't start encrypting until the end of OOBE, after the Enrollment Status Page device configuration phase is complete. This logic gives a device enough time to receive the BitLocker policy settings before starting encryption.
+>
+> If a different encryption method and/or cipher strength is needed but the device is already encrypted, it must first be decrypted before the new encryption method and/or cipher strength can be applied. After the device is decrypted, you can apply different BitLocker settings.
+
 If a device doesn't initially qualify for device encryption, but then a change is made that causes the device to qualify (for example, turn *Secure Boot* on), device encryption enables BitLocker automatically as soon as it detects it (unless device encryption is disabled).
 
 You can check whether a device meets requirements for device encryption in the System Information app (`msinfo32.exe`). If the device meets the requirements, System Information shows a line that reads:
@@ -108,9 +113,6 @@ You can check whether a device meets requirements for device encryption in the S
 |Item|Value|
 |-|-|
 |Device Encryption Support | Meets prerequisites|
-
-> [!NOTE]
-> Device encryption uses the `XTS-AES 128-bit` encryption method. If a different encryption method and/or cipher strength is needed but the device is already encrypted, it must first be decrypted before the new encryption method and/or cipher strength can be applied. After the device is decrypted, you can apply different BitLocker settings.
 
 ### Difference between BitLocker and device encryption
 

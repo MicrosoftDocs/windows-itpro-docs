@@ -171,7 +171,7 @@ BitLocker integrates with Microsoft Entra ID and Active Directory Domain Service
 The following recovery data is saved for each computer object:
 
 - *Recovery password*: a 48-digit recovery password used to recover a BitLocker-protected volume. Users must enter this password to unlock a volume when BitLocker enters recovery mode
-- *Key package data*: with the key package and the recovery password, portions of a BitLocker-protected volume can be decrypted if the disk is severely damaged. Each key package works only with the volume it was created on, which is identified by the corresponding volume ID
+- *Key package*: with the key package and the recovery password, portions of a BitLocker-protected volume can be decrypted if the disk is severely damaged. Each key package works only with the volume it was created on, which is identified by the corresponding volume ID
 
 ## FIPS support for recovery password protector
 

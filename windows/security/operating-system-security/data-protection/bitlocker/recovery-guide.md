@@ -14,10 +14,12 @@ This article describes how to recover BitLocker keys from Microsoft Entra ID and
 
 ## What is BitLocker recovery?
 
-BitLocker recovery is the process by which access to a BitLocker-protected drive can be restored if the drive can't be unlocked normally. In a recovery scenario, the following options to restore access to the drive are available:
+BitLocker recovery is the process by which access to a BitLocker-protected drive can be restored if the drive doesn't unlock using its default unlock mechanism.
 
-- The user can supply a *recovery password*: if the organization allows users to print or store recovery passwords, the users can enter the 48-digit recovery password
-- *Data recovery agents* can use their credentials to unlock the drive: if the drive is an operating system drive, the drive must be mounted as a data drive on another device for the data recovery agent to unlock it
+In a recovery scenario, the following options to restore access to the drive may be available:
+
+- The user can supply a *recovery password*, if available. A recovery password must be allowed by policy settings, so that users can print or save it. The recovery password is a 48-digit string
+- *Data recovery agents* can use their credentials to unlock the drive, if configured.If the drive is an operating system drive, the drive must be mounted as a data drive on another device for the data recovery agent to unlock it
 - An administrator can obtain the *recovery password* from Microsoft Entra ID or AD DS and use it to unlock the drive. Storing recovery passwords in Microsoft Entra ID or AD DS is recommended to provide a way to obtain recovery passwords for drives in an organization if needed. This method requires to enable the policy settings:
   - [Choose how BitLocker-protected operating system drives can be recovered](configure.md?tabs=os#choose-how-bitlocker-protected-operating-system-drives-can-be-recovered)
   - [Choose how BitLocker-protected fixed drives can be recovered](configure.md?tabs=fixed#choose-how-bitlocker-protected-fixed-drives-can-be-recovered)
@@ -37,28 +39,21 @@ The following list provides examples of common events that causes BitLocker to e
 - Turning off, disabling, deactivating, or clearing the TPM
 - Upgrading critical early startup components, such as a BIOS or UEFI firmware upgrade
 - Forgetting the PIN when PIN authentication has been enabled
-- Updating option ROM firmware
 - Upgrading TPM firmware
 - Adding or removing hardware
 - Removing, inserting, or completely depleting the charge on a smart battery on a portable computer
-- Changes to the master boot record on the disk
 - Changes to the boot manager on the disk
 - Hiding the TPM from the operating system
-- Using a different keyboard that doesn't correctly enter the PIN
-- Modifying the Platform Configuration Registers (PCRs) used by the TPM validation profile.
+- Modifying the Platform Configuration Registers (PCRs) used by the TPM validation profile
 - Moving the BitLocker-protected drive into a new computer
 - Upgrading the motherboard to a new one with a new TPM
-- Losing the USB flash drive containing the startup key when startup key authentication has been enabled
 - Failing the TPM self-test
-- Having a BIOS, UEFI firmware, or an option ROM component that isn't compliant with the relevant Trusted Computing Group standards for a client computer. For example, a non-compliant implementation may record volatile data (such as time) in the TPM measurements, causing different measurements on each startup and causing BitLocker to start in recovery mode
 - Changing the usage authorization for the storage root key of the TPM to a non-zero value
 
     > [!NOTE]
     > The BitLocker TPM initialization process sets the usage authorization value to zero, so another user or process must explicitly have changed this value.
 
 - Disabling the code integrity check or enabling test signing on Windows Boot Manager (Bootmgr)
-- Pressing the F8 or F10 key during the boot process
-- Adding or removing add-in cards (such as video or network cards), or upgrading firmware on add-in cards
 - Using a BIOS hot key during the boot process to change the boot order to something other than the hard drive
 
 > [!NOTE]
