@@ -38,24 +38,24 @@ The following table contains information about the events that you can use to de
 
 | Event ID | Level | Event message | Description |
 | --- | --- | --- | --- |
-| 8000 | Error| Application Identity Policy conversion failed. Status * &lt;%1&gt; *| Indicates that the policy wasn't applied correctly to the computer. The status message is provided for troubleshooting purposes.| 
+| 8000 | Error| AppID policy conversion failed. Status * &lt;%1&gt; *| Indicates that the policy wasn't applied correctly to the computer. The status message is provided for troubleshooting purposes.| 
 | 8001 | Information| The AppLocker policy was applied successfully to this computer.| Indicates that the AppLocker policy was successfully applied to the computer.| 
 | 8002 | Information| *&lt;File name&gt; * was allowed to run.| Specifies that the .exe or .dll file is allowed by an AppLocker rule.| 
-| 8003 | Warning| *&lt;File name&gt; * was allowed to run but would have been prevented from running if the AppLocker policy was enforced.| Applied only when the **Audit only** enforcement mode is enabled. Specifies that the .exe or .dll file would be blocked if the **Enforce rules** enforcement mode were enabled. |
-| 8004 | Error| *&lt;File name&gt; * was not allowed to run.| Access to *&lt;file name&gt;* is restricted by the administrator. Applied only when the **Enforce rules** enforcement mode is set either directly or indirectly through Group Policy inheritance. The .exe or .dll file can't run.| 
+| 8003 | Warning| *&lt;File name&gt; * was allowed to run but would have been prevented from running if the AppLocker policy were enforced.| Applied only when the **Audit only** enforcement mode is enabled. Specifies that the .exe or .dll file would be blocked if the **Enforce rules** enforcement mode were enabled. |
+| 8004 | Error| *&lt;File name&gt; * was prevented from running.| Access to *&lt;file name&gt;* is restricted by the administrator. Applied only when the **Enforce rules** enforcement mode is set either directly or indirectly through Group Policy inheritance. The .exe or .dll file can't run.| 
 | 8005| Information| *&lt;File name&gt; * was allowed to run.| Specifies that the script or .msi file is allowed by an AppLocker rule.| 
-| 8006 | Warning| *&lt;File name&gt; * was allowed to run but would have been prevented from running if the AppLocker policy was enforced.| Applied only when the **Audit only** enforcement mode is enabled. Specifies that the script or .msi file would be blocked if the **Enforce rules** enforcement mode were enabled. |
-| 8007 | Error| *&lt;File name&gt; * was not allowed to run.| Access to *&lt;file name&gt;* is restricted by the administrator. Applied only when the **Enforce rules** enforcement mode is set either directly or indirectly through Group Policy inheritance. The script or .msi file can't run.| 
-| 8008| Error| AppLocker disabled on the SKU.| Added in Windows Server 2012 and Windows 8.| 
-| 8020| Information| Packaged app allowed.| Added in Windows Server 2012 and Windows 8.| 
-| 8021| Information| Packaged app audited.| Added in Windows Server 2012 and Windows 8.| 
-| 8022| Information| Packaged app disabled.| Added in Windows Server 2012 and Windows 8.| 
-| 8023 | Information| Packaged app installation allowed.| Added in Windows Server 2012 and Windows 8.|
-| 8024 | Information| Packaged app installation audited.| Added in Windows Server 2012 and Windows 8.| 
-| 8025 | Warning| Packaged app installation disabled.| Added in Windows Server 2012 and Windows 8.| 
-| 8027 | Warning| No Packaged app rule configured.| Added in Windows Server 2012 and Windows 8.| 
-| 8028 | Warning | * was allowed to run but would have been prevented if the Config CI policy was enforced.| Added in Windows Server 2016 and Windows 10.|
-| 8029 | Error | * was prevented from running due to Config CI policy.| Added in Windows Server 2016 and Windows 10.|
+| 8006 | Warning| *&lt;File name&gt; * was allowed to run but would have been prevented from running if the AppLocker policy were enforced.| Applied only when the **Audit only** enforcement mode is enabled. Specifies that the script or .msi file would be blocked if the **Enforce rules** enforcement mode were enabled. |
+| 8007 | Error| *&lt;File name&gt; * was prevented from running.| Access to *&lt;file name&gt;* is restricted by the administrator. Applied only when the **Enforce rules** enforcement mode is set either directly or indirectly through Group Policy inheritance. The script or .msi file can't run.| 
+| 8008| Warning| *&lt;File name&gt; *: AppLocker component not available on this SKU.| Added in Windows Server 2012 and Windows 8.| 
+| 8020| Information| *&lt;File name&gt; * was allowed to run.| Added in Windows Server 2012 and Windows 8.| 
+| 8021| Warning| *&lt;File name&gt; * was allowed to run but would have been prevented from running if the AppLocker policy were enforced.| Added in Windows Server 2012 and Windows 8.| 
+| 8022| Error| *&lt;File name&gt; * was prevented from running.| Added in Windows Server 2012 and Windows 8.| 
+| 8023 | Information| *&lt;File name&gt; * was allowed to be installed.| Added in Windows Server 2012 and Windows 8.|
+| 8024 | Warning| *&lt;File name&gt; * was allowed to run but would have been prevented from running if the AppLocker policy were enforced.| Added in Windows Server 2012 and Windows 8.| 
+| 8025 | Error| *&lt;File name&gt; * was prevented from running.| Added in Windows Server 2012 and Windows 8.| 
+| 8027 | Error| No packaged apps can be executed while Exe rules are being enforced and no Packaged app rules have been configured.| Added in Windows Server 2012 and Windows 8.| 
+| 8028 | Warning | *&lt;File name&gt; * was allowed to run but would have been prevented if the Config CI policy were enforced.| Added in Windows Server 2016 and Windows 10.|
+| 8029 | Error | *&lt;File name&gt; * was prevented from running due to Config CI policy.| Added in Windows Server 2016 and Windows 10.|
 | 8030 | Information | ManagedInstaller check SUCCEEDED during Appid verification of * | Added in Windows Server 2016 and Windows 10.|
 | 8031 | Information | SmartlockerFilter detected file * being written by process * | Added in Windows Server 2016 and Windows 10.|
 | 8032 | Error | ManagedInstaller check FAILED during Appid verification of * | Added in Windows Server 2016 and Windows 10.|
@@ -63,9 +63,9 @@ The following table contains information about the events that you can use to de
 | 8034 | Information | ManagedInstaller Script check FAILED during Appid verification of * | Added in Windows Server 2016 and Windows 10.|
 | 8035 | Error | ManagedInstaller Script check SUCCEEDED during Appid verification of * | Added in Windows Server 2016 and Windows 10.|
 | 8036 | Error | * was prevented from running due to Config CI policy | Added in Windows Server 2016 and Windows 10.|
-| 8037 | Information | * passed Config CI policy and was allowed to run | Added in Windows Server 2016 and Windows 10.|
+| 8037 | Information | * passed Config CI policy and was allowed to run.| Added in Windows Server 2016 and Windows 10.|
 | 8038 | Information | Publisher info: Subject: * Issuer: * Signature index * (* total) | Added in Windows Server 2016 and Windows 10.|
-| 8039 | Warning | * passed Config CI policy and was allowed to run | Added in Windows Server 2016 and Windows 10.|
+| 8039 | Warning | Package family name * version * was allowed to install or update but would have been prevented if the Config CI policy | Added in Windows Server 2016 and Windows 10.|
 | 8040 | Error | Package family name * version * was prevented from installing or updating due to Config CI policy | Added in Windows Server 2016 and Windows 10.|
 
  
