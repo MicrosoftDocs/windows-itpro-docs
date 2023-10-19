@@ -88,26 +88,33 @@ If software maintenance requires the computer to be restarted and two-factor aut
 
 When planning for BitLocker recovery, consider the following:
 
+To help document the BitLocker recovery process that works best for your organization, answer the following questions:
+
+| :ballot_box_with_check: | **Question** |
+|--|--|
+| :black_square_button: | *blah* |
+| :black_square_button: | *blah* |
+| :black_square_button: | *blah* |
+
 ### Automatic backup of recovery information
 
 #### Microsoft Entra ID
 
 #### Active Directory
 
-The BitLocker recovery information for a device joined to Active Directory is stored in a child object of the computer object itself. Each BitLocker recovery object includes the recovery password and other recovery information. More than one BitLocker recovery object can exist under each Computer object, because there can be more than one recovery password associated with a BitLocker-enabled volume. The name of the BitLocker recovery object incorporates a globally unique identifier (GUID) and date and time information, for a fixed length of 63 characters. The syntax is:
+The BitLocker recovery information for a device joined to Active Directory is stored in a child object of the computer object itself. Each BitLocker recovery object includes the recovery password and other recovery information. More than one BitLocker recovery object can exist under each Computer object, because there can be more than one recovery password associated with a BitLocker-enabled volume. The name of the BitLocker recovery object incorporates a globally unique identifier (GUID) and date and time information, for a fixed length of 63 characters. The syntax is `<Object Creation Date and Time><Recovery GUID>`.
 
-`<Object Creation Date and Time><Recovery GUID>`. For example, 2023-10-10T10:00:00-08:00{063EA4E1-220C-4293-BA01-4754620A96E7}
-
-Note: Active Directory maintains history of all recovery passwords for a computer object. Old recovery keys are not removed automatically from AD DS, unless the computer object is deleted.
+> [!NOTE]
+> Active Directory maintains history of all recovery passwords for a computer object. Old recovery keys are not removed automatically from AD DS, unless the computer object is deleted.
 
 The common name (cn) for the BitLocker recovery object is `ms-FVE-RecoveryInformation`. Each `ms-FVE-RecoveryInformation` object has the following attributes:
 
 |Attribute Name | Description|
 |-|-|
-|`ms-FVE-RecoveryPassword|` This attribute contains the 48-digit recovery password used to recover a BitLocker-encrypted disk volume. Users enter this password to unlock a volume when BitLocker enters recovery mode|
-|`ms-FVE-RecoveryGuid`| This attribute contains the GUID associated with a BitLocker recovery password. In BitLocker's recovery mode, this GUID is displayed to the user so that the correct recovery password can be located to unlock the volume. This GUID is also included in the name of the recovery object|
-|`ms-FVE-VolumeGuid`| This attribute contains the GUID associated with a BitLocker-supported disk volume. While the password (stored in ms-FVE-RecoveryGuid) is unique for each recovery password, this volume identifier is unique for each BitLocker-encrypted volume|
-|`ms-FVE-KeyPackage`|This attribute contains a volume's BitLocker encryption key secured by the corresponding recovery password. With this key package and the recovery password (stored in ms-FVE-RecoveryPassword), portions of a BitLocker-protected volume can be decrypted if the disk is corrupted. Each key package will work only for a volume that has the corresponding volume identifier (stored in ms-FVE-VolumeGuid). The BitLocker Repair Tool [link] should be used to make use of this key package.|
+|`ms-FVE-RecoveryPassword`| The 48-digit recovery password used to recover a BitLocker-encrypted disk volume.|
+|`ms-FVE-RecoveryGuid`| GUID associated with a BitLocker recovery password. In BitLocker's recovery mode, the GUID is displayed to the user, so that the correct recovery password can be located to unlock the volume. The GUID is also included in the name of the recovery object.|
+|`ms-FVE-VolumeGuid`| GUID associated with a BitLocker-supported disk volume. While the password (stored in `ms-FVE-RecoveryGuid`) is unique for each recovery password, the volume identifier is unique for each BitLocker-encrypted volume.|
+|`ms-FVE-KeyPackage`| Volume's BitLocker encryption key secured by the corresponding recovery password. With this key package and the recovery password (stored in `ms-FVE-RecoveryPassword`), portions of a BitLocker-protected volume can be decrypted if the disk is corrupted. Each key package will work only for a volume that has the corresponding volume identifier (stored in `ms-FVE-VolumeGuid`). The BitLocker Repair Tool can be used to make use of the key package.|
 
 ### Data Recovery Agents
 
