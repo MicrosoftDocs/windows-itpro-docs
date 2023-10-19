@@ -104,7 +104,7 @@ The following table defines which Windows features require TPM support.
  Windows Defender System Guard (DRTM) | Yes | No | Yes | TPM 2.0 and UEFI firmware is required.
  Credential Guard | No | Yes | Yes | Windows 10, version 1507 (End of Life as of May 2017) only supported TPM 2.0 for Credential Guard. Beginning with Windows 10, version 1511, TPM 1.2 and 2.0 are supported. Paired with Windows Defender System Guard, TPM 2.0 provides enhanced security for Credential Guard. Windows 11 requires TPM 2.0 by default to facilitate easier enablement of this enhanced security for customers.
  Device Health Attestation| Yes | Yes | Yes | TPM 2.0 is recommended since it supports newer cryptographic algorithms. TPM 1.2 only supports the SHA-1 algorithm which is being deprecated.
- Windows Hello/Windows Hello for Business| No | Yes | Yes | Azure AD join supports both versions of TPM, but requires TPM with keyed-hash message authentication code (HMAC) and Endorsement Key (EK) certificate for key attestation support. TPM 2.0 is recommended over TPM 1.2 for better performance and security. Windows Hello as a FIDO platform authenticator will take advantage of TPM 2.0 for key storage.
+ Windows Hello/Windows Hello for Business| No | Yes | Yes | Microsoft Entra join supports both versions of TPM, but requires TPM with keyed-hash message authentication code (HMAC) and Endorsement Key (EK) certificate for key attestation support. TPM 2.0 is recommended over TPM 1.2 for better performance and security. Windows Hello as a FIDO platform authenticator will take advantage of TPM 2.0 for key storage.
  UEFI Secure Boot | No | Yes | Yes
  TPM Platform Crypto Provider Key Storage Provider| Yes | Yes | Yes
  Virtual Smart Card | Yes | Yes | Yes
