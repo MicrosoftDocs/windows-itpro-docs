@@ -8,39 +8,47 @@ ms.topic: how-to
 ms.date: 09/29/2023
 ---
 
-# BitLocker recovery guide
-
-This article describes how to recover BitLocker keys from Microsoft Entra ID and Active Directory Domain Services (AD DS). This article assumes that it's understood how to configure devices to automatically backup BitLocker recovery information, and what types of recovery information are saved to Microsoft Entra ID and AD DS.
-
-## What is BitLocker recovery?
+# What is BitLocker recovery?
 
 BitLocker recovery is the process by which access to a BitLocker-protected drive can be restored if the drive doesn't unlock using its default unlock mechanism.
 
 In a recovery scenario, the following options to restore access to the drive may be available:
 
-- The user can supply a *recovery password*, if available. A recovery password must be allowed by policy settings, so that users can print or save it. The recovery password is a 48-digit string
-- *Data recovery agents* can use their credentials to unlock the drive, if configured.If the drive is an operating system drive, the drive must be mounted as a data drive on another device for the data recovery agent to unlock it
-- An administrator can obtain the *recovery password* from Microsoft Entra ID or AD DS and use it to unlock the drive. Storing recovery passwords in Microsoft Entra ID or AD DS is recommended to provide a way to obtain recovery passwords for drives in an organization if needed. This method requires to enable the policy settings:
-  - [Choose how BitLocker-protected operating system drives can be recovered](configure.md?tabs=os#choose-how-bitlocker-protected-operating-system-drives-can-be-recovered)
-  - [Choose how BitLocker-protected fixed drives can be recovered](configure.md?tabs=fixed#choose-how-bitlocker-protected-fixed-drives-can-be-recovered)
-  - [Choose how BitLocker-protected removable drives can be recovered](configure.md?tabs=removable#choose-how-bitlocker-protected-removable-drives-can-be-recovered)
+:::row:::
+  :::column span="2":::
+    **Recovery password**: A 48-digit number used to unlock a volume when it is in recovery mode. The recovery password may be saved as a text file, printed or stored in Microsoft Entra ID or Active Directory. The user can supply a *recovery password*, if available. A recovery password must be allowed by policy settings, so that users can print or save it.
+  :::column-end:::
+  :::column span="2":::
+  :::image type="content" source="images/preboot-recovery.png" alt-text="Screenshot of the default BitLocker recovery screen asking to plug a USB drive with the recovery key." lightbox="images/preboot-recovery.png" border="false":::
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column span="2":::
+    **Recovery key**: an encryption key stored on removable media that can be used for recovering data encrypted on a BitLocker volume. The file name has a format of <protector_id>.bek. For the OS drive, the recovery key can be used to gain access to the device if BitLocker detects a condition that prevents it from unlocking the drive when the device is starting up. A recovery key can also be used to gain access to fixed data drives and removable drives that are encrypted with BitLocker, if for some reason the password is forgotten or the device can't access the drive.
+  :::column-end:::
+  :::column span="2":::
+  :::image type="content" source="images/preboot-recovery-key.png" alt-text="Screenshot of the default BitLocker recovery screen asking to plug a USB drive with the recovery key." lightbox="images/preboot-recovery-key.png" border="false":::
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column span="4":::
+    **Data Recovery Agent**: A Data Recovery Agent (DRA) is a type of certificate that is associated with an Active Directory security principal and that can be used to access any BitLocker encrypted drives configured with the matching public key protector. *Data recovery agents* can use their credentials to unlock the drive. If the drive is an OS drive, the drive must be mounted as a data drive on another device for the data recovery agent to unlock it
+  :::column-end:::
+:::row-end:::
 
-## What causes BitLocker recovery?
+## Common scenarios for BitLocker recovery
 
-The following list provides examples of common events that causes BitLocker to enter recovery mode when attempting to start the operating system drive:
+The following list provides some examples of common events that causes BitLocker to enter recovery mode when attempting to start the operating system:
 
-- Changing the BIOS or firmware boot device order on devices with TPM 1.2
+- Changing the BIOS or firmware boot device order (on devices with TPM 1.2)
 - Having the CD or DVD drive before the hard drive in the BIOS boot order and then inserting or removing a CD or DVD
-- Failing to boot from a network drive before booting from the hard drive
 - Docking or undocking a portable computer
+- Losing the USB drive that contains the *startup key*
 - Changes to the NTFS partition table on the disk
-- Entering the personal identification number (PIN) incorrectly too many times
+- Entering the wrong PIN too many times
 - Turning off the support for reading the USB device in the pre-boot environment from the BIOS or UEFI firmware if using USB-based keys instead of a TPM
 - Turning off, disabling, deactivating, or clearing the TPM
 - Upgrading critical early startup components, such as a BIOS or UEFI firmware upgrade
-- Forgetting the PIN when PIN authentication has been enabled
-- Upgrading TPM firmware
-- Adding or removing hardware
 - Removing, inserting, or completely depleting the charge on a smart battery on a portable computer
 - Changes to the boot manager on the disk
 - Hiding the TPM from the operating system
@@ -48,25 +56,18 @@ The following list provides examples of common events that causes BitLocker to e
 - Moving the BitLocker-protected drive into a new computer
 - Upgrading the motherboard to a new one with a new TPM
 - Failing the TPM self-test
-- Changing the usage authorization for the storage root key of the TPM to a non-zero value
 
-    > [!NOTE]
-    > The BitLocker TPM initialization process sets the usage authorization value to zero, so another user or process must explicitly have changed this value.
-
-- Disabling the code integrity check or enabling test signing on Windows Boot Manager (Bootmgr)
-- Using a BIOS hot key during the boot process to change the boot order to something other than the hard drive
-
-> [!NOTE]
-> Before beginning recovery, it is recommend to determine what caused recovery. This might help prevent the problem from occurring again in the future. For instance, if it is determined that an attacker has modified the computer by obtaining physical access, new security policies can be created for tracking who has physical presence. After the recovery password has been used to recover access to the PC, BitLocker reseals the encryption key to the current values of the measured components.
+Before beginning recovery, it's recommend to determine what caused recovery. This might help to prevent the problem from occurring again in the future. For instance, if it is determined that an attacker has modified the computer by obtaining physical access, new security policies can be created for tracking who has physical presence. After the recovery password has been used to recover access to the device, BitLocker reseals the encryption key to the current values of the measured components.
 
 For planned scenarios, such as a known hardware or firmware upgrades, initiating recovery can be avoided by temporarily suspending BitLocker protection. Because suspending BitLocker leaves the drive fully encrypted, the administrator can quickly resume BitLocker protection after the planned task has been completed. Using suspend and resume also reseals the encryption key without requiring the entry of the recovery key.
 
 > [!NOTE]
-> If suspended BitLocker will automatically resume protection when the PC is rebooted, unless a reboot count is specified using the manage-bde command line tool.
+> If suspended, BitLocker automatically resumes protection when the device is rebooted, unless a reboot count is specified using PowerShell or the `manage-bde.exe` command line tool. For more information about suspending BitLocker, review the [BitLocker operations guide](operations-guide.md#suspend-and-resume).
 
-If software maintenance requires the computer to be restarted and two-factor authentication is being used, the BitLocker network unlock feature can be enabled to provide the secondary authentication factor when the computers don't have a user to provide the additional authentication method.
+If software maintenance requires the computer to be restarted and two-factor authentication is used, the BitLocker [Network Unlock](network-unlock.md) feature can be enabled to provide the secondary authentication factor when the computers don't have a user to provide the additional authentication method.
 
-Recovery has been described within the context of unplanned or undesired behavior. However, recovery can also be caused as an intended production scenario, for example in order to manage access control. When desktop or laptop computers are redeployed to other departments or employees in the enterprise, BitLocker can be forced into recovery before the computer is given to a new user.
+> [!TIP]
+> Recovery is described within the context of unplanned or undesired behavior. However, recovery can also be caused as an intended production scenario, for example in order to manage access control. When devices are redeployed to other departments or employees in the organization, BitLocker can be forced into recovery before the device is delivered to a new user.
 
 ## BitLocker recovery process
 
@@ -94,6 +95,13 @@ In some cases, users might have the recovery password in a printout or a USB fla
 If the user doesn't have a recovery password printed or on a USB flash drive, the user will need to be able to retrieve the recovery password from an online source. If the PC is a member of a domain, the recovery password can be backed up to AD DS. **However, back up of the recovery password to AD DS does not happen by default.** Backup of the recovery password to AD DS has to be configured via the appropriate group policy settings **before** BitLocker was enabled on the PC. BitLocker group policy settings can be found in the Local Group Policy Editor or the Group Policy Management Console (GPMC) under **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption**. The following policy settings define the recovery methods that can be used to restore access to a BitLocker-protected drive if an authentication method fails or is unable to be used.
 
 This method requires to enable the policy settings:
+
+  - [Choose how BitLocker-protected operating system drives can be recovered](configure.md?tabs=os#choose-how-bitlocker-protected-operating-system-drives-can-be-recovered)
+  - [Choose how BitLocker-protected fixed drives can be recovered](configure.md?tabs=fixed#choose-how-bitlocker-protected-fixed-drives-can-be-recovered)
+  - [Choose how BitLocker-protected removable drives can be recovered](configure.md?tabs=removable#choose-how-bitlocker-protected-removable-drives-can-be-recovered)
+
+An administrator can obtain the *recovery password* from Microsoft Entra ID or AD DS and use it to unlock the drive. Storing recovery passwords in Microsoft Entra ID or AD DS is recommended to provide a way to obtain recovery passwords for drives in an organization if needed. This method requires to enable the policy settings:
+
   - [Choose how BitLocker-protected operating system drives can be recovered](configure.md?tabs=os#choose-how-bitlocker-protected-operating-system-drives-can-be-recovered)
   - [Choose how BitLocker-protected fixed drives can be recovered](configure.md?tabs=fixed#choose-how-bitlocker-protected-fixed-drives-can-be-recovered)
   - [Choose how BitLocker-protected removable drives can be recovered](configure.md?tabs=removable#choose-how-bitlocker-protected-removable-drives-can-be-recovered)
@@ -238,3 +246,10 @@ Windows RE will also ask for a BitLocker recovery key when a **Remove everything
 The BitLocker recovery screen in Windows RE has the accessibility tools like narrator and on-screen keyboard to help enter the BitLocker recovery key. If the BitLocker recovery key is requested by the Windows boot manager, those tools might not be available.
 
 To activate the narrator during BitLocker recovery in Windows RE, press <kbd>WIN</kbd>+<kbd>CTRL</kbd>+<kbd>ENTER</kbd>. To activate the on-screen keyboard, select a text input control.
+
+
+
+
+# BitLocker recovery guide
+
+This article describes how to recover BitLocker keys from Microsoft Entra ID and Active Directory Domain Services (AD DS). This article assumes that it's understood how to configure devices to automatically backup BitLocker recovery information, and what types of recovery information are saved to Microsoft Entra ID and AD DS.
