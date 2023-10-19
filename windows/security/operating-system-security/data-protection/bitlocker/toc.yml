@@ -11,14 +11,12 @@ items:
   href: operations-guide.md
 - name: BitLocker recovery guide
   items:
-    - name: Overview of BitLocker recovery methods
+    - name: BitLocker recovery overview
       href: recovery-guide.md
-    - name: Manage BitLocker recovery passwords
-      href: manage-recovery-passwords.md
+    - name: BitLocker recovery process
+      href: recovery-process.md
     - name: Preboot recovery screen
       href: preboot-recovery-screen.md
-    - name: BitLocker repair tool
-      href: recovery-guide-repair-tool.md
 - name: How-to guides
   items:
     - name: Install BitLocker on Windows Server
