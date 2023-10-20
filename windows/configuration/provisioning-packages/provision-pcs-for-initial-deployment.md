@@ -44,12 +44,12 @@ The desktop wizard helps you configure the following settings in a provisioning 
 - Configure the device for shared use
 - Remove pre-installed software
 - Configure Wi-Fi network 
-- Enroll device in Active Directory or Azure Active Directory 
+- Enroll device in Active Directory or Microsoft Entra ID 
 - Create local administrator account 
 - Add applications and certificates
 
 >[!WARNING]
->You must run Windows Configuration Designer on Windows client to configure Azure Active Directory enrollment using any of the wizards.
+>You must run Windows Configuration Designer on Windows client to configure Microsoft Entra enrollment using any of the wizards.
 
 Provisioning packages can include management instructions and policies, installation of specific apps, customization of network connections and policies, and more. 
 
@@ -100,17 +100,17 @@ Use the Windows Configuration Designer tool to create a provisioning package. [L
 
 3. Enable account management:
 
-    :::image type="content" source="../images/account-management-details.png" alt-text="In Windows Configuration Designer, join Active Directory, Azure AD, or create a local admin account.":::
+    :::image type="content" source="../images/account-management-details.png" alt-text="In Windows Configuration Designer, join Active Directory, Microsoft Entra ID, or create a local admin account.":::
 
     If you want to enable account management, select **Account Management**, and configure the following settings:
 
     - **Manage organization/school accounts**: Choose how devices are enrolled. Your options:
       - **Active Directory**: Enter the credentials for a least-privileged user account to join the device to the domain.
-      - **Azure Active Directory**: Before you use a Windows Configuration Designer wizard to configure bulk Azure AD enrollment, [set up Azure AD join in your organization](/azure/active-directory/active-directory-azureadjoin-setup). In your Azure AD tenant, the **maximum number of devices per user** setting determines how many times the bulk token in the wizard can be used.
+      - **Microsoft Entra ID**: Before you use a Windows Configuration Designer wizard to configure bulk Microsoft Entra enrollment, [set up Microsoft Entra join in your organization](/azure/active-directory/active-directory-azureadjoin-setup). In your Microsoft Entra tenant, the **maximum number of devices per user** setting determines how many times the bulk token in the wizard can be used.
 
-        If you select this option, enter a friendly name for the bulk token you get using the wizard. Set an expiration date for the token. The maximum is 180 days from the date you get the token. Select **Get bulk token**. In **Let's get you signed in**, enter an account that has permissions to join a device to Azure AD, and then the password. Select **Accept** to give Windows Configuration Designer the necessary permissions.
+        If you select this option, enter a friendly name for the bulk token you get using the wizard. Set an expiration date for the token. The maximum is 180 days from the date you get the token. Select **Get bulk token**. In **Let's get you signed in**, enter an account that has permissions to join a device to Microsoft Entra ID, and then the password. Select **Accept** to give Windows Configuration Designer the necessary permissions.
 
-        You must run Windows Configuration Designer on Windows client to configure Azure AD enrollment using any of the wizards.
+        You must run Windows Configuration Designer on Windows client to configure Microsoft Entra enrollment using any of the wizards.
 
       - **Local administrator**: If you select this option, enter a user name and password. If you create a local account in the provisioning package, you must change the password using the **Settings** app every 42 days. If the password isn't changed during that period, the account might be locked out, and unable to sign in.
 
