@@ -152,7 +152,31 @@ A file with a file name format of `BitLocker Key Package {<id>}.KPG` is created 
 > [!NOTE]
 > To export a new key package from an unlocked, BitLocker-protected volume, local administrator access to the working volume is required before any damage occurrs to the volume.
 
-## Data Recovery Agents
+#### Data Recovery Agents
 
-DRAs are useful for help desk scenarios where the help desk can unlock a BitLocker-protected drive by connecting the drive to a device that contains the certificate of a DRA. The DRA protector option must be configured before enabling BitLocker on a drive.
+DRAs can be used to recover OS drives, fixed data drives, and removable data drives. However, when used to recover OS drives, the operating system drive must be mounted on another device as a *data drive* for the DRA to be able to unlock the drive. Data recovery agents are added to the drive when it's encrypted, and can be updated after encryption occurs.
 
+> [!NOTE]
+> DRAs can be published in Active Directory, but not in Microsoft Entra ID.
+
+To configure DRAs for devices that are joined to an Active Directory domain, the following steps are required:
+
+1. Create a DRA certificate, which must contain the *BitLocker Data Recovery Agent* OID `1.3.6.1.4.1.311.67.1.2` in the EKU extension
+1. Add the DRA via group policy using the path: **Computer configuration** > **Policies** > **Windows Settings** > **Security Settings** > **Public Key Policies** > **BitLocker Drive Encryption**
+1. Configure the following policy setting, accourding to your organization's policy: [Provide the unique identifiers for your organization](configure.md?tabs=common#provide-the-unique-identifiers-for-your-organization)
+1. Configure the following policy settings to allow recovery using a DRA for each drive type:
+
+    - [Choose how BitLocker-protected operating system drives can be recovered](configure.md?tabs=os#choose-how-bitlocker-protected-operating-system-drives-can-be-recovered)
+    - [Choose how BitLocker-protected fixed drives can be recovered](configure.md?tabs=fixed#choose-how-bitlocker-protected-fixed-drives-can-be-recovered)
+    - [Choose how BitLocker-protected removable drives can be recovered](configure.md?tabs=removable#choose-how-bitlocker-protected-removable-drives-can-be-recovered)
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> Learn about the process to unlock a BitLocker-protected volume, and suggested practices:
+>
+> [BitLocker recovery process >](operations-guide.md)
+>
+> Learn about the information displayed in the BitLocker preboot recovery screen, depending on configured policy settings and recovery keys status:
+>
+> [BitLocker recovery process >](operations-guide.md)
