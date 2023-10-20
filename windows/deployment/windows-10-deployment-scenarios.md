@@ -44,7 +44,7 @@ The following tables summarize various Windows 10 deployment scenarios. The scen
 |Scenario|Description|More information|
 |--- |--- |--- |
 |[Subscription Activation](#windows-10-subscription-activation)|Switch from Windows 10 Pro to Enterprise when a subscribed user signs in.|[Windows 10 Subscription Activation](/windows/deployment/windows-10-enterprise-subscription-activation)|
-|[Azure Active Directory / MDM](#dynamic-provisioning)|The device is automatically joined to Azure Active Directory and configured by MDM.|[Azure Active Directory integration with MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm)|
+|[Microsoft Entra ID / MDM](#dynamic-provisioning)|The device is automatically joined to Microsoft Entra ID and configured by MDM.|[Microsoft Entra integration with MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm)|
 |[Provisioning packages](#dynamic-provisioning)|Using the Windows Imaging and Configuration Designer tool, create provisioning packages that can be applied to devices.|[Configure devices without MDM](/windows/configuration/configure-devices-without-mdm)|
 
 ### Traditional
@@ -110,9 +110,11 @@ The goal of dynamic provisioning is to take a new PC out of the box, turn it on,
 
 Windows 10 Subscription Activation is a dynamic deployment method that enables you to change the SKU from Pro to Enterprise with no keys and no reboots. For more information about Subscription Activation, see [Windows 10 Subscription Activation](/windows/deployment/windows-10-enterprise-subscription-activation).
 
-### Azure Active Directory (Azure AD) join with automatic mobile device management (MDM) enrollment
+<a name='azure-active-directory-azure-ad-join-with-automatic-mobile-device-management-mdm-enrollment'></a>
 
-In this scenario, the organization member just needs to provide their work or school user ID and password. The device can then be automatically joined to Azure Active Directory and enrolled in a mobile device management (MDM) solution with no other user interaction. Once done, the MDM solution can finish configuring the device as needed. For more information, see [Azure Active Directory integration with MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm).
+### Microsoft Entra join with automatic mobile device management (MDM) enrollment
+
+In this scenario, the organization member just needs to provide their work or school user ID and password. The device can then be automatically joined to Microsoft Entra ID and enrolled in a mobile device management (MDM) solution with no other user interaction. Once done, the MDM solution can finish configuring the device as needed. For more information, see [Microsoft Entra integration with MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm).
 
 ### Provisioning package configuration
 

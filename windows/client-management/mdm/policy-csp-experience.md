@@ -352,7 +352,7 @@ When Find My Device is off, the device and its location aren't registered and th
 
 <!-- AllowManualMDMUnenrollment-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specifies whether to allow the user to delete the workplace account using the workplace control panel. If the device is Azure Active Directory joined and MDM enrolled (e. g. auto-enrolled), then disabling the MDM unenrollment has no effect.
+Specifies whether to allow the user to delete the workplace account using the workplace control panel. If the device is Microsoft Entra joined and MDM enrolled (e. g. auto-enrolled), then disabling the MDM unenrollment has no effect.
 
 > [!NOTE]
 > The MDM server can always remotely delete the account. Most restricted value is 0.

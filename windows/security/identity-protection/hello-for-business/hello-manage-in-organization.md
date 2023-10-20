@@ -13,7 +13,7 @@ ms.topic: reference
 You can create a Group Policy or mobile device management (MDM) policy to configure Windows Hello for Business on Windows devices.
 
 >[!IMPORTANT]
->Windows Hello as a convenience PIN is disabled by default on all domain joined and Azure AD joined devices. To enable a convenience PIN, enable the Group Policy setting **Turn on convenience PIN sign-in**.
+>Windows Hello as a convenience PIN is disabled by default on all domain joined and Microsoft Entra joined devices. To enable a convenience PIN, enable the Group Policy setting **Turn on convenience PIN sign-in**.
 >
 >Use **PIN Complexity** policy settings to manage PINs for Windows Hello for Business.
 

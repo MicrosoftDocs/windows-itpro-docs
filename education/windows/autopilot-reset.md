@@ -13,7 +13,7 @@ ms.collection:
 
 # Reset devices with Autopilot Reset 
 
-IT admins or technical teachers can use Autopilot Reset to quickly remove personal files, apps, and settings, and reset Windows 10 devices from the lock screen anytime and apply original settings and management enrollment (Azure Active Directory and device management) so the devices are ready to use. With Autopilot Reset, devices are returned to a fully configured or known IT-approved state.
+IT admins or technical teachers can use Autopilot Reset to quickly remove personal files, apps, and settings, and reset Windows 10 devices from the lock screen anytime and apply original settings and management enrollment (Microsoft Entra ID and device management) so the devices are ready to use. With Autopilot Reset, devices are returned to a fully configured or known IT-approved state.
 
 To enable Autopilot Reset you must:
 
@@ -89,7 +89,7 @@ Autopilot Reset is a two-step process: trigger it and then authenticate. Once yo
 
    - If you provided a provisioning package when Autopilot Reset is triggered, the system will apply this new provisioning package. Otherwise, the system will reapply the original provisioning package on the device. 
 
-   - Is returned to a known good managed state, connected to Azure AD and MDM.
+   - Is returned to a known good managed state, connected to Microsoft Entra ID and MDM.
 
      ![Notification that provisioning is complete.](images/autopilot-reset-provisioningcomplete.png)
 

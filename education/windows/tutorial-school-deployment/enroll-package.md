@@ -17,7 +17,7 @@ You can create provisioning packages using either **Set Up School PCs** or **Win
 
 ## Set up School PCs
 
-With Set up School PCs, you can create a package containing the most common device configurations that students need, and enroll devices in Intune. The package is saved on a USB stick, which can then be plugged into devices during OOBE. Applications and settings will be automatically applied to the devices, including the Azure AD join and Intune enrollment process.
+With Set up School PCs, you can create a package containing the most common device configurations that students need, and enroll devices in Intune. The package is saved on a USB stick, which can then be plugged into devices during OOBE. Applications and settings will be automatically applied to the devices, including the Microsoft Entra join and Intune enrollment process.
 
 ### Create a provisioning package
 
@@ -44,7 +44,7 @@ For more information, see [Install Windows Configuration Designer][WIN-1], which
 
 ## Enroll devices with the provisioning package
 
-To provision Windows devices with provisioning packages, insert the USB stick containing the package during the out-of-box experience. The devices will read the content of the package, join Azure AD and automatically enroll in Intune.
+To provision Windows devices with provisioning packages, insert the USB stick containing the package during the out-of-box experience. The devices will read the content of the package, join Microsoft Entra ID and automatically enroll in Intune.
 All settings defined in the package and in Intune will be applied to the device, and the device will be ready to use.
 
 :::image type="content" source="./images/win11-oobe-ppkg.gif" alt-text="Windows 11 OOBE - enrollment with provisioning package animation." border="false":::
@@ -52,7 +52,7 @@ All settings defined in the package and in Intune will be applied to the device,
 ________________________________________________________
 ## Next steps
 
-With the devices joined to Azure AD tenant and managed by Intune, you can use Intune to maintain them and report on their status.
+With the devices joined to Microsoft Entra tenant and managed by Intune, you can use Intune to maintain them and report on their status.
 
 > [!div class="nextstepaction"]
 > [Next: Manage devices >](manage-overview.md)

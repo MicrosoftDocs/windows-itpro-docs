@@ -1,24 +1,3 @@
-items:
-- name: Docs
-  tocHref: /
-  topicHref: /
-  items:
-    - name: Microsoft Education
-      tocHref: /education/
-      topicHref: /education/index
-      items:
-      - name: Get started
-        tocHref: /education/get-started
-        topicHref: /education/get-started/index
-      - name: Windows
-        tocHref: /education/windows
-        topicHref: /education/windows/index
-      - name: Windows
-        tocHref: /windows/configuration/
-        topicHref: /education/windows/index
-      - name: Windows
-        tocHref: /windows/deployment/
-        topicHref: /education/windows/index
-      - name: Windows
-        tocHref: /windows/Security/Application Control for Windows/
-        topicHref: /education/windows/index
+- name: Windows
+  tocHref: /windows/
+  topicHref: /windows/index

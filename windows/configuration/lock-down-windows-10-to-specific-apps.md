@@ -311,7 +311,7 @@ The following example hides the taskbar:
 ```
 
 >[!IMPORTANT]
->The kiosk profile is designed for public-facing kiosk devices. We recommend that you use a local, non-administrator account. If the device is connected to your company network, using a domain or Azure Active Directory account could potentially compromise confidential information.  
+>The kiosk profile is designed for public-facing kiosk devices. We recommend that you use a local, non-administrator account. If the device is connected to your company network, using a domain or Microsoft Entra account could potentially compromise confidential information.  
 
 #### Configs
 
@@ -322,8 +322,8 @@ The full multi-app assigned access experience can only work for non-admin users.
 You can assign:
 
 - [A local standard user account that signs in automatically](#config-for-autologon-account) (Applies to Windows 10, version 1803 only)
-- [An individual account, which can be local, domain, or Azure Active Directory (Azure AD)](#config-for-individual-accounts)
-- [A group account, which can be local, Active Directory (domain), or Azure AD](#config-for-group-accounts) (Applies to Windows 10, version 1803 only).
+- [An individual account, which can be local, domain, or Microsoft Entra ID](#config-for-individual-accounts)
+- [A group account, which can be local, Active Directory (domain), or Microsoft Entra ID](#config-for-group-accounts) (Applies to Windows 10, version 1803 only).
 
 >[!NOTE]
 >Configs that specify group accounts cannot use a kiosk profile, only a lockdown profile. If a group is configured to a kiosk profile, the CSP will reject the request.
@@ -365,7 +365,7 @@ Individual accounts are specified using `<Account>`.
 
 - Local account can be entered as `machinename\account` or `.\account` or just `account`.
 - Domain account should be entered as `domain\account`.
-- Azure AD account must be specified in this format: `AzureAD\{email address}`. **AzureAD** must be provided _as is_, and consider it's a fixed domain name. Then follow with the Azure AD email address. For example, `AzureAD\someone@contoso.onmicrosoft.com`
+- Microsoft Entra account must be specified in this format: `AzureAD\{email address}`. **AzureAD** must be provided _as is_, and consider it's a fixed domain name. Then follow with the Microsoft Entra ID email address. For example, `AzureAD\someone@contoso.onmicrosoft.com`
 
 >[!WARNING]
 >Assigned access can be configured via WMI or CSP to run its applications under a domain user or service account, rather than a local account.  However, use of domain user or service accounts introduces risks that an attacker subverting the assigned access application might gain access to sensitive domain resources that have been inadvertently left accessible to any domain account. We recommend that customers proceed with caution when using domain accounts with assigned access, and consider the domain resources potentially exposed by the decision to do so.
@@ -373,7 +373,7 @@ Individual accounts are specified using `<Account>`.
 Before applying the multi-app configuration, make sure the specified user account is available on the device, otherwise it will fail.
 
 >[!NOTE]
->For both domain and Azure AD accounts, it's not required that target account is explicitly added to the device. As long as the device is AD-joined or Azure AD-joined, the account can be discovered in the domain forest or tenant that the device is joined to. For local accounts, it is required that the account exist before you configure the account for assigned access.
+>For both domain and Microsoft Entra accounts, it's not required that target account is explicitly added to the device. As long as the device is AD-joined or Microsoft Entra joined, the account can be discovered in the domain forest or tenant that the device is joined to. For local accounts, it is required that the account exist before you configure the account for assigned access.
 
 ```xml
 <Configs>
@@ -388,7 +388,7 @@ Before applying the multi-app configuration, make sure the specified user accoun
 
 Group accounts are specified using `<UserGroup>`. Nested groups aren't supported. For example, if user A is member of Group 1, Group 1 is member of Group 2, and Group 2 is used in `<Config/>`, user A won't have the kiosk experience.
 
-- Local group: Specify the group type as **LocalGroup** and put the group name in Name attribute. Any Azure AD accounts that are added to the local group won't have the kiosk settings applied.
+- Local group: Specify the group type as **LocalGroup** and put the group name in Name attribute. Any Microsoft Entra accounts that are added to the local group won't have the kiosk settings applied.
 
   ```xml
   <Config>
@@ -406,7 +406,7 @@ Group accounts are specified using `<UserGroup>`. Nested groups aren't supported
   </Config>
   ```
 
-- Azure AD group: Use the group object ID from the Azure portal to uniquely identify the group in the Name attribute. You can find the object ID on the overview page for the group in **Users and groups** > **All groups**. Specify the group type as **AzureActiveDirectoryGroup**. The kiosk device must have internet connectivity when users that belong to the group sign-in.
+- Microsoft Entra group: Use the group object ID from the Azure portal to uniquely identify the group in the Name attribute. You can find the object ID on the overview page for the group in **Users and groups** > **All groups**. Specify the group type as **AzureActiveDirectoryGroup**. The kiosk device must have internet connectivity when users that belong to the group sign-in.
 
   ```xml
   <Config>
@@ -416,7 +416,7 @@ Group accounts are specified using `<UserGroup>`. Nested groups aren't supported
   ```
 
   >[!NOTE]
-  >If an Azure AD group is configured with a lockdown profile on a device, a user in the Azure AD group must change their password (after the account has been created with default password on the portal) before they can sign in to this device. If the user uses the default password to sign in to the device, the user will be immediately signed out.
+  >If a Microsoft Entra group is configured with a lockdown profile on a device, a user in the Microsoft Entra group must change their password (after the account has been created with default password on the portal) before they can sign in to this device. If the user uses the default password to sign in to the device, the user will be immediately signed out.
 
 <span id="add-xml" />
 
@@ -588,7 +588,7 @@ When the multi-app assigned access configuration is applied on the device, certa
 
 ### Group policy
 
-The following local policies affect all **non-administrator** users on the system, regardless whether the user is configured as an assigned access user or not. This list includes local users, domain users, and Azure Active Directory users.
+The following local policies affect all **non-administrator** users on the system, regardless whether the user is configured as an assigned access user or not. This list includes local users, domain users, and Microsoft Entra users.
 
 | Setting | Value |
 | --- | --- |
