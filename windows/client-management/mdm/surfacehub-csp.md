@@ -106,7 +106,7 @@ The following list shows the SurfaceHub configuration service provider nodes:
 
 <!-- Device-DeviceAccount-Description-Begin -->
 <!-- Description-Source-DDF -->
-Node for setting device account information. A device account is a Microsoft Exchange account that's connected with Skype for Business, which allows people to join scheduled meetings, make Skype for Business calls, and share content from the device. See the [Surface Hub administrator guide](/surface-hub/) for more information about setting up a device account. To use a device account from Azure Active Directory: 1. Set the UserPrincipalName (for Azure AD). 2. Set a valid Password. 3. Execute ValidateAndCommit to validate the specified username and password combination against Azure AD. 4. Get the ErrorContext in case something goes wrong during validation.
+Node for setting device account information. A device account is a Microsoft Exchange account that's connected with Skype for Business, which allows people to join scheduled meetings, make Skype for Business calls, and share content from the device. See the [Surface Hub administrator guide](/surface-hub/) for more information about setting up a device account. To use a device account from Microsoft Entra ID: 1. Set the UserPrincipalName (for Microsoft Entra ID). 2. Set a valid Password. 3. Execute ValidateAndCommit to validate the specified username and password combination against Microsoft Entra ID. 4. Get the ErrorContext in case something goes wrong during validation.
 <!-- Device-DeviceAccount-Description-End -->
 
 <!-- Device-DeviceAccount-Editable-Begin -->
@@ -333,7 +333,7 @@ Possible error values:
 | **ErrorContext value** | **Stage where error occurred** | **Description and suggestions** |
 | --- | --- | --- |
 | 1 | Unknown | |
-| 2 | Populating account | Unable to retrieve account details using the username and password you provided.<br/><br/> For Azure AD accounts, ensure that UserPrincipalName and Password are valid.<br/> For AD accounts, ensure that DomainName, UserName, and Password are valid.<br/> Ensure that the specified account has an Exchange server mailbox. |
+| 2 | Populating account | Unable to retrieve account details using the username and password you provided.<br/><br/> For Microsoft Entra accounts, ensure that UserPrincipalName and Password are valid.<br/> For AD accounts, ensure that DomainName, UserName, and Password are valid.<br/> Ensure that the specified account has an Exchange server mailbox. |
 | 3 | Populating Exchange server address | Unable to auto-discover your Exchange server address. Try to manually specify the Exchange server address using the ExchangeServer field. |
 | 4 | Validating Exchange server address | Unable to validate the Exchange server address. Ensure the ExchangeServer field is valid. |
 | 5 | Saving account information | Unable to save account details to the system. |
@@ -499,7 +499,7 @@ Password for the device account. Get is allowed here, but will always return a b
 
 <!-- Device-DeviceAccount-PasswordRotationEnabled-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specifies whether automatic password rotation is enabled. If you enforce a password expiration policy on the device account, use this setting to allow the device to manage its own password by changing it frequently, without requiring you to manually update the account information when the password expires. You can reset the password at any time using Active Directory (or Azure AD).
+Specifies whether automatic password rotation is enabled. If you enforce a password expiration policy on the device account, use this setting to allow the device to manage its own password by changing it frequently, without requiring you to manually update the account information when the password expires. You can reset the password at any time using Active Directory (or Microsoft Entra ID).
 <!-- Device-DeviceAccount-PasswordRotationEnabled-Description-End -->
 
 <!-- Device-DeviceAccount-PasswordRotationEnabled-Editable-Begin -->
@@ -625,7 +625,7 @@ Username of the device account when you are using Active Directory. To use a dev
 
 <!-- Device-DeviceAccount-UserPrincipalName-Description-Begin -->
 <!-- Description-Source-DDF -->
-User principal name (UPN) of the device account. To use a device account from Azure Active Directory or a hybrid deployment, you should specify the UPN of the device account.
+User principal name (UPN) of the device account. To use a device account from Microsoft Entra ID or a hybrid deployment, you should specify the UPN of the device account.
 <!-- Device-DeviceAccount-UserPrincipalName-Description-End -->
 
 <!-- Device-DeviceAccount-UserPrincipalName-Editable-Begin -->

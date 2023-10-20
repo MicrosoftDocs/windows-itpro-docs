@@ -47,7 +47,7 @@ Windows Configuration Designer can create provisioning packages for Windows clie
 - Windows Server 2008 R2
 
 >[!WARNING]
->You must run Windows Configuration Designer on Windows client to configure Azure Active Directory enrollment using any of the wizards.
+>You must run Windows Configuration Designer on Windows client to configure Microsoft Entra enrollment using any of the wizards.
 
 ## Install Windows Configuration Designer
 

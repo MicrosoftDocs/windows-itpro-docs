@@ -51,7 +51,6 @@ sections:
 
           **For the payloads (optional)**:
 
-          - `*.download.windowsupdate.com`
           - `*.windowsupdate.com`
 
           **For group peers across multiple NATs (Teredo)**:

@@ -86,7 +86,7 @@ There are scenarios that require a device to be deleted from your tenant, for ex
 
 1. If possible, perform a **factory reset (wipe)** of the device. If the device can't be wiped, delete the device from Intune using [these steps][MEM-1]
 1. If the device is registered in Autopilot, delete the Autopilot object using [these steps][MEM-2]
-1. Delete the device from Azure Active Directory using [these steps][MEM-3]
+1. Delete the device from Microsoft Entra ID using [these steps][MEM-3]
 
 ## Autopilot considerations for a motherboard replacement scenario
 

@@ -15,7 +15,7 @@ ms.topic: how-to
 
 [!INCLUDE [hello-hybrid-cert-trust](./includes/hello-hybrid-cert-trust.md)]
 
-Hybrid environments are distributed systems that enable organizations to use on-premises and Azure AD-protected resources. Windows Hello for Business uses the existing distributed system as a foundation on which organizations can provide two-factor authentication and single sign-on to modern resources.
+Hybrid environments are distributed systems that enable organizations to use on-premises and Microsoft Entra protected resources. Windows Hello for Business uses the existing distributed system as a foundation on which organizations can provide two-factor authentication and single sign-on to modern resources.
 
 This deployment guide describes how to deploy Windows Hello for Business in a hybrid certificate trust scenario.
 
@@ -29,10 +29,10 @@ The following prerequisites must be met for a hybrid certificate trust deploymen
 
 > [!div class="checklist"]
 > * Directories and directory synchronization
-> * Federated authentication to Azure AD
+> * Federated authentication to Microsoft Entra ID
 > * Device registration
 > * Public Key Infrastructure
-> * Multi-factor authentication
+> * Multifactor authentication
 > * Device management
 
 ### Directories and directory synchronization
@@ -40,21 +40,23 @@ The following prerequisites must be met for a hybrid certificate trust deploymen
 Hybrid Windows Hello for Business needs two directories:
 
 - An on-premises Active Directory
-- An Azure Active Directory tenant with an Azure AD Premium subscription
+- A Microsoft Entra tenant with a Microsoft Entra ID P1 or P2 subscription
 
-The two directories must be synchronized with [Azure AD Connect Sync][AZ-1], which synchronizes user accounts from the on-premises Active Directory to Azure AD.
-The hybrid-certificate trust deployment needs an *Azure Active Directory Premium* subscription because it uses the device write-back synchronization feature.
+The two directories must be synchronized with [Microsoft Entra Connect Sync][AZ-1], which synchronizes user accounts from the on-premises Active Directory to Microsoft Entra ID.
+The hybrid-certificate trust deployment needs an *Microsoft Entra ID P1 or P2* subscription because it uses the device write-back synchronization feature.
 
 > [!NOTE]
-> Windows Hello for Business hybrid certificate trust is not supported if the users' on-premises UPN suffix cannot be added as a verified domain in Azure AD.
+> Windows Hello for Business hybrid certificate trust is not supported if the users' on-premises UPN suffix cannot be added as a verified domain in Microsoft Entra ID.
 
 > [!IMPORTANT]
-> Windows Hello for Business is tied between a user and a device. Both the user and device object must be synchronized between Azure Active Directory and Active Directory.
+> Windows Hello for Business is tied between a user and a device. Both the user and device object must be synchronized between Microsoft Entra ID and Active Directory.
 
-### Federated authentication to Azure AD
+<a name='federated-authentication-to-azure-ad'></a>
 
-Windows Hello for Business hybrid certificate trust doesn't support Azure AD *Pass-through Authentication* (PTA) or *password hash sync* (PHS).\
-Windows Hello for Business hybrid certificate trust requires Active Directory to be federated with Azure Active Directory using AD FS. Additionally, you need to configure your AD FS farm to support Azure registered devices.
+### Federated authentication to Microsoft Entra ID
+
+Windows Hello for Business hybrid certificate trust doesn't support Microsoft Entra ID *Pass-through Authentication* (PTA) or *password hash sync* (PHS).\
+Windows Hello for Business hybrid certificate trust requires Active Directory to be federated with Microsoft Entra ID using AD FS. Additionally, you need to configure your AD FS farm to support Azure registered devices.
 
 If you're new to AD FS and federation services:
 
@@ -69,18 +71,18 @@ The AD FS farm used with Windows Hello for Business must be Windows Server 2016 
 
 ### Device registration and device write-back
 
-Windows devices must be registered in Azure AD. Devices can be registered in Azure AD using either *Azure AD join* or *hybrid Azure AD join*.\
-For hybrid Azure AD joined devices, review the guidance on the [plan your hybrid Azure Active Directory join implementation][AZ-8] page.
+Windows devices must be registered in Microsoft Entra ID. Devices can be registered in Microsoft Entra ID using either *Microsoft Entra join* or *Microsoft Entra hybrid join*.\
+For Microsoft Entra hybrid joined devices, review the guidance on the [plan your Microsoft Entra hybrid join implementation][AZ-8] page.
 
-Refer to the [Configure hybrid Azure Active Directory join for federated domains][AZ-10] guide to learn more about using Azure AD Connect Sync to configure Azure AD device registration.\
-For a **manual configuration** of your AD FS farm to support device registration, review the [Configure AD FS for Azure AD device registration][AZ-11] guide.
+Refer to the [Configure Microsoft Entra hybrid join for federated domains][AZ-10] guide to learn more about using Microsoft Entra Connect Sync to configure Microsoft Entra device registration.\
+For a **manual configuration** of your AD FS farm to support device registration, review the [Configure AD FS for Microsoft Entra device registration][AZ-11] guide.
 
 Hybrid certificate trust deployments require the *device write-back* feature. Authentication to AD FS needs both the user and the device to authenticate. Typically the users are synchronized, but not devices. This prevents AD FS from authenticating the device and results in Windows Hello for Business certificate enrollment failures. For this reason, Windows Hello for Business deployments need device write-back.
 
 > [!NOTE]
-> Windows Hello for Business is tied between a user and a device. Both the user and device need to be synchronized between Azure Active Directory and Active Directory. Device write-back is used to update the *msDS-KeyCredentialLink* attribute on the computer object.
+> Windows Hello for Business is tied between a user and a device. Both the user and device need to be synchronized between Microsoft Entra ID and Active Directory. Device write-back is used to update the *msDS-KeyCredentialLink* attribute on the computer object.
 
-If you manually configured AD FS, or if you ran Azure AD Connect Sync using *Custom Settings*, you must ensure that you have configured **device write-back** and **device authentication** in your AD FS farm. For more information, see [Configure Device Write Back and Device Authentication][SER-5].
+If you manually configured AD FS, or if you ran Microsoft Entra Connect Sync using *Custom Settings*, you must ensure that you have configured **device write-back** and **device authentication** in your AD FS farm. For more information, see [Configure Device Write Back and Device Authentication][SER-5].
 
 ### Public Key Infrastructure
 
@@ -89,16 +91,18 @@ The enterprise PKI and a certificate registration authority (CRA) are required t
 
 During Windows Hello for Business provisioning, users receive a sign-in certificate through the CRA.
 
-### Multi-factor authentication
+<a name='multi-factor-authentication'></a>
+
+### Multifactor authentication
 
 The Windows Hello for Business provisioning process lets a user enroll in Windows Hello for Business using their user name and password as one factor, but requires a second factor of authentication.\
 Hybrid deployments can use:
 
-- [Azure AD Multi-Factor Authentication][AZ-2]
-- A multi-factor authentication provided by AD FS, which includes an adapter model that enables third parties to integrate their MFA into AD FS
+- [Microsoft Entra multifactor authentication][AZ-2]
+- A multifactor authentication provided by AD FS, which includes an adapter model that enables third parties to integrate their MFA into AD FS
 
-For more information how to configure Azure AD Multi-Factor Authentication, see [Configure Azure AD Multi-Factor Authentication settings][AZ-3].\
-For more information how to configure AD FS to provide multi-factor authentication, see [Configure Azure MFA as authentication provider with AD FS][SER-1].
+For more information how to configure Microsoft Entra multifactor authentication, see [Configure Microsoft Entra multifactor authentication settings][AZ-3].\
+For more information how to configure AD FS to provide multifactor authentication, see [Configure Azure MFA as authentication provider with AD FS][SER-1].
 
 ### Device management
 
@@ -113,7 +117,7 @@ Once the prerequisites are met, deploying Windows Hello for Business with a hybr
 > * Configure AD FS
 > * Configure Windows Hello for Business settings
 > * Provision Windows Hello for Business on Windows clients
-> * Configure single sign-on (SSO) for Azure AD joined devices
+> * Configure single sign-on (SSO) for Microsoft Entra joined devices
 
 > [!div class="nextstepaction"]
 > [Next: configure and validate the Public Key Infrastructure >](hello-hybrid-cert-trust-validate-pki.md)

@@ -200,10 +200,10 @@ If you purchased an app from the Store for Business and the app is specified for
 
 Here are the requirements for this scenario:
 
-- The app is assigned to a user Azure Active Directory (Azure AD) identity in the Store for Business. You can assign directly in the Store for Business or through a management server.
+- The app is assigned to a user Microsoft Entra identity in the Store for Business. You can assign directly in the Store for Business or through a management server.
 - The device requires connectivity to the Microsoft Store.
 - Microsoft Store services must be enabled on the device. The UI for the Microsoft Store can be disabled by the enterprise admin.
-- The user must be signed in with their Azure AD identity.
+- The user must be signed in with their Microsoft Entra identity.
 
 Here's an example:
 
@@ -267,7 +267,7 @@ Here are the requirements for this scenario:
 - The location of the app can be a local files system (C:\\StagedApps\\app1.appx), a UNC path (\\\\server\\share\\app1.apx), or an HTTPS location (`https://contoso.com/app1.appx`).
 - The user must have permission to access the content location. For HTTPs, you can use server authentication or certificate authentication using a certificate associated with the enrollment. HTTP locations are supported, but not recommended because of lack of authentication requirements.
 - The device doesn't need to have connectivity to the Microsoft Store, store services, or have the Microsoft Store UI be enabled.
-- The user must be logged in, but association with Azure AD identity isn't required.
+- The user must be logged in, but association with Microsoft Entra identity isn't required.
 
 > [!NOTE]
 > You must unlock the device to deploy nonStore apps or you must deploy the app license before deploying the offline apps. For details, see [Deploy an offline license to a user](#deploy-an-offline-license-to-a-user).
@@ -384,7 +384,7 @@ Here are the requirements for this scenario:
 - The location of the app can be the local files system (C:\\StagedApps\\app1.appx), a UNC path (\\\\server\\share\\app1.apx), or an HTTPS location (`https://contoso.com/app1.appx\`)
 - The user must have permission to access the content location. For HTTPs, you can use server authentication or certificate authentication using a certificate associated with the enrollment. HTTP locations are supported, but not recommended because of lack of authentication requirements.
 - The device doesn't need to have connectivity to the Microsoft Store, or store services enabled.
-- The device doesn't need any Azure AD identity or domain membership.
+- The device doesn't need any Microsoft Entra identity or domain membership.
 - For nonStore app, your device must be unlocked.
 - For Store offline apps, the required licenses must be deployed before deploying the apps.
 

@@ -95,13 +95,13 @@ To automatically subscribe to [Azure Virtual Desktop](/azure/virtual-desktop/ove
 
 <!-- LoadAadCredKeyFromProfile-Description-Begin -->
 <!-- Description-Source-DDF -->
-Allow encrypted DPAPI cred keys to be loaded from user profiles for AAD accounts.
+Allow encrypted DPAPI cred keys to be loaded from user profiles for Microsoft Entra accounts.
 <!-- LoadAadCredKeyFromProfile-Description-End -->
 
 <!-- LoadAadCredKeyFromProfile-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
-This policy allows the user to load the data protection API (DPAPI) cred key from their user profile, and decrypt any previously encrypted DPAPI data in the user profile or encrypt any new DPAPI data. This policy is needed when using [FSLogix user profiles](/fslogix/overview) from Azure AD-joined VMs.
+This policy allows the user to load the data protection API (DPAPI) cred key from their user profile, and decrypt any previously encrypted DPAPI data in the user profile or encrypt any new DPAPI data. This policy is needed when using [FSLogix user profiles](/fslogix/overview) from Microsoft Entra joined VMs.
 <!-- LoadAadCredKeyFromProfile-Editable-End -->
 
 <!-- LoadAadCredKeyFromProfile-DFProperties-Begin -->
