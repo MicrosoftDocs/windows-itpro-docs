@@ -11,13 +11,15 @@ Windows Information Protection (WIP) is a lightweight solution for managing comp
 
 [!INCLUDE [Deprecate Windows Information Protection](../security/information-protection/windows-information-protection/includes/wip-deprecation.md)]
 
-## Integration with Azure AD
+<a name='integration-with-azure-ad'></a>
 
-WIP is integrated with Azure Active Directory (Azure AD) identity service. The WIP service supports Azure AD-integrated authentication for the user and the device during enrollment and the downloading of WIP policies. WIP integration with Azure AD is similar to mobile device management (MDM) integration. See [Azure Active Directory integration with MDM](azure-active-directory-integration-with-mdm.md).
+## Integration with Microsoft Entra ID
 
-WIP uses Workplace Join (WPJ). WPJ is integrated with adding a work account flow to a personal device. If a user adds their work or school Entra ID account as a secondary account to the machine, their device registered with WPJ. If a user joins their device to Azure AD, it's enrolled to MDM. In general, a device that has a personal account as its primary account is considered a personal device and should be registered with WPJ. An Azure AD join, and enrollment to MDM, should be used to manage corporate devices.
+WIP is integrated with Microsoft Entra identity service. The WIP service supports Microsoft Entra integrated authentication for the user and the device during enrollment and the downloading of WIP policies. WIP integration with Microsoft Entra ID is similar to mobile device management (MDM) integration. See [Microsoft Entra integration with MDM](azure-active-directory-integration-with-mdm.md).
 
-On personal devices, users can add an Azure AD account as a secondary account to the device while keeping their personal account as primary. Users can add an Azure AD account to the device from a supported Azure AD-integrated application, such as the next update of Microsoft 365 apps. Alternatively, users can add an Azure AD account from **Settings > Accounts > Access work or school**.
+WIP uses Workplace Join (WPJ). WPJ is integrated with adding a work account flow to a personal device. If a user adds their work or school Microsoft Entra account as a secondary account to the machine, their device registered with WPJ. If a user joins their device to Microsoft Entra ID, it's enrolled to MDM. In general, a device that has a personal account as its primary account is considered a personal device and should be registered with WPJ. A Microsoft Entra join, and enrollment to MDM, should be used to manage corporate devices.
+
+On personal devices, users can add a Microsoft Entra account as a secondary account to the device while keeping their personal account as primary. Users can add a Microsoft Entra account to the device from a supported Microsoft Entra integrated application, such as the next update of Microsoft 365 apps. Alternatively, users can add a Microsoft Entra account from **Settings > Accounts > Access work or school**.
 
 Regular non administrator users can enroll to MAM.
 
@@ -35,26 +37,28 @@ MICROSOFTEDPAUTOPROTECTIONALLOWEDAPPINFO EDPAUTOPROTECTIONALLOWEDAPPINFOID
   END
 ```
 
-## Configuring an Azure AD tenant for MAM enrollment
+<a name='configuring-an-azure-ad-tenant-for-mam-enrollment'></a>
 
-MAM enrollment requires integration with Azure AD. The MAM service provider needs to publish the Management MDM app to the Azure AD app gallery. The same cloud-based Management MDM app in Azure AD supports both MDM and MAM enrollments. If you've already published your MDM app, it needs to be updated to include MAM Enrollment and Terms of use URLs. This screenshot illustrates the management app for an IT admin configuration.
+## Configuring a Microsoft Entra tenant for MAM enrollment
+
+MAM enrollment requires integration with Microsoft Entra ID. The MAM service provider needs to publish the Management MDM app to the Microsoft Entra app gallery. The same cloud-based Management MDM app in Microsoft Entra ID supports both MDM and MAM enrollments. If you've already published your MDM app, it needs to be updated to include MAM Enrollment and Terms of use URLs. This screenshot illustrates the management app for an IT admin configuration.
 
 :::image type="content" alt-text="Mobile application management app." source="images/implement-server-side-mobile-application-management.png":::
 
-MAM and MDM services in an organization could be provided by different vendors. Depending on the company configuration, IT admin typically needs to add one or two Azure AD Management apps to configure MAM and MDM policies. For example, if both MAM and MDM are provided by the same vendor, then an IT Admin needs to add one Management app from this vendor that contains both MAM and MDM policies for the organization. Alternatively, if the MAM and MDM services in an organization are provided by two different vendors, then two Management apps from the two vendors need to be configured for the company in Azure AD: one for MAM and one for MDM.
+MAM and MDM services in an organization could be provided by different vendors. Depending on the company configuration, IT admin typically needs to add one or two Microsoft Entra Management apps to configure MAM and MDM policies. For example, if both MAM and MDM are provided by the same vendor, then an IT Admin needs to add one Management app from this vendor that contains both MAM and MDM policies for the organization. Alternatively, if the MAM and MDM services in an organization are provided by two different vendors, then two Management apps from the two vendors need to be configured for the company in Microsoft Entra ID: one for MAM and one for MDM.
 
 > [!NOTE]
-> If the MDM service in an organization isn't integrated with Azure AD and uses auto-discovery, only one Management app for MAM needs to be configured.
+> If the MDM service in an organization isn't integrated with Microsoft Entra ID and uses auto-discovery, only one Management app for MAM needs to be configured.
 
 ## MAM enrollment
 
-MAM enrollment is based on the MAM extension of [[MS-MDE2] protocol](/openspecs/windows_protocols/ms-mde2/4d7eadd5-3951-4f1c-8159-c39e07cbe692). MAM enrollment supports Azure AD [federated authentication](federated-authentication-device-enrollment.md) as the only authentication method.
+MAM enrollment is based on the MAM extension of [[MS-MDE2] protocol](/openspecs/windows_protocols/ms-mde2/4d7eadd5-3951-4f1c-8159-c39e07cbe692). MAM enrollment supports Microsoft Entra ID [federated authentication](federated-authentication-device-enrollment.md) as the only authentication method.
 
 These are the protocol changes for MAM enrollment:
 
 - MDM discovery isn't supported.
 - APPAUTH node in [DMAcc CSP](mdm/dmacc-csp.md) is optional.
-- MAM enrollment variation of [MS-MDE2] protocol doesn't support the client authentication certificate, and therefore doesn't support the [MS-XCEP] protocol. Servers must use an Azure AD token for client authentication during policy syncs. Policy sync sessions must be performed over one-way TLS/SSL using server certificate authentication.
+- MAM enrollment variation of [MS-MDE2] protocol doesn't support the client authentication certificate, and therefore doesn't support the [MS-XCEP] protocol. Servers must use a Microsoft Entra token for client authentication during policy syncs. Policy sync sessions must be performed over one-way TLS/SSL using server certificate authentication.
 
 Here's an example provisioning XML for MAM enrollment.
 
@@ -104,7 +108,7 @@ We don't recommend configuring both Exchange ActiveSync (EAS) and MAM policies f
 
 ## Policy sync
 
-MAM policy syncs are modeled after MDM. The MAM client uses an Azure AD token to authenticate to the service for policy syncs.
+MAM policy syncs are modeled after MDM. The MAM client uses a Microsoft Entra token to authenticate to the service for policy syncs.
 
 ## Change MAM enrollment to MDM
 
@@ -121,4 +125,4 @@ In the process of changing MAM enrollment to MDM, MAM policies will be removed f
 - EDP CSP Enterprise ID is the same for both MAM and MDM.
 - EDP CSP RevokeOnMDMHandoff is set to false.
 
-If the MAM device is properly configured for MDM enrollment, then the *Enroll only to device management* link is displayed in **Settings > Accounts > Access work or school**. The user can select this link, provide their credentials, and the enrollment will be changed to MDM. Their Azure AD account won't be affected.
+If the MAM device is properly configured for MDM enrollment, then the *Enroll only to device management* link is displayed in **Settings > Accounts > Access work or school**. The user can select this link, provide their credentials, and the enrollment will be changed to MDM. Their Microsoft Entra account won't be affected.

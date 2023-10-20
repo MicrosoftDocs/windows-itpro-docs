@@ -72,7 +72,7 @@ For specific info about how to set, manage, and use each of these MDM policies t
 - **AllowMicrosoftAccountConnection**
   - **Group policy**: None
   - **MDM policy CSP**: [Accounts/AllowMicrosoftAccountConnection](/windows/client-management/mdm/policy-csp-accounts#accounts-allowmicrosoftaccountconnection)
-  - **Description**: Specifies whether to allow users to sign in using a Microsoft account (MSA) from Windows apps. If you only want to allow users to sign in with their Azure AD account, then disable this setting.
+  - **Description**: Specifies whether to allow users to sign in using a Microsoft account (MSA) from Windows apps. If you only want to allow users to sign in with their Microsoft Entra account, then disable this setting.
 
 - **Allow search and Cortana to use location**
   - **Group policy**: `Computer Configuration\Administrative Templates\Windows Components\Search\Allow search and Cortana to use location`

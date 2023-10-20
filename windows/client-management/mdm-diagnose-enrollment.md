@@ -17,7 +17,7 @@ To ensure that the autoenrollment feature is working as expected, you must verif
 
    :::image type="content" alt-text="Screenshot of Intune license verification." source="images/auto-enrollment-intune-license-verification.png" lightbox="images/auto-enrollment-intune-license-verification.png":::
 
-1. Verify that autoenrollment is activated for those users who are going to enroll the devices into Mobile Device Management (MDM) with Intune. For more information, see [Azure AD and Microsoft Intune: Automatic MDM enrollment in the new Portal](./azure-ad-and-microsoft-intune-automatic-mdm-enrollment-in-the-new-portal.md).
+1. Verify that autoenrollment is activated for those users who are going to enroll the devices into Mobile Device Management (MDM) with Intune. For more information, see [Microsoft Entra ID and Microsoft Intune: Automatic MDM enrollment in the new Portal](./azure-ad-and-microsoft-intune-automatic-mdm-enrollment-in-the-new-portal.md).
 
     ![Auto-enrollment activation verification.](images/auto-enrollment-activation-verification.png)
 
@@ -28,7 +28,7 @@ To ensure that the autoenrollment feature is working as expected, you must verif
 
 1. Verify that the device is running a [supported version of Windows](/windows/release-health/supported-versions-windows-client).
 
-1. Autoenrollment into Intune via Group Policy is valid only for devices that are hybrid Azure AD joined. This condition means that the device must be joined into both local Active Directory and Azure Active Directory. To verify that the device is hybrid Azure AD joined, run `dsregcmd /status` from the command line.
+1. Autoenrollment into Intune via Group Policy is valid only for devices that are Microsoft Entra hybrid joined. This condition means that the device must be joined into both local Active Directory and Microsoft Entra ID. To verify that the device is Microsoft Entra hybrid joined, run `dsregcmd /status` from the command line.
 
     You can confirm that the device is properly hybrid-joined if both **AzureAdJoined** and **DomainJoined** are set to **YES**.
 
@@ -36,9 +36,9 @@ To ensure that the autoenrollment feature is working as expected, you must verif
 
     Additionally, verify that the SSO State section displays **AzureAdPrt** as **YES**.
 
-    ![Auto-enrollment Azure AD prt verification.](images/auto-enrollment-azureadprt-verification.png)
+    ![Auto-enrollment Microsoft Entra prt verification.](images/auto-enrollment-azureadprt-verification.png)
 
-    This information can also be found on the Azure AD device list.
+    This information can also be found on the Microsoft Entra device list.
 
 1. Verify that the MDM discovery URL during autoenrollment is `https://enrollment.manage.microsoft.com/enrollmentserver/discovery.svc`.
 
@@ -48,7 +48,7 @@ To ensure that the autoenrollment feature is working as expected, you must verif
 
    :::image type="content" alt-text="Screenshot of Mobility setting MDM Intune." source="images/auto-enrollment-microsoft-intune-setting.png" lightbox="images/auto-enrollment-microsoft-intune-setting.png":::
 
-1. When using group policy for enrollment, verify that the *Enable Automatic MDM enrollment using default Azure AD credentials* group policy (**Local Group Policy Editor > Computer Configuration > Policies > Administrative Templates > Windows Components > MDM**) is properly deployed to all devices that should be enrolled into Intune. You may contact your domain administrators to verify if the group policy has been deployed successfully.
+1. When using group policy for enrollment, verify that the *Enable Automatic MDM enrollment using default Microsoft Entra credentials* group policy (**Local Group Policy Editor > Computer Configuration > Policies > Administrative Templates > Windows Components > MDM**) is properly deployed to all devices that should be enrolled into Intune. You may contact your domain administrators to verify if the group policy has been deployed successfully.
 
 1. Verify that Microsoft Intune allows enrollment of Windows devices.
 
@@ -79,14 +79,14 @@ If you can't find event ID 75 in the logs, it indicates that the autoenrollment 
 
 - The autoenrollment didn't trigger at all. In this case, you won't find either event ID 75 or event ID 76. To know the reason, you must understand the internal mechanisms happening on the device as described here:
 
-   The autoenrollment process is triggered by a task (**Microsoft** > **Windows** > **EnterpriseMgmt**) within the task-scheduler. This task appears if the *Enable automatic MDM enrollment using default Azure AD credentials* group policy (**Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **MDM**) is successfully deployed to the target machine as shown in the following screenshot:
+   The autoenrollment process is triggered by a task (**Microsoft** > **Windows** > **EnterpriseMgmt**) within the task-scheduler. This task appears if the *Enable automatic MDM enrollment using default Microsoft Entra credentials* group policy (**Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **MDM**) is successfully deployed to the target machine as shown in the following screenshot:
 
    :::image type="content" alt-text="Screenshot of Task scheduler." source="images/auto-enrollment-task-scheduler.png" lightbox="images/auto-enrollment-task-scheduler.png":::
 
    > [!NOTE]
    > This task isn't visible to standard users, run Scheduled Tasks with administrative credentials to find the task.
 
-   This task runs every 5 minutes for the duration of one day. To confirm if the task succeeded, check the task scheduler event logs: **Applications and Services Logs > Microsoft > Windows > Task Scheduler > Operational**. Look for an entry where the task scheduler created by enrollment client for automatically enrolling in MDM from Azure Active Directory is triggered by event ID 107.
+   This task runs every 5 minutes for the duration of one day. To confirm if the task succeeded, check the task scheduler event logs: **Applications and Services Logs > Microsoft > Windows > Task Scheduler > Operational**. Look for an entry where the task scheduler created by enrollment client for automatically enrolling in MDM from Microsoft Entra ID is triggered by event ID 107.
 
    :::image type="content" alt-text="Screenshot of Event ID 107." source="images/auto-enrollment-event-id-107.png" lightbox="images/auto-enrollment-event-id-107.png":::
 
@@ -96,7 +96,7 @@ If you can't find event ID 75 in the logs, it indicates that the autoenrollment 
 
    The task scheduler log displays event ID 102 (task completed) regardless of the autoenrollment success or failure. This status-display means that the task scheduler log is only useful to confirm if the autoenrollment task is triggered or not. It doesn't indicate the success or failure of autoenrollment.
 
-   If you can't see from the log that task Schedule created by enrollment client for automatically enrolling in MDM from Azure AD is initiated, there's possibly an issue with the group policy. Immediately run the command `gpupdate /force` in a command prompt to get the group policy object applied. If this step still doesn't help, further troubleshooting on Active Directory is required.
+   If you can't see from the log that task Schedule created by enrollment client for automatically enrolling in MDM from Microsoft Entra ID is initiated, there's possibly an issue with the group policy. Immediately run the command `gpupdate /force` in a command prompt to get the group policy object applied. If this step still doesn't help, further troubleshooting on Active Directory is required.
    One frequently seen error is related to some outdated enrollment entries in the registry on the target client device (**HKLM > Software > Microsoft > Enrollments**). If a device has been enrolled (can be any MDM solution and not only Intune), some enrollment information added into the registry is seen:
 
    :::image type="content" alt-text="Screenshot of Outdated enrollment entries." source="images/auto-enrollment-outdated-enrollment-entries.png" lightbox="images/auto-enrollment-outdated-enrollment-entries.png":::

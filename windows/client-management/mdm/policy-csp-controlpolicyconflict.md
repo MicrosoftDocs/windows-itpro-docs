@@ -49,7 +49,7 @@ If set to 1 then any MDM policy that's set that has an equivalent GP policy will
 This policy is used to ensure that MDM policy wins over GP when policy is configured on MDM channel. The default value is 0. The MDM policies in Policy CSP will behave as described if this policy value is set 1.
 
 > [!NOTE]
-> This policy doesn't support the Delete command and doesn’t support setting the value to 0 again after it was previously set to 1. Windows 10 version 1809 will support using the Delete command to set the value to 0 again, if it was previously set to 1.
+> In Windows 10 version 1803, this policy doesn't support the Delete command and doesn’t support setting the value to 0 again after it was previously set to 1.
 
 The policy should be set at every sync to ensure the device removes any settings that conflict with MDM just as it does on the very first set of the policy. This ensures that:
 
