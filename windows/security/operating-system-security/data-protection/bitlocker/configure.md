@@ -10,9 +10,11 @@ ms.date: 10/03/2023
 To configure BitLocker, you can use one of the following options:
 
 - Configuration Service Provider (CSP): this option is commonly used for devices managed by a Mobile Device Management (MDM) solution, like Microsoft Intune. The [BitLocker CSP](/windows/client-management/mdm/bitlocker-csp) is used to configure BitLocker, and to report the status of different BitLocker functions to the MDM solution. With Microsoft Intune, you can use the BitLocker status in [compliance polices](/mem/intune/protect/compliance-policy-create-windows#encryption), combining them with [Conditional Access](/azure/active-directory/conditional-access/overview). Conditional Access can prevent or grant access to services like Exchange Online and SharePoint Online, based on the status of BitLocker. To learn more about the Intune options to configure and monitor BitLocker, check the following articles:
+
     - [Manage BitLocker policy for Windows devices with Intune](/mem/intune/protect/encrypt-devices#rotate-bitlocker-recovery-keys)
     - [Monitor device encryption with Intune](/mem/intune/protect/encryption-monitor)
     - [Use compliance policies to set rules for devices you manage with Intune](/mem/intune/protect/device-compliance-get-started)
+
 - Group policy (GPO): this option can be used for devices that are joined to an Active Directory domain and aren't managed by a device management solution. Group policy can also be used for devices that aren't joined to an Active Directory domain, using the local group policy editor
 - Microsoft Configuration Manager: this option can be used for devices that are managed by Microsoft Configuration Manager using the BitLocker management agent. To learn more about options to configure BitLocker via Microsoft Configuration Manager, see [Deploy BitLocker management](/mem/configmgr/protect/deploy-use/bitlocker/deploy-management-agent)
 

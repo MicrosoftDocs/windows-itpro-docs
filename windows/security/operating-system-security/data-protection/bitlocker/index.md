@@ -14,20 +14,20 @@ BitLocker is a Windows security feature that provides encryption for entire volu
 
 ## Practical applications
 
-Data on a lost or stolen device is vulnerable to unauthorized access, either by running a software-attack tool against it, or by transferring the devices's hard drive to a different device. BitLocker helps mitigate unauthorized data access by enhancing file and system protections, rendering data inaccessible when BitLocker-protected devices are decommissioned or recycled.
+Data on a lost or stolen device is vulnerable to unauthorized access, either by running a software-attack tool against it, or by transferring the device's hard drive to a different device. BitLocker helps mitigate unauthorized data access by enhancing file and system protections, rendering data inaccessible when BitLocker-protected devices are decommissioned or recycled.
 
 ## BitLocker and TPM
 
-BitLocker provides maximum protection when used with a Trusted Platform Module (TPM). A TPM is a common hardware component installed on Windows devices, and it works with BitLocker to ensure that a device hasn't been tampered with while the system is offline.
+BitLocker provides maximum protection when used with a Trusted Platform Module (TPM), which is a common hardware component installed on Windows devices. The TPM works with BitLocker to ensure that a device hasn't been tampered with while the system is offline.
 
-In **addition** to the TPM, BitLocker has the option to lock the normal startup process until the user supplies a personal identification number (PIN) or inserts a removable device  that contains a *startup key*. These security measures provide multifactor authentication and assurance that the device can't start or resume from hibernation until the correct PIN or startup key is presented.
+In *addition* to the TPM, BitLocker can lock the normal startup process until the user supplies a personal identification number (PIN) or inserts a removable device  that contains a *startup key*. These security measures provide multifactor authentication and assurance that the device can't start or resume from hibernation until the correct PIN or startup key is presented.
 
 On devices that don't have a TPM, BitLocker can still be used to encrypt the operating system drive. This implementation requires the user to either:
 
 - use a startup key, which is a file stored on a removable drive that is used to start the device, or when resuming from hibernation
-- use a password. This option is not very secure since there's no password lockout logic. As such, this option is discouraged and disabled by default
+- use a password. This option isn't secure since it's subject to brute force attacks as there isn't a password lockout logic. As such, the password option is discouraged and disabled by default
 
-Both options don't provide the pre-startup system integrity verification offered by BitLocker with a TPM.
+Both options don't provide the preboot system integrity verification offered by BitLocker with a TPM.
 
 :::row:::
   :::column span="1":::
@@ -57,8 +57,8 @@ Both options don't provide the pre-startup system integrity verification offered
 BitLocker has the following requirements:
 
 - For BitLocker to use the system integrity check provided by a TPM, the device must have TPM 1.2 or later versions. If a device doesn't have a TPM, saving a startup key on a removable drive is mandatory when enabling BitLocker
-- A device with a TPM must also have a *Trusted Computing Group* (TCG)-compliant BIOS or UEFI firmware. The BIOS or UEFI firmware establishes a chain of trust for the pre-operating system startup, and it must include support for *TCG-specified Static Root of Trust Measurement*. A computer without a TPM doesn't require TCG-compliant firmware
-- The system BIOS or UEFI firmware (for TPM and non-TPM devices) must support the USB mass storage device class, and reading files on a USB drive in the pre-operating system environment
+- A device with a TPM must also have a *Trusted Computing Group* (TCG)-compliant BIOS or UEFI firmware. The BIOS or UEFI firmware establishes a chain of trust for the preboot startup, and it must include support for *TCG-specified Static Root of Trust Measurement*. A computer without a TPM doesn't require TCG-compliant firmware
+- The system BIOS or UEFI firmware (for TPM and non-TPM devices) must support the USB mass storage device class, and reading files on a USB drive in the preboot environment
 
     > [!NOTE]
     > TPM 2.0 is not supported in *Legacy* and *Compatibility Support Module (CSM)* modes of the BIOS. Devices with TPM 2.0 must have their BIOS mode configured as native UEFI only. The Legacy and CSM options must be disabled. For added security, enable the *secure boot* feature.
@@ -88,7 +88,7 @@ BitLocker has the following requirements:
 
 ## Device encryption
 
-*Device encryption* is a Windows feature that provides a simple way for some devices to enable BitLocker encryption automatically. Device encryption is available on all Windows versions, including Home edition, and it requires a device to meet either [Modern Standby](/windows-hardware/design/device-experiences/modern-standby) or HSTI security requirements, and have no externally accessible ports that allow DMA access.
+*Device encryption* is a Windows feature that provides a simple way for some devices to enable BitLocker encryption automatically. Device encryption is available on all Windows versions, and it requires a device to meet either [Modern Standby](/windows-hardware/design/device-experiences/modern-standby) or HSTI security requirements. Device encryption can't have externally accessible ports that allow DMA access.
 
 > [!IMPORTANT]
 > Device encryption encrypts only the OS drive and fixed drives, it doesn't encrypt external/USB drives.
@@ -106,7 +106,7 @@ Unlike a standard BitLocker implementation, device encryption is enabled automat
 >
 > If a different encryption method and/or cipher strength is needed but the device is already encrypted, it must first be decrypted before the new encryption method and/or cipher strength can be applied. After the device is decrypted, you can apply different BitLocker settings.
 
-If a device doesn't initially qualify for device encryption, but then a change is made that causes the device to qualify (for example, turn *Secure Boot* on), device encryption enables BitLocker automatically as soon as it detects it (unless device encryption is disabled).
+If a device doesn't initially qualify for device encryption, but then a change is made that causes the device to qualify (for example, by turning on *Secure Boot*), device encryption enables BitLocker automatically as soon as it detects it.
 
 You can check whether a device meets requirements for device encryption in the System Information app (`msinfo32.exe`). If the device meets the requirements, System Information shows a line that reads:
 

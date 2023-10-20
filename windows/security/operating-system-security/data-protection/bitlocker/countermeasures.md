@@ -50,7 +50,7 @@ To learn more, see the policy setting [Require additional authentication at star
 
 ### Protect DMA ports
 
-It's important to protect DMA ports, as external peripherals may gain unauthorized access to memory. Depending on the device capabilities, there are different options to protect DMA ports. To learn more, see the policy setting [Disable new DMA devices when this computer is locked](configure.md?tabs=common#disable-new-dma-devices-when-this-computer-is-locked).
+It's important to protect DMA ports, as external peripherals might gain unauthorized access to memory. Depending on the device capabilities, there are different options to protect DMA ports. To learn more, see the policy setting [Disable new DMA devices when this computer is locked](configure.md?tabs=common#disable-new-dma-devices-when-this-computer-is-locked).
 
 ## Attack countermeasures
 
@@ -63,7 +63,7 @@ A physically present attacker might attempt to install a bootkit or rootkit-like
 > [!NOTE]
 > BitLocker protects against this attack by default.
 
-A BIOS password is recommended for defense-in-depth in case a BIOS exposes settings that may weaken the BitLocker security promise. Intel Boot Guard and AMD Hardware Verified Boot support stronger implementations of Secure Boot that provide additional resilience against malware and physical attacks. Intel Boot Guard and AMD Hardware Verified Boot are part of platform boot verification [standards for a highly secure Windows device](/windows-hardware/design/device-experiences/oem-highly-secure).
+A BIOS password is recommended for defense-in-depth in case a BIOS exposes settings that might weaken the BitLocker security promise. Intel Boot Guard and AMD Hardware Verified Boot support stronger implementations of Secure Boot that provide additional resilience against malware and physical attacks. Intel Boot Guard and AMD Hardware Verified Boot are part of platform boot verification [standards for a highly secure Windows device](/windows-hardware/design/device-experiences/oem-highly-secure).
 
 ### Brute force attacks against a PIN
 
@@ -79,13 +79,13 @@ These files are secured on an encrypted volume by default when BitLocker is enab
 
 ### Memory remanence
 
-Enable secure boot and mandatorily prompt a password to change BIOS settings. For scenarios requiring protection against these advanced attacks, configure a TPM+PIN protector, disable *standby* power management, and shut down or hibernate the device before it leaves the control of an authorized user.
+Enable secure boot and mandatorily use a password to change BIOS settings. For scenarios requiring protection against these advanced attacks, configure a `TPM+PIN` protector, disable *standby* power management, and shut down or hibernate the device before it leaves the control of an authorized user.
 
-The Windows default power settings cause devices to enter *sleep mode* when idle. When a device transitions to sleep, running programs and documents are persisted in memory. When a device resumes from sleep, users aren't required to reauthenticate with a PIN or USB startup key to access encrypted data. This scenario may lead to conditions where data security is compromised.
+The Windows default power settings cause devices to enter *sleep mode* when idle. When a device transitions to sleep, running programs and documents are persisted in memory. When a device resumes from sleep, users aren't required to reauthenticate with a PIN or USB startup key to access encrypted data. This scenario might lead to conditions where data security is compromised.
 
 When a device *hibernates*, the drive is locked. When the device resumes from hibernation, the drive is unlocked, which means that users must provide a PIN or a startup key if using multifactor authentication with BitLocker.
 
-Therefore, organizations that use BitLocker may want to use Hibernate instead of Sleep for improved security.
+Therefore, organizations that use BitLocker might want to use Hibernate instead of Sleep for improved security.
 
 > [!NOTE]
 > This setting doesn't have an impact on TPM-only mode, because it provides a transparent user experience at startup and when resuming from the Hibernate states.
@@ -94,7 +94,7 @@ Therefore, organizations that use BitLocker may want to use Hibernate instead of
 
 An attacker might modify the boot manager configuration database (BCD), which is stored on a nonencrypted partition and add an entry point to a rogue operating system on a different partition. During the boot process, BitLocker code makes sure that the operating system that the encryption key obtained from the TPM is given to, is cryptographically verified to be the intended recipient. Because this strong cryptographic verification already exists, we don't recommend storing a hash of a disk partition table in Platform Configuration Register (PCR) 5.
 
-An attacker might also replace the entire operating system disk while preserving the platform hardware and firmware and could then extract a protected BitLocker key blob from the metadata of the victim OS partition. The attacker could then attempt to unseal that BitLocker key blob by calling the TPM API from an operating system under their control. This can't succeed because when Windows seals the BitLocker key to the TPM, it does it with a PCR 11 value of 0, and to successfully unseal the blob, PCR 11 in the TPM must have a value of 0. However, when the boot manager passes the control to any boot loader (legitimate or rogue) it always changes PCR 11 to a value of 1. Since the PCR 11 value is guaranteed to be different after exiting the boot manager, the attacker can't unlock the BitLocker key.
+An attacker might also replace the entire operating system disk while preserving the platform hardware and firmware and could then extract a protected BitLocker key blob from the metadata of the victim OS partition. The attacker could then attempt to unseal that BitLocker key blob by calling the TPM API from an operating system under their control. This can't succeed because when Windows seals the BitLocker key to the TPM, it does it with a PCR 11 value of 0. To successfully unseal the blob, PCR 11 in the TPM must have a value of 0. However, when the boot manager passes the control to any boot loader (legitimate or rogue) it always changes PCR 11 to a value of 1. Since the PCR 11 value is guaranteed to be different after exiting the boot manager, the attacker can't unlock the BitLocker key.
 
 ## Attacker countermeasures
 
@@ -102,7 +102,7 @@ The following sections cover mitigations for different types of attackers.
 
 ### Attacker without much skill or with limited physical access
 
-Physical access may be limited by a form factor that doesn't expose buses and memory. For example, there are no external DMA-capable ports, no exposed screws to open the chassis, and memory is soldered to the mainboard.
+Physical access might be limited in a form factor that doesn't expose buses and memory. For example, there are no external DMA-capable ports, no exposed screws to open the chassis, and memory is soldered to the mainboard.
 
 This attacker of opportunity doesn't use destructive methods or sophisticated forensics hardware/software.
 
@@ -130,7 +130,7 @@ Mitigation:
 > [!IMPORTANT]
 > These settings are **not configured** by default.
 
-For some systems, bypassing TPM-only may require opening the case, and may require soldering, but could possibly be done for a reasonable cost. Bypassing a TPM with a PIN protector would cost more, and require brute forcing the PIN. With a sophisticated enhanced PIN, it could be nearly impossible. To learn more about the policy setting, see [Allow enhanced PINs for startup](configure.md?tabs=os#allow-enhanced-pins-for-startup).
+For some systems, bypassing TPM-only might require opening the case and require soldering, but can be done for a reasonable cost. Bypassing a TPM with a PIN protector would cost more, and require brute forcing the PIN. With a sophisticated enhanced PIN, it could be nearly impossible. To learn more about the policy setting, see [Allow enhanced PINs for startup](configure.md?tabs=os#allow-enhanced-pins-for-startup).
 
 For secure administrative workstations, it's recommended to:
 

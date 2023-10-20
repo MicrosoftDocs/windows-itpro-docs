@@ -43,28 +43,19 @@ To protect the BitLocker encryption key, BitLocker can use different types of *p
 
 | Key protector | Description |
 | - | - |
-| Password | To unlock a drive, the user must supply a password. This key protector can be used on non-TPM devices .|
-| TPM | A hardware device used to help establish a secure root-of-trust. BitLocker only supports TPM 1.2 or higher versions. The TPM protector can only be used with the OS drive. |
-| PIN | A user-entered numeric or alphanumeric key protector that can only be used with OS volumes and in addition to the TPM.|
-| Startup key | An encryption key that can be stored on removable media, with a file name format of `<protector_id>.bek`. This key protector can be used alone on non-TPM computers, or with a TPM for added security.|
+| Password | To unlock a drive, the user must supply a password. When used for OS drives, the user is prompted for a password in the preboot screen. This method doesn't offer any lockout logic, therefore it doesn't protect against brute force attacks|
+| Autounlock | |
+| Smart card certificate | To unlock a drive, the user must use a smart card.|
+| TPM | A hardware device used to help establish a secure root-of-trust, validating early boot components. The TPM protector can only be used with the OS drive. |
+| TPM + PIN | A user-entered numeric or alphanumeric key protector that can only be used with OS volumes and in addition to the TPM.The TPM validates early boot components. The user must enter the correct PIN before the start-up process can continue, and before the drive can be unlocked. The TPM enters lockout if the incorrect PIN is entered repeatedly, to protect the PIN from brute force attacks. The number of repeated attempts that will trigger a lockout is variable.|
+| Startup key | An encryption key that can be stored on removable media, with a file name format of `<protector_id>.bek`. The user is prompted for the USB flash drive that has the recovery key and/or startup key, and then reboot the device.|
+| TPM + Startup key | The TPM successfully validates early boot components, and a USB flash drive containing the startup key has been inserted. |
+| TPM + Startup key + PIN | The TPM successfully validates early boot components. The user must enter the correct PIN and insert a USB drive containing the startup key before the OS can boot |
 | Recovery key| An encryption key stored on removable media that can be used for recovering data encrypted on a BitLocker volume. The file name has a format of `<protector_id>.bek`|
 | Recovery password | A 48-digit number used to unlock a volume when it is in *recovery mode*. Numbers can often be typed on a regular keyboard. If the numbers on the normal keyboard aren't responding, the function keys (F1-F10) can be used to input the numbers.|
 | PublicKey (DataRecoveryAgent) | A *Data Recovery Agent* (DRA) certificate that can be used to access any BitLocker encrypted drives that is configured with the public key protector.|
-| Network (TpmNetworkKey) | A key protector that allows automatic unlocking of operating system volumes while still maintaining multifactor authentication. This key protector can only be used with OS volumes.|
+| TPM + Network Key (TpmNetworkKey) |  The TPM successfully validates early boot components, and a valid encrypted network key has been provided from a WDS server. This authentication method provides automatic unlock of OS volumes while maintaining multifactor authentication. This key protector can only be used with OS volumes.|
 | Active Directory user or group | A protector that is based on an Active Directory user or group security identified (SID). This protector can't be used for OS volumes and is not supported on Microsoft Entra joined devices.|
-
-### BitLocker authentication methods
-
-The following table describes the authentication methods that can be used to unlock an OS volume:
-
-| Authentication method | Requires user interaction | Description |
-| - | - | - |
-| TPM only| No| TPM validates early boot components|
-| TPM + PIN | Yes| TPM validates early boot components. The user must enter the correct PIN before the start-up process can continue, and before the drive can be unlocked. The TPM enters lockout if the incorrect PIN is entered repeatedly, to protect the PIN from brute force attacks. The number of repeated attempts that will trigger a lockout is variable.|
-| TPM + Network key | No | The TPM successfully validates early boot components, and a valid encrypted network key has been provided from a WDS server. This authentication method provides automatic unlock of operating system volumes at system reboot while still maintaining multifactor authentication. |
-| TPM + startup key | Yes| The TPM successfully validates early boot components, and a USB flash drive containing the startup key has been inserted.|
-| Startup key only | Yes| The user is prompted for the USB flash drive that has the recovery key and/or startup key, and then reboot the device.|
-| Password | Yes| The user is prompted for a password in the preboot screen. This method doesn't offer any lockout logic, therefore it doesn't protect against brute force attacks. |
 
 #### Support for devices without TPM
 
