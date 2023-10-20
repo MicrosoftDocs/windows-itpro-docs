@@ -56,8 +56,9 @@ Starting with Windows 11, version 22H2, new features and enhancements were intro
 <!--    -->
 For more information, see [Placeholder](placeholder.md).
 
-### feature
-<!---->
+### Windows Hello for Business authentication improvement
+<!--7771685-->
+Peripheral face and fingerprint sensors can be used for Windows Hello for Business authentication on devices where Enhanced Sign-in Security (Secure Biometrics) has been enabled at the factory. Previously this functionality was blocked. For more information, see [Common questions about Windows Hello for Business](/windows/security/identity-protection/hello-for-business/hello-faq).
 
 ### LAPS native integration
 <!--6399966-->
