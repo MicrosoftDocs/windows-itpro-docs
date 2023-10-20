@@ -22,8 +22,8 @@ UCClient acts as an individual device's record. It contains data such as the cur
 
 |Field |Type |Example |Description |
 |---|---|---|---|
-| **AzureADDeviceId** |  [string](/azure/kusto/query/scalar-data-types/string) | `71db1a1a-f1a6-4a25-b88f-79c2f513dae0` | Azure AD Device ID |
-| **AzureADTenantId** |  [string](/azure/kusto/query/scalar-data-types/string) | `69ca04b0-703d-4b3a-9184-c4e3c15d6f5e` | Azure AD Tenant ID |
+| **AzureADDeviceId** |  [string](/azure/kusto/query/scalar-data-types/string) | `71db1a1a-f1a6-4a25-b88f-79c2f513dae0` | Microsoft Entra Device ID |
+| **AzureADTenantId** |  [string](/azure/kusto/query/scalar-data-types/string) | `69ca04b0-703d-4b3a-9184-c4e3c15d6f5e` | Microsoft Entra tenant ID |
 | **Country** |  [string](/azure/kusto/query/scalar-data-types/string) | `US` | The last-reported location of device (country or region), based on IP address. Shown as country code. |
 | **DeviceFamily** |  [string](/azure/kusto/query/scalar-data-types/string) | `PC, Phone` | The device family such as PC, Phone. |
 | **DeviceName** |  [string](/azure/kusto/query/scalar-data-types/string) | `JohnPC-Contoso` | Client-provided device name |

@@ -43,7 +43,7 @@ This policy setting controls whether a device will automatically sign in and loc
 
 This only occurs if the last interactive user didn't sign out before the restart or shutdown. 
 
-If the device is joined to Active Directory or Azure Active Directory, this policy only applies to Windows Update restarts. Otherwise, this will apply to both Windows Update restarts and user-initiated restarts and shutdowns.
+If the device is joined to Active Directory or Microsoft Entra ID, this policy only applies to Windows Update restarts. Otherwise, this will apply to both Windows Update restarts and user-initiated restarts and shutdowns.
 
 - If you don't configure this policy setting, it's enabled by default. When the policy is enabled, the user is automatically signed in and the session is automatically locked with all lock screen apps configured for that user after the device boots. 
 
@@ -574,7 +574,7 @@ The locations that Switch User interface appear are in the Logon UI, the Start m
 
 <!-- OverrideShellProgram-Description-Begin -->
 <!-- Description-Source-DDF -->
-OverrideShellProgram policy allows IT admin to configure the shell program for Windows OS on a device. This policy has the highest precedence over other ways of configuring the shell program. The policy currently supports below options: 1. Not Configured: Default shell will be launched. 2. Apply Lightweight Shell: Lightweight shell doesn't have a user interface and helps the device to achieve better performance as the shell consumes limited resources over default shell. Lightweight shell contains a limited set of features which could be consumed by applications. This configuration can be useful if the device needs to have a continuous running user interface application which would consume features offered by Lightweight shell. If you disable or don't configure this policy setting, then the default shell will be launched.
+OverrideShellProgram policy allows IT admin to configure the shell program for Windows OS on a device. This policy has the highest precedence over other ways of configuring the shell program. The policy currently supports below options: 1. Not Configured: Default shell will be launched. 2. Apply Lightweight Shell: Lightweight shell doesn't have a user interface and helps the device to achieve better performance as the shell consumes limited resources over default shell. Lightweight shell contains a limited set of features, which could be consumed by applications. This configuration can be useful if the device needs to have a continuous running user interface application that would consume features offered by Lightweight shell. If you disable or don't configure this policy setting, then the default shell will be launched.
 <!-- OverrideShellProgram-Description-End -->
 
 <!-- OverrideShellProgram-Editable-Begin -->

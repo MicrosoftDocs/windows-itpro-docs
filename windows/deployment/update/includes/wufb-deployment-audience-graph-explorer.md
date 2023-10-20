@@ -32,7 +32,7 @@ A deployment audience is a collection of devices that you want to deploy updates
    ```
 
 
-1. Add devices, using their **Azure AD ID**, to the deployment audience so they become audience members. Specify the deployment **Audience ID** in the URL field and the devices to add in the request body. The `id` property specifies the **Azure AD ID** of the device.
+1. Add devices, using their **Microsoft Entra ID**, to the deployment audience so they become audience members. Specify the deployment **Audience ID** in the URL field and the devices to add in the request body. The `id` property specifies the **Microsoft Entra ID** of the device.
 
    ```msgraph-interactive
    POST https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences/d39ad1ce-0123-4567-89ab-cdef01234567/updateAudience 

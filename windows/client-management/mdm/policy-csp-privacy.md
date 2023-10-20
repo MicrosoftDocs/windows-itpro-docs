@@ -93,7 +93,7 @@ Allows or disallows the automatic acceptance of the pairing and privacy user con
 <!-- Description-Source-ADMX -->
 This policy setting determines whether Clipboard contents can be synchronized across devices.
 
-- If you enable this policy setting, Clipboard contents are allowed to be synchronized across devices logged in under the same Microsoft account or Azure AD account.
+- If you enable this policy setting, Clipboard contents are allowed to be synchronized across devices logged in under the same Microsoft account or Microsoft Entra account.
 
 - If you disable this policy setting, Clipboard contents can't be shared to other devices.
 
