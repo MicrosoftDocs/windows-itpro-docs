@@ -41,7 +41,7 @@ items:
       - name: Configure and provision Windows Hello for Business
         href: hello-hybrid-key-trust-provision.md
         displayName: key trust
-      - name: Configure SSO for Azure AD joined devices
+      - name: Configure SSO for Microsoft Entra joined devices
         href: hello-hybrid-aadj-sso.md
         displayName: key trust
     - name: Certificate trust deployment
@@ -58,10 +58,10 @@ items:
       - name: Configure and provision Windows Hello for Business
         href: hello-hybrid-cert-whfb-provision.md
         displayName: certificate trust
-      - name: Configure SSO for Azure AD joined devices
+      - name: Configure SSO for Microsoft Entra joined devices
         href: hello-hybrid-aadj-sso.md
         displayName: certificate trust
-      - name: Deploy certificates to Azure AD joined devices
+      - name: Deploy certificates to Microsoft Entra joined devices
         href: hello-hybrid-aadj-sso-cert.md
         displayName: certificate trust
   - name: On-premises deployments

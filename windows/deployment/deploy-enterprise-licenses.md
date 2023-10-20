@@ -19,7 +19,7 @@ ms.date: 11/23/2022
 
 # Deploy Windows Enterprise licenses
 
-This article describes how to deploy Windows 10 or Windows 11 Enterprise E3 or E5 licenses with [subscription activation](windows-10-subscription-activation.md) or [Enterprise E3 in CSP](windows-10-enterprise-e3-overview.md) and Azure Active Directory (Azure AD).
+This article describes how to deploy Windows 10 or Windows 11 Enterprise E3 or E5 licenses with [subscription activation](windows-10-subscription-activation.md) or [Enterprise E3 in CSP](windows-10-enterprise-e3-overview.md) and Microsoft Entra ID.
 
 These activation features require a supported and licensed version of Windows 10 Pro or Windows 11 Pro:
 
@@ -66,24 +66,26 @@ If you need to update contact information and resend the activation email, use t
 ## Preparing for deployment: reviewing requirements
 
 - Devices must be running a supported version of Windows 10 Pro or Windows 11 Pro
-- Azure AD-joined, or hybrid domain joined with Azure AD Connect. Customers who are federated with Azure AD are also eligible.
+- Microsoft Entra joined, or hybrid domain joined with Microsoft Entra Connect. Customers who are federated with Microsoft Entra ID are also eligible.
 
 For more information, see [Review requirements on devices](#review-requirements-on-devices), later in this article.
 
-### Active Directory synchronization with Azure AD
+<a name='active-directory-synchronization-with-azure-ad'></a>
 
-If you have an on-premises Active Directory Domain Services (AD DS) domain, you need to synchronize the identities in the on-premises AD DS domain with Azure AD. This synchronization is required for users to have a _single identity_ that they can use to access their on-premises apps and cloud services that use Azure AD. An example of a cloud service is Windows Enterprise E3 or E5.
+### Active Directory synchronization with Microsoft Entra ID
 
-**Figure 1** illustrates the integration between the on-premises AD DS domain with Azure AD. Azure AD Connect is responsible for synchronization of identities between the on-premises AD DS domain and Azure AD. Azure AD Connect is a service that you can install on-premises or in a virtual machine in Azure.
+If you have an on-premises Active Directory Domain Services (AD DS) domain, you need to synchronize the identities in the on-premises AD DS domain with Microsoft Entra ID. This synchronization is required for users to have a _single identity_ that they can use to access their on-premises apps and cloud services that use Microsoft Entra ID. An example of a cloud service is Windows Enterprise E3 or E5.
+
+**Figure 1** illustrates the integration between the on-premises AD DS domain with Microsoft Entra ID. Microsoft Entra Connect is responsible for synchronization of identities between the on-premises AD DS domain and Microsoft Entra ID. Microsoft Entra Connect is a service that you can install on-premises or in a virtual machine in Azure.
 
 :::image type="content" source="images/enterprise-e3-ad-connect.png" alt-text="Figure 1 illustrates the integration between the on-premises AD DS domain with Azure AD.":::
 
-Figure 1: On-premises AD DS integrated with Azure AD
+Figure 1: On-premises AD DS integrated with Microsoft Entra ID
 
-For more information about integrating on-premises AD DS domains with Azure AD, see the following resources:
+For more information about integrating on-premises AD DS domains with Microsoft Entra ID, see the following resources:
 
-- [What is hybrid identity with Azure Active Directory?](/azure/active-directory/hybrid/whatis-hybrid-identity)
-- [Azure AD Connect and Azure AD Connect Health installation roadmap](/azure/active-directory/hybrid/how-to-connect-install-roadmap)
+- [What is hybrid identity with Microsoft Entra ID?](/azure/active-directory/hybrid/whatis-hybrid-identity)
+- [Microsoft Entra Connect and Microsoft Entra Connect Health installation roadmap](/azure/active-directory/hybrid/how-to-connect-install-roadmap)
 
 ## Assigning licenses to users
 
@@ -93,7 +95,7 @@ After you've ordered the Windows subscription (Windows 10 Business, E3 or E5), y
 
 The following methods are available to assign licenses:
 
-- When you have the required Azure AD subscription, [group-based licensing](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal) is the preferred method to assign Enterprise E3 or E5 licenses to users.
+- When you have the required Microsoft Entra subscription, [group-based licensing](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal) is the preferred method to assign Enterprise E3 or E5 licenses to users.
 
 - You can sign in to the Microsoft 365 admin center and manually assign licenses:
 
@@ -113,11 +115,15 @@ Now that you've established a subscription and assigned licenses to users, you c
 > [!NOTE]
 > The following experiences are specific to Windows 10. The general concepts also apply to Windows 11.
 
-### Step 1: Join Windows Pro devices to Azure AD
+<a name='step-1-join-windows-pro-devices-to-azure-ad'></a>
 
-You can join a Windows Pro device to Azure AD during setup, the first time the device starts. You can also join a device that's already set up.
+### Step 1: Join Windows Pro devices to Microsoft Entra ID
 
-#### Join a device to Azure AD the first time the device is started
+You can join a Windows Pro device to Microsoft Entra ID during setup, the first time the device starts. You can also join a device that's already set up.
+
+<a name='join-a-device-to-azure-ad-the-first-time-the-device-is-started'></a>
+
+#### Join a device to Microsoft Entra ID the first time the device is started
 
 1. During the initial setup, on the **Who owns this PC?** page, select **My organization**, and then select **Next**.
 
@@ -125,21 +131,23 @@ You can join a Windows Pro device to Azure AD during setup, the first time the d
 
     Figure 2: The "Who owns this PC?" page in initial Windows 10 setup.
 
-1. On the **Choose how you'll connect** page, select **Join Azure AD**, and then select **Next**.
+1. On the **Choose how you'll connect** page, select **Join Microsoft Entra ID**, and then select **Next**.
 
     :::image type="content" source="images/enterprise-e3-choose-how.png" alt-text="A screenshot of the 'Choose how you'll connect' page in Windows 10 setup.":::
 
     Figure 3: The "Choose how you'll connect" page in initial Windows 10 setup.
 
-1. On the **Let's get you signed in** page, enter your Azure AD credentials, and then select **Sign in**.
+1. On the **Let's get you signed in** page, enter your Microsoft Entra credentials, and then select **Sign in**.
 
     :::image type="content" source="images/enterprise-e3-lets-get.png" alt-text="A screenshot of the 'Let's get you signed in' page in Windows 10 setup.":::
 
     Figure 4: The "Let's get you signed in" page in initial Windows 10 setup.
 
-Now the device is Azure AD-joined to the organization's subscription.
+Now the device is Microsoft Entra joined to the organization's subscription.
 
-#### Join a device to Azure AD when the device is already set up with Windows 10 Pro
+<a name='join-a-device-to-azure-ad-when-the-device-is-already-set-up-with-windows-10-pro'></a>
+
+#### Join a device to Microsoft Entra ID when the device is already set up with Windows 10 Pro
 
 > [!IMPORTANT]
 > Make sure that the user you're signing in with is _not_ the **BUILTIN/Administrator** account. That user can't use the `+ Connect` action to join a work or school account.
@@ -150,31 +158,33 @@ Now the device is Azure AD-joined to the organization's subscription.
 
     Figure 5: "Connect to work or school" configuration in Settings.
 
-1. In **Set up a work or school account**, select **Join this device to Azure Active Directory**.
+1. In **Set up a work or school account**, select **Join this device to Microsoft Entra ID**.
 
     :::image type="content" source="images/enterprise-e3-set-up-work-or-school.png" alt-text="A screenshot of the 'Set up a work or school account' wizard.":::
 
     Figure 6: Set up a work or school account.
 
-1. On the **Let's get you signed in** page, enter your Azure AD credentials, and then select **Sign in**.
+1. On the **Let's get you signed in** page, enter your Microsoft Entra credentials, and then select **Sign in**.
 
     :::image type="content" source="images/enterprise-e3-lets-get-2.png" alt-text="A screenshot of the 'Let's get you signed in' window.":::
 
     Figure 7: The "Let's get you signed in" window.
 
-Now the device is Azure AD-joined to the organization's subscription.
+Now the device is Microsoft Entra joined to the organization's subscription.
 
 ### Step 2: Pro edition activation
 
 If the device is running a supported version of Windows 10 or Windows 11, it automatically activates Windows Enterprise edition using the firmware-embedded activation key.
 
-### Step 3: Sign in using Azure AD account
+<a name='step-3-sign-in-using-azure-ad-account'></a>
 
-Once the device is joined to Azure AD, users will sign in with their Azure AD account, as illustrated in **Figure 8**. The Windows 10 Enterprise E3 or E5 license associated with the user will enable Windows 10 Enterprise edition capabilities on the device.
+### Step 3: Sign in using Microsoft Entra account
 
-:::image type="content" source="images/enterprise-e3-sign-in.png" alt-text="A screenshot of signing in to Windows 10 as an Azure AD user.":::
+Once the device is joined to Microsoft Entra ID, users will sign in with their Microsoft Entra account, as illustrated in **Figure 8**. The Windows 10 Enterprise E3 or E5 license associated with the user will enable Windows 10 Enterprise edition capabilities on the device.
 
-Figure 8: Sign in to Windows 10 with an Azure AD account.
+:::image type="content" source="images/enterprise-e3-sign-in.png" alt-text="A screenshot of signing in to Windows 10 as a Microsoft Entra user.":::
+
+Figure 8: Sign in to Windows 10 with a Microsoft Entra account.
 
 ### Step 4: Verify that Enterprise edition is enabled
 
@@ -246,7 +256,7 @@ It displays both of the previously mentioned error messages.
 
 Devices must be running a supported version of Windows 10 Pro or Windows 11 Pro. Earlier versions of Windows 10, such as version 1703, don't support this feature.
 
-Devices must also be joined to Azure AD, or hybrid domain joined with Azure AD Connect. Customers who are federated with Azure AD are also eligible.
+Devices must also be joined to Microsoft Entra ID, or hybrid domain joined with Microsoft Entra Connect. Customers who are federated with Microsoft Entra ID are also eligible.
 
 Use the following procedures to review whether a particular device meets these requirements.
 
@@ -260,11 +270,13 @@ To determine if the computer has a firmware-embedded activation key, enter the f
 
 If the device has a firmware-embedded activation key, it will be displayed in the output. If the output is blank, the device doesn't have a firmware embedded activation key. Most OEM-provided devices designed to run Windows 8 or later will have a firmware-embedded key.
 
-#### Determine if a device is Azure AD-joined
+<a name='determine-if-a-device-is-azure-ad-joined'></a>
+
+#### Determine if a device is Microsoft Entra joined
 
 1. Open a command prompt and enter `dsregcmd /status`.
 
-1. Review the output in the **Device State** section. If the **AzureAdJoined** value is **YES**, the device is joined to Azure AD.
+1. Review the output in the **Device State** section. If the **AzureAdJoined** value is **YES**, the device is joined to Microsoft Entra ID.
 
 #### Determine the version of Windows
 
@@ -296,4 +308,4 @@ If a device isn't able to connect to Windows Update, it can lose activation stat
 
 Subscriptions to Windows Enterprise are also available for virtualized clients. Enterprise E3 and E5 are available for Virtual Desktop Access (VDA) in Azure or in another [qualified multitenant hoster](https://download.microsoft.com/download/3/D/4/3D445779-2870-4E3D-AFCB-D35D2E1BC095/QMTH%20Authorized%20Partner%20List.pdf) (PDF download).
 
-Virtual machines (VMs) must be configured to enable Windows Enterprise subscriptions for VDA. Active Directory-joined and Azure AD-joined clients are supported. For more information, see [Enable VDA for Enterprise subscription activation](vda-subscription-activation.md).
+Virtual machines (VMs) must be configured to enable Windows Enterprise subscriptions for VDA. Active Directory-joined and Microsoft Entra joined clients are supported. For more information, see [Enable VDA for Enterprise subscription activation](vda-subscription-activation.md).

@@ -37,7 +37,7 @@ Access and Remote Access permissions to users and groups. We recommend that you 
 
 -   Blank
 
-    This value represents how the local security policy deletes the policy enforcement key. This value deletes the policy and then sets it to Not defined. The Blank value is set by using the ACL editor to empty the list, and then pressing OK.
+   This value represents how the local security policy deletes the policy enforcement key. This value deletes the policy and then sets it as Not defined. To set a blank value, select "Define this policy setting" and leave the Security descriptor empty, then select OK.
 
 -   *User-defined input* of the SDDL representation of the groups and privileges
 

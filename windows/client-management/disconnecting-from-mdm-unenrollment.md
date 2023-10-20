@@ -100,24 +100,26 @@ When the server initiates disconnection, all undergoing sessions for the enrollm
 
 ## Unenrollment from Work Access settings page
 
-If the user is enrolled into MDM using an Azure Active Directory (Azure AD Join or by adding a Microsoft work account), the MDM account shows up under the Work Access page. However, the **Disconnect** button is greyed out and not accessible. Users can remove that MDM account by removing the Azure AD association to the device.
+If the user is enrolled into MDM using a Microsoft Entra ID (Microsoft Entra join or by adding a Microsoft work account), the MDM account shows up under the Work Access page. However, the **Disconnect** button is greyed out and not accessible. Users can remove that MDM account by removing the Microsoft Entra association to the device.
 
 You can only use the Work Access page to unenroll under the following conditions:
 
 - Enrollment was done using bulk enrollment.
 - Enrollment was created using the Work Access page.
 
-## Unenrollment from Azure Active Directory Join
+<a name='unenrollment-from-azure-active-directory-join'></a>
 
-When a user is enrolled into MDM through Azure Active Directory Join and later, the enrollment disconnects, there's no warning that the user will lose Windows Information Protection (WIP) data. The disconnection message doesn't indicate the loss of WIP data.
+## Unenrollment from Microsoft Entra join
+
+When a user is enrolled into MDM through Microsoft Entra join and later, the enrollment disconnects, there's no warning that the user will lose Windows Information Protection (WIP) data. The disconnection message doesn't indicate the loss of WIP data.
 
 ![aadj unenerollment.](images/azure-ad-unenrollment.png)
 
-During the process in which a device is enrolled into MDM through Azure Active Directory Join and then remotely unenrolled, the device may get into a state where it must be reimaged. When devices are remotely unenrolled from MDM, the Azure Active Directory association is also removed. This safeguard is in place to avoid leaving the corporate devices in unmanaged state.
+During the process in which a device is enrolled into MDM through Microsoft Entra join and then remotely unenrolled, the device may get into a state where it must be reimaged. When devices are remotely unenrolled from MDM, the Microsoft Entra association is also removed. This safeguard is in place to avoid leaving the corporate devices in unmanaged state.
 
-Before remotely unenrolling corporate devices, you must ensure that there is at least one admin user on the device that isn't part of Azure AD, otherwise the device won't have any admin user after the operation.
+Before remotely unenrolling corporate devices, you must ensure that there is at least one admin user on the device that isn't part of Microsoft Entra ID, otherwise the device won't have any admin user after the operation.
 
-In mobile devices, remote unenrollment for Azure Active Directory Joined devices fails. To remove corporate content from these devices, we recommend you remotely wipe the device.
+In mobile devices, remote unenrollment for Microsoft Entra joined devices fails. To remove corporate content from these devices, we recommend you remotely wipe the device.
 
 ## IT admin-requested disconnection
 

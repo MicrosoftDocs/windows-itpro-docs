@@ -52,7 +52,7 @@ For sample XML configurations for the different app combinations, see [Samples f
 >
 >- Shell Launcher doesn't support a custom shell with an application that launches a different process and exits. For example, you cannot specify **write.exe** in Shell Launcher. Shell Launcher launches a custom shell and monitors the process to identify when the custom shell exits. **Write.exe** creates a 32-bit wordpad.exe process and exits. Because Shell Launcher is not aware of the newly created wordpad.exe process, Shell Launcher will take action based on the exit code of **Write.exe**, such as restarting the custom shell. 
 
--   A domain, Azure Active Directory, or local user account.
+-   A domain, Microsoft Entra ID, or local user account.
 
 -   A Windows application that is installed for that account. The app can be your own company application or a common app like Internet Explorer.
 
