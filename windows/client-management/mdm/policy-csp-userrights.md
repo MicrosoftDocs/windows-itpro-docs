@@ -93,7 +93,7 @@ For example, the following syntax grants user rights to Authenticated Users and 
 <![CDATA[Authenticated Users&#xF000;Replicator]]>
 ```
 
-For example, the following syntax grants user rights to two specific Azure Active Directory (Azure AD) users from Contoso, user1 and user2:
+For example, the following syntax grants user rights to two specific Microsoft Entra users from Contoso, user1 and user2:
 
 ```xml
 <![CDATA[AzureAD\user1@contoso.com&#xF000;AzureAD\user2@contoso.com]]>

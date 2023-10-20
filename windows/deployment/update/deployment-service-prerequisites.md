@@ -21,12 +21,14 @@ ms.date: 02/14/2023
 <!--7512398-->
 Before you begin the process of deploying updates with Windows Update for Business deployment service, ensure you meet the prerequisites.
 
-## Azure and Azure Active Directory
+<a name='azure-and-azure-active-directory'></a>
 
-- An Azure subscription with [Azure Active Directory](/azure/active-directory/)
-- Devices must be Azure Active Directory-joined and meet the below OSrequirements.
-  - Devices can be [Azure AD joined](/azure/active-directory/devices/concept-azure-ad-join) or [hybrid Azure AD joined](/azure/active-directory/devices/concept-azure-ad-join-hybrid).
-  - Devices that are [Azure AD registered](/azure/active-directory/devices/concept-azure-ad-register) only (Workplace joined) aren't supported with Windows Update for Business
+## Azure and Microsoft Entra ID
+
+- An Azure subscription with [Microsoft Entra ID](/azure/active-directory/)
+- Devices must be Microsoft Entra joined and meet the below OSrequirements.
+  - Devices can be [Microsoft Entra joined](/azure/active-directory/devices/concept-azure-ad-join) or [Microsoft Entra hybrid joined](/azure/active-directory/devices/concept-azure-ad-join-hybrid).
+  - Devices that are [Microsoft Entra registered](/azure/active-directory/devices/concept-azure-ad-register) only (Workplace joined) aren't supported with Windows Update for Business
 
 ## Licensing
 
