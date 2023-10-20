@@ -29,7 +29,7 @@ You find the Delivery Optimization settings in Group Policy under **Computer Con
 
 Starting with Microsoft Intune version 1902, you can set many Delivery Optimization policies as a profile, which you can then apply to groups of devices. For more information, see [Delivery Optimization settings in Microsoft Intune](/mem/intune/configuration/delivery-optimization-windows).
 
-**Starting with Windows 10, version 1903**, you can use the Azure Active Directory (Azure AD) Tenant ID as a means to define groups. To set the value for [DOGroupIDSource](waas-delivery-optimization-reference.md#select-the-source-of-group-ids) to its new maximum value of 5.
+**Starting with Windows 10, version 1903**, you can use the Microsoft Entra tenant ID as a means to define groups. To set the value for [DOGroupIDSource](waas-delivery-optimization-reference.md#select-the-source-of-group-ids) to its new maximum value of 5.
 
 ## Allow service endpoints
 
@@ -66,7 +66,7 @@ Quick-reference table:
 
 ### Hybrid WAN scenario
 
-For this scenario, grouping devices by domain allows devices to be included in peer downloads and uploads across VLANs. **Set Download Mode to 2 - Group**. The default group, when the GroupID or GroupIDSource policies aren't set, is the AD Site (1), Authenticated domain SID (2) or AAD Tenant ID (5), in that order. If your domain-based group is too wide, or your Active Directory sites aren't aligned with your site network topology, then you should consider other options for dynamically creating groups, for example by using the [DOGroupIDSource](waas-delivery-optimization-reference.md#select-the-source-of-group-ids) policy.
+For this scenario, grouping devices by domain allows devices to be included in peer downloads and uploads across VLANs. **Set Download Mode to 2 - Group**. The default group, when the GroupID or GroupIDSource policies aren't set, is the AD Site (1), Authenticated domain SID (2) or Microsoft Entra tenant ID (5), in that order. If your domain-based group is too wide, or your Active Directory sites aren't aligned with your site network topology, then you should consider other options for dynamically creating groups, for example by using the [DOGroupIDSource](waas-delivery-optimization-reference.md#select-the-source-of-group-ids) policy.
 
 In Group Policy go to **Computer Configuration\Administrative Templates\Windows Components\Delivery Optimization** and set **Download mode** to **2**.
 

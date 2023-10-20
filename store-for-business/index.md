@@ -30,7 +30,7 @@ Welcome to the Microsoft Store for Business and Education! You can use Microsoft
 >
 > - As of April 14, 2021, all apps that charge a base price above free are no longer available to buy in the Microsoft Store for Business and Education. If you've already bought a paid app, you can still use it, but no new purchases are possible from businessstore.microsoft.com or educationstore.microsoft.com. Also, you can't buy additional licenses for apps you already bought. You can still assign and reassign licenses for apps that you already own and use from the private store. Apps with a base price of "free" are still available. This change doesn't impact apps in the Microsoft Store on Windows 10.
 >
-> - Also as of April 14, 2021, you must sign in with your Azure Active Directory (Azure AD) account before you browse Microsoft Store for Business and Education.
+> - Also as of April 14, 2021, you must sign in with your Microsoft Entra account before you browse Microsoft Store for Business and Education.
 
 ## In this section
 
@@ -40,5 +40,5 @@ Welcome to the Microsoft Store for Business and Education! You can use Microsoft
 | [Find and acquire apps](find-and-acquire-apps-overview.md) | Use the Microsoft Store for Business and Education to find apps for your organization. You can also work with developers to create line-of-business apps that are only available to your organization. |
 | [Manage apps](manage-apps-microsoft-store-for-business-overview.md) | Manage settings and access to apps in Microsoft Store for Business and Education. |
 | [Device Guard signing portal](device-guard-signing-portal.md) | Device Guard signing is a Device Guard feature that is available in the Microsoft Store for Business and Education. It gives admins a single place to sign catalog files and code integrity policies. After admins have created catalog files for unsigned apps and signed the catalog files, they can add the signers to a code integrity policy. You can merge the code integrity policy with your existing policy to include your custom signing certificate. This allows you to trust the catalog files. |
-| [Manage settings in the Microsoft Store for Business and Education](manage-settings-microsoft-store-for-business.md) | You can add users and groups, as well as update some of the settings associated with the Azure Active Directory (AD) tenant |
+| [Manage settings in the Microsoft Store for Business and Education](manage-settings-microsoft-store-for-business.md) | You can add users and groups, as well as update some of the settings associated with the Microsoft Entra tenant |
 | [Troubleshoot Microsoft Store for Business and Education](troubleshoot-microsoft-store-for-business.md) | Troubleshooting topics for Microsoft Store for Business and Education. |

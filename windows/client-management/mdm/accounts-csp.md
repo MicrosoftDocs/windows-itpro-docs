@@ -46,7 +46,7 @@ Root node.
 Interior node for the account domain information.
 
 <a href="" id="domain-computername"></a>**Domain/ComputerName**
-This node specifies the DNS hostname for a device. This setting can be managed remotely, but this remote management isn't supported for devices hybrid joined to Azure Active Directory and an on-premises Active directory. The server must explicitly reboot the device for this value to take effect. A couple of macros can be embedded within the value for dynamic substitution. Using any of these macros will limit the new name to 15 characters.
+This node specifies the DNS hostname for a device. This setting can be managed remotely, but this remote management isn't supported for devices hybrid joined to Microsoft Entra ID and an on-premises Active directory. The server must explicitly reboot the device for this value to take effect. A couple of macros can be embedded within the value for dynamic substitution. Using any of these macros will limit the new name to 15 characters.
 
 Available naming macros:
 

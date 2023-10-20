@@ -27,16 +27,16 @@ ms.date: 05/24/2023
 
 For companies or organizations using mobile device management (MDM) tools, those tools can synchronize with Microsoft Store for Business inventory to manage apps with offline licenses. Store for Business management tool services work with your third-party management tool to manage content.
 
-Your management tool needs to be installed and configured with Azure AD, in the same directory that you are using for Store for Business. Once that's done, you can configure it to work with Store for Business
+Your management tool needs to be installed and configured with Microsoft Entra ID, in the same directory that you are using for Store for Business. Once that's done, you can configure it to work with Store for Business
 
-**To configure a management tool in Azure AD**
+**To configure a management tool in Microsoft Entra ID**
 
 1. Sign in to the Azure Portal as an Administrator.
-2. Click **Azure Active Directory**, and then choose your directory.
+2. Click **Microsoft Entra ID**, and then choose your directory.
 4. Click **Mobility (MDM and MAM)**.  
 3. Click **+Add Applications**, find the application, and add it to your directory.
 
-After your management tool is added to your Azure AD directory, you can configure it to work with Microsoft Store. You can configure multiple management tools - just repeat the following procedure.
+After your management tool is added to your Microsoft Entra directory, you can configure it to work with Microsoft Store. You can configure multiple management tools - just repeat the following procedure.
 
 **To configure a management tool in Microsoft Store for Business**
 
