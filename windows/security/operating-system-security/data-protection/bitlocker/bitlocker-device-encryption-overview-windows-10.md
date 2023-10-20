@@ -67,7 +67,7 @@ Unlike a standard BitLocker implementation, BitLocker Device Encryption is enabl
   
   With this configuration, the recovery password is created automatically when the computer joins the domain, and then the recovery key is backed up to AD DS, the TPM protector is created, and the clear key is removed.
 
-- Similar to signing in with a domain account, the clear key is removed when the user signs in to an Azure AD account on the device. As described in the bullet point above, the recovery password is created automatically when the user authenticates to Azure AD. Then, the recovery key is backed up to Azure AD, the TPM protector is created, and the clear key is removed.
+- Similar to signing in with a domain account, the clear key is removed when the user signs in to a Microsoft Entra account on the device. As described in the bullet point above, the recovery password is created automatically when the user authenticates to Microsoft Entra ID. Then, the recovery key is backed up to Microsoft Entra ID, the TPM protector is created, and the clear key is removed.
 
 Microsoft recommends automatically enabling BitLocker Device Encryption on any systems that support it. However, the automatic BitLocker Device Encryption process can be prevented by changing the following registry setting:
 
@@ -160,4 +160,4 @@ Part of the Microsoft Desktop Optimization Pack, Microsoft BitLocker Administrat
 
 Going forward, the functionality of MBAM will be incorporated into Configuration Manager. For more information, see [Plan for BitLocker management](/mem/configmgr/protect/plan-design/bitlocker-management).
 
-Enterprises not using Configuration Manager can use the built-in features of Azure AD and Microsoft Intune for administration and monitoring. For more information, see [Monitor device encryption with Intune](/mem/intune/protect/encryption-monitor).
+Enterprises not using Configuration Manager can use the built-in features of Microsoft Entra ID and Microsoft Intune for administration and monitoring. For more information, see [Monitor device encryption with Intune](/mem/intune/protect/encryption-monitor).

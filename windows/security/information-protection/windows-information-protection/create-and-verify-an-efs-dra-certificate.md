@@ -122,18 +122,18 @@ It's possible that you might revoke data from an unenrolled device only to later
 ## Auto-recovery of encryption keys
 Starting with Windows 10, version 1709, WIP includes a data recovery feature that lets your employees auto-recover access to work files if the encryption key is lost and the files are no longer accessible. This typically happens if an employee reimages the operating system partition, removing the WIP key info, or if a device is reported as lost and you mistakenly target the wrong device for unenrollment.
 
-To help make sure employees can always access files, WIP creates an auto-recovery key that's backed up to their Azure Active Directory (Azure AD) identity.
+To help make sure employees can always access files, WIP creates an auto-recovery key that's backed up to their Microsoft Entra identity.
 
-The employee experience is based on signing in with an Azure AD work account. The employee can either:
+The employee experience is based on signing in with a Microsoft Entra ID work account. The employee can either:
 
 - Add a work account through the **Windows Settings > Accounts > Access work or school > Connect** menu.
 
     -OR-
 
-- Open **Windows Settings > Accounts > Access work or school > Connect** and choose the **Join this device to Azure Active Directory** link, under **Alternate actions**.
+- Open **Windows Settings > Accounts > Access work or school > Connect** and choose the **Join this device to Microsoft Entra ID** link, under **Alternate actions**.
 
     >[!Note]
-    >To perform an Azure AD Domain Join from the Settings page, the employee must have administrator privileges to the device.
+    >To perform a Microsoft Entra Domain Join from the Settings page, the employee must have administrator privileges to the device.
 
 After signing in, the necessary WIP key info is automatically downloaded and employees are able to access the files again.
 
@@ -147,7 +147,7 @@ After signing in, the necessary WIP key info is automatically downloaded and emp
 
     The **Access work or school settings** page appears.
 
-3. Sign-in to Azure AD as the employee and verify that the files now open
+3. Sign-in to Microsoft Entra ID as the employee and verify that the files now open
 
 ## Related topics
 

@@ -726,7 +726,7 @@ If the attestation process is launched successfully, this node will return code 
   - rpID (Relying Party Identifier): This field contains an identifier that can be used to help determine the caller.
   - serviceEndpoint : This field contains the complete URL of the Microsoft Azure Attestation provider instance to be used for evaluation.
   - nonce: This field contains an arbitrary number that can be used only once in a cryptographic communication. It's often a random or pseudo-random number issued in an authentication protocol to ensure that old communications can't be reused in replay attacks.
-  - aadToken: The Azure Active Directory token to be used for authentication against the Microsoft Azure Attestation service.
+  - aadToken: The Microsoft Entra token to be used for authentication against the Microsoft Azure Attestation service.
   - cv: This field contains an identifier(Correlation Vector) that will be passed in to the service call, and that can be used for diagnostics purposes.
 
 - Sample `<Data>`:

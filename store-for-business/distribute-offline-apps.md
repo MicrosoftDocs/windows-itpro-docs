@@ -35,7 +35,7 @@ Offline-licensed apps offer an alternative to online apps, and provide additiona
 
 - **You use imaging to manage devices in your organization** - Offline-licensed apps can be added to images and deployed with Deployment Image Servicing and Management (DISM), or Windows Imaging and Configuration Designer (ICD).
 
-- **Your employees do not have Azure Active Directory (AD) accounts** - Azure AD accounts are required for employees that install apps assigned to them from Microsoft Store or that claim apps from a private store.
+- **Your employees do not have Microsoft Entra accounts** - Microsoft Entra accounts are required for employees that install apps assigned to them from Microsoft Store or that claim apps from a private store.
 
 ## Distribution options for offline-licensed apps
 
