@@ -32,9 +32,9 @@ The following actions are supported:
 - Layer 3 tagging using a differentiated services code point (DSCP) value
 
 > [!NOTE]
-> The NetworkQoSPolicy configuration service provider is officially supported for devices that are Intune managed and Azure AD joined. Currently, this CSP is not supported on the following devices:
+> The NetworkQoSPolicy configuration service provider is officially supported for devices that are Intune managed and Microsoft Entra joined. Currently, this CSP is not supported on the following devices:
 >
-> - Azure AD Hybrid joined devices.
+> - Microsoft Entra hybrid joined devices.
 > - Devices that use both GPO and CSP at the same time.
 >
 > The minimum operating system requirement for this CSP is Windows 10, version 1703. This CSP is not supported in Microsoft Surface Hub prior to Windows 10, version 1703.
