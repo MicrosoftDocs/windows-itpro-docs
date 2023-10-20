@@ -42,20 +42,20 @@ The TPM is able to securely protect the BitLocker encryption key while it is at 
 To protect the BitLocker encryption key, BitLocker can use different types of *protectors*. When enabling BitLocker, each protector receives a copy of the *Volume Master Key*, which is then encrypted using its own machanism.
 
 | Key protector | Description |
-| - | - |
-| Password | To unlock a drive, the user must supply a password. When used for OS drives, the user is prompted for a password in the preboot screen. This method doesn't offer any lockout logic, therefore it doesn't protect against brute force attacks|
-| Autounlock | |
-| Smart card certificate | To unlock a drive, the user must use a smart card.|
-| TPM | A hardware device used to help establish a secure root-of-trust, validating early boot components. The TPM protector can only be used with the OS drive. |
-| TPM + PIN | A user-entered numeric or alphanumeric key protector that can only be used with OS volumes and in addition to the TPM.The TPM validates early boot components. The user must enter the correct PIN before the start-up process can continue, and before the drive can be unlocked. The TPM enters lockout if the incorrect PIN is entered repeatedly, to protect the PIN from brute force attacks. The number of repeated attempts that will trigger a lockout is variable.|
-| Startup key | An encryption key that can be stored on removable media, with a file name format of `<protector_id>.bek`. The user is prompted for the USB flash drive that has the recovery key and/or startup key, and then reboot the device.|
-| TPM + Startup key | The TPM successfully validates early boot components, and a USB flash drive containing the startup key has been inserted. |
-| TPM + Startup key + PIN | The TPM successfully validates early boot components. The user must enter the correct PIN and insert a USB drive containing the startup key before the OS can boot |
-| Recovery key| An encryption key stored on removable media that can be used for recovering data encrypted on a BitLocker volume. The file name has a format of `<protector_id>.bek`|
-| Recovery password | A 48-digit number used to unlock a volume when it is in *recovery mode*. Numbers can often be typed on a regular keyboard. If the numbers on the normal keyboard aren't responding, the function keys (F1-F10) can be used to input the numbers.|
-| PublicKey (DataRecoveryAgent) | A *Data Recovery Agent* (DRA) certificate that can be used to access any BitLocker encrypted drives that is configured with the public key protector.|
-| TPM + Network Key (TpmNetworkKey) |  The TPM successfully validates early boot components, and a valid encrypted network key has been provided from a WDS server. This authentication method provides automatic unlock of OS volumes while maintaining multifactor authentication. This key protector can only be used with OS volumes.|
-| Active Directory user or group | A protector that is based on an Active Directory user or group security identified (SID). This protector can't be used for OS volumes and is not supported on Microsoft Entra joined devices.|
+|--|--|
+| **Auto-unlock** | Used to automatically unlock volumes that do not host an operating system. BitLocker uses encrypted information stored in the registry and volume metadata to unlock any data volumes that use automatic unlocking. |
+| **Password** and **Password for OS drive**| To unlock a drive, the user must supply a password. When used for OS drives, the user is prompted for a password in the preboot screen. This method doesn't offer any lockout logic, therefore it doesn't protect against brute force attacks. |
+| **Startup key** | An encryption key that can be stored on removable media, with a file name format of `<protector_id>.bek`. The user is prompted for the USB flash drive that has the recovery key and/or startup key, and then reboot the device. |
+| Smart card certificate | Used to unlock volumes that do not host an operating system. To unlock a drive, the user must use a smart card. |
+| **TPM** | A hardware device used to help establish a secure root-of-trust, validating early boot components. The TPM protector can only be used with the OS drive. |
+| **TPM + PIN** | A user-entered numeric or alphanumeric key protector that can only be used with OS volumes and in addition to the TPM.The TPM validates early boot components. The user must enter the correct PIN before the start-up process can continue, and before the drive can be unlocked. The TPM enters lockout if the incorrect PIN is entered repeatedly, to protect the PIN from brute force attacks. The number of repeated attempts that will trigger a lockout is variable. |
+| **TPM + Startup key** | The TPM successfully validates early boot components. The user must insert a USB drive containing the startup key before the OS can boot. |
+| **TPM + Startup key + PIN** | The TPM successfully validates early boot components. The user must enter the correct PIN and insert a USB drive containing the startup key before the OS can boot. |
+| Recovery password | A 48-digit number used to unlock a volume when it is in *recovery mode*. Numbers can often be typed on a regular keyboard. If the numbers on the normal keyboard aren't responding, the function keys (F1-F10) can be used to input the numbers. |
+| **TPM + Network Key** | The TPM successfully validates early boot components, and a valid encrypted network key has been provided from a WDS server. This authentication method provides automatic unlock of OS volumes while maintaining multifactor authentication. This key protector can only be used with OS volumes. |
+| **Recovery key** | An encryption key stored on removable media that can be used for recovering data encrypted on a BitLocker volume. The file name has a format of `<protector_id>.bek`. |
+| **Data Recovery Agent** | A Data Recovery Agent (DRA) is a certificate-based key protector that can be used to access any BitLocker encrypted drives that is configured with the public key protector. |
+| **Active Directory user or group** | A protector that is based on an Active Directory user or group security identified (SID). |
 
 #### Support for devices without TPM
 

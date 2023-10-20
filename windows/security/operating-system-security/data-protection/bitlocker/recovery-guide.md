@@ -32,12 +32,12 @@ In a recovery scenario, the following options to restore access to the drive may
 :::row-end:::
 :::row:::
   :::column span="4":::
-    **Data Recovery Agent certificate**: a Data Recovery Agent (DRA) is a type of certificate that is associated with an Active Directory security principal and that can be used to access any BitLocker encrypted drives configured with the matching public key protector. *Data recovery agents* can use their credentials to unlock the drive. If the drive is an OS drive, the drive must be mounted as a data drive on another device for the data recovery agent to unlock it
+    **Data Recovery Agent certificate**: a Data Recovery Agent (DRA) is a type of certificate that is associated with an Active Directory security principal and that can be used to access any BitLocker encrypted drives configured with the matching public key. DRAs can use their credentials to unlock the drive. If the drive is an OS drive, the drive must be mounted as a data drive on another device for the DRA to unlock it.
   :::column-end:::
 :::row-end:::
 :::row:::
   :::column span="4":::
-    **Key package**: blob that can be used with the BitLocker Repair tool to reconstruct critical parts of a drive and salvage recoverable data. With the key package and either the *recovery password* or *recovery key*, portions of a corrupted BitLocker-protected drive can be decrypted. Each key package works only for a drive that has the corresponding drive identifier. A key package is not generated automatically, and can be stored on a file or in AD DS.
+    **Key package**: decryption key that can be used with the BitLocker Repair tool to reconstruct critical parts of a drive and salvage recoverable data. With the key package and either the *recovery password* or *recovery key*, portions of a corrupted BitLocker-protected drive can be decrypted. Each key package works only for a drive that has the corresponding drive identifier. A key package is not generated automatically, and can be saved on a file or in AD DS.
   :::column-end:::
 :::row-end:::
 
@@ -76,24 +76,26 @@ If software maintenance requires the computer to be restarted and two-factor aut
 
 ## Plan for BitLocker recovery
 
-When planning for BitLocker recovery, consider the following:
-
-To help document the BitLocker recovery process that works best for your organization, answer the following questions:
+When planning the BitLocker recovery process, first consult the organization's current best practices for recovering sensitive information. For example:
 
 | :ballot_box_with_check: | **Question** |
 |--|--|
-| :black_square_button: | *blah* |
-| :black_square_button: | *blah* |
-| :black_square_button: | *blah* |
+| :black_square_button: | *How does the organization handle lost Windows passwords?* |
+| :black_square_button: | *How does the organization perform smart card PIN resets?* |
+| :black_square_button: | *Are users allowed to save or retrieve recovery information for the devices that they own?* |
 
-### Automatic backup of recovery information
+Answering the questions helps to determine the best BitLocker recovery process for the organization, and to configure BitLocker policy settings accordingly. For example, if the organization has a process for resetting passwords, a similar process can be used for BitLocker recovery. If users aren't allowed to save or retrieve recovery information, the organization can use a data recovery agents (DRAs) or automatically back up recovery information to Microsoft Entra ID or Active Directory Domain Services (AD DS).
+
+After a BitLocker recovery has been initiated, users can use a recovery password to unlock access to encrypted data. Consider both self-recovery and recovery password retrieval methods for the organization.
+
+## Backup of recovery information
 
 > [!IMPORTANT]
 > The *BitLocker key package* can be stored in Active Directory Domain Services (AD DS), not in Microsoft Entra ID.
 
-#### Microsoft Entra ID
+### Microsoft Entra ID
 
-#### Active Directory
+### Active Directory
 
 The BitLocker recovery information for a device joined to Active Directory is stored in a child object of the computer object itself. Each BitLocker recovery object includes the recovery password and other recovery information. More than one BitLocker recovery object can exist under each Computer object, because there can be more than one recovery password associated with a BitLocker-enabled volume. The name of the BitLocker recovery object incorporates a globally unique identifier (GUID) and date and time information, for a fixed length of 63 characters. The syntax is `<Object Creation Date and Time><Recovery GUID>`.
 
@@ -122,15 +124,21 @@ If recovery information is not backed up to AD DS, or if you want to save a key 
 manage-bde.exe -KeyPackage C: -id <id> -path <path>
 ```
 
-A file with a `.kpg` extension is created in the specified path.
+A file with a file name format of `BitLocker Key Package {<id>}.KPG` is created in the specified path.
 
 > [!NOTE]
 > To export a new key package from an unlocked, BitLocker-protected volume, local administrator access to the working volume is required before any damage occurrs to the volume.
 
 ### Data Recovery Agents
 
+DRAs are useful for help desk scenarios where the help desk can unlock a BitLocker-protected drive by connecting the drive to a device that contains the certificate of a DRA. The DRA protector option must be configured before enabling BitLocker on a drive.
+
+
 ### User backup of recovery information
 
-## BitLocker recovery guide
 
-This article describes how to recover BitLocker keys from Microsoft Entra ID and Active Directory Domain Services (AD DS). This article assumes that it's understood how to configure devices to automatically backup BitLocker recovery information, and what types of recovery information are saved to Microsoft Entra ID and AD DS.
+### OneDrive option
+
+There's an option for storing the BitLocker recovery key using OneDrive. This option requires that computers aren't members of a domain and that the user is using a Microsoft Account. Local user accounts don't have the option to use OneDrive. Using the OneDrive option is the default recommended recovery key storage method for computers that aren't joined to a domain.
+
+Users can verify whether the recovery key is saved properly by checking OneDrive for the *BitLocker* folder, which is created automatically during the save process. The folder contains two files, a `readme.txt` and the recovery key. For users storing more than one recovery password on their OneDrive, they can identify the required recovery key by looking at the file name. The recovery key ID is appended to the end of the file name.
