@@ -216,7 +216,7 @@ Logs can help you [troubleshoot issues](/troubleshoot/windows-client/shell-exper
 You may also want to set up **automatic logon** for your kiosk device. When your kiosk device restarts, from an update or power outage, you can sign in the assigned access account manually. Or, you can configure the device to sign in to the assigned access account automatically. Make sure that Group Policy settings applied to the device don't prevent automatic sign in.
 
 > [!NOTE]
-> If you are using a Windows client device restriction CSP to set "Preferred Azure AD tenant domain", this will break the "User logon type" auto-login feature of the Kiosk profile.
+> If you are using a Windows client device restriction CSP to set "Preferred Microsoft Entra tenant domain", this will break the "User logon type" auto-login feature of the Kiosk profile.
 
 > [!TIP]
 > If you use the [kiosk wizard in Windows Configuration Designer](kiosk-single-app.md#wizard) or [XML in a provisioning package](lock-down-windows-10-to-specific-apps.md) to configure your kiosk, you can set an account to sign in automatically in the wizard or XML. 

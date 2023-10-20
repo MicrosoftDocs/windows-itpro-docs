@@ -20,7 +20,7 @@ ms.topic: reference
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
 > [!IMPORTANT]
-> Starting from Windows 10, version 20H2, to configure members of Windows local groups, use the [LocalUsersandGroups](policy-csp-localusersandgroups.md) policy instead of the RestrictedGroups policy. These members can be users or Azure Active Directory (Azure AD) groups.
+> Starting from Windows 10, version 20H2, to configure members of Windows local groups, use the [LocalUsersandGroups](policy-csp-localusersandgroups.md) policy instead of the RestrictedGroups policy. These members can be users or Microsoft Entra groups.
 >
 > Don't apply both policies to the same device, it's unsupported and may yield unpredictable results.
 <!-- RestrictedGroups-Editable-End -->
@@ -135,7 +135,7 @@ Descriptions of the properties:
 
 - `<accessgroup desc>` contains the local group SID or group name to configure. If a SID is specified here, the policy uses the [LookupAccountName](/windows/win32/api/winbase/nf-winbase-lookupaccountnamea) API to get the local group name. For best results, use names for `<accessgroup desc>`.
 
-- `<member name>` contains the members to add to the group in `<accessgroup desc>`. A member can be specified as a name or as a SID. For best results, use a SID for `<member name>`. The member SID can be a user account or a group in Active Directory, Azure AD, or on the local machine. If a name is specified here, the policy will try to get the corresponding SID using the [LookupAccountSID](/windows/win32/api/winbase/nf-winbase-lookupaccountsida) API. Name can be used for a user account or a group in Active Directory or on the local machine. Membership is configured using the [NetLocalGroupSetMembers](/windows/win32/api/lmaccess/nf-lmaccess-netlocalgroupsetmembers) API.
+- `<member name>` contains the members to add to the group in `<accessgroup desc>`. A member can be specified as a name or as a SID. For best results, use a SID for `<member name>`. The member SID can be a user account or a group in Active Directory, Microsoft Entra ID, or on the local machine. If a name is specified here, the policy will try to get the corresponding SID using the [LookupAccountSID](/windows/win32/api/winbase/nf-winbase-lookupaccountsida) API. Name can be used for a user account or a group in Active Directory or on the local machine. Membership is configured using the [NetLocalGroupSetMembers](/windows/win32/api/lmaccess/nf-lmaccess-netlocalgroupsetmembers) API.
 
 - In this example, `Group1` and `Group2` are local groups on the device being configured, and `Group3` is a domain group.
 

@@ -25,7 +25,7 @@ This scenario helps you to send an email to a co-worker listed in your work addr
 
 This process helps you to send a quick message to a co-worker from the work address book.
 
-1. Check to make sure your Microsoft Outlook or mail app is connected and synchronized with your Azure AD account.
+1. Check to make sure your Microsoft Outlook or mail app is connected and synchronized with your Microsoft Entra account.
 
 2. Click on the **Cortana** icon in the taskbar, and then click in the **Search** bar.
 
