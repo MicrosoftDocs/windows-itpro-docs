@@ -39,26 +39,15 @@ The following list can be used as a template for creating a recovery process for
 
 | :ballot_box_with_check: | Recovery process step | Details |
 |--|--| -- |
-| :black_square_button: | [Record the device name](#record-the-name-of-the-users-computer) |The name of the user's device can be used to locate the recovery password in Microsoft Entra ID or AD DS. If the user doesn't know the name of the device, ask the user to read the first word of the **Drive Label** in the **BitLocker Drive Encryption Password Entry** user interface. This word is the computer name when BitLocker was enabled and is probably the current name of the computer.|
+| :black_square_button: | Record the device name |The name of the user's device can be used to locate the recovery password in Microsoft Entra ID or AD DS. If the user doesn't know the name of the device, ask the user to read the first word of the **Drive Label** in the **BitLocker Drive Encryption Password Entry** user interface. This word is the computer name when BitLocker was enabled and is probably the current name of the computer.|
 | :black_square_button: | Verify the user's identity |The person who is asking for the recovery password should be verified as the authorized user of that computer. It should also be verified whether the computer for which the user provided the name belongs to the user.|
 | :black_square_button: | Locate the recovery password |Locate the computer object with the matching name in AD DS. Because computer object names are listed in the AD DS global catalog, the object should be able to be located even if it's a multi-domain forest.|
-| :black_square_button: | Gather information to determine why recovery occurred |Before giving the user the recovery password, information should be gatherer that will help determine why the recovery was needed. This information can be used to analyze the root cause during the post-recovery analysis. For more information about post-recovery analysis, see [Post-recovery analysis](#post-recovery-analysis).|
-| Provide the user the recovery password | Because the recovery password is 48 digits long, the user may need to record the password by writing it down or typing it on a different computer. If using MBAM or Configuration Manager BitLocker Management, the recovery password will be regenerated after it's recovered from the MBAM or Configuration Manager database to avoid the security risks associated with an uncontrolled password. |
+| :black_square_button: | Root cause analysis |Before giving the user the recovery password, information should be gatherer that will help determine why the recovery was needed. This information can be used to analyze the root cause during the post-recovery analysis|
+| :black_square_button: | Provide the user the recovery password | Because the recovery password is 48 digits long, the user may need to record the password by writing it down or typing it on a different computer. If using MBAM or Configuration Manager BitLocker Management, the recovery password will be regenerated after it's recovered from the MBAM or Configuration Manager database to avoid the security risks associated with an uncontrolled password. |
+| :black_square_button: | Rotate the recovery key | |
 
 > [!NOTE]
 > Because the 48-digit recovery password is long and contains a combination of digits, the user might mishear or mistype the password. The boot-time recovery console uses built-in checksum numbers to detect input errors in each 6-digit block of the 48-digit recovery password, and offers the user the opportunity to correct such errors.
-
-
-
-
-
-### Multiple recovery passwords
-
-If multiple recovery passwords are stored under a computer object in AD DS, the name of the BitLocker recovery information object includes the date on which the password was created.
-
-To make sure the correct password is provided and/or to prevent providing the incorrect password, ask the user to read the eight character password ID that is displayed in the recovery console.
-
-Since the password ID is a unique value that is associated with each recovery password stored in AD DS, running a query using this ID finds the correct password to unlock the encrypted volume.
 
 ## Post-recovery tasks
 
@@ -140,7 +129,9 @@ Windows Recovery Environment (RE) can be used to recover access to a drive prote
 
 Windows RE also asks for a BitLocker recovery key when a **Remove everything** reset from Windows RE is started on a device that uses **TPM + PIN** or **Password for OS drive** protectors. If BitLocker recovery is started on a keyboardless device with TPM-only protection, Windows RE, not the boot manager, asks for the BitLocker recovery key. After the key is entered, Windows RE troubleshooting tools can be accessed, or Windows can be started normally.
 
-## Retrieve Bitlocker recovery keys for a Microsoft Entra joined device
+
+
+### Retrieve the recovery password from Microsoft Entra ID
 
 ``` PowerShell
 function Get-EntraBitLockerKeys{
@@ -183,7 +174,15 @@ Device name: DESKTOP-53O32QI
  BitLocker recovery key: 158422-038236-492536-574783-256300-205084-114356-069773
 ```
 
-## BitLocker Recovery Password Viewer
+### Retrieve the recovery password from Active Directory
+
+If multiple recovery passwords are stored under a computer object in AD DS, the name of the BitLocker recovery information object includes the date on which the password was created.
+
+To make sure the correct password is provided and/or to prevent providing the incorrect password, ask the user to read the eight character password ID that is displayed in the recovery console.
+
+Since the password ID is a unique value that is associated with each recovery password stored in AD DS, running a query using this ID finds the correct password to unlock the encrypted volume.
+
+#### BitLocker Recovery Password Viewer
 
 BitLocker Recovery Password Viewer is an optional tool included with the *Remote Server Administration Tools (RSAT)*, and it's an extension for the *Active Directory Users and Computers Microsoft Management Console (MMC)* snap-in.
 
@@ -191,8 +190,6 @@ With BitLocker Recovery Password Viewer you can:
 
 - Check the Active Directory computer object's properties to retrieve the associated BitLocker recovery passwords
 - Search Active Directory for BitLocker recovery password across all the domains in the Active Directory forest. Passwords can also be searched by password identifier (ID)
-
-### Requirements
 
 To complete the procedures in this scenario, the following requirements must be met:
 
@@ -202,27 +199,23 @@ To complete the procedures in this scenario, the following requirements must be 
 
 The following procedures describe the most common tasks performed by using the BitLocker Recovery Password Viewer.
 
-### Install BitLocker Recovery Password Viewer
-
-
-### View the recovery passwords for a computer object
+##### View the recovery passwords for a computer object
 
 1. In **Active Directory Users and Computers**, locate and then select the container in which the computer is located
 1. Right-click the computer object and select **Properties**
 1. In the **Properties** dialog box, select the **BitLocker Recovery** tab to view the BitLocker recovery passwords that are associated with the computer
 
-## Copy the recovery passwords for a computer object
+##### Copy the recovery passwords for a computer object
 
 1. Follow the steps in the previous procedure to view the BitLocker recovery passwords
 1. On the **BitLocker Recovery** tab of the **Properties** dialog box, right-click the BitLocker recovery password that needs to be copied, and then select **Copy Details**
 1. Press <kbd>CTRL</kbd>+<kbd>V</kbd> to paste the copied text to a destination location, such as a text file or spreadsheet
 
-## Locate a recovery password by using a password ID
+##### Locate a recovery password by using a password ID
 
 1. In Active Directory Users and Computers, right-click the domain container and select **Find BitLocker Recovery Password**
 1. In the **Find BitLocker Recovery Password** dialog box, type the first eight characters of the recovery password in the **Password ID (first 8 characters)** box, and select **Search**
 1. Once the recovery password is located, you can use the previous procedure to copy it
-
 
 ## Rotate keys
 
@@ -266,4 +259,35 @@ The following limitations exist for Repair-bde:
 For a complete list of the `repair-bde.exe` options, see the [Repair-bde reference](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/ff829851(v=ws.11)).
 
 
+
+### Microsoft Entra ID
+
+
+
+#### Data Recovery Agents
+
+To list data recovery agents configured for a BitLocker-protected drive, use the `manage-bde.exe` command, including certificate-based protectors. Example:
+
+```cmd
+C:\>manage-bde.exe -protectors -get E:
+
+Volume E: []
+All Key Protectors
+
+    Numerical Password:
+      ID: {24B0AA32-F8D0-40BA-BB05-73A800324C09}
+      Password:
+        461109-608201-413820-485342-181588-463056-430617-501391
+
+    Data Recovery Agent (Certificate Based):
+      ID: {3F81C18D-A685-4782-8F55-99C6452980E7}
+      Certificate Thumbprint:
+        9de688607336294a52b445d30d1eb92f0bec1e78
+```
+
+In this example, if the private key is available in the local certificate store, the administrator could use the following command to unlock the drive by using the data recovery agent protector:
+
+```cmd
+manage-bde -unlock E: -Certificate -ct 9de688607336294a52b445d30d1eb92f0bec1e78
+```
 

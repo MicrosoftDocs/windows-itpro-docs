@@ -152,18 +152,33 @@ A file with a file name format of `BitLocker Key Package {<id>}.KPG` is created 
 > [!NOTE]
 > To export a new key package from an unlocked, BitLocker-protected volume, local administrator access to the working volume is required before any damage occurrs to the volume.
 
+
+### Multiple recovery passwords
+
+If multiple recovery passwords are stored under a computer object in AD DS, the name of the BitLocker recovery information object includes the date on which the password was created.
+
+To make sure the correct password is provided and/or to prevent providing the incorrect password, ask the user to read the eight character password ID that is displayed in the recovery console.
+
+Since the password ID is a unique value that is associated with each recovery password stored in AD DS, running a query using this ID finds the correct password to unlock the encrypted volume.
+
+
 #### Data Recovery Agents
 
 DRAs can be used to recover OS drives, fixed data drives, and removable data drives. However, when used to recover OS drives, the operating system drive must be mounted on another device as a *data drive* for the DRA to be able to unlock the drive. Data recovery agents are added to the drive when it's encrypted, and can be updated after encryption occurs.
 
-> [!NOTE]
-> DRAs can be published in Active Directory, but not in Microsoft Entra ID.
-
 To configure DRAs for devices that are joined to an Active Directory domain, the following steps are required:
 
-1. Create a DRA certificate, which must contain the *BitLocker Data Recovery Agent* OID `1.3.6.1.4.1.311.67.1.2` in the EKU extension
+1. Obtain a DRA certificate. The following key usage and enhanced key usage attributes are inspected by BitLocker before using the certificate.
+  1. If a key usage attribute is present, it must be one of the following:
+    - `CERT_DATA_ENCIPHERMENT_KEY_USAGE`
+    - `CERT_KEY_AGREEMENT_KEY_USAGE`
+    -`CERT_KEY_ENCIPHERMENT_KEY_USAGE`
+  1.  If an enhanced key usage (EKU) attribute is present, it must be one of the following:
+    - As specified in the policy setting, or the default `1.3.6.1.4.1.311.67.1.1`
+    - Any EKU object identifier supported by your certification authority (CA)
 1. Add the DRA via group policy using the path: **Computer configuration** > **Policies** > **Windows Settings** > **Security Settings** > **Public Key Policies** > **BitLocker Drive Encryption**
-1. Configure the following policy setting, accourding to your organization's policy: [Provide the unique identifiers for your organization](configure.md?tabs=common#provide-the-unique-identifiers-for-your-organization)
+1. Configure the [Provide the unique identifiers for your organization](configure.md?tabs=common#provide-the-unique-identifiers-for-your-organization) policy setting to associate a unique identifier to a new drive that is enabled with BitLocker. An identification field is a string that is used to uniquely identify a business unit or organization. Identification fields are required for management of data recovery agents on BitLocker-protected drives. BitLocker only manages and updates DRAs when an identification field is present on a drive, and is identical to the value configured on the device
+
 1. Configure the following policy settings to allow recovery using a DRA for each drive type:
 
     - [Choose how BitLocker-protected operating system drives can be recovered](configure.md?tabs=os#choose-how-bitlocker-protected-operating-system-drives-can-be-recovered)

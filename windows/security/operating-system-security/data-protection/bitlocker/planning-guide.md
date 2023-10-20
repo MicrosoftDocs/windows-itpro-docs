@@ -54,7 +54,7 @@ To protect the BitLocker encryption key, BitLocker can use different types of *p
 | **Recovery password** | A 48-digit number used to unlock a volume when it is in *recovery mode*. Numbers can often be typed on a regular keyboard. If the numbers on the normal keyboard aren't responding, the function keys (F1-F10) can be used to input the numbers. |
 | **TPM + Network Key** | The TPM successfully validates early boot components, and a valid encrypted network key has been provided from a WDS server. This authentication method provides automatic unlock of OS volumes while maintaining multifactor authentication. This key protector can only be used with OS volumes. |
 | **Recovery key** | An encryption key stored on removable media that can be used for recovering data encrypted on a BitLocker volume. The file name has a format of `<protector_id>.bek`. |
-| **Data Recovery Agent** | Data recovery agents (DRA) are Active Directory security principals whose public key infrastructure (PKI) certificates are used as BitLocker key protector. DRAs can use their credentials to unlock drives using the private key of the certificate used as key protector.|
+| **Data Recovery Agent** | Data recovery agents (DRAs) are accounts that are able to decrypt BitLocker-protected drives by using their certificates. Recovery of a BitLocker-protected drive can be accomplished by a data recovery agent that is configured with the proper certificate. |
 | **Active Directory user or group** | A protector that is based on an Active Directory user or group security identified (SID). Data drives are automatically unlocked when such users attempt to access them. |
 
 #### Support for devices without TPM
@@ -188,7 +188,7 @@ For more information about how to configure Network unlock feature, see [Network
 
 ## BitLocker recovery
 
-Organizations should carefully plan a BitLocker recovery strategy as part of the overall BitLocker implementation plan. There are different options when it comes to BitLocker recovery, which are described in the [BitLocker recovery guide](recovery-guide).
+Organizations should carefully plan a BitLocker recovery strategy as part of the overall BitLocker implementation plan. There are different options when it comes to BitLocker recovery, which are described in the [BitLocker recovery guide](recovery-guide.md).
 
 ## Monitor BitLocker
 
