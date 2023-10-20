@@ -37,7 +37,7 @@ Save your files to your favorite cloud, like OneDrive or Dropbox, and access the
 
 Windows in S mode is built for [modern management](/windows/client-management/manage-windows-10-in-your-organization-modern-management), which means using [Windows Autopilot](/mem/autopilot/windows-autopilot) for deployment, and a Mobile Device Management (MDM) solution for management, like Microsoft Intune.
 
-Windows Autopilot lets you deploy the device directly to a user without IT having to touch the physical device. Instead of manually deploying a custom image, Windows Autopilot will start with a generic device that can only be used to join the company Azure AD tenant or Active Directory domain. Policies are then deployed automatically through MDM, to customize the device to the user and the desired environment.
+Windows Autopilot lets you deploy the device directly to a user without IT having to touch the physical device. Instead of manually deploying a custom image, Windows Autopilot will start with a generic device that can only be used to join the company Microsoft Entra tenant or Active Directory domain. Policies are then deployed automatically through MDM, to customize the device to the user and the desired environment.
 
 For the devices that are shipped in S mode, you can either keep them in S mode, use Windows Autopilot to switch them out of S mode during the first run process, or later using MDM, if desired.
 

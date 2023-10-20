@@ -25,12 +25,12 @@ Hybrid certificate trust deployments issue users a sign-in certificate, enabling
 [!INCLUDE [dc-certificate-template](includes/dc-certificate-template.md)]
 
 > [!NOTE]
-> Inclusion of the *KDC Authentication* OID in domain controller certificate is not required for hybrid Azure AD-joined devices. The OID is required for enabling authentication with Windows Hello for Business to on-premises resources by Azure AD-joined devices.
+> Inclusion of the *KDC Authentication* OID in domain controller certificate is not required for Microsoft Entra hybrid joined devices. The OID is required for enabling authentication with Windows Hello for Business to on-premises resources by Microsoft Entra joined devices.
 
 > [!IMPORTANT]
-> For Azure AD joined devices to authenticate to on-premises resources, ensure to:
+> For Microsoft Entra joined devices to authenticate to on-premises resources, ensure to:
 > - Install the root CA certificate in the device's trusted root certificate store. See [how to deploy a trusted certificate profile](/mem/intune/protect/certificates-trusted-root#to-create-a-trusted-certificate-profile) via Intune
-> - Publish your certificate revocation list to a location that is available to Azure AD-joined devices, such as a web-based URL
+> - Publish your certificate revocation list to a location that is available to Microsoft Entra joined devices, such as a web-based URL
 
 [!INCLUDE [dc-certificate-template-supersede](includes/dc-certificate-supersede.md)]
 
@@ -54,7 +54,7 @@ Sign in to the CA or management workstations with **Enterprise Admin** equivalen
 1. Close the console
 
 > [!IMPORTANT]
-> If you plan to deploy **Azure AD joined** devices, and require single sign-on (SSO) to on-premises resources when signing in with Windows Hello for Business, follow the procedures to [update your CA to include an http-based CRL distribution point](hello-hybrid-aadj-sso.md).
+> If you plan to deploy **Microsoft Entra joined** devices, and require single sign-on (SSO) to on-premises resources when signing in with Windows Hello for Business, follow the procedures to [update your CA to include an http-based CRL distribution point](hello-hybrid-aadj-sso.md).
 
 ## Configure and deploy certificates to domain controllers
 
