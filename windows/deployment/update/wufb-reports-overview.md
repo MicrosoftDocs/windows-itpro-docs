@@ -16,7 +16,7 @@ ms.date: 11/15/2022
 
 # Windows Update for Business reports overview
 <!--37063317, 30141258, 37063041-->
-Windows Update for Business reports is a cloud-based solution that provides information about your Azure Active Directory-joined devices' compliance with Windows updates. Windows Update for Business reports is offered through the [Azure portal](https://portal.azure.com), and it's included as part of the Windows 10 or Windows 11 prerequisite licenses. Windows Update for Business reports helps you:
+Windows Update for Business reports is a cloud-based solution that provides information about your Microsoft Entra joined devices' compliance with Windows updates. Windows Update for Business reports is offered through the [Azure portal](https://portal.azure.com), and it's included as part of the Windows 10 or Windows 11 prerequisite licenses. Windows Update for Business reports helps you:
 
 - Monitor security, quality, driver, and feature updates for Windows 11 and Windows 10 devices
 - Report on devices with update compliance issues
@@ -56,7 +56,7 @@ Windows Update for Business reports is a Windows service hosted in Azure that us
 
 ## How Windows Update for Business reports works
 
-You'll set up Windows Update for Business reports by enrolling into the service from the Azure portal. Then you'll configure your Azure AD-joined devices to send Windows client diagnostic data to the service. Windows Update for Business reports uses [Log Analytics in Azure Monitor](/azure/azure-monitor/logs/log-analytics-overview) to store the diagnostic data the clients send. You can use this data for reporting on updates for your devices. Windows Update for Business reports collects system data such as:
+You'll set up Windows Update for Business reports by enrolling into the service from the Azure portal. Then you'll configure your Microsoft Entra joined devices to send Windows client diagnostic data to the service. Windows Update for Business reports uses [Log Analytics in Azure Monitor](/azure/azure-monitor/logs/log-analytics-overview) to store the diagnostic data the clients send. You can use this data for reporting on updates for your devices. Windows Update for Business reports collects system data such as:
 
 - Update deployment progress
 - Delivery Optimization usage data

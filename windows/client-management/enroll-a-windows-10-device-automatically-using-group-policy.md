@@ -12,29 +12,31 @@ ms.collection:
 
 You can use a Group Policy to trigger autoenrollment to Mobile Device Management (MDM) for Active Directory (AD) domain-joined devices.
 
-The enrollment into Intune is triggered by a group policy created on your local AD and happens without any user interaction. This cause-and-effect mechanism means you can automatically mass-enroll a large number of domain-joined corporate devices into Microsoft Intune. The enrollment process starts in the background once you sign in to the device with your Azure AD account.
+The enrollment into Intune is triggered by a group policy created on your local AD and happens without any user interaction. This cause-and-effect mechanism means you can automatically mass-enroll a large number of domain-joined corporate devices into Microsoft Intune. The enrollment process starts in the background once you sign in to the device with your Microsoft Entra account.
 
 **Requirements**:
 
 - The Active Directory joined device must be running a [supported version of Windows](/windows/release-health/supported-versions-windows-client).
 - The enterprise has configured a Mobile Device Management (MDM) service.
-- The on-premises Active Directory must be [integrated with Azure AD (via Azure AD Connect)](/azure/architecture/reference-architectures/identity/azure-ad).
+- The on-premises Active Directory must be [integrated with Microsoft Entra ID (via Microsoft Entra Connect)](/azure/architecture/reference-architectures/identity/azure-ad).
+- Service connection point (SCP) configuration. For more information see [configuring the SCP using Microsoft Entra Connect](/azure/active-directory/devices/how-to-hybrid-join). For environments not publishing SCP data to AD, see [Microsoft Entra hybrid join targeted deployment](/azure/active-directory/devices/hybrid-join-control#targeted-deployment-of-microsoft-entra-hybrid-join-on-windows-current-devices).
 - The device shouldn't already be enrolled in Intune using the classic agents (devices managed using agents fail enrollment with `error 0x80180026`).
-- The minimum Windows Server version requirement is based on the Hybrid Azure AD join requirement. For more information, see [How to plan your hybrid Azure Active Directory join implementation](/azure/active-directory/devices/hybrid-azuread-join-plan).
+- The minimum Windows Server version requirement is based on the Microsoft Entra hybrid join requirement. For more information, see [How to plan your Microsoft Entra hybrid join implementation](/azure/active-directory/devices/hybrid-azuread-join-plan).
+
 
 > [!TIP]
 > For more information, see the following topics:
 >
-> - [How to configure automatic registration of Windows domain-joined devices with Azure Active Directory](/azure/active-directory/active-directory-conditional-access-automatic-device-registration-setup)
-> - [How to plan your hybrid Azure Active Directory join implementation](/azure/active-directory/devices/hybrid-azuread-join-plan)
-> - [Azure Active Directory integration with MDM](./azure-active-directory-integration-with-mdm.md)
+> - [How to configure automatic registration of Windows domain-joined devices with Microsoft Entra ID](/azure/active-directory/active-directory-conditional-access-automatic-device-registration-setup)
+> - [How to plan your Microsoft Entra hybrid join implementation](/azure/active-directory/devices/hybrid-azuread-join-plan)
+> - [Microsoft Entra integration with MDM](./azure-active-directory-integration-with-mdm.md)
 
-The autoenrollment relies on the presence of an MDM service and the Azure Active Directory registration for the PC. Once the enterprise has registered its AD with Azure AD, a Windows PC that is domain joined is automatically Azure AD-registered.
+The autoenrollment relies on the presence of an MDM service and the Microsoft Entra registration for the PC. Once the enterprise has registered its AD with Microsoft Entra ID, a Windows PC that is domain joined is automatically Microsoft Entra registered.
 
 > [!NOTE]
 > In Windows 10, version 1709, the enrollment protocol was updated to check whether the device is domain-joined. For details, see [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2](/openspecs/windows_protocols/ms-mde2/4d7eadd5-3951-4f1c-8159-c39e07cbe692). For examples, see section 4.3.1 RequestSecurityToken of the MS-MDE2 protocol documentation.
 
-When the autoenrollment Group Policy is enabled, a task is created in the background that initiates the MDM enrollment. The task uses the existing MDM service configuration from the Azure Active Directory information of the user. If multi-factor authentication is required, the user gets prompted to complete the authentication. Once the enrollment is configured, the user can check the status in the Settings page.
+When the autoenrollment Group Policy is enabled, a task is created in the background that initiates the MDM enrollment. The task uses the existing MDM service configuration from the Microsoft Entra information of the user. If multi-factor authentication is required, the user gets prompted to complete the authentication. Once the enrollment is configured, the user can check the status in the Settings page.
 
 - Starting in Windows 10, version 1709, when the same policy is configured in Group Policy and MDM, Group Policy policy takes precedence over MDM.
 - Starting in Windows 10, version 1803, a new setting allows you to change precedence to MDM. For more information, see [Windows Group Policy vs. Intune MDM Policy who wins?](/archive/blogs/cbernier/windows-10-group-policy-vs-intune-mdm-policy-who-wins).
@@ -45,7 +47,7 @@ For this policy to work, you must verify that the MDM service provider allows Gr
 
 To configure autoenrollment using a group policy, use the following steps:
 
-1. Create a Group Policy Object (GPO) and enable the Group Policy **Computer Configuration** > **Administrative Templates** > **Windows Components** > **MDM** > **Enable automatic MDM enrollment using default Azure AD credentials**.
+1. Create a Group Policy Object (GPO) and enable the Group Policy **Computer Configuration** > **Administrative Templates** > **Windows Components** > **MDM** > **Enable automatic MDM enrollment using default Microsoft Entra credentials**.
 1. Create a Security Group for the PCs.
 1. Link the GPO.
 1. Filter using Security Groups.
@@ -85,7 +87,7 @@ This procedure is only for illustration purposes to show how the new autoenrollm
 
 1. In **Local Computer Policy**, select **Administrative Templates** > **Windows Components** > **MDM**.
 
-1. Double-click **Enable automatic MDM enrollment using default Azure AD credentials**. Select **Enable**, select **User Credential** from the dropdown **Select Credential Type to Use**, then select **OK**.
+1. Double-click **Enable automatic MDM enrollment using default Microsoft Entra credentials**. Select **Enable**, select **User Credential** from the dropdown **Select Credential Type to Use**, then select **OK**.
 
    :::image type="content" alt-text="MDM autoenrollment policy." source="images/autoenrollment-policy.png" lightbox="images/autoenrollment-policy.png":::
 
@@ -94,14 +96,14 @@ This procedure is only for illustration purposes to show how the new autoenrollm
    >
    > **Device Credential** is only supported for Microsoft Intune enrollment in scenarios with Co-management or [Azure Virtual Desktop multi-session host pools](/mem/intune/fundamentals/azure-virtual-desktop-multi-session) because the Intune subscription is user centric. User credentials are supported for [Azure Virtual Desktop personal host pools](/mem/intune/fundamentals/azure-virtual-desktop).
 
-When a group policy refresh occurs on the client, a task is created and scheduled to run every 5 minutes for the duration of one day. The task is called **Schedule created by enrollment client for automatically enrolling in MDM from Azure Active Directory**. To see the scheduled task, launch the [Task Scheduler app](#task-scheduler-app).
+When a group policy refresh occurs on the client, a task is created and scheduled to run every 5 minutes for the duration of one day. The task is called **Schedule created by enrollment client for automatically enrolling in MDM from Microsoft Entra ID**. To see the scheduled task, launch the [Task Scheduler app](#task-scheduler-app).
 
 If two-factor authentication is required, you are prompted to complete the process. Here's an example screenshot.
 
 :::image type="content" source="images/autoenrollment-2-factor-auth.png" alt-text="Screenshot of Two-factor authentication notification.":::
 
 > [!TIP]
-> You can avoid this behavior by using Conditional Access Policies in Azure AD. Learn more by reading [What is Conditional Access?](/azure/active-directory/conditional-access/overview).
+> You can avoid this behavior by using Conditional Access Policies in Microsoft Entra ID. Learn more by reading [What is Conditional Access?](/azure/active-directory/conditional-access/overview).
 
 ## Verify enrollment
 
