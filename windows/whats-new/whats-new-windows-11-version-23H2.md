@@ -52,9 +52,31 @@ When a manged Windows 11, version 22H2 device installs version 23H2, the followi
 Starting with Windows 11, version 22H2, new features and enhancements were introduced periodically to provide continuous innovation for Windows 11. These features and enhancements use the normal update servicing channels you're already familiar with. At first, new features are introduced with an optional nonsecurity preview release and gradually rolled out to clients. These new features are released later as part of a monthly security update release. For more information about continuous innovation, see [Update release cycle for Windows clients](/windows/deployment/update/release-cycle#continuous-innovation-for-windows-11) Some of the features were released within the past year's continuous innovation updates and carry forward into the 23H2 annual feature update include:
 
 
+
 ### feature
 <!--    -->
 For more information, see [Placeholder](placeholder.md).
+
+### feature
+<!--    -->
+For more information, see [Placeholder](placeholder.md).
+
+### Declared configuration protocol
+<!--7771694 --> 
+**Declared configuration protocol** is a new protocol for device configuration management that's based on a desired state model and uses OMA-DM SyncML protocol. It allows the server to provide the device with a collection of settings for a specific scenario, and the device to handle the configuration request and maintain its state. For more information, see [What is the declared configuration protocol](/windows/client-management/declared-configuration).
+
+### Education themes
+<!--7771679-->
+You can deploy education themes to your devices. The education themes are designed for students using devices in a school. For more information, see [Configure education themes for Windows 11](/education/windows/edu-themes).
+
+### Temporary enterprise feature control
+<!--7790977-->
+Controls were added to temporarily turn off certain features that were introduced during monthly cumulative updates for managed Windows 11, version 22H2 devices. For more information, see [Temporary enterprise feature control](temporary-enterprise-feature-control.md).
+
+### Multi-app kiosk
+<!--6444738-->
+
+You can configure a multi-app kiosk which displays a customized start menu of allowed apps. For more information, see [Set up a multi-app kiosk on Windows 11 devices](/windows/configuration/lock-down-windows-11-to-specific-apps).
 
 ### Windows Hello for Business authentication improvement
 <!--7771685-->
@@ -65,7 +87,7 @@ Peripheral face and fingerprint sensors can be used for Windows Hello for Busine
 Use Windows Local Administrator Password Solution (LAPS) to regularly rotate and manage local administrator account passwords. For more information, see [Local Administrator Password Solution (LAPS)](/windows-server/identity/laps/laps-overview)
 
 ### Federated sign-in
-<!--7593916-->
+<!--7593916, 7593946-->
 You can sign into Windows using a federated identity, which simplifies the experience for students. For example, students and educators can use QR code badges to sign-in. This feature is designed specifically for Education editions of Windows. For more information, see [Configure federated sign-in for Windows devices](/education/windows/federated-sign-in).
 
 ### Customize Windows 11 taskbar buttons
@@ -75,14 +97,14 @@ You can sign into Windows using a federated identity, which simplifies the exper
 
 ### Braille displays
 <!--7579823-->
-The compatibility of braille displays has been expanded. Braille displays work seamlessly and reliably across multiple screen readers, improving the end user experience. We also added support for new braille displays and new braille input and output languages in Narrator. For more information, see [Accessibility information for IT professionals](/windows/configuration/windows-accessibility-for-ITPros).
+The compatibility of braille displays was expanded. Braille displays work seamlessly and reliably across multiple screen readers, improving the end user experience. We also added support for new braille displays and new braille input and output languages in Narrator. For more information, see [Accessibility information for IT professionals](/windows/configuration/windows-accessibility-for-ITPros).
 
 
 ### Additional features
-<!--kb5019509-->
+<!--kb5019509 items and notable items for IT pros from other updates-->
 
 - **Tabs for File Explorer**: File Explorer includes tabs to help you organize your File Explorer sessions. 
-- **Taskbar overflow menu**: The taskbar offer an entry point to a menu that shows all of your overflowed apps in one spot
+- **Taskbar overflow menu**: The taskbar offer an entry point to a menu that shows all of your overflowed apps in one spot.
 - **Suggested actions**: Copied text in certain formats, such as phone numbers or dates, offer suggested actions such as calling the number or adding the event to your calendar.
-
-
+- **Task Manager enhancements**: Process filtering, theme settings, and the ability to opt out of efficiency mode notification were added to Task Manager.
+- **Narrator improvements**: Scripting functionality was added to Narrator. Narrator includes more natural voices. <!--8138352, 8138357--> 
