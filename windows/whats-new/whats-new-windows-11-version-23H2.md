@@ -52,14 +52,18 @@ When a manged Windows 11, version 22H2 device installs version 23H2, the followi
 Starting with Windows 11, version 22H2, new features and enhancements were introduced periodically to provide continuous innovation for Windows 11. These features and enhancements use the normal update servicing channels you're already familiar with. At first, new features are introduced with an optional nonsecurity preview release and gradually rolled out to clients. These new features are released later as part of a monthly security update release. For more information about continuous innovation, see [Update release cycle for Windows clients](/windows/deployment/update/release-cycle#continuous-innovation-for-windows-11) Some of the features were released within the past year's continuous innovation updates and carry forward into the 23H2 annual feature update include:
 
 
+### Passkeys in Windows
+<!--8138341-->
+Windows provides a native experience for passkey management. You can use the Settings app to view and manage passkeys saved for apps or websites. For more information, see [Support for passkeys in Windows](/windows/security/identity-protection/passkeys).
 
-### feature
-<!--    -->
-For more information, see [Placeholder](placeholder.md).
+### Windows passwordless experience
+<!--8138336-->
+Windows passwordless experience is a security policy that promotes a user experience without passwords on Microsoft Entra joined devices.
+When the policy is enabled, certain Windows authentication scenarios don't offer users the option to use a password, helping organizations and preparing users to gradually move away from passwords. For more information, see [Windows passwordless experience](/windows/security/identity-protection/passwordless-experience/).
 
-### feature
-<!--    -->
-For more information, see [Placeholder](placeholder.md).
+### Web sign-in for Windows
+<!--8344016-->
+You can enable a web-based sign-in experience on Microsoft Entra joined devices, unlocking new sign-in options and capabilities. For more information, see [Web sign-in for Windows](/windows/security/identity-protection/web-sign-in).
 
 ### Declared configuration protocol
 <!--7771694 --> 
