@@ -4,7 +4,7 @@ description: Learn more about the ClientCertificateInstall CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 08/10/2023
+ms.date: 10/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -813,7 +813,7 @@ Required for SCEP certificate enrollment. Parent node to group SCEP cert install
 
 <!-- Device-SCEP-{UniqueID}-Install-AADKeyIdentifierList-Description-Begin -->
 <!-- Description-Source-DDF -->
-Optional. Specify the AAD Key Identifier List as a semicolon separated values. On Enroll, the values in this list are validated against the AAD Key present on the device. If no match is found, enrollment will fail.
+Optional. Specify the Microsoft Entra ID Key Identifier List as a semicolon separated values. On Enroll, the values in this list are validated against the Microsoft Entra ID Key present on the device. If no match is found, enrollment will fail.
 <!-- Device-SCEP-{UniqueID}-Install-AADKeyIdentifierList-Description-End -->
 
 <!-- Device-SCEP-{UniqueID}-Install-AADKeyIdentifierList-Editable-Begin -->
@@ -2387,7 +2387,7 @@ Required for SCEP certificate enrollment. Parent node to group SCEP cert install
 
 <!-- User-SCEP-{UniqueID}-Install-AADKeyIdentifierList-Description-Begin -->
 <!-- Description-Source-DDF -->
-Optional. Specify the AAD Key Identifier List as a semicolon separated values. On Enroll, the values in this list are validated against the AAD Key present on the device. If no match is found, enrollment will fail.
+Optional. Specify the Microsoft Entra ID Key Identifier List as a semicolon separated values. On Enroll, the values in this list are validated against the Microsoft Entra ID Key present on the device. If no match is found, enrollment will fail.
 <!-- User-SCEP-{UniqueID}-Install-AADKeyIdentifierList-Description-End -->
 
 <!-- User-SCEP-{UniqueID}-Install-AADKeyIdentifierList-Editable-Begin -->

@@ -4,7 +4,7 @@ description: Learn more about the Power Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 08/10/2023
+ms.date: 10/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -1258,7 +1258,7 @@ If the user has configured a slide show to run on the lock screen when the machi
 
 <!-- TurnOffHybridSleepOnBattery-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to turn off hybrid sleep.
+This policy setting allows you to turn off Hybrid Sleep.
 
 - If you enable this policy setting, a hiberfile isn't generated when the system transitions to sleep (Stand By).
 
@@ -1285,7 +1285,7 @@ This policy setting allows you to turn off hybrid sleep.
 | Value | Description |
 |:--|:--|
 | 0 (Default) | . |
-| 1 | Hybrid sleep. |
+| 1 | Hybrid Sleep. |
 <!-- TurnOffHybridSleepOnBattery-AllowedValues-End -->
 
 <!-- TurnOffHybridSleepOnBattery-GpMapping-Begin -->
@@ -1325,7 +1325,7 @@ This policy setting allows you to turn off hybrid sleep.
 
 <!-- TurnOffHybridSleepPluggedIn-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to turn off hybrid sleep.
+This policy setting allows you to turn off Hybrid Sleep.
 
 - If you enable this policy setting, a hiberfile isn't generated when the system transitions to sleep (Stand By).
 
@@ -1352,7 +1352,7 @@ This policy setting allows you to turn off hybrid sleep.
 | Value | Description |
 |:--|:--|
 | 0 (Default) | . |
-| 1 | Hybrid sleep. |
+| 1 | Hybrid Sleep. |
 <!-- TurnOffHybridSleepPluggedIn-AllowedValues-End -->
 
 <!-- TurnOffHybridSleepPluggedIn-GpMapping-Begin -->

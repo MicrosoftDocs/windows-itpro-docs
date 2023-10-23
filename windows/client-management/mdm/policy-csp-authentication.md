@@ -4,7 +4,7 @@ description: Learn more about the Authentication Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 08/10/2023
+ms.date: 10/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -413,7 +413,7 @@ This policy is intended for use on Shared PCs to enable a quick first sign-in ex
 
 <!-- EnablePasswordlessExperience-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specifies whether connected users on AADJ devices receive a Passwordless experience on Windows.
+Specifies whether connected users on Microsoft Entra joined devices receive a Passwordless experience on Windows.
 <!-- EnablePasswordlessExperience-Description-End -->
 
 <!-- EnablePasswordlessExperience-Editable-Begin -->

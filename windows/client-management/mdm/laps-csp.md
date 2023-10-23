@@ -4,7 +4,7 @@ description: Learn more about the LAPS CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 08/10/2023
+ms.date: 10/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -449,7 +449,7 @@ Use this setting to configure which directory the local admin account password i
 The allowable settings are:
 
 0=Disabled (password won't be backed up)
-1=Backup the password to Microsoft Entra-only
+1=Backup the password to Microsoft Entra ID only
 2=Backup the password to Active Directory only.
 
 If not specified, this setting will default to 0.
@@ -475,7 +475,7 @@ If not specified, this setting will default to 0.
 | Value | Description |
 |:--|:--|
 | 0 (Default) | Disabled (password won't be backed up). |
-| 1 | Backup the password to Microsoft Entra-only. |
+| 1 | Backup the password to Microsoft Entra ID only. |
 | 2 | Backup the password to Active Directory only. |
 <!-- Device-Policies-BackupDirectory-AllowedValues-End -->
 
