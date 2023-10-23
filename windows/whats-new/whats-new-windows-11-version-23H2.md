@@ -121,5 +121,5 @@ Dev Drive is a new form of storage volume available to improve performance for k
 
 ### In-box apps
 
-- **Microsoft Teams**: Chat is being removed from the Microsoft Teams in-box app. Teams will no longer be pinned to the taskbar for enterprise editions of Windows 11, version 23H2 or later. To identify the appx package: `Get-AppxPackage -Name MicrosoftTeams`
+- **Microsoft Teams**: Chat is being removed from the Microsoft Teams in-box app. Teams will no longer be pinned to the taskbar for enterprise editions of Windows 11, version 23H2 or later. To identify the appx package: `Get-AppxPackage -Name MicrosoftTeams` <!--8349096-->
 - **Dev Home**: Dev Home is a new app that provides a central location for developers to start building, testing, and deploying Windows apps. For more information, see [Dev Home](/windows/dev-home/). To identify the appx package: `Get-AppxPackage -Name Microsoft.Windows.DevHome`
