@@ -44,12 +44,12 @@ When a manged Windows 11, version 22H2 device installs version 23H2, the followi
 | Selecting **Uninstall** for a Win32 app from the right-click menu uses the **Installed Apps** page in **Settings** rather than **Programs and Features** under the **Control Panel** <!--8092554, WIP.25300-->| [September 2023 - KB5030310](https://support.microsoft.com/kb/5030310)  | 
 | Windows Spotlight provides a minimized experience, opportunities to learn more about each image, and allows users to preview images at full screen.<!--8092554, WIP.23511 & WIP.25281, AllowWindowsSpotlight-->| [September 2023 - KB5030310](https://support.microsoft.com/kb/5030310)  |
 | Copilot in Windows <!--8092554, WIP.23493 -->| [September 2023 - KB5030310](https://support.microsoft.com/kb/5030310)  |
-| Dev Home <!--8092554, WIP.23506-->| [September 2023 - KB5030310](https://support.microsoft.com/kb/5030310)  |
-|Dev Drive <!--8092554, WIP.23466-->| [September 2023 - KB5030310](https://support.microsoft.com/kb/5030310)  | 
+| [Dev Home](/windows/dev-home/) <!--8092554, WIP.23506-->| [September 2023 - KB5030310](https://support.microsoft.com/kb/5030310)  |
+| [Dev Drive](/windows/dev-drive/) <!--8092554, WIP.23466-->| [September 2023 - KB5030310](https://support.microsoft.com/kb/5030310)  | 
 
-## Features added to Windows withing the past year
+## Features added to Windows 11 since version 22H2
 
-Starting with Windows 11, version 22H2, new features and enhancements were introduced periodically to provide continuous innovation for Windows 11. These features and enhancements use the normal update servicing channels you're already familiar with. At first, new features are introduced with an **optional nonsecurity preview release** and gradually rolled out to unmanaged clients. These new features are released later as part of a **monthly security update release**. For more information about continuous innovation, see [Update release cycle for Windows clients](/windows/deployment/update/release-cycle#continuous-innovation-for-windows-11) Some of the features were released within the past year's continuous innovation updates and carry forward into the 23H2 annual feature update include:
+Starting with Windows 11, version 22H2, new features and enhancements were introduced periodically to provide continuous innovation for Windows 11. These features and enhancements use the normal update servicing channels you're already familiar with. At first, new features are introduced with an optional nonsecurity preview release and gradually rolled out to clients. These new features are released later as part of a monthly security update release. For more information about continuous innovation, see [Update release cycle for Windows clients](/windows/deployment/update/release-cycle#continuous-innovation-for-windows-11) Some of the features were released within the past year's continuous innovation updates and carry forward into the 23H2 annual feature update include:
 
 
 ### feature
@@ -76,3 +76,13 @@ You can sign into Windows using a federated identity, which simplifies the exper
 ### Braille displays
 <!--7579823-->
 The compatibility of braille displays has been expanded. Braille displays work seamlessly and reliably across multiple screen readers, improving the end user experience. We also added support for new braille displays and new braille input and output languages in Narrator. For more information, see [Accessibility information for IT professionals](/windows/configuration/windows-accessibility-for-ITPros).
+
+
+### Additional features
+<!--kb5019509-->
+
+- **Tabs for File Explorer**: File Explorer includes tabs to help you organize your File Explorer sessions. 
+- **Taskbar overflow menu**: The taskbar offer an entry point to a menu that shows all of your overflowed apps in one spot
+- **Suggested actions**: Copied text in certain formats, such as phone numbers or dates, offer suggested actions such as calling the number or adding the event to your calendar.
+
+
