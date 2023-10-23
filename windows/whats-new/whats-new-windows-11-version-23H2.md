@@ -82,6 +82,10 @@ Controls were added to temporarily turn off certain features that were introduce
 
 You can configure a multi-app kiosk which displays a customized start menu of allowed apps. For more information, see [Set up a multi-app kiosk on Windows 11 devices](/windows/configuration/lock-down-windows-11-to-specific-apps).
 
+### Copilot in Windows
+<!--8138371-->
+Copilot in Windows provides centralized generative AI assistance to your users right from the Windows desktop. For more information, see [Manage Copilot in Windows](/windows/client-management/manage-windows-copilot).
+
 ### Windows Hello for Business authentication improvement
 <!--7771685-->
 Peripheral face and fingerprint sensors can be used for Windows Hello for Business authentication on devices where Enhanced Sign-in Security (Secure Biometrics) has been enabled at the factory. Previously this functionality was blocked. For more information, see [Common questions about Windows Hello for Business](/windows/security/identity-protection/hello-for-business/hello-faq).
@@ -98,11 +102,13 @@ You can sign into Windows using a federated identity, which simplifies the exper
 <!--07525381-->
 [Policies to customize Windows 11 taskbar buttons](/windows/configuration/supported-csp-taskbar-windows#csp-policies-to-customize-windows-11-taskbar-buttons) were added to provide you with more control over the taskbar search experience across your organization.
 
-
 ### Braille displays
 <!--7579823-->
 The compatibility of braille displays was expanded. Braille displays work seamlessly and reliably across multiple screen readers, improving the end user experience. We also added support for new braille displays and new braille input and output languages in Narrator. For more information, see [Accessibility information for IT professionals](/windows/configuration/windows-accessibility-for-ITPros).
 
+### Dev Drive
+
+Dev Drive is a new form of storage volume available to improve performance for key developer workloads. For more information, see [Set up a Dev Drive on Windows 11](/windows/dev-drive/).
 
 ### Additional features
 <!--kb5019509 items and notable items for IT pros from other updates-->
@@ -112,3 +118,8 @@ The compatibility of braille displays was expanded. Braille displays work seamle
 - **Suggested actions**: Copied text in certain formats, such as phone numbers or dates, offer suggested actions such as calling the number or adding the event to your calendar.
 - **Task Manager enhancements**: Process filtering, theme settings, and the ability to opt out of efficiency mode notification were added to Task Manager.
 - **Narrator improvements**: Scripting functionality was added to Narrator. Narrator includes more natural voices. <!--8138352, 8138357--> 
+
+### In-box apps
+
+- **Microsoft Teams**: Chat is being removed from the Microsoft Teams in-box app. Teams will no longer be pinned to the taskbar for enterprise editions of Windows 11, version 23H2 or later. To identify the appx package: `Get-AppxPackage -Name MicrosoftTeams`
+- **Dev Home**: Dev Home is a new app that provides a central location for developers to start building, testing, and deploying Windows apps. For more information, see [Dev Home](/windows/dev-home/). To identify the appx package: `Get-AppxPackage -Name Microsoft.Windows.DevHome`
