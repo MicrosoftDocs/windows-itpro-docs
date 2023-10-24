@@ -4,7 +4,7 @@ description: Learn more about the DMClient CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 09/27/2023
+ms.date: 10/24/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -351,7 +351,7 @@ For more information about Microsoft Entra enrollment, see [Microsoft Entra inte
 
 <!-- Device-Provider-{ProviderID}-AADSendDeviceToken-Description-Begin -->
 <!-- Description-Source-DDF -->
-For Microsoft Entra backed enrollments, this will cause the client to send a Device Token if the User Token can't be obtained.
+For Microsoft Entra ID backed enrollments, this will cause the client to send a Device Token if the User Token can't be obtained.
 <!-- Device-Provider-{ProviderID}-AADSendDeviceToken-Description-End -->
 
 <!-- Device-Provider-{ProviderID}-AADSendDeviceToken-Editable-Begin -->
@@ -1209,7 +1209,7 @@ The node contains the secondary certificate - the public key to use.
 
 <!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-SecurityMode-Description-Begin -->
 <!-- Description-Source-DDF -->
-This node specifies how the client will perform the app layer signing and encryption. 0: no op; 1: sign only; 2: encrypt only; 3: sign and encrypt. The default value is 0.
+This node specifies how the client will perform the app layer signing and encryption. 0: no op; 1: sign-only; 2: encrypt only; 3: sign and encrypt. The default value is 0.
 <!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-SecurityMode-Description-End -->
 
 <!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-SecurityMode-Editable-Begin -->
@@ -1568,7 +1568,7 @@ This node decides whether or not the MDM progress page displays the Collect Logs
 
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-BlockInStatusPage-Description-Begin -->
 <!-- Description-Source-DDF -->
-Device Only. This node determines whether or not the MDM progress page is blocking in the AADJ or DJ++ case, as well as which remediation options are available.
+Device Only. This node determines whether or not the MDM progress page is blocking in the Microsoft Entra joined or DJ++ case, as well as which remediation options are available.
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-BlockInStatusPage-Description-End -->
 
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-BlockInStatusPage-Editable-Begin -->
@@ -1994,7 +1994,7 @@ This node is set by the server to inform the UX that the server has finished pro
 
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-SkipDeviceStatusPage-Description-Begin -->
 <!-- Description-Source-DDF -->
-Device only. This node decides whether or not the MDM device progress page skips after AADJ or Hybrid AADJ in OOBE.
+Device only. This node decides whether or not the MDM device progress page skips after Microsoft Entra joined or Microsoft Entra hybrid joined in OOBE.
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-SkipDeviceStatusPage-Description-End -->
 
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-SkipDeviceStatusPage-Editable-Begin -->
@@ -2043,7 +2043,7 @@ Device only. This node decides whether or not the MDM device progress page skips
 
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-SkipUserStatusPage-Description-Begin -->
 <!-- Description-Source-DDF -->
-Device only. This node decides whether or not the MDM user progress page skips after AADJ or DJ++ after user login.
+Device only. This node decides whether or not the MDM user progress page skips after Microsoft Entra joined or DJ++ after user login.
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-SkipUserStatusPage-Description-End -->
 
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-SkipUserStatusPage-Editable-Begin -->
@@ -2206,7 +2206,7 @@ Force device to send device Microsoft Entra token during check-in as a separate 
 | 0 | ForceAadTokenNotDefined: the value isn't defined(default). |
 | 1 | AlwaysSendAadDeviceTokenCheckIn: always send Microsoft Entra device token during check-in as a separate header section(not as Bearer token). |
 | 2 | Reserved for future. AlwaysSendAadUserTokenCheckin: always send Microsoft Entra user token during check-in as a separate header section(not as Bearer token). |
-| 4 | SendAadDeviceTokenForAuth: to replace AADSendDeviceToken, send Microsoft Entra Device token for auth as Bearer token. |
+| 4 | SendAadDeviceTokenForAuth: to replace AADSendDeviceToken, send Microsoft Entra device token for auth as Bearer token. |
 | 8 | Reserved for future. ForceAadTokenMaxAllowed: max value allowed. |
 <!-- Device-Provider-{ProviderID}-ForceAadToken-AllowedValues-End -->
 
@@ -2428,7 +2428,7 @@ The interior node for linked enrollment.
 
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-DiscoveryEndpoint-Description-Begin -->
 <!-- Description-Source-DDF -->
-Endpoint Discovery is the process where a specific URL (the "discovery endpoint") is accessed, which returns a directory of endpoints for using the system including enrollment. On Get, if the endpoint isn't set, client will return an rmpty string with S_OK.
+Endpoint Discovery is the process where a specific URL (the "discovery endpoint") is accessed, which returns a directory of endpoints for using the system including enrollment. On Get, if the endpoint isn't set, client will return an empty string with S_OK.
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-DiscoveryEndpoint-Description-End -->
 
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-DiscoveryEndpoint-Editable-Begin -->
