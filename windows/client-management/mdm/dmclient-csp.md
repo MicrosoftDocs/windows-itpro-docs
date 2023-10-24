@@ -4,7 +4,7 @@ description: Learn more about the DMClient CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 10/23/2023
+ms.date: 10/24/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -1209,7 +1209,7 @@ The node contains the secondary certificate - the public key to use.
 
 <!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-SecurityMode-Description-Begin -->
 <!-- Description-Source-DDF -->
-This node specifies how the client will perform the app layer signing and encryption. 0: no op; 1: sign only; 2: encrypt only; 3: sign and encrypt. The default value is 0.
+This node specifies how the client will perform the app layer signing and encryption. 0: no op; 1: sign-only; 2: encrypt only; 3: sign and encrypt. The default value is 0.
 <!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-SecurityMode-Description-End -->
 
 <!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-SecurityMode-Editable-Begin -->

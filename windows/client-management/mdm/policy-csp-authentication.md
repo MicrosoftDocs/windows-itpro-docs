@@ -4,7 +4,7 @@ description: Learn more about the Authentication Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 10/23/2023
+ms.date: 10/24/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -90,7 +90,7 @@ This policy allows the Microsoft Entra tenant administrator to enable the self-s
 
 <!-- AllowEAPCertSSO-Description-Begin -->
 <!-- Description-Source-DDF -->
-Allows an EAP cert-based authentication for a single sign on (SSO) to access internal resources.
+Allows an EAP cert-based authentication for a single sign-on (SSO) to access internal resources.
 <!-- AllowEAPCertSSO-Description-End -->
 
 <!-- AllowEAPCertSSO-Editable-Begin -->
@@ -188,7 +188,7 @@ Allows EAP Fast Reconnect from being attempted for EAP Method TLS. Most restrict
 
 <!-- AllowSecondaryAuthenticationDevice-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy allows users to use a companion device, such as a phone, fitness band, or IoT device, to sign on to a desktop computer running Windows 10. The companion device provides a second factor of authentication with Windows Hello.
+This policy allows users to use a companion device, such as a phone, fitness band, or IoT device, to sign-on to a desktop computer running Windows 10. The companion device provides a second factor of authentication with Windows Hello.
 
 - If you enable or don't configure this policy setting, users can authenticate to Windows Hello using a companion device.
 
