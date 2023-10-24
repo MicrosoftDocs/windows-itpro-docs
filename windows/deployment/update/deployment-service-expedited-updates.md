@@ -256,7 +256,7 @@ The request returns a 201 Created response code and a [deployment](/graph/api/re
 
 The **Audience ID**, `d39ad1ce-0123-4567-89ab-cdef01234567`, was created when the deployment was created. The **Audience ID** is used to add members to the deployment audience. After the deployment audience is updated, Windows Update starts offering the update to the devices according to the deployment settings. As long as the deployment exists and the device is in the audience, the update will be expedited.
 
-The following example adds two devices to the deployment audience using the **Azure AD ID** for each device:
+The following example adds two devices to the deployment audience using the **Microsoft Entra ID** for each device:
 
 ```msgraph-interactive
 POST https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences/d39ad1ce-0123-4567-89ab-cdef01234567/updateAudience

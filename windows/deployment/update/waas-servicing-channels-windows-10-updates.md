@@ -44,8 +44,8 @@ The General Availability Channel is the default servicing channel for all Window
 
 To get started with the Windows Insider Program for Business, follow these steps:
 
-1. On the [Windows Insider](https://www.microsoft.com/windowsinsider/for-business) website, select **Register** to register your organizational Azure AD account.
-2. Follow the prompts to register your tenant.</br>**Note:** The signed-in user needs to be a **Global Administrator** of the Azure AD domain in order to be able to register.
+1. On the [Windows Insider](https://www.microsoft.com/windowsinsider/for-business) website, select **Register** to register your organizational Microsoft Entra account.
+2. Follow the prompts to register your tenant.</br>**Note:** The signed-in user needs to be a **Global Administrator** of the Microsoft Entra domain in order to be able to register.
 3. Make sure the **Allow Telemetry** setting is set to **2** or higher.
 4. For Windows devices, set policies to manage preview builds and their delivery:
 
@@ -70,4 +70,3 @@ To prevent devices in your organization from being enrolled in the Insider Progr
 >Starting with Windows 10, version 1709, this policy is replaced by **Manage preview builds** policy.
 > * Group Policy: **Computer Configuration/Administrative Templates/Windows Components/Windows Update/Windows Update for Business** - *Manage preview builds*
 > * MDM: **Update/ManagePreviewBuilds**
-

@@ -17,12 +17,14 @@ appliesto:
 
 This article lists the infrastructure requirements for the different deployment models for Windows Hello for Business.
 
-## Azure AD Cloud Only Deployment
+<a name='azure-ad-cloud-only-deployment'></a>
 
-- Azure Active Directory
-- Azure AD Multifactor Authentication
+## Microsoft Entra Cloud Only Deployment
+
+- Microsoft Entra ID
+- Microsoft Entra multifactor authentication
 - Device management solution (Intune or supported third-party MDM), *optional*
-- Azure AD Premium subscription - *optional*, needed for automatic MDM enrollment when the device joins Azure Active Directory
+- Microsoft Entra ID P1 or P2 subscription - *optional*, needed for automatic MDM enrollment when the device joins Microsoft Entra ID
 
 ## Hybrid Deployments
 
@@ -37,8 +39,8 @@ The table shows the minimum requirements for each deployment. For key trust in a
 | **Certificate Authority**| Not required |Any supported Windows Server versions | Any supported Windows Server versions | Any supported Windows Server versions |
 | **AD FS Version** | Not required | Not required | Any supported Windows Server versions | Any supported Windows Server versions |
 | **MFA Requirement** | Azure MFA, or<br/>AD FS w/Azure MFA adapter, or<br/>AD FS w/Azure MFA Server adapter, or<br/>AD FS w/3rd Party MFA Adapter | Azure MFA tenant, or<br/>AD FS w/Azure MFA adapter, or<br/>AD FS w/Azure MFA Server adapter, or<br/>AD FS w/3rd Party MFA Adapter | Azure MFA tenant, or<br/>AD FS w/Azure MFA adapter, or<br/>AD FS w/Azure MFA Server adapter, or<br/>AD FS w/3rd Party MFA Adapter | Azure MFA tenant, or<br/>AD FS w/Azure MFA adapter, or<br/>AD FS w/Azure MFA Server adapter, or<br/>AD FS w/3rd Party MFA Adapter |
-| **Azure AD Connect** | Not required. It's recommended to use [Microsoft Entra Connect cloud sync](/azure/active-directory/hybrid/cloud-sync/what-is-cloud-sync) | Required | Required | Required |
-| **Azure AD License** | Azure AD Premium, optional | Azure AD Premium, optional | Azure AD Premium, needed for device write-back | Azure AD Premium, optional. Intune license required |
+| **Microsoft Entra Connect** | Not required. It's recommended to use [Microsoft Entra Connect cloud sync](/azure/active-directory/hybrid/cloud-sync/what-is-cloud-sync) | Required | Required | Required |
+| **Microsoft Entra ID license** | Microsoft Entra ID P1 or P2, optional | Microsoft Entra ID P1 or P2, optional | Microsoft Entra ID P1 or P2, needed for device write-back | Microsoft Entra ID P1 or P2, optional. Intune license required |
 
 ## On-premises Deployments
 

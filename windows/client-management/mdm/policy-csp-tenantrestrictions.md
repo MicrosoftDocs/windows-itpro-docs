@@ -39,12 +39,12 @@ ms.topic: reference
 
 <!-- ConfigureTenantRestrictions-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This setting enables and configures the device-based tenant restrictions feature for Azure Active Directory.
+This setting enables and configures the device-based tenant restrictions feature for Microsoft Entra ID.
 
-When you enable this setting, compliant applications will be prevented from accessing disallowed tenants, according to a policy set in your Azure AD tenant.
+When you enable this setting, compliant applications will be prevented from accessing disallowed tenants, according to a policy set in your Microsoft Entra tenant.
 
 > [!NOTE]
-> Creation of a policy in your home tenant is required, and additional security measures for managed devices are recommended for best protection. Refer to Azure AD Tenant Restrictions for more details.
+> Creation of a policy in your home tenant is required, and additional security measures for managed devices are recommended for best protection. Refer to Microsoft Entra tenant Restrictions for more details.
 
 <https://go.microsoft.com/fwlink/?linkid=2148762>
 

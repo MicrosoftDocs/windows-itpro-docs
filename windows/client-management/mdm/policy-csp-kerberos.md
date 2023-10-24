@@ -98,11 +98,11 @@ This policy setting defines the list of trusting forests that the Kerberos clien
 
 <!-- CloudKerberosTicketRetrievalEnabled-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows retrieving the Azure AD Kerberos Ticket Granting Ticket during logon.
+This policy setting allows retrieving the Microsoft Entra Kerberos Ticket Granting Ticket during logon.
 
-- If you disable or don't configure this policy setting, the Azure AD Kerberos Ticket Granting Ticket isn't retrieved during logon.
+- If you disable or don't configure this policy setting, the Microsoft Entra Kerberos Ticket Granting Ticket isn't retrieved during logon.
 
-- If you enable this policy setting, the Azure AD Kerberos Ticket Granting Ticket is retrieved during logon.
+- If you enable this policy setting, the Microsoft Entra Kerberos Ticket Granting Ticket is retrieved during logon.
 <!-- CloudKerberosTicketRetrievalEnabled-Description-End -->
 
 <!-- CloudKerberosTicketRetrievalEnabled-Editable-Begin -->
@@ -134,7 +134,7 @@ This policy setting allows retrieving the Azure AD Kerberos Ticket Granting Tick
 | Name | Value |
 |:--|:--|
 | Name | CloudKerberosTicketRetrievalEnabled |
-| Friendly Name | Allow retrieving the Azure AD Kerberos Ticket Granting Ticket during logon |
+| Friendly Name | Allow retrieving the Microsoft Entra Kerberos Ticket Granting Ticket during logon |
 | Location | Computer Configuration |
 | Path | System > Kerberos |
 | Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\System\Kerberos\Parameters |
@@ -781,8 +781,8 @@ The size of the context token buffer determines the maximum size of SSPI context
 
 <!-- UPNNameHints-Description-Begin -->
 <!-- Description-Source-DDF -->
-Devices joined to Azure Active Directory in a hybrid environment need to interact with Active Directory Domain Controllers, but they lack the built-in ability to find a Domain Controller that a domain-joined device has. This can cause failures when such a device needs to resolve an AAD UPN into an Active Directory Principal.
-This parameter adds a list of domains that an Azure Active Directory joined device should attempt to contact if it's otherwise unable to resolve a UPN to a principal.
+Devices joined to Microsoft Entra ID in a hybrid environment need to interact with Active Directory Domain Controllers, but they lack the built-in ability to find a Domain Controller that a domain-joined device has. This can cause failures when such a device needs to resolve a Microsoft Entra UPN into an Active Directory Principal.
+This parameter adds a list of domains that a Microsoft Entra joined device should attempt to contact if it's otherwise unable to resolve a UPN to a principal.
 <!-- UPNNameHints-Description-End -->
 
 <!-- UPNNameHints-Editable-Begin -->

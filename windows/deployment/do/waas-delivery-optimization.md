@@ -62,6 +62,7 @@ The following table lists the minimum Windows 10 version that supports Delivery 
 | Xbox Game Pass (PC) | Windows 10 1809, Windows 11 | :heavy_check_mark: |  | :heavy_check_mark: |
 | Windows Package Manager| Windows 10 1809, Windows 11 | :heavy_check_mark: |  |  |
 | MSIX Installer| Windows 10 2004, Windows 11 | :heavy_check_mark: |  |  |
+| Teams (via MSIX Installer) | Windows 10 2004, Windows 11 | :heavy_check_mark: |  |  |
 
 #### Windows Server
 
