@@ -4,7 +4,7 @@ description: View the XML file containing the device description framework (DDF)
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 06/02/2023
+ms.date: 10/03/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -88,6 +88,7 @@ The following XML file contains the device description framework (DDF) for the D
       <DFProperties>
         <AccessType>
           <Get />
+          <Replace />
         </AccessType>
         <Description>This node provides status of the Device Preparation page.  Values are an enum: 0 = Disabled; 1 = Enabled;  2 = InProgress; 3 = ExitedOnSuccess; 4 = ExitedOnFailure.</Description>
         <DFFormat>

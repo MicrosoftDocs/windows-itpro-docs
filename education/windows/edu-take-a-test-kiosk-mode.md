@@ -53,7 +53,7 @@ To configure devices using Intune for Education, follow these steps:
 
 ### Configure Take a Test with a custom policy
 
-[!INCLUDE [intune-custom-settings-1](includes/intune-custom-settings-1.md)]
+[!INCLUDE [intune-custom-settings-1](../../includes/configure/intune-custom-settings-1.md)]
 
 | Setting |
 |--------|
@@ -67,8 +67,8 @@ To configure devices using Intune for Education, follow these steps:
 
 :::image type="content" source="./images/takeatest/intune-take-a-test-custom-profile.png" alt-text="Intune portal - creation of a custom policy to configure Take a Test." lightbox="./images/takeatest/intune-take-a-test-custom-profile.png" border="true":::
 
-[!INCLUDE [intune-custom-settings-2](includes/intune-custom-settings-2.md)]
-[!INCLUDE [intune-custom-settings-info](includes/intune-custom-settings-info.md)]
+[!INCLUDE [intune-custom-settings-2](../../includes/configure/intune-custom-settings-2.md)]
+[!INCLUDE [intune-custom-settings-info](../../includes/configure/intune-custom-settings-info.md)]
 
 #### [:::image type="icon" source="images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
 
@@ -199,7 +199,7 @@ To create a local account, and configure Take a Test in kiosk mode using the Set
    :::image type="content" source="./images/takeatest/login-screen-take-a-test-single-pc.png" alt-text="Windows 11 SE login screen with the take a test account." border="true":::
 
    > [!NOTE]  
-   > To sign-in with a local account on a device that is joined to Azure AD or Active Directory, you must prefix the username with either `<computername>\` or `.\`.
+   > To sign-in with a local account on a device that is joined to Microsoft Entra ID or Active Directory, you must prefix the username with either `<computername>\` or `.\`.
 
 ---
 

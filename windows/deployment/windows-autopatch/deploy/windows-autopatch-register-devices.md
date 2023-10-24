@@ -31,44 +31,48 @@ Windows Autopatch can take over software update management control of devices th
 
 ### Windows Autopatch groups device registration
 
-When you either create/edit a [Custom Autopatch group](../deploy/windows-autopatch-groups-overview.md#about-custom-autopatch-groups) or edit the [Default Autopatch group](../deploy/windows-autopatch-groups-overview.md#about-the-default-autopatch-group) to add or remove deployment rings, the device-based Azure AD groups you use when setting up your deployment rings are scanned to see if devices need to be registered with the Windows Autopatch service.  
+When you either create/edit a [Custom Autopatch group](../deploy/windows-autopatch-groups-overview.md#about-custom-autopatch-groups) or edit the [Default Autopatch group](../deploy/windows-autopatch-groups-overview.md#about-the-default-autopatch-group) to add or remove deployment rings, the device-based Microsoft Entra groups you use when setting up your deployment rings are scanned to see if devices need to be registered with the Windows Autopatch service.  
 
-If devices aren’t registered, Autopatch groups starts the device registration process by using your existing device-based Azure AD groups instead of the Windows Autopatch Device Registration group.
+If devices aren’t registered, Autopatch groups starts the device registration process by using your existing device-based Microsoft Entra groups instead of the Windows Autopatch Device Registration group.
 
 For more information, see [create Custom Autopatch groups](../deploy/windows-autopatch-groups-manage-autopatch-groups.md#create-a-custom-autopatch-group) and [edit Autopatch group](../deploy/windows-autopatch-groups-manage-autopatch-groups.md#edit-the-default-or-a-custom-autopatch-group) to register devices using the Autopatch groups device registration method.
 
-#### Supported scenarios when nesting other Azure AD groups
+<a name='supported-scenarios-when-nesting-other-azure-ad-groups'></a>
 
-Windows Autopatch also supports the following Azure AD nested group scenarios:
+#### Supported scenarios when nesting other Microsoft Entra groups
 
-Azure AD groups synced up from:
+Windows Autopatch also supports the following Microsoft Entra nested group scenarios:
+
+Microsoft Entra groups synced up from:
 
 - On-premises Active Directory groups (Windows Server AD)
 - [Configuration Manager collections](/mem/configmgr/core/clients/manage/collections/create-collections#bkmk_aadcollsync)
 
 > [!WARNING]
-> It isn't recommended to sync Configuration Manager collections straight to the **Windows Autopatch Device Registration** Azure AD group. Use a different Azure AD group when syncing Configuration Manager collections to Azure AD groups then you can nest this or these groups into the **Windows Autopatch Device Registration** Azure AD group.
+> It isn't recommended to sync Configuration Manager collections straight to the **Windows Autopatch Device Registration** Microsoft Entra group. Use a different Microsoft Entra group when syncing Configuration Manager collections to Microsoft Entra groups then you can nest this or these groups into the **Windows Autopatch Device Registration** Microsoft Entra group.
 
 > [!IMPORTANT]
-> The **Windows Autopatch Device Registration** Azure AD group only supports **one level** of Azure AD nested groups.
+> The **Windows Autopatch Device Registration** Microsoft Entra group only supports **one level** of Microsoft Entra nested groups.
 
-### Clean up dual state of Hybrid Azure AD joined and Azure registered devices in your Azure AD tenant
+<a name='clean-up-dual-state-of-hybrid-azure-ad-joined-and-azure-registered-devices-in-your-azure-ad-tenant'></a>
 
-An [Azure AD dual state](/azure/active-directory/devices/hybrid-azuread-join-plan#handling-devices-with-azure-ad-registered-state) occurs when a device is initially connected to Azure AD as an [Azure AD Registered](/azure/active-directory/devices/concept-azure-ad-register) device. However, when you enable Hybrid Azure AD join, the same device is connected twice to Azure AD but as a [Hybrid Azure AD device](/azure/active-directory/devices/concept-azure-ad-join-hybrid).
+### Clean up dual state of Microsoft Entra hybrid joined and Azure registered devices in your Microsoft Entra tenant
 
-In the dual state, you end up having two Azure AD device records with different join types for the same device. In this case, the Hybrid Azure AD device record takes precedence over the Azure AD registered device record for any type of authentication in Azure AD, which makes the Azure AD registered device record stale.
+An [Microsoft Entra dual state](/azure/active-directory/devices/hybrid-azuread-join-plan#handling-devices-with-azure-ad-registered-state) occurs when a device is initially connected to Microsoft Entra ID as an [Microsoft Entra registered](/azure/active-directory/devices/concept-azure-ad-register) device. However, when you enable Microsoft Entra hybrid join, the same device is connected twice to Microsoft Entra ID but as a [Hybrid Microsoft Entra device](/azure/active-directory/devices/concept-azure-ad-join-hybrid).
 
-It's recommended to detect and clean up stale devices in Azure AD before registering devices with Windows Autopatch, see [How To: Manage state devices in Azure AD](/azure/active-directory/devices/manage-stale-devices).
+In the dual state, you end up having two Microsoft Entra device records with different join types for the same device. In this case, the Hybrid Microsoft Entra device record takes precedence over the Microsoft Entra registered device record for any type of authentication in Microsoft Entra ID, which makes the Microsoft Entra registered device record stale.
+
+It's recommended to detect and clean up stale devices in Microsoft Entra ID before registering devices with Windows Autopatch, see [How To: Manage state devices in Microsoft Entra ID](/azure/active-directory/devices/manage-stale-devices).
 
 > [!WARNING]
-> If you don't clean up stale devices in Azure AD before registering devices with Windows Autopatch, you might end up seeing devices failing to meet the **Intune or Cloud-Attached (Device must be either Intune-managed or Co-managed)** pre-requisite check  in the **Not ready** tab because it's expected that these stale Azure AD devices aren't enrolled into the Intune service anymore.
+> If you don't clean up stale devices in Microsoft Entra ID before registering devices with Windows Autopatch, you might end up seeing devices failing to meet the **Intune or Cloud-Attached (Device must be either Intune-managed or Co-managed)** pre-requisite check  in the **Not ready** tab because it's expected that these stale Microsoft Entra devices aren't enrolled into the Intune service anymore.
 
 ## Prerequisites for device registration
 
 To be eligible for Windows Autopatch management, devices must meet a minimum set of required software-based prerequisites:
 
 - Windows 10 (1809+)/11 Enterprise or Professional editions (only x64 architecture).
-- Either [Hybrid Azure AD-Joined](/azure/active-directory/devices/concept-azure-ad-join-hybrid) or [Azure AD-joined only](/azure/active-directory/devices/concept-azure-ad-join-hybrid) (personal devices aren't supported).
+- Either [Microsoft Entra hybrid joined](/azure/active-directory/devices/concept-azure-ad-join-hybrid) or [Microsoft Entra joined only](/azure/active-directory/devices/concept-azure-ad-join-hybrid) (personal devices aren't supported).
 - Managed by Microsoft Intune.
     - [Already enrolled into Microsoft Intune](/mem/intune/user-help/enroll-windows-10-device) and/or [Configuration Manager co-management](/windows/deployment/windows-autopatch/prepare/windows-autopatch-prerequisites#configuration-manager-co-management-requirements).
         - Must switch the following Microsoft Configuration Manager [co-management workloads](/mem/configmgr/comanage/how-to-switch-workloads) to Microsoft Intune (either set to Pilot Intune or Intune):
@@ -114,20 +118,20 @@ The following are the possible device readiness statuses in Windows Autopatch:
 
 A role defines the set of permissions granted to users assigned to that role. You can use one of the following built-in roles in Windows Autopatch to register devices:
 
-- Azure AD Global Administrator
+- Microsoft Entra Global Administrator
 - Intune Service Administrator
 
-For more information, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference) and [Role-based access control (RBAC) with Microsoft Intune](/mem/intune/fundamentals/role-based-access-control).
+For more information, see [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference) and [Role-based access control (RBAC) with Microsoft Intune](/mem/intune/fundamentals/role-based-access-control).
 
-If you want to assign less-privileged user accounts to perform specific tasks in the Windows Autopatch portal, such as register devices with the service, you can add these user accounts into one of the two Azure AD groups created during the [tenant enrollment](../prepare/windows-autopatch-enroll-tenant.md) process:
+If you want to assign less-privileged user accounts to perform specific tasks in the Windows Autopatch portal, such as register devices with the service, you can add these user accounts into one of the two Microsoft Entra groups created during the [tenant enrollment](../prepare/windows-autopatch-enroll-tenant.md) process:
 
-| Azure AD Group name | Discover devices | Modify columns | Refresh device list | Export to .CSV | Device actions |
+| Microsoft Entra group name | Discover devices | Modify columns | Refresh device list | Export to .CSV | Device actions |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | Modern Workplace Roles - Service Administrator | Yes | Yes | Yes | Yes | Yes |
 | Modern Workplace Roles - Service Reader | No | Yes | Yes | Yes | No |
 
 > [!TIP]
-> If you're adding less-privileged user accounts into the **Modern Workplace Roles - Service Administrator** Azure AD group, it's recommended to add the same users as owners of the **Windows Autopatch Device Registration** Azure AD group. Owners of the **Windows Autopatch Device Registration** Azure AD group can add new devices as members of the group for registration purposes.<p>For more information, see [assign an owner of member of a group in Azure AD](/azure/active-directory/privileged-identity-management/groups-assign-member-owner#assign-an-owner-or-member-of-a-group).</p>
+> If you're adding less-privileged user accounts into the **Modern Workplace Roles - Service Administrator** Microsoft Entra group, it's recommended to add the same users as owners of the **Windows Autopatch Device Registration** Microsoft Entra group. Owners of the **Windows Autopatch Device Registration** Microsoft Entra group can add new devices as members of the group for registration purposes.<p>For more information, see [assign an owner of member of a group in Microsoft Entra ID](/azure/active-directory/privileged-identity-management/groups-assign-member-owner#assign-an-owner-or-member-of-a-group).</p>
 
 ## Details about the device registration process
 
@@ -206,7 +210,7 @@ There's a few more device management lifecycle scenarios to consider when planni
 
 If a device was previously registered into the Windows Autopatch service, but it needs to be reimaged, you must run one of the device provisioning processes available in Microsoft Intune to reimage the device.
 
-The device will be rejoined to Azure AD (either Hybrid or Azure AD-only). Then, re-enrolled into Intune as well. No further action is required from you or the Windows Autopatch service, because the Azure AD device ID record of that device remains the same.
+The device will be rejoined to Microsoft Entra ID (either Hybrid or Microsoft Entra-only). Then, re-enrolled into Intune as well. No further action is required from you or the Windows Autopatch service, because the Microsoft Entra device ID record of that device remains the same.
 
 ### Device repair and hardware replacement
 
@@ -216,7 +220,7 @@ If you need to repair a device that was previously registered into the Windows A
 - MAC address (non-removable NICs)
 - OS hard drive's serial, model, manufacturer information
 
-When one of these hardware changes occurs, Azure AD creates a new device ID record for that device, even if it's technically the same device.
+When one of these hardware changes occurs, Microsoft Entra ID creates a new device ID record for that device, even if it's technically the same device.
 
 > [!IMPORTANT]
-> If a new Azure AD device ID is generated for a device that was previously registered into the Windows Autopatch service, even if it's technically same device, the new Azure AD device ID must be added either through device direct membership or through nested Azure AD dynamic/assigned group into the **Windows Autopatch Device Registration** Azure AD group. This process guarantees that the newly generated Azure AD device ID is registered with Windows Autopatch and that the device continues to have its software updates managed by the service.
+> If a new Microsoft Entra device ID is generated for a device that was previously registered into the Windows Autopatch service, even if it's technically same device, the new Microsoft Entra device ID must be added either through device direct membership or through nested Microsoft Entra dynamic/assigned group into the **Windows Autopatch Device Registration** Microsoft Entra group. This process guarantees that the newly generated Microsoft Entra device ID is registered with Windows Autopatch and that the device continues to have its software updates managed by the service.

@@ -1,25 +1,29 @@
 ---
-title: Windows Update for Business reports Data Schema - UCClient
-manager: aaroncz
-description: UCClient schema
+title: UCClient data schema
+titleSuffix: Windows Update for Business reports
+description: UCClient schema for Windows Update for Business reports. UCClient acts as an individual device's record.
 ms.prod: windows-client
+ms.technology: itpro-updates
+ms.topic: reference
 author: mestew
 ms.author: mstewart
-ms.topic: reference
+manager: aaroncz
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 ms.date: 08/09/2023
-ms.technology: itpro-updates
 ---
 
 # UCClient
 <!--37063317, 30141258, 37063041-->
-***(Applies to: Windows 11 & Windows 10)***
-
 UCClient acts as an individual device's record. It contains data such as the currently installed build, the device's name, the OS edition, and active hours (quantitative).
+
+## Schema for UCClient
 
 |Field |Type |Example |Description |
 |---|---|---|---|
-| **AzureADDeviceId** |  [string](/azure/kusto/query/scalar-data-types/string) | `71db1a1a-f1a6-4a25-b88f-79c2f513dae0` | Azure AD Device ID |
-| **AzureADTenantId** |  [string](/azure/kusto/query/scalar-data-types/string) | `69ca04b0-703d-4b3a-9184-c4e3c15d6f5e` | Azure AD Tenant ID |
+| **AzureADDeviceId** |  [string](/azure/kusto/query/scalar-data-types/string) | `71db1a1a-f1a6-4a25-b88f-79c2f513dae0` | Microsoft Entra Device ID |
+| **AzureADTenantId** |  [string](/azure/kusto/query/scalar-data-types/string) | `69ca04b0-703d-4b3a-9184-c4e3c15d6f5e` | Microsoft Entra tenant ID |
 | **Country** |  [string](/azure/kusto/query/scalar-data-types/string) | `US` | The last-reported location of device (country or region), based on IP address. Shown as country code. |
 | **DeviceFamily** |  [string](/azure/kusto/query/scalar-data-types/string) | `PC, Phone` | The device family such as PC, Phone. |
 | **DeviceName** |  [string](/azure/kusto/query/scalar-data-types/string) | `JohnPC-Contoso` | Client-provided device name |

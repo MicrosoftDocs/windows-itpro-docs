@@ -4,7 +4,7 @@ description: Learn more about the InternetExplorer Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 08/10/2023
+ms.date: 10/03/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,6 +17,8 @@ ms.topic: reference
 # Policy CSP - InternetExplorer
 
 [!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
+
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- InternetExplorer-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -7727,6 +7729,78 @@ High Safety enables applets to run in their sandbox. Disable Java to prevent any
 
 <!-- IntranetZoneJavaPermissions-End -->
 
+<!-- IntranetZoneLogonOptions-Begin -->
+## IntranetZoneLogonOptions
+
+<!-- IntranetZoneLogonOptions-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- IntranetZoneLogonOptions-Applicability-End -->
+
+<!-- IntranetZoneLogonOptions-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/InternetExplorer/IntranetZoneLogonOptions
+```
+
+```Device
+./Device/Vendor/MSFT/Policy/Config/InternetExplorer/IntranetZoneLogonOptions
+```
+<!-- IntranetZoneLogonOptions-OmaUri-End -->
+
+<!-- IntranetZoneLogonOptions-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to manage settings for logon options.
+
+- If you enable this policy setting, you can choose from the following logon options.
+
+Anonymous logon to disable HTTP authentication and use the guest account only for the Common Internet File System (CIFS) protocol.
+
+Prompt for user name and password to query users for user IDs and passwords. After a user is queried, these values can be used silently for the remainder of the session.
+
+Automatic logon only in Intranet zone to query users for user IDs and passwords in other zones. After a user is queried, these values can be used silently for the remainder of the session.
+
+Automatic logon with current user name and password to attempt logon using Windows NT Challenge Response (also known as NTLM authentication). If Windows NT Challenge Response is supported by the server, the logon uses the user's network user name and password for logon. If Windows NT Challenge Response isn't supported by the server, the user is queried to provide the user name and password.
+
+- If you disable this policy setting, logon is set to Automatic logon only in Intranet zone.
+
+- If you don't configure this policy setting, logon is set to Automatic logon only in Intranet zone.
+<!-- IntranetZoneLogonOptions-Description-End -->
+
+<!-- IntranetZoneLogonOptions-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- IntranetZoneLogonOptions-Editable-End -->
+
+<!-- IntranetZoneLogonOptions-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- IntranetZoneLogonOptions-DFProperties-End -->
+
+<!-- IntranetZoneLogonOptions-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | IZ_PolicyLogon_3 |
+| Friendly Name | Logon options |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Intranet Zone |
+| Registry Key Name | Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\1 |
+| ADMX File Name | inetres.admx |
+<!-- IntranetZoneLogonOptions-AdmxBacked-End -->
+
+<!-- IntranetZoneLogonOptions-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- IntranetZoneLogonOptions-Examples-End -->
+
+<!-- IntranetZoneLogonOptions-End -->
+
 <!-- IntranetZoneNavigateWindowsAndFrames-Begin -->
 ## IntranetZoneNavigateWindowsAndFrames
 
@@ -8729,6 +8803,78 @@ High Safety enables applets to run in their sandbox. Disable Java to prevent any
 <!-- LocalMachineZoneJavaPermissions-Examples-End -->
 
 <!-- LocalMachineZoneJavaPermissions-End -->
+
+<!-- LocalMachineZoneLogonOptions-Begin -->
+## LocalMachineZoneLogonOptions
+
+<!-- LocalMachineZoneLogonOptions-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- LocalMachineZoneLogonOptions-Applicability-End -->
+
+<!-- LocalMachineZoneLogonOptions-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/InternetExplorer/LocalMachineZoneLogonOptions
+```
+
+```Device
+./Device/Vendor/MSFT/Policy/Config/InternetExplorer/LocalMachineZoneLogonOptions
+```
+<!-- LocalMachineZoneLogonOptions-OmaUri-End -->
+
+<!-- LocalMachineZoneLogonOptions-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to manage settings for logon options.
+
+- If you enable this policy setting, you can choose from the following logon options.
+
+Anonymous logon to disable HTTP authentication and use the guest account only for the Common Internet File System (CIFS) protocol.
+
+Prompt for user name and password to query users for user IDs and passwords. After a user is queried, these values can be used silently for the remainder of the session.
+
+Automatic logon only in Intranet zone to query users for user IDs and passwords in other zones. After a user is queried, these values can be used silently for the remainder of the session.
+
+Automatic logon with current user name and password to attempt logon using Windows NT Challenge Response (also known as NTLM authentication). If Windows NT Challenge Response is supported by the server, the logon uses the user's network user name and password for logon. If Windows NT Challenge Response isn't supported by the server, the user is queried to provide the user name and password.
+
+- If you disable this policy setting, logon is set to Automatic logon only in Intranet zone.
+
+- If you don't configure this policy setting, logon is set to Automatic logon with current username and password.
+<!-- LocalMachineZoneLogonOptions-Description-End -->
+
+<!-- LocalMachineZoneLogonOptions-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LocalMachineZoneLogonOptions-Editable-End -->
+
+<!-- LocalMachineZoneLogonOptions-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- LocalMachineZoneLogonOptions-DFProperties-End -->
+
+<!-- LocalMachineZoneLogonOptions-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | IZ_PolicyLogon_9 |
+| Friendly Name | Logon options |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Local Machine Zone |
+| Registry Key Name | Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\0 |
+| ADMX File Name | inetres.admx |
+<!-- LocalMachineZoneLogonOptions-AdmxBacked-End -->
+
+<!-- LocalMachineZoneLogonOptions-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LocalMachineZoneLogonOptions-Examples-End -->
+
+<!-- LocalMachineZoneLogonOptions-End -->
 
 <!-- LocalMachineZoneNavigateWindowsAndFrames-Begin -->
 ## LocalMachineZoneNavigateWindowsAndFrames
@@ -17228,6 +17374,78 @@ High Safety enables applets to run in their sandbox. Disable Java to prevent any
 <!-- TrustedSitesZoneJavaPermissions-Examples-End -->
 
 <!-- TrustedSitesZoneJavaPermissions-End -->
+
+<!-- TrustedSitesZoneLogonOptions-Begin -->
+## TrustedSitesZoneLogonOptions
+
+<!-- TrustedSitesZoneLogonOptions-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- TrustedSitesZoneLogonOptions-Applicability-End -->
+
+<!-- TrustedSitesZoneLogonOptions-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/InternetExplorer/TrustedSitesZoneLogonOptions
+```
+
+```Device
+./Device/Vendor/MSFT/Policy/Config/InternetExplorer/TrustedSitesZoneLogonOptions
+```
+<!-- TrustedSitesZoneLogonOptions-OmaUri-End -->
+
+<!-- TrustedSitesZoneLogonOptions-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to manage settings for logon options.
+
+- If you enable this policy setting, you can choose from the following logon options.
+
+Anonymous logon to disable HTTP authentication and use the guest account only for the Common Internet File System (CIFS) protocol.
+
+Prompt for user name and password to query users for user IDs and passwords. After a user is queried, these values can be used silently for the remainder of the session.
+
+Automatic logon only in Intranet zone to query users for user IDs and passwords in other zones. After a user is queried, these values can be used silently for the remainder of the session.
+
+Automatic logon with current user name and password to attempt logon using Windows NT Challenge Response (also known as NTLM authentication). If Windows NT Challenge Response is supported by the server, the logon uses the user's network user name and password for logon. If Windows NT Challenge Response isn't supported by the server, the user is queried to provide the user name and password.
+
+- If you disable this policy setting, logon is set to Automatic logon only in Intranet zone.
+
+- If you don't configure this policy setting, logon is set to Automatic logon with current username and password.
+<!-- TrustedSitesZoneLogonOptions-Description-End -->
+
+<!-- TrustedSitesZoneLogonOptions-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TrustedSitesZoneLogonOptions-Editable-End -->
+
+<!-- TrustedSitesZoneLogonOptions-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- TrustedSitesZoneLogonOptions-DFProperties-End -->
+
+<!-- TrustedSitesZoneLogonOptions-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | IZ_PolicyLogon_5 |
+| Friendly Name | Logon options |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Trusted Sites Zone |
+| Registry Key Name | Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\2 |
+| ADMX File Name | inetres.admx |
+<!-- TrustedSitesZoneLogonOptions-AdmxBacked-End -->
+
+<!-- TrustedSitesZoneLogonOptions-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TrustedSitesZoneLogonOptions-Examples-End -->
+
+<!-- TrustedSitesZoneLogonOptions-End -->
 
 <!-- TrustedSitesZoneNavigateWindowsAndFrames-Begin -->
 ## TrustedSitesZoneNavigateWindowsAndFrames

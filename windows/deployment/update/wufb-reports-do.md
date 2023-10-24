@@ -1,19 +1,22 @@
 ---
-title: Delivery Optimization data in Windows Update for Business reports
-manager: aaroncz
-description: Provides information about Delivery Optimization data in Windows Update for Business reports 
+title: Delivery Optimization data in reports
+titleSuffix: Windows Update for Business reports
+description: This article provides information about Delivery Optimization data in Windows Update for Business reports. 
 ms.prod: windows-client
+ms.technology: itpro-updates
+ms.topic: conceptual
 author: mestew
 ms.author: mstewart
-ms.topic: article
+manager: aaroncz
+ms.localizationpriority: medium
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
 ms.date: 04/12/2023
-ms.technology: itpro-updates
 ---
 
 # Delivery Optimization data in Windows Update for Business reports
-
 <!--7715481-->
-***(Applies to: Windows 11 & Windows 10)***
 
 [Delivery Optimization](../do/waas-delivery-optimization.md) (DO) is a Windows feature that can be used to reduce bandwidth consumption by sharing the work of downloading updates among multiple devices in your environment. You can use DO with many other deployment methods, but it's a cloud-managed solution, and access to the DO cloud services is a requirement.
 
@@ -92,7 +95,7 @@ Each calculated values used in the Delivery Optimization report are listed below
 
 ## Mapping GroupID
 
-In the **Efficiency By Group** subsection, the **GroupID** is displayed as an encoded SHA256 hash. You can create a mapping of original to encoded GroupIDs using the following PowerShell example:
+In the **Efficiency By Group** subsection, the **GroupID** is displayed as an encoded SHA256 hash and is case sensitive. You can create a mapping of original to encoded GroupIDs using the following PowerShell example:
 
 ```powershell
 $text = "<myOriginalGroupID>`0" ; # The `0 null terminator is required

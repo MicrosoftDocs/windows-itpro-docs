@@ -1,8 +1,8 @@
 ---
 title: Windows 11 SE settings list
 description: Windows 11 SE automatically configures settings in the operating system. Learn more about the settings you can control and manage, and the settings you can't change.
-ms.topic: article
-ms.date: 03/09/2023
+ms.topic: reference
+ms.date: 08/18/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11 SE</a>
 ms.collection:
@@ -50,7 +50,7 @@ The following settings can't be changed.
 | Visible Folders in File Explorer | By default, the Desktop, Downloads, Documents, and Pictures folders are visible to users in File Explorer. Users can make other folders, like **This PC**, visible in **View** > **Options**. |
 | Launch Windows Maximized  | All Windows are opened in the maximized view.  |
 | Windows Snapping  | Windows snapping is limited to two Windows.  |
-| Allowed Account Types  | Microsoft accounts and Azure AD accounts are allowed. |
+| Allowed Account Types  | Microsoft accounts and Microsoft Entra accounts are allowed. |
 | Virtual Desktops  | Virtual Desktops are blocked. |
 | Microsoft Store  | The Microsoft Store is blocked. |
 | Administrative tools  | Administrative tools, such as the command prompt and Windows PowerShell, can't be opened. Windows PowerShell scripts deployed using Microsoft Intune can run. |

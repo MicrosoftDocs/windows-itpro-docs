@@ -2,11 +2,11 @@
 title: Planning a Windows Hello for Business Deployment
 description: Learn about the role of each component within Windows Hello for Business and how certain deployment decisions affect other aspects of your infrastructure.
 ms.date: 09/16/2020
-ms.topic: article
+ms.topic: overview
 ---
 # Planning a Windows Hello for Business Deployment
 
-Congratulations! You are taking the first step forward in helping move your organizations away from password to a two-factor, convenience authentication for Windows — Windows Hello for Business. This planning guide helps you understand the different topologies, architectures, and components that encompass a Windows Hello for Business infrastructure.
+Congratulations! You're taking the first step forward in helping move your organizations away from password to a two-factor, convenience authentication for Windows — Windows Hello for Business. This planning guide helps you understand the different topologies, architectures, and components that encompass a Windows Hello for Business infrastructure.
 
 This guide explains the role of each component within Windows Hello for Business and how certain deployment decisions affect other aspects of the infrastructure. Armed with your planning worksheet, you'll use that information to select the correct deployment guide for your needs.
 
@@ -15,7 +15,7 @@ This guide explains the role of each component within Windows Hello for Business
 
 ## Using this guide
 
-There are many options from which you can choose when deploying Windows Hello for Business. Providing multiple options ensures nearly every organization can deploy Windows Hello for Business. Providing many options makes the deployment appear complex, however, most organization will realize they've already implemented most of the infrastructure on which the Windows Hello for Business deployment depends. It is important to understand that Windows Hello for Business is a distributed system and does take proper planning across multiple teams within an organization.
+There are many options from which you can choose when deploying Windows Hello for Business. Providing multiple options ensures nearly every organization can deploy Windows Hello for Business. Providing many options makes the deployment appear complex, however, most organization will realize they've already implemented most of the infrastructure on which the Windows Hello for Business deployment depends. It's important to understand that Windows Hello for Business is a distributed system and does take proper planning across multiple teams within an organization.
 
 This guide removes the appearance of complexity by helping you make decisions on each aspect of your Windows Hello for Business deployment and the options you'll need to consider. Using this guide also identifies the information needed to help you make decisions about the deployment that best suits your environment. Download the [Windows Hello for Business planning worksheet](https://go.microsoft.com/fwlink/?linkid=852514) from the Microsoft Download Center to help track your progress and make your planning easier.
 
@@ -52,9 +52,9 @@ The cloud only deployment model is for organizations who only have cloud identit
 
 The hybrid deployment model is for organizations that: 
 
-- Are federated with Azure Active Directory
-- Have identities synchronized to Azure Active Directory using Azure Active Directory Connect
-- Use applications hosted in Azure Active Directory, and want a single sign-in user experience for both on-premises and Azure Active Directory resources
+- Are federated with Microsoft Entra ID
+- Have identities synchronized to Microsoft Entra ID using Microsoft Entra Connect
+- Use applications hosted in Microsoft Entra ID, and want a single sign-in user experience for both on-premises and Microsoft Entra resources
 
 > [!Important]
 > Hybrid deployments support non-destructive PIN reset that works with both the certificate trust and key trust models.
@@ -64,7 +64,7 @@ The hybrid deployment model is for organizations that:
 > - Reset above lock screen (_I forgot my PIN_ link) - Windows 10, version 1903
 
 ##### On-premises
-The on-premises deployment model is for organizations that do not have cloud identities or use applications hosted in Azure Active Directory.
+The on-premises deployment model is for organizations that do not have cloud identities or use applications hosted in Microsoft Entra ID.
 
 > [!Important]
 > On-premises deployments support destructive PIN reset that works with both the certificate trust and the key trust models.
@@ -81,44 +81,44 @@ It's fundamentally important to understand which deployment model to use for a s
 A deployment's trust type defines how each Windows Hello for Business client authenticates to the on-premises Active Directory.  There are two trust types: key trust and certificate trust.
 
 > [!NOTE]
-> Windows Hello for Business introduced a new trust model called cloud Kerberos trust, in early 2022. This model enables deployment of Windows Hello for Business using the infrastructure introduced for supporting [security key sign-in on Hybrid Azure AD-joined devices and on-premises resource access on Azure AD Joined devices](/azure/active-directory/authentication/howto-authentication-passwordless-security-key-on-premises). For more information, see [Hybrid Cloud Kerberos Trust Deployment](hello-hybrid-cloud-kerberos-trust.md).
+> Windows Hello for Business introduced a new trust model called cloud Kerberos trust, in early 2022. This model enables deployment of Windows Hello for Business using the infrastructure introduced for supporting [security key sign-in on Microsoft Entra hybrid joined devices and on-premises resource access on Microsoft Entra joined devices](/azure/active-directory/authentication/howto-authentication-passwordless-security-key-on-premises). For more information, see [Hybrid Cloud Kerberos Trust Deployment](hello-hybrid-cloud-kerberos-trust.md).
 
-The key trust type does not require issuing authentication certificates to end users. Users authenticate using a hardware-bound key created during the built-in provisioning experience. This requires an adequate distribution of Windows Server 2016 or later domain controllers relative to your existing authentication and the number of users included in your Windows Hello for Business deployment. Read the [Planning an adequate number of Windows Server 2016 or later Domain Controllers for Windows Hello for Business deployments](hello-adequate-domain-controllers.md) to learn more.
+The key trust type doesn't require issuing authentication certificates to end users. Users authenticate using a hardware-bound key created during the built-in provisioning experience. This requires an adequate distribution of Windows Server 2016 or later domain controllers relative to your existing authentication and the number of users included in your Windows Hello for Business deployment. Read the [Planning an adequate number of Windows Server 2016 or later Domain Controllers for Windows Hello for Business deployments](hello-adequate-domain-controllers.md) to learn more.
 
 The certificate trust type issues authentication certificates to end users.  Users authenticate using a certificate requested using a hardware-bound key created during the built-in provisioning experience.  Unlike key trust, certificate trust does not require Windows Server 2016 domain controllers (but still requires [Windows Server 2016 or later Active Directory schema](/windows/security/identity-protection/hello-for-business/hello-hybrid-cert-trust#directories)).  Users can use their certificate to authenticate to any Windows Server 2008 R2, or later, domain controller.
 
 > [!NOTE]
-> RDP does not support authentication with Windows Hello for Business key trust deployments as a supplied credential. RDP is only supported with certificate trust deployments as a supplied credential at this time. Windows Hello for Business key trust can be used with [Windows Defender Remote Credential Guard](../remote-credential-guard.md).
+> RDP does not support authentication with Windows Hello for Business key trust deployments as a supplied credential. RDP is only supported with certificate trust deployments as a supplied credential at this time. Windows Hello for Business key trust can be used with [Remote Credential Guard](../remote-credential-guard.md).
 
 #### Device registration
 
-All devices included in the Windows Hello for Business deployment must go through device registration.  Device registration enables devices to authenticate to identity providers.  For cloud only and hybrid deployment, the identity provider is Azure Active Directory.  For on-premises deployments, the identity provider is the on-premises server running the Windows Server 2016 Active Directory Federation Services (AD FS) role.
+All devices included in the Windows Hello for Business deployment must go through device registration.  Device registration enables devices to authenticate to identity providers.  For cloud only and hybrid deployment, the identity provider is Microsoft Entra ID.  For on-premises deployments, the identity provider is the on-premises server running the Windows Server 2016 Active Directory Federation Services (AD FS) role.
 
 #### Key registration
 
-The built-in Windows Hello for Business provisioning experience creates a hardware bound asymmetric key pair as their user's credentials. The private key is protected by the device's security modules; however, the credential is a user key (not a device key).  The provisioning experience registers the user's public key with the identity provider.  For cloud only and hybrid deployments, the identity provider is Azure Active Directory.  For on-premises deployments, the identity provider is the on-premises server running Windows Server 2016 Active Directory Federation Services (AD FS) role.
+The built-in Windows Hello for Business provisioning experience creates a hardware bound asymmetric key pair as their user's credentials. The private key is protected by the device's security modules; however, the credential is a user key (not a device key).  The provisioning experience registers the user's public key with the identity provider.  For cloud only and hybrid deployments, the identity provider is Microsoft Entra ID.  For on-premises deployments, the identity provider is the on-premises server running Windows Server 2016 Active Directory Federation Services (AD FS) role.
 
 #### Multifactor authentication
 
 > [!IMPORTANT]
-> As of July 1, 2019, Microsoft will no longer offer MFA Server for new deployments. New customers who require multi-factor authentication for their users should use cloud-based Azure AD Multi-Factor Authentication. Existing customers who have activated MFA Server prior to July 1, 2019 will be able to download the latest version, future updates and generate activation credentials as usual. See [Getting started with the Azure AD Multi-Factor Authentication Server](/azure/active-directory/authentication/howto-mfaserver-deploy) for more details.
+> As of July 1, 2019, Microsoft will no longer offer MFA Server for new deployments. New customers who require multifactor authentication for their users should use cloud-based Microsoft Entra multifactor authentication. Existing customers who have activated MFA Server prior to July 1, 2019 will be able to download the latest version, future updates and generate activation credentials as usual. See [Getting started with the Azure Multi-Factor Authentication Server](/azure/active-directory/authentication/howto-mfaserver-deploy) for more details.
 
-The goal of Windows Hello for Business is to move organizations away from passwords by providing them a strong credential that provides easy two-factor authentication.  The built-in provisioning experience accepts the user's weak credentials (username and password) as the first factor authentication; however, the user must provide a second factor of authentication before Windows provisions a strong credential.  
+The goal of Windows Hello for Business is to move organizations away from passwords by providing them a with strong credential that provides easy two-factor authentication.  The built-in provisioning experience accepts the user's weak credentials (username and password) as the first factor authentication; however, the user must provide a second factor of authentication before Windows provisions a strong credential.  
 
-Cloud only and hybrid deployments provide many choices for multi-factor authentication.  On-premises deployments must use a multi-factor authentication that provides an AD FS multi-factor adapter to be used in conjunction with the on-premises Windows Server 2016 AD FS server role. Organizations can use the on-premises Azure AD Multi-Factor Authentication server, or choose from several third parties (Read [Microsoft and third-party additional authentication methods](/windows-server/identity/ad-fs/operations/configure-additional-authentication-methods-for-ad-fs#microsoft-and-third-party-additional-authentication-methods) for more information).
+Cloud only and hybrid deployments provide many choices for multifactor authentication.  On-premises deployments must use a multifactor authentication that provides an AD FS multifactor adapter to be used in conjunction with the on-premises Windows Server 2016 AD FS server role. Organizations can use the on-premises Azure Multi-Factor Authentication Server, or choose from several third parties (Read [Microsoft and third-party additional authentication methods](/windows-server/identity/ad-fs/operations/configure-additional-authentication-methods-for-ad-fs#microsoft-and-third-party-additional-authentication-methods) for more information).
 > [!NOTE]
-> Azure AD Multi-Factor Authentication is available through:
+> Microsoft Entra multifactor authentication is available through:
 > * Microsoft Enterprise Agreement
 > * Open Volume License Program
 > * Cloud Solution Providers program
 > * Bundled with
->    * Azure Active Directory Premium
+>    * Microsoft Entra ID P1 or P2
 >    * Enterprise Mobility Suite
 >    * Enterprise Cloud Suite
 
 #### Directory synchronization
 
-Hybrid and on-premises deployments use directory synchronization, however, each for a different purpose.  Hybrid deployments use Azure Active Directory Connect to synchronize Active Directory identities or credentials between itself and Azure Active Directory. This helps enable single sign-on to Azure Active Directory and its federated components. On-premises deployments use directory synchronization to import users from Active Directory to the Azure MFA Server, which sends data to the Azure MFA cloud service to perform the verification.
+Hybrid and on-premises deployments use directory synchronization, however, each for a different purpose.  Hybrid deployments use Microsoft Entra Connect to synchronize Active Directory identities or credentials between itself and Microsoft Entra ID. This helps enable single sign-on to Microsoft Entra ID and its federated components. On-premises deployments use directory synchronization to import users from Active Directory to the Azure MFA Server, which sends data to the Azure MFA cloud service to perform the verification.
 
 ### Management
 
@@ -136,7 +136,7 @@ Modern management is an emerging device management paradigm that leverages the c
 
 Windows Hello for Business is an exclusive Windows 10 and Windows 11 feature. As part of the Windows as a Service strategy, Microsoft has improved the deployment, management, and user experience with each new release of Windows and introduced support for new scenarios.
 
-Most deployment scenarios require a minimum of Windows 10, version 1511, also known as the November Update.  The client requirement may change based on different components in your existing infrastructure, or other infrastructure choices made later in planning your deployment. Those components and choices may require a minimum client running Windows 10, version 1703, also known as the Creators Update.
+Most deployment scenarios require a minimum of Windows 10, version 1511, also known as the November Update.  The client requirement might change based on different components in your existing infrastructure, or other infrastructure choices made later in planning your deployment. Those components and choices might require a minimum client running Windows 10, version 1703, also known as the Creators Update.
 
 
 ### Active Directory
@@ -145,11 +145,11 @@ Hybrid and on-premises deployments include Active Directory as part of their inf
 
 ### Public Key Infrastructure
 
-The Windows Hello for Business deployment depends on an enterprise public key infrastructure as a trust anchor for authentication. Domain controllers for hybrid and on-premises deployments need a certificate in order for Windows devices to trust the domain controller as legitimate. Deployments using the certificate trust type need an enterprise public key infrastructure and a certificate registration authority to issue authentication certificates to users.  Hybrid deployments may need to issue VPN certificates to users to enable connectivity on-premises resources.
+The Windows Hello for Business deployment depends on an enterprise public key infrastructure as a trust anchor for authentication. Domain controllers for hybrid and on-premises deployments need a certificate in order for Windows devices to trust the domain controller as legitimate. Deployments using the certificate trust type need an enterprise public key infrastructure and a certificate registration authority to issue authentication certificates to users.  Hybrid deployments might need to issue VPN certificates to users to enable connectivity on-premises resources.
 
 ### Cloud
 
-Some deployment combinations require an Azure account, and some require Azure Active Directory for user identities.  These cloud requirements may only need an Azure account while other features need an Azure Active Directory Premium subscription. The planning process identifies and differentiates the components that are needed from those that are optional.
+Some deployment combinations require an Azure account, and some require Microsoft Entra ID for user identities.  These cloud requirements may only need an Azure account while other features need a Microsoft Entra ID P1 or P2 subscription. The planning process identifies and differentiates the components that are needed from those that are optional.
 
 ## Planning a Deployment
 
@@ -173,13 +173,13 @@ If your organization does not have cloud resources, write **On-Premises** in box
 
 ### Trust type
 
-Hybrid Azure AD-joined devices managed by Group Policy need the Windows Server 2016 AD FS role to issue certificates.  Hybrid Azure AD-joined devices and Azure AD-joined devices managed by Intune or a compatible MDM need the Windows Server NDES server role to issue certificates.
+Microsoft Entra hybrid joined devices managed by Group Policy need the Windows Server 2016 AD FS role to issue certificates.  Microsoft Entra hybrid joined devices and Microsoft Entra joined devices managed by Intune or a compatible MDM need the Windows Server NDES server role to issue certificates.
 
 Choose a trust type that is best suited for your organizations.  Remember, the trust type determines two things. Whether you issue authentication certificates to your users and if your deployment needs Windows Server 2016 domain controllers.
 
 One trust model is not more secure than the other. The major difference is based on the organization comfort with deploying Windows Server 2016 domain controllers and not enrolling users with end entity certificates (key-trust) against using existing domain controllers and needing to enroll certificates for all their users (certificate trust).  
 
-Because the certificate trust types issues certificates, there is more configuration and infrastructure needed to accommodate user certificate enrollment, which could also be a factor to consider in your decision.  Additional infrastructure needed for certificate-trust deployments includes a certificate registration authority.  In a federated environment, you need to activate the Device Writeback option in Azure AD Connect.
+Because the certificate trust types issues certificates, there is more configuration and infrastructure needed to accommodate user certificate enrollment, which could also be a factor to consider in your decision.  Additional infrastructure needed for certificate-trust deployments includes a certificate registration authority.  In a federated environment, you need to activate the Device Writeback option in Microsoft Entra Connect.
 
 If your organization wants to use the key trust type, write **key trust** in box **1b** on your planning worksheet. Write **Windows Server 2016** in box **4d**. Write **N/A** in box **5b**.
 
@@ -203,17 +203,17 @@ If box **1a** on your planning worksheet reads **on-premises**, write **AD FS** 
 
 ### Directory Synchronization
 
-Windows Hello for Business is strong user authentication, which usually means there is an identity (a user or username) and a credential (typically a key pair).  Some operations require writing or reading user data to or from the directory. For example, reading the user's phone number to perform multi-factor authentication during provisioning or writing the user's public key.
+Windows Hello for Business is strong user authentication, which usually means there is an identity (a user or username) and a credential (typically a key pair).  Some operations require writing or reading user data to or from the directory. For example, reading the user's phone number to perform multifactor authentication during provisioning or writing the user's public key.
 
-If box **1a** on your planning worksheet reads **cloud only**, write **N/A** in box **1e**.  User information is written directly to Azure Active Directory and there is not another directory with which the information must be synchronized.
+If box **1a** on your planning worksheet reads **cloud only**, write **N/A** in box **1e**.  User information is written directly to Microsoft Entra ID and there is not another directory with which the information must be synchronized.
 
-If box **1a** on your planning worksheet reads **hybrid**, then write **Azure AD Connect** in box **1e** on your planning worksheet.
+If box **1a** on your planning worksheet reads **hybrid**, then write **Microsoft Entra Connect** in box **1e** on your planning worksheet.
 
-If box **1a** on your planning worksheet reads **on-premises**, then write **Azure MFA Server**.  This deployment exclusively uses Active Directory for user information with the exception of the multi-factor authentication.  The on-premises Azure MFA server synchronizes a subset of the user information, such as phone number, to provide multi-factor authentication while the user's credentials remain on the on-premises network.
+If box **1a** on your planning worksheet reads **on-premises**, then write **Azure MFA Server**.  This deployment exclusively uses Active Directory for user information with the exception of the multifactor authentication.  The on-premises Azure MFA server synchronizes a subset of the user information, such as phone number, to provide multifactor authentication while the user's credentials remain on the on-premises network.
 
-### Multifactor Authentication
+### Multifactor authentication
 
-The goal of Windows Hello for Business is to move user authentication away from passwords to a strong, key-based user authentication.  Passwords are weak credentials and cannot be trusted by themselves as an attacker with a stolen password could be attempting to enroll in Windows Hello for Business.  To keep the transition from a weak to a strong credential secure, Windows Hello for Business relies on multi-factor authentication during provisioning to have some assurances that the user identity provisioning a Windows Hello for Business credential is the proper identity.
+The goal of Windows Hello for Business is to move user authentication away from passwords to a strong, key-based user authentication.  Passwords are weak credentials and cannot be trusted by themselves as an attacker with a stolen password could be attempting to enroll in Windows Hello for Business.  To keep the transition from a weak to a strong credential secure, Windows Hello for Business relies on multifactor authentication during provisioning to have some assurances that the user identity provisioning a Windows Hello for Business credential is the proper identity.
 
 If box **1a** on your planning worksheet reads **cloud only**, then your only option is to use the Azure MFA cloud service.  Write **Azure MFA** in box **1f** on your planning worksheet.
 
@@ -225,7 +225,7 @@ If box **1a** on your planning worksheet reads **hybrid**, then you have a few o
 
 You can directly use the Azure MFA cloud service for the second factor of authentication. Users contacting the service must authenticate to Azure prior to using the service.
 
-If your Azure AD Connect is configured to synchronize identities (usernames only), then your users are redirected to your local on-premises federation server for authentication and then redirected back to the Azure MFA cloud service.  Otherwise, your Azure AD Connect is configured to synchronize credentials (username and passwords), which enables your users to authenticate to Azure Active Directory and use the Azure MFA cloud service.  If you choose to use the Azure MFA cloud service directly, write **Azure MFA** in box **1f** on your planning worksheet.
+If your Microsoft Entra Connect is configured to synchronize identities (usernames only), then your users are redirected to your local on-premises federation server for authentication and then redirected back to the Azure MFA cloud service.  Otherwise, your Microsoft Entra Connect is configured to synchronize credentials (username and passwords), which enables your users to authenticate to Microsoft Entra ID and use the Azure MFA cloud service.  If you choose to use the Azure MFA cloud service directly, write **Azure MFA** in box **1f** on your planning worksheet.
 
 You can configure your on-premises Windows Server 2016 AD FS role to use the Azure MFA service adapter. In this configuration, users are redirected to the on premises AD FS server (synchronizing identities only). The AD FS server uses the MFA adapter to communicate to the Azure MFA service to perform the second factor of authentication.  If you choose to use AD FS with the Azure MFA cloud service adapter, write **AD FS with Azure MFA cloud adapter** in box **1f** on your planning worksheet.
 
@@ -241,10 +241,10 @@ If you choose to use AD FS with the Azure MFA server adapter, write **AD FS with
 
 Windows Hello for Business provides organizations with many policy settings and granular control on how these settings may be applied to both computers and users.  The type of policy management you can use depends on your selected deployment and trust models.
 
-If box **1a** on your planning worksheet reads **cloud only**, write **N/A** in box **2a** on your planning worksheet.  You have the option to manage non-domain joined devices.  If you choose to manage Azure Active Directory-joined devices, write **modern management** in box **2b** on your planning worksheet.  Otherwise, write** N/A** in box **2b**.
+If box **1a** on your planning worksheet reads **cloud only**, write **N/A** in box **2a** on your planning worksheet.  You have the option to manage non-domain joined devices.  If you choose to manage Microsoft Entra joined devices, write **modern management** in box **2b** on your planning worksheet.  Otherwise, write** N/A** in box **2b**.
 
 > [!NOTE]
-> Azure Active Directory-joined devices without modern management automatically enroll in Windows Hello for Business using the default policy settings.  Use modern management to adjust policy settings to match the business needs of your organization.
+> Microsoft Entra joined devices without modern management automatically enroll in Windows Hello for Business using the default policy settings.  Use modern management to adjust policy settings to match the business needs of your organization.
 
 If box **1a** on your planning worksheet reads **on-prem**, write **GP** in box **2a** on your planning worksheet. Write **N/A** in box **2b** on your worksheet.
 
@@ -260,7 +260,7 @@ Windows Hello for Business is a feature exclusive to Windows 10 and Windows 11. 
 
 If box **1a** on your planning worksheet reads **cloud only**, write **N/A** in box **3a** on your planning worksheet.  Optionally, you may write **1511 or later** in box **3b** on your planning worksheet if you plan to manage non-domain joined devices.
 > [!NOTE]
-> Azure Active Directory-joined devices without modern management automatically enroll in Windows Hello for Business using the default policy settings.  Use modern management to adjust policy settings to match the business needs of your organization.
+> Microsoft Entra joined devices without modern management automatically enroll in Windows Hello for Business using the default policy settings.  Use modern management to adjust policy settings to match the business needs of your organization.
 
 Write **1511 or later** in box **3a** on your planning worksheet if any of the following are true. 
 * Box **2a** on your planning worksheet read **modern management**. 
@@ -288,7 +288,7 @@ If box **1a** on your planning worksheet reads **cloud only**, ignore the public
 
 If box **1b** on your planning worksheet reads **key trust**, write **N/A** in box **5b** on your planning worksheet. Key trust doesn't require any change in public key infrastructure, skip this part and go to **Cloud** section.
 
-The registration authority only relates to certificate trust deployments and the management used for domain and non-domain joined devices.  Hybrid Azure AD-joined devices managed by Group Policy need the Windows Server 2016 AD FS role to issue certificates.  Hybrid Azure AD-joined devices and Azure AD-joined devices managed by Intune or a compatible MDM need the Windows Server NDES server role to issue certificates. 
+The registration authority only relates to certificate trust deployments and the management used for domain and non-domain joined devices.  Microsoft Entra hybrid joined devices managed by Group Policy need the Windows Server 2016 AD FS role to issue certificates.  Microsoft Entra hybrid joined devices and Microsoft Entra joined devices managed by Intune or a compatible MDM need the Windows Server NDES server role to issue certificates. 
 
 If box **2a** reads **GP** and box **2b** reads **modern management**, write **AD FS RA and NDES** in box **5b** on your planning worksheet.  In box **5c**, write the following certificate templates names and issuances:
 
@@ -323,18 +323,18 @@ If box **1a** on your planning worksheet reads **cloud only** or **hybrid**, wri
 
 If box **1a** on your planning worksheet reads **on-premises**, and box **1f** reads **AD FS with third party**, write **No** in box **6a** on your planning worksheet. Otherwise, write **Yes** in box **6a** as you need an Azure account for per-consumption MFA billing. Write **No** in box **6b** on your planning worksheet—on-premises deployments do not use the cloud directory.
 
-Windows Hello for Business does not require an Azure AD premium subscription.  However, some dependencies, such as [MDM automatic enrollment](/mem/intune/enrollment/quickstart-setup-auto-enrollment) and [Conditional Access](/azure/active-directory/conditional-access/overview) do.
+Windows Hello for Business does not require a Microsoft Entra ID P1 or P2 subscription.  However, some dependencies, such as [MDM automatic enrollment](/mem/intune/enrollment/quickstart-setup-auto-enrollment) and [Conditional Access](/azure/active-directory/conditional-access/overview) do.
 
 If box **1a** on your planning worksheet reads **on-premises**, write **No** in box **6c** on your planning worksheet.
 
-If box **1a** on your planning worksheet reads **hybrid** and box **1b** reads **key trust**, write **No** in box **6c** on your planning worksheet. You can deploy Windows Hello for Business using the Azure Active Directory free tier. All Azure Active Directory free accounts can use Azure AD Multi-Factor Authentication through the use of security defaults. Some Azure AD Multi-Factor Authentication features require a license. For more details, see [Features and licenses for Azure AD Multi-Factor Authentication](/azure/active-directory/authentication/concept-mfa-licensing).
+If box **1a** on your planning worksheet reads **hybrid** and box **1b** reads **key trust**, write **No** in box **6c** on your planning worksheet. You can deploy Windows Hello for Business using the Microsoft Entra ID Free tier. All Microsoft Entra ID Free accounts can use Microsoft Entra multifactor authentication through the use of security defaults. Some Microsoft Entra multifactor authentication features require a license. For more details, see [Features and licenses for Microsoft Entra multifactor authentication](/azure/active-directory/authentication/concept-mfa-licensing).
 
-If box **5b** on your planning worksheet reads **AD FS RA**, write **Yes** in box **6c** on your planning worksheet.  Enrolling a certificate using the AD FS registration authority requires devices to authenticate to the AD FS server, which requires device write-back, an Azure AD Premium feature.
+If box **5b** on your planning worksheet reads **AD FS RA**, write **Yes** in box **6c** on your planning worksheet.  Enrolling a certificate using the AD FS registration authority requires devices to authenticate to the AD FS server, which requires device write-back, a Microsoft Entra ID P1 or P2 feature.
 
-Modern managed devices do not require an Azure AD premium subscription.  By forgoing the subscription, your users must manually enroll devices in the modern management software, such as Intune or a supported third-party MDM.
+Modern managed devices do not require a Microsoft Entra ID P1 or P2 subscription.  By forgoing the subscription, your users must manually enroll devices in the modern management software, such as Intune or a supported third-party MDM.
 
 If boxes **2a** or **2b** read **modern management** and you want devices to automatically enroll in your modern management software, write **Yes** in box **6c** on your planning worksheet.  Otherwise, write **No** in box **6c**.
 
 ## Congratulations, You're Done
 
-Your Windows Hello for Business planning worksheet should be complete.  This guide provided understanding of the components used in the Windows Hello for Business infrastructure and rationalization of why they are used.  The worksheet gives you an overview of the requirements needed to continue the next phase of the deployment.  With this worksheet, you'll be able to identify key elements of your Windows Hello for Business deployment.
+Your Windows Hello for Business planning worksheet should be complete.  This guide provided understanding of the components used in the Windows Hello for Business infrastructure and rationalization of why they're used.  The worksheet gives you an overview of the requirements needed to continue the next phase of the deployment.  With this worksheet, you'll be able to identify key elements of your Windows Hello for Business deployment.

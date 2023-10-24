@@ -1,19 +1,22 @@
 ---
-title: Windows Update for Business reports configuration script
-manager: aaroncz
-description: Downloading and using the Windows Update for Business reports configuration script
+title: Configure clients with a script
+titleSuffix: Windows Update for Business reports
+description: How to get and use the Windows Update for Business reports configuration script to configure devices for Windows Update for Business reports.
 ms.prod: windows-client
+ms.technology: itpro-updates
+ms.topic: conceptual
 author: mestew
 ms.author: mstewart
+manager: aaroncz
 ms.localizationpriority: medium
-ms.topic: article
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
 ms.date: 07/11/2023
-ms.technology: itpro-updates
 ---
 
 # Configuring devices through the Windows Update for Business reports configuration script
 <!--37063317, 30141258, 37063041-->
-***(Applies to: Windows 11 & Windows 10)***
 
 The Windows Update for Business reports configuration script is the recommended method of configuring devices to send data to Microsoft for use with Windows Update for Business reports. The script configures the registry keys backing policies, ensures required services are running, and more. This script is a recommended complement to configuring the required policies documented in [Manually configure devices for Windows Update for Business reports](wufb-reports-configuration-manual.md), as it can provide feedback on whether there are any configuration issues outside of policies being configured.
 

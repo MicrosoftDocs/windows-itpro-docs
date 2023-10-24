@@ -4,7 +4,7 @@ description: Learn more about the Update Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 08/10/2023
+ms.date: 10/03/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -25,11 +25,11 @@ ms.topic: reference
 Update CSP policies are listed below based on the group policy area:
 
 - [Windows Insider Preview](#windows-insider-preview)
-  - [AllowOptionalContent](#allowoptionalcontent)
   - [ConfigureDeadlineNoAutoRebootForFeatureUpdates](#configuredeadlinenoautorebootforfeatureupdates)
   - [ConfigureDeadlineNoAutoRebootForQualityUpdates](#configuredeadlinenoautorebootforqualityupdates)
 - [Manage updates offered from Windows Update](#manage-updates-offered-from-windows-update)
   - [AllowNonMicrosoftSignedUpdate](#allownonmicrosoftsignedupdate)
+  - [AllowOptionalContent](#allowoptionalcontent)
   - [AutomaticMaintenanceWakeUp](#automaticmaintenancewakeup)
   - [BranchReadinessLevel](#branchreadinesslevel)
   - [DeferFeatureUpdatesPeriodInDays](#deferfeatureupdatesperiodindays)
@@ -106,65 +106,6 @@ Update CSP policies are listed below based on the group policy area:
   - [SetAutoRestartNotificationDisable](#setautorestartnotificationdisable)
 
 ## Windows Insider Preview
-
-<!-- AllowOptionalContent-Begin -->
-### AllowOptionalContent
-
-<!-- AllowOptionalContent-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
-<!-- AllowOptionalContent-Applicability-End -->
-
-<!-- AllowOptionalContent-OmaUri-Begin -->
-```Device
-./Device/Vendor/MSFT/Policy/Config/Update/AllowOptionalContent
-```
-<!-- AllowOptionalContent-OmaUri-End -->
-
-<!-- AllowOptionalContent-Description-Begin -->
-<!-- Description-Source-DDF -->
-This policy enables devices to get offered optional updates and users interact with the 'Get the latest updates as soon as they're available' toggle on the Windows Update Settings page.
-<!-- AllowOptionalContent-Description-End -->
-
-<!-- AllowOptionalContent-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- AllowOptionalContent-Editable-End -->
-
-<!-- AllowOptionalContent-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | `int` |
-| Access Type | Add, Delete, Get, Replace |
-| Default Value  | 0 |
-<!-- AllowOptionalContent-DFProperties-End -->
-
-<!-- AllowOptionalContent-AllowedValues-Begin -->
-**Allowed values**:
-
-| Value | Description |
-|:--|:--|
-| 0 (Default) | Device doesn't receive optional updates. |
-| 1 | Device receives optional updates and user can install from WU Settings page. |
-| 2 | Device receives optional updates and install them as soon as they're available. |
-<!-- AllowOptionalContent-AllowedValues-End -->
-
-<!-- AllowOptionalContent-GpMapping-Begin -->
-**Group policy mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | AllowOptionalContent |
-| Path | WindowsUpdate > AT > WindowsComponents > WindowsUpdateCat |
-<!-- AllowOptionalContent-GpMapping-End -->
-
-<!-- AllowOptionalContent-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- AllowOptionalContent-Examples-End -->
-
-<!-- AllowOptionalContent-End -->
 
 <!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-Begin -->
 ### ConfigureDeadlineNoAutoRebootForFeatureUpdates
@@ -334,6 +275,66 @@ Allows the IT admin to manage whether Automatic Updates accepts updates signed b
 <!-- AllowNonMicrosoftSignedUpdate-Examples-End -->
 
 <!-- AllowNonMicrosoftSignedUpdate-End -->
+
+<!-- AllowOptionalContent-Begin -->
+### AllowOptionalContent
+
+<!-- AllowOptionalContent-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+<!-- AllowOptionalContent-Applicability-End -->
+
+<!-- AllowOptionalContent-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Update/AllowOptionalContent
+```
+<!-- AllowOptionalContent-OmaUri-End -->
+
+<!-- AllowOptionalContent-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy enables devices to get optional updates (including gradual feature rollouts (CFRs) - learn more by visiting aka.ms/AllowOptionalContent)
+<!-- AllowOptionalContent-Description-End -->
+
+<!-- AllowOptionalContent-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowOptionalContent-Editable-End -->
+
+<!-- AllowOptionalContent-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- AllowOptionalContent-DFProperties-End -->
+
+<!-- AllowOptionalContent-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Don't receive optional updates. |
+| 1 | Automatically receive optional updates (including CFRs). |
+| 2 | Automatically receive optional updates. |
+| 3 | Users can select which optional updates to receive. |
+<!-- AllowOptionalContent-AllowedValues-End -->
+
+<!-- AllowOptionalContent-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | AllowOptionalContent |
+| Path | WindowsUpdate > AT > WindowsComponents > WindowsUpdateCat |
+<!-- AllowOptionalContent-GpMapping-End -->
+
+<!-- AllowOptionalContent-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowOptionalContent-Examples-End -->
+
+<!-- AllowOptionalContent-End -->
 
 <!-- AutomaticMaintenanceWakeUp-Begin -->
 ### AutomaticMaintenanceWakeUp
@@ -1280,7 +1281,7 @@ If the status is set to Disabled or Not Configured, Windows will check for avail
 > If the "Configure Automatic Updates" policy is disabled, this policy has no effect.
 
 > [!NOTE]
-> This policy isn't supported on %WINDOWS_ARM_VERSION_6_2%. Setting this policy won't have any effect on %WINDOWS_ARM_VERSION_6_2% PCs.
+> This policy isn't supported on Windows RT. Setting this policy won't have any effect on Windows RT PCs.
 <!-- DetectionFrequency-Description-End -->
 
 <!-- DetectionFrequency-Editable-Begin -->
@@ -1458,7 +1459,7 @@ Allows Windows Update Agent to determine the download URL when it's missing from
 <!-- SetPolicyDrivenUpdateSourceForDriverUpdates-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.371] and later <br> ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1288] and later <br> ✅ Windows 10, version 22H2 [10.0.19045.2130] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- SetPolicyDrivenUpdateSourceForDriverUpdates-Applicability-End -->
 
 <!-- SetPolicyDrivenUpdateSourceForDriverUpdates-OmaUri-Begin -->
@@ -1527,7 +1528,7 @@ Configure this policy to specify whether to receive **Windows Driver Updates** f
 <!-- SetPolicyDrivenUpdateSourceForFeatureUpdates-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.371] and later <br> ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1288] and later <br> ✅ Windows 10, version 22H2 [10.0.19045.2130] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- SetPolicyDrivenUpdateSourceForFeatureUpdates-Applicability-End -->
 
 <!-- SetPolicyDrivenUpdateSourceForFeatureUpdates-OmaUri-Begin -->
@@ -1596,7 +1597,7 @@ Configure this policy to specify whether to receive **Windows Feature Updates** 
 <!-- SetPolicyDrivenUpdateSourceForOtherUpdates-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.371] and later <br> ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1288] and later <br> ✅ Windows 10, version 22H2 [10.0.19045.2130] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- SetPolicyDrivenUpdateSourceForOtherUpdates-Applicability-End -->
 
 <!-- SetPolicyDrivenUpdateSourceForOtherUpdates-OmaUri-Begin -->
@@ -1665,7 +1666,7 @@ Configure this policy to specify whether to receive **Other Updates** from Windo
 <!-- SetPolicyDrivenUpdateSourceForQualityUpdates-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.371] and later <br> ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1288] and later <br> ✅ Windows 10, version 22H2 [10.0.19045.2130] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- SetPolicyDrivenUpdateSourceForQualityUpdates-Applicability-End -->
 
 <!-- SetPolicyDrivenUpdateSourceForQualityUpdates-OmaUri-Begin -->

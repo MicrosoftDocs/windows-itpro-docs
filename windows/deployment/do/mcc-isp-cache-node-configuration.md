@@ -1,15 +1,21 @@
 ---
-title: Cache node configuration
+title: Cache node configuration settings
 manager: aaroncz
-description: Configuring a cache node on Azure portal
+description: List of options that are available while configuring a cache node for your environment from the Azure portal.
 ms.prod: windows-client
+ms.technology: itpro-updates
+ms.topic: reference
 ms.author: carmenf
 author: cmknox
 ms.reviewer: mstewart
-ms.topic: article
-ms.date: 12/31/2017
-ms.technology: itpro-updates
-ms.collection: tier3
+ms.collection:
+  - tier3
+  - must-keep
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
+- ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-microsoft-connected-cache target=_blank>Microsoft Connected Cache for ISPs</a>
+ms.date: 08/16/2023
 ---
 
 # Cache node configuration

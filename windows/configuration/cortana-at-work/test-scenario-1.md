@@ -16,11 +16,11 @@ ms.technology: itpro-configure
 <!--Using include for Cortana in Windows deprecation -->
 [!INCLUDE [Deprecation of Cortana in Windows](./includes/cortana-deprecation.md)]
 
-This scenario turns on Azure AD and lets your employee use Cortana to manage an entry in the notebook.
+This scenario turns on Microsoft Entra ID and lets your employee use Cortana to manage an entry in the notebook.
 
 ## Sign in with your work or school account
 
-This process helps you to sign out of a Microsoft Account and to sign into an Azure AD account.
+This process helps you to sign out of a Microsoft Account and to sign into a Microsoft Entra account.
 
 1. Click on the  **Cortana**  icon in the taskbar, then click the profile picture in the navigation to open Cortana settings.
 

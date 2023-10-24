@@ -4,7 +4,7 @@ description: Learn more about the Privacy Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 08/10/2023
+ms.date: 08/30/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -93,7 +93,7 @@ Allows or disallows the automatic acceptance of the pairing and privacy user con
 <!-- Description-Source-ADMX -->
 This policy setting determines whether Clipboard contents can be synchronized across devices.
 
-- If you enable this policy setting, Clipboard contents are allowed to be synchronized across devices logged in under the same Microsoft account or Azure AD account.
+- If you enable this policy setting, Clipboard contents are allowed to be synchronized across devices logged in under the same Microsoft account or Microsoft Entra account.
 
 - If you disable this policy setting, Clipboard contents can't be shared to other devices.
 
@@ -2946,8 +2946,20 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessHumanPresence-OmaUri-End -->
 
 <!-- LetAppsAccessHumanPresence-Description-Begin -->
-<!-- Description-Source-DDF -->
-This policy setting specifies whether Windows apps can access the human presence sensor.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps can access presence sensing.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access presence sensing by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to access presence sensing and employees in your organization can't change it.
+
+If you choose the "Force Deny" option, Windows apps aren't allowed to access presence sensing and employees in your organization can't change it.
+
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can access presence sensing by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessHumanPresence-Description-End -->
 
 <!-- LetAppsAccessHumanPresence-Editable-Begin -->
@@ -2980,8 +2992,12 @@ This policy setting specifies whether Windows apps can access the human presence
 | Name | Value |
 |:--|:--|
 | Name | LetAppsAccessHumanPresence |
-| Path | AppPrivacy > AT > WindowsComponents > AppPrivacy |
-| Element Name | LetAppsAccessHumanPresence_Enum |
+| Friendly Name | Let Windows apps access presence sensing |
+| Element Name | Default for all apps. |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
 <!-- LetAppsAccessHumanPresence-GpMapping-End -->
 
 <!-- LetAppsAccessHumanPresence-Examples-Begin -->
@@ -3006,8 +3022,20 @@ This policy setting specifies whether Windows apps can access the human presence
 <!-- LetAppsAccessHumanPresence_ForceAllowTheseApps-OmaUri-End -->
 
 <!-- LetAppsAccessHumanPresence_ForceAllowTheseApps-Description-Begin -->
-<!-- Description-Source-DDF -->
-List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to the human presence sensor. This setting overrides the default LetAppsAccessHumanPresence policy setting for the specified apps.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps can access presence sensing.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access presence sensing by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to access presence sensing and employees in your organization can't change it.
+
+If you choose the "Force Deny" option, Windows apps aren't allowed to access presence sensing and employees in your organization can't change it.
+
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can access presence sensing by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessHumanPresence_ForceAllowTheseApps-Description-End -->
 
 <!-- LetAppsAccessHumanPresence_ForceAllowTheseApps-Editable-Begin -->
@@ -3030,8 +3058,11 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 | Name | Value |
 |:--|:--|
 | Name | LetAppsAccessHumanPresence |
-| Path | AppPrivacy > AT > WindowsComponents > AppPrivacy |
-| Element Name | LetAppsAccessHumanPresence_ForceAllowTheseApps_List |
+| Friendly Name | Let Windows apps access presence sensing |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
 <!-- LetAppsAccessHumanPresence_ForceAllowTheseApps-GpMapping-End -->
 
 <!-- LetAppsAccessHumanPresence_ForceAllowTheseApps-Examples-Begin -->
@@ -3056,8 +3087,20 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 <!-- LetAppsAccessHumanPresence_ForceDenyTheseApps-OmaUri-End -->
 
 <!-- LetAppsAccessHumanPresence_ForceDenyTheseApps-Description-Begin -->
-<!-- Description-Source-DDF -->
-List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to the human presence sensor. This setting overrides the default LetAppsAccessHumanPresence policy setting for the specified apps.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps can access presence sensing.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access presence sensing by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to access presence sensing and employees in your organization can't change it.
+
+If you choose the "Force Deny" option, Windows apps aren't allowed to access presence sensing and employees in your organization can't change it.
+
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can access presence sensing by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessHumanPresence_ForceDenyTheseApps-Description-End -->
 
 <!-- LetAppsAccessHumanPresence_ForceDenyTheseApps-Editable-Begin -->
@@ -3080,8 +3123,11 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 | Name | Value |
 |:--|:--|
 | Name | LetAppsAccessHumanPresence |
-| Path | AppPrivacy > AT > WindowsComponents > AppPrivacy |
-| Element Name | LetAppsAccessHumanPresence_ForceDenyTheseApps_List |
+| Friendly Name | Let Windows apps access presence sensing |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
 <!-- LetAppsAccessHumanPresence_ForceDenyTheseApps-GpMapping-End -->
 
 <!-- LetAppsAccessHumanPresence_ForceDenyTheseApps-Examples-Begin -->
@@ -3106,8 +3152,20 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 <!-- LetAppsAccessHumanPresence_UserInControlOfTheseApps-OmaUri-End -->
 
 <!-- LetAppsAccessHumanPresence_UserInControlOfTheseApps-Description-Begin -->
-<!-- Description-Source-DDF -->
-List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the human presence privacy setting for the listed apps. This setting overrides the default LetAppsAccessHumanPresence policy setting for the specified apps.
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Windows apps can access presence sensing.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access presence sensing by using Settings > Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to access presence sensing and employees in your organization can't change it.
+
+If you choose the "Force Deny" option, Windows apps aren't allowed to access presence sensing and employees in your organization can't change it.
+
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can access presence sensing by using Settings > Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessHumanPresence_UserInControlOfTheseApps-Description-End -->
 
 <!-- LetAppsAccessHumanPresence_UserInControlOfTheseApps-Editable-Begin -->
@@ -3130,8 +3188,11 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. The u
 | Name | Value |
 |:--|:--|
 | Name | LetAppsAccessHumanPresence |
-| Path | AppPrivacy > AT > WindowsComponents > AppPrivacy |
-| Element Name | LetAppsAccessHumanPresence_UserInControlOfTheseApps_List |
+| Friendly Name | Let Windows apps access presence sensing |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
 <!-- LetAppsAccessHumanPresence_UserInControlOfTheseApps-GpMapping-End -->
 
 <!-- LetAppsAccessHumanPresence_UserInControlOfTheseApps-Examples-Begin -->

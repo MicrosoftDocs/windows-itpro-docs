@@ -65,7 +65,10 @@
         "dstrome",
         "v-dihans",
         "garycentric",
-        "beccarobins"
+        "beccarobins",
+        "Stacyrch140",
+        "v-stsavell",
+        "American-Dipper"
       ],
       "searchScope": [
         "Windows 10"
@@ -77,7 +80,6 @@
         "application-security//**/*.yml": "vinaypamnani-msft",
         "application-security/application-control/windows-defender-application-control/**/*.md": "jsuther1974",
         "application-security/application-control/windows-defender-application-control/**/*.yml": "jsuther1974",
-        "application-security/application-control/user-account-control/*.md": "paolomatarazzo",
         "hardware-security/**/*.md": "vinaypamnani-msft",
         "hardware-security/**/*.yml": "vinaypamnani-msft",
         "information-protection/**/*.md": "vinaypamnani-msft",
@@ -98,8 +100,6 @@
         "application-security//**/*.yml": "vinpa",
         "application-security/application-control/windows-defender-application-control/**/*.md": "jsuther",
         "application-security/application-control/windows-defender-application-control/**/*.yml": "jsuther",
-        "application-security/application-control/user-account-control/*.md": "paoloma",
-        "application-security/application-control/user-account-control/*.yml": "paoloma",
         "hardware-security//**/*.md": "vinpa",
         "hardware-security//**/*.yml": "vinpa",
         "information-protection/**/*.md": "vinpa",
@@ -224,14 +224,14 @@
         "operating-system-security/device-management/windows-security-configuration-framework/*.md": "jmunck"
       },
       "ms.collection": {
-        "application-security/application-control/windows-defender-application-control/**/*.md": "tier3",
+        "application-security/application-control/windows-defender-application-control/**/*.md": [ "tier3", "must-keep" ],
         "identity-protection/hello-for-business/*.md": "tier1",
         "information-protection/pluton/*.md": "tier1",
         "information-protection/tpm/*.md": "tier1",
         "threat-protection/auditing/*.md": "tier3",
         "operating-system-security/data-protection/bitlocker/*.md": "tier1",
         "operating-system-security/data-protection/personal-data-encryption/*.md": "tier1",
-        "operating-system-security/network-security/windows-firewall/*.md": "tier3"
+        "operating-system-security/network-security/windows-firewall/*.md": [ "tier3", "must-keep" ]
       }
     },
     "template": [],

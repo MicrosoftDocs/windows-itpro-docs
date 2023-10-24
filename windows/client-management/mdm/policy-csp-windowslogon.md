@@ -4,7 +4,7 @@ description: Learn more about the WindowsLogon Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 08/10/2023
+ms.date: 10/03/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,8 +17,6 @@ ms.topic: reference
 # Policy CSP - WindowsLogon
 
 [!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
-
-[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- WindowsLogon-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -45,7 +43,7 @@ This policy setting controls whether a device will automatically sign in and loc
 
 This only occurs if the last interactive user didn't sign out before the restart or shutdown. 
 
-If the device is joined to Active Directory or Azure Active Directory, this policy only applies to Windows Update restarts. Otherwise, this will apply to both Windows Update restarts and user-initiated restarts and shutdowns.
+If the device is joined to Active Directory or Microsoft Entra ID, this policy only applies to Windows Update restarts. Otherwise, this will apply to both Windows Update restarts and user-initiated restarts and shutdowns.
 
 - If you don't configure this policy setting, it's enabled by default. When the policy is enabled, the user is automatically signed in and the session is automatically locked with all lock screen apps configured for that user after the device boots. 
 
@@ -565,7 +563,7 @@ The locations that Switch User interface appear are in the Logon UI, the Start m
 <!-- OverrideShellProgram-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.2338] and later |
 <!-- OverrideShellProgram-Applicability-End -->
 
 <!-- OverrideShellProgram-OmaUri-Begin -->
@@ -576,7 +574,7 @@ The locations that Switch User interface appear are in the Logon UI, the Start m
 
 <!-- OverrideShellProgram-Description-Begin -->
 <!-- Description-Source-DDF -->
-OverrideShellProgram policy allows IT admin to configure the shell program for Windows OS on a device. This policy has the highest precedence over other ways of configuring the shell program. The policy currently supports below options: 1. Not Configured: Default shell will be launched. 2. Apply Lightweight Shell: Lightweight shell doesn't have a user interface and helps the device to achieve better performance as the shell consumes limited resources over default shell. Lightweight shell contains a limited set of features which could be consumed by applications. This configuration can be useful if the device needs to have a continuous running user interface application which would consume features offered by Lightweight shell. If you disable or don't configure this policy setting, then the default shell will be launched.
+OverrideShellProgram policy allows IT admin to configure the shell program for Windows OS on a device. This policy has the highest precedence over other ways of configuring the shell program. The policy currently supports below options: 1. Not Configured: Default shell will be launched. 2. Apply Lightweight Shell: Lightweight shell doesn't have a user interface and helps the device to achieve better performance as the shell consumes limited resources over default shell. Lightweight shell contains a limited set of features, which could be consumed by applications. This configuration can be useful if the device needs to have a continuous running user interface application that would consume features offered by Lightweight shell. If you disable or don't configure this policy setting, then the default shell will be launched.
 <!-- OverrideShellProgram-Description-End -->
 
 <!-- OverrideShellProgram-Editable-Begin -->
@@ -591,7 +589,6 @@ OverrideShellProgram policy allows IT admin to configure the shell program for W
 | Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
-| Dependency [BootToCloudModeDependencyGroup] | Dependency Type: `DependsOn` <br> Dependency URI: `Device/Vendor/MSFT/Policy/Config/CloudDesktop/BootToCloudMode` <br> Dependency Allowed Value: `[1]` <br> Dependency Allowed Value Type: `Range` <br>  |
 <!-- OverrideShellProgram-DFProperties-End -->
 
 <!-- OverrideShellProgram-AllowedValues-Begin -->
