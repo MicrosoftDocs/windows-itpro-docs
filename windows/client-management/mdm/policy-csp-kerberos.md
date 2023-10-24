@@ -4,7 +4,7 @@ description: Learn more about the Kerberos Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 08/10/2023
+ms.date: 10/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -134,7 +134,7 @@ This policy setting allows retrieving the Microsoft Entra Kerberos Ticket Granti
 | Name | Value |
 |:--|:--|
 | Name | CloudKerberosTicketRetrievalEnabled |
-| Friendly Name | Allow retrieving the Microsoft Entra Kerberos Ticket Granting Ticket during logon |
+| Friendly Name | Allow retrieving the Azure AD Kerberos Ticket Granting Ticket during logon |
 | Location | Computer Configuration |
 | Path | System > Kerberos |
 | Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\System\Kerberos\Parameters |
