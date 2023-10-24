@@ -4,7 +4,7 @@ description: Learn more about the ADMX_TerminalServer Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 10/23/2023
+ms.date: 10/24/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -2515,7 +2515,7 @@ Per Device licensing mode requires that each device connecting to this RD Sessio
 <!-- Description-Source-ADMX -->
 Specifies whether Remote Desktop Services limits the number of simultaneous connections to the server.
 
-You can use this setting to restrict the number of Remote Desktop Services sessions that can be active on a server. If this number is exceeded, addtional users who try to connect receive an error message telling them that the server is busy and to try again later. Restricting the number of sessions improves performance because fewer sessions are demanding system resources. By default, RD Session Host servers allow an unlimited number of Remote Desktop Services sessions, and Remote Desktop for Administration allows two Remote Desktop Services sessions.
+You can use this setting to restrict the number of Remote Desktop Services sessions that can be active on a server. If this number is exceeded, additional users who try to connect receive an error message telling them that the server is busy and to try again later. Restricting the number of sessions improves performance because fewer sessions are demanding system resources. By default, RD Session Host servers allow an unlimited number of Remote Desktop Services sessions, and Remote Desktop for Administration allows two Remote Desktop Services sessions.
 
 To use this setting, enter the number of connections you want to specify as the maximum for the server. To specify an unlimited number of connections, type 999999.
 
@@ -4070,7 +4070,7 @@ This policy setting allows you to configure graphics encoding to use the RemoteF
 
 <!-- TS_SERVER_PROFILE-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows the administrator to configure the RemoteFX experience for Remote Desktop Session Host or Remote Desktop Virtualization Host servers. By default, the system will choose the best experience based on available nework bandwidth.
+This policy setting allows the administrator to configure the RemoteFX experience for Remote Desktop Session Host or Remote Desktop Virtualization Host servers. By default, the system will choose the best experience based on available network bandwidth.
 
 - If you enable this policy setting, the RemoteFX experience could be set to one of the following options:
 

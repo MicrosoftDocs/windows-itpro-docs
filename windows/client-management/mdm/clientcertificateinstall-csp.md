@@ -4,7 +4,7 @@ description: Learn more about the ClientCertificateInstall CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 10/23/2023
+ms.date: 10/24/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -165,7 +165,7 @@ Required for PFX certificate installation. A unique ID to differentiate differen
 
 Format is node.
 
-Calling Delete on the this node, should delete the certificates and the keys that were installed by the corresponding PFX blob.
+Calling Delete on this node, should delete the certificates and the keys that were installed by the corresponding PFX blob.
 <!-- Device-PFXCertInstall-{UniqueID}-Description-End -->
 
 <!-- Device-PFXCertInstall-{UniqueID}-Editable-Begin -->
@@ -385,7 +385,7 @@ Password that protects the PFX blob. This is required if the PFX is password pro
 <!-- Description-Source-DDF -->
 Optional.
 
-When a value of "2" is contained iin PFXCertPasswordEncryptionType, specify the store name where the certificate for decrypting the PFXCertPassword is stored.
+When a value of "2" is contained in PFXCertPasswordEncryptionType, specify the store name where the certificate for decrypting the PFXCertPassword is stored.
 <!-- Device-PFXCertInstall-{UniqueID}-PFXCertPasswordEncryptionStore-Description-End -->
 
 <!-- Device-PFXCertInstall-{UniqueID}-PFXCertPasswordEncryptionStore-Editable-Begin -->
@@ -653,7 +653,7 @@ Node for SCEP. An alert is sent after the SCEP certificate is installed.
 <!-- Description-Source-DDF -->
 Required for SCEP certificate installation. A unique ID to differentiate different certificate install requests.
 
-Calling Delete on the this node, should delete the corresponding SCEP certificate.
+Calling Delete on this node, should delete the corresponding SCEP certificate.
 <!-- Device-SCEP-{UniqueID}-Description-End -->
 
 <!-- Device-SCEP-{UniqueID}-Editable-Begin -->
@@ -1274,7 +1274,7 @@ Required for enrollment. Specify the key usage bits (0x80, 0x20, 0xA0, etc.) for
 
 <!-- Device-SCEP-{UniqueID}-Install-RetryCount-Description-Begin -->
 <!-- Description-Source-DDF -->
-Optional. Special to SCEP. Specify device retry times when the SCEP sever sends pending status. Format is int. Default value is 3. Max value: the value can't be larger than 30. If it's larger than 30, the device will use 30.
+Optional. Special to SCEP. Specify device retry times when the SCEP server sends pending status. Format is int. Default value is 3. Max value: the value can't be larger than 30. If it's larger than 30, the device will use 30.
 
 The min value is 0 which means no retry.
 <!-- Device-SCEP-{UniqueID}-Install-RetryCount-Description-End -->
@@ -1741,7 +1741,7 @@ Required for PFX certificate installation. A unique ID to differentiate differen
 
 Format is node.
 
-Calling Delete on the this node, should delete the certificates and the keys that were installed by the corresponding PFX blob.
+Calling Delete on this node, should delete the certificates and the keys that were installed by the corresponding PFX blob.
 <!-- User-PFXCertInstall-{UniqueID}-Description-End -->
 
 <!-- User-PFXCertInstall-{UniqueID}-Editable-Begin -->
@@ -1961,7 +1961,7 @@ Password that protects the PFX blob. This is required if the PFX is password pro
 <!-- Description-Source-DDF -->
 Optional.
 
-When a value of "2" is contained iin PFXCertPasswordEncryptionType, specify the store name where the certificate for decrypting the PFXCertPassword is stored.
+When a value of "2" is contained in PFXCertPasswordEncryptionType, specify the store name where the certificate for decrypting the PFXCertPassword is stored.
 <!-- User-PFXCertInstall-{UniqueID}-PFXCertPasswordEncryptionStore-Description-End -->
 
 <!-- User-PFXCertInstall-{UniqueID}-PFXCertPasswordEncryptionStore-Editable-Begin -->
@@ -2227,7 +2227,7 @@ Node for SCEP. An alert is sent after the SCEP certificate is installed.
 <!-- Description-Source-DDF -->
 Required for SCEP certificate installation. A unique ID to differentiate different certificate install requests.
 
-Calling Delete on the this node, should delete the corresponding SCEP certificate.
+Calling Delete on this node, should delete the corresponding SCEP certificate.
 <!-- User-SCEP-{UniqueID}-Description-End -->
 
 <!-- User-SCEP-{UniqueID}-Editable-Begin -->
@@ -2848,7 +2848,7 @@ Required for enrollment. Specify the key usage bits (0x80, 0x20, 0xA0, etc.) for
 
 <!-- User-SCEP-{UniqueID}-Install-RetryCount-Description-Begin -->
 <!-- Description-Source-DDF -->
-Optional. Special to SCEP. Specify device retry times when the SCEP sever sends pending status. Format is int. Default value is 3. Max value: the value can't be larger than 30. If it's larger than 30, the device will use 30.
+Optional. Special to SCEP. Specify device retry times when the SCEP server sends pending status. Format is int. Default value is 3. Max value: the value can't be larger than 30. If it's larger than 30, the device will use 30.
 
 The min value is 0 which means no retry.
 <!-- User-SCEP-{UniqueID}-Install-RetryCount-Description-End -->

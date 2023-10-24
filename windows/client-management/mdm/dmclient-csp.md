@@ -2428,7 +2428,7 @@ The interior node for linked enrollment.
 
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-DiscoveryEndpoint-Description-Begin -->
 <!-- Description-Source-DDF -->
-Endpoint Discovery is the process where a specific URL (the "discovery endpoint") is accessed, which returns a directory of endpoints for using the system including enrollment. On Get, if the endpoint isn't set, client will return an rmpty string with S_OK.
+Endpoint Discovery is the process where a specific URL (the "discovery endpoint") is accessed, which returns a directory of endpoints for using the system including enrollment. On Get, if the endpoint isn't set, client will return an empty string with S_OK.
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-DiscoveryEndpoint-Description-End -->
 
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-DiscoveryEndpoint-Editable-Begin -->

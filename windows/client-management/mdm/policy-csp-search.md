@@ -4,7 +4,7 @@ description: Learn more about the Search Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 10/23/2023
+ms.date: 10/24/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -102,7 +102,7 @@ Allow search and Cortana to search cloud sources like OneDrive and SharePoint.
 
 <!-- AllowCortanaInAAD-Description-Begin -->
 <!-- Description-Source-ADMX -->
-Allow the cortana opt-in page during windows setup out of the box experience.
+Allow the Cortana opt-in page during windows setup out of the box experience.
 <!-- AllowCortanaInAAD-Description-End -->
 
 <!-- AllowCortanaInAAD-Editable-Begin -->

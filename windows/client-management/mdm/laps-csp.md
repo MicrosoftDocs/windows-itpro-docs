@@ -4,7 +4,7 @@ description: Learn more about the LAPS CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 10/23/2023
+ms.date: 10/24/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -745,7 +745,7 @@ If not specified, this setting will default to 3 (Reset the password and logoff 
 | Value | Description |
 |:--|:--|
 | 1 | Reset password: upon expiry of the grace period, the managed account password will be reset. |
-| 3 (Default) | Reset the password and logoff the managed account: upon expiry of the grace period, the managed account password will be reset and any interactive logon sessions using the managed account will terminated. |
+| 3 (Default) | Reset the password and logoff the managed account: upon expiry of the grace period, the managed account password will be reset and any interactive logon sessions using the managed account will be terminated. |
 | 5 | Reset the password and reboot: upon expiry of the grace period, the managed account password will be reset and the managed device will be immediately rebooted. |
 <!-- Device-Policies-PostAuthenticationActions-AllowedValues-End -->
 
