@@ -80,7 +80,7 @@ Controls were added to temporarily turn off certain features that were introduce
 ### Multi-app kiosk
 <!--6444738-->
 
-You can configure a multi-app kiosk which displays a customized start menu of allowed apps. For more information, see [Set up a multi-app kiosk on Windows 11 devices](/windows/configuration/lock-down-windows-11-to-specific-apps).
+You can configure a multi-app kiosk, which displays a customized start menu of allowed apps. For more information, see [Set up a multi-app kiosk on Windows 11 devices](/windows/configuration/lock-down-windows-11-to-specific-apps).
 
 ### Copilot in Windows
 <!--8138371-->
@@ -114,7 +114,7 @@ Dev Drive is a new form of storage volume available to improve performance for k
 <!--kb5019509 items and notable items for IT pros from other updates-->
 
 - **Tabs for File Explorer**: File Explorer includes tabs to help you organize your File Explorer sessions. 
-- **Taskbar overflow menu**: The taskbar offer an entry point to a menu that shows all of your overflowed apps in one spot.
+- **Taskbar overflow menu**: The taskbar offers an entry point to a menu that shows all of your overflowed apps in one spot.
 - **Suggested actions**: Copied text in certain formats, such as phone numbers or dates, offer suggested actions such as calling the number or adding the event to your calendar.
 - **Task Manager enhancements**: Process filtering, theme settings, and the ability to opt out of efficiency mode notification were added to Task Manager.
 - **Narrator improvements**: Scripting functionality was added to Narrator. Narrator includes more natural voices. <!--8138352, 8138357--> 
