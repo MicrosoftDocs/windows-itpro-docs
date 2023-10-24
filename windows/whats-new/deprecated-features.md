@@ -1,7 +1,7 @@
 ---
 title: Deprecated features in the Windows client
 description: Review the list of features that Microsoft is no longer actively developing in Windows 10 and Windows 11.
-ms.date: 10/18/2023
+ms.date: 10/31/2023
 ms.prod: windows-client
 ms.technology: itpro-fundamentals
 ms.localizationpriority: medium
@@ -36,6 +36,7 @@ The features in this article are no longer being actively developed, and might b
 
 |Feature    |  Details and mitigation  | Deprecation announced |
 | ----------- | --------------------- | ---- |
+| Microsoft Defender Application Guard for Office | [Microsoft Defender Application Guard for Office](/microsoft-365/security/office-365-security/install-app-guard) is deprecated and is no longer being updated. This deprecation also includes the [Windows.Security.Isolation APIs](/uwp/api/windows.security.isolation) that are used for Microsoft Defender Application Guard for Office. | October 2023 |
 | Timeline for Microsoft Entra accounts <!--8396095--> | Cross-device syncing of Microsoft Entra user activity history will stop starting in January 2024. Microsoft will stop storing this data in the cloud, aligning with [the previous change for Microsoft accounts (MSA)](https://blogs.windows.com/windows-insider/2021/04/14/announcing-windows-10-insider-preview-build-21359) in 2021. The timeline user experience was retired in Windows 11, although it remains in Windows 10. The timeline user experience and all your local activity history still remains on Windows 10 devices. Users can access web history using their browser and access recent files through OneDrive and Office. | October 2023 |
 | VBScript <!--7954828--> | VBScript is being deprecated. In future releases of Windows, VBScript will be available as a feature on demand before its removal from the operating system. For more information, see [Resources for deprecated features](deprecated-features-resources.md#vbscript). | October 2023 |
 | WordPad | WordPad is no longer being updated and will be removed in a future release of Windows. We recommend Microsoft Word for rich text documents like .doc and .rtf and Windows Notepad for plain text documents like .txt.  | September 1, 2023 |
