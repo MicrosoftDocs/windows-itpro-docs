@@ -106,7 +106,7 @@ Employees can claim apps that admins added to the private store by doing the fol
 ### Get and remove private store apps
 **To claim an app from the private store**
 
-1. Sign in to your computer with your Azure Active Directory (AD) credentials, and start the Microsoft Store app.
+1. Sign in to your computer with your Microsoft Entra credentials, and start the Microsoft Store app.
 2. Click the private store tab.
 3. Click the app you want to install, and then click **Install**.
 
