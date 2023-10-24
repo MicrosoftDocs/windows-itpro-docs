@@ -18,13 +18,13 @@ This document describes Windows Hello for Business functionalities or scenarios 
 Windows Hello for Business supports using a certificate as the supplied credential, when establishing a remote desktop connection to another Windows device. This document discusses three approaches for *cloud Kerberos trust* and *key trust* deployments, where authentication certificates can be deployed to an existing Windows Hello for Business user:
 
 - Deploy certificates to hybrid joined devices using an on-premises Active Directory Certificate Services enrollment policy
-- Deploy certificates to hybrid or Azure AD-joined devices using Intune
+- Deploy certificates to hybrid or Microsoft Entra joined devices using Intune
 - Work with third-party PKIs
 
 ## Deploy certificates via Active Directory Certificate Services (AD CS)
 
 > [!NOTE]
-> This process is applicable to *hybrid Azure AD joined* devices only.
+> This process is applicable to *Microsoft Entra hybrid joined* devices only.
 
 To deploy certificates using an on-premises Active Directory Certificate Services enrollment policy, you must first create a *certificate template*, and then deploy certificates based on that template.
 
@@ -77,7 +77,7 @@ Follow these steps to create a certificate template:
 
 ### Request a certificate
 
-1. Sign in to a client that is hybrid Azure AD joined, ensuring that the client has line of sight to a domain controller and the issuing CA
+1. Sign in to a client that is Microsoft Entra hybrid joined, ensuring that the client has line of sight to a domain controller and the issuing CA
 1. Open the **Certificates - Current User** Microsoft Management Console (MMC). To do so, you can execute the command `certmgr.msc`
 1. In the left pane of the MMC, right-click **Personal > All Tasks > Request New Certificate…**
 1. On the Certificate Enrollment screen, select **Next**
@@ -88,17 +88,17 @@ Follow these steps to create a certificate template:
 ## Deploy certificates via Intune
 
 > [!CAUTION]
-> This process is applicable to both *Azure AD joined* and *hybrid Azure AD joined* devices that are managed via Intune.
+> This process is applicable to both *Microsoft Entra joined* and *Microsoft Entra hybrid joined* devices that are managed via Intune.
 >
 > If you deploy certificates via Intune and configure Windows Hello for Business via group policy, the devices will fail to obtain a certificate, logging the error code `0x82ab0011` in the `DeviceManagement-Enterprise-Diagnostic-Provider` log.\
 > To avoid the error, configure Windows Hello for Business via Intune instead of group policy.
 
-Deploying a certificate to Azure AD joined or hybrid Azure AD joined devices may be achieved using the Simple Certificate Enrollment Protocol (SCEP) or PKCS (PFX) via Intune. For guidance deploying the required infrastructure, refer to:
+Deploying a certificate to Microsoft Entra joined or Microsoft Entra hybrid joined devices may be achieved using the Simple Certificate Enrollment Protocol (SCEP) or PKCS (PFX) via Intune. For guidance deploying the required infrastructure, refer to:
 
 - [Configure infrastructure to support SCEP certificate profiles with Microsoft Intune][MEM-1]
 - [Configure and use PKCS certificates with Intune][MEM-2]
 
-Next, you should deploy the root CA certificate (and any other intermediate certificate authority certificates) to Azure AD joined Devices using a *Trusted root certificate* policy with Intune. For guidance, refer to [Create trusted certificate profiles in Microsoft Intune][MEM-5].
+Next, you should deploy the root CA certificate (and any other intermediate certificate authority certificates) to Microsoft Entra joined Devices using a *Trusted root certificate* policy with Intune. For guidance, refer to [Create trusted certificate profiles in Microsoft Intune][MEM-5].
 
 Once these requirements are met, a policy can be configured in Intune that provisions certificates for the users on the targeted device.
 

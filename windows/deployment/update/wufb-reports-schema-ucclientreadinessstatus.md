@@ -26,8 +26,8 @@ UCClientReadinessStatus is an individual device's record about its readiness for
 | **DeviceName** |  [string](/azure/kusto/query/scalar-data-types/string) | `JohnPC-Contoso` | Client-provided device name |
 | **GlobalDeviceId** |  [string](/azure/kusto/query/scalar-data-types/string) | `g:9832741921341` | The global device identifier. |
 | **SCCMClientId** |  [string](/azure/kusto/query/scalar-data-types/string) | `5AB72FAC-93AB-4954-9AB0-6557D0EFA245` | Configuration Manager Client ID, if available. |
-| **AzureADTenantId** |  [string](/azure/kusto/query/scalar-data-types/string) | `69ca04b0-703d-4b3a-9184-c4e3c15d6f5e` | Azure AD Tenant ID |
-| **AzureADDeviceId** |  [string](/azure/kusto/query/scalar-data-types/string) | `71db1a1a-f1a6-4a25-b88f-79c2f513dae0` | Azure AD Device ID |
+| **AzureADTenantId** |  [string](/azure/kusto/query/scalar-data-types/string) | `69ca04b0-703d-4b3a-9184-c4e3c15d6f5e` | Microsoft Entra tenant ID |
+| **AzureADDeviceId** |  [string](/azure/kusto/query/scalar-data-types/string) | `71db1a1a-f1a6-4a25-b88f-79c2f513dae0` | Microsoft Entra Device ID |
 | **OSName** |  [string](/azure/kusto/query/scalar-data-types/string) | `Windows 10` | The operating system name. |
 | **OSVersion** | [string](/azure/kusto/query/scalar-data-types/string) | `1909` | The Win10 OS Version (such as 19H2, 20H1, 20H2) currently installed on the device. |
 | **OSBuild** |  [string](/azure/kusto/query/scalar-data-types/string) | `10.0.18363.836` | The full OS build installed on this device, such as Major.Minor.Build.Revision  |

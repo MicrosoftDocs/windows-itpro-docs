@@ -28,7 +28,7 @@ Some ways to store credentials aren't protected by Credential Guard, including:
 - Third-party security packages
 - When Credential Guard is enabled, NTLMv1, MS-CHAPv2, Digest, and CredSSP can't use the signed-in credentials. Thus, single sign-on doesn't work with these protocols. However, applications can prompt for credentials or use credentials stored in the Windows Vault, which aren't protected by Credential Guard with any of these protocols
     > [!CAUTION]
-    > It's recommended that valuable credentials, such as the sign-in credentials, aren't used with NTLMv1, MS-CHAPv2, Digest, or CredSSP protocols. If these protocols must be used by domain or Azure AD users, secondary credentials should be provisioned for these use cases.
+    > It's recommended that valuable credentials, such as the sign-in credentials, aren't used with NTLMv1, MS-CHAPv2, Digest, or CredSSP protocols. If these protocols must be used by domain or Microsoft Entra users, secondary credentials should be provisioned for these use cases.
 - Supplied credentials for NTLM authentication aren't protected. If a user is prompted for and enters credentials for NTLM authentication, these credentials are vulnerable to be read from LSASS memory. These same credentials are vulnerable to key loggers as well
 - Kerberos service tickets aren't protected by Credential Guard, but the Kerberos Ticket Granting Ticket (TGT) is protected
 - When Credential Guard is enabled, Kerberos doesn't allow *unconstrained Kerberos delegation* or *DES encryption*, not only for signed-in credentials, but also prompted or saved credentials

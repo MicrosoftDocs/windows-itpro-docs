@@ -51,7 +51,7 @@ The following information is available as optional columns in the Quality update
 
 | Column name | Description |
 | ----- | ----- |
-| Azure Active Directory (AD) device ID | The current Azure AD recorded device ID for the device |
+| Microsoft Entra device ID | The current Microsoft Entra ID recorded device ID for the device |
 | Serial number | The current Intune recorded serial number for the device |
 | Intune last check in time | The last time the device checked in to Intune |
 | Service State | The Service State provided from Windows Update |
@@ -75,7 +75,7 @@ The following options are available:
 
 | Option | Description |
 | ----- | ----- |
-| Search | Use to search by device name, Azure AD device ID or serial number |
+| Search | Use to search by device name, Microsoft Entra device ID or serial number |
 | Sort | Select the **column headings** to sort the report data in ascending and descending order. |
 | Export | Select **Export devices** at the top of the page to export data from this report into a CSV file. |
 | Filter | Select either the **Add filters** or at the top of the report to filter the results. |

@@ -43,7 +43,7 @@ When set to True, students can print in the Take A Test app.
 
 Enter the account to use when taking a test.
 
-To specify a domain account, enter **domain\user**. To specify an Azure AD account, enter `username@tenant.com`. To specify a local account, enter the username.
+To specify a domain account, enter **domain\user**. To specify a Microsoft Entra account, enter `username@tenant.com`. To specify a local account, enter the username.
 
 ## Related articles
 

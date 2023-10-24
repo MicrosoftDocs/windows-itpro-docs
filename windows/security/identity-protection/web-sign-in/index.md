@@ -128,7 +128,7 @@ For more information, see [Use a Temporary Access Pass][AAD-3].
 
 :::row:::
   :::column span="3":::
-  If the Microsoft Entra ID tenant is federated with a third-party SAML-P identity provider (IdP), federated users can sign using the Web sign-in credential provider.
+  If the Microsoft Entra tenant is federated with a third-party SAML-P identity provider (IdP), federated users can sign using the Web sign-in credential provider.
   :::column-end:::
   :::column span="1":::
   :::image type="content" source="images/web-sign-in-federated-auth.png" border="false" lightbox="images/web-sign-in-federated-auth.gif" alt-text="Animation of the sign in experience with a federated user.":::
@@ -138,7 +138,7 @@ For more information, see [Use a Temporary Access Pass][AAD-3].
 > [!TIP]
 > To improve the user experience for federated identities:
 >
-> - Configure the *preferred Azure AD tenant name* feature, which allows users to select the domain name during the sign-in process. The users are then automatically redirected to the identity provider sign-in page.
+> - Configure the *preferred Microsoft Entra tenant name* feature, which allows users to select the domain name during the sign-in process. The users are then automatically redirected to the identity provider sign-in page.
 > - Enable Windows Hello for Business. Once the user signs in, the user can enroll in Windows Hello for Business and then use it to sign in to the device
 
 For more information about preferred tenant name, see [Authentication CSP - PreferredAadTenantDomainName][WIN-1].
