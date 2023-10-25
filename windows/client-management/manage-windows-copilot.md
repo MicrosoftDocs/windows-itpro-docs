@@ -7,7 +7,7 @@ appliesto:
 - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11, version 22H2 or later</a>
 ---
 
-# What is Copilot in Windows?
+# Manage Copilot in Windows
 <!--8445848-->
 >**Looking for consumer information?** See [Welcome to Copilot in Windows](https://support.microsoft.com/windows/welcome-to-copilot-in-windows-675708af-8c16-4675-afeb-85a5a476ccb0).
 
@@ -16,7 +16,7 @@ Copilot in Windows provides centralized generative AI assistance to your users r
 > [!Note]
 > Copilot in Windows is currently available as a preview. We will continue to experiment with new ideas and methods using your feedback.
 
-## Manage Copilot in Windows for commercial environments
+## Configure Copilot in Windows for commercial environments
 
 At a high level, managing and configuring Copilot in Windows for your organization involves the following steps:
 
