@@ -200,3 +200,6 @@ Copilot in Windows and [Copilot in Edge](/bing-chat-enterprise/edge), can share 
 - The [AllowMicrosoftAccountConnection](/windows/client-management/mdm/policy-csp-accounts#allowmicrosoftaccountconnection) setting might allow users to use their personal Microsoft account with Copilot in Windows and Copilot in Edge.
 - The [RestrictToEnterpriseDeviceAuthenticationOnly](/windows/client-management/mdm/policy-csp-accounts#restricttoenterprisedeviceauthenticationonly) setting might prevent access to chat providers since it blocks user authentication.
 
+## Microsoft's commitment to responsible AI
+
+Microsoft has been on a responsible AI journey since 2017, when we defined our principles and approach to ensuring this technology is used in a way that is driven by ethical principles that put people first. For more about our responsible AI journey, the ethical principles that guide us, and the tooling and capabilities we've created to assure that we develop AI technology responsibly, see [Responsible AI](https://www.microsoft.com/ai/responsible-ai).
