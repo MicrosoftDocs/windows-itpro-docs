@@ -11,7 +11,7 @@ appliesto:
 <!--8445848-->
 >**Looking for consumer information?** See [Welcome to Copilot in Windows](https://support.microsoft.com/windows/welcome-to-copilot-in-windows-675708af-8c16-4675-afeb-85a5a476ccb0).
 
-Copilot in Windows provides centralized generative AI assistance to your users right from the Windows desktop. Copilot in Windows appears as a side bar docked on the Windows desktop. It's designed to help your users get things done in Windows. Copilot in Windows is a bit different from [Copilot in Edge](/bing-chat-enterprise/edge), which provides assistance in the browser, since it can also perform actions such as changing Windows settings or performing common tasks in Windows. However, both user experiences, Copilot in Windows and Copilot in Edge, can share the same underlying chat provider platform. It's important for organizations to properly configure the chat provider platform that Copilot in Windows uses, since users can possibly pass sensitive information into the chat provider.
+Copilot in Windows provides centralized generative AI assistance to your users right from the Windows desktop. Copilot in Windows appears as a side bar docked on the Windows desktop. It's designed to help your users get things done in Windows. Copilot in Windows can perform common tasks in Windows like changing Windows settings, which makes it different from the browser-based [Copilot in Edge](/bing-chat-enterprise/edge). However, both user experiences, Copilot in Windows and Copilot in Edge, can share the same underlying chat provider platform. It's important for organizations to properly configure the chat provider platform that Copilot in Windows uses, since users can possibly pass sensitive information into the chat provider.
 
 ## Manage Copilot in Windows for commercial environments
 
@@ -45,7 +45,7 @@ Copilot in Windows can use either Bing Chat or Bing Chat Enterprise as its chat 
 
 [Bing Chat Enterprise](/bing-chat-enterprise/overview) is intended for commercial use scenarios and offers commercial data protection. The following privacy and security protections apply for Bing Chat Enterprise:
 
-- With [Bing Chat Enterprise](/bing-chat-enterprise/overview), user and organizational data is protected, chat data isn't saved, Microsoft has no eyes-on access, and your data isn't used to train the underlying large language models. Because of this protection, chat history, 3rd-party plugins, and the Bing mobile app for iOS or Android aren't currently supported. Review the Bing Chat Enterprise [privacy statement](/bing-chat-enterprise/privacy-and-protections).
+- With [Bing Chat Enterprise](/bing-chat-enterprise/overview), user and organizational data is protected, chat data isn't saved, and your data isn't used to train the underlying large language models. Because of this protection, chat history, 3rd-party plugins, and the Bing mobile app for iOS or Android aren't currently supported. Review the Bing Chat Enterprise [privacy statement](/bing-chat-enterprise/privacy-and-protections).
 - Bing Chat Enterprise is available, at no additional cost, for the following licenses:
    - Microsoft 365 E3 or E5
    - Microsoft 365 A3 or A5 for faculty
@@ -160,25 +160,38 @@ Organizations that aren't ready to use Copilot in Windows can disable it until t
 
 Copilot in Windows and [Copilot in Edge](/bing-chat-enterprise/edge), can share the same underlying chat provider platform. This also means that some settings that affect Bing Chat, Bing Chat Enterprise, and Copilot in Edge can also affect Copilot in Windows. The following common settings might affect Copilot in Windows and its underlying chat provider:
 
-**Bing SafeSearch settings**:
+### Bing settings
 
-If [SafeSearch](https://support.microsoft.com/topic/946059ed-992b-46a0-944a-28e8fb8f1814) is enabled for Bing, it can block chat providers for Copilot in Windows. The following network changes block the chat providers for Copilot in Windows and Copilot in Edge:
-- mapping `www.bing.com` to `strict.bing.com`
-- mapping `edgeservices.bing.com` to `strict.bing.com`
-- mapping `www.bing.com` to `nochat.bing.com`
-- blocking `bing.com`
+1. Block access to only the public version of Bing Chat for all users on your network:
 
-**Microsoft Edge policies**:
+   - Map `www.bing.com` to `nochat.bing.com` on your router or proxy server
+   - Map `edgeservices.bing.com` to `nochat.bing.com` to block access to Bing Chat
+
+   This block only applies when devices are connected to your corporate network. Bing Chat is a public service, like search, and will remain available if accessed outside the corporate network. Bing Chat Enterprise will still be available if the public version of Bing Chat is blocked. To also block Bing Chat Enterprise, use its service plan, as detailed here: [Turn off Bing Chat Enterprise](/bing-chat-enterprise/manage#turn-off--enterprise)  
+
+
+2. If [SafeSearch](https://support.microsoft.com/topic/946059ed-992b-46a0-944a-28e8fb8f1814) is enabled for Bing, it can block chat providers for Copilot in Windows. The following network changes block the chat providers for Copilot in Windows and Copilot in Edge:
+   - mapping `www.bing.com` to `strict.bing.com`
+   - mapping `edgeservices.bing.com` to `strict.bing.com`
+   - blocking `bing.com`
+
+3. If Bing Chat Enterprise is turned on for your organization, users will be able to access it through Edge mobile when signed in with their work account. If you would like to remove the Bing Chat button from the Edge mobile interface, you can use an [Intune Mobile Application Management (MAM) policy for Microsoft Edge](/mem/intune/apps/manage-microsoft-edge) to remove it:
+
+    |Key |Value |
+    |:---------|:------------|
+    |com.microsoft.intune.mam.managedbrowser.Chat| **true** (default) shows the interface </br> **false** hides the interface |
+
+### Microsoft Edge policies
 
 - If [HubsSidebarEnabled](/deployedge/microsoft-edge-policies#hubssidebarenabled) is set to `disabled`, it blocks Copilot in Edge from being displayed.
 - If [DiscoverPageContextEnabled](/deployedge/microsoft-edge-policies#discoverpagecontextenabled) is set to `disabled`, it blocks Bing Chat and Bing Chat Enterprise from reading the current webpage context. The chat providers need access to the current webpage context for providing page summarizations and sending user selected strings from the webpage into the chat provider.
 
-**Search settings**:
+### Search settings
 
 - Setting [ConfigureSearchOnTaskbarMode](/windows/client-management/mdm/policy-csp-search#configuresearchontaskbarmode) to `Hide` might interfere with the Copilot in Windows user experience.
 - Setting [AllowSearchHighlights](/windows/client-management/mdm/policy-csp-search#allowsearchhighlights) to `disabled` might interfere with the Copilot in Windows and the Copilot in Edge user experiences.
 
-**Account settings**
+### Account settings
 
 - The [AllowMicrosoftAccountConnection](/windows/client-management/mdm/policy-csp-accounts#allowmicrosoftaccountconnection) setting might allow users to use their personal Microsoft account with Copilot in Windows and Copilot in Edge.
 - The [RestrictToEnterpriseDeviceAuthenticationOnly](/windows/client-management/mdm/policy-csp-accounts#restricttoenterprisedeviceauthenticationonly) setting might prevent access to chat providers since it blocks user authentication.
