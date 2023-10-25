@@ -11,7 +11,7 @@ appliesto:
 <!--8445848-->
 >**Looking for consumer information?** See [Welcome to Copilot in Windows](https://support.microsoft.com/windows/welcome-to-copilot-in-windows-675708af-8c16-4675-afeb-85a5a476ccb0).
 
-Copilot in Windows provides centralized generative AI assistance to your users right from the Windows desktop. Copilot in Windows appears as a side bar docked on the Windows desktop. It's designed to help your users get things done in Windows. Copilot in Windows can perform common tasks in Windows like changing Windows settings, which makes it different from the browser-based [Copilot in Edge](/bing-chat-enterprise/edge). However, both user experiences, Copilot in Windows and Copilot in Edge, can share the same underlying chat provider platform. It's important for organizations to properly configure the chat provider platform that Copilot in Windows uses, since users can possibly pass sensitive information into the chat provider.
+Copilot in Windows provides centralized generative AI assistance to your users right from the Windows desktop. Copilot in Windows appears as a side bar docked on the Windows desktop. It's designed to help your users get things done in Windows. Copilot in Windows can perform common tasks in Windows like changing Windows settings, which makes it different from the browser-based [Copilot in Edge](/bing-chat-enterprise/edge). However, both user experiences, Copilot in Windows and Copilot in Edge, can share the same underlying chat provider platform. It's important for organizations to properly configure the chat provider platform that Copilot in Windows uses, since users can possibly copy and paste sensitive information into the chat provider.
 
 ## Manage Copilot in Windows for commercial environments
 
@@ -32,11 +32,11 @@ Organizations that aren't ready to use Copilot in Windows can disable it until t
 
 ## Chat provider platforms for Copilot in Windows
 
-Copilot in Windows can use either Bing Chat or Bing Chat Enterprise as its chat provider platform. The chat provider platform is the underlying service that Copilot in Windows uses to communicate with the user. The chat provider platform that Copilot in Windows uses is important because users can pass sensitive information into the chat provider. Each chat provider platform has different privacy and security protections.
+Copilot in Windows can use either Bing Chat or Bing Chat Enterprise as its chat provider platform. The chat provider platform is the underlying service that Copilot in Windows uses to communicate with the user. The chat provider platform that Copilot in Windows uses is important because users can copy and paste sensitive information into the chat provider. Each chat provider platform has different privacy and security protections.
 
 **Bing Chat**: 
 
-[Bing Chat](https://www.microsoft.com/bing/do-more-with-ai/what-is-bing-chat-and-how-can-you-use-it) is a consumer experience and the number of chat queries per user has a daily limit. Bing Chat doesn't offer the same commercial data protection as Bing Chat Enterprise does. The following privacy and security protections apply for Bing Chat:
+[Bing Chat](https://www.microsoft.com/bing/do-more-with-ai/what-is-bing-chat-and-how-can-you-use-it) is a consumer experience and if a user isn't signed in with their Microsoft account, the number of chat queries per user has a daily limit. Bing Chat doesn't offer the same commercial data protection as Bing Chat Enterprise does. The following privacy and security protections apply for Bing Chat:
    - [Copilot in Windows: Your data and privacy](https://support.microsoft.com/windows/3e265e82-fc76-4d0a-afc0-4a0de528b73a)
    - The privacy statement for using Bing Chat follows the [Microsoft privacy statement](https://privacy.microsoft.com/privacystatement) including the product specific guidance in the Microsoft privacy statement for **Bing** under the **Search, Microsoft Edge, and artificial intelligence** section.
 
@@ -45,19 +45,19 @@ Copilot in Windows can use either Bing Chat or Bing Chat Enterprise as its chat 
 
 [Bing Chat Enterprise](/bing-chat-enterprise/overview) is intended for commercial use scenarios and offers commercial data protection. The following privacy and security protections apply for Bing Chat Enterprise:
 
-- With [Bing Chat Enterprise](/bing-chat-enterprise/overview), user and organizational data is protected, chat data isn't saved, and your data isn't used to train the underlying large language models. Because of this protection, chat history, 3rd-party plugins, and the Bing mobile app for iOS or Android aren't currently supported. Review the Bing Chat Enterprise [privacy statement](/bing-chat-enterprise/privacy-and-protections).
+- With [Bing Chat Enterprise](/bing-chat-enterprise/overview), user and organizational data is protected, chat data isn't saved, and your data isn't used to train the underlying large language models. Because of this protection, chat history, 3rd-party plugins, and the Bing mobile app for iOS or Android aren't currently supported. Bing Chat Enterprise is accessible from mobile browsers, including Edge mobile on iOS and Android. Review the Bing Chat Enterprise [privacy statement](/bing-chat-enterprise/privacy-and-protections).
 - Bing Chat Enterprise is available, at no additional cost, for the following licenses:
    - Microsoft 365 E3 or E5
    - Microsoft 365 A3 or A5 for faculty
-   - Business Standard
-   - Business Premium
+   - Microsoft 365 Business Standard
+   - Microsoft 365 Business Premium
 
   > [!Note]
   > Bing Chat Enterprise and Bing Chat don't have access to Microsoft Graph, unlike [Microsoft 365 Copilot](/microsoft-365-copilot/microsoft-365-copilot-overview) which is used in Microsoft 365 apps. This means that Bing Chat Enterprise and Bing Chat can't access Microsoft 365 Apps data, such as email, calendar, or files.
 
 ## Configure the chat provider platform that Copilot in Windows uses
 
-Configuring the correct chat provider platform for Copilot in Windows is important because users can pass sensitive information into the chat provider. Each chat provider platform has different privacy and security protections. Once you have selected the chat provider platform that you want to use for Copilot in Windows, ensure it's configured for your organization's users. The following sections describe how to configure the chat provider platform that Copilot in Windows uses.
+Configuring the correct chat provider platform for Copilot in Windows is important because users can copy and paste sensitive information into the chat provider. Each chat provider platform has different privacy and security protections. Once you have selected the chat provider platform that you want to use for Copilot in Windows, ensure it's configured for your organization's users. The following sections describe how to configure the chat provider platform that Copilot in Windows uses.
 
 ### Bing Chat as the chat provider platform
 
@@ -77,8 +77,8 @@ To verify that Bing Chat Enterprise is enabled for the user as the chat provider
    - Microsoft 365 E3 or E5
    - Microsoft 365 A3 or A5 for faculty
      - Currently, Microsoft 365 A3 and A5 for faculty requires additional configuration. For more information, see [Manage Bing Chat Enterprise](/bing-chat-enterprise/manage).
-   - Business Standard
-   - Business Premium
+   - Microsoft 365 Business Standard
+   - Microsoft 365 Business Premium
 1. To verify that Bing Chat Enterprise is enabled for the user, select the user's **Display name** to open the flyout menu. 
 1. In the flyout, select the **Licenses & apps** tab, then expand the **Apps** list.
 1. Verify that **Bing Chat Enterprise** is enabled for the user.
@@ -87,7 +87,7 @@ To verify that Bing Chat Enterprise is enabled for the user as the chat provider
    > [!Note]
    > If you previously disabled Bing Chat Enterprise using the URL, `https://aka.ms/TurnOffBCE`, see [Manage Bing Chat Enterprise](/bing-chat-enterprise/manage) for verifying that Bing Chat Enterprise is enabled for your users.
 
-The following PowerShell script connects to Microsoft Graph and lists which users that have Bing Chat Enterprise enabled and disabled:
+The following sample PowerShell script connects to Microsoft Graph and lists which users that have Bing Chat Enterprise enabled and disabled:
 
 ```powershell
 # Install Microsoft Graph module
@@ -118,7 +118,7 @@ Once you've configured the chat provider platform that Copilot in Windows uses, 
 
 ### Enable the Copilot in Windows user experience for Windows 11, version 22H2 clients
 
-Copilot in Windows isn't technically enabled by default for manged Windows 11, version 22H2 devices because it's behind a [temporary enterprise control](/windows/whats-new/temporary-enterprise-feature-control). For the purposes of temporary enterprise control, a system is considered managed if it's configured to get updates from Windows Update for Business or [Windows Server Update Services (WSUS)](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus). Clients that get updates from Microsoft Configuration Manager and Microsoft Intune are considered managed since their updates ultimately come from WSUS or Windows Updates for Business.
+Copilot in Windows isn't technically enabled by default for managed Windows 11, version 22H2 devices because it's behind a [temporary enterprise control](/windows/whats-new/temporary-enterprise-feature-control). For the purposes of temporary enterprise control, a system is considered managed if it's configured to get updates from Windows Update for Business or [Windows Server Update Services (WSUS)](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus). Clients that get updates from Microsoft Configuration Manager and Microsoft Intune are considered managed since their updates ultimately come from WSUS or Windows Updates for Business.
 
 To enable Copilot in Windows for managed Windows 11, version 22H2 devices, you need to turn off temporary enterprise control for these devices. Since disabling [temporary enterprise control](/windows/whats-new/temporary-enterprise-feature-control) can be impactful, you should test this change before deploying it broadly. To enable Copilot in Windows for managed Windows 11, version 22H2 devices, use the following instructions:
 
@@ -145,7 +145,7 @@ To enable Copilot in Windows for managed Windows 11, version 22H2 devices, you n
 
 ### Enable the Copilot in Windows user experience for Windows 11, version 23H2 clients (coming soon)
 
-One a managed device installs the version 23H2 update, the [temporary enterprise control](/windows/whats-new/temporary-enterprise-feature-control) for Copilot in Windows will be removed. This means that Copilot in Windows will be enabled by default for these devices.
+Once a managed device installs the version 23H2 update, the [temporary enterprise control](/windows/whats-new/temporary-enterprise-feature-control) for Copilot in Windows will be removed. This means that Copilot in Windows will be enabled by default for these devices.
 
 While the user experience for Copilot in Windows is enabled by default, you still need to verify that the correct chat provider platform configured for Copilot in Windows. While every effort has been made to ensure that Bing Chat Enterprise is the default chat provider for commercial organizations, it's still possible that Bing Chat might still be used if the configuration is incorrect, or if other settings are affecting Copilot in Windows. For more information, see: 
 - [Configure the chat provider platform that Copilot in Windows uses](#configure-the-chat-provider-platform-that-copilot-in-windows-uses)
