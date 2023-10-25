@@ -28,8 +28,8 @@ These alerts are activated as a result of an issue that is device-specific. It i
 | **AlertStatus** | [string](/azure/kusto/query/scalar-data-types/string) | `Active` | Whether this alert is Active, Resolved, or Deleted |
 | **AlertSubtype** | [string](/azure/kusto/query/scalar-data-types/string) | `DiskFull` | The subtype of alert. |
 | **AlertType** | [string](/azure/kusto/query/scalar-data-types/string) | `ClientUpdateAlert` | The type of alert such as ClientUpdateAlert or ServiceUpdateAlert. Indicates which fields will be present. |
-| **AzureADDeviceId** | [string](/azure/kusto/query/scalar-data-types/string) | `71db1a1a-f1a6-4a25-b88f-79c2f513dae0` | Azure AD device ID of the device, if available. |
-| **AzureADTenantId** | [string](/azure/kusto/query/scalar-data-types/string) | `69ca04b0-703d-4b3a-9184-c4e3c15d6f5e` | Azure AD tenant ID of the device. |
+| **AzureADDeviceId** | [string](/azure/kusto/query/scalar-data-types/string) | `71db1a1a-f1a6-4a25-b88f-79c2f513dae0` | Microsoft Entra device ID of the device, if available. |
+| **AzureADTenantId** | [string](/azure/kusto/query/scalar-data-types/string) | `69ca04b0-703d-4b3a-9184-c4e3c15d6f5e` | Microsoft Entra tenant ID of the device. |
 | **ClientSubstate** | [string](/azure/kusto/query/scalar-data-types/string) | `DownloadStart` | If the alert is from the client, the ClientSubstate at the time this alert was activated or updated, else empty. |
 | **ClientSubstateRank** | [int](/azure/kusto/query/scalar-data-types/int) | `2300` | Rank of ClientSubstate |
 | **DeploymentId** | [string](/azure/kusto/query/scalar-data-types/string) | `cf1b12a3-3d84-4ce3-bc8e-de48459e252d` | The deployment this alert is relative to, if there's one. |

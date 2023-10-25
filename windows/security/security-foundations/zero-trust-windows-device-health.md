@@ -51,7 +51,7 @@ A summary of the steps involved in attestation and Zero Trust on the device side
 
 3. The TPM is verified by using the keys/cryptographic material available on the chipset with an [Azure Certificate Service](/windows-server/identity/ad-ds/manage/component-updates/tpm-key-attestation).
 
-4. This information is then sent to the attestation service in the cloud to verify that the device is safe. Microsoft Endpoint Manger integrates with Microsoft Azure Attestation to review device health comprehensively and connect this information with Azure Active Directory conditional access. This integration is key for Zero Trust solutions that help bind trust to an untrusted device.
+4. This information is then sent to the attestation service in the cloud to verify that the device is safe. Microsoft Endpoint Manger integrates with Microsoft Azure Attestation to review device health comprehensively and connect this information with Microsoft Entra Conditional Access. This integration is key for Zero Trust solutions that help bind trust to an untrusted device.
 
 5. The attestation service does the following tasks:
 

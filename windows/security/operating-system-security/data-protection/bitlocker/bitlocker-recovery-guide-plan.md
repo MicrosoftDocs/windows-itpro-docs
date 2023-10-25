@@ -344,7 +344,7 @@ BitLocker metadata has been enhanced starting in Windows 10, version 1903, to in
 ![Customized BitLocker recovery screen.](images/bl-password-hint2.png)
 
 > [!IMPORTANT]
-> It is not recommend to print recovery keys or saving them to a file. Instead, use Active Directory backup or a cloud-based backup. Cloud-based backup includes Azure Active Directory (Azure AD) and Microsoft account.
+> It is not recommend to print recovery keys or saving them to a file. Instead, use Active Directory backup or a cloud-based backup. Cloud-based backup includes Microsoft Entra ID and Microsoft account.
 
 There are rules governing which hint is shown during the recovery (in the order of processing):
 
@@ -356,7 +356,7 @@ There are rules governing which hint is shown during the recovery (in the order 
 
 4. Prioritize keys with successful backup over keys that have never been backed up.
 
-5. Prioritize backup hints in the following order for remote backup locations: **Microsoft Account > Azure AD > Active Directory**.
+5. Prioritize backup hints in the following order for remote backup locations: **Microsoft Account > Microsoft Entra ID > Active Directory**.
 
 6. If a key has been printed and saved to file, display a combined hint, "Look for a printout or a text file with the key," instead of two separate hints.
 
@@ -371,7 +371,7 @@ There are rules governing which hint is shown during the recovery (in the order 
 |     Custom URL       |     Yes    |
 |----------------------|------------|
 |     Saved to Microsoft Account     |     Yes    |
-|     Saved to Azure AD     |     No     |
+|     Saved to Microsoft Entra ID     |     No     |
 |     Saved to Active Directory      |     No     |
 |     Printed          |     No     |
 |     Saved to file    |     No     |
@@ -385,7 +385,7 @@ There are rules governing which hint is shown during the recovery (in the order 
 |     Custom URL       |     Yes    |
 |----------------------|------------|
 |     Saved to Microsoft Account     |     No     |
-|     Saved to Azure AD     |     No     |
+|     Saved to Microsoft Entra ID     |     No     |
 |     Saved to Active Directory      |     Yes    |
 |     Printed          |     No     |
 |     Saved to file    |     No     |
@@ -399,7 +399,7 @@ There are rules governing which hint is shown during the recovery (in the order 
 |     Custom URL       |     No     |
 |----------------------|------------|
 |     Saved to Microsoft Account     |     Yes    |
-|     Saved to Azure AD     |     Yes    |
+|     Saved to Microsoft Entra ID     |     Yes    |
 |     Saved to Active Directory      |     No     |
 |     Printed          |     Yes    |
 |     Saved to file    |     Yes    |
@@ -413,7 +413,7 @@ There are rules governing which hint is shown during the recovery (in the order 
 |     Custom URL       |     No          |
 |----------------------|-----------------|
 |     Saved to Microsoft Account     |     No          |
-|     Saved to Azure AD     |     No          |
+|     Saved to Microsoft Entra ID     |     No          |
 |     Saved to Active Directory      |     No          |
 |     Printed          |     No          |
 |     Saved to file    |     Yes         |
@@ -426,7 +426,7 @@ There are rules governing which hint is shown during the recovery (in the order 
 |     Custom URL       |     No          |
 |----------------------|-----------------|
 |     Saved to Microsoft Account     |     No          |
-|     Saved to Azure AD     |     No          |
+|     Saved to Microsoft Entra ID     |     No          |
 |     Saved to Active Directory      |     No          |
 |     Printed          |     No          |
 |     Saved to file    |     No          |
@@ -442,7 +442,7 @@ There are rules governing which hint is shown during the recovery (in the order 
 |     Custom URL       |     No          |
 |----------------------|-----------------|
 |     Saved to Microsoft Account     |     Yes         |
-|     Saved to Azure AD     |     Yes         |
+|     Saved to Microsoft Entra ID     |     Yes         |
 |     Saved to Active Directory      |     No          |
 |     Printed          |     No          |
 |     Saved to file    |     No          |
@@ -452,7 +452,7 @@ There are rules governing which hint is shown during the recovery (in the order 
 |     Custom URL       |     No        |
 |----------------------|-----------------|
 |     Saved to Microsoft Account     |     No          |
-|     Saved to Azure AD     |     Yes         |
+|     Saved to Microsoft Entra ID     |     Yes         |
 |     Saved to Active Directory      |     No          |
 |     Printed          |     No          |
 |     Saved to file    |     No          |

@@ -354,7 +354,7 @@ Configures the use of passwords for Windows features.
 
 <!-- PreventAutomaticDeviceEncryptionForAzureADJoinedDevices-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specifies whether to allow automatic device encryption during OOBE when the device is Azure AD joined.
+Specifies whether to allow automatic device encryption during OOBE when the device is Microsoft Entra joined.
 <!-- PreventAutomaticDeviceEncryptionForAzureADJoinedDevices-Description-End -->
 
 <!-- PreventAutomaticDeviceEncryptionForAzureADJoinedDevices-Editable-Begin -->
