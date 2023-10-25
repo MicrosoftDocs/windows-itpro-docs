@@ -120,10 +120,10 @@ Once you've configured the chat provider platform that Copilot in Windows uses, 
 
 Copilot in Windows isn't technically enabled by default for managed Windows 11, version 22H2 devices because it's behind a [temporary enterprise control](/windows/whats-new/temporary-enterprise-feature-control). For the purposes of temporary enterprise control, a system is considered managed if it's configured to get updates from Windows Update for Business or [Windows Server Update Services (WSUS)](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus). Clients that get updates from Microsoft Configuration Manager and Microsoft Intune are considered managed since their updates ultimately come from WSUS or Windows Updates for Business.
 
-To enable Copilot in Windows for managed Windows 11, version 22H2 devices, you need to turn off temporary enterprise control for these devices. Since disabling [temporary enterprise control](/windows/whats-new/temporary-enterprise-feature-control) can be impactful, you should test this change before deploying it broadly. To enable Copilot in Windows for managed Windows 11, version 22H2 devices, use the following instructions:
+To enable Copilot in Windows for managed Windows 11, version 22H2 devices, you need to enable features under temporary enterprise control for these devices. Since enabling features behind [temporary enterprise control](/windows/whats-new/temporary-enterprise-feature-control) can be impactful, you should test this change before deploying it broadly. To enable Copilot in Windows for managed Windows 11, version 22H2 devices, use the following instructions:
 
 1. Verify that the user accounts have the correct chat provider platform configured for Copilot in Windows. For more information, see the [Configure the chat provider platform that Copilot in Windows uses](#configure-the-chat-provider-platform-that-copilot-in-windows-uses) section.
-1. Apply a policy to disable temporary enterprise control for managed clients. The following polices apply to Windows 11, version 22H2 with [KB5022845](https://support.microsoft.com/en-us/topic/february-14-2023-kb5022845-os-build-22621-1265-90a807f4-d2e8-486e-8a43-d09e66319f38) and later:
+1. Apply a policy to enable features under temporary enterprise control for managed clients. The following polices apply to Windows 11, version 22H2 with [KB5022845](https://support.microsoft.com/en-us/topic/february-14-2023-kb5022845-os-build-22621-1265-90a807f4-d2e8-486e-8a43-d09e66319f38) and later:
    - **Group Policy:** Computer Configuration\Administrative Templates\Windows Components\Windows Update\Manage end user experience\\**Enable features introduced via servicing that are off by default**
 
     - **CSP**: ./Device/Vendor/MSFT/Policy/Config/Update/[AllowTemporaryEnterpriseFeatureControl](/windows/client-management/mdm/policy-csp-update?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json#allowtemporaryenterprisefeaturecontrol)
@@ -162,7 +162,7 @@ Copilot in Windows and [Copilot in Edge](/bing-chat-enterprise/edge), can share 
 
 ### Bing settings
 
-1. Block access to only the public version of Bing Chat for all users on your network:
+- Block access to only the public version of Bing Chat for all users on your network:
 
    - Map `www.bing.com` to `nochat.bing.com` on your router or proxy server
    - Map `edgeservices.bing.com` to `nochat.bing.com` to block access to Bing Chat
@@ -170,12 +170,12 @@ Copilot in Windows and [Copilot in Edge](/bing-chat-enterprise/edge), can share 
    This block only applies when devices are connected to your corporate network. Bing Chat is a public service, like search, and will remain available if accessed outside the corporate network. Bing Chat Enterprise will still be available if the public version of Bing Chat is blocked. To also block Bing Chat Enterprise, use its service plan, as detailed here: [Turn off Bing Chat Enterprise](/bing-chat-enterprise/manage#turn-off--enterprise)  
 
 
-2. If [SafeSearch](https://support.microsoft.com/topic/946059ed-992b-46a0-944a-28e8fb8f1814) is enabled for Bing, it can block chat providers for Copilot in Windows. The following network changes block the chat providers for Copilot in Windows and Copilot in Edge:
+- If [SafeSearch](https://support.microsoft.com/topic/946059ed-992b-46a0-944a-28e8fb8f1814) is enabled for Bing, it can block chat providers for Copilot in Windows. The following network changes block the chat providers for Copilot in Windows and Copilot in Edge:
    - mapping `www.bing.com` to `strict.bing.com`
    - mapping `edgeservices.bing.com` to `strict.bing.com`
    - blocking `bing.com`
 
-3. If Bing Chat Enterprise is turned on for your organization, users will be able to access it through Edge mobile when signed in with their work account. If you would like to remove the Bing Chat button from the Edge mobile interface, you can use an [Intune Mobile Application Management (MAM) policy for Microsoft Edge](/mem/intune/apps/manage-microsoft-edge) to remove it:
+- If Bing Chat Enterprise is turned on for your organization, users will be able to access it through Edge mobile when signed in with their work account. If you would like to remove the Bing Chat button from the Edge mobile interface, you can use an [Intune Mobile Application Management (MAM) policy for Microsoft Edge](/mem/intune/apps/manage-microsoft-edge) to remove it:
 
     |Key |Value |
     |:---------|:------------|
