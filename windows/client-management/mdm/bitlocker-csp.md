@@ -4,7 +4,7 @@ description: Learn more about the BitLocker CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 08/10/2023
+ms.date: 10/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -312,9 +312,9 @@ Windows will attempt to silently enable BitLocker for value 0.
 
 <!-- Device-ConfigureRecoveryPasswordRotation-Description-Begin -->
 <!-- Description-Source-DDF -->
-Allows Admin to configure Numeric Recovery Password Rotation upon use for OS and fixed drives on Microsoft Entra ID and Hybrid domain joined devices.
+Allows Admin to configure Numeric Recovery Password Rotation upon use for OS and fixed drives on Microsoft Entra ID and hybrid domain joined devices.
 
-When not configured, Rotation is turned on by default for Microsoft Entra-only and off on Hybrid. The Policy will be effective only when Active Directory back up for recovery password is configured to required.
+When not configured, Rotation is turned on by default for Microsoft Entra ID only and off on hybrid. The Policy will be effective only when Active Directory back up for recovery password is configured to required.
 
 For OS drive: Turn on "Do not enable BitLocker until recovery information is stored to AD DS for operating system drives".
 
@@ -323,7 +323,7 @@ For Fixed drives: Turn on "Do not enable BitLocker until recovery information is
 Supported Values: 0 - Numeric Recovery Passwords rotation OFF.
 
 1 - Numeric Recovery Passwords Rotation upon use ON for Microsoft Entra joined devices. Default value
-2 - Numeric Recovery Passwords Rotation upon use ON for both Microsoft Entra ID and Hybrid devices.
+2 - Numeric Recovery Passwords Rotation upon use ON for both Microsoft Entra ID and hybrid devices.
 <!-- Device-ConfigureRecoveryPasswordRotation-Description-End -->
 
 <!-- Device-ConfigureRecoveryPasswordRotation-Editable-Begin -->

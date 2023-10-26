@@ -4,7 +4,7 @@ description: Learn more about the AppVirtualization Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 08/10/2023
+ms.date: 10/24/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -149,7 +149,7 @@ Enables Dynamic Virtualization of supported shell extensions, browser helper obj
 
 <!-- AllowPackageCleanup-Description-Begin -->
 <!-- Description-Source-ADMX -->
-Enables automatic cleanup of appv packages that were added after Windows10 anniversary release.
+Enables automatic cleanup of appv packages that were added after Windows 10 anniversary release.
 <!-- AllowPackageCleanup-Description-End -->
 
 <!-- AllowPackageCleanup-Editable-Begin -->
@@ -1443,7 +1443,7 @@ Specifies the number of times to retry a dropped session.
 
 <!-- StreamingSharedContentStoreMode-Description-Begin -->
 <!-- Description-Source-ADMX -->
-Specifies that streamed package contents will be not be saved to the local hard disk.
+Specifies that streamed package contents won't be saved to the local hard disk.
 <!-- StreamingSharedContentStoreMode-Description-End -->
 
 <!-- StreamingSharedContentStoreMode-Editable-Begin -->
