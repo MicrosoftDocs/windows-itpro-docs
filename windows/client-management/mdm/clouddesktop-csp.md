@@ -52,6 +52,8 @@ This node allows to configure different kinds of Boot to Cloud mode. Boot to clo
 
 <!-- Device-BootToCloudPCEnhanced-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!IMPORTANT]
+> If BootToCloudPCEnhanced and EnableBootToCloudSharedPCMode are both configured, BootToCloudPCEnhanced is given priority and overrides EnableBootToCloudSharedPCMode.
 <!-- Device-BootToCloudPCEnhanced-Editable-End -->
 
 <!-- Device-BootToCloudPCEnhanced-DFProperties-Begin -->
@@ -105,6 +107,8 @@ Setting this node to "true" configures boot to cloud for Shared PC mode. Boot to
 
 <!-- Device-EnableBootToCloudSharedPCMode-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!IMPORTANT]
+> If BootToCloudPCEnhanced and EnableBootToCloudSharedPCMode are both configured, BootToCloudPCEnhanced is given priority and overrides EnableBootToCloudSharedPCMode.
 <!-- Device-EnableBootToCloudSharedPCMode-Editable-End -->
 
 <!-- Device-EnableBootToCloudSharedPCMode-DFProperties-Begin -->
