@@ -4,7 +4,7 @@ description: Learn more about the Personalization CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 10/25/2023
+ms.date: 10/26/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -20,7 +20,7 @@ ms.topic: reference
 
 <!-- Personalization-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-The Personalization CSP can set the lock screen, desktop background images and company branding on sign-in screen ([BootToCloud mode](policy-csp-clouddesktop.md#boottocloudmode) only) . Setting these policies also prevents the user from changing the image. You can also use the Personalization settings in a provisioning package.
+The Personalization CSP can set the lock screen, desktop background images and company branding on sign-in screen ([BootToCloud mode](policy-csp-clouddesktop.md#boottocloudmode) only). Setting these policies also prevents the user from changing the image. You can also use the Personalization settings in a provisioning package.
 
 > [!IMPORTANT]
 > Personalization CSP is supported in Windows Enterprise and Education SKUs. It works in Windows Professional only when SetEduPolicies in [SharedPC CSP](sharedpc-csp.md) is set, or when the device is configured in [Shared PC mode with BootToCloudPCEnhanced policy](clouddesktop-csp.md#boottocloudpcenhanced).
@@ -95,7 +95,7 @@ This represents the status of the Company Logo. 1 - Successfully downloaded or c
 
 <!-- Device-CompanyLogoUrl-Description-Begin -->
 <!-- Description-Source-DDF -->
-A http or https Url to a jpg, jpeg or png image that neeeds to be downloaded and used as the Company Logo or a file Url to a local image on the file system that needs to be used as the Company Logo. This setting is currently available for boot to cloud shared pc mode only.
+An http or https Url to a jpg, jpeg or png image that needs to be downloaded and used as the Company Logo or a file Url to a local image on the file system that needs to be used as the Company Logo. This setting is currently available for boot to cloud shared pc mode only.
 <!-- Device-CompanyLogoUrl-Description-End -->
 
 <!-- Device-CompanyLogoUrl-Editable-Begin -->
@@ -213,7 +213,7 @@ This represents the status of the DesktopImage. 1 - Successfully downloaded or c
 
 <!-- Device-DesktopImageUrl-Description-Begin -->
 <!-- Description-Source-DDF -->
-A http or https Url to a jpg, jpeg or png image that needs to be downloaded and used as the Desktop Image or a file Url to a local image on the file system that needs to be used as the Desktop Image.
+An http or https Url to a jpg, jpeg or png image that needs to be downloaded and used as the Desktop Image or a file Url to a local image on the file system that needs to be used as the Desktop Image.
 <!-- Device-DesktopImageUrl-Description-End -->
 
 <!-- Device-DesktopImageUrl-Editable-Begin -->
@@ -291,7 +291,7 @@ This represents the status of the LockScreenImage. 1 - Successfully downloaded o
 
 <!-- Device-LockScreenImageUrl-Description-Begin -->
 <!-- Description-Source-DDF -->
-A http or https Url to a jpg, jpeg or png image that neeeds to be downloaded and used as the Lock Screen Image or a file Url to a local image on the file system that needs to be used as the Lock Screen Image.
+An http or https Url to a jpg, jpeg or png image that needs to be downloaded and used as the Lock Screen Image or a file Url to a local image on the file system that needs to be used as the Lock Screen Image.
 <!-- Device-LockScreenImageUrl-Description-End -->
 
 <!-- Device-LockScreenImageUrl-Editable-Begin -->
