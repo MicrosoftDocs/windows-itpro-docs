@@ -25,7 +25,7 @@ If you're looking to unenroll your tenant from Windows Autopatch, this article d
 Unenrolling from Windows Autopatch requires manual actions from both you and from the Windows Autopatch Service Engineering Team. The Windows Autopatch Service Engineering Team will:  
 
 - Remove Windows Autopatch access to your tenant.
-- Exclude your devices from the Windows Autopatch service. Excluding your devices from Windows Autopatch won't remove your devices from Intune, Azure AD or Configuration Manager. The Windows Autopatch Service Engineering Team follows the same process and principles as laid out in [Exclude a device](../operate/windows-autopatch-exclude-device.md).
+- Exclude your devices from the Windows Autopatch service. Excluding your devices from Windows Autopatch won't remove your devices from Intune, Microsoft Entra ID or Configuration Manager. The Windows Autopatch Service Engineering Team follows the same process and principles as laid out in [Exclude a device](../operate/windows-autopatch-exclude-device.md).
 - Delete all data that we've stored in the Windows Autopatch data storage.
 
 > [!NOTE]
@@ -36,7 +36,7 @@ Unenrolling from Windows Autopatch requires manual actions from both you and fro
 | Responsibility | Description |
 | ----- | ----- |
 | Windows Autopatch data | Windows Autopatch will delete user data that is within the Windows Autopatch service. We won’t make changes to any other data. For more information about how data is used in Windows Autopatch, see [Privacy](../overview/windows-autopatch-privacy.md). |
-| Excluding devices | Windows Autopatch will exclude all devices previously registered with the service. Only the Windows Autopatch device record is deleted. We won't delete Microsoft Intune and/or Azure Active Directory device records. For more information, see [Exclude a device](../operate/windows-autopatch-exclude-device.md). |
+| Excluding devices | Windows Autopatch will exclude all devices previously registered with the service. Only the Windows Autopatch device record is deleted. We won't delete Microsoft Intune and/or Microsoft Entra device records. For more information, see [Exclude a device](../operate/windows-autopatch-exclude-device.md). |
 
 ## Your responsibilities after unenrolling your tenant
 

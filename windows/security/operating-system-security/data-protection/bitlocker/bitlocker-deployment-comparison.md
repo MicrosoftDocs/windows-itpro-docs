@@ -16,7 +16,7 @@ This article depicts the BitLocker deployment comparison chart.
 | *Minimum client operating system version* | Windows 11 and Windows 10 | Windows 11, Windows 10, and Windows 8.1 | Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 10 IoT, and Windows 11 |
 | *Supported Windows SKUs* | Enterprise, Pro, Education | Enterprise, Pro, Education | Enterprise |
 | *Minimum Windows version* | 1909 | None | None |
-| *Supported domain-joined status* | Microsoft Azure Active Directory (Azure AD) joined, hybrid Azure AD joined | Active Directory-joined, hybrid Azure AD joined | Active Directory-joined |
+| *Supported domain-joined status* | Microsoft Entra joined, Microsoft Entra hybrid joined | Active Directory-joined, Microsoft Entra hybrid joined | Active Directory-joined |
 | *Permissions required to manage policies* | Endpoint security manager or custom | Full administrator or custom | Domain Admin or Delegated GPO access |
 | *Cloud or on premises* | Cloud | On premises | On premises |
 | Server components required? |  | ✅ | ✅ |
@@ -31,16 +31,16 @@ This article depicts the BitLocker deployment comparison chart.
 | *Select cipher strength and algorithms for fixed drives* | ✅ | ✅ | ✅ |
 | *Select cipher strength and algorithms for removable drives* | ✅ | ✅ | ✅ |
 | *Select cipher strength and algorithms for operating environment drives* | ✅ | ✅ | ✅ |
-| *Standard recovery password storage location* | Azure AD or Active Directory | Configuration Manager site database | MBAM database |
-| *Store recovery password for operating system and fixed drives to Azure AD or Active Directory* | Yes (Active Directory and Azure AD) | Yes (Active Directory only) | Yes (Active Directory only) |
+| *Standard recovery password storage location* | Microsoft Entra ID or Active Directory | Configuration Manager site database | MBAM database |
+| *Store recovery password for operating system and fixed drives to Microsoft Entra ID or Active Directory* | Yes (Active Directory and Microsoft Entra ID) | Yes (Active Directory only) | Yes (Active Directory only) |
 | *Customize preboot message and recovery link* | ✅ | ✅ | ✅ |
 | *Allow/deny key file creation* | ✅ | ✅ | ✅ |
 | *Deny Write permission to unprotected drives* | ✅ | ✅ | ✅ |
 | *Can be administered outside company network* | ✅ | ✅ |  |
 | *Support for organization unique IDs* |  | ✅ | ✅ |
-| *Self-service recovery* | Yes (through Azure AD or Company Portal app) | ✅ | ✅ |
+| *Self-service recovery* | Yes (through Microsoft Entra ID or Company Portal app) | ✅ | ✅ |
 | *Recovery password rotation for fixed and operating environment drives* | Yes (Windows 10, version 1909 and later) | ✅ | ✅ |
-| *Wait to complete encryption until recovery information is backed up to Azure AD* | ✅ |  |  |
+| *Wait to complete encryption until recovery information is backed up to Microsoft Entra ID* | ✅ |  |  |
 | *Wait to complete encryption until recovery information is backed up to Active Directory* |  | ✅ | ✅ |
 | *Allow or deny Data Recovery Agent* | ✅ | ✅ | ✅ |
 | *Unlock a volume using certificate with custom object identifier* |  | ✅ | ✅ |

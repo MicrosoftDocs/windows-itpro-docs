@@ -55,7 +55,7 @@ sections:
     questions:
       - question: What is Windows Update for Business reports?
         answer: |
-          Windows Update for Business reports is a cloud-based solution that provides information about your Azure Active Directory-joined devices' compliance with Windows updates. Windows Update for Business reports is offered through the [Azure portal](https://portal.azure.com), and it's included as part of the Windows 10 or Windows 11 prerequisite licenses.  
+          Windows Update for Business reports is a cloud-based solution that provides information about your Microsoft Entra joined devices' compliance with Windows updates. Windows Update for Business reports is offered through the [Azure portal](https://portal.azure.com), and it's included as part of the Windows 10 or Windows 11 prerequisite licenses.  
       - question: Is Windows Update for Business reports free?
         answer: |
           Data ingested into your Log Analytics workspace can be retained at no charge for up to first 31 days (or 90 days if [Microsoft Sentinel](/azure/sentinel/overview) is enabled on the workspace). Data ingested into [Application Insights](/azure/azure-monitor/app/app-insights-overview), either classic or workspace-based, is retained for 90 days without any charge.

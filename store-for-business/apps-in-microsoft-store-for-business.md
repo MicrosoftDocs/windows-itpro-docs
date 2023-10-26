@@ -62,7 +62,7 @@ If an employee makes an in-app purchase, they'll make it with their personal Mic
 Microsoft Store supports two options to license apps: online and offline.
 
 ### Online licensing
-Online licensing is the default licensing model and is similar to the model used by Microsoft Store. Online licensed apps require customers and devices to connect to Microsoft Store service to acquire an app and its license. License management is enforced based on the user's Azure AD identity and maintained by Microsoft Store as well as the management tool. By default app updates are handled by Windows Update.
+Online licensing is the default licensing model and is similar to the model used by Microsoft Store. Online licensed apps require customers and devices to connect to Microsoft Store service to acquire an app and its license. License management is enforced based on the user's Microsoft Entra identity and maintained by Microsoft Store as well as the management tool. By default app updates are handled by Windows Update.
 
 Distribution options for online-licensed apps include the ability to:
 

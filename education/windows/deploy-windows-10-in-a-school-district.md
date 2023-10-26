@@ -1,6 +1,6 @@
 ---
 title: Deploy Windows 10 in a school district 
-description: Learn how to deploy Windows 10 in a school district. Integrate the school environment with Office 365, Active Directory Domain Services (AD DS), and Microsoft Azure Active Directory (Azure AD), use Microsoft Configuration Manager, Intune, and Group Policy to manage devices.
+description: Learn how to deploy Windows 10 in a school district. Integrate the school environment with Office 365, Active Directory Domain Services (AD DS), and Microsoft Entra ID, use Microsoft Configuration Manager, Intune, and Group Policy to manage devices.
 ms.topic: how-to
 ms.date: 08/10/2022
 appliesto:
@@ -9,7 +9,7 @@ appliesto:
 
 # Deploy Windows 10 in a school district
 
-This guide shows you how to deploy the Windows 10 operating system in a school district. You learn how to deploy Windows 10 in classrooms; integrate the school environment with Microsoft Office 365, Active Directory Domain Services (AD DS), and Microsoft Azure Active Directory (Azure AD); and deploy Windows 10 and your apps to new devices or upgrade existing devices to Windows 10. This guide also describes how to use Microsoft Configuration Manager, Microsoft Intune, and Group Policy to manage devices. Finally, the guide discusses common, ongoing maintenance tasks that you'll perform after initial deployment and the automated tools and built-in features of the operating system.
+This guide shows you how to deploy the Windows 10 operating system in a school district. You learn how to deploy Windows 10 in classrooms; integrate the school environment with Microsoft Office 365, Active Directory Domain Services (AD DS), and Microsoft Entra ID; and deploy Windows 10 and your apps to new devices or upgrade existing devices to Windows 10. This guide also describes how to use Microsoft Configuration Manager, Microsoft Intune, and Group Policy to manage devices. Finally, the guide discusses common, ongoing maintenance tasks that you'll perform after initial deployment and the automated tools and built-in features of the operating system.
 
 ## Prepare for district deployment
 
@@ -68,9 +68,9 @@ This district configuration has the following characteristics:
   > [!NOTE]
   > In this guide, all references to MDT refer to the 64-bit version of MDT 2013 Update 2.
   
-* The devices use Azure AD in Office 365 Education for identity management.
+* The devices use Microsoft Entra ID in Office 365 Education for identity management.
 
-* If you've on-premises AD DS, you can [integrate Azure AD with on-premises AD DS](/azure/active-directory/hybrid/whatis-hybrid-identity).
+* If you've on-premises AD DS, you can [integrate Microsoft Entra ID with on-premises AD DS](/azure/active-directory/hybrid/whatis-hybrid-identity).
 
 * Use [Intune](/intune/), [Mobile Device Management for Office 365](/microsoft-365/admin/basic-mobility-security/set-up), or [Group Policy in AD DS](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc725828(v=ws.10)) to manage devices.
 
@@ -155,7 +155,7 @@ The high-level process for deploying and configuring devices within individual c
 
 2. On the admin device, create and configure the Office 365 Education subscription that you'll use for the district’s classrooms.
 
-3. On the admin device, configure integration between on-premises AD DS and Azure AD (if you've an on premises AD DS configuration).
+3. On the admin device, configure integration between on-premises AD DS and Microsoft Entra ID (if you've an on premises AD DS configuration).
 
 4. On the admin device, create and configure a Microsoft Store for Business portal.
 
@@ -167,7 +167,7 @@ The high-level process for deploying and configuring devices within individual c
 
 8. On the student and faculty devices, deploy Windows 10 to new or existing devices, or upgrade eligible devices to Windows 10.
 
-9. On the admin device, manage the Windows 10 devices and apps, the Office 365 subscription, and the AD DS–Azure AD integration.
+9. On the admin device, manage the Windows 10 devices and apps, the Office 365 subscription, and the AD DS–Microsoft Entra integration.
 
 > [!div class="mx-imgBorder"]
 > ![How district configuration works.](images/edu-districtdeploy-fig4.png "How district configuration works")
@@ -190,7 +190,7 @@ Before you select the deployment and management methods, you need to review the 
 
 |Scenario feature |Cloud-centric|On-premises and cloud|
 |---|---|---|
-|Identity management | Azure AD (stand-alone or integrated with on-premises AD DS)  |  AD DS integrated with Azure AD |
+|Identity management | Microsoft Entra ID (stand-alone or integrated with on-premises AD DS)  |  AD DS integrated with Microsoft Entra ID |
 |Windows 10 deployment   | MDT only  |  Microsoft Configuration Manager with MDT |
 |Configuration setting management  | Intune  |  Group Policy<br/><br/>Intune|
 |App and update management |  Intune |Microsoft Configuration Manager<br/><br/>Intune|
@@ -239,7 +239,7 @@ For a district, there are many ways to manage the configuration setting for user
 |Method|Description|
 |--- |--- |
 |Group Policy|Group Policy is an integral part of AD DS and allows you to specify configuration settings for Windows 10 and previous versions of Windows. <br> Select this method when you <li>Want to manage institution-owned devices that are domain joined (personal devices are typically not domain joined).<li> Want more granular control of device and user settings. <li>Have an existing AD DS infrastructure.<li>Typically manage on-premises devices.<li>Can manage a required setting only by using Group Policy. <br>The advantages of this method include: <li>No cost beyond the AD DS infrastructure. <li>A larger number of settings (compared to Intune).<br>The disadvantages of this method are that it:<li>Can only manage domain-joined (institution-owned devices).<li>Requires an AD DS infrastructure (if the institution doesn't  have AD DS already).<li>Typically manages on-premises devices (unless devices use a virtual private network [VPN] or Microsoft DirectAccess to connect).<li> Has rudimentary app management capabilities.<li> can't  deploy Windows 10 operating systems.|
-|Intune|Intune is a cloud-based management system that allows you to specify configuration settings for Windows 10, previous versions of Windows, and other operating systems (such as iOS or Android). Intune is a subscription-based cloud service that integrates with Office 365 and Azure AD.<br>Intune is the cloud-based management system described in this guide, but you can use other MDM providers. If you use an MDM provider other than Intune, integration with Configuration Manager is unavailable.<br>Select this method when you:<li> Want to manage institution-owned and personal devices (doesn't require that the device be domain joined).<li>Don’t need granular control over device and user settings (compared to Group Policy).<li>Don’t have an existing AD DS infrastructure.<li>Need to manage devices regardless of where they are (on or off premises).<li>Want to provide application management for the entire application life cycle.<li>Can manage a required setting only by using Intune.<br>The advantages of this method are that:<li>You can manage institution-owned and personal devices.<li>It doesn’t require that devices be domain joined.<li>It doesn’t require any on-premises infrastructure.<li>It can manage devices regardless of their location (on or off premises).<br>The disadvantages of this method are that it:<li>Carries an extra cost for Intune subscription licenses.<li>Doesn’t offer granular control over device and user settings (compared to Group Policy).<li>can't  deploy Windows 10 operating systems.|
+|Intune|Intune is a cloud-based management system that allows you to specify configuration settings for Windows 10, previous versions of Windows, and other operating systems (such as iOS or Android). Intune is a subscription-based cloud service that integrates with Office 365 and Microsoft Entra ID.<br>Intune is the cloud-based management system described in this guide, but you can use other MDM providers. If you use an MDM provider other than Intune, integration with Configuration Manager is unavailable.<br>Select this method when you:<li> Want to manage institution-owned and personal devices (doesn't require that the device be domain joined).<li>Don’t need granular control over device and user settings (compared to Group Policy).<li>Don’t have an existing AD DS infrastructure.<li>Need to manage devices regardless of where they are (on or off premises).<li>Want to provide application management for the entire application life cycle.<li>Can manage a required setting only by using Intune.<br>The advantages of this method are that:<li>You can manage institution-owned and personal devices.<li>It doesn’t require that devices be domain joined.<li>It doesn’t require any on-premises infrastructure.<li>It can manage devices regardless of their location (on or off premises).<br>The disadvantages of this method are that it:<li>Carries an extra cost for Intune subscription licenses.<li>Doesn’t offer granular control over device and user settings (compared to Group Policy).<li>can't  deploy Windows 10 operating systems.|
 
 *Table 4. Configuration setting management methods*
 
@@ -261,8 +261,8 @@ Use the information in Table 6 to determine which combination of app and update 
 |Selection|Management method|
 |--- |--- |
 |Microsoft Configuration Manager|Configuration Manager is an on-premises solution that allows you to specify configuration settings for Windows 10; previous versions of Windows; and other operating systems, such as iOS or Android, through integration with Intune.Configuration Manager supports application management throughout the entire application life cycle. You can deploy, upgrade, manage multiple versions, and retire applications by using Configuration Manager. You can also manage Windows desktop and Microsoft Store applications. Select this method when you:<li>Selected Configuration Manager to deploy Windows 10.<li>Want to manage institution-owned devices that are domain joined (personally owned devices are typically not domain joined).<li>Want to manage AD DS domain-joined devices.<li>Have an existing AD DS infrastructure.<li>Typically manage on-premises devices.<li>Want to deploy operating systems.<li>Want to provide application management for the entire application life cycle.<br>The advantages of this method are that:<li>You can deploy Windows 10 operating systems.<li>You can manage applications throughout the entire application life cycle.<li>You can manage software updates for Windows 10 and apps.<li>You can manage antivirus and malware protection.<li>It scales to large numbers of users and devices.<br>The disadvantages of this method are that it:<li>Carries an extra cost for Configuration Manager server licenses (if the institution doesn't  have Configuration Manager already).<li>Carries an extra cost for Windows Server licenses and the corresponding server hardware.<li>Can only manage domain-joined (institution-owned devices).<li>Requires an AD DS infrastructure (if the institution doesn't  have AD DS already).<li>Typically manages on-premises devices (unless devices through VPN or DirectAccess).|
-|Intune|Intune is a cloud-based solution that allows you to manage apps and software updates for Windows 10, previous versions of Windows, and other operating systems (such as iOS or Android). Intune is a subscription-based cloud service that integrates with Office 365 and Azure AD.<br>Select this method when you:<li>Selected MDT only to deploy Windows 10.<li>Want to manage institution-owned and personal devices that aren't  domain joined.<li>Want to manage Azure AD domain-joined devices.<li>Need to manage devices regardless of where they are (on or off premises).<li>Want to provide application management for the entire application life cycle.<br>The advantages of this method are that:<li>You can manage institution-owned and personal devices.<li>It doesn’t require that devices be domain joined.<li>It doesn’t require on-premises infrastructure.vIt can manage devices regardless of their location (on or off premises).<li>You can deploy keys to perform in-place Windows 10 upgrades (such as upgrading from Windows 10 Pro to Windows 10 Education edition).<br>The disadvantages of this method are that it:<li>Carries an extra cost for Intune subscription licenses.<li>can't  deploy Windows 10 operating systems.|
-|Microsoft Configuration Manager and Intune (hybrid)|Configuration Manager and Intune together extend Configuration Manager from an on-premises management system for domain-joined devices to a solution that can manage devices regardless of their location and connectivity options. This hybrid option provides the benefits of both Configuration Manager and Intune.<br><br>Configuration Manager and Intune in the hybrid configuration allows you to support application management throughout the entire application life cycle. You can deploy, upgrade, manage multiple versions, and retire applications by using Configuration Manager, and you can manage Windows desktop and Microsoft Store applications for both institution-owned and personal devices. <br><br>Select this method when you:<br><li>Selected Microsoft Configuration Manager to deploy Windows 10.<li>Want to manage institution-owned and personal devices (doesn't require that the device be domain joined).<li>Want to manage domain-joined devices.<li>Want to manage Azure AD domain-joined devices.<li>Have an existing AD DS infrastructure.<li>Want to manage devices regardless of their connectivity.vWant to deploy operating systems.<li>Want to provide application management for the entire application life cycle.<br><br>The advantages of this method are that:<li>You can deploy operating systems.<li>You can manage applications throughout the entire application life cycle.<li>You can scale to large numbers of users and devices.<li>You can support institution-owned and personal devices.<li>It doesn’t require that devices be domain joined.<li>It can manage devices regardless of their location (on or off premises).<br><br>The disadvantages of this method are that it:<li>Carries an extra cost for Configuration Manager server licenses (if the institution doesn't  have Configuration Manager already).<li>Carries an extra cost for Windows Server licenses and the corresponding server hardware.<li>Carries an extra cost for Intune subscription licenses.<li>Requires an AD DS infrastructure (if the institution doesn't  have AD DS already).|
+|Intune|Intune is a cloud-based solution that allows you to manage apps and software updates for Windows 10, previous versions of Windows, and other operating systems (such as iOS or Android). Intune is a subscription-based cloud service that integrates with Office 365 and Microsoft Entra ID.<br>Select this method when you:<li>Selected MDT only to deploy Windows 10.<li>Want to manage institution-owned and personal devices that aren't  domain joined.<li>Want to manage Microsoft Entra domain-joined devices.<li>Need to manage devices regardless of where they are (on or off premises).<li>Want to provide application management for the entire application life cycle.<br>The advantages of this method are that:<li>You can manage institution-owned and personal devices.<li>It doesn’t require that devices be domain joined.<li>It doesn’t require on-premises infrastructure.vIt can manage devices regardless of their location (on or off premises).<li>You can deploy keys to perform in-place Windows 10 upgrades (such as upgrading from Windows 10 Pro to Windows 10 Education edition).<br>The disadvantages of this method are that it:<li>Carries an extra cost for Intune subscription licenses.<li>can't  deploy Windows 10 operating systems.|
+|Microsoft Configuration Manager and Intune (hybrid)|Configuration Manager and Intune together extend Configuration Manager from an on-premises management system for domain-joined devices to a solution that can manage devices regardless of their location and connectivity options. This hybrid option provides the benefits of both Configuration Manager and Intune.<br><br>Configuration Manager and Intune in the hybrid configuration allows you to support application management throughout the entire application life cycle. You can deploy, upgrade, manage multiple versions, and retire applications by using Configuration Manager, and you can manage Windows desktop and Microsoft Store applications for both institution-owned and personal devices. <br><br>Select this method when you:<br><li>Selected Microsoft Configuration Manager to deploy Windows 10.<li>Want to manage institution-owned and personal devices (doesn't require that the device be domain joined).<li>Want to manage domain-joined devices.<li>Want to manage Microsoft Entra domain-joined devices.<li>Have an existing AD DS infrastructure.<li>Want to manage devices regardless of their connectivity.vWant to deploy operating systems.<li>Want to provide application management for the entire application life cycle.<br><br>The advantages of this method are that:<li>You can deploy operating systems.<li>You can manage applications throughout the entire application life cycle.<li>You can scale to large numbers of users and devices.<li>You can support institution-owned and personal devices.<li>It doesn’t require that devices be domain joined.<li>It can manage devices regardless of their location (on or off premises).<br><br>The disadvantages of this method are that it:<li>Carries an extra cost for Configuration Manager server licenses (if the institution doesn't  have Configuration Manager already).<li>Carries an extra cost for Windows Server licenses and the corresponding server hardware.<li>Carries an extra cost for Intune subscription licenses.<li>Requires an AD DS infrastructure (if the institution doesn't  have AD DS already).|
 
 *Table 6. App and update management products*
 
@@ -428,7 +428,7 @@ Now that you've created your new Office 365 Education subscription, add the doma
 To make it easier for faculty and students to join your Office 365 Education subscription (or *tenant*), allow them to automatically sign up to your tenant (*automatic tenant join*). In automatic tenant join, when a faculty member or student signs up for Office 365, Office 365 automatically adds (joins) the user to your Office 365 tenant.
 
 > [!NOTE]
-> By default, automatic tenant join is enabled in Office 365 Education, with the exception of certain areas in Europe, the Middle East, and Africa. These countries/regions require opt-in steps to add new users to existing Office 365 tenants. Check your country/region requirements to determine the automatic tenant join default configuration. Also, if you use Azure AD Connect, then automatic tenant join is disabled. For more information, see [Office 365 Education Self-Sign up FAQ](/microsoft-365/education/deploy/office-365-education-self-sign-up).
+> By default, automatic tenant join is enabled in Office 365 Education, with the exception of certain areas in Europe, the Middle East, and Africa. These countries/regions require opt-in steps to add new users to existing Office 365 tenants. Check your country/region requirements to determine the automatic tenant join default configuration. Also, if you use Microsoft Entra Connect, then automatic tenant join is disabled. For more information, see [Office 365 Education Self-Sign up FAQ](/microsoft-365/education/deploy/office-365-education-self-sign-up).
 
 Office 365 uses the domain portion of the user’s email address to know which Office 365 tenant to join. For example, if a faculty member or student provides an email address of user@contoso.edu, then Office 365 automatically performs one of the following tasks:
 
@@ -450,7 +450,7 @@ By default, all new Office 365 Education subscriptions have automatic tenant joi
 *Table 10. Windows PowerShell commands to enable or disable automatic tenant join*
 
 > [!NOTE]
-> If your institution has AD DS, then disable automatic tenant join. Instead, use Azure AD integration with AD DS to add users to your Office 365 tenant.
+> If your institution has AD DS, then disable automatic tenant join. Instead, use Microsoft Entra integration with AD DS to add users to your Office 365 tenant.
 
 ### Disable automatic licensing
 
@@ -468,129 +468,143 @@ Although all new Office 365 Education subscriptions have automatic licensing ena
 
 *Table 11. Windows PowerShell commands to enable or disable automatic licensing*
 
-### Enable Azure AD Premium
+<a name='enable-azure-ad-premium'></a>
 
-When you create your Office 365 subscription, you create an Office 365 tenant that includes an Azure AD directory, the centralized repository for all your student and faculty accounts in Office 365, Intune, and other Azure AD-integrated apps. Azure AD is available in Free, Basic, and Premium editions. Azure AD Free, which is included in Office 365 Education, has fewer features than Azure AD Basic, which in turn has fewer features than Azure AD Premium.
+### Enable Microsoft Entra ID P1 or P2
 
-Educational institutions can obtain Azure AD Basic edition licenses at no cost if they have a volume license agreement. After your institution obtains its licenses, activate your Azure AD access by completing the steps in [Step 3: Activate your Azure Active Directory access](/azure/active-directory/fundamentals/active-directory-get-started-premium#step-3-activate-your-azure-active-directory-access).
+When you create your Office 365 subscription, you create an Office 365 tenant that includes a Microsoft Entra directory, the centralized repository for all your student and faculty accounts in Office 365, Intune, and other Microsoft Entra integrated apps. Microsoft Entra ID is available in Free, Basic, and Premium editions. Microsoft Entra ID Free, which is included in Office 365 Education, has fewer features than Microsoft Entra Basic, which in turn has fewer features than Microsoft Entra ID P1 or P2.
 
-The following Azure AD Premium features aren't  in Azure AD Basic:
+Educational institutions can obtain Microsoft Entra Basic edition licenses at no cost if they have a volume license agreement. After your institution obtains its licenses, activate your Microsoft Entra ID access by completing the steps in [Step 3: Activate your Microsoft Entra ID access](/azure/active-directory/fundamentals/active-directory-get-started-premium#step-3-activate-your-azure-active-directory-access).
+
+The following Microsoft Entra ID P1 or P2 features aren't  in Microsoft Entra Basic:
 
 * Allow designated users to manage group membership
 * Dynamic group membership based on user metadata
-* Azure AD Multi-Factor Authentication (MFA; see [What is Azure AD Multi-Factor Authentication](/azure/active-directory/authentication/concept-mfa-howitworks))
+* Microsoft Entra multifactor authentication (MFA; see [What is Microsoft Entra multifactor authentication](/azure/active-directory/authentication/concept-mfa-howitworks))
 * Identify cloud apps that your users run
 * Self-service recovery of BitLocker
 * Add local administrator accounts to Windows 10 devices
-* Azure AD Connect health monitoring
+* Microsoft Entra Connect Health monitoring
 * Extended reporting capabilities
 
-You can assign Azure AD Premium licenses to the users who need these features. For example, you may want the users who have access to confidential student information to use MFA. In this example, you could assign Azure AD Premium to only those users.
+You can assign Microsoft Entra ID P1 or P2 licenses to the users who need these features. For example, you may want the users who have access to confidential student information to use MFA. In this example, you could assign Microsoft Entra ID P1 or P2 to only those users.
 
-You can sign up for Azure AD Premium, and then assign licenses to users. In this section, you sign up for Azure AD Premium. You'll assign Azure AD Premium licenses to users later in the deployment process.
+You can sign up for Microsoft Entra ID P1 or P2, and then assign licenses to users. In this section, you sign up for Microsoft Entra ID P1 or P2. You'll assign Microsoft Entra ID P1 or P2 licenses to users later in the deployment process.
 
 For more information about:
 
-* Azure AD editions and the features in each, see [Azure Active Directory editions](/azure/active-directory/fundamentals/active-directory-whatis).
-* How to enable Azure AD premium, see [Associate an Azure AD directory with a new Azure subscription](/previous-versions/azure/azure-services/jj573650(v=azure.100)#create_tenant3).
+* Microsoft Entra editions and the features in each, see [Microsoft Entra editions](/azure/active-directory/fundamentals/active-directory-whatis).
+* How to enable Microsoft Entra ID P1 or P2, see [Associate a Microsoft Entra directory with a new Azure subscription](/previous-versions/azure/azure-services/jj573650(v=azure.100)#create_tenant3).
 
 #### Summary
 
-You provision and initially configure Office 365 Education as part of initial configuration. With the subscription in place, automatic tenant join configured, automatic licensing established, and Azure AD Premium enabled (if necessary), you’re ready to select the method you'll use to create user accounts in Office 365.
+You provision and initially configure Office 365 Education as part of initial configuration. With the subscription in place, automatic tenant join configured, automatic licensing established, and Microsoft Entra ID P1 or P2 enabled (if necessary), you’re ready to select the method you'll use to create user accounts in Office 365.
 
 ## Select an Office 365 user account–creation method
 
 Now that you've an Office 365 subscription, you must determine how you’ll create your Office 365 user accounts. Use one of the following methods to make your decision:
 
-* Method 1: Automatically synchronize your on-premises AD DS domain with Azure AD. Select this method if you've an on-premises AD DS domain.
-* Method 2: Bulk-import the user accounts from a .csv file (based on information from other sources) into Azure AD. Select this method if you don’t have an on-premises AD DS domain.
+* Method 1: Automatically synchronize your on-premises AD DS domain with Microsoft Entra ID. Select this method if you've an on-premises AD DS domain.
+* Method 2: Bulk-import the user accounts from a .csv file (based on information from other sources) into Microsoft Entra ID. Select this method if you don’t have an on-premises AD DS domain.
 
-### Method 1: Automatic synchronization between AD DS and Azure AD
+<a name='method-1-automatic-synchronization-between-ad-ds-and-azure-ad'></a>
 
-In this method, you've an on-premises AD DS domain. As shown in Figure 5, the Azure AD Connector tool automatically synchronizes AD DS with Azure AD. When you add or change any user accounts in AD DS, the Azure AD Connector tool automatically updates Azure AD.
+### Method 1: Automatic synchronization between AD DS and Microsoft Entra ID
+
+In this method, you've an on-premises AD DS domain. As shown in Figure 5, the Microsoft Entra Connector tool automatically synchronizes AD DS with Microsoft Entra ID. When you add or change any user accounts in AD DS, the Microsoft Entra Connector tool automatically updates Microsoft Entra ID.
 
 > [!NOTE]
-> Azure AD Connect also supports synchronization from any Lightweight Directory Access Protocol version 3 (LDAPv3)–compliant directory by using the information provided in [Generic LDAP Connector for FIM 2010 R2 Technical Reference](/previous-versions/mim/dn510997(v=ws.10)).
+> Microsoft Entra Connect also supports synchronization from any Lightweight Directory Access Protocol version 3 (LDAPv3)–compliant directory by using the information provided in [Generic LDAP Connector for FIM 2010 R2 Technical Reference](/previous-versions/mim/dn510997(v=ws.10)).
 
 > [!div class="mx-imgBorder"]
-> ![Automatic synchronization between AD DS and Azure AD.](images/edu-districtdeploy-fig5.png "Automatic synchronization between AD DS and Azure AD")
+> ![Automatic synchronization between AD DS and Azure AD.](images/edu-districtdeploy-fig5.png "Automatic synchronization between AD DS and Microsoft Entra ID")
 
-*Figure 5. Automatic synchronization between AD DS and Azure AD*
+*Figure 5. Automatic synchronization between AD DS and Microsoft Entra ID*
 
-For more information about how to perform this step, see the [Integrate on-premises AD DS with Azure AD](#integrate-on-premises-ad-ds-with-azure-ad) section later in this guide.
+For more information about how to perform this step, see the [Integrate on-premises AD DS with Microsoft Entra ID](#integrate-on-premises-ad-ds-with-azure-ad) section later in this guide.
 
-### Method 2: Bulk import into Azure AD from a .csv file
+<a name='method-2-bulk-import-into-azure-ad-from-a-csv-file'></a>
 
-In this method, you've no on-premises AD DS domain. As shown in Figure 6, you manually prepare a .csv file with the student information from your source, and then manually import the information directly into Azure AD. The .csv file must be in the format that Office 365 specifies.
+### Method 2: Bulk import into Microsoft Entra ID from a .csv file
+
+In this method, you've no on-premises AD DS domain. As shown in Figure 6, you manually prepare a .csv file with the student information from your source, and then manually import the information directly into Microsoft Entra ID. The .csv file must be in the format that Office 365 specifies.
 
 > [!div class="mx-imgBorder"]
-> ![Bulk import into Azure AD from other sources.](images/edu-districtdeploy-fig6.png "Bulk import into Azure AD from other sources")
+> ![Bulk import into Microsoft Entra ID from other sources.](images/edu-districtdeploy-fig6.png "Bulk import into Microsoft Entra ID from other sources")
 
-*Figure 6. Bulk import into Azure AD from other sources*
+*Figure 6. Bulk import into Microsoft Entra ID from other sources*
 
 To implement this method, perform the following steps:
 
 1. Export the student information from the source.
 
    Put the student information in the format the bulk-import feature requires.
-2. Bulk-import the student information into Azure AD.
+2. Bulk-import the student information into Microsoft Entra ID.
 
    For more information about how to perform this step, see the [Bulk-import user and group accounts into Office 365](#bulk-import-user-and-group-accounts-into-office-365) section.
 
 #### Summary
 
-In this section, you selected the method for creating user accounts in your Office 365 subscription. Ultimately, these user accounts are in Azure AD (which is the identity management system for Office 365). Now, you’re ready to create your Office 365 accounts.
+In this section, you selected the method for creating user accounts in your Office 365 subscription. Ultimately, these user accounts are in Microsoft Entra ID (which is the identity management system for Office 365). Now, you’re ready to create your Office 365 accounts.
 
-## Integrate on-premises AD DS with Azure AD
+<a name='integrate-on-premises-ad-ds-with-azure-ad'></a>
 
-You can integrate your on-premises AD DS domain with Azure AD to provide identity management for your Office 365 tenant. With this integration, you can synchronize the users, security groups, and distribution lists in your AD DS domain with Azure AD with the Azure AD Connect tool. Users will be able to sign in to Office 365 automatically by using their email account and the same password they use to sign in to AD DS.
+## Integrate on-premises AD DS with Microsoft Entra ID
+
+You can integrate your on-premises AD DS domain with Microsoft Entra ID to provide identity management for your Office 365 tenant. With this integration, you can synchronize the users, security groups, and distribution lists in your AD DS domain with Microsoft Entra ID with the Microsoft Entra Connect tool. Users will be able to sign in to Office 365 automatically by using their email account and the same password they use to sign in to AD DS.
 
 > [!NOTE]
 > If your institution doesn't  have an on-premises AD DS domain, you can skip this section.
 
 ### Select a synchronization model
 
-Before you deploy AD DS and Azure AD synchronization, determine where you want to deploy the server that runs Azure AD Connect.
+Before you deploy AD DS and Microsoft Entra synchronization, determine where you want to deploy the server that runs Microsoft Entra Connect.
 
-You can deploy the Azure AD Connect tool:
+You can deploy the Microsoft Entra Connect tool:
 
-- **On premises.** As shown in Figure 7, Azure AD Connect runs on premises which has the advantage of not requiring a VPN connection to Azure. It does, however, require a virtual machine (VM) or physical server.
-
-  > [!div class="mx-imgBorder"]
-  > ![Azure AD Connect on premises.](images/edu-districtdeploy-fig7.png "Azure AD Connect on premises")
-
-  *Figure 7. Azure AD Connect on premises*
-
-- **In Azure.** As shown in Figure 8, Azure AD Connect runs on a VM in Azure AD, which has the advantages of being faster to provision (than a physical, on-premises server), offers better site availability, and helps reduce the number of on-premises servers. The disadvantage is that you need to deploy a VPN gateway on premises.
+- **On premises.** As shown in Figure 7, Microsoft Entra Connect runs on premises which has the advantage of not requiring a VPN connection to Azure. It does, however, require a virtual machine (VM) or physical server.
 
   > [!div class="mx-imgBorder"]
-  > ![Azure AD Connect in Azure.](images/edu-districtdeploy-fig8.png "Azure AD Connect in Azure")
+  > ![Microsoft Entra Connect on premises.](images/edu-districtdeploy-fig7.png "Microsoft Entra Connect on premises")
 
-  *Figure 8. Azure AD Connect in Azure*
+  *Figure 7. Microsoft Entra Connect on premises*
 
-This guide describes how to run Azure AD Connect on premises. For information about running Azure AD Connect in Azure, see [Deploy Office 365 Directory Synchronization (DirSync) in Microsoft Azure](/microsoft-365/enterprise/deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure).
+- **In Azure.** As shown in Figure 8, Microsoft Entra Connect runs on a VM in Microsoft Entra ID, which has the advantages of being faster to provision (than a physical, on-premises server), offers better site availability, and helps reduce the number of on-premises servers. The disadvantage is that you need to deploy a VPN gateway on premises.
 
-### Deploy Azure AD Connect on premises
+  > [!div class="mx-imgBorder"]
+  > ![Microsoft Entra Connect in Azure.](images/edu-districtdeploy-fig8.png "Microsoft Entra Connect in Azure")
 
-In this synchronization model (illustrated in Figure 7), you run Azure AD Connect on premises on a physical device or in a VM. Azure AD Connect synchronizes AD DS user and group accounts with Azure AD and includes a wizard that helps you configure Azure AD Connect for your AD DS domain and Office 365 subscription. First, you install Azure AD Connect; then, you run the wizard to configure it for your institution.
+  *Figure 8. Microsoft Entra Connect in Azure*
 
-#### To deploy AD DS and Azure AD synchronization
+This guide describes how to run Microsoft Entra Connect on premises. For information about running Microsoft Entra Connect in Azure, see [Deploy Office 365 Directory Synchronization (DirSync) in Microsoft Azure](/microsoft-365/enterprise/deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure).
 
-1. Configure your environment to meet the prerequisites for installing Azure AD Connect by performing the steps in [Prerequisites for Azure AD Connect](/azure/active-directory/cloud-sync/how-to-prerequisites).
+<a name='deploy-azure-ad-connect-on-premises'></a>
 
-2. In the VM or on the physical device that will run Azure AD Connect, sign in with a domain administrator account.
+### Deploy Microsoft Entra Connect on premises
 
-3. Install Azure AD Connect by performing the steps in [Install Azure AD Connect](/azure/active-directory/hybrid/whatis-hybrid-identity#install-azure-ad-connect).
+In this synchronization model (illustrated in Figure 7), you run Microsoft Entra Connect on premises on a physical device or in a VM. Microsoft Entra Connect synchronizes AD DS user and group accounts with Microsoft Entra ID and includes a wizard that helps you configure Microsoft Entra Connect for your AD DS domain and Office 365 subscription. First, you install Microsoft Entra Connect; then, you run the wizard to configure it for your institution.
 
-4. Configure Azure AD Connect features based on your institution’s requirements by performing the steps in [Configure sync features](/azure/active-directory/hybrid/whatis-hybrid-identity#configure-sync-features).
+<a name='to-deploy-ad-ds-and-azure-ad-synchronization'></a>
 
-Now that you've used on premises Azure AD Connect to deploy AD DS and Azure AD synchronization, you’re ready to verify that Azure AD Connect is synchronizing AD DS user and group accounts with Azure AD.
+#### To deploy AD DS and Microsoft Entra synchronization
+
+1. Configure your environment to meet the prerequisites for installing Microsoft Entra Connect by performing the steps in [Prerequisites for Microsoft Entra Connect](/azure/active-directory/cloud-sync/how-to-prerequisites).
+
+2. In the VM or on the physical device that will run Microsoft Entra Connect, sign in with a domain administrator account.
+
+3. Install Microsoft Entra Connect by performing the steps in [Install Microsoft Entra Connect](/azure/active-directory/hybrid/whatis-hybrid-identity#install-azure-ad-connect).
+
+4. Configure Microsoft Entra Connect features based on your institution’s requirements by performing the steps in [Configure sync features](/azure/active-directory/hybrid/whatis-hybrid-identity#configure-sync-features).
+
+Now that you've used on premises Microsoft Entra Connect to deploy AD DS and Microsoft Entra synchronization, you’re ready to verify that Microsoft Entra Connect is synchronizing AD DS user and group accounts with Microsoft Entra ID.
 
 ### Verify synchronization
 
-Azure AD Connect should start synchronization immediately. Depending on the number of users in your AD DS domain, the synchronization process can take some time. To monitor the process, view the number of AD DS users and groups the tool has synchronized with Azure AD in the Office 365 admin console.
+Microsoft Entra Connect should start synchronization immediately. Depending on the number of users in your AD DS domain, the synchronization process can take some time. To monitor the process, view the number of AD DS users and groups the tool has synchronized with Microsoft Entra ID in the Office 365 admin console.
 
-#### To verify AD DS and Azure AD synchronization
+<a name='to-verify-ad-ds-and-azure-ad-synchronization'></a>
+
+#### To verify AD DS and Microsoft Entra synchronization
 
 1. Open https://portal.office.com in your web browser.
 
@@ -611,11 +625,11 @@ Azure AD Connect should start synchronization immediately. Depending on the numb
    The list of security group members should mirror the group membership for the corresponding security group in AD DS.
 8. Close the browser.
 
-Now that you've verified Azure AD Connect synchronization, you’re ready to assign user licenses for Azure AD Premium.
+Now that you've verified Microsoft Entra Connect synchronization, you’re ready to assign user licenses for Microsoft Entra ID P1 or P2.
 
 #### Summary
 
-In this section, you selected your synchronization model, deployed Azure AD Connect, and verified that Azure AD is synchronizing properly.
+In this section, you selected your synchronization model, deployed Microsoft Entra Connect, and verified that Microsoft Entra ID is synchronizing properly.
 
 ## Bulk-import user and group accounts into AD DS
 
@@ -663,7 +677,7 @@ For more information about how to import user accounts into AD DS by using:
 
 #### Summary
 
-In this section, you selected the bulk-import method, created the source file that contains the user and group accounts, and imported the user and group accounts into AD DS. If you've Azure AD Connect, it automatically synchronizes the new AD DS user and group accounts to Azure AD. Now, you’re ready to assign user licenses for Azure AD Premium in the [Assign user licenses for Azure AD Premium](#assign-user-licenses-for-azure-ad-premium) section later in this guide.
+In this section, you selected the bulk-import method, created the source file that contains the user and group accounts, and imported the user and group accounts into AD DS. If you've Microsoft Entra Connect, it automatically synchronizes the new AD DS user and group accounts to Microsoft Entra ID. Now, you’re ready to assign user licenses for Microsoft Entra ID P1 or P2 in the [Assign user licenses for Microsoft Entra ID P1 or P2](#assign-user-licenses-for-azure-ad-premium) section later in this guide.
 
 ## Bulk-import user and group accounts into Office 365
 
@@ -674,7 +688,7 @@ You can bulk-import user and group accounts directly into Office 365, reducing t
 Now that you've created your new Office 365 Education subscription, you need to create user accounts. You can add user accounts for the teachers, other faculty, and students who will use the classroom.
 
 > [!NOTE]
-> If your institution has AD DS, don’t create security accounts in Office 365. Instead, create the security groups in AD DS, and then use Azure AD integration to synchronize the security groups with your Office 365 tenant.
+> If your institution has AD DS, don’t create security accounts in Office 365. Instead, create the security groups in AD DS, and then use Microsoft Entra integration to synchronize the security groups with your Office 365 tenant.
 
 You can use the Microsoft 365 admin center to add individual Office 365 accounts manually—a reasonable process when you’re adding only a few users. If you've many users, however, you can automate the process by creating a list of those users, and then use that list to create user accounts (that is, bulk-add users).
 
@@ -692,7 +706,7 @@ The email accounts are assigned temporary passwords on creation. You must commun
 Assign SharePoint Online resource permissions to Office 365 security groups, not individual user accounts. For example, create one security group for faculty members and another for students. Then, you can assign unique SharePoint Online resource permissions to faculty members and a different set of permissions to students. Add or remove users from the security groups to grant or revoke access to SharePoint Online resources.
 
 > [!NOTE]
-> If your institution has AD DS, don’t create security accounts in Office 365. Instead, create the security groups in AD DS, and then use Azure AD integration to synchronize the security groups with your Office 365 tenant.
+> If your institution has AD DS, don’t create security accounts in Office 365. Instead, create the security groups in AD DS, and then use Microsoft Entra integration to synchronize the security groups with your Office 365 tenant.
 
 For information about creating security groups, see [Create an Office 365 Group in the admin center](/microsoft-365/admin/create-groups/create-groups).
 
@@ -715,13 +729,15 @@ For information about creating email distribution groups, see [Create a Microsof
 
 #### Summary
 
-You've bulk-imported the user accounts into Office 365. First, you selected the bulk-import method. Next, you created the Office 365 security groups in Office 365. Finally, you created the Office 365 email distribution groups. Now, you’re ready to assign user licenses for Azure AD Premium.
+You've bulk-imported the user accounts into Office 365. First, you selected the bulk-import method. Next, you created the Office 365 security groups in Office 365. Finally, you created the Office 365 email distribution groups. Now, you’re ready to assign user licenses for Microsoft Entra ID P1 or P2.
 
-## Assign user licenses for Azure AD Premium
+<a name='assign-user-licenses-for-azure-ad-premium'></a>
 
-If you enabled Azure AD Premium in the [Enable Azure AD Premium](#enable-azure-ad-premium) section, you must now assign Azure AD Premium licenses to the users who need the features this edition offers. For example, you may want the users who have access to confidential student information to use MFA. In this example, you could assign Azure AD Premium only to those users.
+## Assign user licenses for Microsoft Entra ID P1 or P2
 
-For more information about assigning user licenses for Azure AD Premium, see [How to assign EMS/Azure AD Premium licenses to user accounts](https://channel9.msdn.com/Series/Azure-Active-Directory-Videos-Demos/How-to-assign-Azure-AD-Premium-Licenses-to-user-accounts).
+If you enabled Microsoft Entra ID P1 or P2 in the [Enable Microsoft Entra ID P1 or P2](#enable-azure-ad-premium) section, you must now assign Microsoft Entra ID P1 or P2 licenses to the users who need the features this edition offers. For example, you may want the users who have access to confidential student information to use MFA. In this example, you could assign Microsoft Entra ID P1 or P2 only to those users.
+
+For more information about assigning user licenses for Microsoft Entra ID P1 or P2, see [How to assign EMS/Azure AD Premium licenses to user accounts](https://channel9.msdn.com/Series/Azure-Active-Directory-Videos-Demos/How-to-assign-Azure-AD-Premium-Licenses-to-user-accounts).
 
 ## Create and configure a Microsoft Store for Business portal
 
@@ -1048,7 +1064,7 @@ Use the information in Table 17 to help you determine whether you need to config
 
 |Recommendation|Description|
 |--- |--- |
-|Use of Microsoft accounts|You want faculty and students to use only Azure AD accounts for institution-owned devices. For these devices, don't  use Microsoft accounts or associate a Microsoft account with the Azure AD accounts.<br>**Note**  Personal devices typically use Microsoft accounts. Faculty and students can associate their Microsoft account with their Azure AD account on these devices. <br>**Group Policy.** Configure the [Accounts: Block Microsoft accounts](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj966262(v=ws.11)) Group Policy setting to use the **Users can’t add Microsoft accounts** setting option.<br>****Intune**.** To enable or disable the use of Microsoft accounts, use the **Allow Microsoft account**, **Allow adding non-Microsoft accounts manually**, and **Allow settings synchronization for Microsoft accounts** policy settings under the **Accounts and Synchronization** section of a **Windows 10 General Configuration** policy.|
+|Use of Microsoft accounts|You want faculty and students to use only Microsoft Entra accounts for institution-owned devices. For these devices, don't  use Microsoft accounts or associate a Microsoft account with the Microsoft Entra accounts.<br>**Note**  Personal devices typically use Microsoft accounts. Faculty and students can associate their Microsoft account with their Microsoft Entra account on these devices. <br>**Group Policy.** Configure the [Accounts: Block Microsoft accounts](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj966262(v=ws.11)) Group Policy setting to use the **Users can’t add Microsoft accounts** setting option.<br>****Intune**.** To enable or disable the use of Microsoft accounts, use the **Allow Microsoft account**, **Allow adding non-Microsoft accounts manually**, and **Allow settings synchronization for Microsoft accounts** policy settings under the **Accounts and Synchronization** section of a **Windows 10 General Configuration** policy.|
 |Restrict the local administrator accounts on the devices|Ensure that only authorized users are local administrators on institution-owned devices. Typically, you don’t want students to be administrators on instruction-owned devices. Explicitly specify the users who will be local administrators on a group of devices.<br>**Group Policy**. Create a Local Group Policy preference to limit the local administrators group membership. Select the Delete all member users and Delete all member groups check boxes to remove any existing members. For more information about how to configure Local Group preferences, see Configure a Local Group Item. <br>**Intune**. Not available.|
 |Manage the built-in administrator account created during device deployment|When you use MDT to deploy Windows 10, the MDT deployment process automatically creates a local Administrator account with the password you specified. As a security best practice, rename the built-in Administrator account and (optionally) disable it.<br> **Group Policy**. To rename the built-in Administrator account, use the Accounts: Rename administrator account Group policy setting. For more information about how to rename the built-in Administrator account, see [To rename the Administrator account using the Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-essentials-sbs/cc747484(v=ws.10)). You specify the new name for the Administrator account. To disable the built-in Administrator account, use the Accounts: Administrator account status Group policy setting. For more information about how to disable the built-in Administrator account, see [Accounts: Administrator account status](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj852165(v=ws.11)).<br> **Intune**. Not available.|
 |Control Microsoft Store access|You can control access to Microsoft Store and whether existing Microsoft Store apps receive updates. You can only disable the Microsoft Store app in Windows 10 Education and Windows 10 Enterprise.<br>**Group policy**. To disable the Microsoft Store app, use the Turn off the Store Application group policy setting. To prevent Microsoft Store apps from receiving updates, use the Turn off Automatic Download and Install of updates Group Policy setting. For more information about configuring these settings, see Can I use Group Policy to control the Microsoft Store in my enterprise environment?<br>**Intune**. To enable or disable Microsoft Store access, use the Allow application store policy setting in the Apps section of a Windows 10 General Configuration policy.|
