@@ -20,10 +20,10 @@ ms.topic: reference
 
 <!-- Personalization-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-The Personalization CSP can set the lock screen and desktop background images. Setting these policies also prevents the user from changing the image. You can also use the Personalization settings in a provisioning package.
+The Personalization CSP can set the lock screen, desktop background images and company branding on sign-in screen ([BootToCloud mode](policy-csp-clouddesktop.md#boottocloudmode) only) . Setting these policies also prevents the user from changing the image. You can also use the Personalization settings in a provisioning package.
 
 > [!IMPORTANT]
-> Personalization CSP is supported in Windows Enterprise and Education SKUs. It works in Windows Professional only when SetEduPolicies in [SharedPC CSP](sharedpc-csp.md) is set.
+> Personalization CSP is supported in Windows Enterprise and Education SKUs. It works in Windows Professional only when SetEduPolicies in [SharedPC CSP](sharedpc-csp.md) is set, or when the device is configured in [Shared PC mode with BootToCloudPCEnhanced policy](clouddesktop-csp.md#boottocloudpcenhanced).
 <!-- Personalization-Editable-End -->
 
 <!-- Personalization-Tree-Begin -->
