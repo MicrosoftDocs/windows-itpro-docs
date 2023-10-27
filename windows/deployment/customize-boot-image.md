@@ -1273,8 +1273,8 @@ The **boot.wim** that is part of Windows installation media isn't supported for 
 
 This walk-through isn't intended for use with Windows Server 2012 R2. The steps in this article may work with Windows Server 2012 R2 when using older versions of the Windows ADK. However, it may have compatibility problems with versions of the Windows ADK that are newer than the [ADK for Windows 10, version 2004](/windows-hardware/get-started/adk-install#other-adk-downloads). To resolve compatibility problems with newer ADKs and Windows Server 2012 R2:
 
-1. Upgrade Windows Server 2012 R2 to a newer version of Windows Server.
-1. Perform the boot image customizations on a computer running a version of Windows that supports the newer ADKs, for example Windows 10 or Windows 11, and then transfer the modified boot image to the Windows Server 2012 R2 server.
+1. Upgrade **Windows Server 2012 R2** to a newer version of Windows Server.
+1. Perform the boot image customizations on a computer running a version of Windows that supports the newer ADKs, for example, Windows 10 or Windows 11, and then transfer the modified boot image to the Windows Server 2012 R2 server.
 
 For more information, see [Windows Server 2012 R2 Lifecycle](/lifecycle/products/windows-server-2012-r2).
 
