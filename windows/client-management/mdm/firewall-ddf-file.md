@@ -4,7 +4,7 @@ description: View the XML file containing the device description framework (DDF)
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 08/02/2023
+ms.date: 10/03/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -3030,7 +3030,7 @@ The following XML file contains the device description framework (DDF) for the F
                 <MIME />
               </DFType>
               <MSFT:Applicability>
-                <MSFT:OsBuildVersion>10.0.25398</MSFT:OsBuildVersion>
+                <MSFT:OsBuildVersion>10.0.25398, 10.0.22621.2352</MSFT:OsBuildVersion>
                 <MSFT:CspVersion>1.0</MSFT:CspVersion>
               </MSFT:Applicability>
               <MSFT:AllowedValues ValueType="ENUM">
@@ -3064,7 +3064,7 @@ The following XML file contains the device description framework (DDF) for the F
                 <DDFName />
               </DFType>
               <MSFT:Applicability>
-                <MSFT:OsBuildVersion>10.0.25398</MSFT:OsBuildVersion>
+                <MSFT:OsBuildVersion>10.0.25398, 10.0.22621.2352</MSFT:OsBuildVersion>
                 <MSFT:CspVersion>1.0</MSFT:CspVersion>
               </MSFT:Applicability>
             </DFProperties>
@@ -3257,7 +3257,7 @@ The following XML file contains the device description framework (DDF) for the F
                 <DDFName />
               </DFType>
               <MSFT:Applicability>
-                <MSFT:OsBuildVersion>10.0.25398</MSFT:OsBuildVersion>
+                <MSFT:OsBuildVersion>10.0.25398, 10.0.22621.2352</MSFT:OsBuildVersion>
                 <MSFT:CspVersion>1.0</MSFT:CspVersion>
               </MSFT:Applicability>
             </DFProperties>
@@ -3450,7 +3450,7 @@ The following XML file contains the device description framework (DDF) for the F
                 <DDFName />
               </DFType>
               <MSFT:Applicability>
-                <MSFT:OsBuildVersion>10.0.25398</MSFT:OsBuildVersion>
+                <MSFT:OsBuildVersion>10.0.25398, 10.0.22621.2352</MSFT:OsBuildVersion>
                 <MSFT:CspVersion>1.0</MSFT:CspVersion>
               </MSFT:Applicability>
             </DFProperties>
@@ -4597,7 +4597,7 @@ If not specified the detault is OUT.</Description>
                 <MIME />
               </DFType>
               <MSFT:AllowedValues ValueType="Range">
-                <MSFT:Value>[0-65535]</MSFT:Value>
+                <MSFT:Value>[0-255]</MSFT:Value>
               </MSFT:AllowedValues>
             </DFProperties>
           </Node>
@@ -4833,7 +4833,7 @@ If not specified - a new rule is disabled by default.</Description>
                 <MIME />
               </DFType>
               <MSFT:Applicability>
-                <MSFT:OsBuildVersion>10.0.25398</MSFT:OsBuildVersion>
+                <MSFT:OsBuildVersion>10.0.25398, 10.0.22621.2352</MSFT:OsBuildVersion>
                 <MSFT:CspVersion>1.0</MSFT:CspVersion>
               </MSFT:Applicability>
               <MSFT:AllowedValues ValueType="Flag">

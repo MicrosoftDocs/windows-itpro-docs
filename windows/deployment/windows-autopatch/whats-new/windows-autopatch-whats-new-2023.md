@@ -1,7 +1,7 @@
 ---
 title: What's new 2023
 description: This article lists the 2023 feature releases and any corresponding Message center post numbers.
-ms.date: 09/11/2023 
+ms.date: 10/27/2023 
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: whats-new
@@ -21,6 +21,20 @@ This article lists new and updated feature releases, and service releases, with 
 
 Minor corrections such as typos, style, or formatting issues aren't listed.
 
+## October 2023
+
+### October feature releases or updates
+
+| Article | Description |
+| ----- | ----- |
+| [Microsoft 365 Apps for enterprise](../operate/windows-autopatch-microsoft-365-apps-enterprise.md#microsoft-365-apps-for-enterprise-update-controls) | Added more information about the Allow setting in the [Microsoft 365 Apps for enterprise update controls](../operate/windows-autopatch-microsoft-365-apps-enterprise.md#microsoft-365-apps-for-enterprise-update-controls) section |
+
+## October service release
+
+| Message center post number | Description |
+| ----- | ----- |
+| [MC680344](https://admin.microsoft.com/adminportal/home#/MessageCenter) | Planned Maintenance: Service Improvements |
+
 ## September 2023
 
 ### September feature releases or updates
@@ -33,6 +47,8 @@ Minor corrections such as typos, style, or formatting issues aren't listed.
 
 | Message center post number | Description |
 | ----- | ----- |
+| [MC678305](https://admin.microsoft.com/adminportal/home#/MessageCenter) | September 2023 Windows Autopatch baseline configuration update |
+| [MC678303](https://admin.microsoft.com/adminportal/home#/MessageCenter) | Windows Autopatch availability within Microsoft Intune Admin Center |
 | [MC674422](https://admin.microsoft.com/adminportal/home#/MessageCenter) | Public Preview: Windows Autopatch Reliability Report |
 | [MC672750](https://admin.microsoft.com/adminportal/home#/MessageCenter) | August 2023 Windows Autopatch baseline configuration update |
 

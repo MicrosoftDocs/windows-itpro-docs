@@ -1,6 +1,6 @@
 ---
 title: Configure federated sign-in for Windows devices
-description: Learn about federated sign-in in Windows how to configure it.
+description: Learn how federated sign-in in Windows works and how to configure it.
 ms.date: 09/11/2023
 ms.topic: how-to
 appliesto:
@@ -15,7 +15,7 @@ ms.collection:
 
 Starting in Windows 11 SE, version 22H2 and Windows 11 Pro Edu/Education, version 22H2 with [KB5022913][KB-1], you can enable your users to sign-in using a federated identity provider (IdP) via web sign-in.\
 This feature is called *federated sign-in*.\
-Federated sign-in is a great way to simplify the sign-in process for your users: instead of having to remember a username and password defined in Azure AD, they can sign-in using their existing credentials from the IdP. For example, students and educators can use QR code badges to sign-in.
+Federated sign-in is a great way to simplify the sign-in process for your users: instead of having to remember a username and password defined in Microsoft Entra ID, they can sign-in using their existing credentials from the IdP. For example, students and educators can use QR code badges to sign-in.
 
 ## Benefits of federated sign-in
 
@@ -28,27 +28,27 @@ With fewer credentials to remember and a simplified sign-in process, students ar
 
 To implement federated sign-in, the following prerequisites must be met:
 
-1. An Azure AD tenant, with one or multiple domains federated to a third-party IdP. For more information, see [What is federation with Azure AD?][AZ-1] and [Use a SAML 2.0 IdP for Single Sign On][AZ-4]
+1. A Microsoft Entra tenant, with one or multiple domains federated to a third-party IdP. For more information, see [What is federation with Microsoft Entra ID?][AZ-1] and [Use a SAML 2.0 IdP for Single Sign On][AZ-4]
     >[!NOTE]
-    >If your organization uses a third-party federation solution, you can configure single sign-on to Azure Active Directory if the solution is compatible with Azure Active Directory. For questions regarding compatibility, contact your identity provider. If you're an IdP, and would like to validate your solution for interoperability, refer to these [guidelines][MSFT-1].
+    >If your organization uses a third-party federation solution, you can configure single sign-on to Microsoft Entra ID if the solution is compatible with Microsoft Entra ID. For questions regarding compatibility, contact your identity provider. If you're an IdP, and would like to validate your solution for interoperability, refer to these [guidelines][MSFT-1].
 
-    - For a step-by-step guide on how to configure **Google Workspace** as an identity provider for Azure AD, see [Configure federation between Google Workspace and Azure AD](configure-aad-google-trust.md)
-    - For a step-by-step guide on how to configure **Clever** as an identity provider for Azure AD, see [Setup guide for Badges into Windows and Azure AD][EXT-1]
+    - For a step-by-step guide on how to configure **Google Workspace** as an identity provider for Microsoft Entra ID, see [Configure federation between Google Workspace and Microsoft Entra ID](configure-aad-google-trust.md)
+    - For a step-by-step guide on how to configure **Clever** as an identity provider for Microsoft Entra ID, see [Setup guide for Badges into Windows and Microsoft Entra ID][EXT-1]
 1. Individual IdP accounts created: each user requires an account defined in the third-party IdP platform
-1. Individual Azure AD accounts created: each user requires a matching account defined in Azure AD. These accounts are commonly created through automated solutions, for example:
+1. Individual Microsoft Entra accounts created: each user requires a matching account defined in Microsoft Entra ID. These accounts are commonly created through automated solutions, for example:
     - [School Data Sync (SDS)][SDS-1]
-    - [Azure AD Connect sync][AZ-3] for environment with on-premises AD DS
+    - [Microsoft Entra Connect Sync][AZ-3] for environment with on-premises AD DS
     - PowerShell scripts that call the [Microsoft Graph API][GRAPH-1]
     - provisioning tools offered by the IdP
 
-    For more information about identity matching, see [Identity matching in Azure AD](#identity-matching-in-azure-ad).
-1. Licenses assigned to the Azure AD user accounts. It's recommended to assign licenses to a dynamic group: when new users are provisioned in Azure AD, the licenses are automatically assigned. For more information, see [Assign licenses to users by group membership in Azure Active Directory][AZ-2]
+    For more information about identity matching, see [Identity matching in Microsoft Entra ID](#identity-matching-in-azure-ad).
+1. Licenses assigned to the Microsoft Entra user accounts. It's recommended to assign licenses to a dynamic group: when new users are provisioned in Microsoft Entra ID, the licenses are automatically assigned. For more information, see [Assign licenses to users by group membership in Microsoft Entra ID][AZ-2]
 1. Enable federated sign-in on the Windows devices
 
 To use federated sign-in, the devices must have Internet access. This feature doesn't work without it, as the authentication is done over the Internet.
 
 > [!IMPORTANT]
-> WS-Fed is the only supported federated protocol to join a device to Azure AD. If you have a SAML 2.0 IdP, it's recommended to complete the Azure AD join process using one of the following methods:
+> WS-Fed is the only supported federated protocol to join a device to Microsoft Entra ID. If you have a SAML 2.0 IdP, it's recommended to complete the Microsoft Entra join process using one of the following methods:
 > - Provisioning packages (PPKG)
 > - Windows Autopilot self-deploying mode
 
@@ -173,7 +173,7 @@ As users enter their username, they're redirected to the identity provider sign-
 
 > [!IMPORTANT]
 > For student assigned (1:1) devices, once the policy is enabled, the first user who sign-in to the device will also set the disambiguation page to the identity provider domain on the device. This means that the device will be defaulting to that IdP. The user can exit the federated sign-in flow by pressing <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Delete</kbd> to get back to the standard Windows sign-in screen.
-> The behavior is different for student shared devices, where the disambiguation page is always shown, unless preferred Azure AD tenant name is configured.
+> The behavior is different for student shared devices, where the disambiguation page is always shown, unless preferred Microsoft Entra tenant name is configured.
 
 ## Important considerations
 
@@ -196,29 +196,33 @@ The following issues are known to affect student shared devices:
 
 For student shared devices, it's recommended to configure the account management policies to automatically delete the user profiles after a certain period of inactivity or disk levels. For more information, see [Set up a shared or guest Windows device][WIN-3].
 
-### Preferred Azure AD tenant name
+<a name='preferred-azure-ad-tenant-name'></a>
 
-To improve the user experience, you can configure the *preferred Azure AD tenant name* feature.\
-When using preferred AAD tenant name, the users bypass the disambiguation page and are redirected to the identity provider sign-in page. This configuration can be especially useful for student shared devices, where the disambiguation page is always shown.
+### Preferred Microsoft Entra tenant name
+
+To improve the user experience, you can configure the *preferred Microsoft Entra tenant name* feature.\
+When using preferred Microsoft Entra tenant name, the users bypass the disambiguation page and are redirected to the identity provider sign-in page. This configuration can be especially useful for student shared devices, where the disambiguation page is always shown.
 
 For more information about preferred tenant name, see [Authentication CSP - PreferredAadTenantDomainName][WIN-4].
 
-### Identity matching in Azure AD
+<a name='identity-matching-in-azure-ad'></a>
 
-When an Azure AD user is federated, the user's identity from the IdP must match an existing user object in Azure AD.
-After the token sent by the IdP is validated, Azure AD searches for a matching user object in the tenant by using an attribute called *ImmutableId*.
+### Identity matching in Microsoft Entra ID
+
+When a Microsoft Entra user is federated, the user's identity from the IdP must match an existing user object in Microsoft Entra ID.
+After the token sent by the IdP is validated, Microsoft Entra ID searches for a matching user object in the tenant by using an attribute called *ImmutableId*.
 
 > [!NOTE]
 > The ImmutableId is a string value that **must be unique** for each user in the tenant, and it shouldn't change over time. For example, the ImmutableId could be the student ID or SIS ID. The ImmutableId value should be based on the federation setup and configuration with your IdP, so confirm with your IdP before setting it.
 
 If the matching object is found, the user is signed-in. Otherwise, the user is presented with an error message. The following picture shows that a user with the ImmutableId *260051* can't be found:
 
-:::image type="content" source="images/federation/user-match-lookup-failure.png" alt-text="Screenshot of Azure AD sign-in error: a user with a matching ImmutableId can't be found in the tenant." lightbox="images/federation/user-match-lookup-failure.png":::
+:::image type="content" source="images/federation/user-match-lookup-failure.png" alt-text="Screenshot of Microsoft Entra sign-in error: a user with a matching ImmutableId can't be found in the tenant." lightbox="images/federation/user-match-lookup-failure.png":::
 
 > [!IMPORTANT]
 > The ImmutableId matching is case-sensitive.
 
-The ImmutableId is typically configured when the user is created in Azure AD, but it can also be updated later.\
+The ImmutableId is typically configured when the user is created in Microsoft Entra ID, but it can also be updated later.\
 In a scenario where a user is federated and you want to change the ImmutableId, you must:
 
 1. Convert the federated user to a cloud-only user (update the UPN to a non-federated domain)
