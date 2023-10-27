@@ -70,7 +70,7 @@ This walkthrough describes how to customize a Windows PE boot image including up
 >
 > - Microsoft Deployment Toolkit (MDT) doesn't support versions of Windows or the Windows ADK beyond Windows 10. If using MDT, the recommendation is to instead use the [ADK for Windows 10, version 2004](/windows-hardware/get-started/adk-install#other-adk-downloads). This version was the last version of the Windows ADK supported by MDT.
 >
-> - The latest versions of the **Windows PE add-on for the Windows ADK** only include 64-bit boot images. If a 32-bit boot image is required, then the recommendation in this scenario is to also use the [ADK for Windows 10, version 2004](/windows-hardware/get-started/adk-install#other-adk-downloads). This version of the Windows ADK was the last version to include both 32-bit and 64-bit boot images.
+> - The latest versions of the **Windows PE add-on for the Windows ADK** only includes a 64-bit boot image. If a 32-bit boot image is required, then the recommendation in this scenario is to also use the [ADK for Windows 10, version 2004](/windows-hardware/get-started/adk-install#other-adk-downloads). This version of the Windows ADK was the last version to include both 32-bit and 64-bit boot images.
 
 ## Step 2: Download cumulative update (CU)
 
@@ -511,7 +511,7 @@ The problem occurs when the WinPE boot image that is being serviced requires the
 
 For scenarios where older versions of the Windows ADK and Windows PE need to be used, for example when using Microsoft Deployment Toolkit (MDT), the servicing stack update needs to be installed before installing the cumulative update. The servicing stack update (SSU) is contained within the cumulative update (CU). To obtain the servicing stack update (SSU) so that it can be applied, it can be extracted from the cumulative update (CU).
 
-The following steps outline how to extract and then install the servicing stack update (SSU) to the boot image. Once the servicing stack update (SSU) has been installed in the boot image, then the cumulative update (CU) should be installed in the boot image without error:
+The following steps outline how to extract and then install the servicing stack update (SSU) to the boot image. Once the servicing stack update (SSU) has been installed in the boot image, then the cumulative update (CU) should install to the boot image without error:
 
 > [!IMPORTANT]
 >
@@ -530,7 +530,7 @@ The following steps outline how to extract and then install the servicing stack 
     **Example**:
 
     ```powershell
-    Start-Process "expand.exe" -ArgumentList " -f:* `"C:\Updates\windows11.0-kb5029263-x64_4f5fe19bbec786f5e445d3e71bcdf234fe2cbbec.msu`" `"C:\Updates\Extract`"" -Wait -LoadUserProfile
+    Start-Process "expand.exe" -ArgumentList " -f:* `"C:\Updates\windows10.0-kb5028166-x64_fe3aa2fef685c0e76e1f5d34d529624294273f41.msu`" `"C:\Updates\Extract`"" -Wait -LoadUserProfile
     ```
 
     For more information, see [Start-Process](/powershell/module/microsoft.powershell.management/start-process) and [expand](/windows-server/administration/windows-commands/expand).
@@ -566,7 +566,7 @@ The following steps outline how to extract and then install the servicing stack 
     **Example**:
 
     ```powershell
-    Add-WindowsPackage -PackagePath "C:\Updates\Extract\SSU-22621.2061.cab" -Path "C:\Mount" -Verbose
+    Add-WindowsPackage -PackagePath "C:\Updates\Extract\SSU-19041.3205-x64" -Path "C:\Mount" -Verbose
     ```
 
     For more information, see [Add-WindowsPackage](/powershell/module/dism/add-windowspackage).
@@ -930,7 +930,7 @@ This process has the following advantages:
 
 1. Keeps `boot.wim` pristine.
 
-1. Make sure that changes done to a boot image are being done to a pristine unmodified version of the boot image. This process helps avoid corruption when a boot image is updated multiple times. I can also correct issues with existing boot images.
+1. Makes sure that changes done to a boot image are being done to a pristine unmodified version of the boot image. This process helps avoid corruption when a boot image is updated multiple times. I can also correct issues with existing boot images.
 
 1. Helps manage components in the boot image. The process doesn't need to know what components may need to be removed from the boot image each time the boot image is rebuilt. Instead, it just needs to know what components need to be added to the boot image.
 
@@ -938,7 +938,7 @@ This process has the following advantages:
 
 Configuration Manager updates the `boot.wim` boot image in two scenarios:
 
-1. When Configuration Manager is upgraded between versions or hotfix roll-ups (HFRUs) is applied, `boot.wim` may be updated as part of the upgrade process.
+1. When Configuration Manager is upgraded between versions or a hotfix roll-up (HFRU) is applied, `boot.wim` may be updated as part of the upgrade process.
 
 1. When selecting the option **Reload this boot image with the current Windows PE version from the Windows ADK** in the **Update Distribution Points Wizard**.
 
@@ -954,7 +954,7 @@ The `winpe.wim` boot image from the Windows ADK should be updated because if `bo
 >
 > Never manually update the `boot.<package_id>.wim` boot image. In addition to facing the same issues when manually updating the `boot.wim` boot image,  the `boot.<package_id>.wim` boot image will also face additional issues such as:
 >
-> - Any time any changes are done to the boot image, such as adding drivers, and enabling the command prompt. etc, any manual changes done to the boot image, including the cumulative update, will be lost.
+> - Any time any changes are done to the boot image (adding drivers, enabling the command prompt, etc.), any manual changes done to the boot image, including the cumulative update, will be lost.
 >
 > - Manually changing the `boot.<package_id>.wim` boot image changes the hash value of the boot image. A change in the hash value of the boot image can lead to download failures when downloading the boot image from a distribution point.
 
@@ -985,7 +985,7 @@ For Microsoft Configuration Manager boot images to function correctly, it requir
 | Network/WinPE-WDS-Tools | `WinPE-WDS-Tools.cab` | NA | Yes |
 | Startup/WinPE-SecureStartup | `WinPE-SecureStartup.cab` | Scripting/WinPE-WMI | Yes |
 
-When adding optional components to any boot image used by Configuration Manager during the [Step 6: Add optional components to boot image](#step-6-add-optional-components-to-boot-image) step, make sure to first add the above-required components in the above order to the boot image. After adding the required components to the boot image, add any additional desired optional components to the boot image.
+When adding optional components to any boot image used by Configuration Manager during the [Step 6: Add optional components to boot image](#step-6-add-optional-components-to-boot-image) step, make sure to first add the above required components in the above order to the boot image. After adding the required components to the boot image, add any additional desired optional components to the boot image.
 
 For a list of all available WinPE optional components including descriptions for each component, see [WinPE Optional Components (OC) Reference: WinPE Optional Components](/windows-hardware/manufacture/desktop/winpe-add-packages--optional-components-reference#winpe-optional-components).
 
@@ -1043,7 +1043,7 @@ For Microsoft Deployment Toolkit (MDT) boot images to function correctly, it req
 | Startup/WinPE-SecureStartup | `WinPE-SecureStartup.cab` | Scripting/WinPE-WMI | Yes |
 | HTML/WinPE-HTA | `WinPE-HTA.cab` | Scripting/WinPE-WMI | Yes |
 
-When adding optional components to any boot image used by MDT during the [Step 6: Add optional components to boot image](#step-6-add-optional-components-to-boot-image) step, make sure to first add the above-required components in the above order to the boot image. After adding the required components to the boot image, add any additional desired optional components to the boot image.
+When adding optional components to any boot image used by MDT during the [Step 6: Add optional components to boot image](#step-6-add-optional-components-to-boot-image) step, make sure to first add the above required components in the above order to the boot image. After adding the required components to the boot image, add any additional desired optional components to the boot image.
 
 For a list of all available WinPE optional components including descriptions for each component, see [WinPE Optional Components (OC) Reference: WinPE Optional Components](/windows-hardware/manufacture/desktop/winpe-add-packages--optional-components-reference#winpe-optional-components).
 
