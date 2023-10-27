@@ -4,7 +4,7 @@ description: Learn more about the SecureAssessment CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 08/10/2023
+ms.date: 10/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -327,7 +327,7 @@ Indicates if printing is required by the app.
 
 <!-- Device-TesterAccount-Description-Begin -->
 <!-- Description-Source-DDF -->
-The user name of the test taking account. To specify a domain account, use domain\user. To specify an AAD account, use username@tenant.com. To specify a local account, use the username.
+The user name of the test taking account. To specify a domain account, use domain\user. To specify a Microsoft Entra account, use username@tenant.com. To specify a local account, use the username.
 <!-- Device-TesterAccount-Description-End -->
 
 <!-- Device-TesterAccount-Editable-Begin -->
