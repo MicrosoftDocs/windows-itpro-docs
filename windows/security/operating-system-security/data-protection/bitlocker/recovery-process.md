@@ -20,24 +20,24 @@ In some cases, users might have the recovery password in a printout or a USB fla
 
 A recovery key can't be stored in any of the following locations:
 
-   - The drive being encrypted
-   - The root directory of a non-removable drive
-   - An encrypted volume
+- The drive being encrypted
+- The root directory of a non-removable drive
+- An encrypted volume
 
-    > [!TIP]
-    > Ideally, a recovery key should be stored separate from the device itself.
+> [!TIP]
+> Ideally, a recovery key should be stored separate from the device itself.
 
 > [!NOTE]
 > Microsoft Entra ID provides a portal where recovery keys are also backed up, so users can retrieve their own recovery keys for self-service, if necessary.
 
 ### Help desk recovery
 
-If the user doesn't have a recovery password printed or on a USB flash drive, the user will need to be able to retrieve the recovery password from an online source. If the PC is a member of a domain, the recovery password can be backed up to AD DS. **However, back up of the recovery password to AD DS does not happen by default.** 
+If the user doesn't have a recovery password printed or on a USB flash drive, the user will need to be able to retrieve the recovery password from an online source. If the PC is a member of a domain, the recovery password can be backed up to AD DS. However, back up of the recovery password to AD DS does not happen by default.
 An administrator can obtain the *recovery password* from Microsoft Entra ID or AD DS and use it to unlock the drive. Storing recovery passwords in Microsoft Entra ID or AD DS is recommended to provide a way to obtain recovery passwords for drives in an organization if needed. This method requires to enable the policy settings:
 
-  - [Choose how BitLocker-protected operating system drives can be recovered](configure.md?tabs=os#choose-how-bitlocker-protected-operating-system-drives-can-be-recovered)
-  - [Choose how BitLocker-protected fixed drives can be recovered](configure.md?tabs=fixed#choose-how-bitlocker-protected-fixed-drives-can-be-recovered)
-  - [Choose how BitLocker-protected removable drives can be recovered](configure.md?tabs=removable#choose-how-bitlocker-protected-removable-drives-can-be-recovered)
+- [Choose how BitLocker-protected operating system drives can be recovered](configure.md?tabs=os#choose-how-bitlocker-protected-operating-system-drives-can-be-recovered)
+- [Choose how BitLocker-protected fixed drives can be recovered](configure.md?tabs=fixed#choose-how-bitlocker-protected-fixed-drives-can-be-recovered)
+- [Choose how BitLocker-protected removable drives can be recovered](configure.md?tabs=removable#choose-how-bitlocker-protected-removable-drives-can-be-recovered)
 
 In each of these policies, select **Save BitLocker recovery information to Active Directory Domain Services** and then choose which BitLocker recovery information to store in AD DS. Check the **Do not enable BitLocker until recovery information is stored in AD
 DS** check box if it's desired to prevent users from enabling BitLocker unless the computer is connected to the domain and the backup of BitLocker recovery information for the drive to AD DS succeeds.
@@ -99,41 +99,55 @@ Scan the event log to find events that help indicate why recovery was initiated 
 
 After it has been identified what caused recovery, BitLocker protection can be reset to avoid recovery on every startup.
 
-The details of this reset can vary according to the root cause of the recovery. If root cause can't be determined, or if a malicious software or a rootkit might have infected the computer, Helpdesk should apply best-practice virus policies to react appropriately.
+The details of this reset can vary according to the root cause of the recovery. If root cause can't be determined, or if a malicious software or a rootkit infects the device, Helpdesk should apply best-practice virus policies to react appropriately.
 
 > [!NOTE]
 > BitLocker validation profile reset can be performed by suspending and resuming BitLocker.
 
-- [Unknown PIN](#unknown-pin)
-- [Lost startup key](#lost-startup-key)
-- [Changes to boot files](#changes-to-boot-files)
+:::row:::
+  :::column span="1":::
+    **Root cause**
+  :::column-end:::
+  :::column span="3":::
+    **Steps**
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column span="1":::
+    Unknown PIN
+  :::column-end:::
+  :::column span="3":::
+    If a user has forgotten the PIN, the PIN must be reset while signed on to the computer in order to prevent BitLocker from initiating recovery each time the computer is restarted.
 
-## Unknown PIN
+To prevent continued recovery due to an unknown PIN:
 
-If a user has forgotten the PIN, the PIN must be reset while signed on to the computer in order to prevent BitLocker from initiating recovery each time the computer is restarted.
-
-### To prevent continued recovery due to an unknown PIN
-
-1. Unlock the computer using the recovery password.
-1. Reset the PIN:
-
-    1. Select and hold the drive and then select **Change PIN**
-    1. In the BitLocker Drive Encryption dialog, select **Reset a forgotten PIN**. If the signed in account isn't an administrator account, administrative credentials must be provided at this time.
-    1. In the PIN reset dialog, provide and confirm the new PIN to be used and then select **Finish**.
-
+1. Unlock the device using the recovery password
+1. From the BitLocker Control Panel applet, expand the drive and then select **Change PIN**
+1. In the BitLocker Drive Encryption dialog, select **Reset a forgotten PIN**. If the signed in account isn't an administrator account, you must provide administrative credentials
+1. In the PIN reset dialog, provide and confirm the new PIN to be used and then select **Finish**
 1. The new PIN can be used the next time the drive needs to be unlocked.
-
-## Lost startup key
-
-If the USB flash drive that contains the startup key is lost, you must be unlock the drive using the recovery key. A new startup can then be created using PowerShell, the Command Prompt, or BitLocker.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column span="1":::
+    Lost startup key
+  :::column-end:::
+  :::column span="3":::
+    If the USB flash drive that contains the startup key is lost, you must be unlock the drive using the recovery key. A new startup can then be created using PowerShell, the Command Prompt, or BitLocker.
 
 For examples how to add BitLocker protectors, review the [BitLocker operations guide](operations-guide.md#add-protectors).
-
-## Changes to boot files
-
-This error occurs if the firmware is updated. BitLocker should be suspended before making changes to the firmware. Protection should then be resumed after the firmware update is complete. Suspending BitLocker prevents the device from going into recovery mode. However, if changes happen when BitLocker protection is on, the recovery password can be used to unlock the drive and the platform validation profile is updated so that recovery doesn't occur the next time.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column span="1":::
+    Changes to boot files
+  :::column-end:::
+  :::column span="3":::
+    This error occurs if the firmware is updated. BitLocker should be suspended before making changes to the firmware. Protection should then be resumed after the firmware update is complete. Suspending BitLocker prevents the device from going into recovery mode. However, if changes happen when BitLocker protection is on, the recovery password can be used to unlock the drive and the platform validation profile is updated so that recovery doesn't occur the next time.
 
 For examples how to suspend and resume BitLocker protectors, review the [BitLocker operations guide](operations-guide.md#suspend-and-resume).
+  :::column-end:::
+:::row-end:::
 
 ## Windows RE and device encryption
 
@@ -270,11 +284,7 @@ The following limitations exist for Repair-bde:
 
 For a complete list of the `repair-bde.exe` options, see the [Repair-bde reference](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/ff829851(v=ws.11)).
 
-
-
 ### Microsoft Entra ID
-
-
 
 #### Data Recovery Agents
 
@@ -302,4 +312,3 @@ In this example, if the private key is available in the local certificate store,
 ```cmd
 manage-bde -unlock E: -Certificate -ct 9de688607336294a52b445d30d1eb92f0bec1e78
 ```
-
