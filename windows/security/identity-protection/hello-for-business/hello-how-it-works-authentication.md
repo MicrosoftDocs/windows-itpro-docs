@@ -31,7 +31,7 @@ Microsoft Entra joined devices authenticate to Microsoft Entra ID during sign-in
 
 ## Microsoft Entra join authentication to Active Directory using cloud Kerberos trust
 
-![Microsoft Entra join authentication to Azure AD.](images/howitworks/auth-aadj-cloudtrust-kerb.png)
+![Microsoft Entra join authentication to Active Directory.](images/howitworks/auth-aadj-cloudtrust-kerb.png)
 
 | Phase  | Description  |
 | :----: | :----------- |
