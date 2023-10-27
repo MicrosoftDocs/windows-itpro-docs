@@ -4,7 +4,7 @@ description: Learn more about the ADMX_Power Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 08/10/2023
+ms.date: 10/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -102,7 +102,7 @@ This policy setting allows you to control the network connectivity state in stan
 <!-- Description-Source-ADMX -->
 This policy setting allows you to turn on the ability for applications and services to prevent the system from sleeping.
 
-- If you enable this policy setting, an application or service may prevent the system from sleeping (Hybrid Sleep, Stand By, or Hibernate).
+- If you enable this policy setting, an application or service may prevent the system from sleeping (hybrid Sleep, Stand By, or Hibernate).
 
 - If you disable or don't configure this policy setting, users control this setting.
 <!-- ACCriticalSleepTransitionsDisable_2-Description-End -->
@@ -885,7 +885,7 @@ This policy setting allows you to control the network connectivity state in stan
 <!-- Description-Source-ADMX -->
 This policy setting allows you to turn on the ability for applications and services to prevent the system from sleeping.
 
-- If you enable this policy setting, an application or service may prevent the system from sleeping (Hybrid Sleep, Stand By, or Hibernate).
+- If you enable this policy setting, an application or service may prevent the system from sleeping (hybrid Sleep, Stand By, or Hibernate).
 
 - If you disable or don't configure this policy setting, users control this setting.
 <!-- DCCriticalSleepTransitionsDisable_2-Description-End -->

@@ -4,7 +4,7 @@ description: Learn more about the Power Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 08/10/2023
+ms.date: 10/24/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -450,7 +450,7 @@ This policy setting allows you to specify the period of inactivity before Window
 
 - If you disable or don't configure this policy setting, users control this setting.
 
-If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occuring. The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
+If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occurring. The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
 <!-- HibernateTimeoutOnBattery-Description-End -->
 
 <!-- HibernateTimeoutOnBattery-Editable-Begin -->
@@ -510,7 +510,7 @@ This policy setting allows you to specify the period of inactivity before Window
 
 - If you disable or don't configure this policy setting, users control this setting.
 
-If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occuring. The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
+If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occurring. The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
 <!-- HibernateTimeoutPluggedIn-Description-End -->
 
 <!-- HibernateTimeoutPluggedIn-Editable-Begin -->
@@ -1144,7 +1144,7 @@ This policy setting allows you to specify the period of inactivity before Window
 
 - If you disable or don't configure this policy setting, users control this setting.
 
-If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occuring. The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
+If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occurring. The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
 <!-- StandbyTimeoutOnBattery-Description-End -->
 
 <!-- StandbyTimeoutOnBattery-Editable-Begin -->
@@ -1204,7 +1204,7 @@ This policy setting allows you to specify the period of inactivity before Window
 
 - If you disable or don't configure this policy setting, users control this setting.
 
-If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occuring. The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
+If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occurring. The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
 <!-- StandbyTimeoutPluggedIn-Description-End -->
 
 <!-- StandbyTimeoutPluggedIn-Editable-Begin -->
@@ -1258,7 +1258,7 @@ If the user has configured a slide show to run on the lock screen when the machi
 
 <!-- TurnOffHybridSleepOnBattery-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to turn off hybrid sleep.
+This policy setting allows you to turn off Hybrid Sleep.
 
 - If you enable this policy setting, a hiberfile isn't generated when the system transitions to sleep (Stand By).
 
@@ -1285,7 +1285,7 @@ This policy setting allows you to turn off hybrid sleep.
 | Value | Description |
 |:--|:--|
 | 0 (Default) | . |
-| 1 | Hybrid sleep. |
+| 1 | Hybrid Sleep. |
 <!-- TurnOffHybridSleepOnBattery-AllowedValues-End -->
 
 <!-- TurnOffHybridSleepOnBattery-GpMapping-Begin -->
@@ -1325,7 +1325,7 @@ This policy setting allows you to turn off hybrid sleep.
 
 <!-- TurnOffHybridSleepPluggedIn-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to turn off hybrid sleep.
+This policy setting allows you to turn off Hybrid Sleep.
 
 - If you enable this policy setting, a hiberfile isn't generated when the system transitions to sleep (Stand By).
 
@@ -1352,7 +1352,7 @@ This policy setting allows you to turn off hybrid sleep.
 | Value | Description |
 |:--|:--|
 | 0 (Default) | . |
-| 1 | Hybrid sleep. |
+| 1 | Hybrid Sleep. |
 <!-- TurnOffHybridSleepPluggedIn-AllowedValues-End -->
 
 <!-- TurnOffHybridSleepPluggedIn-GpMapping-Begin -->
@@ -1398,7 +1398,7 @@ This policy setting allows you to specify the period of inactivity before Window
 
 - If you disable or don't configure this policy setting, users control this setting.
 
-If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occuring. The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
+If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occurring. The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
 <!-- UnattendedSleepTimeoutOnBattery-Description-End -->
 
 <!-- UnattendedSleepTimeoutOnBattery-Editable-Begin -->
@@ -1459,7 +1459,7 @@ This policy setting allows you to specify the period of inactivity before Window
 
 - If you disable or don't configure this policy setting, users control this setting.
 
-If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occuring. The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
+If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occurring. The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
 <!-- UnattendedSleepTimeoutPluggedIn-Description-End -->
 
 <!-- UnattendedSleepTimeoutPluggedIn-Editable-Begin -->

@@ -11,7 +11,7 @@ appliesto:
 IT administrators and technical teachers can use the **Set up School PCs** app to quickly set up Windows 10 PCs for students. The app configures PCs with the apps and features students need, and it removes the ones they don't need. During setup, if licensed in your tenant, the app enrolls each student PC into a mobile device management (MDM) provider, such as Intune for Education. You can then manage all the settings the app configures through the MDM.   
 
 Set up School PCs also:  
-* Joins each student PC to your organization's Office 365 and Azure Active Directory tenant.  
+* Joins each student PC to your organization's Office 365 and Microsoft Entra tenant.  
 * Enables the optional Autopilot Reset feature, to return devices to a fully configured or known IT-approved state.  
 * Utilizes Windows Update and maintenance hours to keep student PCs up-to-date, without interfering with class time.
 * Locks down the student PC to prevent activity that isn't beneficial to their education.  
@@ -21,7 +21,7 @@ This article describes how to fill out your school's information in the Set up S
 ## Requirements    
 Before you begin, make sure that you, your computer, and your school's network are configured with the following requirements.
 
-* Office 365 and Azure Active Directory
+* Office 365 and Microsoft Entra ID
 * [Latest Set up School PCs app](https://www.microsoft.com/store/apps/9nblggh4ls40)  
 * A NTFS-formatted USB drive that is at least 1 GB, if not installing Office; and at least 8 GB, if installing Office
 * Student PCs must either: 
@@ -99,7 +99,7 @@ The **Set up School PCs** app guides you through the configuration choices for t
 Type a unique name to help distinguish your school's provisioning packages. The name appears:  
 
 * On the local package folder  
-* In your tenant's Azure AD account in the Azure portal  
+* In your tenant's Microsoft Entra account in the Azure portal  
 
 A package expiration date is also attached to the end of each package. For example, *Set_Up_School_PCs (Expires 4-16-2019)*. The expiration date is 180 days after you create your package.  
 
@@ -107,13 +107,13 @@ A package expiration date is also attached to the end of each package. For examp
 
 After you click **Next**, you can no longer change the name in the app. To create a package with a different name, reopen the Set up School PCs app.  
 
-To change an existing package's name, right-click the package folder on your device and select **Rename**. This action does not change the name in Azure AD. If you have Global Admin permissions, you can go to Azure AD in the Azure portal, and rename the package there.  
+To change an existing package's name, right-click the package folder on your device and select **Rename**. This action does not change the name in Microsoft Entra ID. If you have Global Admin permissions, you can go to Microsoft Entra ID in the Azure portal, and rename the package there.  
 
 
 ### Sign in  
 
 1. Select how you want to sign in.  
-    a. (Recommended) To enable student PCs to automatically be connect to Office 365, Azure AD, and management services like Intune for Education, click **Sign-in**. Then go to step 3.  
+    a. (Recommended) To enable student PCs to automatically be connect to Office 365, Microsoft Entra ID, and management services like Intune for Education, click **Sign-in**. Then go to step 3.  
     b. To complete setup without signing in, click **Continue without account**. Student PCs won't be connected to your school's cloud services and managing them will be more difficult later. Continue to [Wireless network](#wireless-network).  
 2. In the new window, select the account you want to use throughout setup.  
 
@@ -170,7 +170,7 @@ The following table describes each setting and lists the applicable Windows 10 v
 |Allow local storage (not recommended for shared devices)    |X|X|X|X| Lets students save files to the Desktop and Documents folder on the Student PC.         |Not recommended if the device will be shared between different students.|
 |Optimize device for a single student, instead of a shared cart or lab    |X|X|X|X|Optimizes the device for use by a single student, rather than many students.       |Recommended if the device will be shared between different students. Single-optimized accounts are set to expire, and require a sign-in, 180 days after setup. This setting increases the maximum PC storage to 100% of the available disk space. In this case, student accounts aren't deleted unless the account has been inactive for 180 days. |
 |Let guests sign in to these PCs     |X|X|X|X|Allows guests to use student PCs without a school account. |Common to use within a public, shared space, such as a library. Also used when a student loses their password. Adds a **Guest** account to the PC sign-in screen that anyone can sign in to.|
-|Enable Autopilot Reset  |Not available|X|X|X|Lets you remotely reset a student's PC from the lock screen, apply the device's original settings, and enroll it in device management (Azure AD and MDM).  |Requires Windows 10, version 1709 and WinRE must be enabled on the PC. Setup will fail if both requirements aren't met.|
+|Enable Autopilot Reset  |Not available|X|X|X|Lets you remotely reset a student's PC from the lock screen, apply the device's original settings, and enroll it in device management (Microsoft Entra ID and MDM).  |Requires Windows 10, version 1709 and WinRE must be enabled on the PC. Setup will fail if both requirements aren't met.|
 |Lock screen background|X|X|X|X|Change the default screen lock background to a custom image.|Click **Browse** to search for an image file on your computer. Accepted image formats are jpg, jpeg, and png.|   
 
 After you've made your selections, click **Next**.
@@ -276,8 +276,6 @@ When used in context of the Set up School PCs app, the word *package* refers to 
 
      ![Screen with message telling user to remove the USB drive.](images/suspcs/suspc_setup_removemediamessage.png)  
 
-4. If you didn't set up the package with Azure AD Join, continue the Windows device setup experience.  If you did configure the package with Azure AD Join, the computer is ready for use and no further configurations are required.  
+4. If you didn't set up the package with Microsoft Entra join, continue the Windows device setup experience.  If you did configure the package with Microsoft Entra join, the computer is ready for use and no further configurations are required.  
 
       If successful, you'll see a setup complete message. The PCs start up on the lock screen, with your school's custom background. Upon first use, students and teachers can connect to your school's network and resources.
-
-

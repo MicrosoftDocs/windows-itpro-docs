@@ -18,12 +18,14 @@ ms.date: 08/30/2023
 <!--37063317, 30141258, 37063041-->
 Before you begin the process of adding Windows Update for Business reports to your Azure subscription, ensure you meet the prerequisites.
 
-## Azure and Azure Active Directory
+<a name='azure-and-azure-active-directory'></a>
 
-- An Azure subscription with [Azure Active Directory](/azure/active-directory/)
-- Devices must be Azure Active Directory-joined and meet the below OS, diagnostic, and endpoint access requirements.
-  - Devices can be [Azure AD joined](/azure/active-directory/devices/concept-azure-ad-join) or [hybrid Azure AD joined](/azure/active-directory/devices/concept-azure-ad-join-hybrid).
-- Devices that are [Azure AD registered](/azure/active-directory/devices/concept-azure-ad-register) only (Workplace joined) aren't supported with Windows Update for Business reports.
+## Azure and Microsoft Entra ID
+
+- An Azure subscription with [Microsoft Entra ID](/azure/active-directory/)
+- Devices must be Microsoft Entra joined and meet the below OS, diagnostic, and endpoint access requirements.
+  - Devices can be [Microsoft Entra joined](/azure/active-directory/devices/concept-azure-ad-join) or [Microsoft Entra hybrid joined](/azure/active-directory/devices/concept-azure-ad-join-hybrid).
+- Devices that are [Microsoft Entra registered](/azure/active-directory/devices/concept-azure-ad-register) only (Workplace joined) aren't supported with Windows Update for Business reports.
 - The Log Analytics workspace must be in a [supported region](#log-analytics-regions)
 - Data in the **Driver update** tab of the [workbook](wufb-reports-workbook.md) is only available for devices that receive driver and firmware updates from the [Windows Update for Business deployment service](deployment-service-overview.md)
 
