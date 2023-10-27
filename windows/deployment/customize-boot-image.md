@@ -21,7 +21,7 @@ appliesto:
 
 <!-- 7894697 -->
 
-The Windows PE (WinPE) boot images that are included with the Windows ADK have a minimal number of features and drivers. However, the boot images can be customized by adding drivers, optional components, and applying the latest cumulative update.
+The Windows PE (WinPE) boot images that are included with the Windows ADK have a minimal number of features and drivers. However, the boot images can be customized by adding drivers, and optional components, and applying the latest cumulative update.
 
 Microsoft recommends updating Windows PE boot images with the latest cumulative update for maximum security and protection. The latest cumulative updates may also resolve known issues. For example, the Windows PE boot image can be updated with the latest cumulative update to address the BlackLotus UEFI bootkit vulnerability as documented in [KB5025885: How to manage the Windows Boot Manager revocations for Secure Boot changes associated with CVE-2023-24932](https://prod.support.services.microsoft.com/topic/kb5025885-how-to-manage-the-windows-boot-manager-revocations-for-secure-boot-changes-associated-with-cve-2023-24932-41a975df-beb2-40c1-99a3-b3ff139f832d) and [CVE-2023-24932](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-24932).
 
@@ -72,7 +72,7 @@ This walkthrough describes how to customize a Windows PE boot image including up
 >
 > - The latest versions of the **Windows PE add-on for the Windows ADK** only include 64-bit boot images. If a 32-bit boot image is required, then the recommendation in this scenario is to also use the [ADK for Windows 10, version 2004](/windows-hardware/get-started/adk-install#other-adk-downloads). This version of the Windows ADK was the last version to include both 32-bit and 64-bit boot images.
 
-## Step 2: Download the cumulative update (CU)
+## Step 2: Download cumulative update (CU)
 
 1. Go to the [Microsoft Update Catalog](https://catalog.update.microsoft.com/) site and search for the latest cumulative update. The Windows version of the cumulative update should match the version of the Windows PE boot image that is being updated.
 
@@ -591,7 +591,7 @@ The following steps outline how to extract and then install the servicing stack 
 
 1. Attempt to apply the cumulative update (CU) to the boot image again using the commands from [Step 7: Add cumulative update (CU) to boot image](#step-7-add-cumulative-update-cu-to-boot-image).
 
-## Step 8: Copy boot files from the mounted boot image to ADK installation path
+## Step 8: Copy boot files from mounted boot image to ADK installation path
 
 Some cumulative updates contain updated bootmgr boot files that are added to the boot image. After these bootmgr boot files have been updated in the boot image, it's recommended to copy these updated bootmgr boot files from the boot image back to the Windows ADK. Copying these files ensures that the Windows ADK has the updated bootmgr boot files.
 
@@ -749,7 +749,7 @@ For more information, see [DISM Operating System Package (.cab or .msu) Servicin
 
 ---
 
-## Step 11: Unmount the boot image and save changes
+## Step 11: Unmount boot image and save changes
 
 Once drivers, optional components, and the cumulative update (CU) have been applied to the boot image, unmount the boot image and save changes.
 
