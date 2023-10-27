@@ -1,6 +1,6 @@
 ---
-title: Use Certificates to enable SSO for Azure AD join devices
-description: If you want to use certificates for on-premises single-sign on for Azure Active Directory-joined devices, then follow these additional steps.
+title: Use Certificates to enable SSO for Microsoft Entra join devices
+description: If you want to use certificates for on-premises single-sign on for Microsoft Entra joined devices, then follow these additional steps.
 ms.date: 08/19/2018
 ms.topic: how-to
 ---
@@ -9,14 +9,14 @@ ms.topic: how-to
 
 [!INCLUDE [hello-hybrid-key-trust](./includes/hello-hybrid-cert-trust-aad.md)]
 
-If you plan to use certificates for on-premises single-sign on, then follow these **additional** steps to configure the environment to enroll Windows Hello for Business certificates for Azure AD-joined devices.
+If you plan to use certificates for on-premises single-sign on, then follow these **additional** steps to configure the environment to enroll Windows Hello for Business certificates for Microsoft Entra joined devices.
 
 > [!IMPORTANT]
-> Ensure you have performed the configurations in [Azure AD-joined devices for On-premises Single-Sign On](/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso) before you continue.
+> Ensure you have performed the configurations in [Microsoft Entra joined devices for On-premises Single-Sign On](/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso) before you continue.
 
 Steps you'll perform include:
 
-- [Prepare Azure AD Connect](#prepare-azure-ad-connect)
+- [Prepare Microsoft Entra Connect](#prepare-azure-ad-connect)
 - [Prepare the Network Device Enrollment Services Service Account](#prepare-the-network-device-enrollment-services-ndes-service-account)
 - [Prepare Active Directory Certificate Services](#prepare-active-directory-certificate-authority)
 - [Install the Network Device Enrollment Services Role](#install-and-configure-the-ndes-role)
@@ -26,7 +26,7 @@ Steps you'll perform include:
 
 ## Requirements
 
-You need to install and configure additional infrastructure to provide Azure AD-joined devices with on-premises single-sign on.
+You need to install and configure additional infrastructure to provide Microsoft Entra joined devices with on-premises single-sign on.
 
 - An existing Windows Server 2012 R2 or later Enterprise Certificate Authority
 - A Windows Server 2012 R2 domain joined server that hosts the Network Device Enrollment Services role
@@ -43,29 +43,33 @@ The Network Device Enrollment Service (NDES) server role can issue up to three u
 - Encryption
 - Signature and Encryption
 
-If you need to deploy more than three types of certificates to the Azure AD joined device, you need additional NDES servers.  Alternatively, consider consolidating certificate templates to reduce the number of certificate templates.
+If you need to deploy more than three types of certificates to the Microsoft Entra joined device, you need additional NDES servers.  Alternatively, consider consolidating certificate templates to reduce the number of certificate templates.
 
 ### Network Requirements
 
 All communication occurs securely over port 443.
 
-## Prepare Azure AD Connect
+<a name='prepare-azure-ad-connect'></a>
+
+## Prepare Microsoft Entra Connect
 
 Successful authentication to on-premises resources using a certificate requires the certificate to provide a hint about the on-premises domain.  The hint can be the user's Active Directory distinguished name as the subject of the certificate, or the hint can be the user's user principal name where the suffix matches the Active Directory domain name.
 
 Most environments change the user principal name suffix to match the organization's external domain name (or vanity domain), which prevents the user principal name as a hint to locate a domain controller.  Therefore, the certificate needs the user's on-premises distinguished name in the subject to properly locate a domain controller.
 
-To include the on-premises distinguished name in the certificate's subject, Azure AD Connect must replicate the Active Directory **distinguishedName** attribute to the Azure Active Directory **onPremisesDistinguishedName** attribute.  Azure AD Connect version 1.1.819 includes the proper synchronization rules needed for these attributes.
+To include the on-premises distinguished name in the certificate's subject, Microsoft Entra Connect must replicate the Active Directory **distinguishedName** attribute to the Microsoft Entra ID **onPremisesDistinguishedName** attribute.  Microsoft Entra Connect version 1.1.819 includes the proper synchronization rules needed for these attributes.
 
-### Verify Azure Active Directory Connect version
+<a name='verify-azure-active-directory-connect-version'></a>
 
-Sign-in to computer running Azure AD Connect with access equivalent to _local administrator_.
+### Verify Microsoft Entra Connect version
 
-1. Open **Synchronization Services** from the **Azure AD Connect** folder.
+Sign-in to computer running Microsoft Entra Connect with access equivalent to _local administrator_.
+
+1. Open **Synchronization Services** from the **Microsoft Entra Connect** folder.
 
 2. In the **Synchronization Service Manager**, select **Help** and then select **About**.
 
-3. If the version number isn't **1.1.819** or later, then upgrade Azure AD Connect to the latest version.
+3. If the version number isn't **1.1.819** or later, then upgrade Microsoft Entra Connect to the latest version.
 
 ### Verify the onPremisesDistinguishedName attribute is synchronized
 
@@ -80,7 +84,7 @@ The easiest way to verify that the onPremisesDistingushedNamne attribute is sync
 
 3. Select **Modify permissions (Preview)**. Scroll down and locate **User.Read.All** (or any other required permission) and select **Consent**. You'll now be prompted for delegated permissions consent.
 
-4. In the Graph Explorer URL, enter `https://graph.microsoft.com/v1.0/users/[userid]?$select=displayName,userPrincipalName,onPremisesDistinguishedName`, where **[userid]** is the user principal name of a user in Azure Active Directory.  Select **Run query**.
+4. In the Graph Explorer URL, enter `https://graph.microsoft.com/v1.0/users/[userid]?$select=displayName,userPrincipalName,onPremisesDistinguishedName`, where **[userid]** is the user principal name of a user in Microsoft Entra ID.  Select **Run query**.
 
 > [!NOTE]
 > Because the v1.0 endpoint of the Graph API only provides a limited set of parameters, we will use the $select [Optional OData query parameter](/graph/api/user-get?). For convenience, it is possible to switch the API version selector from **v1.0** to **beta** before performing the query. This will provide all available user information, but remember, **beta** endpoint queries should not be used in production scenarios.
@@ -232,7 +236,7 @@ You must prepare the public key infrastructure and the issuing certificate autho
 
 - Configure the certificate authority to let Intune provide validity periods
 - Create an NDES-Intune Authentication Certificate template
-- Create an Azure AD joined Windows Hello for Business authentication certificate template
+- Create a Microsoft Entra joined Windows Hello for Business authentication certificate template
 - Publish certificate templates
 
 ### Configure the certificate authority to let Intune provide validity periods
@@ -283,7 +287,9 @@ Sign-in to the issuing certificate authority or management workstations with _Do
 
 11. Select on the **Apply** to save changes and close the console.
 
-### Create an Azure AD joined Windows Hello for Business authentication certificate template
+<a name='create-an-azure-ad-joined-windows-hello-for-business-authentication-certificate-template'></a>
+
+### Create a Microsoft Entra joined Windows Hello for Business authentication certificate template
 
 During Windows Hello for Business provisioning,  Windows requests an authentication certificate from Microsoft Intune, which requests the authentication certificate on behalf of the user.  This task configures the Windows Hello for Business authentication certificate template.  You use the name of the certificate template when configuring the NDES Server.
 
@@ -455,13 +461,13 @@ Sign-in a domain controller with a minimum access equivalent to _Domain Admins_.
 
 5. Select **Add**.
 
-6. Select **Users or Computers...**  Type the name of the _NDES Server_ you use to issue Windows Hello for Business authentication certificates to Azure AD-joined devices.  From the **Available services** list, select **HOST**.  Select **OK**.
+6. Select **Users or Computers...**  Type the name of the _NDES Server_ you use to issue Windows Hello for Business authentication certificates to Microsoft Entra joined devices.  From the **Available services** list, select **HOST**.  Select **OK**.
 
    ![NDES Service delegation to NDES host.](images/aadjcert/ndessvcdelegation-host-ndes-spn.png)
 
 7. Repeat steps 5 and 6 for each NDES server using this service account. Select **Add**.
 
-8. Select **Users or computers...**  Type the name of the issuing certificate authority this NDES service account uses to issue Windows Hello for Business authentication certificates to Azure AD-joined devices.  From the **Available services** list, select **dcom**.  Hold the **CTRL** key and select **HOST**. Select **OK**.
+8. Select **Users or computers...**  Type the name of the issuing certificate authority this NDES service account uses to issue Windows Hello for Business authentication certificates to Microsoft Entra joined devices.  From the **Available services** list, select **dcom**.  Hold the **CTRL** key and select **HOST**. Select **OK**.
 
 9. Repeat steps 8 and 9 for each issuing certificate authority from which one or more NDES servers request certificates.
 
@@ -534,7 +540,7 @@ Sign-in to the NDES Server with _local administrator_ equivalent credentials.
 
 1. Open an elevated command prompt.
 
-2. Using the table above, decide which registry value name you'll use to request Windows Hello for Business authentication certificates for Azure AD-joined devices.
+2. Using the table above, decide which registry value name you'll use to request Windows Hello for Business authentication certificates for Microsoft Entra joined devices.
 
 3. Type the following command:
 
@@ -542,7 +548,7 @@ Sign-in to the NDES Server with _local administrator_ equivalent credentials.
    reg add HKLM\Software\Microsoft\Cryptography\MSCEP /v [registryValueName] /t REG_SZ /d [certificateTemplateName]
    ```
 
-   where **registryValueName** is one of the three value names from the above table and where **certificateTemplateName** is the name of the certificate template you created for Windows Hello for Business Azure AD-joined devices.  Example:
+   where **registryValueName** is one of the three value names from the above table and where **certificateTemplateName** is the name of the certificate template you created for Windows Hello for Business Microsoft Entra joined devices.  Example:
 
    ```console
    reg add HKLM\Software\Microsoft\Cryptography\MSCEP /v SignatureTemplate /t REG_SZ /d AADJWHFBAuthentication
@@ -557,13 +563,13 @@ Sign-in to the NDES Server with _local administrator_ equivalent credentials.
 
 ### Create a Web Application Proxy for the internal NDES URL.
 
-Certificate enrollment for Azure AD-joined devices occurs over the Internet.  As a result, the internal NDES URLs must be accessible externally. You can do this easily and securely using Azure Active Directory Application Proxy.  Azure AD Application Proxy provides single sign-on and secure remote access for web applications hosted on-premises, such as Network Device Enrollment Services.
+Certificate enrollment for Microsoft Entra joined devices occurs over the Internet.  As a result, the internal NDES URLs must be accessible externally. You can do this easily and securely using Microsoft Entra application proxy.  Microsoft Entra application proxy provides single sign-on and secure remote access for web applications hosted on-premises, such as Network Device Enrollment Services.
 
-Ideally, you configure your Microsoft Intune SCEP certificate profile to use multiple external NDES URLs.  This enables Microsoft Intune to round-robin load balance the certificate requests to identically configured NDES Servers (each NDES server can accommodate approximately 300 concurrent requests).  Microsoft Intune sends these requests to Azure AD Application Proxies.
+Ideally, you configure your Microsoft Intune SCEP certificate profile to use multiple external NDES URLs.  This enables Microsoft Intune to round-robin load balance the certificate requests to identically configured NDES Servers (each NDES server can accommodate approximately 300 concurrent requests).  Microsoft Intune sends these requests to Microsoft Entra Application Proxies.
 
-Azure AD Application proxies are serviced by lightweight Application Proxy Connector agents. See [What is Application Proxy](/azure/active-directory/manage-apps/application-proxy#what-is-application-proxy) for more details. These agents are installed on your on-premises, domain joined devices and make authenticated secure outbound connection to Azure, waiting to process requests from Azure AD Application Proxies. You can create connector groups in Azure Active Directory to assign specific connectors to service specific applications.
+Microsoft Entra Application proxies are serviced by lightweight Application Proxy Connector agents. See [What is Application Proxy](/azure/active-directory/manage-apps/application-proxy#what-is-application-proxy) for more details. These agents are installed on your on-premises, domain joined devices and make authenticated secure outbound connection to Azure, waiting to process requests from Microsoft Entra Application Proxies. You can create connector groups in Microsoft Entra ID to assign specific connectors to service specific applications.
 
-Connector group automatically round-robin, load balance the Azure AD Application proxy requests to the connectors within the assigned connector group.  This ensures Windows Hello for Business certificate requests have multiple dedicated Azure AD Application Proxy connectors exclusively available to satisfy enrollment requests.  Load balancing the NDES servers and connectors should ensure users enroll their Windows Hello for Business certificates in a timely manner.
+Connector group automatically round-robin, load balance the Microsoft Entra application proxy requests to the connectors within the assigned connector group.  This ensures Windows Hello for Business certificate requests have multiple dedicated Microsoft Entra application proxy connectors exclusively available to satisfy enrollment requests.  Load balancing the NDES servers and connectors should ensure users enroll their Windows Hello for Business certificates in a timely manner.
 
 #### Download and Install the Application Proxy Connector Agent
 
@@ -571,7 +577,7 @@ Sign-in a workstation with access equivalent to a _domain user_.
 
 1. Sign-in to the [Azure portal](https://portal.azure.com/) with access equivalent to **Global Administrator**.
 
-2. Select **All Services**.  Type **Azure Active Directory** to filter the list of services.  Under **SERVICES**, select **Azure Active Directory**.
+2. Select **All Services**.  Type **Microsoft Entra ID** to filter the list of services.  Under **SERVICES**, select **Microsoft Entra ID**.
 
 3. Under **MANAGE**, select **Application proxy**.
 
@@ -582,7 +588,7 @@ Sign-in a workstation with access equivalent to a _domain user_.
 5. Sign-in the computer that will run the connector with access equivalent to a _domain user_.
 
    > [!IMPORTANT]
-   > Install a minimum of two Azure Active Directory Proxy connectors for each NDES Application Proxy.  Strategically locate Azure AD application proxy connectors throughout your organization to ensure maximum availability.  Remember, devices running the connector must be able to communicate with Azure and the on-premises NDES servers.
+   > Install a minimum of two Microsoft Entra ID Proxy connectors for each NDES Application Proxy.  Strategically locate Microsoft Entra application proxy connectors throughout your organization to ensure maximum availability.  Remember, devices running the connector must be able to communicate with Azure and the on-premises NDES servers.
 
 6. Start **AADApplicationProxyConnectorInstaller.exe**.
 
@@ -598,7 +604,7 @@ Sign-in a workstation with access equivalent to a _domain user_.
 
    ![Azure Application Proxy Connector: read](images/aadjcert/azureappproxyconnectorinstall-03.png)
 
-10. Repeat steps 5 - 10 for each device that will run the Azure AD Application Proxy connector for Windows Hello for Business certificate deployments.
+10. Repeat steps 5 - 10 for each device that will run the Microsoft Entra application proxy connector for Windows Hello for Business certificate deployments.
 
 #### Create a Connector Group
 
@@ -606,7 +612,7 @@ Sign-in a workstation with access equivalent to a _domain user_.
 
 1. Sign-in to the [Azure portal](https://portal.azure.com/) with access equivalent to **Global Administrator**.
 
-2. Select **All Services**.  Type **Azure Active Directory** to filter the list of services.  Under **SERVICES**, select **Azure Active Directory**.
+2. Select **All Services**.  Type **Microsoft Entra ID** to filter the list of services.  Under **SERVICES**, select **Microsoft Entra ID**.
 
 3. Under **MANAGE**, select **Application proxy**.
 
@@ -626,17 +632,17 @@ Sign-in a workstation with access equivalent to a _domain user_.
 
 1. Sign-in to the [Azure portal](https://portal.azure.com/) with access equivalent to **Global Administrator**.
 
-2. Select **All Services**.  Type **Azure Active Directory** to filter the list of services.  Under **SERVICES**, select **Azure Active Directory**.
+2. Select **All Services**.  Type **Microsoft Entra ID** to filter the list of services.  Under **SERVICES**, select **Microsoft Entra ID**.
 
 3. Under **MANAGE**, select **Application proxy**.
 
 4. Select **Configure an app**.
 
-5. Under **Basic Settings** next to **Name**, type **WHFB NDES 01**.  Choose a name that correlates this Azure AD Application Proxy setting with the on-premises NDES server.  Each NDES server must have its own Azure AD Application Proxy as two NDES servers can't share the same internal URL.
+5. Under **Basic Settings** next to **Name**, type **WHFB NDES 01**.  Choose a name that correlates this Microsoft Entra application proxy setting with the on-premises NDES server.  Each NDES server must have its own Microsoft Entra application proxy as two NDES servers can't share the same internal URL.
 
-6. Next to **Internal URL**, type the internal, fully qualified DNS name of the NDES server associated with this Azure AD Application Proxy.  For example, ```https://ndes.corp.mstepdemo.net```.  You need to match the primary host name (AD Computer Account name) of the NDES server, and prefix the URL with **https**.
+6. Next to **Internal URL**, type the internal, fully qualified DNS name of the NDES server associated with this Microsoft Entra application proxy.  For example, ```https://ndes.corp.mstepdemo.net```.  You need to match the primary host name (AD Computer Account name) of the NDES server, and prefix the URL with **https**.
 
-7. Under **Internal URL**, select **https://** from the first list.  In the text box next to **https://**, type the hostname you want to use as your external hostname for the Azure AD Application Proxy.  In the list next to the hostname you typed, select a DNS suffix you want to use externally for the Azure AD Application Proxy.  It's recommended to use the default, -[tenantName].msapproxy.net where **[tenantName]** is your current Azure Active Directory tenant name (-mstephendemo.msappproxy.net).
+7. Under **Internal URL**, select **https://** from the first list.  In the text box next to **https://**, type the hostname you want to use as your external hostname for the Microsoft Entra application proxy.  In the list next to the hostname you typed, select a DNS suffix you want to use externally for the Microsoft Entra application proxy.  It's recommended to use the default, -[tenantName].msapproxy.net where **[tenantName]** is your current Microsoft Entra tenant name (-mstephendemo.msappproxy.net).
 
    ![Azure NDES Application Proxy Configuration.](images/aadjcert/azureconsole-appproxyconfig.png)
 
@@ -681,7 +687,7 @@ Sign-in the NDES server with access equivalent to _local administrators_.
 
 10. Select **Enroll**
 
-11. Repeat these steps for all NDES Servers used to request Windows Hello for Business authentication certificates for Azure AD-joined devices.
+11. Repeat these steps for all NDES Servers used to request Windows Hello for Business authentication certificates for Microsoft Entra joined devices.
 
 ### Configure the Web Server Role
 
@@ -824,7 +830,7 @@ Sign-in a workstation with access equivalent to a _domain user_.
 
 1. Sign-in to the [Azure portal](https://portal.azure.com/) with access equivalent to **Global Administrator**.
 
-2. Select **All Services**.  Type **Azure Active Directory** to filter the list of services.  Under **SERVICES**, select **Azure Active Directory**.
+2. Select **All Services**.  Type **Microsoft Entra ID** to filter the list of services.  Under **SERVICES**, select **Microsoft Entra ID**.
 
 3. Select **Groups**.  Select **New group**.
 
@@ -836,7 +842,7 @@ Sign-in a workstation with access equivalent to a _domain user_.
 
 7. Select **Assigned** from the **Membership type** list.
 
-   ![Azure AD new group creation.](images/aadjcert/azureadcreatewhfbcertgroup.png)
+   ![Microsoft Entra new group creation.](images/aadjcert/azureadcreatewhfbcertgroup.png)
 
 8. Select **Members**.  Use the  **Select members** pane to add members to this group. When finished, select **Select**.
 
@@ -889,7 +895,7 @@ Sign-in a workstation with access equivalent to a _domain user_.
 
     ![WHFB SCEP certificate Profile EKUs.](images/aadjcert/profile03.png)
 
-17. Under **SCEP Server URLs**, type the fully qualified external name of the Azure AD Application proxy you configured. Append to the name **/certsrv/mscep/mscep.dll**. For example, ```https://ndes-mtephendemo.msappproxy.net/certsrv/mscep/mscep.dll```. Select **Add**. Repeat this step for each additional NDES Azure AD Application Proxy you configured to issue Windows Hello for Business certificates. Microsoft Intune round-robin load balances requests among the URLs listed in the SCEP certificate profile.
+17. Under **SCEP Server URLs**, type the fully qualified external name of the Microsoft Entra application proxy you configured. Append to the name **/certsrv/mscep/mscep.dll**. For example, ```https://ndes-mtephendemo.msappproxy.net/certsrv/mscep/mscep.dll```. Select **Add**. Repeat this step for each additional NDES Microsoft Entra application proxy you configured to issue Windows Hello for Business certificates. Microsoft Intune round-robin load balances requests among the URLs listed in the SCEP certificate profile.
 
 18. Select **Next**.
 
@@ -924,7 +930,7 @@ You have successfully completed the configuration.  Add users that need to enrol
 
 > [!div class="checklist"]
 > - Requirements
-> - Prepare Azure AD Connect
+> - Prepare Microsoft Entra Connect
 > - Prepare the Network Device Enrollment Services (NDES) Service Account
 > - Prepare Active Directory Certificate Authority
 > - Install and Configure the NDES Role

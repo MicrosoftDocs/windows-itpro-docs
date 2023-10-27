@@ -187,7 +187,7 @@ content-type: application/json
 Once Windows Update for Business deployment service has scan results from devices, the applicability for driver and firmware updates can be displayed for a deployment audience. Each applicable update returns the following information:
 
 - An `id` for its [catalog entry](/graph/api/resources/windowsupdates-catalogentry)
-- The **Azure AD ID** of the devices it's applicable to
+- The **Microsoft Entra ID** of the devices it's applicable to
 - Information describing the update such as the name and version.
 
 To display [applicable content](/graph/api/resources/windowsupdates-applicablecontent), run a query using the  **Audience ID**, for example `d39ad1ce-0123-4567-89ab-cdef01234567`:  
@@ -197,7 +197,7 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences/d
 ```
 
 The following truncated response displays:
-  - An **Azure AD ID** of `01234567-89ab-cdef-0123-456789abcdef`
+  - An **Microsoft Entra ID** of `01234567-89ab-cdef-0123-456789abcdef`
   - The **Catalog ID** of `5d6dede684ba5c4a731d62d9c9c2a99db12c5e6015e9f8ad00f3e9387c7f399c`  
 
       ```json

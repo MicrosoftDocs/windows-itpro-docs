@@ -211,8 +211,8 @@ For more information about LAPS, see [What is Windows LAPS][LEARN-1].
 Here are some additional considerations for Remote Credential Guard:
 
 - Remote Credential Guard doesn't support compound authentication. For example, if you're trying to access a file server from a remote host that requires a device claim, access will be denied
-- Remote Credential Guard can be used only when connecting to a device that is joined to an Active Directory domain. It can't be used when connecting to remote devices joined to Azure Active Directory (Azure AD)
-- Remote Credential Guard can be used from an Azure AD joined client to connect to an Active Directory joined remote host, as long as the client can authenticate using Kerberos
+- Remote Credential Guard can be used only when connecting to a device that is joined to an Active Directory domain. It can't be used when connecting to remote devices joined to Microsoft Entra ID
+- Remote Credential Guard can be used from a Microsoft Entra joined client to connect to an Active Directory joined remote host, as long as the client can authenticate using Kerberos
 - Remote Credential Guard only works with the RDP protocol
 - No credentials are sent to the target device, but the target device still acquires Kerberos Service Tickets on its own
 - The server and client must authenticate using Kerberos

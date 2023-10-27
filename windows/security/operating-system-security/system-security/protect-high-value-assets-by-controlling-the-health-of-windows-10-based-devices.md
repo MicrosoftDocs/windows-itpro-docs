@@ -83,11 +83,11 @@ This section is an overview that describes different parts of the end-to-end sec
 
 | Number | Part of the solution | Description |
 | - | - | - |
-| **1** | Windows-based device | The first time a Windows-based device is powered on, the out-of-box experience (OOBE) screen is displayed. During setup, the device can be automatically registered into Azure Active Directory (AD) and enrolled in MDM.<br/>A Windows-based device with TPM can report health status at any time by using the Health Attestation Service available with all supported editions of Windows.|
-| **2** | Identity provider | Azure AD contains users, registered devices, and registered application of organization's tenant. A device always belongs to a user and a user can have multiple devices. A device is represented as an object with different attributes like the compliance status of the device. A trusted MDM can update the compliance status.<br/>Azure AD is more than a repository. Azure AD is able to authenticate users and devices and can also authorize access to managed resources. Azure AD has a conditional access control engine that uses the identity of the user, the location of the device and also the compliance status of the device when making a trusted access decision.|
+| **1** | Windows-based device | The first time a Windows-based device is powered on, the out-of-box experience (OOBE) screen is displayed. During setup, the device can be automatically registered into Microsoft Entra ID and enrolled in MDM.<br/>A Windows-based device with TPM can report health status at any time by using the Health Attestation Service available with all supported editions of Windows.|
+| **2** | Identity provider | Microsoft Entra ID contains users, registered devices, and registered application of organization's tenant. A device always belongs to a user and a user can have multiple devices. A device is represented as an object with different attributes like the compliance status of the device. A trusted MDM can update the compliance status.<br/>Microsoft Entra ID is more than a repository. Microsoft Entra ID is able to authenticate users and devices and can also authorize access to managed resources. Microsoft Entra ID has a conditional access control engine that uses the identity of the user, the location of the device and also the compliance status of the device when making a trusted access decision.|
 | **3**|Mobile device management| Windows has MDM support that enables the device to be managed out-of-box without deploying any agent.<br/>MDM can be Microsoft Intune or any third-party MDM solution that is compatible with Windows.|
 | **4** | Remote health attestation | The Health Attestation Service is a trusted cloud service operated by Microsoft that performs a series of health checks and reports to MDM what Windows security features are enabled on the device.<br/>Security verification includes boot state (WinPE, Safe Mode, Debug/test modes) and components that manage security and integrity of runtime operations (BitLocker, Device Guard).|
-| **5** | Enterprise managed asset | Enterprise managed asset is the resource to protect.<br/>For example, the asset can be Office 365, other cloud apps, on-premises web resources published by Azure AD, or even VPN access.|
+| **5** | Enterprise managed asset | Enterprise managed asset is the resource to protect.<br/>For example, the asset can be Office 365, other cloud apps, on-premises web resources published by Microsoft Entra ID, or even VPN access.|
 
 The combination of Windows-based devices, identity provider, MDM, and remote health attestation creates a robust end-to-end-solution that provides validation of health and compliance of devices that access high-value assets.
 
@@ -613,7 +613,7 @@ Windows has an MDM client that ships as part of the operating system. This MDM c
 
 ### Third-party MDM server support
 
-Third-party MDM servers can manage Windows by using the MDM protocol. The built-in management client is able to communicate with a compatible server that supports the OMA-DM protocol to perform enterprise management tasks. For more information, see [Azure Active Directory integration with MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm).
+Third-party MDM servers can manage Windows by using the MDM protocol. The built-in management client is able to communicate with a compatible server that supports the OMA-DM protocol to perform enterprise management tasks. For more information, see [Microsoft Entra integration with MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm).
 
 > [!NOTE]
 > MDM servers do not need to create or download a client to manage Windows. For more information, see [Mobile device management](/windows/client-management/mdm/).
@@ -628,70 +628,70 @@ For more information on how to manage Windows security and system settings with 
 
 ### Conditional access control
 
-On most platforms, the Azure Active Directory (Azure AD) device registration happens automatically during enrollment. The device states are written by the MDM solution into Azure AD, and then read by Office 365 (or by any authorized Windows app that interacts with Azure AD) the next time the client tries to access an Office 365 compatible workload.
+On most platforms, the Microsoft Entra device registration happens automatically during enrollment. The device states are written by the MDM solution into Microsoft Entra ID, and then read by Office 365 (or by any authorized Windows app that interacts with Microsoft Entra ID) the next time the client tries to access an Office 365 compatible workload.
 
 If the device isn't registered, the user will get a message with instructions on how to register (also known as enrolling). If the device isn't compliant, the user will get a different message that redirects them to the MDM web portal where they can get more information on the compliance problem and how to resolve it.
 
-**Azure AD** authenticates the user and the device, **MDM** manages the compliance and conditional access policies, and the **Health Attestation Service** reports about the health of the device in an attested way.
+**Microsoft Entra ID** authenticates the user and the device, **MDM** manages the compliance and conditional access policies, and the **Health Attestation Service** reports about the health of the device in an attested way.
 
 :::image type="content" alt-text="figure 11." source="images/hva-fig10-conditionalaccesscontrol.png":::
 
 ### Office 365 conditional access control
 
-Azure AD enforces conditional access policies to secure access to Office 365 services. A tenant admin can create a conditional access policy that blocks a user on a non-compliant device from accessing an Office 365 service. The user must conform to the company's device policies before access can be granted to the service. Alternately, the admin can also create a policy that requires users to just enroll their devices to gain access to an Office 365 service. Policies may be applied to all users of an organization, or limited to a few target groups and enhanced over time to include more
+Microsoft Entra ID enforces conditional access policies to secure access to Office 365 services. A tenant admin can create a conditional access policy that blocks a user on a non-compliant device from accessing an Office 365 service. The user must conform to the company's device policies before access can be granted to the service. Alternately, the admin can also create a policy that requires users to just enroll their devices to gain access to an Office 365 service. Policies may be applied to all users of an organization, or limited to a few target groups and enhanced over time to include more
 target groups.
 
-When a user requests access to an Office 365 service from a supported device platform, Azure AD authenticates the user and device from which the user launches the request; and grants access to the service only when the user conforms to the policy set for the service. Users that don't have their device enrolled are given remediation instructions on how to enroll and become compliant to access corporate Office 365 services.
+When a user requests access to an Office 365 service from a supported device platform, Microsoft Entra authenticates the user and device from which the user launches the request; and grants access to the service only when the user conforms to the policy set for the service. Users that don't have their device enrolled are given remediation instructions on how to enroll and become compliant to access corporate Office 365 services.
 
-When a user enrolls, the device is registered with Azure AD, and enrolled with a compatible MDM solution like Intune.
+When a user enrolls, the device is registered with Microsoft Entra ID, and enrolled with a compatible MDM solution like Intune.
 
 > [!NOTE]
-> Microsoft is working with third-party MDM ISVs to support automated MDM enrollment and policy based access checks. Steps to turn on auto-MDM enrollment with Azure AD and Intune are explained in the [Windows, Azure AD And Microsoft Intune: Automatic MDM Enrollment Powered By The Cloud!](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/windows-10-azure-ad-and-microsoft-intune-automatic-mdm/ba-p/244067) blog post.
+> Microsoft is working with third-party MDM ISVs to support automated MDM enrollment and policy based access checks. Steps to turn on auto-MDM enrollment with Microsoft Entra ID and Intune are explained in the [Windows, Microsoft Entra ID And Microsoft Intune: Automatic MDM Enrollment Powered By The Cloud!](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/windows-10-azure-ad-and-microsoft-intune-automatic-mdm/ba-p/244067) blog post.
 
-When a user enrolls a device successfully, the device becomes trusted. Azure AD provides single-sign-on to access company applications and enforces conditional access policy to grant access to a service not only the first time the user requests access, but every time the user requests to renew access.
+When a user enrolls a device successfully, the device becomes trusted. Microsoft Entra ID provides single-sign-on to access company applications and enforces conditional access policy to grant access to a service not only the first time the user requests access, but every time the user requests to renew access.
 
 The user will be denied access to services when sign-in credentials are changed, a device is lost/stolen, or the compliance policy isn't met at the time of request for renewal.
 
-Depending on the type of email application that employees use to access Exchange online, the path to establish secured access to email can be slightly different. However, the key components: Azure AD, Office 365/Exchange Online, and Intune, are the same. The IT experience and end-user experience also are similar.
+Depending on the type of email application that employees use to access Exchange online, the path to establish secured access to email can be slightly different. However, the key components: Microsoft Entra ID, Office 365/Exchange Online, and Intune, are the same. The IT experience and end-user experience also are similar.
 
 :::image type="content" alt-text="figure 12." source="images/hva-fig11-office365.png":::
 
 Clients that attempt to access Office 365 will be evaluated for the following properties:
 
 - Is the device managed by an MDM?
-- Is the device registered with Azure AD?
+- Is the device registered with Microsoft Entra ID?
 - Is the device compliant?
 
 To get to a compliant state, the Windows-based device needs to:
 
 - Enroll with an MDM solution.
-- Register with Azure AD.
+- Register with Microsoft Entra ID.
 - Be compliant with the device policies set by the MDM solution.
 
 > [!NOTE]
-> At the present time, conditional access policies are selectively enforced on users on iOS and Android devices. For more information, see the [Azure AD, Microsoft Intune and Windows - Using the cloud to modernize enterprise mobility!](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/azure-ad-microsoft-intune-and-windows-10-8211-using-the-cloud-to/ba-p/244012) blog post.
+> At the present time, conditional access policies are selectively enforced on users on iOS and Android devices. For more information, see the [Microsoft Entra ID, Microsoft Intune and Windows - Using the cloud to modernize enterprise mobility!](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/azure-ad-microsoft-intune-and-windows-10-8211-using-the-cloud-to/ba-p/244012) blog post.
 
 ### Cloud and on-premises apps conditional access control
 
-Conditional access control is a powerful policy evaluation engine built into Azure AD. It gives IT pros an easy way to create access rules beyond Office 365 that evaluate the context of a user's sign in to make real-time decisions about which applications they should be allowed to access.
+Conditional access control is a powerful policy evaluation engine built into Microsoft Entra ID. It gives IT pros an easy way to create access rules beyond Office 365 that evaluate the context of a user's sign in to make real-time decisions about which applications they should be allowed to access.
 
-IT pros can configure conditional access control policies for cloud SaaS applications secured by Azure AD and even on-premises applications. Access rules in Azure AD use the conditional access engine to check device health and compliance state reported by a compatible MDM solution like Intune in order to determine whether to allow access.
+IT pros can configure conditional access control policies for cloud SaaS applications secured by Microsoft Entra ID and even on-premises applications. Access rules in Microsoft Entra ID use the conditional access engine to check device health and compliance state reported by a compatible MDM solution like Intune in order to determine whether to allow access.
 
 For more information about conditional access, see [Azure Conditional Access Preview for SaaS Apps.](/azure/active-directory/authentication/tutorial-enable-azure-mfa)
 
 > [!NOTE]
-> Conditional access control is an Azure AD Premium feature that's also available with EMS. If you don't have an Azure AD Premium subscription, you can get a trial from the [Microsoft Azure](https://go.microsoft.com/fwlink/p/?LinkId=691617) site.
+> Conditional access control is a Microsoft Entra ID P1 or P2 feature that's also available with EMS. If you don't have a Microsoft Entra ID P1 or P2 subscription, you can get a trial from the [Microsoft Azure](https://go.microsoft.com/fwlink/p/?LinkId=691617) site.
 
 For on-premises applications there are two options to enable conditional access control based on a device's compliance state:
 
-- For on-premises applications that are published through the Azure AD Application Proxy, you can configure conditional access control policies as you would for cloud applications. For more information, see [Using Azure AD Application Proxy to publish on-premises apps for remote users](/azure/active-directory/app-proxy/what-is-application-proxy).
-- Additionally, Azure AD Connect will sync device compliance information from Azure AD to on-premises AD. ADFS on Windows Server 2016 will support conditional access control based on a device's compliance state. IT pros will configure conditional access control policies in ADFS that use the device's compliance state reported by a compatible MDM solution to secure on-premises applications.
+- For on-premises applications that are published through the Microsoft Entra application proxy, you can configure conditional access control policies as you would for cloud applications. For more information, see [Using Microsoft Entra application proxy to publish on-premises apps for remote users](/azure/active-directory/app-proxy/what-is-application-proxy).
+- Additionally, Microsoft Entra Connect will sync device compliance information from Microsoft Entra ID to on-premises AD. ADFS on Windows Server 2016 will support conditional access control based on a device's compliance state. IT pros will configure conditional access control policies in ADFS that use the device's compliance state reported by a compatible MDM solution to secure on-premises applications.
 
 :::image type="content" alt-text="figure 13." source="images/hva-fig12-conditionalaccess12.png":::
 
-The following process describes how Azure AD conditional access works:
+The following process describes how Microsoft Entra Conditional Access works:
 
-1. User has already enrolled with MDM through Workplace Access/Azure AD join, which registers device with Azure AD.
+1. User has already enrolled with MDM through Workplace Access/Azure AD join, which registers device with Microsoft Entra ID.
 2. When the device boots or resumes from hibernate, a task "Tpm-HASCertRetr" is triggered to request in background a health attestation blob. Device sends TPM boot measurements to the Health Attestation Service.
 3. Health Attestation Service validates device state and issues an encrypted blob to the device based on the health state with details on failed checks (if any).
 4. User logs on and the MDM agent contacts the Intune/MDM server.
@@ -700,13 +700,13 @@ The following process describes how Azure AD conditional access works:
 7. Intune/MDM server sends the health attestation blob to Health Attestation Service to be validated.
 8. Health Attestation Service validates that the device that sent the health attestation blob is healthy, and returns this result to Intune/MDM server.
 9. Intune/MDM server evaluates compliance based on the compliance and the queried inventory/health attestation state from device.
-10. Intune/MDM server updates compliance state against device object in Azure AD.
+10. Intune/MDM server updates compliance state against device object in Microsoft Entra ID.
 11. User opens app, attempts to access a corporate managed asset.
-12. Access gated by compliance claim in Azure AD.
+12. Access gated by compliance claim in Microsoft Entra ID.
 13. If the device is compliant and the user is authorized, an access token is generated.
 14. User can access the corporate managed asset.
 
-For more information about Azure AD join, see [Azure AD & Windows: Better Together for Work or School](https://go.microsoft.com/fwlink/p/?LinkId=691619), a white paper.
+For more information about Microsoft Entra join, see [Microsoft Entra ID & Windows: Better Together for Work or School](https://go.microsoft.com/fwlink/p/?LinkId=691619), a white paper.
 
 Conditional access control is a topic that many organizations and IT pros may not know and they should. The different attributes that describe a user, a device, compliance, and context of access are powerful when used with a conditional access engine. Conditional access control is an essential step that helps organizations secure their environment.
 
