@@ -40,14 +40,17 @@ productDirectory:
       links:
         - url: /education/windows/tutorial-school-deployment/
           text: "Tutorial: deploy and manage Windows devices in a school"
+        - url: /education/windows/tutorial-school-deployment/enroll-autopilot
+          text: Enrollment in Intune with Windows Autopilot
         - url: use-set-up-school-pcs-app.md
           text: Deploy devices with Set up School PCs
         - url: /windows/deployment
           text: Learn more about Windows deployment >
-
     - title: Learn how to secure Windows
       imageSrc: /media/common/i_security-management.svg
       links:
+        - url: federated-sign-in.md
+          text: Configure federated sign-in for Windows devices
         - url: /windows/security
           text: Learn more about Windows security >
 
@@ -60,16 +63,18 @@ productDirectory:
           text: Management functionalities for Surface devices
         - url: /education/windows/get-minecraft-for-education
           text: Get and deploy Minecraft Education
-        - url: get-minecraft-for-education.md
-          text: Configure settings and applications with Microsoft Intune
         - url: /windows/client-management
           text: Learn more about Windows management >
 
     - title: Learn how to configure Windows
       imageSrc: /media/common/i_config-tools.svg
       links:
-        - url: federated-sign-in.md
-          text: Configure federated sign-in for Windows devices
+        - url: /education/windows/tutorial-school-deployment/configure-devices-overview
+          text: Configure settings and applications with Microsoft Intune
+        - url: /windows/configuration/set-up-shared-or-guest-pc
+          text: Set up a shared or guest Windows device
+        - url: /education/windows/take-tests-in-windows
+          text: Take tests and assessments in Windows
         - url: set-up-school-pcs-provisioning-package.md
           text: Provisioning package settings
         - url: https://www.youtube.com/watch?v=2ZLup_-PhkA
