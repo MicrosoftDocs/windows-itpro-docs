@@ -42,7 +42,7 @@ Hybrid Windows Hello for Business needs two directories:
 - An on-premises Active Directory
 - A Microsoft Entra tenant
 
-The two directories must be synchronized with [Microsoft Entra Connect Sync][AZ-1], which synchronizes user accounts from the on-premises Active Directory to Azure AD.\
+The two directories must be synchronized with [Microsoft Entra Connect Sync][AZ-1], which synchronizes user accounts from the on-premises Active Directory to Microsoft Entra ID.\
 During the Window Hello for Business provisioning process, users register the public portion of their Windows Hello for Business credential with Microsoft Entra ID. *Microsoft Entra Connect Sync* synchronizes the Windows Hello for Business public key to Active Directory.
 
 > [!NOTE]
