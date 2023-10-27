@@ -51,6 +51,14 @@ productDirectory:
       links:
         - url: federated-sign-in.md
           text: Configure federated sign-in for Windows devices
+        - url: /windows/security/application-security/application-control/user-account-control
+          text: User Account Control (UAC)
+        - url: /mem/intune/protect/security-baselines
+          text: Security baselines with Intune
+        - url: /windows/deployment/windows-autopatch
+          text: Windows Autopatch
+        - url: /universal-print
+          text: Universal Print
         - url: /windows/security
           text: Learn more about Windows security >
 
