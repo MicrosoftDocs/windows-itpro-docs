@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Apps for enterprise
 description: This article explains how Windows Autopatch manages Microsoft 365 Apps for enterprise updates
-ms.date: 06/23/2023 
+ms.date: 10/27/2023 
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: how-to
@@ -81,7 +81,15 @@ Windows Autopatch doesn't allow you to pause or roll back an update in the Micro
 
 ## Allow or block Microsoft 365 App updates
 
-For organizations seeking greater control, you can allow or block Microsoft 365 App updates for Windows Autopatch-enrolled devices. When the Microsoft 365 App update setting is set to **Block**, Windows Autopatch doesn't provide Microsoft 365 App updates on your behalf, and your organizations have full control over these updates. For example, you can continue to receive updates from [channels](/deployoffice/overview-update-channels) other than the default [Monthly Enterprise Channel](/deployoffice/overview-update-channels#monthly-enterprise-channel-overview).
+> [!IMPORTANT]
+> You must be an Intune Administrator to make changes to the setting.
+
+For organizations seeking greater control, you can allow or block Microsoft 365 App updates for Windows Autopatch-enrolled devices.
+
+| Microsoft 365 App setting | Description |
+| ----- | ----- |
+| **Block** | When set to **Block**, Windows Autopatch doesn't provide Microsoft 365 App updates on your behalf, and your organizations have full control over these updates. You can continue to receive updates from [channels](/deployoffice/overview-update-channels) other than the default [Monthly Enterprise Channel](/deployoffice/overview-update-channels#monthly-enterprise-channel-overview). |
+| **Allow** | When set to **Allow**, Windows Autopatch moves all Autopatch managed devices to the [Monthly Enterprise Channel](/deployoffice/overview-update-channels#monthly-enterprise-channel-overview) and manages updates automatically. To manage updates manually, the Microsoft 365 App update setting is set to **Block**. |
 
 **To allow or block Microsoft 365 App updates:**
 
