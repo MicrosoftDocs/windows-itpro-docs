@@ -1043,7 +1043,7 @@ For Microsoft Deployment Toolkit (MDT) boot images to function correctly, it req
 | Startup/WinPE-SecureStartup | `WinPE-SecureStartup.cab` | Scripting/WinPE-WMI | Yes |
 | HTML/WinPE-HTA | `WinPE-HTA.cab` | Scripting/WinPE-WMI | Yes |
 
-When adding optional components to any boot image used by MDT during the [Step 6: Add optional components to boot image](#step-6-add-optional-components-to-boot-image) step, make sure to first add the above required components in the above order to the boot image. After adding the required components to the boot image, add any additional desired optional components to the boot image.
+When adding optional components to any boot image used by MDT during the [Step 6: Add optional components to boot image](#step-6-add-optional-components-to-boot-image) step, make sure to first add the above-required components in the above order to the boot image. After adding the required components to the boot image, add any additional desired optional components to the boot image.
 
 For a list of all available WinPE optional components including descriptions for each component, see [WinPE Optional Components (OC) Reference: WinPE Optional Components](/windows-hardware/manufacture/desktop/winpe-add-packages--optional-components-reference#winpe-optional-components).
 
@@ -1107,7 +1107,7 @@ For more information, see [wdsutil stop-server](/windows-server/administration/w
 
 ---
 
-### WDS boot image is replaced with the new updated boot image
+### WDS boot image is replaced with new updated boot image
 
 In the following boot image replacement scenario for WDS:
 
@@ -1186,7 +1186,7 @@ then follow these steps to update the boot image in WDS:
 
     ---
 
-### Add the updated boot image as a new boot image in WDS
+### Add updated boot image as a new boot image in WDS
 
 In the following boot image scenario for WDS:
 
