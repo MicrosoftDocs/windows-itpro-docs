@@ -18,6 +18,18 @@ This article describes how to recover BitLocker keys from Microsoft Entra ID and
 
 In some cases, users might have the recovery password in a printout or a USB flash drive and can perform self-recovery. It's recommended that the organization creates a policy for self-recovery. If self-recovery includes using a password or recovery key stored on a USB flash drive, the users must be warned not to store the USB flash drive in the same place as the PC, especially during travel. For example, if both the PC and the recovery items are in the same bag it would be easy for access to be gained to the PC by an unauthorized user. Another policy to consider is having users contact the Helpdesk before or after performing self-recovery so that the root cause can be identified.
 
+A recovery key can't be stored in any of the following locations:
+
+   - The drive being encrypted
+   - The root directory of a non-removable drive
+   - An encrypted volume
+
+    > [!TIP]
+    > Ideally, a recovery key should be stored separate from the device itself.
+
+> [!NOTE]
+> Microsoft Entra ID provides a portal where recovery keys are also backed up, so users can retrieve their own recovery keys for self-service, if necessary.
+
 ### Help desk recovery
 
 If the user doesn't have a recovery password printed or on a USB flash drive, the user will need to be able to retrieve the recovery password from an online source. If the PC is a member of a domain, the recovery password can be backed up to AD DS. **However, back up of the recovery password to AD DS does not happen by default.** 

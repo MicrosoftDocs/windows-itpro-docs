@@ -88,9 +88,9 @@ Answering the questions helps to determine the best BitLocker recovery process f
 
 After a BitLocker recovery has been initiated, users can use a recovery password to unlock access to encrypted data. Consider both self-recovery and recovery password retrieval methods for the organization.
 
-## Backup of recovery information
-
 ### User-initaited backup
+
+In order to recover BitLocker, you need to have access to the recovery password. This means that all recovery scenarios start with the assumption that the recovery password is available. The BitLocker recovery password is unique to the computer it was created on and can be saved in various ways, such as on paper, on a USB startup device, in the Active Directory directory service, or in a file on a network. However, having access to this key allows the holder to unlock a BitLocker-protected volume and access all of its data. Therefore, it is crucial for your organization to establish procedures to control access to recovery passwords and ensure that they are stored securely, separate from the computers they protect.
 
 #### OneDrive option
 
@@ -98,7 +98,7 @@ There's an option for storing the BitLocker recovery key using OneDrive. This op
 
 Users can verify whether the recovery key is saved properly by checking OneDrive for the *BitLocker* folder, which is created automatically during the save process. The folder contains two files, a `readme.txt` and the recovery key. For users storing more than one recovery password on their OneDrive, they can identify the required recovery key by looking at the file name. The recovery key ID is appended to the end of the file name.
 
-### Centralized backup
+## Centralized backup
 
 The preferred backup methodology in an organization is to automatically store BitLocker recovery information in a central location. Depending on the organization's requirements, the recovery information can be stored in Microsoft Entra ID, AD DS, or file shares.
 
@@ -152,7 +152,6 @@ A file with a file name format of `BitLocker Key Package {<id>}.KPG` is created 
 > [!NOTE]
 > To export a new key package from an unlocked, BitLocker-protected volume, local administrator access to the working volume is required before any damage occurrs to the volume.
 
-
 ### Multiple recovery passwords
 
 If multiple recovery passwords are stored under a computer object in AD DS, the name of the BitLocker recovery information object includes the date on which the password was created.
@@ -161,10 +160,11 @@ To make sure the correct password is provided and/or to prevent providing the in
 
 Since the password ID is a unique value that is associated with each recovery password stored in AD DS, running a query using this ID finds the correct password to unlock the encrypted volume.
 
-
-#### Data Recovery Agents
+### Data Recovery Agents
 
 DRAs can be used to recover OS drives, fixed data drives, and removable data drives. However, when used to recover OS drives, the operating system drive must be mounted on another device as a *data drive* for the DRA to be able to unlock the drive. Data recovery agents are added to the drive when it's encrypted, and can be updated after encryption occurs.
+
+The benefit of using a DRA over password or key recovery is that the DRA acts as a *master key* for BitLocker. With a DRA you can recover any volume protected by the policy, without having to find a specific password or key for each individual volume."
 
 To configure DRAs for devices that are joined to an Active Directory domain, the following steps are required:
 

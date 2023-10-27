@@ -188,7 +188,7 @@ For more information about how to configure Network unlock feature, see [Network
 
 ## BitLocker recovery
 
-Organizations should carefully plan a BitLocker recovery strategy as part of the overall BitLocker implementation plan. There are different options when it comes to BitLocker recovery, which are described in the [BitLocker recovery guide](recovery-guide.md).
+Organizations should carefully plan a BitLocker recovery strategy as part of the overall BitLocker implementation plan. There are different options when it comes to design a BitLocker recovery model, which are described in the [BitLocker recovery guide](recovery-guide.md).
 
 ## Monitor BitLocker
 
