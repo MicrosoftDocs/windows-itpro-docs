@@ -3,7 +3,7 @@ title: Create a WIP policy in Intune
 description: Learn how to use the Microsoft Intune admin center to create and deploy your Windows Information Protection (WIP) policy to protect data on your network.
 author: aczechowski
 ms.author: aaroncz
-manager: dougeby
+manager: aaroncz
 ms.reviewer: rafals
 ms.topic: how-to
 ms.date: 07/15/2022
@@ -27,23 +27,23 @@ You can create an app protection policy in Intune either with device enrollment 
 
 - MAM has more **Access** settings for Windows Hello for Business.
 - MAM can [selectively wipe company data](/intune/apps-selective-wipe) from a user's personal device.
-- MAM requires an [Azure Active Directory (Azure AD) Premium license](/azure/active-directory/fundamentals/active-directory-whatis#what-are-the-azure-ad-licenses).
-- An Azure AD Premium license is also required for WIP auto-recovery, where a device can re-enroll and regain access to protected data. WIP auto-recovery depends on Azure AD registration to back up the encryption keys, which requires device auto-enrollment with MDM.
+- MAM requires an [Microsoft Entra ID P1 or P2 license](/azure/active-directory/fundamentals/active-directory-whatis#what-are-the-azure-ad-licenses).
+- A Microsoft Entra ID P1 or P2 license is also required for WIP auto-recovery, where a device can re-enroll and regain access to protected data. WIP auto-recovery depends on Microsoft Entra registration to back up the encryption keys, which requires device auto-enrollment with MDM.
 - MAM supports only one user per device.  
 - MAM can only manage [enlightened apps](enlightened-microsoft-apps-and-wip.md).
 - Only MDM can use [BitLocker CSP](/windows/client-management/mdm/bitlocker-csp) policies.
-- If the same user and device are targeted for both MDM and MAM, the MDM policy will be applied to devices joined to Azure AD. For personal devices that are workplace-joined (that is, added by using **Settings** > **Email & accounts** > **Add a work or school account**), the MAM-only policy will be preferred but it's possible to upgrade the device management to MDM in **Settings**. Windows Home edition only supports WIP for MAM-only; upgrading to MDM policy on Home edition will revoke WIP-protected data access. 
+- If the same user and device are targeted for both MDM and MAM, the MDM policy will be applied to devices joined to Microsoft Entra ID. For personal devices that are workplace-joined (that is, added by using **Settings** > **Email & accounts** > **Add a work or school account**), the MAM-only policy will be preferred but it's possible to upgrade the device management to MDM in **Settings**. Windows Home edition only supports WIP for MAM-only; upgrading to MDM policy on Home edition will revoke WIP-protected data access. 
 
 
 ## Prerequisites
 
-Before you can create a WIP policy using Intune, you need to configure an MDM or MAM provider in Azure Active Directory (Azure AD). MAM requires an [Azure Active Directory (Azure AD) Premium license](/azure/active-directory/fundamentals/active-directory-whatis#what-are-the-azure-ad-licenses). An Azure AD Premium license is also required for WIP auto-recovery, where a device can re-enroll and regain access to protected data. WIP auto-recovery relies on Azure AD registration to back up the encryption keys, which requires device auto-enrollment with MDM. 
+Before you can create a WIP policy using Intune, you need to configure an MDM or MAM provider in Microsoft Entra ID. MAM requires an [Microsoft Entra ID P1 or P2 license](/azure/active-directory/fundamentals/active-directory-whatis#what-are-the-azure-ad-licenses). A Microsoft Entra ID P1 or P2 license is also required for WIP auto-recovery, where a device can re-enroll and regain access to protected data. WIP auto-recovery relies on Microsoft Entra registration to back up the encryption keys, which requires device auto-enrollment with MDM. 
 
 ## Configure the MDM or MAM provider
 
 1. Sign in to the Azure portal.
 
-2. Select **Azure Active Directory** > **Mobility (MDM and MAM)** > **Microsoft Intune**.
+2. Select **Microsoft Entra ID** > **Mobility (MDM and MAM)** > **Microsoft Intune**.
 
 3. Select **Restore Default URLs** or enter the settings for MDM or MAM user scope and select **Save**:
 
@@ -431,7 +431,7 @@ For example:
 URL <,proxy>|URL <,proxy>|/*AppCompat*/
 ```
 
-When you use this string, we recommend that you also turn on [Azure Active Directory Conditional Access](/azure/active-directory/active-directory-conditional-access), using the **Domain joined or marked as compliant** option, which blocks apps from accessing any enterprise cloud resources that are protected by conditional access.
+When you use this string, we recommend that you also turn on [Microsoft Entra Conditional Access](/azure/active-directory/active-directory-conditional-access), using the **Domain joined or marked as compliant** option, which blocks apps from accessing any enterprise cloud resources that are protected by conditional access.
 
 Value format with proxy:
 

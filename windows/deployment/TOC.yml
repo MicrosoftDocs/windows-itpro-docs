@@ -101,7 +101,9 @@
         - name: Deploy Windows client
           items:
             - name: Deploy Windows client with Autopilot
-              href: windows-autopilot/index.yml
+              href: /autopilot/
+            - name: Windows deployment scenarios and tools
+              href: windows-deployment-scenarios-and-tools.md
             - name: Deploy Windows client with Configuration Manager
               items:
                 - name: Deploy to a new device
@@ -122,24 +124,10 @@
                   href: deploy-windows-mdt/replace-a-windows-7-computer-with-a-windows-10-computer.md
                 - name: In-place upgrade
                   href: deploy-windows-mdt/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit.md
-            - name: Subscription Activation
-              items:
-                - name: Windows subscription activation
-                  href: windows-10-subscription-activation.md
-                - name: Windows Enterprise E3 in CSP
-                  href: windows-10-enterprise-e3-overview.md
-                - name: Configure VDA for subscription activation
-                  href: vda-subscription-activation.md
-                - name: Deploy Windows Enterprise licenses
-                  href: deploy-enterprise-licenses.md
         - name: Deploy Windows client updates
           items:
             - name: Assign devices to servicing channels
               href: update/waas-servicing-channels-windows-10-updates.md
-            - name: Deploy updates with Configuration Manager
-              href: update/deploy-updates-configmgr.md
-            - name: Deploy updates with Intune
-              href: update/deploy-updates-intune.md
             - name: Deploy updates with WSUS
               href: update/waas-manage-updates-wsus.md
             - name: Deploy updates with Group Policy
@@ -170,8 +158,6 @@
               href: update/waas-integrate-wufb.md
             - name: 'Walkthrough: use Group Policy to configure Windows Update for Business'
               href: update/waas-wufb-group-policy.md
-            - name: 'Walkupdatesthrough: use Intune to configure Windows Update for Business'
-              href: update/deploy-updates-intune.md
         - name: Windows Update for Business deployment service
           items:
           - name: Windows Update for Business deployment service overview
@@ -188,6 +174,109 @@
               href: update/deployment-service-drivers.md
           - name: Troubleshoot Windows Update for Business deployment service
             href: update/deployment-service-troubleshoot.md
+    - name: Activate
+      items:
+      - name: Windows subscription activation
+        href: windows-10-subscription-activation.md
+      - name: Windows Enterprise E3 in CSP
+        href: windows-10-enterprise-e3-overview.md
+      - name: Configure VDA for subscription activation
+        href: vda-subscription-activation.md
+      - name: Deploy Windows Enterprise licenses
+        href: deploy-enterprise-licenses.md
+      - name: Volume Activation 
+        items:
+        - name: Overview
+          href: volume-activation/volume-activation-windows-10.md
+        - name: Plan for volume activation 
+          href: volume-activation/plan-for-volume-activation-client.md
+        - name: Activate using Key Management Service 
+          href: volume-activation/activate-using-key-management-service-vamt.md
+        - name: Activate using Active Directory-based activation 
+          href: volume-activation/activate-using-active-directory-based-activation-client.md
+        - name: Activate clients running Windows 10
+          href: volume-activation/activate-windows-10-clients-vamt.md
+        - name: Monitor activation 
+          href: volume-activation/monitor-activation-client.md
+        - name: Use the Volume Activation Management Tool 
+          href: volume-activation/use-the-volume-activation-management-tool-client.md
+        href: volume-activation/appendix-information-sent-to-microsoft-during-activation-client.md
+      - name: Volume Activation Management Tool (VAMT)
+        items:
+        - name: VAMT technical reference
+          href: volume-activation/volume-activation-management-tool.md
+        - name: Introduction to VAMT
+          href: volume-activation/introduction-vamt.md
+        - name: Active Directory-Based Activation Overview
+          href: volume-activation/active-directory-based-activation-overview.md
+        - name: Install and Configure VAMT
+          items:
+          - name: Overview
+            href: volume-activation/install-configure-vamt.md
+          - name: VAMT Requirements
+            href: volume-activation/vamt-requirements.md
+          - name: Install VAMT
+            href: volume-activation/install-vamt.md
+          - name: Configure Client Computers
+            href: volume-activation/configure-client-computers-vamt.md
+        - name: Add and Manage Products
+          items:
+          - name: Overview
+            href: volume-activation/add-manage-products-vamt.md
+          - name: Add and Remove Computers
+            href: volume-activation/add-remove-computers-vamt.md
+          - name: Update Product Status
+            href: volume-activation/update-product-status-vamt.md
+          - name: Remove Products
+            href: volume-activation/remove-products-vamt.md
+        - name: Manage Product Keys
+          items:
+          - name: Overview
+            href: volume-activation/manage-product-keys-vamt.md
+          - name: Add and Remove a Product Key
+            href: volume-activation/add-remove-product-key-vamt.md
+          - name: Install a Product Key
+            href: volume-activation/install-product-key-vamt.md
+          - name: Install a KMS Client Key
+            href: volume-activation/install-kms-client-key-vamt.md
+        - name: Manage Activations
+          items:
+          - name: Overview
+            href: volume-activation/manage-activations-vamt.md
+          - name: Run Online Activation
+            href: volume-activation/online-activation-vamt.md
+          - name: Run Proxy Activation
+            href: volume-activation/proxy-activation-vamt.md
+          - name: Run KMS Activation
+            href: volume-activation/kms-activation-vamt.md
+          - name: Run Local Reactivation
+            href: volume-activation/local-reactivation-vamt.md
+          - name: Activate an Active Directory Forest Online
+            href: volume-activation/activate-forest-vamt.md
+          - name: Activate by Proxy an Active Directory Forest
+            href: volume-activation/activate-forest-by-proxy-vamt.md
+        - name: Manage VAMT Data
+          items:
+          - name: Overview
+            href: volume-activation/manage-vamt-data.md
+          - name: Import and Export VAMT Data
+            href: volume-activation/import-export-vamt-data.md
+          - name: Use VAMT in Windows PowerShell
+            href: volume-activation/use-vamt-in-windows-powershell.md
+          - name: VAMT Step-by-Step Scenarios
+            items:
+            - name: Overview
+              href: volume-activation/vamt-step-by-step.md
+            - name: "Scenario 1: Online Activation"
+              href: volume-activation/scenario-online-activation-vamt.md
+            - name: "Scenario 2: Proxy Activation"
+              href: volume-activation/scenario-proxy-activation-vamt.md
+            - name: "Scenario 3: KMS Client Activation"
+              href: volume-activation/scenario-kms-activation-vamt.md
+          - name: VAMT Known Issues
+            href: volume-activation/vamt-known-issues.md
+      - name: Information sent to Microsoft during activation
+        href: volume-activation/appendix-information-sent-to-microsoft-during-activation-client.md
     - name: Monitor
       items:
       - name: Windows Update for Business reports
@@ -284,9 +373,9 @@
         - name: How does Windows Update work?
           href: update/how-windows-update-works.md
         - name: Windows client upgrade paths
-          href: upgrade/windows-10-upgrade-paths.md
+          href: upgrade/windows-upgrade-paths.md
         - name: Windows client edition upgrade
-          href: upgrade/windows-10-edition-upgrades.md
+          href: upgrade/windows-edition-upgrades.md
         - name: Deploy Windows 10 with Microsoft 365
           href: deploy-m365.md
         - name: Understand the Unified Update Platform
@@ -331,82 +420,6 @@
                       href: planning/security-and-data-protection-considerations-for-windows-to-go.md
                     - name: "Windows To Go: frequently asked questions"
                       href: planning/windows-to-go-frequently-asked-questions.yml
-        
-                - name: Volume Activation Management Tool (VAMT) technical reference
-                  items:
-                    - name: VAMT technical reference
-                      href: volume-activation/volume-activation-management-tool.md
-                    - name: Introduction to VAMT
-                      href: volume-activation/introduction-vamt.md
-                    - name: Active Directory-Based Activation Overview
-                      href: volume-activation/active-directory-based-activation-overview.md
-                    - name: Install and Configure VAMT
-                      items:
-                      - name: Overview
-                        href: volume-activation/install-configure-vamt.md
-                      - name: VAMT Requirements
-                        href: volume-activation/vamt-requirements.md
-                      - name: Install VAMT
-                        href: volume-activation/install-vamt.md
-                      - name: Configure Client Computers
-                        href: volume-activation/configure-client-computers-vamt.md
-                    - name: Add and Manage Products
-                      items:
-                      - name: Overview
-                        href: volume-activation/add-manage-products-vamt.md
-                      - name: Add and Remove Computers
-                        href: volume-activation/add-remove-computers-vamt.md
-                      - name: Update Product Status
-                        href: volume-activation/update-product-status-vamt.md
-                      - name: Remove Products
-                        href: volume-activation/remove-products-vamt.md
-                    - name: Manage Product Keys
-                      items:
-                      - name: Overview
-                        href: volume-activation/manage-product-keys-vamt.md
-                      - name: Add and Remove a Product Key
-                        href: volume-activation/add-remove-product-key-vamt.md
-                      - name: Install a Product Key
-                        href: volume-activation/install-product-key-vamt.md
-                      - name: Install a KMS Client Key
-                        href: volume-activation/install-kms-client-key-vamt.md
-                    - name: Manage Activations
-                      items:
-                      - name: Overview
-                        href: volume-activation/manage-activations-vamt.md
-                      - name: Run Online Activation
-                        href: volume-activation/online-activation-vamt.md
-                      - name: Run Proxy Activation
-                        href: volume-activation/proxy-activation-vamt.md
-                      - name: Run KMS Activation
-                        href: volume-activation/kms-activation-vamt.md
-                      - name: Run Local Reactivation
-                        href: volume-activation/local-reactivation-vamt.md
-                      - name: Activate an Active Directory Forest Online
-                        href: volume-activation/activate-forest-vamt.md
-                      - name: Activate by Proxy an Active Directory Forest
-                        href: volume-activation/activate-forest-by-proxy-vamt.md
-                    - name: Manage VAMT Data
-                      items:
-                      - name: Overview
-                        href: volume-activation/manage-vamt-data.md
-                      - name: Import and Export VAMT Data
-                        href: volume-activation/import-export-vamt-data.md
-                      - name: Use VAMT in Windows PowerShell
-                        href: volume-activation/use-vamt-in-windows-powershell.md
-                    - name: VAMT Step-by-Step Scenarios
-                      items:
-                      - name: Overview
-                        href: volume-activation/vamt-step-by-step.md
-                      - name: "Scenario 1: Online Activation"
-                        href: volume-activation/scenario-online-activation-vamt.md
-                      - name: "Scenario 2: Proxy Activation"
-                        href: volume-activation/scenario-proxy-activation-vamt.md
-                      - name: "Scenario 3: KMS Client Activation"
-                        href: volume-activation/scenario-kms-activation-vamt.md
-                    - name: VAMT Known Issues
-                      href: volume-activation/vamt-known-issues.md
-        
                 - name: User State Migration Tool (USMT) technical reference
                   items:
                     - name: USMT overview articles
@@ -574,24 +587,7 @@
                     href: planning/testing-your-application-mitigation-packages.md
                   - name: Use the Sdbinst.exe Command-Line Tool
                     href: planning/using-the-sdbinstexe-command-line-tool.md
-                - name: Volume Activation 
-                  items:
-                  - name: Overview
-                    href: volume-activation/volume-activation-windows-10.md
-                  - name: Plan for volume activation 
-                    href: volume-activation/plan-for-volume-activation-client.md
-                  - name: Activate using Key Management Service 
-                    href: volume-activation/activate-using-key-management-service-vamt.md
-                  - name: Activate using Active Directory-based activation 
-                    href: volume-activation/activate-using-active-directory-based-activation-client.md
-                  - name: Activate clients running Windows 10
-                    href: volume-activation/activate-windows-10-clients-vamt.md
-                  - name: Monitor activation 
-                    href: volume-activation/monitor-activation-client.md
-                  - name: Use the Volume Activation Management Tool 
-                    href: volume-activation/use-the-volume-activation-management-tool-client.md
-                - name: "Appendix: Information sent to Microsoft during activation "
-                  href: volume-activation/appendix-information-sent-to-microsoft-during-activation-client.md
-
         - name: Install fonts in Windows client
           href: windows-10-missing-fonts.md
+        - name: Customize Windows PE boot images
+          href: customize-boot-image.md

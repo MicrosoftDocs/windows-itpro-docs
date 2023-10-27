@@ -4,7 +4,7 @@ description: Learn more about the InternetExplorer Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/11/2023
+ms.date: 10/03/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -18,6 +18,8 @@ ms.topic: reference
 
 [!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
+
 <!-- InternetExplorer-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 <!-- InternetExplorer-Editable-End -->
@@ -28,7 +30,7 @@ ms.topic: reference
 <!-- AddSearchProvider-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AddSearchProvider-Applicability-End -->
 
 <!-- AddSearchProvider-OmaUri-Begin -->
@@ -94,7 +96,7 @@ This policy setting allows you to add a specific list of search providers to the
 <!-- AllowActiveXFiltering-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowActiveXFiltering-Applicability-End -->
 
 <!-- AllowActiveXFiltering-OmaUri-Begin -->
@@ -157,7 +159,7 @@ This policy setting controls the ActiveX Filtering feature for websites that are
 <!-- AllowAddOnList-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowAddOnList-Applicability-End -->
 
 <!-- AllowAddOnList-OmaUri-Begin -->
@@ -226,7 +228,7 @@ Value - A number indicating whether Internet Explorer should deny or allow the a
 <!-- AllowAutoComplete-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- AllowAutoComplete-Applicability-End -->
 
 <!-- AllowAutoComplete-OmaUri-Begin -->
@@ -287,7 +289,7 @@ This AutoComplete feature can remember and suggest User names and passwords on F
 <!-- AllowCertificateAddressMismatchWarning-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- AllowCertificateAddressMismatchWarning-Applicability-End -->
 
 <!-- AllowCertificateAddressMismatchWarning-OmaUri-Begin -->
@@ -350,7 +352,7 @@ This policy setting allows you to turn on the certificate address mismatch secur
 <!-- AllowDeletingBrowsingHistoryOnExit-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- AllowDeletingBrowsingHistoryOnExit-Applicability-End -->
 
 <!-- AllowDeletingBrowsingHistoryOnExit-OmaUri-Begin -->
@@ -417,7 +419,7 @@ If the "Prevent access to Delete Browsing History" policy setting is enabled, th
 <!-- AllowEnhancedProtectedMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowEnhancedProtectedMode-Applicability-End -->
 
 <!-- AllowEnhancedProtectedMode-OmaUri-Begin -->
@@ -482,7 +484,7 @@ Enhanced Protected Mode provides additional protection against malicious website
 <!-- AllowEnhancedSuggestionsInAddressBar-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- AllowEnhancedSuggestionsInAddressBar-Applicability-End -->
 
 <!-- AllowEnhancedSuggestionsInAddressBar-OmaUri-Begin -->
@@ -547,7 +549,7 @@ This policy setting allows Internet Explorer to provide enhanced suggestions as 
 <!-- AllowEnterpriseModeFromToolsMenu-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowEnterpriseModeFromToolsMenu-Applicability-End -->
 
 <!-- AllowEnterpriseModeFromToolsMenu-OmaUri-Begin -->
@@ -609,7 +611,7 @@ If you disable or don't configure this policy setting, the menu option won't app
 <!-- AllowEnterpriseModeSiteList-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowEnterpriseModeSiteList-Applicability-End -->
 
 <!-- AllowEnterpriseModeSiteList-OmaUri-Begin -->
@@ -671,7 +673,7 @@ This policy setting lets you specify where to find the list of websites you want
 <!-- AllowFallbackToSSL3-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- AllowFallbackToSSL3-Applicability-End -->
 
 <!-- AllowFallbackToSSL3-OmaUri-Begin -->
@@ -731,7 +733,7 @@ If you disable this policy, system defaults will be used.
 <!-- AllowInternetExplorer7PolicyList-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- AllowInternetExplorer7PolicyList-Applicability-End -->
 
 <!-- AllowInternetExplorer7PolicyList-OmaUri-Begin -->
@@ -793,7 +795,7 @@ This policy setting allows you to add specific sites that must be viewed in Inte
 <!-- AllowInternetExplorerStandardsMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowInternetExplorerStandardsMode-Applicability-End -->
 
 <!-- AllowInternetExplorerStandardsMode-OmaUri-Begin -->
@@ -858,7 +860,7 @@ This policy setting controls how Internet Explorer displays local intranet conte
 <!-- AllowInternetZoneTemplate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowInternetZoneTemplate-Applicability-End -->
 
 <!-- AllowInternetZoneTemplate-OmaUri-Begin -->
@@ -927,7 +929,7 @@ Note. It's recommended to configure template policy settings in one Group Policy
 <!-- AllowIntranetZoneTemplate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowIntranetZoneTemplate-Applicability-End -->
 
 <!-- AllowIntranetZoneTemplate-OmaUri-Begin -->
@@ -996,7 +998,7 @@ Note. It's recommended to configure template policy settings in one Group Policy
 <!-- AllowLocalMachineZoneTemplate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowLocalMachineZoneTemplate-Applicability-End -->
 
 <!-- AllowLocalMachineZoneTemplate-OmaUri-Begin -->
@@ -1065,7 +1067,7 @@ Note. It's recommended to configure template policy settings in one Group Policy
 <!-- AllowLockedDownInternetZoneTemplate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowLockedDownInternetZoneTemplate-Applicability-End -->
 
 <!-- AllowLockedDownInternetZoneTemplate-OmaUri-Begin -->
@@ -1134,7 +1136,7 @@ Note. It's recommended to configure template policy settings in one Group Policy
 <!-- AllowLockedDownIntranetZoneTemplate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowLockedDownIntranetZoneTemplate-Applicability-End -->
 
 <!-- AllowLockedDownIntranetZoneTemplate-OmaUri-Begin -->
@@ -1203,7 +1205,7 @@ Note. It's recommended to configure template policy settings in one Group Policy
 <!-- AllowLockedDownLocalMachineZoneTemplate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowLockedDownLocalMachineZoneTemplate-Applicability-End -->
 
 <!-- AllowLockedDownLocalMachineZoneTemplate-OmaUri-Begin -->
@@ -1272,7 +1274,7 @@ Note. It's recommended to configure template policy settings in one Group Policy
 <!-- AllowLockedDownRestrictedSitesZoneTemplate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowLockedDownRestrictedSitesZoneTemplate-Applicability-End -->
 
 <!-- AllowLockedDownRestrictedSitesZoneTemplate-OmaUri-Begin -->
@@ -1341,7 +1343,7 @@ Note. It's recommended to configure template policy settings in one Group Policy
 <!-- AllowOneWordEntry-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowOneWordEntry-Applicability-End -->
 
 <!-- AllowOneWordEntry-OmaUri-Begin -->
@@ -1404,7 +1406,7 @@ This policy allows the user to go directly to an intranet site for a one-word en
 <!-- AllowSaveTargetAsInIEMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ [10.0.20348] and later <br> ✅ Windows 10, version 1903 [10.0.18362.1350] and later <br> ✅ Windows 10, version 2004 [10.0.19041.789] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348] and later <br> ✅ Windows 10, version 1903 [10.0.18362.1350] and later <br> ✅ Windows 10, version 2004 [10.0.19041.789] and later |
 <!-- AllowSaveTargetAsInIEMode-Applicability-End -->
 
 <!-- AllowSaveTargetAsInIEMode-OmaUri-Begin -->
@@ -1483,7 +1485,7 @@ For more information, see <https://go.microsoft.com/fwlink/?linkid=2102115>
 <!-- AllowSiteToZoneAssignmentList-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowSiteToZoneAssignmentList-Applicability-End -->
 
 <!-- AllowSiteToZoneAssignmentList-OmaUri-Begin -->
@@ -1580,7 +1582,7 @@ Value and index pairs in the SyncML example:
 <!-- AllowsLockedDownTrustedSitesZoneTemplate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowsLockedDownTrustedSitesZoneTemplate-Applicability-End -->
 
 <!-- AllowsLockedDownTrustedSitesZoneTemplate-OmaUri-Begin -->
@@ -1649,7 +1651,7 @@ Note. It's recommended to configure template policy settings in one Group Policy
 <!-- AllowSoftwareWhenSignatureIsInvalid-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- AllowSoftwareWhenSignatureIsInvalid-Applicability-End -->
 
 <!-- AllowSoftwareWhenSignatureIsInvalid-OmaUri-Begin -->
@@ -1714,7 +1716,7 @@ This policy setting allows you to manage whether software, such as ActiveX contr
 <!-- AllowsRestrictedSitesZoneTemplate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowsRestrictedSitesZoneTemplate-Applicability-End -->
 
 <!-- AllowsRestrictedSitesZoneTemplate-OmaUri-Begin -->
@@ -1783,7 +1785,7 @@ Note. It's recommended to configure template policy settings in one Group Policy
 <!-- AllowSuggestedSites-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowSuggestedSites-Applicability-End -->
 
 <!-- AllowSuggestedSites-OmaUri-Begin -->
@@ -1848,7 +1850,7 @@ This policy setting controls the Suggested Sites feature, which recommends websi
 <!-- AllowTrustedSitesZoneTemplate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowTrustedSitesZoneTemplate-Applicability-End -->
 
 <!-- AllowTrustedSitesZoneTemplate-OmaUri-Begin -->
@@ -1917,7 +1919,7 @@ Note. It's recommended to configure template policy settings in one Group Policy
 <!-- CheckServerCertificateRevocation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- CheckServerCertificateRevocation-Applicability-End -->
 
 <!-- CheckServerCertificateRevocation-OmaUri-Begin -->
@@ -1982,7 +1984,7 @@ This policy setting allows you to manage whether Internet Explorer will check re
 <!-- CheckSignaturesOnDownloadedPrograms-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- CheckSignaturesOnDownloadedPrograms-Applicability-End -->
 
 <!-- CheckSignaturesOnDownloadedPrograms-OmaUri-Begin -->
@@ -2047,7 +2049,7 @@ This policy setting allows you to manage whether Internet Explorer checks for di
 <!-- ConfigureEdgeRedirectChannel-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ [10.0.20348] and later <br> ✅ Windows 10, version 1903 [10.0.18362.1350] and later <br> ✅ Windows 10, version 2004 [10.0.19041.789] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348] and later <br> ✅ Windows 10, version 1903 [10.0.18362.1350] and later <br> ✅ Windows 10, version 2004 [10.0.19041.789] and later |
 <!-- ConfigureEdgeRedirectChannel-Applicability-End -->
 
 <!-- ConfigureEdgeRedirectChannel-OmaUri-Begin -->
@@ -2337,7 +2339,7 @@ If the Windows Update for the next version of Microsoft Edge* or Microsoft Edge 
 <!-- ConsistentMimeHandlingInternetExplorerProcesses-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- ConsistentMimeHandlingInternetExplorerProcesses-Applicability-End -->
 
 <!-- ConsistentMimeHandlingInternetExplorerProcesses-OmaUri-Begin -->
@@ -2403,7 +2405,7 @@ This policy setting determines whether Internet Explorer requires that all file-
 <!-- DisableActiveXVersionListAutoDownload-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- DisableActiveXVersionListAutoDownload-Applicability-End -->
 
 <!-- DisableActiveXVersionListAutoDownload-OmaUri-Begin -->
@@ -2464,7 +2466,7 @@ For more information, see "Out-of-date ActiveX control blocking" in the Internet
 <!-- DisableBypassOfSmartScreenWarnings-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DisableBypassOfSmartScreenWarnings-Applicability-End -->
 
 <!-- DisableBypassOfSmartScreenWarnings-OmaUri-Begin -->
@@ -2527,7 +2529,7 @@ This policy setting determines whether the user can bypass warnings from SmartSc
 <!-- DisableBypassOfSmartScreenWarningsAboutUncommonFiles-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DisableBypassOfSmartScreenWarningsAboutUncommonFiles-Applicability-End -->
 
 <!-- DisableBypassOfSmartScreenWarningsAboutUncommonFiles-OmaUri-Begin -->
@@ -2590,7 +2592,7 @@ This policy setting determines whether the user can bypass warnings from SmartSc
 <!-- DisableCompatView-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- DisableCompatView-Applicability-End -->
 
 <!-- DisableCompatView-OmaUri-Begin -->
@@ -2653,7 +2655,7 @@ This policy setting controls the Compatibility View feature, which allows the us
 <!-- DisableConfiguringHistory-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- DisableConfiguringHistory-Applicability-End -->
 
 <!-- DisableConfiguringHistory-OmaUri-Begin -->
@@ -2716,7 +2718,7 @@ This setting specifies the number of days that Internet Explorer tracks views of
 <!-- DisableCrashDetection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- DisableCrashDetection-Applicability-End -->
 
 <!-- DisableCrashDetection-OmaUri-Begin -->
@@ -2779,7 +2781,7 @@ This policy setting allows you to manage the crash detection feature of add-on M
 <!-- DisableCustomerExperienceImprovementProgramParticipation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DisableCustomerExperienceImprovementProgramParticipation-Applicability-End -->
 
 <!-- DisableCustomerExperienceImprovementProgramParticipation-OmaUri-Begin -->
@@ -2844,7 +2846,7 @@ This policy setting prevents the user from participating in the Customer Experie
 <!-- DisableDeletingUserVisitedWebsites-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- DisableDeletingUserVisitedWebsites-Applicability-End -->
 
 <!-- DisableDeletingUserVisitedWebsites-OmaUri-Begin -->
@@ -2911,7 +2913,7 @@ If the "Prevent access to Delete Browsing History" policy setting is enabled, th
 <!-- DisableEnclosureDownloading-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DisableEnclosureDownloading-Applicability-End -->
 
 <!-- DisableEnclosureDownloading-OmaUri-Begin -->
@@ -2974,7 +2976,7 @@ This policy setting prevents the user from having enclosures (file attachments) 
 <!-- DisableEncryptionSupport-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DisableEncryptionSupport-Applicability-End -->
 
 <!-- DisableEncryptionSupport-OmaUri-Begin -->
@@ -3039,7 +3041,7 @@ This policy setting allows you to turn off support for Transport Layer Security 
 <!-- DisableFeedsBackgroundSync-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- DisableFeedsBackgroundSync-Applicability-End -->
 
 <!-- DisableFeedsBackgroundSync-OmaUri-Begin -->
@@ -3102,7 +3104,7 @@ This policy setting controls whether to have background synchronization for feed
 <!-- DisableFirstRunWizard-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DisableFirstRunWizard-Applicability-End -->
 
 <!-- DisableFirstRunWizard-OmaUri-Begin -->
@@ -3170,7 +3172,7 @@ Starting with Windows 8, the "Welcome to Internet Explorer" webpage isn't availa
 <!-- DisableFlipAheadFeature-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DisableFlipAheadFeature-Applicability-End -->
 
 <!-- DisableFlipAheadFeature-OmaUri-Begin -->
@@ -3237,7 +3239,7 @@ Microsoft collects your browsing history to improve how flip ahead with page pre
 <!-- DisableGeolocation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- DisableGeolocation-Applicability-End -->
 
 <!-- DisableGeolocation-OmaUri-Begin -->
@@ -3302,7 +3304,7 @@ This policy setting allows you to disable browser geolocation support. This will
 <!-- DisableHomePageChange-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DisableHomePageChange-Applicability-End -->
 
 <!-- DisableHomePageChange-OmaUri-Begin -->
@@ -3361,7 +3363,7 @@ The Home page specified on the General tab of the Internet Options dialog box is
 <!-- DisableHTMLApplication-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ [10.0.20348.1060] and later <br> ✅ Windows 10, version 1809 [10.0.17763.3460] and later <br> ✅ Windows 10, version 2004 [10.0.19041.2060] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.1030] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.1060] and later <br> ✅ Windows 10, version 1809 [10.0.17763.3460] and later <br> ✅ Windows 10, version 2004 [10.0.19041.2060] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.1030] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- DisableHTMLApplication-Applicability-End -->
 
 <!-- DisableHTMLApplication-OmaUri-Begin -->
@@ -3424,7 +3426,7 @@ This policy setting specifies if running the HTML Application (HTA file) is bloc
 <!-- DisableIgnoringCertificateErrors-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- DisableIgnoringCertificateErrors-Applicability-End -->
 
 <!-- DisableIgnoringCertificateErrors-OmaUri-Begin -->
@@ -3487,7 +3489,7 @@ This policy setting prevents the user from ignoring Secure Sockets Layer/Transpo
 <!-- DisableInPrivateBrowsing-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- DisableInPrivateBrowsing-Applicability-End -->
 
 <!-- DisableInPrivateBrowsing-OmaUri-Begin -->
@@ -3554,7 +3556,7 @@ InPrivate Browsing prevents Internet Explorer from storing data about a user's b
 <!-- DisableInternetExplorerApp-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ [10.0.20348] and later <br> ✅ Windows 10, version 1903 [10.0.18362.1350] and later <br> ✅ Windows 10, version 2004 [10.0.19041.789] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348] and later <br> ✅ Windows 10, version 1903 [10.0.18362.1350] and later <br> ✅ Windows 10, version 2004 [10.0.19041.789] and later |
 <!-- DisableInternetExplorerApp-Applicability-End -->
 
 <!-- DisableInternetExplorerApp-OmaUri-Begin -->
@@ -3650,7 +3652,7 @@ If you disable, or don't configure this policy, all sites are opened using the c
 <!-- DisableProcessesInEnhancedProtectedMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- DisableProcessesInEnhancedProtectedMode-Applicability-End -->
 
 <!-- DisableProcessesInEnhancedProtectedMode-OmaUri-Begin -->
@@ -3718,7 +3720,7 @@ This policy setting determines whether Internet Explorer 11 uses 64-bit processe
 <!-- DisableProxyChange-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DisableProxyChange-Applicability-End -->
 
 <!-- DisableProxyChange-OmaUri-Begin -->
@@ -3781,7 +3783,7 @@ This policy setting specifies if a user can change proxy settings.
 <!-- DisableSearchProviderChange-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DisableSearchProviderChange-Applicability-End -->
 
 <!-- DisableSearchProviderChange-OmaUri-Begin -->
@@ -3844,7 +3846,7 @@ This policy setting prevents the user from changing the default search provider 
 <!-- DisableSecondaryHomePageChange-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DisableSecondaryHomePageChange-Applicability-End -->
 
 <!-- DisableSecondaryHomePageChange-OmaUri-Begin -->
@@ -3909,7 +3911,7 @@ Secondary home pages are the default Web pages that Internet Explorer loads in s
 <!-- DisableSecuritySettingsCheck-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- DisableSecuritySettingsCheck-Applicability-End -->
 
 <!-- DisableSecuritySettingsCheck-OmaUri-Begin -->
@@ -3972,7 +3974,7 @@ This policy setting turns off the Security Settings Check feature, which checks 
 <!-- DisableUpdateCheck-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DisableUpdateCheck-Applicability-End -->
 
 <!-- DisableUpdateCheck-OmaUri-Begin -->
@@ -4033,7 +4035,7 @@ This policy is intended to help the administrator maintain version control for I
 <!-- DisableWebAddressAutoComplete-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- DisableWebAddressAutoComplete-Applicability-End -->
 
 <!-- DisableWebAddressAutoComplete-OmaUri-Begin -->
@@ -4098,7 +4100,7 @@ This AutoComplete feature suggests possible matches when users are entering Web 
 <!-- DoNotAllowActiveXControlsInProtectedMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- DoNotAllowActiveXControlsInProtectedMode-Applicability-End -->
 
 <!-- DoNotAllowActiveXControlsInProtectedMode-OmaUri-Begin -->
@@ -4165,7 +4167,7 @@ When Enhanced Protected Mode is enabled, and a user encounters a website that at
 <!-- DoNotAllowUsersToAddSites-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DoNotAllowUsersToAddSites-Applicability-End -->
 
 <!-- DoNotAllowUsersToAddSites-OmaUri-Begin -->
@@ -4231,7 +4233,7 @@ Also, see the "Security zones: Use only machine settings" policy.
 <!-- DoNotAllowUsersToChangePolicies-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DoNotAllowUsersToChangePolicies-Applicability-End -->
 
 <!-- DoNotAllowUsersToChangePolicies-OmaUri-Begin -->
@@ -4297,7 +4299,7 @@ Also, see the "Security zones: Use only machine settings" policy.
 <!-- DoNotBlockOutdatedActiveXControls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DoNotBlockOutdatedActiveXControls-Applicability-End -->
 
 <!-- DoNotBlockOutdatedActiveXControls-OmaUri-Begin -->
@@ -4362,7 +4364,7 @@ For more information, see "Outdated ActiveX Controls" in the Internet Explorer T
 <!-- DoNotBlockOutdatedActiveXControlsOnSpecificDomains-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DoNotBlockOutdatedActiveXControlsOnSpecificDomains-Applicability-End -->
 
 <!-- DoNotBlockOutdatedActiveXControlsOnSpecificDomains-OmaUri-Begin -->
@@ -4432,7 +4434,7 @@ For more information, see "Outdated ActiveX Controls" in the Internet Explorer T
 <!-- EnableExtendedIEModeHotkeys-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ [10.0.20348.143] and later <br> ✅ Windows 10, version 1903 [10.0.18362.1474] and later <br> ✅ Windows 10, version 2004 [10.0.19041.906] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.143] and later <br> ✅ Windows 10, version 1903 [10.0.18362.1474] and later <br> ✅ Windows 10, version 2004 [10.0.19041.906] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- EnableExtendedIEModeHotkeys-Applicability-End -->
 
 <!-- EnableExtendedIEModeHotkeys-OmaUri-Begin -->
@@ -4497,7 +4499,7 @@ For more information, see <https://go.microsoft.com/fwlink/?linkid=2102115>
 <!-- EnableGlobalWindowListInIEMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ [10.0.20348.558] and later <br> ✅ Windows 10, version 2004 [10.0.19041.1566] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.527] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.558] and later <br> ✅ Windows 10, version 2004 [10.0.19041.1566] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.527] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- EnableGlobalWindowListInIEMode-Applicability-End -->
 
 <!-- EnableGlobalWindowListInIEMode-OmaUri-Begin -->
@@ -4565,7 +4567,7 @@ To learn more about disabling Internet Explorer 11 as a standalone browser, see 
 <!-- IncludeAllLocalSites-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- IncludeAllLocalSites-Applicability-End -->
 
 <!-- IncludeAllLocalSites-OmaUri-Begin -->
@@ -4630,7 +4632,7 @@ This policy setting controls whether local sites which aren't explicitly mapped 
 <!-- IncludeAllNetworkPaths-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- IncludeAllNetworkPaths-Applicability-End -->
 
 <!-- IncludeAllNetworkPaths-OmaUri-Begin -->
@@ -4695,7 +4697,7 @@ This policy setting controls whether URLs representing UNCs are mapped into the 
 <!-- InternetZoneAllowAccessToDataSources-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- InternetZoneAllowAccessToDataSources-Applicability-End -->
 
 <!-- InternetZoneAllowAccessToDataSources-OmaUri-Begin -->
@@ -4759,7 +4761,7 @@ This policy setting allows you to manage whether Internet Explorer can access da
 <!-- InternetZoneAllowAutomaticPromptingForActiveXControls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- InternetZoneAllowAutomaticPromptingForActiveXControls-Applicability-End -->
 
 <!-- InternetZoneAllowAutomaticPromptingForActiveXControls-OmaUri-Begin -->
@@ -4823,7 +4825,7 @@ This policy setting manages whether users will be automatically prompted for Act
 <!-- InternetZoneAllowAutomaticPromptingForFileDownloads-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- InternetZoneAllowAutomaticPromptingForFileDownloads-Applicability-End -->
 
 <!-- InternetZoneAllowAutomaticPromptingForFileDownloads-OmaUri-Begin -->
@@ -4885,7 +4887,7 @@ This policy setting determines whether users will be prompted for non user-initi
 <!-- InternetZoneAllowCopyPasteViaScript-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- InternetZoneAllowCopyPasteViaScript-Applicability-End -->
 
 <!-- InternetZoneAllowCopyPasteViaScript-OmaUri-Begin -->
@@ -4951,7 +4953,7 @@ If you select Prompt in the drop-down box, users are queried as to whether to pe
 <!-- InternetZoneAllowDragAndDropCopyAndPasteFiles-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- InternetZoneAllowDragAndDropCopyAndPasteFiles-Applicability-End -->
 
 <!-- InternetZoneAllowDragAndDropCopyAndPasteFiles-OmaUri-Begin -->
@@ -5015,7 +5017,7 @@ This policy setting allows you to manage whether users can drag files or copy an
 <!-- InternetZoneAllowFontDownloads-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- InternetZoneAllowFontDownloads-Applicability-End -->
 
 <!-- InternetZoneAllowFontDownloads-OmaUri-Begin -->
@@ -5081,7 +5083,7 @@ This policy setting allows you to manage whether pages of the zone may download 
 <!-- InternetZoneAllowLessPrivilegedSites-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- InternetZoneAllowLessPrivilegedSites-Applicability-End -->
 
 <!-- InternetZoneAllowLessPrivilegedSites-OmaUri-Begin -->
@@ -5145,7 +5147,7 @@ This policy setting allows you to manage whether Web sites from less privileged 
 <!-- InternetZoneAllowLoadingOfXAMLFiles-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- InternetZoneAllowLoadingOfXAMLFiles-Applicability-End -->
 
 <!-- InternetZoneAllowLoadingOfXAMLFiles-OmaUri-Begin -->
@@ -5209,7 +5211,7 @@ This policy setting allows you to manage the loading of Extensible Application M
 <!-- InternetZoneAllowNETFrameworkReliantComponents-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- InternetZoneAllowNETFrameworkReliantComponents-Applicability-End -->
 
 <!-- InternetZoneAllowNETFrameworkReliantComponents-OmaUri-Begin -->
@@ -5273,7 +5275,7 @@ This policy setting allows you to manage whether . NET Framework components that
 <!-- InternetZoneAllowOnlyApprovedDomainsToUseActiveXControls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- InternetZoneAllowOnlyApprovedDomainsToUseActiveXControls-Applicability-End -->
 
 <!-- InternetZoneAllowOnlyApprovedDomainsToUseActiveXControls-OmaUri-Begin -->
@@ -5335,7 +5337,7 @@ This policy setting controls whether or not the user is prompted to allow Active
 <!-- InternetZoneAllowOnlyApprovedDomainsToUseTDCActiveXControl-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- InternetZoneAllowOnlyApprovedDomainsToUseTDCActiveXControl-Applicability-End -->
 
 <!-- InternetZoneAllowOnlyApprovedDomainsToUseTDCActiveXControl-OmaUri-Begin -->
@@ -5397,7 +5399,7 @@ This policy setting controls whether or not the user is allowed to run the TDC A
 <!-- InternetZoneAllowScriptingOfInternetExplorerWebBrowserControls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- InternetZoneAllowScriptingOfInternetExplorerWebBrowserControls-Applicability-End -->
 
 <!-- InternetZoneAllowScriptingOfInternetExplorerWebBrowserControls-OmaUri-Begin -->
@@ -5461,7 +5463,7 @@ This policy setting determines whether a page can control embedded WebBrowser co
 <!-- InternetZoneAllowScriptInitiatedWindows-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- InternetZoneAllowScriptInitiatedWindows-Applicability-End -->
 
 <!-- InternetZoneAllowScriptInitiatedWindows-OmaUri-Begin -->
@@ -5525,7 +5527,7 @@ This policy setting allows you to manage restrictions on script-initiated pop-up
 <!-- InternetZoneAllowScriptlets-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- InternetZoneAllowScriptlets-Applicability-End -->
 
 <!-- InternetZoneAllowScriptlets-OmaUri-Begin -->
@@ -5589,7 +5591,7 @@ This policy setting allows you to manage whether the user can run scriptlets.
 <!-- InternetZoneAllowSmartScreenIE-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- InternetZoneAllowSmartScreenIE-Applicability-End -->
 
 <!-- InternetZoneAllowSmartScreenIE-OmaUri-Begin -->
@@ -5656,7 +5658,7 @@ This policy setting controls whether SmartScreen Filter scans pages in this zone
 <!-- InternetZoneAllowUpdatesToStatusBarViaScript-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- InternetZoneAllowUpdatesToStatusBarViaScript-Applicability-End -->
 
 <!-- InternetZoneAllowUpdatesToStatusBarViaScript-OmaUri-Begin -->
@@ -5718,7 +5720,7 @@ This policy setting allows you to manage whether script is allowed to update the
 <!-- InternetZoneAllowUserDataPersistence-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- InternetZoneAllowUserDataPersistence-Applicability-End -->
 
 <!-- InternetZoneAllowUserDataPersistence-OmaUri-Begin -->
@@ -5782,7 +5784,7 @@ This policy setting allows you to manage the preservation of information in the 
 <!-- InternetZoneAllowVBScriptToRunInInternetExplorer-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- InternetZoneAllowVBScriptToRunInInternetExplorer-Applicability-End -->
 
 <!-- InternetZoneAllowVBScriptToRunInInternetExplorer-OmaUri-Begin -->
@@ -5848,7 +5850,7 @@ If you don't configure or disable this policy setting, VBScript is prevented fro
 <!-- InternetZoneDoNotRunAntimalwareAgainstActiveXControls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- InternetZoneDoNotRunAntimalwareAgainstActiveXControls-Applicability-End -->
 
 <!-- InternetZoneDoNotRunAntimalwareAgainstActiveXControls-OmaUri-Begin -->
@@ -5912,7 +5914,7 @@ This policy setting determines whether Internet Explorer runs antimalware progra
 <!-- InternetZoneDownloadSignedActiveXControls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- InternetZoneDownloadSignedActiveXControls-Applicability-End -->
 
 <!-- InternetZoneDownloadSignedActiveXControls-OmaUri-Begin -->
@@ -5976,7 +5978,7 @@ This policy setting allows you to manage whether users may download signed Activ
 <!-- InternetZoneDownloadUnsignedActiveXControls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- InternetZoneDownloadUnsignedActiveXControls-Applicability-End -->
 
 <!-- InternetZoneDownloadUnsignedActiveXControls-OmaUri-Begin -->
@@ -6040,7 +6042,7 @@ This policy setting allows you to manage whether users may download unsigned Act
 <!-- InternetZoneEnableCrossSiteScriptingFilter-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- InternetZoneEnableCrossSiteScriptingFilter-Applicability-End -->
 
 <!-- InternetZoneEnableCrossSiteScriptingFilter-OmaUri-Begin -->
@@ -6102,7 +6104,7 @@ This policy controls whether or not the Cross-Site Scripting (XSS) Filter will d
 <!-- InternetZoneEnableDraggingOfContentFromDifferentDomainsAcrossWindows-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- InternetZoneEnableDraggingOfContentFromDifferentDomainsAcrossWindows-Applicability-End -->
 
 <!-- InternetZoneEnableDraggingOfContentFromDifferentDomainsAcrossWindows-OmaUri-Begin -->
@@ -6168,7 +6170,7 @@ In Internet Explorer 9 and earlier versions, if you disable this policy or don't
 <!-- InternetZoneEnableDraggingOfContentFromDifferentDomainsWithinWindows-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- InternetZoneEnableDraggingOfContentFromDifferentDomainsWithinWindows-Applicability-End -->
 
 <!-- InternetZoneEnableDraggingOfContentFromDifferentDomainsWithinWindows-OmaUri-Begin -->
@@ -6234,7 +6236,7 @@ In Internet Explorer 9 and earlier versions, if you disable this policy setting 
 <!-- InternetZoneEnableMIMESniffing-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- InternetZoneEnableMIMESniffing-Applicability-End -->
 
 <!-- InternetZoneEnableMIMESniffing-OmaUri-Begin -->
@@ -6298,7 +6300,7 @@ This policy setting allows you to manage MIME sniffing for file promotion from o
 <!-- InternetZoneEnableProtectedMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- InternetZoneEnableProtectedMode-Applicability-End -->
 
 <!-- InternetZoneEnableProtectedMode-OmaUri-Begin -->
@@ -6362,7 +6364,7 @@ This policy setting allows you to turn on Protected Mode. Protected Mode helps p
 <!-- InternetZoneIncludeLocalPathWhenUploadingFilesToServer-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- InternetZoneIncludeLocalPathWhenUploadingFilesToServer-Applicability-End -->
 
 <!-- InternetZoneIncludeLocalPathWhenUploadingFilesToServer-OmaUri-Begin -->
@@ -6426,7 +6428,7 @@ This policy setting controls whether or not local path information is sent when 
 <!-- InternetZoneInitializeAndScriptActiveXControls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- InternetZoneInitializeAndScriptActiveXControls-Applicability-End -->
 
 <!-- InternetZoneInitializeAndScriptActiveXControls-OmaUri-Begin -->
@@ -6492,7 +6494,7 @@ This policy setting allows you to manage ActiveX controls not marked as safe.
 <!-- InternetZoneJavaPermissions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- InternetZoneJavaPermissions-Applicability-End -->
 
 <!-- InternetZoneJavaPermissions-OmaUri-Begin -->
@@ -6562,7 +6564,7 @@ High Safety enables applets to run in their sandbox. Disable Java to prevent any
 <!-- InternetZoneLaunchingApplicationsAndFilesInIFRAME-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- InternetZoneLaunchingApplicationsAndFilesInIFRAME-Applicability-End -->
 
 <!-- InternetZoneLaunchingApplicationsAndFilesInIFRAME-OmaUri-Begin -->
@@ -6626,7 +6628,7 @@ This policy setting allows you to manage whether applications may be run and fil
 <!-- InternetZoneLogonOptions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- InternetZoneLogonOptions-Applicability-End -->
 
 <!-- InternetZoneLogonOptions-OmaUri-Begin -->
@@ -6698,7 +6700,7 @@ Automatic logon with current user name and password to attempt logon using Windo
 <!-- InternetZoneNavigateWindowsAndFrames-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- InternetZoneNavigateWindowsAndFrames-Applicability-End -->
 
 <!-- InternetZoneNavigateWindowsAndFrames-OmaUri-Begin -->
@@ -6762,7 +6764,7 @@ This policy setting allows you to manage the opening of windows and frames and a
 <!-- InternetZoneRunNETFrameworkReliantComponentsSignedWithAuthenticode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- InternetZoneRunNETFrameworkReliantComponentsSignedWithAuthenticode-Applicability-End -->
 
 <!-- InternetZoneRunNETFrameworkReliantComponentsSignedWithAuthenticode-OmaUri-Begin -->
@@ -6826,7 +6828,7 @@ This policy setting allows you to manage whether . NET Framework components that
 <!-- InternetZoneShowSecurityWarningForPotentiallyUnsafeFiles-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- InternetZoneShowSecurityWarningForPotentiallyUnsafeFiles-Applicability-End -->
 
 <!-- InternetZoneShowSecurityWarningForPotentiallyUnsafeFiles-OmaUri-Begin -->
@@ -6890,7 +6892,7 @@ This policy setting controls whether or not the "Open File - Security Warning" m
 <!-- InternetZoneUsePopupBlocker-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- InternetZoneUsePopupBlocker-Applicability-End -->
 
 <!-- InternetZoneUsePopupBlocker-OmaUri-Begin -->
@@ -6954,7 +6956,7 @@ This policy setting allows you to manage whether unwanted pop-up windows appear.
 <!-- IntranetZoneAllowAccessToDataSources-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- IntranetZoneAllowAccessToDataSources-Applicability-End -->
 
 <!-- IntranetZoneAllowAccessToDataSources-OmaUri-Begin -->
@@ -7018,7 +7020,7 @@ This policy setting allows you to manage whether Internet Explorer can access da
 <!-- IntranetZoneAllowAutomaticPromptingForActiveXControls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- IntranetZoneAllowAutomaticPromptingForActiveXControls-Applicability-End -->
 
 <!-- IntranetZoneAllowAutomaticPromptingForActiveXControls-OmaUri-Begin -->
@@ -7082,7 +7084,7 @@ This policy setting manages whether users will be automatically prompted for Act
 <!-- IntranetZoneAllowAutomaticPromptingForFileDownloads-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- IntranetZoneAllowAutomaticPromptingForFileDownloads-Applicability-End -->
 
 <!-- IntranetZoneAllowAutomaticPromptingForFileDownloads-OmaUri-Begin -->
@@ -7144,7 +7146,7 @@ This policy setting determines whether users will be prompted for non user-initi
 <!-- IntranetZoneAllowFontDownloads-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- IntranetZoneAllowFontDownloads-Applicability-End -->
 
 <!-- IntranetZoneAllowFontDownloads-OmaUri-Begin -->
@@ -7210,7 +7212,7 @@ This policy setting allows you to manage whether pages of the zone may download 
 <!-- IntranetZoneAllowLessPrivilegedSites-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- IntranetZoneAllowLessPrivilegedSites-Applicability-End -->
 
 <!-- IntranetZoneAllowLessPrivilegedSites-OmaUri-Begin -->
@@ -7274,7 +7276,7 @@ This policy setting allows you to manage whether Web sites from less privileged 
 <!-- IntranetZoneAllowNETFrameworkReliantComponents-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- IntranetZoneAllowNETFrameworkReliantComponents-Applicability-End -->
 
 <!-- IntranetZoneAllowNETFrameworkReliantComponents-OmaUri-Begin -->
@@ -7338,7 +7340,7 @@ This policy setting allows you to manage whether . NET Framework components that
 <!-- IntranetZoneAllowScriptlets-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- IntranetZoneAllowScriptlets-Applicability-End -->
 
 <!-- IntranetZoneAllowScriptlets-OmaUri-Begin -->
@@ -7402,7 +7404,7 @@ This policy setting allows you to manage whether the user can run scriptlets.
 <!-- IntranetZoneAllowSmartScreenIE-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- IntranetZoneAllowSmartScreenIE-Applicability-End -->
 
 <!-- IntranetZoneAllowSmartScreenIE-OmaUri-Begin -->
@@ -7469,7 +7471,7 @@ This policy setting controls whether SmartScreen Filter scans pages in this zone
 <!-- IntranetZoneAllowUserDataPersistence-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- IntranetZoneAllowUserDataPersistence-Applicability-End -->
 
 <!-- IntranetZoneAllowUserDataPersistence-OmaUri-Begin -->
@@ -7533,7 +7535,7 @@ This policy setting allows you to manage the preservation of information in the 
 <!-- IntranetZoneDoNotRunAntimalwareAgainstActiveXControls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- IntranetZoneDoNotRunAntimalwareAgainstActiveXControls-Applicability-End -->
 
 <!-- IntranetZoneDoNotRunAntimalwareAgainstActiveXControls-OmaUri-Begin -->
@@ -7597,7 +7599,7 @@ This policy setting determines whether Internet Explorer runs antimalware progra
 <!-- IntranetZoneInitializeAndScriptActiveXControls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- IntranetZoneInitializeAndScriptActiveXControls-Applicability-End -->
 
 <!-- IntranetZoneInitializeAndScriptActiveXControls-OmaUri-Begin -->
@@ -7663,7 +7665,7 @@ This policy setting allows you to manage ActiveX controls not marked as safe.
 <!-- IntranetZoneJavaPermissions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- IntranetZoneJavaPermissions-Applicability-End -->
 
 <!-- IntranetZoneJavaPermissions-OmaUri-Begin -->
@@ -7727,13 +7729,85 @@ High Safety enables applets to run in their sandbox. Disable Java to prevent any
 
 <!-- IntranetZoneJavaPermissions-End -->
 
+<!-- IntranetZoneLogonOptions-Begin -->
+## IntranetZoneLogonOptions
+
+<!-- IntranetZoneLogonOptions-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- IntranetZoneLogonOptions-Applicability-End -->
+
+<!-- IntranetZoneLogonOptions-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/InternetExplorer/IntranetZoneLogonOptions
+```
+
+```Device
+./Device/Vendor/MSFT/Policy/Config/InternetExplorer/IntranetZoneLogonOptions
+```
+<!-- IntranetZoneLogonOptions-OmaUri-End -->
+
+<!-- IntranetZoneLogonOptions-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to manage settings for logon options.
+
+- If you enable this policy setting, you can choose from the following logon options.
+
+Anonymous logon to disable HTTP authentication and use the guest account only for the Common Internet File System (CIFS) protocol.
+
+Prompt for user name and password to query users for user IDs and passwords. After a user is queried, these values can be used silently for the remainder of the session.
+
+Automatic logon only in Intranet zone to query users for user IDs and passwords in other zones. After a user is queried, these values can be used silently for the remainder of the session.
+
+Automatic logon with current user name and password to attempt logon using Windows NT Challenge Response (also known as NTLM authentication). If Windows NT Challenge Response is supported by the server, the logon uses the user's network user name and password for logon. If Windows NT Challenge Response isn't supported by the server, the user is queried to provide the user name and password.
+
+- If you disable this policy setting, logon is set to Automatic logon only in Intranet zone.
+
+- If you don't configure this policy setting, logon is set to Automatic logon only in Intranet zone.
+<!-- IntranetZoneLogonOptions-Description-End -->
+
+<!-- IntranetZoneLogonOptions-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- IntranetZoneLogonOptions-Editable-End -->
+
+<!-- IntranetZoneLogonOptions-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- IntranetZoneLogonOptions-DFProperties-End -->
+
+<!-- IntranetZoneLogonOptions-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | IZ_PolicyLogon_3 |
+| Friendly Name | Logon options |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Intranet Zone |
+| Registry Key Name | Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\1 |
+| ADMX File Name | inetres.admx |
+<!-- IntranetZoneLogonOptions-AdmxBacked-End -->
+
+<!-- IntranetZoneLogonOptions-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- IntranetZoneLogonOptions-Examples-End -->
+
+<!-- IntranetZoneLogonOptions-End -->
+
 <!-- IntranetZoneNavigateWindowsAndFrames-Begin -->
 ## IntranetZoneNavigateWindowsAndFrames
 
 <!-- IntranetZoneNavigateWindowsAndFrames-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- IntranetZoneNavigateWindowsAndFrames-Applicability-End -->
 
 <!-- IntranetZoneNavigateWindowsAndFrames-OmaUri-Begin -->
@@ -7797,7 +7871,7 @@ This policy setting allows you to manage the opening of windows and frames and a
 <!-- JScriptReplacement-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- JScriptReplacement-Applicability-End -->
 
 <!-- JScriptReplacement-OmaUri-Begin -->
@@ -7862,7 +7936,7 @@ This policy setting specifies whether JScript or JScript9Legacy is loaded for MS
 <!-- KeepIntranetSitesInInternetExplorer-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ [10.0.20348] and later <br> ✅ Windows 10, version 1903 [10.0.18362.1350] and later <br> ✅ Windows 10, version 2004 [10.0.19041.789] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348] and later <br> ✅ Windows 10, version 1903 [10.0.18362.1350] and later <br> ✅ Windows 10, version 2004 [10.0.19041.789] and later |
 <!-- KeepIntranetSitesInInternetExplorer-Applicability-End -->
 
 <!-- KeepIntranetSitesInInternetExplorer-OmaUri-Begin -->
@@ -7957,7 +8031,7 @@ For more info about how to use this policy together with other related policies 
 <!-- LocalMachineZoneAllowAccessToDataSources-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LocalMachineZoneAllowAccessToDataSources-Applicability-End -->
 
 <!-- LocalMachineZoneAllowAccessToDataSources-OmaUri-Begin -->
@@ -8021,7 +8095,7 @@ This policy setting allows you to manage whether Internet Explorer can access da
 <!-- LocalMachineZoneAllowAutomaticPromptingForActiveXControls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LocalMachineZoneAllowAutomaticPromptingForActiveXControls-Applicability-End -->
 
 <!-- LocalMachineZoneAllowAutomaticPromptingForActiveXControls-OmaUri-Begin -->
@@ -8085,7 +8159,7 @@ This policy setting manages whether users will be automatically prompted for Act
 <!-- LocalMachineZoneAllowAutomaticPromptingForFileDownloads-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LocalMachineZoneAllowAutomaticPromptingForFileDownloads-Applicability-End -->
 
 <!-- LocalMachineZoneAllowAutomaticPromptingForFileDownloads-OmaUri-Begin -->
@@ -8147,7 +8221,7 @@ This policy setting determines whether users will be prompted for non user-initi
 <!-- LocalMachineZoneAllowFontDownloads-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LocalMachineZoneAllowFontDownloads-Applicability-End -->
 
 <!-- LocalMachineZoneAllowFontDownloads-OmaUri-Begin -->
@@ -8213,7 +8287,7 @@ This policy setting allows you to manage whether pages of the zone may download 
 <!-- LocalMachineZoneAllowLessPrivilegedSites-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LocalMachineZoneAllowLessPrivilegedSites-Applicability-End -->
 
 <!-- LocalMachineZoneAllowLessPrivilegedSites-OmaUri-Begin -->
@@ -8277,7 +8351,7 @@ This policy setting allows you to manage whether Web sites from less privileged 
 <!-- LocalMachineZoneAllowNETFrameworkReliantComponents-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LocalMachineZoneAllowNETFrameworkReliantComponents-Applicability-End -->
 
 <!-- LocalMachineZoneAllowNETFrameworkReliantComponents-OmaUri-Begin -->
@@ -8341,7 +8415,7 @@ This policy setting allows you to manage whether . NET Framework components that
 <!-- LocalMachineZoneAllowScriptlets-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LocalMachineZoneAllowScriptlets-Applicability-End -->
 
 <!-- LocalMachineZoneAllowScriptlets-OmaUri-Begin -->
@@ -8405,7 +8479,7 @@ This policy setting allows you to manage whether the user can run scriptlets.
 <!-- LocalMachineZoneAllowSmartScreenIE-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LocalMachineZoneAllowSmartScreenIE-Applicability-End -->
 
 <!-- LocalMachineZoneAllowSmartScreenIE-OmaUri-Begin -->
@@ -8472,7 +8546,7 @@ This policy setting controls whether SmartScreen Filter scans pages in this zone
 <!-- LocalMachineZoneAllowUserDataPersistence-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LocalMachineZoneAllowUserDataPersistence-Applicability-End -->
 
 <!-- LocalMachineZoneAllowUserDataPersistence-OmaUri-Begin -->
@@ -8536,7 +8610,7 @@ This policy setting allows you to manage the preservation of information in the 
 <!-- LocalMachineZoneDoNotRunAntimalwareAgainstActiveXControls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- LocalMachineZoneDoNotRunAntimalwareAgainstActiveXControls-Applicability-End -->
 
 <!-- LocalMachineZoneDoNotRunAntimalwareAgainstActiveXControls-OmaUri-Begin -->
@@ -8600,7 +8674,7 @@ This policy setting determines whether Internet Explorer runs antimalware progra
 <!-- LocalMachineZoneInitializeAndScriptActiveXControls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LocalMachineZoneInitializeAndScriptActiveXControls-Applicability-End -->
 
 <!-- LocalMachineZoneInitializeAndScriptActiveXControls-OmaUri-Begin -->
@@ -8666,7 +8740,7 @@ This policy setting allows you to manage ActiveX controls not marked as safe.
 <!-- LocalMachineZoneJavaPermissions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- LocalMachineZoneJavaPermissions-Applicability-End -->
 
 <!-- LocalMachineZoneJavaPermissions-OmaUri-Begin -->
@@ -8730,13 +8804,85 @@ High Safety enables applets to run in their sandbox. Disable Java to prevent any
 
 <!-- LocalMachineZoneJavaPermissions-End -->
 
+<!-- LocalMachineZoneLogonOptions-Begin -->
+## LocalMachineZoneLogonOptions
+
+<!-- LocalMachineZoneLogonOptions-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- LocalMachineZoneLogonOptions-Applicability-End -->
+
+<!-- LocalMachineZoneLogonOptions-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/InternetExplorer/LocalMachineZoneLogonOptions
+```
+
+```Device
+./Device/Vendor/MSFT/Policy/Config/InternetExplorer/LocalMachineZoneLogonOptions
+```
+<!-- LocalMachineZoneLogonOptions-OmaUri-End -->
+
+<!-- LocalMachineZoneLogonOptions-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to manage settings for logon options.
+
+- If you enable this policy setting, you can choose from the following logon options.
+
+Anonymous logon to disable HTTP authentication and use the guest account only for the Common Internet File System (CIFS) protocol.
+
+Prompt for user name and password to query users for user IDs and passwords. After a user is queried, these values can be used silently for the remainder of the session.
+
+Automatic logon only in Intranet zone to query users for user IDs and passwords in other zones. After a user is queried, these values can be used silently for the remainder of the session.
+
+Automatic logon with current user name and password to attempt logon using Windows NT Challenge Response (also known as NTLM authentication). If Windows NT Challenge Response is supported by the server, the logon uses the user's network user name and password for logon. If Windows NT Challenge Response isn't supported by the server, the user is queried to provide the user name and password.
+
+- If you disable this policy setting, logon is set to Automatic logon only in Intranet zone.
+
+- If you don't configure this policy setting, logon is set to Automatic logon with current username and password.
+<!-- LocalMachineZoneLogonOptions-Description-End -->
+
+<!-- LocalMachineZoneLogonOptions-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LocalMachineZoneLogonOptions-Editable-End -->
+
+<!-- LocalMachineZoneLogonOptions-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- LocalMachineZoneLogonOptions-DFProperties-End -->
+
+<!-- LocalMachineZoneLogonOptions-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | IZ_PolicyLogon_9 |
+| Friendly Name | Logon options |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Local Machine Zone |
+| Registry Key Name | Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\0 |
+| ADMX File Name | inetres.admx |
+<!-- LocalMachineZoneLogonOptions-AdmxBacked-End -->
+
+<!-- LocalMachineZoneLogonOptions-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LocalMachineZoneLogonOptions-Examples-End -->
+
+<!-- LocalMachineZoneLogonOptions-End -->
+
 <!-- LocalMachineZoneNavigateWindowsAndFrames-Begin -->
 ## LocalMachineZoneNavigateWindowsAndFrames
 
 <!-- LocalMachineZoneNavigateWindowsAndFrames-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LocalMachineZoneNavigateWindowsAndFrames-Applicability-End -->
 
 <!-- LocalMachineZoneNavigateWindowsAndFrames-OmaUri-Begin -->
@@ -8800,7 +8946,7 @@ This policy setting allows you to manage the opening of windows and frames and a
 <!-- LockedDownInternetZoneAllowAccessToDataSources-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownInternetZoneAllowAccessToDataSources-Applicability-End -->
 
 <!-- LockedDownInternetZoneAllowAccessToDataSources-OmaUri-Begin -->
@@ -8864,7 +9010,7 @@ This policy setting allows you to manage whether Internet Explorer can access da
 <!-- LockedDownInternetZoneAllowAutomaticPromptingForActiveXControls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownInternetZoneAllowAutomaticPromptingForActiveXControls-Applicability-End -->
 
 <!-- LockedDownInternetZoneAllowAutomaticPromptingForActiveXControls-OmaUri-Begin -->
@@ -8928,7 +9074,7 @@ This policy setting manages whether users will be automatically prompted for Act
 <!-- LockedDownInternetZoneAllowAutomaticPromptingForFileDownloads-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownInternetZoneAllowAutomaticPromptingForFileDownloads-Applicability-End -->
 
 <!-- LockedDownInternetZoneAllowAutomaticPromptingForFileDownloads-OmaUri-Begin -->
@@ -8990,7 +9136,7 @@ This policy setting determines whether users will be prompted for non user-initi
 <!-- LockedDownInternetZoneAllowFontDownloads-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownInternetZoneAllowFontDownloads-Applicability-End -->
 
 <!-- LockedDownInternetZoneAllowFontDownloads-OmaUri-Begin -->
@@ -9056,7 +9202,7 @@ This policy setting allows you to manage whether pages of the zone may download 
 <!-- LockedDownInternetZoneAllowLessPrivilegedSites-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownInternetZoneAllowLessPrivilegedSites-Applicability-End -->
 
 <!-- LockedDownInternetZoneAllowLessPrivilegedSites-OmaUri-Begin -->
@@ -9120,7 +9266,7 @@ This policy setting allows you to manage whether Web sites from less privileged 
 <!-- LockedDownInternetZoneAllowNETFrameworkReliantComponents-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownInternetZoneAllowNETFrameworkReliantComponents-Applicability-End -->
 
 <!-- LockedDownInternetZoneAllowNETFrameworkReliantComponents-OmaUri-Begin -->
@@ -9184,7 +9330,7 @@ This policy setting allows you to manage whether . NET Framework components that
 <!-- LockedDownInternetZoneAllowScriptlets-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownInternetZoneAllowScriptlets-Applicability-End -->
 
 <!-- LockedDownInternetZoneAllowScriptlets-OmaUri-Begin -->
@@ -9248,7 +9394,7 @@ This policy setting allows you to manage whether the user can run scriptlets.
 <!-- LockedDownInternetZoneAllowSmartScreenIE-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownInternetZoneAllowSmartScreenIE-Applicability-End -->
 
 <!-- LockedDownInternetZoneAllowSmartScreenIE-OmaUri-Begin -->
@@ -9315,7 +9461,7 @@ This policy setting controls whether SmartScreen Filter scans pages in this zone
 <!-- LockedDownInternetZoneAllowUserDataPersistence-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownInternetZoneAllowUserDataPersistence-Applicability-End -->
 
 <!-- LockedDownInternetZoneAllowUserDataPersistence-OmaUri-Begin -->
@@ -9379,7 +9525,7 @@ This policy setting allows you to manage the preservation of information in the 
 <!-- LockedDownInternetZoneInitializeAndScriptActiveXControls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownInternetZoneInitializeAndScriptActiveXControls-Applicability-End -->
 
 <!-- LockedDownInternetZoneInitializeAndScriptActiveXControls-OmaUri-Begin -->
@@ -9445,7 +9591,7 @@ This policy setting allows you to manage ActiveX controls not marked as safe.
 <!-- LockedDownInternetZoneJavaPermissions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- LockedDownInternetZoneJavaPermissions-Applicability-End -->
 
 <!-- LockedDownInternetZoneJavaPermissions-OmaUri-Begin -->
@@ -9515,7 +9661,7 @@ High Safety enables applets to run in their sandbox. Disable Java to prevent any
 <!-- LockedDownInternetZoneNavigateWindowsAndFrames-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownInternetZoneNavigateWindowsAndFrames-Applicability-End -->
 
 <!-- LockedDownInternetZoneNavigateWindowsAndFrames-OmaUri-Begin -->
@@ -9579,7 +9725,7 @@ This policy setting allows you to manage the opening of windows and frames and a
 <!-- LockedDownIntranetJavaPermissions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- LockedDownIntranetJavaPermissions-Applicability-End -->
 
 <!-- LockedDownIntranetJavaPermissions-OmaUri-Begin -->
@@ -9649,7 +9795,7 @@ High Safety enables applets to run in their sandbox. Disable Java to prevent any
 <!-- LockedDownIntranetZoneAllowAccessToDataSources-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownIntranetZoneAllowAccessToDataSources-Applicability-End -->
 
 <!-- LockedDownIntranetZoneAllowAccessToDataSources-OmaUri-Begin -->
@@ -9713,7 +9859,7 @@ This policy setting allows you to manage whether Internet Explorer can access da
 <!-- LockedDownIntranetZoneAllowAutomaticPromptingForActiveXControls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownIntranetZoneAllowAutomaticPromptingForActiveXControls-Applicability-End -->
 
 <!-- LockedDownIntranetZoneAllowAutomaticPromptingForActiveXControls-OmaUri-Begin -->
@@ -9777,7 +9923,7 @@ This policy setting manages whether users will be automatically prompted for Act
 <!-- LockedDownIntranetZoneAllowAutomaticPromptingForFileDownloads-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownIntranetZoneAllowAutomaticPromptingForFileDownloads-Applicability-End -->
 
 <!-- LockedDownIntranetZoneAllowAutomaticPromptingForFileDownloads-OmaUri-Begin -->
@@ -9839,7 +9985,7 @@ This policy setting determines whether users will be prompted for non user-initi
 <!-- LockedDownIntranetZoneAllowFontDownloads-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownIntranetZoneAllowFontDownloads-Applicability-End -->
 
 <!-- LockedDownIntranetZoneAllowFontDownloads-OmaUri-Begin -->
@@ -9905,7 +10051,7 @@ This policy setting allows you to manage whether pages of the zone may download 
 <!-- LockedDownIntranetZoneAllowLessPrivilegedSites-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownIntranetZoneAllowLessPrivilegedSites-Applicability-End -->
 
 <!-- LockedDownIntranetZoneAllowLessPrivilegedSites-OmaUri-Begin -->
@@ -9969,7 +10115,7 @@ This policy setting allows you to manage whether Web sites from less privileged 
 <!-- LockedDownIntranetZoneAllowNETFrameworkReliantComponents-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownIntranetZoneAllowNETFrameworkReliantComponents-Applicability-End -->
 
 <!-- LockedDownIntranetZoneAllowNETFrameworkReliantComponents-OmaUri-Begin -->
@@ -10033,7 +10179,7 @@ This policy setting allows you to manage whether . NET Framework components that
 <!-- LockedDownIntranetZoneAllowScriptlets-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownIntranetZoneAllowScriptlets-Applicability-End -->
 
 <!-- LockedDownIntranetZoneAllowScriptlets-OmaUri-Begin -->
@@ -10097,7 +10243,7 @@ This policy setting allows you to manage whether the user can run scriptlets.
 <!-- LockedDownIntranetZoneAllowSmartScreenIE-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownIntranetZoneAllowSmartScreenIE-Applicability-End -->
 
 <!-- LockedDownIntranetZoneAllowSmartScreenIE-OmaUri-Begin -->
@@ -10164,7 +10310,7 @@ This policy setting controls whether SmartScreen Filter scans pages in this zone
 <!-- LockedDownIntranetZoneAllowUserDataPersistence-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownIntranetZoneAllowUserDataPersistence-Applicability-End -->
 
 <!-- LockedDownIntranetZoneAllowUserDataPersistence-OmaUri-Begin -->
@@ -10228,7 +10374,7 @@ This policy setting allows you to manage the preservation of information in the 
 <!-- LockedDownIntranetZoneInitializeAndScriptActiveXControls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownIntranetZoneInitializeAndScriptActiveXControls-Applicability-End -->
 
 <!-- LockedDownIntranetZoneInitializeAndScriptActiveXControls-OmaUri-Begin -->
@@ -10294,7 +10440,7 @@ This policy setting allows you to manage ActiveX controls not marked as safe.
 <!-- LockedDownIntranetZoneNavigateWindowsAndFrames-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownIntranetZoneNavigateWindowsAndFrames-Applicability-End -->
 
 <!-- LockedDownIntranetZoneNavigateWindowsAndFrames-OmaUri-Begin -->
@@ -10358,7 +10504,7 @@ This policy setting allows you to manage the opening of windows and frames and a
 <!-- LockedDownLocalMachineZoneAllowAccessToDataSources-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownLocalMachineZoneAllowAccessToDataSources-Applicability-End -->
 
 <!-- LockedDownLocalMachineZoneAllowAccessToDataSources-OmaUri-Begin -->
@@ -10422,7 +10568,7 @@ This policy setting allows you to manage whether Internet Explorer can access da
 <!-- LockedDownLocalMachineZoneAllowAutomaticPromptingForActiveXControls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownLocalMachineZoneAllowAutomaticPromptingForActiveXControls-Applicability-End -->
 
 <!-- LockedDownLocalMachineZoneAllowAutomaticPromptingForActiveXControls-OmaUri-Begin -->
@@ -10486,7 +10632,7 @@ This policy setting manages whether users will be automatically prompted for Act
 <!-- LockedDownLocalMachineZoneAllowAutomaticPromptingForFileDownloads-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownLocalMachineZoneAllowAutomaticPromptingForFileDownloads-Applicability-End -->
 
 <!-- LockedDownLocalMachineZoneAllowAutomaticPromptingForFileDownloads-OmaUri-Begin -->
@@ -10548,7 +10694,7 @@ This policy setting determines whether users will be prompted for non user-initi
 <!-- LockedDownLocalMachineZoneAllowFontDownloads-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownLocalMachineZoneAllowFontDownloads-Applicability-End -->
 
 <!-- LockedDownLocalMachineZoneAllowFontDownloads-OmaUri-Begin -->
@@ -10614,7 +10760,7 @@ This policy setting allows you to manage whether pages of the zone may download 
 <!-- LockedDownLocalMachineZoneAllowLessPrivilegedSites-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownLocalMachineZoneAllowLessPrivilegedSites-Applicability-End -->
 
 <!-- LockedDownLocalMachineZoneAllowLessPrivilegedSites-OmaUri-Begin -->
@@ -10678,7 +10824,7 @@ This policy setting allows you to manage whether Web sites from less privileged 
 <!-- LockedDownLocalMachineZoneAllowNETFrameworkReliantComponents-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownLocalMachineZoneAllowNETFrameworkReliantComponents-Applicability-End -->
 
 <!-- LockedDownLocalMachineZoneAllowNETFrameworkReliantComponents-OmaUri-Begin -->
@@ -10742,7 +10888,7 @@ This policy setting allows you to manage whether . NET Framework components that
 <!-- LockedDownLocalMachineZoneAllowScriptlets-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownLocalMachineZoneAllowScriptlets-Applicability-End -->
 
 <!-- LockedDownLocalMachineZoneAllowScriptlets-OmaUri-Begin -->
@@ -10806,7 +10952,7 @@ This policy setting allows you to manage whether the user can run scriptlets.
 <!-- LockedDownLocalMachineZoneAllowSmartScreenIE-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownLocalMachineZoneAllowSmartScreenIE-Applicability-End -->
 
 <!-- LockedDownLocalMachineZoneAllowSmartScreenIE-OmaUri-Begin -->
@@ -10873,7 +11019,7 @@ This policy setting controls whether SmartScreen Filter scans pages in this zone
 <!-- LockedDownLocalMachineZoneAllowUserDataPersistence-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownLocalMachineZoneAllowUserDataPersistence-Applicability-End -->
 
 <!-- LockedDownLocalMachineZoneAllowUserDataPersistence-OmaUri-Begin -->
@@ -10937,7 +11083,7 @@ This policy setting allows you to manage the preservation of information in the 
 <!-- LockedDownLocalMachineZoneInitializeAndScriptActiveXControls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownLocalMachineZoneInitializeAndScriptActiveXControls-Applicability-End -->
 
 <!-- LockedDownLocalMachineZoneInitializeAndScriptActiveXControls-OmaUri-Begin -->
@@ -11003,7 +11149,7 @@ This policy setting allows you to manage ActiveX controls not marked as safe.
 <!-- LockedDownLocalMachineZoneJavaPermissions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- LockedDownLocalMachineZoneJavaPermissions-Applicability-End -->
 
 <!-- LockedDownLocalMachineZoneJavaPermissions-OmaUri-Begin -->
@@ -11073,7 +11219,7 @@ High Safety enables applets to run in their sandbox. Disable Java to prevent any
 <!-- LockedDownLocalMachineZoneNavigateWindowsAndFrames-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownLocalMachineZoneNavigateWindowsAndFrames-Applicability-End -->
 
 <!-- LockedDownLocalMachineZoneNavigateWindowsAndFrames-OmaUri-Begin -->
@@ -11137,7 +11283,7 @@ This policy setting allows you to manage the opening of windows and frames and a
 <!-- LockedDownRestrictedSitesZoneAllowAccessToDataSources-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownRestrictedSitesZoneAllowAccessToDataSources-Applicability-End -->
 
 <!-- LockedDownRestrictedSitesZoneAllowAccessToDataSources-OmaUri-Begin -->
@@ -11201,7 +11347,7 @@ This policy setting allows you to manage whether Internet Explorer can access da
 <!-- LockedDownRestrictedSitesZoneAllowAutomaticPromptingForActiveXControls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownRestrictedSitesZoneAllowAutomaticPromptingForActiveXControls-Applicability-End -->
 
 <!-- LockedDownRestrictedSitesZoneAllowAutomaticPromptingForActiveXControls-OmaUri-Begin -->
@@ -11265,7 +11411,7 @@ This policy setting manages whether users will be automatically prompted for Act
 <!-- LockedDownRestrictedSitesZoneAllowAutomaticPromptingForFileDownloads-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownRestrictedSitesZoneAllowAutomaticPromptingForFileDownloads-Applicability-End -->
 
 <!-- LockedDownRestrictedSitesZoneAllowAutomaticPromptingForFileDownloads-OmaUri-Begin -->
@@ -11327,7 +11473,7 @@ This policy setting determines whether users will be prompted for non user-initi
 <!-- LockedDownRestrictedSitesZoneAllowFontDownloads-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownRestrictedSitesZoneAllowFontDownloads-Applicability-End -->
 
 <!-- LockedDownRestrictedSitesZoneAllowFontDownloads-OmaUri-Begin -->
@@ -11393,7 +11539,7 @@ This policy setting allows you to manage whether pages of the zone may download 
 <!-- LockedDownRestrictedSitesZoneAllowLessPrivilegedSites-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownRestrictedSitesZoneAllowLessPrivilegedSites-Applicability-End -->
 
 <!-- LockedDownRestrictedSitesZoneAllowLessPrivilegedSites-OmaUri-Begin -->
@@ -11457,7 +11603,7 @@ This policy setting allows you to manage whether Web sites from less privileged 
 <!-- LockedDownRestrictedSitesZoneAllowNETFrameworkReliantComponents-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownRestrictedSitesZoneAllowNETFrameworkReliantComponents-Applicability-End -->
 
 <!-- LockedDownRestrictedSitesZoneAllowNETFrameworkReliantComponents-OmaUri-Begin -->
@@ -11521,7 +11667,7 @@ This policy setting allows you to manage whether . NET Framework components that
 <!-- LockedDownRestrictedSitesZoneAllowScriptlets-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownRestrictedSitesZoneAllowScriptlets-Applicability-End -->
 
 <!-- LockedDownRestrictedSitesZoneAllowScriptlets-OmaUri-Begin -->
@@ -11585,7 +11731,7 @@ This policy setting allows you to manage whether the user can run scriptlets.
 <!-- LockedDownRestrictedSitesZoneAllowSmartScreenIE-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownRestrictedSitesZoneAllowSmartScreenIE-Applicability-End -->
 
 <!-- LockedDownRestrictedSitesZoneAllowSmartScreenIE-OmaUri-Begin -->
@@ -11652,7 +11798,7 @@ This policy setting controls whether SmartScreen Filter scans pages in this zone
 <!-- LockedDownRestrictedSitesZoneAllowUserDataPersistence-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownRestrictedSitesZoneAllowUserDataPersistence-Applicability-End -->
 
 <!-- LockedDownRestrictedSitesZoneAllowUserDataPersistence-OmaUri-Begin -->
@@ -11716,7 +11862,7 @@ This policy setting allows you to manage the preservation of information in the 
 <!-- LockedDownRestrictedSitesZoneInitializeAndScriptActiveXControls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownRestrictedSitesZoneInitializeAndScriptActiveXControls-Applicability-End -->
 
 <!-- LockedDownRestrictedSitesZoneInitializeAndScriptActiveXControls-OmaUri-Begin -->
@@ -11782,7 +11928,7 @@ This policy setting allows you to manage ActiveX controls not marked as safe.
 <!-- LockedDownRestrictedSitesZoneJavaPermissions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- LockedDownRestrictedSitesZoneJavaPermissions-Applicability-End -->
 
 <!-- LockedDownRestrictedSitesZoneJavaPermissions-OmaUri-Begin -->
@@ -11852,7 +11998,7 @@ High Safety enables applets to run in their sandbox. Disable Java to prevent any
 <!-- LockedDownRestrictedSitesZoneNavigateWindowsAndFrames-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownRestrictedSitesZoneNavigateWindowsAndFrames-Applicability-End -->
 
 <!-- LockedDownRestrictedSitesZoneNavigateWindowsAndFrames-OmaUri-Begin -->
@@ -11916,7 +12062,7 @@ This policy setting allows you to manage the opening of windows and frames and a
 <!-- LockedDownTrustedSitesZoneAllowAccessToDataSources-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownTrustedSitesZoneAllowAccessToDataSources-Applicability-End -->
 
 <!-- LockedDownTrustedSitesZoneAllowAccessToDataSources-OmaUri-Begin -->
@@ -11980,7 +12126,7 @@ This policy setting allows you to manage whether Internet Explorer can access da
 <!-- LockedDownTrustedSitesZoneAllowAutomaticPromptingForActiveXControls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownTrustedSitesZoneAllowAutomaticPromptingForActiveXControls-Applicability-End -->
 
 <!-- LockedDownTrustedSitesZoneAllowAutomaticPromptingForActiveXControls-OmaUri-Begin -->
@@ -12044,7 +12190,7 @@ This policy setting manages whether users will be automatically prompted for Act
 <!-- LockedDownTrustedSitesZoneAllowAutomaticPromptingForFileDownloads-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownTrustedSitesZoneAllowAutomaticPromptingForFileDownloads-Applicability-End -->
 
 <!-- LockedDownTrustedSitesZoneAllowAutomaticPromptingForFileDownloads-OmaUri-Begin -->
@@ -12106,7 +12252,7 @@ This policy setting determines whether users will be prompted for non user-initi
 <!-- LockedDownTrustedSitesZoneAllowFontDownloads-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownTrustedSitesZoneAllowFontDownloads-Applicability-End -->
 
 <!-- LockedDownTrustedSitesZoneAllowFontDownloads-OmaUri-Begin -->
@@ -12172,7 +12318,7 @@ This policy setting allows you to manage whether pages of the zone may download 
 <!-- LockedDownTrustedSitesZoneAllowLessPrivilegedSites-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownTrustedSitesZoneAllowLessPrivilegedSites-Applicability-End -->
 
 <!-- LockedDownTrustedSitesZoneAllowLessPrivilegedSites-OmaUri-Begin -->
@@ -12236,7 +12382,7 @@ This policy setting allows you to manage whether Web sites from less privileged 
 <!-- LockedDownTrustedSitesZoneAllowNETFrameworkReliantComponents-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownTrustedSitesZoneAllowNETFrameworkReliantComponents-Applicability-End -->
 
 <!-- LockedDownTrustedSitesZoneAllowNETFrameworkReliantComponents-OmaUri-Begin -->
@@ -12300,7 +12446,7 @@ This policy setting allows you to manage whether . NET Framework components that
 <!-- LockedDownTrustedSitesZoneAllowScriptlets-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownTrustedSitesZoneAllowScriptlets-Applicability-End -->
 
 <!-- LockedDownTrustedSitesZoneAllowScriptlets-OmaUri-Begin -->
@@ -12364,7 +12510,7 @@ This policy setting allows you to manage whether the user can run scriptlets.
 <!-- LockedDownTrustedSitesZoneAllowSmartScreenIE-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownTrustedSitesZoneAllowSmartScreenIE-Applicability-End -->
 
 <!-- LockedDownTrustedSitesZoneAllowSmartScreenIE-OmaUri-Begin -->
@@ -12431,7 +12577,7 @@ This policy setting controls whether SmartScreen Filter scans pages in this zone
 <!-- LockedDownTrustedSitesZoneAllowUserDataPersistence-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownTrustedSitesZoneAllowUserDataPersistence-Applicability-End -->
 
 <!-- LockedDownTrustedSitesZoneAllowUserDataPersistence-OmaUri-Begin -->
@@ -12495,7 +12641,7 @@ This policy setting allows you to manage the preservation of information in the 
 <!-- LockedDownTrustedSitesZoneInitializeAndScriptActiveXControls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownTrustedSitesZoneInitializeAndScriptActiveXControls-Applicability-End -->
 
 <!-- LockedDownTrustedSitesZoneInitializeAndScriptActiveXControls-OmaUri-Begin -->
@@ -12561,7 +12707,7 @@ This policy setting allows you to manage ActiveX controls not marked as safe.
 <!-- LockedDownTrustedSitesZoneJavaPermissions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- LockedDownTrustedSitesZoneJavaPermissions-Applicability-End -->
 
 <!-- LockedDownTrustedSitesZoneJavaPermissions-OmaUri-Begin -->
@@ -12631,7 +12777,7 @@ High Safety enables applets to run in their sandbox. Disable Java to prevent any
 <!-- LockedDownTrustedSitesZoneNavigateWindowsAndFrames-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LockedDownTrustedSitesZoneNavigateWindowsAndFrames-Applicability-End -->
 
 <!-- LockedDownTrustedSitesZoneNavigateWindowsAndFrames-OmaUri-Begin -->
@@ -12695,7 +12841,7 @@ This policy setting allows you to manage the opening of windows and frames and a
 <!-- MimeSniffingSafetyFeatureInternetExplorerProcesses-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- MimeSniffingSafetyFeatureInternetExplorerProcesses-Applicability-End -->
 
 <!-- MimeSniffingSafetyFeatureInternetExplorerProcesses-OmaUri-Begin -->
@@ -12759,7 +12905,7 @@ This policy setting determines whether Internet Explorer MIME sniffing will prev
 <!-- MKProtocolSecurityRestrictionInternetExplorerProcesses-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- MKProtocolSecurityRestrictionInternetExplorerProcesses-Applicability-End -->
 
 <!-- MKProtocolSecurityRestrictionInternetExplorerProcesses-OmaUri-Begin -->
@@ -12823,7 +12969,7 @@ The MK Protocol Security Restriction policy setting reduces attack surface area 
 <!-- NewTabDefaultPage-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- NewTabDefaultPage-Applicability-End -->
 
 <!-- NewTabDefaultPage-OmaUri-Begin -->
@@ -12885,7 +13031,7 @@ This policy setting allows you to specify what's displayed when the user opens a
 <!-- NotificationBarInternetExplorerProcesses-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- NotificationBarInternetExplorerProcesses-Applicability-End -->
 
 <!-- NotificationBarInternetExplorerProcesses-OmaUri-Begin -->
@@ -12949,7 +13095,7 @@ This policy setting allows you to manage whether the Notification bar is display
 <!-- PreventManagingSmartScreenFilter-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- PreventManagingSmartScreenFilter-Applicability-End -->
 
 <!-- PreventManagingSmartScreenFilter-OmaUri-Begin -->
@@ -13011,7 +13157,7 @@ This policy setting prevents the user from managing SmartScreen Filter, which wa
 <!-- PreventPerUserInstallationOfActiveXControls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- PreventPerUserInstallationOfActiveXControls-Applicability-End -->
 
 <!-- PreventPerUserInstallationOfActiveXControls-OmaUri-Begin -->
@@ -13074,7 +13220,7 @@ This policy setting allows you to prevent the installation of ActiveX controls o
 <!-- ProtectionFromZoneElevationInternetExplorerProcesses-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- ProtectionFromZoneElevationInternetExplorerProcesses-Applicability-End -->
 
 <!-- ProtectionFromZoneElevationInternetExplorerProcesses-OmaUri-Begin -->
@@ -13138,7 +13284,7 @@ Internet Explorer places restrictions on each Web page it opens. The restriction
 <!-- RemoveRunThisTimeButtonForOutdatedActiveXControls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- RemoveRunThisTimeButtonForOutdatedActiveXControls-Applicability-End -->
 
 <!-- RemoveRunThisTimeButtonForOutdatedActiveXControls-OmaUri-Begin -->
@@ -13203,7 +13349,7 @@ For more information, see "Outdated ActiveX Controls" in the Internet Explorer T
 <!-- ResetZoomForDialogInIEMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ [10.0.20348.261] and later <br> ✅ Windows 10, version 1903 [10.0.18362.1832] and later <br> ✅ Windows 10, version 2004 [10.0.19041.1266] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.282] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.261] and later <br> ✅ Windows 10, version 1903 [10.0.18362.1832] and later <br> ✅ Windows 10, version 2004 [10.0.19041.1266] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.282] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- ResetZoomForDialogInIEMode-Applicability-End -->
 
 <!-- ResetZoomForDialogInIEMode-OmaUri-Begin -->
@@ -13268,7 +13414,7 @@ For more information, see <https://go.microsoft.com/fwlink/?linkid=2102115>
 <!-- RestrictActiveXInstallInternetExplorerProcesses-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- RestrictActiveXInstallInternetExplorerProcesses-Applicability-End -->
 
 <!-- RestrictActiveXInstallInternetExplorerProcesses-OmaUri-Begin -->
@@ -13332,7 +13478,7 @@ This policy setting enables blocking of ActiveX control installation prompts for
 <!-- RestrictedSitesZoneAllowAccessToDataSources-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- RestrictedSitesZoneAllowAccessToDataSources-Applicability-End -->
 
 <!-- RestrictedSitesZoneAllowAccessToDataSources-OmaUri-Begin -->
@@ -13396,7 +13542,7 @@ This policy setting allows you to manage whether Internet Explorer can access da
 <!-- RestrictedSitesZoneAllowActiveScripting-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- RestrictedSitesZoneAllowActiveScripting-Applicability-End -->
 
 <!-- RestrictedSitesZoneAllowActiveScripting-OmaUri-Begin -->
@@ -13460,7 +13606,7 @@ This policy setting allows you to manage whether script code on pages in the zon
 <!-- RestrictedSitesZoneAllowAutomaticPromptingForActiveXControls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- RestrictedSitesZoneAllowAutomaticPromptingForActiveXControls-Applicability-End -->
 
 <!-- RestrictedSitesZoneAllowAutomaticPromptingForActiveXControls-OmaUri-Begin -->
@@ -13524,7 +13670,7 @@ This policy setting manages whether users will be automatically prompted for Act
 <!-- RestrictedSitesZoneAllowAutomaticPromptingForFileDownloads-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- RestrictedSitesZoneAllowAutomaticPromptingForFileDownloads-Applicability-End -->
 
 <!-- RestrictedSitesZoneAllowAutomaticPromptingForFileDownloads-OmaUri-Begin -->
@@ -13586,7 +13732,7 @@ This policy setting determines whether users will be prompted for non user-initi
 <!-- RestrictedSitesZoneAllowBinaryAndScriptBehaviors-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- RestrictedSitesZoneAllowBinaryAndScriptBehaviors-Applicability-End -->
 
 <!-- RestrictedSitesZoneAllowBinaryAndScriptBehaviors-OmaUri-Begin -->
@@ -13650,7 +13796,7 @@ This policy setting allows you to manage dynamic binary and script behaviors: co
 <!-- RestrictedSitesZoneAllowCopyPasteViaScript-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- RestrictedSitesZoneAllowCopyPasteViaScript-Applicability-End -->
 
 <!-- RestrictedSitesZoneAllowCopyPasteViaScript-OmaUri-Begin -->
@@ -13716,7 +13862,7 @@ If you select Prompt in the drop-down box, users are queried as to whether to pe
 <!-- RestrictedSitesZoneAllowDragAndDropCopyAndPasteFiles-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- RestrictedSitesZoneAllowDragAndDropCopyAndPasteFiles-Applicability-End -->
 
 <!-- RestrictedSitesZoneAllowDragAndDropCopyAndPasteFiles-OmaUri-Begin -->
@@ -13780,7 +13926,7 @@ This policy setting allows you to manage whether users can drag files or copy an
 <!-- RestrictedSitesZoneAllowFileDownloads-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- RestrictedSitesZoneAllowFileDownloads-Applicability-End -->
 
 <!-- RestrictedSitesZoneAllowFileDownloads-OmaUri-Begin -->
@@ -13844,7 +13990,7 @@ This policy setting allows you to manage whether file downloads are permitted fr
 <!-- RestrictedSitesZoneAllowFontDownloads-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- RestrictedSitesZoneAllowFontDownloads-Applicability-End -->
 
 <!-- RestrictedSitesZoneAllowFontDownloads-OmaUri-Begin -->
@@ -13910,7 +14056,7 @@ This policy setting allows you to manage whether pages of the zone may download 
 <!-- RestrictedSitesZoneAllowLessPrivilegedSites-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- RestrictedSitesZoneAllowLessPrivilegedSites-Applicability-End -->
 
 <!-- RestrictedSitesZoneAllowLessPrivilegedSites-OmaUri-Begin -->
@@ -13974,7 +14120,7 @@ This policy setting allows you to manage whether Web sites from less privileged 
 <!-- RestrictedSitesZoneAllowLoadingOfXAMLFiles-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- RestrictedSitesZoneAllowLoadingOfXAMLFiles-Applicability-End -->
 
 <!-- RestrictedSitesZoneAllowLoadingOfXAMLFiles-OmaUri-Begin -->
@@ -14038,7 +14184,7 @@ This policy setting allows you to manage the loading of Extensible Application M
 <!-- RestrictedSitesZoneAllowMETAREFRESH-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- RestrictedSitesZoneAllowMETAREFRESH-Applicability-End -->
 
 <!-- RestrictedSitesZoneAllowMETAREFRESH-OmaUri-Begin -->
@@ -14102,7 +14248,7 @@ This policy setting allows you to manage whether a user's browser can be redirec
 <!-- RestrictedSitesZoneAllowNETFrameworkReliantComponents-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- RestrictedSitesZoneAllowNETFrameworkReliantComponents-Applicability-End -->
 
 <!-- RestrictedSitesZoneAllowNETFrameworkReliantComponents-OmaUri-Begin -->
@@ -14166,7 +14312,7 @@ This policy setting allows you to manage whether . NET Framework components that
 <!-- RestrictedSitesZoneAllowOnlyApprovedDomainsToUseActiveXControls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- RestrictedSitesZoneAllowOnlyApprovedDomainsToUseActiveXControls-Applicability-End -->
 
 <!-- RestrictedSitesZoneAllowOnlyApprovedDomainsToUseActiveXControls-OmaUri-Begin -->
@@ -14228,7 +14374,7 @@ This policy setting controls whether or not the user is prompted to allow Active
 <!-- RestrictedSitesZoneAllowOnlyApprovedDomainsToUseTDCActiveXControl-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- RestrictedSitesZoneAllowOnlyApprovedDomainsToUseTDCActiveXControl-Applicability-End -->
 
 <!-- RestrictedSitesZoneAllowOnlyApprovedDomainsToUseTDCActiveXControl-OmaUri-Begin -->
@@ -14290,7 +14436,7 @@ This policy setting controls whether or not the user is allowed to run the TDC A
 <!-- RestrictedSitesZoneAllowScriptingOfInternetExplorerWebBrowserControls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- RestrictedSitesZoneAllowScriptingOfInternetExplorerWebBrowserControls-Applicability-End -->
 
 <!-- RestrictedSitesZoneAllowScriptingOfInternetExplorerWebBrowserControls-OmaUri-Begin -->
@@ -14354,7 +14500,7 @@ This policy setting determines whether a page can control embedded WebBrowser co
 <!-- RestrictedSitesZoneAllowScriptInitiatedWindows-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- RestrictedSitesZoneAllowScriptInitiatedWindows-Applicability-End -->
 
 <!-- RestrictedSitesZoneAllowScriptInitiatedWindows-OmaUri-Begin -->
@@ -14418,7 +14564,7 @@ This policy setting allows you to manage restrictions on script-initiated pop-up
 <!-- RestrictedSitesZoneAllowScriptlets-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- RestrictedSitesZoneAllowScriptlets-Applicability-End -->
 
 <!-- RestrictedSitesZoneAllowScriptlets-OmaUri-Begin -->
@@ -14482,7 +14628,7 @@ This policy setting allows you to manage whether the user can run scriptlets.
 <!-- RestrictedSitesZoneAllowSmartScreenIE-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- RestrictedSitesZoneAllowSmartScreenIE-Applicability-End -->
 
 <!-- RestrictedSitesZoneAllowSmartScreenIE-OmaUri-Begin -->
@@ -14549,7 +14695,7 @@ This policy setting controls whether SmartScreen Filter scans pages in this zone
 <!-- RestrictedSitesZoneAllowUpdatesToStatusBarViaScript-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- RestrictedSitesZoneAllowUpdatesToStatusBarViaScript-Applicability-End -->
 
 <!-- RestrictedSitesZoneAllowUpdatesToStatusBarViaScript-OmaUri-Begin -->
@@ -14611,7 +14757,7 @@ This policy setting allows you to manage whether script is allowed to update the
 <!-- RestrictedSitesZoneAllowUserDataPersistence-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- RestrictedSitesZoneAllowUserDataPersistence-Applicability-End -->
 
 <!-- RestrictedSitesZoneAllowUserDataPersistence-OmaUri-Begin -->
@@ -14675,7 +14821,7 @@ This policy setting allows you to manage the preservation of information in the 
 <!-- RestrictedSitesZoneAllowVBScriptToRunInInternetExplorer-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- RestrictedSitesZoneAllowVBScriptToRunInInternetExplorer-Applicability-End -->
 
 <!-- RestrictedSitesZoneAllowVBScriptToRunInInternetExplorer-OmaUri-Begin -->
@@ -14741,7 +14887,7 @@ If you don't configure or disable this policy setting, VBScript is prevented fro
 <!-- RestrictedSitesZoneDoNotRunAntimalwareAgainstActiveXControls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- RestrictedSitesZoneDoNotRunAntimalwareAgainstActiveXControls-Applicability-End -->
 
 <!-- RestrictedSitesZoneDoNotRunAntimalwareAgainstActiveXControls-OmaUri-Begin -->
@@ -14805,7 +14951,7 @@ This policy setting determines whether Internet Explorer runs antimalware progra
 <!-- RestrictedSitesZoneDownloadSignedActiveXControls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- RestrictedSitesZoneDownloadSignedActiveXControls-Applicability-End -->
 
 <!-- RestrictedSitesZoneDownloadSignedActiveXControls-OmaUri-Begin -->
@@ -14869,7 +15015,7 @@ This policy setting allows you to manage whether users may download signed Activ
 <!-- RestrictedSitesZoneDownloadUnsignedActiveXControls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- RestrictedSitesZoneDownloadUnsignedActiveXControls-Applicability-End -->
 
 <!-- RestrictedSitesZoneDownloadUnsignedActiveXControls-OmaUri-Begin -->
@@ -14933,7 +15079,7 @@ This policy setting allows you to manage whether users may download unsigned Act
 <!-- RestrictedSitesZoneEnableCrossSiteScriptingFilter-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- RestrictedSitesZoneEnableCrossSiteScriptingFilter-Applicability-End -->
 
 <!-- RestrictedSitesZoneEnableCrossSiteScriptingFilter-OmaUri-Begin -->
@@ -14995,7 +15141,7 @@ This policy controls whether or not the Cross-Site Scripting (XSS) Filter will d
 <!-- RestrictedSitesZoneEnableDraggingOfContentFromDifferentDomainsAcrossWindows-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- RestrictedSitesZoneEnableDraggingOfContentFromDifferentDomainsAcrossWindows-Applicability-End -->
 
 <!-- RestrictedSitesZoneEnableDraggingOfContentFromDifferentDomainsAcrossWindows-OmaUri-Begin -->
@@ -15061,7 +15207,7 @@ In Internet Explorer 9 and earlier versions, if you disable this policy or don't
 <!-- RestrictedSitesZoneEnableDraggingOfContentFromDifferentDomainsWithinWindows-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- RestrictedSitesZoneEnableDraggingOfContentFromDifferentDomainsWithinWindows-Applicability-End -->
 
 <!-- RestrictedSitesZoneEnableDraggingOfContentFromDifferentDomainsWithinWindows-OmaUri-Begin -->
@@ -15127,7 +15273,7 @@ In Internet Explorer 9 and earlier versions, if you disable this policy setting 
 <!-- RestrictedSitesZoneEnableMIMESniffing-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- RestrictedSitesZoneEnableMIMESniffing-Applicability-End -->
 
 <!-- RestrictedSitesZoneEnableMIMESniffing-OmaUri-Begin -->
@@ -15191,7 +15337,7 @@ This policy setting allows you to manage MIME sniffing for file promotion from o
 <!-- RestrictedSitesZoneIncludeLocalPathWhenUploadingFilesToServer-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- RestrictedSitesZoneIncludeLocalPathWhenUploadingFilesToServer-Applicability-End -->
 
 <!-- RestrictedSitesZoneIncludeLocalPathWhenUploadingFilesToServer-OmaUri-Begin -->
@@ -15255,7 +15401,7 @@ This policy setting controls whether or not local path information is sent when 
 <!-- RestrictedSitesZoneInitializeAndScriptActiveXControls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- RestrictedSitesZoneInitializeAndScriptActiveXControls-Applicability-End -->
 
 <!-- RestrictedSitesZoneInitializeAndScriptActiveXControls-OmaUri-Begin -->
@@ -15321,7 +15467,7 @@ This policy setting allows you to manage ActiveX controls not marked as safe.
 <!-- RestrictedSitesZoneJavaPermissions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- RestrictedSitesZoneJavaPermissions-Applicability-End -->
 
 <!-- RestrictedSitesZoneJavaPermissions-OmaUri-Begin -->
@@ -15391,7 +15537,7 @@ High Safety enables applets to run in their sandbox. Disable Java to prevent any
 <!-- RestrictedSitesZoneLaunchingApplicationsAndFilesInIFRAME-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- RestrictedSitesZoneLaunchingApplicationsAndFilesInIFRAME-Applicability-End -->
 
 <!-- RestrictedSitesZoneLaunchingApplicationsAndFilesInIFRAME-OmaUri-Begin -->
@@ -15455,7 +15601,7 @@ This policy setting allows you to manage whether applications may be run and fil
 <!-- RestrictedSitesZoneLogonOptions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- RestrictedSitesZoneLogonOptions-Applicability-End -->
 
 <!-- RestrictedSitesZoneLogonOptions-OmaUri-Begin -->
@@ -15527,7 +15673,7 @@ Automatic logon with current user name and password to attempt logon using Windo
 <!-- RestrictedSitesZoneNavigateWindowsAndFrames-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- RestrictedSitesZoneNavigateWindowsAndFrames-Applicability-End -->
 
 <!-- RestrictedSitesZoneNavigateWindowsAndFrames-OmaUri-Begin -->
@@ -15591,7 +15737,7 @@ This policy setting allows you to manage the opening of windows and frames and a
 <!-- RestrictedSitesZoneRunActiveXControlsAndPlugins-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- RestrictedSitesZoneRunActiveXControlsAndPlugins-Applicability-End -->
 
 <!-- RestrictedSitesZoneRunActiveXControlsAndPlugins-OmaUri-Begin -->
@@ -15657,7 +15803,7 @@ If you selected Prompt in the drop-down box, users are asked to choose whether t
 <!-- RestrictedSitesZoneRunNETFrameworkReliantComponentsSignedWithAuthenticode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- RestrictedSitesZoneRunNETFrameworkReliantComponentsSignedWithAuthenticode-Applicability-End -->
 
 <!-- RestrictedSitesZoneRunNETFrameworkReliantComponentsSignedWithAuthenticode-OmaUri-Begin -->
@@ -15721,7 +15867,7 @@ This policy setting allows you to manage whether . NET Framework components that
 <!-- RestrictedSitesZoneScriptActiveXControlsMarkedSafeForScripting-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- RestrictedSitesZoneScriptActiveXControlsMarkedSafeForScripting-Applicability-End -->
 
 <!-- RestrictedSitesZoneScriptActiveXControlsMarkedSafeForScripting-OmaUri-Begin -->
@@ -15787,7 +15933,7 @@ If you select Prompt in the drop-down box, users are queried to choose whether t
 <!-- RestrictedSitesZoneScriptingOfJavaApplets-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- RestrictedSitesZoneScriptingOfJavaApplets-Applicability-End -->
 
 <!-- RestrictedSitesZoneScriptingOfJavaApplets-OmaUri-Begin -->
@@ -15853,7 +15999,7 @@ If you select Prompt in the drop-down box, users are queried to choose whether t
 <!-- RestrictedSitesZoneShowSecurityWarningForPotentiallyUnsafeFiles-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- RestrictedSitesZoneShowSecurityWarningForPotentiallyUnsafeFiles-Applicability-End -->
 
 <!-- RestrictedSitesZoneShowSecurityWarningForPotentiallyUnsafeFiles-OmaUri-Begin -->
@@ -15917,7 +16063,7 @@ This policy setting controls whether or not the "Open File - Security Warning" m
 <!-- RestrictedSitesZoneTurnOnProtectedMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- RestrictedSitesZoneTurnOnProtectedMode-Applicability-End -->
 
 <!-- RestrictedSitesZoneTurnOnProtectedMode-OmaUri-Begin -->
@@ -15981,7 +16127,7 @@ This policy setting allows you to turn on Protected Mode. Protected Mode helps p
 <!-- RestrictedSitesZoneUsePopupBlocker-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- RestrictedSitesZoneUsePopupBlocker-Applicability-End -->
 
 <!-- RestrictedSitesZoneUsePopupBlocker-OmaUri-Begin -->
@@ -16045,7 +16191,7 @@ This policy setting allows you to manage whether unwanted pop-up windows appear.
 <!-- RestrictFileDownloadInternetExplorerProcesses-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- RestrictFileDownloadInternetExplorerProcesses-Applicability-End -->
 
 <!-- RestrictFileDownloadInternetExplorerProcesses-OmaUri-Begin -->
@@ -16109,7 +16255,7 @@ This policy setting enables blocking of file download prompts that aren't user i
 <!-- ScriptedWindowSecurityRestrictionsInternetExplorerProcesses-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- ScriptedWindowSecurityRestrictionsInternetExplorerProcesses-Applicability-End -->
 
 <!-- ScriptedWindowSecurityRestrictionsInternetExplorerProcesses-OmaUri-Begin -->
@@ -16173,7 +16319,7 @@ Internet Explorer allows scripts to programmatically open, resize, and repositio
 <!-- SearchProviderList-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- SearchProviderList-Applicability-End -->
 
 <!-- SearchProviderList-OmaUri-Begin -->
@@ -16239,7 +16385,7 @@ This policy setting allows you to restrict the search providers that appear in t
 <!-- SecurityZonesUseOnlyMachineSettings-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- SecurityZonesUseOnlyMachineSettings-Applicability-End -->
 
 <!-- SecurityZonesUseOnlyMachineSettings-OmaUri-Begin -->
@@ -16302,7 +16448,7 @@ Also, see the "Security zones: Don't allow users to change policies" policy.
 <!-- SendSitesNotInEnterpriseSiteListToEdge-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ [10.0.20348] and later <br> ✅ Windows 10, version 1903 [10.0.18362.1350] and later <br> ✅ Windows 10, version 2004 [10.0.19041.789] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348] and later <br> ✅ Windows 10, version 1903 [10.0.18362.1350] and later <br> ✅ Windows 10, version 2004 [10.0.19041.789] and later |
 <!-- SendSitesNotInEnterpriseSiteListToEdge-Applicability-End -->
 
 <!-- SendSitesNotInEnterpriseSiteListToEdge-OmaUri-Begin -->
@@ -16393,7 +16539,7 @@ Disabling, or not configuring this setting, opens all sites based on the current
 <!-- SpecifyUseOfActiveXInstallerService-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- SpecifyUseOfActiveXInstallerService-Applicability-End -->
 
 <!-- SpecifyUseOfActiveXInstallerService-OmaUri-Begin -->
@@ -16456,7 +16602,7 @@ This policy setting allows you to specify how ActiveX controls are installed.
 <!-- TrustedSitesZoneAllowAccessToDataSources-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- TrustedSitesZoneAllowAccessToDataSources-Applicability-End -->
 
 <!-- TrustedSitesZoneAllowAccessToDataSources-OmaUri-Begin -->
@@ -16520,7 +16666,7 @@ This policy setting allows you to manage whether Internet Explorer can access da
 <!-- TrustedSitesZoneAllowAutomaticPromptingForActiveXControls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- TrustedSitesZoneAllowAutomaticPromptingForActiveXControls-Applicability-End -->
 
 <!-- TrustedSitesZoneAllowAutomaticPromptingForActiveXControls-OmaUri-Begin -->
@@ -16584,7 +16730,7 @@ This policy setting manages whether users will be automatically prompted for Act
 <!-- TrustedSitesZoneAllowAutomaticPromptingForFileDownloads-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- TrustedSitesZoneAllowAutomaticPromptingForFileDownloads-Applicability-End -->
 
 <!-- TrustedSitesZoneAllowAutomaticPromptingForFileDownloads-OmaUri-Begin -->
@@ -16646,7 +16792,7 @@ This policy setting determines whether users will be prompted for non user-initi
 <!-- TrustedSitesZoneAllowFontDownloads-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- TrustedSitesZoneAllowFontDownloads-Applicability-End -->
 
 <!-- TrustedSitesZoneAllowFontDownloads-OmaUri-Begin -->
@@ -16712,7 +16858,7 @@ This policy setting allows you to manage whether pages of the zone may download 
 <!-- TrustedSitesZoneAllowLessPrivilegedSites-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- TrustedSitesZoneAllowLessPrivilegedSites-Applicability-End -->
 
 <!-- TrustedSitesZoneAllowLessPrivilegedSites-OmaUri-Begin -->
@@ -16776,7 +16922,7 @@ This policy setting allows you to manage whether Web sites from less privileged 
 <!-- TrustedSitesZoneAllowNETFrameworkReliantComponents-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- TrustedSitesZoneAllowNETFrameworkReliantComponents-Applicability-End -->
 
 <!-- TrustedSitesZoneAllowNETFrameworkReliantComponents-OmaUri-Begin -->
@@ -16840,7 +16986,7 @@ This policy setting allows you to manage whether . NET Framework components that
 <!-- TrustedSitesZoneAllowScriptlets-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- TrustedSitesZoneAllowScriptlets-Applicability-End -->
 
 <!-- TrustedSitesZoneAllowScriptlets-OmaUri-Begin -->
@@ -16904,7 +17050,7 @@ This policy setting allows you to manage whether the user can run scriptlets.
 <!-- TrustedSitesZoneAllowSmartScreenIE-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- TrustedSitesZoneAllowSmartScreenIE-Applicability-End -->
 
 <!-- TrustedSitesZoneAllowSmartScreenIE-OmaUri-Begin -->
@@ -16971,7 +17117,7 @@ This policy setting controls whether SmartScreen Filter scans pages in this zone
 <!-- TrustedSitesZoneAllowUserDataPersistence-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- TrustedSitesZoneAllowUserDataPersistence-Applicability-End -->
 
 <!-- TrustedSitesZoneAllowUserDataPersistence-OmaUri-Begin -->
@@ -17035,7 +17181,7 @@ This policy setting allows you to manage the preservation of information in the 
 <!-- TrustedSitesZoneDoNotRunAntimalwareAgainstActiveXControls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- TrustedSitesZoneDoNotRunAntimalwareAgainstActiveXControls-Applicability-End -->
 
 <!-- TrustedSitesZoneDoNotRunAntimalwareAgainstActiveXControls-OmaUri-Begin -->
@@ -17099,7 +17245,7 @@ This policy setting determines whether Internet Explorer runs antimalware progra
 <!-- TrustedSitesZoneInitializeAndScriptActiveXControls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- TrustedSitesZoneInitializeAndScriptActiveXControls-Applicability-End -->
 
 <!-- TrustedSitesZoneInitializeAndScriptActiveXControls-OmaUri-Begin -->
@@ -17165,7 +17311,7 @@ This policy setting allows you to manage ActiveX controls not marked as safe.
 <!-- TrustedSitesZoneJavaPermissions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- TrustedSitesZoneJavaPermissions-Applicability-End -->
 
 <!-- TrustedSitesZoneJavaPermissions-OmaUri-Begin -->
@@ -17229,13 +17375,85 @@ High Safety enables applets to run in their sandbox. Disable Java to prevent any
 
 <!-- TrustedSitesZoneJavaPermissions-End -->
 
+<!-- TrustedSitesZoneLogonOptions-Begin -->
+## TrustedSitesZoneLogonOptions
+
+<!-- TrustedSitesZoneLogonOptions-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- TrustedSitesZoneLogonOptions-Applicability-End -->
+
+<!-- TrustedSitesZoneLogonOptions-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/InternetExplorer/TrustedSitesZoneLogonOptions
+```
+
+```Device
+./Device/Vendor/MSFT/Policy/Config/InternetExplorer/TrustedSitesZoneLogonOptions
+```
+<!-- TrustedSitesZoneLogonOptions-OmaUri-End -->
+
+<!-- TrustedSitesZoneLogonOptions-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to manage settings for logon options.
+
+- If you enable this policy setting, you can choose from the following logon options.
+
+Anonymous logon to disable HTTP authentication and use the guest account only for the Common Internet File System (CIFS) protocol.
+
+Prompt for user name and password to query users for user IDs and passwords. After a user is queried, these values can be used silently for the remainder of the session.
+
+Automatic logon only in Intranet zone to query users for user IDs and passwords in other zones. After a user is queried, these values can be used silently for the remainder of the session.
+
+Automatic logon with current user name and password to attempt logon using Windows NT Challenge Response (also known as NTLM authentication). If Windows NT Challenge Response is supported by the server, the logon uses the user's network user name and password for logon. If Windows NT Challenge Response isn't supported by the server, the user is queried to provide the user name and password.
+
+- If you disable this policy setting, logon is set to Automatic logon only in Intranet zone.
+
+- If you don't configure this policy setting, logon is set to Automatic logon with current username and password.
+<!-- TrustedSitesZoneLogonOptions-Description-End -->
+
+<!-- TrustedSitesZoneLogonOptions-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TrustedSitesZoneLogonOptions-Editable-End -->
+
+<!-- TrustedSitesZoneLogonOptions-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- TrustedSitesZoneLogonOptions-DFProperties-End -->
+
+<!-- TrustedSitesZoneLogonOptions-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | IZ_PolicyLogon_5 |
+| Friendly Name | Logon options |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Internet Explorer > Internet Control Panel > Security Page > Trusted Sites Zone |
+| Registry Key Name | Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\2 |
+| ADMX File Name | inetres.admx |
+<!-- TrustedSitesZoneLogonOptions-AdmxBacked-End -->
+
+<!-- TrustedSitesZoneLogonOptions-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TrustedSitesZoneLogonOptions-Examples-End -->
+
+<!-- TrustedSitesZoneLogonOptions-End -->
+
 <!-- TrustedSitesZoneNavigateWindowsAndFrames-Begin -->
 ## TrustedSitesZoneNavigateWindowsAndFrames
 
 <!-- TrustedSitesZoneNavigateWindowsAndFrames-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- TrustedSitesZoneNavigateWindowsAndFrames-Applicability-End -->
 
 <!-- TrustedSitesZoneNavigateWindowsAndFrames-OmaUri-Begin -->

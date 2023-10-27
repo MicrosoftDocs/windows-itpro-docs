@@ -4,7 +4,7 @@ description: Learn more about the WindowsLogon Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/11/2023
+ms.date: 10/24/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -18,8 +18,6 @@ ms.topic: reference
 
 [!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
-[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
-
 <!-- WindowsLogon-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 <!-- WindowsLogon-Editable-End -->
@@ -30,7 +28,7 @@ ms.topic: reference
 <!-- AllowAutomaticRestartSignOn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- AllowAutomaticRestartSignOn-Applicability-End -->
 
 <!-- AllowAutomaticRestartSignOn-OmaUri-Begin -->
@@ -45,7 +43,7 @@ This policy setting controls whether a device will automatically sign in and loc
 
 This only occurs if the last interactive user didn't sign out before the restart or shutdown. 
 
-If the device is joined to Active Directory or Azure Active Directory, this policy only applies to Windows Update restarts. Otherwise, this will apply to both Windows Update restarts and user-initiated restarts and shutdowns.
+If the device is joined to Active Directory or Microsoft Entra ID, this policy only applies to Windows Update restarts. Otherwise, this will apply to both Windows Update restarts and user-initiated restarts and shutdowns.
 
 - If you don't configure this policy setting, it's enabled by default. When the policy is enabled, the user is automatically signed in and the session is automatically locked with all lock screen apps configured for that user after the device boots. 
 
@@ -95,7 +93,7 @@ After enabling this policy, you can configure its settings through the ConfigAut
 <!-- ConfigAutomaticRestartSignOn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- ConfigAutomaticRestartSignOn-Applicability-End -->
 
 <!-- ConfigAutomaticRestartSignOn-OmaUri-Begin -->
@@ -106,20 +104,20 @@ After enabling this policy, you can configure its settings through the ConfigAut
 
 <!-- ConfigAutomaticRestartSignOn-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting controls the configuration under which an automatic restart and sign on and lock occurs after a restart or cold boot. If you chose "Disabled" in the "Sign-in and lock last interactive user automatically after a restart" policy, then automatic sign on won't occur and this policy doesn't need to be configured.
+This policy setting controls the configuration under which an automatic restart and sign-on and lock occurs after a restart or cold boot. If you chose "Disabled" in the "Sign-in and lock last interactive user automatically after a restart" policy, then automatic sign-on won't occur and this policy doesn't need to be configured.
 
 - If you enable this policy setting, you can choose one of the following two options:
 
-1. "Enabled if BitLocker is on and not suspended" specifies that automatic sign on and lock will only occur if BitLocker is active and not suspended during the reboot or shutdown. Personal data can be accessed on the device's hard drive at this time if BitLocker isn't on or suspended during an update. BitLocker suspension temporarily removes protection for system components and data but may be needed in certain circumstances to successfully update boot-critical components.
+1. "Enabled if BitLocker is on and not suspended" specifies that automatic sign-on and lock will only occur if BitLocker is active and not suspended during the reboot or shutdown. Personal data can be accessed on the device's hard drive at this time if BitLocker isn't on or suspended during an update. BitLocker suspension temporarily removes protection for system components and data but may be needed in certain circumstances to successfully update boot-critical components.
 
 BitLocker is suspended during updates if:
 
 - The device doesn't have TPM 2.0 and PCR7, or
 - The device doesn't use a TPM-only protector.
 
-2. "Always Enabled" specifies that automatic sign on will happen even if BitLocker is off or suspended during reboot or shutdown. When BitLocker isn't enabled, personal data is accessible on the hard drive. Automatic restart and sign on should only be run under this condition if you are confident that the configured device is in a secure physical location.
+2. "Always Enabled" specifies that automatic sign-on will happen even if BitLocker is off or suspended during reboot or shutdown. When BitLocker isn't enabled, personal data is accessible on the hard drive. Automatic restart and sign-on should only be run under this condition if you are confident that the configured device is in a secure physical location.
 
-- If you disable or don't configure this setting, automatic sign on will default to the "Enabled if BitLocker is on and not suspended" behavior.
+- If you disable or don't configure this setting, automatic sign-on will default to the "Enabled if BitLocker is on and not suspended" behavior.
 <!-- ConfigAutomaticRestartSignOn-Description-End -->
 
 <!-- ConfigAutomaticRestartSignOn-Editable-Begin -->
@@ -162,7 +160,7 @@ BitLocker is suspended during updates if:
 <!-- DisableLockScreenAppNotifications-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DisableLockScreenAppNotifications-Applicability-End -->
 
 <!-- DisableLockScreenAppNotifications-OmaUri-Begin -->
@@ -221,7 +219,7 @@ This policy setting allows you to prevent app notifications from appearing on th
 <!-- DontDisplayNetworkSelectionUI-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DontDisplayNetworkSelectionUI-Applicability-End -->
 
 <!-- DontDisplayNetworkSelectionUI-OmaUri-Begin -->
@@ -306,7 +304,7 @@ Here's an example to enable this policy:
 <!-- EnableFirstLogonAnimation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- EnableFirstLogonAnimation-Applicability-End -->
 
 <!-- EnableFirstLogonAnimation-OmaUri-Begin -->
@@ -378,7 +376,7 @@ This policy setting allows you to control whether users see the first sign-in an
 <!-- EnableMPRNotifications-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- EnableMPRNotifications-Applicability-End -->
 
 <!-- EnableMPRNotifications-OmaUri-Begin -->
@@ -437,7 +435,7 @@ This policy controls the configuration under which winlogon sends MPR notificati
 <!-- EnumerateLocalUsersOnDomainJoinedComputers-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- EnumerateLocalUsersOnDomainJoinedComputers-Applicability-End -->
 
 <!-- EnumerateLocalUsersOnDomainJoinedComputers-OmaUri-Begin -->
@@ -496,7 +494,7 @@ This policy setting allows local users to be enumerated on domain-joined compute
 <!-- HideFastUserSwitching-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- HideFastUserSwitching-Applicability-End -->
 
 <!-- HideFastUserSwitching-OmaUri-Begin -->
@@ -565,7 +563,7 @@ The locations that Switch User interface appear are in the Logon UI, the Start m
 <!-- OverrideShellProgram-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.2338] and later |
 <!-- OverrideShellProgram-Applicability-End -->
 
 <!-- OverrideShellProgram-OmaUri-Begin -->
@@ -591,7 +589,6 @@ OverrideShellProgram policy allows IT admin to configure the shell program for W
 | Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
-| Dependency [BootToCloudModeDependencyGroup] | Dependency Type: `DependsOn` <br> Dependency URI: `Device/Vendor/MSFT/Policy/Config/CloudDesktop/BootToCloudMode` <br> Dependency Allowed Value: `[1]` <br> Dependency Allowed Value Type: `Range` <br>  |
 <!-- OverrideShellProgram-DFProperties-End -->
 
 <!-- OverrideShellProgram-AllowedValues-Begin -->

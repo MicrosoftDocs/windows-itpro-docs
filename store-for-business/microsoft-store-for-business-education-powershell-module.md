@@ -9,6 +9,7 @@ author: cmcatee-MSFT
 manager: scotv
 ms.topic: conceptual
 ms.localizationpriority: medium
+ms.custom: has-azure-ad-ps-ref
 ms.date: 05/24/2023
 ms.reviewer: 
 ---
@@ -35,7 +36,7 @@ You can use the PowerShell module to:
 - Perform bulk operations with .csv files - automates license management for customers with larger numbers of licenses
 
 >[!NOTE]
->Assigning apps to groups is not supported via this module. Instead, we recommend leveraging the Azure Active Directory Or MSOnline Modules to save members of a group to a CSV file and follow instructions below on how to use CSV file to manage assignments.
+>Assigning apps to groups is not supported via this module. Instead, we recommend leveraging the Microsoft Entra ID Or MSOnline Modules to save members of a group to a CSV file and follow instructions below on how to use CSV file to manage assignments.
 
 ## Requirements
 To use the Microsoft Store for Business and Education PowerShell module, you'll need:

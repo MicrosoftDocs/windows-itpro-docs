@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 ms.author: aaroncz
 ms.date: 10/05/2017
 ms.reviewer: 
-manager: dougeby
+manager: aaroncz
 ms.technology: itpro-configure
 ---
 
@@ -28,7 +28,7 @@ This scenario helps you search for both general upcoming meetings, and specific 
 
 This process helps you find your upcoming meetings.
 
-1. Check to make sure your work calendar is connected and synchronized with your Azure AD account.
+1. Check to make sure your work calendar is connected and synchronized with your Microsoft Entra account.
 
 2. Click on the **Cortana** icon in the taskbar, and then click in the **Search** bar.
 

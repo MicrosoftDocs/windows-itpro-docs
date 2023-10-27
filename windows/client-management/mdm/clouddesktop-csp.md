@@ -4,7 +4,7 @@ description: Learn more about the CloudDesktop CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 07/25/2023
+ms.date: 10/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -35,7 +35,7 @@ The following list shows the CloudDesktop configuration service provider nodes:
 <!-- Device-EnableBootToCloudSharedPCMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows Insider Preview [10.0.22631.2050] |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview [10.0.22631.2050] |
 <!-- Device-EnableBootToCloudSharedPCMode-Applicability-End -->
 
 <!-- Device-EnableBootToCloudSharedPCMode-OmaUri-Begin -->
@@ -46,7 +46,7 @@ The following list shows the CloudDesktop configuration service provider nodes:
 
 <!-- Device-EnableBootToCloudSharedPCMode-Description-Begin -->
 <!-- Description-Source-DDF -->
-Setting this node to "true" configures boot to cloud for Shared PC mode. Boot to cloud mode enables users to seamlessly sign-in to a Cloud PC. Shared PC mode allows multiple users to sign-in on the device and use for shared purpose. For enabling boot to cloud shared pc feature, Cloud Provider application must be installed on the PC and the user must have a Cloud PC provisioned.
+Setting this node to "true" configures boot to cloud for Shared PC mode. Boot to cloud mode enables users to seamlessly sign-in to a Cloud PC. Shared PC mode allows multiple users to sign-in on the device and use for shared purpose. For enabling Boot to Cloud Shared PC feature, Cloud Provider application must be installed on the PC and the user must have a Cloud PC provisioned.
 <!-- Device-EnableBootToCloudSharedPCMode-Description-End -->
 
 <!-- Device-EnableBootToCloudSharedPCMode-Editable-Begin -->

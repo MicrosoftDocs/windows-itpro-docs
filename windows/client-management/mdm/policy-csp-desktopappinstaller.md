@@ -4,7 +4,7 @@ description: Learn more about the DesktopAppInstaller Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 10/03/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -18,6 +18,8 @@ ms.topic: reference
 
 [!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
+
 <!-- DesktopAppInstaller-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 <!-- DesktopAppInstaller-Editable-End -->
@@ -28,7 +30,7 @@ ms.topic: reference
 <!-- EnableAdditionalSources-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- EnableAdditionalSources-Applicability-End -->
 
 <!-- EnableAdditionalSources-OmaUri-Begin -->
@@ -89,7 +91,7 @@ This policy controls additional sources provided by the enterprise IT administra
 <!-- EnableAllowedSources-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- EnableAllowedSources-Applicability-End -->
 
 <!-- EnableAllowedSources-OmaUri-Begin -->
@@ -150,7 +152,7 @@ This policy controls additional sources allowed by the enterprise IT administrat
 <!-- EnableAppInstaller-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- EnableAppInstaller-Applicability-End -->
 
 <!-- EnableAppInstaller-OmaUri-Begin -->
@@ -210,7 +212,7 @@ Users will still be able to execute the *winget* command. The default help will 
 <!-- EnableBypassCertificatePinningForMicrosoftStore-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- EnableBypassCertificatePinningForMicrosoftStore-Applicability-End -->
 
 <!-- EnableBypassCertificatePinningForMicrosoftStore-OmaUri-Begin -->
@@ -260,7 +262,7 @@ Users will still be able to execute the *winget* command. The default help will 
 <!-- EnableDefaultSource-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- EnableDefaultSource-Applicability-End -->
 
 <!-- EnableDefaultSource-OmaUri-Begin -->
@@ -321,7 +323,7 @@ This policy controls the default source included with the [Windows Package Manag
 <!-- EnableExperimentalFeatures-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- EnableExperimentalFeatures-Applicability-End -->
 
 <!-- EnableExperimentalFeatures-OmaUri-Begin -->
@@ -381,7 +383,7 @@ Experimental features are used during Windows Package Manager development cycle 
 <!-- EnableHashOverride-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- EnableHashOverride-Applicability-End -->
 
 <!-- EnableHashOverride-OmaUri-Begin -->
@@ -440,7 +442,7 @@ This policy controls whether or not the [Windows Package Manager](/windows/packa
 <!-- EnableLocalArchiveMalwareScanOverride-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- EnableLocalArchiveMalwareScanOverride-Applicability-End -->
 
 <!-- EnableLocalArchiveMalwareScanOverride-OmaUri-Begin -->
@@ -490,7 +492,7 @@ This policy controls whether or not the [Windows Package Manager](/windows/packa
 <!-- EnableLocalManifestFiles-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- EnableLocalManifestFiles-Applicability-End -->
 
 <!-- EnableLocalManifestFiles-OmaUri-Begin -->
@@ -549,7 +551,7 @@ This policy controls whether users can install packages with local manifest file
 <!-- EnableMicrosoftStoreSource-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- EnableMicrosoftStoreSource-Applicability-End -->
 
 <!-- EnableMicrosoftStoreSource-OmaUri-Begin -->
@@ -610,7 +612,7 @@ This policy controls the Microsoft Store source included with the [Windows Packa
 <!-- EnableMSAppInstallerProtocol-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- EnableMSAppInstallerProtocol-Applicability-End -->
 
 <!-- EnableMSAppInstallerProtocol-OmaUri-Begin -->
@@ -669,7 +671,7 @@ This policy controls whether users can install packages from a website that's us
 <!-- EnableSettings-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- EnableSettings-Applicability-End -->
 
 <!-- EnableSettings-OmaUri-Begin -->
@@ -723,13 +725,63 @@ The settings are stored inside of a .json file on the user’s system. It may be
 
 <!-- EnableSettings-End -->
 
+<!-- EnableWindowsPackageManagerCommandLineInterfaces-Begin -->
+## EnableWindowsPackageManagerCommandLineInterfaces
+
+<!-- EnableWindowsPackageManagerCommandLineInterfaces-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- EnableWindowsPackageManagerCommandLineInterfaces-Applicability-End -->
+
+<!-- EnableWindowsPackageManagerCommandLineInterfaces-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/DesktopAppInstaller/EnableWindowsPackageManagerCommandLineInterfaces
+```
+<!-- EnableWindowsPackageManagerCommandLineInterfaces-OmaUri-End -->
+
+<!-- EnableWindowsPackageManagerCommandLineInterfaces-Description-Begin -->
+<!-- Description-Source-Not-Found -->
+<!-- EnableWindowsPackageManagerCommandLineInterfaces-Description-End -->
+
+<!-- EnableWindowsPackageManagerCommandLineInterfaces-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- EnableWindowsPackageManagerCommandLineInterfaces-Editable-End -->
+
+<!-- EnableWindowsPackageManagerCommandLineInterfaces-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- EnableWindowsPackageManagerCommandLineInterfaces-DFProperties-End -->
+
+<!-- EnableWindowsPackageManagerCommandLineInterfaces-AdmxBacked-Begin -->
+<!-- ADMX-Not-Found -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | EnableWindowsPackageManagerCommandLineInterfaces |
+| ADMX File Name | DesktopAppInstaller.admx |
+<!-- EnableWindowsPackageManagerCommandLineInterfaces-AdmxBacked-End -->
+
+<!-- EnableWindowsPackageManagerCommandLineInterfaces-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- EnableWindowsPackageManagerCommandLineInterfaces-Examples-End -->
+
+<!-- EnableWindowsPackageManagerCommandLineInterfaces-End -->
+
 <!-- SourceAutoUpdateInterval-Begin -->
 ## SourceAutoUpdateInterval
 
 <!-- SourceAutoUpdateInterval-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- SourceAutoUpdateInterval-Applicability-End -->
 
 <!-- SourceAutoUpdateInterval-OmaUri-Begin -->

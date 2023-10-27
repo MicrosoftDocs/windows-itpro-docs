@@ -2,22 +2,19 @@
 title: Configure Windows Update for Business by using CSPs and MDM
 description: Walk through demonstration of how to configure Windows Update for Business settings using Configuration Service Providers and MDM.
 ms.prod: windows-client
+ms.technology: itpro-updates
+ms.topic: conceptual
 author: mestew
-ms.localizationpriority: medium
 ms.author: mstewart
 manager: aaroncz
-ms.topic: article
-ms.technology: itpro-updates
-ms.date: 02/28/2023
+ms.localizationpriority: medium
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
+ms.date: 10/10/2023
 ---
 
 # Walkthrough: Use CSPs and MDMs to configure Windows Update for Business
-
-
-**Applies to**
-
-- Windows 10
-- Windows 11
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
 
@@ -42,7 +39,7 @@ You can control when updates are applied, for example by deferring when an updat
 
 Both feature and quality updates are automatically offered to devices that are connected to Windows Update using Windows Update for Business policies. However, you can choose whether you want the devices to additionally receive other Microsoft Updates or drivers that are applicable to that device.
 
-To enable Microsoft Updates, use [Update/AllwMUUpdateService](/windows/client-management/mdm/policy-csp-update#update-allowmuupdateservice).
+To enable Microsoft Updates, use [Update/AllowMUUpdateService](/windows/client-management/mdm/policy-csp-update#update-allowmuupdateservice).
 
 Drivers are automatically enabled because they're beneficial to device systems. We recommend that you allow the driver policy to allow drivers to be updated on devices (the default), but you can turn off this setting if you prefer to manage drivers manually. If you want to disable driver updates for some reason, use Update/[ExcludeWUDriversInQualityUpdate](/windows/client-management/mdm/policy-csp-update#update-excludewudriversinqualityupdate).
 
@@ -139,7 +136,8 @@ We recommend that you use set specific deadlines for feature and quality updates
 
 - [Update/ConfigureDeadlineForFeatureUpdates](/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforfeatureupdates) 
 - [Update/ConfigureDeadlineForQualityUpdates ](/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforqualityupdates)
-- [Update/ConfigureDeadlineGracePeriod](/windows/client-management/mdm/policy-csp-update#update-configuredeadlinegraceperiod) 
+- [Update/ConfigureDeadlineGracePeriod](/windows/client-management/mdm/policy-csp-update#update-configuredeadlinegraceperiod)
+- [Update/ConfigureDeadlineGracePeriodForFeatureUpdates](/windows/client-management/mdm/policy-csp-update#configuredeadlinegraceperiodforfeatureupdates)
 - [Update/ConfigureDeadlineNoAutoReboot](/windows/client-management/mdm/policy-csp-update#update-configuredeadlinenoautoreboot)
 
 These policies also offer an option to opt out of automatic restarts until a deadline is reached by presenting an "engaged restart experience" until the deadline has actually expired. At that point the device will automatically schedule a restart regardless of active hours.
@@ -176,9 +174,9 @@ There are additional settings that affect the notifications.
 
 We recommend that you use the default notifications as they aim to provide the best user experience while adjusting for the compliance policies that you have set. If you do have further needs that aren't met by the default notification settings, you can use the [Update/UpdateNotificationLevel](/windows/client-management/mdm/policy-csp-update#update-updatenotificationlevel) policy with these values:
 
-**0** (default) – Use the default Windows Update notifications<br/>
-**1** – Turn off all notifications, excluding restart warnings<br/>
-**2** – Turn off all notifications, including restart warnings
+**0** (default) - Use the default Windows Update notifications<br/>
+**1** - Turn off all notifications, excluding restart warnings<br/>
+**2** - Turn off all notifications, including restart warnings
 
 > [!NOTE]
 > Option **2** creates a poor experience for personal devices; it's only recommended for kiosk devices where automatic restarts have been disabled.

@@ -1,24 +1,25 @@
 ---
-title: Delivery Optimization client-service communication explained
-manager: aaroncz
+title: Delivery Optimization client-service communication
 description: Details of how Delivery Optimization communicates with the server when content is requested to download.
 ms.prod: windows-client
-author: cmknox
-ms.localizationpriority: medium
-ms.author: carmenf
-ms.topic: article
 ms.technology: itpro-updates
-ms.date: 12/31/2017
+ms.topic: conceptual
+author: cmknox
+ms.author: carmenf
+manager: aaroncz
+ms.reviewer: mstewart
 ms.collection: tier3
+ms.localizationpriority: medium
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
+- ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-delivery-optimization target=_blank>Delivery Optimization</a>	
+ms.date: 12/31/2017
 ---
 
 # Delivery Optimization client-service communication explained
 
-**Applies to**
-
-- Windows 10
-- Windows 11
-
+Delivery Optimization is a cloud-managed solution that uses peer-to-peer (P2P) and local caching to deliver software updates and apps to Windows clients across your network. This article describes details of how Delivery Optimization communicates with the server when content is requested to download.
 ## Download request workflow
 
 This workflow allows Delivery Optimization to securely and efficiently deliver requested content to the calling device. Delivery Optimization uses content metadata to verify the content and to determine all available locations to pull content from.
@@ -35,7 +36,7 @@ This workflow allows Delivery Optimization to securely and efficiently deliver r
 |Endpoint hostname | Port|Name|Description|Data sent from the computer to the endpoint
 |--------------------------------------------|--------|---------------|-----------------------|------------------------|
 | geover-prod.do.dsp.mp.microsoft.com <br> geo-prod.do.dsp.mp.microsoft.com <br> geo.prod.do.dsp.mp.microsoft.com <br> geover.prod.do.dsp.mp.microsoft.com | 443 | Geo | Service used to identify the location of the device in order to direct it to the nearest data center. | **Profile**: The device type (for example, PC or Xbox) <br> **doClientVersion**: The version of the DoSvc client <br> **groupID**: Group the device belongs to (set with DownloadMode = '2' (Group download mode) + groupID group policy / MDM policies) |
-| kv\*.prod.do.dsp.mp.microsoft.com | 443| KeyValue | Bootstrap service provides endpoints for all other services and device configs. | **countryCode**: The country the client is connected from <br> **doClientVersion**: The version of the DoSvc client <br> **Profile**: The device type (for example, PC or Xbox) <br> **eId**: Client grouping ID <br> **CacheHost**: Cache host ID |
+| kv\*.prod.do.dsp.mp.microsoft.com | 443| KeyValue | Bootstrap service provides endpoints for all other services and device configs. | **countryCode**: The country or region the client is connected from <br> **doClientVersion**: The version of the DoSvc client <br> **Profile**: The device type (for example, PC or Xbox) <br> **eId**: Client grouping ID <br> **CacheHost**: Cache host ID |
 | cp\*.prod.do.dsp.mp.microsoft.com <br> | 443 | Content Policy | Provides content specific policies and as content metadata URLs. | **Profile**: The device type (for example, PC or Xbox) <br> **ContentId**: The content identifier <br> **doClientVersion**: The version of the DoSvc client <br> **countryCode**: The country the client is connected from <br> **altCatalogID**: If ContentID isn't available, use the download URL instead <br> **eID**: Client grouping ID <br> **CacheHost**: Cache host ID |
 | disc\*.prod.do.dsp.mp.microsoft.com | 443 | Discovery | Directs clients to a particular instance of the peer matching service (Array), ensuing that clients are collocated by factors, such as content, groupID and external IP. | **Profile**: The device type (for example, PC or Xbox) <br> **ContentID**: The content identifier <br> **doClientVersion**: The version of the DoSvc client <br> **partitionID**: Client partitioning hint <br> **altCatalogID**: If ContentID isn't available, use the download URL instead <br> **eID**: Client grouping ID |
 | array\*.prod.do.dsp.mp.microsoft.com | 443 | Arrays | Provides the client with list of peers that have the same content and belong to the same peer group. | **Profile**: The device type (for example, PC or Xbox) <br> **ContentID**: The content identifier <br> **doClientVersion**: The version of the DoSvc client <br> **altCatalogID**: If ContentID isn't available, use the download URL instead <br> **PeerID**:  Identity of the device running DO client <br> **ReportedIp**: The internal / private IP Address <br> **IsBackground**: Is the download interactive or background <br> **Uploaded**: Total bytes uploaded to peers <br> **Downloaded**: Total bytes downloaded from peers <br> **DownloadedCdn**: Total bytes downloaded from CDN <br> **Left**: Bytes left to download <br> **Peers Wanted**: Total number of peers wanted <br> **Group ID**: Group the device belongs to (set via DownloadMode 2 + Group ID GP / MDM policies) <br> **Scope**: The Download mode <br> **UploadedBPS**: The upload speed in bytes per second <br> **DownloadBPS**: The download speed in Bytes per second <br> **eID**: Client grouping ID |

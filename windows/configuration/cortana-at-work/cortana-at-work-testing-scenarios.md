@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 ms.author: aaroncz
 ms.date: 06/28/2021
 ms.reviewer: 
-manager: dougeby
+manager: aaroncz
 ms.technology: itpro-configure
 ---
 
@@ -19,7 +19,7 @@ ms.technology: itpro-configure
 
 We've come up with a list of suggested testing scenarios that you can use to test Cortana in your organization. After you complete all the scenarios, you should be able to:
 
-- [Sign into Azure AD, enable the Cortana wake word, and try a voice query](cortana-at-work-scenario-1.md)
+- [Sign into Microsoft Entra ID, enable the Cortana wake word, and try a voice query](cortana-at-work-scenario-1.md)
 - [Perform a Bing search with Cortana](cortana-at-work-scenario-2.md)
 - [Set a reminder](cortana-at-work-scenario-3.md)
 - [Use Cortana to find free time on your calendar](cortana-at-work-scenario-4.md)

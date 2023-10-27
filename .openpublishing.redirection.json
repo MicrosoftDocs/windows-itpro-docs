@@ -2517,7 +2517,7 @@
     },
     {
       "source_path": "windows/deploy/windows-10-deployment-tools-reference.md",
-      "redirect_url": "/windows/deployment/windows-10-deployment-tools-reference",
+      "redirect_url": "/windows/deployment/windows-deployment-scenarios-and-tools",
       "redirect_document_id": false
     },
     {
@@ -10602,7 +10602,7 @@
     },
     {
       "source_path": "windows/manage/introduction-to-windows-10-servicing.md",
-      "redirect_url": "/windows/deployment/update/index",
+      "redirect_url": "/windows/deployment/",
       "redirect_document_id": false
     },
     {
@@ -11037,7 +11037,7 @@
     },
     {
       "source_path": "windows/manage/waas-update-windows-10.md",
-      "redirect_url": "/windows/deployment/update/index",
+      "redirect_url": "/windows/deployment/",
       "redirect_document_id": false
     },
     {
@@ -11147,7 +11147,7 @@
     },
     {
       "source_path": "windows/plan/act-technical-reference.md",
-      "redirect_url": "/windows/deployment/planning/act-technical-reference",
+      "redirect_url": "/windows/deployment/planning/compatibility-administrator-users-guide",
       "redirect_document_id": false
     },
     {
@@ -11377,7 +11377,7 @@
     },
     {
       "source_path": "windows/plan/index.md",
-      "redirect_url": "/windows/deployment/planning/index",
+      "redirect_url": "/windows/deployment/",
       "redirect_document_id": false
     },
     {
@@ -12617,7 +12617,7 @@
     },
     {
       "source_path": "windows/update/index.md",
-      "redirect_url": "/windows/deployment/update/index",
+      "redirect_url": "/windows/deployment/",
       "redirect_document_id": false
     },
     {
@@ -12723,6 +12723,16 @@
     {
       "source_path": "windows/update/waas-wufb-group-policy.md",
       "redirect_url": "/windows/deployment/update/waas-wufb-group-policy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/upgrade/windows-10-edition-upgrades.md",
+      "redirect_url": "/windows/deployment/upgrade/windows-edition-upgrades",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-10-media.md",
+      "redirect_url": "/licensing/",
       "redirect_document_id": false
     }
   ]

@@ -1,29 +1,28 @@
 ---
-title: Microsoft Connected Cache for Internet Service Providers (ISPs)
-description: Details on Microsoft Connected Cache (MCC) for Internet Service Providers (ISPs).
+title: Microsoft Connected Cache for ISPs
+description: This article contains details about the early preview for Microsoft Connected Cache (MCC) for Internet Service Providers (ISPs).
 ms.prod: windows-client
 ms.technology: itpro-updates
-ms.localizationpriority: medium
-author: amymzhou
-ms.author: amyzhou
-ms.reviewer: carmenf
-manager: aaroncz
 ms.topic: how-to
-ms.date: 05/20/2022
+ms.author: carmenf
+author: cmknox
+ms.reviewer: mstewart
+manager: aaroncz
+ms.localizationpriority: medium
 ms.collection: tier3
+ms.date: 03/07/2023
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
+- ✅ Microsoft Connected Cache for ISPs (early preview)
 ---
 
 # Microsoft Connected Cache for Internet Service Providers (early preview)
 
-*Applies to*
-
-- Windows 10
-- Windows 11
-
-## Overview
-
 > [!IMPORTANT]
 > This document is for Microsoft Connected Cache (early preview). Microsoft Connected Cache for ISPs is now in Public Preview - for our early preview customers, we highly encourage you to migrate your cache nodes to our public preview. See [instructions on how to migrate](#migrating-your-mcc-to-public-preview) below.
+
+## Overview
 
 Microsoft Connected Cache (MCC) preview is a software-only caching solution that delivers Microsoft content within operator networks. MCC can be deployed to as many physical servers or VMs as needed and is managed from a cloud portal. Microsoft cloud services handle routing of consumer devices to the cache server for content downloads.
 

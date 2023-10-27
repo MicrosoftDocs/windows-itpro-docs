@@ -6,7 +6,7 @@ ms.topic: how-to
 author: scottbreenmsft
 ms.author: scbree
 ms.reviewer: paoloma
-manager: jeffbu
+manager: aaroncz
 ms.collection:
   - tier3
   - education
@@ -211,13 +211,13 @@ A firmware embedded key is only required to upgrade using Subscription Activatio
 
 ### What is a multiple activation key and how does it differ from using KMS, Active Directory based activation or Subscription Activation?
 
-A multiple activation key activates either individual computers or a group of computers by connecting directly to servers over the internet or by telephone. KMS, Active Directory based activation and subscription activation are bulk activation methods that work based on network proximity or joining to Active Directory or Azure Active Directory. The table below shows which methods can be used for each scenario.
+A multiple activation key activates either individual computers or a group of computers by connecting directly to servers over the internet or by telephone. KMS, Active Directory based activation and subscription activation are bulk activation methods that work based on network proximity or joining to Active Directory or Microsoft Entra ID. The table below shows which methods can be used for each scenario.
 
 | Scenario | Ownership | MAK | KMS | AD based activation | Subscription Activation |
 |-|-|:-:|:-:|:-:|:-:|
 | **Workplace join (add work or school account)** | Personal (or student-owned) | X | | | |
-| **Azure AD Join** | Organization | X | X | | X |
-| **Hybrid Azure AD Join** | Organization | X | X | X | X |
+| **Microsoft Entra join** | Organization | X | X | | X |
+| **Microsoft Entra hybrid join** | Organization | X | X | X | X |
 
 ## Related links
 

@@ -4,7 +4,7 @@ description: Learn more about the DevicePreparation CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 10/03/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -44,7 +44,7 @@ The following list shows the DevicePreparation configuration service provider no
 <!-- Device-BootstrapperAgent-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-BootstrapperAgent-Applicability-End -->
 
 <!-- Device-BootstrapperAgent-OmaUri-Begin -->
@@ -83,7 +83,7 @@ The subnodes configure settings for the Bootstrapper Agent.
 <!-- Device-BootstrapperAgent-ClassID-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-BootstrapperAgent-ClassID-Applicability-End -->
 
 <!-- Device-BootstrapperAgent-ClassID-OmaUri-Begin -->
@@ -122,7 +122,7 @@ This node stores the class ID for the Bootstrapper Agent WinRT object.
 <!-- Device-BootstrapperAgent-ExecutionContext-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-BootstrapperAgent-ExecutionContext-Applicability-End -->
 
 <!-- Device-BootstrapperAgent-ExecutionContext-OmaUri-Begin -->
@@ -161,7 +161,7 @@ This node holds opaque data that will be passed to the Bootstrapper Agent as a p
 <!-- Device-BootstrapperAgent-InstallationStatusUri-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-BootstrapperAgent-InstallationStatusUri-Applicability-End -->
 
 <!-- Device-BootstrapperAgent-InstallationStatusUri-OmaUri-Begin -->
@@ -200,7 +200,7 @@ This node holds a URI that can be queried for the status of the Bootstrapper Age
 <!-- Device-MdmAgentInstalled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-MdmAgentInstalled-Applicability-End -->
 
 <!-- Device-MdmAgentInstalled-OmaUri-Begin -->
@@ -240,7 +240,7 @@ This node indicates whether the MDM agent was installed or not. When set to true
 <!-- Device-MDMProvider-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-MDMProvider-Applicability-End -->
 
 <!-- Device-MDMProvider-OmaUri-Begin -->
@@ -279,7 +279,7 @@ The subnode configures the settings for the MDMProvider.
 <!-- Device-MDMProvider-Progress-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-MDMProvider-Progress-Applicability-End -->
 
 <!-- Device-MDMProvider-Progress-OmaUri-Begin -->
@@ -318,7 +318,7 @@ Node for reporting progress status as opaque data.
 <!-- Device-PageEnabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-PageEnabled-Applicability-End -->
 
 <!-- Device-PageEnabled-OmaUri-Begin -->
@@ -367,7 +367,7 @@ This node determines whether to enable or show the Device Preparation page.
 <!-- Device-PageSettings-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-PageSettings-Applicability-End -->
 
 <!-- Device-PageSettings-OmaUri-Begin -->
@@ -406,7 +406,7 @@ This node configures specific settings for the Device Preparation page.
 <!-- Device-PageStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-PageStatus-Applicability-End -->
 
 <!-- Device-PageStatus-OmaUri-Begin -->
@@ -430,7 +430,7 @@ This node provides status of the Device Preparation page. Values are an enum: 0 
 | Property name | Property value |
 |:--|:--|
 | Format | `int` |
-| Access Type | Get |
+| Access Type | Get, Replace |
 <!-- Device-PageStatus-DFProperties-End -->
 
 <!-- Device-PageStatus-AllowedValues-Begin -->

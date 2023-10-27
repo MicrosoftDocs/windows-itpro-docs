@@ -1,7 +1,7 @@
 ---
 title: Configure your network
 description: This article details the network configurations needed for Windows Autopatch
-ms.date: 05/30/2022
+ms.date: 09/15/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: how-to
@@ -44,7 +44,7 @@ There are URLs from several Microsoft products that must be in the allowed list 
 | ----- | ----- |
 | Windows 10/11 Enterprise including Windows Update for Business | [Manage connection endpoints for Windows 10 Enterprise, version 1909](/windows/privacy/manage-windows-1909-endpoints)<p><p>[Manage connection endpoints for Windows 10 Enterprise, version 2004](/windows/privacy/manage-windows-2004-endpoints)</p><p>[Connection endpoints for Windows 10 Enterprise, version 20H2](/windows/privacy/manage-windows-20h2-endpoints)</p><p>[Manage connection endpoints for Windows 10 Enterprise, version 21H1](/windows/privacy/manage-windows-21h1-endpoints)</p><p>[Manage connection endpoints for Windows 10 Enterprise, version 21H2](/windows/privacy/manage-windows-21h2-endpoints)</p><p>[Manage connection endpoints for Windows 11 Enterprise](/windows/privacy/manage-windows-11-endpoints)</p>|
 | Microsoft 365 | [Microsoft 365 URL and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide&preserve-view=true) |
-| Azure Active Directory | [Hybrid identity required ports and protocols](/azure/active-directory/hybrid/reference-connect-ports)<p><p>[Active Directory and Active Directory Domain Services Port Requirements](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd772723(v=ws.10))</p> |
+| Microsoft Entra ID | [Hybrid identity required ports and protocols](/azure/active-directory/hybrid/reference-connect-ports)<p><p>[Active Directory and Active Directory Domain Services Port Requirements](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd772723(v=ws.10))</p> |
 | Microsoft Intune | [Intune network configuration requirements](/intune/network-bandwidth-use)<p><p>[Network endpoints for Microsoft Intune](/mem/intune/fundamentals/intune-endpoints)</p>
 | Microsoft Edge | [Allowlist for Microsoft Edge Endpoints](/deployedge/microsoft-edge-security-endpoints) |
 | Microsoft Teams | [Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges) |

@@ -4,8 +4,6 @@ items:
 - name: Concepts
   expanded: true
   items:
-  - name: Passwordless strategy
-    href: passwordless-strategy.md
   - name: Why a PIN is better than a password
     href: hello-why-pin-is-better-than-password.md
   - name: Windows Hello biometrics in the enterprise
@@ -43,7 +41,7 @@ items:
       - name: Configure and provision Windows Hello for Business
         href: hello-hybrid-key-trust-provision.md
         displayName: key trust
-      - name: Configure SSO for Azure AD joined devices
+      - name: Configure SSO for Microsoft Entra joined devices
         href: hello-hybrid-aadj-sso.md
         displayName: key trust
     - name: Certificate trust deployment
@@ -60,10 +58,10 @@ items:
       - name: Configure and provision Windows Hello for Business
         href: hello-hybrid-cert-whfb-provision.md
         displayName: certificate trust
-      - name: Configure SSO for Azure AD joined devices
+      - name: Configure SSO for Microsoft Entra joined devices
         href: hello-hybrid-aadj-sso.md
         displayName: certificate trust
-      - name: Deploy certificates to Azure AD joined devices
+      - name: Deploy certificates to Microsoft Entra joined devices
         href: hello-hybrid-aadj-sso-cert.md
         displayName: certificate trust
   - name: On-premises deployments
@@ -110,9 +108,11 @@ items:
     href: hello-and-password-changes.md
 - name: Windows Hello for Business features
   items:
-  - name: PIN Reset
+  - name: PIN reset
     href: hello-feature-pin-reset.md
-  - name: Dual Enrollment
+  - name: Windows Hello Enhanced Security Sign-in (ESS) 🔗
+    href: /windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security
+  - name: Dual enrollment
     href: hello-feature-dual-enrollment.md  
   - name: Dynamic Lock
     href: hello-feature-dynamic-lock.md

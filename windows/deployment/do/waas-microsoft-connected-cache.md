@@ -1,23 +1,22 @@
 ---
 title: Microsoft Connected Cache overview
-manager: aaroncz
 description: This article provides information about Microsoft Connected Cache (MCC), a software-only caching solution.
 ms.prod: windows-client
-author: cmknox
-ms.localizationpriority: medium
-ms.author: carmenf
-ms.topic: article
 ms.technology: itpro-updates
-ms.date: 05/09/2023
+ms.topic: overview
+author: cmknox
+ms.author: carmenf
+manager: aaroncz
+ms.reviewer: mstewart
 ms.collection: tier3
+ms.localizationpriority: medium
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
+ms.date: 06/02/2023
 ---
 
 # What is Microsoft Connected Cache?
-
-**Applies to**
-
-- Windows 10
-- Windows 11
 
 > [!IMPORTANT]
 > Microsoft Connected Cache is currently a preview feature. For more information, see [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/).

@@ -22,15 +22,15 @@ When a user encounters an error when creating the work PIN, advise the user to t
 1. Try to create the PIN again. Some errors are transient and resolve themselves.
 2. Sign out, sign in, and try to create the PIN again.
 3. Reboot the device and then try to create the PIN again.
-4. Unjoin the device from Azure Active Directory (Azure AD), rejoin, and then try to create the PIN again. To unjoin a device, go to **Settings > System > About > Disconnect from organization**.
+4. Unjoin the device from Microsoft Entra ID, rejoin, and then try to create the PIN again. To unjoin a device, go to **Settings > System > About > Disconnect from organization**.
 
 If the error occurs again, check the error code against the following table to see if there is another mitigation for that error. When no mitigation is listed in the table, contact Microsoft Support for assistance.
 
 | Hex        | Cause                                                              | Mitigation                                  |
 | :--------- | :----------------------------------------------------------------- | :------------------------------------------ |
-| 0x80090005 | NTE\_BAD\_DATA                                                     | Unjoin the device from Azure AD and rejoin. |
-| 0x8009000F | The container or key already exists.                               | Unjoin the device from Azure AD and rejoin. |
-| 0x80090011 | The container or key was not found.                                | Unjoin the device from Azure AD and rejoin. |
+| 0x80090005 | NTE\_BAD\_DATA                                                     | Unjoin the device from Microsoft Entra ID and rejoin. |
+| 0x8009000F | The container or key already exists.                               | Unjoin the device from Microsoft Entra ID and rejoin. |
+| 0x80090011 | The container or key was not found.                                | Unjoin the device from Microsoft Entra ID and rejoin. |
 | 0x80090029 | TPM is not set up.                                                 | Sign on with an administrator account. Select **Start**, type `tpm.msc`, and select **tpm.msc Microsoft Common Console Document**. In the **Actions** pane, select **Prepare the TPM**. |
 | 0x8009002A | NTE\_NO\_MEMORY                                                    | Close programs which are taking up memory and try again. |
 | 0x80090031 | NTE\_AUTHENTICATION\_IGNORED                                       | Reboot the device. If the error occurs again after rebooting, [reset the TPM](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd851452(v=ws.11)) or run [Clear-TPM](/powershell/module/trustedplatformmodule/clear-tpm). |
@@ -50,11 +50,11 @@ If the error occurs again, check the error code against the following table to s
 | 0x801C03EA | Server failed to authorize user or device.                         | Check if the token is valid and user has permission to register Windows Hello for Business keys. |
 | 0x801C03EB | Server response http status is not valid                           | Sign out and then sign in again. |
 | 0x801C03EC | Unhandled exception from server.                                   | sign out and then sign in again. |
-| 0x801C03ED | Multi-factor authentication is required for a 'ProvisionKey' operation, but was not performed. <br><br> -or- <br><br> Token was not found in the Authorization header. <br><br> -or- <br><br> Failed to read one or more objects. <br><br> -or- <br><br> The request sent to the server was invalid. <br><br> -or- <br><br> User does not have permissions to join to Azure AD. | Sign out and then sign in again. If that doesn't resolve the issue, unjoin the device from Azure  AD and rejoin. <br> Allow user(s) to join to Azure AD under Azure AD Device settings.
+| 0x801C03ED | Multi-factor authentication is required for a 'ProvisionKey' operation, but was not performed. <br><br> -or- <br><br> Token was not found in the Authorization header. <br><br> -or- <br><br> Failed to read one or more objects. <br><br> -or- <br><br> The request sent to the server was invalid. <br><br> -or- <br><br> User does not have permissions to join to Microsoft Entra ID. | Sign out and then sign in again. If that doesn't resolve the issue, unjoin the device from Azure  AD and rejoin. <br> Allow user(s) to join to Microsoft Entra ID under Microsoft Entra Device settings.
 | 0x801C03EE | Attestation failed.                                                | Sign out and then sign in again. |
 | 0x801C03EF | The AIK certificate is no longer valid.                            | Sign out and then sign in again. |
-| 0x801C03F2 | Windows Hello key registration failed.                             | ERROR\_BAD\_DIRECTORY\_REQUEST. Another object with the same value for property proxyAddresses already exists. To resolve the issue, refer to [Duplicate Attributes Prevent Dirsync](/office365/troubleshoot/administration/duplicate-attributes-prevent-dirsync). Also, if no sync conflict exists, please verify that the "Mail/Email address" in Azure Active Directory and the Primary SMTP address are the same in the proxy address.
-| 0x801C044D | Authorization token does not contain device ID.                    | Unjoin the device from Azure AD and rejoin. |
+| 0x801C03F2 | Windows Hello key registration failed.                             | ERROR\_BAD\_DIRECTORY\_REQUEST. Another object with the same value for property proxyAddresses already exists. To resolve the issue, refer to [Duplicate Attributes Prevent Dirsync](/office365/troubleshoot/administration/duplicate-attributes-prevent-dirsync). Also, if no sync conflict exists, please verify that the "Mail/Email address" in Microsoft Entra ID and the Primary SMTP address are the same in the proxy address.
+| 0x801C044D | Authorization token does not contain device ID.                    | Unjoin the device from Microsoft Entra ID and rejoin. |
 |            | Unable to obtain user token.                                       | Sign out and then sign in again. Check network and credentials. |
 | 0x801C044E | Failed to receive user credentials input.                          | Sign out and then sign in again. |
 | 0x801C0451 | User token switch account. | Delete the Web Account Manager token broker files located in `%LOCALAPPDATA%\Packages\Microsoft.AAD.BrokerPlugin_cw5n1h2txyewy\AC\TokenBroker\Accounts\*.*\` and reboot.| 
@@ -86,6 +86,5 @@ For errors listed in this table, contact Microsoft Support for assistance.
 | 0x801C03F0  | ​There is no key registered for the user. |
 | 0x801C03F1  | ​There is no UPN in the token. |
 | ​0x801C044C  | There is no core window for the current thread. |
-| 0x801c004D  | DSREG_NO_DEFAULT_ACCOUNT: NGC provisioning is unable to find the default WAM account to use to request Azure Active Directory token for provisioning. Unable to enroll a device to use a PIN for login. |
+| 0x801c004D  | DSREG_NO_DEFAULT_ACCOUNT: NGC provisioning is unable to find the default WAM account to use to request Microsoft Entra token for provisioning. Unable to enroll a device to use a PIN for login. |
 | 0xCAA30193  | HTTP 403 Request Forbidden: it means request left the device, however either Server, proxy or firewall generated this response. |
-

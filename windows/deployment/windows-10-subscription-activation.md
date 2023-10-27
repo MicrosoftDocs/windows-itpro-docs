@@ -48,7 +48,7 @@ Windows Enterprise E3 and E5 are available as online services via subscription. 
 - Devices with a current Windows Pro edition license can be seamlessly upgraded to Windows Enterprise.
 - Product key-based Windows Enterprise software licenses can be transitioned to Windows Enterprise subscriptions.
 
-Organizations that have an enterprise agreement can also benefit from the service, using traditional Active Directory-joined devices. In this scenario, the Active Directory user that signs in on their device must be synchronized with Azure Active Directory (Azure AD) using [Azure AD Connect Sync](/azure/active-directory/hybrid/how-to-connect-sync-whatis).
+Organizations that have an enterprise agreement can also benefit from the service, using traditional Active Directory-joined devices. In this scenario, the Active Directory user that signs in on their device must be synchronized with Microsoft Entra ID using [Microsoft Entra Connect Sync](/azure/active-directory/hybrid/how-to-connect-sync-whatis).
 
 > [!NOTE]
 > Subscription activation is available for qualifying devices running Windows 10 or Windows 11. You can't use subscription activation to upgrade from Windows 10 to Windows 11.
@@ -59,7 +59,7 @@ Subscription activation for Education works the same as the Enterprise edition, 
 
 ## Inherited activation
 
-Inherited activation allows Windows virtual machines to inherit activation state from their Windows client host. When a user with a Windows E3/E5 or A3/A5 license assigned creates a new Windows 10 or Windows 11 virtual machine (VM) using a Windows 10 or Windows 11 host, the VM inherits the activation state from a host machine. This behavior is independent of whether the user signs on with a local account or uses an Azure AD account on a VM.
+Inherited activation allows Windows virtual machines to inherit activation state from their Windows client host. When a user with a Windows E3/E5 or A3/A5 license assigned creates a new Windows 10 or Windows 11 virtual machine (VM) using a Windows 10 or Windows 11 host, the VM inherits the activation state from a host machine. This behavior is independent of whether the user signs on with a local account or uses a Microsoft Entra account on a VM.
 
 To support inherited activation, both the host computer and the VM must be running a supported version of Windows 10 or Windows 11. The hypervisor platform must also be Windows Hyper-V.
 
@@ -80,7 +80,7 @@ The following list illustrates how deploying Windows client has evolved with eac
 
 - **Windows 10, version 1703** made this "step-up" from Windows 10 Pro to Windows 10 Enterprise automatic for devices that subscribed to Windows 10 Enterprise E3 or E5 via the CSP program.
 
-- **Windows 10, version 1709** added support for Windows 10 subscription activation, similar to the CSP support but for large enterprises. This feature enabled the use of Azure AD for assigning licenses to users. When users sign in to a device that's joined to Active Directory or Azure AD, it automatically steps up from Windows 10 Pro to Windows 10 Enterprise.
+- **Windows 10, version 1709** added support for Windows 10 subscription activation, similar to the CSP support but for large enterprises. This feature enabled the use of Microsoft Entra ID for assigning licenses to users. When users sign in to a device that's joined to Active Directory or Microsoft Entra ID, it automatically steps up from Windows 10 Pro to Windows 10 Enterprise.
 
 - **Windows 10, version 1803** updated Windows 10 subscription activation to enable pulling activation keys directly from firmware for devices that support firmware-embedded keys. It was no longer necessary to run a script to activate Windows 10 Pro before activating Enterprise. For virtual machines and hosts running Windows 10, version 1803, [inherited activation](#inherited-activation) was also enabled.
 
@@ -96,7 +96,7 @@ The following list illustrates how deploying Windows client has evolved with eac
 ### Windows Enterprise requirements
 
 > [!NOTE]
-> The following requirements don't apply to general Windows client activation on Azure. Azure activation requires a connection to Azure KMS only. It supports workgroup, hybrid, and Azure AD-joined VMs. In most scenarios, activation of Azure VMs happens automatically. For more information, see [Understanding Azure KMS endpoints for Windows product activation of Azure virtual machines](/troubleshoot/azure/virtual-machines/troubleshoot-activation-problems).
+> The following requirements don't apply to general Windows client activation on Azure. Azure activation requires a connection to Azure KMS only. It supports workgroup, hybrid, and Microsoft Entra joined VMs. In most scenarios, activation of Azure VMs happens automatically. For more information, see [Understanding Azure KMS endpoints for Windows product activation of Azure virtual machines](/troubleshoot/azure/virtual-machines/troubleshoot-activation-problems).
 
 > [!IMPORTANT]
 > As of October 1, 2022, subscription activation is available for *commercial* and *GCC* tenants. It's currently not available on GCC High or DoD tenants.<!-- 6783128 --> For more information, see [Enable subscription activation with an existing EA](deploy-enterprise-licenses.md#enable-subscription-activation-with-an-existing-ea).
@@ -104,8 +104,8 @@ The following list illustrates how deploying Windows client has evolved with eac
 For Microsoft customers with Enterprise Agreements (EA) or Microsoft Products & Services Agreements (MPSA), you must have the following requirements:
 
 - A supported version of Windows Pro or Enterprise edition installed on the devices to be upgraded.
-- Azure AD available for identity management.
-- Devices must be Azure AD-joined or hybrid Azure AD joined. Workgroup-joined or Azure AD registered devices aren't supported.
+- Microsoft Entra available for identity management.
+- Devices must be Microsoft Entra joined or Microsoft Entra hybrid joined. Workgroup-joined or Microsoft Entra registered devices aren't supported.
 
 For Microsoft customers that don't have EA or MPSA, you can get Windows Enterprise E3/E5 or A3/A5 licenses through a cloud solution provider (CSP). Identity management and device requirements are the same when you use CSP to manage licenses. For more information about getting Windows Enterprise E3 through your CSP, see [Windows Enterprise E3 in CSP](windows-10-enterprise-e3-overview.md).
 
@@ -114,7 +114,7 @@ For Microsoft customers that don't have EA or MPSA, you can get Windows Enterpri
 - A supported version of Windows Pro Education installed on the devices to be upgraded.
 - A device with a Windows Pro Education digital license. You can confirm this information in **Settings > Update & Security > Activation**.
 - The Education tenant must have an active subscription to Microsoft 365 with a Windows Enterprise license, or a Windows Enterprise or Education subscription.
-- Devices must be Azure AD-joined or hybrid Azure AD joined. Workgroup-joined or Azure AD registered devices aren't supported.
+- Devices must be Microsoft Entra joined or Microsoft Entra hybrid joined. Workgroup-joined or Microsoft Entra registered devices aren't supported.
 
 > [!IMPORTANT]
 > If Windows 10 Pro is converted to Windows 10 Pro Education by [using benefits available in Store for Education](/education/windows/change-to-pro-education#change-using-microsoft-store-for-education), then the feature will not work. You will need to re-image the device using a Windows 10 Pro Education edition.
@@ -130,7 +130,7 @@ To compare Windows 10 editions and review pricing, see the following sites:
 
 You can benefit by moving to Windows as an online service in the following ways:
 
-- Licenses for Windows Enterprise and Education are checked based on Azure AD credentials. You have a systematic way to assign licenses to end users and groups in your organization.
+- Licenses for Windows Enterprise and Education are checked based on Microsoft Entra credentials. You have a systematic way to assign licenses to end users and groups in your organization.
 
 - User sign-in triggers a silent edition upgrade, with no reboot required.
 
@@ -145,13 +145,13 @@ You can benefit by moving to Windows as an online service in the following ways:
 > [!NOTE]
 > The following examples use Windows 10 Pro to Enterprise edition. The examples also apply to Windows 11, and Education editions.
 
-The device is Azure AD-joined from **Settings** > **Accounts** > **Access work or school**.
+The device is Microsoft Entra joined from **Settings** > **Accounts** > **Access work or school**.
 
 You assign Windows 10 Enterprise to a user:
 
 ![A screenshot of assigning a Windows 10 Enterprise license in the Microsoft 365 admin center.](images/ent.png)
 
-When a licensed user signs in to a device that meets requirements using their Azure AD credentials, Windows steps up from Pro edition to Enterprise. Then all of the Enterprise features are unlocked. When a user's subscription expires or is transferred to another user, the device reverts seamlessly to Windows 10 Pro edition, once the current subscription validity expires.
+When a licensed user signs in to a device that meets requirements using their Microsoft Entra credentials, Windows steps up from Pro edition to Enterprise. Then all of the Enterprise features are unlocked. When a user's subscription expires or is transferred to another user, the device reverts seamlessly to Windows 10 Pro edition, once the current subscription validity expires.
 
 > [!NOTE]
 > Devices running a supported version of Windows 10 Pro Education can get Windows 10 Enterprise or Education general availability channel on up to five devices for each user covered by the license. This benefit doesn't include the long term servicing channel.
@@ -176,7 +176,7 @@ All of your Windows 10 Pro devices will step-up to Windows 10 Enterprise. When a
 
 #### Scenario #2
 
-You're using Azure AD-joined devices or Active Directory-joined devices running a supported version of Windows 10. You configured Azure AD synchronization. You follow the steps in [Deploy Windows Enterprise licenses](deploy-enterprise-licenses.md) to get a $0 SKU, and get a new Windows 10 Enterprise E3 or E5 license in Azure AD. You then assign that license to all of your Azure AD users, which can be Active Directory-synced accounts. When that user signs in, the device will automatically change from Windows 10 Pro to Windows 10 Enterprise.
+You're using Microsoft Entra joined devices or Active Directory-joined devices running a supported version of Windows 10. You configured Microsoft Entra synchronization. You follow the steps in [Deploy Windows Enterprise licenses](deploy-enterprise-licenses.md) to get a $0 SKU, and get a new Windows 10 Enterprise E3 or E5 license in Microsoft Entra ID. You then assign that license to all of your Microsoft Entra users, which can be Active Directory-synced accounts. When that user signs in, the device will automatically change from Windows 10 Pro to Windows 10 Enterprise.
 
 #### Earlier versions of Windows
 
@@ -196,7 +196,7 @@ The following policies apply to acquisition and renewal of licenses on devices:
 
 Licenses can be reallocated from one user to another user, allowing you to optimize your licensing investment against changing needs.
 
-When you have the required Azure AD subscription, group-based licensing is the preferred method to assign Enterprise E3 and E5 licenses to users. For more information, see [Group-based licensing basics in Azure AD](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).
+When you have the required Microsoft Entra subscription, group-based licensing is the preferred method to assign Enterprise E3 and E5 licenses to users. For more information, see [Group-based licensing basics in Microsoft Entra ID](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).
 
 ### Existing Enterprise deployments
 
@@ -213,13 +213,15 @@ If the computer has never been activated with a Pro key, use the following scrip
 $(Get-WmiObject SoftwareLicensingService).OA3xOriginalProductKey | foreach{ if ( $null -ne $_ ) { Write-Host "Installing"$_;changepk.exe /Productkey $_ } else { Write-Host "No key present" } }
 ```
 
-### Obtaining an Azure AD license
+<a name='obtaining-an-azure-ad-license'></a>
+
+### Obtaining a Microsoft Entra ID license
 
 If your organization has an Enterprise Agreement (EA) or Software Assurance (SA):
 
-- Organizations with a traditional EA must order a $0 SKU, process e-mails sent to the license administrator for the company, and assign licenses using Azure AD. Ideally, you assign the licenses to groups using the Azure AD Premium feature for group assignment. For more information, see [Enable subscription activation with an existing EA](./deploy-enterprise-licenses.md#enable-subscription-activation-with-an-existing-ea).
+- Organizations with a traditional EA must order a $0 SKU, process e-mails sent to the license administrator for the company, and assign licenses using Microsoft Entra ID. Ideally, you assign the licenses to groups using the Microsoft Entra ID P1 or P2 feature for group assignment. For more information, see [Enable subscription activation with an existing EA](./deploy-enterprise-licenses.md#enable-subscription-activation-with-an-existing-ea).
 
-- The license administrator can assign seats to Azure AD users with the same process that's used for Microsoft 365 Apps.
+- The license administrator can assign seats to Microsoft Entra users with the same process that's used for Microsoft 365 Apps.
 
 - New EA/SA Windows Enterprise customers can acquire both an SA subscription and an associated $0 cloud subscription.
 
@@ -239,11 +241,11 @@ For more information, see [Deploy Windows Enterprise licenses](deploy-enterprise
 
 Subscriptions to Windows Enterprise are also available for virtualized clients. Enterprise E3 and E5 are available for Virtual Desktop Access (VDA) in Microsoft Azure or in another [qualified multitenant hoster (QMTH)](https://download.microsoft.com/download/3/D/4/3D445779-2870-4E3D-AFCB-D35D2E1BC095/QMTH%20Authorized%20Partner%20List.pdf).
 
-Virtual machines (VMs) must be configured to enable Windows 10 Enterprise subscriptions for VDA. Active Directory-joined and Azure Active Directory-joined clients are supported. See [Enable VDA for Subscription Activation](vda-subscription-activation.md).
+Virtual machines (VMs) must be configured to enable Windows 10 Enterprise subscriptions for VDA. Active Directory-joined and Microsoft Entra joined clients are supported. See [Enable VDA for Subscription Activation](vda-subscription-activation.md).
 
 ## Related sites
 
-Connect domain-joined devices to Azure AD for Windows experiences. For more information, see [Plan your hybrid Azure Active Directory join implementation](/azure/active-directory/devices/hybrid-azuread-join-plan)
+Connect domain-joined devices to Microsoft Entra ID for Windows experiences. For more information, see [Plan your Microsoft Entra hybrid join implementation](/azure/active-directory/devices/hybrid-azuread-join-plan)
 
 [Compare Windows editions](https://www.microsoft.com/windows/business/compare-windows-11)
 

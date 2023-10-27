@@ -1,7 +1,7 @@
 ---
 title: Windows Security
 description: Windows Security brings together common Windows security features into one place.
-ms.date: 07/31/2023
+ms.date: 08/11/2023
 ms.topic: article
 ms.collection:
   - highpri
@@ -82,13 +82,13 @@ For more information about each section, options for configuring the sections, a
 >
 > This will significantly lower the protection of your device and could lead to malware infection.
 
-**Windows Security** operates as a separate app or process from each of the individual features, and will display notifications through the Action Center.
+**Windows Security** operates as a separate app or process from each of the individual features, and displays notifications through the Action Center.
 
 It acts as a collector or single place to see the status and perform some configuration for each of the features.
 
-If you disable any of the individual features, it will prevent that feature from reporting its status in **Windows Security**. For example, if you disable a feature through group policy or other management tools, such as Microsoft Configuration Manager, **Windows Security** itself will still run and show status for the other security features.
+If you disable any of the individual features, it prevents that feature from reporting its status in **Windows Security**. For example, if you disable a feature through group policy or other management tools, such as Microsoft Configuration Manager, **Windows Security** itself still runs and shows status for the other security features.
 
 > [!IMPORTANT]
 > If you individually disable any of the services, it won't disable the other services or **Windows Security** itself.
 
-For example, [using a third-party antivirus will disable Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility). However, **Windows Security** will still run, show its icon in the taskbar, and display information about the other features, such as Windows Defender SmartScreen and Windows Defender Firewall.
+For example, [using a third-party antivirus disables Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility). However, **Windows Security** still runs, shows its icon in the taskbar, and displays information about the other features, such as Windows Defender SmartScreen and Windows Defender Firewall.

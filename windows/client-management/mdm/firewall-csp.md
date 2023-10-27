@@ -4,7 +4,7 @@ description: Learn more about the Firewall CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 08/02/2023
+ms.date: 10/03/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -180,7 +180,7 @@ The following list shows the Firewall configuration service provider nodes:
 <!-- Device-MdmStore-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-Applicability-End -->
 
 <!-- Device-MdmStore-OmaUri-Begin -->
@@ -219,7 +219,7 @@ Interior node.
 <!-- Device-MdmStore-DomainProfile-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-DomainProfile-Applicability-End -->
 
 <!-- Device-MdmStore-DomainProfile-OmaUri-Begin -->
@@ -257,7 +257,7 @@ Interior node.
 <!-- Device-MdmStore-DomainProfile-AllowLocalIpsecPolicyMerge-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-DomainProfile-AllowLocalIpsecPolicyMerge-Applicability-End -->
 
 <!-- Device-MdmStore-DomainProfile-AllowLocalIpsecPolicyMerge-OmaUri-Begin -->
@@ -307,7 +307,7 @@ This value is an on/off switch. If this value is false, connection security rule
 <!-- Device-MdmStore-DomainProfile-AllowLocalPolicyMerge-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-DomainProfile-AllowLocalPolicyMerge-Applicability-End -->
 
 <!-- Device-MdmStore-DomainProfile-AllowLocalPolicyMerge-OmaUri-Begin -->
@@ -357,7 +357,7 @@ This value is used as an on/off switch. If this value is false, firewall rules f
 <!-- Device-MdmStore-DomainProfile-AuthAppsAllowUserPrefMerge-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-DomainProfile-AuthAppsAllowUserPrefMerge-Applicability-End -->
 
 <!-- Device-MdmStore-DomainProfile-AuthAppsAllowUserPrefMerge-OmaUri-Begin -->
@@ -407,7 +407,7 @@ This value is used as an on/off switch. If this value is false, authorized appli
 <!-- Device-MdmStore-DomainProfile-DefaultInboundAction-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-DomainProfile-DefaultInboundAction-Applicability-End -->
 
 <!-- Device-MdmStore-DomainProfile-DefaultInboundAction-OmaUri-Begin -->
@@ -457,7 +457,7 @@ This value is the action that the firewall does by default (and evaluates at the
 <!-- Device-MdmStore-DomainProfile-DefaultOutboundAction-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-DomainProfile-DefaultOutboundAction-Applicability-End -->
 
 <!-- Device-MdmStore-DomainProfile-DefaultOutboundAction-OmaUri-Begin -->
@@ -530,7 +530,7 @@ This value is the action that the firewall does by default (and evaluates at the
 <!-- Device-MdmStore-DomainProfile-DisableInboundNotifications-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-DomainProfile-DisableInboundNotifications-Applicability-End -->
 
 <!-- Device-MdmStore-DomainProfile-DisableInboundNotifications-OmaUri-Begin -->
@@ -580,7 +580,7 @@ This value is an on/off switch. If this value is false, the firewall MAY display
 <!-- Device-MdmStore-DomainProfile-DisableStealthMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-DomainProfile-DisableStealthMode-Applicability-End -->
 
 <!-- Device-MdmStore-DomainProfile-DisableStealthMode-OmaUri-Begin -->
@@ -630,7 +630,7 @@ This value is an on/off switch. When this option is false, the server operates i
 <!-- Device-MdmStore-DomainProfile-DisableStealthModeIpsecSecuredPacketExemption-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-DomainProfile-DisableStealthModeIpsecSecuredPacketExemption-Applicability-End -->
 
 <!-- Device-MdmStore-DomainProfile-DisableStealthModeIpsecSecuredPacketExemption-OmaUri-Begin -->
@@ -680,7 +680,7 @@ This value is an on/off switch. This option is ignored if DisableStealthMode is 
 <!-- Device-MdmStore-DomainProfile-DisableUnicastResponsesToMulticastBroadcast-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-DomainProfile-DisableUnicastResponsesToMulticastBroadcast-Applicability-End -->
 
 <!-- Device-MdmStore-DomainProfile-DisableUnicastResponsesToMulticastBroadcast-OmaUri-Begin -->
@@ -730,7 +730,7 @@ This value is used as an on/off switch. If it's true, unicast responses to multi
 <!-- Device-MdmStore-DomainProfile-EnableFirewall-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-DomainProfile-EnableFirewall-Applicability-End -->
 
 <!-- Device-MdmStore-DomainProfile-EnableFirewall-OmaUri-Begin -->
@@ -779,7 +779,7 @@ This value is an on/off switch for the firewall and advanced security enforcemen
 <!-- Device-MdmStore-DomainProfile-EnableLogDroppedPackets-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-DomainProfile-EnableLogDroppedPackets-Applicability-End -->
 
 <!-- Device-MdmStore-DomainProfile-EnableLogDroppedPackets-OmaUri-Begin -->
@@ -829,7 +829,7 @@ This value is used as an on/off switch. If this value is on, the firewall logs a
 <!-- Device-MdmStore-DomainProfile-EnableLogIgnoredRules-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-DomainProfile-EnableLogIgnoredRules-Applicability-End -->
 
 <!-- Device-MdmStore-DomainProfile-EnableLogIgnoredRules-OmaUri-Begin -->
@@ -879,7 +879,7 @@ This value is used as an on/off switch. The server MAY use this value in an impl
 <!-- Device-MdmStore-DomainProfile-EnableLogSuccessConnections-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-DomainProfile-EnableLogSuccessConnections-Applicability-End -->
 
 <!-- Device-MdmStore-DomainProfile-EnableLogSuccessConnections-OmaUri-Begin -->
@@ -929,7 +929,7 @@ This value is used as an on/off switch. If this value is on, the firewall logs a
 <!-- Device-MdmStore-DomainProfile-GlobalPortsAllowUserPrefMerge-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-DomainProfile-GlobalPortsAllowUserPrefMerge-Applicability-End -->
 
 <!-- Device-MdmStore-DomainProfile-GlobalPortsAllowUserPrefMerge-OmaUri-Begin -->
@@ -979,7 +979,7 @@ This value is used as an on/off switch. If this value is false, global port fire
 <!-- Device-MdmStore-DomainProfile-LogFilePath-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-DomainProfile-LogFilePath-Applicability-End -->
 
 <!-- Device-MdmStore-DomainProfile-LogFilePath-OmaUri-Begin -->
@@ -1020,7 +1020,7 @@ This value is a string that represents a file path to the log where the firewall
 <!-- Device-MdmStore-DomainProfile-LogMaxFileSize-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-DomainProfile-LogMaxFileSize-Applicability-End -->
 
 <!-- Device-MdmStore-DomainProfile-LogMaxFileSize-OmaUri-Begin -->
@@ -1062,7 +1062,7 @@ This value specifies the size, in kilobytes, of the log file where dropped packe
 <!-- Device-MdmStore-DomainProfile-Shielded-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-DomainProfile-Shielded-Applicability-End -->
 
 <!-- Device-MdmStore-DomainProfile-Shielded-OmaUri-Begin -->
@@ -1112,7 +1112,7 @@ This value is used as an on/off switch. If this value is on and EnableFirewall i
 <!-- Device-MdmStore-DynamicKeywords-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2009 [10.0.19042.1706] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1706] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1706] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 [10.0.19042.1706] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1706] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1706] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-MdmStore-DynamicKeywords-Applicability-End -->
 
 <!-- Device-MdmStore-DynamicKeywords-OmaUri-Begin -->
@@ -1150,7 +1150,7 @@ This value is used as an on/off switch. If this value is on and EnableFirewall i
 <!-- Device-MdmStore-DynamicKeywords-Addresses-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2009 [10.0.19042.1706] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1706] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1706] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 [10.0.19042.1706] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1706] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1706] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-MdmStore-DynamicKeywords-Addresses-Applicability-End -->
 
 <!-- Device-MdmStore-DynamicKeywords-Addresses-OmaUri-Begin -->
@@ -1189,7 +1189,7 @@ A list of dynamic keyword addresses for use within firewall rules. Dynamic keywo
 <!-- Device-MdmStore-DynamicKeywords-Addresses-{Id}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2009 [10.0.19042.1706] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1706] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1706] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 [10.0.19042.1706] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1706] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1706] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-MdmStore-DynamicKeywords-Addresses-{Id}-Applicability-End -->
 
 <!-- Device-MdmStore-DynamicKeywords-Addresses-{Id}-OmaUri-Begin -->
@@ -1231,7 +1231,7 @@ A unique GUID string identifier for this dynamic keyword address.
 <!-- Device-MdmStore-DynamicKeywords-Addresses-{Id}-Addresses-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2009 [10.0.19042.1706] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1706] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1706] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 [10.0.19042.1706] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1706] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1706] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-MdmStore-DynamicKeywords-Addresses-{Id}-Addresses-Applicability-End -->
 
 <!-- Device-MdmStore-DynamicKeywords-Addresses-{Id}-Addresses-OmaUri-Begin -->
@@ -1282,7 +1282,7 @@ An IPv6 address range in the format of "start address - end address" with no spa
 <!-- Device-MdmStore-DynamicKeywords-Addresses-{Id}-AutoResolve-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2009 [10.0.19042.1706] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1706] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1706] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 [10.0.19042.1706] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1706] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1706] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-MdmStore-DynamicKeywords-Addresses-{Id}-AutoResolve-Applicability-End -->
 
 <!-- Device-MdmStore-DynamicKeywords-Addresses-{Id}-AutoResolve-OmaUri-Begin -->
@@ -1331,7 +1331,7 @@ If this flag is set to TRUE, then the 'keyword' field of this object is expected
 <!-- Device-MdmStore-DynamicKeywords-Addresses-{Id}-Keyword-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2009 [10.0.19042.1706] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1706] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1706] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 [10.0.19042.1706] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1706] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1706] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-MdmStore-DynamicKeywords-Addresses-{Id}-Keyword-Applicability-End -->
 
 <!-- Device-MdmStore-DynamicKeywords-Addresses-{Id}-Keyword-OmaUri-Begin -->
@@ -1370,7 +1370,7 @@ A String representing keyword. If the AutoResolve value is true, this should be 
 <!-- Device-MdmStore-FirewallRules-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-FirewallRules-Applicability-End -->
 
 <!-- Device-MdmStore-FirewallRules-OmaUri-Begin -->
@@ -1409,7 +1409,7 @@ A list of rules controlling traffic through the Windows Firewall. Each Rule ID i
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Applicability-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-OmaUri-Begin -->
@@ -1451,7 +1451,7 @@ Unique alpha numeric identifier for the rule. The rule name mustn't include a fo
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Action-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Action-Applicability-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Action-OmaUri-Begin -->
@@ -1490,7 +1490,7 @@ Specifies the action for the rule.
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Action-Type-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Action-Type-Applicability-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Action-Type-OmaUri-Begin -->
@@ -1542,7 +1542,7 @@ Specifies the action the rule enforces:
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-App-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-App-Applicability-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-App-OmaUri-Begin -->
@@ -1591,7 +1591,7 @@ ServiceName.
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-App-FilePath-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-App-FilePath-Applicability-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-App-FilePath-OmaUri-Begin -->
@@ -1630,7 +1630,7 @@ FilePath - This App/Id value represents the full file path of the app. For examp
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-App-Fqbn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-App-Fqbn-Applicability-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-App-Fqbn-OmaUri-Begin -->
@@ -1669,7 +1669,7 @@ Fully Qualified Binary Name.
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-App-PackageFamilyName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-App-PackageFamilyName-Applicability-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-App-PackageFamilyName-OmaUri-Begin -->
@@ -1708,7 +1708,7 @@ PackageFamilyName - This App/Id value represents the PackageFamilyName of the ap
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-App-ServiceName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-App-ServiceName-Applicability-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-App-ServiceName-OmaUri-Begin -->
@@ -1747,7 +1747,7 @@ This is a service name, and is used in cases when a service, not an application,
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Description-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Description-Applicability-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Description-OmaUri-Begin -->
@@ -1786,7 +1786,7 @@ Specifies the description of the rule.
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Direction-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Direction-Applicability-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Direction-OmaUri-Begin -->
@@ -1841,7 +1841,7 @@ If not specified the default is OUT.
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-EdgeTraversal-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-EdgeTraversal-Applicability-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-EdgeTraversal-OmaUri-Begin -->
@@ -1893,7 +1893,7 @@ New rules have the EdgeTraversal property disabled by default.
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Enabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Enabled-Applicability-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Enabled-OmaUri-Begin -->
@@ -1943,7 +1943,7 @@ If not specified - a new rule is disabled by default.
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-IcmpTypesAndCodes-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ [10.0.20348] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348] and later |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-IcmpTypesAndCodes-Applicability-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-IcmpTypesAndCodes-OmaUri-Begin -->
@@ -1990,7 +1990,7 @@ If not specified, the default is All.
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-InterfaceTypes-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-InterfaceTypes-Applicability-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-InterfaceTypes-OmaUri-Begin -->
@@ -2044,7 +2044,7 @@ If more than one interface type is specified, the strings must be separated by a
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-LocalAddressRanges-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-LocalAddressRanges-Applicability-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-LocalAddressRanges-OmaUri-Begin -->
@@ -2096,7 +2096,7 @@ An IPv6 address range in the format of "start address - end address" with no spa
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-LocalPortRanges-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-LocalPortRanges-Applicability-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-LocalPortRanges-OmaUri-Begin -->
@@ -2138,7 +2138,7 @@ When setting this field in a firewall rule, the protocol field must also be set,
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-LocalUserAuthorizedList-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-LocalUserAuthorizedList-Applicability-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-LocalUserAuthorizedList-OmaUri-Begin -->
@@ -2180,7 +2180,7 @@ This is a string in Security Descriptor Definition Language (SDDL) format\.
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Name-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Name-Applicability-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Name-OmaUri-Begin -->
@@ -2219,7 +2219,7 @@ Specifies the friendly name of the firewall rule.
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-PolicyAppId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 22H2 [10.0.19045.2913] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.1880] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.1635] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 22H2 [10.0.19045.2913] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.1880] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.1635] and later |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-PolicyAppId-Applicability-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-PolicyAppId-OmaUri-Begin -->
@@ -2259,7 +2259,7 @@ Specifies one WDAC tag. This is a string that can contain any alphanumeric chara
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Profiles-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Profiles-Applicability-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Profiles-OmaUri-Begin -->
@@ -2310,7 +2310,7 @@ Specifies the profiles to which the rule belongs: Domain, Private, Public. See [
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Protocol-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Protocol-Applicability-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Protocol-OmaUri-Begin -->
@@ -2350,7 +2350,7 @@ Specifies the profiles to which the rule belongs: Domain, Private, Public. See [
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-RemoteAddressDynamicKeywords-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2009 [10.0.19042.1706] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1706] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1706] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 [10.0.19042.1706] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1706] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1706] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-RemoteAddressDynamicKeywords-Applicability-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-RemoteAddressDynamicKeywords-OmaUri-Begin -->
@@ -2390,7 +2390,7 @@ Comma separated list of Dynamic Keyword Address Ids (GUID strings) specifying th
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-RemoteAddressRanges-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-RemoteAddressRanges-Applicability-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-RemoteAddressRanges-OmaUri-Begin -->
@@ -2450,7 +2450,7 @@ An IPv6 address range in the format of "start address - end address" with no spa
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-RemotePortRanges-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-RemotePortRanges-Applicability-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-RemotePortRanges-OmaUri-Begin -->
@@ -2492,7 +2492,7 @@ When setting this field in a firewall rule, the protocol field must also be set,
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Status-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Status-Applicability-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Status-OmaUri-Begin -->
@@ -2531,7 +2531,7 @@ Provides information about the specific version of the rule in deployment for mo
 <!-- Device-MdmStore-Global-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-Global-Applicability-End -->
 
 <!-- Device-MdmStore-Global-OmaUri-Begin -->
@@ -2569,7 +2569,7 @@ Provides information about the specific version of the rule in deployment for mo
 <!-- Device-MdmStore-Global-BinaryVersionSupported-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-Global-BinaryVersionSupported-Applicability-End -->
 
 <!-- Device-MdmStore-Global-BinaryVersionSupported-OmaUri-Begin -->
@@ -2608,7 +2608,7 @@ This value contains the binary version of the structures and data types that are
 <!-- Device-MdmStore-Global-CRLcheck-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-Global-CRLcheck-Applicability-End -->
 
 <!-- Device-MdmStore-Global-CRLcheck-OmaUri-Begin -->
@@ -2657,7 +2657,7 @@ This value specifies how certificate revocation list (CRL) verification is enfor
 <!-- Device-MdmStore-Global-CurrentProfiles-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-Global-CurrentProfiles-Applicability-End -->
 
 <!-- Device-MdmStore-Global-CurrentProfiles-OmaUri-Begin -->
@@ -2696,7 +2696,7 @@ Value that contains a bitmask of the current enforced profiles that are maintain
 <!-- Device-MdmStore-Global-DisableStatefulFtp-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-Global-DisableStatefulFtp-Applicability-End -->
 
 <!-- Device-MdmStore-Global-DisableStatefulFtp-OmaUri-Begin -->
@@ -2745,7 +2745,7 @@ This value is an on/off switch. If off, the firewall performs stateful File Tran
 <!-- Device-MdmStore-Global-EnablePacketQueue-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-Global-EnablePacketQueue-Applicability-End -->
 
 <!-- Device-MdmStore-Global-EnablePacketQueue-OmaUri-Begin -->
@@ -2795,7 +2795,7 @@ This value specifies how scaling for the software on the receive side is enabled
 <!-- Device-MdmStore-Global-IPsecExempt-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-Global-IPsecExempt-Applicability-End -->
 
 <!-- Device-MdmStore-Global-IPsecExempt-OmaUri-Begin -->
@@ -2847,7 +2847,7 @@ This value configures IPsec exceptions and MUST be a combination of the valid fl
 <!-- Device-MdmStore-Global-OpportunisticallyMatchAuthSetPerKM-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-Global-OpportunisticallyMatchAuthSetPerKM-Applicability-End -->
 
 <!-- Device-MdmStore-Global-OpportunisticallyMatchAuthSetPerKM-OmaUri-Begin -->
@@ -2895,7 +2895,7 @@ This value is used as an on/off switch. When this option is false, keying module
 <!-- Device-MdmStore-Global-PolicyVersion-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-Global-PolicyVersion-Applicability-End -->
 
 <!-- Device-MdmStore-Global-PolicyVersion-OmaUri-Begin -->
@@ -2934,7 +2934,7 @@ This value contains the policy version of the policy store being managed. This v
 <!-- Device-MdmStore-Global-PolicyVersionSupported-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-Global-PolicyVersionSupported-Applicability-End -->
 
 <!-- Device-MdmStore-Global-PolicyVersionSupported-OmaUri-Begin -->
@@ -2973,7 +2973,7 @@ Value that contains the maximum policy version that the server host can accept. 
 <!-- Device-MdmStore-Global-PresharedKeyEncoding-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-Global-PresharedKeyEncoding-Applicability-End -->
 
 <!-- Device-MdmStore-Global-PresharedKeyEncoding-OmaUri-Begin -->
@@ -3022,7 +3022,7 @@ Specifies the preshared key encoding that's used. MUST be a valid value from the
 <!-- Device-MdmStore-Global-SaIdleTime-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-Global-SaIdleTime-Applicability-End -->
 
 <!-- Device-MdmStore-Global-SaIdleTime-OmaUri-Begin -->
@@ -3063,7 +3063,7 @@ This value configures the security association idle time, in seconds. Security a
 <!-- Device-MdmStore-HyperVFirewallRules-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-HyperVFirewallRules-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVFirewallRules-OmaUri-Begin -->
@@ -3102,7 +3102,7 @@ A list of rules controlling traffic through the Windows Firewall for Hyper-V con
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-OmaUri-Begin -->
@@ -3144,7 +3144,7 @@ Unique alpha numeric identifier for the rule. The rule name mustn't include a fo
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Action-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Action-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Action-OmaUri-Begin -->
@@ -3196,7 +3196,7 @@ Specifies the action the rule enforces:
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Direction-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Direction-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Direction-OmaUri-Begin -->
@@ -3251,7 +3251,7 @@ If not specified the default is OUT.
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Enabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Enabled-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Enabled-OmaUri-Begin -->
@@ -3301,7 +3301,7 @@ If not specified - a new rule is disabled by default.
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-LocalAddressRanges-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-LocalAddressRanges-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-LocalAddressRanges-OmaUri-Begin -->
@@ -3353,7 +3353,7 @@ An IPv6 address range in the format of "start address - end address" with no spa
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-LocalPortRanges-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-LocalPortRanges-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-LocalPortRanges-OmaUri-Begin -->
@@ -3393,7 +3393,7 @@ Comma Separated list of ranges for eg. 100-120,200,300-320. If not specified the
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Name-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Name-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Name-OmaUri-Begin -->
@@ -3432,7 +3432,7 @@ Specifies the friendly name of the Hyper-V Firewall rule.
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Priority-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Priority-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Priority-OmaUri-Begin -->
@@ -3472,7 +3472,7 @@ This value represents the order of rule enforcement. A lower priority rule is ev
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Profiles-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview [10.0.25398] |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.2352] and later <br> ✅ Windows Insider Preview [10.0.25398] |
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Profiles-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Profiles-OmaUri-Begin -->
@@ -3522,7 +3522,7 @@ Specifies the profiles to which the rule belongs: Domain, Private, Public. See [
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Protocol-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Protocol-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Protocol-OmaUri-Begin -->
@@ -3547,7 +3547,7 @@ Specifies the profiles to which the rule belongs: Domain, Private, Public. See [
 |:--|:--|
 | Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
-| Allowed Values | Range: `[0-65535]` |
+| Allowed Values | Range: `[0-255]` |
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Protocol-DFProperties-End -->
 
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Protocol-Examples-Begin -->
@@ -3562,7 +3562,7 @@ Specifies the profiles to which the rule belongs: Domain, Private, Public. See [
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-RemoteAddressRanges-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-RemoteAddressRanges-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-RemoteAddressRanges-OmaUri-Begin -->
@@ -3612,7 +3612,7 @@ An IPv6 address range in the format of "start address - end address" with no spa
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-RemotePortRanges-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-RemotePortRanges-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-RemotePortRanges-OmaUri-Begin -->
@@ -3652,7 +3652,7 @@ Comma Separated list of ranges for eg. 100-120,200,300-320. If not specified the
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Status-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Status-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Status-OmaUri-Begin -->
@@ -3691,7 +3691,7 @@ Provides information about the specific version of the rule in deployment for mo
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-VMCreatorId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-VMCreatorId-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-VMCreatorId-OmaUri-Begin -->
@@ -3731,7 +3731,7 @@ This field specifies the VM Creator ID that this rule is applicable to. A NULL G
 <!-- Device-MdmStore-HyperVVMSettings-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-HyperVVMSettings-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-OmaUri-Begin -->
@@ -3770,7 +3770,7 @@ Settings for the Windows Firewall for Hyper-V containers. Each setting applies o
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-OmaUri-Begin -->
@@ -3812,7 +3812,7 @@ VM Creator ID that these settings apply to. Valid format is a GUID.
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-AllowHostPolicyMerge-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview [10.0.25398] |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.2352] and later <br> ✅ Windows Insider Preview [10.0.25398] |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-AllowHostPolicyMerge-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-AllowHostPolicyMerge-OmaUri-Begin -->
@@ -3861,7 +3861,7 @@ This value is used as an on/off switch. If this value is true, applicable host f
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DefaultInboundAction-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DefaultInboundAction-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DefaultInboundAction-OmaUri-Begin -->
@@ -3911,7 +3911,7 @@ This value is the action that the Hyper-V Firewall does by default (and evaluate
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DefaultOutboundAction-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DefaultOutboundAction-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DefaultOutboundAction-OmaUri-Begin -->
@@ -3961,7 +3961,7 @@ This value is the action that the Hyper-V Firewall does by default (and evaluate
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview [10.0.25398] |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.2352] and later <br> ✅ Windows Insider Preview [10.0.25398] |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-OmaUri-Begin -->
@@ -3999,7 +3999,7 @@ This value is the action that the Hyper-V Firewall does by default (and evaluate
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-AllowLocalPolicyMerge-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview [10.0.25398] |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.2352] and later <br> ✅ Windows Insider Preview [10.0.25398] |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-AllowLocalPolicyMerge-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-AllowLocalPolicyMerge-OmaUri-Begin -->
@@ -4049,7 +4049,7 @@ This value is used as an on/off switch. If this value is false, Hyper-V Firewall
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-DefaultInboundAction-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview [10.0.25398] |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.2352] and later <br> ✅ Windows Insider Preview [10.0.25398] |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-DefaultInboundAction-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-DefaultInboundAction-OmaUri-Begin -->
@@ -4099,7 +4099,7 @@ This value is the action that the Hyper-V Firewall does by default (and evaluate
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-DefaultOutboundAction-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview [10.0.25398] |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.2352] and later <br> ✅ Windows Insider Preview [10.0.25398] |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-DefaultOutboundAction-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-DefaultOutboundAction-OmaUri-Begin -->
@@ -4149,7 +4149,7 @@ This value is the action that the Hyper-V Firewall does by default (and evaluate
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-EnableFirewall-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview [10.0.25398] |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.2352] and later <br> ✅ Windows Insider Preview [10.0.25398] |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-EnableFirewall-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-EnableFirewall-OmaUri-Begin -->
@@ -4198,7 +4198,7 @@ This value is an on/off switch for the Hyper-V Firewall enforcement.
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-EnableFirewall-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-EnableFirewall-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-EnableFirewall-OmaUri-Begin -->
@@ -4247,7 +4247,7 @@ This value is an on/off switch for the Hyper-V Firewall. This value controls the
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-EnableLoopback-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-EnableLoopback-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-EnableLoopback-OmaUri-Begin -->
@@ -4296,7 +4296,7 @@ This value is an on/off switch for loopback traffic. This determines if this VM 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview [10.0.25398] |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.2352] and later <br> ✅ Windows Insider Preview [10.0.25398] |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-OmaUri-Begin -->
@@ -4334,7 +4334,7 @@ This value is an on/off switch for loopback traffic. This determines if this VM 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-AllowLocalPolicyMerge-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview [10.0.25398] |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.2352] and later <br> ✅ Windows Insider Preview [10.0.25398] |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-AllowLocalPolicyMerge-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-AllowLocalPolicyMerge-OmaUri-Begin -->
@@ -4384,7 +4384,7 @@ This value is used as an on/off switch. If this value is false, Hyper-V Firewall
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-DefaultInboundAction-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview [10.0.25398] |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.2352] and later <br> ✅ Windows Insider Preview [10.0.25398] |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-DefaultInboundAction-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-DefaultInboundAction-OmaUri-Begin -->
@@ -4434,7 +4434,7 @@ This value is the action that the Hyper-V Firewall does by default (and evaluate
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-DefaultOutboundAction-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview [10.0.25398] |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.2352] and later <br> ✅ Windows Insider Preview [10.0.25398] |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-DefaultOutboundAction-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-DefaultOutboundAction-OmaUri-Begin -->
@@ -4484,7 +4484,7 @@ This value is the action that the Hyper-V Firewall does by default (and evaluate
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-EnableFirewall-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview [10.0.25398] |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.2352] and later <br> ✅ Windows Insider Preview [10.0.25398] |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-EnableFirewall-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-EnableFirewall-OmaUri-Begin -->
@@ -4533,7 +4533,7 @@ This value is an on/off switch for the Hyper-V Firewall enforcement.
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview [10.0.25398] |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.2352] and later <br> ✅ Windows Insider Preview [10.0.25398] |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-OmaUri-Begin -->
@@ -4571,7 +4571,7 @@ This value is an on/off switch for the Hyper-V Firewall enforcement.
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-AllowLocalPolicyMerge-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview [10.0.25398] |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.2352] and later <br> ✅ Windows Insider Preview [10.0.25398] |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-AllowLocalPolicyMerge-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-AllowLocalPolicyMerge-OmaUri-Begin -->
@@ -4621,7 +4621,7 @@ This value is used as an on/off switch. If this value is false, Hyper-V Firewall
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-DefaultInboundAction-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview [10.0.25398] |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.2352] and later <br> ✅ Windows Insider Preview [10.0.25398] |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-DefaultInboundAction-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-DefaultInboundAction-OmaUri-Begin -->
@@ -4671,7 +4671,7 @@ This value is the action that the Hyper-V Firewall does by default (and evaluate
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-DefaultOutboundAction-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview [10.0.25398] |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.2352] and later <br> ✅ Windows Insider Preview [10.0.25398] |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-DefaultOutboundAction-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-DefaultOutboundAction-OmaUri-Begin -->
@@ -4721,7 +4721,7 @@ This value is the action that the Hyper-V Firewall does by default (and evaluate
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-EnableFirewall-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview [10.0.25398] |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.2352] and later <br> ✅ Windows Insider Preview [10.0.25398] |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-EnableFirewall-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-EnableFirewall-OmaUri-Begin -->
@@ -4770,7 +4770,7 @@ This value is an on/off switch for the Hyper-V Firewall enforcement.
 <!-- Device-MdmStore-PrivateProfile-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-PrivateProfile-Applicability-End -->
 
 <!-- Device-MdmStore-PrivateProfile-OmaUri-Begin -->
@@ -4808,7 +4808,7 @@ This value is an on/off switch for the Hyper-V Firewall enforcement.
 <!-- Device-MdmStore-PrivateProfile-AllowLocalIpsecPolicyMerge-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-PrivateProfile-AllowLocalIpsecPolicyMerge-Applicability-End -->
 
 <!-- Device-MdmStore-PrivateProfile-AllowLocalIpsecPolicyMerge-OmaUri-Begin -->
@@ -4858,7 +4858,7 @@ This value is an on/off switch. If this value is false, connection security rule
 <!-- Device-MdmStore-PrivateProfile-AllowLocalPolicyMerge-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-PrivateProfile-AllowLocalPolicyMerge-Applicability-End -->
 
 <!-- Device-MdmStore-PrivateProfile-AllowLocalPolicyMerge-OmaUri-Begin -->
@@ -4908,7 +4908,7 @@ This value is used as an on/off switch. If this value is false, firewall rules f
 <!-- Device-MdmStore-PrivateProfile-AuthAppsAllowUserPrefMerge-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-PrivateProfile-AuthAppsAllowUserPrefMerge-Applicability-End -->
 
 <!-- Device-MdmStore-PrivateProfile-AuthAppsAllowUserPrefMerge-OmaUri-Begin -->
@@ -4958,7 +4958,7 @@ This value is used as an on/off switch. If this value is false, authorized appli
 <!-- Device-MdmStore-PrivateProfile-DefaultInboundAction-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-PrivateProfile-DefaultInboundAction-Applicability-End -->
 
 <!-- Device-MdmStore-PrivateProfile-DefaultInboundAction-OmaUri-Begin -->
@@ -5008,7 +5008,7 @@ This value is the action that the firewall does by default (and evaluates at the
 <!-- Device-MdmStore-PrivateProfile-DefaultOutboundAction-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-PrivateProfile-DefaultOutboundAction-Applicability-End -->
 
 <!-- Device-MdmStore-PrivateProfile-DefaultOutboundAction-OmaUri-Begin -->
@@ -5081,7 +5081,7 @@ This value is the action that the firewall does by default (and evaluates at the
 <!-- Device-MdmStore-PrivateProfile-DisableInboundNotifications-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-PrivateProfile-DisableInboundNotifications-Applicability-End -->
 
 <!-- Device-MdmStore-PrivateProfile-DisableInboundNotifications-OmaUri-Begin -->
@@ -5131,7 +5131,7 @@ This value is an on/off switch. If this value is false, the firewall MAY display
 <!-- Device-MdmStore-PrivateProfile-DisableStealthMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-PrivateProfile-DisableStealthMode-Applicability-End -->
 
 <!-- Device-MdmStore-PrivateProfile-DisableStealthMode-OmaUri-Begin -->
@@ -5181,7 +5181,7 @@ This value is an on/off switch. When this option is false, the server operates i
 <!-- Device-MdmStore-PrivateProfile-DisableStealthModeIpsecSecuredPacketExemption-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-PrivateProfile-DisableStealthModeIpsecSecuredPacketExemption-Applicability-End -->
 
 <!-- Device-MdmStore-PrivateProfile-DisableStealthModeIpsecSecuredPacketExemption-OmaUri-Begin -->
@@ -5231,7 +5231,7 @@ This value is an on/off switch. This option is ignored if DisableStealthMode is 
 <!-- Device-MdmStore-PrivateProfile-DisableUnicastResponsesToMulticastBroadcast-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-PrivateProfile-DisableUnicastResponsesToMulticastBroadcast-Applicability-End -->
 
 <!-- Device-MdmStore-PrivateProfile-DisableUnicastResponsesToMulticastBroadcast-OmaUri-Begin -->
@@ -5281,7 +5281,7 @@ This value is used as an on/off switch. If it's true, unicast responses to multi
 <!-- Device-MdmStore-PrivateProfile-EnableFirewall-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-PrivateProfile-EnableFirewall-Applicability-End -->
 
 <!-- Device-MdmStore-PrivateProfile-EnableFirewall-OmaUri-Begin -->
@@ -5330,7 +5330,7 @@ This value is an on/off switch for the firewall and advanced security enforcemen
 <!-- Device-MdmStore-PrivateProfile-EnableLogDroppedPackets-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-PrivateProfile-EnableLogDroppedPackets-Applicability-End -->
 
 <!-- Device-MdmStore-PrivateProfile-EnableLogDroppedPackets-OmaUri-Begin -->
@@ -5380,7 +5380,7 @@ This value is used as an on/off switch. If this value is on, the firewall logs a
 <!-- Device-MdmStore-PrivateProfile-EnableLogIgnoredRules-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-PrivateProfile-EnableLogIgnoredRules-Applicability-End -->
 
 <!-- Device-MdmStore-PrivateProfile-EnableLogIgnoredRules-OmaUri-Begin -->
@@ -5430,7 +5430,7 @@ This value is used as an on/off switch. The server MAY use this value in an impl
 <!-- Device-MdmStore-PrivateProfile-EnableLogSuccessConnections-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-PrivateProfile-EnableLogSuccessConnections-Applicability-End -->
 
 <!-- Device-MdmStore-PrivateProfile-EnableLogSuccessConnections-OmaUri-Begin -->
@@ -5480,7 +5480,7 @@ This value is used as an on/off switch. If this value is on, the firewall logs a
 <!-- Device-MdmStore-PrivateProfile-GlobalPortsAllowUserPrefMerge-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-PrivateProfile-GlobalPortsAllowUserPrefMerge-Applicability-End -->
 
 <!-- Device-MdmStore-PrivateProfile-GlobalPortsAllowUserPrefMerge-OmaUri-Begin -->
@@ -5530,7 +5530,7 @@ This value is used as an on/off switch. If this value is false, global port fire
 <!-- Device-MdmStore-PrivateProfile-LogFilePath-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-PrivateProfile-LogFilePath-Applicability-End -->
 
 <!-- Device-MdmStore-PrivateProfile-LogFilePath-OmaUri-Begin -->
@@ -5571,7 +5571,7 @@ This value is a string that represents a file path to the log where the firewall
 <!-- Device-MdmStore-PrivateProfile-LogMaxFileSize-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-PrivateProfile-LogMaxFileSize-Applicability-End -->
 
 <!-- Device-MdmStore-PrivateProfile-LogMaxFileSize-OmaUri-Begin -->
@@ -5613,7 +5613,7 @@ This value specifies the size, in kilobytes, of the log file where dropped packe
 <!-- Device-MdmStore-PrivateProfile-Shielded-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-PrivateProfile-Shielded-Applicability-End -->
 
 <!-- Device-MdmStore-PrivateProfile-Shielded-OmaUri-Begin -->
@@ -5663,7 +5663,7 @@ This value is used as an on/off switch. If this value is on and EnableFirewall i
 <!-- Device-MdmStore-PublicProfile-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-PublicProfile-Applicability-End -->
 
 <!-- Device-MdmStore-PublicProfile-OmaUri-Begin -->
@@ -5701,7 +5701,7 @@ This value is used as an on/off switch. If this value is on and EnableFirewall i
 <!-- Device-MdmStore-PublicProfile-AllowLocalIpsecPolicyMerge-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-PublicProfile-AllowLocalIpsecPolicyMerge-Applicability-End -->
 
 <!-- Device-MdmStore-PublicProfile-AllowLocalIpsecPolicyMerge-OmaUri-Begin -->
@@ -5751,7 +5751,7 @@ This value is an on/off switch. If this value is false, connection security rule
 <!-- Device-MdmStore-PublicProfile-AllowLocalPolicyMerge-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-PublicProfile-AllowLocalPolicyMerge-Applicability-End -->
 
 <!-- Device-MdmStore-PublicProfile-AllowLocalPolicyMerge-OmaUri-Begin -->
@@ -5801,7 +5801,7 @@ This value is used as an on/off switch. If this value is false, firewall rules f
 <!-- Device-MdmStore-PublicProfile-AuthAppsAllowUserPrefMerge-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-PublicProfile-AuthAppsAllowUserPrefMerge-Applicability-End -->
 
 <!-- Device-MdmStore-PublicProfile-AuthAppsAllowUserPrefMerge-OmaUri-Begin -->
@@ -5851,7 +5851,7 @@ This value is used as an on/off switch. If this value is false, authorized appli
 <!-- Device-MdmStore-PublicProfile-DefaultInboundAction-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-PublicProfile-DefaultInboundAction-Applicability-End -->
 
 <!-- Device-MdmStore-PublicProfile-DefaultInboundAction-OmaUri-Begin -->
@@ -5901,7 +5901,7 @@ This value is the action that the firewall does by default (and evaluates at the
 <!-- Device-MdmStore-PublicProfile-DefaultOutboundAction-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-PublicProfile-DefaultOutboundAction-Applicability-End -->
 
 <!-- Device-MdmStore-PublicProfile-DefaultOutboundAction-OmaUri-Begin -->
@@ -5974,7 +5974,7 @@ This value is the action that the firewall does by default (and evaluates at the
 <!-- Device-MdmStore-PublicProfile-DisableInboundNotifications-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-PublicProfile-DisableInboundNotifications-Applicability-End -->
 
 <!-- Device-MdmStore-PublicProfile-DisableInboundNotifications-OmaUri-Begin -->
@@ -6024,7 +6024,7 @@ This value is an on/off switch. If this value is false, the firewall MAY display
 <!-- Device-MdmStore-PublicProfile-DisableStealthMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-PublicProfile-DisableStealthMode-Applicability-End -->
 
 <!-- Device-MdmStore-PublicProfile-DisableStealthMode-OmaUri-Begin -->
@@ -6074,7 +6074,7 @@ This value is an on/off switch. When this option is false, the server operates i
 <!-- Device-MdmStore-PublicProfile-DisableStealthModeIpsecSecuredPacketExemption-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-PublicProfile-DisableStealthModeIpsecSecuredPacketExemption-Applicability-End -->
 
 <!-- Device-MdmStore-PublicProfile-DisableStealthModeIpsecSecuredPacketExemption-OmaUri-Begin -->
@@ -6124,7 +6124,7 @@ This value is an on/off switch. This option is ignored if DisableStealthMode is 
 <!-- Device-MdmStore-PublicProfile-DisableUnicastResponsesToMulticastBroadcast-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-PublicProfile-DisableUnicastResponsesToMulticastBroadcast-Applicability-End -->
 
 <!-- Device-MdmStore-PublicProfile-DisableUnicastResponsesToMulticastBroadcast-OmaUri-Begin -->
@@ -6174,7 +6174,7 @@ This value is used as an on/off switch. If it's true, unicast responses to multi
 <!-- Device-MdmStore-PublicProfile-EnableFirewall-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-PublicProfile-EnableFirewall-Applicability-End -->
 
 <!-- Device-MdmStore-PublicProfile-EnableFirewall-OmaUri-Begin -->
@@ -6223,7 +6223,7 @@ This value is an on/off switch for the firewall and advanced security enforcemen
 <!-- Device-MdmStore-PublicProfile-EnableLogDroppedPackets-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-PublicProfile-EnableLogDroppedPackets-Applicability-End -->
 
 <!-- Device-MdmStore-PublicProfile-EnableLogDroppedPackets-OmaUri-Begin -->
@@ -6273,7 +6273,7 @@ This value is used as an on/off switch. If this value is on, the firewall logs a
 <!-- Device-MdmStore-PublicProfile-EnableLogIgnoredRules-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-PublicProfile-EnableLogIgnoredRules-Applicability-End -->
 
 <!-- Device-MdmStore-PublicProfile-EnableLogIgnoredRules-OmaUri-Begin -->
@@ -6323,7 +6323,7 @@ This value is used as an on/off switch. The server MAY use this value in an impl
 <!-- Device-MdmStore-PublicProfile-EnableLogSuccessConnections-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-PublicProfile-EnableLogSuccessConnections-Applicability-End -->
 
 <!-- Device-MdmStore-PublicProfile-EnableLogSuccessConnections-OmaUri-Begin -->
@@ -6373,7 +6373,7 @@ This value is used as an on/off switch. If this value is on, the firewall logs a
 <!-- Device-MdmStore-PublicProfile-GlobalPortsAllowUserPrefMerge-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-PublicProfile-GlobalPortsAllowUserPrefMerge-Applicability-End -->
 
 <!-- Device-MdmStore-PublicProfile-GlobalPortsAllowUserPrefMerge-OmaUri-Begin -->
@@ -6423,7 +6423,7 @@ This value is used as an on/off switch. If this value is false, global port fire
 <!-- Device-MdmStore-PublicProfile-LogFilePath-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-PublicProfile-LogFilePath-Applicability-End -->
 
 <!-- Device-MdmStore-PublicProfile-LogFilePath-OmaUri-Begin -->
@@ -6464,7 +6464,7 @@ This value is a string that represents a file path to the log where the firewall
 <!-- Device-MdmStore-PublicProfile-LogMaxFileSize-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-PublicProfile-LogMaxFileSize-Applicability-End -->
 
 <!-- Device-MdmStore-PublicProfile-LogMaxFileSize-OmaUri-Begin -->
@@ -6506,7 +6506,7 @@ This value specifies the size, in kilobytes, of the log file where dropped packe
 <!-- Device-MdmStore-PublicProfile-Shielded-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MdmStore-PublicProfile-Shielded-Applicability-End -->
 
 <!-- Device-MdmStore-PublicProfile-Shielded-OmaUri-Begin -->

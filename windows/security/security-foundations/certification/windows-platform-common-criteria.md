@@ -5,7 +5,7 @@ ms.prod: windows-client
 ms.author: sushmanemali
 author: s4sush
 manager: aaroncz
-ms.topic: article
+ms.topic: reference
 ms.localizationpriority: medium
 ms.date: 11/4/2022
 ms.reviewer: paoloma
@@ -278,10 +278,6 @@ Certified against the Protection Profile for General Purpose Operating Systems.
 ### Windows Server 2003 Certificate Server
 
 - [Security Target](https://www.commoncriteriaportal.org/files/epfiles/st_vid9507-st.pdf)
-- [Administrator's Guide](https://www.microsoft.com/downloads/en/details.aspx?familyid=445093d8-45e2-4cf6-884c-8802c1e6cb2d)
-- [Configuration Guide](https://www.microsoft.com/downloads/en/details.aspx?familyid=46abc8b5-11be-4e3d-85c2-63226c3688d2)
-- [User's Guide](https://www.microsoft.com/downloads/en/details.aspx?familyid=74f66d84-2654-48d0-b9b5-b383d383425e)
-- [Evaluation Technical Report](https://www.microsoft.com/downloads/details.aspx?familyid=a594e77f-dcbb-4787-9d68-e4689e60a314)
 - [Validation Report](https://www.commoncriteriaportal.org/files/epfiles/st_vid9507-vr.pdf)
 
 ### Windows Rights Management Services

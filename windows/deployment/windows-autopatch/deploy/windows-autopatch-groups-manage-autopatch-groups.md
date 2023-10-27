@@ -19,7 +19,7 @@ ms.collection:
 
 Autopatch groups help Microsoft Cloud-Managed services meet organizations where they are in their update management journey.
 
-Autopatch groups is a logical container or unit that groups several [Azure AD groups](/azure/active-directory/fundamentals/active-directory-groups-view-azure-portal), and software update policies, such as [Update rings policy for Windows 10 and later](/mem/intune/protect/windows-10-update-rings) and [feature updates policy for Windows 10 and later policies](/mem/intune/protect/windows-10-feature-updates).
+Autopatch groups is a logical container or unit that groups several [Microsoft Entra groups](/azure/active-directory/fundamentals/active-directory-groups-view-azure-portal), and software update policies, such as [Update rings policy for Windows 10 and later](/mem/intune/protect/windows-10-update-rings) and [feature updates policy for Windows 10 and later policies](/mem/intune/protect/windows-10-feature-updates).
 
 ## Autopatch groups prerequisites
 
@@ -36,7 +36,7 @@ Before you start managing Autopatch groups, ensure you’ve met the following pr
 	- Windows Autopatch – DSS Policy [First]
 	- Windows Autopatch – DSS Policy [Fast]
 	- Windows Autopatch – DSS Policy [Broad]
-- Ensure the following Azure AD assigned groups are in your tenant before using Autopatch groups. **Don’t** modify the Azure AD group membership types (Assigned or Dynamic). Otherwise, the Windows Autopatch service won’t be able to read the device group membership from these groups and causes the Autopatch groups feature and other service-related operations to not work properly.
+- Ensure the following Microsoft Entra ID assigned groups are in your tenant before using Autopatch groups. **Don’t** modify the Microsoft Entra group membership types (Assigned or Dynamic). Otherwise, the Windows Autopatch service won’t be able to read the device group membership from these groups and causes the Autopatch groups feature and other service-related operations to not work properly.
     - Modern Workplace Devices-Windows Autopatch-Test
     - Modern Workplace Devices-Windows Autopatch-First
     - Modern Workplace Devices-Windows Autopatch-Fast
@@ -46,14 +46,14 @@ Before you start managing Autopatch groups, ensure you’ve met the following pr
     - Windows Autopatch – Ring2
     - Windows Autopatch – Ring3
     - Windows Autopatch – Last
-- Additionally, **don't** modify the Azure AD group ownership of any of the groups above otherwise, Autopatch groups device registration process won't be able to add devices into these groups. If the ownership is modified, you must add the **Modern Workplace Management** Service Principal as the owner of these groups.
-	- For more information, see [assign an owner or member of a group in Azure AD](/azure/active-directory/privileged-identity-management/groups-assign-member-owner#assign-an-owner-or-member-of-a-group) for steps on how to add owners to Azure Azure AD groups.
+- Additionally, **don't** modify the Microsoft Entra group ownership of any of the groups above otherwise, Autopatch groups device registration process won't be able to add devices into these groups. If the ownership is modified, you must add the **Modern Workplace Management** Service Principal as the owner of these groups.
+	- For more information, see [assign an owner or member of a group in Microsoft Entra ID](/azure/active-directory/privileged-identity-management/groups-assign-member-owner#assign-an-owner-or-member-of-a-group) for steps on how to add owners to Azure Microsoft Entra groups.
 - Make sure you have [app-only auth turned on in your Windows Autopatch tenant](../operate/windows-autopatch-maintain-environment.md#windows-autopatch-tenant-actions). Otherwise, the Autopatch groups functionality won’t work properly. Autopatch uses app-only auth to:
     - Read device attributes to successfully register devices.
     - Manage all configurations related to the operation of the service.
-- Make sure that all device-based Azure AD groups you intend to use with Autopatch groups are created prior to using the feature.
-    - Review your existing Azure AD group dynamic queries and direct device memberships to avoid having device membership overlaps in between device-based Azure AD groups that are going to be used with Autopatch groups. This can help prevent device conflicts within an Autopatch group or across several Autopatch groups. **Autopatch groups doesn't support user-based Azure AD groups**.
-- Ensure devices used with your existing Azure AD groups meet [device registration prerequisite checks](../deploy/windows-autopatch-register-devices.md#prerequisites-for-device-registration) when being registered with the service. Autopatch groups register devices on your behalf, and devices can be moved to **Registered** or **Not registered** tabs in the Devices blade accordingly.
+- Make sure that all device-based Microsoft Entra groups you intend to use with Autopatch groups are created prior to using the feature.
+    - Review your existing Microsoft Entra group dynamic queries and direct device memberships to avoid having device membership overlaps in between device-based Microsoft Entra groups that are going to be used with Autopatch groups. This can help prevent device conflicts within an Autopatch group or across several Autopatch groups. **Autopatch groups doesn't support user-based Microsoft Entra groups**.
+- Ensure devices used with your existing Microsoft Entra groups meet [device registration prerequisite checks](../deploy/windows-autopatch-register-devices.md#prerequisites-for-device-registration) when being registered with the service. Autopatch groups register devices on your behalf, and devices can be moved to **Registered** or **Not registered** tabs in the Devices blade accordingly.
 
 > [!TIP]
 > [Update rings](/mem/intune/protect/windows-10-update-rings) and [feature updates](/mem/intune/protect/windows-10-feature-updates) for Windows 10 and later policies that are created and managed by Windows Autopatch can be restored using the [Policy health](../operate/windows-autopatch-policy-health-and-remediation.md) feature. For more information on remediation actions, see [restore Windows update policies](../operate/windows-autopatch-policy-health-and-remediation.md#restore-windows-update-policies).
@@ -68,17 +68,17 @@ Before you start managing Autopatch groups, ensure you’ve met the following pr
 1. Go to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 1. Select **Devices** from the left navigation menu.
 1. Under the **Windows Autopatch** section, select **Release management**.
-1. In the **Release management** blade, select **Autopatch groups (preview)**.
+1. In the **Release management** blade, select **Autopatch groups**.
 1. In the **Autopatch groups** blade, select **Create**.
 1. In **Basics** page, enter a **name** and a **description** then select **Next: Deployment rings**.
     1. Enter up to 64 characters for the Autopatch group name and 150 characters maximum for the description. The Autopatch group name is appended to both the update rings and the DSS policy names that get created once the Custom Autopatch group is created.
 1. In **Deployment rings** page, select **Add deployment ring** to add the number of deployment rings to the Custom Autopatch group.
-1. Each new deployment ring added must have either an Azure AD device group assigned to it, or an Azure AD group that is dynamically distributed across your deployments rings using defined percentages.
-    1. In the **Dynamic groups** area, select **Add groups** to select one or more existing device-based Azure AD groups to be used for Dynamic group distribution.
+1. Each new deployment ring added must have either a Microsoft Entra device group assigned to it, or a Microsoft Entra group that is dynamically distributed across your deployments rings using defined percentages.
+    1. In the **Dynamic groups** area, select **Add groups** to select one or more existing device-based Microsoft Entra groups to be used for Dynamic group distribution.
     1. In the **Dynamic group distribution** column, select the desired deployment ring checkbox. Then, either:
-        1. Enter the percentage of devices that should be added from the Azure AD groups selected in step 9. The percentage calculation for devices must equal to 100%, or
+        1. Enter the percentage of devices that should be added from the Microsoft Entra groups selected in step 9. The percentage calculation for devices must equal to 100%, or
         1. Select **Apply default dynamic group distribution** to use the default values.
-1. In the **Assigned group** column, select **Add group to ring** to add an existing Azure AD group to any of the defined deployment rings. The **Test** and **Last** deployment rings only support Assigned group distribution. These deployment rings don't support Dynamic distribution.
+1. In the **Assigned group** column, select **Add group to ring** to add an existing Microsoft Entra group to any of the defined deployment rings. The **Test** and **Last** deployment rings only support Assigned group distribution. These deployment rings don't support Dynamic distribution.
 1. Select **Next: Windows Update settings**.
 1. Select the **horizontal ellipses (…)** > **Manage deployment cadence** to [customize your gradual rollout of Windows quality and feature updates](../operate/windows-autopatch-windows-update.md). Select **Save**.
 1. Select the **horizontal ellipses (…)** > **Manage notifications** to customize the end-user experience when receiving Windows updates. Select **Save**.
@@ -86,10 +86,10 @@ Before you start managing Autopatch groups, ensure you’ve met the following pr
 1. Once the review is done, select **Create** to save your custom Autopatch group.
 
 > [!CAUTION]
-> A device-based Azure AD group can only be used with one deployment ring in an Autopatch group at a time. This applies to deployment rings within the same Autopatch group and across different deployment rings across different Autopatch groups. If you try to create or edit an Autopatch group to use a device-based Azure AD group that’s been already used, you'll receive an error that prevents you from finish creating or editing the Autopatch group (Default or Custom).
+> A device-based Microsoft Entra group can only be used with one deployment ring in an Autopatch group at a time. This applies to deployment rings within the same Autopatch group and across different deployment rings across different Autopatch groups. If you try to create or edit an Autopatch group to use a device-based Microsoft Entra group that’s been already used, you'll receive an error that prevents you from finish creating or editing the Autopatch group (Default or Custom).
 
 > [!IMPORTANT]
-> Windows Autopatch creates the device-based Azure AD assigned groups based on the choices made in the deployment ring composition page. Additionally, the service assigns the update ring policies for each deployment ring created in the Autopatch group based on the choices made in the Windows Update settings page as part of the Autopatch group guided end-user experience.
+> Windows Autopatch creates the device-based Microsoft Entra ID assigned groups based on the choices made in the deployment ring composition page. Additionally, the service assigns the update ring policies for each deployment ring created in the Autopatch group based on the choices made in the Windows Update settings page as part of the Autopatch group guided end-user experience.
 
 ## Edit the Default or a Custom Autopatch group
 
@@ -107,7 +107,7 @@ Before you start managing Autopatch groups, ensure you’ve met the following pr
 1. Once the review is done, select **Save** to finish editing the Autopatch group.
 
 > [!IMPORTANT]
-> Windows Autopatch creates the device-based Azure AD assigned groups based on the choices made in the deployment ring composition page. Additionally, the service assigns the update ring policies for each deployment ring created in the Autopatch group based on the choices made in the Windows Update settings page as part of the Autopatch group guided end-user experience.
+> Windows Autopatch creates the device-based Microsoft Entra ID assigned groups based on the choices made in the deployment ring composition page. Additionally, the service assigns the update ring policies for each deployment ring created in the Autopatch group based on the choices made in the Windows Update settings page as part of the Autopatch group guided end-user experience.
 
 ## Rename a Custom Autopatch group
 
@@ -119,7 +119,7 @@ You **can’t** rename the Default Autopatch group. However, you can rename a Cu
 1. In the **New Autopatch group name**, enter the new Autopatch group name of your choice, then click **Rename group**.
 
 > [!IMPORTANT]
-> Autopatch supports up to 64 characters for the custom Autopatch group name. Additionally, when you rename a custom Autopatch group all [update rings for Windows 10 and later policy in Intune](/mem/intune/protect/windows-10-update-rings) and [feature updates for Windows 10 and later policy in Intune](/mem/intune/protect/windows-10-feature-updates) associated with the custom Autopatch group are renamed to include the new Autopatch group name you define in its name string. Also, when renaming a custom Autopatch group all Azure AD groups representing the custom Autopatch group's deployment rings are renamed to include the new Autopatch group name you define in its name string.
+> Autopatch supports up to 64 characters for the custom Autopatch group name. Additionally, when you rename a custom Autopatch group all [update rings for Windows 10 and later policy in Intune](/mem/intune/protect/windows-10-update-rings) and [feature updates for Windows 10 and later policy in Intune](/mem/intune/protect/windows-10-feature-updates) associated with the custom Autopatch group are renamed to include the new Autopatch group name you define in its name string. Also, when renaming a custom Autopatch group all Microsoft Entra groups representing the custom Autopatch group's deployment rings are renamed to include the new Autopatch group name you define in its name string.
 
 ## Delete a Custom Autopatch group
 
@@ -135,12 +135,12 @@ You **can’t** delete the Default Autopatch group. However, you can delete a Cu
 
 ## Manage device conflict scenarios when using Autopatch groups
 
-Overlap in device membership is a common scenario when working with device-based Azure AD groups since sometimes dynamic queries can be large in scope or the same assigned device membership can be used across different Azure AD groups.
+Overlap in device membership is a common scenario when working with device-based Microsoft Entra groups since sometimes dynamic queries can be large in scope or the same assigned device membership can be used across different Microsoft Entra groups.
 
-Since Autopatch groups allow you to use your existing Azure AD groups to create your own deployment ring composition, the service takes on the responsibility of monitoring and automatically solving some of the device conflict scenarios that may occur.
+Since Autopatch groups allow you to use your existing Microsoft Entra groups to create your own deployment ring composition, the service takes on the responsibility of monitoring and automatically solving some of the device conflict scenarios that may occur.
 
 > [!CAUTION]
-> A device-based Azure AD group can only be used with one deployment ring in an Autopatch group at a time. This applies to deployment rings within the same Autopatch group and across different deployment rings across different Autopatch groups. If you try to create or edit an Autopatch group to use a device-based Azure AD group that’s been already used, you'll receive an error that prevents you from creating or editing the Autopatch group (Default or Custom).
+> A device-based Microsoft Entra group can only be used with one deployment ring in an Autopatch group at a time. This applies to deployment rings within the same Autopatch group and across different deployment rings across different Autopatch groups. If you try to create or edit an Autopatch group to use a device-based Microsoft Entra group that’s been already used, you'll receive an error that prevents you from creating or editing the Autopatch group (Default or Custom).
 
 ### Device conflict in deployment rings within an Autopatch group
 
@@ -172,11 +172,11 @@ Device conflict across different deployment rings in different Autopatch groups 
 
 #### Device conflict prior to device registration
 
-When you create or edit the Custom or Default Autopatch group, Windows Autopatch checks if the devices that are part of the Azure AD groups, used in Autopatch groups’ deployment rings, are registered with the service.
+When you create or edit the Custom or Default Autopatch group, Windows Autopatch checks if the devices that are part of the Microsoft Entra groups, used in Autopatch groups’ deployment rings, are registered with the service.
 
 | Conflict scenario | Conflict resolution |
 | -----  | ----- |
-| Devices are in the Custom-to-Custom Autopatch group device conflict scenario | You must resolve this conflict.<p>Devices will fail to register with the service and will be sent to the **Not registered** tab. You’re required to make sure the Azure AD groups that are used with the Custom Autopatch groups don’t have device membership overlaps.</p> |
+| Devices are in the Custom-to-Custom Autopatch group device conflict scenario | You must resolve this conflict.<p>Devices will fail to register with the service and will be sent to the **Not registered** tab. You’re required to make sure the Microsoft Entra groups that are used with the Custom Autopatch groups don’t have device membership overlaps.</p> |
 
 #### Device conflict post device registration
 

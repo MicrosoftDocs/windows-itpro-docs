@@ -5,9 +5,10 @@ ms.prod: windows-client
 author: aczechowski
 ms.localizationpriority: medium
 ms.author: aaroncz
-ms.topic: article
+ms.topic: reference
+ms.collection: must-keep
 ms.reviewer: 
-manager: dougeby
+manager: aaroncz
 ms.technology: itpro-configure
 ms.date: 12/31/2017
 ---
@@ -44,10 +45,10 @@ A device account is a Microsoft Exchange account that's connected with Skype for
 | Email  | Email address  | Email address of the device account.  |
 | ExchangeServer  | Exchange Server  | Normally, the device will try to automatically discover the Exchange server. This field is only required if automatic discovery fails.  |
 | Password  | Password  | Password for the device account.  |
-| PasswordRotationEnabled  | 0 = enabled</br>1 = disabled  | Specifies whether automatic password rotation is enabled. If you enforce a password expiration policy on the device account, then use this setting to allow the device to manage its own password. It can change the password frequently, without requiring you to manually update the account information when the password expires. You can reset the password at any time using Active Directory or Azure AD.  |
+| PasswordRotationEnabled  | 0 = enabled</br>1 = disabled  | Specifies whether automatic password rotation is enabled. If you enforce a password expiration policy on the device account, then use this setting to allow the device to manage its own password. It can change the password frequently, without requiring you to manually update the account information when the password expires. You can reset the password at any time using Active Directory or Microsoft Entra ID.  |
 | SipAddress  | Session Initiation Protocol (SIP) address   | Normally, the device will try to automatically discover the SIP. This field is only required if automatic discovery fails.  |
 | UserName  | User name  | Username of the device account when using Active Directory.  |
-| UserPrincipalName  | User principal name (UPN)  | To use a device account from Azure Active Directory or a hybrid deployment, you should specify the UPN of the device account.  |
+| UserPrincipalName  | User principal name (UPN)  | To use a device account from Microsoft Entra ID or a hybrid deployment, you should specify the UPN of the device account.  |
 | ValidateAndCommit  | Any text | Validates the data provided and then commits the changes. This process occurs automatically after the other DeviceAccount settings are applied. The text you enter for the ValidateAndCommit setting doesn't matter. |
 
 ## Dot3
