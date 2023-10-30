@@ -16,7 +16,7 @@ Copilot in Windows provides centralized generative AI assistance to your users r
 
 > [!Note]
 > - Copilot in Windows is currently available as a preview. We will continue to experiment with new ideas and methods using your feedback.
-> - Copilot in Windows will be available in all global markets, including the UK, except mainland China, Belarus, Russia, and the European Economic Area.
+> - Copilot in Windows is being released in preview to select global markets as part of our latest update to Windows 11. The initial markets for the Copilot in Windows preview include North America and parts of Asia and South America. It is our intention to add additional markets over time.
 
 ## Configure Copilot in Windows for commercial environments
 
@@ -58,7 +58,7 @@ Copilot in Windows can use either Bing Chat or Bing Chat Enterprise as its chat 
    - Microsoft 365 Business Premium
 
   > [!Note]
-  > Bing Chat Enterprise and Bing Chat don't have access to Microsoft Graph, unlike [Microsoft 365 Copilot](/microsoft-365-copilot/microsoft-365-copilot-overview) which is used in Microsoft 365 apps. This means that Bing Chat Enterprise and Bing Chat can't access Microsoft 365 Apps data, such as email, calendar, or files.
+  > Bing Chat Enterprise and Bing Chat don't have access to Microsoft Graph, unlike [Microsoft 365 Copilot](/microsoft-365-copilot/microsoft-365-copilot-overview) which can be used in the Microsoft 365 apps. This means that Bing Chat Enterprise and Bing Chat can't access Microsoft 365 Apps data, such as email, calendar, or files.
 
 ## Configure the chat provider platform that Copilot in Windows uses
 
@@ -123,7 +123,7 @@ Once you've configured the chat provider platform that Copilot in Windows uses, 
 
 ### Enable the Copilot in Windows user experience for Windows 11, version 22H2 clients
 
-Copilot in Windows isn't technically enabled by default for managed Windows 11, version 22H2 devices because it's behind a [temporary enterprise control](/windows/whats-new/temporary-enterprise-feature-control). For the purposes of temporary enterprise control, a system is considered managed if it's configured to get updates from Windows Update for Business or [Windows Server Update Services (WSUS)](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus). Clients that get updates from Microsoft Configuration Manager and Microsoft Intune are considered managed since their updates ultimately come from WSUS or Windows Updates for Business.
+Copilot in Windows isn't technically enabled by default for managed Windows 11, version 22H2 devices because it's behind a [temporary enterprise control](/windows/whats-new/temporary-enterprise-feature-control). For the purposes of temporary enterprise control, a system is considered managed if it's configured to get updates from Windows Update for Business or [Windows Server Update Services (WSUS)](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus). Clients that get updates from Microsoft Configuration Manager, Microsoft Intune, and Windows Autopatch are considered managed since their updates ultimately come from WSUS or Windows Updates for Business.
 
 To enable Copilot in Windows for managed Windows 11, version 22H2 devices, you need to enable features under temporary enterprise control for these devices. Since enabling features behind [temporary enterprise control](/windows/whats-new/temporary-enterprise-feature-control) can be impactful, you should test this change before deploying it broadly. To enable Copilot in Windows for managed Windows 11, version 22H2 devices, use the following instructions:
 
@@ -134,7 +134,7 @@ To enable Copilot in Windows for managed Windows 11, version 22H2 devices, you n
     - **CSP**: ./Device/Vendor/MSFT/Policy/Config/Update/[AllowTemporaryEnterpriseFeatureControl](/windows/client-management/mdm/policy-csp-update?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json#allowtemporaryenterprisefeaturecontrol)
        - In the Intune [settings catalog](/mem/intune/configuration/settings-catalog), this setting is named **Allow Temporary Enterprise Feature Control** under the **Windows Update for Business** category.
      > [!Important]
-     > For the purposes of temporary enterprise control, a system is considered managed if it's configured to get updates from Windows Update for Business or [Windows Server Update Services (WSUS)](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus). Clients that get updates from Microsoft Configuration Manager and Microsoft Intune are considered managed since their updates ultimately come from WSUS or Windows Updates for Business.
+     > For the purposes of temporary enterprise control, a system is considered managed if it's configured to get updates from Windows Update for Business or [Windows Server Update Services (WSUS)](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus). Clients that get updates from Microsoft Configuration Manager, Microsoft Intune, and Windows Autopatch are considered managed since their updates ultimately come from WSUS or Windows Updates for Business.
 
 1. Copilot in Windows will be initially deployed to devices using a controlled feature rollout (CFR). Depending on how soon you start deploying Copilot in Windows, you might also need to [enable optional updates](/windows/deployment/update/waas-configure-wufb#enable-optional-updates) with one of the following policies:
    - **Group Policy:** Computer Configuration\Administrative Templates\Windows Components\Windows Update\Windows Update for Business\\**Allow updates to Windows optional features**
@@ -148,11 +148,11 @@ To enable Copilot in Windows for managed Windows 11, version 22H2 devices, you n
 
 1. Windows 11, version 22H2 devices display Copilot in Windows when the CFR is enabled for the device. CFRs are enabled for devices in phases, sometimes called waves.
 
-### Enable the Copilot in Windows user experience for Windows 11, version 23H2 clients (coming soon)
+### Enable the Copilot in Windows user experience for Windows 11, version 23H2 clients
 
 Once a managed device installs the version 23H2 update, the [temporary enterprise control](/windows/whats-new/temporary-enterprise-feature-control) for Copilot in Windows will be removed. This means that Copilot in Windows will be enabled by default for these devices.
 
-While the user experience for Copilot in Windows is enabled by default, you still need to verify that the correct chat provider platform configured for Copilot in Windows. While every effort has been made to ensure that Bing Chat Enterprise is the default chat provider for commercial organizations, it's still possible that Bing Chat might still be used if the configuration is incorrect, or if other settings are affecting Copilot in Windows. For more information, see: 
+While the user experience for Copilot in Windows is enabled by default, you still need to verify that the correct chat provider platform configured for Copilot in Windows. While every effort has been made to ensure that Bing Chat Enterprise is the default chat provider for commercial organizations, it's still possible that Bing Chat might still be used if the configuration is incorrect, or if other settings are affecting Copilot in Windows. For more information, see:
 - [Configure the chat provider platform that Copilot in Windows uses](#configure-the-chat-provider-platform-that-copilot-in-windows-uses)
 - [Other settings that might affect Copilot in Windows and its underlying chat provider](#other-settings-that-might-affect-copilot-in-windows-and-its-underlying-chat-provider)
 
