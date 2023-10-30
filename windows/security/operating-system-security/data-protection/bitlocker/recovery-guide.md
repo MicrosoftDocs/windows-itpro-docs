@@ -5,18 +5,18 @@ ms.collection:
   - highpri
   - tier1
 ms.topic: how-to
-ms.date: 09/29/2023
+ms.date: 10/30/2023
 ---
 
 # BitLocker recovery overview
 
 BitLocker recovery is the process by which access to a BitLocker-protected drive can be restored if the drive doesn't unlock using its default unlock mechanism.
 
-In a recovery scenario, the following options to restore access to the drive may be available:
+In a recovery scenario, the following options to restore access to the drive may be available, depending on the configured policy settings:
 
 :::row:::
   :::column span="2":::
-    **Recovery password**: a 48-digit number used to unlock a volume when it is in recovery mode. The recovery password may be saved as a text file, printed or stored in Microsoft Entra ID or Active Directory. The user can supply a *recovery password*, if available. A recovery password must be allowed by policy settings, so that users can print or save it.
+    - **Recovery password**: a 48-digit number used to unlock a volume when it is in recovery mode. The recovery password may be saved as a text file, printed or stored in Microsoft Entra ID or Active Directory. The user can supply a recovery password, if available.
   :::column-end:::
   :::column span="2":::
   :::image type="content" source="images/preboot-recovery.png" alt-text="Screenshot of the default BitLocker recovery screen asking enter the recovery password." lightbox="images/preboot-recovery.png" border="false":::
@@ -24,7 +24,7 @@ In a recovery scenario, the following options to restore access to the drive may
 :::row-end:::
 :::row:::
   :::column span="2":::
-    **Recovery key**: an encryption key stored on removable media that can be used for recovering data encrypted on a BitLocker volume. The file name has a format of <protector_id>.bek. For the OS drive, the recovery key can be used to gain access to the device if BitLocker detects a condition that prevents it from unlocking the drive when the device is starting up. A recovery key can also be used to gain access to fixed data drives and removable drives that are encrypted with BitLocker, if for some reason the password is forgotten or the device can't access the drive.
+    - **Recovery key**: an encryption key stored on removable media that can be used for recovering data encrypted on a BitLocker volume. The file name has a format of <protector_id>.bek. For the OS drive, the recovery key can be used to gain access to the device if BitLocker detects a condition that prevents it from unlocking the drive when the device is starting up. A recovery key can also be used to gain access to fixed data drives and removable drives that are encrypted with BitLocker, if for some reason the password is forgotten or the device can't access the drive.
   :::column-end:::
   :::column span="2":::
   :::image type="content" source="images/preboot-recovery-key.png" alt-text="Screenshot of the BitLocker recovery screen asking to plug a USB drive with the recovery key." lightbox="images/preboot-recovery-key.png" border="false":::
@@ -32,12 +32,12 @@ In a recovery scenario, the following options to restore access to the drive may
 :::row-end:::
 :::row:::
   :::column span="4":::
-    **Key package**: decryption key that can be used with the BitLocker Repair tool to reconstruct critical parts of a drive and salvage recoverable data. With the key package and either the *recovery password* or *recovery key*, portions of a corrupted BitLocker-protected drive can be decrypted. Each key package works only for a drive that has the corresponding drive identifier. A key package is not generated automatically, and can be saved on a file or in AD DS.
+    - **Key package**: decryption key that can be used with the BitLocker Repair tool to reconstruct critical parts of a drive and salvage recoverable data. With the key package and either the *recovery password* or *recovery key*, portions of a corrupted BitLocker-protected drive can be decrypted. Each key package works only for a drive that has the corresponding drive identifier. A key package is not generated automatically, and can be saved on a file or in AD DS.
   :::column-end:::
 :::row-end:::
 :::row:::
   :::column span="4":::
-    **Data Recovery Agent certificate**: a Data Recovery Agent (DRA) is a type of certificate that is associated with an Active Directory security principal and that can be used to access any BitLocker encrypted drives configured with the matching public key. DRAs can use their credentials to unlock the drive. If the drive is an OS drive, the drive must be mounted as a data drive on another device for the DRA to unlock it.
+    - **Data Recovery Agent certificate**: a Data Recovery Agent (DRA) is a type of certificate that is associated with an Active Directory security principal and that can be used to access any BitLocker encrypted drives configured with the matching public key. DRAs can use their credentials to unlock the drive. If the drive is an OS drive, the drive must be mounted as a data drive on another device for the DRA to unlock it.
   :::column-end:::
 :::row-end:::
 
@@ -45,40 +45,36 @@ In a recovery scenario, the following options to restore access to the drive may
 
 The following list provides some examples of common events that causes BitLocker to enter recovery mode when attempting to start the operating system:
 
-- Changing the BIOS or firmware boot device order (on devices with TPM 1.2)
-- Having the CD or DVD drive before the hard drive in the BIOS boot order and then inserting or removing a CD or DVD
-- Docking or undocking a portable computer
-- Losing the USB drive that contains the *startup key*
-- Changes to the NTFS partition table on the disk
 - Entering the wrong PIN too many times
 - Turning off the support for reading the USB device in the pre-boot environment from the BIOS or UEFI firmware if using USB-based keys instead of a TPM
+- Having the CD or DVD drive before the hard drive in the BIOS boot order (common with virtual machines)
+- Docking or undocking a portable computer
+- Changes to the NTFS partition table on the disk
+- Changes to the boot manager
 - Turning off, disabling, deactivating, or clearing the TPM
+- TPM self-test failure
+- Upgrading the motherboard to a new one with a new TPM
 - Upgrading critical early startup components, such as a BIOS or UEFI firmware upgrade
-- Removing, inserting, or completely depleting the charge on a smart battery on a portable computer
-- Changes to the boot manager on the disk
 - Hiding the TPM from the operating system
 - Modifying the Platform Configuration Registers (PCRs) used by the TPM validation profile
-- Moving the BitLocker-protected drive into a new computer
-- Upgrading the motherboard to a new one with a new TPM
-- Failing the TPM self-test
+- Moving a BitLocker-protected drive into a new computer
+- On devices with TPM 1.2, changing the BIOS or firmware boot device order
 
-Before beginning recovery, it's recommend to determine what caused recovery. This might help to prevent the problem from occurring again in the future. For instance, if it is determined that an attacker has modified the computer by obtaining physical access, new security policies can be created for tracking who has physical presence. After the recovery password has been used to recover access to the device, BitLocker reseals the encryption key to the current values of the measured components.
+Before beginning recovery, it's recommend to determine *what* caused recovery. This might help to prevent the problem from occurring again in the future. For instance, if it is determined that an attacker has modified the computer by obtaining physical access, new security policies can be created for tracking who has physical presence. After the recovery password has been used to recover access to the device, BitLocker reseals the encryption key to the current values of the measured components.
 
 For planned scenarios, such as a known hardware or firmware upgrades, initiating recovery can be avoided by temporarily suspending BitLocker protection. Because suspending BitLocker leaves the drive fully encrypted, the administrator can quickly resume BitLocker protection after the planned task has been completed. Using suspend and resume also reseals the encryption key without requiring the entry of the recovery key.
 
 > [!NOTE]
 > If suspended, BitLocker automatically resumes protection when the device is rebooted, unless a reboot count is specified using PowerShell or the `manage-bde.exe` command line tool. For more information about suspending BitLocker, review the [BitLocker operations guide](operations-guide.md#suspend-and-resume).
 
-If software maintenance requires the computer to be restarted and two-factor authentication is used, the BitLocker [Network Unlock](network-unlock.md) feature can be enabled to provide the secondary authentication factor when the computers don't have a user to provide the additional authentication method.
-
 > [!TIP]
 > Recovery is described within the context of unplanned or undesired behavior. However, recovery can also be caused as an intended production scenario, for example in order to manage access control. When devices are redeployed to other departments or employees in the organization, BitLocker can be forced into recovery before the device is delivered to a new user.
 
-## Plan for BitLocker recovery
+## BitLocker password recovery storage options
 
 When planning the BitLocker recovery process, first consult the organization's current best practices for recovering sensitive information. For example:
 
-| :ballot_box_with_check: | **Question** |
+| :ballot_box_with_check: | Question |
 |--|--|
 | :black_square_button: | *How does the organization handle lost Windows passwords?* |
 | :black_square_button: | *How does the organization perform smart card PIN resets?* |
@@ -86,19 +82,25 @@ When planning the BitLocker recovery process, first consult the organization's c
 
 Answering the questions helps to determine the best BitLocker recovery process for the organization, and to configure BitLocker policy settings accordingly. For example, if the organization has a process for resetting passwords, a similar process can be used for BitLocker recovery. If users aren't allowed to save or retrieve recovery information, the organization can use a data recovery agents (DRAs) or automatically back up recovery information to Microsoft Entra ID or Active Directory Domain Services (AD DS).
 
-After a BitLocker recovery has been initiated, users can use a recovery password to unlock access to encrypted data. Consider both self-recovery and recovery password retrieval methods for the organization.
+After a BitLocker recovery is initiated, users can use a recovery password to unlock access to encrypted data. Consider both self-recovery and recovery password retrieval methods for the organization.
 
-### User-initaited backup
+In order to recover BitLocker, a user must have access to the recovery password. The BitLocker recovery password is unique to the device it was created on, and can be saved in different ways. Depending on the configured policy settings, the recovery password can be:
 
-In order to recover BitLocker, you need to have access to the recovery password. This means that all recovery scenarios start with the assumption that the recovery password is available. The BitLocker recovery password is unique to the computer it was created on and can be saved in various ways, such as on paper, on a USB startup device, in the Active Directory directory service, or in a file on a network. However, having access to this key allows the holder to unlock a BitLocker-protected volume and access all of its data. Therefore, it is crucial for your organization to establish procedures to control access to recovery passwords and ensure that they are stored securely, separate from the computers they protect.
+- saved in Microsoft Entra ID, for Microsoft Entra joined and Microsoft Entra hybrid joined devices
+- saved in AD DS, for devices that are joined to Active Directory
+- saved on text file
+- printed
 
-#### OneDrive option
+Having access to this key allows the holder to unlock a BitLocker-protected volume and access all of its data. Therefore, it's crucial for your organization to establish procedures to control access to recovery passwords and ensure that they are stored securely, separate from the computers they protect.
 
-There's an option for storing the BitLocker recovery key using OneDrive. This option requires that computers aren't members of a domain and that the user is using a Microsoft Account. Local user accounts don't have the option to use OneDrive. Using the OneDrive option is the default recommended recovery key storage method for computers that aren't joined to a domain.
+> [!NOTE]
+> There's an option for storing the BitLocker recovery key in a user's Microsoft account. This option is available for devices that aren't members of a domain and that the user is using a Microsoft account. Storing the recovery password in a Microsoft account is the default recommended recovery key storage method for devices that aren't Microsoft Entra joined or Active Directory joined.
 
-Users can verify whether the recovery key is saved properly by checking OneDrive for the *BitLocker* folder, which is created automatically during the save process. The folder contains two files, a `readme.txt` and the recovery key. For users storing more than one recovery password on their OneDrive, they can identify the required recovery key by looking at the file name. The recovery key ID is appended to the end of the file name.
+Backup of the recovery password can be configured **before** BitLocker is enabled. The following policy settings define the recovery methods that can be used to restore access to a BitLocker-protected drive if an authentication method fails or is unable to be used:
 
-## Centralized backup
+- [Choose how BitLocker-protected operating system drives can be recovered](configure.md?tabs=os#choose-how-bitlocker-protected-operating-system-drives-can-be-recovered)
+- [Choose how BitLocker-protected fixed drives can be recovered](configure.md?tabs=fixed#choose-how-bitlocker-protected-fixed-drives-can-be-recovered)
+- [Choose how BitLocker-protected removable drives can be recovered](configure.md?tabs=removable#choose-how-bitlocker-protected-removable-drives-can-be-recovered)
 
 The preferred backup methodology in an organization is to automatically store BitLocker recovery information in a central location. Depending on the organization's requirements, the recovery information can be stored in Microsoft Entra ID, AD DS, or file shares.
 
@@ -107,14 +109,10 @@ The recommendation is to use the following BitLocker backup methods:
 - For Microsoft Entra joined devices, store the recovery key in Microsoft Entra ID
 - For Active Directory joined devices, store the recovery key in AD DS
 
-Backup of the recovery password doesn't happen automatically, but policy settings can be configured **before** BitLocker is enabled. The following policy settings define the recovery methods that can be used to restore access to a BitLocker-protected drive if an authentication method fails or is unable to be used.
-
-- [Choose how BitLocker-protected operating system drives can be recovered](configure.md?tabs=os#choose-how-bitlocker-protected-operating-system-drives-can-be-recovered)
-- [Choose how BitLocker-protected fixed drives can be recovered](configure.md?tabs=fixed#choose-how-bitlocker-protected-fixed-drives-can-be-recovered)
-- [Choose how BitLocker-protected removable drives can be recovered](configure.md?tabs=removable#choose-how-bitlocker-protected-removable-drives-can-be-recovered)
-
 > [!IMPORTANT]
 > The *BitLocker key package* can be stored in Active Directory Domain Services (AD DS), not in Microsoft Entra ID.
+
+## BitLocker password retrieval methods
 
 ### Microsoft Entra ID
 

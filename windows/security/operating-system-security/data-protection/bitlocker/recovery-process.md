@@ -5,7 +5,7 @@ ms.collection:
   - highpri
   - tier1
 ms.topic: how-to
-ms.date: 09/29/2023
+ms.date: 10/30/2023
 ---
 
 # BitLocker recovery process

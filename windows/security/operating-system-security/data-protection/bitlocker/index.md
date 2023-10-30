@@ -5,7 +5,7 @@ ms.collection:
   - highpri
   - tier1
 ms.topic: overview
-ms.date: 09/25/2023
+ms.date: 10/30/2023
 ---
 
 # BitLocker overview
@@ -132,6 +132,8 @@ It's recommended to keep device encryption on for any systems that support it. H
 | Path|Name|Type|Value|
 |-|-|-|-|
 | `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\BitLocker`| `PreventDeviceEncryption`|REG_DWORD|0x1|
+
+For more information about device encryption, see [BitLocker device encryption hardware requirements](/windows-hardware/design/device-experiences/oem-bitlocker#bitlocker-automatic-device-encryption).
 
 ## Next steps
 

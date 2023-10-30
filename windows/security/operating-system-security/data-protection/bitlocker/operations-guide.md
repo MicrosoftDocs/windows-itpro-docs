@@ -4,7 +4,7 @@ description: Learn how to use different tools to manage and operate BitLocker.
 ms.collection: 
   - tier1
 ms.topic: how-to
-ms.date: 10/18/2023
+ms.date: 10/30/2023
 ---
 
 # BitLocker operations guide

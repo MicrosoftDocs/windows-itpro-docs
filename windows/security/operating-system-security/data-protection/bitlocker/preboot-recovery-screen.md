@@ -5,7 +5,7 @@ ms.collection:
   - highpri
   - tier1
 ms.topic: concept-article
-ms.date: 10/19/2023
+ms.date: 10/30/2023
 ---
 
 # BitLocker preboot recovery screen
