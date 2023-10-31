@@ -13,20 +13,25 @@ ms.collection:
 
 # Configure federated sign-in for Windows devices
 
-Starting in Windows 11 SE, version 22H2 and Windows 11 Pro Edu/Education, version 22H2 with [KB5022913][KB-1], you can enable your users to sign-in using a federated identity provider (IdP) via web sign-in.\
-This feature is called *federated sign-in*.\
-Federated sign-in is a great way to simplify the sign-in process for your users: instead of having to remember a username and password defined in Microsoft Entra ID, they can sign-in using their existing credentials from the IdP. For example, students and educators can use QR code badges to sign-in.
+Starting in Windows 11 SE, version 22H2 and Windows 11 Pro Edu/Education, version 22H2 with [KB5022913][KB-1], you can enable your users to sign-in using a federated identity provider (IdP) via a web sign-in experience.\
+Signing in with a federated identity can be a great way to simplify the sign-in process for your users: instead of having to remember a username and password defined in Microsoft Entra ID, they can sign-in using their existing credentials from the IdP. For example, students and educators can use QR code badges to sign-in.
 
 ## Benefits of federated sign-in
 
-Federated sign-in enables students to sign-in in less time, and with less friction.
+A federated sign-in experience enables students to sign-in in less time, and with less friction.
 With fewer credentials to remember and a simplified sign-in process, students are more engaged and focused on learning.
+
+There are two Windows features that enable a federated sign-in experience:
+
+- *Federated sign-in*, which is designed for 1:1 student devices. For an optimal experience, you should not enable federated sign-in on shared devices
+- *Web sign-in*, which provides a similar experience to *Federated sign-in*, and can be used for shared devices
+
 > [!IMPORTANT]
-> Currently, this feature is designed for 1:1 devices. For an optimal experience, you should not enable federated sign-in on shared devices.
+> *Federated sign-in* and *Web sign-in* require different configurations, which are explained in this document.
 
 ## Prerequisites
 
-To implement federated sign-in, the following prerequisites must be met:
+To enable a federated sign-in experience, the following prerequisites must be met:
 
 1. A Microsoft Entra tenant, with one or multiple domains federated to a third-party IdP. For more information, see [What is federation with Microsoft Entra ID?][AZ-1] and [Use a SAML 2.0 IdP for Single Sign On][AZ-4]
     >[!NOTE]
@@ -43,9 +48,9 @@ To implement federated sign-in, the following prerequisites must be met:
 
     For more information about identity matching, see [Identity matching in Microsoft Entra ID](#identity-matching-in-azure-ad).
 1. Licenses assigned to the Microsoft Entra user accounts. It's recommended to assign licenses to a dynamic group: when new users are provisioned in Microsoft Entra ID, the licenses are automatically assigned. For more information, see [Assign licenses to users by group membership in Microsoft Entra ID][AZ-2]
-1. Enable federated sign-in on the Windows devices
+1. Enable Federated sign-in or Web sign-in on the Windows devices, depending if the devices are shared or assigned to a single student
 
-To use federated sign-in, the devices must have Internet access. This feature doesn't work without it, as the authentication is done over the Internet.
+To use Federated sign-in or Web sign-in, the devices must have Internet access. These features don't work without it, as the authentication is done over the Internet.
 
 > [!IMPORTANT]
 > WS-Fed is the only supported federated protocol to join a device to Microsoft Entra ID. If you have a SAML 2.0 IdP, it's recommended to complete the Microsoft Entra join process using one of the following methods:
@@ -54,25 +59,25 @@ To use federated sign-in, the devices must have Internet access. This feature do
 
 [!INCLUDE [federated-sign-in](../../includes/licensing/federated-sign-in.md)]
 
-Federated sign-in for student assigned (1:1) devices is supported on the following Windows editions and versions:
+Federated sign-in is supported on the following Windows editions and versions:
 
 - Windows 11 SE, version 22H2 and later
 - Windows 11 Pro Edu/Education, version 22H2 with [KB5022913][KB-1]
 
-Federated sign-in for shared devices is supported starting in Windows 11 SE/Pro Edu/Education, version 22H2 with [KB5026446][KB-2].
+Web sign-in is supported starting in Windows 11 SE/Pro Edu/Education, version 22H2 with [KB5026446][KB-2].
 
-## Configure federated sign-in
+## Configure a federated sign-in experience
 
-You can configure federated sign-in for student assigned (1:1) devices or student shared devices:
+You can configure a federated sign-in experience for student assigned (1:1) devices or student shared devices:
 
-- When federated sign-in is configured for **student assigned (1:1) devices**, the first user who signs in to the device with a federated identity becomes the *primary user*. The primary user is always displayed in the bottom left corner of the sign-in screen
-- When federated sign-in is configured for **student shared devices**, there's no primary user. The sign-in screen displays, by default, the last user who signed in to the device
+- When federated sign-in is configured for **student assigned (1:1) devices**, you use a Windows feature called *Federated sign-in*. The first user who signs in to the device with a federated identity becomes the *primary user*. The primary user is always displayed in the bottom left corner of the sign-in screen
+- When federated sign-in is configured for **student shared devices**, you use a Windows feature called *Web sign-in*. With Web sign-in there's no primary user, and the sign-in screen displays, by default, the last user who signed in to the device
 
 The configuration is different for each scenario, and is described in the following sections.
 
-### Configure federated sign-in for student assigned (1:1) devices
+### Configure Federated sign-in for student assigned (1:1) devices
 
-To use web sign-in with a federated identity provider, your devices must be configured with different policies. Review the following instructions to configure your devices using either Microsoft Intune or a provisioning package (PPKG).
+Review the following instructions to configure your devices using either Microsoft Intune or a provisioning package (PPKG).
 
 #### [:::image type="icon" source="images/icons/intune.svg"::: **Intune**](#tab/intune)
 
@@ -98,7 +103,7 @@ Alternatively, you can configure devices using a [custom policy][INT-1] with the
 
 #### [:::image type="icon" source="images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
 
-To configure federated sign-in using a provisioning package, use the following settings:
+To configure Federated sign-in using a provisioning package, use the following settings:
 
 | Setting |
 |--------|
@@ -109,16 +114,16 @@ To configure federated sign-in using a provisioning package, use the following s
 
 :::image type="content" source="images/federated-sign-in-settings-ppkg.png" alt-text="Screenshot of Custom policy showing the settings to be configured to enable federated sign-in" lightbox="images/federated-sign-in-settings-ppkg.png" border="true":::
 
-Apply the provisioning package to the single-user devices that require federated sign-in.
+Apply the provisioning package to the 1:1 devices that require Federated sign-in.
 
 > [!IMPORTANT]
 > There was an issue affecting Windows 11, version 22H2 when using provisioning packages during OOBE. The issue was fixed with the KB5020044 update. If you plan to configure federated sign-in with a provisioning package during OOBE, ensure that the devices have the update installed. For more information, see [KB5020044][KB-1].
 
 ---
 
-### Configure federated sign-in for student shared devices
+### Configure Web sign-in for student shared devices
 
-To use web sign-in with a federated identity provider, your devices must be configured with different policies. Review the following instructions to configure your shared devices using either Microsoft Intune or a provisioning package (PPKG).
+Review the following instructions to configure your shared devices using either Microsoft Intune or a provisioning package (PPKG).
 
 #### [:::image type="icon" source="images/icons/intune.svg"::: **Intune**](#tab/intune)
 
@@ -146,7 +151,7 @@ Alternatively, you can configure devices using a [custom policy][INT-1] with the
 
 #### [:::image type="icon" source="images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
 
-To configure federated sign-in using a provisioning package, use the following settings:
+To configure web sign-in using a provisioning package, use the following settings:
 
 | Setting |
 |--------|
@@ -156,7 +161,7 @@ To configure federated sign-in using a provisioning package, use the following s
 | <li> Path: **`Policies/Authentication/ConfigureWebSignInAllowedUrls`**<br>Value: Semicolon separated list of domains, for example: **`samlidp.clever.com;clever.com;mobile-redirector.clever.com`**|
 | <li> Path: **`Policies/Authentication/ConfigureWebCamAccessDomainNames`**<br>Value: This setting is optional, and it should be configured if you need to use the webcam during the sign-in process. Specify the list of domains that are allowed to use the webcam during the sign-in process, separated by a semicolon. For example: **`clever.com`**|
 
-Apply the provisioning package to the shared devices that require federated sign-in.
+Apply the provisioning package to the shared devices that require web sign-in.
 
 > [!IMPORTANT]
 > There was an issue affecting Windows 11, version 22H2 when using provisioning packages during OOBE. The issue was fixed with the KB5020044 update. If you plan to configure federated sign-in with a provisioning package during OOBE, ensure that the devices have the update installed. For more information, see [KB5020044][KB-1].
@@ -172,7 +177,7 @@ As users enter their username, they're redirected to the identity provider sign-
 :::image type="content" source="./images/win-11-se-federated-sign-in.gif" alt-text="Screenshot of Windows 11 SE sign-in using federated sign-in through Clever and QR code badge, in a student assigned (1:1) device." border="false":::
 
 > [!IMPORTANT]
-> For student assigned (1:1) devices, once the policy is enabled, the first user who sign-in to the device will also set the disambiguation page to the identity provider domain on the device. This means that the device will be defaulting to that IdP. The user can exit the federated sign-in flow by pressing <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Delete</kbd> to get back to the standard Windows sign-in screen.
+> For student assigned (1:1) devices, once the policy is enabled, the first user who sign-in to the device will also set the disambiguation page to the identity provider domain on the device. This means that the device will be defaulting to that IdP. The user can exit the Federated sign-in flow by pressing <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Delete</kbd> to get back to the standard Windows sign-in screen.
 > The behavior is different for student shared devices, where the disambiguation page is always shown, unless preferred Microsoft Entra tenant name is configured.
 
 ## Important considerations
