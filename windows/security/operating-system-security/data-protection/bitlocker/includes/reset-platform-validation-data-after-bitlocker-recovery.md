@@ -12,7 +12,7 @@ This policy setting determines if platform validation data should refresh when W
 If you enable this policy setting, platform validation data is refreshed when Windows is started following BitLocker recovery. This is the default behavior.\
 If you disable this policy setting, platform validation data won't be refreshed when Windows is started following BitLocker recovery.
 
-For more information about the recovery process, see the [BitLocker recovery guide](../bitlocker-recovery-guide-plan.md).
+For more information about the recovery process, see the [BitLocker recovery overview](../recovery-overview.md).
 
 |  | Path |
 |--|--|

@@ -1,6 +1,6 @@
 ---
 title: BitLocker recovery process
-description: Learn how to manage BitLocker keys for Microsoft Entra joined, Microsoft Entra hybrid joined, and Active Directory joined devices.
+description: Learn how to obtain BitLocker recovery information for Microsoft Entra joined, Microsoft Entra hybrid joined, and Active Directory joined devices, and how to restore access to a locked drive.
 ms.collection: 
   - highpri
   - tier1
@@ -10,7 +10,7 @@ ms.date: 10/30/2023
 
 # BitLocker recovery process
 
-This article describes how to recover BitLocker keys from Microsoft Entra ID and Active Directory Domain Services (AD DS). This article assumes that it's understood how to configure devices to automatically backup BitLocker recovery information, and what types of recovery information are saved to Microsoft Entra ID and AD DS.
+This article describes how to obtain BitLocker recovery information for Microsoft Entra joined, Microsoft Entra hybrid joined, and Active Directory joined devices. This article assumes that it's understood how to configure devices to automatically backup BitLocker recovery information, and what types of recovery information are saved to Microsoft Entra ID and AD DS.
 
 ## Recovery password retrieval
 
@@ -312,3 +312,8 @@ In this example, if the private key is available in the local certificate store,
 ```cmd
 manage-bde -unlock E: -Certificate -ct 9de688607336294a52b445d30d1eb92f0bec1e78
 ```
+
+
+
+<!--After the recovery password has been used to recover access to the device, BitLocker reseals the encryption key to the current values of the measured components.
+-->

@@ -188,7 +188,7 @@ For more information about how to configure Network unlock feature, see [Network
 
 ## BitLocker recovery
 
-Organizations should carefully plan a BitLocker recovery strategy as part of the overall BitLocker implementation plan. There are different options when it comes to design a BitLocker recovery model, which are described in the [BitLocker recovery guide](recovery-guide.md).
+Organizations should carefully plan a BitLocker recovery strategy as part of the overall BitLocker implementation plan. There are different options when it comes to implement a BitLocker recovery model, which are described in the [BitLocker recovery overview](recovery-overview.md).
 
 ## Monitor BitLocker
 
@@ -200,7 +200,7 @@ Organizations can use Microsoft Intune or Configuration Manager to monitor devic
 > Learn how to plan a BitLocker recovery strategy for your organization.
 >
 >
-> [BitLocker recovery guide >](recovery-guide.md)
+> [BitLocker recovery overview >](recovery-overview.md)
 
 > [!div class="nextstepaction"]
 > Learn about the available options to configure BitLocker and how to configure them via Configuration Service Providers (CSP) or group policy (GPO).

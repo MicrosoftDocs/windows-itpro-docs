@@ -587,7 +587,7 @@
     },
     {
       "source_path": "windows/security/information-protection/bitlocker/bitlocker-recovery-guide-plan.md",
-      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/bitlocker-recovery-guide-plan",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/recovery-overview",
       "redirect_document_id": false
     },
     {
@@ -7432,7 +7432,7 @@
     },
     {
       "source_path": "windows/security/operating-system-security/data-protection/bitlocker/bitlocker-recovery-guide-plan.md",
-      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/recovery",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/recovery-overview",
       "redirect_document_id": false
     },
     {

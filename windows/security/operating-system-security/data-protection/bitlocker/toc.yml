@@ -12,7 +12,7 @@ items:
 - name: BitLocker recovery guide
   items:
     - name: BitLocker recovery overview
-      href: recovery-guide.md
+      href: recovery-overview.md
     - name: BitLocker recovery process
       href: recovery-process.md
     - name: Preboot recovery screen
