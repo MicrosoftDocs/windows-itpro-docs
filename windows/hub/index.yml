@@ -24,10 +24,10 @@ highlightedContent:
     url: /windows/whats-new/windows-11-overview
   - title: Windows 11, version 23H2
     itemType: whats-new
-    url: /windows/whats-new/whats-new-windows-11-version-23H2
-  - title: Windows 11, version 22H2 group policy settings reference 
+    url: /windows/whats-new/whats-new-windows-11-version-23h2
+  - title: Windows 11, version 23H2 group policy settings reference
     itemType: download
-    url: https://www.microsoft.com/en-us/download/details.aspx?id=104594
+    url: https://www.microsoft.com/download/details.aspx?id=105668
   - title: Windows release health
     itemType: whats-new
     url: /windows/release-health
