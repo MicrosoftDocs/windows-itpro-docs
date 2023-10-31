@@ -39,10 +39,10 @@ landingContent:
     linkLists:
       - linkListType: whats-new
         links:
-          - text: What's new in Windows 11, version 22H2
-            url: whats-new-windows-11-version-22h2.md
           - text: What's new in Windows 11, version 23H2
             url: whats-new-windows-11-version-23h2.md
+          - text: What's new in Windows 11, version 22H2
+            url: whats-new-windows-11-version-22h2.md
 
   - title: Windows 10
     linkLists:
