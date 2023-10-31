@@ -33,7 +33,7 @@ The following list provides examples of common events that cause a device to ent
 - Moving a BitLocker-protected drive into a new computer
 - On devices with TPM 1.2, changing the BIOS or firmware boot device order
 
-Before starting the [BitLocker recovery process](recovery-process.md), it's recommend to determine what caused a device to enter in recovery mode. Root cause analysis might help to prevent the problem from occurring again in the future. For instance, if it's' determined that an attacker has modified the device by obtaining physical access, new security policies can be implemented for tracking who has physical presence.
+As part of the [BitLocker recovery process](recovery-process.md), it's recommend to determine what caused a device to enter in recovery mode. Root cause analysis might help to prevent the problem from occurring again in the future. For instance, if it's' determined that an attacker has modified the device by obtaining physical access, new security policies can be implemented for tracking who has physical presence.
 
 For planned scenarios, such as a known hardware or firmware upgrades, initiating recovery can be avoided by temporarily suspending BitLocker protection. Suspending BitLocker leaves the drive fully encrypted, and the administrator can quickly resume BitLocker protection after the planned task is completed. Using *suspend* and *resume* also reseals the encryption key without requiring the entry of the recovery key.
 
@@ -98,7 +98,7 @@ Having access to the recovery password allows the holder to unlock a BitLocker-p
 > [!NOTE]
 > There's an option for storing the BitLocker recovery key in a user's Microsoft account. This option is available for devices that aren't members of a domain and that the user is using a Microsoft account. Storing the recovery password in a Microsoft account is the default recommended recovery key storage method for devices that aren't Microsoft Entra joined or Active Directory joined.
 
-Backup of the recovery password should be configured before BitLocker is enabled. The following policy settings define the recovery methods that can be used to restore access to a BitLocker-protected drive:
+Backup of the recovery password should be configured before BitLocker is enabled, but can also be done after encryption, as described in . The following policy settings define the recovery methods that can be used to restore access to a BitLocker-protected drive:
 
 - [Choose how BitLocker-protected operating system drives can be recovered](configure.md?tabs=os#choose-how-bitlocker-protected-operating-system-drives-can-be-recovered)
 - [Choose how BitLocker-protected fixed drives can be recovered](configure.md?tabs=fixed#choose-how-bitlocker-protected-fixed-drives-can-be-recovered)
@@ -115,18 +115,22 @@ The recommendation is to use the following BitLocker backup methods:
 
 DRAs can be used to recover OS drives, fixed data drives, and removable data drives. However, when used to recover OS drives, the operating system drive must be mounted on another device as a *data drive* for the DRA to be able to unlock the drive. Data recovery agents are added to the drive when it's encrypted, and can be updated after encryption occurs.
 
-The benefit of using a DRA over password or key recovery is that the DRA acts as a *master key* for BitLocker. With a DRA you can recover any volume protected by the policy, without having to find a specific password or key for each individual volume."
+The benefit of using a DRA over password or key recovery is that the DRA acts as a *master key* for BitLocker. With a DRA you can recover any volume protected by the policy, without having to find a specific password or key for each individual volume.
 
 To configure DRAs for devices that are joined to an Active Directory domain, the following steps are required:
 
 1. Obtain a DRA certificate. The following key usage and enhanced key usage attributes are inspected by BitLocker before using the certificate.
   1. If a key usage attribute is present, it must be one of the following:
+
     - `CERT_DATA_ENCIPHERMENT_KEY_USAGE`
     - `CERT_KEY_AGREEMENT_KEY_USAGE`
-    -`CERT_KEY_ENCIPHERMENT_KEY_USAGE`
+    - `CERT_KEY_ENCIPHERMENT_KEY_USAGE`
+
   1.  If an enhanced key usage (EKU) attribute is present, it must be one of the following:
+
     - As specified in the policy setting, or the default `1.3.6.1.4.1.311.67.1.1`
     - Any EKU object identifier supported by your certification authority (CA)
+
 1. Add the DRA via group policy using the path: **Computer configuration** > **Policies** > **Windows Settings** > **Security Settings** > **Public Key Policies** > **BitLocker Drive Encryption**
 1. Configure the [Provide the unique identifiers for your organization](configure.md?tabs=common#provide-the-unique-identifiers-for-your-organization) policy setting to associate a unique identifier to a new drive that is enabled with BitLocker. An identification field is a string that is used to uniquely identify a business unit or organization. Identification fields are required for management of data recovery agents on BitLocker-protected drives. BitLocker only manages and updates DRAs when an identification field is present on a drive, and is identical to the value configured on the device
 
@@ -182,15 +186,9 @@ To make sure the correct password is provided and/or to prevent providing the in
 
 Since the password ID is a unique value that is associated with each recovery password stored in AD DS, running a query using this ID finds the correct password to unlock the encrypted volume.
 
-
-
 ## Next steps
 
 > [!div class="nextstepaction"]
 > Learn about the process to unlock a BitLocker-protected volume, and suggested practices:
->
-> [BitLocker recovery process >](operations-guide.md)
->
-> Learn about the information displayed in the BitLocker preboot recovery screen, depending on configured policy settings and recovery keys status:
 >
 > [BitLocker recovery process >](operations-guide.md)
