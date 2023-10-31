@@ -12,14 +12,14 @@ ms.date: 10/30/2023
 
 BitLocker recovery is the process by which access to a BitLocker-protected drive can be restored if the drive doesn't unlock using its default unlock mechanism.
 
-This article describes scenarios that trigger BitLocker recovery, the options to restore access to a locked drive, and details about the information that can be stored in Microsoft Entra ID and Active Directory Domain Services (AD DS) when BitLocker is enabled.
+This article describes scenarios that trigger BitLocker recovery, how to configure devices to save recovery information, and the options to restore access to a locked drive.
 
 ## BitLocker recovery scenarios
 
 The following list provides examples of common events that cause a device to enter BitLocker recovery mode when starting Windows:
 
 - Entering the wrong PIN too many times
-- Turning off the support for reading the USB device in the pre-boot environment from the BIOS or UEFI firmware if using USB-based keys instead of a TPM
+- Turning off the support for reading the USB device in the preboot environment from the BIOS or UEFI firmware if using USB-based keys instead of a TPM
 - Having the CD or DVD drive before the hard drive in the BIOS boot order (common with virtual machines)
 - Docking or undocking a portable computer
 - Changes to the NTFS partition table on the disk
@@ -33,7 +33,7 @@ The following list provides examples of common events that cause a device to ent
 - Moving a BitLocker-protected drive into a new computer
 - On devices with TPM 1.2, changing the BIOS or firmware boot device order
 
-As part of the [BitLocker recovery process](recovery-process.md), it's recommend to determine what caused a device to enter in recovery mode. Root cause analysis might help to prevent the problem from occurring again in the future. For instance, if it's' determined that an attacker has modified the device by obtaining physical access, new security policies can be implemented for tracking who has physical presence.
+As part of the [BitLocker recovery process](recovery-process.md), it's recommended to determine what caused a device to enter in recovery mode. Root cause analysis might help to prevent the problem from occurring again in the future. For instance, if you determine that an attacker modified a device by obtaining physical access, you can implement new security policies for tracking who has physical presence.
 
 For planned scenarios, such as a known hardware or firmware upgrades, initiating recovery can be avoided by temporarily suspending BitLocker protection. Suspending BitLocker leaves the drive fully encrypted, and the administrator can quickly resume BitLocker protection after the planned task is completed. Using *suspend* and *resume* also reseals the encryption key without requiring the entry of the recovery key.
 
@@ -45,11 +45,11 @@ For planned scenarios, such as a known hardware or firmware upgrades, initiating
 
 ## BitLocker recovery options
 
-In a recovery scenario, the following options to restore access to the drive may be available, depending on the policy settings applied to the devices:
+In a recovery scenario, the following options to restore access to the drive might be available, depending on the policy settings applied to the devices:
 
 :::row:::
   :::column span="2":::
-    - **Recovery password**: a 48-digit number used to unlock a volume when it is in recovery mode. The recovery password may be saved as a text file, printed or stored in Microsoft Entra ID or Active Directory. The user can supply a recovery password, if available
+    - **Recovery password**: a 48-digit number used to unlock a volume when it is in recovery mode. The recovery password might be saved as a text file, printed or stored in Microsoft Entra ID or Active Directory. The user can supply a recovery password, if available
   :::column-end:::
   :::column span="2":::
   :::image type="content" source="images/preboot-recovery.png" alt-text="Screenshot of the default BitLocker recovery screen asking enter the recovery password." lightbox="images/preboot-recovery.png" border="false":::
@@ -65,7 +65,7 @@ In a recovery scenario, the following options to restore access to the drive may
 :::row-end:::
 :::row:::
   :::column span="4":::
-    - **Key package**: decryption key that can be used with the BitLocker Repair tool to reconstruct critical parts of a drive and salvage recoverable data. With the key package and either the *recovery password* or *recovery key*, portions of a corrupted BitLocker-protected drive can be decrypted. Each key package works only for a drive that has the corresponding drive identifier. A key package is not generated automatically, and can be saved on a file or in Active Directory Domain Services. A key package can't be stored in Microsoft Entra ID
+    - **Key package**: decryption key that can be used with the BitLocker Repair tool to reconstruct critical parts of a drive and salvage recoverable data. With the key package and either the *recovery password* or *recovery key*, portions of a corrupted BitLocker-protected drive can be decrypted. Each key package works only for a drive that has the corresponding drive identifier. A key package isn't generated automatically, and can be saved on a file or in Active Directory Domain Services. A key package can't be stored in Microsoft Entra ID
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -81,11 +81,11 @@ When planning the BitLocker recovery process, first consult the organization's c
 
 | :ballot_box_with_check: | Question |
 |--|--|
-| :black_square_button: | *How does the organization handle lost or forgotted passwords?* |
+| :black_square_button: | *How does the organization handle lost or forgotten passwords?* |
 | :black_square_button: | *How does the organization perform smart card PIN resets?* |
 | :black_square_button: | *Are users allowed to save or retrieve recovery information for the devices that they own?* |
 
-Answering the questions helps to determine the best BitLocker recovery process for the organization, and to configure BitLocker policy settings accordingly. For example, if the organization has a process for resetting passwords, a similar process can be used for BitLocker recovery. If users aren't allowed to save or retrieve recovery information, the organization can use a data recovery agents (DRAs) or automatically back up recovery information to Microsoft Entra ID or Active Directory Domain Services (AD DS).
+Answering the questions helps to determine the best BitLocker recovery process for the organization, and to configure BitLocker policy settings accordingly. For example, if the organization has a process for resetting passwords, a similar process can be used for BitLocker recovery. If users aren't allowed to save or retrieve recovery information, the organization can use a data recovery agents (DRAs), or automatically back up recovery information.
 
 The following policy settings define the recovery methods that can be used to restore access to a BitLocker-protected drive:
 
@@ -97,12 +97,12 @@ The following policy settings define the recovery methods that can be used to re
 
 To recover BitLocker, a user can use a recovery password, if available. The BitLocker recovery password is unique to the device it was created on, and can be saved in different ways. Depending on the configured policy settings, the recovery password can be:
 
-- saved in Microsoft Entra ID, for Microsoft Entra joined and Microsoft Entra hybrid joined devices
-- saved in AD DS, for devices that are joined to Active Directory
-- saved on text file
-- printed
+- Saved in Microsoft Entra ID, for Microsoft Entra joined
+- Saved in AD DS, for devices that are joined to Active Directory
+- Saved on text file
+- Printed
 
-Having access to the recovery password allows the holder to unlock a BitLocker-protected volume and access all of its data. Therefore, it's important for your organization to establish procedures to control access to recovery passwords and ensure that they are stored securely, separate from the devices they protect.
+Having access to the recovery password allows the holder to unlock a BitLocker-protected volume and access all of its data. Therefore, it's important for your organization to establish procedures to control access to recovery passwords and ensure that they're stored securely, separate from the devices they protect.
 
 > [!NOTE]
 > There's an option for storing the BitLocker recovery key in a user's Microsoft account. This option is available for devices that aren't members of a domain and that the user is using a Microsoft account. Storing the recovery password in a Microsoft account is the default recommended recovery key storage method for devices that aren't Microsoft Entra joined or Active Directory joined.
@@ -124,11 +124,11 @@ The benefit of using a DRA over password or key recovery is that the DRA acts as
 To configure DRAs for devices that are joined to an Active Directory domain, the following steps are required:
 
 1. Obtain a DRA certificate. The following key usage and enhanced key usage attributes are inspected by BitLocker before using the certificate.
-    1. If a key usage attribute is present, it must be one of the following:
+    1. If a key usage attribute is present, it must be either:
         - `CERT_DATA_ENCIPHERMENT_KEY_USAGE`
         - `CERT_KEY_AGREEMENT_KEY_USAGE`
         - `CERT_KEY_ENCIPHERMENT_KEY_USAGE`
-    1. If an enhanced key usage (EKU) attribute is present, it must be one of the following:
+    1. If an enhanced key usage (EKU) attribute is present, it must be either:
         - As specified in the policy setting, or the default `1.3.6.1.4.1.311.67.1.1`
         - Any EKU object identifier supported by your certification authority (CA)
 1. Add the DRA via group policy using the path: **Computer configuration** > **Policies** > **Windows Settings** > **Security Settings** > **Public Key Policies** > **BitLocker Drive Encryption**
@@ -144,7 +144,7 @@ The BitLocker recovery information for Microsoft Entra joined devices can be sto
 
 Access to recovery passwords can also be delegated to the help desk, to facilitate support scenarios.
 
-The BitLocker recovery password information is a `bitlockerRecoveryKey` resource type. The resource can be retrieved from the Microsoft Entra portal, the Microsoft Intune admin center (for devices enrolled in Microsoft Intune), using PowerShell, or using Microsoft Graph. For more information, see [bitlockerRecoveryKey resource type](/graph/api/resources/bitlockerrecoverykeystored).
+The BitLocker recovery password information stored in Microsoft Entra ID is a `bitlockerRecoveryKey` resource type. The resource can be retrieved from the Microsoft Entra admin center, the Microsoft Intune admin center (for devices enrolled in Microsoft Intune), using PowerShell, or using Microsoft Graph. For more information, see [bitlockerRecoveryKey resource type](/graph/api/resources/bitlockerrecoverykey).
 
 ## BitLocker recovery information stored in AD DS
 
@@ -162,7 +162,7 @@ The common name (cn) for the BitLocker recovery object is `ms-FVE-RecoveryInform
 |`ms-FVE-RecoveryPassword`| The 48-digit recovery password used to recover a BitLocker-encrypted disk volume.|
 |`ms-FVE-RecoveryGuid`| GUID associated with a BitLocker recovery password. In BitLocker's recovery mode, the GUID is displayed to the user, so that the correct recovery password can be located to unlock the volume. The GUID is also included in the name of the recovery object.|
 |`ms-FVE-VolumeGuid`| GUID associated with a BitLocker-supported disk volume. While the password (stored in `ms-FVE-RecoveryGuid`) is unique for each recovery password, the volume identifier is unique for each BitLocker-encrypted volume.|
-|`ms-FVE-KeyPackage`| Volume's BitLocker encryption key secured by the corresponding recovery password. With this key package and the recovery password (stored in `ms-FVE-RecoveryPassword`), portions of a BitLocker-protected volume can be decrypted if the disk is corrupted. Each key package will work only for a volume that has the corresponding volume identifier (stored in `ms-FVE-VolumeGuid`). The BitLocker Repair Tool can be used to make use of the key package.|
+|`ms-FVE-KeyPackage`| Volume's BitLocker encryption key secured by the corresponding recovery password. With this key package and the recovery password (stored in `ms-FVE-RecoveryPassword`), portions of a BitLocker-protected volume can be decrypted if the disk is corrupted. Each key package works only for a volume that has the corresponding volume identifier (stored in `ms-FVE-VolumeGuid`). The BitLocker Repair Tool can be used to make use of the key package.|
 
 To learn more about the BitLocker attributes stored in AD DS, review the following articles:
 
@@ -171,7 +171,7 @@ To learn more about the BitLocker attributes stored in AD DS, review the followi
 
 The BitLocker key package isn't saved by default. To save the package along with the recovery password in AD DS, the **Backup recovery password and key package** policy setting must be selected in the policy that controls the recovery method. The key package can also be exported from a working volume.
 
-If recovery information is not backed up to AD DS, or if you want to save a key package in an alternative location, use the following command to generate a key package for a volume:
+If recovery information isn't backed up to AD DS, or if you want to save a key package in an alternative location, use the following command to generate a key package for a volume:
 
  ``` cmd
 manage-bde.exe -KeyPackage C: -id <id> -path <path>
@@ -185,6 +185,6 @@ A file with a file name format of `BitLocker Key Package {<id>}.KPG` is created 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> Learn how to obtain BitLocker recovery information for Microsoft Entra joined, Microsoft Entra hybrid joined, and Active Directory joined devices, and how to restore access to a locked drive.
+> Learn how to obtain BitLocker recovery information for Microsoft Entra joined, Microsoft Entra hybrid joined, and Active Directory joined devices, and how to restore access to a locked drive:
 >
 > [BitLocker recovery process >](recovery-process.md)

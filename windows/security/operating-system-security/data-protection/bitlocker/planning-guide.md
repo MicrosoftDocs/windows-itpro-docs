@@ -197,13 +197,13 @@ Organizations can use Microsoft Intune or Configuration Manager to monitor devic
 ## Next steps
 
 > [!div class="nextstepaction"]
-> Learn how to plan a BitLocker recovery strategy for your organization.
+> Learn how to plan a BitLocker recovery strategy for your organization:
 >
 >
 > [BitLocker recovery overview >](recovery-overview.md)
 
 > [!div class="nextstepaction"]
-> Learn about the available options to configure BitLocker and how to configure them via Configuration Service Providers (CSP) or group policy (GPO).
+> Learn about the available options to configure BitLocker and how to configure them via Configuration Service Providers (CSP) or group policy (GPO):
 >
 >
 > [Configure BitLocker >](configure.md)

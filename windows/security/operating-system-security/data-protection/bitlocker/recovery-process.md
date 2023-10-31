@@ -97,7 +97,7 @@ Scan the event log to find events that help indicate why recovery was initiated 
 
 ### Resolve the root cause
 
-After it has been identified what caused recovery, BitLocker protection can be reset to avoid recovery on every startup.
+After it's been identified what caused recovery, BitLocker protection can be reset to avoid recovery on every startup.
 
 The details of this reset can vary according to the root cause of the recovery. If root cause can't be determined, or if a malicious software or a rootkit infects the device, Helpdesk should apply best-practice virus policies to react appropriately.
 
@@ -148,14 +148,6 @@ For examples how to add BitLocker protectors, review the [BitLocker operations g
 For examples how to suspend and resume BitLocker protectors, review the [BitLocker operations guide](operations-guide.md#suspend-and-resume).
   :::column-end:::
 :::row-end:::
-
-## Windows RE and device encryption
-
-Windows Recovery Environment (RE) can be used to recover access to a drive protected by BitLocker. If a device is unable to boot after two failures, *Startup Repair* automatically starts. When Startup Repair is launched automatically due to boot failures, it executes only operating system and driver file repairs if the boot logs or any available crash dump points to a specific corrupted file. Devices that include firmware to support specific TPM measurements for *PCR 7*, the TPM can validate that Windows RE is a trusted operating environment and unlock any BitLocker-protected drives if Windows RE hasn't been modified. If the Windows RE environment has been modified, for example, the TPM has been disabled, the drives stay locked until the BitLocker recovery key is provided. If Startup Repair isn't able to run automatically from the device and instead, Windows RE is manually started from a repair disk, the BitLocker recovery key must be provided to unlock the BitLocker-protected drives.
-
-Windows RE also asks for a BitLocker recovery key when a **Remove everything** reset from Windows RE is started on a device that uses **TPM + PIN** or **Password for OS drive** protectors. If BitLocker recovery is started on a keyboardless device with TPM-only protection, Windows RE, not the boot manager, asks for the BitLocker recovery key. After the key is entered, Windows RE troubleshooting tools can be accessed, or Windows can be started normally.
-
-
 
 ### Retrieve the recovery password from Microsoft Entra ID
 
@@ -283,8 +275,6 @@ The following limitations exist for Repair-bde:
 - it assumes that if the drive has any encryption, then the drive is fully encrypted
 
 For a complete list of the `repair-bde.exe` options, see the [Repair-bde reference](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/ff829851(v=ws.11)).
-
-### Microsoft Entra ID
 
 #### Data Recovery Agents
 
