@@ -93,6 +93,9 @@ The following policy settings define the recovery methods that can be used to re
 - [Choose how BitLocker-protected fixed drives can be recovered](configure.md?tabs=fixed#choose-how-bitlocker-protected-fixed-drives-can-be-recovered)
 - [Choose how BitLocker-protected removable drives can be recovered](configure.md?tabs=removable#choose-how-bitlocker-protected-removable-drives-can-be-recovered)
 
+> [!TIP]
+> In each of these policies, select **Save BitLocker recovery information to Active Directory Domain Services** and then choose which BitLocker recovery information to store in AD DS. Use the option **Do not enable BitLocker until recovery information is stored in AD DS** to prevent users from enabling BitLocker unless the backup of BitLocker recovery information for the drive to Microsoft Entra ID or AD DS succeeds.
+
 ### BitLocker recovery password
 
 To recover BitLocker, a user can use a recovery password, if available. The BitLocker recovery password is unique to the device it was created on, and can be saved in different ways. Depending on the configured policy settings, the recovery password can be:

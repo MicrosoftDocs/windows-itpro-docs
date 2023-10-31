@@ -10,13 +10,18 @@ ms.date: 10/30/2023
 
 # BitLocker recovery process
 
-This article describes how to obtain BitLocker recovery information for Microsoft Entra joined, Microsoft Entra hybrid joined, and Active Directory joined devices. This article assumes that it's understood how to configure devices to automatically backup BitLocker recovery information, and what types of recovery information are saved to Microsoft Entra ID and AD DS.
+If a device or drive fails to unlock using the configured BitLocker mechanism, users may be able to self-recover it. If self-recovery is not an option, or the user is unsure how to proceed, the help desk should have procedures in place to retrieve recovery information quickly and securely.
 
-## Recovery password retrieval
+This article outlines the process of obtaining BitLocker recovery information for Microsoft Entra joined, Microsoft Entra hybrid joined, and Active Directory joined devices. It is assumed that the reader is already familiar with configuring devices to automatically backup BitLocker recovery information, and the available BitLocker recovery options. For more information, see the [BitLocker recovery overview](recovery-overview.md) article.
 
-### Self-recovery
+## BitLocker self-recovery
 
-In some cases, users might have the recovery password in a printout or a USB flash drive and can perform self-recovery. It's recommended that the organization creates a policy for self-recovery. If self-recovery includes using a password or recovery key stored on a USB flash drive, the users must be warned not to store the USB flash drive in the same place as the PC, especially during travel. For example, if both the PC and the recovery items are in the same bag it would be easy for access to be gained to the PC by an unauthorized user. Another policy to consider is having users contact the Helpdesk before or after performing self-recovery so that the root cause can be identified.
+The recovery password and recovery key for an operating system drive or a fixed data drive can be saved to one or more USB devices, printed, saved to Microsoft Entra ID or AD DS. It's highly recommended that organizations implement policies for BitLocker self-recovery.
+
+> [!TIP]
+> Saving BitLocker recovery keys to Microsoft Entra ID or AD DS is a recommended approach. That way, a BitLocker administrator or helpdesk can assist users in attaining their keys.
+
+If self-recovery includes using a password or recovery key stored on a USB flash drive, the users must be warned not to store the USB flash drive in the same place as the device, especially during travel. For example, if both the device and the recovery items are in the same bag, it would be easy for an unauthorized user to access the device. Another policy to consider is having users contact the helpdesk before or after performing self-recovery so that the root cause can be identified.
 
 A recovery key can't be stored in any of the following locations:
 
@@ -24,28 +29,23 @@ A recovery key can't be stored in any of the following locations:
 - The root directory of a non-removable drive
 - An encrypted volume
 
-> [!TIP]
-> Ideally, a recovery key should be stored separate from the device itself.
+### Recovery self-service in Microsoft Entra ID
 
-> [!NOTE]
-> Microsoft Entra ID provides a portal where recovery keys are also backed up, so users can retrieve their own recovery keys for self-service, if necessary.
+If BitLocker recovery keys are stored in Microsoft Entra ID, users can access them using the following URL: https://myworkaccount.microsoft.com. From the **Devices** tab, users can select a Windows device that they own, and select the option **View BitLocker Keys**.
 
-### Help desk recovery
+### Recovery self-service with USB flash drive
 
-If the user doesn't have a recovery password printed or on a USB flash drive, the user will need to be able to retrieve the recovery password from an online source. If the PC is a member of a domain, the recovery password can be backed up to AD DS. However, back up of the recovery password to AD DS does not happen by default.
-An administrator can obtain the *recovery password* from Microsoft Entra ID or AD DS and use it to unlock the drive. Storing recovery passwords in Microsoft Entra ID or AD DS is recommended to provide a way to obtain recovery passwords for drives in an organization if needed. This method requires to enable the policy settings:
+If users saved the recovery password on a USB drive, they can plug the drive into a locked device and follow the instructions. If the key was saved as a text file on the flash drive, users must use a different device to read the text file.
 
-- [Choose how BitLocker-protected operating system drives can be recovered](configure.md?tabs=os#choose-how-bitlocker-protected-operating-system-drives-can-be-recovered)
-- [Choose how BitLocker-protected fixed drives can be recovered](configure.md?tabs=fixed#choose-how-bitlocker-protected-fixed-drives-can-be-recovered)
-- [Choose how BitLocker-protected removable drives can be recovered](configure.md?tabs=removable#choose-how-bitlocker-protected-removable-drives-can-be-recovered)
+## Help desk recovery
 
-In each of these policies, select **Save BitLocker recovery information to Active Directory Domain Services** and then choose which BitLocker recovery information to store in AD DS. Check the **Do not enable BitLocker until recovery information is stored in AD
-DS** check box if it's desired to prevent users from enabling BitLocker unless the computer is connected to the domain and the backup of BitLocker recovery information for the drive to AD DS succeeds.
+If a user doesn't have a self-service recovery option, the help desk should be able to assist the user with one of the following options:
 
-> [!NOTE]
-> If the PCs are part of a workgroup, users are advised to save their BitLocker recovery password with their Microsoft account online. Having an online copy of the BitLocker recovery password is recommended to help ensure access to data is not lost in the event of a recovery being required.
+- If the device is Microsoft Entra joined, BitLocker recovery information can be retrieved from Microsoft Entra ID
+- If the device is domain joined, recovery information can be retrieved from Active Directory or with a DRA
 
-The BitLocker Recovery Password Viewer for Active Directory Users and Computers tool allows domain administrators to view BitLocker recovery passwords for specific computer objects in Active Directory.
+> [!IMPORTANT]
+> The backup of the BitLocker recovery password to Microsoft Entra ID or AD DS may not happen automatically. Devices should be configured with policy settings to enable automatic backup, as described the [BitLocker recovery overview](recovery-overview.md) article.
 
 The following list can be used as a template for creating a recovery process for recovery password retrieval. This sample process uses the BitLocker Recovery Password Viewer for Active Directory Users and Computers tool.
 
@@ -60,6 +60,123 @@ The following list can be used as a template for creating a recovery process for
 
 > [!NOTE]
 > Because the 48-digit recovery password is long and contains a combination of digits, the user might mishear or mistype the password. The boot-time recovery console uses built-in checksum numbers to detect input errors in each 6-digit block of the 48-digit recovery password, and offers the user the opportunity to correct such errors.
+
+### Help desk recovery options for Microsoft Entra joined devices
+
+### Retrieve the recovery password from Microsoft Entra ID
+
+``` PowerShell
+function Get-EntraBitLockerKeys{
+    [CmdletBinding()]
+    param (
+        [Parameter(Mandatory = $true, HelpMessage = "Device name to retrieve the BitLocker keys from Microsoft Entra ID")]
+        [string]$DeviceName
+    )
+    $DeviceID = (Get-MGDevice -filter "displayName eq '$DeviceName'").DeviceId
+    if ($DeviceID){
+      $KeyIds = (Get-MgInformationProtectionBitlockerRecoveryKey -Filter "deviceId eq '$DeviceId'").Id
+      if ($keyIds) {
+        Write-Host -ForegroundColor Yellow "Device name: $devicename"
+        foreach ($keyId in $keyIds) {
+          $recoveryKey = (Get-MgInformationProtectionBitlockerRecoveryKey -BitlockerRecoveryKeyId $keyId -Select "key").key
+          Write-Host -ForegroundColor White " Key id: $keyid"
+          Write-Host -ForegroundColor Cyan " BitLocker recovery key: $recoveryKey" 
+        }
+        } else {
+        Write-Host -ForegroundColor Red "No BitLocker recovery keys found for device $DeviceName"
+      }
+    } else {
+        Write-Host -ForegroundColor Red "Device $DeviceName not found"
+    }
+}
+
+Install-Module Microsoft.Graph.Identity.SignIns -Scope CurrentUser -Force
+Import-Module Microsoft.Graph.Identity.SignIns
+Connect-MgGraph -Scopes 'BitlockerKey.Read.All' -NoWelcome
+```
+
+### Output example
+
+``` PowerShell
+PS C:\> Get-EntraBitLockerKeys -DeviceName DESKTOP-53O32QI
+Device name: DESKTOP-53O32QI
+ Key id: 4290b6c0-b17a-497a-8552-272cc30e80d4
+ BitLocker recovery key: 496298-461032-321464-595518-463221-173943-033616-139579
+ Key id: 045219ec-a53b-41ae-b310-08ec883aaedd
+ BitLocker recovery key: 158422-038236-492536-574783-256300-205084-114356-069773
+```
+
+### Help desk recovery options for Active Directory joined devices
+
+The BitLocker Recovery Password Viewer for Active Directory Users and Computers tool allows domain administrators to view BitLocker recovery passwords for specific computer objects in Active Directory.
+
+If multiple recovery passwords are stored under a computer object in AD DS, the name of the BitLocker recovery information object includes the date on which the password was created.
+
+To make sure the correct password is provided and/or to prevent providing the incorrect password, ask the user to read the eight character password ID that is displayed in the recovery console.
+
+Since the password ID is a unique value that is associated with each recovery password stored in AD DS, running a query using this ID finds the correct password to unlock the encrypted volume.
+
+#### BitLocker Recovery Password Viewer
+
+BitLocker Recovery Password Viewer is an optional tool included with the *Remote Server Administration Tools (RSAT)*, and it's an extension for the *Active Directory Users and Computers Microsoft Management Console (MMC)* snap-in.
+
+With BitLocker Recovery Password Viewer you can:
+
+- Check the Active Directory computer object's properties to retrieve the associated BitLocker recovery passwords
+- Search Active Directory for BitLocker recovery password across all the domains in the Active Directory forest. Passwords can also be searched by password identifier (ID)
+
+To complete the procedures in this scenario, the following requirements must be met:
+
+- Domain administrator credentials
+- Devices must be joined to the domain
+- On the domain-joined devices, BitLocker must be enabled
+
+The following procedures describe the most common tasks performed by using the BitLocker Recovery Password Viewer.
+
+##### View the recovery passwords for a computer object
+
+1. In **Active Directory Users and Computers**, locate and then select the container in which the computer is located
+1. Right-click the computer object and select **Properties**
+1. In the **Properties** dialog box, select the **BitLocker Recovery** tab to view the BitLocker recovery passwords that are associated with the computer
+
+##### Copy the recovery passwords for a computer object
+
+1. Follow the steps in the previous procedure to view the BitLocker recovery passwords
+1. On the **BitLocker Recovery** tab of the **Properties** dialog box, right-click the BitLocker recovery password that needs to be copied, and then select **Copy Details**
+1. Press <kbd>CTRL</kbd>+<kbd>V</kbd> to paste the copied text to a destination location, such as a text file or spreadsheet
+
+##### Locate a recovery password by using a password ID
+
+1. In Active Directory Users and Computers, right-click the domain container and select **Find BitLocker Recovery Password**
+1. In the **Find BitLocker Recovery Password** dialog box, type the first eight characters of the recovery password in the **Password ID (first 8 characters)** box, and select **Search**
+1. Once the recovery password is located, you can use the previous procedure to copy it
+
+#### Data Recovery Agents
+
+To list data recovery agents configured for a BitLocker-protected drive, use the `manage-bde.exe` command, including certificate-based protectors. Example:
+
+```cmd
+C:\>manage-bde.exe -protectors -get E:
+
+Volume E: []
+All Key Protectors
+
+    Numerical Password:
+      ID: {24B0AA32-F8D0-40BA-BB05-73A800324C09}
+      Password:
+        461109-608201-413820-485342-181588-463056-430617-501391
+
+    Data Recovery Agent (Certificate Based):
+      ID: {3F81C18D-A685-4782-8F55-99C6452980E7}
+      Certificate Thumbprint:
+        9de688607336294a52b445d30d1eb92f0bec1e78
+```
+
+In this example, if the private key is available in the local certificate store, the administrator could use the following command to unlock the drive by using the data recovery agent protector:
+
+```cmd
+manage-bde -unlock E: -Certificate -ct 9de688607336294a52b445d30d1eb92f0bec1e78
+```
 
 ## Post-recovery tasks
 
@@ -149,91 +266,7 @@ For examples how to suspend and resume BitLocker protectors, review the [BitLock
   :::column-end:::
 :::row-end:::
 
-### Retrieve the recovery password from Microsoft Entra ID
 
-``` PowerShell
-function Get-EntraBitLockerKeys{
-    [CmdletBinding()]
-    param (
-        [Parameter(Mandatory = $true, HelpMessage = "Device name to retrieve the BitLocker keys from Microsoft Entra ID")]
-        [string]$DeviceName
-    )
-    $DeviceID = (Get-MGDevice -filter "displayName eq '$DeviceName'").DeviceId
-    if ($DeviceID){
-      $KeyIds = (Get-MgInformationProtectionBitlockerRecoveryKey -Filter "deviceId eq '$DeviceId'").Id
-      if ($keyIds) {
-        Write-Host -ForegroundColor Yellow "Device name: $devicename"
-        foreach ($keyId in $keyIds) {
-          $recoveryKey = (Get-MgInformationProtectionBitlockerRecoveryKey -BitlockerRecoveryKeyId $keyId -Select "key").key
-          Write-Host -ForegroundColor White " Key id: $keyid"
-          Write-Host -ForegroundColor Cyan " BitLocker recovery key: $recoveryKey" 
-        }
-        } else {
-        Write-Host -ForegroundColor Red "No BitLocker recovery keys found for device $DeviceName"
-      }
-    } else {
-        Write-Host -ForegroundColor Red "Device $DeviceName not found"
-    }
-}
-
-Install-Module Microsoft.Graph.Identity.SignIns -Scope CurrentUser -Force
-Import-Module Microsoft.Graph.Identity.SignIns
-Connect-MgGraph -Scopes 'BitlockerKey.Read.All' -NoWelcome
-```
-
-### Output example
-
-``` PowerShell
-PS C:\> Get-EntraBitLockerKeys -DeviceName DESKTOP-53O32QI
-Device name: DESKTOP-53O32QI
- Key id: 4290b6c0-b17a-497a-8552-272cc30e80d4
- BitLocker recovery key: 496298-461032-321464-595518-463221-173943-033616-139579
- Key id: 045219ec-a53b-41ae-b310-08ec883aaedd
- BitLocker recovery key: 158422-038236-492536-574783-256300-205084-114356-069773
-```
-
-### Retrieve the recovery password from Active Directory
-
-If multiple recovery passwords are stored under a computer object in AD DS, the name of the BitLocker recovery information object includes the date on which the password was created.
-
-To make sure the correct password is provided and/or to prevent providing the incorrect password, ask the user to read the eight character password ID that is displayed in the recovery console.
-
-Since the password ID is a unique value that is associated with each recovery password stored in AD DS, running a query using this ID finds the correct password to unlock the encrypted volume.
-
-#### BitLocker Recovery Password Viewer
-
-BitLocker Recovery Password Viewer is an optional tool included with the *Remote Server Administration Tools (RSAT)*, and it's an extension for the *Active Directory Users and Computers Microsoft Management Console (MMC)* snap-in.
-
-With BitLocker Recovery Password Viewer you can:
-
-- Check the Active Directory computer object's properties to retrieve the associated BitLocker recovery passwords
-- Search Active Directory for BitLocker recovery password across all the domains in the Active Directory forest. Passwords can also be searched by password identifier (ID)
-
-To complete the procedures in this scenario, the following requirements must be met:
-
-- Domain administrator credentials
-- Devices must be joined to the domain
-- On the domain-joined devices, BitLocker must be enabled
-
-The following procedures describe the most common tasks performed by using the BitLocker Recovery Password Viewer.
-
-##### View the recovery passwords for a computer object
-
-1. In **Active Directory Users and Computers**, locate and then select the container in which the computer is located
-1. Right-click the computer object and select **Properties**
-1. In the **Properties** dialog box, select the **BitLocker Recovery** tab to view the BitLocker recovery passwords that are associated with the computer
-
-##### Copy the recovery passwords for a computer object
-
-1. Follow the steps in the previous procedure to view the BitLocker recovery passwords
-1. On the **BitLocker Recovery** tab of the **Properties** dialog box, right-click the BitLocker recovery password that needs to be copied, and then select **Copy Details**
-1. Press <kbd>CTRL</kbd>+<kbd>V</kbd> to paste the copied text to a destination location, such as a text file or spreadsheet
-
-##### Locate a recovery password by using a password ID
-
-1. In Active Directory Users and Computers, right-click the domain container and select **Find BitLocker Recovery Password**
-1. In the **Find BitLocker Recovery Password** dialog box, type the first eight characters of the recovery password in the **Password ID (first 8 characters)** box, and select **Search**
-1. Once the recovery password is located, you can use the previous procedure to copy it
 
 ## Rotate keys
 
@@ -276,32 +309,7 @@ The following limitations exist for Repair-bde:
 
 For a complete list of the `repair-bde.exe` options, see the [Repair-bde reference](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/ff829851(v=ws.11)).
 
-#### Data Recovery Agents
 
-To list data recovery agents configured for a BitLocker-protected drive, use the `manage-bde.exe` command, including certificate-based protectors. Example:
-
-```cmd
-C:\>manage-bde.exe -protectors -get E:
-
-Volume E: []
-All Key Protectors
-
-    Numerical Password:
-      ID: {24B0AA32-F8D0-40BA-BB05-73A800324C09}
-      Password:
-        461109-608201-413820-485342-181588-463056-430617-501391
-
-    Data Recovery Agent (Certificate Based):
-      ID: {3F81C18D-A685-4782-8F55-99C6452980E7}
-      Certificate Thumbprint:
-        9de688607336294a52b445d30d1eb92f0bec1e78
-```
-
-In this example, if the private key is available in the local certificate store, the administrator could use the following command to unlock the drive by using the data recovery agent protector:
-
-```cmd
-manage-bde -unlock E: -Certificate -ct 9de688607336294a52b445d30d1eb92f0bec1e78
-```
 
 
 
