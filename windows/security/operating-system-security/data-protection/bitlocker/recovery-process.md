@@ -316,4 +316,15 @@ manage-bde -unlock E: -Certificate -ct 9de688607336294a52b445d30d1eb92f0bec1e78
 
 
 <!--After the recovery password has been used to recover access to the device, BitLocker reseals the encryption key to the current values of the measured components.
+
+
+Domain Administrator privileges are required or delegated permissions must have been granted by a domain administrator.
+Normal users will not see the recovery key and cannot search for it.
+
+
+### Multiple recovery passwords
+
+If multiple recovery passwords are stored under a computer object in AD DS, the name of the BitLocker recovery information object includes the date on which the password was created. To make sure the correct password is provided and/or to prevent providing the incorrect password, the help desk can ask the user to read the eight character password ID that is displayed in the preboot recovery screen.
+
+Since the password ID is a unique value that is associated with each recovery password stored in AD DS, running a query using this ID finds the correct password to unlock the encrypted volume.
 -->
