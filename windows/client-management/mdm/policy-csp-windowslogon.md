@@ -4,7 +4,7 @@ description: Learn more about the WindowsLogon Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 10/03/2023
+ms.date: 10/24/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -104,20 +104,20 @@ After enabling this policy, you can configure its settings through the ConfigAut
 
 <!-- ConfigAutomaticRestartSignOn-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting controls the configuration under which an automatic restart and sign on and lock occurs after a restart or cold boot. If you chose "Disabled" in the "Sign-in and lock last interactive user automatically after a restart" policy, then automatic sign on won't occur and this policy doesn't need to be configured.
+This policy setting controls the configuration under which an automatic restart and sign-on and lock occurs after a restart or cold boot. If you chose "Disabled" in the "Sign-in and lock last interactive user automatically after a restart" policy, then automatic sign-on won't occur and this policy doesn't need to be configured.
 
 - If you enable this policy setting, you can choose one of the following two options:
 
-1. "Enabled if BitLocker is on and not suspended" specifies that automatic sign on and lock will only occur if BitLocker is active and not suspended during the reboot or shutdown. Personal data can be accessed on the device's hard drive at this time if BitLocker isn't on or suspended during an update. BitLocker suspension temporarily removes protection for system components and data but may be needed in certain circumstances to successfully update boot-critical components.
+1. "Enabled if BitLocker is on and not suspended" specifies that automatic sign-on and lock will only occur if BitLocker is active and not suspended during the reboot or shutdown. Personal data can be accessed on the device's hard drive at this time if BitLocker isn't on or suspended during an update. BitLocker suspension temporarily removes protection for system components and data but may be needed in certain circumstances to successfully update boot-critical components.
 
 BitLocker is suspended during updates if:
 
 - The device doesn't have TPM 2.0 and PCR7, or
 - The device doesn't use a TPM-only protector.
 
-2. "Always Enabled" specifies that automatic sign on will happen even if BitLocker is off or suspended during reboot or shutdown. When BitLocker isn't enabled, personal data is accessible on the hard drive. Automatic restart and sign on should only be run under this condition if you are confident that the configured device is in a secure physical location.
+2. "Always Enabled" specifies that automatic sign-on will happen even if BitLocker is off or suspended during reboot or shutdown. When BitLocker isn't enabled, personal data is accessible on the hard drive. Automatic restart and sign-on should only be run under this condition if you are confident that the configured device is in a secure physical location.
 
-- If you disable or don't configure this setting, automatic sign on will default to the "Enabled if BitLocker is on and not suspended" behavior.
+- If you disable or don't configure this setting, automatic sign-on will default to the "Enabled if BitLocker is on and not suspended" behavior.
 <!-- ConfigAutomaticRestartSignOn-Description-End -->
 
 <!-- ConfigAutomaticRestartSignOn-Editable-Begin -->
@@ -574,7 +574,7 @@ The locations that Switch User interface appear are in the Logon UI, the Start m
 
 <!-- OverrideShellProgram-Description-Begin -->
 <!-- Description-Source-DDF -->
-OverrideShellProgram policy allows IT admin to configure the shell program for Windows OS on a device. This policy has the highest precedence over other ways of configuring the shell program. The policy currently supports below options: 1. Not Configured: Default shell will be launched. 2. Apply Lightweight Shell: Lightweight shell doesn't have a user interface and helps the device to achieve better performance as the shell consumes limited resources over default shell. Lightweight shell contains a limited set of features, which could be consumed by applications. This configuration can be useful if the device needs to have a continuous running user interface application that would consume features offered by Lightweight shell. If you disable or don't configure this policy setting, then the default shell will be launched.
+OverrideShellProgram policy allows IT admin to configure the shell program for Windows OS on a device. This policy has the highest precedence over other ways of configuring the shell program. The policy currently supports below options: 1. Not Configured: Default shell will be launched. 2. Apply Lightweight Shell: Lightweight shell doesn't have a user interface and helps the device to achieve better performance as the shell consumes limited resources over default shell. Lightweight shell contains a limited set of features which could be consumed by applications. This configuration can be useful if the device needs to have a continuous running user interface application which would consume features offered by Lightweight shell. If you disable or don't configure this policy setting, then the default shell will be launched.
 <!-- OverrideShellProgram-Description-End -->
 
 <!-- OverrideShellProgram-Editable-Begin -->

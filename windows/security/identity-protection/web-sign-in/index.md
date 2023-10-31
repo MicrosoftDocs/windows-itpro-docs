@@ -25,7 +25,7 @@ This article describes how to configure Web sign-in and the supported key scenar
 To use web sign-in, the clients must meet the following prerequisites:
 
 - Windows 11, version 22H2 with [5030310][KB-1], or later
-- Must be Microsoft Entra joined
+- Must be [Microsoft Entra joined](/entra/identity/devices/concept-directory-join)
 - Must have Internet connectivity, as the authentication is done over the Internet
 
 [!INCLUDE [federated-sign-in](../../../../includes/licensing/web-sign-in.md)]
