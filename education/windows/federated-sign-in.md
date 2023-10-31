@@ -13,7 +13,7 @@ ms.collection:
 
 # Configure federated sign-in for Windows devices
 
-Starting in Windows 11 SE, version 22H2 and Windows 11 Pro Edu/Education, version 22H2 with [KB5022913][KB-1], you can enable your users to sign-in using a federated identity provider (IdP) via a web sign-in experience.\
+Starting in Windows 11 SE, version 22H2 and Windows 11 Pro Edu/Education, version 22H2 with [KB5022913][KB-1], you can enable your users to sign-in using a federated identity provider (IdP) via a web sign-in experience.
 Signing in with a federated identity can be a great way to simplify the sign-in process for your users: instead of having to remember a username and password defined in Microsoft Entra ID, they can sign-in using their existing credentials from the IdP. For example, students and educators can use QR code badges to sign-in.
 
 ## Benefits of federated sign-in
