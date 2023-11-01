@@ -4,7 +4,7 @@ description: Learn more about the FederatedAuthentication Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 08/10/2023
+ms.date: 10/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -63,7 +63,7 @@ Specifies whether web-based sign-in is enabled with the Primary User experience.
 |:--|:--|
 | 0 (Default) | Feature defaults as appropriate for edition and device capabilities. As of now, all editions/devices exhibit Disabled behavior by default. However, this may change for future editions/devices. |
 | 1 | Enabled. Web Sign-in Credential Provider will be enabled for device sign-in. |
-| 2 | Disabled. Web Sign-in Credential Provider isn't be enabled for device sign-in. |
+| 2 | Disabled. Web Sign-in Credential Provider won't be enabled for device sign-in. |
 <!-- EnableWebSignInForPrimaryUser-AllowedValues-End -->
 
 <!-- EnableWebSignInForPrimaryUser-Examples-Begin -->
