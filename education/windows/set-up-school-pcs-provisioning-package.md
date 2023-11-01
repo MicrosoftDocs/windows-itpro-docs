@@ -52,8 +52,8 @@ For a more detailed look of each policy listed, see [Policy CSP](/windows/client
 
 | Policy name | Default value | Description |
 |--|--|--|
-| Authority | User-defined | Authenticates the admin user. Value is set automatically when signed in to Azure AD. |
-| BPRT | User-defined | Value is set automatically when signed in to Azure AD. Allows you to create the provisioning package. |
+| Authority | User-defined | Authenticates the admin user. Value is set automatically when signed in to Microsoft Entra ID. |
+| BPRT | User-defined | Value is set automatically when signed in to Microsoft Entra ID. Allows you to create the provisioning package. |
 | WLAN Setting | XML is generated from the Wi-Fi profile in the Set up School PCs app. | Configures settings for wireless connectivity. |
 | Hide OOBE for desktop | True | Hides the interactive OOBE flow for Windows 10. |
 | Download Mode | 1 - HTTP blended with peering behind the same NAT | Specifies the download method that Delivery Optimization can use in downloads of Windows Updates, Apps, and App updates |
@@ -125,7 +125,7 @@ Review the table below to estimate your expected provisioning time. A package th
 
 Learn more about setting up devices with the Set up School PCs app.
 
-- [Azure AD Join with Set up School PCs](set-up-school-pcs-azure-ad-join.md)
+- [Microsoft Entra join with Set up School PCs](set-up-school-pcs-azure-ad-join.md)
 - [Set up School PCs technical reference](set-up-school-pcs-technical.md)
 - [Set up Windows 10 devices for education](set-up-windows-10.md)
 

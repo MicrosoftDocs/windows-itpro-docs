@@ -14,7 +14,7 @@ The expectations from an MDM are that it uses the same sync mechanism that it us
 
 If you're a Mobile Device Management (MDM) Provider and want to support eSIM Management on Windows, perform the following steps:
 
-- Onboard to Azure Active Directory
+- Onboard to Microsoft Entra ID
 - Contact mobile operators directly or contact orchestrator providers. Windows provides the capability for MDM providers to manager eSIM profiles for enterprise use cases. However, Windows doesn't limit how ecosystem partners offer this service to their own partners and/or customers. As such, the eSIM profile management capability is something that can be supported by integrating with the Windows OMA-DM. This characteristic makes it possible to remotely manage the eSIM profiles according to the company policies.
 
   As an MDM provider, if you're looking to integrate/onboard to a mobile operator on a 1:1 basis, contact them and learn more about their onboarding. If you would like to integrate and work with only one MDM provider, contact that provider directly. If you would like to offer eSIM management to customers using different MDM providers, contact an orchestrator provider. Orchestrator providers act as proxy handling MDM onboarding and as a mobile operator onboarding. Their role is to make the process as painless and scalable as possible for all parties.

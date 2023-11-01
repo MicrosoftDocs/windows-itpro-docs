@@ -14,7 +14,7 @@ ms.topic: how-to
 
 [!INCLUDE [hello-hybrid-key-trust](./includes/hello-hybrid-key-trust.md)]
 
-Hybrid environments are distributed systems that enable organizations to use on-premises and Azure AD-protected resources. Windows Hello for Business uses the existing distributed system as a foundation on which organizations can provide two-factor authentication and single sign-on to modern resources.
+Hybrid environments are distributed systems that enable organizations to use on-premises and Microsoft Entra protected resources. Windows Hello for Business uses the existing distributed system as a foundation on which organizations can provide two-factor authentication and single sign-on to modern resources.
 
 This deployment guide describes how to deploy Windows Hello for Business in a hybrid key trust scenario.
 
@@ -29,10 +29,10 @@ The following prerequisites must be met for a hybrid key trust deployment:
 
 > [!div class="checklist"]
 > * Directories and directory synchronization
-> * Authentication to Azure AD
+> * Authentication to Microsoft Entra ID
 > * Device registration
 > * Public Key Infrastructure
-> * Multi-factor authentication
+> * Multifactor authentication
 > * Device management
 
 ### Directories and directory synchronization
@@ -40,40 +40,44 @@ The following prerequisites must be met for a hybrid key trust deployment:
 Hybrid Windows Hello for Business needs two directories:
 
 - An on-premises Active Directory
-- An Azure Active Directory tenant
+- A Microsoft Entra tenant
 
-The two directories must be synchronized with [Azure AD Connect Sync][AZ-1], which synchronizes user accounts from the on-premises Active Directory to Azure AD.\
-During the Window Hello for Business provisioning process, users register the public portion of their Windows Hello for Business credential with Azure AD. *Azure AD Connect Sync* synchronizes the Windows Hello for Business public key to Active Directory.
+The two directories must be synchronized with [Microsoft Entra Connect Sync][AZ-1], which synchronizes user accounts from the on-premises Active Directory to Microsoft Entra ID.\
+During the Window Hello for Business provisioning process, users register the public portion of their Windows Hello for Business credential with Microsoft Entra ID. *Microsoft Entra Connect Sync* synchronizes the Windows Hello for Business public key to Active Directory.
 
 > [!NOTE]
-> Windows Hello for Business hybrid key trust is not supported if the users' on-premises UPN suffix cannot be added as a verified domain in Azure AD.
+> Windows Hello for Business hybrid key trust is not supported if the users' on-premises UPN suffix cannot be added as a verified domain in Microsoft Entra ID.
 
-### Authentication to Azure AD
+<a name='authentication-to-azure-ad'></a>
 
-Authentication to Azure AD can be configured with or without federation:
+### Authentication to Microsoft Entra ID
 
-- [Password hash synchronization][AZ-6] or [Azure Active Directory pass-through-authentication][AZ-7] is required for non-federated environments
+Authentication to Microsoft Entra ID can be configured with or without federation:
+
+- [Password hash synchronization][AZ-6] or [Microsoft Entra pass-through authentication][AZ-7] is required for non-federated environments
 - Active Directory Federation Services (AD FS) or a third-party federation service is required for federated environments
 
 ### Device registration
 
-The Windows devices must be registered in Azure AD. Devices can be registered in Azure AD using either *Azure AD join* or *hybrid Azure AD join*.\
-For *hybrid Azure AD joined* devices, review the guidance on the [Plan your hybrid Azure Active Directory join implementation][AZ-8] page.
+The Windows devices must be registered in Microsoft Entra ID. Devices can be registered in Microsoft Entra ID using either *Microsoft Entra join* or *Microsoft Entra hybrid join*.\
+For *Microsoft Entra hybrid joined* devices, review the guidance on the [Plan your Microsoft Entra hybrid join implementation][AZ-8] page.
 
 ### Public Key Infrastructure
 
 An enterprise PKI is required as *trust anchor* for authentication. Domain controllers require a certificate for Windows clients to trust them.
 
-### Multi-factor authentication
+<a name='multi-factor-authentication'></a>
+
+### Multifactor authentication
 
 The Windows Hello for Business provisioning process lets a user enroll in Windows Hello for Business using their user name and password as one factor, but requires a second factor of authentication.\
 Hybrid deployments can use:
 
-- [Azure AD Multi-Factor Authentication][AZ-2]
-- A multi-factor authentication provided by AD FS, which includes an adapter model that enables third parties to integrate their MFA into AD FS
+- [Microsoft Entra multifactor authentication][AZ-2]
+- A multifactor authentication provided by AD FS, which includes an adapter model that enables third parties to integrate their MFA into AD FS
 
-For more information how to configure Azure AD Multi-Factor Authentication, see [Configure Azure AD Multi-Factor Authentication settings][AZ-3].\
-For more information how to configure AD FS to provide multi-factor authentication, see [Configure Azure MFA as authentication provider with AD FS][SER-1].
+For more information how to configure Microsoft Entra multifactor authentication, see [Configure Microsoft Entra multifactor authentication settings][AZ-3].\
+For more information how to configure AD FS to provide multifactor authentication, see [Configure Azure MFA as authentication provider with AD FS][SER-1].
 
 ### Device management
 
@@ -87,7 +91,7 @@ Once the prerequisites are met, deploying Windows Hello for Business with a hybr
 > * Configure and validate the PKI
 > * Configure Windows Hello for Business settings
 > * Provision Windows Hello for Business on Windows clients
-> * Configure single sign-on (SSO) for Azure AD joined devices
+> * Configure single sign-on (SSO) for Microsoft Entra joined devices
 
 > [!div class="nextstepaction"]
 > [Next: configure and validate the Public Key Infrastructure >](hello-hybrid-key-trust-validate-pki.md)

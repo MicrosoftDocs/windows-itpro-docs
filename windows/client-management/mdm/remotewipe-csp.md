@@ -96,7 +96,7 @@ Node for the Autopilot Reset operation.
 
 <!-- Device-AutomaticRedeployment-doAutomaticRedeployment-Description-Begin -->
 <!-- Description-Source-DDF -->
-Exec on this node triggers Autopilot Reset operation. This works like PC Reset, similar to other existing nodes in this RemoteWipe CSP, except that it keeps the device enrolled in Azure AD and MDM, keeps Wi-Fi profiles, and a few other settings like region, language, keyboard.
+Exec on this node triggers Autopilot Reset operation. This works like PC Reset, similar to other existing nodes in this RemoteWipe CSP, except that it keeps the device enrolled in Microsoft Entra ID and MDM, keeps Wi-Fi profiles, and a few other settings like region, language, keyboard.
 <!-- Device-AutomaticRedeployment-doAutomaticRedeployment-Description-End -->
 
 <!-- Device-AutomaticRedeployment-doAutomaticRedeployment-Editable-Begin -->
