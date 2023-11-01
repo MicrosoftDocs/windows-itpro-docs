@@ -31,7 +31,7 @@ A recovery key can't be stored in any of the following locations:
 
 ### Recovery self-service in Microsoft Entra ID
 
-If BitLocker recovery keys are stored in Microsoft Entra ID, users can access them using the following URL: https://myworkaccount.microsoft.com. From the **Devices** tab, users can select a Windows device that they own, and select the option **View BitLocker Keys**.
+If BitLocker recovery keys are stored in Microsoft Entra ID, users can access them using the following URL: https://myaccount.microsoft.com. From the **Devices** tab, users can select a Windows device that they own, and select the option **View BitLocker Keys**.
 
 ### Recovery self-service with USB flash drive
 
@@ -42,12 +42,12 @@ If users saved the recovery password on a USB drive, they can plug the drive int
 If a user doesn't have a self-service recovery option, the help desk should be able to assist the user with one of the following options:
 
 - If the device is Microsoft Entra joined, BitLocker recovery information can be retrieved from Microsoft Entra ID
-- If the device is domain joined, recovery information can be retrieved from Active Directory or with a DRA
+- If the device is domain joined, recovery information can be retrieved from Active Directory or the encrypted drive can be accessed by a Data Recovery Agent (DRA)
 
-> [!IMPORTANT]
+> [!WARNING]
 > The backup of the BitLocker recovery password to Microsoft Entra ID or AD DS may not happen automatically. Devices should be configured with policy settings to enable automatic backup, as described the [BitLocker recovery overview](recovery-overview.md) article.
 
-The following list can be used as a template for creating a recovery process for recovery password retrieval. This sample process uses the BitLocker Recovery Password Viewer for Active Directory Users and Computers tool.
+The following list can be used as a template for creating a recovery process for recovery password retrieval by the helpdesk.
 
 | :ballot_box_with_check: | Recovery process step | Details |
 |--|--| -- |
@@ -62,6 +62,13 @@ The following list can be used as a template for creating a recovery process for
 > Because the 48-digit recovery password is long and contains a combination of digits, the user might mishear or mistype the password. The boot-time recovery console uses built-in checksum numbers to detect input errors in each 6-digit block of the 48-digit recovery password, and offers the user the opportunity to correct such errors.
 
 ### Help desk recovery options for Microsoft Entra joined devices
+
+The recovery key is now visible in the Microsoft Intune admin center. To view the recovery key:
+
+1. Open the Microsoft Intune admin center
+1. Select Devices > All devices
+1. Find and select the device from the list and then select **Monitor** > **Recovery keys**
+
 
 ### Retrieve the recovery password from Microsoft Entra ID
 
@@ -106,9 +113,22 @@ Device name: DESKTOP-53O32QI
  BitLocker recovery key: 158422-038236-492536-574783-256300-205084-114356-069773
 ```
 
+
+What are the minimum role-based access control (RBAC) rights required to access the recovery key in the Intune console?
+Answer: To be able to access the recovery keys, an administrator must be granted Helpdesk Administrator permissions. Find out more about Azure AD roles in this article. [Link](/entra/identity/role-based-access-control/permissions-reference#helpdesk-administrator)
+
+
 ### Help desk recovery options for Active Directory joined devices
 
-The BitLocker Recovery Password Viewer for Active Directory Users and Computers tool allows domain administrators to view BitLocker recovery passwords for specific computer objects in Active Directory.
+To export a previously saved recovery password from AD DS, it's required to have read access to objects stored in AD DS. By default, only Domain Adminstrator have access to BitLocker recovery information, but [access can be delegated to others](/archive/blogs/craigf/delegating-access-in-ad-to-bitlocker-recovery-information).
+
+The BitLocker Recovery Password Viewer allows domain administrators to view BitLocker recovery passwords for computer objects in Active Directory.
+The BitLocker Recovery Password Viewer is an add-on to the Active Directory Users and Computers Microsoft Management Console (MMC) snap-in.
+Select the BitLocker Recovery tab in the Properties dialog box of a device to view the BitLocker recovery passwords. You must have the BitLocker Recovery Password Viewer — an optional tool included with the Remote Server Administration Tools (RSAT) — to see the tab in the dialog box.
+
+Active Directory Service Interface Editor (ADSI Edit) tool
+
+ADSI Edit is an MMC snap-in that lets you connect to Active Directory database partitions or to an LDAP server. If you view the device using this tool, you can see additional full volume encryption (FVE) attributes stored in Azure AD DS.
 
 If multiple recovery passwords are stored under a computer object in AD DS, the name of the BitLocker recovery information object includes the date on which the password was created.
 
@@ -151,7 +171,7 @@ The following procedures describe the most common tasks performed by using the B
 1. In the **Find BitLocker Recovery Password** dialog box, type the first eight characters of the recovery password in the **Password ID (first 8 characters)** box, and select **Search**
 1. Once the recovery password is located, you can use the previous procedure to copy it
 
-#### Data Recovery Agents
+## Data Recovery Agents
 
 To list data recovery agents configured for a BitLocker-protected drive, use the `manage-bde.exe` command, including certificate-based protectors. Example:
 
@@ -210,13 +230,13 @@ To help answer these questions, use the BitLocker command-line tool to view the 
 manage-bde.exe -status
 ```
 
-Scan the event log to find events that help indicate why recovery was initiated (for example, if a boot file change occurred). Both of these capabilities can be performed remotely.
+Scan the event log to find events that help indicate why recovery was initiated (for example, if a boot file change occurred).
 
 ### Resolve the root cause
 
 After it's been identified what caused recovery, BitLocker protection can be reset to avoid recovery on every startup.
 
-The details of this reset can vary according to the root cause of the recovery. If root cause can't be determined, or if a malicious software or a rootkit infects the device, Helpdesk should apply best-practice virus policies to react appropriately.
+The details of the reset can vary according to the root cause of the recovery. If root cause can't be determined, or if a malicious software or a rootkit infects the device, the helpdesk should apply best-practice virus policies to react appropriately.
 
 > [!NOTE]
 > BitLocker validation profile reset can be performed by suspending and resuming BitLocker.
@@ -242,7 +262,7 @@ To prevent continued recovery due to an unknown PIN:
 1. From the BitLocker Control Panel applet, expand the drive and then select **Change PIN**
 1. In the BitLocker Drive Encryption dialog, select **Reset a forgotten PIN**. If the signed in account isn't an administrator account, you must provide administrative credentials
 1. In the PIN reset dialog, provide and confirm the new PIN to be used and then select **Finish**
-1. The new PIN can be used the next time the drive needs to be unlocked.
+1. The new PIN can be used the next time the drive needs to be unlocked
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -252,7 +272,7 @@ To prevent continued recovery due to an unknown PIN:
   :::column span="3":::
     If the USB flash drive that contains the startup key is lost, you must be unlock the drive using the recovery key. A new startup can then be created using PowerShell, the Command Prompt, or BitLocker.
 
-For examples how to add BitLocker protectors, review the [BitLocker operations guide](operations-guide.md#add-protectors).
+    For examples how to add BitLocker protectors, review the [BitLocker operations guide](operations-guide.md#add-protectors)
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -262,36 +282,30 @@ For examples how to add BitLocker protectors, review the [BitLocker operations g
   :::column span="3":::
     This error occurs if the firmware is updated. BitLocker should be suspended before making changes to the firmware. Protection should then be resumed after the firmware update is complete. Suspending BitLocker prevents the device from going into recovery mode. However, if changes happen when BitLocker protection is on, the recovery password can be used to unlock the drive and the platform validation profile is updated so that recovery doesn't occur the next time.
 
-For examples how to suspend and resume BitLocker protectors, review the [BitLocker operations guide](operations-guide.md#suspend-and-resume).
+    For examples how to suspend and resume BitLocker protectors, review the [BitLocker operations guide](operations-guide.md#suspend-and-resume)
   :::column-end:::
 :::row-end:::
 
-
-
 ## Rotate keys
 
->[!TIP]
-> For Microsoft Entra joined devices, the recovery password should be stored in Microsoft Entra ID
-> For Active Directoy domain-joined devices, including servers, the recovery password should be stored in AD DS
+This option will refresh the recovery password after it is used and prevent further use of the same password, enhancing security. Prerequisites include Windows 10 1909, having Intune enrolled, Azure AD, or Azure hybrid services joined. Additional licenses may be required for certain Microsoft BitLocker settings.
+    https://learn.microsoft.com/en-us/windows/client-management/mdm/bitlocker-csp#configurerecoverypasswordrotation
+
+> [!TIP]
+> Administrators can configure a policy setting to enable automatic recovery password rotation for Microsoft Entra joined and Microsoft Entra hybrid joined devices.
+>
+> When automatic recovery password rotation is enabled, devices will automatically rotate the recovery password after it's used to unlock the drive. This helps prevent the same recovery password from being used multiple times, which can be a security risk.
+>
+> For more information, see [configure recovery password rotation](configure.md?tabs=common#configure-recovery-password-rotation).
 
 SCCM rotate keys: /mem/configmgr/protect/deploy-use/bitlocker/recovery-service#rotate-keys
 Intune rotate keys: /mem/intune/protect/encrypt-devices#rotate-bitlocker-recovery-keys
-
-Prerequisites:
-
-Client-driven recovery password rotation to Enable rotation on Azure AD-joined devices or Enable rotation on Azure AD and Hybrid-joined devices
-Save BitLocker recovery information to Azure Active Directory to Enabled
-Store recovery information in Azure Active Directory before enabling BitLocker to Required
 
 ## BitLocker Repair tool
 
 If the recovery methods discussed earlier in this document don't unlock the volume, the *BitLocker Repair tool* (`repair-bde.exe`) can be used to decrypt the volume at the block level. The tool uses the *BitLocker key package* to help recover encrypted data from severely damaged drives.
 
 The recovered data can then be used to salvage encrypted data, even if the correct recovery password fails to unlock the damaged volume. It's recommended to still save the recovery password, as a key package can't be used without the corresponding recovery password.
-
-### Retrieve the BitLocker key package
-
-To export a previously saved key package from AD DS, it's required to have read access to the BitLocker recovery passwords and key packages that are stored in AD DS. By default, only Domain Admins have access to BitLocker recovery information, but [access can be delegated to others](/archive/blogs/craigf/delegating-access-in-ad-to-bitlocker-recovery-information).
 
 Use the Repair tool in the following conditions:
 
@@ -309,20 +323,6 @@ The following limitations exist for Repair-bde:
 
 For a complete list of the `repair-bde.exe` options, see the [Repair-bde reference](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/ff829851(v=ws.11)).
 
+### Retrieve the BitLocker key package
 
-
-
-
-<!--After the recovery password has been used to recover access to the device, BitLocker reseals the encryption key to the current values of the measured components.
-
-
-Domain Administrator privileges are required or delegated permissions must have been granted by a domain administrator.
-Normal users will not see the recovery key and cannot search for it.
-
-
-### Multiple recovery passwords
-
-If multiple recovery passwords are stored under a computer object in AD DS, the name of the BitLocker recovery information object includes the date on which the password was created. To make sure the correct password is provided and/or to prevent providing the incorrect password, the help desk can ask the user to read the eight character password ID that is displayed in the preboot recovery screen.
-
-Since the password ID is a unique value that is associated with each recovery password stored in AD DS, running a query using this ID finds the correct password to unlock the encrypted volume.
--->
+To export a previously saved key package from AD DS, it's required to have read access to the BitLocker recovery passwords and key packages that are stored in AD DS. By default, only Domain Admins have access to BitLocker recovery information, but [access can be delegated to others](/archive/blogs/craigf/delegating-access-in-ad-to-bitlocker-recovery-information).

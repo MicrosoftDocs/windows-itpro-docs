@@ -84,6 +84,9 @@ When planning the BitLocker recovery process, first consult the organization's c
 | :black_square_button: | *How does the organization handle lost or forgotten passwords?* |
 | :black_square_button: | *How does the organization perform smart card PIN resets?* |
 | :black_square_button: | *Are users allowed to save or retrieve recovery information for the devices that they own?* |
+| :black_square_button: | *How much do you want users to be involved in the BitLocker configuration process? Do you want users to interact with the process, be silent, or both?* |
+| :black_square_button: | *Where do you want to store the BitLocker recovery keys?* |
+| :black_square_button: | *Do you want to enable recovery password rotation?* |
 
 Answering the questions helps to determine the best BitLocker recovery process for the organization, and to configure BitLocker policy settings accordingly. For example, if the organization has a process for resetting passwords, a similar process can be used for BitLocker recovery. If users aren't allowed to save or retrieve recovery information, the organization can use a data recovery agents (DRAs), or automatically back up recovery information.
 
@@ -108,7 +111,7 @@ To recover BitLocker, a user can use a recovery password, if available. The BitL
 Having access to the recovery password allows the holder to unlock a BitLocker-protected volume and access all of its data. Therefore, it's important for your organization to establish procedures to control access to recovery passwords and ensure that they're stored securely, separate from the devices they protect.
 
 > [!NOTE]
-> There's an option for storing the BitLocker recovery key in a user's Microsoft account. This option is available for devices that aren't members of a domain and that the user is using a Microsoft account. Storing the recovery password in a Microsoft account is the default recommended recovery key storage method for devices that aren't Microsoft Entra joined or Active Directory joined.
+> There's an option for storing the BitLocker recovery key in a user's Microsoft account. The option is available for devices that aren't members of a domain and that the user is using a Microsoft account. Storing the recovery password in a Microsoft account is the default recommended recovery key storage method for devices that aren't Microsoft Entra joined or Active Directory joined.
 
 Backup of the recovery password should be configured before BitLocker is enabled, but can also be done after encryption, as described in the [BitLocker operations guide](operations-guide.md#reset-and-backup-a-recovery-password).\
 The preferred backup methodology in an organization is to automatically store BitLocker recovery information in a central location. Depending on the organization's requirements, the recovery information can be stored in Microsoft Entra ID, AD DS, or file shares.
@@ -117,6 +120,9 @@ The recommendation is to use the following BitLocker backup methods:
 
 - For Microsoft Entra joined devices, store the recovery key in Microsoft Entra ID
 - For Active Directory joined devices, store the recovery key in AD DS
+
+> [!NOTE]
+> There's no automatic way to store the recovery key for removable storage devices in Microsoft Entra ID or AD DS. However, you can use PowerShell or the `manage.bde.exe` command to do so. For more information and examples, review the [BitLocker operations guide](operations-guide.md?tabs=powershell#reset-and-backup-a-recovery-password).
 
 ### Data Recovery Agents
 

@@ -22,6 +22,7 @@ To help document the organization's current disk encryption security policies, a
 | :black_square_button: | *What are the policies for validating the identity of users who need to perform BitLocker recovery?* |
 | :black_square_button: | *What policies exist to control who in the organization has access to recovery data?* |
 | :black_square_button: | *What policies exist to control the decommission or retirement of devices?* |
+| :black_square_button: | *What encryption algorithm strength is in place?* |
 
 ## Encryption keys and authentication
 
