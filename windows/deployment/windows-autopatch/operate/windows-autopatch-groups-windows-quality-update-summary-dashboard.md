@@ -1,7 +1,7 @@
 ---
 title: Windows quality update summary dashboard
 description: Provides a summary view of the current update status for all devices enrolled into Windows Autopatch with Autopatch groups
-ms.date: 07/25/2023
+ms.date: 10/04/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: how-to
@@ -17,7 +17,7 @@ ms.collection:
 
 # Windows quality update summary dashboard
 
-The summary dashboard provides a summary view of the current update status for all devices enrolled into Windows Autopatch.
+The Summary dashboard provides a summary view of the current update status for all devices enrolled into Windows Autopatch.
 
 **To view the current update status for all your enrolled devices:**
 
@@ -29,7 +29,7 @@ The summary dashboard provides a summary view of the current update status for a
 
 ## Report information
 
-The following information is available in the summary dashboard:
+The following information is available in the Summary dashboard:
 
 | Column name | Description |
 | ----- | ----- |
@@ -47,5 +47,5 @@ The following options are available:
 
 | Option | Description |
 | ----- | ----- |
-| Refresh | The option to **Refresh** the summary dashboard is available at the top of the page. This process will ensure that the summary dashboard view is updated to the latest available dataset from within the last 24-hour period. |
+| Refresh | The option to **Refresh** the Summary dashboard is available at the top of the page. This process ensures that the Summary dashboard view is updated to the latest available dataset from within the last 24-hour period. |
 | Summary links | Each column represents the summary of included devices. Select the hyperlinked number to produce a filtered report in a new browser tab. |

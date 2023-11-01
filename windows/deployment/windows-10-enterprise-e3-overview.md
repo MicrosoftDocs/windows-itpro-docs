@@ -23,9 +23,9 @@ Windows 10 Enterprise E3 launched in the Cloud Solution Provider (CSP) channel o
 Windows 10/11 Enterprise E3 in CSP delivers, by subscription, exclusive features reserved for Windows 10 or Windows 11 Enterprise editions. This offering is available through the Cloud Solution Provider (CSP) channel via the Partner Center as an online service. Windows 10/11 Enterprise E3 in CSP provides a flexible, per-user subscription for small and medium-sized organizations (from one to hundreds of users). To take advantage of this offering, you must have the following prerequisites:
 
 - Windows 10 Pro, version 1607 (Windows 10 Anniversary Update) or later (or Windows 11), installed and activated, on the devices to be upgraded.
-- Azure Active Directory (Azure AD) available for identity management
+- Microsoft Entra available for identity management
 
-You can move from Windows 10 Pro or Windows 11 Pro to Windows 10 Enterprise or Windows 11 Enterprise more easily than ever before with no keys and no reboots. After one of your users enters the Azure AD credentials associated with a Windows 10/11 Enterprise E3 license, the operating system turns from Windows 10 Pro to Windows 10 Enterprise or Windows 11 Pro to Windows 11 Enterprise, and all the appropriate Enterprise features are unlocked. When a subscription license expires or is transferred to another user, the Enterprise device seamlessly steps back down to Windows 10 Pro or Windows 11 Pro.
+You can move from Windows 10 Pro or Windows 11 Pro to Windows 10 Enterprise or Windows 11 Enterprise more easily than ever before with no keys and no reboots. After one of your users enters the Microsoft Entra credentials associated with a Windows 10/11 Enterprise E3 license, the operating system turns from Windows 10 Pro to Windows 10 Enterprise or Windows 11 Pro to Windows 11 Enterprise, and all the appropriate Enterprise features are unlocked. When a subscription license expires or is transferred to another user, the Enterprise device seamlessly steps back down to Windows 10 Pro or Windows 11 Pro.
 
 Previously, only organizations with a Microsoft Volume Licensing Agreement could deploy Windows 10 Enterprise or Windows 11 Enterprise to their users. Now, with Windows 10/11 Enterprise E3 in CSP, small- and medium-sized organizations can more easily take advantage of Enterprise edition features.
 
@@ -183,6 +183,6 @@ The Managed User Experience feature is a set of Windows 10 Enterprise edition fe
 ## Related articles
 
 [Windows 10/11 Enterprise Subscription Activation](windows-10-subscription-activation.md)<br>
-[Connect domain-joined devices to Azure AD for Windows 10 experiences](/azure/active-directory/devices/hybrid-azuread-join-plan)<br>
+[Connect domain-joined devices to Microsoft Entra ID for Windows 10 experiences](/azure/active-directory/devices/hybrid-azuread-join-plan)<br>
 [Compare Windows 10 editions](https://www.microsoft.com/WindowsForBusiness/Compare)<br>
 [Windows for business](https://www.microsoft.com/windowsforbusiness/default.aspx)<br>

@@ -15,7 +15,7 @@ When you Microsoft Entra join a Windows device, the system prompts you to enroll
 You may wish to disable the automatic Windows Hello for Business enrollment prompts if you aren't ready to use it in your environment. This article describes how to disable Windows Hello for Business enrollment in a cloud only environment.
 
 > [!NOTE]
-> During the out-of-box experience (OOBE) flow of an Microsoft Entra join, you will see a provisioning PIN when you don't have Intune. You can always cancel the PIN screen and set this cancellation with registry keys to prevent future prompts.
+> During the out-of-box experience (OOBE) flow of a Microsoft Entra join, you will see a provisioning PIN when you don't have Intune. You can always cancel the PIN screen and set this cancellation with registry keys to prevent future prompts.
 
 ## Prerequisites
 
@@ -58,7 +58,7 @@ The following method explains how to disable Windows Hello for Business enrollme
 
 ## Disable Windows Hello for Business enrollment without Intune
 
-If you don't use Intune in your organization, then you can disable Windows Hello for Business using the registry. You can use a third-party MDM, or some other method that you use to manage these devices. Because these systems are Azure AD Joined only, and not domain joined, these settings can also be made manually in the registry.
+If you don't use Intune in your organization, then you can disable Windows Hello for Business using the registry. You can use a third-party MDM, or some other method that you use to manage these devices. Because these systems are Microsoft Entra joined only, and not domain joined, these settings can also be made manually in the registry.
 
 Intune uses the following registry keys: **`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Policies\PassportForWork\<Tenant-ID>\Device\Policies`**
 
