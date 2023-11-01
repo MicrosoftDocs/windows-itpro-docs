@@ -22,9 +22,11 @@ When applying a provisioning package (PPKG) containing power settings, elevated 
 
 To apply the power settings successfully with the [correct security context](/windows/win32/services/localsystem-account), place the PPKG in `%WINDIR%/Provisioning/Packages` directory, and reboot the device. For more information, see [Configure power settings](/windows-hardware/customize/power-settings/configure-power-settings).
 
-## Unable to perform bulk enrollment in Azure AD
+<a name='unable-to-perform-bulk-enrollment-in-azure-ad'></a>
 
-When [enrolling devices into Azure AD using provisioning packages](https://techcommunity.microsoft.com/t5/intune-customer-success/bulk-join-a-windows-device-to-azure-ad-and-microsoft-endpoint/ba-p/2381400), the bulk token request will be rejected, if the user requesting a bulk token is not authorized to grant application consent. For more information, see [Configure how users consent to applications](/azure/active-directory/manage-apps/configure-user-consent).
+## Unable to perform bulk enrollment in Microsoft Entra ID
+
+When [enrolling devices into Microsoft Entra ID using provisioning packages](https://techcommunity.microsoft.com/t5/intune-customer-success/bulk-join-a-windows-device-to-azure-ad-and-microsoft-endpoint/ba-p/2381400), the bulk token request will be rejected, if the user requesting a bulk token is not authorized to grant application consent. For more information, see [Configure how users consent to applications](/azure/active-directory/manage-apps/configure-user-consent).
 
 > [!NOTE]
 > When obtaining the bulk token, you should select "No, sign in to this app only" when prompted for authentication. If you select "OK" instead without also selecting "Allow my organization to manage my device", the bulk token request may be rejected.

@@ -1,7 +1,7 @@
 ---
 title: What's new 2023
 description: This article lists the 2023 feature releases and any corresponding Message center post numbers.
-ms.date: 10/04/2023 
+ms.date: 10/27/2023 
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: whats-new
@@ -20,6 +20,20 @@ ms.collection:
 This article lists new and updated feature releases, and service releases, with their corresponding Message center post numbers (if applicable).
 
 Minor corrections such as typos, style, or formatting issues aren't listed.
+
+## October 2023
+
+### October feature releases or updates
+
+| Article | Description |
+| ----- | ----- |
+| [Microsoft 365 Apps for enterprise](../operate/windows-autopatch-microsoft-365-apps-enterprise.md#microsoft-365-apps-for-enterprise-update-controls) | Added more information about the Allow setting in the [Microsoft 365 Apps for enterprise update controls](../operate/windows-autopatch-microsoft-365-apps-enterprise.md#microsoft-365-apps-for-enterprise-update-controls) section |
+
+## October service release
+
+| Message center post number | Description |
+| ----- | ----- |
+| [MC680344](https://admin.microsoft.com/adminportal/home#/MessageCenter) | Planned Maintenance: Service Improvements |
 
 ## September 2023
 

@@ -74,8 +74,8 @@ If the credentials are certificate-based, then the elements in the following tab
 |------------------|---------------|
 | SubjectName | The user's distinguished name (DN) where the domain components of the distinguished name reflect the internal DNS namespace when the SubjectAlternativeName does not have the fully qualified UPN required to find the domain controller. </br>This requirement is relevant in multi-forest environments as it ensures a domain controller can be located. |
 | SubjectAlternativeName | The user's fully qualified UPN where a domain name component of the user's UPN matches the organizations internal domain's DNS namespace. </br>This requirement is relevant in multi-forest environments as it ensures a domain controller can be located when the SubjectName does not have the DN required to find the domain controller. |
-| Key Storage Provider (KSP) | If the device is joined to Azure AD, a discrete SSO certificate is used. |
-| EnhancedKeyUsage | One or more of the following EKUs is required: </br><ul><li>Client Authentication (for the VPN)</li><li>EAP Filtering OID (for Windows Hello for Business)</li><li>SmartCardLogon (for Azure AD-joined devices)</li></ul>If the domain controllers require smart card EKU either:<ul><li>SmartCardLogon</li><li>id-pkinit-KPClientAuth (1.3.6.1.5.2.3.4) </li></ul>Otherwise:</br><ul><li>TLS/SSL Client Authentication (1.3.6.1.5.5.7.3.2)</li></ul> |
+| Key Storage Provider (KSP) | If the device is joined to Microsoft Entra ID, a discrete SSO certificate is used. |
+| EnhancedKeyUsage | One or more of the following EKUs is required: </br><ul><li>Client Authentication (for the VPN)</li><li>EAP Filtering OID (for Windows Hello for Business)</li><li>SmartCardLogon (for Microsoft Entra joined devices)</li></ul>If the domain controllers require smart card EKU either:<ul><li>SmartCardLogon</li><li>id-pkinit-KPClientAuth (1.3.6.1.5.2.3.4) </li></ul>Otherwise:</br><ul><li>TLS/SSL Client Authentication (1.3.6.1.5.5.7.3.2)</li></ul> |
 
 ## NDES server configuration
 

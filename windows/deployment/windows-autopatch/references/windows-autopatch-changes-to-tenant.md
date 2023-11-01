@@ -34,13 +34,15 @@ Windows Autopatch creates an enterprise application in your tenant. This enterpr
 
 ### Service principal
 
-Windows Autopatch will create a service principal in your tenant to establish an identity and restrict access to what resources the service has access to within the tenant. For more information, see [Application and service principal objects in Azure Active Directory](/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object). The service principal created by Windows Autopatch is:  
+Windows Autopatch will create a service principal in your tenant to establish an identity and restrict access to what resources the service has access to within the tenant. For more information, see [Application and service principal objects in Microsoft Entra ID](/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object). The service principal created by Windows Autopatch is:  
 
 - Modern Workplace Customer APIs
 
-## Azure Active Directory groups
+<a name='azure-active-directory-groups'></a>
 
-Windows Autopatch will create the required Azure Active Directory groups to operate the service.
+## Microsoft Entra groups
+
+Windows Autopatch will create the required Microsoft Entra groups to operate the service.
 
 The following groups target Windows Autopatch configurations to devices and management of the service by our [first party enterprise applications](#windows-autopatch-enterprise-applications).
 
