@@ -52,7 +52,7 @@ After you've created your VPN policy, you'll need to deploy it to the same group
 
 1.  On the **App policy** blade, select your newly created policy, select **User groups** from the menu that appears, and then select **Add user group**.
 
-    A list of user groups, made up of all of the security groups in your Azure Active Directory, appear in the **Add user group** blade.
+    A list of user groups, made up of all of the security groups in your Microsoft Entra ID, appear in the **Add user group** blade.
 
 2. Choose the group you want your policy to apply to, and then select **Select** to deploy the policy.
 

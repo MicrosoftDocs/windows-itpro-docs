@@ -34,7 +34,7 @@ Keeping your devices up to date is a balance of speed and stability. Windows Aut
 
 Autopatch groups help Microsoft Cloud-Managed services meet all organizations where they are at in their update management journey.  
 
-Autopatch groups is a logical container that groups several [Azure AD groups](/azure/active-directory/fundamentals/active-directory-groups-view-azure-portal), and software update policies, such as Windows Update rings and feature update policies, together.
+Autopatch groups is a logical container that groups several [Microsoft Entra groups](/azure/active-directory/fundamentals/active-directory-groups-view-azure-portal), and software update policies, such as Windows Update rings and feature update policies, together.
 
 For more information on key benefits and how to use Autopatch groups, see [Autopatch groups overview](../deploy/windows-autopatch-groups-overview.md).
 

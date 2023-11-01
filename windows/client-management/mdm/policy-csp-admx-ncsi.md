@@ -269,7 +269,7 @@ This policy setting enables you to specify the HTTPS URL of the corporate websit
 <!-- NCSI_DomainLocationDeterminationUrl-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> This indicates the Network Location Server (NLS) URL and applies exclusively to DirectAccess clients (it does NOT apply for example to VPN clients). For non-DirectAccess scenarios, such as Azure AD only joined devices, please refer to [Policy CSP - NetworkListManager](./policy-csp-networklistmanager.md).
+> This indicates the Network Location Server (NLS) URL and applies exclusively to DirectAccess clients (it does NOT apply for example to VPN clients). For non-DirectAccess scenarios, such as Microsoft Entra-only joined devices, please refer to [Policy CSP - NetworkListManager](./policy-csp-networklistmanager.md).
 <!-- NCSI_DomainLocationDeterminationUrl-Editable-End -->
 
 <!-- NCSI_DomainLocationDeterminationUrl-DFProperties-Begin -->

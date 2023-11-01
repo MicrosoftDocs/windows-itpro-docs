@@ -33,7 +33,7 @@ To start using the Windows Autopatch service, ensure you meet the [Windows Autop
 > [!IMPORTANT]
 > The online Readiness assessment tool helps you check your readiness to enroll in Windows Autopatch for the first time. Once you enroll, you'll no longer be able to access the  tool again.
 
-The Readiness assessment tool checks the settings in [Microsoft Intune](#microsoft-intune-settings) and [Azure Active Directory](#azure-active-directory-settings) (Azure AD) to ensure the settings work with Windows Autopatch. We aren't, however, checking the workloads in Configuration Manager necessary for Windows Autopatch. For more information about workload prerequisites, see [Configuration Manager co-management requirements](../prepare/windows-autopatch-prerequisites.md#configuration-manager-co-management-requirements).
+The Readiness assessment tool checks the settings in [Microsoft Intune](#microsoft-intune-settings) and [Microsoft Entra ID](#azure-active-directory-settings) (Microsoft Entra ID) to ensure the settings work with Windows Autopatch. We aren't, however, checking the workloads in Configuration Manager necessary for Windows Autopatch. For more information about workload prerequisites, see [Configuration Manager co-management requirements](../prepare/windows-autopatch-prerequisites.md#configuration-manager-co-management-requirements).
 
 **To access and run the Readiness assessment tool:**
 
@@ -56,9 +56,11 @@ The following are the Microsoft Intune settings:
 | ----- | ----- |
 | Deployment rings for Windows 10 or later | Verifies that Intune's deployment rings for Windows 10 or later policy doesn't target all users or all devices. Policies of this type shouldn't target any Windows Autopatch devices. For more information, see [Configure deployment rings for Windows 10 and later in Intune](/mem/intune/protect/windows-10-update-rings). |
 
-### Azure Active Directory settings
+<a name='azure-active-directory-settings'></a>
 
-The following are the Azure Active Directory settings:
+### Microsoft Entra settings
+
+The following are the Microsoft Entra settings:
 
 | Check | Description |
 | ----- | ----- |
@@ -74,7 +76,7 @@ For each check, the tool reports one of four possible results:
 | Ready | No action is required before completing enrollment. |
 | Advisory | Follow the steps in the tool or this article for the best experience with enrollment and for users.<p><p>You can complete enrollment, but you must fix these issues before you deploy your first device. |
 | Not ready | You must fix these issues before enrollment. You can't enroll into Windows Autopatch if you don't fix these issues. Follow the steps in the tool or this article to resolve them.  |
-| Error | The Azure Active Directory (AD) role you're using doesn't have sufficient permissions to run this check. |
+| Error | The Microsoft Entra role you're using doesn't have sufficient permissions to run this check. |
 
 ## Step 3: Fix issues with your tenant
 
@@ -104,7 +106,7 @@ Once these actions are complete, you've now successfully enrolled your tenant.
 
 You can choose to delete the data we collect directly within the Readiness assessment tool.
 
-Windows Autopatch retains the data associated with these checks for 12 months after the last time you ran a check in your Azure Active Directory organization (tenant). After 12 months, we retain the data in a deidentified form.
+Windows Autopatch retains the data associated with these checks for 12 months after the last time you ran a check in your Microsoft Entra organization (tenant). After 12 months, we retain the data in a deidentified form.
 
 > [!NOTE]
 > Windows Autopatch will only delete the results we collect within the Readiness assessment tool; Autopatch won't delete any other tenant-level data.

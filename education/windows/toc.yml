@@ -46,7 +46,7 @@ items:
       items:
       - name: Configure federated sign-in
         href: federated-sign-in.md
-      - name: Configure federation between Google Workspace and Azure AD
+      - name: Configure federation between Google Workspace and Microsoft Entra ID
         href: configure-aad-google-trust.md
     - name: Configure Shared PC
       href: /windows/configuration/set-up-shared-or-guest-pc?context=/education/context/context
@@ -74,7 +74,7 @@ items:
         items: 
           - name: Overview
             href: set-up-windows-10.md
-          - name: Azure AD join for school PCs
+          - name: Microsoft Entra join for school PCs
             href: set-up-school-pcs-azure-ad-join.md
           - name: Active Directory join for school PCs
             href: set-up-students-pcs-to-join-domain.md

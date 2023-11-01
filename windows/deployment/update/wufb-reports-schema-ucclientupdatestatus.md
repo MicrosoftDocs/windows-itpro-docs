@@ -23,8 +23,8 @@ Update Event that combines the latest client-based data with the latest service-
 
 | Field | Type | Example | Description |
 |---|---|---|---|
-| **AzureADDeviceId** |  [string](/azure/kusto/query/scalar-data-types/string) | `71db1a1a-f1a6-4a25-b88f-79c2f513dae0` | A string corresponding to the Azure AD tenant to which the device belongs. |
-| **AzureADTenantId** |  [string](/azure/kusto/query/scalar-data-types/string) | `69ca04b0-703d-4b3a-9184-c4e3c15d6f5e` | A string corresponding to this device's Azure AD device ID |
+| **AzureADDeviceId** |  [string](/azure/kusto/query/scalar-data-types/string) | `71db1a1a-f1a6-4a25-b88f-79c2f513dae0` | A string corresponding to the Microsoft Entra tenant to which the device belongs. |
+| **AzureADTenantId** |  [string](/azure/kusto/query/scalar-data-types/string) | `69ca04b0-703d-4b3a-9184-c4e3c15d6f5e` | A string corresponding to this device's Microsoft Entra device ID |
 |**CatalogId** | [string](/azure/kusto/query/scalar-data-types/string) | `b0f410599615e2ce15e6614ac3fc4ec62d80324020351e172edef89091a64f2f` | The update catalog ID | 
 | **ClientState** |  [string](/azure/kusto/query/scalar-data-types/string) | `Installing` | Higher-level bucket of ClientSubstate. |
 | **ClientSubstate** |  [string](/azure/kusto/query/scalar-data-types/string) | `DownloadStart` | Last-known state of this update relative to the device, from the client. |
