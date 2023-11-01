@@ -10,7 +10,7 @@ ms.date: 10/30/2023
 
 # BitLocker recovery process
 
-If a device or drive fails to unlock using the configured BitLocker mechanism, users may be able to self-recover it. If self-recovery is not an option, or the user is unsure how to proceed, the help desk should have procedures in place to retrieve recovery information quickly and securely.
+If a device or drive fails to unlock using the configured BitLocker mechanism, users may be able to self-recover it. If self-recovery is not an option, or the user is unsure how to proceed, the helpdesk should have procedures in place to retrieve recovery information quickly and securely.
 
 This article outlines the process of obtaining BitLocker recovery information for Microsoft Entra joined, Microsoft Entra hybrid joined, and Active Directory joined devices. It is assumed that the reader is already familiar with configuring devices to automatically backup BitLocker recovery information, and the available BitLocker recovery options. For more information, see the [BitLocker recovery overview](recovery-overview.md) article.
 
@@ -29,20 +29,20 @@ A recovery key can't be stored in any of the following locations:
 - The root directory of a non-removable drive
 - An encrypted volume
 
-### Recovery self-service in Microsoft Entra ID
+### Self-recovery in Microsoft Entra ID
 
 If BitLocker recovery keys are stored in Microsoft Entra ID, users can access them using the following URL: https://myaccount.microsoft.com. From the **Devices** tab, users can select a Windows device that they own, and select the option **View BitLocker Keys**.
 
-### Recovery self-service with USB flash drive
+### Self-recovery with USB flash drive
 
 If users saved the recovery password on a USB drive, they can plug the drive into a locked device and follow the instructions. If the key was saved as a text file on the flash drive, users must use a different device to read the text file.
 
-## Help desk recovery
+## Helpdesk recovery
 
-If a user doesn't have a self-service recovery option, the help desk should be able to assist the user with one of the following options:
+If a user doesn't have a self-service recovery option, the helpdesk should be able to assist the user with one of the following options:
 
 - If the device is Microsoft Entra joined, BitLocker recovery information can be retrieved from Microsoft Entra ID
-- If the device is domain joined, recovery information can be retrieved from Active Directory or the encrypted drive can be accessed by a Data Recovery Agent (DRA)
+- If the device is domain joined, recovery information can be retrieved from Active Directory or the encrypted drive can be accessed by a Data Recovery Agent (DRA), if configurtd
 
 > [!WARNING]
 > The backup of the BitLocker recovery password to Microsoft Entra ID or AD DS may not happen automatically. Devices should be configured with policy settings to enable automatic backup, as described the [BitLocker recovery overview](recovery-overview.md) article.
@@ -51,17 +51,15 @@ The following list can be used as a template for creating a recovery process for
 
 | :ballot_box_with_check: | Recovery process step | Details |
 |--|--| -- |
-| :black_square_button: | Record the device name |The name of the user's device can be used to locate the recovery password in Microsoft Entra ID or AD DS. If the user doesn't know the name of the device, ask the user to read the first word of the **Drive Label** in the **BitLocker Drive Encryption Password Entry** user interface. This word is the computer name when BitLocker was enabled and is probably the current name of the computer.|
-| :black_square_button: | Verify the user's identity |The person who is asking for the recovery password should be verified as the authorized user of that computer. It should also be verified whether the computer for which the user provided the name belongs to the user.|
-| :black_square_button: | Locate the recovery password |Locate the computer object with the matching name in AD DS. Because computer object names are listed in the AD DS global catalog, the object should be able to be located even if it's a multi-domain forest.|
+| :black_square_button: | Verify the user's identity |The person who is asking for the recovery password should be verified as the authorized user of that device. It should also be verified whether the device for which the user provided the name belongs to the user.|
+| :black_square_button: | Record the device name |The name of the user's device can be used to locate the recovery password in Microsoft Entra ID or AD DS. |
+| :black_square_button: | Record the recovery key ID |The recovery key ID can be used to locate the recovery password in Microsoft Entra ID or AD DS. The recovery key ID is displayed in the preboot recovery screen. |
+| :black_square_button: | Locate the recovery password |Locate the BitLocker recovery password using the device name or the recovery key ID from Microsoft Entra ID or AD DS.|
 | :black_square_button: | Root cause analysis |Before giving the user the recovery password, information should be gatherer that will help determine why the recovery was needed. This information can be used to analyze the root cause during the post-recovery analysis|
-| :black_square_button: | Provide the user the recovery password | Because the recovery password is 48 digits long, the user may need to record the password by writing it down or typing it on a different computer. If using MBAM or Configuration Manager BitLocker Management, the recovery password will be regenerated after it's recovered from the MBAM or Configuration Manager database to avoid the security risks associated with an uncontrolled password. |
-| :black_square_button: | Rotate the recovery key | |
+| :black_square_button: | Provide the user the recovery password | Since the 48-digit recovery password is long and contains a combination of digits, the user might mishear or mistype the password. The boot-time recovery console uses built-in checksum numbers to detect input errors in each 6-digit block of the 48-digit recovery password, and offers the user the opportunity to correct such errors. |
+| :black_square_button: | Rotate the recovery password | If automatic key rotation is configured, Microsoft Entra joined and Microsoft Entra hybrid joined devices will automatically generate a new recovery password and store it in Microsoft Entra ID |
 
-> [!NOTE]
-> Because the 48-digit recovery password is long and contains a combination of digits, the user might mishear or mistype the password. The boot-time recovery console uses built-in checksum numbers to detect input errors in each 6-digit block of the 48-digit recovery password, and offers the user the opportunity to correct such errors.
-
-### Help desk recovery options for Microsoft Entra joined devices
+### Helpdesk recovery in Microsoft Entra ID
 
 The recovery key is now visible in the Microsoft Intune admin center. To view the recovery key:
 
@@ -117,24 +115,9 @@ Device name: DESKTOP-53O32QI
 What are the minimum role-based access control (RBAC) rights required to access the recovery key in the Intune console?
 Answer: To be able to access the recovery keys, an administrator must be granted Helpdesk Administrator permissions. Find out more about Azure AD roles in this article. [Link](/entra/identity/role-based-access-control/permissions-reference#helpdesk-administrator)
 
+### Helpdesk recovery in Active Directory Domain Services
 
-### Help desk recovery options for Active Directory joined devices
-
-To export a previously saved recovery password from AD DS, it's required to have read access to objects stored in AD DS. By default, only Domain Adminstrator have access to BitLocker recovery information, but [access can be delegated to others](/archive/blogs/craigf/delegating-access-in-ad-to-bitlocker-recovery-information).
-
-The BitLocker Recovery Password Viewer allows domain administrators to view BitLocker recovery passwords for computer objects in Active Directory.
-The BitLocker Recovery Password Viewer is an add-on to the Active Directory Users and Computers Microsoft Management Console (MMC) snap-in.
-Select the BitLocker Recovery tab in the Properties dialog box of a device to view the BitLocker recovery passwords. You must have the BitLocker Recovery Password Viewer — an optional tool included with the Remote Server Administration Tools (RSAT) — to see the tab in the dialog box.
-
-Active Directory Service Interface Editor (ADSI Edit) tool
-
-ADSI Edit is an MMC snap-in that lets you connect to Active Directory database partitions or to an LDAP server. If you view the device using this tool, you can see additional full volume encryption (FVE) attributes stored in Azure AD DS.
-
-If multiple recovery passwords are stored under a computer object in AD DS, the name of the BitLocker recovery information object includes the date on which the password was created.
-
-To make sure the correct password is provided and/or to prevent providing the incorrect password, ask the user to read the eight character password ID that is displayed in the recovery console.
-
-Since the password ID is a unique value that is associated with each recovery password stored in AD DS, running a query using this ID finds the correct password to unlock the encrypted volume.
+To export a precovery password from AD DS, it's required to have read access to objects stored in AD DS. By default, only *Domain Adminstrators* have access to BitLocker recovery information, but [access can be delegated to others](/archive/blogs/craigf/delegating-access-in-ad-to-bitlocker-recovery-information).
 
 #### BitLocker Recovery Password Viewer
 
