@@ -61,18 +61,12 @@ The following list can be used as a template for creating a recovery process for
 
 ### Helpdesk recovery in Microsoft Entra ID
 
-Global Administrators of the Microsoft Entra ID can access BitLocker recovery passwords for all devices in the tenant. Helpdesk administrators can be delegated access to BitLocker recovery passwords for all devices in the tenant, or for a specific group of devices. To learn more, see [Link](/entra/identity/role-based-access-control/permissions-reference#helpdesk-administrator)
+Users with the *Global Administrator* or *Helpdesk Administrator* Microsoft Entra ID role can access BitLocker recovery passwords for all devices in the tenant. The [Helpdesk Administrator](/entra/identity/role-based-access-control/permissions-reference#helpdesk-administrator) role can also be delegated to access BitLocker recovery passwords for devices in specific Administrative Units.
 
->[!NOTE]
-> Devices that are managed with Microsoft Intune
+For more information how to retrieve BitLocker recovery passwords using from Microsoft Entra admin center, see [View or copy BitLocker keys](/entra/identity/devices/manage-device-identities#view-or-copy-bitlocker-keys).
 
-The recovery key is now visible in the Microsoft Intune admin center. To view the recovery key:
-
-1. Open the Microsoft Intune admin center
-1. Select Devices > All devices
-1. Find and select the device from the list and then select **Monitor** > **Recovery keys**
-
-### Retrieve the recovery password from Microsoft Entra ID
+Another option to access BitLocker recovery passwords is to query the Microsoft Graph. The option is useful for integrated or scripted solutions.\
+In the following example, a PowerShell function uses the `Get-MgInformationProtectionBitlockerRecoveryKey` cmdlet to retrieve recovery passwords from Microsoft Entra ID:
 
 ``` PowerShell
 function Get-EntraBitLockerKeys{
@@ -104,7 +98,7 @@ Import-Module Microsoft.Graph.Identity.SignIns
 Connect-MgGraph -Scopes 'BitlockerKey.Read.All' -NoWelcome
 ```
 
-### Output example
+After the function is loaded, it can be used to retrieve BitLocker recovery passwords for a specific device. Example:
 
 ``` PowerShell
 PS C:\> Get-EntraBitLockerKeys -DeviceName DESKTOP-53O32QI
@@ -115,75 +109,64 @@ Device name: DESKTOP-53O32QI
  BitLocker recovery key: 158422-038236-492536-574783-256300-205084-114356-069773
 ```
 
+> [!NOTE]
+> For devices that are managed by Microsoft Intune, BitLocker recovery passwords can be retrieved from the device properties in the Microsoft Intune admin center. For more information, see [View details for recovery keys](/mem/intune/protect/encrypt-devices#view-details-for-recovery-keys).
+
 ### Helpdesk recovery in Active Directory Domain Services
 
-To export a precovery password from AD DS, it's required to have read access to objects stored in AD DS. By default, only *Domain Adminstrators* have access to BitLocker recovery information, but [access can be delegated to others](/archive/blogs/craigf/delegating-access-in-ad-to-bitlocker-recovery-information).
+To export a recovery password from AD DS, it's required to have read access to objects stored in AD DS. By default, only *Domain Adminstrators* have access to BitLocker recovery information, but [access can be delegated](/archive/blogs/craigf/delegating-access-in-ad-to-bitlocker-recovery-information) to specific security principals.
 
-#### BitLocker Recovery Password Viewer
-
-BitLocker Recovery Password Viewer is an optional tool included with the *Remote Server Administration Tools (RSAT)*, and it's an extension for the *Active Directory Users and Computers Microsoft Management Console (MMC)* snap-in.
+To facilitate the retrieval of BitLocker recovery passwords from AD DS, you can use the *BitLocker Recovery Password Viewer* tool. The tool is included with the *Remote Server Administration Tools (RSAT)*, and it's an extension for the *Active Directory Users and Computers Microsoft Management Console (MMC)* snap-in.
 
 With BitLocker Recovery Password Viewer you can:
 
 - Check the Active Directory computer object's properties to retrieve the associated BitLocker recovery passwords
-- Search Active Directory for BitLocker recovery password across all the domains in the Active Directory forest. Passwords can also be searched by password identifier (ID)
-
-To complete the procedures in this scenario, the following requirements must be met:
-
-- Domain administrator credentials
-- Devices must be joined to the domain
-- On the domain-joined devices, BitLocker must be enabled
+- Search Active Directory for BitLocker recovery password across all the domains in the Active Directory forest. Recovery passwords can also be searched by password identifier (ID)
 
 The following procedures describe the most common tasks performed by using the BitLocker Recovery Password Viewer.
 
 ##### View the recovery passwords for a computer object
 
-1. In **Active Directory Users and Computers**, locate and then select the container in which the computer is located
+1. Open **Active Directory Users and Computers** MMC snap-in, and select the container or OU in which the computer objects is located
 1. Right-click the computer object and select **Properties**
 1. In the **Properties** dialog box, select the **BitLocker Recovery** tab to view the BitLocker recovery passwords that are associated with the computer
 
-##### Copy the recovery passwords for a computer object
-
-1. Follow the steps in the previous procedure to view the BitLocker recovery passwords
-1. On the **BitLocker Recovery** tab of the **Properties** dialog box, right-click the BitLocker recovery password that needs to be copied, and then select **Copy Details**
-1. Press <kbd>CTRL</kbd>+<kbd>V</kbd> to paste the copied text to a destination location, such as a text file or spreadsheet
-
 ##### Locate a recovery password by using a password ID
 
-1. In Active Directory Users and Computers, right-click the domain container and select **Find BitLocker Recovery Password**
+1. In **Active Directory Users and Computers**, right-click the domain container and select **Find BitLocker Recovery Password**
 1. In the **Find BitLocker Recovery Password** dialog box, type the first eight characters of the recovery password in the **Password ID (first 8 characters)** box, and select **Search**
-1. Once the recovery password is located, you can use the previous procedure to copy it
 
-#### Data Recovery Agents
+### Data Recovery Agents
 
-To list data recovery agents configured for a BitLocker-protected drive, use the `manage-bde.exe` command, including certificate-based protectors. Example:
+If devices are configured with a DRA, the Helpdesk can use the DRA to unlock the drive. Once the BitLocker drive is attached to a device that has the private key of the DRA certificate, the drive can be unlocked by using the `manage-bde.exe` command.
+
+For example, to list the DRA configured for a BitLocker-protected drive, use the following command:
 
 ```cmd
-C:\>manage-bde.exe -protectors -get E:
+C:\>manage-bde.exe -protectors -get D:
 
-Volume E: []
+Volume D: [Local Disk]
 All Key Protectors
 
-    Numerical Password:
-      ID: {24B0AA32-F8D0-40BA-BB05-73A800324C09}
-      Password:
-        461109-608201-413820-485342-181588-463056-430617-501391
+    TPM:
+      ID: {A4F994F9-BBB8-453D-8F1C-719053F90CD3}
+      PCR Validation Profile:
+        7, 11
+        (Uses Secure Boot for integrity validation)
 
     Data Recovery Agent (Certificate Based):
-      ID: {3F81C18D-A685-4782-8F55-99C6452980E7}
+      ID: {3A8F7DEA-878F-4663-B149-EE2EC9ADE40B}
       Certificate Thumbprint:
-        9de688607336294a52b445d30d1eb92f0bec1e78
+        f46563b1d4791d5bd827f32265341ff9068b0c42
 ```
 
-In this example, if the private key is available in the local certificate store, the administrator could use the following command to unlock the drive by using the data recovery agent protector:
+If the private key of the certificate with a thumbprint of `f46563b1d4791d5bd827f32265341ff9068b0c42` is available in the local certificate store, an administrator can use the following command to unlock the drive with the DRA protector:
 
 ```cmd
-manage-bde -unlock E: -Certificate -ct 9de688607336294a52b445d30d1eb92f0bec1e78
+manage-bde -unlock D: -Certificate -ct f46563b1d4791d5bd827f32265341ff9068b0c42
 ```
 
 ## Post-recovery tasks
-
-### BitLocker recovery analysis
 
 When a volume is unlocked using a recovery password, an event is written to the event log, and the platform validation measurements are reset in the TPM to match the current configuration. Unlocking the volume means that the encryption key has been released and is ready for on-the-fly encryption when data is written to the volume, and on-the-fly decryption when data is read from the volume. After the volume is unlocked, BitLocker behaves the same way, regardless of how the access was granted.
 
