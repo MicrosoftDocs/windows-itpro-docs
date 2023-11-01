@@ -121,7 +121,7 @@ Figure 2 illustrates the Measured Boot and remote attestation process.
 
 *Figure 2. Measured Boot proves the PC's health to a remote server*:
 
-Windows includes the application programming interfaces to support Measured Boot. However, to take advanted of it, you need non-Microsoft tools to implement a remote attestation client and trusted attestation server. For example, see the following tools from Microsoft Research:
+Windows includes the application programming interfaces to support Measured Boot. However, to take advantage of it, you need non-Microsoft tools to implement a remote attestation client and trusted attestation server. For example, see the following tools from Microsoft Research:
 
 - [TPM Platform Crypto-Provider Toolkit](https://www.microsoft.com/download/details.aspx?id=52487)
 - [TSS.MSR](https://github.com/microsoft/TSS.MSR#tssmsr)
