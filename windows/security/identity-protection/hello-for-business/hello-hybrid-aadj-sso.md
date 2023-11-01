@@ -1,21 +1,21 @@
 ---
-title: Configure single sign-on (SSO) for Azure AD joined devices
-description: Learn how to configure single sign-on to on-premises resources for Azure AD-joined devices, using Windows Hello for Business.
+title: Configure single sign-on (SSO) for Microsoft Entra joined devices
+description: Learn how to configure single sign-on to on-premises resources for Microsoft Entra joined devices, using Windows Hello for Business.
 ms.date: 12/30/2022
 ms.topic: how-to
 ---
-# Configure single sign-on for Azure AD joined devices
+# Configure single sign-on for Microsoft Entra joined devices
 
 [!INCLUDE [hello-hybrid-key-trust](./includes/hello-hybrid-keycert-trust-aad.md)]
 
-Windows Hello for Business combined with Azure AD-joined devices makes it easy for users to securely access cloud-based resources using a strong, two-factor credential. Some resources may remain on-premises as enterprises transition resources to the cloud and Azure AD-joined devices may need to access these resources. With additional configurations to the hybrid deployment, you can provide single sign-on to on-premises resources for Azure AD-joined devices using Windows Hello for Business, using a key or a certificate.
+Windows Hello for Business combined with Microsoft Entra joined devices makes it easy for users to securely access cloud-based resources using a strong, two-factor credential. Some resources may remain on-premises as enterprises transition resources to the cloud and Microsoft Entra joined devices may need to access these resources. With additional configurations to the hybrid deployment, you can provide single sign-on to on-premises resources for Microsoft Entra joined devices using Windows Hello for Business, using a key or a certificate.
 
 > [!NOTE]
 > These steps are not needed when using the cloud Kerberos trust model.
 
 ## Prerequisites
 
-Unlike hybrid Azure AD-joined devices, Azure AD-joined devices don't have a relationship with your Active Directory domain. This factor changes the way in which users authenticate to Active Directory. Validate the following configurations to ensure they support Azure AD-joined devices:
+Unlike Microsoft Entra hybrid joined devices, Microsoft Entra joined devices don't have a relationship with your Active Directory domain. This factor changes the way in which users authenticate to Active Directory. Validate the following configurations to ensure they support Microsoft Entra joined devices:
 
 > [!div class="checklist"]
 > - Certificate Revocation List (CRL) Distribution Point
@@ -29,9 +29,9 @@ During certificate validation, Windows compares the current certificate with inf
 
 ![Domain Controller Certificate with LDAP CDP.](images/aadj/Certificate-CDP.png)
 
-The preceding domain controller certificate shows a *CRL distribution point* (CDP) in Active Directory. The value in the URL begins with *ldap*. Using Active Directory for domain joined devices provides a highly available CRL distribution point. However, Azure AD joined devices can't read data from Active Directory, and certificate validation doesn't provide an opportunity to authenticate prior to reading the CRL. The authentication becomes a circular problem: the user is attempting to authenticate, but must read Active Directory to complete the authentication, but the user can't read Active Directory because they haven't authenticated.
+The preceding domain controller certificate shows a *CRL distribution point* (CDP) in Active Directory. The value in the URL begins with *ldap*. Using Active Directory for domain joined devices provides a highly available CRL distribution point. However, Microsoft Entra joined devices can't read data from Active Directory, and certificate validation doesn't provide an opportunity to authenticate prior to reading the CRL. The authentication becomes a circular problem: the user is attempting to authenticate, but must read Active Directory to complete the authentication, but the user can't read Active Directory because they haven't authenticated.
 
-To resolve this issue, the CRL distribution point must be a location accessible by Azure AD joined devices that doesn't require authentication. The easiest solution is to publish the CRL distribution point on a web server that uses HTTP (not HTTPS).
+To resolve this issue, the CRL distribution point must be a location accessible by Microsoft Entra joined devices that doesn't require authentication. The easiest solution is to publish the CRL distribution point on a web server that uses HTTP (not HTTPS).
 
 If your CRL distribution point doesn't list an HTTP distribution point, then you need to reconfigure the issuing certificate authority to include an HTTP CRL distribution point, preferably first, in the list of distribution points.
 
@@ -40,11 +40,11 @@ If your CRL distribution point doesn't list an HTTP distribution point, then you
 
 ### Domain controller certificates
 
-Certificate authorities write CDP information in certificates as they're issued. If the distribution point changes, then previously issued certificates must be reissued for the certificate authority to include the new CDP. The domain controller certificate is one the critical components of Azure AD-joined devices authenticating to Active Directory.
+Certificate authorities write CDP information in certificates as they're issued. If the distribution point changes, then previously issued certificates must be reissued for the certificate authority to include the new CDP. The domain controller certificate is one the critical components of Microsoft Entra joined devices authenticating to Active Directory.
 
 #### Why does Windows need to validate the domain controller certificate?
 
-Windows Hello for Business enforces the strict KDC validation security feature when authenticating from an Azure AD joined device to a domain. This enforcement imposes more restrictive criteria that must be met by the Key Distribution Center (KDC). When authenticating using Windows Hello for Business on an Azure AD joined device, the Windows client validates the reply from the domain controller by ensuring all of the following are met:
+Windows Hello for Business enforces the strict KDC validation security feature when authenticating from a Microsoft Entra joined device to a domain. This enforcement imposes more restrictive criteria that must be met by the Key Distribution Center (KDC). When authenticating using Windows Hello for Business on a Microsoft Entra joined device, the Windows client validates the reply from the domain controller by ensuring all of the following are met:
 
 - The domain controller has the private key for the certificate provided
 - The root CA that issued the domain controller's certificate is in the device's *Trusted Root Certificate Authorities*
@@ -54,7 +54,7 @@ Windows Hello for Business enforces the strict KDC validation security feature w
 - The domain controller's certificate's signature hash algorithm is **sha256**
 - The domain controller's certificate's public key is **RSA (2048 Bits)**
 
-Authenticating from a Hybrid Azure AD joined device to a domain using Windows Hello for Business doesn't enforce that the domain controller certificate includes the *KDC Authentication* EKU. If you're adding Azure AD-joined devices to an existing domain environment, make sure to verify that your domain controller certificate has been updated to include the *KDC Authentication* EKU.
+Authenticating from a Microsoft Entra hybrid joined device to a domain using Windows Hello for Business doesn't enforce that the domain controller certificate includes the *KDC Authentication* EKU. If you're adding Microsoft Entra joined devices to an existing domain environment, make sure to verify that your domain controller certificate has been updated to include the *KDC Authentication* EKU.
 
 ## Configure a CRL distribution point for an issuing CA
 
@@ -62,7 +62,7 @@ Use this set of procedures to update the CA that issues domain controller certif
 
 ### Configure Internet Information Services to host CRL distribution point
 
-You need to host your new certificate revocation list on a web server so Azure AD-joined devices can easily validate certificates without authentication. You can host these files on web servers many ways. The following steps are just one and may be useful for admins unfamiliar with adding a new CRL distribution point.
+You need to host your new certificate revocation list on a web server so Microsoft Entra joined devices can easily validate certificates without authentication. You can host these files on web servers many ways. The following steps are just one and may be useful for admins unfamiliar with adding a new CRL distribution point.
 
 > [!IMPORTANT]
 > Do not configure the IIS server hosting your CRL distribution point to use https or a server authentication certificate. Clients should access the distribution point using http. 
@@ -217,9 +217,11 @@ With the CA properly configured with a valid HTTP-based CRL distribution point, 
 1. Review the information below the list of fields to confirm the new URL for the CRL distribution point is present in the certificate. Select **OK**
     ![New Certificate with updated CDP.](images/aadj/dc-cert-with-new-cdp.png)
 
-## Deploy the root CA certificate to Azure AD-joined devices
+<a name='deploy-the-root-ca-certificate-to-azure-ad-joined-devices'></a>
 
-The domain controllers have a certificate that includes the new CRL distribution point. Next, you need the enterprise root certificate so you can deploy it to Azure AD-joined devices. When you deploy the enterprise root certificates to a device, it ensures the device trusts any certificates issued by the certificate authority. Without the certificate, Azure AD-joined devices don't trust domain controller certificates and authentication fails.
+## Deploy the root CA certificate to Microsoft Entra joined devices
+
+The domain controllers have a certificate that includes the new CRL distribution point. Next, you need the enterprise root certificate so you can deploy it to Microsoft Entra joined devices. When you deploy the enterprise root certificates to a device, it ensures the device trusts any certificates issued by the certificate authority. Without the certificate, Microsoft Entra joined devices don't trust domain controller certificates and authentication fails.
 
 ### Export the enterprise root certificate
 
@@ -250,4 +252,4 @@ To configure devices with Microsoft Intune, use a custom policy:
 1. Under **Assignment**, select a security group that contains as members the devices or users that you want to configure > **Next**
 1. Review the policy configuration and select **Create**
 
-If you plan on using certificates for on-premises single-sign on, perform the additional steps in [Using Certificates for On-premises Single-sign On](hello-hybrid-aadj-sso-cert.md). Otherwise, you can sign in to an Azure AD joined device with Windows Hello for Business and test SSO to an on-premises resource.
+If you plan on using certificates for on-premises single-sign on, perform the additional steps in [Using Certificates for On-premises Single-sign On](hello-hybrid-aadj-sso-cert.md). Otherwise, you can sign in to a Microsoft Entra joined device with Windows Hello for Business and test SSO to an on-premises resource.

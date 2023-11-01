@@ -32,10 +32,10 @@ Users in a Microsoft-verified academic organization with Microsoft 365 accounts 
 
 Organizations can [purchase subscriptions][EDU-2] directly in the *Microsoft 365 admin center*, via volume licensing agreements, or through partner resellers.
 
-When you sign up for a Minecraft Education trial, or purchase a subscription, Minecraft Education licenses are linked to your Azure Active Directory (Azure AD) tenant. If you don't have an Azure AD tenant:
+When you sign up for a Minecraft Education trial, or purchase a subscription, Minecraft Education licenses are linked to your Microsoft Entra tenant. If you don't have a Microsoft Entra tenant:
 
-- Microsoft-verified academic organizations can set up a free [Office 365 Education subscription][EDU-3], which includes an Azure AD tenant  
-- Non-Microsoft-verified academic organizations can set up a free Azure AD tenant when they [purchase Minecraft Education commercial licenses][EDU-4]
+- Microsoft-verified academic organizations can set up a free [Office 365 Education subscription][EDU-3], which includes a Microsoft Entra tenant  
+- Non-Microsoft-verified academic organizations can set up a free Microsoft Entra tenant when they [purchase Minecraft Education commercial licenses][EDU-4]
 
 ### Direct purchase
 

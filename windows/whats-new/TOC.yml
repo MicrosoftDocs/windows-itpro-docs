@@ -12,7 +12,9 @@
     - name: Prepare for Windows 11
       href: windows-11-prepare.md
     - name: Windows 11 enterprise feature control
-      href: temporary-enterprise-feature-control.md      
+      href: temporary-enterprise-feature-control.md
+    - name: What's new in Windows 11, version 23H2
+      href: whats-new-windows-11-version-23h2.md
     - name: What's new in Windows 11, version 22H2
       href: whats-new-windows-11-version-22h2.md
 - name: Windows 10
@@ -36,6 +38,6 @@
     - name: Deprecated Windows features
       href: deprecated-features.md
     - name: Resources for deprecated features
-      href: deprecated-features-resources.md       
+      href: deprecated-features-resources.md
     - name: Removed Windows features
       href: removed-features.md
