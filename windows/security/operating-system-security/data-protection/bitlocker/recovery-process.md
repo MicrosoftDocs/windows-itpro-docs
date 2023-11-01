@@ -14,9 +14,9 @@ If a device or drive fails to unlock using the configured BitLocker mechanism, u
 
 This article outlines the process of obtaining BitLocker recovery information for Microsoft Entra joined, Microsoft Entra hybrid joined, and Active Directory joined devices. It is assumed that the reader is already familiar with configuring devices to automatically backup BitLocker recovery information, and the available BitLocker recovery options. For more information, see the [BitLocker recovery overview](recovery-overview.md) article.
 
-## BitLocker self-recovery
+## Self-recovery
 
-The recovery password and recovery key for an operating system drive or a fixed data drive can be saved to one or more USB devices, printed, saved to Microsoft Entra ID or AD DS. It's highly recommended that organizations implement policies for BitLocker self-recovery.
+The BitLocker recovery password and recovery key for an operating system drive or a fixed data drive can be saved to one or more USB devices, printed, saved to Microsoft Entra ID or AD DS. It's highly recommended that organizations implement policies for BitLocker self-recovery.
 
 > [!TIP]
 > Saving BitLocker recovery keys to Microsoft Entra ID or AD DS is a recommended approach. That way, a BitLocker administrator or helpdesk can assist users in attaining their keys.
@@ -57,16 +57,20 @@ The following list can be used as a template for creating a recovery process for
 | :black_square_button: | Locate the recovery password |Locate the BitLocker recovery password using the device name or the recovery key ID from Microsoft Entra ID or AD DS.|
 | :black_square_button: | Root cause analysis |Before giving the user the recovery password, information should be gatherer that will help determine why the recovery was needed. This information can be used to analyze the root cause during the post-recovery analysis|
 | :black_square_button: | Provide the user the recovery password | Since the 48-digit recovery password is long and contains a combination of digits, the user might mishear or mistype the password. The boot-time recovery console uses built-in checksum numbers to detect input errors in each 6-digit block of the 48-digit recovery password, and offers the user the opportunity to correct such errors. |
-| :black_square_button: | Rotate the recovery password | If automatic key rotation is configured, Microsoft Entra joined and Microsoft Entra hybrid joined devices will automatically generate a new recovery password and store it in Microsoft Entra ID |
+| :black_square_button: | Rotate the recovery password | If automatic password rotation is configured, Microsoft Entra joined and Microsoft Entra hybrid joined devices will automatically generate a new recovery password and store it in Microsoft Entra ID. An administrator can also trigger password rotation on-demand, using Microsoft Intune or Microsoft Configuration Manager. |
 
 ### Helpdesk recovery in Microsoft Entra ID
+
+Global Administrators of the Microsoft Entra ID can access BitLocker recovery passwords for all devices in the tenant. Helpdesk administrators can be delegated access to BitLocker recovery passwords for all devices in the tenant, or for a specific group of devices. To learn more, see [Link](/entra/identity/role-based-access-control/permissions-reference#helpdesk-administrator)
+
+>[!NOTE]
+> Devices that are managed with Microsoft Intune
 
 The recovery key is now visible in the Microsoft Intune admin center. To view the recovery key:
 
 1. Open the Microsoft Intune admin center
 1. Select Devices > All devices
 1. Find and select the device from the list and then select **Monitor** > **Recovery keys**
-
 
 ### Retrieve the recovery password from Microsoft Entra ID
 
@@ -111,10 +115,6 @@ Device name: DESKTOP-53O32QI
  BitLocker recovery key: 158422-038236-492536-574783-256300-205084-114356-069773
 ```
 
-
-What are the minimum role-based access control (RBAC) rights required to access the recovery key in the Intune console?
-Answer: To be able to access the recovery keys, an administrator must be granted Helpdesk Administrator permissions. Find out more about Azure AD roles in this article. [Link](/entra/identity/role-based-access-control/permissions-reference#helpdesk-administrator)
-
 ### Helpdesk recovery in Active Directory Domain Services
 
 To export a precovery password from AD DS, it's required to have read access to objects stored in AD DS. By default, only *Domain Adminstrators* have access to BitLocker recovery information, but [access can be delegated to others](/archive/blogs/craigf/delegating-access-in-ad-to-bitlocker-recovery-information).
@@ -154,7 +154,7 @@ The following procedures describe the most common tasks performed by using the B
 1. In the **Find BitLocker Recovery Password** dialog box, type the first eight characters of the recovery password in the **Password ID (first 8 characters)** box, and select **Search**
 1. Once the recovery password is located, you can use the previous procedure to copy it
 
-## Data Recovery Agents
+#### Data Recovery Agents
 
 To list data recovery agents configured for a BitLocker-protected drive, use the `manage-bde.exe` command, including certificate-based protectors. Example:
 
@@ -269,20 +269,19 @@ To prevent continued recovery due to an unknown PIN:
   :::column-end:::
 :::row-end:::
 
-## Rotate keys
+## Rotate passwords
 
-This option will refresh the recovery password after it is used and prevent further use of the same password, enhancing security. Prerequisites include Windows 10 1909, having Intune enrolled, Azure AD, or Azure hybrid services joined. Additional licenses may be required for certain Microsoft BitLocker settings.
-    https://learn.microsoft.com/en-us/windows/client-management/mdm/bitlocker-csp#configurerecoverypasswordrotation
+Administrators can configure a policy setting to enable automatic recovery password rotation for Microsoft Entra joined and Microsoft Entra hybrid joined devices.\
+When automatic recovery password rotation is enabled, devices will automatically rotate the recovery password after it's used to unlock the drive. This helps prevent the same recovery password from being used multiple times, which can be a security risk.
 
-> [!TIP]
-> Administrators can configure a policy setting to enable automatic recovery password rotation for Microsoft Entra joined and Microsoft Entra hybrid joined devices.
->
-> When automatic recovery password rotation is enabled, devices will automatically rotate the recovery password after it's used to unlock the drive. This helps prevent the same recovery password from being used multiple times, which can be a security risk.
->
-> For more information, see [configure recovery password rotation](configure.md?tabs=common#configure-recovery-password-rotation).
+For more information, see [configure recovery password rotation](configure.md?tabs=common#configure-recovery-password-rotation).
 
-SCCM rotate keys: /mem/configmgr/protect/deploy-use/bitlocker/recovery-service#rotate-keys
-Intune rotate keys: /mem/intune/protect/encrypt-devices#rotate-bitlocker-recovery-keys
+Another option is to initiate the rotation of recovery passwords for individual devices remotely using Microsoft Intune or Microsoft Configuration Manager.
+
+To learn more how to rotate BitLocker recovery passwords using Microsoft Intune or Microsoft Configuration Manager, see:
+
+- [Microsoft Intune documentation](/mem/intune/protect/encrypt-devices#rotate-bitlocker-recovery-keys)
+- [Microsoft Configuration Manager documentation](/mem/configmgr/protect/deploy-use/bitlocker/recovery-service#rotate-keys)
 
 ## BitLocker Repair tool
 
