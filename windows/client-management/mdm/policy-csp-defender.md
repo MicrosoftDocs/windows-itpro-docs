@@ -4,7 +4,7 @@ description: Learn more about the Defender Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 10/03/2023
+ms.date: 10/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -1074,7 +1074,6 @@ This policy setting allows you to configure the maximum percentage CPU utilizati
 - If you enable this setting, CPU utilization won't exceed the percentage specified.
 
 - If you disable or don't configure this setting, CPU utilization won't exceed the default value.
-
 <!-- AvgCPULoadFactor-Description-End -->
 
 <!-- AvgCPULoadFactor-Editable-Begin -->
@@ -1085,7 +1084,6 @@ This policy setting allows you to configure the maximum percentage CPU utilizati
 > 
 > - [ScanOnlyIfIdle](defender-csp.md#configurationscanonlyifidleenabled): Instructs the product to scan only when the computer isn't in use.
 > - [DisableCpuThrottleOnIdleScans](defender-csp.md#configurationdisablecputhrottleonidlescans): Instructs the product to disable CPU throttling on idle scans.
-
 <!-- AvgCPULoadFactor-Editable-End -->
 
 <!-- AvgCPULoadFactor-DFProperties-Begin -->
@@ -2920,4 +2918,3 @@ Valid remediation action values are:
 ## Related articles
 
 [Policy configuration service provider](policy-configuration-service-provider.md)
-

@@ -44,6 +44,6 @@ ms.localizationpriority: medium
 | 66    | Failed to verify UTC connectivity and recent uploads.|  
 | 67    | Unexpected failure when verifying UTC CSP.|
 | 99    | Device isn't Windows 10 or Windows 11.|
-| 100   | Device must be Azure AD joined or hybrid Azure AD joined to use Windows Update for Business reports.|
-| 101   | Check Azure AD join failed with unexpected exception.|
+| 100   | Device must be Microsoft Entra joined or Microsoft Entra hybrid joined to use Windows Update for Business reports.|
+| 101   | Check Microsoft Entra join failed with unexpected exception.|
 | 102   | DisableOneSettingsDownloads policy shouldn't be enabled. Please disable this policy.|
