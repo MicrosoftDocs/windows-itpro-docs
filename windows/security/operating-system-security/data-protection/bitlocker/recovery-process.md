@@ -16,7 +16,7 @@ This article outlines the process of obtaining BitLocker recovery information fo
 
 ## Self-recovery
 
-The BitLocker recovery password and recovery key for an operating system drive or a fixed data drive can be saved to one or more USB devices, printed, saved to Microsoft Entra ID or AD DS. It's highly recommended that organizations implement BitLocker self-recovery policies.
+The BitLocker recovery password and recovery key for an operating system drive or a fixed data drive can be saved to one or more USB devices, printed, saved to Microsoft Entra ID or AD DS. It's highly recommended for organizations to implement BitLocker self-recovery policies.
 
 > [!TIP]
 > Saving BitLocker recovery keys to Microsoft Entra ID or AD DS is a recommended approach. That way, a BitLocker administrator or helpdesk can assist users in attaining their keys.
@@ -51,7 +51,7 @@ If a user doesn't have a self-service recovery option, the helpdesk should be ab
 The following list can be used as a template for creating a recovery process for recovery password retrieval by the helpdesk.
 
 | :ballot_box_with_check: | Recovery process step | Details |
-|--|--| -- |
+|--|--|--|
 | :black_square_button: | Verify the user's identity |The person who is asking for the recovery password should be verified as the authorized user of that device. It should also be verified whether the device for which the user provided the name belongs to the user.|
 | :black_square_button: | Record the device name |The name of the user's device can be used to locate the recovery password in Microsoft Entra ID or AD DS. |
 | :black_square_button: | Record the recovery key ID |The recovery key ID can be used to locate the recovery password in Microsoft Entra ID or AD DS. The recovery key ID is displayed in the preboot recovery screen. |
@@ -115,7 +115,7 @@ Device name: DESKTOP-53O32QI
 
 ### Helpdesk recovery in Active Directory Domain Services
 
-To export a recovery password from AD DS, you must have *read access* to objects stored in AD DS. By default, only *Domain Adminstrators* have access to BitLocker recovery information, but [access can be delegated](/archive/blogs/craigf/delegating-access-in-ad-to-bitlocker-recovery-information) to specific security principals.
+To export a recovery password from AD DS, you must have *read access* to objects stored in AD DS. By default, only *Domain Administrators* have access to BitLocker recovery information, but [access can be delegated](/archive/blogs/craigf/delegating-access-in-ad-to-bitlocker-recovery-information) to specific security principals.
 
 To facilitate the retrieval of BitLocker recovery passwords from AD DS, you can use the *BitLocker Recovery Password Viewer* tool. The tool is included with the *Remote Server Administration Tools (RSAT)*, and it's an extension for the *Active Directory Users and Computers Microsoft Management Console (MMC)* snap-in.
 
@@ -163,12 +163,15 @@ manage-bde -unlock D: -Certificate -ct f46563b1d4791d5bd827f32265341ff9068b0c42
 
 ## Post-recovery tasks
 
-When a volume is unlocked using a recovery password, an event is written to the event log, and the platform validation measurements are reset in the TPM to match the current configuration. Unlocking the volume means that the encryption key has been released and is ready for on-the-fly encryption when data is written to the volume, and on-the-fly decryption when data is read from the volume. After the volume is unlocked, BitLocker behaves the same way, regardless of how the access was granted.
+When a volume is unlocked using a recovery password:
 
-If it's noticed that a computer is having repeated recovery password unlocks, an administrator might want to perform post-recovery analysis to determine the root cause of the recovery, and refresh BitLocker platform validation so that the user no longer needs to enter a recovery password each time that the computer starts up. For more information, see:
+- an event is written to the Event Log
+- the platform validation measurements are reset in the TPM to match the current configuration
+- the encryption key is released and is ready for on-the-fly encryption/decryption when data is written/read to and from the volume
 
-- [Determine the root cause of the recovery](#determine-the-root-cause-of-the-recovery)
-- [Resolve the root cause](#resolve-the-root-cause)
+After the volume is unlocked, BitLocker behaves the same way, regardless of how the access was granted.
+
+If a device experiences multiple recovery password events, an administrator should perform post-recovery analysis to determine the root cause of the recovery. Then, refresh the BitLocker platform validation to prevent entering a recovery password each time that the device starts up.
 
 ### Determine the root cause of the recovery
 
@@ -178,14 +181,17 @@ While an administrator can remotely investigate the cause of recovery in some ca
 
 Review and answer the following questions for the organization:
 
-1. Which BitLocker protection mode is in effect (TPM, TPM + PIN, TPM + startup key, startup key only)? Which PCR profile is in use on the PC?
-1. Did the user merely forget the PIN or lose the startup key? If a token was lost, where might the token be?
-1. If TPM mode was in effect, was recovery caused by a boot file change?
-1. If recovery was caused by a boot file change, is the boot file change due to an intended user action (for example, BIOS upgrade), or a malicious software?
-1. When was the user last able to start the computer successfully, and what might have happened to the computer since then?
-1. Might the user have encountered malicious software or left the computer unattended since the last successful startup?
+| :ballot_box_with_check: | Question |
+|--|--|
+| :black_square_button: | *Which BitLocker protection mode is configured (TPM, TPM + PIN, TPM + startup key, startup key only)?*|
+| :black_square_button: | *If TPM mode is configured, was recovery caused by a boot file change?* |
+| :black_square_button: | *Which PCR profile is in use on the device?*|
+| :black_square_button: | *Did the user merely forget the PIN or lose the startup key?* |
+| :black_square_button: | *If recovery was caused by a boot file change, is the boot file change due to an intended user action (for example, BIOS upgrade), or a malicious software?* |
+| :black_square_button: | *When was the user last able to start the device successfully, and what might have happened to the device since then?* |
+| :black_square_button: | *Might the user have encountered malicious software or left the device unattended since the last successful startup?* |
 
-To help answer these questions, use the BitLocker command-line tool to view the current configuration and protection mode:
+To help answer these questions, use the `manage-bde.exe` command-line tool to view the current configuration and protection mode:
 
 ```cmd
 manage-bde.exe -status
@@ -195,7 +201,7 @@ Scan the event log to find events that help indicate why recovery was initiated 
 
 ### Resolve the root cause
 
-After it's been identified what caused recovery, BitLocker protection can be reset to avoid recovery on every startup.
+After you identify the cause of the recovery, BitLocker protection can be reset to avoid recovery on every startup.
 
 The details of the reset can vary according to the root cause of the recovery. If root cause can't be determined, or if a malicious software or a rootkit infects the device, the helpdesk should apply best-practice virus policies to react appropriately.
 
@@ -231,7 +237,7 @@ To prevent continued recovery due to an unknown PIN:
     Lost startup key
   :::column-end:::
   :::column span="3":::
-    If the USB flash drive that contains the startup key is lost, you can unlock the drive using the recovery key. A new startup can then be created using PowerShell, the Command Prompt, or BitLocker.
+    If the USB flash drive that contains the startup key is lost, you can unlock the drive using the recovery key. A new startup can then be created using PowerShell, the Command Prompt, or the BitLocker Control Panel applet.
 
     For examples how to add BitLocker protectors, review the [BitLocker operations guide](operations-guide.md#add-protectors)
   :::column-end:::
@@ -250,7 +256,7 @@ To prevent continued recovery due to an unknown PIN:
 ## Rotate passwords
 
 Administrators can configure a policy setting to enable automatic recovery password rotation for Microsoft Entra joined and Microsoft Entra hybrid joined devices.\
-When automatic recovery password rotation is enabled, devices will automatically rotate the recovery password after it's used to unlock the drive. This helps prevent the same recovery password from being used multiple times, which can be a security risk.
+When automatic recovery password rotation is enabled, devices automatically rotate the recovery password after the password is used to unlock the drive. This behavior helps to prevent the same recovery password from being used multiple times, which can be a security risk.
 
 For more information, see [configure recovery password rotation](configure.md?tabs=common#configure-recovery-password-rotation).
 
@@ -283,6 +289,5 @@ The following limitations exist for Repair-bde:
 
 For a complete list of the `repair-bde.exe` options, see the [Repair-bde reference](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/ff829851(v=ws.11)).
 
-### Retrieve the BitLocker key package
-
-To export a previously saved key package from AD DS, it's required to have read access to the BitLocker recovery passwords and key packages that are stored in AD DS. By default, only Domain Admins have access to BitLocker recovery information, but [access can be delegated to others](/archive/blogs/craigf/delegating-access-in-ad-to-bitlocker-recovery-information).
+> [!NOTE]
+> To export a key package from AD DS, you must have *read* access to the BitLocker recovery passwords and key packages that are stored in AD DS. By default, only Domain Admins have access to BitLocker recovery information, but [access can be delegated to others](/archive/blogs/craigf/delegating-access-in-ad-to-bitlocker-recovery-information).
