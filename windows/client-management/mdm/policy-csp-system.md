@@ -113,12 +113,12 @@ This policy is only supported up to Windows 10, Version 1703. Please use 'Manage
 <!-- Description-Source-ADMX -->
 This policy is deprecated and will only work on Windows 10 version 1809. Setting this policy will have no effect for other supported versions of Windows.
 
-AllowCommercialDataPipeline configures an Azure Active Directory joined device so that Microsoft is the processor of the Windows diagnostic data collected from the device, subject to the Product Terms at< https://go.microsoft.com/fwlink/?linkid=2185086>.
+AllowCommercialDataPipeline configures a Microsoft Entra joined device so that Microsoft is the processor of the Windows diagnostic data collected from the device, subject to the Product Terms at< https://go.microsoft.com/fwlink/?linkid=2185086>.
 
 To enable this behavior:
 
 1. Enable this policy setting
-2. Join an Azure Active Directory account to the device.
+2. Join a Microsoft Entra account to the device.
 
 Windows diagnostic data is collected when the Allow Telemetry policy setting is set to value 1 - Required or above. Configuring this setting doesn't change the Windows diagnostic data collection level set for the device.
 
@@ -198,7 +198,7 @@ This policy setting, in combination with the Allow Telemetry and Configure the C
 To enable this behavior:
 
 1. Enable this policy setting
-2. Join an Azure Active Directory account to the device.
+2. Join a Microsoft Entra account to the device.
 
 3. Set Allow Telemetry to value 1 - Required, or higher
 4. Set the Configure the Commercial ID setting for your Desktop Analytics workspace.
@@ -574,7 +574,7 @@ Specifies whether to allow app access to the Location service. Most restricted v
 <!-- AllowMicrosoftManagedDesktopProcessing-Description-Begin -->
 <!-- Description-Source-DDF -->
 This policy is deprecated and will only work on Windows 10 version 1809. Setting this policy will have no effect for other supported versions of Windows.
-This policy setting configures an Azure Active Directory joined device so that Microsoft is the processor of the Windows diagnostic data collected from the device, subject to the Product Terms at< https://go.microsoft.com/fwlink/?linkid=2185086>.
+This policy setting configures a Microsoft Entra joined device so that Microsoft is the processor of the Windows diagnostic data collected from the device, subject to the Product Terms at< https://go.microsoft.com/fwlink/?linkid=2185086>.
 For customers who enroll into the Microsoft Managed Desktop service, enabling this policy is required to allow Microsoft to process data for operational and analytic needs. See <https://go.microsoft.com/fwlink/?linkid=2184944> for more information.
 hen these policies are configured, Windows diagnostic data collected from the device will be subject to Microsoft processor commitments.
 This setting has no effect on devices unless they're properly enrolled in Microsoft Managed Desktop. If you disable this policy setting, devices may not appear in Microsoft Managed Desktop.
@@ -762,7 +762,7 @@ This policy setting, in combination with the Allow Telemetry and Configure the C
 To enable this behavior:
 
 1. Enable this policy setting
-2. Join an Azure Active Directory account to the device.
+2. Join a Microsoft Entra account to the device.
 
 3. Set Allow Telemetry to value 1 - Required, or higher
 4. Set the Configure the Commercial ID setting for your Update Compliance workspace.
@@ -884,12 +884,12 @@ Specifies whether to allow the user to factory reset the device by using control
 <!-- Description-Source-ADMX -->
 This policy is deprecated and will only work on Windows 10 version 1809. Setting this policy will have no effect for other supported versions of Windows.
 
-This policy setting configures an Azure Active Directory joined device so that Microsoft is the processor of the Windows diagnostic data collected from the device, subject to the Product Terms at< https://go.microsoft.com/fwlink/?linkid=2185086>.
+This policy setting configures a Microsoft Entra joined device so that Microsoft is the processor of the Windows diagnostic data collected from the device, subject to the Product Terms at< https://go.microsoft.com/fwlink/?linkid=2185086>.
 
 To enable this behavior:
 
 1. Enable this policy setting
-2. Join an Azure Active Directory account to the device.
+2. Join a Microsoft Entra account to the device.
 
 3. Set Allow Telemetry to value 1 - Required, or higher.
 
