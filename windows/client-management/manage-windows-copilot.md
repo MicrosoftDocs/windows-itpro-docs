@@ -3,7 +3,7 @@ title: Manage Copilot in Windows
 description: Learn how to manage Copilot in Windows for commercial environments using MDM and group policy. Learn about the chat providers available to Copilot in Windows.
 ms.topic: article
 ms.technology: itpro-windows-copilot
-ms.date: 10/31/2023
+ms.date: 11/02/2023
 appliesto:
 - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11, version 22H2 or later</a>
 ---
@@ -12,7 +12,7 @@ appliesto:
 <!--8445848-->
 >**Looking for consumer information?** See [Welcome to Copilot in Windows](https://support.microsoft.com/windows/welcome-to-copilot-in-windows-675708af-8c16-4675-afeb-85a5a476ccb0).
 
-Copilot in Windows provides centralized generative AI assistance to your users right from the Windows desktop. Copilot in Windows appears as a side bar docked on the Windows desktop. It's designed to help your users get things done in Windows. Copilot in Windows can perform common tasks in Windows like changing Windows settings, which makes it different from the browser-based [Copilot in Edge](/bing-chat-enterprise/edge). However, both user experiences, Copilot in Windows and Copilot in Edge, can share the same underlying chat provider platform. It's important for organizations to properly configure the chat provider platform that Copilot in Windows uses, since users can possibly copy and paste sensitive information into the chat provider.
+Copilot in Windows provides centralized generative AI assistance to your users right from the Windows desktop. Copilot in Windows appears as a side bar docked on the Windows desktop. It's designed to help your users get things done in Windows. Copilot in Windows can perform common tasks in Windows like changing Windows settings, which makes it different from the browser-based [Copilot in Edge](/bing-chat-enterprise/edge). However, both user experiences, Copilot in Windows and Copilot in Edge, can share the same underlying chat provider platform. It's important for organizations to properly configure the chat provider platform that Copilot in Windows uses, since it is possible for users to copy and paste sensitive information into the chat provider.
 
 > [!Note]
 > - Copilot in Windows is currently available as a preview. We will continue to experiment with new ideas and methods using your feedback.
@@ -37,7 +37,7 @@ Organizations that aren't ready to use Copilot in Windows can disable it until t
 
 ## Chat provider platforms for Copilot in Windows
 
-Copilot in Windows can use either Bing Chat or Bing Chat Enterprise as its chat provider platform. The chat provider platform is the underlying service that Copilot in Windows uses to communicate with the user. The chat provider platform that Copilot in Windows uses is important because users can copy and paste sensitive information into the chat provider. Each chat provider platform has different privacy and security protections.
+Copilot in Windows can use either Bing Chat or Bing Chat Enterprise as its chat provider platform. The chat provider platform is the underlying service that Copilot in Windows uses to communicate with the user. The chat provider platform that Copilot in Windows uses is important because it is possible for users to copy and paste sensitive information into the chat provider. Each chat provider platform has different privacy and security protections.
 
 **Bing Chat**: 
 
@@ -62,7 +62,7 @@ Copilot in Windows can use either Bing Chat or Bing Chat Enterprise as its chat 
 
 ## Configure the chat provider platform that Copilot in Windows uses
 
-Configuring the correct chat provider platform for Copilot in Windows is important because users can copy and paste sensitive information into the chat provider. Each chat provider platform has different privacy and security protections. Once you have selected the chat provider platform that you want to use for Copilot in Windows, ensure it's configured for your organization's users. The following sections describe how to configure the chat provider platform that Copilot in Windows uses.
+Configuring the correct chat provider platform for Copilot in Windows is important because it is possible for users to copy and paste sensitive information into the chat provider. Each chat provider platform has different privacy and security protections. Once you have selected the chat provider platform that you want to use for Copilot in Windows, ensure it's configured for your organization's users. The following sections describe how to configure the chat provider platform that Copilot in Windows uses.
 
 ### Bing Chat as the chat provider platform
 
@@ -166,14 +166,6 @@ Organizations that aren't ready to use Copilot in Windows can disable it until t
 Copilot in Windows and [Copilot in Edge](/bing-chat-enterprise/edge), can share the same underlying chat provider platform. This also means that some settings that affect Bing Chat, Bing Chat Enterprise, and Copilot in Edge can also affect Copilot in Windows. The following common settings might affect Copilot in Windows and its underlying chat provider:
 
 ### Bing settings
-
-- Block access to only the public version of Bing Chat for all users on your network:
-
-   - Map `www.bing.com` to `nochat.bing.com` on your router or proxy server
-   - Map `edgeservices.bing.com` to `nochat.bing.com` to block access to Bing Chat
-
-   This block only applies when devices are connected to your corporate network. Bing Chat is a public service, like search, and will remain available if accessed outside the corporate network. Bing Chat Enterprise will still be available if the public version of Bing Chat is blocked. To also block Bing Chat Enterprise, use its service plan, as detailed here: [Turn off Bing Chat Enterprise](/bing-chat-enterprise/manage#turn-off--enterprise)  
-
 
 - If [SafeSearch](https://support.microsoft.com/topic/946059ed-992b-46a0-944a-28e8fb8f1814) is enabled for Bing, it can block chat providers for Copilot in Windows. The following network changes block the chat providers for Copilot in Windows and Copilot in Edge:
    - mapping `www.bing.com` to `strict.bing.com`
