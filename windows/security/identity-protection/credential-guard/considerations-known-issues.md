@@ -209,19 +209,6 @@ The following issue affects the Java GSS API. See the following Oracle bug datab
 
 When Credential Guard is enabled on Windows, the Java GSS API doesn't authenticate. Credential Guard blocks specific application authentication capabilities and doesn't provide the TGT session key to applications, regardless of registry key settings. For more information, see [Application requirements](index.md#application-requirements).
 
-The following issue affects McAfee Application and Change Control (MACC):
-
-- [KB88869 Windows machines exhibit high CPU usage with McAfee Application and Change Control (MACC) installed when Credential Guard is enabled](https://kcm.trellix.com/corporate/index?page=content&id=KB88869)
-
-The following issue affects Citrix applications:
-
-- Windows machines exhibit high CPU usage with Citrix applications installed when Credential Guard is enabled.
-
-> [!NOTE]
-> Products that connect to Virtualization Based Security (VBS) protected processes can cause Credential Guard-enabled devices to exhibit high CPU usage. For technical and troubleshooting information, see [KB4032786 High CPU usage in the LSAISO process on Windows](/troubleshoot/windows-client/performance/lsaiso-process-high-cpu-usage).
->
-> For more technical information on LSAISO.exe, see [Isolated User Mode (IUM) Processes](/windows/win32/procthread/isolated-user-mode--ium--processes).
-
 #### Vendor support
 
 The following products and services don't support Credential Guard:

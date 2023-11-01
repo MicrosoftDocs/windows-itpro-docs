@@ -17,7 +17,7 @@ You enroll devices based on the types of updates you want them to receive. Curre
    1. Enter the following request into the URL field: </br>
     `https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/enrollAssets`
    1. In the **Request body** tab, enter the following JSON, supplying the following information:
-      - **Azure AD Device ID** as `id`
+      - **Microsoft Entra Device ID** as `id`
       - Either `feature` or `driver` for the updateCategory
 
       ```json

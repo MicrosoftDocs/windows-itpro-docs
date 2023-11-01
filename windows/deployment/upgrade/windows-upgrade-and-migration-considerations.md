@@ -37,7 +37,7 @@ You can use USMT to automate migration during large deployments of the Windows o
 
 > [!IMPORTANT]
 >
-> USMT only supports devices that are joined to a local Active Directory domain. USMT doesn't support Azure AD joined devices. 
+> USMT only supports devices that are joined to a local Active Directory domain. USMT doesn't support Microsoft Entra joined devices. 
 
 ## Upgrade and migration considerations
 Whether you're upgrading or migrating to a new version of Windows, you must be aware of the following issues and considerations:

@@ -49,8 +49,6 @@ To enable memory integrity on Windows devices with supporting hardware throughou
 
 Beginning with Windows 11 22H2, **Windows Security** shows a warning if memory integrity is turned off. The warning indicator also appears on the Windows Security icon in the Windows Taskbar and in the Windows Notification Center. The user can dismiss the warning from within **Windows Security**.
 
-To proactively dismiss the memory integrity warning, you can set the **Hardware_HVCI_Off** (DWORD) registry value under `HKLM\SOFTWARE\Microsoft\Windows Security Health\State` to 0. After you change the registry value, you must restart the device for the change to take effect.
-
 ### Enable memory integrity using Intune
 
 Enabling in Intune requires using the Code Integrity node in the [VirtualizationBasedTechnology CSP](/windows/client-management/mdm/policy-csp-virtualizationbasedtechnology). You can configure these settings by using the [settings catalog](/mem/intune/configuration/settings-catalog).
