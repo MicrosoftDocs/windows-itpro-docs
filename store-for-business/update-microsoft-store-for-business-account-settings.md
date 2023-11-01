@@ -37,7 +37,7 @@ Before purchasing apps that have a fee, you need to add or update your organizat
 
 We use the Business address to calculate sales tax. If your organization's address has already been entered for other commercial purchases through Microsoft Store, or through other online purchases such as Office 365 or Azure subscriptions, then we'll use the same address in Microsoft Store for Business and Microsoft Store for Education. If we don't have an address, we'll ask you to enter it during your first purchase.
 
-We need an email address in case we need to contact you about your Microsoft Store for Business and for Education account. This email account should reach the admin for your organization's Office 365 or Azure AD tenant that is used with Microsoft Store.
+We need an email address in case we need to contact you about your Microsoft Store for Business and for Education account. This email account should reach the admin for your organization's Office 365 or Microsoft Entra tenant that is used with Microsoft Store.
 
 **To update billing account information**
 1. Sign in to the [Microsoft Store for Business](https://businessstore.microsoft.com) or [Microsoft Store for Education](https://educationstore.microsoft.com)

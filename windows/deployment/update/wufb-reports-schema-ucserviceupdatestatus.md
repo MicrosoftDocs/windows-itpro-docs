@@ -23,7 +23,7 @@ Update Event that comes directly from the service-side. The event has only servi
 | Field | Type | Example | Description |
 |---|---|---|---|
 | **AzureADDeviceId** | [string](/azure/kusto/query/scalar-data-types/string) | `71db1a1a-f1a6-4a25-b88f-79c2f513dae0` | If this DeviceUpdateEvent is from content deployed by a deployment scheduler service policy, this GUID will map to that policy, otherwise it will be empty. |
-| **AzureADTenantId** | [string](/azure/kusto/query/scalar-data-types/string) | `69ca04b0-703d-4b3a-9184-c4e3c15d6f5e` | A GUID corresponding to the Azure AD tenant to which the device belongs. |
+| **AzureADTenantId** | [string](/azure/kusto/query/scalar-data-types/string) | `69ca04b0-703d-4b3a-9184-c4e3c15d6f5e` | A GUID corresponding to the Microsoft Entra tenant to which the device belongs. |
 |**CatalogId** | [string](/azure/kusto/query/scalar-data-types/string) | `b0f410599615e2ce15e6614ac3fc4ec62d80324020351e172edef89091a64f2f` | The update catalog ID | 
 | **DeploymentApprovedTime** | [datetime](/azure/kusto/query/scalar-data-types/datetime) | `2022-05-14 09:26:03.478039` | Date and time of the update approval |
 | **DeploymentId** | [string](/azure/kusto/query/scalar-data-types/string) |`cf1b12a3-3d84-4ce3-bc8e-de48459e252d` | If this DeviceUpdateEvent is from content deployed by a deployment scheduler service policy, this GUID will map to that policy, otherwise it will be empty. |
@@ -41,7 +41,7 @@ Update Event that comes directly from the service-side. The event has only servi
 | **SourceSystem** | [string](/azure/kusto/query/scalar-data-types/string)|  `Azure`| |
 | **TargetBuild** | [string](/azure/kusto/query/scalar-data-types/string) | `10.0.18363.836` | The full build for the content this event is tracking. For Windows 10, this string corresponds to "10.0.Build.Revision" |
 | **TargetVersion** | [int](/azure/kusto/query/scalar-data-types/int) | `1909` | The version of content this DeviceUpdateEvent is tracking. For Windows 10 updates, this number would correspond to the year/month version format used, such as 1903. |
-| **TenantId** | [string](/azure/kusto/query/scalar-data-types/string) | `9011c330-1234-5678-9abc-def012345678`  | Azure AD tenant ID |
+| **TenantId** | [string](/azure/kusto/query/scalar-data-types/string) | `9011c330-1234-5678-9abc-def012345678`  | Microsoft Entra tenant ID |
 | **TimeGenerated** | [datetime](/azure/kusto/query/scalar-data-types/datetime) | `2020-05-14 09:26:03.478039` | Time the snapshot ran  can also be the same as EventDateTimeUTC in some cases. |
 | **Type** | [string](/azure/kusto/query/scalar-data-types/string) | `ServiceUpdateEvent` | The EntityType |
 | **UpdateCategory** | [string](/azure/kusto/query/scalar-data-types/string) | `WindowsFeatureUpdate` | The type of content this DeviceUpdateEvent is tracking. |
