@@ -15,7 +15,7 @@ ms.topic: how-to
 
 **Applies to**
 
-- Windows 11 Pro, Enterprise, and Education
+- Windows 11 Pro, Enterprise, IoT Enterprise and Education
 
 > [!NOTE]
 > The use of multiple monitors is supported for multi-app kiosk mode in Windows 11.
@@ -35,8 +35,12 @@ See the table below for the different methods to configure a multi-app kiosk in 
 |Configuration Method|Availability|
 |--------------------|------------|
 |[MDM WMI Bridge Provider](#configure-a-kiosk-using-wmi-bridge) | Available May 2023|
+
+<!-- 
+Commenting out the coming soon items
 |Intune|Coming soon|
 |Provisioning Package Using Windows Configuration Designer| Coming soon|
+-->
 
 > [!NOTE]
 > For WMI Bridge/PowerShell and Provisioning package methods, you will need to create your own multi-app kiosk XML file as specified below.
@@ -319,42 +323,69 @@ Environments that use [Windows Management Instrumentation (WMI)](/windows/win32/
 Here's an example of how to set AssignedAccess configuration:
 
 1. Download the [psexec tool](/sysinternals/downloads/psexec).  
-2. Run `psexec.exe -i -s cmd.exe`.
-3. In the command prompt launched by psexec.exe, enter `powershell.exe` to open PowerShell. 
-4. Run the following script replacing the placeholder "your XML here, with the [XML](#create-the-xml-file) you created above.
+1. Using an elevated command prompt, run `psexec.exe -i -s cmd.exe`.
+1. In the command prompt launched by psexec.exe, enter `powershell.exe` to open PowerShell.
+1. Save the following Powershell excerpt as a PowerShell script (.ps1), replacing the placeholder "your XML here" with the [Sample Assigned Access XML](#sample-assigned-access-xml) then run the script at the Powershell prompt from the previous step.
 
-```xml
-$nameSpaceName="root\cimv2\mdm\dmmap"
+```powershell
+$eventLogFilterHashTable = @{
+    ProviderName = "Microsoft-Windows-AssignedAccess";
+    StartTime    = Get-Date -Millisecond 0
+}
+
+$namespaceName="root\cimv2\mdm\dmmap"
 $className="MDM_AssignedAccess"
 $obj = Get-CimInstance -Namespace $namespaceName -ClassName $className
-Add-Type -AssemblyName System.Web
-$obj.Configuration = [System.Web.HttpUtility]::HtmlEncode(@"
+$obj.Configuration = [System.Net.WebUtility]::HtmlEncode(@"
 
 <your XML here>
     
 "@)
 
-Set-CimInstance -CimInstance $obj
+$obj = Set-CimInstance -CimInstance $obj -ErrorVariable cimSetError -ErrorAction SilentlyContinue
+if($cimSetError) {
+    Write-Output "An ERROR occurred. Displaying error record and attempting to retrieve error logs...`n"
+    Write-Error -ErrorRecord $cimSetError[0]
+
+    $timeout = New-TimeSpan -Seconds 30
+    $stopwatch = [System.Diagnostics.Stopwatch]::StartNew()
+    do{
+        $events = Get-WinEvent -FilterHashtable $eventLogFilterHashTable -ErrorAction Ignore
+    } until ($events.Count -or $stopwatch.Elapsed -gt $timeout) # wait for the log to be available
+    
+    if($events.Count) {
+        $events | ForEach-Object { 
+            Write-Output "$($_.TimeCreated) [$($_.LevelDisplayName.ToUpper())] $($_.Message -replace "`n|`r")" 
+        }
+    } else {
+        Write-Warning "Timed-out attempting to retrieve event logs..."
+    }
+
+    Exit 1
+}
+
+Write-Output "Successfully applied Assigned Access configuration"
 ```
+
 ## Sample Assigned Access XML
 
-Compare the below to your XML file to check for correct formatting. 
+This section contains a predefined XML file which can be used as a quickstart to get familiar with the Assigned Access multi-app kiosk feature on Windows 11.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
 <AssignedAccessConfiguration  
-  xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config" xmlns:win11="http://schemas.microsoft.com/AssignedAccess/2022/config">
+  xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config" 
+  xmlns:win11="http://schemas.microsoft.com/AssignedAccess/2022/config">
   <Profiles>
     <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}">       
       <AllAppsList>
         <AllowedApps> 
-          <App AppUserModelId="Microsoft.ZuneMusic_8wekyb3d8bbwe!Microsoft.ZuneMusic" /> 
-          <App AppUserModelId="Microsoft.ZuneVideo_8wekyb3d8bbwe!Microsoft.ZuneVideo" /> 
           <App AppUserModelId="Microsoft.Windows.Photos_8wekyb3d8bbwe!App" /> 
           <App AppUserModelId="Microsoft.BingWeather_8wekyb3d8bbwe!App" /> 
-          <App AppUserModelId="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App" /> 
-          <App DesktopAppPath="%windir%\system32\mspaint.exe" /> 
-          <App DesktopAppPath="C:\Windows\System32\notepad.exe" /> 
+          <App AppUserModelId="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App" />
+          <App DesktopAppPath="C:\Windows\system32\cmd.exe" />
+          <App DesktopAppPath="%windir%\System32\WindowsPowerShell\v1.0\Powershell.exe" />
+          <App DesktopAppPath="%windir%\explorer.exe" /> 
         </AllowedApps> 
       </AllAppsList> 
       <win11:StartPins>
@@ -362,11 +393,10 @@ Compare the below to your XML file to check for correct formatting.
           { "pinnedList":[
             {"packagedAppId":"Microsoft.WindowsCalculator_8wekyb3d8bbwe!App"},
             {"packagedAppId":"Microsoft.Windows.Photos_8wekyb3d8bbwe!App"},
-            {"packagedAppId":"Microsoft.ZuneMusic_8wekyb3d8bbwe!Microsoft.ZuneMusic"},
-            {"packagedAppId":"Microsoft.ZuneVideo_8wekyb3d8bbwe!Microsoft.ZuneVideo"},
             {"packagedAppId":"Microsoft.BingWeather_8wekyb3d8bbwe!App"},
-            {"desktopAppLink":"%ALLUSERSPROFILE%\\Microsoft\\Windows\\StartMenu\\Programs\\Accessories\\Paint.lnk"},
-            {"desktopAppLink":"%APPDATA%\\Microsoft\\Windows\\StartMenu\\Programs\\Accessories\\Notepad.lnk"}
+            {"desktopAppLink":"C:\\Users\\MultiAppKioskUser\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\File Explorer.lnk"},
+            {"desktopAppLink":"C:\\Users\\MultiAppKioskUser\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\System Tools\\Command Prompt.lnk"},
+            {"desktopAppLink":"C:\\Users\\MultiAppKioskUser\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Windows PowerShell\\Windows PowerShell.lnk"}
           ] }
         ]]>
       </win11:StartPins>
@@ -379,5 +409,5 @@ Compare the below to your XML file to check for correct formatting.
       <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/>
     </Config>
   </Configs>
-</AssignedAccessConfiguration>
+</AssignedAccessConfiguration> 
 ```
