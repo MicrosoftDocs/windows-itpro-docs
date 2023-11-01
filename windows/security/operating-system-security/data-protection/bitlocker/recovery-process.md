@@ -177,9 +177,7 @@ If a device experiences multiple recovery password events, an administrator shou
 
 If a user needed to recover the drive, it's important to determine the root cause that initiated the recovery as soon as possible. Properly analyzing the state of the computer and detecting tampering might reveal threats that have broader implications for enterprise security.
 
-While an administrator can remotely investigate the cause of recovery in some cases, the end user might need to bring the computer that contains the recovered drive on site to analyze the root cause further.
-
-Review and answer the following questions for the organization:
+While an administrator can remotely investigate the cause of recovery in some cases, the user might need to bring the device that contains the recovered drive on site to analyze the root cause further. Here are some questions that can be used to help determine the root cause of the recovery:
 
 | :ballot_box_with_check: | Question |
 |--|--|
@@ -191,13 +189,7 @@ Review and answer the following questions for the organization:
 | :black_square_button: | *When was the user last able to start the device successfully, and what might have happened to the device since then?* |
 | :black_square_button: | *Might the user have encountered malicious software or left the device unattended since the last successful startup?* |
 
-To help answer these questions, use the `manage-bde.exe` command-line tool to view the current configuration and protection mode:
-
-```cmd
-manage-bde.exe -status
-```
-
-Scan the event log to find events that help indicate why recovery was initiated (for example, if a boot file change occurred).
+To help answer these questions, you can use the `manage-bde.exe -status` command to view the current configuration and protection mode. Scan the event log to find events that help indicate why recovery was initiated (for example, if a boot file change occurred).
 
 ### Resolve the root cause
 
