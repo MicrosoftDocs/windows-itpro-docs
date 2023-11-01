@@ -27,7 +27,7 @@ Windows Update for Business product family has three elements:
 - [Windows Update for Business reports](wufb-reports-overview.md) to monitor update deployment
 - Deployment service APIs to approve and schedule specific updates for deployment, which are available through the Microsoft Graph and associated SDKs (including PowerShell)
 
-The deployment service complements existing Windows Update for Business capabilities, including existing device policies and the[Windows Update for Business reports workbook](wufb-reports-workbook.md).
+The deployment service complements existing Windows Update for Business capabilities, including existing device policies and the [Windows Update for Business reports workbook](wufb-reports-workbook.md).
 
 :::image type="content" source="media/7512398-deployment-service-overview.png" alt-text="Diagram displaying the three elements that are parts of the Windows Update for Business family.":::
 
