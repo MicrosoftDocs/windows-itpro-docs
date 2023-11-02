@@ -1,7 +1,7 @@
 ---
 title: Take a Test app technical reference
 description: List of policies and settings applied by the Take a Test app.
-ms.date: 11/02/2024
+ms.date: 11/02/2023
 ms.topic: reference
 ---
 
