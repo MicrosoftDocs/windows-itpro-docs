@@ -81,7 +81,7 @@ When running tests in this mode, keep the following points in mind:
 
 ## Troubleshoot Take a Test with the event viewer
 
-You can use the Event Viewer to view Take a Test events and errors. Take a Test logs events when it receives a lock-down request, device enrollment succeedes, lock-down policies are successfully applied, and more.
+You can use the Event Viewer to view Take a Test events and errors. Take a Test logs events when it receives a lock-down request, device enrollment completes, lock-down policies are successfully applied, and more.
 
 To enable viewing events in the Event Viewer:
 
