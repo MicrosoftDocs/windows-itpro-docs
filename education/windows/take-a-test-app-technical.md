@@ -61,7 +61,7 @@ When Take a Test is running, the following functionality is available to student
 - Magnifier is available through <kbd>Win</kbd>+<kbd>+</kbd>
 - The student can press <kbd>Alt</kbd>+<kbd>Tab</kbd> when locked down. This key press results in the student being able to switch between the following elements:
     - Take a Test
-    - Assistive technology that may be running
+    - Assistive technology that might be running
     - Lock screen (not available if student is using a dedicated test account)
 
     > [!NOTE] 
