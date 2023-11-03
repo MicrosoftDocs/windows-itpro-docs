@@ -155,6 +155,7 @@ Here's a list of important considerations to keep in mind when configuring or us
 ### Known issues
 
 - If you attempt to sign in while the device is offline, you get the following message: *It doesn't look that you're connected to the Internet. Check your connection and try again*. Selecting the *Back to sign-in* option doesn't bring you back to the lock screen. As a workaround, you can press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Delete</kbd> to get back to the lock screen.
+- Web sign-in is not supported for Hybrid Azure AD joined devices.
 
 ### :::image type="icon" source="../../images/icons/feedback.svg" border="false"::: Provide feedback
 
