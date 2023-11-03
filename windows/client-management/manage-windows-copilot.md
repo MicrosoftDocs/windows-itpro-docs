@@ -3,7 +3,7 @@ title: Manage Copilot in Windows
 description: Learn how to manage Copilot in Windows for commercial environments using MDM and group policy. Learn about the chat providers available to Copilot in Windows.
 ms.topic: article
 ms.technology: itpro-windows-copilot
-ms.date: 11/02/2023
+ms.date: 11/06/2023
 appliesto:
 - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11, version 22H2 or later</a>
 ---
@@ -31,7 +31,7 @@ Organizations that aren't ready to use Copilot in Windows can disable it until t
 
 | &nbsp; | Setting  |
 |---|---|
-| **CSP** | ./User/Vendor/MSFT/WindowsAI/[TurnOffWindowsCopilot](mdm/policy-csp-windowsai.md#turnoffwindowscopilot) |
+| **CSP** | ./User/Vendor/MSFT/Policy/Config/WindowsAI/[TurnOffWindowsCopilot](mdm/policy-csp-windowsai.md#turnoffwindowscopilot) |
 | **Group policy** | User Configuration > Administrative Templates > Windows Components > Windows Copilot > **Turn off Windows Copilot** |
 
 
@@ -158,7 +158,7 @@ While the user experience for Copilot in Windows is enabled by default, you stil
 
 Organizations that aren't ready to use Copilot in Windows can disable it until they're ready by using the following policy:
 
-- **CSP**: ./User/Vendor/MSFT/WindowsAI/[TurnOffWindowsCopilot](/windows/client-management/mdm/policy-csp-windowsai#turnoffwindowscopilot)
+- **CSP**: ./User/Vendor/MSFT/Policy/Config/WindowsAI/[TurnOffWindowsCopilot](mdm/policy-csp-windowsai.md#turnoffwindowscopilot)
 - **Group Policy**: User Configuration\Administrative Templates\Windows Components\Windows Copilot\\**Turn off Windows Copilot**
 
 ## Other settings that might affect Copilot in Windows and its underlying chat provider
