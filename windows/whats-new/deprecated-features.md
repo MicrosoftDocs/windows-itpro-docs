@@ -1,7 +1,7 @@
 ---
 title: Deprecated features in the Windows client
 description: Review the list of features that Microsoft is no longer actively developing in Windows 10 and Windows 11.
-ms.date: 10/18/2023
+ms.date: 11/03/2023
 ms.prod: windows-client
 ms.technology: itpro-fundamentals
 ms.localizationpriority: medium
@@ -36,6 +36,7 @@ The features in this article are no longer being actively developed, and might b
 
 |Feature    |  Details and mitigation  | Deprecation announced |
 | --- | --- | --- |
+| Webclient (WebDAV) Service <!--8454308--> | The Webclient (WebDAV) service is deprecated. The Webclient service isn't started by default in Windows. For more information on WebDAV, see [WebDAV - Win32 apps](/windows/win32/webdav/webdav-portal). | November 2023 |
 | Remote Mailslots <!--8454244-->| Remote Mailslots are deprecated. The Remote Mailslot protocol is a dated, simple, unreliable, insecure IPC method first introduced in MS DOS. This protocol was first disabled by default in [Windows 11 Insider Preview Build ](https://blogs.windows.com/windows-insider/2023/03/08/announcing-windows-11-insider-preview-build-25314/). For more information on Remote Mailslots, see [About Mailslots](/windows/win32/ipc/about-mailslots) and [[MS-MAIL]: Remote Mailslot Protocol](/openspecs/windows_protocols/ms-mail/8ea19aa4-6e5a-4aed-b628-0b5cd75a1ab9).| November 2023 |  
 | Timeline for Microsoft Entra accounts <!--8396095--> | Cross-device syncing of Microsoft Entra user activity history will stop starting in January 2024. Microsoft will stop storing this data in the cloud, aligning with [the previous change for Microsoft accounts (MSA)](https://blogs.windows.com/windows-insider/2021/04/14/announcing-windows-10-insider-preview-build-21359) in 2021. The timeline user experience was retired in Windows 11, although it remains in Windows 10. The timeline user experience and all your local activity history still remains on Windows 10 devices. Users can access web history using their browser and access recent files through OneDrive and Office. | October 2023 |
 | VBScript <!--7954828--> | VBScript is being deprecated. In future releases of Windows, VBScript will be available as a feature on demand before its removal from the operating system. For more information, see [Resources for deprecated features](deprecated-features-resources.md#vbscript). | October 2023 |
