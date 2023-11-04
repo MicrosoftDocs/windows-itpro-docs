@@ -28,6 +28,9 @@ To use web sign-in, the clients must meet the following prerequisites:
 - Must be [Microsoft Entra joined](/entra/identity/devices/concept-directory-join)
 - Must have Internet connectivity, as the authentication is done over the Internet
 
+> [!IMPORTANT]
+> Web sign-in is not supported for Microsoft Entra hybrid joined or domain joined devices.
+
 [!INCLUDE [federated-sign-in](../../../../includes/licensing/web-sign-in.md)]
 
 ## Configure web sign-in
