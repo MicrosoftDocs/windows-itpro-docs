@@ -4,7 +4,7 @@ description: Learn more about the WebThreatDefense Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 08/30/2023
+ms.date: 11/06/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -15,8 +15,6 @@ ms.topic: reference
 
 <!-- WebThreatDefense-Begin -->
 # Policy CSP - WebThreatDefense
-
-[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- WebThreatDefense-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -30,7 +28,7 @@ ms.topic: reference
 <!-- AutomaticDataCollection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 23H2 [10.0.22631] and later |
 <!-- AutomaticDataCollection-Applicability-End -->
 
 <!-- AutomaticDataCollection-OmaUri-Begin -->
