@@ -49,9 +49,7 @@ The Network Unlock process follows these phases:
   :::column span="3":::
     1. The Windows boot manager detects a Network Unlock protector in the BitLocker configuration
     2. The client computer uses its DHCP driver in the UEFI to get a valid IPv4 IP address
-    3. The client computer broadcasts a vendor-specific DHCP request that contains:
-        - A network key (a 256-bit intermediate key) that is encrypted by using the 2048-bit RSA Public Key of the Network Unlock certificate from the WDS server
-        - An AES-256 session key for the reply
+    3. The client computer broadcasts a vendor-specific DHCP request that contains a network key (a 256-bit intermediate key) and an AES-256 session key for the reply. The network key is encrypted by using the 2048-bit RSA Public Key of the Network Unlock certificate from the WDS server
     4. The Network Unlock provider on the WDS server recognizes the vendor-specific request
     5. The provider decrypts the request by using the WDS server's BitLocker Network Unlock certificate RSA private key
     6. The WDS provider returns the network key encrypted with the session key by using its own vendor-specific DHCP reply to the client computer. This key is an intermediate key
