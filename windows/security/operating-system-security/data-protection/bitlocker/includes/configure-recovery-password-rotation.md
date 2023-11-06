@@ -12,8 +12,8 @@ With this policy you can configure a numeric recovery password rotation upon use
 Possible values are:
 
 - `0`: numeric recovery password rotation is turned off
-- `1`: numeric recovery password rotation upon use is *on* for Microsoft Entra–joined devices. This is also the default value
-- `2`: numeric recovery password rotation upon use is *on* for both Microsoft Entra–joined devices and Microsoft Entra hybrid joined devices
+- `1`: numeric recovery password rotation upon use is *on* for Microsoft Entra joined devices. This is also the default value
+- `2`: numeric recovery password rotation upon use is *on* for both Microsoft Entra joined devices and Microsoft Entra hybrid joined devices
 
 > [!NOTE]
 > The Policy is effective only when Micropsoft Entra ID or Active Directory backup for recovery password is configured to *required*
