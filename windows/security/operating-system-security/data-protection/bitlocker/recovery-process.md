@@ -16,7 +16,7 @@ This article outlines the process of obtaining BitLocker recovery information fo
 
 ## Self-recovery
 
-The BitLocker recovery password and recovery key for an operating system drive or a fixed data drive can be saved to one or more USB devices, printed, saved to Microsoft Entra ID or AD DS. It's highly recommended for organizations to implement BitLocker self-recovery policies.
+The BitLocker recovery password and recovery key for an operating system drive or a fixed data drive can be saved to one or more USB devices, printed, saved to Microsoft Entra ID or AD DS.
 
 > [!TIP]
 > Saving BitLocker recovery keys to Microsoft Entra ID or AD DS is a recommended approach. That way, a BitLocker administrator or helpdesk can assist users in attaining their keys.
@@ -32,6 +32,9 @@ A recovery key can't be stored in any of the following locations:
 ### Self-recovery in Microsoft Entra ID
 
 If BitLocker recovery keys are stored in Microsoft Entra ID, users can access them using the following URL: https://myaccount.microsoft.com. From the **Devices** tab, users can select a Windows device that they own, and select the option **View BitLocker Keys**.
+
+> [!NOTE]
+> By default, users can retrieve their BitLocker reecovery keys from Microsoft Entra ID. This behavior can be modified with the option **Restrict users from recovering the BitLocker key(s) for their owned devices**. For more information, see [Restrict member users' default permissions](/entra/fundamentals/users-default-permissions#restrict-member-users-default-permissions).
 
 ### Self-recovery with USB flash drive
 
@@ -62,12 +65,11 @@ The following list can be used as a template for creating a recovery process for
 
 ### Helpdesk recovery in Microsoft Entra ID
 
-Users with the *Global Administrator* or *Helpdesk Administrator* Microsoft Entra ID role can access BitLocker recovery passwords for all devices in the tenant. The [Helpdesk Administrator](/entra/identity/role-based-access-control/permissions-reference#helpdesk-administrator) role can also be delegated to access BitLocker recovery passwords for devices in specific Administrative Units.
+There are a few Microsoft Entra ID roles that allow a delegated administrator to read BitLocker recovery passwords from the devices in the tenant. While it's common for organizations to use the existing Microsoft Entra ID *[Cloud Device Administrator](/entra/identity/role-based-access-control/permissions-reference#cloud-device-administrator)* or *[Helpdesk Administrator](/entra/identity/role-based-access-control/permissions-reference#helpdesk-administrator)* built-in roles, you can also [create a custom role](/entra/identity/role-based-access-control/custom-create), delegating access to BitLocker keys using the `microsoft.directory/bitlockerKeys/key/read` permission. Roles can be delegated to access BitLocker recovery passwords for devices in specific Administrative Units.
 
-For more information how to retrieve BitLocker recovery passwords using from Microsoft Entra admin center, see [View or copy BitLocker keys](/entra/identity/devices/manage-device-identities#view-or-copy-bitlocker-keys).
+The [Microsoft Entra admin center](https://entra.microsoft.com) allows administrators to retrieve BitLocker recovery passwords. To learn more about the process, see [View or copy BitLocker keys](/entra/identity/devices/manage-device-identities#view-or-copy-bitlocker-keys). Another option to access BitLocker recovery passwords is to use the Microsoft Graph API, which might be useful for integrated or scripted solutions. For more information about this option, see [Get bitlockerRecoveryKey](/graph/api/bitlockerrecoverykey-get).
 
-Another option to access BitLocker recovery passwords is to query the Microsoft Graph. The option is useful for integrated or scripted solutions.\
-In the following example, a PowerShell function uses the `Get-MgInformationProtectionBitlockerRecoveryKey` cmdlet to retrieve recovery passwords from Microsoft Entra ID:
+In the following example, we use Microsoft Graph PowerShell cmdlet [`Get-MgInformationProtectionBitlockerRecoveryKey`](powershell/module/microsoft.graph.identity.signins/get-mginformationprotectionbitlockerrecoverykey) to build a PowerShell function that retrieves recovery passwords from Microsoft Entra ID:
 
 ``` PowerShell
 function Get-EntraBitLockerKeys{
