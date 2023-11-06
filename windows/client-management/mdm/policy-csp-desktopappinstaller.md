@@ -4,7 +4,7 @@ description: Learn more about the DesktopAppInstaller Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 10/03/2023
+ms.date: 11/06/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -774,6 +774,56 @@ The settings are stored inside of a .json file on the user’s system. It may be
 <!-- EnableWindowsPackageManagerCommandLineInterfaces-Examples-End -->
 
 <!-- EnableWindowsPackageManagerCommandLineInterfaces-End -->
+
+<!-- EnableWindowsPackageManagerConfiguration-Begin -->
+## EnableWindowsPackageManagerConfiguration
+
+<!-- EnableWindowsPackageManagerConfiguration-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- EnableWindowsPackageManagerConfiguration-Applicability-End -->
+
+<!-- EnableWindowsPackageManagerConfiguration-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/DesktopAppInstaller/EnableWindowsPackageManagerConfiguration
+```
+<!-- EnableWindowsPackageManagerConfiguration-OmaUri-End -->
+
+<!-- EnableWindowsPackageManagerConfiguration-Description-Begin -->
+<!-- Description-Source-Not-Found -->
+<!-- EnableWindowsPackageManagerConfiguration-Description-End -->
+
+<!-- EnableWindowsPackageManagerConfiguration-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- EnableWindowsPackageManagerConfiguration-Editable-End -->
+
+<!-- EnableWindowsPackageManagerConfiguration-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- EnableWindowsPackageManagerConfiguration-DFProperties-End -->
+
+<!-- EnableWindowsPackageManagerConfiguration-AdmxBacked-Begin -->
+<!-- ADMX-Not-Found -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | EnableWindowsPackageManagerConfiguration |
+| ADMX File Name | DesktopAppInstaller.admx |
+<!-- EnableWindowsPackageManagerConfiguration-AdmxBacked-End -->
+
+<!-- EnableWindowsPackageManagerConfiguration-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- EnableWindowsPackageManagerConfiguration-Examples-End -->
+
+<!-- EnableWindowsPackageManagerConfiguration-End -->
 
 <!-- SourceAutoUpdateInterval-Begin -->
 ## SourceAutoUpdateInterval

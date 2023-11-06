@@ -4,7 +4,7 @@ description: View the XML file containing the device description framework (DDF)
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 09/27/2023
+ms.date: 11/06/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -80,7 +80,7 @@ The following XML file contains the device description framework (DDF) for the D
             <Delete />
             <Get />
           </AccessType>
-          <Description>This internal node indicates that the configuration has discrete settings values and is self-contained with complete setting and value pairs that do not contain placeholders that the need to be resolved later with additional data. The request is ready to be processed as is.</Description>
+          <Description>This internal node indicates that the configuration has discrete settings values and is self-contained with complete setting and value pairs that do not contain placeholders that need to be resolved later with additional data. The request is ready to be processed as is.</Description>
           <DFFormat>
             <node />
           </DFFormat>

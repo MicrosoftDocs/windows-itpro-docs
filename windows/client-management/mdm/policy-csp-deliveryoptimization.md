@@ -4,7 +4,7 @@ description: Learn more about the DeliveryOptimization Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 08/10/2023
+ms.date: 11/06/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -1697,8 +1697,8 @@ This policy allows an IT Admin to define the following details:
 <!-- DOVpnKeywords-OmaUri-End -->
 
 <!-- DOVpnKeywords-Description-Begin -->
-<!-- Description-Source-DDF -->
-This policy allows you to set one or more keywords used to recognize VPN connections.
+<!-- Description-Source-ADMX -->
+This policy allows you to set one or more keywords used to recognize VPN connections. To add multiple keywords, separate them with commas.
 <!-- DOVpnKeywords-Description-End -->
 
 <!-- DOVpnKeywords-Editable-Begin -->
@@ -1721,8 +1721,12 @@ This policy allows you to set one or more keywords used to recognize VPN connect
 | Name | Value |
 |:--|:--|
 | Name | VpnKeywords |
-| Path | DeliveryOptimization > AT > WindowsComponents > DeliveryOptimizationCat |
-| Element Name | VpnKeywords |
+| Friendly Name | VPN Keywords |
+| Element Name | VPN Keywords. |
+| Location | Computer Configuration |
+| Path | Windows Components > Delivery Optimization |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization |
+| ADMX File Name | DeliveryOptimization.admx |
 <!-- DOVpnKeywords-GpMapping-End -->
 
 <!-- DOVpnKeywords-Examples-Begin -->

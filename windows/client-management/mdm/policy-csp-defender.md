@@ -4,7 +4,7 @@ description: Learn more about the Defender Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 10/23/2023
+ms.date: 11/06/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -1350,7 +1350,7 @@ Microsoft Defender Antivirus automatically determines which applications should 
 
 Enabled:
 
-Specify additional allowed applications in the Options section..
+Specify additional allowed applications in the Options section.
 
 Disabled:
 
