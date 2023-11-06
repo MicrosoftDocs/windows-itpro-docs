@@ -12,4 +12,4 @@ This policy setting allows users to turn on authentication options that require 
 |  | Path |
 |--|--|
 | **CSP** | `./Device/Vendor/MSFT/BitLocker/`[SystemDrivesEnablePrebootInputProtectorsOnSlates](/windows/client-management/mdm/bitlocker-csp#systemdrivesenableprebootinputprotectorsonslates) |
-| **GPO** | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Operating Sytem Drives** |
+| **GPO** | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Operating System Drives** |

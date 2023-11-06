@@ -15,4 +15,4 @@ NOTE: If minimum PIN length is set below 6 digits, Windows will attempt to updat
 |  | Path |
 |--|--|
 | **CSP** | `./Device/Vendor/MSFT/BitLocker/`[SystemDrivesMinimumPINLength](/windows/client-management/mdm/bitlocker-csp#systemdrivesminimumpinlength) |
-| **GPO** | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Operating Sytem Drives** |
+| **GPO** | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Operating System Drives** |

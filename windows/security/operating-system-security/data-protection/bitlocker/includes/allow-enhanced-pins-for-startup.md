@@ -17,4 +17,4 @@ Enhanced startup PINs permit the use of characters (including uppercase and lowe
 |  | Path |
 |--|--|
 | **CSP** | `./Device/Vendor/MSFT/BitLocker/`[SystemDrivesEnhancedPIN](/windows/client-management/mdm/bitlocker-csp#systemdrivesenhancedpin) |
-| **GPO** | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Operating Sytem Drives** |
+| **GPO** | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Operating System Drives** |

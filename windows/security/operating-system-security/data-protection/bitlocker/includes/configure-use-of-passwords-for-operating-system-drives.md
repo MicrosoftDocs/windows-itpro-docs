@@ -32,4 +32,4 @@ When this policy setting is enabled, the option **Configure password complexity 
 |  | Path |
 |--|--|
 | **CSP** | Not available |
-| **GPO** | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Operating Sytem Drives** |
+| **GPO** | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Operating System Drives** |

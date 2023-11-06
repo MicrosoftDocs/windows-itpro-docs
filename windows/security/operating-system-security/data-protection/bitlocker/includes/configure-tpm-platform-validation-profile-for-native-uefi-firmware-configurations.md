@@ -12,4 +12,4 @@ This policy setting allows you to configure how the computer's Trusted Platform 
 |  | Path |
 |--|--|
 | **CSP** | Not available |
-| **GPO** | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Operating Sytem Drives** |
+| **GPO** | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Operating System Drives** |

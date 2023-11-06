@@ -12,4 +12,4 @@ This policy setting allows you to manage BitLocker's use of hardware-based encry
 |  | Path |
 |--|--|
 | **CSP** | Not available |
-| **GPO** | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Operating Sytem Drives** |
+| **GPO** | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Operating System Drives** |

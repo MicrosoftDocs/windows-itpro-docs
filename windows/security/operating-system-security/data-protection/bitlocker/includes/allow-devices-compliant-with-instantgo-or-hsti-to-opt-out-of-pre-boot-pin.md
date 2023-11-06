@@ -13,4 +13,4 @@ This policy setting allows users on devices that are compliant with InstantGo or
 |  | Path |
 |--|--|
 | **CSP** | `./Device/Vendor/MSFT/BitLocker/`[SystemDrivesEnablePreBootPinExceptionOnDECapableDevice](/windows/client-management/mdm/bitlocker-csp#systemdrivesenableprebootpinexceptionondecapabledevice) |
-| **GPO** | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Operating Sytem Drives** |
+| **GPO** | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Operating System Drives** |

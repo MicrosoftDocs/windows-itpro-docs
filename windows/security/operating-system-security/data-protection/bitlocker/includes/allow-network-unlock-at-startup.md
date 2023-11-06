@@ -23,4 +23,4 @@ For more information about Network Unlock feature, see [BitLocker: How to enable
 |  | Path |
 |--|--|
 | **CSP** | Not available |
-| **GPO** | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Operating Sytem Drives** |
+| **GPO** | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Operating System Drives** |
