@@ -1,6 +1,6 @@
 ---
 title: Protect cluster shared volumes and storage area networks with BitLocker
-description: Learn how to how to protect cluster shared volumes (CSV) and storage area networks (SAN) with BitLocker.
+description: Learn how to protect cluster shared volumes (CSV) and storage area networks (SAN) with BitLocker.
 ms.topic: how-to
 ms.date: 10/30/2023
 appliesto:

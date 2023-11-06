@@ -9,20 +9,20 @@ ms.date: 10/30/2023
 
 # BitLocker operations guide
 
-There are differnt tools and options to manage and operate BitLocker:
+There are different tools and options to manage and operate BitLocker:
 
 - the BitLocker PowerShell module
 - the BitLocker drive encryption tools
 - Control Panel
 
-The BitLocker drive encryption tools and BitLocker PowerShell module can be used to perform any tasks that can be accomplished through the BitLocker Control Panel. They are appropriate to use for automated deployments and other scripting scenarios.\
+The BitLocker drive encryption tools and BitLocker PowerShell module can be used to perform any tasks that can be accomplished through the BitLocker Control Panel. They're appropriate to use for automated deployments and other scripting scenarios.\
 The BitLocker Control Panel applet allows users to perform basic tasks such as turning on BitLocker on a drive and specifying unlock methods and authentication methods. The BitLocker Control Panel applet is appropriate to use for basic BitLocker tasks.
 
 This article describes the BitLocker management tools and how to use them, providing practical examples.
 
 ## BitLocker PowerShell module
 
-The BitLocker PowerShell module enables administrators to integrate BitLocker options into existing scripts with ease. For a list of cmdlets included in module, their description and syntax, che the [BitLocker PowerShell reference article](/powershell/module/bitlocker).
+The BitLocker PowerShell module enables administrators to integrate BitLocker options into existing scripts with ease. For a list of cmdlets included in module, their description and syntax, check the [BitLocker PowerShell reference article](/powershell/module/bitlocker).
 
 ## BitLocker drive encryption tools
 
@@ -108,7 +108,7 @@ Checking BitLocker status with the Control Panel is a common method used by most
 | **Suspended** | BitLocker is suspended and not actively protecting the volume |
 | **Waiting for Activation**| BitLocker is enabled with a clear protector key and requires further action to be fully protected|
 
-If a drive is pre-provisioned with BitLocker, a status of **Waiting for Activation** displays with a yellow exclamation icon on the volume. This status means that there was only a clear protector used when encrypting the volume. In this case, the volume isn't in a protected state and needs to have a secure key added to the volume before the drive is fully protected. Administrators can use the Control Panel, PowerShell or `manage-bde.exe` tool to add an appropriate key protector. Once complete, the Control Panel will update to reflect the new status.
+If a drive is pre-provisioned with BitLocker, a status of **Waiting for Activation** displays with a yellow exclamation icon on the volume. This status means that there was only a clear protector used when encrypting the volume. In this case, the volume isn't in a protected state and needs to have a secure key added to the volume before the drive is fully protected. Administrators can use the Control Panel, PowerShell or `manage-bde.exe` to add an appropriate key protector. Once complete, the Control Panel updates to reflect the new status.
 
 ---
 
@@ -135,7 +135,7 @@ From the **BitLocker Drive Encryption** Control Panel applet:
 
 1. Expand the OS drive and select the option **Turn on BitLocker**
 1. When prompted, select the option **Let BitLocker automatically unlock my drive**
-1. Backup the *recovery key* using one of the following methods:
+1. Back up the *recovery key* using one of the following methods:
 
    - **Save to your Microsoft Entra ID account** or **Microsoft Account** (if applicable)
    - **Save to a USB flash drive**
@@ -143,7 +143,7 @@ From the **BitLocker Drive Encryption** Control Panel applet:
    - **Print the recovery key**
 
 1. Select **Next**
-1. Chose one of the options to **encrypt used disk space only** or **encrypt entire drive** and select **Next**
+1. Choose one of the options to **encrypt used disk space only** or **encrypt entire drive** and select **Next**
 
    - **Encrypt used disk space only** - Encrypts only disk space that contains data
    - **Encrypt entire drive** - Encrypts the entire volume including free space. Also known as full disk encryption
@@ -209,7 +209,7 @@ If prompted, reboot the computer to complete the encryption process.
 
 #### [:::image type="icon" source="images/controlpanel.svg"::: **Control Panel**](#tab/controlpanel)
 
-The Control Panel applet doesn't allow to enable BitLocker and add a startup key protector at the same time. To add a startup key protector, follow these steps:
+The Control Panel applet doesn't allow enabling BitLocker and adding a startup key protector at the same time. To add a startup key protector, follow these steps:
 
 - From the **BitLocker Drive Encryption** Control Panel applet, under the OS drive, select the option **Change how drive is unlocked at startup**
 - When prompted, select the option **Insert a USB flash drive**
@@ -269,9 +269,9 @@ Encrypting data volumes using the BitLocker Control Panel works in a similar fas
 
 ## Manage BitLocker protectors
 
-The management of BitLocker protectors consist in adding, removing, and backing up protectors.
+The management of BitLocker protectors consists in adding, removing, and backing up protectors.
 
-Follow the instructions below manage BitLocker protectors, selecting the option that best suits your needs.
+Managed BitLocker protectors by using the following instructions, selecting the option that best suits your needs.
 
 ### List protectors
 
@@ -291,7 +291,7 @@ The list of protectors available for a volume (`C:` in the example) can be liste
 
 #### [:::image type="icon" source="images/controlpanel.svg"::: **Control Panel**](#tab/controlpanel)
 
-This information is not available in the Control Panel.
+This information isn't available in the Control Panel.
 
 ---
 
@@ -384,7 +384,7 @@ manage-bde.exe -protectors -add -sid <user or group>
 
 #### [:::image type="icon" source="images/controlpanel.svg"::: **Control Panel**](#tab/controlpanel)
 
-This option is not available in the Control Panel.
+This option isn't available in the Control Panel.
 
 ---
 
@@ -438,7 +438,7 @@ From the **BitLocker Drive Encryption** Control Panel applet, expand the drive w
 
 Some configuration changes may require to suspend BitLocker and then resume it after the change is applied.
 
-Follow the instructions below to suspend and resume BitLocker, selecting the option that best suits your needs.
+Suspend and resume BitLocker by using the following instructions, selecting the option that best suits your needs.
 
 ### Suspend BitLocker
 
@@ -484,7 +484,7 @@ From the **BitLocker Drive Encryption** Control Panel applet, select the OS driv
 
 ## Reset and backup a recovery password
 
-It's recommended to invalidate a recovery password after its use. In this example the recovery password protector is removed from the OS drive, a new protector added, and backed up to Microsoft Entra ID or Active Direcroty.
+It's recommended to invalidate a recovery password after its use. In this example the recovery password protector is removed from the OS drive, a new protector added, and backed up to Microsoft Entra ID or Active Directory.
 
 #### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
 
@@ -513,13 +513,13 @@ Obtain the ID of the new recovery password:
 
 Copy the ID of the recovery password from the output.
 
-Using the GUID from the previous step, replace the `{ID}` in the following command and use the following command to backup the recovery password to Microsoft Entra ID:
+Using the GUID from the previous step, replace the `{ID}` in the following command and use the following command to back up the recovery password to Microsoft Entra ID:
 
 ```PowerShell
 BackuptoAAD-BitLockerKeyProtector -MountPoint $env:SystemDrive -KeyProtectorId "{ID}"
 ```
 
-Or use the following command to backup the recovery password to Active Directory:
+Or use the following command to back up the recovery password to Active Directory:
 
 ```PowerShell
 Backup-BitLockerKeyProtector -MountPoint $env:SystemDrive -KeyProtectorId "{ID}"
@@ -551,13 +551,13 @@ manage-bde.exe -protectors -get C: -Type RecoveryPassword
 > [!NOTE]
 >This following steps are not required if the policy setting [Choose how BitLocker-protected operating system drives can be recovered](configure.md?tabs=os#choose-how-bitlocker-protected-operating-system-drives-can-be-recovered) is configured to **Require BitLocker backup to AD DS**.
 
-Using the GUID from the previous step, replace the `{ID}` in the following command and use the following command to backup the recovery password to Microsoft Entra ID:
+Using the GUID from the previous step, replace the `{ID}` in the following command and use the following command to back up the recovery password to Microsoft Entra ID:
 
 ```cmd
 manage-bde.exe -protectors -aadbackup C: -id {ID}
 ```
 
-Or use the following command to backup the recovery password to Active Directory:
+Or use the following command to back up the recovery password to Active Directory:
 
 ```cmd
 manage-bde.exe -protectors -adbackup C: -id {ID}
@@ -576,11 +576,11 @@ This process can't be accomplished using the Control Panel. Use one of the other
 
 Disabling BitLocker decrypts and removes any associated protectors from the volumes. Decryption should occur when protection is no longer required, and not as a troubleshooting step.
 
-Follow the instructions below to disable BitLocker, selecting the option that best suits your needs.
+Disable BitLocker by using the following instructions, selecting the option that best suits your needs.
 
 #### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
 
-Windows PowerShell offers the ability to decrypt multiple drives in one pass. In the example below, the user has three encrypted volumes, which they wish to decrypt.
+Windows PowerShell offers the ability to decrypt multiple drives in one pass. In the following example, the user has three encrypted volumes, which they wish to decrypt.
 
 Using the Disable-BitLocker command, they can remove all protectors and encryption at the same time without the need for more commands. An example of this command is:
 

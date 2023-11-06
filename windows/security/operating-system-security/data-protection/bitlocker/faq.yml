@@ -295,7 +295,7 @@ sections:
         answer: |
           If BitLocker is enabled on a drive before policy settings are applied to enforce a backup, the recovery information won't be automatically backed up to AD DS when the computer joins the domain or when the policy settings are subsequently applied. However, the policy settings **Choose how BitLocker-protected operating system drives can be recovered**, **Choose how BitLocker-protected fixed drives can be recovered**, and **Choose how BitLocker-protected removable drives can be recovered** can be chosen to require the computer to be connected to a domain before BitLocker can be enabled to help ensure that recovery information for BitLocker-protected drives in the organization is backed up to AD DS.
           
-          For more information how to backup the recovery password to AD DS or Microsoft Entra ID, review the [BitLocker operations guide](operations-guide.md).
+          For more information how to back up the recovery password to AD DS or Microsoft Entra ID, review the [BitLocker operations guide](operations-guide.md).
           
           > [!IMPORTANT]
           > Joining a computer to the domain should be the first step for new computers within an organization. After computers are joined to a domain, storing the BitLocker recovery key to AD DS is automatic (when enabled with policy settings).

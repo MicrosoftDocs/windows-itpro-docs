@@ -7,7 +7,7 @@ ms.date: 10/30/2023
 
 # BitLocker planning guide
 
-A BitLocker deployment strategy includes definining the appropriate policies and configuration requirements based on your organization's security requirements. This article helps collecting the information to assist with a BitLocker deployment.
+A BitLocker deployment strategy includes defining the appropriate policies and configuration requirements based on your organization's security requirements. This article helps collecting the information to assist with a BitLocker deployment.
 
 ## Audit the environment
 
@@ -40,7 +40,7 @@ The TPM is able to securely protect the BitLocker encryption key while it is at 
 
 ### BitLocker key protectors
 
-To protect the BitLocker encryption key, BitLocker can use different types of *protectors*. When enabling BitLocker, each protector receives a copy of the *Volume Master Key*, which is then encrypted using its own machanism.
+To protect the BitLocker encryption key, BitLocker can use different types of *protectors*. When enabling BitLocker, each protector receives a copy of the *Volume Master Key*, which is then encrypted by using its own mechanism.
 
 | Key protector | Description |
 |--|--|
@@ -189,7 +189,7 @@ For more information about how to configure Network unlock feature, see [Network
 
 ## BitLocker recovery
 
-Organizations should carefully plan a BitLocker recovery strategy as part of the overall BitLocker implementation plan. There are different options when it comes to implement a BitLocker recovery model, which are described in the [BitLocker recovery overview](recovery-overview.md).
+Organizations should carefully plan a BitLocker recovery strategy as part of the overall BitLocker implementation plan. There are different options when implementing a BitLocker recovery model, which are described in [BitLocker recovery overview](recovery-overview.md).
 
 ## Monitor BitLocker
 
