@@ -1,5 +1,5 @@
 ---
-ms.date: 09/24/2021
+ms.date: 11/06/2023
 title: Smart Card and Remote Desktop Services 
 description: This topic for the IT professional describes the behavior of Remote Desktop Services when you implement smart card sign-in.
 ms.topic: conceptual
@@ -13,9 +13,8 @@ Smart card redirection logic and **WinSCard** API are combined to support multip
 
 Smart card support is required to enable many Remote Desktop Services scenarios. These include:
 
--   Using Fast User Switching or Remote Desktop Services. A user is not able to establish a redirected smart card-based remote desktop connection. That is, the connect attempt is not successful in Fast User Switching or from a Remote Desktop Services session.
-
--   Enabling Encrypting File System (EFS) to locate the user's smart card reader from the Local Security Authority (LSA) process in Fast User Switching or in a Remote Desktop Services session. If EFS is not able to locate the smart card reader or certificate, EFS cannot decrypt user files.
+- Using Fast User Switching or Remote Desktop Services. A user is not able to establish a redirected smart card-based remote desktop connection. That is, the connect attempt is not successful in Fast User Switching or from a Remote Desktop Services session
+- Enabling Encrypting File System (EFS) to locate the user's smart card reader from the Local Security Authority (LSA) process in Fast User Switching or in a Remote Desktop Services session. If EFS is not able to locate the smart card reader or certificate, EFS cannot decrypt user files
 
 ## Remote Desktop Services redirection
 
@@ -23,23 +22,16 @@ In a Remote Desktop scenario, a user is using a remote server for running servic
 
 ![Smart card service redirects to smart card reader.](images/sc-image101.png)
 
-**Remote Desktop redirection**
+### Remote Desktop redirection
 
 Notes about the redirection model:
 
-1.  This scenario is a remote sign-in session on a computer with Remote Desktop Services. In the remote session (labeled as "Client session"), the user runs **net use /smartcard**.
-
-2.  Arrows represent the flow of the PIN after the user types the PIN at the command prompt until it reaches the user's smart card in a smart card reader that is connected to the Remote Desktop Connection (RDC) client computer.
-
-3.  The authentication is performed by the LSA in session 0.
-
-4.  The CryptoAPI processing is performed in the LSA (Lsass.exe). This is possible because RDP redirector (rdpdr.sys) allows per-session, rather than per-process, context.
-
-5.  The WinScard and SCRedir components, which were separate modules in operating systems earlier than Windows Vista, are now included in one module. The ScHelper library is a CryptoAPI wrapper that is specific to the Kerberos protocol.
-
-6.  The redirection decision is made on a per smart card context basis, based on the session of the thread that performs the SCardEstablishContext call.
-
-7.  Changes to WinSCard.dll implementation were made in Windows Vista to improve smart card redirection.
+1. This scenario is a remote sign-in session on a computer with Remote Desktop Services. In the remote session (labeled as "Client session"), the user runs `net use /smartcard`
+1. Arrows represent the flow of the PIN after the user types the PIN at the command prompt until it reaches the user's smart card in a smart card reader that is connected to the Remote Desktop Connection (RDC) client computer
+1. The authentication is performed by the LSA in session 0
+1. The CryptoAPI processing is performed in the LSA (`lsass.exe`). This is possible because RDP redirector (`rdpdr.sys`) allows per-session, rather than per-process, context
+1. The ScHelper library is a CryptoAPI wrapper that is specific to the Kerberos protocol
+1. The redirection decision is made on a per smart card context basis, based on the session of the thread that performs the `SCardEstablishContext` call
 
 ## RD Session Host server single sign-in experience
 
@@ -57,13 +49,17 @@ In addition, Group Policy settings that are specific to Remote Desktop Services 
 
 To enable smart card sign-in to a Remote Desktop Session Host (RD Session Host) server, the Key Distribution Center (KDC) certificate must be present on the RDC client computer. If the computer is not in the same domain or workgroup, the following command can be used to deploy the certificate:
 
-**certutil -dspublish NTAuthCA** "*DSCDPContainer*"
+```cmd
+certutil.exe -dspublish NTAuthCA "DSCDPContainer"
+```
 
-The *DSCDPContainer* Common Name (CN) is usually the name of the certification authority.
+The `DSCDPContainer` Common Name (CN) is usually the name of the certification authority.
 
 Example:
 
-**certutil -dspublish NTAuthCA** &lt;*CertFile*&gt; **"CN=NTAuthCertificates,CN=Public Key Services,CN=Services,CN=Configuration,DC=engineering,DC=contoso,DC=com"**
+```cmd
+certutil -dspublish NTAuthCA <CertFile> "CN=NTAuthCertificates,CN=Public Key Services,CN=Services,CN=Configuration,DC=engineering,DC=contoso,DC=com"
+```
 
 For information about this option for the command-line tool, see [-dsPublish](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc732443(v=ws.11)#BKMK_dsPublish).
 
@@ -71,15 +67,19 @@ For information about this option for the command-line tool, see [-dsPublish](/p
 
 To enable remote access to resources in an enterprise, the root certificate for the domain must be provisioned on the smart card. From a computer that is joined to a domain, run the following command at the command line:
 
-**certutil -scroots update**
+```cmd
+certutil.exe -scroots update
+```
 
 For information about this option for the command-line tool, see [-SCRoots](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc732443(v=ws.11)#BKMK_SCRoots).
 
 For Remote Desktop Services across domains, the KDC certificate of the RD Session Host server must also be present in the client computer's NTAUTH store. To add the store, run the following command at the command line:
 
-**certutil -addstore -enterprise NTAUTH** &lt;*CertFile*&gt;
+```cmd
+certutil -addstore -enterprise NTAUTH <CertFile>
+```
 
-Where &lt;*CertFile*&gt; is the root certificate of the KDC certificate issuer.
+Where *CertFile* is the root certificate of the KDC certificate issuer.
 
 For information about this option for the command-line tool, see [-addstore](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc732443(v=ws.11)#BKMK_addstore).
 

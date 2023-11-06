@@ -6,7 +6,7 @@ ms.collection:
   - highpri
   - tier2
 ms.topic: troubleshooting
-ms.date: 09/24/2021
+ms.date: 11/06/2023
 ---
 
 # Smart Card Troubleshooting
@@ -15,17 +15,12 @@ This article explains tools and services that smart card developers can use to h
 
 Debugging and tracing smart card issues requires a variety of tools and approaches. The following sections provide guidance about tools and approaches you can use.
 
--   [Certutil](#certutil)
-
--   [Debugging and tracing using Windows software trace preprocessor (WPP)](#debugging-and-tracing-using-wpp)
-
--   [Kerberos protocol, Key Distribution Center (KDC), and NTLM debugging and tracing](#kerberos-protocol-kdc-and-ntlm-debugging-and-tracing)
-
--   [Smart Card service](#smart-card-service)
-
--   [Smart card readers](#smart-card-readers)
-
--   [CryptoAPI 2.0 Diagnostics](#cryptoapi-20-diagnostics)
+- [Certutil](#certutil)
+- [Debugging and tracing using Windows software trace preprocessor (WPP)](#debugging-and-tracing-using-wpp)
+- [Kerberos protocol, Key Distribution Center (KDC), and NTLM debugging and tracing](#kerberos-protocol-kdc-and-ntlm-debugging-and-tracing)
+- [Smart Card service](#smart-card-service)
+- [Smart card readers](#smart-card-readers)
+- [CryptoAPI 2.0 Diagnostics](#cryptoapi-20-diagnostics)
 
 ## Certutil
 
@@ -44,7 +39,7 @@ Each certificate is enclosed in a container. When you delete a certificate on th
 
 To find the container value, type `certutil -scinfo`.
 
-To delete a container, type **certutil -delkey -csp "Microsoft Base Smart Card Crypto Provider"** "&lt;*ContainerValue*&gt;".
+To delete a container, type `certutil -delkey -csp "Microsoft Base Smart Card Crypto Provider" "<ContainerValue>"`.
 
 ## Debugging and tracing using WPP
 
@@ -54,9 +49,10 @@ WPP simplifies tracing the operation of the trace provider. It provides a mechan
 
 Using WPP, use one of the following commands to enable tracing:
 
-- **tracelog.exe -kd -rt -start** &lt;*FriendlyName*&gt; **-guid \#**&lt;*GUID*&gt; **-f .\\**&lt;*LogFileName*&gt;**.etl -flags** &lt;*flags*&gt; **-ft 1**
-
-- **logman start** &lt;*FriendlyName*&gt; **-ets -p {**&lt;*GUID*&gt;**} -**&lt;*Flags*&gt; **-ft 1 -rt -o .\\**&lt;*LogFileName*&gt;<em>**.etl -mode 0x00080000</em>**
+```cmd
+tracelog.exe -kd -rt -start <FriendlyName> -guid \<GUID> -f .\\<LogFileName*>.etl -flags <flags> -ft 1
+logman start <FriendlyName> -ets -p {<GUID>} -<Flags> -ft 1 -rt -o .\\<LogFileName><em>.etl -mode 0x00080000</em>
+```
 
 You can use the parameters in the following table.
 
@@ -72,77 +68,91 @@ You can use the parameters in the following table.
 | `scfilter`          | eed7f3c9-62ba-400e-a001-658869df9a91 | 0xffff    |
 | `wudfusbccid`       | a3c09ba3-2f62-4be5-a50f-8278a646ac9d | 0xffff    |
 
-Examples
+### Examples
 
 To enable tracing for the SCardSvr service:
 
--   **tracelog.exe -kd -rt -start scardsvr -guid \#13038e47-ffec-425d-bc69-5707708075fe -f .\\scardsvr.etl -flags 0xffff -ft 1**
+```cmd
+tracelog.exe -kd -rt -start scardsvr -guid \#13038e47-ffec-425d-bc69-5707708075fe -f .\\scardsvr.etl -flags 0xffff -ft 1
+logman start scardsvr -ets -p {13038e47-ffec-425d-bc69-5707708075fe} 0xffff -ft 1 -rt -o .\\scardsvr.etl -mode 0x00080000
+```
 
--   **logman start scardsvr -ets -p {13038e47-ffec-425d-bc69-5707708075fe} 0xffff -ft 1 -rt -o .\\scardsvr.etl -mode 0x00080000**
+To enable tracing for `scfilter.sys`:
 
-To enable tracing for scfilter.sys:
-
- - **tracelog.exe -kd -rt -start scfilter -guid \#eed7f3c9-62ba-400e-a001-658869df9a91 -f .\\scfilter.etl -flags 0xffff -ft 1**
+```cmd
+tracelog.exe -kd -rt -start scfilter -guid \#eed7f3c9-62ba-400e-a001-658869df9a91 -f .\\scfilter.etl -flags 0xffff -ft 1
+```
 
 ### Stop the trace
 
 Using WPP, use one of the following commands to stop the tracing:
 
--   **tracelog.exe -stop** &lt;*FriendlyName*&gt;
-
--   **logman -stop** &lt;*FriendlyName*&gt; **-ets**
+```cmd
+tracelog.exe -stop <*FriendlyName*>
+logman -stop <*FriendlyName*> -ets
+```
 
 #### Examples
 
 To stop a trace:
 
--   **tracelog.exe -stop scardsvr**
-
--   **logman -stop scardsvr -ets**
+```cmd
+tracelog.exe -stop scardsvr
+logman -stop scardsvr -ets
+```
 
 ## Kerberos protocol, KDC, and NTLM debugging and tracing
 
-<!-- It's difficult to find any Kerberos content any more. If they reinstate some content that's more relevant and detailed than what's below, link to it instead. -->
-
 You can use these resources to troubleshoot these protocols and the KDC:
 
--   [Kerberos and LDAP Troubleshooting Tips](/previous-versions/tn-archive/bb463167(v=technet.10)).
+- [Kerberos and LDAP Troubleshooting Tips](/previous-versions/tn-archive/bb463167(v=technet.10))
+- [Windows Driver Kit (WDK) and Debugging Tools for Windows (WinDbg)](https://developer.microsoft.com/en-us/windows/hardware/windows-driver-kit). You can use the trace log tool in this SDK to debug Kerberos authentication failures.
 
--   [Windows Driver Kit (WDK) and Debugging Tools for Windows (WinDbg)](https://developer.microsoft.com/en-us/windows/hardware/windows-driver-kit).  You can use the trace log tool in this SDK to debug Kerberos authentication failures.
-
-To begin tracing, you can use `Tracelog`. Different components use different control GUIDs as explained in these examples. For more information, see [`Tracelog`](/windows-hardware/drivers/devtest/tracelog).
+To begin tracing, you can use `Tracelog`. Different components use different control GUIDs as explained in these examples. For more information, see [`Tracelog`](/windows-hardware/drivers/devtest/tracelog)
 
 ### NTLM
 
 To enable tracing for NTLM authentication, run the following command on the command line:
 
- - **tracelog.exe -kd -rt -start ntlm -guid \#5BBB6C18-AA45-49b1-A15F-085F7ED0AA90 -f .\\ntlm.etl -flags 0x15003 -ft 1**
+```cmd
+tracelog.exe -kd -rt -start ntlm -guid \#5BBB6C18-AA45-49b1-A15F-085F7ED0AA90 -f .\\ntlm.etl -flags 0x15003 -ft 1
+```
 
 To stop tracing for NTLM authentication, run this command:
 
- - **tracelog -stop ntlm**
+```cmd
+tracelog -stop ntlm
+```
 
 ### Kerberos authentication
 
 To enable tracing for Kerberos authentication, run this command:
 
- - **tracelog.exe -kd -rt -start kerb -guid \#6B510852-3583-4e2d-AFFE-A67F9F223438 -f .\\kerb.etl -flags 0x43 -ft 1**
+```cmd
+tracelog.exe -kd -rt -start kerb -guid \#6B510852-3583-4e2d-AFFE-A67F9F223438 -f .\\kerb.etl -flags 0x43 -ft 1
+```
 
 To stop tracing for Kerberos authentication, run this command:
 
- - **tracelog.exe -stop kerb**
+```cmd
+tracelog.exe -stop kerb
+```
 
 ### KDC
 
 To enable tracing for the KDC, run the following command on the command line:
 
- - **tracelog.exe -kd -rt -start kdc -guid \#1BBA8B19-7F31-43c0-9643-6E911F79A06B -f .\\kdc.etl -flags 0x803 -ft 1**
+```cmd
+tracelog.exe -kd -rt -start kdc -guid \#1BBA8B19-7F31-43c0-9643-6E911F79A06B -f .\\kdc.etl -flags 0x803 -ft 1
+```
 
 To stop tracing for the KDC, run the following command on the command line:
 
- - **tracelog.exe -stop kdc**
+```cmd
+tracelog.exe -stop kdc
+```
 
-To stop tracing from a remote computer, run this command: logman.exe -s *&lt;ComputerName&gt;*.
+To stop tracing from a remote computer, run this command: logman.exe -s *<ComputerName>*.
 
 > [!NOTE]
 > The default location for logman.exe is %systemroot%system32\\. Use the **-s** option to supply a computer name.
@@ -157,15 +167,13 @@ You can also configure tracing by editing the Kerberos registry values shown in 
 | Kerberos    | HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Lsa\\Kerberos<br>Value name: LogToFile<br>Value type: DWORD<br>Value data: 00000001<br><br>HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Lsa\\Kerberos\\Parameters<br>Value name: KerbDebugLevel<br>Value type: DWORD<br>Value data: c0000043<br><br>HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Lsa\\Kerberos\\Parameters<br>Value name: LogToFile<br>Value type: DWORD<br>Value data: 00000001 |
 | KDC         | HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\Kdc<br>Value name: KdcDebugLevel<br>Value type: DWORD<br>Value data: c0000803                  |
 
-If you used `Tracelog`, look for the following log file in your current directory: kerb.etl/kdc.etl/ntlm.etl.
+If you used `Tracelog`, look for the following log file in your current directory: `kerb.etl/kdc.etl/ntlm.etl`.
 
 If you used the registry key settings shown in the previous table, look for the trace log files in the following locations:
 
--   NTLM: %systemroot%\\tracing\\msv1\_0
-
--   Kerberos: %systemroot%\\tracing\\kerberos 
-
--   KDC: %systemroot%\\tracing\\kdcsvc 
+- NTLM: %systemroot%\\tracing\\msv1\_0
+- Kerberos: %systemroot%\\tracing\\kerberos
+- KDC: %systemroot%\\tracing\\kdcsvc
 
 To decode event trace files, you can use `Tracefmt` (tracefmt.exe). `Tracefmt` is a command-line tool that formats and displays trace messages from an event trace log file (.etl) or a real-time trace session. `Tracefmt` can display the messages in the Command Prompt window or save them in a text file. It is located in the \\tools\\tracing subdirectory of the Windows Driver Kit (WDK). For more information, see [`Tracefmt`](/windows-hardware/drivers/devtest/tracefmt).
 
@@ -173,25 +181,19 @@ To decode event trace files, you can use `Tracefmt` (tracefmt.exe). `Tracefmt` i
 
 The smart card resource manager service runs in the context of a local service. It's implemented as a shared service of the services host (svchost) process.
 
-**To check if Smart Card service is running**
+To check if Smart Card service is running:
 
-1.  Press CTRL+ALT+DEL, and then select **Start Task Manager**.
+1. Press CTRL+ALT+DEL, and then select **Start Task Manager**
+1. In the **Windows Task Manager** dialog box, select the **Services** tab
+1. Select the **Name** column to sort the list alphabetically, and then type **s**
+1. In the **Name** column, look for **SCardSvr**, and then look under the **Status** column to see if the service is running or stopped
 
-2.  In the **Windows Task Manager** dialog box, select the **Services** tab.
+To restart Smart Card service:
 
-3.  Select the **Name** column to sort the list alphabetically, and then type **s**.
-
-4.  In the **Name** column, look for **SCardSvr**, and then look under the **Status** column to see if the service is running or stopped.
-
-**To restart Smart Card service**
-
-1.  Run as administrator at the command prompt.
-
-2.  If the **User Account Control** dialog box appears, confirm that the action it displays is what you want, and then select **Yes**.
-
-3.  At the command prompt, type `net stop SCardSvr`.
-
-4.  At the command prompt, type `net start SCardSvr`.
+1. Run as administrator at the command prompt
+1. If the **User Account Control** dialog box appears, confirm that the action it displays is what you want, and then select **Yes**
+1. At the command prompt, type `net stop SCardSvr`
+1. At the command prompt, type `net start SCardSvr`
 
 You can use the following command at the command prompt to check whether the service is running: `sc queryex scardsvr`.
 
@@ -215,15 +217,12 @@ C:\>
 
 As with any device connected to a computer, Device Manager can be used to view properties and begin the debug process.
 
-**To check if smart card reader is working**
+To check if smart card reader is working:
 
-1.  Navigate to **Computer**.
-
-2.  Right-click **Computer**, and then select **Properties**.
-
-3.  Under **Tasks**, select **Device Manager**.
-
-4.  In Device Manager, expand **Smart card readers**, select the name of the smart card reader you want to check, and then select **Properties**.
+1. Navigate to **Computer**
+1. Right-click **Computer**, and then select **Properties**
+1. Under **Tasks**, select **Device Manager**
+1. In Device Manager, expand **Smart card readers**, select the name of the smart card reader you want to check, and then select **Properties**
 
 > [!NOTE]
 > If the smart card reader is not listed in Device Manager, in the **Action** menu, select **Scan for hardware changes**.

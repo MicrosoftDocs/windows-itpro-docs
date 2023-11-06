@@ -1,5 +1,5 @@
 ---
-ms.date: 11/22/2022
+ms.date: 11/06/2023
 title: Access Control Overview
 description: Description of the access controls in Windows, which is the process of authorizing users, groups, and computers to access objects on the network or computer.
 ms.topic: overview
