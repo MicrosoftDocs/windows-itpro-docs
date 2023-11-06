@@ -2,7 +2,7 @@
 title: Use Virtual Smart Cards
 description: Learn about the requirements for virtual smart cards, how to use and manage them.
 ms.topic: conceptual
-ms.date: 02/22/2023
+ms.date: 11/06/2023
 ---
 
 # Use Virtual Smart Cards
@@ -13,13 +13,13 @@ Learn about the requirements for virtual smart cards, how to use and manage them
 
 ## Requirements, restrictions, and limitations
 
-| Area        | Requirements and details  |
-|-------------|---------------------------|
-| Supported operating systems  | Windows Server 2016 <br>Windows Server 2012 R2 <br>Windows Server 2012 <br>Windows 10 <br>Windows 8.1 <br>Windows 8  |
-| Supported Trusted Platform Module (TPM)                        | Any TPM that adheres to the TPM main specifications for version 1.2 or version 2.0 (as set by the Trusted Computing Group) is supported for use as a virtual smart card. For more information, see the [TPM Main Specification](http://www.trustedcomputinggroup.org/resources/tpm_main_specification).      |
-| Supported virtual smart cards per computer                     | Ten smart cards can be connected to a computer or device at one time. This includes physical and virtual smart cards combined. <br><br>**Note**<br>You can create more than one virtual smart card; however, after creating more than four virtual smart cards, you may start to notice performance degradation. Because all smart cards appear as if they're always inserted, if more than one person shares a computer or device, each person can see all the virtual smart cards that are created on that computer or device. If the user knows the PIN values for all the virtual smart cards, the user will also be able to use them.<br> |
-| Supported number of certificates on a virtual smart card       | A single TPM virtual smart card can contain 30 distinct certificates with the corresponding private keys. Users can continue to renew certificates on the card until the total number of certificates on a card exceeds 90. The reason that the total number of certificates is different from the total number of private keys is that sometimes the renewal can be done with the same private key—in which case a new private key isn't generated.       |
-| PIN, PIN Unlock Key (PUK), and Administrative key requirements | The PIN and the PUK must be a minimum of eight characters that can include numerals, alphabetic characters, and special characters.<br>The Administrative key must be entered as 48 hexadecimal characters. It's a 3-key triple DES with ISO/IEC 9797 padding method 2 in CBC chaining mode.                 |
+| Area | Requirements and details |
+|--|--|
+| Supported operating systems | Windows Server 2016 <br>Windows Server 2012 R2 <br>Windows Server 2012 <br>Windows 10 <br>Windows 8.1 <br>Windows 8 |
+| Supported Trusted Platform Module (TPM) | Any TPM that adheres to the TPM main specifications for version 1.2 or version 2.0 (as set by the Trusted Computing Group) is supported for use as a virtual smart card. For more information, see the [TPM Main Specification](http://www.trustedcomputinggroup.org/resources/tpm_main_specification). |
+| Supported virtual smart cards per computer | Ten smart cards can be connected to a computer or device at one time. This includes physical and virtual smart cards combined. <br><br>**Note**<br>You can create more than one virtual smart card; however, after creating more than four virtual smart cards, you may start to notice performance degradation. Because all smart cards appear as if they're always inserted, if more than one person shares a computer or device, each person can see all the virtual smart cards that are created on that computer or device. If the user knows the PIN values for all the virtual smart cards, the user will also be able to use them.<br> |
+| Supported number of certificates on a virtual smart card | A single TPM virtual smart card can contain 30 distinct certificates with the corresponding private keys. Users can continue to renew certificates on the card until the total number of certificates on a card exceeds 90. The reason that the total number of certificates is different from the total number of private keys is that sometimes the renewal can be done with the same private key—in which case a new private key isn't generated. |
+| PIN, PIN Unlock Key (PUK), and Administrative key requirements | The PIN and the PUK must be a minimum of eight characters that can include numerals, alphabetic characters, and special characters.<br>The Administrative key must be entered as 48 hexadecimal characters. It's a 3-key triple DES with ISO/IEC 9797 padding method 2 in CBC chaining mode. |
 
 ## Using Tpmvscmgr.exe
 

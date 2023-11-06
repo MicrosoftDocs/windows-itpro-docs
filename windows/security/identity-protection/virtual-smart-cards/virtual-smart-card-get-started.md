@@ -2,7 +2,7 @@
 title: Get Started with Virtual Smart Cards - Walkthrough Guide 
 description: This topic for the IT professional describes how to set up a basic test environment for using TPM virtual smart cards.
 ms.topic: conceptual
-ms.date: 02/22/2023
+ms.date: 11/06/2023
 ---
 
 # Get Started with Virtual Smart Cards: Walkthrough Guide
@@ -15,31 +15,27 @@ Virtual smart cards are a technology from Microsoft that offer comparable securi
 
 This step-by-step walkthrough shows you how to set up a basic test environment for using TPM virtual smart cards. After you complete this walkthrough, you will have a functional virtual smart card installed on the Windows computer.
 
-**Time requirements**
+### Time requirements
 
 You should be able to complete this walkthrough in less than one hour, excluding installing software and setting up the test domain.
 
-**Walkthrough steps**
+### Walkthrough steps
 
--   [Prerequisites](#prerequisites)
+- [Prerequisites](#prerequisites)
+- [Step 1: Create the certificate template](#step-1-create-the-certificate-template)
+- [Step 2: Create the TPM virtual smart card](#step-2-create-the-tpm-virtual-smart-card)
+- [Step 3: Enroll for the certificate on the TPM Virtual Smart Card](#step-3-enroll-for-the-certificate-on-the-tpm-virtual-smart-card)
 
--   [Step 1: Create the certificate template](#step-1-create-the-certificate-template)
-
--   [Step 2: Create the TPM virtual smart card](#step-2-create-the-tpm-virtual-smart-card)
-
--   [Step 3: Enroll for the certificate on the TPM Virtual Smart Card](#step-3-enroll-for-the-certificate-on-the-tpm-virtual-smart-card)
-
-> **Important**&nbsp;&nbsp;This basic configuration is for test purposes only. It is not intended for use in a production environment.
+> [!IMPORTANT]
+> This basic configuration is for test purposes only. It is not intended for use in a production environment.
 
 ## Prerequisites
 
 You will need:
 
--   A computer running Windows 10 with an installed and fully functional TPM (version 1.2 or version 2.0).
-
--   A test domain to which the computer listed above can be joined.
-
--   Access to a server in that domain with a fully installed and running certification authority (CA).
+- A computer running Windows 10 with an installed and fully functional TPM (version 1.2 or version 2.0)
+- A test domain to which the computer listed above can be joined
+- Access to a server in that domain with a fully installed and running certification authority (CA)
 
 ## Step 1: Create the certificate template
 
@@ -47,13 +43,12 @@ On your domain server, you need to create a template for the certificate that yo
 
 ### To create the certificate template
 
-1. On your server, open the Microsoft Management Console (MMC). One way to do this is to type **mmc.exe** from the **Start** menu, right-click **mmc.exe**, and click **Run as administrator**.
-
-2. Click **File**, and then click **Add/Remove Snap-in**.
+1. On your server, open the Microsoft Management Console (MMC). One way to do this is to type **mmc.exe** from the **Start** menu, right-click **mmc.exe**, and click **Run as administrator**
+2. Select **File** > **Add/Remove Snap-in**
 
    ![Add or remove snap-in.](images/vsc-02-mmc-add-snap-in.png)
 
-3. In the available snap-ins list, click **Certificate Templates**, and then click **Add**.
+3. In the available snap-ins list, click **Certificate Templates**, and then click **Add**
 
    ![Add Certificate Templates snap-in.](images/vsc-03-add-certificate-templates-snap-in.png)
 
@@ -70,19 +65,16 @@ On your domain server, you need to create a template for the certificate that yo
 7. On the **General** tab:
 
    1.  Specify a name, such as **TPM Virtual Smart Card Logon**.
-
    2.  Set the validity period to the desired value.
 
 8. On the **Request Handling** tab:
 
    1.  Set the **Purpose** to **Signature and smartcard logon**.
-
    2.  Click **Prompt the user during enrollment**.
 
 9. On the **Cryptography** tab:
 
    1.  Set the minimum key size to 2048.
-
    2.  Click **Requests must use one of the following providers**, and then select **Microsoft Base Smart Card Crypto Provider**.
 
 10. On the **Security** tab, add the security group that you want to give **Enroll** access to. For example, if you want to give access to all users, select the **Authenticated users** group, and then select **Enroll** permissions for them.
@@ -155,8 +147,6 @@ The virtual smart card can now be used as an alternative credential to sign in t
 
 ## See also
 
--   [Understanding and Evaluating Virtual Smart Cards](virtual-smart-card-understanding-and-evaluating.md)
-
--   [Use Virtual Smart Cards](virtual-smart-card-use-virtual-smart-cards.md)
-
--   [Deploy Virtual Smart Cards](virtual-smart-card-deploy-virtual-smart-cards.md)
+- [Understanding and Evaluating Virtual Smart Cards](virtual-smart-card-understanding-and-evaluating.md)
+- [Use Virtual Smart Cards](virtual-smart-card-use-virtual-smart-cards.md)
+- [Deploy Virtual Smart Cards](virtual-smart-card-deploy-virtual-smart-cards.md)
