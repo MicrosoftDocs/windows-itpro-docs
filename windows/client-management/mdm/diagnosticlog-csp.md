@@ -4,7 +4,7 @@ description: Learn more about the DiagnosticLog CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 08/10/2023
+ms.date: 11/06/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -182,7 +182,7 @@ This node is to trigger snapping of the Device Management state data with "SNAP"
 
 <!-- Device-DiagnosticArchive-Description-Begin -->
 <!-- Description-Source-DDF -->
-Root note for archive definition and collection.
+Root node for archive definition and collection.
 <!-- Device-DiagnosticArchive-Description-End -->
 
 <!-- Device-DiagnosticArchive-Editable-Begin -->

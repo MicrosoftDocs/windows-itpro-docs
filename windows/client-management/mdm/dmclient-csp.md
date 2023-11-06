@@ -4,7 +4,7 @@ description: Learn more about the DMClient CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 10/24/2023
+ms.date: 11/06/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -4576,7 +4576,7 @@ This node, when doing a get, tells the server if the "First Syncs" are done and 
 
 | Value | Description |
 |:--|:--|
-| false | The user isn't finished provisioning. |
+| false | The user hasn't finished provisioning. |
 | true | The user has finished provisioning. |
 <!-- User-Provider-{ProviderID}-FirstSyncStatus-IsSyncDone-AllowedValues-End -->
 
