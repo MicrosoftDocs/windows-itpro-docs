@@ -4,7 +4,7 @@ description: Learn more about the ApplicationDefaults Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 10/03/2023
+ms.date: 11/06/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -158,7 +158,7 @@ To create the SyncML, follow these steps:
 <!-- Description-Source-ADMX -->
 This policy setting determines whether Windows supports web-to-app linking with app URI handlers.
 
-Enabling this policy setting enables web-to-app linking so that apps can be launched with a http(s) URI.
+Enabling this policy setting enables web-to-app linking so that apps can be launched with an http(s) URI.
 
 Disabling this policy disables web-to-app linking and http(s) URIs will be opened in the default browser instead of launching the associated app.
 

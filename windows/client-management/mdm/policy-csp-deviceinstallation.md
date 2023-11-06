@@ -4,7 +4,7 @@ description: Learn more about the DeviceInstallation Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 08/10/2023
+ms.date: 11/06/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -365,26 +365,26 @@ Device instance IDs > Device IDs > Device setup class > Removable devices.
 Device instance IDs.
 
 1. Prevent installation of devices using drivers that match these device instance IDs
-2. Allow installation of devices using drivers that match these device instance IDs.
+1. Allow installation of devices using drivers that match these device instance IDs.
 
 Device IDs.
 
-3. Prevent installation of devices using drivers that match these device IDs
-4. Allow installation of devices using drivers that match these device IDs.
+1. Prevent installation of devices using drivers that match these device IDs
+1. Allow installation of devices using drivers that match these device IDs.
 
 Device setup class.
 
-5. Prevent installation of devices using drivers that match these device setup classes
-6. Allow installation of devices using drivers that match these device setup classes.
+1. Prevent installation of devices using drivers that match these device setup classes
+1. Allow installation of devices using drivers that match these device setup classes.
 
 Removable devices.
 
-7. Prevent installation of removable devices.
+1. Prevent installation of removable devices.
 
 > [!NOTE]
 > This policy setting provides more granular control than the "Prevent installation of devices not described by other policy settings" policy setting. If these conflicting policy settings are enabled at the same time, the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting will be enabled and the other policy setting will be ignored.
 
-If you disable or don't configure this policy setting, the default evaluation is used. By default, all "Prevent installation..". policy settings have precedence over any other policy setting that allows Windows to install a device.
+If you disable or don't configure this policy setting, the default evaluation is used. By default, all "Prevent installation.". policy settings have precedence over any other policy setting that allows Windows to install a device.
 <!-- EnableInstallationPolicyLayering-Description-End -->
 
 <!-- EnableInstallationPolicyLayering-Editable-Begin -->

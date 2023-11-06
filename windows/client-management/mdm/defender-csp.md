@@ -4,7 +4,7 @@ description: Learn more about the Defender CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 08/29/2023
+ms.date: 11/06/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -71,10 +71,12 @@ The following list shows the Defender configuration service provider nodes:
     - [HideExclusionsFromLocalUsers](#configurationhideexclusionsfromlocalusers)
     - [IntelTDTEnabled](#configurationinteltdtenabled)
     - [MeteredConnectionUpdates](#configurationmeteredconnectionupdates)
+    - [NetworkProtectionReputationMode](#configurationnetworkprotectionreputationmode)
     - [OobeEnableRtpAndSigUpdate](#configurationoobeenablertpandsigupdate)
     - [PassiveRemediation](#configurationpassiveremediation)
     - [PerformanceModeStatus](#configurationperformancemodestatus)
     - [PlatformUpdatesChannel](#configurationplatformupdateschannel)
+    - [QuickScanIncludeExclusions](#configurationquickscanincludeexclusions)
     - [RandomizeScheduleTaskTimes](#configurationrandomizescheduletasktimes)
     - [ScanOnlyIfIdleEnabled](#configurationscanonlyifidleenabled)
     - [SchedulerRandomizationTime](#configurationschedulerrandomizationtime)
@@ -348,7 +350,7 @@ Control whether network protection can improve performance by switching from rea
 | Value | Description |
 |:--|:--|
 | 1 | Allow switching to asynchronous inspection. |
-| 0 (Default) | Don’t allow asynchronous inspection. |
+| 0 (Default) | Don't allow asynchronous inspection. |
 <!-- Device-Configuration-AllowSwitchToAsyncInspection-AllowedValues-End -->
 
 <!-- Device-Configuration-AllowSwitchToAsyncInspection-Examples-Begin -->
@@ -464,7 +466,7 @@ Define the retention period in days of how much time the evidence data will be k
 
 | Property name | Property value |
 |:--|:--|
-| Format | `chr` (string) |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[1-120]` |
 | Default Value  | 60 |
@@ -953,8 +955,8 @@ Control Device Control feature.
 
 | Value | Description |
 |:--|:--|
-| 1 | . |
-| 0 (Default) | . |
+| 1 | Device Control is enabled. |
+| 0 (Default) | Device Control is disabled. |
 <!-- Device-Configuration-DeviceControlEnabled-AllowedValues-End -->
 
 <!-- Device-Configuration-DeviceControlEnabled-Examples-Begin -->
@@ -2186,6 +2188,46 @@ Allow managed devices to update through metered connections. Default is 0 - not 
 
 <!-- Device-Configuration-MeteredConnectionUpdates-End -->
 
+<!-- Device-Configuration-NetworkProtectionReputationMode-Begin -->
+### Configuration/NetworkProtectionReputationMode
+
+<!-- Device-Configuration-NetworkProtectionReputationMode-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- Device-Configuration-NetworkProtectionReputationMode-Applicability-End -->
+
+<!-- Device-Configuration-NetworkProtectionReputationMode-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Defender/Configuration/NetworkProtectionReputationMode
+```
+<!-- Device-Configuration-NetworkProtectionReputationMode-OmaUri-End -->
+
+<!-- Device-Configuration-NetworkProtectionReputationMode-Description-Begin -->
+<!-- Description-Source-DDF -->
+This sets the reputation mode for Network Protection.
+<!-- Device-Configuration-NetworkProtectionReputationMode-Description-End -->
+
+<!-- Device-Configuration-NetworkProtectionReputationMode-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Configuration-NetworkProtectionReputationMode-Editable-End -->
+
+<!-- Device-Configuration-NetworkProtectionReputationMode-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- Device-Configuration-NetworkProtectionReputationMode-DFProperties-End -->
+
+<!-- Device-Configuration-NetworkProtectionReputationMode-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Configuration-NetworkProtectionReputationMode-Examples-End -->
+
+<!-- Device-Configuration-NetworkProtectionReputationMode-End -->
+
 <!-- Device-Configuration-OobeEnableRtpAndSigUpdate-Begin -->
 ### Configuration/OobeEnableRtpAndSigUpdate
 
@@ -2325,8 +2367,8 @@ This setting allows IT admins to configure performance mode in either enabled or
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Performance mode is enabled (default). A service restart is required after changing this value. |
-| 1 | Performance mode is disabled. A service restart is required after changing this value. |
+| 0 (Default) | Performance mode is enabled (default). |
+| 1 | Performance mode is disabled. |
 <!-- Device-Configuration-PerformanceModeStatus-AllowedValues-End -->
 
 <!-- Device-Configuration-PerformanceModeStatus-Examples-Begin -->
@@ -2387,6 +2429,55 @@ Enable this policy to specify when devices receive Microsoft Defender platform u
 <!-- Device-Configuration-PlatformUpdatesChannel-Examples-End -->
 
 <!-- Device-Configuration-PlatformUpdatesChannel-End -->
+
+<!-- Device-Configuration-QuickScanIncludeExclusions-Begin -->
+### Configuration/QuickScanIncludeExclusions
+
+<!-- Device-Configuration-QuickScanIncludeExclusions-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- Device-Configuration-QuickScanIncludeExclusions-Applicability-End -->
+
+<!-- Device-Configuration-QuickScanIncludeExclusions-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Defender/Configuration/QuickScanIncludeExclusions
+```
+<!-- Device-Configuration-QuickScanIncludeExclusions-OmaUri-End -->
+
+<!-- Device-Configuration-QuickScanIncludeExclusions-Description-Begin -->
+<!-- Description-Source-DDF -->
+This setting allows you to scan excluded files and directories during quick scans.
+<!-- Device-Configuration-QuickScanIncludeExclusions-Description-End -->
+
+<!-- Device-Configuration-QuickScanIncludeExclusions-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Configuration-QuickScanIncludeExclusions-Editable-End -->
+
+<!-- Device-Configuration-QuickScanIncludeExclusions-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- Device-Configuration-QuickScanIncludeExclusions-DFProperties-End -->
+
+<!-- Device-Configuration-QuickScanIncludeExclusions-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | If you set this setting to 0 or don't configure it, exclusions aren't scanned during quick scans. |
+| 1 | If you set this setting to 1, all files and directories that are excluded from real-time protection using contextual exclusions are scanned during a quick scan. Exclusions that contain wildcards aren't supported and aren't scanned. |
+<!-- Device-Configuration-QuickScanIncludeExclusions-AllowedValues-End -->
+
+<!-- Device-Configuration-QuickScanIncludeExclusions-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Configuration-QuickScanIncludeExclusions-Examples-End -->
+
+<!-- Device-Configuration-QuickScanIncludeExclusions-End -->
 
 <!-- Device-Configuration-RandomizeScheduleTaskTimes-Begin -->
 ### Configuration/RandomizeScheduleTaskTimes

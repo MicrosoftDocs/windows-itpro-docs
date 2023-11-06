@@ -54,27 +54,27 @@ You can use the Windows Security settings to check if Kernel DMA Protection is e
 1. Open **Windows Security**.
 1. Select **Device security > Core isolation details > Memory access protection**
 
-:::image type="content" source="images/kernel-dma-protection-security-center.png" alt-text="Screenshot of Kernel DMA protection in Windows Security." lightbox="images/kernel-dma-protection-security-center.png" border="true":::
+   :::image type="content" source="images/kernel-dma-protection-security-center.png" alt-text="Screenshot of Kernel DMA protection in Windows Security." lightbox="images/kernel-dma-protection-security-center.png" border="true":::
 
-Alternatively, you can use the System Information desktop app (`msinfo32.exe`). If the system supports Kernel DMA Protection, the **Kernel DMA Protection** value will be set to **ON**.
+   Alternatively, you can use the System Information desktop app (`msinfo32.exe`). If the system supports Kernel DMA Protection, the **Kernel DMA Protection** value will be set to **ON**.
 
-:::image type="content" source="images/kernel-dma-protection.png" alt-text="Screenshot of Kernel DMA protection in System Information." lightbox="images/kernel-dma-protection.png" border="true":::
+   :::image type="content" source="images/kernel-dma-protection.png" alt-text="Screenshot of Kernel DMA protection in System Information." lightbox="images/kernel-dma-protection.png" border="true":::
 
-If the current state of **Kernel DMA Protection** is **OFF** and **Hyper-V - Virtualization Enabled in Firmware** is **NO**:
+   If the current state of **Kernel DMA Protection** is **OFF** and **Hyper-V - Virtualization Enabled in Firmware** is **NO**:
 
-- Reboot into UEFI settings
-- Turn on Intel Virtualization Technology
-- Turn on Intel Virtualization Technology for I/O (VT-d)
-- Reboot system into Windows
+   - Reboot into UEFI settings
+   - Turn on Intel Virtualization Technology
+   - Turn on Intel Virtualization Technology for I/O (VT-d)
+   - Reboot system into Windows
 
-> [!NOTE]
-> If the **Hyper-V** Windows feature is enabled, all the Hyper-V-related features will be hidden, and **A hypervisor has been detected. Features required for Hyper-V will not be displayed** entity will be shown at the bottom of the list. It means that **Hyper-V - Virtualization Enabled in Firmware** is set to **YES**.
->
-> Enabling Hyper-V virtualization in Firmware (IOMMU) is required to enable **Kernel DMA Protection**, even when the firmware has the flag of *ACPI Kernel DMA Protection Indicators* described in [Kernel DMA Protection (Memory Access Protection) for OEMs][LINK-3].
+   > [!NOTE]
+   > If the **Hyper-V** Windows feature is enabled, all the Hyper-V-related features will be hidden, and **A hypervisor has been detected. Features required for Hyper-V will not be displayed** entity will be shown at the bottom of the list. It means that **Hyper-V - Virtualization Enabled in Firmware** is set to **YES**.
+   >
+   > Enabling Hyper-V virtualization in Firmware (IOMMU) is required to enable **Kernel DMA Protection**, even when the firmware has the flag of *ACPI Kernel DMA Protection Indicators* described in [Kernel DMA Protection (Memory Access Protection) for OEMs][LINK-3].
 
-If the state of **Kernel DMA Protection** remains Off, then the system doesn't support Kernel DMA Protection.
+   If the state of **Kernel DMA Protection** remains Off, then the system doesn't support Kernel DMA Protection.
 
-For systems that don't support Kernel DMA Protection, refer to the [BitLocker countermeasures](../operating-system-security/data-protection/bitlocker/bitlocker-countermeasures.md) or [Thunderbolt 3 and Security on Microsoft Windows Operating system][EXT-1] for other means of DMA protection.
+For systems that don't support Kernel DMA Protection, refer to the [BitLocker countermeasures](../operating-system-security/data-protection/bitlocker/countermeasures.md) or [Thunderbolt 3 and Security on Microsoft Windows Operating system][EXT-1] for other means of DMA protection.
 
 ## Frequently asked questions
 
