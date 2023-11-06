@@ -28,7 +28,7 @@ For a complete description of Certutil including examples that show how to use i
 
 ### List certificates available on the smart card
 
-To list certificates that are available on the smart card, type `certutil -scinfo`.
+To list certificates that are available on the smart card, type `certutil.exe -scinfo`.
 
 > [!NOTE]
 > Entering a PIN is not required for this operation. You can press ESC if you are prompted for a PIN.
@@ -37,9 +37,9 @@ To list certificates that are available on the smart card, type `certutil -scinf
 
 Each certificate is enclosed in a container. When you delete a certificate on the smart card, you're deleting the container for the certificate.
 
-To find the container value, type `certutil -scinfo`.
+To find the container value, type `certutil.exe -scinfo`.
 
-To delete a container, type `certutil -delkey -csp "Microsoft Base Smart Card Crypto Provider" "<ContainerValue>"`.
+To delete a container, type `certutil.exe -delkey -csp "Microsoft Base Smart Card Crypto Provider" "<ContainerValue>"`.
 
 ## Debugging and tracing using WPP
 
@@ -50,37 +50,37 @@ WPP simplifies tracing the operation of the trace provider. It provides a mechan
 Using WPP, use one of the following commands to enable tracing:
 
 ```cmd
-tracelog.exe -kd -rt -start <FriendlyName> -guid \<GUID> -f .\\<LogFileName*>.etl -flags <flags> -ft 1
-logman start <FriendlyName> -ets -p {<GUID>} -<Flags> -ft 1 -rt -o .\\<LogFileName><em>.etl -mode 0x00080000</em>
+tracelog.exe -kd -rt -start <FriendlyName> -guid \<GUID> -f .\<LogFileName*>.etl -flags <flags> -ft 1
+logman start <FriendlyName> -ets -p {<GUID>} -<Flags> -ft 1 -rt -o .\<LogFileName><em>.etl -mode 0x00080000</em>
 ```
 
 You can use the parameters in the following table.
 
-| Friendly name | GUID           | Flags |
-|-------------------|--------------------------------------|-----------|
-| `scardsvr`          | 13038e47-ffec-425d-bc69-5707708075fe | 0xffff    |
-| `winscard`          | 3fce7c5f-fb3b-4bce-a9d8-55cc0ce1cf01 | 0xffff    |
-| `basecsp`           | 133a980d-035d-4e2d-b250-94577ad8fced | 0x7       |
-| `scksp`             | 133a980d-035d-4e2d-b250-94577ad8fced | 0x7       |
-| `msclmd`            | fb36caf4-582b-4604-8841-9263574c4f2c | 0x7       |
-| `credprov`          | dba0e0e0-505a-4ab6-aa3f-22f6f743b480 | 0xffff    |
-| `certprop`          | 30eae751-411f-414c-988b-a8bfa8913f49 | 0xffff    |
-| `scfilter`          | eed7f3c9-62ba-400e-a001-658869df9a91 | 0xffff    |
-| `wudfusbccid`       | a3c09ba3-2f62-4be5-a50f-8278a646ac9d | 0xffff    |
+| Friendly name | GUID | Flags |
+|--|--|--|
+| `scardsvr` | 13038e47-ffec-425d-bc69-5707708075fe | 0xffff |
+| `winscard` | 3fce7c5f-fb3b-4bce-a9d8-55cc0ce1cf01 | 0xffff |
+| `basecsp` | 133a980d-035d-4e2d-b250-94577ad8fced | 0x7 |
+| `scksp` | 133a980d-035d-4e2d-b250-94577ad8fced | 0x7 |
+| `msclmd` | fb36caf4-582b-4604-8841-9263574c4f2c | 0x7 |
+| `credprov` | dba0e0e0-505a-4ab6-aa3f-22f6f743b480 | 0xffff |
+| `certprop` | 30eae751-411f-414c-988b-a8bfa8913f49 | 0xffff |
+| `scfilter` | eed7f3c9-62ba-400e-a001-658869df9a91 | 0xffff |
+| `wudfusbccid` | a3c09ba3-2f62-4be5-a50f-8278a646ac9d | 0xffff |
 
 ### Examples
 
 To enable tracing for the SCardSvr service:
 
 ```cmd
-tracelog.exe -kd -rt -start scardsvr -guid \#13038e47-ffec-425d-bc69-5707708075fe -f .\\scardsvr.etl -flags 0xffff -ft 1
-logman start scardsvr -ets -p {13038e47-ffec-425d-bc69-5707708075fe} 0xffff -ft 1 -rt -o .\\scardsvr.etl -mode 0x00080000
+tracelog.exe -kd -rt -start scardsvr -guid \#13038e47-ffec-425d-bc69-5707708075fe -f .\scardsvr.etl -flags 0xffff -ft 1
+logman start scardsvr -ets -p {13038e47-ffec-425d-bc69-5707708075fe} 0xffff -ft 1 -rt -o .\scardsvr.etl -mode 0x00080000
 ```
 
 To enable tracing for `scfilter.sys`:
 
 ```cmd
-tracelog.exe -kd -rt -start scfilter -guid \#eed7f3c9-62ba-400e-a001-658869df9a91 -f .\\scfilter.etl -flags 0xffff -ft 1
+tracelog.exe -kd -rt -start scfilter -guid \#eed7f3c9-62ba-400e-a001-658869df9a91 -f .\scfilter.etl -flags 0xffff -ft 1
 ```
 
 ### Stop the trace
@@ -115,7 +115,7 @@ To begin tracing, you can use `Tracelog`. Different components use different con
 To enable tracing for NTLM authentication, run the following command on the command line:
 
 ```cmd
-tracelog.exe -kd -rt -start ntlm -guid \#5BBB6C18-AA45-49b1-A15F-085F7ED0AA90 -f .\\ntlm.etl -flags 0x15003 -ft 1
+tracelog.exe -kd -rt -start ntlm -guid \#5BBB6C18-AA45-49b1-A15F-085F7ED0AA90 -f .\ntlm.etl -flags 0x15003 -ft 1
 ```
 
 To stop tracing for NTLM authentication, run this command:
@@ -129,7 +129,7 @@ tracelog -stop ntlm
 To enable tracing for Kerberos authentication, run this command:
 
 ```cmd
-tracelog.exe -kd -rt -start kerb -guid \#6B510852-3583-4e2d-AFFE-A67F9F223438 -f .\\kerb.etl -flags 0x43 -ft 1
+tracelog.exe -kd -rt -start kerb -guid \#6B510852-3583-4e2d-AFFE-A67F9F223438 -f .\kerb.etl -flags 0x43 -ft 1
 ```
 
 To stop tracing for Kerberos authentication, run this command:
@@ -143,7 +143,7 @@ tracelog.exe -stop kerb
 To enable tracing for the KDC, run the following command on the command line:
 
 ```cmd
-tracelog.exe -kd -rt -start kdc -guid \#1BBA8B19-7F31-43c0-9643-6E911F79A06B -f .\\kdc.etl -flags 0x803 -ft 1
+tracelog.exe -kd -rt -start kdc -guid \#1BBA8B19-7F31-43c0-9643-6E911F79A06B -f .\kdc.etl -flags 0x803 -ft 1
 ```
 
 To stop tracing for the KDC, run the following command on the command line:
@@ -152,30 +152,34 @@ To stop tracing for the KDC, run the following command on the command line:
 tracelog.exe -stop kdc
 ```
 
-To stop tracing from a remote computer, run this command: logman.exe -s *<ComputerName>*.
+To stop tracing from a remote computer, run this command:
+
+```cmd
+logman.exe -s <ComputerName>
+```
 
 > [!NOTE]
-> The default location for logman.exe is %systemroot%system32\\. Use the **-s** option to supply a computer name.
+> The default location for logman.exe is %systemroot%system32\. Use the **-s** option to supply a computer name.
 
 ### Configure tracing with the registry
 
 You can also configure tracing by editing the Kerberos registry values shown in the following table.
 
-| Element | Registry Key Setting       |
-|-------------|----------------------------------------------------|
-| NTLM        | HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Lsa\\MSV1\_0<br>Value name: NtLmInfoLevel<br>Value type: DWORD<br>Value data: c0015003          |
-| Kerberos    | HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Lsa\\Kerberos<br>Value name: LogToFile<br>Value type: DWORD<br>Value data: 00000001<br><br>HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Lsa\\Kerberos\\Parameters<br>Value name: KerbDebugLevel<br>Value type: DWORD<br>Value data: c0000043<br><br>HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Lsa\\Kerberos\\Parameters<br>Value name: LogToFile<br>Value type: DWORD<br>Value data: 00000001 |
-| KDC         | HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\Kdc<br>Value name: KdcDebugLevel<br>Value type: DWORD<br>Value data: c0000803                  |
+| Element | Registry Key Setting |
+|--|--|
+| NTLM | HKEY_LOCAL_MACHINESYSTEM\CurrentControlSet\Control\Lsa\MSV1_0<br>Value name: NtLmInfoLevel<br>Value type: DWORD<br>Value data: c0015003 |
+| Kerberos | HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\Kerberos<br>Value name: LogToFile<br>Value type: DWORD<br>Value data: 00000001<br><br>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\Kerberos\Parameters<br>Value name: KerbDebugLevel<br>Value type: DWORD<br>Value data: c0000043<br><br>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\Kerberos\Parameters<br>Value name: LogToFile<br>Value type: DWORD<br>Value data: 00000001 |
+| KDC | HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Kdc<br>Value name: KdcDebugLevel<br>Value type: DWORD<br>Value data: c0000803 |
 
 If you used `Tracelog`, look for the following log file in your current directory: `kerb.etl/kdc.etl/ntlm.etl`.
 
 If you used the registry key settings shown in the previous table, look for the trace log files in the following locations:
 
-- NTLM: %systemroot%\\tracing\\msv1\_0
-- Kerberos: %systemroot%\\tracing\\kerberos
-- KDC: %systemroot%\\tracing\\kdcsvc
+- NTLM: `%systemroot%\tracing\msv1_0`
+- Kerberos: `%systemroot%\tracing\kerberos`
+- KDC: `%systemroot%\tracing\kdcsvc`
 
-To decode event trace files, you can use `Tracefmt` (tracefmt.exe). `Tracefmt` is a command-line tool that formats and displays trace messages from an event trace log file (.etl) or a real-time trace session. `Tracefmt` can display the messages in the Command Prompt window or save them in a text file. It is located in the \\tools\\tracing subdirectory of the Windows Driver Kit (WDK). For more information, see [`Tracefmt`](/windows-hardware/drivers/devtest/tracefmt).
+To decode event trace files, you can use `Tracefmt` (tracefmt.exe). `Tracefmt` is a command-line tool that formats and displays trace messages from an event trace log file (.etl) or a real-time trace session. `Tracefmt` can display the messages in the Command Prompt window or save them in a text file. It is located in the \tools\tracing subdirectory of the Windows Driver Kit (WDK). For more information, see [`Tracefmt`](/windows-hardware/drivers/devtest/tracefmt).
 
 ## Smart Card service
 
