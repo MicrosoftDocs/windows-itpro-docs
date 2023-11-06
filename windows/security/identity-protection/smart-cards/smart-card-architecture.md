@@ -140,8 +140,8 @@ Similarly, in response to a NCryptOpenKey call in CNG, the smart card KSP tries 
 
 | **Type** | **Name** | **Format** |
 |----------|----------|------------|
-| I | Reader Name and Container Name | `\.\<Reader Name>\<Container Name>` |
-| II | Reader Name and Container Name (NULL) | `\.\<Reader Name>` |
+| I | Reader Name and Container Name | `\.<Reader Name><Container Name>` |
+| II | Reader Name and Container Name (NULL) | `\.<Reader Name>` |
 | III | Container Name Only | `<Container Name>` |
 | IV | Default Container (NULL) Only | NULL |
 

@@ -50,8 +50,8 @@ WPP simplifies tracing the operation of the trace provider. It provides a mechan
 Using WPP, use one of the following commands to enable tracing:
 
 ```cmd
-tracelog.exe -kd -rt -start <FriendlyName> -guid \<GUID> -f .\<LogFileName*>.etl -flags <flags> -ft 1
-logman start <FriendlyName> -ets -p {<GUID>} -<Flags> -ft 1 -rt -o .\<LogFileName><em>.etl -mode 0x00080000</em>
+tracelog.exe -kd -rt -start <FriendlyName> -guid <GUID> -f .<LogFileName*>.etl -flags <flags> -ft 1
+logman.exe start <FriendlyName> -ets -p {<GUID>} -<Flags> -ft 1 -rt -o .<LogFileName><em>.etl -mode 0x00080000</em>
 ```
 
 You can use the parameters in the following table.
@@ -74,7 +74,7 @@ To enable tracing for the SCardSvr service:
 
 ```cmd
 tracelog.exe -kd -rt -start scardsvr -guid \#13038e47-ffec-425d-bc69-5707708075fe -f .\scardsvr.etl -flags 0xffff -ft 1
-logman start scardsvr -ets -p {13038e47-ffec-425d-bc69-5707708075fe} 0xffff -ft 1 -rt -o .\scardsvr.etl -mode 0x00080000
+logman.exe start scardsvr -ets -p {13038e47-ffec-425d-bc69-5707708075fe} 0xffff -ft 1 -rt -o .\scardsvr.etl -mode 0x00080000
 ```
 
 To enable tracing for `scfilter.sys`:
@@ -89,7 +89,7 @@ Using WPP, use one of the following commands to stop the tracing:
 
 ```cmd
 tracelog.exe -stop <*FriendlyName*>
-logman -stop <*FriendlyName*> -ets
+logman.exe -stop <*FriendlyName*> -ets
 ```
 
 #### Examples
@@ -98,7 +98,7 @@ To stop a trace:
 
 ```cmd
 tracelog.exe -stop scardsvr
-logman -stop scardsvr -ets
+logman.exe -stop scardsvr -ets
 ```
 
 ## Kerberos protocol, KDC, and NTLM debugging and tracing
