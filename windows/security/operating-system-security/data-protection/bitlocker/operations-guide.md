@@ -22,13 +22,13 @@ This article describes the BitLocker management tools and how to use them, provi
 
 ## BitLocker PowerShell module
 
-The BitLocker PowerShell module enables administrators to integrate BitLocker options into existing scripts with ease. For a list of cmdlets included in module, their description and syntax, check the [BitLocker PowerShell reference article](/powershell/module/bitlocker).
+The BitLocker PowerShell module enables administrators to integrate BitLocker options into existing scripts with ease. For a list of cmdlets included in module, their description and syntax, check the [BitLocker PowerShell reference article][PS-1].
 
 ## BitLocker drive encryption tools
 
 The BitLocker drive encryption tools include the two command-line tools:
 
-- *Configuration Tool* (`manage-bde.exe`) can be used for scripting BitLocker operations, offering options that aren't present in the BitLocker Control Panel applet. For a complete list of the `manage-bde.exe` options, see the [Manage-bde reference](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/ff829849(v=ws.11))
+- *Configuration Tool* (`manage-bde.exe`) can be used for scripting BitLocker operations, offering options that aren't present in the BitLocker Control Panel applet. For a complete list of the `manage-bde.exe` options, see the [Manage-bde reference][PREV-1]
 - *Repair Tool* (`repair-bde.exe`) is useful for disaster recovery scenarios, in which a BitLocker protected drive can't be unlocked normally or using the recovery console
 
 ## BitLocker Control Panel applet
@@ -611,3 +611,8 @@ BitLocker decryption using the Control Panel is done using a wizard. After openi
 Once decryption is complete, the drive updates its status in the Control Panel and becomes available for encryption.
 
 ---
+
+<!--links-->
+
+[PREV-1]: /previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/ff829849(v=ws.11)
+[PS-1]: /powershell/module/bitlocker

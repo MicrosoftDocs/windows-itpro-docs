@@ -13,7 +13,7 @@ Windows uses hardware solutions and security features that protect BitLocker enc
 
 Before Windows starts, security features implemented as part of the device hardware and firmware must be relied on, including TPM and secure boot:
 
-- a *TPM* is a chip designed to provide basic security-related functions, primarily involving encryption keys. BitLocker binds encryption keys with the TPM to ensure that the device hasn't been tampered with while the system is offline. For more information about TPM, see [Trusted Platform Module](/windows/device-security/tpm/trusted-platform-module-overview)
+- a *TPM* is a chip designed to provide basic security-related functions, primarily involving encryption keys. BitLocker binds encryption keys with the TPM to ensure that the device hasn't been tampered with while the system is offline. For more information about TPM, see [Trusted Platform Module][WIN-1]
 - *Unified Extensible Firmware Interface (UEFI)* is a programmable boot environment that initializes devices and starts the operating system's bootloader. The UEFI specification defines a firmware execution authentication process called [Secure Boot](../../system-security/secure-the-windows-10-boot-process.md)
 - *Secure Boot* blocks untrusted firmware and bootloaders (signed or unsigned) from being able to start on the system. By default, BitLocker provides integrity protection for Secure Boot by utilizing the TPM PCR[7] measurement. An unauthorized EFI firmware, EFI boot application, or bootloader can't run and acquire the BitLocker key
 
@@ -37,7 +37,7 @@ On devices with a compatible TPM, operating system drives that are BitLocker-pro
 
 - **TPM-only**: this option doesn't require any interaction with the user to unlock and provide access to the drive. If the TPM validation succeeds, the user sign-in experience is the same as a standard sign-in. If the TPM is missing or changed, or if BitLocker detects changes to the BIOS or UEFI configuration, critical operating system startup files, or the boot configuration, BitLocker enters recovery mode. The user must then enter a recovery password to regain access to the data. This option is more convenient for sign-in but less secure than the other options, which require an additional authentication factor
 - **TPM with startup key**: in addition to the protection that the TPM-only provides, part of the encryption key is stored on a USB flash drive, referred to as a *startup key*. Data on the encrypted volume can't be accessed without the startup key
-- **TPM with PIN**: in addition to the protection that the TPM provides, BitLocker requires that the user enters a PIN. Data on the encrypted volume can't be accessed without entering the PIN. TPMs also have [anti-hammering protection](/windows/security/hardware-protection/tpm/tpm-fundamentals#anti-hammering) that is designed to prevent brute force attacks that attempt to determine the PIN
+- **TPM with PIN**: in addition to the protection that the TPM provides, BitLocker requires that the user enters a PIN. Data on the encrypted volume can't be accessed without entering the PIN. TPMs also have [anti-hammering protection][WIN-2] that is designed to prevent brute force attacks that attempt to determine the PIN
 - **TPM with startup key and PIN**: in addition to the protection that the TPM provides, part of the encryption key is stored on a USB flash drive, and a PIN is required to authenticate the user to the TPM. This configuration provides multifactor authentication so that if the USB key is lost or stolen, it can't be used for access to the drive, because the PIN is also required
 
 Preboot authentication with a PIN can mitigate an attack vector for devices that use a bootable eDrive because an exposed eDrive bus can allow an attacker to capture the BitLocker encryption key during startup. Preboot authentication with a PIN can also mitigate DMA port attacks during the window of time between when BitLocker unlocks the drive and Windows boots to the point that Windows can set any port-related policies that have been configured.
@@ -63,7 +63,7 @@ A physically present attacker might attempt to install a bootkit or rootkit-like
 > [!NOTE]
 > BitLocker protects against this attack by default.
 
-A BIOS password is recommended for defense-in-depth in case a BIOS exposes settings that might weaken the BitLocker security promise. Intel Boot Guard and AMD Hardware Verified Boot support stronger implementations of Secure Boot that provide additional resilience against malware and physical attacks. Intel Boot Guard and AMD Hardware Verified Boot are part of platform boot verification [standards for a highly secure Windows device](/windows-hardware/design/device-experiences/oem-highly-secure).
+A BIOS password is recommended for defense-in-depth in case a BIOS exposes settings that might weaken the BitLocker security promise. Intel Boot Guard and AMD Hardware Verified Boot support stronger implementations of Secure Boot that provide additional resilience against malware and physical attacks. Intel Boot Guard and AMD Hardware Verified Boot are part of platform boot verification [standards for a highly secure Windows device][WIN-3].
 
 ### Brute force attacks against a PIN
 
@@ -144,3 +144,9 @@ For secure administrative workstations, it's recommended to:
 > Learn how to plan for a BitLocker deployment in your organization:
 >
 > [BitLocker planning guide >](planning-guide.md)
+
+<!--links-->
+
+[WIN-1]: /windows/device-security/tpm/trusted-platform-module-overview
+[WIN-2]: /windows/security/hardware-protection/tpm/tpm-fundamentals#anti-hammering
+[WIN-3]: /windows-hardware/design/device-experiences/oem-highly-secure

@@ -103,7 +103,7 @@ For a TPM to be usable by BitLocker, it must contain an endorsement key, which i
 
 An endorsement key can be created at various points in the TPM's lifecycle, but needs to be created only once for the lifetime of the TPM. If an endorsement key doesn't exist for the TPM, it must be created before you can take TPM ownership.
 
-For more information about the TPM and the TCG, see the Trusted Computing Group: Trusted Platform Module (TPM) Specifications (<https://go.microsoft.com/fwlink/p/?linkid=69584>).
+For more information about the TPM and the TCG, see the Trusted Computing Group: [Trusted Platform Module (TPM) Specifications][FWD-1].
 
 ## Non-TPM hardware configurations
 
@@ -193,7 +193,7 @@ Organizations should carefully plan a BitLocker recovery strategy as part of the
 
 ## Monitor BitLocker
 
-Organizations can use Microsoft Intune or Configuration Manager to monitor device encryption across multiple devices. For more information, see [Monitor device encryption with Intune](/mem/intune/protect/encryption-monitor) and [View BitLocker reports in Configuration Manager](/mem/configmgr/protect/deploy-use/bitlocker/view-reports).
+Organizations can use Microsoft Intune or Configuration Manager to monitor device encryption across multiple devices. For more information, see [Monitor device encryption with Intune][INT-1] and [View BitLocker reports in Configuration Manager][MCM-1].
 
 ## Next steps
 
@@ -208,3 +208,9 @@ Organizations can use Microsoft Intune or Configuration Manager to monitor devic
 >
 >
 > [Configure BitLocker >](configure.md)
+
+<!--links-->
+
+[FWD-1]: https://go.microsoft.com/fwlink/p/?linkid=69584
+[INT-1]: /mem/intune/protect/encryption-monitor
+[MCM-1]: /mem/configmgr/protect/deploy-use/bitlocker/view-reports

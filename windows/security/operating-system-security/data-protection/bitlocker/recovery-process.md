@@ -34,7 +34,7 @@ A recovery key can't be stored in any of the following locations:
 If BitLocker recovery keys are stored in Microsoft Entra ID, users can access them using the following URL: https://myaccount.microsoft.com. From the **Devices** tab, users can select a Windows device that they own, and select the option **View BitLocker Keys**.
 
 > [!NOTE]
-> By default, users can retrieve their BitLocker reecovery keys from Microsoft Entra ID. This behavior can be modified with the option **Restrict users from recovering the BitLocker key(s) for their owned devices**. For more information, see [Restrict member users' default permissions](/entra/fundamentals/users-default-permissions#restrict-member-users-default-permissions).
+> By default, users can retrieve their BitLocker reecovery keys from Microsoft Entra ID. This behavior can be modified with the option **Restrict users from recovering the BitLocker key(s) for their owned devices**. For more information, see [Restrict member users' default permissions][ENTRA-1].
 
 ### Self-recovery with USB flash drive
 
@@ -65,11 +65,11 @@ The following list can be used as a template for creating a recovery process for
 
 ### Helpdesk recovery in Microsoft Entra ID
 
-There are a few Microsoft Entra ID roles that allow a delegated administrator to read BitLocker recovery passwords from the devices in the tenant. While it's common for organizations to use the existing Microsoft Entra ID *[Cloud Device Administrator](/entra/identity/role-based-access-control/permissions-reference#cloud-device-administrator)* or *[Helpdesk Administrator](/entra/identity/role-based-access-control/permissions-reference#helpdesk-administrator)* built-in roles, you can also [create a custom role](/entra/identity/role-based-access-control/custom-create), delegating access to BitLocker keys using the `microsoft.directory/bitlockerKeys/key/read` permission. Roles can be delegated to access BitLocker recovery passwords for devices in specific Administrative Units.
+There are a few Microsoft Entra ID roles that allow a delegated administrator to read BitLocker recovery passwords from the devices in the tenant. While it's common for organizations to use the existing Microsoft Entra ID *[Cloud Device Administrator][ENTRA-2]* or *[Helpdesk Administrator][ENTRA-3]* built-in roles, you can also [create a custom role][ENTRA-5], delegating access to BitLocker keys using the `microsoft.directory/bitlockerKeys/key/read` permission. Roles can be delegated to access BitLocker recovery passwords for devices in specific Administrative Units.
 
-The [Microsoft Entra admin center](https://entra.microsoft.com) allows administrators to retrieve BitLocker recovery passwords. To learn more about the process, see [View or copy BitLocker keys](/entra/identity/devices/manage-device-identities#view-or-copy-bitlocker-keys). Another option to access BitLocker recovery passwords is to use the Microsoft Graph API, which might be useful for integrated or scripted solutions. For more information about this option, see [Get bitlockerRecoveryKey](/graph/api/bitlockerrecoverykey-get).
+The [Microsoft Entra admin center][ENTRA] allows administrators to retrieve BitLocker recovery passwords. To learn more about the process, see [View or copy BitLocker keys][ENTRA-4]. Another option to access BitLocker recovery passwords is to use the Microsoft Graph API, which might be useful for integrated or scripted solutions. For more information about this option, see [Get bitlockerRecoveryKey][GRAPH-1].
 
-In the following example, we use Microsoft Graph PowerShell cmdlet [`Get-MgInformationProtectionBitlockerRecoveryKey`](powershell/module/microsoft.graph.identity.signins/get-mginformationprotectionbitlockerrecoverykey) to build a PowerShell function that retrieves recovery passwords from Microsoft Entra ID:
+In the following example, we use Microsoft Graph PowerShell cmdlet [`Get-MgInformationProtectionBitlockerRecoveryKey`][PS-1] to build a PowerShell function that retrieves recovery passwords from Microsoft Entra ID:
 
 ``` PowerShell
 function Get-EntraBitLockerKeys{
@@ -113,11 +113,11 @@ Device name: DESKTOP-53O32QI
 ```
 
 > [!NOTE]
-> For devices that are managed by Microsoft Intune, BitLocker recovery passwords can be retrieved from the device properties in the Microsoft Intune admin center. For more information, see [View details for recovery keys](/mem/intune/protect/encrypt-devices#view-details-for-recovery-keys).
+> For devices that are managed by Microsoft Intune, BitLocker recovery passwords can be retrieved from the device properties in the Microsoft Intune admin center. For more information, see [View details for recovery keys][INT-1].
 
 ### Helpdesk recovery in Active Directory Domain Services
 
-To export a recovery password from AD DS, you must have *read access* to objects stored in AD DS. By default, only *Domain Administrators* have access to BitLocker recovery information, but [access can be delegated](/archive/blogs/craigf/delegating-access-in-ad-to-bitlocker-recovery-information) to specific security principals.
+To export a recovery password from AD DS, you must have *read access* to objects stored in AD DS. By default, only *Domain Administrators* have access to BitLocker recovery information, but [access can be delegated][ARC-1] to specific security principals.
 
 To facilitate the retrieval of BitLocker recovery passwords from AD DS, you can use the *BitLocker Recovery Password Viewer* tool. The tool is included with the *Remote Server Administration Tools (RSAT)*, and it's an extension for the *Active Directory Users and Computers Microsoft Management Console (MMC)* snap-in.
 
@@ -258,8 +258,8 @@ Another option is to initiate the rotation of recovery passwords for individual 
 
 To learn more how to rotate BitLocker recovery passwords using Microsoft Intune or Microsoft Configuration Manager, see:
 
-- [Microsoft Intune documentation](/mem/intune/protect/encrypt-devices#rotate-bitlocker-recovery-keys)
-- [Microsoft Configuration Manager documentation](/mem/configmgr/protect/deploy-use/bitlocker/recovery-service#rotate-keys)
+- [Microsoft Intune documentation][INT-1]
+- [Microsoft Configuration Manager documentation][MCM-1]
 
 ## BitLocker Repair tool
 
@@ -281,7 +281,22 @@ The following limitations exist for Repair-bde:
 - it can't repair a drive that failed *during* the encryption or decryption process
 - it assumes that if the drive has any encryption, then the drive is fully encrypted
 
-For a complete list of the `repair-bde.exe` options, see the [Repair-bde reference](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/ff829851(v=ws.11)).
+For a complete list of the `repair-bde.exe` options, see the [Repair-bde reference][PREV-1].
 
 > [!NOTE]
-> To export a key package from AD DS, you must have *read* access to the BitLocker recovery passwords and key packages that are stored in AD DS. By default, only Domain Admins have access to BitLocker recovery information, but [access can be delegated to others](/archive/blogs/craigf/delegating-access-in-ad-to-bitlocker-recovery-information).
+> To export a key package from AD DS, you must have *read* access to the BitLocker recovery passwords and key packages that are stored in AD DS. By default, only Domain Admins have access to BitLocker recovery information, but [access can be delegated to others][ARC-1].
+
+<!--links-->
+
+[ARC-1]: /archive/blogs/craigf/delegating-access-in-ad-to-bitlocker-recovery-information
+[ENTRA-1]: /entra/fundamentals/users-default-permissions#restrict-member-users-default-permissions
+[ENTRA-2]: /entra/identity/role-based-access-control/permissions-reference#cloud-device-administrator
+[ENTRA-3]: /entra/identity/role-based-access-control/permissions-reference#helpdesk-administrator
+[ENTRA-4]: /entra/identity/devices/manage-device-identities#view-or-copy-bitlocker-keys
+[ENTRA-5]: /entra/identity/role-based-access-control/custom-create
+[ENTRA]: https://entra.microsoft.com
+[GRAPH-1]: /graph/api/bitlockerrecoverykey-get
+[INT-1]: /mem/intune/protect/encrypt-devices#view-details-for-recovery-keys
+[MCM-1]: /mem/configmgr/protect/deploy-use/bitlocker/recovery-service#rotate-keys
+[PREV-1]: /previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/ff829851(v=ws.11)
+[PS-1]: /powershell/module/microsoft.graph.identity.signins/get-mginformationprotectionbitlockerrecoverykey

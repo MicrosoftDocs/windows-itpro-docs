@@ -63,7 +63,7 @@ BitLocker has the following requirements:
     > [!NOTE]
     > TPM 2.0 is not supported in *Legacy* and *Compatibility Support Module (CSM)* modes of the BIOS. Devices with TPM 2.0 must have their BIOS mode configured as native UEFI only. The Legacy and CSM options must be disabled. For added security, enable the *secure boot* feature.
     >
-    > Installed operating system on hardware in Legacy mode stops the OS from booting when the BIOS mode is changed to UEFI. Use the tool [`mbr2gpt.exe`](/windows/deployment/mbr-to-gpt) before changing the BIOS mode, which prepares the OS and the disk to support UEFI.
+    > Installed operating system on hardware in Legacy mode stops the OS from booting when the BIOS mode is changed to UEFI. Use the tool [`mbr2gpt.exe`][WIN-1] before changing the BIOS mode, which prepares the OS and the disk to support UEFI.
 
 - The hard disk must be partitioned with at least two drives:
   - The *operating system drive* (or boot drive) contains the OS and its support files. It must be formatted with the NTFS file system
@@ -76,7 +76,7 @@ BitLocker has the following requirements:
     > [!IMPORTANT]
     > When installed on a new device, Windows automatically creates the partitions that are required for BitLocker.
     >
-    > If the drive was prepared as a single contiguous space, BitLocker requires a new volume to hold the boot files. `BdeHdCfg.exe` can create the volume. For more information about using the tool, see [Bdehdcfg](/windows-server/administration/windows-commands/bdehdcfg) in the Command-Line Reference.
+    > If the drive was prepared as a single contiguous space, BitLocker requires a new volume to hold the boot files. `BdeHdCfg.exe` can create the volume. For more information about using the tool, see [Bdehdcfg][WIN-2] in the Command-Line Reference.
 
 > [!NOTE]
 > When installing the BitLocker optional component on a server, the *Enhanced Storage* feature must be installed. The feature is used to support hardware encrypted drives.
@@ -88,7 +88,7 @@ BitLocker has the following requirements:
 
 ## Device encryption
 
-*Device encryption* is a Windows feature that provides a simple way for some devices to enable BitLocker encryption automatically. Device encryption is available on all Windows versions, and it requires a device to meet either [Modern Standby](/windows-hardware/design/device-experiences/modern-standby) or HSTI security requirements. Device encryption can't have externally accessible ports that allow DMA access.
+*Device encryption* is a Windows feature that provides a simple way for some devices to enable BitLocker encryption automatically. Device encryption is available on all Windows versions, and it requires a device to meet either [Modern Standby][WIN-3] or HSTI security requirements. Device encryption can't have externally accessible ports that allow DMA access.
 
 > [!IMPORTANT]
 > Device encryption encrypts only the OS drive and fixed drives, it doesn't encrypt external/USB drives.
@@ -133,7 +133,7 @@ It's recommended to keep device encryption on for any systems that support it. H
 |-|-|-|-|
 | `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\BitLocker`| `PreventDeviceEncryption`|REG_DWORD|0x1|
 
-For more information about device encryption, see [BitLocker device encryption hardware requirements](/windows-hardware/design/device-experiences/oem-bitlocker#bitlocker-automatic-device-encryption).
+For more information about device encryption, see [BitLocker device encryption hardware requirements][WIN-4].
 
 ## Next steps
 
@@ -142,3 +142,10 @@ For more information about device encryption, see [BitLocker device encryption h
 >
 >
 > [BitLocker countermeasures >](countermeasures.md)
+
+<!--links-->
+
+[WIN-1]: /windows/deployment/mbr-to-gpt
+[WIN-2]: /windows-server/administration/windows-commands/bdehdcfg
+[WIN-3]: /windows-hardware/design/device-experiences/modern-standby
+[WIN-4]: /windows-hardware/design/device-experiences/oem-bitlocker#bitlocker-automatic-device-encryption
