@@ -34,12 +34,12 @@ Specifically, Windows Update for Business lets you control update offerings and 
 
 Windows Update for Business enables commercial customers to manage which Windows Updates are received along with the experience a device has when it receives them.
 
-You can control Windows Update for Business policies by using either MDM tools or Group Policy management , such as local group policy or the Group Policy Management Console (GPMC), as well as various other non-Microsoft management tools. MDMs use Configuration Service Provider (CSP) policies instead of Group Policy. Intune additionally uses Cloud Policies. Not all policies are available in all formats (CSP, Group Policy, or Cloud Policy).
+You can control Windows Update for Business policies by using either MDM tools or Group Policy management, such as local group policy or the Group Policy Management Console (GPMC), and various other non-Microsoft management tools. MDMs use Configuration Service Provider (CSP) policies instead of Group Policy. Intune additionally uses Cloud Policies. Not all policies are available in all formats (CSP, Group Policy, or Cloud Policy).
 
 ### Manage deployment of Windows Updates
 
 By using Windows Update for Business, you can:
-- Control which types of Windows Updates are offered to devices in your organization
+- Control the types of Windows Updates are offered to devices in your organization
 - Control when updates are applied to the devices
 - Deploy updates to devices in your organization in waves
 
@@ -58,7 +58,7 @@ Windows Update for Business provides management policies for several types of up
 
 ## Offering
 
-You can control when updates are applied. For example you can defer when an update is installed on a device or by pausing updates for a certain period.
+You can control when updates are applied. For example, you can defer when an update is installed on a device or by pausing updates for a certain period.
 
 ### Manage when updates are offered
 
