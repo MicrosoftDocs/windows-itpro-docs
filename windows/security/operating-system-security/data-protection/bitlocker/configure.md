@@ -9,7 +9,7 @@ ms.date: 10/30/2023
 
 To configure BitLocker, you can use one of the following options:
 
-- Configuration Service Provider (CSP): this option is commonly used for devices managed by a Mobile Device Management (MDM) solution, like Microsoft Intune. The [BitLocker CSP][WIN-1] is used to configure BitLocker, and to report the status of different BitLocker functions to the MDM solution. With Microsoft Intune, you can use the BitLocker status in [compliance polices][INT-1], combining them with [Conditional Access][ENTRA-1]. Conditional Access can prevent or grant access to services like Exchange Online and SharePoint Online, based on the status of BitLocker. To learn more about the Intune options to configure and monitor BitLocker, check the following articles:
+- Configuration Service Provider (CSP): this option is commonly used for devices managed by a Mobile Device Management (MDM) solution, like Microsoft Intune. The [BitLocker CSP][WIN-1] is used to configure BitLocker, and to report the status of different BitLocker functions to the MDM solution. With Microsoft Intune, you can use the BitLocker status in [compliance policies][INT-1], combining them with [Conditional Access][ENTRA-1]. Conditional Access can prevent or grant access to services like Exchange Online and SharePoint Online, based on the status of BitLocker. To learn more about the Intune options to configure and monitor BitLocker, check the following articles:
 
     - [Manage BitLocker policy for Windows devices with Intune][INT-2]
     - [Monitor device encryption with Intune][INT-3]
@@ -155,11 +155,11 @@ The following table lists the BitLocker policies applicable to all drive types, 
 
 ## BitLocker and policy settings compliance
 
-If a device isn't compliant with the configured policy settings, BitLocker may not be turned on, or BitLocker configuration may be modified until the device is in a compliant state. When a drive becomes out of compliance with policy settings, only changes to the BitLocker configuration that will bring it into compliance are allowed. Such scenario could occur, for example, if a previously encrypted drive becomes noncompliant by a policy setting change.
+If a device isn't compliant with the configured policy settings, BitLocker might not be turned on, or BitLocker configuration might be modified until the device is in a compliant state. When a drive becomes out of compliance with policy settings, only changes to the BitLocker configuration that will bring it into compliance are allowed. Such scenario could occur, for example, if a previously encrypted drive becomes noncompliant by a policy setting change.
 
-If multiple changes are necessary to bring the drive into compliance, BitLocker protection may need to be suspended, the necessary changes made, and then protection resumed. Such situation could occur, for example, if a removable drive is initially configured for unlock with a password, and then policy settings are changed to require smart cards. In this scenario, BitLocker protection needs to be suspended, delete the password unlock method, and add the smart card method. After this process is complete, BitLocker is compliant with the policy setting, and BitLocker protection on the drive can be resumed.
+If multiple changes are necessary to bring the drive into compliance, BitLocker protection might need to be suspended, the necessary changes made, and then protection resumed. Such situation could occur, for example, if a removable drive is initially configured for unlock with a password, and then policy settings are changed to require smart cards. In this scenario, BitLocker protection needs to be suspended, delete the password unlock method, and add the smart card method. After this process is complete, BitLocker is compliant with the policy setting, and BitLocker protection on the drive can be resumed.
 
-In other scenarios, to bring the drive into compliance with a change in policy settings, BitLocker may need to be disabled and the drive decrypted followed by re-enabling BitLocker and then re-encrypting the drive. An example of this scenario is when the BitLocker encryption method or cipher strength is changed.
+In other scenarios, to bring the drive into compliance with a change in policy settings, BitLocker might need to be disabled and the drive decrypted followed by re-enabling BitLocker and then re-encrypting the drive. An example of this scenario is when the BitLocker encryption method or cipher strength is changed.
 
 To learn more how to manage BitLocker, review the [BitLocker operations guide](operations-guide.md).
 

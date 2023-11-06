@@ -11,7 +11,7 @@ A BitLocker deployment strategy includes defining the appropriate policies and c
 
 ## Audit the environment
 
-To plan a BitLocker deployment, understand the current environment. Perform an informal audit to define the current policies, procedures, and hardware environment. Review the existing disk encryption software and the organization's security policies. If the organization isn't using disk encryption software, then these policies may not exist. If disk encryption software is in use, then the policies may need to change to use certain BitLocker features.
+To plan a BitLocker deployment, understand the current environment. Perform an informal audit to define the current policies, procedures, and hardware environment. Review the existing disk encryption software and the organization's security policies. If the organization isn't using disk encryption software, then these policies might not exist. If disk encryption software is in use, then the policies might need to change to use certain BitLocker features.
 
 To help document the organization's current disk encryption security policies, answer the following questions:
 
@@ -28,7 +28,7 @@ To help document the organization's current disk encryption security policies, a
 
 A trusted platform module (TPM) is a hardware component installed in many Windows devices by the manufacturers. It works with BitLocker to help protect user data and to make sure a device hasn't been tampered with while the system was offline.
 
-BitLocker can lock the normal startup process until the user supplies a personal identification number (PIN), or inserts a removable USB device that contains a startup key. These extra security measures provide multifactor authentication. They also make sure that the computer won't start or resume from hibernation until the correct PIN or startup key is presented.
+BitLocker can lock the normal startup process until the user supplies a personal identification number (PIN), or inserts a removable USB device that contains a startup key. These extra security measures provide multifactor authentication. They also make sure that the computer doesn't start or resume from hibernation until the correct PIN or startup key is presented.
 
 On devices that don't have a TPM, BitLocker can still be used to encrypt the Windows operating system volume. However, this implementation doesn't provide the pre-startup system integrity verification offered by BitLocker working with a TPM.
 
@@ -36,7 +36,7 @@ An effective implementation of information protection, like most security contro
 
 It's crucial that organizations protect information on their devices regardless of the state of the device or the intent of users. This protection shouldn't be cumbersome to users. One undesirable and previously commonplace situation is when the user is prompted for input during preboot, and then again during Windows sign-in. Challenging users for input more than once should be avoided.
 
-The TPM is able to securely protect the BitLocker encryption key while it is at rest, and it can securely unlock the operating system drive. When the key is in use, and thus in memory, a combination of hardware and Windows capabilities can secure the key and prevent unauthorized access through cold-boot attacks. Although other countermeasures like PIN-based unlock are available, they aren't as user-friendly; depending on the devices' configuration they may not offer additional security when it comes to key protection. For more information, see [BitLocker countermeasures](countermeasures.md).
+The TPM is able to securely protect the BitLocker encryption key while it is at rest, and it can securely unlock the operating system drive. When the key is in use, and thus in memory, a combination of hardware and Windows capabilities can secure the key and prevent unauthorized access through cold-boot attacks. Although other countermeasures like PIN-based unlock are available, they aren't as user-friendly; depending on the devices' configuration they may not offer more security when it comes to key protection. For more information, see [BitLocker countermeasures](countermeasures.md).
 
 ### BitLocker key protectors
 
@@ -47,9 +47,9 @@ To protect the BitLocker encryption key, BitLocker can use different types of *p
 | **Auto-unlock** | Used to automatically unlock volumes that don't host an operating system. BitLocker uses encrypted information stored in the registry and volume metadata to unlock any data volumes that use automatic unlocking. |
 | **Password** and **Password for OS drive**| To unlock a drive, the user must supply a password. When used for OS drives, the user is prompted for a password in the preboot screen. This method doesn't offer any lockout logic, therefore it doesn't protect against brute force attacks. |
 | **Startup key** | An encryption key that can be stored on removable media, with a file name format of `<protector_id>.bek`. The user is prompted for the USB flash drive that has the recovery key and/or startup key, and then reboot the device. |
-| **Smart card certificate** | Used to unlock volumes that do not host an operating system. To unlock a drive, the user must use a smart card. |
+| **Smart card certificate** | Used to unlock volumes that don't host an operating system. To unlock a drive, the user must use a smart card. |
 | **TPM** | A hardware device used to help establish a secure root-of-trust, validating early boot components. The TPM protector can only be used with the OS drive. |
-| **TPM + PIN** | A user-entered numeric or alphanumeric key protector that can only be used with OS volumes and in addition to the TPM.The TPM validates early boot components. The user must enter the correct PIN before the start-up process can continue, and before the drive can be unlocked. The TPM enters lockout if the incorrect PIN is entered repeatedly, to protect the PIN from brute force attacks. The number of repeated attempts that will trigger a lockout is variable. |
+| **TPM + PIN** | A user-entered numeric or alphanumeric key protector that can only be used with OS volumes and in addition to the TPM.The TPM validates early boot components. The user must enter the correct PIN before the start-up process can continue, and before the drive can be unlocked. The TPM enters lockout if the incorrect PIN is entered repeatedly, to protect the PIN from brute force attacks. The number of repeated attempts that trigger a lockout is variable. |
 | **TPM + Startup key** | The TPM successfully validates early boot components. The user must insert a USB drive containing the startup key before the OS can boot. |
 | **TPM + Startup key + PIN** | The TPM successfully validates early boot components. The user must enter the correct PIN and insert a USB drive containing the startup key before the OS can boot. |
 | **Recovery password** | A 48-digit number used to unlock a volume when it is in *recovery mode*. Numbers can often be typed on a regular keyboard. If the numbers on the normal keyboard aren't responding, the function keys (F1-F10) can be used to input the numbers. |
@@ -60,7 +60,7 @@ To protect the BitLocker encryption key, BitLocker can use different types of *p
 
 #### Support for devices without TPM
 
-Determine whether computers that don't have a TPM 1.2 or higher versions in the environment will be supported. If it's decided to support devices without TPM, a user must use a USB startup key or a password to boot the system. The startup key requires extra support processes similar to multifactor authentication.
+Determine whether computers that don't have a TPM 1.2 or higher versions in the environment will be supported. If you decide to support devices without TPM, a user must use a USB startup key or a password to boot the system. The startup key requires extra support processes similar to multifactor authentication.
 
 #### What areas of the organization need a baseline level of data protection?
 
@@ -91,7 +91,7 @@ For more information about how startup security works and the countermeasures th
 
 ## TPM hardware configurations
 
-In the deployment plan, identify what TPM-based hardware platforms will be supported. Document the hardware models from an OEM(s) used by the organization so that their configurations can be tested and supported. TPM hardware requires special consideration during all aspects of planning and deployment.
+In the deployment plan, identify what TPM-based hardware platforms are supported. Document the hardware models from an OEM(s) used by the organization so that their configurations can be tested and supported. TPM hardware requires special consideration during all aspects of planning and deployment.
 
 ### TPM 1.2 states and initialization
 
@@ -99,7 +99,7 @@ For TPM 1.2, there are multiple possible states. Windows automatically initializ
 
 ### Endorsement keys
 
-For a TPM to be usable by BitLocker, it must contain an endorsement key, which is an RSA key pair. The private half of the key pair is held inside the TPM and is never revealed or accessible outside the TPM. If the TPM doesn't have an endorsement key, BitLocker will force the TPM to generate one automatically as part of BitLocker setup.
+For a TPM to be usable by BitLocker, it must contain an endorsement key, which is an RSA key pair. The private half of the key pair is held inside the TPM and is never revealed or accessible outside the TPM. If the TPM doesn't have an endorsement key, BitLocker forces the TPM to generate one automatically as part of BitLocker setup.
 
 An endorsement key can be created at various points in the TPM's lifecycle, but needs to be created only once for the lifetime of the TPM. If an endorsement key doesn't exist for the TPM, it must be created before you can take TPM ownership.
 
@@ -107,7 +107,7 @@ For more information about the TPM and the TCG, see the Trusted Computing Group:
 
 ## Non-TPM hardware configurations
 
-Devices without a TPM can still be protected by drive encryption using a startup key.
+Devices without a TPM can still be protected with drive encryption using a startup key.
 
 Use the following questions to identify issues that might affect the deployment in a non-TPM configuration:
 
@@ -133,7 +133,7 @@ Windows RE can also be used from boot media other than the local hard disk. If W
 
 Administrators can enable BitLocker before to operating system deployment from the *Windows Pre-installation Environment* (WinPE). This step is done with a randomly generated clear key protector applied to the formatted volume. It encrypts the volume before running the Windows setup process. If the encryption uses the **Used Disk Space Only** option, then this step takes only a few seconds, and can be incorporated into existing deployment processes. Preprovisioning requires a TPM.
 
-To check the BitLocker status of a particular volume, administrators can look at the drive status in the BitLocker Control Panel applet or Windows Explorer. The **Waiting For Activation** status means that the drive was preprovisioned for BitLocker, and there's only a clear protector used to encrypt the volume. In this case, the volume isn't protected, and needs to have a secure key added to the volume before the drive is considered fully protected. Administrators can use the Control Panel options, PowerShell cmdlets, the `manage-bde.exe` tool, or WMI APIs to add an appropriate key protector. The volume status then will be updated.
+To check the BitLocker status of a particular volume, administrators can look at the drive status in the BitLocker Control Panel applet or Windows Explorer. The **Waiting For Activation** status means that the drive was preprovisioned for BitLocker, and there's only a clear protector used to encrypt the volume. In this case, the volume isn't protected, and needs to have a secure key added to the volume before the drive is considered fully protected. Administrators can use the Control Panel options, PowerShell cmdlets, the `manage-bde.exe` tool, or WMI APIs to add an appropriate key protector. The volume status then is updated.
 
 When using the Control Panel options, administrators can choose to **Turn on BitLocker** and follow the steps in the wizard to add a protector, such as a PIN for an operating system volume (or a password if no TPM exists), or a password or smart card protector to a data volume. Then the drive security window is presented before changing the volume status.
 
@@ -143,12 +143,12 @@ The BitLocker Setup wizard provides administrators the ability to choose the *Us
 
 Launching the BitLocker Setup wizard prompts for the authentication method to be used (password and smart card are available for data volumes). Once the method is chosen and the recovery key is saved, the wizard asks to choose the drive encryption type. Select **Used Disk Space Only** or **Full** drive encryption.
 
-With Used Disk Space Only, just the portion of the drive that contains data will be encrypted. Unused space will remain unencrypted. This behavior causes the encryption process to be much faster, especially for new devices and data drives. When BitLocker is enabled with this method, as data is added to the drive, the portion of the drive used is encrypted. So, there's never unencrypted data stored on the drive.
+With Used Disk Space Only, just the portion of the drive that contains data are encrypted. Unused space remains unencrypted. This behavior causes the encryption process to be faster, especially for new devices and data drives. When BitLocker is enabled with this method, as data is added to the drive, the portion of the drive used is encrypted. So, there's never unencrypted data stored on the drive.
 
-With Full drive encryption, the entire drive is encrypted, whether data is stored on it or not. This option is useful for drives that have been repurposed, and may contain data remnants from their previous use.
+With Full drive encryption, the entire drive is encrypted, whether data is stored on it or not. This option is useful for drives that have been repurposed, and might contain data remnants from their previous use.
 
 > [!CAUTION]
-> Exercise caution when encrypting only used space on an existing volume on which confidential data may have already been stored in an unencrypted state. When using used space encryption, sectors where previously unencrypted data are stored can be recovered through disk-recovery tools until they're overwritten by new encrypted data. In contrast, encrypting only used space on a brand-new volume can significantly decrease deployment time without the security risk because all new data will be encrypted as it's written to the disk.
+> Exercise caution when encrypting only used space on an existing volume on which confidential data might have already been stored in an unencrypted state. When using used space encryption, sectors where previously unencrypted data are stored can be recovered through disk-recovery tools until they're overwritten by new encrypted data. In contrast, encrypting only used space on a brand-new volume can significantly decrease deployment time without the security risk because all new data will be encrypted as it's written to the disk.
 
 ## Encrypted hard drive support
 
@@ -177,7 +177,7 @@ Devices configured to operate in FIPS mode can create FIPS-compliant recovery pa
 
 ## Network Unlock
 
-Some organizations have location-specific data security requirements, especially in environments with high-value data. The network environment may provide crucial data protection and enforce mandatory authentication. Therefore, policy states that those devices shouldn't leave the building or be disconnected from the corporate network. Safeguards like physical security locks and geofencing may help enforce this policy as reactive controls. Beyond these safeguards, a proactive security control that grants data access only when the device is connected to the corporate network is necessary.
+Some organizations have location-specific data security requirements, especially in environments with high-value data. The network environment might provide crucial data protection and enforce mandatory authentication. Therefore, policy states that those devices shouldn't leave the building or be disconnected from the corporate network. Safeguards like physical security locks and geofencing might help enforce this policy as reactive controls. Beyond these safeguards, a proactive security control that grants data access only when the device is connected to the corporate network is necessary.
 
 *Network Unlock* enables BitLocker-protected devices to start automatically when connected to a wired corporate network on which Windows Deployment Services runs. Anytime the device isn't connected to the corporate network, a user must enter a PIN to unlock the drive (if PIN-based unlock is enabled). Network Unlock requires the following infrastructure:
 
