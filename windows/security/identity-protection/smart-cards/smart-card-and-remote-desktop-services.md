@@ -9,12 +9,12 @@ ms.reviewer: ardenw
 
 This topic for the IT professional describes the behavior of Remote Desktop Services when you implement smart card sign-in.
 
-Smart card redirection logic and **WinSCard** API are combined to support multiple redirected sessions into a single process.
+Smart card redirection logic and *WinSCard API* are combined to support multiple redirected sessions into a single process.
 
 Smart card support is required to enable many Remote Desktop Services scenarios. These include:
 
 - Using Fast User Switching or Remote Desktop Services. A user is not able to establish a redirected smart card-based remote desktop connection. That is, the connect attempt is not successful in Fast User Switching or from a Remote Desktop Services session
-- Enabling Encrypting File System (EFS) to locate the user's smart card reader from the Local Security Authority (LSA) process in Fast User Switching or in a Remote Desktop Services session. If EFS is not able to locate the smart card reader or certificate, EFS cannot decrypt user files
+- Enabling *Encrypting File System* (EFS) to locate the user's smart card reader from the *Local Security Authority* (LSA) process in Fast User Switching or in a Remote Desktop Services session. If EFS is not able to locate the smart card reader or certificate, EFS cannot decrypt user files
 
 ## Remote Desktop Services redirection
 
@@ -86,10 +86,6 @@ For information about this option for the command-line tool, see [-addstore](/pr
 > [!NOTE]
 > To sign in with a smart card from a computer that is not joined to a domain, the smart card must contain the root certification of the domain controller. A public key infrastructure (PKI) secure channel cannot be established without the root certification of the domain controller.
 
-Sign-in to Remote Desktop Services across a domain works only if the UPN in the certificate uses the following form: <*ClientName*>@<*DomainDNSName*>
+Sign-in to Remote Desktop Services across a domain works only if the UPN in the certificate uses the following form: `<ClientName>@<DomainDNSName>`.
 
 The UPN in the certificate must include a domain that can be resolved. Otherwise, the Kerberos protocol cannot determine which domain to contact. You can resolve this issue by enabling GPO X509 domain hints. For more information about this setting, see [Smart Card Group Policy and Registry Settings](smart-card-group-policy-and-registry-settings.md).
-
-## See also
-
-[How Smart Card Sign-in Works in Windows](smart-card-how-smart-card-sign-in-works-in-windows.md)

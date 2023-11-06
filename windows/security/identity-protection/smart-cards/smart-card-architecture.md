@@ -135,14 +135,13 @@ In response to a CryptAcquireContext call in CryptoAPI, the Base CSP tries to ma
 
 Similarly, in response to a NCryptOpenKey call in CNG, the smart card KSP tries to match the container the same way, and it takes the same container format, as shown in the following table.
 
-> **Note**&nbsp;&nbsp;
 > [!NOTE]
-> Before opening a key by using the smart card KSP, a call to NCryptOpenStorageProvider (`MS\_SMART\_CARD\_KEY\_STORAGE\_PROVIDER`) must be made.
+> Before opening a key by using the smart card KSP, a call to NCryptOpenStorageProvider (`MS_SMART_CARD_KEY_STORAGE_PROVIDER`) must be made.
 
 | **Type** | **Name** | **Format** |
 |----------|----------|------------|
-| I | Reader Name and Container Name | `\\\\.\\<Reader Name>\\<Container Name>` |
-| II | Reader Name and Container Name (NULL) | `\\\\.\\<Reader Name>` |
+| I | Reader Name and Container Name | `\.\<Reader Name>\<Container Name>` |
+| II | Reader Name and Container Name (NULL) | `\.\<Reader Name>` |
 | III | Container Name Only | `<Container Name>` |
 | IV | Default Container (NULL) Only | NULL |
 
@@ -152,62 +151,63 @@ The Base CSP and smart card KSP cache smart card handle information about the ca
 
 The following three container operations can be requested by using CryptAcquireContext:
 
-1. Create a new container. (The CNG equivalent of CryptAcquireContext with dwFlags set to CRYPT\_NEWKEYSET is NCryptCreatePersistedKey.)
+1. Create a new container. (The CNG equivalent of CryptAcquireContext with dwFlags set to CRYPT_NEWKEYSET is NCryptCreatePersistedKey.)
 1. Open an existing container. (The CNG equivalent of CryptAcquireContext to open the container is NCryptOpenKey.)
-1. Delete a container. (The CNG equivalent of CryptAcquireContext with dwFlags set to CRYPT\_DELETEKEYSET is NCryptDeleteKey.)
+1. Delete a container. (The CNG equivalent of CryptAcquireContext with dwFlags set to CRYPT_DELETEKEYSET is NCryptDeleteKey.)
 
 The heuristics that are used to associate a cryptographic handle with a particular smart card and reader are based on the container operation requested and the level of container specification used.
 
 The following table shows the restrictions for the container creation operation.
 
-| **Specification**                  | **Restriction**         |
-|------------------------------------|-----------|
-| No silent context                  | Key container creation must always be able to show UI, such as the PIN prompt.   |
+| Specification | Restriction |
+|--|--|
+| No silent context | Key container creation must always be able to show UI, such as the PIN prompt. |
 | No overwriting existing containers | If the specified container already exists on the chosen smart card, choose another smart card or cancel the operation. |
 
 #### Context flags
 
 The following table shows the context flags used as restrictions for the container creation operation.
 
-| **Flag**               | **Description**                   |
-|------------------------|------------------------------------------------------|
-| CRYPT\_SILENT          | No UI can be displayed during this operation.        |
-| CRYPT\_MACHINE\_KEYSET | No cached data should be used during this operation. |
-| CRYPT\_VERIFYCONTEXT   | Only public data can be accessed on the smart card.  |
+| Flag | Description |
+|--|--|
+| `CRYPT_SILENT` | No UI can be displayed during this operation. |
+| `CRYPT_MACHINE_KEYSET` | No cached data should be used during this operation. |
+| `CRYPT_VERIFYCONTEXT` | Only public data can be accessed on the smart card. |
 
 In addition to container operations and container specifications, you must consider other user options, such as the CryptAcquireContext flags, during smart card selection.
 
-> **Important**&nbsp;&nbsp;The CRYPT\_SILENT flag cannot be used to create a new container.
+> [!IMPORTANT]
+> The CRYPT_SILENT flag cannot be used to create a new container.
 
 #### Create a new container in silent context
 
-Applications can call the Base CSP with CRYPT\_DEFAULT\_CONTAINER\_OPTIONAL, set the PIN in silent context, and then create a new container in silent context. This operation occurs as follows:
+Applications can call the Base CSP with `CRYPT_DEFAULT_CONTAINER_OPTIONAL`, set the PIN in silent context, and then create a new container in silent context. This operation occurs as follows:
 
-1. Call CryptAcquireContext by passing the smart card reader name in as a type II container specification level, and specifying the CRYPT\_DEFAULT\_CONTAINER\_OPTIONAL flag.
-1. Call CryptSetProvParam by specifying PP\_KEYEXCHANGE\_PIN or PP\_SIGNATURE\_PIN and a null-terminated ASCII PIN.
-1. Release the context acquired in Step 1.
-1. Call CryptAcquireContext with CRYPT\_NEWKEYSET, and specify the type I container specification level.
-1. Call CryptGenKey to create the key.
+1. Call CryptAcquireContext by passing the smart card reader name in as a type II container specification level, and specifying the `CRYPT_DEFAULT_CONTAINER_OPTIONAL` flag
+1. Call CryptSetProvParam by specifying `PP_KEYEXCHANGE_PIN` or `PP_SIGNATURE_PIN` and a null-terminated ASCII PIN.
+1. Release the context acquired in Step 1
+1. Call CryptAcquireContext with `CRYPT_NEWKEYSET`, and specify the type I container specification level
+1. Call CryptGenKey to create the key
 
 #### Smart card selection behavior
 
-In some of the following scenarios, the user can be prompted to insert a smart card. If the user context is silent, this operation fails and no UI is displayed. Otherwise, in response to the UI, the user can insert a smart card or click **Cancel**. If the user cancels the operation, the operation fails. The flow chart shows the selection steps performed by the Windows operating system.
+In some of the following scenarios, the user can be prompted to insert a smart card. If the user context is silent, this operation fails and no UI is displayed. Otherwise, in response to the UI, the user can insert a smart card or select **Cancel**. If the user cancels the operation, the operation fails. The flow chart shows the selection steps performed by the Windows operating system.
 
 ![Smart card selection process.](images/sc-image205.png)
 
 In general, smart card selection behavior is handled by the SCardUIDlgSelectCard API. The Base CSP interacts with this API by calling it directly. The Base CSP also sends callback functions that have the purpose of filtering and matching candidate smart cards. Callers of CryptAcquireContext provide smart card matching information. Internally, the Base CSP uses a combination of smart card serial numbers, reader names, and container names to find specific smart cards.
 
-Each call to SCardUI \* may result in additional information read from a candidate smart card. The Base CSP smart card selection callbacks cache this information.
+Each call to `SCardUI *` may result in additional information read from a candidate smart card. The Base CSP smart card selection callbacks cache this information.
 
 #### Make a smart card reader match
 
 For type I and type II container specification levels, the smart card selection process is less complex because only the smart card in the named reader can be considered a match. The process for matching a smart card with a smart card reader is:
 
-1. Find the requested smart card reader. If it cannot be found, the process fails. (This requires a cache search by reader name.)
-1. If no smart card is in the reader, the user is prompted to insert a smart card. (This is only in non-silent mode; if the call is made in silent mode, it will fail.)
-1. For container specification level II only, the name of the default container on the chosen smart card is determined.
-1. To open an existing container or delete an existing container, find the specified container. If the specified container cannot be found on this smart card, the user is prompted to insert a smart card.
-1. If the system attempts to create a new container, if the specified container already exists on this smart card, the process fails.
+1. Find the requested smart card reader. If it cannot be found, the process fails (this requires a cache search by reader name)
+1. If no smart card is in the reader, the user is prompted to insert a smart card. (this is only in non-silent mode; if the call is made in silent mode, it will fail)
+1. For container specification level II only, the name of the default container on the chosen smart card is determined
+1. To open an existing container or delete an existing container, find the specified container. If the specified container cannot be found on this smart card, the user is prompted to insert a smart card
+1. If the system attempts to create a new container, if the specified container already exists on this smart card, the process fails
 
 #### Make a smart card match
 
@@ -215,26 +215,28 @@ For container specification levels III and IV, a broader method is used to match
 
 #### Open an existing default container (no reader specified)
 
-> **Note**&nbsp;&nbsp;This operation requires that you use the smart card with the Base CSP.
+> [!NOTE]
+> This operation requires that you use the smart card with the Base CSP.
 
-1. For each smart card that has been accessed by the Base CSP and the handle and container information are cached, the Base CSP looks for a valid default container. An operation is attempted on the cached SCARDHANDLE to verify its validity. If the smart card handle is not valid, the Base CSP continues to search for a new smart card.
-1. If a matching smart card is not found in the Base CSP cache, the Base CSP calls to the smart card subsystem. SCardUIDlgSelectCard() is used with an appropriate callback filter to find a matching smart card with a valid default container.
+1. For each smart card that has been accessed by the Base CSP and the handle and container information are cached, the Base CSP looks for a valid default container. An operation is attempted on the cached SCARDHANDLE to verify its validity. If the smart card handle is not valid, the Base CSP continues to search for a new smart card
+1. If a matching smart card is not found in the Base CSP cache, the Base CSP calls to the smart card subsystem. SCardUIDlgSelectCard() is used with an appropriate callback filter to find a matching smart card with a valid default container
 
 #### Open an existing GUID-named container (no reader specified)
 
-> **Note**&nbsp;&nbsp;This operation requires that you use the smart card with the Base CSP.
+> [!NOTE]
+> This operation requires that you use the smart card with the Base CSP.
 
-1. For each smart card that is already registered with the Base CSP, search for the requested container. Attempt an operation on the cached SCARDHANDLE to verify its validity. If the smart card handle is not valid, the smart card's serial number is passed to the SCardUI \* API to continue searching for this specific smart card (rather than only a general match for the container name).
-
-1. If a matching smart card is not found in the Base CSP cache, a call is made to the smart card subsystem. SCardUIDlgSelectCard() is used with an appropriate callback filter to find a matching smart card with the requested container. Or, if a smart card serial number resulted from the search in Step 1, the callback filter attempts to match the serial number, not the container name.
+1. For each smart card that is already registered with the Base CSP, search for the requested container. Attempt an operation on the cached SCARDHANDLE to verify its validity. If the smart card handle is not valid, the smart card's serial number is passed to the `SCardUI *` API to continue searching for this specific smart card (rather than only a general match for the container name)
+1. If a matching smart card is not found in the Base CSP cache, a call is made to the smart card subsystem. `SCardUIDlgSelectCard()` is used with an appropriate callback filter to find a matching smart card with the requested container. Or, if a smart card serial number resulted from the search in Step 1, the callback filter attempts to match the serial number, not the container name
 
 #### Create a new container (no reader specified)
 
-> **Note**&nbsp;&nbsp;This operation requires that you use the smart card with the Base CSP.
+> [!NOTE]
+> This operation requires that you use the smart card with the Base CSP.
 
-If the PIN is not cached, no CRYPT\_SILENT is allowed for the container creation because the user must be prompted for a PIN, at a minimum.
+If the PIN is not cached, no CRYPT_SILENT is allowed for the container creation because the user must be prompted for a PIN, at a minimum.
 
-For other operations, the caller may be able to acquire a "verify" context against the default container (CRYPT\_DEFAULT\_CONTAINER\_OPTIONAL) and then make a call with CryptSetProvParam to cache the user PIN for subsequent operations.
+For other operations, the caller may be able to acquire a *verify* context against the default container `CRYPT_DEFAULT_CONTAINER_OPTIONAL` and then make a call with CryptSetProvParam to cache the user PIN for subsequent operations.
 
 1. For each smart card already known by the CSP, refresh the stored SCARDHANDLE and make the following checks:
     1. If the smart card has been removed, continue the search
@@ -249,7 +251,7 @@ For other operations, the caller may be able to acquire a "verify" context again
 1. For each smart card already known by the CSP, refresh the stored SCARDHANDLE and make the following checks:
     1.  If the smart card does not have the named container, continue the search
     1.  If the smart card has the named container, but the smart card handle is no longer valid, store the serial number of the matching smart card and pass it to SCardUI
-1. If a matching smart card is not found in the CSP cache, make a call to the smart card subsystem. The callback that is used to filter enumerated smart cards should verify that a candidate smart card has the named container. If a serial number was povided as a result of the previous cache search, the callback should filter enumerated smart cards on serial number rather than on container matches. If the context is non-silent and no suitable smart card is found, display UI that prompts the user to insert a smart card.
+1. If a matching smart card is not found in the CSP cache, make a call to the smart card subsystem. The callback that is used to filter enumerated smart cards should verify that a candidate smart card has the named container. If a serial number was povided as a result of the previous cache search, the callback should filter enumerated smart cards on serial number rather than on container matches. If the context is non-silent and no suitable smart card is found, display UI that prompts the user to insert a smart card
 
 ### Base CSP and KSP-based architecture in Windows
 
@@ -262,13 +264,13 @@ The following diagram shows the Cryptography architecture that is used by the Wi
 > [!NOTE]
 > The API definitions are located in WinCrypt.h and WinSCard.h.
 
-| **Property**          | **Description**  |
-|-----------------------|------------------|
-| PP\_USER\_CERTSTORE   | -   Used to return an HCERTSTORE that contains all user certificates on the smart card<br>- Read-only (used only by CryptGetProvParam)<br>- Caller responsible for closing the certificate store<br>- Certificate encoded using PKCS\_7\_ASN\_ENCODING or X509\_ASN\_ENCODING<br>- CSP should set KEY\_PROV\_INFO on certificates<br>- Certificate store should be assumed to be an in-memory store<br>- Certificates should have a valid CRYPT\_KEY\_PROV\_INFO as a property |
-| PP\_ROOT\_CERTSTORE   | -   Read and Write (used by CryptGetProvParam and CryptSetProvParam)<br>- Used to write a collection of root certificates to the smart card or return HCERTSTORE, which contains root certificates from the smart card<br>- Used primarily for joining a domain by using a smart card<br>- Caller responsible for closing the certificate store |
-| PP\_SMARTCARD\_READER | -   Read-only (used only by CryptGetProvParam)<br>- Returns the smart card reader name as an ANSI string that is used to construct a fully qualified container name (that is, a smart card reader plus a container)    |
-| PP\_SMARTCARD\_GUID   | -   Return smart card GUID (also known as a serial number), which should be unique for each smart card<br>- Used by the certificate propagation service to track the source of a root certificate|
-| PP\_UI\_PROMPT        | -   Used to set the search string for the SCardUIDlgSelectCard card insertion dialog box<br>- Persistent for the entire process when it is set<br>- Write-only (used only by CryptSetProvParam) |
+| Property | Description |
+|--|--|
+| `PP_USER_CERTSTORE` | -   Used to return an `HCERTSTORE` that contains all user certificates on the smart card<br>- Read-only (used only by `CryptGetProvParam`)<br>- Caller responsible for closing the certificate store<br>- Certificate encoded using `PKCS_7_ASN_ENCODING` or `X509_ASN_ENCODING`<br>- CSP should set `KEY_PROV_INFO` on certificates<br>- Certificate store should be assumed to be an in-memory store<br>- Certificates should have a valid `CRYPT_KEY_PROV_INFO` as a property |
+| `PP_ROOT_CERTSTORE` | -   Read and Write (used by `CryptGetProvParam` and `CryptSetProvParam`)<br>- Used to write a collection of root certificates to the smart card or return `HCERTSTORE`, which contains root certificates from the smart card<br>- Used primarily for joining a domain by using a smart card<br>- Caller responsible for closing the certificate store |
+| `PP_SMARTCARD_READER` | -   Read-only (used only by `CryptGetProvParam`)<br>- Returns the smart card reader name as an ANSI string that is used to construct a fully qualified container name (that is, a smart card reader plus a container) |
+| `PP_SMARTCARD_GUID `| -   Return smart card GUID (also known as a serial number), which should be unique for each smart card<br>- Used by the certificate propagation service to track the source of a root certificate |
+| `PP_UI_PROMPT` | -   Used to set the search string for the `SCardUIDlgSelectCard` card insertion dialog box<br>- Persistent for the entire process when it is set<br>- Write-only (used only by `CryptSetProvParam`) |
 
 ### Implications for CSPs in Windows
 

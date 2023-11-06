@@ -93,7 +93,8 @@ On your domain server, you need to create a template for the certificate that yo
 
 15. From the list, select the new template that you just created (**TPM Virtual Smart Card Logon**), and then click **OK**.
 
-    > **Note**&nbsp;&nbsp;It can take some time for your template to replicate to all servers and become available in this list.
+    > [!NOTE]
+> It can take some time for your template to replicate to all servers and become available in this list.
 
     ![Selecting a certificate template.](images/vsc-08-enable-certificate-template.png)
 
