@@ -4,7 +4,7 @@ description: Learn more about the ADMX_OfflineFiles Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 08/10/2023
+ms.date: 10/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -1755,7 +1755,7 @@ This policy setting is triggered by the configured round trip network latency va
 
 - If you enable this policy setting, transparent caching is enabled and configurable.
 
-- If you disable or don't configure this policy setting, remote files will be not be transparently cached on client computers.
+- If you disable or don't configure this policy setting, remote files won't be transparently cached on client computers.
 <!-- Pol_OnlineCachingSettings-Description-End -->
 
 <!-- Pol_OnlineCachingSettings-Editable-Begin -->

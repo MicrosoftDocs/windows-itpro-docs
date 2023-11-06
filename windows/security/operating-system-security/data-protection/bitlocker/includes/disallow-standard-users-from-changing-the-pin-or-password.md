@@ -1,7 +1,7 @@
 ---
 author: paolomatarazzo
 ms.author: paoloma
-ms.date: 09/24/2023
+ms.date: 10/30/2023
 ms.topic: include
 ---
 
@@ -10,7 +10,7 @@ ms.topic: include
 This policy allows configuration of whether standard users are allowed to change the PIN or password that is used to protect the operating system drive, if they can provide the existing PIN first.
 
 If you enable this policy, standard users can't change BitLocker PINs or passwords.
-If you disable or do not configure this policy, standard users can change BitLocker PINs and passwords.
+If you disable or don't configure this policy, standard users can change BitLocker PINs and passwords.
 
 |  | Path |
 |--|--|

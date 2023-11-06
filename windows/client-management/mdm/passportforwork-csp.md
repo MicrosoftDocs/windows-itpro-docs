@@ -4,7 +4,7 @@ description: Learn more about the PassportForWork CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 08/10/2023
+ms.date: 10/03/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -20,7 +20,7 @@ ms.topic: reference
 
 <!-- PassportForWork-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-The PassportForWork configuration service provider is used to provision Windows Hello for Business (formerly Microsoft Passport for Work). It allows you to log in to Windows using your Active Directory or Azure Active Directory account and replace passwords, smartcards, and virtual smart cards.
+The PassportForWork configuration service provider is used to provision Windows Hello for Business (formerly Microsoft Passport for Work). It allows you to log in to Windows using your Active Directory or Microsoft Entra account and replace passwords, smartcards, and virtual smart cards.
 
 > [!IMPORTANT]
 > Starting with Windows 10, version 1607 all devices only have one PIN associated with Windows Hello for Business. This means that any PIN on a device will be subject to the policies specified in the PassportForWork CSP. The values specified take precedence over any complexity rules set via Exchange ActiveSync (EAS) or the DeviceLock CSP.
@@ -32,6 +32,7 @@ The following list shows the PassportForWork configuration service provider node
 - ./Device/Vendor/MSFT/PassportForWork
   - [{TenantId}](#devicetenantid)
     - [Policies](#devicetenantidpolicies)
+      - [DisablePostLogonCredentialCaching](#devicetenantidpoliciesdisablepostlogoncredentialcaching)
       - [DisablePostLogonProvisioning](#devicetenantidpoliciesdisablepostlogonprovisioning)
       - [EnablePinRecovery](#devicetenantidpoliciesenablepinrecovery)
       - [EnableWindowsHelloProvisioningForSecurityKeys](#devicetenantidpoliciesenablewindowshelloprovisioningforsecuritykeys)
@@ -163,6 +164,55 @@ Root node for policies.
 <!-- Device-{TenantId}-Policies-Examples-End -->
 
 <!-- Device-{TenantId}-Policies-End -->
+
+<!-- Device-{TenantId}-Policies-DisablePostLogonCredentialCaching-Begin -->
+#### Device/{TenantId}/Policies/DisablePostLogonCredentialCaching
+
+<!-- Device-{TenantId}-Policies-DisablePostLogonCredentialCaching-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- Device-{TenantId}-Policies-DisablePostLogonCredentialCaching-Applicability-End -->
+
+<!-- Device-{TenantId}-Policies-DisablePostLogonCredentialCaching-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/PassportForWork/{TenantId}/Policies/DisablePostLogonCredentialCaching
+```
+<!-- Device-{TenantId}-Policies-DisablePostLogonCredentialCaching-OmaUri-End -->
+
+<!-- Device-{TenantId}-Policies-DisablePostLogonCredentialCaching-Description-Begin -->
+<!-- Description-Source-DDF -->
+Disable caching of the Windows Hello for Business credential after sign-in.
+<!-- Device-{TenantId}-Policies-DisablePostLogonCredentialCaching-Description-End -->
+
+<!-- Device-{TenantId}-Policies-DisablePostLogonCredentialCaching-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-{TenantId}-Policies-DisablePostLogonCredentialCaching-Editable-End -->
+
+<!-- Device-{TenantId}-Policies-DisablePostLogonCredentialCaching-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `bool` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | False |
+<!-- Device-{TenantId}-Policies-DisablePostLogonCredentialCaching-DFProperties-End -->
+
+<!-- Device-{TenantId}-Policies-DisablePostLogonCredentialCaching-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| false (Default) | Disabled. |
+| true | Enabled. |
+<!-- Device-{TenantId}-Policies-DisablePostLogonCredentialCaching-AllowedValues-End -->
+
+<!-- Device-{TenantId}-Policies-DisablePostLogonCredentialCaching-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-{TenantId}-Policies-DisablePostLogonCredentialCaching-Examples-End -->
+
+<!-- Device-{TenantId}-Policies-DisablePostLogonCredentialCaching-End -->
 
 <!-- Device-{TenantId}-Policies-DisablePostLogonProvisioning-Begin -->
 #### Device/{TenantId}/Policies/DisablePostLogonProvisioning
@@ -1069,9 +1119,9 @@ Windows Hello for Business can use certificates to authenticate to on-premise re
 
 <!-- Device-{TenantId}-Policies-UseCloudTrustForOnPremAuth-Description-Begin -->
 <!-- Description-Source-DDF -->
-Boolean value that enables Windows Hello for Business to use Azure AD Kerberos to authenticate to on-premises resources.
+Boolean value that enables Windows Hello for Business to use Microsoft Entra Kerberos to authenticate to on-premises resources.
 
-- If you enable this policy setting, Windows Hello for Business will use an Azure AD Kerberos ticket to authenticate to on-premises resources. The Azure AD Kerberos ticket is returned to the client after a successful authentication to Azure AD if Azure AD Kerberos is enabled for the tenant and domain.
+- If you enable this policy setting, Windows Hello for Business will use a Microsoft Entra Kerberos ticket to authenticate to on-premises resources. The Microsoft Entra Kerberos ticket is returned to the client after a successful authentication to Microsoft Entra ID if Microsoft Entra Kerberos is enabled for the tenant and domain.
 
 - If you disable or don't configure this policy setting, Windows Hello for Business will use a key or certificate to authenticate to on-premises resources.
 <!-- Device-{TenantId}-Policies-UseCloudTrustForOnPremAuth-Description-End -->
@@ -1176,7 +1226,7 @@ Windows requires a user to lock and unlock their session after changing this set
 
 <!-- Device-{TenantId}-Policies-UsePassportForWork-Description-Begin -->
 <!-- Description-Source-DDF -->
-Windows Hello for Business is an alternative method for signing into Windows using your Active Directory or Azure Active Directory account that can replace passwords, Smart Cards, and Virtual Smart Cards.
+Windows Hello for Business is an alternative method for signing into Windows using your Active Directory or Microsoft Entra account that can replace passwords, Smart Cards, and Virtual Smart Cards.
 
 - If you enable or don't configure this policy setting, the device provisions Windows Hello for Business for all users.
 
@@ -2503,7 +2553,7 @@ A Trusted Platform Module (TPM) provides additional security benefits over softw
 
 <!-- User-{TenantId}-Policies-UsePassportForWork-Description-Begin -->
 <!-- Description-Source-DDF -->
-Windows Hello for Business is an alternative method for signing into Windows using your Active Directory or Azure Active Directory account that can replace passwords, Smart Cards, and Virtual Smart Cards.
+Windows Hello for Business is an alternative method for signing into Windows using your Active Directory or Microsoft Entra account that can replace passwords, Smart Cards, and Virtual Smart Cards.
 
 - If you enable or don't configure this policy setting, the device provisions Windows Hello for Business for all users.
 

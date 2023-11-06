@@ -1,22 +1,22 @@
 ---
 author: paolomatarazzo
 ms.author: paoloma
-ms.date: 09/24/2023
+ms.date: 10/30/2023
 ms.topic: include
 ---
 
 ### Choose drive encryption method and cipher strength
 
-With this policy you can configure an encryption algorithm and key cipher strength for fixed data drives, operating system drives, and removable data drives individually.
+With this policy, you can configure an encryption algorithm and key cipher strength for fixed data drives, operating system drives, and removable data drives individually.
 
-Recommended settings:
+Recommended settings: `XTS-AES` algorithm for all drives. The choice of key size, 128 bit or 256 bit depends on the performance of the device. For more performant hard drives and CPU, choose 256-bit key, for less performant ones use 128.
 
-- For fixed and operating system drives: `XTS-AES` algorithm
-- For removable drives: `AES-CBC 128-bit` or `AES-CBC 256-bit`
+> [!IMPORTANT]
+> Key size might be required by regulators or industry.
 
-If you disable or do not configure this policy setting, BitLocker uses the default encryption method of `XTS-AES 128-bit`.
+If you disable or don't configure this policy setting, BitLocker uses the default encryption method of `XTS-AES 128-bit`.
 
-> [!WARNING]
+> [!NOTE]
 > This policy doesn't apply to encrypted drives. Encrypted drives utilize their own algorithm, which is set by the drive during partitioning.
 
 |  | Path |

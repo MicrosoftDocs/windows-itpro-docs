@@ -29,7 +29,7 @@ Your employees can use Cortana to help manage their day and be more productive b
 ### Before you begin
 There are a few things to be aware of before you start using Cortana in Windows 10, versions 1909 and earlier.
 
-- **Azure Active Directory (Azure AD) account.** Before your employees can use Cortana in your org, they must be logged in using their Azure AD account through Cortana&#39;s notebook. They must also authorize Cortana to access Microsoft 365 on their behalf.
+- **Microsoft Entra account.** Before your employees can use Cortana in your org, they must be logged in using their Microsoft Entra account through Cortana&#39;s notebook. They must also authorize Cortana to access Microsoft 365 on their behalf.
 
 - **Office 365 Trust Center.** Cortana in Windows 10, version 1909 and earlier, isn&#39;t a service governed by the [Online Services Terms](https://www.microsoft.com/en-us/licensing/product-licensing/products). [Learn more about how Cortana in Windows 10, versions 1909 and earlier, treats your data](https://support.microsoft.com/en-us/help/4468233/cortana-and-privacy-microsoft-privacy).
 

@@ -1,7 +1,7 @@
 ---
 author: paolomatarazzo
 ms.author: paoloma
-ms.date: 09/24/2023
+ms.date: 10/30/2023
 ms.topic: include
 ---
 
@@ -12,7 +12,7 @@ This policy setting determines specific Boot Configuration Data (BCD) settings t
 If you don't configure this policy setting, the device will verify the default Windows BCD settings.
 
 > [!NOTE]
-> When BitLocker is using Secure Boot for platform and BCD integrity validation, as defined by the *Allow Secure Boot for integrity validation* GPO, this policy setting is ignored. The setting that controls boot debugging `0x16000010` is always validated, and it has no effect if it's included in the inclusion or exclusion list.
+> When BitLocker is using Secure Boot for platform and BCD integrity validation, as defined by the *[Allow Secure Boot for integrity validation](../configure.md?tabs=os#allow-secure-boot-for-integrity-validation)* policy setting, this policy setting is ignored. The setting that controls boot debugging `0x16000010` is always validated, and it has no effect if it's included in the inclusion or exclusion list.
 
 |  | Path |
 |--|--|
