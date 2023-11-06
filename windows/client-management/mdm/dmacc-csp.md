@@ -4,7 +4,7 @@ description: Learn more about the DMAcc CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 08/10/2023
+ms.date: 11/06/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -751,7 +751,7 @@ Specifies the authentication type. If AAuthLevel is CLCRED, the supported types 
 
 <!-- Device-{AccountUID}-AppID-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specifies the application identifier for the OMA DM account.. The only supported value is w7.
+Specifies the application identifier for the OMA DM account. The only supported value is w7.
 <!-- Device-{AccountUID}-AppID-Description-End -->
 
 <!-- Device-{AccountUID}-AppID-Editable-Begin -->
