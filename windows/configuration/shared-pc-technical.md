@@ -1,7 +1,7 @@
 ---
 title: Shared PC technical reference
 description: List of policies and settings applied by the Shared PC options.
-ms.date: 10/15/2022
+ms.date: 11/06/2023
 ms.prod: windows-client
 ms.technology: itpro-configure
 ms.topic: reference
