@@ -114,7 +114,7 @@ Pick one of the following options to learn how to save a passkey, based on where
 
 :::row:::
   :::column span="4":::
-  4. Select **Linked device** > **Next**
+  4. Select your linked device name (e.g. **Pixel**) > **Next**
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -144,7 +144,7 @@ Pick one of the following options to learn how to save a passkey, based on where
 
 :::row:::
   :::column span="4":::
-  4. Select **Security key*** > **Next**
+  4. Select **Security key** > **Next**
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -215,7 +215,7 @@ Pick one of the following options to learn how to use a passkey, based on where 
 
 :::row:::
   :::column span="4":::
-  4. Select **Phone or tablet** > **Next**
+  4. Select **iPhone, iPad or Android device** > **Next**
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -242,7 +242,7 @@ Pick one of the following options to learn how to use a passkey, based on where 
 
 :::row:::
   :::column span="4":::
-  4. Select **Linked phone or tablet** > **Next**
+  4. Select your linked device name (e.g. **Pixel**) > **Next**
   :::column-end:::
 :::row-end:::
 :::row:::
