@@ -40,12 +40,23 @@ Passkeys have several advantages over passwords, including their ease of use and
 
 ### Create a passkey
 
+By default, Windows offers to save the passkey locally on the **Windows device**, in which case the passkey is protected by Windows Hello (biometrics and PIN). You can also chose to save the passkey in one of the following locations:
+
+- **iPhone, iPad or Android device**: the passkey is saved on a phone or tablet, protected by the device's biometrics, if offered by the device. This option requires you to scan a QR code with your phone or tablet, which must be in proximity of the Windows device
+- **Linked device**: the passkey is saved on a phone or tablet, protected by the device's biometrics, if offered by the device. This option requires the linked device to be in proximity of the Windows device, and it's only supported for Android devices
+- **Security key**: the passkey is saved to a FIDO2 security key, protected by the key's unlock mechanism (for example, biometrics or PIN)
+
 Pick one of the following options to learn how to save a passkey, based on where you want to store it.
 
 #### [:::image type="icon" source="images/laptop.svg" border="false"::: **Windows device**](#tab/windows)
 
 [!INCLUDE [use-passkey](includes/create-passkey.md)]
 
+:::row:::
+  :::column span="4":::
+  4. Select **This Windows device** > **Next**
+  :::column-end:::
+:::row-end:::
 :::row:::
   :::column span="3":::
 
@@ -72,6 +83,11 @@ Pick one of the following options to learn how to save a passkey, based on where
 [!INCLUDE [use-passkey](includes/create-passkey.md)]
 
 :::row:::
+  :::column span="4":::
+  4. Select **iPhone, iPad or Android device** > **Next**
+  :::column-end:::
+:::row-end:::
+:::row:::
   :::column span="3":::
 
   5. Scan the QR code with your phone or tablet. Wait for the connection to the device to be established and follow the instructions to save the passkey
@@ -96,6 +112,11 @@ Pick one of the following options to learn how to save a passkey, based on where
 
 [!INCLUDE [use-passkey](includes/create-passkey.md)]
 
+:::row:::
+  :::column span="4":::
+  4. Select **Linked device** > **Next**
+  :::column-end:::
+:::row-end:::
 :::row:::
   :::column span="3":::
 
@@ -122,6 +143,11 @@ Pick one of the following options to learn how to save a passkey, based on where
 [!INCLUDE [use-passkey](includes/create-passkey.md)]
 
 :::row:::
+  :::column span="4":::
+  4. Select **Security key*** > **Next**
+  :::column-end:::
+:::row-end:::
+:::row:::
   :::column span="3":::
 
   5. Select **OK** to confirm that you want to set up a security key, and unlock the security key using the key's unlock mechanism
@@ -146,6 +172,12 @@ Pick one of the following options to learn how to save a passkey, based on where
 
 ### Use a passkey
 
+When you open a website or app that supports passkeys, if a passkey is stored locally, you're automatically prompted to use Windows Hello to sign in. You can also chose to use a passkey from one of the following locations:
+
+- **iPhone, iPad or Android device**: use this option if you want to sign in with a passkey stored on a phone or tablet. This option requires you to scan a QR code with your phone or tablet, which must be in proximity of the Windows device
+- **Linked device**: use this option if you want to sign in with a passkey stored on a device that is in proximity of the Windows device. This option is only supported for Android devices
+- **Security key**: use this option if you want to sign in with a passkey stored on a FIDO2 security key
+
 Pick one of the following options to learn how to use a passkey, based on where you saved it.
 
 #### [:::image type="icon" source="images/laptop.svg" border="false"::: **Windows device**](#tab/windows)
@@ -153,9 +185,14 @@ Pick one of the following options to learn how to use a passkey, based on where 
 [!INCLUDE [use-passkey](includes/use-passkey.md)]
 
 :::row:::
+  :::column span="4":::
+  4. Select **This Windows device** > **Next**
+  :::column-end:::
+:::row-end:::
+:::row:::
   :::column span="3":::
 
-  4. Select a Windows Hello unlock option
+  5. Select a Windows Hello unlock option
 
   :::column-end:::
   :::column span="1":::
@@ -165,7 +202,7 @@ Pick one of the following options to learn how to use a passkey, based on where 
 :::row:::
   :::column span="3":::
 
-  5. Select **OK** to continue signing in
+  6. Select **OK** to continue signing in
 
   :::column-end:::
   :::column span="1":::
@@ -177,9 +214,14 @@ Pick one of the following options to learn how to use a passkey, based on where 
 [!INCLUDE [use-passkey](includes/use-passkey.md)]
 
 :::row:::
+  :::column span="4":::
+  4. Select **Phone or tablet** > **Next**
+  :::column-end:::
+:::row-end:::
+:::row:::
   :::column span="3":::
 
-  4. Scan the QR code with your phone or tablet where you saved the passkey. Once the connection to the device is established, follow the instructions to use the passkey
+  5. Scan the QR code with your phone or tablet where you saved the passkey. Once the connection to the device is established, follow the instructions to use the passkey
 
   :::column-end:::
   :::column span="1":::
@@ -189,7 +231,7 @@ Pick one of the following options to learn how to use a passkey, based on where 
 :::row:::
   :::column span="4":::
 
-  5. You're signed in to the website or app
+  6. You're signed in to the website or app
 
   :::column-end:::
 :::row-end:::
@@ -199,9 +241,14 @@ Pick one of the following options to learn how to use a passkey, based on where 
 [!INCLUDE [use-passkey](includes/use-passkey.md)]
 
 :::row:::
+  :::column span="4":::
+  4. Select **Linked phone or tablet** > **Next**
+  :::column-end:::
+:::row-end:::
+:::row:::
   :::column span="3":::
 
-  4. Once the connection to the linked device is established, follow the instructions on the device to use the passkey
+  5. Once the connection to the linked device is established, follow the instructions on the device to use the passkey
 
   :::column-end:::
   :::column span="1":::
@@ -211,7 +258,7 @@ Pick one of the following options to learn how to use a passkey, based on where 
 :::row:::
   :::column span="3":::
 
-  5. You're signed in to the website or app
+  6. You're signed in to the website or app
 
   :::column-end:::
   :::column span="1":::
@@ -223,9 +270,14 @@ Pick one of the following options to learn how to use a passkey, based on where 
 [!INCLUDE [use-passkey](includes/use-passkey.md)]
 
 :::row:::
+  :::column span="4":::
+  4. Select **Security key** > **Next**
+  :::column-end:::
+:::row-end:::
+:::row:::
   :::column span="3":::
 
-  4. Unlock the security key using the key's unlock mechanism
+  5. Unlock the security key using the key's unlock mechanism
 
   :::column-end:::
   :::column span="1":::
@@ -235,7 +287,7 @@ Pick one of the following options to learn how to use a passkey, based on where 
 :::row:::
   :::column span="3":::
 
-  5. You're signed in to the website or app
+  6. You're signed in to the website or app
 
   :::column-end:::
   :::column span="1":::
