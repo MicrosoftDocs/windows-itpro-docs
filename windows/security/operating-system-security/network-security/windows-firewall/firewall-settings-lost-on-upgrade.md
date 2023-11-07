@@ -1,9 +1,8 @@
 ---
 title: Troubleshooting Windows Firewall settings after a Windows upgrade
 description: Firewall settings lost on upgrade
-ms.prod: windows-client
 ms.topic: troubleshooting
-ms.date: 12/31/2017
+ms.date: 11/07/2023
 ---
 
 # Troubleshooting Windows Firewall settings after a Windows upgrade
@@ -14,9 +13,9 @@ Use this article to troubleshoot firewall settings that are turned off after upg
 
 To help you organize your list, individual built-in firewall rules are categorized within a group. For example, the following rules form part of the Remote Desktop group.
 
-- Remote Desktop – Shadow (TCP-In)
-- Remote Desktop – User Mode (TCP-In)
-- Remote Desktop – User-Mode (UDP-In)
+- Remote Desktop - Shadow (TCP-In)
+- Remote Desktop - User Mode (TCP-In)
+- Remote Desktop - User-Mode (UDP-In)
 
 Other group examples include **core networking**, **file and print sharing**, and **network discovery**. Grouping allows administrators to manage sets of similar rules by filtering on categories in the firewall interface (wf.msc). Do this filtering by right-clicking on either **Inbound** or **Outbound Rules** and selecting **Filter by Group**. Optionally, you can use PowerShell using the `Get-NetFirewallRule` cmdlet with the `-Group` switch.
 
@@ -24,7 +23,7 @@ Other group examples include **core networking**, **file and print sharing**, an
 Get-NetFirewallRule -Group <groupName>
 ```
 
-> [!NOTE] 
+> [!NOTE]
 > Microsoft recommends to enable or disable an entire group instead of individual rules.
 
 Microsoft recommends that you enable/disable all of the rules within a group instead of one or two individual rules. This recommendation is because groups aren't only used to organize rules and allow batch rule modification by type, but they also represent a 'unit' by which rule state is maintained across a Windows upgrade. Rule groups, as opposed to individual rules, are the unit by which the update process determines what should be enabled/disabled when the upgrade is complete.
