@@ -36,6 +36,7 @@ ms.date: 05/01/2023
     **EFLOW requires Hyper-V support**
     - On Windows client, enable the Hyper-V feature
     - On Windows Server, install the Hyper-V role and create a default network switch
+    - See [EFLOW requirements](/azure/iot-edge/iot-edge-for-linux-on-windows?view=iotedge-1.4#prerequisites) for additional requirements
 
     Disk recommendations:
     - Using an SSD is recommended as cache read speed of SSD is superior to HDD
