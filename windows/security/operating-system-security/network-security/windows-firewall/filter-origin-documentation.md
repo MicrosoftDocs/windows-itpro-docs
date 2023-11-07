@@ -13,18 +13,14 @@ Typically, when investigating packet drop events, a customer would use the field
 
 ![Event properties.](images/event-properties-5157.png)
 
-The filter ID uniquely identifies the filter that caused the packet drop. The filter ID can be searched in the WFP state dump output to trace back to the Firewall rule where the filter originated from.
+The filter ID uniquely identifies the filter that caused the packet drop. The filter ID can be searched in the WFP state dump output to trace back to the Firewall rule where the filter originated from. However, the filter ID isn't a reliable source for tracing back to the filter or the rule, as the filter ID can change for many reasons despite the rule not changing at all. This change in ID makes the diagnosis process error-prone and difficult.
 
-However, the filter ID isn't a reliable source for tracing back to the filter or the rule, as the filter ID can change for many reasons despite the rule not changing at all. This change in ID makes the diagnosis process error-prone and difficult.
-
-For customers to debug packet drop events correctly and efficiently, they would need more context about the blocking filter such as its origin.
-
-The blocking filters can be categorized under these filter origins:
+For customers to debug packet drop events correctly and efficiently, they would need more context about the blocking filter such as its origin. The blocking filters can be categorized under these filter origins:
 
 1. Firewall rules
 1. Firewall default block filters
     1. AppContainer loopback
-    1. Boottime default
+    1. Boot time default
     1. Quarantine default
     1. Query user default
     1. Stealth
@@ -52,7 +48,7 @@ To enable a specific audit event, run the corresponding command in an administra
 
 ## Example flow of debugging packet drops with filter origin
 
-As the audit surfaces `Filter Origin` and `Interface Index`, the network admin can determine the root cause of the network packet drop and the interface it happened on.
+As the audit surfaces `Filter Origin` and `Interface Index`, the network admin can determine the root cause of the network packet drop, and the interface it happened on.
 
 ![Event audit.](images/event-audit-5157.png)
 
@@ -82,15 +78,15 @@ Network drop events from the AppContainer loopback block filter origin occur whe
 
 To enable localhost loopback in a local debugging environment, see [Communicating with localhost](/windows/iot-core/develop-your-app/loopback).
 
-To enable localhost loopback for a published app that requires loopback access to communicate with another UWP or packaged win32 app, see [uap4:LoopbackAccessRules](/uwp/schemas/appxpackage/uapmanifestschema/element-uap4-loopbackaccessrules).
+To enable localhost loopback for a published app that requires loopback access to communicate with another UWP or packaged Win32 app, see [uap4:LoopbackAccessRules](/uwp/schemas/appxpackage/uapmanifestschema/element-uap4-loopbackaccessrules).
 
-### Boottime default
+### Boot time default
 
-Network drop events from the boottime default block filter origin occur when the computer is booting up and the firewall service isn't yet running. Services will need to create a boottime allow filter to allow the traffic. It should be noted that it's not possible to add boottime filters through firewall rules.
+Network drop events from the boot time default block filter origin occur when the computer is booting up and the firewall service isn't yet running. Services need to create a boot time allow filter to allow the traffic. It should be noted that it's not possible to add boot time filters through firewall rules.
 
 ### Quarantine default
 
-Network drops from the quarantine default block filter occur when the interface is temporarily quarantined by Firewall service. The firewall service quarantines an interface when it detects a change on the network, and based on several other factors, the firewall service may put the interface in quarantine as a safeguard. When an interface is in quarantine, the quarantine default block filter will block any new non-loopback inbound connections.
+Network drops from the quarantine default *block filter* occur when the interface is temporarily quarantined by the Firewall service. The firewall service quarantines an interface when it detects a change on the network, and based on several other factors, the firewall service might put the interface in quarantine as a safeguard. When an interface quarantined, the quarantine default *block filter* blocks any new non-loopback inbound connections.
 
 Run the following PowerShell command to generate more information about the interface:
 
@@ -108,9 +104,9 @@ To learn more about the quarantine feature, see [Quarantine behavior](quarantine
 
 ### Query user default
 
-Network packet drops from query user default block filters occur when there's no explicit rule created to allow an inbound connection for the packet. When an application binds to a socket but doesn't have a corresponding inbound rule to allow packets on that port, Windows generates a pop up for the user to allow or deny the app to receive packets on the available network categories. If the user clicks to deny the connection in this popup, subsequent inbound packets to the app will be dropped. To resolve the drops:
+Network packet drops from query user default block filters occur when there's no explicit rule created to allow an inbound connection for the packet. When an application binds to a socket but doesn't have a corresponding inbound rule to allow packets on that port, Windows generates a pop-up for the user to allow or deny the app to receive packets on the available network categories. If the user selects to deny the connection in the pop-up, subsequent inbound packets to the app will be dropped. To resolve the drops:
 
-1. Create an inbound firewall rule to allow the packet for this application. This packet will allow the packet to bypass any query user default block filters
+1. Create an inbound firewall rule to allow the packet for this application. The rule allows the packet to bypass any query user default block filters
 1. Delete any block query user rules that may have been auto generated by the firewall service
 
 To generate a list of all the query user block rules, you can run the following PowerShell command:
@@ -149,4 +145,4 @@ For more information on how to debug drops caused by UWP default block filters, 
 
 ### WSH default
 
-Network drops from Windows Service Hardening (WSH) default filters indicate that there wasn't an explicit Windows Service Hardening allow rule to allow network traffic for the protected service. The service owner will need to configure allow rules for the service if the block isn't expected.
+Network drops from Windows Service Hardening (WSH) default filters indicate that there wasn't an explicit Windows Service Hardening allow rule to allow network traffic for the protected service. The service owner needs to configure *allow rules* for the service if the block isn't expected.
