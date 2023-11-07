@@ -95,7 +95,7 @@ For the deployment rings that have passed quality updates deferral date, the OOB
 2. Under the **Release Announcements** tab, you can view the knowledge base (KB) articles corresponding to deployed OOB and regular Windows quality updates. You can also view the schedules for OOB update releases in the Release Schedule tab.
 
 > [!NOTE]
-> Announcements abd OOB update schedules will be **removed** from the Release announcements tab when the next quality update is released. Further, if quality updates are paused for a deployment ring, the OOB updates will also be paused.
+> Announcements and OOB update schedules will be **removed** from the Release announcements tab when the next quality update is released. Further, if quality updates are paused for a deployment ring, the OOB updates will also be paused.
 
 ### Pause and resume a release
 
