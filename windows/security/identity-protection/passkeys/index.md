@@ -5,7 +5,7 @@ ms.collection:
 - highpri
 - tier1
 ms.topic: overview
-ms.date: 09/27/2023
+ms.date: 11/07/2023
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
