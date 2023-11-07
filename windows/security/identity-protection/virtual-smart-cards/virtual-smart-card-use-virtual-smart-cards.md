@@ -15,7 +15,6 @@ Learn about the requirements for virtual smart cards, how to use and manage them
 
 | Area | Requirements and details |
 |--|--|
-| Supported operating systems | Windows Server 2016 <br>Windows Server 2012 R2 <br>Windows Server 2012 <br>Windows 10 <br>Windows 8.1 <br>Windows 8 |
 | Supported Trusted Platform Module (TPM) | Any TPM that adheres to the TPM main specifications for version 1.2 or version 2.0 (as set by the Trusted Computing Group) is supported for use as a virtual smart card. For more information, see the [TPM Main Specification](http://www.trustedcomputinggroup.org/resources/tpm_main_specification). |
 | Supported virtual smart cards per computer | Ten smart cards can be connected to a computer or device at one time. This includes physical and virtual smart cards combined. <br><br>**Note**<br>You can create more than one virtual smart card; however, after creating more than four virtual smart cards, you may start to notice performance degradation. Because all smart cards appear as if they're always inserted, if more than one person shares a computer or device, each person can see all the virtual smart cards that are created on that computer or device. If the user knows the PIN values for all the virtual smart cards, the user will also be able to use them.<br> |
 | Supported number of certificates on a virtual smart card | A single TPM virtual smart card can contain 30 distinct certificates with the corresponding private keys. Users can continue to renew certificates on the card until the total number of certificates on a card exceeds 90. The reason that the total number of certificates is different from the total number of private keys is that sometimes the renewal can be done with the same private key—in which case a new private key isn't generated. |
@@ -34,7 +33,7 @@ Virtual smart cards can also be created and deleted by using APIs. For more info
 - [ITpmVirtualSmartCardManager](/windows/win32/api/tpmvscmgr/nn-tpmvscmgr-itpmvirtualsmartcardmanager)
 - [ITPMVirtualSmartCardManagerStatusCallBack](/windows/win32/api/tpmvscmgr/nn-tpmvscmgr-itpmvirtualsmartcardmanagerstatuscallback)
 
-You can use APIs that were introduced in the Windows.Device.SmartCards namespace in Windows Server 2012 R2 and Windows 8.1 to build Microsoft Store apps to manage the full lifecycle of virtual smart cards. For information about how to build an app to do this, see [Strong Authentication: Building Apps That Leverage Virtual Smart Cards in Enterprise, BYOD, and Consumer Environments | Build 2013 | Channel 9](https://channel9.msdn.com/events/build/2013/2-041).
+You can use APIs in the `Windows.Device.SmartCards` namespace to build Microsoft Store apps to manage the full lifecycle of virtual smart cards. For information about how to build an app to do this, see [Strong Authentication: Building Apps That Leverage Virtual Smart Cards in Enterprise, BYOD, and Consumer Environments](https://channel9.msdn.com/events/build/2013/2-041).
 
 The following table describes the features that can be developed in a Microsoft Store app:
 
@@ -77,13 +76,12 @@ The PIN for a virtual smart card can be changed by following these steps:
 
 ### TPM not provisioned
 
-For a TPM-based virtual smart card to function properly, a provisioned TPM must be available on the computer. If the TPM is disabled in the BIOS, or it isn't provisioned with full ownership and the storage root key, the TPM virtual smart card creation will fail.
+For a TPM-based virtual smart card to function properly, a provisioned TPM must be available on the computer:
 
-If the TPM is initialized after creating a virtual smart card, the card will no longer function, and it will need to be re-created.
-
-If the TPM ownership was established on a Windows Vista installation, the TPM won't be ready to use virtual smart cards. The system administrator needs to clear and initialize the TPM for it to be suitable for creating TPM virtual smart cards.
-
-If the operating system is reinstalled, prior TPM virtual smart cards are no longer available and need to be re-created. If the operating system is upgraded, prior TPM virtual smart cards will be available to use in the upgraded operating system.
+- If the TPM is disabled in the BIOS, or it isn't provisioned with full ownership and the storage root key, the TPM virtual smart card creation fails
+- If the TPM is initialized after creating a virtual smart card, the card will no longer function, and it must be re-created
+- If the operating system is reinstalled, prior TPM virtual smart cards are no longer available and need to be re-created
+- If the operating system is upgraded, prior TPM virtual smart cards are available to use in the upgraded operating system
 
 ### TPM in lockout state
 

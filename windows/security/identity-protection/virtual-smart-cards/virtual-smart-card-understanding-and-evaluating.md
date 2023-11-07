@@ -30,11 +30,9 @@ All cryptographic operations occur in the secure, isolated environment of the TP
 
 Virtual smart cards maintain the three key properties of physical smart cards:
 
-- **Non-exportability**: Because all private information on the virtual smart card is encrypted by using the TPM on the host computer, it can't be used on a different computer with a different TPM. Additionally, TPMs are designed to be tamper-resistant and nonexportable, so a malicious user can't reverse engineer an identical TPM or install the same TPM on a different computer. For more information, see [Evaluate Virtual Smart Card Security](virtual-smart-card-evaluate-security.md).
-
-- **Isolated cryptography**: TPMs provide the same properties of isolated cryptography that are offered by physical smart cards, and this is utilized by virtual smart cards. Unencrypted copies of private keys are loaded only within the TPM and never into memory that is accessible by the operating system. All cryptographic operations with these private keys occur inside the TPM.
-
-- **Anti-hammering**: If a user enters a PIN incorrectly, the virtual smart card responds by using the anti-hammering logic of the TPM, which rejects further attempts for a period of time instead of blocking the card. This is also known as lockout. For more information, see [Evaluate Virtual Smart Card Security](virtual-smart-card-evaluate-security.md).
+- **Non-exportability**: Because all private information on the virtual smart card is encrypted by using the TPM on the host computer, it can't be used on a different computer with a different TPM. Additionally, TPMs are designed to be tamper-resistant and nonexportable, so a malicious user can't reverse engineer an identical TPM or install the same TPM on a different computer. For more information, see [Evaluate Virtual Smart Card Security](virtual-smart-card-evaluate-security.md)
+- **Isolated cryptography**: TPMs provide the same properties of isolated cryptography that are offered by physical smart cards, and this is utilized by virtual smart cards. Unencrypted copies of private keys are loaded only within the TPM and never into memory that is accessible by the operating system. All cryptographic operations with these private keys occur inside the TPM
+- **Anti-hammering**: If a user enters a PIN incorrectly, the virtual smart card responds by using the anti-hammering logic of the TPM, which rejects further attempts for a period of time instead of blocking the card. This is also known as lockout. For more information, see [Evaluate Virtual Smart Card Security](virtual-smart-card-evaluate-security.md)
 
 The following subsections compare the functionality, security, and cost of virtual smart cards and physical smart cards.
 

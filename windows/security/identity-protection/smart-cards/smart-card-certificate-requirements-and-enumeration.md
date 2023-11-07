@@ -18,7 +18,7 @@ When a smart card is inserted, the following steps are performed.
 1. A qualified container name is constructed by using the smart card reader name, and it's passed to the CSP. The format is `\\.<Reader name>\`
 1. CryptAcquireContext is called to retrieve a context to the default container. If a failure occurs, the smart card is unusable for smart card sign-in.
 1. The name of the container is retrieved by using the PP_CONTAINER parameter with CryptGetProvParam.
-1. Using the context acquired in Step 3, the CSP is queried for the PP_USER_CERTSTORE parameter (added in Windows Vista). For more information, see [Smart Card Architecture](smart-card-architecture.md). If the operation is successful, the name of a certificate store is returned, and the program flow skips to Step 8.
+1. Using the context acquired in Step 3, the CSP is queried for the PP_USER_CERTSTORE parameter. For more information, see [Smart Card Architecture](smart-card-architecture.md). If the operation is successful, the name of a certificate store is returned, and the program flow skips to Step 8.
 1. If the operation in Step 5 fails, the default container context from Step 3 is queried for the AT_KEYEXCHANGE key.
 1. The certificate is then queried from the key context by using KP_CERTIFICATE. The certificate is added to an in-memory certificate store.
 1. For each certificate in the certificate store from Step 5 or Step 7, the following checks are performed:
@@ -30,9 +30,6 @@ When a smart card is inserted, the following steps are performed.
     1. The certificate must have the smart card logon EKU.
 
     Any certificate that meets these requirements is displayed to the user with the certificate's UPN (or e-mail address or subject, depending on the presence of the certificate extensions).
-
-    > [!NOTE]
-    > These requirements are the same as those in Windows Server 2003, but they are performed before the user enters the PIN. You can override many of them by using Group Policy settings.
 
 1. The process then chooses a certificate, and the PIN is entered.
 1. LogonUI.exe packages the information and sends it to Lsass.exe to process the sign-in attempt.
@@ -63,7 +60,7 @@ Following are the steps that are performed during a smart card sign-in:
     1. Enumerates each card to verify that a sign-in certificate that is controlled by Group Policy is present. If the certificate is present, the smart card credential provider copies it into a temporary, secure cache on the computer or terminal.
 
     > [!NOTE]
-    > Smartcard cache entries are created for certificates with a subject name or with a subject key identifier. If the certificate has a subject name, it is stored with an index that is based on the subject name and certificate issuer. If another certificate with the same subject name and certificate issuer is used, it will replace the existing cached entry. A change in this behavior after Windows Vista, allows for the condition when the certificate does not have a subject name, the cache is created with an index that is based on the subject key identifier and certificate issuer. If another certificate has the same the subject key identifier and certificate issuer, the cache entry is replaced. When certificates have neither a subject name nor subject key identifier, a cached entry is not created.
+    > Smartcard cache entries are created for certificates with a subject name or with a subject key identifier. If the certificate has a subject name, it is stored with an index that is based on the subject name and certificate issuer. If another certificate with the same subject name and certificate issuer is used, it will replace the existing cached entry. A change in this behavior, allows for the condition when the certificate does not have a subject name, the cache is created with an index that is based on the subject key identifier and certificate issuer. If another certificate has the same the subject key identifier and certificate issuer, the cache entry is replaced. When certificates have neither a subject name nor subject key identifier, a cached entry is not created.
 
     1. Notifies the sign-in UI that it has new credentials.
 
@@ -124,8 +121,6 @@ Depending on the configuration of the domain controller, one of these types of c
 Certificate requirements are listed by versions of the Windows operating system. Certificate mapping describes how information from the certificate is mapped to the user account.
 
 ### Certificate requirements
-
-The smart card certificate has specific format requirements when it's used with Windows XP and earlier operating systems. You can enable any certificate to be visible for the smart card credential provider.
 
 | Component | Requirements |
 |--|--|
@@ -230,7 +225,7 @@ For sign-in to work in a smart card-based domain, the smart card certificate mus
   - A subject field that contains the DNS domain name in the distinguished name. If it doesn't, resolution to an appropriate domain fails, so Remote Desktop Services and the domain sign-in with the smart card fail
   - A UPN where the domain name resolves to the actual domain. For example, if the domain name is `Engineering.Corp.Contoso`, the UPN is `username@engineering.corp.contoso.com`. If any part of the domain name is omitted, the Kerberos client can't find the appropriate domain
 
-Although the HTTP CRL distribution points are on by default in Windows Server 2008, subsequent versions of the Windows Server operating system don't include HTTP CRL distribution points. To allow smart card sign-in to a domain in these versions, do the following:
+To allow smart card sign-in to a domain in these versions, do the following:
 
 1. Enable HTTP CRL distribution points on the CA
 1. Restart the CA

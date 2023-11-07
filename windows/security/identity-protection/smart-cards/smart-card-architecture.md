@@ -20,7 +20,7 @@ For smart cards, Windows supports a provider architecture that meets the secure 
 
 ## Credential provider architecture
 
-The following table lists the components that are included in the interactive sign-in architecture of the Windows Server and Windows operating systems.
+The following table lists the components that are included in the interactive sign-in architecture:
 
 | Component | Description |
 |--|--|
