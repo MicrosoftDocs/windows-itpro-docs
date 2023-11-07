@@ -40,7 +40,7 @@ Passkeys have several advantages over passwords, including their ease of use and
 
 ### Create a passkey
 
-By default, Windows offers to save the passkey locally on the **Windows device**, in which case the passkey is protected by Windows Hello (biometrics and PIN). You can also chose to save the passkey in one of the following locations:
+By default, Windows offers to save the passkey locally on the **Windows device**, in which case the passkey is protected by Windows Hello (biometrics and PIN). You can also choose to save the passkey in one of the following locations:
 
 - **iPhone, iPad or Android device**: the passkey is saved on a phone or tablet, protected by the device's biometrics, if offered by the device. This option requires you to scan a QR code with your phone or tablet, which must be in proximity of the Windows device
 - **Linked device**: the passkey is saved on a phone or tablet, protected by the device's biometrics, if offered by the device. This option requires the linked device to be in proximity of the Windows device, and it's only supported for Android devices
@@ -172,7 +172,7 @@ Pick one of the following options to learn how to save a passkey, based on where
 
 ### Use a passkey
 
-When you open a website or app that supports passkeys, if a passkey is stored locally, you're automatically prompted to use Windows Hello to sign in. You can also chose to use a passkey from one of the following locations:
+When you open a website or app that supports passkeys, if a passkey is stored locally, you're automatically prompted to use Windows Hello to sign in. You can also choose to use a passkey from one of the following locations:
 
 - **iPhone, iPad or Android device**: use this option if you want to sign in with a passkey stored on a phone or tablet. This option requires you to scan a QR code with your phone or tablet, which must be in proximity of the Windows device
 - **Linked device**: use this option if you want to sign in with a passkey stored on a device that is in proximity of the Windows device. This option is only supported for Android devices
