@@ -56,18 +56,16 @@ For more information about these Windows APIs, see:
 
 ## Distinguishing TPM-based virtual smart cards from physical smart cards
 
-To help users visually distinguish a Trusted Platform Module (TPM)-based virtual smart card from physical smart cards, the virtual smart card has a different icon. The following icon is displayed during sign-in, and on other screens that require the user to enter the PIN for a virtual smart card.
+To help users visually distinguish a Trusted Platform Module (TPM)-based virtual smart card from physical smart cards, the virtual smart card has a different icon. The virtual smart card icon :::image type="icon" source="images/virtual-smart-card-icon.svg" border="false"::: is displayed during sign-in, and on other screens that require the user to enter the PIN for a virtual smart card.
 
-![Icon for a virtual smart card.](images/vsc-virtual-smart-card-icon.png)
-
-A TPM-based virtual smart card is labeled **Security Device** in the user interface.
+A TPM-based virtual smart card is labeled *Security Device* in the user interface.
 
 ## Changing the PIN
 
 The PIN for a virtual smart card can be changed by following these steps:
 
 - Sign in with the old PIN or password
-- Press Ctrl+Alt+Del and choose **Change a password**
+- Press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Del</kbd> and select **Change a password**
 - Select **Sign-in Options**
 - Select the virtual smart card icon
 - Enter and confirm the new PIN
