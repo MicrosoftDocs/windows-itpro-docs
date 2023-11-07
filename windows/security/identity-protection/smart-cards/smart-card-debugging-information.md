@@ -1,10 +1,6 @@
 ---
 title: Smart Card Troubleshooting 
 description: Describes the tools and services that smart card developers can use to help identify certificate issues with the smart card deployment.
-ms.reviewer: ardenw
-ms.collection: 
-  - highpri
-  - tier2
 ms.topic: troubleshooting
 ms.date: 11/06/2023
 ---

@@ -1,7 +1,6 @@
 ---
 title: Understanding and Evaluating Virtual Smart Cards
 description: Learn how smart card technology can fit into your authentication design.
-ms.prod: windows-client
 ms.topic: conceptual
 ms.date: 11/06/2023
 ---
