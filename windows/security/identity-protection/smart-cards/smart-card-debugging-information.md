@@ -88,9 +88,7 @@ tracelog.exe -stop <*FriendlyName*>
 logman.exe -stop <*FriendlyName*> -ets
 ```
 
-#### Examples
-
-To stop a trace:
+For example, to stop a trace:
 
 ```cmd
 tracelog.exe -stop scardsvr
@@ -102,7 +100,7 @@ logman.exe -stop scardsvr -ets
 You can use these resources to troubleshoot these protocols and the KDC:
 
 - [Kerberos and LDAP Troubleshooting Tips](/previous-versions/tn-archive/bb463167(v=technet.10))
-- [Windows Driver Kit (WDK) and Debugging Tools for Windows (WinDbg)](https://developer.microsoft.com/en-us/windows/hardware/windows-driver-kit). You can use the trace log tool in this SDK to debug Kerberos authentication failures.
+- [Windows Driver Kit (WDK) and Debugging Tools for Windows (WinDbg)](https://developer.microsoft.com/windows/hardware/windows-driver-kit). You can use the trace log tool in this SDK to debug Kerberos authentication failures.
 
 To begin tracing, you can use `Tracelog`. Different components use different control GUIDs as explained in these examples. For more information, see [`Tracelog`](/windows-hardware/drivers/devtest/tracelog)
 

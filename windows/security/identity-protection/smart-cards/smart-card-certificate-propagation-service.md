@@ -21,8 +21,6 @@ The following figure shows the flow of the certificate propagation service. The 
 1. The arrow labeled **2** indicates the certification to the reader
 1. The arrow labeled **3** indicates the access to the certificate store during the client session
 
-### Certificate propagation service
-
 ![Certificate propagation service.](images/sc-image302.gif)
 
 1. A signed-in user inserts a smart card
@@ -38,9 +36,9 @@ Properties of the certificate propagation service include:
 - If the certificate has the `CERT_ENROLLMENT_PROP_ID` property (as defined by `wincrypt.h`), it filters empty requests and places them in the current user's request store, but it does not propagate them to the user's Personal store
 - The service does not propagate any computer certificates to a user's Personal store or propagate user certificates to a computer store
 - The service propagates certificates according to Group Policy options that are set, which may include:
-    - **Turn on certificate propagation from the smart card** specifies whether a user's certificate should be propagated
-    - **Turn on root certificate propagation from smart card** specifies whether root certificates should be propagated
-    - **Configure root certificate cleanup** specifies how root certificates are removed
+  - **Turn on certificate propagation from the smart card** specifies whether a user's certificate should be propagated
+  - **Turn on root certificate propagation from smart card** specifies whether root certificates should be propagated
+  - **Configure root certificate cleanup** specifies how root certificates are removed
 
 ## Root certificate propagation service
 

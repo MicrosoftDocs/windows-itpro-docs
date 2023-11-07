@@ -82,9 +82,9 @@ When this policy setting isn't turned on, only certificates that contain the sma
 
 ### Allow ECC certificates to be used for logon and authentication
 
-You can use this policy setting to control whether elliptic curve cryptography (ECC) certificates on a smart card can be used to sign in to a domain. 
+You can use this policy setting to control whether elliptic curve cryptography (ECC) certificates on a smart card can be used to sign in to a domain.
 
-When this setting is turned on, ECC certificates on a smart card can be used to sign in to a domain. 
+When this setting is turned on, ECC certificates on a smart card can be used to sign in to a domain.
 
 When this setting isn't turned on, ECC certificates on a smart card can't be used to sign in to a domain.
 
@@ -99,7 +99,7 @@ When this setting isn't turned on, ECC certificates on a smart card can't be use
 
 You can use this policy setting to determine whether the integrated unblock feature is available in the sign-in user interface (UI). The feature was introduced as a standard feature in the Credential Security Support Provider in Windows Vista.
 
-When this setting is turned on, the integrated unblock feature is available. 
+When this setting is turned on, the integrated unblock feature is available.
 
 When this setting isn't turned on, the feature is not available.
 
@@ -145,7 +145,7 @@ When this policy setting isn't turned on, certificates that are expired or not y
 
 You can use this policy setting to determine whether an optional field appears during sign-in and provides a subsequent elevation process where users can enter their username or username and domain, which associates a certificate with the user.
 
-When this policy setting is turned on, users see an optional field where they can enter their username or username and domain. 
+When this policy setting is turned on, users see an optional field where they can enter their username or username and domain.
 
 When this policy setting isn't turned on, users don't see this optional field.
 
@@ -177,7 +177,7 @@ When this policy setting isn't turned on, root certificates are automatically re
 
 You can use this policy setting to change the default message that a user sees if their smart card is blocked.
 
-When this policy setting is turned on, you can create and manage the displayed message that the user sees when a smart card is blocked. 
+When this policy setting is turned on, you can create and manage the displayed message that the user sees when a smart card is blocked.
 
 When this policy setting isn't turned on (and the integrated unblock feature is also enabled), the user sees the system's default message when the smart card is blocked.
 
@@ -189,14 +189,14 @@ When this policy setting isn't turned on (and the integrated unblock feature is 
 
 ### Filter duplicate logon certificates
 
-You can use this policy setting to configure which valid sign-in certificates are displayed. 
+You can use this policy setting to configure which valid sign-in certificates are displayed.
 
 > [!NOTE]
 > During the certificate renewal period, a user's smart card can have multiple valid sign-in certificates issued from the same certificate template, which can cause confusion about which certificate to select. This behavior can occur when a certificate is renewed and the old certificate has not expired yet.
-> 
+>
 > If two certificates are issued from the same template with the same major version and they are for the same user (this is determined by their UPN), they are determined to be the same.  
 
-When this policy setting is turned on, filtering occurs so that the user can select from only the most current valid certificates. 
+When this policy setting is turned on, filtering occurs so that the user can select from only the most current valid certificates.
 
 If this policy setting isn't turned on, all the certificates are displayed to the user.
 
@@ -292,7 +292,7 @@ When this policy setting is turned off, certificate propagation doesn't occur, a
 
 ### Turn on root certificate propagation from smart card
 
-You can use this policy setting to manage the root certificate propagation that occurs when a smart card is inserted. 
+You can use this policy setting to manage the root certificate propagation that occurs when a smart card is inserted.
 
 > [!NOTE]
 > The certificate propagation service applies when a signed-in user inserts a smart card in a reader that is attached to the computer. This action causes the certificate to be read from the smart card. The certificates are then added to the user's Personal store.
@@ -344,7 +344,7 @@ The registry keys for the smart card KSP are in `HKEY_LOCAL_MACHINE\SYSTEM\Contr
 | **RequireOnCardPrivateKeyGen** | This key sets the flag that requires on-card private key generation (default). If this value is set, a key generated on a host can be imported into the smart card. This is used for smart cards that don't support on-card key generation or where key escrow is required.<br>Default value: 00000000 |
 | **TransactionTimeoutMilliseconds** | Default timeout values allow you to specify whether transactions that take an excessive amount of time will fail.<br>Default value: 000005dc<br>The default timeout for holding transactions to the smart card is 1.5 seconds. |
 
-**Additional registry keys for the smart card KSP**
+Additional registry keys for the smart card KSP:
 
 | Registry Key | Description |
 |--|--|
@@ -354,8 +354,6 @@ The registry keys for the smart card KSP are in `HKEY_LOCAL_MACHINE\SYSTEM\Contr
 ## CRL checking registry keys
 
 The following table lists the keys and the corresponding values to turn off certificate revocation list (CRL) checking at the Key Distribution Center (KDC) or client. To manage CRL checking, you must configure settings for both the KDC and the client.
-
-### CRL checking registry keys
 
 | Registry Key | Details |
 |--|--|

@@ -248,8 +248,8 @@ For other operations, the caller may be able to acquire a *verify* context again
 
 1. If the specified container name is NULL, the default container is deleted. Deleting the default container causes a new default container to be selected arbitrarily. For this reason, this operation is not recommended
 1. For each smart card already known by the CSP, refresh the stored SCARDHANDLE and make the following checks:
-    1.  If the smart card does not have the named container, continue the search
-    1.  If the smart card has the named container, but the smart card handle is no longer valid, store the serial number of the matching smart card and pass it to SCardUI
+    1. If the smart card does not have the named container, continue the search
+    1. If the smart card has the named container, but the smart card handle is no longer valid, store the serial number of the matching smart card and pass it to SCardUI
 1. If a matching smart card is not found in the CSP cache, make a call to the smart card subsystem. The callback that is used to filter enumerated smart cards should verify that a candidate smart card has the named container. If a serial number was povided as a result of the previous cache search, the callback should filter enumerated smart cards on serial number rather than on container matches. If the context is non-silent and no suitable smart card is found, display UI that prompts the user to insert a smart card
 
 ### Base CSP and KSP-based architecture in Windows
@@ -265,11 +265,11 @@ The following diagram shows the Cryptography architecture that is used by the Wi
 
 | Property | Description |
 |--|--|
-| `PP_USER_CERTSTORE` | -   Used to return an `HCERTSTORE` that contains all user certificates on the smart card<br>- Read-only (used only by `CryptGetProvParam`)<br>- Caller responsible for closing the certificate store<br>- Certificate encoded using `PKCS_7_ASN_ENCODING` or `X509_ASN_ENCODING`<br>- CSP should set `KEY_PROV_INFO` on certificates<br>- Certificate store should be assumed to be an in-memory store<br>- Certificates should have a valid `CRYPT_KEY_PROV_INFO` as a property |
-| `PP_ROOT_CERTSTORE` | -   Read and Write (used by `CryptGetProvParam` and `CryptSetProvParam`)<br>- Used to write a collection of root certificates to the smart card or return `HCERTSTORE`, which contains root certificates from the smart card<br>- Used primarily for joining a domain by using a smart card<br>- Caller responsible for closing the certificate store |
-| `PP_SMARTCARD_READER` | -   Read-only (used only by `CryptGetProvParam`)<br>- Returns the smart card reader name as an ANSI string that is used to construct a fully qualified container name (that is, a smart card reader plus a container) |
-| `PP_SMARTCARD_GUID `| -   Return smart card GUID (also known as a serial number), which should be unique for each smart card<br>- Used by the certificate propagation service to track the source of a root certificate |
-| `PP_UI_PROMPT` | -   Used to set the search string for the `SCardUIDlgSelectCard` card insertion dialog box<br>- Persistent for the entire process when it is set<br>- Write-only (used only by `CryptSetProvParam`) |
+| `PP_USER_CERTSTORE` | - Used to return an `HCERTSTORE` that contains all user certificates on the smart card<br>- Read-only (used only by `CryptGetProvParam`)<br>- Caller responsible for closing the certificate store<br>- Certificate encoded using `PKCS_7_ASN_ENCODING` or `X509_ASN_ENCODING`<br>- CSP should set `KEY_PROV_INFO` on certificates<br>- Certificate store should be assumed to be an in-memory store<br>- Certificates should have a valid `CRYPT_KEY_PROV_INFO` as a property |
+| `PP_ROOT_CERTSTORE` | - Read and Write (used by `CryptGetProvParam` and `CryptSetProvParam`)<br>- Used to write a collection of root certificates to the smart card or return `HCERTSTORE`, which contains root certificates from the smart card<br>- Used primarily for joining a domain by using a smart card<br>- Caller responsible for closing the certificate store |
+| `PP_SMARTCARD_READER` | - Read-only (used only by `CryptGetProvParam`)<br>- Returns the smart card reader name as an ANSI string that is used to construct a fully qualified container name (that is, a smart card reader plus a container) |
+| `PP_SMARTCARD_GUID` | - Return smart card GUID (also known as a serial number), which should be unique for each smart card<br>- Used by the certificate propagation service to track the source of a root certificate |
+| `PP_UI_PROMPT` | - Used to set the search string for the `SCardUIDlgSelectCard` card insertion dialog box<br>- Persistent for the entire process when it is set<br>- Write-only (used only by `CryptSetProvParam`) |
 
 ### Implications for CSPs in Windows
 

@@ -157,7 +157,7 @@ Similar to physical smart cards, virtual smart cards require certificate enrollm
 
 #### Certificate issuance
 
-Users can enroll for certificates from within a remote desktop session that is established to provision the card. This process can also be managed by the smart card management tool that the user runs through the remote desktop connection. This model works for deployments that require the user to sign a request for enrollment by using a physical smart card. The driver for the physical smart card doesn't need to be installed on the client computer if it's installed on the remote computer. This is made possible by smart card redirection functionality that was introduced in Windows Server 2003, which ensures that smart cards that are connected to the client computer are available for use during a remote session.
+Users can enroll for certificates from within a remote desktop session that is established to provision the card. This process can also be managed by the smart card management tool that the user runs through the remote desktop connection. This model works for deployments that require the user to sign a request for enrollment by using a physical smart card. The driver for the physical smart card doesn't need to be installed on the client computer if it's installed on the remote computer. This is made possible by smart card redirection functionality, which ensures that smart cards that are connected to the client computer are available for use during a remote session.
 
 Alternatively, without establishing a remote desktop connection, users can enroll for certificates from the Certificate Management console (certmgr.msc) on a client computer. Users can also create a request and submit it to a server from within a custom certificate enrollment application (for example, a registration authority) that has controlled access to the certification authority (CA). This requires specific enterprise configuration and deployments for Certificate Enrollment Policies (CEP) and Certificate Enrollment Services (CES).
 
@@ -211,9 +211,7 @@ For deployments that require users to use a physical smart card to sign the cert
 
 Another option to ensure that users are strongly authenticated before virtual smart card certificates are issued, is to send a user a one-time password through SMS, email, or phone. The user then types the one-time password during the certificate enrollment from an application or a script on a desktop that invokes built-in command-line tools.
 
-#### Certificate lifecycle management
-
-Certificate renewal can be done from the same tools that are used for the initial certificate enrollment. Certificate enrollment policies and certificate enrollment services can also be used to perform automatic renewal.
+**Certificate lifecycle management**: certificate renewal can be done from the same tools that are used for the initial certificate enrollment. Certificate enrollment policies and certificate enrollment services can also be used to perform automatic renewal.
 
 Certificate revocation requires careful planning. When information about the certificate to be revoked is reliably available, the specific certificate can be easily revoked. When information about the certificate to be revoked isn't easy to determine, all certificates issued to the user under the policy that was used to issue the certificate might need to be revoked. For example, if an employee reports a lost or compromised device, and information that associates the device with a certificate isn't available.
 

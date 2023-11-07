@@ -29,35 +29,31 @@ To create and delete TPM virtual smart cards for end users, the Tpmvscmgr comman
 
 Virtual smart cards can also be created and deleted by using APIs. For more information, see the following classes and interfaces:
 
--   [TpmVirtualSmartCardManager](/previous-versions/windows/desktop/legacy/hh707171(v=vs.85))
-
--   [RemoteTpmVirtualSmartCardManager](/previous-versions/windows/desktop/legacy/hh707166(v=vs.85))
-
--   [ITpmVirtualSmartCardManager](/windows/win32/api/tpmvscmgr/nn-tpmvscmgr-itpmvirtualsmartcardmanager)
-
--   [ITPMVirtualSmartCardManagerStatusCallBack](/windows/win32/api/tpmvscmgr/nn-tpmvscmgr-itpmvirtualsmartcardmanagerstatuscallback)
+- [TpmVirtualSmartCardManager](/previous-versions/windows/desktop/legacy/hh707171(v=vs.85))
+- [RemoteTpmVirtualSmartCardManager](/previous-versions/windows/desktop/legacy/hh707166(v=vs.85))
+- [ITpmVirtualSmartCardManager](/windows/win32/api/tpmvscmgr/nn-tpmvscmgr-itpmvirtualsmartcardmanager)
+- [ITPMVirtualSmartCardManagerStatusCallBack](/windows/win32/api/tpmvscmgr/nn-tpmvscmgr-itpmvirtualsmartcardmanagerstatuscallback)
 
 You can use APIs that were introduced in the Windows.Device.SmartCards namespace in Windows Server 2012 R2 and Windows 8.1 to build Microsoft Store apps to manage the full lifecycle of virtual smart cards. For information about how to build an app to do this, see [Strong Authentication: Building Apps That Leverage Virtual Smart Cards in Enterprise, BYOD, and Consumer Environments | Build 2013 | Channel 9](https://channel9.msdn.com/events/build/2013/2-041).
 
 The following table describes the features that can be developed in a Microsoft Store app:
 
-| Feature                                      | Physical Smart Card | Virtual Smart Card |
-|----------------------------------------------|---------------------|--------------------|
-| Query and monitor smart card readers              | Yes                      | Yes                     |
-| List available smart cards in a reader, and retrieve the card name and card ID                 | Yes           | Yes        |
-| Verify if the administrative key of a card is correct      | Yes                      | Yes                     |
-| Provision (or reformat) a card with a given card ID        | Yes                      | Yes                     |
-| Change the PIN by entering the old PIN and specifying a new PIN      | Yes                      | Yes                     |
-| Change the administrative key, reset the PIN, or unblock the smart card by using a challenge/response method | Yes     | Yes      |
-| Create a virtual smart card                       | Not applicable           | Yes                     |
-| Delete a virtual smart card                       | Not applicable           | Yes                     |
-| Set PIN policies                                  | No                       | Yes                     |
+| Feature | Physical Smart Card | Virtual Smart Card |
+|--|--|--|
+| Query and monitor smart card readers | Yes | Yes |
+| List available smart cards in a reader, and retrieve the card name and card ID | Yes | Yes |
+| Verify if the administrative key of a card is correct | Yes | Yes |
+| Provision (or reformat) a card with a given card ID | Yes | Yes |
+| Change the PIN by entering the old PIN and specifying a new PIN | Yes | Yes |
+| Change the administrative key, reset the PIN, or unblock the smart card by using a challenge/response method | Yes | Yes |
+| Create a virtual smart card | Not applicable | Yes |
+| Delete a virtual smart card | Not applicable | Yes |
+| Set PIN policies | No | Yes |
 
 For more information about these Windows APIs, see:
 
--   [Windows.Devices.SmartCards namespace (Windows)](/uwp/api/Windows.Devices.SmartCards)
-
--   [Windows.Security.Cryptography.Certificates namespace (Windows)](/uwp/api/Windows.Security.Cryptography.Certificates)
+- [Windows.Devices.SmartCards namespace (Windows)](/uwp/api/Windows.Devices.SmartCards)
+- [Windows.Security.Cryptography.Certificates namespace (Windows)](/uwp/api/Windows.Security.Cryptography.Certificates)
 
 ## Distinguishing TPM-based virtual smart cards from physical smart cards
 
@@ -70,11 +66,13 @@ A TPM-based virtual smart card is labeled **Security Device** in the user interf
 ## Changing the PIN
 
 The PIN for a virtual smart card can be changed by following these steps:
-- Sign in with the old PIN or password.
-- Press Ctrl+Alt+Del and choose **Change a password**.
-- Select **Sign-in Options**.
-- Select the virtual smart card icon.
-- Enter and confirm the new PIN.
+
+- Sign in with the old PIN or password
+- Press Ctrl+Alt+Del and choose **Change a password**
+- Select **Sign-in Options**
+- Select the virtual smart card icon
+- Enter and confirm the new PIN
+
 ## Resolving issues
 
 ### TPM not provisioned

@@ -15,7 +15,7 @@ When a smart card is inserted, the following steps are performed.
 > Unless otherwise mentioned, all operations are performed silently (CRYPT_SILENT is passed to CryptAcquireContext).
 
 1. The smart card resource manager database searches for the smart card's cryptographic service provider (CSP).
-1. A qualified container name is constructed by using the smart card reader name, and it is passed to the CSP. The format is *\\.<Reader name>\
+1. A qualified container name is constructed by using the smart card reader name, and it is passed to the CSP. The format is `\\.<Reader name>\`
 1. CryptAcquireContext is called to retrieve a context to the default container. If a failure occurs, the smart card will be unusable for smart card sign-in.
 1. The name of the container is retrieved by using the PP_CONTAINER parameter with CryptGetProvParam.
 1. Using the context acquired in Step 3, the CSP is queried for the PP_USER_CERTSTORE parameter (added in Windows Vista). For more information, see [Smart Card Architecture](smart-card-architecture.md). If the operation is successful, the name of a certificate store is returned, and the program flow skips to Step 8.
@@ -84,13 +84,13 @@ Following are the steps that are performed during a smart card sign-in:
 1. The KDC service retrieves user account information from AD DS. The KDC constructs a TGT, which is based on the user account information that it retrieves from AD DS. The TGT's authorization data fields include the user's security identifier (SID), the SIDs for universal and global domain groups to which the user belongs, and (in a multidomain environment) the SIDs for any universal groups of which the user is a member.
 1. The domain controller returns the TGT to the client as part of the KRB_AS_REP response.
 
-        > [!NOTE]
-        > The KRB_AS_REP packet consists of:
-        > - Privilege attribute certificate (PAC)
-        > - User's SID
-        > - SIDs of any groups of which the user is a member
-        > - A request for ticket-granting service (TGS)
-        > - Preauthentication data
+    > [!NOTE]
+    > The KRB_AS_REP packet consists of:
+    > - Privilege attribute certificate (PAC)
+    > - User's SID
+    > - SIDs of any groups of which the user is a member
+    > - A request for ticket-granting service (TGS)
+    > - Preauthentication data
 
     TGT is encrypted with the master key of the KDC, and the session key is encrypted with a temporary key. This temporary key is derived based on RFC 4556. Using CryptoAPI, the temporary key is decrypted. As part of the decryption process, if the private key is on a smart card, a call is made to the smart card subsystem by using the specified CSP to extract the certificate corresponding to the user's public key. (Programmatic calls for the certificate include CryptAcquireContext, CryptSetProvParam with the PIN, CryptgetUserKey, and CryptGetKeyParam.) After the temporary key is obtained, the Kerberos SSP decrypts the session key.
 
@@ -150,7 +150,7 @@ SSL/TLS can map certificates that do not have SAN, and the mapping is done by us
 
 ![Certificate revocation list distribution points.](images/sc-image403.png)
 
-####  UPN in Subject Alternative Name field
+#### UPN in Subject Alternative Name field
 
 ![UPN in Subject Alternative Name field.](images/sc-image404.png)
 
