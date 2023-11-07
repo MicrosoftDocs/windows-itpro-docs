@@ -9,7 +9,7 @@ ms.date: 11/06/2023
 
 This topic for the IT professional describes the system architecture that supports smart cards in the Windows operating system, including credential provider architecture and the smart card subsystem architecture.
 
-Authentication is a process for verifying the identity of an object or person. When you authenticate an object, such as a smart card, the goal is to verify that the object is genuine. When you authenticate a person, the goal is to verify that you are not dealing with an imposter.
+Authentication is a process for verifying the identity of an object or person. When you authenticate an object, such as a smart card, the goal is to verify that the object is genuine. When you authenticate a person, the goal is to verify that you aren't dealing with an imposter.
 
 In a networking context, authentication is the act of proving identity to a network application or resource. Typically, identity is proven by a cryptographic operation that uses a key only the user knows (such as with public key cryptography), or a shared key. The server side of the authentication exchange compares the signed data with a known cryptographic key to validate the authentication attempt. Storing the cryptographic keys in a secure central location makes the authentication process scalable and maintainable.
 
@@ -51,7 +51,7 @@ Credential providers can be designed to support single sign-in (SSO). In this pr
 
 Multiple credential providers can coexist on a computer.
 
-Credential providers must be registered on a computer running Windows, and they are responsible for:
+Credential providers must be registered on a computer running Windows, and they're responsible for:
 
 - Describing the credential information that is required for authentication
 - Handling communication and logic with external authentication authorities
@@ -74,7 +74,7 @@ The following graphic shows the relationship between the CryptoAPI, CSPs, the Sm
 
 ### Caching with Base CSP and smart card KSP
 
-Smart card architecture uses caching mechanisms to assist in streamlining operations and to improve a user's access to a PIN.
+Smart card architecture uses caching mechanisms to help streamlining operations and to improve a user's access to a PIN.
 
 - [Data caching](#data-caching): The data cache provides for a single process to minimize smart card I/O operations
 - [PIN caching](#pin-caching): The PIN cache helps the user from having to reenter a PIN each time the smart card is unauthenticated
@@ -87,8 +87,8 @@ The existing global cache works as follows:
 
 1. The application requests a cryptographic operation. For example, a user certificate is to be read from the smart card
 1. The CSP checks its cache for the item
-1. If the item is not found in the cache, or if the item is cached but is not up-to-date, the item is read from the smart card
-1. After any item has been read from the smart card, it is added to the cache. Any existing out-of-date copy of that item is replaced
+1. If the item isn't found in the cache, or if the item is cached but isn't up-to-date, the item is read from the smart card
+1. After any item has been read from the smart card, it's added to the cache. Any existing out-of-date copy of that item is replaced
 
 Three types of objects or data are cached by the CSP: pins (for more information, see [PIN caching](#pin-caching)), certificates, and files. If any of the cached data changes, the corresponding object is read from the smart card in successive operations. For example, if a file is written to the smart card, the CSP cache becomes out-of-date for the files, and other processes read the smart card at least once to refresh their CSP cache.
 
@@ -98,7 +98,7 @@ The global data cache is hosted in the Smart Cards for Windows service. Windows 
 
 The PIN cache protects the user from entering a PIN every time the smart card is unauthenticated. After a smart card is authenticated, it will not differentiate among host-side applications—any application can access private data on the smart card.
 
-To mitigate this, the smart card enters an exclusive state when an application authenticates to the smart card. However, this means that other applications cannot communicate with the smart card and will be blocked. Therefore, such exclusive connections are minimized. The issue is that a protocol (such as the Kerberos protocol) requires multiple signing operations. Therefore, the protocol requires exclusive access to the smart card over an extended period, or it requires multiple authentication operations. This is where the PIN cache is used to minimize exclusive use of the smart card without forcing the user to enter a PIN multiple times.
+To mitigate this, the smart card enters an exclusive state when an application authenticates to the smart card. However, this means that other applications can't communicate with the smart card and will be blocked. Therefore, such exclusive connections are minimized. The issue is that a protocol (such as the Kerberos protocol) requires multiple signing operations. Therefore, the protocol requires exclusive access to the smart card over an extended period, or it requires multiple authentication operations. This is where the PIN cache is used to minimize exclusive use of the smart card without forcing the user to enter a PIN multiple times.
 
 The following example illustrates how this works. In this scenario, there are two applications: Outlook and Internet Explorer. The applications use smart cards for different purposes.
 
@@ -108,13 +108,13 @@ The following example illustrates how this works. In this scenario, there are tw
 1. The user opens Internet Explorer and tries to access a protected site that requires Transport Layer Security (TLS) authentication for the client
 1. Internet Explorer prompts the user for the smart card PIN. The user enters the correct PIN
 1. The TLS-related private key operation occurs on the smart card, and the user is authenticated and signed in
-1. The user returns to Outlook to send another signed e-mail. This time, the user is not prompted for a PIN because the PIN is cached from the previous operation. Similarly, if the user uses Internet Explorer again for another operation, Internet Explorer will not prompt the user for a PIN
+1. The user returns to Outlook to send another signed e-mail. This time, the user isn't prompted for a PIN because the PIN is cached from the previous operation. Similarly, if the user uses Internet Explorer again for another operation, Internet Explorer won't prompt the user for a PIN
 
 The Base CSP internally maintains a per-process cache of the PIN. The PIN is encrypted and stored in memory. The functions that are used to secure the PIN are RtlEncryptMemory, RtlDecryptMemory, and RtlSecureZeroMemory, which will empty buffers that contained the PIN.
 
 ### Smart card selection
 
-The following sections in this topic describe how Windows leverages the smart card architecture to select the correct smart card reader software, provider, and credentials for a successful smart card sign-in:
+The following sections in this article describe how Windows uses the smart card architecture to select the correct smart card reader software, provider, and credentials for a successful smart card sign-in:
 
 - [Container specification levels](#container-specification-levels)
 - [Container operations](#container-operations)
@@ -202,10 +202,10 @@ Each call to `SCardUI *` may result in additional information read from a candid
 
 For type I and type II container specification levels, the smart card selection process is less complex because only the smart card in the named reader can be considered a match. The process for matching a smart card with a smart card reader is:
 
-1. Find the requested smart card reader. If it cannot be found, the process fails (this requires a cache search by reader name)
-1. If no smart card is in the reader, the user is prompted to insert a smart card. (this is only in non-silent mode; if the call is made in silent mode, it will fail)
+1. Find the requested smart card reader. If it can't be found, the process fails (this requires a cache search by reader name)
+1. If no smart card is in the reader, the user is prompted to insert a smart card. (this is only in nonsilent mode; if the call is made in silent mode, it fails)
 1. For container specification level II only, the name of the default container on the chosen smart card is determined
-1. To open an existing container or delete an existing container, find the specified container. If the specified container cannot be found on this smart card, the user is prompted to insert a smart card
+1. To open an existing container or delete an existing container, find the specified container. If the specified container can't be found on this smart card, the user is prompted to insert a smart card
 1. If the system attempts to create a new container, if the specified container already exists on this smart card, the process fails
 
 #### Make a smart card match
@@ -217,23 +217,23 @@ For container specification levels III and IV, a broader method is used to match
 > [!NOTE]
 > This operation requires that you use the smart card with the Base CSP.
 
-1. For each smart card that has been accessed by the Base CSP and the handle and container information are cached, the Base CSP looks for a valid default container. An operation is attempted on the cached SCARDHANDLE to verify its validity. If the smart card handle is not valid, the Base CSP continues to search for a new smart card
-1. If a matching smart card is not found in the Base CSP cache, the Base CSP calls to the smart card subsystem. SCardUIDlgSelectCard() is used with an appropriate callback filter to find a matching smart card with a valid default container
+1. For each smart card that has been accessed by the Base CSP and the handle and container information are cached, the Base CSP looks for a valid default container. An operation is attempted on the cached SCARDHANDLE to verify its validity. If the smart card handle isn't valid, the Base CSP continues to search for a new smart card
+1. If a matching smart card isn't found in the Base CSP cache, the Base CSP calls to the smart card subsystem. SCardUIDlgSelectCard() is used with an appropriate callback filter to find a matching smart card with a valid default container
 
 #### Open an existing GUID-named container (no reader specified)
 
 > [!NOTE]
 > This operation requires that you use the smart card with the Base CSP.
 
-1. For each smart card that is already registered with the Base CSP, search for the requested container. Attempt an operation on the cached SCARDHANDLE to verify its validity. If the smart card handle is not valid, the smart card's serial number is passed to the `SCardUI *` API to continue searching for this specific smart card (rather than only a general match for the container name)
-1. If a matching smart card is not found in the Base CSP cache, a call is made to the smart card subsystem. `SCardUIDlgSelectCard()` is used with an appropriate callback filter to find a matching smart card with the requested container. Or, if a smart card serial number resulted from the search in Step 1, the callback filter attempts to match the serial number, not the container name
+1. For each smart card that is already registered with the Base CSP, search for the requested container. Attempt an operation on the cached SCARDHANDLE to verify its validity. If the smart card handle isn't valid, the smart card's serial number is passed to the `SCardUI *` API to continue searching for this specific smart card (rather than only a general match for the container name)
+1. If a matching smart card isn't found in the Base CSP cache, a call is made to the smart card subsystem. `SCardUIDlgSelectCard()` is used with an appropriate callback filter to find a matching smart card with the requested container. Or, if a smart card serial number resulted from the search in Step 1, the callback filter attempts to match the serial number, not the container name
 
 #### Create a new container (no reader specified)
 
 > [!NOTE]
 > This operation requires that you use the smart card with the Base CSP.
 
-If the PIN is not cached, no CRYPT_SILENT is allowed for the container creation because the user must be prompted for a PIN, at a minimum.
+If the PIN isn't cached, no CRYPT_SILENT is allowed for the container creation because the user must be prompted for a PIN, at a minimum.
 
 For other operations, the caller may be able to acquire a *verify* context against the default container `CRYPT_DEFAULT_CONTAINER_OPTIONAL` and then make a call with CryptSetProvParam to cache the user PIN for subsequent operations.
 
@@ -242,15 +242,15 @@ For other operations, the caller may be able to acquire a *verify* context again
     1. If the smart card is present, but it already has the named container, continue the search
     1. If the smart card is available, but a call to CardQueryFreeSpace indicates that the smart card has insufficient storage for an additional key container, continue the search
     1. Otherwise, use the first available smart card that meets the above criteria for the container creation
-1. If a matching smart card is not found in the CSP cache, make a call to the smart card subsystem. The callback that is used to filter enumerated smart cards verifies that a candidate smart card does not already have the named container, and that CardQueryFreeSpace indicates the smart card has sufficient space for an additional container. If no suitable smart card is found, the user is prompted to insert a smart card
+1. If a matching smart card isn't found in the CSP cache, make a call to the smart card subsystem. The callback that is used to filter enumerated smart cards verifies that a candidate smart card doesn't already have the named container, and that CardQueryFreeSpace indicates the smart card has sufficient space for an additional container. If no suitable smart card is found, the user is prompted to insert a smart card
 
 #### Delete a container
 
-1. If the specified container name is NULL, the default container is deleted. Deleting the default container causes a new default container to be selected arbitrarily. For this reason, this operation is not recommended
+1. If the specified container name is NULL, the default container is deleted. Deleting the default container causes a new default container to be selected arbitrarily. For this reason, this operation isn't recommended
 1. For each smart card already known by the CSP, refresh the stored SCARDHANDLE and make the following checks:
-    1. If the smart card does not have the named container, continue the search
+    1. If the smart card doesn't have the named container, continue the search
     1. If the smart card has the named container, but the smart card handle is no longer valid, store the serial number of the matching smart card and pass it to SCardUI
-1. If a matching smart card is not found in the CSP cache, make a call to the smart card subsystem. The callback that is used to filter enumerated smart cards should verify that a candidate smart card has the named container. If a serial number was povided as a result of the previous cache search, the callback should filter enumerated smart cards on serial number rather than on container matches. If the context is non-silent and no suitable smart card is found, display UI that prompts the user to insert a smart card
+1. If a matching smart card isn't found in the CSP cache, make a call to the smart card subsystem. The callback that is used to filter enumerated smart cards should verify that a candidate smart card has the named container. If a serial number was povided as a result of the previous cache search, the callback should filter enumerated smart cards on serial number rather than on container matches. If the context is non-silent and no suitable smart card is found, display UI that prompts the user to insert a smart card
 
 ### Base CSP and KSP-based architecture in Windows
 
@@ -269,16 +269,16 @@ The following diagram shows the Cryptography architecture that is used by the Wi
 | `PP_ROOT_CERTSTORE` | - Read and Write (used by `CryptGetProvParam` and `CryptSetProvParam`)<br>- Used to write a collection of root certificates to the smart card or return `HCERTSTORE`, which contains root certificates from the smart card<br>- Used primarily for joining a domain by using a smart card<br>- Caller responsible for closing the certificate store |
 | `PP_SMARTCARD_READER` | - Read-only (used only by `CryptGetProvParam`)<br>- Returns the smart card reader name as an ANSI string that is used to construct a fully qualified container name (that is, a smart card reader plus a container) |
 | `PP_SMARTCARD_GUID` | - Return smart card GUID (also known as a serial number), which should be unique for each smart card<br>- Used by the certificate propagation service to track the source of a root certificate |
-| `PP_UI_PROMPT` | - Used to set the search string for the `SCardUIDlgSelectCard` card insertion dialog box<br>- Persistent for the entire process when it is set<br>- Write-only (used only by `CryptSetProvParam`) |
+| `PP_UI_PROMPT` | - Used to set the search string for the `SCardUIDlgSelectCard` card insertion dialog box<br>- Persistent for the entire process when it's set<br>- Write-only (used only by `CryptSetProvParam`) |
 
 ### Implications for CSPs in Windows
 
-Cryptographic Service Providers (CSPs), including custom smart card CSPs, continue to be supported but this approach is not recommended. Using the existing Base CSP and smart card KSP with the smart card minidriver model for smart cards provides significant benefits in terms of performance, and PIN and data caching. One minidriver can be configured to work under CryptoAPI and CNG layers. This provides benefits from enhanced cryptographic support, including elliptic curve cryptography and AES.
+Cryptographic Service Providers (CSPs), including custom smart card CSPs, continue to be supported but this approach isn't recommended. Using the existing Base CSP and smart card KSP with the smart card minidriver model for smart cards provides significant benefits in terms of performance, and PIN and data caching. One minidriver can be configured to work under CryptoAPI and CNG layers. This provides benefits from enhanced cryptographic support, including elliptic curve cryptography and AES.
 
 If a smart card is registered by a CSP and a smart card minidriver, the one that was installed most recently will be used to communicate with the smart card.
 
 ### Write a smart card minidriver, CSP, or KSP
 
-CSPs and KSPs are meant to be written only if specific functionality is not available in the current smart card minidriver architecture. For example, the smart card minidriver architecture supports hardware security modules, so a minidriver could be written for a hardware security module, and a CSP or KSP may not be required unless it is needed to support algorithms that are not implemented in the Base CSP or smart card KSP.
+CSPs and KSPs are meant to be written only if specific functionality isn't available in the current smart card minidriver architecture. For example, the smart card minidriver architecture supports hardware security modules, so a minidriver could be written for a hardware security module, and a CSP or KSP may not be required unless it's needed to support algorithms that aren't implemented in the Base CSP or smart card KSP.
 
 For more information about how to write a smart card minidriver, CSP, or KSP, see [Smart Card Minidrivers](/windows-hardware/drivers/smartcard/smart-card-minidrivers).

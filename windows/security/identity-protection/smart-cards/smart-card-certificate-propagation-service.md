@@ -33,23 +33,23 @@ The following figure shows the flow of the certificate propagation service. The 
 Properties of the certificate propagation service include:
 
 - `CERT_STORE_ADD_REPLACE_EXISTING_INHERIT_PROPERTIES` adds certificates to a user's Personal store
-- If the certificate has the `CERT_ENROLLMENT_PROP_ID` property (as defined by `wincrypt.h`), it filters empty requests and places them in the current user's request store, but it does not propagate them to the user's Personal store
-- The service does not propagate any computer certificates to a user's Personal store or propagate user certificates to a computer store
-- The service propagates certificates according to Group Policy options that are set, which may include:
+- If the certificate has the `CERT_ENROLLMENT_PROP_ID` property (as defined by `wincrypt.h`), it filters empty requests and places them in the current user's request store, but it doesn't propagate them to the user's Personal store
+- The service doesn't propagate any computer certificates to a user's Personal store or propagate user certificates to a computer store
+- The service propagates certificates according to Group Policy options that are set, which might include:
   - **Turn on certificate propagation from the smart card** specifies whether a user's certificate should be propagated
   - **Turn on root certificate propagation from smart card** specifies whether root certificates should be propagated
   - **Configure root certificate cleanup** specifies how root certificates are removed
 
 ## Root certificate propagation service
 
-Root certificate propagation is responsible for the following smart card deployment scenarios when public key infrastructure (PKI) trust has not yet been established:
+Root certificate propagation is responsible for the following smart card deployment scenarios when public key infrastructure (PKI) trust hasn't yet been established:
 
 - Joining the domain
 - Accessing a network remotely
 
-In both cases, the computer is not joined to a domain, and therefore, trust is not being managed by Group Policy. However, the objective is to authenticate to a remote server, such as the domain controller. Root certificate propagation provides the ability to use the smart card to include the missing trust chain.
+In both cases, the computer isn't joined to a domain, and therefore, trust isn't being managed by Group Policy. However, the objective is to authenticate to a remote server, such as the domain controller. Root certificate propagation provides the ability to use the smart card to include the missing trust chain.
 
-When the smart card is inserted, the certificate propagation service propagates any root certificates on the card to the trusted smart card root computer certificate stores. This process establishes a trust relationship with the enterprise resources. You may also use a subsequent cleanup action when the user's smart card is removed from the reader, or when the user signs out. This is configurable with Group Policy. For more information, see [Smart Card Group Policy and Registry Settings](smart-card-group-policy-and-registry-settings.md).
+When the smart card is inserted, the certificate propagation service propagates any root certificates on the card to the trusted smart card root computer certificate stores. This process establishes a trust relationship with the enterprise resources. You might also use a subsequent cleanup action when the user's smart card is removed from the reader, or when the user signs out. This is configurable with Group Policy. For more information, see [Smart Card Group Policy and Registry Settings](smart-card-group-policy-and-registry-settings.md).
 
 For more information about root certificate requirements, see [Smart card root certificate requirements for use with domain sign-in](smart-card-certificate-requirements-and-enumeration.md#smart-card-root-certificate-requirements-for-use-with-domain-sign-in).
 

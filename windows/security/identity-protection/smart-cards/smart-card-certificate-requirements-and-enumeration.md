@@ -15,8 +15,8 @@ When a smart card is inserted, the following steps are performed.
 > Unless otherwise mentioned, all operations are performed silently (CRYPT_SILENT is passed to CryptAcquireContext).
 
 1. The smart card resource manager database searches for the smart card's cryptographic service provider (CSP).
-1. A qualified container name is constructed by using the smart card reader name, and it is passed to the CSP. The format is `\\.<Reader name>\`
-1. CryptAcquireContext is called to retrieve a context to the default container. If a failure occurs, the smart card will be unusable for smart card sign-in.
+1. A qualified container name is constructed by using the smart card reader name, and it's passed to the CSP. The format is `\\.<Reader name>\`
+1. CryptAcquireContext is called to retrieve a context to the default container. If a failure occurs, the smart card is unusable for smart card sign-in.
 1. The name of the container is retrieved by using the PP_CONTAINER parameter with CryptGetProvParam.
 1. Using the context acquired in Step 3, the CSP is queried for the PP_USER_CERTSTORE parameter (added in Windows Vista). For more information, see [Smart Card Architecture](smart-card-architecture.md). If the operation is successful, the name of a certificate store is returned, and the program flow skips to Step 8.
 1. If the operation in Step 5 fails, the default container context from Step 3 is queried for the AT_KEYEXCHANGE key.
@@ -40,13 +40,13 @@ When a smart card is inserted, the following steps are performed.
 
 ## Smart card sign-in flow in Windows
 
-Most issues during authentication occur because of session behavior changes. When changes occur, the Local Security Authority (LSA) does not reacquire the session context; it relies instead on the Cryptographic Service Provider to handle the session change.
+Most issues during authentication occur because of session behavior changes. When changes occur, the Local Security Authority (LSA) doesn't reacquire the session context; it relies instead on the Cryptographic Service Provider to handle the session change.
 
-Client certificates that do not contain a UPN in the `subjectAltName`` (SAN) field of the certificate can be enabled for sign-in, which supports a wider variety of certificates and supports multiple sign-in certificates on the same card.
+Client certificates that don't contain a UPN in the `subjectAltName`` (SAN) field of the certificate can be enabled for sign-in, which supports a wider variety of certificates and supports multiple sign-in certificates on the same card.
 
 Support for multiple certificates on the same card is enabled by default. New certificate types must be enabled through Group Policy.
 
-If you enable the **Allow signature keys valid for Logon** credential provider policy, any certificates that are available on the smart card with a signature-only key are listed on the sign-in screen. This allows users to select their sign-in experience. If the policy is disabled or not configured, smart card signature-key-based certificates are not listed on the sign-in screen.
+If you enable the **Allow signature keys valid for Logon** credential provider policy, any certificates that are available on the smart card with a signature-only key are listed on the sign-in screen. This allows users to select their sign-in experience. If the policy is disabled or not configured, smart card signature-key-based certificates aren't listed on the sign-in screen.
 
 The following diagram illustrates how smart card sign-in works in the supported versions of Windows.
 
@@ -69,7 +69,7 @@ Following are the steps that are performed during a smart card sign-in:
 
 1. The sign-in UI requests the new credentials from the smart card credential provider. As a response, the smart card credential provider provides each sign-in certificate to the sign-in UI, and corresponding sign-in tiles are displayed. The user selects a smart card-based sign-in certificate tile, and Windows displays a PIN dialog box.
 1. The user enters the PIN, and then presses ENTER. The smart card credential provider encrypts the PIN.
-1. The credential provider that resides in the LogonUI system collects the PIN. As part of packaging credentials in the smart card credential provider, the data is packaged in a KERB_CERTIFICATE_LOGON structure. The main contents of the KERB_CERTIFICATE_LOGON structure are the smart card PIN, CSP data (such as reader name and container name), user name, and domain name. User name is required if the sign-in domain is not in the same forest because it enables a certificate to be mapped to multiple user accounts.
+1. The credential provider that resides in the LogonUI system collects the PIN. As part of packaging credentials in the smart card credential provider, the data is packaged in a KERB_CERTIFICATE_LOGON structure. The main contents of the KERB_CERTIFICATE_LOGON structure are the smart card PIN, CSP data (such as reader name and container name), user name, and domain name. User name is required if the sign-in domain isn't in the same forest because it enables a certificate to be mapped to multiple user accounts.
 1. The credential provider wraps the data (such as the encrypted PIN, container name, reader name, and card key specification) and sends it back to LogonUI.
 1. Winlogon presents the data from LogonUI to the LSA with the user information in LSALogonUser.
 1. LSA calls the Kerberos authentication package (Kerberos SSP) to create a Kerberos authentication service request (KRB_AS_REQ), which containing a preauthenticator (as specified in RFC 4556: [Public Key Cryptography for Initial Authentication in Kerberos (PKINIT)](http://www.ietf.org/rfc/rfc4556.txt)).
@@ -107,7 +107,7 @@ Following are the steps that are performed during a smart card sign-in:
 
 For more information about the Kerberos protocol, see [Microsoft Kerberos](/windows/win32/secauthn/microsoft-kerberos).
 
-By default, the KDC verifies that the client's certificate contains the smart card client authentication EKU szOID_KP_SMARTCARD_LOGON. However, if enabled, the **Allow certificates with no extended key usage certificate attribute** Group Policy setting allows the KDC to not require the SC-LOGON EKU. SC-LOGON EKU is not required for account mappings that are based on the public key.
+By default, the KDC verifies that the client's certificate contains the smart card client authentication EKU szOID_KP_SMARTCARD_LOGON. However, if enabled, the **Allow certificates with no extended key usage certificate attribute** Group Policy setting allows the KDC to not require the SC-LOGON EKU. SC-LOGON EKU isn't required for account mappings that are based on the public key.
 
 ## KDC certificate
 
@@ -125,26 +125,26 @@ Certificate requirements are listed by versions of the Windows operating system.
 
 ### Certificate requirements
 
-The smart card certificate has specific format requirements when it is used with Windows XP and earlier operating systems. You can enable any certificate to be visible for the smart card credential provider.
+The smart card certificate has specific format requirements when it's used with Windows XP and earlier operating systems. You can enable any certificate to be visible for the smart card credential provider.
 
 | Component | Requirements |
 |--|--|
 | CRL distribution point location | Not required |
 | Key usage | Digital signature |
 | Basic constraints | Not required |
-| extended key usage (EKU) | The smart card sign-in object identifier is not required.<br><br>**Note** If an EKU is present, it must contain the smart card sign-in EKU. Certificates with no EKU can be used for sign-in. |
-| Subject alternative name | E-mail ID is not required for smart card sign-in. |
+| extended key usage (EKU) | The smart card sign-in object identifier isn't required.<br><br>**Note** If an EKU is present, it must contain the smart card sign-in EKU. Certificates with no EKU can be used for sign-in. |
+| Subject alternative name | E-mail ID isn't required for smart card sign-in. |
 | Subject | Not required |
-| Key exchange (AT_KEYEXCHANGE field) | Not required for smart card sign-in certificates if a Group Policy setting is enabled. (By default, Group Policy settings are not enabled.) |
+| Key exchange (AT_KEYEXCHANGE field) | Not required for smart card sign-in certificates if a Group Policy setting is enabled. (By default, Group Policy settings aren't enabled.) |
 | CRL | Not required |
 | UPN | Not required |
 | Notes | You can enable any certificate to be visible for the smart card credential provider. |
 
 ### Client certificate mappings
 
-Certificate mapping is based on the UPN that is contained in the subjectAltName (SAN) field of the certificate. Client certificates that do not contain information in the SAN field are also supported.
+Certificate mapping is based on the UPN that is contained in the subjectAltName (SAN) field of the certificate. Client certificates that don't contain information in the SAN field are also supported.
 
-SSL/TLS can map certificates that do not have SAN, and the mapping is done by using the AltSecID attributes on client accounts. The X509 AltSecID, which is used by SSL/TLS client authentication is of the form "X509: `<Issuer Name>` `<Subject Name`. The `<Issuer Name>` and `<Subject Name>` are taken from the client certificate, with '\r' and '\n' replaced with ','.
+SSL/TLS can map certificates that don't have SAN, and the mapping is done by using the AltSecID attributes on client accounts. The X509 AltSecID, which is used by SSL/TLS client authentication is of the form "X509: `<Issuer Name>` `<Subject Name`. The `<Issuer Name>` and `<Subject Name>` are taken from the client certificate, with '\r' and '\n' replaced with ','.
 
 #### Certificate revocation list distribution points
 
@@ -167,10 +167,10 @@ This account mapping is supported by the KDC in addition to six other mapping me
 The certificate object is parsed to look for content to perform user account mapping.
 
 - When a user name is provided with the certificate, the user name is used to locate the account object. This operation is the fastest, because string matching occurs
-- When only the certificate object is provided, a series of operations are performed to locate the user name to map the user name to an account object
+- When only the certificate object is provided, multiple operations are performed to locate the user name to map the user name to an account object
 - When no domain information is available for authentication, the local domain is used by default. If any other domain is to be used for lookup, a domain name hint should be provided to perform the mapping and binding
 
-Mapping based on generic attributes is not possible because there is no generic API to retrieve attributes from a certificate. Currently, the first method that locates an account successfully stops the search. But a configuration error occurs if two methods map the same certificate to different user accounts when the client does not supply the client name through the mapping hints.
+Mapping based on generic attributes isn't possible because there's no generic API to retrieve attributes from a certificate. Currently, the first method that locates an account successfully stops the search. But a configuration error occurs if two methods map the same certificate to different user accounts when the client doesn't supply the client name through the mapping hints.
 
 The following figure illustrates the process of mapping user accounts for sign-in in the directory by viewing various entries in the certificate.
 
@@ -190,23 +190,23 @@ A single user certificate can be mapped to multiple accounts. For example, a use
 Based on the information that is available in the certificate, the sign-in conditions are:
 
 1. If no UPN is present in the certificate:
-    1. Sign-in can occur in the local forest or in another forest if a single user with one certificate needs to sign in to different accounts
-    1. A hint must be supplied if mapping is not unique (for example, if multiple users are mapped to the same certificate)
+  1. Sign-in can occur in the local forest or in another forest if a single user with one certificate needs to sign in to different accounts
+  1. A hint must be supplied if mapping isn't unique (for example, if multiple users are mapped to the same certificate)
 1. If a UPN is present in the certificate:
-    1. The certificate cannot be mapped to multiple users in the same forest
-    1. The certificate can be mapped to multiple users in different forests. For a user to sign in to other forests, an X509 hint must be supplied to the user
+  1. The certificate can't be mapped to multiple users in the same forest
+  1. The certificate can be mapped to multiple users in different forests. For a user to sign in to other forests, an X509 hint must be supplied to the user
 
 ## Smart card sign-in for multiple users into a single account
 
-A group of users might sign in to a single account (for example, an administrator account). For that account, user certificates are mapped so that they are enabled for sign-in.
+A group of users might sign in to a single account (for example, an administrator account). For that account, user certificates are mapped so that they're enabled for sign-in.
 
-Several distinct certificates can be mapped to a single account. For this to work properly, the certificate cannot have UPNs.
+Several distinct certificates can be mapped to a single account. For this to work properly, the certificate can't have UPNs.
 
 For example, if Certificate1 has CN=CNName1, Certificate2 has CN=User1, and Certificate3 has CN=User2, the AltSecID of these certificates can be mapped to a single account by using the Active Directory Users and Computers name mapping.
 
 ## Smart card sign-in across forests
 
-For account mapping to work across forests, particularly in cases where there is not enough information available on the certificate, the user might enter a hint in the form of a user name, such as *domain\user*, or a fully qualified UPN such as `user@contoso.com`.
+For account mapping to work across forests, particularly in cases where there isn't enough information available on the certificate, the user might enter a hint in the form of a user name, such as *domain\user*, or a fully qualified UPN such as `user@contoso.com`.
 
 > [!NOTE]
 > For the hint field to appear during smart card sign-in, the **Allow user name hint** Group Policy setting (**X509HintsNeeded** registry key) must be enabled on the client.
@@ -215,9 +215,9 @@ For account mapping to work across forests, particularly in cases where there is
 
 Online Certificate Status Protocol (OCSP), which is defined in RFC 2560, enables applications to obtain timely information about the revocation status of a certificate. Because OCSP responses are small and well bound, constrained clients might want to use OCSP to check the validity of the certificates for Kerberos on the KDC, to avoid transmission of large CRLs, and to save bandwidth on constrained networks. For information about CRL registry keys, see [Smart Card Group Policy and Registry Settings](smart-card-group-policy-and-registry-settings.md).
 
-The KDCs in Windows attempt to get OCSP responses and use them when available. This behavior cannot be disabled. CryptoAPI for OCSP caches OCSP responses and the status of the responses. The KDC supports only OCSP responses for the signer certificate.
+The KDCs in Windows attempt to get OCSP responses and use them when available. This behavior can't be disabled. CryptoAPI for OCSP caches OCSP responses and the status of the responses. The KDC supports only OCSP responses for the signer certificate.
 
-Windows client computers attempt to request the OCSP responses and use them in the reply when they are available. This behavior cannot be disabled.
+Windows client computers attempt to request the OCSP responses and use them in the reply when they're available. This behavior can't be disabled.
 
 ## Smart card root certificate requirements for use with domain sign-in
 
@@ -227,10 +227,10 @@ For sign-in to work in a smart card-based domain, the smart card certificate mus
 - The smart card sign-in certificate must have the HTTP CRL distribution point listed in its certificate
 - The CRL distribution point must have a valid CRL published and a delta CRL, if applicable, even if the CRL distribution point is empty
 - The smart card certificate must contain one of the following:
-  - A subject field that contains the DNS domain name in the distinguished name. If it does not, resolution to an appropriate domain fails, so Remote Desktop Services and the domain sign-in with the smart card fail
-  - A UPN where the domain name resolves to the actual domain. For example, if the domain name is `Engineering.Corp.Contoso`, the UPN is `username@engineering.corp.contoso.com`. If any part of the domain name is omitted, the Kerberos client cannot find the appropriate domain
+  - A subject field that contains the DNS domain name in the distinguished name. If it doesn't, resolution to an appropriate domain fails, so Remote Desktop Services and the domain sign-in with the smart card fail
+  - A UPN where the domain name resolves to the actual domain. For example, if the domain name is `Engineering.Corp.Contoso`, the UPN is `username@engineering.corp.contoso.com`. If any part of the domain name is omitted, the Kerberos client can't find the appropriate domain
 
-Although the HTTP CRL distribution points are on by default in Windows Server 2008, subsequent versions of the Windows Server operating system do not include HTTP CRL distribution points. To allow smart card sign-in to a domain in these versions, do the following:
+Although the HTTP CRL distribution points are on by default in Windows Server 2008, subsequent versions of the Windows Server operating system don't include HTTP CRL distribution points. To allow smart card sign-in to a domain in these versions, do the following:
 
 1. Enable HTTP CRL distribution points on the CA
 1. Restart the CA
@@ -240,7 +240,7 @@ Although the HTTP CRL distribution points are on by default in Windows Server 20
 
 The workaround is to enable the **Allow user name hint** Group Policy setting (**X509HintsNeeded** registry key), which allows the user to supply a hint in the credentials user interface for domain sign-in.
 
-If the client computer is not joined to the domain or if it is joined to a different domain, the client computer can resolve the server domain only by looking at the distinguished name on the certificate, not the UPN. For this scenario to work, the certificate requires a full subject, including `DC=<DomainControllerName>`, for domain name resolution.
+If the client computer isn't joined to the domain or if it's joined to a different domain, the client computer can resolve the server domain only by looking at the distinguished name on the certificate, not the UPN. For this scenario to work, the certificate requires a full subject, including `DC=<DomainControllerName>`, for domain name resolution.
 
 To deploy root certificates on a smart card for the currently joined domain, you can use the following command:
 
