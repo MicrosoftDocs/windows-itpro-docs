@@ -250,7 +250,7 @@ For other operations, the caller may be able to acquire a *verify* context again
 1. For each smart card already known by the CSP, refresh the stored SCARDHANDLE and make the following checks:
     1. If the smart card doesn't have the named container, continue the search
     1. If the smart card has the named container, but the smart card handle is no longer valid, store the serial number of the matching smart card and pass it to SCardUI
-1. If a matching smart card isn't found in the CSP cache, make a call to the smart card subsystem. The callback that is used to filter enumerated smart cards should verify that a candidate smart card has the named container. If a serial number was povided as a result of the previous cache search, the callback should filter enumerated smart cards on serial number rather than on container matches. If the context is non-silent and no suitable smart card is found, display UI that prompts the user to insert a smart card
+1. If a matching smart card isn't found in the CSP cache, make a call to the smart card subsystem. The callback that is used to filter enumerated smart cards should verify that a candidate smart card has the named container. If a serial number was provided as a result of the previous cache search, the callback should filter enumerated smart cards on serial number rather than on container matches. If the context is non-silent and no suitable smart card is found, display UI that prompts the user to insert a smart card
 
 ### Base CSP and KSP-based architecture in Windows
 
