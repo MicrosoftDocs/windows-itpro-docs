@@ -1,13 +1,11 @@
 ---
 title: Basic Firewall Policy Design 
 description: Protect the devices in your organization from unwanted network traffic that gets through the perimeter defenses by using basic firewall policy design.
-ms.prod: windows-client
 ms.topic: conceptual
-ms.date: 12/31/2017
+ms.date: 11/07/2023
 ---
 
 # Basic Firewall Policy Design
-
 
 Many organizations have a network perimeter firewall that is designed to prevent the entry of malicious traffic in to the organization's network, but don't have a host-based firewall enabled on each device in the organization.
 
@@ -17,22 +15,16 @@ Traffic can be blocked or permitted based on the characteristics of each network
 
 Many network administrators don't want to tackle the difficult task of determining all the appropriate rules for every program that is used by the organization, and then maintaining that list over time. In fact, most programs don't require specific firewall rules. The default behavior of Windows and most contemporary applications makes this task easy:
 
-- On client devices, the default firewall behavior already supports typical client programs. Programs create any required rules for you as part of the installation process. You only have to create a rule if the client program must be able to receive unsolicited inbound network traffic from another device.
-
-- When you install a server program that must accept unsolicited inbound network traffic, the installation program likely creates or enables the appropriate rules on the server for you.
-
-  For example, when you install a server role, the appropriate firewall rules are created and enabled automatically.
-
-- For other standard network behavior, the predefined rules that are built into Windows 11, Windows 10, Windows Server 2012, Windows Server 2008 R2, Windows Server 2008, Windows 8, and Windows 7 can easily be configured in a GPO and deployed to the devices in your organization.
-
-  For example, by using the predefined groups for Core Networking and File and Printer Sharing you can easily configure GPOs with rules for those frequently used networking protocols.
+- On client devices, the default firewall behavior already supports typical client programs. Programs create any required rules for you as part of the installation process. You only have to create a rule if the client program must be able to receive unsolicited inbound network traffic from another device
+- When you install a server program that must accept unsolicited inbound network traffic, the installation program likely creates or enables the appropriate rules on the server for you. For example, when you install a server role, the appropriate firewall rules are created and enabled automatically
+- For other standard network behavior, the predefined rules that are built into Windows can be configured in a GPO and deployed to the devices in your organization. For example, by using the predefined groups for Core Networking and File and Printer Sharing you can easily configure GPOs with rules for those frequently used networking protocols.
 
 With a few exceptions, the firewall can be enabled on all configurations. Therefore, we recommend that you enable the firewall on every device in your organization. The term "device" includes servers in your perimeter network, on mobile and remote clients that connect to the network, and on all servers and clients in your internal network.
 
 > [!CAUTION]
 > Stopping the service associated with Windows Defender Firewall with Advanced Security is not supported by Microsoft.
 
-By default, in new installations, Windows Defender Firewall with Advanced Security is turned on in Windows Server 2012, Windows 8, and later.
+Windows Defender Firewall with Advanced Security is turned on by default.
 
 If you turn off the Windows Defender Firewall service you lose other benefits provided by the service, such as the ability to use IPsec connection security rules, Windows Service Hardening, and network protection from forms of attacks that use network fingerprinting.
 
@@ -42,22 +34,18 @@ An organization typically uses this design as a first step toward a more compreh
 
 After implementing this design, you'll have centralized management of the firewall rules applied to all devices that are running Windows in your organization.
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > If you also intend to deploy the [Domain Isolation Policy Design](domain-isolation-policy-design.md), or the [Server Isolation Policy Design](server-isolation-policy-design.md), we recommend that you do the design work for all three designs together, and then deploy in layers that correspond with each design.
 
 The basic firewall design can be applied to devices that are part of an Active Directory forest. Active Directory is required to provide the centralized management and deployment of Group Policy objects that contain the firewall settings and rules.
 
 For more information about this design:
 
-- This design coincides with the deployment goal to [Protect Devices from Unwanted Network Traffic](protect-devices-from-unwanted-network-traffic.md).
-
-- To learn more about this design, see [Firewall Policy Design Example](firewall-policy-design-example.md).
-
-- Before completing the design, gather the information described in [Designing a Windows Defender Firewall with Advanced Security Strategy](designing-a-windows-firewall-with-advanced-security-strategy.md).
-
-- To help you make the decisions required in this design, see [Planning Settings for a Basic Firewall Policy](planning-settings-for-a-basic-firewall-policy.md).
-
-- For a list of detailed tasks that you can use to deploy your basic firewall policy design, see [Checklist: Implementing a Basic Firewall Policy Design](checklist-implementing-a-basic-firewall-policy-design.md).
+- This design coincides with the deployment goal to [Protect Devices from Unwanted Network Traffic](protect-devices-from-unwanted-network-traffic.md)
+- To learn more about this design, see [Firewall Policy Design Example](firewall-policy-design-example.md)
+- Before completing the design, gather the information described in [Designing a Windows Defender Firewall with Advanced Security Strategy](designing-a-windows-firewall-with-advanced-security-strategy.md)
+- To help you make the decisions required in this design, see [Planning Settings for a Basic Firewall Policy](planning-settings-for-a-basic-firewall-policy.md)
+- For a list of detailed tasks that you can use to deploy your basic firewall policy design, see [Checklist: Implementing a Basic Firewall Policy Design](checklist-implementing-a-basic-firewall-policy-design.md)
 
 > [!div class="nextstepaction"]
 > [Domain Isolation Policy Design](domain-isolation-policy-design.md)
