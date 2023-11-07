@@ -7,7 +7,7 @@ ms.date: 08/10/2023
 
 # Bulk enrollment using Windows Configuration Designer
 
-Bulk enrollment is an efficient way to set up a large number of devices to be managed by an MDM server without the need to reimage the devices. You can use the [Provisioning CSP](mdm/provisioning-csp.md) for bulk enrollment, except for the Azure Active Directory Join enrollment scenario.
+Bulk enrollment is an efficient way to set up a large number of devices to be managed by an MDM server without the need to reimage the devices. You can use the [Provisioning CSP](mdm/provisioning-csp.md) for bulk enrollment, except for the Microsoft Entra join enrollment scenario.
 
 ## Typical use cases
 
@@ -23,10 +23,10 @@ On the desktop and mobile devices, you can use an enrollment certificate or enro
 
 > [!NOTE]
 >
-> - Bulk-join is not supported in Azure Active Directory Join.
+> - Bulk-join is not supported in Microsoft Entra join.
 > - Bulk enrollment does not work in Intune standalone environment.
 > - Bulk enrollment works in Microsoft Intune where the ppkg is generated from the Configuration Manager console.
-> - To change bulk enrollment settings, login to **Azure AD**, then **Devices**, and then click **Device Settings**. Change the number under **Maximum number of devices per user**.
+> - To change bulk enrollment settings, login to **Microsoft Entra ID**, then **Devices**, and then click **Device Settings**. Change the number under **Maximum number of devices per user**.
 > - Bulk Token creation is not supported with federated accounts.
 
 ## What you need

@@ -1,7 +1,7 @@
 ---
 author: paolomatarazzo
 ms.author: paoloma
-ms.date: 09/18/2023
+ms.date: 11/02/2023
 ms.topic: include
 ---
 
@@ -9,7 +9,7 @@ ms.topic: include
 |:---|:---:|:---:|:---:|:---:|:---:|
 |**[Access Control (ACL/SACL)](/windows/security/identity-protection/access-control/access-control)**|Yes|Yes|Yes|Yes|Yes|
 |**[Account Lockout Policy](/windows/security/threat-protection/security-policy-settings/account-lockout-policy)**|Yes|Yes|Yes|Yes|Yes|
-|**[Active Directory domain join, Microsoft Entra join, and Microsoft Entra Hybrid join with single sign-on (SSO)](/azure/active-directory/devices/concept-directory-join)**|Yes|Yes|Yes|Yes|Yes|
+|**[Active Directory domain join, Microsoft Entra join, and Microsoft Entra hybrid join with single sign-on (SSO)](/azure/active-directory/devices/concept-directory-join)**|Yes|Yes|Yes|Yes|Yes|
 |**[Always On VPN (device tunnel)](/Windows-server/remote/remote-access/overview-always-on-vpn)**|❌|Yes|Yes|Yes|Yes|
 |**[App containers](/virtualization/windowscontainers/about/)**|Yes|Yes|Yes|Yes|Yes|
 |**[AppLocker](/windows/security/application-security/application-control/windows-defender-application-control/applocker/applocker-overview)**|❌|Yes|Yes|Yes|Yes|
@@ -30,7 +30,7 @@ ms.topic: include
 |**[Enhanced phishing protection with SmartScreen](/windows/security/operating-system-security/virus-and-threat-protection/microsoft-defender-smartscreen/enhanced-phishing-protection)**|Yes|Yes|Yes|Yes|Yes|
 |**[Exploit protection](/microsoft-365/security/defender-endpoint/exploit-protection)**|Yes|Yes|Yes|Yes|Yes|
 |**[Federal Information Processing Standard (FIPS) 140 validation](/windows/security/security-foundations/certification/fips-140-validation)**|Yes|Yes|Yes|Yes|Yes|
-|**[Federated sign-in](/education/windows/federated-sign-in)**|❌|Yes|Yes|❌|❌|
+|**[Federated sign-in](/education/windows/federated-sign-in)**|❌|❌|❌|Yes|Yes|
 |**[FIDO2 security key](/azure/active-directory/authentication/howto-authentication-passwordless-security-key)**|Yes|Yes|Yes|Yes|Yes|
 |**[Hardware-enforced stack protection](https://techcommunity.microsoft.com/t5/windows-os-platform-blog/understanding-hardware-enforced-stack-protection/ba-p/1247815)**|Yes|Yes|Yes|Yes|Yes|
 |**[Hypervisor-protected Code Integrity (HVCI)](/windows/security/hardware-security/enable-virtualization-based-protection-of-code-integrity)**|Yes|Yes|Yes|Yes|Yes|

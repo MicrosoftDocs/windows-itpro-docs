@@ -4,7 +4,7 @@ description: Learn more about the Defender Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 08/10/2023
+ms.date: 11/06/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -1078,6 +1078,12 @@ This policy setting allows you to configure the maximum percentage CPU utilizati
 
 <!-- AvgCPULoadFactor-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+
+> [!NOTE]
+> If you enable both of the following policies, then Windows ignores the value of **AvgCPULoadFactor**:
+> 
+> - [ScanOnlyIfIdle](defender-csp.md#configurationscanonlyifidleenabled): Instructs the product to scan only when the computer isn't in use.
+> - [DisableCpuThrottleOnIdleScans](defender-csp.md#configurationdisablecputhrottleonidlescans): Instructs the product to disable CPU throttling on idle scans.
 <!-- AvgCPULoadFactor-Editable-End -->
 
 <!-- AvgCPULoadFactor-DFProperties-Begin -->
@@ -1344,7 +1350,7 @@ Microsoft Defender Antivirus automatically determines which applications should 
 
 Enabled:
 
-Specify additional allowed applications in the Options section..
+Specify additional allowed applications in the Options section.
 
 Disabled:
 
@@ -2902,7 +2908,9 @@ Valid remediation action values are:
 <!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
 <!-- Links -->
 [TAMPER-1]: /microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection
+
 [TAMPER-2]: /microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection#what-about-exclusions
+
 <!-- Defender-CspMoreInfo-End -->
 
 <!-- Defender-End -->

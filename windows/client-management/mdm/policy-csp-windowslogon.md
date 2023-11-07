@@ -4,7 +4,7 @@ description: Learn more about the WindowsLogon Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 09/14/2023
+ms.date: 10/24/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -43,7 +43,7 @@ This policy setting controls whether a device will automatically sign in and loc
 
 This only occurs if the last interactive user didn't sign out before the restart or shutdown. 
 
-If the device is joined to Active Directory or Azure Active Directory, this policy only applies to Windows Update restarts. Otherwise, this will apply to both Windows Update restarts and user-initiated restarts and shutdowns.
+If the device is joined to Active Directory or Microsoft Entra ID, this policy only applies to Windows Update restarts. Otherwise, this will apply to both Windows Update restarts and user-initiated restarts and shutdowns.
 
 - If you don't configure this policy setting, it's enabled by default. When the policy is enabled, the user is automatically signed in and the session is automatically locked with all lock screen apps configured for that user after the device boots. 
 
@@ -104,20 +104,20 @@ After enabling this policy, you can configure its settings through the ConfigAut
 
 <!-- ConfigAutomaticRestartSignOn-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting controls the configuration under which an automatic restart and sign on and lock occurs after a restart or cold boot. If you chose "Disabled" in the "Sign-in and lock last interactive user automatically after a restart" policy, then automatic sign on won't occur and this policy doesn't need to be configured.
+This policy setting controls the configuration under which an automatic restart and sign-on and lock occurs after a restart or cold boot. If you chose "Disabled" in the "Sign-in and lock last interactive user automatically after a restart" policy, then automatic sign-on won't occur and this policy doesn't need to be configured.
 
 - If you enable this policy setting, you can choose one of the following two options:
 
-1. "Enabled if BitLocker is on and not suspended" specifies that automatic sign on and lock will only occur if BitLocker is active and not suspended during the reboot or shutdown. Personal data can be accessed on the device's hard drive at this time if BitLocker isn't on or suspended during an update. BitLocker suspension temporarily removes protection for system components and data but may be needed in certain circumstances to successfully update boot-critical components.
+1. "Enabled if BitLocker is on and not suspended" specifies that automatic sign-on and lock will only occur if BitLocker is active and not suspended during the reboot or shutdown. Personal data can be accessed on the device's hard drive at this time if BitLocker isn't on or suspended during an update. BitLocker suspension temporarily removes protection for system components and data but may be needed in certain circumstances to successfully update boot-critical components.
 
 BitLocker is suspended during updates if:
 
 - The device doesn't have TPM 2.0 and PCR7, or
 - The device doesn't use a TPM-only protector.
 
-2. "Always Enabled" specifies that automatic sign on will happen even if BitLocker is off or suspended during reboot or shutdown. When BitLocker isn't enabled, personal data is accessible on the hard drive. Automatic restart and sign on should only be run under this condition if you are confident that the configured device is in a secure physical location.
+2. "Always Enabled" specifies that automatic sign-on will happen even if BitLocker is off or suspended during reboot or shutdown. When BitLocker isn't enabled, personal data is accessible on the hard drive. Automatic restart and sign-on should only be run under this condition if you are confident that the configured device is in a secure physical location.
 
-- If you disable or don't configure this setting, automatic sign on will default to the "Enabled if BitLocker is on and not suspended" behavior.
+- If you disable or don't configure this setting, automatic sign-on will default to the "Enabled if BitLocker is on and not suspended" behavior.
 <!-- ConfigAutomaticRestartSignOn-Description-End -->
 
 <!-- ConfigAutomaticRestartSignOn-Editable-Begin -->
@@ -589,7 +589,6 @@ OverrideShellProgram policy allows IT admin to configure the shell program for W
 | Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
-| Dependency [BootToCloudModeDependencyGroup] | Dependency Type: `DependsOn` <br> Dependency URI: `Device/Vendor/MSFT/Policy/Config/CloudDesktop/BootToCloudMode` <br> Dependency Allowed Value: `[1]` <br> Dependency Allowed Value Type: `Range` <br>  |
 <!-- OverrideShellProgram-DFProperties-End -->
 
 <!-- OverrideShellProgram-AllowedValues-Begin -->

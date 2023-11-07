@@ -964,7 +964,7 @@ Determines the level of data encryption required for the connection.
 
 <!-- Device-{ProfileName}-DeviceCompliance-Description-Begin -->
 <!-- Description-Source-DDF -->
-Nodes under DeviceCompliance can be used to enable AAD based Conditional Access for VPN.
+Nodes under DeviceCompliance can be used to enable Microsoft Entra ID based Conditional Access for VPN.
 <!-- Device-{ProfileName}-DeviceCompliance-Description-End -->
 
 <!-- Device-{ProfileName}-DeviceCompliance-Editable-Begin -->
@@ -1003,7 +1003,7 @@ Nodes under DeviceCompliance can be used to enable AAD based Conditional Access 
 
 <!-- Device-{ProfileName}-DeviceCompliance-Enabled-Description-Begin -->
 <!-- Description-Source-DDF -->
-Enables the Device Compliance flow from the client. If marked as True, the VPN Client will attempt to communicate with AAD to get a certificate to use for authentication. The VPN should be set up to use Certificate Auth and the VPN Server must trust the Server returned by Azure Active Directory.
+Enables the Device Compliance flow from the client. If marked as True, the VPN Client will attempt to communicate with Microsoft Entra ID to get a certificate to use for authentication. The VPN should be set up to use Certificate Auth and the VPN Server must trust the Server returned by Microsoft Entra ID.
 <!-- Device-{ProfileName}-DeviceCompliance-Enabled-Description-End -->
 
 <!-- Device-{ProfileName}-DeviceCompliance-Enabled-Editable-Begin -->
@@ -5261,7 +5261,7 @@ Determines the level of data encryption required for the connection.
 
 <!-- User-{ProfileName}-DeviceCompliance-Description-Begin -->
 <!-- Description-Source-DDF -->
-Nodes under DeviceCompliance can be used to enable AAD based Conditional Access for VPN.
+Nodes under DeviceCompliance can be used to enable Microsoft Entra ID based Conditional Access for VPN.
 <!-- User-{ProfileName}-DeviceCompliance-Description-End -->
 
 <!-- User-{ProfileName}-DeviceCompliance-Editable-Begin -->
@@ -5300,7 +5300,7 @@ Nodes under DeviceCompliance can be used to enable AAD based Conditional Access 
 
 <!-- User-{ProfileName}-DeviceCompliance-Enabled-Description-Begin -->
 <!-- Description-Source-DDF -->
-Enables the Device Compliance flow from the client. If marked as True, the VPN Client will attempt to communicate with AAD to get a certificate to use for authentication. The VPN should be set up to use Certificate Auth and the VPN Server must trust the Server returned by Azure Active Directory.
+Enables the Device Compliance flow from the client. If marked as True, the VPN Client will attempt to communicate with Microsoft Entra ID to get a certificate to use for authentication. The VPN should be set up to use Certificate Auth and the VPN Server must trust the Server returned by Microsoft Entra ID.
 <!-- User-{ProfileName}-DeviceCompliance-Enabled-Description-End -->
 
 <!-- User-{ProfileName}-DeviceCompliance-Enabled-Editable-Begin -->
