@@ -9,14 +9,14 @@ ms.date: 10/30/2023
 
 To configure BitLocker, you can use one of the following options:
 
-- Configuration Service Provider (CSP): this option is commonly used for devices managed by a Mobile Device Management (MDM) solution, like Microsoft Intune. The [BitLocker CSP](/windows/client-management/mdm/bitlocker-csp) is used to configure BitLocker, and to report the status of different BitLocker functions to the MDM solution. With Microsoft Intune, you can use the BitLocker status in [compliance polices](/mem/intune/protect/compliance-policy-create-windows#encryption), combining them with [Conditional Access](/azure/active-directory/conditional-access/overview). Conditional Access can prevent or grant access to services like Exchange Online and SharePoint Online, based on the status of BitLocker. To learn more about the Intune options to configure and monitor BitLocker, check the following articles:
+- Configuration Service Provider (CSP): this option is commonly used for devices managed by a Mobile Device Management (MDM) solution, like Microsoft Intune. The [BitLocker CSP][WIN-1] is used to configure BitLocker, and to report the status of different BitLocker functions to the MDM solution. With Microsoft Intune, you can use the BitLocker status in [compliance policies][INT-1], combining them with [Conditional Access][ENTRA-1]. Conditional Access can prevent or grant access to services like Exchange Online and SharePoint Online, based on the status of BitLocker. To learn more about the Intune options to configure and monitor BitLocker, check the following articles:
 
-    - [Manage BitLocker policy for Windows devices with Intune](/mem/intune/protect/encrypt-devices#rotate-bitlocker-recovery-keys)
-    - [Monitor device encryption with Intune](/mem/intune/protect/encryption-monitor)
-    - [Use compliance policies to set rules for devices you manage with Intune](/mem/intune/protect/device-compliance-get-started)
+    - [Manage BitLocker policy for Windows devices with Intune][INT-2]
+    - [Monitor device encryption with Intune][INT-3]
+    - [Use compliance policies to set rules for devices you manage with Intune][INT-4]
 
 - Group policy (GPO): this option can be used for devices that are joined to an Active Directory domain and aren't managed by a device management solution. Group policy can also be used for devices that aren't joined to an Active Directory domain, using the local group policy editor
-- Microsoft Configuration Manager: this option can be used for devices that are managed by Microsoft Configuration Manager using the BitLocker management agent. To learn more about options to configure BitLocker via Microsoft Configuration Manager, see [Deploy BitLocker management](/mem/configmgr/protect/deploy-use/bitlocker/deploy-management-agent)
+- Microsoft Configuration Manager: this option can be used for devices that are managed by Microsoft Configuration Manager using the BitLocker management agent. To learn more about options to configure BitLocker via Microsoft Configuration Manager, see [Deploy BitLocker management][MCM-1]
 
 > [!NOTE]
 > Windows Server doesn't support the configuration of BitLocker using CSP or Microsoft Configuration Manager. Use GPO instead.
@@ -155,11 +155,11 @@ The following table lists the BitLocker policies applicable to all drive types, 
 
 ## BitLocker and policy settings compliance
 
-If a device isn't compliant with the configured policy settings, BitLocker may not be turned on, or BitLocker configuration may be modified until the device is in a compliant state. When a drive becomes out of compliance with policy settings, only changes to the BitLocker configuration that will bring it into compliance are allowed. Such scenario could occur, for example, if a previously encrypted drive becomes noncompliant by a policy setting change.
+If a device isn't compliant with the configured policy settings, BitLocker might not be turned on, or BitLocker configuration might be modified until the device is in a compliant state. When a drive becomes out of compliance with policy settings, only changes to the BitLocker configuration that will bring it into compliance are allowed. Such scenario could occur, for example, if a previously encrypted drive becomes noncompliant by a policy setting change.
 
-If multiple changes are necessary to bring the drive into compliance, BitLocker protection may need to be suspended, the necessary changes made, and then protection resumed. Such situation could occur, for example, if a removable drive is initially configured for unlock with a password, and then policy settings are changed to require smart cards. In this scenario, BitLocker protection needs to be suspended, delete the password unlock method, and add the smart card method. After this process is complete, BitLocker is compliant with the policy setting, and BitLocker protection on the drive can be resumed.
+If multiple changes are necessary to bring the drive into compliance, BitLocker protection might need to be suspended, the necessary changes made, and then protection resumed. Such situation could occur, for example, if a removable drive is initially configured for unlock with a password, and then policy settings are changed to require smart cards. In this scenario, BitLocker protection needs to be suspended, delete the password unlock method, and add the smart card method. After this process is complete, BitLocker is compliant with the policy setting, and BitLocker protection on the drive can be resumed.
 
-In other scenarios, to bring the drive into compliance with a change in policy settings, BitLocker may need to be disabled and the drive decrypted followed by re-enabling BitLocker and then re-encrypting the drive. An example of this scenario is when the BitLocker encryption method or cipher strength is changed.
+In other scenarios, to bring the drive into compliance with a change in policy settings, BitLocker might need to be disabled and the drive decrypted followed by re-enabling BitLocker and then re-encrypting the drive. An example of this scenario is when the BitLocker encryption method or cipher strength is changed.
 
 To learn more how to manage BitLocker, review the [BitLocker operations guide](operations-guide.md).
 
@@ -169,7 +169,7 @@ Servers are often deployed, configured, and managed using PowerShell. The recomm
 
 BitLocker is an optional component in Windows Server. Follow the directions in [Install BitLocker on Windows Server](install-server.md) to add the BitLocker optional component.
 
-The Minimal Server Interface is a prerequisite for some of the BitLocker administration tools. On a [Server Core](/windows-server/get-started/getting-started-with-server-core/) installation, the necessary GUI components must be added first. The steps to add shell components to Server Core are described in [Using Features on Demand with Updated Systems and Patched Images](/archive/blogs/server_core/using-features-on-demand-with-updated-systems-and-patched-images) and [How to update local source media to add roles and features](/archive/blogs/joscon/how-to-update-local-source-media-to-add-roles-and-features). If a server is installed manually, then choosing [Server with Desktop Experience](/windows-server/get-started/getting-started-with-server-with-desktop-experience/) is the easiest path because it avoids performing the steps to add a GUI to Server Core.
+The Minimal Server Interface is a prerequisite for some of the BitLocker administration tools. On a [Server Core][WIN-2] installation, the necessary GUI components must be added first. The steps to add shell components to Server Core are described in [Using Features on Demand with Updated Systems and Patched Images][ARC-1] and [How to update local source media to add roles and features][ARC-2]. If a server is installed manually, then choosing [Server with Desktop Experience][WIN-3] is the easiest path because it avoids performing the steps to add a GUI to Server Core.
 
  Lights-out data centers can take advantage of the enhanced security of a second factor while avoiding the need for user intervention during reboots by optionally using a combination of BitLocker (TPM+PIN) and BitLocker Network Unlock. BitLocker Network Unlock brings together the best of hardware protection, location dependence, and automatic unlock, while in the trusted location. For the configuration steps, see [Network Unlock](network-unlock.md).
 
@@ -180,3 +180,17 @@ The Minimal Server Interface is a prerequisite for some of the BitLocker adminis
 >
 >
 > [BitLocker operations guide >](operations-guide.md)
+
+<!--links-->
+
+[ARC-1]: /archive/blogs/server_core/using-features-on-demand-with-updated-systems-and-patched-images
+[ARC-2]: /archive/blogs/joscon/how-to-update-local-source-media-to-add-roles-and-features
+[ENTRA-1]: /entra/identity/conditional-access/overview
+[INT-1]: /mem/intune/protect/compliance-policy-create-windows#encryption
+[INT-2]: /mem/intune/protect/encrypt-devices#rotate-bitlocker-recovery-keys
+[INT-3]: /mem/intune/protect/encryption-monitor
+[INT-4]: /mem/intune/protect/device-compliance-get-started
+[MCM-1]: /mem/configmgr/protect/deploy-use/bitlocker/deploy-management-agent
+[WIN-1]: /windows/client-management/mdm/bitlocker-csp
+[WIN-2]: /windows-server/get-started/getting-started-with-server-core/
+[WIN-3]: /windows-server/get-started/getting-started-with-server-with-desktop-experience/
