@@ -66,11 +66,7 @@ On your domain server, you need to create a template for the certificate that yo
   > [!NOTE]
   > It can take some time for your template to replicate to all servers and become available in this list.
 
-  ![Selecting a certificate template.](images/vsc-08-enable-certificate-template.png)
-
 1. After the template replicates, in the MMC, right-click in the Certification Authority list, select **All Tasks**, and then select **Stop Service**. Then, right-click the name of the CA again, select **All Tasks**, and then select **Start Service**.
-
-  ![Stopping and starting the service.](images/vsc-09-stop-service-start-service.png)
 
 ## Step 2: Create the TPM virtual smart card
 
@@ -79,7 +75,6 @@ In this step, you create the virtual smart card on the client computer by using 
 ### To create the TPM virtual smart card
 
 1. On a domain-joined computer, open a Command Prompt window with Administrative credentials.
-    ![Cmd prompt, Run as administrator.](images/vsc-10-cmd-run-as-administrator.png)
 1. At the command prompt, type the following, and then press ENTER:
 
   `tpmvscmgr.exe create /name TestVSC /pin default /adminkey random /generate`
