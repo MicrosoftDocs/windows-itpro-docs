@@ -148,6 +148,8 @@ items:
         href: assign-security-group-filters-to-the-gpo.md
       - name: Change rules from request to require mode
         href: Change-Rules-From-Request-To-Require-Mode.Md
+      - name: Configure Hyper-V firewall
+        href: hyper-v-firewall.md
       - name: Configure authentication methods
         href: Configure-authentication-methods.md
       - name: Configure data protection (Quick Mode) settings
