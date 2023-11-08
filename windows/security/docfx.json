@@ -218,6 +218,8 @@
         "identity-protection/hello-for-business/*.md": "erikdau",
         "identity-protection/credential-guard/*.md": "zwhittington",
         "identity-protection/access-control/*.md": "sulahiri",
+        "identity-protection/smart-cards/*.md": "ardenw",
+        "identity-protection/virtual-smart-cards/*.md": "ardenw",
         "operating-system-security/network-security/windows-firewall/*.md": "paoloma",
         "operating-system-security/network-security/vpn/*.md": "pesmith",
         "operating-system-security/data-protection/personal-data-encryption/*.md":"rhonnegowda",
@@ -231,7 +233,7 @@
         "threat-protection/auditing/*.md": "tier3",
         "operating-system-security/data-protection/bitlocker/*.md": "tier1",
         "operating-system-security/data-protection/personal-data-encryption/*.md": "tier1",
-        "operating-system-security/network-security/windows-firewall/*.md": [ "tier3", "must-keep" ]
+        "operating-system-security/network-security/windows-firewall/*.md": [ "tier2", "must-keep" ]
       }
     },
     "template": [],
