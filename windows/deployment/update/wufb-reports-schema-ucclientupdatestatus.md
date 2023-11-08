@@ -21,7 +21,7 @@ Update Event that combines the latest client-based data with the latest service-
 
 ## Schema for UCClientUpdateStatus
 <!--8506381-->
-|Field |Type | ENUM |Example |Description |
+|Field |Type | Enumerated type |Example |Description |
 |---|---|---|---|---|
 | **AzureADDeviceId** | [string](/azure/data-explorer/kusto/query/scalar-data-types/string) | No | `71db1a1a-f1a6-4a25-b88f-79c2f513dae0` | Microsoft Entra Device ID |
 | **AzureADTenantId** | [string](/azure/data-explorer/kusto/query/scalar-data-types/string) | No | `69ca04b0-703d-4b3a-9184-c4e3c15d6f5e` | Microsoft Entra tenant ID |

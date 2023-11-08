@@ -19,8 +19,8 @@ ms.date: 11/10/2023
 Update Event that comes directly from the service-side. The event has only service-side information for one device (client), and one update, in one deployment. This event has certain fields removed from it in favor of being able to show data in near real time.
 
 ## Schema for UCServiceUpdateStatus
-
-| Field |Type | ENUM <!--8506381--> |Example |Description |
+<!--8506381--> 
+| Field |Type | Enumerated type |Example |Description |
 |---|---|---|---|---|
 | **AzureADDeviceId** | [string](/azure/data-explorer/kusto/query/scalar-data-types/string) | No | `71db1a1a-f1a6-4a25-b88f-79c2f513dae0` | Microsoft Entra Device ID |
 | **AzureADTenantId** | [string](/azure/data-explorer/kusto/query/scalar-data-types/string) | No | `69ca04b0-703d-4b3a-9184-c4e3c15d6f5e` | Microsoft Entra tenant ID |

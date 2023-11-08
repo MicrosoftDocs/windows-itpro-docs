@@ -20,7 +20,7 @@ These alerts are activated as a result of an issue that is device-specific. It i
 
 ## Schema for UCDeviceAlert
  <!--8506381-->
-|Field |Type | ENUM |Example |Description |
+|Field |Type | Enumerated type |Example |Description |
 |---|---|---|---|---|
 | **AlertClassification** | [string](/azure/data-explorer/kusto/query/scalar-data-types/string) | Yes | `Error` | Whether this alert is an Error, a Warning, or Informational |
 | **AlertData** | [string](/azure/data-explorer/kusto/query/scalar-data-types/string) | No |  |  Currently, data isn't gathered to populate this field. An optional string formatted as a json payload containing metadata for the alert. |
