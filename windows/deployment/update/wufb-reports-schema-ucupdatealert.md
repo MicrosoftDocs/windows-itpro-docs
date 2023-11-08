@@ -20,7 +20,7 @@ Alert for both client and service updates. Contains information that needs atten
 
 ## Schema for UCUpdateAlert
 
-|Field |Type | ENUM |Example |Description |
+|Field |Type | ENUM <!--8506381--> |Example |Description |
 |---|---|---|---|---|
 | **AlertClassification** |[string](/azure/data-explorer/kusto/query/scalar-data-types/string)  | Yes | `Error` | Whether this alert is an error, a warning, or informational |
 | **AlertData** |[string](/azure/data-explorer/kusto/query/scalar-data-types/string)  | No | `{ "freeDiskCapacityMb": 3213, "contentSizeMb": 4381}` | An optional string formatted as a json payload containing metadata for the alert. |
