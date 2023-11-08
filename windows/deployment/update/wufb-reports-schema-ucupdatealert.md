@@ -41,16 +41,16 @@ Alert for both client and service updates. Contains information that needs atten
 | **ErrorSymName** |[string](/azure/data-explorer/kusto/query/scalar-data-types/string)  | No | `WU_E_DISK_FULL` | The symbolic name that maps to the error code, if any, otherwise empty. |
 | **GlobalDeviceId** |[string](/azure/data-explorer/kusto/query/scalar-data-types/string)  | No | `g:1298371934870` | Internal Microsoft Global identifier, if available. |
 | **Recommendation** |[string](/azure/data-explorer/kusto/query/scalar-data-types/string)  | No | `Free up disk space.` | A localized string translated from RecommendedAction, Message, and other fields (depending on the source of the alert) that provides a recommended action. |
-| **ResolvedTime [UTC]** | [datetime](/azure/kusto/query/scalar-data-types/datetime)  | No | `43965.3930958102` | The time this alert was resolved, else empty. |
+| **ResolvedTime [UTC]** | [datetime](/azure/kusto/query/scalar-data-types/datetime)  | No |  `2020-05-14 09:26:03.478039` | The time this alert was resolved, else empty. |
 | **SCCMClientId** |[string](/azure/data-explorer/kusto/query/scalar-data-types/string)  | No | `5AB72FAC-93AB-4954-9AB0-6557D0EFA245` | Configuration manager client ID of the device, if available. |
 | **ServiceSubstate** |[string](/azure/data-explorer/kusto/query/scalar-data-types/string)  | Yes | `OfferReady` | If the alert is from the service, the ServiceSubstate at the time this alert was activated or updated, else empty. |
 | **ServiceSubstateRank** |[int](/azure/kusto/query/scalar-data-types/int) | No |  | Rank of 'ClientSubstate' |
 | **SourceSystem** |[string](/azure/data-explorer/kusto/query/scalar-data-types/string)  | No | `Azure` |  |
-| **StartTime [UTC]** | [datetime](/azure/kusto/query/scalar-data-types/datetime)  | No | `43965.3930958102` | The time this alert was activated. |
+| **StartTime [UTC]** | [datetime](/azure/kusto/query/scalar-data-types/datetime)  | No |  `2020-05-14 09:26:03.478039` | The time this alert was activated. |
 | **TargetBuild** |[string](/azure/data-explorer/kusto/query/scalar-data-types/string)  | No | `18363.836` | The Windows 10 Major. Revision this 'UpdateAlert' is relative to. |
 | **TargetVersion** |[string](/azure/data-explorer/kusto/query/scalar-data-types/string)  | No | `1909` | The Windows 10 build this UpdateAlert is relative to. |
 | **TenantId** |[string](/azure/data-explorer/kusto/query/scalar-data-types/string)  | No | `69ca04b0-703d-4b3a-9184-c4e3c15d6f5e` | Microsoft Entra tenant ID of the device. |
-| **TimeGenerated [UTC]** | [datetime](/azure/kusto/query/scalar-data-types/datetime)  | No | `43965.3930958102` | The time the snapshot generated this specific record. This is to determine to which batch snapshot this record belongs. |
+| **TimeGenerated [UTC]** | [datetime](/azure/kusto/query/scalar-data-types/datetime)  | No |  `2020-05-14 09:26:03.478039` | The time the snapshot generated this specific record. This is to determine to which batch snapshot this record belongs. |
 | **Type** |[string](/azure/data-explorer/kusto/query/scalar-data-types/string)  | No | `UCUpdateAlert` | The entity type |
 | **UpdateCategory** |[string](/azure/data-explorer/kusto/query/scalar-data-types/string)  | Yes | `WindowsFeatureUpdate` | The type of content this DeviceUpdateEvent is tracking. |
 | **UpdateClassification** |[string](/azure/data-explorer/kusto/query/scalar-data-types/string)  | Yes | `Upgrade` | Whether this update is an upgrade (feature update), security (quality update), nonsecurity (quality update), or driver |
