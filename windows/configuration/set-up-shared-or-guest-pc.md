@@ -4,7 +4,7 @@ description: Description of how to configured Shared PC mode, which is a Windows
 ms.date: 11/08/2023
 ms.prod: windows-client
 ms.technology: itpro-configure
-ms.topic: howto
+ms.topic: how-to
 author: paolomatarazzo
 ms.author: paoloma
 appliesto: 
