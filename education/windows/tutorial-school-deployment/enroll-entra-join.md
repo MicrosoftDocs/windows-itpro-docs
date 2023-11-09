@@ -1,9 +1,10 @@
 ---
 title: Enrollment in Intune with standard out-of-box experience (OOBE)
 description: Learn how to join devices to Microsoft Entra ID from OOBE and automatically get them enrolled in Intune.
-ms.date: 08/31/2022
+ms.date: 11/09/2023
 ms.topic: tutorial
 ---
+
 # Automatic Intune enrollment via Microsoft Entra join
 
 If you're setting up a Windows device individually, you can use the out-of-box experience to join it to your school's Microsoft Entra tenant, and automatically enroll it in Intune.
@@ -21,7 +22,8 @@ With this process, no advance preparation is needed:
 
 :::image type="content" source="./images/win11-login-screen.png" alt-text="Windows 11 login screen" border="false":::
 
-________________________________________________________
+---
+
 ## Next steps
 
 With the devices joined to Microsoft Entra tenant and managed by Intune, you can use Intune to maintain them and report on their status.
