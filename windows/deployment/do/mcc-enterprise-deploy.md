@@ -228,23 +228,21 @@ Installing MCC on your Windows device is a simple process. A PowerShell script p
    Please refer to the [Sizing Recommendations](/mcc-enterprise-prerequisites#sizing-recommendations) for memory, virtual storage, and CPU cores. For this example we chose the recommend values for a Branch Office/Small Enterprise deployment.
    <!-- Insert Image 5 -->
 
-1.
    <!-- Remove: If this is your first MCC deployment, select **n** so that a new IoT Hub can be created. If you have already configured MCC before, choose **y** so that your MCCs are grouped in the same IoT Hub.
 
     1. You'll be shown a list of existing IoT Hubs in your Azure subscription. Enter the number corresponding to the IoT Hub to select it. **You'll likely have only 1 IoT Hub in your subscription, in which case you want to enter "1"**
 
        :::image type="content" source="./images/ent-mcc-script-select-hub.png" alt-text="Screenshot of the installer script running in PowerShell prompting you to select which IoT Hub to use." lightbox="./images/ent-mcc-script-select-hub.png":::
        -->
-  When the installation is complete, you should see the following output (the values below will be your own)
+1.  When the installation is complete, you should see the following output (the values below will be your own)
        :::image type="content" source="./images/ent-mcc-script-complete.png" alt-text="Screenshot of the installer script displaying the completion summary in PowerShell." lightbox="./images/ent-mcc-script-complete.png":::
        <!-- Insert Image 7 -->
 
 
 1. Your MCC deployment is now complete.
-
-    1. If you don't see any errors, continue to the next section to validate your MCC deployment. Your VM will not appear in Hyper-V Manager as it is an EFLOW VM.
-    1. After validating your MCC is properly functional, review your management solution documentation, such as [Intune](/mem/intune/configuration/delivery-optimization-windows), to set the cache host policy to the IP address of your MCC.
-    1. If you had errors during your deployment, see the [Common Issues](#common-issues) section in this article.
+   If you don't see any errors, continue to the next section to validate your MCC deployment. Your VM will not appear in Hyper-V Manager as it is an EFLOW VM.
+   - After validating your MCC is properly functional, review your management solution documentation, such as [Intune](/mem/intune/configuration/delivery-optimization-windows), to set the cache host policy to the IP address of your MCC.
+   - If you had errors during your deployment, see the [Common Issues](#common-issues) section in this article.
 
 ## Verify proper functioning MCC server
 
@@ -264,6 +262,12 @@ Connect to the EFLOW VM and check if MCC is properly running:
    :::image type="content" source="./images/ent-mcc-connect-eflowvm.png" alt-text="Screenshot of running connect-EflowVm, sudo -s, and iotedge list from PowerShell." lightbox="./images/ent-mcc-connect-eflowvm.png":::
 
 You should see MCC, edgeAgent, and edgeHub running. If you see edgeAgent or edgeHub but not MCC, try this command in a few minutes. The MCC container can take a few minutes to deploy. If iotedge list times out, you can run docker ps -a to list the running containers.
+If the 3 containers are still not running, run the following commands to check if DNS resolution is working correctly:
+```bash
+ping www.microsoft.com
+resolvectl query microsoft.com
+```
+See the [common issues](#common-issues) section for more information.
 
 #### Verify server side
 
@@ -331,3 +335,69 @@ This command will provide the current status of the starting, stopping of a cont
 
 > [!NOTE]
 > You should consult the IoT Edge troubleshooting guide ([Common issues and resolutions for Azure IoT Edge](/azure/iot-edge/troubleshoot)) for any issues you may encounter configuring IoT Edge, but we've listed a few issues that we encountered during our internal validation.
+>
+
+### DNS needs to be configured
+
+Run the following IoT Edge install state check:
+
+```bash
+sudo iotedge check --verbose
+```
+
+If you see issues with ports 5671, 443, and 8883, your IoT Edge device needs to update the DNS for Docker.
+
+To configure the device to work with your DNS, use the following steps:
+
+1. Use `ifconfig` to find the appropriate NIC adapter name.
+
+    ```bash
+    ifconfig
+    ```
+
+1. Run `nmcli device show <network adapter name>` to show the DNS name for the ethernet adapter. For example, to show DNS information for **eno1**:
+
+    ```bash
+    nmcli device show eno1 
+    ```
+
+    :::image type="content" source="images/mcc-isp-nmcli.png" alt-text="Screenshot of a sample output of nmcli command to show network adapter information." lightbox="./images/mcc-isp-nmcli.png":::
+
+1. Open or create the Docker configuration file used to configure the DNS server.
+
+    ```bash
+    sudo nano /etc/docker/daemon.json
+    ```
+
+1. Paste the following string into the **daemon.json** file, and include the appropriate DNS server address. For example, in the previous screenshot, `IP4.DNS[1]` is `10.50.10.50`.
+
+    ```bash
+    { "dns": ["x.x.x.x"]}
+    ```
+
+1. Save the changes to daemon.json. If you need to change permissions on this file, use the following command:
+
+    ```bash
+    sudo chmod 555 /etc/docker/daemon.json
+    ```
+
+1. Restart Docker to pick up the new DNS setting. Then restart IoT Edge.
+
+    ```bash
+    sudo systemctl restart docker
+    sudo systemctl daemon-reload
+    sudo restart IoTEdge
+    ```
+
+### Resolve DNS issues
+Follow these steps if you see a DNS error when trying to resolve hostnames during the provisioning or download of container:
+Run ``` Get-EflowVmEndpoint ``` to get interface name
+
+Once you get the name 
+```bash
+Set-EflowVmDNSServers -vendpointName "interface name from above" -dnsServers @("DNS_IP_ADDRESS")
+Stop-EflowVm
+Start-EflowVm
+```
+
+
