@@ -154,6 +154,8 @@ items:
         href: configure-data-protection-quick-mode-settings.md
       - name: Configure Group Policy to autoenroll and deploy certificates
         href: configure-group-policy-to-autoenroll-and-deploy-certificates.md
+      - name: Configure Hyper-V firewall
+        href: hyper-v-firewall.md
       - name: Configure key exchange (main mode) settings
         href: configure-key-exchange-main-mode-settings.md
       - name: Configure the rules to require encryption
