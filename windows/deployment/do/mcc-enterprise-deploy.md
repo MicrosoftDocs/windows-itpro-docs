@@ -200,7 +200,8 @@ Installing MCC on your Windows device is a simple process. A PowerShell script p
     > [!NOTE]
     > Restarting your computer after creating a switch is recommended. You'll notice network delays during installation if the computer has not been restarted.
 
-    If you restarted your computer after creating a switch, start from Step 2 above and skip to step 5.
+    If you restarted your computer after creating a switch, start from step 2 above and skip to step 5.
+
     If you opt to use an existing external switch, select the switch from the presented options. Local Area Connection (or USB) is preferable to Wi-Fi. 
 
    :::image type="content" source="./images/ent-mcc-script-new-switch.png" alt-text="Screenshot of the installer script running in PowerShell when a new switch is created." lightbox="./images/ent-mcc-script-new-switch.png":::
@@ -217,7 +218,7 @@ Installing MCC on your Windows device is a simple process. A PowerShell script p
     > Choosing a dynamic IP address might assign a different IP address when the MCC restarts. A static IP address is recommended so you don't have to change this value in your management solution when MCC restarts.
 
    The IP address you assign to the EFLOW VM should be within the same subnet as the host server (based on the subnet mask) and not used by any other machine on the network.
-   For example, for host configuration where the server IP Address is 192.168.1.202 and the subnet mask is 255.255.255.0, the static IP can be anything 192.168.1.* except 192.168.1.202
+   For example, for host configuration where the server IP Address is 192.168.1.202 and the subnet mask is 255.255.255.0, the static IP can be anything 192.168.1.* except 192.168.1.202.
    <!-- Insert Image 1 & 2. Remove ent-mcc-script-dynamic-address.png image (it is replaced by image 2) -->
     :::image type="content" source="./images/external-switch-1.jpg" alt-text="Screenshot of a sample output of ipconfig command showing example of subnet mask." lightbox="./images/external-switch-1.jpg":::
     :::image type="content" source="./images/assigning-ip-2.png" alt-text="Screenshot of multiple installer questions about ipv4 address for Eflow." lightbox="./images/assigning-ip-2.png":::
@@ -228,8 +229,8 @@ Installing MCC on your Windows device is a simple process. A PowerShell script p
  
 1. Choose where you would like to download, install, and store the virtual hard disk for EFLOW. You'll also be asked how much memory, storage, and how many cores you would like to allocate for the VM. For this example, we chose the default values for download path, install path, and virtual hard disk path. 
    <!-- Insert Image 4 -->
-   :::image type="content" source="./images/installation-info-4.png" alt-text="Screenshot of multiple installer questions about memory and storage." lightbox="./images/installation-info-4.png":::
-   Please refer to the [Sizing Recommendations](/mcc-enterprise-prerequisites#sizing-recommendations) for memory, virtual storage, and CPU cores. For this example we chose the recommend values for a Branch Office/Small Enterprise deployment.
+   :::image type="content" source="./images/installation-info-4.png" alt-text="Screenshot of multiple installer questions about memory and storage for EFLOW." lightbox="./images/installation-info-4.png":::
+   For more information, see [Sizing Recommendations](mcc-enterprise-prerequisites.md#sizing-recommendations) for memory, virtual storage, and CPU cores. For this example we chose the recommend values for a Branch Office/Small Enterprise deployment.
    <!-- Insert Image 5 -->
    :::image type="content" source="./images/memory-storage-5.png" alt-text="Screenshot of multiple installer questions about memory and storage." lightbox="./images/memory-storage-5.png":::
    <!-- Remove: If this is your first MCC deployment, select **n** so that a new IoT Hub can be created. If you have already configured MCC before, choose **y** so that your MCCs are grouped in the same IoT Hub.
@@ -248,7 +249,7 @@ Installing MCC on your Windows device is a simple process. A PowerShell script p
    - After validating your MCC is properly functional, review your management solution documentation, such as [Intune](/mem/intune/configuration/delivery-optimization-windows), to set the cache host policy to the IP address of your MCC.
    - If you had errors during your deployment, see the [Common Issues](#common-issues) section in this article.
 
-## Verify proper functioning MCC server
+## Verify MCC server functionality
 
 #### Verify client side
 
@@ -275,7 +276,7 @@ See the [common issues](#common-issues) section for more information.
 
 #### Verify server side
 
-For a validation of properly functioning MCC, execute the following command in the EFLOW VM or any device in the network. Replace <CacheServerIP\> with the IP address of the cache server.
+To validate that MCC is properly functioning, execute the following command in the EFLOW VM or any device in the network. Replace <CacheServerIP\> with the IP address of the cache server.
 
 ```powershell
 wget http://<CacheServerIP>/mscomtest/wuidt.gif?cacheHostOrigin=au.download.windowsupdate.com
