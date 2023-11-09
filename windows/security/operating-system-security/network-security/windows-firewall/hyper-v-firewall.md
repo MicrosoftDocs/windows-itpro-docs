@@ -123,11 +123,11 @@ Here's a list of settings that can be used to configure Hyper-v firewall:
 |`./Vendor/MSFT/Firewall/MdmStore/HyperVVMSettings/{40E0AC32-46A5-438A-A0B2-2B479E8F2E90}/`**[DefaultInboundAction]**|This value is the action that the Hyper-V Firewall does by default (and evaluates at the very end) on inbound connections. This value controls the settings for all profiles. It's recommended to instead use the profile setting value under the profile subtree.|
 |`./Vendor/MSFT/Firewall/MdmStore/HyperVVMSettings/{40E0AC32-46A5-438A-A0B2-2B479E8F2E90}/`**[DefaultOutboundAction]**|This value is the action that the Hyper-V Firewall does by default (and evaluates at the very end) on outbound connections. This value controls the settings for all profiles. It's recommended to instead use the profile setting value under the profile subtree.|
 
-The following values apply to Hyper-V firewall profile settings: `Public`, `Private`, `Domain`:
+The following values apply to Hyper-V firewall profile settings: *Public*, *Private*, *Domain*:
 
 |Value name|Description|
 |---|---|
-|`./Vendor/MSFT/Firewall/MdmStore/HyperVVMSettings/{40E0AC32-46A5-438A-A0B2-2B479E8F2E90}/<Profile>/`**[EnableFirewall][PROFILE]**|Enables Hyper-V firewall rules for this profile.|[True, False]|
+|`./Vendor/MSFT/Firewall/MdmStore/HyperVVMSettings/{40E0AC32-46A5-438A-A0B2-2B479E8F2E90}/<Profile>/`**[EnableFirewall][PROFILE]**|Enables Hyper-V firewall rules for this profile.|
 |`./Vendor/MSFT/Firewall/MdmStore/HyperVVMSettings/{40E0AC32-46A5-438A-A0B2-2B479E8F2E90}/<Profile>/`**[AllowLocalPolicyMerge][PROFILE]**|This value is used as an on/off switch. If this value is false, Hyper-V Firewall rules from the local store are ignored and not enforced.|[True, False]|
 |`./Vendor/MSFT/Firewall/MdmStore/HyperVVMSettings/{40E0AC32-46A5-438A-A0B2-2B479E8F2E90}/<Profile>/`**[DefaultOutboundAction][PROFILE]**|The default action for outbound traffic that is applied if no rules match the traffic.|
 |`./Vendor/MSFT/Firewall/MdmStore/HyperVVMSettings/{40E0AC32-46A5-438A-A0B2-2B479E8F2E90}/<Profile>/`**[DefaultInboundAction][PROFILE]**|The default action for inbound traffic that is applied if no rules match the traffic.|
@@ -156,7 +156,6 @@ The following values apply to Hyper-V firewall rules:
 To provide feedback for Hyper-V firewall, open [**Feedback Hub**][FHUB] and use the category **Security and Privacy > Microsoft Defender Firewall and network protection**.
 
 <!--links used in this document-->
-
 
 [CSP-1]: /windows/client-management/mdm/firewall-csp
 
