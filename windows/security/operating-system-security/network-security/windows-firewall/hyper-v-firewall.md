@@ -28,7 +28,7 @@ The output contains a VmCreator object type, which has unique identifier `VMCrea
 
 ```powershell
 PS C:\> Get-NetFirewallHyperVVMCreator
-VMCreatorId  : {40E0AC32-46A5-438A-A0B2-2B479E8F2E90} 
+VMCreatorId : {40E0AC32-46A5-438A-A0B2-2B479E8F2E90} 
 FriendlyName : WSL 
 ```
 
@@ -117,35 +117,39 @@ Here's a list of settings that can be used to configure Hyper-v firewall:
 
 |Value name|Description|
 |-|-|
+|`./Vendor/MSFT/Firewall/MdmStore/HyperVVMSettings/{40E0AC32-46A5-438A-A0B2-2B479E8F2E90}/`**[EnableFirewall]**|This value is an on/off switch for the Hyper-V Firewall. This value controls the settings for all profiles.|
 |`./Vendor/MSFT/Firewall/MdmStore/HyperVVMSettings/{40E0AC32-46A5-438A-A0B2-2B479E8F2E90}/`**[EnableLoopback]**|Enables loopback between this guest and another guest or the host.|
-|`./Vendor/MSFT/Firewall/MdmStore/HyperVVMSettings/{40E0AC32-46A5-438A-A0B2-2B479E8F2E90}/`**[AllowHostPolicyMerge]**|Enables Hyper-V firewall to use applicable host firewall settings and rules.|
+|`./Vendor/MSFT/Firewall/MdmStore/HyperVVMSettings/{40E0AC32-46A5-438A-A0B2-2B479E8F2E90}/`**[AllowHostPolicyMerge]**|This value is used as an on/off switch. If this value is true, applicable host firewall rules and settings are applied to Hyper-V Firewall.|
+|`./Vendor/MSFT/Firewall/MdmStore/HyperVVMSettings/{40E0AC32-46A5-438A-A0B2-2B479E8F2E90}/`**[DefaultInboundAction]**|This value is the action that the Hyper-V Firewall does by default (and evaluates at the very end) on inbound connections. This value controls the settings for all profiles. It's recommended to instead use the profile setting value under the profile subtree.|
+|`./Vendor/MSFT/Firewall/MdmStore/HyperVVMSettings/{40E0AC32-46A5-438A-A0B2-2B479E8F2E90}/`**[DefaultOutboundAction]**|This value is the action that the Hyper-V Firewall does by default (and evaluates at the very end) on outbound connections. This value controls the settings for all profiles. It's recommended to instead use the profile setting value under the profile subtree.|
 
 The following values apply to Hyper-V firewall profile settings: `Public`, `Private`, `Domain`:
 
 |Value name|Description|
 |---|---|
-|`./Vendor/MSFT/Firewall/MdmStore/HyperVVMSettings/{40E0AC32-46A5-438A-A0B2-2B479E8F2E90}/<Profile>/`**[EnableFirewall]**|Enables Hyper-V firewall rules for this profile.|[True, False]|
-|`./Vendor/MSFT/Firewall/MdmStore/HyperVVMSettings/{40E0AC32-46A5-438A-A0B2-2B479E8F2E90}/<Profile>/`**[DefaultOutboundAction]**|The default action for outbound traffic that is applied if no rules match the traffic.|
-|`./Vendor/MSFT/Firewall/MdmStore/HyperVVMSettings/{40E0AC32-46A5-438A-A0B2-2B479E8F2E90}/<Profile>/`**[DefaultInboundAction]**|The default action for inbound traffic that is applied if no rules match the traffic.|
-|`./Vendor/MSFT/Firewall/MdmStore/HyperVVMSettings/{40E0AC32-46A5-438A-A0B2-2B479E8F2E90}/<Profile>/`**[AllowLocalPolicyMerge]**|||
+|`./Vendor/MSFT/Firewall/MdmStore/HyperVVMSettings/{40E0AC32-46A5-438A-A0B2-2B479E8F2E90}/<Profile>/`**[EnableFirewall][PROFILE]**|Enables Hyper-V firewall rules for this profile.|[True, False]|
+|`./Vendor/MSFT/Firewall/MdmStore/HyperVVMSettings/{40E0AC32-46A5-438A-A0B2-2B479E8F2E90}/<Profile>/`**[AllowLocalPolicyMerge][PROFILE]**|This value is used as an on/off switch. If this value is false, Hyper-V Firewall rules from the local store are ignored and not enforced.|[True, False]|
+|`./Vendor/MSFT/Firewall/MdmStore/HyperVVMSettings/{40E0AC32-46A5-438A-A0B2-2B479E8F2E90}/<Profile>/`**[DefaultOutboundAction][PROFILE]**|The default action for outbound traffic that is applied if no rules match the traffic.|
+|`./Vendor/MSFT/Firewall/MdmStore/HyperVVMSettings/{40E0AC32-46A5-438A-A0B2-2B479E8F2E90}/<Profile>/`**[DefaultInboundAction][PROFILE]**|The default action for inbound traffic that is applied if no rules match the traffic.|
+|`./Vendor/MSFT/Firewall/MdmStore/HyperVVMSettings/{40E0AC32-46A5-438A-A0B2-2B479E8F2E90}/<Profile>/`**[AllowLocalPolicyMerge][PROFILE]**|||
 
 The following values apply to Hyper-V firewall rules:
 
-|Value name|Description|
-|---|---|
-|`HyperVFirewallRules\<RuleId>/`**[Name]**|Friendly name of the rule|
-|`HyperVFirewallRules\<RuleId>/`**[Priority]**|Specifies the ordering of rule enforcement. If not specified, block rules are ordered ahead of allow rules. A lower priority rule is evaluated before a higher priority one.|
-|`HyperVFirewallRules\<RuleId>/`**[Direction]**|Comma separated list.  The rule is enabled based on the traffic direction as following. <br><br>`IN` - the rule applies to inbound traffic. <br><br>`OUT` - the rule applies to outbound traffic. <br><br>If not specified the detault is OUT.|
-|`HyperVFirewallRules\<RuleId>/`**[VMCreatorId]**|This field specifies the VM Creator ID that this rule is applicable to. A NULL GUID will result in this rule applying to all VM creators. <br><br>Can be filled in automatically from earlier profile?|
-|Protocol <br><br>`HyperVFirewallRules\<RuleId>/`**[Protocol]**|0-255 number representing the ip protocol (TCP = 6, UDP = 17).  If not specified the default is All.|
-|`HyperVFirewallRules\<RuleId>/`**[LocalAddressRanges]**|Consists of one or more comma-delimited tokens specifying the local addresses covered by the rule. "*" is the default value. <br><br>Valid tokens include: <br><br>"*" indicates any local address. If present, this must be the only token included. <br><br>A subnet can be specified using either the subnet mask or network prefix notation. If neither a subnet mask not a network prefix is specified, the subnet mask defaults to 255.255.255.255. <br><br>A valid IPv6 address. <br><br>An IPv4 address range in the format of "start address - end address" with no spaces included. <br><br>An IPv6 address range in the format of "start address - end address" with no spaces included.  If not specified the default is All.|
-|`HyperVFirewallRules\<RuleId>/`**[LocalPortRanges]**|Comma Separated list of ranges specifying the local port of the traffic covered by this rule. For example, 100-120,200,300-320.  If not specified the default is All.|
-|`HyperVFirewallRules\<RuleId>/`**[RemoteAddressRanges]**|Consists of one or more comma-delimited tokens specifying the remote addresses covered by the rule. "*" is the default value. <br><br>Valid tokens include: <br><br>"*" indicates any remote address. If present, this must be the only token included. <br><br>A subnet can be specified using either the subnet mask or network prefix notation. If neither a subnet mask not a network prefix is specified, the subnet mask defaults to 255.255.255.255. <br><br>A valid IPv6 address. <br><br>An IPv4 address range in the format of "start address - end address" with no spaces included. <br><br>An IPv6 address range in the format of "start address - end address" with no spaces included.  If not specified the default is All.|
-|`HyperVFirewallRules\<RuleId>/`**[RemotePortRanges]**|Comma Separated list of ranges specifying the remote port of the traffic covered by this rule. For example, 100-120,200,300-320.  If not specified the default is All.|
-|`HyperVFirewallRules\<RuleId>/`**[Action]**|Specifies the action the rule enforces: <br><br>0 - Block <br><br>1 - Allow|
-|`HyperVFirewallRules\<RuleId>/`**[Enabled]**|Indicates whether the rule is enabled or disabled. If the rule must be enabled, this value must be set to true. If not specified - a new rule is disabled by default.|
-|`HyperVFirewallRules\<RuleId>/`**[Status]**|Provides information about the specific version of the rule in deployment for monitoring purposes.|
-|`HyperVFirewallRules\<RuleId>/`**[Profiles]**|Specifies the profiles to which the rule belongs: Domain, Private, Public. See [FW_PROFILE_TYPE](/openspecs/windows_protocols/ms-fasp/7704e238-174d-4a5e-b809-5f3787dd8acc) for the bitmasks that are used to identify profile types. If not specified, the default is All.|
+| Value name | Description |
+|--|--|
+| `./Vendor/MSFT/Firewall/MdmStore/HyperVFirewallRules/<RuleId>/`**[Name][RULE]** | Friendly name of the rule. |
+| `./Vendor/MSFT/Firewall/MdmStore/HyperVFirewallRules/<RuleId>/`**[Priority][RULE]** | Specifies the ordering of rule enforcement. If not specified, block rules are ordered ahead of allow rules. A lower priority rule is evaluated before a higher priority one. |
+| `./Vendor/MSFT/Firewall/MdmStore/HyperVFirewallRules/<RuleId>/`**[Direction][RULE]** | Comma separated list. The rule is enabled based on the traffic direction as following. <br><br>- `IN`: the rule applies to inbound traffic. <br><br>-`OUT`: the rule applies to outbound traffic. <br><br>If not specified the detault is OUT. |
+| `./Vendor/MSFT/Firewall/MdmStore/HyperVFirewallRules/<RuleId>/`**[VMCreatorId][RULE]** | This field specifies the VM Creator ID that this rule is applicable to. A `NULL` GUID will result in this rule applying to all VM creators. |
+| Protocol <br><br>`./Vendor/MSFT/Firewall/MdmStore/HyperVFirewallRules/<RuleId>/`**[Protocol][RULE]** | `0-255` number representing the ip protocol (TCP = 6, UDP = 17). If not specified the default is All. |
+| `./Vendor/MSFT/Firewall/MdmStore/HyperVFirewallRules/<RuleId>/`**[LocalAddressRanges][RULE]** | Consists of one or more comma-delimited tokens specifying the local addresses covered by the rule. `*` is the default value. <br><br>Valid tokens include: <br><br>`*`: indicates any local address. If present, this must be the only token included. <br><br>A subnet can be specified using either the subnet mask or network prefix notation. If neither a subnet mask not a network prefix is specified, the subnet mask defaults to `255.255.255.255`. <br><br>A valid IPv6 address. <br><br>An IPv4 address range in the format of *start address - end address* with no spaces included. <br><br>An IPv6 address range in the format of *start address - end address* with no spaces included. If not specified the default is All. |
+| `./Vendor/MSFT/Firewall/MdmStore/HyperVFirewallRules/<RuleId>/`**[LocalPortRanges][RULE]** | Comma Separated list of ranges specifying the local port of the traffic covered by this rule. For example, `100-120,200,300-320`. If not specified the default is All. |
+| `./Vendor/MSFT/Firewall/MdmStore/HyperVFirewallRules/<RuleId>/`**[RemoteAddressRanges][RULE]** | Consists of one or more comma-delimited tokens specifying the remote addresses covered by the rule. `*` is the default value. <br><br>Valid tokens include: <br><br>`*`: indicates any remote address. If present, this must be the only token included. <br><br>A subnet can be specified using either the subnet mask or network prefix notation. If neither a subnet mask not a network prefix is specified, the subnet mask defaults to `255.255.255.255`. <br><br>A valid IPv6 address. <br><br>An IPv4 address range in the format of *start address - end address* with no spaces included. <br><br>An IPv6 address range in the format of *start address - end address* with no spaces included. If not specified the default is All. |
+| `./Vendor/MSFT/Firewall/MdmStore/HyperVFirewallRules/<RuleId>/`**[RemotePortRanges][RULE]** | Comma Separated list of ranges specifying the remote port of the traffic covered by this rule. For example, `100-120,200,300-320`. If not specified the default is All. |
+| `./Vendor/MSFT/Firewall/MdmStore/HyperVFirewallRules/<RuleId>/`**[Action][RULE]** | Specifies the action the rule enforces: <br><br>0 - Block <br><br>1 - Allow |
+| `./Vendor/MSFT/Firewall/MdmStore/HyperVFirewallRules/<RuleId>/`**[Enabled][RULE]** | Indicates whether the rule is enabled or disabled. If the rule must be enabled, this value must be set to true. If not specified - a new rule is disabled by default. |
+| `./Vendor/MSFT/Firewall/MdmStore/HyperVFirewallRules/<RuleId>/`**[Status][RULE]** | Provides information about the specific version of the rule in deployment for monitoring purposes. |
+| `./Vendor/MSFT/Firewall/MdmStore/HyperVFirewallRules/<RuleId>/`**[Profiles][RULE]** | Specifies the profiles to which the rule belongs: Domain, Private, Public. See [FW_PROFILE_TYPE](/openspecs/windows_protocols/ms-fasp/7704e238-174d-4a5e-b809-5f3787dd8acc) for the bitmasks that are used to identify profile types. If not specified, the default is All. |
 
 ### :::image type="icon" source="../../../images/icons/feedback.svg" border="false"::: Provide feedback
 
@@ -153,13 +157,21 @@ To provide feedback for Hyper-V firewall, open [**Feedback Hub**][FHUB] and use 
 
 <!--links used in this document-->
 
+
+[CSP-1]: /windows/client-management/mdm/firewall-csp
+
+[FHUB]: feedback-hub://?tabid=2&newFeedback=true&feedbackType=1
+[INT-1]: /windows/client-management/mdm/firewall-csp
 [PS-1]: /powershell/module/netsecurity/get-netfirewallhypervvmsetting
 [PS-2]: /powershell/module/netsecurity/set-netfirewallhypervvmsetting
 [PS-3]: /powershell/module/netsecurity/get-netfirewallhypervrule
 [PS-4]: /powershell/module/netsecurity/set-netfirewallhypervrule
 [PS-5]: /powershell/module/netsecurity/set-netfirewallhypervprofile
-[CSP-1]: /windows/client-management/mdm/firewall-csp
+
+[RULE]: /windows/client-management/mdm/firewall-csp#mdmstorehypervfirewallrules
+[PROFILE]: /windows/client-management/mdm/firewall-csp#mdmstorehypervvmsettingsvmcreatorid
+[EnableFirewall]: /windows/client-management/mdm/firewall-csp#mdmstorehypervvmsettingsvmcreatoridenablefirewall
+[EnableLoopback]: /windows/client-management/mdm/firewall-csp#mdmstorehypervvmsettingsvmcreatoridenableloopback
 [AllowHostPolicyMerge]: /windows/client-management/mdm/firewall-csp#mdmstorehypervvmsettingsvmcreatoridallowhostpolicymerge
-[AllowLocalPolicyMerge]: /windows/client-management/mdm/firewall-csp#mdmstorehypervvmsettingsvmcreatoriddomainprofileallowlocalpolicymerge
-[EnableFirewall]: /windows/client-management/mdm/firewall-csp#mdmstorehypervvmsettingsvmcreatoriddomainprofileenablefirewall
-[INT-1]: /windows/client-management/mdm/firewall-csp
+[DefaultOutboundAction]: /windows/client-management/mdm/firewall-csp#mdmstorehypervvmsettingsvmcreatoriddefaultoutboundaction
+[DefaultInboundAction]: /windows/client-management/mdm/firewall-csp#mdmstorehypervvmsettingsvmcreatoriddefaultinboundaction
