@@ -3,6 +3,9 @@ title: Hyper-V firewall
 description: Learn how to configure Hyper-V firewall rules and settings using PowerShell or Configuration Service Provider (CSP).
 ms.topic: how-to
 ms.date: 11/08/2023
+author: paolomatarazzo
+ms.author: paoloma
+ms.topic: article
 appliesto:
 - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
 ---
