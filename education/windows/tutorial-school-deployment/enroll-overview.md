@@ -22,7 +22,7 @@ This [table][INT-1] describes the ideal scenarios for using either option. It's 
 
 Select one of the following options to learn the next steps about the enrollment method you chose:
 > [!div class="op_single_selector"]
-> - [Automatic Intune enrollment via Microsoft Entra join](enroll-aadj.md)
+> - [Automatic Intune enrollment via Microsoft Entra join](enroll-entra-join.md)
 > - [Bulk enrollment with provisioning packages](enroll-package.md)
 > - [Enroll devices with Windows Autopilot](enroll-autopilot.md)
 

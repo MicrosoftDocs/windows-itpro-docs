@@ -54,7 +54,7 @@ Alternatively, you can also select **Start** > **Power** icon. Hold down <kbd>Sh
 
 This section offers recommendations to prepare you for the best possible setup experience.
 
-### Run the same Windows uild on the admin device and the student devices
+### Run the same Windows build on the admin device and the student devices
 
 We recommend you run the IT administrator or technical teacher's device on the same Windows build as the student devices.
 
@@ -66,7 +66,7 @@ To check the app's OS requirements, go to the Microsoft Store and locate the Set
 
 ### Use app on a PC that is connected to your school's network  
 
-We recommend that you run the Set up School PCs app on a computer that's connected to your school's network. That way the app can gather accurate information about your school's wireless networks and cloud subscriptions. If it's not connected, you'll need to enter the information manually.
+We recommend that you run the Set up School PCs app on a computer that's connected to your school's network. That way the app can gather accurate information about your school's wireless networks and cloud subscriptions. If it's not connected, you need to enter the information manually.
 
 >[!NOTE]  
 >Don't use the **Set up Schools PCs** app for devices that must connect to enterprise or open Wi-Fi networds that require the user to accept Terms of Use.
@@ -77,8 +77,8 @@ Don't use Set up School PCs over a certificate-based network, or one where you h
 
 We recommend that you:
 
-- Configure your DHCP so at least 200 IP addresses are available for your devices. Having available IP addresses will allow you to set up many devices simultaneously
-- Configure your IP addresses to expire after a short time, for example 30 minutes. IP addresses will free up quickly so you can continue to set up devices without network issues.
+- Configure your DHCP so at least 200 IP addresses are available for your devices. Having available IP addresses allow you to set up many devices simultaneously
+- Configure your IP addresses to expire after a short time, for example 30 minutes. IP addresses free up quickly so you can continue to set up devices without network issues.
 
 >[!WARNING]
 >Only use the provisioning package on devices that you want to configure and lock down for students. After you apply the provisioning package to a student device, the PC must be reset to remove the settings.
@@ -110,7 +110,7 @@ A package expiration date is also attached to the end of each package. For examp
 
 After you select **Next**, you can no longer change the name in the app. To create a package with a different name, reopen the Set up School PCs app.  
 
-To change an existing package's name, right-click the package folder on your device and select **Rename**. This action does not change the name in Microsoft Entra ID. If you have Global Admin permissions, you can go to Microsoft Entra ID in the Azure portal, and rename the package there.  
+To change an existing package's name, right-click the package folder on your device and select **Rename**. This action doesn't change the name in Microsoft Entra ID. If you have Global Admin permissions, you can go to Microsoft Entra ID in the Azure portal, and rename the package there.  
 
 ### Sign in  
 
@@ -141,9 +141,9 @@ Select your organization's Wi-Fi network from the list of available wireless net
 
 ### Device names
 
-Create a name to add as a prefix to each device. This name will help you recognize and manage this group of devices in Intune.
+Create a name to add as a prefix to each device. This name helps you recognize and manage this group of devices in Intune.
 
-To make sure all device names are unique, Set up School PCs automatically appends `_%SERIAL%` to the name. For example, if you add *MATH4* as the prefix, the device names will appear as *MATH4* followed by the device serial number.
+To make sure all device names are unique, Set up School PCs automatically appends `_%SERIAL%` to the name. For example, if you add *MATH4* as the prefix, the device names appear as *MATH4* followed by the device serial number.
 
 To keep the default name for your devices, select **Continue with existing names**.
 
@@ -151,7 +151,7 @@ To keep the default name for your devices, select **Continue with existing names
 
 ### Settings
 
-Select additional settings to include in the provisioning package. To begin, select the operating system on your student PCs.
+Select more settings to include in the provisioning package. To begin, select the operating system on your student PCs.
 
 ![Screenshot of the Current OS version page with the Select OS version menu selected, showing 7 Windows 10 options. All other settings on page are unavailable to select.](images/suspcs/1810_suspc_settings.png)  
 
@@ -163,12 +163,12 @@ The following table describes each setting and lists the applicable Windows 10 v
 
 | Setting | What happens if I select it? | Note |
 |--|--|--|
-| Remove apps pre-installed by the device manufacturer | Uninstalls apps that came loaded on the computer by the device's manufacturer. | Adds about 30 minutes to the provisioning process. |
-| Allow local storage (not recommended for shared devices) | Lets students save files to the Desktop and Documents folder on the Student PC. | Not recommended if the device will be shared between different students. |
-| Optimize device for a single student, instead of a shared cart or lab | Optimizes the device for use by a single student, rather than many students. | Recommended if the device will be shared between different students. Single-optimized accounts are set to expire, and require a sign-in, 180 days after setup. This setting increases the maximum PC storage to 100% of the available disk space. In this case, student accounts aren't deleted unless the account has been inactive for 180 days. |
+| Remove apps preinstalled by the device manufacturer | Uninstalls apps that came loaded on the computer by the device's manufacturer. | Adds about 30 minutes to the provisioning process. |
+| Allow local storage (not recommended for shared devices) | Lets students save files to the Desktop and Documents folder on the Student PC. | Not recommended if the device are shared between different students. |
+| Optimize device for a single student, instead of a shared cart or lab | Optimizes the device for use by a single student, rather than many students. | Recommended if the device are shared between different students. Single-optimized accounts are set to expire, and require a sign-in, 180 days after setup. This setting increases the maximum PC storage to 100% of the available disk space. In this case, student accounts aren't deleted unless the account has been inactive for 180 days. |
 | Let guests sign in to these PCs | Allows guests to use student PCs without a school account. | Common to use within a public, shared space, such as a library. Also used when a student loses their password. Adds a **Guest** account to the PC sign-in screen that anyone can sign in to. |
-| Enable Autopilot Reset | Lets you remotely reset a student's PC from the lock screen, apply the device's original settings, and enroll it in device management (Microsoft Entra ID and MDM). | Requires Windows 10, version 1709 and WinRE must be enabled on the PC. Setup will fail if both requirements aren't met. |
-| Lock screen background | Change the default screen lock background to a custom image. | Select **Browse** to search for an image file on your computer. Accepted image formats are jpg, jpeg, and png. |  |
+| Enable Autopilot Reset | Lets you remotely reset a student's PC from the lock screen, apply the device's original settings, and enroll it in device management (Microsoft Entra ID and MDM). | WinRE must be enabled on the device. |
+| Lock screen background | Change the default screen lock background to a custom image. | Select **Browse** to search for an image file on your computer. Accepted image formats are jpg, jpeg, and png. |
 
 After you've made your selections, select **Next**.
 
@@ -177,7 +177,7 @@ After you've made your selections, select **Next**.
 > [!WARNING]
 > If you are using the Autounattend.xml file to reimage your school PCs, do not specify a time zone in the file. If you set the time zone in the file *and* in this app, you will encounter an error.
 
-Choose the time zone where your school's devices are used. This setting ensures that all PCs are provisioned in the same time zone. When you're done, click **Next**.  
+Choose the time zone where your school's devices are used. This setting ensures that all PCs are provisioned in the same time zone. When you're done, select **Next**.  
 
 ![Choose PC time zone page with the time zone menu expanded to show all time zone selections.](images/suspcs/1810_suspc_timezone.png)  
 
@@ -205,7 +205,7 @@ Set up the Take a Test app to give online quizzes and high-stakes assessments. D
 
 Upload custom images to replace the student devices' default desktop and lock screen backgrounds. Select **Browse** to search for an image file on your computer. Accepted image formats are jpg, jpeg, and png.  
 
-If you don't want to upload custom images or use the images that appear in the app, select **Continue without personalization**. This option does not apply any customizations, and instead uses the devices' default or preset images.  
+If you don't want to upload custom images or use the images that appear in the app, select **Continue without personalization**. This option doesn't apply any customizations, and instead uses the devices' default or preset images.  
 
 ![Example image of the Set up School PCs app, Personalization screen, showing the default desktop and lock screen background photos, a Browse button under each photo, a blue Next button, and a Continue without personalization button.](images/suspcs/1810_SUSPC_personalization.png)  
 
@@ -223,12 +223,12 @@ Review all of the settings for accuracy and completeness
 
 ### Insert USB
 
-1. Insert a USB drive. The **Save** button will light up when your computer detects the USB
+1. Insert a USB drive. The **Save** button lights up when your computer detects the USB
 1. Choose your USB drive from the list and select **Save**
 
     ![Insert a USB drive now screen with USB drive selection highlighted. Save button is blue and active.](images/suspcs/1810_SUSPC_USB.png)
 
-1. When the package is ready, you'll see the filename and package expiration date. You can also select **Add a USB** to save the same provisioning package to another USB drive. When you're done, remove the USB drive and select **Next**
+1. When the package is ready, you see the filename and package expiration date. You can also select **Add a USB** to save the same provisioning package to another USB drive. When you're done, remove the USB drive and select **Next**
 
 ![Your provisioning package is ready screen with package filename and expiration date. Shows an active blue, Next button, and a gray Add a USB button.](images/suspcs/1810_SUSPC_Package_ready.png)  
 
@@ -247,7 +247,7 @@ When used in context of the Set up School PCs app, the word *package* refers to 
 > [!IMPORTANT]
 > The devices must have a new or reset Windows image and must not already have been through first-run setup experience (which is referred to as *OOBE*). For instructions about how to reset a devices's image, see [Prepare existing PC account for new setup](use-set-up-school-pcs-app.md#prepare-existing-pc-account-for-new-setup).  
 
-1. Start with the student device turned off or with the device on the first-run setup screen. If the PC has gone past the account setup screen, reset the PC to start over. To reset the PC, go to **Settings** > **Update & security** > **Recovery** > **Reset this PC**
+1. Start with the student device turned off or with the device on the first-run setup screen. If the device is past the account setup screen, reset the device to start over. To reset the it, go to **Settings** > **Update & security** > **Recovery** > **Reset this PC**
 
     ![Example screenshot of the first screen the Windows 10 PC setup for OOBE. United States is selected as the region and the Yes button is active.](images/suspcs/win10_1703_oobe_firstscreen.png)
   

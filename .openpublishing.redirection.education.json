@@ -161,13 +161,13 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "education/windows/enroll-aadj.md",
-      "redirect_url": "/education/windows/enroll-entra-join",
+      "source_path": "education/windows/tutorial-school-deployment/enroll-aadj.md",
+      "redirect_url": "/education/windows/tutorial-school-deployment/enroll-entra-join",
       "redirect_document_id": false
     },
     {
-      "source_path": "education/windows/set-up-azure-ad.md",
-      "redirect_url": "/education/windows/set-up-microsoft-entra-id",
+      "source_path": "education/windows/tutorial-school-deployment/set-up-azure-ad.md",
+      "redirect_url": "/education/windows/tutorial-school-deployment/set-up-microsoft-entra-id",
       "redirect_document_id": false
     },
     {
