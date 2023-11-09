@@ -115,26 +115,26 @@ You can configure Hyper-V firewall using the [Firewall CSP][CSP-1], for example 
 
 Here's a list of settings that can be used to configure Hyper-v firewall:
 
-|Value name|Description|
-|-|-|
-|`./Vendor/MSFT/Firewall/MdmStore/HyperVVMSettings/{40E0AC32-46A5-438A-A0B2-2B479E8F2E90}/`**[EnableFirewall]**|This value is an on/off switch for the Hyper-V Firewall. This value controls the settings for all profiles.|
-|`./Vendor/MSFT/Firewall/MdmStore/HyperVVMSettings/{40E0AC32-46A5-438A-A0B2-2B479E8F2E90}/`**[EnableLoopback]**|Enables loopback between this guest and another guest or the host.|
-|`./Vendor/MSFT/Firewall/MdmStore/HyperVVMSettings/{40E0AC32-46A5-438A-A0B2-2B479E8F2E90}/`**[AllowHostPolicyMerge]**|This value is used as an on/off switch. If this value is true, applicable host firewall rules and settings are applied to Hyper-V Firewall.|
-|`./Vendor/MSFT/Firewall/MdmStore/HyperVVMSettings/{40E0AC32-46A5-438A-A0B2-2B479E8F2E90}/`**[DefaultInboundAction]**|This value is the action that the Hyper-V Firewall does by default (and evaluates at the very end) on inbound connections. This value controls the settings for all profiles. It's recommended to instead use the profile setting value under the profile subtree.|
-|`./Vendor/MSFT/Firewall/MdmStore/HyperVVMSettings/{40E0AC32-46A5-438A-A0B2-2B479E8F2E90}/`**[DefaultOutboundAction]**|This value is the action that the Hyper-V Firewall does by default (and evaluates at the very end) on outbound connections. This value controls the settings for all profiles. It's recommended to instead use the profile setting value under the profile subtree.|
+| CSP path | Description |
+|--|--|
+| `./Vendor/MSFT/Firewall/MdmStore/HyperVVMSettings/{40E0AC32-46A5-438A-A0B2-2B479E8F2E90}/`**[EnableFirewall]** | This value is an on/off switch for the Hyper-V Firewall. This value controls the settings for all profiles. |
+| `./Vendor/MSFT/Firewall/MdmStore/HyperVVMSettings/{40E0AC32-46A5-438A-A0B2-2B479E8F2E90}/`**[EnableLoopback]** | Enables loopback between this guest and another guest or the host. |
+| `./Vendor/MSFT/Firewall/MdmStore/HyperVVMSettings/{40E0AC32-46A5-438A-A0B2-2B479E8F2E90}/`**[AllowHostPolicyMerge]** | This value is used as an on/off switch. If this value is true, applicable host firewall rules and settings are applied to Hyper-V Firewall. |
+| `./Vendor/MSFT/Firewall/MdmStore/HyperVVMSettings/{40E0AC32-46A5-438A-A0B2-2B479E8F2E90}/`**[DefaultInboundAction]** | This value is the action that the Hyper-V Firewall does by default (and evaluates at the very end) on inbound connections. This value controls the settings for all profiles. It's recommended to instead use the profile setting value under the profile subtree. |
+| `./Vendor/MSFT/Firewall/MdmStore/HyperVVMSettings/{40E0AC32-46A5-438A-A0B2-2B479E8F2E90}/`**[DefaultOutboundAction]** | This value is the action that the Hyper-V Firewall does by default (and evaluates at the very end) on outbound connections. This value controls the settings for all profiles. It's recommended to instead use the profile setting value under the profile subtree. |
 
 The following values apply to Hyper-V firewall profile settings: *Public*, *Private*, *Domain*:
 
-|Value name|Description|
-|---|---|
-|`./Vendor/MSFT/Firewall/MdmStore/HyperVVMSettings/{40E0AC32-46A5-438A-A0B2-2B479E8F2E90}/<Profile>/`**[EnableFirewall][PROFILE]**|Enables Hyper-V firewall rules for this profile.|
-|`./Vendor/MSFT/Firewall/MdmStore/HyperVVMSettings/{40E0AC32-46A5-438A-A0B2-2B479E8F2E90}/<Profile>/`**[AllowLocalPolicyMerge][PROFILE]**|This value is used as an on/off switch. If this value is false, Hyper-V Firewall rules from the local store are ignored and not enforced.|[True, False]|
-|`./Vendor/MSFT/Firewall/MdmStore/HyperVVMSettings/{40E0AC32-46A5-438A-A0B2-2B479E8F2E90}/<Profile>/`**[DefaultOutboundAction][PROFILE]**|The default action for outbound traffic that is applied if no rules match the traffic.|
-|`./Vendor/MSFT/Firewall/MdmStore/HyperVVMSettings/{40E0AC32-46A5-438A-A0B2-2B479E8F2E90}/<Profile>/`**[DefaultInboundAction][PROFILE]**|The default action for inbound traffic that is applied if no rules match the traffic.|
+| CSP path | Description |
+|--|--|
+| `./Vendor/MSFT/Firewall/MdmStore/HyperVVMSettings/{40E0AC32-46A5-438A-A0B2-2B479E8F2E90}/<Profile>/`**[EnableFirewall][PROFILE]** | Enables Hyper-V firewall rules for this profile. |
+| `./Vendor/MSFT/Firewall/MdmStore/HyperVVMSettings/{40E0AC32-46A5-438A-A0B2-2B479E8F2E90}/<Profile>/`**[AllowLocalPolicyMerge][PROFILE]** | This value is used as an on/off switch. If this value is false, Hyper-V Firewall rules from the local store are ignored and not enforced. | [True, False] |
+| `./Vendor/MSFT/Firewall/MdmStore/HyperVVMSettings/{40E0AC32-46A5-438A-A0B2-2B479E8F2E90}/<Profile>/`**[DefaultOutboundAction][PROFILE]** | The default action for outbound traffic that is applied if no rules match the traffic. |
+| `./Vendor/MSFT/Firewall/MdmStore/HyperVVMSettings/{40E0AC32-46A5-438A-A0B2-2B479E8F2E90}/<Profile>/`**[DefaultInboundAction][PROFILE]** | The default action for inbound traffic that is applied if no rules match the traffic. |
 
 The following values apply to Hyper-V firewall rules:
 
-| Value name | Description |
+| CSP path | Description |
 |--|--|
 | `./Vendor/MSFT/Firewall/MdmStore/HyperVFirewallRules/<RuleId>/`**[Name][RULE]** | Friendly name of the rule. |
 | `./Vendor/MSFT/Firewall/MdmStore/HyperVFirewallRules/<RuleId>/`**[Priority][RULE]** | Specifies the ordering of rule enforcement. If not specified, block rules are ordered ahead of allow rules. A lower priority rule is evaluated before a higher priority one. |
