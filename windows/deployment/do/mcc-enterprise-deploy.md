@@ -219,15 +219,19 @@ Installing MCC on your Windows device is a simple process. A PowerShell script p
    The IP address you assign to the EFLOW VM should be within the same subnet as the host server (based on the subnet mask) and not used by any other machine on the network.
    For example, for host configuration where the server IP Address is 192.168.1.202 and the subnet mask is 255.255.255.0, the static IP can be anything 192.168.1.* except 192.168.1.202
    <!-- Insert Image 1 & 2. Remove ent-mcc-script-dynamic-address.png image (it is replaced by image 2) -->
+    :::image type="content" source="./images/external-switch-1.jpg" alt-text="Screenshot of a sample output of ipconfig command showing example of subnet mask." lightbox="./images/external-switch-1.jpg":::
+    :::image type="content" source="./images/assigning-ip-2.png" alt-text="Screenshot of multiple installer questions about ipv4 address for Eflow." lightbox="./images/assigning-ip-2.png":::
+   
    If you would like to use your own DNS server instead of Google DNS 8.8.8.8, select **n** and set your own DNS server IP.
-   <!-- Insert Image 3 -->
+   :::image type="content" source="./images/use-custom-dns-3.png" alt-text="Screenshot of multiple installer questions about setting an alternate DNS server." lightbox="./images/use-custom-dns-3.png":::
    If you use a dynamic IP address, the DHCP server will automatically configure the IP address and DNS settings. 
  
 1. Choose where you would like to download, install, and store the virtual hard disk for EFLOW. You'll also be asked how much memory, storage, and how many cores you would like to allocate for the VM. For this example, we chose the default values for download path, install path, and virtual hard disk path. 
    <!-- Insert Image 4 -->
+   :::image type="content" source="./images/installation-info-4.png" alt-text="Screenshot of multiple installer questions about memory and storage." lightbox="./images/installation-info-4.png":::
    Please refer to the [Sizing Recommendations](/mcc-enterprise-prerequisites#sizing-recommendations) for memory, virtual storage, and CPU cores. For this example we chose the recommend values for a Branch Office/Small Enterprise deployment.
    <!-- Insert Image 5 -->
-
+   :::image type="content" source="./images/memory-storage-5.png" alt-text="Screenshot of multiple installer questions about setting an alternate DNS server." lightbox="./images/memory-storage-5.png":::
    <!-- Remove: If this is your first MCC deployment, select **n** so that a new IoT Hub can be created. If you have already configured MCC before, choose **y** so that your MCCs are grouped in the same IoT Hub.
 
     1. You'll be shown a list of existing IoT Hubs in your Azure subscription. Enter the number corresponding to the IoT Hub to select it. **You'll likely have only 1 IoT Hub in your subscription, in which case you want to enter "1"**
@@ -237,7 +241,7 @@ Installing MCC on your Windows device is a simple process. A PowerShell script p
 1.  When the installation is complete, you should see the following output (the values below will be your own)
        :::image type="content" source="./images/ent-mcc-script-complete.png" alt-text="Screenshot of the installer script displaying the completion summary in PowerShell." lightbox="./images/ent-mcc-script-complete.png":::
        <!-- Insert Image 7 -->
-
+    :::image type="content" source="./images/installation-complete-7" alt-text="Screenshot of expected output when installation is complete." lightbox="./images/installation-complete-7":::
 
 1. Your MCC deployment is now complete.
    If you don't see any errors, continue to the next section to validate your MCC deployment. Your VM will not appear in Hyper-V Manager as it is an EFLOW VM.
