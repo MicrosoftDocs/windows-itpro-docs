@@ -18,7 +18,7 @@ appliesto:
 ms.date: 10/12/2022
 ---
 
-<!-- Customers will no longer update the private preview and instead install public preview
+<!-- Customers will no longer update the private preview and instead install public preview-->
 # Update or uninstall Microsoft Connected Cache for Enterprise and Education
 
 Throughout the preview phase, we'll send you security and feature updates for MCC. Follow these steps to perform the update.
