@@ -123,7 +123,7 @@ Here's a list of settings that can be used to configure Hyper-v firewall:
 | `./Vendor/MSFT/Firewall/MdmStore/HyperVVMSettings/{40E0AC32-46A5-438A-A0B2-2B479E8F2E90}/`**[DefaultInboundAction]** | This value is the action that the Hyper-V Firewall does by default (and evaluates at the very end) on inbound connections. This value controls the settings for all profiles. It's recommended to instead use the profile setting value under the profile subtree. |
 | `./Vendor/MSFT/Firewall/MdmStore/HyperVVMSettings/{40E0AC32-46A5-438A-A0B2-2B479E8F2E90}/`**[DefaultOutboundAction]** | This value is the action that the Hyper-V Firewall does by default (and evaluates at the very end) on outbound connections. This value controls the settings for all profiles. It's recommended to instead use the profile setting value under the profile subtree. |
 
-The following values apply to Hyper-V firewall profile settings: *Public*, *Private*, *Domain*:
+The following values apply to Hyper-V firewall profile settings: `Public`, `Private`, `Domain`:
 
 | CSP path | Description |
 |--|--|
