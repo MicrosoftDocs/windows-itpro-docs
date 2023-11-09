@@ -231,7 +231,7 @@ Installing MCC on your Windows device is a simple process. A PowerShell script p
    :::image type="content" source="./images/installation-info-4.png" alt-text="Screenshot of multiple installer questions about memory and storage." lightbox="./images/installation-info-4.png":::
    Please refer to the [Sizing Recommendations](/mcc-enterprise-prerequisites#sizing-recommendations) for memory, virtual storage, and CPU cores. For this example we chose the recommend values for a Branch Office/Small Enterprise deployment.
    <!-- Insert Image 5 -->
-   :::image type="content" source="./images/memory-storage-5.png" alt-text="Screenshot of multiple installer questions about setting an alternate DNS server." lightbox="./images/memory-storage-5.png":::
+   :::image type="content" source="./images/memory-storage-5.png" alt-text="Screenshot of multiple installer questions about memory and storage." lightbox="./images/memory-storage-5.png":::
    <!-- Remove: If this is your first MCC deployment, select **n** so that a new IoT Hub can be created. If you have already configured MCC before, choose **y** so that your MCCs are grouped in the same IoT Hub.
 
     1. You'll be shown a list of existing IoT Hubs in your Azure subscription. Enter the number corresponding to the IoT Hub to select it. **You'll likely have only 1 IoT Hub in your subscription, in which case you want to enter "1"**
