@@ -1,7 +1,7 @@
 ---
 title: Device enrollment overview
 description: Learn about the different options to enroll Windows devices in Microsoft Intune
-ms.date: 08/31/2022
+ms.date: 11/09/2023
 ms.topic: overview
 ---
 
@@ -24,7 +24,7 @@ Select one of the following options to learn the next steps about the enrollment
 > [!div class="op_single_selector"]
 > - [Automatic Intune enrollment via Microsoft Entra join](enroll-aadj.md)
 > - [Bulk enrollment with provisioning packages](enroll-package.md)
-> - [Enroll devices with Windows Autopilot ](enroll-autopilot.md)
+> - [Enroll devices with Windows Autopilot](enroll-autopilot.md)
 
 <!-- Reference links in article -->
 

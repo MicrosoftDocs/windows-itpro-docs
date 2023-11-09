@@ -159,6 +159,21 @@
       "source_path": "education/windows/windows-automatic-redeployment.md",
       "redirect_url": "/education/windows/autopilot-reset",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "education/windows/enroll-aadj.md",
+      "redirect_url": "/education/windows/enroll-entra-join",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "education/windows/set-up-azure-ad.md",
+      "redirect_url": "/education/windows/set-up-microsoft-entra-id",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "education/windows/set-up-school-pcs-whats-new.md",
+      "redirect_url": "/education/windows",
+      "redirect_document_id": false
     }
   ]
 }
