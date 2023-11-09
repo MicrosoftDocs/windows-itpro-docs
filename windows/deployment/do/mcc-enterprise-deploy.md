@@ -29,7 +29,7 @@ To deploy MCC to your server:
 1. [Create an MCC Node](#create-an-mcc-node-in-azure)
 1. [Edit Cache Node Information](#edit-cache-node-information)
 1. [Install MCC on a physical server or VM](#install-mcc-on-windows)
-1. [Verify proper functioning MCC server](#verify-proper-functioning-mcc-server)
+1. [Verify MCC functionality](#verify-mcc-server-functionality)
 1. [Review common Issues](#common-issues) if needed.
 
 For questions regarding these instructions contact [msconnectedcache@microsoft.com](mailto:msconnectedcache@microsoft.com)
