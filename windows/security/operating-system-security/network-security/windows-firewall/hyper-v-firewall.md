@@ -103,9 +103,26 @@ The output contains an extra value compared to the ones described in the previou
 >
 > To configure these **rules** per profile using the [Set-NetFirewallHyperVRule][PS-4] cmdlet with the `-Profile` option.
 
-## Manage from Intune
+## Configure with Configuration Service Provider (CSP)
 
-You can also manage these settings online via Intune.
+You can configure Hyper-V firewall using the [Firewall CSP][CSP-1]. For example, with an MDM solution like Microsoft Intune.
+
+Here's a list of settings that can be used to configure Hyper-v firewall:
+
+|  | Path |
+|--|--|
+| **CSP** | `./Vendor/MSFT/Firewall/MdmStore/HyperVVMSettings/{VMCreatorId}/`[AllowHostPolicyMerge]
+| **GPO** | Not available |
+
+|  | Path |
+|--|--|
+| **CSP** | `./Vendor/MSFT/Firewall/MdmStore/HyperVVMSettings/{VMCreatorId}/DomainProfile/`[AllowLocalPolicyMerge]
+| **GPO** | Not available |
+
+|  | Path |
+|--|--|
+| **CSP** | `./Vendor/MSFT/Firewall/MdmStore/HyperVVMSettings/{VMCreatorId}/DomainProfile/`[EnableFirewall]
+| **GPO** | Not available |
 
 <!-- links -->
 
@@ -114,3 +131,7 @@ You can also manage these settings online via Intune.
 [PS-3]: /powershell/module/netsecurity/get-netfirewallhypervrule
 [PS-4]: /powershell/module/netsecurity/set-netfirewallhypervrule
 [PS-5]: /powershell/module/netsecurity/set-netfirewallhypervprofile
+[CSP-1]: /windows/client-management/mdm/firewall-csp
+[AllowHostPolicyMerge]: /windows/client-management/mdm/firewall-csp#mdmstorehypervvmsettingsvmcreatoridallowhostpolicymerge
+[AllowLocalPolicyMerge]: /windows/client-management/mdm/firewall-csp#mdmstorehypervvmsettingsvmcreatoriddomainprofileallowlocalpolicymerge
+[EnableFirewall]: /windows/client-management/mdm/firewall-csp#mdmstorehypervvmsettingsvmcreatoriddomainprofileenablefirewall
