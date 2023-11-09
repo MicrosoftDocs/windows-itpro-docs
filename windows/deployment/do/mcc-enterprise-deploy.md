@@ -241,7 +241,7 @@ Installing MCC on your Windows device is a simple process. A PowerShell script p
 1.  When the installation is complete, you should see the following output (the values below will be your own)
        :::image type="content" source="./images/ent-mcc-script-complete.png" alt-text="Screenshot of the installer script displaying the completion summary in PowerShell." lightbox="./images/ent-mcc-script-complete.png":::
        <!-- Insert Image 7 -->
-    :::image type="content" source="./images/installation-complete-7" alt-text="Screenshot of expected output when installation is complete." lightbox="./images/installation-complete-7":::
+    :::image type="content" source="./images/installation-complete-7.png" alt-text="Screenshot of expected output when installation is complete." lightbox="./images/installation-complete-7.png":::
 
 1. Your MCC deployment is now complete.
    If you don't see any errors, continue to the next section to validate your MCC deployment. Your VM will not appear in Hyper-V Manager as it is an EFLOW VM.
