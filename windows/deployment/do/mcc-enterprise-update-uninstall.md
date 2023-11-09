@@ -1,6 +1,6 @@
 ---
-title: Update or uninstall MCC for Enterprise and Education
-description: Details on how to update or uninstall Microsoft Connected Cache (MCC) for Enterprise and Education for your environment.
+title: Uninstall MCC for Enterprise and Education
+description: Details on how to uninstall Microsoft Connected Cache (MCC) for Enterprise and Education for your environment.
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: how-to
@@ -18,6 +18,7 @@ appliesto:
 ms.date: 10/12/2022
 ---
 
+<!-- Customers will no longer update the private preview and instead install public preview
 # Update or uninstall Microsoft Connected Cache for Enterprise and Education
 
 Throughout the preview phase, we'll send you security and feature updates for MCC. Follow these steps to perform the update.
@@ -35,7 +36,7 @@ For example:
 ```powershell
 # .\updatemcc.ps1 version="msconnectedcacheprod.azurecr.io/mcc/linux/iot/mcc-ubuntu-iot-amd64:1.2.1.659" tenantid="799a999aa-99a1-99aa-99aa-9a9aa099db99" customerid="99a999aa-99a1-99aa-99aa-9aaa9aaa0saa" cachenodeid=" aa99aaaa-999a-9aas-99aa99daaa99 " customerkey="a99d999a-aaaa-aa99-0999aaaa99a"
 ```
-
+-->
 ## Uninstall MCC
 
 Please contact the MCC Team before uninstalling to let us know if you're facing issues.
