@@ -13,7 +13,7 @@ Starting in Windows 11, version 22H2, Hyper-V firewall is a network firewall sol
 This article describes how to configure Hyper-V firewall rules and settings using PowerShell or configuration service provider (CSP).
 
 > [!IMPORTANT]
-> The configuration oh Hyper-V firewall is not available via group policy (GPO). If Windows Firewall settings are configured via GPO and Hyper-V firewall settings aren't configured via CSP, then the applicable rules and settings are automatically mirrored from the GPO configuration.
+> The configuration of Hyper-V firewall is not available via group policy (GPO). If Windows Firewall settings are configured via GPO and Hyper-V firewall settings aren't configured via CSP, then the applicable rules and settings are automatically mirrored from the GPO configuration.
 
 ## Configure Hyper-V firewall with PowerShell
 
