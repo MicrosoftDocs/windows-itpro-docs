@@ -3,11 +3,10 @@ title: Server Isolation Policy Design
 description: Learn about server isolation policy design, where you assign servers to a zone that allows access only to members of an approved network access group.
 ms.prod: windows-client
 ms.topic: conceptual
-ms.date: 09/08/2021
+ms.date: 11/10/2023
 ---
 
 # Server Isolation Policy Design
-
 
 In the server isolation policy design, you assign servers to a zone that allows access only to users and devices that authenticate as members of an approved network access group (NAG).
 
@@ -21,11 +20,9 @@ The design is shown in the following illustration, with arrows that show the per
 
 Characteristics of this design include:
 
--   Isolated domain (area A) - The same isolated domain described in the [Domain Isolation Policy Design](domain-isolation-policy-design.md) section. If the isolated domain includes a boundary zone, then devices in the boundary zone behave just like other members of the isolated domain in the way that they interact with devices in server isolation zones.
-
--   Isolated servers (area B) - Devices in the server isolation zones restrict access to devices, and optionally users, that authenticate as a member of a network access group (NAG) authorized to gain access.
-
--   Encryption zone (area C) - If the data being exchanged is sufficiently sensitive, the connection security rules for the zone can also require that the network traffic be encrypted. Encryption zones are most often implemented as rules that are part of a server isolation zone, instead of as a separate zone. The diagram illustrates the concept as a subset for conceptual purposes only.
+- Isolated domain (area A) - The same isolated domain described in the [Domain Isolation Policy Design](domain-isolation-policy-design.md) section. If the isolated domain includes a boundary zone, then devices in the boundary zone behave just like other members of the isolated domain in the way that they interact with devices in server isolation zones.
+- Isolated servers (area B) - Devices in the server isolation zones restrict access to devices, and optionally users, that authenticate as a member of a network access group (NAG) authorized to gain access.
+- Encryption zone (area C) - If the data being exchanged is sufficiently sensitive, the connection security rules for the zone can also require that the network traffic be encrypted. Encryption zones are most often implemented as rules that are part of a server isolation zone, instead of as a separate zone. The diagram illustrates the concept as a subset for conceptual purposes only.
 
 To add support for server isolation, you must ensure that the authentication methods are compatible with the requirements of the isolated server. For example, if you want to authorize user accounts that are members of a NAG in addition to authorizing computer accounts, you must enable both user and computer authentication in your connection security rules.
 
@@ -36,14 +33,12 @@ This design can be applied to devices that are part of an Active Directory fores
 
 For more info about this design:
 
--   This design coincides with the implementation goals to [Protect Devices from Unwanted Network Traffic](protect-devices-from-unwanted-network-traffic.md), [Restrict Access to Only Trusted Devices](restrict-access-to-only-trusted-devices.md), [Restrict Access to Only Specified Users or Devices](restrict-access-to-only-specified-users-or-devices.md), and [Require Encryption When Accessing Sensitive Network Resources](require-encryption-when-accessing-sensitive-network-resources.md).
+- This design coincides with the implementation goals to [Protect Devices from Unwanted Network Traffic](protect-devices-from-unwanted-network-traffic.md), [Restrict Access to Only Trusted Devices](restrict-access-to-only-trusted-devices.md), [Restrict Access to Only Specified Users or Devices](restrict-access-to-only-specified-users-or-devices.md), and [Require Encryption When Accessing Sensitive Network Resources](require-encryption-when-accessing-sensitive-network-resources.md).
+- To learn more about this design, see [Server Isolation Policy Design Example](server-isolation-policy-design-example.md).
+- Before completing the design, gather the information described in [Designing a Windows Defender Firewall with Advanced Security Strategy](designing-a-windows-firewall-with-advanced-security-strategy.md).
+- To help you make the decisions required in this design, see [Planning Server Isolation Zones](planning-server-isolation-zones.md) and [Planning Group Policy Deployment for Your Isolation Zones](planning-group-policy-deployment-for-your-isolation-zones.md).
+- For a list of tasks that you can use to deploy your server isolation policy design, see [Checklist: Implementing a Standalone Server Isolation Policy Design](checklist-implementing-a-standalone-server-isolation-policy-design.md).
 
--   To learn more about this design, see [Server Isolation Policy Design Example](server-isolation-policy-design-example.md).
-
--   Before completing the design, gather the information described in [Designing a Windows Defender Firewall with Advanced Security Strategy](designing-a-windows-firewall-with-advanced-security-strategy.md).
-
--   To help you make the decisions required in this design, see [Planning Server Isolation Zones](planning-server-isolation-zones.md) and [Planning Group Policy Deployment for Your Isolation Zones](planning-group-policy-deployment-for-your-isolation-zones.md).
-
--   For a list of tasks that you can use to deploy your server isolation policy design, see [Checklist: Implementing a Standalone Server Isolation Policy Design](checklist-implementing-a-standalone-server-isolation-policy-design.md).
-
-**Next:** [Certificate-based Isolation Policy Design](certificate-based-isolation-policy-design.md)
+> [!div class="nextstepaction"]
+>
+> [Certificate-based Isolation Policy Design](certificate-based-isolation-policy-design.md)
