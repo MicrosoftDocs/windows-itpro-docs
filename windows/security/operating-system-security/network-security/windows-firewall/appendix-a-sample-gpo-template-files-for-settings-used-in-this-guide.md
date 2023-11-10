@@ -3,21 +3,21 @@ title: Appendix A Sample GPO Template Files for Settings Used in this Guide
 description: Use sample template files import an XML file containing customized registry preferences into a Group Policy Object (GPO).
 ms.prod: windows-client
 ms.topic: conceptual
-ms.date: 09/07/2021
+ms.date: 11/10/2023
 ---
 
-# Appendix A: Sample GPO Template Files for Settings Used in this Guide
-
+# Appendix A: aample GPO template files for settings used in this guide
 
 You can import an XML file containing customized registry preferences into a Group Policy Object (GPO) by using the Preferences feature of the Group Policy Management Console (GPMC).
 
-To manually create the file, build the settings under **Computer Configuration**, **Preferences**, **Windows Settings**, **Registry**. After you have created the settings, drag the container to the desktop. An .xml file is created there.
+To manually create the file, build the settings under **Computer Configuration** > **Preferences** > **Windows Settings** > **Registry**. After you create the settings, drag the container to the desktop. An .xml file is created there.
 
-To import an .xml file to GPMC, drag it and drop it on the **Registry** node under **Computer Configuration**, **Preferences**, **Windows Settings**. If you copy the following sample XML code to a file, and then drag and drop it on the **Registry** node, it creates a **Server and Domain Isolation** collection with the six registry keys discussed in this guide.
+To import an .xml file to GPMC, drag it and drop it on the **Computer Configuration** > **Preferences** > **Windows Settings** > **Registry** node. If you copy the following sample XML code to a file, and then drag and drop it on the **Registry** node, it creates a **Server and Domain Isolation** collection with the six registry keys discussed in this guide.
 
 The following sample file uses item-level targeting to ensure that the registry keys are applied only on the versions of Windows to which they apply.
 
->**Note:**  The file shown here is for sample use only. It should be customized to meet the requirements of your organization’s deployment. To customize this file, import it into a test GPO, modify the settings, and then drag the Server and Domain Isolation Settings node to your desktop. The new file will contain all of your customization.
+> [!NOTE]
+> The file shown here is for sample use only. It should be customized to meet the requirements of your organization's deployment. To customize this file, import it into a test GPO, modify the settings, and then drag the Server and Domain Isolation Settings node to your desktop. The new file will contain all of your customization.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -31,11 +31,11 @@ The following sample file uses item-level targeting to ensure that the registry 
          image="12"
          changed="2008-05-30 20:37:37"
          uid="{52C38FD7-A081-404C-A8EA-B24A9614D0B5}"
-         desc="&lt;b&gt;Enable PMTU Discovery&lt;/b&gt;&lt;p&gt;
+         desc="<b>Enable PMTU Discovery</b><p>
             This setting configures whether computers can use PMTU
-            discovery on the network.&lt;p&gt;
-            &lt;b&gt;1&lt;/b&gt; --  Enable&lt;br&gt;
-            &lt;b&gt;0&lt;/b&gt; --  Disable"
+            discovery on the network.<p>
+            <b>1</b> --  Enable<br>
+            <b>0</b> --  Disable"
          bypassErrors="1">
    <Properties
          action="U"
@@ -53,14 +53,14 @@ The following sample file uses item-level targeting to ensure that the registry 
          image="12"
          changed="2008-05-30 20:33:32"
          uid="{AE5C505D-283E-4060-9A55-70659DFD56B6}"
-         desc="&lt;b&gt;IPsec Default Exemptions for Windows Server 2008
-            and later&lt;/b&gt;&lt;p&gt;
+         desc="<b>IPsec Default Exemptions for Windows Server 2008
+            and later</b><p>
             This setting determines which network traffic type is exempt
-            from any IPsec authentication requirements.&lt;p&gt;
-            &lt;b&gt;0&lt;/b&gt;: Exempts multicast, broadcast, RSVP, Kerberos, ISAKMP&lt;br&gt;
-            &lt;b&gt;1&lt;/b&gt;: Exempts multicast, broadcast, ISAKMP&lt;br&gt;
-            &lt;b&gt;2&lt;/b&gt;: Exempts RSVP, Kerberos, ISAKMP&lt;br&gt;
-            &lt;b&gt;3&lt;/b&gt;: Exempts ISAKMP only"
+            from any IPsec authentication requirements.<p>
+            <b>0</b>: Exempts multicast, broadcast, RSVP, Kerberos, ISAKMP<br>
+            <b>1</b>: Exempts multicast, broadcast, ISAKMP<br>
+            <b>2</b>: Exempts RSVP, Kerberos, ISAKMP<br>
+            <b>3</b>: Exempts ISAKMP only"
          bypassErrors="1">
    <Properties
          action="U"
