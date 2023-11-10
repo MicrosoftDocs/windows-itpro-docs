@@ -3,11 +3,10 @@ title: Certificate-based Isolation Policy Design Example
 description: This example uses a fictitious company to illustrate certificate-based isolation policy design in Windows Defender Firewall with Advanced Security.
 ms.prod: windows-client
 ms.topic: conceptual
-ms.date: 09/07/2021
+ms.date: 11/10/2023
 ---
 
 # Certificate-based Isolation Policy Design Example
-
 
 This design example continues to use the fictitious company Woodgrove Bank, as described in the sections [Firewall Policy Design Example](firewall-policy-design-example.md), [Domain Isolation Policy Design Example](domain-isolation-policy-design-example.md), and [Server Isolation Policy Design Example](server-isolation-policy-design-example.md).
 
@@ -27,20 +26,22 @@ The creation of the IPsec connection security rules for a non-Windows device is 
 
 The non-Windows device can be effectively made a member of the boundary zone or the encryption zone based on the IPsec rules applied to the device. The only constraint is that the main mode and quick mode encryption algorithms supported by the UNIX device must also be supported by the Windows-based devices with which it communicates.
 
-**Other traffic notes:**
+### Other traffic notes
 
--   None of the capabilities of the other designs discussed in this guide are compromised by the use of certificate authentication by a non-Windows device.
+- None of the capabilities of the other designs discussed in this guide are compromised by the use of certificate authentication by a non-Windows device.
 
 ## Design details
 
 Woodgrove Bank uses Active Directory groups and GPOs to deploy the domain isolation settings and rules to the devices in their organization.
 
-The inclusion of one or more non-Windows devices to the network requires only a simple addition to the GPOs for devices that must communicate with the non-Windows device. The addition is allowing certificate-based authentication in addition to the Active Directory–supported Kerberos V5 authentication. This certificate-based authoring doesn't require including new rules, just adding certificate-based authentication as an option to the existing rules.
+The inclusion of one or more non-Windows devices to the network requires only a simple addition to the GPOs for devices that must communicate with the non-Windows device. The addition is allowing certificate-based authentication in addition to the Active Directory-supported Kerberos V5 authentication. This certificate-based authoring doesn't require including new rules, just adding certificate-based authentication as an option to the existing rules.
 
-When multiple authentication methods are available, two negotiating devices agree on the first one in their lists that match. Because most of the devices in Woodgrove Bank's network run Windows, Kerberos V5 is listed as the first authentication method in the rules. Certificate-based authentication is added as an alternate authentication type.
+When multiple authentication methods are available, two negotiating devices agree on the first one in their lists that match. Because most of the devices in Woodgrove Bank's network run Windows, Kerberos V5 is listed as the first authentication method in the rules. Certificate-based authentication is added as an alternate authentication type.
 
-With the help of the Active Directory Users and Computers snap-in, Woodgrove Bank created a group named NAG\_COMPUTER\_WGBUNIX. They then added the device accounts to this group for Windows devices that need to communicate with the non-Windows devices. If all the devices in the isolated domain need to be able to access the non-Windows devices, then the **Domain Computers** group can be added to the group as a member.
+With the help of the Active Directory Users and Computers snap-in, Woodgrove Bank created a group named NAG_COMPUTER_WGBUNIX. They then added the device accounts to this group for Windows devices that need to communicate with the non-Windows devices. If all the devices in the isolated domain need to be able to access the non-Windows devices, then the **Domain Computers** group can be added to the group as a member.
 
-Woodgrove Bank then created a GPO that contains the certificate, and then attached security group filters to the GPO that allow read and apply permissions to only members of the NAG\_COMPUTER\_WGBUNIX group. The GPO places the certificate in the **Local Computer / Personal / Certificates** certificate store. The certificate used must chain back to a certificate that is in the **Trusted Root Certification Authorities** store on the local device.
+Woodgrove Bank then created a GPO that contains the certificate, and then attached security group filters to the GPO that allow read and apply permissions to only members of the NAG_COMPUTER_WGBUNIX group. The GPO places the certificate in the **Local Computer / Personal / Certificates** certificate store. The certificate used must chain back to a certificate that is in the **Trusted Root Certification Authorities** store on the local device.
 
-**Next:** [Designing a Windows Defender Firewall with Advanced Security Strategy](designing-a-windows-firewall-with-advanced-security-strategy.md)
+> [!div class="nextstepaction"]
+>
+> [Designing a Windows Defender Firewall with Advanced Security Strategy](designing-a-windows-firewall-with-advanced-security-strategy.md)
