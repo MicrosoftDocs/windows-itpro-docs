@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.date: 11/10/2023
 ---
 
-# Appendix A: aample GPO template files for settings used in this guide
+# Appendix A: sample GPO template files for settings used in this guide
 
 You can import an XML file containing customized registry preferences into a Group Policy Object (GPO) by using the Preferences feature of the Group Policy Management Console (GPMC).
 

@@ -29,9 +29,9 @@ Use the following procedure to add a group to the security filter on the GPO tha
 1. In the details pane, under **Security Filtering**, select **Authenticated Users**, and then select **Remove**
 
     >[!NOTE]
-    >You must remove the default permission granted to all authenticated users and computers to restrict the GPO to only the groups you specify. If the GPO contains User settings, and the **Authenticated Users** group is removed, and new security filtering isdded using a security group that only contains user accounts, the GPO can fail to apply. Details and various workarounds are mentioned in this [Microsoft blog](https://techcommunity.microsoft.com/t5/Core-Infrastructure-and-Security/Who-broke-my-user-GPOsa-p/258781).
+    >You must remove the default permission granted to all authenticated users and computers to restrict the GPO to only the groups you specify.
 
-1. Se;ect **Add**
+1. Select **Add**
 1. In the **Select User, Computer, or Group** dialog box, type the name of the group whose members are to apply the GPO, and then select **OK**. If you do not know the name, you can select **Advanced** to browse the list of groups available in the domain
 
 ## To prevent members of a group from applying a GPO
@@ -43,7 +43,7 @@ Use the following procedure to add a group to the security filter on the GPO tha
 1. In the details pane, select the **Delegation** tab
 1. Select **Advanced**
 1. Under the **Group or user names** list, select **Add**
-1. In the **Select User, Computer, or Group** dialog box, type the name of the group whose members are to be prevented from applying the GPO, and then select **OK**. If you do not know the name, you can select **Advanced** to browse the list of groups lable in the domain
+1. In the **Select User, Computer, or Group** dialog box, type the name of the group whose members are to be prevented from applying the GPO, and then select **OK**. If you do not know the name, you can select **Advanced** to browse the list of groups available in the domain
 1. Select the group in the **Group or user names** list, and then select the box in the **Deny** column for both **Read** and **Apply group policy**
 1. Select **OK**, and then in the **Windows Security** dialog box, select **Yes**
 1. The group appears in the list with **Custom** permissions
