@@ -1,6 +1,6 @@
 items:
   - name: Overview
-    href: windows-firewall-with-advanced-security.md
+    href: index.md
   - name: Configure Windows firewall
     href: best-practices-configuring.md
   - name: Configure the Windows Firewall log

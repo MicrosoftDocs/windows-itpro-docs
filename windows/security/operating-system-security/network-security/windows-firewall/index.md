@@ -10,14 +10,13 @@ ms.topic: conceptual
 ms.date: 09/08/2021
 ---
 
-# Windows Defender Firewall with Advanced Security
+# Windows Firewall with Advanced Security
 
-
-This topic is an overview of the Windows Defender Firewall with Advanced Security (WFAS) and Internet Protocol security (IPsec) features.
+This topic is an overview of the Windows Firewall with Advanced Security (WFAS) and Internet Protocol security (IPsec) features.
 
 ## Overview of Windows Defender Firewall with Advanced Security
 
-Windows Defender Firewall in Windows 8, Windows 7, Windows Vista, Windows Server 2012, Windows Server 2008, and Windows Server 2008 R2 is a stateful host firewall that helps secure the device by allowing you to create rules that determine which network traffic is permitted to enter the device from the network and which network traffic the device is allowed to send to the network. Windows Defender Firewall also supports Internet Protocol security (IPsec), which you can use to require authentication from any device that is attempting to communicate with your device. When authentication is required, devices that can't be authenticated as a trusted device can't communicate with your device. You can also use IPsec to require that certain network traffic is encrypted to prevent it from being read by network packet analyzers that could be attached to the network by a malicious user.
+Windows Firewall is a stateful host firewall that helps secure the device by allowing you to create rules that determine which network traffic is permitted to enter the device from the network and which network traffic the device is allowed to send to the network. Windows Defender Firewall also supports Internet Protocol security (IPsec), which you can use to require authentication from any device that is attempting to communicate with your device. When authentication is required, devices that can't be authenticated as a trusted device can't communicate with your device. You can also use IPsec to require that certain network traffic is encrypted to prevent it from being read by network packet analyzers that could be attached to the network by a malicious user.
 
 The Windows Defender Firewall with Advanced Security MMC snap-in is more flexible and provides much more functionality than the consumer-friendly Windows Defender Firewall interface found in the Control Panel. Both interfaces interact with the same underlying services, but provide different levels of control over those services. While the Windows Defender Firewall Control Panel program can protect a single device in a home environment, it doesn't provide enough centralized management or security features to help secure more complex network traffic found in a typical business enterprise environment.
 
