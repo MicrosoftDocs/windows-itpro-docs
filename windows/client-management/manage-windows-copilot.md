@@ -9,7 +9,7 @@ appliesto:
 
 # Manage Copilot in Windows
 
-Windows is the first PC platform to provide centralized AI assistance for customers. Together, with Bing Chat, Copilot in Windows helps you bring your ideas to life, complete complex projects and collaborate instead of spending energy finding, launching and working across multiple applications.
+Windows is the first PC platform to provide centralized AI assistance for customers. Together, with Bing Chat, Copilot in Windows helps you bring your ideas to life, complete complex projects, and collaborate instead of spending energy finding, launching, and working across multiple applications.
 
 This article lists settings available to manage Copilot in Windows. To learn more about Copilot in Windows, see [Welcome to Copilot in Windows](https://support.microsoft.com/windows/welcome-to-copilot-in-windows-675708af-8c16-4675-afeb-85a5a476ccb0).
 
