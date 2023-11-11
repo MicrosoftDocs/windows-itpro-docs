@@ -23,11 +23,11 @@ New features and enhancements are introduced through the monthly cumulative upda
 - Temporarily turned off by default using [temporary enterprise feature control](#temporary-enterprise-feature-control)
 - Controlled by a policy that allows for [permanent enterprise feature control](#permanent-enterprise-feature-control)
 
-Features that are turned off by default are listed in the KB article for the monthly cumulative update. Typically, a feature is selected to be off by default because it either impacts the user experience or IT administrators significantly. For example, a feature might be turned off by default if it requires a change in user behavior or if it requires IT administrators to take action before the feature can be used.
+Features that are turned off by default are listed in the KB article for the monthly cumulative update. A feature is typically selected to be off by default because it impacts the user experience or IT administrators significantly. For example, a feature might be turned off by default if it requires a change in user behavior or IT administrators to take action before the feature can be used.
 
 ## Temporary enterprise feature control
 
-Features behind temporary enterprise control are automatically disabled for devices that have their Windows updates managed by policies.
+Features behind temporary enterprise control are automatically disabled for devices with Windows updates managed by policies.
 
 ### Enable features behind temporary enterprise feature control
 
@@ -35,11 +35,11 @@ Features that are behind temporary enterprise control will be enabled when one o
 
 - The device installs the annual feature update that enables the new features by default
 - The device receives a policy that enables features behind temporary enterprise control
-  - When the policy is enabled, all features on the device behind temporary control are turned on when the device next restarts.
+  - When the policy is enabled, all features on the device behind temporary control are turned on when the device restarts.
 
 ### Policy settings for temporary enterprise feature control
 
-You can use a policy to enable features that are behind temporary enterprise feature control. When this policy is enabled, all features that were disabled behind temporary enterprise feature control are turned on when the device next reboots. The following polices apply to Windows 11, version 22H2 with [KB5022845](https://support.microsoft.com/kb/5022845) and later:
+You can use a policy to enable features that are behind temporary enterprise feature control. When this policy is enabled, all features that were disabled behind temporary enterprise feature control are turned on when the device reboots. The following policies apply to Windows 11, version 22H2 with [KB5022845](https://support.microsoft.com/kb/5022845) and later:
 
 - **Group Policy:** Computer Configuration\Administrative Templates\Windows Components\Windows Update\Manage end user experience\\**Enable features introduced via servicing that are off by default**
 
