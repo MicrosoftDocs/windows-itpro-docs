@@ -7789,6 +7789,171 @@
       "source_path": "windows/security/operating-system-security/network-security/windows-firewall/assign-security-group-filters-to-the-gpo.md",
       "redirect_url": "/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/jj717260(v=ws.11)",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/network-security/windows-firewall/change-rules-from-request-to-require-mode.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/jj717237(v=ws.11)",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/network-security/windows-firewall/configure-authentication-methods.md",
+      "redirect_url": "previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/jj717279(v=ws.11)",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/network-security/windows-firewall/configure-data-protection-quick-mode-settings.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/jj717293(v=ws.11)",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/network-security/windows-firewall/configure-group-policy-to-autoenroll-and-deploy-certificates.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/jj717253(v=ws.11)",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/network-security/windows-firewall/configure-key-exchange-main-mode-settings.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/jj717249(v=ws.11)",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/network-security/windows-firewall/configure-the-rules-to-require-encryption.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/jj717270(v=ws.11)",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/network-security/windows-firewall/configure-the-workstation-authentication-certificate-template.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/jj717275(v=ws.11)",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/network-security/windows-firewall/configure-windows-firewall-to-suppress-notifications-when-a-program-is-blocked.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/jj717278(v=ws.11)",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/network-security/windows-firewall/confirm-that-certificates-are-deployed-correctly.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/jj717245(v=ws.11)",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/network-security/windows-firewall/copy-a-gpo-to-create-a-new-gpo.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/jj717246(v=ws.11)",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/network-security/windows-firewall/create-a-group-account-in-active-directory.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/jj717247(v=ws.11)",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/network-security/windows-firewall/create-a-group-policy-object.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/jj717274(v=ws.11)",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/network-security/windows-firewall/create-an-authentication-exemption-list-rule.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/jj717243(v=ws.11)",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/network-security/windows-firewall/create-an-authentication-request-rule.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/jj717283(v=ws.11)",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/network-security/windows-firewall/create-wmi-filters-for-the-gpo.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/jj717288(v=ws.11)",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/network-security/windows-firewall/enable-predefined-inbound-rules.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/jj717281(v=ws.11)",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/network-security/windows-firewall/enable-predefined-outbound-rules.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/jj717259(v=ws.11)",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/network-security/windows-firewall/exempt-icmp-from-authentication.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/jj717292(v=ws.11)",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/network-security/windows-firewall/link-the-gpo-to-the-domain.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/jj717264(v=ws.11)",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/network-security/windows-firewall/modify-gpo-filters-to-apply-to-a-different-zone-or-version-of-windows.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/jj717265(v=ws.11)",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/network-security/windows-firewall/open-the-group-policy-management-console-to-ip-security-policies.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/jj717290(v=ws.11)",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/network-security/windows-firewall/open-the-group-policy-management-console-to-windows-firewall-with-advanced-security.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/jj717269(v=ws.11)",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/network-security/windows-firewall/open-the-group-policy-management-console-to-windows-firewall.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/jj717266(v=ws.11)",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/network-security/windows-firewall/open-windows-firewall-with-advanced-security.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/jj717254(v=ws.11)",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/network-security/windows-firewall/restrict-server-access-to-members-of-a-group-only.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/jj717267(v=ws.11)",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/network-security/windows-firewall/turn-on-windows-firewall-and-configure-default-behavior.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/jj717251(v=ws.11)",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/network-security/windows-firewall/verify-that-network-traffic-is-authenticated.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/jj717273(v=ws.11)",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/network-security/windows-firewall/gathering-the-information-you-need.md",
+      "redirect_url": "previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/cc731454(v=ws.10)",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/network-security/windows-firewall/gathering-information-about-your-current-network-infrastructure.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/cc770899(v=ws.10)",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/network-security/windows-firewall/gathering-information-about-your-active-directory-deployment.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/cc771366(v=ws.10)",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/network-security/windows-firewall/gathering-information-about-your-devices.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/cc726039(v=ws.10)",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/network-security/windows-firewall/gathering-other-relevant-information.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/cc771791(v=ws.10)",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/network-security/windows-firewall/determining-the-trusted-state-of-your-devices.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/cc753540(v=ws.10)",
+      "redirect_document_id": false
     }
   ]
 }
