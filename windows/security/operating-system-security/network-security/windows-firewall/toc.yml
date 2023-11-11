@@ -1,32 +1,34 @@
 items:
   - name: Overview
     href: windows-firewall-with-advanced-security.md
-  - name: Configure Hyper-V firewall
-    href: hyper-v-firewall.md
+  - name: Configure Windows firewall
+    href: best-practices-configuring.md
   - name: Configure the Windows Firewall log
     href: configure-the-windows-firewall-log.md
-  - name: Create an inbound ICMP rule
-    href: create-an-inbound-icmp-rule.md
-  - name: Create an inbound port rule
-    href: create-an-inbound-port-rule.md
-  - name: Create an inbound program or service rule
-    href: create-an-inbound-program-or-service-rule.md
-  - name: Create an outbound port rule
-    href: create-an-outbound-port-rule.md
-  - name: Create an outbound program or service rule
-    href: create-an-outbound-program-or-service-rule.md
-  - name: Create inbound rules to support RPC
-    href: create-inbound-rules-to-support-rpc.md
-  - name: Create Windows Firewall rules in Intune
-    href: create-windows-firewall-rules-in-intune.md
-  - name: Configure the firewall
-    href: best-practices-configuring.md
-  - name: Secure IPsec
+  - name: Secure connections with IPsec
     href: securing-end-to-end-ipsec-connections-by-using-ikev2.md
-  - name: PowerShell
+  - name: Configure Windows Firewall with PowerShell
     href: windows-firewall-with-advanced-security-administration-with-windows-powershell.md
-  - name: Isolate Microsoft Store Apps on Your Network
+  - name: Isolate Microsoft Store apps on your network
     href: isolating-apps-on-your-network.md
+  - name: Configure Hyper-V firewall
+    href: hyper-v-firewall.md
+  - name: Firewall rules
+    items: 
+    - name: Create firewall rules with Microsoft Intune
+      href: create-windows-firewall-rules-in-intune.md
+    - name: Create an inbound ICMP rule
+      href: create-an-inbound-icmp-rule.md
+    - name: Create an inbound port rule
+      href: create-an-inbound-port-rule.md
+    - name: Create an inbound program or service rule
+      href: create-an-inbound-program-or-service-rule.md
+    - name: Create an outbound port rule
+      href: create-an-outbound-port-rule.md
+    - name: Create an outbound program or service rule
+      href: create-an-outbound-program-or-service-rule.md
+    - name: Create inbound rules to support RPC
+      href: create-inbound-rules-to-support-rpc.md
   - name: Troubleshoot
     items: 
       - name: Troubleshoot UWP app connectivity issues in Windows Firewall
