@@ -1,46 +1,6 @@
 items:
   - name: Overview
     href: windows-firewall-with-advanced-security.md
-  - name: Plan deployment
-    items: 
-      - name: Design guide
-        href: windows-firewall-with-advanced-security-design-guide.md
-      - name: Design process
-        href: understanding-the-windows-firewall-with-advanced-security-design-process.md
-      - name: Implementation goals
-        items: 
-          - name: Identify implementation goals
-            href: identifying-your-windows-firewall-with-advanced-security-deployment-goals.md
-          - name: Protect devices from unwanted network traffic
-            href: protect-devices-from-unwanted-network-traffic.md
-          - name: Restrict access to only trusted devices
-            href: restrict-access-to-only-trusted-devices.md
-          - name: Require encryption
-            href: require-encryption-when-accessing-sensitive-network-resources.md
-          - name: Restrict access
-            href: restrict-access-to-only-specified-users-or-devices.md
-  - name: Deployment guide
-    items: 
-      - name: Deployment overview
-        href: windows-firewall-with-advanced-security-deployment-guide.md
-      - name: Implement your plan
-        href: implementing-your-windows-firewall-with-advanced-security-design-plan.md
-      - name: Basic firewall deployment
-        items: 
-          - name: "Checklist: Implement a basic firewall policy design"
-            href: checklist-implementing-a-basic-firewall-policy-design.md
-      - name: Domain isolation deployment
-        items: 
-          - name: "Checklist: Implement a Domain Isolation Policy Design"
-            href: checklist-implementing-a-domain-isolation-policy-design.md
-      - name: Server isolation deployment
-        items: 
-          - name: "Checklist: Implement a Standalone Server Isolation Policy Design"
-            href: checklist-implementing-a-standalone-server-isolation-policy-design.md
-      - name: Certificate-based authentication
-        items: 
-          - name: "Checklist: Implement a Certificate-based Isolation Policy Design"
-            href: checklist-implementing-a-certificate-based-isolation-policy-design.md
   - name: Best practices
     items: 
       - name: Configure the firewall
@@ -131,30 +91,6 @@ items:
         href: turn-on-windows-firewall-and-configure-default-behavior.md
       - name: Verify Network Traffic
         href: verify-that-network-traffic-is-authenticated.md
-  - name: References
-    items: 
-      - name: "Checklist: Create Group Policy objects"
-        href: checklist-creating-group-policy-objects.md
-      - name: "Checklist: Create inbound firewall rules"
-        href: checklist-creating-inbound-firewall-rules.md
-      - name: "Checklist: Create outbound firewall rules"
-        href: checklist-creating-outbound-firewall-rules.md
-      - name: "Checklist: Configure basic firewall settings"
-        href: checklist-configuring-basic-firewall-settings.md
-      - name: "Checklist: Configure rules for the isolated domain"
-        href: checklist-configuring-rules-for-the-isolated-domain.md
-      - name: "Checklist: Configure rules for the boundary zone"
-        href: checklist-configuring-rules-for-the-boundary-zone.md
-      - name: "Checklist: Configure rules for the encryption zone"
-        href: checklist-configuring-rules-for-the-encryption-zone.md
-      - name: "Checklist: Configure rules for an isolated server zone"
-        href: checklist-configuring-rules-for-an-isolated-server-zone.md
-      - name: "Checklist: Configure rules for servers in a standalone isolated server zone"
-        href: checklist-configuring-rules-for-servers-in-a-standalone-isolated-server-zone.md
-      - name: "Checklist: Create rules for clients of a standalone isolated server zone"
-        href: checklist-creating-rules-for-clients-of-a-standalone-isolated-server-zone.md
-      - name: "Appendix A: Sample GPO template files for settings used in this guide"
-        href: appendix-a-sample-gpo-template-files-for-settings-used-in-this-guide.md
   - name: Troubleshooting
     items: 
       - name: Troubleshoot UWP app connectivity issues in Windows Firewall
