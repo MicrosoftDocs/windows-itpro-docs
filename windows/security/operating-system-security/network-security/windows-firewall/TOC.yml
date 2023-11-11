@@ -1,97 +1,33 @@
 items:
   - name: Overview
     href: windows-firewall-with-advanced-security.md
-  - name: Best practices
-    items: 
-      - name: Configure the firewall
-        href: best-practices-configuring.md
-      - name: Secure IPsec
-        href: securing-end-to-end-ipsec-connections-by-using-ikev2.md
-      - name: PowerShell
-        href: windows-firewall-with-advanced-security-administration-with-windows-powershell.md
-      - name: Isolate Microsoft Store Apps on Your Network
-        href: isolating-apps-on-your-network.md
-  - name: How-to
-    items: 
-      - name: Add Production devices to the membership group for a zone
-        href: add-production-devices-to-the-membership-group-for-a-zone.md
-      - name: Add test devices to the membership group for a zone
-        href: add-test-devices-to-the-membership-group-for-a-zone.md
-      - name: Assign security group filters to the GPO
-        href: assign-security-group-filters-to-the-gpo.md
-      - name: Change rules from request to require mode
-        href: Change-Rules-From-Request-To-Require-Mode.Md
-      - name: Configure authentication methods
-        href: Configure-authentication-methods.md
-      - name: Configure data protection (Quick Mode) settings
-        href: configure-data-protection-quick-mode-settings.md
-      - name: Configure Group Policy to autoenroll and deploy certificates
-        href: configure-group-policy-to-autoenroll-and-deploy-certificates.md
-      - name: Configure Hyper-V firewall
-        href: hyper-v-firewall.md
-      - name: Configure key exchange (main mode) settings
-        href: configure-key-exchange-main-mode-settings.md
-      - name: Configure the rules to require encryption
-        href: configure-the-rules-to-require-encryption.md
-      - name: Configure the Windows Firewall log
-        href: configure-the-windows-firewall-log.md
-      - name: Configure the workstation authentication certificate template
-        href: configure-the-workstation-authentication-certificate-template.md
-      - name: Configure Windows Firewall to suppress notifications when a program is blocked
-        href: configure-windows-firewall-to-suppress-notifications-when-a-program-is-blocked.md
-      - name: Confirm that certificates are deployed correctly
-        href: confirm-that-certificates-are-deployed-correctly.md
-      - name: Copy a GPO to create a new GPO
-        href: copy-a-gpo-to-create-a-new-gpo.md
-      - name: Create a Group Account in Active Directory
-        href: create-a-group-account-in-active-directory.md
-      - name: Create a Group Policy Object
-        href: create-a-group-policy-object.md
-      - name: Create an authentication exemption list rule
-        href: create-an-authentication-exemption-list-rule.md
-      - name: Create an authentication request rule
-        href: create-an-authentication-request-rule.md
-      - name: Create an inbound ICMP rule
-        href: create-an-inbound-icmp-rule.md
-      - name: Create an inbound port rule
-        href: create-an-inbound-port-rule.md
-      - name: Create an inbound program or service rule
-        href: create-an-inbound-program-or-service-rule.md
-      - name: Create an outbound port rule
-        href: create-an-outbound-port-rule.md
-      - name: Create an outbound program or service rule
-        href: create-an-outbound-program-or-service-rule.md
-      - name: Create inbound rules to support RPC
-        href: create-inbound-rules-to-support-rpc.md
-      - name: Create WMI filters for the GPO
-        href: create-wmi-filters-for-the-gpo.md
-      - name: Create Windows Firewall rules in Intune
-        href: create-windows-firewall-rules-in-intune.md
-      - name: Enable predefined inbound rules
-        href: enable-predefined-inbound-rules.md
-      - name: Enable predefined outbound rules
-        href: enable-predefined-outbound-rules.md
-      - name: Exempt ICMP from authentication
-        href: exempt-icmp-from-authentication.md
-      - name: Link the GPO to the domain
-        href: link-the-gpo-to-the-domain.md
-      - name: Modify GPO filters
-        href: modify-gpo-filters-to-apply-to-a-different-zone-or-version-of-windows.md
-      - name: Open IP security policies
-        href: open-the-group-policy-management-console-to-ip-security-policies.md
-      - name: Open Group Policy
-        href: open-the-group-policy-management-console-to-windows-firewall.md
-      - name: Open Group Policy
-        href: open-the-group-policy-management-console-to-windows-firewall-with-advanced-security.md
-      - name: Open Windows Firewall
-        href: open-windows-firewall-with-advanced-security.md
-      - name: Restrict server access
-        href: restrict-server-access-to-members-of-a-group-only.md
-      - name: Enable Windows Firewall
-        href: turn-on-windows-firewall-and-configure-default-behavior.md
-      - name: Verify Network Traffic
-        href: verify-that-network-traffic-is-authenticated.md
-  - name: Troubleshooting
+  - name: Configure Hyper-V firewall
+    href: hyper-v-firewall.md
+  - name: Configure the Windows Firewall log
+    href: configure-the-windows-firewall-log.md
+  - name: Create an inbound ICMP rule
+    href: create-an-inbound-icmp-rule.md
+  - name: Create an inbound port rule
+    href: create-an-inbound-port-rule.md
+  - name: Create an inbound program or service rule
+    href: create-an-inbound-program-or-service-rule.md
+  - name: Create an outbound port rule
+    href: create-an-outbound-port-rule.md
+  - name: Create an outbound program or service rule
+    href: create-an-outbound-program-or-service-rule.md
+  - name: Create inbound rules to support RPC
+    href: create-inbound-rules-to-support-rpc.md
+  - name: Create Windows Firewall rules in Intune
+    href: create-windows-firewall-rules-in-intune.md
+  - name: Configure the firewall
+    href: best-practices-configuring.md
+  - name: Secure IPsec
+    href: securing-end-to-end-ipsec-connections-by-using-ikev2.md
+  - name: PowerShell
+    href: windows-firewall-with-advanced-security-administration-with-windows-powershell.md
+  - name: Isolate Microsoft Store Apps on Your Network
+    href: isolating-apps-on-your-network.md
+  - name: Troubleshoot
     items: 
       - name: Troubleshoot UWP app connectivity issues in Windows Firewall
         href: troubleshooting-uwp-firewall.md
