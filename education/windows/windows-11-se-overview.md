@@ -6,7 +6,6 @@ ms.date: 11/02/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11 SE</a>
 ms.collection:
-  - highpri
   - education
   - tier1
 ---

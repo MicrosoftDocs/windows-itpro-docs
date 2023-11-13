@@ -2,7 +2,6 @@
 title: Manage Windows Hello in your organization 
 description: Learn how to create a Group Policy or mobile device management (MDM) policy to configure and deploy Windows Hello for Business.
 ms.collection: 
-  - highpri
   - tier1
 ms.date: 9/25/2023
 ms.topic: reference

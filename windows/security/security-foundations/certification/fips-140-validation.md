@@ -7,7 +7,6 @@ manager: aaroncz
 ms.author: paoloma
 author: paolomatarazzo
 ms.collection: 
-  - highpri
   - tier3
 ms.topic: reference
 ms.localizationpriority: medium

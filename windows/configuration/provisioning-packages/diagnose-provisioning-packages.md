@@ -9,7 +9,6 @@ ms.prod: windows-client
 ms.technology: itpro-manage
 author: lizgt2000
 ms.date: 01/18/2023
-ms.collection: highpri
 ---
 
 # Diagnose Provisioning Packages
