@@ -2,20 +2,13 @@
 
 
 
-## Week of September 11, 2023
+## Week of November 06, 2023
 
 
 | Published On |Topic title | Change |
 |------|------------|--------|
-| 9/11/2023 | [Configure education themes for Windows 11](/education/windows/edu-themes) | modified |
-| 9/11/2023 | [Configure federated sign-in for Windows devices](/education/windows/federated-sign-in) | modified |
-
-
-## Week of September 04, 2023
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 9/5/2023 | [Configure federated sign-in for Windows devices](/education/windows/federated-sign-in) | modified |
-| 9/5/2023 | [Windows for Education documentation](/education/windows/index) | modified |
-| 9/5/2023 | [Windows 11 SE Overview](/education/windows/windows-11-se-overview) | modified |
+| 11/7/2023 | [Reset devices with Autopilot Reset](/education/windows/autopilot-reset) | modified |
+| 11/9/2023 | [Configure Stickers for Windows 11 SE](/education/windows/edu-stickers) | modified |
+| 11/9/2023 | What's new in the Windows Set up School PCs app | removed |
+| 11/9/2023 | [Management functionalities for Surface devices](/education/windows/tutorial-school-deployment/manage-surface-devices) | modified |
+| 11/9/2023 | [Use Set up School PCs app](/education/windows/use-set-up-school-pcs-app) | modified |
