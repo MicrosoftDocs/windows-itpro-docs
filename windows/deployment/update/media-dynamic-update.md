@@ -20,7 +20,6 @@ ms.date: 07/17/2023
 
 # Update Windows installation media with Dynamic Update
 
-TEST
 This article explains how to acquire and apply Dynamic Update packages to existing Windows images *prior to deployment* and includes Windows PowerShell scripts you can use to automate this process.
 
 Volume-licensed media is available for each release of Windows in the Volume Licensing Service Center (VLSC) and other relevant channels such as Windows Update for Business, Windows Server Update Services (WSUS), and Visual Studio Subscriptions. You can use Dynamic Update to ensure that Windows devices have the latest feature update packages as part of an in-place upgrade while preserving language pack and Features on Demand (FODs) that might have been previously installed. Dynamic Update also eliminates the need to install a separate quality update as part of the in-place upgrade process.
