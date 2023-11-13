@@ -1,25 +1,18 @@
 ---
 title: Set up a multi-app kiosk on Windows 10
 description: Learn how to configure a kiosk device running Windows 10 so that users can only run a few specific apps.
-ms.prod: windows-client
-ms.technology: itpro-configure
 author: lizgt2000
 ms.author: lizlong
-manager: aaroncz
 ms.reviewer: sybruckm
-ms.localizationpriority: medium
 ms.topic: how-to
-ms.collection:
- - highpri
- - tier2
-ms.date: 12/31/2017
+ms.date: 11/08/2023
+appliesto: 
+  - ✅ <b>Windows 10 Pro</b>
+  - ✅ <b>Windows 10 Enterprise</b>
+  - ✅ <b>Windows 10 Education</b>
 ---
 
 # Set up a multi-app kiosk on Windows 10 devices
-
-**Applies to**
-
-- Windows 10 Pro, Enterprise, and Education
 
 > [!NOTE]
 > The use of multiple monitors isn't supported for multi-app kiosk mode in Windows 10.
@@ -33,13 +26,13 @@ The following table lists changes to multi-app kiosk in recent updates.
 | - Configure [a single-app kiosk profile](#profile) in your XML file<br><br>- Assign [group accounts to a config profile](#config-for-group-accounts)<br><br>- Configure [an account to sign in automatically](#config-for-autologon-account) | Windows 10, version 1803 |
 | - Explicitly allow [some known folders when user opens file dialog box](#fileexplorernamespacerestrictions)<br><br>- [Automatically launch an app](#allowedapps) when the user signs in<br><br>- Configure a [display name for the autologon account](#config-for-autologon-account) | Windows 10, version 1809<br><br>**Important:** To use features released in Windows 10, version 1809, make sure that [your XML file](#create-xml-file) references `https://schemas.microsoft.com/AssignedAccess/201810/config`. |
 
->[!WARNING]
->The assigned access feature is intended for corporate-owned fixed-purpose devices, like kiosks. When the multi-app assigned access configuration is applied on the device, [certain policies](kiosk-policies.md) are enforced system-wide, and will impact other users on the device. Deleting the kiosk configuration will remove the assigned access lockdown profiles associated with the users, but it cannot revert all the enforced policies (such as Start layout). A factory reset is needed to clear all the policies enforced via assigned access.
+> [!WARNING]
+> The assigned access feature is intended for corporate-owned fixed-purpose devices, like kiosks. When the multi-app assigned access configuration is applied on the device, [certain policies](kiosk-policies.md) are enforced system-wide, and will impact other users on the device. Deleting the kiosk configuration will remove the assigned access lockdown profiles associated with the users, but it cannot revert all the enforced policies (such as Start layout). A factory reset is needed to clear all the policies enforced via assigned access.
 
 You can configure multi-app kiosks using [Microsoft Intune](#intune) or a [provisioning package](#provision).
 
->[!TIP]
->Be sure to check the [configuration recommendations](kiosk-prepare.md) before you set up your kiosk.
+> [!TIP]
+> Be sure to check the [configuration recommendations](kiosk-prepare.md) before you set up your kiosk.
 
 <span id="intune"/>
 
@@ -62,7 +55,7 @@ Process:
 
 Watch how to use a provisioning package to configure a multi-app kiosk.
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/fa125d0f-77e4-4f64-b03e-d634a4926884?autoplay=false]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/fa125d0f-77e4-4f64-b03e-d634a4926884?autoplay=false]
 
 If you don't want to use a provisioning package, you can deploy the configuration XML file using [mobile device management (MDM)](#use-mdm-to-deploy-the-multi-app-configuration), or you can configure assigned access using the [MDM Bridge WMI Provider](kiosk-mdm-bridge.md).
 
@@ -71,8 +64,8 @@ If you don't want to use a provisioning package, you can deploy the configuratio
 - Windows Configuration Designer (Windows 10, version 1709 or later)
 - The kiosk device must be running Windows 10 (S, Pro, Enterprise, or Education), version 1709 or later
 
->[!NOTE]
->For devices running versions of Windows 10 earlier than version 1709, you can [create AppLocker rules](lock-down-windows-10-applocker.md) to configure a multi-app kiosk.
+> [!NOTE]
+> For devices running versions of Windows 10 earlier than version 1709, you can [create AppLocker rules](lock-down-windows-10-applocker.md) to configure a multi-app kiosk.
 
 ### Create XML file
 
@@ -198,7 +191,7 @@ Starting in Windows 10 version 1809, you can explicitly allow some known folders
 
 The following example shows how to allow user access to the Downloads folder in the common file dialog box.
 
->[!TIP]
+> [!TIP]
 > To grant access to the Downloads folder through File Explorer, add "Explorer.exe" to the list of allowed apps, and pin a file explorer shortcut to the kiosk start menu.
 
 ```xml
@@ -278,8 +271,8 @@ The following example pins Groove Music, Movies & TV, Photos, Weather, Calculato
 </StartLayout>
 ```
 
->[!NOTE]
->If an app isn't installed for the user, but is included in the Start layout XML, the app isn't shown on the Start screen.
+> [!NOTE]
+> If an app isn't installed for the user, but is included in the Start layout XML, the app isn't shown on the Start screen.
 
 ![What the Start screen looks like when the XML sample is applied.](images/sample-start.png)
 
@@ -299,8 +292,8 @@ The following example hides the taskbar:
 <Taskbar ShowTaskbar="false"/>
 ```
 
->[!NOTE]
->This is different from the **Automatically hide the taskbar** option in tablet mode, which shows the taskbar when swiping up from or moving the mouse pointer down to the bottom of the screen. Setting **ShowTaskbar** as **false** will always keep the taskbar hidden.
+> [!NOTE]
+> This is different from the **Automatically hide the taskbar** option in tablet mode, which shows the taskbar when swiping up from or moving the mouse pointer down to the bottom of the screen. Setting **ShowTaskbar** as **false** will always keep the taskbar hidden.
 
 ##### KioskModeApp
 
@@ -310,8 +303,8 @@ The following example hides the taskbar:
 <KioskModeApp AppUserModelId="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App"/>
 ```
 
->[!IMPORTANT]
->The kiosk profile is designed for public-facing kiosk devices. We recommend that you use a local, non-administrator account. If the device is connected to your company network, using a domain or Microsoft Entra account could potentially compromise confidential information.  
+> [!IMPORTANT]
+> The kiosk profile is designed for public-facing kiosk devices. We recommend that you use a local, non-administrator account. If the device is connected to your company network, using a domain or Microsoft Entra account could potentially compromise confidential information.  
 
 #### Configs
 
@@ -325,8 +318,8 @@ You can assign:
 - [An individual account, which can be local, domain, or Microsoft Entra ID](#config-for-individual-accounts)
 - [A group account, which can be local, Active Directory (domain), or Microsoft Entra ID](#config-for-group-accounts) (Applies to Windows 10, version 1803 only).
 
->[!NOTE]
->Configs that specify group accounts cannot use a kiosk profile, only a lockdown profile. If a group is configured to a kiosk profile, the CSP will reject the request.
+> [!NOTE]
+> Configs that specify group accounts cannot use a kiosk profile, only a lockdown profile. If a group is configured to a kiosk profile, the CSP will reject the request.
 
 ##### Config for AutoLogon Account
 
@@ -356,8 +349,8 @@ Starting with Windows 10 version 1809, you can configure the display name that w
 
 On domain-joined devices, local user accounts aren't shown on the sign-in screen by default. To show the **AutoLogonAccount** on the sign-in screen, enable the following Group Policy setting: **Computer Configuration > Administrative Templates > System > Logon > Enumerate local users on domain-joined computers**. (The corresponding MDM policy setting is [WindowsLogon/EnumerateLocalUsersOnDomainJoinedComputers in the Policy CSP](/windows/client-management/mdm/policy-csp-windowslogon#windowslogon-enumeratelocalusersondomainjoinedcomputers).)
 
->[!IMPORTANT]
->When Exchange Active Sync (EAS) password restrictions are active on the device, the autologon feature does not work. This behavior is by design. For more informations, see [How to turn on automatic logon in Windows](/troubleshoot/windows-server/user-profiles-and-logon/turn-on-automatic-logon).
+> [!IMPORTANT]
+> When Exchange Active Sync (EAS) password restrictions are active on the device, the autologon feature does not work. This behavior is by design. For more informations, see [How to turn on automatic logon in Windows](/troubleshoot/windows-server/user-profiles-and-logon/turn-on-automatic-logon).
 
 ##### Config for individual accounts
 
@@ -367,13 +360,13 @@ Individual accounts are specified using `<Account>`.
 - Domain account should be entered as `domain\account`.
 - Microsoft Entra account must be specified in this format: `AzureAD\{email address}`. **AzureAD** must be provided _as is_, and consider it's a fixed domain name. Then follow with the Microsoft Entra ID email address. For example, `AzureAD\someone@contoso.onmicrosoft.com`
 
->[!WARNING]
->Assigned access can be configured via WMI or CSP to run its applications under a domain user or service account, rather than a local account.  However, use of domain user or service accounts introduces risks that an attacker subverting the assigned access application might gain access to sensitive domain resources that have been inadvertently left accessible to any domain account. We recommend that customers proceed with caution when using domain accounts with assigned access, and consider the domain resources potentially exposed by the decision to do so.
+> [!WARNING]
+> Assigned access can be configured via WMI or CSP to run its applications under a domain user or service account, rather than a local account.  However, use of domain user or service accounts introduces risks that an attacker subverting the assigned access application might gain access to sensitive domain resources that have been inadvertently left accessible to any domain account. We recommend that customers proceed with caution when using domain accounts with assigned access, and consider the domain resources potentially exposed by the decision to do so.
 
 Before applying the multi-app configuration, make sure the specified user account is available on the device, otherwise it will fail.
 
->[!NOTE]
->For both domain and Microsoft Entra accounts, it's not required that target account is explicitly added to the device. As long as the device is AD-joined or Microsoft Entra joined, the account can be discovered in the domain forest or tenant that the device is joined to. For local accounts, it is required that the account exist before you configure the account for assigned access.
+> [!NOTE]
+> For both domain and Microsoft Entra accounts, it's not required that target account is explicitly added to the device. As long as the device is AD-joined or Microsoft Entra joined, the account can be discovered in the domain forest or tenant that the device is joined to. For local accounts, it is required that the account exist before you configure the account for assigned access.
 
 ```xml
 <Configs>
@@ -415,8 +408,8 @@ Group accounts are specified using `<UserGroup>`. Nested groups aren't supported
   </Config>
   ```
 
-  >[!NOTE]
-  >If a Microsoft Entra group is configured with a lockdown profile on a device, a user in the Microsoft Entra group must change their password (after the account has been created with default password on the portal) before they can sign in to this device. If the user uses the default password to sign in to the device, the user will be immediately signed out.
+  > [!NOTE]
+  > If a Microsoft Entra group is configured with a lockdown profile on a device, a user in the Microsoft Entra group must change their password (after the account has been created with default password on the portal) before they can sign in to this device. If the user uses the default password to sign in to the device, the user will be immediately signed out.
 
 <span id="add-xml" />
 
@@ -488,8 +481,8 @@ Before you add the XML file to a provisioning package, you can [validate your co
 
 Use the Windows Configuration Designer tool to create a provisioning package. [Learn how to install Windows Configuration Designer.](provisioning-packages/provisioning-install-icd.md)
 
->[!IMPORTANT]
->When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when they are no longer needed.
+> [!IMPORTANT]
+> When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when they are no longer needed.
 
 1. Open Windows Configuration Designer. By default: `%systemdrive%\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Imaging and Configuration Designer\x86\ICD.exe`.
 
@@ -619,8 +612,8 @@ Remove Sign Out option in Security Options UI    |  Enabled
 Remove All Programs list from the Start Menu     |  Enabled - Remove and disable setting
 Prevent access to drives from My Computer    |  Enabled - Restrict all drivers
 
->[!NOTE]
->When **Prevent access to drives from My Computer** is enabled, users can browse the directory structure in File Explorer, but they cannot open folders and access the contents. Also, they cannot use the **Run** dialog box or the **Map Network Drive** dialog box to view the directories on these drives. The icons representing the specified drives still appear in File Explorer, but if users double-click the icons, a message appears explaining that a setting prevents the action. This setting does not prevent users from using programs to access local and network drives. It does not prevent users from using the Disk Management snap-in to view and change drive characteristics.
+> [!NOTE]
+> When **Prevent access to drives from My Computer** is enabled, users can browse the directory structure in File Explorer, but they cannot open folders and access the contents. Also, they cannot use the **Run** dialog box or the **Map Network Drive** dialog box to view the directories on these drives. The icons representing the specified drives still appear in File Explorer, but if users double-click the icons, a message appears explaining that a setting prevents the action. This setting does not prevent users from using programs to access local and network drives. It does not prevent users from using the Disk Management snap-in to view and change drive characteristics.
 
 ### MDM policy
 
@@ -663,8 +656,8 @@ In Windows Configuration Designer, under **ProvisioningCommands** > **DeviceCont
 
 - Under **CommandFiles**, upload your batch file, your .lnk file, and your desktop app installation file.
 
-  >[!IMPORTANT]
-  >Paste the full file path to the .lnk file in the **CommandFiles** field. If you browse to and select the .lnk file, the file path will be changed to the path of the target of the .lnk.
+  > [!IMPORTANT]
+  > Paste the full file path to the .lnk file in the **CommandFiles** field. If you browse to and select the .lnk file, the file path will be changed to the path of the target of the .lnk.
 
 - Under **CommandLine**, enter `cmd /c *FileName*.bat`.
 

@@ -1,7 +1,7 @@
 ---
 title: Configure devices with Microsoft Intune
 description: Learn how to configure policies and applications in preparation for device deployment.
-ms.date: 08/31/2022
+ms.date: 11/09/2023
 ms.topic: tutorial
 ---
 

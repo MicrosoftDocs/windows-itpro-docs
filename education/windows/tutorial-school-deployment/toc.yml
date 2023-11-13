@@ -4,7 +4,7 @@ items:
   - name: 1. Prepare your tenant
     items:
       - name: Set up Microsoft Entra ID
-        href: set-up-azure-ad.md
+        href: set-up-microsoft-entra-id.md
       - name: Set up Microsoft Intune
         href: set-up-microsoft-intune.md
   - name: 2. Configure settings and applications
@@ -20,7 +20,7 @@ items:
       - name: Overview
         href: enroll-overview.md
       - name: Enroll devices via Microsoft Entra join
-        href: enroll-aadj.md
+        href: enroll-entra-join.md
       - name: Enroll devices with provisioning packages
         href: enroll-package.md
       - name: Enroll devices with Windows Autopilot
