@@ -13,22 +13,10 @@ items:
     href: windows-firewall-with-advanced-security-administration-with-windows-powershell.md
   - name: Isolate Microsoft Store apps on your network
     href: isolating-apps-on-your-network.md
-  - name: Firewall rules
-    items: 
-    - name: Create firewall rules with Microsoft Intune
-      href: create-windows-firewall-rules-in-intune.md
-    - name: Create an inbound ICMP rule
-      href: create-an-inbound-icmp-rule.md
-    - name: Create an inbound port rule
-      href: create-an-inbound-port-rule.md
-    - name: Create an inbound program or service rule
-      href: create-an-inbound-program-or-service-rule.md
-    - name: Create an outbound port rule
-      href: create-an-outbound-port-rule.md
-    - name: Create an outbound program or service rule
-      href: create-an-outbound-program-or-service-rule.md
-    - name: Create inbound rules to support RPC
-      href: create-inbound-rules-to-support-rpc.md
+  - name: Configure Windows Firewall rules
+    href: configure-rules.md
+  - name: Create firewall rules with Microsoft Intune
+    href: create-windows-firewall-rules-in-intune.md
   - name: Troubleshoot
     items: 
       - name: Troubleshoot UWP app connectivity issues in Windows Firewall
