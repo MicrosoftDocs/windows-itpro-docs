@@ -3,8 +3,6 @@ title: Remote Desktop
 description: Learn how Windows Hello for Business supports using biometrics with remote desktop
 ms.date: 09/01/2023
 ms.topic: conceptual
-ms.collection:
-- tier1
 ---
 
 # Remote Desktop
