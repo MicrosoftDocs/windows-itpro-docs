@@ -1,7 +1,6 @@
 ---
 title: Securing End-to-End IPsec Connections by Using IKEv2 in Windows Server 2012 
 description: Securing End-to-End IPsec Connections by Using IKEv2 in Windows Server 2012
-ms.prod: windows-client
 ms.topic: conceptual
 ms.date: 09/08/2021
 ---
@@ -158,7 +157,7 @@ Follow these procedures to verify and troubleshoot your IKEv2 IPsec connections:
 
 5.  Open the cab file, and then extract the wfpdiag.xml file.
 
-6.  Open the wfpdiag.xml file with your an XML viewer program or Notepad, and then examine the contents. There will be a lot of data in this file. One way to narrow down where to start looking is to search the last “errorFrequencyTable” at the end of the file. There might be many instances of this table, so make sure that you look at the last table in the file. For example, if you have a certificate problem, you might see the following entry in the last table at the end of the file:
+6.  Open the wfpdiag.xml file with your an XML viewer program or Notepad, and then examine the contents. There will be a lot of data in this file. One way to narrow down where to start looking is to search the last "errorFrequencyTable" at the end of the file. There might be many instances of this table, so make sure that you look at the last table in the file. For example, if you have a certificate problem, you might see the following entry in the last table at the end of the file:
 
     ```xml
     <item>

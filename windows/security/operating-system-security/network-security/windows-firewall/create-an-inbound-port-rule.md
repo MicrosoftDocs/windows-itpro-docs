@@ -1,32 +1,15 @@
 ---
 title: Create an Inbound Port Rule 
 description: Learn to allow traffic on specific ports by using the Group Policy Management MMC snap-in to create rules in Windows Defender Firewall with Advanced Security.
-ms.prod: windows-client
-ms.collection: 
-  - highpri
-  - tier3
-  - must-keep
 ms.topic: conceptual
 ms.date: 09/07/2021
 ---
 
 # Create an Inbound Port Rule
 
+To allow inbound network traffic on only a specified TCP or UDP port number, use the Windows Defender Firewall with Advanced Security node in the Group Policy Management MMC snap-in to create firewall rules. This type of rule allows any program that listens on a specified TCP or UDP port to receive network traffic sent to that port.
 
-To allow inbound network traffic on only a specified TCP or UDP port number, use the Windows Defender Firewall 
-with Advanced Security node in the Group Policy Management MMC snap-in to create firewall rules. This type of rule allows any program that listens on a specified TCP or UDP port to receive network traffic sent to that port.
-
-**Administrative credentials**
-
-To complete these procedures, you must be a member of the Domain Administrators group, or otherwise be delegated permissions to modify the GPOs.
-
-This topic describes how to create a standard port rule for a specified protocol or TCP or UDP port number. For other inbound port rule types, see:
-
--   [Create an Inbound ICMP Rule](create-an-inbound-icmp-rule.md)
-
--   [Create Inbound Rules to Support RPC](create-inbound-rules-to-support-rpc.md)
-
-**To create an inbound port rule**
+To create an inbound port rule
 
 1. Open the Group Policy Management Console to [Windows Defender Firewall with Advanced Security](open-the-group-policy-management-console-to-windows-firewall-with-advanced-security.md).
 

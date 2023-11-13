@@ -228,8 +228,7 @@
         "information-protection/tpm/*.md": "tier1",
         "threat-protection/auditing/*.md": "tier3",
         "operating-system-security/data-protection/bitlocker/*.md": "tier1",
-        "operating-system-security/data-protection/personal-data-encryption/*.md": "tier1",
-        "operating-system-security/network-security/windows-firewall/*.md": [ "tier2", "must-keep" ]
+        "operating-system-security/data-protection/personal-data-encryption/*.md": "tier1"
       }
     },
     "template": [],

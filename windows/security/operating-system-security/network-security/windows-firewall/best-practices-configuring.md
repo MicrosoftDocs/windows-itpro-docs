@@ -1,7 +1,6 @@
 ---
 title: Best practices for configuring Windows Firewall
 description: Learn about best practices for configuring Windows Firewall
-ms.prod: windows-client
 ms.date: 11/10/2023
 ms.topic: best-practice
 ---

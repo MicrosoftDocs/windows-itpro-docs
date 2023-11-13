@@ -1,7 +1,6 @@
 ---
 title: Create an Inbound ICMP Rule 
 description: Learn how to allow inbound ICMP traffic by using the Group Policy Management MMC snap-in to create rules in Windows Defender Firewall with Advanced Security.
-ms.prod: windows-client
 ms.topic: conceptual
 ms.date: 09/07/2021
 ---
