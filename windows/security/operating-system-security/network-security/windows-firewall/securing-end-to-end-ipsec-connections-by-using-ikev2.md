@@ -146,17 +146,11 @@ Follow these procedures to verify and troubleshoot your IKEv2 IPsec connections:
 **Use netsh to capture IPsec events.**
 
 1.  Open an elevated command prompt.
-
 2.  At the command prompt, type **netsh wfp capture start**.
-
 3.  Reproduce the error event so that it can be captured.
-
 4.  At the command prompt, type **netsh wfp capture stop**.
-
     A wfpdiag.cab file is created in the current folder.
-
 5.  Open the cab file, and then extract the wfpdiag.xml file.
-
 6.  Open the wfpdiag.xml file with your an XML viewer program or Notepad, and then examine the contents. There will be a lot of data in this file. One way to narrow down where to start looking is to search the last "errorFrequencyTable" at the end of the file. There might be many instances of this table, so make sure that you look at the last table in the file. For example, if you have a certificate problem, you might see the following entry in the last table at the end of the file:
 
     ```xml
@@ -165,13 +159,11 @@ Follow these procedures to verify and troubleshoot your IKEv2 IPsec connections:
       <frequency>32</frequency>
     </item>
     ```
+
     In this example, there are 32 instances of the **ERROR\_IPSEC\_IKE\_NO\_CERT** error. So now you can search for **ERROR\_IPSEC\_IKE\_NO\_CERT** to get more details regarding this error.
 
 You might not find the exact answer for the issue, but you can find good hints. For example, you might find that there seems to be an issue with the certificates, so you can look at your certificates and the related cmdlets for possible issues.
 
 ## See also
 
--   [Windows Defender Firewall with Advanced Security](windows-firewall-with-advanced-security.md)
-
- 
-
+-   [Windows Defender Firewall with Advanced Security](index.md)

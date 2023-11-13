@@ -4,14 +4,16 @@ description: Windows Defender Firewall with Advanced Security Administration wit
 ms.topic: conceptual
 ms.date: 09/08/2021
 ---
-# Windows Defender Firewall with Advanced Security Administration with 
+
+# Windows Defender Firewall with Advanced Security Administration with PowerShell
+
 The Windows Defender Firewall with Advanced Security Administration with Windows PowerShell Guide provides essential scriptlets for automating Windows Defender Firewall management. It's designed for IT pros, system administrators, IT managers, and others who use and need to automate Windows Defender Firewall management in Windows.
 You can use Windows PowerShell to manage your firewall and IPsec deployments. This object-oriented scripting environment will make it easier for you to manage policies and monitor network conditions than was possible in netsh. Windows PowerShell allows network settings to be self-discoverable through the syntax and parameters in each of the cmdlets. This guide demonstrates how common tasks were performed in netsh and how you can use Windows PowerShell to accomplish them.
 In future versions of Windows, Microsoft might remove the netsh functionality for Windows Defender Firewall. Microsoft recommends that you transition to Windows PowerShell if you currently use netsh to configure and manage Windows Defender Firewall.
 Windows PowerShell and netsh command references are at the following locations.
 - [Netsh Commands for Windows Defender Firewall](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc771920(v=ws.10))
 ## Scope
-This guide doesn't teach you the fundamentals of Windows Defender Firewall, which can be found in [Windows Defender Firewall](windows-firewall-with-advanced-security.md). It doesn't teach the fundamentals of Windows PowerShell, and it assumes that you're familiar with the Windows PowerShell language and the basic concepts of Windows PowerShell. For more info about Windows PowerShell concepts and usage, see the reference topics in the [Additional resources](#other-resources) section of this guide.
+This guide doesn't teach you the fundamentals of Windows Defender Firewall, which can be found in [Windows Firewall](index.md). It doesn't teach the fundamentals of Windows PowerShell, and it assumes that you're familiar with the Windows PowerShell language and the basic concepts of Windows PowerShell. For more info about Windows PowerShell concepts and usage, see the reference topics in the [Additional resources](#other-resources) section of this guide.
 ## Audience and user requirements
 This guide is intended for IT pros, system administrators, and IT managers, and it assumes that you're familiar with Windows Defender Firewall, the Windows PowerShell language, and the basic concepts of Windows PowerShell.
 ## In this topic
