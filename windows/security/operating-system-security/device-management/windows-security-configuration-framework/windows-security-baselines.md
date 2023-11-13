@@ -1,9 +1,6 @@
 ---
 title: Security baselines guide
 description: Learn how to use security baselines in your organization.
-ms.localizationpriority: medium
-ms.collection:
-  - tier3
 ms.topic: conceptual
 ms.date: 07/11/2023
 ---

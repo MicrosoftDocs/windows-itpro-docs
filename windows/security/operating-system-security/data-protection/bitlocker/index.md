@@ -1,8 +1,6 @@
 ---
 title: BitLocker overview
 description: Learn about BitLocker practical applications and requirements.
-ms.collection:
-  - tier1
 ms.topic: overview
 ms.date: 10/30/2023
 ---

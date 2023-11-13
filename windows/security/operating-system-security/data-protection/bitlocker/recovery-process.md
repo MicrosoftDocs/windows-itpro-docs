@@ -1,8 +1,6 @@
 ---
 title: BitLocker recovery process
 description: Learn how to obtain BitLocker recovery information for Microsoft Entra joined, Microsoft Entra hybrid joined, and Active Directory joined devices, and how to restore access to a locked drive.
-ms.collection: 
-  - tier1
 ms.topic: how-to
 ms.date: 10/30/2023
 ---

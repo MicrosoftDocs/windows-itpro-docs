@@ -1,8 +1,6 @@
 ---
 title: BitLocker recovery overview
 description: Learn about BitLocker recovery scenarios, recovery options, and how to determine root cause of failed automatic unlocks.
-ms.collection: 
-  - tier1
 ms.topic: how-to
 ms.date: 10/30/2023
 ---

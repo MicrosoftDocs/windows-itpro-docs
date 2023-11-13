@@ -1,17 +1,8 @@
 ---
 title: Federal Information Processing Standard (FIPS) 140 Validation
 description: Learn how Microsoft products and cryptographic modules follow the U.S. Federal government standard FIPS 140.
-ms.prod: windows-client
-ms.date: 08/18/2023
-manager: aaroncz
-ms.author: paoloma
-author: paolomatarazzo
-ms.collection: 
-  - tier3
+ms.date: 11/13/2023
 ms.topic: reference
-ms.localizationpriority: medium
-ms.reviewer: 
-ms.technology: itpro-security
 ---
 
 # FIPS 140-2 Validation

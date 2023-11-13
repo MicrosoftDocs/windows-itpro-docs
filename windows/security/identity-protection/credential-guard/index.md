@@ -3,8 +3,6 @@ title: Credential Guard overview
 description: Learn about Credential Guard and how it isolates secrets so that only privileged system software can access them.
 ms.date: 08/31/2023
 ms.topic: overview
-ms.collection: 
-  - tier1
 ---
 
 # Credential Guard overview

@@ -1,8 +1,6 @@
 ---
 title: Remote Credential Guard 
 description: Learn how Remote Credential Guard helps to secure Remote Desktop credentials by never sending them to the target device.
-ms.collection: 
-- tier1
 ms.topic: how-to
 ms.date: 09/06/2023
 appliesto: 
