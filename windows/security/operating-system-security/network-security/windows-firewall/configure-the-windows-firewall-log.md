@@ -5,11 +5,53 @@ ms.topic: conceptual
 ms.date: 09/07/2021
 ---
 
-# Configure the Windows Defender Firewall with Advanced Security Log
+# Configure Windows Firewall logging
 
-To configure Windows Defender Firewall with Advanced Security to log dropped packets or successful connections, use the Windows Defender Firewall with Advanced Security node in the Group Policy Management MMC snap-in.
+To configure Windows Firewall to log dropped packets or successful connections, you can use:
 
-## To configure the Windows Defender Firewall with Advanced Security log
+- Microsoft Intune/MDM
+- Group policy with the Windows Defender Firewall with Advanced Security node in the Group Policy Management MMC snap-in
+- PowerShell
+
+[!INCLUDE [tab-intro](../../../../../includes/configure/tab-intro.md)]
+
+#### [:::image type="icon" source="../../../images/icons/intune.svg" border="false"::: **Intune/MDM**](#tab/intune)
+
+### Configure Windows Firewall with Intune
+
+[!INCLUDE [intune-settings-catalog-1](../../../../../includes/configure/intune-settings-catalog-1.md)]
+
+| Category | Setting name | Value |
+|--|--|--|
+| | | |
+
+[!INCLUDE [intune-settings-catalog-2](../../../../../includes/configure/intune-settings-catalog-2.md)]
+
+> [!TIP]
+> You can also configure Windows Firewall by using an *TBD* profile in endpoint security. For more information, see [Account protection policy settings for endpoint security in Microsoft Intune](/mem/intune/protect/endpoint-security-account-protection-profile-settings).
+
+Alternatively, you can configure devices using a [custom policy][INT-1] with the [DeviceGuard Policy CSP][CSP-1].
+
+| Setting |
+|--------|
+| **Setting name**: Turn On Virtualization Based Security<br>**OMA-URI**: `./Device/Vendor/MSFT/Policy/Config/DeviceGuard/EnableVirtualizationBasedSecurity`<br>**Data type**: int<br>**Value**: `1`|
+| **Setting name**: Credential Guard Configuration<br>**OMA-URI**: `./Device/Vendor/MSFT/Policy/Config/DeviceGuard/LsaCfgFlags`<br>**Data type**: int<br>**Value**:<br>&emsp;**Enabled with UEFI lock**: `1`<br>&emsp;**Enabled without lock**: `2`|
+
+Once the policy is applied, restart the device.
+
+#### [:::image type="icon" source="../../../images/icons/group-policy.svg" border="false"::: **Group policy**](#tab/gpo)
+
+### Configure Windows Firewall with group policy
+
+[!INCLUDE [gpo-settings-1](../../../../../includes/configure/gpo-settings-1.md)]
+
+| Group policy path | Group policy setting | Value |
+| - | - | - |
+| **Computer Configuration\Administrative Templates\System\Device Guard** |Turn On Virtualization Based Security | **Enabled** and select one of the options listed under the **Credential Guard Configuration** dropdown:<br>&emsp;- **Enabled with UEFI lock**<br>&emsp;- **Enabled without lock**|
+
+[!INCLUDE [gpo-settings-2](../../../../../includes/configure/gpo-settings-2.md)]
+
+Once the policy is applied, restart the device.
 
 1. Open the Group Policy Management Console to [Windows Defender Firewall with Advanced Security](open-the-group-policy-management-console-to-windows-firewall-with-advanced-security.md).
 2.  In the details pane, in the **Overview** section, click **Windows Defender Firewall Properties**.
@@ -22,11 +64,21 @@ To configure Windows Defender Firewall with Advanced Security to log dropped pac
         > [!IMPORTANT]
         > The location you specify must have permissions assigned that permit the Windows Defender Firewall service to write to the log file.
 
-    5.  The default maximum file size for the log is 4,096 kilobytes (KB). If you want to change this size, clear the **Not configured** check box, and type in the new size in KB, or use the up and down arrows to select a size. The file won't grow beyond this size; when the limit is reached, old log entries are deleted to make room for the newly created ones.
-    6.  No logging occurs until you set one of following two options:
-        -   To create a log entry when Windows Defender Firewall drops an incoming network packet, change **Log dropped packets** to **Yes**
-        -   To create a log entry when Windows Defender Firewall allows an inbound connection, change **Log successful connections** to **Yes**
-    7.  Click **OK** twice
+5.  The default maximum file size for the log is 4,096 kilobytes (KB). If you want to change this size, clear the **Not configured** check box, and type in the new size in KB, or use the up and down arrows to select a ize. The file won't grow beyond this size; when the limit is reached, old log entries are deleted to make room for the newly created ones.
+6.  No logging occurs until you set one of following two options:
+    -   To create a log entry when Windows Defender Firewall drops an incoming network packet, change **Log dropped packets** to **Yes**
+    -   To create a log entry when Windows Defender Firewall allows an inbound connection, change **Log successful connections** to **Yes**
+7.  Click **OK** twice
+
+#### [:::image type="icon" source="../../../images/icons/windows-os.svg" border="false"::: **Registry**](#tab/reg)
+
+### Configure Windows Firewall with PowerShell
+
+---
+
+### Troubleshoot Slow Log Ingestion
+
+If logs are slow to appear in Sentinel, you can turn down the log file size. Just beware that this downsizing will result in more resource usage due to the increased resource usage for log rotation.
 
 ### Troubleshoot if the log file is not created or modified
 
@@ -73,8 +125,4 @@ $RULE = New-Object System.Security.AccessControl.FileSystemAccessRule ("NT SERVI
 $ACL.AddAccessRule($RULE)
 ```
 
-Restart the device to restart the Windows Defender Firewall Service.
-
-### Troubleshoot Slow Log Ingestion
-
-If logs are slow to appear in Sentinel, you can turn down the log file size. Just beware that this downsizing will result in more resource usage due to the increased resource usage for log rotation.
+Restart the device to restart the *Windows Defender Firewall* service.
