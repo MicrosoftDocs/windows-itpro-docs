@@ -2,7 +2,6 @@
 title: Windows passwordless experience
 description: Learn how Windows passwordless experience enables your organization to move away from passwords.
 ms.collection: 
-  - highpri
   - tier1
 ms.date: 09/27/2023
 ms.topic: how-to
