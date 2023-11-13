@@ -134,4 +134,4 @@ If you don't want users to see the recommendation to update TPM firmware, you ca
 
 - [Trusted Platform Module](trusted-platform-module-top-node.md)
 - [TPM Cmdlets in Windows PowerShell](/powershell/module/trustedplatformmodule/?view=win10-ps&preserve-view=true)
-- [Prepare your organization for BitLocker: Planning and Policies - TPM configurations](../../operating-system-security/data-protection/bitlocker/prepare-your-organization-for-bitlocker-planning-and-policies.md)
+- [BitLocker planning guide](../../operating-system-security/data-protection/bitlocker/planning-guide.md)

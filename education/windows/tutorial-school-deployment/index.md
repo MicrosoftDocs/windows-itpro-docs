@@ -1,7 +1,7 @@
 ---
 title: Introduction to the tutorial deploy and manage Windows devices in a school
 description: Introduction to deployment and management of Windows devices in education environments.
-ms.date: 08/31/2022
+ms.date: 11/09/2023
 ms.topic: tutorial
 ---
 
@@ -60,13 +60,14 @@ In the remainder of this document, we'll discuss the key concepts and benefits o
 - **Device enrollment:** Setting up Windows devices for deployment and enrolling them in Intune for Education
 - **Device reset:** Resetting managed devices with Intune for Education
 
-________________________________________________________
+---
+
 ## Next steps
 
 Let's begin with the creation and configuration of your Microsoft Entra tenant and Intune environment.
 
 > [!div class="nextstepaction"]
-> [Next: Set up Microsoft Entra ID >](set-up-azure-ad.md)
+> [Next: Set up Microsoft Entra ID >](set-up-microsoft-entra-id.md)
 
 <!-- Reference links in article -->
 

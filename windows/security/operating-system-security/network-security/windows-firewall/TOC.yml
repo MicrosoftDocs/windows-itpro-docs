@@ -21,7 +21,7 @@ items:
             href: restrict-access-to-only-specified-users-or-devices.md
       - name: Implementation designs
         items: 
-          - name: Mapping goals to a design
+          - name: Map goals to a design
             href: mapping-your-deployment-goals-to-a-windows-firewall-with-advanced-security-design.md
           - name: Basic firewall design
             href: basic-firewall-policy-design.md
@@ -45,11 +45,11 @@ items:
                 href: certificate-based-isolation-policy-design-example.md
       - name: Design planning
         items: 
-          - name: Planning your design
+          - name: Plan your design
             href: planning-your-windows-firewall-with-advanced-security-design.md
-          - name: Planning settings for a basic firewall policy
+          - name: Plan settings for a basic firewall policy
             href: planning-settings-for-a-basic-firewall-policy.md
-          - name: Planning domain isolation zones
+          - name: Plan domain isolation zones
             items: 
               - name: Domain isolation zones
                 href: planning-domain-isolation-zones.md
@@ -61,21 +61,21 @@ items:
                 href: boundary-zone.md
               - name: Encryption zone
                 href: encryption-zone.md
-          - name: Planning server isolation zones
+          - name: Plan server isolation zones
             href: planning-server-isolation-zones.md
-          - name: Planning certificate-based authentication
+          - name: Plan certificate-based authentication
             href: planning-certificate-based-authentication.md
             items: 
-              - name: Documenting the Zones
+              - name: Document the Zones
                 href: documenting-the-zones.md
-              - name: Planning group policy deployment for your isolation zones
+              - name: Plan group policy deployment for your isolation zones
                 href: planning-group-policy-deployment-for-your-isolation-zones.md
                 items: 
-                  - name: Planning isolation groups for the zones
+                  - name: Plan isolation groups for the zones
                     href: planning-isolation-groups-for-the-zones.md
-                  - name: Planning network access groups
+                  - name: Plan network access groups
                     href: planning-network-access-groups.md
-                  - name: Planning the GPOs
+                  - name: Plan the GPOs
                     href: planning-the-gpos.md
                     items: 
                       - name: Firewall GPOs
@@ -102,41 +102,41 @@ items:
                             href: gpo-domiso-encryption.md
                       - name: Server isolation GPOs
                         href: server-isolation-gpos.md
-                  - name: Planning GPO deployment
+                  - name: Plan GPO deployment
                     href: planning-gpo-deployment.md
-      - name: Planning to deploy
+      - name: Plan to deploy
         href: planning-to-deploy-windows-firewall-with-advanced-security.md
   - name: Deployment guide
     items: 
       - name: Deployment overview
         href: windows-firewall-with-advanced-security-deployment-guide.md
-      - name: Implementing your plan
+      - name: Implement your plan
         href: implementing-your-windows-firewall-with-advanced-security-design-plan.md
       - name: Basic firewall deployment
         items: 
-          - name: "Checklist: Implementing a basic firewall policy design"
+          - name: "Checklist: Implement a basic firewall policy design"
             href: checklist-implementing-a-basic-firewall-policy-design.md
       - name: Domain isolation deployment
         items: 
-          - name: "Checklist: Implementing a Domain Isolation Policy Design"
+          - name: "Checklist: Implement a Domain Isolation Policy Design"
             href: checklist-implementing-a-domain-isolation-policy-design.md
       - name: Server isolation deployment
         items: 
-          - name: "Checklist: Implementing a Standalone Server Isolation Policy Design"
+          - name: "Checklist: Implement a Standalone Server Isolation Policy Design"
             href: checklist-implementing-a-standalone-server-isolation-policy-design.md
       - name: Certificate-based authentication
         items: 
-          - name: "Checklist: Implementing a Certificate-based Isolation Policy Design"
+          - name: "Checklist: Implement a Certificate-based Isolation Policy Design"
             href: checklist-implementing-a-certificate-based-isolation-policy-design.md
   - name: Best practices
     items: 
-      - name: Configuring the firewall
+      - name: Configure the firewall
         href: best-practices-configuring.md
-      - name: Securing IPsec
+      - name: Secure IPsec
         href: securing-end-to-end-ipsec-connections-by-using-ikev2.md
       - name: PowerShell
         href: windows-firewall-with-advanced-security-administration-with-windows-powershell.md
-      - name: Isolating Microsoft Store Apps on Your Network
+      - name: Isolate Microsoft Store Apps on Your Network
         href: isolating-apps-on-your-network.md
   - name: How-to
     items: 
@@ -154,6 +154,8 @@ items:
         href: configure-data-protection-quick-mode-settings.md
       - name: Configure Group Policy to autoenroll and deploy certificates
         href: configure-group-policy-to-autoenroll-and-deploy-certificates.md
+      - name: Configure Hyper-V firewall
+        href: hyper-v-firewall.md
       - name: Configure key exchange (main mode) settings
         href: configure-key-exchange-main-mode-settings.md
       - name: Configure the rules to require encryption
@@ -218,31 +220,31 @@ items:
         href: verify-that-network-traffic-is-authenticated.md
   - name: References
     items: 
-      - name: "Checklist: Creating Group Policy objects"
+      - name: "Checklist: Create Group Policy objects"
         href: checklist-creating-group-policy-objects.md
-      - name: "Checklist: Creating inbound firewall rules"
+      - name: "Checklist: Create inbound firewall rules"
         href: checklist-creating-inbound-firewall-rules.md
-      - name: "Checklist: Creating outbound firewall rules"
+      - name: "Checklist: Create outbound firewall rules"
         href: checklist-creating-outbound-firewall-rules.md
-      - name: "Checklist: Configuring basic firewall settings"
+      - name: "Checklist: Configure basic firewall settings"
         href: checklist-configuring-basic-firewall-settings.md
-      - name: "Checklist: Configuring rules for the isolated domain"
+      - name: "Checklist: Configure rules for the isolated domain"
         href: checklist-configuring-rules-for-the-isolated-domain.md
-      - name: "Checklist: Configuring rules for the boundary zone"
+      - name: "Checklist: Configure rules for the boundary zone"
         href: checklist-configuring-rules-for-the-boundary-zone.md
-      - name: "Checklist: Configuring rules for the encryption zone"
+      - name: "Checklist: Configure rules for the encryption zone"
         href: checklist-configuring-rules-for-the-encryption-zone.md
-      - name: "Checklist: Configuring rules for an isolated server zone"
+      - name: "Checklist: Configure rules for an isolated server zone"
         href: checklist-configuring-rules-for-an-isolated-server-zone.md
-      - name: "Checklist: Configuring rules for servers in a standalone isolated server zone"
+      - name: "Checklist: Configure rules for servers in a standalone isolated server zone"
         href: checklist-configuring-rules-for-servers-in-a-standalone-isolated-server-zone.md
-      - name: "Checklist: Creating rules for clients of a standalone isolated server zone"
+      - name: "Checklist: Create rules for clients of a standalone isolated server zone"
         href: checklist-creating-rules-for-clients-of-a-standalone-isolated-server-zone.md
       - name: "Appendix A: Sample GPO template files for settings used in this guide"
         href: appendix-a-sample-gpo-template-files-for-settings-used-in-this-guide.md
   - name: Troubleshooting
     items: 
-      - name: Troubleshooting UWP app connectivity issues in Windows Firewall
+      - name: Troubleshoot UWP app connectivity issues in Windows Firewall
         href: troubleshooting-uwp-firewall.md
       - name: Filter origin audit log improvements
         href: filter-origin-documentation.md
