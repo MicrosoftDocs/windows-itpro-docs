@@ -3,6 +3,8 @@ items:
     href: index.md
   - name: Configure Windows firewall
     href: best-practices-configuring.md
+  - name: Configure Hyper-V firewall
+    href: hyper-v-firewall.md
   - name: Configure the Windows Firewall log
     href: configure-the-windows-firewall-log.md
   - name: Secure connections with IPsec
@@ -11,8 +13,6 @@ items:
     href: windows-firewall-with-advanced-security-administration-with-windows-powershell.md
   - name: Isolate Microsoft Store apps on your network
     href: isolating-apps-on-your-network.md
-  - name: Configure Hyper-V firewall
-    href: hyper-v-firewall.md
   - name: Firewall rules
     items: 
     - name: Create firewall rules with Microsoft Intune
