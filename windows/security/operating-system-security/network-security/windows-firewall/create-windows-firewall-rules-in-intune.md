@@ -2,6 +2,7 @@
 title: Create Windows Firewall rules in Intune 
 description: Learn how to use Intune to create rules in Windows Defender Firewall with Advanced Security.
 ms.date: 11/07/2023
+ms.topic: how-to
 ---
 
 # Create Windows Firewall rules in Intune
