@@ -21,15 +21,15 @@ To help address your organizational network security challenges, Windows Firewal
 
 [!INCLUDE [windows-firewall](../../../../../includes/licensing/windows-firewall.md)]
 
-## View and manage Windows Firewall
+## Open and configure Windows Firewall
 
-You can use the *Windows Security* app to view and manage Windows Firewall. Select <kbd>START</kbd>, type **<kbd>`Windows Security`</kbd>**, <kbd>`Windows Security`</kbd> and press <kbd>ENTER</kbd>. Once Windows Security is open, select the tab **Firewall & network protection**. Or use the following shortcut:
+Windows offers different tools to view the status and configure Windows Firewall. All tools interact with the same underlying services, but provide different levels of control over those services.
 
-> [!div class="nextstepaction"]
->
-> [Firewall & network protection][SEC-1]
-
-The *Windows Firewall with Advanced Security* MMC snap-in provides more functionality than the Windows Firewall Control Panel applet. Both interfaces interact with the same underlying services, but provide different levels of control over those services. While the Windows Firewall Control Panel applet can protect a single device in a home environment, it doesn't provide enough centralized management or security features to help secure more complex network traffic found in a typical business enterprise environment.
+- The *Windows Security* app can be used to view the Windows Firewall status and access advanced tools to configure it. Select <kbd>START</kbd>, type `Windows Security`, and press <kbd>ENTER</kbd>. Once Windows Security is open, select the tab **Firewall & network protection**. Or use the following shortcut:
+    > [!div class="nextstepaction"]
+    > [Firewall & network protection][SEC-1]
+- The Windows Firewall Control Panel applet
+- The *Windows Firewall with Advanced Security* MMC snap-in provides advanced functionalities and is used in centralized management solutions to secure complex network traffic found in a typical organization environments
 
 ## :::image type="icon" source="images/feedback.svg" border="false"::: Provide feedback
 
