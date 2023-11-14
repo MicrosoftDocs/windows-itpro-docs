@@ -439,15 +439,15 @@ The partition type can be determined with the DiskPart tool. The DiskPart tool i
 
 1. In the elevated command prompt that opens enter the following command:
 
-  ```cmd
-  DiskPart.exe
-  ```
+   ```cmd
+   DiskPart.exe
+   ```
 
 1. The **DISKPART>** prompt is displayed in the command prompt windows. At the **DISKPART>** prompt, enter the following command:
 
-  ```cmd
-  list disk
-  ```
+   ```cmd
+   list disk
+   ```
 
 1. The partition type is displayed in the **Gpt** column. If the partition is GPT, an asterisk (**\***) is displayed in the column. If the partition is MBR, the column will be blank.
 
