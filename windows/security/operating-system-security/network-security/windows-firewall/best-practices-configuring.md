@@ -7,13 +7,17 @@ ms.topic: best-practice
 
 # Best practices for configuring Windows Firewall
 
-Windows Firewall with Advanced Security provides host-based, two-way network traffic filtering and blocks unauthorized network traffic flowing into or out of the local device. Configuring your Windows Firewall based on the following best practices can help you optimize protection for devices in your network. These recommendations cover a wide range of deployments including home networks and enterprise desktop/server systems.
+Windows Firewall provides host-based, two-way network traffic filtering and blocks unauthorized network traffic flowing into or out of the local device. Configuring your Windows Firewall based on the following best practices can help you optimize protection for devices in your network.
 
-To open Windows Firewall, select **Start** > **Run**, type **wf.msc**, and then select **OK**. See also [Open Windows Firewall](open-windows-firewall-with-advanced-security.md).
+## Access the Windows Firewall with Advanced Security console
+
+If you're configuring devices joined to an Active Directory domain, to complete these procedures you must be a member of the Domain Administrators group, or otherwise have delegated permissions to modify the GPOs in the domain. To access the *Windows Firewall with Advanced Security* console, [create or edit](/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/cc754740(v=ws.11)) a group policy object (GPO) and expand the nodes **Computer Configuration** > **Policies** > **Windows Settings** > **Security Settings** > **Windows Firewall with Advanced Security**.
+
+If you are configuring a single device, you must have administrative rights on the device. In which case, to access the *Windows Firewall with Advanced Security* console, select <kbd>START</kbd>, type `wf.msc`, and press <kbd>ENTER</kbd>.
 
 ## Keep default settings
 
-When you open the Windows Firewall for the first time, you can see the default settings applicable to the local computer. The Overview panel displays security settings for each type of network to which the device can connect.
+The *Overview* panel of the *Windows Firewall with Advanced Security* console displays security settings for each type of network to which the device can connect.
 
 ![Windows Firewall with Advanced Security first time opening.](images/fw01-profiles.png)
 
@@ -23,12 +27,13 @@ When you open the Windows Firewall for the first time, you can see the default s
 
 To view detailed settings for each profile, right-click the top-level **Windows Defender Firewall with Advanced Security** node in the left pane and then select **Properties**.
 
-Maintain the default settings in Windows Firewall whenever possible. These settings have been designed to secure your device for use in most network scenarios. One key example is the default Block behavior for Inbound connections.
+> [!TIP]
+> Maintain the default settings in Windows Firewall whenever possible. These settings have been designed to secure your device for use in most network scenarios. One key example is the default Block behavior for Inbound connections.
 
 :::image type="content" source="images/fw03-defaults.png" alt-text="Screenshot of the default inbound/outbound Firewall settings.":::
 
 > [!IMPORTANT]
-> To maintain maximum security, do not change the default Block setting for inbound connections.
+> To maintain maximum security, don't change the default Block setting for inbound connections.
 
 For more on configuring basic firewall settings, see [Turn on Windows Firewall and Configure Default Behavior](turn-on-windows-firewall-and-configure-default-behavior.md) and [Checklist: Configuring Basic Firewall Settings](checklist-configuring-basic-firewall-settings.md).
 

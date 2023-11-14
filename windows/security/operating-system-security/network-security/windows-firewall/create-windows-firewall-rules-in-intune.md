@@ -93,9 +93,9 @@ Default is Any address
 
 [Learn more](https://aka.ms/intunefirewallremotaddressrule)
 
-## Edge traversal (UI coming soon)
+## Edge traversal
 
-Indicates whether edge traversal is enabled or disabled for this rule. The EdgeTraversal setting indicates that specific inbound traffic is allowed to tunnel through NATs and other edge devices using the Teredo tunneling technology. In order for this setting to work correctly, the application or service with the inbound firewall rule needs to support IPv6. The primary application of this setting allows listeners on the host to be globally addressable through a Teredo IPv6 address. New rules have the EdgeTraversal property disabled by default. This setting can only be configured via Intune Graph at this time.
+Indicates whether edge traversal is enabled or disabled for this rule. The EdgeTraversal setting indicates that specific inbound traffic is allowed to tunnel through NATs and other edge devices using the Teredo tunneling technology. In order for this setting to work correctly, the application or service with the inbound firewall rule needs to support IPv6. The primary application of this setting allows listeners on the host to be globally addressable through a Teredo IPv6 address. New rules have the EdgeTraversal property disabled by default.
 
 [Learn more](/windows/client-management/mdm/firewall-csp#edgetraversal)
 
@@ -104,7 +104,3 @@ Indicates whether edge traversal is enabled or disabled for this rule. The EdgeT
 Specifies the list of authorized local users for this rule. A list of authorized users can't be specified if the rule being authored is targeting a Windows service. Default is all users.
 
 [Learn more](/windows/client-management/mdm/firewall-csp#localuserauthorizedlist)
-
-## Configuring firewall rules programmatically
-
-Coming soon.
