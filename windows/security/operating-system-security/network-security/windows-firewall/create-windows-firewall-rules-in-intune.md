@@ -7,9 +7,6 @@ ms.date: 11/07/2023
 
 # Create Windows Firewall rules in Intune
 
->[!IMPORTANT]
->This information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-
 To get started, Open the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), and then go to **Devices** > **Windows** > **Configuration profiles** > **Create profile** > Choose **Windows 10 and later** as the platform, Choose **Templates**, then **Endpoint protection** as the profile type.
 Select Windows Defender Firewall.
 :::image type="content" source="images/windows-firewall-intune.png" alt-text="Example of a Windows Defender Firewall policy in Microsoft Intune and the Intune admin center.":::
