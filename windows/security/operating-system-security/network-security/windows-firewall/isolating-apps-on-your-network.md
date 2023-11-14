@@ -2,12 +2,12 @@
 title: Isolating Microsoft Store Apps on Your Network 
 description: Learn how to customize your firewall configuration to isolate the network access of the new Microsoft Store apps that run on devices added to your network.
 ms.topic: conceptual
-ms.date: 09/08/2021
+ms.date: 11/14/2023
 ---
 
 # Isolating Microsoft Store Apps on Your Network
 
-When you add new devices to your network, you may want to customize your Windows Defender Firewall with Advanced Security configuration to isolate the network access of the new Microsoft Store apps that run on them. Developers who build Microsoft Store apps can declare certain app capabilities that enable different classes of network access. A developer can decide what kind of network access the app requires and configure this capability for the app. When the app is installed on a device, appropriate firewall rules are automatically created to enable access. You can then customize the firewall configuration to further fine-tune this access if they desire more control over the network access for the app.
+When you add new devices to your network, you may want to customize your Windows Firewall configuration to isolate the network access of the new Microsoft Store apps that run on them. Developers who build Microsoft Store apps can declare certain app capabilities that enable different classes of network access. A developer can decide what kind of network access the app requires and configure this capability for the app. When the app is installed on a device, appropriate firewall rules are automatically created to enable access. You can then customize the firewall configuration to further fine-tune this access if they desire more control over the network access for the app.
 
 For example, a developer can decide that their app should only connect to trusted local networks (such as at home or work), and not to the Internet. In this way, developers can define the scope of network access for their app. This network isolation prevents an app from accessing a network and a connection type (inbound or outbound) if the connection has not been configured for the app. Then the network administrator can customize the firewall to further restrict the resources that the app can access.
 
@@ -177,7 +177,3 @@ Use the following procedure if you want to block intranet access for a specific 
 1. Under **Security Filtering**, click **Add**.
 1. Type **domain computers** in the text box and click **OK**.
 1. Close Group Policy Management.
-
-## See also
-
-- [Windows Defender Firewall with Advanced Security Overview](index.md)

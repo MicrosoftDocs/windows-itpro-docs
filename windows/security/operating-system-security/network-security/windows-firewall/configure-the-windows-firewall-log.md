@@ -1,8 +1,8 @@
 ---
 title: Configure the Windows Defender Firewall Log 
-description: Learn how to configure Windows Defender Firewall with Advanced Security to log dropped packets or successful connections by using Group Policy Management MMC.
-ms.topic: conceptual
-ms.date: 09/07/2021
+description: Learn how to configure Windows Firewall to log dropped packets or successful connections with Microsoft Intune and group policy.
+ms.topic: how-to
+ms.date: 11/14/2023
 ---
 
 # Configure Windows Firewall logging
@@ -11,7 +11,6 @@ To configure Windows Firewall to log dropped packets or successful connections, 
 
 - Microsoft Intune/MDM
 - Group policy with the Windows Defender Firewall with Advanced Security node in the Group Policy Management MMC snap-in
-- PowerShell
 
 [!INCLUDE [tab-intro](../../../../../includes/configure/tab-intro.md)]
 
@@ -54,25 +53,18 @@ Once the policy is applied, restart the device.
 Once the policy is applied, restart the device.
 
 1. Open the Group Policy Management Console to [Windows Defender Firewall with Advanced Security](open-the-group-policy-management-console-to-windows-firewall-with-advanced-security.md).
-2.  In the details pane, in the **Overview** section, click **Windows Defender Firewall Properties**.
-3.  For each network location type (Domain, Private, Public), perform the following steps.
-
-    1.  Click the tab that corresponds to the network location type
-    2.  Under **Logging**, click **Customize**
-    3.  The default path for the log is **%windir%\system32\logfiles\firewall\pfirewall.log**. If you want to change this path, clear the **Not configured** check box and type the path to the new location, or click **Browse** to select a file location
-
+1. In the details pane, in the **Overview** section, click **Windows Defender Firewall Properties**.
+1. For each network location type (Domain, Private, Public), perform the following steps.
+    1. Click the tab that corresponds to the network location type
+    1. Under **Logging**, click **Customize**
+    1. The default path for the log is **%windir%\system32\logfiles\firewall\pfirewall.log**. If you want to change this path, clear the **Not configured** check box and type the path to the new location, or click **Browse** to select a file location
         > [!IMPORTANT]
-        > The location you specify must have permissions assigned that permit the Windows Defender Firewall service to write to the log file.
-
-5.  The default maximum file size for the log is 4,096 kilobytes (KB). If you want to change this size, clear the **Not configured** check box, and type in the new size in KB, or use the up and down arrows to select a ize. The file won't grow beyond this size; when the limit is reached, old log entries are deleted to make room for the newly created ones.
-6.  No logging occurs until you set one of following two options:
-    -   To create a log entry when Windows Defender Firewall drops an incoming network packet, change **Log dropped packets** to **Yes**
-    -   To create a log entry when Windows Defender Firewall allows an inbound connection, change **Log successful connections** to **Yes**
-7.  Click **OK** twice
-
-#### [:::image type="icon" source="../../../images/icons/windows-os.svg" border="false"::: **Registry**](#tab/reg)
-
-### Configure Windows Firewall with PowerShell
+        > The location you specify must have permissions assigned that permit the Windows Firewall service to write to the log file.
+1. The default maximum file size for the log is 4,096 kilobytes (KB). If you want to change this size, clear the **Not configured** check box, and type in the new size in KB, or use the up and down arrows to select a ize. The file won't grow beyond this size; when the limit is reached, old log entries are deleted to make room for the newly created ones.
+1. No logging occurs until you set one of following two options:
+    - To create a log entry when Windows Defender Firewall drops an incoming network packet, change **Log dropped packets** to **Yes**
+    - To create a log entry when Windows Defender Firewall allows an inbound connection, change **Log successful connections** to **Yes**
+1. Click **OK** twice
 
 ---
 
@@ -84,7 +76,7 @@ If logs are slow to appear in Sentinel, you can turn down the log file size. Jus
 
 Sometimes the Windows Firewall log files aren't created, or the events aren't written to the log files. Some examples when this condition might occur include:
 
-- missing permissions for the Windows Defender Firewall Service (MpsSvc) on the folder or on the log files
+- missing permissions for the *Windows Defender Firewall Service* (MpsSvc) on the folder or on the log files
 - you want to store the log files in a different folder and the permissions were removed, or haven't been set automatically
 - if firewall logging is configured via policy settings, it can happen that
   - the log folder in the default location `%windir%\System32\LogFiles\firewall` doesn't exist

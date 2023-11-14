@@ -1,11 +1,11 @@
 ---
-title: Best practices for configuring Windows Firewall
-description: Learn about best practices for configuring Windows Firewall
+title: Recommendations for configuring Windows Firewall
+description: Learn about best practices for configuring Windows Firewall.
 ms.date: 11/10/2023
 ms.topic: best-practice
 ---
 
-# Best practices for configuring Windows Firewall
+# Recommendations for configuring Windows Firewall
 
 Windows Firewall provides host-based, two-way network traffic filtering and blocks unauthorized network traffic flowing into or out of the local device. Configuring your Windows Firewall based on the following best practices can help you optimize protection for devices in your network.
 
@@ -44,9 +44,6 @@ In many cases, a next step for administrators is to customize the firewall profi
 The rule-adding task can be accomplished by right-clicking either **Inbound Rules** or **Outbound Rules**, and selecting **New Rule**. The interface for adding a new rule looks like this:
 
 ![Rule creation wizard.](images/fw02-createrule.png)
-
-> [!NOTE]
->This article doesn't cover step-by-step rule configuration. See the [Windows Firewall with Advanced Security Deployment Guide](windows-firewall-with-advanced-security-deployment-guide.md) for general guidance on policy creation.
 
 In many cases, allowing specific types of inbound traffic is required for applications to function in the network. Administrators should keep the following rule precedence behaviors in mind when allowing these inbound exceptions:
 
@@ -195,7 +192,7 @@ When creating an inbound or outbound rule, you should specify details about the 
 
 ## Configure Windows Firewall rules with WDAC tagging policies
 
-Windows Firewall now supports the use of Windows Defender Application Control (WDAC) Application ID (AppID) tags in firewall rules. With this capability, Windows Firewall rules can now be scoped to an application or a group of applications by referencing process tags, without using absolute path or sacrificing security. There are two steps for this configuration:
+Windows Firewall supports the use of Windows Defender Application Control (WDAC) Application ID (AppID) tags in firewall rules. With this capability, Windows Firewall rules can be scoped to an application or a group of applications by referencing process tags, without using absolute path or sacrificing security. There are two steps for this configuration:
 
 ### Step 1: Deploy WDAC AppId Tagging Policies
 

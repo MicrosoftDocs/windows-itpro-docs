@@ -2,7 +2,7 @@
 title: Quarantine behavior
 description: Quarantine behavior is explained in detail.
 ms.topic: conceptual
-ms.date: 09/08/2021
+ms.date: 11/14/2023
 ---
 
 # Quarantine behavior
