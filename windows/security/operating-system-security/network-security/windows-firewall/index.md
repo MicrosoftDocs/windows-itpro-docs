@@ -23,7 +23,7 @@ To help address your organizational network security challenges, Windows Firewal
 
 ## View and manage Windows Firewall
 
-You can use the *Windows Security* app to view and manage Windows Firewall. Select <kbd>START</kbd>, type **<kbd>Windows Security</kbd>**, and press <kbd>ENTER</kbd>. Once Windows Security is open, select the tab **Firewall & network protection**. Or use the following shortcut:
+You can use the *Windows Security* app to view and manage Windows Firewall. Select <kbd>START</kbd>, type **<kbd>`Windows Security`</kbd>**, <kbd>`Windows Security`</kbd> and press <kbd>ENTER</kbd>. Once Windows Security is open, select the tab **Firewall & network protection**. Or use the following shortcut:
 
 > [!div class="nextstepaction"]
 >
