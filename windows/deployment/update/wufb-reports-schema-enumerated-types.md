@@ -59,7 +59,7 @@ Quality updates status
 | **Latest** | Client is on the latest quality update |
 | **NotLatest** | Client isn't on the latest quality update |
 
-## OSQuaOSSecurityUpdateStatus
+## OSSecurityUpdateStatus
 
 Security updates status
 
@@ -200,11 +200,8 @@ Reason why the device isn't capable of updating to target OS and version.
 | **sysdrivesize** | 64 GB or larger storage device required. If your PC doesn't have a large enough storage drive, sometimes  there are options for upgrading the drive. Consult your PC manufacturer's website or with a retailer to see if there are options to meet the minimum requirements for Windows 11.  |
 | **UefiSecureBoot** | UEFI (Unified Extensible Firmware Interface) and Secure Boot capability. If your device doesn't meet the minimum requirements because it's not Secure Boot capable. For more information, see [Windows 11 and Secure Boot](https://support.microsoft.com/topic/a8ff1202-c0d9-42f5-940f-843abef64fad) to see if you're able to enable Secure Boot. Secure Boot can only be enabled with UEFI. |
 
-## Alerts
 
-The following are enumerated typed for alerts:
-
-### AlertType
+## AlertType
 
 Type of alert.
 
@@ -216,7 +213,7 @@ Type of alert.
 | **ClientDeviceAlert** | Alert is relevant to device's state |
 | **DeploymentAlert** | Alert is relevant to an entire deployment, or a significant number of devices in the deployment. |
 
-### AlertSubtype
+## AlertSubtype
 
 Subtype of alert.
 
@@ -258,7 +255,7 @@ Subtype of alert.
 | **WUIssue** | UCUpdateAlert | An unexpected issue was encountered during the installation. |
 | **WUSetupError** | UCUpdateAlert | The setup process was suspended. |
 
-### AlertStatus
+## AlertStatus
 
 Status of alert
 
