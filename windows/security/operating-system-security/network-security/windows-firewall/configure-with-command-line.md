@@ -1,11 +1,11 @@
 ---
-title: Manage Windows Firewall with PowerShell
+title: Manage Windows Firewall with the command line
 description: Learn how to manage Windows Firewall from the command line. This guide provides examples how to manage Windows Firewall with PowerShell and Netsh. 
 ms.topic: conceptual
 ms.date: 11/14/2023
 ---
 
-# Manage Windows Firewall with PowerShell
+# Manage Windows Firewall with the command line
 
 This article provides examples how to manage Windows Firewall with PowerShell and `netsh.exe`, which can be used to automate the management of Windows Firewall.
 
@@ -92,25 +92,37 @@ This section provides scriptlet examples for creating, modifying, and deleting f
 Adding a firewall rule in Windows PowerShell looks a lot like it did in Netsh, but the parameters and values are specified differently.
 Here's an example of how to allow the Telnet application to listen on the network. This firewall rule is scoped to the local subnet by using a keyword instead of an IP address. Just like in Netsh, the rule is created on the local  device, and it becomes effective immediately.
 
-```cmd
-netsh advfirewall firewall add rule name="Allow Inbound Telnet" dir=in program= %SystemRoot%\System32\tlntsvr.exe remoteip=localsubnet action=allow
-```
+#### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
 
 ```powershell
 New-NetFirewallRule -DisplayName "Allow Inbound Telnet" -Direction Inbound -Program %SystemRoot%\System32\tlntsvr.exe -RemoteAddress LocalSubnet -Action Allow
 ```
 
+#### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
+
+``` cmd
+netsh advfirewall firewall add rule name="Allow Inbound Telnet" dir=in program= %SystemRoot%\System32\tlntsvr.exe remoteip=localsubnet action=allow
+```
+
+---
+
 The following scriptlet shows how to add a basic firewall rule that blocks outbound traffic from a specific application and local port to a Group Policy Object (GPO) in Active Directory. In Windows PowerShell, the policy store is specified as a parameter within the **New-NetFirewall** cmdlet. In Netsh, you must first specify the GPO that the commands in a Netsh session should modify. The commands you enter are run against the contents of the GPO, and the execution remains in effect until the Netsh session is ended or until another set store command is executed.
 Here, **domain.contoso.com** is the name of your Active Directory Domain Services (AD DS), and **gpo\_name** is the name of the GPO that you want to modify. Quotation marks are required if there are any spaces in the GPO name.
 
-```cmd
+#### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
+
+```powershell
+New-NetFirewallRule -DisplayName "Block Outbound Telnet" -Direction Outbound -Program %SystemRoot%\System32\tlntsvr.exe -Protocol TCP -LocalPort 23 -Action Block -PolicyStore domain.contoso.com\gpo_name
+```
+
+#### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
+
+``` cmd
 netsh advfirewall set store gpo=domain.contoso.com\gpo_name
 netsh advfirewall firewall add rule name="Block Outbound Telnet" dir=out program=%SystemRoot%\System32\telnet.exe protocol=tcp localport=23 action=block
 ```
 
-```powershell
-New-NetFirewallRule -DisplayName "Block Outbound Telnet" -Direction Outbound -Program %SystemRoot%\System32\tlntsvr.exe -Protocol TCP -LocalPort 23 -Action Block -PolicyStore domain.contoso.com\gpo_name
-```
+---
 
 ### GPO Caching
 
@@ -130,13 +142,19 @@ This command doesn't batch your individual changes, it loads and saves the entir
 When a rule is created, Netsh and Windows PowerShell allow you to change rule properties and influence, but the rule maintains its unique identifier (in Windows PowerShell, this identifier is specified with the *-Name* parameter).
 For example, you could have a rule **Allow Web 80** that enables TCP port 80 for inbound unsolicited traffic. You can change the rule to match a different remote IP address of a Web server whose traffic will be allowed by specifying the human-readable, localized name of the rule.
 
-```cmd
-netsh advfirewall firewall set rule name="Allow Web 80" new remoteip=192.168.0.2
-```
+#### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
 
 ```powershell
 Set-NetFirewallRule -DisplayName "Allow Web 80" -RemoteAddress 192.168.0.2
 ```
+
+#### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
+
+``` cmd
+netsh advfirewall firewall set rule name="Allow Web 80" new remoteip=192.168.0.2
+```
+
+---
 
 Netsh requires you to provide the name of the rule for it to be changed and we don't have an alternate way of getting the firewall rule. In Windows PowerShell, you can query for the rule using its known properties.
 When you run `Get-NetFirewallRule`, you may notice that common conditions like addresses and ports don't appear. These conditions are represented in separate objects called Filters. As shown before, you can set all the conditions in New-NetFirewallRule and Set-NetFirewallRule. If you want to query for firewall rules based on these fields (ports, addresses, security, interfaces, services), you'll need to get the filter objects themselves.
@@ -172,13 +190,19 @@ $rule | Set-NetFirewallRule
 With the help of the `Set` command, if the rule group name is specified, the group membership isn't modified but rather all rules of the group receive the same modifications indicated by the given parameters.
 The following scriptlet enables all rules in a predefined group containing remote management influencing firewall rules.
 
-```cmd
-netsh advfirewall firewall set rule group="Windows Firewall remote management" new enable=yes
-```
+#### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
 
 ```powershell
 Set-NetFirewallRule -DisplayGroup "Windows Firewall Remote Management" -Enabled True
 ```
+
+#### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
+
+``` cmd
+netsh advfirewall firewall set rule group="Windows Firewall remote management" new enable=yes
+```
+
+---
 
 There's also a separate `Enable-NetFirewallRule` cmdlet for enabling rules by group or by other properties of the rule.
 
@@ -191,13 +215,19 @@ Enable-NetFirewallRule -DisplayGroup "Windows Firewall Remote Management" -Verbo
 Rule objects can be disabled so that they're no longer active. In Windows PowerShell, the **Disable-NetFirewallRule** cmdlet will leave the rule on the system, but put it in a disabled state so the rule no longer is applied and impacts traffic. A disabled firewall rule can be re-enabled by **Enable-NetFirewallRule**. This cmdlet is different from the **Remove-NetFirewallRule**, which permanently removes the rule definition from the device.
 The following cmdlet deletes the specified existing firewall rule from the local policy store.
 
-```cmd
-netsh advfirewall firewall delete rule name="Allow Web 80"
-```
+#### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
 
 ```powershell
 Remove-NetFirewallRule -DisplayName "Allow Web 80"
 ```
+
+#### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
+
+``` cmd
+netsh advfirewall firewall delete rule name="Allow Web 80"
+```
+
+---
 
 Like with other cmdlets, you can also query for rules to be removed. Here, all blocking firewall rules are deleted from the device.
 
@@ -240,14 +270,20 @@ In Netsh, the authentication and cryptographic sets were specified as a list of 
 
 The following cmdlet creates basic IPsec transport mode rule in a Group Policy Object. An IPsec rule is simple to create; all that is required is the display name, and the remaining properties use default values. Inbound traffic is authenticated and integrity checked using the default quick mode and main mode settings. These default settings can be found in the console under Customize IPsec Defaults.
 
-```cmd
-netsh advfirewall set store gpo=domain.contoso.com\gpo_name
-netsh advfirewall consec add rule name="Require Inbound Authentication" endpoint1=any endpoint2=any action=requireinrequestout
-```
+#### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
 
 ```powershell
 New-NetIPsecRule -DisplayName "Require Inbound Authentication" -PolicyStore domain.contoso.com\gpo_name
 ```
+
+#### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
+
+``` cmd
+netsh advfirewall set store gpo=domain.contoso.com\gpo_name
+netsh advfirewall consec add rule name="Require Inbound Authentication" endpoint1=any endpoint2=any action=requireinrequestout
+```
+
+---
 
 ### Add custom authentication methods to an IPsec rule
 
@@ -256,16 +292,22 @@ You can then use the newly created custom quick-mode policies when you create IP
 ![crypto set object.](images/qmcryptoset.gif)
 In this example, we build on the previously created IPsec rule by specifying a custom quick-mode crypto set. The final IPsec rule requires outbound traffic to be authenticated by the specified cryptography method.
 
-```cmd
-netsh advfirewall set store gpo=domain.contoso.com\gpo_name
-netsh advfirewall consec add rule name="Require Outbound Authentication" endpoint1=any endpoint2=any action=requireinrequestout qmsecmethods=ah:sha1+esp:sha1-3des
-```
+#### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
 
 ```powershell
 $AHandESPQM = New-NetIPsecQuickModeCryptoProposal -Encapsulation AH,ESP -AHHash SHA1 -ESPHash SHA1 -Encryption DES3
 $QMCryptoSet = New-NetIPsecQuickModeCryptoSet -DisplayName "ah:sha1+esp:sha1-des3" -Proposal $AHandESPQM -PolicyStore domain.contoso.com\gpo_name
 New-NetIPsecRule -DisplayName "Require Inbound Authentication" -InboundSecurity Require -OutboundSecurity Request -QuickModeCryptoSet $QMCryptoSet.Name -PolicyStore domain.contoso.com\gpo_name
 ```
+
+#### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
+
+``` cmd
+netsh advfirewall set store gpo=domain.contoso.com\gpo_name
+netsh advfirewall consec add rule name="Require Outbound Authentication" endpoint1=any endpoint2=any action=requireinrequestout qmsecmethods=ah:sha1+esp:sha1-3des
+```
+
+---
 
 ### IKEv2 IPsec transport rules
 
@@ -327,24 +369,36 @@ Remove-NetFirewallRule -DisplayName "Contoso Messenger 98*" -Verbose
 The following Windows PowerShell commands are useful in the update cycle of a deployment phase.
 To allow you to view all the IPsec rules in a particular store, you can use the following commands. In Netsh, this command doesn't show rules where profile=domain,public or profile=domain,private. It only shows rules that have the single entry domain that is included in the rule. The following command examples will show the IPsec rules in all profiles.
 
-```cmd
-netsh advfirewall consec show rule name=all
-```
+#### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
 
 ```powershell
 Show-NetIPsecRule -PolicyStore ActiveStore
 ```
 
+#### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
+
+``` cmd
+netsh advfirewall consec show rule name=all
+```
+
+---
+
 You can monitor main mode security associations for information such as which peers are currently connected to the device and which protection suite is used to form the security associations.
 Use the following cmdlet to view existing main mode rules and their security associations:
 
-```cmd
-netsh advfirewall monitor show mmsa all
-```
+#### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
 
 ```powershell
 Get-NetIPsecMainModeSA
 ```
+
+#### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
+
+``` cmd
+netsh advfirewall monitor show mmsa all
+```
+
+---
 
 ### Find the source GPO of a rule
 
@@ -362,10 +416,7 @@ It's important to note that the revealed sources don't contain a domain name.
 IPsec can be used to isolate domain members from non-domain members. Domain isolation uses IPsec authentication to require that the domain-joined devices positively establish the identities of the communicating devices to improve security of an organization. One or more features of IPsec can be used to secure traffic with an IPsec rule object.
 To implement domain isolation on your network, the devices in the domain receive IPsec rules that block unsolicited inbound network traffic that isn't protected by IPsec. Here we create an IPsec rule that requires authentication by domain members. Through this authentication, you can isolate domain-joined devices from devices that aren't joined to a domain. In the following examples, Kerberos authentication is required for inbound traffic and requested for outbound traffic.
 
-```cmd
-netsh advfirewall set store gpo=domain.contoso.com\domain_isolation
-netsh advfirewall consec add rule name="Basic Domain Isolation Policy" profile=domain endpoint1="any" endpoint2="any" action=requireinrequestout auth1="computerkerb"
-```
+#### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
 
 ```powershell
 $kerbprop = New-NetIPsecAuthProposal -Machine -Kerberos
@@ -373,19 +424,34 @@ $Phase1AuthSet = New-NetIPsecPhase1AuthSet -DisplayName "Kerberos Auth Phase1" -
 New-NetIPsecRule -DisplayName "Basic Domain Isolation Policy" -Profile Domain -Phase1AuthSet $Phase1AuthSet.Name -InboundSecurity Require -OutboundSecurity Request -PolicyStore domain.contoso.com\domain_isolation
 ```
 
+#### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
+
+``` cmd
+netsh advfirewall set store gpo=domain.contoso.com\domain_isolation
+netsh advfirewall consec add rule name="Basic Domain Isolation Policy" profile=domain endpoint1="any" endpoint2="any" action=requireinrequestout auth1="computerkerb"
+```
+
+---
+
 ### Configure IPsec tunnel mode
 
 The following command creates an IPsec tunnel that routes traffic from a private network (192.168.0.0/16) through an interface on the local device (1.1.1.1) attached to a public network to a second device through its public interface (2.2.2.2) to another private network (192.157.0.0/16). All traffic through the tunnel is checked for integrity by using ESP/SHA1, and it's encrypted by using ESP/DES3.
 
-```cmd
-netsh advfirewall consec add rule name="Tunnel from 192.168.0.0/16 to 192.157.0.0/16" mode=tunnel endpoint1=192.168.0.0/16 endpoint2=192.157.0.0/16 localtunnelendpoint=1.1.1.1 remotetunnelendpoint=2.2.2.2 action=requireinrequireout qmsecmethods=esp:sha1-3des
-```
+#### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
 
 ```powershell
 $QMProposal = New-NetIPsecQuickModeCryptoProposal -Encapsulation ESP -ESPHash SHA1 -Encryption DES3
 $QMCryptoSet = New-NetIPsecQuickModeCryptoSet -DisplayName "esp:sha1-des3" -Proposal $QMProposal
 New-NetIPSecRule -DisplayName "Tunnel from HQ to Dallas Branch" -Mode Tunnel -LocalAddress 192.168.0.0/16 -RemoteAddress 192.157.0.0/16 -LocalTunnelEndpoint 1.1.1.1 -RemoteTunnelEndpoint 2.2.2.2 -InboundSecurity Require -OutboundSecurity Require -QuickModeCryptoSet $QMCryptoSet.Name
 ```
+
+#### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
+
+``` cmd
+netsh advfirewall consec add rule name="Tunnel from 192.168.0.0/16 to 192.157.0.0/16" mode=tunnel endpoint1=192.168.0.0/16 endpoint2=192.157.0.0/16 localtunnelendpoint=1.1.1.1 remotetunnelendpoint=2.2.2.2 action=requireinrequireout qmsecmethods=esp:sha1-3des
+```
+
+---
 
 ## Deploy secure firewall rules with IPsec
 
@@ -396,19 +462,23 @@ In situations where only secure traffic can be allowed through the Windows Firew
 Configuring firewalls rule to allow connections if they're secure requires the corresponding traffic to be authenticated and integrity protected, and then optionally encrypted by IPsec.
 The following example creates a firewall rule that requires traffic to be authenticated. The command permits inbound Telnet network traffic only if the connection from the remote device is authenticated by using a separate IPsec rule.
 
-```cmd
-netsh advfirewall firewall add rule name="Allow Authenticated Telnet" dir=in program=%SystemRoot%\System32\tlntsvr.exe security=authenticate action=allow
-```
+#### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
 
 ```powershell
 New-NetFirewallRule -DisplayName "Allow Authenticated Telnet" -Direction Inbound -Program %SystemRoot%\System32\tlntsvr.exe -Authentication Required -Action Allow
 ```
 
+#### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
+
+``` cmd
+netsh advfirewall firewall add rule name="Allow Authenticated Telnet" dir=in program=%SystemRoot%\System32\tlntsvr.exe security=authenticate action=allow
+```
+
+---
+
 The following command creates an IPsec rule that requires a first (computer) authentication and then attempts an optional second (user) authentication. Creating this rule secures and allows the traffic through the firewall rule requirements for the messenger program.
 
-```cmd
-netsh advfirewall consec add rule name="Authenticate Both Computer and User" endpoint1=any endpoint2=any action=requireinrequireout auth1=computerkerb,computerntlm auth2=userkerb,userntlm,anonymous
-```
+#### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
 
 ```powershell
 $mkerbauthprop = New-NetIPsecAuthProposal -Machine -Kerberos
@@ -420,6 +490,14 @@ $anonyauthprop = New-NetIPsecAuthProposal -Anonymous
 $P2Auth = New-NetIPsecPhase2AuthSet -DisplayName "User Auth" -Proposal $ukerbauthprop,$unentlmauthprop,$anonyauthprop
 New-NetIPSecRule -DisplayName "Authenticate Both Computer and User" -InboundSecurity Require -OutboundSecurity Require -Phase1AuthSet $P1Auth.Name -Phase2AuthSet $P2Auth.Name
 ```
+
+#### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
+
+``` cmd
+netsh advfirewall consec add rule name="Authenticate Both Computer and User" endpoint1=any endpoint2=any action=requireinrequireout auth1=computerkerb,computerntlm auth2=userkerb,userntlm,anonymous
+```
+
+---
 
 ### Isolate a server by requiring encryption and group membership
 
@@ -450,14 +528,20 @@ For more information about how to create security groups or how to determine the
 Telnet is an application that doesn't provide encryption. This application can send data, such as names and passwords, over the network. This data can be intercepted by malicious users. If an administrator would like to allow the use of Telnet, but protect the traffic, a firewall rule that requires IPsec encryption can be created. This firewall rule is necessary so that the administrator can be certain that when this application is used, all of the traffic sent or received by this port is encrypted. If IPsec fails to authorize the connection, no traffic is allowed from this application.
 In this example, we allow only authenticated and encrypted inbound Telnet traffic from a specified secure user group through the creation of the following firewall rule.
 
-```cmd
-netsh advfirewall set store gpo=domain.contoso.com\Server_Isolation
-netsh advfirewall firewall add rule name="Allow Encrypted Inbound Telnet to Group Members Only" program=%SystemRoot%\System32\tlntsvr.exe protocol=TCP dir=in action=allow localport=23 security=authenc rmtusrgrp ="D:(A;;CC;;; S-1-5-21-2329867823-2610410949-1491576313-1735)"
-```
+#### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
 
 ```powershell
 New-NetFirewallRule -DisplayName "Allow Encrypted Inbound Telnet to Group Members Only" -Program %SystemRoot%\System32\tlntsvr.exe -Protocol TCP -Direction Inbound -Action Allow -LocalPort 23 -Authentication Required -Encryption Required -RemoteUser $secureUserGroup -PolicyStore domain.contoso.com\Server_Isolation
 ```
+
+#### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
+
+``` cmd
+netsh advfirewall set store gpo=domain.contoso.com\Server_Isolation
+netsh advfirewall firewall add rule name="Allow Encrypted Inbound Telnet to Group Members Only" program=%SystemRoot%\System32\tlntsvr.exe protocol=TCP dir=in action=allow localport=23 security=authenc rmtusrgrp ="D:(A;;CC;;; S-1-5-21-2329867823-2610410949-1491576313-1735)"
+```
+
+---
 
 ### Endpoint security enforcement
 
@@ -473,11 +557,17 @@ Set-NetFirewallSetting -RemoteMachineTransportAuthorizationList $secureMachineGr
 Authenticated bypass allows traffic from a specified trusted device or user to override firewall block rules. This override is helpful when an administrator wants to use scanning servers to monitor and update devices without the need to use port-level exceptions. For more information, see [How to enable authenticated firewall bypass](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753463(v=ws.10)).
 In this example, we assume that a blocking firewall rule exists. This example permits any network traffic on any port from any IP address to override the block rule, if the traffic is authenticated as originating from a  device or user account that is a member of the specified  device or user security group.
 
-```cmd
-netsh advfirewall set store gpo=domain.contoso.com\domain_isolation
-netsh advfirewall firewall add rule name="Inbound Secure Bypass Rule" dir=in security=authenticate action="bypass" rmtcomputergrp="D:(A;;CC;;;S-1-5-21-2329867823-2610410949-1491576313-1114)" rmtusrgrp="D:(A;;CC;;; S-1-5-21-2329867823-2610410949-1491576313-1735)"
-```
+#### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
 
 ```powershell
 New-NetFirewallRule -DisplayName "Inbound Secure Bypass Rule" -Direction Inbound -Authentication Required -OverrideBlockRules $true -RemoteMachine $secureMachineGroup -RemoteUser $secureUserGroup -PolicyStore domain.contoso.com\domain_isolation
 ```
+
+#### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
+
+``` cmd
+netsh advfirewall set store gpo=domain.contoso.com\domain_isolation
+netsh advfirewall firewall add rule name="Inbound Secure Bypass Rule" dir=in security=authenticate action="bypass" rmtcomputergrp="D:(A;;CC;;;S-1-5-21-2329867823-2610410949-1491576313-1114)" rmtusrgrp="D:(A;;CC;;; S-1-5-21-2329867823-2610410949-1491576313-1735)"
+```
+
+---
