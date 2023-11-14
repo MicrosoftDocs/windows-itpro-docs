@@ -46,7 +46,7 @@ To isolate Microsoft Store apps on your network, you need to use Group Policy to
 - The Remote Server Administration Tools (RSAT) are installed on your client device. When you perform the following steps from your client device, you can select your Microsoft Store app when you create Windows Defender Firewall rules.
 
 > [!NOTE]
-> Information the user should notice even if skimmingYou can install the RSAT on your device running Windows from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=45520).
+> You can install the RSAT on your device running Windows from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=45520).
 
 ## Step 1: Define your network
 
