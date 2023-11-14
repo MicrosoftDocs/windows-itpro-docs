@@ -11,7 +11,7 @@ Windows Firewall is a stateful host firewall that helps secure the device by all
 
 Windows Firewall also works with Network Awareness so that it can apply security settings appropriate to the types of networks to which the device is connected.
 
-## Practical applications
+## Benefits
 
 To help address your organizational network security challenges, Windows Firewall offers the following benefits:
 
@@ -19,38 +19,9 @@ To help address your organizational network security challenges, Windows Firewal
 - **Safeguards sensitive data and intellectual property.** With its integration with IPsec, Windows Firewall provides a simple way to enforce authenticated, end-to-end network communications. It provides scalable, tiered access to trusted network resources, helping to enforce integrity of the data, and optionally helping to protect the confidentiality of the data.
 - **Extends the value of existing investments.** Because Windows Firewall is a host-based firewall that is included with the operating system, there's no other hardware or software required. Windows Firewall is also designed to complement existing non-Microsoft network security solutions through a documented application programming interface (API).
 
+:::image type="content" source="images/windows-security.png" alt-text="Screenshot showing the Windows Security app." border="false":::
+
 [!INCLUDE [windows-firewall](../../../../../includes/licensing/windows-firewall.md)]
-
-## Open and configure Windows Firewall
-
-Windows offers different tools to view the status and configure Windows Firewall. All tools interact with the same underlying services, but provide different levels of control over those services.
-
-:::row:::
-  :::column span="3":::
-    - The *Windows Security* app can be used to view the Windows Firewall status and access advanced tools to configure it. Select <kbd>START</kbd>, type `Windows Security`, and press <kbd>ENTER</kbd>. Once Windows Security is open, select the tab **Firewall & network protection**. Or use the following shortcut:
-    &nbsp> [!div class="nextstepaction"]
-    > [Firewall & network protection][SEC-1]
-  :::column-end:::
-  :::column span="1":::
-    :::image type="content" source="images/windows-security.png" alt-text="Screenshot showing the QR code to scan from your phone or tablet." lightbox="images/windows-security.png" border="false":::
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column span="3":::
-    - The *Windows Defender Firewall* Control Panel applet (`firewall.cpl`) provides basic functionalities to configure Windows Firewall
-  :::column-end:::
-  :::column span="1":::
-    :::image type="content" source="images/control-panel.png" alt-text="Screenshot showing the QR code to scan from your phone or tablet." lightbox="images/control-panel.png" border="false":::
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column span="3":::
-    - The *Windows Defender Firewall with Advanced Security* MMC snap-in (`wf.msc`) provides advanced functionalities and is used in centralized management solutions to secure complex network traffic found in a typical organization environments
-  :::column-end:::
-  :::column span="1":::
-    :::image type="content" source="images/mmc-advanced-security.png" alt-text="Screenshot showing the QR code to scan from your phone or tablet." lightbox="images/mmc-advanced-security.png" border="false":::
-  :::column-end:::
-:::row-end:::
 
 ## :::image type="icon" source="images/feedback.svg" border="false"::: Provide feedback
 
@@ -59,7 +30,7 @@ To provide feedback for Windows Firewall, open [**Feedback Hub**][FHUB] (<kbd>WI
 ## Next steps
 
 > [!div class="nextstepaction"]
-> Learn about the recommendations for configuring Windows Firewall:
+> Learn how to configure Windows Firewall:
 >
 > [Configure Windows Firewall >](best-practices-configuring.md)
 

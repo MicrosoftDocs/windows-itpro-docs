@@ -9,6 +9,35 @@ ms.topic: best-practice
 
 Windows Firewall provides host-based, two-way network traffic filtering and blocks unauthorized network traffic flowing into or out of the local device. Configuring your Windows Firewall based on the following best practices can help you optimize protection for devices in your network.
 
+## Open and configure Windows Firewall
+
+Windows offers different tools to view the status and configure Windows Firewall. All tools interact with the same underlying services, but provide different levels of control over those services.
+
+:::row:::
+  :::column span="3":::
+    - The *Windows Security* app can be used to view the Windows Firewall status and access advanced tools to configure it. Select <kbd>START</kbd>, type `Windows Security`, and press <kbd>ENTER</kbd>. Once Windows Security is open, select the tab **Firewall & network protection**. Or use the shortcut [Firewall & network protection][SEC-1]
+  :::column-end:::
+  :::column span="1":::
+    :::image type="content" source="images/windows-security.png" alt-text="Screenshot showing the QR code to scan from your phone or tablet." lightbox="images/windows-security.png" border="false":::
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column span="3":::
+    - The *Windows Defender Firewall* Control Panel applet (`firewall.cpl`) provides basic functionalities to configure Windows Firewall
+  :::column-end:::
+  :::column span="1":::
+    :::image type="content" source="images/control-panel.png" alt-text="Screenshot showing the QR code to scan from your phone or tablet." lightbox="images/control-panel.png" border="false":::
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column span="3":::
+    - The *Windows Defender Firewall with Advanced Security* MMC snap-in (`wf.msc`) provides advanced functionalities and is used in centralized management solutions to secure complex network traffic found in a typical organization environments
+  :::column-end:::
+  :::column span="1":::
+    :::image type="content" source="images/mmc-advanced-security.png" alt-text="Screenshot showing the QR code to scan from your phone or tablet." lightbox="images/mmc-advanced-security.png" border="false":::
+  :::column-end:::
+:::row-end:::
+
 ## Access the Windows Firewall with Advanced Security console
 
 If you're configuring devices joined to an Active Directory domain, to complete these procedures you must be a member of the Domain Administrators group, or otherwise have delegated permissions to modify the GPOs in the domain. To access the *Windows Firewall with Advanced Security* console, [create or edit](/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/cc754740(v=ws.11)) a group policy object (GPO) and expand the nodes **Computer Configuration** > **Policies** > **Windows Settings** > **Security Settings** > **Windows Firewall with Advanced Security**.
