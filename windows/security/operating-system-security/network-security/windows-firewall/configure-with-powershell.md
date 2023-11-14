@@ -5,7 +5,7 @@ ms.topic: conceptual
 ms.date: 09/08/2021
 ---
 
-# Windows Defender Firewall with Advanced Security Administration with PowerShell
+# Manage Windows Firewall with PowerShell
 
 The Windows Defender Firewall with Advanced Security Administration with Windows PowerShell Guide provides essential scriptlets for automating Windows Defender Firewall management. It's designed for IT pros, system administrators, IT managers, and others who use and need to automate Windows Defender Firewall management in Windows.
 You can use Windows PowerShell to manage your firewall and IPsec deployments. This object-oriented scripting environment will make it easier for you to manage policies and monitor network conditions than was possible in netsh. Windows PowerShell allows network settings to be self-discoverable through the syntax and parameters in each of the cmdlets. This guide demonstrates how common tasks were performed in netsh and how you can use Windows PowerShell to accomplish them.
@@ -16,19 +16,15 @@ Windows PowerShell and netsh command references are at the following locations.
 This guide doesn't teach you the fundamentals of Windows Defender Firewall, which can be found in [Windows Firewall](index.md). It doesn't teach the fundamentals of Windows PowerShell, and it assumes that you're familiar with the Windows PowerShell language and the basic concepts of Windows PowerShell. For more info about Windows PowerShell concepts and usage, see the reference topics in the [Additional resources](#other-resources) section of this guide.
 ## Audience and user requirements
 This guide is intended for IT pros, system administrators, and IT managers, and it assumes that you're familiar with Windows Defender Firewall, the Windows PowerShell language, and the basic concepts of Windows PowerShell.
-## In this topic
-| Section | Description |
-| - | - |
-| [Set profile global defaults](#bkmk-profileglobaldefaults) | Enable and control firewall behavior|
-| [Deploy basic firewall rules](#deploy-basic-firewall-rules)| How to create, modify, and delete firewall rules|
-| [Manage Remotely](#manage-remotely) | Remote management by using `-CimSession`|
-| [Deploy basic IPsec rule settings](#deploy-basic-ipsec-rule-settings) | IPsec rules and associated parameters|
-| [Deploy secure firewall rules with IPsec](#deploy-secure-firewall-rules-with-ipsec) | Domain and server isolation|
-| [Other resources](#other-resources) | More information about Windows PowerShell|
+
 ## Set profile global defaults
+
 Global defaults set the device behavior in a per-profile basis. Windows Defender Firewall supports Domain, Private, and Public profiles.
+
 ### Enable Windows Defender Firewall with Advanced Security
-Windows Defender Firewall drops traffic that doesn't correspond to allowed unsolicited traffic, or traffic that is sent in response to a request by the  device. If you find that the rules you create aren't being enforced, you may need to enable Windows Defender Firewall. Here's how to enable Windows Defender Firewall on a local domain  device:
+
+Windows Defender Firewall drops traffic that doesn't correspond to
+ allowed unsolicited traffic, or traffic that is sent in response to a request by the  device. If you find that the rules you create aren't being enforced, you may need to enable Windows Defender Firewall. Here's how to enable Windows Defender Firewall on a local domain  device:
 **Netsh**
 ``` cmd
 netsh.exe advfirewall set allprofiles state on
@@ -37,10 +33,14 @@ netsh.exe advfirewall set allprofiles state on
 ```powershell
 Set-NetFirewallProfile -Profile Domain,Public,Private -Enabled True
 ```
+
 ### Control Windows Defender Firewall with Advanced Security behavior
+
 The global default settings can be defined through the command-line interface. These modifications are also available through the Windows Defender Firewall with Advanced Security console.
 The following scriptlets set the default inbound and outbound actions, specifies protected network connections, and allows notifications to be displayed to the user when a program is blocked from receiving inbound connections. It allows unicast response to multicast or broadcast network traffic, and it specifies logging settings for troubleshooting.
+
 **Netsh**
+
 ```cmd
 netsh advfirewall set allprofiles firewallpolicy blockinbound,allowoutbound
 netsh advfirewall set allprofiles settings inboundusernotification enable

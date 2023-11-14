@@ -1,22 +1,24 @@
 items:
   - name: Overview
     href: index.md
-  - name: Configure Windows firewall
-    href: best-practices-configuring.md
-  - name: Configure Hyper-V firewall
+  - name: Configure and manage Windows Firewall
+    items: 
+    - name: Configure Windows firewall
+      href: best-practices-configuring.md
+    - name: Configure Windows Firewall rules with group policy
+      href: configure-rules-with-gpo.md
+    - name: Configure the Windows Firewall log
+      href: configure-the-windows-firewall-log.md
+    - name: Manage Windows Firewall with PowerShell
+      href: configure-with-powershell.md
+    - name: Configure firewall rules with Microsoft Intune
+      href: create-windows-firewall-rules-in-intune.md
+  - name: Hyper-V firewall
     href: hyper-v-firewall.md
-  - name: Configure the Windows Firewall log
-    href: configure-the-windows-firewall-log.md
   - name: Secure connections with IPsec
     href: securing-end-to-end-ipsec-connections-by-using-ikev2.md
-  - name: Configure Windows Firewall with PowerShell
-    href: windows-firewall-with-advanced-security-administration-with-windows-powershell.md
   - name: Isolate Microsoft Store apps on your network
     href: isolating-apps-on-your-network.md
-  - name: Configure Windows Firewall rules
-    href: configure-rules.md
-  - name: Create firewall rules with Microsoft Intune
-    href: create-windows-firewall-rules-in-intune.md
   - name: Troubleshoot
     items: 
       - name: Troubleshoot UWP app connectivity issues in Windows Firewall

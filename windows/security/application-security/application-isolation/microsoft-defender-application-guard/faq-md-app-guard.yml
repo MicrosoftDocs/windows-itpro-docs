@@ -121,7 +121,7 @@ sections:
         answer: |
           This issue is a known one. To mitigate this issue, you need to create two firewall rules. For information about creating a firewall rule by using Group Policy, see the following resources:
 
-          - [Create an inbound icmp rule](../../../operating-system-security/network-security/windows-firewall/create-an-inbound-icmp-rule.md)
+          - [Create an inbound icmp rule](../../../operating-system-security/network-security/windows-firewall/configure-rules.md)
           - [Open Group Policy management console for Microsoft Defender Firewall](../../../operating-system-security/network-security/windows-firewall/open-the-group-policy-management-console-to-windows-firewall-with-advanced-security.md)
 
           ### First rule (DHCP Server)
