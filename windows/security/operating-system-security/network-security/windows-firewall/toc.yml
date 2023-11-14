@@ -15,8 +15,6 @@ items:
       href: configure-the-windows-firewall-log.md
   - name: Hyper-V firewall
     href: hyper-v-firewall.md
-  - name: Secure connections with IPsec
-    href: securing-end-to-end-ipsec-connections-by-using-ikev2.md
   - name: Isolate Microsoft Store apps on your network
     href: isolating-apps-on-your-network.md
   - name: Troubleshoot
