@@ -1,7 +1,7 @@
 ---
 author: paolomatarazzo
 ms.author: paoloma
-ms.date: 09/18/2023
+ms.date: 11/02/2023
 ms.topic: include
 ---
 
@@ -30,7 +30,7 @@ ms.topic: include
 |**[Enhanced phishing protection with SmartScreen](/windows/security/operating-system-security/virus-and-threat-protection/microsoft-defender-smartscreen/enhanced-phishing-protection)**|Yes|Yes|Yes|Yes|Yes|
 |**[Exploit protection](/microsoft-365/security/defender-endpoint/exploit-protection)**|Yes|Yes|Yes|Yes|Yes|
 |**[Federal Information Processing Standard (FIPS) 140 validation](/windows/security/security-foundations/certification/fips-140-validation)**|Yes|Yes|Yes|Yes|Yes|
-|**[Federated sign-in](/education/windows/federated-sign-in)**|❌|Yes|Yes|❌|❌|
+|**[Federated sign-in](/education/windows/federated-sign-in)**|❌|❌|❌|Yes|Yes|
 |**[FIDO2 security key](/azure/active-directory/authentication/howto-authentication-passwordless-security-key)**|Yes|Yes|Yes|Yes|Yes|
 |**[Hardware-enforced stack protection](https://techcommunity.microsoft.com/t5/windows-os-platform-blog/understanding-hardware-enforced-stack-protection/ba-p/1247815)**|Yes|Yes|Yes|Yes|Yes|
 |**[Hypervisor-protected Code Integrity (HVCI)](/windows/security/hardware-security/enable-virtualization-based-protection-of-code-integrity)**|Yes|Yes|Yes|Yes|Yes|

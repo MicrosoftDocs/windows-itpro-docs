@@ -4,7 +4,7 @@ description: View the XML file containing the device description framework (DDF)
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 10/03/2023
+ms.date: 11/06/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -883,11 +883,11 @@ If you disable or do not configure this policy setting, the PIN recovery secret 
             <MSFT:AllowedValues ValueType="ENUM">
               <MSFT:Enum>
                 <MSFT:Value>false</MSFT:Value>
-                <MSFT:ValueDescription>Disabled</MSFT:ValueDescription>
+                <MSFT:ValueDescription>Post Logon Provisioning Enabled</MSFT:ValueDescription>
               </MSFT:Enum>
               <MSFT:Enum>
                 <MSFT:Value>true</MSFT:Value>
-                <MSFT:ValueDescription>Enabled</MSFT:ValueDescription>
+                <MSFT:ValueDescription>Post Logon Provisioning Disabled</MSFT:ValueDescription>
               </MSFT:Enum>
             </MSFT:AllowedValues>
           </DFProperties>

@@ -19,7 +19,7 @@ The enrollment into Intune is triggered by a group policy created on your local 
 - The Active Directory joined device must be running a [supported version of Windows](/windows/release-health/supported-versions-windows-client).
 - The enterprise has configured a Mobile Device Management (MDM) service.
 - The on-premises Active Directory must be [integrated with Microsoft Entra ID (via Microsoft Entra Connect)](/azure/architecture/reference-architectures/identity/azure-ad).
-- Service connection point (SCP) configuration. For more information see [configuring the SCP using Microsoft Entra Connect](/azure/active-directory/devices/how-to-hybrid-join). For environments not publishing SCP data to AD, see [Microsoft Entra hybrid join targeted deployment](/azure/active-directory/devices/hybrid-join-control#targeted-deployment-of-microsoft-entra-hybrid-join-on-windows-current-devices).
+- Service connection point (SCP) configuration. For more information, see [configuring the SCP using Microsoft Entra Connect](/azure/active-directory/devices/how-to-hybrid-join). For environments not publishing SCP data to AD, see [Microsoft Entra hybrid join targeted deployment](/azure/active-directory/devices/hybrid-join-control#targeted-deployment-of-microsoft-entra-hybrid-join-on-windows-current-devices).
 - The device shouldn't already be enrolled in Intune using the classic agents (devices managed using agents fail enrollment with `error 0x80180026`).
 - The minimum Windows Server version requirement is based on the Microsoft Entra hybrid join requirement. For more information, see [How to plan your Microsoft Entra hybrid join implementation](/azure/active-directory/devices/hybrid-azuread-join-plan).
 
@@ -36,7 +36,7 @@ The autoenrollment relies on the presence of an MDM service and the Microsoft En
 > [!NOTE]
 > In Windows 10, version 1709, the enrollment protocol was updated to check whether the device is domain-joined. For details, see [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2](/openspecs/windows_protocols/ms-mde2/4d7eadd5-3951-4f1c-8159-c39e07cbe692). For examples, see section 4.3.1 RequestSecurityToken of the MS-MDE2 protocol documentation.
 
-When the autoenrollment Group Policy is enabled, a task is created in the background that initiates the MDM enrollment. The task uses the existing MDM service configuration from the Microsoft Entra information of the user. If multi-factor authentication is required, the user gets prompted to complete the authentication. Once the enrollment is configured, the user can check the status in the Settings page.
+When the autoenrollment Group Policy is enabled, a task is created in the background that initiates the MDM enrollment. The task uses the existing MDM service configuration from the Microsoft Entra information of the user. If multifactor authentication is required, the user gets prompted to complete the authentication. Once the enrollment is configured, the user can check the status in the Settings page.
 
 - Starting in Windows 10, version 1709, when the same policy is configured in Group Policy and MDM, Group Policy policy takes precedence over MDM.
 - Starting in Windows 10, version 1803, a new setting allows you to change precedence to MDM. For more information, see [Windows Group Policy vs. Intune MDM Policy who wins?](/archive/blogs/cbernier/windows-10-group-policy-vs-intune-mdm-policy-who-wins).
@@ -52,20 +52,13 @@ To configure autoenrollment using a group policy, use the following steps:
 1. Link the GPO.
 1. Filter using Security Groups.
 
-If you don't see the policy, it may be because you don't have the ADMX for Windows 10, version 1803 or later installed. To fix the issue, use the following procedures. The latest MDM.admx is backwards compatible.
+If you don't see the policy, get the latest ADMX for your Windows version. To fix the issue, use the following procedures. The latest MDM.admx is backwards compatible.
 
 1. Download the administrative templates for the desired version:
 
-   - [Administrative Templates (.admx) for Windows 10 April 2018 Update (1803)](https://www.microsoft.com/download/details.aspx?id=56880)
-   - [Administrative Templates (.admx) for Windows 10 October 2018 Update (1809)](https://www.microsoft.com/download/details.aspx?id=57576)
-   - [Administrative Templates (.admx) for Windows 10 May 2019 Update (1903)](https://www.microsoft.com/download/details.aspx?id=58495)
-   - [Administrative Templates (.admx) for Windows 10 November 2019 Update (1909)](https://www.microsoft.com/download/confirmation.aspx?id=100591)
-   - [Administrative Templates (.admx) for Windows 10 May 2020 Update (2004)](https://www.microsoft.com/download/confirmation.aspx?id=101445)
-   - [Administrative Templates (.admx) for Windows 10 October 2020 Update (20H2)](https://www.microsoft.com/download/details.aspx?id=102157)
-   - [Administrative Templates (.admx) for Windows 10 May 2021 Update (21H1)](https://www.microsoft.com/download/details.aspx?id=103124)
-   - [Administrative Templates (.admx) for Windows 10 November 2021 Update (21H2)-v2.0](https://www.microsoft.com/download/details.aspx?id=104042)
-   - [Administrative Templates (.admx) for Windows 10 October 2022 Update (22H2)](https://www.microsoft.com/download/104677)
-   - [Administrative Templates (.admx) for Windows 11 2022 September Update (22H2)](https://www.microsoft.com/download/details.aspx?id=104593)
+   - [Windows 11, version 23H2](https://www.microsoft.com/download/details.aspx?id=105667)
+   - [Windows 11, version 22H2](https://www.microsoft.com/download/details.aspx?id=104593)
+   - [Windows 10, version 22H2](https://www.microsoft.com/download/details.aspx?id=104677)
 
 1. Install the package on the Domain Controller.
 
@@ -96,9 +89,9 @@ This procedure is only for illustration purposes to show how the new autoenrollm
    >
    > **Device Credential** is only supported for Microsoft Intune enrollment in scenarios with Co-management or [Azure Virtual Desktop multi-session host pools](/mem/intune/fundamentals/azure-virtual-desktop-multi-session) because the Intune subscription is user centric. User credentials are supported for [Azure Virtual Desktop personal host pools](/mem/intune/fundamentals/azure-virtual-desktop).
 
-When a group policy refresh occurs on the client, a task is created and scheduled to run every 5 minutes for the duration of one day. The task is called **Schedule created by enrollment client for automatically enrolling in MDM from Microsoft Entra ID**. To see the scheduled task, launch the [Task Scheduler app](#task-scheduler-app).
+When a group policy refresh occurs on the client, a task is created and scheduled to run every five minutes for one day. The task is called **Schedule created by enrollment client for automatically enrolling in MDM from Microsoft Entra ID**. To see the scheduled task, launch the [Task Scheduler app](#task-scheduler-app).
 
-If two-factor authentication is required, you are prompted to complete the process. Here's an example screenshot.
+If two-factor authentication is required, you're prompted to complete the process. Here's an example screenshot.
 
 :::image type="content" source="images/autoenrollment-2-factor-auth.png" alt-text="Screenshot of Two-factor authentication notification.":::
 
@@ -124,10 +117,10 @@ In **Task Scheduler Library**, open **Microsoft > Windows** , then select **Ente
 
 To see the result of the task, move the scroll bar to see the **Last Run Result**. You can see the logs in the **History** tab.
 
-The message **0x80180026** is a failure message (`MENROLL_E_DEVICE_MANAGEMENT_BLOCKED`). If the device enrollment is blocked, your IT admin might have enabled the **Disable MDM Enrollment** policy.
+The message **0x80180026** is a failure message (`MENROLL_E_DEVICE_MANAGEMENT_BLOCKED`), which can be caused by enabling the **Disable MDM Enrollment** policy.
 
 > [!NOTE]
-> The GPEdit console doesn't reflect the status of policies set by your IT admin on your device. It's only used by the user to set policies.
+> The GPEdit console doesn't reflect the status of policies set by your organization on your device. It's only used by the user to set policies.
 
 ## Related articles
 

@@ -4,9 +4,6 @@ metadata:
   description: Use these frequently asked questions (FAQ) to learn important details about Windows Hello for Business.
   author: paolomatarazzo
   ms.author: paoloma
-  ms.collection:
-    - highpri
-    - tier1
   ms.topic: faq
   ms.date: 08/03/2023
 
@@ -190,7 +187,7 @@ sections:
           Windows Hello for Business is two-factor authentication based on the observed authentication factors of: *something you have*, *something you know*, and *something that's part of you*. Windows Hello for Business incorporates two of these factors: something you have (the user's private key protected by the device's security module) and something you know (your PIN). With the proper hardware, you can enhance the user experience by introducing biometrics. By using biometrics, you can replace the "something you know" authentication factor with the "something that is part of you" factor, with the assurances that users can fall back to the "something you know factor".
 
           > [!NOTE]
-          > The Windows Hello for Business key meets Azure AD multifactor authentication (MFA) requirements and reduces the number of MFA prompts users will see when accessing resources. For more information, see [What is a Primary Refresh Token](/azure/active-directory/devices/concept-primary-refresh-token#when-does-a-prt-get-an-mfa-claim).
+          > The Windows Hello for Business key meets Microsoft Entra multifactor authentication (MFA) requirements and reduces the number of MFA prompts users will see when accessing resources. For more information, see [What is a Primary Refresh Token](/azure/active-directory/devices/concept-primary-refresh-token#when-does-a-prt-get-an-mfa-claim).
       - question: Which is a better or more secure for of authentication, key or certificate?
         answer: |
           Both types of authentication provide the same security; one is not more secure than the other.

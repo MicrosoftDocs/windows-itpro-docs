@@ -9,7 +9,7 @@ author: cmcatee-MSFT
 manager: scotv
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.custom: has-azure-ad-ps-ref
+ms.custom: has-azure-ad-ps-ref, azure-ad-ref-level-one-done
 ms.date: 05/24/2023
 ms.reviewer: 
 ---
@@ -36,7 +36,7 @@ You can use the PowerShell module to:
 - Perform bulk operations with .csv files - automates license management for customers with larger numbers of licenses
 
 >[!NOTE]
->Assigning apps to groups is not supported via this module. Instead, we recommend leveraging the Microsoft Entra ID Or MSOnline Modules to save members of a group to a CSV file and follow instructions below on how to use CSV file to manage assignments.
+>Assigning apps to groups is not supported via this module. Instead, we recommend leveraging the Microsoft Entra ID or [Microsoft Graph PowerShell](/powershell/microsoftgraph/overview) Modules to save members of a group to a CSV file and follow instructions below on how to use CSV file to manage assignments.
 
 ## Requirements
 To use the Microsoft Store for Business and Education PowerShell module, you'll need:
@@ -77,7 +77,7 @@ To authorize the PowerShell module, run this command. You'll need to sign-in wit
 
 Grant-MSStoreClientAppAccess
 ```
-You will be prompted to sign in with your work or school account and then to authorize the PowerShell Module to access your **Microsoft Store for Business and Education** account. Once the module has been imported into the current PowerShell session and authorized to call into your **Microsoft Store for Business and Education** account, Azure PowerShell cmdlets are loaded and ready to be used.
+You will be prompted to sign in with your work or school account and then to authorize the PowerShell Module to access your **Microsoft Store for Business and Education** account. Once the module has been imported into the current PowerShell session and authorized to call into your **Microsoft Store for Business and Education** account, Microsoft Graph PowerShell cmdlets are loaded and ready to be used.
 
 ## View items in Products and Services
 Service management should encounter no breaking changes as a result of the separation of Azure Service Management and **Microsoft Store for Business and Education PowerShell** preview.

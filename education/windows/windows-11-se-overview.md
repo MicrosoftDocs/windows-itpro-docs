@@ -2,18 +2,17 @@
 title: Windows 11 SE Overview
 description: Learn about Windows 11 SE, and the apps that are included with the operating system.
 ms.topic: overview
-ms.date: 08/03/2023
+ms.date: 11/02/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11 SE</a>
 ms.collection:
-  - highpri
   - education
   - tier1
 ---
 
 # Windows 11 SE Overview
 
-Windows 11 SE is an edition of Windows that's designed for education. Windows SE runs on web-first devices that use essential education apps, and it comes with Microsoft Office 365 preinstalled (subscription sold separately).
+Windows 11 SE is an edition of Windows designed for education. Windows SE runs on web-first devices that use essential education apps, and it comes with Microsoft Office 365 preinstalled (subscription sold separately).
 
 For education customers seeking cost-effective devices, Microsoft Windows 11 SE is a great choice. Windows 11 SE includes the following benefits:
 
@@ -35,8 +34,8 @@ The following table lists the different application types available in Windows o
 | --- | --- | :---: | ---|
 |Progressive Web Apps (PWAs) | PWAs are web-based applications that can run in a browser and that can be installed as standalone apps. |✅|PWAs are enabled by default in Windows 11 SE.|
 | Web apps | Web apps are web-based applications that run in a browser. | ✅ | Web apps are enabled by default in Windows 11 SE. |
-|`Win32`| `Win32` applications are Windows classic applications that may require installation |⛔| If users try to install or execute `Win32` applications that haven't been allowed to run, they fail.|
-|Universal Windows Platform (UWP)/Store apps |UWP apps are commonly obtained from the Microsoft Store and may require installation |⛔|If users try to install or execute UWP applications that haven't been allowed to run, they fail.|
+|`Win32`| `Win32` applications are Windows classic applications that might require installation |⛔| If users try to install or execute `Win32` applications that aren't allowed to run, they fail.|
+|Universal Windows Platform (UWP)/Store apps |UWP apps are commonly obtained from the Microsoft Store and might require installation |⛔|If users try to install or execute UWP applications that haven't been allowed to run, they fail.|
 
 > [!IMPORTANT]
 > If there are specific `Win32` or UWP applications that you want to allow, work with Microsoft to get them enabled. For more information, see [Add your own applications](#add-your-own-applications).
@@ -48,33 +47,33 @@ The following table lists all the applications included in Windows 11 SE and the
 | App name                     | App type | Pinned to Start? | Pinned to taskbar? |
 |:-----------------------------|:--------:|:----------------:|:------------------:|
 | Alarm & Clock                | UWP      |                  |                    |
-| Calculator                   | UWP      | ✅              |                    |
-| Camera                       | UWP      | ✅              |                    |
-| Microsoft Edge               | `Win32`    | ✅              | ✅                 |
-| Excel                        | `Win32`    | ✅              |                    |
+| Calculator                   | UWP      | ✅               |                    |
+| Camera                       | UWP      | ✅               |                    |
+| Microsoft Edge               | `Win32`  | ✅               | ✅                  |
+| Excel                        | `Win32`  | ✅               |                    |
 | Feedback Hub                 | UWP      |                  |                    |
-| File Explorer                | `Win32`    |                  | ✅                |
+| File Explorer                | `Win32`  |                  | ✅                 |
 | FlipGrid                     | PWA      |                  |                    |
 | Get Help                     | UWP      |                  |                    |
-| Media Player                 | UWP      | ✅              |                    |
+| Media Player                 | UWP      | ✅               |                    |
 | Maps                         | UWP      |                  |                    |
 | Minecraft: Education Edition | UWP      |                  |                    |
 | Movies & TV                  | UWP      |                  |                    |
 | News                         | UWP      |                  |                    |
-| Notepad                      | `Win32`    |                  |                    |
-| OneDrive                     | `Win32`    |                  |                    |
-| OneNote                      | `Win32`    | ✅              |                    |
-| Outlook                      | PWA      | ✅              |                    |
-| Paint                        | `Win32`    | ✅              |                    |
+| Notepad                      | `Win32`  |                  |                    |
+| OneDrive                     | `Win32`  |                  |                    |
+| OneNote                      | `Win32`  | ✅               |                    |
+| Outlook                      | PWA      | ✅               |                    |
+| Paint                        | `Win32`  | ✅               |                    |
 | Photos                       | UWP      |                  |                    |
-| PowerPoint                   | `Win32`    | ✅              |                    |
-| Settings                     | UWP      | ✅              |                    |
+| PowerPoint                   | `Win32`  | ✅               |                    |
+| Settings                     | UWP      | ✅               |                    |
 | Snip & Sketch                | UWP      |                  |                    |
 | Sticky Notes                 | UWP      |                  |                    |
-| Teams                        | `Win32`    | ✅              |                    |
+| Teams                        | `Win32`  | ✅               |                    |
 | To Do                        | UWP      |                  |                    |
-| Whiteboard                   | UWP      | ✅              |                    |
-| Word                         | `Win32`    | ✅              |                    |
+| Whiteboard                   | UWP      | ✅               |                    |
+| Word                         | `Win32`  | ✅               |                    |
 
 ## Available applications
 
