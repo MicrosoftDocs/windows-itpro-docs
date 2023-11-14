@@ -25,16 +25,10 @@ To help address your organizational network security challenges, Windows Firewal
 
 Windows offers different tools to view the status and configure Windows Firewall. All tools interact with the same underlying services, but provide different levels of control over those services.
 
-- The *Windows Security* app can be used to view the Windows Firewall status and access advanced tools to configure it. Select <kbd>START</kbd>, type `Windows Security`, and press <kbd>ENTER</kbd>. Once Windows Security is open, select the tab **Firewall & network protection**. Or use the following shortcut:
-    > [!div class="nextstepaction"]
-    > [Firewall & network protection][SEC-1]
-- The *Windows Defender Firewall* Control Panel applet (`firewall.cpl`) provides basic functionalities to configure Windows Firewall
-- The *Windows Defender Firewall with Advanced Security* MMC snap-in (`wf.msc`) provides advanced functionalities and is used in centralized management solutions to secure complex network traffic found in a typical organization environments
-
 :::row:::
   :::column span="2":::
     - The *Windows Security* app can be used to view the Windows Firewall status and access advanced tools to configure it. Select <kbd>START</kbd>, type `Windows Security`, and press <kbd>ENTER</kbd>. Once Windows Security is open, select the tab **Firewall & network protection**. Or use the following shortcut:
-    > [!div class="nextstepaction"]
+    &nbsp> [!div class="nextstepaction"]
     > [Firewall & network protection][SEC-1]
   :::column-end:::
   :::column span="2":::
