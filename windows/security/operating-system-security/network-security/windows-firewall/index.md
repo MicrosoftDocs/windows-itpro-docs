@@ -21,11 +21,28 @@ To help address your organizational network security challenges, Windows Firewal
 
 [!INCLUDE [windows-firewall](../../../../../includes/licensing/windows-firewall.md)]
 
-## Next steps
+## View and manage Windows Firewall
+
+You can use the Windows Sevurity app to view and manage Windows Firewall. Select <kbd>START</kbd>, type `windows security`, and press <kbd>ENTER</kbd>. Once Windows Security is open, select the tab **Firewall & network protection**. Or use the following shortcut:
+
+> [!div class="nextstepaction"]
+>
+> [Firewall & network protection][SEC-1]
 
 The *Windows Firewall with Advanced Security* MMC snap-in provides more functionality than the Windows Firewall Control Panel applet. Both interfaces interact with the same underlying services, but provide different levels of control over those services. While the Windows Firewall Control Panel applet can protect a single device in a home environment, it doesn't provide enough centralized management or security features to help secure more complex network traffic found in a typical business enterprise environment.
+
+## :::image type="icon" source="images/feedback.svg" border="false"::: Provide feedback
+
+To provide feedback for Windows Firewall, open [**Feedback Hub**][FHUB] (<kbd>WIN</kbd>+<kbd>F</kbd>) and use the category **Security and Privacy** > **Network protection**.
+
+## Next steps
 
 > [!div class="nextstepaction"]
 > Learn about the recommendations for configuring Windows Firewall:
 >
 > [Configure Windows Firewall >](best-practices-configuring.md)
+
+<!--links-->
+
+[SEC-1]: windowsdefender://network/
+[FHUB]: feedback-hub:?tabid=2&newFeedback=true
