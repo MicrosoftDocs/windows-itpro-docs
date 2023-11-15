@@ -4,7 +4,7 @@ description: Learn more about the System Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 08/30/2023
+ms.date: 11/06/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -118,7 +118,7 @@ AllowCommercialDataPipeline configures a Microsoft Entra joined device so that M
 To enable this behavior:
 
 1. Enable this policy setting
-2. Join a Microsoft Entra account to the device.
+1. Join a Microsoft Entra account to the device.
 
 Windows diagnostic data is collected when the Allow Telemetry policy setting is set to value 1 - Required or above. Configuring this setting doesn't change the Windows diagnostic data collection level set for the device.
 
@@ -198,10 +198,10 @@ This policy setting, in combination with the Allow Telemetry and Configure the C
 To enable this behavior:
 
 1. Enable this policy setting
-2. Join a Microsoft Entra account to the device.
+1. Join a Microsoft Entra account to the device.
 
-3. Set Allow Telemetry to value 1 - Required, or higher
-4. Set the Configure the Commercial ID setting for your Desktop Analytics workspace.
+1. Set Allow Telemetry to value 1 - Required, or higher
+1. Set the Configure the Commercial ID setting for your Desktop Analytics workspace.
 
 When these policies are configured, Windows diagnostic data collected from the device will be subject to Microsoft processor commitments.
 
@@ -762,10 +762,10 @@ This policy setting, in combination with the Allow Telemetry and Configure the C
 To enable this behavior:
 
 1. Enable this policy setting
-2. Join a Microsoft Entra account to the device.
+1. Join a Microsoft Entra account to the device.
 
-3. Set Allow Telemetry to value 1 - Required, or higher
-4. Set the Configure the Commercial ID setting for your Update Compliance workspace.
+1. Set Allow Telemetry to value 1 - Required, or higher
+1. Set the Configure the Commercial ID setting for your Update Compliance workspace.
 
 When these policies are configured, Windows diagnostic data collected from the device will be subject to Microsoft processor commitments.
 
@@ -889,9 +889,9 @@ This policy setting configures a Microsoft Entra joined device so that Microsoft
 To enable this behavior:
 
 1. Enable this policy setting
-2. Join a Microsoft Entra account to the device.
+1. Join a Microsoft Entra account to the device.
 
-3. Set Allow Telemetry to value 1 - Required, or higher.
+1. Set Allow Telemetry to value 1 - Required, or higher.
 
 When these policies are configured, Windows diagnostic data collected from the device will be subject to Microsoft processor commitments.
 
@@ -1999,10 +1999,10 @@ This policy setting, in combination with the "Allow Diagnostic Data" policy sett
 To enable the behavior described above, complete the following steps:
 
 1. Enable this policy setting
-2. Set the "Allow Diagnostic Data" policy to "Send optional diagnostic data".
+1. Set the "Allow Diagnostic Data" policy to "Send optional diagnostic data".
 
-3. Enable the "Limit Dump Collection" policy
-4. Enable the "Limit Diagnostic Log Collection" policy.
+1. Enable the "Limit Dump Collection" policy
+1. Enable the "Limit Diagnostic Log Collection" policy.
 
 When these policies are configured, Microsoft will collect only required diagnostic data and the events required by Desktop Analytics, which can be viewed at< https://go.microsoft.com/fwlink/?linkid=2116020>.
 

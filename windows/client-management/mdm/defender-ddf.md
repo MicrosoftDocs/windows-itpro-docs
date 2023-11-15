@@ -4,7 +4,7 @@ description: View the XML file containing the device description framework (DDF)
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 08/29/2023
+ms.date: 11/06/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -2098,11 +2098,50 @@ The following XML file contains the device description framework (DDF) for the D
           <MSFT:AllowedValues ValueType="ENUM">
             <MSFT:Enum>
               <MSFT:Value>0</MSFT:Value>
-              <MSFT:ValueDescription>Performance mode is enabled (default). A service restart is required after changing this value.</MSFT:ValueDescription>
+              <MSFT:ValueDescription>Performance mode is enabled (default).</MSFT:ValueDescription>
             </MSFT:Enum>
             <MSFT:Enum>
               <MSFT:Value>1</MSFT:Value>
-              <MSFT:ValueDescription>Performance mode is disabled. A service restart is required after changing this value.</MSFT:ValueDescription>
+              <MSFT:ValueDescription>Performance mode is disabled.</MSFT:ValueDescription>
+            </MSFT:Enum>
+          </MSFT:AllowedValues>
+        </DFProperties>
+      </Node>
+      <Node>
+        <NodeName>QuickScanIncludeExclusions</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Add />
+            <Delete />
+            <Get />
+            <Replace />
+          </AccessType>
+          <DefaultValue>0</DefaultValue>
+          <Description>This setting allows you to scan excluded files and directories during quick scans.</Description>
+          <DFFormat>
+            <int />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFType>
+            <MIME />
+          </DFType>
+          <MSFT:Applicability>
+            <MSFT:OsBuildVersion>10.0.14393</MSFT:OsBuildVersion>
+            <MSFT:CspVersion>1.3</MSFT:CspVersion>
+          </MSFT:Applicability>
+          <MSFT:AllowedValues ValueType="ENUM">
+            <MSFT:Enum>
+              <MSFT:Value>0</MSFT:Value>
+              <MSFT:ValueDescription>If you set this setting to 0 or do not configure it, exclusions are not scanned during quick scans.</MSFT:ValueDescription>
+            </MSFT:Enum>
+            <MSFT:Enum>
+              <MSFT:Value>1</MSFT:Value>
+              <MSFT:ValueDescription>If you set this setting to 1, all files and directories that are excluded from real-time protection using contextual exclusions are scanned during a quick scan. Exclusions that contain wildcards are not supported and are not scanned.</MSFT:ValueDescription>
             </MSFT:Enum>
           </MSFT:AllowedValues>
         </DFProperties>
@@ -2382,7 +2421,7 @@ The following XML file contains the device description framework (DDF) for the D
           <DefaultValue>60</DefaultValue>
           <Description>Define the retention period in days of how much time the evidence data will be kept on the client machine should any transfer to the remote locations would occur.</Description>
           <DFFormat>
-            <chr />
+            <int />
           </DFFormat>
           <Occurrence>
             <One />
@@ -2432,13 +2471,11 @@ The following XML file contains the device description framework (DDF) for the D
           <MSFT:AllowedValues ValueType="ENUM">
             <MSFT:Enum>
               <MSFT:Value>1</MSFT:Value>
-              <MSFT:ValueDescription>
-              </MSFT:ValueDescription>
+              <MSFT:ValueDescription>Device Control is enabled</MSFT:ValueDescription>
             </MSFT:Enum>
             <MSFT:Enum>
               <MSFT:Value>0</MSFT:Value>
-              <MSFT:ValueDescription>
-              </MSFT:ValueDescription>
+              <MSFT:ValueDescription>Device Control is disabled</MSFT:ValueDescription>
             </MSFT:Enum>
           </MSFT:AllowedValues>
         </DFProperties>
@@ -2648,6 +2685,35 @@ The following XML file contains the device description framework (DDF) for the D
               <MSFT:ValueDescription>QUIC parsing is enabled</MSFT:ValueDescription>
             </MSFT:Enum>
           </MSFT:AllowedValues>
+        </DFProperties>
+      </Node>
+      <Node>
+        <NodeName>NetworkProtectionReputationMode</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Add />
+            <Delete />
+            <Get />
+            <Replace />
+          </AccessType>
+          <DefaultValue>0</DefaultValue>
+          <Description>This sets the reputation mode for Network Protection.</Description>
+          <DFFormat>
+            <int />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFType>
+            <MIME />
+          </DFType>
+          <MSFT:Applicability>
+            <MSFT:OsBuildVersion>10.0.14393</MSFT:OsBuildVersion>
+            <MSFT:CspVersion>1.3</MSFT:CspVersion>
+          </MSFT:Applicability>
         </DFProperties>
       </Node>
       <Node>

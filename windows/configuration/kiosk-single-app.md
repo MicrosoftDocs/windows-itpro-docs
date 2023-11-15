@@ -2,16 +2,11 @@
 title: Set up a single-app kiosk on Windows
 description: A single-use device is easy to set up in Windows Pro, Enterprise, and Education editions.
 ms.reviewer: sybruckm
-manager: aaroncz
 ms.author: lizlong
-ms.prod: windows-client
 author: lizgt2000
-ms.localizationpriority: medium
 ms.topic: article
 ms.collection:
- - highpri
  - tier1
-ms.technology: itpro-configure
 ms.date: 07/12/2023
 ---
 <!--8107263-->

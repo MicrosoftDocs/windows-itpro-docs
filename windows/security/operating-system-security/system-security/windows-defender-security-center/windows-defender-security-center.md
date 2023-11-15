@@ -3,9 +3,6 @@ title: Windows Security
 description: Windows Security brings together common Windows security features into one place.
 ms.date: 08/11/2023
 ms.topic: article
-ms.collection:
-  - highpri
-  - tier2
 ---
 
 # Windows Security

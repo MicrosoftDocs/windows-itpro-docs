@@ -4,7 +4,6 @@ description: Learn how to view and troubleshoot the Trusted Platform Module (TPM
 ms.topic: conceptual
 ms.date: 02/02/2023
 ms.collection:
-- highpri
 - tier1
 ---
 
