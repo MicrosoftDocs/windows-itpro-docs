@@ -4,6 +4,7 @@ description: Learn how to manage Windows Firewall from the command line. This gu
 ms.topic: conceptual
 ms.date: 11/15/2023
 zone_pivot_groups: windows-cmds
+zone_pivot_group_filename: windows-zone-pivot-groups.json
 ---
 
 # Manage Windows Firewall with the command line
