@@ -16,9 +16,11 @@ Windows offers different tools to view the status and configure Windows Firewall
 :::row:::
   :::column span="3":::
     ### Windows Security
-    The *Windows Security* app can be used to view the Windows Firewall status and access advanced tools to configure it. Select <kbd>START</kbd>, type `Windows Security`, and press <kbd>ENTER</kbd>. Once Windows Security is open, select the tab **Firewall & network protection**. Or use the shortcut [Firewall & network protection][SEC-1]
-    > [!div class=nextstepaction "Configure Windows Firewall >"](best-practices-configuring.md)
-    > [!div class="nextstepaction"] [Configure Windows Firewall >](best-practices-configuring.md)
+    The *Windows Security* app can be used to view the Windows Firewall status and access advanced tools to configure it. Select <kbd>START</kbd>, type `Windows Security`, and press <kbd>ENTER</kbd>. Once Windows Security is open, select the tab **Firewall & network protection**. Or use the following shortcut: [Firewall & network protection][SEC-1]
+
+    > [!div class="nextstepaction"]
+    > [Firewall & network protection][SEC-1]
+
   :::column-end:::
   :::column span="1":::
     :::image type="content" source="images/windows-security.png" alt-text="Screenshot showing the QR code to scan from your phone or tablet." lightbox="images/windows-security.png" border="false":::
