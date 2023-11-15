@@ -71,11 +71,11 @@ The *Overview* panel of the *Windows Firewall with Advanced Security* console di
 
 Used for networks where there's a system of account authentication against an Active Directory domain controller
 
-### :::image type="icon" source="images/domain-network.svg" border="false"::: Private network
+### :::image type="icon" source="images/private-network.svg" border="false"::: Private network
 
 Designed for and best used in private networks such as a home network
 
-### :::image type="icon" source="images/domain-network.svg" border="false"::: Public network
+### :::image type="icon" source="images/public-network.svg" border="false"::: Public network
 
 Designed with higher security in mind for public networks, like Wi-Fi hotspots, coffee shops, airports, hotels, or stores
 
