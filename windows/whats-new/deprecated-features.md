@@ -1,7 +1,7 @@
 ---
 title: Deprecated features in the Windows client
 description: Review the list of features that Microsoft is no longer actively developing in Windows 10 and Windows 11.
-ms.date: 11/07/2023
+ms.date: 11/15/2023
 ms.prod: windows-client
 ms.technology: itpro-fundamentals
 ms.localizationpriority: medium
@@ -35,7 +35,8 @@ The features in this article are no longer being actively developed, and might b
 > If you have feedback about the proposed replacement of any of these features, you can use the [Feedback Hub app](https://support.microsoft.com/windows/send-feedback-to-microsoft-with-the-feedback-hub-app-f59187f8-8739-22d6-ba93-f66612949332).
 
 |Feature    |  Details and mitigation  | Deprecation announced |
-| --- | --- | --- |
+| ----------- | --------------------- | ---- |
+| Steps Recorder (psr.exe) <!--8412957-->| Steps Recorder is no longer being updated and will be removed in a future release of Windows. For screen recording, we recommend the Snipping Tool, Xbox Game Bar, or Microsoft Clipchamp. | November 2023 |
 | Tips <!--8412913--> | The Tips app is deprecated and will be removed in a future release of Windows. Content in the app will continue to be updated with information about new Windows features until the app is removed. | November 2023 |
 | Computer Browser <!--8454292-->| The Computer Browser driver and service are deprecated. The browser (browser protocol and service) is a dated and insecure device location protocol. This protocol, service, and driver were first disabled by default in Windows 10 with the removal of the SMB1 service. For more information on Computer Browser, see [MS-BRWS Common Internet File System](/openspecs/windows_protocols/ms-brws/3cfbad92-09b3-4abc-808f-c6f6347d5677). | November 2023 | 
 | Webclient (WebDAV) Service <!--8454308--> | The Webclient (WebDAV) service is deprecated. The Webclient service isn't started by default in Windows. For more information on WebDAV, see [WebDAV - Win32 apps](/windows/win32/webdav/webdav-portal). | November 2023 |
