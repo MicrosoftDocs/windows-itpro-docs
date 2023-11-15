@@ -172,8 +172,7 @@ Typically, **Primary Group** field for new computer accounts has the following v
 
 -   **Old UAC Value** [Type = UnicodeString]: is always “0x0” for new accounts.
 
--   **New UAC Value** [Type = UnicodeString]: specifies flags that control password, lockout, disable/enable, script, and other behavior for the user or computer account. This parameter contains the value of the SAM implementation of account flags (definition differs from userAccountControl in AD).
-For a list of account flags you may see here, please refer to [MS-SAMR]: USER_ACCOUNT Codes | Microsoft Learn
+-   **New UAC Value** [Type = UnicodeString]: specifies flags that control password, lockout, disable/enable, script, and other behavior for the user or computer account. This parameter contains the value of the SAM implementation of account flags (definition differs from userAccountControl in AD). For a list of account flags you may see here, refer to [[MS-SAMR]: USER_ACCOUNT Codes](/openspecs/windows_protocols/ms-samr/b10cfda1-f24f-441b-8f43-80cb93e786ec).
 
 - **User Parameters** \[Type = UnicodeString\]: if you change any setting using Active Directory Users and Computers management console in Dial-in tab of computer’s account properties, then you will see `<value changed, but not displayed>` in this field in “[4742](event-4742.md)(S): A computer account was changed.” This parameter might not be captured in the event, and in that case appears as `-`.
 
