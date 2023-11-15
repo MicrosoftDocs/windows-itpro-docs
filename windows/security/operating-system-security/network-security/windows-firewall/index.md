@@ -36,5 +36,4 @@ To provide feedback for Windows Firewall, open [**Feedback Hub**][FHUB] (<kbd>WI
 
 <!--links-->
 
-[SEC-1]: windowsdefender://network/
 [FHUB]: feedback-hub:?tabid=2&newFeedback=true

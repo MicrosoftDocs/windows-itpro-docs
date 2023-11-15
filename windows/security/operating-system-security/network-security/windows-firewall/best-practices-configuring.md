@@ -15,7 +15,10 @@ Windows offers different tools to view the status and configure Windows Firewall
 
 :::row:::
   :::column span="3":::
-    - The *Windows Security* app can be used to view the Windows Firewall status and access advanced tools to configure it. Select <kbd>START</kbd>, type `Windows Security`, and press <kbd>ENTER</kbd>. Once Windows Security is open, select the tab **Firewall & network protection**. Or use the shortcut [Firewall & network protection][SEC-1]
+    ### Windows Security
+    The *Windows Security* app can be used to view the Windows Firewall status and access advanced tools to configure it. Select <kbd>START</kbd>, type `Windows Security`, and press <kbd>ENTER</kbd>. Once Windows Security is open, select the tab **Firewall & network protection**. Or use the shortcut [Firewall & network protection][SEC-1]
+    > [!div class=nextstepaction "Configure Windows Firewall >"](best-practices-configuring.md)
+    > [!div class="nextstepaction"] [Configure Windows Firewall >](best-practices-configuring.md)
   :::column-end:::
   :::column span="1":::
     :::image type="content" source="images/windows-security.png" alt-text="Screenshot showing the QR code to scan from your phone or tablet." lightbox="images/windows-security.png" border="false":::
@@ -23,7 +26,8 @@ Windows offers different tools to view the status and configure Windows Firewall
 :::row-end:::
 :::row:::
   :::column span="3":::
-    - The *Windows Defender Firewall* Control Panel applet (`firewall.cpl`) provides basic functionalities to configure Windows Firewall
+    ### Control Panel
+    The *Windows Defender Firewall* Control Panel applet (`firewall.cpl`) provides basic functionalities to configure Windows Firewall.
   :::column-end:::
   :::column span="1":::
     :::image type="content" source="images/control-panel.png" alt-text="Screenshot showing the QR code to scan from your phone or tablet." lightbox="images/control-panel.png" border="false":::
@@ -31,7 +35,8 @@ Windows offers different tools to view the status and configure Windows Firewall
 :::row-end:::
 :::row:::
   :::column span="3":::
-    - The *Windows Defender Firewall with Advanced Security* MMC snap-in (`wf.msc`) provides advanced functionalities and is used in centralized management solutions to secure complex network traffic found in a typical organization environments
+    ### Microsoft Management Console (MMC)
+    The *Windows Defender Firewall with Advanced Security* MMC snap-in (`wf.msc`) provides advanced functionalities and is used in centralized management solutions to secure complex network traffic found in a typical organization environments.
   :::column-end:::
   :::column span="1":::
     :::image type="content" source="images/mmc-advanced-security.png" alt-text="Screenshot showing the QR code to scan from your phone or tablet." lightbox="images/mmc-advanced-security.png" border="false":::
@@ -237,3 +242,7 @@ You can do this through the Intune admin center under Endpoint security > Firewa
 OR
 
 - **Create local firewall rules with PowerShell**: You can use PowerShell to configure by adding a Firewall rule using [New-NetFirewallRule](/powershell/module/netsecurity/new-netfirewallrule) and specify the `-PolicyAppId` tag. You can specify one tag at a time while creating firewall rules. Multiple User Ids are supported.
+
+<!--links-->
+
+[SEC-1]: windowsdefender://network/
