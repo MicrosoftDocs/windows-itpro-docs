@@ -3,7 +3,6 @@ title: Microsoft recommended driver block rules
 description: View a list of recommended block rules to block vulnerable third-party drivers discovered by Microsoft and the security research community.
 ms.localizationpriority: medium
 ms.collection:
-- highpri
 - tier3
 - must-keep
 ms.date: 06/06/2023

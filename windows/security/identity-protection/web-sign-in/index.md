@@ -6,7 +6,6 @@ ms.topic: how-to
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
 ms.collection:
-  - highpri
   - tier1
 ---
 
@@ -27,6 +26,9 @@ To use web sign-in, the clients must meet the following prerequisites:
 - Windows 11, version 22H2 with [5030310][KB-1], or later
 - Must be [Microsoft Entra joined](/entra/identity/devices/concept-directory-join)
 - Must have Internet connectivity, as the authentication is done over the Internet
+
+> [!IMPORTANT]
+> Web sign-in is not supported for Microsoft Entra hybrid joined or domain joined devices.
 
 [!INCLUDE [federated-sign-in](../../../../includes/licensing/web-sign-in.md)]
 

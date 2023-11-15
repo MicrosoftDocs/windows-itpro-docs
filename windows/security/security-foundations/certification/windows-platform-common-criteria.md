@@ -1,17 +1,13 @@
 ---
 title: Common Criteria Certifications
 description: This topic details how Microsoft supports the Common Criteria certification program.
-ms.prod: windows-client
 ms.author: sushmanemali
 author: s4sush
-manager: aaroncz
 ms.topic: reference
-ms.localizationpriority: medium
 ms.date: 11/4/2022
 ms.reviewer: paoloma
-ms.technology: itpro-security
 ms.collection:
-    - tier3
+- tier3
 ---
 
 # Common Criteria certifications

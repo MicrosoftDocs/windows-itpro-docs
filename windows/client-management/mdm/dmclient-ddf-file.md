@@ -4,7 +4,7 @@ description: View the XML file containing the device description framework (DDF)
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 09/27/2023
+ms.date: 11/06/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -341,11 +341,11 @@ The following XML file contains the device description framework (DDF) for the D
               <MSFT:AllowedValues ValueType="ENUM">
                 <MSFT:Enum>
                   <MSFT:Value>false</MSFT:Value>
-                  <MSFT:ValueDescription>The user is not finished provisioning</MSFT:ValueDescription>
+                  <MSFT:ValueDescription>The user has not finished provisioning</MSFT:ValueDescription>
                 </MSFT:Enum>
                 <MSFT:Enum>
                   <MSFT:Value>true</MSFT:Value>
-                  <MSFT:ValueDescription>The user has finished provisoining.</MSFT:ValueDescription>
+                  <MSFT:ValueDescription>The user has finished provisioning.</MSFT:ValueDescription>
                 </MSFT:Enum>
               </MSFT:AllowedValues>
             </DFProperties>
@@ -381,7 +381,7 @@ The following XML file contains the device description framework (DDF) for the D
                 </MSFT:Enum>
                 <MSFT:Enum>
                   <MSFT:Value>2</MSFT:Value>
-                  <MSFT:ValueDescription>Provisoining is in progress.</MSFT:ValueDescription>
+                  <MSFT:ValueDescription>Provisioning is in progress.</MSFT:ValueDescription>
                 </MSFT:Enum>
               </MSFT:AllowedValues>
             </DFProperties>
@@ -1264,7 +1264,7 @@ The following XML file contains the device description framework (DDF) for the D
               </MSFT:Enum>
               <MSFT:Enum>
                 <MSFT:Value>2</MSFT:Value>
-                <MSFT:ValueDescription>Reserved for future. AlwaysSendAadUserTokenCheckin: always send AAD user token during checkin as a separate header section(not as Bearer toekn).</MSFT:ValueDescription>
+                <MSFT:ValueDescription>Reserved for future. AlwaysSendAadUserTokenCheckin: always send AAD user token during checkin as a separate header section(not as Bearer token).</MSFT:ValueDescription>
               </MSFT:Enum>
               <MSFT:Enum>
                 <MSFT:Value>4</MSFT:Value>
@@ -2020,7 +2020,7 @@ The following XML file contains the device description framework (DDF) for the D
                 </MSFT:Enum>
                 <MSFT:Enum>
                   <MSFT:Value>true</MSFT:Value>
-                  <MSFT:ValueDescription>The device has finished provisoining.</MSFT:ValueDescription>
+                  <MSFT:ValueDescription>The device has finished provisioning.</MSFT:ValueDescription>
                 </MSFT:Enum>
               </MSFT:AllowedValues>
             </DFProperties>
@@ -2056,7 +2056,7 @@ The following XML file contains the device description framework (DDF) for the D
                 </MSFT:Enum>
                 <MSFT:Enum>
                   <MSFT:Value>2</MSFT:Value>
-                  <MSFT:ValueDescription>Provisoining is in progress.</MSFT:ValueDescription>
+                  <MSFT:ValueDescription>Provisioning is in progress.</MSFT:ValueDescription>
                 </MSFT:Enum>
               </MSFT:AllowedValues>
             </DFProperties>
@@ -2679,7 +2679,7 @@ The following XML file contains the device description framework (DDF) for the D
                 <Get />
                 <Replace />
               </AccessType>
-              <Description>Endpoint Discovery is the process where a specific URL (the "discovery endpoint") is accessed, which returns a directory of endpoints for using the system including enrollment. On Get, if the endpoint is not set, client will return an rmpty string with S_OK. </Description>
+              <Description>Endpoint Discovery is the process where a specific URL (the "discovery endpoint") is accessed, which returns a directory of endpoints for using the system including enrollment. On Get, if the endpoint is not set, client will return an empty string with S_OK. </Description>
               <DFFormat>
                 <chr />
               </DFFormat>
