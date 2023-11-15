@@ -194,8 +194,7 @@ Typical **Primary Group** values for user accounts:
 
 -   **Old UAC Value** [Type = UnicodeString]: specifies flags that control password, lockout, disable/enable, script, and other behavior for the user or computer account. This parameter contains the previous value of the SAM implementation of account flags (definition differs from userAccountControl in AD).
 
--   **New UAC Value** [Type = UnicodeString]: specifies flags that control password, lockout, disable/enable, script, and other behavior for the user or computer account. This parameter contains the value of the SAM implementation of account flags (definition differs from userAccountControl in AD). If the value was changed, you will see the new value here.
-For a list of account flags you may see here, please refer to [MS-SAMR]: USER_ACCOUNT Codes | Microsoft Learn
+-   **New UAC Value** [Type = UnicodeString]: specifies flags that control password, lockout, disable/enable, script, and other behavior for the user or computer account. This parameter contains the value of the SAM implementation of account flags (definition differs from userAccountControl in AD). If the value was changed, you will see the new value here. For a list of account flags you may see here, refer to [[MS-SAMR]: USER_ACCOUNT Codes](/openspecs/windows_protocols/ms-samr/b10cfda1-f24f-441b-8f43-80cb93e786ec).
 
 -   **User Account Control** \[Type = UnicodeString\]**:** shows the list of changes in **userAccountControl** attribute. You will see a line of text for each change. See possible values in here: [User’s or Computer’s account UAC flags](/troubleshoot/windows-server/identity/useraccountcontrol-manipulate-account-properties). In the “User Account Control field text” column, you can see the text that will be displayed in the **User Account Control** field in 4738 event.
 
