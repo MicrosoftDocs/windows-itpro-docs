@@ -4,6 +4,8 @@ description: Learn how to manage Copilot in Windows for commercial environments 
 ms.topic: article
 ms.technology: itpro-windows-copilot
 ms.date: 11/06/2023
+ms.author: mstewart
+author: mestew 
 appliesto:
 - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11, version 22H2 or later</a>
 ---
