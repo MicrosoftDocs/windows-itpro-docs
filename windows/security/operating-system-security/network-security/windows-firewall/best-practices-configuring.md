@@ -14,21 +14,31 @@ Windows Firewall provides host-based, two-way network traffic filtering and bloc
 Windows offers different tools to view the status and configure Windows Firewall. All tools interact with the same underlying services, but provide different levels of control over those services.
 
 :::row:::
-  :::column span="3":::
+  :::column span="4":::
     ### Windows Security
-    The *Windows Security* app can be used to view the Windows Firewall status and access advanced tools to configure it. Select <kbd>START</kbd>, type `Windows Security`, and press <kbd>ENTER</kbd>. Once Windows Security is open, select the tab **Firewall & network protection**. Or use the following shortcut: [Firewall & network protection][SEC-1]
-
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column span="3":::
+    The *Windows Security* app can be used to view the Windows Firewall status and access advanced tools to configure it. Select <kbd>START</kbd>, type `Windows Security`, and press <kbd>ENTER</kbd>. Once Windows Security is open, select the tab **Firewall & network protection**. Or use the following shortcut:
     > [!div class="nextstepaction"]
     > [Firewall & network protection][SEC-1]
 
   :::column-end:::
   :::column span="1":::
     :::image type="content" source="images/windows-security.png" alt-text="Screenshot showing the QR code to scan from your phone or tablet." lightbox="images/windows-security.png" border="false":::
+
+    > [!div class="nextstepaction"]
+    > [Firewall & network protection][SEC-1]
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column span="4":::
+    ### Control Panel
   :::column-end:::
 :::row-end:::
 :::row:::
   :::column span="3":::
-    ### Control Panel
     The *Windows Defender Firewall* Control Panel applet (`firewall.cpl`) provides basic functionalities to configure Windows Firewall.
   :::column-end:::
   :::column span="1":::
@@ -36,8 +46,12 @@ Windows offers different tools to view the status and configure Windows Firewall
   :::column-end:::
 :::row-end:::
 :::row:::
-  :::column span="3":::
+  :::column span="4":::
     ### Microsoft Management Console (MMC)
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column span="3":::
     The *Windows Defender Firewall with Advanced Security* MMC snap-in (`wf.msc`) provides advanced functionalities and is used in centralized management solutions to secure complex network traffic found in a typical organization environments.
   :::column-end:::
   :::column span="1":::
