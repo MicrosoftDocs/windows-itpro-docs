@@ -1,7 +1,7 @@
 ---
 title: Recommendations for configuring Windows Firewall
 description: Learn about best practices for configuring Windows Firewall.
-ms.date: 11/10/2023
+ms.date: 11/15/2023
 ms.topic: best-practice
 ---
 
@@ -69,15 +69,15 @@ The *Overview* panel of the *Windows Firewall with Advanced Security* console di
 
 ### :::image type="icon" source="images/domain-network.svg" border="false"::: Domain network
 
-Used for networks where there's a system of account authentication against an Active Directory domain controller
+The *domain network* profile is automatically applied to a device that is joined to an Active Directory domain, when it detects the availability of a domain controller. This network profile cannot be set manually.
 
 ### :::image type="icon" source="images/private-network.svg" border="false"::: Private network
 
-Designed for and best used in private networks such as a home network
+The *private network* profile is designed for private networks such as a home network. It can be set on a network interface by an administrator.
 
 ### :::image type="icon" source="images/public-network.svg" border="false"::: Public network
 
-Designed with higher security in mind for public networks, like Wi-Fi hotspots, coffee shops, airports, hotels, or stores
+The *public network* profile is designed with higher security in mind for public networks, like Wi-Fi hotspots, coffee shops, airports, hotels, etc. It's the default profile for unidentified networks.
 
 To view detailed settings for each profile, right-click the top-level **Windows Defender Firewall with Advanced Security** node in the left pane and then select **Properties**.
 

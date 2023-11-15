@@ -13,11 +13,11 @@ Windows Firewall also works with Network Awareness so that it can apply security
 
 ## Benefits
 
-To help address your organizational network security challenges, Windows Firewall offers the following benefits:
+Windows Firewall offers several benefits to address your organization's network security challenges:
 
-- **Reduces the risk of network security threats.** Windows Firewall reduces the attack surface of a device, providing an extra layer to the defense-in-depth model. Reducing the attack surface of a device increases manageability and decreases the likelihood of a successful attack.
-- **Safeguards sensitive data and intellectual property.** With its integration with IPsec, Windows Firewall provides a simple way to enforce authenticated, end-to-end network communications. It provides scalable, tiered access to trusted network resources, helping to enforce integrity of the data, and optionally helping to protect the confidentiality of the data.
-- **Extends the value of existing investments.** Because Windows Firewall is a host-based firewall that is included with the operating system, there's no other hardware or software required. Windows Firewall is also designed to complement existing non-Microsoft network security solutions through a documented application programming interface (API).
+- Reduced risk of network security threats: By reducing the attack surface of a device, Windows Firewall provides an additional layer of defense to the defense-in-depth model. This increases manageability and decreases the likelihood of a successful attack
+- Protection of sensitive data and intellectual property: Windows Firewall integrates with IPsec to provide a simple way to enforce authenticated, end-to-end network communications. This allows for scalable, tiered access to trusted network resources, helping to enforce data integrity and, if necessary, protect data confidentiality
+- Extended value of existing investments: Windows Firewall is a host-based firewall included with the operating system, so no additional hardware or software is required. It's also designed to complement existing non-Microsoft network security solutions through a documented API
 
 :::image type="content" source="images/windows-security.png" alt-text="Screenshot showing the Windows Security app." border="false":::
 
