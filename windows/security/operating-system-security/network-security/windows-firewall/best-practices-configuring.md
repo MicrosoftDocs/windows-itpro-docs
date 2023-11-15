@@ -22,14 +22,12 @@ Windows offers different tools to view the status and configure Windows Firewall
   :::column span="3":::
     The *Windows Security* app can be used to view the Windows Firewall status and access advanced tools to configure it. Select <kbd>START</kbd>, type `Windows Security`, and press <kbd>ENTER</kbd>. Once Windows Security is open, select the tab **Firewall & network protection**. Or use the following shortcut:
     > [!div class="nextstepaction"]
-    > [Firewall & network protection][SEC-1]
+    > [Open Firewall & network protection][SEC-1]
 
   :::column-end:::
   :::column span="1":::
     :::image type="content" source="images/windows-security.png" alt-text="Screenshot showing the QR code to scan from your phone or tablet." lightbox="images/windows-security.png" border="false":::
 
-    > [!div class="nextstepaction"]
-    > [Firewall & network protection][SEC-1]
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -69,11 +67,17 @@ If you are configuring a single device, you must have administrative rights on t
 
 The *Overview* panel of the *Windows Firewall with Advanced Security* console displays security settings for each type of network to which the device can connect.
 
-![Windows Firewall with Advanced Security first time opening.](images/fw01-profiles.png)
+### :::image type="icon" source="images/domain-network.svg" border="false"::: Domain network
 
-1. **Domain profile**: Used for networks where there's a system of account authentication against an Active Directory domain controller
-1. **Private profile**: Designed for and best used in private networks such as a home network
-1. **Public profile**: Designed with higher security in mind for public networks, like Wi-Fi hotspots, coffee shops, airports, hotels, or stores
+Used for networks where there's a system of account authentication against an Active Directory domain controller
+
+### :::image type="icon" source="images/domain-network.svg" border="false"::: Private network
+
+Designed for and best used in private networks such as a home network
+
+### :::image type="icon" source="images/domain-network.svg" border="false"::: Public network
+
+Designed with higher security in mind for public networks, like Wi-Fi hotspots, coffee shops, airports, hotels, or stores
 
 To view detailed settings for each profile, right-click the top-level **Windows Defender Firewall with Advanced Security** node in the left pane and then select **Properties**.
 
