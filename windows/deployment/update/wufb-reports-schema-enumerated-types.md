@@ -11,7 +11,7 @@ manager: aaroncz
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
-ms.date: 11/10/2023
+ms.date: 11/27/2023
 ---
 
 # Enumerated types for Windows Update for Business reports
@@ -217,43 +217,46 @@ Type of alert.
 
 Subtype of alert.
 
-| Value | Applicable table | Description |
-|---|---|---|
-| **MultipleSecurityUpdatesMissing** | UCDeviceAlert | Client is missing multiple security updates |
-| **EndOfService** | UCDeviceAlert | Client OS is no longer being serviced |
-| **EndOfServiceApproaching** | UCDeviceAlert | Servicing period fo the client OS is ending in less than 60 days |
-| **CancelledByUser** | UCUpdateAlert | The user canceled the update. |
-| **CertificateIssue** | UCUpdateAlert | An expired certificate was encountered. |
-| **DamagedMedia** | UCUpdateAlert | The update file appears to be damaged. |
-| **DiskFull** | UCUpdateAlert | An operation couldn't be completed because the disk is full. |
-| **DiskIssue** | UCUpdateAlert | Windows Update has found disk corruption. |
-| **DownloadCancelled** | UCUpdateAlert | The download was  canceled. |
-| **DownloadCredentialsIssue** | UCUpdateAlert | A proxy server or firewall on your network might require credentials. |
-| **DownloadIssue** | UCUpdateAlert | There was a download issue. |
-| **DownloadIssueServiceDisabled** | UCUpdateAlert | The service the download depends on is disabled. |
-| **DownloadTimeout** | UCUpdateAlert | A timeout occurred. |
-| **FileNotFound** | UCUpdateAlert | The installer couldn't find a Windows component that it needs. |
-| **InstallAccessDenied** | UCUpdateAlert | Access denied. |
-| **InstallCancelled** | UCUpdateAlert | Install canceled. |
-| **InstallFileLocked** | UCUpdateAlert | Couldn't access the file because it's already in use. |
-| **InstallIssue** | UCUpdateAlert | There was an installation issue. |
-| **InstallSetupBlock** | UCUpdateAlert | There's an application or driver blocking the upgrade. |
-| **InstallSetupError** | UCUpdateAlert | Encountered an error while installing the new version of Windows. |
-| **InstallSetupRestartRequired** | UCUpdateAlert | A restart is required. |
-| **InstallSharingViolation** | UCUpdateAlert | An application is likely interfering with Windows Update. |
-| **InstallSystemError** | UCUpdateAlert | A system error occurred while installing the new version of Windows. |
-| **InsufficientUpdateConnectivity** | UCUpdateAlert | Inferred alert. Device isn't sufficiently active. |
-| **NetworkIssue** | UCUpdateAlert | The server timed out waiting for the requested. |
-| **PathNotFound** | UCUpdateAlert | The specified path can't be found. |
-| **RestartIssue** | UCUpdateAlert | The restart to apply updates is being blocked by one or more applications. |
-| **UnexpectedShutdown** | UCUpdateAlert | The installation stopped because Windows was shutting down or restarting. |
-| **WindowsComponentCorruption** | UCUpdateAlert | This device has a corrupted Windows component |
-| **WUBusy** | UCUpdateAlert | Windows Update tried to install an update while another installation process was already running. |
-| **WUComponentMissing** | UCUpdateAlert | Windows Update might be missing a component or the update file might be damaged. |
-| **WUDamaged** | UCUpdateAlert | The update file might be damaged. |
-| **WUFileCorruption** | UCUpdateAlert | Windows Update has encountered corrupted files. |
-| **WUIssue** | UCUpdateAlert | An unexpected issue was encountered during the installation. |
-| **WUSetupError** | UCUpdateAlert | The setup process was suspended. |
+| Value | Description |
+|---|---|
+| **CancelledByUser** | The user canceled the update. |
+| **CertificateIssue** | An expired certificate was encountered. |
+| **DamagedMedia** | The update file appears to be damaged. |
+| **DeviceRegistrationInvalidAzureADJoin** | Device isn't able to register or authenticate properly with the deployment service due to not being device-level Entra ID joined. Devices that are workplace-joined aren't compatible with the deployment service. |
+| **DiskFull** | An operation couldn't be completed because the disk is full. |
+| **DiskIssue** | Windows Update has found disk corruption. |
+| **DownloadCancelled** | The download was  canceled. |
+| **DownloadCredentialsIssue** | A proxy server or firewall on your network might require credentials. |
+| **DownloadIssue** | There was a download issue. |
+| **DownloadIssueServiceDisabled** | The service the download depends on is disabled. |
+| **DownloadTimeout** | A timeout occurred. |
+| **EndOfService** | Client OS is no longer being serviced |
+| **EndOfServiceApproaching** | Client OS servicing period completes in less than 60 days |
+| **FileNotFound** | The installer couldn't find a Windows component that it needs. |
+| **InstallAccessDenied** | Access denied. |
+| **InstallCancelled** | Install canceled. |
+| **InstallFileLocked** | Couldn't access the file because it's already in use. |
+| **InstallIssue** | There was an installation issue. |
+| **InstallSetupBlock** | There's an application or driver blocking the upgrade. |
+| **InstallSetupError** | Encountered an error while installing the new version of Windows. |
+| **InstallSetupRestartRequired** | A restart is required. |
+| **InstallSharingViolation** | An application is likely interfering with Windows Update. |
+| **InstallSystemError** | A system error occurred while installing the new version of Windows. |
+| **InsufficientUpdateConnectivity** | Device hasn't had sufficient connectivity to Windows Update to progress through the update process and will experience delays. |
+| **MultipleSecurityUpdatesMissing** | Client is missing multiple security updates |
+| **NetworkIssue** | The server timed out waiting for the requested. |
+| **PathNotFound** | The specified path can't be found. |
+| **RestartIssue** | The restart to apply updates is being blocked by one or more applications. |
+| **SafeguardHold** | Update can't be installed due to a known Safeguard Hold. |
+| **UnexpectedShutdown** | The installation stopped because Windows was shutting down or restarting. |
+| **WindowsComponentCorruption** | This device has a corrupted Windows component |
+| **WUBusy** | Windows Update tried to install an update while another installation process was already running. |
+| **WUComponentMissing** | Windows Update might be missing a component or the update file might be damaged. |
+| **WUDamaged** | The update file might be damaged. |
+| **WUFileCorruption** | Windows Update encountered corrupted files. |
+| **WUIssue** | An unexpected issue was encountered during the installation. |
+| **WUSetupError** | The setup process was suspended. |
+
 
 ## AlertStatus
 
