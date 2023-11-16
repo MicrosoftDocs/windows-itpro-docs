@@ -13,7 +13,15 @@ Windows Firewall is a host-based firewall that is included with the operating sy
 
 Windows Firewall supports Internet Protocol security (IPsec), which you can use to require authentication from any device that is attempting to communicate with your device. When authentication is required, devices that can't be authenticated as a *trusted device* can't communicate with your device. You can use IPsec to require that certain network traffic is encrypted to prevent it from being read by network packet analyzers that could be attached to the network by a malicious user.
 
-Windows Firewall also works with [Network Location Awareness][NLA] so that it can apply security settings appropriate to the types of networks to which the device is connected. For example, Windows Firewall can apply the *public network* profile when the device is connected a coffee shop wi-fi, and the *private network* profile when the device is connected to the home network. This allows you to apply more restrictive settings to public networks to help keep your device secure.
+:::row:::
+  :::column span="2":::
+    Windows Firewall also works with [Network Location Awareness][NLA] so that it can apply security settings appropriate to the types of networks to which the device is connected. For example, Windows Firewall can apply the *public network* profile when the device is connected a coffee shop wi-fi, and the *private network* profile when the device is connected to the home network. This allows you to apply more restrictive settings to public networks to help keep your device secure.
+
+  :::column-end:::
+  :::column span="2":::
+    :::image type="content" source="images/windows-security.png" alt-text="Screenshot showing the Windows Security app." border="false":::
+  :::column-end:::
+:::row-end:::
 
 ## Practical applications
 
@@ -22,8 +30,6 @@ Windows Firewall offers several benefits to address your organization's network 
 - Reduced risk of network security threats: By reducing the attack surface of a device, Windows Firewall provides an additional layer of defense to the defense-in-depth model. This increases manageability and decreases the likelihood of a successful attack
 - Protection of sensitive data and intellectual property: Windows Firewall integrates with IPsec to provide a simple way to enforce authenticated, end-to-end network communications. This allows for scalable, tiered access to trusted network resources, helping to enforce data integrity and, if necessary, protect data confidentiality
 - Extended value of existing investments: Windows Firewall is a host-based firewall included with the operating system, so no additional hardware or software is required. It's also designed to complement existing non-Microsoft network security solutions through a documented API
-
-:::image type="content" source="images/windows-security.png" alt-text="Screenshot showing the Windows Security app." border="false":::
 
 [!INCLUDE [windows-firewall](../../../../../includes/licensing/windows-firewall.md)]
 
