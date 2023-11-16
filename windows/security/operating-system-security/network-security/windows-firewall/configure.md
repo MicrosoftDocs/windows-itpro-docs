@@ -14,7 +14,10 @@ Windows offers different tools to view the status and configure Windows Firewall
 - [Windows Security](#windows-security)
 - [Control Panel](#control-panel)
 - [Microsoft Management Console (MMC)](#microsoft-management-console-mmc)
+- [Configuration Service Provider (CSP)](#configuration-service-provider-csp)
 - [Command line tools](#command-line-tools)
+
+#### Configuration Service Provider (CSP)
 
 > [!NOTE]
 > To change the configuration of Windows Firewall, you must have administative rights on the device.
@@ -63,6 +66,16 @@ Windows offers different tools to view the status and configure Windows Firewall
 :::row-end:::
 :::row:::
   :::column span="4":::
+    #### Configuration Service Provider (CSP)
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column span="4":::
+    The [Firewall CSP](/windows/client-management/mdm/firewall-csp) provides an interface to configure and query the status of Windows Firewall, which can be used with a mobile device management (MDM) solution like Microsoft Intune
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column span="4":::
     #### Command line tools
   :::column-end:::
 :::row-end:::
@@ -88,8 +101,6 @@ The *private network* profile is designed for private networks such as a home ne
 
 The *public network* profile is designed with higher security in mind for public networks, like Wi-Fi hotspots, coffee shops, airports, hotels, etc. It's the default profile for unidentified networks.
 
-To view detailed settings for each profile, right-click the top-level **Windows Defender Firewall with Advanced Security** node in the left pane and then select **Properties**.
-
 ## Firewall rules
 
 In many cases, a first step for administrators is to customize the firewall profiles using *rules*, so that they can work with applications or other types of software. For example, an administrator or user may choose to add a rule to accommodate a program, open a port or protocol, or allow a predefined type of traffic.
@@ -99,9 +110,9 @@ It's recommended to maintain the default Windows Firewall settings whenever poss
 > [!TIP]
 > Create your rules in all three profiles, but only enable the firewall rule group on the profiles that suit your scenarios. For example, if you are installing a sharing application that is only used on a private network, then it would be best to create firewall rules in all three profiles, but only enable the firewall rule group containing your rules on the private profile.
 
-### Restrictions per Profile
+### Restrictions per profile
 
-You may also wish to modify the restrictions on your firewall rules depending on which profile the rules are applied to. For applications and services that are designed to only be accessed by devices within a home or small business network, it is best to modify the remote address restriction to specify **Local Subnet** only. The same application or service would not have this restriction when used in an enterprise environment. This can be done by adding the remote address restriction to rules that are added to the private and public profiles, while leaving them unrestricted in the domain profile. This remote address restriction should not apply to applications or services that require global Internet connectivity.
+You may also wish to modify the restrictions on your firewall rules depending on which profile the rules are applied to. For applications and services that are designed to only be accessed by devices within a home or small business network, it's best to modify the remote address restriction to specify **Local Subnet** only. The same application or service wouldn't have this restriction when used in an enterprise environment. This can be done by adding the remote address restriction to rules that are added to the private and public profiles, while leaving them unrestricted in the domain profile. This remote address restriction shouldn't apply to applications or services that require global Internet connectivity.
 
 ### Rule precedence for inbound rules
 
@@ -121,7 +132,7 @@ A general security recommended practice when creating inbound rules is to be as 
 
 ## Create rules for new applications
 
-When first installed, networked applications and services issue a *listen call* specifying the protocol/port information required for them to function properly. Sicne there's a default *block* action in Windows Firewall, you must create inbound exception rules to allow the traffic. It's common for the app or the app installer itself to add this firewall rule. Otherwise, the user (or firewall admin on behalf of the user) needs to manually create a rule.
+When first installed, networked applications and services issue a *listen call* specifying the protocol/port information required for them to function properly. Since there's a default *block* action in Windows Firewall, you must create inbound exception rules to allow the traffic. It's common for the app or the app installer itself to add this firewall rule. Otherwise, the user (or firewall admin on behalf of the user) needs to manually create a rule.
 
 If there's no active application or administrator-defined allow rule(s), a dialog box prompts the user to either allow or block an application's packets the first time the app is launched or tries to communicate in the network:
 
@@ -160,19 +171,19 @@ Firewall rules can be deployed:
 
 *Rule merging* settings control how rules from different policy sources can be combined. Administrators can configure different merge behaviors for *Domain*, *Private*, and *Public profiles*.
 
-The rule-merging settings either allow or prevent local administrators from creating their own firewall rules in addition to those rules obtained from GPO or CSP.
+The rule-merging policy settings either allow or prevent local administrators from creating their own firewall rules in addition to those rules obtained from GPO or CSP.
 
 |  | Path |
 |--|--|
-| **CSP** | Domain Profile: `./Vendor/MSFT/Firewall/MdmStore/DomainProfile/AllowLocalPolicyMerge` <br> Private Profile`./Vendor/MSFT/Firewall/MdmStore/PrivateProfile/AllowLocalPolicyMerge` <br> Public Profile `./Vendor/MSFT/Firewall/MdmStore/PublicProfile/AllowLocalPolicyMerge` |
-| **GPO** | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Removable Data Drives** |
+| **CSP** | Domain Profile: `./Vendor/MSFT/Firewall/MdmStore/DomainProfile/`[AllowLocalPolicyMerge](/windows/client-management/mdm/firewall-csp#mdmstoredomainprofileallowlocalpolicymerge) <br> Private Profile`./Vendor/MSFT/Firewall/MdmStore/PrivateProfile/`[AllowLocalPolicyMerge](/windows/client-management/mdm/firewall-csp#mdmstoreprivateprofileallowlocalpolicymerge) <br> Public Profile `./Vendor/MSFT/Firewall/MdmStore/PublicProfile/`[AllowLocalPolicyMerge](/windows/client-management/mdm/firewall-csp#mdmstorepublicprofileallowlocalipsecpolicymerge) |
+| **GPO** | **Computer Configuration** > **Windows Settings** > **Security Settings** > **Windows Defender Firewall with Advanced Security**|
 
 Administrators may disable *LocalPolicyMerge* in high-security environments to maintain tighter control over endpoints. This setting can impact some applications and services that automatically generate a local firewall policy upon installation.
 
 > [!IMPORTANT]
 > If merging of local policies is disabled, centralized deployment of rules is required for any app that needs inbound connectivity.
 
-As a best practice, it's important to list and log such apps, including the network ports used for communications. Typically, you can find what ports must be open for a given service on the app's website. For more complex deployments, a thorough analysis might be needed using network packet capture tools.
+It's important to create and maintain a list of such apps, including the network ports used for communications. Typically, you can find what ports must be open for a given service on the app's website. For more complex deployments, a thorough analysis might be needed using network packet capture tools.
 
 In general, to maintain maximum security, admins should only deploy firewall exceptions for apps and services determined to serve legitimate purposes.
 
@@ -181,7 +192,7 @@ In general, to maintain maximum security, admins should only deploy firewall exc
 
 ## Group policy processing  
 
-The Windows Firewall settings configured viaGPO or CSP are stored in the registry. By default, group policies are refreshed in the background every 90 minutes, with a random offset of 0 to 30 minutes.
+The Windows Firewall settings configured via GPO or CSP are stored in the registry. By default, group policies are refreshed in the background every 90 minutes, with a random offset of 0 to 30 minutes.
 
 Windows Firewall monitors the registry for changes, and if something is written to the registry it notifies the *Windows Filtering Platform (WFP)*, which performs the following actions:
 
@@ -213,31 +224,23 @@ To avoid the issue, leave the policy `Computer Configuration > Administrative Te
 
 An important Windows Firewall feature you can use to mitigate damage during an active attack is the *shields up* mode. It's an informal term referring to an easy method a firewall administrator can use to temporarily increase security in the face of an active attack.
 
-Shields up can be achieved by checking **Block all incoming connections, including those in the list of allowed apps** setting found in either the Windows Settings app or .
+Shields up can be achieved by checking **Block all incoming connections, including those in the list of allowed apps** setting found in either the Windows Settings app or Control Panel.
 
 ![Incoming connections.](images/fw06-block.png)
 
-*Figure 6: Windows settings App/Windows Security/Firewall Protection/Network Type*
-
 :::image type="content" alt-text="Firewall cpl." source="images/fw07-legacy.png":::
 
-*Figure 7: Legacy firewall.cpl*
-
-By default, the Windows Firewall blocks everything unless there's an exception rule created. This setting overrides the exceptions.
-
-For example, the Remote Desktop feature automatically creates firewall rules when enabled. However, if there's an active exploit using multiple ports and services on a host, you can, instead of disabling individual rules, use the shields up mode to block all inbound connections, overriding previous exceptions, including the rules for Remote Desktop. The Remote Desktop rules remain intact but remote access won't work as long as shields up is activated.
+By default, the Windows Firewall blocks everything unless there's an exception rule created. The *shield up* option overrides the exceptions. For example, the Remote Desktop feature automatically creates firewall rules when enabled. However, if there's an active exploit using multiple ports and services on a host, you can, instead of disabling individual rules, use the shields up mode to block all inbound connections, overriding previous exceptions, including the rules for Remote Desktop. The Remote Desktop rules remain intact but remote access won't work as long as shields up is activated.
 
 Once the emergency is over, uncheck the setting to restore regular network traffic.
 
-## Create outbound rules
+## Outbound rules considerations
 
 What follows are a few general guidelines for configuring outbound rules.
 
-- The default configuration of Blocked for Outbound rules can be considered for certain highly secure environments. However, the Inbound rule configuration should never be changed in a way that Allows traffic by default
-- It's recommended to Allow Outbound by default for most deployments for the sake of simplification around app deployments, unless the enterprise prefers tight security controls over ease-of-use
-- In high security environments, an inventory of all enterprise-spanning apps must be taken and logged by the administrator or administrators. Records must include whether an app used requires network connectivity. Administrators need to create new rules specific to each app that needs network connectivity and push those rules centrally, via group policy (GP), Mobile Device Management (MDM), or both (for hybrid or co-management environments)
-
-For tasks related to creating outbound rules, see [Checklist: Creating Outbound Firewall Rules](checklist-creating-outbound-firewall-rules.md).
+- The default configuration of Blocked for Outbound rules can be considered for certain highly secure environments. However, the Inbound rule configuration should never be changed in a way that allows traffic by default
+- It's recommended to Allow Outbound by default for most deployments for the sake of simplification around app deployments, unless the organization prefers tight security controls over ease-of-use
+- In high security environments, an inventory of all apps should be logged and maintained. Records must include whether an app used requires network connectivity. Administrators need to create new rules specific to each app that needs network connectivity and push those rules centrally, via GPO or CSP.
 
 ## Document your changes
 

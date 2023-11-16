@@ -42,7 +42,7 @@ To provide feedback for Windows Firewall, open [**Feedback Hub**][FHUB] (<kbd>WI
 > [!div class="nextstepaction"]
 > Learn about the tools to configure Windows Firewall and some recommended practices:
 >
-> [Configure Windows Firewall >](best-practices-configuring.md)
+> [Configure Windows Firewall >](configure.md)
 
 <!--links-->
 
