@@ -19,7 +19,7 @@ If a user signs into Windows using a password, Enhanced Phishing Protection work
 - If users type their work or school password into a website or app that SmartScreen finds suspicious, Enhanced Phishing Protection can automatically collect information from that website or app to help identify security threats. For example, the content displayed, sounds played, and application memory.
 
 > [!NOTE]
-> When a user signs-in to a device using a Windows Hello for Business PIN or biometric, Enhanced Phishing Protection does not alert the user or send events to Microsoft Defender for Endpoint.
+> When a user signs-in to a device using a Windows Hello for Business PIN or biometric, Enhanced Phishing Protection does not alert the user or send events to [Microsoft Defender for Endpoint (MDE)](/microsoft-365/security/defender-endpoint/).
 
 ## Benefits of Enhanced Phishing Protection in Microsoft Defender SmartScreen
 
@@ -91,13 +91,13 @@ By default, Enhanced Phishing Protection is deployed in audit mode, preventing n
 
 To better help you protect your organization, we recommend turning on and using these specific Microsoft Defender SmartScreen settings.
 
-| Setting                   | Recommendation                                                                                                                                                                                                        |
-|---------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Automatic Data Collection | **Enabled**: Turns on collection of additional content for security analysis from a suspicious website or app to improve Microsoft's threat intelligence                                                              |
-| Service Enabled           | **Enabled**: Turns on Enhanced Phishing Protection in audit mode, which captures work or school password entry events and sends diagnostic data but doesn't show any notifications to your users.                     |
-| Notify Malicious          | **Enabled**: Turns on Enhanced Phishing Protection notifications when users type their work or school password into one of the previously described malicious scenarios and encourages them to change their password. |
-| Notify Password Reuse     | **Enabled**: Turns on Enhanced Phishing Protection notifications when users reuse their work or school password and encourages them to change their password.                                                         |
-| Notify Unsafe App         | **Enabled**: Turns on Enhanced Phishing Protection notifications when users type their work or school passwords in Notepad and Microsoft 365 Office Apps.                                                             |
+| Setting                   | Default Value                                                                                              | Recommendation                                                                                                                                                                                                        |
+|---------------------------|------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Automatic Data Collection | **Enabled** for domain joined devices or devices enrolled with MDM.<br>**Disabled** for all other devices. | **Enabled**: Turns on collection of additional content for security analysis from a suspicious website or app to improve Microsoft's threat intelligence                                                              |
+| Service Enabled           | **Enabled**                                                                                                | **Enabled**: Turns on Enhanced Phishing Protection in audit mode, which captures work or school password entry events and sends diagnostic data but doesn't show any notifications to your users.                     |
+| Notify Malicious          | **Disabled** for devices onboarded to MDE.<br>**Enabled** for all other devices.                           | **Enabled**: Turns on Enhanced Phishing Protection notifications when users type their work or school password into one of the previously described malicious scenarios and encourages them to change their password. |
+| Notify Password Reuse     | **Disabled**                                                                                               | **Enabled**: Turns on Enhanced Phishing Protection notifications when users reuse their work or school password and encourages them to change their password.                                                         |
+| Notify Unsafe App         | **Disabled**                                                                                               | **Enabled**: Turns on Enhanced Phishing Protection notifications when users type their work or school passwords in Notepad and Microsoft 365 Office Apps.                                                             |
 
 #### [:::image type="icon" source="images/icons/intune.svg"::: **Intune**](#tab/intune)
 
