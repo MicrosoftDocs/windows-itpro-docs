@@ -1,22 +1,27 @@
 ---
 title: Configure Windows Firewall
-description: Learn about the available tools to configure Windows Firewall.
+description: Learn about the available tools to configure Windows Firewall and best practices.
 ms.date: 11/15/2023
 ms.topic: best-practice
 ---
 
 # Configure Windows Firewall
 
+## Configuration tools
+
 Windows offers different tools to view the status and configure Windows Firewall. All tools interact with the same underlying services, but provide different levels of control over those services:
 
 - [Windows Security](#windows-security)
 - [Control Panel](#control-panel)
-- Microsoft Management Console (MMC)
-- Command line tools
+- [Microsoft Management Console (MMC)](#microsoft-management-console-mmc)
+- [Command line tools](#command-line-tools)
+
+> [!NOTE]
+> To change the configuration of Windows Firewall, you must have administative rights on the device.
 
 :::row:::
   :::column span="4":::
-    ### Windows Security
+    #### Windows Security
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -27,12 +32,12 @@ Windows offers different tools to view the status and configure Windows Firewall
 
   :::column-end:::
   :::column span="1":::
-    :::image type="content" source="images/windows-security.png" alt-text="Screenshot showing the QR code to scan from your phone or tablet." lightbox="images/windows-security.png" border="false":::
+    :::image type="content" source="images/windows-security.png" alt-text="Screenshot showing the Windows Security app." lightbox="images/windows-security.png" border="false":::
   :::column-end:::
 :::row-end:::
 :::row:::
   :::column span="4":::
-    ### Control Panel
+    #### Control Panel
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -40,25 +45,25 @@ Windows offers different tools to view the status and configure Windows Firewall
     The *Windows Defender Firewall* Control Panel applet (`firewall.cpl`) provides basic functionalities to configure Windows Firewall.
   :::column-end:::
   :::column span="1":::
-    :::image type="content" source="images/control-panel.png" alt-text="Screenshot showing the QR code to scan from your phone or tablet." lightbox="images/control-panel.png" border="false":::
+    :::image type="content" source="images/control-panel.png" alt-text="Screenshot showing the Windows Defender Firewall control panel applet." lightbox="images/control-panel.png" border="false":::
   :::column-end:::
 :::row-end:::
 :::row:::
   :::column span="4":::
-    ### Microsoft Management Console (MMC)
+    #### Microsoft Management Console (MMC)
   :::column-end:::
 :::row-end:::
 :::row:::
   :::column span="3":::
-    The *Windows Defender Firewall with Advanced Security* MMC snap-in (`wf.msc`) provides advanced functionalities and is used in centralized group policy (GPO) management solutions to secure complex network traffic found in typical organization environments.
+    The *Windows Defender Firewall with Advanced Security* MMC snap-in (`wf.msc`) provides advanced configuration functionalities. It can be used locally and in centralized group policy (GPO) management solutions.
   :::column-end:::
   :::column span="1":::
-    :::image type="content" source="images/mmc-advanced-security.png" alt-text="Screenshot showing the QR code to scan from your phone or tablet." lightbox="images/mmc-advanced-security.png" border="false":::
+    :::image type="content" source="images/mmc-advanced-security.png" alt-text="Screenshot of the Windows Defender Firewall with Advanced Security MMC snap-in." lightbox="images/mmc-advanced-security.png" border="false":::
   :::column-end:::
 :::row-end:::
 :::row:::
   :::column span="4":::
-    ### Command line tools
+    #### Command line tools
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -67,12 +72,9 @@ Windows offers different tools to view the status and configure Windows Firewall
   :::column-end:::
 :::row-end:::
 
-> [!NOTE]
-> To change the configuration of Windows Firewall, you must have administative rights on the device.
-
 ## Network profiles
 
-Windows Firewall offers three network profiles: domain, private and public.
+Windows Firewall offers three network profiles: domain, private and public. The network profiles are used to assign Firewall rules. For example, you can allow a specific application to communicate on a private network, but not on a public network.
 
 ### :::image type="icon" source="images/domain-network.svg" border="false"::: Domain network
 
@@ -90,9 +92,9 @@ To view detailed settings for each profile, right-click the top-level **Windows 
 
 ## Firewall rules
 
-It's recommended to maintain the default Windows Firewall settings whenever possible. The settings are designed to secure your device for use in most network scenarios. One key example is the default Block behavior for Inbound connections.
-
 In many cases, a first step for administrators is to customize the firewall profiles using *rules*, so that they can work with applications or other types of software. For example, an administrator or user may choose to add a rule to accommodate a program, open a port or protocol, or allow a predefined type of traffic.
+
+It's recommended to maintain the default Windows Firewall settings whenever possible. The settings are designed to secure your device for use in most network scenarios. One key example is the default Block behavior for Inbound connections.
 
 > [!TIP]
 > Create your rules in all three profiles, but only enable the firewall rule group on the profiles that suit your scenarios. For example, if you are installing a sharing application that is only used on a private network, then it would be best to create firewall rules in all three profiles, but only enable the firewall rule group containing your rules on the private profile.
@@ -117,16 +119,14 @@ A general security recommended practice when creating inbound rules is to be as 
 > [!NOTE]
 > Windows Firewall doesn't support weighted, administrator-assigned rule ordering. An effective policy set with expected behaviors can be created by keeping in mind the few, consistent, and logical rule behaviors as described.
 
-## Create rules for new applications before first launch
+## Create rules for new applications
 
-### Inbound allow rules
+When first installed, networked applications and services issue a *listen call* specifying the protocol/port information required for them to function properly. Sicne there's a default *block* action in Windows Firewall, you must create inbound exception rules to allow the traffic. It's common for the app or the app installer itself to add this firewall rule. Otherwise, the user (or firewall admin on behalf of the user) needs to manually create a rule.
 
-When first installed, networked applications and services issue a listen call specifying the protocol/port information required for them to function properly. As there's a default block action in Windows Firewall, it's necessary to create inbound exception rules to allow this traffic. It's common for the app or the app installer itself to add this firewall rule. Otherwise, the user (or firewall admin on behalf of the user) needs to manually create a rule.
+If there's no active application or administrator-defined allow rule(s), a dialog box prompts the user to either allow or block an application's packets the first time the app is launched or tries to communicate in the network:
 
-If there's no active application or administrator-defined allow rule(s), a dialog box prompts the user to either allow or block an application's packets the first time the app is launched or tries to communicate in the network.
-
-- If the user has admin permissions, they're prompted. If they respond *No* or cancel the prompt, block rules are created. Two rules are typically created, one each for TCP and UDP traffic.
-- If the user isn't a local admin, they won't be prompted. In most cases, block rules are created.
+- If the user has admin permissions, they're prompted. If they respond *No* or cancel the prompt, block rules are created. Two rules are typically created, one each for TCP and UDP traffic
+- If the user isn't a local admin, they won't be prompted. In most cases, block rules are created
 
 In either of these scenarios, once the rules are added, they must be deleted to generate the prompt again. If not, the traffic continues to be blocked.
 
@@ -143,49 +143,45 @@ To determine why some applications are blocked from communicating in the network
 
 1. A user with sufficient privileges receives a query notification advising them that the application needs to make a change to the firewall policy. Not fully understanding the prompt, the user cancels or dismisses the prompt
 1. A user lacks sufficient privileges and is therefore not prompted to allow the application to make the appropriate policy changes
-1. Local Policy Merge is disabled, preventing the application or network service from creating local rules
+1. *Local Policy Merge* is disabled, preventing the application or network service from creating local rules
 
-Creation of application rules at runtime can also be prohibited by administrators using the Settings app or Group Policy.
+Creation of application rules at runtime can also be prohibited by administrators using the Settings app or policy settings.
 
 :::image type="content" alt-text="Windows Firewall prompt." source="images/fw04-userquery.png":::
 
-See also [Checklist: Creating Inbound Firewall Rules](checklist-creating-inbound-firewall-rules.md).
-
-## Establish local policy merge and application rules
+## Local policy merge and application rules
 
 Firewall rules can be deployed:
 
-1. Locally using the Firewall snap-in (**wf.msc**)
-1. Locally using PowerShell
-1. Remotely using Group Policy if the device is a member of an Active Directory Name or managed by Configuration Manager
-1. Remotely, using a mobile device management (MDM) solution like Microsoft Intune
+1. Locally using the [Microsoft Management Console (MMC)](#microsoft-management-console-mmc)
+1. Locally using [command line tools](#command-line-tools)
+1. Remotely using group policy (GPO) settings if the device is a member of an Active Directory domain, or managed by Configuration Manager
+1. Remotely using the [Firewall CSP](/windows/client-management/mdm/firewall-csp), with a mobile device management (MDM) solution like Microsoft Intune
 
-Rule merging settings control how rules from different policy sources can be combined. Administrators can configure different merge behaviors for *Domain*, *Private*, and *Public profiles*.
+*Rule merging* settings control how rules from different policy sources can be combined. Administrators can configure different merge behaviors for *Domain*, *Private*, and *Public profiles*.
 
-The rule-merging settings either allow or prevent local administrators from creating their own firewall rules in addition to those rules obtained from Group Policy.
+The rule-merging settings either allow or prevent local administrators from creating their own firewall rules in addition to those rules obtained from GPO or CSP.
 
-![Customize settings.](images/fw05-rulemerge.png)
+|  | Path |
+|--|--|
+| **CSP** | Domain Profile: `./Vendor/MSFT/Firewall/MdmStore/DomainProfile/AllowLocalPolicyMerge` <br> Private Profile`./Vendor/MSFT/Firewall/MdmStore/PrivateProfile/AllowLocalPolicyMerge` <br> Public Profile `./Vendor/MSFT/Firewall/MdmStore/PublicProfile/AllowLocalPolicyMerge` |
+| **GPO** | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Removable Data Drives** |
 
-> [!TIP]
-> In the firewall [configuration service provider](/windows/client-management/mdm/firewall-csp), the equivalent setting is *AllowLocalPolicyMerge*. This setting can be found under each respective profile node, *DomainProfile*, *PrivateProfile*, and *PublicProfile*.
+Administrators may disable *LocalPolicyMerge* in high-security environments to maintain tighter control over endpoints. This setting can impact some applications and services that automatically generate a local firewall policy upon installation.
 
-If merging of local policies is disabled, centralized deployment of rules is required for any app that needs inbound connectivity.
+> [!IMPORTANT]
+> If merging of local policies is disabled, centralized deployment of rules is required for any app that needs inbound connectivity.
 
-Administrators may disable *LocalPolicyMerge* in high-security environments to maintain tighter control over endpoints. This setting can impact some applications and services that automatically generate a local firewall policy upon installation as discussed above. For these types of apps and services to work, admins should push rules centrally via group policy (GP), Mobile Device
-Management (MDM), or both (for hybrid or co-management environments).
-
-[Firewall CSP](/windows/client-management/mdm/firewall-csp) and [Policy CSP](/windows/client-management/mdm/policy-configuration-service-provider) also have settings that can affect rule merging.
-
-As a best practice, it's important to list and log such apps, including the network ports used for communications. Typically, you can find what ports must be open for a given service on the app's website. For more complex or customer application deployments, a more thorough analysis may be needed using network packet capture tools.
+As a best practice, it's important to list and log such apps, including the network ports used for communications. Typically, you can find what ports must be open for a given service on the app's website. For more complex deployments, a thorough analysis might be needed using network packet capture tools.
 
 In general, to maintain maximum security, admins should only deploy firewall exceptions for apps and services determined to serve legitimate purposes.
 
 > [!NOTE]
-> The use of wildcard patterns, such as *C:\*\\teams.exe* is not supported in application rules. You can only create rules using the full path to the application(s).
+> The use of wildcard patterns, such as `C:\*\teams.exe` isn't supported in application rules. You can only create rules using the full path to the application(s).
 
-## Understand group policy processing  
+## Group policy processing  
 
-The Windows Firewall settings configured via group policy or CSP are stored in the registry. By default, group policies are refreshed in the background every 90 minutes, with a random offset of 0 to 30 minutes.
+The Windows Firewall settings configured viaGPO or CSP are stored in the registry. By default, group policies are refreshed in the background every 90 minutes, with a random offset of 0 to 30 minutes.
 
 Windows Firewall monitors the registry for changes, and if something is written to the registry it notifies the *Windows Filtering Platform (WFP)*, which performs the following actions:
 
@@ -213,12 +209,11 @@ To avoid the issue, leave the policy `Computer Configuration > Administrative Te
 >
 > If there's a requirement to force registry deletion and rewrite, then disable background processing by checking the checkbox next to **Do not apply during periodic background processing**.
 
-## Know how to use *shields up* mode for active attacks
+## *Shields up* mode for active attacks
 
-An important firewall feature you can use to mitigate damage during an active attack is the "shields up" mode. It's an informal term referring to an easy method a firewall administrator can use to temporarily increase security in the face of an active attack.
+An important Windows Firewall feature you can use to mitigate damage during an active attack is the *shields up* mode. It's an informal term referring to an easy method a firewall administrator can use to temporarily increase security in the face of an active attack.
 
-Shields up can be achieved by checking **Block all
-incoming connections, including those in the list of allowed apps** setting found in either the Windows Settings app or the legacy file *firewall.cpl*.
+Shields up can be achieved by checking **Block all incoming connections, including those in the list of allowed apps** setting found in either the Windows Settings app or .
 
 ![Incoming connections.](images/fw06-block.png)
 

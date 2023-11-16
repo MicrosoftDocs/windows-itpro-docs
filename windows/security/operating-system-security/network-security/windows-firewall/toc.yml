@@ -4,7 +4,7 @@ items:
   - name: Configure and manage Windows Firewall
     items: 
     - name: Configure Windows Firewall
-      href: best-practices-configuring.md
+      href: configure.md
     - name: Configure with Microsoft Intune
       href: create-windows-firewall-rules-in-intune.md
     - name: Configure with group policy
