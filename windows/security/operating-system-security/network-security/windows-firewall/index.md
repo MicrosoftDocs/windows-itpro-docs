@@ -11,7 +11,7 @@ Windows Firewall is a stateful host firewall that helps secure the device by all
 
 Windows Firewall also works with Network Awareness so that it can apply security settings appropriate to the types of networks to which the device is connected.
 
-## Benefits
+## Practical applications
 
 Windows Firewall offers several benefits to address your organization's network security challenges:
 
