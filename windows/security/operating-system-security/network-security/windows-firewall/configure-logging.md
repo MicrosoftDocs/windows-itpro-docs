@@ -1,6 +1,6 @@
 ---
-title: Configure the Windows Defender Firewall Log 
-description: Learn how to configure Windows Firewall to log dropped packets or successful connections with Microsoft Intune and group policy.
+title: Configure Windows Firewall logging 
+description: Learn how to configure Windows Firewall to log dropped packets or successful connections with CSP and group policy.
 ms.topic: how-to
 ms.date: 11/14/2023
 ---
@@ -9,14 +9,12 @@ ms.date: 11/14/2023
 
 To configure Windows Firewall to log dropped packets or successful connections, you can use:
 
-- Microsoft Intune/MDM
-- Group policy with the Windows Defender Firewall with Advanced Security node in the Group Policy Management MMC snap-in
+- Configuration Service Provider (CSP), using an MDM solution like Microsoft Intune
+- Group policy (GPO)
 
 [!INCLUDE [tab-intro](../../../../../includes/configure/tab-intro.md)]
 
-#### [:::image type="icon" source="../../../images/icons/intune.svg" border="false"::: **Intune/MDM**](#tab/intune)
-
-### Configure Windows Firewall with Intune
+# [:::image type="icon" source="../../../images/icons/intune.svg" border="false"::: **Intune/CSP**](#tab/intune)
 
 [!INCLUDE [intune-settings-catalog-1](../../../../../includes/configure/intune-settings-catalog-1.md)]
 
@@ -36,21 +34,9 @@ Alternatively, you can configure devices using a [custom policy][INT-1] with the
 | **Setting name**: Turn On Virtualization Based Security<br>**OMA-URI**: `./Device/Vendor/MSFT/Policy/Config/DeviceGuard/EnableVirtualizationBasedSecurity`<br>**Data type**: int<br>**Value**: `1`|
 | **Setting name**: Credential Guard Configuration<br>**OMA-URI**: `./Device/Vendor/MSFT/Policy/Config/DeviceGuard/LsaCfgFlags`<br>**Data type**: int<br>**Value**:<br>&emsp;**Enabled with UEFI lock**: `1`<br>&emsp;**Enabled without lock**: `2`|
 
-Once the policy is applied, restart the device.
-
-#### [:::image type="icon" source="../../../images/icons/group-policy.svg" border="false"::: **Group policy**](#tab/gpo)
-
-### Configure Windows Firewall with group policy
+# [:::image type="icon" source="../../../images/icons/group-policy.svg" border="false"::: **Group policy**](#tab/gpo)
 
 [!INCLUDE [gpo-settings-1](../../../../../includes/configure/gpo-settings-1.md)]
-
-| Group policy path | Group policy setting | Value |
-| - | - | - |
-| **Computer Configuration\Administrative Templates\System\Device Guard** |Turn On Virtualization Based Security | **Enabled** and select one of the options listed under the **Credential Guard Configuration** dropdown:<br>&emsp;- **Enabled with UEFI lock**<br>&emsp;- **Enabled without lock**|
-
-[!INCLUDE [gpo-settings-2](../../../../../includes/configure/gpo-settings-2.md)]
-
-Once the policy is applied, restart the device.
 
 1. Open the Group Policy Management Console to [Windows Defender Firewall with Advanced Security](open-the-group-policy-management-console-to-windows-firewall-with-advanced-security.md).
 1. In the details pane, in the **Overview** section, click **Windows Defender Firewall Properties**.
@@ -65,6 +51,13 @@ Once the policy is applied, restart the device.
     - To create a log entry when Windows Defender Firewall drops an incoming network packet, change **Log dropped packets** to **Yes**
     - To create a log entry when Windows Defender Firewall allows an inbound connection, change **Log successful connections** to **Yes**
 1. Click **OK** twice
+
+
+| Group policy path | Group policy setting | Value |
+| - | - | - |
+| **Computer Configuration** > **Windows Settings** > **Security Settings** > **Windows Defender Firewall with Advanced Security** |Turn On Virtualization Based Security | **Enabled** and select one of the options listed under the **Credential Guard Configuration** dropdown:<br>&emsp;- **Enabled with UEFI lock**<br>&emsp;- **Enabled without lock**|
+
+[!INCLUDE [gpo-settings-2](../../../../../includes/configure/gpo-settings-2.md)]
 
 ---
 
