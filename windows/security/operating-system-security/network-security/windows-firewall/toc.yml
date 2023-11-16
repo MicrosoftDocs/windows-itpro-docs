@@ -3,16 +3,16 @@ items:
     href: index.md
   - name: Configure and manage Windows Firewall
     items: 
-    - name: Recommendations for configuring Windows Firewall
+    - name: Configure Windows Firewall
       href: best-practices-configuring.md
     - name: Configure with Microsoft Intune
       href: create-windows-firewall-rules-in-intune.md
     - name: Configure with group policy
       href: configure-rules-with-gpo.md
-    - name: Configure with the command line
+    - name: Configure with command line tools
       href: configure-with-command-line.md
-    - name: Configure the Windows Firewall log
-      href: configure-the-windows-firewall-log.md
+    - name: Configure logging
+      href: configure-logging.md
   - name: Hyper-V firewall
     href: hyper-v-firewall.md
   - name: Isolate Microsoft Store apps on your network

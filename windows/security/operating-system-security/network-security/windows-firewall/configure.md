@@ -1,17 +1,18 @@
 ---
-title: Recommendations for configuring Windows Firewall
-description: Learn about best practices for configuring Windows Firewall.
+title: Configure Windows Firewall
+description: Learn about the available tools to configure Windows Firewall.
 ms.date: 11/15/2023
 ms.topic: best-practice
 ---
 
-# Recommendations for configuring Windows Firewall
+# Configure Windows Firewall
 
-Windows Firewall provides host-based, two-way network traffic filtering and blocks unauthorized network traffic flowing into or out of the local device. Configuring your Windows Firewall based on the following best practices can help you optimize protection for devices in your network.
+Windows offers different tools to view the status and configure Windows Firewall. All tools interact with the same underlying services, but provide different levels of control over those services:
 
-## Windows Firewall tools
-
-Windows offers different tools to view the status and configure Windows Firewall. All tools interact with the same underlying services, but provide different levels of control over those services.
+- [Windows Security](#windows-security)
+- [Control Panel](#control-panel)
+- Microsoft Management Console (MMC)
+- Command line tools
 
 :::row:::
   :::column span="4":::
@@ -27,7 +28,6 @@ Windows offers different tools to view the status and configure Windows Firewall
   :::column-end:::
   :::column span="1":::
     :::image type="content" source="images/windows-security.png" alt-text="Screenshot showing the QR code to scan from your phone or tablet." lightbox="images/windows-security.png" border="false":::
-
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -50,22 +50,29 @@ Windows offers different tools to view the status and configure Windows Firewall
 :::row-end:::
 :::row:::
   :::column span="3":::
-    The *Windows Defender Firewall with Advanced Security* MMC snap-in (`wf.msc`) provides advanced functionalities and is used in centralized management solutions to secure complex network traffic found in a typical organization environments.
+    The *Windows Defender Firewall with Advanced Security* MMC snap-in (`wf.msc`) provides advanced functionalities and is used in centralized group policy (GPO) management solutions to secure complex network traffic found in typical organization environments.
   :::column-end:::
   :::column span="1":::
     :::image type="content" source="images/mmc-advanced-security.png" alt-text="Screenshot showing the QR code to scan from your phone or tablet." lightbox="images/mmc-advanced-security.png" border="false":::
   :::column-end:::
 :::row-end:::
+:::row:::
+  :::column span="4":::
+    ### Command line tools
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column span="4":::
+    The `NetSecurity` PowerShell module and `Network Command Shell (netsh.exe)` are command line utilities that can be used to query the status and configure Windows Firewall.
+  :::column-end:::
+:::row-end:::
 
-## Access the Windows Firewall with Advanced Security console
+> [!NOTE]
+> To change the configuration of Windows Firewall, you must have administative rights on the device.
 
-If you're configuring devices joined to an Active Directory domain, to complete these procedures you must be a member of the Domain Administrators group, or otherwise have delegated permissions to modify the GPOs in the domain. To access the *Windows Firewall with Advanced Security* console, [create or edit](/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/cc754740(v=ws.11)) a group policy object (GPO) and expand the nodes **Computer Configuration** > **Policies** > **Windows Settings** > **Security Settings** > **Windows Firewall with Advanced Security**.
+## Network profiles
 
-If you are configuring a single device, you must have administrative rights on the device. In which case, to access the *Windows Firewall with Advanced Security* console, select <kbd>START</kbd>, type `wf.msc`, and press <kbd>ENTER</kbd>.
-
-## Keep default settings
-
-The *Overview* panel of the *Windows Firewall with Advanced Security* console displays security settings for each type of network to which the device can connect.
+Windows Firewall offers three network profiles: domain, private and public.
 
 ### :::image type="icon" source="images/domain-network.svg" border="false"::: Domain network
 
@@ -81,23 +88,20 @@ The *public network* profile is designed with higher security in mind for public
 
 To view detailed settings for each profile, right-click the top-level **Windows Defender Firewall with Advanced Security** node in the left pane and then select **Properties**.
 
+## Firewall rules
+
+It's recommended to maintain the default Windows Firewall settings whenever possible. The settings are designed to secure your device for use in most network scenarios. One key example is the default Block behavior for Inbound connections.
+
+In many cases, a first step for administrators is to customize the firewall profiles using *rules*, so that they can work with applications or other types of software. For example, an administrator or user may choose to add a rule to accommodate a program, open a port or protocol, or allow a predefined type of traffic.
+
 > [!TIP]
-> Maintain the default settings in Windows Firewall whenever possible. These settings have been designed to secure your device for use in most network scenarios. One key example is the default Block behavior for Inbound connections.
+> Create your rules in all three profiles, but only enable the firewall rule group on the profiles that suit your scenarios. For example, if you are installing a sharing application that is only used on a private network, then it would be best to create firewall rules in all three profiles, but only enable the firewall rule group containing your rules on the private profile.
 
-:::image type="content" source="images/fw03-defaults.png" alt-text="Screenshot of the default inbound/outbound Firewall settings.":::
+### Restrictions per Profile
 
-> [!IMPORTANT]
-> To maintain maximum security, don't change the default Block setting for inbound connections.
+You may also wish to modify the restrictions on your firewall rules depending on which profile the rules are applied to. For applications and services that are designed to only be accessed by devices within a home or small business network, it is best to modify the remote address restriction to specify **Local Subnet** only. The same application or service would not have this restriction when used in an enterprise environment. This can be done by adding the remote address restriction to rules that are added to the private and public profiles, while leaving them unrestricted in the domain profile. This remote address restriction should not apply to applications or services that require global Internet connectivity.
 
-For more on configuring basic firewall settings, see [Turn on Windows Firewall and Configure Default Behavior](turn-on-windows-firewall-and-configure-default-behavior.md) and [Checklist: Configuring Basic Firewall Settings](checklist-configuring-basic-firewall-settings.md).
-
-## Rule precedence for inbound rules
-
-In many cases, a next step for administrators is to customize the firewall profiles using *rules* (sometimes called *filters*), so that they can work with applications or other types of software. For example, an administrator or user may choose to add a rule to accommodate a program, open a port or protocol, or allow a predefined type of traffic.
-
-The rule-adding task can be accomplished by right-clicking either **Inbound Rules** or **Outbound Rules**, and selecting **New Rule**. The interface for adding a new rule looks like this:
-
-![Rule creation wizard.](images/fw02-createrule.png)
+### Rule precedence for inbound rules
 
 In many cases, allowing specific types of inbound traffic is required for applications to function in the network. Administrators should keep the following rule precedence behaviors in mind when allowing these inbound exceptions:
 

@@ -19,7 +19,7 @@ Windows Firewall supports Internet Protocol security (IPsec), which you can use 
 
   :::column-end:::
   :::column span="2":::
-    :::image type="content" source="images/windows-security.png" alt-text="Screenshot showing the Windows Security app." border="false":::
+    :::image type="content" source="images/windows-security.png" alt-text="Screenshot showing the Windows Security app." lightbox="images/windows-security.png" border="false":::
   :::column-end:::
 :::row-end:::
 
