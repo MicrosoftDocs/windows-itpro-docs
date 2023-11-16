@@ -4,7 +4,7 @@ description: Learn more about the DeclaredConfiguration CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 09/27/2023
+ms.date: 11/06/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -110,7 +110,7 @@ The Host internal node indicates that the target of the configuration request or
 
 <!-- Device-Host-Complete-Description-Begin -->
 <!-- Description-Source-DDF -->
-This internal node indicates that the configuration has discrete settings values and is self-contained with complete setting and value pairs that don't contain placeholders that the need to be resolved later with additional data. The request is ready to be processed as is.
+This internal node indicates that the configuration has discrete settings values and is self-contained with complete setting and value pairs that don't contain placeholders that need to be resolved later with additional data. The request is ready to be processed as is.
 <!-- Device-Host-Complete-Description-End -->
 
 <!-- Device-Host-Complete-Editable-Begin -->

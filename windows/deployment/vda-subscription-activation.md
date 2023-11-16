@@ -9,7 +9,7 @@ ms.prod: windows-client
 ms.technology: itpro-fundamentals
 ms.localizationpriority: medium
 ms.topic: how-to
-ms.date: 11/23/2022
+ms.date: 11/14/2023
 ---
 
 # Configure VDA for Windows subscription activation
@@ -31,7 +31,7 @@ Deployment instructions are provided for the following scenarios:
 
 - VMs must be running a supported version of Windows Pro edition.
 - VMs must be joined to Active Directory or Microsoft Entra ID.
-- VMs must be hosted by a Qualified Multitenant Hoster (QMTH). For more information, download the PDF that describes the [Qualified Multitenant Hoster Program](https://download.microsoft.com/download/3/D/4/3D445779-2870-4E3D-AFCB-D35D2E1BC095/QMTH%20Authorized%20Partner%20List.pdf).
+- VMs must be hosted by a Qualified Multitenant Hoster (QMTH).
 
 ## Activation
 

@@ -1,7 +1,7 @@
 ---
 title: Configure and secure devices with Microsoft Intune
 description: Learn how to configure policies with Microsoft Intune in preparation for device deployment.
-ms.date: 08/31/2022
+ms.date: 11/09/2023
 ms.topic: tutorial
 ---
 
@@ -88,7 +88,7 @@ To create a security policy:
     - Windows SmartScreen
 
 For more information, see [Security][INT-4].
- 
+
 > [!NOTE]
 > If you require more sophisticated security policies, you can create them in Microsoft Intune. For more information:
 > - [<u>Antivirus</u>][MEM-2]
@@ -98,7 +98,7 @@ For more information, see [Security][INT-4].
 > - [<u>Attack surface reduction</u>][MEM-6]
 > - [<u>Account protection</u>][MEM-7]
 
-________________________________________________________
+---
 
 ## Next steps
 

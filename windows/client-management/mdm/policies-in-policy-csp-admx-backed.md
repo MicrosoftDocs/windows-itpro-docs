@@ -4,7 +4,7 @@ description: Learn about the ADMX-backed policies in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 10/03/2023
+ms.date: 11/06/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -2145,6 +2145,7 @@ This article lists the ADMX-backed policies in Policy CSP.
 - [EnableAllowedSources](policy-csp-desktopappinstaller.md)
 - [EnableMSAppInstallerProtocol](policy-csp-desktopappinstaller.md)
 - [EnableWindowsPackageManagerCommandLineInterfaces](policy-csp-desktopappinstaller.md)
+- [EnableWindowsPackageManagerConfiguration](policy-csp-desktopappinstaller.md)
 
 ## DeviceInstallation
 
@@ -2475,11 +2476,12 @@ This article lists the ADMX-backed policies in Policy CSP.
 ## MSSecurityGuide
 
 - [ApplyUACRestrictionsToLocalAccountsOnNetworkLogon](policy-csp-mssecurityguide.md)
-- [ConfigureSMBV1Server](policy-csp-mssecurityguide.md)
 - [ConfigureSMBV1ClientDriver](policy-csp-mssecurityguide.md)
+- [ConfigureSMBV1Server](policy-csp-mssecurityguide.md)
 - [EnableStructuredExceptionHandlingOverwriteProtection](policy-csp-mssecurityguide.md)
-- [WDigestAuthentication](policy-csp-mssecurityguide.md)
+- [NetBTNodeTypeConfiguration](policy-csp-mssecurityguide.md)
 - [TurnOnWindowsDefenderProtectionAgainstPotentiallyUnwantedApplications](policy-csp-mssecurityguide.md)
+- [WDigestAuthentication](policy-csp-mssecurityguide.md)
 
 ## MSSLegacy
 
@@ -2530,6 +2532,8 @@ This article lists the ADMX-backed policies in Policy CSP.
 
 ## RemoteDesktopServices
 
+- [LimitServerToClientClipboardRedirection](policy-csp-remotedesktopservices.md)
+- [LimitClientToServerClipboardRedirection](policy-csp-remotedesktopservices.md)
 - [DoNotAllowPasswordSaving](policy-csp-remotedesktopservices.md)
 - [AllowUsersToConnectRemotely](policy-csp-remotedesktopservices.md)
 - [DoNotAllowDriveRedirection](policy-csp-remotedesktopservices.md)

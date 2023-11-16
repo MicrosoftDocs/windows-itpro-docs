@@ -4,7 +4,7 @@ description: Learn more about the ADMX_EventLog Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 08/10/2023
+ms.date: 11/06/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -955,9 +955,9 @@ This policy setting controls Event Log behavior when the log file reaches its ma
 <!-- Description-Source-ADMX -->
 This policy setting turns on logging.
 
-If you enable or don't configure this policy setting, then events can be written to this log.
+- If you enable or don't configure this policy setting, then events can be written to this log.
 
-If the policy setting is disabled, then no new events can be logged. Events can always be read from the log, regardless of this policy setting.
+- If the policy setting is disabled, then no new events can be logged. Events can always be read from the log, regardless of this policy setting.
 <!-- Channel_LogEnabled-Description-End -->
 
 <!-- Channel_LogEnabled-Editable-Begin -->

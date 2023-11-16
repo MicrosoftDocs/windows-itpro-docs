@@ -1,14 +1,11 @@
 ---
 title: Zero Trust and Windows device health
 description: Describes the process of Windows device health attestation
-ms.reviewer:
 ms.topic: conceptual
 manager: aaroncz
 ms.author: paoloma
 author: paolomatarazzo
-ms.prod: windows-client
-ms.technology: itpro-security
-ms.date: 12/31/2017
+ms.date: 11/07/2023
 ---
 
 # Zero Trust and Windows device health
@@ -17,11 +14,9 @@ Organizations need a security model that more effectively adapts to the complexi
 
 The [Zero Trust](https://www.microsoft.com/security/business/zero-trust) principles are:
 
-- **Verify explicitly**. Always authenticate and authorize based on all available data points, including user identity, location, device health, service or workload, data classification, and monitor anomalies.
-
-- **Use least-privileged access**. Limit user access with just-in-time and just-enough-access, risk-based adaptive policies, and data protection to help secure data and maintain productivity.
-
-- **Assume breach**. Prevent attackers from obtaining access to minimize potential damage to data and systems. Protect privileged roles, verify end-to-end encryption, use analytics to get visibility, and drive threat detection to improve defenses.
+- **Verify explicitly**. Always authenticate and authorize based on all available data points, including user identity, location, device health, service or workload, data classification, and monitor anomalies
+- **Use least-privileged access**. Limit user access with just-in-time and just-enough-access, risk-based adaptive policies, and data protection to help secure data and maintain productivity
+- **Assume breach**. Prevent attackers from obtaining access to minimize potential damage to data and systems. Protect privileged roles, verify end-to-end encryption, use analytics to get visibility, and drive threat detection to improve defenses
 
 The Zero Trust concept of **verify explicitly** applies to the risks introduced by both devices and users. Windows enables **device health attestation** and **conditional access** capabilities, which are used to grant access to corporate resources.
 
@@ -45,25 +40,19 @@ Windows includes many security features to help protect users from malware and a
 
 A summary of the steps involved in attestation and Zero Trust on the device side are as follows:
 
-1. During each step of the boot process, such as a file load, update of special variables, and more, information such as file hashes and signature are measured in the TPM PCRs. The measurements are bound by a [Trusted Computing Group specification](https://trustedcomputinggroup.org/resource/pc-client-platform-tpm-profile-ptp-specification/) (TCG) that dictates what events can be recorded and the format of each event.
+1. During each step of the boot process, such as a file load, update of special variables, and more, information such as file hashes and signature are measured in the TPM PCRs. The measurements are bound by a [Trusted Computing Group specification](https://trustedcomputinggroup.org/resource/pc-client-platform-tpm-profile-ptp-specification/) (TCG) that dictates what events can be recorded and the format of each event
+1. Once Windows has booted, the attestor/verifier requests the TPM to fetch the measurements stored in its Platform Configuration Register (PCR) alongside a TCG log. The measurements in both these components together form the attestation evidence that is then sent to the attestation service
+1. The TPM is verified by using the keys/cryptographic material available on the chipset with an [Azure Certificate Service](/windows-server/identity/ad-ds/manage/component-updates/tpm-key-attestation)
+1. This information is then sent to the attestation service in the cloud to verify that the device is safe. Microsoft Endpoint Manger integrates with Microsoft Azure Attestation to review device health comprehensively and connect this information with Microsoft Entra Conditional Access. This integration is key for Zero Trust solutions that help bind trust to an untrusted device
+1. The attestation service does the following tasks:
 
-2. Once Windows has booted, the attestor/verifier requests the TPM to fetch the measurements stored in its Platform Configuration Register (PCR) alongside a TCG log. The measurements in both these components together form the attestation evidence that is then sent to the attestation service.
+    - Verify the integrity of the evidence. This verification is done by validating the PCRs that match the values recomputed by replaying the TCG log
+    - Verify that the TPM has a valid Attestation Identity Key issued by the authenticated TPM
+    - Verify that the security features are in the expected states
 
-3. The TPM is verified by using the keys/cryptographic material available on the chipset with an [Azure Certificate Service](/windows-server/identity/ad-ds/manage/component-updates/tpm-key-attestation).
-
-4. This information is then sent to the attestation service in the cloud to verify that the device is safe. Microsoft Endpoint Manger integrates with Microsoft Azure Attestation to review device health comprehensively and connect this information with Microsoft Entra Conditional Access. This integration is key for Zero Trust solutions that help bind trust to an untrusted device.
-
-5. The attestation service does the following tasks:
-
-    - Verify the integrity of the evidence. This verification is done by validating the PCRs that match the values recomputed by replaying the TCG log.
-    - Verify that the TPM has a valid Attestation Identity Key issued by the authenticated TPM.
-    - Verify that the security features are in the expected states.
-
-6. The attestation service returns an attestation report that contains information about the security features based on the policy configured in the attestation service.
-
-7. The device then sends the report to the Microsoft Intune cloud to assess the trustworthiness of the platform according to the admin-configured device compliance rules.
-
-8. Conditional access, along with device-compliance state then decides to allow or deny access.
+1. The attestation service returns an attestation report that contains information about the security features based on the policy configured in the attestation service
+1. The device then sends the report to the Microsoft Intune cloud to assess the trustworthiness of the platform according to the admin-configured device compliance rules
+1. Conditional access, along with device-compliance state then decides to allow or deny access
 
 ## Other Resources
 

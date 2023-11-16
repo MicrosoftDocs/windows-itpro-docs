@@ -4,7 +4,7 @@ description: Learn more about the ADMX_OfflineFiles Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 08/10/2023
+ms.date: 11/06/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -1755,7 +1755,7 @@ This policy setting is triggered by the configured round trip network latency va
 
 - If you enable this policy setting, transparent caching is enabled and configurable.
 
-- If you disable or don't configure this policy setting, remote files will be not be transparently cached on client computers.
+- If you disable or don't configure this policy setting, remote files won't be transparently cached on client computers.
 <!-- Pol_OnlineCachingSettings-Description-End -->
 
 <!-- Pol_OnlineCachingSettings-Editable-Begin -->
@@ -1939,7 +1939,7 @@ Reminder balloons appear when the user's connection to a network file is lost or
 This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the setting in Computer Configuration takes precedence over the setting in User Configuration.
 
 > [!TIP]
-> To set reminder balloon frequency without establishing a setting, in Windows Explorer, on the Tools menu, click Folder Options, and then click the Offline Files tab. This setting corresponds to the "Display reminder balloons every ... minutes" option.
+> To set reminder balloon frequency without establishing a setting, in Windows Explorer, on the Tools menu, click Folder Options, and then click the Offline Files tab. This setting corresponds to the "Display reminder balloons every .. minutes" option.
 <!-- Pol_ReminderFreq_1-Description-End -->
 
 <!-- Pol_ReminderFreq_1-Editable-Begin -->
@@ -2002,7 +2002,7 @@ Reminder balloons appear when the user's connection to a network file is lost or
 This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the setting in Computer Configuration takes precedence over the setting in User Configuration.
 
 > [!TIP]
-> To set reminder balloon frequency without establishing a setting, in Windows Explorer, on the Tools menu, click Folder Options, and then click the Offline Files tab. This setting corresponds to the "Display reminder balloons every ... minutes" option.
+> To set reminder balloon frequency without establishing a setting, in Windows Explorer, on the Tools menu, click Folder Options, and then click the Offline Files tab. This setting corresponds to the "Display reminder balloons every .. minutes" option.
 <!-- Pol_ReminderFreq_2-Description-End -->
 
 <!-- Pol_ReminderFreq_2-Editable-Begin -->

@@ -2,7 +2,7 @@
 title: Virtual Smart Card Overview
 description: Learn about virtual smart card technology for Windows.
 ms.topic: conceptual
-ms.date: 02/22/2023
+ms.date: 11/06/2023
 ---
 
 # Virtual Smart Card Overview
@@ -23,27 +23,27 @@ Virtual smart cards are functionally similar to physical smart cards, appearing 
 
 ### Authentication use cases
 
-**Two-factor authentication‒based remote access**
+#### Two-factor authentication‒based remote access
 
 After a user has a fully functional TPM virtual smart card, provisioned with a sign-in certificate, the certificate is used to gain authenticated access to corporate resources. When the proper certificate is provisioned to the virtual card, the user need only provide the PIN for the virtual smart card, as if it was a physical smart card, to sign in to the domain.
 
 In practice, this is as easy as entering a password to access the system. Technically, it's far more secure. Using the virtual smart card to access the system proves to the domain that the user who is requesting authentication has possession of the personal computer upon which the card has been provisioned and knows the virtual smart card PIN. Because this request couldn't have possibly originated from a system other than the system certified by the domain for this user's access, and the user couldn't have initiated the request without knowing the PIN, a strong two-factor authentication is established.
 
-**Client authentication**
+#### Client authentication
 
 Virtual smart cards can also be used for client authentication by using TLS/SSL or a similar technology. Similar to domain access with a virtual smart card, an authentication certificate can be provisioned for the virtual smart card, provided to a remote service, as requested in the client authentication process. This adheres to the principles of two-factor authentication because the certificate is only accessible from the computer that hosts the virtual smart card, and the user is required to enter the PIN for initial access to the card.
 
-**Virtual smart card redirection for remote desktop connections**
+#### Virtual smart card redirection for remote desktop connections
 
 The concept of two-factor authentication associated with virtual smart cards relies on the proximity of users to the devices that they use to access domain. When you connect to a device that is hosting virtual smart cards, you can't use the virtual smart cards located on the remote device during the remote session. However, you can access the virtual smart cards on the connecting device (which is under your physical control), which are loaded onto the remote device. You can use the virtual smart cards as if they were installed by using the remote devices' TPM, extending your privileges to the remote device, while maintaining the principles of two-factor authentication.
 
 ### Confidentiality use cases
 
-**S/MIME email encryption**
+#### S/MIME email encryption
 
 Physical smart cards are designed to hold private keys. You can use the private keys for email encryption and decryption. The same functionality exists in virtual smart cards. By using S/MIME with a user's public key to encrypt email, the sender of an email is assured that only the person with the corresponding private key can decrypt the email. This assurance is a result of the non-exportability of the private key. It never exists within reach of malicious software, and it remains protected by the TPM—even during decryption.
 
-**BitLocker for data volumes**
+#### BitLocker for data volumes
 
 BitLocker Drive Encryption technology makes use of symmetric-key encryption to protect the content of a user's hard drive. BitLocker ensures that if the physical ownership of a hard drive is compromised, an adversary won't be able to read data off the drive. The key used to encrypt the drive can be stored in a virtual smart card, which necessitates knowledge of the virtual smart card PIN to access the drive, and possession of the device that is hosting the TPM virtual smart card. If the drive is obtained without access to the TPM that hosts the virtual smart card, any brute force attack will be difficult.
 
@@ -51,7 +51,7 @@ You can use BitLocker to encrypt portable drives, storing keys in virtual smart 
 
 ### Data integrity use case
 
-**Signing data**
+#### Signing data
 
 To verify authorship of data, a user can sign it by using a private key stored in the virtual smart card. Digital signatures confirm the integrity and origin of the data.
 
