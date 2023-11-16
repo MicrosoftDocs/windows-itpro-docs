@@ -15,7 +15,23 @@ This article provides examples how to manage Windows Firewall with PowerShell an
 
 Global defaults set the device behavior in a per-profile basis. Windows Firewall supports Domain, Private, and Public profiles.
 
+::: zone pivot="windows-powershell"
+
+Before you can connect to your devices and apps from Windows, you need:
+
+- Internet access.
+
+::: zone-end
+
 ### Enable Windows Firewall
+
+::: zone pivot="windows-cmd"
+
+Before you can connect to your devices and apps from Windows, you need:
+
+- Internet access.
+
+::: zone-end
 
 Windows Firewall drops traffic that doesn't correspond to allowed unsolicited traffic, or traffic that is sent in response to a request by the device. If you find that the rules you create aren't enforced, you might need to enable Windows Firewall. Here's how to enable Windows Firewall on a local device:
 
