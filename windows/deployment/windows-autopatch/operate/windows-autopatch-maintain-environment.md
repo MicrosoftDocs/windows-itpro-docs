@@ -1,7 +1,7 @@
 ---
 title: Maintain the Windows Autopatch environment
 description: This article details how to maintain the Windows Autopatch environment
-ms.date: 05/15/2023
+ms.date: 09/15/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: how-to

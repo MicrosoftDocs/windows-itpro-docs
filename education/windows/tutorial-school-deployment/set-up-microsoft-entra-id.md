@@ -1,7 +1,7 @@
 ---
 title: Set up Microsoft Entra ID
 description: Learn how to create and prepare your Microsoft Entra tenant for an education environment.
-ms.date: 08/31/2022
+ms.date: 11/09/2023
 ms.topic: tutorial
 appliesto:
 ---
@@ -86,6 +86,7 @@ There are two options for adding users manually, either individually or in bulk:
     - Select **Microsoft Entra ID** > **Users** > **All users** > **Bulk operations** > **Bulk create**
 
 For more information, see [Add multiple users in the Microsoft 365 admin center][M365-4].
+
 ### Create groups
 
 Creating groups is important to simplify multiple tasks, like assigning licenses, delegating administration, deploy settings, applications or to distribute assignments to students. To create groups:
@@ -143,7 +144,7 @@ To allow provisioning packages to complete the Microsoft Entra join process:
 1. Select Save
     :::image type="content" source="images/entra-device-settings.png" alt-text="Configure device settings from Microsoft Entra admin center." lightbox="images/entra-device-settings.png":::
 
-________________________________________________________
+---
 
 ## Next steps
 
