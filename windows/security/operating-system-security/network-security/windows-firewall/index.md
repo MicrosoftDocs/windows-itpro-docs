@@ -7,9 +7,13 @@ ms.date: 11/14/2023
 
 # Windows Firewall overview
 
-Windows Firewall is a stateful host firewall that helps secure the device by allowing you to create rules that determine which network traffic is permitted to enter the device from the network and which network traffic the device is allowed to send to the network. Windows Firewall supports Internet Protocol security (IPsec), which you can use to require authentication from any device that is attempting to communicate with your device. When authentication is required, devices that can't be authenticated as a trusted device can't communicate with your device. You can use IPsec to require that certain network traffic is encrypted to prevent it from being read by network packet analyzers that could be attached to the network by
+Windows Firewall is a security feature that helps to protect your device by filtering network traffic that enters and exits your device. This traffic can be filtered based on several criteria, including source and destination IP address, IP protocol, or source and destination port number. Windows Firewall can be configured to block or allow network traffic based on the services and applications that are installed on your device. This allows you to restrict network traffic to only those applications and services that are explicitly allowed to communicate on the network.
 
-Windows Firewall also works with Network Awareness so that it can apply security settings appropriate to the types of networks to which the device is connected.
+Windows Firewall is a host-based firewall that is included with the operating system and enabled by default on all Windows editions.
+
+Windows Firewall supports Internet Protocol security (IPsec), which you can use to require authentication from any device that is attempting to communicate with your device. When authentication is required, devices that can't be authenticated as a *trusted device* can't communicate with your device. You can use IPsec to require that certain network traffic is encrypted to prevent it from being read by network packet analyzers that could be attached to the network by a malicious user.
+
+Windows Firewall also works with [Network Location Awareness][NLA] so that it can apply security settings appropriate to the types of networks to which the device is connected. For example, Windows Firewall can apply the *public network* profile when the device is connected a coffee shop wi-fi, and the *private network* profile when the device is connected to the home network. This allows you to apply more restrictive settings to public networks to help keep your device secure.
 
 ## Practical applications
 
@@ -30,10 +34,11 @@ To provide feedback for Windows Firewall, open [**Feedback Hub**][FHUB] (<kbd>WI
 ## Next steps
 
 > [!div class="nextstepaction"]
-> Learn how to configure Windows Firewall:
+> Learn about the tools to configure Windows Firewall and some recommended practices:
 >
 > [Configure Windows Firewall >](best-practices-configuring.md)
 
 <!--links-->
 
 [FHUB]: feedback-hub:?tabid=2&newFeedback=true
+[NLA]: /windows/win32/winsock/network-location-awareness-service-provider-nla--2

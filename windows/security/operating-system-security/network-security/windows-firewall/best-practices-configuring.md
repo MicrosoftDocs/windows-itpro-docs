@@ -9,7 +9,7 @@ ms.topic: best-practice
 
 Windows Firewall provides host-based, two-way network traffic filtering and blocks unauthorized network traffic flowing into or out of the local device. Configuring your Windows Firewall based on the following best practices can help you optimize protection for devices in your network.
 
-## Open and configure Windows Firewall
+## Windows Firewall tools
 
 Windows offers different tools to view the status and configure Windows Firewall. All tools interact with the same underlying services, but provide different levels of control over those services.
 
