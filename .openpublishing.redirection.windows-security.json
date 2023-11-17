@@ -177,7 +177,12 @@
     },
     {
       "source_path": "windows/security/hardware-protection/tpm/trusted-platform-module-top-node.md",
-      "redirect_url": "/windows/security/hardware-security/tpm/trusted-platform-module-top-node",
+      "redirect_url": "/windows/security/hardware-security/tpm/trusted-platform-module-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/hardware-security/tpm/trusted-platform-module-top-node.md",
+      "redirect_url": "/windows/security/hardware-security/tpm/trusted-platform-module-overview",
       "redirect_document_id": false
     },
     {
