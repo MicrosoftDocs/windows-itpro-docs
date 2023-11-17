@@ -5,9 +5,9 @@ items:
     items: 
     - name: Configure Windows Firewall
       href: configure.md
-    - name: Configure with Microsoft Intune
+    - name: Configure rules with Microsoft Intune
       href: create-windows-firewall-rules-in-intune.md
-    - name: Configure with group policy
+    - name: Configure rules with group policy
       href: configure-rules-with-gpo.md
     - name: Configure with command line tools
       href: configure-with-command-line.md

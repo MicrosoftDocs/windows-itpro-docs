@@ -83,22 +83,6 @@ Windows offers different tools to view the status and configure Windows Firewall
   :::column-end:::
 :::row-end:::
 
-## Network profiles
-
-Windows Firewall offers three network profiles: domain, private and public. The network profiles are used to assign Firewall rules. For example, you can allow a specific application to communicate on a private network, but not on a public network.
-
-### :::image type="icon" source="images/domain-network.svg" border="false"::: Domain network
-
-The *domain network* profile is automatically applied to a device that is joined to an Active Directory domain, when it detects the availability of a domain controller. This network profile cannot be set manually.
-
-### :::image type="icon" source="images/private-network.svg" border="false"::: Private network
-
-The *private network* profile is designed for private networks such as a home network. It can be set on a network interface by an administrator.
-
-### :::image type="icon" source="images/public-network.svg" border="false"::: Public network
-
-The *public network* profile is designed with higher security in mind for public networks, like Wi-Fi hotspots, coffee shops, airports, hotels, etc. It's the default profile for unidentified networks.
-
 ## Firewall rules
 
 In many cases, a first step for administrators is to customize the firewall profiles using *rules*, so that they can work with applications or other types of software. For example, an administrator or user may choose to add a rule to accommodate a program, open a port or protocol, or allow a predefined type of traffic.
@@ -128,7 +112,7 @@ A general security recommended practice when creating inbound rules is to be as 
 > [!NOTE]
 > Windows Firewall doesn't support weighted, administrator-assigned rule ordering. An effective policy set with expected behaviors can be created by keeping in mind the few, consistent, and logical rule behaviors as described.
 
-## Create rules for new applications
+### Create rules for new applications
 
 When first installed, networked applications and services issue a *listen call* specifying the protocol/port information required for them to function properly. Since there's a default *block* action in Windows Firewall, you must create inbound exception rules to allow the traffic. It's common for the app or the app installer itself to add this firewall rule. Otherwise, the user (or firewall admin on behalf of the user) needs to manually create a rule.
 
@@ -244,24 +228,23 @@ What follows are a few general guidelines for configuring outbound rules.
 
 When creating an inbound or outbound rule, you should specify details about the app itself, the port range used, and important notes like creation date. Rules must be well-documented for ease of review both by you and other admins. We highly encourage taking the time to make the work of reviewing your firewall rules at a later date easier. And *never* create unnecessary holes in your firewall.
 
-## Configure Windows Firewall rules with WDAC tagging policies
+## WDAC tagging policies
 
 Windows Firewall supports the use of Windows Defender Application Control (WDAC) Application ID (AppID) tags in firewall rules. With this capability, Windows Firewall rules can be scoped to an application or a group of applications by referencing process tags, without using absolute path or sacrificing security. There are two steps for this configuration:
 
 ### Step 1: Deploy WDAC AppId Tagging Policies
 
-A Windows Defender Application Control (WDAC) policy needs to be deployed which specifies individual applications or groups of applications to apply a PolicyAppId tag to the process token(s). Then, the admin can define firewall rules that are scoped to all processes tagged with the matching PolicyAppId.
+A Windows Defender Application Control (WDAC) policy must be deployed, which specifies individual applications or groups of applications to apply a *PolicyAppId tag* to the process token(s). Then, the admin can define firewall rules that are scoped to all processes tagged with the matching PolicyAppId.
 
 Follow the detailed [WDAC Application ID (AppId) Tagging Guide](/windows/security/threat-protection/windows-defender-application-control/appidtagging/windows-defender-application-control-appid-tagging-guide) to create, deploy, and test an AppID (Application ID) policy to tag applications.
 
 ### Step 2: Configure Firewall Rules using PolicyAppId Tags
 
-- **Deploy firewall rules with Intune:** When creating firewall rules with Intune Microsoft Defender Firewall Rules, provide the AppId tag in the Policy App ID setting. The properties come directly from the [Firewall configuration service provider](/windows/client-management/mdm/firewall-csp)(CSP) and apply to the Windows platform.
+Use one of the two methods below to configure firewall rules using PolicyAppId tags:
+
+- Deploy firewall rules with Microsoft Intune: when creating firewall rules with Intune Microsoft Defender Firewall Rules, provide the AppId tag in the Policy App ID setting. The properties come directly from the [Firewall configuration service provider](/windows/client-management/mdm/firewall-csp)(CSP) and apply to the Windows platform.
 You can do this through the Intune admin center under Endpoint security > Firewall. Policy templates can be found via Create policy > Windows 10, Windows 11, and Windows Server > Microsoft Defender Firewall or Microsoft Defender Firewall Rules.
-
-OR
-
-- **Create local firewall rules with PowerShell**: You can use PowerShell to configure by adding a Firewall rule using [New-NetFirewallRule](/powershell/module/netsecurity/new-netfirewallrule) and specify the `-PolicyAppId` tag. You can specify one tag at a time while creating firewall rules. Multiple User Ids are supported.
+- Create local firewall rules with PowerShell: you can use [`New-NetFirewallRule`](/powershell/module/netsecurity/new-netfirewallrule) and specify the `-PolicyAppId` parameter. You can specify one tag at a time while creating firewall rules. Multiple User Ids are supported.
 
 <!--links-->
 

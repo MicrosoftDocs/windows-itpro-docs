@@ -8019,6 +8019,11 @@
       "source_path": "windows/security/operating-system-security/network-security/windows-firewall/isolating-apps-on-your-network.md",
       "redirect_url": "/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831418(v=ws.11)",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/network-security/windows-firewall/configure-the-windows-firewall-log.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/configure-logging",
+      "redirect_document_id": false
     }
   ]
 }
