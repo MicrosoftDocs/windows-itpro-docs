@@ -1,7 +1,7 @@
 ---
 title: Privacy
 description: This article provides details about the data platform and privacy compliance for Autopatch
-ms.date: 03/13/2023
+ms.date: 09/13/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: reference

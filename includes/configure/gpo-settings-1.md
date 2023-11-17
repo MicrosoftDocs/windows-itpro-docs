@@ -6,4 +6,4 @@ ms.topic: include
 ms.prod: windows-client
 ---
 
-To configure devices using group policy, [create a group policy object (GPO)](/windows/security/operating-system-security/network-security/windows-firewall/create-a-group-policy-object) and use the following settings:
+To configure a device using group policy, use the [Local Group Policy Editor](/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/cc731745(v=ws.10)). To configure multiple devices joined to Active Directory, [create](/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/cc754740(v=ws.11)) or [edit](/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/cc730903(v=ws.10)) a group policy object (GPO) and use the following settings:
