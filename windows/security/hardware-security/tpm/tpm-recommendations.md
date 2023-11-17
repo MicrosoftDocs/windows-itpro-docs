@@ -2,7 +2,7 @@
 title: TPM recommendations
 description: This topic provides recommendations for Trusted Platform Module (TPM) technology for Windows.
 ms.topic: conceptual
-ms.date: 02/02/2023
+ms.date: 11/17/2023
 ms.collection:
 - tier1
 ---
@@ -108,7 +108,7 @@ The following table defines which Windows features require TPM support.
  TPM Platform Crypto Provider Key Storage Provider| Yes | Yes | Yes
  Virtual Smart Card | Yes | Yes | Yes
  Certificate storage | No | Yes | Yes | TPM is only required when the certificate is stored in the TPM.
- Autopilot | No | N/A | Yes | If you intend to deploy a scenario which requires TPM (such as white glove and self-deploying mode), then TPM 2.0 and UEFI firmware are required.
+ Autopilot | No | N/A | Yes | If you intend to deploy a scenario which requires TPM, such as pre-provisioned deployment and self-deploying mode, then TPM 2.0 and UEFI firmware are required.
  SecureBIO | Yes | No | Yes | TPM 2.0 and UEFI firmware is required.
 
 ## OEM Status on TPM 2.0 system availability and certified parts
