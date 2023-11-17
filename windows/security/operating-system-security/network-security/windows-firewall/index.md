@@ -56,12 +56,17 @@ The default behavior of Windows Firewall is to:
 
 Windows Firewall offers three network profiles: domain, private and public. The network profiles are used to assign rules. For example, you can allow a specific application to communicate on a private network, but not on a public network.
 
-    #### :::image type="icon" source="images/domain-network.svg" border="false"::: Domain network
-    The *domain network* profile is automatically applied to a device that is joined to an Active Directory domain, when it detects the availability of a domain controller. This network profile cannot be set manually.
-    #### :::image type="icon" source="images/private-network.svg" border="false"::: Private network
-    The *private network* profile is designed for private networks such as a home network. It can be set on a network interface by an administrator.
-    #### :::image type="icon" source="images/public-network.svg" border="false"::: Public network
-    The *public network* profile is designed with higher security in mind for public networks, like Wi-Fi hotspots, coffee shops, airports, hotels, etc. It's the default profile for unidentified networks.
+#### :::image type="icon" source="images/domain-network.svg" border="false"::: Domain network
+
+The *domain network* profile is automatically applied to a device that is joined to an Active Directory domain, when it detects the availability of a domain controller. This network profile cannot be set manually.
+
+#### :::image type="icon" source="images/private-network.svg" border="false"::: Private network
+
+The *private network* profile is designed for private networks such as a home network. It can be set on a network interface by an administrator.
+
+#### :::image type="icon" source="images/public-network.svg" border="false"::: Public network
+
+The *public network* profile is designed with higher security in mind for public networks, like Wi-Fi hotspots, coffee shops, airports, hotels, etc. It's the default profile for unidentified networks.
 
 ## Next steps
 
