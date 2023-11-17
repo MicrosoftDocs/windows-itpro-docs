@@ -123,10 +123,19 @@ If not, add *FullControl* permissions for `mpssvc` to the folder, subfolders and
 
 ```PowerShell
 $LogPath = Join-Path -path $env:windir -ChildPath "System32\LogFiles\Firewall"
-$ACL = get-acl -Path $LogPath
-$ACL.SetAccessRuleProtection($true, $false)
-$RULE = New-Object System.Security.AccessControl.FileSystemAccessRule ("NT SERVICE\mpssvc","FullControl","ContainerInherit,ObjectInherit","None","Allow")
-$ACL.AddAccessRule($RULE)
+$NewAcl = Get-Acl -Path $LogPath 
+
+$identity = "NT SERVICE\mpssvc"
+$fileSystemRights = "FullControl"
+$inheritanceFlags = "ContainerInherit,ObjectInherit"
+$propagationFlags = "None"
+$type = "Allow"
+
+$fileSystemAccessRuleArgumentList = $identity, $fileSystemRights, $inheritanceFlags, $propagationFlags, $type
+$fileSystemAccessRule = New-Object -TypeName System.Security.AccessControl.FileSystemAccessRule -ArgumentList $fileSystemAccessRuleArgumentList
+
+$NewAcl.SetAccessRule($fileSystemAccessRule)
+Set-Acl -Path $LogPath -AclObject $NewAcl
 ```
 
 Restart the device to restart the *Windows Defender Firewall* service.
