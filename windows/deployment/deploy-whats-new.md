@@ -31,11 +31,10 @@ When you deploy Windows 11 with Autopilot, you can enable users to view addition
 
 Check out the following new articles about Windows 11:
 
-- [Overview of Windows 11](/windows/whats-new/windows-11)
-- [Plan for Windows 11](/windows/whats-new/windows-11-plan)
-- [Prepare for Windows 11](/windows/whats-new/windows-11-prepare)
-
-The [Windows ADK for Windows 11](/windows-hardware/get-started/adk-install) is available.<br>
+- [Overview of Windows 11](/windows/whats-new/windows-11).
+- [Plan for Windows 11](/windows/whats-new/windows-11-plan).
+- [Prepare for Windows 11](/windows/whats-new/windows-11-prepare).
+- [Windows ADK for Windows 11](/windows-hardware/get-started/adk-install) is available.
 
 ## Deployment tools
 
@@ -50,7 +49,7 @@ The [Modern Desktop Deployment Center](/microsoft-365/enterprise/desktop-deploym
 
 ## Microsoft 365
 
-Microsoft 365 is a new offering from Microsoft that combines
+Microsoft 365 is a new offering from Microsoft that combines:
 
 - A currently supported version of Windows.
 - Office 365.
@@ -76,26 +75,33 @@ Other improvements in [Delivery Optimization](./do/waas-delivery-optimization.md
 
 The following Delivery Optimization policies are removed in the Windows 10, version 2004 release:
 
-- Percentage of Maximum Download Bandwidth (DOPercentageMaxDownloadBandwidth)
-  - Reason: Replaced with separate policies for foreground and background
-- Max Upload Bandwidth (DOMaxUploadBandwidth)
+- Percentage of Maximum Download Bandwidth (DOPercentageMaxDownloadBandwidth).
+  - Reason: Replaced with separate policies for foreground and background.
+- Max Upload Bandwidth (DOMaxUploadBandwidth).
   - Reason: impacts uploads to internet peers only, which isn't used in enterprises.
-- Absolute max throttle (DOMaxDownloadBandwidth)
-  - Reason: separated to foreground and background
+- Absolute max throttle (DOMaxDownloadBandwidth).
+  - Reason: separated to foreground and background.
 
 ### Windows Update for Business
 
 [Windows Update for Business](./update/waas-manage-updates-wufb.md) enhancements in this release include:
 
 - **Intune console updates**: target version is now available allowing you to specify which supported version of Windows you want devices to move to. Additionally, this capability enables you to keep devices on their current version until they reach end of service. Check it out in Intune, also available as a Group Policy and Configuration Service Provider (CSP) policy.
+
 - **Validation improvements**: To ensure devices and end users stay productive and protected, Microsoft blocks devices from updating when there are known issues that would impact that device. Also, to better enable IT administrators to validate on the latest release, a new policy is available that enables admins to opt devices out of the built-in safeguard holds.
 
 - [**Automatic Restart Sign-on (ARSO)**](/windows-server/identity/ad-ds/manage/component-updates/winlogon-automatic-restart-sign-on--arso-): Windows automatically signs in as the user and locks their device in order to complete the update. This automatic sign-on ensures that when the user returns and unlocks the device, the update is completed.
+
 - [**Windows Update for Business**](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-Update-for-Business-and-the-retirement-of-SAC-T/ba-p/339523): There's now a single, common start date for phased deployments (no more SAC-T designation). In addition, there's a new notification and reboot scheduling experience for end users, the ability to enforce update installation and reboot deadlines, and the ability to provide end user control over reboots for a specific time period.
+
 - **Update rollback improvements**: You can now automatically recover from startup failures by removing updates if the startup failure was introduced after the installation of recent driver or quality updates. When a device is unable to start up properly after the recent installation of Quality of driver updates, Windows will now automatically uninstall the updates to get the device back up and running normally.
+
 - **Pause updates**: The ability to pause updates for both feature and monthly updates is extended. This extension ability is for all currently supported editions of Windows, including Home. You can pause both feature and monthly updates for up to 35 days (seven days at a time, up to five times). Once the 35-day pause period is reached, the device needs to update before pausing again.
+
 - **Improved update notifications**: When there's an update requiring you to restart your device, a colored dot appears on the Power button in the Start menu and on the Windows icon in the taskbar.
+
 - **Intelligent active hours**: To further enhance active hours, users now can let Windows Update intelligently adjust active hours based on their device-specific usage patterns. You must enable the intelligent active hours feature for the system to predict device-specific usage patterns.
+
 - **Improved update orchestration to improve system responsiveness**: This feature improves system performance by intelligently coordinating Windows updates and Microsoft Store updates, so they occur when users are away from their devices to minimize disruptions.
 
 Microsoft previously announced that we're [extending support](https://www.microsoft.com/microsoft-365/blog/2018/09/06/helping-customers-shift-to-a-modern-desktop) for Windows 10 Enterprise and Windows 10 Education editions to 30 months from the version release date. These editions include all past versions and future versions that are targeted for release in September (versions ending in 09, ex: 1809). Future releases that are targeted for release in March (versions ending in 03, ex: 1903) will continue to be supported for 18 months from their release date. All releases of Windows 10 Home, Windows 10 Pro, and Microsoft 365 Apps for enterprise will continue to be supported for 18 months (there's no change for these editions).  These support policies are summarized in the following table:
@@ -108,7 +114,7 @@ Windows 10 version 1703 includes a Windows 10 Enterprise E3 and E5 benefit to Mi
 
 Windows 10 Enterprise E3 launched in the Cloud Solution Provider (CSP) channel on September 1, 2016. Previously, only organizations with a Microsoft Volume Licensing Agreement could deploy Windows 10 Enterprise to their users. With Windows 10 Enterprise E3 in CSP, small and medium-sized organizations can more easily take advantage of Windows 10 Enterprise features.
 
-For more information, see [Windows 10 Enterprise E3 in CSP](windows-10-enterprise-e3-overview.md)
+For more information, see [Windows 10 Enterprise E3 in CSP](windows-10-enterprise-e3-overview.md).
 
 ## Deployment solutions and tools
 
@@ -165,7 +171,7 @@ For more information about Update Compliance, see [Monitor Windows Updates with 
 
 ### Device Health
 
-Device Health is the newest Windows Analytics solution that complements the existing Upgrade Readiness and Update Compliance solutions by helping to identify devices crashes and the cause. Device drivers that are causing crashes are identified along with alternative drivers that might reduce the number of crashes.  Windows Information Protection misconfigurations are also identified. For more information, see [Monitor the health of devices with Device Health](/mem/configmgr/desktop-analytics/overview)
+Device Health is the newest Windows Analytics solution that complements the existing Upgrade Readiness and Update Compliance solutions by helping to identify devices crashes and the cause. Device drivers that are causing crashes are identified along with alternative drivers that might reduce the number of crashes.  Windows Information Protection misconfigurations are also identified. For more information, see [Monitor the health of devices with Device Health](/mem/configmgr/desktop-analytics/overview).
 
 ### MBR2GPT
 
@@ -183,7 +189,7 @@ For the latest information about MDT, see the [MDT release notes](/mem/configmgr
 
 > [!IMPORTANT]
 >
-> MDT doesn't support Windows 11 or Windows Server 2022.
+> MDT doesn't support versions of Windows after Windows 10 and Windows Server 2019.
 
 ### Windows Assessment and Deployment Kit (ADK)
 
@@ -203,9 +209,9 @@ The Windows 10 PoC guide enables you to test Windows 10 deployment in a virtual 
 
 For more information, see the following guides:
 
-- [Step by step guide: Configure a test lab to deploy Windows 10](windows-10-poc.md)
-- [Deploy Windows 10 in a test lab using Microsoft Deployment Toolkit](windows-10-poc-mdt.md)
-- [Deploy Windows 10 in a test lab using Microsoft Configuration Manager](windows-10-poc-sc-config-mgr.md)
+- [Step by step guide: Configure a test lab to deploy Windows 10](windows-10-poc.md).
+- [Deploy Windows 10 in a test lab using Microsoft Deployment Toolkit](windows-10-poc-mdt.md).
+- [Deploy Windows 10 in a test lab using Microsoft Configuration Manager](windows-10-poc-sc-config-mgr.md).
 
 ## Troubleshooting guidance
 
@@ -213,9 +219,9 @@ For more information, see the following guides:
 
 ## Related articles
 
-[Overview of Windows as a service](update/waas-overview.md)<br>
-[Windows 10 deployment considerations](planning/windows-10-deployment-considerations.md)<br>
-[Windows 10 release information](/windows/windows-10/release-information)<br>
-[Windows 10 Specifications & Systems Requirements](https://www.microsoft.com/windows/windows-10-specifications)<br>
-[Windows 10 upgrade paths](upgrade/windows-10-upgrade-paths.md)<br>
-[Windows 10 deployment tools](windows-deployment-scenarios-and-tools.md)<br>
+- [Overview of Windows as a service](update/waas-overview.md).
+- [Windows 10 deployment considerations](planning/windows-10-deployment-considerations.md).
+- [Windows 10 release information](/windows/windows-10/release-information).
+- [Windows 10 Specifications & Systems Requirements](https://www.microsoft.com/windows/windows-10-specifications).
+- [Windows 10 upgrade paths](upgrade/windows-10-upgrade-paths.md).
+- [Windows 10 deployment tools](windows-deployment-scenarios-and-tools.md).
