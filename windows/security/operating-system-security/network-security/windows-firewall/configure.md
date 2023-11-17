@@ -7,13 +7,15 @@ ms.topic: best-practice
 
 # Configure Windows Firewall
 
+This article describes the available tools to configure Windows Firewall and some recommended practices.
+
 ## Configuration tools
 
 Windows offers different tools to view the status and configure Windows Firewall. All tools interact with the same underlying services, but provide different levels of control over those services:
 
 - [Windows Security](#windows-security)
 - [Control Panel](#control-panel)
-- [Microsoft Management Console (MMC)](#microsoft-management-console-mmc)
+- Windows Defender Firewall with Advanced Security and its integration with the [Microsoft Management Console (MMC)](#microsoft-management-console-mmc)
 - [Configuration Service Provider (CSP)](#configuration-service-provider-csp)
 - [Command line tools](#command-line-tools)
 
