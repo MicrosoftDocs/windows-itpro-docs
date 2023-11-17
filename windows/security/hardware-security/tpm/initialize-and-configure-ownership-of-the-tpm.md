@@ -16,7 +16,7 @@ This article provides information how to troubleshoot the Trusted Platform Modul
 
 With TPM 1.2 and Windows 11, you can also take the following actions:
 
-- [Turn on or turn off the TPM](#turn-on-or-turn-off)
+- [Turn on or turn off the TPM](#turn-on-or-turn-off-the-tpm)
 
 For information about the TPM cmdlets, see [TPM Cmdlets in Windows PowerShell](/powershell/module/trustedplatformmodule/?view=win10-ps&preserve-view=true).
 
