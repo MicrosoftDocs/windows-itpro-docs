@@ -17,10 +17,8 @@ Windows offers different tools to view the status and configure Windows Firewall
 - [Configuration Service Provider (CSP)](#configuration-service-provider-csp)
 - [Command line tools](#command-line-tools)
 
-#### Configuration Service Provider (CSP)
-
 > [!NOTE]
-> To change the configuration of Windows Firewall, you must have administative rights on the device.
+> To change the configuration of Windows Firewall on a device, you must have administative rights.
 
 :::row:::
   :::column span="4":::
@@ -71,7 +69,7 @@ Windows offers different tools to view the status and configure Windows Firewall
 :::row-end:::
 :::row:::
   :::column span="4":::
-    The [Firewall CSP](/windows/client-management/mdm/firewall-csp) provides an interface to configure and query the status of Windows Firewall, which can be used with a mobile device management (MDM) solution like Microsoft Intune
+    The [Firewall CSP](/windows/client-management/mdm/firewall-csp) provides an interface to configure and query the status of Windows Firewall, which can be used with a mobile device management (MDM) solution like Microsoft Intune.
   :::column-end:::
 :::row-end:::
 :::row:::

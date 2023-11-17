@@ -38,52 +38,71 @@ Alternatively, you can configure devices using a [custom policy][INT-1] with the
 
 [!INCLUDE [gpo-settings-1](../../../../../includes/configure/gpo-settings-1.md)]
 
-1. Open the Group Policy Management Console to [Windows Defender Firewall with Advanced Security](open-the-group-policy-management-console-to-windows-firewall-with-advanced-security.md).
-1. In the details pane, in the **Overview** section, click **Windows Defender Firewall Properties**.
-1. For each network location type (Domain, Private, Public), perform the following steps.
-    1. Click the tab that corresponds to the network location type
-    1. Under **Logging**, click **Customize**
-    1. The default path for the log is **%windir%\system32\logfiles\firewall\pfirewall.log**. If you want to change this path, clear the **Not configured** check box and type the path to the new location, or click **Browse** to select a file location
+1. Expand the nodes **Computer Configuration** > **Policies** > **Windows Settings** > **Security Settings** > **Windows Firewall with Advanced Security**
+1. In the details pane, in the **Overview** section, select **Windows Defender Firewall Properties**
+1. For each network location type (Domain, Private, Public), perform the following steps
+    1. Select the tab that corresponds to the network location type
+    1. Under **Logging**, select **Customize**
+    1. The default path for the log is `%windir%\system32\logfiles\firewall\pfirewall.log`. If you want to change this path, clear the **Not configured** check box and enter the path to the new location, or select **Browse** to select a file location
         > [!IMPORTANT]
         > The location you specify must have permissions assigned that permit the Windows Firewall service to write to the log file.
-1. The default maximum file size for the log is 4,096 kilobytes (KB). If you want to change this size, clear the **Not configured** check box, and type in the new size in KB, or use the up and down arrows to select a ize. The file won't grow beyond this size; when the limit is reached, old log entries are deleted to make room for the newly created ones.
+1. The default maximum file size for the log is 4,096 kilobytes (KB). If you want to change this size, clear the **Not configured** check box, and enter the new size in KB, or use the up and down arrows to select a size. The file won't grow beyond this size; when the limit is reached, old log entries are deleted to make room for the newly created ones.
 1. No logging occurs until you set one of following two options:
     - To create a log entry when Windows Defender Firewall drops an incoming network packet, change **Log dropped packets** to **Yes**
     - To create a log entry when Windows Defender Firewall allows an inbound connection, change **Log successful connections** to **Yes**
-1. Click **OK** twice
-
-
-| Group policy path | Group policy setting | Value |
-| - | - | - |
-| **Computer Configuration** > **Windows Settings** > **Security Settings** > **Windows Defender Firewall with Advanced Security** |Turn On Virtualization Based Security | **Enabled** and select one of the options listed under the **Credential Guard Configuration** dropdown:<br>&emsp;- **Enabled with UEFI lock**<br>&emsp;- **Enabled without lock**|
+1. Select **OK** twice
 
 [!INCLUDE [gpo-settings-2](../../../../../includes/configure/gpo-settings-2.md)]
 
 ---
 
-### Troubleshoot Slow Log Ingestion
+## Recommendations
 
-If logs are slow to appear in Sentinel, you can turn down the log file size. Just beware that this downsizing will result in more resource usage due to the increased resource usage for log rotation.
+Here are some recommendations for configuring Windows Firewall logging:
 
-### Troubleshoot if the log file is not created or modified
+- Change the logging size to at least 20,480 KB(20 MB) to ensure that the log file doesn't fill up too quickly. The maximum log size is 32,768 KB(32 MB)
+- For each profile (Domain, Private, and Public) change the name from `%windir%\system32\logfiles\firewall\pfirewall.log` to:
+  - `%windir%\system32\logfiles\firewall\pfirewall_Domain.log`
+  - `%windir%\system32\logfiles\firewall\pfirewall_Private.log`
+  - `%windir%\system32\logfiles\firewall\pfirewall_Public.log`
+- Log dropped packets to **Yes**
+- Log successful connections to **Yes**
+
+On a single system, you can use the following commands to configure logging:
+
+```cmd
+netsh advfirewall>set allprofiles logging allowedconnections enable
+netsh advfirewall>set allprofiles logging droppedconnections enable
+```
+
+## Parsing methods
+
+There are several methods to parse the Windows Firewall log files. For example:
+
+- Enable *Windows Event Forwarding* (WEF) to a *Windows Event Collector* (WEC). To learn more, see [Use Windows Event Forwarding to help with intrusion detection](/windows/security/threat-protection/use-windows-event-forwarding-to-assist-in-intrusion-detection)
+- Forward the logs to your SIEM product such as our Azure Sentinel. To learn more, see [Windows Firewall connector for Microsoft Sentinel](/azure/sentinel/data-connectors/windows-firewall)
+- Forward the logs to Azure Monitor and use KQL to parse the data. To learn more, see [Azure Monitor agent on Windows client devices](/azure/azure-monitor/agents/azure-monitor-agent-windows-client)
+
+> [!TIP]
+> If logs are slow to appear in your SIEM solution, you can decrease the log file size. Just beware that the downsizing results in more resource usage due to the increased log rotation.
+
+## Troubleshoot if the log file is not created or modified
 
 Sometimes the Windows Firewall log files aren't created, or the events aren't written to the log files. Some examples when this condition might occur include:
 
-- missing permissions for the *Windows Defender Firewall Service* (MpsSvc) on the folder or on the log files
-- you want to store the log files in a different folder and the permissions were removed, or haven't been set automatically
+- Missing permissions for the *Windows Defender Firewall Service* (`mpssvc`) on the folder or on the log files
+- You want to store the log files in a different folder and the permissions are missing, or aren't set automatically
 - if firewall logging is configured via policy settings, it can happen that
   - the log folder in the default location `%windir%\System32\LogFiles\firewall` doesn't exist
   - the log folder in a custom path doesn't exist
-  In both cases, you must create the folder manually or via script, and add the permissions for MpsSvc
 
-If firewall logging is configured via Group Policy only, it also can happen that the `firewall` folder is not created in the default location `%windir%\System32\LogFiles\`. The same can happen if a custom path to a non-existent folder is configured via Group Policy. In this case, create the folder manually or via script and add the permissions for MPSSVC.  
+In both cases, you must create the folder manually or via script, and add the permissions for `mpssvc`.
 
 ```PowerShell
 New-Item -ItemType Directory -Path $env:windir\System32\LogFiles\Firewall
 ```
 
-Verify if MpsSvc has *FullControl* on the folder and the files.
-From an elevated PowerShell session, use the following commands, ensuring to use the correct path:
+Verify if `mpssvc` has *FullControl* on the folder and the files. From an elevated PowerShell session, use the following commands, ensuring to use the correct path:
 
 ```PowerShell
 $LogPath = Join-Path -path $env:windir -ChildPath "System32\LogFiles\Firewall"
@@ -100,7 +119,7 @@ BUILTIN\Administrators      FullControl             Allow       False    ObjectI
 NT SERVICE\mpssvc           FullControl             Allow       False    ObjectInherit
 ```
 
-If not, add *FullControl* permissions for mpssvc to the folder, subfolders and files. Make sure to use the correct path.
+If not, add *FullControl* permissions for `mpssvc` to the folder, subfolders and files. Make sure to use the correct path.
 
 ```PowerShell
 $LogPath = Join-Path -path $env:windir -ChildPath "System32\LogFiles\Firewall"

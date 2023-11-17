@@ -15,8 +15,6 @@ items:
       href: configure-logging.md
   - name: Hyper-V firewall
     href: hyper-v-firewall.md
-  - name: Isolate Microsoft Store apps on your network
-    href: isolating-apps-on-your-network.md
   - name: Troubleshoot
     items: 
       - name: Troubleshoot UWP app connectivity issues in Windows Firewall
