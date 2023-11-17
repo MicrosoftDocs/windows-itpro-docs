@@ -15,7 +15,7 @@ ms.date: 11/17/2023
 # What's new in Windows 10, version 1903 for IT Pros
 
 **Applies to**
--   Windows 10, version 1903
+-   Windows 10, version 1903.
 
 This article lists new and updated features and content that are of interest to IT Pros for Windows 10 version 1903, also known as the Windows 10 May 2019 Update. This update also contains all features and fixes included in previous cumulative updates to Windows 10, version 1809.
 
