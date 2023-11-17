@@ -2,7 +2,7 @@
 title: Remote Credential Guard 
 description: Learn how Remote Credential Guard helps to secure Remote Desktop credentials by never sending them to the target device.
 ms.topic: how-to
-ms.date: 09/06/2023
+ms.date: 11/17/2023
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
@@ -130,7 +130,7 @@ reg.exe add HKLM\SYSTEM\CurrentControlSet\Control\Lsa /v DisableRestrictedAdmin 
 To enable Remote Credential Guard on the clients, you can configure a policy that prevents the delegation of credentials to the remote hosts.
 
 > [!TIP]
-> If you don't want to configure your clients to enforce Remote Credential Guard, you can use the following command to use Remote Credential Guard for a specific RDP session:
+> If you don't want to configure your clients to enforce Remote Credential Guard, and if you are an administrator of the remote host, you can use the following command to use Remote Credential Guard for a specific RDP session:
 > ```cmd
 > mstsc.exe /remoteGuard
 > ```
