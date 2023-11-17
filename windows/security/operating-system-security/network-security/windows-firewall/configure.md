@@ -22,8 +22,6 @@ Windows offers different tools to view the status and configure Windows Firewall
 > [!NOTE]
 > To change the configuration of Windows Firewall on a device, you must have administative rights.
 
- #### Windows Defender Firewall with Advanced Security
-
 :::row:::
   :::column span="4":::
     #### Windows Security
@@ -89,7 +87,7 @@ Windows offers different tools to view the status and configure Windows Firewall
 
 ## Firewall rules
 
-In many cases, a first step for administrators is to customize the firewall profiles using *rules*, so that they can work with applications or other types of software. For example, an administrator or user may choose to add a rule to accommodate a program, open a port or protocol, or allow a predefined type of traffic.
+In many cases, a first step for administrators is to customize the firewall profiles using *firewall rules*, so that they can work with applications or other types of software. For example, an administrator or user may choose to add a rule to accommodate a program, open a port or protocol, or allow a predefined type of traffic.
 
 It's recommended to maintain the default Windows Firewall settings whenever possible. The settings are designed to secure your device for use in most network scenarios. One key example is the default Block behavior for Inbound connections.
 
@@ -98,7 +96,7 @@ It's recommended to maintain the default Windows Firewall settings whenever poss
 
 ### Restrictions per profile
 
-You may need to modify the restrictions on your firewall rules depending on which profile the rules are applied to. For applications and services that are designed to only be accessed by devices within a home or small business network, it's best to modify the remote address restriction to specify **Local Subnet** only. The same application or service wouldn't have this restriction when used in an enterprise environment. This can be done by adding the remote address restriction to rules that are added to the private and public profiles, while leaving them unrestricted in the domain profile. This remote address restriction shouldn't apply to applications or services that require global Internet connectivity.
+You may need to modify the restrictions on your firewall rules depending on which profile the rules are applied to. For applications and services that are designed to only be accessed by devices within a home or small business network, it's best to modify the remote address restriction to specify *Local Subnet* only. The same application or service wouldn't have this restriction when used in an enterprise environment. This can be done by adding the remote address restriction to rules that are added to the private and public profiles, while leaving them unrestricted in the domain profile. This remote address restriction shouldn't apply to applications or services that require global Internet connectivity.
 
 ### Rule precedence for inbound rules
 
@@ -150,7 +148,7 @@ Creation of application rules at runtime can also be prohibited by administrator
 
 Firewall rules can be deployed:
 
-1. Locally using the [Windows Defender Firewall with Advanced Security](#windows-defender-firewall-with-advanced-security) console (wf.msc`)`)
+1. Locally using the [Windows Defender Firewall with Advanced Security](#windows-defender-firewall-with-advanced-security) console (`wf.msc`) or the local GPO editor (`gpedit.msc`)
 1. Locally using [command line tools](#command-line-tools)
 1. Remotely using group policy (GPO) settings if the device is a member of an Active Directory domain, or managed by Configuration Manager
 1. Remotely using the [Firewall CSP](/windows/client-management/mdm/firewall-csp), with a mobile device management (MDM) solution like Microsoft Intune
@@ -182,16 +180,16 @@ The Windows Firewall settings configured via GPO or CSP are stored in the regist
 
 Windows Firewall monitors the registry for changes, and if something is written to the registry it notifies the *Windows Filtering Platform (WFP)*, which performs the following actions:
 
-- Reads all firewall rules and settings
-- Applies any new filters
-- Removes the old filters
+1. Reads all firewall rules and settings
+1. Applies any new filters
+1. Removes the old filters
 
 > [!NOTE]
 > The actions are triggered whenever something is written to, or deleted from the registry location the GPO settings are stored, regardless if there's really a configuration change. During the process, IPsec connections are disconnected.
 
-Many policy implementations specify that they're updated only when changed. However, you might want to update unchanged policies, such as reapplying a desired policy setting in case a user has changed it. To control the behavior of the registry group policy processing, you can use the policy `Computer Configuration > Administrative Templates > System > Group Policy > Configure registry policy processing`. The *Process even if the Group Policy objects haven't changed* option updates and reapplies the policies even if the policies haven't changed. This option is disabled by default.
+Many policy implementations specify that they're updated only when changed. However, you might want to update unchanged policies, such as reapplying a desired policy setting in case a user has changed it. To control the behavior of the registry group policy processing, you can use the policy **Computer Configuration** > **Administrative Templates** > **System** > **Group Policy** > **Configure registry policy processing**. The **Process even if the Group Policy objects haven't changed** option updates and reapplies the policies even if the policies haven't changed. This option is disabled by default.
 
-If you enable the option *Process even if the Group Policy objects haven't changed*, the WFP filters get reapplied during **every** background refresh. In case you have 10 group policies, the WFP filters get reapplied 10 times during the refresh interval. If an error happens during policy processing, the applied settings might be incomplete, resulting in issues like:
+If you enable the option **Process even if the Group Policy objects haven't changed**, the WFP filters get reapplied at **every** background refresh. In case you have 10 group policies, the WFP filters get reapplied 10 times during the refresh interval. If an error happens during policy processing, the applied settings might be incomplete, resulting in issues like:
 
 - Windows Firewall blocks inbound or outbound traffic allowed by group policies
 - Local Firewall settings are applied instead of group policy settings
@@ -199,7 +197,7 @@ If you enable the option *Process even if the Group Policy objects haven't chang
 
 The temporary solution is to refresh the group policy settings, using the command `gpupdate.exe /force`, which requires connectivity to a domain controller.
 
-To avoid the issue, leave the policy `Computer Configuration > Administrative Templates > System > Group Policy > Configure registry policy processing` to the default value of *Not Configured* or, if already configured, configure it *Disabled*.
+To avoid the issue, leave the policy **Configure registry policy processing** to the default value of **Not Configured** or, if already configured, configure it **Disabled**.
 
 > [!IMPORTANT]
 > The checkbox next to **Process even if the Group Policy objects have not changed** must be unchecked. If you leave it unchecked, WFP filters are written only in case there's a configuration change.
@@ -240,7 +238,7 @@ Windows Firewall supports the use of Windows Defender Application Control (WDAC)
 
 A Windows Defender Application Control (WDAC) policy must be deployed, which specifies individual applications or groups of applications to apply a *PolicyAppId tag* to the process token(s). Then, the admin can define firewall rules that are scoped to all processes tagged with the matching PolicyAppId.
 
-Follow the detailed [WDAC Application ID (AppId) Tagging Guide](/windows/security/threat-protection/windows-defender-application-control/appidtagging/windows-defender-application-control-appid-tagging-guide) to create, deploy, and test an AppID (Application ID) policy to tag applications.
+Follow the detailed [WDAC Application ID (AppId) Tagging guide](../../../application-security/application-control/windows-defender-application-control/AppIdTagging/wdac-appid-tagging-guide.md) to create, deploy, and test an AppID policy to tag applications.
 
 ### Step 2: Configure Firewall Rules using PolicyAppId Tags
 
