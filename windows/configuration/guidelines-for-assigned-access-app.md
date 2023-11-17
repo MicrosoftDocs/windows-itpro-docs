@@ -1,16 +1,10 @@
 ---
 title: Guidelines for choosing an app for assigned access
 description: The following guidelines may help you choose an appropriate Windows app for your assigned access experience.
-ms.prod: windows-client
 author: lizgt2000
-ms.localizationpriority: medium
 ms.author: lizlong
 ms.topic: article
 ms.reviewer: sybruckm
-manager: aaroncz
-ms.collection:
- - highpri
- - tier2
 ms.technology: itpro-configure
 ms.date: 12/31/2017
 ---

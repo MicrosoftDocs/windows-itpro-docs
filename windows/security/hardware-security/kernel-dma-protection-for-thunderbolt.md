@@ -2,7 +2,6 @@
 title: Kernel DMA Protection
 description: Learn how Kernel DMA Protection protects Windows devices against drive-by Direct Memory Access (DMA) attacks using PCI hot plug devices.
 ms.collection:
-  - highpri
   - tier1
 ms.topic: conceptual
 ms.date: 07/31/2023

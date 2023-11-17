@@ -4,7 +4,6 @@ description: Learn about the Trusted Platform Module (TPM) and how Windows uses 
 ms.topic: conceptual
 ms.date: 11/17/2023
 ms.collection:
-- highpri
 - tier1
 ---
 

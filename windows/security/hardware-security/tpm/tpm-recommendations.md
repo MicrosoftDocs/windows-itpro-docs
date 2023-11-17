@@ -4,7 +4,6 @@ description: This topic provides recommendations for Trusted Platform Module (TP
 ms.topic: conceptual
 ms.date: 11/17/2023
 ms.collection:
-- highpri
 - tier1
 ---
 

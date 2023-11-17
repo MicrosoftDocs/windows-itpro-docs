@@ -1,9 +1,6 @@
 ---
 title: How User Account Control works 
 description: Learn about User Account Control (UAC) components and how it interacts with the end users.
-ms.collection: 
-  - highpri
-  - tier2
 ms.topic: concept-article
 ms.date: 05/24/2023
 ---

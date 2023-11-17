@@ -5,10 +5,6 @@ ms.date: 08/10/2022
 ms.topic: how-to
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
-ms.collection:
-  - highpri
-  - tier2
-  - education
 ---
 
 # Reset devices with Autopilot Reset
@@ -60,7 +56,7 @@ You can set the policy using one of these methods:
 ## Trigger Autopilot Reset
 
 Autopilot Reset is a two-step process: trigger it and then authenticate. Once you've done these two steps, you can let the process execute and once it's done, the device is again ready for use.
-]
+
 To trigger Autopilot Reset:
 
 1. From the Windows device lock screen, enter the keystroke: <kbd>CTRL</kbd> + <kbd>WIN</kbd> + <kbd>R</kbd>.

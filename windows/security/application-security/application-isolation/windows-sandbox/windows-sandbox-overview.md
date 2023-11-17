@@ -1,9 +1,6 @@
 ---
 title: Windows Sandbox
 description: Windows Sandbox overview
-ms.collection:
-  - highpri
-  - tier2
 ms.topic: article
 ms.date: 05/25/2023
 ---
