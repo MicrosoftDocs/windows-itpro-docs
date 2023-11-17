@@ -7,7 +7,7 @@ ms.topic: best-practice
 
 # Configure Windows Firewall
 
-This article describes the available tools to configure Windows Firewall and some recommended practices.
+This article describes the available tools to configure Windows Firewall, firewall rules, and some recommended practices.
 
 ## Configuration tools
 
@@ -15,12 +15,14 @@ Windows offers different tools to view the status and configure Windows Firewall
 
 - [Windows Security](#windows-security)
 - [Control Panel](#control-panel)
-- Windows Defender Firewall with Advanced Security and its integration with the [Microsoft Management Console (MMC)](#microsoft-management-console-mmc)
+- [Windows Defender Firewall with Advanced Security](#windows-defender-firewall-with-advanced-security) and its integration with the Microsoft Management Console (MMC)
 - [Configuration Service Provider (CSP)](#configuration-service-provider-csp)
 - [Command line tools](#command-line-tools)
 
 > [!NOTE]
 > To change the configuration of Windows Firewall on a device, you must have administative rights.
+
+ #### Windows Defender Firewall with Advanced Security
 
 :::row:::
   :::column span="4":::
@@ -53,12 +55,12 @@ Windows offers different tools to view the status and configure Windows Firewall
 :::row-end:::
 :::row:::
   :::column span="4":::
-    #### Microsoft Management Console (MMC)
+    #### Windows Defender Firewall with Advanced Security
   :::column-end:::
 :::row-end:::
 :::row:::
   :::column span="3":::
-    The *Windows Defender Firewall with Advanced Security* MMC snap-in (`wf.msc`) provides advanced configuration functionalities. It can be used locally and in centralized group policy (GPO) management solutions.
+    The *Windows Defender Firewall with Advanced Security* MMC snap-in provides advanced configuration functionalities. It can be used locally (`wf.msc`) and in group policy (GPO) implementations.
   :::column-end:::
   :::column span="1":::
     :::image type="content" source="images/mmc-advanced-security.png" alt-text="Screenshot of the Windows Defender Firewall with Advanced Security MMC snap-in." lightbox="images/mmc-advanced-security.png" border="false":::
@@ -96,7 +98,7 @@ It's recommended to maintain the default Windows Firewall settings whenever poss
 
 ### Restrictions per profile
 
-You may also wish to modify the restrictions on your firewall rules depending on which profile the rules are applied to. For applications and services that are designed to only be accessed by devices within a home or small business network, it's best to modify the remote address restriction to specify **Local Subnet** only. The same application or service wouldn't have this restriction when used in an enterprise environment. This can be done by adding the remote address restriction to rules that are added to the private and public profiles, while leaving them unrestricted in the domain profile. This remote address restriction shouldn't apply to applications or services that require global Internet connectivity.
+You may need to modify the restrictions on your firewall rules depending on which profile the rules are applied to. For applications and services that are designed to only be accessed by devices within a home or small business network, it's best to modify the remote address restriction to specify **Local Subnet** only. The same application or service wouldn't have this restriction when used in an enterprise environment. This can be done by adding the remote address restriction to rules that are added to the private and public profiles, while leaving them unrestricted in the domain profile. This remote address restriction shouldn't apply to applications or services that require global Internet connectivity.
 
 ### Rule precedence for inbound rules
 
@@ -148,7 +150,7 @@ Creation of application rules at runtime can also be prohibited by administrator
 
 Firewall rules can be deployed:
 
-1. Locally using the [Microsoft Management Console (MMC)](#microsoft-management-console-mmc)
+1. Locally using the [Windows Defender Firewall with Advanced Security](#windows-defender-firewall-with-advanced-security) console (wf.msc`)`)
 1. Locally using [command line tools](#command-line-tools)
 1. Remotely using group policy (GPO) settings if the device is a member of an Active Directory domain, or managed by Configuration Manager
 1. Remotely using the [Firewall CSP](/windows/client-management/mdm/firewall-csp), with a mobile device management (MDM) solution like Microsoft Intune

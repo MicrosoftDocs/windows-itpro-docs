@@ -42,44 +42,18 @@ The default behavior of Windows Firewall is to:
 
 ### Firewall rules
 
-*Firewall rules* identify communication to be allowed or blocked, and the conditions for this to happen. The rules offer an extensive selection of conditions to identify traffic, including:
+*Firewall rules* identify allowed or blocked network traffic, and the conditions for this to happen. The rules offer an extensive selection of conditions to identify traffic, including:
 
-- source and destination IP addresses
-- can make use dynamic values, like default gateway, DHCP servers, DNS servers and local subnets
-- protocol name or type
-- source and destination TCP or UDP ports
-- interface type
+- Application, service or program name
+- Source and destination IP addresses
+- Can make use dynamic values, like default gateway, DHCP servers, DNS servers and local subnets
+- Protocol name or type. For transport layer protocols, TCP and UDP, you can specify ports or port ranges. For custom protocols, you can use a number between 0 and 255 representing the IP protocol
+- Interface type
 - ICMP/ICMPv6 traffic type and code
-- rules can apply to any process, any service or spoecific service
 
 ### Firewall profiles
 
 Windows Firewall offers three network profiles: domain, private and public. The network profiles are used to assign rules. For example, you can allow a specific application to communicate on a private network, but not on a public network.
-
-:::row:::
-  :::column span="1":::
-  #### :::image type="icon" source="images/domain-network.svg" border="false"::: Domain network
-  :::column-end:::
-  :::column span="3":::
-  The *domain network* profile is automatically applied to a device that is joined to an Active Directory domain, when it detects the availability of a domain controller. This network profile cannot be set manually.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column span="1":::
-  #### :::image type="icon" source="images/private-network.svg" border="false"::: Private network
-  :::column-end:::
-  :::column span="3":::
-    The *private network* profile is designed for private networks such as a home network. It can be set on a network interface by an administrator.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column span="1":::
-  #### :::image type="icon" source="images/public-network.svg" border="false"::: Public network
-  :::column-end:::
-  :::column span="3":::
-    The *public network* profile is designed with higher security in mind for public networks, like Wi-Fi hotspots, coffee shops, airports, hotels, etc. It's the default profile for unidentified networks.
-  :::column-end:::
-:::row-end:::
 
 #### :::image type="icon" source="images/domain-network.svg" border="false"::: Domain network
 
@@ -96,7 +70,7 @@ The *public network* profile is designed with higher security in mind for public
 ## Next steps
 
 > [!div class="nextstepaction"]
-> Learn about the tools to configure Windows Firewall and some recommended practices:
+> Learn about the tools to configure Windows Firewall, firewall rules, and some recommended practices:
 >
 > [Configure Windows Firewall >](configure.md)
 

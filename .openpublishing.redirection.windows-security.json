@@ -8024,6 +8024,11 @@
       "source_path": "windows/security/operating-system-security/network-security/windows-firewall/configure-the-windows-firewall-log.md",
       "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/configure-logging",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/network-security/windows-firewall/create-windows-firewall-rules-in-intune.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/configure",
+      "redirect_document_id": false
     }
   ]
 }
