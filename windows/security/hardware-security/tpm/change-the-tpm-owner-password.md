@@ -2,7 +2,7 @@
 title: Change the TPM owner password
 description: This topic for the IT professional describes how to change the password or PIN for the owner of the Trusted Platform Module (TPM) that is installed on your system.
 ms.topic: conceptual
-ms.date: 04/26/2023
+ms.date: 11/17/2023
 ---
 
 # Change the TPM owner password
@@ -14,12 +14,7 @@ This article for the IT professional describes how to change the password or PIN
 Starting with Windows 10, version 1607, Windows doesn't retain the TPM owner password when provisioning the TPM. The password is set to a random high entropy value and then discarded.
 
 > [!IMPORTANT]
->
-> Although the TPM owner password isn't retained starting with Windows 10, version 1607, you can change a default registry key to retain it. However, we strongly recommend that you don't make this change. To retain the TPM owner password, under the registry key of
->
-> `HKLM\Software\Policies\Microsoft\TPM`
->
-> create a `REG_DWORD` value of `OSManagedAuthLevel` and set it to `4`.
+> Although the TPM owner password isn't retained starting with Windows 10, version 1607, you can change a default registry key to retain it. However, we strongly recommend that you don't make this change. To retain the TPM owner password, under the registry key `HKLM\Software\Policies\Microsoft\TPM`, create a `REG_DWORD` value of `OSManagedAuthLevel` and set it to `4`.
 >
 > For Windows versions newer than Windows 10 1703, the default value for this key is 5. A value of 5 means:
 >
@@ -52,4 +47,4 @@ You can manage the TPM using Windows PowerShell. For details, see [TPM Cmdlets i
 
 ## Related articles
 
-- [Trusted Platform Module](trusted-platform-module-top-node.md)
+- [Trusted Platform Module](trusted-platform-module-overview.md)
