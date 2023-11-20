@@ -32,7 +32,6 @@ Alternatively, you can configure devices using a [custom policy][INT-1] with the
 | Setting |
 |--------|
 | **Setting name**: Turn On Virtualization Based Security<br>**OMA-URI**: `./Device/Vendor/MSFT/Policy/Config/DeviceGuard/EnableVirtualizationBasedSecurity`<br>**Data type**: int<br>**Value**: `1`|
-| **Setting name**: Credential Guard Configuration<br>**OMA-URI**: `./Device/Vendor/MSFT/Policy/Config/DeviceGuard/LsaCfgFlags`<br>**Data type**: int<br>**Value**:<br>&emsp;**Enabled with UEFI lock**: `1`<br>&emsp;**Enabled without lock**: `2`|
 
 # [:::image type="icon" source="../../../images/icons/group-policy.svg" border="false"::: **Group policy**](#tab/gpo)
 

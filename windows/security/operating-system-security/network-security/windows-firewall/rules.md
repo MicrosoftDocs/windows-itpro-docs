@@ -46,6 +46,38 @@ When first installed, network applications and services issue a *listen call* sp
 > [!NOTE]
 > The firewall's default settings are designed for security. Allowing all inbound connections by default introduces the network to various threats. Therefore, creating exceptions for inbound connections from third-party software should be determined by trusted app developers, the user, or the admin on behalf of the user.
 
+### WDAC tagging policies
+
+Windows Firewall supports the use of Windows Defender Application Control (WDAC) Application ID (AppID) tags in firewall rules. With this capability, Windows Firewall rules can be scoped to an application or a group of applications by referencing process tags, without using absolute path or sacrificing security. There are two steps for this configuration:
+
+1. Deploy WDAC AppId Tagging Policies: a Windows Defender Application Control (WDAC) policy must be deployed, which specifies individual applications or groups of applications to apply a *PolicyAppId tag* to the process token(s). Then, the admin can define firewall rules that are scoped to all processes tagged with the matching PolicyAppId. For more information, see the [WDAC Application ID (AppId) Tagging guide](../../../application-security/application-control/windows-defender-application-control/AppIdTagging/wdac-appid-tagging-guide.md) to create, deploy, and test an AppID policy to tag applications.
+1. Configure Firewall Rules using PolicyAppId Tags using one of the two methods:
+    - Deploy firewall rules with Microsoft Intune: when creating firewall rules with Intune Microsoft Defender Firewall Rules, provide the AppId tag in the Policy App ID setting. The properties come directly from the [Firewall configuration service provider](/windows/client-management/mdm/firewall-csp)(CSP) and apply to the Windows platform. You can do this through the Intune admin center under Endpoint security > Firewall. Policy templates can be found via Create policy > Windows 10, Windows 11, and Windows Server > Microsoft Defender Firewall or Microsoft Defender Firewall Rules
+    - Create local firewall rules with PowerShell: you can use [`New-NetFirewallRule`](/powershell/module/netsecurity/new-netfirewallrule) and specify the `-PolicyAppId` parameter. You can specify one tag at a time while creating firewall rules. Multiple User Ids are supported
+
+## Local policy merge and application rules
+
+*Rule merging* policy settings control how rules from different policy sources can be combined. Administrators can configure different merge behaviors for *Domain*, *Private*, and *Public profiles*.
+
+The rule-merging policy settings either allow or prevent local administrators from creating their own firewall rules in addition to those rules obtained from GPO or CSP.
+
+|  | Path |
+|--|--|
+| **CSP** | Domain Profile: `./Vendor/MSFT/Firewall/MdmStore/DomainProfile/`[AllowLocalPolicyMerge](/windows/client-management/mdm/firewall-csp#mdmstoredomainprofileallowlocalpolicymerge) <br> Private Profile`./Vendor/MSFT/Firewall/MdmStore/PrivateProfile/`[AllowLocalPolicyMerge](/windows/client-management/mdm/firewall-csp#mdmstoreprivateprofileallowlocalpolicymerge) <br> Public Profile `./Vendor/MSFT/Firewall/MdmStore/PublicProfile/`[AllowLocalPolicyMerge](/windows/client-management/mdm/firewall-csp#mdmstorepublicprofileallowlocalipsecpolicymerge) |
+| **GPO** | **Computer Configuration** > **Windows Settings** > **Security Settings** > **Windows Defender Firewall with Advanced Security**|
+
+Administrators may disable *LocalPolicyMerge* in high-security environments to maintain tighter control over endpoints. This setting can impact some applications and services that automatically generate a local firewall policy upon installation.
+
+> [!IMPORTANT]
+> If merging of local policies is disabled, centralized deployment of rules is required for any app that needs inbound connectivity.
+
+It's important to create and maintain a list of such apps, including the network ports used for communications. Typically, you can find what ports must be open for a given service on the app's website. For more complex deployments, a thorough analysis might be needed using network packet capture tools.
+
+In general, to maintain maximum security, admins should only deploy firewall exceptions for apps and services determined to serve legitimate purposes.
+
+> [!NOTE]
+> The use of wildcard patterns, such as `C:\*\teams.exe` isn't supported in application rules. You can only create rules using the full path to the application(s).
+
 ## Firewall rules recommendations
 
 Here's a list of recommendations when designing your firewall rules:
@@ -78,6 +110,14 @@ What follows are a few general guidelines for configuring outbound rules.
 - Changing the outbound rules to *blocked* can be considered for certain highly secure environments. However, the inbound rule configuration should never be changed in a way that allows all traffic by default
 - It's recommended to *allow outbound* by default for most deployments for the sake of simplification with app deployments, unless the organization prefers tight security controls over ease-of-use
 - In high security environments, an inventory of all apps should be logged and maintained. Records must include whether an app used requires network connectivity. Administrators need to create new rules specific to each app that needs network connectivity and push those rules centrally, via GPO or CSP
+
+## Configure firewall rules
+
+Firewall rules can be configure with the following tools:
+
+- Using the [Firewall CSP](/windows/client-management/mdm/firewall-csp), with a mobile device management (MDM) solution like Microsoft Intune. For more information, see [][]
+- Using the Windows Defender Firewall with Advanced Security (WFAS) console, locally or via GPO. For more information, see [][]
+- Using command line tools. For more information, see [][]
 
 ## Next steps
 

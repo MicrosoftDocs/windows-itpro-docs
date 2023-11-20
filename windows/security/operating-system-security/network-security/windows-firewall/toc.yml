@@ -7,8 +7,8 @@ items:
     items: 
     - name: Configure Windows Firewall
       href: configure.md
-    - name: Configure rules with group policy
-      href: configure-rules-with-gpo.md
+    - name: Configure firewall rules with WFAS console
+      href: configure-rules-with-wfas.md
     - name: Configure with command line tools
       href: configure-with-command-line.md
     - name: Configure with Microsoft Intune 🔗
