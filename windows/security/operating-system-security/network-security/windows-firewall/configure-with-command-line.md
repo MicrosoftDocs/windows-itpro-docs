@@ -2,7 +2,7 @@
 title: Manage Windows Firewall with the command line
 description: Learn how to manage Windows Firewall from the command line. This guide provides examples how to manage Windows Firewall with PowerShell and Netsh. 
 ms.topic: conceptual
-ms.date: 11/15/2023
+ms.date: 11/20/2023
 ---
 
 # Manage Windows Firewall with the command line
@@ -285,7 +285,7 @@ netsh advfirewall consec add rule name="Require Inbound Authentication" endpoint
 
 ### Add custom authentication methods to an IPsec rule
 
-If you want to create a custom set of quick-mode proposals that includes both AH and ESP in an IPsec rule object, you create the associated objects separately and link their associations. For more information about authentication methods, see [Choosing the IPsec Protocol](/previous-versions/windows/it-pro/windows-server-2003/cc757847(v=ws.10)) .
+If you want to create a custom set of quick-mode proposals that includes both AH and ESP in an IPsec rule object, you create the associated objects separately and link their associations. For more information about authentication methods, see [Choosing the IPsec Protocol](/previous-versions/windows/it-pro/windows-server-2003/cc757847(v=ws.10)).
 You can then use the newly created custom quick-mode policies when you create IPsec rules. The cryptography set object is linked to an IPsec rule object.
 ![crypto set object.](images/qmcryptoset.gif)
 In this example, we build on the previously created IPsec rule by specifying a custom quick-mode crypto set. The final IPsec rule requires outbound traffic to be authenticated by the specified cryptography method.

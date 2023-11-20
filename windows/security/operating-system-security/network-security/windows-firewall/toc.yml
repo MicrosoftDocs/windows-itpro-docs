@@ -1,6 +1,8 @@
 items:
   - name: Overview
     href: index.md
+  - name: Firewall rules
+    href: rules.md
   - name: Configure and manage Windows Firewall
     items: 
     - name: Configure Windows Firewall

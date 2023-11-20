@@ -2,7 +2,7 @@
 title: Windows Firewall overview 
 description: Learn overview information about the Windows Firewall security feature.
 ms.topic: conceptual
-ms.date: 11/14/2023
+ms.date: 11/20/2023
 ---
 
 # Windows Firewall overview
@@ -61,18 +61,21 @@ The *domain network* profile is automatically applied to a device that is joined
 
 #### :::image type="icon" source="images/private-network.svg" border="false"::: Private network
 
-The *private network* profile is designed for private networks such as a home network. It can be set on a network interface by an administrator.
+The *private network* profile is designed for private networks such as a home network. It can be set manually on a network interface by an administrator.
 
 #### :::image type="icon" source="images/public-network.svg" border="false"::: Public network
 
 The *public network* profile is designed with higher security in mind for public networks, like Wi-Fi hotspots, coffee shops, airports, hotels, etc. It's the default profile for unidentified networks.
+
+> [!TIP]
+> Use the PowerShell cmdlet `Get-NetConnectionProfile` to retrieve the active network category (`NetworkCategory`). Use the PowerShell cmdlet `Set-NetConnectionProfile` to switch the category between *private* and *public*.
 
 ## Next steps
 
 > [!div class="nextstepaction"]
 > Learn about the tools to configure Windows Firewall, firewall rules, and some recommended practices:
 >
-> [Configure Windows Firewall >](configure.md)
+> [Windows Firewall rules >](rules.md)
 
 ## :::image type="icon" source="images/feedback.svg" border="false"::: Provide feedback
 
