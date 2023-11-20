@@ -73,7 +73,7 @@ The *public network* profile is designed with higher security in mind for public
 ## Next steps
 
 > [!div class="nextstepaction"]
-> Learn about the tools to configure Windows Firewall, firewall rules, and some recommended practices:
+> Learn about Windows Firewall rules and design recommendations:
 >
 > [Windows Firewall rules >](rules.md)
 

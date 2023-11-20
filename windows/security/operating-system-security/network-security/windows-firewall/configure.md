@@ -1,13 +1,13 @@
 ---
 title: Configure Windows Firewall
-description: Learn about the available tools to configure Windows Firewall and best practices.
+description: Learn about the available tools to configure Windows Firewall and firewall rules.
 ms.date: 11/15/2023
 ms.topic: best-practice
 ---
 
 # Configure Windows Firewall
 
-This article describes the available tools to configure Windows Firewall, firewall rules, and some recommended practices.
+This article describes the available tools to configure Windows Firewall and firewall rules.
 
 ## Configuration tools
 
@@ -85,65 +85,6 @@ Windows offers different tools to view the status and configure Windows Firewall
   :::column-end:::
 :::row-end:::
 
-## Firewall rules
-
-In many cases, a first step for administrators is to customize the firewall profiles using *firewall rules*, so that they can work with applications or other types of software. For example, an administrator or user may choose to add a rule to accommodate a program, open a port or protocol, or allow a predefined type of traffic.
-
-It's recommended to maintain the default Windows Firewall settings whenever possible. The settings are designed to secure your device for use in most network scenarios. One key example is the default Block behavior for Inbound connections.
-
-> [!TIP]
-> Create your rules in all three profiles, but only enable the firewall rule group on the profiles that suit your scenarios. For example, if you are installing a sharing application that is only used on a private network, then it would be best to create firewall rules in all three profiles, but only enable the firewall rule group containing your rules on the private profile.
-
-### Restrictions per profile
-
-You may need to modify the restrictions on your firewall rules depending on which profile the rules are applied to. For applications and services that are designed to only be accessed by devices within a home or small business network, it's best to modify the remote address restriction to specify *Local Subnet* only. The same application or service wouldn't have this restriction when used in an enterprise environment. This can be done by adding the remote address restriction to rules that are added to the private and public profiles, while leaving them unrestricted in the domain profile. This remote address restriction shouldn't apply to applications or services that require global Internet connectivity.
-
-### Rule precedence for inbound rules
-
-In many cases, allowing specific types of inbound traffic is required for applications to function in the network. Administrators should keep the following rule precedence behaviors in mind when allowing these inbound exceptions:
-
-1. Explicitly defined allow rules take precedence over the default block setting
-1. Explicit block rules take precedence over any conflicting allow rules
-1. More specific rules take precedence over less specific rules, except if there are explicit block rules as mentioned in 2. For example, if the parameters of rule 1 include an IP address range, while the parameters of rule 2 include a single IP host address, rule 2 takes precedence.
-
-> [!TIP]
-> Because of 1 and 2, when designing a set of policies you should make sure that there are no other explicit block rules that could inadvertently overlap, thus preventing the traffic flow you wish to allow.
-
-A general security recommended practice when creating inbound rules is to be as specific as possible. However, when new rules must be made that use ports or IP addresses, consider using consecutive ranges or subnets instead of individual addresses or ports where possible. This approach avoids creation of multiple filters under the hood, reduces complexity, and helps to avoid performance degradation.
-
-> [!NOTE]
-> Windows Firewall doesn't support weighted, administrator-assigned rule ordering. An effective policy set with expected behaviors can be created by keeping in mind the few, consistent, and logical rule behaviors as described.
-
-### Create rules for new applications
-
-When first installed, networked applications and services issue a *listen call* specifying the protocol/port information required for them to function properly. Since there's a default *block* action in Windows Firewall, you must create inbound exception rules to allow the traffic. It's common for the app or the app installer itself to add this firewall rule. Otherwise, the user (or firewall admin on behalf of the user) needs to manually create a rule.
-
-If there's no active application or administrator-defined allow rule(s), a dialog box prompts the user to either allow or block an application's packets the first time the app is launched or tries to communicate in the network:
-
-- If the user has admin permissions, they're prompted. If they respond *No* or cancel the prompt, block rules are created. Two rules are typically created, one each for TCP and UDP traffic
-- If the user isn't a local admin, they won't be prompted. In most cases, block rules are created
-
-In either of these scenarios, once the rules are added, they must be deleted to generate the prompt again. If not, the traffic continues to be blocked.
-
-> [!NOTE]
-> The firewall's default settings are designed for security. Allowing all inbound connections by default introduces the network to various threats. Therefore, creating exceptions for inbound connections from third-party software should be determined by trusted app developers, the user, or the admin on behalf of the user.
-
-### Known issues with automatic rule creation
-
-When designing a set of firewall policies for your network, it's a recommended practice to configure *allow rules* for any networked applications deployed on the host. Having the rules in place before the user first launches the application helps to ensure a seamless experience.
-
-The absence of these staged rules doesn't necessarily mean that in the end an application will be unable to communicate on the network. However, the behaviors involved in the automatic creation of application rules at runtime require user interaction and administrative privilege. If the device is expected to be used by non-administrative users, you should follow best practices and provide these rules before the application's first launch to avoid unexpected networking issues.
-
-To determine why some applications are blocked from communicating in the network, check for the following instances:
-
-1. A user with sufficient privileges receives a query notification advising them that the application needs to make a change to the firewall policy. Not fully understanding the prompt, the user cancels or dismisses the prompt
-1. A user lacks sufficient privileges and is therefore not prompted to allow the application to make the appropriate policy changes
-1. *Local Policy Merge* is disabled, preventing the application or network service from creating local rules
-
-Creation of application rules at runtime can also be prohibited by administrators using the Settings app or policy settings.
-
-:::image type="content" alt-text="Windows Firewall prompt." source="images/fw04-userquery.png":::
-
 ## Local policy merge and application rules
 
 Firewall rules can be deployed:
@@ -217,18 +158,6 @@ Shields up can be achieved by checking **Block all incoming connections, includi
 By default, the Windows Firewall blocks everything unless there's an exception rule created. The *shield up* option overrides the exceptions. For example, the Remote Desktop feature automatically creates firewall rules when enabled. However, if there's an active exploit using multiple ports and services on a host, you can, instead of disabling individual rules, use the shields up mode to block all inbound connections, overriding previous exceptions, including the rules for Remote Desktop. The Remote Desktop rules remain intact but remote access won't work as long as shields up is activated.
 
 Once the emergency is over, uncheck the setting to restore regular network traffic.
-
-## Outbound rules considerations
-
-What follows are a few general guidelines for configuring outbound rules.
-
-- The default configuration of Blocked for Outbound rules can be considered for certain highly secure environments. However, the Inbound rule configuration should never be changed in a way that allows traffic by default
-- It's recommended to Allow Outbound by default for most deployments for the sake of simplification around app deployments, unless the organization prefers tight security controls over ease-of-use
-- In high security environments, an inventory of all apps should be logged and maintained. Records must include whether an app used requires network connectivity. Administrators need to create new rules specific to each app that needs network connectivity and push those rules centrally, via GPO or CSP.
-
-## Document your changes
-
-When creating an inbound or outbound rule, you should specify details about the app itself, the port range used, and important notes like creation date. Rules must be well-documented for ease of review both by you and other admins. We highly encourage taking the time to make the work of reviewing your firewall rules at a later date easier. And *never* create unnecessary holes in your firewall.
 
 ## WDAC tagging policies
 

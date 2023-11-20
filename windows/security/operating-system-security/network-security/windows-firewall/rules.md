@@ -1,6 +1,6 @@
 ---
 title: Windows Firewall rules
-description: Learn about Windows Firewall rules and best practices for creating and managing them.
+description: Learn about Windows Firewall rules and design recommendations.
 ms.date: 11/15/2023
 ms.topic: concept-article
 ---
@@ -9,7 +9,7 @@ ms.topic: concept-article
 
 In many cases, a first step for administrators is to customize the firewall profiles using *firewall rules*, so that they can work with applications or other types of software. For example, an administrator or user may choose to add a rule to accommodate a program, open a port or protocol, or allow a predefined type of traffic.
 
-This article describes the concepts and best practices for creating and managing firewall rules.
+This article describes the concepts and recommendations for creating and managing firewall rules.
 
 ## Rule precedence for inbound rules
 
@@ -43,7 +43,6 @@ When first installed, network applications and services issue a *listen call* sp
   :::column-end:::
 :::row-end:::
 
-
 > [!NOTE]
 > The firewall's default settings are designed for security. Allowing all inbound connections by default introduces the network to various threats. Therefore, creating exceptions for inbound connections from third-party software should be determined by trusted app developers, the user, or the admin on behalf of the user.
 
@@ -76,9 +75,9 @@ Creation of application rules at runtime can also be prohibited by administrator
 
 What follows are a few general guidelines for configuring outbound rules.
 
-- The default configuration of Blocked for Outbound rules can be considered for certain highly secure environments. However, the Inbound rule configuration should never be changed in a way that allows traffic by default
-- It's recommended to Allow Outbound by default for most deployments for the sake of simplification around app deployments, unless the organization prefers tight security controls over ease-of-use
-- In high security environments, an inventory of all apps should be logged and maintained. Records must include whether an app used requires network connectivity. Administrators need to create new rules specific to each app that needs network connectivity and push those rules centrally, via GPO or CSP.
+- Changing the outbound rules to *blocked* can be considered for certain highly secure environments. However, the inbound rule configuration should never be changed in a way that allows all traffic by default
+- It's recommended to *allow outbound* by default for most deployments for the sake of simplification with app deployments, unless the organization prefers tight security controls over ease-of-use
+- In high security environments, an inventory of all apps should be logged and maintained. Records must include whether an app used requires network connectivity. Administrators need to create new rules specific to each app that needs network connectivity and push those rules centrally, via GPO or CSP
 
 ## Next steps
 
