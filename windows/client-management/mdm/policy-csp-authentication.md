@@ -469,10 +469,7 @@ Specifies whether web-based sign-in is allowed for signing in to Windows.
 <!-- EnableWebSignIn-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
-> [!WARNING]
-> The Web sign-in feature is intended for recovery purposes in the event a password isn't available as an authentication method. Web sign-in only supports *temporary access pass* as an authentication method for Microsoft Entra ID, unless it's used in a limited federated scope.
-
-**Web sign-in** is a modern way of signing into a Windows PC. It enables Windows sign-in support for new Microsoft Entra credentials, like temporary access pass.
+Web sign-in is a credential provider that enables a web-based sign-in experience on Windows devices. Initially introduced in Windows 10 with support for Temporary Access Pass (TAP) only, Web sign-in expanded its capabilities starting in Windows 11, version 22H2 with KB5030310. For more information, see [Web sign-in for Windows](/windows/security/identity-protection/web-sign-in).
 
 > [!NOTE]
 > Web sign-in is only supported on Microsoft Entra joined PCs.
