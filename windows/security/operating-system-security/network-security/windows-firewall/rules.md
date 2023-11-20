@@ -28,12 +28,21 @@ Because of 1 and 2, when designing a set of policies you should make sure that t
 
 When first installed, network applications and services issue a *listen call* specifying the protocol/port information required for them to function properly. Since there's a default *block* action in Windows Firewall, you must create inbound exception rules to allow the traffic. It's common for the app or the app installer itself to add this firewall rule. Otherwise, the user (or firewall admin on behalf of the user) needs to manually create a rule.
 
-If there's no active application or administrator-defined allow rule(s), a dialog box prompts the user to either allow or block an application's packets the first time the app is launched or tries to communicate in the network:
+:::row:::
+  :::column span="2":::
+    If there's no active application or administrator-defined allow rule(s), a dialog box prompts the user to either allow or block an application's packets the first time the app is launched or tries to communicate in the network:
 
-- If the user has admin permissions, they're prompted. If they respond *No* or cancel the prompt, block rules are created. Two rules are typically created, one each for TCP and UDP traffic
-- If the user isn't a local admin, they won't be prompted. In most cases, block rules are created
+    - If the user has admin permissions, they're prompted. If they respond *No* or cancel the prompt, block rules are created. Two rules are typically created, one each for TCP and UDP traffic
+    - If the user isn't a local admin, they won't be prompted. In most cases, block rules are created
 
-In either of these scenarios, once the rules are added, they must be deleted to generate the prompt again. If not, the traffic continues to be blocked.
+    In either of these scenarios, once the rules are added, they must be deleted to generate the prompt again. If not, the traffic continues to be blocked.
+
+  :::column-end:::
+  :::column span="2":::
+    :::image type="content" source="images/uac.png" alt-text="Screenshot showing the User Account Control (UAC) prompt to allow Microsoft Teams." border="false":::
+  :::column-end:::
+:::row-end:::
+
 
 > [!NOTE]
 > The firewall's default settings are designed for security. Allowing all inbound connections by default introduces the network to various threats. Therefore, creating exceptions for inbound connections from third-party software should be determined by trusted app developers, the user, or the admin on behalf of the user.
