@@ -131,15 +131,10 @@ Once the emergency is over, uncheck the setting to restore regular network traff
 
 ## Next steps
 
-> [!div class="nextstepaction"]
-> Learn about the tools to configure Windows Firewall and firewall rules:
->
-> [Configure Windows Firewall >](configure.md)
-
+From the following dropdown, select one of tools to learn how to configure Windows Firewall:
 
 > [!div class="op_single_selector"]
-> From the following dropdown, select one of tools to learn how to configure Windows Firewall:
-
+>
 > - [Configure with Microsoft Intune 🔗](/mem/intune/protect/endpoint-security-firewall-policy)
 > - [Configure with GPO](configure.md)
 > - [Configure with command line tools](configure-with-command-line.md)

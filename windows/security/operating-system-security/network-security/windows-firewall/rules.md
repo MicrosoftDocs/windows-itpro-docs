@@ -111,14 +111,6 @@ What follows are a few general guidelines for configuring outbound rules.
 - It's recommended to *allow outbound* by default for most deployments for the sake of simplification with app deployments, unless the organization prefers tight security controls over ease-of-use
 - In high security environments, an inventory of all apps should be logged and maintained. Records must include whether an app used requires network connectivity. Administrators need to create new rules specific to each app that needs network connectivity and push those rules centrally, via GPO or CSP
 
-## Configure firewall rules
-
-Firewall rules can be configure with the following tools:
-
-- Using the [Firewall CSP](/windows/client-management/mdm/firewall-csp), with a mobile device management (MDM) solution like Microsoft Intune. For more information, see [][]
-- Using the Windows Defender Firewall with Advanced Security (WFAS) console, locally or via GPO. For more information, see [][]
-- Using command line tools. For more information, see [][]
-
 ## Next steps
 
 > [!div class="nextstepaction"]
