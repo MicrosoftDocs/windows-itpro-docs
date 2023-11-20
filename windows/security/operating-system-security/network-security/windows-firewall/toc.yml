@@ -1,7 +1,7 @@
 items:
   - name: Overview
     href: index.md
-  - name: Firewall rules
+  - name: Firewall rules concepts
     href: rules.md
   - name: Configure and manage Windows Firewall
     items: 
@@ -9,7 +9,7 @@ items:
       href: tools.md
     - name: Configure with Microsoft Intune 🔗
       href: /mem/intune/protect/endpoint-security-firewall-policy
-    - name: Configure with WFAS
+    - name: Configure with GPO
       href: configure.md
     - name: Configure with command line tools
       href: configure-with-command-line.md

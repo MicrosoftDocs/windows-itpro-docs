@@ -1,11 +1,11 @@
 ---
-title: Configure firewall rules with WFAS console
+title: Configure firewall rules with group policy
 description: Learn how to configure firewall rules using group policy with the Windows Firewall with Advanced Security console.
 ms.topic: how-to
 ms.date: 11/14/2023
 ---
 
-# Configure rules with WFAS console
+# Configure rules with group policy
 
 This article contains examples how to configure Windows Firewall rules using the *Windows Firewall with Advanced Security* console.
 
