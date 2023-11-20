@@ -1,6 +1,6 @@
 ---
 title: Quarantine behavior
-description: Quarantine behavior is explained in detail.
+description: Learn about Windows Firewall and the quarantine feature behavior.
 ms.topic: conceptual
 ms.date: 11/14/2023
 ---
@@ -21,7 +21,7 @@ The quarantine feature creates filters that can be split into three categories:
 
 - Quarantine default inbound block filter
 - Quarantine default exception filters
-- Interface un-quarantine filters
+- Interface unquarantine filters
 
 These filters are added in the `FWPM_SUBLAYER_MPSSVC_QUARANTINE` sublayer and these layers are:
 
@@ -37,26 +37,26 @@ For more information about WFP layers and sublayers, see [WFP Operation](/window
 
 ### Quarantine default inbound block filter
 
-The *quarantine default inbound block filter* blocks any new non-loopback inbound connections, unless the packet isn't explicitly permitted by another filter in the quarantine sublayer.
+The *quarantine default inbound block filter* blocks any new nonloopback inbound connections, unless the packet isn't explicitly permitted by another filter in the quarantine sublayer.
 
 ### Quarantine default exception filters
 
 When the interface is in quarantine state, the quarantine default exception filters permit new inbound connections given that they meet the conditions of an exception filter. One example of the exception filters is the quarantine default inbound loopback exception filter. This exception filter allows all loopback packets when the interface is in quarantine state.
 
-### Interface un-quarantine filter
+### Interface unquarantine filter
 
-The interface un-quarantine filters allow all non-loopback packets if the interface is successfully categorized.
+The interface unquarantine filters allow all nonloopback packets if the interface is successfully categorized.
 
 ## Quarantine flow
 
 The following events describe the general flow of quarantine:
 
 1. There's some change on the current network interface
-1. The interface un-quarantine filters don't permit new inbound connections. The interface is now in quarantine state
-1. All non-loopback inbound connections are either permitted by quarantine default exception filters or dropped by the quarantine default inbound block filter
+1. The interface unquarantine filters don't permit new inbound connections. The interface is now in quarantine state
+1. All nonloopback inbound connections are either permitted by quarantine default exception filters or dropped by the quarantine default inbound block filter
 1. The WFP filters applicable to the old interface state are removed
-1. The WFP filters applicable to the new interface state are added, which include the un-quarantine filters for this interface. These filters are updated to match the interface's current state
-1. The interface has now exited quarantine state as the interface un-quarantine filters permit any new non-loopback packets
+1. The WFP filters applicable to the new interface state are added, which include the unquarantine filters for this interface. These filters are updated to match the interface's current state
+1. The interface has now exited quarantine state as the interface unquarantine filters permit any new nonloopback packets
 
 ## Quarantine diagnostics
 
@@ -64,7 +64,7 @@ There are two methods of identifying packet drops from the quarantine default in
 
 Given that the network connectivity issue is reproducible, diagnostic traces can be collected by running the following in an administrative command prompt:
 
-```console
+```cmd
 Netsh wfp cap start
 <Reproduce network connectivity issue>
 Netsh wfp cap stop
@@ -166,7 +166,7 @@ Alternatively, If the Filtering Platform Connection failure auditing is enabled,
 
 To enable Filtering Platform Connection audits, run the following command in an administrative command prompt:
 
-```console
+```cmd
 Auditpol /set /category:"System" /SubCategory:"Filtering Platform Connection" /success:enable /failure:enable
 ```
 
@@ -177,8 +177,8 @@ Sample drop audit with `filterOrigin` as `Quarantine Default`.
 Once the drop's filter origin has been identified as the quarantine default inbound block filter, the interface should be further investigated. To find the relevant interface, use the `InterfaceIndex` value from the `netEvent` or event audit in the following PowerShell command to generate more information about the interface:
 
 ```Powershell
-Get-NetIPInterface –InterfaceIndex <Interface Index>
-Get-NetIPInterface –InterfaceIndex 5
+Get-NetIPInterface -InterfaceIndex <Interface Index>
+Get-NetIPInterface -InterfaceIndex 5
 ```
 
 ![Quarantine Interfaceindex.](images/quarantine-interfaceindex1.png)

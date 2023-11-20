@@ -27,11 +27,16 @@ To configure Windows Firewall to log dropped packets or successful connections, 
 > [!TIP]
 > You can also configure Windows Firewall by using an *TBD* profile in endpoint security. For more information, see [Account protection policy settings for endpoint security in Microsoft Intune](/mem/intune/protect/endpoint-security-account-protection-profile-settings).
 
-Alternatively, you can configure devices using a [custom policy][INT-1] with the [DeviceGuard Policy CSP][CSP-1].
+Alternatively, you can configure devices using a [custom policy][INT-1] with the [Firewall CSP][CSP-1].
 
-| Setting |
-|--------|
-| **Setting name**: Turn On Virtualization Based Security<br>**OMA-URI**: `./Device/Vendor/MSFT/Policy/Config/DeviceGuard/EnableVirtualizationBasedSecurity`<br>**Data type**: int<br>**Value**: `1`|
+| Network profile | Setting |
+|--------| - |
+| Domain | **Setting name**: [EnableLogDroppedPackets](/windows/client-management/mdm/firewall-csp#mdmstoredomainprofileenablelogdroppedpackets)<br>**OMA-URI**: `./Vendor/MSFT/Firewall/MdmStore/DomainProfile/EnableLogDroppedPackets`|
+| Domain | **Setting name**: [LogFilePath](/windows/client-management/mdm/firewall-csp#mdmstoredomainprofilelogfilepath)<br>**OMA-URI**: `./Vendor/MSFT/Firewall/MdmStore/DomainProfile/LogFilePath`|
+| Private | **Setting name**: [EnableLogDroppedPackets](/windows/client-management/mdm/firewall-csp#mdmstoreprivateprofileenablelogdroppedpackets)<br>**OMA-URI**: `./Vendor/MSFT/Firewall/MdmStore/PrivateProfile/EnableLogDroppedPackets`|
+| Private | **Setting name**: [LogFilePath](/windows/client-management/mdm/firewall-csp#mdmstoreprivateprofilelogfilepath)<br>**OMA-URI**: `./Vendor/MSFT/Firewall/MdmStore/PrivateProfile/LogFilePath`|
+| Public | **Setting name**: [EnableLogDroppedPackets](/windows/client-management/mdm/firewall-csp#mdmstorepublicprofileenablelogdroppedpackets)<br>**OMA-URI**: `./Vendor/MSFT/Firewall/MdmStore/PublicProfile/EnableLogDroppedPackets`|
+| Public | **Setting name**: [LogFilePath](/windows/client-management/mdm/firewall-csp#mdmstorepublicprofilelogfilepath)<br>**OMA-URI**: `./Vendor/MSFT/Firewall/MdmStore/PublicProfile/LogFilePath`|
 
 # [:::image type="icon" source="../../../images/icons/group-policy.svg" border="false"::: **Group policy**](#tab/gpo)
 

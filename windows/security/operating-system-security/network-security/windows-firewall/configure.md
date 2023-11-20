@@ -90,7 +90,7 @@ To create an inbound firewall rule for a program or service:
 1. Open the *Windows Firewall with Advanced Security* console
 1. In the navigation pane, select**Inbound Rules**
 1. Select **Action**, and then select**New rule**
-1. On the **Rule Type** page of the New Inbound Rule Wizard, select**Custom**, and then select**Next**
+1. On the **Rule Type** page of the New Inbound Rule Wizard, select **Custom**, and then select**Next**
     > [!NOTE]
     > Information the user should notice even if skimmingAlthough you can create rules by selecting **Program** or **Port**, those choices limit the number of pages presented by the wizard. If you select **Custom**, you see all of the pages, and have the most flexibility in creating your rules.
 1. On the **Program** page, select**This program path**

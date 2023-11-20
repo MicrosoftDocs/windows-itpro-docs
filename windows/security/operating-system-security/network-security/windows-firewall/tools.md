@@ -1,7 +1,7 @@
 ---
 title: Windows Firewall tools
 description: Learn about the available tools to configure Windows Firewall and firewall rules.
-ms.date: 11/15/2023
+ms.date: 11/20/2023
 ms.topic: best-practice
 ---
 
@@ -125,7 +125,7 @@ Shields up can be achieved by checking **Block all incoming connections, includi
 
 :::image type="content" alt-text="Firewall cpl." source="images/fw07-legacy.png":::
 
-By default, the Windows Firewall blocks everything unless there's an exception rule created. The *shield up* option overrides the exceptions. For example, the Remote Desktop feature automatically creates firewall rules when enabled. However, if there's an active exploit using multiple ports and services on a host, you can, instead of disabling individual rules, use the shields up mode to block all inbound connections, overriding previous exceptions, including the rules for Remote Desktop. The Remote Desktop rules remain intact but remote access won't work as long as shields up is activated.
+By default, the Windows Firewall blocks everything unless there's an exception rule created. The *shield up* option overrides the exceptions. For example, the Remote Desktop feature automatically creates firewall rules when enabled. However, if there's an active exploit using multiple ports and services on a host, you can, instead of disabling individual rules, use the shields up mode to block all inbound connections, overriding previous exceptions, including the rules for Remote Desktop. The Remote Desktop rules remain intact but remote access can't work as long as shields up is active.
 
 Once the emergency is over, uncheck the setting to restore regular network traffic.
 
@@ -135,7 +135,7 @@ From the following dropdown, select one of tools to learn how to configure Windo
 
 > [!div class="op_single_selector"]
 >
-> - [Configure with Microsoft Intune 🔗](/mem/intune/protect/endpoint-security-firewall-policy)
+> - [Configure with Microsoft Intune 🔗][INT-1]
 > - [Configure with GPO](configure.md)
 > - [Configure with command line tools](configure-with-command-line.md)
 
@@ -143,3 +143,4 @@ From the following dropdown, select one of tools to learn how to configure Windo
 
 [SEC-1]: windowsdefender://network/
 [CSP]: /windows/client-management/mdm/firewall-csp
+[INT-1]: /mem/intune/protect/endpoint-security-firewall-policy
