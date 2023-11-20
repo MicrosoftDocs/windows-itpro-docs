@@ -5,10 +5,10 @@ items:
     href: rules.md
   - name: Configure and manage Windows Firewall
     items: 
+    - name: Configuration tools
+      href: tools.md
     - name: Configure Windows Firewall
       href: configure.md
-    - name: Configure firewall rules with WFAS console
-      href: configure-rules-with-wfas.md
     - name: Configure with command line tools
       href: configure-with-command-line.md
     - name: Configure with Microsoft Intune 🔗

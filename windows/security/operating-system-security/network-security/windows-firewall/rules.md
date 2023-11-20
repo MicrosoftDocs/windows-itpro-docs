@@ -35,13 +35,13 @@ When first installed, network applications and services issue a *listen call* sp
     - If the user has admin permissions, they're prompted. If they respond *No* or cancel the prompt, block rules are created. Two rules are typically created, one each for TCP and UDP traffic
     - If the user isn't a local admin, they won't be prompted. In most cases, block rules are created
 
-    In either of these scenarios, once the rules are added, they must be deleted to generate the prompt again. If not, the traffic continues to be blocked.
-
   :::column-end:::
   :::column span="2":::
     :::image type="content" source="images/uac.png" alt-text="Screenshot showing the User Account Control (UAC) prompt to allow Microsoft Teams." border="false":::
   :::column-end:::
 :::row-end:::
+
+In either of these scenarios, once the rules are added, they must be deleted to generate the prompt again. If not, the traffic continues to be blocked.
 
 > [!NOTE]
 > The firewall's default settings are designed for security. Allowing all inbound connections by default introduces the network to various threats. Therefore, creating exceptions for inbound connections from third-party software should be determined by trusted app developers, the user, or the admin on behalf of the user.
@@ -99,7 +99,7 @@ To determine why some applications are blocked from communicating in the network
 
 1. A user with sufficient privileges receives a query notification advising them that the application needs to make a change to the firewall policy. Not fully understanding the prompt, the user cancels or dismisses the prompt
 1. A user lacks sufficient privileges and is therefore not prompted to allow the application to make the appropriate policy changes
-1. *Local Policy Merge* is disabled, preventing the application or network service from creating local rules
+1. [Local policy merge](#local-policy-merge-and-application-rules) is disabled, preventing the application or network service from creating local rules
 
 Creation of application rules at runtime can also be prohibited by administrators using the Settings app or policy settings.
 
@@ -124,4 +124,4 @@ Firewall rules can be configure with the following tools:
 > [!div class="nextstepaction"]
 > Learn about the tools to configure Windows Firewall and firewall rules:
 >
-> [Configure Windows Firewall >](configure.md)
+> [Configuration tools >](tools.md)
