@@ -72,12 +72,6 @@ Windows offers different tools to view the status and configure Windows Firewall
 :::row:::
   :::column span="4":::
     The [Firewall CSP][CSP] provides an interface to configure and query the status of Windows Firewall, which can be used with a mobile device management (MDM) solution like Microsoft Intune.
-
-    To learn more about the CSP options, follow these links:
-
-    - [Configure Windows Firewall settings][SETTINGS]: to configure the settings
-    - [Configure Windows Firewall rules][RULE]: to configure the rules
-
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -141,6 +135,14 @@ Once the emergency is over, uncheck the setting to restore regular network traff
 > Learn about the tools to configure Windows Firewall and firewall rules:
 >
 > [Configure Windows Firewall >](configure.md)
+
+
+> [!div class="op_single_selector"]
+> From the following dropdown, select one of tools to learn how to configure Windows Firewall:
+
+> - [Configure with Microsoft Intune 🔗](/mem/intune/protect/endpoint-security-firewall-policy)
+> - [Configure with GPO](configure.md)
+> - [Configure with command line tools](configure-with-command-line.md)
 
 <!--links-->
 

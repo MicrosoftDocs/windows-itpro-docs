@@ -50,16 +50,16 @@ In either of these scenarios, once the rules are added, they must be deleted to 
 
 Windows Firewall supports the use of Windows Defender Application Control (WDAC) Application ID (AppID) tags in firewall rules. With this capability, Windows Firewall rules can be scoped to an application or a group of applications by referencing process tags, without using absolute path or sacrificing security. There are two steps for this configuration:
 
-1. Deploy WDAC AppId Tagging Policies: a Windows Defender Application Control (WDAC) policy must be deployed, which specifies individual applications or groups of applications to apply a *PolicyAppId tag* to the process token(s). Then, the admin can define firewall rules that are scoped to all processes tagged with the matching PolicyAppId. For more information, see the [WDAC Application ID (AppId) Tagging guide](../../../application-security/application-control/windows-defender-application-control/AppIdTagging/wdac-appid-tagging-guide.md) to create, deploy, and test an AppID policy to tag applications.
-1. Configure Firewall Rules using PolicyAppId Tags using one of the two methods:
-    - Deploy firewall rules with Microsoft Intune: when creating firewall rules with Intune Microsoft Defender Firewall Rules, provide the AppId tag in the Policy App ID setting. The properties come directly from the [Firewall configuration service provider](/windows/client-management/mdm/firewall-csp)(CSP) and apply to the Windows platform. You can do this through the Intune admin center under Endpoint security > Firewall. Policy templates can be found via Create policy > Windows 10, Windows 11, and Windows Server > Microsoft Defender Firewall or Microsoft Defender Firewall Rules
-    - Create local firewall rules with PowerShell: you can use [`New-NetFirewallRule`](/powershell/module/netsecurity/new-netfirewallrule) and specify the `-PolicyAppId` parameter. You can specify one tag at a time while creating firewall rules. Multiple User Ids are supported
+1. Deploy *WDAC AppId tagging policies*: a Windows Defender Application Control policy must be deployed, which specifies individual applications or groups of applications to apply a *PolicyAppId tag* to the process token(s). Then, the admin can define firewall rules that are scoped to all processes tagged with the matching *PolicyAppId*. For more information, see the [WDAC AppId tagging guide](../../../application-security/application-control/windows-defender-application-control/AppIdTagging/wdac-appid-tagging-guide.md) to create, deploy, and test an AppID policy to tag applications.
+1. Configure firewall rules using *PolicyAppId tags* using one of the two methods:
+    - Using the [PolicyAppId node of the Firewall CSP](/windows/client-management/mdm/firewall-csp#mdmstorefirewallrulesfirewallrulenamepolicyappid) with an MDM solution like Microsoft Intune. If you use Microsoft Intune, you can deploy the rules from Microsoft Intune Admin center, under the path **Endpoint security** > **Firewall** > **Create policy** > **Windows 10, Windows 11, and Windows Server** > **Windows Firewall Rules**. When creating the rules, provide the *AppId tag* in the **Policy App ID** setting  
+    - Create local firewall rules with PowerShell: use the [`New-NetFirewallRule`](/powershell/module/netsecurity/new-netfirewallrule) cmdlet and specify the `-PolicyAppId` parameter. You can specify one tag at a time while creating firewall rules. Multiple User Ids are supported
 
 ## Local policy merge and application rules
 
 *Rule merging* policy settings control how rules from different policy sources can be combined. Administrators can configure different merge behaviors for *Domain*, *Private*, and *Public profiles*.
 
-The rule-merging policy settings either allow or prevent local administrators from creating their own firewall rules in addition to those rules obtained from GPO or CSP.
+The rule-merging policy settings either allow or prevent local administrators from creating their own firewall rules in addition to those rules obtained from CSP or GPO.
 
 |  | Path |
 |--|--|
