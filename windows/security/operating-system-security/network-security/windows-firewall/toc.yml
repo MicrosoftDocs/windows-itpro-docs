@@ -11,6 +11,8 @@ items:
       href: configure-rules-with-gpo.md
     - name: Configure with command line tools
       href: configure-with-command-line.md
+    - name: Configure with Microsoft Intune 🔗
+      href: /mem/intune/protect/endpoint-security-firewall-policy
     - name: Configure logging
       href: configure-logging.md
   - name: Hyper-V firewall

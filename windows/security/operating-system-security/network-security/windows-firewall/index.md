@@ -59,6 +59,9 @@ Windows Firewall offers three network profiles: domain, private and public. The 
 
 The *domain network* profile is automatically applied to a device that is joined to an Active Directory domain, when it detects the availability of a domain controller. This network profile cannot be set manually.
 
+> [!TIP]
+> Another option to detect the *domain network* is to configure the policy settings in the [NetworkListManager Policy CSP][CSP-1], which applies to Microsoft Entra joined devices too.
+
 #### :::image type="icon" source="images/private-network.svg" border="false"::: Private network
 
 The *private network* profile is designed for private networks such as a home network. It can be set manually on a network interface by an administrator.
@@ -85,3 +88,4 @@ To provide feedback for Windows Firewall, open [**Feedback Hub**][FHUB] (<kbd>WI
 
 [FHUB]: feedback-hub:?tabid=2&newFeedback=true
 [NLA]: /windows/win32/winsock/network-location-awareness-service-provider-nla--2
+[CSP-1]: /windows/client-management/mdm/policy-csp-networklistmanager
