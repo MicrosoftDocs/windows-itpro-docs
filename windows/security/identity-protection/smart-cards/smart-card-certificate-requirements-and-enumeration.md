@@ -23,23 +23,23 @@ When a smart card is inserted, the following steps are performed.
 1. The certificate is then queried from the key context by using KP_CERTIFICATE. The certificate is added to an in-memory certificate store.
 1. For each certificate in the certificate store from Step 5 or Step 7, the following checks are performed:
 
-    1. The certificate must be valid, based on the computer system clock (not expired or valid with a future date).
-    1. The certificate must not be in the AT_SIGNATURE part of a container.
-    1. The certificate must have a valid user principal name (UPN).
-    1. The certificate must have the digital signature key usage.
-    1. The certificate must have the smart card logon EKU.
+    1. The certificate must be valid, based on the computer system clock (not expired or valid with a future date)
+    1. The certificate must not be in the AT_SIGNATURE part of a container
+    1. The certificate must have a valid user principal name (UPN)
+    1. The certificate must have the digital signature key usage
+    1. The certificate must have the smart card logon EKU
 
-    Any certificate that meets these requirements is displayed to the user with the certificate's UPN (or e-mail address or subject, depending on the presence of the certificate extensions).
+    Any certificate that meets these requirements is displayed to the user with the certificate's UPN (or e-mail address or subject, depending on the presence of the certificate extensions)
 
-1. The process then chooses a certificate, and the PIN is entered.
-1. LogonUI.exe packages the information and sends it to Lsass.exe to process the sign-in attempt.
-1. If successful, LogonUI.exe closes. This causes the context acquired in Step 3 to be released.
+1. The process then chooses a certificate, and the PIN is entered
+1. LogonUI.exe packages the information and sends it to Lsass.exe to process the sign-in attempt
+1. If successful, `LogonUI.exe` closes. This causes the context acquired in Step 3 to be released
 
 ## Smart card sign-in flow in Windows
 
 Most issues during authentication occur because of session behavior changes. When changes occur, the Local Security Authority (LSA) doesn't reacquire the session context; it relies instead on the Cryptographic Service Provider to handle the session change.
 
-Client certificates that don't contain a UPN in the `subjectAltName`` (SAN) field of the certificate can be enabled for sign-in, which supports a wider variety of certificates and supports multiple sign-in certificates on the same card.
+Client certificates that don't contain a UPN in the `subjectAltName` (SAN) field of the certificate can be enabled for sign-in, which supports a wider variety of certificates and supports multiple sign-in certificates on the same card.
 
 Support for multiple certificates on the same card is enabled by default. New certificate types must be enabled through Group Policy.
 
@@ -53,22 +53,22 @@ The following diagram illustrates how smart card sign-in works in the supported 
 
 Following are the steps that are performed during a smart card sign-in:
 
-1. Winlogon requests the sign-in UI credential information.
+1. Winlogon requests the sign-in UI credential information
 1. Asynchronously, smart card resource manager starts, and the smart card credential provider does the following:
-    1. Gets credential information (a list of known credentials, or if no credentials exist, the smart card reader information that Windows detected).
-    1. Gets a list of smart card readers (by using the WinSCard API) and the list of smart cards inserted in each of them.
-    1. Enumerates each card to verify that a sign-in certificate that is controlled by Group Policy is present. If the certificate is present, the smart card credential provider copies it into a temporary, secure cache on the computer or terminal.
+    1. Gets credential information (a list of known credentials, or if no credentials exist, the smart card reader information that Windows detected)
+    1. Gets a list of smart card readers (by using the WinSCard API) and the list of smart cards inserted in each of them
+    1. Enumerates each card to verify that a sign-in certificate that is controlled by Group Policy is present. If the certificate is present, the smart card credential provider copies it into a temporary, secure cache on the computer or terminal
 
     > [!NOTE]
     > Smartcard cache entries are created for certificates with a subject name or with a subject key identifier. If the certificate has a subject name, it is stored with an index that is based on the subject name and certificate issuer. If another certificate with the same subject name and certificate issuer is used, it will replace the existing cached entry. A change in this behavior, allows for the condition when the certificate does not have a subject name, the cache is created with an index that is based on the subject key identifier and certificate issuer. If another certificate has the same the subject key identifier and certificate issuer, the cache entry is replaced. When certificates have neither a subject name nor subject key identifier, a cached entry is not created.
 
-    1. Notifies the sign-in UI that it has new credentials.
+    1. Notifies the sign-in UI that it has new credentials
 
-1. The sign-in UI requests the new credentials from the smart card credential provider. As a response, the smart card credential provider provides each sign-in certificate to the sign-in UI, and corresponding sign-in tiles are displayed. The user selects a smart card-based sign-in certificate tile, and Windows displays a PIN dialog box.
-1. The user enters the PIN, and then presses ENTER. The smart card credential provider encrypts the PIN.
-1. The credential provider that resides in the LogonUI system collects the PIN. As part of packaging credentials in the smart card credential provider, the data is packaged in a KERB_CERTIFICATE_LOGON structure. The main contents of the KERB_CERTIFICATE_LOGON structure are the smart card PIN, CSP data (such as reader name and container name), user name, and domain name. User name is required if the sign-in domain isn't in the same forest because it enables a certificate to be mapped to multiple user accounts.
-1. The credential provider wraps the data (such as the encrypted PIN, container name, reader name, and card key specification) and sends it back to LogonUI.
-1. Winlogon presents the data from LogonUI to the LSA with the user information in LSALogonUser.
+1. The sign-in UI requests the new credentials from the smart card credential provider. As a response, the smart card credential provider provides each sign-in certificate to the sign-in UI, and corresponding sign-in tiles are displayed. The user selects a smart card-based sign-in certificate tile, and Windows displays a PIN dialog box
+1. The user enters the PIN, and then presses ENTER. The smart card credential provider encrypts the PIN
+1. The credential provider that resides in the LogonUI system collects the PIN. As part of packaging credentials in the smart card credential provider, the data is packaged in a KERB_CERTIFICATE_LOGON structure. The main contents of the KERB_CERTIFICATE_LOGON structure are the smart card PIN, CSP data (such as reader name and container name), user name, and domain name. User name is required if the sign-in domain isn't in the same forest because it enables a certificate to be mapped to multiple user accounts
+1. The credential provider wraps the data (such as the encrypted PIN, container name, reader name, and card key specification) and sends it back to LogonUI
+1. Winlogon presents the data from LogonUI to the LSA with the user information in LSALogonUser
 1. LSA calls the Kerberos authentication package (Kerberos SSP) to create a Kerberos authentication service request (KRB_AS_REQ), which containing a preauthenticator (as specified in RFC 4556: [Public Key Cryptography for Initial Authentication in Kerberos (PKINIT)](http://www.ietf.org/rfc/rfc4556.txt)).
 
     If the authentication is performed by using a certificate that uses a digital signature, the preauthentication data consists of the user's public certificate and the certificate that is digitally signed with the corresponding private key.\

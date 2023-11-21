@@ -1,15 +1,13 @@
 ---
-title: Certificate Propagation Service 
-description: This topic for the IT professional describes the certificate propagation service (CertPropSvc), which is used in smart card implementation.
+title: Certificate propagation service 
+description: Learn about the certificate propagation service (CertPropSvc), which is used in smart card implementation.
 ms.topic: concept-article
-ms.date: 08/24/2021
+ms.date: 11/21/2023
 ---
 
-# Certificate Propagation Service
+# Certificate propagation service
 
-This topic for the IT professional describes the certificate propagation service (CertPropSvc), which is used in smart card implementation.
-
-The certificate propagation service activates when a signed-in user inserts a smart card in a reader that is attached to the computer. This action causes the certificate to be read from the smart card. The certificates are then added to the user's Personal store. Certificate propagation service actions are controlled by using Group Policy. For more information, see [Smart Card Group Policy and Registry Settings](smart-card-group-policy-and-registry-settings.md).
+The certificate propagation service (CertPropSvc) is a Windows service that activates when a user inserts a smart card in a reader that is attached to the device. The action causes the certificates to be read from the smart card. The certificates are then added to the user's Personal store. Certificate propagation service actions are controlled by using Group Policy. For more information, see [Smart Card Group Policy and Registry Settings](smart-card-group-policy-and-registry-settings.md).
 
 > [!NOTE]
 > The certificate propagation service must be running for smart card Plug and Play to work.
@@ -47,9 +45,9 @@ Root certificate propagation is responsible for the following smart card deploym
 - Joining the domain
 - Accessing a network remotely
 
-In both cases, the computer isn't joined to a domain, and therefore, trust isn't being managed by Group Policy. However, the objective is to authenticate to a remote server, such as the domain controller. Root certificate propagation provides the ability to use the smart card to include the missing trust chain.
+In both cases, the computer isn't joined to a domain, and therefore, trust isn't being managed by group policy. However, the objective is to authenticate to a remote server, such as the domain controller. Root certificate propagation provides the ability to use the smart card to include the missing trust chain.
 
-When the smart card is inserted, the certificate propagation service propagates any root certificates on the card to the trusted smart card root computer certificate stores. This process establishes a trust relationship with the enterprise resources. You might also use a subsequent cleanup action when the user's smart card is removed from the reader, or when the user signs out. This is configurable with Group Policy. For more information, see [Smart Card Group Policy and Registry Settings](smart-card-group-policy-and-registry-settings.md).
+When the smart card is inserted, the certificate propagation service propagates any root certificates on the card to the trusted smart card root computer certificate stores. This process establishes a trust relationship with the enterprise resources. You might also use a subsequent cleanup action when the user's smart card is removed from the reader, or when the user signs out. This is configurable with group policy. For more information, see [Smart Card Group Policy and Registry Settings](smart-card-group-policy-and-registry-settings.md).
 
 For more information about root certificate requirements, see [Smart card root certificate requirements for use with domain sign-in](smart-card-certificate-requirements-and-enumeration.md#smart-card-root-certificate-requirements-for-use-with-domain-sign-in).
 
