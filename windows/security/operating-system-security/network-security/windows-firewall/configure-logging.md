@@ -16,27 +16,33 @@ To configure Windows Firewall to log dropped packets or successful connections, 
 
 # [:::image type="icon" source="../../../images/icons/intune.svg" border="false"::: **Intune/CSP**](#tab/intune)
 
-[!INCLUDE [intune-settings-catalog-1](../../../../../includes/configure/intune-settings-catalog-1.md)]
-
-| Category | Setting name | Value |
-|--|--|--|
-| | | |
-
-[!INCLUDE [intune-settings-catalog-2](../../../../../includes/configure/intune-settings-catalog-2.md)]
-
-> [!TIP]
-> You can also configure Windows Firewall by using an *TBD* profile in endpoint security. For more information, see [Account protection policy settings for endpoint security in Microsoft Intune](/mem/intune/protect/endpoint-security-account-protection-profile-settings).
+1. Sign into the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431)
+1. Go to **Endpoint security** > **Firewall** > **Create policy** > **Windows 10, Windows 11, and Windows Server** > **Windows Firewall** > **Create**
+1. Enter a name and, optionally, a description > **Next**
+1. Under **Configuration settings**, for each network location type (Domain, Private, Public), configure:
+    1. **Log file path**
+    1. **Enable log dropped packets**
+    1. **Enable log success connections**
+    1. **Log max file size**
+1. Select **Next** > **Next**
+1. Assign the policy to a group that contains as members the devices or users that you want to configure > **Next** > **Create**
 
 Alternatively, you can configure devices using a [custom policy][INT-1] with the [Firewall CSP][CSP-1].
 
 | Network profile | Setting |
-|--------| - |
-| Domain | **Setting name**: [EnableLogDroppedPackets](/windows/client-management/mdm/firewall-csp#mdmstoredomainprofileenablelogdroppedpackets)<br>**OMA-URI**: `./Vendor/MSFT/Firewall/MdmStore/DomainProfile/EnableLogDroppedPackets`|
-| Domain | **Setting name**: [LogFilePath](/windows/client-management/mdm/firewall-csp#mdmstoredomainprofilelogfilepath)<br>**OMA-URI**: `./Vendor/MSFT/Firewall/MdmStore/DomainProfile/LogFilePath`|
-| Private | **Setting name**: [EnableLogDroppedPackets](/windows/client-management/mdm/firewall-csp#mdmstoreprivateprofileenablelogdroppedpackets)<br>**OMA-URI**: `./Vendor/MSFT/Firewall/MdmStore/PrivateProfile/EnableLogDroppedPackets`|
-| Private | **Setting name**: [LogFilePath](/windows/client-management/mdm/firewall-csp#mdmstoreprivateprofilelogfilepath)<br>**OMA-URI**: `./Vendor/MSFT/Firewall/MdmStore/PrivateProfile/LogFilePath`|
-| Public | **Setting name**: [EnableLogDroppedPackets](/windows/client-management/mdm/firewall-csp#mdmstorepublicprofileenablelogdroppedpackets)<br>**OMA-URI**: `./Vendor/MSFT/Firewall/MdmStore/PublicProfile/EnableLogDroppedPackets`|
-| Public | **Setting name**: [LogFilePath](/windows/client-management/mdm/firewall-csp#mdmstorepublicprofilelogfilepath)<br>**OMA-URI**: `./Vendor/MSFT/Firewall/MdmStore/PublicProfile/LogFilePath`|
+|--|--|
+| Domain | **Setting name**: [EnableLogDroppedPackets](/windows/client-management/mdm/firewall-csp#mdmstoredomainprofileenablelogdroppedpackets)<br>**OMA-URI**: `./Vendor/MSFT/Firewall/MdmStore/DomainProfile/EnableLogDroppedPackets` |
+| Domain | **Setting name**: [LogFilePath](/windows/client-management/mdm/firewall-csp#mdmstoredomainprofilelogfilepath)<br>**OMA-URI**: `./Vendor/MSFT/Firewall/MdmStore/DomainProfile/LogFilePath` |
+| Domain | **Setting name**: [EnableLogSuccessConnections](/windows/client-management/mdm/firewall-csp#mdmstoredomainprofileenablelogsuccessconnections)<br>**OMA-URI**: `./Vendor/MSFT/Firewall/MdmStore/DomainProfile/EnableLogSuccessConnections` |
+| Domain | **Setting name**: [LogMaxFileSize](/windows/client-management/mdm/firewall-csp#mdmstoredomainprofilelogmaxfilesize)<br>**OMA-URI**: `./Vendor/MSFT/Firewall/MdmStore/DomainProfile/LogMaxFileSize` |
+| Private | **Setting name**: [EnableLogDroppedPackets](/windows/client-management/mdm/firewall-csp#mdmstoreprivateprofileenablelogdroppedpackets)<br>**OMA-URI**: `./Vendor/MSFT/Firewall/MdmStore/PrivateProfile/EnableLogDroppedPackets` |
+| Private | **Setting name**: [LogFilePath](/windows/client-management/mdm/firewall-csp#mdmstoreprivateprofilelogfilepath)<br>**OMA-URI**: `./Vendor/MSFT/Firewall/MdmStore/PrivateProfile/LogFilePath` |
+| Private | **Setting name**: [EnableLogSuccessConnections](/windows/client-management/mdm/firewall-csp#mdmstoreprivateprofileenablelogsuccessconnections)<br>**OMA-URI**: `./Vendor/MSFT/Firewall/MdmStore/PrivateProfile/EnableLogSuccessConnections` |
+| Private | **Setting name**: [LogMaxFileSize](/windows/client-management/mdm/firewall-csp#mdmstoreprivateprofilelogmaxfilesize)<br>**OMA-URI**: `./Vendor/MSFT/Firewall/MdmStore/PrivateProfile/LogMaxFileSize` |
+| Public | **Setting name**: [EnableLogDroppedPackets](/windows/client-management/mdm/firewall-csp#mdmstorepublicprofileenablelogdroppedpackets)<br>**OMA-URI**: `./Vendor/MSFT/Firewall/MdmStore/PublicProfile/EnableLogDroppedPackets` |
+| Public | **Setting name**: [LogFilePath](/windows/client-management/mdm/firewall-csp#mdmstorepublicprofilelogfilepath)<br>**OMA-URI**: `./Vendor/MSFT/Firewall/MdmStore/PublicProfile/LogFilePath` |
+| Public | **Setting name**: [EnableLogSuccessConnections](/windows/client-management/mdm/firewall-csp#mdmstorepublicprofileenablelogsuccessconnections)<br>**OMA-URI**: `./Vendor/MSFT/Firewall/MdmStore/PublicProfile/EnableLogSuccessConnections` |
+| Public | **Setting name**: [LogMaxFileSize](/windows/client-management/mdm/firewall-csp#mdmstorepublicprofilelogmaxfilesize)<br>**OMA-URI**: `./Vendor/MSFT/Firewall/MdmStore/PublicProfile/LogMaxFileSize` |
 
 # [:::image type="icon" source="../../../images/icons/group-policy.svg" border="false"::: **Group policy**](#tab/gpo)
 
@@ -48,8 +54,6 @@ Alternatively, you can configure devices using a [custom policy][INT-1] with the
     1. Select the tab that corresponds to the network location type
     1. Under **Logging**, select **Customize**
     1. The default path for the log is `%windir%\system32\logfiles\firewall\pfirewall.log`. If you want to change this path, clear the **Not configured** check box and enter the path to the new location, or select **Browse** to select a file location
-        > [!IMPORTANT]
-        > The location you specify must have permissions assigned that permit the Windows Firewall service to write to the log file.
 1. The default maximum file size for the log is 4,096 kilobytes (KB). If you want to change this size, clear the **Not configured** check box, and enter the new size in KB, or use the up and down arrows to select a size. The file won't grow beyond this size; when the limit is reached, old log entries are deleted to make room for the newly created ones.
 1. No logging occurs until you set one of following two options:
     - To create a log entry when Windows Defender Firewall drops an incoming network packet, change **Log dropped packets** to **Yes**
@@ -59,6 +63,9 @@ Alternatively, you can configure devices using a [custom policy][INT-1] with the
 [!INCLUDE [gpo-settings-2](../../../../../includes/configure/gpo-settings-2.md)]
 
 ---
+
+> [!IMPORTANT]
+> The location you specify must have permissions assigned that permit the Windows Firewall service to write to the log file.
 
 ## Recommendations
 
