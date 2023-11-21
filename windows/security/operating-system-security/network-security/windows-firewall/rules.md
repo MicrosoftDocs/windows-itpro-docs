@@ -1,7 +1,7 @@
 ---
 title: Windows Firewall rules
 description: Learn about Windows Firewall rules and design recommendations.
-ms.date: 11/15/2023
+ms.date: 11/21/2023
 ms.topic: concept-article
 ---
 

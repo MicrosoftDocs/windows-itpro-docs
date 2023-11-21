@@ -136,7 +136,7 @@ From the following dropdown, select one of tools to learn how to configure Windo
 > [!div class="op_single_selector"]
 >
 > - [Configure with Microsoft Intune 🔗][INT-1]
-> - [Configure with GPO](configure.md)
+> - [Configure with group policy](configure.md)
 > - [Configure with command line tools](configure-with-command-line.md)
 
 <!--links-->

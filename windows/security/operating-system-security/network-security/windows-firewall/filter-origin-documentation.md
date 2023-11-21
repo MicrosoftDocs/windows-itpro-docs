@@ -2,7 +2,7 @@
 title: Filter origin audit log improvements
 description: Filter origin documentation audit log improvements
 ms.topic: troubleshooting
-ms.date: 11/07/2023
+ms.date: 11/21/2023
 ---
 
 # Filter origin audit log improvements

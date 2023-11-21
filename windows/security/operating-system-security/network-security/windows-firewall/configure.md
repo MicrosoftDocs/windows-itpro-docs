@@ -2,7 +2,7 @@
 title: Configure firewall rules with group policy
 description: Learn how to configure firewall rules using group policy with the Windows Firewall with Advanced Security console.
 ms.topic: how-to
-ms.date: 11/14/2023
+ms.date: 11/21/2023
 ---
 
 # Configure rules with group policy
@@ -20,45 +20,45 @@ If you are configuring a single device, you must have administrative rights on t
 This type of rule allows ICMP requests and responses to be received by devices on the network. To create an inbound ICMP rule:
 
 1. Open the *Windows Firewall with Advanced Security* console
-1. In the navigation pane, select**Inbound Rules**
-1. Select **Action**, and then select**New rule**
-1. On the **Rule Type** page of the New Inbound Rule Wizard, select**Custom**, and then select**Next**
-1. On the **Program** page, select**All programs**, and then select**Next**
+1. In the navigation pane, select **Inbound Rules**
+1. Select **Action**, and then select **New rule**
+1. On the **Rule Type** page of the New Inbound Rule Wizard, select **Custom**, and then select **Next**
+1. On the **Program** page, select **All programs**, and then select **Next**
 1. On the **Protocol and Ports** page, select **ICMPv4** or **ICMPv6** from the **Protocol type** list. If you use both IPv4 and IPv6 on your network, you must create a separate ICMP rule for each
 1. Select **Customize**
 1. In the **Customize ICMP Settings** dialog box, do one of the following:
-    - To allow all ICMP network traffic, select**All ICMP types**, and then select**OK**
-    - To select one of the predefined ICMP types, select**Specific ICMP types**, and then select each type in the list that you want to allow. Select **OK**
-    - To select an ICMP type that does not appear in the list, select**Specific ICMP types**, select the **Type** number from the list, select the **Code** number from the list, select**Add**, and then select the newly created entry from the list. Select **OK**
+    - To allow all ICMP network traffic, select **All ICMP types**, and then select **OK**
+    - To select one of the predefined ICMP types, select **Specific ICMP types**, and then select each type in the list that you want to allow. Select **OK**
+    - To select an ICMP type that does not appear in the list, select **Specific ICMP types**, select the **Type** number from the list, select the **Code** number from the list, select **Add**, and then select the newly created entry from the list. Select **OK**
 1. Select **Next**
-1. On the **Scope** page, you can specify that the rule applies only to network traffic to or from the IP addresses entered on this page. Configure as appropriate for your design, and then select**Next**
-1. On the **Action** page, select **Allow the connection**, and then select**Next**
-1. On the **Profile** page, select the network location types to which this rule applies, and then select**Next**
-1. On the **Name** page, type a name and description for your rule, and then select**Finish**
+1. On the **Scope** page, you can specify that the rule applies only to network traffic to or from the IP addresses entered on this page. Configure as appropriate for your design, and then select **Next**
+1. On the **Action** page, select **Allow the connection**, and then select **Next**
+1. On the **Profile** page, select the network location types to which this rule applies, and then select **Next**
+1. On the **Name** page, type a name and description for your rule, and then select **Finish**
 
 ## Create an inbound port rule
 
 This type of rule allows any program that listens on a specified TCP or UDP port to receive network traffic sent to that port. To create an inbound port rule:
 
 1. Open the *Windows Firewall with Advanced Security* console
-1. In the navigation pane, select**Inbound Rules**
-1. Select **Action**, and then select**New rule**
-1. On the **Rule Type** page of the New Inbound Rule Wizard, select**Custom**, and then select**Next**
+1. In the navigation pane, select **Inbound Rules**
+1. Select **Action**, and then select **New rule**
+1. On the **Rule Type** page of the New Inbound Rule Wizard, select **Custom**, and then select **Next**
    > [!NOTE]
    > Although you can create rules by selecting **Program** or **Port**, those choices limit the number of pages presented by the wizard. If you select **Custom**, you see all of the pages, and have the most flexibility in creating your rules.
-1. On the **Program** page, select**All programs**, and then select**Next**
+1. On the **Program** page, select **All programs**, and then select **Next**
    > [!NOTE]
    > This type of rule is often combined with a program or service rule. If you combine the rule types, you get a firewall rule that limits traffic to a specified port and allows the traffic only when the specified program is running. The specified program cannot receive network traffic on other ports, and other programs cannot receive network traffic on the specified port. If you choose to do this, follow the steps in the [Create an Inbound Program or Service Rule](#create-an-inbound-program-or-service-rule) procedure in addition to the steps in this procedure to create a single rule that filters network traffic using both program and port criteria.
 1. On the **Protocol and Ports** page, select the protocol type that you want to allow. To restrict the rule to a specified port number, you must select either **TCP** or **UDP**. Because this is an incoming rule, you typically configure only the local port number
    If you select another protocol, then only packets whose protocol field in the IP header match this rule are permitted through the firewall.\
    To select a protocol by its number, select **Custom** from the list, and then type the number in the **Protocol number** box.\
-   When you have configured the protocols and ports, select**Next**.
-1. On the **Scope** page, you can specify that the rule applies only to network traffic to or from the IP addresses entered on this page. Configure as appropriate for your design, and then select**Next**
-1. On the **Action** page, select **Allow the connection**, and then select**Next**
-1. On the **Profile** page, select the network location types to which this rule applies, and then select**Next**
+   When you have configured the protocols and ports, select **Next**.
+1. On the **Scope** page, you can specify that the rule applies only to network traffic to or from the IP addresses entered on this page. Configure as appropriate for your design, and then select **Next**
+1. On the **Action** page, select **Allow the connection**, and then select **Next**
+1. On the **Profile** page, select the network location types to which this rule applies, and then select **Next**
    > [!NOTE]
    > If this GPO is targeted at server computers running Windows Server 2008 that never move, consider modifying the rules to apply to all network location type profiles. This prevents an unexpected change in the applied rules if the network location type changes due to the installation of a new network card or the disconnection of an existing network card's cable. A disconnected network card is automatically assigned to the Public network location type.
-1. On the **Name** page, type a name and description for your rule, and then select**Finish**
+1. On the **Name** page, type a name and description for your rule, and then select **Finish**
 
 ## Create an outbound port rule
 
@@ -88,17 +88,17 @@ This type of rule allows the program to listen and receive inbound network traff
 To create an inbound firewall rule for a program or service:
 
 1. Open the *Windows Firewall with Advanced Security* console
-1. In the navigation pane, select**Inbound Rules**
-1. Select **Action**, and then select**New rule**
-1. On the **Rule Type** page of the New Inbound Rule Wizard, select **Custom**, and then select**Next**
+1. In the navigation pane, select **Inbound Rules**
+1. Select **Action**, and then select **New rule**
+1. On the **Rule Type** page of the New Inbound Rule Wizard, select **Custom**, and then select **Next**
     > [!NOTE]
     > Information the user should notice even if skimmingAlthough you can create rules by selecting **Program** or **Port**, those choices limit the number of pages presented by the wizard. If you select **Custom**, you see all of the pages, and have the most flexibility in creating your rules.
-1. On the **Program** page, select**This program path**
+1. On the **Program** page, select **This program path**
 1. Type the path to the program in the text box. Use environment variables, where applicable, to ensure that programs installed in different locations on different computers work correctly.
 1. Do one of the following:
-    - If the executable file contains a single program, select**Next**
-    - If the executable file is a container for multiple services that must all be allowed to receive inbound network traffic, select**Customize**, select **Apply to services only**, select**OK**, and then select**Next**
-    - If the executable file is a container for a single service or contains multiple services but the rule only applies to one of them, select**Customize**, select **Apply to this service**, and then select the service from the list. If the service does not appear in the list, select**Apply to service with this service short name**, and then type the short name for the service in the text box. Select **OK**, and then select**Next**
+    - If the executable file contains a single program, select **Next**
+    - If the executable file is a container for multiple services that must all be allowed to receive inbound network traffic, select **Customize**, select **Apply to services only**, select **OK**, and then select **Next**
+    - If the executable file is a container for a single service or contains multiple services but the rule only applies to one of them, select **Customize**, select **Apply to this service**, and then select the service from the list. If the service does not appear in the list, select **Apply to service with this service short name**, and then type the short name for the service in the text box. Select **OK**, and then select **Next**
 
     > [!IMPORTANT]
     > To use the **Apply to this service** or **Apply to service with this service short name** options, the service must be configured with a security identifier (SID) with a type of **RESTRICTED** or **UNRESTRICTED**. To check the SID type of a service, run the following command: `sc qsidtype <ServiceName>`
@@ -109,11 +109,11 @@ To create an inbound firewall rule for a program or service:
 
     In the preceding command, the value of `<Type>` can be `UNRESTRICTED` or `RESTRICTED`. Although the command also permits the value of `NONE`, that setting means the service cannot be used in a firewall rule as described here. By default, most services in Windows are configured as `UNRESTRICTED`. If you change the SID type to `RESTRICTED`, the service might fail to start. We recommend that you change the SID type only on services that you want to use in firewall rules, and that you change the SID type to `UNRESTRICTED`.
 
-1. It is a best practice to restrict the firewall rule for the program to only the ports it needs to operate. On the **Protocols and Ports** page, you can specify the port numbers for the allowed traffic. If the program tries to listen on a port different from the one specified here, it is blocked. For more information about protocol and port options, see [Create an Inbound Port Rule](#create-an-inbound-port-rule). After you have configured the protocol and port options, select**Next**
-1. On the **Scope** page, you can specify that the rule applies only to network traffic to or from the IP addresses entered on this page. Configure as appropriate for your design, and then select**Next**
-1. On the **Action** page, select **Allow the connection**, and then select**Next**
-1. On the **Profile** page, select the network location types to which this rule applies, and then select**Next**
-1. On the **Name** page, type a name and description for your rule, and then select**Finish**
+1. It is a best practice to restrict the firewall rule for the program to only the ports it needs to operate. On the **Protocols and Ports** page, you can specify the port numbers for the allowed traffic. If the program tries to listen on a port different from the one specified here, it is blocked. For more information about protocol and port options, see [Create an Inbound Port Rule](#create-an-inbound-port-rule). After you have configured the protocol and port options, select **Next**
+1. On the **Scope** page, you can specify that the rule applies only to network traffic to or from the IP addresses entered on this page. Configure as appropriate for your design, and then select **Next**
+1. On the **Action** page, select **Allow the connection**, and then select **Next**
+1. On the **Profile** page, select the network location types to which this rule applies, and then select **Next**
+1. On the **Name** page, type a name and description for your rule, and then select **Finish**
 
 ## Create an outbound program or service rule
 
@@ -149,30 +149,30 @@ Using the two rules configured as described in this topic helps to protect your 
 ### RPC Endpoint Mapper service
 
 1. Open the *Windows Firewall with Advanced Security* console
-1. In the navigation pane, select**Inbound Rules**
-1. Select **Action**, and then select**New rule**
-1. On the **Rule Type** page of the New Inbound Rule Wizard, select**Custom**, and then select**Next**
-1. On the **Program** page, select**This Program Path**, and then type `%systemroot%\system32\svchost.exe`
+1. In the navigation pane, select **Inbound Rules**
+1. Select **Action**, and then select **New rule**
+1. On the **Rule Type** page of the New Inbound Rule Wizard, select **Custom**, and then select **Next**
+1. On the **Program** page, select **This Program Path**, and then type `%systemroot%\system32\svchost.exe`
 1. Select **Customize**.
-1. In the **Customize Service Settings** dialog box, select**Apply to this service**, select **Remote Procedure Call (RPC)** with a short name of **RpcSs**, select**OK**, and then select**Next**
-1. On the warning about Windows service-hardening rules, select**Yes**
+1. In the **Customize Service Settings** dialog box, select **Apply to this service**, select **Remote Procedure Call (RPC)** with a short name of **RpcSs**, select **OK**, and then select **Next**
+1. On the warning about Windows service-hardening rules, select **Yes**
 1. On the **Protocol and Ports** dialog box, for **Protocol type**, select **TCP**
-1. For **Local port**, select **RPC Endpoint Mapper**, and then select**Next**
-1. On the **Scope** page, you can specify that the rule applies only to network traffic to or from the IP addresses entered on this page. Configure as appropriate for your design, and then select**Next**
-1. On the **Action** page, select **Allow the connection**, and then select**Next**
-1. On the **Profile** page, select the network location types to which this rule applies, and then select**Next**
-1. On the **Name** page, type a name and description for your rule, and then select**Finish**
+1. For **Local port**, select **RPC Endpoint Mapper**, and then select **Next**
+1. On the **Scope** page, you can specify that the rule applies only to network traffic to or from the IP addresses entered on this page. Configure as appropriate for your design, and then select **Next**
+1. On the **Action** page, select **Allow the connection**, and then select **Next**
+1. On the **Profile** page, select the network location types to which this rule applies, and then select **Next**
+1. On the **Name** page, type a name and description for your rule, and then select **Finish**
 
 ### RPC-enabled network services
 
-1. On the same GPO you edited in the preceding procedure, select**Action**, and then select**New rule**
-1. On the **Rule Type** page of the New Inbound Rule Wizard, select**Custom**, and then select**Next**
-1. On the **Program** page, select**This Program Path**, and then type the path to the executable file that hosts the network service. Select **Customize**
-1. In the **Customize Service Settings** dialog box, select**Apply to this service**, and then select the service that you want to allow. If the service doesn't appear in the list, then select**Apply to service with this service short name**, and then type the short name of the service in the text box
-1. Select **OK**, and then select**Next**
+1. On the same GPO you edited in the preceding procedure, select **Action**, and then select **New rule**
+1. On the **Rule Type** page of the New Inbound Rule Wizard, select **Custom**, and then select **Next**
+1. On the **Program** page, select **This Program Path**, and then type the path to the executable file that hosts the network service. Select **Customize**
+1. In the **Customize Service Settings** dialog box, select **Apply to this service**, and then select the service that you want to allow. If the service doesn't appear in the list, then select **Apply to service with this service short name**, and then type the short name of the service in the text box
+1. Select **OK**, and then select **Next**
 1. On the **Protocol and Ports** dialog box, for **Protocol type**, select **TCP**
-1. For **Local port**, select **RPC Dynamic Ports**, and then select**Next**
-1. On the **Scope** page, you can specify that the rule applies only to network traffic to or from the IP addresses entered on this page. Configure as appropriate for your design, and then select**Next**
-1. On the **Action** page, select **Allow the connection**, and then select**Next**
-1. On the **Profile** page, select the network location types to which this rule applies, and then select**Next**
-1. On the **Name** page, type a name and description for your rule, and then select**Finish**
+1. For **Local port**, select **RPC Dynamic Ports**, and then select **Next**
+1. On the **Scope** page, you can specify that the rule applies only to network traffic to or from the IP addresses entered on this page. Configure as appropriate for your design, and then select **Next**
+1. On the **Action** page, select **Allow the connection**, and then select **Next**
+1. On the **Profile** page, select the network location types to which this rule applies, and then select **Next**
+1. On the **Name** page, type a name and description for your rule, and then select **Finish**

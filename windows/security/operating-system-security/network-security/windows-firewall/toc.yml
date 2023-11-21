@@ -25,5 +25,3 @@ items:
         href: filter-origin-documentation.md
       - name: Quarantine behavior
         href: quarantine.md
-      - name: Firewall settings lost on upgrade
-        href: firewall-settings-lost-on-upgrade.md

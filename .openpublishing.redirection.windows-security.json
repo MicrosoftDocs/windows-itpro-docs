@@ -7962,32 +7962,32 @@
     },
     {
       "source_path": "windows/security/operating-system-security/network-security/windows-firewall/create-inbound-rules-to-support-rpc.md",
-      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/configure-rules-with-gpo",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/configure",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/security/operating-system-security/network-security/windows-firewall/create-an-outbound-program-or-service-rule.md",
-      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/configure-rules-with-gpo",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/configure",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/security/operating-system-security/network-security/windows-firewall/create-an-outbound-port-rule.md",
-      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/configure-rules-with-gpo",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/configure",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/security/operating-system-security/network-security/windows-firewall/create-an-inbound-program-or-service-rule.md",
-      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/configure-rules-with-gpo",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/configure",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/security/operating-system-security/network-security/windows-firewall/create-an-inbound-port-rule.md",
-      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/configure-rules-with-gpo",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/configure",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/security/operating-system-security/network-security/windows-firewall/create-an-inbound-icmp-rule.md",
-      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/configure-rules-with-gpo",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/configure",
       "redirect_document_id": false
     },
     {
@@ -8033,6 +8033,11 @@
     {
       "source_path": "windows/security/operating-system-security/network-security/windows-firewall/create-windows-firewall-rules-in-intune.md",
       "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/configure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/network-security/windows-firewall/firewall-settings-lost-on-upgrade.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall",
       "redirect_document_id": false
     }
   ]
