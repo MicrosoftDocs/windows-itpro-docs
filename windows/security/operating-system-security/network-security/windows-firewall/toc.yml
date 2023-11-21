@@ -13,12 +13,12 @@ items:
       href: configure.md
     - name: Configure with command line tools
       href: configure-with-command-line.md
-    - name: Configure logging
-      href: configure-logging.md
   - name: Hyper-V firewall
     href: hyper-v-firewall.md
   - name: Troubleshoot
-    items: 
+    items:
+      - name: Configure Windows Firewall logging
+        href: configure-logging.md
       - name: Troubleshoot UWP app connectivity issues in Windows Firewall
         href: troubleshooting-uwp-firewall.md
       - name: Filter origin audit log improvements

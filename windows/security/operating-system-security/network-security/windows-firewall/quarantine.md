@@ -181,8 +181,6 @@ Get-NetIPInterface -InterfaceIndex <Interface Index>
 Get-NetIPInterface -InterfaceIndex 5
 ```
 
-![Quarantine Interfaceindex.](images/quarantine-interfaceindex1.png)
-
 With the help of the interface name, event viewer can be searched for any interface related changes.
 
 To enable more networking audit events, see [Enable IPsec and Windows Firewall Audit Events](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754714(v=ws.10)).
