@@ -6847,7 +6847,7 @@
     },
     {
       "source_path": "windows/security/threat-protection/windows-firewall/configure-the-windows-firewall-log.md",
-      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/configure-the-windows-firewall-log",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/configure-logging",
       "redirect_document_id": false
     },
     {
@@ -6928,11 +6928,6 @@
     {
       "source_path": "windows/security/threat-protection/windows-firewall/create-wmi-filters-for-the-gpo.md",
       "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/create-wmi-filters-for-the-gpo",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "windows/security/threat-protection/windows-firewall/designing-a-windows-firewall-with-advanced-security-strategy.md",
-      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/designing-a-windows-firewall-with-advanced-security-strategy",
       "redirect_document_id": false
     },
     {
@@ -7082,7 +7077,7 @@
     },
     {
       "source_path": "windows/security/threat-protection/windows-firewall/isolating-apps-on-your-network.md",
-      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/isolating-apps-on-your-network",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831418(v=ws.11)",
       "redirect_document_id": false
     },
     {
@@ -7958,6 +7953,91 @@
     {
       "source_path": "windows/security/operating-system-security/network-security/windows-firewall/determining-the-trusted-state-of-your-devices.md",
       "redirect_url": "/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/cc753540(v=ws.10)",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/network-security/windows-firewall/windows-firewall-with-advanced-security.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/network-security/windows-firewall/create-inbound-rules-to-support-rpc.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/configure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/network-security/windows-firewall/create-an-outbound-program-or-service-rule.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/configure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/network-security/windows-firewall/create-an-outbound-port-rule.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/configure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/network-security/windows-firewall/create-an-inbound-program-or-service-rule.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/configure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/network-security/windows-firewall/create-an-inbound-port-rule.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/configure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/network-security/windows-firewall/create-an-inbound-icmp-rule.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/configure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/network-security/windows-firewall-with-advanced-security-administration-with-windows-powershell.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/configure-with-command-line",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/designing-a-windows-firewall-with-advanced-security-strategy.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/network-security/windows-firewall/designing-a-windows-firewall-with-advanced-security-strategy.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/network-security/windows-firewall/windows-firewall-with-advanced-security-administration-with-windows-powershell.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/configure-with-command-line",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/network-security/windows-firewall/securing-end-to-end-ipsec-connections-by-using-ikev2.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831807(v=ws.11)",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/network-security/windows-firewall/best-practices-configuring.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/configure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/network-security/windows-firewall/isolating-apps-on-your-network.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831418(v=ws.11)",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/network-security/windows-firewall/configure-the-windows-firewall-log.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/configure-logging",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/network-security/windows-firewall/create-windows-firewall-rules-in-intune.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/configure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/network-security/windows-firewall/firewall-settings-lost-on-upgrade.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall",
       "redirect_document_id": false
     }
   ]
