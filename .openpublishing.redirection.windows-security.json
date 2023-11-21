@@ -8007,7 +8007,7 @@
     },
     {
       "source_path": "windows/security/operating-system-security/network-security/windows-firewall/windows-firewall-with-advanced-security-administration-with-windows-powershell.md",
-      "redirect_url": "/windows/security/operating-system-security/network-security/configure-with-command-line",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/configure-with-command-line",
       "redirect_document_id": false
     },
     {
@@ -8017,7 +8017,7 @@
     },
     {
       "source_path": "windows/security/operating-system-security/network-security/windows-firewall/best-practices-configuring.md",
-      "redirect_url": "/windows/security/operating-system-security/network-security/configure",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/configure",
       "redirect_document_id": false
     },
     {

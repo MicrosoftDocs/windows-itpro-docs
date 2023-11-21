@@ -37,7 +37,7 @@ Windows Firewall offers several benefits to address your organization's network 
 
 The default behavior of Windows Firewall is to:
 
-- block all incoming traffic, unless solicited or maching a *rule*
+- block all incoming traffic, unless solicited or matching a *rule*
 - allow all outgoing traffic, unless matching a *rule*
 
 ### Firewall rules

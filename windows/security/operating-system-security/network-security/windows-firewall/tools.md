@@ -121,9 +121,9 @@ An important Windows Firewall feature you can use to mitigate damage during an a
 
 Shields up can be achieved by checking **Block all incoming connections, including those in the list of allowed apps** setting found in either the Windows Settings app or Control Panel.
 
-![Incoming connections.](images/fw06-block.png)
+:::image type="content" alt-text="Screenshot of the Windows Security app showing incoming connections." source="images/fw06-block.png":::
 
-:::image type="content" alt-text="Firewall cpl." source="images/fw07-legacy.png":::
+:::image type="content" alt-text="Screenshot of the Control Panel Firewall applet." source="images/fw07-legacy.png":::
 
 By default, the Windows Firewall blocks everything unless there's an exception rule created. The *shield up* option overrides the exceptions. For example, the Remote Desktop feature automatically creates firewall rules when enabled. However, if there's an active exploit using multiple ports and services on a host, you can, instead of disabling individual rules, use the shields up mode to block all inbound connections, overriding previous exceptions, including the rules for Remote Desktop. The Remote Desktop rules remain intact but remote access can't work as long as shields up is active.
 
