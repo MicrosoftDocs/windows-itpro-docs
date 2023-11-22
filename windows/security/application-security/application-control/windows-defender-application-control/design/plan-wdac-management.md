@@ -2,7 +2,7 @@
 title: Plan for WDAC policy management
 description: Learn about the decisions you need to make to establish the processes for managing and maintaining Windows Defender Application Control policies.
 ms.localizationpriority: medium
-ms.date: 11/02/2022
+ms.date: 11/22/2023
 ms.topic: article
 ---
 
@@ -11,7 +11,7 @@ ms.topic: article
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control (WDAC) are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](../feature-availability.md).
 
-This topic describes the decisions you need to make to establish the processes for managing and maintaining Windows Defender Application Control (WDAC) policies.
+This article describes the decisions you need to make to establish the processes for managing and maintaining Windows Defender Application Control (WDAC) policies.
 
 ## Policy XML lifecycle management
 
@@ -23,7 +23,7 @@ Most Windows Defender Application Control policies will evolve over time and pro
 2. [Deploy the audit mode policy](/windows/security/threat-protection/windows-defender-application-control/audit-windows-defender-application-control-policies) to intended devices.
 3. [Monitor audit block events](/windows/security/threat-protection/windows-defender-application-control/event-id-explanations) from the intended devices and add/edit/delete rules as needed to address unexpected/unwanted blocks.
 4. Repeat steps 2-3 until the remaining block events meet expectations.
-5. [Generate the enforced mode version](/windows/security/threat-protection/windows-defender-application-control/enforce-windows-defender-application-control-policies) of the policy. In enforced mode, files that aren't allowed by the policy are prevented from executing and corresponding block events are generated.
+5. [Generate the enforced mode version](/windows/security/threat-protection/windows-defender-application-control/enforce-windows-defender-application-control-policies) of the policy. In enforced mode, files that the policy doesn't allow are prevented from running and corresponding block events are generated.
 6. [Deploy the enforced mode policy](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide) to intended devices. We recommend using staged rollouts for enforced policies to detect and respond to issues before deploying the policy broadly.
 7. Repeat steps 1-6 anytime the desired "circle-of-trust" changes.  
 
@@ -35,7 +35,7 @@ To effectively manage Windows Defender Application Control policies, you should 
 
 ### Set PolicyName, PolicyID, and Version metadata for each policy
 
-Use the [Set-CIPolicyIDInfo](/powershell/module/configci/set-cipolicyidinfo) cmdlet to give each policy a descriptive name and set a unique ID in order to differentiate each policy when reviewing Windows Defender Application Control events or when viewing the policy XML document. Although you can specify a string value for PolicyId, for policies using the multiple policy format we recommend using the -ResetPolicyId switch to let the system autogenerate a unique ID for the policy.
+Use the [Set-CIPolicyIDInfo](/powershell/module/configci/set-cipolicyidinfo) cmdlet to give each policy a descriptive name and set a unique policy ID. These unique attributes help you differentiate each policy when reviewing Windows Defender Application Control events or when viewing the policy XML document. Although you can specify a string value for PolicyId, for policies using the multiple policy format we recommend using the -ResetPolicyId switch to let the system autogenerate a unique ID for the policy.
 
 > [!NOTE]
 > PolicyID only applies to policies using the [multiple policy format](deploy-multiple-wdac-policies.md) on computers running Windows 10, version 1903 and above, or Windows 11. Running -ResetPolicyId on a policy created for pre-1903 computers will convert it to multiple policy format and prevent it from running on those earlier versions of Windows 10.
@@ -45,15 +45,15 @@ In addition, we recommend using the [Set-CIPolicyVersion](/powershell/module/con
 
 ### Policy rule updates
 
-As new apps are deployed or existing apps are updated by the software publisher, you may need to make revisions to your rules to ensure that these apps run correctly. Whether policy rule updates are required will depend significantly on the types of rules your policy includes. Rules based on codesigning certificates provide the most resiliency against app changes while rules based on file attributes or hash are most likely to require updates when apps change. Alternatively, if you use WDAC [managed installer](configure-authorized-apps-deployed-with-a-managed-installer.md) functionality and consistently deploy all apps and their updates through your managed installer, then you're less likely to need policy updates.
+You might need to revise your policy when new apps are deployed or existing apps are updated by the software publisher to ensure that apps run correctly. Whether policy rule updates are required will depend significantly on the types of rules your policy includes. Rules based on codesigning certificates provide the most resiliency against app changes while rules based on file attributes or hash are most likely to require updates when apps change. Alternatively, if you use WDAC [managed installer](configure-authorized-apps-deployed-with-a-managed-installer.md) functionality and consistently deploy all apps and their updates through your managed installer, then you're less likely to need policy updates.
 
 ## WDAC event management
 
-Each time that a process is blocked by Windows Defender Application Control, events will be written to either the CodeIntegrity\Operational or the AppLocker\MSI and Script Windows event logs. The event details which file tried to run, the attributes of that file and its signatures, and the process that attempted to run the blocked file.
+Each time that WDAC blocks a process, events are written to either the CodeIntegrity\Operational or the AppLocker\MSI and Script Windows event logs. The event describes the file that tried to run, the attributes of that file and its signatures, and the process that attempted to run the blocked file.
 
-Collecting these events in a central location can help you maintain your Windows Defender Application Control policy and troubleshoot rule configuration problems. Event collection technologies such as those available in Windows allow administrators to subscribe to specific event channels and have the events from source computers aggregated into a forwarded event log on a Windows Server operating system collector. For more info about setting up an event subscription, see [Configure Computers to Collect and Forward Events](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc748890(v=ws.11)).
+Collecting these events in a central location can help you maintain your Windows Defender Application Control policy and troubleshoot rule configuration problems. You can [use the Azure Monitor Agent](/azure/azure-monitor/agents/data-collection-rule-azure-monitor-agent) to automatically collect your WDAC events for analysis.
 
-Additionally, Windows Defender Application Control events are collected by [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint) and can be queried using the [advanced hunting](../operations/querying-application-control-events-centrally-using-advanced-hunting.md) feature.
+Additionally, [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint) collects WDAC events and can be queried using the [advanced hunting](../operations/querying-application-control-events-centrally-using-advanced-hunting.md) feature.
 
 ## Application and user support policy
 
@@ -75,9 +75,9 @@ If your organization has an established help desk support department in place, c
 
 ### End-user support
 
-Because Windows Defender Application Control is preventing unapproved apps from running, it's important that your organization carefully plan how to provide end-user support. Considerations include:
+Because Windows Defender Application Control is preventing unapproved apps from running, it's important that your organization carefully plans how to provide end-user support. Considerations include:
 
-- Do you want to use an intranet site as a first line of support for users who have tried to run a blocked app?
+- Do you want to use an intranet site as a frontline of support for users who try to run a blocked app?
 - How do you want to support exceptions to the policy? Will you allow users to run a script to temporarily allow access to a blocked app?
 
 ## Document your plan
