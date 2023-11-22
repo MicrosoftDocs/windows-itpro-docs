@@ -63,7 +63,7 @@ productDirectory:
         - url: /windows/security/operating-system-security/device-management/windows-security-configuration-framework/windows-security-baselines
           text: Windows security baselines
         - url: /windows/security/operating-system-security/virus-and-threat-protection/microsoft-defender-smartscreen/
-          text: MMicrosoft Defender SmartScreen
+          text: Microsoft Defender SmartScreen
         - url: /windows/security/operating-system-security
           text: Learn more about OS security >
 

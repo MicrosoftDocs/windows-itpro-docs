@@ -2,9 +2,7 @@
 title: Hyper-V firewall 
 description: Learn how to configure Hyper-V firewall rules and settings using PowerShell or Configuration Service Provider (CSP).
 ms.topic: how-to
-ms.date: 11/08/2023
-author: paolomatarazzo
-ms.author: paoloma
+ms.date: 11/21/2023
 appliesto:
 - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
 ---
@@ -57,8 +55,8 @@ The output contains the following values:
 |--|--|
 | `Enabled` (True/False) | True if Hyper-V Firewall is enabled for WSL VMs. |
 | `DefaultInboundAction`, `DefaultOutboundAction` | These are default rule policies applied to packets entering or leaving the WSL container. The rule policies can be modified, as described in this article.  |
-| `LoopbackEnabled` | Tracks if loopback traffic between the host and the container is allowed, without requiring any Hyper-V Firewall rules. WSL enables it by default, to allow the Windows Host to talk to WSL, and WSL to talk to the Windows Host. |
-| `AllowHostPolicyMerge` | Determines how Windows Host Firewall Enterprise Settings (GPO), Hyper-V Firewall Enterprise Settings (CSP), Windows Host Firewall Enterprise Settings (CSP), local Hyper-V Firewall settings, and local Host Firewall settings interact.<br>This setting is detailed with the [Set-NetFirewallHyperVVMSetting][PS-2] cmdlet. |
+| `LoopbackEnabled` | Tracks if loopback traffic between the host and the container is allowed, without requiring any Hyper-V Firewall rules. WSL enables it by default, to allow the Windows Host to talk to WSL, and WSL to talk to the Windows Host.|
+| `AllowHostPolicyMerge` | Determines how Windows Host Firewall Enterprise Settings (GPO), Hyper-V Firewall Enterprise Settings (CSP), Windows Host Firewall Enterprise Settings (CSP), local Hyper-V Firewall settings, and local Host Firewall settings interact.<br>This setting is detailed with the [Set-NetFirewallHyperVVMSetting][PS-2] cmdlet.|
 
 ### Configure Hyper-V firewall settings
 

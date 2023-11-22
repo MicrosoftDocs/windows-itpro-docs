@@ -26,7 +26,7 @@ See the following articles to learn more about the different areas of Windows th
 - [Network Protection](/microsoft-365/security/defender-endpoint/network-protection)
 - [Virtualization-Based Protection of Code Integrity](../hardware-security/enable-virtualization-based-protection-of-code-integrity.md)
 - [Web Protection](/microsoft-365/security/defender-endpoint/web-protection-overview)
-- [Windows Firewall](../operating-system-security/network-security/windows-firewall/windows-firewall-with-advanced-security.md)
+- [Windows Firewall](../operating-system-security/network-security/windows-firewall/index.md)
 - [Windows Sandbox](../application-security/application-isolation/windows-sandbox/windows-sandbox-overview.md)
 
 ## Next-generation protection
