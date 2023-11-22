@@ -53,7 +53,7 @@ Each time that WDAC blocks a process, events are written to either the CodeInteg
 
 Collecting these events in a central location can help you maintain your Windows Defender Application Control policy and troubleshoot rule configuration problems. You can [use the Azure Monitor Agent](/azure/azure-monitor/agents/data-collection-rule-azure-monitor-agent) to automatically collect your WDAC events for analysis.
 
-Additionally, [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint) collects WDAC events and can be queried using the [advanced hunting](../operations/querying-application-control-events-centrally-using-advanced-hunting.md) feature.
+Additionally, [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint) collects WDAC events which can be queried using the [advanced hunting](../operations/querying-application-control-events-centrally-using-advanced-hunting.md) feature.
 
 ## Application and user support policy
 
