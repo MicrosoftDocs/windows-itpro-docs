@@ -2,7 +2,7 @@
 title: Certificate Requirements and Enumeration 
 description: This topic for the IT professional and smart card developers describes how certificates are managed and used for smart card sign-in.
 ms.topic: concept-article
-ms.date: 11/06/2023
+ms.date: 11/22/2023
 ---
 
 # Certificate Requirements and Enumeration
@@ -185,11 +185,11 @@ A single user certificate can be mapped to multiple accounts. For example, a use
 Based on the information that is available in the certificate, the sign-in conditions are:
 
 1. If no UPN is present in the certificate:
-  1. Sign-in can occur in the local forest or in another forest if a single user with one certificate needs to sign in to different accounts
-  1. A hint must be supplied if mapping isn't unique (for example, if multiple users are mapped to the same certificate)
+    1. Sign-in can occur in the local forest or in another forest if a single user with one certificate needs to sign in to different accounts
+    1. A hint must be supplied if mapping isn't unique (for example, if multiple users are mapped to the same certificate)
 1. If a UPN is present in the certificate:
-  1. The certificate can't be mapped to multiple users in the same forest
-  1. The certificate can be mapped to multiple users in different forests. For a user to sign in to other forests, an X509 hint must be supplied to the user
+    1. The certificate can't be mapped to multiple users in the same forest
+    1. The certificate can be mapped to multiple users in different forests. For a user to sign in to other forests, an X509 hint must be supplied to the user
 
 ## Smart card sign-in for multiple users into a single account
 
