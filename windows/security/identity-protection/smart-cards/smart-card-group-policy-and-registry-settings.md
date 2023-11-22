@@ -2,7 +2,7 @@
 title: Smart Card Group Policy and Registry Settings 
 description: Discover the Group Policy, registry key, local security policy, and credential delegation policy settings that are available for configuring smart cards.
 ms.topic: reference
-ms.date: 11/06/2023
+ms.date: 11/22/2023
 ---
 
 # Smart Card Group Policy and Registry Settings
@@ -262,7 +262,7 @@ When this setting isn't turned on, Credential Manager can return plaintext PINs.
 You can use this policy setting to control the way the subject name appears during sign-in.
 
 > [!NOTE]
-> To help users distinguish one certificate from another, the user principal name (UPN) and the common name are displayed by default. For example, when this setting is enabled, if the certificate subject is CN=User1, OU=Users, DN=example, DN=com and the UPN is user1@example.com, "User1" is displayed with "user1@example.com." If the UPN is not present, the entire subject name is displayed. This setting controls the appearance of that subject name, and it might need to be adjusted for your organization.
+> To help users distinguish one certificate from another, the user principal name (UPN) and the common name are displayed by default. For example, when this setting is enabled, if the certificate subject is *CN=User1, OU=Users, DN=example, DN=com* and the UPN is *user1@example.com*, *User1* is displayed with *user1@example.com*. If the UPN is not present, the entire subject name is displayed. This setting controls the appearance of that subject name, and it might need to be adjusted for your organization.
 
 When this policy setting is turned on, the subject name during sign-in appears reversed from the way that it's stored in the certificate.
 
@@ -276,11 +276,11 @@ When this policy setting isn't turned on, the subject name appears the same as i
 
 ### Turn on certificate propagation from smart card
 
-You can use this policy setting to manage the certificate propagation that occurs when a smart card is inserted. 
+You can use this policy setting to manage the certificate propagation that occurs when a smart card is inserted.
 > [!NOTE]
 > The certificate propagation service applies when a signed-in user inserts a smart card in a reader that is attached to the computer. This action causes the certificate to be read from the smart card. The certificates are then added to the user's Personal store.
 
-When this policy setting is turned on, certificate propagation occurs when the user inserts the smart card. 
+When this policy setting is turned on, certificate propagation occurs when the user inserts the smart card.
 
 When this policy setting is turned off, certificate propagation doesn't occur, and the certificates aren't available to applications, like Outlook.
 
