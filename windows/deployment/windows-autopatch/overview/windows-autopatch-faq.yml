@@ -4,7 +4,7 @@ metadata:
   description: Answers to frequently asked questions about Windows Autopatch.
   ms.prod: windows-client
   ms.topic: faq
-  ms.date: 07/19/2023
+  ms.date: 11/29/2023
   audience: itpro
   ms.localizationpriority: medium
   manager: dougeby
@@ -28,7 +28,7 @@ sections:
           Windows Autopatch supports Windows 365 for Enterprise. Windows 365 for Business isn't supported.
       - question: Does Windows Autopatch support Windows Education (A3/A5) or Windows Front Line Worker (F3) licensing?
         answer: |
-          Autopatch isn't available for 'A' or 'F' series licensing.
+          Autopatch isn't available for 'A'. Windows Autopatch supports some'F' series licensing. For more information, see [More about licenses](../prepare/windows-autopatch-prerequisites.md#more-about-licenses). 
       - question: Will Windows Autopatch support local domain join Windows 10?
         answer: | 
           Windows Autopatch doesn't support local (on-premises) domain join. Windows Autopatch supports [Hybrid AD join](/azure/active-directory/devices/concept-azure-ad-join-hybrid) or pure [Microsoft Entra join](/azure/active-directory/devices/concept-azure-ad-join-hybrid).
@@ -54,8 +54,8 @@ sections:
           - [Switch workloads for device configuration, Windows Update and Microsoft 365 Apps from Configuration Manager to Intune](/mem/configmgr/comanage/how-to-switch-workloads) (minimum Pilot Intune. Pilot collection must contain the devices you want to register into Autopatch.)
       - question: What are the licensing requirements for Windows Autopatch?
         answer: |
-          - Windows Autopatch is included with Window 10/11 Enterprise E3 or higher (user-based only). For more information, see [More about licenses](../prepare/windows-autopatch-prerequisites.md#more-about-licenses).
-          - [Azure AD Premium](/azure/active-directory/fundamentals/active-directory-whatis#what-are-the-azure-ad-licenses) (for Co-management)
+          - Windows Autopatch is included with Window 10/11 Enterprise E3 or higher (user-based only) or F3. For more information, see [More about licenses](../prepare/windows-autopatch-prerequisites.md#more-about-licenses).
+          - [Azure AD Premium](/azure/active-directory/fundamentals/active-directory-whatis#what-are-the-azure-ad-licenses) (for co-management)
           - [Microsoft Intune](/mem/intune/fundamentals/licenses) (includes Configuration Manager 2010 or greater via co-management)
       - question: Are there hardware requirements for Windows Autopatch?
         answer: |
