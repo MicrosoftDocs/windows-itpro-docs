@@ -28,7 +28,7 @@ sections:
           Windows Autopatch supports Windows 365 for Enterprise. Windows 365 for Business isn't supported.
       - question: Does Windows Autopatch support Windows Education (A3/A5) or Windows Front Line Worker (F3) licensing?
         answer: |
-          Autopatch isn't available for 'A'. Windows Autopatch supports some'F' series licensing. For more information, see [More about licenses](../prepare/windows-autopatch-prerequisites.md#more-about-licenses). 
+          Autopatch isn't available for 'A'. Windows Autopatch supports some 'F' series licensing. For more information, see [More about licenses](../prepare/windows-autopatch-prerequisites.md#more-about-licenses). 
       - question: Will Windows Autopatch support local domain join Windows 10?
         answer: | 
           Windows Autopatch doesn't support local (on-premises) domain join. Windows Autopatch supports [Hybrid AD join](/azure/active-directory/devices/concept-azure-ad-join-hybrid) or pure [Microsoft Entra join](/azure/active-directory/devices/concept-azure-ad-join-hybrid).
