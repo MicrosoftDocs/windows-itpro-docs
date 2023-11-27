@@ -4,11 +4,11 @@ description: "Describes the best practices, location, values, policy management,
 author: vinaypamnani-msft
 ms.author: vinpa
 manager: aaroncz
-ms.reviewer: 
+ms.reviewer:
 ms.prod: windows-client
 ms.technology: itpro-security
 ms.localizationpriority: medium
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 01/13/2023
 ---
 
