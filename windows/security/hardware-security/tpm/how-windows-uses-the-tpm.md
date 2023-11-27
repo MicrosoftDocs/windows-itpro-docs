@@ -2,7 +2,7 @@
 title: How Windows uses the TPM
 description: Learn how Windows uses the Trusted Platform Module (TPM) to enhance security.
 ms.topic: conceptual
-ms.date: 02/02/2023
+ms.date: 11/17/2023
 ---
 
 # How Windows uses the Trusted Platform Module
@@ -31,11 +31,11 @@ The security features of Windows combined with the benefits of a TPM offer pract
 
 ## Platform Crypto Provider
 
-Windows includes a cryptography framework called *Cryptographic API: Next Generation* (CNG), the basic approach of which is to implement cryptographic algorithms in different ways but with a common application programming interface (API). Applications that use cryptography can use the common API without knowing the details of how an algorithm is implemented much less the algorithm itself.
+Windows includes a cryptography framework called Cryptographic API: Next Generation (CNG), the basic approach of which is to implement cryptographic algorithms in different ways but with a common application programming interface (API). Applications that use cryptography can use the common API without knowing the details of how an algorithm is implemented much less the algorithm itself.
 
 Although CNG sounds like a mundane starting point, it illustrates some of the advantages that a TPM provides. Underneath the CNG interface, Windows or third parties supply a cryptographic provider (that is, an implementation of an algorithm) implemented as software libraries alone or in a combination of software and available system hardware or third-party hardware. If implemented through hardware, the cryptographic provider communicates with the hardware behind the software interface of CNG.
 
-The Platform Crypto Provider, introduced in the Windows 8 operating system, exposes the following special TPM properties, which software-only CNG providers can't offer or can't offer as effectively:
+The Platform Crypto Provider, introduced in the Windows 8, exposes the following special TPM properties, which software-only CNG providers can't offer or can't offer as effectively:
 
 - **Key protection**. The Platform Crypto Provider can create keys in the TPM with restrictions on their use. The operating system can load and use the keys in the TPM without copying the keys to system memory, where they're vulnerable to malware. The Platform Crypto Provider can also configure keys that a TPM protects so that they aren't removable. If a TPM creates a key, the key is unique and resides only in that TPM. If the TPM imports a key, the Platform Crypto Provider can use the key in that TPM, but that TPM isn't a source for making more copies of the key or enabling the use of copies elsewhere. In sharp contrast, software solutions that protect keys from copying are subject to reverse-engineering attacks, in which someone figures out how the solution stores keys or makes copies of keys while they are in memory during use.
 
@@ -49,7 +49,7 @@ These TPM features give Platform Crypto Provider distinct advantages over softwa
 
 Smart cards are physical devices that typically store a single certificate and the corresponding private key. Users insert a smart card into a built-in or USB card reader and enter a PIN to unlock it. Windows can then access the card's certificate and use the private key for authentication or to unlock BitLocker protected data volumes. Smart cards are popular because they provide two-factor authentication that requires both something the user has (that is, the smart card) and something the user knows (such as the smart card PIN). However, smart cards can be expensive because they require purchase and deployment of both smart cards and smart card readers.
 
-In Windows, the *Virtual Smart Card* feature allows the TPM to mimic a permanently inserted smart card. The TPM becomes *something the user has* but still requires a PIN. While physical smart cards limit the number of PIN attempts before locking the card and requiring a reset, a virtual smart card relies on the TPM's dictionary attack protection to prevent too many PIN guesses.
+In Windows, the Virtual Smart Card feature allows the TPM to mimic a permanently inserted smart card. The TPM becomes *something the user has* but still requires a PIN. While physical smart cards limit the number of PIN attempts before locking the card and requiring a reset, a virtual smart card relies on the TPM's dictionary attack protection to prevent too many PIN guesses.
 
 For TPM-based virtual smart cards, the TPM protects the use and storage of the certificate private key, so that it can't be copied when it is in use or stored and used elsewhere. Using a component that is part of the system rather than a separate physical smart card, can reduce total cost of ownership. The *lost card* or *card left at home* scenarios are not applicable, and the benefits of smart card-based multifactor authentication is preserved. For users, virtual smart cards are simple to use, requiring only a PIN to unlock. Virtual smart cards support the same scenarios that physical smart cards support, including signing in to Windows or authenticating for resource access.
 
@@ -61,7 +61,7 @@ The adoption of new authentication technology requires that identity providers a
 
 Identity providers have flexibility in how they provision credentials on client devices. For example, an organization might provision only those devices that have a TPM so that the organization knows that a TPM protects the credentials. The ability to distinguish a TPM from malware acting like a TPM requires the following TPM capabilities (see Figure 1):
 
-- **Endorsement key**. The TPM manufacturer can create a special key in the TPM called an *endorsement key*. An endorsement key certificate, signed by the manufacturer, says that the endorsement key is present in a TPM that the manufacturer made. Solutions can use the certificate with the TPM containing the endorsement key to confirm a scenario really involves a TPM from a specific TPM manufacturer (instead of malware acting like a TPM).
+- **Endorsement key**. The TPM manufacturer can create a special key in the TPM called an endorsement key. An endorsement key certificate, signed by the manufacturer, says that the endorsement key is present in a TPM that the manufacturer made. Solutions can use the certificate with the TPM containing the endorsement key to confirm a scenario really involves a TPM from a specific TPM manufacturer (instead of malware acting like a TPM).
 
 - **Attestation identity key**. To protect privacy, most TPM scenarios do not directly use an actual endorsement key. Instead, they use attestation identity keys, and an identity certificate authority (CA) uses the endorsement key and its certificate to prove that one or more attestation identity keys actually exist in a real TPM. The identity CA issues attestation identity key certificates. More than one identity CA will generally see the same endorsement key certificate that can uniquely identify the TPM, but any number of attestation identity key certificates can be created to limit the information shared in other scenarios.
 
@@ -129,16 +129,16 @@ The TPM adds hardware-based security benefits to Windows. When installed on hard
 
 <br/>
 
-|Feature | Benefits when used on a system with a TPM|
-|---|---|
-| Platform Crypto Provider | <ul><li>If the machine is compromised, the private key associated with the certificate can't be copied off the device.</li><li>The TPM's dictionary attack mechanism protects PIN values to use a certificate.</li></ul> |
-| Virtual Smart Card | <ul><li>Achieve security similar to that of physical smart cards without deploying physical smart cards or card readers.</li></ul> |
-| Windows Hello for Business | <ul><li>Credentials provisioned on a device can't be copied elsewhere.</li><li>Confirm a device's TPM before credentials are provisioned.</li></ul> |
-| BitLocker Drive Encryption | <ul><li>Multiple options are available for enterprises to protect data at rest while balancing security requirements with different device hardware.</li></ul> |
-|Device Encryption | <ul><li>With a Microsoft account and the right hardware, consumers' devices seamlessly benefit from data-at-rest protection.</li></ul> |
-| Measured Boot | <ul><li>A hardware root of trust contains boot measurements that help detect malware during remote attestation.</li></ul> |
-| Health Attestation | <ul><li>MDM solutions can easily perform remote attestation and evaluate client health before granting access to resources or cloud services such as Office 365. </li></ul> |
-| Credential Guard | <ul><li>Defense in depth increases so that even if malware has administrative rights on one machine, it is significantly more difficult to compromise additional machines in an organization.</li></ul> |
+| Feature                    | Benefits when used on a system with a TPM                                                                                                                                                             |
+|----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Platform Crypto Provider   | - If the machine is compromised, the private key associated with the certificate can't be copied off the device.<br>- The TPM's dictionary attack mechanism protects PIN values to use a certificate. |
+| Virtual Smart Card         | Achieve security similar to that of physical smart cards without deploying physical smart cards or card readers.                                                                                      |
+| Windows Hello for Business | - Credentials provisioned on a device can't be copied elsewhere.<br>- Confirm a device's TPM before credentials are provisioned.                                                                      |
+| BitLocker Drive Encryption | Multiple options are available for enterprises to protect data at rest while balancing security requirements with different device hardware.                                                          |
+| Device Encryption          | With a Microsoft account and the right hardware, consumers' devices seamlessly benefit from data-at-rest protection.                                                                                  |
+| Measured Boot              | A hardware root of trust contains boot measurements that help detect malware during remote attestation.                                                                                               |
+| Health Attestation         | MDM solutions can easily perform remote attestation and evaluate client health before granting access to resources or cloud services such as Office 365.                                              |
+| Credential Guard           | Defense in depth increases so that even if malware has administrative rights on one machine, it is significantly more difficult to compromise additional machines in an organization.                 |
 
 <br />
 

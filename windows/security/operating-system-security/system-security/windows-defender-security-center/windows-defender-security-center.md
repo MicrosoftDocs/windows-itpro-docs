@@ -70,7 +70,7 @@ For more information about each section, options for configuring the sections, a
 >
 > Microsoft Defender Antivirus will be [disabled automatically when a third-party antivirus product is installed and kept up to date](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility).
 >
-> Disabling the Windows Security Center Service won't disable Microsoft Defender Antivirus or [Windows Defender Firewall](../../network-security/windows-firewall/windows-firewall-with-advanced-security.md).
+> Disabling the Windows Security Center Service won't disable Microsoft Defender Antivirus or [Windows Defender Firewall](../../network-security/windows-firewall/index.md).
 
 > [!WARNING]
 > If you disable the Windows Security Center Service, or configure its associated group policy settings to prevent it from starting or running, **Windows Security** may display stale or inaccurate information about any antivirus or firewall products you have installed on the device.
