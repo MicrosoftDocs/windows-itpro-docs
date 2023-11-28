@@ -16,7 +16,7 @@ appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2022</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2019</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016</a>
-ms.date: 08/22/2023
+ms.date: 11/28/2023
 ---
 
 # Configure Windows Update for Business
@@ -243,8 +243,8 @@ The following options are available for the policy:
 
 | Policy | Sets registry key under HKLM\Software |
 | --- | --- |
-| GPO for Windows 11, version 22H2 with [KB5029351](https://support.microsoft.com/help/5029351) and later: </br>Computer Configuration > Administrative Templates > Windows Components > Windows Update > Manage updates offered from Windows Update > **Enable optional updates**| \Policies\Microsoft\Windows\WindowsUpdate\AllowOptionalContent |
-| MDM for Windows 11, version 22H2 with [KB5029351](https://support.microsoft.com/help/5029351) and later: </br>./Device/Vendor/MSFT/Policy/Config/Update/</br>**[AllowOptionalContent](/windows/client-management/mdm/policy-csp-update?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json#allowoptionalcontent)** | \Policies\Microsoft\Windows\WindowsUpdate\AllowOptionalContent |
+| **GPO applies to**: <br/> <ul><li> Windows 11, version 22H2 with [KB5029351](https://support.microsoft.com/help/5029351), and later versions </li><li> Windows 10, version 22H2 with [KB5032278](https://support.microsoft.com/help/5032278), or a later cumulative update installed <!--8503602--> </li></ul> </br>**GPO location**: Computer Configuration > Administrative Templates > Windows Components > Windows Update > Manage updates offered from Windows Update > **Enable optional updates**| \Policies\Microsoft\Windows\WindowsUpdate\AllowOptionalContent |
+| **MDM applies to**: <br/> <ul><li> Windows 11, version 22H2 with [KB5029351](https://support.microsoft.com/help/5029351) and later versions </li><li> Windows 10, version 22H2 with [KB5032278](https://support.microsoft.com/help/5032278), or a later cumulative update installed <!--8503602--></li></ul> </br>**MDM location**: ./Device/Vendor/MSFT/Policy/Config/Update/</br>**[AllowOptionalContent](/windows/client-management/mdm/policy-csp-update?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json#allowoptionalcontent)** | \Policies\Microsoft\Windows\WindowsUpdate\AllowOptionalContent |
 
 ## Enable features that are behind temporary enterprise feature control
 <!--6544872-->
@@ -269,7 +269,7 @@ The following are quick-reference tables of the supported policy values for Wind
 
 | GPO Key |	Key type | Value |
 | --- | --- | --- |
-| AllowOptionalContent</br> </br>*Added in Windows 11, version 22H2*| REG_DWORD | 1: Automatically receive optional updates (including CFRs)</br> 2: Automatically receive optional updates </br> 3: Users can select which optional updates to receive </br> Other value or absent: Don't receive optional updates|
+| AllowOptionalContent</br> </br>*Added in*: <br/> <ul><li> Windows 11, version 22H2 with [KB5029351](https://support.microsoft.com/help/5029351) and later </li><li> Windows 10, version 22H2 with [KB5032278](https://support.microsoft.com/help/5032278), or a later cumulative update installed </li></ul> </br>| REG_DWORD | 1: Automatically receive optional updates (including CFRs)</br> 2: Automatically receive optional updates </br> 3: Users can select which optional updates to receive </br> Other value or absent: Don't receive optional updates|
 | AllowTemporaryEnterpriseFeatureControl </br> </br>*Added in Windows 11, version 22H2*| REG_DWORD | 1: Allowed. All features in the latest monthly cumulative update are enabled.</br> Other value or absent: Features that are shipped turned off by default will remain off |
 | BranchReadinessLevel	| REG_DWORD | 2: Systems take feature updates for the Windows Insider build - Fast </br> 4: Systems take feature updates for the Windows Insider build - Slow </br> 8: Systems take feature updates for the Release Windows Insider build </br></br> Other value or absent: Receive all applicable updates |
 | DeferFeatureUpdates | REG_DWORD | 1: Defer feature updates</br>Other value or absent: Don't defer feature updates |
@@ -285,7 +285,7 @@ The following are quick-reference tables of the supported policy values for Wind
 
 | MDM Key | Key type | Value |
 | --- | --- | --- |
-| AllowOptionalContent </br> </br>*Added in Windows 11, version 22H2*| REG_DWORD | 1: Automatically receive optional updates (including CFRs)</br> 2: Automatically receive optional updates </br> 3: Users can select which optional updates to receive </br> Other value or absent: Don't receive optional updates|
+| AllowOptionalContent </br> </br>*Added in*: <br/> <ul><li> Windows 11, version 22H2 with [KB5029351](https://support.microsoft.com/help/5029351) and later </li><li> Windows 10, version 22H2 with [KB5032278](https://support.microsoft.com/help/5032278), or a later cumulative update installed </li></ul> </br>| REG_DWORD | 1: Automatically receive optional updates (including CFRs)</br> 2: Automatically receive optional updates </br> 3: Users can select which optional updates to receive </br> Other value or absent: Don't receive optional updates|
 | AllowTemporaryEnterpriseFeatureControl </br> </br>*Added in Windows 11, version 22H2*| REG_DWORD | 1: Allowed. All features in the latest monthly cumulative update are enabled.</br> Other value or absent: Features that are shipped turned off by default will remain off |
 | BranchReadinessLevel | REG_DWORD |2: Systems take feature updates for the Windows Insider build - Fast </br> 4: Systems take feature updates for the Windows Insider build - Slow </br> 8: Systems take feature updates for the Release Windows Insider build  </br>32: Systems take feature updates from General Availability Channel </br>Note: Other value or absent: Receive all applicable updates |
 | DeferFeatureUpdatesPeriodinDays | REG_DWORD | 0-365: Defer feature updates by given days |
