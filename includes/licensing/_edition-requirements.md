@@ -81,7 +81,7 @@ ms.topic: include
 |**[Windows Autopilot](/autopilot/)**|Yes|Yes|Yes|Yes|
 |**[Windows Defender Application Control (WDAC)](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)**|Yes|Yes|Yes|Yes|
 |**[Windows Defender System Guard](/windows/security/hardware-security/how-hardware-based-root-of-trust-helps-protect-windows)**|Yes|Yes|Yes|Yes|
-|**[Windows Firewall](/windows/security/operating-system-security/network-security/windows-firewall/windows-firewall-with-advanced-security)**|Yes|Yes|Yes|Yes|
+|**[Windows Firewall](/windows/security/operating-system-security/network-security/windows-firewall)**|Yes|Yes|Yes|Yes|
 |**[Windows Hello for Business](/windows/security/identity-protection/hello-for-business/)**|Yes|Yes|Yes|Yes|
 |**[Windows Hello for Business Enhanced Security Sign-in (ESS)](/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security)**|Yes|Yes|Yes|Yes|
 |**[Windows LAPS](/windows-server/identity/laps/laps-overview)**|Yes|Yes|Yes|Yes|

@@ -4,7 +4,7 @@ description: This topic details how Microsoft supports the Common Criteria certi
 ms.author: sushmanemali
 author: s4sush
 ms.topic: reference
-ms.date: 11/4/2022
+ms.date: 11/22/2023
 ms.reviewer: paoloma
 ms.collection:
 - tier3
@@ -30,7 +30,7 @@ Certified against the Protection Profile for General Purpose Operating Systems, 
 - [Administrative Guide](https://download.microsoft.com/download/9/1/7/9178ce6a-8117-42e7-be0d-186fc4a89ca6/Microsoft%20Windows,%20Windows%20Server,%20Azure%20Stack%20Administrative%20Guide%20(21H2%20et%20al).pdf)
 - [Assurance Activity Report](https://download.microsoft.com/download/4/1/6/416151fe-63e7-48c0-a485-1d87148c71fe/Microsoft%20Windows,%20Windows%20Server,%20Azure%20Stack%20Assurance%20Activity%20Report%20(21H2%20et%20al).pdf)
 - [Validation Report](https://download.microsoft.com/download/e/3/7/e374af1a-3c5d-42ee-8e19-df47d2c0e3d6/Microsoft%20Windows,%20Windows%20Server,%20Azure%20Stack%20Validation%20Report%20(21H2%20et%20al).pdf)
- 
+
 ### Windows 10, version 2004, Windows Server, version 2004, Windows Server Core Datacenter (Azure Fabric Controller), Windows Server Core Datacenter (Azure Stack)
 
 Certified against the Protection Profile for General Purpose Operating Systems, including the Extended Package for Wireless Local Area Network Clients and the Module for Virtual Private Network Clients
@@ -101,7 +101,7 @@ Certified against the Protection Profile for General Purpose Operating Systems.
 - [Security Target](https://download.microsoft.com/download/e/8/b/e8b8c42a-a0b6-4ba1-9bdc-e704e8289697/windows%2010%20version%201703%20gp%20os%20security%20target%20-%20public%20\(january%2016,%202018\)\(final\)\(clean\).pdf)
 - [Administrative Guide](https://download.microsoft.com/download/e/9/7/e97f0c7f-e741-4657-8f79-2c0a7ca928e3/windows%2010%20cu%20gp%20os%20operational%20guidance%20\(jan%208%202017%20-%20public\).pdf)
 - [Certification Report](https://download.microsoft.com/download/3/2/c/32cdf627-dd23-4266-90ff-2f9685fd15c0/2017-49%20inf-2218%20cr.pdf)
-- [Assurance Activity Report](https://download.microsoft.com/download/a/e/9/ae9a2235-e1cd-4869-964d-c8260f604367/Windows%2010%201703%20GP%20OS%20Assurance%20Activity%20Report.pdf) 
+- [Assurance Activity Report](https://download.microsoft.com/download/a/e/9/ae9a2235-e1cd-4869-964d-c8260f604367/Windows%2010%201703%20GP%20OS%20Assurance%20Activity%20Report.pdf)
 
 ### Windows 10, version 1607, Windows Server 2016
 
@@ -145,9 +145,9 @@ Certified against the Protection Profile for Mobile Device Fundamentals.
 - [Security Target](https://download.microsoft.com/download/1/5/e/15eee6d3-f2a8-4441-8cb1-ce8c2ab91c24/windows%2010%20anniversary%20update%20mdf%20security%20target%20-%20public%20\(april%203%202017\).docx)
 - [Administrative Guide](https://download.microsoft.com/download/4/c/1/4c1f4ea4-2d66-4232-a0f5-925b2bc763bc/windows%2010%20au%20operational%20guidance%20\(16%20mar%202017\)\(clean\).docx)
 - [Validation Report](https://download.microsoft.com/download/f/2/f/f2f7176e-34f4-4ab0-993c-6606d207bb3c/st_vid10752-vr.pdf)
-- [Assurance Activity Report](https://download.microsoft.com/download/9/3/9/939b44a8-5755-4d4c-b020-d5e8b89690ab/Windows%2010%20and%20Windows%2010%20Mobile%201607%20MDF%20Assurance%20Activity%20Report.pdf) 
+- [Assurance Activity Report](https://download.microsoft.com/download/9/3/9/939b44a8-5755-4d4c-b020-d5e8b89690ab/Windows%2010%20and%20Windows%2010%20Mobile%201607%20MDF%20Assurance%20Activity%20Report.pdf)
 
-### Windows 10, version 1607, Windows Server 2016
+### Windows 10, version 1607, Windows Server 2016 (VPN)
 
 Certified against the Protection Profile for IPsec Virtual Private Network (VPN) Clients.
 
@@ -269,7 +269,7 @@ Certified against the Protection Profile for General Purpose Operating Systems.
 
 - [Security Target](https://www.commoncriteriaportal.org/files/epfiles/0570b_pdf.pdf)
 - [Administrative Guide](https://www.microsoft.com/downloads/en/details.aspx?familyid=cb19538d-9e13-4ab6-af38-8f48abfdad08)
-- [Certification Report](http://www.commoncriteriaportal.org:80/files/epfiles/0570a_pdf.pdf) 
+- [Certification Report](http://www.commoncriteriaportal.org:80/files/epfiles/0570a_pdf.pdf)
 
 ### Windows Server 2003 Certificate Server
 
