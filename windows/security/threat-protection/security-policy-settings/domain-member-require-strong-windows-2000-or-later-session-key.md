@@ -1,8 +1,8 @@
 ---
-title: Domain member Require strong (Windows 2000 or later) session key 
+title: Domain member Require strong (Windows 2000 or later) session key
 description: Best practices, location, values, and security considerations for the security policy setting, Domain member Require strong (Windows 2000 or later) session key.
 ms.assetid: 5ab8993c-5086-4f09-bc88-1b27454526bd
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
 ms.prod: windows-client
 ms.mktglfcycl: deploy
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 04/19/2017
 ms.technology: itpro-security
 ---
@@ -55,7 +55,7 @@ Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Sec
 
 The following table lists the actual and effective default values for this policy. Default values are also listed on the policy’s property page.
 
-| Server type or GPO 
+| Server type or GPO
 
 |               Default value                |
 |--------------------------------------------|
