@@ -204,7 +204,7 @@ If you use Windows Server Update Server (WSUS), you can prevent users from scann
 <!--7991583-->
 *Applies to:* 
 - Windows 11, version 22H2 with [KB5029351](https://support.microsoft.com/help/5029351) and later <!--7991583-->
-- Windows 10, version 22H2 with [KBxxxxxx](https://support.microsoft.com/help/5029351), or a later cumulative update installed <!--8503602-->
+- Windows 10, version 22H2 with [KB5032278](https://support.microsoft.com/help/5032278), or a later cumulative update installed <!--8503602-->
 
 In addition to the monthly cumulative update, optional updates are available to provide new features and nonsecurity changes. Most optional updates are released on the fourth Tuesday of the month, known as optional nonsecurity preview releases. Optional updates can also include features that are gradually rolled out, known as controlled feature rollouts (CFRs). Installation of optional updates isn't enabled by default for devices that receive updates using Windows Update for Business. However, you can enable optional updates for devices by using the **Computer Configuration > Administrative Templates > Windows Components > Windows Update > Manage updates offered from Windows Update > Enable optional updates** policy.
 

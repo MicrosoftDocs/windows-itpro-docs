@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
-ms.date: 10/10/2023
+ms.date: 11/28/2023
 ---
 
 # Walkthrough: Use CSPs and MDMs to configure Windows Update for Business
@@ -205,3 +205,11 @@ The features that are turned off by default from servicing updates will be enabl
 - **0** (default): Allowed. All features in the latest monthly cumulative update are enabled.
   - When the policy is set to **0**, all features that are currently turned off will turn on when the device next reboots
 - **1** - Not allowed. Features that are shipped turned off by default will remain off
+
+#### I want to enable optional updates
+<!--7991583-->
+*Applies to:* 
+- Windows 11, version 22H2 with [KB5029351](https://support.microsoft.com/help/5029351) and later <!--7991583-->
+- Windows 10, version 22H2 with [KB5032278](https://support.microsoft.com/help/5032278), or a later cumulative update installed <!--8503602-->
+
+In addition to the monthly cumulative update, optional updates are available to provide new features and nonsecurity changes. Most optional updates are released on the fourth Tuesday of the month, known as optional nonsecurity preview releases. Optional updates can also include features that are gradually rolled out, known as controlled feature rollouts (CFRs). Installation of optional updates isn't enabled by default for devices that receive updates using Windows Update for Business. However, you can enable optional updates for devices by using [AllowOptionalContent](/windows/client-management/mdm/policy-csp-update?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json#allowoptionalcontent). For more information about optional content, see [Enable optional updates](waas-configure-wufb.md#enable-optional-updates).
