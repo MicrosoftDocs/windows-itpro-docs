@@ -1,8 +1,8 @@
 ---
-title: Enforce user logon restrictions 
+title: Enforce user logon restrictions
 description: Describes the best practices, location, values, policy management, and security considerations for the Enforce user logon restrictions security policy setting.
 ms.assetid: 5891cb73-f1ec-48b9-b703-39249e48a29f
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
 ms.prod: windows-client
 ms.mktglfcycl: deploy
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 04/19/2017
 ms.technology: itpro-security
 ---
@@ -50,13 +50,13 @@ The following table lists the actual and effective default policy values. Defaul
 
 | Server Type or GPO | Default Value |
 | - | - |
-| Default Domain Policy | Enabled| 
+| Default Domain Policy | Enabled|
 | Default Domain Controller Policy | Not defined |
 | Stand-Alone Server Default Settings| Not applicable |
-| DC Effective Default Settings | Enabled| 
-| Member Server Effective Default Settings| Not applicable| 
-| Client Computer Effective Default Settings | Not applicable| 
- 
+| DC Effective Default Settings | Enabled|
+| Member Server Effective Default Settings| Not applicable|
+| Client Computer Effective Default Settings | Not applicable|
+
 ## Policy management
 
 This section describes features, tools, and guidance to help you manage this policy.

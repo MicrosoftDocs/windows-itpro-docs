@@ -1,8 +1,8 @@
 ---
-title: Accounts Limit local account use of blank passwords 
+title: Accounts Limit local account use of blank passwords
 description: Learn best practices, security considerations, and more for the policy setting, Accounts Limit local account use of blank passwords to console logon only.
 ms.assetid: a1bfb58b-1ae8-4de9-832b-aa889a6e64bd
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
 ms.prod: windows-client
 ms.mktglfcycl: deploy
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 04/19/2017
 ms.technology: itpro-security
 ---
@@ -62,7 +62,7 @@ The following table lists the actual and effective default values for this polic
 | DC Effective Default Settings | Enabled |
 | Member Server Effective Default Settings | Enabled |
 | Client Computer Effective Default Settings | Enabled |
- 
+
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.

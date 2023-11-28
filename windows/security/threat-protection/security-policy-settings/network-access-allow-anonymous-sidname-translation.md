@@ -1,8 +1,8 @@
 ---
-title: Network access Allow anonymous SID/Name translation 
+title: Network access Allow anonymous SID/Name translation
 description: Best practices, location, values, policy management and security considerations for the policy setting, Network access Allow anonymous SID/Name translation.
 ms.assetid: 0144477f-22a6-4d06-b70a-9c9c2196e99e
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
 ms.prod: windows-client
 ms.mktglfcycl: deploy
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 04/19/2017
 ms.technology: itpro-security
 ---
@@ -59,13 +59,13 @@ The following table lists the actual and effective default values for this polic
 
 | Server type or GPO | Default value |
 | - | - |
-| Default Domain Policy| Not defined| 
-| Default Domain Controller Policy | Not defined| 
-| Stand-Alone Server Default Settings | Disabled| 
-| DC Effective Default Settings | Enabled| 
-| Member Server Effective Default Settings| Disabled| 
-| Client Computer Effective Default Settings | Disabled| 
- 
+| Default Domain Policy| Not defined|
+| Default Domain Controller Policy | Not defined|
+| Stand-Alone Server Default Settings | Disabled|
+| DC Effective Default Settings | Enabled|
+| Member Server Effective Default Settings| Disabled|
+| Client Computer Effective Default Settings | Disabled|
+
 ### Operating system version differences
 
 The default value of this setting has changed between operating systems as follows:

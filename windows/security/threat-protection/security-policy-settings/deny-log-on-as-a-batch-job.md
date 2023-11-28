@@ -1,8 +1,8 @@
 ---
-title: Deny log on as a batch job 
+title: Deny log on as a batch job
 description: Describes the best practices, location, values, policy management, and security considerations for the Deny log on as a batch job security policy setting.
 ms.assetid: 0ac36ebd-5e28-4b6a-9b4e-8924c6ecf44b
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
 ms.prod: windows-client
 ms.mktglfcycl: deploy
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 04/19/2017
 ms.technology: itpro-security
 ---
@@ -52,13 +52,13 @@ The following table lists the actual and effective default policy values for the
 
 | Server type or GPO | Default value |
 | - | - |
-| Default Domain Policy | Not defined| 
-| Default Domain Controller Policy | Not defined | 
-| Stand-Alone Server Default Settings | Not defined | 
-| Domain Controller Effective Default Settings | Not defined | 
-| Member Server Effective Default Settings | Not defined | 
-| Client Computer Effective Default Settings | Not defined | 
- 
+| Default Domain Policy | Not defined|
+| Default Domain Controller Policy | Not defined |
+| Stand-Alone Server Default Settings | Not defined |
+| Domain Controller Effective Default Settings | Not defined |
+| Member Server Effective Default Settings | Not defined |
+| Client Computer Effective Default Settings | Not defined |
+
 ## Policy management
 
 This section describes features and tools available to help you manage this policy.
@@ -73,7 +73,7 @@ This policy setting might conflict with and negate the **Log on as a batch job**
 
 On a domain-joined device, including the domain controller, this policy can be overwritten by a domain policy, which will prevent you from modifying the local policy setting.
 
-For example, to configure Task Scheduler on your domain controller, check the Settings tab of your two domain controller policy and domain policy GPOs in the Group Policy Management Console (GPMC). Verify the targeted account isn't present in the **Deny log on as a batch job** setting. 
+For example, to configure Task Scheduler on your domain controller, check the Settings tab of your two domain controller policy and domain policy GPOs in the Group Policy Management Console (GPMC). Verify the targeted account isn't present in the **Deny log on as a batch job** setting.
 
 User Rights Assignment and also correctly configured in the **Log on as a batch job** setting.
 

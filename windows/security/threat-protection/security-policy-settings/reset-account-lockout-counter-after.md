@@ -1,8 +1,8 @@
 ---
-title: Reset account lockout counter after 
+title: Reset account lockout counter after
 description: Describes the best practices, location, values, and security considerations for the Reset account lockout counter after security policy setting.
 ms.assetid: d5ccf6dd-5ba7-44a9-8e0b-c478d8b1442c
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
 ms.prod: windows-client
 ms.mktglfcycl: deploy
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 11/02/2018
 ms.technology: itpro-security
 ---
@@ -38,7 +38,7 @@ The disadvantage of a high setting is that users lock themselves out for an inco
 
 ### Best practices
 
-Determine the threat level for your organization and balance that against the cost of your Help Desk support for password resets. Each organization will have specific requirements. 
+Determine the threat level for your organization and balance that against the cost of your Help Desk support for password resets. Each organization will have specific requirements.
 
 [Windows security baselines](../../operating-system-security/device-management/windows-security-configuration-framework/windows-security-baselines.md) recommend configuring the **Reset account lockout counter after** policy setting to 15, but as with other account lockout settings, this value is more of a guideline than a rule or best practice because there's no "one size fits all." For more information, see [Configuring Account Lockout](/archive/blogs/secguide/configuring-account-lockout).
 
@@ -52,13 +52,13 @@ The following table lists the actual and effective default policy values. Defaul
 
 | Server type or Group Policy Object (GPO) | Default value |
 | - | - |
-| Default domain policy| Not defined| 
-| Default domain controller policy | Not defined| 
-| Stand-alone server default settings | Not applicable| 
-| Domain controller effective default settings | Not defined| 
-| Member server effective default settings | Not defined| 
-| Client computer effective default settings | Not applicable| 
- 
+| Default domain policy| Not defined|
+| Default domain controller policy | Not defined|
+| Stand-alone server default settings | Not applicable|
+| Domain controller effective default settings | Not defined|
+| Member server effective default settings | Not defined|
+| Client computer effective default settings | Not applicable|
+
 ## Security considerations
 
 This section describes how an attacker might exploit a feature or its configuration, how to implement the countermeasure, and the possible negative consequences of countermeasure implementation.

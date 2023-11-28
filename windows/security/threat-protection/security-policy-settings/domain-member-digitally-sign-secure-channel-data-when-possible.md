@@ -1,8 +1,8 @@
 ---
-title: Domain member Digitally sign secure channel data (when possible) 
+title: Domain member Digitally sign secure channel data (when possible)
 description: Best practices, location, values, and security considerations for the security policy setting, Domain member Digitally sign secure channel data (when possible).
 ms.assetid: a643e491-4f45-40ea-b12c-4dbe47e54f34
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
 ms.prod: windows-client
 ms.mktglfcycl: deploy
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 04/19/2017
 ms.technology: itpro-security
 ---
@@ -27,7 +27,7 @@ Describes the best practices, location, values, and security considerations for 
 
 ## Reference
 
-This setting determines whether all secure channel traffic that is initiated by the domain member meets minimum security requirements. Specifically, it determines whether all secure channel traffic that is initiated by the domain member must be signed. Sign-in information that is transmitted over the 
+This setting determines whether all secure channel traffic that is initiated by the domain member meets minimum security requirements. Specifically, it determines whether all secure channel traffic that is initiated by the domain member must be signed. Sign-in information that is transmitted over the
 secure channel is always encrypted regardless of whether the encryption of all other secure channel traffic is negotiated.
 
 The following policy settings determine whether a secure channel can be established with a domain controller that isn't capable of signing or encrypting secure channel traffic:
@@ -60,7 +60,7 @@ When a device joins a domain, a machine account is created. After the device is 
 - Set [Domain member: Digitally encrypt secure channel data (when possible)](domain-member-digitally-encrypt-secure-channel-data-when-possible.md) to **Enabled**.
 - Set **Domain member: Digitally sign secure channel data (when possible)** to **Enabled**.
   >**Note:**  You can enable the other two policy settings, Domain member: [Domain member: Digitally encrypt secure channel data (when possible)](domain-member-digitally-encrypt-secure-channel-data-when-possible.md) and **Domain member: Digitally sign secure channel data (when possible)**, on all devices joined to the domain that support these policy settings without affecting earlier-version clients and applications.
- 
+
 ### Location
 
 Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Security Options
@@ -71,13 +71,13 @@ The following table lists the actual and effective default values for this polic
 
 | Server type or GPO | Default value |
 | - | - |
-| Default Domain Policy | Not defined| 
-| Default Domain Controller Policy | Enabled | 
-| Stand-Alone Server Default Settings | Enabled|  
-| DC Effective Default Settings | Enabled| 
-| Member Server Effective Default Settings| Enabled| 
-| Client Computer Effective Default Settings | Enabled| 
- 
+| Default Domain Policy | Not defined|
+| Default Domain Controller Policy | Enabled |
+| Stand-Alone Server Default Settings | Enabled|
+| DC Effective Default Settings | Enabled|
+| Member Server Effective Default Settings| Enabled|
+| Client Computer Effective Default Settings | Enabled|
+
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.

@@ -1,8 +1,8 @@
 ---
-title: Network security Restrict NTLM Add server exceptions in this domain 
+title: Network security Restrict NTLM Add server exceptions in this domain
 description: Best practices, security considerations, and more for the security policy setting, Network security Restrict NTLM Add server exceptions in this domain.
 ms.assetid: 2f981b68-6aa7-4dd9-b53d-d88551277cc0
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
 ms.prod: windows-client
 ms.mktglfcycl: deploy
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 04/19/2017
 ms.technology: itpro-security
 ---
@@ -59,12 +59,12 @@ Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Sec
 | Server type or GPO | Default value |
 | - | - |
 | Default domain policy| Not defined |
-| Default domain controller policy | Not defined| 
-| Stand-alone server default settings | Not defined| 
-| Domain controller effective default settings | Not defined| 
-| Member server effective default settings | Not defined| 
-| Client computer effective default settings | Not defined| 
- 
+| Default domain controller policy | Not defined|
+| Stand-alone server default settings | Not defined|
+| Domain controller effective default settings | Not defined|
+| Member server effective default settings | Not defined|
+| Client computer effective default settings | Not defined|
+
 ## Policy management
 
 This section describes different features and tools available to help you manage this policy.
@@ -89,10 +89,10 @@ This section describes how an attacker might exploit a feature or its configurat
 
 ### Vulnerability
 
-When it has been determined that the NTLM authentication protocol shouldn't be used within a domain because you're required to use a more secure protocol such as Kerberos, there might be some NTLM authentication traffic that is still present in the domain. If so, and you set Network Security: 
+When it has been determined that the NTLM authentication protocol shouldn't be used within a domain because you're required to use a more secure protocol such as Kerberos, there might be some NTLM authentication traffic that is still present in the domain. If so, and you set Network Security:
 [Network Security: Restrict NTLM: NTLM authentication in this domain](network-security-restrict-ntlm-ntlm-authentication-in-this-domain.md) to any of the deny options, any NTLM authentication request will fail because the pass-through member server will block the NTLM request.
 
-If you define an exception list of servers in this domain to which client computers are allowed to use NTLM pass-through authentication, then NTLM authentication traffic will continue to flow between those servers, which make them vulnerable to any malicious attack that takes advantage of security 
+If you define an exception list of servers in this domain to which client computers are allowed to use NTLM pass-through authentication, then NTLM authentication traffic will continue to flow between those servers, which make them vulnerable to any malicious attack that takes advantage of security
 weaknesses in NTLM.
 
 ### Countermeasure
