@@ -1,8 +1,8 @@
 ---
-title: Create symbolic links 
+title: Create symbolic links
 description: Describes the best practices, location, values, policy management, and security considerations for the Create symbolic links security policy setting.
 ms.assetid: 882922b9-0ff8-4ee9-8afc-4475515ee3fd
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
 ms.prod: windows-client
 ms.mktglfcycl: deploy
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 04/19/2017
 ms.technology: itpro-security
 ---
@@ -57,13 +57,13 @@ The following table lists the actual and effective default policy values. Defaul
 
 | Server type or GPO | Default value |
 | - | - |
-| Default Domain Policy | Not Defined| 
-| Default Domain Controller Policy | Not Defined| 
-| Stand-Alone Server Default Settings | Not Defined| 
-| Domain Controller Effective Default Settings | Administrators| 
-| Member Server Effective Default Settings | Administrators| 
-| Client Computer Effective Default Settings | Administrators| 
- 
+| Default Domain Policy | Not Defined|
+| Default Domain Controller Policy | Not Defined|
+| Stand-Alone Server Default Settings | Not Defined|
+| Domain Controller Effective Default Settings | Administrators|
+| Member Server Effective Default Settings | Administrators|
+| Client Computer Effective Default Settings | Administrators|
+
 ## Policy management
 
 This section describes different features and tools available to help you manage this policy.

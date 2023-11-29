@@ -1,7 +1,7 @@
 ---
 title: Security options
 description: Introduction to the Security Options settings of the local security policies plus links to more information.
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.prod: windows-client
@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 ms.date: 01/13/2023
 ms.technology: itpro-security
-ms.topic: conceptual
+ms.topic: reference
 ---
 
 # Security Options

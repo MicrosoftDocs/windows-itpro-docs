@@ -1,8 +1,8 @@
 ---
-title: Audit account logon events 
+title: Audit account logon events
 description: Determines whether to audit each instance of a user logging on to or logging off from another device in which this device is used to validate the account.
 ms.assetid: 84B44181-E325-49A1-8398-AECC3CE0A516
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
 ms.prod: windows-client
 ms.mktglfcycl: deploy
@@ -12,7 +12,7 @@ ms.localizationpriority: low
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 09/06/2021
 ms.technology: itpro-security
 ---
@@ -45,9 +45,9 @@ You can configure this security setting by opening the appropriate policy under 
 | 681          | Logon failure. A domain account logon was attempted. This event is not generated in Windows XP or in the Windows Server 2003 family. |
 | 682          | A user has reconnected to a disconnected terminal server session.                                                                    |
 | 683          | A user disconnected a terminal server session without logging off.                                                                   |
- 
+
 ## Related topics
 
 - [Basic security audit policy settings](basic-security-audit-policy-settings.md)
- 
- 
+
+

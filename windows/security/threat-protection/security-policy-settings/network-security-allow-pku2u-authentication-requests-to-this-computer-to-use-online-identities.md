@@ -1,8 +1,8 @@
 ---
-title: Network security Allow PKU2U authentication requests to this computer to use online identities 
+title: Network security Allow PKU2U authentication requests to this computer to use online identities
 description: Best practices for the Network Security Allow PKU2U authentication requests to this computer to use online identities security setting.
 ms.assetid: e04a854e-d94d-4306-9fb3-56e9bd7bb926
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
 ms.prod: windows-client
 ms.mktglfcycl: deploy
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 01/03/2022
 ms.technology: itpro-security
 ---
@@ -33,7 +33,7 @@ When devices are configured to accept authentication requests by using online ID
 
 > [!NOTE]
 > Linking online IDs can be performed by anyone who has an account that has standard user’s credentials through Credential Manager.
- 
+
 This policy isn't configured by default on domain-joined devices. This disablement would disallow the online identities to authenticate to domain-joined computers from Windows 7 up to Windows 10, Version 1607. This policy is enabled by default in Windows 10, Version 1607, and later.
 
 ### Possible values
@@ -61,21 +61,21 @@ The following table lists the effective default values for this policy. Default 
 
 | Server type or Group Policy Object (GPO) | Default value |
 | - | - |
-| Default domain policy| Not defined| 
-| Default domain controller policy | Not defined| 
-| Stand-alone server default settings | Not defined| 
-| Domain controller effective default settings | Disabled| 
-| Member server effective default settings | Disabled| 
-| Effective GPO default settings on client computers prior to Windows 10, Version 1607 | Disabled| 
-| Effective GPO default settings on client computers Windows 10, Version 1607 and later| Enabled| 
- 
+| Default domain policy| Not defined|
+| Default domain controller policy | Not defined|
+| Stand-alone server default settings | Not defined|
+| Domain controller effective default settings | Disabled|
+| Member server effective default settings | Disabled|
+| Effective GPO default settings on client computers prior to Windows 10, Version 1607 | Disabled|
+| Effective GPO default settings on client computers Windows 10, Version 1607 and later| Enabled|
+
 ## Security considerations
 
 This section describes how an attacker might exploit a feature or its configuration, how to implement the countermeasure, and the possible negative consequences of the countermeasure.
 
 ### Vulnerability
 
-Enabling this policy setting allows a user’s account on one computer to be associated with an online identity, such as Microsoft account or a Microsoft Entra account. That account can then sign in to a peer device (if the peer device is likewise configured) without the use of a Windows sign-in account (domain or local). This setup isn't only beneficial, but required for Microsoft Entra joined devices, where they're signed in with an online identity and are issued certificates by Microsoft Entra ID. This policy may not be relevant for an *on-premises only* environment and might circumvent established security policies. However, it doesn't pose any threats in a hybrid environment where Microsoft Entra ID is used as it relies on the user's online identity and Microsoft Entra ID to authenticate. 
+Enabling this policy setting allows a user’s account on one computer to be associated with an online identity, such as Microsoft account or a Microsoft Entra account. That account can then sign in to a peer device (if the peer device is likewise configured) without the use of a Windows sign-in account (domain or local). This setup isn't only beneficial, but required for Microsoft Entra joined devices, where they're signed in with an online identity and are issued certificates by Microsoft Entra ID. This policy may not be relevant for an *on-premises only* environment and might circumvent established security policies. However, it doesn't pose any threats in a hybrid environment where Microsoft Entra ID is used as it relies on the user's online identity and Microsoft Entra ID to authenticate.
 
 ### Countermeasure
 
