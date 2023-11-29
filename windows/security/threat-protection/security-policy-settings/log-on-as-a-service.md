@@ -1,8 +1,8 @@
 ---
-title: Log on as a service 
+title: Log on as a service
 description: Describes the best practices, location, values, policy management, and security considerations for the Log on as a service security policy setting.
 ms.assetid: acc9a9e0-fd88-4cda-ab54-503120ba1f42
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
 ms.prod: windows-client
 ms.mktglfcycl: deploy
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 04/19/2017
 ms.technology: itpro-security
 ---
@@ -52,13 +52,13 @@ The following table lists the actual and effective default policy values. The po
 
 | Server type or GPO | Default value |
 | - | - |
-| Default Domain Policy| Not defined| 
-| Default Domain Controller Policy | Not defined| 
-| Stand-Alone Server Default Settings | Not defined| 
-| Domain Controller Effective Default Settings | Network Service| 
-| Member Server Effective Default Settings| Network Service| 
-| Client Computer Effective Default Settings | Network Service| 
- 
+| Default Domain Policy| Not defined|
+| Default Domain Controller Policy | Not defined|
+| Stand-Alone Server Default Settings | Not defined|
+| Domain Controller Effective Default Settings | Network Service|
+| Member Server Effective Default Settings| Network Service|
+| Client Computer Effective Default Settings | Network Service|
+
 ## Policy management
 
 This section describes features, tools, and guidance to help you manage this policy.
@@ -84,7 +84,7 @@ This section describes how an attacker might exploit a feature or its configurat
 
 ### Vulnerability
 
-The **Log on as a service** user right allows accounts to start network services or services that run continuously on a computer, even when no one is logged on to the console. The risk is reduced because only users who have administrative privileges can install and configure services. An 
+The **Log on as a service** user right allows accounts to start network services or services that run continuously on a computer, even when no one is logged on to the console. The risk is reduced because only users who have administrative privileges can install and configure services. An
 attacker who has already reached that level of access could configure the service to run with the Local System account.
 
 ### Countermeasure
@@ -93,7 +93,7 @@ By definition, the Network Service account has the **Log on as a service** user 
 
 ### Potential impact
 
-On most computers, the **Log on as a service** user right is restricted to the Local System, Local Service, and Network Service built-in accounts by default, and there's no negative impact. But if you have optional components such as ASP.NET or IIS, you might need to 
+On most computers, the **Log on as a service** user right is restricted to the Local System, Local Service, and Network Service built-in accounts by default, and there's no negative impact. But if you have optional components such as ASP.NET or IIS, you might need to
 assign the user right to the additional accounts that those components require. IIS requires this user right to be explicitly granted to the ASPNET user account.
 
 ## Related topics

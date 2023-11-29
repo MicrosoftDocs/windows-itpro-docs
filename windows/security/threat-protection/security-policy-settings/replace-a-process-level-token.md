@@ -1,8 +1,8 @@
 ---
-title: Replace a process level token 
+title: Replace a process level token
 description: Describes the best practices, location, values, policy management, and security considerations for the Replace a process level token security policy setting.
 ms.assetid: 5add02db-6339-489e-ba21-ccc3ccbe8745
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
 ms.prod: windows-client
 ms.mktglfcycl: deploy
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 04/19/2017
 ms.technology: itpro-security
 ---
@@ -57,13 +57,13 @@ The following table lists the actual and effective default policy values for the
 
 | Server type or GPO | Default value |
 | - | - |
-| Default Domain Policy| Not defined| 
+| Default Domain Policy| Not defined|
 | Default Domain Controller Policy | Network Service<br/>Local Service |
-| Stand-Alone Server Default Settings | Network Service<br/>Local Service| 
-| Domain Controller Effective Default Settings | Network Service<br/>Local Service| 
-| Member Server Effective Default Settings | Network Service<br/>Local Service| 
-| Client Computer Effective Default Settings | Network Service<br/>Local Service| 
- 
+| Stand-Alone Server Default Settings | Network Service<br/>Local Service|
+| Domain Controller Effective Default Settings | Network Service<br/>Local Service|
+| Member Server Effective Default Settings | Network Service<br/>Local Service|
+| Client Computer Effective Default Settings | Network Service<br/>Local Service|
+
 ## Policy management
 
 This section describes features, tools, and guidance to help you manage this policy.

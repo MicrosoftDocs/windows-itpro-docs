@@ -1,8 +1,8 @@
 ---
-title: View the security event log 
+title: View the security event log
 description: The security log records each event as defined by the audit policies you set on each object.
 ms.assetid: 20DD2ACD-241A-45C5-A92F-4BE0D9F198B9
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
 ms.prod: windows-client
 ms.mktglfcycl: deploy
@@ -12,10 +12,10 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.collection: 
+ms.collection:
   - highpri
   - tier3
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 09/09/2021
 ms.technology: itpro-security
 ---
