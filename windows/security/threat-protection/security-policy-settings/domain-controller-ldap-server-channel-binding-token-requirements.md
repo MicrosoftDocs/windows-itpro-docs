@@ -7,7 +7,7 @@ ms.prod: windows-client
 ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 04/26/2023
 ms.technology: itpro-security
 ---

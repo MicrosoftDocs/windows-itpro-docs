@@ -1,8 +1,8 @@
 ---
-title: Take ownership of files or other objects 
+title: Take ownership of files or other objects
 description: Describes the best practices, location, values, policy management, and security considerations for the Take ownership of files or other objects security policy setting.
 ms.assetid: cb8595d1-74cc-4176-bb15-d97663eebb2d
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
 ms.prod: windows-client
 ms.mktglfcycl: deploy
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 04/19/2017
 ms.technology: itpro-security
 ---
@@ -56,13 +56,13 @@ The following table lists the actual and effective default policy values. Defaul
 
 | Server type or GPO | Default value |
 | - | - |
-| Default Domain Policy| Not defined| 
-| Default Domain Controller Policy | Administrators| 
-| Stand-Alone Server Default Settings | Administrators| 
-| Domain Controller Effective Default Settings | Administrators| 
-| Member Server Effective Default Settings | Administrators| 
-| Client Computer Effective Default Settings | Administrators| 
- 
+| Default Domain Policy| Not defined|
+| Default Domain Controller Policy | Administrators|
+| Stand-Alone Server Default Settings | Administrators|
+| Domain Controller Effective Default Settings | Administrators|
+| Member Server Effective Default Settings | Administrators|
+| Client Computer Effective Default Settings | Administrators|
+
 ## Policy management
 
 This section describes features, tools, and guidance to help you manage this policy.
@@ -100,7 +100,7 @@ This section describes how an attacker might exploit a feature or its configurat
 
 ### Vulnerability
 
-Any users with the **Take ownership of files or other objects user right** can take control of any object, regardless of the permissions on that object, and then make any changes that they want to make to that object. Such changes could result in exposure of data, corruption of data, or a 
+Any users with the **Take ownership of files or other objects user right** can take control of any object, regardless of the permissions on that object, and then make any changes that they want to make to that object. Such changes could result in exposure of data, corruption of data, or a
 denial-of-service condition.
 
 ### Countermeasure

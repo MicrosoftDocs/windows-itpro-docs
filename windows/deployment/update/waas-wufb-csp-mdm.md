@@ -47,15 +47,15 @@ Drivers are automatically enabled because they're beneficial to device systems. 
 
 ### Set when devices receive feature and quality updates
 
-#### I want to receive pre-release versions of the next feature update
+#### I want to receive prerelease versions of the next feature update
 
 1. Ensure that you're enrolled in the Windows Insider Program for Business. This is a free program available to commercial customers to aid them in their validation of feature updates before they're released. Joining the program enables you to receive updates prior to their release as well as receive emails and content related to what is coming in the next updates. 
 
-1. For any of test devices you want to install pre-release builds, use [Update/ManagePreviewBuilds](/windows/client-management/mdm/policy-csp-update#update-managepreviewbuilds). Set this to **Enable preview builds**.
+1. For any of test devices you want to install prerelease builds, use [Update/ManagePreviewBuilds](/windows/client-management/mdm/policy-csp-update#update-managepreviewbuilds). Set this to **Enable preview builds**.
 
-1. Use [Update/BranchReadinessLevel](/windows/client-management/mdm/policy-csp-update#update-branchreadinesslevel) and select one of the preview Builds. Windows Insider Program Slow is the recommended channel for commercial customers who are using pre-release builds for validation.
+1. Use [Update/BranchReadinessLevel](/windows/client-management/mdm/policy-csp-update#update-branchreadinesslevel) and select one of the preview Builds. Windows Insider Program Slow is the recommended channel for commercial customers who are using prerelease builds for validation.
 
-1. Additionally, you can defer pre-release feature updates the same way as released updates, by setting a deferral period up to 14 days by using [Update/DeferFeatureUpdatesPeriodInDays](/windows/client-management/mdm/policy-csp-update#update-deferfeatureupdatesperiodindays). If you're testing with Windows Insider Program Slow builds, we recommend that you receive the preview updates to your IT department on day 0, when the update is released, and then have a 7-10 day deferral before rolling out to your group of testers. This ensures that if a problem is discovered, you can pause the rollout of the preview update before it reaches your tests.
+1. Additionally, you can defer prerelease feature updates the same way as released updates, by setting a deferral period up to 14 days by using [Update/DeferFeatureUpdatesPeriodInDays](/windows/client-management/mdm/policy-csp-update#update-deferfeatureupdatesperiodindays). If you're testing with Windows Insider Program Slow builds, we recommend that you receive the preview updates to your IT department on day 0, when the update is released, and then have a 7-10 day deferral before rolling out to your group of testers. This ensures that if a problem is discovered, you can pause the rollout of the preview update before it reaches your tests.
 
 #### I want to manage which released feature update my devices receive
 
@@ -113,7 +113,7 @@ We recommended that you allow to update automatically--this is the default behav
 
 For more granular control, you can set the maximum period of active hours the user can set with [Update/ActiveHoursMaxRange](/windows/client-management/mdm/policy-csp-update#update-activehoursmaxrange). You could also set specific start and end times for active ours with [Update/ActiveHoursEnd](/windows/client-management/mdm/policy-csp-update#update-activehoursend) and [Update/ActiveHoursStart](/windows/client-management/mdm/policy-csp-update#update-activehoursstart).
 
-It's best to refrain from setting the active hours policy because it's enabled by default when automatic updates are not disabled and provides a better experience when users can set their own active hours.
+It's best to refrain from setting the active hours policy because it's enabled by default when automatic updates aren't disabled and provides a better experience when users can set their own active hours.
 
 To update outside of the active hours, use [Update/AllowAutoUpdate](/windows/client-management/mdm/policy-csp-update#update-allowautoupdate) with Option 2 (which is the default setting). For even more granular control, consider using automatic updates to schedule the install time, day, or week. To do this, use Option 3, and then set the following policies as appropriate for your plan:
 
@@ -181,7 +181,7 @@ We recommend that you use the default notifications as they aim to provide the b
 > [!NOTE]
 > Option **2** creates a poor experience for personal devices; it's only recommended for kiosk devices where automatic restarts have been disabled.
 
-Still more options are available in [Update/ScheduleRestartWarning](/windows/client-management/mdm/policy-csp-update#update-schedulerestartwarning). This setting allows you to specify the period for auto-restart warning reminder notifications (from 2-24 hours; 4 hours is the default) before the update. You can also specify the period for auto-restart imminent warning notifications with [Update/ScheduleImminentRestartWarning](/windows/client-management/mdm/policy-csp-update#update-scheduleimminentrestartwarning) (15-60 minutes is the default). We recommend using the default notifications.
+Still more options are available in [Update/ScheduleRestartWarning](/windows/client-management/mdm/policy-csp-update#update-schedulerestartwarning). This setting allows you to specify the period for auto restart warning reminder notifications (from 2-24 hours; 4 hours is the default) before the update. You can also specify the period for auto restart imminent warning notifications with [Update/ScheduleImminentRestartWarning](/windows/client-management/mdm/policy-csp-update#update-scheduleimminentrestartwarning) (15-60 minutes is the default). We recommend using the default notifications.
 
 #### I want to manage the update settings a user can access
 
