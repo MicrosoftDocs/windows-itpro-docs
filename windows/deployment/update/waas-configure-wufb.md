@@ -16,7 +16,7 @@ appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2022</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2019</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016</a>
-ms.date: 11/29/2023
+ms.date: 11/30/2023
 ---
 
 # Configure Windows Update for Business
