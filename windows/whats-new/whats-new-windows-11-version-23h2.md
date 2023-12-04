@@ -36,7 +36,7 @@ To learn more about the status of the update rollout, known issues, and new info
 
 [Temporary enterprise feature control](temporary-enterprise-feature-control.md) temporarily turns off certain features that were introduced during monthly cumulative updates for managed Windows 11, version 22H2 devices. For the purposes of temporary enterprise control, a system is considered managed if it's configured to get updates from Windows Update for Business or [Windows Server Update Services (WSUS)](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus). Clients that get updates from Microsoft Configuration Manager and Microsoft Intune are considered managed since their updates ultimately come from WSUS or Windows Updates for Business.
 
-When a managed Windows 11, version 22H2 device installs [version 23H2](https://support.microsoft.com/kb/5027397), the following features will no longer under be under temporary enterprise feature control:
+When a managed Windows 11, version 22H2 device installs [version 23H2](https://support.microsoft.com/kb/5027397), the following features will no longer be under temporary enterprise feature control:
 
 | Feature | KB article where the feature was introduced | 
 |---|---|
