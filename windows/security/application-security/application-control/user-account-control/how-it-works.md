@@ -1,9 +1,6 @@
 ---
 title: How User Account Control works 
 description: Learn about User Account Control (UAC) components and how it interacts with the end users.
-ms.collection: 
-  - highpri
-  - tier2
 ms.topic: concept-article
 ms.date: 05/24/2023
 ---
@@ -19,7 +16,7 @@ With UAC, each application that requires the *administrator access token* must p
 Windows protects processes by marking their integrity levels. Integrity levels are measurements of trust:
 
 - A *high integrity application* is one that performs tasks that modify system data, such as a disk partitioning application
-- A *low integrity application* is one that performs tasks that could potentially compromise the operating system, like as a Web brows
+- A *low integrity application* is one that performs tasks that could potentially compromise the operating system, like as a Web browser
 
 Applications with lower integrity levels can't modify data in applications with higher integrity levels. When a standard user attempts to run an app that requires an administrator access token, UAC requires that the user provides valid administrator credentials.
 

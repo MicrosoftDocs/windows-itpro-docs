@@ -1,8 +1,8 @@
 ---
-title: Apply a basic audit policy on a file or folder 
+title: Apply a basic audit policy on a file or folder
 description: Apply audit policies to individual files and folders on your computer by setting the permission type to record access attempts in the security log.
 ms.assetid: 565E7249-5CD0-4B2E-B2C0-B3A0793A51E2
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
 ms.prod: windows-client
 ms.mktglfcycl: deploy
@@ -12,10 +12,10 @@ ms.localizationpriority: low
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.collection: 
+ms.collection:
   - highpri
   - tier3
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 09/06/2021
 ms.technology: itpro-security
 ---
@@ -40,18 +40,18 @@ To complete this procedure, you must be signed in as a member of the built-in Ad
     -   To audit failure events, select **Fail.**
     -   To audit all events, select **All.**
 
- 
+
 
 6.  In the **Applies to** box, select the object(s) to which the audit of events will apply. These objects include:
- 
+
     -   **This folder only**
     -   **This folder, subfolders and files**
     -   **This folder and subfolders**
     -   **This folder and files**
     -   **Subfolders and files only**
-    -   **Subfolders only** 
+    -   **Subfolders only**
     -   **Files only**
- 
+
 7.  By default, the selected **Basic Permissions** to audit are the following:
     -   **Read and execute**
     -   **List folder contents**
@@ -60,8 +60,8 @@ To complete this procedure, you must be signed in as a member of the built-in Ad
           - **Full control**
           - **Modify**
           - **Write**
-    
-> [!IMPORTANT]    
+
+> [!IMPORTANT]
 > Before you set up auditing for files and folders, you must enable [object access auditing](basic-audit-object-access.md). To do this, define auditing policy settings for the object access event category. If you don't enable object access auditing, you'll receive an error message when you set up auditing for files and folders, and no files or folders will be audited.
  
 ## More considerations

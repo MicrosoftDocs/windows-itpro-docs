@@ -7,12 +7,12 @@ ms.localizationpriority: medium
 ms.date: 09/17/2018
 author: vinaypamnani-msft
 ms.author: vinpa
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
-ms.collection: 
+ms.collection:
   - highpri
   - tier3
-ms.topic: conceptual
+ms.topic: reference
 ---
 
 # Network access: Restrict clients allowed to make remote calls to SAM

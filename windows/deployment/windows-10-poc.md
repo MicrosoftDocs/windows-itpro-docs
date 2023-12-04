@@ -225,26 +225,7 @@ When you have completed installation of Hyper-V on the host computer, begin conf
 > [!IMPORTANT]
 > Don't attempt to use the VM resulting from the following procedure as a reference image. Also, to avoid conflicts with existing clients, don't start the VM outside the PoC network.
 
-If you don't have a PC available to convert to VM, do the following steps to download an evaluation VM:
-
-1. Open the [Download virtual machines](https://developer.microsoft.com/microsoft-edge/tools/vms/) page.
-
-    > [!NOTE]
-    > The above link may not be available in all locales.
-
-2. Under **Virtual machine**, choose **IE11 on Win7**.
-
-3. Under **Select platform**, choose **HyperV (Windows)**.
-
-4. Select **Download .zip**. The download is 3.31 GB.
-
-5. Extract the zip file. Three directories are created.
-
-6. Open the **Virtual Hard Disks** directory and then copy **IE11 - Win7.vhd** to the **C:\VHD** directory.
-
-7. Rename **IE11 - Win7.vhd** to **w7.vhd** (don't rename the file to w7.vhdx).
-
-8. In step 5 of the [Configure Hyper-V](#configure-hyper-v) section, replace the VHD file name **w7.vhdx** with **w7.vhd**.
+<!-- removed steps to download VM from developer.microsoft.com/microsoft-edge as tool no longer exists -->
 
 If you have a PC available to convert to VM (computer 2):
 

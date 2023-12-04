@@ -6,10 +6,8 @@ items:
       - name: Windows Defender System Guard
         href: how-hardware-based-root-of-trust-helps-protect-windows.md
       - name: Trusted Platform Module
-        href: tpm/trusted-platform-module-top-node.md
+        href: tpm/trusted-platform-module-overview.md
         items:
-          - name: Trusted Platform Module overview
-            href: tpm/trusted-platform-module-overview.md
           - name: TPM fundamentals
             href: tpm/tpm-fundamentals.md
           - name: How Windows uses the TPM

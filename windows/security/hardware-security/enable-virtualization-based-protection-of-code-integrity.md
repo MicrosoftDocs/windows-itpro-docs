@@ -1,10 +1,6 @@
 ---
 title: Enable memory integrity
 description: This article explains the steps to opt in to using memory integrity on Windows devices.
-ms.localizationpriority: medium
-ms.collection:
-  - highpri
-  - tier2
 ms.topic: conceptual
 ms.date: 03/16/2023
 appliesto:

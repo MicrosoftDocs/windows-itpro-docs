@@ -1,9 +1,10 @@
 ---
-ms.date: 11/07/2023
+ms.date: 11/22/2023
 title: Smart Card and Remote Desktop Services
 description: This topic for the IT professional describes the behavior of Remote Desktop Services when you implement smart card sign-in.
-ms.topic: conceptual
+ms.topic: concept-article
 ---
+
 # Smart Card and Remote Desktop Services
 
 This topic for the IT professional describes the behavior of Remote Desktop Services when you implement smart card sign-in.
@@ -25,7 +26,7 @@ In a Remote Desktop scenario, a user is using a remote server for running servic
 
 Notes about the redirection model:
 
-1. This scenario is a remote sign-in session on a computer with Remote Desktop Services. In the remote session (labeled as "Client session"), the user runs `net use /smartcard`
+1. This scenario is a remote sign-in session on a computer with Remote Desktop Services. In the remote session (labeled as *Client session*), the user runs `net use /smartcard`
 1. Arrows represent the flow of the PIN after the user types the PIN at the command prompt until it reaches the user's smart card in a smart card reader that is connected to the Remote Desktop Connection (RDC) client computer
 1. The authentication is performed by the LSA in session 0
 1. The CryptoAPI processing is performed in the LSA (`lsass.exe`). This is possible because RDP redirector (`rdpdr.sys`) allows per-session, rather than per-process, context
@@ -44,7 +45,7 @@ When smart card-enabled single sign-in (SSO) is used for Remote Desktop Services
 
 Remote Desktop Services enables users to sign in with a smart card by entering a PIN on the RDC client computer and sending it to the RD Session Host server in a manner similar to authentication that is based on user name and password.
 
-In addition, Group Policy settings that are specific to Remote Desktop Services need to be enabled for smart card-based sign-in.
+In addition, group policy settings that are specific to Remote Desktop Services need to be enabled for smart card-based sign-in.
 
 To enable smart card sign-in to a Remote Desktop Session Host (RD Session Host) server, the Key Distribution Center (KDC) certificate must be present on the RDC client computer. If the computer isn't in the same domain or workgroup, the following command can be used to deploy the certificate:
 

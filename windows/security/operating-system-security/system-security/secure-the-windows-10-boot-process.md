@@ -4,7 +4,6 @@ description: This article describes how Windows security features help protect y
 ms.topic: conceptual
 ms.date: 08/11/2023
 ms.collection:
-  - highpri
   - tier1
 ---
 
