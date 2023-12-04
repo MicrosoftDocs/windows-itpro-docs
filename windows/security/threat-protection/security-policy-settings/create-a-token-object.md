@@ -1,8 +1,8 @@
 ---
-title: Create a token object 
+title: Create a token object
 description: Describes the best practices, location, values, policy management, and security considerations for the Create a token object security policy setting.
 ms.assetid: bfbf52fc-6ba4-442a-9df7-bd277e55729c
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
 ms.prod: windows-client
 ms.mktglfcycl: deploy
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 04/19/2017
 ms.technology: itpro-security
 ---
@@ -54,13 +54,13 @@ The following table lists the actual and effective default policy values. Defaul
 
 | Server type or GPO | Default value |
 | - | - |
-| Default Domain Policy | Not Defined | 
-| Default Domain Controller Policy | Not Defined | 
-| Stand-Alone Server Default Settings | Not Defined | 
-| Domain Controller Effective Default Settings | Local System | 
-| Member Server Effective Default Settings | Local System | 
-| Client Computer Effective Default Settings | Local System | 
- 
+| Default Domain Policy | Not Defined |
+| Default Domain Controller Policy | Not Defined |
+| Stand-Alone Server Default Settings | Not Defined |
+| Domain Controller Effective Default Settings | Local System |
+| Member Server Effective Default Settings | Local System |
+| Client Computer Effective Default Settings | Local System |
+
 ## Policy management
 
 A restart of the device isn't required for this policy setting to be effective.
@@ -85,7 +85,7 @@ This section describes how an attacker might exploit a feature or its configurat
 ### Vulnerability
 
 >**Caution:**  A user account that is given this user right has complete control over the system, and it can lead to the system being compromised. We highly recommend that you do not assign this right to any user accounts.
- 
+
 Windows examines a user's access token to determine the level of the user's privileges. Access tokens are built when users sign in to the local device or connect to a remote device over a network. When you revoke a privilege, the change is immediately recorded, but the change isn't reflected in the user's access token until the next time the user logs on or connects. Users with the ability to create or modify tokens can change the level of access for any account on a computer if they're currently logged on. They could escalate their privileges or create a DoS condition.
 
 ### Countermeasure

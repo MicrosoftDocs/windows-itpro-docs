@@ -1,8 +1,8 @@
 ---
-title: Interactive logon Number of previous logons to cache (in case domain controller is not available) 
+title: Interactive logon Number of previous logons to cache (in case domain controller is not available)
 description: Best practices and more for the security policy setting, Interactive logon Number of previous logons to cache (in case domain controller is not available).
 ms.assetid: 660e925e-cc3e-4098-a41e-eb8db8062d8d
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
 ms.prod: windows-client
 ms.mktglfcycl: deploy
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 08/27/2018
 ms.technology: itpro-security
 ---
@@ -39,7 +39,7 @@ The system can't log you on now because the domain *DOMAIN NAME* isn't available
 
 The value of this policy setting indicates the number of users whose sign-in information the server caches locally. If the value is 10, the server caches sign-in information for 10 users. When an 11th user signs in to the device, the server overwrites the oldest cached sign-in session.
 
-Users who access the server console will have their sign-in credentials cached on that server. A malicious user who is able to access the file system of the server can locate this cached information and use a brute-force attack to determine user passwords. Windows mitigates this type of attack by 
+Users who access the server console will have their sign-in credentials cached on that server. A malicious user who is able to access the file system of the server can locate this cached information and use a brute-force attack to determine user passwords. Windows mitigates this type of attack by
 encrypting the information and keeping the cached credentials in the system's registries, which are spread across numerous physical locations.
 
 > [!NOTE]
@@ -52,7 +52,7 @@ encrypting the information and keeping the cached credentials in the system's re
 
 ### Best practices
 
-The [Windows security baselines](../../operating-system-security/device-management/windows-security-configuration-framework/windows-security-baselines.md) don't recommend configuring this setting. 
+The [Windows security baselines](../../operating-system-security/device-management/windows-security-configuration-framework/windows-security-baselines.md) don't recommend configuring this setting.
 
 ### Location
 
@@ -64,13 +64,13 @@ The following table lists the actual and effective default values for this polic
 
 | Server type or GPO | Default value |
 | - | - |
-| Default Domain Policy| Not defined| 
-| Default Domain Controller Policy | Not defined| 
-| Stand-Alone Server Default Settings | 10 logons| 
-| DC Effective Default Settings | No effect| 
-| Member Server Effective Default Settings | 10 logons| 
-| Client Computer Effective Default Settings| 10 logons| 
- 
+| Default Domain Policy| Not defined|
+| Default Domain Controller Policy | Not defined|
+| Stand-Alone Server Default Settings | 10 logons|
+| DC Effective Default Settings | No effect|
+| Member Server Effective Default Settings | 10 logons|
+| Client Computer Effective Default Settings| 10 logons|
+
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.
@@ -105,7 +105,7 @@ Configure the **Interactive logon: Number of previous logons to cache (in case d
 
 ### Potential impact
 
-Users can't sign in to any devices if there's no domain controller available to authenticate them. Organizations can configure this value to 2 for end-user computers, especially for mobile users. A configuration value of 2 means that the user's sign-in information is still in the cache, even if a 
+Users can't sign in to any devices if there's no domain controller available to authenticate them. Organizations can configure this value to 2 for end-user computers, especially for mobile users. A configuration value of 2 means that the user's sign-in information is still in the cache, even if a
 member of the IT department has recently logged on to the device to perform system maintenance. This method allows users to sign in to their computers when they aren't connected to the organization's network.
 
 ## Related topics

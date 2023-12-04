@@ -2,16 +2,9 @@
 title: Provisioning packages overview
 description: With Windows 10 and Windows 11, you can create provisioning packages that let you quickly and efficiently configure a device without having to install a new image. Learn about what provisioning packages, are and what they do.
 ms.reviewer: kevinsheehan
-manager: aaroncz
-ms.prod: windows-client
 author: lizgt2000
 ms.author: lizlong
 ms.topic: article
-ms.localizationpriority: medium
-ms.collection:
- - highpri
- - tier2
-ms.technology: itpro-configure
 ms.date: 12/31/2017
 ---
 
