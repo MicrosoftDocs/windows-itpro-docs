@@ -1,7 +1,7 @@
 ---
 title: Prerequisites
 description: This article details the prerequisites needed for Windows Autopatch
-ms.date: 11/29/2023
+ms.date: 12/04/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: conceptual
